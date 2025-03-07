@@ -22,4 +22,20 @@ fd DESCRIPTIONS | wc -l
 files to date. That's a lot to download / scrape, and instead it's possible to just
 build off of this.
 
+## Format
+
+Each folder has a subfolder of versions of R packages, each folder contains a description file.
+
+You might think this strange. Sure. The idea is that it's easy to walk and generate
+a new file derived from the old file, in a way that's seperable. Regardless,
+with a little Python, R, or Bash and some scripting, I imagine it's not terribly difficult to reshape.
+
+## Security Warning.
+
+R DESCRIPTION files contain R code. Certain loaders may execute that R code.
+
+## Will I accept PR's which include more DESCRIPTION files?
+
+yes.
+
 ## Enjoy :) 
