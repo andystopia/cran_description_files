@@ -1,0 +1,25 @@
+Package: emax.glm
+Title: General Tools for Building GLM Expectation-Maximization Models
+Version: 0.1.2
+Authors@R: person("Robert M.", "Cook", email="robert.cook@bcu.ac.uk", role=c("aut", "cre"), comment = c(ORCID = "0000-0003-3343-8271"))
+Maintainer: Robert M. Cook <robert.cook@bcu.ac.uk>
+Description: Implementation of Expectation Maximization (EM) regression of general linear models.
+    The package currently supports Poisson and Logistic regression with variable weights, with underlying theory included in the vignettes. 
+    New users are recommended to look at the em.glm() and small.em() functions - the outputs of which are supported by AIC(), BIC(),  and logLik() calls.
+    Several plot functions have been included for useful diagnostics and model exploration.  
+    Methods are based on the theory of Dempster et al (1977, ISBN:00359246), and follow the methods of Hastie et al. (2009) <doi:10.1007/978-0-387-21606-5_7>  and A. 
+    Zeileis et al (2017) <doi:10.18637/jss.v027.i08>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: R (>= 2.10)
+Imports: MASS, pracma, stats, pander, pROC, AER
+Suggests: spelling, knitr, rmarkdown
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-07-01 13:24:49 UTC; id125490
+Author: Robert M. Cook [aut, cre] (<https://orcid.org/0000-0003-3343-8271>)
+Repository: CRAN
+Date/Publication: 2019-07-04 08:30:03 UTC

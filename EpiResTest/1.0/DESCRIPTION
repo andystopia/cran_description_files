@@ -1,0 +1,34 @@
+Package: EpiResTest
+Type: Package
+Title: Latent Residuals Test for Epidemiology and Ecology Models
+Version: 1.0
+Date: 2014-07-07
+Author: Max S. Y. Lau; Jeffrey Pollock
+Maintainer: Max S. Y. Lau <maxlauhk54@gmail.com>
+Description: Latent residual tests recently developed (Lau et al. 2014) which
+    are specifically designed to measure the goodness-of-fit of different model
+    components of a general spatial S-E-I-R model commonly used in epidemiology
+    and ecology studies. More restrictive model classes such as S-I-R can be
+    accommodated. Note that although each test is specifically designed to be
+    sensitive to one particular component of a spatio-temporal model, they are
+    not theoretically restricted to only testing these specific aspects and can
+    be used as a general model assessment tool like any other conventional
+    model selection techniques. The underlying functions are coded in C++ so
+    they should be generally quick.
+Note: Under the null hypothesis that the model is correct, the
+        residuals follow distribution U(0,1). The examples only compute
+        a single set of residuals given actual values of most of the
+        model components which are typically required to be imputed in
+        data augmentation schemes such as MCMC in which multiple sets
+        of residuals can be imputed. Only the raw residuals are
+        outputted, a natural summary statistics of the residual samples
+        is the p-value which may be computed using Kolmogorov-Smirnov
+        or Anderson-Darling test.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.11.2)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: RUnit, ADGofTest
+Packaged: 2014-12-05 14:12:57 UTC; sl451
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-12-05 15:29:39

@@ -1,0 +1,28 @@
+Package: bootcluster
+Type: Package
+Title: Bootstrapping Estimates of Clustering Stability
+Version: 0.2.5
+Authors@R: 
+    c(person(given = "Mingmei",
+             family = "Tian",
+             role = c("aut", "cre"),
+             email = "mingmeit@buffalo.edu"),
+      person(given = "Han",
+             family = "Yu",
+             role = "aut")
+			 )
+Author: Mingmei Tian [aut, cre],
+  Han Yu [aut]
+Maintainer: Mingmei Tian <mingmeit@buffalo.edu>
+Description: Implementation of the bootstrapping approach for the estimation of clustering stability and its application in estimating the number of clusters, as introduced by Yu et al (2016)<doi:10.1142/9789814749411_0007>. Implementation of the non-parametric bootstrap approach to assessing the stability of module detection in a graph, the extension for the selection of a parameter set that defines a graph from data in a way that optimizes stability and the corresponding visualization functions, as introduced by Tian et al (2021) <doi:10.1002/sam.11495>.
+Depends: R (>= 3.3.1)
+Imports: cluster, mclust, flexclust, fpc,
+        plyr,dplyr,doParallel,foreach,igraph,compiler,stats,parallel,grid,ggplot2,gridExtra,intergraph,GGally,network,sna
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-06-09 19:10:48 UTC; Mingmei
+Repository: CRAN
+Date/Publication: 2021-06-10 08:20:04 UTC

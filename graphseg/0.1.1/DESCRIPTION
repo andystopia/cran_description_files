@@ -1,0 +1,33 @@
+Package: graphseg
+Type: Package
+Title: Segmentation of Graph-Based Signals
+Version: 0.1.1
+Authors@R: c(
+  person("Vivien", "Goepp", 
+         role = c("aut", "cre"), 
+         email = "vivien.goepp@gmail.com",
+         comment = c(ORCID = "0000-0001-6961-4260"))
+    )
+Maintainer: Vivien Goepp <vivien.goepp@gmail.com>
+Description: Perform segmentation of graph-based signals. Assume a noisy observation
+    of a signal two values correspond to vertices on a graph. Assume the true 
+    value of the signal is piece-wise constant (where each 'piece' is a
+    connected subgraph). The main function, agraph(), computes the
+    segmentation of the signal. The package also includes a wrapper around the competing
+    method flsa() (from package 'flsa').
+    More information about this method in Goepp and van de Kassteele (2022) 
+    "Graph-Based Spatial Segmentation of 
+    Health-Related Areal Data" <doi:10.48550/arXiv.2206.06752>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/goepp/graphseg
+Imports: igraph, magrittr, methods, Matrix, sf, flsa
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+Suggests: testthat, knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2023-10-03 18:49:55 UTC; vivien
+Author: Vivien Goepp [aut, cre] (<https://orcid.org/0000-0001-6961-4260>)
+Repository: CRAN
+Date/Publication: 2023-10-03 22:10:02 UTC

@@ -1,0 +1,50 @@
+Package: xpose
+Type: Package
+Title: Diagnostics for Pharmacometric Models
+Version: 0.4.17
+Authors@R: c(
+      person('Benjamin', 'Guiastrennec',
+             role  = c('aut', 'cre', 'cph'),
+             email = 'guiastrennec@gmail.com'),
+      person('Andrew C.', 'Hooker', 
+             role  = c('aut', 'cph'),
+             email = 'andrew.hooker@farmaci.uu.se'),
+      person('Sebastian', 'Ueckert',
+             role  = c('aut', 'cph'),
+             email = 'sebastian.ueckert@farmaci.uu.se'),
+      person('Mike K.', 'Smith', 
+             role  = 'ctb',
+             email = 'mike.k.smith@pfizer.com'),
+      person('Mats O.', 'Karlsson',
+             role  = c('aut', 'cph'),
+             email = 'mats.karlsson@farmaci.uu.se'))
+Description: Diagnostics for non-linear mixed-effects (population) 
+    models from 'NONMEM' <https://www.iconplc.com/solutions/technologies/nonmem/>. 
+    'xpose' facilitates data import, creation of numerical run summary 
+    and provide 'ggplot2'-based graphics for data exploration and model 
+    diagnostics.
+Depends: R (>= 3.5.0), ggplot2 (>= 3.1.0)
+Imports: dplyr (>= 0.8.0), ggforce (>= 0.2.0), grDevices, purrr (>=
+        0.3.0), readr (>= 2.1.0), rlang (>= 0.3.0), stringr (>= 1.4.0),
+        tibble (>= 2.1.0), tidyr (>= 0.8.0), utils, stats, vpc (>=
+        1.1.0)
+Suggests: here, gridExtra, rmarkdown, knitr, testthat, plotly, webshot,
+        mvtnorm
+License: LGPL-3
+URL: https://uupharmacometrics.github.io/xpose/,
+        https://github.com/UUPharmacometrics/xpose/
+BugReports: https://github.com/UUPharmacometrics/xpose/issues/
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-06-29 19:28:46 UTC; bguiastr
+Author: Benjamin Guiastrennec [aut, cre, cph],
+  Andrew C. Hooker [aut, cph],
+  Sebastian Ueckert [aut, cph],
+  Mike K. Smith [ctb],
+  Mats O. Karlsson [aut, cph]
+Maintainer: Benjamin Guiastrennec <guiastrennec@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-29 20:10:02 UTC

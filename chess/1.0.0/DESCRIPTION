@@ -1,0 +1,31 @@
+Package: chess
+Title: Read, Write, Create and Explore Chess Games
+Version: 1.0.0
+Authors@R: 
+    person(given = "C.",
+           family = "Lente",
+           role = c("aut", "cre"),
+           email = "clente@curso-r.com")
+Description: This is an opinionated wrapper around the
+    python-chess package. It allows users to read and write PGN files as
+    well as create and explore game trees such as the ones seen in chess
+    books.
+License: GPL-3
+URL: https://github.com/curso-r/chess
+BugReports: https://github.com/curso-r/chess/issues
+Depends: R (>= 2.10)
+Imports: cli, magrittr, purrr, reticulate
+Suggests: covr, graphics, knitr, png, rmarkdown, rsvg, testthat
+VignetteBuilder: knitr
+Config/reticulate: list( packages = list( list(package =
+        "python-chess", pip = TRUE) ) )
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-11-23 19:50:32 UTC; clente
+Author: C. Lente [aut, cre]
+Maintainer: C. Lente <clente@curso-r.com>
+Repository: CRAN
+Date/Publication: 2020-11-25 14:00:06 UTC

@@ -1,0 +1,22 @@
+Package: RMSDp
+Type: Package
+Title: Refined Modified Stahel-Donoho (MSD) Estimators for Outlier
+        Detection (Parallel Version)
+Version: 0.1.0
+Suggests: testthat (>= 3.0.0)
+Depends: stats
+Imports: parallel, doParallel, foreach
+Authors@R: person(given="Kazumi", family="Wada", role=c("aut", "cre"), email = "kazwd2008@gmail.com", comment=c(ORCID = "0000-0002-9578-1588"))
+Description: 
+    A parallel function for multivariate outlier detection named modified Stahel-Donoho estimators is contained in this package.  The function RMSDp() is for elliptically distributed datasets and recognizes outliers based on Mahalanobis distance. This function is for higher dimensional datasets that cannot be handled by a single core function RMSD() included in 'RMSD' package.  See Wada and Tsubaki (2013) <doi:10.1109/CLOUDCOM-ASIA.2013.86> for the detail of the algorithm. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-15 13:27:22 UTC; wada
+Author: Kazumi Wada [aut, cre] (<https://orcid.org/0000-0002-9578-1588>)
+Maintainer: Kazumi Wada <kazwd2008@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-16 20:34:02 UTC

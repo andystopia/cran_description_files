@@ -1,0 +1,29 @@
+Package: massProps
+Title: Calculate Mass Properties and Uncertainties of Tree Structures
+Version: 0.2.0
+Authors@R: 
+    person(given=c("James", "Steven"), family="Jenkins",
+      email = "sjenkins@studioj.us",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-0725-0884")
+    )
+Description: Recursively calculates mass properties (mass, center of mass,  moments and products of inertia, and optionally, their uncertainties) for arbitrary decomposition trees. R. L. Zimmerman, J. H. Nakai. (2005) <https://www.sawe.org/product/paper-3360/>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: rollupTree (>= 0.1.0)
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: igraph, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://jsjuni.github.io/massProps/,
+        https://github.com/jsjuni/massProps
+BugReports: https://github.com/jsjuni/massProps/issues
+NeedsCompilation: no
+Packaged: 2025-01-29 18:42:33 UTC; sjenkins
+Author: James Steven Jenkins [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0725-0884>)
+Maintainer: James Steven Jenkins <sjenkins@studioj.us>
+Repository: CRAN
+Date/Publication: 2025-01-30 19:00:05 UTC

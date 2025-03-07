@@ -1,0 +1,26 @@
+Package: glmmBUGS
+Type: Package
+Title: Generalised Linear Mixed Models with BUGS and JAGS
+Version: 2.4.0
+Date: 2016-09-20
+Depends: R (>= 3.0.0)
+Imports: abind, methods, MASS, sp, graphics, stats
+Suggests: spdep
+Enhances: nlme, diseasemapping, geoRglm, R2WinBUGS, R2OpenBUGS, BRugs,
+        R2jags, rjags
+Author: Patrick Brown, Lutong Zhou
+Maintainer: Patrick Brown <patrick.brown@utoronto.ca>
+Description: Automates running Generalized Linear Mixed Models, including
+    spatial models, with WinBUGS, OpenBUGS and JAGS. Models are specified with
+    formulas, with the package writings model files, arranging unbalanced data
+    in ragged arrays, and creating starting values. The model is re-parameterized,
+    and functions are provided for converting model outputs to the original
+    parameterization.
+SystemRequirements: Compiling vignette requires JAGS
+        (http://mcmc-jags.sourceforge.net)
+License: GPL
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-09-21 16:03:43 UTC; patrick
+Repository: CRAN
+Date/Publication: 2016-09-22 01:23:55

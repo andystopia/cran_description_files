@@ -1,0 +1,39 @@
+Package: epiphy
+Type: Package
+Title: Analysis of Plant Disease Epidemics
+Version: 0.3.4
+Authors@R: c(
+    person("Christophe", "Gigot", email = "ch.gigot@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1748-2902")))
+Description: A toolbox to make it easy to analyze plant disease epidemics. It
+    provides a common framework for plant disease intensity data recorded over
+    time and/or space. Implemented statistical methods are currently mainly
+    focused on spatial pattern analysis (e.g., aggregation indices, Taylor and
+    binary power laws, distribution fitting, SADIE and mapcomp methods). See
+    Madden LV, Hughes G, van den Bosch F (2007, ISBN: 978-089054-354-2) for
+    further information on these methods. Several data sets that were mainly
+    published in plant disease epidemiology literature are also included in this
+    package.
+License: MIT + file LICENSE
+URL: http://epiphy.org, https://github.com/chgigot/epiphy
+BugReports: https://github.com/chgigot/epiphy/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+LinkingTo: Rcpp
+Depends: R (>= 2.15.1)
+Imports: stats, methods, utils, grDevices, ggplot2, transport, msm,
+        pbapply, Rcpp
+Suggests: magrittr, dplyr, tidyr, spdep, emdist, vegan, MASS, emdbook,
+        knitr, rmarkdown
+Collate: 'RcppExports.R' 'betabinom.R' 'data.R' 'utils.R'
+        'mle-factory.R' 'epiphy.R' 'intensity-classes.R'
+        'distr-fitting.R' 'indices.R' 'mapcomp.R' 'power-law.R'
+        'sadie.R' 'spatial-hier.R'
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-05-22 19:20:57 UTC; tof
+Author: Christophe Gigot [aut, cre] (<https://orcid.org/0000-0002-1748-2902>)
+Maintainer: Christophe Gigot <ch.gigot@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-05-24 13:37:06 UTC

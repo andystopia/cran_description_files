@@ -1,0 +1,26 @@
+Package: TNRS
+Title: Taxonomic Name Resolution Service
+Version: 0.3.2
+Authors@R: 
+    c(
+            person("Brian", "Maitner", email = "bmaitner@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2118-9880")),
+            person("Brad", "Boyle", email = "bboyle@email.arizona.edu", role = c("aut")),
+            person("Paul", "Efren", email = "paulefrens@gmail.com ", role = c("ctb"))
+            )
+Description: Provides access to the Taxonomic Name Resolution Service <https://github.com/ojalaquellueva/tnrsapi> through R.  The user supplies plant taxonomic names and the package returns resolved taxonomic names along with information on decisions.  Optionally, the package can also be used to parse taxonomic names. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: jsonlite, httr
+Suggests: knitr, rmarkdown, testthat, vcr (>= 0.6.0), devtools
+VignetteBuilder: knitr
+RoxygenNote: 7.2.2
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-01-07 02:26:17 UTC; Brian Maitner
+Author: Brian Maitner [aut, cre] (<https://orcid.org/0000-0002-2118-9880>),
+  Brad Boyle [aut],
+  Paul Efren [ctb]
+Maintainer: Brian Maitner <bmaitner@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-09 08:00:02 UTC

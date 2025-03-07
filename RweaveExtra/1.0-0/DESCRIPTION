@@ -1,0 +1,26 @@
+Package: RweaveExtra
+Type: Package
+Title: Sweave Drivers with Extra Tricks Up their Sleeve
+Version: 1.0-0
+Date: 2021-05-27
+Authors@R: c(person("Vincent", "Goulet", role = c("cre", "aut"),
+ 	            email = "vincent.goulet@act.ulaval.ca"))
+Description: Weave and tangle drivers for Sweave extending the
+  standard drivers with additional code chunk options. Currently,
+  these are only options to completely ignore, or skip, code chunks on
+  weaving, tangling, or both. Chunks ignored on weaving are not parsed
+  and are written out verbatim on tangling. Chunks ignored on tangling
+  are processed as usual on weaving, but completely left out of the
+  tangled scripts.
+Depends: R (>= 4.1-0)
+Imports: utils
+License: GPL (>= 2)
+URL: https://gitlab.com/vigou3/RweaveExtra
+BugReports: https://gitlab.com/vigou3/RweaveExtra/-/issues
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2021-05-27 16:33:46 UTC; vincent
+Author: Vincent Goulet [cre, aut]
+Maintainer: Vincent Goulet <vincent.goulet@act.ulaval.ca>
+Repository: CRAN
+Date/Publication: 2021-05-28 09:30:12 UTC

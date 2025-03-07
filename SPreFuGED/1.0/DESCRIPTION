@@ -1,0 +1,18 @@
+Package: SPreFuGED
+Type: Package
+Title: Selecting a Predictive Function for a Given Gene Expression Data
+Version: 1.0
+Date: 2016-07-27
+Author: Victor L Jong, Kit CB Roes & Marinus JC Eijkemans
+Maintainer: Victor L Jong <v.l.jong@umcutrecht.nl>
+Description: The recent advancement of high-throughput technologies has led to frequent utilization of gene expression and other "omics" data for toxicological, diagnostic or prognostic studies in and clinical applications. Unlike in classical predictions where the number of samples is greater than the number of variables (n>p), the challenge faced with prediction using "omics" data is that the number of parameters greatly exceeds the number of samples (p>>n). To solve this curse of dimensionality problem, several predictive functions have been proposed for direct and probabilistic classification and survival predictions. Nevertheless, these predictive functions have been shown to perform differently across datasets. Comparing predictive functions and choosing the best is computationally intensive and leads to selection bias. Thus, the question which function should one choose for a given dataset is to be ascertained. This package implements the approach proposed by Jong et al., (2016) to address this question.
+Depends: R(>= 3.2.4)
+Imports: stats, methods, utils, Biobase, CMA, lme4, lattice, limma,
+        boot, mvtnorm
+Suggests: e1071, MASS, class, nnet, glmnet, randomForest
+License: GPL (>= 2)
+LazyData: True
+NeedsCompilation: no
+Packaged: 2016-07-29 08:20:11 UTC; jonglih
+Repository: CRAN
+Date/Publication: 2016-07-29 12:35:58

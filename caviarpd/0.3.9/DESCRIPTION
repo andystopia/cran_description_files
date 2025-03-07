@@ -1,0 +1,106 @@
+Package: caviarpd
+Type: Package
+Title: Cluster Analysis via Random Partition Distributions
+Version: 0.3.9
+Authors@R: c(person(given = "David B.", family = "Dahl", role = c("aut", "cre"), email = "dahl@stat.byu.edu", comment = c(ORCID = "0000-0002-8173-1547")),
+    person(given = "R. Jacob", family = "Andros", role = c("aut"), email = "androsrj@gmail.com", comment = c(ORCID = "0000-0002-1289-385X")),
+    person(given = "J. Brandon", family = "Carter",role = c("aut"), email = "carterj4@icloud.com", comment = c(ORCID = "0000-0003-1687-0564")),
+    person(given = "Alex", family = "Crichton", email = "alex@alexcrichton.com", role = "cph", comment = "Rust crates: proc-macro2, cfg-if."),
+    person(given = "\"bluss\" Ulrik", family = "Sverdrup", role = "cph", comment = "Rust crate: rawpointer, matrixmultiply, scopeguard, ndarray."),
+    person(given = "Brendan", family = "Zabarauskas", email = "bjzaba@yahoo.com.au", role = "cph", comment = "Rust crate: approx."),
+    person(given = "David B.", family = "Dahl", email = "dahl@stat.byu.edu", role = "cph", comment = "Rust crates: roxido, roxido_macro, dahl-partition, dahl-salso, dahl-bellnumber."),
+    person(given = "David", family = "Tolnay", email = "dtolnay@gmail.com", role = "cph", comment = "Rust crates: syn, proc-macro2, quote, unicode-ident."),
+    person(given = "David", family = "Schultz", email = "das@freebsd.org", role = "cph", comment = "Rust crates: libm."),
+    person(given = "DutchGhost", role = "cph", comment = "Rust crate: matrixmultiply."),
+    person(given = "Enthought, Inc.", role = "cph", comment = "Rust crate: ndarray."),
+    person(given = "Gilad", family = "Naaman", email = "gilad.naaman@gmail.com", role = "cph", comment = "Rust crate: memoffset."),
+    person(given = "Jim", family = "Turner", role = "cph", comment = "Rust crate: ndarray."),
+    person(given = "Jorge", family = "Aparicio", email = "jorge@japaric.io", role = "cph", comment = "Rust crate: libm."),
+    person(given = "Josh", family = "Stone", email = "cuviper@gmail.com", role = "cph", comment = "Rust crate: autocfg."),
+    person(given = "Melissa", family = "O'Neill", role = "cph", comment = "Rust crate: rand_pcg."),
+    person(given = "Mikhail", family = "Vorotilov", email = "mikhail.vorotilov@gmail.com", role = "cph", comment = "Rust crate: roots."),
+    person(given = "Paul", family = "Dicker", role = "cph", comment = "Rust crate: rand_pcg."),
+    person(given = "PCG Project contributors", role = "cph", comment = "Rust crate: rand_pcg."),
+    person(given = "Ralf", family = "Jung", role = "cph", comment = "Rust crate: memoffset."),
+    person(given = "rawpointer developers", role = "cph", comment = "Rust crate: rawpointer."),
+    person(given = "R. Janis", family = "Goldschmidt", role = "cph", comment = "Rust crate: matrixmultiply."),
+    person(given = "SciPy Developers", role = "cph", comment = "Rust crate: ndarray."),
+    person(given = "Sean", family = "McArthur", email = "sean@seanmonstar.com", role = "cph", comment = "Rust crate: num_cpus."),
+    person(given = "Sun Microsystems, Inc.", role = "cph", comment = "Rust crate: libm."),
+    person(given = "Stefan", family = "Lankes", role = "cph", comment = "Rust crate: hermit-abi."),
+    person(given = "The Cranelift Project Developers", role = "cph", comment = "Rust crate: wasi."),
+    person(given = "The Crossbeam Project Developers", role = "cph", comment = "Rust crates: crossbeam, crossbeam-channel, crossbeam-deque, crossbeam-epoch, crossbeam-queue, crossbeam-utils."),
+    person(given = "The CryptoCorrosion Contributors", role = "cph", comment = "Rust crates: ppv-lite86, rand_chacha."),
+    person(given = "The Go Authors", role = "cph", comment = "Rust crate: crossbeam-channel."),
+    person(given = "The PCG Project Contributors", role = "cph", comment = "Rust crate: rand_pcg."),
+    person(given = "The matrixmultiply Authors", role = "cph", comment = "Rust crate: matrixmultiply."),
+    person(given = "The ndarray Developers", role = "cph", comment = "Rust crate: ndarray."),
+    person(given = "The Rand Project Developers", role = "cph", comment = "Rust crates: rand_core, rand_chacha, rand_pcg, rand, getrandom, rand_distr."),
+    person(given = "The Rust Project Developers", role = "cph", comment = "Rust crates: crossbmean-channel, rand_chacha, num-integer, rand_core, num-complex, libc, num-traits, rand."),
+    person(given = "The scopeguard Developers", role = "cph", comment = "Rust crates: scopeguard."),
+    person(given = "Unicode, Inc.", role = "cph", comment = "Rust crate: unicode-ident.")
+    )
+Description: Cluster analysis is performed using pairwise distance information and a random partition distribution. The method is
+             implemented for two random partition distributions. It draws samples and then obtains and plots clustering estimates.
+             An implementation of a selection algorithm is provided for the mass parameter of the partition distribution. Since 
+             pairwise distances are the principal input to this procedure, it is most comparable to the hierarchical and k-medoids
+             clustering methods. The method is Dahl, Andros, Carter (2022+) <doi:10.1002/sam.11602>.
+License: MIT + file LICENSE | Apache License 2.0
+URL: https://github.com/dbdahl/caviarpd
+BugReports: https://github.com/dbdahl/caviarpd/issues
+Depends: R (>= 4.2.0)
+Suggests: salso (>= 0.3.0)
+SystemRequirements: Cargo (Rust's package manager), rustc (>= 1.65)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-07-17 18:14:20 UTC; dahl
+Author: David B. Dahl [aut, cre] (<https://orcid.org/0000-0002-8173-1547>),
+  R. Jacob Andros [aut] (<https://orcid.org/0000-0002-1289-385X>),
+  J. Brandon Carter [aut] (<https://orcid.org/0000-0003-1687-0564>),
+  Alex Crichton [cph] (Rust crates: proc-macro2, cfg-if.),
+  "bluss" Ulrik Sverdrup [cph] (Rust crate: rawpointer, matrixmultiply,
+    scopeguard, ndarray.),
+  Brendan Zabarauskas [cph] (Rust crate: approx.),
+  David B. Dahl [cph] (Rust crates: roxido, roxido_macro, dahl-partition,
+    dahl-salso, dahl-bellnumber.),
+  David Tolnay [cph] (Rust crates: syn, proc-macro2, quote,
+    unicode-ident.),
+  David Schultz [cph] (Rust crates: libm.),
+  DutchGhost [cph] (Rust crate: matrixmultiply.),
+  Enthought, Inc. [cph] (Rust crate: ndarray.),
+  Gilad Naaman [cph] (Rust crate: memoffset.),
+  Jim Turner [cph] (Rust crate: ndarray.),
+  Jorge Aparicio [cph] (Rust crate: libm.),
+  Josh Stone [cph] (Rust crate: autocfg.),
+  Melissa O'Neill [cph] (Rust crate: rand_pcg.),
+  Mikhail Vorotilov [cph] (Rust crate: roots.),
+  Paul Dicker [cph] (Rust crate: rand_pcg.),
+  PCG Project contributors [cph] (Rust crate: rand_pcg.),
+  Ralf Jung [cph] (Rust crate: memoffset.),
+  rawpointer developers [cph] (Rust crate: rawpointer.),
+  R. Janis Goldschmidt [cph] (Rust crate: matrixmultiply.),
+  SciPy Developers [cph] (Rust crate: ndarray.),
+  Sean McArthur [cph] (Rust crate: num_cpus.),
+  Sun Microsystems, Inc. [cph] (Rust crate: libm.),
+  Stefan Lankes [cph] (Rust crate: hermit-abi.),
+  The Cranelift Project Developers [cph] (Rust crate: wasi.),
+  The Crossbeam Project Developers [cph] (Rust crates: crossbeam,
+    crossbeam-channel, crossbeam-deque, crossbeam-epoch,
+    crossbeam-queue, crossbeam-utils.),
+  The CryptoCorrosion Contributors [cph] (Rust crates: ppv-lite86,
+    rand_chacha.),
+  The Go Authors [cph] (Rust crate: crossbeam-channel.),
+  The PCG Project Contributors [cph] (Rust crate: rand_pcg.),
+  The matrixmultiply Authors [cph] (Rust crate: matrixmultiply.),
+  The ndarray Developers [cph] (Rust crate: ndarray.),
+  The Rand Project Developers [cph] (Rust crates: rand_core, rand_chacha,
+    rand_pcg, rand, getrandom, rand_distr.),
+  The Rust Project Developers [cph] (Rust crates: crossbmean-channel,
+    rand_chacha, num-integer, rand_core, num-complex, libc, num-traits,
+    rand.),
+  The scopeguard Developers [cph] (Rust crates: scopeguard.),
+  Unicode, Inc. [cph] (Rust crate: unicode-ident.)
+Maintainer: David B. Dahl <dahl@stat.byu.edu>
+Repository: CRAN
+Date/Publication: 2023-07-17 19:00:08 UTC

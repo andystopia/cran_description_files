@@ -1,0 +1,33 @@
+Package: openairmaps
+Type: Package
+Title: Create Interactive Web Maps of Air Pollution Data
+Version: 0.6.1
+Authors@R: 
+  c(person(given = "Jack",
+           family = "Davison",
+           role = c("cre", "aut"),
+           email = "davison.jack.jd@gmail.com"),
+    person(given = "David", 
+           family = "Carslaw", 
+           role = c("aut"), 
+           email = "david.carslaw@york.ac.uk"))
+Description: Combine the air quality data analysis methods of 'openair' 
+  with the JavaScript 'Leaflet' (<https://leafletjs.com/>) library. 
+  Functionality includes plotting site maps, "directional analysis" 
+  figures such as polar plots, and air mass trajectories.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.2.0)
+Imports: openair (>= 2.13), dplyr, leaflet, purrr, magrittr, rlang,
+        lubridate, tibble, stringr, forcats, tidyr, cli, tidyselect
+Suggests: worldmet
+RoxygenNote: 7.2.3
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2023-01-09 09:36:12 UTC; JD38
+Author: Jack Davison [cre, aut],
+  David Carslaw [aut]
+Maintainer: Jack Davison <davison.jack.jd@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-09 10:30:06 UTC

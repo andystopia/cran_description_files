@@ -1,0 +1,28 @@
+Package: rSARP
+Title: Functions to Create and Evaluate Search and Rescue Plans
+Version: 1.0.0
+Author: John Hutcheson [aut, cre]
+Maintainer: John Hutcheson <jacknx8a@gmail.com>
+Description: Tools to create, evaluate, critique,
+    revise, track progress, and communicate a detailed wilderness or urban
+    search plan to management. This package uses and creates csv files in the R
+    working directory to document inputs and results. It also creates a series
+    of PDF and PNG files to accomplish communication of the plan. The program
+    creates and revises search plans using Bayesian models. The package
+    includes functions bestsearch(), searchstatus() and searchme() to model the
+    number of searchers and hours required to search an area, calculate the
+    probability of detection, probability of success, and project the best plan
+    given limited resources.
+Depends: R (>= 3.2.4)
+Imports: ggplot2, lattice, qcc, grid, methods, grDevices, graphics,
+        stats
+License: GPL (>= 3)
+LazyData: TRUE
+BuildVignettes: TRUE
+Packaged: 2016-05-24 16:10:22 UTC; NX8A
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2016-05-25 06:09:17

@@ -1,0 +1,31 @@
+Package: MLEce
+Type: Package
+Title: Asymptotic Efficient Closed-Form Estimators for Multivariate
+        Distributions
+Version: 2.0.1
+Authors@R: c(person("Jun", "Zhao", role = c("aut", "cre", "com"), email = "zhaojun2021@hotmail.com"),
+    person("Yu-Kwang", "Kim", role = c("aut"), email = "lumiere_profuse@naver.com"),
+    person("Yu-Hyeong", "Jang", role = c("aut"), email = "jyhmaru@naver.com"),
+    person("Jae Ho", "Chang", role = c("aut"), email = "chang.2090@buckeyemail.osu.eduwk"),
+    person("Sang Kyu", "Lee", role = c("aut"), email= "lsk0819@gmail.com"),
+    person("Hyoung-Moon", "Kim", role = c("aut", "ths"), email = "hmkim@konkuk.ac.kr"))
+Description: Asymptotic efficient closed-form estimators (MLEces) are provided in this package for three multivariate distributions(gamma, Weibull and Dirichlet) whose maximum likelihood estimators (MLEs) are not in closed forms. Closed-form estimators are strong consistent, and have the similar asymptotic normal distribution like MLEs. But the calculation of MLEces are much faster than the corresponding MLEs. Further details and explanations of MLEces can be found in.
+    Jang, et al. (2023) <doi:10.1111/stan.12299>.
+    Kim, et al. (2023) <doi:10.1080/03610926.2023.2179880>.
+Depends: R (>= 4.2.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: nleqslv, LaplacesDemon, sirt, ggplot2, reshape ,mvtnorm
+NeedsCompilation: no
+Packaged: 2023-09-24 11:56:33 UTC; ABC2
+Author: Jun Zhao [aut, cre, com],
+  Yu-Kwang Kim [aut],
+  Yu-Hyeong Jang [aut],
+  Jae Ho Chang [aut],
+  Sang Kyu Lee [aut],
+  Hyoung-Moon Kim [aut, ths]
+Maintainer: Jun Zhao <zhaojun2021@hotmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-24 22:20:02 UTC

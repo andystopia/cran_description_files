@@ -1,0 +1,16 @@
+Package: simml
+Type: Package
+Title: Single-Index Models with Multiple-Links
+Version: 0.2.0
+Author: Hyung Park, Eva Petkova, Thaddeus Tarpey, R. Todd Ogden
+Maintainer: Hyung Park <parkh15@nyu.edu>
+Description: A major challenge in estimating treatment decision rules from a randomized clinical trial dataset with covariates measured at baseline lies in detecting relatively small treatment effect modification-related variability (i.e., the treatment-by-covariates interaction effects on treatment outcomes) against a relatively large non-treatment-related variability (i.e., the main effects of covariates on treatment outcomes). The class of Single-Index Models with Multiple-Links is a novel single-index model specifically designed to estimate a single-index (a linear combination) of the covariates associated with the treatment effect modification-related variability, while allowing a nonlinear association with the treatment outcomes via flexible link functions. The models provide a flexible regression approach to developing treatment decision rules based on patients' data measured at baseline. We refer to Park, Petkova, Tarpey, and Ogden (2020) <doi:10.1016/j.jspi.2019.05.008> and Park, Petkova, Tarpey, and Ogden (2020) <doi:10.1111/biom.13320> (that allows an unspecified X main effect) for detail of the method. The main function of this package is simml().
+License: GPL-3
+Imports: mgcv
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2021-02-08 23:20:45 UTC; parkh15
+Repository: CRAN
+Date/Publication: 2021-02-09 13:10:02 UTC

@@ -1,0 +1,32 @@
+Package: aspace
+Type: Package
+Title: Functions for Estimating Centrographic Statistics
+Version: 4.1.1
+Date: 2024-04-17
+Authors@R: c(
+  person("Tarmo K.", "Remmel", email = "remmelt@yorku.ca", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6251-876X")),
+  person("Randy", "Bui", role = "aut"),
+  person("Ron N.", "Buliung", role = "aut"))
+Maintainer: Tarmo K. Remmel <remmelt@yorku.ca>
+Description: A collection of functions for computing centrographic
+        statistics (e.g., standard distance, standard deviation
+        ellipse, standard deviation box) for observations taken at
+        point locations. Separate plotting functions have been
+        developed for each measure. Users interested in writing results
+        to ESRI shapefiles can do so by using results from 'aspace'
+        functions as inputs to the convert.to.shapefile() and
+        write.shapefile() functions in the 'shapefiles' library. We intend to
+        provide 'terra' integration for geographic data in a future release.
+        The 'aspace' package was originally conceived to aid in the analysis of
+        spatial patterns of travel behaviour (see Buliung and Remmel 2008
+        <doi:10.1007/s10109-008-0063-7>).
+License: GPL-3
+Depends: R (>= 2.3.0), splancs, Hmisc
+LazyData: true
+Packaged: 2024-04-17 16:15:57 UTC; tarmo
+Repository: CRAN
+Date/Publication: 2024-04-17 16:30:02 UTC
+NeedsCompilation: no
+Author: Tarmo K. Remmel [aut, cre] (<https://orcid.org/0000-0001-6251-876X>),
+  Randy Bui [aut],
+  Ron N. Buliung [aut]

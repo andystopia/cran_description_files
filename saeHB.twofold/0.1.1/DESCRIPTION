@@ -1,0 +1,25 @@
+Package: saeHB.twofold
+Type: Package
+Title: Hierarchical Bayes Twofold Subarea Level Model SAE
+Version: 0.1.1
+Authors@R: c(person(given = "Reyhan",family = "Saadi",role = c("aut","cre"),email = "221810557@stis.ac.id"), person(given = "Azka",family = "Ubaidillah",role = "aut"))
+Maintainer: Reyhan Saadi <221810557@stis.ac.id>
+Description: We designed this package to provides several functions for area and subarea level of small area estimation under Twofold Subarea Level Model using hierarchical Bayesian (HB) method with Univariate Normal distribution for variables of interest. Some dataset simulated by a data generation are also provided. The 'rjags' package is employed to obtain parameter estimates using Gibbs Sampling algorithm. Model-based estimators involves the HB estimators which include the mean, the variation of mean, and the quantile. For the reference, see Rao and Molina (2015) <doi:10.1002/9781118735855>, Torabi and Rao (2014) <doi:10.1016/j.jmva.2014.02.001>, Leyla Mohadjer et al.(2007) <http://www.asasrms.org/Proceedings/y2007/Files/JSM2007-000559.pdf>, and Erciulescu et al.(2019) <doi:10.1111/rssa.12390>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: rjags, coda, stringr, stats, grDevices, graphics, data.table,
+        utils
+RoxygenNote: 7.1.2
+Suggests: saeHB, knitr, rmarkdown
+SystemRequirements: JAGS (http://mcmc-jags.sourceforge.net)
+VignetteBuilder: knitr
+URL: https://github.com/reymath99/saeHB.twofold
+BugReports: https://github.com/reymath99/saeHB.twofold/issues
+NeedsCompilation: no
+Packaged: 2022-05-09 11:59:39 UTC; USER10
+Author: Reyhan Saadi [aut, cre],
+  Azka Ubaidillah [aut]
+Repository: CRAN
+Date/Publication: 2022-05-09 12:20:02 UTC

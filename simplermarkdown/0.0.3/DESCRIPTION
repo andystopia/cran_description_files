@@ -1,0 +1,30 @@
+Package: simplermarkdown
+Title: Simple Engine for Generating Reports using R
+Version: 0.0.3
+Authors@R: 
+    person(given = "Jan",
+           family = "van der Laan",
+           role = c("aut", "cre"),
+           email = "r@eoos.dds.nl",
+           comment = c(ORCID = "0000-0002-0693-1514"))
+Description: Runs R-code present in a pandoc markdown file and 
+  includes the resulting output in the resulting markdown file. This
+  file can then be converted into any of the output formats 
+  supported by pandoc. The package can also be used as an engine
+  for writing package vignettes. 
+BugReports: https://github.com/djvanderlaan/simplermarkdown/issues
+URL: https://github.com/djvanderlaan/simplermarkdown
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: rjson, tools
+Suggests: MASS
+VignetteBuilder: simplermarkdown
+SystemRequirements: Pandoc (http://pandoc.org) needs to installed and
+        available in the search path.
+NeedsCompilation: no
+Packaged: 2021-10-26 19:27:19 UTC; eoos
+Author: Jan van der Laan [aut, cre] (<https://orcid.org/0000-0002-0693-1514>)
+Maintainer: Jan van der Laan <r@eoos.dds.nl>
+Repository: CRAN
+Date/Publication: 2021-10-27 12:00:02 UTC

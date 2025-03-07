@@ -1,0 +1,80 @@
+Package: SurvivalClusteringTree
+Type: Package
+Title: Clustering Analysis Using Survival Tree and Forest Algorithms
+Version: 1.0
+Date: 2023-09-07
+Authors@R: c(person(
+    given="Lu",
+    family="You",
+    role=c("aut","cre"),
+    email="lu.you@epi.usf.edu",
+    comment="Created the package. Maintains the package."),
+  person(
+    given="Lauric",
+    family="Ferrat",
+    role=c("aut"),
+    email="l.a.ferrat@exeter.ac.uk",
+    comment="Added functionality. Revised the package. Wrote the vignette."),
+  person(
+    given="Hemang",
+    family="Parikh",
+    role=c("aut"),
+    email="hemang.parikh@epi.usf.edu",
+    comment="Checked and revised the package."),
+  person(
+    given="Yanan",
+    family="Huo",
+    role=c("aut"),
+    email="yananhoho@gmail.com",
+    comment="Revised plotting functions of the package."),
+  person(
+    given="Yuting",
+    family="Yang",
+    role=c("aut"),
+    email="yang.yuting@epi.usf.edu",
+    comment="Added some data frame features."),
+  person(
+    given="Jeffrey",
+    family="Krischer",
+    role=c("ctb"),
+    comment="Supervisor the medical research. Coauthor of the medical manuscript."),
+  person(
+    given="Maria",
+    family="Redondo",
+    role=c("ctb"),
+    comment="Principal investigators of the medical research. Coauthor of the medical manuscript."),
+  person(
+    given="Richard",
+    family="Oram",
+    role=c("ctb"),
+    comment="Coauthor of the medical manuscript."),
+  person(
+    given="Andrea",
+    family="Steck",
+    role=c("ctb"),
+    comment="Coauthor of the medical manuscript."))
+Maintainer: Lu You <lu.you@epi.usf.edu>
+Description: An outcome-guided algorithm is developed to identify clusters of samples with similar characteristics and survival rate. The algorithm first builds a random forest and then defines distances between samples based on the fitted random forest. Given the distances, we can apply hierarchical clustering algorithms to define clusters. Details about this method is described in <https://github.com/luyouepiusf/SurvivalClusteringTree>.
+License: GPL (>= 2)
+Suggests: knitr, rmarkdown, tinytest
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: Rcpp, survival, dplyr, grid, gridtext, formula.tools
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-09-10 23:17:54 UTC; luyou
+Author: Lu You [aut, cre] (Created the package. Maintains the package.),
+  Lauric Ferrat [aut] (Added functionality. Revised the package. Wrote
+    the vignette.),
+  Hemang Parikh [aut] (Checked and revised the package.),
+  Yanan Huo [aut] (Revised plotting functions of the package.),
+  Yuting Yang [aut] (Added some data frame features.),
+  Jeffrey Krischer [ctb] (Supervisor the medical research. Coauthor of
+    the medical manuscript.),
+  Maria Redondo [ctb] (Principal investigators of the medical research.
+    Coauthor of the medical manuscript.),
+  Richard Oram [ctb] (Coauthor of the medical manuscript.),
+  Andrea Steck [ctb] (Coauthor of the medical manuscript.)
+Repository: CRAN
+Date/Publication: 2023-09-11 08:40:08 UTC

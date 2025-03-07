@@ -1,0 +1,36 @@
+Package: TwoRegression
+Type: Package
+Title: Develop and Apply Two-Regression Algorithms
+Version: 1.0.0
+Authors@R: c(
+    person(c("Paul", "R."), "Hibbing", email = "paulhibbing@gmail.com",
+		  role = c("aut","cre")),
+    person(c("Vincent", "T."), "van Hees", role = "ctb"))
+Depends: R (>= 3.5.0)
+Description: Facilitates development and application of two-regression
+    algorithms for research-grade wearable devices. It provides an easy
+    way for users to access previously-developed algorithms, and also to
+    develop their own. Initial motivation came from Hibbing PR, LaMunion SR,
+    Kaplan AS, & Crouter SE (2018) <doi:10.1249/MSS.0000000000001532>.
+    However, other algorithms are now supported. Please see the associated
+    references in the package documentation for full details of the algorithms
+    that are supported.
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr (>= 0.5.0), ggplot2 (>= 2.2.0), magrittr (>= 1.5),
+        gridExtra (>= 2.3), PAutilities (>= 1.1.0), pROC (>= 1.16.0),
+        RcppRoll, stats, rlang, lubridate, tidyr
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/paulhibbing/TwoRegression
+BugReports: https://github.com/paulhibbing/TwoRegression/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-09-05 03:08:39 UTC; prhibbing
+Author: Paul R. Hibbing [aut, cre],
+  Vincent T. van Hees [ctb]
+Maintainer: Paul R. Hibbing <paulhibbing@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-05 06:40:05 UTC

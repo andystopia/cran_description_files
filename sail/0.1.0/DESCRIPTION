@@ -1,0 +1,36 @@
+Package: sail
+Title: Sparse Additive Interaction Learning
+Version: 0.1.0
+Authors@R: c(
+  person("Sahir", "Bhatnagar", email = "sahir.bhatnagar@gmail.com",
+  role = c("aut", "cre"), comment = "http://sahirbhatnagar.com/"),
+  person("Yi", "Yang", email = "yi.yang6@mcgill.ca",
+  role = c("aut"), comment = "http://www.math.mcgill.ca/yyang/"),
+  person("Celia", "Greenwood", email = "celia.greenwood@mcgill.ca",
+  role = c("aut"), comment = "https://www.mcgill.ca/statisticalgenetics/")
+  )
+Description: Sparse additive interaction learning with the strong heredity property, i.e., 
+    an interaction is selected only if its corresponding main effects are also included. 
+    Fits a linear model with non-linear interactions via penalized maximum likelihood. 
+    Interactions are limited to a single exposure or environment variable. For more information, 
+    see the website below and the accompanying paper: Bhatnagar et al., "A sparse additive model for 
+    high-dimensional interactions with an exposure variable", 2019, <DOI:10.1101/445304>.
+Depends: R (>= 3.4.0)
+Imports: glmnet, gglasso, methods
+Suggests: grpreg, truncnorm, foreach, doParallel, testthat, covr,
+        vdiffr, knitr, rmarkdown
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/sahirbhatnagar/sail/issues
+URL: https://sahirbhatnagar.com/sail
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-12-05 04:59:48 UTC; sahir
+Author: Sahir Bhatnagar [aut, cre] (http://sahirbhatnagar.com/),
+  Yi Yang [aut] (http://www.math.mcgill.ca/yyang/),
+  Celia Greenwood [aut] (https://www.mcgill.ca/statisticalgenetics/)
+Maintainer: Sahir Bhatnagar <sahir.bhatnagar@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-13 15:00:02 UTC

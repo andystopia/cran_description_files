@@ -1,0 +1,23 @@
+Package: ChangePointTaylor
+Type: Package
+Title: Identify Changes in Mean
+Version: 0.1.1
+Date: 2021-02-17
+Authors@R: person("Michael", "Marks", email = "michaelmarks@analyticaconsulting.com", role = c("aut", "cre"))
+Maintainer: Michael Marks <michaelmarks@analyticaconsulting.com>
+Description: A basic implementation of the change in mean detection method outlined in: Taylor, Wayne A. (2000) <https://variation.com/wp-content/uploads/change-point-analyzer/change-point-analysis-a-powerful-new-tool-for-detecting-changes.pdf>. The package recursively uses the mean-squared error change point calculation to identify candidate change points. The candidate change points are then re-estimated and Taylor's backwards elimination process is then employed to come up with a final set of change points. Many of the underlying functions are written in C++ for improved performance. 
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.4), dplyr, purrr, tidyr, magrittr, bench, rlang,
+        ggplot2
+LinkingTo: Rcpp
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2021-02-22 17:09:14 UTC; michael
+Author: Michael Marks [aut, cre]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2021-02-22 17:40:02 UTC

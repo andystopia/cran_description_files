@@ -1,0 +1,34 @@
+Package: deepregression
+Title: Fitting Deep Distributional Regression
+Version: 0.1
+Authors@R: c(
+    person("David", "Ruegamer", , "david.ruegamer@gmail.com", role = c("aut", "cre")),
+    person("Florian", "Pfisterer", , "florian.pfisterer@stat.uni-muenchen.de", role = c("ctb")),
+    person("Philipp", "Baumann", , "baumann@kof.ethz.ch", role = c("ctb")),
+    person("Chris", "Kolb", , "chris.kolb@stat.uni-muenchen.de", role = c("ctb")))
+Description: 
+    Allows for the specification of semi-structured deep distributional regression models which are fitted in a neural network as 
+    proposed by Ruegamer et al. (2021) <arXiv:2104.02705>.
+    Predictors can be modeled using structured (penalized) linear effects, structured non-linear effects or using an unstructured deep network model.
+Config/reticulate: list( packages = list( list(package = "six", pip =
+        TRUE), list(package = "tensorflow", version = "2.5.0rc0", pip =
+        TRUE), list(package = "tensorflow_probability", version =
+        "0.12", pip = TRUE), list(package = "keras", version =
+        "2.5.0rc0", pip = TRUE)) )
+Depends: R (>= 4.0.0)
+Suggests: testthat, knitr
+Imports: tensorflow (>= 2.2.0), tfprobability, keras, mgcv, dplyr,
+        purrr, R6, reticulate (>= 1.14), Matrix, magrittr, Metrics,
+        tfruns, methods, utils
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-10-04 08:59:25 UTC; david
+Author: David Ruegamer [aut, cre],
+  Florian Pfisterer [ctb],
+  Philipp Baumann [ctb],
+  Chris Kolb [ctb]
+Maintainer: David Ruegamer <david.ruegamer@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-10-04 19:50:04 UTC

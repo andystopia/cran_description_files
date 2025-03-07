@@ -1,0 +1,38 @@
+Package: adoptr
+Type: Package
+Title: Adaptive Optimal Two-Stage Designs
+Version: 1.0.1
+Authors@R: c(person("Kevin", "Kunzmann", role = c("aut", "cph"), email = "kevin.kunzmann@boehringer-ingelheim.com",comment = c(ORCID = "0000-0002-1140-7143")),
+        person("Maximilian", "Pilz", role = c("aut", "cre"), email = "maximilian.pilz@itwm.fraunhofer.de", comment = c(ORCID = "0000-0002-9685-1613")),
+        person("Jan", "Meis", role = c("aut"), email = "meis@imbi.uni-heidelberg.de", comment = c(ORCID = "0000-0001-5407-7220")),
+        person("Nico", "Bruder", role = c("aut"), email = "bruder@imbi.uni-heidelberg.de"))
+Description: Optimize one or two-arm, two-stage designs for clinical trials with 
+    respect to several implemented objective criteria or custom objectives.
+    Optimization under uncertainty and conditional (given stage-one outcome) 
+    constraints are supported.
+    See Pilz et al. (2019) <doi:10.1002/sim.8291> and 
+    Kunzmann et al. (2021) <doi:10.18637/jss.v098.i09> for details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat, covr, rpact, vdiffr, pwr, dplyr,
+        ggplot2, tidyr, gridExtra, bookdown
+Imports: nloptr, methods, glue
+VignetteBuilder: knitr
+Collate: adoptr.R util.R DataDistribution.R BinomialDistribution.R
+        NormalDistribution.R StudentDistribution.R Prior.R
+        PointMassPrior.R ContinuousPrior.R TwoStageDesign.R
+        GroupSequentialDesign.R OneStageDesign.R Scores.R constraints.R
+        minimize.R ConditionalPower.R ConditionalSampleSize.R
+        regularization.R CompositeScore.R MaximumSampleSize.R
+RoxygenNote: 7.3.1
+BugReports: https://github.com/optad/adoptr/issues
+URL: https://github.com/optad/adoptr, https://optad.github.io/adoptr/
+NeedsCompilation: no
+Packaged: 2024-06-07 09:23:25 UTC; pilz
+Author: Kevin Kunzmann [aut, cph] (<https://orcid.org/0000-0002-1140-7143>),
+  Maximilian Pilz [aut, cre] (<https://orcid.org/0000-0002-9685-1613>),
+  Jan Meis [aut] (<https://orcid.org/0000-0001-5407-7220>),
+  Nico Bruder [aut]
+Maintainer: Maximilian Pilz <maximilian.pilz@itwm.fraunhofer.de>
+Repository: CRAN
+Date/Publication: 2024-06-07 14:40:11 UTC

@@ -1,0 +1,17 @@
+Package: hybridEnsemble
+Type: Package
+Title: Build, Deploy and Evaluate Hybrid Ensembles
+Version: 1.0.0
+Date: 2015-05-26
+Imports: randomForest, kernelFactory, ada, rpart, ROCR, nnet, e1071,
+        NMOF, GenSA, Rmalschains, pso, AUC, soma, genalg, reportr,
+        nnls, quadprog, tabuSearch, rotationForest, FNN, glmnet
+Author: Michel Ballings, Dauwe Vercamer, and Dirk Van den Poel
+Maintainer: Michel Ballings <Michel.Ballings@GMail.com>
+Description: Functions to build and deploy a hybrid ensemble consisting of eight different sub-ensembles: bagged logistic regressions, random forest, stochastic boosting, kernel factory, bagged neural networks, bagged support vector machines, rotation forest, and bagged k-nearest neighbors. Functions to cross-validate the hybrid ensemble and plot and summarize the results are also provided. There is also a function to assess the importance of the predictors.
+License: GPL (>= 2)
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2015-05-28 15:33:55 UTC; michelballings
+Repository: CRAN
+Date/Publication: 2015-05-30 16:22:16

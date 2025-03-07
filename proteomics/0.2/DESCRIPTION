@@ -1,0 +1,25 @@
+Package: proteomics
+Version: 0.2
+Date: 2014-11
+Title: Statistical Analysis of High Throughput Proteomics Data
+Description: Provides methods for making inference in isobaric labelled
+    LC-MS/MS experiments, i.e. iTRAQ experiments. It provides a function that
+    reasonably parses a CSV-export from Proteome Discoverer(TM) into a data
+    frame that can be easily handled in R. Functions and methods are provided
+    for quality control, filtering, norming, and the calculation of response
+    variables for further analysis. The merging of multiple iTRAQ experiments
+    with respect to a reference is also covered.
+Author: Thomas W. D. Möbius <kontakt@thomasmoebius.de>
+Maintainer: Thomas W. D. Möbius <kontakt@thomasmoebius.de>
+URL: http://00tau.github.io/proteomics-in-r/
+License: GPL-3
+Imports: plyr, reshape2, ggplot2, foreach
+LazyData: yes
+ByteCompile: yes
+Encoding: UTF-8
+Collate: 'data-00-selection-from-PD.r' 'data-01-consolidation.r'
+        'data-02-merging.r' 'data-03-analysis.r' 'zzz.R'
+Packaged: 2014-11-21 13:33:54 UTC; thomas.moebius
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-11-22 01:30:39

@@ -1,0 +1,34 @@
+Package: recolorize
+Title: Color-Based Image Segmentation
+Version: 0.1.0
+Authors@R: 
+    person(given = "Hannah",
+           family = "Weller",
+           role = c("aut", "cre"),
+           email = "hannahiweller@gmail.com",
+           comment = c(ORCID = "0000-0002-5252-4282"))
+Description: Automatic, semi-automatic, and manual functions for
+    generating color maps from images. The idea is to simplify
+    the colors of an image according to a metric that is useful for
+    the user, using deterministic methods whenever possible.
+    Many images will be clustered well using the out-of-the-box
+    functions, but the package also includes a toolbox of functions
+    for making manual adjustments (layer merging/isolation, blurring,
+    fitting to provided color clusters or those from another image, etc).
+    Also includes export methods for other color/pattern analysis packages
+    (pavo, patternize, colordistance).
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: imager, stats, png, pavo, grDevices, graphics, mgcv,
+        colorRamps, plotfunctions, abind, raster, plot3D
+Depends: R (>= 3.50)
+Suggests: knitr, rmarkdown, sp, smoothr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-12-06 23:04:15 UTC; hanna
+Author: Hannah Weller [aut, cre] (<https://orcid.org/0000-0002-5252-4282>)
+Maintainer: Hannah Weller <hannahiweller@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-12-07 08:20:05 UTC

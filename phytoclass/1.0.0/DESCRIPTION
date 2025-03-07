@@ -1,0 +1,30 @@
+Package: phytoclass
+Title: Estimate Chla Biomass of Phytoplankton Groups
+Version: 1.0.0
+Authors@R: c(person("Alexander", "Hayward", role = c("aut", "cre", "cph"), email = "phytoclass@outlook.com"),
+	person("Andy", "McKenzie", role = c("aut")))
+Description: Determine the chlorophyll a (Chl a) biomass of different 
+    phytoplankton groups based on their pigment biomarkers. The method uses
+    non-negative matrix factorisation and simulated annealing to minimise error
+    between the observed and estimated values of pigment concentrations
+    (Hayward et al. (2023) <doi:10.1002/lom3.10541>).
+    The approach is similar to the widely used 'CHEMTAX' program
+    (Mackey et al. 1996) <doi:10.3354/meps144265>, but is more straightforward,
+    accurate, and not reliant on initial guesses for the pigment to Chl a
+    ratios for each phytoplankton group.
+Imports: bestNormalize, dplyr, dynamicTreeCut, ggplot2, Metrics,
+        RcppML, stats, tidyr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.2)
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-09-28 03:10:24 UTC; mckenziea
+Author: Alexander Hayward [aut, cre, cph],
+  Andy McKenzie [aut]
+Maintainer: Alexander Hayward <phytoclass@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-09-29 12:50:02 UTC

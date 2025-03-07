@@ -1,0 +1,48 @@
+Package: eplusr
+Title: A Toolkit for Using Whole Building Simulation Program
+        'EnergyPlus'
+Version: 0.15.2
+Authors@R: c(
+    person(given = "Hongyuan",
+           family = "Jia",
+           role = c("aut", "cre"),
+           email = "hongyuanjia@cqust.edu.cn",
+           comment = c(ORCID = "0000-0002-0075-8183")),
+    person(given = "Adrian",
+           family = "Chong",
+           role = c("aut"),
+           email = "bdgczma@nus.edu.sg",
+           comment = c(ORCID = "0000-0002-9486-4728"))
+    )
+Description: A rich toolkit of using the whole building
+    simulation program 'EnergyPlus'(<https://energyplus.net>), which
+    enables programmatic navigation, modification of 'EnergyPlus' models
+    and makes it less painful to do parametric simulations and analysis.
+License: MIT + file LICENSE
+URL: https://hongyuanjia.github.io/eplusr/,
+        https://github.com/hongyuanjia/eplusr
+BugReports: https://github.com/hongyuanjia/eplusr/issues
+Depends: R (>= 3.2.0)
+Imports: callr (>= 2.0.4), checkmate, cli (>= 1.1.0), crayon,
+        data.table (>= 1.12.4), hms, lubridate, methods, processx (>=
+        3.2.0), progress (>= 1.2.0), R6, RSQLite, stringi, units
+Suggests: decido, rgl (>= 0.105.13), testthat (>= 2.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+SystemRequirements: EnergyPlus (optional) (<https://energyplus.net>);
+        udunits2
+Collate: 'constants.R' 'assert.R' 'diagram.R' 'eplusr.R' 'utils.R'
+        'impl.R' 'parse.R' 'impl-epw.R' 'impl-idd.R' 'impl-idf.R'
+        'idf.R' 'idd.R' 'epw.R' 'err.R' 'format.R' 'geom.R' 'group.R'
+        'iddobj.R' 'idfobj-sch.R' 'impl-idfobj.R' 'idfobj.R'
+        'impl-geom.R' 'impl-iddobj.R' 'impl-idfobj-sch.R' 'impl-sql.R'
+        'impl-viewer.R' 'install.R' 'job.R' 'options.R' 'param.R'
+        'rdd.R' 'reload.R' 'run.R' 'sql.R' 'transition.R' 'units.R'
+        'validate.R' 'viewer.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2022-08-19 10:10:51 UTC; hongy
+Author: Hongyuan Jia [aut, cre] (<https://orcid.org/0000-0002-0075-8183>),
+  Adrian Chong [aut] (<https://orcid.org/0000-0002-9486-4728>)
+Maintainer: Hongyuan Jia <hongyuanjia@cqust.edu.cn>
+Repository: CRAN
+Date/Publication: 2022-08-19 11:00:20 UTC

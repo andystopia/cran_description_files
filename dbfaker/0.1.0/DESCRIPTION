@@ -1,0 +1,21 @@
+Package: dbfaker
+Type: Package
+Title: A Tool to Ensure the Validity of Database Writes
+Version: 0.1.0
+Authors@R: person("Hari", "Mohanraj", email = "hari@shipt.com",
+  role = c("aut", "cre"))
+Description: A tool to ensure the validity of database writes.
+  It provides a set of utilities to analyze and type check the properties
+  of data frames that are to be written to databases with SQL support.
+License: MIT + file LICENSE
+LazyData: TRUE
+Imports: parsedate, tidyr, RPostgreSQL, DBI, foreach, dplyr, assertive
+Suggests: testthat, knitr, rmarkdown, doMC
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-10-13 20:08:56 UTC; hari
+Author: Hari Mohanraj [aut, cre]
+Maintainer: Hari Mohanraj <hari@shipt.com>
+Repository: CRAN
+Date/Publication: 2016-10-14 00:39:55

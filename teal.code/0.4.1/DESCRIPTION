@@ -1,0 +1,52 @@
+Type: Package
+Package: teal.code
+Title: Code Storage and Execution Class for 'teal' Applications
+Version: 0.4.1
+Date: 2023-09-06
+Authors@R: c(
+    person("Dawid", "Kaledkowski", , "dawid.kaledkowski@roche.com", role = c("aut", "cre")),
+    person("Pawel", "Rucki", , "pawel.rucki@roche.com", role = "aut"),
+    person("Nikolas", "Burkoff", , "nikolas.burkoff@roche.com", role = "aut"),
+    person("Mahmoud", "Hallal", , "mahmoud.hallal@roche.com", role = "aut"),
+    person("Maciej", "Nasinski", , "maciej.nasinski@contractors.roche.com", role = "aut"),
+    person("Konrad", "Pagacz", , "konrad.pagacz@contractors.roche.com", role = "aut"),
+    person("Junlue", "Zhao", , "zhaoj88@gene.com", role = "aut"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Introduction of 'qenv' S4 class, that facilitates code
+    execution and reproducibility in 'teal' applications.
+License: Apache License 2.0
+URL: https://insightsengineering.github.io/teal.code/latest-tag/,
+        https://github.com/insightsengineering/teal.code
+BugReports: https://github.com/insightsengineering/teal.code/issues
+Depends: R (>= 4.0)
+Imports: checkmate (>= 2.1.0), grDevices, lifecycle (>= 0.2.0),
+        methods, rlang (>= 1.1.0), shiny (>= 1.6.0), styler (>= 1.2.0)
+Suggests: cli (>= 3.4.0), knitr (>= 1.42), magrittr (>= 1.5), rmarkdown
+        (>= 2.19), testthat (>= 3.1.5)
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Config/Needs/verdepcheck: mllg/checkmate, r-lib/lifecycle, r-lib/rlang,
+        rstudio/shiny, r-lib/styler, r-lib/cli, yihui/knitr,
+        tidyverse/magrittr, rstudio/rmarkdown, r-lib/testthat
+Config/Needs/website: insightsengineering/nesttemplate
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+Collate: 'include_css_js.R' 'qenv-class.R' 'qenv-errors.R'
+        'qenv-concat.R' 'qenv-constructor.R' 'qenv-eval_code.R'
+        'qenv-get_code.R' 'qenv-get_var.R' 'qenv-get_warnings.R'
+        'qenv-join.R' 'qenv-show.R' 'teal.code-package.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2023-09-11 08:52:34 UTC; kosinsm4
+Author: Dawid Kaledkowski [aut, cre],
+  Pawel Rucki [aut],
+  Nikolas Burkoff [aut],
+  Mahmoud Hallal [aut],
+  Maciej Nasinski [aut],
+  Konrad Pagacz [aut],
+  Junlue Zhao [aut],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Dawid Kaledkowski <dawid.kaledkowski@roche.com>
+Repository: CRAN
+Date/Publication: 2023-09-12 06:10:03 UTC

@@ -1,0 +1,39 @@
+Package: qsimulatR
+Version: 1.0
+Date: 2020-12-07
+Title: A Quantum Computer Simulator
+Authors@R: 
+    c(person(given = "Johann",
+             family = "Ostmeyer",
+             role = "aut",
+             email = "ostmeyer@hiskp.uni-bonn.de"),
+      person(given = "Carsten",
+             family = "Urbach",
+             role = c("aut", "cre"),
+             email = "urbach@hiskp.uni-bonn.de"))
+Description: A quantum computer simulator framework with up to 24 qubits. It allows to
+    define general single qubit gates and general controlled single
+    qubit gates. For convenience, it currently provides the
+    most common gates (X, Y, Z, H, Z, S, T, Rx, Ry, Rz, CNOT, SWAP, Toffoli or
+    CCNOT, Fredkin or CSWAP). 'qsimulatR' supports plotting of circuits and is able to
+    export circuits to 'Qiskit' <https://qiskit.org/>, a python package
+    which can be used to run on IBM's hardware <https://quantum-computing.ibm.com/>.
+Imports: methods, stats
+Suggests: knitr, markdown, rmarkdown
+License: GPL-3
+LazyData: true
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://github.com/HISKP-LQCD/qsimulatR
+BugReports: https://github.com/HISKP-LQCD/qsimulatR/issues
+Collate: 'state.R' 'sqgate.R' 'ccqgate.R' 'cnotgate.R' 'cqgate.R'
+        'export2qiskit.R' 'measure.R' 'phase_estimation.R'
+        'plot-qstate.R' 'qft.R' 'qsimulatR-package.R' 'swapgate.R'
+NeedsCompilation: no
+Packaged: 2020-12-07 14:11:13 UTC; urbach
+Author: Johann Ostmeyer [aut],
+  Carsten Urbach [aut, cre]
+Maintainer: Carsten Urbach <urbach@hiskp.uni-bonn.de>
+Repository: CRAN
+Date/Publication: 2020-12-09 09:20:05 UTC

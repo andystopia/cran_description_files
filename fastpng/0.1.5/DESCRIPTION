@@ -1,0 +1,71 @@
+Type: Package
+Package: fastpng
+Title: Read and Write PNG Files with Configurable Decoder/Encoder
+        Options
+Version: 0.1.5
+Authors@R: c(
+    person("Mike", "Cheng", , "mikefc@coolbutuseless.com", role = c("aut", "cre", "cph")),
+    person("Randy408", , , "randy408@protonmail.com", role = c("aut", "cph"),
+           comment = "Author of bundled libspng"),
+    person("The PNG Reference Library Authors", role = c('aut', 'cph')),
+    person("Cosmin", "Truta", role = 'cph', comment = 
+           "SSE2 optimised filter functions, NEON optimised filter functions, NEON optimised palette expansion functions"),
+    person("Glenn", "Randers-Pehrson", role = 'cph', comment = 
+           "SSE2 optimised filter functions"),
+    person("Andreas", "Dilger", role = 'cph'),
+    person("Guy Eric", "Schalnat", role = 'cph'),
+    person("Mike", "Klein", role = "ctb", comment = "SSE2 optimised filter functions"),
+    person("Matt", "Sarett", role = "ctb", comment = "SSE2 optimised filter functions"),
+    person("James", "Yu", email = "james.yu@linaro.org", role = "ctb", 
+           comment = "NEON optimised filter functions"),
+    person("Mars", "Rullgard", role = "ctb", comment = "NEON optimised filter functions"),
+    person("Arm Holdings", role = "cph", comment = "NEON optimised palette expansion functions"),
+    person("Richard", "Townsend", role = c('ctb'), email = "Richard.Townsend@arm.com", 
+           comment = "NEON optimised palette expansion functions")
+  )
+Maintainer: Mike Cheng <mikefc@coolbutuseless.com>
+Description: Read and write PNG images with arrays, rasters, native
+    rasters, numeric arrays, integer arrays, raw vectors and indexed
+    values.  This PNG encoder exposes configurable internal options
+    enabling the user to select a speed-size tradeoff.  For example,
+    disabling compression can speed up writing PNG by a factor of 50.
+    Multiple image formats are supported including raster, native rasters,
+    and integer and numeric arrays at color depths of 1, 2, 3 or 4. 16-bit
+    images are also supported. This implementation uses the 'libspng' 'C'
+    library which is available from
+    <https://github.com/randy408/libspng/>.
+License: MIT + file LICENSE
+URL: https://github.com/coolbutuseless/fastpng
+BugReports: https://github.com/coolbutuseless/fastpng/issues
+Depends: R (>= 2.10)
+Suggests: knitr, png, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Copyright: The included 'libspng' code is Copyright (c) 2018-2023,
+        Randy <randy408@protonmail.com>. Sections within the 'libspng'
+        code are derived from 'libpng' and copyright attributed to
+        those authors. See 'COPYRIGHTS' for license information and
+        full attribution of all copyrighted sections of code.
+Encoding: UTF-8
+Language: en-AU
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-08-31 11:19:45 UTC; mike
+Author: Mike Cheng [aut, cre, cph],
+  Randy408 [aut, cph] (Author of bundled libspng),
+  The PNG Reference Library Authors [aut, cph],
+  Cosmin Truta [cph] (SSE2 optimised filter functions, NEON optimised
+    filter functions, NEON optimised palette expansion functions),
+  Glenn Randers-Pehrson [cph] (SSE2 optimised filter functions),
+  Andreas Dilger [cph],
+  Guy Eric Schalnat [cph],
+  Mike Klein [ctb] (SSE2 optimised filter functions),
+  Matt Sarett [ctb] (SSE2 optimised filter functions),
+  James Yu [ctb] (NEON optimised filter functions),
+  Mars Rullgard [ctb] (NEON optimised filter functions),
+  Arm Holdings [cph] (NEON optimised palette expansion functions),
+  Richard Townsend [ctb] (NEON optimised palette expansion functions)
+Repository: CRAN
+Date/Publication: 2024-09-04 13:20:06 UTC

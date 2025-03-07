@@ -1,0 +1,33 @@
+Package: GofCens
+Type: Package
+Title: Goodness-of-Fit Methods for Complete and Right-Censored Data
+Version: 1.1
+Date: 2024-07-29
+Authors@R: c(person("Klaus", "Langohr", role = c("aut", "cre"),
+                    email = "klaus.langohr@upc.edu"),
+            person("Mireia", "Besalú", role = "aut"),
+            person("Matilde", "Francisco", role = "aut"),
+            person("Guadalupe", "Gómez", role = "aut"))
+Description: Graphical tools and goodness-of-fit tests for complete and right-censored data:
+             1. Kolmogorov-Smirnov, Cramér-von Mises, and Anderson-Darling tests,
+                which use the empirical distribution function for complete data 
+                and are extended for right-censored data.
+             2. Generalized chi-squared-type test, which is based on the squared 
+                differences between observed and expected counts using random 
+                cells with right-censored data.
+             3. A series of graphical tools such as probability or cumulative hazard 
+                plots to guide the decision about the most suitable parametric model 
+                for the data.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0), survival, actuar
+Imports: fitdistrplus, grid, ggplot2, gridExtra, survminer, boot
+NeedsCompilation: no
+Packaged: 2024-07-29 08:05:28 UTC; klaus
+Author: Klaus Langohr [aut, cre],
+  Mireia Besalú [aut],
+  Matilde Francisco [aut],
+  Guadalupe Gómez [aut]
+Maintainer: Klaus Langohr <klaus.langohr@upc.edu>
+Repository: CRAN
+Date/Publication: 2024-07-29 08:40:02 UTC

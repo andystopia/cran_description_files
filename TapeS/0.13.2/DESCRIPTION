@@ -1,0 +1,37 @@
+Package: TapeS
+Type: Package
+Title: Tree Taper Curves and Sorting Based on 'TapeR'
+Version: 0.13.2
+Authors@R: c(person("Christian", "Vonderach", 
+  email="christian.vonderach@forst.bwl.de", role=c("aut", "cre")),
+  person("Edgar", "Kublin", role="aut"),
+  person("Gerald", "Kändler", role="aut"))
+Description: Providing new german-wide 'TapeR' Models and functions for their 
+  evaluation. Included are the most common tree species in Germany (Norway 
+  spruce, Scots pine, European larch, Douglas fir, Silver fir as well as 
+  European beech, Common/Sessile oak and Red oak). Many other species are mapped
+  to them so that 36 tree species / groups can be processed. Single trees are 
+  defined by species code, one or multiple diameters in arbitrary measuring 
+  height and tree height. The functions then provide information on diameters 
+  along the stem, bark thickness, height of diameters, volume of the total or 
+  parts of the trunk and total and component above-ground biomass. It is also 
+  possible to calculate assortments from the taper curves. Uncertainty 
+  information is provided for diameter, volume and component biomass estimation. 
+Depends: R (>= 3.5.0)
+License: BSD_2_clause + file LICENSE
+URL: https://gitlab.com/vochr/tapes
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: methods, utils, TapeR (>= 0.5.2), Rcpp (>= 1.0.5),
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, knitr, rmarkdown, rbenchmark, rBDAT (>= 0.10.0),
+        RODBC
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-01-22 14:41:03 UTC; christian.vonderach
+Author: Christian Vonderach [aut, cre],
+  Edgar Kublin [aut],
+  Gerald Kändler [aut]
+Maintainer: Christian Vonderach <christian.vonderach@forst.bwl.de>
+Repository: CRAN
+Date/Publication: 2025-01-22 15:10:06 UTC

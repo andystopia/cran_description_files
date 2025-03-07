@@ -1,0 +1,66 @@
+Package: ddiv
+Type: Package
+Title: Data Driven I-v Feature Extraction
+Description: The Data Driven I-V Feature Extraction is used to extract 
+    Current-Voltage (I-V) features from I-V curves. I-V curves indicate the 
+    relationship between current and voltage for a solar cell or Photovoltaic (PV) 
+    modules. The I-V features such as maximum power point (Pmp), shunt resistance (Rsh), 
+    series resistance (Rs),short circuit current (Isc), open circuit voltage (Voc), 
+    fill factor (FF), current at maximum power (Imp) and voltage at maximum power(Vmp) 
+    contain important information of the performance for PV modules. The traditional 
+    method uses the single diode model to model I-V curves and extract I-V features. 
+    This package does not use the diode model, but uses data-driven a method which 
+    select different linear parts of the I-V curves to extract I-V features. 
+    This method also uses a sampling method to calculate uncertainties when extracting 
+    I-V features. Also, because of the partially shaded array, "steps" occurs in 
+    I-V curves. The "Segmented Regression" method is used to identify steps in I-V curves.
+    This material is based upon work supported by the U.S. Department of Energy’s 
+    Office of Energy Efficiency and Renewable Energy (EERE) under Solar Energy 
+    Technologies Office (SETO) Agreement Number DE-EE0007140. 
+Version: 0.1.0
+Authors@R: c(person("Wei-Heng", "Huang", email="wxh272@case.edu", 
+                    role=c("aut"),       comment = c(ORCID = "0000-0002-6609-4981")),
+            person("Xuan", "Ma", email="xxm115@case.edu", 
+                    role=c("aut","cre"), comment = c(ORCID = "0000-0003-2361-2846")),
+            person("Jiqi", "Liu", email="jxl1763@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0003-2016-4160")),
+            person("Menghong", "Wang", email="mxw477@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0001-7349-699X")),
+            person("Alan J.", "Curran", email="ajc269@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0002-4505-8359")),
+            person("Justin S.", "Fada", email="jsf77@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0002-0029-5051")),        
+            person("Jean-Nicolas", "Jaubert", email="jn.jaubert@canadiansolar.com", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0002-9663-6999")),
+            person("Jing", "Sun", email="J.Sun@canadiansolar.com", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0002-4313-2316")),
+            person("Jennifer L.", "Braid", email="jlb269@case.edu", 
+                    role=c("ctb"),       comment = c(ORCID = "0000-0002-0677-7756")),
+            person("Jenny", "Brynjarsdottir", email="jxb628@case.edu", 
+                    role=c("ctb"),       comment = c(ORCID = "0000-0003-1859-4962")),
+            person("Roger H.", "French", email="rxf131@case.edu", 
+                    role=c("aut","cph"), comment = c(ORCID = "0000-0002-6162-0532")) )        
+Depends: R (>= 3.4.0)
+Imports: MASS (>= 0.5-3.0), segmented (>= 0.5-3.0)
+Suggests: rmarkdown, testthat, knitr
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-09-18 18:30:20 UTC; xuanma
+Author: Wei-Heng Huang [aut] (<https://orcid.org/0000-0002-6609-4981>),
+  Xuan Ma [aut, cre] (<https://orcid.org/0000-0003-2361-2846>),
+  Jiqi Liu [ctb] (<https://orcid.org/0000-0003-2016-4160>),
+  Menghong Wang [ctb] (<https://orcid.org/0000-0001-7349-699X>),
+  Alan J. Curran [ctb] (<https://orcid.org/0000-0002-4505-8359>),
+  Justin S. Fada [ctb] (<https://orcid.org/0000-0002-0029-5051>),
+  Jean-Nicolas Jaubert [ctb] (<https://orcid.org/0000-0002-9663-6999>),
+  Jing Sun [ctb] (<https://orcid.org/0000-0002-4313-2316>),
+  Jennifer L. Braid [ctb] (<https://orcid.org/0000-0002-0677-7756>),
+  Jenny Brynjarsdottir [ctb] (<https://orcid.org/0000-0003-1859-4962>),
+  Roger H. French [aut, cph] (<https://orcid.org/0000-0002-6162-0532>)
+Maintainer: Xuan Ma <xxm115@case.edu>
+Repository: CRAN
+Date/Publication: 2018-09-28 21:50:10 UTC

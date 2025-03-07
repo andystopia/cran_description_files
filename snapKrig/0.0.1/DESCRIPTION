@@ -1,0 +1,30 @@
+Package: snapKrig
+Title: Fast Kriging and Geostatistics on Grids with Kronecker
+        Covariance
+Version: 0.0.1
+Authors@R: 
+    person("Dean", "Koch", , "dkoch@ualberta.ca", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8849-859X"))
+Description: Geostatistical modeling and kriging with
+    gridded data using spatially separable covariance functions (Kronecker
+    covariances). Kronecker products in these models provide shortcuts for
+    solving large matrix problems in likelihood and conditional mean,
+    making 'snapKrig' computationally efficient with large grids. The package
+    supplies its own S3 grid object class, and a host of methods including
+    plot, print, Ops, square bracket replace/assign, and more. Our computational
+    methods are described in Koch, Lele, Lewis (2020) <doi:10.7939/r3-g6qb-bq70>.
+License: MIT + file LICENSE
+URL: https://github.com/deankoch/snapKrig
+BugReports: https://github.com/deankoch/snapKrig/issues
+Imports: graphics, grDevices, methods, stats, utils
+Suggests: knitr, rmarkdown, terra, raster, sf, units, sp,
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-01-04 01:47:33 UTC; deank
+Author: Dean Koch [aut, cre, cph] (<https://orcid.org/0000-0002-8849-859X>)
+Maintainer: Dean Koch <dkoch@ualberta.ca>
+Repository: CRAN
+Date/Publication: 2023-01-09 09:50:02 UTC

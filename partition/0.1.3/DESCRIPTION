@@ -1,0 +1,49 @@
+Type: Package
+Package: partition
+Title: Agglomerative Partitioning Framework for Dimension Reduction
+Version: 0.1.3
+Authors@R: 
+    c(person(given = "Joshua",
+             family = "Millstein",
+             role = "aut",
+             email = "joshua.millstein@usc.edu"),
+      person(given = "Malcolm",
+             family = "Barrett",
+             role = c("aut", "cre"),
+             email = "malcolmbarrett@gmail.com",
+             comment = c(ORCID = "0000-0003-0299-5825")))
+Maintainer: Malcolm Barrett <malcolmbarrett@gmail.com>
+Description: A fast and flexible framework for agglomerative
+    partitioning. 'partition' uses an approach called
+    Direct-Measure-Reduce to create new variables that maintain the
+    user-specified minimum level of information. Each reduced variable is
+    also interpretable: the original variables map to one and only one
+    variable in the reduced data set. 'partition' is flexible, as well:
+    how variables are selected to reduce, how information loss is
+    measured, and the way data is reduced can all be customized.
+    'partition' is based on the Partition framework discussed in Millstein
+    et al. (2020) <doi: 10.1093/bioinformatics/btz661>.
+License: MIT + file LICENSE
+URL: https://uscbiostats.github.io/partition/,
+        https://github.com/USCbiostats/partition
+BugReports: https://github.com/USCbiostats/partition/issues
+Depends: R (>= 3.3.0)
+Imports: crayon, dplyr (>= 0.8.0), forcats, ggplot2 (>= 3.3.0),
+        infotheo, magrittr, MASS, pillar, purrr, Rcpp, rlang, stringr,
+        tibble, tidyr (>= 1.0.0)
+Suggests: covr, knitr, rmarkdown, spelling, testthat (>= 3.0.0),
+        ggcorrplot
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+NeedsCompilation: yes
+Packaged: 2021-01-07 21:34:20 UTC; malcolmbarrett
+Author: Joshua Millstein [aut],
+  Malcolm Barrett [aut, cre] (<https://orcid.org/0000-0003-0299-5825>)
+Repository: CRAN
+Date/Publication: 2021-01-07 22:30:03 UTC

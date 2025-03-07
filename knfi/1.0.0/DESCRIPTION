@@ -1,0 +1,58 @@
+Package: knfi
+Title: Analysis of Korean National Forest Inventory Database
+Version: 1.0.0
+Maintainer: Sinyoung Park <youngsin0306@kookmin.ac.kr>
+Authors@R: 
+  c(person(given = "Sinyoung", family = "Park", role = c("aut", "cre"), email = "youngsin0306@kookmin.ac.kr", comment = c(ORCID = "0000-0003-3658-0935")),
+    person(given = "Wonhee", family = "Cho", role = c("aut", "ctb"), email = "wcho@kongju.ac.kr", comment = c(ORCID = "0000-0002-9598-6188")),
+    person(given = "Inyoo", family = "Kim", role = c("aut", "ctb"), email = "inri123@kookmin.ac.kr", comment = c(ORCID = "0000-0002-7709-8224")),
+    person(given = "Wontaek", family = "Lim", role = c("aut", "ctb"), email = "lwt0909@kookmin.ac.kr", comment = c(ORCID = "0000-0002-5872-1121")),
+    person(given = "Dongwook W.",family = "Ko", role = c("aut","ths"), email = "dwko@kookmin.ac.kr", comment = c(ORCID = "0000-0002-6944-0261")))
+Description: Understanding the current status of forest resources is essential for monitoring changes 
+    in forest ecosystems and generating related statistics. In South Korea, the National Forest
+    Inventory (NFI) surveys over 4,500 sample plots nationwide every five years and records 70 items,
+    including forest stand, forest resource, and forest vegetation surveys. Many researchers use NFI 
+    as the primary data for research, such as biomass estimation or analyzing the importance value of
+    each species over time and space, depending on the research purpose. However, the large volume
+    of accumulated forest survey data from across the country can make it challenging to manage and
+    utilize such a vast dataset. To address this issue, we developed an R package that efficiently
+    handles large-scale NFI data across time and space. The package offers a comprehensive 
+    workflow for NFI data analysis. It starts with data processing, where read_nfi() function 
+    reconstructs NFI data according to the researcher's needs while performing basic integrity checks
+    for data quality.Following this, the package provides analytical tools that operate on the verified
+    data. These include functions like summary_nfi() for summary statistics, diversity_nfi() for
+    biodiversity analysis, iv_nfi() for calculating species importance value, and biomass_nfi() and
+    cwd_biomass_nfi() for biomass estimation. Finally, for visualization, the tsvis_nfi() function
+    generates graphs and maps, allowing users to visualize forest ecosystem changes across various
+    spatial and temporal scales. This integrated approach and its specialized functions can enhance
+    the efficiency of processing and analyzing NFI data, providing researchers with insights into
+    forest ecosystems. The NFI Excel files (.xlsx) are not included in the R package and must be 
+    downloaded  separately. Users can access these NFI Excel files by visiting 
+    the Korea Forest Service Forestry Statistics Platform <https://kfss.forest.go.kr/stat/ptl/article/articleList.do?curMenu=11694&bbsId=microdataboard>
+    to download the annual NFI Excel files, which are bundled in .zip archives. Please note that this 
+    website is only available in Korean, and direct download links can be found in the notes section 
+    of the read_nfi() function.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Additional_repositories: https://SYOUNG9836.github.io/drat
+URL: https://github.com/SYOUNG9836/knfi,
+        https://syoung9836.github.io/knfi/
+BugReports: https://github.com/SYOUNG9836/knfi/issues
+Imports: dplyr, magrittr, readxl, stringr, vegan, tidyr, BiodiversityR,
+        data.table, sf, plotrix, rlang, cellranger, stats, broom,
+        ggplot2, sp, cowplot, ggpubr, drat
+Depends: R (>= 3.6)
+Suggests: kadmin, knitr, rmarkdown
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-10-10 09:51:49 UTC; PSY
+Author: Sinyoung Park [aut, cre] (<https://orcid.org/0000-0003-3658-0935>),
+  Wonhee Cho [aut, ctb] (<https://orcid.org/0000-0002-9598-6188>),
+  Inyoo Kim [aut, ctb] (<https://orcid.org/0000-0002-7709-8224>),
+  Wontaek Lim [aut, ctb] (<https://orcid.org/0000-0002-5872-1121>),
+  Dongwook W. Ko [aut, ths] (<https://orcid.org/0000-0002-6944-0261>)
+Repository: CRAN
+Date/Publication: 2024-10-14 12:00:22 UTC

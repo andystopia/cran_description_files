@@ -1,0 +1,49 @@
+Type: Package
+Package: tadaatoolbox
+Title: Helpers for Data Analysis and Presentation Focused on Undergrad
+        Psychology
+Version: 0.17.0
+Authors@R: 
+    c(person(given = "Lukas",
+             family = "Burk",
+             role = c("aut", "cre"),
+             email = "lukas@tadaa-data.de",
+             comment = c(ORCID = "0000-0001-7528-3795")),
+      person(given = "Tobias",
+             family = "Anton",
+             role = "aut",
+             email = "tobi@tadaa-data.de"),
+      person(given = "Daniel",
+             family = "Lüdecke",
+             role = "ctb",
+             email = "d.luedecke@uke.de"),
+      person(given = "Gesa",
+             family = "Graf",
+             role = "ctb",
+             email = "ggraf@uni-bremen.de"))
+Description: A teaching project for the display of statistical
+    tests as well as some convenience functions for data cleanup. The
+    primary components are the functions prefixed with 'tadaa_', which are
+    built to work in an interactive environment, but also print markdown
+    tables powered by 'pixiedust' for the creation of 'RMarkdown' reports.
+    This package is no longer actively developed.
+License: MIT + file LICENSE
+URL: https://github.com/tadaadata/tadaatoolbox
+BugReports: https://github.com/tadaadata/tadaatoolbox/issues
+Depends: R (>= 3.2)
+Imports: broom, car, DescTools, ggplot2, magrittr, methods, pixiedust,
+        stats, utils, viridis
+Suggests: covr, cowplot, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-01 16:36:39 UTC; Lukas
+Author: Lukas Burk [aut, cre] (<https://orcid.org/0000-0001-7528-3795>),
+  Tobias Anton [aut],
+  Daniel Lüdecke [ctb],
+  Gesa Graf [ctb]
+Maintainer: Lukas Burk <lukas@tadaa-data.de>
+Repository: CRAN
+Date/Publication: 2020-06-01 17:50:02 UTC

@@ -1,0 +1,15 @@
+Package: iFes
+Type: Package
+Title: Incremental Feature Selection Algorithm accelerated by GPU
+Version: 1.0
+Date: 2014-12-05
+Depends: R (>= 2.10), ROCR, parallel, doParallel, foreach
+SystemRequirements: Nvidia's CUDA toolkit (>= release 5.5)
+Author: Qinghan Meng, Fengfeng Zhou
+Maintainer: Qinghan Meng <qinghan.meng@gmail.com>
+Description: Incremental gene selection algorithm(iFes) expands the screening targets in each step of the forward stepwise algorithm, and proposes a novel feature selection algorithm iFes with both high accuracies and low feature numbers. Logistic regression classification algorithm accelerated by NVIDIA GPU is utilized to measure how good the currently chosen feature subset is. 
+License: GPL-2
+Packaged: 2014-12-09 13:45:29 UTC; qhmeng
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-12-09 18:02:13

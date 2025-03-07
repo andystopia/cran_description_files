@@ -1,0 +1,44 @@
+Package: dynamicSDM
+Title: Species Distribution and Abundance Modelling at High
+        Spatio-Temporal Resolution
+Version: 1.0
+Authors@R: c(
+    person("Rachel", "Dobson", , "eerdo@leeds.ac.uk", role = c("aut", "cre", "ctb"),
+           comment = c(ORCID = "0000-0003-3990-267X")),
+    person("Andy J.", "Challinor", , "A.J.Challinor@leeds.ac.uk", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-8551-6617")),
+    person("Robert A.", "Cheke", , "R.A.Cheke@greenwich.ac.uk", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-7437-1934")),
+    person("Stewart", "Jennings", , "S.A.Jennings@leeds.ac.uk", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-1267-8623")),
+    person("Stephen G.", "Willis", , "s.g.willis@durham.ac.uk", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-8656-5808")),
+    person("Martin", "Dallimer", , "M.Dallimer@leeds.ac.uk", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0001-8120-3309"))) 
+Description: A collection of novel tools for generating species distribution and abundance models (SDM) that are dynamic through both space and time. These highly flexible functions incorporate spatial and temporal aspects across key SDM stages; including when cleaning and filtering species occurrence data, generating pseudo-absence records, assessing and correcting sampling biases and autocorrelation, extracting explanatory variables and projecting distribution patterns. Throughout, functions utilise Google Earth Engine and Google Drive to minimise the computing power and storage demands associated with species distribution modelling at high spatio-temporal resolution.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: dplyr, geodist, geosphere, googledrive, lubridate, magrittr,
+        raster, reticulate, rgee, sp, spThin, stats, tidyr, grDevices,
+        graphics, methods, utils, sf
+Depends: R (>= 3.5.0)
+Suggests: ape, CoordinateCleaner, covr, gargle, gbm, ggplot2, knitr,
+        magick, matrixStats, rmarkdown, stars, testthat (>= 3.0.0),
+        viridis
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/r-a-dobson/dynamicSDM
+BugReports: https://github.com/r-a-dobson/dynamicSDM/issues
+NeedsCompilation: no
+Packaged: 2023-02-16 14:47:53 UTC; eerdo
+Author: Rachel Dobson [aut, cre, ctb] (<https://orcid.org/0000-0003-3990-267X>),
+  Andy J. Challinor [aut, ctb] (<https://orcid.org/0000-0002-8551-6617>),
+  Robert A. Cheke [aut, ctb] (<https://orcid.org/0000-0002-7437-1934>),
+  Stewart Jennings [aut, ctb] (<https://orcid.org/0000-0002-1267-8623>),
+  Stephen G. Willis [aut, ctb] (<https://orcid.org/0000-0002-8656-5808>),
+  Martin Dallimer [aut, ctb] (<https://orcid.org/0000-0001-8120-3309>)
+Maintainer: Rachel Dobson <eerdo@leeds.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-02-17 09:30:02 UTC

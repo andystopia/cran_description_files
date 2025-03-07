@@ -1,0 +1,27 @@
+Package: CopulaDTA
+Type: Package
+Title: Copula Based Bivariate Beta-Binomial Model for Diagnostic Test
+        Accuracy Studies
+Version: 1.0.1
+Date: 2023-02-20
+Authors@R: person("Victoria", "N Nyaga", email="victoria.nyaga@outlook.com", role=c("aut", "cre"))
+Depends: R (>= 4.2.0), rstan (>= 2.21.8)
+Imports: methods, ggplot2 (>= 3.4.1), plyr (>= 1.8.8), stats (>=
+        4.2.2), reshape2 (>= 1.4.4), grDevices (>= 4.2.2)
+Description: Modelling of sensitivity and specificity on their natural scale
+    using copula based bivariate beta-binomial distribution to yield marginal
+    mean sensitivity and specificity. The intrinsic negative correlation between
+    sensitivity and specificity is modelled using a copula function. A forest plot
+    can be obtained for categorical covariates or for the model with intercept only.
+    Nyaga VN, Arbyn M, Aerts M (2017) <doi:10.18637/jss.v082.c01>.
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 7.2.3
+Suggests: knitr, loo, Rmisc, httr, bayesplot, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-25 10:57:20 UTC; dries
+Author: Victoria N Nyaga [aut, cre]
+Maintainer: Victoria N Nyaga <victoria.nyaga@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-02-27 09:32:45 UTC

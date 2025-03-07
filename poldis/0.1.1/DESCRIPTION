@@ -1,0 +1,44 @@
+Package: poldis
+Type: Package
+Title: Analyse Political Texts
+Version: 0.1.1
+Date: 2024-07-17
+Authors@R: 
+    c(person(given = "Henrique",
+             family = "Sposito", 
+             role = c("cre", "aut", "ctb"),
+             email = "henrique.sposito@graduateinstitute.ch",
+             comment = c("IHEID", ORCID = "0000-0003-3420-6085")),
+      person(given = "James",
+             family = "Hollway",
+             role = c("ctb"),
+             email = "james.hollway@graduateinstitute.ch",
+             comment = c("IHEID", ORCID = "0000-0002-8361-9647")),
+      person(given = "Jael",
+             family = "Tan",
+             role = "ctb",
+             comment = c("IHEID", ORCID = "0000-0002-6234-9764"))
+      )
+Maintainer: Henrique Sposito <henrique.sposito@graduateinstitute.ch>
+Description: Wrangle and annotate different types of political texts.
+    It also introduces Urgency Analysis,
+    a new method for the analysis of urgency in political texts.
+URL: http://henriquesposito.com/poldis/
+BugReports: https://github.com/henriquesposito/poldis/issues
+License: MIT + file LICENSE
+Imports: dplyr, stringr, purrr, stringi, quanteda, spacyr, textstem,
+        tidyr, stringdist
+Suggests: rmarkdown, testthat, tesseract, quanteda.textstats, keyATM,
+        messydates, pdftools, fmsb, ggplot2, tm
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+LazyData: True
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2024-07-17 15:47:40 UTC; henriquesposito
+Author: Henrique Sposito [cre, aut, ctb] (IHEID,
+    <https://orcid.org/0000-0003-3420-6085>),
+  James Hollway [ctb] (IHEID, <https://orcid.org/0000-0002-8361-9647>),
+  Jael Tan [ctb] (IHEID, <https://orcid.org/0000-0002-6234-9764>)
+Repository: CRAN
+Date/Publication: 2024-07-21 08:50:02 UTC

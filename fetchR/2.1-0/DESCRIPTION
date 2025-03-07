@@ -1,0 +1,33 @@
+Package: fetchR
+Type: Package
+Title: Calculate Wind Fetch
+Version: 2.1-0
+Date: 2017-04-28
+Authors@R: person("Blake", "Seers", role = c("aut", "cre"),
+    email = "blake.seers@gmail.com")
+Imports: rgdal, sp, methods, rgeos, plotKML, utils
+Suggests: knitr, ggplot2, maps, rmarkdown
+URL: https://cran.r-project.org/package=fetchR
+BugReports: https://github.com/blasee/fetchR/issues
+Description: Wind fetch is the unobstructed length of water over which wind can
+    blow from a certain direction. The wind fetch is typically calculated for many directions
+    around the compass rose for a given location, which can then be incorporated 
+    into a larger model (such as the InVEST coastal vulnerability model;
+    <http://data.naturalcapitalproject.org/invest-releases/documentation/2_2_0/coastal_vulnerability.html>),
+    or simply averaged for a reasonable measure of 
+    the overall wind exposure for a specific marine location. The process of calculating
+    wind fetch can be extremely time-consuming and tedious, particularly if a large
+    number of fetch vectors are required at many locations. The 'fetchR' package
+    calculates wind fetch and summarises the information efficiently. There are 
+    also plot methods to help visualise the wind exposure at the various
+    locations, and methods to output the fetch vectors to a KML file for further
+    investigation.
+License: GPL-2
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-04-28 00:14:06 UTC; blake
+Author: Blake Seers [aut, cre]
+Maintainer: Blake Seers <blake.seers@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-04-28 07:16:21 UTC

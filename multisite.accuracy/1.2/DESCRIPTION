@@ -1,0 +1,14 @@
+Package: multisite.accuracy
+Type: Package
+Title: Estimation of Accuracy in Multisite Machine-Learning Models
+Version: 1.2
+Date: 2023-04-18
+Author: Joaquim Radua
+Maintainer: Joaquim Radua <quimradua@gmail.com>
+Description: The effects of the site may severely bias the accuracy of a multisite machine-learning model, even if the analysts removed them when fitting the model in the 'training set' and applying the model in the 'test set' (Solanes et al., Neuroimage 2023, 265:119800). This simple R package estimates the accuracy of a multisite machine-learning model unbiasedly, as described in (Solanes et al., Psychiatry Research: Neuroimaging 2021, 314:111313). It currently supports the estimation of sensitivity, specificity, balanced accuracy (for binary or multinomial variables), the area under the curve, correlation, mean squarer error, and hazard ratio for binomial, multinomial, gaussian, and survival (time-to-event) outcomes.
+License: GPL-3
+Imports: AROC, coxme, lme4, lmerTest, logistf, metafor, pROC, survival
+NeedsCompilation: no
+Packaged: 2023-04-18 13:17:56 UTC; team
+Repository: CRAN
+Date/Publication: 2023-04-18 19:20:13 UTC

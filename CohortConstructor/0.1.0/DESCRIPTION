@@ -1,0 +1,43 @@
+Package: CohortConstructor
+Title: Build and Manipulate Study Cohorts Using a Common Data Model
+Version: 0.1.0
+Authors@R: c(
+    person("Edward", "Burn", , "edward.burn@ndorms.ox.ac.uk", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9286-1128")),
+    person("Marti", "Catala", , "marti.catalasabate@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0000-0003-3308-9905")),
+    person("Nuria", "Mercade-Besora", , "nuria.mercadebesora@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0006-7948-3747")),
+    person("Marta", "Alcalde-Herraiz", , "marta.alcaldeherraiz@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0002-4405-1814")),
+    person("Mike", "Du", , "mike.du@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0000-0002-9517-8834")),
+    person("Yuchen", "Guo", email = "yuchen.guo@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0000-0002-0847-4855")))
+Description: Create and manipulate study cohorts in data mapped to the 
+    Observational Medical Outcomes Partnership Common Data Model.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: CDMConnector (>= 1.3.1), checkmate, cli, dbplyr (>= 2.5.0),
+        dplyr, glue, magrittr, omopgenerics (>= 0.2.1), PatientProfiles
+        (>= 1.0.0), purrr, rlang, tidyr, utils
+Suggests: DBI, DrugUtilisation, CodelistGenerator, duckdb, knitr,
+        rmarkdown, testthat (>= 3.0.0), tibble, stringr,
+        IncidencePrevalence, omock (>= 0.2.0), covr, RPostgres, odbc
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+VignetteBuilder: knitr
+Depends: R (>= 4.1)
+URL: https://ohdsi.github.io/CohortConstructor/
+NeedsCompilation: no
+Packaged: 2024-05-31 20:16:05 UTC; eburn
+Author: Edward Burn [aut, cre] (<https://orcid.org/0000-0002-9286-1128>),
+  Marti Catala [aut] (<https://orcid.org/0000-0003-3308-9905>),
+  Nuria Mercade-Besora [aut] (<https://orcid.org/0009-0006-7948-3747>),
+  Marta Alcalde-Herraiz [aut] (<https://orcid.org/0009-0002-4405-1814>),
+  Mike Du [aut] (<https://orcid.org/0000-0002-9517-8834>),
+  Yuchen Guo [aut] (<https://orcid.org/0000-0002-0847-4855>)
+Maintainer: Edward Burn <edward.burn@ndorms.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-06-01 10:53:14 UTC

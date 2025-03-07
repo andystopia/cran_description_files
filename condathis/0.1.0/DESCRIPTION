@@ -1,0 +1,31 @@
+Package: condathis
+Title: Run Any CLI Tool on a 'Conda' Environment
+Version: 0.1.0
+Authors@R: c(
+    person("Lucio", "Queiroz", , "luciorqueiroz@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6090-1834")),
+    person("Claudio", "Zanettini", , "claudio.zanettini@gmail.com", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0001-5043-8033"))
+  )
+Description: Simplifies the execution of command line interface (CLI)
+    tools within isolated and reproducible environments. It enables users
+    to effortlessly manage 'Conda' environments, execute command line
+    tools, handle dependencies, and ensure reproducibility in their data
+    analysis workflows.
+License: MIT + file LICENSE
+URL: https://github.com/luciorq/condathis
+BugReports: https://github.com/luciorq/condathis/issues
+Depends: R (>= 4.0)
+Imports: cli, fs, jsonlite, processx, rlang, stringr, tibble, tools,
+        utils, withr
+Suggests: curl, dplyr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-12-10 17:23:21 UTC; luciorq
+Author: Lucio Queiroz [aut, cre, cph] (<https://orcid.org/0000-0002-6090-1834>),
+  Claudio Zanettini [aut, ctb] (<https://orcid.org/0000-0001-5043-8033>)
+Maintainer: Lucio Queiroz <luciorqueiroz@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-11 16:00:01 UTC

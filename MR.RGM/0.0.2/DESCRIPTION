@@ -1,0 +1,21 @@
+Package: MR.RGM
+Title: Multivariate Bidirectional Mendelian Randomization Networks
+Version: 0.0.2
+Authors@R: 
+    c(person("Bitan", "Sarkar", email = "bitan@tamu.edu", role = c("aut", "cre")), person("Yang", "Ni", email = "yni@stat.tamu.edu", role = "aut"))
+Description: Addressing a central challenge encountered in Mendelian randomization (MR) studies, where MR primarily focuses on discerning the effects of individual exposures on specific outcomes and establishes causal links between them. Using a network-based methodology, the intricacy involving interdependent outcomes due to numerous factors has been tackled through this routine. Based on Ni et al. (2018) <doi:10.1214/17-BA1087>, 'MR.RGM' extends to a broader exploration of the causal landscape by leveraging on network structures and involves the construction of causal graphs that capture interactions between response variables and consequently between responses and instrument variables. 'MR.RGM' facilitates the navigation of various data availability scenarios effectively by accommodating three input formats, i.e., individual-level data and two types of summary-level data. In the process, causal effects, adjacency matrices, and other essential parameters of the complex biological networks, are estimated. Besides, 'MR.RGM' provides uncertainty quantification for specific network structures among response variables.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/bitansa/MR.RGM
+BugReports: https://github.com/bitansa/MR.RGM/issues
+Imports: Rcpp, stats
+Suggests: MASS, igraph
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2024-03-01 20:37:17 UTC; BIKASH SARKAR
+Author: Bitan Sarkar [aut, cre],
+  Yang Ni [aut]
+Maintainer: Bitan Sarkar <bitan@tamu.edu>
+Repository: CRAN
+Date/Publication: 2024-03-02 07:12:37 UTC

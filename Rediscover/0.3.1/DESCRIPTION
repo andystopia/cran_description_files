@@ -1,0 +1,33 @@
+Package: Rediscover
+Type: Package
+Title: Identify Mutually Exclusive Mutations
+Version: 0.3.1
+Author: Juan A. Ferrer-Bonsoms, Laura Jareno, and Angel Rubio
+Maintainer: Juan A. Ferrer-Bonsoms <jafhernandez@tecnun.es>
+Description: An optimized method for identifying mutually 
+    exclusive genomic events.  Its main contribution is a
+    statistical analysis based on the Poisson-Binomial 
+    distribution that takes into account that some samples
+    are more mutated than others. See [Canisius, Sander, John WM Martens,
+    and  Lodewyk FA Wessels. (2016)  "A novel independence test for
+    somatic alterations in cancer shows that 
+    biology drives mutual exclusivity but chance explains
+    most co-occurrence." Genome biology 17.1 : 1-17. <doi:10.1186/s13059-016-1114-x>].
+    The mutations matrices are sparse matrices. The method developed takes 
+    advantage of the advantages of this type of matrix to save 
+    time and computing resources.
+Depends: R (>= 4.0), Matrix, speedglm, PoissonBinomial,
+        ShiftConvolvePoibin, utils, matrixStats
+Imports: maftools, data.table, parallel, RColorBrewer, methods
+Suggests: knitr, rmarkdown, RUnit, BiocStyle, BiocGenerics, dplyr,
+        kableExtra, magick, stats, qvalue
+License: Artistic-2.0
+LazyData: true
+RoxygenNote: 7.2.0
+Encoding: UTF-8
+biocViews: mutex
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-12 16:29:36 UTC; jferrerb
+Repository: CRAN
+Date/Publication: 2023-02-12 22:40:10 UTC

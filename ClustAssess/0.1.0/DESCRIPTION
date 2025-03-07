@@ -1,0 +1,30 @@
+Package: ClustAssess
+Type: Package
+Title: Tools for Assessing Clustering
+Version: 0.1.0
+Authors@R: c(person("Arash", "Shahsavari", email="as3006@cam.ac.uk",
+                  role = c("aut", "cre")), person("Irina", "Mohorianu",
+                  email="iim22@cam.ac.uk", role="aut"))
+Maintainer: Arash Shahsavari <as3006@cam.ac.uk>
+Description: A set of tools for evaluating clustering similarity across methods 
+    and method stability using element-centric clustering comparison (Gates et 
+    al. (2019) <doi:10.1038/s41598-019-44892-y>). Additionally, this package 
+    enables data-wide assessment of clustering robustness using proportion of
+    ambiguously clustered pairs (Senbabaoglu et al. (2014) 
+    <doi:10.1038/srep06207>), which can be used to infer the optimal number of 
+    clusters in the data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: ggplot2, dplyr, fastcluster, rlang, Matrix, igraph, magrittr,
+        Rcpp, methods, stats
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, e1071, dbscan, dendextend, Seurat
+URL: https://github.com/moodymudskipper/inops
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-03-30 16:38:04 UTC; Arash
+Author: Arash Shahsavari [aut, cre],
+  Irina Mohorianu [aut]
+Repository: CRAN
+Date/Publication: 2021-03-31 12:00:05 UTC

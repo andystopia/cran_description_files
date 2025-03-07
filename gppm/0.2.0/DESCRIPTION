@@ -1,0 +1,25 @@
+Package: gppm
+Version: 0.2.0
+Title: Gaussian Process Panel Modeling
+Description: Provides an implementation of Gaussian process panel modeling (GPPM). 
+              GPPM is described in Karch (2016; <DOI:10.18452/17641>) and Karch, Brandmaier & Voelkle (2018; <DOI:10.17605/OSF.IO/KVW5Y>).
+              Essentially, GPPM is Gaussian process based modeling of longitudinal panel data.
+              'gppm' also supports regular Gaussian process regression (with a focus on flexible model specification), and multi-task learning.
+Authors@R: c(person(c("Julian", "D."), "Karch", email="j.d.karch@fsw.leidenuniv.nl", role=c("aut", "cre", "cph")))
+Depends: R (>= 3.1.0), Rcpp (>= 0.12.17)
+Imports: rstan (>= 2.17.3), ggplot2 (>= 2.2.1), MASS (>= 7.3-49),
+        ggthemes (>= 3.5.0), mvtnorm (>= 1.0-8), stats, methods
+Suggests: testthat (>= 2.0.0), knitr (>= 1.20), rmarkdown (>= 1.10),
+        roxygen2 (>= 6.0.1)
+License: GPL-3 | file LICENSE
+LazyData: true
+URL: https://github.com/karchjd/gppm
+BugReports: https://github.com/karchjd/gppm/issues
+RoxygenNote: 6.0.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2018-06-26 12:45:22 UTC; karchjd
+Author: Julian D. Karch [aut, cre, cph]
+Maintainer: Julian D. Karch <j.d.karch@fsw.leidenuniv.nl>
+Repository: CRAN
+Date/Publication: 2018-07-05 11:30:06 UTC

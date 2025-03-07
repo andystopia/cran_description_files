@@ -1,0 +1,40 @@
+Package: margins
+Type: Package
+Title: Marginal Effects for Model Objects
+Description: An R port of Stata's 'margins' command, which can be used to
+    calculate marginal (or partial) effects from model objects.
+License: MIT + file LICENSE
+Version: 0.3.26.1
+Authors@R: c(person("Thomas J.", "Leeper",
+                    role = c("aut", "cre"), 
+                    email = "thosjleeper@gmail.com",
+                    comment = c(ORCID = "0000-0003-4097-6326")),
+             person("Jeffrey", "Arnold", 
+                    role = c("ctb"),
+                    email = "jeffrey.arnold@gmail.com"),
+             person("Vincent", "Arel-Bundock", 
+                    role = c("ctb")),
+             person("Jacob A.", "Long", 
+                    role = c("ctb"),
+                    email = "long.1377@osu.edu",
+                    comment = c(ORCID = "0000-0002-1582-6214"))
+             )
+URL: https://github.com/leeper/margins
+BugReports: https://github.com/leeper/margins/issues
+Imports: utils, stats, prediction (>= 0.3.6), data.table, graphics,
+        grDevices, MASS
+Suggests: methods, knitr, rmarkdown, testthat, ggplot2, gapminder,
+        sandwich, stargazer, lme4
+Enhances: AER, betareg, nnet, ordinal, survey
+ByteCompile: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2024-03-24 11:13:34 UTC; hornik
+Author: Thomas J. Leeper [aut, cre] (<https://orcid.org/0000-0003-4097-6326>),
+  Jeffrey Arnold [ctb],
+  Vincent Arel-Bundock [ctb],
+  Jacob A. Long [ctb] (<https://orcid.org/0000-0002-1582-6214>)
+Maintainer: Thomas J. Leeper <thosjleeper@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-24 14:45:17 UTC

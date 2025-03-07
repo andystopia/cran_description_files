@@ -1,0 +1,23 @@
+Package: gamselBayes
+Version: 1.0-3
+Date: 2023-04-12
+Title: Bayesian Generalized Additive Model Selection
+Authors@R: c(person("Virginia X.", "He", role = "aut",
+                    email = "virginia.x.he@student.uts.edu.au",
+                    comment = c(ORCID = "0000-0002-0238-5018")),
+             person("Matt P.", "Wand", role = c("aut","cre"),
+                    email = "matt.wand@uts.edu.au",
+                    comment = c(ORCID = "0000-0003-2555-896X")))
+Maintainer: Matt P. Wand <matt.wand@uts.edu.au>
+Description: Generalized additive model selection via approximate Bayesian inference is provided. Bayesian mixed model-based penalized splines with spike-and-slab-type coefficient prior distributions are used to facilitate fitting and selection. The approximate Bayesian inference engine options are: (1) Markov chain Monte Carlo and (2) mean field variational Bayes. Markov chain Monte Carlo has better Bayesian inferential accuracy, but requires a longer run-time. Mean field variational Bayes is faster, but less accurate. The methodology is described in He and Wand (2023) <arXiv:2201.00412>. 
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: Rcpp, methods
+Suggests: Ecdat
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2023-04-12 01:44:23 UTC; mwand
+Author: Virginia X. He [aut] (<https://orcid.org/0000-0002-0238-5018>),
+  Matt P. Wand [aut, cre] (<https://orcid.org/0000-0003-2555-896X>)
+Repository: CRAN
+Date/Publication: 2023-04-12 04:40:02 UTC

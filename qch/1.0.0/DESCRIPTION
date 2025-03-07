@@ -1,0 +1,33 @@
+Package: qch
+Title: Query Composed Hypotheses
+Version: 1.0.0
+Authors@R: 
+    person(given = "Tristan",
+           family = "Mary-Huard",
+           role = c("aut", "cre"),
+           email = "tristan.mary-huard@agroparistech.fr",
+           comment = c(ORCID = "0000-0002-3839-9067"))
+Description: Provides functions for the joint analysis of K sets
+    of p-values obtained for a same list of items. This joint analysis is
+    performed by querying a composed hypothesis, i.e. an arbitrary complex
+    combination of simple hypotheses, as described in Mary-Huard et al.
+    (2021) <arXiv:2104.14601>. The null distribution corresponding to the
+    composed hypothesis of interest is obtained by fitting non-parametric
+    mixtures models (one for each of the simple hypothesis of the complex
+    combination). Type I error rate control is achieved through Bayesian
+    False Discovery Rate control.  The 3 main functions of the package
+    GetHinfo(), qch.fit() and qch.test() correspond to the 3 steps for
+    querying a composed hypothesis (composed H0/H1 formulation, inferring
+    the null distribution and testing the null hypothesis).
+License: GPL-3
+Depends: R (>= 2.10)
+Imports: graphics, ks, mclust, stats
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-05-06 13:12:40 UTC; dsi
+Author: Tristan Mary-Huard [aut, cre] (<https://orcid.org/0000-0002-3839-9067>)
+Maintainer: Tristan Mary-Huard <tristan.mary-huard@agroparistech.fr>
+Repository: CRAN
+Date/Publication: 2021-05-07 12:10:02 UTC

@@ -1,0 +1,40 @@
+Package: singleCellHaystack
+Type: Package
+Title: A Universal Differential Expression Prediction Tool for
+        Single-Cell and Spatial Genomics Data
+Version: 1.0.0
+Authors@R: c(
+    person("Alexis", "Vandenbon", email = "alexis.vandenbon@gmail.com", role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-2180-5732")),
+    person("Diego", "Diez", email = "diego10ruiz@gmail.com", role = c("aut"),
+        comment = c(ORCID = "0000-0002-2325-4893"))
+    )
+Description: One key exploratory analysis step in single-cell genomics data analysis
+    is the prediction of features with different activity levels. For example, we want 
+    to predict differentially expressed genes (DEGs) in single-cell RNA-seq data, 
+    spatial DEGs in spatial transcriptomics data, or differentially accessible 
+    regions (DARs) in single-cell ATAC-seq data. 'singleCellHaystack' predicts differentially
+    active features in single cell omics datasets without relying on the clustering
+    of cells into arbitrary clusters. 'singleCellHaystack' uses Kullback-Leibler 
+    divergence to find features (e.g., genes, genomic regions, etc) that are active
+    in subsets of cells that are non-randomly positioned inside an input space (such as 
+    1D trajectories, 2D tissue sections, multi-dimensional embeddings, etc). For 
+    the theoretical background of 'singleCellHaystack' we refer to our original paper
+    Vandenbon and Diez (Nature Communications, 2020) <doi:10.1038/s41467-020-17900-3>
+    and our update Vandenbon and Diez (bioRxiv, 2022) <doi:10.1101/2022.11.13.516355>.
+Imports: methods, Matrix, splines, ggplot2, reshape2
+Suggests: knitr, rmarkdown, testthat, SummarizedExperiment,
+        SingleCellExperiment, SeuratObject, cowplot, wrswoR,
+        sparseMatrixStats, ComplexHeatmap, patchwork
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-12-20 08:30:55 UTC; alex
+Author: Alexis Vandenbon [aut, cre] (<https://orcid.org/0000-0003-2180-5732>),
+  Diego Diez [aut] (<https://orcid.org/0000-0002-2325-4893>)
+Maintainer: Alexis Vandenbon <alexis.vandenbon@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-12-20 10:00:02 UTC

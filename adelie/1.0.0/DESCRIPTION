@@ -1,0 +1,33 @@
+Package: adelie
+Title: A Fast and Flexible Group Elastic Net Solver
+Version: 1.0.0
+Authors@R: c(
+    person("James", "Yang", , "jamesyang916@gmail.com", role = c("aut", "cre", "cph")),
+    person("Trevor", "Hastie", , "hastie@stanford.edu", role = c("aut", "cph", "fnd")),
+    person("Balasubramanian", "Narasimhan", , "naras@stanford.edu", role = c("aut")))
+Description: R bindings for the Python package 'adelie'.
+    These bindings offer a general purpose group elastic net solver, 
+    a wide range of matrix classes that can exploit special structure 
+    to allow large-scale inputs, and an assortment of 
+    generalized linear model classes for fitting various types of data. 
+    The package is an implementation of Yang, J. and Hastie, T. (2024) <doi:10.48550/arXiv.2405.08631>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+SystemRequirements: C++17
+Imports: Matrix, r2r, Rcpp, methods
+Suggests: ggplot2, reshape2, latex2exp, cowplot, gridExtra, testthat
+        (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/JamesYang007/adelie-r
+BugReports: https://github.com/JamesYang007/adelie-r/issues
+Packaged: 2024-06-15 23:17:08 UTC; jhyang
+Author: James Yang [aut, cre, cph],
+  Trevor Hastie [aut, cph, fnd],
+  Balasubramanian Narasimhan [aut]
+Maintainer: James Yang <jamesyang916@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-17 18:10:05 UTC

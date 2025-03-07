@@ -1,0 +1,26 @@
+Package: healthforum
+Type: Package
+Title: Scrape Patient Forum Data
+Version: 0.1.0
+Authors@R: c(
+    person("Lingshu", "Hu", ,
+      email = "lingshu.hu@hotmail.com", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-0304-882X")), 
+    person("Michael W.", "Kearney", ,
+      email = "kearneymw@missouri.edu", role = c("ctb"),
+      comment = c(ORCID = "0000-0002-0730-4694")))
+Description: Scrape data from Patient Forum <https://patient.info/forums> by entering urls. It will return a data frame containing text, user names, like counts, reply counts, etc.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: rvest, magrittr, xml2, purrr, tokenizers, stringr
+Depends: R (>= 3.5.0)
+RoxygenNote: 6.1.1
+Suggests: testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2019-09-28 16:12:03 UTC; lingshuhu
+Author: Lingshu Hu [aut, cre] (<https://orcid.org/0000-0003-0304-882X>),
+  Michael W. Kearney [ctb] (<https://orcid.org/0000-0002-0730-4694>)
+Maintainer: Lingshu Hu <lingshu.hu@hotmail.com>
+Repository: CRAN
+Date/Publication: 2019-10-03 08:20:02 UTC

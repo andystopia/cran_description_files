@@ -1,0 +1,34 @@
+Type: Package
+Package: SHELF
+Title: Tools to Support the Sheffield Elicitation Framework
+Version: 1.10.0
+Date: 2024-05-07
+Author: Jeremy Oakley
+Maintainer: Jeremy Oakley <j.oakley@sheffield.ac.uk>
+Description: Implements various methods for eliciting a probability
+    distribution for a single parameter from an expert or a group of
+    experts. The expert provides a small number of probability judgements,
+    corresponding to points on his or her cumulative distribution
+    function. A range of parametric distributions can then be fitted and
+    displayed, with feedback provided in the form of fitted probabilities
+    and percentiles. For multiple experts, a weighted linear pool can be
+    calculated. Also includes functions for eliciting beliefs about
+    population distributions, eliciting multivariate distributions using a
+    Gaussian copula, eliciting a Dirichlet distribution, and eliciting
+    distributions for variance parameters in a random effects
+    meta-analysis model. R Shiny apps for most of the methods are
+    included.
+License: GPL-2 | GPL-3
+URL: https://github.com/OakleyJ/SHELF
+BugReports: https://github.com/OakleyJ/SHELF/issues
+Depends: R (>= 3.5.0)
+Imports: ggExtra, ggplot2, ggridges, graphics, grDevices, grid, Hmisc,
+        rmarkdown, scales, shiny, shinyMatrix, sn, stats, tidyr, utils
+Suggests: GGally, knitr, testthat, vdiffr
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-07 13:51:05 UTC; ST1JEO
+Repository: CRAN
+Date/Publication: 2024-05-07 14:20:03 UTC

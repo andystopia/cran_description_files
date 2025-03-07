@@ -1,0 +1,33 @@
+Package: doconv
+Type: Package
+Title: Document Conversion to 'PDF' or 'PNG'
+Version: 0.3.0
+Authors@R: c(
+    person("David", "Gohel", role = c("aut", "cre"),
+    email = "david.gohel@ardata.fr"),
+    person(given = "ArData", role = "cph"),
+    person("David", "Hajage", role = "ctb", comment = "initial powershell code")
+    )
+Description: Functions to convert 'Microsoft Word' or 'Microsoft PowerPoint' 
+ documents to 'PDF' format and also for converting them into a thumbnail. 
+ In order to work, 'LibreOffice' must be installed on the machine and 
+ or 'Microsoft Word'. If the latter is available, 
+ it can be used to produce PDF documents identical to the originals, 
+ otherwise, 'LibreOffice' is used. A function is also provided to update 
+ all fields and table of contents of a Word document using 'Microsoft Word'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: magick, pdftools, locatexec, processx, tools
+Depends: R (>= 4.0.0)
+Suggests: officer, tinytest, testthat, webshot2
+BugReports: https://github.com/ardata-fr/doconv/issues
+SystemRequirements: LibreOffice, Microsoft Word
+NeedsCompilation: no
+Packaged: 2022-12-16 17:12:43 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  ArData [cph],
+  David Hajage [ctb] (initial powershell code)
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2022-12-16 17:30:02 UTC

@@ -1,0 +1,48 @@
+Package: geocausal
+Type: Package
+Title: Causal Inference with Spatio-Temporal Data
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Mitsuru", family = "Mukaigawara", 
+           email = "mitsuru_mukaigawara@g.harvard.edu", 
+           role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0001-6530-2083")),
+    person(given = "Georgia", family = "Papadogeorgou", 
+           email = "gpapadogeorgou@ufl.edu", 
+           role = "aut",
+           comment = c(ORCID = "0000-0002-1982-2245")),
+    person(given = "Jason", family = "Lyall", 
+           email = "Jason.Lyall@dartmouth.edu", 
+           role = "aut",
+           comment = c(ORCID = "0000-0001-9117-7503")),
+    person(given = "Kosuke", family = "Imai", 
+           email = "imai@harvard.edu", 
+           role = "aut",
+           comment = c(ORCID = "0000-0002-2748-1022")))
+Maintainer: Mitsuru Mukaigawara <mitsuru_mukaigawara@g.harvard.edu>
+Description: Spatio-temporal causal inference based on point process data. 
+    You provide the raw data of locations and timings of treatment and 
+    outcome events, specify counterfactual scenarios, and the package 
+    estimates causal effects over specified spatial and temporal windows.
+    See Papadogeorgou, et  al. (2022) <doi:10.1111/rssb.12548>.
+License: MIT + file LICENSE
+URL: https://github.com/mmukaigawara/geocausal
+Encoding: UTF-8
+LazyData: true
+Suggests: elevatr, geosphere, gridExtra, ggthemes, knitr, readr,
+        rmarkdown
+VignetteBuilder: knitr
+Imports: data.table, dplyr, furrr, ggplot2, ggpubr, latex2exp, mclust,
+        progressr, purrr, raster, sf, sp, spatstat.explore,
+        spatstat.geom, spatstat.model, tidyr, tidyselect
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-08-21 08:30:05 UTC; mitsurumukaigawara
+Author: Mitsuru Mukaigawara [cre, aut]
+    (<https://orcid.org/0000-0001-6530-2083>),
+  Georgia Papadogeorgou [aut] (<https://orcid.org/0000-0002-1982-2245>),
+  Jason Lyall [aut] (<https://orcid.org/0000-0001-9117-7503>),
+  Kosuke Imai [aut] (<https://orcid.org/0000-0002-2748-1022>)
+Repository: CRAN
+Date/Publication: 2023-08-21 14:10:19 UTC

@@ -1,0 +1,29 @@
+Type: Package
+Package: topicdoc
+Title: Topic-Specific Diagnostics for LDA and CTM Topic Models
+Version: 0.1.0
+Authors@R: 
+    person(given = "Doug",
+           family = "Friedman",
+           role = c("aut", "cre"),
+           email = "doug.nhp@gmail.com")
+Description: Calculates topic-specific diagnostics (e.g. mean token length, exclusivity) for 
+    Latent Dirichlet Allocation and Correlated Topic Models fit using the 'topicmodels' package.
+    For more details, see Chapter 12 in Airoldi et al. (2014, ISBN:9781466504080), 
+    pp 262-272 Mimno et al. (2011, ISBN:9781937284114), and Bischof et al. (2014) <arXiv:1206.4631v1>.
+License: MIT + file LICENSE
+URL: https://github.com/doug-friedman/topicdoc
+BugReports: https://github.com/doug-friedman/topicdoc/issues
+Depends: R (>= 3.5.0)
+Imports: slam, topicmodels
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-15 21:20:39 UTC; Doug
+Author: Doug Friedman [aut, cre]
+Maintainer: Doug Friedman <doug.nhp@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-10-18 12:40:02 UTC

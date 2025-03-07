@@ -1,0 +1,39 @@
+Type: Package
+Package: waywiser
+Title: Yardstick Extensions for Measuring Spatial Structure in Model
+        Residuals
+Version: 0.1.0
+Authors@R: c(
+    person("Michael", "Mahoney", , "mike.mahoney.218@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2402-304X")),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: Predictive models of spatial data may have spatially
+    structured errors, with "hot spots" of higher than expected error
+    clustered geographically due to spatial structure in the underlying
+    data. These functions provide methods for measuring the spatial
+    structure of model errors for models, and are particularly useful for
+    models fit using the 'tidymodels' framework. Methods include Moran's I
+    ('Moran' (1950) <doi:10.2307/2332142>), Geary's C 
+    ('Geary' (1954) <doi:10.2307/2986645>) and Getis-Ord's G
+    ('Ord' and 'Getis' (1995) <doi:10.1111/j.1538-4632.1995.tb00912.x>).
+License: MIT + file LICENSE
+URL: https://github.com/mikemahoney218/waywiser,
+        https://mikemahoney218.github.io/waywiser/
+BugReports: https://github.com/mikemahoney218/waywiser/issues
+Depends: R (>= 3.5)
+Imports: rlang, sf, spdep, yardstick
+Suggests: covr, dplyr, ggplot2, sfdep, spelling, testthat (>= 3.0.0),
+        tidymodels, tidyr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-08-05 20:13:37 UTC; mikemahoney218
+Author: Michael Mahoney [aut, cre] (<https://orcid.org/0000-0003-2402-304X>),
+  RStudio [cph, fnd]
+Maintainer: Michael Mahoney <mike.mahoney.218@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-10 14:20:02 UTC

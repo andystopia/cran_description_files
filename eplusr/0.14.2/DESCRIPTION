@@ -1,0 +1,42 @@
+Package: eplusr
+Title: A Toolkit for Using Whole Building Simulation Program
+        'EnergyPlus'
+Version: 0.14.2
+Authors@R: 
+    person(given = "Hongyuan",
+           family = "Jia",
+           role = c("aut", "cre"),
+           email = "hongyuanjia@outlook.com",
+           comment = c(ORCID = "0000-0002-0075-8183"))
+Description: A rich toolkit of using the whole building
+    simulation program 'EnergyPlus'(<https://energyplus.net>), which
+    enables programmatic navigation, modification of 'EnergyPlus' models
+    and makes it less painful to do parametric simulations and analysis.
+License: MIT + file LICENSE
+URL: https://hongyuanjia.github.io/eplusr/,
+        https://github.com/hongyuanjia/eplusr
+BugReports: https://github.com/hongyuanjia/eplusr/issues
+Depends: R (>= 3.2.0)
+Imports: callr (>= 2.0.4), checkmate, cli (>= 1.1.0), crayon,
+        data.table (>= 1.12.4), hms, lubridate, methods, processx (>=
+        3.2.0), progress (>= 1.2.0), R6, RSQLite, stringi, units
+Suggests: covr, decido, knitr, pkgdown, rgl (>= 0.100.26), rmarkdown,
+        testthat (>= 2.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+SystemRequirements: EnergyPlus (>= 8.3, optional)
+        (<https://energyplus.net>); udunits2
+Collate: 'constants.R' 'assert.R' 'diagram.R' 'eplusr.R' 'utils.R'
+        'impl.R' 'parse.R' 'impl-epw.R' 'impl-idd.R' 'impl-idf.R'
+        'idf.R' 'idd.R' 'epw.R' 'err.R' 'format.R' 'geom.R' 'group.R'
+        'iddobj.R' 'idfobj-sch.R' 'impl-idfobj.R' 'idfobj.R'
+        'impl-geom.R' 'impl-iddobj.R' 'impl-idfobj-sch.R' 'impl-sql.R'
+        'impl-viewer.R' 'install.R' 'job.R' 'options.R' 'param.R'
+        'rdd.R' 'reload.R' 'run.R' 'sql.R' 'transition.R' 'units.R'
+        'validate.R' 'viewer.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2021-05-25 16:14:14 UTC; hongy
+Author: Hongyuan Jia [aut, cre] (<https://orcid.org/0000-0002-0075-8183>)
+Maintainer: Hongyuan Jia <hongyuanjia@outlook.com>
+Repository: CRAN
+Date/Publication: 2021-05-28 23:30:06 UTC

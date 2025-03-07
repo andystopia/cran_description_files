@@ -1,0 +1,55 @@
+Package: bayesdfa
+Type: Package
+Title: Bayesian Dynamic Factor Analysis (DFA) with 'Stan'
+Version: 1.0.0
+Authors@R: c(
+    person(c("Eric", "J."), "Ward", role = c("aut", "cre"), 
+      email = "eric.ward@noaa.gov"),
+    person(c("Sean", "C."), "Anderson", role = "aut"),
+    person(c("Luis", "A."), "Damiano", role = "aut"),
+    person(c("Michael", "J."), "Malick", role="aut"),
+    person(c("Mary", "E."), "Hunsicker,", role = "ctb"),
+    person(c("Mike", "A."), "Litzow", role = "ctb"),
+    person(c("Mark", "D."), "Scheuerell", role = "ctb"),
+    person(c("Elizabeth", "E."), "Holmes", role = "ctb"),
+    person(c("Nick",""), "Tolimieri", role = "ctb"),
+    person("Trustees of", "Columbia University", role = "cph"))
+Description: Implements Bayesian dynamic factor analysis with 'Stan'. Dynamic 
+    factor analysis is a dimension reduction tool for multivariate time series.
+    'bayesdfa' extends conventional dynamic factor models in several ways. 
+    First, extreme events may be estimated in the latent trend by modeling
+    process error with a student-t distribution. Second, alternative constraints
+    (including proportions are allowed). Third, the estimated
+    dynamic factors can be analyzed with hidden Markov models to evaluate
+    support for latent regimes.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: dplyr, ggplot2, loo (>= 2.0.0), methods, Rcpp (>= 0.12.0),
+        RcppParallel (>= 5.0.1), reshape2, rlang, rstan (>= 2.18.1),
+        rstantools (>= 2.1.1), viridisLite
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.1)
+Suggests: testthat, parallel, knitr, rmarkdown
+URL: https://fate-ewi.github.io/bayesdfa/
+BugReports: https://github.com/fate-ewi/bayesdfa/issues
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+Biarch: true
+NeedsCompilation: yes
+Packaged: 2021-05-18 20:39:37 UTC; eric.ward
+Author: Eric J. Ward [aut, cre],
+  Sean C. Anderson [aut],
+  Luis A. Damiano [aut],
+  Michael J. Malick [aut],
+  Mary E. Hunsicker, [ctb],
+  Mike A. Litzow [ctb],
+  Mark D. Scheuerell [ctb],
+  Elizabeth E. Holmes [ctb],
+  Nick Tolimieri [ctb],
+  Trustees of Columbia University [cph]
+Maintainer: Eric J. Ward <eric.ward@noaa.gov>
+Repository: CRAN
+Date/Publication: 2021-05-19 02:00:02 UTC

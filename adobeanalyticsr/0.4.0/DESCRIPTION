@@ -1,0 +1,39 @@
+Package: adobeanalyticsr
+Type: Package
+Version: 0.4.0
+Title: R Client for 'Adobe Analytics' API 2.0
+Description: Connect to the 'Adobe Analytics' API v2.0 <https://github.com/AdobeDocs/analytics-2.0-apis>
+             which powers 'Analysis Workspace'. The package was developed
+             with the analyst in mind, and it will continue to be
+             developed with the guiding principles of iterative,
+             repeatable, timely analysis.
+Authors@R: c(
+    person("Ben", "Woodard", email = "benrwoodard@gmail.com", role = c("aut", "cre")),
+    person("Tim", "Wilson", email = "timwilson7@gmail.com", role = c("aut", "ctb")),
+    person("Charles", "Gallagher", email = "charlesjgallagher15@gmail.com", role = c("ctb")),
+    person("Mark", "Edmondson", role = "ctb")
+    )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.2.0)
+Imports: assertthat (>= 0.2.0), jsonlite (>= 1.5), dplyr (>= 0.8.1),
+        stringr (>= 1.4.0), purrr (>= 0.3.3), httr (>= 1.3.1), tidyr
+        (>= 1.0.0), rlang (>= 0.4.8), lubridate (>= 1.7.9), ggplot2 (>=
+        3.3.2), scales (>= 1.1.1), R6, jose, openssl, lifecycle, glue,
+        vctrs, progress, memoise, utils
+Suggests: knitr, testthat (>= 3.0.0), rmarkdown
+RoxygenNote: 7.2.3
+RdMacros: lifecycle
+VignetteBuilder: knitr
+BugReports: https://github.com/benrwoodard/adobeanalyticsr/issues
+URL: https://github.com/benrwoodard/adobeanalyticsr
+NeedsCompilation: no
+Packaged: 2023-11-09 10:19:50 UTC; ben.woodard
+Author: Ben Woodard [aut, cre],
+  Tim Wilson [aut, ctb],
+  Charles Gallagher [ctb],
+  Mark Edmondson [ctb]
+Maintainer: Ben Woodard <benrwoodard@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-09 11:40:06 UTC

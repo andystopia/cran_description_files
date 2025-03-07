@@ -1,0 +1,45 @@
+Package: anomalyDetection
+Type: Package
+Title: Implementation of Augmented Network Log Anomaly Detection
+        Procedures
+Version: 0.2.5
+Authors@R: c( 
+  person("Bradley", "Boehmke",
+         email = "bradleyboehmke@gmail.com",
+         role = c("aut", "cre")),
+  person("Brandon", "Greenwell",
+         email = "greenwell.brandon@gmail.com",
+         role = c("aut")),
+  person("Jason", "Freels", 
+         email = "auburngrads@live.com", 
+         role = c("aut")), 
+  person("Robert", "Gutierrez", 
+         email = "rjgutierrez2015@gmail.com", 
+         role = c("aut"))
+  )
+Maintainer: Bradley Boehmke <bradleyboehmke@gmail.com>
+Date: 2018-02-24
+Description: Implements procedures developed by Gutierrez et al. (2017, <https://journal.r-project.org/archive/2017/RJ-2017-039/index.html>) 
+  to aid in detecting network log anomalies. By combining various multivariate 
+  analytic approaches relevant to network anomaly detection, it provides cyber 
+  analysts efficient means to detect suspected anomalies requiring further evaluation.
+URL: https://github.com/koalaverse/anomalyDetection
+BugReports: https://github.com/koalaverse/anomalyDetection/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: caret, dplyr, ggplot2, gmp, magrittr, MASS, plyr, purrr, Rcpp
+        (>= 0.12.11), stats, tibble, tidyr,
+RoxygenNote: 6.0.1
+Suggests: gplots, knitr, RColorBrewer, rmarkdown, testthat,
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-03-07 14:32:09 UTC; bradboehmke
+Author: Bradley Boehmke [aut, cre],
+  Brandon Greenwell [aut],
+  Jason Freels [aut],
+  Robert Gutierrez [aut]
+Repository: CRAN
+Date/Publication: 2018-03-07 16:18:12 UTC

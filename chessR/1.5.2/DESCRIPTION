@@ -1,0 +1,35 @@
+Package: chessR
+Type: Package
+Title: Functions to Extract, Clean and Analyse Online Chess Game Data
+Version: 1.5.2
+Authors@R: c(person("Jason Zivkovic", email = "jase.ziv83@gmail.com",
+                  role = c("aut", "cre")),
+             person("Jonathan", "Carroll", 
+                    email = "rpkg@jcarroll.com.au", 
+                    role = "ctb", 
+                    comment = c(ORCID = "0000-0002-1404-5264")),
+             person("Dan", "Wakeling", 
+                    email = "danwakeling7@gmail.com", 
+                    role = "ctb")
+            )
+URL: https://github.com/JaseZiv/chessR
+BugReports: https://github.com/JaseZiv/chessR/issues
+Description: A set of functions to enable users to extract chess game data from 
+    popular chess sites, including 'Lichess'<https://lichess.org/> and 
+    'Chess.com' <https://www.chess.com/> and then perform analysis on that game data.
+License: GPL-3
+Encoding: UTF-8
+Imports: rlang, jsonlite, dplyr, purrr, tidyr, stringr, lubridate,
+        magrittr, xml2, rvest, curl, httr
+RoxygenNote: 7.2.0
+Suggests: knitr, rmarkdown, ggplot2, testthat (>= 3.0.0), covr, chess
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-04 08:57:27 UTC; zivkovij
+Author: Jason Zivkovic [aut, cre],
+  Jonathan Carroll [ctb] (<https://orcid.org/0000-0002-1404-5264>),
+  Dan Wakeling [ctb]
+Maintainer: Jason Zivkovic <jase.ziv83@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-10-04 23:30:16 UTC

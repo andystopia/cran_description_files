@@ -1,0 +1,45 @@
+Package: skeleSim
+Type: Package
+Title: Genetic Simulation Engine
+Version: 0.9.5
+Authors@R: c(
+  EA = person("Eric", "Archer", email = "eric.archer@noaa.gov", role = c("aut")),
+  MDL = person("Michelle", "DePrenger-Levin", email = "michelledpl@gmail.com", role = c("aut")),
+  SH = person("Sean", "Hoban", email = "shoban@alumni.nd.edu", role = c("aut")),
+  LL = person("Libby", "Liggins", email = "L.Liggins@massey.ac.nz", role = c("aut")),
+  CP = person("Christian", "Parobek", email = "christian.parobek@gmail.com", role = c("aut")),
+  AS = person("Allan", "Strand", email = "stranda@gmail.com", role = c("aut", "cre")))
+URL: https:://github.com/christianparobek/skelesim
+BugReports: https://github.com/christianparobek/skelesim/issues
+Description: A shiny interface and supporting tools to guide users in choosing
+    appropriate simulations, setting parameters, calculating summary genetic
+    statistics, and organizing data output, all within the R environment. In
+    addition to supporting existing forward and reverse-time simulators, new
+    simulators can be integrated into the environment relatively easily.
+License: GPL-2
+LazyLoad: Yes
+LazyData: true
+Depends: R (>= 3.2.0), igraph, shiny (>= 0.13.0), shinyFiles
+Imports: adegenet, ape, hierfstat, pegas, markdown, methods, reshape2,
+        rmetasim (>= 3.0.0), strataG (>= 1.0), swfscMisc (>= 1.1)
+Suggests: knitr, rmarkdown, RJSONIO
+Collate: skeleSim-package.R skeleSim.classes.R fsc.classes.R
+        rms.classes.R skeleSim.internals.R skeleSimGUI.R
+        analysis.funcs.R fsc.loadScenario.R fsc.run.R
+        fsc.scenarioCheck.R rms.convert.R rms.init.land.function.R
+        rms.init.landscape.R rms.internals.R rms.run.R
+        rms.scenarioCheck.R runSim.R skeleSim.checks.R
+        getGammaMutRates.R
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-09-14 21:17:35 UTC; astrand
+Author: Eric Archer [aut],
+  Michelle DePrenger-Levin [aut],
+  Sean Hoban [aut],
+  Libby Liggins [aut],
+  Christian Parobek [aut],
+  Allan Strand [aut, cre]
+Maintainer: Allan Strand <stranda@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-09-15 00:19:30

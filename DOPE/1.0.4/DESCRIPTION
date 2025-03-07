@@ -1,0 +1,40 @@
+Package: DOPE
+Title: Drug Ontology Parsing Engine
+Version: 1.0.4
+Authors@R: c(
+    person(given = "Raymond",
+           family = "Balise",
+           role = c("aut", "cre"),
+           email = "balise@miami.edu",
+           comment = c(ORCID = "0000-0002-9856-5901")),
+    person(given = "Layla",
+           family = "Bouzoubaa",
+           role = c("aut"),
+           email = "lab218@miami.edu",
+           comment = c(ORCID = "https://orcid.org/0000-0002-6616-0950")),
+     person(given = "Gabriel",
+           family = "Odom",
+           role = c("aut"),
+           email = "gabriel.odom@fiu.edu",
+           comment = c(ORCID = "0000-0003-1341-4555")))
+Description: Provides information on drug names (brand, 
+    generic and street) for drugs tracked by the DEA. There are functions that 
+    will search synonyms and return the drug names and types. The vignettes 
+    have extensive information on the work done to create the data for the package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+Imports: dplyr
+Suggests: dm, knitr, rmarkdown, conflicted, purrr, readr, readxl,
+        rvest, sqldf, stringr, tidyr, tibble, testthat, usethis, xml2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-07 15:52:57 UTC; laylabouzoubaa
+Author: Raymond Balise [aut, cre] (<https://orcid.org/0000-0002-9856-5901>),
+  Layla Bouzoubaa [aut] (<https://orcid.org/0000-0002-6616-0950>),
+  Gabriel Odom [aut] (<https://orcid.org/0000-0003-1341-4555>)
+Maintainer: Raymond Balise <balise@miami.edu>
+Repository: CRAN
+Date/Publication: 2021-01-11 09:10:02 UTC

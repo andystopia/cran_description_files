@@ -1,0 +1,26 @@
+Package: PUlasso
+Type: Package
+Title: High-Dimensional Variable Selection with Presence-Only Data
+Version: 3.2.4
+Date: 2021-1-15
+Authors@R: c(person("Hyebin", "Song", role = c("aut", "cre"),
+                     email = "hps5320@psu.edu"),
+            person("Garvesh", "Raskutti", role="aut",email="raskutti@stat.wisc.edu"))
+Description: Efficient algorithm for solving PU (Positive and Unlabeled) problem in low or high dimensional setting with lasso or group lasso penalty. The algorithm uses Maximization-Minorization and (block) coordinate descent. Sparse calculation and parallel computing are supported for the computational speed-up. See Hyebin Song, Garvesh Raskutti (2018) <arXiv:1711.08129>.
+License: GPL-2
+Imports: Rcpp (>= 0.12.8), methods, Matrix, doParallel, foreach,
+        ggplot2
+Depends: R(>= 2.10)
+LinkingTo: Rcpp, RcppEigen, Matrix
+RoxygenNote: 7.1.1
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://arxiv.org/abs/1711.08129
+BugReports: https://github.com/hsong1/PUlasso/issues
+NeedsCompilation: yes
+Packaged: 2021-01-15 21:20:14 UTC; hyebin
+Author: Hyebin Song [aut, cre],
+  Garvesh Raskutti [aut]
+Maintainer: Hyebin Song <hps5320@psu.edu>
+Repository: CRAN
+Date/Publication: 2021-01-17 05:50:09 UTC

@@ -1,0 +1,52 @@
+Package: BPrinStratTTE
+Title: Causal Effects in Principal Strata Defined by Antidrug
+        Antibodies
+Version: 0.0.2
+Authors@R: c(
+  person(
+    given = "Christian",
+    family = "Stock",
+    role = c("aut", "cre"),
+    email = "christian.stock@boehringer-ingelheim.com",
+    comment = c(ORCID = "0000-0002-3493-3234")
+  ),
+  person(
+    given = "Emma",
+    family = "Torrini",
+    role = "aut"
+  ),
+  person(
+    "Boehringer Ingelheim Pharma GmbH & Co. KG",
+    role = c("cph", "fnd")
+  )
+  )
+Description: Bayesian models to estimate causal effects of biological 
+    treatments on time-to-event endpoints in clinical trials with principal
+    strata defined by the occurrence of antidrug antibodies. 
+    The methodology is based on Frangakis and Rubin (2002) 
+    <doi:10.1111/j.0006-341x.2002.00021.x> and Imbens and Rubin (1997)
+    <doi:10.1214/aos/1034276631>, and intended to be applied to a
+    specific time-to-event setting.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/Boehringer-Ingelheim/BPrinStratTTE
+BugReports: https://github.com/Boehringer-Ingelheim/BPrinStratTTE/issues
+RoxygenNote: 7.2.3
+Imports: dplyr, furrr, magrittr, methods, purrr, Rcpp (>= 0.12.0),
+        rstan (>= 2.18.1), stats, stringr, tibble
+Biarch: true
+Depends: R (>= 3.4.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make, C++17
+Suggests: spelling
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2023-12-20 16:20:39 UTC; stockch
+Author: Christian Stock [aut, cre] (<https://orcid.org/0000-0002-3493-3234>),
+  Emma Torrini [aut],
+  Boehringer Ingelheim Pharma GmbH & Co. KG [cph, fnd]
+Maintainer: Christian Stock <christian.stock@boehringer-ingelheim.com>
+Repository: CRAN
+Date/Publication: 2023-12-20 16:40:07 UTC

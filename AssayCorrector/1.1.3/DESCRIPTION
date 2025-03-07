@@ -1,0 +1,16 @@
+Package: AssayCorrector
+Type: Package
+Title: Detection and Correction of Spatial Bias in HTS Screens
+Version: 1.1.3
+Date: 2016-12-26
+Author: Bogdan Mazoure (McGill University, Department of Computer Science), Iurie Caraus (UQAM, Departement d'Informatique), Robert Nadon (McGill University, Department of Human Genetics and Genome Quebec Innovation Center) and Vladimir Makarenkov (UQAM, Departement d'Informatique)
+Maintainer: Bogdan Mazoure <bogdan.mazoure@gmail.com>
+Description: (1) Detects plate-specific spatial bias by identifying rows and columns of all plates of the assay affected by this bias (following the results of the Mann-Whitney U test) as well as assay-specific spatial bias by identifying well locations (i.e., well positions scanned across all plates of a given assay) affected by this bias (also following the results of the Mann-Whitney U test); (2) Allows one to correct plate-specific spatial bias using either the additive or multiplicative PMP (Partial Mean Polish) method (the most appropriate spatial bias model can be either specified by the user or determined by the program following the results of the Kolmogorov-Smirnov two-sample test) to correct the assay measurements as well as to correct assay-specific spatial bias by carrying out robust Z-scores within each plate of the assay and then traditional Z-scores across well locations.
+Depends: R (>= 3.3.0), RColorBrewer, lattice, latticeExtra
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-12-28 21:03:47 UTC; Root
+Repository: CRAN
+Date/Publication: 2016-12-29 00:48:20

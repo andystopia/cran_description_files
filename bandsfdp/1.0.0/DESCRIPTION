@@ -1,0 +1,40 @@
+Package: bandsfdp
+Title: Compute Upper Prediction Bounds on the FDP in Competition-Based
+        Setups
+Version: 1.0.0
+Authors@R: c(
+    person("Arya", "Ebadi", , "aeba3842@uni.sydney.edu.au", role = c("aut", "cre")),
+    person("Dong", "Luo", , "dluo7139@uni.sydney.edu.au", role = "aut"),
+    person("Jack", "Freestone", , "jfre0619@uni.sydney.edu.au", role = "aut"),
+    person("William Stafford", "Noble", , "william-noble@uw.edu", role = "aut"),
+    person("Uri", "Keich", , "uri.keich@sydney.edu.au", role = "aut",
+           comment = c(ORCID = "0000-0002-3209-5011"))
+  )
+Suggests: fdpbandsdata
+Description: Implements functions that calculate upper prediction 
+  bounds on the false discovery proportion (FDP) in the list of discoveries 
+  returned by competition-based setups, implementing Ebadi et al. (2022)
+  <arXiv:2302.11837>. Such setups include target-decoy competition (TDC) 
+  in computational mass spectrometry and the knockoff construction in linear 
+  regression (note this package typically uses the terminology of TDC). Included 
+  is the standardized (TDC-SB) and uniform (TDC-UB) bound on TDC's FDP, and the 
+  simultaneous standardized and uniform bands. Requires 
+  pre-computed Monte Carlo statistics available at 
+  <https://github.com/uni-Arya/fdpbandsdata>. This data can be downloaded by
+  running the command 'devtools::install_github("uni-Arya/fdpbandsdata")' in R
+  and restarting R after installation. The size of this data is roughly 81Mb.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+URL: https://github.com/uni-Arya/bandsfdp
+BugReports: https://github.com/uni-Arya/bandsfdp/issues
+NeedsCompilation: no
+Packaged: 2023-03-15 09:18:54 UTC; aeba3842
+Author: Arya Ebadi [aut, cre],
+  Dong Luo [aut],
+  Jack Freestone [aut],
+  William Stafford Noble [aut],
+  Uri Keich [aut] (<https://orcid.org/0000-0002-3209-5011>)
+Maintainer: Arya Ebadi <aeba3842@uni.sydney.edu.au>
+Repository: CRAN
+Date/Publication: 2023-03-15 18:10:13 UTC

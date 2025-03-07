@@ -1,0 +1,22 @@
+Package: btf
+Type: Package
+Title: Estimates univariate function via Bayesian trend filtering
+Version: 1.1
+Date: 2014-07-29
+Author: Edward A. Roualdes
+Maintainer: Edward A. Roualdes <edward.roualdes@uky.edu>
+Description: Trend filtering uses the generalized
+    lasso framework to fit an adaptive polynomial of degree k to
+    estimate the function f_0 at each input x_i in the model: y_i =
+    f_0(x_i) + epsilon_i, for i = 1, ..., n, and epsilon_i
+    is sub-Gaussian with E(epsilon_i) = 0.  Bayesian trend filtering adapts
+    the genlasso framework to a fully Bayesian hierarchical model, estimating
+    the penalty parameter lambda within a tractable Gibbs sampler.
+License: GPL (>= 2.0)
+Depends: R (>= 3.1.0)
+Imports: Matrix, coda,
+LinkingTo: Rcpp (>= 0.11.0), RcppEigen (>= 0.3.2.1.1)
+NeedsCompilation: yes
+Packaged: 2014-07-30 13:40:54 UTC; easy-e
+Repository: CRAN
+Date/Publication: 2014-07-30 16:15:16

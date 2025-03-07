@@ -1,0 +1,43 @@
+Package: nanonext
+Type: Package
+Title: NNG (Nanomsg Next Gen) Lightweight Messaging Library
+Version: 0.13.5.2
+Description: R binding for NNG (Nanomsg Next Gen), a successor to ZeroMQ. NNG is
+    a socket library implementing 'Scalability Protocols', a reliable,
+    high-performance standard for common communications patterns including
+    publish/subscribe, request/reply and service discovery, over in-process,
+    IPC, TCP, WebSocket and secure TLS transports. As its own threaded
+    concurrency framework, provides a toolkit for asynchronous programming and
+    distributed computing, with intuitive 'aio' objects which resolve
+    automatically upon completion of asynchronous operations, and
+    synchronisation primitives allowing R to wait upon events signalled by
+    concurrent threads.
+Authors@R: 
+    c(person(given = "Charlie",
+             family = "Gao",
+             role = c("aut", "cre"),
+             email = "charlie.gao@shikokuchuo.net",
+             comment = c(ORCID = "0000-0002-0750-061X")),
+      person(given = "Hibiki AI Limited",
+             role = "cph"),
+      person(given = "R Consortium",
+             role = "fnd"))
+License: GPL (>= 3)
+BugReports: https://github.com/shikokuchuo/nanonext/issues
+URL: https://shikokuchuo.net/nanonext/,
+        https://github.com/shikokuchuo/nanonext/
+Encoding: UTF-8
+SystemRequirements: 'libnng' >= 1.5 and 'libmbedtls' >= 2.5, or 'cmake'
+        to compile NNG and/or Mbed TLS included in package sources
+Depends: R (>= 3.5)
+Suggests: knitr, markdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-04-05 20:39:46 UTC; cg334
+Author: Charlie Gao [aut, cre] (<https://orcid.org/0000-0002-0750-061X>),
+  Hibiki AI Limited [cph],
+  R Consortium [fnd]
+Maintainer: Charlie Gao <charlie.gao@shikokuchuo.net>
+Repository: CRAN
+Date/Publication: 2024-04-06 10:33:29 UTC

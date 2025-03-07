@@ -1,0 +1,38 @@
+Package: matchMulti
+Type: Package
+Title: Optimal Multilevel Matching using a Network Algorithm
+Version: 1.1.12
+Date: 2023-5-10
+Authors@R: c(
+  person("Luke", "Keele",, "luke.keele@gmail.com", c("aut")),
+  person("Luke", "Miratrix",, "luke_miratrix@gse.harvard.edu", c("aut")),
+  person("Sam", "Pimentel",, "spi@berkeley.edu", c("aut", "cre")),
+  person("Paul", "Rosenbaum",,, c("ctb"))
+  )
+Maintainer: Sam Pimentel <spi@berkeley.edu>
+Description: Performs multilevel matches for data with cluster-
+	level treatments and individual-level outcomes using a network 
+	optimization algorithm.  Functions for checking balance at the 
+	cluster and individual levels are also provided, as are methods 
+	for permutation-inference-based outcome analysis.  Details in 
+	Pimentel et al. (2018) <doi:10.1214/17-AOAS1118>.  The optmatch 
+	package, which is useful for running many of the provided 
+	functions, may be downloaded from Github at 
+	<https://github.com/markmfredrickson/optmatch> if not available on 
+	CRAN.
+Depends: R (>= 3.2.3), rlang, dplyr
+Imports: rcbsubset (>= 1.1.4), plyr, coin, weights, mvtnorm, MASS,
+        sandwich, magrittr
+Suggests: optmatch, testthat, knitr, rrelaxiv
+Additional_repositories: https://errickson.net/rrelaxiv/
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2023-05-10 22:21:37 UTC; sdbpimentel
+Author: Luke Keele [aut],
+  Luke Miratrix [aut],
+  Sam Pimentel [aut, cre],
+  Paul Rosenbaum [ctb]
+Repository: CRAN
+Date/Publication: 2023-05-11 07:20:02 UTC

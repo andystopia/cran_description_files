@@ -1,0 +1,27 @@
+Package: bhrcr
+Type: Package
+Title: Bayesian Hierarchical Regression on Clearance Rates in the
+        Presence of Lag and Tail Phases
+Version: 1.0.0
+Date: 2018-03-09
+Author: Colin B. Fogarty [cre] <cfogarty@mit.edu>,
+        Saeed Sharifi-Malvajerdi [aut] <saeedsh@wharton.upenn.edu>, 
+        Feiyu Zhu [aut] <feiyuzhu@sas.upenn.edu>
+Maintainer: Colin B. Fogarty <cfogarty@mit.edu>
+Description: An implementation of the Bayesian Clearance Estimator (Fogarty et al. (2015) <doi:10.1111/biom.12307>).
+            It takes serial measurements of a response on an individual (e.g., parasite load 
+            after treatment) that is decaying over time and performs Bayesian hierarchical 
+            regression of the clearance rates on the given covariates. This package provides 
+            tools to calculate WWARN PCE (WorldWide Antimalarial Resistance Network's 
+            Parasite Clearance Estimator) estimates of the clearance rates as well.
+Depends: R (>= 3.0.0)
+Imports: stats, MCMCpack, MASS, msm, mvtnorm, survival, AER, Cairo,
+        graphics, grDevices, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+License: GPL-3
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-03-09 15:17:35 UTC; saeedsh
+Repository: CRAN
+Date/Publication: 2018-03-13 14:43:00 UTC

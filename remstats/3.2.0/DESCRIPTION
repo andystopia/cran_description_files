@@ -1,0 +1,73 @@
+Package: remstats
+Type: Package
+Title: Computes Statistics for Relational Event History Data
+Version: 3.2.0
+Date: 2023-11-15
+Authors@R: 
+    c(
+        person(
+            given = "Marlyne",
+            family = "Meijerink-Bosman",
+            role = c("aut", "cre"),
+            email = "m.l.meijerink@tilburguniversity.edu"),
+        person(
+            given = "Giuseppe",
+            family = "Arena",
+            role = "ctb",
+            email = "g.arena@tilburguniversity.edu"),
+        person(
+            given = "Diana",
+            family = "Karimova",
+            role = "ctb",
+            email = "d.karimova@tilburguniversity.edu"),
+        person(
+            given = "Rumana",
+            family = "Lakdawala",
+            role = "ctb",
+            email = "r.j.lakdawala@tilburguniversity.edu"),
+        person(
+            given = "Mahdi",
+            family = "Shafiee Kamalabad",
+            role = "ctb",
+            email = "m.shafiee@tilburguniversity.edu"),
+        person(
+            given = "Fabio",
+            family = "Generoso Vieira",
+            role = "ctb",
+            email = "f.v.generosovieira@tilburguniversity.edu"),
+        person(
+            given = "Roger",
+            family = "Leenders",
+            role = "ctb",
+            email = "r.t.a.j.leenders@tilburguniversity.edu"),
+        person(
+            given = "Joris",
+            family = "Mulder",
+            role = "ctb",
+            email = "j.mulder3@tilburguniversity.edu")
+    )
+Maintainer: Marlyne Meijerink-Bosman <m.l.meijerink@tilburguniversity.edu>
+Description: Computes a variety of statistics for relational event models. Relational event models enable researchers to investigate both exogenous and endogenous factors influencing the evolution of a time-ordered sequence of events. These models are categorized into tie-oriented models (Butts, C., 2008, <doi:10.1111/j.1467-9531.2008.00203.x>), where the probability of a dyad interacting next is modeled in a single step, and actor-oriented models (Stadtfeld, C., & Block, P., 2017, <doi:10.15195/v4.a14>), which first model the probability of a sender initiating an interaction and subsequently the probability of the sender's choice of receiver. The package is designed to compute a variety of statistics that summarize exogenous and endogenous influences on the event stream for both types of models.  
+License: GPL (>= 3)
+URL: https://github.com/TilburgNetworkGroup/remstats
+BugReports: https://github.com/TilburgNetworkGroup/remstats/issues
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.8.3), stats
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+Suggests: graphics, tinytest, remify (>= 3.2.0), knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-11-17 10:24:09 UTC; mlbosman
+Author: Marlyne Meijerink-Bosman [aut, cre],
+  Giuseppe Arena [ctb],
+  Diana Karimova [ctb],
+  Rumana Lakdawala [ctb],
+  Mahdi Shafiee Kamalabad [ctb],
+  Fabio Generoso Vieira [ctb],
+  Roger Leenders [ctb],
+  Joris Mulder [ctb]
+Repository: CRAN
+Date/Publication: 2023-11-17 19:50:10 UTC

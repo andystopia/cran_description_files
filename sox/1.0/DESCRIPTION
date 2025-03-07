@@ -1,0 +1,41 @@
+Package: sox
+Type: Package
+Title: Structured Learning in Time-Dependent Cox Models
+Version: 1.0
+Date: 2023-03-21
+Authors@R: c(person("Yi", "Lian", role = c("aut", "cre"), email = "yi.lian@mail.mcgill.ca"),
+             person("Guanbo", "Wang", role = "aut"),
+             person("Archer Y.", "Yang", role = "aut"),
+             person("Mireille E.", "Schnitzer", role = "aut"),
+             person("Robert W.", "Platt", role = "aut"),
+             person("Rui", "Wang", role = "aut"),
+             person("Marc", "Dorais", role = "aut"),
+             person("Sylvie", "Perreault", role = "aut"),
+             person("Julien", "Mairal", role = "ctb"),
+             person("Yuansi", "Chen", role = "ctb"))
+Description: Efficient procedures for fitting and cross-validating the structurally-regularized time-dependent Cox models. The penalty term is a weighted sum of infinity norms of (overlapping) groups of coefficients, which can select variables following a user-specified grouping structure.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0), survival, glmnet
+Imports: Rcpp (>= 1.0.10)
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+LazyData: true
+Copyright: file inst/COPYRIGHTS
+NeedsCompilation: yes
+Packaged: 2023-03-21 21:07:16 UTC; YLIAN
+Author: Yi Lian [aut, cre],
+  Guanbo Wang [aut],
+  Archer Y. Yang [aut],
+  Mireille E. Schnitzer [aut],
+  Robert W. Platt [aut],
+  Rui Wang [aut],
+  Marc Dorais [aut],
+  Sylvie Perreault [aut],
+  Julien Mairal [ctb],
+  Yuansi Chen [ctb]
+Maintainer: Yi Lian <yi.lian@mail.mcgill.ca>
+Repository: CRAN
+Date/Publication: 2023-03-22 09:00:02 UTC

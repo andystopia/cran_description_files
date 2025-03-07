@@ -1,0 +1,45 @@
+Package: ggpattern
+Type: Package
+Title: 'ggplot2' Pattern Geoms
+Version: 1.0.1
+Authors@R: c(person("Mike", "FC", role = "aut",
+                    email = "mikefc@coolbutuseless.com"),
+             person("Trevor L", "Davis", role = c("aut", "cre"),
+                    email = "trevor.l.davis@gmail.com",
+                    comment = c(ORCID = "0000-0001-6341-4639")),
+             person("ggplot2 authors", role = "aut"))
+Description: Provides 'ggplot2' geoms filled with various patterns.  Includes a patterned version of every 'ggplot2' geom that has a region that can be filled with a pattern.  Provides a suite of 'ggplot2' aesthetics and scales for controlling pattern appearances.  Supports over a dozen builtin patterns (every pattern implemented by 'gridpattern') as well as allowing custom user-defined patterns.
+URL: https://github.com/coolbutuseless/ggpattern,
+        https://coolbutuseless.github.io/package/ggpattern/index.html
+BugReports: https://github.com/coolbutuseless/ggpattern/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: ggplot2 (>= 3.4.0), glue, grid, gridpattern (>= 1.0.2), rlang,
+        scales,
+Suggests: ambient, dplyr, gganimate, knitr, magick, mapproj, maps, png,
+        ragg (>= 1.2.0), readr, rmarkdown, sf (>= 0.7-3), testthat (>=
+        2.1.0), vdiffr
+VignetteBuilder: knitr, ragg, rmarkdown
+Collate: 'aaa-ggplot2-compat-plyr.R' 'aaa-ggplot2-ggplot-global.R'
+        'aaa-ggplot2-performance.R' 'aaa-ggplot2-scale-manual.R'
+        'aaa-ggplot2-utilities-grid.R' 'aaa-ggplot2-utilities.R'
+        'aab-utils.R' 'geom-.R' 'geom-rect.R' 'geom-bar.R'
+        'geom-bin2d.R' 'geom-boxplot.R' 'geom-col.R' 'geom-crossbar.R'
+        'geom-ribbon.R' 'geom-density.R' 'geom-polygon.R' 'geom-map.R'
+        'geom-sf.R' 'geom-tile.R' 'geom-violin.R' 'ggpattern-defunct.R'
+        'ggpattern-deprecated.R' 'ggpattern-package.R' 'pattern.R'
+        'polygon_df.R' 'scale-pattern-alpha.R' 'scale-pattern-brewer.R'
+        'scale-pattern-colour.R' 'scale-pattern-gradient.R'
+        'scale-pattern-grey.R' 'scale-pattern-hue.R'
+        'scale-pattern-linetype.R' 'scale-pattern-shape.R'
+        'scale-pattern-size.R' 'scale-pattern-viridis.R'
+        'scale-pattern.R' 'zxx.r' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2022-11-09 19:53:24 UTC; trevor
+Author: Mike FC [aut],
+  Trevor L Davis [aut, cre] (<https://orcid.org/0000-0001-6341-4639>),
+  ggplot2 authors [aut]
+Maintainer: Trevor L Davis <trevor.l.davis@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-11-09 23:10:02 UTC

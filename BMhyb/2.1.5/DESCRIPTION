@@ -1,0 +1,33 @@
+Package: BMhyb
+Version: 2.1.5
+Date: 2019-08-02
+Type: Package
+Title: Comparative Methods for Phylogenetic Networks
+Authors@R: c(person("Dwueng-Chwuan", "Jhwueng", role = c("aut", "cre"),
+                     email = "djhwueng@umail.iu.edu"),
+          person("Brian C.", "O'Meara", role = c("aut"),
+                                          email = "omeara.brian@gmail.com"))
+Imports: corpcor, numDeriv, geiger, ape, TreeSim, mvtnorm, methods,
+        lhs, viridis, Matrix, DEoptim, igraph, MASS, grDevices,
+        ggplot2, cowplot, graphics, stats, metR, parallel, phytools,
+        plyr
+Depends: R (>= 3.5.0)
+Suggests: testthat
+Description: Analyze the phenotypic evolution of species
+    of hybrid origin on a phylogenetic network. This can detect a burst of variation
+    at the formation of a hybrid as well as an increase or decrease in trait
+    value at a hybridization event. Parameters are estimated by maximum
+    likelihood, and model averaging can be done automatically. Users need to
+    enter a comparative data set and a phylogenetic network.
+License: GPL (>= 2)
+URL: http://github.com/bomeara/BMhyb
+BugReports: https://github.com/bomeara/BMhyb/issues
+RoxygenNote: 6.1.1.9000
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-08-02 19:37:12 UTC; bomeara
+Author: Dwueng-Chwuan Jhwueng [aut, cre],
+  Brian C. O'Meara [aut]
+Maintainer: Dwueng-Chwuan Jhwueng <djhwueng@umail.iu.edu>
+Repository: CRAN
+Date/Publication: 2019-08-02 22:10:10 UTC

@@ -1,0 +1,27 @@
+Package: dialectR
+Type: Package
+Title: Doing Dialectometry in R
+Version: 1.0
+Date: 2021-05-09
+Authors@R: person(given = "Soh-Eun", family = "Shim", email = "soh-eun.shim@student.uni-tuebingen.de",
+                  role = c("aut", "cre"))
+Description: Quantitative approaches to dialectology based primarily on modifications of edit distance, which is more commonly known as the field of dialectometry. For further reference on the school of thought associated with these methods, see Wieling & Nerbonne (2015), <https://www.annualreviews.org/doi/10.1146/annurev-linguist-030514-124930>.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.5), ggplot2, deldir, ggvoronoi, dtw, reticulate,
+        sf, dplyr, grDevices, tibble
+LinkingTo: Rcpp, RcppProgress
+SystemRequirements: C++11
+LazyData: true
+Config/reticulate: list( packages = list( list(package = "numpy", pip =
+        TRUE), list(package = "sklearn", pip = TRUE), list(package =
+        "scipy", pip = TRUE), list(package = "python_speech_features",
+        pip = TRUE), list(package = "speechpy", pip = TRUE), ) )
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2021-05-19 16:02:15 UTC; USER
+Author: Soh-Eun Shim [aut, cre]
+Maintainer: Soh-Eun Shim <soh-eun.shim@student.uni-tuebingen.de>
+Repository: CRAN
+Date/Publication: 2021-05-20 07:40:02 UTC

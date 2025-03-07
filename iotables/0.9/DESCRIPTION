@@ -1,0 +1,44 @@
+Package: iotables
+Type: Package
+Title: Reproducible Input-Output Economics Analysis, Economic and
+        Environmental Impact Assessment with Empirical Data
+Date: 2022-01-25
+Version: 0.9
+Authors@R: 
+    c(person("Daniel", "Antal", role = c("aut", "cre"),
+             email = "daniel.antal@dataobservatory.eu", 
+             comment = c(ORCID = "0000-0001-7513-6760")),
+      person(given = "Kasia",
+             family = "Kulma",
+             role = "ctb", 
+             comment = c(ORCID = "0000-0002-2952-9720")),
+      person(given = "Pyry",
+             family = "Kantanen", 
+             role = "ctb", 
+             comment = c(ORCID = "0000-0003-2853-2765"))
+             )
+Maintainer: Daniel Antal <daniel.antal@dataobservatory.eu>
+Description: Pre-processing and basic analytical tasks related to working
+    with Eurostat's symmetric input-output tables and provide basic
+    input-output economics calculations. The package is part of rOpenGov
+    <http://ropengov.github.io/> to open source open government initiatives.
+URL: https://iotables.dataobservatory.eu/
+BugReports: https://github.com/rOpenGov/iotables/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: dplyr, eurostat, magrittr, tidyr, forcats, utils, plyr,
+        lubridate, knitr, kableExtra, tibble, readxl, rlang,
+        assertthat, glue, tidyselect
+Suggests: testthat, rmarkdown, spelling, covr
+Depends: R(>= 3.5.0)
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-02-10 14:54:56 UTC; Daniel Antal
+Author: Daniel Antal [aut, cre] (<https://orcid.org/0000-0001-7513-6760>),
+  Kasia Kulma [ctb] (<https://orcid.org/0000-0002-2952-9720>),
+  Pyry Kantanen [ctb] (<https://orcid.org/0000-0003-2853-2765>)
+Repository: CRAN
+Date/Publication: 2022-02-10 16:00:06 UTC

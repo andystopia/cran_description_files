@@ -1,0 +1,21 @@
+Package: IADT
+Version: 1.0.0
+Title: Interaction Difference Test for Prediction Models
+Date: 2023-07-12
+Authors@R: c(person("Thomas", "Welchowski", role = c("aut", "cre"),
+                     email = "welchow@imbie.meb.uni-bonn.de",
+                     comment=c(ORCID = "0000-0003-2940-647X")))
+Description: Provides functions to conduct a model-agnostic asymptotic hypothesis test for the identification of interaction effects in black-box machine learning models. The null hypothesis assumes that a given set of covariates does not contribute to interaction effects in the prediction model. The test statistic is based on the difference of variances of partial dependence functions (Friedman (2008) <doi:10.1214/07-AOAS148> and Welchowski (2022) <doi:10.1007/s13253-021-00479-7>) with respect to the original black-box predictions and the predictions under the null hypothesis. The hypothesis test can be applied to any black-box prediction model, and the null hypothesis of the test can be flexibly specified according to the research question of interest. Furthermore, the test is computationally fast to apply as the null distribution does not require resampling or refitting black-box prediction models.
+Depends: Rmpfr
+Imports: methods, mgcv, Rdpack, mvnfast
+RdMacros: Rdpack
+Encoding: UTF-8
+License: GPL-3
+LazyLoad: yes
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-07-12 11:06:42 UTC; peter
+Author: Thomas Welchowski [aut, cre] (<https://orcid.org/0000-0003-2940-647X>)
+Maintainer: Thomas Welchowski <welchow@imbie.meb.uni-bonn.de>
+Repository: CRAN
+Date/Publication: 2023-07-13 14:10:05 UTC

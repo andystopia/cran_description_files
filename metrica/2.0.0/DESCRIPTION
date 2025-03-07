@@ -1,0 +1,42 @@
+Package: metrica
+Title: Prediction Performance Metrics
+Version: 2.0.0
+Date: 2022-07-04
+Authors@R: c(
+    person("Adrian A.", "Correndo", email = "correndo@ksu.edu", role = c("cre", "cph"), comment = c(ORCID = "0000-0002-4172-289X")),
+    person("Adrian A.", "Correndo", email = "correndo@ksu.edu", role = c("aut"), comment = c(ORCID = "0000-0002-4172-289X")),
+    person("Luiz H.", "Moro Rosso", email = "lhmrosso@ksu.edu", role = "aut", comment = c(ORCID = "0000-0002-8642-911X")),
+    person("Rai", "Schwalbert", email = "rai.schwalbert@hotmail.com", role = "aut", comment = c(ORCID = "0000-0001-8488-7507")),
+    person("Carlos", "Hernandez", email = "carlosh92@ksu.edu", role = "aut", comment = c(ORCID = "0000-0000-0000-0000")),
+    person("Leonardo M.", "Bastos", email = "leonardombastos@gmail.com", role = "aut", comment = c(ORCID = "0000-0001-8958-6527")),
+    person("Luciana", "Nieto", email = "lnieto@ksu.edu", role = "aut"),
+    person("Dean", "Holzworth", email = "dean.holzworth@csiro.au", role = "aut"),
+    person("Ignacio A.", "Ciampitti", email = "ciampitti@ksu.edu", role = "aut", comment = c(ORCID = "0000-0001-9619-5129")))
+Description: A compilation of more than 80 functions designed to quantitatively and visually evaluate prediction performance of regression (continuous variables) and classification (categorical variables) of point-forecast models (e.g. APSIM, DSSAT, DNDC, supervised Machine Learning). For regression, it includes functions to generate plots (scatter, tiles, density, & Bland-Altman plot), and to estimate error metrics (e.g. MBE, MAE, RMSE), error decomposition (e.g. lack of accuracy-precision), model efficiency (e.g. NSE, E1, KGE), indices of agreement (e.g. d, RAC), goodness of fit (e.g. r, R2), adjusted correlation coefficients (e.g. CCC, dcorr), symmetric regression coefficients (intercept, slope), and mean absolute scaled error (MASE) for time series predictions. For classification (binomial and multinomial), it offers functions to generate and plot confusion matrices, and to estimate performance metrics such as accuracy, precision, recall, specificity, F-score, Cohen's Kappa, G-mean, and many more. For more details visit the vignettes <https://adriancorrendo.github.io/metrica/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+Depends: R (>= 2.10)
+Suggests: tidyverse, purrr, knitr, rmarkdown, apsimx, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+Imports: stats, ggplot2, dplyr, rlang, tidyr, utils, DBI, RSQLite,
+        ggpp, minerva, energy
+VignetteBuilder: knitr
+URL: https://adriancorrendo.github.io/metrica/
+BugReports: https://github.com/adriancorrendo/metrica/issues
+NeedsCompilation: no
+Packaged: 2022-07-05 05:57:38 UTC; correndo
+Author: Adrian A. Correndo [cre, cph] (<https://orcid.org/0000-0002-4172-289X>),
+  Adrian A. Correndo [aut] (<https://orcid.org/0000-0002-4172-289X>),
+  Luiz H. Moro Rosso [aut] (<https://orcid.org/0000-0002-8642-911X>),
+  Rai Schwalbert [aut] (<https://orcid.org/0000-0001-8488-7507>),
+  Carlos Hernandez [aut] (<https://orcid.org/0000-0000-0000-0000>),
+  Leonardo M. Bastos [aut] (<https://orcid.org/0000-0001-8958-6527>),
+  Luciana Nieto [aut],
+  Dean Holzworth [aut],
+  Ignacio A. Ciampitti [aut] (<https://orcid.org/0000-0001-9619-5129>)
+Maintainer: Adrian A. Correndo <correndo@ksu.edu>
+Repository: CRAN
+Date/Publication: 2022-07-05 07:30:02 UTC

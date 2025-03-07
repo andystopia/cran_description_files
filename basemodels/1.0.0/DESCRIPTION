@@ -1,0 +1,51 @@
+Type: Package
+Package: basemodels
+Title: Baseline Models for Classification and Regression
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Ying-Ju", 
+    family = "Chen", 
+    role = c("aut", "cre"),
+    email = "ychen4@udayton.edu", 
+    comment = c(ORCID = "0000-0002-6444-6859")),
+    person(given = "Fadel M.", 
+    family = "Megahed", 
+    role = "aut",
+    comment = c(ORCID = "0000-0003-2194-5110")),
+    person(given = "L. Allison", 
+    family = "Jones-Farmer", 
+    role = "aut",
+    comment = c(ORCID = "0000-0002-1529-1133")),
+    person(given = "Steven E.", 
+    family = "Rigdon", 
+    role = "aut",
+    comment = c(ORCID = "0000-0001-7668-0899"))
+  )
+Description: Providing equivalent functions for the dummy
+    classifier and regressor used in 'Python' 'scikit-learn' library. Our goal
+    is to allow R users to easily identify baseline performance for their
+    classification and regression problems. Our baseline models use no
+    predictors, and are useful in cases of class imbalance, multiclass
+    classification, and when users want to quickly identify how much
+    improvement their statistical and machine learning models are over several
+    baseline models. We use a "better" default (proportional guessing) for
+    the dummy classifier than the 'Python' implementation ("prior", which is
+    the most frequent class in the training set). The functions in the
+    package can be used on their own, or introduce methods named
+    'dummy_regressor' or 'dummy_classifier' that can be used within the
+    caret package pipeline.
+License: MIT + file LICENSE
+URL: https://github.com/Ying-Ju/basemodels
+Imports: stats
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: caret
+NeedsCompilation: no
+Packaged: 2023-06-15 18:05:30 UTC; Tessa Chen
+Author: Ying-Ju Chen [aut, cre] (<https://orcid.org/0000-0002-6444-6859>),
+  Fadel M. Megahed [aut] (<https://orcid.org/0000-0003-2194-5110>),
+  L. Allison Jones-Farmer [aut] (<https://orcid.org/0000-0002-1529-1133>),
+  Steven E. Rigdon [aut] (<https://orcid.org/0000-0001-7668-0899>)
+Maintainer: Ying-Ju Chen <ychen4@udayton.edu>
+Repository: CRAN
+Date/Publication: 2023-06-16 09:10:05 UTC

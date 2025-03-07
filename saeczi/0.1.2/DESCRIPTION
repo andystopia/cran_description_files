@@ -1,0 +1,41 @@
+Package: saeczi
+Type: Package
+Title: Small Area Estimation for Continuous Zero Inflated Data
+Version: 0.1.2
+Authors@R: c(person("Josh", "Yamamoto", role = c("aut", "cre"),
+                    email = "joshuayamamoto5@gmail.com"),
+             person("Dinan", "Elsyad", role = "aut"),
+             person("Grayson", "White", role = "aut"),
+             person("Julian", "Schmitt", role = "aut"),
+             person("Niels", "Korsgaard", role = "aut"),
+             person("Kelly", "McConville", role = "aut"),
+             person("Kate", "Hu", role = "aut"))
+Maintainer: Josh Yamamoto <joshuayamamoto5@gmail.com>
+Description: Provides functionality to fit a zero-inflated estimator for small area estimation.
+    This estimator is a combines a linear mixed effects regression model and a logistic
+    mixed effects regression model via a two-stage modeling approach. The estimator's mean
+    squared error is estimated via a parametric bootstrap method. Chandra and others
+    (2012, <doi:10.1080/03610918.2011.598991>) introduce and describe this estimator and mean
+    squared error estimator. White and others (2024+, <arXiv:2402.03263>) describe the 
+    applicability of this estimator to estimation of forest attributes and further assess the
+    estimator's properties. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, lme4, purrr, progressr, furrr, future, rlang, Rcpp
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Packaged: 2024-03-27 21:04:42 UTC; joshuayamamoto
+Author: Josh Yamamoto [aut, cre],
+  Dinan Elsyad [aut],
+  Grayson White [aut],
+  Julian Schmitt [aut],
+  Niels Korsgaard [aut],
+  Kelly McConville [aut],
+  Kate Hu [aut]
+Repository: CRAN
+Date/Publication: 2024-03-28 13:30:02 UTC

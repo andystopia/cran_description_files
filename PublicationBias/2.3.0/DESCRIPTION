@@ -1,0 +1,37 @@
+Package: PublicationBias
+Title: Sensitivity Analysis for Publication Bias in Meta-Analyses
+Version: 2.3.0
+Authors@R: c(
+    person("Mika", "Braginsky", email = "mika.br@gmail.com", role = c("aut", "cre")),
+    person("Maya", "Mathur", email = "mmathur@stanford.edu", role = c("aut")),
+    person("Tyler J.", "VanderWeele", email = "tvanderw@hsph.harvard.edu", role = c("aut")))
+Description: Performs sensitivity analysis for publication bias in meta-analyses
+    (per Mathur & VanderWeele, 2020 [<doi:10.31219/osf.io/s9dp6>]). These analyses
+    enable statements such as: "For publication bias to shift the observed point
+    estimate to the null, 'significant' results would need to be at least
+    30-fold more likely to be published than negative or 'nonsignificant'
+    results." Comparable statements can be made regarding shifting to a chosen
+    non-null value or shifting the confidence interval. Provides a worst-case
+    meta-analytic point estimate under maximal publication bias obtained simply
+    by conducting a standard meta-analysis of only the negative and
+    "nonsignificant" studies.
+License: GPL-2
+URL: https://github.com/mayamathur/PublicationBias,
+        https://mayamathur.github.io/PublicationBias/
+BugReports: https://github.com/mayamathur/PublicationBias/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, glue, lifecycle, metabias, metafor, stats,
+        Rdpack, rlang, robumeta
+Suggests: purrr, testthat (>= 3.0.0), withr
+RoxygenNote: 7.2.3
+RdMacros: Rdpack
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-01-19 20:13:27 UTC; mbraginsky
+Author: Mika Braginsky [aut, cre],
+  Maya Mathur [aut],
+  Tyler J. VanderWeele [aut]
+Maintainer: Mika Braginsky <mika.br@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-19 23:20:09 UTC

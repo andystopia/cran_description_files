@@ -1,0 +1,29 @@
+Package: msarc
+Version: 1.4.3
+License: Artistic-2.0
+Date: 2014-12-04
+Title: Draw Diagrams (mis)Representing the Results of Mass Spec
+        Experiments
+Author: Gord Brown, Hisham Mohammed
+Maintainer: Gord Brown <gdbzork@gmail.com>
+Depends: R (>= 2.14.0)
+Imports: AnnotationDbi, gplots, XLConnect, wordcloud, RColorBrewer
+Suggests: GO.db, org.Hs.eg.db, org.Mm.eg.db
+Description: The output of an affinity-purification mass spectrometry
+ experiment is typically a list of proteins that were observed
+ in the experiment, identified by UniProt identifiers
+ (http://www.uniprot.org/).  This package takes as input a list of
+ UniProt identifiers, and the associated Mascot scores from the
+ experiment (which indicate the likelihood that the protein has
+ been correctly identified), clusters them by gene ontology
+ category (http://geneontology.org/), then draws diagrams
+ showing the results in hierarchical clusters by category, with lines
+ for individual proteins representing the associated Mascot score.
+ The results are in general not publication-ready, but will rather
+ require editing via a graphics editor that can interpret SVG (scalable
+ vector graphics) format.  As an alternative representation, the
+ package will also generate tag clouds based on the Mascot scores.
+Packaged: 2014-12-04 17:33:13 UTC; brown22
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-12-04 19:00:51

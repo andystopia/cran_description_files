@@ -1,0 +1,25 @@
+Package: SPECK
+Type: Package
+Title: Receptor Abundance Estimation using Reduced Rank Reconstruction
+        and Clustered Thresholding
+Version: 0.1.1
+Authors@R: c(
+    person("H. Robert", "Frost", email = "hildreth.r.frost@dartmouth.edu", role = c("aut")),
+    person("Azka", "Javaid", email = "azka.javaid.gr@dartmouth.edu", role = c("aut", "cre")))
+Maintainer: Azka Javaid <azka.javaid.gr@dartmouth.edu>
+Description: Surface Protein abundance Estimation using CKmeans-based clustered thresholding ('SPECK') is an unsupervised learning-based method that performs receptor abundance estimation for single cell RNA-sequencing data based on reduced rank reconstruction (RRR) and a clustered thresholding mechanism. Seurat's normalization method is described in: Hao et al., (2021) <doi:10.1016/j.cell.2021.04.048>, Stuart et al., (2019) <doi:10.1016/j.cell.2019.05.031>, Butler et al., (2018) <doi:10.1038/nbt.4096> and Satija et al., (2015) <doi:10.1038/nbt.3192>. Method for the RRR is further detailed in: Erichson et al., (2019) <doi:10.18637/jss.v089.i11> and Halko et al., (2009) <arXiv:0909.4061>. Clustering method is outlined in: Song et al., (2020) <doi:10.1093/bioinformatics/btaa613> and Wang et al., (2011) <doi:10.32614/RJ-2011-015>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Suggests: ggplot2, gridExtra, knitr, Matrix, rmarkdown, SeuratObject,
+        usethis
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Imports: Ckmeans.1d.dp, magrittr, rsvd, Seurat
+NeedsCompilation: no
+Packaged: 2022-10-14 21:10:14 UTC; azkajavaid
+Author: H. Robert Frost [aut],
+  Azka Javaid [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-10-16 07:32:49 UTC

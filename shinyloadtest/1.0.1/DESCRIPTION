@@ -1,0 +1,41 @@
+Package: shinyloadtest
+Type: Package
+Title: Load Test Shiny Applications
+Version: 1.0.1
+Authors@R: c(
+            person("Alan", "Dipert", role = c("aut", "cre"), email = "alan@rstudio.com"),
+            person("Barret", "Schloerke", role = c("aut"), email = "barret@rstudio.com"),
+            person("Barbara", "Borges", role = c("aut")),
+            person("RStudio", role = c("cph", "fnd"))
+            )
+Description: Assesses the number of concurrent users 'shiny'
+  applications are capable of supporting, and for directing application changes
+  in order to support a higher number of users. Provides facilities for recording
+  'shiny' application sessions, playing recorded sessions against a target
+  server at load, and analyzing the resulting metrics.
+License: GPL-3
+Depends: R (>= 2.10)
+Encoding: UTF-8
+LazyData: true
+URL: https://rstudio.github.io/shinyloadtest/,
+        https://github.com/rstudio/shinyloadtest
+BugReports: https://github.com/rstudio/shinyloadtest/issues
+Collate: 'enum.R' 'data.R' 'analysis.R' 'detect.R' 'auth.R'
+        'make_report.R' 'plotting.R' 'shiny-recorder.R' 'url.R'
+        'util.R' 'util-pipe.R'
+Imports: R6, curl, dplyr (>= 0.8.0.1), getPass, ggplot2, glue, gtable,
+        htmltools, httpuv (>= 1.5.2), jsonlite, lubridate, magrittr,
+        progress, readr, rlang (>= 0.1.2), rmarkdown, scales, stringr,
+        tibble, svglite, websocket (>= 1.0.0), xml2
+RoxygenNote: 7.0.2
+Suggests: testthat, usethis
+SystemRequirements: pandoc (>= 2.2) - http://pandoc.org
+NeedsCompilation: no
+Packaged: 2020-01-07 16:19:00 UTC; alan
+Author: Alan Dipert [aut, cre],
+  Barret Schloerke [aut],
+  Barbara Borges [aut],
+  RStudio [cph, fnd]
+Maintainer: Alan Dipert <alan@rstudio.com>
+Repository: CRAN
+Date/Publication: 2020-01-09 10:20:02 UTC

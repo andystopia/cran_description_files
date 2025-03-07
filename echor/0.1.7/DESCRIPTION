@@ -1,0 +1,35 @@
+Package: echor
+Type: Package
+Title: Access EPA 'ECHO' Data
+Version: 0.1.7
+Authors@R: 
+    person(given = "Michael",
+           family = "Schramm",
+           role = c("aut", "cre", "cph"),
+           email = "mpschramm@gmail.com",
+           comment = c(ORCID = "0000-0003-1876-6592"))
+Maintainer: Michael Schramm <mpschramm@gmail.com>
+Description: An R interface to United States Environmental 
+    Protection Agency (EPA) Environmental Compliance 
+    History Online ('ECHO') Application Program Interface
+    (API). 'ECHO' provides information about EPA permitted 
+    facilities, discharges, and other reporting info 
+    associated with permitted entities. Data are obtained 
+    from <https://echo.epa.gov/>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: curl, dplyr, geojsonsf, httr, plyr, progress, purrr, readr,
+        rlang, tibble, tidyr (>= 1.0.0), utils
+Suggests: httptest, testthat, utf8
+BugReports: https://github.com/mps9506/echor/issues
+URL: https://github.com/mps9506/echor, https://mps9506.github.io/echor/
+Language: en-US
+Config/Needs/website: mps9506/mpsTemplates, ggplot2, ggrepel,
+        ggspatial, here, kableExtra, knitr, raster, rmarkdown, sf
+NeedsCompilation: no
+Packaged: 2023-02-13 14:38:36 UTC; michael.schramm
+Author: Michael Schramm [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1876-6592>)
+Repository: CRAN
+Date/Publication: 2023-02-13 16:40:05 UTC

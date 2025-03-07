@@ -1,0 +1,17 @@
+Package: ROCt
+Type: Package
+Title: Time-Dependent ROC Curve Estimators and Expected Utility
+        Functions
+Version: 0.9.4
+Date: 2016-03-09
+Author: Y. Foucher, E. Dantan, P. Tessier, F. Le Borgne, and M. Lorent
+Maintainer: Y. Foucher <Yohann.Foucher@univ-nantes.fr>
+Description: Contains functions in order to estimate diagnostic and prognostic capacities of continuous markers. More precisely, one function concerns the estimation of time-dependent ROC (ROCt) curve, as proposed by Heagerty et al. (2000) <DOI: 10.1111/j.0006-341X.2000.00337.x>. One function concerns the adaptation of the ROCt theory for studying the capacity of a marker to predict the excess of mortality of a specific population compared to the general population. This last part is based on additive relative survival models and the work of Pohar-Perme et al. (2012) <DOI: 10.1111/j.1541-0420.2011.01640.x>. We also propose two functions for cut-off estimation in medical decision making by maximizing time-dependent expected utility function. Finally, we propose confounder-adjusted estimators of ROC and ROCt curves by using the Inverse Probability Weighting (IPW) approach.  For the confounder-adjusted ROC curve (without censoring), we also proposed the implementation of the estimator based on placement values proposed by Pepe and Cai (2004) <DOI: 10.1111/j.0006-341X.2004.00200.x>.
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 2.10), splines, date, survival, relsurv, timereg
+URL: www.r-project.org, www.divat.fr
+Packaged: 2016-03-09 14:22:03 UTC; Yohann
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2016-03-09 23:12:21

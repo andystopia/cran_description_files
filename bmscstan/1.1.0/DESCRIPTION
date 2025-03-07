@@ -1,0 +1,29 @@
+Package: bmscstan
+Type: Package
+Title: Bayesian Multilevel Single Case Models using 'Stan'
+Version: 1.1.0
+Authors@R: person("Michele", "Scandola", email = "michele.scandola@univr.it",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0853-8975"))
+Description: Analyse single case analyses against a control group.
+    Its purpose is to provide a flexible, with good power and
+    low first type error
+    approach that can manage at the same time controls' and patient's data.
+    The use of Bayesian statistics allows to test both the alternative and
+    null hypothesis.
+    Scandola, M., & Romano, D. (2020, August 3). <doi:10.31234/osf.io/sajdq>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), rstan, logspline, bayesplot, LaplacesDemon,
+        ggplot2
+Imports: coda
+VignetteBuilder: knitr
+Suggests: reshape2, gridExtra, loo, mcmcse, bridgesampling, testthat,
+        knitr, rmarkdown
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-11-07 22:01:26 UTC; michele
+Author: Michele Scandola [aut, cre] (<https://orcid.org/0000-0003-0853-8975>)
+Maintainer: Michele Scandola <michele.scandola@univr.it>
+Repository: CRAN
+Date/Publication: 2020-11-08 06:10:03 UTC

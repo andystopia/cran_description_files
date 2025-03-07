@@ -1,0 +1,26 @@
+Package: Rigma
+Type: Package
+Title: Access to the 'Figma' API
+Version: 0.1.0
+Authors@R: c(
+ person("Alexandros", "Kouretsis", email = "alexandros@appsilon.com", role = c("aut", "cre")))
+Maintainer: Alexandros Kouretsis <alexandros@appsilon.com>
+Description: The 'Figma' API allows for interactions and read access to 'Figma'
+ files <https://www.figma.com/developers/api>. This enables you to inspect any 
+ objects or layers, as well as their properties, and extract them so you may 
+ render them as images outside of 'Figma'. Then you can present your designs,
+ extract design data that can be used for 'Shiny' and 'Rmarkdown', integrate 
+ them with other systems, or use them to realize your original ideas.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/AleKoure/Rigma
+RoxygenNote: 7.2.1
+Imports: checkmate, httr2, lubridate, magrittr, purrr, xml2
+Suggests: covr, httptest2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-08 09:13:00 UTC; ale
+Author: Alexandros Kouretsis [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-11-09 10:30:20 UTC

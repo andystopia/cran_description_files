@@ -1,0 +1,26 @@
+Package: MetaDBparse
+Type: Package
+Title: Annotate Mass over Charge Values with Databases and Formula
+        Prediction
+Version: 2.0.0
+Author: Joanna Wolthuis
+Maintainer: Joanna Wolthuis <jcwolthuis93@gmail.com>
+Description: Provides parsing functionality for over 30 metabolomics databases, with most available without having to create an account on given websites. 
+    Once parsed, calculates given adducts and isotope patterns and inserts into one big database which can be used to annotate unknown m/z values.
+    Furthermore, formulas can be predicted for a given m/z, and these can be matched to ChemSpider, PubChem, SUPERNATURAL II, KNApSAcK and ChemIDplus for further annotation.
+    Current databases available: HMDB, ChEBI, LMDB, BMDB, MCDB, ECMDB, Wikidata, mVOC, VMH, T3DB, Exposome Explorer, FooDB, MetaCyc (requires account), DrugBank (requires account), ReSPECT, MaConDa, Blood Exposome DB, KEGG, SMPDB, LIPID MAPS, MetaboLights, DimeDB, Phenol Explorer, MassBank, YMDB, PAMDB, ANPDB, Metabolomics Workbench, PharmGKB, Reactome, mVOC and STOFF.
+    Featured in the 'MetaboShiny' package (Wolthuis, J. (2019) <doi:10.1007/s11306-020-01717-8>).
+License: Apache License 2.0
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0), rvest, RCurl, XML, SPARQL
+Imports: methods, pacman, rcdk, rJava, parallel, pbapply, enviPat,
+        data.table, RSQLite, DBI, gsubfn, utils, base, stringr,
+        WikidataQueryServiceR, webchem, jsonlite, R.utils, KEGGREST,
+        zip, ChemmineR, xml2, stringi, reshape2, Hmisc, httr, RJSONIO,
+        readxl, cmmr, progress, Rdisop, rlist
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-05-03 12:20:47 UTC; ninte
+Repository: CRAN
+Date/Publication: 2021-05-03 14:00:11 UTC

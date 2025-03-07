@@ -1,0 +1,33 @@
+Package: edeaR
+Type: Package
+Title: Exploratory and Descriptive Event-Based Data Analysis
+Version: 0.9.3
+Authors@R: c(person("Gert","Janssenswillen",email = "gert.janssenswillen@uhasselt.be", role = c("aut","cre")),
+             person("Gerard","van Hulzen",email = "gerard.vanhulzen@uhasselt.be", role = c("ctb")),
+             person("Marijke","Swennen", email = "marijke.swennen@uhasselt.be", role = "ctb"),
+             person("Ivan","Esin", email = "ivan.esin@student.uhasselt.be", role = "ctb"),
+             person("Hasselt University", role = "cph"))
+Description: Exploratory and descriptive analysis of event based data. Provides methods for describing and selecting process data, and for preparing event log data for process mining. Builds on the S3-class for event logs implemented in the package 'bupaR'.
+License: MIT + file LICENSE
+Depends: R(>= 3.5.0)
+Imports: bupaR (>= 0.5.1), dplyr, data.table, ggplot2, ggthemes, glue,
+        tibble, shiny, miniUI, tidyr, shinyTime, lubridate, purrr,
+        stringr, rlang (>= 1.0.0), cli (>= 3.2.0), zoo, hms, lifecycle
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://bupar.net/, https://github.com/bupaverse/edeaR/,
+        https://bupaverse.github.io/edeaR/
+Suggests: knitr, eventdataR, rmarkdown, covr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+BugReports: https://github.com/bupaverse/edeaR/issues/
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-16 16:54:38 UTC; lucp8407
+Author: Gert Janssenswillen [aut, cre],
+  Gerard van Hulzen [ctb],
+  Marijke Swennen [ctb],
+  Ivan Esin [ctb],
+  Hasselt University [cph]
+Maintainer: Gert Janssenswillen <gert.janssenswillen@uhasselt.be>
+Repository: CRAN
+Date/Publication: 2023-02-16 17:30:02 UTC

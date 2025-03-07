@@ -1,0 +1,51 @@
+Package: convergEU
+Type: Package
+Title: Monitoring Convergence of EU Countries
+Version: 0.5.3
+Depends: R (>= 3.6.0)
+Authors@R: 
+    c(person(given = "Federico M.",
+             family = "Stefanini",
+             role = c("arc", "aut", "cre"),
+             email = "federico.stefanini@unimi.it"),
+      person(given = "Massimiliano",
+             family = "Mascherini",
+             role = "arc",
+             email = "massimiliano.mascherini@eurofound.europa.eu"),
+      person(given = "Eleonora Peruffo",
+             role = "ctb"),
+      person(given = "Nedka D. Nikiforova",
+             role = "ctb"),
+      person(given = "Chiara Litardi",
+             role = "ctb"))
+Maintainer: Federico M. Stefanini <federico.stefanini@unimi.it>
+URL:
+        <https://unimi2013-my.sharepoint.com/:u:/g/personal/federico_stefanini_unimi_it/EW0cVSIgbtZAvLPNbqcxdX8Bfn5VGSRHfAH88hQwc_RIEQ?e=MgtSZu>
+        <https://www.eurofound.europa.eu/sites/default/files/wpef20008.pdf>,
+        <https://www.eurofound.europa.eu/sites/default/files/ef_publication/field_ef_document/ef18003en.pdf>
+Description: Indicators and measures by country and time describe
+    what happens at economic and social levels. This package provides
+    functions to calculate several measures of convergence after imputing
+    missing values. The automated downloading of Eurostat data,
+    followed by the production of country fiches and indicator fiches,
+    makes possible to produce automated reports.
+    The Eurofound report: Bisello, M., Eiffe, F., Dubois, H., Mascherini, M. (2019)
+    "Upward convergence in the EU: Concepts, measurements and indicators" (<doi:10.2806/68012>), is a detailed  presentation of  convergence.
+Imports: dplyr, tibble, ggplot2, eurostat, tidyr, rlang, utils, purrr,
+        caTools, broom, stringr, rmarkdown, ggpubr
+Suggests: devtools, formattable, gridExtra, knitr, kableExtra,
+        magrittr, readr, readxl, tidyverse, rvest, testthat, utf8
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-01-18 18:05:34 UTC; fred
+Author: Federico M. Stefanini [arc, aut, cre],
+  Massimiliano Mascherini [arc],
+  Eleonora Peruffo [ctb],
+  Nedka D. Nikiforova [ctb],
+  Chiara Litardi [ctb]
+Repository: CRAN
+Date/Publication: 2023-01-20 10:10:09 UTC

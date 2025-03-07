@@ -1,0 +1,32 @@
+Package: ALFAM2
+Type: Package
+Title: Dynamic Model of Ammonia Emission from Field-Applied Manure
+Version: 4.0
+Date: 2024-06-04
+Authors@R: c(person("Sasha D.", "Hafner", role = c("aut", "cre"), email = "sasha.hafner@bce.au.dk"),
+             person("Christoph", "Haeni", role = "aut"),
+             person("Roland", "Fuss", role = "aut", email = "roland.fuss@thuenen.de"),
+             person("Frederik", "Dalby", role = "aut"),
+             person("Johanna", "Pedersen", role = "ctb"),
+             person("Petersen", "Valdemar", role = "ctb"))
+Maintainer: Sasha D. Hafner <sasha.hafner@bce.au.dk>
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.8), stats
+Suggests: tinytest, knitr, rmarkdown
+Description: An implementation of the ALFAM2 dynamic emission model for ammonia volatilization from field-applied animal slurry (manure with dry matter below about 15%). The model can be used to predict cumulative emission and emission rate of ammonia following field application of slurry. Predictions may be useful for emission inventory calculations, fertilizer management, assessment of mitigation strategies, or research aimed at understanding ammonia emission. Default parameter sets include effects of application method, slurry composition, and weather. The model structure is based on a simplified representation of the physical-chemical slurry-soil-atmosphere system. See Hafner et al. (2018) <doi:10.1016/j.atmosenv.2018.11.034> for information on the model and Hafner et al. (2019) <doi:10.1016/j.agrformet.2017.11.027> for more on the measurement data used for parameter development.
+License: GPL-3
+URL: https://github.com/AU-BCE-EE/ALFAM2/,
+        https://projects.au.dk/alfam/
+VignetteBuilder: knitr
+LazyData: true
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2024-06-04 18:40:28 UTC; sasha
+Author: Sasha D. Hafner [aut, cre],
+  Christoph Haeni [aut],
+  Roland Fuss [aut],
+  Frederik Dalby [aut],
+  Johanna Pedersen [ctb],
+  Petersen Valdemar [ctb]
+Repository: CRAN
+Date/Publication: 2024-06-05 15:20:02 UTC

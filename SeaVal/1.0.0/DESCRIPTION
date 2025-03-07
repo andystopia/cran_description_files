@@ -1,0 +1,44 @@
+Package: SeaVal
+Title: Validation of Seasonal Weather Forecasts
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Claudio",
+           family = "Heinrich-Mertsching",
+           role = c("aut", "cre","cph"),
+           email = "claudio@nr.no",
+           comment = c(ORCID = "0000-0003-3581-6416")),
+    person(given = "Celine",
+           family = "Cunen",
+           role = c("ctb"),
+           email = "celine@nr.no"),
+    person(given = "Michael",
+           family = "Scheuerer",
+           role = c("ctb"),
+           email = "scheuerer@nr.no"))
+Description: Provides tools for processing and evaluating seasonal weather forecasts, 
+    with an emphasis on tercile forecasts. We follow the World Meteorological Organization's 
+    "Guidance on Verification of Operational Seasonal Climate Forecasts", 
+    S.J.Mason (2018, ISBN:978-92-63-11220-0, URL:<https://library.wmo.int/idurl/4/56227>). 
+    The development was supported by the European Union’s Horizon 2020 research and innovation 
+    programme under grant agreement no. 869730 (CONFER).
+    A comprehensive online tutorial is available at <http://files.nr.no/samba/CONFER/SeaVal/>.
+URL: http://files.nr.no/samba/CONFER/SeaVal/,
+        https://github.com/SeasonalForecastingEngine/SeaVal
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 2.10), data.table, ggplot2 (>= 3.3.0)
+Imports: ggplotify, maps, ncdf4, patchwork, RColorBrewer, scales
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'auxiliary_functions.R' 'chirps.R' 'data.R' 'diagrams.R'
+        'ncdf_to_dt.R' 'plotting.R' 'quantiles.R' 'scores.R'
+        'upscaling.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2023-11-08 17:22:47 UTC; claudio
+Author: Claudio Heinrich-Mertsching [aut, cre, cph]
+    (<https://orcid.org/0000-0003-3581-6416>),
+  Celine Cunen [ctb],
+  Michael Scheuerer [ctb]
+Maintainer: Claudio Heinrich-Mertsching <claudio@nr.no>
+Repository: CRAN
+Date/Publication: 2023-11-08 20:10:05 UTC

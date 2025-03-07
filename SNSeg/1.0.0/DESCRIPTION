@@ -1,0 +1,33 @@
+Package: SNSeg
+Title: Self-Normalization(SN) Based Change-Point Estimation for Time
+        Series
+Version: 1.0.0
+Authors@R: 
+    c(person("Shubo","Sun",role=c("aut"),email = "sxs3935@miami.edu"),
+      person("Zifeng","Zhao",role = c("aut","cre"),email = "zzhao2@nd.edu"),
+      person(given = "Feiyu",family = "Jiang",role = c("aut"),email = "jiangfy@fudan.edu.cn"),
+      person("Xiaofeng",family = "Shao",role = c("aut"),email = "xshao@illinois.edu")
+      )
+Description: Implementations self-normalization (SN) based algorithms for 
+    change-points estimation in time series data. This comprises nested 
+    local-window algorithms for detecting changes in both univariate and 
+    multivariate time series developed in Zhao, Jiang and Shao (2022) 
+    <doi:10.1111/rssb.12552>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0), stats, utils, graphics
+LinkingTo: Rcpp
+Imports: Rcpp, mvtnorm, truncnorm, evd
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-07-05 15:32:21 UTC; Shubo Sun
+Author: Shubo Sun [aut],
+  Zifeng Zhao [aut, cre],
+  Feiyu Jiang [aut],
+  Xiaofeng Shao [aut]
+Maintainer: Zifeng Zhao <zzhao2@nd.edu>
+Repository: CRAN
+Date/Publication: 2023-07-06 13:50:09 UTC

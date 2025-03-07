@@ -1,0 +1,44 @@
+Type: Package
+Package: chromatographR
+Title: Chromatographic Data Analysis Toolset
+Version: 0.4.4
+Authors@R: 
+    person("Ethan", "Bass", , "ethanbass@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6175-6739"))
+Maintainer: Ethan Bass <ethanbass@gmail.com>
+Description: Tools for high-throughput analysis of HPLC-DAD/UV
+    chromatograms (or similar data). Includes functions for preprocessing, alignment,
+    peak-finding and fitting, peak-table construction, data-visualization, etc.
+    Preprocessing and peak-table construction follow the rough formula laid out
+    in alsace (Wehrens, R., Bloemberg, T.G., and Eilers P.H.C., 2015.
+    <doi:10.1093/bioinformatics/btv299>. Alignment of chromatograms is available
+    using parametric time warping (ptw) (Wehrens, R., Bloemberg, T.G., and Eilers
+    P.H.C. 2015. <doi:10.1093/bioinformatics/btv299>) or variable penalty dynamic
+    time warping (VPdtw) (Clifford, D., & Stone, G. 2012. <doi:10.18637/jss.v047.i08>).
+    Peak-finding uses the algorithm by Tom O'Haver
+    <http://terpconnect.umd.edu/~toh/spectrum/PeakFindingandMeasurement.htm>.
+    Peaks are then fitted to a gaussian or exponential-gaussian hybrid peak shape
+    using non-linear least squares (Lan, K. & Jorgenson, J. W. 2001.
+    <doi:10.1016/S0021-9673(01)00594-5>). See the vignette for more details and
+    suggested workflow.
+License: GPL (>= 2)
+URL: https://ethanbass.github.io/chromatographR/
+BugReports: https://github.com/ethanbass/chromatographR/issues
+Depends: R (>= 3.5.0)
+Imports: chromConverter, dynamicTreeCut, fastcluster, graphics,
+        grDevices, lattice, methods, minpack.lm, parallel, ptw,
+        pvclust, scales, smoother, stats, utils
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0), vdiffr,
+        VPdtw
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-08-23 14:07:58 UTC; ethanbass
+Author: Ethan Bass [aut, cre] (<https://orcid.org/0000-0002-6175-6739>)
+Repository: CRAN
+Date/Publication: 2022-08-24 06:50:08 UTC

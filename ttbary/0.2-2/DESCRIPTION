@@ -1,0 +1,23 @@
+Package: ttbary
+Version: 0.2-2
+Date: 2022-02-19
+Title: Barycenter Methods for Spatial Point Patterns
+Authors@R: c(person("Raoul", "Müller", email = "raoul.mueller@uni-goettingen.de", role = "aut"),
+             person("Dominic", "Schuhmacher", email = "dominic.schuhmacher@mathematik.uni-goettingen.de", role = c("aut","cre"), comment = c(ORCID = "0000-0001-7079-6313")))
+Maintainer: Dominic Schuhmacher <dominic.schuhmacher@mathematik.uni-goettingen.de>
+Depends: R (>= 3.0.0), spatstat (>= 2.3-0)
+LinkingTo: Rcpp
+Imports: spatstat.geom, spatstat.core, spatstat.random,
+        spatstat.linnet, grDevices, graphics, stats, Rcpp
+Description: Computes a point pattern in R^2 or on a graph that is representative of a collection of many data patterns. The result is an approximate barycenter (also known as Fréchet mean or prototype) based on a transport-transform metric. Possible choices include Optimal SubPattern Assignment (OSPA) and Spike Time metrics. Details can be found in Müller, Schuhmacher and Mateu (2020) <doi:10.1007/s11222-020-09932-y>.
+LazyData: yes
+Encoding: UTF-8
+License: GPL (>= 2)
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2022-02-19 02:03:22 UTC; schumi
+Author: Raoul Müller [aut],
+  Dominic Schuhmacher [aut, cre]
+    (<https://orcid.org/0000-0001-7079-6313>)
+Repository: CRAN
+Date/Publication: 2022-02-19 13:20:02 UTC

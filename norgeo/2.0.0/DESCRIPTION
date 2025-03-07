@@ -1,0 +1,32 @@
+Package: norgeo
+Title: Track Geo Code Changes in all Regional Granularity in Norway
+Version: 2.0.0
+Authors@R: 
+    person(given = "Yusman",
+           family = "Kamaleri",
+           role = c("aut", "cre"),
+           email = "ybkamaleri@gmail.com"
+           )
+Description: Regional granularity levels in Norway which are depicted by different codes, 
+             have undergone several changes over the years. 
+             Identifying when codes have changed and how many changes have taken place
+             can be troublesome. This package will help to identify these changes and when the changes
+             have taken place. One of the limitation of this package is that it is heavily depending 
+             on the codes available from SSB website <https://data.ssb.no/api/klass/v1/api-guide.html>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: data.table (>= 1.14.0), odbc, DBI, magrittr, RSQLite, writexl,
+        httr, jsonlite
+Suggests: testthat, pkgdown, knitr, rmarkdown
+URL: https://github.com/helseprofil/norgeo
+BugReports: https://github.com/helseprofil/norgeo/issues
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2022-01-03 13:30:04 UTC; ybka
+Author: Yusman Kamaleri [aut, cre]
+Maintainer: Yusman Kamaleri <ybkamaleri@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-01-04 10:40:02 UTC

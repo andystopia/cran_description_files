@@ -1,0 +1,25 @@
+Package: PriorCD
+Type: Package
+Title: Prioritizing Cancer Drugs for Interested Cancer
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Junwei", family = "Han",email = "hanjunwei1981@163.com",role = c("ctb", "cre")), 
+  person(given = "Jieyi", family = "Di",email = "dijy_0419@yeah.net",role = "aut"), 
+  person(given = "Baotong", family = "Zheng",email = "btzheng1116@163.com",role = "aut"))
+Maintainer: Junwei Han <hanjunwei1981@163.com>
+Description: Prioritize candidate cancer drugs for drug repositioning based on the random walk with restart algorithm in a drug-drug functional similarity network. 1) We firstly constructed a drug-drug functional similarity network by integrating pathway activity and drug activity derived from the NCI-60 cancer cell lines. 2) Secondly, we calculated drug repurposing score according to a set of approved therapeutic drugs of interested cancer based on the random walk with restart algorithm in the drug-drug functional similarity network. 3) Finally, the permutation test was used to calculate the statistical significance level for the drug repurposing score.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: igraph, dplyr, ROCR, visNetwork
+Suggests: knitr, rmarkdown
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-10 08:47:49 UTC; zbt
+Author: Junwei Han [ctb, cre],
+  Jieyi Di [aut],
+  Baotong Zheng [aut]
+Repository: CRAN
+Date/Publication: 2019-02-24 16:40:06 UTC

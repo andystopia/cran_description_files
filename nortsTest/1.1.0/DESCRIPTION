@@ -1,0 +1,32 @@
+Package: nortsTest
+Title: Assessing Normality of Stationary Process
+Version: 1.1.0
+Date: 2024-01-16
+Authors@R: c(
+  person("Asael","Alonzo Matamoros", role = c("aut", "cre"),email = "asael.alonzo@gmail.com"),
+  person("Alicia","Nieto-Reyes", role = 'aut', email = "alicia.nieto@unican.es"),
+  person("Rob", "Hyndman", email="Rob.Hyndman@monash.edu", role = "ctb"),
+  person("Mitchell", "O'Hara-Wild", role = "ctb"),
+   person("Trapletti", "A.", role = "ctb")
+  )
+Description: Despite that several tests for normality in stationary processes have been proposed in the literature, consistent implementations of these tests in programming languages are limited. Seven normality test are implemented. The asymptotic Lobato & Velasco's, asymptotic Epps, Psaradakis and  Vávra, Lobato & Velasco's and Epps sieve bootstrap approximations, El bouch et al., and the random projections tests for univariate stationary process. Some other diagnostics such as, unit root test for  stationarity, seasonal tests for seasonality, and arch effect test for volatility; are also performed. Additionally, the El bouch test performs normality tests for bivariate time series. The package also offers residual diagnostic for linear time series models developed in several packages.
+License: GPL-2
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0), methods
+Imports: forecast, nortest, ggplot2, gridExtra, tseries, uroot, MASS,
+        zoo
+Suggests: ggfortify, testthat (>= 3.0.0)
+URL: https://github.com/asael697/nortsTest
+BugReports: https://github.com/asael697/nortsTest/issues
+Config/testthat/edition: 3
+Packaged: 2024-01-16 22:41:42 UTC; asael_am
+Author: Asael Alonzo Matamoros [aut, cre],
+  Alicia Nieto-Reyes [aut],
+  Rob Hyndman [ctb],
+  Mitchell O'Hara-Wild [ctb],
+  Trapletti A. [ctb]
+Maintainer: Asael Alonzo Matamoros <asael.alonzo@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-16 23:00:14 UTC

@@ -1,0 +1,34 @@
+Package: shinyCox
+Title: Create 'shiny' Applications for Cox Proportional Hazards Models
+Version: 1.1.0
+Authors@R: c(
+    person("Harrison", "Clement", 
+    email = "harrisonclement16@gmail.com", role = c("aut", "cre")),
+    person("Subodh", "Selukar", 
+    email = "subodh.selukar@stjude.org", role = "aut"),
+    person("Stanley", "Pounds",
+    email = "stanley.pounds@stjude.org", role = "aut"),
+    person("St Jude Children's Research Hospital", role = "fnd"))
+Description: Takes one or more fitted Cox proportional hazards models and writes
+    a 'shiny' application to a directory specified by the user. The 'shiny' 
+    application displays predicted survival curves based on user input, and 
+    contains none of the original data used to create the Cox model or models. 
+    The goal is towards visualization and presentation of predicted survival
+    curves.
+License: LGPL (>= 3)
+URL: https://github.com/harryc598/shinyCox
+BugReports: https://github.com/harryc598/shinyCox/issues
+Imports: shiny, survival (>= 3.3)
+Suggests: DT, knitr, rmarkdown, shinydashboard
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-29 03:13:34 UTC; harryc
+Author: Harrison Clement [aut, cre],
+  Subodh Selukar [aut],
+  Stanley Pounds [aut],
+  St Jude Children's Research Hospital [fnd]
+Maintainer: Harrison Clement <harrisonclement16@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-30 02:40:11 UTC

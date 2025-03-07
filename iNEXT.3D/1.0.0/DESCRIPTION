@@ -1,0 +1,44 @@
+Package: iNEXT.3D
+Type: Package
+Title: Interpolation and Extrapolation for Three Dimensions of
+        Biodiversity
+Version: 1.0.0
+Author: Anne Chao [aut, cre],
+  KaiHsiang Hu [ctb]
+Maintainer: Anne Chao <chao@stat.nthu.edu.tw>
+Authors@R: 
+  c(person("Anne", 
+           "Chao", 
+           role = c("aut","cre"),
+           email = "chao@stat.nthu.edu.tw"),
+    person("KaiHsiang", 
+           "Hu", 
+           role = "ctb",
+           email = "river19951224@gmail.com"))
+URL: https://sites.google.com/view/chao-lab-website/software/inext-3d
+Description: Biodiversity is a multifaceted concept covering different levels of organization from
+            genes to ecosystems. 'iNEXT.3D' extends 'iNEXT' to include three dimensions (3D) 
+            of biodiversity, i.e., taxonomic diversity (TD), phylogenetic diversity (PD) and functional 
+            diversity (FD). This package provides functions to compute standardized 3D diversity estimates 
+            with a common sample size or sample coverage. A unified framework based on Hill numbers 
+            and their generalizations (Hill-Chao numbers) are used to quantify 3D. All 3D estimates 
+            are in the same units of species/lineage equivalents and can be meaningfully compared. 
+            The package features size- and coverage-based rarefaction and extrapolation sampling 
+            curves to facilitate rigorous comparison of 3D diversity across individual assemblages. 
+            Asymptotic 3D diversity estimates are also provided. See Chao et al. (2021) 
+            <doi:10.1111/2041-210X.13682> for more details.
+License: GPL (>= 3)
+Depends: R (>= 4.0)
+Imports: stats, tibble, ggplot2, reshape2, tidytree, phyclust, dplyr,
+        ape, Rcpp
+Suggests: testthat, knitr, rmarkdown, gridExtra, ggthemes
+BugReports: https://github.com/AnneChao/iNEXT.3D/issues
+LazyLoad: yes
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+ByteCompile: true
+LinkingTo: Rcpp
+Packaged: 2024-02-10 05:21:08 UTC; stat-pc
+Repository: CRAN
+NeedsCompilation: yes
+Date/Publication: 2024-02-12 16:20:02 UTC

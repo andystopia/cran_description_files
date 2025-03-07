@@ -1,0 +1,30 @@
+Package: tLagPropOdds
+Type: Package
+Title: Proportional Odds Model with Censored, Time-Lagged Categorical
+        Outcome
+Version: 1.0
+Date: 2021-06-29
+Authors@R: c(person("Marie", "Davidian", role = "aut"),
+             person("A. A.", "Tsiatis", role = "aut"),
+             person("Shannon T.", "Holloway", role = c("aut", "cre"),
+                     email = "sthollow@ncsu.edu"))
+Author: Marie Davidian [aut],
+  A. A. Tsiatis [aut],
+  Shannon T. Holloway [aut, cre]
+Maintainer: Shannon T. Holloway <sthollow@ncsu.edu>
+Description: Implements a semiparametric estimator for the odds ratio model with
+    censored, time-lagged, ordered categorical outcome in a randomized clinical
+    trial that incorporates baseline and time-dependent information. 
+    Tsiatis, A. A. and Davidian, M. (2021) <arXiv:2106.15559>.
+License: GPL-2
+Depends: methods
+Imports: survival, stats, dplyr, R.utils
+NeedsCompilation: no
+Repository: CRAN
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Collate: 'infl.R' 'augment.R' 'aipw.R' 'kaplanMeier.R' 'ipw.R'
+        'print.tLagPropOdds.R' 'tLagData.R' 'verifyInputs.R'
+        'tLagPropOdds.R'
+Packaged: 2021-06-30 13:04:49 UTC; sthollow
+Date/Publication: 2021-07-01 07:30:05 UTC

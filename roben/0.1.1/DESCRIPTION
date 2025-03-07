@@ -1,0 +1,34 @@
+Package: roben
+Type: Package
+Title: Robust Bayesian Variable Selection for Gene-Environment
+        Interactions
+Version: 0.1.1
+Author: Jie Ren, Fei Zhou, Xiaoxi Li, Cen Wu
+Maintainer: Jie Ren <jieren@ksu.edu>
+Description: Gene-environment (G×E) interactions have important implications to elucidate the 
+    etiology of complex diseases beyond the main genetic and environmental effects. 
+    Outliers and data contamination in disease phenotypes of G×E studies have been commonly 
+    encountered, leading to the development of a broad spectrum of robust penalization methods. 
+    Nevertheless, within the Bayesian framework, the issue has not been taken care of in existing 
+    studies. We develop a robust Bayesian variable selection method for G×E interaction 
+    studies. The proposed Bayesian method can effectively accommodate heavy-tailed errors and 
+    outliers in the response variable while conducting variable selection by accounting for 
+    structural sparsity. In particular, the spike-and-slab priors have been imposed on both 
+    individual and group levels to identify important main and interaction effects. An efficient 
+    Gibbs sampler has been developed to facilitate fast computation. The Markov chain Monte Carlo 
+    algorithms of the proposed and alternative methods are efficiently implemented in C++.
+Depends: R (>= 4.0.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, glmnet, stats
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0), covr
+URL: https://github.com/jrhub/roben
+BugReports: https://github.com/jrhub/roben/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-03-12 17:49:25 UTC; 17854
+Repository: CRAN
+Date/Publication: 2024-03-12 21:10:02 UTC

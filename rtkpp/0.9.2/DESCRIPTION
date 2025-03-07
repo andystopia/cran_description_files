@@ -1,0 +1,44 @@
+Package: rtkpp
+Type: Package
+Title: STK++ Integration to R using Rcpp
+Version: 0.9.2
+Encoding: UTF-8
+Date: 2015-08-26
+Authors@R: c(person("Serge", "Iovleff", role=c("aut","cre"),
+    email="serge.iovleff@stkpp.org"),
+    person("Vincent", "Kubicki", role="ctb",
+    email="Vincent.Kubicki@inria.fr"),
+    person("Quentin", "Grimonprez", role="ctb",
+    email="Quentin.Grimonprez@inria.fr"),
+    person("Parmeet", "Bhatia", role="ctb",
+    email="bhatia.parmeet@gmail.com"))
+Copyright: Inria and specifically inst/COPYRIGHTS for the STK++ library
+Maintainer: Serge Iovleff <serge.iovleff@stkpp.org>
+Description: STK++ (http://www.stkpp.org) is a collection of
+    C++ classes for statistics, clustering, linear algebra, arrays (with an
+    Eigen-like API), regression, dimension reduction, etc. The integration of
+    the library to R is using Rcpp.
+ .
+       The rtkpp package includes the header files from the STK++
+    library (currently version 0.8.99). Thus users do not need to
+    install STK++ itself in order to use it.
+ .
+       STK++ is licensed under the GNU LGPL version 2 or later. rtkpp
+    (the stkpp integration into R) is licensed under the
+    GNU GPL version 2 or later.
+License: GPL (>= 2) | LGPL (>= 2) | file LICENSE
+BugReports: http://www.stkpp.org
+LazyLoad: yes
+Depends: R (>= 3.0.2), Rcpp
+LinkingTo: Rcpp
+URL: http://www.stkpp.org
+NeedsCompilation: yes
+SystemRequirements: GNU make
+Collate: 'rtkpp.R' 'rtkppFlags.R' 'inlineCxxPlugin.R'
+Packaged: 2015-08-26 15:41:14 UTC; iovleff
+Author: Serge Iovleff [aut, cre],
+  Vincent Kubicki [ctb],
+  Quentin Grimonprez [ctb],
+  Parmeet Bhatia [ctb]
+Repository: CRAN
+Date/Publication: 2015-08-26 23:07:55

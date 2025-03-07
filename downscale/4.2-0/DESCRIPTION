@@ -1,0 +1,26 @@
+Package: downscale
+Type: Package
+Title: Downscaling Species Occupancy
+Version: 4.2-0
+Date: 2021-11-24
+Author: Charles Marsh [aut, cre]
+Maintainer: Charles Marsh <charliem2003@gmail.com>
+Description: Uses species occupancy at coarse grain sizes to predict species occupancy at fine grain sizes. Ten models are provided to fit and extrapolate the occupancy-area relationship, as well as methods for preparing atlas data for modelling. See Marsh et. al. (2018) <doi:10.18637/jss.v086.c03>.
+License: GPL-2
+Depends: raster (>= 2.4-20), R (>= 3.0.0)
+Imports: cubature (>= 1.1-2), graphics, grDevices, methods, minpack.lm
+        (>= 1.1-9), Rmpfr (>= 0.5-7), sp (>= 1.2-0), stats
+Suggests: rgeos, rgdal, rgbif (>= 0.9.2), knitr, rmarkdown, bookdown
+Collate: 'DataInput.R' 'downscale.R' 'OptimiseParameters.R'
+        'OptimiseParametersGNB.R' 'OptimiseParametersFNB.R'
+        'OptimiseParametersLogis.R' 'OptimiseParametersThomas.R'
+        'PredictFunctions.R' 'ResidFunctions.R' 'StartingParams.R'
+        'ThomasFunctions.R' 'plot.predict.downscale.R'
+        'predict.downscale.R' 'ensemble.downscale.R' 'upgrain.R'
+        'hui.downscale.R' 'HuiFunctions.R' 'upgrain.threshold.R'
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-11-24 11:20:45 UTC; charlie
+Repository: CRAN
+Date/Publication: 2021-11-24 13:10:06 UTC

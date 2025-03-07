@@ -1,0 +1,40 @@
+Package: fossilbrush
+Title: Automated Cleaning of Fossil Occurrence Data
+Version: 1.0
+Authors@R: 
+    c(person(given = "Joe",
+             family = "Flannery-Sutherland",
+             role = c("aut", "cre"),
+             email = "jf15558@bristol.ac.uk",
+             comment = c(ORCID = "0000-0001-8232-6773")),
+      person(given = "Nussaïbah",
+             family = "Raja-Schoob",
+             role = c("aut", "ctb")),
+      person(given = "Ádam",
+             family = "Kocsis",
+             role = c("aut", "ctb")),
+      person(given = "Wolfgang",
+             family = "Kiessling",
+             role = "aut"))
+Description: Functions to automate the detection and resolution of taxonomic and stratigraphic errors in fossil occurrence datasets. Functions were developed using data from the Paleobiology Database.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 2.10)
+Imports: igraph, curl, data.table, dplyr, pbapply, stringdist, stringr,
+        Matrix, methods
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+URL: https://github.com/jf15558/fossilbrush
+BugReports: https://github.com/jf15558/fossilbrush/issues
+NeedsCompilation: no
+Packaged: 2022-05-04 16:31:03 UTC; Joe
+Author: Joe Flannery-Sutherland [aut, cre]
+    (<https://orcid.org/0000-0001-8232-6773>),
+  Nussaïbah Raja-Schoob [aut, ctb],
+  Ádam Kocsis [aut, ctb],
+  Wolfgang Kiessling [aut]
+Maintainer: Joe Flannery-Sutherland <jf15558@bristol.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-05-09 06:40:02 UTC

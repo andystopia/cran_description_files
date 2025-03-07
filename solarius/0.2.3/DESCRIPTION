@@ -1,0 +1,44 @@
+Package: solarius
+Type: Package
+Title: An R Interface to SOLAR
+Version: 0.2.3
+Date: 2015-05-08
+Authors@R: c(
+    person("Andrey", "Ziyatdinov", email = "andrey.ziyatdinov@upc.edu", role = c("cre", "aut")),
+    person("Helena", "Brunel", role = "aut"),
+    person("Angel", "Martinez-Perez", role = "aut"),
+    person("Alfonso", "Buil", role = "aut"),
+    person("Alexandre", "Perera", role = "cph"),
+    person("Jose Manuel", "Soria", role = "cph"))
+Maintainer: Andrey Ziyatdinov <andrey.ziyatdinov@upc.edu>
+Description: 
+  SOLAR is the standard software program to perform linkage and association mappings 
+  of the quantitative trait loci (QTLs) in pedigrees of arbitrary size and complexity.
+  This package allows the user to exploit the variance component methods implemented in SOLAR.
+  It automates such routine operations as formatting pedigree and phenotype data.
+  It also parses the model output and contains summary and plotting functions for exploration of the results.
+  In addition, solarius enables parallel computing of the linkage and association analyses,
+  that makes the calculation of genome-wide scans more efficient.
+  See <http://solar.txbiomedgenetics.org/> for more information about SOLAR.
+License: GPL (>= 3)
+URL: https://github.com/ugcd/solarius
+LazyData: false
+Imports: methods, plyr (>= 1.8.1), ggplot2, data.table
+Suggests: kinship2, scales, Matrix, gdata, doParallel, iterators,
+        parallel, qqman
+Collate: 'package.R' 'datasets.R' 'data.lib.R' 'support.lib.R'
+        'solar.lib.R' 'assoc.lib.R' 'classSolarAssoc.R'
+        'classSolarPolygenic.R' 'plot.lib.R' 'polygenic.lib.R'
+        'solarAssoc.R' 'solarPolygenic.R' 'files.lib.R'
+        'classSolarMultipoint.R' 'solarMultipoint.R' 'multipoint.lib.R'
+        'transforms.lib.R'
+Packaged: 2015-05-08 21:04:39 UTC; andrey
+Author: Andrey Ziyatdinov [cre, aut],
+  Helena Brunel [aut],
+  Angel Martinez-Perez [aut],
+  Alfonso Buil [aut],
+  Alexandre Perera [cph],
+  Jose Manuel Soria [cph]
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-05-09 06:20:42

@@ -1,0 +1,44 @@
+Type: Package
+Package: tern.gee
+Title: Tables and Graphs for Generalized Estimating Equations (GEE)
+        Model Fits
+Version: 0.1.4
+Date: 2024-06-11
+Authors@R: c(
+    person("Daniel", "Sabanés Bové", , "daniel@rconis.com", role = "aut"),
+    person("Joe", "Zhu", , "joe.zhu@roche.com", role = c("aut", "cre")),
+    person("Emily", "de la Rua", , "emily.de_la_rua@contractors.roche.com", role = "aut"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Generalized estimating equations (GEE) are a popular choice
+    for analyzing longitudinal binary outcomes. This package provides an
+    interface for fitting GEE, currently for logistic regression, within
+    the 'tern' <https://cran.r-project.org/package=tern> framework (Zhu,
+    Sabanés Bové et al., 2023) and tabulate results easily using 'rtables'
+    <https://cran.r-project.org/package=rtables> (Becker, Waddell et al.,
+    2023).  It builds on 'geepack' <doi:10.18637/jss.v015.i02> (Højsgaard,
+    Halekoh and Yan, 2006) for the actual GEE model fitting.
+License: Apache License 2.0
+URL: https://insightsengineering.github.io/tern.gee/,
+        https://github.com/insightsengineering/tern.gee/
+BugReports: https://github.com/insightsengineering/tern.gee/issues
+Depends: R (>= 4.0), tern (>= 0.9.4)
+Imports: checkmate, emmeans (>= 1.4.5), formatters (>= 0.5.6), geeasy,
+        geepack, nlme, rtables (>= 0.6.7), stats
+Suggests: dplyr, knitr, rmarkdown, testthat (>= 3.1), vdiffr (>=
+        1.0.0), withr (>= 2.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-12 01:35:00 UTC; rstudio
+Author: Daniel Sabanés Bové [aut],
+  Joe Zhu [aut, cre],
+  Emily de la Rua [aut],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Joe Zhu <joe.zhu@roche.com>
+Repository: CRAN
+Date/Publication: 2024-06-12 07:30:02 UTC

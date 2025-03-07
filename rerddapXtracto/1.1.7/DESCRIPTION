@@ -1,0 +1,36 @@
+Package: rerddapXtracto
+Type: Package
+Title: Extracts Environmental Data from 'ERDDAP' Web Services
+Version: 1.1.7
+Date: 2023-10-18
+Authors@R: c(
+     person("Roy", "Mendelssohn", email = "roy.mendelssohn@noaa.gov", role = c("aut","cre")),
+    person("Marie", "Auger-Methe", role = "ctb")
+    )
+Description: Contains three functions that access
+    environmental data from any 'ERDDAP' data web service. The rxtracto() function extracts
+    data along a trajectory for a given "radius" around the point. The
+    rxtracto_3D() function extracts data in a box. The rxtractogon() function
+    extracts data in a polygon. All of those three function use the 'rerddap' package
+    to extract the data, and should work with any 'ERDDAP' server.
+    There are also two functions, plotBBox() and plotTrack() that use the 'plotdap'
+    package to simplify the creation of maps of the data.
+URL: https://github.com/rmendels/rerddapXtracto
+BugReports: https://github.com/rmendels/rerddapXtracto/issues
+Depends: R(>= 4.0.0)
+License: CC0
+Imports: abind, dplyr, ggplot2, httr, maps, methods, ncdf4, parsedate,
+        plotdap (>= 0.0.5), readr, rerddap (>= 0.8.0), sf, sp, stats,
+        utils
+Suggests: cmocean, gganimate, knitr, mapdata, rmarkdown
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+LazyData: TRUE
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-18 17:18:45 UTC; rmendels
+Author: Roy Mendelssohn [aut, cre],
+  Marie Auger-Methe [ctb]
+Maintainer: Roy Mendelssohn <roy.mendelssohn@noaa.gov>
+Repository: CRAN
+Date/Publication: 2023-10-18 17:40:02 UTC

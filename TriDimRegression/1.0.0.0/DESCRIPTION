@@ -1,0 +1,35 @@
+Package: TriDimRegression
+Title: Bayesian Statistics for 2D/3D Transformations
+Version: 1.0.0.0
+Authors@R: c(
+  person("Alexander (Sasha)", "Pastukhov", role = c("cre", "ctb"), email ="pastukhov.alexander@gmail.com"),
+  person("Claus-Christian", "Carbon", role = c("aut"), email ="ccc@experimental-psychology.com"))
+Description: Fits 2D and 3D geometric transformations via 'Stan' probabilistic programming engine ( 
+    Stan Development Team (2021) <https://mc-stan.org>). Returns posterior distribution for individual
+    parameters of the fitted distribution. Allows for computation of LOO and WAIC information criteria 
+    (Vehtari A, Gelman A, Gabry J (2017) <doi:10.1007/s11222-016-9696-4>) as well as Bayesian R-squared
+    (Gelman A, Goodrich B, Gabry J, and Vehtari A (2018) <doi:10.1080/00031305.2018.1549100>).
+License: GPL-3
+URL: https://github.com/alexander-pastukhov/tridim-regression
+BugReports: https://github.com/alexander-pastukhov/tridim-regression/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Biarch: true
+Depends: R (>= 3.5.0), loo
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.1.1), dplyr, future, glue, purrr,
+        tidyr, Formula, bayesplot
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: testthat, knitr, rmarkdown, ggplot2
+NeedsCompilation: yes
+Packaged: 2021-05-03 16:30:38 UTC; sasha
+Author: Alexander (Sasha) Pastukhov [cre, ctb],
+  Claus-Christian Carbon [aut]
+Maintainer: Alexander (Sasha) Pastukhov <pastukhov.alexander@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-05-04 07:00:16 UTC

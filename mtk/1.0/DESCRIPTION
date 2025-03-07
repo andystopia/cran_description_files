@@ -1,0 +1,46 @@
+Package: mtk
+Type: Package
+Title: Mexico ToolKit library (MTK)
+Encoding: UTF-8
+Version: 1.0
+Date: 2014-07-15
+Authors@R: c(person("Juhui", "WANG", role = c("aut", "cre"),
+		     email = "Juhui.Wang@jouy.inra.fr", 
+		     comment = "Software and Engineering"),
+	      person("Hervé", "MONOD", role = "aut", 
+		     email = "Herve.Monod@jouy.inra.fr",
+		     comment = "Applications and Statistical Methods"),
+	      person("Robert", "FAIVRE", role = "ctb",
+		     email = "faive@toulouse.inra.fr",
+		     comment = "Applications and Statistical Methods"),
+	      person("Hervé", "RICHARD", role = "ctb",
+		     email = "Herve.Richard@avignon.inra.fr",
+		     comment = "Software and Engineering")
+	)
+Author: Juhui WANG [aut, cre] (Software and Engineering), Hervé MONOD [aut] (Applications and Statistical Methods), Robert FAIVRE [ctb] (Applications and Statistical Methods), Hervé RICHARD [ctb] (Software and Engineering)
+Maintainer: Juhui WANG <Juhui.Wang@jouy.inra.fr>
+Description: MTK (Mexico ToolKit) is a generic platform for the sensitivity and uncertainty analysis of complex models. It provides functions and facilities for experimental design, model simulation, sensitivity and uncertainty analysis, methods integration and data reporting, etc.
+License: GPL-3
+LazyLoad: yes
+Depends: R (>= 2.15.0), base, stringr, graphics, methods, XML,
+        sensitivity, lhs, rgl
+Suggests: MASS
+Collate: 'mtkAllGenerics.R' 'globalsMtkFuncts.R' 'mtkValue.R'
+        'mtkFeature.R' 'mtkLevels.R' 'mtkParameter.R' 'mtkDomain.R'
+        'mtkFactor.R' 'mtkExpFactors.R' 'mtkProcess.R'
+        'mtkExpWorkflow.R' 'mtkExperiment.R' 'mtkParsor.R'
+        'mtkResult.R' 'mtkDesignerResult.R' 'mtkDesigner.R'
+        'mtkMorrisDesigner.R' 'mtkBasicMonteCarloDesigner.R'
+        'mtkRandLHSDesigner.R' 'mtkNativeDesigner.R'
+        'mtkSobolDesigner.R' 'mtkFastDesigner.R' 'mtkEvaluatorResult.R'
+        'mtkEvaluator.R' 'mtkNativeEvaluator.R'
+        'mtkIshigamiEvaluator.R' 'mtkWWDMEvaluator.R'
+        'mtkSystemEvaluatorResult.R' 'mtkSystemEvaluator.R'
+        'mtkAnalyserResult.R' 'mtkAnalyser.R' 'mtkNativeAnalyser.R'
+        'mtkDefaultAnalyser.R' 'mtkRegressionAnalyser.R'
+        'mtkMorrisAnalyser.R' 'mtkSobolAnalyser.R' 'mtkPLMMAnalyser.R'
+        'mtkFastAnalyser.R' 'mtk.addons.R' 'mtkPackage.R'
+Packaged: 2014-07-24 08:40:45 UTC; jwang
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-07-24 13:12:50

@@ -1,0 +1,30 @@
+Package: MACP
+Type: Package
+Title: Macromolecular Assemblies from Co-Elution Profile (MACP)
+Version: 0.1.0
+Authors@R: c(
+    person("Matineh", "Rahmatbakhsh", ,"matinerb.94@gmail.com",c("aut","trl","cre")),
+    person("Mohan", "Babu", ,"mohan.babu@uregina.ca", c("led")))
+Description: The MACP employs machine learning algorithm for automated scoring 
+   of co-fractionation mass spectrometry (CF-MS) and then systematically 
+   map multi-protein complexes from these high-confidence protein-protein 
+   interactions (PPIs) using unsupervised learning (i.e., clustering).
+Depends: R (>= 4.1)
+Imports: stats, zoo, utils, dplyr, lsa, WGCNA, tidyr, tibble, Hmisc,
+        igraph, PRROC, pROC, ggplot2, grDevices, fmsb, stringr, caret
+Maintainer: Matineh Rahmatbakhsh <matinerb.94@gmail.com>
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/mrbakhsh/MACP
+BugReports: https://github.com/mrbakhsh/MACP/issues
+VignetteBuilder: knitr
+Suggests: knitr, ptw, e1071, kernlab, ranger, proxy, infotheo,
+        gridExtra, philentropy, randomForest, gprofiler2, purrr, minet,
+        entropy, MCL, orthogene, protti, arules, rmarkdown, BiocStyle
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-02-27 17:42:22 UTC; Matine
+Author: Matineh Rahmatbakhsh [aut, trl, cre],
+  Mohan Babu [led]
+Repository: CRAN
+Date/Publication: 2023-02-28 17:32:30 UTC

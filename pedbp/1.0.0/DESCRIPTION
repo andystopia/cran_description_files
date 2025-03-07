@@ -1,0 +1,40 @@
+Package: pedbp
+Title: Pediatric Blood Pressure
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Peter", family = "DeWitt",  email = "peter.dewitt@cuanschutz.edu",        role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6391-0795")),
+    person(given = "Blake", family = "Martin",  email = "blake.martin@childrenscolorado.org", role = c("ctb"),        comment = c(ORCID = "0000-0001-5683-8310")),
+    person(given = "David", family = "Albers",  email = "david.albers@cuanschutz.edu",        role = c("ctb"),        comment = c(ORCID = "0000-0002-5369-526X")),
+    person(given = "Tell",  family = "Bennett", email = "tell.bennett@cuanschutz.edu",        role = c("ctb"),        comment = c(ORCID = "0000-0003-1483-4236"))
+    )
+Description: Data and utilities for estimating pediatric blood pressure
+    percentiles by sex, age, and optionally height (stature).
+    Blood pressure percentiles for children under one year of age come from Gemelli
+    et.al. (1990) <doi:10.1007/BF02171556>.  Estimates of blood pressure
+    percentiles for children at least one year of age are informed by
+    data from the National Heart, Lung, and Blood Institute (NHLBI) and the
+    Centers for Disease Control and Prevention (CDC)
+    <doi:10.1542/peds.2009-2107C> or from Lo et.al. (2013)
+    <doi:10.1542/peds.2012-1292>.  The flowchart for selecting the informing
+    data source comes from Martin et.al. (2022)
+    <doi:10.1542/hpeds.2021-005998>.
+Depends: R (>= 3.5.0)
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/dewittpe/pedbp/
+Language: en-us
+LazyData: true
+Imports: ggplot2, scales
+Suggests: covr, data.table, DT, gridExtra, knitr, rmarkdown, shiny,
+        shinydashboard
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-07-01 18:10:18 UTC; peterdewitt
+Author: Peter DeWitt [aut, cre] (<https://orcid.org/0000-0002-6391-0795>),
+  Blake Martin [ctb] (<https://orcid.org/0000-0001-5683-8310>),
+  David Albers [ctb] (<https://orcid.org/0000-0002-5369-526X>),
+  Tell Bennett [ctb] (<https://orcid.org/0000-0003-1483-4236>)
+Maintainer: Peter DeWitt <peter.dewitt@cuanschutz.edu>
+Repository: CRAN
+Date/Publication: 2022-07-02 10:10:02 UTC

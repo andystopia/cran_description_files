@@ -1,0 +1,36 @@
+Package: ccid
+Type: Package
+Title: Cross-Covariance Isolate Detect: a New Change-Point Method for
+        Estimating Dynamic Functional Connectivity
+Version: 1.0.0
+Depends: R (>= 3.6.0)
+Imports: IDetect, hdbinseg, GeneNet, gdata
+Authors@R: c(person("Andreas", "Anastasiou", email = "anastasiou.andreas@ucy.ac.cy", role = c("aut", "cre")),
+        person("Ivor", "Cribben", email = "cribben@ualberta.ca", role = "aut"),
+        person("Piotr", "Fryzlewicz", email = "p.fryzlewicz@lse.ac.uk", role = "aut"))
+Description: Provides efficient implementation of the Cross-Covariance
+    Isolate Detect (CCID) methodology for the estimation of the number
+    and location of multiple change-points in the second-order
+    (cross-covariance or network) structure of multivariate, possibly
+    high-dimensional time series. The method is motivated by the detection
+    of change points in functional connectivity networks for functional
+    magnetic resonance imaging (fMRI), electroencephalography (EEG),
+    magentoencephalography (MEG) and electrocorticography (ECoG) data. The
+    main routines in the package have been extensively tested on fMRI data. 
+    For details on the CCID methodology, please see Anastasiou et
+    al (2020) <doi:10.1101/2020.12.20.423696>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://github.com/Anastasiou-Andreas/ccid
+BugReports: https://github.com/Anastasiou-Andreas/ccid/issues
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2021-01-05 11:11:56 UTC; ANASTAS7
+Author: Andreas Anastasiou [aut, cre],
+  Ivor Cribben [aut],
+  Piotr Fryzlewicz [aut]
+Maintainer: Andreas Anastasiou <anastasiou.andreas@ucy.ac.cy>
+Repository: CRAN
+Date/Publication: 2021-01-07 11:20:09 UTC

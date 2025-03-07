@@ -1,0 +1,56 @@
+Package: RobExtremes
+Version: 1.3.0
+Date: 2024-02-07
+Title: Optimally Robust Estimation for Extreme Value Distributions
+Description: Optimally robust estimation for extreme value distributions using S4 classes and
+            methods (based on packages 'distr', 'distrEx', 'distrMod', 'RobAStBase', and
+            'ROptEst'); the underlying theoretic results can be found in Ruckdeschel and
+            Horbenko, (2013 and 2012), \doi{10.1080/02331888.2011.628022} and
+            \doi{10.1007/s00184-011-0366-4}.
+Depends: R(>= 3.4), methods, distrMod(>= 2.8.0), ROptEst(>= 1.2.0),
+        robustbase, evd
+Suggests: RUnit(>= 0.4.26), ismev(>= 1.39)
+Enhances: fitdistrplus(>= 1.0-9)
+Imports: RobAStRDA, distr, distrEx(>= 2.8.0), RandVar, RobAStBase(>=
+        1.2.0), startupmsg, actuar
+Authors@R: c(person("Nataliya", "Horbenko", role=c("aut","cph")), person("Bernhard", "Spangl",
+            role="ctb", comment="contributed smoothed grid values of the Lagrange
+            multipliers"), person("Sascha", "Desmettre", role="ctb", comment="contributed
+            smoothed grid values of the Lagrange multipliers"), person("Eugen", "Massini",
+            role="ctb", comment="contributed an interactive smoothing routine for smoothing
+            the Lagrange multipliers and smoothed grid values of the Lagrange multipliers"),
+            person("Daria", "Pupashenko", role="ctb", comment="contributed MDE-estimation for
+            GEV distribution in the framework of her PhD thesis 2011--14"), person("Gerald",
+            "Kroisandt", role="ctb", comment="contributed testing routines"),
+            person("Matthias", "Kohl", role=c("aut", "cph"), comment = c(ORCID =
+            "0000-0001-9514-8910")), person("Peter", "Ruckdeschel", role=c("cre", "aut",
+            "cph"), email="peter.ruckdeschel@uni-oldenburg.de", comment = c(ORCID =
+            "0000-0001-7815-4809")))
+ByteCompile: yes
+LazyLoad: yes
+License: LGPL-3
+Encoding: UTF-8
+URL: https://r-forge.r-project.org/projects/robast/
+LastChangedDate: {$LastChangedDate: 2024-02-07 03:37:36 +0100 (Mi, 07
+        Feb 2024) $}
+LastChangedRevision: {$LastChangedRevision: 1295 $}
+VCS/SVNRevision: 1290
+NeedsCompilation: yes
+Packaged: 2024-02-07 13:22:26 UTC; ruckdesc
+Author: Nataliya Horbenko [aut, cph],
+  Bernhard Spangl [ctb] (contributed smoothed grid values of the Lagrange
+    multipliers),
+  Sascha Desmettre [ctb] (contributed smoothed grid values of the
+    Lagrange multipliers),
+  Eugen Massini [ctb] (contributed an interactive smoothing routine for
+    smoothing the Lagrange multipliers and smoothed grid values of the
+    Lagrange multipliers),
+  Daria Pupashenko [ctb] (contributed MDE-estimation for GEV distribution
+    in the framework of her PhD thesis 2011--14),
+  Gerald Kroisandt [ctb] (contributed testing routines),
+  Matthias Kohl [aut, cph] (<https://orcid.org/0000-0001-9514-8910>),
+  Peter Ruckdeschel [cre, aut, cph]
+    (<https://orcid.org/0000-0001-7815-4809>)
+Maintainer: Peter Ruckdeschel <peter.ruckdeschel@uni-oldenburg.de>
+Repository: CRAN
+Date/Publication: 2024-02-09 00:30:27 UTC

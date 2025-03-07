@@ -1,0 +1,33 @@
+Package: microCRAN
+Type: Package
+Title: Hosting an Independent CRAN Repository
+Version: 0.9.0
+Authors@R: c(
+    person("Stefan McKinnon", "Edwards", role=c("aut", "cre", "cph"), 
+      email="sme@iysik.com", comment = c(ORCID = "0000-0002-4628-8148")),
+    person("Kamstrup A/S", role = c("cph"))
+    )
+Description: Stand-alone HTTP capable R-package repository,
+    that fully supports R's install.packages() and available.packages().
+    It also contains API endpoints for end-users to add/update packages.
+    This package can supplement 'miniCRAN', which has functions for maintaining
+    a local (partial) copy of 'CRAN'.
+    Current version is bare-minimum without any access-control or much security.
+License: GPL-3
+Depends: R (>= 4.0.0)
+Imports: rlang (>= 1.1.0), plumber (>= 1.2.0), assertthat (>= 0.2.1),
+        mime, xtable
+Suggests: miniCRAN, testthat (>= 3.0.0), covr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Collate: 'handlers-static.R' 'miniCRAN.R' 'packages.R' 'handlers-.R'
+        'api.R' 'microCRAN-package.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-02 13:05:42 UTC; SMHE
+Author: Stefan McKinnon Edwards [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4628-8148>),
+  Kamstrup A/S [cph]
+Maintainer: Stefan McKinnon Edwards <sme@iysik.com>
+Repository: CRAN
+Date/Publication: 2023-11-02 20:20:02 UTC

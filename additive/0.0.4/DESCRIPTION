@@ -1,0 +1,37 @@
+Package: additive
+Type: Package
+Version: 0.0.4
+Title: Bindings for Additive TidyModels
+Authors@R: 
+    c(person(given = "Hamada S.",
+             family = "Badr",
+             email = "badr@jhu.edu",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-9808-2344")))
+Description: Fit Generalized Additive Models (GAM) using 'mgcv' with 'parsnip'/'tidymodels'
+    via 'additive' <doi:10.5281/zenodo.5884867>. 'tidymodels' is a collection of
+    packages for machine learning; see Kuhn and Wickham (2020) <https://www.tidymodels.org>).
+    The technical details of 'mgcv' are described in Wood (2017)
+    <doi:10.1201/9781315370279>.
+License: MIT + file LICENSE
+URL: https://hsbadr.github.io/additive/,
+        https://github.com/hsbadr/additive
+BugReports: https://github.com/hsbadr/additive/issues
+Depends: mgcv (>= 1.8-38), parsnip (>= 0.1.7), R (>= 3.6.0)
+Imports: dplyr, purrr, rlang, stats, tibble, utils
+Suggests: covr, devtools, knitr, recipes, rmarkdown, roxygen2,
+        spelling, testthat, workflows
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Collate: 'additive_init.R' 'additive_load.R' 'additive_make.R'
+        'additive.R'
+LazyLoad: yes
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-01-20 18:48:16 UTC; hbadr1
+Author: Hamada S. Badr [aut, cre] (<https://orcid.org/0000-0002-9808-2344>)
+Maintainer: Hamada S. Badr <badr@jhu.edu>
+Repository: CRAN
+Date/Publication: 2022-01-20 22:32:53 UTC

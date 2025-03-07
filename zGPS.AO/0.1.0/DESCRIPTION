@@ -1,0 +1,36 @@
+Package: zGPS.AO
+Type: Package
+Title: Zero Inflated Gamma Poisson Shrinker with Adverse Event Ontology
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Bangyao", family = "Zhao", role = c("aut", "cre"), email = "byzhao@umich.edu"),
+    person(given = "Lili", family = "Zhao", role = c("aut"), email = "zhaolili@med.umich.edu"),
+    person(given = "Michael", family = "Kleinsasser", role = c("aut"), email = "mkleinsa@umich.edu"))
+Maintainer: Bangyao Zhao <byzhao@umich.edu>
+Description: The method zGPS.AO (Zero Inflated Gamma Poisson Shrinker with AE 
+    (Adverse Event) ontology) is based on the zero-inflated negative binomial 
+    distribution. 
+    It estimates the association between a specific vaccine and an adverse event 
+    group, as well as associations between that vaccine and individual adverse 
+    events within the adverse event group. This model handles the adverse event 
+    count data with excess zeros and over-dispersion, and it allows borrowing 
+    information from adverse event data in the same group. Details can be found 
+    in  "Data Mining in Large Frequency Tables With Ontology, with an Application 
+    to the Vaccine Adverse Event Reporting System." 
+    Bangyao Zhao, Lili Zhao (2020) <arXiv:2010.12471>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, knitr, rmarkdown
+Imports: dplyr, pscl (>= 1.5.5), MASS, doRNG, foreach, doParallel,
+        questionr, ggplot2, plotly, viridis, hrbrthemes, parallel
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-10-30 18:31:55 UTC; mkleinsa
+Author: Bangyao Zhao [aut, cre],
+  Lili Zhao [aut],
+  Michael Kleinsasser [aut]
+Repository: CRAN
+Date/Publication: 2020-11-06 16:10:02 UTC

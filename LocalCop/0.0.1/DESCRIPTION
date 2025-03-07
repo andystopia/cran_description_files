@@ -1,0 +1,36 @@
+Package: LocalCop
+Title: Local Likelihood Inference for Conditional Copula Models
+Version: 0.0.1
+Date: 2024-03-18
+Authors@R: 
+    c(person(given = "Elif",
+             family = "Acar",
+             role = "aut",
+             email = "elif.acar@umanitoba.ca"),
+      person(given = "Martin",
+             family = "Lysy",
+	     role = c("aut", "cre"),
+	     email = "mlysy@uwaterloo.ca"),
+      person(given = "Alan",
+             family = "Kuchinsky",
+	     role = "ctb"))
+Description: Implements a local likelihood estimator for the dependence parameter in bivariate conditional copula models.  Copula family and local likelihood bandwidth parameters are selected by leave-one-out cross-validation.  The models are implemented in 'TMB', meaning that the local score function is efficiently calculated via automated differentiation (AD), such that quasi-Newton algorithms may be used for parameter estimation.
+URL: https://github.com/mlysy/LocalCop
+BugReports: https://github.com/mlysy/LocalCop/issues
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+LinkingTo: TMB, RcppEigen
+Imports: TMB (>= 1.7.20), VineCopula
+RoxygenNote: 7.3.1
+Suggests: testthat, parallel, knitr, rmarkdown, bookdown, kableExtra,
+        dplyr, readr, tidyr, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-03-19 20:54:14 UTC; mlysy
+Author: Elif Acar [aut],
+  Martin Lysy [aut, cre],
+  Alan Kuchinsky [ctb]
+Maintainer: Martin Lysy <mlysy@uwaterloo.ca>
+Repository: CRAN
+Date/Publication: 2024-03-21 14:50:06 UTC

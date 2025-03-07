@@ -1,0 +1,29 @@
+Package: bigrquerystorage
+Type: Package
+Title: An Interface to Google's 'BigQuery Storage' API
+Version: 1.1.0
+Authors@R: c(
+  person("Bruno", "Tremblay", role = c("aut", "cre"), email = "openr@neoxone.com"),
+  person(family = "Google LLC", role = c("cph", "fnd")))
+Maintainer: Bruno Tremblay <openr@neoxone.com>
+Description: Easily talk to Google's 'BigQuery Storage' API from R
+    (<https://cloud.google.com/bigquery/docs/reference/storage/rpc>).
+License: Apache License (>= 2)
+Imports: arrow, methods, rlang, DBI, bigrquery, assertthat, Rcpp,
+        lifecycle, bit64, tibble
+Suggests: testthat, hms, wk, tzdb, base64enc
+LinkingTo: Rcpp
+Encoding: UTF-8
+URL: https://github.com/meztez/bigrquerystorage
+BugReports: https://github.com/meztez/bigrquerystorage/issues
+SystemRequirements: grpc/protobuf headers and compilers. For example
+        libprotobuf-dev libgrpc++-dev protobuf-compiler-grpc (Debian)
+        or protobuf-devel grpc-devel grpc-plugins (Fedora/RHEL)
+RoxygenNote: 7.3.1
+Biarch: TRUE
+NeedsCompilation: yes
+Packaged: 2024-04-03 01:10:31 UTC; bruno
+Author: Bruno Tremblay [aut, cre],
+  Google LLC [cph, fnd]
+Repository: CRAN
+Date/Publication: 2024-04-03 04:22:59 UTC

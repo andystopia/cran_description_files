@@ -1,0 +1,13 @@
+Package: PhyActBedRest
+Type: Package
+Title: Marks periods of sleep in Actigraph accelerometer data
+Version: 1.0
+Date: 2014-02-11
+Author: J. Dustin Tracy, Zhiyi Xu, Leena Choi, Sari Acra, Kong Y. Chen, Maciej S. Buchowski
+Maintainer: J. Dustin Tracy <jtracy2@student.gsu.edu>
+Description: Applies an automated algorithm to mark Actigraph accelerometer data as either bedrest or active.  There are separate functions for waist and wrist data.  Its input is a dataframe with a timestamp column and one of counts.  The output is the same dataframe with an additional column, bedrest.  Bedrest will have "a" active or "br" for each line.  Options also allow for "n" nap which only differ than "s" in being for a shorter (specifiable) time period.  Designed to be used after wearmarking function in Physical Activity package.
+License: GPL (>= 3)
+Packaged: 2014-08-17 23:55:44 UTC; Dustin
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-08-18 07:26:32

@@ -1,0 +1,32 @@
+Package: Rgff
+Title: R Utilities for Gff Files
+Version: 0.1.0
+Authors@R: c(
+    person("Juan Antonio", "Garcia-Martin", email  = "ja.garcia@cnb.csic.es", role = c("cre","aut"),
+           comment = c(ORCID = "0000-0003-0993-4064")),
+    person("Juan Carlos", "Oliveros",  email  = "oliveros@cnb.csic.es", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-4520-0853")),
+    person("Rafael", "Torres-Perez", email  = "rafael.torres@cnb.csic.es", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-3696-4720")))
+Author: Juan Antonio Garcia-Martin [cre, aut]
+    (<https://orcid.org/0000-0003-0993-4064>),
+  Juan Carlos Oliveros [aut, ctb]
+    (<https://orcid.org/0000-0002-4520-0853>),
+  Rafael Torres-Perez [aut, ctb]
+    (<https://orcid.org/0000-0002-3696-4720>)
+Maintainer: Juan Antonio Garcia-Martin <ja.garcia@cnb.csic.es>
+Description: R utilities for gff files, either general feature format (GFF3) or gene transfer format (GTF) formatted files. This package includes functions for producing summary stats, check for consistency and sorting errors, conversion from GTF to GFF3 format, file sorting, visualization and plotting of feature hierarchy, and exporting user defined feature subsets to SAF format. This tool was developed by the BioinfoGP core facility at CNB-CSIC. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: rlang (>= 0.4.12), stringi (>= 1.7.6), data.tree (>= 1.0.0),
+        tidyr (>= 1.1.4), tibble (>= 3.1.6), dplyr (>= 1.0.7), RJSONIO
+        (>= 1.3-1.6), magrittr (>= 2.0.1)
+Suggests: DiagrammeR (>= 1.0.6.1), DiagrammeRsvg (>= 0.1), rsvg (>=
+        2.2.0), rmarkdown (>= 2.11), knitr (>= 1.36), GenomicRanges (>=
+        1.46.1), rtracklayer (>= 1.54.0), S4Vectors (>= 0.32.3)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-06-22 16:19:59 UTC; tono
+Repository: CRAN
+Date/Publication: 2022-06-23 07:20:05 UTC

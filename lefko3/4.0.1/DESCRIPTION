@@ -1,0 +1,36 @@
+Package: lefko3
+Type: Package
+Title: Historical and Ahistorical Population Projection Matrix Analysis
+Version: 4.0.1
+Date: 2021-11-15
+Authors@R: c(person(given = "Richard P.", family = "Shefferson",
+             email = "cdorm@g.ecc.u-tokyo.ac.jp", role = c("aut", "cre"),
+             comment=c(ORCID="0000-0002-5234-3131")),
+             person(given = "Johan", family = "Ehrlen", role = "aut",
+             comment=c(ORCID="0000-0001-8539-8967")))
+Description: Creates matrix population models for use in population ecological
+             analyses. Specializes on the construction of historical matrices,
+             which are 2d matrices comprising 3 consecutive times of demographic
+             information. Estimates both raw and function-based forms of
+             historical and standard ahistorical matrices. It also estimates
+             function-based age-by-stage matrices. Methodology based on Ehrlen
+             (2000) <doi:10.1890/0012-9658(2000)081[1675:TDOPPD]2.0.CO;2> and
+             deVries and Caswell (2018) <doi:10.1007/s12080-017-0353-0>.
+Encoding: UTF-8
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.5), glmmTMB, lme4, MASS, MuMIn, pscl, SparseM,
+        stats, stringr, VGAM
+LinkingTo: Rcpp, RcppArmadillo
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: knitr, popbio, rmarkdown,
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-11-16 01:58:22 UTC; richshefferson
+Author: Richard P. Shefferson [aut, cre]
+    (<https://orcid.org/0000-0002-5234-3131>),
+  Johan Ehrlen [aut] (<https://orcid.org/0000-0001-8539-8967>)
+Maintainer: Richard P. Shefferson <cdorm@g.ecc.u-tokyo.ac.jp>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2021-11-16 07:50:02 UTC

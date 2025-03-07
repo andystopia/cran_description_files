@@ -1,0 +1,54 @@
+Package: hyd1d
+Type: Package
+Version: 0.5.1
+Date: 2023-11-17
+Title: 1d Water Level Interpolation along the Rivers Elbe and Rhine
+Authors@R: c(person("Arnd", "Weber", email = "arnd.weber@bafg.de",
+                    role = c("aut", "cre"), 
+                    comment = c(ORCID = "0000-0002-5973-2770")),
+             person("Marcus", "Hatz", email="hatz@bafg.de",
+                    role = c("aut")),
+             person("Wolfgang", "Stürmer", role = c("ctb")),
+             person("Wilfried", "Wiechmann", email="wiechmann@bafg.de",
+                    role = c("ctb")),
+             person("Benjamin", "Eberhardt", email="eberhardt@bafg.de",
+                    role = c("ctb")))
+Description: An S4 class and several functions which utilize internally stored
+    datasets and gauging data enable 1d water level interpolation. The S4 class
+    (WaterLevelDataFrame) structures the computation and visualisation
+    of 1d water level information along the German federal waterways Elbe and
+    Rhine. 'hyd1d' delivers 1d water level data - extracted from the 'FLYS'
+    database - and validated gauging data - extracted from the hydrological
+    database 'HyDaBa' - package-internally. For computations near real time
+    gauging data are queried externally from the 'PEGELONLINE REST API' 
+    <https://pegelonline.wsv.de/webservice/dokuRestapi>.
+Depends: R (>= 4.0.0)
+Imports: methods, utils, Rdpack, httr2, curl
+Suggests: DBI (>= 0.4-9), RPostgreSQL (>= 0.6-1), testthat, knitr,
+        rmarkdown, stringr, devtools, pkgdown, roxygen2, revealjs,
+        shiny, shiny.i18n, shinyTime, lubridate, usethis, yaml, desc
+RdMacros: Rdpack
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'Class-WaterLevelDataFrame.R' 'WaterLevelDataFrame-methods.R'
+        'data.R' 'getGaugingDataW.R' 'getPegelonlineW.R'
+        'hyd1d-internal.R' 'hyd1d.R' 'plotShiny.R'
+        'updateGaugingData.R' 'waterLevel.R' 'waterLevelFlood1.R'
+        'waterLevelFlood2.R' 'waterLevelFlys3.R'
+        'waterLevelFlys3InterpolateX.R' 'waterLevelFlys3InterpolateY.R'
+        'waterLevelFlys3Seq.R' 'waterLevelPegelonline.R' 'zzz.R'
+VignetteBuilder: knitr
+BugReports: https://github.com/bafg-bund/hyd1d/issues/
+URL: https://hyd1d.bafg.de, https://github.com/bafg-bund/hyd1d
+NeedsCompilation: no
+Packaged: 2023-11-19 05:07:32 UTC; WeberA
+Author: Arnd Weber [aut, cre] (<https://orcid.org/0000-0002-5973-2770>),
+  Marcus Hatz [aut],
+  Wolfgang Stürmer [ctb],
+  Wilfried Wiechmann [ctb],
+  Benjamin Eberhardt [ctb]
+Maintainer: Arnd Weber <arnd.weber@bafg.de>
+Repository: CRAN
+Date/Publication: 2023-11-20 07:50:02 UTC

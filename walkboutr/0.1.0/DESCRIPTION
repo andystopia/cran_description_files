@@ -1,0 +1,31 @@
+Package: walkboutr
+Title: Generate Walk Bouts from GPS and Accelerometry Data
+Version: 0.1.0
+Authors@R: 
+    c(person("Lauren Blair", "Wilner", 
+    email = "wilnerl@uw.edu", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-4439-3734")),
+    person("Stephen J", "Mooney",
+    email = "sjm2186@uw.edu",
+    role = c("aut")))
+Description: Process GPS and accelerometry data to generate walk bouts. A walk bout is a period of activity with accelerometer movement matching the patterns of walking with corresponding GPS measurements that confirm travel. The inputs of the 'walkboutr' package are individual-level accelerometry and GPS data. The outputs of the model are walk bouts with corresponding times, duration, and summary statistics on the sample population, which collapse all personally identifying information. These bouts can be used to measure walking both as an outcome of a change to the built environment or as a predictor of health outcomes such as a cardioprotective behavior. Kang B, Moudon AV, Hurvitz PM, Saelens BE (2017) <doi:10.1016/j.trd.2017.09.026>.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/rwalkbout/walkboutr,
+        https://rwalkbout.github.io/walkboutr/
+BugReports: https://github.com/rwalkbout/walkboutr/issues
+Config/testthat/edition: 3
+Imports: data.table, dplyr, geosphere, ggforce, ggplot2, lubridate,
+        lwgeom, magrittr, measurements, sf, sp, stats, tidyr
+Suggests: knitr, rmarkdown, testthat, tinytest, utils
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-06-07 14:06:47 UTC; laurenwilner
+Author: Lauren Blair Wilner [aut, cre, cph]
+    (<https://orcid.org/0000-0003-4439-3734>),
+  Stephen J Mooney [aut]
+Maintainer: Lauren Blair Wilner <wilnerl@uw.edu>
+Repository: CRAN
+Date/Publication: 2023-06-08 17:30:02 UTC

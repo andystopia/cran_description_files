@@ -1,0 +1,35 @@
+Package: concorR
+Type: Package
+Title: CONCOR and Supplemental Functions
+Version: 0.2.0
+Authors@R: c(
+    person("Tyme", "Suda", email = "suda.4@wright.edu", role = "aut"),
+    person("Adrienne", "Traxler", email = "adrienne.traxler@wright.edu", 
+    role = "cre", comment = c(ORCID = "0000-0003-2725-0686")), 
+    person("Carter", "Butts", email = "buttsc@uci.edu", role = "ctb", 
+    comment = "Author of sna::plot.blockmodel(), adapted for plot_blk()"))
+Description: Contains the CONCOR (CONvergence of iterated CORrelations) 
+    algorithm and a series of supplemental functions for easy running, 
+    plotting, and blockmodeling. The CONCOR algorithm is used on social network
+    data to identify network positions based off a definition of structural 
+    equivalence; see Breiger, Boorman, and Arabie (1975) 
+    <doi:10.1016/0022-2496(75)90028-0> and Wasserman and Faust's book Social 
+    Network Analysis: Methods and Applications (1994). This version allows 
+    multiple relationships for the same set of nodes and uses both incoming and
+    outgoing ties to find positions.
+Imports: igraph, sna, stats, graphics
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ATraxLab/concorR
+BugReports: https://github.com/ATraxLab/concorR/issues
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-05-28 19:15:20 UTC; w039alt
+Author: Tyme Suda [aut],
+  Adrienne Traxler [cre] (<https://orcid.org/0000-0003-2725-0686>),
+  Carter Butts [ctb] (Author of sna::plot.blockmodel(), adapted for
+    plot_blk())
+Maintainer: Adrienne Traxler <adrienne.traxler@wright.edu>
+Repository: CRAN
+Date/Publication: 2020-06-03 15:50:06 UTC

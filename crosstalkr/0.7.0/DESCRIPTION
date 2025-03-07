@@ -1,0 +1,32 @@
+Package: crosstalkr
+Title: Identification of Functionally Relevant Sub-Graphs
+Version: 0.7.0
+Authors@R: 
+    person(given = "Davis",
+           family = "Weaver",
+           role = c("aut", "cre"),
+           email = "davis.weaver@case.edu", 
+           comment = c(orcid = "0000-0003-3086-497X"))
+Description: Provides a general framework for the identification of nodes that 
+             are functionally related to a set of seeds in graph structured data. 
+             In addition to being optimized for use with generic graphs, 
+             We also provides support to analyze protein-protein 
+             interactions networks from online repositories. Our methods are similar to 
+             those described in Nibbe et.al (2010). <doi:10.1371/journal.pcbi.1000639>.
+License: GPL (>= 3)
+biocViews:
+Imports: curl (>= 4.2), rlang, stats, magrittr, withr, readr, dplyr,
+        stringr, tidyr, tibble, igraph, Matrix, ensembldb, foreach,
+        doParallel, ggplot2, EnsDb.Hsapiens.v79
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: tidygraph, ggraph, testthat (>= 2.0.0), knitr, rmarkdown,
+        covr
+Config/testthat/edition: 2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-08-13 15:33:09 UTC; dtw43
+Author: Davis Weaver [aut, cre] (0000-0003-3086-497X)
+Maintainer: Davis Weaver <davis.weaver@case.edu>
+Repository: CRAN
+Date/Publication: 2021-08-16 08:30:10 UTC

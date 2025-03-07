@@ -1,0 +1,50 @@
+Package: rater
+Title: Statistical Models of Repeated Categorical Rating Data
+Version: 1.3.0
+Authors@R: 
+    c(person(given = "Jeffrey",
+             family = "Pullin",
+             role = c("aut", "cre", "cph"),
+             email = "jeffrey.pullin@gmail.com",
+             comment = c(ORCID = "0000-0003-3651-5471")),
+      person(given = "Damjan",
+             family = "Vukcevic",
+             role = "aut",
+             comment = c(ORCID = "0000-0001-7780-9586")),
+      person(given = "Lars Mølgaard",
+             family = "Saxhaug",
+             role = "ctb",
+             comment = c(ORCID = "0000-0001-5084-1578")))
+Description: Fit statistical models based on the Dawid-Skene model - Dawid
+    and Skene (1979) <doi:10.2307/2346806> - to repeated categorical
+    rating data.  Full Bayesian inference for these models is supported
+    through the Stan modelling language. 'rater' also allows the user to
+    extract and plot key parameters of these models.
+License: GPL-2
+URL: https://jeffreypullin.github.io/rater/,
+        https://github.com/jeffreypullin/rater
+BugReports: https://github.com/jeffreypullin/rater/issues
+Depends: R (>= 3.4.0)
+Imports: ggplot2 (>= 2.2.1), loo (> 2.0.0), methods, Rcpp (>= 0.12.0),
+        RcppParallel (>= 5.0.1), rlang (> 0.2.0), rstan (>= 2.19.2),
+        rstantools (>= 2.0.0)
+Suggests: coda, covr, knitr, rmarkdown, testthat
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+VignetteBuilder: knitr
+Biarch: true
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2023-03-11 06:49:42 UTC; jeffreypullin
+Author: Jeffrey Pullin [aut, cre, cph]
+    (<https://orcid.org/0000-0003-3651-5471>),
+  Damjan Vukcevic [aut] (<https://orcid.org/0000-0001-7780-9586>),
+  Lars Mølgaard Saxhaug [ctb] (<https://orcid.org/0000-0001-5084-1578>)
+Maintainer: Jeffrey Pullin <jeffrey.pullin@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-11 07:30:02 UTC

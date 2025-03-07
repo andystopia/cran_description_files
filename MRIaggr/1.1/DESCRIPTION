@@ -1,0 +1,20 @@
+Package: MRIaggr
+Type: Package
+Title: Management, Display, and Processing of Medical Imaging Data
+Version: 1.1
+Date: 2015-04-16
+Author: Brice Ozenne
+Maintainer: Brice Ozenne <brice.ozenne@orange.fr>
+Description: Provide a compact storage for medical imaging data with access and display possibilities. Basic tools for processing brain imaging data are proposed like extraction of brain voxels, morphological image segmentation, and filtering / normalization of contrast parameters. Specific tools are also provided for blood perfusion imaging to calculate hypoperfusion and reperfusion volumes.
+License: GPL-3
+Depends: R (>= 2.10), Rcpp
+Imports: methods, stats4, spam, Matrix
+Suggests: oro.dicom, oro.nifti, mritc, ROCR, RANN, rgl, fields
+LazyLoad: yes
+LinkingTo: Rcpp, RcppArmadillo
+Collate: 'Generic_functions.R' 'RcppExports.R' 'Associated_functions.R'
+        'GR_functions.R' 'Class_Carto3D.R' 'Class_MRIaggr.R'
+Packaged: 2015-04-22 13:30:07 UTC; ozennebr
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-04-22 17:00:13

@@ -1,0 +1,31 @@
+Package: genridge
+Type: Package
+Title: Generalized Ridge Trace Plots for Ridge Regression
+Version: 0.7.0
+Date: 2023-07-31
+Authors@R: c(person("Michael", "Friendly", , "friendly@yorku.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3237-0941"))
+           )
+Maintainer: Michael Friendly <friendly@yorku.ca>
+Depends: R (>= 2.11.1), car
+Imports: rgl
+Suggests: MASS, bestglm, vcdExtra
+Description: The genridge package introduces generalizations of the standard univariate
+  ridge trace plot used in ridge regression and related methods.  These graphical methods
+  show both bias (actually, shrinkage) and precision, by plotting the covariance ellipsoids of the estimated
+  coefficients, rather than just the estimates themselves.  2D and 3D plotting methods are provided,
+  both in the space of the predictor variables and in the transformed space of the PCA/SVD of the
+  predictors.  
+License: GPL (>= 2)
+LazyLoad: yes
+LazyData: yes
+Language: en-US
+BugReports: https://github.com/friendly/genridge/issues
+URL: https://friendly.github.io/genridge/
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-08-08 15:36:14 UTC; friendly
+Author: Michael Friendly [aut, cre] (<https://orcid.org/0000-0002-3237-0941>)
+Repository: CRAN
+Date/Publication: 2023-08-08 16:10:06 UTC

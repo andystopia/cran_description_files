@@ -1,0 +1,37 @@
+Package: IBMPopSim
+Type: Package
+Title: Individual Based Model Population Simulation
+Version: 0.3.0
+Date: 2020-10-09
+Authors@R: c(
+    person('Daphné', 'Giorgi', role = c('aut', 'cre'), 
+      email = 'daphne.giorgi@sorbonne-universite.fr'),
+    person('Sarah', 'Kaakai', role = 'aut',
+      email = 'sarah.kaakai@univ-lemans.fr'),
+    person('Vincent', 'Lemaire', role = 'aut',
+      email = 'vincent.lemaire@sorbonne-universite.fr')
+    )
+Maintainer: Daphné Giorgi <daphne.giorgi@sorbonne-universite.fr>
+Description: Simulation of the random evolution of structured population dynamics, called stochastic Individual Based Models (IBMs) (see e.g. Ferrière and Tran (2009) <doi:10.1051/proc/2009033>, Bansaye and Méléard (2015) <doi:10.1007/978-3-319-21711-6>, Boumezoued (2016)).
+    The package allows users to simulate the random evolution of a population in which individuals are characterised by their date of birth, a set of attributes, and their potential date of death.
+URL: https://github.com/DaphneGiorgi/IBMPopSim,
+        https://DaphneGiorgi.github.io/IBMPopSim/
+BugReports: https://github.com/DaphneGiorgi/IBMPopSim/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 0.12), checkmate, stats, utils, readr, rlang, tidyr,
+        dplyr (>= 0.8.0), reshape, purrr, ggplot2
+Suggests: RcppArmadillo, knitr, rmarkdown, bookdown, ggfortify, magick,
+        colorspace, gridExtra
+LazyData: true
+SystemRequirements: C++11
+NeedsCompilation: no
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Packaged: 2020-10-09 10:56:02 UTC; giorgi
+Author: Daphné Giorgi [aut, cre],
+  Sarah Kaakai [aut],
+  Vincent Lemaire [aut]
+Repository: CRAN
+Date/Publication: 2020-10-17 12:00:02 UTC

@@ -1,0 +1,26 @@
+Package: alien
+Title: Estimate Invasive and Alien Species (IAS) Introduction Rates
+Version: 1.0.1
+Authors@R: 
+    person("Yehezkel", "Buba", , "hezibuba@mail.tau.ac.il", role = c("aut", "cre","cph"),
+           comment = c(ORCID = "0000-0002-1003-8809"))
+Description: Easily estimate the introduction rates of alien species given first records data.
+    It specializes in addressing the role of sampling on the pattern of discoveries, 
+    thus providing better estimates than using Generalized Linear Models which assume perfect 
+    immediate detection of newly introduced species.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, dplyr, ggplot2, HelpersMG, rlang, stats, tidyr
+Depends: R (>= 3.4.0)
+LazyData: true
+Suggests: BH, knitr, purrr, Rcpp, RcppEigen, RcppParallel, rmarkdown,
+        rstan, testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-04-11 10:45:40 UTC; eze36
+Author: Yehezkel Buba [aut, cre, cph] (<https://orcid.org/0000-0002-1003-8809>)
+Maintainer: Yehezkel Buba <hezibuba@mail.tau.ac.il>
+Repository: CRAN
+Date/Publication: 2024-04-11 11:50:02 UTC

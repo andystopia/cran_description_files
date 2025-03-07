@@ -1,0 +1,35 @@
+Package: stokes
+Type: Package
+Title: The Exterior Calculus
+Version: 1.2-0
+Depends: R (>= 3.5.0)
+Suggests: knitr, Deriv, testthat, markdown, rmarkdown, emulator,
+        magrittr
+VignetteBuilder: knitr
+Imports: permutations (>= 1.1-2), partitions, methods, mathjaxr,
+        disordR (>= 0.9-7), spray (>= 1.0-24)
+Authors@R: person(
+	   given=c("Robin", "K. S."),
+	   family="Hankin",
+	   role = c("aut","cre"),
+	   email="hankin.robin@gmail.com",
+	   comment = c(ORCID = "0000-0001-5982-0415"))
+Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
+Description: Provides functionality for working with tensors, alternating
+           forms, wedge products, Stokes's theorem, and related concepts
+	   from the exterior calculus.   Uses 'disordR' discipline
+	   (Hankin, 2022, <doi:10.48550/ARXIV.2210.03856>).  The
+	   canonical reference would be M. Spivak
+	   (1965, ISBN:0-8053-9021-9) "Calculus on Manifolds".  To cite
+	   the package in publications please use Hankin (2022)
+           <doi:10.48550/ARXIV.2210.17008>.
+License: GPL-2
+LazyData: yes
+URL: https://github.com/RobinHankin/stokes
+BugReports: https://github.com/RobinHankin/stokes/issues
+RdMacros: mathjaxr
+NeedsCompilation: no
+Packaged: 2023-08-18 22:29:40 UTC; rhankin
+Author: Robin K. S. Hankin [aut, cre] (<https://orcid.org/0000-0001-5982-0415>)
+Repository: CRAN
+Date/Publication: 2023-08-19 00:00:02 UTC

@@ -1,0 +1,25 @@
+Package: RXshrink
+Title: Maximum Likelihood Shrinkage using Generalized Ridge or Least
+        Angle Regression Methods
+Version: 1.6
+Date: 2021-01-10
+Author: Bob Obenchain 
+Maintainer: Bob Obenchain <wizbob@att.net>
+Depends: R (>= 3.5.0), lars, ellipse
+Description: Functions are provided to calculate and display ridge TRACE diagnostics for a 
+  wide variety of alternative shrinkage Paths. While all methods focus on Maximum Likelihood 
+  estimation of unknown true effects under Normal-distribution theory, some estimates are 
+  modified to be Unbiased or to have "Correct Range" when estimating either [1] the noncentrality 
+  of the F-ratio for testing that true Beta coefficients are Zeros or [2] the "relative" MSE 
+  Risk (i.e. MSE divided by true sigma-square, where the "relative" variance of OLS is known.) 
+  The unr.ridge() function implements the "Unrestricted Path" introduced in Obenchain (2020) 
+  <arXiv:2005.14291>. This "new" p-parameter Shrinkage-Path is more efficient than the Paths 
+  used by qm.ridge(), aug.lars() and uc.lars(). Functions unr.aug() and unr.biv() augment the 
+  calculations made by unr.ridge() to provide plots of the bivariate confidence ellipses 
+  corresponding to any of the p*(p-1) possible pairs of shrunken regression coefficients. 
+License: GPL-2
+URL: https://www.R-project.org , http://localcontrolstatistics.org
+NeedsCompilation: no
+Packaged: 2021-01-10 17:59:08 UTC; bobo
+Repository: CRAN
+Date/Publication: 2021-01-10 23:30:11 UTC

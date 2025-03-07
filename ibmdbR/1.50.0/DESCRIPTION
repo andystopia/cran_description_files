@@ -1,0 +1,32 @@
+Package: ibmdbR
+Version: 1.50.0
+Title: IBM in-Database Analytics for R
+Author: Toni Bollinger [aut, cre],
+  Alexander Eckert [aut],
+  Michael Wurst [aut],
+  Craig Blaha [ctb] (documentation),
+  IBM Corporation [cph]
+Authors@R: c(
+    person("Toni", "Bollinger", role = c("aut", "cre"), email = "db2-analytics@de.ibm.com"),
+    person("Alexander", "Eckert", role = c("aut")),
+    person("Michael", "Wurst", role = c("aut")),
+    person("Craig", "Blaha", role = c("ctb"), comment = "documentation"),
+    person("IBM Corporation", role = c("cph"), email = "inza@de.ibm.com")
+    )
+Maintainer: Toni Bollinger <db2-analytics@de.ibm.com>
+Depends: R (>= 2.15.1), methods, RODBC, Matrix, arules
+Imports: MASS, rpart, rpart.plot, ggplot2
+Suggests: SparkR
+Description: 
+        Functionality required to efficiently use R with IBM(R) Db2(R) 
+        Warehouse offerings (formerly IBM dashDB(R)) and IBM Db2 for z/OS(R) in 
+        conjunction with IBM Db2 Analytics Accelerator for z/OS. 
+        Many basic and complex R operations are pushed down into the database, 
+        which removes the main memory boundary of R and allows to make full 
+        use of parallel processing in the underlying database.
+License: GPL-3
+LazyLoad: Yes
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2018-05-14 08:35:39 UTC; toni
+Date/Publication: 2018-06-03 15:17:31 UTC

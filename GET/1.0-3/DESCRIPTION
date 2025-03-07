@@ -1,0 +1,71 @@
+Package: GET
+Version: 1.0-3
+Date: 2024-08-13
+Title: Global Envelopes
+Encoding: UTF-8
+Authors@R: c(
+    person(given = 'Mari', family = 'Myllymäki', role = c('aut', 'cre'),
+    email = 'mari.myllymaki@luke.fi'),
+    person(given = 'Tomáš', family = 'Mrkvička', role = 'aut',
+    email = 'mrkvicka.toma@gmail.com'),
+    person(given = 'Mikko', family = 'Kuronen', role = 'ctb',
+    email = 'mikko.kuronen@luke.fi'),
+    person(given = 'Jiří', family = 'Dvořák', role = 'ctb',
+    email = 'dvorak@karlin.mff.cuni.cz'),
+    person(given = 'Pavel', family = 'Grabarnik', role = 'ctb',
+    email = 'gpya@rambler.ru'),
+    person(given = 'Ute', family = 'Hahn', role = 'ctb',
+    email = 'ute@math.au.dk'),
+    person(given = 'Michael', family = 'Rost', role = 'ctb',
+    email = 'rost@ef.jcu.cz'),
+    person(given = 'Henri', family = 'Seijo', role = 'ctb',
+    email = 'henri.seijo@iki.fi')
+    )
+Maintainer: Mari Myllymäki <mari.myllymaki@luke.fi>
+Imports: cluster, ggplot2, grDevices, grid, gridExtra, parallel, stats,
+        utils, viridisLite
+Suggests: crayon, datasets, geoR, gstat, fda, fda.usc, locfit, mvtnorm,
+        patchwork, quantreg, R.rsp, sp, spatstat.geom,
+        spatstat.explore, spatstat.model, spatstat.linnet, testthat
+Description: Implementation of global envelopes for a set of general d-dimensional vectors T
+    in various applications. A 100(1-alpha)% global envelope is a band bounded by two
+    vectors such that the probability that T falls outside this envelope in any of the d
+    points is equal to alpha. Global means that the probability is controlled simultaneously
+    for all the d elements of the vectors. The global envelopes can be used for graphical
+    Monte Carlo and permutation tests where the test statistic is a multivariate vector or
+    function (e.g. goodness-of-fit testing for point patterns and random sets, functional
+    analysis of variance, functional general linear model, n-sample test of correspondence
+    of distribution functions), for central regions of functional or multivariate data (e.g.
+    outlier detection, functional boxplot) and for global confidence and prediction bands
+    (e.g. confidence band in polynomial regression, Bayesian posterior prediction). See
+    Myllymäki and Mrkvička (2023) <doi:10.48550/arXiv.1911.06583>,
+    Myllymäki et al. (2017) <doi:10.1111/rssb.12172>,
+    Mrkvička and Myllymäki (2023) <doi:10.1007/s11222-023-10275-7>,
+    Mrkvička et al. (2016) <doi:10.1016/j.spasta.2016.04.005>,
+    Mrkvička et al. (2017) <doi:10.1007/s11222-016-9683-9>,
+    Mrkvička et al. (2020) <doi:10.14736/kyb-2020-3-0432>,
+    Mrkvička et al. (2021) <doi:10.1007/s11009-019-09756-y>,
+    Myllymäki et al. (2021) <doi:10.1016/j.spasta.2020.100436>,
+    Mrkvička et al. (2022) <doi:10.1002/sim.9236>,
+    Dai et al. (2022) <doi:10.5772/intechopen.100124>,
+    Dvořák and Mrkvička (2022) <doi:10.1007/s00180-021-01134-y>,
+    Mrkvička et al. (2023) <doi:10.48550/arXiv.2309.04746>, and
+    Konstantinou et al. (2024) <doi: 10.48550/arXiv.2403.01838>.
+License: GPL-3
+RoxygenNote: 7.3.1
+URL: https://github.com/myllym/GET
+BugReports: https://github.com/myllym/GET/issues
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2024-08-19 19:32:46 UTC; 03080687
+Author: Mari Myllymäki [aut, cre],
+  Tomáš Mrkvička [aut],
+  Mikko Kuronen [ctb],
+  Jiří Dvořák [ctb],
+  Pavel Grabarnik [ctb],
+  Ute Hahn [ctb],
+  Michael Rost [ctb],
+  Henri Seijo [ctb]
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2024-08-19 22:50:11 UTC

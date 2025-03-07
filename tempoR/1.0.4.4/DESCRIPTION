@@ -1,0 +1,24 @@
+Package: tempoR
+Title: Characterizing Temporal Dysregulation
+Version: 1.0.4.4
+Authors@R: person("Christopher", "Pietras", email = "christopher.pietras@tufts.edu", role = c("aut", "cre"))
+Description: TEMPO (TEmporal Modeling of Pathway Outliers) is a pathway-based outlier detection approach for finding pathways showing 
+    significant changes in temporal expression patterns across conditions.  Given a gene expression data set where each sample is characterized by 
+    an age or time point as well as a phenotype (e.g. control or disease), and a collection of gene sets or pathways, TEMPO ranks each pathway
+    by a score that characterizes how well a partial least squares regression (PLSR) model can predict age as a function of gene expression in the controls
+    and how poorly that same model performs in the disease. TEMPO v1.0.3 is described in Pietras (2018) <doi:10.1145/3233547.3233559>.
+Depends: R (>= 3.0.2)
+Imports: doParallel (>= 1.0.10), foreach (>= 1.4.3), parallel (>=
+        3.0.2), pls (>= 2.5.0), grDevices, graphics, stats, utils
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-24 18:10:04 UTC; cmpietras
+Author: Christopher Pietras [aut, cre]
+Maintainer: Christopher Pietras <christopher.pietras@tufts.edu>
+Repository: CRAN
+Date/Publication: 2019-05-27 08:30:03 UTC

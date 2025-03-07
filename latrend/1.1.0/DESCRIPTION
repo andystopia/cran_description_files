@@ -1,0 +1,66 @@
+Package: latrend
+Type: Package
+Version: 1.1.0
+Date: 2021-03-05
+Title: A Framework for Clustering Longitudinal Data
+Description: A framework for clustering longitudinal datasets in a standardized way. Provides an interface to existing R packages for clustering longitudinal univariate trajectories, facilitating reproducible and transparent analyses. Additionally, standard tools are provided to support cluster analyses, including repeated estimation, model validation, and model assessment. The interface enables users to compare results between methods, and to implement and evaluate new methods with ease. 
+Maintainer: Niek Den Teuling <niek.den.teuling@philips.com>
+Authors@R: 
+    c(person(given = "Niek",
+             family = "Den Teuling",
+             role = c("aut", "cre"),
+             email = "niek.den.teuling@philips.com",
+             comment = c(ORCID = "https://orcid.org/0000-0003-1026-5080")),
+      person(given = "Steffen",
+             family = "Pauws",
+             role = "ctb",
+             email = "s.c.pauws@uvt.nl"),
+      person(given = "Edwin",
+             family = "van den Heuvel",
+             role = "ctb",
+             email = "e.r.v.d.heuvel@tue.nl"),
+      person(given = "Copyright © 2021 Koninklijke Philips N.V.",
+             role = "cph"))
+URL: https://github.com/philips-software/latrend
+BugReports: https://github.com/philips-software/latrend/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: stats, methods, Rdpack, R.utils, assertthat (>= 0.2.1),
+        foreach, data.table (>= 1.12.0), longitudinalData, magrittr,
+        plyr, ggplot2, matrixStats, stackoverflow (>= 0.3.0),
+        clusterCrit, mclustcomp, scales, caret, lme4, mclust
+Suggests: testthat (>= 3.0.0), roxygen2 (>= 7.1.0), knitr (>= 1.24),
+        rmarkdown (>= 1.18), kml, lcmm, longclust, mixtools, flexmix,
+        fda, funFEM, igraph, crimCV, akmedoids, dtwclust, mixAK, psych,
+        qqplotr
+RoxygenNote: 7.1.1
+RdMacros: Rdpack
+VignetteBuilder: knitr
+Collate: 'assert.R' 'compute.R' 'data.R' 'formula.R' 'generics.R'
+        'latrend.R' 'make.R' 'matrix.R' 'method.R' 'methodMatrix.R'
+        'methodAKMedoids.R' 'methodCrimCV.R' 'methodCustom.R'
+        'methodDtwclust.R' 'plot.R' 'model.R' 'modelCustom.R'
+        'methodFeature.R' 'methodFlexmix.R' 'methodFlexmixGBTM.R'
+        'methodFunFEM.R' 'methodGCKM.R' 'methodKML.R' 'methodLMKM.R'
+        'methodLcmmGMM.R' 'methodLcmmGBTM.R' 'methodLongclust.R'
+        'methodMclustLLPA.R' 'methodMixAK_GLMM.R' 'methodMixTVEM.R'
+        'methodMixtoolsGMM.R' 'methodMixtoolsNPRM.R' 'methodRandom.R'
+        'methodStratify.R' 'methods.R' 'metrics.R' 'model-summary.R'
+        'model-transform.R' 'modelApprox.R' 'modelCrimCV.R'
+        'modelDtwclust.R' 'modelFeature.R' 'modelFlexmix.R'
+        'modelFunFEM.R' 'modelKML.R' 'modelLMKM.R' 'modelLcmmGMM.R'
+        'modelLcmmGBTM.R' 'modelLongclust.R' 'modelMclustLLPA.R'
+        'modelMixAK_GLMM.R' 'modelMixAK_GLMMlist.R' 'modelMixTVEM.R'
+        'modelMixtoolsGMM.R' 'modelMixtoolsRM.R' 'modelPartition.R'
+        'modelStratify.R' 'modelWeightedPartition.R' 'models.R'
+        'random.R' 'verbose.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2021-03-05 15:34:27 UTC; 310083353
+Author: Niek Den Teuling [aut, cre] (<https://orcid.org/0000-0003-1026-5080>),
+  Steffen Pauws [ctb],
+  Edwin van den Heuvel [ctb],
+  Copyright © 2021 Koninklijke Philips N.V. [cph]
+Repository: CRAN
+Date/Publication: 2021-03-05 16:10:02 UTC

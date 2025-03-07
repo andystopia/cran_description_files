@@ -1,0 +1,30 @@
+Package: preprocomb
+Type: Package
+Title: Tools for Preprocessing Combinations
+Version: 0.1.0
+Date: 2015-10-11
+Author: Markus Vattulainen
+Maintainer: Markus Vattulainen <markus.vattulainen@gmail.com>
+Description: Preprocessing is often the most time-consuming phase in knowledge
+    discovery and preprocessing transformations interdependent in unexpected
+    ways. This package helps to make preprocessing faster and more effective. It
+    provides an S4 framework for creating and testing preprocessing combinations
+    for classification, clustering and outlier detection. The framework supports
+    user-defined and domain-specific preprocessors and preprocessing phases.
+    Default preprocessors can be used for low variance removal, missing value
+    imputation, scaling, outlier removal, noise smoothing, feature selection and
+    class imbalance correction.
+License: GPL-2
+Imports: DMwR, randomForest, caret, caretEnsemble, methods,
+        clustertend, e1071, stats, utils
+LazyData: TRUE
+URL: https://github.com/mvattulainen/preprocomb
+BugReports: https://github.com/mvattulainen/preprocomb/issues
+Collate: '00Utils.R' '01DataClass.R' '02PhaseClass.R' '03BaseClass.R'
+        '04GridClass.R' '05PredictionControlClass.R'
+        '06PreProCombClass.R'
+Suggests: kernlab
+NeedsCompilation: no
+Packaged: 2015-10-11 16:21:20 UTC; Markus
+Repository: CRAN
+Date/Publication: 2015-10-11 18:45:27

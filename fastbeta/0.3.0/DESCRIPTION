@@ -1,0 +1,28 @@
+Package: fastbeta
+Version: 0.3.0
+Date: 2024-05-17
+Title: Fast Approximation of Time-Varying Infectious Disease
+        Transmission Rates
+Description: 
+	A fast method for approximating time-varying infectious disease
+	transmission rates from disease incidence time series and other
+	data, based on a discrete time approximation of an SEIR model,
+	as analyzed in Jagan et al. (2020) <doi:10.1371/journal.pcbi.1008124>.
+License: GPL (>= 2)
+URL: https://github.com/davidearn/fastbeta
+BugReports: https://github.com/davidearn/fastbeta/issues
+Authors@R: 
+	c(person("Mikael", "Jagan",
+	         email = "jaganmn@mcmaster.ca",
+	         role = c("aut", "cre"),
+	         comment = c(ORCID = "0000-0002-3542-2938")))
+Depends: R (>= 4.3.0)
+Imports: grDevices, graphics, stats
+Suggests: adaptivetau, deSolve, tools, utils
+BuildResaveData: no
+NeedsCompilation: yes
+Packaged: 2024-05-17 15:37:37 UTC; mikael
+Author: Mikael Jagan [aut, cre] (<https://orcid.org/0000-0002-3542-2938>)
+Maintainer: Mikael Jagan <jaganmn@mcmaster.ca>
+Repository: CRAN
+Date/Publication: 2024-05-18 00:20:02 UTC

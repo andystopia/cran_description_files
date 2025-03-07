@@ -1,0 +1,41 @@
+Package: cotram
+Title: Count Transformation Models
+Version: 0.5-1
+Date: 2024-07-19
+Authors@R: c(
+	person(given = "Sandra", family = "Siegfried", role = c("aut", "cre"), 
+	email = "sandra.siegfried@alumni.uzh.ch",
+	comment = c(ORCID = "0000-0002-7312-1001")),
+	person(given = "Luisa", family = "Barbanti", role = "aut",
+	comment = c(ORCID = "0000-0001-5352-5802")),
+	person(given = "Torsten", family = "Hothorn", role = "aut",
+	email = "Torsten.Hothorn@R-project.org",
+	comment = c(ORCID = "0000-0001-8301-0471")))
+Description: Count transformation models featuring 
+        parameters interpretable as discrete hazard ratios, odds ratios,
+        reverse-time discrete hazard ratios, or transformed expectations. 
+        An appropriate data transformation for a count outcome and
+        regression coefficients are simultaneously estimated by maximising
+        the exact discrete log-likelihood using the computational framework
+        provided in package 'mlt', technical details are given in
+        Siegfried & Hothorn (2020) <DOI:10.1111/2041-210X.13383>. 
+        The package also contains an experimental implementation of 
+        multivariate count transformation models with an application
+        to multi-species distribution models <DOI:10.48550/arXiv.2201.13095>.
+Depends: R (>= 3.5.0), tram (>= 1.0-0), mlt (>= 1.4-7)
+Imports: variables (>= 1.0-2), basefun (>= 1.0-5), alabama, Matrix,
+        methods, survival, utils, qrng
+Suggests: TH.data, knitr, lattice, colorspace, multcomp, mvtnorm,
+        numDeriv
+VignetteBuilder: knitr
+URL: http://ctm.R-forge.R-project.org
+Encoding: UTF-8
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2024-07-19 08:21:09 UTC; siegfried
+Author: Sandra Siegfried [aut, cre] (<https://orcid.org/0000-0002-7312-1001>),
+  Luisa Barbanti [aut] (<https://orcid.org/0000-0001-5352-5802>),
+  Torsten Hothorn [aut] (<https://orcid.org/0000-0001-8301-0471>)
+Maintainer: Sandra Siegfried <sandra.siegfried@alumni.uzh.ch>
+Repository: CRAN
+Date/Publication: 2024-07-19 10:20:03 UTC

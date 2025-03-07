@@ -1,0 +1,43 @@
+Package: BayesCACE
+Type: Package
+Title: Bayesian Model for CACE Analysis
+Version: 1.1
+Date: 2022-1-5
+Authors@R: 
+    c(person(given = "Jinhui",
+             family = "Yang",
+             role = c("aut", "cre"),
+             email = "james.yangjinhui@gmail.com",
+             comment = c(ORCID = "0000-0001-8322-1121")),
+      person(given = "Jincheng",
+             family = "Zhou",
+             role = "aut",
+             comment = c(ORCID = "0000-0003-2641-2495")),
+      person(given = "James",
+             family = "Hodges",
+             role = "ctb"),
+      person(given = "Haitao",
+             family = "Chu",
+             role = "ctb",
+             comment = c(ORCID = "0000-0003-0932-598X"))
+             )
+Depends: R (>= 3.5.0), rjags (>= 4-6)
+Imports: coda, Rdpack, grDevices, forestplot, metafor, lme4
+SystemRequirements: JAGS 4.x.y (http://mcmc-jags.sourceforge.net)
+Description: Performs CACE (Complier Average Causal Effect analysis) on either a single study or meta-analysis of datasets with binary outcomes, using either complete or incomplete noncompliance information. Our package implements the Bayesian methods proposed in Zhou et al. (2019) <doi:10.1111/biom.13028>, which introduces a Bayesian hierarchical model for estimating CACE in meta-analysis of clinical trials with noncompliance, and Zhou et al. (2021) <doi:10.1080/01621459.2021.1900859>, with an application example on Epidural Analgesia.
+License: GPL (>= 2)
+NeedsCompilation: no
+RoxygenNote: 7.1.2
+RdMacros: Rdpack
+Encoding: UTF-8
+LazyData: true
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Packaged: 2022-01-05 22:30:10 UTC; james
+Author: Jinhui Yang [aut, cre] (<https://orcid.org/0000-0001-8322-1121>),
+  Jincheng Zhou [aut] (<https://orcid.org/0000-0003-2641-2495>),
+  James Hodges [ctb],
+  Haitao Chu [ctb] (<https://orcid.org/0000-0003-0932-598X>)
+Maintainer: Jinhui Yang <james.yangjinhui@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-01-05 22:40:02 UTC

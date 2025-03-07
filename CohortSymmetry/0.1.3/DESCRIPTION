@@ -1,0 +1,64 @@
+Package: CohortSymmetry
+Title: Sequence Symmetry Analysis Using the Observational Medical
+        Outcomes Partnership Common Data Model
+Version: 0.1.3
+Authors@R: c(
+    person("Xihang", "Chen", , "xihang.chen@ndorms.ox.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-8112-8959")),
+    person("Tyman", "Stanford", , "tyman.stanford@unisa.edu.au", role = "aut",
+           comment = c(ORCID = "0000-0002-8570-5493")),
+    person("Berta", "Raventós", , "braventos@idiapjgol.info", role = "aut",
+           comment = c(ORCID = "0000-0002-4668-2970")),
+    person("Nicole", "Pratt", , "Nicole.Pratt@unisa.edu.au", role = "aut",
+           comment = c(ORCID = "0000-0001-8730-8910")),
+    person("Ed", "Burn", , "ed.burn@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-9286-1128")),
+    person("Marti", "Català", , "marti.catalasabate@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0003-3308-9905")),
+    person("Danielle", "Newby", , "danielle.newby@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-3001-1478")),
+    person("Núria", "Mercadé-Besora", , "nuria.mercadebesora@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0009-0006-7948-3747")),
+    person("Mike", "Du", , "mike.du@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-9517-8834")),
+    person("Yuchen", "Guo", , "yuchen.guo@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-0847-4855")),
+    person("Kim", "Lopez", , "kim.lopez@spc.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0000-0002-8462-8668")),
+    person("Marta", "Alcalde-Herraiz", , "marta.alcaldeherraiz@ndorms.ox.ac.uk", role = "aut",
+           comment = c(ORCID = "0009-0002-4405-1814"))
+  )
+Maintainer: Xihang Chen <xihang.chen@ndorms.ox.ac.uk>
+Description: Calculating crude sequence ratio, adjusted sequence ratio and 
+    confidence intervals using data mapped to the Observational Medical 
+    Outcomes Partnership Common Data Model.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.1.5), DBI (>= 1.0.0), cli, checkmate, odbc,
+        RPostgres, tidyselect, knitr, dbplyr (>= 2.5.0), rmarkdown
+Imports: CDMConnector (>= 1.3.0), dplyr, ggplot2, magrittr,
+        PatientProfiles, rlang, stringr, tibble, visOmopResults (>=
+        0.3.0), tidyr, omock (>= 0.2.0), stats, duckdb, here,
+        omopgenerics (>= 0.2.1), flextable, gt, DrugUtilisation (>=
+        0.7.0), CodelistGenerator (>= 3.1.0)
+Config/testthat/edition: 3
+URL: https://oxford-pharmacoepi.github.io/CohortSymmetry/
+BugReports: https://github.com/oxford-pharmacoepi/CohortSymmetry/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-23 14:02:19 UTC; xihangc
+Author: Xihang Chen [aut, cre] (<https://orcid.org/0009-0001-8112-8959>),
+  Tyman Stanford [aut] (<https://orcid.org/0000-0002-8570-5493>),
+  Berta Raventós [aut] (<https://orcid.org/0000-0002-4668-2970>),
+  Nicole Pratt [aut] (<https://orcid.org/0000-0001-8730-8910>),
+  Ed Burn [aut] (<https://orcid.org/0000-0002-9286-1128>),
+  Marti Català [aut] (<https://orcid.org/0000-0003-3308-9905>),
+  Danielle Newby [aut] (<https://orcid.org/0000-0002-3001-1478>),
+  Núria Mercadé-Besora [aut] (<https://orcid.org/0009-0006-7948-3747>),
+  Mike Du [aut] (<https://orcid.org/0000-0002-9517-8834>),
+  Yuchen Guo [aut] (<https://orcid.org/0000-0002-0847-4855>),
+  Kim Lopez [aut] (<https://orcid.org/0000-0002-8462-8668>),
+  Marta Alcalde-Herraiz [aut] (<https://orcid.org/0009-0002-4405-1814>)
+Repository: CRAN
+Date/Publication: 2024-09-23 15:10:10 UTC

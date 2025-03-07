@@ -1,0 +1,35 @@
+Package: oncoPredict
+Title: Drug and Biomarker Discovery
+Version: 0.2
+Authors@R: 
+    c(person(given = "Danielle",
+           family = "Maeser",
+           role = c("aut", "cre"),
+           email = "maese005@umn.edu",
+           comment = c(ORCID = "0000-0002-3890-887X")),
+      person(given = 'Robert',
+           family = 'Gruener',
+           role = 'ctb',
+           email = 'rgruener@chicago.edu'))
+Description: Bridges in vitro drug screening with in vivo drug and biomarker discovery. Specifically, predicts in vivo or cancer patient drug response and biomarkers to enrich for response from cell line screening data. Builds model using ridge regression, and enables biomarker discovery by imputing drug response in large cancer molecular datasets. It also enables drug specific biomarker identification by correcting for general level of drug sensitivity shared among the population. 
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: R (>= 4.1.0)
+biocViews: sva, preprocessCore, stringr, biomaRt, genefilter,
+        GenomicFeatures, genefilter, BiocGenerics, GenomicRanges,
+        IRanges, S4Vectors, org.Hs.eg.db,
+        TxDb.Hsapiens.UCSC.hg19.knownGene, maftools
+Imports: parallel, ridge, car, glmnet, pls, sva, preprocessCore,
+        GenomicFeatures, genefilter, gdata, tidyverse, readxl,
+        BiocGenerics, GenomicRanges, IRanges, S4Vectors, org.Hs.eg.db,
+        TxDb.Hsapiens.UCSC.hg19.knownGene, maftools
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-24 02:27:46 UTC; Dani
+Author: Danielle Maeser [aut, cre] (<https://orcid.org/0000-0002-3890-887X>),
+  Robert Gruener [ctb]
+Maintainer: Danielle Maeser <maese005@umn.edu>
+Repository: CRAN
+Date/Publication: 2021-09-24 08:00:02 UTC

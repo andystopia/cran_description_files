@@ -1,0 +1,37 @@
+Package: CVarE
+Type: Package
+Title: Conditional Variance Estimator for Sufficient Dimension
+        Reduction
+Version: 1.1
+Date: 2021-03-09
+Maintainer: Daniel Kapla <daniel@kapla.at>
+Author: Daniel Kapla [aut, cph, cre],
+  Lukas Fertl [aut, cph],
+  Efstathia Bura [ctb]
+Authors@R: c(
+  person("Daniel", "Kapla", role = c("aut", "cph", "cre"), email = "daniel@kapla.at"),
+  person("Lukas", "Fertl", role = c("aut", "cph")),
+  person("Efstathia", "Bura", role = "ctb")
+  )
+Description: Implementation of the CVE (Conditional Variance Estimation) method
+  proposed by Fertl, L. and Bura, E. (2021) <arXiv:2102.08782> and the ECVE
+  (Ensemble Conditional Variance Estimation) method introduced in
+  Fertl, L. and Bura, E. (2021) <arXiv:2102.13435>.
+  CVE and ECVE are sufficient dimension reduction methods
+  in regressions with continuous response and predictors. CVE applies to general
+  additive error regression models while ECVE generalizes to non-additive error
+  regression models. They operate under the assumption that the predictors can
+  be replaced by a lower dimensional projection without loss of information.
+  It is a semiparametric forward regression model based exhaustive sufficient
+  dimension reduction estimation method that is shown to be consistent under mild
+  assumptions.
+License: GPL-3
+Contact: <daniel@kapla.at>
+URL: https://git.art-ist.cc/daniel/CVE
+Encoding: UTF-8
+NeedsCompilation: yes
+Imports: stats, mda
+RoxygenNote: 7.0.2
+Packaged: 2021-03-09 18:03:28 UTC; loki
+Repository: CRAN
+Date/Publication: 2021-03-11 15:00:06 UTC

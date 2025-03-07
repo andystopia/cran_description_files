@@ -1,0 +1,60 @@
+Package: salso
+Type: Package
+Title: Search Algorithms and Loss Functions for Bayesian Clustering
+Version: 0.3.41
+Authors@R: c(person(given = "David B.", family = "Dahl", role = c("aut", "cre"), email = "dahl@stat.byu.edu", comment = c(ORCID = "0000-0002-8173-1547")),
+    person(given = "Devin J.", family = "Johnson", role = c("aut"), email = "devin.j.johnson7@gmail.com", comment = c(ORCID = "0000-0003-2619-6649")),
+    person(given = "Peter", family = "Müller", role = c("aut"), email = "pmueller@math.utexas.edu"),
+    person(given = "Alex", family = "Crichton", email = "alex@alexcrichton.com", role = "ctb", comment = c("Rust crates: cfg-if, proc-macro2")),
+    person(given = "Brendan", family = "Zabarauskas", email = "bjzaba@yahoo.com.au", role = "ctb", comment = c("Rust crate: approx")),
+    person(given = "David B.", family = "Dahl", email = "dahl@stat.byu.edu", role = "ctb", comment = c("Rust crates: dahl-bellnumber, dahl-partition, dahl-salso, roxido, roxido_macro")),
+    person(given = "David", family = "Tolnay", email = "dtolnay@gmail.com", role = "ctb", comment = c("Rust crates: proc-macro2, quote, syn, unicode-ident")),
+    person(given = "Jim", family = "Turner", role = "ctb", comment = c("Rust crate: ndarray")),
+    person(given = "Josh", family = "Stone", email = "cuviper@gmail.com", role = "ctb", comment = c("Rust crate: autocfg")),
+    person(given = "R. Janis", family = "Goldschmidt", role = "ctb", comment = c("Rust crate: matrixmultiply")),
+    person(given = "Sean", family = "McArthur", email = "sean@seanmonstar.com", role = "ctb", comment = c("Rust crate: num_cpus")),
+    person(given = "Stefan", family = "Lankes", role = "ctb", comment = c("Rust crate: hermit-abi")),
+    person(given = "The Cranelift Project Developers", role = "ctb", comment = c("Rust crate: wasi")),
+    person(given = "The CryptoCorrosion Contributors", role = "ctb", comment = c("Rust crates: ppv-lite86, rand_chacha")),
+    person(given = "The Rand Project Developers", role = "ctb", comment = c("Rust crates: getrandom, rand, rand_chacha, rand_core, rand_pcg")),
+    person(given = "The Rust Project Developers", role = "ctb", comment = c("Rust crates: libc, num-bigint, num-complex, num-integer, num-traits, rand, rand_chacha, rand_core")),
+    person(given = "Ulrik Sverdrup", family = "\"bluss\"", role = "ctb", comment = c("Rust crate: ndarray")),
+    person(given = "bluss", role = "ctb", comment = c("Rust crates: matrixmultiply, rawpointer")),
+    person())
+Description: The SALSO algorithm is an efficient randomized greedy search method to find a point estimate for a random partition based on a loss function and posterior Monte Carlo samples. The algorithm is implemented for many loss functions, including the Binder loss and a generalization of the variation of information loss, both of which allow for unequal weights on the two types of clustering mistakes. Efficient implementations are also provided for Monte Carlo estimation of the posterior expected loss of a given clustering estimate. See Dahl, Johnson, Müller (2022) <doi:10.1080/10618600.2022.2069779>.
+License: MIT + file LICENSE | Apache License 2.0
+URL: https://github.com/dbdahl/salso
+BugReports: https://github.com/dbdahl/salso/issues
+Depends: R (>= 4.2.0)
+SystemRequirements: Cargo (Rust's package manager), rustc (>= 1.66.1)
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-09-06 23:48:00 UTC; dahl
+Author: David B. Dahl [aut, cre] (<https://orcid.org/0000-0002-8173-1547>),
+  Devin J. Johnson [aut] (<https://orcid.org/0000-0003-2619-6649>),
+  Peter Müller [aut],
+  Alex Crichton [ctb] (Rust crates: cfg-if, proc-macro2),
+  Brendan Zabarauskas [ctb] (Rust crate: approx),
+  David B. Dahl [ctb] (Rust crates: dahl-bellnumber, dahl-partition,
+    dahl-salso, roxido, roxido_macro),
+  David Tolnay [ctb] (Rust crates: proc-macro2, quote, syn,
+    unicode-ident),
+  Jim Turner [ctb] (Rust crate: ndarray),
+  Josh Stone [ctb] (Rust crate: autocfg),
+  R. Janis Goldschmidt [ctb] (Rust crate: matrixmultiply),
+  Sean McArthur [ctb] (Rust crate: num_cpus),
+  Stefan Lankes [ctb] (Rust crate: hermit-abi),
+  The Cranelift Project Developers [ctb] (Rust crate: wasi),
+  The CryptoCorrosion Contributors [ctb] (Rust crates: ppv-lite86,
+    rand_chacha),
+  The Rand Project Developers [ctb] (Rust crates: getrandom, rand,
+    rand_chacha, rand_core, rand_pcg),
+  The Rust Project Developers [ctb] (Rust crates: libc, num-bigint,
+    num-complex, num-integer, num-traits, rand, rand_chacha, rand_core),
+  Ulrik Sverdrup "bluss" [ctb] (Rust crate: ndarray),
+  bluss [ctb] (Rust crates: matrixmultiply, rawpointer)
+Maintainer: David B. Dahl <dahl@stat.byu.edu>
+Repository: CRAN
+Date/Publication: 2024-09-07 00:10:02 UTC

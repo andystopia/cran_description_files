@@ -1,0 +1,29 @@
+Package: jsontools
+Title: Working with JSON Vectors
+Version: 0.1.0
+Authors@R: 
+    person(given = "Maximilian",
+           family = "Girlich",
+           role = c("aut", "cre"),
+           email = "maximilian.girlich@outlook.com")
+Description: A toolbox for working with JSON vectors similar to
+    the functions 'Postgres' provides to work with JSON columns. It supports
+    in parsing and formatting JSON, extracting data from JSON, and
+    modifying JSON data.
+License: GPL-3
+Depends: R (>= 3.2.0)
+Imports: bit64, DBI, glue, jsonlite, magrittr, methods, pillar, purrr,
+        rlang, RSQLite, tibble, tidyselect, vctrs, withr
+Suggests: curl, dplyr, knitr, repurrrsive, rmarkdown, testthat (>=
+        2.1.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-03-19 11:46:06 UTC; mgirlich
+Author: Maximilian Girlich [aut, cre]
+Maintainer: Maximilian Girlich <maximilian.girlich@outlook.com>
+Repository: CRAN
+Date/Publication: 2021-03-22 09:40:09 UTC

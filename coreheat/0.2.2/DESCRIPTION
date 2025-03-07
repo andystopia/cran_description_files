@@ -1,0 +1,26 @@
+Package: coreheat
+Type: Package
+Title: Correlation Heatmaps
+Version: 0.2.2
+Date: 2021-09-13
+Author: Vidal Fey [aut, cre],
+  Henri Sara [aut]
+Authors@R: c(person("Vidal", "Fey", email = "vidal.fey@gmail.com", role=c("aut", "cre")), person("Henri", "Sara", email = "henri.sara@gmail.com", role=c("aut")))
+Maintainer: Vidal Fey <vidal.fey@gmail.com>
+Description: Create correlation heatmaps from a numeric matrix. Ensembl Gene ID row names can be converted to Gene Symbols
+     using, e.g., BioMart. Optionally, data can be clustered and filtered by correlation, tree cutting and/or number
+     of missing values. Genes of interest can be highlighted in the plot and correlation significance be indicated by
+     asterisks encoding corresponding P-Values. Plot dimensions and label measures are adjusted automatically by default.
+     The plot features rely on the heatmap.n2() function in the 'heatmapFlex' package.
+Depends: Biobase
+Imports: WGCNA, heatmapFlex, convertid (>= 0.1.3), methods, graphics,
+        grDevices
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-13 09:15:42 UTC; fsvife
+Repository: CRAN
+Date/Publication: 2021-09-19 07:20:05 UTC

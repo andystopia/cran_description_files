@@ -1,0 +1,32 @@
+Type: Package
+Package: rsvg
+Title: Render SVG Images into PDF, PNG, (Encapsulated) PostScript, or
+        Bitmap Arrays
+Version: 2.6.0
+Authors@R: c(
+    person("Jeroen", "Ooms", , "jeroen@berkeley.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4035-0289")),
+    person("Salim", "Brüggemann", , "salim-b@pm.me", role = c("ctb"),
+           comment = c(ORCID = "0000-0002-5329-5987")))
+Description: Renders vector-based svg images into high-quality custom-size
+    bitmap arrays using 'librsvg2'. The resulting bitmap can be written to
+    e.g. png, jpeg or webp format. In addition, the package can convert
+    images directly to various formats such as pdf or postscript.
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/rsvg/, https://github.com/ropensci/rsvg
+BugReports: https://github.com/ropensci/rsvg/issues
+Suggests: ggplot2, knitr, magick, rmarkdown, spelling, svglite,
+        testthat (>= 3.0.0), webp, png
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.1.2
+SystemRequirements: librsvg2
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-10-05 21:50:38 UTC; jeroen
+Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),
+  Salim Brüggemann [ctb] (<https://orcid.org/0000-0002-5329-5987>)
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2023-10-08 19:10:02 UTC

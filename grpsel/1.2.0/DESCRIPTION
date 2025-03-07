@@ -1,0 +1,28 @@
+Package: grpsel
+Type: Package
+Title: Group Subset Selection
+Version: 1.2.0
+Authors@R: person("Ryan", "Thompson",  email = "ryan.thompson@monash.edu", role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0002-9002-0448"))
+Description: Provides tools for sparse regression modelling with grouped predictors using the group 
+    subset selection penalty. Uses coordinate descent and local search algorithms to rapidly deliver 
+    near optimal estimates. The group subset penalty can be combined with a group lasso or ridge 
+    penalty for added shrinkage. Linear and logistic regression are supported, as are overlapping 
+    groups.
+URL: https://github.com/ryan-thompson/grpsel
+BugReports: https://github.com/ryan-thompson/grpsel/issues
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: ggplot2, parallel, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.2
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-01-10 11:11:29 UTC; ryan
+Author: Ryan Thompson [aut, cre] (<https://orcid.org/0000-0002-9002-0448>)
+Maintainer: Ryan Thompson <ryan.thompson@monash.edu>
+Repository: CRAN
+Date/Publication: 2022-01-10 12:32:42 UTC

@@ -1,0 +1,40 @@
+Package: respR
+Type: Package
+Title: Import, Process, Analyse, and Calculate Rates from Respirometry
+        Data
+Date: 2022-02-14
+Version: 2.0.0
+Maintainer: Nicholas Carey <nicholascarey@gmail.com>
+Authors@R: c(
+    person(given = "Januar", 
+           family = "Harianto", 
+           role = c("aut"), 
+           email = "januar.harianto@sydney.edu.au"), 
+    person(given = "Nicholas", 
+           family = "Carey", 
+           role = c("aut", "cre"),
+           email = "nicholascarey@gmail.com"))
+Description: Provides a structural, reproducible workflow for the
+    processing and analysis of respirometry data. It contains analytical
+    functions and utilities for working with oxygen time-series to determine
+    respiration or oxygen production rates, and to make it easier to report and
+    share analyses. 
+URL: https://github.com/januarharianto/respr,
+        https://doi.org/10.5281/zenodo.2548601
+Depends: R (>= 3.3)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: assertthat, broom, cowplot, data.table, dplyr, ggplot2, glue,
+        graphics, grDevices, gridExtra, lubridate, magrittr, marelac,
+        methods, purrr, readxl, roll, segmented, stats, stringr, utils,
+        xml2
+Suggests: knitr, rmarkdown, rMR, DiagrammeR, FishResp, respirometry,
+        testthat
+NeedsCompilation: no
+Packaged: 2022-02-16 10:50:58 UTC; nicholascarey
+Author: Januar Harianto [aut],
+  Nicholas Carey [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-02-16 20:20:02 UTC

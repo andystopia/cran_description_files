@@ -1,0 +1,23 @@
+Package: SVEMnet
+Type: Package
+Title: Self-Validated Ensemble Models with Elastic Net Regression
+Version: 1.0.3
+Date: 2024-11-18
+Authors@R: 
+    person(given = "Andrew T.",
+           family = "Karl",
+           email = "akarl@asu.edu",
+           role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-5933-8706"))
+Maintainer: Andrew T. Karl <akarl@asu.edu>
+Description: Implements Self-Validated Ensemble Models (SVEM, Lemkus et al. (2021) <doi:10.1016/j.chemolab.2021.104439>) using Elastic Net regression via 'glmnet' (Friedman et al. <doi:10.18637/jss.v033.i01>). SVEM averages predictions from multiple models fitted to fractionally weighted bootstraps of the data, tuned with anti-correlated validation weights. Also implements the randomized permutation whole model test for SVEM (Karl (2024) <doi:10.1016/j.chemolab.2024.105122>). Code for the whole model test was taken from the supplementary material of Karl (2024). Development of this package was assisted by 'GPT o1-preview' for code structure and documentation.
+Depends: R (>= 3.5.0)
+Imports: glmnet, stats, gamlss, gamlss.dist, ggplot2, lhs
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-11-19 10:06:13 UTC; andre
+Author: Andrew T. Karl [cre, aut] (<https://orcid.org/0000-0002-5933-8706>)
+Repository: CRAN
+Date/Publication: 2024-11-20 10:30:02 UTC

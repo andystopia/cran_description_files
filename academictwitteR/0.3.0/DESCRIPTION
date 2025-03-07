@@ -1,0 +1,53 @@
+Package: academictwitteR
+Title: Access the Twitter Academic Research Product Track V2 API
+        Endpoint
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Christopher",
+           family = "Barrie",
+           role = c("aut", "cre"),
+           email = "christopher.barrie@ed.ac.uk",
+           comment = c(ORCID = "0000-0002-9156-990X")),
+           person(given = "Justin Chun-ting",
+           family = "Ho",
+           role = c("aut"),
+           email = "justin.chunting.ho@sciencespo.fr",
+           comment = c(ORCID = "0000-0002-7884-1059")),
+	   person(given = "Chung-hong",
+	   family = "Chan",
+	   role = c("ctb"),
+	   email = "chainsawtiney@gmail.com",
+	   comment = c(ORCID = "0000-0002-6232-7530")),
+	   person(given = "Noelia",
+	   family = "Rico",
+	   role = c("ctb"),
+	   email = "noeliarico@uniovi.es",
+	   comment = c(ORCID = "0000-0002-6169-4523")))
+Description: Package to query the Twitter Academic Research Product Track,
+    providing access to full-archive search and other v2 API endpoints. Functions
+    are written with academic research in mind. They provide flexibility in how 
+    the user wishes to store collected data, and encourage regular storage of data
+    to mitigate loss when collecting large volumes of tweets. They also provide
+    workarounds to manage and reshape the format in which data is provided on
+    the client side.
+License: MIT + file LICENSE
+URL: https://github.com/cjbarrie/academictwitteR
+BugReports: https://github.com/cjbarrie/academictwitteR/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Depends: R (>= 3.4)
+Imports: dplyr (>= 1.0.0), httr, jsonlite, magrittr, lubridate,
+        usethis, tibble, tidyr, tidyselect, purrr, rlang
+Suggests: knitr, rmarkdown, devtools, testthat (>= 3.0.0), httptest,
+        lifecycle, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-11-20 12:54:29 UTC; cbarrie6
+Author: Christopher Barrie [aut, cre] (<https://orcid.org/0000-0002-9156-990X>),
+  Justin Chun-ting Ho [aut] (<https://orcid.org/0000-0002-7884-1059>),
+  Chung-hong Chan [ctb] (<https://orcid.org/0000-0002-6232-7530>),
+  Noelia Rico [ctb] (<https://orcid.org/0000-0002-6169-4523>)
+Maintainer: Christopher Barrie <christopher.barrie@ed.ac.uk>
+Repository: CRAN
+Date/Publication: 2021-11-20 13:10:02 UTC

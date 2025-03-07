@@ -1,0 +1,50 @@
+Package: precautionary
+Type: Package
+Title: Safety Diagnostics for Dose-Escalation Trial Designs
+Version: 0.2.6
+Date: 2021-08-01
+Authors@R: c(person("David C.", "Norris"
+                   , role = c("aut", "cre", "cph")
+                   , email = "david@precisionmethods.guru"
+                   , comment = c(ORCID = "0000-0001-9593-6343")
+                   ),
+             person("Markus", "Triska"
+                   , role = "ctb"
+                   , email = "triska@metalevel.at"
+                   )
+            )
+Maintainer: David C. Norris <david@precisionmethods.guru>
+Depends: magrittr, escalation, data.table, R6, R (>= 4.0.0)
+Imports: methods, dplyr, rlang, stringr, knitr, kableExtra,
+        microbenchmark, dfcrm, BOIN, parallelly
+Suggests: dtpcrm, rmarkdown, bookdown, tufte, testthat, lattice,
+        latticeExtra, shiny, shinyjs, shinyFeedback
+Description: Enhances various R packages that support the design and simulation
+             of phase 1 dose-escalation trials, adding diagnostics to examine
+             the safety characteristics of these designs in light of expected
+             inter-individual variation in pharmacokinetics and pharmacodynamics.
+             See Norris (2020b), "Retrospective analysis of a fatal dose-finding
+             trial" <arXiv:2004.12755> and (2020c) "What Were They Thinking?
+             Pharmacologic priors implicit in a choice of 3+3 dose-escalation design"
+             <arXiv:2012.05301>.
+URL: https://github.com/dcnorris/precautionary
+License: MIT + file LICENSE
+VignetteBuilder: knitr, rmarkdown
+Encoding: UTF-8
+NeedsCompilation: yes
+OS_type: unix
+RoxygenNote: 7.1.1
+Collate: 'bench.R' 'boin.R' 'ccd.R' 'cpe.R' 'crm.R' 'data.R' 'dtp.R'
+        'dutycycle.R' 'enhance.R' 'exact.R' 'extendr-wrappers.R'
+        'hyperprior.R' 'mclapply.R' 'precautionary-package.R'
+        'toxicity_generators.R' 'simulate_trials.R' 'three3.R'
+LazyData: true
+ByteCompile: true
+Config/testthat/edition: 3
+BugReports: https://github.com/dcnorris/precautionary/issues
+Packaged: 2021-08-07 12:12:16 UTC; david
+Author: David C. Norris [aut, cre, cph]
+    (<https://orcid.org/0000-0001-9593-6343>),
+  Markus Triska [ctb]
+Repository: CRAN
+Date/Publication: 2021-08-09 08:00:02 UTC

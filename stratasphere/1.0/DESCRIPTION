@@ -1,0 +1,25 @@
+Package: stratasphere
+Type: Package
+Title: Stratified Spherical Approximate Conditional Modeling
+Version: 1.0
+Date: 2011-07-07
+Author: Daniel Percival
+Maintainer: Daniel Percival <dperciva@andrew.cmu.edu>
+Description: For data where the observations occur or are collected in
+        a stratified fashion, the strata level effect is sometimes not
+        of interest or is simply impossible to estimate. Conditioning
+        on the strata eliminates these difficulties, but leads to a
+        combinatorially complex calculation. The spherical approximate
+        method replaces this complex calculation with a closed form
+        solution, leading to a simple fixed point iteration method for
+        fitting the linear model.  This package implements linear model
+        fitting via Stratasphere(), and stepwise regression and
+        boosting extensions via StratasphereStep() and
+        StratasphereBoost(), respectively. Note that this package is
+        distributed under the Apache 2.0 license.
+License: Apache License 2.0
+Depends: survival, mboost, hash
+LazyLoad: yes
+Packaged: 2011-07-23 14:47:37 UTC; dancsi
+Repository: CRAN
+Date/Publication: 2011-07-23 15:14:07

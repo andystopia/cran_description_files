@@ -1,0 +1,30 @@
+Package: healthyR.ts
+Title: The Time Series Modeling Companion to 'healthyR'
+Version: 0.1.0
+Authors@R: c(
+    person("Steven","Sanderson", email = "spsanderson@gmail.com", role = c("aut","cre")),
+    person("Steven Sanderson", role = "cph"))
+Description: 
+    Hospital time series data analysis workflow tools, modeling, and automations. 
+    This library provides many useful tools to review common administrative time 
+    series hospital data. Some of these include average length of stay, and 
+    readmission rates. The aim is to provide a simple and consistent verb 
+    framework that takes the guesswork out of everything.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://github.com/spsanderson/healthyR.ts
+BugReports: https://github.com/spsanderson/healthyR.ts/issues
+Suggests: knitr, rmarkdown, roxygen2, scales
+VignetteBuilder: knitr
+Imports: magrittr, rlang (>= 0.1.2), tibble, timetk, modeltime,
+        modeltime.ensemble, modeltime.resample, dplyr, purrr, ggplot2,
+        tidyquant, healthyR.data, lubridate, stringr, plotly
+NeedsCompilation: no
+Packaged: 2021-01-21 03:30:57 UTC; Steve
+Author: Steven Sanderson [aut, cre],
+  Steven Sanderson [cph]
+Maintainer: Steven Sanderson <spsanderson@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-22 10:40:06 UTC

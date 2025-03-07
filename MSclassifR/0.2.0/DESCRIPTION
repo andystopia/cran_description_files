@@ -1,0 +1,25 @@
+Package: MSclassifR
+Type: Package
+Title: Automated Classification of Mass Spectra
+Version: 0.2.0
+Authors@R: c(
+    person("Alexandre", "Godmer", role=c("aut", "cre"), email="alexandre.godmer@aphp.fr"),
+    person("Quentin", "Giai Gianetto", role=c("aut"))
+    )
+Maintainer: Alexandre Godmer <alexandre.godmer@aphp.fr>
+Description: Functions to classify mass spectra in known categories, and to determine discriminant mass-over-charge values. It includes easy-to-use functions for pre-processing mass spectra, functions to determine discriminant mass-over-charge values (m/z) from a library of mass spectra corresponding to different categories, and functions to predict the category (species, phenotypes, etc.) associated to a mass spectrum from a list of selected mass-over-charge values. Two vignettes illustrating how to use the functions of this package from real data sets are also available online to help users: <https://agodmer.github.io/MSclassifR_examples/Vignettes/Vignettemsclassifr_Ecrobia.html> and <https://agodmer.github.io/MSclassifR_examples/Vignettes/Vignettemsclassifr_Klebsiella.html>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+Imports: e1071, MALDIquant, MALDIrppa, MALDIquantForeign, mixOmics,
+        caret, reshape2, ggplot2, nnet, dplyr, fuzzyjoin, VSURF, metap,
+        xgboost, glmnet,
+Suggests: knitr, rmarkdown,
+NeedsCompilation: yes
+RoxygenNote: 7.1.1
+Packaged: 2022-02-23 18:00:24 UTC; alexa
+Author: Alexandre Godmer [aut, cre],
+  Quentin Giai Gianetto [aut]
+Repository: CRAN
+Date/Publication: 2022-02-25 12:20:07 UTC

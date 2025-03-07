@@ -1,0 +1,32 @@
+Package: biofiles
+Type: Package
+Title: An Interface for GenBank/GenPept Flat Files
+Version: 1.0.0
+Author: Gerhard Schöfl [aut, cre]
+Maintainer: Gerhard Schöfl <gerhard.schofl@gmail.com>
+Description: Parse GenBank/GenPept records <https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html>
+    into native R objects to easily access and manipulate the sequence and annotation information.
+Depends: R (>= 3.3.1), Rcpp (>= 0.11.0)
+LinkingTo: Rcpp (>= 0.11.0)
+Imports: assertthat, BiocGenerics, Biostrings, foreach, GenomeInfoDb,
+        GenomicRanges, IRanges, iterators, methods, parallel, RCurl,
+        reutils, stats, S4Vectors, XVector
+Suggests: doParallel, testthat, BiocStyle, knitr, covr
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/gschofl/biofiles
+BugReports: https://github.com/gschofl/biofiles/issues
+Collate: 'RcppExports.R' 'utils.R' 'all-generics.R'
+        'biofiles-package.R' 'filter.R' 'flanking.R' 'gbHeader-class.R'
+        'gbLocation-class.R' 'gbFeature-class.R'
+        'gbFeatureTable-class.R' 'gbRecord-class.R'
+        'gbRecordList-class.R' 'genome-record-from-ncbi.R'
+        'make-ranges.R' 'misc-functions.R' 'parser-general.R'
+        'parser-embl.R' 'parser-gbk.R' 'select.R' 'shift.R'
+        'write-feature-table.R' 'write-genbank.R' 'zzz.R'
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-11-21 12:39:16 UTC; gerhard
+Repository: CRAN
+Date/Publication: 2017-11-21 18:16:48 UTC

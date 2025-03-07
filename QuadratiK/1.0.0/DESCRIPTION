@@ -1,0 +1,35 @@
+Package: QuadratiK
+Type: Package
+Title: Collection of Methods Constructed using Kernel-Based Quadratic
+        Distances
+Version: 1.0.0
+Date: 2024-01-31
+Authors@R: c(
+    person("Giovanni", "Saraceno", email = "gsaracen@buffalo.edu", role = c("aut","cre"), comment = "ORCID 000-0002-1753-2367"),
+    person("Marianthi", "Markatou", role = c("aut")),
+    person("Raktim", "Mukhopadhyay", role = c("aut")),
+    person("Mojgan", "Golzy", role = "ctb"))
+Maintainer: Giovanni Saraceno <gsaracen@buffalo.edu>
+Description: It includes test for multivariate normality, test for uniformity on the Sphere, non-parametric two- and k-sample tests, random generation of points from the Poisson kernel-based density and clustering algorithm for spherical data. For more information see Saraceno, G., Markatou, M., Mukhopadhyay, R., Golzy, M. (2024) <arxiv:2402.02290>, 
+    Ding, Y., Markatou, M., Saraceno, G. (2023) <doi:10.5705/ss.202022.0347>, and 
+    Golzy, M., Markatou, M. (2020) <doi:10.1080/10618600.2020.1740713>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 3.5.0)
+Imports: Rcpp, RcppEigen, sn, methods, stats, MASS, moments, mvtnorm,
+        movMF, rlecuyer, foreach, doParallel, Tinflex, ggpp, ggplot2,
+        rgl, clusterRepro, ggpubr, mclust, rrcov, cluster
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Suggests: rmarkdown, testthat (>= 3.0.0), roxygen2, knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-02-22 05:38:11 UTC; gsaracen
+Author: Giovanni Saraceno [aut, cre] (ORCID 000-0002-1753-2367),
+  Marianthi Markatou [aut],
+  Raktim Mukhopadhyay [aut],
+  Mojgan Golzy [ctb]
+Repository: CRAN
+Date/Publication: 2024-02-23 18:30:05 UTC

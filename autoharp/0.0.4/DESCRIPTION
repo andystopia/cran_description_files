@@ -1,0 +1,43 @@
+Package: autoharp
+Title: Semi-Automatic Grading of R and Rmd Scripts
+Version: 0.0.4
+Authors@R: c(
+    person("Vik", "Gopal", email="vik.gopal@nus.edu.sg", role=c("aut", "cre")),
+    person("Samuel", "Seah", email="samuelseah@u.nus.edu", role="aut"),
+    person("Viknesh", "Jeya Kumar", email="viknesh@u.nus.edu", role="aut"),
+    person("Gabriel", "Ang", email="gabrielang@u.nus.edu", role="aut"),
+    person("Ruofan", "Liu", email="kelseyliu1998@gmail.com", role="ctb"),
+    person("National University of Singapore", role="cph"))
+Description: A customisable set of tools for assessing and grading 
+    R or R-markdown scripts from students. It allows for checking correctness 
+    of code output, runtime statistics and static code analysis. The latter 
+    feature is made possible by representing R expressions using a tree
+    structure.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: magrittr, dplyr, stringr, rlang, tidyr, tibble, knitr,
+        rmarkdown, pryr, shiny, lintr, methods, igraph, testthat
+Collate: 'treeharp.R' 'th_getter-length.R' 'as.matrix.R'
+        'check_correctness.R' 'check_rmd.R' 'check_runtime.R'
+        'count_lints.R' 'env_size.R' 'examplify_to_r.R' 'forestharp.R'
+        'forestharp_helpers.R' 'generate_thumbnails.R'
+        'join_treeharp.R' 'lang_2_tree.R' 'lang_2_tree_helpers.R'
+        'log_summary.R' 'lum_local_match.R' 'nlp_related.R'
+        'populate_soln_env.R' 'render_one.R' 'reset_path.R'
+        'run_tuner.R' 'to_BFS.R' 'tree_kernel.R' 'tree_routines.R'
+        'utils-pipe.R' 'utils.R' 'write_html.R' 'zzz.R'
+Suggests: readxl, xml2, rvest, formatR
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-20 12:23:52 UTC; viknesh
+Author: Vik Gopal [aut, cre],
+  Samuel Seah [aut],
+  Viknesh Jeya Kumar [aut],
+  Gabriel Ang [aut],
+  Ruofan Liu [ctb],
+  National University of Singapore [cph]
+Maintainer: Vik Gopal <vik.gopal@nus.edu.sg>
+Repository: CRAN
+Date/Publication: 2021-01-22 09:20:06 UTC

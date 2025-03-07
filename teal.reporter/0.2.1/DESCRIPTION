@@ -1,0 +1,46 @@
+Package: teal.reporter
+Title: Reporting Tools for 'shiny' Modules
+Version: 0.2.1
+Date: 2023-09-05
+Authors@R: c(
+    person("Dawid", "Kaledkowski", , "dawid.kaledkowski@roche.com", role = "cre"),
+    person("Maciej", "Nasinski", role = "aut"),
+    person("Konrad", "Pagacz", role = "aut"),
+    person(c("Mahmoud", "mahmoud.hallal@roche.com"), "Hallal", role = "aut"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: 
+    Prebuilt 'shiny' modules containing tools for the generation of 'rmarkdown' reports, supporting reproducible
+    research and analysis.
+License: Apache License 2.0
+URL: https://github.com/insightsengineering/teal.reporter,
+        https://insightsengineering.github.io/teal.reporter/
+BugReports: https://github.com/insightsengineering/teal.reporter/issues
+Imports: bslib, checkmate (>= 2.1.0), grid, htmltools (>= 0.5.4), knitr
+        (>= 1.34), lifecycle (>= 0.2.0), R6, rmarkdown (>= 2.19), shiny
+        (>= 1.6.0), shinyWidgets (>= 0.5.1), yaml (>= 1.1.0), zip (>=
+        1.1.0)
+Suggests: DT (>= 0.13), ggplot2 (>= 3.4.0), lattice (>= 0.18-4), png,
+        rtables (>= 0.5.1), testthat (>= 3.0.4), tinytex
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Config/Needs/verdepcheck: rstudio/bslib, mllg/checkmate,
+        rstudio/htmltools, yihui/knitr, r-lib/lifecycle, r-lib/R6,
+        rstudio/rmarkdown, rstudio/shiny, dreamRs/shinyWidgets,
+        yaml=vubiostat/r-yaml, r-lib/zip, rstudio/DT,
+        tidyverse/ggplot2, deepayan/lattice, cran/png,
+        insightsengineering/rtables, r-lib/testthat, rstudio/tinytex
+Config/Needs/website: insightsengineering/nesttemplate
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-08 08:10:38 UTC; kosinsm4
+Author: Dawid Kaledkowski [cre],
+  Maciej Nasinski [aut],
+  Konrad Pagacz [aut],
+  Mahmoud mahmoud.hallal@roche.com Hallal [aut],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Dawid Kaledkowski <dawid.kaledkowski@roche.com>
+Repository: CRAN
+Date/Publication: 2023-09-08 15:30:01 UTC

@@ -1,0 +1,61 @@
+Type: Package
+Package: EWSmethods
+Title: Forecasting Tipping Points at the Community Level
+Version: 1.2.5
+Authors@R: c(
+    person(given   = "Duncan",
+           family  = "O'Brien",
+           email   = "duncan.a.obrien@gmail.com",
+           role    = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-3420-5210")),
+    person(given   = "Smita",
+           family  = "Deb",
+           email   = "smita.19maz0004@iitrpr.ac.in",
+           role    = "aut",
+           comment = c(ORCID = "0000-0001-7037-7055")),
+    person(given   = "Sahil",
+           family  = "Sidheekh",
+           email   = "sahil.sidheekh@outlook.com",
+           role    = "aut"),
+    person(given   = "Narayanan",
+           family  = "Krishnan",
+           email   = "ckn@iitpkd.ac.in",
+           role    = "aut"),
+    person(given   = "Partha",
+           family  = "Dutta",
+           email   = "parthasharathi@iitrpr.ac.in",
+           role    = "aut",
+           comment = c(ORCID = "0000-0001-6067-1023")),
+    person(given   = "Christopher",
+           family  = "Clements",
+           email   = "c.clements@bristol.ac.uk",
+           role    = "aut",
+           comment = c(ORCID = "0000-0001-5677-5401")))
+Maintainer: Duncan O'Brien <duncan.a.obrien@gmail.com>
+Description: Rolling and expanding window approaches to assessing abundance based early warning signals, non-equilibrium resilience measures, and machine learning. See Dakos et al. (2012) <doi:10.1371/journal.pone.0041010>, Deb et al. (2022) <doi:10.1098/rsos.211475>, Drake and Griffen (2010) <doi:10.1038/nature09389>, Ushio et al. (2018) <doi:10.1038/nature25504> and Weinans et al. (2021) <doi:10.1038/s41598-021-87839-y> for methodological details. Graphical presentation of the outputs are also provided for clear and publishable figures. Visit the 'EWSmethods' website for more information, and tutorials.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: curl, dplyr (>= 1.0.6), egg, ggplot2, gtools, forecast,
+        foreach, infotheo, mAr, moments, rEDM (>= 1.15.0), reticulate,
+        scales, tidyr, zoo
+RoxygenNote: 7.2.3
+URL: https://github.com/duncanobrien/EWSmethods,
+        https://duncanobrien.github.io/EWSmethods/
+BugReports: https://github.com/duncanobrien/EWSmethods/issues
+Suggests: devtools, doParallel, knitr, fs, parallel, rmarkdown,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-01-10 12:54:53 UTC; ul20791
+Author: Duncan O'Brien [aut, cre, cph]
+    (<https://orcid.org/0000-0002-3420-5210>),
+  Smita Deb [aut] (<https://orcid.org/0000-0001-7037-7055>),
+  Sahil Sidheekh [aut],
+  Narayanan Krishnan [aut],
+  Partha Dutta [aut] (<https://orcid.org/0000-0001-6067-1023>),
+  Christopher Clements [aut] (<https://orcid.org/0000-0001-5677-5401>)
+Repository: CRAN
+Date/Publication: 2024-01-11 08:50:07 UTC

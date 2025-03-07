@@ -1,0 +1,31 @@
+Package: eCAR
+Type: Package
+Title: Eigenvalue CAR Models
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Garritt", family = "L. Page", email = "page@stat.byu.edu", role = c("aut", "cre")),
+  person(given = "Massimo", family = "Ventrucci", email = "massimo.ventrucci@unibo.it", role = c("aut")),
+	person(given = "S. McKay", family = "Curtis", email = "s.mckay.curtis@gmail.com", role = c("cph")),
+	person(given = "Radford", family = "M. Neal", role = c("cph")))
+Maintainer: Garritt L. Page <page@stat.byu.edu>
+Description: Fits Leroux model in spectral domain to estimate causal spatial effect as detailed in 
+             Guan, Y; Page, G.L.; Reich, B.J.; Ventrucci, M.; Yang, S; (2020) <arXiv:2012.11767>.  
+             Both the parametric and semi-parametric models are available.  The semi-parametric model 
+             relies on 'INLA'.  The 'INLA' package can be obtained from <https://www.r-inla.org/>.
+License: GPL
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Suggests: INLA
+Imports: Matrix
+LazyData: true
+RoxygenNote: 7.1.1
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+URL: https://github.com/gpage2990/eCAR
+NeedsCompilation: yes
+Packaged: 2021-01-11 15:30:29 UTC; gpage
+Author: Garritt L. Page [aut, cre],
+  Massimo Ventrucci [aut],
+  S. McKay Curtis [cph],
+  Radford M. Neal [cph]
+Repository: CRAN
+Date/Publication: 2021-01-14 09:50:02 UTC

@@ -1,0 +1,33 @@
+Package: LKT
+Title: Logistic Knowledge Tracing
+Version: 1.0
+Authors@R: 
+    c(person(given = "Philip I.",
+           family = "Pavlik Jr.",
+           role = c("aut","ctb","cre"),
+           email = "imrryr@gmail.com",
+           comment = c(ORCID = "0000-0001-6467-9452")),
+      person(given = "Luke G.",
+           family = "Eglington",
+           role = c("aut","ctb"),
+           email = "luke.eglington.mail@gmail.com",
+           comment = c(ORCID = "0000-0002-8432-9203"))
+           )
+Description: Computes Logistic Knowledge Tracing ('LKT') which is a general method for tracking human learning in an educational software system. Please see Pavlik, Eglington, and Harrel-Williams (2021) <arXiv:2005.00869>. 'LKT' is a method to compute features of student data that are used as predictors of subsequent performance. 'LKT' allows great flexibility in the choice of predictive components and features computed for these predictive components. The system is built on top of 'LiblineaR', which enables extremely fast solutions compared to base glm() in R.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Imports: lme4 (>= 1.1-23), pROC (>= 1.16.2), SparseM (>= 1.78), utils,
+        Matrix, methods, knitr, data.table (>= 1.13.2), LiblineaR (>=
+        2.10-8), glmnet (>= 4.0-2), glmnetUtils (>= 1.1.8), caret
+NeedsCompilation: no
+Packaged: 2021-06-04 13:46:17 UTC; ppavl
+Author: Philip I. Pavlik Jr. [aut, ctb, cre]
+    (<https://orcid.org/0000-0001-6467-9452>),
+  Luke G. Eglington [aut, ctb] (<https://orcid.org/0000-0002-8432-9203>)
+Maintainer: Philip I. Pavlik Jr. <imrryr@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-07 07:00:09 UTC

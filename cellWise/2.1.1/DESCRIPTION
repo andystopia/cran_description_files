@@ -1,0 +1,31 @@
+Package: cellWise
+Type: Package
+Version: 2.1.1
+Date: 2020-04-13
+Title: Analyzing Data with Cellwise Outliers
+Authors@R: c(
+            person(given="Jakob",family="Raymaekers", role = c("aut","cre"),
+            email="jakob.raymaekers@kuleuven.be"),
+            person(given="Peter",family="Rousseeuw", role = c("aut")),
+            person(given="Wannes",family="Van den Bossche", role = c("aut")),
+            person(given="Mia",family="Hubert", role = c("aut")) 
+             )
+Depends: R (>= 3.2.0)
+Suggests: knitr, robustHD, MASS, ellipse
+Imports: reshape2, scales, ggplot2, matrixStats, gridExtra, robustbase,
+        rrcov, svd, Rcpp (>= 0.12.10.14)
+LinkingTo: Rcpp, RcppArmadillo (>= 0.7.600.1.0)
+Description: Tools for detecting cellwise outliers and robust methods to analyze data which may contain them. Contains the implementation of the algorithms described in Rousseeuw and Van den Bossche (2018) <doi:10.1080/00401706.2017.1340909>, Hubert et al. (2019) <doi:10.1080/00401706.2018.1562989>, Raymaekers and Rousseeuw (2019) <doi:10.1080/00401706.2019.1677270>.
+License: GPL (>= 2)
+LazyLoad: yes
+Author: Jakob Raymaekers [aut, cre],
+  Peter Rousseeuw [aut],
+  Wannes Van den Bossche [aut],
+  Mia Hubert [aut]
+Maintainer: Jakob Raymaekers <jakob.raymaekers@kuleuven.be>
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2020-04-14 09:59:35 UTC; u0105404
+Repository: CRAN
+Date/Publication: 2020-04-14 10:40:03 UTC

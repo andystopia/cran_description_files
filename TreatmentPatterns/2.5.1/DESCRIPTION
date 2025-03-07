@@ -1,0 +1,34 @@
+Package: TreatmentPatterns
+Type: Package
+Title: Analyzes Real-World Treatment Patterns of a Study Population of
+        Interest
+Version: 2.5.1
+Authors@R: 
+    c(person("Aniek", "Markus", , role = c("aut"), comment = c(ORCID = "0000-0001-5779-4794")),
+      person("Maarten", "van Kessel", email = "m.l.vankessel@erasmusmc.nl", role = c("cre"), comment = c(ORCID = "0009-0006-8832-6030")))
+Maintainer: Maarten van Kessel <m.l.vankessel@erasmusmc.nl>
+Description: 
+    Computes treatment patterns within a given cohort using the Observational
+    Medical Outcomes Partnership (OMOP) common data model (CDM). As described
+    in Markus, Verhamme, Kors, and Rijnbeek (2022) <doi:10.1016/j.cmpb.2022.107081>.
+URL: https://github.com/darwin-eu-dev/TreatmentPatterns
+BugReports: https://github.com/darwin-eu-dev/TreatmentPatterns/issues
+Depends: R (>= 4.0)
+Imports: DatabaseConnector (>= 6.0.0), checkmate, dplyr, SqlRender,
+        stringr, stringi, fs, glue, utils, rjson, googleVis, stats,
+        Andromeda, tidyr, data.table, R6
+Suggests: knitr, rmarkdown, tibble, testthat (>= 3.0.0), usethis,
+        Eunomia, CDMConnector, CohortGenerator, webshot2, CirceR,
+        duckdb, DBI, withr
+License: Apache License 2.0
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Additional_repositories: https://ohdsi.github.io/drat
+NeedsCompilation: no
+Packaged: 2023-09-07 10:52:44 UTC; mvankessel
+Author: Aniek Markus [aut] (<https://orcid.org/0000-0001-5779-4794>),
+  Maarten van Kessel [cre] (<https://orcid.org/0009-0006-8832-6030>)
+Repository: CRAN
+Date/Publication: 2023-09-07 14:00:06 UTC

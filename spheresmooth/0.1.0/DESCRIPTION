@@ -1,0 +1,31 @@
+Package: spheresmooth
+Type: Package
+Title: Piecewise Geodesic Smoothing for Spherical Data
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Seyoung",
+           family = "Lee",
+           role = c("aut"),
+           email = "20210861@sungshin.ac.kr",
+           comment = "Sungshin Women's University"),
+    person(given = "Kwan-Young",
+           family = "Bak",
+           role = c("aut", "cre", "cph"),
+           email = "kybak@sungshin.ac.kr",
+           comment = c(ORCID = "0000-0002-4541-160X", "Sungshin Women's University")))
+Description: Fitting a smooth path to a given set of noisy spherical data observed at known time points. It implements a piecewise geodesic curve fitting method on the unit sphere based on a velocity-based penalization scheme. The proposed approach is implemented using the Riemannian block coordinate descent algorithm. To understand the method and algorithm, one can refer to Bak, K. Y., Shin, J. K., & Koo, J. Y. (2023) <doi:10.1080/02664763.2022.2054962> for the case of order 1. Additionally, this package includes various functions necessary for handling spherical data.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Depends: R (>= 2.10)
+Suggests: rgl, sphereplot
+NeedsCompilation: no
+Packaged: 2024-04-17 14:04:35 UTC; bak
+Author: Seyoung Lee [aut] (Sungshin Women's University),
+  Kwan-Young Bak [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4541-160X>, Sungshin Women's
+    University)
+Maintainer: Kwan-Young Bak <kybak@sungshin.ac.kr>
+Repository: CRAN
+Date/Publication: 2024-04-18 14:32:48 UTC

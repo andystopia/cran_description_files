@@ -1,0 +1,41 @@
+Package: morphemepiece
+Type: Package
+Title: Morpheme Tokenization
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Jonathan",
+           family = "Bratt",
+           role = c("aut", "cre"),
+           email = "jonathan.bratt@macmillan.com",
+           comment = c(ORCID = "0000-0003-2859-0076")),
+    person(given = "Jon",
+           family = "Harmon",
+           role = c("aut"),
+           email = "jonthegeek@gmail.com",
+           comment = c(ORCID = "0000-0003-4781-4346")),
+    person(given = "Bedford Freeman & Worth Pub Grp LLC DBA Macmillan Learning", 
+           role = c("cph"))
+    )
+Description: Tokenize text into morphemes. The morphemepiece algorithm uses a 
+  lookup table to determine the morpheme breakdown of words, and falls back on a 
+  modified wordpiece tokenization algorithm for words not found in the lookup 
+  table.
+URL: https://github.com/macmillancontentscience/morphemepiece
+BugReports: https://github.com/macmillancontentscience/morphemepiece/issues
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: dlr (>= 1.0.0), magrittr, morphemepiece.data, piecemaker (>=
+        1.0.0), purrr (>= 0.3.4), rlang, stringr (>= 1.4.0)
+Suggests: dplyr, fs, ggplot2, here, knitr, remotes, rmarkdown, testthat
+        (>= 3.0.0), utils
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-09-06 19:40:48 UTC; jonathan.bratt
+Author: Jonathan Bratt [aut, cre] (<https://orcid.org/0000-0003-2859-0076>),
+  Jon Harmon [aut] (<https://orcid.org/0000-0003-4781-4346>),
+  Bedford Freeman & Worth Pub Grp LLC DBA Macmillan Learning [cph]
+Maintainer: Jonathan Bratt <jonathan.bratt@macmillan.com>
+Repository: CRAN
+Date/Publication: 2021-09-09 07:10:06 UTC

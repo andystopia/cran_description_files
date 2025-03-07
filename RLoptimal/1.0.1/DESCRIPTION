@@ -1,0 +1,35 @@
+Package: RLoptimal
+Type: Package
+Title: Optimal Adaptive Allocation Using Deep Reinforcement Learning
+Version: 1.0.1
+Authors@R: c(
+    person("Kentaro", "Matsuura", , "matsuurakentaro55@gmail.com", 
+           role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-5262-055X")),
+    person("Koji", "Makiyama", , "hoxo.smile@gmail.com", role = c("aut", "ctb")))
+Description: An implementation to compute an optimal adaptive allocation rule
+    using deep reinforcement learning in a dose-response study
+    (Matsuura et al. (2022) <doi:10.1002/sim.9247>).
+    The adaptive allocation rule can directly optimize a performance metric,
+    such as power, accuracy of the estimated target dose, or mean absolute error
+    over the estimated dose-response curve.
+URL: https://github.com/MatsuuraKentaro/RLoptimal
+BugReports: https://github.com/MatsuuraKentaro/RLoptimal/issues
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en_US
+RoxygenNote: 7.3.2
+Imports: DoseFinding, glue, R6, reticulate, stats, utils
+Suggests: knitr, rmarkdown
+Collate: 'timer.R' 'train_algo.R' 'utils.R' 'allocation_rule.R'
+        'generate_setup_code.R' 'rl_dnn_config.R' 'rl_config_set.R'
+        'learn_allocation_rule.R' 'setup_python.R' 'zzz.R'
+        'simulate_one_trial.R' 'adjust_significance_level.R'
+NeedsCompilation: no
+Packaged: 2024-10-02 11:07:11 UTC; kmatsuu
+Author: Kentaro Matsuura [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5262-055X>),
+  Koji Makiyama [aut, ctb]
+Maintainer: Kentaro Matsuura <matsuurakentaro55@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-03 19:00:02 UTC

@@ -1,0 +1,32 @@
+Package: rSymbiota
+Type: Package
+Title: Interface to 'Symbiota' Portals for Accessing Multi-Organismal
+        Biodiversity Data
+Version: 1.0.0
+Authors@R: c(
+    person("Franz-Sebastian", "Krah", email =  "f.krah@mailbox.org", role = c("aut", "cre")),
+    person("McCabe", "Lindsie", role = "aut")
+    )
+Description: Interface to the web data portals of 'Symbiota'. Allows to query taxon natural history collections (herbarium specimens, etc.) from 41 portals including plants, animals and fungi. See the 'Symbiota' main page <http://symbiota.org/docs/> for more information.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+URL: http://symbiota.org/docs/
+Imports: RSelenium, httr, rworldmap, ggplot2, maps, rvest, XML, xml2,
+        stringr, treemap, magick, Hmisc, crayon, dplyr, sf, mapview,
+        sp, methods, RCurl, sys, knitr
+Collate: 'details.R' 'download.R' 'getCollections.R'
+        'is_onclick_next_page.R' 'is_table_button.R' 'nr_pages.R'
+        'plot_datamap.R' 'plot_distmap.R' 'plot_recordstreemap.R'
+        'portals.R' 'records-class.R' 'records.R' 'recordsTable.R'
+        'remote_table.R' 'retry.R' 'start_stop_docker.R' 'symbiota.R'
+Suggests: rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-07-04 09:21:10 UTC; krah
+Author: Franz-Sebastian Krah [aut, cre],
+  McCabe Lindsie [aut]
+Maintainer: Franz-Sebastian Krah <f.krah@mailbox.org>
+Repository: CRAN
+Date/Publication: 2019-07-07 15:50:03 UTC

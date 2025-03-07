@@ -1,0 +1,40 @@
+Package: renderthis
+Title: Render Slides to Different Formats
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "John",
+             family = "Helveston",
+             role = c("aut", "cre", "cph"),
+             email = "john.helveston@gmail.com",
+             comment = c(ORCID = "0000-0002-2657-9191")),
+      person(given = "Garrick",
+             family = "Aden-Buie",
+             role = "aut",
+             email = "garrick@adenbuie.com",
+             comment = c(ORCID = "0000-0002-7111-0077")),
+      person(given = "Bryan",
+             family = "Shalloway",
+             role = "ctb"))
+Description: Render slides to different formats, including 'html', 'pdf',
+    'png', 'gif', 'pptx', and 'mp4', as well as a 'social' output, a 'png'
+    of the first slide re-sized for sharing on social media.
+License: MIT + file LICENSE
+Depends: R (>= 3.4.0)
+Imports: cli (>= 3.0.0), digest, fs, jsonlite, magick (>= 2.7.1),
+        pagedown, progress, rmarkdown, withr, xaringan, zip
+Suggests: av, chromote, knitr, lifecycle, officer, pdftools, testthat
+        (>= 3.0.0), webshot2
+Config/testthat/edition: 3
+Config/Needs/website: xaringanExtra
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-07-07 15:36:56 UTC; jhelvy
+Author: John Helveston [aut, cre, cph]
+    (<https://orcid.org/0000-0002-2657-9191>),
+  Garrick Aden-Buie [aut] (<https://orcid.org/0000-0002-7111-0077>),
+  Bryan Shalloway [ctb]
+Maintainer: John Helveston <john.helveston@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-07-13 07:30:02 UTC

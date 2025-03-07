@@ -1,0 +1,36 @@
+Package: refreg
+Type: Package
+Title: Conditional Multivariate Reference Regions
+Version: 0.1.0
+Authors@R: c(
+    person("Óscar", "Lado-Baleato",email="oscarlado.baleato@usc.es", role =c("cre","aut")),
+    person("Javier", "Roca-Pardiñas", email="roca@uvigo.es", role =c("aut", "ctb")),
+    person("Carmen", "Cadarso-Suárez",email="carmen.cadarso@usc.es", role = c("aut", "ths")),
+    person("Gude","Francisco",email="francisco.gude.sampedro@sergas.es", role = c("aut", "ths"))
+    )
+Maintainer: Óscar Lado-Baleato <oscarlado.baleato@usc.es>
+Description: An R package for estimating conditional multivariate reference regions. 
+    The reference region is non parametrically estimated using a kernel density estimator.
+    Covariates effects on the multivariate response means vector and variance-covariance
+    matrix, thus on the region shape, are estimated by flexible additive predictors. 
+    Continuous covariates non linear effects might be estimated using penalized splines smoothers.
+    Confidence intervals for the covariates estimated effects might be derived from
+    bootstrap resampling. Kernel density bandwidth can be estimated with different methods, including
+    a method that optimize the region coverage. Numerical, and graphical, summaries
+    can be obtained by the user in order to evaluate reference region performance with real data.
+    Full mathematical details can be found in <doi:10.1007/s00477-020-01901-1>.
+Imports:
+        ks,KernSmooth,mgcv,gridExtra,ggplot2,RColorBrewer,sp,stringr,foreach,doParallel,pracma,misc3d,rgl,mbend,matrixcalc
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-07-01 16:21:50 UTC; Usuario
+Author: Óscar Lado-Baleato [cre, aut],
+  Javier Roca-Pardiñas [aut, ctb],
+  Carmen Cadarso-Suárez [aut, ths],
+  Gude Francisco [aut, ths]
+Repository: CRAN
+Date/Publication: 2021-07-02 07:10:02 UTC

@@ -1,0 +1,44 @@
+Package: mockcpp
+Title: Mocking in C++ with 'testthat'
+Version: 0.0.1
+Authors@R: c(
+  person(
+    given = "Giovanni",
+    family = "Charles",
+    role = c('aut', 'cre'),
+    email = 'giovanni.charles@gmail.com'
+  ),
+  person(
+    given = "Imperial College of Science, Technology and Medicine",
+    family = "",
+    role = c('cph'),
+    email = 'giovanni.charles10@imperial.ac.uk'
+  ),
+  person(
+    given = "Björn",
+    family = "Fahller",
+    role = c('cph'),
+    email = 'bjorn@fahller.se'
+  ))
+Description: A header only library integrating 'testthat' with 'trompeoeil' to
+    provide mocking for C++ code in R packages. Mocking is a technique for
+    making a fake version of a software service. You can mock services to
+    test that your code interacts correctly with external interfaces, to make
+    your tests deterministic, or to break your tests down into smaller units.
+    'testthat' provides a testing framework for R and C++ code in R packages.
+    'trompeoeil' is a C++ header only library for mocking.
+License: MIT + file LICENSE | BSL-1.0
+Encoding: UTF-8
+Imports: testthat (>= 2.1.0)
+LinkingTo: testthat
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, Rcpp, cpp11, pkgload, decor
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-03-30 16:59:42 UTC; root
+Author: Giovanni Charles [aut, cre],
+  Imperial College of Science, Technology and Medicine [cph],
+  Björn Fahller [cph]
+Maintainer: Giovanni Charles <giovanni.charles@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-01 13:00:02 UTC

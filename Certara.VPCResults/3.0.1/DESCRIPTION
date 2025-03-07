@@ -1,0 +1,31 @@
+Package: Certara.VPCResults
+Title: Generate Visual Predictive Checks (VPC) Using 'shiny'
+Version: 3.0.1
+Authors@R: c(
+      person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Mike", "Talley", email = "mike.talley@certara.com", role = c("aut")),
+      person("Certara USA, Inc", role = c("cph","fnd"))
+      )
+Description: Utilize the 'shiny' interface to parameterize a Visual Predictive Check (VPC),
+    including selecting from different binning or binless methods and performing stratification,
+    censoring, and prediction correction. Generate the underlying 'tidyvpc' and 'ggplot2' code
+    directly from the user interface and download R or Rmd scripts to reproduce the VPCs in R.
+Depends: R (>= 4.0)
+License: LGPL-3
+URL: https://certara.github.io/R-VPCResults/
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, xpose, ggnewscale, testthat (>= 3.0.0)
+Imports: shinyAce, shinymeta, bslib (>= 0.7.0), colourpicker,
+        data.table, dplyr, DT, grDevices, ggplot2, plotly, shiny (>=
+        1.7.0), shinycssloaders, shinyjs, shinyWidgets, shinyjqui,
+        sortable, tidyvpc, htmltools, rlang, scales
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-10-07 13:51:07 UTC; jcraig
+Author: James Craig [aut, cre],
+  Mike Talley [aut],
+  Certara USA, Inc [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2024-10-10 18:50:06 UTC

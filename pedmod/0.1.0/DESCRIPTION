@@ -1,0 +1,52 @@
+Package: pedmod
+Type: Package
+Title: Pedigree Models
+Version: 0.1.0
+Authors@R: c(
+  person("Benjamin", "Christoffersen", 
+         email = "boennecd@gmail.com", 
+         role = c("cre", "aut")), 
+  person("Alan", "Genz", 
+         role = c("cph")),
+  person("Frank", "Bretz", 
+         role = c("cph")),
+  person("Bjoern", "Bornkamp", 
+         role = c("cph")), 
+  person("Torsten", "Hothorn", 
+         role = c("cph")),
+  person("Christophe", "Dutang", 
+         role = c("cph")),
+  person("Diethelm", "Wuertz", 
+         role = c("cph")),
+  person("R-core", email = "R-core@R-project.org",
+         role = "cph"))
+Maintainer: Benjamin Christoffersen <boennecd@gmail.com>
+Description: Provides functions to estimate mixed probit models using, for 
+    instance, pedigree data like in <doi:10.1002/sim.1603>. The models are also 
+    commonly called liability threshold models. The approximation is 
+    based on direct log marginal likelihood approximations like the randomized 
+    Quasi-Monte Carlo suggested by <doi:10.1198/106186002394> with a similar 
+    procedure to approximate the derivatives. Graph-based methods are also 
+    provided that can be used to simplify pedigrees.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+LinkingTo: Rcpp, RcppArmadillo, BH, testthat
+Imports: Rcpp
+Suggests: testthat, mvtnorm, xml2, knitr, rmarkdown, R.rsp, abind,
+        kinship2, igraph
+Depends: R (>= 3.5.0)
+VignetteBuilder: R.rsp
+SystemRequirements: C++14
+NeedsCompilation: yes
+Packaged: 2021-10-28 12:05:02 UTC; boennecd
+Author: Benjamin Christoffersen [cre, aut],
+  Alan Genz [cph],
+  Frank Bretz [cph],
+  Bjoern Bornkamp [cph],
+  Torsten Hothorn [cph],
+  Christophe Dutang [cph],
+  Diethelm Wuertz [cph],
+  R-core [cph]
+Repository: CRAN
+Date/Publication: 2021-10-29 08:50:02 UTC

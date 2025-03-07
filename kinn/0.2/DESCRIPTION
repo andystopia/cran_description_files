@@ -1,0 +1,22 @@
+Package: kinn
+Type: Package
+Title: An Implementation of 'kinn' Algorithm, a Graph Based Regression
+        Model
+Version: 0.2
+Date: 2016-06-27
+Author: Yossi Keshet
+Maintainer: Yossi Keshet <jossiekat@icloud.com>
+Description: A graph based regression model from flat unstructured dataset.
+             Each line in the input data set is treated as a node from which an edge to another line (node) can be formed.
+             In the training process, a model is created which contains sparse graph adjacency matrix.
+             This model is then used for prediction by taking a predictor and the model as inputs and outputs
+             a prediction which is an average of the most similar node and its neighbours in the model graph.
+Depends: R (>= 3.2.4)
+Imports: stringr,igraph,KRLS,caTools,mclust,caret,stats,graphics
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-07-27 09:34:05 UTC; josephkeshet
+Repository: CRAN
+Date/Publication: 2016-07-27 11:57:38

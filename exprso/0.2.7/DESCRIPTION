@@ -1,0 +1,31 @@
+Package: exprso
+Title: Rapid Deployment of Machine Learning Algorithms
+Version: 0.2.7
+URL: http://github.com/tpq/exprso
+BugReports: http://github.com/tpq/exprso/issues
+Authors@R: c(
+    person("Thomas", "Quinn", email = "contacttomquinn@gmail.com", role = c("aut", "cre")),
+    person("Daniel", "Tylee", email = "dantylee@gmail.com", role = "ctb")
+    )
+Description: Supervised machine learning has an increasingly important role in data
+    analysis. This package introduces a framework for rapidly building and deploying
+    supervised machine learning in a high-throughput manner. This package provides a
+    user-friendly interface that empowers investigators to execute state-of-the-art
+    binary and multi-class classification, as well as regression, with minimal
+    programming experience necessary.
+License: GPL-2
+LazyData: TRUE
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Imports: cluster, MASS, e1071, lattice, methods, nnet, plyr, stats,
+        randomForest, ROCR, sampling
+Depends: R (>= 3.2.2), kernlab
+Suggests: Biobase, edgeR, GEOquery, h2o, knitr, limma, magrittr, mRMRe,
+        pathClass, propr, rmarkdown, testthat
+NeedsCompilation: no
+Packaged: 2017-12-14 23:42:30 UTC; thom
+Author: Thomas Quinn [aut, cre],
+  Daniel Tylee [ctb]
+Maintainer: Thomas Quinn <contacttomquinn@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-12-14 23:59:58 UTC

@@ -1,0 +1,23 @@
+Package: bigpca
+Type: Package
+Title: PCA, Transpose and Multicore Functionality for 'big.matrix'
+        Objects
+Version: 1.0.3
+Date: 2015-11-07
+Author: Nicholas Cooper
+Maintainer: Nicholas Cooper <nick.cooper@cimr.cam.ac.uk>
+Depends: R (>= 3.0), grDevices, graphics, stats, utils, reader (>=
+        1.0.1), NCmisc (>= 1.1), bigmemory (>= 4.0.0), biganalytics
+Imports: parallel, methods, bigmemory.sri, irlba
+OS_type: unix
+Description: Adds wrappers to add functionality for big.matrix objects (see the bigmemory project).
+ This allows fast scalable principle components analysis (PCA), or singular value decomposition (SVD).
+ There are also functions for transposing, using multicore 'apply' functionality, data importing 
+ and for compact display of big.matrix objects. Most functions also work for standard matrices if 
+ RAM is sufficient.
+License: GPL (>= 2)
+Collate: 'bigpca.R'
+NeedsCompilation: no
+Packaged: 2015-11-07 18:49:10 UTC; ncooper
+Repository: CRAN
+Date/Publication: 2015-11-08 08:40:28

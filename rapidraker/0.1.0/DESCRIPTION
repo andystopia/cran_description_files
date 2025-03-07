@@ -1,0 +1,25 @@
+Package: rapidraker
+Type: Package
+Title: Rapid Automatic Keyword Extraction (RAKE) Algorithm
+Version: 0.1.0
+Authors@R: person("Christopher", "Baker", email = "chriscrewbaker@gmail.com",
+    role = c("aut", "cre"))
+Description: A 'Java' implementation of the RAKE algorithm (Rose, S., Engel, D., 
+  Cramer, N. and Cowley, W. (2010) <doi:10.1002/9780470689646.ch1>), which can 
+  be used to extract keywords from documents without any training data.
+URL: https://crew102.github.io/slowraker/articles/rapidraker.html
+BugReports: https://github.com/crew102/rapidraker/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1)
+Imports: rJava, openNLPdata, slowraker, utils
+Suggests: knitr, rmarkdown, testthat
+SystemRequirements: Java (>= 7.0)
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: no
+Packaged: 2018-01-05 18:55:43 UTC; cbaker
+Author: Christopher Baker [aut, cre]
+Maintainer: Christopher Baker <chriscrewbaker@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-01-05 19:14:49 UTC

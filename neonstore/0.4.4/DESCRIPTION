@@ -1,0 +1,44 @@
+Package: neonstore
+Title: NEON Data Store
+Version: 0.4.4
+Authors@R: c(person(
+              "Carl", "Boettiger", 
+              email = "cboettig@gmail.com", 
+              role = c("aut", "cre"),
+              comment = c(ORCID = "0000-0002-1642-628X")),
+            person("Quinn", "Thomas", role = "aut",
+                   comment = c(ORCID = "0000-0003-1282-7825")),
+            person("Christine", "Laney", role = "aut", 
+                   comment = c("ORCID" = "0000-0002-4944-2083")),
+            person("Claire", "Lunch", role = "aut",
+                   comment = c("ORCID" = "0000-0001-8753-6593")),
+            person("Noam", "Ross", role = c("ctb"), 
+                   comment = c(ORCID = "0000-0002-2136-0000"))
+            )
+Description: The National Ecological Observatory Network (NEON) provides access
+  to its numerous data products through its REST API, 
+  <https://data.neonscience.org/data-api/>. This package provides a
+  high-level user interface for downloading and storing NEON data products.
+  Unlike 'neonUtilities', this package will avoid repeated downloading,
+  provides persistent storage, and improves performance.  'neonstore' can also
+  construct a local 'duckdb' database of stacked tables, making it possible
+  to work with tables that are far to big to fit into memory.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: DBI, duckdb (>= 0.2.3), httr, progress, R.utils, tools, thor,
+        utils, vroom (>= 1.5.1), zip
+RoxygenNote: 7.1.1
+Suggests: tibble, jsonlite, testthat, covr, xml2, spelling, rstudioapi,
+        neonUtilities, rhdf5, curl, openssl, digest
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-08-03 16:03:27 UTC; cboettig
+Author: Carl Boettiger [aut, cre] (<https://orcid.org/0000-0002-1642-628X>),
+  Quinn Thomas [aut] (<https://orcid.org/0000-0003-1282-7825>),
+  Christine Laney [aut] (<https://orcid.org/0000-0002-4944-2083>),
+  Claire Lunch [aut] (<https://orcid.org/0000-0001-8753-6593>),
+  Noam Ross [ctb] (<https://orcid.org/0000-0002-2136-0000>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-03 16:30:02 UTC

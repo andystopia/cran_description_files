@@ -1,0 +1,41 @@
+Type: Package
+Package: connectapi
+Title: Utilities for Interacting with the 'RStudio Connect' Server API
+Version: 0.1.1.1
+Authors@R: 
+    c(person(given = "Sean",
+             family = "Lopp",
+             role = c("aut"),
+             email = "sean@rstudio.com"),
+      person(given = "Cole",
+             family = "Arendt",
+             role = c("aut", "cre"),
+             email = "cole@rstudio.com"),
+      person(given = "RStudio PBC",
+             role = c("cph", "fnd")))
+Description: Provides a helpful 'R6' class and methods for interacting with 
+    the 'RStudio Connect' Server API along with some meaningful utility functions
+    for regular tasks. API documentation varies by 'RStudio Connect' installation
+    and version, but the latest documentation is also hosted publicly at 
+    <https://docs.rstudio.com/connect/api/>.
+License: MIT + file LICENSE
+URL: https://github.com/rstudio/connectapi
+Imports: config, dplyr, fs, glue, httr, lifecycle, magrittr, progress,
+        purrr, R6, rlang (>= 0.4.2), tibble, uuid, vctrs (>= 0.3.0),
+        yaml, bit64, jsonlite
+Suggests: crayon, flexdashboard, ggplot2, gridExtra, htmltools, knitr,
+        lubridate, processx, rmarkdown, rprojroot, spelling, testthat,
+        rsconnect, webshot2, covr, mockery, devtools
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-07-20 20:50:15 UTC; r124525
+Author: Sean Lopp [aut],
+  Cole Arendt [aut, cre],
+  RStudio PBC [cph, fnd]
+Maintainer: Cole Arendt <cole@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-07-21 12:20:02 UTC

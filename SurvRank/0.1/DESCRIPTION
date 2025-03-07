@@ -1,0 +1,25 @@
+Package: SurvRank
+Title: Rank Based Survival Modelling
+Version: 0.1
+Authors@R: c(person("Michael", "Laimighofer", role = c("aut", "cre","ctb"),
+    email = "michael.laimighofer@helmholtz-muenchen.de")
+    )
+Author: Michael Laimighofer [aut, cre, ctb]
+Maintainer: Michael Laimighofer <michael.laimighofer@helmholtz-muenchen.de>
+Description: Estimation of the prediction accuracy in a unified survival AUC
+    approach. Model selection and prediction estimation based on a survival AUC.
+    Stepwise model selection, based on several ranking approaches.
+License: GPL-2
+Depends: R (>= 3.0.0), survival(>= 2.37-6), foreach(>= 1.0.11)
+Imports: ipred(>= 0.9-3), sampling(>= 2.6), glmnet(>= 1.9-8), utils(>=
+        3.1.0), survAUC(>= 1.0-5), randomForestSRC(>= 1.5.4),
+        ggplot2(>= 1.0.0), reshape(>= 0.8), gplots(>= 2.16.0),
+        mboost(>= 2.3-0), parallel(>= 3.2.0), doParallel(>= 1.0.8),
+        rpart(>= 4.1-8)
+LazyData: true
+Suggests: knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2015-08-26 09:57:55 UTC; michael.laimighofer
+Repository: CRAN
+Date/Publication: 2015-08-26 14:22:13

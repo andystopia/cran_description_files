@@ -1,0 +1,39 @@
+Package: PKPDsim
+Type: Package
+Title: Tools for Performing Pharmacokinetic-Pharmacodynamic Simulations
+Version: 1.3.0
+Date: 2023-02-24
+Authors@R: c(
+        person("Ron", "Keizer", email = "ron@insight-rx.com", role = c("aut", "cre")),
+        person("Jasmine", "Hughes", email = "jasmine@insight-rx.com", role = "aut"),
+        person("Dominic", "Tong", email = "dominic@insight-rx.com", role = "aut"),
+        person("Kara", "Woo", email = "kara@insight-rx.com", role = c("aut")),
+        person("InsightRX", role = c("cph", "fnd")))
+Depends: R (>= 3.0.2)
+Imports: Rcpp (>= 0.12.9), BH, data.table, stringr, MASS, randtoolbox,
+        jsonlite, stats, parallel, magrittr
+Suggests: httr, testthat (>= 3.0.0), mockery, knitr, rmarkdown
+LinkingTo: BH, Rcpp (>= 0.12.9)
+Description: Simulate dose regimens for pharmacokinetic-pharmacodynamic (PK-PD)
+        models described by differential equation (DE) systems. Simulation using 
+        ADVAN-style analytical equations is also supported (Abuhelwa et al. (2015) 
+        <doi:10.1016/j.vascn.2015.03.004>).
+License: MIT + file LICENSE
+URL: https://github.com/InsightRX/PKPDsim,
+        https://insightrx.github.io/PKPDsim/
+LazyData: TRUE
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+Config/Needs/website: tidyverse, nlmixr2
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-03-02 00:16:35 UTC; ronkeizer
+Author: Ron Keizer [aut, cre],
+  Jasmine Hughes [aut],
+  Dominic Tong [aut],
+  Kara Woo [aut],
+  InsightRX [cph, fnd]
+Maintainer: Ron Keizer <ron@insight-rx.com>
+Repository: CRAN
+Date/Publication: 2023-03-02 12:20:28 UTC

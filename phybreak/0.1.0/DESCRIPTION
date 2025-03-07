@@ -1,0 +1,25 @@
+Package: phybreak
+Type: Package
+Title: Analysis of Outbreaks with Sequence Data
+Version: 0.1.0
+Date: 2016-08-15
+Authors@R: person("Don", "Klinkenberg", 
+    email = "don@xs4all.nl", role = c("aut", "cre"))
+Description: Implementation the outbreak analysis method described by 
+    Klinkenberg et al (2016) <doi:10.1101/069195>. 
+    Simulate outbreaks, analyse datasets by creating samples from the 
+    posterior distribution with a Markov-Chain Monte Carlo sampler, 
+    and summarize the output.
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R(>= 3.1.0), phangorn, ape
+Imports: Rcpp (>= 0.12.1), methods, stats, utils
+Suggests: coda, phytools, OutbreakTools
+LinkingTo: Rcpp
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-08-17 10:05:00 UTC; don
+Author: Don Klinkenberg [aut, cre]
+Maintainer: Don Klinkenberg <don@xs4all.nl>
+Repository: CRAN
+Date/Publication: 2016-08-17 12:23:57

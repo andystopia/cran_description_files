@@ -1,0 +1,62 @@
+Package: tidytransit
+Type: Package
+Title: Read, Validate, Analyze, and Map GTFS Feeds
+Version: 1.6.1
+Authors@R: c(
+    person("Flavio", "Poletti", role = c("aut", "cre"), email = "flavio.poletti@hotmail.ch"),
+    person(given = "Daniel",family = "Herszenhut",role = c("aut"),email = "dhersz@gmail.com",comment = c(ORCID = "0000-0001-8066-1105")),
+    person("Mark", "Padgham", role = c("aut"), email = "mark.padgham@email.com"),
+    person("Tom", "Buckley", role = c("aut"), email = "tom@tbuckl.com"),
+    person("Danton", "Noriega-Goodwin", role = c("aut"), email = "danton.noriega@gmail.com"),
+    person("Angela", "Li", role = c("ctb"), email = "angela@rladies.org"),
+    person("Elaine", "McVey", role = c("ctb"), email = "elaine.mcvey@transloc.com"),
+    person("Charles Hans", "Thompson", role = c("ctb"), email = "hans.thompson1@gmail.com"),
+    person("Michael", "Sumner", role = c("ctb")),
+    person("Patrick", "Hausmann", role = c("ctb"), email = "patrick.hausmann@covimo.de"),
+    person("Bob", "Rudis", role = c("ctb"), email = "bob@rud.is"),
+    person("James", "Lamb", role = c("ctb")),
+    person("Alexandra", "Kapp", role = c("ctb")),
+    person("Kearey", "Smith", role = c("ctb")),
+    person("Dave", "Vautin", role = c("ctb")),
+    person("Kyle", "Walker", role = c("ctb")),
+    person("Davis", "Vaughan", role = c("ctb")),
+    person("Ryan", "Rymarczyk", role = c("ctb")),
+    person("Kirill", "Müller", role = c("ctb"))
+  )
+Description: Read General Transit Feed Specification (GTFS) zipfiles into a list of R dataframes. Perform validation of the data structure against the specification. Analyze the headways and frequencies at routes and stops. Create maps and perform spatial analysis on the routes and stops. Please see the GTFS documentation here for more detail: <https://gtfs.org/>.
+License: GPL
+LazyData: TRUE
+Depends: R (>= 3.6.0)
+Imports: gtfsio (>= 1.1.0), dplyr (>= 1.1.1), data.table (>= 1.12.8),
+        rlang, sf, hms, digest, geodist
+Suggests: testthat (>= 3.1.5), knitr, markdown, rmarkdown, ggplot2,
+        scales, lubridate, leaflet
+RoxygenNote: 7.2.3
+URL: https://github.com/r-transit/tidytransit
+BugReports: https://github.com/r-transit/tidytransit
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-12-07 12:39:38 UTC; flaviopoletti
+Author: Flavio Poletti [aut, cre],
+  Daniel Herszenhut [aut] (<https://orcid.org/0000-0001-8066-1105>),
+  Mark Padgham [aut],
+  Tom Buckley [aut],
+  Danton Noriega-Goodwin [aut],
+  Angela Li [ctb],
+  Elaine McVey [ctb],
+  Charles Hans Thompson [ctb],
+  Michael Sumner [ctb],
+  Patrick Hausmann [ctb],
+  Bob Rudis [ctb],
+  James Lamb [ctb],
+  Alexandra Kapp [ctb],
+  Kearey Smith [ctb],
+  Dave Vautin [ctb],
+  Kyle Walker [ctb],
+  Davis Vaughan [ctb],
+  Ryan Rymarczyk [ctb],
+  Kirill Müller [ctb]
+Maintainer: Flavio Poletti <flavio.poletti@hotmail.ch>
+Repository: CRAN
+Date/Publication: 2023-12-07 13:40:02 UTC

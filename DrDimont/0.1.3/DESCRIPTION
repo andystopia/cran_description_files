@@ -1,0 +1,59 @@
+Package: DrDimont
+Type: Package
+Title: Drug Response Prediction from Differential Multi-Omics Networks
+Version: 0.1.3
+Authors@R: c(
+  person("Katharina", "Baum", , "katharina.baum@hpi.de", role = "cre",
+         comment = c(ORCID = "0000-0001-7256-0566")),
+  person("Pauline", "Hiort", , "pauline.hiort@hpi.de", role = "aut",
+         comment = c(ORCID = "0000-0002-3530-7358")),
+  person("Julian", "Hugo", , "julian.hugo@student.hpi.de", role = "aut",
+         comment = c(ORCID = "0000-0003-3355-1071")),
+  person("Spoorthi", "Kashyap", , "spoorthi.kashyap@student.hpi.de", role = "aut"),
+  person("Nataniel", "Müller", , "nataniel.mueller@student.hpi.de", role = "aut",
+         comment = c(ORCID = "0000-0002-0275-3992")),
+  person("Justus", "Zeinert", , "justus.zeinert@student.hpi.de", role = "aut",
+         comment = c(ORCID = "0000-0003-3918-0507"))
+  )
+Description: While it has been well established that drugs affect and help
+  patients differently, personalized drug response predictions remain
+  challenging. Solutions based on single omics measurements have been proposed,
+  and networks provide means to incorporate molecular interactions into reasoning.
+  However, how to integrate the wealth of information contained in multiple omics
+  layers still poses a complex problem.
+  We present a novel network analysis pipeline, DrDimont, Drug response prediction
+  from Differential analysis of multi-omics networks. It allows for comparative
+  conclusions between two conditions and translates them into differential drug
+  response predictions. DrDimont focuses on molecular interactions. It establishes
+  condition-specific networks from correlation within an omics layer that are
+  then reduced and combined into heterogeneous, multi-omics molecular networks.
+  A novel semi-local, path-based integration step ensures integrative conclusions.
+  Differential predictions are derived from comparing the condition-specific
+  integrated networks. DrDimont's predictions are explainable, i.e., molecular
+  differences that are the source of high differential drug scores can be retrieved.
+  Our proposed pipeline leverages multi-omics data for differential predictions,
+  e.g. on drug response, and includes prior information on interactions.
+  The case study presented in the vignette uses data published by
+  Krug (2020) <doi:10.1016/j.cell.2020.10.036>. The package license applies only
+  to the software and explicitly not to the included data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Imports: igraph, dplyr, stringr, WGCNA, Rfast, readr, tibble, tidyr,
+        magrittr, rlang, utils, stats
+Suggests: rmarkdown, knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2022-05-13 18:59:09 UTC; kabaum
+Author: Katharina Baum [cre] (<https://orcid.org/0000-0001-7256-0566>),
+  Pauline Hiort [aut] (<https://orcid.org/0000-0002-3530-7358>),
+  Julian Hugo [aut] (<https://orcid.org/0000-0003-3355-1071>),
+  Spoorthi Kashyap [aut],
+  Nataniel Müller [aut] (<https://orcid.org/0000-0002-0275-3992>),
+  Justus Zeinert [aut] (<https://orcid.org/0000-0003-3918-0507>)
+Maintainer: Katharina Baum <katharina.baum@hpi.de>
+Repository: CRAN
+Date/Publication: 2022-05-17 10:20:02 UTC

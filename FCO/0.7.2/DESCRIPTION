@@ -1,0 +1,32 @@
+Package: FCO
+Title: Flexible Cutoffs for Model Fit Evaluation in Covariance-Based
+        Structural Models
+Version: 0.7.2
+Authors@R: 
+    c(person(given = "Thomas",
+           family = "Niemand",
+           role = c("aut", "cre"),
+           email = "thomas.niemand@gmail.com",
+           comment = c(ORCID = "0000-0001-7677-1168")),
+    person(given = "Robert",
+            family = "Mai",
+            role = "ctb",
+            email = "robert.mai@grenoble-em.com",
+            comment = c(ORCID = "0000-0002-8364-9328")))
+Description: A toolbox to derive flexible cutoffs for fit indices in 'Covariance-based Structural Equation Modeling' based on the paper by 'Niemand & Mai (2018)' <doi:10.1007/s11747-018-0602-9>. Flexible cutoffs are an alternative to fixed cutoffs - rules-of-thumb - regarding an appropriate cutoff for fit indices such as 'CFI' or 'SRMR'. It has been demonstrated that these flexible cutoffs perform better than fixed cutoffs in grey areas where misspecification is not easy to detect. The package provides an alternative to the tool at <https://flexiblecutoffs.org> as it allows to tailor flexible cutoffs to a given dataset and model, which is so far not available in the tool. The package simulates fit indices based on a given dataset and model and then estimates the flexible cutoffs. Some useful functions, e.g., to determine the 'GoF-' or 'BoF-nature' of a fit index, are provided. So far, additional options for a relative use (is a model better than another?) are provided in an exploratory manner.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: lavaan, semTools, parallel, checkmate, data.table
+Suggests: rmarkdown, knitr, ggplot2, MASS, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Author: Thomas Niemand [aut, cre] (<https://orcid.org/0000-0001-7677-1168>),
+  Robert Mai [ctb] (<https://orcid.org/0000-0002-8364-9328>)
+Maintainer: Thomas Niemand <thomas.niemand@gmail.com>
+NeedsCompilation: no
+Packaged: 2022-02-11 12:47:29 UTC; thomasniemand
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2022-02-11 19:20:07 UTC

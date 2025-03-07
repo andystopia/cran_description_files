@@ -1,0 +1,34 @@
+Package: depCensoring
+Type: Package
+Title: Statistical Methods for Survival Data with Dependent Censoring
+Version: 0.1.2
+Authors@R: c(person("Ilias", "Willems", email = "ilias.willems@kuleuven.be", role = "aut", comment = c(ORCID = "0009-0001-9463-9942")),
+    person("Gilles", "Crommen", email = "gilles.crommen@kuleuven.be", role = "aut", comment = c(ORCID = "0000-0001-8380-1900")),
+    person("Negera Wakgari", "Deresa", email = "negera.deresa@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1302-3725")),
+    person("Ingrid", "Van Keilegom", email = "ingrid.vankeilegom@kuleuven.be", role = "aut", comment = c(ORCID = "0000-0001-8827-7642")))
+Maintainer: Negera Wakgari Deresa <negera.deresa@gmail.com>
+Description: Several statistical methods for analyzing survival data under various forms of dependent
+    censoring are implemented in the package. In addition to accounting for dependent censoring, it 
+    offers tools to adjust for unmeasured confounding factors. The implemented approaches allow 
+    users to estimate the dependency between survival time and dependent censoring time, based 
+    solely on observed survival data. For more details on the methods, refer to Deresa and Van 
+    Keilegom (2021) <doi:10.1093/biomet/asaa095>, Czado and Van Keilegom (2023)
+    <doi:10.1093/biomet/asac067>, Crommen et al. (2024) <doi:10.1007/s11749-023-00903-9>
+    and Willems et al. (2024+) <doi:10.48550/arXiv.2403.11860>.
+Imports: survival, foreach, parallel, doParallel, pbivnorm, stats,
+        MASS, nleqslv, OpenMx, mvtnorm, rafalib, rvinecopulib,
+        matrixcalc, nloptr, stringr, numDeriv, SemiPar.depCens
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-10-03 20:57:06 UTC; Negera Deresa
+Author: Ilias Willems [aut] (<https://orcid.org/0009-0001-9463-9942>),
+  Gilles Crommen [aut] (<https://orcid.org/0000-0001-8380-1900>),
+  Negera Wakgari Deresa [aut, cre]
+    (<https://orcid.org/0000-0002-1302-3725>),
+  Ingrid Van Keilegom [aut] (<https://orcid.org/0000-0001-8827-7642>)
+Repository: CRAN
+Date/Publication: 2024-10-03 23:00:44 UTC

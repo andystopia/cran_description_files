@@ -1,0 +1,38 @@
+Package: AZIAD
+Title: Analyzing Zero-Inflated and Zero-Altered Data
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Niloufar", 
+           family = "Dousti Mousavi", 
+           role = c("aut", "cre",'cph'),
+           email = "sdoust2@uic.edu"), 
+    person(given = "Hani",
+           family = "Aldirawi",
+           role = c("aut",'cph'),
+           email = "hani.aldirawi@csusb.edu"),
+    person(given = "Jie",
+           family = "Yang",
+           role = c("aut",'cph'),
+           email = "jyang06@uic.edu"))
+Maintainer: Niloufar Dousti Mousavi <sdoust2@uic.edu>
+Description: Computes maximum likelihood estimate of general, zero inflated, and zero altered models for discrete and continuous distributions. Computes Kolmogorov-Smirnov (KS) test and 
+             likelihood ratio test for general, zero-inflated, and zero-altered data.
+             It obtains the inverse of fisher information matrix and confidence interval for the parameters of general, zero inflated, and zero altered models. It simulate random deviates from zero inflated or hurdle models to obtain maximum likelihood estimate.
+             It is based on the work of Aldirawi et al. (2022) <doi:10.1007/s42519-021-00230-y>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2.9000
+Imports: extraDistr (>= 1.9.1), methods (>= 4.0.3), rootSolve (>=
+        1.8.2.1), foreach (>= 1.5.2), doParallel (>= 1.0.16), parallel
+        (>= 4.1.2), QRM(>= 0.3-31), dplyr(>= 1.0.8), stats (>= 4.1.2),
+        rmutil (>= 1.1.5), corpcor (>= 1.6.10), MixAll (>= 1.5.1),
+        matrixcalc (>= 1.0-5), lqmm(>= 1.5.6), base(>= 4.1.2),
+        EnvStats(>= 2.6.0)
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2022-03-09 17:15:00 UTC; nilouimac
+Author: Niloufar Dousti Mousavi [aut, cre, cph],
+  Hani Aldirawi [aut, cph],
+  Jie Yang [aut, cph]
+Repository: CRAN
+Date/Publication: 2022-03-11 09:50:07 UTC

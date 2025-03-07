@@ -1,0 +1,37 @@
+Package: footprint
+Title: Calculate Air Travel Emissions
+Version: 0.1
+Authors@R: 
+    c(person(given = "Anthony",
+             family = "Schmidt",
+             role = c("aut", "cre"),
+             email = "aschmi11@utk.edu",
+             comment = c(ORCID = "0000-0003-4478-0638")),
+      person(given = "Kasia",
+             family = "Kulma",
+             role = "aut",
+             email = "katarzyna.kulma@gmail.com"))
+Description: A handy tool to calculate carbon footprints from
+    air travel based on three-letter International Air Transport Association (IATA) airport codes or latitude and longitude.
+    footprint first calculates the great-circle distance between departure and arrival 
+    destinations. It then uses the Department of Environment, Food & Rural Affairs (DEFRA) 
+    greenhouse gas conversion factors for business air travel to estimate the carbon footprint.
+    These conversion factors consider trip length, flight class (e.g. economy, business), and emissions 
+    metric (e.g. carbon dioxide equivalent, methane).
+License: CC0
+URL: https://github.com/acircleda/footprint
+BugReports: https://github.com/acircleda/footprint/issues
+Depends: R (>= 3.5.0)
+Imports: airportr, dplyr, magrittr, rlang
+Suggests: devtools, knitr, rmarkdown, testthat (>= 2.1.0), tibble, covr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-01-04 16:54:42 UTC; aschmidt
+Author: Anthony Schmidt [aut, cre] (<https://orcid.org/0000-0003-4478-0638>),
+  Kasia Kulma [aut]
+Maintainer: Anthony Schmidt <aschmi11@utk.edu>
+Repository: CRAN
+Date/Publication: 2021-01-06 10:40:02 UTC

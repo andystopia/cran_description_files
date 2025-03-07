@@ -1,0 +1,71 @@
+Type: Package
+Package: magclass
+Title: Data Class and Tools for Handling Spatial-Temporal Data
+Version: 6.10.0
+Date: 2023-06-25
+Authors@R: c(
+    person("Jan Philipp", "Dietrich", , "dietrich@pik-potsdam.de", role = c("aut", "cre")),
+    person("Benjamin Leon", "Bodirsky", , "bodirsky@pik-potsdam.de", role = "aut"),
+    person("Markus", "Bonsch", role = "aut"),
+    person("Florian", "Humpenoeder", , "humpenoeder@pik-potsdam.de", role = "aut"),
+    person("Stephen", "Bi", role = "aut"),
+    person("Kristine", "Karstens", , "karstens@pik-potsdam.de", role = "aut"),
+    person("Debbora", "Leip", , "leip@pik-potsdam.de", role = "aut"),
+    person("Lavinia", "Baumstark", , "lavinia@pik-potsdam.de", role = "ctb"),
+    person("Christoph", "Bertram", , "bertram@pik-potsdam.de", role = "ctb"),
+    person("Anastasis", "Giannousakis", , "giannou@pik-potsdam.de", role = "ctb"),
+    person("David", "Klein", , "dklein@pik-potsdam.de", role = "ctb"),
+    person("Ina", "Neher", role = "ctb"),
+    person("Michaja", "Pehl", , "pehl@pik-potsdam.de", role = "ctb"),
+    person("Anselm", "Schultes", role = "ctb"),
+    person("Miodrag", "Stevanovic", , "miodrag@pik-potsdam.de", role = "ctb"),
+    person("Xiaoxi", "Wang", , "wang@pik-potsdam.de", role = "ctb"),
+    person("Felicitas", "Beier", , "beier@pik-potsdam.de", role = "ctb"),
+    person("Mika", "Pflüger", role = "ctb"),
+    person("Oliver", "Richters", role = "ctb")
+  )
+Description: Data class for increased interoperability working with
+    spatial-temporal data together with corresponding functions and
+    methods (conversions, basic calculations and basic data manipulation).
+    The class distinguishes between spatial, temporal and other dimensions
+    to facilitate the development and interoperability of tools build for
+    it. Additional features are name-based addressing of data and internal
+    consistency checks (e.g. checking for the right data order in
+    calculations).
+License: LGPL-3 | file LICENSE
+URL: https://github.com/pik-piam/magclass,
+        https://doi.org/10.5281/zenodo.1158580
+BugReports: https://github.com/pik-piam/magclass/issues
+Depends: R (>= 2.10.0), methods
+Imports: abind, data.table, stats
+Suggests: covr, lpjmlkit, knitr, ncdf4, pkgconfig, quitte, raster,
+        rmarkdown, sf, terra, testthat (>= 3.1.5), tibble, withr
+Additional_repositories: https://pik-piam.r-universe.dev
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-07-03 17:17:32 UTC; jpd
+Author: Jan Philipp Dietrich [aut, cre],
+  Benjamin Leon Bodirsky [aut],
+  Markus Bonsch [aut],
+  Florian Humpenoeder [aut],
+  Stephen Bi [aut],
+  Kristine Karstens [aut],
+  Debbora Leip [aut],
+  Lavinia Baumstark [ctb],
+  Christoph Bertram [ctb],
+  Anastasis Giannousakis [ctb],
+  David Klein [ctb],
+  Ina Neher [ctb],
+  Michaja Pehl [ctb],
+  Anselm Schultes [ctb],
+  Miodrag Stevanovic [ctb],
+  Xiaoxi Wang [ctb],
+  Felicitas Beier [ctb],
+  Mika Pflüger [ctb],
+  Oliver Richters [ctb]
+Maintainer: Jan Philipp Dietrich <dietrich@pik-potsdam.de>
+Repository: CRAN
+Date/Publication: 2023-07-04 11:50:02 UTC

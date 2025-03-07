@@ -1,0 +1,24 @@
+Package: SimReg
+Type: Package
+Title: Similarity Regression
+Version: 3.3
+Date: 2021-02-10
+Author: Daniel Greene
+Maintainer: Daniel Greene <dg333@cam.ac.uk>
+Description: Similarity regression,
+    evaluating the probability of association between sets of ontological terms
+    and binary response vector. A no-association model is compared with one in which
+    the log odds of a true response is linked to the semantic similarity
+    between terms and a latent characteristic ontological profile - 'Phenotype Similarity Regression for Identifying the Genetic Determinants of Rare Diseases', Greene et al 2016 <doi:10.1016/j.ajhg.2016.01.008>. 
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.11.1), ontologyIndex (>= 2.0), ontologySimilarity
+        (>= 2.0), ontologyPlot
+LinkingTo: Rcpp
+Depends: R (>= 3.0.0)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-02-15 14:14:56 UTC; dg
+Repository: CRAN
+Date/Publication: 2021-02-15 16:30:05 UTC

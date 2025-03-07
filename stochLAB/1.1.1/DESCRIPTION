@@ -1,0 +1,42 @@
+Type: Package
+Package: stochLAB
+Title: Stochastic Collision Risk Model
+Version: 1.1.1
+Authors@R: c(
+    person("Grant", "Humphries", , "grwhumphries@blackbawks.net", role = c("aut", "cre")),
+    person("Bruno", "Caneco", , "bruno@dmpstats.com", role = "aut"),
+    person("Marine Scotland", role = c("fnd", "cph")),
+    person("HiDef", role = "cph"),
+    person("DMPstats", role = "cph")
+  )
+Description: Collision Risk Models for avian fauna (seabird and migratory birds) at
+    offshore wind farms. The base deterministic model is derived from 
+    Band (2012) <https://tethys.pnnl.gov/publications/using-collision-risk-model-assess-bird-collision-risks-offshore-wind-farms>. 
+    This was further expanded on by Masden (2015) <doi:10.7489/1659-1> and code 
+    used here is heavily derived from this work with input from Dr A. Cook at the 
+    British Trust for Ornithology. 
+License: GPL (>= 3)
+Depends: R (>= 4.0)
+Imports: cli, dplyr, glue, logr, magrittr, msm, pracma, purrr, rlang,
+        stats, tibble, tidyr
+Suggests: rmarkdown, knitr, spelling, testthat (>= 3.0.0), covr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+LazyDataCompression: bzip2
+URL: https://github.com/HiDef-Aerial-Surveying/stochLAB,
+        https://hidef-aerial-surveying.github.io/stochLAB/
+BugReports: https://github.com/HiDef-Aerial-Surveying/stochLAB/issues
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-12-05 12:26:12 UTC; grant.humphries
+Author: Grant Humphries [aut, cre],
+  Bruno Caneco [aut],
+  Marine Scotland [fnd, cph],
+  HiDef [cph],
+  DMPstats [cph]
+Maintainer: Grant Humphries <grwhumphries@blackbawks.net>
+Repository: CRAN
+Date/Publication: 2022-12-06 07:40:02 UTC

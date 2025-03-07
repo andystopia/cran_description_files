@@ -1,0 +1,38 @@
+Package: mixgb
+Title: Multiple Imputation Through 'XGBoost'
+Version: 1.0.2
+Authors@R: c(
+    person(given = "Yongshi", family ="Deng", email = "yongshi.deng@auckland.ac.nz",
+           role = c("aut","cre"),comment =c(ORCID = "0000-0001-5845-859X")),
+    person(given = "Thomas", family = "Lumley", email = "t.lumley@auckland.ac.nz",
+           role = "ths")
+  ) 
+Description: Multiple imputation using 'XGBoost', subsampling, and predictive mean 
+    matching as described in Deng and Lumley (2023) <arXiv:2106.01574>. Our
+    method utilizes the capabilities of XGBoost, a highly efficient implementation
+    of gradient boosted trees, to capture interactions and non-linear relations
+    automatically. Moreover, we have integrated subsampling and predictive mean
+    matching to minimize bias and reflect appropriate imputation variability. This
+    package supports various types of variables and offers flexible settings for
+    subsampling and predictive mean matching. Additionally, it includes diagnostic
+    tools for evaluating the quality of the imputed values.
+URL: https://github.com/agnesdeng/mixgb,
+        https://agnesdeng.github.io/mixgb/
+BugReports: https://github.com/agnesdeng/mixgb/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: data.table, ggplot2, Matrix, mice, Rfast, rlang, scales,
+        stats, tidyr, utils, xgboost
+Suggests: knitr, rmarkdown, RColorBrewer
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-16 09:15:12 UTC; agnes
+Author: Yongshi Deng [aut, cre] (<https://orcid.org/0000-0001-5845-859X>),
+  Thomas Lumley [ths]
+Maintainer: Yongshi Deng <yongshi.deng@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2023-02-16 11:00:02 UTC

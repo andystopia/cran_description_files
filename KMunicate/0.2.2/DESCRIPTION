@@ -1,0 +1,42 @@
+Package: KMunicate
+Title: KMunicate-Style Kaplan–Meier Plots
+Version: 0.2.2
+Authors@R: 
+    c(person(given = "Alessandro",
+             family = "Gasparini",
+             role = c("aut", "cre", "cph"),
+             email = "alessandro@ellessenne.xyz",
+             comment = c(ORCID = "0000-0002-8319-7624")),
+      person(given = "Ary",
+             family = "Serpa Neto",
+             role = "ctb"))
+Description: Produce Kaplan–Meier plots in the style recommended
+    following the KMunicate study by Morris et al. (2019)
+    <doi:10.1136/bmjopen-2019-030215>. The KMunicate style consists of
+    Kaplan-Meier curves with confidence intervals to quantify uncertainty
+    and an extended risk table (per treatment arm) depicting the number of
+    study subjects at risk, events, and censored observations over time.
+    The resulting plots are built using 'ggplot2' and can be further
+    customised to a certain extent, including themes, fonts, and colour
+    scales.
+License: MIT + file LICENSE
+URL: https://ellessenne.github.io/KMunicate-package/
+BugReports: https://github.com/ellessenne/KMunicate-package/issues
+Depends: R (>= 2.10), survival
+Imports: checkmate, cowplot, ggplot2, pammtools, tidyr
+Suggests: broom, covr, devtools, knitr, rmarkdown, simsurv, testthat,
+        usethis
+VignetteBuilder: knitr
+ByteCompile: true
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-08-16 10:43:20 UTC; ellessenne
+Author: Alessandro Gasparini [aut, cre, cph]
+    (<https://orcid.org/0000-0002-8319-7624>),
+  Ary Serpa Neto [ctb]
+Maintainer: Alessandro Gasparini <alessandro@ellessenne.xyz>
+Repository: CRAN
+Date/Publication: 2022-08-16 13:30:06 UTC

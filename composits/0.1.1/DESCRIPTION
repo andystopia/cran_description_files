@@ -1,0 +1,39 @@
+Package: composits
+Type: Package
+Title: Compositional, Multivariate and Univariate Time Series Outlier
+        Ensemble
+Version: 0.1.1
+Authors@R: c(
+  person("Sevvandi", "Kandanaarachchi", email = "sevvandik@gmail.com",
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0337-0395")),
+  person("Patricia", "Menendez", email = "Patricia.Menendez@monash.edu",
+  role = c("aut"), comment = c(ORCID = "0000-0003-0701-6315")), 
+  person("Ursula", "Laa", email = "Ursula.Laa@monash.edu",
+  role = c("aut"), comment = c(ORCID = "0000-0002-0249-6439")),
+  person("Ruben", "Loaiza-Maya", email = "Ruben.LoaizaMaya@monash.edu",
+  role = c("aut"), comment = c(ORCID = "0000-0003-4132-8355"))
+  )
+Maintainer: Sevvandi Kandanaarachchi <sevvandik@gmail.com>
+Description: A compositional, multivariate and univariate time series outlier ensemble. 
+    It uses the four R packages 'forecast', 'tsoutliers', 'otsad' and 'anomalize' to detect time
+    series outliers (Kandanaarachchi, Menendez 2020) <doi:10.13140/RG.2.2.32217.95845>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: otsad, tsoutliers, forecast, anomalize, dplyr, tibble, rlang,
+        pracma, dobin, ICS, fastICA, gridExtra, grid, ggplot2, tidyr,
+        kableExtra
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown, tourr, stringr, broom, maptools
+VignetteBuilder: knitr
+Depends: R (>= 3.4.0)
+URL: https://sevvandi.github.io/composits/
+NeedsCompilation: no
+Packaged: 2022-05-23 23:58:41 UTC; sevva
+Author: Sevvandi Kandanaarachchi [aut, cre]
+    (<https://orcid.org/0000-0002-0337-0395>),
+  Patricia Menendez [aut] (<https://orcid.org/0000-0003-0701-6315>),
+  Ursula Laa [aut] (<https://orcid.org/0000-0002-0249-6439>),
+  Ruben Loaiza-Maya [aut] (<https://orcid.org/0000-0003-4132-8355>)
+Repository: CRAN
+Date/Publication: 2022-05-24 23:50:07 UTC

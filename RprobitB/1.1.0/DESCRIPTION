@@ -1,0 +1,58 @@
+Package: RprobitB
+Type: Package
+Title: Bayesian Probit Choice Modeling
+Version: 1.1.0
+Date: 2022-07-07
+Authors@R: c(
+    person("Lennart", "Oelschl\u00e4ger", 
+           email = "oelschlaeger.lennart@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5421-9313")),
+    person("Dietmar", "Bauer", 
+           email = "dietmar.bauer@uni-bielefeld.de", 
+           role = "aut",
+           comment = c(ORCID = "0000-0003-2920-7032")),
+    person("Sebastian", "B\u00fcscher", 
+           email = "sebastian.buescher@uni-bielefeld.de", 
+           role = "ctb"),
+    person("Manuel", "Batram", 
+           email = "manuel.batram@uni-bielefeld.de", 
+           role = "ctb"))
+Description: 
+    Bayes estimation of probit choice models, both in the cross-sectional and 
+    panel setting. The package can analyze binary, multivariate, ordered, and 
+    ranked choices, and places a special focus on modeling heterogeneity of 
+    choice behavior among deciders. The main functionality includes model 
+    fitting via Markov chain Monte Carlo methods, tools for convergence 
+    diagnostic, choice data simulation, in-sample and out-of-sample choice 
+    prediction, and model selection using information criteria and Bayes 
+    factors. The latent class model extension facilitates preference-based 
+    decider classification, where the number of latent classes can be inferred 
+    via the Dirichlet process or a weight-based updating scheme. This allows for 
+    flexible modeling of choice behavior without the need to impose structural 
+    constraints. For a reference on the method see Oelschlaeger and Bauer (2021) 
+    <https://trid.trb.org/view/1759753>.
+URL: https://loelschlaeger.de/RprobitB/
+BugReports: https://github.com/loelschlaeger/RprobitB/issues
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp, mvtnorm, viridis, ggplot2, rlang, mixtools, doSNOW,
+        foreach, progress, gridExtra, crayon, plotROC, MASS
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, mlogit, testthat (>= 3.0.0), covr
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+LazyData: true
+LazyDataCompression: xz
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-07-22 09:20:19 UTC; loelschlaeger
+Author: Lennart Oelschläger [aut, cre]
+    (<https://orcid.org/0000-0001-5421-9313>),
+  Dietmar Bauer [aut] (<https://orcid.org/0000-0003-2920-7032>),
+  Sebastian Büscher [ctb],
+  Manuel Batram [ctb]
+Maintainer: Lennart Oelschläger <oelschlaeger.lennart@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-07-22 11:00:06 UTC

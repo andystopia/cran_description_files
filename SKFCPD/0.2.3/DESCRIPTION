@@ -1,0 +1,27 @@
+Package: SKFCPD
+Type: Package
+Title: Fast Online Changepoint Detection for Temporally Correlated Data
+Version: 0.2.3
+Date: 2024-01-30
+Authors@R: c(person(given="Hanmo",family="Li",role=c("aut", "cre"),
+    email="hanmo@pstat.ucsb.edu"), 
+    person(given="Yuedong",family="Wang", role=c("aut"),
+    email="yuedong@pstat.ucsb.edu"),
+    person(given="Mengyang",family="Gu", role=c("aut"),
+    email="mengyang@pstat.ucsb.edu"))
+Maintainer: Hanmo Li <hanmo@pstat.ucsb.edu>
+Author: Hanmo Li [aut, cre],
+  Yuedong Wang [aut],
+  Mengyang Gu [aut]
+Description: Sequential Kalman filter for scalable online changepoint detection by temporally correlated data. It enables fast single and multiple change points with missing values. See the reference: Hanmo Li, Yuedong Wang, Mengyang Gu (2023), <arXiv:2310.18611>.
+License: GPL (>= 3)
+Depends: R (>= 3.5.0), methods (>= 4.2.2), rlang (>= 1.0.6), ggplot2
+        (>= 3.4.0), ggpubr (>= 0.5.0), reshape2 (>= 1.4.4), FastGaSP
+        (>= 0.5.2)
+Imports: Rcpp (>= 1.0.9)
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Encoding: UTF-8
+Packaged: 2024-01-31 03:02:47 UTC; lihan
+Repository: CRAN
+Date/Publication: 2024-02-01 11:00:06 UTC

@@ -1,0 +1,49 @@
+Package: arealDB
+Type: Package
+Title: Harmonise and Integrate Heterogeneous Areal Data
+Description: Many relevant applications in the environmental and socioeconomic 
+    sciences use areal data, such as biodiversity checklists, agricultural statistics, 
+    or socioeconomic surveys. For applications that surpass the spatial, temporal or 
+    thematic scope of any single data source, data must be integrated from several 
+    heterogeneous sources. Inconsistent concepts, definitions, or messy data tables 
+    make this a tedious and error-prone process. 'arealDB' tackles those problems and 
+    helps the user to integrate a harmonised databases of areal data. Read the pre-print 
+    at Ehrmann, Seppelt & Meyer (2020) <arXiv:1909.06610>.
+Version: 0.3.4
+Authors@R: c(
+    person("Steffen", "Ehrmann", 
+           email = "steffen.science@funroll-loops.de", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0002-2958-0796")),
+    person("Arne", "Rümmler", 
+           email = "arne.ruemmler@tu-dresden.de",
+           role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0001-8637-9071")), 
+    person("Felipe", "Melges",
+           email = "felipe.cozimmelges@wur.nl",
+           role = c("ctb"),
+           comment = c(ORCID = "0000-0003-0833-8973")),
+    person("Carsten", "Mayer",
+           email = "carsten.meyer@idiv.de", 
+           role = c("ctb"), 
+           comment = c(ORCID = "0000-0003-3927-5856")))
+URL: https://gitlab.com/luckinet/software/arealDB
+BugReports: https://gitlab.com/luckinet/software/arealDB/issues
+Depends: R (>= 2.10)
+Language: en-gb
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: checkmate, dplyr, magrittr, readr, rlang, sf, stringr, tibble,
+        tidyr, tidyselect, tabshiftr
+Suggests: testthat, knitr, rmarkdown, covr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-30 15:27:24 UTC; se87kuhe
+Author: Steffen Ehrmann [aut, cre] (<https://orcid.org/0000-0002-2958-0796>),
+  Arne Rümmler [aut, ctb] (<https://orcid.org/0000-0001-8637-9071>),
+  Felipe Melges [ctb] (<https://orcid.org/0000-0003-0833-8973>),
+  Carsten Mayer [ctb] (<https://orcid.org/0000-0003-3927-5856>)
+Maintainer: Steffen Ehrmann <steffen.science@funroll-loops.de>
+Repository: CRAN
+Date/Publication: 2020-07-01 09:10:06 UTC

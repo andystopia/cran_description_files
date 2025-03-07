@@ -1,0 +1,49 @@
+Package: fHMM
+Type: Package
+Title: Fitting Hidden Markov Models to Financial Data
+Version: 1.1.1
+Authors@R: c(
+    person(given = "Lennart",
+           family = "Oelschl\U00E4ger",
+           role = c("aut", "cre"),
+           email = "oelschlaeger.lennart@gmail.com",
+           comment = c(ORCID = "0000-0001-5421-9313")),
+    person(given = "Timo", 
+           family = "Adam", 
+           role = "aut",
+           email = "ta59@st-andrews.ac.uk",
+           comment = c(ORCID = "0000-0001-9079-3259")),
+    person(given = "Rouven", 
+           family = "Michels",
+           role = "aut",
+           email = "r.michels@uni-bielefeld.de",
+           comment = c(ORCID = "0000-0002-5433-6197")))
+Description: Fitting (hierarchical) hidden Markov models to financial data
+    via maximum likelihood estimation. See Oelschläger, L. and Adam, T.
+    "Detecting bearish and bullish markets in financial time series using 
+    hierarchical hidden Markov models" (2021, Statistical Modelling) 
+    <doi:10.1177/1471082X211034048> for a reference.
+Language: en-US
+URL: https://loelschlaeger.de/fHMM/
+BugReports: https://github.com/loelschlaeger/fHMM/issues
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: MASS, Rcpp, progress, foreach, cli
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: parallel, doSNOW, rmarkdown, knitr, testthat (>= 3.0.0),
+        covr, tseries
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+LazyDataCompression: xz
+NeedsCompilation: yes
+Packaged: 2023-10-12 13:16:19 UTC; loelschlaeger
+Author: Lennart Oelschläger [aut, cre]
+    (<https://orcid.org/0000-0001-5421-9313>),
+  Timo Adam [aut] (<https://orcid.org/0000-0001-9079-3259>),
+  Rouven Michels [aut] (<https://orcid.org/0000-0002-5433-6197>)
+Maintainer: Lennart Oelschläger <oelschlaeger.lennart@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-12 14:30:13 UTC

@@ -1,0 +1,40 @@
+Package: forceR
+Title: Force Measurement Analyses
+Description: For cleaning and analysis of graphs, such as animal closing force 
+    measurements. 
+    'forceR' was initially written and optimized to deal with insect bite force 
+    measurements, but can be used for any time series. Includes a full workflow 
+    to load, plot and crop data, correct amplifier and baseline drifts, 
+    identify individual peak shapes (bites), rescale (normalize) peak curves, 
+    and find best polynomial fits to describe and analyze force curve shapes.
+Version: 1.0.18
+Date: 2023-02-27
+License: MIT + file LICENSE
+URL: https://github.com/Peter-T-Ruehr/forceR
+BugReports: https://github.com/Peter-T-Ruehr/forceR/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr, graphics, grDevices, filesstrings, magrittr, purrr,
+        readr, roll, stats, stringr
+Depends: R (>= 4.0)
+VignetteBuilder: knitr
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Authors@R: 
+    c(person(given = "Peter T.", 
+              family = "Rühr", 
+              email = "peter.ruehr@gmail.com",
+              role = c("aut", "cre"),
+              comment = c(ORCID = "0000-0003-2776-6172")),
+           person(given = "Alexander", 
+              family = "Blanke", 
+              role = c("ctb"),
+              comment = c(ORCID = "0000-0003-4385-6039")))
+Maintainer: Peter T. Rühr <peter.ruehr@gmail.com>
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-02-27 18:35:26 UTC; pruehr
+Author: Peter T. Rühr [aut, cre] (<https://orcid.org/0000-0003-2776-6172>),
+  Alexander Blanke [ctb] (<https://orcid.org/0000-0003-4385-6039>)
+Repository: CRAN
+Date/Publication: 2023-02-27 19:42:36 UTC

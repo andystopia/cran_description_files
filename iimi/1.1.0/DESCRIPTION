@@ -1,0 +1,44 @@
+Package: iimi
+Title: Identifying Infection with Machine Intelligence
+Version: 1.1.0
+Authors@R: c(
+    person("Haochen", "Ning", , "hning@uvic.ca", role = c("aut")),
+    person("Ian", "Boyes", , "ian.boyes@inspection.gc.ca", role = c("aut")),
+    person("Ibrahim", "Numanagić", , "inumanag@uvic.ca", role = c("aut"),
+    comment = c(ORCID = "0000-0002-2970-7937")),
+    person("Michael", "Rott", , "mike.rott@inspection.gc.ca", role = c("aut")),
+    person("Li", "Xing", , "lix491@math.usask.ca", role = c("aut"),
+    comment = c(ORCID = "0000-0002-4186-7909")),
+    person("Xuekui", "Zhang", , "xuekui@uvic.ca", role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0003-4728-2343")))
+Description: A novel machine learning method for plant viruses diagnostic using 
+    genome sequencing data. This package includes three different machine 
+    learning models, random forest, XGBoost, and elastic net, to train and 
+    predict mapped genome samples. Mappability profile and unreliable regions 
+    are introduced to the algorithm, and users can build a mappability profile 
+    from scratch with functions included in the package. Plotting mapped sample 
+    coverage information is provided.
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+LazyData: true
+VignetteBuilder: knitr
+Imports: GenomicAlignments, IRanges, Rsamtools, data.table, mltools,
+        randomForest, xgboost, Biostrings, stats, MTPS, R.utils, caret,
+        stringr, dplyr, Rdpack
+RdMacros: Rdpack
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, httr
+Config/testthat/edition: 3
+License: MIT + file LICENSE
+LazyDataCompression: xz
+NeedsCompilation: no
+Packaged: 2024-07-18 03:46:27 UTC; dsain
+Author: Haochen Ning [aut],
+  Ian Boyes [aut],
+  Ibrahim Numanagić [aut] (<https://orcid.org/0000-0002-2970-7937>),
+  Michael Rott [aut],
+  Li Xing [aut] (<https://orcid.org/0000-0002-4186-7909>),
+  Xuekui Zhang [aut, cre] (<https://orcid.org/0000-0003-4728-2343>)
+Maintainer: Xuekui Zhang <xuekui@uvic.ca>
+Repository: CRAN
+Date/Publication: 2024-07-18 09:00:01 UTC

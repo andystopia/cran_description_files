@@ -1,0 +1,30 @@
+Package: RmdConcord
+Type: Package
+Title: Concordances for 'R Markdown'
+Version: 0.1.4
+Authors@R: c(person("Duncan", "Murdoch", role = c("aut", "cre"),
+                     email = "murdoch.duncan@gmail.com"),
+              person("Heather", "Turner", role = "ctb",
+                     email = "H.Turner.1@warwick.ac.uk"))
+Description: Supports concordances in 'R Markdown' 
+  documents.  This currently allows the original source
+  location in the '.Rmd' file of errors detected by 'HTML tidy'
+  to be found more easily, and potentially allows forward
+  and reverse search in 'HTML' and 'LaTeX' documents
+  produced from 'R Markdown'.  The 'LaTeX' support
+  has been included in the most recent development 
+  version of the 'patchDVI' package.
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/dmurdoch/RmdConcord,
+        https://dmurdoch.github.io/RmdConcord/
+BugReports: https://github.com/dmurdoch/RmdConcord/issues
+Imports: rmarkdown, tools, knitr (>= 1.42)
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2023-03-10 18:11:06 UTC; murdoch
+Author: Duncan Murdoch [aut, cre],
+  Heather Turner [ctb]
+Maintainer: Duncan Murdoch <murdoch.duncan@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-13 13:50:09 UTC

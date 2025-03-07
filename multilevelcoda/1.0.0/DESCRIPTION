@@ -1,0 +1,42 @@
+Package: multilevelcoda
+Title: Estimate Bayesian Multilevel Models for Compositional Data
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Flora",
+             family = "Le",
+             role = c("aut", "cre"),
+             email = "13florale@gmail.com",
+             comment = c(ORCID = "0000-0003-0089-8167")),
+      person(given = "Joshua F.",
+             family = "Wiley",
+             role = c("aut"),
+             email = "jwiley.psych@gmail.com",
+             comment = c(ORCID = "0000-0002-0271-6702")))
+URL: https://florale.github.io/multilevelcoda/,
+        https://github.com/florale/multilevelcoda
+BugReports: https://github.com/florale/multilevelcoda/issues
+Description: Implement Bayesian Multilevel Modelling for compositional data 
+             in a multilevel framework. Compute multilevel compositional data and 
+             Isometric log ratio (ILR) at between and within-person levels, 
+             fit Bayesian multilevel models for compositional predictors and outcomes, 
+             and run post-hoc analyses such as isotemporal substitution models.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Depends: R (>= 4.0.0)
+Imports: stats, data.table (>= 1.12.0), compositions, zCompositions,
+        bayestestR, brms, extraoperators, ggplot2, emmeans, insight,
+        ggsci, foreach
+Suggests: testthat (>= 3.0.0), covr, withr, knitr, rmarkdown, doFuture,
+        lme4
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-01-13 00:09:26 UTC; florale
+Author: Flora Le [aut, cre] (<https://orcid.org/0000-0003-0089-8167>),
+  Joshua F. Wiley [aut] (<https://orcid.org/0000-0002-0271-6702>)
+Maintainer: Flora Le <13florale@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-13 19:10:02 UTC

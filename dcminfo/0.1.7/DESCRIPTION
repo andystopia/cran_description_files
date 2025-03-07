@@ -1,0 +1,22 @@
+Package: dcminfo
+Type: Package
+Title: Information Matrix for Diagnostic Classification Models
+Version: 0.1.7
+Authors@R: c(person(given = "Yanlou",family = "Liu", role = c("aut", "cre"),email = "liuyanlou@163.com"),person(given = "Tao", family = "Xin", role = "aut"))
+Maintainer: Yanlou Liu <liuyanlou@163.com>
+Description: A set of asymptotic methods that can be used to directly estimate the expected (Fisher) information matrix by Liu, Tian, and Xin (2016) <doi:10.3102/1076998615621293> in diagnostic classification models or cognitive diagnostic models are provided when marginal maximum likelihood estimation is used. For these methods, both the item and structural model parameters are considered simultaneously. Specifically, the observed information matrix, the empirical cross-product information matrix and the sandwich-type co-variance matrix that can be used to estimate the asymptotic co-variance matrix (or the model parameter standard errors) within the context of diagnostic classification models are provided.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.0)
+Imports: CDM, utils, stats, methods
+Collate: 'dcminfo.R' 'amps.R' 'lcdmobsp2.R' 'lcdmxpd.R'
+        'sim_CRUM_N1000.R' 'sim_DINA_N1000.R' 'utils.R'
+RoxygenNote: 6.0.1
+Suggests: rmarkdown
+NeedsCompilation: no
+Packaged: 2017-11-06 06:56:23 UTC; liuyanlou
+Author: Yanlou Liu [aut, cre],
+  Tao Xin [aut]
+Repository: CRAN
+Date/Publication: 2017-11-06 12:05:45 UTC

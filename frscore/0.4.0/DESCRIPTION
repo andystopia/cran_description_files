@@ -1,0 +1,34 @@
+Package: frscore
+Title: Functions for Calculating Fit-Robustness of CNA-Solutions
+Version: 0.4.0
+Authors@R: c(
+    person(given = "Veli-Pekka",
+           family = "Parkkinen",
+           role = c("aut", "cre", "cph"),
+           email = "parkkinenv@gmail.com"),
+    person("Michael", "Baumgartner", role = c("aut", "cph"),
+                     email = "michael.baumgartner@uib.no"),
+    person("Mathias", "Ambuehl", role = c("aut", "cph"))
+    )
+Description: Functions for automatically performing 
+             a reanalysis series
+             on a data set using CNA, and for calculating the fit-robustness
+             of the resulting models, as described in 
+             Parkkinen and Baumgartner (2021) <doi:10.1177/0049124120986200>.
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: dplyr, Rfast, magrittr, rlang, withr
+Depends: R (>= 3.5), cna (>= 3.5.1), lifecycle (>= 1.0.0)
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-04-25 11:30:23 UTC; lbl
+Author: Veli-Pekka Parkkinen [aut, cre, cph],
+  Michael Baumgartner [aut, cph],
+  Mathias Ambuehl [aut, cph]
+Maintainer: Veli-Pekka Parkkinen <parkkinenv@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-25 11:50:03 UTC

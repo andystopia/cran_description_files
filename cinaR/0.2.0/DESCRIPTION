@@ -1,0 +1,40 @@
+Package: cinaR
+Type: Package
+Title: A Computational Pipeline for Bulk 'ATAC-Seq' Profiles
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Onur",
+             family = "Karakaslar",
+             role = c("aut", "cre"),
+             email = "eonurkara@gmail.com"),
+      person(given = "Duygu",
+             family = "Ucar",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-9772-3066"))
+      )
+Description: Differential analyses and Enrichment pipeline for bulk 'ATAC-seq' data
+  analyses. This package combines different packages to have an ultimate package
+  for both data analyses and visualization of 'ATAC-seq' data.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/eonurk/cinaR/
+BugReports: https://github.com/eonurk/cinaR/issues/
+biocViews:
+Depends: R (>= 3.5.0)
+Imports: ChIPseeker, DESeq2, dplyr, edgeR, fgsea, GenomicRanges,
+        ggplot2, ggrepel, grDevices, limma, utils, pheatmap,
+        preprocessCore, RColorBrewer, sva,
+        TxDb.Hsapiens.UCSC.hg38.knownGene,
+        TxDb.Hsapiens.UCSC.hg19.knownGene,
+        TxDb.Mmusculus.UCSC.mm10.knownGene, writexl
+RoxygenNote: 7.1.1
+Suggests: biomaRt, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-05 20:30:01 UTC; karako
+Author: Onur Karakaslar [aut, cre],
+  Duygu Ucar [aut] (<https://orcid.org/0000-0002-9772-3066>)
+Maintainer: Onur Karakaslar <eonurkara@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-05 21:30:02 UTC

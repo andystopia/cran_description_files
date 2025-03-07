@@ -1,0 +1,52 @@
+Package: rSRD
+Type: Package
+Title: Sum of Ranking Differences Statistical Test
+Version: 0.1.6
+Authors@R: c(person("Jochen", "Staudacher", role = c("aut","cph","cre"),
+                   email = "jochen.staudacher@hs-kempten.de"),
+			person(c("Balázs", "R."), "Sziklai", role = c("aut","cph"),
+                     email = "sziklai.balazs@krtk.hu"),
+			person("Linus", "Olsson", role = c("aut", "cph"),
+				    email = "linusmeol@gmail.com"),
+			person("Dennis", "Horn", role = "ctb"),		 
+			person("Alexander", "Pothmann", role = "ctb"),
+			person("Ali Tugay", "Sen", role = "ctb"),
+			person("Attila", "Gere", role = "ctb"),
+			person("Károly", "Hébeger", role = "ctb"))
+Maintainer: Jochen Staudacher <jochen.staudacher@hs-kempten.de>
+Description: We provide an implementation for Sum of Ranking Differences (SRD), 
+    a novel statistical test introduced by Héberger (2010) 
+    <doi:10.1016/j.trac.2009.09.009>. The test allows the comparison of 
+    different solutions through a reference by first performing a rank 
+    transformation on the input, then calculating and comparing the distances 
+    between the solutions and the reference - the latter is measured in the 
+    L1 norm. The reference can be an external benchmark (e.g. an established 
+    gold standard) or can be aggregated from the data. The calculated distances, 
+    called SRD scores, are validated in two ways, see Héberger and Kollár-Hunek 
+    (2011) <doi:10.1002/cem.1320>. A randomization test (also called permutation 
+    test) compares the SRD scores of the solutions to the SRD scores of randomly 
+    generated rankings. The second validation option is cross-validation that 
+    checks whether the rankings generated from the solutions come from the same 
+    distribution or not. For a detailed analysis about the cross-validation 
+    process see Sziklai, Baranyi and Héberger (2021) <arXiv:2105.11939>. The 
+    package offers a wide array of features related to SRD including the computation 
+    of the SRD scores, validation options, input preprocessing and plotting tools. 
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+LinkingTo: Rcpp
+Imports: Rcpp, dplyr, janitor, tibble, ggplot2, stringr, methods,
+        rlang, ggrepel, gplots
+SystemRequirements: C++20, Rtools (>= 4.2) for Windows
+NeedsCompilation: yes
+Packaged: 2023-02-04 08:46:36 UTC; Jochen
+Author: Jochen Staudacher [aut, cph, cre],
+  Balázs R. Sziklai [aut, cph],
+  Linus Olsson [aut, cph],
+  Dennis Horn [ctb],
+  Alexander Pothmann [ctb],
+  Ali Tugay Sen [ctb],
+  Attila Gere [ctb],
+  Károly Hébeger [ctb]
+Repository: CRAN
+Date/Publication: 2023-02-06 08:22:32 UTC

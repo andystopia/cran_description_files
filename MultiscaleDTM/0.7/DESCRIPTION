@@ -1,0 +1,41 @@
+Package: MultiscaleDTM
+Title: Multi-Scale Geomorphometric Terrain Attributes
+Version: 0.7
+Authors@R: 
+     c(
+    person(given = "Alexander",
+           family = "Ilich",
+           role = c("aut", "cre"),
+           email = "ailich@usf.edu",
+           comment = c(ORCID = "0000-0003-1758-8499")),
+    person(given = "Vincent",
+           family = "Lecours",
+           role = c("aut")),
+    person(given = "Benjamin",
+           family = "Misiuk",
+           role = c("aut")),
+    person(given = "Steven",
+           family = "Murawski",
+           role = c("aut")))
+Description: Calculates multi-scale geomorphometric terrain attributes from regularly gridded digital terrain models using a variable focal windows size (Misiuk et al. (2021) <doi:10.1080/01490419.2021.1925789>; Wilson et al. (2007) <doi:10.1080/01490410701295962>; Wood (1996) <https://hdl.handle.net/2381/34503>).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+BugReports: https://github.com/ailich/MultiscaleDTM/issues
+Depends: terra
+SystemRequirements: C++17
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, raster, dplyr, shiny, rgl, stats, utils
+Suggests: knitr, rmarkdown, tmap, colorRamps
+URL: https://ailich.github.io/MultiscaleDTM/,
+        https://github.com/ailich/MultiscaleDTM
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-04-10 22:29:30 UTC; socce
+Author: Alexander Ilich [aut, cre] (<https://orcid.org/0000-0003-1758-8499>),
+  Vincent Lecours [aut],
+  Benjamin Misiuk [aut],
+  Steven Murawski [aut]
+Maintainer: Alexander Ilich <ailich@usf.edu>
+Repository: CRAN
+Date/Publication: 2023-04-11 00:50:02 UTC

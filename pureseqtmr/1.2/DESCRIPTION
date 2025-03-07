@@ -1,0 +1,34 @@
+Package: pureseqtmr
+Title: Predict Transmembrane Protein Topology
+Version: 1.2
+Authors@R: c(
+    person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")))
+Description: Proteins reside in either the cell plasma or in the
+    cell membrane. A membrane protein goes through the 
+    membrane at least once. Given the amino acid sequence of a
+    membrane protein, the tool
+    'PureseqTM' (<https://github.com/PureseqTM/pureseqTM_package>,
+    as described in "Efficient And Accurate Prediction Of Transmembrane 
+    Topology From Amino acid sequence only.", Wang, Qing, et al (2019), 
+    <doi:10.1101/627307>),
+    can predict the topology of a membrane protein. This package
+    allows one to use 'PureseqTM' from R.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: ggplot2, plyr, rappdirs, stringr, tibble
+Suggests: testthat, knitr, rmarkdown
+URL: https://github.com/richelbilderbeek/pureseqtmr
+BugReports: https://github.com/richelbilderbeek/pureseqtmr
+VignetteBuilder: knitr
+SystemRequirements: PureseqTM
+        (https://github.com/PureseqTM/pureseqTM_package)
+NeedsCompilation: no
+Packaged: 2020-07-25 13:10:07 UTC; richel
+Author: Richèl J.C. Bilderbeek [aut, cre]
+    (<https://orcid.org/0000-0003-1107-7049>)
+Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2020-07-30 10:50:02 UTC

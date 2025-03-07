@@ -1,0 +1,32 @@
+Package: mindicador
+Title: Indicadores Economicos de Chile (Economic Outlook for Chile)
+Version: 0.1.5
+Authors@R: 
+    person(given = "Mauricio",
+           family = "Vargas",
+           role = c("aut", "cre", "cph"),
+           email = "mvargas@dcc.uchile.cl",
+           comment = c(ORCID = "0000-0003-1017-7574"))
+Description: Importa datos de la API de <https://mindicador.cl> en formato de cuadro de datos o serie de tiempo.
+    El objetivo es facilitar el uso de algunos datos economicos a periodistas y profesionales que requieren
+    informacion desplegada de forma clara y concisa.
+    (Imports data from <https://mindicador.cl> API in data frame or time series format. The goal
+    is to ease using certain economic data with different R packages, having in mind journalists and professionals
+    that require information displayed in a clear and concise way.)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: crul, data.table, digest, jsonlite, memoise, xts
+Suggests: knitr, rmarkdown, vcr, covr, testthat, ggplot2, readxl
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+URL: https://github.com/pachamaltese/mindicador
+BugReports: https://github.com/pachamaltese/mindicador/issues
+NeedsCompilation: no
+Packaged: 2020-05-25 22:41:01 UTC; pacha
+Author: Mauricio Vargas [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1017-7574>)
+Maintainer: Mauricio Vargas <mvargas@dcc.uchile.cl>
+Repository: CRAN
+Date/Publication: 2020-06-02 09:30:02 UTC

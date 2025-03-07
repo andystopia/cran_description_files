@@ -1,0 +1,65 @@
+Type: Package
+Package: remstimate
+Title: Optimization Frameworks for Tie-Oriented and Actor-Oriented
+        Relational Event Models
+Version: 2.3.8
+Date: 2023-12-19
+Authors@R: 
+    c(person(given = "Giuseppe",
+             family = "Arena",
+             role = c("aut", "cre"),
+             email = "g.arena@tilburguniversity.edu"),
+      person(given = "Rumana",
+             family = "Lakdawala",
+             role = "aut",
+             email = "r.j.lakdawala@tilburguniversity.edu"),
+      person(given = "Fabio",
+             family = "Generoso Vieira",
+             role = "aut",
+             email = "f.v.generosovieira@tilburguniversity.edu"),             
+      person(given = "Marlyne",
+             family = "Meijerink-Bosman",
+             role = "ctb",
+             email = "m.l.meijerink@tilburguniversity.edu"),
+      person(given = "Diana",
+             family = "Karimova",
+             role = "ctb",
+             email = "d.karimova@tilburguniversity.edu"),
+      person(given = "Mahdi",
+             family = "Shafiee Kamalabad",
+             role = "ctb",
+             email = "m.shafiee@tilburguniversity.edu"),
+      person(given = "Roger",
+             family = "Leenders",
+             role = "ctb",
+             email = "r.t.a.j.leenders@tilburguniversity.edu"),
+      person(given = "Joris",
+             family = "Mulder",
+             role = "ctb",
+             email = "j.mulder3@tilburguniversity.edu"))
+Maintainer: Giuseppe Arena <g.arena@tilburguniversity.edu>
+Description: A comprehensive set of tools designed for optimizing likelihood within a tie-oriented (Butts, C., 2008, <doi:10.1111/j.1467-9531.2008.00203.x>) or an actor-oriented modelling framework (Stadtfeld, C., & Block, P., 2017, <doi:10.15195/v4.a14>) in relational event networks. The package accommodates both frequentist and Bayesian approaches. The frequentist approaches that the package incorporates are the Maximum Likelihood Optimization (MLE) and the Gradient-based Optimization  (GDADAMAX). The Bayesian methodologies included in the package are the Bayesian Sampling Importance Resampling (BSIR) and the Hamiltonian Monte Carlo (HMC). The flexibility of choosing between frequentist and Bayesian optimization approaches allows researchers to select the estimation approach which aligns the most with their analytical preferences.
+License: MIT + file LICENSE
+URL: https://github.com/TilburgNetworkGroup/remstimate
+BugReports: https://github.com/TilburgNetworkGroup/remstimate/issues
+Depends: R (>= 4.0.0)
+Imports: methods, Rcpp, remify (>= 3.2.4), trust, remstats (>= 3.2.1),
+        mvnfast
+Suggests: knitr, rmarkdown, tinytest
+LinkingTo: Rcpp, RcppArmadillo, remify
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-12-19 20:59:12 UTC; giuseppe
+Author: Giuseppe Arena [aut, cre],
+  Rumana Lakdawala [aut],
+  Fabio Generoso Vieira [aut],
+  Marlyne Meijerink-Bosman [ctb],
+  Diana Karimova [ctb],
+  Mahdi Shafiee Kamalabad [ctb],
+  Roger Leenders [ctb],
+  Joris Mulder [ctb]
+Repository: CRAN
+Date/Publication: 2023-12-20 15:50:02 UTC

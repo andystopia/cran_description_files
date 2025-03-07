@@ -1,0 +1,28 @@
+Package: dipm
+Title: Depth Importance in Precision Medicine (DIPM) Method
+Version: 1.3
+Date: 2021-11-15
+Authors@R: c(person(given = "Cai", family = "Li", 
+	             role = c("aut", "cre"), email = "cli9@ncsu.edu"),
+             person(given = "Victoria", family = "Chen", 
+                    role = "aut", email = "victoria.chen@yale.edu"),
+             person(given = "Heping", family = "Zhang", 
+                    role = "aut", email = "heping.zhang@yale.edu"))
+Maintainer: Cai Li <cli9@ncsu.edu>
+Description: An implementation of the Depth Importance in Precision Medicine (DIPM) method 
+             in Chen and Zhang (2020) <doi:10.1093/biostatistics/kxaa021> and Chen and 
+             Zhang (2020) <doi:10.1007/978-3-030-46161-4_16>. The DIPM method is a classification 
+             tree that searches for subgroups with especially poor or strong performance in a given treatment group.
+Depends: R (>= 3.0.0)
+Imports: stats, utils, survival, partykit (>= 1.2-6), ggplot2, grid
+NeedsCompilation: yes
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyLoad: yes
+Repository: CRAN
+RoxygenNote: 7.1.1
+Packaged: 2021-11-16 23:33:00 UTC; cli9
+Author: Cai Li [aut, cre],
+  Victoria Chen [aut],
+  Heping Zhang [aut]
+Date/Publication: 2021-11-17 11:40:09 UTC

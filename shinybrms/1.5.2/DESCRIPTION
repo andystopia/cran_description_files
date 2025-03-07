@@ -1,0 +1,43 @@
+Package: shinybrms
+Title: Graphical User Interface ('shiny' App) for 'brms'
+Version: 1.5.2
+Date: 2021-10-15
+Authors@R: 
+    c(person(given = "Frank",
+         family = "Weber",
+         role = c("aut", "cre"),
+         email = "fweber144@protonmail.com",
+         comment = c(ORCID = "0000-0002-4842-7922")),
+      person(given = "Thomas",
+             family = "Park",
+             role = c("ctb", "cph"),
+             comment = "'Bootswatch' theme \"United\""),
+      person(family = "Twitter, Inc.",
+             role = c("ctb", "cph"),
+             comment = "'Bootstrap' (basis for the 'Bootswatch' theme \"United\")"),
+      person(family = "Google, LLC",
+             role = c("ctb", "cph"),
+             comment = "\"Open Sans\" font"))
+Description: A graphical user interface (GUI) for fitting Bayesian
+    regression models using the package 'brms' which in turn relies on
+    'Stan' (<https://mc-stan.org/>). The 'shinybrms' GUI is a 'shiny'
+    app.
+License: GPL-3 | file LICENSE
+URL: https://fweber144.github.io/shinybrms/
+BugReports: https://github.com/fweber144/shinybrms/issues
+Depends: R (>= 3.6.0)
+Imports: shiny (>= 1.4.0), brms (>= 2.14.0), rstan (>= 2.19.3)
+Suggests: ggplot2, shinystan (>= 2.4.0), callr (>= 3.4.0), rstanarm,
+        MASS, lme4, testthat, shinytest
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-10-15 17:47:35 UTC; frank
+Author: Frank Weber [aut, cre] (<https://orcid.org/0000-0002-4842-7922>),
+  Thomas Park [ctb, cph] ('Bootswatch' theme "United"),
+  Twitter, Inc. [ctb, cph] ('Bootstrap' (basis for the 'Bootswatch' theme
+    "United")),
+  Google, LLC [ctb, cph] ("Open Sans" font)
+Maintainer: Frank Weber <fweber144@protonmail.com>
+Repository: CRAN
+Date/Publication: 2021-10-15 18:00:02 UTC

@@ -1,0 +1,21 @@
+Encoding: UTF-8
+Package: PINSPlus
+Type: Package
+Title: Clustering Algorithm for Data Integration and Disease Subtyping
+Version: 2.0.6
+Date: 2021-12-13
+Author: Hung Nguyen, Bang Tran, Duc Tran and Tin Nguyen
+Maintainer: Hung Nguyen <hungnp@nevada.unr.edu>
+Description: Provides a robust approach for omics data integration and disease subtyping. PINSPlus is fast and supports the analysis of large datasets with hundreds of thousands of samples and features. The software automatically determines the optimal number of clusters and then partitions the samples in a way such that the results are robust against noise and data perturbation (Nguyen et al. (2019) <DOI: 10.1093/bioinformatics/bty1049>, Nguyen et al. (2017)<DOI: 10.1101/gr.215129.116>, Nguyen et al. (2021)<DOI: 10.3389/fonc.2021.725133>).
+License: LGPL
+Depends: R (>= 2.10)
+Imports: foreach, entropy , doParallel, matrixStats, Rcpp,
+        RcppParallel, FNN, cluster, irlba, mclust, impute
+RoxygenNote: 7.1.0
+Suggests: knitr, rmarkdown, survival, markdown
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-12-14 19:25:49 UTC; hungnguyen
+Repository: CRAN
+Date/Publication: 2021-12-14 19:40:02 UTC

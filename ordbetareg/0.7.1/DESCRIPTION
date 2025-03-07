@@ -1,0 +1,32 @@
+Package: ordbetareg
+Type: Package
+Title: Ordered Beta Regression Models with 'brms'
+Version: 0.7.1
+Authors@R: person(
+  "Robert", "Kubinec",
+  email = "rmk7@nyu.edu",
+  role = c("aut", "cre"),
+  comment = c(ORCID = "0000-0001-6655-4119"))
+Description: Implements ordered beta regression models, which are for modeling continuous variables with upper and lower bounds, such as
+   survey sliders, dose-response relationships and indexes. For more information, see
+   Kubinec (2022) <doi:10.31235/osf.io/2sx6y>. The package is a front-end to the R package 'brms', which 
+   facilitates a range of regression specifications, including hierarchical, dynamic and
+   multivariate modeling.
+BugReports: https://github.com/saudiwin/ordbetareg_pack/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5), brms (>= 2.18.0), stats
+Imports: transformr, dplyr, ggplot2 (>= 3.4.0), gganimate, tidyr
+Suggests: rmarkdown, knitr, modelsummary, marginaleffects (>= 0.10.0),
+        haven, stringr, Hmisc, collapse, ggthemes, glmmTMB, mice,
+        bayestestR, kableExtra
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-03-15 08:58:51 UTC; rmk7
+Author: Robert Kubinec [aut, cre] (<https://orcid.org/0000-0001-6655-4119>)
+Maintainer: Robert Kubinec <rmk7@nyu.edu>
+Repository: CRAN
+Date/Publication: 2023-03-15 18:10:02 UTC

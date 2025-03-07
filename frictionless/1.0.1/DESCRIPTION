@@ -1,0 +1,47 @@
+Package: frictionless
+Title: Read and Write Frictionless Data Packages
+Version: 1.0.1
+Authors@R: c(
+    person("Peter", "Desmet", email = "peter.desmet.work@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8442-8025")),
+    person("Damiano", "Oldoni", email = "damiano.oldoni@inbo.be",
+           role = "aut", comment = c(ORCID = "0000-0003-3445-7562")),
+    person("Research Institute for Nature and Forest (INBO)",
+           role = "cph", comment = "https://www.vlaanderen.be/inbo/en-gb/"),
+    person("LifeWatch Belgium",
+           role = "fnd", comment = "https://lifewatch.be"),
+    person("Beatriz", "Milz", email = "milz.bea@gmail.com",
+           role = "rev", comment = c(ORCID = "0000-0002-3064-4486")),
+    person("João", "Martins", email = "joao.martins@gmx.net",
+           role = "rev", comment = c(ORCID = "0000-0001-7961-4280"))
+  )
+Description: Read and write Frictionless Data Packages. A 'Data Package'
+    (<https://specs.frictionlessdata.io/data-package/>) is a simple container
+    format and standard to describe and package a collection of (tabular) data. 
+    It is typically used to publish FAIR 
+    (<https://www.go-fair.org/fair-principles/>) and open datasets.
+License: MIT + file LICENSE
+URL: https://github.com/frictionlessdata/frictionless-r,
+        https://docs.ropensci.org/frictionless/
+BugReports: https://github.com/frictionlessdata/frictionless-r/issues
+Imports: assertthat, dplyr, glue, httr, jsonlite, purrr, readr (>=
+        2.1.0), utils, yaml
+Suggests: hms, knitr, lubridate, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-09-07 19:56:30 UTC; peter_desmet
+Author: Peter Desmet [aut, cre] (<https://orcid.org/0000-0002-8442-8025>),
+  Damiano Oldoni [aut] (<https://orcid.org/0000-0003-3445-7562>),
+  Research Institute for Nature and Forest (INBO) [cph]
+    (https://www.vlaanderen.be/inbo/en-gb/),
+  LifeWatch Belgium [fnd] (https://lifewatch.be),
+  Beatriz Milz [rev] (<https://orcid.org/0000-0002-3064-4486>),
+  João Martins [rev] (<https://orcid.org/0000-0001-7961-4280>)
+Maintainer: Peter Desmet <peter.desmet.work@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2022-09-08 08:02:56 UTC

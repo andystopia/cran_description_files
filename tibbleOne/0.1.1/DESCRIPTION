@@ -1,0 +1,39 @@
+Type: Package
+Package: tibbleOne
+Title: Table One for 'Latex', 'Word', and 'Html' 'R Markdown' Documents
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Byron",
+             family = "Jaeger",
+             role = c("aut", "cre"),
+             email = "bcjaeger@uab.edu",
+             comment = c(ORCID = "0000-0001-7399-2299")),
+      person(given = "Boyi",
+             family = "Guo",
+             role = "ctb",
+             email = "boyiguo1@uab.edu"))
+Maintainer: Byron Jaeger <bcjaeger@uab.edu>
+Description: Table one is a tabular description of
+    characteristics, e.g., demographics of patients in a clinical trial,
+    presented overall and also stratified by a categorical variable, e.g.
+    treatment group.  There are many excellent packages available to
+    create table one.  This package focuses on providing table one objects
+    that seamlessly fit into 'R Markdown' analyses.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: tibble (>= 2.1.3), knitr (>= 1.23), officer, flextable,
+        kableExtra, forcats, labelled, tidyr (>= 1.0.0), tidyselect,
+        stringr, rlang, vctrs, purrr, glue, stats, magrittr, dplyr,
+        lifecycle
+Suggests: rmarkdown, survival, testthat (>= 2.1.0), covr
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-01-28 23:48:09 UTC; bcjaeger
+Author: Byron Jaeger [aut, cre] (<https://orcid.org/0000-0001-7399-2299>),
+  Boyi Guo [ctb]
+Repository: CRAN
+Date/Publication: 2020-01-29 06:20:03 UTC

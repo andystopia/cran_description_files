@@ -1,0 +1,36 @@
+Package: LCMSQA
+Title: Liquid Chromatography/Mass Spectrometry (LC/MS) Quality
+        Assessment
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Jaehyun",
+           family = "Joo",
+           role = c("aut", "cre"),
+           email = "jaehyunjoo@outlook.com"),
+    person(given = "Blanca",
+           family = "Himes",
+           role = c("aut"))
+           )
+Description: The goal of 'LCMSQA' is to make it easy to check the quality of
+             liquid chromatograph/mass spectrometry (LC/MS) experiments using a
+             'shiny' application. This package provides interactive data
+             visualizations for quality control (QC) samples, including total
+             ion current chromatogram (TIC), base peak chromatogram (BPC), mass
+             spectrum, extracted ion chromatogram (XIC), and feature detection
+             results from internal standards or known metabolites.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+biocViews:
+Depends: R (>= 4.0.0)
+Imports: bslib, bsplus, data.table, DT, ggplot2, plotly, shiny,
+        shinycssloaders, shinyjs, shinyWidgets, xcms, MSnbase
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-03-15 22:16:50 UTC; jaehyun
+Author: Jaehyun Joo [aut, cre],
+  Blanca Himes [aut]
+Maintainer: Jaehyun Joo <jaehyunjoo@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-03-16 19:10:02 UTC

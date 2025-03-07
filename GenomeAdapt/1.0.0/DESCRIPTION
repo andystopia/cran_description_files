@@ -1,0 +1,25 @@
+Package: GenomeAdapt
+Type: Package
+Version: 1.0.0
+Date: 2021-11-01
+Title: Detecting Signatures of Local Adaptation Based on Ancestry
+        Trajectories
+Description: Portable, scalable and highly computationally efficient tool for detecting signatures of local adaptation based on multidimensional ancestry map ( _n_ X _n_ ancestry genetic trajectories, _n_ is the number of individuals). If n samples are included in the analysis, there will be n dimensional spaces that represent the common ancestry maps based on the identity-by-descent (IBD). The package calculates the correlations of loci with the common ancestry genetic maps adopting the Genomic Data Structure (GDS, Zheng et al., 2012) <doi:10.1093/bioinformatics/bts606> and suitable for millions of SNP data. Loci sharing a greater level of most recent common ancestor (MRCA) (large Z-scores) indicates a large number of individuals descend from recent common ancestors, 
+  which signals the rapid increase in frequency of a beneficial allele due to recent positive selection. The rationale underlying this package is somewhat analogous to KLFDAPT (Qin, 2021) <doi:10.1101/2021.05.15.444294> (<https://xinghuq.github.io/KLFDAPC/articles/Genome_scan_KLFDAPC.html>). It combines the concept of IBD-based genome scan (Albrechtsen et al., 2010) <doi:10.1534/genetics.110.113977>, iHS (Voight, 2006) <doi:10.1371/journal.pbio.0040072>, 
+  and eigenanalysis of SNP data with an identity by descent interpretation (Zheng & Weir, 2016) <doi: 10.1016/j.tpb.2015.09.004>. It can also be interpreted as spatial varying selection as ancestry genetic maps reflect geographic origins. Besides the detection of local adaptation, this package also estimates the population admixtures and plots its geographic genetic structure.  
+Authors@R: c(person("Xinghu", "Qin", role=c("aut", "cre", "cph"), email="qinxinghu@gmail.com", comment=c(ORCID="0000-0003-2351-3610")))
+biocViews:
+Depends: R (>= 3.3)
+License: GPL-3
+URL: https://github.com/xinghuq/GenomeAdapt
+BugReports: https://github.com/xinghuq/GenomeAdapt/issues
+Imports: qvalue,robust,stats,SNPRelate,gdsfmt,graphics
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 6.1.1
+Suggests: knitr,testthat,rmarkdown
+Packaged: 2021-11-11 14:06:18 UTC; Qin_st_andrews
+Author: Xinghu Qin [aut, cre, cph] (<https://orcid.org/0000-0003-2351-3610>)
+Maintainer: Xinghu Qin <qinxinghu@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-11-11 19:40:08 UTC

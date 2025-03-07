@@ -1,0 +1,44 @@
+Package: moodleR
+Type: Package
+Title: Helper Functions to Work with 'Moodle' Data
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Aleksander",
+             family = "Dietrichson",
+             role = c("aut", "cre"),
+             email = "dietrichson@gmail.com"),
+      person(given = "Chi Square Laboratories",
+             role = "cph"),
+      person(given = "Darko",
+             family = "Miletic",
+             role = "ctb"),
+      person(given = "Pablo",
+             family = "Pagnone",
+             role = "ctb"),
+      person(given = "Alex",
+             family = "Ondrus",
+             role = "ctb")
+             )
+Maintainer: Aleksander Dietrichson <dietrichson@gmail.com>
+Description: A collection of functions to connect to a 'Moodle' database, cache relevant tables locally and generate learning analytics. 
+    'Moodle' is an open source Learning Management System (LMS) developed by MoodleHQ. For more information about Moodle, visit <https://moodle.org>.
+License: MIT + file LICENSE
+URL: https://github.com/chi2labs/moodleR,
+        https://chi2labs.github.io/moodleR/
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, prettyunits, lubridate, testthat
+Imports: DBI, dplyr, ggplot2, tidytext, ggwordcloud, utils, stringr,
+        rlang, scales, RMariaDB, glue, config, anytime, cli, lifecycle,
+        RSQLite, usethis, RPostgres
+RdMacros: lifecycle
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-03-23 16:34:50 UTC; rstudio-user
+Author: Aleksander Dietrichson [aut, cre],
+  Chi Square Laboratories [cph],
+  Darko Miletic [ctb],
+  Pablo Pagnone [ctb],
+  Alex Ondrus [ctb]
+Repository: CRAN
+Date/Publication: 2022-03-23 17:00:02 UTC

@@ -1,0 +1,50 @@
+Package: sarp.snowprofile.alignment
+Title: Snow Profile Alignment, Aggregation, and Clustering
+Version: 1.2.2
+Date: 2024-02-07
+Authors@R: 
+    c(
+    person(given = "Florian", family = "Herla", role = c("aut", "cre"), email = "fherla@sfu.ca"),
+    person(given = "Pascal", family = "Haegeli", role = "aut", email = "pascal_haegeli@sfu.ca"),
+    person(given = "Simon", family = "Horton", role = "aut", email = "shorton@sfu.ca"),
+    person(given = "Paul", family = "Billecocq", role = "aut", email = "paul.billecocq@usherbrooke.ca"),
+    person("SFU Avalanche Research Program", role = "fnd")
+    )
+Description: Snow profiles describe the vertical (1D) stratigraphy of layered 
+    snow with different layer characteristics, such as grain type, hardness, 
+    deposition date, and many more. Hence, they represent a data format similar 
+    to multivariate time series containing categorical, ordinal, and numerical 
+    data types. Use this package to align snow profiles by matching their 
+    individual layers based on Dynamic Time Warping (DTW). The aligned profiles 
+    can then be assessed with an independent, global similarity measure that is 
+    geared towards avalanche hazard assessment. Finally, through exploiting data
+    aggregation and clustering methods, the similarity measure provides the
+    foundation for grouping and summarizing snow profiles according to similar
+    hazard conditions. In particular, this package allows for averaging large
+    numbers of snow profiles with DTW Barycenter Averaging and thereby 
+    facilitates the computation of individual layer distributions and summary 
+    statistics that are relevant for avalanche forecasting purposes. 
+    For more background information refer to Herla, Horton, Mair,
+    and Haegeli (2021) <doi:10.5194/gmd-14-239-2021>, and Herla, Mair, and Haegeli 
+    (2022) <doi:10.5194/tc-16-3149-2022>.
+URL: https://avalancheresearch.ca/
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Language: en-US
+Imports: dtw, grid, data.table
+Depends: R (>= 2.10), sarp.snowprofile (>= 1.2.1)
+Suggests: knitr, rmarkdown, shiny, dendextend, smacof, testthat,
+        progress
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-02-08 10:03:33 UTC; flo
+Author: Florian Herla [aut, cre],
+  Pascal Haegeli [aut],
+  Simon Horton [aut],
+  Paul Billecocq [aut],
+  SFU Avalanche Research Program [fnd]
+Maintainer: Florian Herla <fherla@sfu.ca>
+Repository: CRAN
+Date/Publication: 2024-02-08 10:20:02 UTC

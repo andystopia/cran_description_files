@@ -1,0 +1,68 @@
+Package: fdaconcur
+Type: Package
+Title: Concurrent Regression and History Index Models for Functional
+        Data
+URL: https://github.com/functionaldata/tFDAconcur
+BugReports: https://github.com/functionaldata/tFDAconcur/issues
+Version: 0.1.2
+Encoding: UTF-8
+Date: 2023-11-06
+Authors@R: 
+    c(person(given = "Su I",
+             family = "Iao",
+             role = c("aut", "cre"),
+             email = "siao@ucdavis.edu"),
+      person(given = "Satarupa",
+             family = "Bhattacharjee",
+             role = "aut"),
+      person(given = "Yaqing",
+             family = "Chen",
+             role = "aut"),
+      person(given = "Changbo",
+             family = "Zhu",
+             role = "aut"),
+      person(given = "Han",
+             family = "Chen",
+             role = "aut"),
+      person(given = "Yidong",
+             family = "Zhou",
+             role = "aut"),
+      person(given = "Álvaro",
+             family = "Gajardo",
+             role = "aut"),
+      person(given = "Poorbita",
+             family = "Kundu",
+             role = "aut"),
+      person(given = "Hang",
+             family = "Zhou",
+             role = "aut"),
+      person(given = "Hans-Georg",
+             family = "Müller",
+             role = c("cph", "ths", "aut")))
+Maintainer: Su I Iao <siao@ucdavis.edu>
+Description: Provides an implementation of concurrent or varying coefficient regression methods for 
+    functional data. The implementations are done for both dense and sparsely observed functional
+    data. Pointwise confidence bands can be constructed for each case. Further, the influence of
+    past predictor values are modeled by a smooth history index function, 
+    while the effects on the response are described by smooth varying coefficient functions, 
+    which are very useful in analyzing real data such as COVID data.
+    References: Yao, F., Müller, H.G., Wang, J.L. (2005) <doi: 10.1214/009053605000000660>.
+                Sentürk, D., Müller, H.G. (2010) <doi: 10.1198/jasa.2010.tm09228>.
+License: BSD_3_clause + file LICENSE
+Imports: fdapace, stats
+Suggests: MASS, Rcpp (>= 0.11.5), Matrix, pracma, numDeriv, testthat
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-11-07 19:08:21 UTC; suiiao
+Author: Su I Iao [aut, cre],
+  Satarupa Bhattacharjee [aut],
+  Yaqing Chen [aut],
+  Changbo Zhu [aut],
+  Han Chen [aut],
+  Yidong Zhou [aut],
+  Álvaro Gajardo [aut],
+  Poorbita Kundu [aut],
+  Hang Zhou [aut],
+  Hans-Georg Müller [cph, ths, aut]
+Repository: CRAN
+Date/Publication: 2023-11-08 23:30:07 UTC

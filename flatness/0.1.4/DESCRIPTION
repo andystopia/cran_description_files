@@ -1,0 +1,25 @@
+Package: flatness
+Type: Package
+Title: Indices and Tests for Assessing the Flatness of (Rank)
+        Histograms
+Version: 0.1.4
+Authors@R: person("Michaël", "Zamo", email = "michael.zamo@meteo.fr", role = c("aut", "cre"))
+Maintainer: Michaël Zamo <michael.zamo@meteo.fr>
+Description: S3 classes, plotting functions, indices and tests to analyse the flatness of histograms.
+    It is specifically (but not only) aimed for assessing whether "rank" histograms (much used in weather forecasting) are flat.
+    Specifically functions are provided to use the Jolliffe-Primo flatness tests introduced in Jolliffe and Primo (2008, <doi:10.1175/2007MWR2219.1>).
+    Flatness indices described in Wilks (2019, <doi:10.1175/MWR-D-18-0369.1>) can be computed.
+    Finally a function to use the Benjamini-Hochberg procedure for multiple hypothesis testing is provided (Benjamini and Hochberg, 1995, <doi:10.1111/j.2517-6161.1995.tb02031.x>).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: data.table, lattice, xtable
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-26 17:16:14 UTC; micha
+Author: Michaël Zamo [aut, cre]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2021-06-29 07:20:09 UTC

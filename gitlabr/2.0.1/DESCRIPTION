@@ -1,0 +1,34 @@
+Package: gitlabr
+Title: Access to the 'Gitlab' API
+Version: 2.0.1
+Authors@R: c(
+    person("Jirka", "Lewandowski", , "jirka.lewandowski@wzb.eu", role = "aut"),
+    person("Sébastien", "Rochette", , "sebastien@thinkr.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1565-9313"))
+  )
+Description: Provides R functions to access the API of the project and
+    repository management web application 'GitLab'. For many common tasks
+    (repository file access, issue assignment and status, commenting)
+    convenience wrappers are provided, and in addition the full API can be
+    used by specifying request locations. 'GitLab' is open-source software
+    and can be self-hosted or used on <https://about.gitlab.com>.
+License: GPL (>= 3)
+URL: https://statnmap.github.io/gitlabr/
+BugReports: https://github.com/statnmap/gitlabr/issues
+Depends: R (>= 3.1.2)
+Imports: arpr, base64enc, dplyr (>= 0.4.3), httr (>= 1.1.0), magrittr,
+        purrr (>= 0.2.2), shiny (>= 0.13.0), stringr, tibble (>= 1.1),
+        utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), yaml
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-09-13 10:44:20 UTC; srochett
+Author: Jirka Lewandowski [aut],
+  Sébastien Rochette [aut, cre] (<https://orcid.org/0000-0002-1565-9313>)
+Maintainer: Sébastien Rochette <sebastien@thinkr.fr>
+Repository: CRAN
+Date/Publication: 2022-09-13 11:00:02 UTC

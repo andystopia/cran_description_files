@@ -1,0 +1,32 @@
+Package: scrypt
+Type: Package
+Title: Key Derivation Functions for R Based on Scrypt
+Version: 0.1.5
+Authors@R: c(
+    person("Bob", "Jansen", email = "bobjansen@gmail.com", role = c("ctb", "cre")),
+    person("Andy", "Kipp", email = "andy@rstudio.com", role = c("aut")),
+    person("Colin", "Percival", role = c("aut", "cph")),
+    person(family = "RStudio", role = "cph")
+    )
+Copyright: RStudio, Inc.; Colin Percival
+Maintainer: Bob Jansen <bobjansen@gmail.com>
+Description: Functions for working with the scrypt key derivation functions
+    originally described by Colin Percival
+    <https://www.tarsnap.com/scrypt/scrypt.pdf> and in Percival and Josefsson
+    (2016) <doi:10.17487/RFC7914>. Scrypt is a password-based key derivation
+    function created by Colin Percival. The algorithm was specifically designed
+    to make it costly to perform large-scale custom hardware attacks by
+    requiring large amounts of memory.
+License: FreeBSD
+Depends: R (>= 3.0.0)
+URL: https://github.com/bobjansen/rscrypt
+Imports: Rcpp (>= 0.10.6)
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2023-01-17 07:08:59 UTC; brj
+Author: Bob Jansen [ctb, cre],
+  Andy Kipp [aut],
+  Colin Percival [aut, cph],
+  RStudio [cph]
+Repository: CRAN
+Date/Publication: 2023-01-17 07:30:02 UTC

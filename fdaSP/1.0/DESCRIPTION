@@ -1,0 +1,26 @@
+Package: fdaSP
+Type: Package
+Title: Sparse Functional Data Analysis Methods
+Version: 1.0
+Date: 2023-09-12
+Author: Mauro Bernardi [aut, cre],
+  Marco Stefanucci [aut],
+  Antonio Canale [ctb]
+Authors@R: c(person("Mauro", "Bernardi", role= c("aut","cre"), email="mauro.bernardi@unipd.it"),
+            person("Marco", "Stefanucci", role= c("aut"), email="marco.stefanucci@uniroma2.it"),
+	    person("Antonio", "Canale", role= "ctb", email="antonio.canale@unipd.it"))
+Maintainer: Mauro Bernardi <mauro.bernardi@unipd.it>
+Description: Provides algorithms to fit linear regression models under several popular penalization techniques and functional linear regression models based on Majorizing-Minimizing (MM) and Alternating Direction Method of Multipliers (ADMM) techniques.
+    See Boyd et al (2010) <doi:10.1561/2200000016> for complete introduction to the method.
+License: GPL (>= 3)
+Suggests: RColorBrewer, gglasso, glmnet, latex2exp, utils
+Imports: Rcpp, Rdpack, grDevices, graphics, stats, parallel,
+        doParallel, foreach, splines, ks, pracma
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.2.3.9000
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2023-09-15 06:37:01 UTC; maurobernardi
+Repository: CRAN
+Date/Publication: 2023-09-15 19:32:06 UTC

@@ -1,0 +1,28 @@
+Package: APackOfTheClones
+Type: Package
+Title: Visualization of Clonal Expansion for Single Cell Immune
+        Profiles
+Version: 1.2.0
+Authors@R: c(person("Qile", "Yang", email = "qile.yang@berkeley.edu", role = c("cre","aut","cph")))
+Maintainer: Qile Yang <qile.yang@berkeley.edu>
+Description: Visualize clonal expansion via circle-packing. 'APackOfTheClones' extends 'scRepertoire' to produce a publication-ready visualization of clonal expansion at a single cell resolution, by representing expanded clones as differently sized circles. The method was originally implemented by Murray Christian and Ben Murrell in the following immunology study: Ma et al. (2021) <doi:10.1126/sciimmunol.abg6356>.
+BugReports: https://github.com/Qile0317/APackOfTheClones/issues/
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: false
+Suggests: cowplot, covr, knitr, rmarkdown, sf, spelling, testthat (>=
+        3.0.0), vdiffr
+Config/testthat/edition: 3
+Imports: dplyr, ggforce, ggplot2, grDevices, hash, lifecycle, magrittr,
+        methods, Rcpp, rlang, Seurat, SeuratObject
+RoxygenNote: 7.3.1
+URL: https://qile0317.github.io/APackOfTheClones/
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-04-16 09:36:49 UTC; qile
+Author: Qile Yang [cre, aut, cph]
+Repository: CRAN
+Date/Publication: 2024-04-16 09:50:02 UTC

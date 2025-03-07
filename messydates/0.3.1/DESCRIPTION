@@ -1,0 +1,45 @@
+Package: messydates
+Title: A Flexible Class for Messy Dates
+Description: Contains a set of tools for constructing and coercing
+  into and from the "mdate" class. 
+  This date class implements ISO 8601-2:2019(E) and
+  allows regular dates to be annotated 
+  to express unspecified date components,
+  approximate or uncertain date components, 
+  date ranges, and sets of dates. 
+  This is useful for describing and analysing temporal information,
+  whether historical or recent, where date precision may vary.
+Version: 0.3.1
+Date: 2022-07-21
+Authors@R: 
+    c(person(given = "James",
+             family = "Hollway",
+             role = c("cre", "aut", "ctb"),
+             email = "james.hollway@graduateinstitute.ch",
+             comment = c("IHEID", ORCID = "0000-0002-8361-9647")),
+      person(given = "Henrique",
+             family = "Sposito",
+             role = "ctb",
+             comment = c("IHEID", ORCID = "0000-0003-3420-6085")),
+      person(given = "Jael",
+             family = "Tan",
+             role = "ctb",
+             comment = c("IHEID", ORCID = "0000-0002-6234-9764")))
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+LazyData: true
+VignetteBuilder: knitr
+Imports: stringr, purrr, lubridate, tibble, dplyr
+Suggests: testthat (>= 3.0.0), covr, rmarkdown, knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.4)
+NeedsCompilation: no
+Packaged: 2022-07-21 13:39:43 UTC; henriquesposito
+Author: James Hollway [cre, aut, ctb] (IHEID,
+    <https://orcid.org/0000-0002-8361-9647>),
+  Henrique Sposito [ctb] (IHEID, <https://orcid.org/0000-0003-3420-6085>),
+  Jael Tan [ctb] (IHEID, <https://orcid.org/0000-0002-6234-9764>)
+Maintainer: James Hollway <james.hollway@graduateinstitute.ch>
+Repository: CRAN
+Date/Publication: 2022-07-21 14:30:02 UTC

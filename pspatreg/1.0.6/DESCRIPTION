@@ -1,0 +1,53 @@
+Package: pspatreg
+Type: Package
+Title: Spatial and Spatio-Temporal Semiparametric Regression Models
+        with Spatial Lags
+Version: 1.0.6
+Date: 2022-11-16
+Authors@R: 
+  c(person("Roman", "Minguez", email = "roman.minguez@uclm.es", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0490-3181")),
+    person("Roberto", "Basile", email = "roberto.basile@univaq.it",
+    role = c("aut"), comment = c(ORCID = "0000-0002-4531-2820")),
+    person("Maria", "Durban", email = "mdurban@est-econ.uc3m.es",
+    role = c("aut"), comment = c(ORCID = "0000-0002-4272-7895")),
+    person("Gonzalo", "Espana-Heredia", email = "gehllanza@gmail.com",
+    role = c("aut")))
+Maintainer: Roman Minguez <roman.minguez@uclm.es>
+Description: Estimation and inference of spatial and spatio-temporal 
+    semiparametric models including spatial or spatio-temporal non-parametric 
+    trends, parametric and non-parametric covariates and, possibly, a spatial 
+    lag for the dependent variable and temporal correlation in the noise.
+    The spatio-temporal trend can be decomposed in ANOVA way including main and 
+    interaction functional terms. Use of SAP algorithm to estimate the spatial 
+    or spatio-temporal trend and non-parametric covariates. The methodology of 
+    these models can be found in next references
+    Basile, R. et al. (2014), <doi:10.1016/j.jedc.2014.06.011>;
+    Rodriguez-Alvarez, M.X. et al. (2015) <doi:10.1007/s11222-014-9464-2> and,
+    particularly referred to the focus of the package, Minguez, R., 
+    Basile, R. and Durban, M. (2020) <doi:10.1007/s10260-019-00492-8>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1), methods (>= 4.1), stats (>= 4.1), graphics (>=
+        4.1)
+Imports: AmesHousing (>= 0.0.4), dplyr (>= 1.0.10), fields (>= 14.1),
+        ggplot2 (>= 3.3.6), grDevices (>= 4.1), MBA (>= 0.0-9), MASS
+        (>= 7.3-54), minqa (>= 1.2.5), Matrix (>= 1.4-1), numDeriv (>=
+        2016.8-1.1), plm (>= 2.6-2), Rdpack (>= 2.4), sf (>= 1.0-8),
+        spatialreg (>= 1.2-6), spdep (>= 1.2-7), splines (>= 4.2.1),
+        stringr (>= 1.4.1)
+Suggests: knitr (>= 1.40), rmarkdown (>= 2.18)
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+RdMacros: Rdpack
+URL: https://github.com/rominsal/pspatreg
+BugReports: https://github.com/rominsal/pspatreg/issues
+NeedsCompilation: no
+Packaged: 2022-11-16 21:35:04 UTC; Roman.Minguez
+Author: Roman Minguez [aut, cre] (<https://orcid.org/0000-0002-0490-3181>),
+  Roberto Basile [aut] (<https://orcid.org/0000-0002-4531-2820>),
+  Maria Durban [aut] (<https://orcid.org/0000-0002-4272-7895>),
+  Gonzalo Espana-Heredia [aut]
+Repository: CRAN
+Date/Publication: 2022-11-16 22:20:02 UTC

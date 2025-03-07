@@ -1,0 +1,24 @@
+Package: bispdep
+Type: Package
+Title: Statistical Tools for Bivariate Spatial Dependence Analysis
+Version: 1.0-0
+Date: 2024-01-21
+Author: Carlos Melo [aut, cre] (<https://orcid.org/0000-0002-5598-1913>)
+Authors@R: c(person(given = "Carlos", 
+        family = "Melo", 
+        role = c("aut", "cre"),
+        email = "cmelo@udistrital.edu.co",
+        comment = c(ORCID = "0000-0002-5598-1913")))
+Depends: R (>= 3.3.0), methods, spData, sf
+Imports: spdep, spatialreg, stats, combinat, boot (>= 1.3-1), graphics,
+        grDevices, ggplot2, sp (>= 1.0), RColorBrewer
+Suggests: parallel
+Maintainer: Carlos Melo <cmelo@udistrital.edu.co>
+Description: A collection of functions to test spatial autocorrelation between variables, including Moran I, Geary C and Getis G together with scatter plots, functions for mapping and identifying clusters and outliers, functions associated with the moments of the previous statistics that will allow testing whether there is bivariate spatial autocorrelation, and a function that allows identifying (visualizing neighbours) on the map, the neighbors of any region once the scheme of the spatial weights matrix has been established.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-26 13:38:10 UTC; ASUS
+Repository: CRAN
+Date/Publication: 2024-01-27 17:00:02 UTC

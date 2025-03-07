@@ -1,0 +1,33 @@
+Package: cecs
+Title: R Interface for the C Implementation of CEC Benchmark Functions
+Version: 0.1.0
+Authors@R: c( 
+    person("Eryk", "Warchulski", role = c("aut", "cre"), email = "ewarchul@gmail.com"),
+    person("Dariusz", "Jagodziński", role = c("cph"), email = "d.jagodzinski@elka.pw.edu.pl"),
+    person("Yasser", "Gonzalez-Fernandez", role = c("cph"), email = "yasser@yassergonzalez.com"),
+    person("Mauricio", "Zambrano-Bigiarini", role = c("cph"), email = "mzb.devel@gmail.com")
+  )
+Description: Goal of this package is to provide access to benchmark functions defined for
+    the Special Session and Competition on Real-Parameter Single Objective Optimization in one place.
+    The package contains functions from following years: 2013, 2014, 2017, 2021 (<https://github.com/P-N-Suganthan>). 
+    Implementations of CEC-2013 (Y. Gonzalez-Fernandez & M. Zambrano-Bigiarini) and CEC2017 (D. Jagodziński) are taken from existed R packages. Also, 
+    the original C source code has been cleaned and reorganized for better readability.
+License: GPL (>= 3)
+BugReports: https://github.com/ewarchul/cecs/issues
+URL: https://github.com/ewarchul/cecs
+Depends: R (>= 3.6.0)
+Imports: stringr (>= 1.4.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 3.0.0), purrr (>= 0.3.4)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-01-13 19:40:41 UTC; ewarchul
+Author: Eryk Warchulski [aut, cre],
+  Dariusz Jagodziński [cph],
+  Yasser Gonzalez-Fernandez [cph],
+  Mauricio Zambrano-Bigiarini [cph]
+Maintainer: Eryk Warchulski <ewarchul@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-18 08:40:02 UTC

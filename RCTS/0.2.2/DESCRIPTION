@@ -1,0 +1,29 @@
+Package: RCTS
+Title: Clustering Time Series While Resisting Outliers
+Version: 0.2.2
+Authors@R: 
+    person(given = "Ewoud",
+           family = "Heyndels",
+           role = c("aut", "cre"),
+           email = "ewoud.heyndels@vub.be",
+           comment = c(ORCID = "0000-0003-4540-8571"))
+Description: Robust Clustering of Time Series (RCTS) has the functionality to cluster time series using both the classical and the robust interactive fixed effects framework. 
+  The classical framework is developed in Ando & Bai (2017) <doi:10.1080/01621459.2016.1195743>. The implementation within this package excludes the SCAD-penalty on the estimations of beta. 
+  This robust framework is developed in Boudt & Heyndels (2022) <doi:10.1016/j.ecosta.2022.01.002> and is made robust against different kinds of outliers.
+  The algorithm iteratively updates beta (the coefficients of the observable variables), group membership, and the latent factors (which can be common and/or group-specific) along
+  with their loadings. The number of groups and factors can be estimated if they are unknown.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+Imports: stats, magrittr, dplyr, purrr, stringr, tidyr, tibble,
+        ggplot2, ncvreg, robustbase, cellWise, rlang, Rdpack
+Suggests: tsqn, doParallel, doSNOW, foreach, mclust, Matrix
+RdMacros: Rdpack
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2022-06-17 11:35:21 UTC; hewoud
+Author: Ewoud Heyndels [aut, cre] (<https://orcid.org/0000-0003-4540-8571>)
+Maintainer: Ewoud Heyndels <ewoud.heyndels@vub.be>
+Repository: CRAN
+Date/Publication: 2022-06-20 16:20:02 UTC

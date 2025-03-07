@@ -1,0 +1,28 @@
+Package: PhaseType
+Title: Inference for Phase-Type Distributions
+Description: Functions to perform Bayesian inference on absorption time data for
+             Phase-type distributions. The methods of Bladt et al (2003)
+             <doi:10.1080/03461230110106435> and Aslett (2012)
+             <https://www.louisaslett.com/PhD_Thesis.pdf> are provided.
+URL: https://www.louisaslett.com/PhaseType/,
+        https://github.com/louisaslett/PhaseType
+BugReports: https://github.com/louisaslett/PhaseType/issues
+Version: 0.2.0
+Maintainer: Louis Aslett <louis.aslett@durham.ac.uk>
+Authors@R: c(person("Louis", "Aslett", email = "louis.aslett@durham.ac.uk",
+                    role = c("aut", "cre")),
+             person("Wally", "Gilks",
+                    role = "ctb"))
+Copyright: The code in src/arms.c is slightly modified based on the
+        research paper implementation written by Wally Gilks. All other
+        code in all other files were written by the maintainer.
+Imports: coda, ggplot2, reshape
+Suggests: actuar
+License: GPL-2 | GPL-3
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2022-12-01 16:29:39 UTC; louis
+Author: Louis Aslett [aut, cre],
+  Wally Gilks [ctb]
+Repository: CRAN
+Date/Publication: 2022-12-02 16:10:11 UTC

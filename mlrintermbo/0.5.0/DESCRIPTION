@@ -1,0 +1,32 @@
+Package: mlrintermbo
+Title: Model-Based Optimization for 'mlr3' Through 'mlrMBO'
+Description: The 'mlrMBO' package can ordinarily not be used for optimization within 'mlr3', because of
+  incompatibilities of their respective class systems. 'mlrintermbo' offers a compatibility
+  interface that provides 'mlrMBO' as an 'mlr3tuning' 'Tuner' object, for tuning of machine
+  learning algorithms within 'mlr3', as well as a 'bbotk' 'Optimizer' object for optimization
+  of general objective functions using the 'bbotk' black box optimization framework. The
+  control parameters of 'mlrMBO' are faithfully reproduced as a 'paradox' 'ParamSet'.
+Authors@R: c(
+    person("Martin", "Binder", email = "developer.mb706@doublecaret.com", role = c("aut", "cre")))
+URL: https://github.com/mb706/mlrintermbo
+BugReports: https://github.com/mb706/mlrintermbo/issues
+License: LGPL-3
+Encoding: UTF-8
+Imports: backports, checkmate, data.table, mlr3misc (>= 0.1.4),
+        paradox, R6, lhs, callr, bbotk, mlr3tuning
+Suggests: mlr, ParamHelpers, testthat, rgenoud, DiceKriging, emoa,
+        cmaesr, randomForest, smoof, lgr, mlr3, mlr3learners,
+        mlr3pipelines, mlrMBO, ranger, rpart
+LazyData: yes
+ByteCompile: yes
+Version: 0.5.0
+RoxygenNote: 7.1.1
+Collate: 'utils.R' 'CapsuledMlr3Learner.R' 'ParamHelpersParamSet.R'
+        'optimize.R' 'paramset.R' 'TunerInterMBO.R' 'surrogates.R'
+        'zzz.R'
+NeedsCompilation: no
+Packaged: 2021-02-24 23:08:46 UTC; user
+Author: Martin Binder [aut, cre]
+Maintainer: Martin Binder <developer.mb706@doublecaret.com>
+Repository: CRAN
+Date/Publication: 2021-03-01 09:00:06 UTC

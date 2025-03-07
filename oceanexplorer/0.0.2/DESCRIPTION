@@ -1,0 +1,57 @@
+Package: oceanexplorer
+Title: Explore Our Planet's Oceans with NOAA
+Version: 0.0.2
+Authors@R: 
+    c(
+      person(
+        "Martin",  
+        "Schobben", 
+        email = "schobbenmartin@gmail.com", 
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0001-8560-0037")
+      ),
+      person(
+        "Peter",  
+        "Bijl", 
+        role = "ctb",
+        comment = c(ORCID = "0000-0002-1710-4012")
+      )
+    )
+Description: Provides tools for easy exploration of the world ocean atlas of 
+  the US agency National Oceanic and Atmospheric Administration (NOAA). It 
+  includes functions to extract NetCDF data from the repository and code to 
+  visualize several physical and chemical parameters of the ocean. A Shiny app 
+  further allows interactive exploration of the data. The methods for data 
+  collecting and quality checks are described in several papers, which can be
+  found here: <https://www.ncei.noaa.gov/products/world-ocean-atlas>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: cffr, covr, curl, devtools (>= 2.4.3), diffviewer (>= 0.1.1),
+        globals (>= 0.14.0), knitr, rmarkdown, roxygen2, shinytest (>=
+        1.5.1), spelling, testthat (>= 3.1.2), tibble, vdiffr (>=
+        1.0.2)
+Imports: stars (>= 0.5.5), shiny (>= 1.7.1), ggplot2 (>= 3.3.5), sf (>=
+        1.0.5), waiter (>= 0.2.5), bslib (>= 0.3.1), thematic (>=
+        0.1.2.1), shinyFeedback (>= 0.4.0), purrr (>= 0.3.4), miniUI
+        (>= 0.1.1.1), rstudioapi (>= 0.13), DT (>= 0.20), fs (>=
+        1.5.2), glue (>= 1.6.0), shinyjs (>= 2.1.0), rlang (>= 0.4.11),
+        maps (>= 3.4.0), ncmeta (>= 0.3.0), RNetCDF (>= 2.6.1), dplyr
+        (>= 1.0.9)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+URL: https://utrechtuniversity.github.io/oceanexplorer/,
+        https://utrecht-university.shinyapps.io/oceanexplorer/,
+        https://www.ncei.noaa.gov/products/world-ocean-atlas
+BugReports: https://github.com/UtrechtUniversity/oceanexplorer/issues
+Language: en-US
+LazyData: true
+NeedsCompilation: no
+Packaged: 2022-09-14 10:57:27 UTC; nicola
+Author: Martin Schobben [aut, cre, cph]
+    (<https://orcid.org/0000-0001-8560-0037>),
+  Peter Bijl [ctb] (<https://orcid.org/0000-0002-1710-4012>)
+Maintainer: Martin Schobben <schobbenmartin@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-15 09:10:08 UTC

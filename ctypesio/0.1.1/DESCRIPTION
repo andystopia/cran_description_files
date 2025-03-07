@@ -1,0 +1,31 @@
+Package: ctypesio
+Type: Package
+Title: Read and Write Standard C Types from Files, Connections and Raw
+        Vectors
+Version: 0.1.1
+Authors@R: c(
+    person("Mike", "Cheng", role = c("aut", "cre", 'cph'), email = "mikefc@coolbutuseless.com"),
+    person("Anne", "Fu", role = "ctb", comment = c("Better UTF-8 support", ORCID = "0000-0002-9025-6071"))
+    )
+Maintainer: Mike Cheng <mikefc@coolbutuseless.com>
+Description: Interacting with binary files can be difficult because R's types
+    are a subset of what is generally supported by 'C'.  This package provides a 
+    suite of functions for reading and writing binary data (with files, connections, 
+    and raw vectors) using 'C' type descriptions.  These functions convert data
+    between 'C' types and R types while checking for values outside the 
+    type limits, 'NA' values, etc.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), jpeg
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/coolbutuseless/ctypesio
+BugReports: https://github.com/coolbutuseless/ctypesio/issues
+NeedsCompilation: yes
+Packaged: 2024-10-13 11:27:57 UTC; mike
+Author: Mike Cheng [aut, cre, cph],
+  Anne Fu [ctb] (Better UTF-8 support,
+    <https://orcid.org/0000-0002-9025-6071>)
+Repository: CRAN
+Date/Publication: 2024-10-16 16:40:02 UTC

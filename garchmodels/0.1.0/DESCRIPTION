@@ -1,0 +1,26 @@
+Package: garchmodels
+Title: The Tidymodels Extension for GARCH Models
+Version: 0.1.0
+Authors@R: c(
+    person("Alberto", "Almuiña", email = "albertogonzalezalmuinha@gmail.com", role = c("aut", "cre"))
+    )
+Description: Garch framework for use with the 'tidymodels' ecosystem. It includes both univariate and 
+    multivariate methods from the 'rugarch' and 'rmgarch' packages. These models include DCC-Garch, Copula Garch 
+    and Go-GARCH among others.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), parsnip, rugarch, rmgarch
+Imports: rlang (>= 0.1.2), magrittr, purrr, dplyr, stringr, tibble,
+        tidyr, dials
+Suggests: tidymodels, tidyverse, modeltime, timetk, lubridate, knitr,
+        rmarkdown, roxygen2, testthat (>= 3.0.0), covr
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-04-08 20:53:30 UTC; Usuario
+Author: Alberto Almuiña [aut, cre]
+Maintainer: Alberto Almuiña <albertogonzalezalmuinha@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-10 07:50:02 UTC

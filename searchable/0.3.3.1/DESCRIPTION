@@ -1,0 +1,28 @@
+Package: searchable
+Type: Package
+Title: Tools for Custom Searches / Subsets / Slices of Named R Objects
+Version: 0.3.3.1
+Date: 2015-04-06
+Author: "DecisionPatterns [aut, cre]"
+Maintainer: Christopher Brown <chris.brown@decisionpatterns.com>
+Description: Provides functionality for searching / subsetting and slicing named
+    objects using 'stringr/i'-style modifiers by case (in)sensitivity,
+    regular expressions or fixed expressions; searches uses the standard '['
+    operator and allows specification of default search behavior to either the
+    search target (named object) and/or the search pattern.
+Depends: R (>= 3.1.0)
+Imports: methods, magrittr(>= 1.5), stringi(>= 0.4.1)
+Suggests: testthat
+License: GPL-2
+URL: https://github.com/decisionpatterns/searchable
+BugReports: https://github.com/decisionpatterns/searchable/issues
+Collate: 'Class-Pattern.R' 'Class-PatternOrCharacter.R'
+        'Class-Searchables.R' 'Class-Searchable.R'
+        'Class-SearchableOrPattern.R' 'boundary.R' 'case.R' 'coll.R'
+        'detect.R' 'extract.R' 'fixed.R' 'invert.R' 'is.string.R'
+        'regex.R' 'reverse.lookup.R' 'searchable-package.R' 'std.R'
+        'stri_detect_std.R' 'zzz.R'
+Packaged: 2015-04-07 10:54:12 UTC; cbrown
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-04-08 00:37:36

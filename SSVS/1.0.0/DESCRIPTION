@@ -1,0 +1,46 @@
+Package: SSVS
+Title: Functions for Stochastic Search Variable Selection (SSVS)
+Version: 1.0.0
+Authors@R: c(person(given="Sierra",
+         family="Bainter",
+         role=c("cre", "aut"),
+         email="sbainter@miami.edu"),
+  person(given="Thomas",
+         family="McCauley",
+         role=c("aut"),
+         email="thomasgranvillemccauley@gmail.com"),
+  person(given="Mahmoud",
+         family="Fahmy",
+         role=c("aut"),
+         email="mahmoud.m.fahm@gmail.com"),
+  person("Dean", "Attali", 
+         role = "aut",
+         email = "daattali@gmail.com", 
+         comment= c(ORCID="0000-0002-5645-3493")))
+Description: Functions for performing stochastic search variable selection (SSVS) 
+    for binary and continuous outcomes and visualizing the results. 
+    SSVS is a Bayesian variable selection method used to estimate the probability 
+    that individual predictors should be included in a regression model. 
+    Using MCMC estimation, the method samples thousands of regression models 
+    in order to characterize the model uncertainty regarding both the predictor 
+    set and the regression parameters. 
+URL: https://github.com/sabainter/SSVS
+BugReports: https://github.com/sabainter/SSVS/issues
+Depends: R (>= 2.10)
+Imports: bayestestR, BoomSpikeSlab, checkmate, ggplot2, graphics,
+        rlang, stats
+Suggests: AER, testthat (>= 3.0.0), knitr, rmarkdown
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-03-03 17:28:57 UTC; Dean-X1C
+Author: Sierra Bainter [cre, aut],
+  Thomas McCauley [aut],
+  Mahmoud Fahmy [aut],
+  Dean Attali [aut] (<https://orcid.org/0000-0002-5645-3493>)
+Maintainer: Sierra Bainter <sbainter@miami.edu>
+Repository: CRAN
+Date/Publication: 2022-03-08 20:20:12 UTC

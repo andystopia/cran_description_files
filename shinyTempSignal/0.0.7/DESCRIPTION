@@ -1,0 +1,36 @@
+Package: shinyTempSignal
+Title: Explore Temporal and Other Phylogenetic Signals
+Version: 0.0.7
+Authors@R: 
+    	c(person(given = "Guangchuang", family = "Yu", email = "guangchuangyu@gmail.com", role = c("aut", "cre", "cph"), 
+                comment = c(ORCID = "0000-0002-6485-8781")),
+          person(given = "Xiao",     family = "Luo",  email = "l77880853349@163.com",     role  = "ctb"),       
+          person(given = "Li",       family = "Zhan", email = "smu18575877413@gmail.com", role  = "ctb"),
+          person(given = "Xuanan",   family = "Zhu",  email = "1063785553@qq.com",        role = "ctb"),
+          person(given = "Jianfeng", family = "Lin",  email = "415186984@qq.com",         role = "ctb")
+        )
+Description: Sequences sampled at different time points can be used to infer molecular phylogenies on natural time scales, but if the sequences records inaccurate sampling times, that are not the actual sampling times, then it will affect the molecular phylogenetic analysis. This shiny application helps exploring temporal characteristics of the evolutionary trees through linear regression analysis and with the ability to identify and remove incorrect labels. The method was extended to support exploring other phylogenetic signals under strict and relaxed models.
+License: GPL-3
+Depends: R (>= 3.3.0)
+Imports: ape, forecast, ggplot2, ggprism, ggpmisc, ggtree, golem (>=
+        0.3.1), shiny (>= 1.6.0), shinydashboard, shinyjs,
+        shinyWidgets, stats, treeio, yulab.utils (>= 0.1.4), nlme
+Suggests: attempt, conflicted, config (>= 0.3.1), glue, htmltools,
+        knitr, prettydoc, processx, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+URL: https://github.com/YuLab-SMU/shinyTempSignal
+BugReports: https://github.com/YuLab-SMU/shinyTempSignal/issues
+NeedsCompilation: no
+Packaged: 2024-02-21 03:29:27 UTC; HUAWEI
+Author: Guangchuang Yu [aut, cre, cph]
+    (<https://orcid.org/0000-0002-6485-8781>),
+  Xiao Luo [ctb],
+  Li Zhan [ctb],
+  Xuanan Zhu [ctb],
+  Jianfeng Lin [ctb]
+Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-02-21 03:40:05 UTC

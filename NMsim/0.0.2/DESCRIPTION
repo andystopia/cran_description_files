@@ -1,0 +1,24 @@
+Package: NMsim
+Type: Package
+Title: Seamless 'Nonmem' Simulation Platform
+Version: 0.0.2
+Authors@R: c(person("Philip", "Delff", email = "philip@delff.dk",role = c("aut","cre")),
+  person("Matthew","Fidler", role = c("ctb"), email = "matt.fidler@novartis.com", comment="Co-author on NMreadCov"))
+Maintainer: Philip Delff <philip@delff.dk>
+Description: A complete and seamless 'Nonmem' simulation interface from within R. Turns 'Nonmem' control streams into simulation control streams, executes them with specified simulation input data and returns the results. The simulation is performed by 'Nonmem', eliminating time spent and risks of re-implementation of models in other tools.
+License: MIT + file LICENSE
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1.0)
+Imports: data.table, NMdata (>= 0.1.1), R.utils, MASS
+Suggests: knitr, rmarkdown, fst, dplyr, ggplot2, patchwork, tibble,
+        tracee, tidyr
+Encoding: UTF-8
+BugReports: https://github.com/philipdelff/NMsim/issues
+Language: en-US
+URL: https://philipdelff.github.io/NMsim/
+NeedsCompilation: no
+Packaged: 2023-09-13 20:29:32 UTC; philipde
+Author: Philip Delff [aut, cre],
+  Matthew Fidler [ctb] (Co-author on NMreadCov)
+Repository: CRAN
+Date/Publication: 2023-09-14 10:20:07 UTC

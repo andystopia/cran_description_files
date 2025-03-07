@@ -1,0 +1,52 @@
+Package: rqti
+Title: Create Tests According to QTI 2.1 Standard
+Version: 0.2.0
+Authors@R: c(
+    person("Andrey", "Shevandrin", email = "shevandrin@gmail.com", 
+    role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-0807-2546")),
+    person("Petr", "Bondarenko", email = "bondarenko.volsu@gmail.com", 
+    role = c("ctb"), comment = c(ORCID = "0000-0002-5154-9664")),
+    person("Ivonne", "Ojeda", email = "yulieth9109@gmail.com",
+    role = "ctb"),
+    person("Johannes", "Titz", email = "johannes@titz.science",
+    comment = c(ORCID = "0000-0002-1102-5719"), role = c("aut", "cph")),
+    person("Brian", "Mottershead", role = "cph", comment = "Author of QTIJS library"),
+    person("Stiftung für Innovation in der Hochschullehre", role = "fnd")
+    )
+Description: Create tests and tasks compliant with the Question & Test Interoperability (QTI) information model version 2.1. Input sources are Rmd/md description files or S4-class objects. Output formats include standalone zip or xml files. Supports the generation of basic task types (single and multiple choice, order, pair association, matching tables, filling gaps and essay) and provides a comprehensive set of attributes for customizing tests.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: htmltools, xml2, yaml, rmarkdown, servr, rstudioapi, fs,
+        stringr, methods, lubridate, magrittr, httr2, curl, digest,
+        knitr, getPass, keyring, zip, kableExtra, textutils
+Suggests: covr, dplyr, testthat (>= 3.0.0), XML, readr
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+URL: https://github.com/shevandrin/rqti,
+        https://shevandrin.github.io/rqti/
+BugReports: https://github.com/shevandrin/rqti/issues
+Collate: 'rqti.R' 'QtiMetadata.R' 'ModalFeedback.R' 'AssessmentItem.R'
+        'AssessmentSection.R' 'AssessmentTest.R' 'AssessmentTestOpal.R'
+        'Choice.R' 'CorrectFeedback.R' 'MatchTable.R' 'DirectedPair.R'
+        'Entry.R' 'Essay.R' 'Gap.R' 'InlineChoice.R' 'MultipleChoice.R'
+        'MultipleChoiceTable.R' 'NumericGap.R' 'OneInColTable.R'
+        'OneInRowTable.R' 'Ordering.R' 'SingleChoice.R' 'TextGap.R'
+        'TextGapOpal.R' 'WrongFeedback.R' 'api_opal.R' 'character.R'
+        'extract_results.R' 'helpers.R' 'knit_functions.R'
+        'object_builder.R' 'qti_task.R' 'qti_test.R'
+        'response_processing.R' 'rqti_project.R' 'section_builder.R'
+        'utils-pipe.R' 'zzz.R'
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2024-05-08 08:05:03 UTC; sheva
+Author: Andrey Shevandrin [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0807-2546>),
+  Petr Bondarenko [ctb] (<https://orcid.org/0000-0002-5154-9664>),
+  Ivonne Ojeda [ctb],
+  Johannes Titz [aut, cph] (<https://orcid.org/0000-0002-1102-5719>),
+  Brian Mottershead [cph] (Author of QTIJS library),
+  Stiftung für Innovation in der Hochschullehre [fnd]
+Maintainer: Andrey Shevandrin <shevandrin@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-08 09:30:03 UTC

@@ -1,0 +1,34 @@
+Package: wrappedtools
+Type: Package
+Title: Useful Wrappers Around Commonly Used Functions
+Description: The main functionalities of 'wrappedtools' are:
+    adding backticks to variable names; rounding to desired precision 
+    with special case for p-values; 
+    selecting columns based on pattern and storing their position, name, 
+    and backticked name; computing and formatting of descriptive statistics 
+    (e.g. mean±SD), comparing groups and creating publication-ready tables with 
+    descriptive statics and p-values; creating specialized plots for correlation 
+    or regression trees. Functions were mainly written for my own daily work or 
+    teaching, but may be of use to others as well.
+Version: 0.7.8
+Date: 2021-05-06
+Authors@R: 
+    person(given = "Andreas",
+           family = "Busjahn",
+           role = c("cre", "aut"),
+           email = "andreas@busjahn.net",
+           comment = c(ORCID = "0000-0001-9650-6919"))
+Maintainer: Andreas Busjahn <andreas@busjahn.net>
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, boot, knitr, coin, utils, dplyr, forcats, purrr, glue,
+        rlang, stringr, magrittr, ggplot2, tibble, tidyr, kableExtra
+Depends: tidyverse
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Suggests: rmarkdown, testthat
+NeedsCompilation: no
+Packaged: 2021-05-07 08:59:38 UTC; abusj
+Author: Andreas Busjahn [cre, aut] (<https://orcid.org/0000-0001-9650-6919>)
+Repository: CRAN
+Date/Publication: 2021-05-08 08:10:02 UTC

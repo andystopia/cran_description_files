@@ -1,0 +1,41 @@
+Package: topsa
+Type: Package
+Title: Topological Sensitivity Analysis
+Version: 0.1.0
+Authors@R: c(
+          person(given = "Maikol", 
+                 family = "Solís", 
+                 email = "maikol.solis@ucr.ac.cr", 
+                 role = c("aut", "cre")), 
+          person(given = "Alberto", 
+                 family = "Hernández", 
+                 email = "albertojose.hernandez@ucr.ac.cr", 
+                 role = c("ctb")), 
+          person(given = "Ronald A.", 
+                 family = "Zuñiga-Rojas", 
+                 email = "ronald.zunigarojas@ucr.ac.cr", 
+                 role = c("ctb")),
+          person(given = "Carlos", 
+                 family = "Pasquier", 
+                 email = "carlos.pasquier@ucr.ac.cr", 
+                 role = c("ctb"))
+          )
+Maintainer: Maikol Solís <maikol.solis@ucr.ac.cr>
+Description: Estimate geometric sensitivity indices reconstructing the embedding manifold of the data. The reconstruction is done via a Vietoris Rips with a fixed radius. With the homology of order 2 we estimate symmetric reflections of the those manifold to determine a sensitivity index on of the input model. Detailed information of the methods can be found in <https://www.dropbox.com/s/0kcrjhhkl7899n1/article-symmetric-reflection.pdf> (WIP preprint). 
+License: MIT + file LICENSE
+URL: https://github.com/maikol-solis/topsa
+BugReports: https://github.com/maikol-solis/topsa/issues
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, scales, sf, TDA, parallel, methods
+RoxygenNote: 7.1.0
+Depends: R (>= 3.6.0)
+Suggests: testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2020-09-18 12:45:23 UTC; maikol
+Author: Maikol Solís [aut, cre],
+  Alberto Hernández [ctb],
+  Ronald A. Zuñiga-Rojas [ctb],
+  Carlos Pasquier [ctb]
+Repository: CRAN
+Date/Publication: 2020-09-24 09:00:02 UTC

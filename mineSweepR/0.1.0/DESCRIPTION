@@ -1,0 +1,19 @@
+Package: mineSweepR
+Title: Mine Sweeper Game
+Version: 0.1.0
+Authors@R: 
+    person("Xiurui", "Zhu", , "zxr6@163.com", role = c("aut", "cre"),
+           comment = NULL)
+Description: This is the very popular mine sweeper game! The game requires you to find out tiles that contain mines through clues from unmasking neighboring tiles. Each tile that does not contain a mine shows the number of mines in its adjacent tiles. If you unmask all tiles that do not contain mines, you win the game; if you unmask any tile that contains a mine, you lose the game. For further game instructions, please run `help(run_game)` and check details. This game runs in X11-compatible devices with `grDevices::x11()`.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Imports: ComplexHeatmap, InteractiveComplexHeatmap, dplyr, grid,
+        gsignal, mgc, mmand, hms, rlang, pals
+Collate: 'utils.R' 'main.R' 'mineSweepR-package.R'
+NeedsCompilation: no
+Packaged: 2023-10-06 14:18:39 UTC; Xiurui Zhu
+Author: Xiurui Zhu [aut, cre]
+Maintainer: Xiurui Zhu <zxr6@163.com>
+Repository: CRAN
+Date/Publication: 2023-10-09 12:50:02 UTC

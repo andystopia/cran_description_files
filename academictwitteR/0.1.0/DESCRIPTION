@@ -1,0 +1,37 @@
+Package: academictwitteR
+Title: Access the Twitter Academic Research Product Track V2 API
+        Endpoint
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Christopher",
+           family = "Barrie",
+           role = c("aut", "cre"),
+           email = "christopher.barrie@ed.ac.uk",
+           comment = c(ORCID = "0000-0002-9156-990X")),
+           person(given = "Justin Chun-ting",
+           family = "Ho",
+           role = c("aut"),
+           email = "justin.chunting.ho@sciencespo.fr",
+           comment = c(ORCID = "0000-0002-7884-1059")))
+Description: Package to query the Twitter Academic Research Product Track (<https://developer.twitter.com/en/solutions/academic-research>),
+    providing access to full-archive search and other v2 API endpoints. Functions
+    are written with academic research in mind. They provide flexibility in how 
+    the user wishes to store collected data, and encourage regular storage of data
+    to mitigate loss when collecting large volumes of tweets. They also provide
+    workarounds to manage and reshape the format in which data is provided on
+    the client side.
+License: MIT + file LICENSE
+URL: https://github.com/cjbarrie/academictwitteR
+BugReports: https://github.com/cjbarrie/academictwitteR/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: dplyr, httr, jsonlite
+Suggests: knitr, rmarkdown, devtools
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-05-10 15:59:00 UTC; cbarrie6
+Author: Christopher Barrie [aut, cre] (<https://orcid.org/0000-0002-9156-990X>),
+  Justin Chun-ting Ho [aut] (<https://orcid.org/0000-0002-7884-1059>)
+Maintainer: Christopher Barrie <christopher.barrie@ed.ac.uk>
+Repository: CRAN
+Date/Publication: 2021-05-11 14:52:12 UTC

@@ -1,0 +1,31 @@
+Type: Package
+Package: qsplines
+Title: Quaternions Splines
+Version: 1.0.0
+Authors@R: c(
+    person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre")),
+    person("Matthias", "Geier", role = "aut",
+           comment = "author of the Python library 'splines'")
+  )
+Description: Provides routines to create some quaternions splines:
+    Barry-Goldman algorithm, De Casteljau algorithm, and Kochanek-Bartels
+    algorithm. The implementations are based on the Python library
+    'splines'. Quaternions splines allow to construct spherical curves. 
+    References: Barry and Goldman <doi:10.1145/54852.378511>, 
+    Kochanek and Bartels <doi:10.1145/800031.808575>.
+License: GPL-3
+URL: https://github.com/stla/qsplines
+BugReports: https://github.com/stla/qsplines/issues
+LinkingTo: Rcpp, BH
+Depends: onion
+Imports: shiny, utils, Rcpp
+Suggests: rgl
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+NeedsCompilation: yes
+Packaged: 2022-07-18 13:04:39 UTC; SDL96354
+Author: Stéphane Laurent [aut, cre],
+  Matthias Geier [aut] (author of the Python library 'splines')
+Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
+Repository: CRAN
+Date/Publication: 2022-07-18 13:20:02 UTC

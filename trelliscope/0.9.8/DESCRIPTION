@@ -1,0 +1,41 @@
+Package: trelliscope
+Type: Package
+Title: Create and Navigate Large Multi-Panel Visual Displays
+Version: 0.9.8
+Date: 2017-09-20
+Authors@R: c(person("Ryan", "Hafen", email = "rhafen@gmail.com", role = c("aut", "cre")),
+    person("Jeremiah", "Rounds", role = "ctb"),
+    person("Barret", "Schloerke", role = "ctb"),
+    person("Landon", "Sego", role = "ctb"))
+Maintainer: Ryan Hafen <rhafen@gmail.com>
+Description: An extension of Trellis Display that enables creation,
+    organization, and interactive viewing of multi-panel displays created
+    against potentially very large data sets.  The dynamic viewer tiles
+    panels of a display across the screen in a web browser and allows the
+    user to interactively page through the panels and sort and filter them
+    based on "cognostic" metrics computed for each panel.  Panels can be
+    created using many of R's plotting capabilities, including base R
+    graphics, 'lattice', 'ggplot2', and many 'htmlwidgets'.  Conditioning is
+    handled through the 'datadr' package, which enables 'Trelliscope' displays
+    with potentially millions of panels to be created against terabytes of
+    data on systems like 'Hadoop'.  While designed to scale, 'Trelliscope'
+    displays can also be very useful for small data sets.
+URL: http://deltarho.org/docs-trelliscope
+BugReports: https://github.com/delta-rho/trelliscope/issues
+License: BSD_3_clause + file LICENSE
+LazyData: yes
+NeedsCompilation: no
+Depends: R (>= 3.0.0), datadr (>= 0.8.5),
+Imports: lattice (>= 0.20-23), ggplot2, data.table, base64enc, shiny
+        (>= 0.12.0), htmlwidgets (>= 0.5.0), digest, jsonlite, hexbin,
+        png, jpeg, DistributionUtils, htmltools, curl, rsconnect
+Suggests: Cairo, dplyr, testthat (>= 0.11.0), roxygen2 (>= 5.0.1),
+        scagnostics, housingData
+RoxygenNote: 6.0.1
+Packaged: 2017-09-20 15:16:36 UTC; hafen
+Author: Ryan Hafen [aut, cre],
+  Jeremiah Rounds [ctb],
+  Barret Schloerke [ctb],
+  Landon Sego [ctb]
+Repository: CRAN
+Date/Publication: 2017-09-20 16:13:35 UTC

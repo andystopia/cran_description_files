@@ -1,0 +1,31 @@
+Package: parsermd
+Title: Formal Parser and Related Tools for R Markdown Documents
+Version: 0.1.0
+Authors@R: 
+    person(given = "Colin",
+           family = "Rundel",
+           role = c("aut", "cre"),
+           email = "rundel@gmail.com")
+Description: An implementation of a formal grammar and parser for R Markdown documents
+    using the Boost Spirit X3 library. It also includes a collection of high level
+    functions for working with the resulting abstract syntax tree.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: purrr, Rcpp, cli (>= 2.5.0), checkmate, readr, tidyr, dplyr,
+        tibble, yaml, withr, rmarkdown, pillar, rlang, magrittr,
+        tidyselect, lifecycle
+RoxygenNote: 7.1.1
+SystemRequirements: C++14
+LinkingTo: Rcpp, BH
+Suggests: testthat (>= 3.0.0), knitr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/rundel/parsermd
+BugReports: https://github.com/rundel/parsermd/issues
+NeedsCompilation: yes
+Packaged: 2021-05-07 14:56:31 UTC; rundel
+Author: Colin Rundel [aut, cre]
+Maintainer: Colin Rundel <rundel@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-05-10 07:50:02 UTC

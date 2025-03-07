@@ -1,0 +1,37 @@
+Package: fido
+Type: Package
+Title: Bayesian Multinomial Logistic Normal Regression
+Version: 1.0.0
+Date: 2022-02-08
+Authors@R: c(person("Justin", "Silverman", role=c("aut"),
+                     email = "Justin.Silverman@psu.edu"), 
+             person("Kim", "Roche", role=("ctb"), 
+                     email = "kimberly.roche@duke.edu"),
+             person("Michelle", "Nixon", role=c("ctb","cre"), 
+                     email = "pistner@psu.edu"))
+Maintainer: Michelle Nixon
+ <pistner@psu.edu>
+Description: Provides methods for fitting and inspection of Bayesian Multinomial Logistic Normal Models using MAP estimation 
+ and Laplace Approximation as developed in Silverman et. Al. (2022) <https://www.jmlr.org/papers/v23/19-882.html>. Key functionality is implemented in C++ for 
+ scalability. 'fido' replaces the previous package 'stray'.
+License: GPL-3
+URL: https://jsilve24.github.io/fido/
+Depends: R (>= 4.1.0)
+Imports: Rcpp (>= 0.12.17), dplyr, ggplot2, purrr, tidybayes, rlang,
+        tidyr, phyloseq
+LinkingTo: Rcpp, RcppEigen, RcppNumerical, RcppZiggurat, BH
+RoxygenNote: 7.1.2
+Additional_repositories: https://michellepistner.github.io/fidoRepo
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, ape, numDeriv,
+        MCMCpack, MicrobeDS
+VignetteBuilder: knitr
+LazyData: true
+BugReports: https://github.com/jsilve24/fido/issues
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2022-02-15 20:13:15 UTC; map5672
+Author: Justin Silverman [aut],
+  Kim Roche [ctb],
+  Michelle Nixon [ctb, cre]
+Repository: CRAN
+Date/Publication: 2022-02-16 20:10:08 UTC

@@ -1,0 +1,26 @@
+Package: RSC
+Type: Package
+Title: Robust and Sparse Correlation Matrix
+Description: Performs robust and sparse correlation matrix estimation. Robustness is achieved based on a simple robust pairwise correlation estimator, while sparsity is obtained based on thresholding. The optimal thresholding is tuned via cross-validation. See Serra, Coretto, Fratello and Tagliaferri (2018) <doi:10.1093/bioinformatics/btx642>.
+Authors@R: c(person("Luca", "Coraggio",
+                    role = c("cre", "aut"), email = "luca.coraggio@unina.it"),
+             person("Pietro", "Coretto",
+	            role = c("aut"), email = "pcoretto@unisa.it"),
+             person("Angela", "Serra",
+	            role = c("aut"), email = "angela.serra@tuni.fi"),
+             person("Roberto", "Tagliaferri",
+	            role = c("ctb"), email = "robtag@unisa.it")) 
+Author: Luca Coraggio [cre, aut],
+  Pietro Coretto [aut],
+  Angela Serra [aut],
+  Roberto Tagliaferri [ctb]
+Maintainer: Luca Coraggio <luca.coraggio@unina.it>
+NeedsCompilation: yes
+Imports: stats, graphics, Matrix, methods, parallel, foreach,
+        doParallel, utils
+License: GPL (>= 2)
+Version: 2.0.2
+Date: 2022-06-20
+Packaged: 2022-06-20 16:38:10 UTC; luco00
+Repository: CRAN
+Date/Publication: 2022-06-20 17:10:02 UTC

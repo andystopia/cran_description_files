@@ -1,0 +1,30 @@
+Package: reporter
+Type: Package
+Title: Creates Statistical Reports
+Version: 1.0.6
+Author: David Bosak
+Maintainer: David Bosak <dbosak01@gmail.com>
+Description: Contains functions to create regulatory-style statistical reports.
+    Originally designed to create tables, listings, and figures for the 
+    pharmaceutical, biotechnology, and medical device industries, these
+    reports are generalized enough that they could be used in any industry.
+    Generates text, rich-text, and PDF file formats.  The package specializes 
+    in printing wide and long tables with automatic page wrapping and splitting.  
+    Reports can be produced with a minimum of function calls, and without 
+    relying on other table packages.  The package supports titles, footnotes, 
+    page header, page footers, spanning headers, page by variables, 
+    and automatic page numbering.
+License: CC BY-NC 4.0
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: pandoc (>= 1.12.3)
+Depends: R (>= 4.0.0)
+Suggests: testthat, magrittr, dplyr, tidyr, readr, knitr, ggplot2,
+        rmarkdown, gridExtra, survminer
+Imports: fmtr, stringi, crayon
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-11-20 02:25:16 UTC; User
+Repository: CRAN
+Date/Publication: 2020-11-20 07:30:06 UTC

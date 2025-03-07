@@ -1,0 +1,40 @@
+Package: cheem
+Title: Interactively Explore the Support of Local Explanations with the
+        Radial Tour
+Version: 0.2.0
+Authors@R: c(
+  person("Nicholas", "Spyrison", role = c("aut", "cre"),
+    email = "spyrison@gmail.com",
+    comment = c(ORCID = "https://orcid.org/0000-0002-8417-0212"))
+  )
+Description: Given a tree-based model, calculate the tree SHAP 
+    <arXiv:1802.03888>; <https://github.com/ModelOriented/treeshap> 
+    local explanation of every observation. View the data space, explanation 
+    space, and residual plot as ensemble graphic interactive on a shiny 
+    application. After an observation of interest is identified, the normalized 
+    variable importance of the local explanation is used as a 1D projection
+    basis. The support of the local explanation is then explored by changing
+    the basis with the use of the radial tour <doi:10.32614/RJ-2020-027>; 
+    <doi:10.1080/10618600.1997.10474754>.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+URL: https://github.com/nspyrison/cheem/
+BugReports: https://github.com/nspyrison/cheem/issues
+LinkingTo: Rcpp
+Imports: Rcpp, data.table, spinifex (>= 0.3.3), ggplot2, plotly,
+        magrittr, shiny, shinythemes, shinycssloaders, DT
+Suggests: gbm, lightgbm, randomForest, ranger, xgboost, tourr, lqmm,
+        mvtnorm, gganimate, dplyr, tidyr, tictoc, beepr, knitr,
+        testthat (>= 3.0.0), spelling, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-03-09 22:40:16 UTC; spyri
+Author: Nicholas Spyrison [aut, cre] (<https://orcid.org/0000-0002-8417-0212>)
+Maintainer: Nicholas Spyrison <spyrison@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-14 11:40:02 UTC

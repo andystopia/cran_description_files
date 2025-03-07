@@ -1,0 +1,28 @@
+Package: depth
+Type: Package
+Title: Nonparametric Depth Functions for Multivariate Analysis
+Version: 2.1-1.1
+Date: 2017-01-07
+Author: Maxime Genest <maxime.genest@clevislauzon.qc.ca>, Jean-Claude
+        Masse <jcmasse@mat.ulaval.ca>, Jean-Francois Plante
+        <jfplante@hec.ca>.
+  src/depth.f contains eigen, tql2 and tred2 written by the EISPLACK authors,
+  dgedi, dgefa from LINPACK written by Cleve Moler,
+  daxpy, dscal, dswap and idamax from LINPACK written by Jack Dongarra,
+  VERT from NAPACK (authors unstated),
+  AS 78 written by J. C. Gower,
+  AS 143 written by F. K. Bedall and H. Zimmermann,
+  AS 307 written by P.J. Rousseeuw and I. Ruts.
+Maintainer: Jean-Francois Plante <jfplante@hec.ca>
+Description: Tools for depth functions methodology applied 
+        to multivariate analysis. Besides allowing calculation 
+        of depth values and depth-based location estimators, the package
+        includes functions or drawing contour plots and perspective plots
+        of depth functions. Euclidian and spherical depths are supported.
+Depends: R (>= 3.2.0), abind, grDevices, circular, rgl
+Suggests: robustbase, MASS
+License: GPL-2
+Packaged: 2019-11-19 15:38:37 UTC; ripley
+Repository: CRAN
+Date/Publication: 2019-11-21 11:22:54 UTC
+NeedsCompilation: yes

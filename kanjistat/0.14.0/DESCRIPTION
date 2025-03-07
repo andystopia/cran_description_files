@@ -1,0 +1,35 @@
+Package: kanjistat
+Type: Package
+Title: A Statistical Framework for the Analysis of Japanese Kanji
+        Characters
+Version: 0.14.0
+Date: 2024-05-29
+Authors@R: c( person("Dominic", "Schuhmacher", email = "dominic.schuhmacher@mathematik.uni-goettingen.de", role = c("aut","cre"), comment = c(ORCID = "0000-0001-7079-6313")),
+              person("Lennart", "Finke", email = "l.finke@stud.uni-goettingen.de", role = "aut", comment = c(ORCID = "0009-0003-6908-314X")) )
+Maintainer: Dominic Schuhmacher <dominic.schuhmacher@mathematik.uni-goettingen.de>
+Description: Various tools and data sets that support the study of kanji, including their morphology, decomposition and concepts of distance and similarity between them.
+URL: https://dschuhmacher.github.io/kanjistat/
+BugReports: https://github.com/dschuhmacher/kanjistat/issues
+Depends: R (>= 4.1)
+Imports: methods, graphics, grDevices, utils, crayon, dendextend,
+        gsubfn, Matrix, png, purrr, RANN, rlang, ROI, sysfonts,
+        showtext, stringi, stringr, transport (>= 0.15), xml2,
+        lifecycle, Rcpp
+Suggests: dplyr, jsonlite, kanjistat.data, knitr, rmarkdown,
+        ROI.plugin.glpk, systemfonts, testthat (>= 3.0.0), tibble,
+        withr
+Additional_repositories: https://dschuhmacher.github.io/drat
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2024-05-29 14:02:35 UTC; schumi
+Author: Dominic Schuhmacher [aut, cre]
+    (<https://orcid.org/0000-0001-7079-6313>),
+  Lennart Finke [aut] (<https://orcid.org/0009-0003-6908-314X>)
+Repository: CRAN
+Date/Publication: 2024-05-29 23:30:02 UTC

@@ -1,0 +1,35 @@
+Package: utsf
+Title: Univariate Time Series Forecasting
+Version: 1.0.0
+Authors@R: c(
+    person("Maria Pilar", "Frias-Bustamante", , "mpfrias@ujaen.es", role = "aut",
+           comment = c(ORCID = "0000-0001-6886-0953")),
+    person("Francisco", "Martinez", , "fmartin@ujaen.es", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-5206-1898"))
+  )
+Description: An engine for univariate time series forecasting using
+    different regression models in an autoregressive way. The engine
+    provides an uniform interface for applying the different models. 
+    Furthermore, it is extensible so that users can easily apply their
+    own regression models to univariate time series forecasting and 
+    benefit from all the features of the engine, such as preprocessings
+    or estimation of forecast accuracy.
+Maintainer: Francisco Martinez <fmartin@ujaen.es>
+License: MIT + file LICENSE
+URL: https://github.com/franciscomartinezdelrio/utsf
+BugReports: https://github.com/franciscomartinezdelrio/utsf/issues
+Imports: Cubist, FNN, forecast, ggplot2, ipred, methods, ranger, rpart,
+        vctsfr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-09 16:28:48 UTC; UJA
+Author: Maria Pilar Frias-Bustamante [aut]
+    (<https://orcid.org/0000-0001-6886-0953>),
+  Francisco Martinez [aut, cre, cph]
+    (<https://orcid.org/0000-0002-5206-1898>)
+Repository: CRAN
+Date/Publication: 2024-10-14 09:30:02 UTC

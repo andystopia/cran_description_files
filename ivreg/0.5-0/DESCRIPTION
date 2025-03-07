@@ -1,0 +1,26 @@
+Package: ivreg
+Title: Two-Stage Least-Squares Regression with Diagnostics
+Version: 0.5-0
+Authors@R: c(person(given = "John", family = "Fox", role = c("aut", "cre"), email = "jfox@mcmaster.ca", comment = c(ORCHID = "0000-0002-1196-8012")),
+             person(given = "Christian", family = "Kleiber", role = "aut", email = "Christian.Kleiber@unibas.ch", comment = c(ORCID = "0000-0002-6781-4733")),
+             person(given = "Achim", family = "Zeileis", role = "aut", email = "Achim.Zeileis@R-project.org", comment = c(ORCID = "0000-0003-0918-3766")))
+Description: Instrumental variable estimation for linear models by two-stage least-squares (2SLS) regression. The main ivreg() model-fitting function is designed to provide a workflow as similar as possible to standard lm() regression. A wide range of methods is provided for fitted ivreg model objects, including extensive functionality for computing and graphing regression diagnostics in addition to other standard model tools. 
+License: GPL (>= 2)
+Depends: R (>= 3.6.0)
+Imports: car (>= 3.0-9), Formula, lmtest, stats
+Suggests: AER, effects (>= 4.2.0), knitr, insight, parallel, rmarkdown,
+        sandwich, testthat
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+BugReports: https://github.com/john-d-fox/ivreg/issues/
+URL: https://john-d-fox.github.io/ivreg/
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-09-02 15:47:59 UTC; johnfox
+Author: John Fox [aut, cre] (0000-0002-1196-8012),
+  Christian Kleiber [aut] (<https://orcid.org/0000-0002-6781-4733>),
+  Achim Zeileis [aut] (<https://orcid.org/0000-0003-0918-3766>)
+Maintainer: John Fox <jfox@mcmaster.ca>
+Repository: CRAN
+Date/Publication: 2020-09-03 06:42:24 UTC

@@ -1,0 +1,32 @@
+Package: agriwater
+Title: Evapotranspiration and Energy Fluxes Spatial Analysis
+Version: 1.0.1
+Authors@R: c(
+    person("Cesar", "de Oliveira Ferreira Silva", email = "cesaroliveira.f.silva@gmail.com", comment = c(ORCID = "0000-0002-5152-6497"), role = "cre"),
+    person("Antonio", "Heriberto de Castro Teixeira", email = "heribert@globomail.com", role = "aut"),
+    person("Rodrigo", "Lilla Manzione", email = "rlmanzione@gmail.com", comment = c(ORCID = "0000-0002-0754-2641"), role = "ctb"))
+Description: Spatial modeling of energy balance and actual 
+    evapotranspiration using satellite images and meteorological data. 
+    Options of satellite are: Landsat-8 (with and without thermal bands), 
+    Sentinel-2 and MODIS. Respectively spatial resolutions are 30, 100, 
+    10 and 250 meters. User can use data from a single meteorological 
+    station or a grid of meteorological stations (using any spatial 
+    interpolation method). Silva, Teixeira, and Manzione (2019) <doi:10.1016/j.envsoft.2019.104497>.
+Maintainer: Cesar de Oliveira Ferreira Silva <cesaroliveira.f.silva@gmail.com>
+Depends: R (>= 3.2.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/cesarofs/agriwater/issues
+Imports: raster, sp, rgdal
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, rgeos
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-29 22:24:25 UTC; Cesar
+Author: Cesar de Oliveira Ferreira Silva [cre]
+    (<https://orcid.org/0000-0002-5152-6497>),
+  Antonio Heriberto de Castro Teixeira [aut],
+  Rodrigo Lilla Manzione [ctb] (<https://orcid.org/0000-0002-0754-2641>)
+Repository: CRAN
+Date/Publication: 2021-02-02 01:10:12 UTC

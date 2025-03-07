@@ -1,0 +1,35 @@
+Package: ck37r
+Title: Chris Kennedy's R Toolkit
+Version: 1.0.3
+Authors@R: 
+  person(given = "Chris",
+         family = "Kennedy",
+         email = "chrisken@gmail.com",
+         role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0001-7444-2766"))
+Description: Toolkit for statistical, machine learning, and targeted learning
+    analyses. Functionality includes loading & auto-installing packages,
+    standardizing datasets, creating missingness indicators, imputing missing
+    values, creating multicore or multinode clusters, automatic SLURM
+    integration, enhancing SuperLearner and TMLE with automatic parallelization,
+    and many other SuperLearner analysis & plotting enhancements.
+URL: https://github.com/ck37/ck37r
+BugReports: https://github.com/ck37/ck37r/issues
+Depends: R (>= 3.1.0)
+Imports: caret, checkmate, crayon, cvAUC, doParallel, foreach,
+        future.apply, ggplot2, h2o, methods, parallel, precrec, pryr,
+        reader, RhpcBLASctl, ROCR, rpart.plot, stringr, SuperLearner,
+        tmle, weights
+Suggests: data.table, dplyr, glmnet, lintr, MASS, magrittr, mgcv,
+        microbenchmark, mlbench, randomForest, RANN, slam, testthat,
+        xgboost
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-02-06 06:38:00 UTC; chris
+Author: Chris Kennedy [aut, cre] (<https://orcid.org/0000-0001-7444-2766>)
+Maintainer: Chris Kennedy <chrisken@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-06 10:50:11 UTC

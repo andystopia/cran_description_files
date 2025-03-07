@@ -1,0 +1,33 @@
+Package: abmR
+Type: Package
+Title: Agent-Based Models in R
+Version: 1.0.4
+Authors@R: c(
+ person("Benjamin", "Gochanour",
+ email = "ben.gochanour@gmail.com",
+ role = c("aut","cre")),
+ person("Javier", "Fernandez-Lopez",
+ email = "jflopez.bio@gmail.com",
+ role = "aut"),
+ person("Andrea", "Contina",
+ email = "acontina@gmail.com",
+ role = "aut"))
+Maintainer: Benjamin Gochanour <ben.gochanour@gmail.com>
+Description: Supplies tools for running agent-based models (ABM) in R, as discussed in Gochanour et al. (2021) <doi:10.1101/2021.09.15.460374> The package contains two movement functions, each of which is based on the Ornstein-Uhlenbeck (OU) model (Ornstein & Uhlenbeck, 1930) <doi:10.1103/PhysRev.36.823>. It also contains several visualization and data summarization functions to facilitate the presentation of simulation results.
+License: GPL (>= 3)
+Suggests: jpeg, knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5)
+Imports: sp, rgdal, table1, googledrive, swfscMisc, geosphere,
+        kableExtra, gtsummary, ggplot2, gstat, purrr, rnaturalearth,
+        rnaturalearthdata, sf, tmap, raster, utils, stats, methods,
+        rgeos
+LazyData: true
+NeedsCompilation: no
+Packaged: 2021-10-14 21:47:13 UTC; javifl
+Author: Benjamin Gochanour [aut, cre],
+  Javier Fernandez-Lopez [aut],
+  Andrea Contina [aut]
+Repository: CRAN
+Date/Publication: 2021-10-18 18:10:08 UTC

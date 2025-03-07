@@ -1,0 +1,38 @@
+Package: OralOpioids
+Type: Package
+Title: Retrieving Oral Opioid Information
+Version: 2.0.3
+Authors@R: 
+  c(person(family = "Banerjee",
+           given = "Ankona",
+           role = c("aut", "cre"),
+           email = "asb426@mail.usask.ca",
+           comment = c(ORCID = "0000-0003-4433-5446")),
+    person(given = "Erik",
+           family = "Stricker",
+           role = "aut",
+		   email = "erik.stricker@gmx.com",
+           comment = c(ORCID = "0000-0003-2112-2202")))
+Maintainer: Ankona Banerjee <asb426@mail.usask.ca>
+Description: Provides details such as Morphine Equivalent Dose (MED), 
+    brand name and opioid content which are calculated of all oral opioids 
+    authorized for sale by Health Canada and the FDA based on their Drug Identification Number (DIN) or National Drug Code (NDC). 
+    MEDs are calculated based on recommendations by Canadian Institute for Health Information (CIHI) and Von Korff et al (2008)
+    and information obtained from Health Canada's Drug Product Database's monthly data dump or FDA Daily database for Canadian and US databases respectively. 
+    Please note in no way should output from this package be a substitute for medical advise.  
+    All medications should only be consumed on prescription from a licensed healthcare provider.
+URL: https://github.com/ankonahouston/OralOpioids
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr, tidyr, readr, purrr, plyr,jsonlite, reshape2, stringr,
+        openxlsx, rvest, xml2, utils, rlang,magrittr
+Suggests: knitr, rmarkdown
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-01-10 21:54:23 UTC; u243494
+Author: Ankona Banerjee [aut, cre] (<https://orcid.org/0000-0003-4433-5446>),
+  Erik Stricker [aut] (<https://orcid.org/0000-0003-2112-2202>)
+Repository: CRAN
+Date/Publication: 2024-01-10 23:43:10 UTC

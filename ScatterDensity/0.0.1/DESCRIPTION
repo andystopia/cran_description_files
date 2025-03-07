@@ -1,0 +1,25 @@
+Package: ScatterDensity
+Type: Package
+Title: Density Estimation and Visualization of 2D Scatter Plots
+Version: 0.0.1
+Date: 2023-05-28
+Authors@R: c(person("Michael", "Thrun", email= "m.thrun@gmx.net",role=c("aut","cre","cph"), comment = c(ORCID = "0000-0001-9542-5543")),person("Felix", "Pape",role=c("aut","rev")),person("Luca","Brinkman",role=c("aut")))
+Maintainer: Michael Thrun <m.thrun@gmx.net>
+Description: The user has the option to utilize the two-dimensional density estimation techniques called smoothed density published by Eilers and Goeman (2004) <doi:10.1093/bioinformatics/btg454>, and pareto density which was evaluated for univariate data by Thrun, Gehlert and Ultsch, 2020 <doi:10.1371/journal.pone.0238835>. Moreover, it provides visualizations of the density estimation in the form of two-dimensional scatter plots in which the points are color-coded based on increasing density. Colors are defined by the one-dimensional clustering technique called 1D distribution cluster algorithm (DDCAL) published by Lux and Rinderle-Ma (2023) <doi:10.1007/s00357-022-09428-6>.
+LazyLoad: yes
+Imports: Rcpp, pracma
+Suggests: DataVisualizations, ggplot2, ggExtra, plotly, FCPS,
+        parallelDist, secr, ClusterR
+Depends: methods, R (>= 2.10)
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+License: GPL-3
+Encoding: UTF-8
+URL: https://www.deepbionics.org/
+BugReports: https://github.com/Mthrun/ScatterDensity/issues
+Packaged: 2023-05-28 09:12:38 UTC; MCT
+Author: Michael Thrun [aut, cre, cph] (<https://orcid.org/0000-0001-9542-5543>),
+  Felix Pape [aut, rev],
+  Luca Brinkman [aut]
+Repository: CRAN
+Date/Publication: 2023-05-29 19:10:07 UTC

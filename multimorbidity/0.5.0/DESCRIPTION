@@ -1,0 +1,43 @@
+Package: multimorbidity
+Title: Harmonizing Various Comorbidity, Multimorbidity, and Frailty
+        Measures
+Version: 0.5.0
+Authors@R: 
+    person(given = "Wyatt",
+           family = "Bensken",
+           role = c("aut", "cre"),
+           email = "wpb27@case.edu",
+           comment = c(ORCID = "0000-0002-2597-9732"))
+Description: Identifying comorbidities, frailty, and multimorbidity in claims 
+    and administrative data is often a duplicative process.
+    The functions contained in this package are meant to first prepare the data to a format
+    acceptable by all other packages, then provide a uniform and simple approach to
+    generate comorbidity and multimorbidity metrics based on these claims data. The package
+    is ever evolving to include new metrics, and is always looking for new measures to include.
+    The citations used in this package include the following publications: 
+    Anne Elixhauser, Claudia Steiner, D. Robert Harris, Rosanna M. Coffey (1998) <doi:10.1097/00005650-199801000-00004>,
+    Brian J Moore, Susan White, Raynard Washington, et al. (2017) <doi:10.1097/MLR.0000000000000735>,
+    Mary E. Charlson, Peter Pompei, Kathy L. Ales, C. Ronald MacKenzie (1987) <doi:10.1016/0021-9681(87)90171-8>,
+    Richard A. Deyo, Daniel C. Cherkin, Marcia A. Ciol (1992) <doi:10.1016/0895-4356(92)90133-8>,
+    Hude Quan, Vijaya Sundararajan, Patricia Halfon, et al. (2005) <doi:10.1097/01.mlr.0000182534.19832.83>,
+    Dae Hyun Kim, Sebastian Schneeweiss, Robert J Glynn, et al. (2018) <doi:10.1093/gerona/glx229>,
+    Melissa Y Wei, David Ratz, Kenneth J Mukamal (2020) <doi:10.1111/jgs.16310>,
+    Kathryn Nicholson, Amanda L. Terry, Martin Fortin, et al. (2015) <doi:10.15256/joc.2015.5.61>,
+    Martin Fortin, José Almirall, and Kathryn Nicholson (2017)<doi:10.15256/joc.2017.7.122>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: tidyverse, dplyr, lubridate, magrittr, stringr, rlang,
+        tidyselect, tidyr, devtools, sqldf, stats
+URL: https://github.com/WYATTBENSKEN/multimorbidity
+BugReports: https://github.com/WYATTBENSKEN/multimorbidity/issues
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2021-08-19 18:22:57 UTC; wyattbensken
+Author: Wyatt Bensken [aut, cre] (<https://orcid.org/0000-0002-2597-9732>)
+Maintainer: Wyatt Bensken <wpb27@case.edu>
+Repository: CRAN
+Date/Publication: 2021-08-20 12:40:05 UTC

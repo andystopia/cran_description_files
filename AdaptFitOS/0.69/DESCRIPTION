@@ -1,0 +1,27 @@
+Package: AdaptFitOS
+Title: Adaptive Semiparametric Additive Regression with Simultaneous
+        Confidence Bands and Specification Tests
+Version: 0.69
+Date: 2022-07-11
+Authors@R: c(
+    person("Manuel", "Wiesenfarth", email = "m.wiesenfarth@dkfz.de", role = c("aut", "cre")),
+    person("Tatyana", "Krivobokova", role = "aut"),
+    person("Matt", "Wand", role = "ctb", comment = "Some R code from package Semipar"),
+    person("Catherine", "Loader", role = c("cph","ctb"), comment = "C code from locfit package"),
+    person("Jiayang", "Sun", role = c("cph","ctb"), comment = "C code from locfit package"),
+    person("Lucent Technologies", role = "cph", comment = "C code from locfit package"))
+Imports: mgcv, SemiPar
+Depends: nlme, MASS, splines
+Description: Fits semiparametric additive regression models with spatially adaptive penalized splines and computes simultaneous confidence bands and associated specification (lack-of-fit) tests. Simultaneous confidence bands cover the entire curve with a prescribed level of confidence and allow us to assess the estimation uncertainty for the whole curve. In contrast to pointwise confidence bands, they permit statements about the statistical significance of certain features (e.g. bumps) in the underlying curve.The method allows for handling of spatially heterogeneous functions and their derivatives as well as heteroscedasticity in the data. See Wiesenfarth et al. (2012) <doi:10.1080/01621459.2012.682809>.
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2022-07-21 05:11:16 UTC; manuelwiesenfarth
+Author: Manuel Wiesenfarth [aut, cre],
+  Tatyana Krivobokova [aut],
+  Matt Wand [ctb] (Some R code from package Semipar),
+  Catherine Loader [cph, ctb] (C code from locfit package),
+  Jiayang Sun [cph, ctb] (C code from locfit package),
+  Lucent Technologies [cph] (C code from locfit package)
+Maintainer: Manuel Wiesenfarth <m.wiesenfarth@dkfz.de>
+Repository: CRAN
+Date/Publication: 2022-07-21 13:00:01 UTC

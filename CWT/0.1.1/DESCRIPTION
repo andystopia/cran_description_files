@@ -1,0 +1,31 @@
+Type: Package
+Package: CWT
+Title: Continuous Wavelet Transformation for Spectroscopy
+Version: 0.1.1
+Authors@R: 
+    person("J. Antonio", "Guzmán Q.", , "antguz06@gmail.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-0721-148X"))
+Maintainer: J. Antonio Guzmán Q. <antguz06@gmail.com>
+Description: Fast application of Continuous Wavelet Transformation ('CWT') on time
+    series with special attention to spectroscopy. It is written using
+    data.table and 'C++' language and in some functions it is possible to
+    use parallel processing to speed-up the computation over samples. Currently, 
+    only the second derivative of a Gaussian wavelet function is implemented.
+License: GPL (>= 3)
+URL: https://github.com/Antguz/CWT
+BugReports: https://github.com/Antguz/CWT/issues
+Depends: R (>= 4.0.0)
+Imports: data.table (>= 1.14.0), Rcpp
+Suggests: testthat (>= 3.2.0)
+LinkingTo: Rcpp, RcppArmadillo
+ByteCompile: true
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2024-05-27 19:37:52 UTC; antonio
+Author: J. Antonio Guzmán Q. [cre, aut, cph]
+    (<https://orcid.org/0000-0002-0721-148X>)
+Repository: CRAN
+Date/Publication: 2024-05-28 12:00:05 UTC

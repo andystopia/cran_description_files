@@ -1,0 +1,32 @@
+Package: remap
+Type: Package
+Title: Regional Spatial Modeling with Continuous Borders
+Version: 0.2.1
+Authors@R: c(person("Jadon", "Wagstaff", email = "jadonw@gmail.com", role = c("aut", "cre")),
+             person("Brennan", "Bean", email = "brennan.bean@usu.edu", role = "aut"))
+Description: Automatically creates separate regression models for different spatial 
+    regions. The prediction surface is smoothed using a regional border smoothing 
+    method. If regional models are continuous, the resulting prediction surface is 
+    continuous across the spatial dimensions, even at region borders. Methodology 
+    is described in Wagstaff (2021) <https://digitalcommons.usu.edu/etd/8065/>.
+License: GPL-3
+URL: https://github.com/jadonwagstaff/remap
+BugReports: https://github.com/jadonwagstaff/remap/issues
+Encoding: UTF-8
+LazyData: true
+Imports: graphics (>= 3.6.0), methods (>= 3.6.0), parallel (>= 3.6.0),
+        sf (>= 0.9.6), stats (>= 3.6.0), units (>= 0.6.7), utils (>=
+        3.6.0)
+RoxygenNote: 7.1.1
+Suggests: dplyr (>= 1.0.2), ggplot2 (>= 3.3.2), knitr (>= 1.30), lwgeom
+        (>= 0.2.5), magrittr (>= 2.0.1), maps (>= 3.3.0), mgcv (>=
+        1.8.33), rmarkdown (>= 2.5), tibble (>= 3.0.4)
+VignetteBuilder: knitr
+Depends: R (>= 3.6.0)
+NeedsCompilation: no
+Packaged: 2021-04-15 20:20:11 UTC; Jadon
+Author: Jadon Wagstaff [aut, cre],
+  Brennan Bean [aut]
+Maintainer: Jadon Wagstaff <jadonw@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-16 15:50:06 UTC

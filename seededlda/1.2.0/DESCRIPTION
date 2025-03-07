@@ -1,0 +1,26 @@
+Package: seededlda
+Type: Package
+Title: Seeded Sequential LDA for Topic Modeling
+Version: 1.2.0
+Authors@R: c(person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", role = c("aut", "cre", "cph")),
+             person("Phan", "Xuan-Hieu", email = "pxhieu@gmail.com", role = c("aut", "cph"), comment = "GibbsLDA++"))
+Description: Seeded Sequential LDA can classify sentences of texts into pre-define topics with a small number of seed words (Watanabe & Baturo, 2023) <doi:10.1177/08944393231178605>.
+    Implements Seeded LDA (Lu et al., 2010) <doi:10.1109/ICDMW.2011.125> and Sequential LDA (Du et al., 2012) <doi:10.1007/s10115-011-0425-1> with the distributed LDA algorithm (Newman, et al., 2009) for parallel computing.
+License: GPL-3
+LazyData: TRUE
+URL: https://github.com/koheiw/seededlda,
+        https://koheiw.github.io/seededlda/
+BugReports: https://github.com/koheiw/seededlda/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0), quanteda (>= 4.0.0), methods, proxyC (>= 0.3.1)
+Imports: Matrix
+LinkingTo: Rcpp, RcppArmadillo (>= 0.7.600.1.0), quanteda, testthat
+Suggests: testthat, topicmodels, keyATM
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-04-08 01:35:56 UTC; watan
+Author: Kohei Watanabe [aut, cre, cph],
+  Phan Xuan-Hieu [aut, cph] (GibbsLDA++)
+Maintainer: Kohei Watanabe <watanabe.kohei@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-10 06:50:02 UTC

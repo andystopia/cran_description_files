@@ -1,0 +1,29 @@
+Package: usincometaxes
+Title: Calculate Federal and State Income Taxes in the United States
+Version: 0.2.0
+Authors@R: 
+    person("Shane", "Orr", , "shane.j.orr@gmail.com", role = c("aut", "cre", "cph"))
+Description: Calculates federal and state income taxes in the United States. It acts as a wrapper 
+    to the NBER's TAXSIM 35 (<http://taxsim.nber.org/taxsim35/>) tax simulator. TAXSIM 35 conducts 
+    the calculations, while `usincometaxes` prepares the data for TAXSIM 35, sends the data to 
+    TAXSIM 35's server, retrieves the data, and places it into a data frame. All without the user
+    worrying about this process.
+License: MIT + file LICENSE
+URL: https://github.com/shanejorr/usincometaxes,
+        https://shaneorr.io/r/usincometaxes
+BugReports: https://github.com/shanejorr/usincometaxes/issues
+Depends: R (>= 3.1)
+Imports: datasets, vroom
+Suggests: dplyr, ggplot2, knitr, rmarkdown, scales, testthat (>=
+        3.0.0), tidyr, tools
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-05-08 03:27:18 UTC; shane
+Author: Shane Orr [aut, cre, cph]
+Maintainer: Shane Orr <shane.j.orr@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-10 09:20:02 UTC

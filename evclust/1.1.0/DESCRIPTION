@@ -1,0 +1,23 @@
+Package: evclust
+Type: Package
+Title: Evidential Clustering
+Version: 1.1.0
+Date: 2020-01-07
+Author: Thierry Denoeux
+Maintainer: Thierry Denoeux <tdenoeux@utc.fr>
+Description: Various clustering algorithms that produce a credal partition,
+    i.e., a set of Dempster-Shafer mass functions representing the membership of objects
+    to clusters. The mass functions quantify the cluster-membership uncertainty of the objects.
+    The algorithms are: Evidential c-Means (ECM), Relational Evidential c-Means (RECM),
+    Constrained Evidential c-Means (CECM), EVCLUS, EK-NNclus and bootclus.
+Depends: R (>= 3.6.0),
+Imports: FNN, R.utils, limSolve, Matrix, mclust, quadprog, plyr
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+Suggests: knitr,rmarkdown
+NeedsCompilation: no
+Packaged: 2020-01-07 14:09:46 UTC; Thierry
+Repository: CRAN
+Date/Publication: 2020-01-08 09:10:11 UTC

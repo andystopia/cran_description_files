@@ -1,0 +1,22 @@
+Package: KATforDCEMRI
+Type: Package
+Title: Kinetic Analysis and Visualization of DCE-MRI Data
+Version: 1.0.1
+Date: 2019-03-01
+Authors@R: c(person("Gregory Z.", "Ferl", role = c("aut", "cre"),
+                     email = "ferl.gregory@gene.com"), person("Georges", "Hankov", role = "aut",
+                     email = "georges.hankov@roche.com"))
+Depends: R (>= 2.11.0)
+Imports: locfit, R.matlab, matlab
+Description: Provides kinetic analysis of Dynamic Contrast Enhanced Magnetic Resonance Imaging (DCE-MRI) data. Includes tools for fitting the Tofts (described in Tofts, Kermode (1991) <DOI:10.1002/mrm.1910170208>) and extended Tofts (described in Tofts et al. (1999) <https://www.ncbi.nlm.nih.gov/pubmed/10508281>) mathematical models to dynamic (signal vs. time) data associated with each voxel of an image and a Graphical User Inferface (GUI) for visualization and exploration of fitted model parameters over the volume of the image.
+License: LGPL-3
+Copyright: (C) 2019 Genentech, Inc.
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: no
+Packaged: 2019-08-26 07:41:43 UTC; hornik
+Author: Gregory Z. Ferl [aut, cre],
+  Georges Hankov [aut]
+Maintainer: Gregory Z. Ferl <ferl.gregory@gene.com>
+Repository: CRAN
+Date/Publication: 2019-08-26 07:55:27 UTC

@@ -1,0 +1,26 @@
+Package: yCrypticRNAs
+Type: Package
+Title: Cryptic Transcription Analysis in Yeast
+Version: 0.99.0
+Author: Nicole Uwimana, Benjamin Haibe-Kains, Francois Robert
+Maintainer: Nicole Uwimana <nicole.uwimana@gmail.com>
+Description: Calculates cryptic scores for genes using the ratio 
+	(Cheung et al., 2008), the 3' enrichment method 
+	(DeGennaro et al., 2013) and the probabilistic
+	method. It also provide	methods to estimates
+	cryptic transcription start sites.
+Depends: R (>= 3.1.0)
+URL: https://bitbucket.org/nuwimana/ycrypticrnas
+BugReports: https://bitbucket.org/nuwimana/ycrypticrnas/issues
+License: GPL-2
+LazyData: true
+Imports: parallel, mclust, MESS, data.table, biomaRt, Rcpp, Rsamtools,
+        IRanges
+Suggests: knitr, testthat, rmarkdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+RoxygenNote: 5.0.0
+NeedsCompilation: yes
+Packaged: 2015-12-10 01:12:04 UTC; nuwimana
+Repository: CRAN
+Date/Publication: 2015-12-11 13:31:12

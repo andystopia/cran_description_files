@@ -1,0 +1,45 @@
+Package: accessr
+Type: Package
+Title: Command Line Tools to Produce Accessible Documents using 'R
+        Markdown'
+Version: 1.0.1
+Date: 2024-04-28
+Authors@R: person(c("Paul", "J."), "Northrop", email = "p.northrop@ucl.ac.uk",
+  role = c("aut", "cre", "cph"))
+Description: Provides functions to produce accessible 'HTML' slides, 'HTML', 
+    'Word' and 'PDF' documents from input 'R markdown' files. Accessible 'PDF' 
+    files are produced only on a 'Windows' Operating System. One aspect of 
+    accessibility is providing a headings structure that is recognised by a 
+    screen reader, providing a navigational tool for a blind or 
+    partially-sighted person. A key aim is to produce documents of different 
+    formats easily from each of a collection of 'R markdown' source files. 
+    Input 'R markdown' files are rendered using the render() function from the 
+    'rmarkdown' package <https://cran.r-project.org/package=rmarkdown>. A 'zip' 
+    file containing multiple output files can be produced from one function 
+    call. A user-supplied template 'Word' document can be used to determine the 
+    formatting of an output 'Word' document. Accessible 'PDF' files are 
+    produced from 'Word' documents using 'OfficeToPDF' 
+    <https://github.com/cognidox/OfficeToPDF>. A convenience function, 
+    install_otp() is provided to install this software. The option to print 
+    'HTML' output to (non-accessible) 'PDF' files is also available.  
+Depends: R (>= 3.3.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: rmarkdown
+Suggests: dplyr, knitr, flextable, htmltools, huxtable, jpeg, officer,
+        officedown, pagedown, png, tools, utils, xfun, zip, testthat
+        (>= 3.0.0)
+SystemRequirements: OfficeToPDF -
+        https://github.com/cognidox/OfficeToPDF, pandoc (>= 1.14) -
+        https://pandoc.org
+URL: https://paulnorthrop.github.io/accessr/,
+        https://github.com/paulnorthrop/accessr
+BugReports: https://github.com/paulnorthrop/accessr/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-04-28 08:22:47 UTC; Paul
+Author: Paul J. Northrop [aut, cre, cph]
+Maintainer: Paul J. Northrop <p.northrop@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-04-28 11:00:06 UTC

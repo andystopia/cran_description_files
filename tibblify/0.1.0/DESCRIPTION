@@ -1,0 +1,30 @@
+Package: tibblify
+Title: Rectangle Nested Lists
+Version: 0.1.0
+Authors@R: 
+    person(given = "Maximilian",
+           family = "Girlich",
+           role = c("aut", "cre"),
+           email = "maximilian.girlich@outlook.com")
+Description: A tool to rectangle a nested list, that is to convert it into a
+    tibble. This is done automatically or according to a given specification.
+    A common use case is for nested lists coming from parsing JSON files or
+    the JSON response of REST APIs. It is supported by the 'vctrs' package
+    and therefore offers a wide support of vector types.
+License: GPL-3
+Suggests: testthat, knitr, rmarkdown, covr, spelling
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: crayon, rlang, vctrs, purrr, tibble
+VignetteBuilder: knitr
+Depends: R (>= 3.4.0)
+URL: https://github.com/mgirlich/tibblify
+BugReports: https://github.com/mgirlich/tibblify/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-09-16 06:55:20 UTC; mgirlich
+Author: Maximilian Girlich [aut, cre]
+Maintainer: Maximilian Girlich <maximilian.girlich@outlook.com>
+Repository: CRAN
+Date/Publication: 2020-09-23 08:40:07 UTC

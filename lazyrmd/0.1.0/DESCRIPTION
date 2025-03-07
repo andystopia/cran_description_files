@@ -1,0 +1,30 @@
+Package: lazyrmd
+Title: Render R Markdown Outputs Lazily
+Version: 0.1.0
+Authors@R: c(
+    person("Ryan", "Hafen", email = "rhafen@gmail.com", role = c("aut", "cre")),
+    person("Barret", "Schloerke", email = "schloerke@gmail.com", role = c("ctb")),
+    person("jQuery Foundation", role = c("ctb", "cph"), comment = "jQuery.js library"),
+    person("Sourcey", role = c("ctb", "cph"), comment = "recliner.js library"))
+Description: An R Markdown html document format that provides the ability to lazily
+    load plot outputs as the user scrolls over them.  This is useful for large R
+    Markdown documents with many plots, as it allows for a fast initial page load and
+    defers loading of individual graphics to the time that the user navigates near them.
+Depends: R (>= 3.2.3)
+License: MIT + file LICENSE
+URL: http://github.com/hafen/lazyrmd
+BugReports: https://github.com/hafen/lazyrmd/issues
+Imports: knitr, rmarkdown, htmlwidgets, digest, htmltools
+Suggests: testthat, networkD3
+LazyData: true
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-08-01 00:19:10 UTC; barret
+Author: Ryan Hafen [aut, cre],
+  Barret Schloerke [ctb],
+  jQuery Foundation [ctb, cph] (jQuery.js library),
+  Sourcey [ctb, cph] (recliner.js library)
+Maintainer: Ryan Hafen <rhafen@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-08-01 14:01:14

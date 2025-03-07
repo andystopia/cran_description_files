@@ -1,0 +1,36 @@
+Package: robustlmm
+Type: Package
+Title: Robust Linear Mixed Effects Models
+Version: 3.2-5
+Date: 2023-11-14
+Author: Manuel Koller
+Maintainer: Manuel Koller <kollerma@proton.me>
+Description: Implements the Robust Scoring Equations estimator to fit linear
+    mixed effects models robustly.
+    Robustness is achieved by modification of the scoring equations
+    combined with the Design Adaptive Scale approach.
+License: GPL-2
+URL: https://github.com/kollerma/robustlmm
+LazyLoad: yes
+Depends: lme4 (>= 1.1-9), Matrix (>= 1.6-2), R (>= 3.5.0)
+Suggests: ggplot2, reshape2, microbenchmark, emmeans (>= 1.4),
+        estimability, lqmm, rlme, MASS, lemon, RColorBrewer, skewt, fs,
+        dplyr, ggh4x, testthat, robustvarComp
+Imports: lattice, nlme, methods, robustbase (>= 0.93), xtable, Rcpp (>=
+        0.12.2), fastGHQuad, parallel, rlang, utils
+Collate: 'ghq.R' 'psiFunc2.R' 'AllClass.R' 'rlmer.R' 'accessors.R'
+        'fromLme4.R' 'DAS-scale.R' 'fit.effects.R' 'helpers.R'
+        'AllGeneric.R' 'lmer.R' 'mutators.R' 'plot.R'
+        'generateAnovaDatasets.R' 'generateMixedEffectDatasets.R'
+        'generateSensitivityCurveDatasets.R' 'manageDatasets.R'
+        'fitDatasets.R' 'processFit.R' 'processFile.R'
+        'simulationStudies.R' 'asymptoticEfficiency.R' 'emmeans.R'
+LinkingTo: Rcpp, robustbase, Matrix
+Encoding: UTF-8
+RcppModules: psi_function_module
+RoxygenNote: 7.2.3
+Config/build/clean-inst-doc: false
+NeedsCompilation: yes
+Packaged: 2023-11-14 19:51:23 UTC; kollerma
+Repository: CRAN
+Date/Publication: 2023-11-14 21:20:02 UTC

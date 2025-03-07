@@ -1,0 +1,46 @@
+Package: spatialTIME
+Title: Spatial Analysis of Vectra Immunoflourescent Data
+Version: 1.2.2
+Authors@R: 
+     c(person(given = "Jordan", family = "Creed", role = "aut",
+             email = "jordan.h.creed@moffitt.org"),
+      person("Ram", "Thapa", role = c("aut"),
+             email = "ram.thapa@moffitt.org"),
+      person(given = "Christopher", family = "Wilson", role = "aut",
+             email = "christopher.wilson@moffitt.org"),
+      person(given = "Alex", family = "Soupir", role = "aut",
+             email = "alex.soupir@moffitt.org"),
+      person(given = "Oscar", family = "Ospina", role = "aut",
+             email = "oscar.ospina@moffitt.org"),
+      person(given = "Brooke", family = "Fridley", role = "cph",
+             email = "brooke.fridley@moffitt.org"),
+      person(given = "Fridley", family = "Lab", role = "cre",
+             email = "fridley.lab@moffitt.org"))
+Description: Visualization and analysis  of Vectra Immunoflourescent
+    data. Options for calculating both the univariate and bivariate Ripley's K
+    are included. Calculations are performed using a permutation-based 
+    approach presented by Wilson et al.  <doi:10.1101/2021.04.27.21256104>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Imports: magrittr, dplyr, tidyr, ggplot2, scales, grDevices, purrr,
+        rlang, plyr, spatstat.geom, spatstat.explore, RColorBrewer,
+        furrr, gridExtra, future, tidyselect, crayon, pheatmap
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+URL: https://github.com/FridleyLab/spatialTIME
+BugReports: https://github.com/FridleyLab/spatialTIME/issues
+NeedsCompilation: no
+Packaged: 2022-11-22 16:59:45 UTC; 4471592
+Author: Jordan Creed [aut],
+  Ram Thapa [aut],
+  Christopher Wilson [aut],
+  Alex Soupir [aut],
+  Oscar Ospina [aut],
+  Brooke Fridley [cph],
+  Fridley Lab [cre]
+Maintainer: Fridley Lab <fridley.lab@moffitt.org>
+Repository: CRAN
+Date/Publication: 2022-11-22 17:30:02 UTC

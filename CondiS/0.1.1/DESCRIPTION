@@ -1,0 +1,27 @@
+Package: CondiS
+Type: Package
+Title: Censored Data Imputation for Direct Modeling
+Version: 0.1.1
+Authors@R: c(
+    person("Yizhuo", "Wang", role=c("aut", "cre"), email="ywang70@mdanderson.org", comment = c(ORCID = "0000-0002-1870-0019")),
+    person("Ziyi", "Li", role=c("aut")),
+    person("Xuelin", "Huang", role=c("aut")),
+	person("Christopher", "Flowers", role=c("ctb"))
+    )
+Description: Impute the survival times for censored observations based on their conditional survival distributions derived from the Kaplan-Meier estimator. 'CondiS' can replace the censored observations with the best approximations from the statistical model, allowing for direct application of machine learning-based methods. When covariates are available, 'CondiS' is extended by incorporating the covariate information through machine learning-based regression modeling ('CondiS_X'), which can further improve the imputed survival time.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Imports: caret, survival, kernlab, purrr, tidyverse, survminer
+NeedsCompilation: no
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+Packaged: 2022-01-13 07:32:40 UTC; YWang70
+Author: Yizhuo Wang [aut, cre] (<https://orcid.org/0000-0002-1870-0019>),
+  Ziyi Li [aut],
+  Xuelin Huang [aut],
+  Christopher Flowers [ctb]
+Maintainer: Yizhuo Wang <ywang70@mdanderson.org>
+Repository: CRAN
+Date/Publication: 2022-01-13 19:32:44 UTC

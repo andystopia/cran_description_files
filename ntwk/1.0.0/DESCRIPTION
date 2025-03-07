@@ -1,0 +1,32 @@
+Package: ntwk
+Title: Statistical Inference for Network Time Series
+Version: 1.0.0
+Authors@R: 
+    person(given = "Valentin",
+           family = "Courgeau",
+           role = c("aut", "cre", "cph"),
+           email = "val.courgeau@gmail.com",
+           comment = c(ORCID = "0000-0002-7423-0090"))
+Maintainer: Valentin Courgeau <val.courgeau@gmail.com>
+Description: Statistical inference tools for network time series,
+    including implementation of the Graph Ornstein-Uhlenbeck ('GrOU')
+    model and sparse AR-like regression on irregularly-spaced data
+    (Courgeau and Veraart (2020) <arXiv:2005.12720>; Courgeau and Veraart
+    <arXiv:2008.10930>). It also handles jumps and Levy-type driving
+    noises through Wiener-Poisson mixtures and Generalised Hyperbolic
+    distributions.
+License: MIT + file LICENSE
+Imports: assertthat (>= 0.2.1), copCAR, ghyp, Matrix, mvtnorm, pracma,
+        stats, zoo
+Suggests: igraph, knitr, numDeriv, rmarkdown, spelling, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-09-09 10:25:26 UTC; vcourgeau
+Author: Valentin Courgeau [aut, cre, cph]
+    (<https://orcid.org/0000-0002-7423-0090>)
+Repository: CRAN
+Date/Publication: 2021-09-13 07:30:05 UTC

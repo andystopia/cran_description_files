@@ -1,0 +1,33 @@
+Package: babelmixr2
+Type: Package
+Title: Use 'nlmixr2' to Interact with Open Source and Commercial
+        Software
+Version: 0.1.0
+Authors@R: c(person("Matthew","Fidler", role = c("aut", "cre"), email = "matthew.fidler@gmail.com", comment=c(ORCID="0000-0001-8538-6691")),
+           person("Bill", "Denney", email="wdenney@humanpredictions.com", role="aut", comment=c(ORCID="0000-0002-5759-428X")))
+Description: Run other estimation and simulation software via the 'nlmixr2' (Fidler et al (2019)
+  <doi:10.1002/psp4.12445>) interface including 'PKNCA', 'NONMEM' and 'Monolix'. While not required, you can
+  get/install the 'lixoftConnectors' package in the 'Monolix' installation, as
+  described at the following url
+  <https://monolix.lixoft.com/monolix-api/lixoftconnectors_installation/>. When
+  'lixoftConnectors' is available, 'Monolix' can be run directly instead of setting up
+  command line usage.
+License: GPL (>= 3)
+NeedsCompilation: yes
+Encoding: UTF-8
+Suggests: testthat, nlmixr2data, withr, lixoftConnectors, PKNCA (>=
+        0.10.0), pmxTools, knitr, rmarkdown, spelling, units
+Depends: R (>= 3.5), nlmixr2 (>= 2.0.8)
+Imports: checkmate, cli, digest, lotri, nlmixr2est, methods, qs, rex,
+        rxode2
+RoxygenNote: 7.2.1
+Config/testthat/edition: 3
+LinkingTo: Rcpp, rxode2, RcppArmadillo, RcppEigen, rxode2parse
+Language: en-US
+VignetteBuilder: knitr
+Packaged: 2022-10-25 13:04:08 UTC; matt
+Author: Matthew Fidler [aut, cre] (<https://orcid.org/0000-0001-8538-6691>),
+  Bill Denney [aut] (<https://orcid.org/0000-0002-5759-428X>)
+Maintainer: Matthew Fidler <matthew.fidler@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-10-28 16:00:09 UTC

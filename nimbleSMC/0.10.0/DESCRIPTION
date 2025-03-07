@@ -1,0 +1,38 @@
+Package: nimbleSMC
+Title: Sequential Monte Carlo Methods for 'nimble'
+Description: Includes five particle filtering algorithms for use with state space
+    models in the 'nimble' system: 'Auxiliary', 'Bootstrap', 'Ensemble Kalman filter',
+    'Iterated Filtering 2', and 'Liu-West'. A full User Manual is available at
+    <https://r-nimble.org>.
+Version: 0.10.0
+Date: 2020-11-02
+Maintainer: Christopher Paciorek <paciorek@stat.berkeley.edu>
+Authors@R: c(person("Nick", "Michaud", role = "aut"),
+              person("Perry", "de Valpine", role = "aut"),
+              person("Christopher", "Paciorek", email = "paciorek@stat.berkeley.edu", role = c("aut", "cre")),
+              person("Daniel", "Turek", role = "aut"),
+              person("Benjamin R.", "Goldstein", role = "ctb", comment = "packaging contributions"),
+              person("Dao", "Nguyen", role = "ctb", comment = "contributions to the IF2 code"),
+              person("The Regents of the", "University of California", role = "cph"))
+License: BSD_3_clause + file LICENSE | GPL (>= 2)
+Copyright: See COPYRIGHTS file.
+Depends: R (>= 3.1.2), nimble (>= 0.10.0)
+Imports: methods
+Suggests: testthat
+Encoding: UTF-8
+LazyData: true
+URL: https://r-nimble.org, https://github.com/nimble-dev/nimbleSMC
+Collate: AuxiliaryFilter.R BootstrapFilter.R EnKFilter.R IF2Filter.R
+        LiuWestFilter.R MCMCSamplers.R resamplers.R utils.R zzz.R
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2020-11-02 17:11:01 UTC; paciorek
+Author: Nick Michaud [aut],
+  Perry de Valpine [aut],
+  Christopher Paciorek [aut, cre],
+  Daniel Turek [aut],
+  Benjamin R. Goldstein [ctb] (packaging contributions),
+  Dao Nguyen [ctb] (contributions to the IF2 code),
+  The Regents of the University of California [cph]
+Repository: CRAN
+Date/Publication: 2020-11-09 09:10:02 UTC

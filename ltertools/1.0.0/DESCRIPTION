@@ -1,0 +1,48 @@
+Package: ltertools
+Type: Package
+Title: Tools Developed by the Long Term Ecological Research Community
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Nicholas", 
+         family = "Lyon",
+         role = c("aut", "cre"),
+         email = "lyon@nceas.ucsb.edu",
+         comment = c(ORCID = "0000-0003-3905-1078",
+                     Website = "https://njlyon0.github.io/")),
+    person(given = "Angel", family = "Chen",
+         email = "anchen@nceas.ucsb.edu",
+         comment = c(ORCID = "0000-0003-3515-6710",
+                     Website = "angelchen7.github.io"),
+         role = c("aut")),
+    person(family = "National Science Foundation",
+         role = "fnd",
+         comment = "NSF 1929393, 09/01/2019 - 08/31/2024"),
+    person(family = "University of California, Santa Barbara",
+         role = "cph") )
+Maintainer: Nicholas Lyon <lyon@nceas.ucsb.edu>
+Description: Set of the data science tools created by various members of the Long Term 
+    Ecological Research (LTER) community. These functions were initially written largely 
+    as standalone operations and have later been aggregated into this package.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+URL: https://lter.github.io/ltertools/
+BugReports: https://github.com/lter/ltertools/issues
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5)
+Imports: dplyr, generics, ggplot2, magrittr, purrr, readxl, rlang,
+        stats, stringr, tidyr, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-02-22 14:42:42 UTC; lyon
+Author: Nicholas Lyon [aut, cre] (<https://orcid.org/0000-0003-3905-1078>,
+    https://njlyon0.github.io/),
+  Angel Chen [aut] (<https://orcid.org/0000-0003-3515-6710>,
+    angelchen7.github.io),
+  National Science Foundation [fnd] (NSF 1929393, 09/01/2019 -
+    08/31/2024),
+  University of California, Santa Barbara [cph]
+Repository: CRAN
+Date/Publication: 2024-02-23 19:00:02 UTC

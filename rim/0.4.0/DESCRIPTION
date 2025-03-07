@@ -1,0 +1,31 @@
+Package: rim
+Type: Package
+Title: R's Interface to Maxima, Bringing Symbolic Computation into R
+Version: 0.4.0
+Date: 2021-06-23
+Authors@R: c(
+    person("Kseniia", "Shumelchyk", email = "shumelchyk@gmail.com", role = c("aut")),
+    person("Hans W.", "Borchers", email = "hwborchers@googlemail.com", role = c("aut")),
+    person("Eric", "Stemmler", email = "stemmler.eric@gmail.com", role = c("aut", "cre")))
+Description: Provides an interface to the powerful and fairly complete computer algebra system maxima.
+    It can be used to start and control maxima from within R by entering 'Maxima' commands. 
+    It facilitates outputting results from 'Maxima' in 'LaTeX' and 'MathML'. 2D and 3D plots can be displayed directly. This package also registers a 'knitr'-engine 
+    enabling 'Maxima' code chunks to be written in 'RMarkdown' documents.
+URL: https://rcst.github.io/rim/
+BugReports: https://github.com/rcst/rim/issues
+SystemRequirements: Maxima (>= 5.42.1)
+License: GPL (>= 3)
+Imports: methods, Rcpp, R6, knitr, stringr, digest
+LinkingTo: Rcpp
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 3.0.0),
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2021-06-23 05:00:38 UTC; eric
+Author: Kseniia Shumelchyk [aut],
+  Hans W. Borchers [aut],
+  Eric Stemmler [aut, cre]
+Maintainer: Eric Stemmler <stemmler.eric@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-23 08:10:01 UTC

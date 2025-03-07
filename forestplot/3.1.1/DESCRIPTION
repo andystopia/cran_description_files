@@ -1,0 +1,35 @@
+Package: forestplot
+Version: 3.1.1
+Title: Advanced Forest Plot Using 'grid' Graphics
+Authors@R: c(person(given = "Max",
+                    family = "Gordon",
+                    role = c("aut", "cre"),
+                    email = "max@gforge.se"),
+             person(given = "Thomas",
+                    family = "Lumley",
+                    role = c("aut", "ctb")))
+Description: A forest plot that allows for
+    multiple confidence intervals per row,
+    custom fonts for each text element,
+    custom confidence intervals,
+    text mixed with expressions, and more.
+    The aim is to extend the use of forest plots beyond meta-analyses.
+    This is a more general version of the original 'rmeta' package's forestplot()
+    function and relies heavily on the 'grid' package.
+License: GPL-2
+URL: https://gforge.se/packages/
+BugReports: https://github.com/gforge/forestplot/issues
+Biarch: yes
+Depends: R (>= 4.1.0), grid, checkmate, abind
+Suggests: dplyr, Gmisc, Greg, knitr, purrr, rlang, rmarkdown, rmeta,
+        rms, testthat, tibble, tidyr, tidyselect, tidyverse
+Encoding: UTF-8
+NeedsCompilation: no
+VignetteBuilder: knitr
+RoxygenNote: 7.2.2
+Packaged: 2022-12-06 20:33:12 UTC; max
+Author: Max Gordon [aut, cre],
+  Thomas Lumley [aut, ctb]
+Maintainer: Max Gordon <max@gforge.se>
+Repository: CRAN
+Date/Publication: 2022-12-06 21:20:02 UTC

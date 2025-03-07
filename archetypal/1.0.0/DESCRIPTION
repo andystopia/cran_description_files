@@ -1,0 +1,33 @@
+Package: archetypal
+Version: 1.0.0
+Title: Finds the Archetypal Analysis of a Data Frame
+Description: Performs archetypal analysis by using Convex Hull approximation under a full 
+    control of all algorithmic parameters. 
+    It contains functions useful for finding the proper initial approximation, the optimal 
+    number of archetypes and function for applying main algorithm.
+    Morup, M., Hansen, LK (2012) <doi:10.1016/j.neucom.2011.06.033>.
+    Hochbaum, DS, Shmoys, DB (1985) <doi:10.1287/moor.10.2.180>.
+    Eddy, WF(1977) <doi:10.1145/355759.355768>.
+    Barber, CB, Dobkin, DP, Huhdanpaa, HT (1996) <doi:10.1145/235815.235821>.
+    Christopoulos, DT (2016) <doi:10.2139/ssrn.3043076> .    
+Authors@R: c(
+             person("Demetris", "Christopoulos", email = "dchristop@econ.uoa.gr", role = c("aut", "cre")),
+             person("David", "Midgley", email = "david.midgley@insead.edu", role = c("ctb")),
+             person("INSEAD Fontainebleau France", role = c("fnd", "cph"))
+             )  
+Maintainer: Demetris Christopoulos <dchristop@econ.uoa.gr>
+Depends: R (>= 3.1.0)
+Imports: Matrix, geometry, inflection, doParallel, lpSolve, methods
+Suggests: knitr, rmarkdown, plot3D
+VignetteBuilder: knitr
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2019-06-12 10:34:23 UTC; demetris_ws
+Author: Demetris Christopoulos [aut, cre],
+  David Midgley [ctb],
+  INSEAD Fontainebleau France [fnd, cph]
+Repository: CRAN
+Date/Publication: 2019-06-13 13:20:07 UTC

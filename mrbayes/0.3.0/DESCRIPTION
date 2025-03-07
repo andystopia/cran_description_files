@@ -1,0 +1,45 @@
+Package: mrbayes
+Type: Package
+Title: Bayesian Summary Data Models for Mendelian Randomization Studies
+Version: 0.3.0
+Authors@R: c(
+  person("Okezie", "Uche-Ikonne",
+    email = "o.uche-ikonne@lancaster.ac.uk",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-8461-8099")),
+  person("Frank", "Dondelinger",
+    email = "f.dondelinger@lancaster.ac.uk", 
+    role = c("aut"),
+    comment = c(ORCID = "0000-0003-1816-6300")),
+  person("Tom", "Palmer", 
+    email = "tom.palmer@bristol.ac.uk", 
+    role = c("aut"),
+    comment = c(ORCID = "0000-0003-4655-4511")))
+Description: Bayesian estimation of inverse variance weighted (IVW), Burgess 
+    et al. (2013) <doi:10.1002/gepi.21758>, and MR-Egger, Bowden et 
+    al. (2015) <doi:10.1093/ije/dyv080>, summary data models for Mendelian 
+    randomization analyses.
+Depends: R (>= 3.5.0)
+Imports: methods, Rcpp (>= 0.12.0), rstan (>= 2.18.1), rstantools (>=
+        2.0.0), plyr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, rjags (>= 4-9), tidyverse, knitr, ggplot2, ggmcmc,
+        foreign, DescTools, bayesmeta, utils, kableExtra, roxygen2,
+        bookdown, MendelianRandomization
+URL: https://github.com/okezie94/mrbayes
+BugReports: https://github.com/okezie94/mrbayes/issues
+RoxygenNote: 7.1.1
+SystemRequirements: GNU make
+Biarch: true
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+NeedsCompilation: yes
+Packaged: 2021-04-01 14:49:00 UTC; okezieuche-ikonne
+Author: Okezie Uche-Ikonne [aut, cre] (<https://orcid.org/0000-0002-8461-8099>),
+  Frank Dondelinger [aut] (<https://orcid.org/0000-0003-1816-6300>),
+  Tom Palmer [aut] (<https://orcid.org/0000-0003-4655-4511>)
+Maintainer: Okezie Uche-Ikonne <o.uche-ikonne@lancaster.ac.uk>
+Repository: CRAN
+Date/Publication: 2021-04-01 16:50:12 UTC

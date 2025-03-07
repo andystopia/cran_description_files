@@ -1,0 +1,29 @@
+Package: RFlocalfdr
+Title: Significance Level for Random Forest Impurity Importance Scores
+Version: 0.8.5
+Authors@R: 
+    person(given = "Robert",
+           family = "Dunne",
+           role = c("aut", "cre"),
+           email = "rob.dunne@csiro.au",
+           comment = c(ORCID = "https://orcid.org/0000-0003-1946-7279"))
+Description: Sets a significance level for  Random Forest MDI (Mean Decrease in Impurity, Gini or
+             sum of squares) variable importance scores, using an empirical Bayes approach.
+             See Dunne et al. (2022)  <doi:10.1101/2022.04.06.487300>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+LazyDataCompression: xz
+Imports: minpack.lm, sn, fitdistrplus, grDevices, graphics, stats,
+        ranger, randomForest, RFlocalfdr.data, vita
+Depends: R (>= 3.5.0)
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-09 01:38:54 UTC; dun280
+Author: Robert Dunne [aut, cre] (<https://orcid.org/0000-0003-1946-7279>)
+Maintainer: Robert Dunne <rob.dunne@csiro.au>
+Repository: CRAN
+Date/Publication: 2023-11-09 07:40:02 UTC

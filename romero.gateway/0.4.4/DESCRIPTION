@@ -1,0 +1,36 @@
+Package: romero.gateway
+Type: Package
+Version: 0.4.4
+Date: 2018-12-13
+Title: OMERO R Gateway
+Description: R Wrapper around the OMERO Java Gateway, which
+  enables access to an OMERO server within R.
+  Supported OMERO version: 5.4 .
+Maintainer: Dominik Lindner <d.lindner@dundee.ac.uk>
+Authors@R: c(person("Dominik", "Lindner", role = c("aut", "cre", "ctb"),
+                 email = "d.lindner@dundee.ac.uk"),
+             person("Jean-Marie", "Burel", role = "ctb",
+                 email = "j.burel@dundee.ac.uk"),
+             person("Josh", "Moore", role = "ctb",
+                 email = "josh@glencoesoftware.com"),
+             person("Balaji", "Ramalingam", role = "ctb",
+                 email = "b.ramalingam@dundee.ac.uk"))
+Depends: R (>= 3.3.0), methods (>= 3.3.0), rJava (>= 0.9-7), jpeg (>=
+        0.1-8)
+Suggests: testthat
+Collate: zzz.R globalVariables.R OMEROServer.R OMERO.R Screen.R Plate.R
+        Well.R Dataset.R Project.R Image.R
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+URL: https://github.com/ome/rOMERO-gateway,
+        https://www.openmicroscopy.org
+BugReports: http://qa.openmicroscopy.org.uk
+RoxygenNote: 6.1.0
+Packaged: 2018-12-14 11:46:01 UTC; dominik
+Author: Dominik Lindner [aut, cre, ctb],
+  Jean-Marie Burel [ctb],
+  Josh Moore [ctb],
+  Balaji Ramalingam [ctb]
+Repository: CRAN
+Date/Publication: 2018-12-23 16:30:03 UTC

@@ -1,0 +1,30 @@
+Package: EFAfactors
+Type: Package
+Title: Determining the Number of Factors in Exploratory Factor Analysis
+Version: 1.0.0
+Date: 2024-09-03
+Authors@R: c(person(given = "Haijiang", family = "Qin", role = c("aut", "cre", "cph"), email = "haijiang133@outlook.com"),
+             person(given = "Lei", family = "Guo", role = c("aut", "cph"), email = "happygl1229@swu.edu.cn"))
+Maintainer: Haijiang Qin <haijiang133@outlook.com>
+Description: Provides a collection of standard factor retention methods in Exploratory Factor Analysis (EFA), making it easier to determine the number of factors. Traditional methods such as the scree plot by Cattell (1966) <doi:10.1207/s15327906mbr0102_10>, Kaiser-Guttman Criterion (KGC) by Guttman (1954) <doi:10.1007/BF02289162> and Kaiser (1960) <doi:10.1177/001316446002000116>, and flexible Parallel Analysis (PA) by Horn (1965) <doi:10.1007/BF02289447> based on eigenvalues form PCA or EFA are readily available. This package also implements several newer methods, such as the Empirical Kaiser Criterion (EKC) by Braeken and van Assen (2017) <doi:10.1037/met0000074>, Comparison Data (CD) by Ruscio and Roche (2012) <doi:10.1037/a0025697>, and Hull method by Lorenzo-Seva et al. (2011) <doi:10.1080/00273171.2011.564527>, as well as some AI-based methods like Comparison Data Forest (CDF) by Goretzko and Ruscio (2024) <doi:10.3758/s13428-023-02122-4> and Factor Forest (FF) by Goretzko and Buhner (2020) <doi:10.1037/met0000262 >. Additionally, it includes a deep neural network (DNN) trained on large-scale datasets that can efficiently and reliably determine the number of factors.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: BBmisc, ddpcr, ineq, MASS, Matrix, mlr, ParamHelpers, proxy,
+        psych, ranger, reticulate, Rcpp, RcppArmadillo, SimCorMultRes,
+        xgboost
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Collate: 'CD.R' 'CDF.R' 'data.bfi.R' 'data.datasets.R' 'data.scaler.R'
+        'DNN_predictor.R' 'EFAhclust.R' 'EFAindex.R' 'EFAkmeans.R'
+        'EFAvote.R' 'EKC.R' 'EFAscreet.R' 'EFAsim.data.R'
+        'extractor.feature.DNN.R' 'extractor.feature.FF.R'
+        'factor.analysis.R' 'FF.R' 'GenData.R' 'get.runs.R' 'Hull.R'
+        'KGC.R' 'load.R' 'model.xgb.R' 'normalizor.R' 'PA.R' 'plot.R'
+        'print.R' 'RcppExports.R' 'af.softmax.R' 'utils.R' 'zzz.R'
+Repository: CRAN
+Packaged: 2024-09-24 07:59:15 UTC; Haiji
+Author: Haijiang Qin [aut, cre, cph],
+  Lei Guo [aut, cph]
+Date/Publication: 2024-09-25 08:50:02 UTC

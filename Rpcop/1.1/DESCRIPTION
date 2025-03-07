@@ -1,0 +1,44 @@
+Package: Rpcop
+Type: Package
+Title: Principal Curves of Oriented Points
+Version: 1.1
+Date: 2023-07-15
+Authors@R: 
+    c(person(given = "Pedro",
+             family = "Delicado",
+             email = "pedro.delicado@upc.edu",
+             role = "aut",
+             comment = "C++ original, https://www-eio.upc.es/~delicado/PCOP/index.html"),
+      person(given = "Mario",
+             family = "Huerta",
+             email = "mario.huerta@uab.es",
+             role = "aut",
+             comment = "C++ original"),
+      person(given = "Kevin Michael",
+             family = "Frick",
+             email = "kmfrick98@gmail.com",
+             role = c("trl", "aut", "cre"),
+             comment = "Fixes for modern C++ and Rcpp port, with permission from the original authors"),
+      person(given = "Stephen L.",
+             family = "Moshier",
+             email = "steve@moshier.net",
+             role = "cph",
+             comment = "Wrote eigens(), which computes eigenvalues and eigenvectors of a real symmetric matrix"))
+Description: Principal curves generalize the notion of a first principal component to the case in which it is a non linear smooth curve. This package provides a function pcop(X) to compute principal curves with the algorithm defined in Delicado (2001) <doi:10.1006/jmva.2000.1917> from a data matrix X.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.7)
+LinkingTo: Rcpp
+Depends: princurve
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2023-07-15 13:15:11 UTC; kmfrick
+Author: Pedro Delicado [aut] (C++ original,
+    https://www-eio.upc.es/~delicado/PCOP/index.html),
+  Mario Huerta [aut] (C++ original),
+  Kevin Michael Frick [trl, aut, cre] (Fixes for modern C++ and Rcpp
+    port, with permission from the original authors),
+  Stephen L. Moshier [cph] (Wrote eigens(), which computes eigenvalues
+    and eigenvectors of a real symmetric matrix)
+Maintainer: Kevin Michael Frick <kmfrick98@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-07-16 17:20:13 UTC

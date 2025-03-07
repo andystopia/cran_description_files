@@ -1,0 +1,32 @@
+Package: EvidenceSynthesis
+Type: Package
+Title: Synthesizing Causal Evidence in a Distributed Research Network
+Version: 0.4.1
+Date: 2023-04-05
+Authors@R: c(
+  person("Martijn", "Schuemie", email = "schuemie@ohdsi.org", role = c("aut", "cre")),
+  person("Marc A.", "Suchard", , "msuchard@ucla.edu", role = c("aut")),
+  person("Observational Health Data Science and Informatics", role = c("cph"))
+  )
+Maintainer: Martijn Schuemie <schuemie@ohdsi.org>
+Description: Routines for combining causal effect estimates and study diagnostics across multiple data sites in a distributed study, without sharing patient-level data. 
+  Allows for normal and non-normal approximations of the data-site likelihood of the effect parameter. 
+SystemRequirements: Java version 8 or higher (https://www.java.com/)
+Depends: survival, R (>= 3.5.0)
+Imports: ggplot2, gridExtra, meta, EmpiricalCalibration, rJava,
+        BeastJar, Cyclops (>= 3.1.0), HDInterval, coda, rlang, methods
+Suggests: knitr, rmarkdown, testthat, sn
+License: Apache License 2.0
+URL: https://ohdsi.github.io/EvidenceSynthesis/,
+        https://github.com/OHDSI/EvidenceSynthesis
+BugReports: https://github.com/OHDSI/EvidenceSynthesis/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-04-05 15:18:31 UTC; MSCHUEMI
+Author: Martijn Schuemie [aut, cre],
+  Marc A. Suchard [aut],
+  Observational Health Data Science and Informatics [cph]
+Repository: CRAN
+Date/Publication: 2023-04-05 15:53:22 UTC

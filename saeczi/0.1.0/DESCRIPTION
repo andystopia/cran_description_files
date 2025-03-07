@@ -1,0 +1,39 @@
+Package: saeczi
+Type: Package
+Title: Small Area Estimation for Continuous Zero Inflated Data
+Version: 0.1.0
+Authors@R: c(person("Josh", "Yamamoto", role = c("aut", "cre"),
+                    email = "joshuayamamoto5@gmail.com"),
+             person("Dinan", "Elsyad", role = "aut"),
+             person("Grayson", "White", role = "aut"),
+             person("Julian", "Schmitt", role = "aut"),
+             person("Niels", "Korsgaard", role = "aut"),
+             person("Kelly", "McConville", role = "aut"),
+             person("Kate", "Hu", role = "aut"))
+Maintainer: Josh Yamamoto <joshuayamamoto5@gmail.com>
+Description: Simplifies the process of fitting a zero-inflated estimator
+    onto a dataset. This estimator is a combination of a linear mixed effects regression model 
+    and a logistic mixed effects regression model which is summarized by White and others (2024, <arXiv:2402.03263>).
+    The variance is estimated through a parametric bootstrapping method which is given 
+    by Chandra and others (2012, <doi:10.1080/03610918.2011.598991>). 
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: stats, dplyr, stringr, lme4, purrr, progressr, furrr, future,
+        methods, rlang, Rcpp
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Packaged: 2024-02-12 16:28:17 UTC; joshuayamamoto
+Author: Josh Yamamoto [aut, cre],
+  Dinan Elsyad [aut],
+  Grayson White [aut],
+  Julian Schmitt [aut],
+  Niels Korsgaard [aut],
+  Kelly McConville [aut],
+  Kate Hu [aut]
+Repository: CRAN
+Date/Publication: 2024-02-13 16:50:05 UTC

@@ -1,0 +1,44 @@
+Package: CorReg
+Type: Package
+Title: Linear Regression Based on Linear Structure Between Covariates
+Version: 1.0.5
+Date: 2015-06-09
+Authors@R: c(person("Clement", "THERY", role = c("aut", "cre"),
+    email = "monsieur.thery@therysolutions.com"),
+    person("Christophe", "BIERNACKI", role = "ctb"),
+    person("Gaetan", "LORIDANT", role = "ctb"),
+    person("Florian", "WATRIN", role = "ctb"),
+    person("Quentin", "GRIMONPREZ", role = "ctb"),
+    person("Vincent", "KUBICKI", role = "ctb"),
+    person("Samuel", "BLANCK", role = "ctb"),
+    person("Jeremie","KELLNER",role="ctb")
+    )
+Description: Linear regression based on a recursive structural equation model
+    (explicit correlations) found by a MCMC algorithm. It permits to face
+    highly correlated covariates. Variable selection is included (by lasso,
+    elastic net, etc.). It also provides some graphical tools for basic
+    statistics and regression trees.
+License: CeCILL
+Copyright: ArcelorMittal
+URL: http://www.correg.org
+Depends: R(>= 3.0)
+Imports: Rcpp(>= 0.11.0), lars(>= 1.2), Rmixmod(>= 2.0.1),
+        elasticnet(>= 1.1), corrplot(>= 0.73), Matrix(>= 1.1), ridge(>=
+        2.1), rpart(>= 4.1-5), MASS(>= 7.3-30), mvtnorm(>= 0.9),
+        mclust(>= 4.2)
+LinkingTo: Rcpp, RcppEigen
+Suggests: clere(>= 1.1), spikeslab(>= 1.1.5), parcor(>= 0.2), missMDA
+        (>= 1.7.3)
+NeedsCompilation: yes
+Packaged: 2015-06-09 07:03:10 UTC; U038226
+Author: Clement THERY [aut, cre],
+  Christophe BIERNACKI [ctb],
+  Gaetan LORIDANT [ctb],
+  Florian WATRIN [ctb],
+  Quentin GRIMONPREZ [ctb],
+  Vincent KUBICKI [ctb],
+  Samuel BLANCK [ctb],
+  Jeremie KELLNER [ctb]
+Maintainer: Clement THERY <monsieur.thery@therysolutions.com>
+Repository: CRAN
+Date/Publication: 2015-06-09 09:54:44

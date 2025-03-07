@@ -1,0 +1,25 @@
+Package: mixedbiastest
+Type: Package
+Title: Bias Diagnostic for Linear Mixed Models
+Version: 0.2.1
+Date: 2024-12-03
+Authors@R: 
+    person(given = "Andrew T.",
+           family = "Karl",
+           email = "akarl@asu.edu",
+           role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-5933-8706"))
+Maintainer: Andrew T. Karl <akarl@asu.edu>
+Description: Provides a function to perform bias diagnostics on linear mixed models fitted with 'lmer()' from the 'lme4' package. Implements permutation tests for assessing the bias of fixed effects, as described in Karl and Zimmerman (2021) <doi:10.1016/j.jspi.2020.06.004>. Karl and Zimmerman (2020) <doi:10.17632/tmynggddfm.1> provide R code for implementing the test using 'mvglmmRank' output. Development of this package was assisted by 'GPT o1-preview' for code structure and documentation.
+Depends: R (>= 3.5.0)
+Imports: lme4, Matrix, ggplot2, rlang
+Suggests: plm
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-12-04 01:24:33 UTC; andre
+Author: Andrew T. Karl [cre, aut] (<https://orcid.org/0000-0002-5933-8706>)
+Repository: CRAN
+Date/Publication: 2024-12-05 18:50:01 UTC

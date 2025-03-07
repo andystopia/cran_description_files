@@ -1,0 +1,49 @@
+Package: BiostatsUHNplus
+Title: Nested Data Summary and Adverse Events
+Version: 0.0.8
+Authors@R: c(
+    person("Lisa", "Avery", , "lisa.avery@uhn.ca", role = "aut",
+           comment = c(ORCHID = "0000-0002-8431-5143")),
+    person("Zeynep", "Baskurt", , "zeynep.baskurt@uhn.ca", role = "aut"),
+    person("Osvaldo", "Espin-Garcia", , "osvaldo.espin-garcia@uhn.ca", role = "aut"),
+    person("Katrina", "Hueniken", , "katrina.hueniken@uhn.ca", role = "aut"),
+    person("Katherine", "Lajkosz", , "katherine.lajkosz@uhn.ca", role = "aut",
+           comment = c(ORCHID = "0000-0003-3760-5401")),
+    person("Xuan", "Li", , "xuan.li@uhnresearch.ca", role = "aut"),
+    person("Tyler", "Pittman", , "tyler.pittman@uhn.ca", role = c("cre", "aut"),
+           comment = c(ORCHID = "0000-0002-5013-6980")),
+    person("Anna", "Santiago", , "anna.santiago@uhn.ca", role = "aut",
+           comment = c(ORCHID = "0000-0002-0932-2386")),
+    person("Jessica", "Weiss", , "jessica.weiss@uhn.ca", role = "aut"),
+    person("Wei", "Xu", , "wei.xu@uhn.ca", role = "aut")
+  )
+Description: Miscellaneous code snippets and functions with pipes and
+    multiple package dependencies used for summarizing nested data and 
+    adverse events.
+License: MIT + file LICENSE
+Depends: R (>= 4.2)
+Imports: afex, cowplot, dplyr, forcats, ggh4x, ggplot2, ggstance,
+        lifecycle, MCMCglmm, modeest, openxlsx, plyr, purrr, reportRmd,
+        rlang, rstatix, stats, stringr, tibble, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'data.R' 'globals.R' 'as_numeric_parse.R' 'covsum_nested.R'
+        'dsmb_ccru.R' 'nice_mcmcglmm.R' 'ae_timeline_plot.R'
+NeedsCompilation: no
+Packaged: 2023-11-27 20:56:58 UTC; t109810uhn
+Author: Lisa Avery [aut] (0000-0002-8431-5143),
+  Zeynep Baskurt [aut],
+  Osvaldo Espin-Garcia [aut],
+  Katrina Hueniken [aut],
+  Katherine Lajkosz [aut] (0000-0003-3760-5401),
+  Xuan Li [aut],
+  Tyler Pittman [cre, aut] (0000-0002-5013-6980),
+  Anna Santiago [aut] (0000-0002-0932-2386),
+  Jessica Weiss [aut],
+  Wei Xu [aut]
+Maintainer: Tyler Pittman <tyler.pittman@uhn.ca>
+Repository: CRAN
+Date/Publication: 2023-11-28 17:30:09 UTC

@@ -1,0 +1,46 @@
+Package: MagmaClustR
+Title: Clustering and Prediction using Multi-Task Gaussian Processes
+        with Common Mean
+Version: 1.0.0
+Authors@R: c(
+    person("Arthur", "Leroy", , "arthur.leroy.pro@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0806-8934")),
+    person("Pierre", "Pathé", , "pathepierre@gmail.com", role = "ctb"),
+    person("Pierre", "Latouche", , "pierre.latouche@gmail.com", role = "aut")
+  )
+Description: An implementation for the multi-task Gaussian processes with common 
+    mean framework. Two main algorithms, called 'Magma' and 'MagmaClust', 
+    are available to perform predictions for supervised learning problems, in
+    particular for time series or any functional/continuous data applications.
+    The corresponding articles has been respectively proposed by Arthur Leroy, 
+    Pierre Latouche, Benjamin Guedj and Servane Gey (2022) 
+    <doi:10.1007/s10994-022-06172-1>, and Arthur Leroy, Pierre Latouche, 
+    Benjamin Guedj and Servane Gey (2020) <arXiv:2011.07866>.
+    Theses approaches leverage the learning of cluster-specific mean processes,
+    which are common across similar tasks, to provide enhanced prediction
+    performances (even far from data) at a linear computational cost (in
+    the number of tasks).  'MagmaClust' is a generalisation of 'Magma'
+    where the tasks are simultaneously clustered into groups, each being
+    associated to a specific mean process.  User-oriented functions in the
+    package are decomposed into training, prediction and plotting
+    functions. Some basic features (classic kernels, training, prediction) of
+    standard Gaussian processes are also implemented. 
+License: MIT + file LICENSE
+URL: https://github.com/ArthurLeroy/MagmaClustR,
+        https://arthurleroy.github.io/MagmaClustR/
+BugReports: https://github.com/ArthurLeroy/MagmaClustR/issues
+Imports: broom, dplyr, ggplot2, magrittr, methods, mvtnorm, optimr,
+        Rcpp, rlang, stats, tibble, tidyr, tidyselect
+Suggests: gganimate, gifski, knitr, plotly, png, rmarkdown, testthat
+        (>= 3.0.0), transformr
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2022-06-03 12:01:33 UTC; user
+Author: Arthur Leroy [aut, cre] (<https://orcid.org/0000-0003-0806-8934>),
+  Pierre Pathé [ctb],
+  Pierre Latouche [aut]
+Maintainer: Arthur Leroy <arthur.leroy.pro@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-06 09:00:10 UTC

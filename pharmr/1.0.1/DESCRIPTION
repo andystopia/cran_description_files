@@ -1,0 +1,45 @@
+Package: pharmr
+Encoding: UTF-8
+Version: 1.0.1
+Date: 2024-06-12
+Title: Interface to the 'Pharmpy' 'Pharmacometrics' Library
+Authors@R: c(
+  person("Rikard", "Nordgren", role=c("aut", "cre", "cph"), email="rikard.nordgren@farmaci.uu.se"),
+  person("Stella", "Belin", role=c("aut", "cph"), email="stella.belin@farmaci.uu.se"),
+  person("Mats O.", "Karlsson", role=c("sad")),
+  person("Andrew C.", "Hooker", role=c("sad")),
+  person("Xiaomei", "Chen", role=c("sad")),
+  person("Sebastian", "Ueckert", role=c("sad"), comment=c(ORCID="0000-0002-3712-0255")),
+  person("Simon", "Buatois", role=c("rev")),
+  person("João A.", "Abrantes", role=c("rev")),
+  person("Emilie", "Schindler", role=c("rev")),
+  person("F. Hoffmann-La Roche Ltd.", role=c("fnd")),
+  person("Bayer AG", role=c("fnd"))
+  )
+Maintainer: Rikard Nordgren <rikard.nordgren@farmaci.uu.se>
+Depends: R (>= 3.6.0), altair (>= 4.0.0)
+SystemRequirements: Python (>= 3.10.0)
+Imports: reticulate (>= 1.19), utils
+Suggests: testthat, magrittr, here, knitr
+NeedsCompilation: no
+Description: Interface to the 'Pharmpy' 'pharmacometrics' library. The 'Reticulate' package is used to interface Python from R.
+Config/reticulate: list( packages = list( list(package = "altair"),
+        list(package = "pharmpy-core") ) )
+URL: https://github.com/pharmpy/pharmr
+BugReports: https://github.com/pharmpy/pharmr/issues
+License: LGPL (>= 3)
+RoxygenNote: 7.3.1
+Packaged: 2024-06-17 09:34:43 UTC; rikard
+Author: Rikard Nordgren [aut, cre, cph],
+  Stella Belin [aut, cph],
+  Mats O. Karlsson [sad],
+  Andrew C. Hooker [sad],
+  Xiaomei Chen [sad],
+  Sebastian Ueckert [sad] (<https://orcid.org/0000-0002-3712-0255>),
+  Simon Buatois [rev],
+  João A. Abrantes [rev],
+  Emilie Schindler [rev],
+  F. Hoffmann-La Roche Ltd. [fnd],
+  Bayer AG [fnd]
+Repository: CRAN
+Date/Publication: 2024-06-17 10:00:02 UTC

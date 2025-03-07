@@ -1,0 +1,37 @@
+Package: nphPower
+Title: Sample Size Calculation under Non-Proportional Hazards
+Version: 1.0.0
+Authors@R: 
+    person(given = "Huan",
+           family = "Cheng",
+           role = c("aut", "cre"),
+           email = "hcheng1118@hotmail.com",
+           comment = c(ORCID = "0000-0002-2552-7656"))
+Description: Performs combination tests and sample size calculation for 
+   fixed design with survival endpoints using combination tests under either
+   proportional hazards or non-proportional hazards. The combination tests 
+   include maximum weighted log-rank test and projection test. The sample 
+   size calculation procedure is very flexible, allowing for user-defined
+   hazard ratio function and considering various trial conditions like 
+   staggered entry, drop-out etc. Trial simulation function is also provided 
+   to facilitate the empirical power calculation. The references for 
+   projection test and maximum weighted logrank test include Brendel et al. (2014)
+   <doi:10.1111/sjos.12059> and Cheng and He (2021) <arXiv:2110.03833>. The 
+   references for sample size calculation under proportional hazard include
+   Schoenfeld (1981) <doi:10.1093/biomet/68.1.316> and Freedman (1982) <doi:10.1002/sim.4780010204>.
+   The references for calculation under non-proportional hazards include 
+   Lakatos (1988) <doi:10.2307/2531910> and Cheng and He (2021) (under review).
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: survival, stats, mvtnorm, MASS, zoo
+Suggests: rmarkdown, knitr
+URL: https://github.com/hcheng99/nphPower
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-12-01 03:04:02 UTC; hcheng
+Author: Huan Cheng [aut, cre] (<https://orcid.org/0000-0002-2552-7656>)
+Maintainer: Huan Cheng <hcheng1118@hotmail.com>
+Repository: CRAN
+Date/Publication: 2021-12-01 11:20:06 UTC

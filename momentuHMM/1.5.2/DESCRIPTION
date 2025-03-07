@@ -1,0 +1,29 @@
+Package: momentuHMM
+Type: Package
+Title: Maximum Likelihood Analysis of Animal Movement Behavior Using
+        Multivariate Hidden Markov Models
+Version: 1.5.2
+Date: 2021-01-06
+Depends: R (>= 2.10)
+Author: Brett McClintock, Theo Michelot
+Maintainer: Brett McClintock <brett.mcclintock@noaa.gov>
+Description: Extended tools for analyzing telemetry data using generalized hidden Markov models. Features of momentuHMM (pronounced ``momentum'') include data pre-processing and visualization, fitting HMMs to location and auxiliary biotelemetry or environmental data, biased and correlated random walk movement models, hierarchical HMMs, multiple imputation for incorporating location measurement error and missing data, user-specified design matrices and constraints for covariate modelling of parameters, random effects, decoding of the state process, visualization of fitted models, model checking and selection, and simulation. See McClintock and Michelot (2018) <doi:10.1111/2041-210X.12995>.
+License: GPL-3
+LazyData: TRUE
+Imports: Rcpp, doParallel, foreach, numDeriv, CircStats, crawl (>=
+        2.2.1), mitools, car, mvtnorm, sp, MASS, Brobdingnag, nleqslv,
+        survival, qdapRegex, geosphere, prodlim, doRNG, data.tree (>=
+        1.0.0), extraDistr, rlang
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, setRNG, splines, splines2 (>= 0.2.8), R.rsp,
+        raster, conicfit, ggplot2, ggmap, lubridate, dplyr, magrittr,
+        scatterplot3d, BB, expm, matrixcalc, moveHMM
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+NeedsCompilation: yes
+VignetteBuilder: R.rsp
+URL: https://github.com/bmcclintock/momentuHMM
+BugReports: https://github.com/bmcclintock/momentuHMM/issues
+Packaged: 2021-01-08 16:27:10 UTC; brettmcclintock
+Repository: CRAN
+Date/Publication: 2021-01-08 19:20:03 UTC

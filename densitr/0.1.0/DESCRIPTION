@@ -1,0 +1,36 @@
+Package: densitr
+Title: Analysing Density Profiles from Resistance Drilling of Trees
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Luka",
+    family = "Krajnc",
+    role = c("aut", "cre"),
+    email = "luka.krajnc@gozdis.si",
+    comment = c(ORCID = "0000-0002-3120-559X")),
+    person(given = "Stasia",
+    family = "Grinberg",
+    role = c("ctb")))
+Description: Provides various tools for analysing density profiles
+    obtained by resistance drilling. It can load individual or
+    multiple files and trim the starting and ending part of each
+    density profile. Tools are also provided to trim profiles
+    manually, to remove the trend from measurements using several
+    methods, to plot the profiles and to detect tree rings
+    automatically. Written with a focus on forestry use of resistance
+    drilling in standing trees.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/krajnc/densitr
+BugReports: https://github.com/krajnc/densitr/issues
+LazyData: true
+Imports: stats, utils, changepoint (>= 2.2.2)
+Suggests: pbapply, mgcv, knitr, rmarkdown, testthat
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-04-06 09:11:18 UTC; lukak@gozdis.si
+Author: Luka Krajnc [aut, cre] (<https://orcid.org/0000-0002-3120-559X>),
+  Stasia Grinberg [ctb]
+Maintainer: Luka Krajnc <luka.krajnc@gozdis.si>
+Repository: CRAN
+Date/Publication: 2020-04-07 12:50:02 UTC

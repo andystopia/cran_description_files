@@ -1,0 +1,22 @@
+Package: STRMPS
+Type: Package
+Title: Analysis of Short Tandem Repeat (STR) Massively Parallel
+        Sequencing (MPS) Data
+Version: 0.5.8
+Date: 2018-07-01
+Encoding: UTF-8
+Author: Søren B. Vilsen
+Maintainer: Søren B. Vilsen <svilsen@math.aau.dk>
+Description: Loading, identifying, aggregating, manipulating, and analysing short tandem repeat regions of massively parallel sequencing data in forensic genetics. 'STRMPS' can work with the package 'STRaitRazoR' (an R interface to the 'STRaitRazor' commandline tool) for added speed. 'STRaitRazoR' only works on linux and can found at <https://github.com/svilsen/STRaitRazoR>. The analyses and framework implemented in this package relies on the papers of Vilsen et al. (2017) <doi:10.1016/j.fsigen.2017.01.017> and Vilsen et al. (2018) <doi:10.1016/j.fsigen.2018.04.003>. Lastly, note that the parallelisation in the package relies on mclapply() and, thus, speed-ups will only be seen on UNIX based systems.
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: R (>= 3.1.0), Biostrings, ShortRead
+Imports: methods, utils, IRanges, tidyr, tibble, dplyr, stringr, purrr,
+        parallel
+Suggests: STRaitRazoR
+biocViews: Biostrings, ShortRead, IRanges
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-07-01 17:49:52 UTC; vilsen
+Repository: CRAN
+Date/Publication: 2018-07-02 08:30:06 UTC

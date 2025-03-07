@@ -1,0 +1,31 @@
+Package: StratifiedSampling
+Type: Package
+Title: Different Methods for Stratified Sampling
+Version: 0.3.0
+Authors@R: c(
+  person("Raphael", "Jauslin", email = "raphael.jauslin@unine.ch",role = c("aut", "cre"),comment = c(ORCID = "0000-0003-1088-3356")),
+  person("Esther", "Eustache", email = "esther.eustache@unine.ch",role = c("aut")),
+  person("Bardia", "Panahbehagh", email = "bardia.panahbehagh@unine.ch",role = c("aut")),
+  person("Yves", "Tillé",role = c("aut"),comment = c(ORCID = "0000-0003-0904-5523"))
+  )
+Description: Integrating a stratified structure in the population in a sampling design can considerably reduce the variance of the Horvitz-Thompson estimator. We propose in this package different methods to handle the selection of a balanced sample in stratified population. For more details see Raphaël Jauslin, Esther Eustache and Yves Tillé (2021) <arXiv:2101.05568>. The package propose also a method based on optimal transport and balanced sampling, see Raphaël Jauslin and Yves Tillé <arXiv:2105.08379>.
+URL: https://github.com/RJauslin/StratifiedSampling
+BugReports: https://github.com/RJauslin/StratifiedSampling/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LinkingTo: RcppArmadillo, Rcpp
+Imports: Rcpp, transport, proxy, MASS, sampling
+Depends: Matrix, R (>= 3.5.0)
+Suggests: knitr, rmarkdown, ggplot2, BalancedSampling, stats, testthat,
+        StatMatch, laeken, prettydoc
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-09-24 11:57:39 UTC; jauslinr
+Author: Raphael Jauslin [aut, cre] (<https://orcid.org/0000-0003-1088-3356>),
+  Esther Eustache [aut],
+  Bardia Panahbehagh [aut],
+  Yves Tillé [aut] (<https://orcid.org/0000-0003-0904-5523>)
+Maintainer: Raphael Jauslin <raphael.jauslin@unine.ch>
+Repository: CRAN
+Date/Publication: 2021-09-24 12:20:02 UTC

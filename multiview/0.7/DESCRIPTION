@@ -1,0 +1,36 @@
+Package: multiview
+Type: Package
+Title: Cooperative Learning for Multi-View Analysis
+Version: 0.7
+Date: 2022-11-04
+VignetteBuilder: knitr
+Authors@R: c(person("Daisy Yi Ding", role=c("aut"),
+	   	    email = "dingd@stanford.edu"),
+	     person("Robert J.", "Tibshirani", role=c("aut"),
+	   	    email = "tibs@stanford.edu"),
+  	     person("Balasubramanian", "Narasimhan", role=c("aut", "cre"),
+	   	    email = "naras@stanford.edu"),
+	     person("Trevor", "Hastie", role=c("aut")),
+	     person("Kenneth","Tay",role=c("aut")),
+	     person("James", "Yang", role=c("aut")))
+Depends: R (>= 3.5.0)
+Description: Cooperative learning combines the usual squared error loss of predictions with an agreement penalty to encourage the predictions from different data views to agree. By varying the weight of the agreement penalty, we get a continuum of solutions that include the well-known early and late fusion approaches. Cooperative learning chooses the degree of agreement (or fusion) in an adaptive manner, using a validation set or cross-validation to estimate test set prediction error. In the setting of cooperative regularized linear regression, the method combines the lasso penalty with the agreement penalty (Ding, D., Li, S., Narasimhan, B., Tibshirani, R. (2021) <doi:10.1073/pnas.2202113119>).
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), xfun
+Imports: glmnet, Matrix, methods, RColorBrewer, Rcpp, stats, survival,
+        utils
+Config/testthat/edition: 3
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Packaged: 2022-11-04 21:10:18 UTC; naras
+Author: Daisy Yi Ding [aut],
+  Robert J. Tibshirani [aut],
+  Balasubramanian Narasimhan [aut, cre],
+  Trevor Hastie [aut],
+  Kenneth Tay [aut],
+  James Yang [aut]
+Maintainer: Balasubramanian Narasimhan <naras@stanford.edu>
+Repository: CRAN
+Date/Publication: 2022-11-04 22:30:02 UTC

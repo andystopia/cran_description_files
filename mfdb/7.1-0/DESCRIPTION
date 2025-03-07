@@ -1,0 +1,27 @@
+Package: mfdb
+Type: Package
+Title: MareFrame DB Querying Library
+Encoding: UTF-8
+Version: 7.1-0
+Date: 2021-08-18
+Authors@R: c(person("Jamie", "Lentin", email="lentinj@shuttlethread.com",role = c("aut", "cre", "cph")),
+             person("Bjarki Thor", "Elvarsson", email="bjarki.elvarsson@hafogvatn.is",role = c("aut")))
+Maintainer: Jamie Lentin <lentinj@shuttlethread.com>
+Description: Creates and manages a PostgreSQL database suitable for storing fisheries data
+             and aggregating ready for use within a Gadget <https://gadget-framework.github.io/gadget2/> model.
+             See <https://mareframe.github.io/mfdb/> for more information.
+License: GPL-3
+Depends: R (>= 3.1.1)
+Imports: logging (>= 0.7-103), DBI (>= 0.3.1), duckdb (>= 0.2.5),
+        getPass (>= 0.1-1), rlang (>= 0.4.0), RPostgres (>= 1.3.0),
+        RSQLite
+Suggests: dplyr (>= 0.8.3), dbplyr (>= 2.0.0), knitr, rmarkdown,
+        unittest (>= 1.4)
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2021-08-18 13:32:09 UTC; lentinj
+Author: Jamie Lentin [aut, cre, cph],
+  Bjarki Thor Elvarsson [aut]
+Repository: CRAN
+Date/Publication: 2021-08-18 17:30:02 UTC

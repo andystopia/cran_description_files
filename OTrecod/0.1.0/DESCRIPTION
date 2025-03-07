@@ -1,0 +1,31 @@
+Package: OTrecod
+Title: Data Fusion using Optimal Transportation Theory
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Gregory" , family = "Guernec"     , role = c("aut","cre"), email = "otrecod.pkg@gmail.com"),
+  person(given = "Valerie" , family = "Gares"       , role = "aut", email = "otrecod.pkg@gmail.com"),
+  person(given = "Pierre"  , family = "Navaro"      , role = "ctb"),
+  person(given = "Jeremy"  , family = "Omer"        , role = "ctb"),
+  person(given = "Philippe", family = "Saint-Pierre", role = "ctb"),
+  person(given = "Nicolas" , family = "Savy"        , role = "ctb"))
+Maintainer: Gregory Guernec <otrecod.pkg@gmail.com>
+Description: In the context of data fusion, the package provides a set of functions dedicated to the solving of 'recoding problems' using optimal transportation theory (Gares, Guernec, Savy (2019) <doi:10.1515/ijb-2018-0106> and Gares, Omer (2020) <doi:10.1080/01621459.2020.1775615>). From two databases with no overlapping part except a subset of shared variables, the functions of the package assist users until obtaining a unique synthetic database, where the missing information is fully completed.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5)
+Imports: stats, dplyr, mice, missMDA, plyr, FactoMineR, StatMatch,
+        proxy, rdist, ROI, ROI.plugin.glpk, ompr, ompr.roi, party, vcd
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-27 09:52:51 UTC; secr
+Author: Gregory Guernec [aut, cre],
+  Valerie Gares [aut],
+  Pierre Navaro [ctb],
+  Jeremy Omer [ctb],
+  Philippe Saint-Pierre [ctb],
+  Nicolas Savy [ctb]
+Repository: CRAN
+Date/Publication: 2021-01-29 09:20:14 UTC

@@ -1,0 +1,34 @@
+Package: RPointCloud
+Version: 0.6.2
+Date: 2024-06-24
+Title: Visualizing Topological Loops and Voids
+Authors@R: c(person("Kevin R.", "Coombes", role = c("aut", "cre"),
+                    email = "krc@silicovore.com"),
+             person("Jake", "Reed", role = c("aut"),
+                    email = "reed01@augusta.edu"),
+             person("RB", "McGee", role = c("aut"),
+	            email = "mcgee@haverford.edu"))
+Description: Visualizations to explain the results of a topological
+  data analysis. The goal of topological data analysis is to identify
+  persistent topological structures, such as loops (topological circles)
+  and voids (topological spheres), in data sets. The output of an
+  analysis using the 'TDA' package is a Rips diagram (named after the
+  mathematician Eliyahu Rips). The goal of 'RPointCloud' is to fill in
+  these holes in the data by providing tools to visualize the features
+  that help explain the structures found in the Rips diagram. See McGee
+  and colleagues (2024) <doi:10.1101/2024.05.16.593927>.
+Depends: R (>= 3.5)
+Imports: methods, graphics, stats, TDA, ClassDiscovery, Mercator, rgl,
+        splines, circlize
+Suggests: knitr, rmarkdown, Polychrome, igraph, ape, PCDimension
+License: Artistic-2.0
+URL: http://oompa.r-forge.r-project.org/
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-24 15:20:25 UTC; KRC
+Author: Kevin R. Coombes [aut, cre],
+  Jake Reed [aut],
+  RB McGee [aut]
+Maintainer: Kevin R. Coombes <krc@silicovore.com>
+Repository: CRAN
+Date/Publication: 2024-06-25 11:41:08 UTC

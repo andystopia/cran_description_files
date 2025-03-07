@@ -1,0 +1,45 @@
+Package: rirods
+Title: R Client for 'iRODS'
+Version: 0.1.1
+Authors@R: c(
+    person("Martin", "Schobben", , "schobbenmartin@gmail.com", 
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8560-0037")),
+    person("Mariana", "Montes", role = "aut"),
+    person("Terrell", "Russell", role = "ctb"),
+    person("Christine", "Staiger", role = "ctb"),
+    person("Ton", "Smeele", role = "ctb"),
+    person("Alan", "King", role = "ctb"))
+Description: The open sourced data management software 'Integrated Rule-Oriented 
+    Data System' ('iRODS') offers solutions for the whole data life cycle 
+    (<https://irods.org/>). The loosely constructed and highly configurable 
+    architecture of 'iRODS' frees the user from strict formatting constraints 
+    and single-vendor solutions. This package provides an interface to the 
+    'iRODS' REST API, allowing you to manage your data and metadata in 'iRODS' 
+    with R. Storage of annotated files and R objects in 'iRODS' ensures 
+    findability, accessibility, interoperability, and reusability of data.
+License: MIT + file LICENSE
+URL: https://github.com/irods/irods_client_library_rirods
+BugReports: https://github.com/irods/irods_client_library_rirods/issues
+Depends: R (>= 4.1)
+Imports: askpass, base64enc, httr2 (>= 0.2.2), methods, rappdirs,
+        tools, utils, withr
+Suggests: httptest2, jsonlite, knitr, readr, rmarkdown, spelling,
+        testthat (>= 3.0.0), xml2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-06-29 07:38:17 UTC; amandus
+Author: Martin Schobben [aut, cre, cph]
+    (<https://orcid.org/0000-0001-8560-0037>),
+  Mariana Montes [aut],
+  Terrell Russell [ctb],
+  Christine Staiger [ctb],
+  Ton Smeele [ctb],
+  Alan King [ctb]
+Maintainer: Martin Schobben <schobbenmartin@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-30 11:30:02 UTC

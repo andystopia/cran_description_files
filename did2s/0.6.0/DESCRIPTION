@@ -1,0 +1,46 @@
+Package: did2s
+Title: Two-Stage Difference-in-Differences Following Gardner (2021)
+Version: 0.6.0
+Authors@R: 
+    c(person(given = "Kyle",
+             family = "Butts",
+             role = c("aut","cre"),
+             email = "kyle.butts@colorado.edu",
+             comment = c(ORCID = "0000-0002-9048-8059")),
+      person(given = "John",
+             family = "Gardner",
+             role = "aut",
+             email = "jrgardne@olemiss.edu",
+             comment = c(ORCID = "0000-0002-4028-6862")),
+      person(given = "Grant",
+             family = "McDermott",
+             role = "ctb",
+             email = "grantmcd@uoregon.edu",
+             comment = c(ORCID = "0000-0001-7883-8573")),
+      person(given = "Laurent",
+             family = "Berge",
+             role = "ctb",
+             email = "laurent.berge@u-bordeaux.fr"))
+Description: Estimates Two-way Fixed Effects difference-in-differences/event-study models using the approach proposed by Gardner (2021). To avoid the problems caused by OLS estimation of the Two-way Fixed Effects model, this function first estimates the fixed effects and covariates using untreated observations and then in a second stage, estimates the treatment effects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 2.10), fixest (>= 0.10.1)
+Imports: data.table, dplyr, magrittr, ggplot2, glue, stats, stringr,
+        rlang, tibble, rsample, purrr, cli, Matrix, Rcpp, did, broom,
+        methods, staggered, didimputation, boot
+URL: http://kylebutts.com/did2s/
+Suggests: rmarkdown, knitr, haven, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+LinkingTo: RcppArmadillo, Rcpp
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-04-07 18:25:19 UTC; kylebutts
+Author: Kyle Butts [aut, cre] (<https://orcid.org/0000-0002-9048-8059>),
+  John Gardner [aut] (<https://orcid.org/0000-0002-4028-6862>),
+  Grant McDermott [ctb] (<https://orcid.org/0000-0001-7883-8573>),
+  Laurent Berge [ctb]
+Maintainer: Kyle Butts <kyle.butts@colorado.edu>
+Repository: CRAN
+Date/Publication: 2022-04-07 19:42:36 UTC

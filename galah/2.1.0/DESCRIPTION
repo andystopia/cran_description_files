@@ -1,0 +1,49 @@
+Package: galah
+Type: Package
+Title: Biodiversity Data from the GBIF Node Network
+Version: 2.1.0
+Authors@R: 
+    c(person(given = "Martin",
+             family = "Westgate",
+             email = "martin.westgate@csiro.au",
+             role = c("aut", "cre")),
+      person(given = "Dax",
+             family = "Kellie",
+             email = "dax.kellie@csiro.au",
+             role = "aut"),
+      person(given = "Matilda",
+             family = "Stevenson",
+             role = "aut"),
+      person(given = "Peggy",
+             family = "Newman",
+             email = "peggy.newman@csiro.au",
+             role = "aut"))
+Description: The Global Biodiversity Information Facility 
+    ('GBIF', <https://www.gbif.org>) sources data from an international network
+    of data providers, known as 'nodes'. Several of these nodes - the "living 
+    atlases" (<https://living-atlases.gbif.org>) - maintain their own web 
+    services using software originally developed by the Atlas of Living 
+    Australia ('ALA', <https://www.ala.org.au>). 'galah' enables the R community 
+    to directly access data and resources hosted by 'GBIF' and its partner nodes.
+Depends: R (>= 4.3.0)
+Imports: cli, crayon, dplyr, glue (>= 1.3.2), httr2, jsonlite (>=
+        0.9.8), lifecycle (>= 1.0.0), potions (>= 0.2.0), purrr, readr,
+        rlang, sf, stringr, tibble, tidyr, tidyselect, utils
+Suggests: covr, gt, kableExtra, knitr, magrittr, pkgdown, reactable,
+        rmarkdown, testthat
+License: MPL-2.0
+URL: https://galah.ala.org.au/R/
+BugReports: https://github.com/AtlasOfLivingAustralia/galah-R/issues
+Maintainer: Martin Westgate <martin.westgate@csiro.au>
+LazyLoad: yes
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-11-19 02:58:22 UTC; martin_westgate
+Author: Martin Westgate [aut, cre],
+  Dax Kellie [aut],
+  Matilda Stevenson [aut],
+  Peggy Newman [aut]
+Repository: CRAN
+Date/Publication: 2024-11-19 04:40:02 UTC

@@ -1,0 +1,21 @@
+Package: gdi
+Title: Volumetric Analysis using Graphic Double Integration
+Version: 1.4.1
+Date: 2023-07-28
+Author: Darius Nau [aut, cre]
+Authors@R: 
+    person("Darius", "Nau", , "dariusnau@gmx.at", role = c("aut", "cre"),
+           comment = c())
+Maintainer: Darius Nau <dariusnau@gmx.at>
+Description: Tools implementing an automated version of the graphic double integration technique first employed by Jerison (1973) <ISBN:9780323141086> and Hurlburt (1999) <doi:10.1080/02724634.1999.10011145>. Graphic double integration is primarily used for volume or mass estimation of (extinct) animals, and the package 'gdi' aims to make this technique as convenient and versatile as possible. The main functions of 'gdi' provide utilities for automatically measuring diameters from digital silhouettes provided as image files, and for calculating volume via graphic double integration with a simple elliptical, superelliptical (following Motani 2001 <doi:10.1666/0094-8373(2001)027%3C0735:EBMFST%3E2.0.CO;2>) or complex cross-sectional model. Additionally, the package contains functions to help with estimating the position of the center of mass (COM), and for visualizing results.
+Depends: jpeg, png
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-07-28 09:56:57 UTC; suirad
+Repository: CRAN
+Date/Publication: 2023-08-07 15:20:02 UTC

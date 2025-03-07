@@ -1,0 +1,25 @@
+Package: placement
+Type: Package
+Title: Tools for Accessing the Google Maps API
+Version: 0.1.1
+Author: Derek Darves
+Maintainer: Derek Darves <darves@gmail.com>
+Description: The main functions in this package are drive_time
+	(used for calculating distances between physical addresses or coordinates) and
+	geocode_url (used for estimating the lat/long coordinates
+	of a physical address). Optionally, it generates the cryptographic signatures necessary
+	for making API calls with a Google for Work/Premium account within the geocoding process.
+	These accounts have larger quota limits than the "standard_api" and, thus, this package
+	may be useful for individuals seeking to submit large batch jobs within R to the Google Maps API.
+	Placement also provides methods for accessing the standard API using a (free) Google API key
+	(see: <https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key>).
+License: MIT + file LICENSE
+LazyData: TRUE
+Imports: RCurl, jsonlite, base64enc, digest, urltools, stringi
+URL: https://github.com/derekyves/placement
+BugReports: https://github.com/derekyves/placement/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-07-27 21:59:44 UTC; ddarves
+Repository: CRAN
+Date/Publication: 2016-07-28 00:07:05

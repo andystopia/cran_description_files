@@ -1,0 +1,27 @@
+Package: cbcTools
+Title: A Simulation-Based Workflow to Design and Evaluate Choice-Based
+        Conjoint Survey Experiments
+Version: 0.4.0
+Maintainer: John Helveston <john.helveston@gmail.com>
+Authors@R: c(
+    person(given   = "John",
+           family  = "Helveston",
+           role    = c("cre", "aut", "cph"),
+           email   = "john.helveston@gmail.com",
+           comment = c(ORCID = "0000-0002-2657-9191")))
+Description: A simulation-based workflow to design and evaluate choice-based conjoint survey experiments. Generate a variety of survey designs, including full factorial designs, orthogonal designs, and Bayesian D-efficient designs as well as designs with "no choice" options and "labeled" (also known as "alternative specific") designs. Full factorial and orthogonal designs are obtained using the 'DoE.base' package (Grömping, 2018) <doi:10.18637/jss.v085.i05>. Bayesian D-efficient designs are obtained using the 'idefix' package (Traets et al, 2020) <doi:10.18637/jss.v096.i03>. Conveniently inspect the design balance and overlap, and simulate choice data for a survey design either randomly or according to a multinomial or mixed logit utility model defined by user-provided prior parameters. Conduct a power analysis for a given survey design by estimating the same model on different subsets of the data to simulate different sample sizes. Choice simulation and model estimation in power analyses are handled using the 'logitr' package (Helveston, 2023) <doi:10.18637/jss.v105.i10>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Suggests: testthat, tibble
+Imports: DoE.base, fastDummies, ggplot2, idefix, logitr (>= 1.0.1),
+        MASS, parallel, randtoolbox, rlang, stats, utils
+URL: https://github.com/jhelvy/cbcTools
+BugReports: https://github.com/jhelvy/cbcTools/issues
+NeedsCompilation: no
+Packaged: 2023-06-30 18:30:43 UTC; jhelvy
+Author: John Helveston [cre, aut, cph]
+    (<https://orcid.org/0000-0002-2657-9191>)
+Repository: CRAN
+Date/Publication: 2023-06-30 18:50:03 UTC

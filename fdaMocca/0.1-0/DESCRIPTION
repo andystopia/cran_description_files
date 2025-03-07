@@ -1,0 +1,19 @@
+Encoding: UTF-8
+Package: fdaMocca
+Version: 0.1-0
+Author: Natalya Pya Arnqvist[aut, cre], 
+        Per Arnqvist [aut, cre],
+        Sara Sjöstedt de Luna [aut]    
+Maintainer: Natalya Pya Arnqvist <nat.pya@gmail.com>
+Title: Model-Based Clustering for Functional Data with Covariates
+Date: 2021-10-21
+Description: Routines for model-based functional cluster analysis for functional data with optional covariates. The idea is to cluster functional subjects (often called functional objects) into homogenous groups by using spline smoothers (for functional data) together with scalar covariates. The spline coefficients and the covariates are modelled as a multivariate Gaussian mixture model, where the number of mixtures corresponds to the number of clusters. The parameters of the model are estimated by maximizing the observed mixture likelihood via an EM algorithm (Arnqvist and Sjöstedt de Luna, 2019) <arXiv:1904.10265>. The clustering method is used to analyze annual lake sediment from lake Kassjön (Northern Sweden) which cover more than 6400 years and can be seen as historical records of weather and climate.
+Depends: R (>= 3.6.0)
+Imports: stats, graphics, Matrix, parallel, foreach, doParallel,
+        mvtnorm, fda, grDevices
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2021-10-21 12:24:46 UTC; natalya
+Repository: CRAN
+Date/Publication: 2021-10-21 17:40:04 UTC

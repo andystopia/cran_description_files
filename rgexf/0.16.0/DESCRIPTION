@@ -1,0 +1,38 @@
+Package: rgexf
+Type: Package
+Encoding: UTF-8
+Title: Build, Import and Export GEXF Graph Files
+Version: 0.16.0
+Date: 2020-02-10
+Authors@R: c(
+  person("George", "Vega Yon", email="g.vegayon@gmail.com", role=c("aut", "cre"),
+  comment = structure("0000-0002-3171-0844", .Names = "ORCID")),
+  person("Jorge", "Fábrega Lacoa", role=c("ctb")),
+  person("Joshua", "Kunst", role=c("ctb")),
+  person("Raphaël", "Velt", role=c("cph"), comment="gexf-js library"),
+  person(family="Gephi Consortium", role=c("cph"), comment="GEXF language"))
+Description: Create, read and write 'GEXF' (Graph Exchange 'XML' Format) graph
+    files (used in 'Gephi' and others). Using the 'XML' package, it allows the user to
+    easily build/read graph files including attributes, 'GEXF' visual attributes (such
+    as color, size, and position), network dynamics (for both edges and nodes) and
+    edge weighting. Users can build/handle graphs element-by-element or massively
+    through data-frames, visualize the graph on a web browser through 'gexf-js' (a
+    'javascript' library) and interact with the 'igraph' package.
+URL: https://gvegayon.github.io/rgexf
+BugReports: http://github.com/gvegayon/rgexf/issues
+Imports: XML, igraph, grDevices, utils, servr
+License: MIT + file LICENSE
+LazyLoad: yes
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown, testthat, covr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-02-13 22:56:03 UTC; george
+Author: George Vega Yon [aut, cre] (<https://orcid.org/0000-0002-3171-0844>),
+  Jorge Fábrega Lacoa [ctb],
+  Joshua Kunst [ctb],
+  Raphaël Velt [cph] (gexf-js library),
+  Gephi Consortium [cph] (GEXF language)
+Maintainer: George Vega Yon <g.vegayon@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-17 06:00:02 UTC

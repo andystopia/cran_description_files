@@ -1,0 +1,26 @@
+Package: diathor
+Type: Package
+Title: Calculate Ecological Information and Diatom Based Indices
+Version: 0.1.4
+Authors@R: c(
+    person("Maria Mercedes", "Nicolosi Gelis", email = "mercedesnicolosi@ilpla.edu.ar", role = "aut", comment = c(ORCID = "0000-0001-6324-7930")),
+    person("Maria Belen", "Sathicq", email = "mbelen@ilpla.edu.ar", role = "aut", comment = c(ORCID = "0000-0002-3534-8950")),
+    person("Joaquín", "Cochero", email = "jcochero@ilpla.edu.ar", role = "cre", comment = c(ORCID = "0000-0003-3957-6819")))
+Maintainer: Joaquín Cochero <jcochero@ilpla.edu.ar>
+Description: Calculate multiple biotic indices using diatoms from environmental samples. Diatom species are identified by their species names through a heuristic search, and ecological data is retrieved from multiple sources. The package includes the calculation of chloroplast diversity indices, size classes, ecological guilds, and various biotic indices. It outputs both a dataframe with all the results and plots of the obtained data in a specified output folder. Sample data is sourced from Nicolosi Gelis, Cochero, & Gómez (2020, <doi:10.1016/j.ecolind.2019.105951>). 
+    The package utilizes the 'Diat.Barcode' database for morphological and ecological information by Rimet & Couchez (2012, <doi:10.1051/kmae/2012018>), along with the combined classification of guilds and size classes from B-Beres et al. (2017, <doi:10.1016/j.ecolind.2017.07.007>). Currently supported diatom-based biotic indices include DES index (Descy, 1979); EPID index (Dell'Uomo, 1996); IDAP index (Prygiel & Coste, 1993); ID-CH index (Hürlimann & Niederhauser, 2007); IDP index (Gómez & Licursi, 2001); ILM index (Leclercq & Maquet, 1987); IPS index (Coste, 1982); LOBO index (Lobo, Callegaro, & Bender, 2002); SLA index (Sladecek, 1986); TDI index (Kelly & Whitton, 1995); SPEAR(herbicide) index (Wood et al., 2019); PBIDW index (Castro-Roa & Pinilla-Agudelo, 2014); DISP index (Stenger-Kovácsa et al., 2018).
+License: GNU General Public License
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10), stringdist, vegan, ggplot2, tidyr
+Imports: data.table, purrr, stringr, tibble
+Suggests: knitr, rmarkdown,
+NeedsCompilation: no
+Packaged: 2024-09-20 12:59:08 UTC; Juaco
+Author: Maria Mercedes Nicolosi Gelis [aut]
+    (<https://orcid.org/0000-0001-6324-7930>),
+  Maria Belen Sathicq [aut] (<https://orcid.org/0000-0002-3534-8950>),
+  Joaquín Cochero [cre] (<https://orcid.org/0000-0003-3957-6819>)
+Repository: CRAN
+Date/Publication: 2024-09-20 14:10:09 UTC

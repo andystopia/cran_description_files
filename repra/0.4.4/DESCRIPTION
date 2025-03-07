@@ -1,0 +1,29 @@
+Package: repra
+Title: Renewable Energy Probability Resource Assessment Tool (REPRA)
+Version: 0.4.4
+Date: 2015-07-27
+Authors@R: c(
+    person("Eduardo", "Ibanez", , "edu.ibanez@gmail.com", c("aut", "cre")),
+    person("National Renewable Energy Laboratory", role = "cph")
+    )
+Description: Methods to calculate resource adequacy
+    metrics in power systems, which are based on the notion of
+    loss-of-load probability (LOLP) and include the treatment of conventional
+    and variable renewable generators.
+License: MIT + file LICENSE
+URL: https://github.com/NREL/repra
+BugReports: https://github.com/NREL/repra/issues
+Depends: R(>= 3.1.0)
+Imports: data.table, dplyr (>= 0.3), Rcpp, reshape2, ggplot2,
+        assertthat
+Suggests: testthat, knitr
+LinkingTo: Rcpp (>= 0.11.1)
+VignetteBuilder: knitr
+LazyData: TRUE
+NeedsCompilation: yes
+Packaged: 2015-07-28 15:15:50 UTC; eibanez
+Author: Eduardo Ibanez [aut, cre],
+  National Renewable Energy Laboratory [cph]
+Maintainer: Eduardo Ibanez <edu.ibanez@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-07-28 23:02:41

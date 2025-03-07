@@ -1,0 +1,25 @@
+Package: morf
+Type: Package
+Title: Modified Ordered Random Forest
+Version: 1.0.0
+Authors@R: person("Riccardo", "Di Francesco", email = "difrancesco.riccardo96@gmail.com", role = c("aut", "cre"))
+Description: Nonparametric estimator of the ordered choice model using random forests. The estimator modifies a
+    standard random forest splitting criterion to build a collection of forests, each estimating the conditional 
+    probability of a single class. The package also implements a nonparametric estimator of the covariates’ marginal effects.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.1)
+Imports: Rcpp, Matrix, stats, utils, stringr, orf
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://riccardo-df.github.io/morf/
+Biarch: TRUE
+NeedsCompilation: yes
+Packaged: 2023-03-22 07:38:35 UTC; difra
+Author: Riccardo Di Francesco [aut, cre]
+Maintainer: Riccardo Di Francesco <difrancesco.riccardo96@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-22 19:40:06 UTC

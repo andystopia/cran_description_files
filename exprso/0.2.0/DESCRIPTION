@@ -1,0 +1,32 @@
+Package: exprso
+Title: Rapid Implementation of Machine Learning Algorithms for Genomic
+        Data
+Version: 0.2.0
+URL: http://github.com/tpq/exprso
+BugReports: http://github.com/tpq/exprso/issues
+Authors@R: c(
+    person("Thomas", "Quinn", email = "contacttomquinn@gmail.com", role = c("aut", "cre")),
+    person("Daniel", "Tylee", email = "dantylee@gmail.com", role = "ctb")
+    )
+Description: Supervised machine learning has an increasingly important role in data
+    analysis. This package introduces a framework for rapidly implementing supervised
+    machine learning in a high-throughput manner. This package provides a user-friendly
+    interface that empowers investigators to execute state-of-the-art binary and
+    multi-class classification, including deep learning, with minimal programming
+    experience necessary.
+License: GPL-2
+LazyData: TRUE
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Imports: cluster, MASS, e1071, lattice, magrittr, methods, nnet, plyr,
+        stats, randomForest, ROCR, sampling
+Depends: R (>= 3.2.2), kernlab
+Suggests: Biobase, edgeR, GEOquery, h2o, knitr, limma, mRMRe,
+        pathClass, propr, rmarkdown, testthat
+NeedsCompilation: no
+Packaged: 2017-11-18 05:51:58 UTC; thom
+Author: Thomas Quinn [aut, cre],
+  Daniel Tylee [ctb]
+Maintainer: Thomas Quinn <contacttomquinn@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-11-18 06:03:23 UTC

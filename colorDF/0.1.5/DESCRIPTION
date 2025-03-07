@@ -1,0 +1,32 @@
+Package: colorDF
+Title: Colorful Data Frames in R Terminal
+Version: 0.1.5
+Authors@R: 
+    person(given = "January",
+           family = "Weiner",
+           role = c("aut", "cre"),
+           email = "january.weiner@gmail.com",
+           comment = c(ORCID = "0000-0003-1438-7819"))
+Description: Colorful Data Frames in the terminal. The new class does
+             change the behaviour of any of the objects, but adds a style
+             definition and a print method. Using ANSI escape codes, it
+             colors the terminal output of data frames. Some column types
+             (such as p-values and identifiers) are automatically
+             recognized.
+URL: https://january3.github.io/colorDF/,
+        https://github.com/january3/colorDF/
+Depends: R (>= 2.10)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: purrr,crayon
+Suggests: knitr, rmarkdown, fansi, htmltools, data.table, testthat (>=
+        2.1.0), tibble, dplyr, tidyr
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-09-23 19:54:41 UTC; january
+Author: January Weiner [aut, cre] (<https://orcid.org/0000-0003-1438-7819>)
+Maintainer: January Weiner <january.weiner@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-25 10:30:02 UTC

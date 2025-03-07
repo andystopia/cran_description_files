@@ -1,0 +1,30 @@
+Package: simGWAS
+Type: Package
+Title: Fast Simulation of Large Case-Control GWAS Summary Statistics
+Version: 0.2.0-2
+Date: 2019-08-19
+Authors@R: c(person("Mary", "Fortune", role=c("aut"), email = "mdf34@cam.ac.uk"),
+    person("Chris","Wallace", role=c("aut","cre"), email="cew54@cam.ac.uk"),
+    person("Marcus", "Klarqvist", role=c("ctb")))
+Author: Mary Fortune [aut],
+  Chris Wallace [aut, cre],
+  Marcus Klarqvist [ctb]
+Maintainer: Chris Wallace <cew54@cam.ac.uk>
+Description: Simulating output from a case-control genome wide association study (GWAS) with a given causal model. Fortune and Wallace (2019) <doi:10.1093/bioinformatics/bty898>.
+License: GPL
+LazyLoad: yes
+OS_type: unix
+Collate: 'simGWAS.R' 'compute_gamma0.R' 'vbeta.R' 'zscore.R'
+        'extractsnps.R' 'make_dataset.R' 'make_GenoProbList.R'
+        'RcppExports.R'
+LinkingTo: Rcpp
+Imports: Rcpp, dplyr, combinat, corpcor, mvtnorm
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+URL: https://github.com/chr1swallace/simGWAS
+BugReports: https://github.com/chr1swallace/simGWAS/issues
+NeedsCompilation: yes
+Packaged: 2019-08-20 21:01:25 UTC; chris
+Repository: CRAN
+Date/Publication: 2019-08-22 08:20:02 UTC

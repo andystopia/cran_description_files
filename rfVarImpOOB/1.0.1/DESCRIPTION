@@ -1,0 +1,19 @@
+Package: rfVarImpOOB
+Title: Unbiased Variable Importance for Random Forests
+Version: 1.0.1
+Date: 2020-10-17
+Depends: R (>= 3.2.2), stats, randomForest
+Imports: ggplot2, binaryLogic, dplyr,titanic,prob,ggpubr,magrittr
+Suggests: knitr,rmarkdown
+Author: Markus Loecher <Markus.Loecher@gmail.com>
+Maintainer: Markus Loecher <Markus.Loecher@gmail.com>
+Description: Computes a novel variable importance for random forests: Impurity reduction importance scores for out-of-bag (OOB) data complementing the existing inbag Gini importance, see also <doi: 10.1080/03610926.2020.1764042>. 
+    The Gini impurities for inbag and OOB data are combined in three different ways, after which the information gain is computed at each split.
+    This gain is aggregated for each split variable in a tree and averaged across trees.
+License: GPL (>= 2)
+Repository: CRAN
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-10-18 08:40:08 UTC; loecherm
+Date/Publication: 2020-10-18 09:00:02 UTC

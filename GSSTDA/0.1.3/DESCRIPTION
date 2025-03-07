@@ -1,0 +1,60 @@
+Package: GSSTDA
+Title: Gene Structure Survival using Topological Data Analysis
+Version: 0.1.3
+Authors@R: 
+    c(
+	person(given = "Miriam", 
+           family = "Esteve", 
+           role = c("aut", "cre"),
+           email = "miriam.estevecampello@uchceu.es",
+           comment = c(ORCID = "0000-0002-5908-0581")),
+	person(given = "Raquel", 
+           family = "Bosch", 
+           role = c("aut"),
+		   email = "raquel.boschromeu@uchceu.es"),
+	person(given = "Jaume", 
+           family = "Forés", 
+           role = c("aut"),
+		   email = "fores.martos.jaume@gmail.com",
+           comment = c(ORCID = "0000-0002-9025-4877")),
+	person(given = "Joan", 
+           family = "Climent", 
+           role = c("aut"),
+		   email = "joan.climentbataller@uchceu.es"),
+    person(given = "Antonio", 
+           family = "Falco", 
+           role = c("aut"),
+		   email = "afalco@uchceu.es")
+    )
+Description: Mapper-based survival analysis with transcriptomics data is designed to carry out. 
+			Mapper-based survival analysis is a modification of Progression Analysis of Disease (PAD) 
+			where survival data is taken into account in the filtering function. More 
+			details in: J. Fores-Martos, B. Suay-Garcia, R. Bosch-Romeu, M.C. Sanfeliu-Alonso, 
+			A. Falco, J. Climent, "Progression Analysis of Disease with Survival (PAD-S) by SurvMap 
+			identifies different prognostic subgroups of breast cancer in a large combined set of transcriptomics
+			and methylation studies" <doi:10.1101/2022.09.08.507080>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LazyData: true
+LazyDataCompression: xz
+DependsNote: BioC (>= 3.2)
+Imports: base, cluster, stats, survival, utils, visNetwork,
+        ComplexHeatmap, circlize, devtools
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+SuggestsNote: BioC (>= 3.0), Recommended: affy, oligoClasses, oligo,
+        GEOquery, DupChecker, arrayQualityMetrics, vctrs, frma,
+        a4Preproc, genefu, plyr, preprocessCore, hgu133plus2.db
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-06-06 12:55:15 UTC; Miriam_Esteve
+Author: Miriam Esteve [aut, cre] (<https://orcid.org/0000-0002-5908-0581>),
+  Raquel Bosch [aut],
+  Jaume Forés [aut] (<https://orcid.org/0000-0002-9025-4877>),
+  Joan Climent [aut],
+  Antonio Falco [aut]
+Maintainer: Miriam Esteve <miriam.estevecampello@uchceu.es>
+Repository: CRAN
+Date/Publication: 2023-06-07 13:20:11 UTC

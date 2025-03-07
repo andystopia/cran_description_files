@@ -1,0 +1,45 @@
+Package: templateICAr
+Type: Package
+Title: Estimate Brain Networks Using Empirical Population Priors
+Version: 0.3.1
+Authors@R: c(
+    person(given = "Amanda",
+           family = "Mejia",
+           email = "mandy.mejia@gmail.com",
+           role = c("aut", "cre")),
+    person(given = "Damon",
+           family = "Pham",
+           email = "damondpham@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-7563-4727")),
+    person(given = "Mary Beth",
+           family = "Nebel",
+           email = "Nebel@kennedykrieger.org",
+           role = c("ctb"))
+    )
+Maintainer: Amanda Mejia <mandy.mejia@gmail.com>
+Description: Functions implementing the template ICA model proposed in Mejia et
+    al. (2019) <doi:10.1080/01621459.2019.1679638> and the spatial template ICA
+    model proposed in proposed in Mejia et al. (2020+). For both models, 
+    subject-level brain networks are estimated as deviations from known 
+    population-level networks, which can be estimated using standard ICA 
+    algorithms. Both models employ an expectation-maximization algorithm 
+    for estimation of the latent brain networks and unknown model parameters.
+Depends: R (>= 3.6.0)
+License: GPL-3
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+Encoding: UTF-8
+Imports: abind, ciftiTools (>= 0.8.0), excursions, fMRIscrub, ica,
+        Matrix, matrixStats, methods, pesel, SQUAREM, stats
+Suggests: RNifti, covr, doParallel, foreach, knitr, rmarkdown, INLA,
+        parallel, testthat (>= 3.0.0)
+RoxygenNote: 7.1.2
+URL: https://github.com/mandymejia/templateICAr
+BugReports: https://github.com/mandymejia/templateICAr/issues
+NeedsCompilation: no
+Packaged: 2022-03-08 07:02:18 UTC; damon
+Author: Amanda Mejia [aut, cre],
+  Damon Pham [aut] (<https://orcid.org/0000-0001-7563-4727>),
+  Mary Beth Nebel [ctb]
+Repository: CRAN
+Date/Publication: 2022-03-09 21:10:02 UTC

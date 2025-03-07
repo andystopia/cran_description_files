@@ -1,0 +1,44 @@
+Package: RestoreNet
+Title: Random-Effects Stochastic Reaction Networks
+Version: 1.0
+Authors@R: 
+    c(person(given = "Luca", 
+            family = "Del Core", 
+            email = "l.del.core@rug.nl", 
+            role = c("aut", "cre", "cph"),
+            comment = c(ORCID = "0000-0002-1672-6995")),
+    person(given = "Marco", 
+            family = "Grzegorczyk", 
+            email = "m.a.grzegorczyk@rug.nl", 
+            role = c("aut", "ths"),
+            comment = c(ORCID = "0000-0002-2604-9270")),
+    person(given = "Ernst", 
+            family = "Wit", 
+            email = "ernst.jan.camiel.wit@usi.ch", 
+            role = c("aut", "ths"),
+            comment = c(ORCID = "0000-0002-3671-9610")))
+Description: A random-effects stochastic model that allows quick detection of 
+  clonal dominance events from clonal tracking data collected in gene therapy studies. Starting from the Ito-type equation describing the dynamics of cells duplication, death and differentiation at clonal level, we first considered its local linear approximation as the base model. 
+  The parameters of the base model, which are inferred using a maximum likelihood approach, 
+  are assumed to be shared across the clones. Although this assumption makes inference easier, 
+  in some cases it can be too restrictive and does not take into account possible scenarios of clonal dominance. 
+  Therefore we extended the base model by introducing random effects for the clones. 
+  In this extended formulation the dynamic parameters are estimated using a tailor-made 
+  expectation maximization algorithm. Further details on the methods can be found in L. Del Core et al., (2022) <doi:10.1101/2022.05.31.494100>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: Matrix, xtable, scales, stringr, ggplot2, scatterpie,
+        RColorBrewer
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2022-09-20 08:13:12 UTC; delcore.luca
+Author: Luca Del Core [aut, cre, cph] (<https://orcid.org/0000-0002-1672-6995>),
+  Marco Grzegorczyk [aut, ths] (<https://orcid.org/0000-0002-2604-9270>),
+  Ernst Wit [aut, ths] (<https://orcid.org/0000-0002-3671-9610>)
+Maintainer: Luca Del Core <l.del.core@rug.nl>
+Repository: CRAN
+Date/Publication: 2022-09-20 10:46:14 UTC

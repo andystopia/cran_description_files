@@ -1,0 +1,30 @@
+Package: modACDC
+Title: Association of Covariance for Detecting Differential
+        Co-Expression
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Katelyn", 
+		family = "Queen", 
+		email = "kjqueen@usc.edu", 
+		role = c("aut", "cre", "cph"),
+           	comment = c(ORCID = "0000-0002-8070-3042")),
+      person(given = "Joshua", 
+		family = "Millstein", , 
+		email = "joshua.millstein@usc.edu", 
+		role = c("aut","cph"),
+           	comment = c(ORCID = "0000-0001-7961-8943")))
+Maintainer: Katelyn Queen <kjqueen@usc.edu>
+Description: A series of functions to implement association of covariance for detecting differential co-expression (ACDC), a novel approach for detection of differential co-expression that simultaneously accommodates multiple phenotypes or exposures with binary, ordinal, or continuous data types. Users can use the default method which identifies modules by Partition or may supply their own modules. Also included are functions to choose an information loss criterion (ILC) for Partition using OmicS-data-based Complex trait Analysis (OSCA). The manuscript describing these methods is as follows: Queen K, Nguyen MN, Gilliland F, Chun S, Raby BA, Millstein J. "ACDC: a general approach for detecting phenotype or exposure associated co-expression" (2023) <https://www.frontiersin.org/articles/10.3389/fmed.2023.1118824/abstract>.
+License: MIT + file LICENSE
+URL: https://github.com/USCbiostats/ACDC
+Depends: R (>= 4.1.0)
+Imports: CCA, CCP, data.table, foreach, ggplot2, partition, doParallel,
+        parallel, utils, stats, tidyr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-09 17:44:14 UTC; katelynqueen
+Author: Katelyn Queen [aut, cre, cph] (<https://orcid.org/0000-0002-8070-3042>),
+  Joshua Millstein [aut, cph] (<https://orcid.org/0000-0001-7961-8943>)
+Repository: CRAN
+Date/Publication: 2023-05-10 16:10:06 UTC

@@ -1,0 +1,54 @@
+Package: ICS
+Type: Package
+Title: Tools for Exploring Multivariate Data via ICS/ICA
+Version: 1.4-0
+Date: 2023-09-08
+Authors@R: 
+    c(person("Klaus", "Nordhausen", 
+             email = "klausnordhausenR@gmail.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-3758-8501")),
+      person("Andreas", "Alfons", 
+             email = "alfons@ese.eur.nl", 
+             role = "aut",
+             comment = c(ORCID = "0000-0002-2513-3788")),
+      person("Aurore", "Archimbaud", 
+             email = "aurore.archimbaud@live.fr", 
+             role = "aut",
+             comment = c(ORCID = "0000-0002-6511-9091")),
+      person("Hannu", "Oja", 
+             email = "", 
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-4945-5976")),
+      person("Anne", "Ruiz-Gazen", 
+             email = "anne.ruiz-gazen@tse-fr.eu",
+             role = "aut", 
+             comment = c(ORCID = "0000-0001-8970-8061")),
+      person("David E.", "Tyler", 
+             email = "", 
+             role = c("aut")))
+Author: Klaus Nordhausen [aut, cre] (<https://orcid.org/0000-0002-3758-8501>),
+  Andreas Alfons [aut] (<https://orcid.org/0000-0002-2513-3788>),
+  Aurore Archimbaud [aut] (<https://orcid.org/0000-0002-6511-9091>),
+  Hannu Oja [aut] (<https://orcid.org/0000-0002-4945-5976>),
+  Anne Ruiz-Gazen [aut] (<https://orcid.org/0000-0001-8970-8061>),
+  David E. Tyler [aut]
+Maintainer: Klaus Nordhausen <klausnordhausenR@gmail.com>
+Depends: R (>= 2.5.0), methods, mvtnorm
+Imports: survey, graphics
+Suggests: pixmap, robustbase, MASS, ICSNP, testthat (>= 3.0.0),
+        ICSOutlier
+Description: Implementation of Tyler, Critchley, Duembgen and Oja's (JRSS B, 2009,
+            <doi:10.1111/j.1467-9868.2009.00706.x>) and Oja, Sirkia and Eriksson's
+            (AJS, 2006, <https://www.ajs.or.at/index.php/ajs/article/view/vol35,%20no2%263%20-%207>) method of two different
+            scatter matrices to obtain an invariant coordinate system or independent
+            components, depending on the underlying assumptions. 
+License: GPL (>= 2)
+LazyLoad: yes
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+Packaged: 2023-09-09 07:50:41 UTC; admin
+Repository: CRAN
+Date/Publication: 2023-09-09 10:22:33 UTC

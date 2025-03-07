@@ -1,0 +1,31 @@
+Package: optinterv
+Type: Package
+Title: Optimal Intervention
+Version: 0.1.0
+Authors@R: c(
+  person("Elad", "Guttman", role = c("aut", "cre"), email = "eladguttman@mail.tau.ac.il"),
+  person("Oren", "Danieli", role = "aut"))
+Description: 
+  Provides both parametric and non-parametric estimates of the 
+  correlates of some desired
+  outcome (e.g. test scores, income) using a new method proposed by 
+  Danieli, Devi and Fryer (2019). This method relaxes the assumption
+  that one can alter individual characteristics in any way the data 
+  suggest is optimal, and so can be used anytime one wants to use observational
+  data to better optimize social experiments designed to increase some desired
+  outcome.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: rootSolve, distances, weights, boot, lattice, pbapply, Hmisc,
+        stats, graphics
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-03-15 09:54:59 UTC; eladg
+Author: Elad Guttman [aut, cre],
+  Oren Danieli [aut]
+Maintainer: Elad Guttman <eladguttman@mail.tau.ac.il>
+Repository: CRAN
+Date/Publication: 2020-03-19 16:30:02 UTC

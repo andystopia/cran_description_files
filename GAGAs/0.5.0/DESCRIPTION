@@ -1,0 +1,33 @@
+Package: GAGAs
+Type: Package
+Title: Global Adaptive Generative Adjustment Algorithm for Generalized
+        Linear Models
+Version: 0.5.0
+Language: en-US
+Authors@R: c(
+      person("Bin", "Wang", role=c("aut", "cre"), email="eatingbeen@hotmail.com"),
+      person("Xiaofei", "Wang", role=c("ctb")),
+      person("Jianhua", "Guo", role=c("ths"))
+      )
+Description: Fits linear regression, logistic and multinomial regression models, Poisson regression, Cox model via Global Adaptive Generative Adjustment Algorithm.  
+ For more detailed information, see Bin Wang, Xiaofei Wang and Jianhua Guo (2022) <arXiv:1911.00658>. 
+ This paper provides the theoretical properties of Gaga linear model when the load matrix is orthogonal. 
+ Further study is going on for the nonorthogonal cases and generalized linear models. 
+ These works are in part supported by the National Natural Foundation of China (No.12171076). 
+License: GPL-2
+URL: https://arxiv.org/abs/1911.00658
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: Rcpp (>= 1.0.9), survival
+Suggests: mvtnorm
+SystemRequirements: C++14
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 7.2.2
+Maintainer: Bin Wang <eatingbeen@hotmail.com>
+NeedsCompilation: yes
+Packaged: 2022-12-03 13:12:30 UTC; pc
+Author: Bin Wang [aut, cre],
+  Xiaofei Wang [ctb],
+  Jianhua Guo [ths]
+Repository: CRAN
+Date/Publication: 2022-12-03 22:22:29 UTC

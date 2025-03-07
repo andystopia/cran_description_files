@@ -1,0 +1,49 @@
+Package: penppml
+Title: Penalized Poisson Pseudo Maximum Likelihood Regression
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Diego",
+           family = "Ferreras Garrucho",
+           role = "aut",
+           email = "d.ferreras-garrucho@lse.ac.uk"),
+    person(given = "Tom",
+           family = "Zylkin",
+           role = "aut",
+           email = "tzylkin@richmond.edu"),
+    person(given = "Nicolas",
+           family = "Apfel",
+           role = "cre",
+           email = "nicolas.apfel@gmail.com")   
+    )       
+Description: A set of tools that enables efficient estimation of penalized 
+    Poisson Pseudo Maximum Likelihood regressions, using lasso or ridge penalties, for models 
+    that feature one or more sets of high-dimensional fixed effects. The methodology is based on 
+    Breinlich, Corradi, Rocha, Ruta, Santos Silva, and Zylkin (2021) <http://hdl.handle.net/10986/35451> 
+    and takes advantage of the method of alternating projections of Gaure (2013) 
+    <doi:10.1016/j.csda.2013.03.024> for dealing with HDFE, as well as 
+    the coordinate descent algorithm of Friedman, Hastie and Tibshirani (2010) 
+    <doi:10.18637/jss.v033.i01> for fitting lasso regressions. The package is also able to carry out 
+    cross-validation and to implement the plugin lasso of Belloni, Chernozhukov, Hansen and Kozbur (2016) 
+    <doi:10.1080/07350015.2015.1102733>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: gzip
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp, RcppEigen
+Imports: Rcpp, glmnet, fixest, collapse, rlang, magrittr
+Depends: R (>= 2.10)
+URL: https://github.com/tomzylkin/penppml
+BugReports: https://github.com/tomzylkin/penppml/issues
+Suggests: testthat (>= 3.0.0), MASS, knitr, rmarkdown, directlabels,
+        ggplot2, reshape2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-01-03 10:24:23 UTC; LocalAdmin
+Author: Diego Ferreras Garrucho [aut],
+  Tom Zylkin [aut],
+  Nicolas Apfel [cre]
+Maintainer: Nicolas Apfel <nicolas.apfel@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-01-03 10:50:02 UTC

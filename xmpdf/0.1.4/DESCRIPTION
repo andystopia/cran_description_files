@@ -1,0 +1,41 @@
+Encoding: UTF-8
+Package: xmpdf
+Type: Package
+Title: Edit 'XMP' Metadata and 'PDF' Bookmarks and Documentation Info
+Version: 0.1.4
+Description: Edit 'XMP' metadata <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform> 
+    in a variety of media file formats as well as 
+    edit bookmarks (aka outline aka table of contents) and documentation info entries in 'pdf' files.
+    Can detect and use a variety of command-line tools to perform these operations such as
+    'exiftool' <https://exiftool.org/>, 'ghostscript' <https://www.ghostscript.com/>, 
+    and/or 'pdftk' <https://gitlab.com/pdftk-java/pdftk>.
+Authors@R: c(person("Trevor L", "Davis", role=c("aut", "cre"), 
+                    email="trevor.l.davis@gmail.com", comment = c(ORCID = "0000-0001-6341-4639")),
+             person("W. Trevor King", role = "ctb", "Some pdf code adapted from 'pdf-merge.py'"),
+             person("Linux Foundation", role="dtc",
+                    comment = 'Uses some data from the "SPDX License List" <https://github.com/spdx/license-list-XML>'))
+License: GPL (>= 3)
+URL: https://trevorldavis.com/R/xmpdf/dev/
+BugReports: https://github.com/trevorld/r-xmpdf/issues
+LazyData: true
+LazyLoad: yes
+Imports: datetimeoffset (>= 0.2.1), grDevices, jsonlite, purrr, R6,
+        rlang, tools, utils
+Suggests: exiftoolr, grid, knitr, qpdf, pdftools, rmarkdown, testthat
+        (>= 3.0.0)
+VignetteBuilder: knitr, rmarkdown
+SystemRequirements: 'ghostscript' or 'pdftk' for editing pdf bookmarks
+        and/or documentation info entries. 'exiftool' for editing pdf
+        documentation info entries and/or xmp metadata.
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-10-01 18:56:45 UTC; trevorld
+Author: Trevor L Davis [aut, cre] (<https://orcid.org/0000-0001-6341-4639>),
+  W. Trevor King Some pdf code adapted from 'pdf-merge.py' [ctb],
+  Linux Foundation [dtc] (Uses some data from the "SPDX License List"
+    <https://github.com/spdx/license-list-XML>)
+Maintainer: Trevor L Davis <trevor.l.davis@gmail.com>
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2023-10-02 07:00:02 UTC

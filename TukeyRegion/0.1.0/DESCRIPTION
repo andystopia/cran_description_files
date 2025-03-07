@@ -1,0 +1,51 @@
+Package: TukeyRegion
+Type: Package
+Title: Tukey Region and Median
+Version: 0.1.0
+Date: 2017-12-07
+Authors@R: c(person("C. Bradford", "Barber", role = c("aut", "cph")), 
+  person("The Geometry Center", "University of Minnesota", role = c("cph")), 
+  person("Andrew", "Makhorin", role = c("aut", "cph")), 
+  person("Timothy A.", "Davis", role = c("aut", "cph")), 
+  person("Patrick R.", "Amestoy", role = c("aut", "cph")), 
+  person("Iain S.", "Duff", role = c("aut", "cph")), 
+  person("John K.", "Reid", role = c("aut", "cph")), 
+  person("Stefan I.", "Larimore", role = c("aut")), 
+  person("Jean-loup", "Gailly", role = c("aut", "cph")), 
+  person("Mark", "Adler", role = c("aut", "cph")), 
+  person("Niklas", "Sorensson", role = c("aut", "cph")), 
+  person("Giorgio", "Sartor", role = c("aut")), 
+  person("Heinrich", "Schuchardt", role = c("aut")), 
+  person("Cosmin", "Truta", role = c("ctb")), 
+  person("Alan", "Mishchenko", role = c("ctb")), 
+  person("Tamas", "Badics", role = c("ctb")), 
+  person("Pavlo", "Mozharovskyi", role = c("aut", "cre"), 
+    email = "pavlo.mozharovskyi@ensai.fr"))
+Description: Tukey regions are polytopes in the Euclidean space, viz. upper-level sets of the Tukey depth function on given data. The bordering hyperplanes of a Tukey region are computed as well as its vertices, facets, centroid, and volume. In addition, the Tukey median set, which is the non-empty Tukey region having highest depth level, and its barycenter (= Tukey median) are calculated. Tukey regions are visualized in dimension two and three. For details see Liu, Mosler, and Mozharovskyi (2017) <arXiv:1412.5122>.
+License: GPL (>= 3) | file LICENSE
+SystemRequirements: C++11
+Depends: rgl,ddalpha,MASS,bfp
+Imports: Rcpp (>= 0.11.0)
+LinkingTo: Rcpp,BH
+NeedsCompilation: yes
+Packaged: 2017-12-07 06:26:08 UTC; pavlo.mozharovskyi
+Author: C. Bradford Barber [aut, cph],
+  The Geometry Center University of Minnesota [cph],
+  Andrew Makhorin [aut, cph],
+  Timothy A. Davis [aut, cph],
+  Patrick R. Amestoy [aut, cph],
+  Iain S. Duff [aut, cph],
+  John K. Reid [aut, cph],
+  Stefan I. Larimore [aut],
+  Jean-loup Gailly [aut, cph],
+  Mark Adler [aut, cph],
+  Niklas Sorensson [aut, cph],
+  Giorgio Sartor [aut],
+  Heinrich Schuchardt [aut],
+  Cosmin Truta [ctb],
+  Alan Mishchenko [ctb],
+  Tamas Badics [ctb],
+  Pavlo Mozharovskyi [aut, cre]
+Maintainer: Pavlo Mozharovskyi <pavlo.mozharovskyi@ensai.fr>
+Repository: CRAN
+Date/Publication: 2017-12-07 11:35:25 UTC

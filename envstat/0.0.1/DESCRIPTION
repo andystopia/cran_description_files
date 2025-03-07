@@ -1,0 +1,27 @@
+Package: envstat
+Title: Configurable Reporting on your External Compute Environment
+Version: 0.0.1
+Authors@R: 
+    person(given = "Mark",
+           family = "Sellors",
+           email = "rstats@5vcc.com",
+           role = c("aut", "cre"))
+Description: Runs a series of configurable tests against a user's compute 
+  environment. This can be used for checking that things like a specific 
+  directory or an environment variable is available before you start an analysis.
+  Alternatively, you can use the package's situation report when filing error
+  reports with your compute infrastructure.
+URL: https://envstat.sellorm.com
+BugReports: https://github.com/sellorm/envstat/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: cli, httr2, rstudioapi, yaml
+Suggests: covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-02-09 11:57:44 UTC; sellorm
+Author: Mark Sellors [aut, cre]
+Maintainer: Mark Sellors <rstats@5vcc.com>
+Repository: CRAN
+Date/Publication: 2022-02-09 19:30:02 UTC

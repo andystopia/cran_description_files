@@ -1,0 +1,30 @@
+Package: potential
+Title: Implementation of the Potential Model
+Version: 0.1.0
+Authors@R: c(
+      person("Timothée", "Giraud", email = "timothee.giraud@cnrs.fr", role = c("cre","aut"),
+             comment = c(ORCID = "0000-0002-1932-3323")),
+      person("Hadrien", "Commenges", email = "hadrien.commenges@univ-paris1.fr", role = c("aut")))
+Description: Provides functions to compute the potential model as defined by
+    Stewart (1941) <doi:10.1126/science.93.2404.89>. Several options are available
+    to customize the model, such as the possibility to fine-tune the distance
+    friction functions or to use custom distance matrices. Some computations are
+    parallelized to improve their efficiency.
+Depends: R (>= 3.5.0)
+License: GPL-3
+LazyData: true
+Imports: sf, graphics, methods, isoband, parallel, doParallel, foreach
+Suggests: covr, lwgeom, cartography, knitr, tinytest, rmarkdown
+SystemRequirements: GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ.4 (>= 4.8.0)
+URL: https://github.com/riatelab/potential
+BugReports: https://github.com/riatelab/potential/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-11-12 10:44:28 UTC; tim
+Author: Timothée Giraud [cre, aut] (<https://orcid.org/0000-0002-1932-3323>),
+  Hadrien Commenges [aut]
+Maintainer: Timothée Giraud <timothee.giraud@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2020-11-18 09:40:02 UTC

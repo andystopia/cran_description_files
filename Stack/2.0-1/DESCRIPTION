@@ -1,0 +1,19 @@
+Package: Stack
+Type: Package
+Title: Stylized concatenation of data.frames or ffdfs
+Version: 2.0-1
+Date: 2014-03-20
+Author: Mike Malecki <Mike.Malecki at yougov.com>
+Maintainer: Mike Malecki <Mike.Malecki@yougov.com>
+Description: Stacks rectangular datasets on top of each other, possibly
+    performing several type coercions along the way. For large datasets,
+    depends on the ff package. Provides an aggressive version of
+    ffbase::compact for data that may appear be real-typed but is in fact
+    int/short/byte. For many purposes plyr::rbind.fill may be more appropriate,
+    but for some kinds of survey data, the rules here work better.
+License: MIT + file LICENSE
+Imports: plyr, stringr, methods, ff, ffbase, bit
+Packaged: 2014-03-20 20:42:55 UTC; malecki
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-03-21 01:19:40

@@ -1,0 +1,40 @@
+Package: trip
+Type: Package
+Title: Tracking Data
+Authors@R: c(person("Michael D.","Sumner", role = c("aut", "cre"),
+    email = "mdsumner@gmail.com"),
+    person("Sebastian", "Luque", role = "ctb"), 
+    person("Anthony", "Fischbach", role = "ctb"),
+    person("Tomislav", "Hengl", role = "ctb"))
+Version: 1.8.7
+Depends: R (>= 3.3.0)
+Imports: geodist, MASS, methods, raster, reproj, sp, spatstat.geom,
+        spatstat.explore, glue, viridis, traipse (>= 0.2.0), crsmeta,
+        dplyr, rlang
+Suggests: adehabitatLT, knitr, testthat, covr, rmarkdown, lubridate,
+        maps, spelling, lattice
+Description: Access and manipulate spatial tracking data, with straightforward 
+ coercion from and to other formats. Filter for speed and create time spent 
+ maps from tracking data. There are coercion methods to convert between 'trip'
+ and 'ltraj' from 'adehabitatLT', and between 'trip' and 'psp' and 'ppp' from 
+ 'spatstat'. Trip objects can be created from raw or grouped data frames, and 
+ from types in the 'sp', sf', 'amt', 'trackeR', 'mousetrap', and other packages, 
+ Sumner, MD (2011) <https://eprints.utas.edu.au/12273/3/sumner.pdf>.
+URL: https://github.com/Trackage/trip
+BugReports: https://github.com/Trackage/trip/issues
+NeedsCompilation: no
+ByteCompile: yes
+License: GPL-3
+LazyData: yes
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.1
+Packaged: 2022-12-14 05:11:35 UTC; mdsumner
+Author: Michael D. Sumner [aut, cre],
+  Sebastian Luque [ctb],
+  Anthony Fischbach [ctb],
+  Tomislav Hengl [ctb]
+Maintainer: Michael D. Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-12-14 09:10:02 UTC

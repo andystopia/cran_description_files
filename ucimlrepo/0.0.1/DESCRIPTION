@@ -1,0 +1,37 @@
+Package: ucimlrepo
+Title: Explore UCI ML Repository Datasets
+Version: 0.0.1
+Authors@R: c(
+    person("James Joseph", "Balamuta", email = "james.balamuta@gmail.com", 
+           role = c("aut", "cre", "cph"), 
+           comment = c(ORCID = "0000-0003-2826-8458")),
+    person("Philip", "Truong",
+           email = "ucirepository@gmail.com", 
+           role = c("aut", "cph"))
+    )
+Description: Find and import datasets from the
+    University of California Irvine Machine Learning (UCI ML) Repository into R.
+    Supports working with data from UCI ML repository inside of R scripts, notebooks, 
+    and 'Quarto'/'RMarkdown' documents. Access the UCI ML repository directly at
+    <https://archive.ics.uci.edu/>.
+URL: https://r-pkg.thecoatlessprofessor.com/ucimlrepo/,
+        https://github.com/coatless-rpkg/ucimlrepo,
+        https://archive.ics.uci.edu/
+BugReports: https://github.com/coatless-rpkg/ucimlrepo/issues
+License: MIT + file LICENSE
+Depends: R (>= 4.1)
+Imports: httr2, utils
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Collate: 'constants.R' 'fetch-ucirepo.R' 'list-available-datasets.R'
+        'ucimlrepo-package.R'
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-07-22 23:45:47 UTC; ronin
+Author: James Joseph Balamuta [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2826-8458>),
+  Philip Truong [aut, cph]
+Maintainer: James Joseph Balamuta <james.balamuta@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-27 16:30:02 UTC

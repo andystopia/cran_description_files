@@ -1,0 +1,44 @@
+Package: treesliceR
+Title: To Slice Phylogenetic Trees and Infer Evolutionary Patterns Over
+        Time
+Version: 1.0.1
+Authors@R: 
+    c(person("Matheus Lima", "Araujo", , "matheusaraujolima@live.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-9111-725X")),
+           person("Luiz Gabriel Souza e Souza", "Ferreira", , "luizferreira@discente.ufg.br", role = "aut",
+           comment = c(ORCID = "0009-0002-5881-9791")),
+           person("Gabriel", "Nakamura", , "gabriel.nakamura.souza@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-5144-5312")),
+           person("Marco Tulio Pacheco", "Coelho", , "marcotpcoelho@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-7831-3053")),
+           person("Thiago Fernando", "Rangel", , "rangel.tf@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-2001-7382")))
+Description: Provide a range of functions with multiple criteria for cutting phylogenetic trees at any evolutionary depth. It enables users to cut trees in any orientation, such as rootwardly (from root to tips) and tipwardly (from tips to its root), or allows users to define a specific time interval of interest. It can also be used to create multiple tree pieces of equal temporal width. Moreover, it allows the assessment of novel temporal rates for various phylogenetic indexes, which can be quickly displayed graphically.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/AraujoMat/treesliceR,
+        https://araujomat.github.io/treesliceR/
+Depends: R (>= 2.10)
+BugReports: https://github.com/AraujoMat/treesliceR/issues
+Imports: ape (>= 5.7-1), doParallel (>= 1.0.17), foreach (>= 1.5.2),
+        ggplot2 (>= 3.4.2), sf (>= 1.0-9)
+LazyData: true
+Config/Needs/website: rmarkdown
+Suggests: devtools, ggpubr (>= 0.6.0), knitr, rmarkdown, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-02-08 13:21:25 UTC; Mathe
+Author: Matheus Lima Araujo [aut, cre, cph]
+    (<https://orcid.org/0000-0002-9111-725X>),
+  Luiz Gabriel Souza e Souza Ferreira [aut]
+    (<https://orcid.org/0009-0002-5881-9791>),
+  Gabriel Nakamura [aut] (<https://orcid.org/0000-0002-5144-5312>),
+  Marco Tulio Pacheco Coelho [aut]
+    (<https://orcid.org/0000-0002-7831-3053>),
+  Thiago Fernando Rangel [aut] (<https://orcid.org/0000-0002-2001-7382>)
+Maintainer: Matheus Lima Araujo <matheusaraujolima@live.com>
+Repository: CRAN
+Date/Publication: 2024-02-08 13:40:04 UTC

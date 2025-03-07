@@ -1,0 +1,48 @@
+Package: nexus
+Title: Sourcing Archaeological Materials by Chemical Composition
+Version: 0.1.0
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944", affiliation = "Université Bordeaux Montaigne")),
+    person("Anne", "Philippe", , "anne.philippe@univ-nantes.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-5331-5087", affiliation = "Université de Nantes")),
+    person("Brice", "Lebrun", , "brice.lebrun@u-bordeaux-montaigne.fr", role = "ctb",
+           comment = c(ORCID = "0000-0001-7503-8685", affiliation = "Université Bordeaux Montaigne")),
+    person("Université Bordeaux Montaigne", role = "fnd"),
+    person("CNRS", role = "fnd")
+  )
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: Exploration and analysis of compositional data in the
+    framework of Aitchison (1986, ISBN: 978-94-010-8324-9). This package
+    provides tools for chemical fingerprinting and source tracking of
+    ancient materials.
+License: GPL (>= 3)
+URL: https://packages.tesselle.org/nexus/,
+        https://github.com/tesselle/nexus
+BugReports: https://github.com/tesselle/nexus/issues
+Depends: R (>= 3.5)
+Imports: arkhe (>= 1.4.0), dimensio (>= 0.5.0), graphics, grDevices,
+        isopleuros (>= 1.0.0), methods, MASS, stats, utils
+Suggests: cluster, folio, igraph, knitr, rmarkdown, rsvg, svglite,
+        tinysnapshot, tinytest
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'AllClasses.R' 'AllGenerics.R' 'coerce.R' 'data.R' 'graph.R'
+        'mix.R' 'mutators.R' 'nexus-internal.R' 'nexus-package.R'
+        'outliers.R' 'pca.R' 'plot.R' 'reexport.R' 'replace.R' 'show.R'
+        'simplex.R' 'statistics.R' 'subset.R' 'summary.R' 'transform.R'
+        'validate.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2023-11-29 08:32:56 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>,
+    Université Bordeaux Montaigne),
+  Anne Philippe [aut] (<https://orcid.org/0000-0002-5331-5087>,
+    Université de Nantes),
+  Brice Lebrun [ctb] (<https://orcid.org/0000-0001-7503-8685>, Université
+    Bordeaux Montaigne),
+  Université Bordeaux Montaigne [fnd],
+  CNRS [fnd]
+Repository: CRAN
+Date/Publication: 2023-11-29 18:40:02 UTC

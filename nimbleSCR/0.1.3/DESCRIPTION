@@ -1,0 +1,50 @@
+Package: nimbleSCR
+Type: Package
+Title: Spatial Capture-Recapture (SCR) Methods Using 'nimble'
+Version: 0.1.3
+Maintainer: Daniel Turek <danielturek@gmail.com>
+Authors@R: c(person("Richard", "Bischof", role = "aut"),
+             person("Daniel", "Turek", role = c("aut", "cre"), email = "danielturek@gmail.com"),
+             person("Cyril", "Milleret", role = "aut"),
+             person("Torbjørn", "Ergon", role = "aut"),
+             person("Pierre", "Dupont", role = "aut"),
+             person("Soumen", "Dey", role = "aut"),
+             person("Wei", "Zhang", role = "aut"),
+             person("Perry", "de Valpine", role = "aut"))
+Date: 2021-10-25
+Description: Provides utility functions, distributions, and methods for improving Markov chain Monte Carlo (MCMC) sampling efficiency for ecological Spatial Capture-Recapture (SCR) and Open Population Spatial Capture-Recapture (OPSCR) models.  The methods provided implement the techniques presented in "Estimation of Large-Scale Spatial Capture-Recapture Models" (Turek, et al (2021); Eco-sphere 12(2):e03385. <doi:10.1002/ecs2.3385>).
+License: GPL-3
+Depends: R (>= 3.5.0), nimble
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), coda, basicMCMCplots
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Collate: calcWindowSizes.R getWindowIndex.R
+        integrateIntensityLocal_normal.R integrateIntensityLocal_exp.R
+        integrateIntensity_normal.R integrateIntensity_exp.R
+        stratRejectionSampler_normal.R stratRejectionSampler_exp.R
+        dDispersal_exp.R dHabitatMask.R dbernppAC.R
+        dbernppACmovement_normal.R dbernppACmovement_exp.R
+        dbernppDetection_normal.R dbernppLocalACmovement_normal.R
+        dbernppLocalACmovement_exp.R dbernppLocalDetection_normal.R
+        dbinomLocal_normal.R dbinom_sparseLocalSCR.R dbinom_vector.R
+        dnormalizer.R dpoisLocal_normal.R dpoisppAC.R
+        dpoisppDetection_normal.R dpoisppLocalDetection_normal.R
+        getLocalObjects.R getLocalTraps.R getMidPointNodes.R
+        getWindowCoords.R getSparseY.R localTrapCalculations.R
+        makeConstantNimbleFunction.R marginalVoidProbIntegrand.R
+        marginalVoidProbNumIntegration.R scaleCoordsToHabitatGrid.R
+        zzz.R
+NeedsCompilation: no
+Packaged: 2021-10-25 15:11:32 UTC; dturek
+Author: Richard Bischof [aut],
+  Daniel Turek [aut, cre],
+  Cyril Milleret [aut],
+  Torbjørn Ergon [aut],
+  Pierre Dupont [aut],
+  Soumen Dey [aut],
+  Wei Zhang [aut],
+  Perry de Valpine [aut]
+Repository: CRAN
+Date/Publication: 2021-10-25 15:50:02 UTC

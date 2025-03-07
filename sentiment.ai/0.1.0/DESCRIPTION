@@ -1,0 +1,61 @@
+Package: sentiment.ai
+Type: Package
+Title: Simple Sentiment Analysis Using Deep Learning
+Version: 0.1.0
+Authors@R: 
+  c(person('Ben', 'Wiseman',
+           role    = c('cre', 'aut', 'ccp'),
+           email   = 'benjamin.h.wiseman@gmail.com'),
+    person('Steven', 'Nydick',
+           role    = c('aut'),
+           email   = 'swnydick@gmail.com',
+           comment = c(ORCID = "0000-0002-2908-1188")),
+    person('Tristan', 'Wisner',
+           role    = c('aut'),
+           email   = 'tristan.wisner@kornferry.com'),
+    person('Fiona', 'Lodge',
+           role    = c('ctb'),
+           email   = 'fiona.lodge@kornferry.com'),
+    person('Yu-Ann', 'Wang',
+           role    = c('ctb'),
+           email   = 'yu-ann-wang@kornferry.com'),
+    person('Veronica', 'Ge',
+           role    = c('art'),
+           email   = 'veronica.ge@kornferry.com'),
+    person('Korn Ferry Institute', 
+           role = c('fnd'),
+           email = 'KFInstituteRequests@KornFerry.com'))
+Maintainer: Ben Wiseman <benjamin.h.wiseman@gmail.com>
+Description: Sentiment Analysis via deep learning and gradient boosting models with a lot of the underlying hassle taken care of to make the process as simple as possible. 
+  In addition to out-performing traditional, lexicon-based sentiment analysis (see <https://benwiseman.github.io/sentiment.ai/#Benchmarks>),
+  it also allows the user to create embedding vectors for text which can be used in other analyses.
+  GPU acceleration is supported on Windows and Linux.
+URL: https://benwiseman.github.io/sentiment.ai/,
+        https://github.com/BenWiseman/sentiment.ai
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0)
+Imports: data.table (>= 1.12.8), jsonlite, reticulate (>= 1.16),
+        roperators (>= 1.2.0), stats, tensorflow (>= 2.2.0), tfhub (>=
+        0.8.0), utils, xgboost
+Suggests: rmarkdown, knitr, magrittr, microbenchmark, prettydoc,
+        rappdirs, rstudioapi, text2vec (>= 0.6)
+Collate: 'package-sentiment_ai.R' 'init_and_install.R' 'sentiment.R'
+        'choose_model.R' 'data-default_data.R' 'data-example_data.R'
+        'object-sentiment_env.R' 'matrix_helpers.R' 'constants.R'
+        'create_error_text.R' 'utils-data-table.R' 'globals.R'
+        'local_from_reticulate.R'
+NeedsCompilation: no
+Packaged: 2022-03-09 05:19:34 UTC; benaparte
+Author: Ben Wiseman [cre, aut, ccp],
+  Steven Nydick [aut] (<https://orcid.org/0000-0002-2908-1188>),
+  Tristan Wisner [aut],
+  Fiona Lodge [ctb],
+  Yu-Ann Wang [ctb],
+  Veronica Ge [art],
+  Korn Ferry Institute [fnd]
+Repository: CRAN
+Date/Publication: 2022-03-09 21:40:02 UTC

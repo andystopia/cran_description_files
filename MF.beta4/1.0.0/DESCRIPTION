@@ -1,0 +1,46 @@
+Package: MF.beta4
+Type: Package
+Title: Measuring Ecosystem Multi-Functionality and Its Decomposition
+Version: 1.0.0
+Author: Anne Chao [aut, cre],
+  Chun-Yu Liu [ctb],
+  KaiHsiang Hu [ctb]
+Maintainer: Anne Chao <chao@stat.nthu.edu.tw>
+Authors@R: 
+  c(person("Anne", 
+           "Chao", 
+           role = c("aut","cre"),
+           email = "chao@stat.nthu.edu.tw"),
+    person("Chun-Yu", 
+           "Liu", 
+           role = "ctb"),
+    person("KaiHsiang", 
+           "Hu", 
+           role = "ctb",
+           email = "river19951224@gmail.com"))
+URL: https://github.com/AnneChao/MF.beta4
+BugReports: https://github.com/AnneChao/MF.beta4/issues
+Description: Provide simple functions to (i) compute a class of 
+  multi-functionality measures for a single ecosystem for given 
+  function weights, (ii) decompose gamma multi-functionality 
+  for multiple ecosystems into a within-ecosystem component 
+  (alpha multi-functionality) and an among-ecosystem component 
+  (beta multi-functionality). In each case, the correlation 
+  between functions can be corrected for. Based on biodiversity 
+  and ecosystem function data, this software also facilitates 
+  graphics for assessing biodiversity-ecosystem functioning 
+  relationships across scales. 
+License: GPL (>= 3)
+Depends: R (>= 4.0)
+Imports: broom, devtools, ggplot2, dplyr, stats, ggpubr, grid, purrr,
+        patchwork, tidyr, lme4, lmerTest, tidyverse
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+ByteCompile: true
+Packaged: 2023-12-12 14:32:34 UTC; stat-pc
+Repository: CRAN
+NeedsCompilation: no
+Date/Publication: 2023-12-12 21:30:02 UTC

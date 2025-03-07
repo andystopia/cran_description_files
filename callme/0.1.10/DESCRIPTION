@@ -1,0 +1,30 @@
+Type: Package
+Package: callme
+Title: Easily Compile and Call Inline C Functions
+Version: 0.1.10
+Authors@R: 
+    person("Mike", "Cheng", , "mikefc@coolbutuseless.com", role = c("aut", "cre", "cph"))
+Maintainer: Mike Cheng <mikefc@coolbutuseless.com>
+Description: Compile inline 'C' code and easily call with
+ automatically generated wrapper functions.  By allowing user-defined headers
+ and compilation flags (preprocessor, compiler and linking flags) the user 
+ can configure optimization options and linking to third party 
+ libraries. Multiple functions may be defined in a single block of code - which 
+ may be defined in a string or a path to a source file.
+License: MIT + file LICENSE
+URL: https://github.com/coolbutuseless/callme,
+        https://coolbutuseless.github.io/package/callme/
+BugReports: https://github.com/coolbutuseless/callme/issues
+Imports: methods
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+SystemRequirements: Rtools (suitable for the installed R) for Windows,
+        Xcode for Mac
+NeedsCompilation: no
+Packaged: 2024-07-23 11:23:38 UTC; mike
+Author: Mike Cheng [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2024-07-27 16:50:05 UTC

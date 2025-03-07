@@ -1,0 +1,48 @@
+Package: MECfda
+Type: Package
+Title: Scalar-on-Function Regression with Measurement Error Correction
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Heyang",   family = "Ji", email = "jihx1015@outlook.com", role = c("aut","cre","ctb","dtc"), comment = c(ORCID = "0009-0001-7494-7227")),
+    person(given = "Ufuk",     family = "Beyaztas", email = "ufuk.beyaztas@marmara.edu.tr", role = c("ctb","rev"), comment = c(ORCID = "0000-0002-5208-4950")),
+    person(given = "Nicolas",  family = "Escobar-Velasquez", email = "nescoba@iu.edu", role = c("com"), comment = c(ORCID = "0009-0006-0800-5692")),
+    person(given = "Yuanyuan", family = "Luan", role = c("ctb")),
+    person(given = "Xiwei",    family = "Chen", role = c("ctb")),
+    person(given = "Mengli",   family = "Zhang",role = c("ctb"), email = "zhangmengli_sufe@163.com"),
+    person(given = "Roger",    family = "Zoh",  role = c("ths")),
+    person(given = "Lan",      family = "Xue",  role = c("ths")),
+    person(given = "Carmen",   family = "Tekwe", email = "ctekwe@gmail.com", role = c("ths"), comment = c(ORCID = "0000-0002-1857-2416"))
+  )
+Maintainer: Heyang Ji <jihx1015@outlook.com>
+Description: Solve scalar-on-function linear models,
+    including generalized linear mixed effect model and quantile linear regression model,
+    and bias correction estimation methods due to measurement error. 
+    Details about the measurement error bias correction methods, see
+    Luan  et al. (2023) <doi:10.48550/arXiv.2305.12624>, 
+    Tekwe et al. (2022) <doi:10.1093/biostatistics/kxac017>, 
+    Zhang et al. (2023) <doi:10.5705/ss.202021.0246>, 
+    Tekwe et al. (2019) <doi:10.1002/sim.8179>. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10),
+Imports: stats, stringr, lme4, quantreg, splines, dplyr, MASS, Matrix,
+        gss, corpcor, fda, magrittr, methods, nlme, glme, mgcv
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-18 15:59:03 UTC; lenovo
+Author: Heyang Ji [aut, cre, ctb, dtc]
+    (<https://orcid.org/0009-0001-7494-7227>),
+  Ufuk Beyaztas [ctb, rev] (<https://orcid.org/0000-0002-5208-4950>),
+  Nicolas Escobar-Velasquez [com]
+    (<https://orcid.org/0009-0006-0800-5692>),
+  Yuanyuan Luan [ctb],
+  Xiwei Chen [ctb],
+  Mengli Zhang [ctb],
+  Roger Zoh [ths],
+  Lan Xue [ths],
+  Carmen Tekwe [ths] (<https://orcid.org/0000-0002-1857-2416>)
+Repository: CRAN
+Date/Publication: 2024-10-21 12:01:07 UTC

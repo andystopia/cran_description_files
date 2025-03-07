@@ -1,0 +1,32 @@
+Package: ordinalbayes
+Title: Bayesian Ordinal Regression for High-Dimensional Data
+Version: 0.1.0
+Date: 2022-03-07
+Authors@R: c(person("Kellie J.", "Archer", email = "archer.43@osu.edu",
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1555-5781")),
+  person("Anna", "Seffernick", role=c("ctb")), 
+  person("Shuai", "Sun", role=c("ctb")),
+  person("Yiran", "Zhang", role=c("aut")))
+Description: Provides a function for fitting various penalized Bayesian
+    cumulative link ordinal response models when the number of parameters
+    exceeds the sample size. These models have been described in 
+    Zhang and Archer (2021) <doi:10.1186/s12859-021-04432-w>.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: coda, devtools, dclone, runjags, DESeq2, SummarizedExperiment
+Suggests: knitr, Biobase, testthat (>= 3.0.0), rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+SystemRequirements: JAGS (>= 4.0.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-03-10 18:31:50 UTC; archer.43
+Author: Kellie J. Archer [aut, cre] (<https://orcid.org/0000-0003-1555-5781>),
+  Anna Seffernick [ctb],
+  Shuai Sun [ctb],
+  Yiran Zhang [aut]
+Maintainer: Kellie J. Archer <archer.43@osu.edu>
+Repository: CRAN
+Date/Publication: 2022-03-11 10:40:05 UTC

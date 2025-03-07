@@ -1,0 +1,19 @@
+Package: dfr
+Title: Dual Feature Reduction for SGL
+Version: 0.1.0
+Date: 2024-09-25
+Authors@R: person("Fabio", "Feser", role = c("aut", "cre"), email = "ff120@ic.ac.uk",comment = c(ORCID = "0009-0007-3088-9727"))
+Maintainer: Fabio Feser <ff120@ic.ac.uk>
+Description: Implementation of the Dual Feature Reduction (DFR) approach for the Sparse Group Lasso (SGL) and the Adaptive Sparse Group Lasso (aSGL) (Feser and Evangelou (2024) <doi:10.48550/arXiv.2405.17094>). The DFR approach is a feature reduction approach that applies strong screening to reduce the feature space before optimisation, leading to speed-up improvements for fitting SGL (Simon et al. (2013) <doi:10.1080/10618600.2012.681250>) and aSGL (Mendez-Civieta et al. (2020) <doi:10.1007/s11634-020-00413-8> and Poignard (2020) <doi:10.1007/s10463-018-0692-7>) models. DFR is implemented using the Adaptive Three Operator Splitting (ATOS) (Pedregosa and Gidel (2018) <doi:10.48550/arXiv.1804.02339>) algorithm, with linear and logistic SGL models supported, both of which can be fit using k-fold cross-validation. Dense and sparse input matrices are supported.
+Imports: sgs, caret, methods, stats, grDevices, graphics, faux, Matrix
+Suggests: SGL, gglasso, glmnet, testthat
+RoxygenNote: 7.3.1
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/ff1201/dfr
+BugReports: https://github.com/ff1201/dfr/issues
+NeedsCompilation: no
+Packaged: 2024-09-25 15:33:48 UTC; ff120
+Author: Fabio Feser [aut, cre] (<https://orcid.org/0009-0007-3088-9727>)
+Repository: CRAN
+Date/Publication: 2024-09-26 11:10:02 UTC

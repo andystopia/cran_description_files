@@ -1,0 +1,37 @@
+Package: chemodiv
+Title: Analysing Chemodiversity of Phytochemical Data
+Version: 0.1.2
+Authors@R: c(
+    person("Hampus", "Petrén", email = "hampus.petren@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6490-4517")),
+    person("Tobias G.", "Köllner", email = "koellner@ice.mpg.de",
+    role = c("aut"), comment = c(ORCID = "0000-0002-7037-904X")),
+    person("Robert R.", "Junker", email = "robert.junker@uni-marburg.de",
+    role = c("aut"), comment = c(ORCID = "0000-0002-7919-9678")))
+Description: Quantify and visualise various measures of chemical diversity and
+    dissimilarity, for phytochemical compounds and other sets of chemical
+    composition data. Importantly, these measures can incorporate biosynthetic
+    and/or structural properties of the chemical compounds, resulting in a more
+    comprehensive quantification of diversity and dissimilarity.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+biocViews:
+Imports: jsonlite, httr, vegan, webchem, fmcsR, ChemmineR, hillR, ape,
+        GUniFrac, tidygraph, igraph, ggraph, ggplot2, gridExtra,
+        ggdendro, tidyr, rlang, curl
+VignetteBuilder: knitr
+URL: https://github.com/hpetren/chemodiv
+BugReports: https://github.com/hpetren/chemodiv/issues
+NeedsCompilation: no
+Packaged: 2022-06-02 08:03:44 UTC; Hampus
+Author: Hampus Petrén [aut, cre] (<https://orcid.org/0000-0001-6490-4517>),
+  Tobias G. Köllner [aut] (<https://orcid.org/0000-0002-7037-904X>),
+  Robert R. Junker [aut] (<https://orcid.org/0000-0002-7919-9678>)
+Maintainer: Hampus Petrén <hampus.petren@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-02 11:20:02 UTC

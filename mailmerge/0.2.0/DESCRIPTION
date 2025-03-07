@@ -1,0 +1,33 @@
+Package: mailmerge
+Title: Mail Merge Using R Markdown Documents and 'gmailr'
+Version: 0.2.0
+Authors@R: 
+    person(given = "Andrie",
+           family = "de Vries",
+           role = c("aut", "cre"),
+           email = "apdevries@gmail.com")
+Description: Mail merge using markdown documents and gmail. With
+    this package you can parse markdown documents as the body of email,
+    and the 'yaml' header to specify the subject line of the email.  Any
+    '{}' braces in the email will be encoded with 'glue::glue()'. You can
+    preview the email in the RStudio viewer pane, and send (draft) email
+    using 'gmailr'.
+License: MIT + file LICENSE
+URL: https://github.com/andrie/mailmerge
+BugReports: https://github.com/andrie/mailmerge/issues
+Depends: R (>= 3.3)
+Imports: commonmark, gmailr, rstudioapi, googledrive, rmarkdown, dplyr,
+        glue, googlesheets4, magrittr, withr, purrr, utils, fs,
+        lifecycle, shiny, miniUI
+Suggests: spelling, covr, knitr, testthat (>= 2.1.0), here
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-04-09 11:51:18 UTC; apdev
+Author: Andrie de Vries [aut, cre]
+Maintainer: Andrie de Vries <apdevries@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-12 07:20:03 UTC

@@ -1,0 +1,57 @@
+Package: MassWateR
+Title: Quality Control and Analysis of Massachusetts Water Quality Data
+Version: 2.0.0
+Authors@R: c(
+    person(given = "Marcus",
+      family = "Beck",
+      role = c("aut", "cre"),
+      email = "mbeck@tbep.org",
+      comment = c(ORCID = "0000-0002-4996-0059")
+    ),
+    person(given = "Jill",
+      family = "Carr",
+      role = c("aut"),
+      email = "jill.carr@state.ma.us"
+    ),
+    person(given = "Ben",
+      family = "Wetherill",
+      role = c("aut"),
+      email = "bwetherill@acasak.com",
+      comment = c(ORCID = "0000-0002-8791-4256")
+    ),
+    person(given = "Pam",
+      family = "DiBona",
+      role = c("aut"),
+      email = "pamela.dibona@state.ma.us"
+    )
+  )
+Description: Methods for quality control and exploratory analysis of surface 
+  water quality data collected in Massachusetts, USA.  Functions are developed 
+  to facilitate data formatting for the Water Quality Exchange Network 
+  <https://www.epa.gov/waterdata/water-quality-data-upload-wqx> and reporting 
+  of data quality objectives to state agencies. Quality control methods are 
+  from Massachusetts Department of Environmental Protection (2020) 
+  <https://www.mass.gov/orgs/massachusetts-department-of-environmental-protection>.
+Depends: R (>= 3.5)
+Imports: dplyr, flextable, ggmap, ggplot2, ggrepel, ggspatial,
+        lubridate, RColorBrewer, rmarkdown, readxl, sf, tidyr, tibble,
+        units, writexl
+License: CC0
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+URL: <https://github.com/massbays-tech/MassWateR>,
+        <https://massbays-tech.github.io/MassWateR/>
+BugReports: https://github.com/massbays-tech/MassWateR/issues
+LazyData: true
+LazyDataCompression: xz
+Suggests: covr, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-01-18 22:23:24 UTC; MarcusBeck
+Author: Marcus Beck [aut, cre] (<https://orcid.org/0000-0002-4996-0059>),
+  Jill Carr [aut],
+  Ben Wetherill [aut] (<https://orcid.org/0000-0002-8791-4256>),
+  Pam DiBona [aut]
+Maintainer: Marcus Beck <mbeck@tbep.org>
+Repository: CRAN
+Date/Publication: 2023-01-20 10:20:07 UTC

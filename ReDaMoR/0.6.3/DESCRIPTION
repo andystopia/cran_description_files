@@ -1,0 +1,39 @@
+Package: ReDaMoR
+Type: Package
+Title: Relational Data Modeler
+Version: 0.6.3
+Authors@R: c(
+    person(
+        "Patrice", "Godard",
+        role = c("aut", "cre","cph"),
+        email = "patrice.godard@gmail.com"
+    )
+    )
+Maintainer: Patrice Godard <patrice.godard@gmail.com>
+Description: The aim of this package is to manipulate relational
+   data models in R.
+   It provides functions to create, modify and export data models
+   in json format.
+   It also allows importing models created
+   with 'MySQL Workbench' (<https://www.mysql.com/products/workbench/>).
+   These functions are accessible through a graphical user
+   interface made with 'shiny'.
+   Constraints such as types, keys, uniqueness and mandatory fields are
+   automatically checked and corrected when editing a model.
+   Finally, real data can be confronted to a model to check their compatibility.
+URL: https://github.com/patzaw/ReDaMoR
+BugReports: https://github.com/patzaw/ReDaMoR/issues
+Depends: R (>= 3.5), dplyr, magrittr, visNetwork
+Imports: readr, shiny, shinyjs, jsonlite, DT, colourpicker, rintrojs,
+        markdown, rstudioapi, crayon, igraph, utils, graphics, stats,
+        Matrix
+Suggests: knitr, rmarkdown, base64enc
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-04-13 06:54:25 UTC; pgodard
+Author: Patrice Godard [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2022-04-13 09:52:32 UTC

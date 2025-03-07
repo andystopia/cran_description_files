@@ -1,0 +1,32 @@
+Package: ECOTOXr
+Type: Package
+Title: Download and Extract Data from US EPA's ECOTOX Database
+Version: 1.0.5
+Date: 2023-10-09
+Authors@R: c(person("Pepijn", "de Vries", role = c("aut", "cre", "dtc"),
+    email = "pepijn.devries@outlook.com",
+    comment = c(ORCID = "0000-0002-7961-6646")))
+Author: Pepijn de Vries [aut, cre, dtc]
+    (<https://orcid.org/0000-0002-7961-6646>)
+Maintainer: Pepijn de Vries <pepijn.devries@outlook.com>
+Description: The US EPA ECOTOX database is a freely available database
+    with a treasure of aquatic and terrestrial ecotoxicological data.
+    As the online search interface doesn't come with an API, this
+    package provides the means to easily access and search the database
+    in R. To this end, all raw tables are downloaded from the EPA website
+    and stored in a local SQLite database.
+Depends: R (>= 3.5.0), RSQLite
+Imports: crayon, dbplyr, dplyr, httr, jsonlite, lifecycle, purrr,
+        rappdirs, readr, readxl, rlang, rvest, stringr, tibble, tidyr,
+        tidyselect, utils
+Suggests: DBI, standartox, testthat (>= 3.0.0), webchem
+URL: https://github.com/pepijn-devries/ECOTOXr
+BugReports: https://github.com/pepijn-devries/ECOTOXr/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-10-09 15:47:20 UTC; vries171
+Repository: CRAN
+Date/Publication: 2023-10-09 18:30:08 UTC

@@ -1,0 +1,40 @@
+Package: gorica
+Type: Package
+Date: 2019-11-24
+Title: Evaluation of Inequality Constrained Hypotheses Using GORICA
+Version: 0.1.0
+Authors@R: c(
+    person(c("Rebecca M."), "Kuiper", role = "aut"),
+    person(c("Altinisik"), "Yasin", role = "aut"),
+    person(c("Caspar", "J."), "van Lissa", role = c("aut", "cre"),
+    email = "c.j.vanlissa@uu.nl")
+    )
+Description: Implements the generalized order-restricted information criterion
+    approximation (GORICA) by Kuiper, Hoijtink, & Silvapulle (2012)
+    <doi:10.1016/j.jspi.2012.03.007>. The GORICA is an AIC-like information
+    criterion that
+    can be utilized to evaluate informative hypotheses specifying
+    directional relationships between model parameters in terms of (in)equality
+    constraints. The GORICA is applicable not only to
+    normal  linear models, but also to generalized linear models (GLMs),
+    generalized linear mixed models (GLMMs), and structural equation models
+    (SEMs). In addition, the GORICA can be utilized in the context of
+    contingency tables for which (in)equality constrained hypotheses do not
+    necessarily contain linear restrictions on cell probabilities, but instead
+    often contain non-linear restrictions on cell probabilities.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://informative-hypotheses.sites.uu.nl/software/goric/
+NeedsCompilation: no
+RoxygenNote: 6.1.1
+Depends: R (>= 3.0.0), bain (>= 0.2.2), stats
+Imports: MASS, mvtnorm, quadprog, lme4, lavaan
+Suggests: testthat
+Packaged: 2019-12-04 18:05:48 UTC; Lissa102
+Author: Rebecca M. Kuiper [aut],
+  Altinisik Yasin [aut],
+  Caspar J. van Lissa [aut, cre]
+Maintainer: Caspar J. van Lissa <c.j.vanlissa@uu.nl>
+Repository: CRAN
+Date/Publication: 2019-12-13 14:20:09 UTC

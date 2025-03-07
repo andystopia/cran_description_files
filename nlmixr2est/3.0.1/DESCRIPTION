@@ -1,0 +1,87 @@
+Type: Package
+Package: nlmixr2est
+Title: Nonlinear Mixed Effects Models in Population PK/PD, Estimation
+        Routines
+Version: 3.0.1
+Authors@R: c(
+    person("Matthew", "Fidler", , "matthew.fidler@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8538-6691")),
+    person("Yuan", "Xiong", , "yuan.xiong@gmail.com", role = "aut"),
+    person("Rik", "Schoemaker", , "rik.schoemaker@occams.com", role = "aut",
+           comment = c(ORCID = "0000-0002-7538-3005")),
+    person("Justin", "Wilkins", , "justin.wilkins@occams.com", role = "aut",
+           comment = c(ORCID = "0000-0002-7099-9396")),
+    person("Wenping", "Wang", , "wwang8198@gmail.com", role = "aut"),
+    person("Robert", "Leary", role = "ctb"),
+    person("Mason", "McComb", , "mason.c.mccomb@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-9871-8616")),
+    person("Vipul", "Mann", , "vm2583@columbia.edu", role = "aut"),
+    person("Mirjam", "Trame", , "mirjam.trame@gmail.com", role = "ctb"),
+    person("Mahmoud", "Abdelwahab", , "mah.tareq87@gmail.com", role = "ctb"),
+    person("Teun", "Post", , "t.post@lapp.nl", role = "ctb"),
+    person("Richard", "Hooijmaijers", , "richardhooijmaijers@gmail.com", role = "aut"),
+    person("Hadley", "Wickham", role = "ctb"),
+    person("Dirk", "Eddelbuettel", , "edd@debian.org", role = "cph"),
+    person("Johannes", "Pfeifer", role = "ctb"),
+    person("Robert B.", "Schnabel", role = "ctb"),
+    person("Elizabeth", "Eskow", role = "ctb"),
+    person("Emmanuelle", "Comets", , "emmanuelle.comets@inserm.fr", role = "ctb"),
+    person("Audrey", "Lavenu", role = "ctb"),
+    person("Marc", "Lavielle", role = "ctb"),
+    person("David", "Ardia", role = "cph"),
+    person("Katharine", "Mullen", role = "cph"),
+    person("Ben", "Goodrich", role = "ctb")
+  )
+Maintainer: Matthew Fidler <matthew.fidler@gmail.com>
+Description: Fit and compare nonlinear mixed-effects models in
+    differential equations with flexible dosing information commonly seen
+    in pharmacokinetics and pharmacodynamics (Almquist, Leander, and
+    Jirstrand 2015 <doi:10.1007/s10928-015-9409-1>). Differential equation
+    solving is by compiled C code provided in the 'rxode2' package (Wang,
+    Hallow, and James 2015 <doi:10.1002/psp4.12052>).
+License: GPL (>= 3)
+URL: https://github.com/nlmixr2/nlmixr2est,
+        https://nlmixr2.github.io/nlmixr2est/
+Depends: nlmixr2data, R (>= 4.0)
+Imports: backports, checkmate, cli, graphics, knitr, lbfgsb3c, lotri,
+        magrittr, Matrix, methods, minqa, n1qn1 (>= 6.0.1-12), nlme,
+        Rcpp, rex, rxode2 (>= 3.0.0), stats, symengine, utils
+Suggests: broom.mixed, crayon, data.table, devtools, digest, dplyr (>=
+        1.1.0), generics, nloptr, qs, sys, testthat, tibble, withr,
+        xgxr, sfsmisc, minpack.lm, remotes
+LinkingTo: BH, n1qn1 (>= 6.0.1-12), lbfgsb3c (>= 2024-3.5), lotri (>=
+        0.5.0), Rcpp, RcppArmadillo (>= 0.11.2.3.1), RcppEigen, rxode2
+        (>= 3.0.0)
+Biarch: true
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+LazyData: true
+Packaged: 2024-10-22 22:33:25 UTC; matt
+Author: Matthew Fidler [aut, cre] (<https://orcid.org/0000-0001-8538-6691>),
+  Yuan Xiong [aut],
+  Rik Schoemaker [aut] (<https://orcid.org/0000-0002-7538-3005>),
+  Justin Wilkins [aut] (<https://orcid.org/0000-0002-7099-9396>),
+  Wenping Wang [aut],
+  Robert Leary [ctb],
+  Mason McComb [ctb] (<https://orcid.org/0000-0001-9871-8616>),
+  Vipul Mann [aut],
+  Mirjam Trame [ctb],
+  Mahmoud Abdelwahab [ctb],
+  Teun Post [ctb],
+  Richard Hooijmaijers [aut],
+  Hadley Wickham [ctb],
+  Dirk Eddelbuettel [cph],
+  Johannes Pfeifer [ctb],
+  Robert B. Schnabel [ctb],
+  Elizabeth Eskow [ctb],
+  Emmanuelle Comets [ctb],
+  Audrey Lavenu [ctb],
+  Marc Lavielle [ctb],
+  David Ardia [cph],
+  Katharine Mullen [cph],
+  Ben Goodrich [ctb]
+Repository: CRAN
+Date/Publication: 2024-10-22 23:20:02 UTC

@@ -1,0 +1,42 @@
+Type: Package
+Package: tidycells
+Title: Read Tabular Data from Diverse Sources and Easily Make Them Tidy
+Version: 0.2.2
+Authors@R: 
+    person(given = "Indranil",
+           family = "Gayen",
+           role = c("aut", "cre"),
+           email = "nil.gayen@gmail.com",
+           comment = c(ORCID = "0000-0003-0197-1944"))
+Description: Provides utilities to read, cells from complex
+    tabular data and heuristic detection based 'structural assignment' of
+    those cells to a columnar or tidy format. Read functionality has the
+    ability to read structured, partially structured or unstructured
+    tabular data from various types of documents. The 'structural
+    assignment' functionality has both supervised and unsupervised way of
+    assigning cells data to columnar/tidy format. Multiple disconnected
+    blocks of tables in a single sheet are also handled appropriately.
+    These tools are suitable for unattended conversation of messy tables
+    into a consumable format(usable for further analysis and data
+    wrangling).
+License: MIT + file LICENSE
+URL: https://r-rudra.github.io/tidycells/,
+        https://github.com/r-rudra/tidycells
+BugReports: https://github.com/r-rudra/tidycells/issues
+Depends: R (>= 3.2.0)
+Imports: dplyr (>= 0.8.1), ggplot2, graphics, magrittr, methods, purrr
+        (>= 0.3.2), rlang, stats, stringr (>= 1.4.0), tibble, tidyr,
+        unpivotr (>= 0.5.1), utils
+Suggests: cli, covr, docxtractr, DT, knitr, miniUI, plotly, readr,
+        readxl, rmarkdown, rstudioapi, shiny, shinytest, stringdist,
+        tabulizer, testthat (>= 2.1.0), tidyxl, xlsx, XML
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-01-07 14:21:16 UTC; igayen
+Author: Indranil Gayen [aut, cre] (<https://orcid.org/0000-0003-0197-1944>)
+Maintainer: Indranil Gayen <nil.gayen@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-09 19:10:09 UTC

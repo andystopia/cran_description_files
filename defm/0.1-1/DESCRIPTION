@@ -1,0 +1,30 @@
+Package: defm
+Type: Package
+Title: Estimation and Simulation of Multi-Binary Response Models
+Version: 0.1-1
+Authors@R: c(
+    person("George", "Vega Yon", role=c("aut", "cre"),
+    email="g.vegayon@gmail.com", comment = c(ORCID = "0000-0002-3171-0844")),
+    person(
+        "Department of Veterans Affairs - Rehabilitation, Research, and Development Service",
+        role = "fnd",
+        comment = "Award/W81XWH-18-PH/TBIRP-LIMBIC under Award No. I01 RX003443"
+        ))
+Description: Multi-binary response models are a class of models that allow for the estimation of multiple binary outcomes simultaneously. This package provides functions to estimate and simulate these models using the Discrete Exponential-Family Models [DEFM] framework. In it, we implement the models described in Vega Yon, Valente, and Pugh (2023) <doi:10.48550/arXiv.2211.00627>. DEFMs include Exponential-Family Random Graph Models [ERGMs], which characterize graphs using sufficient statistics, which is also the core of DEFMs. Using sufficient statistics, we can describe the data through meaningful motifs, for example, transitions between different states, joint distribution of the outcomes, etc. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp
+Imports: Rcpp, stats
+Depends: R (>= 2.10), stats4
+Suggests: texreg
+NeedsCompilation: yes
+Packaged: 2023-09-06 21:40:07 UTC; george
+Author: George Vega Yon [aut, cre] (<https://orcid.org/0000-0002-3171-0844>),
+  Department of Veterans Affairs - Rehabilitation, Research, and
+    Development Service [fnd] (Award/W81XWH-18-PH/TBIRP-LIMBIC under
+    Award No. I01 RX003443)
+Maintainer: George Vega Yon <g.vegayon@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-07 08:30:07 UTC

@@ -1,0 +1,31 @@
+Package: CohortAlgebra
+Type: Package
+Title: Use of Interval Algebra to Create New Cohort(s) from Existing
+        Cohorts
+Version: 0.2.0
+Date: 2024-01-28
+Authors@R: c(
+    person("Gowtham", "Rao", email = "rao@ohdsi.org", role = c("aut", "cre")),
+    person("Observational Health Data Science and Informatics", role = c("cph"))
+  )
+Maintainer: Gowtham Rao <rao@ohdsi.org>
+Description: This software tool is designed to generate new cohorts utilizing data from 
+    previously instantiated cohorts. It employs interval algebra operators such as UNION, 
+    INTERSECT, and MINUS to manipulate the data within the instantiated cohorts and 
+    create new cohorts.
+Depends: DatabaseConnector (>= 5.0.0), R (>= 4.0.0)
+Imports: checkmate, dplyr, lifecycle, rlang, SqlRender
+Suggests: Andromeda, knitr, rmarkdown, testthat, withr
+License: Apache License
+RoxygenNote: 7.3.0
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+URL: https://github.com/OHDSI/CohortAlgebra
+BugReports: https://github.com/OHDSI/CohortAlgebra/issues
+NeedsCompilation: no
+Packaged: 2024-01-28 11:34:42 UTC; admin_grao9
+Author: Gowtham Rao [aut, cre],
+  Observational Health Data Science and Informatics [cph]
+Repository: CRAN
+Date/Publication: 2024-01-28 11:50:07 UTC

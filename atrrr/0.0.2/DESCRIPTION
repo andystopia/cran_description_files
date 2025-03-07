@@ -1,0 +1,45 @@
+Package: atrrr
+Title: Wrapper for the 'AT' Protocol Behind 'Bluesky'
+Version: 0.0.2
+Authors@R: 
+    c(person(given = "Johannes B.",
+             family = "Gruber",
+             email = "JohannesB.Gruber@gmail.com", 
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-9177-1772")),
+      person(given = "Benjamin", 
+             family = "Guinaudeau", 
+             email = "benjamin.guinaudeau@uni-konstanz.de", 
+             role = c("aut", "ctb"),
+             comment = c(ORCID = "0000-0001-7206-6875")),
+      person(given = "Fabio", 
+             family = "Votta", 
+             email = "fabio.votta@gmail.com", 
+             role = c("aut", "ctb"),
+             comment = c(ORCID = "0000-0002-3143-5942")))
+Description: Wraps the 'AT' Protocol (Authenticated Transfer Protocol) behind 
+    'Bluesky' <https://blueskyweb.xyz>. Functions can be used for, among others, 
+    retrieving posts and followers from the network or posting content.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, glue, httr2 (>= 1.0.0), methods, purrr, rlang, stringr,
+        snakecase, tibble, utils
+Depends: R (>= 4.1)
+LazyData: true
+Suggests: askpass, curl, dplyr, forcats, ggplot2, ggraph, igraph,
+        jsonlite, knitr, magick, rmarkdown, testthat (>= 3.0.0),
+        tidygraph
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://jbgruber.github.io/atrrr/,
+        https://github.com/JBGruber/atrrr
+NeedsCompilation: no
+Packaged: 2024-01-09 13:06:55 UTC; johannes
+Author: Johannes B. Gruber [aut, cre] (<https://orcid.org/0000-0001-9177-1772>),
+  Benjamin Guinaudeau [aut, ctb]
+    (<https://orcid.org/0000-0001-7206-6875>),
+  Fabio Votta [aut, ctb] (<https://orcid.org/0000-0002-3143-5942>)
+Maintainer: Johannes B. Gruber <JohannesB.Gruber@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-10 14:03:09 UTC

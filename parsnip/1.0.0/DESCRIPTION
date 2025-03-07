@@ -1,0 +1,47 @@
+Package: parsnip
+Title: A Common API to Modeling and Analysis Functions
+Version: 1.0.0
+Authors@R: c(
+    person("Max", "Kuhn", , "max@rstudio.com", role = c("aut", "cre")),
+    person("Davis", "Vaughan", , "davis@rstudio.com", role = "aut"),
+    person("Emil", "Hvitfeldt", , "emilhhvitfeldt@gmail.com", role = "ctb"),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Maintainer: Max Kuhn <max@rstudio.com>
+Description: A common interface is provided to allow users to specify a
+    model without having to remember the different argument names across
+    different functions or computational engines (e.g. 'R', 'Spark',
+    'Stan', etc).
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/parsnip,
+        https://parsnip.tidymodels.org/
+BugReports: https://github.com/tidymodels/parsnip/issues
+Depends: R (>= 2.10)
+Imports: cli, dplyr (>= 0.8.0.1), generics (>= 0.1.2), ggplot2,
+        globals, glue, hardhat (>= 1.1.0), lifecycle, magrittr, pillar,
+        prettyunits, purrr, rlang (>= 0.3.1), stats, tibble (>= 2.1.1),
+        tidyr (>= 1.0.0), utils, vctrs (>= 0.4.1), withr
+Suggests: C50, covr, dials (>= 0.1.0), earth, ggrepel, keras, kernlab,
+        kknn, knitr, LiblineaR, MASS, Matrix, mgcv, modeldata, nlme,
+        ranger (>= 0.12.0), remotes, rmarkdown, rpart, sparklyr (>=
+        1.0.0), survival, tensorflow, testthat (>= 3.0.0), xgboost (>=
+        1.5.0.1)
+VignetteBuilder: knitr
+ByteCompile: true
+Config/Needs/website: C50, dbarts, earth, glmnet, keras, kernlab, kknn,
+        LiblineaR, mgcv, nnet, parsnip, randomForest, ranger, rpart,
+        rstanarm, tidymodels/tidymodels, tidyverse/tidytemplate,
+        rstudio/reticulate, xgboost
+Config/rcmdcheck/ignore-inconsequential-notes: true
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+RoxygenNote: 7.2.0.9000
+NeedsCompilation: no
+Packaged: 2022-06-13 15:02:44 UTC; max
+Author: Max Kuhn [aut, cre],
+  Davis Vaughan [aut],
+  Emil Hvitfeldt [ctb],
+  RStudio [cph, fnd]
+Repository: CRAN
+Date/Publication: 2022-06-16 10:20:02 UTC

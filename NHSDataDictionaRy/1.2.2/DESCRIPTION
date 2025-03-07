@@ -1,0 +1,31 @@
+Package: NHSDataDictionaRy
+Type: Package
+Title: NHS Data Dictionary Toolset for NHS Lookups
+Version: 1.2.2
+Authors@R: c(
+          person("Gary", "Hutson", , "g.hutson@nhs.net", c("aut", "cre")),
+          person("Calum", "Polwart", , "calum.polwart@nhs.net", "aut")
+          )
+Maintainer: Gary Hutson <g.hutson@nhs.net>
+Description: Providing a common set of simplified web scraping tools for working with the NHS Data Dictionary <https://datadictionary.nhs.uk/data_elements_overview.html>.
+    The intended usage is to access the data elements section of the NHS Data Dictionary to access key lookups.
+    The benefits of having it in this package are that the lookups are the live lookups on the website and will not need to be maintained.
+    This package was commissioned by the NHS-R community to provide this consistency of lookups.
+    The OpenSafely lookups have now been added <https://codelists.opensafely.org/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.1
+Imports: xml2, dplyr, magrittr, rvest, stringr, purrr, tibble
+Collate: 'left_xl.R' 'len_xl.R' 'linkScrapeR.R' 'mid_xl.R'
+        'nhs_data_elements.R' 'right_xl.R' 'scrapeR.R' 'tableR.R'
+        'openSafely_listR.R' 'xpathTextR.R'
+Suggests: knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-03-30 09:55:04 UTC; garyh
+Author: Gary Hutson [aut, cre],
+  Calum Polwart [aut]
+Repository: CRAN
+Date/Publication: 2021-03-30 11:10:11 UTC

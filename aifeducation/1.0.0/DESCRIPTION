@@ -1,0 +1,71 @@
+Type: Package
+Package: aifeducation
+Title: Artificial Intelligence for Education
+Version: 1.0.0
+Authors@R: c(
+    person("Berding", "Florian", , "florian.berding@uni-hamburg.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3593-1695")),
+    person("Tykhonova", "Yuliia", , "yuliia.tykhonova@uni-hamburg.de", role = "aut",
+           comment = c(ORCID = "0009-0006-9015-1006")),
+    person("Pargmann", "Julia", , "julia.pargmann@uni-hamburg.de", role = "ctb",
+           comment = c(ORCID = "0000-0003-3616-0172")),
+    person("Leube", "Anna", , "anna.leube@uni-hamburg.de", role = "ctb",
+           comment = c(ORCID = "0009-0001-6949-1608")),
+    person("Riebenbauer", "Elisabeth", , "elisabeth.riebenbauer@uni-graz.at", role = "ctb",
+           comment = c(ORCID = "0000-0002-8535-3694")),
+    person("Rebmann", "Karin", , "karin.rebmann@uni-oldenburg.de", role = "ctb"),
+    person("Slopinski", "Andreas", , "andreas.slopinski@uni-oldenburg.de", role = "ctb")
+  )
+Description: In social and educational settings, the use of Artificial
+    Intelligence (AI) is a challenging task. Relevant data is often only
+    available in handwritten forms, or the use of data is restricted by
+    privacy policies. This often leads to small data sets. Furthermore, in
+    the educational and social sciences, data is often unbalanced in terms
+    of frequencies. To support educators as well as educational and social
+    researchers in using the potentials of AI for their work, this package
+    provides a unified interface for neural nets in 'PyTorch' to deal with
+    natural language problems. In addition, the package ships with a shiny
+    app, providing a graphical user interface.  This allows the usage of
+    AI for people without skills in writing python/R scripts.  The tools
+    integrate existing mathematical and statistical methods for dealing
+    with small data sets via pseudo-labeling (e.g. Cascante-Bonilla et al.
+    (2020) <doi:10.48550/arXiv.2001.06001>) and imbalanced data via the
+    creation of synthetic cases (e.g.  Bunkhumpornpat et al. (2012)
+    <doi:10.1007/s10489-011-0287-y>).  Performance evaluation of AI is
+    connected to measures from content analysis which educational and
+    social researchers are generally more familiar with (e.g. Berding &
+    Pargmann (2022) <doi:10.30819/5581>, Gwet (2014)
+    <ISBN:978-0-9708062-8-4>, Krippendorff (2019)
+    <doi:10.4135/9781071878781>). Estimation of energy consumption and CO2
+    emissions during model training is done with the 'python' library
+    'codecarbon'.  Finally, all objects created with this package allow to
+    share trained AI models with other people.
+License: GPL-3
+URL: https://fberding.github.io/aifeducation/
+BugReports: https://github.com/cran/aifeducation/issues
+Depends: R (>= 3.5.0)
+Imports: doParallel, foreach, iotarelr(>= 0.1.5), irrCAC, methods, Rcpp
+        (>= 1.0.10), reshape2, reticulate (>= 1.34.0), rlang,
+        smotefamily, stringi, utils
+Suggests: bslib, DT, fs, future, ggplot2, knitr, promises, readtext,
+        readxl, rmarkdown, shiny(>= 1.9.0), shinyFiles, shinyWidgets,
+        sortable, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+SystemRequirements: PyTorch (see vignette "Get started")
+NeedsCompilation: yes
+Packaged: 2024-12-20 08:06:57 UTC; WissMit
+Author: Berding Florian [aut, cre] (<https://orcid.org/0000-0002-3593-1695>),
+  Tykhonova Yuliia [aut] (<https://orcid.org/0009-0006-9015-1006>),
+  Pargmann Julia [ctb] (<https://orcid.org/0000-0003-3616-0172>),
+  Leube Anna [ctb] (<https://orcid.org/0009-0001-6949-1608>),
+  Riebenbauer Elisabeth [ctb] (<https://orcid.org/0000-0002-8535-3694>),
+  Rebmann Karin [ctb],
+  Slopinski Andreas [ctb]
+Maintainer: Berding Florian <florian.berding@uni-hamburg.de>
+Repository: CRAN
+Date/Publication: 2024-12-20 08:30:02 UTC

@@ -1,0 +1,46 @@
+Package: heemod
+Title: Markov Models for Health Economic Evaluations
+Version: 0.15.0
+Authors@R: c(
+    person("Kevin", "Zarca", email = "kevin.zarca@gmail.com", role = c("aut", "cre")),
+    person("Antoine", "Filipovic-Pierucci", role = "aut"),
+    person("Matthew", "Wiener", role = "ctb"),  
+    person("Zdenek", "Kabat", role = "ctb"),
+    person("Vojtech", "Filipec", role = "ctb"),
+	  person("Jordan", "Amdahl", role=c("ctb")),
+	  person("Yonatan", "Carranza Alarcon", role=c("ctb")),
+	  person("Vince", "Daniels", role=c("ctb"))
+    )
+Description: An implementation of the modelling and reporting features described 
+    in reference textbook and guidelines (Briggs, Andrew, et al. Decision 
+    Modelling for Health Economic Evaluation. Oxford Univ. Press, 2011;
+    Siebert, U. et al. State-Transition Modeling. Medical Decision Making 
+    32, 690-700 (2012).): deterministic and probabilistic sensitivity analysis, 
+    heterogeneity analysis, time dependency on state-time and model-time 
+    (semi-Markov and non-homogeneous Markov models), etc.
+Depends: R (>= 3.6.0)
+Imports: dplyr (>= 1.0.9), ggplot2 (>= 3.3.3), lazyeval (>= 0.2.2),
+        memoise (>= 2.0.0), mvnfast (>= 0.2.5), plyr (>= 1.8.6), pryr
+        (>= 0.1.4), tibble (>= 3.0.6), rlang (>= 1.0.2), purrr (>=
+        0.3.4)
+License: GPL (>= 3)
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Suggests: BCEA, diagram, flexsurv, knitr, logitnorm, lpSolve, mgcv,
+        optimx, parallel, readxl, rgho, rmarkdown, stringr, survival,
+        testthat, triangle, magrittr, cli
+BugReports: https://github.com/pierucci/heemod/issues
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-02-14 14:58:39 UTC; kevin
+Author: Kevin Zarca [aut, cre],
+  Antoine Filipovic-Pierucci [aut],
+  Matthew Wiener [ctb],
+  Zdenek Kabat [ctb],
+  Vojtech Filipec [ctb],
+  Jordan Amdahl [ctb],
+  Yonatan Carranza Alarcon [ctb],
+  Vince Daniels [ctb]
+Maintainer: Kevin Zarca <kevin.zarca@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-14 15:50:10 UTC

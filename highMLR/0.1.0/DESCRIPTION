@@ -1,0 +1,31 @@
+Title: Feature Selection for High Dimensional Survival Data
+Package: highMLR
+Version: 0.1.0
+Date: 2021-05-08
+Depends: R (>= 3.5.0)
+Imports: mlr3, mlr3proba, mlr3learners, survival, gtools, tibble,
+        dplyr, utils, coxme, missForest
+LazyData: Yes
+LazyDataCompression: xz
+ByteCompile: Yes
+Authors@R: c(person(("Atanu"), "Bhattacharjee",
+                    email="atanustat@gmail.com",
+	            role=c("aut", "cre","ctb")),
+	            person(("Gajendra"), "K. Vishwakarma", role=c("aut","ctb")),
+	            person(("Souvik"),"Banerjee", role=c("aut","ctb")))
+Description: Perform high dimensional Feature Selection in the presence of survival outcome.
+            Based on Feature Selection method and different survival analysis, it will obtain the best 
+            markers with optimal threshold levels according to their effect on disease progression
+            and produce the most consistent level according to those threshold values. 
+            The functions' methodology is based on by Sonabend et al (2021) <doi:10.1093/bioinformatics/btab039>  and Bhattacharjee  et al (2021) <arXiv:2012.02102>.
+License: GPL-3
+Encoding: UTF-8
+NeedsCompilation: no
+Maintainer: Atanu Bhattacharjee <atanustat@gmail.com>
+RoxygenNote: 7.1.1
+Packaged: 2021-05-10 10:45:29 UTC; Atanu
+Author: Atanu Bhattacharjee [aut, cre, ctb],
+  Gajendra K. Vishwakarma [aut, ctb],
+  Souvik Banerjee [aut, ctb]
+Repository: CRAN
+Date/Publication: 2021-05-11 09:40:08 UTC

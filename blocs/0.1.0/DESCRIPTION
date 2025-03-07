@@ -1,0 +1,45 @@
+Package: blocs
+Type: Package
+Title: Estimate and Visualize Voting Blocs' Partisan Contributions
+Version: 0.1.0
+Authors@R: c(
+    person("Justin", "Grimmer", 
+           email = "jgrimmer@stanford.edu", 
+           role = "aut"
+           ),
+    person("Will", "Marble", 
+           email = "wmarble@princeton.edu", 
+           role = "aut",
+           comment = c(ORCID = "0000-0001-9352-5540")
+           ),
+    person("Cole", "Tanigawa-Lau", 
+           email = "coletl@stanford.edu", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8656-571X")
+           )
+           )
+Maintainer: Cole Tanigawa-Lau <coletl@stanford.edu>
+Description: Functions to combine data on voting blocs' 
+    size, turnout, and vote choice to estimate each bloc's
+    vote contributions to the Democratic and Republican parties.
+    The package also includes functions for uncertainty estimation and
+    plotting. Users may define voting blocs along a discrete or continuous variable.
+    The package implements methods described in Grimmer, Marble, and Tanigawa-Lau (2022) <doi:10.31235/osf.io/c9fkg>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Suggests: devtools (>= 2.4.3), questionr (>= 0.7.7), reldist (>=
+        1.7.0), testthat (>= 3.1.3)
+Config/testthat/edition: 3
+RoxygenNote: 7.2.0
+Imports: collapse (>= 1.7.6), dplyr (>= 1.0.6), ggplot2 (>= 3.2.0), ks
+        (>= 1.13.4), mgcv (>= 1.8.39), rlang (>= 1.0.0), tibble (>=
+        3.0.0)
+Depends: R (>= 3.6.0)
+NeedsCompilation: no
+Packaged: 2022-11-23 00:46:18 UTC; cole
+Author: Justin Grimmer [aut],
+  Will Marble [aut] (<https://orcid.org/0000-0001-9352-5540>),
+  Cole Tanigawa-Lau [aut, cre] (<https://orcid.org/0000-0002-8656-571X>)
+Repository: CRAN
+Date/Publication: 2022-11-23 11:20:06 UTC

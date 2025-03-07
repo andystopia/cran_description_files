@@ -1,0 +1,13 @@
+Package: LumiWCluster
+Version: 1.0.2
+Date: 2010-09-02
+Title: Weighted model based clustering
+Author: Pei Fen Kuan <pfkuan@bios.unc.edu>, Xin Zhou <xinzhou@email.unc.edu>
+Maintainer: Xin Zhou <xinzhou@email.unc.edu>
+Depends: R (>= 2.10.0)
+Description: The LumiWCluster package implements the proposed weighted model based clustering for Illumina Methylation BeadArray (Kuan et al., 2010). There are two parts to this package. The first part provides function to normalize the methylation data from the Illumina GoldenGate platform. We will include the normalization for Illumina Infinium platform in future. The second part provides function to identify subgroups with distinct methylation profiles in Illumina BeadArray. It works for both Infinium and GoldenGate platform, as well as any other platforms including gene expression arrays. The core of the algorithm is based on the paper by Wang and Zhu (2008), which automatically selects important CpGs/probes. LumiWCluster incorporates the detection p-values (a quality measure of probe performance reported by Illumina BeadStudio or GenomeStudio) systematically in the clustering algorithm and avoids arbitrary cutoff for excluding unreliable probes. Further details and motivation can be found in Kuan et al. (2010).
+License: GPL (>= 2)
+Packaged: 2014-04-13 23:11:57 UTC; peifenkuan
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-04-14 18:40:03

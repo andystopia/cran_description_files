@@ -1,0 +1,39 @@
+Package: RCPA
+Type: Package
+Title: Consensus Pathway Analysis
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Zeynab", family = "Maghsoudi", email = "zmaghsoudi@nevada.unr.edu", role = c("aut", "cre")),
+    person(given = "Phi Hung", family = "Bya", role = c("aut")),
+    person(given = "Tin", family = "Nguyen", role = c("fnd")))
+Description: Consensus Pathway Analysis provides a set of functions to perform pathway analysis and meta analysis from multiple gene expression datasets, as well as visualization of the results.
+    The package is wrapper of packages listed below.
+    Ritchie et al. (2015) <doi:10.1093/nar/gkv007>.
+    Love et al. (2014) <doi:10.1186/s13059-014-0550-8>.
+    Robinson et al. (2010) <doi:10.1093/bioinformatics/btp616>.
+    Korotkevich et al. (2016) <arxiv:10.1101/060012>.
+    Efron et al. (2015) <https://CRAN.R-project.org/package=GSA>.
+    Gu, Z. (2012) <https://CRAN.R-project.org/package=CePa>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0), methods, tidyr, dplyr, ggplot2, utils, stats
+biocViews: Biobase, DESeq2, GEOquery, affy, affyPLM, edgeR, limma,
+        RCyjs, fgsea, BrowserViz, oligo, SummarizedExperiment,
+        AnnotationDbi, ROntoTools
+Imports: AnnotationDbi, SummarizedExperiment, BiocManager, Biobase,
+        DESeq2, GEOquery, affy, affyPLM, edgeR, limma, oligo, stringr,
+        ggnewscale, ggrepel, graph, httr, rlang, ggpattern, scales
+RoxygenNote: 7.2.3
+Suggests: knitr, testthat (>= 3.0.0), ROntoTools, RCyjs, fgsea,
+        BrowserViz, GSA, CePa, meta, png, ggvenn, RCurl, XML,
+        S4Vectors, devtools, hgu133plus2.db, org.Hs.eg.db
+Config/testthat/edition: 3
+Config/testthat/stop-on-test-error: false
+NeedsCompilation: no
+Packaged: 2023-05-11 01:27:21 UTC; zmaghsoudi
+Author: Zeynab Maghsoudi [aut, cre],
+  Phi Hung Bya [aut],
+  Tin Nguyen [fnd]
+Maintainer: Zeynab Maghsoudi <zmaghsoudi@nevada.unr.edu>
+Repository: CRAN
+Date/Publication: 2023-05-11 10:10:08 UTC

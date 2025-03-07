@@ -1,0 +1,21 @@
+Package: gmmsslm
+Type: Package
+Title: Semi-Supervised Gaussian Mixture Model with a Missing-Data
+        Mechanism
+Version: 1.1.4
+Authors@R: c(person("Ziyang Lyu", role = c("aut", "cre"), email = "ziyang.lyu@unsw.edu.au"),person("Daniel Ahfock", role = "aut"),person("Ryan Thompson", role = "aut"),person("Geoffrey J. McLachlan", role = "aut"))
+Description: The algorithm of semi-supervised learning is based on finite Gaussian mixture models and includes a mechanism for handling missing data. It aims to fit a g-class Gaussian mixture model using maximum likelihood. The algorithm treats the labels of unclassified features as missing data, building on the framework introduced by Rubin (1976) <doi:10.2307/2335739> for missing data analysis. By taking into account the dependencies in the missing pattern, the algorithm provides more information for determining the optimal classifier, as specified by Bayes' rule.
+Depends: R (>= 3.1.0), mvtnorm,stats,methods
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-16 05:02:58 UTC; lyu
+Author: Ziyang Lyu [aut, cre],
+  Daniel Ahfock [aut],
+  Ryan Thompson [aut],
+  Geoffrey J. McLachlan [aut]
+Maintainer: Ziyang Lyu <ziyang.lyu@unsw.edu.au>
+Repository: CRAN
+Date/Publication: 2023-05-16 05:20:02 UTC

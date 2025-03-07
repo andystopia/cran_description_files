@@ -1,0 +1,48 @@
+Package: censo2017
+Title: Base de Datos de Facil Acceso del Censo 2017 de Chile (2017
+        Chilean Census Easy Access Database)
+Version: 0.1
+Authors@R: c( 
+        person(given = "Mauricio",
+               family = "Vargas",
+               role = c("aut", "cre"),
+               email = "mvargas@dcc.uchile.cl",
+               comment = c(ORCID = "0000-0003-1017-7574")),
+        person(given = "Juan",
+               family = "Correa",
+               role = c("ctb")),
+        person(family = "Instituto Nacional de Estadisticas (INE)",
+               role = c("dtc")
+        )
+    )
+Description: Provee un acceso conveniente a mas de 17 millones de registros
+    de la base de datos del Censo 2017. Los datos fueron importados desde
+    el DVD oficial del INE usando el Convertidor REDATAM creado por Pablo De
+    Grande y ademas se proporcionan los mapas que acompanian a estos
+    datos. Esta paquete esta documentado intencionalmente en castellano 
+    asciificado para que funcione sin problema en diferentes plataformas.
+    (Provides convenient access to more than 17 million records from the
+    Chilean Census 2017 database. The datasets were imported from the official 
+    DVD provided by the Chilean National Bureau of Statistics by using the
+    REDATAM converter created by Pablo De Grande and in addition it includes the
+    maps accompanying these datasets.)
+URL: https://pacha.dev/censo2017/
+BugReports: https://github.com/pachamaltese/censo2017/issues/
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Imports: DBI, RSQLite, rappdirs, httr, R.utils, tibble, purrr, sf, cli,
+        crayon, rstudioapi
+Suggests: devtools, usethis, testthat, covr, dplyr, dbplyr, ggplot2,
+        knitr, rmarkdown, chilemapas
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2020-11-05 18:49:45 UTC; pacha
+Author: Mauricio Vargas [aut, cre] (<https://orcid.org/0000-0003-1017-7574>),
+  Juan Correa [ctb],
+  Instituto Nacional de Estadisticas (INE) [dtc]
+Maintainer: Mauricio Vargas <mvargas@dcc.uchile.cl>
+Repository: CRAN
+Date/Publication: 2020-11-11 09:10:15 UTC

@@ -1,0 +1,28 @@
+Package: runonce
+Title: Run Once and Save Result
+Version: 0.2.2
+Authors@R: 
+    person(given = "Florian",
+           family = "Privé",
+           role = c("aut", "cre"),
+           email = "florian.prive.21@gmail.com")
+Description: Package 'runonce' helps automating the saving of long-running code
+    to help running the same code multiple times. If you run some long-running 
+    code once, it saves the result in a file on disk. Then, if the result 
+    already exists, i.e. if the code has already been run and its output has 
+    already been saved, it just read the result from the stored file instead 
+    of running the code again. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Imports: bigassertr, urltools
+Suggests: testthat (>= 2.1.0)
+URL: https://github.com/privefl/runonce
+BugReports: https://github.com/privefl/runonce/issues
+NeedsCompilation: no
+Packaged: 2020-07-14 11:31:24 UTC; au639593
+Author: Florian Privé [aut, cre]
+Maintainer: Florian Privé <florian.prive.21@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-07-27 12:00:02 UTC

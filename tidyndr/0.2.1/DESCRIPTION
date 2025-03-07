@@ -1,0 +1,48 @@
+Package: tidyndr
+Title: Analysis of the Nigeria National Data Repository (NDR)
+Version: 0.2.1
+Authors@R: 
+    c(person(given = "Stephen",
+           family = "Balogun",
+           role = c("aut", "cre"),
+           email = "stephentaiyebalogun@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0002-9928-3703")),
+           person(given = "Scholastica",
+           family = "Olanrewaju",
+           role = "ctb"),
+            person(given = "Oluwaseun",
+           family = "Okunuga",
+           role = "ctb"),
+            person(given = "Temitope",
+           family = "Kolade",
+           role = "ctb"),
+            person(given = "Geraldine",
+           family = "Abone",
+           role = "ctb"))
+Description: The goal is to simplify routine analysis of the Nigeria National  Data Repository (NDR) <https://ndr.phis3project.org.ng> using the PEPFAR Monitoring, Evaluation, and Reporting (MER) indicators (see <https://datim.zendesk.com/hc/en-us/articles/360000084446-MER-Indicator-Reference-Guides>). It is designed to import in to R patient-level line-list downloaded as 'csv' file from the front-end of the NDR.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 3.6)
+Imports: dplyr (>= 1.0.3), forcats, janitor (>= 2.1.0), lubridate (>=
+        1.7.9.2), magrittr (>= 2.0.1), purrr (>= 0.3.4), rlang (>=
+        0.4.10), stringr, stats, tibble, tidyr, vroom (>= 1.3.2),
+        tidyselect
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spelling
+Config/testthat/edition: 3
+Config/rcmdcheck/ignore-inconsequential-notes: true
+URL: https://github.com/stephenbalogun/tidyndr
+BugReports: https://github.com/stephenbalogun/tidyndr/issues
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-04-07 13:42:01 UTC; DR. BALOGUN STEPHEN
+Author: Stephen Balogun [aut, cre] (<https://orcid.org/0000-0002-9928-3703>),
+  Scholastica Olanrewaju [ctb],
+  Oluwaseun Okunuga [ctb],
+  Temitope Kolade [ctb],
+  Geraldine Abone [ctb]
+Maintainer: Stephen Balogun <stephentaiyebalogun@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-04-08 06:40:02 UTC

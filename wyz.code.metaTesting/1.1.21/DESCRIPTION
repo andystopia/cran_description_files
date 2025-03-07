@@ -1,0 +1,34 @@
+Package: wyz.code.metaTesting
+Type: Package
+Title: Wizardry Code Meta Testing
+Version: 1.1.21
+Author: Fabien Gelineau <neonira@gmail.com>
+Maintainer: Fabien Gelineau <neonira@gmail.com>
+Description: Meta testing is the ability to test a function without having to 
+    provide its parameter values.
+    Those values will be generated, based on semantic naming of parameters, as 
+    introduced by package 'wyz.code.offensiveProgramming'.
+    Value generation logic can be completed with your own data types 
+    and generation schemes. This to meet your most specific requirements and to 
+    answer to a wide variety of usages, from general use case to very specific
+    ones.
+    While using meta testing, it becomes easier to generate stress test 
+    campaigns, non-regression test campaigns and robustness test campaigns, as 
+    generated tests can be saved and reused from session to session. 
+    Main benefits of using 'wyz.code.metaTesting' is ability to discover valid 
+    and invalid function parameter combinations, ability to infer valid 
+    parameter values, and to provide smart summaries that allows you to focus
+    on dysfunctional cases. 
+Encoding: UTF-8
+License: GPL-3
+Depends: R (>= 4.0)
+Imports: methods, data.table (>= 1.11.8), tidyr,
+        wyz.code.offensiveProgramming (>= 1.1.22), crayon, utils, stats
+Suggests: testthat, knitr, rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+URL: https://neonira.github.io/offensiveProgrammingBook_v1.2.2/
+NeedsCompilation: no
+Packaged: 2021-10-06 06:24:16 UTC; fabien
+Repository: CRAN
+Date/Publication: 2021-10-06 06:50:04 UTC

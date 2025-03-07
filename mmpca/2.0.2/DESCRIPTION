@@ -1,0 +1,29 @@
+Package: mmpca
+Title: Integrative Analysis of Several Related Data Matrices
+Version: 2.0.2
+Authors@R: c(
+  person(given = "Jonatan", family = "Kallus", role = c("aut")),
+  person(given = "Felix", family = "Held", email = "felix.held@gmail.com",
+		     role = c("ctb", "cre")))
+Description: A generalization of principal component analysis for integrative
+  analysis. The method finds principal components that describe single matrices
+  or that are common to several matrices. The solutions are sparse. Rank of
+  solutions is automatically selected using cross validation. The method is
+  described in Kallus et al. (2019) <arXiv:1911.04927>.
+Depends: R (>= 3.3.0)
+Imports: digest (>= 0.6.0), Rcpp (>= 1.0.8)
+LinkingTo: Rcpp, RcppEigen, RcppGSL
+SystemRequirements: C++11
+Biarch: true
+NeedsCompilation: yes
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+URL: https://github.com/cyianor/mmpca
+BugReports: https://github.com/cyianor/mmpca/issues
+Packaged: 2022-09-08 06:40:35 UTC; hefelix
+Author: Jonatan Kallus [aut],
+  Felix Held [ctb, cre]
+Maintainer: Felix Held <felix.held@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-08 09:20:02 UTC

@@ -1,0 +1,36 @@
+Package: rules
+Title: Model Wrappers for Rule-Based Models
+Version: 1.0.0
+Authors@R: c(
+    person("Emil", "Hvitfeldt", , "emilhhvitfeldt@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0679-1945")),
+    person("Max", "Kuhn", , "max@rstudio.com", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2402-136X")),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: Bindings for additional models for use with the 'parsnip'
+    package.  Models include prediction rule ensembles (Friedman and
+    Popescu, 2008) <doi:10.1214/07-AOAS148>, C5.0 rules (Quinlan, 1992
+    ISBN: 1558602380), and Cubist (Kuhn and Johnson, 2013)
+    <doi:10.1007/978-1-4614-6849-3>.
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/rules, https://rules.tidymodels.org/
+BugReports: https://github.com/tidymodels/rules/issues
+Depends: parsnip (>= 0.2.1.9003), R (>= 3.4)
+Imports: dials (>= 0.1.1.9001), dplyr, generics (>= 0.1.0), purrr,
+        rlang, stringr, tibble, tidyr
+Suggests: C50, covr, Cubist, knitr, modeldata, recipes, rmarkdown,
+        spelling, testthat (>= 3.0.0), xrf (>= 0.2.0)
+Config/Needs/website: tidyr, tidyverse/tidytemplate, recipes, xrf
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.0.9000
+NeedsCompilation: no
+Packaged: 2022-06-23 00:39:07 UTC; emilhvitfeldt
+Author: Emil Hvitfeldt [aut, cre] (<https://orcid.org/0000-0002-0679-1945>),
+  Max Kuhn [aut] (<https://orcid.org/0000-0003-2402-136X>),
+  RStudio [cph, fnd]
+Maintainer: Emil Hvitfeldt <emilhhvitfeldt@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-23 13:00:02 UTC

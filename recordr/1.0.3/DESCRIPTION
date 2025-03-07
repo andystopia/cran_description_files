@@ -1,0 +1,32 @@
+Package: recordr
+Title: R Provenance Tracking
+Version: 1.0.3
+Authors@R: c( person("Peter", "Slaughter", role = c("aut", "cre"), email = "slaughter@nceas.ucsb.edu"),
+    person("Matthew", "Jones", role = "aut", email = "jones@nceas.ucsb.edu"),
+    person("Chris", "Jones", role = "ctb", email = "cjones@nceas.ucsb.edu"),
+    person("Lauren", "Palmer", role = "ctb", email = "walker@nceas.ucsb.edu")  )
+Description: Provide methods to record data provenance about R script
+    executions. Provenance data includes files that were read and written by
+    the script, along with information about the execution, such as start time
+    end time, the R modules loaded during the execution, and other information
+    describing the execution environment.
+Date: 2016-08-31
+Depends: R (>= 3.1.1), methods
+Imports: uuid, datapack, digest, XML, RSQLite
+Suggests: dataone, ggplot2, knitr, png, testthat, rmarkdown
+VignetteBuilder: knitr
+License: Apache License 2.0
+URL: https://github.com/NCEAS/recordr
+BugReports: https://github.com/NCEAS/recordr/issues
+Collate: 'Constants.R' 'Recordr.R' 'ExecMetadata.R' 'FileMetadata.R'
+        'onLoad.R' 'recordr-package.R' 'tracedFunctions.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-08-31 16:44:14 UTC; slaughter
+Author: Peter Slaughter [aut, cre],
+  Matthew Jones [aut],
+  Chris Jones [ctb],
+  Lauren Palmer [ctb]
+Maintainer: Peter Slaughter <slaughter@nceas.ucsb.edu>
+Repository: CRAN
+Date/Publication: 2016-08-31 22:20:23

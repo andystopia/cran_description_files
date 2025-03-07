@@ -1,0 +1,21 @@
+Package: mixture
+Type: Package
+Title: Mixture Models for Clustering and Classification
+Version: 2.0.1
+Date: 2021-01-15
+Authors@R: c(person("Nik", "Pocuca", role=c("aut")), person("Ryan P.", "Browne", role = c("aut")), person("Paul D.", "McNicholas", role = c("aut", "cre"), email = "mcnicholas@math.mcmaster.ca"))
+Author: Nik Pocuca [aut],
+  Ryan P. Browne [aut],
+  Paul D. McNicholas [aut, cre]
+Maintainer: Paul D. McNicholas <mcnicholas@math.mcmaster.ca>
+Description: An implementation of 14 parsimonious mixture models for model-based clustering or model-based classification. Gaussian, generalized hyperbolic, variance-gamma or skew-t mixtures are available. All approaches work with missing data. Celeux and Govaert (1995) <doi:10.1016/0031-3203(94)00125-6>, Browne and McNicholas (2014) <doi:10.1007/s11634-013-0139-1>, Browne and McNicholas (2015) <doi:10.1002/cjs.11246>.
+Repository: CRAN
+LazyLoad: yes
+NeedsCompilation: yes
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.2)
+LinkingTo: Rcpp, RcppArmadillo, BH, RcppGSL
+Depends: R (>= 3.5.0), lattice (>= 0.20)
+SystemRequirements: GNU GSL
+Packaged: 2021-01-15 19:35:49 UTC; paul
+Date/Publication: 2021-01-16 02:10:09 UTC

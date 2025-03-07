@@ -1,0 +1,26 @@
+Package: metevalue
+Type: Package
+Title: E-Value in the Omics Data Association Studies
+Version: 0.1.10
+Date: 2022-10-21
+Authors@R: c(person("Yifan", "Yang",  role = c("aut", "cre","cph"),
+                    email = "yfyang.86@hotmail.com"),
+            person("Xiaoqing", "Pan",  role = "aut"),
+            person("Haoyuan", "Liu",  role = "aut"))
+Maintainer: Yifan Yang <yfyang.86@hotmail.com>
+Description: In the omics data association studies, it is common to conduct the p-value corrections to control the false significance. Among those p-value correction methods, E-value is recently studied based on V. Vovk and R. Wang (2021) <doi:10.1214/20-AOS2020>. This package provides e-value calculation for several types of omics data association studies. Currently, four data formats are supported: BiSeq, MDRfinder, methylKit and metilene data. The relevant references are listed below: Katja Hebestreit and Hans-Ulrich Klein (2022) <doi:10.18129/B9.bioc.BiSeq>; Altuna Akalin et.al (2012) <doi:10.18129/B9.bioc.methylKit>.
+License: Apache License (>= 2)
+RoxygenNote: 7.2.1
+Depends: sqldf, psych, dplyr, R (>= 3.5.0)
+Encoding: UTF-8
+Suggests: rmarkdown, knitr, ggplot2, tidyr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-27 11:31:24 UTC; yifanyang
+Author: Yifan Yang [aut, cre, cph],
+  Xiaoqing Pan [aut],
+  Haoyuan Liu [aut]
+Repository: CRAN
+Date/Publication: 2022-10-28 17:07:39 UTC

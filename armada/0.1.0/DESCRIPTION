@@ -1,0 +1,28 @@
+Package: armada
+Type: Package
+Title: A Statistical Methodology to Select Covariates in
+        High-Dimensional Data under Dependence
+Version: 0.1.0
+Authors@R: c(person("Aurelie", "Gueudin", email = "aurelie.gueudin@univ-lorraine.fr", role = c("aut", "cre")),
+  person("Anne", "Gegout-Petit", email = "anne.gegout-petit@univ-lorraine.fr", role = c("aut")))
+Description: Two steps variable selection procedure in a context of high-dimensional dependent data
+  but few observations. First step is dedicated to eliminate dependence between variables (clustering
+  of variables, followed by factor analysis inside each cluster).
+  Second step is a variable selection using by aggregation of adapted methods.
+  Bastien B., Chakir H., Gegout-Petit A., Muller-Gueudin A., Shi Y.
+  A statistical methodology to select covariates in high-dimensional data under dependence.
+  Application to the classification of genetic profiles associated with outcome of a non-small-cell
+  lung cancer treatment. 2018. <https://hal.archives-ouvertes.fr/hal-01939694>.
+License: GPL-3
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: stats, mvtnorm, ClustOfVar, FAMT, graphics, VSURF, glmnet,
+        anapuce, qvalue, parallel, doParallel, impute, ComplexHeatmap,
+        circlize
+NeedsCompilation: no
+Packaged: 2019-04-04 13:14:39 UTC; muller16
+Author: Aurelie Gueudin [aut, cre],
+  Anne Gegout-Petit [aut]
+Maintainer: Aurelie Gueudin <aurelie.gueudin@univ-lorraine.fr>
+Repository: CRAN
+Date/Publication: 2019-04-04 16:00:06 UTC

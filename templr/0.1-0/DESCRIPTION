@@ -1,0 +1,29 @@
+Package: templr
+Type: Package
+Title: MASCOTNUM Algorithms Template Tools
+Version: 0.1-0
+Date: 2022-08-05
+Author: Yann Richet [aut, cre] (<https://orcid.org/0000-0002-5677-8458>)
+Maintainer: Yann Richet <yann.richet@irsn.fr>
+Authors@R: 
+     c(person(given = "Yann",
+             family = "Richet",
+             role = c("aut", "cre"),
+             email = "yann.richet@irsn.fr",
+             comment = c(ORCID = "0000-0002-5677-8458")))
+Description: Helper functions for MASCOTNUM algorithm template, for design of numerical experiments practice:
+    algorithm template parser to support MASCOTNUM specification <https://www.gdr-mascotnum.fr/template.html>, 
+    'ask & tell' decoupling injection (inspired by <https://search.r-project.org/CRAN/refmans/sensitivity/html/decoupling.html>) 
+    to use "crimped" algorithms (like uniroot(), optim(), ...) from outside R,
+    basic template examples: Brent algorithm for 1 dim root finding and L-BFGS-B from base optim().
+License: Apache License (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: utils, stats, remotes
+Suggests: testthat, future
+URL: https://github.com/MASCOTNUM/templr
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-08-30 09:35:48 UTC; richet
+Repository: CRAN
+Date/Publication: 2022-08-31 19:00:01 UTC

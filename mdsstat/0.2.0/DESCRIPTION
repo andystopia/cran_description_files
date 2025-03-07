@@ -1,0 +1,27 @@
+Package: mdsstat
+Type: Package
+Title: Statistical Trending for Medical Devices Surveillance
+Version: 0.2.0
+Authors@R: person("Gary", "Chung", email="gchung05@gmail.com",
+  role=c("aut", "cre"))
+Maintainer: Gary Chung <gchung05@gmail.com>
+Description: A collection of common statistical algorithms used in active
+    surveillance of medical device events. Context includes post-market
+    surveillance, pharmacovigilance, signal detection and trending, and
+    regulatory reporting. Primary inputs are device-event time series. Outputs
+    include trending results with the ability to run multiple algorithms at 
+    once. This package works well with the 'mds' package, but does not require 
+    it.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: utils, stats, graphics, mds, lubridate
+Suggests: testthat, knitr, rmarkdown
+RoxygenNote: 6.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-09-22 05:34:10 UTC; Gary
+Author: Gary Chung [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-09-26 17:00:02 UTC

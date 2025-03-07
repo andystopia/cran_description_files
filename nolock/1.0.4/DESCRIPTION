@@ -1,0 +1,20 @@
+Package: nolock
+Type: Package
+Title: Append 'WITH (NOLOCK)' to 'SQL' Queries
+Version: 1.0.4
+Authors@R: c(person("Arkadiusz", "W. Pajda", role = c("aut", "cre", "cph"), 
+    email = "arkadiusz.pajda.97@onet.pl"))
+Description: Automatically appends 'WITH (nolock)' to all tables in 'SQL' 
+    queries using a utility function. This facilitates reading from databases 
+    in scenarios where non-blocking reads are preferable, such as in 
+    high-transaction environments. 
+License: GPL-3
+Encoding: UTF-8
+Imports: pacman, crayon, rstudioapi, utils, stringr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-25 14:53:32 UTC; apajda
+Author: Arkadiusz W. Pajda [aut, cre, cph]
+Maintainer: Arkadiusz W. Pajda <arkadiusz.pajda.97@onet.pl>
+Repository: CRAN
+Date/Publication: 2023-09-27 08:50:05 UTC

@@ -1,0 +1,34 @@
+Package: EpiLPS
+Type: Package
+Title: A Bayesian Tool for Near Real-Time Estimation of the
+        Reproduction Number
+Version: 1.0.2
+Depends: R (>= 4.1.0)
+Authors@R: person("Oswaldo","Gressani", 
+ email="oswaldo_gressani@hotmail.fr", role=c("aut","cre"),
+ comment=c(ORCID ="0000-0003-4152-6159"))
+Maintainer: Oswaldo Gressani <oswaldo_gressani@hotmail.fr>
+BugReports: https://github.com/oswaldogressani/EpiLPS/issues
+Description: Estimation of the instantaneous reproduction number with 
+ Laplacian-P-splines following the methodology of Gressani et al.(2021)
+ <doi:10.1101/2021.12.02.21267189>. The negative Binomial 
+ distribution is used to model the time series of case counts. Two methods are 
+ available for inference : (1) a sampling-free approach based on a maximum a 
+ posteriori calibration of the hyperparameter vector and (2) a fully stochastic 
+ approach with a Metropolis-within-Gibbs algorithm and Langevin diffusions for
+ efficient sampling of the posterior distribution.
+URL: <https://github.com/oswaldogressani/EpiLPS>
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+LinkingTo: RcppArmadillo, Rcpp
+Imports: Rcpp (>= 1.0.7), coda (>= 0.19-4), progress (>= 1.2.2), crayon
+        (>= 1.4.1), MASS (>= 7.3-54), EpiEstim (>= 2.2-4), ggplot2 (>=
+        3.3.5), grDevices (>= 4.1.0), gridExtra (>= 2.3)
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-01-03 10:59:23 UTC; Oswaldo1989
+Author: Oswaldo Gressani [aut, cre] (<https://orcid.org/0000-0003-4152-6159>)
+Repository: CRAN
+Date/Publication: 2022-01-03 11:30:04 UTC

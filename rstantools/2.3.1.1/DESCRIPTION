@@ -1,0 +1,62 @@
+Package: rstantools
+Type: Package
+Title: Tools for Developing R Packages Interfacing with 'Stan'
+Version: 2.3.1.1
+Date: 2023-03-29
+Authors@R: 
+    c(person(given = "Jonah",
+             family = "Gabry",
+             role = c("aut", "cre"),
+             email = "jsg2201@columbia.edu"),
+      person(given = "Ben",
+             family = "Goodrich",
+             role = "aut",
+             email = "benjamin.goodrich@columbia.edu"),
+      person(given = "Martin",
+             family = "Lysy",
+             role = "aut",
+             email = "mlysy@uwaterloo.ca"),
+      person(given = "Andrew",
+             family = "Johnson",
+             role = "aut"),
+      person(given = "Hamada S.",
+             family = "Badr",
+             role = "ctb"),
+      person(given = "Marco",
+             family = "Colombo",
+             role = "ctb"),
+      person(given = "Stefan",
+             family = "Siegert",
+             role = "ctb"),
+      person(given = "Trustees of",
+             family = "Columbia University",
+             role = "cph"))
+Description: Provides various tools for developers of R packages interfacing
+    with 'Stan' <https://mc-stan.org>, including functions to set up the required
+    package structure, S3 generics and default methods to unify function naming
+    across 'Stan'-based R packages, and vignettes with recommendations for
+    developers.
+License: GPL (>= 3)
+URL: https://mc-stan.org/rstantools/, https://discourse.mc-stan.org/
+BugReports: https://github.com/stan-dev/rstantools/issues
+Encoding: UTF-8
+SystemRequirements: pandoc, C++14
+Imports: desc, stats, utils, Rcpp (>= 0.12.16), RcppParallel (>= 5.0.1)
+Suggests: rstan (>= 2.17.2), usethis (>= 1.5.1), testthat (>= 2.0.0),
+        knitr, pkgbuild, pkgload, roxygen2 (>= 6.0.1), rmarkdown,
+        rstudioapi
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-07-18 08:49:07 UTC; hornik
+Author: Jonah Gabry [aut, cre],
+  Ben Goodrich [aut],
+  Martin Lysy [aut],
+  Andrew Johnson [aut],
+  Hamada S. Badr [ctb],
+  Marco Colombo [ctb],
+  Stefan Siegert [ctb],
+  Trustees of Columbia University [cph]
+Maintainer: Jonah Gabry <jsg2201@columbia.edu>
+Repository: CRAN
+Date/Publication: 2023-07-18 11:10:53 UTC

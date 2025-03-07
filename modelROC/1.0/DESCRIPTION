@@ -1,0 +1,34 @@
+Package: modelROC
+Title: Model Based ROC Analysis
+Version: 1.0
+Authors@R: 
+    c(
+    person("Jing","Zhang",role = c("aut", "cre"),email = "zj391120@163.com"),
+    person("Zhi", "Jin", role="aut")
+    )
+Description: The ROC curve method is one of the most important and commonly used 
+    methods for model accuracy assessment, which is one of the most important elements 
+    of model evaluation.
+      The 'modelROC' package is a model-based ROC assessment tool, which directly works 
+    for ROC analysis of regression results for logistic regression of binary variables, 
+    including the glm() and lrm() commands, and COX regression for survival analysis, 
+    including the cph() and coxph() commands.
+      The most important feature of 'modelROC' is that both the model and the independent 
+    variables can be analysed simultaneously, and for survival analysis 
+    multiple time points and area under the curve analysis are supported.
+      Still, flexible visualisation is possible with the 'ggplot2' package.
+      Reference are Kelly H. Zou (1998) <doi:10.1002/(sici)1097-0258(19971015)16:19%3C2143::aid-sim655%3E3.0.co;2-3> and
+    P J Heagerty (2000) <doi:10.1111/j.0006-341x.2000.00337.x>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: ggplot2
+Imports: do, tmcn, ROCit, survivalROC
+Suggests: ggDCA, rms
+NeedsCompilation: no
+Packaged: 2021-06-24 13:29:32 UTC; asus
+Author: Jing Zhang [aut, cre],
+  Zhi Jin [aut]
+Maintainer: Jing Zhang <zj391120@163.com>
+Repository: CRAN
+Date/Publication: 2021-06-25 11:20:07 UTC

@@ -1,0 +1,28 @@
+Package: cinterpolate
+Title: Interpolation From C
+Version: 1.0.1
+Description: Simple interpolation methods designed to be used from C
+    code. Supports constant, linear and spline interpolation. An R
+    wrapper is included but this package is primarily designed to be
+    used from C code using 'LinkingTo'.  The spline calculations are
+    classical cubic interpolation, e.g., Forsythe, Malcolm and Moler
+    (1977) <ISBN: 9780131653320>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Authors@R: c(person("Rich", "FitzJohn", role = c("aut", "cre"),
+                    email = "rich.fitzjohn@gmail.com"),
+             person("Imperial College of Science, Technology and Medicine",
+                    role = "cph"))
+URL: https://github.com/mrc-ide/cinterpolate
+BugReports: https://github.com/mrc-ide/cinterpolate/issues
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2023-11-29 11:10:49 UTC; rfitzjoh
+Author: Rich FitzJohn [aut, cre],
+  Imperial College of Science, Technology and Medicine [cph]
+Maintainer: Rich FitzJohn <rich.fitzjohn@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-29 16:10:08 UTC

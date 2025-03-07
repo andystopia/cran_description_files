@@ -1,0 +1,48 @@
+Package: COMBO
+Title: Correcting Misclassified Binary Outcomes in Association Studies
+Version: 1.1.0
+Authors@R: 
+    person("Kimberly", "Hochstedler Webb",
+           email = "kah343@cornell.edu", role = c("aut", "cre"))
+Author: Kimberly Hochstedler Webb [aut, cre]
+Maintainer: Kimberly Hochstedler Webb <kah343@cornell.edu>
+Description: Use frequentist and Bayesian methods to estimate parameters from a
+  binary outcome misclassification model. These methods correct for the problem
+  of "label switching" by assuming that the sum of outcome sensitivity and 
+  specificity is at least 1. A description of the analysis methods is
+  available in Hochstedler and Wells (2023) <doi:10.48550/arXiv.2303.10215>. 
+Depends: R (>= 4.2.0)
+Imports: dplyr (>= 1.0.10), tidyr (>= 1.2.1), Matrix (> 1.4-1), rjags
+        (>= 4-13), turboEM (>= 2021.1), SAMBA (>= 0.9.0), utils (>=
+        4.2.0)
+Suggests: knitr (>= 1.40), testthat (>= 3.0.0), devtools (>= 2.4.5),
+        xtable (>= 1.8.0)
+SystemRequirements: JAGS (http://mcmc-jags.sourceforge.net)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Collate: 'sum_every_n1.R' 'sum_every_n.R' 'pistar_compute.R'
+        'pi_compute.R' 'COMBO_data.R' 'expit.R'
+        'perfect_sensitivity_EM.R' 'w_j.R' 'q_gamma_f.R' 'q_beta_f.R'
+        'em_function.R' 'loglik.R' 'COMBO_EM.R' 'pitilde_compute.R'
+        'COMBO_data_2stage.R' 'w_j_2stage.R' 'q_delta_f.R'
+        'em_function_2stage.R' 'loglik_2stage.R' 'COMBO_EM_2stage.R'
+        'COMBO_EM_data.R' 'label_switch.R' 'check_and_fix_chains.R'
+        'mean_pistarjj_compute.R' 'pistar_compute_for_chains.R'
+        'pistar_by_chain.R' 'naive_jags_picker.R'
+        'naive_model_picker.R' 'jags_picker.R' 'model_picker.R'
+        'COMBO_MCMC.R' 'model_picker_2stage.R' 'COMBO_MCMC_2stage.R'
+        'LSAC_data.R' 'check_and_fix_chains_2stage.R'
+        'jags_picker_2stage.R' 'label_switch_2stage.R'
+        'misclassification_prob.R' 'misclassification_prob2.R'
+        'naive_jags_picker_2stage.R' 'naive_loglik_2stage.R'
+        'naive_model_picker_2stage.R' 'pistar_by_chain_2stage.R'
+        'pistar_compute_for_chains_2stage.R' 'pitilde_by_chain.R'
+        'pitilde_compute_for_chains.R' 'true_classification_prob.R'
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-07-06 19:28:11 UTC; kimho
+Repository: CRAN
+Date/Publication: 2024-07-06 22:22:08 UTC

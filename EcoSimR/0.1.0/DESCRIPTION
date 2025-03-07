@@ -1,0 +1,27 @@
+Package: EcoSimR
+Type: Package
+Title: Null Model Analysis for Ecological Data
+Version: 0.1.0
+Date: 2015-04-02
+BugReports: https://github.com/GotelliLab/EcoSimR/issues
+Authors@R: c(person("Nick", "Gotelli", role = c("aut"),
+    email = "ngotelli@uvm.edu"),
+    person("Edmund", "Hart", role = c("aut","cre"),
+    email = "edmund.m.hart@gmail.com"),
+    person("Aaron", "Ellison", role = c("aut"),
+    email = "aellison@fas.harvard.edu") )
+LazyLoad: yes
+LazyData: yes
+Description: Given a site by species interaction matrix, users can make inferences about species interactions by performance hypothesis comparing test statistics against a null distribution. The current package provides algorithms and metrics for niche-overlap, body size ratios and species co-occurrence. Users can also integrate their own algorithms and metrics within these frameworks or completely novel null models. Detailed explanations about the underlying assumptions of null model analysis in ecology can be found at http://ecosimr.org. 
+License: MIT + file LICENSE
+Depends: MASS
+Suggests: testthat, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2015-04-03 17:57:52 UTC; edmundhart
+Author: Nick Gotelli [aut],
+  Edmund Hart [aut, cre],
+  Aaron Ellison [aut]
+Maintainer: Edmund Hart <edmund.m.hart@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-04-03 22:09:00

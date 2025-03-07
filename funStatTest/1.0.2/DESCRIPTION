@@ -1,0 +1,33 @@
+Package: funStatTest
+Title: Statistical Testing for Functional Data
+Version: 1.0.2
+Authors@R: c(
+    person("Zaineb", "Smida", , "smida1234@outlook.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-9974-299X")),
+    person("Ghislain", "Durif", , "gd.dev@libertymail.net", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2567-1401")),
+    person("Lionel", "Cucala", role = "aut")
+  )
+Description: Implementation of two sample comparison procedures based on median-based statistical tests 
+    for functional data, introduced in Smida et al (2022) <doi:10.1080/10485252.2022.2064997>. 
+    Other competitive state-of-the-art approaches proposed by Chakraborty and Chaudhuri (2015) <doi:10.1093/biomet/asu072>,
+    Horvath et al (2013) <doi:10.1111/j.1467-9868.2012.01032.x> or Cuevas et al (2004) <doi:10.1016/j.csda.2003.10.021>
+    are also included in the package, as well as procedures to run test result comparisons and power analysis 
+    using simulations.
+License: AGPL (>= 3)
+URL:
+        https://plmlab.math.cnrs.fr/gdurif/funStatTest/,https://gdurif.pages.math.cnrs.fr/funStatTest/
+Imports: checkmate, distr, dplyr, ggplot2, magrittr, Matrix, pbapply,
+        stats, stringr, tibble, tidyr, tidyselect, utils
+Suggests: knitr, rmarkdown, testthat, vdiffr
+VignetteBuilder: knitr
+Date/Publication: 2023-04-20 08:30:02 UTC
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-04-19 12:26:14 UTC; drg
+Author: Zaineb Smida [aut] (<https://orcid.org/0000-0002-9974-299X>),
+  Ghislain Durif [aut, cre] (<https://orcid.org/0000-0003-2567-1401>),
+  Lionel Cucala [aut]
+Maintainer: Ghislain Durif <gd.dev@libertymail.net>
+Repository: CRAN

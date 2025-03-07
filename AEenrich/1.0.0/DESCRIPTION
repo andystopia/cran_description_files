@@ -1,0 +1,34 @@
+Package: AEenrich
+Version: 1.0.0
+Title: Adverse Event Enrichment Tests
+Type: Package
+Description: We extend existing gene enrichment tests to perform adverse
+    event enrichment analysis. Unlike the continuous gene expression data,
+    adverse event data are counts. Therefore, adverse event data has many zeros
+    and ties. We propose two enrichment tests. One is a modified Fisher's exact
+    test based on pre-selected significant adverse events, while the other is
+    based on a modified Kolmogorov-Smirnov statistic. "Adverse event enrichment
+    tests using VAERS" Shuoran Li, Lili Zhao (2020) <arXiv:2007.02266>.
+Authors@R: c(
+    person(given = "Shuoran", family = "Li", role = c("aut"), email = "shuoranl@umich.edu"),
+    person(given = "Lili", family = "Zhao", role = c("aut"), email = "zhaolili@med.umich.edu"),
+    person(given = "Michael", family = "Kleinsasser", role = c("aut", "cre"), email = "mkleinsa@umich.edu"))
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: dplyr, magrittr, qvalue
+biocViews:
+URL: https://github.com/umich-biostatistics/AEenrich
+BugReports: https://github.com/umich-biostatistics/AEenrich/issues
+RoxygenNote: 7.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2020-07-23 21:27:31 UTC; mkleinsa
+Author: Shuoran Li [aut],
+  Lili Zhao [aut],
+  Michael Kleinsasser [aut, cre]
+Maintainer: Michael Kleinsasser <mkleinsa@umich.edu>
+Repository: CRAN
+Date/Publication: 2020-07-30 09:02:21 UTC

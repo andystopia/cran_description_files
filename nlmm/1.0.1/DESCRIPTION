@@ -1,0 +1,26 @@
+Package: nlmm
+Type: Package
+Title: Generalized Laplace Mixed-Effects Models
+Version: 1.0.1
+Date: 2020-03-21
+Authors@R: c(person(given="Marco", family="Geraci", role=c("aut", "cph", "cre"), email="geraci@mailbox.sc.edu", comment = c(ORCID = "0000-0002-6311-8685")), person(given="Alessio", family="Farcomeni", role=c("ctb"), email="alessio.farcomeni@uniroma1.it"))
+Maintainer: Marco Geraci <geraci@mailbox.sc.edu>
+Depends: R (>= 3.0.0), nlme
+Imports: utils, lqmm, HI, mvtnorm, MASS, numDeriv, statmod, stats,
+        Matrix, Qtools, Rcpp (>= 0.12.13)
+LinkingTo: Rcpp, RcppArmadillo, BH
+Description: Provides functions to fit linear mixed models
+	based on convolutions of the generalized Laplace (GL) distribution.
+	The GL mixed-effects model includes four special cases with normal random
+	effects and normal errors (NN), normal random effects and Laplace errors (NL),
+	Laplace random effects and normal errors (LN), and Laplace random effects
+	and Laplace errors (LL). The methods are described in Geraci and Farcomeni (2020,
+	Statistical Methods in Medical Research) <doi:10.1177/0962280220903763>.
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2020-03-21 19:06:57 UTC; geraci
+Author: Marco Geraci [aut, cph, cre] (<https://orcid.org/0000-0002-6311-8685>),
+  Alessio Farcomeni [ctb]
+Repository: CRAN
+Date/Publication: 2020-03-24 16:30:02 UTC

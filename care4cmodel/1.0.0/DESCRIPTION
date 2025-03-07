@@ -1,0 +1,50 @@
+Package: care4cmodel
+Type: Package
+Title: Carbon-Related Assessment of Silvicultural Concepts
+Version: 1.0.0
+Date: 2023-11-15
+Authors@R: 
+    c(
+      person("Peter", "Biber", email = "p.biber@tum.de", 
+              role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0000-0002-9700-8708")),
+      person("Stefano", "Grigolato", role = "ctb",
+             comment = c(ORCID = "0000-0002-2089-3892")),
+      person("Julia", "Schmucker", role = "ctb",
+             comment = c(ORCID = "0000-0001-9996-4851")),
+      person("Enno", "Uhl", role = "ctb",
+             comment = c(ORCID = "0000-0002-7847-923X")),
+      person("Hans", "Pretzsch", role = "ctb",
+             comment = c(ORCID = "0000-0002-4958-1868"))       
+    )         
+Description: A simulation model and accompanying functions that support 
+    assessing silvicultural concepts on the forest estate level with a focus on 
+    the CO2 uptake by wood growth and CO2 emissions by forest operations. For 
+    achieving this, a virtual forest estate area is split into the areas covered
+    by typical phases of the silvicultural concept of interest. Given initial 
+    area shares of these phases, the dynamics of these areas is simulated. The 
+    typical carbon stocks and flows which are known for all phases are 
+    attributed post-hoc to the areas and upscaled to the estate level. CO2 
+    emissions by forest operations are estimated based on the amounts and 
+    dimensions of the harvested timber. Probabilities of damage events are taken
+    into account.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LazyData: true
+Imports: deSolve, dplyr, stats, tibble, purrr, rlang, tidyr,
+        tidyselect, ggplot2, Rdpack
+RdMacros: Rdpack
+Depends: R (>= 4.2.0)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-11-15 14:42:45 UTC; Biber
+Author: Peter Biber [aut, cre, cph] (<https://orcid.org/0000-0002-9700-8708>),
+  Stefano Grigolato [ctb] (<https://orcid.org/0000-0002-2089-3892>),
+  Julia Schmucker [ctb] (<https://orcid.org/0000-0001-9996-4851>),
+  Enno Uhl [ctb] (<https://orcid.org/0000-0002-7847-923X>),
+  Hans Pretzsch [ctb] (<https://orcid.org/0000-0002-4958-1868>)
+Maintainer: Peter Biber <p.biber@tum.de>
+Repository: CRAN
+Date/Publication: 2023-11-16 20:33:59 UTC

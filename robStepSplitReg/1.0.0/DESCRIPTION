@@ -1,0 +1,25 @@
+Package: robStepSplitReg
+Type: Package
+Title: Robust Stepwise Split Regularized Regression
+Version: 1.0.0
+Date: 2023-05-04
+Authors@R: c(person("Anthony", "Christidis", role=c("aut", "cre"), email = "anthony.christidis@stat.ubc.ca"),
+             person("Gabriela", "Cohen-Freue", role=c("aut"), email = "gcohen@stat.ubc.ca"))
+Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
+Description: Functions to perform robust stepwise split regularized regression. The approach first 
+             uses a robust stepwise algorithm to split the variables into the models of an ensemble. 
+             An adaptive robust regularized estimator is then applied to each subset of predictors
+             in the models of an ensemble. 
+License: GPL (>= 2)
+Encoding: UTF-8
+Biarch: true
+Imports: Rcpp (>= 1.0.9), cellWise, pense
+Suggests: testthat, mvnfast
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Packaged: 2023-05-06 04:58:52 UTC; antho
+Author: Anthony Christidis [aut, cre],
+  Gabriela Cohen-Freue [aut]
+Repository: CRAN
+Date/Publication: 2023-05-08 10:00:02 UTC

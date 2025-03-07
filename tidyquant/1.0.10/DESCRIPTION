@@ -1,0 +1,39 @@
+Package: tidyquant
+Type: Package
+Title: Tidy Quantitative Financial Analysis
+Version: 1.0.10
+Authors@R: c(
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut", "cre")),
+    person("Davis", "Vaughan", email = "dvaughan@business-science.io", role = c("aut"))
+  )
+Description: Bringing business and financial analysis to the 'tidyverse'. The 'tidyquant' 
+    package provides a convenient wrapper to various 'xts', 'zoo', 'quantmod', 'TTR' 
+    and 'PerformanceAnalytics' package 
+    functions and returns the objects in the tidy 'tibble' format. The main 
+    advantage is being able to use quantitative functions with the 'tidyverse'
+    functions including 'purrr', 'dplyr', 'tidyr', 'ggplot2', 'lubridate', etc. See 
+    the 'tidyquant' website for more information, documentation and examples.
+URL: https://business-science.github.io/tidyquant/,
+        https://github.com/business-science/tidyquant
+BugReports: https://github.com/business-science/tidyquant/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0),
+Imports: dplyr (>= 1.0.0), ggplot2 (>= 3.4.0), httr, httr2, curl,
+        lazyeval, lubridate, magrittr, PerformanceAnalytics, RobStatTM,
+        quantmod (>= 0.4-13), purrr, readr, readxl, stringr, tibble,
+        tidyr (>= 1.0.0), timetk (>= 2.4.0), timeDate, TTR, xts, rlang,
+        zoo, cli
+Suggests: alphavantager (>= 0.1.2), Quandl, riingo, tibbletime, broom,
+        knitr, forcats, rmarkdown, testthat (>= 2.1.0), scales,
+        Rblpapi, janitor
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-08 00:45:10 UTC; mdancho
+Author: Matt Dancho [aut, cre],
+  Davis Vaughan [aut]
+Maintainer: Matt Dancho <mdancho@business-science.io>
+Repository: CRAN
+Date/Publication: 2025-01-08 05:40:02 UTC

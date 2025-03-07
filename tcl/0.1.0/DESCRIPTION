@@ -1,0 +1,35 @@
+Package: tcl
+Type: Package
+Title: Testing in Conditional Likelihood Context
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Clemens",
+              family = "Draxler",
+              role = c("aut", "cre"),
+              email = "clemens.draxler@umit.at"),
+       person(given = "Andreas", 
+              family = "Kurz", 
+              role = "aut",
+              email = "andreas.kurz@umit.at"))
+Author: Clemens Draxler [aut, cre],
+  Andreas Kurz [aut]
+Maintainer: Clemens Draxler <clemens.draxler@umit.at>
+Description: An implementation of extended Rasch modeling hypothesis testing in R. 
+    Provides 4 statistical tests, i.e. gradient test (GR), likelihood ratio test (LR), 
+    Rao score or Lagrange multiplier test (RS), and Wald test, for testing a number of 
+    hypotheses referring to the Rasch model (RM), linear logistic test model (LLTM), 
+    rating scale model (RSM), and partial credit model (PCM).
+License: GPL-3
+Depends: R (>= 3.1)
+Imports: eRm, numDeriv, graphics, grDevices, stats, methods, MASS,
+        splines, Matrix, lattice
+Suggests: knitr, rmarkdown
+Encoding: UTF-8
+LazyData: true
+LazyLoad: true
+NeedsCompilation: no
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Packaged: 2019-09-13 16:10:54 UTC; panda
+Repository: CRAN
+Date/Publication: 2019-09-20 10:10:02 UTC

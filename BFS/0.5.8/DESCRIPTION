@@ -1,0 +1,43 @@
+Package: BFS
+Type: Package
+Title: Get Data from the Swiss Federal Statistical Office
+Version: 0.5.8
+Authors@R: 
+  c(person(given = "Felix",
+           family = "Luginbuhl",
+           role = c("aut", "cre", "cph"),
+           email = "felix.luginbuhl@protonmail.ch", 
+           comment = c(ORCID = "0009-0008-6625-2899")),
+    person(given = "Janosch",
+           family = "Brenzel-Weiss",
+           role = "ctb"),
+    person(given = "Joao",
+           family = "Martins",
+           role = "ctb"),
+    person(given = "Philipp", 
+           family = "Baumann",
+           role = "ctb",
+           email = "baumann-philipp@protonmail.com", 
+           comment = c(ORCID = "0000-0002-3194-8975")))
+Maintainer: Felix Luginbuhl <felix.luginbuhl@protonmail.ch>
+Description: Search and download data from the Swiss Federal Statistical Office (BFS) APIs <https://www.bfs.admin.ch/>.
+License: GPL (>= 3)
+Depends: R (>= 3.4)
+Imports: pxweb, httr2, xml2, rvest, tibble, magrittr, janitor, tidyRSS,
+        purrr, dplyr, rstac, curl, sf, zip, fs, tools, lifecycle
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://felixluginbuhl.com/BFS/, https://github.com/lgnbhl/BFS/
+BugReports: https://github.com/lgnbhl/BFS/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-02-23 18:28:54 UTC; felix
+Author: Felix Luginbuhl [aut, cre, cph]
+    (<https://orcid.org/0009-0008-6625-2899>),
+  Janosch Brenzel-Weiss [ctb],
+  Joao Martins [ctb],
+  Philipp Baumann [ctb] (<https://orcid.org/0000-0002-3194-8975>)
+Repository: CRAN
+Date/Publication: 2024-02-23 23:30:12 UTC

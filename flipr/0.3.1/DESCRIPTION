@@ -1,0 +1,49 @@
+Package: flipr
+Title: Flexible Inference via Permutations in R
+Version: 0.3.1
+Authors@R: c(
+    person(given = "Alessia", 
+           family = "Pini", 
+           role = "aut", 
+           email = "alessia.pini@unicatt.it"), 
+    person(given = "Aymeric",
+           family = "Stamm",
+           role = c("aut", "cre"), 
+           email = "aymeric.stamm@math.cnrs.fr",
+           comment = c(ORCID = "0000-0002-8725-3654")), 
+    person(given = "Simone", 
+           family = "Vantini", 
+           role = "aut", 
+           email = "simone.vantini@polimi.it"),
+    person(given = "Juliette",
+           family = "Chiapello",
+           role = "ctb"))
+Description: A flexible permutation framework for making 
+    inference such as point estimation, confidence 
+    intervals or hypothesis testing, on any kind of data, 
+    be it univariate, multivariate, or more complex such 
+    as network-valued data, topological data, functional 
+    data or density-valued data.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: purrr, rlang, magrittr, cli, ggplot2, tibble, withr,
+        viridisLite, Rcpp, R6, pbapply, dials, usethis, optimParallel,
+        rgenoud
+Suggests: rmarkdown, knitr, covr, tidyverse, plotly, htmlwidgets,
+        htmltools, testthat (>= 3.0.0), akima
+VignetteBuilder: knitr
+URL: https://astamm.github.io/flipr/, https://github.com/astamm/flipr/
+BugReports: https://github.com/astamm/flipr/issues/
+Depends: R (>= 2.10)
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-09-16 11:50:14 UTC; stamm-a
+Author: Alessia Pini [aut],
+  Aymeric Stamm [aut, cre] (<https://orcid.org/0000-0002-8725-3654>),
+  Simone Vantini [aut],
+  Juliette Chiapello [ctb]
+Maintainer: Aymeric Stamm <aymeric.stamm@math.cnrs.fr>
+Repository: CRAN
+Date/Publication: 2021-09-16 12:20:02 UTC

@@ -1,0 +1,36 @@
+Package: bayesZIB
+Type: Package
+Title: Bayesian Zero-Inflated Bernoulli Regression Model
+Version: 0.0.1
+Encoding: UTF-8
+Authors@R: c(person(given = "David",
+           family = "Moriña Soler",
+           role = c("aut", "cre"),
+           email = "dmorina@ub.edu",
+           comment = c(ORCID = "0000-0001-5949-7443")),
+           person(given = "Pedro",
+                  family = "Puig",
+                  role = c("aut"),
+                  email = "ppuig@mat.uab.cat"),
+           person(given = "Albert",
+                  family = "Navarro",
+                  role = c("aut"),
+                  email = "albert.navarro@uab.cat"))
+Maintainer: David Moriña Soler <dmorina@ub.edu>
+Description: Fits a Bayesian zero-inflated Bernoulli regression model handling (potentially) different covariates for the zero-inflated
+    and non zero-inflated parts. See Moriña D, Puig P, Navarro A. (2020) <arXiv:2105.00700>.
+License: GPL (>= 2)
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, Rcpp (>= 0.12.0), rstan (>= 2.18.1), ggplot2
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+RoxygenNote: 7.0.2
+NeedsCompilation: yes
+SystemRequirements: GNU make
+Packaged: 2021-05-04 05:03:45 UTC; dmorina
+Author: David Moriña Soler [aut, cre] (<https://orcid.org/0000-0001-5949-7443>),
+  Pedro Puig [aut],
+  Albert Navarro [aut]
+Repository: CRAN
+Date/Publication: 2021-05-04 08:40:02 UTC

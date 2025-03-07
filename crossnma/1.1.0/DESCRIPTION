@@ -1,0 +1,39 @@
+Package: crossnma
+Title: Cross-Design & Cross-Format Network Meta-Analysis and Regression
+Version: 1.1.0
+Date: 2023-05-08
+Depends: R (>= 3.5), meta, netmeta (>= 2.8-0)
+Imports: rjags, coda, dplyr, plyr, rlang, magrittr, tidyr, ggplot2
+Suggests: rmarkdown, knitr
+Authors@R: c(
+	person("Tasnim", "Hamza",
+	       email = "tasnim.hamza@ispm.unibe.ch", role = "aut",
+               comment = c(ORCID = "0000-0002-4700-6990")),
+	person("Guido", "Schwarzer",
+	       email = "guido.schwarzer@uniklinik-freiburg.de",
+	       role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0001-6214-9087")),
+	person("Georgia", "Salanti",
+	       email = "georgia.salanti@ispm.unibe.ch", role = "aut",
+               comment = c(ORCID = "0000-0002-3830-8508"))) 
+Author: Tasnim Hamza [aut] (<https://orcid.org/0000-0002-4700-6990>),
+  Guido Schwarzer [aut, cre] (<https://orcid.org/0000-0001-6214-9087>),
+  Georgia Salanti [aut] (<https://orcid.org/0000-0002-3830-8508>)
+Maintainer: Guido Schwarzer <guido.schwarzer@uniklinik-freiburg.de>
+URL: https://github.com/htx-r/crossnma
+Description: Network meta-analysis and meta-regression (allows
+  including up to three covariates) for individual participant data,
+  aggregate data, and mixtures of both formats using the three-level
+  hierarchical model.  Each format can come from randomized controlled
+  trials or non-randomized studies or mixtures of both. Estimates are
+  generated in a Bayesian framework using JAGS. The implemented models
+  are described by Hamza et al. 2023 <DOI:10.1002/jrsm.1619>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-08 10:49:49 UTC; sc
+Repository: CRAN
+Date/Publication: 2023-05-08 11:40:02 UTC

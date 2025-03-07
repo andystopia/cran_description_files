@@ -1,0 +1,40 @@
+Package: mlr3learners
+Title: Recommended Learners for 'mlr3'
+Version: 0.5.1
+Authors@R: c(
+    person("Michel", "Lang", , "michellang@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0001-9754-0393")),
+    person("Quay", "Au", , "quayau@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-5252-8902")),
+    person("Stefan", "Coors", , "mail@stefancoors.de", role = "aut",
+           comment = c(ORCID = "0000-0002-7465-2146")),
+    person("Patrick", "Schratz", , "patrick.schratz@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0748-6624"))
+  )
+Description: Recommended Learners for 'mlr3'. Extends 'mlr3' and
+    'mlr3proba' with interfaces to essential machine learning packages on
+    CRAN.  This includes, but is not limited to: (penalized) linear and
+    logistic regression, linear and quadratic discriminant analysis,
+    k-nearest neighbors, naive Bayes, support vector machines, and
+    gradient boosting.
+License: LGPL-3
+URL: https://mlr3learners.mlr-org.com,
+        https://github.com/mlr-org/mlr3learners
+BugReports: https://github.com/mlr-org/mlr3learners/issues
+Depends: mlr3 (>= 0.12.0-9000), R (>= 3.1.0)
+Imports: checkmate, data.table, mlr3misc (>= 0.9.4), paradox, R6
+Suggests: DiceKriging, distr6, e1071, glmnet, kknn, knitr, lgr, MASS,
+        mlr3proba (>= 0.2.5), nnet, pracma, ranger, rgenoud, rmarkdown,
+        testthat (>= 3.0.0), xgboost
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.1.2
+Packaged: 2021-11-19 11:02:49 UTC; lang
+Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Quay Au [aut] (<https://orcid.org/0000-0002-5252-8902>),
+  Stefan Coors [aut] (<https://orcid.org/0000-0002-7465-2146>),
+  Patrick Schratz [aut] (<https://orcid.org/0000-0003-0748-6624>)
+Maintainer: Michel Lang <michellang@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-11-19 12:00:02 UTC

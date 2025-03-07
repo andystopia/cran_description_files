@@ -1,0 +1,40 @@
+Package: reinforcedPred
+Type: Package
+Title: Reinforced Risk Prediction with Budget Constraint
+Version: 0.1.0
+Authors@R: c(person("Yinghao", "Pan", role = c("aut", "cre"),
+                     email = "ypan8@uncc.edu"),
+             person("Yingqi", "Zhao", role = "aut"),
+             person("Eric", "Laber", role = "aut"))
+Author: Yinghao Pan [aut, cre],
+  Yingqi Zhao [aut],
+  Eric Laber [aut]
+Maintainer: Yinghao Pan <ypan8@uncc.edu>
+Description: Traditional risk prediction only utilizes baseline factors known 
+    to be associated with the disease. Given that longitudinal information are
+    routinely measured and documented for patients, it is worthwhile to make
+    full use of these data. The available longitudinal biomarker data will 
+    likely improve prediction. However, repeated biomarker collection could be 
+    costly and inconvenient, and risk prediction for patients at a later time 
+    could delay necessary medical decisions. Thus, there is a trade-off between
+    high quality prediction and cost. This package implements a cost-effective 
+    statistical procedure that recursively incorporates comprehensive 
+    longitudinal information into the risk prediction model, taking into 
+    account the cost of delaying the decision to a follow-up time when more 
+    information is available. The statistical methods are described in the 
+    following paper: Pan, Y., Laber, E., Smith, M., Zhao, Y. (2018). Reinforced 
+    risk prediction with budget constraint: application to electronic health 
+    records data. Manuscript submitted for publication. 
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: glmnet (>= 2.0-16), MASS (>= 7.3-50), refund (>= 0.1-17),
+        stats (>= 3.5.1)
+RoxygenNote: 6.1.0
+URL: https://github.com/Yinghao-Pan/reinforcedPred
+BugReports: https://github.com/Yinghao-Pan/reinforcedPred/issues
+NeedsCompilation: no
+Packaged: 2018-10-20 15:13:41 UTC; yinghaopan
+Repository: CRAN
+Date/Publication: 2018-10-26 22:40:03 UTC

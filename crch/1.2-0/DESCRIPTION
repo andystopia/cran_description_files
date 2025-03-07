@@ -1,0 +1,39 @@
+Package: crch
+Title: Censored Regression with Conditional Heteroscedasticity
+Version: 1.2-0
+Date: 2024-08-22
+Authors@R: c(person(given = "Achim", family = "Zeileis", role = c("aut", "cre"), email = "Achim.Zeileis@R-project.org", comment = c(ORCID = "0000-0003-0918-3766")),
+             person(given = c("Jakob", "W."), family = "Messner", role = "aut", email = "jakob.messner@posteo.net", comment = c(ORCID = "0000-0002-1027-3673")),
+             person(given = "Reto", family = "Stauffer", role = "aut", email = "reto.stauffer@uibk.ac.at", comment = c(ORCID = "0000-0002-3798-5507")),
+             person(given = "Ioannis", family = "Kosmidis", role = "ctb", email = "ioannis.kosmidis@warwick.ac.uk", comment = c(ORCID = "0000-0003-1556-0302")),
+             person(given = c("Georg", "J."), family = "Mayr", role = "ctb", email = "Georg.Mayr@uibk.ac.at", comment = c(ORCID = "0000-0001-6661-9453")))
+Depends: R (>= 3.6.0)
+Imports: stats, Formula, ordinal, sandwich, scoringRules
+Suggests: distributions3 (>= 0.2.1), glmx, knitr, lmtest, memisc,
+        quarto
+Description: Different approaches to censored or truncated regression with 
+  conditional heteroscedasticity are provided. First, continuous 
+  distributions can be used for the (right and/or left censored or truncated)
+  response with separate linear predictors for the mean and variance. 
+  Second, cumulative link models for ordinal data
+  (obtained by interval-censoring continuous data) can be employed for
+  heteroscedastic extended logistic regression (HXLR). In the latter type of
+  models, the intercepts depend on the thresholds that define the intervals.
+  Infrastructure for working with censored or truncated normal, logistic,
+  and Student-t distributions, i.e., d/p/q/r functions and distributions3
+  objects. 
+License: GPL-2 | GPL-3
+URL: https://topmodels.R-Forge.R-project.org/crch/
+BugReports: https://topmodels.R-Forge.R-project.org/crch/contact.html
+Encoding: UTF-8
+VignetteBuilder: quarto
+NeedsCompilation: yes
+Packaged: 2024-08-22 07:59:03 UTC; zeileis
+Author: Achim Zeileis [aut, cre] (<https://orcid.org/0000-0003-0918-3766>),
+  Jakob W. Messner [aut] (<https://orcid.org/0000-0002-1027-3673>),
+  Reto Stauffer [aut] (<https://orcid.org/0000-0002-3798-5507>),
+  Ioannis Kosmidis [ctb] (<https://orcid.org/0000-0003-1556-0302>),
+  Georg J. Mayr [ctb] (<https://orcid.org/0000-0001-6661-9453>)
+Maintainer: Achim Zeileis <Achim.Zeileis@R-project.org>
+Repository: CRAN
+Date/Publication: 2024-08-22 21:30:02 UTC

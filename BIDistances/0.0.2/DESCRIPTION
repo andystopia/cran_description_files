@@ -1,0 +1,23 @@
+Package: BIDistances
+Type: Package
+Title: Bioinformatic Distances
+Version: 0.0.2
+Date: 2023-05-16
+Authors@R: c(person("Quirin", "Stier", email= "Quirin_Stier@gmx.de", role=c("aut","rev","ctb","cre"), comment = c(ORCID = "0000-0002-7896-4737")),person("Michael", "Thrun", role=c("aut"), comment = c(ORCID = "0000-0001-9542-5543")),person("Luca", "Brinkmann",role=c("ctb")))
+Maintainer: Quirin Stier <Quirin_Stier@gmx.de>
+Description: A few high-performant methods for computing distances measures for bioinformatics data. The weighted euclidean distance can be computed with 'OpenCL' on the GPU or with a parallelized version on the CPU. Other important distance measures for bioinformatics data are selected from the R package 'parallelDist'. A special distance measure for the Gene Ontology is available.
+Depends: R (>= 3.5.0)
+License: GPL-3
+LazyLoad: yes
+Imports: parallelDist
+Suggests: knitr, rmarkdown, remotes, sphet, OpenCL, parallel
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-17 15:40:43 UTC; quiri
+Author: Quirin Stier [aut, rev, ctb, cre]
+    (<https://orcid.org/0000-0002-7896-4737>),
+  Michael Thrun [aut] (<https://orcid.org/0000-0001-9542-5543>),
+  Luca Brinkmann [ctb]
+Repository: CRAN
+Date/Publication: 2023-05-18 08:10:02 UTC

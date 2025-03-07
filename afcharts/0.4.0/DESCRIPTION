@@ -1,0 +1,38 @@
+Package: afcharts
+Title: Produce Charts Following UK Government Analysis Function
+        Guidance
+Version: 0.4.0
+Authors@R: c(
+    person("Crown Copyright", , , , role = c("cph")),
+    person("Government Analysis Function", , , "Analysis.Function@ons.gov.uk", role = c("fnd")),
+    person("Alice", "Hannah", , "alice.hannah@gov.scot", role = c("aut")),
+    person("Olivia", "Box Power", , "Olivia.BoxPower@dhsc.gov.uk", role = c("cre", "ctb"))
+  )
+Description: Colour palettes and a 'ggplot2' theme to follow the UK Government
+    Analysis Function best practice guidance for producing data visualisations,
+    available at
+    <https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/>.
+    Includes continuous and discrete colour and fill scales, as well as a
+    'ggplot2' theme.
+License: MIT + file LICENSE
+URL: https://github.com/best-practice-and-impact/afcharts,
+        https://best-practice-and-impact.github.io/afcharts/
+BugReports: https://github.com/best-practice-and-impact/afcharts/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5)
+Imports: ggplot2, scales, cli, rlang, dplyr
+Suggests: ggtext, knitr, rmarkdown, tibble, tidyr, glue, purrr,
+        stringr, testthat (>= 2.1.0), plotly, gt, svglite (>= 2.1.2),
+        ragg (>= 1.2.6), gapminder
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-05 10:32:59 UTC; OBoxPower
+Author: Crown Copyright [cph],
+  Government Analysis Function [fnd],
+  Alice Hannah [aut],
+  Olivia Box Power [cre, ctb]
+Maintainer: Olivia Box Power <Olivia.BoxPower@dhsc.gov.uk>
+Repository: CRAN
+Date/Publication: 2024-11-06 21:10:02 UTC

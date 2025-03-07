@@ -1,0 +1,22 @@
+Package: mcr
+Version: 1.2.2
+Date: 2021-04-21
+Title: Method Comparison Regression
+Author: Ekaterina Manuilova <ekaterina.manuilova@roche.com> Andre Schuetzenmeister <andre.schuetzenmeister@roche.com> Fabian Model <fabian.model@roche.com> 
+Maintainer: Sergej Potapov <sergej.potapov@roche.com>
+Depends: R (>= 3.0.0), methods
+Suggests: RUnit, XML
+Description: Regression methods to quantify the relation between two measurement methods. In particular it addresses regression problems with errors in both variables and without repeated measurements. The package provides implementations of Deming regression, weighted Deming regression, and Passing-Bablok regression following the CLSI EP09-A3 recommendations for analytical method comparison and bias estimation using patient samples. 
+License: GPL (>= 3)
+Collate: "mcrMisc.r" "mcLinReg.r" "mcDeming.r" "mcWDeming.r"
+        "mcPaBaLarge.r" "mcPaBa.r" "mcCalcCI.r" "mcCalcTstar.r"
+        "mcBootstrap.r" "MCResultMethods.r" "MCResult.r"
+        "MCResultAnalyticalMethods.r" "MCResultAnalytical.r"
+        "MCResultJackknifeMethods.r" "MCResultJackknife.r"
+        "MCResultResamplingMethods.r" "MCResultResampling.r"
+        "MCResultBCaMethods.r" "MCResultBCa.r" "mcrInterface.r"
+        "mcrCompareFit.r" "mcrIncludeLegend.r" "zzz.r"
+Packaged: 2021-04-22 19:56:33 UTC; potapovs
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2021-04-23 08:20:09 UTC

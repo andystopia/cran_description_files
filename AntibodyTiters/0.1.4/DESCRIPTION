@@ -1,0 +1,29 @@
+Package: AntibodyTiters
+Version: 0.1.4
+Date: 2021-09-30
+Title: Antibody Titer Analysis of Vaccinated Patients
+Authors@R: c(person("Yuuki", "Mizumoto", role=c("aut")), 
+		person("Hiroaki", "Kato", role=c("aut", "cre"), 
+			email="hkato@med.shimane-u.ac.jp", comment=c(ORCID="0000-0001-9591-1875")), 
+		person("Takeshi", "Urano", role=c("ctb")))
+Maintainer: Hiroaki Kato <hkato@med.shimane-u.ac.jp>
+Depends: openxlsx (>= 4.2.4), R (>= 3.3.0)
+Description: Visualization of antibody titer scores is valuable for examination of vaccination 
+    effects and usefulness of the antibody used for titer scoring. 'AntibodyTiters' visualizes 
+    antibody titers of all or selected patients. This package also produces empty excel files 
+    in a specified format, in which users can fill in experimental data for visualization. 
+    Excel files with toy data can also be produced, so that users can see how it is visualized
+    before obtaining real data. The data should contain titer scores at pre-vaccination, after-
+    1st shot, after-2nd shot, and at least one additional sampling point. Patients with 
+    missing values can be included. The first three sampling points will be plotted discretely, 
+    whereas those following the after-2nd shot will be plotted on a continuous time scale 
+    starting from the day of second shot.
+License: GPL-3
+NeedsCompilation: no
+Type: Package
+Packaged: 2021-09-30 01:55:50 UTC; hrk_kato
+Author: Yuuki Mizumoto [aut],
+  Hiroaki Kato [aut, cre] (<https://orcid.org/0000-0001-9591-1875>),
+  Takeshi Urano [ctb]
+Repository: CRAN
+Date/Publication: 2021-09-30 11:50:12 UTC

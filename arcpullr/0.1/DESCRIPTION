@@ -1,0 +1,35 @@
+Package: arcpullr
+Type: Package
+Title: Pull Data from an ArcGIS REST API
+Version: 0.1
+Authors@R: c(person(given = "Paul",
+           family = "Frater",
+           role = c("aut", "cre"),
+           email = "paul.frater@wisconsin.gov",
+           comment = c(ORCID = "0000-0002-7237-6563")),
+           person("Zac", "Driscoll",
+           email = "zdriscoll@mmsd.com", 
+           role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0002-8233-0980")))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Description: 
+  Functions to efficiently query ArcGIS REST APIs 
+  <https://developers.arcgis.com/rest/>. 
+  Both spatial and SQL queries can be used to retrieve data. 
+  Simple Feature (sf) objects are utilized to perform spatial queries. 
+  This package was neither produced nor is maintained by Esri.
+Depends: R (>= 3.6.0)
+Imports: httr (>= 1.4.1), jsonlite (>= 1.6.1), sf (>= 0.9.5), dplyr (>=
+        1.0.2), ggplot2 (>= 3.3.0), tidyr (>= 1.0.2), rlang (>= 0.4.7)
+RoxygenNote: 7.1.1
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-12 15:26:55 UTC; fratepnd
+Author: Paul Frater [aut, cre] (<https://orcid.org/0000-0002-7237-6563>),
+  Zac Driscoll [aut, ctb] (<https://orcid.org/0000-0002-8233-0980>)
+Maintainer: Paul Frater <paul.frater@wisconsin.gov>
+Repository: CRAN
+Date/Publication: 2021-01-15 10:00:08 UTC

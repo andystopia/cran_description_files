@@ -1,0 +1,30 @@
+Package: vizdraws
+Title: Visualize Draws from the Prior and Posterior Distributions
+Version: 1.1
+Date: 2021-01-06
+Authors@R: c(
+    person("Ignacio", "Martinez", email = "ignacio@protonmail.com", role = c("aut", "cre")),
+    person("Linus", "Marco", email = "lmarco163@gmail.com", role = "aut"),
+    person("Dan", "Thal", email = "DThal@mathematica-mpr.com", role = "aut"))
+Description: Interactive visualization for Bayesian prior and posterior distributions. 
+             When both distributions are provided the animation shows a transition from 
+             prior to posterior. Finally, the animation splits the distribution using the provided 
+             'breaks' into bars that show the probability for each region. 
+             If no 'breaks' are providers it will use zero by default.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ignacio82/vizdraws/,
+        https://vizdraws.martinez.fyi/
+Imports: dplyr, tidyr, glue, htmlwidgets, magrittr, stats, stringr
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-08 15:43:09 UTC; ignacio
+Author: Ignacio Martinez [aut, cre],
+  Linus Marco [aut],
+  Dan Thal [aut]
+Maintainer: Ignacio Martinez <ignacio@protonmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-09 02:30:02 UTC

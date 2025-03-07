@@ -1,0 +1,21 @@
+Package: POINT
+Type: Package
+Title: Protein Structure Guided Local Test
+Version: 1.2
+Date: 2022-06-05
+Author: Rachel Marceau West, Shannon T. Holloway
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Description: Provides an implementation of a rare variant association test that utilizes protein tertiary structure to increase signal and to identify likely causal variants. Performs structure-guided collapsing, which leads to local tests that borrow information from neighboring variants on a protein and that provide association information on a variant-specific level. For details of the implemented method see West, R. M.,  Lu, W., Rotroff, D. M., Kuenemann, M., Chang, S-M., Wagner M. J., Buse, J. B., Motsinger-Reif, A., Fourches, D., and Tzeng, J-Y. (2019) <doi:10.1371/journal.pcbi.1006722>.
+License: GPL-2
+Depends: methods, stats, rARPACK, Matrix, CompQuadForm
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+Collate: 'A_Kernel.R' 'A_BurdenKernel.R' 'A_LinearKernel.R'
+        'A_PolyKernel.R' 'B_PvMethod.R' 'B_PvMethod_Davies.R'
+        'B_PvMethod_Liu.R' 'C_BinomialTrait.R' 'C_GaussianTrait.R'
+        'D_NullResult.R' 'calcLocalKernel.R' 'distanceMatrix.R'
+        'mainCode.R' 'point.R' 'pvResamp.R'
+Packaged: 2022-06-05 18:59:46 UTC; 19194
+Repository: CRAN
+Date/Publication: 2022-06-06 23:10:27 UTC

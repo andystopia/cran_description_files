@@ -1,0 +1,25 @@
+Package: TeXCheckR
+Type: Package
+Title: Parses LaTeX Documents for Errors
+Date: 2020-11-14
+Version: 0.7.0
+Authors@R: c(person("Hugh", "Parsonage", role = c("aut", "cre"), email = "hugh.parsonage@gmail.com"))
+URL: https://github.com/HughParsonage/TeXCheckR
+BugReports: https://github.com/HughParsonage/TeXCheckR/issues
+Description: Checks LaTeX documents and .bib files for typing errors, such as spelling errors, incorrect quotation marks. Also provides useful functions for parsing and linting bibliography files.
+License: GPL-2
+Depends: R (>= 3.3.0)
+Imports: clisymbols, crayon, data.table (>= 1.9.0), fastmatch, hunspell
+        (>= 2.5), hutils (>= 0.8.0), magrittr, rstudioapi, stats,
+        tools, zoo
+LazyData: TRUE
+ByteCompile: true
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Suggests: devtools, readr, rlang, stringi, testthat (>= 2.0.0), tinytex
+NeedsCompilation: no
+Packaged: 2020-11-16 22:26:39 UTC; hughp
+Author: Hugh Parsonage [aut, cre]
+Maintainer: Hugh Parsonage <hugh.parsonage@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-11-17 06:40:03 UTC

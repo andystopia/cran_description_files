@@ -1,0 +1,49 @@
+Package: allometric
+Title: Structured Allometric Models for Trees
+Version: 1.4.1
+Authors@R: 
+    c(
+      person(
+        given = "Bryce", family = "Frank", email = "bfrank70@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-2980-6860")
+      ),
+      person(given = "Francisco", family = "Mauro",
+        email = "francisco.mauro@uva.es", role = c("aut"),
+        comment = c(ORCID = "0000-0002-7832-6268")),
+      person(given  = "Elijah", family = "Allensworth",
+        email = "elijah.allensworth@protonmail.com",
+        role = c("aut"))
+    )
+Description: Access allometric models used in forest resource analysis, such as
+    volume equations, taper equations, biomass models, among many others. Users
+    are able to efficiently find and select allometric models suitable for their
+    project area and use them in analysis. Additionally, 'allometric' provides a
+    structured framework for adding new models to an open-source models
+    repository.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr, methods, rlang, stringr, tibble, units, RefManageR,
+        magrittr, purrr, ISOcodes, tidyr, progress, vctrs, openssl, gh,
+        curl
+Collate: 'data.R' 'utils-pipe.R' 'boilerplate.R' 'all_generics.R'
+        'validity_checks.R' 'model_tbl.R' 'install.R' 'summary.R'
+        'util.R' 'variable_defs.R' 'load.R' 'AllometricModel.R'
+        'ModelSet.R' 'ParametricSet.R' 'FixedEffectsSet.R'
+        'ParametricModel.R' 'MixedEffectsSet.R' 'FixedEffectsModel.R'
+        'MixedEffectsModel.R' 'Publication.R' 'ingest_models.R' 'zzz.R'
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyData: true
+BugReports: https://github.com/allometric/allometric/issues
+Contact: bfrank70@gmail.com
+NeedsCompilation: no
+Packaged: 2023-09-20 17:27:08 UTC; bfran
+Author: Bryce Frank [aut, cre] (<https://orcid.org/0000-0003-2980-6860>),
+  Francisco Mauro [aut] (<https://orcid.org/0000-0002-7832-6268>),
+  Elijah Allensworth [aut]
+Maintainer: Bryce Frank <bfrank70@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-21 13:30:05 UTC

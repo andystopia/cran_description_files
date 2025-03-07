@@ -1,0 +1,27 @@
+Package: MNARclust
+Type: Package
+Title: Clustering Data with Non-Ignorable Missingness using
+        Semi-Parametric Mixture Models
+Version: 1.0.0
+Description: Clustering of data under a non-ignorable missingness mechanism. Clustering is achieved by a semi-parametric mixture model and missingness is managed by using the pattern-mixture approach. More details of the approach are available in Du Roy de Chaumaray et al. (2020) <arXiv:2009.07662>. 
+Authors@R: c(person(given="Marie", family="Du Roy de Chaumaray", role = "aut"),
+          person(given="Matthieu", family="Marbac", role = c("aut", "cre", "cph"), email = "matthieu.marbac-lourdelle@ensai.fr"))
+Maintainer: Matthieu Marbac <matthieu.marbac-lourdelle@ensai.fr>
+License: GPL (>= 2)
+Imports: Rcpp, parallel, sn, rmutil
+LinkingTo: Rcpp, RcppArmadillo
+ByteCompile: true
+URL: https://arxiv.org/abs/2009.07662
+Author: Marie Du Roy de Chaumaray [aut],
+  Matthieu Marbac [aut, cre, cph]
+Collate: algoCat.R algoCont.R algoMixed.R MNARclust.R RcppExports.R
+        sampler.R tools.R
+LazyData: true
+LazyLoad: yes
+Encoding: UTF-8
+Depends: R (>= 3.5)
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2021-07-15 19:04:30 UTC; matt
+Repository: CRAN
+Date/Publication: 2021-07-16 09:20:30 UTC

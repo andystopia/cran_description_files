@@ -1,0 +1,34 @@
+Package: tidycensus
+Type: Package
+Title: Load US Census Boundary and Attribute Data as 'tidyverse' and
+        'sf'-Ready Data Frames
+Version: 1.5
+Authors@R: c(
+    person(given = "Kyle", family = "Walker", email="kyle@walker-data.com", role=c("aut", "cre")),
+    person(given = "Matt", family = "Herman", email = "mfherman@gmail.com", role = "aut"),
+    person(given = "Kris", family = "Eberwein", email = "eberwein@knights.ucf.edu", role = "ctb"))
+Date: 2023-09-25
+URL: https://walker-data.com/tidycensus/
+BugReports: https://github.com/walkerke/tidycensus/issues
+Description: An integrated R interface to several United States Census Bureau 
+    APIs (<https://www.census.gov/data/developers/data-sets.html>) and the US Census Bureau's 
+    geographic boundary files. Allows R users to return Census and ACS data as 
+    tidyverse-ready data frames, and optionally returns a list-column with feature geometry for mapping 
+    and spatial analysis. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3.0)
+Imports: httr, sf, dplyr (>= 1.0.0), tigris, stringr, jsonlite (>=
+        1.5.0), purrr, rvest, tidyr (>= 1.0.0), rappdirs, readr, xml2,
+        units, utils, rlang, crayon, tidyselect
+Suggests: ggplot2, survey, srvyr, terra
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-26 19:10:44 UTC; kyle
+Author: Kyle Walker [aut, cre],
+  Matt Herman [aut],
+  Kris Eberwein [ctb]
+Maintainer: Kyle Walker <kyle@walker-data.com>
+Repository: CRAN
+Date/Publication: 2023-09-26 19:50:02 UTC

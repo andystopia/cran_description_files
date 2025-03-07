@@ -1,0 +1,33 @@
+Package: squant
+Type: Package
+Title: Subgroup Identification Based on Quantitative Objectives
+Version: 1.1.5
+Authors@R: 
+    c(person("YAN", "SUN", email = "sunyanrobin@gmail.com", role = c("aut", "cre", "cph")),
+      person("LING", "CHENG", role = "aut"),
+      person("A.S.", "HEDAYAT", role = "aut"))
+Description: A subgroup identification method for precision medicine based on 
+    quantitative objectives. This method can handle continuous, binary and 
+    survival endpoint for both prognostic and predictive case. For the 
+    predictive case, the method aims at identifying a subgroup for which 
+    treatment is better than control by at least a pre-specified or 
+    auto-selected constant. For the prognostic case, the method aims at 
+    identifying a subgroup that is at least better than a 
+    pre-specified/auto-selected constant. The derived signature is a linear 
+    combination of predictors, and the selected subgroup are subjects with 
+    the signature > 0. The false discover rate when no true subgroup exists
+    is controlled at a user-specified level.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats (>= 3.4.3), graphics (>= 3.4.3), utils (>= 3.4.3),
+        glmnet (>= 2.0-13), survival (>= 2.41-3), ggplot2 (>= 2.2.1),
+        methods (>= 3.4.3)
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-02 06:45:14 UTC; sunya
+Author: YAN SUN [aut, cre, cph],
+  LING CHENG [aut],
+  A.S. HEDAYAT [aut]
+Maintainer: YAN SUN <sunyanrobin@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-03 03:20:03 UTC

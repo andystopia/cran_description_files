@@ -1,0 +1,47 @@
+Package: mdir
+Type: Package
+Title: Bayesian Model-Based Clustering of Multi-Modal Data
+License: GPL-3
+Version: 0.9.0
+Date: 2023-05-16
+Authors@R: c(person(given = "Stephen", family = "Coleman",
+                    email = "stcolema@tcd.ie",
+                    role = c("aut","cre")),
+                    person(given = "Paul", family ="Kirk",
+                    email = "paul.kirk@mrc-bsu.cam.ac.uk",
+                    role = "aut"),
+                    person(given = "Chris", family ="Wallace",
+                    email = "cew56@cam.ac.uk",
+                    role = "aut"),
+                    person(given = "Oliver", family ="Crook",
+                    email = "oliver.crook@stats.ox.ac.uk",
+                    role = "aut"))
+Description: Integrative clustering and semi-supervised prediction.
+  This package includes a 'C++' implementation of both semi-supervised and
+  unsupervised Multiple Dataset Integration (MDI; Kirk et al., 2012
+  <https://doi-org.ezp.lib.cam.ac.uk/10.1093/bioinformatics/bts595>), an
+  extension of Bayesian mixture models to the integrative (multiple dataset or
+  multi-modal) setting such as multi-omics analysis. The package also includes 
+  Bayesian mixture models. Densities allowed within MDI and the mixture model
+  are Gaussian with full and diagonal covariance matrices, categorical, Gaussian
+  with a Gaussian process (GP) prior on the mean parameter. The GP model
+  implemented canonly handle data with common time points of equal separation.
+  The Gaussian and GP models can be augmented with a global multivariate t
+  distribution to handle outliers.
+Imports: Rcpp (>= 1.0.6), RcppParallel, ggplot2, stringr, tidyr, salso
+LinkingTo: Rcpp, RcppArmadillo, testthat, RcppParallel
+Suggests: xml2
+SystemRequirements: GNU make
+Encoding: UTF-8
+URL: https://github.com/stcolema/mdir
+BugReports: https://github.com/stcolema/mdir/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-05-16 13:51:58 UTC; stephen
+Author: Stephen Coleman [aut, cre],
+  Paul Kirk [aut],
+  Chris Wallace [aut],
+  Oliver Crook [aut]
+Maintainer: Stephen Coleman <stcolema@tcd.ie>
+Repository: CRAN
+Date/Publication: 2023-05-17 08:40:02 UTC

@@ -1,0 +1,31 @@
+Package: rrnni
+Title: Manipulate with RNNI Tree Space
+Version: 0.1.0
+Date: 2022-08-31
+Authors@R: 
+    c(person(
+        c("Jiří", "C."), "Moravec", 
+        email = "jiri.c.moravec@gmail.com",
+        role = c("aut", "cre")
+        ),
+    person(
+        "Lena", "Collienne",
+        email = "lena@lenacoll.de",
+        role = c("aut")
+        ))
+Description: Calculate RNNI distance between and manipulate with ranked trees. RNNI stands for Ranked Nearest Neighbour Interchange and is an extension of the classical NNI space (space of trees created by the NNI moves) to ranked trees, where internal nodes are ordered according to their heights (usually assumed to be times). The RNNI distance takes the tree topology into account, as standard NNI does, but also penalizes changes in the order of internal nodes, i.e. changes in the order of times of evolutionary events. For more information about the RNNI space see: Gavryushkin et al. (2018) <doi:10.1007/s00285-017-1167-9>, Collienne & Gavryushkin (2021) <doi:10.1007/s00285-021-01567-5>, Collienne et al. (2021) <doi:10.1007/s00285-021-01685-0>, and Collienne (2021) <http://hdl.handle.net/10523/12606>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: methods, ape
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://biods.github.io/rrnni/, https://github.com/biods/rrnni
+BugReports: https://github.com/biods/rrnni/issues
+NeedsCompilation: yes
+Packaged: 2022-09-13 22:25:37 UTC; jmoravec
+Author: Jiří C. Moravec [aut, cre],
+  Lena Collienne [aut]
+Maintainer: Jiří C. Moravec <jiri.c.moravec@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-14 06:50:05 UTC

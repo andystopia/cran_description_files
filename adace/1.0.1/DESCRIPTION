@@ -1,0 +1,58 @@
+Package: adace
+Title: Estimator of the Adherer Average Causal Effect
+Version: 1.0.1
+Authors@R: c(
+  person(
+    given = "Jiaxun",
+    family = "Chen",
+    role = "aut"
+        ),
+  person(
+    given = "Rui",
+    family = "Jin",
+    role = "aut"
+       ),
+  person(
+    given = "Yongming",
+    family = "Qu",
+    role = "aut"
+        ),
+  person(
+    given = "Run",
+    family = "Zhuang",
+    role = c("aut", "cre"),
+    email = "capecod0321@gmail.com"
+        ),
+  person(
+    given = "Ying",
+    family = "Zhang",
+    role = "aut"
+        ),
+  person(
+    family = "Eli Lilly and Company",
+    role = "cph"
+        )) 
+Imports: reshape2, pracma
+Description: Estimate the causal treatment effect for subjects that can adhere 
+    to one or both of the treatments. Given longitudinal data with missing 
+    observations, consistent causal effects are calculated. Unobserved potential
+    outcomes are estimated through direct integration as described in: 
+    Qu et al., (2019) <doi:10.1080/19466315.2019.1700157> and 
+    Zhang et. al., (2021) <doi:10.1080/19466315.2021.1891965>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: R (>= 4.0.0)
+Suggests: testthat (>= 3.0.0), cubature (>= 2.0.4), MASS (>= 7.3-55)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-03-21 19:25:21 UTC; capec
+Author: Jiaxun Chen [aut],
+  Rui Jin [aut],
+  Yongming Qu [aut],
+  Run Zhuang [aut, cre],
+  Ying Zhang [aut],
+  Eli Lilly and Company [cph]
+Maintainer: Run Zhuang <capecod0321@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-22 17:00:02 UTC

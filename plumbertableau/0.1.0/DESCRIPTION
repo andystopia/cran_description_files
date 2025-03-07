@@ -1,0 +1,40 @@
+Package: plumbertableau
+Type: Package
+Title: Turn 'Plumber' APIs into 'Tableau' Extensions
+Version: 0.1.0
+Authors@R: c(
+    person("James", "Blair", email = "james@rstudio.com", role = c("aut", "cre")),
+    person("Joe", "Cheng", email = "joe@rstudio.com", role = c("aut")),
+    person("Toph", "Allen", email = "toph@rstudio.com", role = "aut"),
+    person("Bill", "Sager", email = "bill.sager@rstudio.com", role = "aut"),
+    person("RStudio", role = c("cph", "fnd")),
+    person("Tableau", role = c("cph"))
+    )
+Description: Build 'Plumber' APIs that can be used in 'Tableau' workbooks.
+    Annotations in R comments allow APIs to conform to the 'Tableau Analytics
+    Extension' specification, so that R code can be used to power 'Tableau'
+    workbooks.
+License: MIT + file LICENSE
+URL: https://rstudio.github.io/plumbertableau/,
+        https://github.com/rstudio/plumbertableau
+BugReports: https://github.com/rstudio/plumbertableau/issues
+Encoding: UTF-8
+Depends: R (>= 3.0.0)
+Imports: plumber (>= 1.1.0), magrittr, curl, httpuv, jsonlite, later,
+        promises, rlang, htmltools, debugme, stringi, markdown,
+        urltools, glue, utils, httr, knitr
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 3.0.0), rmarkdown, covr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-08-05 14:49:39 UTC; jamesblair
+Author: James Blair [aut, cre],
+  Joe Cheng [aut],
+  Toph Allen [aut],
+  Bill Sager [aut],
+  RStudio [cph, fnd],
+  Tableau [cph]
+Maintainer: James Blair <james@rstudio.com>
+Repository: CRAN
+Date/Publication: 2021-08-06 08:00:02 UTC

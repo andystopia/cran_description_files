@@ -1,0 +1,23 @@
+Package: fusedMGM
+Type: Package
+Title: Implementation of Fused MGM to Infer 2-Class Networks
+Version: 0.1.0.0
+RoxygenNote: 7.2.3
+Maintainer: Jaehyun Park <J.31.Park@gmail.com>
+Authors@R: c(person(given="Jaehyun", family="Park", email="J.31.Park@gmail.com",
+					role=c("aut", "cre", "cph"), comment=c(ORCID="0000-0003-2900-8340")),
+			person(given="Sungho", family="Won", email="sunghow@gmail.com",
+					role=c("ths")))			
+License: MIT + file LICENSE
+Imports: fastDummies, parallel, bigmemory, gplots
+Description: Implementation of fused Markov graphical model (FMGM; Park and Won, 2022). The functions include building mixed graphical model (MGM) objects from data, inference of networks using FMGM, stable edge-specific penalty selection (StEPS) for the determination of penalization parameters, and the visualization. For details, please refer to Park and Won (2022) <arXiv:2208.14959>.
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-04-14 03:46:13 UTC; J31Pa
+Author: Jaehyun Park [aut, cre, cph] (<https://orcid.org/0000-0003-2900-8340>),
+  Sungho Won [ths]
+Repository: CRAN
+Date/Publication: 2023-04-14 19:20:02 UTC

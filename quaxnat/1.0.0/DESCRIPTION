@@ -1,0 +1,46 @@
+Package: quaxnat
+Title: Estimation of Natural Regeneration Potential
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Maximilian",
+           family = "Axer", 
+           email = "maximilian.axer@nw-fva.de", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1482-9613")),
+    person(given = "Robert",
+           family = "Schlicht",
+           role = c("aut")),
+    person(given = "Robert",
+           family = "Nuske",
+           role = c("ctb"),
+           comment = c(ORCID = "0000-0001-9773-2061")),
+    person("Nordwestdeutsche Forstliche Versuchsanstalt (NW-FVA)", 
+           role=c("fnd")),
+    person("Staatsbetrieb Sachsenforst", 
+           role=c("fnd")),
+    person("Technische Universität Dresden", 
+           role=c("fnd", "cph")))
+Description: Functions for estimating the potential dispersal of tree species 
+  using regeneration densities and dispersal distances to nearest seed trees. 
+  A quantile regression is implemented to determine the dispersal potential.
+  Spatial prediction can be used to identify natural regeneration potential for
+  forest restoration as described in Axer et al. (2021)
+  <doi:10.1016/j.foreco.2020.118802>.
+License: GPL (>= 2)
+URL: https://github.com/MaximilianAxer/quaxnat
+BugReports: https://github.com/MaximilianAxer/quaxnat/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, terra
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-06 19:11:38 UTC; rnuske
+Author: Maximilian Axer [aut, cre] (<https://orcid.org/0000-0003-1482-9613>),
+  Robert Schlicht [aut],
+  Robert Nuske [ctb] (<https://orcid.org/0000-0001-9773-2061>),
+  Nordwestdeutsche Forstliche Versuchsanstalt (NW-FVA) [fnd],
+  Staatsbetrieb Sachsenforst [fnd],
+  Technische Universität Dresden [fnd, cph]
+Maintainer: Maximilian Axer <maximilian.axer@nw-fva.de>
+Repository: CRAN
+Date/Publication: 2024-06-07 14:40:06 UTC

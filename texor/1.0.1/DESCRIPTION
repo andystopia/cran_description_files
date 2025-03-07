@@ -1,0 +1,56 @@
+Package: texor
+Type: Package
+Title: Converting 'LaTeX' 'R Journal' Articles into 'RJ-web-articles'
+Version: 1.0.1
+Authors@R: 
+    c(person(given = "Abhishek",
+             family = "Ulayil",
+             email = "perricoq@outlook.com",
+             role = c("aut", "cre","cph"),
+             comment = c(ORCID = "0009-0000-6935-8690")),
+      person(given = "Heather",
+             family = "Turner",
+             email = "ht@heatherturner.net",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-1256-3375")),
+      person(given = "Christophe",
+             family = "Dervieux",
+             role = "ctb",
+             email = "christophe.dervieux@gmail.com",
+             comment = c(ORCID = "0000-0003-4474-2498")),
+      person(given = "Mitchell",
+             family = "O'Hara-Wild",
+             role = "ctb",
+             email = "mail@mitchelloharawild.com",
+             comment = c(ORCID = "0000-0001-6729-7695")),
+      person(given = "Dianne",
+             family = "Cook",
+             email = "dicook@monash.edu",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-3813-7155")))
+Description: Articles in the 'R Journal' were first authored in 'LaTeX', which performs 
+    admirably for 'PDF' files but is less than ideal for modern online interfaces.
+    The 'texor' package does all the transitional chores and conversions necessary
+    to move to the online versions.
+License: MIT + file LICENSE
+URL: https://github.com/Abhi-1U/texor
+BugReports: https://github.com/Abhi-1U/texor/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: rmarkdown, pdftools, tools, tinytex, yaml, stringr, xfun,
+        logger, rjtools, rebib
+Suggests: knitr, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-06-07 17:12:04 UTC; abhi
+Author: Abhishek Ulayil [aut, cre, cph]
+    (<https://orcid.org/0009-0000-6935-8690>),
+  Heather Turner [ctb] (<https://orcid.org/0000-0002-1256-3375>),
+  Christophe Dervieux [ctb] (<https://orcid.org/0000-0003-4474-2498>),
+  Mitchell O'Hara-Wild [ctb] (<https://orcid.org/0000-0001-6729-7695>),
+  Dianne Cook [ctb] (<https://orcid.org/0000-0002-3813-7155>)
+Maintainer: Abhishek Ulayil <perricoq@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-06-08 18:20:02 UTC

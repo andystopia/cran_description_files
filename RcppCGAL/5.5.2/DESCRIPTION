@@ -1,0 +1,32 @@
+Package: RcppCGAL
+Type: Package
+Title: Rcpp Integration for CGAL
+Version: 5.5.2
+Date: 2023-05-29
+Authors@R: 
+    person("Eric", "Dunipace", 
+        role = c("aut", "cre"),
+        email = "edunipace@mail.harvard.edu",
+        comment = c(ORCID = "0000-0001-8909-213X"))
+Author: Eric Dunipace [aut, cre] (<https://orcid.org/0000-0001-8909-213X>)
+Maintainer: Eric Dunipace <edunipace@mail.harvard.edu>
+Description: Creates a header only package to link to the CGAL 
+  (Computational Geometry Algorithms Library)
+  header files in Rcpp. There are a variety of potential uses for 
+  the software such as Hilbert sorting, KDtree nearest neighbors, 
+  and convex hull algorithms. There is only one R function in this 
+  package, which returns the current version of the CGAL library 
+  included. For more information about how to use the header files, 
+  see the CGAL documentation at <https://www.cgal.org>. Currently
+  includes the CGAL 5.5.2 stable release.
+License: GPL (>= 3)
+Imports: utils, Rcpp, gh, curl
+Suggests: knitr
+BugReports: https://github.com/ericdunipace/RcppCGAL/issues
+NeedsCompilation: no
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+VignetteBuilder: knitr
+Packaged: 2023-05-29 23:14:54 UTC; eifer
+Repository: CRAN
+Date/Publication: 2023-05-30 00:00:02 UTC

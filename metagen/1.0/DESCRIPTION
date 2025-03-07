@@ -1,0 +1,35 @@
+Package: metagen
+Version: 1.0
+Date: 2014-05
+Title: Inference in Meta Analysis and Meta Regression
+Description: Provides methods for making inference in the random effects meta
+    regression model such as point estimates and confidence intervals for the
+    heterogeneity parameter and the regression coefficients vector.  Inference
+    methods are based on different approaches to statistical inference.
+    Methods from three different schools are included: methods based on the
+    method of moments approach, methods based on likelihood, and methods based
+    on generalised inference.  The package also includes tools to run extensive
+    simulation studies in parallel on high performance clusters in a modular
+    way.  This allows extensive testing of custom inferential methods with all
+    implemented state-of-the-art methods in a standardised way.  Tools for
+    evaluating the performance of both point and interval estimates are
+    provided.  Also, a large collection of different pre-defined plotting
+    functions is implemented in a ready-to-use fashion.
+Author: Thomas W. D. Möbius <kontakt@thomasmoebius.de>
+Maintainer: Thomas W. D. Möbius <kontakt@thomasmoebius.de>
+URL: http://00tau.github.io/metagen/
+License: GPL-3
+Imports: MASS, lhs, plyr, BBmisc, ParamHelpers, BatchJobs,
+        BatchExperiments, ggplot2, metafor
+LazyData: yes
+ByteCompile: yes
+Encoding: UTF-8
+Collate: 'example-bcg.R' 'methods-for-batch-distribution.R'
+        'methods-for-data-generation.R' 'methods-for-experiments.R'
+        'methods-for-inference.R' 'plot-functions.R'
+        'plot-interval-estimates.R' 'plot-pivotal-distributions.R'
+        'plot-point-estimates.R' 'zzz.R'
+Packaged: 2014-05-27 12:31:33 UTC; friedrich
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-05-27 15:43:54

@@ -1,0 +1,28 @@
+Package: secrdesign
+Type: Package
+Title: Sampling Design for Spatially Explicit Capture-Recapture
+Version: 2.7.0
+Date: 2022-12-04
+Description: Tools for designing spatially explicit capture-recapture studies of animal populations. This is primarily a simulation manager for package 'secr'. Extensions in version 2.5.0 include costing and evaluation of detector spacing.
+Authors@R: c(person("Murray", "Efford", 
+    email = "murray.efford@otago.ac.nz", 
+    role = c("aut","cre"), 
+    comment = c(ORCID = "0000-0001-5231-5184")),
+    person("Ian", "Durbach",
+    email = "id52@st-andrews.ac.uk",
+    role = "ctb",
+    comment = c(ORCID = "0000-0003-0769-2153")))
+Depends: R (>= 3.5.0), secr (>= 4.2.0)
+Imports: kofnGA, parallel, sf, Rcpp (>= 0.12.14)
+LinkingTo: BH, Rcpp, RcppArmadillo
+Suggests: secrlinear, testthat (>= 0.11.0)
+License: GPL (>= 2)
+URL: https://www.otago.ac.nz/density/,
+        https://github.com/MurrayEfford/secrdesign/
+NeedsCompilation: yes
+Packaged: 2022-12-03 21:48:25 UTC; Murray
+Author: Murray Efford [aut, cre] (<https://orcid.org/0000-0001-5231-5184>),
+  Ian Durbach [ctb] (<https://orcid.org/0000-0003-0769-2153>)
+Maintainer: Murray Efford <murray.efford@otago.ac.nz>
+Repository: CRAN
+Date/Publication: 2022-12-03 22:30:02 UTC

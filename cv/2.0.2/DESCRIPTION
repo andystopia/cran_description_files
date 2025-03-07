@@ -1,0 +1,38 @@
+Package: cv
+Type: Package
+Title: Cross-Validating Regression Models
+Version: 2.0.2
+Date: 2024-08-04
+Authors@R: c(person("John", "Fox", role = "aut", email = "jfox@mcmaster.ca",
+  comment = c(ORCID = "0000-0002-1196-8012")),
+	person("Georges", "Monette", role = c("aut", "cre"), email = "georges+cv@yorku.ca"))
+Description: Cross-validation methods of regression models that exploit features of various
+    modeling functions to improve speed. Some of the methods implemented in the package are
+    novel, as described in the package vignettes; for general introductions to cross-validation,
+    see, for example, Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani 
+    (2021, ISBN 978-1-0716-1417-4, Secs. 5.1, 5.3), "An Introduction to Statistical Learning with 
+    Applications in R, Second Edition", and Trevor Hastie, Robert Tibshirani, 
+    and Jerome Friedman (2009, ISBN 978-0-387-84857-0, Sec. 7.10), "The Elements of Statistical 
+    Learning, Second Edition".
+Depends: R (>= 3.5.0), doParallel
+Imports: car, foreach, glmmTMB, gtools, insight, lme4, MASS, methods,
+        nlme
+Suggests: boot, carData, dplyr, effects, ISLR2, knitr, lattice,
+        latticeExtra, leaps, Metrics, microbenchmark, nnet, rmarkdown,
+        spelling, testthat
+LazyData: TRUE
+VignetteBuilder: knitr, rmarkdown
+License: GPL (>= 2)
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+URL: https://gmonette.github.io/cv/,
+        https://CRAN.R-project.org/package=cv
+BugReports: https://github.com/gmonette/cv/issues
+NeedsCompilation: no
+Packaged: 2024-08-04 17:39:44 UTC; georges
+Author: John Fox [aut] (<https://orcid.org/0000-0002-1196-8012>),
+  Georges Monette [aut, cre]
+Maintainer: Georges Monette <georges+cv@yorku.ca>
+Repository: CRAN
+Date/Publication: 2024-08-19 03:50:02 UTC

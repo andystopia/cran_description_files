@@ -1,0 +1,37 @@
+Package: sevenbridges2
+Type: Package
+Title: The 'Seven Bridges Platform' API Client
+Version: 0.1.0
+Authors@R: c(
+    person("Marija", "Gacic", email = "marija.jovanovic@velsera.com", role = c("aut", "cre")),
+    person("Marko", "Trifunovic", email = "marko.trifunovic@sevenbridges.com", role = c("aut")),
+    person("Vladimir", "Obucina", email = "vladimir.obucina@velsera.com", role = c("aut")),
+    person("Velsera", role = c("cph", "fnd"))
+    )
+Maintainer: Marija Gacic <marija.jovanovic@velsera.com>
+Description: R client and utilities for 'Seven Bridges Platform' API, from 'Cancer Genomics Cloud' 
+    to other 'Seven Bridges' supported platforms. API documentation is hosted publicly 
+    at <https://docs.sevenbridges.com/docs/the-api>.
+License: Apache License 2.0
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://www.sevenbridges.com,
+        https://sbg.github.io/sevenbridges2/,
+        https://github.com/sbg/sevenbridges2
+Depends: R (>= 4.2.0)
+RoxygenNote: 7.2.3
+Imports: httr, R6, purrr, jsonlite, cli, rlang, curl, glue, stringr,
+        utils, checkmate, DescTools, yaml, readr, data.table
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), stringi, withr,
+        remotes, pkgdown
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+BugReports: https://github.com/sbg/sevenbridges2/issues
+NeedsCompilation: no
+Packaged: 2024-02-02 14:46:38 UTC; marijajovanovic
+Author: Marija Gacic [aut, cre],
+  Marko Trifunovic [aut],
+  Vladimir Obucina [aut],
+  Velsera [cph, fnd]
+Repository: CRAN
+Date/Publication: 2024-02-03 12:20:02 UTC

@@ -1,0 +1,25 @@
+Package: representr
+Type: Package
+Title: Create Representative Records After Entity Resolution
+Version: 0.1.4
+Authors@R: c(person("Andee", "Kaplan", email = "andee.kaplan@colostate.edu",
+                  role = c("aut", "cre")),
+             person("Brenda", "Betancourt", role = "aut"),
+             person("Rebecca C.", "Steorts", email = "beka@stat.duke.edu", role = c("aut")))
+Description: An implementation of Kaplan, Betancourt, Steorts (2022) <doi:10.1080/00031305.2022.2041482> that creates representative records for use in downstream tasks after entity resolution is performed. Multiple methods for creating the representative records (data sets) are provided. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: doParallel, foreach, dplyr, Rcpp
+Suggests: knitr, rmarkdown, ggplot2
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-10-18 14:46:56 UTC; andeek
+Author: Andee Kaplan [aut, cre],
+  Brenda Betancourt [aut],
+  Rebecca C. Steorts [aut]
+Maintainer: Andee Kaplan <andee.kaplan@colostate.edu>
+Repository: CRAN
+Date/Publication: 2022-10-18 22:52:40 UTC

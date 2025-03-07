@@ -1,0 +1,45 @@
+Package: pagoo
+Version: 0.3.9
+Title: Analyze Bacterial Pangenomes in R with 'Pagoo'
+Description: Provides an encapsulated, object-oriented class system for
+  analyzing bacterial pangenomes. For a definition of this concept, see
+  Tettelin, et al. (2005) <doi:10.1073/pnas.0506758102>. It uses the R6
+  package as backend. It was designed in order to facilitate and speed-up
+  the comparative analysis of multiple bacterial genomes, standardizing and
+  optimizing routine tasks performed everyday. There are a handful of things
+  done everyday when working with bacterial pangenomes: subset, summarize,
+  extract, visualize and store data. So, 'pagoo' is intended to facilitate these
+  tasks as much as possible. For a description of the implemented data structure
+  and methods, see Ferres & Iraola (2020), <doi:10.1101/2020.07.29.226951>.
+Authors@R: c(
+    person("Ignacio", "Ferres", , "iferres@pasteur.edu.uy", role =  c("aut", "cre"), 
+      comment = c(ORCID = "0000-0003-0910-6568")
+    ),
+    person("Gregorio", "Iraola", , "iferres@pasteur.edu.uy", role = c("aut"), 
+      comment = c(ORCID = "0000-0002-6516-3404")
+    ),
+    person("Institut Pasteur de Montevideo", role = c("fnd")
+    )
+  )
+Maintainer: Ignacio Ferres <iferres@pasteur.edu.uy>
+URL: https://iferres.github.io/pagoo/, https://github.com/iferres/pagoo
+BugReports: https://github.com/iferres/pagoo/issues
+Depends: R (>= 3.5.0), S4Vectors, Biostrings, ggplot2
+biocViews:
+Imports: R6, reshape2, vegan, GenomicRanges, BiocGenerics,
+        shinyWidgets, shinydashboard, DT, plotly, magrittr, heatmaply,
+        dendextend, ggfortify, shiny
+Suggests: micropan, patchwork, ape, phangorn, pegas, DECIPHER,
+        rhierbaps, IRanges, knitr, rmarkdown, testthat, covr
+License: GPL-3
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-05-13 14:22:40 UTC; iferres
+Author: Ignacio Ferres [aut, cre] (<https://orcid.org/0000-0003-0910-6568>),
+  Gregorio Iraola [aut] (<https://orcid.org/0000-0002-6516-3404>),
+  Institut Pasteur de Montevideo [fnd]
+Repository: CRAN
+Date/Publication: 2021-05-13 15:00:05 UTC

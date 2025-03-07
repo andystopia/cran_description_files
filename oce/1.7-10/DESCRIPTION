@@ -1,0 +1,41 @@
+Package: oce
+Title: Analysis of Oceanographic Data
+Version: 1.7-10
+Authors@R: c(
+    person(given="Dan", family="Kelley", email="Dan.Kelley@Dal.Ca", role=c("aut", "cre"), comment=c(ORCID="https://orcid.org/0000-0001-7808-5911")),
+    person(given="Clark", family="Richards", email="clark.richards@gmail.com", role=c("aut"), comment=c(ORCID="https://orcid.org/0000-0002-7833-206X")),
+    person(given="Chantelle", family="Layton", email="chantelle.layton@dal.ca", role=c("ctb"), comment=c(ORCID="https://orcid.org/0000-0002-3199-5763", "curl() coauthor")),
+    person(given="British Geological Survey", role=c("ctb","cph"), comment="magnetic-field subroutine"))
+Maintainer: Dan Kelley <Dan.Kelley@Dal.Ca>
+Depends: R (>= 2.15), gsw, methods, utils
+Suggests: automap, DBI, foreign, interp, knitr, lubridate, marmap,
+        ncdf4, ocedata, raster (>= 1.4.3), rgeos, rmarkdown, RSQLite,
+        R.utils, sf, sp, testthat (>= 3.0.0), tiff, XML
+BugReports: https://github.com/dankelley/oce/issues
+Description: Supports the analysis of Oceanographic data, including 'ADCP'
+    measurements, measurements made with 'argo' floats, 'CTD' measurements,
+    sectional data, sea-level time series, coastline and topographic data, etc.
+    Provides specialized functions for calculating seawater properties such as
+    potential temperature in either the 'UNESCO' or 'TEOS-10' equation of state.
+    Produces graphical displays that conform to the conventions of the
+    Oceanographic literature. This package is discussed extensively by
+    Kelley (2018) "Oceanographic Analysis with R" <doi:10.1007/978-1-4939-8844-0>.
+License: GPL (>= 2)
+Encoding: UTF-8
+URL: https://dankelley.github.io/oce/
+LazyData: false
+RoxygenNote: 7.2.1
+BuildVignettes: true
+VignetteBuilder: knitr
+NeedsCompilation: yes
+LinkingTo: Rcpp
+Imports: Rcpp
+Packaged: 2022-08-18 16:44:01 UTC; kelley
+Config/testthat/edition: 3
+Author: Dan Kelley [aut, cre] (<https://orcid.org/0000-0001-7808-5911>),
+  Clark Richards [aut] (<https://orcid.org/0000-0002-7833-206X>),
+  Chantelle Layton [ctb] (<https://orcid.org/0000-0002-3199-5763>, curl()
+    coauthor),
+  British Geological Survey [ctb, cph] (magnetic-field subroutine)
+Repository: CRAN
+Date/Publication: 2022-08-18 17:30:05 UTC

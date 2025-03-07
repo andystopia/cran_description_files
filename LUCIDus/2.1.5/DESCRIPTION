@@ -1,0 +1,26 @@
+Package: LUCIDus
+Type: Package
+Title: Latent Unknown Clustering with Integrated Data
+Version: 2.1.5
+Author: Yinqi Zhao, David V. Conti, Cheng Peng, Zhao Yang
+Maintainer: Yinqi Zhao <yinqiz@usc.edu>
+Description: An implementation of LUCID model (Peng (2019) <doi:10.1093/bioinformatics/btz667>).
+  LUCID conducts integrated clustering using exposures, omics data (and outcome 
+  of interest). An EM algorithm is implemented to estimate MLE of LUCID model.
+  LUCID features integrated variable selection, incorporation of missing omics
+  data, bootstrap inference and visualization via Sankey diagram.
+Depends: R (>= 3.6.0)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+LazyData: true
+URL: https://github.com/USCbiostats/LUCIDus
+Suggests: knitr, testthat (>= 3.0.0), rmarkdown
+VignetteBuilder: knitr
+Imports: mclust, nnet, networkD3, boot, glasso, glmnet, jsonlite,
+        progress
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-03-28 21:25:53 UTC; yinqiz
+Repository: CRAN
+Date/Publication: 2022-03-28 21:40:05 UTC

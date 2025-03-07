@@ -1,0 +1,27 @@
+Package: crosstalkr
+Title: Analysis of Graph-Structured Data with a Focus on
+        Protein-Protein Interaction Networks
+Version: 0.8.0
+Authors@R: 
+    person(given = "Davis",
+           family = "Weaver",
+           role = c("aut", "cre"),
+           email = "davis.weaver@case.edu", 
+           comment = c(orcid = "0000-0003-3086-497X"))
+Description: Provides a general framework for the identification of nodes that are functionally related to a set of seeds in graph structured data. In addition to being optimized for use with generic graphs, we also provides support to analyze protein-protein interactions networks from online repositories. For more details on core method, refer to Nibbe et al. (2010) <doi:10.1371/journal.pcbi.1000639>.
+License: GPL (>= 3)
+biocViews:
+Imports: rlang, stats, magrittr, withr, readr, dplyr, stringr, tidyr,
+        tibble, igraph (>= 1.2.0), Matrix, ensembldb, foreach,
+        doParallel, ggplot2, EnsDb.Hsapiens.v79, STRINGdb
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: tidygraph, ggraph, testthat (>= 2.0.0), knitr, rmarkdown
+Config/testthat/edition: 2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-09-16 13:25:27 UTC; dtw43
+Author: Davis Weaver [aut, cre] (0000-0003-3086-497X)
+Maintainer: Davis Weaver <davis.weaver@case.edu>
+Repository: CRAN
+Date/Publication: 2022-09-16 22:36:10 UTC

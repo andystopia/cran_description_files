@@ -1,0 +1,30 @@
+Package: STRAH
+Type: Package
+Title: Short Tandem Repeats Analysis of Hotspot Zones
+Version: 1.0
+Authors@R: c(person("Philipp", "Hermann", role = c("aut", "cre"), email = "philipp.hermann@jku.at", comment = c(ORCID = "https://orcid.org/0000-0003-4556-6297")),
+             person("Monika", "Heinzl", role = "aut",   email = "monika.heinzl@edumail.at"), 
+             person("Angelika", "Heissl", role = "ctb"), 
+             person("Irene", "Tiemann-Boege", role = "ctb", comment = c(ORCID = "https://orcid.org/0000-0002-3621-7020")), 
+             person("Andreas", "Futschik", role = "ctb", comment = c(ORCID = "https://orcid.org/0000-0002-7980-0304")))
+Author: Philipp Hermann [aut, cre] (<https://orcid.org/0000-0003-4556-6297>),
+  Monika Heinzl [aut],
+  Angelika Heissl [ctb],
+  Irene Tiemann-Boege [ctb] (<https://orcid.org/0000-0002-3621-7020>),
+  Andreas Futschik [ctb] (<https://orcid.org/0000-0002-7980-0304>)
+Maintainer: Philipp Hermann <philipp.hermann@jku.at>
+Description: Searches for short tandem repeats (STR) in a specified region of any genome. This analysis can be expanded such that several regions (chromosomes) are studied. These STRs can be grouped into hotspot as well as flanking regions of user specified width. Hotspots are defined by the double strand break maps from Pratto et al. (2014) <doi:10.1126/science.1256442>. Moreover, the user can also search for a specified motif in a DNAStringSet-object, or a fasta-file, or a specified region of any genome. For an application of STR detections please see Heissl et al. (2018) <doi:10.1101/431841>. 
+Imports: Biostrings (>= 2.38.4), BSgenome, BSgenome.Hsapiens.UCSC.hg19,
+        BiocManager, methods
+Suggests: BSgenome.Ptroglodytes.UCSC.panTro5
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+BugReports: https://github.com/PhHermann/STRAH/issues
+RoxygenNote: 6.1.1
+URL: https://github.com/PhHermann/STRAH
+NeedsCompilation: no
+Packaged: 2019-04-08 06:58:00 UTC; philipp
+Repository: CRAN
+Date/Publication: 2019-04-09 15:05:25 UTC

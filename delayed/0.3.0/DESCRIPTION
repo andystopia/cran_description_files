@@ -1,0 +1,33 @@
+Package: delayed
+Title: A Framework for Parallelizing Dependent Tasks
+Version: 0.3.0
+Authors@R: c(
+    person("Jeremy", "Coyle", email = "jeremyrcoyle@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-9874-6649")),
+    person("Nima", "Hejazi", email = "nh@nimahejazi.org",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-7127-2789")))
+Description: Mechanisms to parallelize dependent tasks in a manner that
+    optimizes the compute resources available. It provides access to "delayed"
+    computations, which may be parallelized using futures. It is, to an extent,
+    a facsimile of the 'Dask' library (<https://dask.org/>), for the 'Python'
+    language.
+Depends: R (>= 3.2.0)
+Imports: R6, igraph, future, rstackdeque, rlang, data.table,
+        assertthat, visNetwork, uuid, BBmisc, progress
+Suggests: testthat, knitr, rmarkdown, shiny
+License: GPL-3
+URL: https://tlverse.org/delayed
+BugReports: https://github.com/tlverse/delayed/issues
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-02-20 19:55:01 UTC; nsh
+Author: Jeremy Coyle [aut, cre, cph] (<https://orcid.org/0000-0002-9874-6649>),
+  Nima Hejazi [ctb] (<https://orcid.org/0000-0002-7127-2789>)
+Maintainer: Jeremy Coyle <jeremyrcoyle@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-28 11:40:02 UTC

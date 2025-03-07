@@ -1,0 +1,21 @@
+Package: scPOP
+Type: Package
+Title: Metrics for Benchmarking scRNA-Seq Batch Correction
+Version: 0.1.0
+Authors@R: c(person("Vinay", "Swamy", email="swamyvinny@gmail.com", role=c('aut', 'cre')),person("David", "McGaughey", role=c("aut")))
+Description: Evaluate batch effect correction algorithms for scRNA-seq using multiple established methods, including the Adjusted Rand Index, 
+    Normalized Mutual Information, Local Inverse Simpson Index, and Silhouette Width. Methods for aggregating and weighing multiple metrics 
+    together are also included. For further explanation of methods, see Swamy et al. (2021)<doi:10.1101/2021.03.26.437190> .
+Maintainer: Vinay Swamy <swamyvinny@gmail.com>
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.5), Matrix, RANN, cluster
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2021-08-03 23:22:16 UTC; swamyvs
+Author: Vinay Swamy [aut, cre],
+  David McGaughey [aut]
+Repository: CRAN
+Date/Publication: 2021-08-04 15:10:02 UTC

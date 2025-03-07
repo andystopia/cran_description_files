@@ -1,0 +1,28 @@
+Package: CTP
+Type: Package
+Title: Closed Testing Procedure (CTP)
+Description: This is a package for constructing hypothesis trees for treatment comparisons based 
+  on the closure principle and analysing the corresponding Closed Testing Procedures (CTP)
+  using adjusted p-values. For reference, see
+  Marcus, R., Peritz, E, and Gabriel, K.R. (1976) <doi:10.2307/2335748> and
+  Bauer, P (1991) <doi:10.1002/sim.4780100609>.
+Version: 3.0.1
+Authors@R: c(
+  person("Paul", "Jordan", email = "paul.jordan@roche.com", role = c("aut", "cre")),
+  person("Matthias", "Herpers",  role = "aut")
+  )
+Depends: clinfun, diagram, stats, emmeans
+Imports: dplyr, magrittr, MASS, survival, shape, Gmisc, grid
+Suggests: knitr, rmarkdown
+License: GPL (>= 2)
+LazyLoad: yes
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-04-27 07:53:43 UTC; jordanp
+Author: Paul Jordan [aut, cre],
+  Matthias Herpers [aut]
+Maintainer: Paul Jordan <paul.jordan@roche.com>
+Repository: CRAN
+Date/Publication: 2021-04-27 11:20:02 UTC

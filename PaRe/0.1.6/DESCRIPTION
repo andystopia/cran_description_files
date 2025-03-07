@@ -1,0 +1,25 @@
+Package: PaRe
+Type: Package
+Title: A Way to Perform Code Review or QA on Other Packages
+Version: 0.1.6
+Language: en-US
+Authors@R: 
+    person("Maarten", "van Kessel", email = "m.l.vankessel@erasmusmc.nl",
+           role = c("aut", "cre"))
+Description: Reviews other packages during code review by looking at their
+    dependencies, code style, code complexity, and how internally defined
+    functions interact with one another.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, cyclocomp, desc, DiagrammeR, DiagrammeRsvg, dplyr, glue,
+        lintr, magrittr, pak, rmarkdown, rsvg, stringr, igraph, utils,
+        R6, git2r, checkmate
+Suggests: ggplot2, plotly, ggraph, DT, magick, withr, cowplot, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-06-01 12:52:15 UTC; mvankessel
+Author: Maarten van Kessel [aut, cre]
+Maintainer: Maarten van Kessel <m.l.vankessel@erasmusmc.nl>
+Repository: CRAN
+Date/Publication: 2023-06-02 14:20:02 UTC

@@ -1,0 +1,36 @@
+Package: PlotFTIR
+Type: Package
+Title: Plot FTIR Spectra
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Philip", family = "Bulsink", email = "philip.bulsink@nrcan-rncan.gc.ca", 
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9668-2429")),
+    person(given = "Ulrich", family = "Makanda", email = "ulrich.makanda@nrcan-rncan.gc.ca", 
+           role = "trl", comment = c("Translated documentation to French/Traduire la documentation en français")),
+    person("His Majesty the King in Right of Canada, as represented by the Minister of Natural Resources",
+           role = 'cph')      
+    )
+Description: The goal of 'PlotFTIR' is to easily and quickly kick-start the production of journal-quality Fourier Transform Infra-Red (FTIR) spectral plots in R using 'ggplot2'. The produced plots can be published directly or further modified by 'ggplot2' functions.
+    L'objectif de 'PlotFTIR' est de démarrer facilement et rapidement la production des tracés spectraux de spectroscopie infrarouge à transformée de Fourier (IRTF) de qualité journal dans R à l'aide de 'ggplot2'. Les tracés produits peuvent être publiés directement ou modifiés davantage par les fonctions 'ggplot2'.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: cli, rlang, scales
+RoxygenNote: 7.3.1
+Depends: R (>= 3.3)
+Suggests: testthat (>= 3.0.0), withr, ggplot2 (>= 3.0.0), ggthemes,
+        knitr, rmarkdown, ir, ChemoSpec, R.utils
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+BugReports: https://github.com/NRCan/PlotFTIR/issues
+URL: https://github.com/NRCan/PlotFTIR
+NeedsCompilation: no
+Packaged: 2024-11-12 14:55:05 UTC; pbulsink
+Author: Philip Bulsink [aut, cre] (<https://orcid.org/0000-0001-9668-2429>),
+  Ulrich Makanda [trl] (Translated documentation to French/Traduire la
+    documentation en français),
+  His Majesty the King in Right of Canada, as represented by the Minister
+    of Natural Resources [cph]
+Maintainer: Philip Bulsink <philip.bulsink@nrcan-rncan.gc.ca>
+Repository: CRAN
+Date/Publication: 2024-11-13 14:20:06 UTC

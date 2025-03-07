@@ -1,0 +1,39 @@
+Package: PSCBS
+Version: 0.65.0
+Depends: R (>= 3.2.0), utils
+Imports: R.methodsS3 (>= 1.7.1), R.oo (>= 1.22.0), R.utils (>= 2.8.0),
+        R.cache (>= 0.13.0), matrixStats (>= 0.54.0), aroma.light (>=
+        2.4.0), DNAcopy (>= 1.42.0), listenv (>= 0.7.0), future (>=
+        1.12.0), parallel
+Suggests: Hmisc (>= 4.2-0), R.rsp (>= 0.43.1), R.devices (>= 2.16.0),
+        ggplot2 (>= 3.1.1)
+SuggestsNote: BioC (>= 3.1), Recommended: Hmisc
+VignetteBuilder: R.rsp
+Title: Analysis of Parent-Specific DNA Copy Numbers
+Authors@R: c(
+  person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"),
+                                 email="henrikb@braju.com"),
+  person("Pierre", "Neuvial", role="aut"),
+  person("Venkatraman E.", "Seshan", role="aut"),
+  person("Adam B.", "Olshen", role="aut"),
+  person("Paul T.", "Spellman", role="aut"),
+  person("Richard A.", "Olshen", role="aut"))
+Description: Segmentation of allele-specific DNA copy number data and detection of regions with abnormal copy number within each parental chromosome.  Both tumor-normal paired and tumor-only analyses are supported.
+License: GPL (>= 2)
+LazyLoad: TRUE
+ByteCompile: TRUE
+biocViews: aCGH, CopyNumberVariants, SNP, Microarray, OneChannel,
+        TwoChannel, Genetics
+URL: https://github.com/HenrikBengtsson/PSCBS
+BugReports: https://github.com/HenrikBengtsson/PSCBS/issues
+NeedsCompilation: no
+Packaged: 2019-05-04 23:28:43 UTC; hb
+Author: Henrik Bengtsson [aut, cre, cph],
+  Pierre Neuvial [aut],
+  Venkatraman E. Seshan [aut],
+  Adam B. Olshen [aut],
+  Paul T. Spellman [aut],
+  Richard A. Olshen [aut]
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Repository: CRAN
+Date/Publication: 2019-05-05 22:40:09 UTC

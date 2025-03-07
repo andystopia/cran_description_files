@@ -1,0 +1,39 @@
+Package: gtreg
+Title: Regulatory Tables for Clinical Research
+Version: 0.1.1
+Authors@R: c(
+    person("Shannon", "Pileggi", , "shannon.pileggi@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-7732-4164")),
+    person("Daniel D.", "Sjoberg", , "danield.sjoberg@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0862-2018"))
+  )
+Description: Creates tables suitable for regulatory agency submission by
+    leveraging the 'gtsummary' package as the back end. Tables can be exported
+    to HTML, Word, PDF and more. Highly customized outputs are
+    available by utilizing existing styling functions from 'gtsummary' as
+    well as custom options designed for regulatory tables.
+License: GPL (>= 3)
+URL: https://github.com/shannonpileggi/gtreg,
+        https://shannonpileggi.github.io/gtreg/
+BugReports: https://github.com/shannonpileggi/gtreg/issues
+Depends: R (>= 3.4)
+Imports: broom.helpers (>= 1.5.0), cli (>= 3.1.0), dplyr (>= 1.0.7),
+        forcats (>= 0.5.1), gtsummary (>= 1.6.1), knitr (>= 1.37),
+        purrr (>= 0.3.4), rlang (>= 1.0.0), stringr (>= 1.4.0), tibble
+        (>= 3.1.6), tidyr (>= 1.1.4)
+Suggests: covr (>= 3.5.1), gt (>= 0.3.1), rmarkdown, spelling (>= 2.2),
+        testthat (>= 3.1.1)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-08-17 13:42:54 UTC; pileggis
+Author: Shannon Pileggi [aut, cre, cph]
+    (<https://orcid.org/0000-0002-7732-4164>),
+  Daniel D. Sjoberg [aut] (<https://orcid.org/0000-0003-0862-2018>)
+Maintainer: Shannon Pileggi <shannon.pileggi@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-17 14:30:05 UTC

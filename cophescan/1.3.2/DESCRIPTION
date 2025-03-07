@@ -1,0 +1,35 @@
+Package: cophescan
+Title: Adaptation of the Coloc Method for PheWAS
+Version: 1.3.2
+Authors@R: c(person("Ichcha", "Manipur", role=c("aut","cre"),
+    email = "im504@cam.ac.uk"),
+    person("Chris", "Wallace", role=c("aut")))
+Maintainer: Ichcha Manipur <im504@cam.ac.uk>
+Description: 
+    A Bayesian method for conducting Phenome-wide association studies (PheWAS) that simultaneously identifies causal associations between genetic variants and confounding due to linkage disequilibrium. For details see 
+     Manipur et al (2023) <doi:10.1101/2023.06.29.546856>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+URL: https://github.com/ichcha-m/cophescan,
+        https://ichcha-m.github.io/cophescan/
+BugReports: https://github.com/ichcha-m/cophescan/issues
+Imports: Rcpp (>= 1.0.7), coloc, data.table, ggplot2, ggrepel,
+        pheatmap, methods, viridis, stats, grDevices, magrittr, utils,
+        matrixStats, dplyr
+Suggests: knitr, testthat (>= 3.0.0), rmarkdown, RColorBrewer, ggpubr
+Collate: 'cophescan-package.R' 'singlevar.R' 'multivarsusie.R'
+        'multitrait.R' 'cophe_hyp_predict.R' 'copheplots.R'
+        'testdata.R' 'RcppExports.R' 'metrop_hier_priors.R' 'zzz.R'
+LinkingTo: Rcpp, RcppArmadillo
+Config/testthat/edition: 3
+ByteCompile: true
+NeedsCompilation: yes
+Packaged: 2023-10-24 10:32:35 UTC; ichcha
+Author: Ichcha Manipur [aut, cre],
+  Chris Wallace [aut]
+Repository: CRAN
+Date/Publication: 2023-10-25 07:00:06 UTC

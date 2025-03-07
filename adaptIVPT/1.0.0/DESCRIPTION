@@ -1,0 +1,33 @@
+Package: adaptIVPT
+Type: Package
+Title: Adaptive Bioequivalence Design for In-Vitro Permeation Tests
+Version: 1.0.0
+Date: 2022-10-31
+Authors@R: c(
+        person("Daeyoung", "Lim", email = "daeyoung.lim@uconn.edu",
+        role = c("aut", "cre")),
+        person("Elena", "Rantou", email = "Elena.Rantou@fda.hhs.gov", role = "ctb"),
+        person("Jessica", "Kim", email = "Jessica.Kim@fda.hhs.gov", role = "ctb"),
+        person("Sungwoo", "Choi", email = "Sungwoo.Choi@fda.hhs.gov", role = "ctb"),
+        person("Nam Hee", "Choi", email = "NamHee.Choi@fda.hhs.gov", role = "ctb"),
+        person("Stella", "Grosser", email = "Stella.Grosser@fda.hhs.gov", role = "ctb"))
+Maintainer: Daeyoung Lim <daeyoung.lim@uconn.edu>
+Description: Contains functions carrying out adaptive procedures using mixed scaling approach to establish bioequivalence for in-vitro permeation test (IVPT) data. Currently, the package provides procedures based on parallel replicate design and balanced data, according to the U.S. Food and Drug Administration's "Draft Guidance on Acyclovir" <https:www.accessdata.fda.gov/drugsatfda_docs/psg/Acyclovir_topical cream_RLD 21478_RV12-16.pdf>. Potvin et al. (2008) <doi:10.1002/pst.294> provides the basis for our adaptive design (see Method B). This package reflects the views of the authors and should not be construed to represent the views or policies of the U.S. Food and Drug Administration.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Imports: Rcpp, rgl
+Depends: R (>= 3.4)
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+Suggests: knitr, rmarkdown
+Packaged: 2022-11-01 15:36:45 UTC; dal18007
+Author: Daeyoung Lim [aut, cre],
+  Elena Rantou [ctb],
+  Jessica Kim [ctb],
+  Sungwoo Choi [ctb],
+  Nam Hee Choi [ctb],
+  Stella Grosser [ctb]
+Repository: CRAN
+Date/Publication: 2022-11-02 14:50:42 UTC

@@ -1,0 +1,37 @@
+Type: Package
+Package: ibdsim2
+Title: Simulation of Chromosomal Regions Shared by Family Members
+Version: 2.0.0
+Authors@R: 
+    person("Magnus Dehli", "Vigeland", , "m.d.vigeland@medisin.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9134-4962"))
+Description: Simulation of segments shared identical-by-descent (IBD) by
+    pedigree members. Using sex specific recombination rates along the
+    human genome (Halldorsson et al. (2019)
+    <doi:10.1126/science.aau1043>), phased chromosomes are simulated for
+    all pedigree members. Applications include calculation of realised
+    relatedness coefficients and IBD segment distributions. 'ibdsim2' is
+    part of the 'ped suite' collection of packages for pedigree analysis.
+    A detailed presentation of the 'ped suite', including a separate
+    chapter on 'ibdsim2', is available in the book 'Pedigree analysis in
+    R' (Vigeland, 2021, ISBN:9780128244302). A 'shiny' app for visualising
+    and comparing IBD distributions is available at
+    <https://magnusdv.shinyapps.io/ibdsim2-shiny/>.
+License: GPL-3
+URL: https://github.com/magnusdv/ibdsim2,
+        https://magnusdv.github.io/pedsuite/,
+        https://magnusdv.shinyapps.io/ibdsim2-shiny/
+Depends: R (>= 4.1.0), pedtools (>= 2.2.0)
+Imports: Rcpp, ggplot2, glue, ribd (>= 1.5.0)
+Suggests: testthat
+LinkingTo: Rcpp
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-08-17 14:31:39 UTC; magnusdv
+Author: Magnus Dehli Vigeland [aut, cre]
+    (<https://orcid.org/0000-0002-9134-4962>)
+Maintainer: Magnus Dehli Vigeland <m.d.vigeland@medisin.uio.no>
+Repository: CRAN
+Date/Publication: 2023-08-17 15:52:33 UTC

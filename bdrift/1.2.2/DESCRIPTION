@@ -1,0 +1,37 @@
+Package: bdrift
+Type: Package
+Title: Beta Drift Analysis
+Version: 1.2.2
+Date: 2016-04-04
+Authors@R: person("Markus Peter", "Auer", role = c("aut", "cre"),
+                     email = "mp.auer@meanerreversion.com")
+Maintainer: Markus Peter Auer <mp.auer@meanerreversion.com>
+Description: Beta drift poses a serious challenge to asset managers   
+    and financial researchers. Beta drift causes problems in asset 
+    pricing models and can have serious ramifications for hedging 
+    attempts. Providing users with a tool that allows them to 
+    quantify beta drift and form educated opinions about it is 
+    the primary purpose of this package.
+    This package contains the BDA() function that performs a beta 
+    drift analysis, typically for multi-factor asset pricing models. 
+    The BDA() function tests the underlying model parameters for 
+    drift across time, drift across model horizon, and applies a 
+    jackknife procedure to the baseline model. This allows the users 
+    to draw conclusions about the stability of model parameters or 
+    make inferences about the behavior of funds. For example, the 
+    drift of parameters for active funds could be interpreted as 
+    implicit style drift or, in the case of passive funds, management's 
+    inability to track a benchmark completely.
+Depends: R (>= 3.2.3), graphics, stats, xts, zoo
+Imports: Quandl, quantmod, scales
+Suggests:
+License: GPL-3
+LazyData: yes
+URL: http://github.com/MeanerReversion/bdrift
+BugReports: http://github.com/MeanerReversion/bdrift/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-04-06 01:26:09 UTC; Markus
+Author: Markus Peter Auer [aut, cre]
+Repository: CRAN
+Date/Publication: 2016-04-06 09:43:08

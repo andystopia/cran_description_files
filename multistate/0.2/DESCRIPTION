@@ -1,0 +1,16 @@
+Package: multistate
+Type: Package
+Title: Fitting Multistate Models
+Version: 0.2
+Date: 2017-08-02
+Author: Yohann Foucher, Florence Gillaizeau
+Maintainer: Yohann Foucher <Yohann.Foucher@univ-nantes.fr>
+Description: Medical researchers are often interested in investigating the relationship between explicative variables and multiple times-to-event. Time-inhomogeneous Markov models consist of modelling the probabilities of transitions according to the chronological times (times since the baseline of the study). Semi-Markov (SM) models consist of modelling the probabilities of transitions according to the times spent in states. In this package, we propose functions implementing such 3-state and 4-state multivariable and multistate models. The user can introduce multiple covariates to estimate conditional (subject-specific) effects. We also propose to adjust for possible confounding factors by using the Inverse Probability Weighting (IPW). When a state is patient death, the user can consider to take into account the mortality of the general population (relative survival approach). Finally, in the particular situation of one initial transient state and two competing and absorbing states, this package allows for estimating mixture models.
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 2.10), survival, statmod, date, relsurv
+URL: www.r-project.org, www.labcom-risca.com
+NeedsCompilation: no
+Packaged: 2017-08-03 08:03:20 UTC; foucher-y
+Repository: CRAN
+Date/Publication: 2017-08-03 14:34:43 UTC

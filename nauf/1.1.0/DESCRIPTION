@@ -1,0 +1,30 @@
+Package: nauf
+Type: Package
+Title: Regression with NA Values in Unordered Factors
+Version: 1.1.0
+Authors@R: person("Christopher D.", "Eager",
+    email = "eagerstats@gmail.com", role = c("aut","cre"))
+Description: Fits regressions where unordered factors can be set to NA in 
+    subsets of the data where they are not applicable or otherwise not
+    contrastive by using sum contrasts and setting NA values to zero.
+Depends: R (>= 3.3.3), standardize (>= 0.2.1), lme4 (>= 1.1-12),
+        rstanarm (>= 2.15.3)
+Imports: methods, utils, MASS (>= 7.3-45), stringr (>= 1.1.0), Matrix
+        (>= 1.2-7.1), lsmeans (>= 2.25-5), pbkrtest (>= 0.4-7), car (>=
+        2.1-4), lmerTest (>= 2.0-33), Rcpp (>= 0.12.5), rstan (>=
+        2.15.1), bayesplot (>= 1.2.0), digest (>= 0.6.12), loo (>=
+        1.1.0), shinystan (>= 2.3.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/CDEager/nauf
+BugReports: https://github.com/CDEager/nauf/issues
+Suggests: testthat, knitr, rmarkdown, afex
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-06-14 21:28:16 UTC; Admin
+Author: Christopher D. Eager [aut, cre]
+Maintainer: Christopher D. Eager <eagerstats@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-06-14 21:45:28 UTC

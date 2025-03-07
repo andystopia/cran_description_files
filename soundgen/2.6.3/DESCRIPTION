@@ -1,0 +1,28 @@
+Package: soundgen
+Type: Package
+Title: Sound Synthesis and Acoustic Analysis
+Version: 2.6.3
+Date: 2024-05-27
+Authors@R: person("Andrey", "Anikin", email = "andrey.anikin@cogsci.se", role = c("aut", "cre"))
+Maintainer: Andrey Anikin <andrey.anikin@cogsci.se>
+URL: http://cogsci.se/soundgen.html
+Description: Performs parametric synthesis of sounds with harmonic and noise 
+    components such as animal vocalizations or human voice. Also offers tools 
+    for audio manipulation and acoustic analysis, including pitch tracking, 
+    spectral analysis, audio segmentation, pitch and formant shifting, etc. 
+    Includes four interactive web apps for synthesizing and annotating audio, 
+    manually correcting pitch contours, and measuring formant frequencies. 
+    Reference: Anikin (2019) <doi:10.3758/s13428-018-1095-7>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: stats (>= 4.0.0), graphics, utils, tuneR, seewave (>= 2.1.6),
+        zoo, mvtnorm, dtw, phonTools, signal, shiny, shinyjs, foreach,
+        doParallel, nonlinearTseries, data.table
+Depends: R (>= 4.0), shinyBS
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-27 14:16:33 UTC; allgoodguys
+Author: Andrey Anikin [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-05-28 05:40:06 UTC

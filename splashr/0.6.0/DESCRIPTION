@@ -1,0 +1,34 @@
+Package: splashr
+Type: Package
+Title: Tools to Work with the 'Splash' 'JavaScript' Rendering and
+        Scraping Service
+Version: 0.6.0
+Date: 2019-02-24
+Encoding: UTF-8
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640"))
+  )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: 'Splash' <https://github.com/scrapinghub/splash> is a 'JavaScript' rendering service.
+    It is a lightweight web browser with an 'HTTP' API, implemented in 'Python' using 'Twisted' 
+    and 'QT' and provides some of the core functionality of the 'RSelenium' or 'seleniumPipes'
+    R packages in a lightweight footprint. Some of 'Splash' features include the ability to process 
+    multiple web pages in parallel; retrieving 'HTML' results and/or take screen shots; disabling 
+    images or use 'Adblock Plus' rules to make rendering faster; executing custom 'JavaScript' in 
+    page context; getting detailed rendering info in 'HAR' format.
+URL: http://gitlab.com/hrbrmstr/splashr
+BugReports: https://gitlab.com/hrbrmstr/splashr/issues
+License: MIT + file LICENSE
+Suggests: testthat, tibble, jpeg, png, covr, knitr, rmarkdown
+Depends: R (>= 3.2.0)
+Imports: xml2, curl, httr, dplyr, purrr, stats, utils, stevedore,
+        magick, scales, formatR, openssl, stringi, HARtools, jsonlite,
+        lubridate
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-26 14:27:04 UTC; hrbrmstr
+Author: Bob Rudis [aut, cre] (<https://orcid.org/0000-0001-5670-2640>)
+Repository: CRAN
+Date/Publication: 2019-02-26 18:50:03 UTC

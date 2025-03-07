@@ -1,0 +1,28 @@
+Package: starsTileServer
+Title: A Dynamic Tile Server for R
+Version: 0.1
+Authors@R: 
+    person(given = "Bart",
+           family = "Kranstauber",
+           role = c("aut", "cre"),
+           email = "b.kranstauber@uva.nl",
+           comment = c(ORCID = "0000-0001-8303-780X"))
+Description: Makes it possible to serve map tiles for web maps (e.g. leaflet) based on a function or a stars object without having to render them in advance. This enables parallelization of the rendering, separating the data source and visualization location and to provide web services.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+URL: https://bartk.gitlab.io/starsTileServer,
+        https://gitlab.com/bartk/starsTileServer
+BugReports: https://gitlab.com/bartk/starsTileServer/-/issues
+Suggests: knitr, rmarkdown, leaflet.extras, webshot, mapview, callr,
+        magick, shiny, dplyr, magrittr, abind, testthat (>= 3.0.0),
+        withr
+VignetteBuilder: knitr
+Imports: R6, leaflet, plumber, png, rlang, sf, stars, units, assertthat
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-01-20 15:59:18 UTC; bart
+Author: Bart Kranstauber [aut, cre] (<https://orcid.org/0000-0001-8303-780X>)
+Maintainer: Bart Kranstauber <b.kranstauber@uva.nl>
+Repository: CRAN
+Date/Publication: 2022-01-21 09:00:02 UTC

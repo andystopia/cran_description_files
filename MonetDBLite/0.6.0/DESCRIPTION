@@ -1,0 +1,33 @@
+Package: MonetDBLite
+Version: 0.6.0
+Title: In-Process Version of 'MonetDB'
+Authors@R: c(
+	person("Hannes", "M\u00fchleisen", role = c("aut", "cre"), email = "hannes@cwi.nl", comment = c(ORCID = "0000-0001-8552-0029")),
+	person("Mark", "Raasveldt", role = "ctb"),
+	person("Thomas", "Lumley", role = "ctb"),
+	person("MonetDB B.V.", role = "cph"),
+	person("The Regents of the University of California", role = "cph"),
+	person("Kungliga Tekniska Hogskolan", role = "cph"),
+	person("Free Software Foundation, Inc.", role = "cph"))
+Description: An in-process version of 'MonetDB', a SQL database designed for analytical tasks. Similar to 'SQLite', the database runs entirely inside the 'R' shell.
+License: MPL (== 2.0)
+URL: https://github.com/hannesmuehleisen/MonetDBLite-R
+BugReports: https://github.com/hannesmuehleisen/MonetDBLite-R/issues
+Depends: R (>= 3.2.0)
+Imports: DBI (>= 0.6), digest (>= 0.6.4), methods, codetools
+Suggests: assertthat, testthat, survey, nycflights13, RSQLite, dbplyr,
+        dplyr, gdata, callr, devtools, DBItest, bit64
+Collate: mapi.R dbi.R dbapply.R dplyr.R control.R embedded.R zzz.R
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2018-07-27 08:25:26 UTC; hannes
+Author: Hannes Mühleisen [aut, cre] (<https://orcid.org/0000-0001-8552-0029>),
+  Mark Raasveldt [ctb],
+  Thomas Lumley [ctb],
+  MonetDB B.V. [cph],
+  The Regents of the University of California [cph],
+  Kungliga Tekniska Hogskolan [cph],
+  Free Software Foundation, Inc. [cph]
+Maintainer: Hannes Mühleisen <hannes@cwi.nl>
+Repository: CRAN
+Date/Publication: 2018-07-27 09:40:03 UTC

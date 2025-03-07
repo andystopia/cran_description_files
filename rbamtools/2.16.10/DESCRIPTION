@@ -1,0 +1,26 @@
+Package: rbamtools
+Type: Package
+Title: Read and Write BAM (Binary Alignment) Files
+Version: 2.16.10
+Date: 2018-04-14
+Authors@R: c(person("Wolfgang", "Kaisers", role=c("aut", "cre"),
+			email="wolfgang.kaisers@gmail.com"),
+		person("Heng", "Li", role=c("ctb", "cph"), 
+			email="lh3@sanger.ac.uk"),
+		person("Jue", "Ruan", role=c("ctb", "cph"),
+			email="ruanjue@gmail.com"))
+Description: Provides an R interface to functions of the 'SAMtools' C-Library by Heng Li <http://www.htslib.org/>.
+License: Artistic-2.0
+Copyright: file inst/COPYRIGHTS
+LazyLoad: yes
+Depends: methods,refGenome (>= 1.6.1)
+Suggests: xtable
+Collate: rbamtools.R segmentize.R sampleBamFiles.R
+Packaged: 2018-04-14 15:54:55 UTC; wolfgang
+Repository: CRAN
+Date/Publication: 2018-04-30 16:30:33 UTC
+NeedsCompilation: yes
+Author: Wolfgang Kaisers [aut, cre],
+  Heng Li [ctb, cph],
+  Jue Ruan [ctb, cph]
+Maintainer: Wolfgang Kaisers <wolfgang.kaisers@gmail.com>

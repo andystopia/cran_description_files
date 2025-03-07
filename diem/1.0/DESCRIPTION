@@ -1,0 +1,36 @@
+Package: diem
+Title: Debris-Containing Droplet Identification using EM
+Version: 1.0
+Date: 2019-11-05
+Authors@R: c(person(given = "Marcus",
+            family = "Alvarez", 
+            role = c("aut", "cre"),
+            email = "malvarez@mednet.ucla.edu"), 
+        person(given = "Elior", 
+            family = "Rahmani", 
+            role = "aut", 
+            email = "elior.rahmani@gmail.com"))
+Description: Identification of debris-containing droplets 
+        from a droplet-based single cell/nucleus RNA-seq. 'diem' uses 
+        the expression profile of background RNA droplets, followed 
+        by expectation maximization (EM), to assign candidates as 
+        debris or nuclei. See Alvarez M, Rahmani E, et al (2019) 
+        <doi:10.1101/786285> for details.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: R (>= 3.5.0), methods
+LinkingTo: Rcpp, RcppEigen
+Imports: ggplot2, Matrix, scales, dbscan, igraph, utils, stats
+Suggests: Seurat (>= 3.0.0), testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://www.biorxiv.org/content/10.1101/786285v2
+BugReports: https://github.com/marcalva/diem/issues
+NeedsCompilation: yes
+Packaged: 2019-11-13 01:35:39 UTC; malvarez
+Author: Marcus Alvarez [aut, cre],
+  Elior Rahmani [aut]
+Maintainer: Marcus Alvarez <malvarez@mednet.ucla.edu>
+Repository: CRAN
+Date/Publication: 2019-11-15 17:30:03 UTC

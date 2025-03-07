@@ -1,0 +1,32 @@
+Package: psm3mkv
+Title: Evaluate Partitioned Survival and State Transition Models
+Version: 0.3.1
+Authors@R: c(
+    person("Dominic", "Muston", , "dominic.muston@merck.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4876-7940")),
+    person("Merck & Co., Inc., Rahway, NJ, USA and its affiliates", role = c("cph", "fnd"))
+    )
+Description: Fits and evaluates three-state partitioned survival analyses
+    (PartSAs) and Markov models (clock forward or clock reset) to
+    progression and overall survival data typically collected in oncology clinical trials. These model structures are typically considered in
+    cost-effectiveness modeling in advanced/metastatic cancer indications.
+    Muston (2024). "Informing structural assumptions for three state oncology cost-effectiveness models through model efficiency and fit". Applied Health Economics and Health Policy. In press.
+License: GPL (>= 3)
+URL: https://merck.github.io/psm3mkv/, https://github.com/Merck/psm3mkv
+BugReports: https://github.com/Merck/psm3mkv/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, flexsurv, ggplot2, purrr, rlang, SimplicialCubature,
+        stats, survival, stringr, tibble, tidyr
+Suggests: boot, covr, ggsci, HMDHFDplus, knitr, rmarkdown, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-06 22:03:00 UTC; muston
+Author: Dominic Muston [aut, cre] (<https://orcid.org/0000-0003-4876-7940>),
+  Merck & Co., Inc., Rahway, NJ, USA and its affiliates [cph, fnd]
+Maintainer: Dominic Muston <dominic.muston@merck.com>
+Repository: CRAN
+Date/Publication: 2024-05-07 08:10:02 UTC

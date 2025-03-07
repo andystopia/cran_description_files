@@ -1,0 +1,34 @@
+Package: era
+Type: Package
+Title: Year-Based Time Scales
+Version: 0.4.1
+Authors@R: person("Joe", "Roe", email = "joe@joeroe.io",
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1011-1244"))
+Description: Provides a consistent representation of year-based time scales as a
+    numeric vector with an associated 'era'. There are built-in era definitions
+    for many year numbering systems used in contemporary and historic calendars 
+    (e.g. Common Era, Islamic 'Hijri' years); year-based time scales used in 
+    archaeology, astronomy, geology, and other palaeosciences (e.g. 
+    Before Present, SI-prefixed 'annus'); and support for arbitrary user-defined
+    eras. Years can converted from any one era to another using a generalised 
+    transformation function. Methods are also provided for robust casting and 
+    coercion between years and other numeric types, type-stable arithmetic with 
+    years, and pretty-printing in tables.
+Language: en-GB
+License: MIT + file LICENSE
+URL: https://era.joeroe.io, https://github.com/joeroe/era
+BugReports: https://github.com/joeroe/era/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Depends: R (>= 2.10)
+Imports: vctrs (>= 0.3.0), methods, rlang, pillar
+Suggests: tibble, testthat, covr, knitr, rmarkdown, dplyr, spelling,
+        purrr, tidyr, lubridate
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-11-16 15:42:21 UTC; joeroe
+Author: Joe Roe [aut, cre] (<https://orcid.org/0000-0002-1011-1244>)
+Maintainer: Joe Roe <joe@joeroe.io>
+Repository: CRAN
+Date/Publication: 2022-11-17 13:10:04 UTC

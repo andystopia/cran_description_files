@@ -1,0 +1,48 @@
+Package: BINtools
+Title: Bayesian BIN (Bias, Information, Noise) Model of Forecasting
+Version: 0.1.0
+Authors@R: 
+     c(person(given = "Ville",
+           family = "Satopää",
+           role = c("aut", "cre"),
+           email = "ville.satopaa@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0002-3787-7303")),
+        person(given = "Marat",
+           family = "Salikhov",
+           role = "aut"),
+        person(given = "Elvira",
+           family = "Moreno",
+           role = "aut"))
+Description: A recently proposed Bayesian BIN model disentangles the underlying processes 
+    that enable forecasters and forecasting methods to improve, decomposing forecasting accuracy into 
+    three components: bias, partial information, and noise. By describing the differences between two 
+    groups of forecasters, the model allows the user to carry out useful inference, such as calculating 
+    the posterior probabilities of the treatment reducing bias, diminishing noise, or increasing information.
+    It also provides insight into how much tamping down bias and noise in judgment or enhancing the efficient 
+    extraction of valid information from the environment improves forecasting accuracy. This package provides 
+    easy access to the BIN model. For further information refer to the paper Ville A. Satopää, Marat Salikhov,
+    Philip E. Tetlock, and Barbara Mellers (2021) "Bias, Information, Noise: The BIN 
+    Model of Forecasting" <doi:10.1287/mnsc.2020.3882>. 
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, Rcpp (>= 0.12.0), rstan (>= 2.18.1), dplyr (>=
+        1.0.2), tibble (>= 3.0.3), stringi (>= 1.4.6), mvtnorm (>=
+        1.1.1), combinat (>= 0.0.8)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: testthat, knitr, rmarkdown, pacman (>= 0.5.1), rstantools (>=
+        2.1.1), RcppParallel (>= 5.0.1)
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-06-09 14:12:11 UTC; elviramoreno
+Author: Ville Satopää [aut, cre] (<https://orcid.org/0000-0002-3787-7303>),
+  Marat Salikhov [aut],
+  Elvira Moreno [aut]
+Maintainer: Ville Satopää <ville.satopaa@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-10 08:20:12 UTC

@@ -1,0 +1,49 @@
+Package: rlistings
+Title: Clinical Trial Style Data Readout Listings
+Version: 0.2.8
+Date: 2024-04-04
+Authors@R: c(
+    person("Gabriel", "Becker", , "gabembecker@gmail.com", role = "aut",
+           comment = "original creator of the package"),
+    person("Adrian", "Waddell", , "adrian.waddell@gene.com", role = "aut"),
+    person("Joe", "Zhu", , "joe.zhu@roche.com", role = c("aut", "cre")),
+    person("Davide", "Garolini", , "davide.garolini@roche.com", role = "ctb"),
+    person("Emily", "de la Rua", , "emily.de_la_rua@contractors.roche.com", role = "ctb"),
+    person("Abinaya", "Yogasekaram", , "abinaya.yogasekaram@contractors.roche.com", role = "ctb"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Listings are often part of the submission of clinical trial
+    data in regulatory settings.  We provide a framework for the specific
+    formatting features often used when displaying large datasets in that
+    context.
+License: Apache License 2.0
+URL: https://insightsengineering.github.io/rlistings/,
+        https://github.com/insightsengineering/rlistings/
+BugReports: https://github.com/insightsengineering/rlistings/issues
+Depends: formatters (>= 0.5.6), methods, tibble (>= 2.0.0)
+Imports: checkmate (>= 2.1.0), grDevices, grid, stats, utils
+Suggests: dplyr (>= 1.0.1), knitr (>= 1.42), lifecycle (>= 0.2.0),
+        rmarkdown (>= 2.19), stringi (>= 1.6), testthat (>= 3.1.5),
+        withr (>= 2.0.0)
+VignetteBuilder: knitr
+Config/Needs/verdepcheck: insightsengineering/formatters,
+        tidyverse/tibble, mllg/checkmate, tidyverse/dplyr, yihui/knitr,
+        r-lib/lifecycle, rstudio/rmarkdown, gagolews/stringi,
+        r-lib/testthat, r-lib/withr
+Config/Needs/website: insightsengineering/nesttemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-15 08:33:43 UTC; rstudio
+Author: Gabriel Becker [aut] (original creator of the package),
+  Adrian Waddell [aut],
+  Joe Zhu [aut, cre],
+  Davide Garolini [ctb],
+  Emily de la Rua [ctb],
+  Abinaya Yogasekaram [ctb],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Joe Zhu <joe.zhu@roche.com>
+Repository: CRAN
+Date/Publication: 2024-04-15 09:50:02 UTC

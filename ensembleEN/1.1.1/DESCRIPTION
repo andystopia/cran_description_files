@@ -1,0 +1,25 @@
+Package: ensembleEN
+Type: Package
+Title: Ensembling Regularized Linear Models
+Version: 1.1.1
+Date: 2017-12-18
+Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>,
+    Ezequiel Smucler <ezequiels.90@gmail.com>,
+    Ruben Zamar <ruben@stat.ubc.ca>
+Maintainer: Ezequiel Smucler <ezequiels.90@gmail.com>
+Description: Functions for computing the ensembles of regularized linear
+             regression estimators defined in Christidis, Lakshmanan, Smucler and Zamar (2017)
+             <arXiv:1712.03561>. The procedure works on top of a given penalized linear regression estimator,
+             the Elastic Net in this implementation, by fitting it to possibly overlapping subsets of features, while at the same
+             time encouraging diversity among the subsets, to reduce the correlations between the predictions
+             that result from each fitted model. The predictions from the models are then aggregated.
+License: GPL (>= 2)
+Biarch: true
+Imports: Rcpp (>= 0.12.12)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, glmnet, MASS
+NeedsCompilation: yes
+RoxygenNote: 6.0.1
+Packaged: 2018-01-03 19:02:22 UTC; ezequiel
+Repository: CRAN
+Date/Publication: 2018-01-04 14:46:49 UTC

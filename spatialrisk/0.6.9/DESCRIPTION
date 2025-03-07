@@ -1,0 +1,27 @@
+Package: spatialrisk
+Type: Package
+Title: Calculating Spatial Risk
+Version: 0.6.9
+Authors@R: c(person("Martin", "Haringa", role = c("aut", "cre"), email = "mtharinga@gmail.com"))
+Maintainer: Martin Haringa <mtharinga@gmail.com>
+Description: Methods for spatial risk calculations. It offers an efficient approach to determine the sum of all observations within a 
+     circle of a certain radius. This might be beneficial for insurers who are required (by a recent European Commission regulation) to determine 
+     the maximum value of insured fire risk policies of all buildings that are partly or fully located within a circle of a radius of 200m. See 
+     Church (1974) <doi:10.1007/BF01942293> for a description of the problem.
+License: GPL (>= 2)
+URL: https://github.com/mharinga/spatialrisk,
+        https://mharinga.github.io/spatialrisk/
+LazyData: true
+LinkingTo: Rcpp, RcppProgress
+Imports: classInt, colourvalues, data.table, dplyr, fs, GenSA,
+        geohashTools, ggplot2, leafem, leafgl, leaflet, lubridate,
+        methods, Rcpp, RcppProgress, sf, tmap, units, viridis
+Depends: R (>= 3.3)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: automap, gstat, knitr, mgcv, rmarkdown, testthat, vroom
+NeedsCompilation: yes
+Packaged: 2021-05-26 19:17:51 UTC; martin
+Author: Martin Haringa [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-05-26 19:40:02 UTC

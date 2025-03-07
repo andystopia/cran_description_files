@@ -1,0 +1,40 @@
+Package: CodelistGenerator
+Title: Identify Relevant Clinical Codes and Evaluate Their Use
+Version: 3.0
+Authors@R: c(
+    person("Edward", "Burn", email = "edward.burn@ndorms.ox.ac.uk", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-9286-1128")),
+    person("Marti", "Catala", email = "marti.catalasabate@ndorms.ox.ac.uk", 
+    role = c("ctb"), 
+    comment = c(ORCID = "0000-0003-3308-9905")),
+    person("Xihang", " Chen", email = "xihang.chen@ndorms.ox.ac.uk", 
+    role = c("ctb"), 
+    comment = c(ORCID = "0009-0001-8112-8959")))
+Description: Generate a candidate code list for the Observational Medical Outcomes Partnership (OMOP) common data model based on string matching. For a given search strategy, a candidate code list will be returned.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Imports: checkmate (>= 2.0.0), DBI (>= 1.1.0), dplyr (>= 1.1.0),
+        magrittr (>= 2.0.0), omopgenerics (>= 0.2.0), rlang (>= 1.0.0),
+        glue (>= 1.5.0), stringr (>= 1.4.0), tidyselect (>= 1.2.0),
+        tidyr (>= 1.2.0), cli (>= 3.1.0), purrr, lubridate,
+        PatientProfiles (>= 1.0.0), RJSONIO, vctrs, visOmopResults (>=
+        0.3.0), lifecycle
+Suggests: covr, duckdb, CDMConnector (>= 1.3.0), knitr, rmarkdown,
+        testthat (>= 3.0.0), RPostgres, odbc, spelling, tibble, gt,
+        flextable
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+VignetteBuilder: knitr
+URL: https://darwin-eu.github.io/CodelistGenerator/
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-05-30 21:18:59 UTC; eburn
+Author: Edward Burn [aut, cre] (<https://orcid.org/0000-0002-9286-1128>),
+  Marti Catala [ctb] (<https://orcid.org/0000-0003-3308-9905>),
+  Xihang Chen [ctb] (<https://orcid.org/0009-0001-8112-8959>)
+Maintainer: Edward Burn <edward.burn@ndorms.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-05-31 07:10:10 UTC

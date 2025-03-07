@@ -1,0 +1,35 @@
+Package: pracpac
+Title: Practical 'R' Packaging in 'Docker'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Stephen",
+             family = "Turner",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0001-9140-9028")),
+      person(given = "VP",
+             family = "Nagraj",
+             role = c("cre", "aut"),
+             email="nagraj@nagraj.net",
+             comment = c(ORCID = "0000-0003-0060-566X")),
+      person("Signature Science, LLC.",
+             role = "cph"))
+Description: Streamline the creation of 'Docker' images with 'R' packages and dependencies embedded. The 'pracpac' package provides a 'usethis'-like interface to creating Dockerfiles with dependencies managed by 'renv'. The 'pracpac' functionality is described in Nagraj and Turner (2023) <doi:10.48550/arXiv.2303.07876>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: magrittr, glue, fs, rprojroot, renv, pkgbuild
+Depends: R (>= 2.10)
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://signaturescience.github.io/pracpac/,
+        https://github.com/signaturescience/pracpac/
+BugReports: https://github.com/signaturescience/pracpac/issues
+NeedsCompilation: no
+Packaged: 2023-03-20 11:31:12 UTC; vpnagraj
+Author: Stephen Turner [aut] (<https://orcid.org/0000-0001-9140-9028>),
+  VP Nagraj [cre, aut] (<https://orcid.org/0000-0003-0060-566X>),
+  Signature Science, LLC. [cph]
+Maintainer: VP Nagraj <nagraj@nagraj.net>
+Repository: CRAN
+Date/Publication: 2023-03-21 17:00:10 UTC

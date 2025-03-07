@@ -1,0 +1,24 @@
+Package: mlmm
+Type: Package
+Title: Multilevel Model for Multivariate Responses with Missing Values
+Version: 1.0
+Date: 2017-10-11
+Authors@R: c(person("Irene SL","Zeng",email="i.zeng@auckland.ac.nz", role = c("aut", "cre")),person("Thomas","Lumley",email="t.lumley@auckland.ac.nz",role="ctb"),person("Trustees","Columbia-University",email="secretary@columbia.edu",role="cph"))
+Description: To conduct Bayesian inference regression for responses with multilevel explanatory variables and missing values(Zeng ISL (2017) <doi:10.1101/153049>). Functions utilizing 'Stan', a software to implement posterior sampling using Hamiltonian MC and its variation Non-U-Turn algorithms are generated and provided to implement the posterior sampling of regression coefficients from the multilevel regression models. The package has two main functions to handle not-missing-at-random missing responses and left-censored with not-missing-at random responses. The purpose is to provide a similar format as the other R regression functions but using 'Stan' models. 
+Maintainer: Irene SL Zeng <i.zeng@auckland.ac.nz>
+License: GPL-2
+Depends: R (>= 3.0.2), Rcpp (>= 0.12.12), methods, stats
+Imports: rstan (>= 2.16.2), rstantools (>= 1.3.0), MASS, Matrix,
+        stats4, ggplot2
+LinkingTo: StanHeaders (>= 2.16.0.1), rstan (>= 2.16.2), BH (>=
+        1.65.0.1), Rcpp (>= 0.12.12), RcppEigen (>= 0.3.3.3.0)
+Suggests: testthat
+URL: https://doi.org/10.1101/153049
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-10-30 23:25:43 UTC; szen003
+Author: Irene SL Zeng [aut, cre],
+  Thomas Lumley [ctb],
+  Trustees Columbia-University [cph]
+Repository: CRAN
+Date/Publication: 2017-11-02 11:45:44 UTC

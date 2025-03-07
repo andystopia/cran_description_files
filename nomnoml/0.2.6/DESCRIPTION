@@ -1,0 +1,35 @@
+Package: nomnoml
+Type: Package
+Title: Sassy 'UML' Diagrams
+Version: 0.2.6
+Authors@R: c(
+    person("Andrie", "de Vries", email = "apdevries@gmail.com", role = c("aut", "cre")),
+    person("Javier", "Luraschi", email = "jluraschi@gmail.com", role = "aut"),
+    person("Daniel", "Kallin", role = "cph", comment = "nomnoml.js library, https://nomnoml.com"),
+    person(family = "RStudio", role = c("cph", "fnd"))
+    )
+Description: A tool for drawing sassy 'UML' diagrams based on a simple syntax,
+  see <https://www.nomnoml.com>. Supports styling, R Markdown and exporting diagrams 
+  in the PNG format.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.1.2)
+Imports: htmlwidgets, png, webshot, lifecycle, rlang
+RoxygenNote: 7.2.2
+Suggests: V8, knitr, rmarkdown, testthat, shinytest, covr, spelling
+SystemRequirements: PhantomJS (http://phantomjs.org) for taking
+        screenshots
+URL: https://github.com/rstudio/nomnoml
+BugReports: https://github.com/rstudio/nomnoml/issues
+RdMacros: lifecycle
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-03-11 11:40:53 UTC; apdev
+Author: Andrie de Vries [aut, cre],
+  Javier Luraschi [aut],
+  Daniel Kallin [cph] (nomnoml.js library, https://nomnoml.com),
+  RStudio [cph, fnd]
+Maintainer: Andrie de Vries <apdevries@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-11 12:00:02 UTC

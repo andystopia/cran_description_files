@@ -1,0 +1,23 @@
+Type: Package
+Package: hyperbolicDEA
+Title: Hyperbolic DEA Estimation
+Version: 0.1.1
+Authors@R: c(
+    person("Alexander", "Öttl", , "alexoettl34@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-0734-4135")),
+    person("Daniel", "Gulde", , "daguldre@gmail.com", role = "aut")
+  )
+Maintainer: Alexander Öttl <alexoettl34@gmail.com>
+Description: Implements Data Envelopment Analysis (DEA) with a hyperbolic orientation using a non-linear programming solver. It enables flexible estimations with weight restrictions, non-discretionary variables, and a generalized distance function. Additionally, it allows for the calculation of slacks and super-efficiency scores. The methods are detailed in Öttl et al. (2023), <doi:10.1016/j.dajour.2023.100343>. Furthermore, the package provides a non-linear profitability estimation built upon the DEA framework. 
+License: MIT + file LICENSE
+Imports: doParallel, dplyr, foreach, lpSolveAPI, nloptr, Benchmarking
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-02-21 12:28:23 UTC; fkg114
+Author: Alexander Öttl [cre, aut] (<https://orcid.org/0000-0002-0734-4135>),
+  Daniel Gulde [aut]
+Repository: CRAN
+Date/Publication: 2024-02-22 20:20:03 UTC

@@ -1,0 +1,38 @@
+Package: rcage
+Type: Package
+Title: Regionalization of Multiscale Spatial Processes
+Version: 1.1
+Date: 2021-06-09
+Author: Jonathan R. Bradley [aut],
+  Christopher K. Wikle [aut],
+  Scott H. Holan [aut],
+  Shannon T. Holloway [aut, cre]
+Authors@R: c(person("Jonathan R.", "Bradley", role = "aut"),
+             person("Christopher K.", "Wikle", role = "aut"),
+             person("Scott H.", "Holan", role = "aut"),
+             person("Shannon T.", "Holloway", role = c("aut", "cre"),
+                     email = "sthollow@ncsu.edu"))
+Maintainer: Shannon T. Holloway <sthollow@ncsu.edu>
+Description: Regionalization of multiscale spatial processes based on a criterion for spatial aggregation error. The multiscale representation is a truncated Karhunen-Loaeve expansion using Obled-Creutin eigenfunctions. The method is incorporated within a Bayesian framework using an MCMC implementation of a latent spatial model. Bradley, J. R., Wikle, C. K., and Holan, S. H. (2017) <doi:10.1111/rssb.12179>.
+License: GPL-2
+Depends: R (>= 2.10), ff
+Imports: ClustGeo, MASS, fields, ggplot2, methods, pracma, raster,
+        rgeos, sp, gridExtra, rlang, Matrix, sf, LaplacesDemon
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Collate: 'knots.R' 'GBFObj.R' 'semiDefinite.R' 'miPrior.R'
+        'MIpriorInv.R' 'checkInputs.R' 'checkDB.R' 'checkNW.R'
+        'checkSpatialData.R' 'generatingBasis.R' 'getArea.R'
+        'wMatrix.R' 'choleskyInvW.R' 'obledCruetinBasis.R' 'OCbasis.R'
+        'QPriorObj.R' 'QPriorObj_MI.R' 'QPriorObj_Wishart.R'
+        'biSquare.R' 'cage.R' 'countyExampleData.R' 'yOpt.R'
+        'hMatrix.R' 'dCCAGE.R' 'gibbs.R' 'verifyQPrior.R'
+        'verifyffdir.R' 'verifyCovariates.R' 'verifyNumericVector.R'
+        'inputPrep.R' 'summaryInfo.R' 'map.R' 'minCAGE.R' 'minCAGESH.R'
+        'oceanExampleData.R' 'optimalDCAGE.R' 'optRegion.R'
+        'plot.rcage.R' 'radial.R' 'region.R' 'wendland.R'
+        'windExampleData.R' 'yCageSource.R' 'yFinest.R'
+Packaged: 2021-06-11 19:52:20 UTC; sthollow
+Repository: CRAN
+Date/Publication: 2021-06-14 07:40:06 UTC

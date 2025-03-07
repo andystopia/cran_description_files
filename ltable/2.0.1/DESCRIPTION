@@ -1,0 +1,21 @@
+Package: ltable
+Type: Package
+Title: Easy to Make (Lazy) Tables
+Version: 2.0.1
+Date: 2021-11-12
+Author: Ocheredko Oleksandr
+Description: Constructs tables of counts and proportions out of data sets. It has simplified syntax appealing for novice and even for advanced user under time pressure. It is particularly suitable for exploratory data analysis or presentation to single out most appropriate pieces of tabulated information. The other important feature is possibility to insert tables to Excel and Word documents. This version also features capacity of log-linear and power analyses (original by Oleksandr Ocheredko <doi:10.35566/isdsa2019c5>) for tabulated data with GSL.  
+Maintainer: Ocheredko Oleksandr <Ocheredko@yahoo.com>
+License: GPL (>= 2)
+Depends: R (>= 4.1.0), methods, clipr
+Imports: Rcpp (>= 1.0.5), RcppGSL (>= 0.3.9), graphics, stats
+Suggests: MCMCglmm, knitr, datasets
+Collate: PowerPoisson.R RcppExports.R Plot.R Print.R table_f.R
+        tableToData.R
+SystemRequirements: 'GSL'
+NeedsCompilation: yes
+OS_type: unix
+LinkingTo: Rcpp, RcppGSL
+Packaged: 2021-11-22 09:45:50 UTC; macbook
+Repository: CRAN
+Date/Publication: 2021-11-22 11:40:05 UTC

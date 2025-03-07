@@ -1,0 +1,22 @@
+Package: riAFTBART
+Type: Package
+Title: A Flexible Approach for Causal Inference with Multiple
+        Treatments and Clustered Survival Outcomes
+Version: 0.1.0
+Authors@R: c(
+  person("Liangyuan", "Hu", role = "aut", email = "lh707@sph.rutgers.edu"),
+  person("Jiayi", "Ji", role = c("aut", "cre"), email = "jj869@sph.rutgers.edu"))
+Description: Random-intercept accelerated failure time (AFT) model utilizing Bayesian additive regression trees (BART) for drawing causal inferences about multiple treatments while accounting for the multilevel survival data structure. It also includes an interpretable sensitivity analysis approach to evaluate how the drawn causal conclusions might be altered in response to the potential magnitude of departure from the no unmeasured confounding assumption.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: MASS, MCMCpack, msm, dbarts, magrittr, foreach, doParallel,
+        dplyr, BART, stringr, tidyr, survival, cowplot, ggplot2, twang,
+        nnet
+NeedsCompilation: no
+Packaged: 2022-02-08 17:52:10 UTC; jiayi
+Author: Liangyuan Hu [aut],
+  Jiayi Ji [aut, cre]
+Maintainer: Jiayi Ji <jj869@sph.rutgers.edu>
+Repository: CRAN
+Date/Publication: 2022-02-09 10:00:02 UTC

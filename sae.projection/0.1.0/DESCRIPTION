@@ -1,0 +1,27 @@
+Package: sae.projection
+Type: Package
+Title: Small Area Estimation Using Model-Assisted Projection Method
+Version: 0.1.0
+Authors@R: c(
+      person("Ridson", "Al Farizal P", role = c("aut", "cre","cph"), email = "ridsonalfarizal15@gmail.com", comment = c(ORCID = "0000-0003-0617-0214")),
+      person("Azka", "Ubaidillah", role = "aut", email = "azka@stis.ac.id", comment = c(ORCID = "0000-0002-3597-0459")) 
+    )
+Description: Combines information from two independent surveys using a model-assisted projection method. Designed for survey sampling scenarios where a large sample collects only auxiliary information (Survey 1) and a smaller sample provides data on both variables of interest and auxiliary variables (Survey 2). Implements a working model to generate synthetic values of the variable of interest by fitting the model to Survey 2 data and predicting values for Survey 1 based on its auxiliary variables (Kim & Rao, 2012) <doi:10.1093/biomet/asr063>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/Alfrzlp/sae.projection
+BugReports: https://github.com/Alfrzlp/sae.projection/issues
+Imports: cli, doParallel, dplyr, methods, parsnip, recipes, rlang,
+        rsample, stats, survey, tune, workflows, yardstick, bonsai,
+        ranger, lightgbm
+RoxygenNote: 7.3.2
+Depends: R (>= 4.3.0), tidymodels
+NeedsCompilation: no
+Packaged: 2024-12-18 08:10:00 UTC; alfrz
+Author: Ridson Al Farizal P [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0617-0214>),
+  Azka Ubaidillah [aut] (<https://orcid.org/0000-0002-3597-0459>)
+Maintainer: Ridson Al Farizal P <ridsonalfarizal15@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-19 15:40:02 UTC

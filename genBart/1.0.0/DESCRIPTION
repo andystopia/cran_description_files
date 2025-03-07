@@ -1,0 +1,40 @@
+Package: genBart
+Type: Package
+Title: Generate 'BART' File
+Version: 1.0.0
+Authors@R: c(
+    person("Jacob", "Cardenas", email = "jacob.cardenas@bswhealth.org", 
+    role = c("aut", "cre")), person("Jacob", "Turner", role = "aut"),
+    person("Derek", "Blankenship", role = "aut")
+    )
+Description: A set of functions to generate and format results from statistical
+    analyses of a wide range of high throughput experiments that can then 
+    be uploaded into the 'BART' (Bio-Statistical Analysis Reporting Tool) 'shiny' 
+    app <https://github.com/jcardenas14/BART>. The app provides users with tools 
+    to visualize and efficiently sift through large amounts of data and results.
+Depends: R (>= 3.4.0)
+Imports: clValid (>= 0.6-6), data.table (>= 1.10.4), fastcluster (>=
+        1.1.22), ggplot2 (>= 2.2.1), grid (>= 3.3.3), gtools (>=
+        3.5.0), limma (>= 3.30.13), NMF (>= 0.20.6), pca3d (>= 0.10),
+        psych (>= 1.7.3.21), qusage (>= 2.6.1), RColorBrewer (>=
+        1.1-2), reshape2 (>= 1.4.2), rmarkdown (>= 1.5), scales (>=
+        0.4.1), shiny (>= 1.0.3), shinydashboard (>= 0.5.3), shinyjs
+        (>= 0.9), statmod (>= 1.2.2), stats (>= 3.3.3), stringr (>=
+        1.2.0), tools (>= 3.3.3), VennDiagram (>= 1.6.17)
+Suggests: DESeq2 (>= 1.14.1), edgeR (>= 3.16.5), knitr (>= 1.15.1),
+        SummarizedExperiment (>= 1.1.6), testthat
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+biocViews: Microarray, RNASeq, AnnotationData
+NeedsCompilation: no
+Packaged: 2018-02-14 20:56:10 UTC; e89628
+Author: Jacob Cardenas [aut, cre],
+  Jacob Turner [aut],
+  Derek Blankenship [aut]
+Maintainer: Jacob Cardenas <jacob.cardenas@bswhealth.org>
+Repository: CRAN
+Date/Publication: 2018-02-16 16:36:31 UTC

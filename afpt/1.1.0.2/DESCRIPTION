@@ -1,0 +1,39 @@
+Package: afpt
+Title: Tools for Modelling of Animal Flight Performance
+Version: 1.1.0.2
+Date: 2022-05-23
+Encoding: UTF-8
+Authors@R: c(
+        person("Marco",
+                "KleinHeerenbrink",
+                email = "Marco.KleinHeerenbrink@zoo.ox.ac.uk",
+                role = c("aut","cre"),
+                comment = c(ORCID = "0000-0001-8172-8121")),
+        person("Anders",
+                "Hedenström",
+                role = c("fnd"),
+                comment = c(ORCID = "0000-0002-1757-0945"))
+        )
+Description: Allows estimation and modelling of flight costs in animal (vertebrate) flight,
+    implementing the aerodynamic power model described in Klein Heerenbrink et al.
+    (2015) <doi:10.1098/rspa.2014.0952>. Taking inspiration from the program
+    'Flight', developed by Colin Pennycuick (Pennycuick (2008) "Modelling the flying
+    bird". Amsterdam: Elsevier. ISBN 0-19-857721-4), flight performance is estimated
+    based on basic morphological measurements such as body mass, wingspan and wing
+    area. 'afpt' can be used to make predictions on how animals should adjust their
+    flight behaviour and wingbeat kinematics to varying flight conditions.
+URL: https://github.com/MarcoKlH/afpt-r/
+BugReports: https://github.com/MarcoKlH/afpt-r/issues
+Depends: R(>= 4.0.0)
+Imports: graphics, stats
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2022-05-30 15:07:18 UTC; zool2198
+Author: Marco KleinHeerenbrink [aut, cre]
+    (<https://orcid.org/0000-0001-8172-8121>),
+  Anders Hedenström [fnd] (<https://orcid.org/0000-0002-1757-0945>)
+Maintainer: Marco KleinHeerenbrink <Marco.KleinHeerenbrink@zoo.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-05-30 18:30:12 UTC

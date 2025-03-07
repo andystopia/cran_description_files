@@ -1,0 +1,21 @@
+Package: lda.svi
+Title: Fit Latent Dirichlet Allocation Models using Stochastic
+        Variational Inference
+Version: 0.1.0
+Authors@R: person("Nicholas", "Erskine", email = "nicholas.erskine95@gmail.com", role = c("aut", "cre"))
+Description: Fits Latent Dirichlet Allocation topic models to text data using the stochastic variational inference algorithm described in Hoffman et. al. (2013) <arXiv:1206.7051v3>. This method is more efficient than the original batch variational inference algorithm for LDA, and allows users to fit LDA models with more topics and to larger text corpora than would be feasible using that older method.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+BugReports: https://github.com/nerskin/lda.svi/issues
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+LinkingTo: Rcpp, RcppArmadillo, BH
+Imports: Rcpp, reshape2, tm (>= 0.6), methods, Rdpack
+Suggests: topicmodels
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2019-07-08 13:26:49 UTC; nicholas
+Author: Nicholas Erskine [aut, cre]
+Maintainer: Nicholas Erskine <nicholas.erskine95@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-12 16:10:02 UTC

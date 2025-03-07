@@ -1,0 +1,27 @@
+Package: shinydisconnect
+Title: Show a Nice Message When a 'Shiny' App Disconnects or Errors
+Version: 0.1.0
+Authors@R: person(given = "Dean", family = "Attali", email = "daattali@gmail.com",
+    role = c("aut", "cre", "cph"))
+Description: A 'Shiny' app can disconnect for a variety of reasons: an unrecoverable error occurred in
+    the app, the server went down, the user lost internet connection, or any other reason
+    that might cause the 'Shiny' app to lose connection to its server. With 'shinydisconnect', you can
+    call disonnectMessage() anywhere in a Shiny app's UI to add a nice message when this happens. 
+    Works locally (running Shiny apps within 'RStudio') and on Shiny servers (such as shinyapps.io,
+    'RStudio Connect', 'Shiny Server Open Source', 'Shiny Server Pro'). See demo online at 
+    <https://daattali.com/shiny/shinydisconnect-demo/>.
+URL: https://github.com/daattali/shinydisconnect
+BugReports: https://github.com/daattali/shinydisconnect/issues
+Imports: checkmate, glue, htmltools, shiny (>= 1.0)
+Suggests: colourpicker
+Depends: R (>= 3.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-07-16 23:23:30 UTC; D
+Author: Dean Attali [aut, cre, cph]
+Maintainer: Dean Attali <daattali@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-07-23 15:20:02 UTC

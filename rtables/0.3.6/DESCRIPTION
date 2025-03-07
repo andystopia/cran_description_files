@@ -1,0 +1,45 @@
+Package: rtables
+Title: Reporting Tables
+Date: 2020-12-21
+Version: 0.3.6
+Authors@R: c(
+  person("Gabriel", "Becker", email = "gabembecker@gmail.com", role = c("aut", "cre")),
+  person("Adrian", "Waddell", email = "adrian.waddell@roche.com", role = "aut"),
+  person("Daniel", "Sabanés Bové", email = "daniel.sabanes_bove@roche.com", role = "ctb"),
+  person("Maximilian", "Mordig", email = "maximilian_oliver.mordig@roche.com", role = "ctb")
+  )
+Description: Reporting tables often have structure that goes beyond simple rectangular
+  data. The 'rtables' package provides a framework for declaring complex multi-level tabulations
+  and then applying them to data. This framework models both tabulation and the resulting
+  tables as hierarchical, tree-like objects which support sibling sub-tables, arbitrary splitting
+  or grouping of data in row and column dimensions, cells containing multiple values,
+  and the concept of contextual summary computations. A convenient pipe-able interface is provided
+  for declaring table layouts and the corresponding computations, and then applying them to data.
+Depends: methods, magrittr, R (>= 2.10)
+Imports: stats, htmltools
+Suggests: dplyr, tibble, tidyr, testthat, xml2, knitr, rmarkdown
+License: Apache License 2.0 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+URL: https://github.com/roche/rtables, https://roche.github.io/rtables/
+BugReports: https://github.com/roche/rtables/issues
+Collate: '00tabletrees.R' 'Viewer.R' 'argument_conventions.R'
+        'as_html.R' 'utils.R' 'colby_constructors.R'
+        'compare_rtables.R' 'deprecated.R' 'format_rcell.R' 'indent.R'
+        'make_subset_expr.R' 'prune.R' 'rtable.R' 'simple_analysis.R'
+        'split_funs.R' 'summary.R' 'tree_accessors.R' 'tt_afun_utils.R'
+        'tt_compare_tables.R' 'tt_compatibility.R' 'tt_deprecated.R'
+        'tt_dotabulation.R' 'tt_paginate.R' 'tt_pos_and_access.R'
+        'tt_showmethods.R' 'tt_sort.R' 'tt_test_afuns.R'
+        'tt_toString.R' 'labels.R' 'zzz_constants.R'
+NeedsCompilation: no
+Packaged: 2021-01-19 20:33:45 UTC; gabrielbecker
+Author: Gabriel Becker [aut, cre],
+  Adrian Waddell [aut],
+  Daniel Sabanés Bové [ctb],
+  Maximilian Mordig [ctb]
+Maintainer: Gabriel Becker <gabembecker@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-22 08:40:02 UTC

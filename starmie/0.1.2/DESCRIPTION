@@ -1,0 +1,29 @@
+Package: starmie
+Type: Package
+Title: Population Structure Model Inference and Visualisation
+Version: 0.1.2
+Authors@R: c(person("Gerry", "Tonkin-Hill", email = "tonkin-hill.g@wehi.edu.au", role = c("aut")),
+    person( "Stuart", "Lee", email = "lee.s@wehi.edu.au", role = c("cre", "aut")))
+Description: Data structures and methods for  manipulating output of genetic population structure clustering algorithms.
+  'starmie' can parse output from 'STRUCTURE' (see <https://pritchardlab.stanford.edu/structure.html> for details) or
+  'ADMIXTURE' (see <https://www.genetics.ucla.edu/software/admixture/> for details). 'starmie' performs model selection via
+  information criterion, and provides functions for MCMC diagnostics, correcting label switching and visualisation of admixture coefficients.
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: R (>= 3.3.0)
+Imports: data.table, readr (>= 1.0.0), stringr, tidyr, purrr, ggplot2
+        (>= 2.1.0), iterpc, combinat, label.switching, proxy, MCL,
+        gridExtra, ggdendro, ggrepel, MCMCpack, parallel, methods,
+        stats
+Suggests: testthat, knitr, rmarkdown
+URL: https://github.com/sa-lee/starmie
+BugReports: https://github.com/sa-lee/starmie/issues
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-11-07 02:05:14 UTC; lee.s
+Author: Gerry Tonkin-Hill [aut],
+  Stuart Lee [cre, aut]
+Maintainer: Stuart Lee <lee.s@wehi.edu.au>
+Repository: CRAN
+Date/Publication: 2016-11-07 08:12:43

@@ -1,0 +1,30 @@
+Type: Package
+Package: CorMID
+Title: Correct Mass Isotopologue Distribution Vectors
+Version: 0.1.7
+Date: 2022-12-01
+Authors@R: 
+    person("Jan", "Lisec", , "jan.lisec@bam.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1220-2286"))
+Maintainer: Jan Lisec <jan.lisec@bam.de>
+Description: In metabolic flux experiments tracer molecules (often glucose
+    containing labelled carbon) are incorporated in compounds measured
+    using mass spectrometry. The mass isotopologue distributions of these
+    compounds needs to be corrected for natural abundance of labelled
+    carbon and other effects, which are specific on the compound and
+    ionization technique applied. This package provides functions to
+    correct such effects in gas chromatography atmospheric pressure
+    chemical ionization mass spectrometry analyses.
+License: GPL (>= 3)
+URL: https://doi.org/10.3390/metabo12050408
+Depends: R (>= 3.50)
+Imports: plyr, Rdisop
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2022-12-01 11:08:50 UTC; jlisec
+Author: Jan Lisec [aut, cre] (<https://orcid.org/0000-0003-1220-2286>)
+Repository: CRAN
+Date/Publication: 2022-12-01 12:20:15 UTC

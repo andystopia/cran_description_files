@@ -1,0 +1,49 @@
+Package: BiostatsUHNplus
+Title: Nested Data Summary, Adverse Events and REDCap
+Version: 1.0.1
+Authors@R: c(
+    person("Lisa", "Avery", , "lisa.avery@uhn.ca", role = "aut",
+           comment = c(ORCID = "0000-0002-8431-5143")),
+    person("Zeynep", "Baskurt", , "zeynep.baskurt@uhn.ca", role = "aut"),
+    person("Osvaldo", "Espin-Garcia", , "osvaldo.espin-garcia@uhn.ca", role = "aut"),
+    person("Katrina", "Hueniken", , "katrina.hueniken@uhn.ca", role = "aut"),
+    person("Katherine", "Lajkosz", , "katherine.lajkosz@uhn.ca", role = "aut",
+           comment = c(ORCID = "0000-0003-3760-5401")),
+    person("Xuan", "Li", , "xuan.li@uhnresearch.ca", role = "aut"),
+    person("Tyler", "Pittman", , "tyler.pittman@uhn.ca", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-5013-6980")),
+    person("Anna", "Santiago", , "anna.santiago@uhn.ca", role = "aut",
+           comment = c(ORCID = "0000-0002-0932-2386")),
+    person("Jessica", "Weiss", , "jessica.weiss@uhn.ca", role = "aut"),
+    person("Wei", "Xu", , "wei.xu@uhn.ca", role = "aut")
+  )
+Description: Tools and code snippets for summarizing nested data, adverse events 
+  and REDCap study information.
+License: MIT + file LICENSE
+Depends: R (>= 4.2)
+Imports: afex, coda, cowplot, dplyr, forcats, ggh4x, ggplot2,
+        lifecycle, MCMCglmm, modeest, openxlsx, plyr, purrr, reportRmd,
+        rlang, rstatix, stats, stringi, stringr, tibble, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'data.R' 'globals.R' 'as_numeric_parse.R' 'covsum_nested.R'
+        'dsmb_ccru.R' 'nice_mcmcglmm.R' 'nice_mcmcglmm_icc.R'
+        'ae_timeline_plot.R' 'caterpillar_plot.R' 'redcap_data_out.R'
+NeedsCompilation: no
+Packaged: 2024-12-06 18:40:30 UTC; t109810uhn
+Author: Lisa Avery [aut] (<https://orcid.org/0000-0002-8431-5143>),
+  Zeynep Baskurt [aut],
+  Osvaldo Espin-Garcia [aut],
+  Katrina Hueniken [aut],
+  Katherine Lajkosz [aut] (<https://orcid.org/0000-0003-3760-5401>),
+  Xuan Li [aut],
+  Tyler Pittman [cre, aut] (<https://orcid.org/0000-0002-5013-6980>),
+  Anna Santiago [aut] (<https://orcid.org/0000-0002-0932-2386>),
+  Jessica Weiss [aut],
+  Wei Xu [aut]
+Maintainer: Tyler Pittman <tyler.pittman@uhn.ca>
+Repository: CRAN
+Date/Publication: 2024-12-06 18:50:02 UTC

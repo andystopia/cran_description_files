@@ -1,0 +1,39 @@
+Package: tscopula
+Type: Package
+Title: Time Series Copula Models
+Version: 0.3.1
+Date: 2022-05-07
+Authors@R: 
+    c(person(given = "Alexander", 
+             family = "McNeil", 
+             email = "alexanderjmcneil@gmail.com", 
+             role = c("aut", "cre")),
+     person(given = "Martin", 
+            family = "Bladt", 
+            email = "martinbladt@gmail.com", 
+            role = "aut"))
+Maintainer: Alexander McNeil <alexanderjmcneil@gmail.com>
+Description: Functions for the analysis of time series using copula models.  
+    The package is based on methodology described in the following references.
+    McNeil, A.J. (2021) <doi:10.3390/risks9010014>,
+    Bladt, M., & McNeil, A.J. (2021) <doi:10.1016/j.ecosta.2021.07.004>,
+    Bladt, M., & McNeil, A.J. (2021) <arXiv:2107.00960>.
+Depends: R (>= 3.5.0)
+License: GPL-3
+LazyData: true
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+Imports: methods, stats, graphics, utils, stats4, zoo, xts, FKF, ltsa,
+        rvinecopulib, arfima, Matrix, kdensity
+Collate: 'basic_objects.R' 'armacopula.R' 'dvinecopula.R'
+        'dvinecopula2.R' 'fitting_basic.R' 'margins.R' 'full_models.R'
+        'vtransforms.R' 'fitting_vtscopula.R' 'helper_vtarma.R'
+        'data.R'
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-05-07 08:22:27 UTC; alexanderjmcneil
+Author: Alexander McNeil [aut, cre],
+  Martin Bladt [aut]
+Repository: CRAN
+Date/Publication: 2022-05-07 09:10:02 UTC

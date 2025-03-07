@@ -1,0 +1,23 @@
+Package: datagovsgR
+Type: Package
+Title: Call Real Time APIs from Data Gov Singapore
+Version: 1.0.0
+Author: Clinton Wong <cwxy.clinton@gmail.com>
+Maintainer: Clinton Wong <cwxy.clinton@gmail.com>
+Description: A wrapper for the Data.gov.sg developer resources, which provide 
+    real time and historical information, ranging from carpark availability to 
+    weather forecasts. The functions makes the API calls for a given date and
+    time, before returning the relevant information in a data frame. All APIs 
+    are supported, less the IPOS one which is not returning any data. Relevant 
+    information can be found here <https://data.gov.sg/developer>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: httr, data.table, dplyr, stringr, purrr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-01-15 16:00:11 UTC; CWXYC
+Repository: CRAN
+Date/Publication: 2023-01-15 17:00:05 UTC

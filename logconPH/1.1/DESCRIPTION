@@ -1,0 +1,13 @@
+Package: logconPH
+Type: Package
+Title: CoxPH Model with Log Concave Baseline Distribution
+Version: 1.1
+Date: 2014-08-19
+Author: Clifford Anderson-Bergman 
+Maintainer: Clifford Anderson-Bergman <cianders@uci.edu>
+Description: Computes a cox PH model with a log concave baseline distribution. If no covariates are provided, estimates the log concave NPMLE. Built specifically for interval censored data, where data is a n by 2 matrix with [i, 1] as the left side of the interval for subject i and [i,2] as right side. Uncensored data can be entered by setting [i,1] = [i,2]. Alternatively, this can also handle uncensored data. If all the data is uncensored, you may enter data as a length(n) vector.
+License: GPL-2
+Packaged: 2014-10-20 02:09:09 UTC; Cliff
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-10-20 09:21:20

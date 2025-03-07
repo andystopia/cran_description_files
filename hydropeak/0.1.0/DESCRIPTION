@@ -1,0 +1,41 @@
+Package: hydropeak
+Type: Package
+Title: Detect and Characterize Sub-Daily Flow Fluctuations
+Version: 0.1.0
+Authors@R: c(person("Bettina", "Grün", role = c("cre", "ctb"),
+                    email = "Bettina.Gruen@R-project.org",
+                    comment = c(ORCID = "0000-0001-7265-4773")),
+            person("Julia", "Haider", role = "aut",
+                     email = "julia.haider@posteo.at"),
+            person("Franz", "Greimel", role = "ctb",
+                     email = "franz.greimel@boku.ac.at",
+                     comment = c(ORCID = "0000-0002-8000-1227")))
+Description: An important environmental impact on running water ecosystems 
+    is caused by hydropeaking - the discontinuous release of turbine water 
+    because of peaks of energy demand. An event-based algorithm is implemented 
+    to detect flow fluctuations referring to increase events (IC) and decrease 
+    events (DC). For each event, a set of parameters related to the fluctuation 
+    intensity is calculated: maximum flow fluctuation rate mafr(), mean flow 
+    fluctuation rate mefr(), amplitude amp(), flow ratio fr(), and duration dur().
+    The framework is introduced in Greimel et al. (2016) "A method to detect 
+    and characterize sub-daily flow fluctuations" <doi:10.1002/hyp.10773> and 
+    can be used to identify different fluctuation types according to the potential
+    source: e.g., sub-daily flow fluctuations caused by hydropeaking, rainfall, 
+    or snow and glacier melt.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), data.table
+Config/testthat/edition: 3
+Imports: utils, parallel
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-10-12 14:05:58 UTC; gruen
+Author: Bettina Grün [cre, ctb] (<https://orcid.org/0000-0001-7265-4773>),
+  Julia Haider [aut],
+  Franz Greimel [ctb] (<https://orcid.org/0000-0002-8000-1227>)
+Maintainer: Bettina Grün <Bettina.Gruen@R-project.org>
+Repository: CRAN
+Date/Publication: 2021-10-13 10:00:05 UTC

@@ -1,0 +1,57 @@
+Package: genieclust
+Type: Package
+Title: Fast and Robust Hierarchical Clustering with Noise Points
+        Detection
+Version: 1.1.3
+Date: 2023-01-17
+Authors@R: c(
+    person("Marek", "Gagolewski",
+        role = c("aut", "cre", "cph"),
+        email = "marek@gagolewski.com",
+        comment = c(ORCID = "0000-0003-0637-6028")),
+    person("Maciej", "Bartoszuk", role = c("ctb")),
+    person("Anna", "Cena", role = c("ctb")),
+    person("Peter M.", "Larsen", role = c("ctb"))
+    )
+Description: A retake on the Genie algorithm
+    (Gagolewski, 2021 <DOI:10.1016/j.softx.2021.100722>) - a robust
+    hierarchical clustering method
+    (Gagolewski, Bartoszuk, Cena, 2016 <DOI:10.1016/j.ins.2016.05.003>).
+    Now faster and more memory efficient; determining the whole hierarchy
+    for datasets of 10M points in low dimensional Euclidean spaces or
+    100K points in high-dimensional ones takes only 1-2 minutes.
+    Allows clustering with respect to mutual reachability distances
+    so that it can act as a noise point detector or a robustified version of
+    'HDBSCAN*' (that is able to detect a predefined number of
+    clusters and hence it does not dependent on the somewhat
+    fragile 'eps' parameter).
+    The package also features an implementation of economic inequity indices
+    (the Gini, Bonferroni index), external cluster validity measures
+    (e.g., the adjusted asymmetric accuracy and partition similarity scores
+    such as the adjusted Rand, Fowlkes-Mallows, adjusted mutual information,
+    and pair sets indices),
+    and internal cluster validity indices (e.g., the Calinski-Harabasz,
+    Davies-Bouldin, Ball-Hall, Silhouette, and generalised Dunn indices).
+    See also the 'Python' version of 'genieclust' available on 'PyPI', which
+    supports sparse data, more metrics, and even larger datasets.
+BugReports: https://github.com/gagolews/genieclust/issues
+URL: https://genieclust.gagolewski.com/,
+        https://clustering-benchmarks.gagolewski.com/,
+        https://github.com/gagolews/genieclust
+License: AGPL-3
+Imports: Rcpp (>= 1.0.4), stats, utils
+Suggests: datasets, mlpack
+LinkingTo: Rcpp
+Encoding: UTF-8
+SystemRequirements: OpenMP, C++11
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Packaged: 2023-01-16 23:37:59 UTC; gagolews
+Author: Marek Gagolewski [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0637-6028>),
+  Maciej Bartoszuk [ctb],
+  Anna Cena [ctb],
+  Peter M. Larsen [ctb]
+Maintainer: Marek Gagolewski <marek@gagolewski.com>
+Repository: CRAN
+Date/Publication: 2023-01-17 00:40:02 UTC

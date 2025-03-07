@@ -1,0 +1,30 @@
+Package: tabularaster
+Type: Package
+Title: Tidy Tools for 'Raster' Data
+Version: 0.4.0
+Authors@R: c(
+    person("Michael D.", "Sumner", , "mdsumner@gmail.com", c("aut", "cre"))
+    )
+Description: Facilities to work with vector and raster data in efficient 
+ repeatable and systematic work flow. Missing functionality in existing packages 
+ is included here to allow extraction from raster data with 'simple features' and 
+ 'Spatial' types and to make extraction consistent and straightforward. Extract cell 
+ numbers from raster data and  return the cells, values and weights as a data frame 
+ rather than as lists of matrices or vectors. The functions here allow spatial data 
+ to be used without special handling for the format currently in use. 
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 3.2.5)
+Imports: dplyr, methods, raster, sp, spex (>= 0.4.0), spbabel (>=
+        0.4.8), tibble, viridis
+RoxygenNote: 6.0.1
+Suggests: covr, testthat, knitr, rmarkdown, sf, spdplyr
+VignetteBuilder: knitr
+URL: https://github.com/hypertidy/tabularaster
+BugReports: https://github.com/hypertidy/tabularaster/issues
+NeedsCompilation: no
+Packaged: 2017-12-10 20:48:40 UTC; mdsumner
+Author: Michael D. Sumner [aut, cre]
+Maintainer: Michael D. Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-12-10 21:36:39 UTC

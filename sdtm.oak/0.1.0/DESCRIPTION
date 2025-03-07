@@ -1,0 +1,74 @@
+Package: sdtm.oak
+Type: Package
+Title: SDTM Data Transformation Engine
+Version: 0.1.0
+Authors@R: c(
+    person("Rammprasad", "Ganapathy", email = "ganapathy.rammprasad@gene.com",
+    role = c("aut", "cre")),
+    person("Adam", "Forys", role = "aut"),
+    person("Edgar", "Manukyan", role = "aut"),
+    person("Rosemary", "Li", role = "aut"),
+    person("Preetesh", "Parikh", role = "aut"),
+    person("Lisa", "Houterloot", role = "aut"),
+    person("Yogesh", "Gupta", role = "aut"),
+    person("Omar", "Garcia", email = "ogcalderon@cdisc.org", role = "aut"),
+    person("Ramiro", "Magno", email = "rmagno@pattern.institute",
+    role = "aut", comment = c(ORCID = "0000-0001-5226-3441")),
+    person("Kamil", "Sijko", email = "kamil.sijko@ttsi.com.pl",
+    role = "aut", comment = c(ORCID = "0000-0002-2203-1065")),
+    person("Shiyu", "Chen", email = "Shiyu.Chen@atorusresearch.com", 
+    role = "aut"),
+    person("Pattern Institute", role = c("cph", "fnd")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("Pfizer Inc", role = c("cph", "fnd")),
+    person("Transition Technologies Science", role = c("cph", "fnd"))
+    )
+Maintainer: Rammprasad Ganapathy <ganapathy.rammprasad@gene.com>
+Description: An Electronic Data Capture system (EDC) and Data Standard agnostic 
+    solution that enables the pharmaceutical programming community to develop 
+    Clinical Data Interchange Standards Consortium (CDISC)
+    Study Data Tabulation Model (SDTM) datasets in R. The reusable algorithms 
+    concept in 'sdtm.oak' provides a framework for modular programming and can 
+    potentially automate the conversion of raw clinical data to SDTM through 
+    standardized SDTM specifications. SDTM is one of the required standards for data 
+    submission to the Food and Drug Administration (FDA) in the United States and 
+    Pharmaceuticals and Medical Devices Agency (PMDA) in Japan. SDTM standards 
+    are implemented following the SDTM Implementation Guide as defined by 
+    CDISC <https://www.cdisc.org/standards/foundational/sdtmig>.
+Language: en-US
+License: Apache License (>= 2)
+Copyright: F. Hoffmann-La Roche AG, Pattern Institute, Atorus Research
+        LLC and Transition Technologies Science sp. z o.o.
+BugReports: https://github.com/pharmaverse/sdtm.oak/issues/
+URL: https://pharmaverse.github.io/sdtm.oak/
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2)
+Imports: admiraldev (>= 1.1.0), dplyr (>= 1.0.0), purrr (>= 1.0.1),
+        tidyr (>= 1.2.0), rlang (>= 1.0.2), tibble (>= 3.2.0), vctrs
+        (>= 0.5.0), stringr (>= 1.4.0), assertthat, pillar, cli
+Suggests: knitr, htmltools, lifecycle, magrittr, rmarkdown, spelling,
+        testthat (>= 3.1.7), DT, readr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+NeedsCompilation: no
+Packaged: 2024-08-29 00:16:07 UTC; ganapar1
+Author: Rammprasad Ganapathy [aut, cre],
+  Adam Forys [aut],
+  Edgar Manukyan [aut],
+  Rosemary Li [aut],
+  Preetesh Parikh [aut],
+  Lisa Houterloot [aut],
+  Yogesh Gupta [aut],
+  Omar Garcia [aut],
+  Ramiro Magno [aut] (<https://orcid.org/0000-0001-5226-3441>),
+  Kamil Sijko [aut] (<https://orcid.org/0000-0002-2203-1065>),
+  Shiyu Chen [aut],
+  Pattern Institute [cph, fnd],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  Pfizer Inc [cph, fnd],
+  Transition Technologies Science [cph, fnd]
+Repository: CRAN
+Date/Publication: 2024-09-03 14:40:02 UTC

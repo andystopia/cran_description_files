@@ -1,0 +1,48 @@
+Package: rbioacc
+Title: Inference and Prediction of ToxicoKinetic (TK) Models
+Version: 1.0.2
+Authors@R: c(
+    person("Virgile", "Baudrot", role = "aut", email = "virgile.baudrot@posteo.net"),
+    person("Sandrine", "Charles", role = "aut"),
+    person("Ohélia", "Gestin", role = "ctb"),
+    person("Mélina", "Kaag", role = "aut"),
+    person("Christelle", "Lopez", role = "ctb"),
+    person("Gauthier", "Multari", role = "ctb"),
+    person("Alain", "Pavé", role = "ctb"),
+    person("Aude", "Ratier", role = "aut"),
+    person("Aurélie", "Siberchicot", role = c("aut", "cre"), email = "aurelie.siberchicot@univ-lyon1.fr")
+    )
+Description: The MOSAICbioacc application is a turn-key package providing bioaccumulation
+    factors (BCF/BMF/BSAF) from a toxicokinetic (TK) model fitted to
+    accumulation-depuration data. It is designed to fulfil the requirements
+    of regulators when examining applications for market authorization of active
+    substances. See Ratier et al. (2021) <doi:10.1101/2021.09.08.459421>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: ggplot2, methods, Rcpp, RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.1.1), testthat, ggmcmc, GGally, loo,
+        stringr, stats, zoo
+LinkingTo: BH (>= 1.66.0), Rcpp, RcppEigen (>= 0.3.3.3.0), RcppParallel
+        (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+Config/testthat/edition: 3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-09-15 12:14:50 UTC; siberchicot
+Author: Virgile Baudrot [aut],
+  Sandrine Charles [aut],
+  Ohélia Gestin [ctb],
+  Mélina Kaag [aut],
+  Christelle Lopez [ctb],
+  Gauthier Multari [ctb],
+  Alain Pavé [ctb],
+  Aude Ratier [aut],
+  Aurélie Siberchicot [aut, cre]
+Maintainer: Aurélie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
+Repository: CRAN
+Date/Publication: 2021-09-15 18:30:05 UTC

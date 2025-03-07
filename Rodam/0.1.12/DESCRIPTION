@@ -1,0 +1,23 @@
+Package: Rodam
+Title: Wrapper Functions for 'ODAM' (Open Data for Access and Mining)
+        Web Services
+Version: 0.1.12
+Date: 2021-11-10
+Authors@R: c(
+    person("Daniel", "Jacob", email="daniel.jacob@inrae.fr", role=c("cre", "aut"), comment=c(ORCID="0000-0002-6687-7169")))
+Copyright: Institut National de la Recherche pout l’Agriculture,
+        l’Alimentation et l'Environnment (INRAE)
+URL: https://github.com/inrae/ODAM
+Maintainer: Daniel Jacob <daniel.jacob@inrae.fr>
+Description: 'ODAM' (Open Data for Access and Mining) is a framework that implements a simple way to make research data broadly accessible and fully available for reuse, including by a script language such as R. The main purpose is to make a data set accessible online with a minimal effort from the data provider, and to allow any scientists or bioinformaticians to be able to explore the data set and then extract a subpart or the totality of the data according to their needs. The Rodam package has only one class, 'odamws', that provides methods to allow you to retrieve online data using 'ODAM' Web Services. This obviously requires that data are implemented according the 'ODAM' approach , namely that the data subsets were deposited in the suitable data repository in the form of TSV files associated with  their metadata also described  in TSV files. See <https://inrae.github.io/ODAM/>.
+Depends: R (>= 3.1.1), methods, httr (>= 1.4.2)
+License: LGPL (>= 3)
+Encoding: UTF-8
+Suggests: data.tree, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-11-10 16:28:47 UTC; djacob
+Author: Daniel Jacob [cre, aut] (<https://orcid.org/0000-0002-6687-7169>)
+Repository: CRAN
+Date/Publication: 2021-11-12 14:30:02 UTC

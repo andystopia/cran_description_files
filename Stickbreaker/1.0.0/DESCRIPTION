@@ -1,0 +1,27 @@
+Package: Stickbreaker
+Type: Package
+Title: Fits Stickbreaking, Multiplicative and Additive Models to Data
+Version: 1.0.0
+Authors@R: c(
+    person("Craig", "Miller", email = "crmiller@uidaho.edu", role = "aut"),
+    person("James", "Van Leuven", email = "jtvanleuven@gmail.com", role = "cre"))
+Description: Genetically modified organisms are used to test the phenotypic
+    effects of mutation. Often, multiple substitutions impact organismal fitness
+    differently than single substitutions (epistatic interactions). This package
+    fits three basic models (additive, multiplicative, and stickbreaking) to fitness
+    data and suggests the best fitting model by multinomial regression. Stickbreaker
+    can also be used to simulate fitness data.
+Depends: R (>= 3.3.1)
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 5.0.1
+Imports: nnet, lattice, xtable
+Suggests: knitr, rmarkdown
+Packaged: 2017-03-07 22:59:32 UTC; james
+Author: Craig Miller [aut],
+    James Van Leuven [cre]
+Maintainer: James Van Leuven <jtvanleuven@gmail.com>
+VignetteBuilder: knitr
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2017-03-10 08:50:10

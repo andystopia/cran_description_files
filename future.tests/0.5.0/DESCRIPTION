@@ -1,0 +1,24 @@
+Package: future.tests
+Title: Test Suite for 'Future API' Backends
+Version: 0.5.0
+Authors@R: c(
+  person("Henrik", "Bengtsson", role = c("aut", "cre", "cph"), email = "henrikb@braju.com"),
+  person(family = "The R Consortium", comment = "Project was awared an Infrastructure Steering Committee (ISC) grant in 2017", role = "fnd"))
+Description: Backends implementing the 'Future' API, as defined by the 'future' package, should use the tests provided by this package to validate that they meet the minimal requirements of the 'Future' API.  The tests can be performed easily from within R or from outside of R from the command line making it easy to include them package tests and in Continuous Integration (CI) pipelines.
+Imports: future (>= 1.22.1), cli, crayon, prettyunits, sessioninfo
+Suggests: commonmark, base64enc, utils, tools, data.table, ff
+VignetteBuilder: future.tests
+License: LGPL (>= 2.1)
+Encoding: UTF-8
+URL: https://future.tests.futureverse.org,
+        https://github.com/HenrikBengtsson/future.tests
+BugReports: https://github.com/HenrikBengtsson/future.tests/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2022-12-16 06:23:56 UTC; hb
+Author: Henrik Bengtsson [aut, cre, cph],
+  The R Consortium [fnd] (Project was awared an Infrastructure Steering
+    Committee (ISC) grant in 2017)
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Repository: CRAN
+Date/Publication: 2022-12-16 08:20:02 UTC

@@ -1,0 +1,60 @@
+Encoding: UTF-8
+Package: goldfish
+Type: Package
+Title: Statistical Network Models for Dynamic Network Data
+Version: 1.6.4
+Date: 2022-08-09
+Authors@R: c(person("James", "Hollway", role = c("cre", "aut", "dtc"), 
+                    email = "james.hollway@graduateinstitute.ch",
+                    comment = c("IHEID", ORCID = "0000-0002-8361-9647")),
+              person("Christoph", "Stadtfeld", role = c("aut", "dtc"),
+                     email = "c.stadtfeld@ethz.ch"),
+              person("Marion", "Hoffman", role = "ctb"),
+              person("Alvaro", "Uzaheta", role = "ctb",
+                     comment = c(ORCID = "0000-0003-4367-3670")),
+              person("Mirko", "Reul", role = "ctb"),
+              person("Timon", "Elmer", role = "ctb"),
+              person("Kieran", "Mepham", role = "ctb"),
+              person("Per", "Block", role = "ctb"),
+              person("Xiaolei", "Zhang", role = "ctb"),
+              person("Weigutian", "Ou", role = "ctb"),
+              person("Emily", "Garvin", role = "ctb"),
+              person("Siwei", "Zhang", role = "ctb"))
+License: GPL (>= 3)
+Description: Tools for fitting statistical network models to dynamic network data.
+   Can be used for fitting both dynamic network actor models ('DyNAMs') and
+   relational event models ('REMs').
+   Stadtfeld, Hollway, and Block (2017a) <doi:10.1177/0081175017709295>,
+   Stadtfeld, Hollway, and Block (2017b) <doi:10.1177/0081175017733457>,
+   Stadtfeld and Block (2017) <doi:10.15195/v4.a14>,
+   Hoffman et al. (2020) <doi:10.1017/nws.2020.3>.
+URL: https://snlab-ch.github.io/goldfish/
+BugReports: https://github.com/snlab-ch/goldfish/issues
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.1), changepoint, methods, utils, stats, generics,
+        ggplot2, tibble
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, knitr, devtools, covr, rmarkdown, pixiedust,
+        igraph, ggraph, migraph, broom, lmtest
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Config/testthat/edition: 3
+Packaged: 2022-08-23 14:21:33 UTC; ualvaro
+Author: James Hollway [cre, aut, dtc] (IHEID,
+    <https://orcid.org/0000-0002-8361-9647>),
+  Christoph Stadtfeld [aut, dtc],
+  Marion Hoffman [ctb],
+  Alvaro Uzaheta [ctb] (<https://orcid.org/0000-0003-4367-3670>),
+  Mirko Reul [ctb],
+  Timon Elmer [ctb],
+  Kieran Mepham [ctb],
+  Per Block [ctb],
+  Xiaolei Zhang [ctb],
+  Weigutian Ou [ctb],
+  Emily Garvin [ctb],
+  Siwei Zhang [ctb]
+Maintainer: James Hollway <james.hollway@graduateinstitute.ch>
+Repository: CRAN
+Date/Publication: 2022-08-24 08:30:06 UTC

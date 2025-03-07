@@ -1,0 +1,35 @@
+Package: blocklength
+Type: Package
+Title: Select an Optimal Block-Length to Bootstrap Dependent Data
+        (Block Bootstrap)
+Version: 0.1.5
+Authors@R: c(
+             person("Alec", "Stashevsky",
+                    email = "alec@alecstashevsky.com",
+                    role = c("aut", "cre")),
+             person("Sergio", "Armella",
+                    role = "ctb")
+            )
+Maintainer: Alec Stashevsky <alec@alecstashevsky.com>
+Description: A set of functions to select the optimal block-length for a 
+    dependent bootstrap (block-bootstrap). Includes the Hall, Horowitz, and Jing
+    (1995) <doi:10.1093/biomet/82.3.561> cross-validation method and the 
+    Politis and White (2004) <doi:10.1081/ETC-120028836> Spectral Density 
+    Plug-in method, including the Patton, Politis, and White (2009)
+    <doi:10.1080/07474930802459016> correction with a corresponding set of S3
+    plot methods.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat, covr, parallel, knitr, rmarkdown
+Imports: tseries, stats
+URL: https://alecstashevsky.com/r/blocklength,
+        https://github.com/Alec-Stashevsky/blocklength
+BugReports: https://github.com/Alec-Stashevsky/blocklength/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-03-02 19:15:40 UTC; Alec
+Author: Alec Stashevsky [aut, cre],
+  Sergio Armella [ctb]
+Repository: CRAN
+Date/Publication: 2022-03-02 23:50:02 UTC

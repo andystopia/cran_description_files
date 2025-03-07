@@ -1,0 +1,33 @@
+Package: soiltestcorr
+Title: Soil Test Correlation and Calibration
+Version: 2.1.1
+Date: 2022-05-10
+Authors@R: c(
+    person(given = "Adrian A.", family = "Correndo",
+             email = "correndo@ksu.edu", role = c("cre","cph"),comment = c(ORCID = "0000-0002-4172-289X")),
+    person(given = "Adrian A.", family = "Correndo",
+             email = "correndo@ksu.edu", role = "aut",comment = c(ORCID = "0000-0002-4172-289X")),
+    person(given = "Austin", family = "Pearce",
+             email = "awpearc2@ncsu.edu", role = "aut",comment = c(ORCID = "0000-0002-2541-896X")),
+    person("Ignacio A.", "Ciampitti", email = "ciampitti@ksu.edu", role = c("aut"), comment = c(ORCID = "0000-0001-9619-5129")) )
+Description: A compilation of functions designed to assist users on the correlation analysis of crop yield and soil test values. Functions to estimate response patterns to nutrient availability and critical soil test values using alternative approaches such as: 1) the modified arcsine-log calibration curve (Correndo et al. (2017) <doi:10.1071/CP16444>); 2) the graphical Cate-Nelson quadrants-analysis (Cate & Nelson (1965)), 3) the statistical Cate-Nelson quadrants-analysis (Cate & Nelson (1971) <doi:10.2136/sssaj1971.03615995003500040048x>), 4) the linear-plateau regression (Anderson & Nelson (1975) <doi:10.2307/2529422>), 5) the quadratic-plateau regression (Bullock & Bullock (1994) <doi:10.2134/agronj1994.00021962008600010033x>), and 6) the Mitscherlich regression (Melsted & Peck (1977) <doi:10.2134/asaspecpub29.c1>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: smatr, covr, knitr, rmarkdown, testthat
+Imports: stats, dplyr, rlang, tidyr, utils, purrr, data.table, ggplot2,
+        ggpp, nlstools, minpack.lm, modelr, AICcmodavg
+Depends: R (>= 2.10)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://adriancorrendo.github.io/soiltestcorr/
+BugReports: https://github.com/adriancorrendo/soiltestcorr/issues
+NeedsCompilation: no
+Packaged: 2022-05-10 06:54:02 UTC; correndo
+Author: Adrian A. Correndo [cre, cph] (<https://orcid.org/0000-0002-4172-289X>),
+  Adrian A. Correndo [aut] (<https://orcid.org/0000-0002-4172-289X>),
+  Austin Pearce [aut] (<https://orcid.org/0000-0002-2541-896X>),
+  Ignacio A. Ciampitti [aut] (<https://orcid.org/0000-0001-9619-5129>)
+Maintainer: Adrian A. Correndo <correndo@ksu.edu>
+Repository: CRAN
+Date/Publication: 2022-05-11 05:50:02 UTC

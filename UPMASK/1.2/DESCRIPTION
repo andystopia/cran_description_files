@@ -1,0 +1,35 @@
+Package: UPMASK
+Type: Package
+Title: Unsupervised Photometric Membership Assignment in Stellar
+        Clusters
+Version: 1.2
+Date: 2019-01-28
+Authors@R: c(
+            person("Alberto", "Krone-Martins", email = "algol@sim.ul.pt", role = c("aut", "cre")),
+            person("Andre", "Moitinho", email = "andre@sim.ul.pt", role = c("aut")),
+            person("Eduardo", "Bezerra", email = "ebezerra@cefet-rj.br", role = c("ctb")),
+            person("Leonardo", "Lima", email = "leonardo.lima@cefet-rj.br", role = c("ctb")),
+            person("Tristan", "Cantat-Gaudin", email = "tcantat@fqa.ub.edu", role = c("ctb"))
+            )
+Maintainer: Alberto Krone-Martins <algol@sim.ul.pt>
+Description: An implementation of the UPMASK method for performing membership
+    assignment in stellar clusters in R. It is prepared to use photometry and
+    spatial positions, but it can take into account other types of data. The
+    method is able to take into account arbitrary error models, and it is
+    unsupervised, data-driven, physical-model-free and relies on as few
+    assumptions as possible. The approach followed for membership assessment is
+    based on an iterative process, dimensionality reduction, a clustering
+    algorithm and a kernel density estimation.
+Depends: R (>= 3.0)
+License: GPL (>= 3)
+Imports: parallel, MASS, RSQLite, DBI, dimRed, loe
+NeedsCompilation: no
+RoxygenNote: 6.0.1
+Packaged: 2019-02-01 17:18:39 UTC; brain
+Author: Alberto Krone-Martins [aut, cre],
+  Andre Moitinho [aut],
+  Eduardo Bezerra [ctb],
+  Leonardo Lima [ctb],
+  Tristan Cantat-Gaudin [ctb]
+Repository: CRAN
+Date/Publication: 2019-02-01 17:43:33 UTC

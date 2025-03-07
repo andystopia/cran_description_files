@@ -1,0 +1,24 @@
+Package: ShapeSelectForest
+Type: Package
+Title: Shape Selection for Landsat Time Series of Forest Dynamics
+Version: 1.6
+Date: 2023-08-08
+Authors@R: c(person("Xiyue", "Liao", email = "xliao@sdsu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4508-9219")),
+    person("Mary", "Meyer", role = "aut"), 
+    person("Elizabeth", "Freeman", role = "aut"), 
+    person("Gretchen", "Moisen", role = "aut")
+    )
+Description: Landsat satellites collect important data about global forest conditions. Documentation about Landsat's role in forest disturbance estimation is available at the site <https://landsat.gsfc.nasa.gov/>. By constrained quadratic B-splines, this package delivers an optimal shape-restricted trajectory to a time series of Landsat imagery for the purpose of modeling annual forest disturbance dynamics to behave in an ecologically sensible manner assuming one of seven possible "shapes", namely, flat, decreasing, one-jump (decreasing, jump up, decreasing), inverted vee (increasing then decreasing), vee (decreasing then increasing), linear increasing, and double-jump (decreasing, jump up, decreasing, jump up, decreasing). The main routine selects the best shape according to the minimum Bayes information criterion (BIC) or the cone information criterion (CIC), which is defined as the log of the estimated predictive squared error. The package also provides parameters summarizing the temporal pattern including year(s) of inflection, magnitude of change, pre- and post-inflection rates of growth or recovery. In addition, it contains routines for converting a flat map of disturbance agents to time-series disturbance maps and a graphical routine displaying the fitted trajectory of Landsat imagery. 
+License: GPL (>= 2)
+Depends: coneproj (>= 1.6), raster (>= 2.3-40), R (>= 3.0.2)
+NeedsCompilation: no
+Suggests: stats, MASS, graphics, grDevices, utils
+Packaged: 2023-08-07 23:00:49 UTC; xliao
+Author: Xiyue Liao [aut, cre] (<https://orcid.org/0000-0002-4508-9219>),
+  Mary Meyer [aut],
+  Elizabeth Freeman [aut],
+  Gretchen Moisen [aut]
+Maintainer: Xiyue Liao <xliao@sdsu.edu>
+Repository: CRAN
+Date/Publication: 2023-08-08 07:30:10 UTC

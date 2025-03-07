@@ -1,0 +1,31 @@
+Type: Package
+Package: cgalMeshes
+Title: R6 Based Utilities for 3D Meshes using 'CGAL'
+Version: 1.0.0
+Authors@R: 
+    person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
+Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
+Description: Provides some utilities for 3D meshes: clipping of a mesh to
+    the volume bounded by another mesh, decomposition into convex parts,
+    distance between a mesh and a point, triangulation, geodesic distance,
+    Boolean operations (intersection, union, difference), connected
+    components, volume, area, and centroid. Also provides an algorithm for
+    surface reconstruction from a cloud of points. Meshes are represented
+    by R6 classes. All algorithms are performed by the 'C++' library
+    'CGAL' (<https://www.cgal.org/>).
+License: GPL-3
+URL: https://github.com/stla/cgalMeshes
+BugReports: https://github.com/stla/cgalMeshes/issues
+Depends: R (>= 2.10)
+Imports: data.table, methods, R6, Rcpp (>= 1.0.9), rgl
+Suggests: onion, rmarchingcubes, viridisLite
+LinkingTo: BH, Rcpp, RcppCGAL, RcppEigen
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.2.1
+SystemRequirements: C++ 17, gmp, mpfr
+NeedsCompilation: yes
+Packaged: 2022-11-09 10:39:50 UTC; stla
+Author: Stéphane Laurent [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-11-09 11:50:12 UTC

@@ -1,0 +1,29 @@
+Package: bumbl
+Title: Tools for Modeling Bumblebee Colony Growth and Decline
+Version: 1.0.1
+Authors@R: c(
+    person(given = c("Eric", "R."),
+           family = "Scott",
+           role = c("aut", "cre"),
+           email = "scottericr@gmail.com",
+           comment = c(ORCID = "0000-0002-7430-7879"))
+           )
+Description: Bumblebee colonies grow during worker production, then decline after switching to production of reproductive individuals (drones and gynes).  This package provides tools for modeling and visualizing this pattern by identifying a switchpoint with a growth rate before and a decline rate after the switchpoint. The mathematical models fit by bumbl are described in Crone and Williams (2016) <doi:10.1111/ele.12581>.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/Aariq/bumbl
+BugReports: https://github.com/Aariq/bumbl/issues
+Depends: R (>= 3.0)
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, covr, car, rsq
+Imports: dplyr, rlang, tidyr (>= 1.0.0), purrr, broom, glue, MASS,
+        ggplot2
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-08-17 20:52:24 UTC; scottericr
+Author: Eric R. Scott [aut, cre] (<https://orcid.org/0000-0002-7430-7879>)
+Maintainer: Eric R. Scott <scottericr@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-25 12:50:15 UTC

@@ -1,0 +1,37 @@
+Package: ggspectra
+Type: Package
+Title: Extensions to 'ggplot2' for Radiation Spectra
+Version: 0.3.8
+Date: 2022-04-15
+Authors@R: 
+   c(
+    person("Pedro J.", "Aphalo", email = "pedro.aphalo@helsinki.fi", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3385-972X")),
+    person("Titta K.", "Kotilainen", role = "ctb", comment = c(ORCID = "0000-0002-2822-9734"))
+    )
+Maintainer: Pedro J. Aphalo <pedro.aphalo@helsinki.fi>
+Description: Additional annotations, stats, geoms and scales for plotting 
+    "light" spectra with 'ggplot2', together with specializations of ggplot()
+    and autoplot() methods for spectral data and waveband definitions
+    stored in objects of classes defined in package 'photobiology'. Part of the 
+    'r4photobiology' suite, Aphalo P. J. (2015) <doi:10.19232/uv4pb.2015.1.14>.
+License: GPL (>= 2)
+LazyLoad: TRUE
+ByteCompile: TRUE
+Depends: R (>= 3.6.0), photobiology (>= 0.10.10), ggplot2 (>= 3.3.4)
+Imports: photobiologyWavebands (>= 0.4.3), scales (>= 1.2.0), ggrepel
+        (>= 0.9.1), lubridate (>= 1.8.0), tidyr (>= 1.2.0),
+        tidyselect(>= 1.1.2), tibble (>= 3.1.5)
+Suggests: knitr (>= 1.38), rmarkdown (>= 2.13), rlang (>= 1.0.2),
+        magrittr (>= 2.0.3)
+URL: https://docs.r4photobiology.info/ggspectra/,
+        https://github.com/aphalo/ggspectra/
+BugReports: https://github.com/aphalo/ggspectra/issues/
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-04-15 20:37:16 UTC; Aphalo
+Author: Pedro J. Aphalo [aut, cre] (<https://orcid.org/0000-0003-3385-972X>),
+  Titta K. Kotilainen [ctb] (<https://orcid.org/0000-0002-2822-9734>)
+Repository: CRAN
+Date/Publication: 2022-04-16 00:32:29 UTC

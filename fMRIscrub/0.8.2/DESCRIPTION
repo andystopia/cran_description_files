@@ -1,0 +1,55 @@
+Package: fMRIscrub
+Type: Package
+Title: Scrubbing and Other Data Cleaning Routines for fMRI
+Version: 0.8.2
+Authors@R: c(
+    person(given = "Amanda",
+           family = "Mejia",
+           email = "mandy.mejia@gmail.com",
+           role = c("aut", "cre")),
+    person(given = "John",
+           family = "Muschelli",
+           email = "muschellij2@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-6469-1750")),
+    person(given = "Damon",
+           family = "Pham",
+           email = "damondpham@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-7563-4727")),
+    person(given = "Daniel",
+           family = "McDonald",
+           email = "daniel@stat.ubc.ca",
+           role = c("ctb"))
+    )
+Maintainer: Amanda Mejia <mandy.mejia@gmail.com>
+Description: Data-driven fMRI denoising with projection scrubbing (Pham et al 
+    (2021) <arXiv:2108.00319>). Also includes routines for DVARS (Derivatives 
+    VARianceS) (Afyouni and Nichols (2018) 
+    <doi:10.1016/j.neuroimage.2017.12.098>), motion scrubbing (Power et al 
+    (2012) <doi:10.1016/j.neuroimage.2011.10.018>), aCompCor (anatomical 
+    Components Correction) (Muschelli et al (2014)
+    <doi:10.1016/j.neuroimage.2014.03.028>), detrending, and nuisance
+    regression. Projection scrubbing and DVARS are also applicable to other
+    outlier detection tasks involving high-dimensional data.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: expm, MASS, e1071, pesel, robustbase, stats, utils, Rcpp
+Suggests: corpcor, cowplot, ciftiTools, knitr, rmarkdown, RNifti,
+        ggplot2, ggpubr, ica, neurobase, oro.nifti, gridExtra, testthat
+        (>= 2.1.0), covr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.1
+URL: https://github.com/mandymejia/fMRIscrub
+BugReports: https://github.com/mandymejia/fMRIscrub/issues
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-08-18 21:09:29 UTC; damon
+Author: Amanda Mejia [aut, cre],
+  John Muschelli [aut] (<https://orcid.org/0000-0001-6469-1750>),
+  Damon Pham [aut] (<https://orcid.org/0000-0001-7563-4727>),
+  Daniel McDonald [ctb]
+Repository: CRAN
+Date/Publication: 2021-08-20 09:10:13 UTC

@@ -1,0 +1,36 @@
+Package: fastrtext
+Type: Package
+Title: 'fastText' Wrapper for Text Classification and Word
+        Representation
+Version: 0.3.4
+Date: 2019-10-27
+Authors@R: c(person("Michaël", "Benesty", role = c("aut", "cre", "cph"), email = "michael@benesty.fr"),
+  person("Facebook, Inc", role = c("cph"), email = "bojanowski@fb.com"))
+Maintainer: Michaël Benesty <michael@benesty.fr>
+Description: Learning text representations and text classifiers may rely
+  on the same simple and efficient approach. 'fastText' is an open-source, free, 
+  lightweight library that allows users to perform both tasks.
+  It transforms text into continuous vectors that can later
+  be used on many language related task.
+  It works on standard, generic hardware (no 'GPU' required).
+  It also includes model size reduction feature.
+  'fastText' original source code is available 
+  at <https://github.com/facebookresearch/fastText>.
+URL: https://github.com/pommedeterresautee/fastrtext,
+        https://pommedeterresautee.github.io/fastrtext/
+BugReports: https://github.com/pommedeterresautee/fastrtext/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.3)
+Imports: methods, Rcpp (>= 0.12.12), assertthat
+Suggests: knitr, testthat
+LinkingTo: Rcpp
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2019-10-27 15:50:05 UTC; geantvert
+Author: Michaël Benesty [aut, cre, cph],
+  Facebook, Inc [cph]
+Repository: CRAN
+Date/Publication: 2019-10-27 16:20:02 UTC

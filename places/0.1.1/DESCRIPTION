@@ -1,0 +1,26 @@
+Package: places
+Type: Package
+Title: Clusters GPS Data into Places
+Version: 0.1.1
+Authors@R: 
+    person(given = "Katherine",
+           family = "Roehrick",
+           role = c("aut", "cre"),
+           email = "kr.gitcode@gmail.com")
+Description: Clusters GPS coordinates into places (i.e., meaningful stops). Additionally, categorizes places into types (e.g., home, cafe, gym). Places are identified as home using a rules-based algorithm defining home as the stop occurring most frequently during the night. Other places (e.g., cafe, gym) are identified using the Google Maps API.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: dplyr, tidyr, sp, rgdal, geosphere, data.table, rlang,
+        googleway, stringr, stats, hms
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Depends: R (>= 2.10)
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-04-06 15:35:03 UTC; kr
+Author: Katherine Roehrick [aut, cre]
+Maintainer: Katherine Roehrick <kr.gitcode@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-08 07:50:02 UTC

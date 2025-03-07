@@ -1,0 +1,29 @@
+Package: distribglm
+Title: Distributed Generalized Linear Models
+Version: 0.4.1
+Authors@R: c(person(given = "John",
+                    family = "Muschelli",
+                    email = "muschellij2@gmail.com",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0001-6469-1750"))
+                    )
+Description: Distributed generalized linear models (GLM) fitting using 
+    Fisher scoring from McCullagh and Nelder (1989) <ISBN:0412317605>.  
+    Models are to be fit using a primary-secondary 
+    relationship, where the results are written to a synced folder, but
+    data can be elsewhere though it is loaded in memory.  Additional functions
+    are available for deploying a plumber 'API'.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: readr, stats
+URL: https://github.com/muschellij2/distribglm
+BugReports: https://github.com/muschellij2/distribglm/issues
+Suggests: testthat (>= 2.1.0), httr, jsonlite, plumberDeploy, analogsea
+        (>= 0.9.0)
+NeedsCompilation: no
+Packaged: 2021-04-14 13:27:56 UTC; johnmuschelli
+Author: John Muschelli [aut, cre] (<https://orcid.org/0000-0001-6469-1750>)
+Maintainer: John Muschelli <muschellij2@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-15 11:50:02 UTC

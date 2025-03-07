@@ -1,0 +1,31 @@
+Package: shinyCLT
+Title: Central Limit Theorem 'shiny' Application
+Version: 0.9.3
+Authors@R: c(
+            person("Dominique-Laurent", "Couturier", role = c("aut", "cre"),
+            email = "dominique.couturier@mrc-bsu.cam.ac.uk", 
+            comment = c(ORCID = "0000-0001-5774-5036")), 
+            person("Nikita", "Mozgunov", role = "aut",
+            comment = c(ORCID = "0000-0003-0941-718X")),
+            person("Thomas", "Jaki", role = "aut",
+            comment = c(ORCID = "0000-0002-1096-188X"))            
+            )
+Description: A 'shiny' application estimating the operating characteristics of the Student's t-test by Student (1908) <doi:10.1093/biomet/6.1.1>, Welch's t-test by Welch (1947) <doi:10.1093/biomet/34.1-2.28>, and Wilcoxon test by Wilcoxon (1945) <doi:10.2307/3001968> in one-sample or two-sample cases, in settings defined by the user (conditional distribution, sample size per group, location parameter per group, nuisance parameter per group), using Monte Carlo simulations Malvin H. Kalos, Paula A. Whitlock (2008) <doi:10.1002/9783527626212>.
+Imports: testthat, purrr, shiny, gamlss, dplyr, plotly, future,
+        shinycssloaders, waiter, shinythemes, shinyWidgets, cachem,
+        knitr
+Depends: R (>= 3.5.0)
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.2.9000
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-25 09:05:53 UTC; Nikita
+Author: Dominique-Laurent Couturier [aut, cre]
+    (<https://orcid.org/0000-0001-5774-5036>),
+  Nikita Mozgunov [aut] (<https://orcid.org/0000-0003-0941-718X>),
+  Thomas Jaki [aut] (<https://orcid.org/0000-0002-1096-188X>)
+Maintainer: Dominique-Laurent Couturier <dominique.couturier@mrc-bsu.cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-01-29 17:20:05 UTC

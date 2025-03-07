@@ -1,0 +1,51 @@
+Package: serosv
+Type: Package
+Title: Model Infectious Disease Parameters from Serosurveys
+Version: 1.0.0
+Authors@R: c(
+    person("Anh", "Phan Truong Quynh", email = "anhptq@oucru.org", role = c("aut", "cre")),
+    person("Nguyen", "Pham Nguyen The", email = "nguyenpnt@oucru.org", role = c("aut")),
+    person("Long", "Bui Thanh", role = "aut"),
+    person("Tuyen", "Huynh", email = "tuyenhn@oucru.org", role = "aut"),
+    person("Thinh", "Ong", email = "thinhop@oucru.org", role = "aut", comment = c(ORCID = "0000-0001-6772-9291")),
+    person("Marc", "Choisy", email = "mchoisy@oucru.org", role = "aut", comment = c(ORCID = "0000-0002-5187-6390"))
+  )
+Description: An easy-to-use and efficient tool to estimate infectious diseases parameters using serological data. Implemented models include SIR models (basic_sir_model(), static_sir_model(), mseir_model(), sir_subpops_model()), parametric models (polynomial_model(), fp_model()), nonparametric models (lp_model()), semiparametric models (penalized_splines_model()), hierarchical models (hierarchical_bayesian_model()).
+  The package is based on the book "Modeling Infectious Disease Parameters Based on Serological and Social Contact Data: A Modern Statistical Perspective" (Hens, Niel & Shkedy, Ziv & Aerts, Marc & Faes, Christel & Damme, Pierre & Beutels, Philippe., 2013) <doi:10.1007/978-1-4614-4072-7>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4.0)
+RoxygenNote: 7.3.1
+Imports: deSolve, dplyr, ggplot2, locfit, magrittr, methods, mgcv,
+        mixdist, patchwork, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1),
+        rstan (>= 2.18.1), rstantools (>= 2.4.0), boot, stats4
+Suggests: covr, knitr, rmarkdown, bookdown, testthat (>= 3.0.0)
+Collate: 'data.R' 'mseir_model.R' 'sir_basic_model.R'
+        'sir_static_model.R' 'sir_subpops_model.R'
+        'fractional_polynomial_models.R' 'polynomial_models.R'
+        'utils.R' 'weibull_model.R' 'nonparametric.R'
+        'semiparametric_models.R' 'mixture_model.R'
+        'hierarchical_bayesian_model.R' 'serosv.R' 'stanmodels.R'
+        'plots.R' 'compute_ci.R'
+Config/testthat/edition: 3
+URL: https://oucru-modelling.github.io/serosv/,
+        https://github.com/OUCRU-Modelling/serosv
+VignetteBuilder: knitr
+Biarch: true
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+BugReports: https://github.com/OUCRU-Modelling/serosv/issues
+NeedsCompilation: yes
+Packaged: 2024-10-04 13:11:36 UTC; anhptq
+Author: Anh Phan Truong Quynh [aut, cre],
+  Nguyen Pham Nguyen The [aut],
+  Long Bui Thanh [aut],
+  Tuyen Huynh [aut],
+  Thinh Ong [aut] (<https://orcid.org/0000-0001-6772-9291>),
+  Marc Choisy [aut] (<https://orcid.org/0000-0002-5187-6390>)
+Maintainer: Anh Phan Truong Quynh <anhptq@oucru.org>
+Repository: CRAN
+Date/Publication: 2024-10-07 09:20:02 UTC

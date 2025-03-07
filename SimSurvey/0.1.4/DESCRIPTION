@@ -1,0 +1,38 @@
+Package: SimSurvey
+Type: Package
+Title: Test Surveys by Simulating Spatially-Correlated Populations
+Version: 0.1.4
+Authors@R: c(
+    person("Paul", "Regular", email = "Paul.Regular@dfo-mpo.gc.ca", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0318-2615")),
+    person("Jonathan", "Babyn", email = "Jonathan.Babyn@dfo-mpo.gc.ca", 
+    role = "ctb"),
+    person("Greg", "Robertson", email = "Greg.Robertson@dfo-mpo.gc.ca", 
+    role = "ctb"))
+Maintainer: Paul Regular <Paul.Regular@dfo-mpo.gc.ca>
+Description: Simulate age-structured populations that vary in space and time and 
+    explore the efficacy of a range of built-in or user-defined sampling 
+    protocols to reproduce the population parameters of the known population. 
+    (See Regular et al. (2020) <doi:10.1371/journal.pone.0232822> for more
+    details).
+Depends: R (>= 3.3.0)
+License: GPL-3
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+LazyData: true
+ByteCompile: true
+URL: https://paulregular.github.io/SimSurvey/
+BugReports: https://github.com/PaulRegular/SimSurvey/issues
+Imports: sp, raster, data.table, magrittr, progress, doParallel,
+        parallel, foreach, plotly, rlang
+Suggests: fields, rmarkdown, flexdashboard, shiny, crosstalk,
+        htmltools, viridis, lme4, ggplot2, INLA, rgdal, rgeos, knitr,
+        bezier
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-01-26 17:36:02 UTC; RegularP
+Author: Paul Regular [aut, cre] (<https://orcid.org/0000-0003-0318-2615>),
+  Jonathan Babyn [ctb],
+  Greg Robertson [ctb]
+Repository: CRAN
+Date/Publication: 2022-01-26 18:12:42 UTC

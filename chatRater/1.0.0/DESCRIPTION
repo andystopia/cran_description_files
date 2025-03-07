@@ -1,0 +1,19 @@
+Package: chatRater
+Type: Package
+Title: Rating Text Using Large Language Models
+Version: 1.0.0
+Date: 2025-02-14
+Authors@R: 
+    person(given = "Shiyang", family = "Zheng", email = "Shiyang.Zheng@nottingham.ac.uk",
+           role = c("aut", "cre"))
+Maintainer: Shiyang Zheng <Shiyang.Zheng@nottingham.ac.uk>
+Description: Generates ratings for textual stimuli using large language models. It allows users to evaluate idioms and similar texts by combining context, prompts, and stimulus inputs. The package supports both 'OpenAI' and 'DeepSeek' APIs by enabling users to switch models simply by specifying the model parameter. It implements methods for constructing the request payload and parsing numeric ratings from the model outputs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: tidyverse, openai, httr, jsonlite
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2025-02-14 16:08:28 UTC; admin
+Author: Shiyang Zheng [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-02-17 12:10:01 UTC

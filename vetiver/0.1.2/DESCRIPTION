@@ -1,0 +1,35 @@
+Package: vetiver
+Title: Version, Share, Deploy, and Monitor Models
+Version: 0.1.2
+Authors@R: c(
+    person("Julia", "Silge", , "julia.silge@rstudio.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-3671-836X")),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: The goal of 'vetiver' is to provide fluent tooling to version,
+    share, deploy, and monitor a trained model. Functions handle both
+    recording and checking the model's input data prototype, and
+    predicting from a remote API endpoint. The 'vetiver' package is
+    extensible, with generics that can support many kinds of models.
+License: MIT + file LICENSE
+URL: https://vetiver.tidymodels.org/,
+        https://github.com/tidymodels/vetiver
+BugReports: https://github.com/tidymodels/vetiver/issues
+Imports: butcher, cli, curl, generics, glue, hardhat, httr, jsonlite,
+        lifecycle, pins (>= 1.0.0), plumber (>= 1.0.0), purrr, rapidoc,
+        readr (>= 1.4.0), renv, rlang, tibble, vctrs, withr
+Suggests: caret, covr, knitr, LiblineaR, mlr3, mlr3learners, modeldata,
+        parsnip, ranger, recipes, rmarkdown, rpart, rsconnect, testthat
+        (>= 3.0.0), workflows, xgboost
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-02-16 17:28:22 UTC; juliasilge
+Author: Julia Silge [cre, aut] (<https://orcid.org/0000-0002-3671-836X>),
+  RStudio [cph, fnd]
+Maintainer: Julia Silge <julia.silge@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-02-16 17:50:02 UTC

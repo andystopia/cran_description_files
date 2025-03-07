@@ -1,0 +1,35 @@
+Package: powertools
+Type: Package
+Title: Power and Sample Size Tools
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Catherine M.", family = "Crespi", email = "ccrespi@ucla.edu", role = c("aut", "cre")),
+    person(given = "Zichen", family = "Liu", email = "zichenliu@ucla.edu", role = "aut"),
+    person(given = "Kristen M.", family = "McGreevy", role = "ctb"))
+Maintainer: Catherine M. Crespi <ccrespi@ucla.edu>
+Description: Power and sample size calculations for a variety of study designs and 
+    outcomes. Methods include t tests, ANOVA (including tests for interactions, 
+    simple effects and contrasts), proportions, categorical data (chi-square tests 
+    and proportional odds), linear, logistic and Poisson regression, alternative 
+    and coprimary endpoints, power for confidence intervals, correlation 
+    coefficient tests, cluster randomized trials, individually randomized group 
+    treatment trials, multisite trials, treatment-by-covariate interaction effects 
+    and nonparametric tests of location. Utilities are provided for 
+    computing various effect sizes. Companion package to the book 
+    "Power and Sample Size in R", Crespi (2025, ISBN:9781138591622). 
+URL: https://github.com/powerandsamplesize/powertools
+BugReports: https://github.com/powerandsamplesize/powertools/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: mvtnorm, PowerTOST, Hmisc, stats, knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2024-11-13 21:22:52 UTC; zichenliu
+Author: Catherine M. Crespi [aut, cre],
+  Zichen Liu [aut],
+  Kristen M. McGreevy [ctb]
+Repository: CRAN
+Date/Publication: 2024-11-14 14:00:07 UTC

@@ -1,0 +1,57 @@
+Package: dpcR
+Type: Package
+Title: Digital PCR Analysis
+Version: 0.5
+LazyData: true
+Date: 2019-02-01
+Authors@R: c(
+    person("Michal", "Burdukiewicz", email = "michalburdukiewicz@gmail.com", 
+           role = c("cre", "aut"), comment = c(ORCID = "0000-0001-8926-582X")),
+    person("Stefan", "Roediger", email = "stefan.roedigier@b-tu.de", role = "aut",
+           comment = c(ORCID = "0000-0002-1441-6512")),
+    person("Bart", "Jacobs", email = "BartKM.Jacobs@ugent.be", role = "aut"),
+    person("Piotr", "Sobczyk", email = "pj.sobczyk@gmail.com", role = "ctb"),
+    person("Andrej-Nikolai", "Spiess", email = "draspiess@gmail.com", role = "ctb"))
+Description: Analysis, visualisation and simulation of digital polymerase chain
+    reaction (dPCR) (Burdukiewicz et al. (2016) <doi:10.1016/j.bdq.2016.06.004>). 
+    Supports data formats of commercial systems (Bio-Rad QX100 and
+    QX200; Fluidigm BioMark) and other systems.
+License: GPL-3
+URL: https://github.com/michbur/dpcR
+BugReports: https://github.com/michbur/dpcR/issues
+Depends: R (>= 3.0.0), methods
+Imports: binom, chipPCR, e1071, evd, dgof, multcomp, qpcR, pracma,
+        rateratio.test, readxl, signal, shiny, spatstat
+Suggests: digest, DT, ggplot2, knitr, markdown, rhandsontable,
+        rmarkdown, shinythemes, xtable
+VignetteBuilder: knitr
+Packaged: 2019-02-03 21:07:59 UTC; michal
+NeedsCompilation: no
+Repository: CRAN
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+Maintainer: Michal Burdukiewicz <michalburdukiewicz@gmail.com>
+Collate: 'AUCtest.R' 'BioradCNV.R' 'White.R' 'adpcr2panel.R'
+        'adpcr2ppp.R' 'binarize.R' 'classes.R' 'bind_dpcr.R' 'bioamp.R'
+        'calc_breaks.R' 'calc_coordinates.R' 'calc_lambda.R'
+        'compare_dens.R' 'count_test-class.R' 'create_dpcr.R'
+        'dPCRmethyl.R' 'ddpcRquant.R' 'df2dpcr.R' 'dpcR-package.R'
+        'dpcReport_gui.R' 'dpcr2df.R' 'dpcr_calculator.R'
+        'dpcr_density.R' 'dpcr_density_gui.R' 'dpcr_density_table.R'
+        'extract_run.R' 'fit_adpcr.R' 'fl.R' 'get_k_n.R' 'hsm.R'
+        'limit_cq.R' 'many_peaks.R' 'modlist.R' 'moments.R' 'num2int.R'
+        'pds.R' 'pds_raw.R' 'plot_distr.R' 'plot_panel.R'
+        'plot_vf_circ.R' 'plot_vic_fam.R' 'print_summary.R' 'qdpcr.R'
+        'qpcr2pp.R' 'qpcr_analyser.R' 'read_amp.R' 'read_dpcr.R'
+        'rename_dpcr.R' 'rtadpcr.R' 'safe_efficiency.R' 'show_dpcr.R'
+        'sim_adpcr.R' 'sim_ddpcr_bkm.R' 'sim_dpcr.R' 'simulations.R'
+        'six_panels.R' 'summary_dpcr.R' 'test_counts.R'
+        'test_counts_gui.R' 'test_panel.R' 'test_peaks.R'
+        'test_pooled.R' 'valid_amp.R' 'y_val_conf.R'
+Author: Michal Burdukiewicz [cre, aut]
+    (<https://orcid.org/0000-0001-8926-582X>),
+  Stefan Roediger [aut] (<https://orcid.org/0000-0002-1441-6512>),
+  Bart Jacobs [aut],
+  Piotr Sobczyk [ctb],
+  Andrej-Nikolai Spiess [ctb]
+Date/Publication: 2019-02-03 23:13:49 UTC

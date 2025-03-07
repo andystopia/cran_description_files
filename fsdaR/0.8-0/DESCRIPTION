@@ -1,0 +1,46 @@
+Package: fsdaR
+Title: Robust Data Analysis Through Monitoring and Dynamic
+        Visualization
+Version: 0.8-0
+VersionNote: Released 0.7-0 on 2022-05-11 on CRAN
+Authors@R: c(person("Valentin", "Todorov", role = c("aut", "cre"), email = "valentin.todorov@chello.at", comment=c(ORCID = "0000-0003-4215-0245"))
+         , person("Emmanuele", "Sordini", role = "aut", email = "Emmanuele.sordini@ec.europa.eu")
+         , person("Aldo", "Corbellini", role = "ctb")
+         , person("Francesca", "Torti", role = "ctb")
+         , person("Marco",  "Riani", role = "ctb")
+         , person("Domenico", "Perrotta", role = "ctb")
+         , person("Andrea", "Cerioli", role = "ctb")
+          )
+Description: Provides interface to the 'MATLAB' toolbox 'Flexible Statistical Data Analysis
+    (FSDA)' which is comprehensive and computationally efficient
+    software package for robust statistics in regression, multivariate
+    and categorical data analysis. The current R version implements tools
+    for regression: (forward search, S- and MM-estimation, least trimmed
+    squares (LTS) and least median of squares (LMS)), for multivariate analysis
+    (forward search, S- and MM-estimation), for cluster analysis and cluster-wise regression.
+    The distinctive feature of our package is the possibility of
+    monitoring the statistics of interest as a function of breakdown point,
+    efficiency or subset size, depending on the estimator. This is
+    accompanied by a rich set of graphical features, such as dynamic
+    brushing, linking, particularly useful for exploratory data analysis.
+Depends: R (>= 3.5.0)
+Imports: rJava, methods, stats4, ggplot2
+Suggests: robustbase, rrcov, MASS
+SystemRequirements: (license-free) MATLAB Runtime (MCR) V 9.12, Java
+        (>=8)
+LazyLoad: yes
+LazyData: yes
+License: GPL (>= 3)
+Packaged: 2022-08-11 22:36:08 UTC; valen
+Author: Valentin Todorov [aut, cre] (<https://orcid.org/0000-0003-4215-0245>),
+  Emmanuele Sordini [aut],
+  Aldo Corbellini [ctb],
+  Francesca Torti [ctb],
+  Marco Riani [ctb],
+  Domenico Perrotta [ctb],
+  Andrea Cerioli [ctb]
+Maintainer: Valentin Todorov <valentin.todorov@chello.at>
+NeedsCompilation: no
+Repository: CRAN
+RoxygenNote: 7.1.2
+Date/Publication: 2022-08-11 23:20:05 UTC

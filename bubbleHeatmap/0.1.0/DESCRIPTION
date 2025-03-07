@@ -1,0 +1,32 @@
+Package: bubbleHeatmap
+Type: Package
+Title: Produces 'bubbleHeatmap' Plots for Visualising Metabolomics Data
+Version: 0.1.0
+Authors@R: c(person("Ruth", "Boxall", email = "ruth.boxall@ndph.ox.ac.uk",
+                  role = c("aut", "cre")),
+             person("Michael", "Holmes", role = "ctb"),
+             person("Robin", "Walters", role = "ctb"))
+Description: Plotting package based on the grid system, combining elements of 
+    a bubble plot and heatmap to conveniently display two numerical variables, 
+    (represented by color and size) grouped by categorical variables on the x 
+    and y axes. This is a useful alternative to a forest plot when the data can 
+    be grouped in two dimensions, such as predictors x outcomes. It has 
+    particular advantages for visualising the metabolic measures produced by 
+    the 'Nightingale Health' metabolomics platform, and templates are included 
+    for automatically generating figures from these datasets.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Imports: reshape, methods
+Depends: R (>= 3.5.0), grid
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-16 14:21:57 UTC; ruthb
+Author: Ruth Boxall [aut, cre],
+  Michael Holmes [ctb],
+  Robin Walters [ctb]
+Maintainer: Ruth Boxall <ruth.boxall@ndph.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-02-17 09:30:09 UTC

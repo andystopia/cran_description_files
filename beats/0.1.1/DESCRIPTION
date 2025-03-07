@@ -1,0 +1,28 @@
+Type: Package
+Package: beats
+Title: Heartbeat Detection in Electrocardiogram Data
+Version: 0.1.1
+Authors@R: 
+    person(given = "Max",
+           family = "Czapanskiy",
+           role = c("aut", "cre"),
+           email = "maxczapanskiy@gmail.com",
+           comment = c("ORCID-ID" = "0000-0002-6302-905X"))
+Maintainer: Max Czapanskiy <maxczapanskiy@gmail.com>
+Description: Import and process electrocardiogram (ECG) data.
+    Reads binary data files from UFI devices (.ube files) and provides a
+    Shiny app for finding and exporting heart beats.
+License: MIT + file LICENSE
+URL: https://github.com/FlukeAndFeather/beats
+BugReports: https://github.com/FlukeAndFeather/beats/issues
+Depends: R (>= 2.10)
+Imports: dplyr, ggplot2, lubridate, purrr, readr, shiny, zoo
+Suggests: gganimate, gifski, plotly, png, testthat (>= 2.1.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-02-20 16:45:33 UTC; frank
+Author: Max Czapanskiy [aut, cre] (0000-0002-6302-905X)
+Repository: CRAN
+Date/Publication: 2020-02-28 10:40:02 UTC

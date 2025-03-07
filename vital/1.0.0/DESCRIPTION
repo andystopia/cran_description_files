@@ -1,0 +1,33 @@
+Package: vital
+Version: 1.0.0
+Type: Package
+Title: Tidy Analysis Tools for Mortality, Fertility, Migration and
+        Population Data
+Description: Analysing vital statistics based on tools
+    consistent with the tidyverse. Tools are provided for data visualization,
+    lifetable calculations, computing net migration numbers, Lee-Carter
+    modelling; functional data modelling and forecasting.
+Authors@R: c(
+  person("Rob", "Hyndman", email="Rob.Hyndman@monash.edu", role=c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-2140-5352")),
+  person("Mitchell", "O'Hara-Wild", role = "ctb", comment = c(ORCID = "0000-0001-6729-7695"))
+  )
+Depends: R (>= 4.1.0)
+Imports: cobs, distributional, dplyr, fable, fabletools (>= 0.3.3),
+        future.apply, generics, ggplot2, HMDHFDplus (>= 2.0.3), mgcv,
+        patchwork, progressr, purrr, rlang, tibble, tidyr, tidyselect,
+        tsibble, vctrs
+Suggests: demography, feasts, testthat (>= 3.0.0)
+License: GPL-3
+URL: https://pkg.robjhyndman.com/vital/,
+        https://github.com/robjhyndman/vital
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+BugReports: https://github.com/robjhyndman/vital/issues
+NeedsCompilation: no
+Packaged: 2024-06-04 07:41:14 UTC; hyndman
+Author: Rob Hyndman [aut, cre, cph] (<https://orcid.org/0000-0002-2140-5352>),
+  Mitchell O'Hara-Wild [ctb] (<https://orcid.org/0000-0001-6729-7695>)
+Maintainer: Rob Hyndman <Rob.Hyndman@monash.edu>
+Repository: CRAN
+Date/Publication: 2024-06-04 16:10:02 UTC

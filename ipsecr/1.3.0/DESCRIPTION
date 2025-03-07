@@ -1,0 +1,30 @@
+Package: ipsecr
+Type: Package
+Title: Spatially Explicit Capture-Recapture by Inverse Prediction
+Version: 1.3.0
+Date: 2022-09-07
+Description: Estimates the density of a spatially distributed animal population 
+  sampled with an array of passive detectors, such as traps. Models incorporating 
+  distance-dependent detection are fitted by simulation and inverse prediction 
+  as proposed by Efford (2004) <doi:10.1111/j.0030-1299.2004.13043.x>.
+Authors@R: person("Murray", "Efford", 
+    email = "murray.efford@otago.ac.nz", 
+    role = c("aut","cre"), 
+    comment = c(ORCID = "0000-0001-5231-5184"))
+Depends: R (>= 3.5.0), secr (>= 4.5.4)
+Imports: graphics, grDevices, MASS, nlme, parallel, Rcpp (>= 1.0.8.3),
+        stats, stringr, tools, utils
+Suggests: FrF2, knitr, plot3D , rmarkdown, sf, testthat (>= 0.11.0)
+LinkingTo: BH, Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+License: GPL (>= 2)
+LazyData: yes
+LazyDataCompression: xz
+URL: https://github.com/MurrayEfford/ipsecr/,
+        https://www.otago.ac.nz/density/
+NeedsCompilation: yes
+Packaged: 2022-09-08 07:10:16 UTC; Murray
+Author: Murray Efford [aut, cre] (<https://orcid.org/0000-0001-5231-5184>)
+Maintainer: Murray Efford <murray.efford@otago.ac.nz>
+Repository: CRAN
+Date/Publication: 2022-09-09 10:33:02 UTC

@@ -1,0 +1,36 @@
+Package: fasstr
+Title: Analyze, Summarize, and Visualize Daily Streamflow Data
+Version: 0.5.0
+Authors@R: c(person("Jon", "Goetz", email = "jon.goetz@gov.bc.ca", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-4993-1119")), 
+             person("Carl James", "Schwarz", email = "cschwarz.stat.sfu.ca@gmail.com", role = "aut"),
+             person("Sam", "Albers", email = "sam.albers@gmail.com", role = "ctb",
+             comment = c(ORCID = "0000-0002-9270-7884")),
+             person("Robin", "Pike", email = "robin.g.pike@gov.bc.ca", role = "ctb"),
+             person("Province of British Columbia", role = "cph"))
+Description: The Flow Analysis Summary Statistics Tool for R, 'fasstr', provides various functions to tidy and screen daily stream discharge data, calculate and visualize various summary statistics and metrics, and compute annual trending and volume frequency analyses. 
+     It features useful function arguments for filtering of and handling dates, customizing data and metrics, and the ability to pull daily data directly from the Water Survey of Canada hydrometric database (<https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/>).
+Depends: R (>= 3.3.0)
+License: Apache License 2.0
+URL: https://bcgov.github.io/fasstr/, https://github.com/bcgov/fasstr,
+        https://www2.gov.bc.ca/gov/content/environment/air-land-water/water
+BugReports: https://github.com/bcgov/fasstr/issues
+Encoding: UTF-8
+Imports: dplyr (>= 0.8.1), e1071 (>= 1.7.0.1), fitdistrplus (>=
+        1.0.14), ggplot2 (>= 3.1.0), grDevices, lubridate, openxlsx (>=
+        4.1.0), PearsonDS (>= 1.1), plyr (>= 1.8.4), purrr (>= 0.3.2),
+        RcppRoll (>= 0.3.0), scales (>= 1.0.0), tidyhydat (>= 0.4.0),
+        tidyr (>= 0.8.3), zyp (>= 0.10.1.1)
+Suggests: knitr, rmarkdown, testthat
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-10-21 18:50:48 UTC; JGOETZ
+Author: Jon Goetz [aut, cre] (<https://orcid.org/0000-0002-4993-1119>),
+  Carl James Schwarz [aut],
+  Sam Albers [ctb] (<https://orcid.org/0000-0002-9270-7884>),
+  Robin Pike [ctb],
+  Province of British Columbia [cph]
+Maintainer: Jon Goetz <jon.goetz@gov.bc.ca>
+Repository: CRAN
+Date/Publication: 2022-10-21 19:15:06 UTC

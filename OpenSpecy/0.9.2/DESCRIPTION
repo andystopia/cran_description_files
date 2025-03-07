@@ -1,0 +1,66 @@
+Package: OpenSpecy
+Type: Package
+Title: Analyze, Process, Identify, and Share, Raman and (FT)IR Spectra
+Version: 0.9.2
+Date: 2021-05-20
+Authors@R: c(person("Win", "Cowger", role = c("cre", "aut"),
+      email = "wincowger@gmail.com",
+      comment = c(ORCID = "0000-0001-9226-3104")),
+    person("Zacharias", "Steinmetz", role = c("aut"),
+      email = "steinmetz-z@uni-landau.de",
+      comment = c(ORCID = "0000-0001-6675-5033")),
+    person("Andrew", "Gray", role = c("ctb"),
+      comment = c(ORCID = "0000-0003-2252-7367")), 
+    person("Hannah", "Hapich", role = c("ctb"),
+      comment = c(ORCID = "0000-0003-0000-6632")),
+    person("Jennifer", "Lynch", role = c("ctb","dtc"),
+      comment = c(ORCID = "0000-0003-3572-8782")),
+    person("Hannah", "De Frond", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0003-1199-0727")),
+    person("Keenan", "Munno", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0003-2916-5944")),
+    person("Chelsea", "Rochman", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0002-7624-711X")),
+    person("Sebastian", "Primpke", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0001-7633-8524")),
+    person("Orestis", "Herodotou", role = c("ctb", "dtc")))
+Description: Raman and (FT)IR spectral analysis tool for plastic particles and
+    other environmental samples (Cowger et al. 2021,
+    <doi:10.1021/acs.analchem.1c00123>). Supported features include reading
+    spectral data files (.asp, .csv, .jdx, .spc, .spa, .0), Savitzky-Golay
+    smoothing of spectral intensities with smooth_intens(), correcting
+    background noise with subtr_bg() in accordance with Zhao et al. (2007)
+    <doi:10.1366/000370207782597003>, and identifying spectra using an onboard
+    reference library (Cowger et al. 2020, <doi:10.1177/0003702820929064>).
+    Analyzed spectra can be shared with the Open Specy community. A Shiny app is
+    available via run_app() or online at
+    <https://wincowger.shinyapps.io/OpenSpecy/>.
+URL: https://github.com/wincowgerDEV/OpenSpecy
+BugReports: https://github.com/wincowgerDEV/OpenSpecy/issues
+License: CC BY 4.0
+Encoding: UTF-8
+LazyLoad: true
+LazyData: true
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0)
+Imports: dplyr, rlang, osfr, hyperSpec, hexView, digest, signal, shiny
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), config, shinyjs,
+        shinythemes, shinyBS, shinyWidgets, ggplot2, plotly,
+        data.table, DT, curl, rdrop2, mongolite, loggit
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-05-20 15:49:41 UTC; steinmetz-z
+Author: Win Cowger [cre, aut] (<https://orcid.org/0000-0001-9226-3104>),
+  Zacharias Steinmetz [aut] (<https://orcid.org/0000-0001-6675-5033>),
+  Andrew Gray [ctb] (<https://orcid.org/0000-0003-2252-7367>),
+  Hannah Hapich [ctb] (<https://orcid.org/0000-0003-0000-6632>),
+  Jennifer Lynch [ctb, dtc] (<https://orcid.org/0000-0003-3572-8782>),
+  Hannah De Frond [ctb, dtc] (<https://orcid.org/0000-0003-1199-0727>),
+  Keenan Munno [ctb, dtc] (<https://orcid.org/0000-0003-2916-5944>),
+  Chelsea Rochman [ctb, dtc] (<https://orcid.org/0000-0002-7624-711X>),
+  Sebastian Primpke [ctb, dtc] (<https://orcid.org/0000-0001-7633-8524>),
+  Orestis Herodotou [ctb, dtc]
+Maintainer: Win Cowger <wincowger@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-05-20 16:20:03 UTC

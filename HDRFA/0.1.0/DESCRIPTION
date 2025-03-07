@@ -1,0 +1,22 @@
+Package: HDRFA
+Type: Package
+Title: High-Dimensional Robust Factor Analysis
+Version: 0.1.0
+Authors@R: c(person("Yong", "He", role=c("aut")),
+       person("Lingxiao", "Li", role=c("aut")),
+       person("Dong", "Liu", role=c("aut", "cre"), email = "liudong@163.sufe.edu.cn"),
+       person("Wenxin", "Zhou", role=c("aut")))
+Author: Yong He [aut],
+  Lingxiao Li [aut],
+  Dong Liu [aut, cre],
+  Wenxin Zhou [aut]
+Maintainer: Dong Liu <liudong@163.sufe.edu.cn>
+Description: Factor models have been widely applied in areas such as economics and finance, and the well-known heavy-tailedness of macroeconomic/financial data should be taken into account when conducting factor analysis. We propose two algorithms to do robust factor analysis by considering the Huber loss. One is based on minimizing the Huber loss of the idiosyncratic error's L2 norm, which turns out to do Principal Component Analysis (PCA) on the weighted sample covariance matrix and thereby named as Huber PCA. The other one is based on minimizing the element-wise Huber loss, which can be solved by an iterative Huber regression algorithm. In this package we also provide the code for traditional PCA by Bai, J., (2023)<doi:10.1111/1468-0262.00392>, the Robust Two Step (RTS) method by He et al. (2022)<doi:10.1080/07350015.2020.1811101>, the Quantile Factor Analysis (QFA) method by Chen et al. (2021)<doi:10.3982/ECTA15746> and Huber PCA by He et al. (2023)<arXiv:2303.02817>.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Imports: quantreg, MASS, pracma
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-03-07 01:58:57 UTC; hey12
+Repository: CRAN
+Date/Publication: 2023-03-07 10:40:02 UTC

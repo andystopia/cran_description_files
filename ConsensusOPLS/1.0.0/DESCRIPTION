@@ -1,0 +1,73 @@
+Package: ConsensusOPLS
+Title: Consensus OPLS for Multi-Block Data Fusion
+Description: Merging data from multiple sources is a relevant approach for
+    comprehensively evaluating complex systems. However, the inherent problems
+    encountered when analyzing single tables are amplified with the generation
+    of multi-block datasets, and finding the relationships between data layers
+    of increasing complexity constitutes a challenging task. For that purpose,
+    a generic methodology is proposed by combining the strengths of established
+    data analysis strategies, i.e. multi-block approaches and the Orthogonal
+    Partial Least Squares (OPLS) framework to provide an efficient tool for the
+    fusion of data obtained from multiple sources. The package enables quick
+    and efficient implementation of the consensus OPLS model for any horizontal
+    multi-block data structure (observation-based matching). Moreover, it
+    offers an interesting range of metrics and graphics to help to determine
+    the optimal number of components and check the validity of the model
+    through permutation tests. Interpretation tools include scores and loadings
+    plots, as well as Variable Importance in Projection (VIP), and performance
+    coefficients such as R2, Q2 and DQ2 coefficients. J. Boccard and D.N.
+    Rutledge (2013) <doi:10.1016/j.aca.2013.01.022>.
+Version: 1.0.0
+Authors@R: 
+  c(person(given = "Celine",
+           family = "Bougel",
+           role = c("aut"),
+           email = "celine.bougel@laposte.net",
+           comment = c(ORCID = "0000-0002-1598-7827")),
+    person(given = "Julien",
+           family = "Boccard",
+           role = c("aut"),
+           email = "julien.boccard@unige.ch",
+           comment = c(ORCID = "0000-0001-5913-9566")),
+    person(given = "Florence",
+           family = "Mehl",
+           role = c("aut"),
+           email = "florence.mehl@sib.swiss",
+           comment = c(ORCID = "0000-0002-9619-1707")),
+    person(given = "Marie",
+           family = "Tremblay-Franco",
+           role = c("fnd"),
+           email = "marie.tremblay-franco@inrae.fr",
+           comment = c(ORCID = "0000-0003-4678-4456")),
+    person(given = "Mark",
+           family = "Ibberson",
+           role = c("fnd"),
+           email = "mark.ibberson@sib.swiss",
+           comment = c(ORCID = "0000-0003-3152-5670")),
+    person(given = "Van Du T.",
+           family = "Tran",
+           role = c("aut", "cre"),
+           email = "thuong.tran@sib.swiss",
+           comment = c(ORCID = "0000-0003-2074-5029"))
+          )
+Depends: R (>= 4.0.0), stats, utils, graphics, grDevices, methods
+Imports: parallel, reshape2
+Suggests: testthat (>= 3.0.0), knitr, ggplot2, ggrepel, plotly, psych,
+        DT, ComplexHeatmap
+Config/testthat/edition: 3
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-19 05:37:04 UTC; vandu
+Author: Celine Bougel [aut] (<https://orcid.org/0000-0002-1598-7827>),
+  Julien Boccard [aut] (<https://orcid.org/0000-0001-5913-9566>),
+  Florence Mehl [aut] (<https://orcid.org/0000-0002-9619-1707>),
+  Marie Tremblay-Franco [fnd] (<https://orcid.org/0000-0003-4678-4456>),
+  Mark Ibberson [fnd] (<https://orcid.org/0000-0003-3152-5670>),
+  Van Du T. Tran [aut, cre] (<https://orcid.org/0000-0003-2074-5029>)
+Maintainer: Van Du T. Tran <thuong.tran@sib.swiss>
+Repository: CRAN
+Date/Publication: 2024-06-20 16:00:11 UTC

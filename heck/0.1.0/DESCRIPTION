@@ -1,0 +1,27 @@
+Package: heck
+Type: Package
+Title: Highly Performant String Case Converter
+Version: 0.1.0
+Authors@R: c(
+    person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0001-9910-865X")),
+    person("Dyfan", "Jones", email = "dyfan.r.jones@gmail.com", role = "cre")
+  )
+Description: Provides a case conversion between common cases like CamelCase and 
+    snake_case. Using the 'rust crate heck' <https://github.com/withoutboats/heck>
+    as the backend for a highly performant case conversion for 'R'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Config/rextendr/version: 0.3.1.9000
+RoxygenNote: 7.3.1
+SystemRequirements: Cargo (Rust's package manager), rustc
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2024-04-12 09:15:56 UTC; dyfanjones
+Author: Josiah Parry [aut] (<https://orcid.org/0000-0001-9910-865X>),
+  Dyfan Jones [cre]
+Maintainer: Dyfan Jones <dyfan.r.jones@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-12 15:20:10 UTC

@@ -1,0 +1,30 @@
+Package: immunaut
+Version: 1.0.0
+Date: 2024-10-22
+Title: 'Immunaut': Platform for Machine Learning-Driven Immunogenicity
+        Analysis and Vaccine Response Prediction
+Authors@R: c(person("Ivan", "Tomic", role=c("aut","cre","cph"), email="info@ivantomic.com", comment = c(ORCID = "0000-0003-3596-681X")), 
+            person("Adriana", "Tomic", role=c("aut","ctb","cph","fnd"), email="tomic.adriana@gmail.com", comment = c(ORCID = "0000-0001-9885-3535")),
+            person("Stephanie", "Hao", role=c("aut"), email="sphao@bu.edu", comment = c(ORCID = "0000-0002-3760-8234")))
+Author: Ivan Tomic [aut, cre, cph] (<https://orcid.org/0000-0003-3596-681X>),
+  Adriana Tomic [aut, ctb, cph, fnd]
+    (<https://orcid.org/0000-0001-9885-3535>),
+  Stephanie Hao [aut] (<https://orcid.org/0000-0002-3760-8234>)
+Description: Used for analyzing immune responses and predicting vaccine efficacy using machine learning and advanced data processing techniques. 'Immunaut' integrates both unsupervised and supervised learning methods, managing outliers and capturing immune response variability. It performs multiple rounds of predictive model testing to identify robust immunogenicity signatures that can predict vaccine responsiveness. The platform is designed to handle high-dimensional immune data, enabling researchers to uncover immune predictors and refine personalized vaccination strategies across diverse populations.
+Maintainer: Ivan Tomic <info@ivantomic.com>
+Packaged: 2024-10-23 18:22:04 UTC; login
+Imports: cluster, plyr, dplyr, caret, pROC, PRROC, stats, rlang, Rtsne,
+        dbscan, FNN, igraph, fpc, mclust, ggplot2, grDevices,
+        RColorBrewer
+Depends: R (>= 3.4.0)
+URL: https://github.com/atomiclaboratory/immunaut,
+        <https://atomic-lab.org>
+BugReports: https://github.com/atomiclaboratory/immunaut/issues
+License: GPL-3
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: yes
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2024-10-25 08:40:05 UTC

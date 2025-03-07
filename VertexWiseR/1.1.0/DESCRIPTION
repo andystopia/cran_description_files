@@ -1,0 +1,39 @@
+Package: VertexWiseR
+Title: Simplified Vertex-Wise Analyses of Whole-Brain and Hippocampal
+        Surface
+Version: 1.1.0
+Date: 2024-09-10
+Authors@R: c(
+    person("Junhong", "Yu", , "junhong.yu@ntu.edu.sg", role = "aut",
+           comment = c(ORCID = "0000-0002-2563-9658")),
+    person("Charly", "Billaud", , "charly.billaud@ntu.edu.sg", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-3466-9963"))
+  )
+Maintainer: Charly Billaud <charly.billaud@ntu.edu.sg>
+Description: Provides functions to run statistical analyses on
+    surface-based neuroimaging data, computing measures including cortical
+    thickness and surface area of the whole-brain and of the hippocampi.
+    It can make use of 'FreeSurfer', 'fMRIprep' and 'HCP' preprocessed
+    datasets and 'HippUnfold' hippocampal segmentation outputs for a given
+    sample by restructuring the data values into a single file. The single
+    file can then be used by the package for analyses independently from
+    its base dataset and without need for its access.
+License: GPL-3
+URL: https://cogbrainhealthlab.github.io/VertexWiseR/
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+SystemRequirements: Miniconda3 (v23.10.0); BrainStat (reticulate
+        installation, v0.4.2); Numpy (v1.26.4)
+Depends: R (>= 4.0.0)
+Imports: ciftiTools, doParallel, doSNOW, foreach, freesurferformats,
+        fs, gifti, grDevices, igraph, methods, plotly, png, rappdirs,
+        reticulate, stats, stringr, utils
+NeedsCompilation: no
+Packaged: 2024-10-09 09:44:11 UTC; charly.billaud
+Author: Junhong Yu [aut] (<https://orcid.org/0000-0002-2563-9658>),
+  Charly Billaud [aut, cre] (<https://orcid.org/0009-0001-3466-9963>)
+Repository: CRAN
+Date/Publication: 2024-10-10 02:20:06 UTC

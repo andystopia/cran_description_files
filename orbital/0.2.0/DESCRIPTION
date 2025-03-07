@@ -1,0 +1,31 @@
+Package: orbital
+Title: Predict with 'tidymodels' Workflows in Databases
+Version: 0.2.0
+Authors@R: c(
+    person("Emil", "Hvitfeldt", , "emil.hvitfeldt@posit.co", role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Turn 'tidymodels' workflows into objects containing the
+    sufficient sequential equations to perform predictions. These smaller
+    objects allow for low dependency prediction locally or directly in
+    databases.
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/orbital
+BugReports: https://github.com/tidymodels/orbital/issues
+Imports: cli, dplyr, rlang
+Suggests: arrow, DBI, dbplyr, dtplyr, duckdb, embed, glue, hardhat,
+        jsonlite, kknn, knitr, modeldata, parsnip, R6, recipes,
+        rmarkdown, RSQLite, rstanarm, sparklyr, testthat (>= 3.0.0),
+        themis, tidypredict, workflows
+VignetteBuilder: knitr
+Config/Needs/website: tidyverse/tidytemplate, rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-07-28 04:02:15 UTC; emilhvitfeldt
+Author: Emil Hvitfeldt [aut, cre],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Emil Hvitfeldt <emil.hvitfeldt@posit.co>
+Repository: CRAN
+Date/Publication: 2024-07-28 04:20:02 UTC

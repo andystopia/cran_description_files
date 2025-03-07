@@ -1,0 +1,31 @@
+Package: seasonalityPlot
+Type: Package
+Title: Seasonality Variation Plots of Stock Prices and Cryptocurrencies
+Version: 0.99.3
+Authors@R: c(person("Satoshi", "Kume", 
+             role = c("aut", "cre"),
+             email = "satoshi.kume.1984@gmail.com"))
+Description: The price action at any given time is determined by investor 
+  sentiment and market conditions. Although there is no established principle, 
+  over a long period of time, things often move with a certain periodicity.
+  This is sometimes referred to as anomaly. 
+  The seasonPlot() function in this package calculates and visualizes the 
+  average value of price movements over a year for any given period. 
+  In addition, the monthly increase or decrease in price movement is 
+  represented with a colored background. 
+  This seasonPlot() function can use the same symbols as the 'quantmod' package 
+  (e.g. ^IXIC, ^DJI, SPY, BTC-USD, and ETH-USD etc). 
+Depends: R (>= 4.0.0)
+Imports: magrittr, quantmod, dygraphs, plotrix, htmltools, grDevices,
+        graphics, zoo
+Suggests: testthat
+License: Artistic-2.0
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+URL: https://kumes.github.io/seasonalityPlot/
+NeedsCompilation: no
+Packaged: 2021-11-10 16:27:39 UTC; skume
+Author: Satoshi Kume [aut, cre]
+Maintainer: Satoshi Kume <satoshi.kume.1984@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-11-11 09:00:06 UTC

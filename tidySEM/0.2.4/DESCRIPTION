@@ -1,0 +1,41 @@
+Package: tidySEM
+Type: Package
+Title: Tidy Structural Equation Modeling
+Version: 0.2.4
+Authors@R: 
+    c(person(given = c("Caspar", "J."),
+             family = "van Lissa",
+             role = c("aut", "cre"),
+             email = "c.j.vanlissa@tilburguniversity.edu",
+             comment = c(ORCID = "0000-0002-0808-5024")),
+      person(given = c("Mauricio"),
+             family = "Garnier-Villarreal",
+             role = c("ctb"),
+             email = "mgv@pm.me",
+             comment = c(ORCID = "0000-0002-2951-6647")) )
+Description: A tidy workflow for generating, estimating, reporting,
+    and plotting structural equation models using 'lavaan', 'OpenMx', or
+    'Mplus'. Throughout this workflow, elements of syntax, results, and graphs
+    are represented as 'tidy' data, making them easy to customize.
+License: GPL (>= 3)
+URL: https://cjvanlissa.github.io/tidySEM/
+BugReports: https://github.com/cjvanlissa/tidySEM/issues
+Depends: R (>= 4.0.0), stats, utils, OpenMx
+Imports: ggplot2, lavaan, blavaan, MplusAutomation, igraph, psych,
+        methods, gtable, dbscan, RANN, Matrix, bain, car, future.apply,
+        progressr
+Suggests: testthat, knitr, rmarkdown, dplyr, stringr, covr, tidyLPA,
+        poLCA, umx, mclust, MASS, scales, yaml, formatR
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-05-01 16:05:50 UTC; vanlissa
+Author: Caspar J. van Lissa [aut, cre]
+    (<https://orcid.org/0000-0002-0808-5024>),
+  Mauricio Garnier-Villarreal [ctb]
+    (<https://orcid.org/0000-0002-2951-6647>)
+Maintainer: Caspar J. van Lissa <c.j.vanlissa@tilburguniversity.edu>
+Repository: CRAN
+Date/Publication: 2023-05-01 20:00:06 UTC

@@ -1,0 +1,30 @@
+Package: nodeSub
+Type: Package
+Title: Simulate DNA Alignments Using Node Substitutions
+Version: 1.2.4
+Author: Thijs Janzen
+Maintainer: Thijs Janzen <thijsjanzen@gmail.com>
+Description: Simulate DNA sequences for the node substitution model.
+    In the node substitution model, substitutions accumulate additionally 
+    during a speciation event, providing a potential mechanistic explanation for 
+    substitution rate variation. This package provides tools to simulate
+    such a process, simulate a reference process with only substitutions along
+    the branches, and provides tools to infer phylogenies from alignments. More
+    information can be found in Janzen (2021) <doi:10.1093/sysbio/syab085>.
+URL: https://github.com/thijsjanzen/nodeSub
+BugReports: https://github.com/thijsjanzen/nodeSub
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+Depends: Rcpp, ape
+Imports: apTreeshape, phangorn, tibble, DDD, Rmpfr, assertthat,
+        pbapply, phylobase, geiger, babette, beautier, beastier,
+        mauricer, tracerer, rappdirs, testit, stringr
+Suggests: testthat, TreeSim, dplyr, knitr, rmarkdown, ggplot2,
+        magrittr, tidyr
+NeedsCompilation: yes
+Packaged: 2022-05-23 11:14:43 UTC; p251362
+Repository: CRAN
+Date/Publication: 2022-05-24 10:10:04 UTC

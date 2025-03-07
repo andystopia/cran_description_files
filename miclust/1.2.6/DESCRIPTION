@@ -1,0 +1,30 @@
+Package: miclust
+Type: Package
+Title: Multiple Imputation in Cluster Analysis
+Version: 1.2.6
+Authors@R: c(person(given = "Jose", family = "Barrera-Gomez", role = c("aut", "cre"), email = "jose.barrera@isglobal.org",
+                    comment = c(ORCID = "0000-0002-2688-6036")),
+             person(given = "Xavier", family = "Basagana", role = "aut", email = "xavier.basagana@isglobal.org",
+                    comment = c(ORCID = "0000-0002-8457-1489")))
+Description: Implementation of a framework for cluster analysis with selection of the
+    final number of clusters and an optional variable selection procedure. The package
+    is designed to integrate the results of multiple imputed datasets while accounting
+    for the uncertainty that the imputations introduce in the final results. In addition,
+    the package can also be used for a cluster analysis of the complete cases of a single
+    dataset. The package also includes specific methods to summarize and plot the results.
+    The methods are described in Basagana et al. (2013) <doi:10.1093/aje/kws289>.
+Depends: R (>= 4.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown,
+Imports: doBy, combinat, flexclust, graphics, irr, matrixStats, stats,
+        utils
+NeedsCompilation: no
+Packaged: 2021-03-08 13:09:08 UTC; jbarrera
+Author: Jose Barrera-Gomez [aut, cre] (<https://orcid.org/0000-0002-2688-6036>),
+  Xavier Basagana [aut] (<https://orcid.org/0000-0002-8457-1489>)
+Maintainer: Jose Barrera-Gomez <jose.barrera@isglobal.org>
+Repository: CRAN
+Date/Publication: 2021-03-10 19:30:02 UTC

@@ -1,0 +1,26 @@
+Package: coda.base
+Type: Package
+Title: A Basic Set of Functions for Compositional Data Analysis
+Version: 0.5.2
+Date: 2022-07-06
+Authors@R: c(person("Marc", "Comas-Cufí", role = c("aut", "cre"), 
+                    email = "mcomas@imae.udg.edu", comment = c(ORCID = "0000-0001-9759-0622")))
+Description: A minimum set of functions to perform compositional data analysis
+    using the log-ratio approach introduced by John Aitchison (1982) <http://www.jstor.org/stable/2345821>. Main functions
+    have been implemented in c++ for better performance.
+URL: https://mcomas.net/coda.base/, https://github.com/mcomas/coda.base
+Depends: R (>= 3.5)
+Imports: Rcpp (>= 0.12.12), stats, Matrix, jsonlite
+LinkingTo: Rcpp, RcppArmadillo (>= 0.11.2)
+License: GPL
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.2.0
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0), ggplot2
+VignetteBuilder: knitr
+Packaged: 2022-07-18 08:30:10 UTC; marc
+Author: Marc Comas-Cufí [aut, cre] (<https://orcid.org/0000-0001-9759-0622>)
+Maintainer: Marc Comas-Cufí <mcomas@imae.udg.edu>
+Repository: CRAN
+Date/Publication: 2022-07-18 09:30:02 UTC

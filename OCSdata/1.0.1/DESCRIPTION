@@ -1,0 +1,40 @@
+Package: OCSdata
+Title: Download Data from the 'Open Case Studies' Repository
+Version: 1.0.1
+Authors@R: 
+    person(given = "Michael",
+           family = "Breshock",
+           role = c("aut", "cre"),
+           email = "mbreshock@gmail.com")
+Description: 
+    Provides functions to access and download data from the 'Open Case Studies' <https://www.opencasestudies.org/> 
+    repositories on 'GitHub' <https://github.com/opencasestudies>. Different functions enable 
+    users to grab the data they need at different sections in the case study, as well as 
+    download the whole case study repository. All the user needs to do is input the name of 
+    the case study being worked on. The package relies on the httr::GET() function to access
+    files through the 'GitHub' API. The functions usethis::use_zip() and usethis::create_from_github() 
+    are used to clone and/or download the case study repositories. 
+    <https://github.com/opencasestudies/ocs-bp-rural-and-urban-obesity> 
+    <https://github.com/opencasestudies/ocs-bp-air-pollution>
+    <https://github.com/opencasestudies/ocs-bp-vaping-case-study>
+    <https://github.com/opencasestudies/ocs-bp-opioid-rural-urban>
+    <https://github.com/opencasestudies/ocs-bp-RTC-wrangling>
+    <https://github.com/opencasestudies/ocs-bp-RTC-analysis>
+    <https://github.com/opencasestudies/ocs-bp-youth-disconnection>
+    <https://github.com/opencasestudies/ocs-bp-youth-mental-health>
+    <https://github.com/opencasestudies/ocs-bp-school-shootings-dashboard>
+    <https://github.com/opencasestudies/ocs-bp-co2-emissions>
+    <https://github.com/opencasestudies/ocs-bp-diet>.
+Imports: usethis (>= 2.0.0), purrr (>= 0.3.0), httr (>= 1.4.0)
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-08-05 23:51:32 UTC; michael
+Author: Michael Breshock [aut, cre]
+Maintainer: Michael Breshock <mbreshock@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-06 17:50:12 UTC

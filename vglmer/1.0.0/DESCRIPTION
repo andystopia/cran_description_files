@@ -1,0 +1,27 @@
+Package: vglmer
+Type: Package
+Title: Variational Inference for Hierarchical Generalized Linear Models
+Version: 1.0.0
+Authors@R: person("Max", "Goplerud", email = "mgoplerud@pitt.edu", 
+    role = c("aut", "cre"))
+Encoding: UTF-8
+License: GPL (>= 2)
+Description: Estimates hierarchical models using mean-field variational Bayes. 
+    At present, it can estimate logistic, linear, and negative binomial models. 
+    It can accommodate models with an arbitrary number of random effects and 
+    requires no integration to estimate. It also provides the ability to improve 
+    the quality of the approximation using marginal augmentation. 
+    Goplerud (2022) <doi:10.1214/21-BA1266> provides details on the variational
+    algorithms.
+Imports: Rcpp (>= 1.0.1), lme4, CholWishart, mvtnorm, Matrix, stats,
+        graphics, methods, lmtest, splines, mgcv
+Depends: R (>= 3.0.2)
+Suggests: SuperLearner, MASS, tictoc, testthat
+LinkingTo: Rcpp, RcppEigen (>= 0.3.3.4.0)
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Packaged: 2022-09-13 13:42:24 UTC; MHG23
+Author: Max Goplerud [aut, cre]
+Maintainer: Max Goplerud <mgoplerud@pitt.edu>
+Repository: CRAN
+Date/Publication: 2022-09-14 06:00:02 UTC

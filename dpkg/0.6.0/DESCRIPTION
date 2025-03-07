@@ -1,0 +1,23 @@
+Package: dpkg
+Title: Create, Stow, and Read Data Packages
+Version: 0.6.0
+Authors@R: 
+    person("Cole", "Brokamp", , "cole@colebrokamp.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0289-3151"))
+Description: Data frame, tibble, or tbl objects are converted to data package objects using specific metadata labels (name, version, title, homepage, description). A data package object ('dpkg') can be written to disk as a 'parquet' file or released to a 'GitHub' repository. Data package objects can be read into R from online repositories and downloaded files are cached locally across R sessions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: dplyr, geoarrow, gert, gh, sf, testthat (>= 3.0.0), usethis,
+        withr
+Config/testthat/edition: 3
+URL: https://github.com/cole-brokamp/dpkg,
+        https://cole-brokamp.github.io/dpkg/
+BugReports: https://github.com/cole-brokamp/dpkg/issues
+Imports: arrow, cli, fs, glue, httr2, rlang, tibble
+NeedsCompilation: no
+Packaged: 2024-10-31 21:35:51 UTC; cole
+Author: Cole Brokamp [aut, cre, cph] (<https://orcid.org/0000-0002-0289-3151>)
+Maintainer: Cole Brokamp <cole@colebrokamp.com>
+Repository: CRAN
+Date/Publication: 2024-11-04 12:40:09 UTC

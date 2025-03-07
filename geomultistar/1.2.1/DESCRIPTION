@@ -1,0 +1,38 @@
+Type: Package
+Package: geomultistar
+Title: Multidimensional Queries Enriched with Geographic Data
+Version: 1.2.1
+Authors@R: c(
+    person("Jose", "Samos", , "jsamos@ugr.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4457-3439")),
+    person("Universidad de Granada", role = "cph")
+  )
+Description: Multidimensional systems allow complex queries to be carried
+    out in an easy way. The geographical dimension, together with the
+    temporal dimension, plays a fundamental role in multidimensional
+    systems. Through this package, vector geographic data layers can be
+    associated to the attributes of geographic dimensions, so that the
+    results of multidimensional queries can be obtained directly as vector
+    layers.  The multidimensional structures on which we can define the
+    queries can be created from a flat table or imported directly using
+    functions from this package.
+License: MIT + file LICENSE
+URL: https://josesamos.github.io/geomultistar/,
+        https://github.com/josesamos/geomultistar
+BugReports: https://github.com/josesamos/geomultistar/issues
+Depends: R (>= 2.10)
+Imports: dplyr, generics, purrr, rlang, RSQLite, sf, tibble, tidyr,
+        tidyselect
+Suggests: knitr, pander, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-08 17:58:31 UTC; joses
+Author: Jose Samos [aut, cre] (<https://orcid.org/0000-0002-4457-3439>),
+  Universidad de Granada [cph]
+Maintainer: Jose Samos <jsamos@ugr.es>
+Repository: CRAN
+Date/Publication: 2024-01-09 00:50:02 UTC

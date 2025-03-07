@@ -1,0 +1,35 @@
+Package: geocmeans
+Type: Package
+Title: Implementing Methods for Spatial Fuzzy Unsupervised
+        Classification
+Version: 0.1.1
+Authors@R: c(
+    person("Jeremy", "Gelb", email = "jeremy.gelb@ucs.inrs.ca",role = c("aut", "cre")),
+    person("Philippe", "Apparicio", email="philippe.apparicio@ucs.inrs.ca", role=c("ctb")))
+Maintainer: Jeremy Gelb <jeremy.gelb@ucs.inrs.ca>
+Imports: ggplot2 (>= 3.2.1), spdep (>= 1.1.2), reldist (>= 1.6.6),
+        dplyr (>= 0.8.3), fclust (>= 2.1.1), fmsb (>= 0.7.0), broom (>=
+        0.5.2), future.apply (>= 1.4.0), progressr (>= 0.4.0), reshape2
+        (>= 1.4.4), sp (>= 1.4-4), stats (>= 3.5)
+Depends: R (>= 3.5)
+Suggests: knitr (>= 1.28), rmarkdown (>= 2.1), markdown (>= 1.1),
+        maptools (>= 0.9-5), rgeos (>= 0.5-2), future (>= 1.16.0),
+        ppclust (>= 1.1.0), ClustGeo (>= 2.0), car (>= 3.0-7), rgl (>=
+        0.100), ggpubr (>= 0.2.5), RColorBrewer (>= 1.1-2), kableExtra
+        (>= 1.1.0), viridis (>= 0.5.1), testthat(>= 3.0.0), sf(>=
+        0.9-8)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Description: Provides functions to apply spatial fuzzy unsupervised classification, visualize and interpret results. This method is well suited when the user wants to analyze data with a fuzzy clustering algorithm and to account for the spatial dimension of the dataset. Indexes for estimating the spatial consistency and classification quality are proposed in addition.
+    The methods were originally proposed in the field of brain imagerie (seed Cai and al. 2007 <doi:10.1016/j.patcog.2006.07.011> and Zaho and al. 2013 <doi:10.1016/j.dsp.2012.09.016>) and recently applied in geography (see Gelb and Apparicio <doi:10.4000/cybergeo.36414>).
+URL: https://github.com/JeremyGelb/geocmeans
+BugReports: https://github.com/JeremyGelb/geocmeans/issues
+NeedsCompilation: no
+Packaged: 2021-04-20 13:00:27 UTC; gelbj
+Author: Jeremy Gelb [aut, cre],
+  Philippe Apparicio [ctb]
+Repository: CRAN
+Date/Publication: 2021-04-21 07:40:07 UTC

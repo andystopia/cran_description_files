@@ -1,0 +1,29 @@
+Package: RCMIP5
+Title: Tools for Manipulating and Summarizing CMIP5 Data
+Description: Working with CMIP5 data can be tricky, forcing scientists to write
+    custom scripts and programs. The `RCMIP5` package aims to ease this
+    process, providing a standard, robust, and high-performance set of scripts
+    to (i) explore what data have been downloaded, (ii) identify missing data,
+    (iii) average (or apply other mathematical operations) across experimental
+    ensembles, (iv) produce both temporal and spatial statistical summaries,
+    and (v) produce easy-to-work-with graphical and data summaries.
+Imports: abind (>= 1.4), dplyr (>= 0.5), assertthat (>= 0.1), digest,
+        Matrix
+Depends: R (>= 3.1.0)
+Suggests: ggplot2 (>= 1.0.1), ncdf4 (>= 1.9), testthat (>= 1.0.2),
+        knitr
+Version: 1.2.0
+Authors@R: c( person("Ben", "Bond-Lamberty", role = c("aut")),
+    person("Kathe", "Todd-Brown", role = c("aut", "cre"), email =
+    "ktoddbrown@gmail.com") )
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-07-30 13:56:48 UTC; d3x290
+Author: Ben Bond-Lamberty [aut],
+  Kathe Todd-Brown [aut, cre]
+Maintainer: Kathe Todd-Brown <ktoddbrown@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-07-30 18:53:27

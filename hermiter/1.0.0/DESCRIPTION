@@ -1,0 +1,30 @@
+Package: hermiter
+Title: Efficient Sequential and Batch Estimation of Probability Density
+        Functions, Cumulative Distribution Functions and Quantiles
+Version: 1.0.0
+Authors@R: c(
+  person("Michael","Stephanou",role=c("aut","cre"), email="michael.stephanou@gmail.com"),
+  person("Melvin","Varughese",role="ctb"))
+Author: Michael Stephanou [aut, cre],
+  Melvin Varughese [ctb]
+Maintainer: Michael Stephanou <michael.stephanou@gmail.com>
+Description: Facilitates estimation of the full probability density function, 
+  cumulative distribution function and quantile function using Hermite series 
+  based estimators. These estimators are particularly useful in the sequential 
+  setting (both stationary and non-stationary) and one-pass batch estimation 
+  setting for large data sets. 
+  Based on: Stephanou, Michael, Varughese, Melvin and Iain Macdonald. "Sequential quantiles via Hermite series density estimation." Electronic Journal of Statistics 11.1 (2017): 570-607 <doi:10.1214/17-EJS1245> and 
+  Stephanou, Michael and Varughese, Melvin. "On the properties of Hermite series based distribution function estimators." Metrika (2020) <doi:10.1007/s00184-020-00785-z>.
+License: MIT + file LICENSE
+Imports: Rcpp (>= 1.0.5), methods
+LinkingTo: Rcpp, BH
+RoxygenNote: 7.1.1
+Suggests: testthat, magrittr, knitr, rmarkdown, dplyr, data.table,
+        ggplot2, DT
+VignetteBuilder: knitr
+URL: https://github.com/MikeJaredS/hermiter
+BugReports: https://github.com/MikeJaredS/hermiter/issues
+NeedsCompilation: yes
+Packaged: 2020-09-03 12:40:05 UTC; mjste
+Repository: CRAN
+Date/Publication: 2020-09-10 14:50:02 UTC

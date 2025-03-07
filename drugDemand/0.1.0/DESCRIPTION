@@ -1,0 +1,27 @@
+Package: drugDemand
+Type: Package
+Title: Drug Demand Forecasting
+Version: 0.1.0
+Date: 2023-10-20
+Authors@R: 
+    person("Kaifeng", "Lu", , "kaifenglu@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6160-7119"))
+Description: Performs drug demand forecasting by modeling drug dispensing data while taking into account predicted enrollment and treatment discontinuation dates. The number of skipped visits and the number of dispensed doses are modeled using zero-inflated Poisson or zero-inflated negative binomial distributions (Zeileis, Kleiber & Jackman (2008) <doi:10.18637/jss.v027.i08>) and a linear mixed-effects model (McCulloch & Searle (2001, ISBN:0-471-19364-X)), respectively.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.10), dplyr (>= 1.1.0), rlang (>= 1.1.0), purrr
+        (>= 1.0.2), plotly (>= 4.10.1), survival (>= 2.41-3), mvtnorm
+        (>= 1.1-3), erify (>= 0.4.0), stats (>= 3.5.0), icenReg (>=
+        2.0.15), pscl (>= 1.5.5), nlme (>= 3.1-153), eventPred (>=
+        0.2.0), parallel (>= 4.1.2), foreach (>= 1.5.2), doParallel (>=
+        1.0.17), doRNG (>= 1.8.6), tictoc (>= 1.2)
+LinkingTo: Rcpp
+Depends: R (>= 3.5.0)
+LazyData: true
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2023-10-20 17:15:20 UTC; kaife
+Author: Kaifeng Lu [aut, cre] (<https://orcid.org/0000-0002-6160-7119>)
+Maintainer: Kaifeng Lu <kaifenglu@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-23 16:10:06 UTC

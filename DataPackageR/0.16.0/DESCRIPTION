@@ -1,0 +1,62 @@
+Type: Package
+Package: DataPackageR
+Title: Construct Reproducible Analytic Data Sets as R Packages
+Version: 0.16.0
+Authors@R: c(
+    person("Greg", "Finak", , "greg.finak@gmail.com", role = c("aut", "cph"),
+           comment = "Original author and creator of DataPackageR"),
+    person("Paul", "Obrecht", role = "ctb"),
+    person("Ellis", "Hughes", , "ellishughes@live.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-0637-4436")),
+    person("Jimmy", "Fulp", , "williamjfulp@gmail.com", role = "ctb"),
+    person("Marie", "Vendettuoli", role = "ctb",
+           comment = c(ORCID = "0000-0001-9321-1410")),
+    person("Dave", "Slager", , "dslager@fredhutch.org", role = c("ctb", "cre"),
+           comment = c(ORCID = "0000-0003-2525-2039")),
+    person("Jason", "Taylor", , "jmtaylor@fredhutch.org", role = "ctb"),
+    person("Kara", "Woo", role = "rev",
+           comment = "Kara reviewed the package for rOpenSci, see <https://github.com/ropensci/onboarding/issues/230>"),
+    person("William", "Landau", role = "rev",
+           comment = "William reviewed the package for rOpenSci, see <https://github.com/ropensci/onboarding/issues/230>")
+  )
+Description: A framework to help construct R data packages in a
+    reproducible manner. Potentially time consuming processing of raw data
+    sets into analysis ready data sets is done in a reproducible manner
+    and decoupled from the usual 'R CMD build' process so that data sets
+    can be processed into R objects in the data package and the data
+    package can then be shared, built, and installed by others without the
+    need to repeat computationally costly data processing.  The package
+    maintains data provenance by turning the data processing scripts into
+    package vignettes, as well as enforcing documentation and version
+    checking of included data objects. Data packages can be version
+    controlled on 'GitHub', and used to share data for manuscripts,
+    collaboration and reproducible research.
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/DataPackageR,
+        https://docs.ropensci.org/DataPackageR/
+BugReports: https://github.com/ropensci/DataPackageR/issues
+Depends: R (>= 3.5.0)
+Imports: crayon, desc, digest, futile.logger, knitr, pkgbuild, pkgload,
+        rmarkdown, roxygen2, rprojroot, usethis, utils, yaml
+Suggests: covr, data.tree, spelling, testthat, withr
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+SystemRequirements: pandoc - https://pandoc.org
+NeedsCompilation: no
+Packaged: 2024-06-03 03:18:59 UTC; dslager
+Author: Greg Finak [aut, cph] (Original author and creator of DataPackageR),
+  Paul Obrecht [ctb],
+  Ellis Hughes [ctb] (<https://orcid.org/0000-0003-0637-4436>),
+  Jimmy Fulp [ctb],
+  Marie Vendettuoli [ctb] (<https://orcid.org/0000-0001-9321-1410>),
+  Dave Slager [ctb, cre] (<https://orcid.org/0000-0003-2525-2039>),
+  Jason Taylor [ctb],
+  Kara Woo [rev] (Kara reviewed the package for rOpenSci, see
+    <https://github.com/ropensci/onboarding/issues/230>),
+  William Landau [rev] (William reviewed the package for rOpenSci, see
+    <https://github.com/ropensci/onboarding/issues/230>)
+Maintainer: Dave Slager <dslager@fredhutch.org>
+Repository: CRAN
+Date/Publication: 2024-06-03 07:59:29 UTC

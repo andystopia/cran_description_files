@@ -1,0 +1,18 @@
+Package: NetworkReg
+Type: Package
+Title: Regression Model on Network-Linked Data with Statistical
+        Inference
+Version: 1.1
+Date: 2024-02-02
+Authors@R: c(person("Tianxi Li", email = "tianxili@umn.edu", role = c("aut", "cre")),
+  person("Can M. Le", email = "canle@ucdavis.edu", role = c("aut")))
+Description: Linear regression model with nonparametric network effects on network-linked observations. The model is proposed by Le and Li (2022) <arXiv:2007.00803> and is assumed on observations that are connected by a network or similar relational data structure. The model does not assume that the relational data or network structure to be precisely observed; thus, the method is provably robust to a certain level of perturbation of the network structure. The package contains the estimation and inference function for the model.
+License: GPL (>= 2)
+Imports: Matrix, stats, randnet, RSpectra
+NeedsCompilation: no
+Packaged: 2024-02-07 05:17:21 UTC; tianxili
+Author: Tianxi Li [aut, cre],
+  Can M. Le [aut]
+Maintainer: Tianxi Li <tianxili@umn.edu>
+Repository: CRAN
+Date/Publication: 2024-02-08 21:00:02 UTC

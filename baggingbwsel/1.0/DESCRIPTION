@@ -1,0 +1,30 @@
+Package: baggingbwsel
+Type: Package
+Title: Bagging Bandwidth Selection in Kernel Density and Regression
+        Estimation
+Version: 1.0
+Date: 2021-07-08
+Authors@R: c(person("Daniel","Barreiro-Ures",email="daniel.barreiro.ures@udc.es",role=c("aut","cre")),
+  person("Jeffrey","Hart",role="aut"),
+  person("Ricardo","Cao",role="aut"),
+  person("Mario","Francisco-Fernandez",role="aut"))
+Description: Bagging bandwidth selection methods for the Parzen-Rosenblatt and Nadaraya-Watson estimators. These 
+  bandwidth selectors can achieve greater statistical precision than their non-bagged counterparts while being 
+    computationally fast. See Barreiro-Ures et al. (2020) <doi:10.1093/biomet/asaa092> and 
+  Barreiro-Ures et al. (2021) <arXiv:2105.04134>.
+License: GPL-3
+Encoding: UTF-8
+Depends: mclust, foreach
+Imports: Rcpp (>= 1.0.3), parallel, doParallel, kedd, stats, sm,
+        nor1mix, rgl, rpanel, tkrplot, misc3d
+LinkingTo: Rcpp
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-07-09 09:26:06 UTC; dbu52
+Author: Daniel Barreiro-Ures [aut, cre],
+  Jeffrey Hart [aut],
+  Ricardo Cao [aut],
+  Mario Francisco-Fernandez [aut]
+Maintainer: Daniel Barreiro-Ures <daniel.barreiro.ures@udc.es>
+Repository: CRAN
+Date/Publication: 2021-07-12 07:20:02 UTC

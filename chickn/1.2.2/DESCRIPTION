@@ -1,0 +1,32 @@
+Package: chickn
+Type: Package
+Title: Compressed Hierarchical Clustering Toolbox
+Version: 1.2.2
+Date: 2020-11-08
+Authors@R: c(person("Olga","Permiakova", role = c("aut", "cre"), email = "olga.permiakova@gmail.com"),
+    person("Thomas","Burger",role = "aut",email = "thomas.burger@cea.fr"))
+Maintainer: Olga Permiakova <olga.permiakova@gmail.com>
+Description: Routines for efficient cluster analysis of large scale data. The package implements the 'CHICKN' 
+      clustering algorithm, which clusters the data into K groups by relying on the compressed data version. 
+      The package provides functions for data compression, hierarchical clustering and result post processing. 
+      The used data compression procedure is based on the sketching learning N. 'Keriven', N. 'Tremblay', Y. 'Traonmilin', 
+      R. 'Gribonval' (2017) <arXiv:1606.02838v2> and 'Nystrom' kernel approximation S. Wang, A. 'Gittens',
+      M. W. 'Mahoney' (2019) <arXiv:1706.02803v4>. Hierarchical clustering relies on the 'Compressive' K means algorithm
+      N. 'Keriven', A. 'Bourrier', R. 'Gribonval', P. Perez (2017) <arXiv:1610.08738v4>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Imports: Rcpp, bigstatsr (>= 1.2.3), RcppParallel, mvnfast, zipfR,
+        MASS, pracma, nloptr, foreach, doRNG, parallel, doParallel,
+        Rdpack
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel, bigstatsr (>= 1.2.3),
+        rmio
+SystemRequirements: C++11
+RoxygenNote: 7.1.1
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2020-11-08 16:26:04 UTC; satrix
+Author: Olga Permiakova [aut, cre],
+  Thomas Burger [aut]
+Repository: CRAN
+Date/Publication: 2020-11-12 17:20:07 UTC

@@ -1,0 +1,27 @@
+Package: qtl2fst
+Version: 0.28
+Date: 2024-07-16
+Title: Database Storage of Genotype Probabilities for QTL Mapping
+Description: Uses the 'fst' package to store genotype probabilities on disk for the 'qtl2' package. These genotype probabilities are a central data object for mapping quantitative trait loci (QTL), but they can be quite large. The facilities in this package enable the genotype probabilities to be stored on disk, leading to reduced memory usage with only a modest increase in computation time.
+Author: Karl W Broman [aut, cre] (<https://orcid.org/0000-0002-4914-6671>),
+  Brian S Yandell [aut] (<https://orcid.org/0000-0002-8774-9377>),
+  Petr Simecek [aut] (<https://orcid.org/0000-0002-2922-7183>)
+Maintainer: Karl W Broman <broman@wisc.edu>
+Authors@R: c(person("Karl W", "Broman", role=c("aut", "cre"),
+                    email="broman@wisc.edu", comment=c(ORCID = "0000-0002-4914-6671")),
+             person("Brian S", "Yandell", role="aut",
+                    email="byandell@wisc.edu", comment=c(ORCID = "0000-0002-8774-9377")),
+             person("Petr", "Simecek", role="aut", comment=c(ORCID = "0000-0002-2922-7183")))
+Depends: R (>= 3.1.0)
+Imports: fst, qtl2 (>= 0.24)
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+License: GPL-3
+URL: https://github.com/rqtl/qtl2fst
+ByteCompile: true
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-07-16 15:20:45 UTC; kbroman
+Repository: CRAN
+Date/Publication: 2024-07-16 22:20:06 UTC

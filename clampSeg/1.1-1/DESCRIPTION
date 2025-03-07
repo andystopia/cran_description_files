@@ -1,0 +1,20 @@
+Package: clampSeg
+Title: Idealisation of Patch Clamp Recordings
+Version: 1.1-1
+Authors@R: c(person("Pein", "Florian", role = c("aut", "cre"), email = "f.pein@lancaster.ac.uk"),
+    person("Timo", "Aspelmeier", role = "ctb", email = "timo.aspelmeier@mathematik.uni-goettingen.de"))
+Depends: R (>= 3.3.0)
+Imports: stepR (>= 2.1.0), lowpassFilter, stats, methods
+Suggests: testthat, R.cache (>= 0.10.0), R.rsp
+Description: Implements the model-free multiscale idealisation approaches: Jump-Segmentation by MUltiResolution Filter (JSMURF) <doi:10.1109/TNB.2013.2284063>, JUmp Local dEconvolution Segmentation filter (JULES) <doi:10.1109/TNB.2018.2845126> and Heterogeneous Idealization by Local testing and DEconvolution (HILDE) <arXiv:2008.02658>. Further details on how to use them are given in the accompanying vignette.
+VignetteBuilder: R.rsp
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2022-01-27 11:33:36 UTC; pein
+Author: Pein Florian [aut, cre],
+  Timo Aspelmeier [ctb]
+Maintainer: Pein Florian <f.pein@lancaster.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-01-27 23:10:06 UTC

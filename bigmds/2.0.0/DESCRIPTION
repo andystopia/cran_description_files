@@ -1,0 +1,37 @@
+Package: bigmds
+Title: Multidimensional Scaling for Big Data
+Version: 2.0.0
+Authors@R: 
+    c(person(given = "Cristian",
+           family = "Pachón García",
+           role = c("aut", "cre"),
+           email = "cc.pachon@gmail.com",
+           comment = c(ORCID = "0000-0001-9518-4874")),
+     person(given = "Pedro",
+           family = "Delicado",
+           role = c("aut"),
+           email = "pedro.delicado@upc.edu",
+           comment = c(ORCID = "0000-0003-3933-4852")))
+Description: MDS is a statistic tool for reduction of dimensionality, using as input a distance matrix of dimensions n × n. 
+  When n is large, classical algorithms suffer from computational problems and MDS configuration can not be obtained.
+  With this package, we address these problems by means of three algorithms: 
+  - Divide-and-conquer MDS developed by Delicado P. and C. Pachon-Garcia (2021) <arXiv:2007.11919>.
+  - Fast MDS, which is an implementation of Yang, T., J. Liu, L. McMillan, and W. Wang (2006).
+  - Interpolation MDS, which uses Gower's interpolation formula as described in Gower, J. C. and D. J. Hand (1995, ISBN: 978-0-412-71630-0).
+  The main idea of these algorithms is based on partitioning the data set into small pieces, where classical methods can work. In order to align all the solutions, it is used Procrustes formula as described in Borg, I. and P. Groenen (2005, ISBN : 978-0-387-25150-9).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: stats, parallel
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/pachoning/bigmds
+BugReports: https://github.com/pachoning/bigmds/issues
+NeedsCompilation: no
+Packaged: 2021-10-01 15:11:20 UTC; cristianpachon
+Author: Cristian Pachón García [aut, cre]
+    (<https://orcid.org/0000-0001-9518-4874>),
+  Pedro Delicado [aut] (<https://orcid.org/0000-0003-3933-4852>)
+Maintainer: Cristian Pachón García <cc.pachon@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-10-02 13:40:20 UTC

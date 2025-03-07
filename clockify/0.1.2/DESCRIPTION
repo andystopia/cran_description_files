@@ -1,0 +1,29 @@
+Package: clockify
+Type: Package
+Title: A Wrapper for the 'Clockify' API
+Version: 0.1.2
+Authors@R: 
+    c(person(given = c("Andrew", "B."),
+             family = "Collier",
+             role = c("aut", "cre"),
+             email = "andrew@fathomdata.dev"),
+      person(given = "Megan",
+             family = "Beckett",
+             role = "ctb",
+             email = "megan@fathomdata.dev"))
+Description: A wrapper for the Clockify API <https://clockify.me/developers-api>, making it possible to query, insert and update time keeping data.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: httr, dplyr, tidyr, purrr, janitor, logger, lubridate,
+        anytime, rlist, tibble
+Suggests: here, stringi, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/testthat/start-first: api-key, workspace
+NeedsCompilation: no
+Packaged: 2022-10-20 08:32:50 UTC; wookie
+Author: Andrew B. Collier [aut, cre],
+  Megan Beckett [ctb]
+Maintainer: Andrew B. Collier <andrew@fathomdata.dev>
+Repository: CRAN
+Date/Publication: 2022-10-20 08:55:08 UTC

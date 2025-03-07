@@ -1,0 +1,30 @@
+Package: eatATA
+Type: Package
+Title: Create Constraints for Small Test Assembly Problems
+Version: 1.1.1
+Authors@R: c(
+    person("Benjamin", "Becker", email = "b.becker@iqb.hu-berlin.de", role = c("aut", "cre")),
+    person("Dries", "Debeer", email = "dries.debeer@kuleuven.be", role = c("aut")))
+Description: Provides simple functions to create constraints for small test assembly problems 
+    (e.g. van der Linden (2005, ISBN: 978-0-387-29054-6)) using sparse matrices. Currently, 
+    'GLPK', 'lpSolve', 'Symphony', and 'Gurobi' are supported as solvers. The 'gurobi' package is not available from 
+    any mainstream repository; see <https://www.gurobi.com/downloads/>.
+License: GPL
+URL: https://github.com/beckerbenj/eatATA
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: Matrix, methods, Rglpk, mathjaxr, lpSolve
+RoxygenNote: 7.2.2
+Suggests: testthat (>= 2.1.0), covr, knitr, rmarkdown, readxl,
+        Rsymphony
+Enhances: gurobi
+RdMacros: mathjaxr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-25 17:07:59 UTC; beckerbz
+Author: Benjamin Becker [aut, cre],
+  Dries Debeer [aut]
+Maintainer: Benjamin Becker <b.becker@iqb.hu-berlin.de>
+Repository: CRAN
+Date/Publication: 2022-11-28 13:00:02 UTC

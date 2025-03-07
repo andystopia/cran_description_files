@@ -1,0 +1,28 @@
+Package: msgtools
+Type: Package
+Title: Tools for Developing Diagnostic Messages
+Description: A number of utilities for developing and maintaining error, warning,
+    and other messages in R packages, including checking for consistency across
+    messages, spell-checking messages, and building message translations into
+    various languages for purposes of localization.
+Date: 2017-01-08
+Authors@R: c(person("Thomas J.", "Leeper",
+                    role = c("aut", "cre"),
+                    email = "thosjleeper@gmail.com"))
+URL: https://github.com/RL10N/msgtools/
+BugReports: https://github.com/RL10N/msgtools/issues
+License: MIT + file LICENSE
+Version: 0.2.4
+Depends: R (>= 3.2.0)
+Imports: tools, utils, poio (>= 0.0-2), digest, tibble, hunspell,
+        devtools
+Suggests: testthat, knitr
+SystemRequirements: gettext
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-01-08 15:11:25 UTC; THOMAS
+Author: Thomas J. Leeper [aut, cre]
+Maintainer: Thomas J. Leeper <thosjleeper@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-01-08 16:57:12

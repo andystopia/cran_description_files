@@ -1,0 +1,29 @@
+Package: MODIS
+Title: Acquisition and Processing of MODIS Products
+Version: 1.2.11
+URL: https://github.com/fdetsch/MODIS
+BugReports: https://github.com/fdetsch/MODIS/issues
+Authors@R: c(
+	person("Matteo", "Mattiuzzi", role = "aut", email = "matteo@mattiuzzi.com"),
+	person("Florian", "Detsch", role = c("cre", "aut"), email = "fdetsch@web.de"))
+Description: Download and processing functionality for the Moderate Resolution
+    Imaging Spectroradiometer (MODIS). The package provides automated access to the
+    global online data archives LP DAAC (<https://lpdaac.usgs.gov/>), LAADS 
+    (<https://ladsweb.modaps.eosdis.nasa.gov/>) and NSIDC (<https://nsidc.org/home>) 
+    as well as processing capabilities such as file conversion, mosaicking, 
+    subsetting and time series filtering.
+License: MIT + file LICENSE
+Depends: mapdata, R (>= 3.5.0), raster
+Imports: bitops, curl, devtools, grDevices, graphics, mapedit, maps,
+        maptools, methods, parallel, ptw, sf, sp, stats, utils
+ByteCompile: TRUE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: tinytest
+NeedsCompilation: no
+Packaged: 2023-01-06 11:11:36 UTC; fdetsch
+Author: Matteo Mattiuzzi [aut],
+  Florian Detsch [cre, aut]
+Maintainer: Florian Detsch <fdetsch@web.de>
+Repository: CRAN
+Date/Publication: 2023-01-06 14:20:05 UTC

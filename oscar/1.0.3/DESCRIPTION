@@ -1,0 +1,45 @@
+Package: oscar
+Type: Package
+Title: Optimal Subset Cardinality Regression (OSCAR) Models Using the
+        L0-Pseudonorm
+Version: 1.0.3
+Date: 2022-05-19
+Authors@R: c(
+    person(given="Teemu Daniel", family="Laajala", role=c("aut", "cre"), email="teelaa@utu.fi", comment = c(ORCID = "0000-0002-7016-7354")),
+    person(given="Kaisa", family="Joki", role=c("aut"), email="kjjoki@utu.fi"),
+    person(given="Anni", family="Halkola", role=c("aut"), email="ansuha@utu.fi"))
+Description: Optimal Subset Cardinality Regression (OSCAR) models offer
+    regularized linear regression using the L0-pseudonorm, conventionally
+    known as the number of non-zero coefficients. The package estimates an
+    optimal subset of features using the L0-penalization via
+    cross-validation, bootstrapping and visual diagnostics. Effective
+    Fortran implementations are offered along the package for finding
+    optima for the DC-decomposition, which is used for transforming the
+    discrete L0-regularized optimization problem into a continuous
+    non-convex optimization task. These optimization modules include DBDC
+    ('Double Bundle method for nonsmooth DC optimization' as described in
+    Joki et al. (2018) <doi:10.1137/16M1115733>) and LMBM ('Limited
+    Memory Bundle Method for large-scale nonsmooth optimization' as
+    in Haarala et al. (2004) <doi:10.1080/10556780410001689225>).
+    Multiple regression model families are supported: Cox, logistic,
+    and Gaussian.
+License: GPL-3
+LazyData: true
+URL: https://github.com/Syksy/oscar
+BugReports: https://github.com/Syksy/oscar/issues
+NeedsCompilation: yes
+Depends: R (>= 3.6.0)
+Imports: graphics, grDevices, hamlet, Matrix, methods, stats, survival,
+        utils
+Suggests: ePCR, glmnet, knitr, pROC, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Packaged: 2022-05-19 13:55:26 UTC; teemu
+Author: Teemu Daniel Laajala [aut, cre]
+    (<https://orcid.org/0000-0002-7016-7354>),
+  Kaisa Joki [aut],
+  Anni Halkola [aut]
+Maintainer: Teemu Daniel Laajala <teelaa@utu.fi>
+Repository: CRAN
+Date/Publication: 2022-05-20 18:20:01 UTC

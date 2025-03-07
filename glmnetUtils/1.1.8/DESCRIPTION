@@ -1,0 +1,27 @@
+Package: glmnetUtils
+Type: Package
+Version: 1.1.8
+Title: Utilities for 'Glmnet'
+Description: Provides a formula interface for the 'glmnet' package for
+    elasticnet regression, a method for cross-validating the alpha parameter,
+    and other quality-of-life tools.
+Imports: stats, graphics, grDevices, glmnet, parallel, Matrix
+Suggests: knitr, rmarkdown, MASS, doParallel, testthat
+Authors@R: c(
+        person("Microsoft", role="cph"),
+        person("Hong", "Ooi", email="hongooi73@gmail.com", role=c("aut", "cre"))
+    )
+NeedsCompilation: no
+VignetteBuilder: knitr
+Copyright: Microsoft
+License: GPL-2
+URL: https://github.com/hongooi73/glmnetUtils
+Collate: 'glmnetUtils.r' 'cvGlmnetFormula.r' 'cvaGlmnetFormula.r'
+        'glmnetFormula.r' 'makeModelComponents.r'
+RoxygenNote: 7.1.1
+Packaged: 2021-02-25 14:34:11 UTC; hongo
+Author: Microsoft [cph],
+  Hong Ooi [aut, cre]
+Maintainer: Hong Ooi <hongooi73@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-25 15:30:02 UTC

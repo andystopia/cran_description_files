@@ -1,0 +1,25 @@
+Package: LDLcalc
+Title: Calculate and Predict the Low Density Lipoprotein Values
+Version: 1.0
+Authors@R: c(person("Petros", "Paplomatas", role = c("aut", "cre"),
+                     email = "P.paplomatas@hotmail.com"),
+              person("Kostas", "Anagnostopoulos", role = c("aut", "ctb"),
+                     email = "kanagno@gmail.com"))
+Author: Petros Paplomatas [aut, cre],
+  Kostas Anagnostopoulos [aut, ctb]
+Description: A wide variety of ways to calculate (through equations) or predict (using 9 Machine Learning methods as well as a stack algorithm combination of them all) the Low Density Lipoprotein values of patients based on the values of three other metrics as Total Cholesterol , Triglyceride and High Density Lipoprotein.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: data.table, caret, caretEnsemble, lares, corrplot,
+        RColorBrewer, lattice, resample, glmnet, earth, kernlab, gbm,
+        Cubist, randomForest
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-09-29 19:20:52 UTC; ppapl
+Maintainer: Petros Paplomatas <P.paplomatas@hotmail.com>
+Repository: CRAN
+Date/Publication: 2021-09-30 11:20:02 UTC

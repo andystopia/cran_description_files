@@ -1,0 +1,31 @@
+Package: BigDataStatMeth
+Type: Package
+Title: Statistical Methods and Algorithms for Big Data
+Version: 0.99.14
+Authors@R: c(person("Dolors", "Pelegri-Siso", ,"dolors.pelegri@isglobal.org", 
+                     role=c("aut", "cre")),
+             person("Juan R.", "Gonzalez", ,"juanr.gonzalez@isglobal.org", 
+                     role=c("aut")))
+Description: Basic Algebra methods using parallel 
+    algorithms to be used in big data problems such as omics data analyses. 
+    The functions will consider as input an HDF5 data file, an object of
+    class DelayedArray or an R object.
+License: MIT + file LICENSE
+Depends: R (>= 3.6.0)
+Imports: data.table, Rcpp (>= 1.0.6), RcppParallel (>= 5.0.2), RCurl,
+        rhdf5, utils
+LinkingTo: Rcpp, RcppEigen, RcppParallel, beachmat, Rhdf5lib, RSpectra,
+        BH
+Suggests: HDF5Array, DelayedArray, Matrix, BiocStyle, knitr, rmarkdown,
+        ggplot2, microbenchmark
+SystemRequirements: GNU make, C++11
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2021-12-16 17:38:11 UTC; mailos
+Author: Dolors Pelegri-Siso [aut, cre],
+  Juan R. Gonzalez [aut]
+Maintainer: Dolors Pelegri-Siso <dolors.pelegri@isglobal.org>
+Repository: CRAN
+Date/Publication: 2021-12-17 10:32:06 UTC

@@ -1,0 +1,45 @@
+Package: qtlcharts
+Version: 0.12-10
+Date: 2020-09-24
+Title: Interactive Graphics for QTL Experiments
+Author: Karl W Broman [aut, cre] (<https://orcid.org/0000-0002-4914-6671>),
+  Michael Bostock [ctb, cph] (d3.js library in htmlwidgets/lib,
+    https://d3js.org),
+  jQuery Foundation [cph] (jQuery library in htmlwidgets/lib,
+    https://jquery.com),
+  jQuery contributors [ctb] (jQuery library in htmlwidgets/lib; see
+    https://github.com/jquery/jquery/blob/master/AUTHORS.txt),
+  jQuery UI contributors [ctb] (jQuery UI library in htmlwidgets/lib; see
+    https://jqueryui.com/about/)
+Maintainer: Karl W Broman <broman@wisc.edu>
+Description: Web-based interactive charts (using D3.js) for the analysis of
+    experimental crosses to identify genetic loci (quantitative trait
+    loci, QTL) contributing to variation in quantitative traits.
+    Broman (2015) <doi:10.1534/genetics.114.172742>.
+Depends: R (>= 2.15)
+Imports: qtl (>= 1.30-4), htmlwidgets, graphics, stats, utils
+Suggests: htmltools, jsonlite, knitr, devtools, roxygen2, rmarkdown,
+        testthat
+License: GPL-3 | file LICENSE
+URL: https://kbroman.org/qtlcharts/,
+        https://github.com/kbroman/qtlcharts
+BugReports: https://github.com/kbroman/qtlcharts/issues
+LazyData: true
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 7.1.1
+Authors@R: c(
+    person("Karl W", "Broman", role=c("aut", "cre"), email="broman@wisc.edu",
+           comment=c(ORCID = "0000-0002-4914-6671")),
+    person("Michael", "Bostock", role=c("ctb", "cph"),
+           comment="d3.js library in htmlwidgets/lib, https://d3js.org"),
+    person("jQuery Foundation", role="cph",
+           comment="jQuery library in htmlwidgets/lib, https://jquery.com"),
+    person("jQuery contributors", role = "ctb",
+           comment = "jQuery library in htmlwidgets/lib; see https://github.com/jquery/jquery/blob/master/AUTHORS.txt"),
+    person("jQuery UI contributors", role = "ctb",
+           comment = "jQuery UI library in htmlwidgets/lib; see https://jqueryui.com/about/"))
+NeedsCompilation: no
+Packaged: 2020-09-24 14:10:14 UTC; kbroman
+Repository: CRAN
+Date/Publication: 2020-09-25 10:00:02 UTC

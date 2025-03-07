@@ -1,0 +1,36 @@
+Package: unmconf
+Type: Package
+Title: Modeling with Unmeasured Confounding
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Ryan", family = "Hebdon", role = c("aut"),
+           email = "ryan_hebdon@baylor.edu"),
+    person(given = "James", family = "Stamey", role = c("aut"),
+           email = "james_stamey@baylor.edu",
+           comment = c(ORCID = "0000-0002-3787-6490")),
+    person(given = "David", family = "Kahle", role = c("aut", "cre"),
+           email = "david@kahle.io",
+           comment = c(ORCID = "0000-0002-9999-1558")),
+    person(given = "Xiang", family = "Zhang", role = c("aut"),
+           email = "Xiang.Zhang@cslbehring.com"))
+Maintainer: David Kahle <david@kahle.io>
+Description: Fit and assess Bayesian multi-staged regression models that account 
+    for unmeasured confounders using JAGS.
+SystemRequirements: JAGS >= 4.3.0 (http://mcmc-jags.sourceforge.net)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10), rjags
+Imports: stats, glue, janitor
+Suggests: bayesplot, posterior, ggplot2, dplyr, tidyr, tibble, knitr,
+        rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-11 21:41:39 UTC; david_kahle
+Author: Ryan Hebdon [aut],
+  James Stamey [aut] (<https://orcid.org/0000-0002-3787-6490>),
+  David Kahle [aut, cre] (<https://orcid.org/0000-0002-9999-1558>),
+  Xiang Zhang [aut]
+Repository: CRAN
+Date/Publication: 2023-12-12 20:50:04 UTC

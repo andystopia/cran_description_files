@@ -1,0 +1,27 @@
+Package: NORTARA
+Title: Generation of Multivariate Data with Arbitrary Marginals
+Version: 1.0.0
+Authors@R: person("Po", "Su", email = "desolator@sjtu.edu.cn",
+    role = c("aut", "cre"))
+Description: An implementation of a specific method for generating
+    n-dimensional random vectors with given marginal distributions and
+    correlation matrix. The method uses the NORTA (NORmal To Anything)
+    approach which generates a standard normal random vector and then
+    transforms it into a random vector with specified marginal distributions
+    and the RA (Retrospective Approximation) algorithm which is a generic
+    stochastic root-finding algorithm. The marginals can be continuous or
+    discrete. See the vignette of package for more details.
+URL: https://github.com/superdesolator/NORTARA
+BugReports: https://github.com/superdesolator/NORTARA/issues
+Depends: R (>= 3.1.2)
+License: MIT + file LICENSE
+LazyData: true
+Imports: corpcor(>= 1.6.7), Matrix(>= 1.1-4)
+Suggests: knitr
+VignetteBuilder: knitr
+Packaged: 2014-12-20 14:29:55 UTC; Administrator
+Author: Po Su [aut, cre]
+Maintainer: Po Su <desolator@sjtu.edu.cn>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-12-20 15:46:33

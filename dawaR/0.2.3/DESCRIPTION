@@ -1,0 +1,33 @@
+Package: dawaR
+Title: An API Wrapper for 'DAWA' - 'The Danish Address Web API'
+Date: 2024-10-28
+Version: 0.2.3
+Authors@R: 
+    person("Aleksander", "Bang-Larsen", , "contact@aleksanderbl.dk",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0007-7984-4650"))
+Description: Functions for interacting with all sections of
+    the official 'Danish Address Web API' (also known as 'DAWA') 
+    <https://api.dataforsyningen.dk>. The development of this package is
+    completely independent from the government agency, Klimadatastyrelsen,
+    who maintains the API.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://dawar.aleksanderbl.dk/,
+        https://github.com/aleksanderbl29/dawaR
+BugReports: https://github.com/aleksanderbl29/dawaR/issues
+Suggests: knitr, rmarkdown, ggplot2, testthat (>= 3.0.0), cowplot (>=
+        1.1.0), rmapshaper (>= 0.5.0), microbenchmark (>= 1.5.0), dplyr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Depends: R (>= 3.5.0)
+Imports: memoise (>= 2.0.0), cli, httr2, sf, tidyRSS, rlang
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-28 12:44:28 UTC; aleksanderbang-larsen
+Author: Aleksander Bang-Larsen [aut, cre, cph]
+    (<https://orcid.org/0009-0007-7984-4650>)
+Maintainer: Aleksander Bang-Larsen <contact@aleksanderbl.dk>
+Repository: CRAN
+Date/Publication: 2024-10-31 13:30:04 UTC

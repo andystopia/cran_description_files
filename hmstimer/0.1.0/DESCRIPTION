@@ -1,0 +1,28 @@
+Package: hmstimer
+Title: 'hms' Based Timer
+Version: 0.1.0
+Authors@R: c(
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", c("aut", "cre"), comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Poisson Consulting", role = c("cph", "fnd"))
+    )
+Description: 
+    Tracks elapsed clock time using a `hms::hms()` scalar, 
+    which if running has an attribute named start 
+    that specifies the system time when the timer was started.
+    The elapsed time is the value of the scalar 
+    plus the difference between the current system time 
+    and the system time when the timer was started.
+License: MIT + file LICENSE
+Imports: hms, lifecycle
+Suggests: covr, testthat
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1.9000
+RdMacros: lifecycle
+NeedsCompilation: no
+Packaged: 2020-07-09 18:59:39 UTC; joe
+Author: Joe Thorley [aut, cre] (<https://orcid.org/0000-0002-7683-4592>),
+  Poisson Consulting [cph, fnd]
+Maintainer: Joe Thorley <joe@poissonconsulting.ca>
+Repository: CRAN
+Date/Publication: 2020-07-09 19:50:02 UTC

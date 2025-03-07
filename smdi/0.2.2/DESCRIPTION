@@ -1,0 +1,29 @@
+Package: smdi
+Type: Package
+Title: Perform Structural Missing Data Investigations
+Version: 0.2.2
+Authors@R: person("Janick", "Weberpals", email = "jweberpals@bwh.harvard.edu", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-0404-7394"))
+Description: An easy to use implementation of routine structural missing data diagnostics with functions to visualize the proportions of missing observations, investigate missing data patterns and conduct various empirical missing data diagnostic tests. Reference: Weberpals J, Raman SR, Shaw PA, Lee H, Russo M, Hammil BG, Toh D, Connolly JG, Dandreo KJ, Tian F, Liu W, Li Jie, Hernandez-Munos JJ, Glynn RJ, Desai RJ (2023, in submission). "A Principled Approach to Characterize and Analyze Partially Observed Confounder Data From Electronic Health Records: A Plasmode Simulation Study."
+License: GPL (>= 3)
+URL: https://janickweberpals.gitlab-pages.partners.org/smdi
+BugReports: https://gitlab-scm.partners.org/janickweberpals/smdi/-/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: broom, dplyr, fastDummies, forcats, ggplot2, glue, gt,
+        Hotelling, lifecycle, magrittr, methods, mice, naniar,
+        parallel, pROC, randomForest, stringr, survival, tableone,
+        tibble, tidyr, tidyselect
+Depends: R (>= 2.10)
+Suggests: gridExtra, gtsummary, here, knitr, reactR, reactable,
+        rmarkdown, simsurv, survminer, usethis, testthat (>= 3.0.0),
+        vdiffr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-07-16 21:54:59 UTC; jgw17
+Author: Janick Weberpals [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0404-7394>)
+Maintainer: Janick Weberpals <jweberpals@bwh.harvard.edu>
+Repository: CRAN
+Date/Publication: 2023-07-17 14:20:02 UTC

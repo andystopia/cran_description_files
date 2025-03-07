@@ -1,0 +1,17 @@
+Package: eventTrack
+Type: Package
+Title: Event Prediction for Time-to-Event Endpoints
+Version: 1.0.0
+Date: 2021-05-07
+Author: Kaspar Rufibach
+Maintainer: Kaspar Rufibach <kaspar.rufibach@roche.com>
+Depends: survival, muhaz, R (>= 3.5.0)
+Suggests: knitr, rmarkdown, rpact, fitdistrplus, gestate
+VignetteBuilder: knitr
+Description: Implements the hybrid framework for event prediction described in Fang & Zheng (2011, <doi:10.1016/j.cct.2011.05.013>). To estimate the survival function the event prediction is based on, a piecewise exponential hazard function is fit to the time-to-event data to infer the potential change points. Prior to the last identified change point, the survival function is estimated using Kaplan-Meier, and the tail after the change point is fit using piecewise exponential. 
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2021-05-07 18:51:33 UTC; rufiback
+Repository: CRAN
+Date/Publication: 2021-05-10 08:00:12 UTC

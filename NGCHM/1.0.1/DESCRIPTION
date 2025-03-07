@@ -1,0 +1,44 @@
+Type: Package
+Package: NGCHM
+Title: Next Generation Clustered Heat Maps
+Version: 1.0.1
+Authors@R: c(
+    person(c("Bradley", "M"), "Broom", , "bmbroom@mdanderson.org", role = "aut",
+           comment = c(ORCID = "0000-0002-0915-3164")),
+    person(c("Mary", "A"), "Rohrdanz", , "marohrdanz@mdanderson.org", role = c("ctb", "cre")),
+    person("Chris", "Wakefield", , "cwakefield@mdanderson.org", role = "ctb"),
+    person("James", "Melott", , "jmmelott@mdanderson.org", role = "ctb"),
+    person("MD Anderson Cancer Center", role = "cph")
+  )
+Description: Next-Generation Clustered Heat Maps (NG-CHMs) allow for
+    dynamic exploration of heat map data in a web browser. 'NGCHM' allows
+    users to create both stand-alone HTML files containing a
+    Next-Generation Clustered Heat Map, and .ngchm files to view in the
+    NG-CHM viewer. See Ryan MC, Stucky M, et al (2020)
+    <doi:10.12688/f1000research.20590.2> for more details.
+License: GPL-3
+URL: https://md-anderson-bioinformatics.github.io/NGCHM-R/,
+        https://github.com/MD-Anderson-Bioinformatics/NGCHM-R
+Depends: R (>= 3.4.0)
+Imports: digest, grDevices, htmltools, httr, jsonlite, logger (>=
+        0.2.0), methods, stats, tsvio, utils
+Suggests: knitr, rmarkdown, Rtsne, testthat, umap, uwot
+Enhances: NGCHMDemoData, NGCHMSupportFiles
+Additional_repositories:
+        https://md-anderson-bioinformatics.r-universe.dev
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Collate: 'allClasses.R' 'allGenerics.R' 'allMethods.R' 'functions.R'
+        'chmFromJSON.R' 'dendrogram-fixes.R' 'shaidy.R' 'ngchmshaidy.R'
+        'zzz.R' 'package.R'
+SystemRequirements: Java (>= 8.0) Git
+NeedsCompilation: no
+Packaged: 2024-01-16 14:09:52 UTC; marohrdanz
+Author: Bradley M Broom [aut] (<https://orcid.org/0000-0002-0915-3164>),
+  Mary A Rohrdanz [ctb, cre],
+  Chris Wakefield [ctb],
+  James Melott [ctb],
+  MD Anderson Cancer Center [cph]
+Maintainer: Mary A Rohrdanz <marohrdanz@mdanderson.org>
+Repository: CRAN
+Date/Publication: 2024-01-16 18:10:05 UTC

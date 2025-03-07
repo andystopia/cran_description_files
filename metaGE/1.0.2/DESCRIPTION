@@ -1,0 +1,36 @@
+Package: metaGE
+Title: Meta-Analysis for Detecting Genotype x Environment Associations
+Version: 1.0.2
+Authors@R: c(
+    person("Annaïg", "De Walsche", , "annaig.de-walsche@inrae.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0603-1716")),
+    person("Tristan", "Mary-Huard", , "tristan.mary-huard@agroparistech.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-3839-9067"))
+  )
+Maintainer: Annaïg De Walsche <annaig.de-walsche@inrae.fr>
+Description: Meta-analysis of genome-wide association studies for studying
+    Genotype x Environment interactions.  The 4 main functions of the
+    package metaGE.collect(), metaGE.cor(), metaGE.fit() and metaGE.test()
+    correspond to 4 steps to perform the meta-analysis: Collecting the
+    results of genome-wide association studies data from different files;
+    Inferring the inter-environment correlation matrix; Performing global
+    test procedure for quantitative trait loci detection (using a Fixed or
+    Random effect model); Performing tests of contrast or meta-regression
+    using an environmental co-factor. (De Walsche, A., et al. (2023)
+    <doi:10.1101/2023.03.01.530237>).
+License: GPL-3
+Depends: R (>= 3.0.2)
+Imports: corrplot, data.table, dplyr, emdbook, future, ggplot2,
+        ggrepel, gplots, graphics, grDevices, ks, purrr, qqman, Rfast,
+        stats, stringr, tibble, tidyr, utils, viridis
+Suggests: DT, knitr, rmarkdown, tidyverse
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-11 11:41:04 UTC; Annaig
+Author: Annaïg De Walsche [aut, cre] (<https://orcid.org/0000-0003-0603-1716>),
+  Tristan Mary-Huard [aut] (<https://orcid.org/0000-0002-3839-9067>)
+Repository: CRAN
+Date/Publication: 2023-09-11 12:00:02 UTC

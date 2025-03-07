@@ -1,0 +1,32 @@
+Package: glmmrMCML
+Type: Package
+Title: Markov Chain Monte Carlo Maximum Likelihood for Generalised
+        Linear Mixed Models
+Version: 0.2.2
+Date: 2023-01-27
+Authors@R: c(person("Sam", "Watson", email = "S.I.Watson@bham.ac.uk",
+                  role = c("aut", "cre")),
+             person("Yi", "Pan", email = "ypan1988@gmail.com",
+                  role = c("aut")))
+Maintainer: Sam Watson <S.I.Watson@bham.ac.uk>
+Description: Markov Chain Monte Carlo Maximum Likelihood model fitting for generalised linear mixed models. Uses 
+  the package 'glmmrBase' for model specification, see <https://github.com/samuel-watson/glmmrBase/blob/master/README.md> for a 
+  detailed manual on model specification.
+License: GPL (>= 3)
+Imports: methods, Rcpp (>= 1.0.7)
+LinkingTo: glmmrBase (>= 0.2.3), BH, digest, SparseChol, Rcpp (>=
+        0.12.0), RcppEigen, RcppParallel (>= 5.0.1), rminqa (>= 0.2.2)
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Author: Sam Watson [aut, cre],
+  Yi Pan [aut]
+URL: https://github.com/samuel-watson/glmmrMCML
+BugReports: https://github.com/samuel-watson/glmmrMCML/issues
+Suggests: testthat, cmdstanr (>= 0.4.0)
+Biarch: true
+Depends: R (>= 3.4.0), glmmrBase (>= 0.2.0), Matrix
+SystemRequirements: GNU make
+Encoding: UTF-8
+Packaged: 2023-01-27 10:20:19 UTC; samue
+Repository: CRAN
+Date/Publication: 2023-01-27 20:40:02 UTC

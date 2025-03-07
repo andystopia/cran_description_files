@@ -1,0 +1,31 @@
+Package: wbacon
+Type: Package
+Title: Weighted BACON Algorithms
+Version: 0.5-1
+Authors@R: c(
+    person("Tobias", "Schoch", role = c("aut", "cre"),
+        email = "tobias.schoch@gmail.com",
+        comment = c(ORCID = "0000-0002-1640-3395")),
+    person("R-core", role = c("cph"), email = "R-core@R-project.org",
+        comment = "plot.wbaconlm derives from plot.lm"))
+Description: The BACON algorithms are methods for multivariate outlier
+    nomination (detection) and robust linear regression by Billor, Hadi,
+    and Velleman (2000) <doi:10.1016/S0167-9473(99)00101-2>. The extension
+    to weighted problems is due to Beguin and Hulliger (2008)
+    <https://www150.statcan.gc.ca/n1/en/catalogue/12-001-X200800110616>.
+License: GPL (>= 2)
+NeedsCompilation: yes
+URL: https://github.com/tobiasschoch/wbacon
+BugReports: https://github.com/tobiasschoch/wbacon/issues
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, graphics, grDevices, hexbin
+Suggests: modi, robustbase, robustX (>= 1.2-5), cellWise, knitr,
+        rmarkdown
+VignetteBuilder: knitr, rmarkdown
+Packaged: 2021-06-16 08:08:24 UTC; tobias.schoch
+Author: Tobias Schoch [aut, cre] (<https://orcid.org/0000-0002-1640-3395>),
+  R-core [cph] (plot.wbaconlm derives from plot.lm)
+Maintainer: Tobias Schoch <tobias.schoch@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-17 06:00:02 UTC

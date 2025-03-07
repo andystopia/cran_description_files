@@ -1,0 +1,20 @@
+Package: CIpostSelect
+Type: Package
+Title: Confidence Interval Post-Selection of Variable
+Version: 0.2.0
+Authors@R: person(given = "Boubacar",
+                    family = "DIALLO",
+                    role = c("aut", "cre"),
+                    email = "boubacar.diallo0@yahoo.com")
+Maintainer: Boubacar DIALLO <boubacar.diallo0@yahoo.com>
+Description: Calculates confidence intervals after variable selection using repeated data splits. The package offers methods to address the challenges of post-selection inference, ensuring more accurate confidence intervals in models involving variable selection. The two main functions are 'lmps', which records the different models selected across multiple data splits as well as the corresponding coefficient estimates, and 'cips', which takes the lmps object as input to select variables and perform inferences using two types of voting.
+License: MIT + file LICENSE
+Imports: MASS, doParallel, foreach, ggplot2, glmnet, magrittr, mlbench,
+        tictoc
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-10-04 13:48:29 UTC; bouba
+Author: Boubacar DIALLO [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-10-04 14:20:05 UTC

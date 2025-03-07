@@ -1,0 +1,37 @@
+Type: Package
+Package: tstools
+Title: A Time Series Toolbox for Official Statistics
+Version: 0.4.2
+Authors@R: c(
+    person("Matthias", "Bannert", , "bannert@kof.ethz.ch", role = "aut"),
+    person("Severin", "Thoeni", , "thoenis@kof.ethz.ch", role = "aut"),
+    person("Stéphane", "Bisinger", , "bisinger@kof.ethz.ch", role = c("aut", "cre"))
+  )
+Description: Plot official statistics' time series conveniently: automatic
+    legends, highlight windows, stacked bar chars with positive and
+    negative contributions, sum-as-line option, two y-axes with automatic
+    horizontal grids that fit both axes and other popular chart types.
+    'tstools' comes with a plethora of defaults to let you plot without
+    setting an abundance of parameters first, but gives you the
+    flexibility to tweak the defaults. In addition to charts, 'tstools'
+    provides a super fast, 'data.table' backed time series I/O that allows
+    the user to export / import long format, wide format and transposed
+    wide format data to various file types.
+License: GPL-2
+URL: https://github.com/KOF-ch/tstools
+BugReports: https://github.com/KOF-ch/tstools/issues
+Depends: R (>= 3.0.0), zoo (>= 1.7-12)
+Imports: data.table, graphics, jsonlite, stats, xts, yaml
+Suggests: knitr, openxlsx, reshape2, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 7.1.2
+Packaged: 2023-06-07 14:58:31 UTC; sbisinger
+Author: Matthias Bannert [aut],
+  Severin Thoeni [aut],
+  Stéphane Bisinger [aut, cre]
+Maintainer: Stéphane Bisinger <bisinger@kof.ethz.ch>
+Repository: CRAN
+Date/Publication: 2023-06-07 16:40:02 UTC

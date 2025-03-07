@@ -1,0 +1,23 @@
+Package: supcluster
+Type: Package
+Title: Supervised Cluster Analysis
+Version: 1.0
+Date: 2015-05-18
+Author: David A. Schoenfeld,
+  Jesse Hsu
+Maintainer: David A. Schoenfeld <dschoenfeld@mgh.harvard.edu>
+Description: Clusters features under the assumption that each cluster has a
+ random effect and there is an outcome variable that is related to the random 
+ effects by a linear regression. In this way the cluster analysis is 
+ ``supervised'' by the outcome variable. An alternate specification is that 
+ features in each cluster have the same compound symmetric normal distribution, 
+ and the conditional distribution of the outcome given the features
+ has the same coefficient for each feature in a cluster. 
+License: GPL-2
+Imports: mvtnorm, gtools
+Collate: 'supcluster.R' 'concordmap.R' 'generate.cluster.data.R'
+        'tab1.R'
+Packaged: 2015-05-18 17:29:07 UTC; das15
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-05-18 22:45:09

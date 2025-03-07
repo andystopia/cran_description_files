@@ -1,0 +1,38 @@
+Package: CIDER
+Type: Package
+Title: Meta-Clustering for Single-Cell Data Integration and Evaluation
+Version: 0.99.0
+Maintainer: Zhiyuan Hu <zhiyuan.cheryl.hu@gmail.com>
+Authors@R: c(
+    person("Zhiyuan", "Hu", role = c("aut", "cre"),
+      email = "zhiyuan.cheryl.hu@gmail.com",
+      comment = c(ORCID = "0000-0002-1688-6032")
+    ),
+    person("Christopher", "Yau", 
+      role = "aut",
+      comment = c(ORCID = "0000-0001-7615-8523")
+    )
+  )
+Description: A workflow of (a) meta-clustering based on 
+    inter-group similarity measures and (b) a ground-truth-free test metric to 
+    assess the biological correctness of integration in real datasets. See Hu Z,
+    Ahmed A, Yau C (2021) <doi:10.1101/2021.03.29.437525> for
+    more details.
+URL: https://github.com/zhiyhu/CIDER, https://zhiyhu.github.io/CIDER/
+BugReports: https://github.com/zhiyhu/CIDER/issues
+Imports: limma (>= 3.42.0), edgeR (>= 3.28.0), stats (>= 3.6.2),
+        foreach (>= 1.4.7), Seurat (>= 3.1.0), utils (>= 3.6.2),
+        pheatmap (>= 1.0.0), dbscan (>= 1.1-5), kernlab (>= 0.9-29),
+        doParallel, igraph, parallel, graphics, ggplot2, viridis
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+LazyData: true
+Suggests: knitr, rmarkdown, testthat, statmod (>= 1.2.2), cowplot
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2021-11-18 21:18:27 UTC; zhiyuanhu
+Author: Zhiyuan Hu [aut, cre] (<https://orcid.org/0000-0002-1688-6032>),
+  Christopher Yau [aut] (<https://orcid.org/0000-0001-7615-8523>)
+Repository: CRAN
+Date/Publication: 2021-11-19 14:40:08 UTC

@@ -1,0 +1,34 @@
+Package: MetAlyzer
+Type: Package
+Title: Read and Analyze 'MetIDQ&trade;' Software Output Files
+Version: 0.1.0
+Authors@R: 
+    c(person("Nils", "Mechtel",
+            email = "nils.mech@gmail.com",
+            role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-1278-7125")),
+     person("Carolin", "Andresen",
+            email = "carolinandresen@googlemail.com",
+            role = c("aut"),
+            comment = c(ORCID = "0000-0002-8960-7719")),
+     person("Daniel", "Huebschmann",
+            email = "d.huebschmann@dkfz-heidelberg.de",
+            role = c("aut"),
+            comment = c(ORCID = "0000-0002-6041-7049")))
+Depends: R (>= 4.0.0)
+Imports: openxlsx, dplyr, tidyr, tibble, agricolae, methods, rlang
+Description: The 'MetAlyzer' S4 object provides methods to read and reformat metabolomics data for convenient data handling, statistics and downstream analysis. The resulting format corresponds to input data of the Shiny app 'MetaboExtract' (<https://www.metaboextract.shiny.dkfz.de/MetaboExtract/>).
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.1.2
+Suggests: rmarkdown, knitr, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-01-30 16:55:14 UTC; nilsm
+Author: Nils Mechtel [aut, cre] (<https://orcid.org/0000-0002-1278-7125>),
+  Carolin Andresen [aut] (<https://orcid.org/0000-0002-8960-7719>),
+  Daniel Huebschmann [aut] (<https://orcid.org/0000-0002-6041-7049>)
+Maintainer: Nils Mechtel <nils.mech@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-01 09:10:08 UTC

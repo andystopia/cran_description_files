@@ -1,0 +1,24 @@
+Package: h3jsr
+Type: Package
+Title: Access Uber's H3 Library
+Version: 1.2.2
+Date: 2021-06-16
+Authors@R: person("Lauren", "O'Brien", email = "obrlsoilau@gmail.com", role = c('aut', 'cre'), comment = c(ORCID = "0000-0002-7336-2171"))
+Description: Provides access to Uber's H3 library for geospatial indexing via its JavaScript transpile 'h3-js' <https://github.com/uber/h3-js> and 'V8' <https://github.com/jeroen/v8>.
+License: Apache License (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+SystemRequirements: V8 engine version 6+ is needed for modern JS and
+        WASM support. On Debian / Ubuntu install either libv8-dev or
+        libnode-dev, on Fedora use v8-devel.
+Imports: geojsonsf, methods, purrr, sf, tidyr, utils, V8
+Suggests: covr, dplyr, ggplot2, knitr, rmarkdown, testthat
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-16 10:20:42 UTC; leobr
+Author: Lauren O'Brien [aut, cre] (<https://orcid.org/0000-0002-7336-2171>)
+Maintainer: Lauren O'Brien <obrlsoilau@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-17 07:50:02 UTC

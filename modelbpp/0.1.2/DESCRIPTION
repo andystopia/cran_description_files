@@ -1,0 +1,40 @@
+Package: modelbpp
+Title: Model BIC Posterior Probability
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Shu Fai",
+             family = "Cheung",
+             role = c("aut", "cre"),
+             email = "shufai.cheung@gmail.com",
+             comment = c(ORCID = "0000-0002-9871-9448")),
+      person(given = "Huiping",
+             family = "Wu",
+             role = c("aut")),
+      person(given = "Shing On",
+             family = "Leung",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-0962-339X")))
+Description: Fits the neighboring models of a fitted
+  structural equation model and assesses the model
+  uncertainty of the fitted model based on BIC posterior
+  probabilities, using the method presented in
+  Wu, Cheung, and Leung (2020)
+  <doi:10.1080/00273171.2019.1574546>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, tinytest
+Depends: R (>= 4.0.0)
+Imports: lavaan, parallel, pbapply, igraph
+VignetteBuilder: knitr
+URL: https://sfcheung.github.io/modelbpp/
+BugReports: https://github.com/sfcheung/modelbpp/issues
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-09-21 00:11:23 UTC; sfcheung
+Author: Shu Fai Cheung [aut, cre] (<https://orcid.org/0000-0002-9871-9448>),
+  Huiping Wu [aut],
+  Shing On Leung [aut] (<https://orcid.org/0000-0002-0962-339X>)
+Maintainer: Shu Fai Cheung <shufai.cheung@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-21 18:10:02 UTC

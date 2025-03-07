@@ -1,0 +1,42 @@
+Package: INLAjoint
+Type: Package
+Title: Multivariate Joint Modeling for Longitudinal and Time-to-Event
+        Outcomes with 'INLA'
+Version: 23.10.28
+Authors@R: c(
+    person("Denis", "Rustand", email = "INLAjoint@gmail.com", 
+        role = c("cre", "aut"),
+        comment = c(ORCID = "0000-0001-9708-5220")),
+    person("Elias", "Teixeira Krainski", email = "elias.krainski@kaust.edu.sa", 
+        role = "aut",
+        comment = c(ORCID = "0000-0002-7063-2615")),
+    person("Haavard", "Rue", email = "haavard.rue@kaust.edu.sa", 
+        role = "aut",
+        comment = c(ORCID = "0000-0002-0222-1881")),
+    person("Janet", "van Niekerk", email = "janet.vanniekerk@kaust.edu.sa", 
+        role = "aut",
+        comment = c(ORCID = "0000-0002-4334-2057"))
+    )
+Description: Estimation of joint models for multivariate longitudinal markers (with various distributions available) and survival outcomes (possibly accounting for competing risks) with Integrated Nested Laplace Approximations (INLA). The flexible and user friendly function joint() facilitates the use of the fast and reliable inference technique implemented in the 'INLA' package for joint modeling. More details are given in the help page of the joint() function (accessible via ?joint in the R console) and the vignette associated to the joint() function (accessible via vignette("INLAjoint") in the R console).
+License: GPL-3
+URL: https://github.com/DenisRustand/INLAjoint
+BugReports: https://github.com/DenisRustand/INLAjoint/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6), utils, stats
+Imports: numDeriv, lme4, ggplot2
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+RoxygenNote: 7.2.3
+Suggests: INLA, knitr, rmarkdown, splines, graphics, grDevices,
+        methods, R.rsp
+BuildVignettes: true
+VignetteBuilder: R.rsp
+Maintainer: Denis Rustand <INLAjoint@gmail.com>
+NeedsCompilation: no
+Packaged: 2023-10-27 21:05:31 UTC; dr
+Author: Denis Rustand [cre, aut] (<https://orcid.org/0000-0001-9708-5220>),
+  Elias Teixeira Krainski [aut] (<https://orcid.org/0000-0002-7063-2615>),
+  Haavard Rue [aut] (<https://orcid.org/0000-0002-0222-1881>),
+  Janet van Niekerk [aut] (<https://orcid.org/0000-0002-4334-2057>)
+Repository: CRAN
+Date/Publication: 2023-10-28 15:10:07 UTC

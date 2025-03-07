@@ -1,0 +1,54 @@
+Package: ggdist
+Title: Visualizations of Distributions and Uncertainty
+Version: 3.0.1
+Date: 2021-11-29
+Authors@R: c(
+        person("Matthew", "Kay", role = c("aut", "cre"), email = "mjskay@northwestern.edu"),
+        person("Brenton M.", "Wiernik", role = "ctb", email = "brenton@wiernik.org")
+    )
+Maintainer: Matthew Kay <mjskay@northwestern.edu>
+Description: Provides primitives for visualizing distributions using 'ggplot2' that are particularly tuned for
+    visualizing uncertainty in either a frequentist or Bayesian mode. Both analytical distributions (such as 
+    frequentist confidence distributions or Bayesian priors) and distributions represented as samples (such as 
+    bootstrap distributions or Bayesian posterior samples) are easily visualized. Visualization primitives include
+    but are not limited to: points with multiple uncertainty intervals, 
+    eye plots (Spiegelhalter D., 1999) <doi:10.1111/1467-985X.00120>,
+    density plots, gradient plots, dot plots (Wilkinson L., 1999) <doi:10.1080/00031305.1999.10474474>,
+    quantile dot plots (Kay M., Kola T., Hullman J., Munson S., 2016) <doi:10.1145/2858036.2858558>,
+    complementary cumulative distribution function 
+    barplots (Fernandes M., Walls L., Munson S., Hullman J., Kay M., 2018) <doi:10.1145/3173574.3173718>,
+    and fit curves with multiple uncertainty ribbons.
+Depends: R (>= 3.5.0)
+Imports: tidyselect, dplyr (>= 1.0.0), ggplot2 (>= 3.3.5), rlang (>=
+        0.3.0), scales, grid, HDInterval, tibble, vctrs, withr,
+        distributional (>= 0.2.2)
+Suggests: knitr, testthat, vdiffr (>= 1.0.0), svglite, broom (>=
+        0.5.6), modelr, cowplot, covr, gdtools, rmarkdown, png, fda,
+        forcats, purrr (>= 0.2.3), tidyr (>= 1.0.0), beeswarm (>=
+        0.4.0), posterior, pkgdown
+License: GPL (>= 3)
+Language: en-US
+BugReports: https://github.com/mjskay/ggdist/issues/new
+URL: https://mjskay.github.io/ggdist/,
+        https://github.com/mjskay/ggdist/
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+LazyData: true
+Encoding: UTF-8
+Collate: "ggdist-package.R" "util.R" "binning_methods.R"
+        "curve_interval.R" "cut_cdf_qi.R" "data.R" "distributions.R"
+        "draw_key_slabinterval.R" "geom.R" "geom_slabinterval.R"
+        "geom_dotsinterval.R" "geom_interval.R" "geom_lineribbon.R"
+        "geom_pointinterval.R" "lkjcorr_marginal.R" "parse_dist.R"
+        "point_interval.R" "position_dodgejust.R" "scale_colour_ramp.R"
+        "scale_.R" "stat.R" "stat_slabinterval.R"
+        "stat_dist_slabinterval.R" "stat_sample_slabinterval.R"
+        "stat_dotsinterval.R" "stat_pointinterval.R" "stat_interval.R"
+        "stat_lineribbon.R" "student_t.R" "testthat.R" "theme_ggdist.R"
+        "tidy_format_translators.R"
+NeedsCompilation: no
+Packaged: 2021-11-30 04:49:53 UTC; matth
+Author: Matthew Kay [aut, cre],
+  Brenton M. Wiernik [ctb]
+Repository: CRAN
+Date/Publication: 2021-11-30 06:50:02 UTC

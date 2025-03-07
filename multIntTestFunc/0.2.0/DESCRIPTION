@@ -1,0 +1,35 @@
+Type: Package
+Package: multIntTestFunc
+Title: Provides Test Functions for Multivariate Integration
+Version: 0.2.0
+Author: Klaus Herrmann [aut, cre]
+Maintainer: Klaus Herrmann <klaus.herrmann@usherbrooke.ca>
+Description: Provides implementations of functions that can be used to
+    test multivariate integration routines. The package covers six
+    different integration domains (unit hypercube, unit ball, unit sphere,
+    standard simplex, non-negative real numbers and R^n). For each domain
+    several functions with different properties (smooth,
+    non-differentiable, ...) are available. The functions are available in
+    all dimensions n >= 1. For each function the exact value of the
+    integral is known and implemented to allow testing the accuracy of
+    multivariate integration routines. Details on the available test
+    functions can be found at on the development website.
+License: MIT + file LICENSE
+URL: https://github.com/KlausHerrmann/multIntTestFunc
+Imports: methods, mvtnorm, pracma, stats
+Suggests: knitr, rmarkdown, statmod, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Collate: 'AllGeneric.R' 'Pn_lognormalDensity.R' 'Pn_logtDensity.R'
+        'Rn_Gauss.R' 'Rn_floorNorm.R' 'Rn_normalDensity.R'
+        'Rn_tDensity.R' 'domainChecks.R' 'misc.R' 'multIntTestFunc.R'
+        'standardSimplex_Dirichlet.R' 'standardSimplex_exp_sum.R'
+        'unitBall_normGauss.R' 'unitBall_polynomial.R'
+        'unitCube_BFN4.R' 'unitCube_cos2.R' 'unitCube_floor.R'
+        'unitCube_max.R' 'unitSphere_innerProduct1.R'
+        'unitSphere_polynomial.R'
+NeedsCompilation: no
+Packaged: 2023-04-19 01:18:49 UTC; herk1401
+Repository: CRAN
+Date/Publication: 2023-04-19 10:00:02 UTC

@@ -1,0 +1,28 @@
+Package: GauPro
+Type: Package
+Title: Gaussian Process Fitting
+Version: 0.2.8
+Author: Collin Erickson
+Maintainer: Collin Erickson <collinberickson@gmail.com>
+Description: Fits a Gaussian process model to data. Gaussian processes
+ are commonly used in computer experiments to fit an interpolating model.
+ The model is stored as an 'R6' object and can be easily updated with new 
+ data. There are options to run in parallel, and 'Rcpp'
+ has been used to speed up calculations.
+ For more info about Gaussian process software, see Erickson et al. (2018)
+ <doi:10.1016/j.ejor.2017.10.002>.
+License: GPL-3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, R6, lbfgs
+RoxygenNote: 7.2.3
+Suggests: testthat, knitr, rmarkdown, microbenchmark, numDeriv,
+        ContourFunctions, dplyr, ggplot2, ggrepel, gridExtra, lhs,
+        mixopt (> 0.1.0), splitfngr, tidyr, MASS
+VignetteBuilder: knitr
+URL: https://github.com/CollinErickson/GauPro
+BugReports: https://github.com/CollinErickson/GauPro/issues
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2023-02-27 04:24:51 UTC; colli
+Repository: CRAN
+Date/Publication: 2023-02-27 09:42:36 UTC

@@ -1,0 +1,69 @@
+Package: predictNMB
+Type: Package
+Title: Evaluate Clinical Prediction Models by Net Monetary Benefit
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Rex", 
+           family = "Parsons", 
+           role = c("aut", "cre"),
+           email = "rex.parsons94@gmail.com",
+           comment = c(ORCID = "0000-0002-6053-8174")),
+    person(given = "Robin",
+           family = "Blythe",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-3643-4332")),
+    person(given = "Adrian",
+           family = "Barnett",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-6339-0374")),
+    person(given = "Emi",
+           family = "Tanaka",
+           role = "rev",
+           comment = "Emi Tanaka reviewed predictNMB for rOpenSci, see
+            <https://github.com/ropensci/software-review/issues/566>."),
+    person(given = "Tinula",
+           family = "Kariyawasam",
+           role = "rev",
+           comment = "Tinula Kariyawasam reviewed predictNMB for rOpenSci, see
+            <https://github.com/ropensci/software-review/issues/566>."),
+    person(given = "Susanna",
+           family = "Cramb",
+           role = "ctb",
+           comment = c(ORCID = "0000-0001-9041-9531")),
+    person(given = "Steven",
+           family = "McPhail",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-1463-662X"))
+  )
+Description: Estimates when and where a model-guided treatment strategy may 
+    outperform a treat-all or treat-none approach by Monte Carlo simulation and 
+    evaluation of the Net Monetary Benefit. Details can be viewed in 
+    Parsons et al. (2023) <doi:10.21105/joss.05328>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: assertthat, cutpointr, dplyr, ggplot2, magrittr, pmsampsize,
+        rlang, stats, tibble, tidyr
+Suggests: spelling, covr, flextable, knitr, parallel, pbapply,
+        rmarkdown, testthat (>= 3.0.0), vdiffr, withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://docs.ropensci.org/predictNMB/
+BugReports: https://github.com/ropensci/predictNMB/issues
+Depends: R (>= 3.5.0)
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-04-12 04:24:44 UTC; n10891277
+Author: Rex Parsons [aut, cre] (<https://orcid.org/0000-0002-6053-8174>),
+  Robin Blythe [aut] (<https://orcid.org/0000-0002-3643-4332>),
+  Adrian Barnett [aut] (<https://orcid.org/0000-0001-6339-0374>),
+  Emi Tanaka [rev] (Emi Tanaka reviewed predictNMB for rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/566>.),
+  Tinula Kariyawasam [rev] (Tinula Kariyawasam reviewed predictNMB for
+    rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/566>.),
+  Susanna Cramb [ctb] (<https://orcid.org/0000-0001-9041-9531>),
+  Steven McPhail [ctb] (<https://orcid.org/0000-0002-1463-662X>)
+Maintainer: Rex Parsons <rex.parsons94@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-12 19:00:02 UTC

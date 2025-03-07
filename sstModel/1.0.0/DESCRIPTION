@@ -1,0 +1,36 @@
+Package: sstModel
+Title: Swiss Solvency Test (SST) Standard Models
+Authors@R: c(
+    person("Loris", "Michel", role = "aut"),
+    person("Melvin", "Kianmanesh Rad", role = "aut"),
+    person("Adrien", "Lamit", role = "aut"),
+    person("Michael", "Schmutz", role = "cre", email = "michael.schmutz@finma.ch"),
+    person(family = "Swiss Financial Market Supervisory Authority FINMA", role = "cph")
+    )
+License: GPL-3 + file LICENSE
+Version: 1.0.0
+Description: Framework for the implementation of solvency related computations based on 
+             standard models for the Swiss Solvency Test (SST), a risk-based capital standard for Swiss 
+             insurance companies. Allows Monte Carlo simulation of market risk, some insurance risks and 
+             their aggregation. Additional toolbox for preprocessing computations. Convenient 'shiny' GUI 
+             combined with a parser for an input 'excel' (.xlsx) template to simplify model configuration, 
+             data fill-in and results visualization.
+Depends: R (>= 3.3.0)
+Imports: data.table (>= 1.10.4-3), stats, utils, tools, readxl (>=
+        1.0.0), openxlsx (>= 4.0.17), MASS, shiny (>= 1.0.5),
+        shinydashboard (>= 0.6.1)
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, knitr, covr
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-05-03 15:56:54 UTC; michello
+Author: Loris Michel [aut],
+  Melvin Kianmanesh Rad [aut],
+  Adrien Lamit [aut],
+  Michael Schmutz [cre],
+  Swiss Financial Market Supervisory Authority FINMA [cph]
+Maintainer: Michael Schmutz <michael.schmutz@finma.ch>
+Repository: CRAN
+Date/Publication: 2018-05-03 22:21:08 UTC

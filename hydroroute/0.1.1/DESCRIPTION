@@ -1,0 +1,29 @@
+Package: hydroroute
+Type: Package
+Title: Trace Longitudinal Hydropeaking Waves
+Version: 0.1.1
+Authors@R: c(person("Bettina", "Grün", role = c("cre", "ctb"),
+                     email = "Bettina.Gruen@R-project.org",
+                     comment = c(ORCID = "0000-0001-7265-4773")),
+             person("Julia", "Haider", role = "aut",
+                     email = "julia.haider@posteo.at"),
+             person("Franz", "Greimel", role = "ctb",
+                     email = "franz.greimel@boku.ac.at",
+                     comment = c(ORCID = "0000-0002-8000-1227")))
+Description: Implements an empirical approach referred to as PeakTrace which uses multiple hydrographs to detect and follow hydropower plant-specific hydropeaking waves at the sub-catchment scale and to describe how hydropeaking flow parameters change along the longitudinal flow path. The method is based on the identification of associated events and uses (linear) regression models to describe translation and retention processes between neighboring hydrographs. Several regression model results are combined to arrive at a power plant-specific model. The approach is proposed and validated in Greimel et al. (2022, accepted with minor revisions). The identification of associated events is based on the event detection implemented in 'hydropeak'. 
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggpmisc, ggplot2, gridExtra, hydropeak, lubridate,
+        parallel, reshape2, stats, utils, scales
+RoxygenNote: 7.1.2
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-04-04 05:53:06 UTC; gruen
+Author: Bettina Grün [cre, ctb] (<https://orcid.org/0000-0001-7265-4773>),
+  Julia Haider [aut],
+  Franz Greimel [ctb] (<https://orcid.org/0000-0002-8000-1227>)
+Maintainer: Bettina Grün <Bettina.Gruen@R-project.org>
+Repository: CRAN
+Date/Publication: 2022-04-04 06:40:02 UTC

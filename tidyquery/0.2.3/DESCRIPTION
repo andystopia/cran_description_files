@@ -1,0 +1,32 @@
+Type: Package
+Package: tidyquery
+Title: Query 'R' Data Frames with 'SQL'
+Version: 0.2.3
+Authors@R: 
+    c(person(given = "Ian",
+             family = "Cook",
+             role = c("aut", "cre"),
+             email = "ianmcook@gmail.com"),
+      person(family = "Cloudera",
+             role = "cph"))
+Maintainer: Ian Cook <ianmcook@gmail.com>
+Description: Use 'SQL' 'SELECT' statements to query 'R' data
+    frames.
+License: Apache License 2.0
+URL: https://github.com/ianmcook/tidyquery
+BugReports: https://github.com/ianmcook/tidyquery/issues
+Imports: dplyr (>= 0.7.4), lubridate (>= 1.6.0), queryparser (>=
+        0.3.1), rlang (>= 0.2.0), stringr (>= 1.0.0), utils
+Suggests: covr (>= 3.2.0), DBI (>= 0.7), dbplyr (>= 1.2.1), dtplyr (>=
+        1.0.0), nycflights13, RSQLite (>= 2.1.0), testthat (>= 3.0.0)
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.1.1.9001
+Collate: 'compat.R' 'query.R' 'join.R' 'quote.R' 'remove.R' 'replace.R'
+        'show_dplyr.R' 'unscope.R'
+Config/testthat/edition: 3
+Packaged: 2021-12-02 19:43:40 UTC; ian
+Author: Ian Cook [aut, cre],
+  Cloudera [cph]
+Repository: CRAN
+Date/Publication: 2021-12-02 20:10:02 UTC

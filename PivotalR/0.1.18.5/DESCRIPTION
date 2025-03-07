@@ -1,0 +1,27 @@
+Package: PivotalR
+Type: Package
+Title: A Fast, Easy-to-Use Tool for Manipulating Tables in Databases
+        and a Wrapper of MADlib
+Version: 0.1.18.5
+Date: 2021-03-11
+Maintainer: Orhan Kislal <okislal@vmware.com>
+Author: Predictive Analytics Team at VMware.
+    <user@madlb.apache.org>
+Depends: R (>= 3.5.0), methods, Matrix, semver
+Suggests: DBI, RPostgreSQL, shiny, testthat, tools, rpart,
+        randomForest, topicmodels
+Description: Provides an R interface for the 'VMware Data Stack' running on
+    'PostgreSQL' or 'Greenplum' databases with parallel and distributed
+    computation ability for big data processing. 'PivotalR' provides an R
+    interface to various database operations on tables or views. These
+    operations are almost the same as the corresponding native R operations.
+    Thus users of R do not need to learn 'SQL' when they operate on objects in
+    the database. It also provides a wrapper for 'Apache MADlib', which is an
+    open-source library for parallel and scalable in-database analytics.
+License: GPL (>= 2)
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: yes
+Packaged: 2021-03-11 17:45:53 UTC; okislal
+Repository: CRAN
+Date/Publication: 2021-03-12 23:00:06 UTC

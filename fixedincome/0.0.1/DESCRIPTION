@@ -1,0 +1,33 @@
+Package: fixedincome
+Title: Fixed Income Models, Calculations, Data Structures and
+        Instruments
+Version: 0.0.1
+Depends: R (>= 3.4.0)
+Authors@R: person("Wilson", "Freitas", email = "wilson.freitas@gmail.com",
+    role = c("aut", "cre"))
+License: MIT + file LICENSE
+Description: Fixed income mathematics made easy. A rich set of functions 
+    that helps with calculations of interest rates and fixed income.
+    It has objects that abstract interest rates, compounding factors, day count rules,
+    forward rates and term structure of interest rates.
+    Many interpolation methods and parametric curve models commonly used by practitioners
+    are implemented.
+URL: https://github.com/wilsonfreitas/R-fixedincome
+BugReports: https://github.com/wilsonfreitas/R-fixedincome/issues
+Imports: bizdays (>= 1.0.0), methods, graphics, stats, grDevices, utils
+Suggests: testthat (>= 3.0.0)
+Collate: "fixedincome-internal.R" "utils.R" "term-class.R"
+        "daycount-class.R" "compounding-class.R"
+        "interpolation-class.R" "spotrate-class.R"
+        "spotratecurve-class.R" "spotratecurve-interpolation.R"
+        "forwardrate-class.R" "compound-method.R" "hidden.R" "zzz.R"
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-03-17 09:01:09 UTC; wilso
+Author: Wilson Freitas [aut, cre]
+Maintainer: Wilson Freitas <wilson.freitas@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-17 20:20:02 UTC

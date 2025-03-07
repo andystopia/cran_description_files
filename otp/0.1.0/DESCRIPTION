@@ -1,0 +1,27 @@
+Package: otp
+Title: One Time Password Generation and Verification
+Version: 0.1.0
+Authors@R: 
+    person(given = "Randy",
+           family = "Lai",
+           role = c("aut", "cre", "cph"),
+           email = "randy.cs.lai@gmail.com")
+Description: Generating and validating One-time Password based on 
+    Hash-based Message Authentication Code (HOTP) 
+    and Time Based One-time Password (TOTP)
+    according to RFC 4226 <https://tools.ietf.org/html/rfc4226> and
+    RFC 6238 <https://tools.ietf.org/html/rfc6238>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/randy3k/otp
+BugReports: https://github.com/randy3k/otp/issues
+Imports: R6, base64url, openssl
+RoxygenNote: 7.1.0.9000
+Suggests: testthat (>= 2.1.0), covr
+NeedsCompilation: no
+Packaged: 2020-05-01 05:02:21 UTC; Randy
+Author: Randy Lai [aut, cre, cph]
+Maintainer: Randy Lai <randy.cs.lai@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-05 15:30:09 UTC

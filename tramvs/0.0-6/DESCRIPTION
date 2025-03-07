@@ -1,0 +1,30 @@
+Package: tramvs
+Type: Package
+Title: Optimal Subset Selection for Transformation Models
+Version: 0.0-6
+Authors@R: c(person("Lucas", "Kook", email = "lucasheinrich.kook@gmail.com", 
+    role = c("aut", "cre")), person("Sandra", "Siegfried", role = "ctb"),
+    person("Torsten", "Hothorn", role = "ctb"))
+Description: Greedy optimal subset selection for transformation models 
+    (Hothorn et al., 2018, <doi:10.1111/sjos.12291> ) based on the abess
+    algorithm (Zhu et al., 2020, <doi:10.1073/pnas.2014241117> ). Applicable to
+    models from packages 'tram' and 'cotram'.
+Depends: R (>= 4.0), tram (>= 0.6-1)
+Imports: stats, variables, methods, cotram, future, future.apply,
+        mvtnorm
+Suggests: abess, tramnet, colorspace, knitr, mlt, TH.data, survival,
+        ordinal, testthat (>= 3.0.0)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: http://ctm.R-forge.R-project.org
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-04 09:19:07 UTC; lkook
+Author: Lucas Kook [aut, cre],
+  Sandra Siegfried [ctb],
+  Torsten Hothorn [ctb]
+Maintainer: Lucas Kook <lucasheinrich.kook@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-04 13:50:02 UTC

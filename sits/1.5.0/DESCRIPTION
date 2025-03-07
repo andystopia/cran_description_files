@@ -1,0 +1,120 @@
+Package: sits
+Type: Package
+Version: 1.5.0
+Title: Satellite Image Time Series Analysis for Earth Observation Data
+        Cubes
+Authors@R: c(person('Rolf', 'Simoes', role = c('aut'), email = 'rolf.simoes@inpe.br'),
+             person('Gilberto', 'Camara', role = c('aut', 'cre'), email = 'gilberto.camara.inpe@gmail.com'),
+             person('Felipe', 'Souza', role = c('aut'), email = 'felipe.carvalho@inpe.br'),
+             person('Lorena', 'Santos', role = c('aut'), email = 'lorena.santos@inpe.br'),
+             person('Pedro', 'Andrade', role = c('aut'), email = 'pedro.andrade@inpe.br'),
+             person('Karine', 'Ferreira', role = c('aut'), email = 'karine.ferreira@inpe.br'),
+             person('Alber', 'Sanchez', role = c('aut'), email = 'alber.ipia@inpe.br'),
+             person('Gilberto', 'Queiroz', role = c('aut'), email = 'gilberto.queiroz@inpe.br')
+             )
+Maintainer: Gilberto Camara <gilberto.camara.inpe@gmail.com>
+Description: An end-to-end toolkit for land use and land cover classification
+    using big Earth observation data, based on machine learning methods 
+    applied to satellite image data cubes, as described in Simoes et al (2021) <doi:10.3390/rs13132428>.
+    Builds regular data cubes from collections in AWS, Microsoft Planetary Computer, 
+    Brazil Data Cube, and Digital Earth Africa using the Spatio-temporal Asset Catalog (STAC) 
+    protocol (<https://stacspec.org/> and the 'gdalcubes' R package 
+    developed by Appel and Pebesma (2019) <doi:10.3390/data4030092>.
+    Supports visualization methods for images and time series and 
+    smoothing filters for dealing with noisy time series.
+    Includes functions for quality assessment of training samples using self-organized maps 
+    as presented by Santos et al (2021) <doi:10.1016/j.isprsjprs.2021.04.014>. 
+    Provides machine learning methods including support vector machines, 
+    random forests, extreme gradient boosting, multi-layer perceptrons,
+    temporal convolutional neural networks proposed by Pelletier et al (2019) <doi:10.3390/rs11050523>, 
+    residual networks by Fawaz et al (2019) <doi:10.1007/s10618-019-00619-1>, and temporal attention encoders
+    by Garnot and Landrieu (2020) <doi:10.48550/arXiv.2007.00586>.
+    Performs efficient classification of big Earth observation data cubes and includes 
+    functions for post-classification smoothing based on Bayesian inference, and 
+    methods for uncertainty assessment. Enables best
+    practices for estimating area and assessing accuracy of land change as 
+    recommended by Olofsson et al (2014) <doi:10.1016/j.rse.2014.02.015>.
+    Minimum recommended requirements: 16 GB RAM and 4 CPU dual-core.
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.0.0)
+URL: https://github.com/e-sensing/sits/,
+        https://e-sensing.github.io/sitsbook/
+BugReports: https://github.com/e-sensing/sits/issues
+License: GPL-2
+ByteCompile: true
+LazyData: true
+Imports: yaml, dplyr (>= 1.0.0), gdalUtilities, grDevices, graphics,
+        lubridate, parallel (>= 4.0.5), purrr (>= 1.0.2), Rcpp, rstac
+        (>= 1.0.0), sf (>= 1.0-12), showtext, sysfonts, slider (>=
+        0.2.0), stats, terra (>= 1.7-71), tibble (>= 3.1), tidyr (>=
+        1.2.0), torch (>= 0.11.0), utils
+Suggests: aws.s3, caret, cli, covr, dendextend, dtwclust, DiagrammeR,
+        digest, e1071, exactextractr, FNN, future, gdalcubes (>=
+        0.6.0), geojsonsf, ggplot2, httr, jsonlite, kohonen (>=
+        3.0.11), leafem (>= 0.2.0), leaflet (>= 2.2.0), luz (>= 0.4.0),
+        methods, mgcv, nnet, openxlsx, randomForest,
+        randomForestExplainer, RColorBrewer, RcppArmadillo (>= 0.12),
+        scales, spdep, stars (>= 0.6), stringr, supercells (>= 1.0.0),
+        testthat (>= 3.1.3), tmap (>= 3.3), torchopt (>= 0.1.2), tools,
+        xgboost
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Config/testthat/start-first: cube, raster, regularize, data, ml
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.1
+Collate: 'api_accessors.R' 'api_accuracy.R' 'api_apply.R' 'api_band.R'
+        'api_bbox.R' 'api_block.R' 'api_check.R' 'api_chunks.R'
+        'api_classify.R' 'api_clean.R' 'api_cluster.R' 'api_colors.R'
+        'api_combine_predictions.R' 'api_comp.R' 'api_conf.R'
+        'api_csv.R' 'api_cube.R' 'api_data.R' 'api_debug.R'
+        'api_download.R' 'api_environment.R' 'api_factory.R'
+        'api_file_info.R' 'api_file.R' 'api_gdal.R' 'api_gdalcubes.R'
+        'api_jobs.R' 'api_kohonen.R' 'api_label_class.R' 'api_merge.R'
+        'api_mixture_model.R' 'api_ml_model.R' 'api_mosaic.R'
+        'api_opensearch.R' 'api_parallel.R' 'api_period.R'
+        'api_plot_time_series.R' 'api_plot_raster.R'
+        'api_plot_vector.R' 'api_point.R' 'api_predictors.R'
+        'api_raster.R' 'api_raster_sub_image.R' 'api_raster_terra.R'
+        'api_reclassify.R' 'api_reduce.R' 'api_regularize.R'
+        'api_roi.R' 'api_s2tile.R' 'api_samples.R' 'api_segments.R'
+        'api_select.R' 'api_sf.R' 'api_shp.R' 'api_signal.R'
+        'api_smooth.R' 'api_smote.R' 'api_som.R' 'api_source.R'
+        'api_source_aws.R' 'api_source_bdc.R' 'api_source_cdse.R'
+        'api_source_deafrica.R' 'api_source_hls.R' 'api_source_local.R'
+        'api_source_mpc.R' 'api_source_sdc.R' 'api_source_stac.R'
+        'api_source_usgs.R' 'api_space_time_operations.R' 'api_stac.R'
+        'api_stats.R' 'api_summary.R' 'api_tibble.R' 'api_tile.R'
+        'api_timeline.R' 'api_torch.R' 'api_torch_psetae.R' 'api_ts.R'
+        'api_tuning.R' 'api_uncertainty.R' 'api_utils.R' 'api_values.R'
+        'api_variance.R' 'api_vector.R' 'api_vector_info.R'
+        'api_view.R' 'RcppExports.R' 'data.R' 'sits-package.R'
+        'sits_apply.R' 'sits_accuracy.R' 'sits_active_learning.R'
+        'sits_bands.R' 'sits_bbox.R' 'sits_classify.R' 'sits_colors.R'
+        'sits_combine_predictions.R' 'sits_config.R' 'sits_csv.R'
+        'sits_cube.R' 'sits_cube_copy.R' 'sits_clean.R'
+        'sits_cluster.R' 'sits_factory.R' 'sits_filters.R'
+        'sits_geo_dist.R' 'sits_get_data.R' 'sits_imputation.R'
+        'sits_labels.R' 'sits_label_classification.R' 'sits_lighttae.R'
+        'sits_machine_learning.R' 'sits_merge.R' 'sits_mixture_model.R'
+        'sits_mlp.R' 'sits_mosaic.R' 'sits_model_export.R'
+        'sits_patterns.R' 'sits_plot.R' 'sits_predictors.R'
+        'sits_reclassify.R' 'sits_reduce.R' 'sits_regularize.R'
+        'sits_resnet.R' 'sits_sample_functions.R' 'sits_segmentation.R'
+        'sits_select.R' 'sits_sf.R' 'sits_smooth.R' 'sits_som.R'
+        'sits_summary.R' 'sits_tae.R' 'sits_tempcnn.R'
+        'sits_timeline.R' 'sits_train.R' 'sits_tuning.R' 'sits_utils.R'
+        'sits_uncertainty.R' 'sits_validate.R' 'sits_view.R'
+        'sits_variance.R' 'sits_xlsx.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2024-05-09 18:40:05 UTC; gilberto
+Author: Rolf Simoes [aut],
+  Gilberto Camara [aut, cre],
+  Felipe Souza [aut],
+  Lorena Santos [aut],
+  Pedro Andrade [aut],
+  Karine Ferreira [aut],
+  Alber Sanchez [aut],
+  Gilberto Queiroz [aut]
+Repository: CRAN
+Date/Publication: 2024-05-09 19:00:03 UTC

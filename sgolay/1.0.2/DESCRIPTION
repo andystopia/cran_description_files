@@ -1,0 +1,76 @@
+Package: sgolay
+Type: Package
+Title: Efficient Savitzky-Golay Filtering
+Version: 1.0.2
+Date: 2022-09-29
+URL: https://github.com/zeehio/sgolay
+BugReports: https://github.com/zeehio/sgolay/issues
+Authors@R: c(
+  person(
+    given = "Sergio", family = "Oller Moreno",
+    email = "sergioller@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-8994-1549")
+  ),
+  person(
+    given = "Robert", family = "Gentleman",
+    role = c("ctb", "cph"),
+    comment = "Contributor to src/stats_filter.c and src/fft.c (derived from the stats R package)"
+  ),
+  person(
+    given = "Ross", family = "Ihaka",
+    role = c("ctb", "cph"),
+    comment = "Contributor to src/stats_filter.c and src/fft.c (derived from the stats R package)"
+  ),
+  person(
+    given = "Brian", family = "Ripley",
+    role = c("ctb", "cph"),
+    comment = "Contributor to src/stats_filter.c and src/fft.c (derived from the stats R package)"
+  ),
+  person(
+    given = "Martin", family = "Maechler",
+    role = c("ctb", "cph"),
+    comment = "Contributor to src/stats_filter.c and src/fft.c (derived from the stats R package)"
+  ),
+  person(
+    given = "Duncan", family = "Murdoch",
+    role = c("ctb", "cph"),
+    comment = "Contributor to src/stats_filter.c and src/fft.c (derived from the stats R package)"
+  ),
+  person(
+    given = "Institute for Bioengineering of Catalonia",
+    role = "cph"
+  )
+ )
+Description: Smoothing signals and computing their derivatives is a common
+ requirement in signal processing workflows. Savitzky-Golay filters are a
+ established method able to do both (Savitzky and Golay, 1964 <doi:10.1021/ac60214a047>).
+ This package implements one dimensional Savitzky-Golay filters that can be applied to
+ vectors and matrices (either row-wise or column-wise).
+ Vectorization and memory allocations have been profiled to reduce computational
+ fingerprint. Short filter lengths are implemented in the direct space, while
+ longer filters are implemented in frequency space, using a Fast Fourier
+ Transform (FFT).
+Imports: signal
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: RUnit
+NeedsCompilation: yes
+Packaged: 2022-09-29 13:33:46 UTC; sergio
+Author: Sergio Oller Moreno [aut, cre]
+    (<https://orcid.org/0000-0002-8994-1549>),
+  Robert Gentleman [ctb, cph] (Contributor to src/stats_filter.c and
+    src/fft.c (derived from the stats R package)),
+  Ross Ihaka [ctb, cph] (Contributor to src/stats_filter.c and src/fft.c
+    (derived from the stats R package)),
+  Brian Ripley [ctb, cph] (Contributor to src/stats_filter.c and
+    src/fft.c (derived from the stats R package)),
+  Martin Maechler [ctb, cph] (Contributor to src/stats_filter.c and
+    src/fft.c (derived from the stats R package)),
+  Duncan Murdoch [ctb, cph] (Contributor to src/stats_filter.c and
+    src/fft.c (derived from the stats R package)),
+  Institute for Bioengineering of Catalonia [cph]
+Maintainer: Sergio Oller Moreno <sergioller@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-29 16:40:02 UTC

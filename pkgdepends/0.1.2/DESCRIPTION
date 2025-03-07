@@ -1,0 +1,34 @@
+Package: pkgdepends
+Title: Package Dependency Resolution and Downloads
+Version: 0.1.2
+Author: Gábor Csárdi
+Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
+Description: Find recursive dependencies of 'R' packages from various
+    sources. Solve the dependencies to obtain a consistent set of
+    packages to install. Download packages, and install them. It
+    supports packages on 'CRAN', 'Bioconductor' and other 'CRAN-like'
+    repositories, 'GitHub', package 'URLs', and local package trees
+    and files. It caches metadata and package files via the 'pkgcache'
+    package, and performs all 'HTTP' requests, downloads, builds and
+    installations in parallel. 'pkgdepends' is the workhorse of the
+    'pak' package.
+License: MIT + file LICENSE
+URL: https://github.com/r-lib/pkgdepends#readme
+BugReports: https://github.com/r-lib/pkgdepends/issues
+RoxygenNote: 7.1.1.9001
+Imports: callr (>= 3.3.1), cli (>= 2.1.0), crayon, curl, desc (>=
+        1.2.0), filelock (>= 1.0.2), glue, jsonlite, lpSolve, pkgbuild
+        (>= 1.0.2), pkgcache (>= 1.2.0), prettyunits (>= 1.1.1),
+        processx (>= 3.4.2), ps, rematch2, rprojroot, R6, stats,
+        tibble, utils, withr (>= 2.1.1), zip (>= 2.1.0)
+Suggests: asciicast, debugme, digest, fansi, fs, htmlwidgets, mockery,
+        pingr (>= 2.0.0), rlang, rstudioapi, spelling, testthat,
+        webfakes
+Config/testthat/edition: 3
+Config/Needs/website: pkgdown
+Config/Needs/coverage: covr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2021-06-30 11:15:12 UTC; gaborcsardi
+Repository: CRAN
+Date/Publication: 2021-06-30 11:50:02 UTC

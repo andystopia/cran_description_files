@@ -1,0 +1,51 @@
+Package: moocore
+Type: Package
+Title: Core Mathematical Functions for Multi-Objective Optimization
+Version: 0.1.0
+Authors@R: c(person("Manuel", "López-Ibáñez", role = c("aut", "cre"),
+                    email = "manuel.lopez-ibanez@manchester.ac.uk",
+                    comment = c(ORCID = "0000-0001-9974-1295")),
+             person("Carlos", "Fonseca", role = "ctb"),
+             person("Luís", "Paquete", role = "ctb"),
+             person(c("Andreia", "P."), "Guerreiro", role = "ctb"),
+             person("Mickaël", "Binois", role = "ctb"),
+             person(c("Michael", "H."), "Buselli", role = "cph", comment = "AVL-tree library"),
+             person("Wessel", "Dankers", role = "cph", comment = "AVL-tree library"),
+             person("NumPy Developers", role = "cph", comment = "RNG and ziggurat constants"),
+             person("Jean-Sebastien", "Roy", role = "cph", comment = "mt19937 library"),
+             person("Makoto", "Matsumoto", role = "cph", comment = "mt19937 library"),
+             person("Takuji", "Nishimura", role = "cph", comment = "mt19937 library"))
+Description: Fast implementation of mathematical operations and performance metrics for multi-objective optimization, including filtering and ranking of dominated vectors according to Pareto optimality, computation of the empirical attainment function, V.G. da Fonseca, C.M. Fonseca, A.O. Hall (2001) <doi:10.1007/3-540-44719-9_15>, hypervolume metric, C.M. Fonseca, L. Paquete, M. López-Ibáñez (2006) <doi:10.1109/CEC.2006.1688440>), epsilon indicator, inverted generational distance, and  Vorob\'ev threshold, expectation and deviation, M. Binois, D. Ginsbourger, O. Roustant (2015) <doi:10.1016/j.ejor.2014.07.032>, among others.
+Depends: R (>= 4.0)
+Imports: matrixStats, Rdpack
+Suggests: spelling, testthat (>= 3.0.0), withr, doctest
+License: LGPL (>= 2)
+Copyright: file COPYRIGHTS
+BugReports: https://github.com/multi-objective/moocore/issues
+URL: https://multi-objective.github.io/moocore/r/,
+        https://github.com/multi-objective/moocore/tree/main/r
+LazyLoad: true
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+SystemRequirements: GNU make
+RdMacros: Rdpack
+Config/testthat/edition: 3
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2024-07-24 17:43:37 UTC; manu
+Author: Manuel López-Ibáñez [aut, cre]
+    (<https://orcid.org/0000-0001-9974-1295>),
+  Carlos Fonseca [ctb],
+  Luís Paquete [ctb],
+  Andreia P. Guerreiro [ctb],
+  Mickaël Binois [ctb],
+  Michael H. Buselli [cph] (AVL-tree library),
+  Wessel Dankers [cph] (AVL-tree library),
+  NumPy Developers [cph] (RNG and ziggurat constants),
+  Jean-Sebastien Roy [cph] (mt19937 library),
+  Makoto Matsumoto [cph] (mt19937 library),
+  Takuji Nishimura [cph] (mt19937 library)
+Maintainer: Manuel López-Ibáñez <manuel.lopez-ibanez@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-07-28 20:50:02 UTC

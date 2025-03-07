@@ -1,0 +1,37 @@
+Package: TrafficBDE
+Type: Package
+Title: Traffic Predictions Using Neural Networks
+Version: 0.1.1
+Date: 2022-07-12
+Description: Estimate and return either the traffic speed or the car entries in the city of Thessaloniki using historical traffic data. It's used in transport pilot of the 'BigDataEurope' project. There are functions for processing these data, training a neural network, select the most appropriate model and predict the traffic speed or the car entries for a selected time date.
+Authors@R: c(person("Kleanthis", "Koupidis", role = c("aut", "cre"),
+                     email ="koupidis.okfgr@gmail.com"),
+              person("Aikaterini", "Chatzopoulou", role = "aut",
+                     email = "kchatzopoul@okfn.gr"),
+              person("Charalampos","Bratsas", role = "aut",
+                      email = "charalampos.bratsas@okfn.org"),
+              person("Panagiotis", "Tzenos", role = "dtc",
+                     email = "ptzenos@certh.gr"),
+              person("Josep Maria", "Salanova", role = "dtc",
+                     email = "jose@certh.gr"))
+Author: Kleanthis Koupidis [aut, cre],
+  Aikaterini Chatzopoulou [aut],
+  Charalampos Bratsas [aut],
+  Panagiotis Tzenos [dtc],
+  Josep Maria Salanova [dtc]
+Maintainer: Kleanthis Koupidis <koupidis.okfgr@gmail.com>
+URL: https://github.com/okgreece/TrafficBDE
+BugReports: https://github.com/okgreece/TrafficBDE/issues
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: caret, data.table, DescriptiveStats.OBeu, dplyr, lubridate,
+        RCurl, stats, zoo
+Suggests: devtools, knitr, neuralnet, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-07-12 14:50:13 UTC; akis_
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2022-07-14 11:00:09 UTC

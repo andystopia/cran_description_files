@@ -1,0 +1,32 @@
+Package: repana
+Type: Package
+Title: Repeatable Analysis in R
+Version: 2.2.0
+Authors@R: person(
+            given = "John J.",
+            family = "Aponte",
+            role = c("aut", "cre"),
+            email = "john.j.aponte@gmail.com",
+            comment = c(ORCID = "0000-0002-3014-3673"))
+URL: https://github.com/johnaponte/repana,
+        https://johnaponte.github.io/repana/
+Description: Set of utilities to facilitate the reproduction of analysis in R.
+ It allow to make_structure(), clean_structure(), and run and log programs in a
+ predefined order to allow secondary files, analysis and reports be constructed in
+ an ordered and reproducible form.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: DBI (>= 1.0)
+Suggests: spelling, testthat, knitr, RSQLite, RPostgres, duckdb,
+        pacman, targets
+Imports: config, dplyr, magrittr, lubridate, rmarkdown, processx,
+        readr, rstudioapi, pool, openxlsx, tools, yaml, digest
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-05-03 15:53:20 UTC; master
+Author: John J. Aponte [aut, cre] (<https://orcid.org/0000-0002-3014-3673>)
+Maintainer: John J. Aponte <john.j.aponte@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-03 16:10:02 UTC

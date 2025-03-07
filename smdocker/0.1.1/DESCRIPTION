@@ -1,0 +1,24 @@
+Package: smdocker
+Title: Build 'Docker Images' in 'Amazon SageMaker Studio' using 'Amazon
+        Web Service CodeBuild'
+Version: 0.1.1
+Authors@R: c(person("Dyfan", "Jones", email="dyfan.r.jones@gmail.com", role= c("aut", "cre")))
+Description: Allows users to easily build custom 'docker images' <https://docs.docker.com/> from
+    'Amazon Web Service Sagemaker' <https://aws.amazon.com/sagemaker/> using
+    'Amazon Web Service CodeBuild' <https://aws.amazon.com/codebuild/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: jsonlite, paws.compute, paws.developer.tools,
+        paws.machine.learning, paws.management, paws.storage,
+        paws.security.identity, zip, stats, utils
+Suggests: covr, crayon, mockery, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+Collate: 'utils.R' 'logs.R' 'code_build.R' 'builder.R' 'config.R'
+        'logging.R' 'sm_role.R' 'main.R' 'zzz.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-03-01 09:28:56 UTC; dyfanjones
+Author: Dyfan Jones [aut, cre]
+Maintainer: Dyfan Jones <dyfan.r.jones@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-01 10:50:05 UTC

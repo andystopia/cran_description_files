@@ -1,0 +1,34 @@
+Package: filteRjsats
+Title: Filter Raw JSATS Acoustic Telemetry Files from Lotek, ATS,
+        Teknologic
+Version: 1.0
+Authors@R: c(
+    person("Taylor", "Spaulding", , "tspaulding@esassoc.com", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4381-5296")),
+    person("Arnold", "Ammann", , "arnold.ammann@noaa.gov", role = c("aut")),
+    person("Travis", "Hinkelman", , "thinkelman@esassoc.com", role = c("ctb")))
+Description: Filtering of raw acoustic telemetry transmissions
+    from three acoustic telemetry companies (ATS, Lotek, Teknologic). The 
+    filtering steps check for false positives caused by reflected transmissions 
+    from surfaces and false pings from other noise generating equipment. The 
+    filter is unique for each technology type. The package was written in 
+    concert with the Interagency Telemetry Advisory Group (iTAG) and makes use 
+    of the JSATS California Fish Tracking Database:
+    <https://oceanview.pfeg.noaa.gov/CalFishTrack/>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: broman, dplyr, lubridate, stringr, tidyr, rerddap
+Suggests: knitr, rmarkdown
+Depends: R (>= 4.1)
+LazyData: true
+LazyDataCompression: xz
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-04-07 17:52:33 UTC; TSpaulding
+Author: Taylor Spaulding [aut, cre] (<https://orcid.org/0000-0003-4381-5296>),
+  Arnold Ammann [aut],
+  Travis Hinkelman [ctb]
+Maintainer: Taylor Spaulding <tspaulding@esassoc.com>
+Repository: CRAN
+Date/Publication: 2023-04-10 14:30:02 UTC

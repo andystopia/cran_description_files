@@ -1,0 +1,68 @@
+Package: PowerSDI
+Type: Package
+Title: Calculate Standardised Drought Indices Using NASA POWER Data
+Version: 0.1.3
+Authors@R: c(
+  person(
+    given = "Gabriel Constantino",
+    family = "Blain",
+    role = c("aut", "cre"),
+    email = "gabriel.blain@sp.gov.br",
+    comment = c(ORCID = "0000-0001-8832-7734")
+  ),
+  person(
+    given = "Graciela R.",
+    family = "Sobierajski",
+    role = "aut",
+    comment = c(ORCID = "0000-0002-7211-9268")
+  ),
+  person(
+    given = "Leticia L.",
+    family = "Martins",
+    role = "aut",
+    comment = c(ORCID = "0000-0002-0299-3005")
+  ),
+  person(
+    given = "Adam H.",
+    family = "Sparks",
+    email = "adamhsparks@gmail.com",
+    role = "aut",
+    comment = c(ORCID = "0000-0002-0061-8359")))
+Description: A set of functions designed to calculate the standardised
+    precipitation and standardised precipitation evapotranspiration indices
+    using NASA POWER data as described in Blain et al. (2023)
+    <doi:10.2139/ssrn.4442843>.  These indices are calculated using a reference
+    data source.  The functions verify if the indices' estimates meet the
+    assumption of normality and how well NASA POWER estimates represent
+    real-world data.  Indices are calculated in a routine mode.  Potential
+    evapotranspiration amounts and the difference between rainfall and potential
+    evapotranspiration are also calculated.  The functions adopt a basic time
+    scale that splits each month into four periods.  Days 1 to 7, days 8 to 14,
+    days 15 to 21, and days 22 to 28, 29, 30, or 31, where 'TS=4' corresponds to
+    a 1-month length moving window (calculated 4 times per month) and 'TS=48'
+    corresponds to a 12-month length moving window (calculated 4 times per
+    month).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.1.0)
+Imports: graphics, lmom, lubridate, nasapower, stats
+URL: https://github.com/gabrielblain/PowerSDI
+BugReports: https://github.com/gabrielblain/PowerSDI/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), vcr (>= 0.6.0), vdiffr
+        (>= 1.0.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2023-11-18 12:58:52 UTC; Gabriel
+Author: Gabriel Constantino Blain [aut, cre]
+    (<https://orcid.org/0000-0001-8832-7734>),
+  Graciela R. Sobierajski [aut] (<https://orcid.org/0000-0002-7211-9268>),
+  Leticia L. Martins [aut] (<https://orcid.org/0000-0002-0299-3005>),
+  Adam H. Sparks [aut] (<https://orcid.org/0000-0002-0061-8359>)
+Maintainer: Gabriel Constantino Blain <gabriel.blain@sp.gov.br>
+Repository: CRAN
+Date/Publication: 2023-11-19 15:30:02 UTC

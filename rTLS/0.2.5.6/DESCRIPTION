@@ -1,0 +1,57 @@
+Type: Package
+Package: rTLS
+Title: Processing of Point Clouds Derived from Terrestrial Laser
+        Scanning
+Version: 0.2.5.6
+Authors@R: 
+    c(person(given = "J. Antonio",
+             family = "Guzmán Q.",
+             role = c("cre", "aut", "ths", "cph"),
+             email = "antguz06@gmail.com",
+             comment = c(ORCID = "0000-0002-0721-148X")),
+      person(given = "Ronny",
+             family = "Hernandez",
+             role = "aut",
+             email = "ronny.hernandezm@gmail.com",
+             comment = c(ORCID = "0000-0001-6225-7096")),
+      person(given = "Arturo",
+             family = "Sanchez-Azofeifa",
+             role = c("dgs", "sad"),
+             email = "arturo.sanchez@ualberta.ca",
+             comment = c(ORCID = "0000-0001-7768-6600")))
+Maintainer: J. Antonio Guzmán Q. <antguz06@gmail.com>
+Description: A set of tools to process and calculate 
+             metrics on point clouds derived from terrestrial laser scanning (TLS)
+             also know as terrestrial LiDAR (Light Detection and Ranging). Its 
+             creation is based on key aspects of the TLS application in forestry 
+             and ecology. Currently, the main routines are based on filtering, 
+             neighboring features of points, voxelization, canopy structure, 
+             and the creation of artificial stands. It is written using 
+             data.table and 'C++' language and in most of the functions it is 
+             possible to use parallel processing to speed-up the routines.
+License: GPL (>= 3)
+URL: https://github.com/Antguz/rTLS
+BugReports: https://github.com/Antguz/rTLS/issues
+Depends: data.table (>= 1.0), R (>= 4.0.0)
+Imports: alphashape3d, boot, doSNOW (>= 1.0.16), foreach (>= 1.4.4),
+        parallel (>= 3.6.0), Rcpp (>= 1.0.3), RcppProgress (>= 0.4.2),
+        RcppHNSW (>= 0.3.0), rgeos, rgl, sp
+Suggests: knitr, rmarkdown, covr, testthat (>= 3.0.1)
+LinkingTo: Rcpp, RcppArmadillo (>= 0.9.870), RcppProgress (>= 0.4.2)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: bzip2
+RoxygenNote: 7.1.2
+SystemRequirements: GNU make
+ByteCompile: true
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-12-20 15:34:37 UTC; antonio
+Author: J. Antonio Guzmán Q. [cre, aut, ths, cph]
+    (<https://orcid.org/0000-0002-0721-148X>),
+  Ronny Hernandez [aut] (<https://orcid.org/0000-0001-6225-7096>),
+  Arturo Sanchez-Azofeifa [dgs, sad]
+    (<https://orcid.org/0000-0001-7768-6600>)
+Repository: CRAN
+Date/Publication: 2022-12-20 18:30:09 UTC

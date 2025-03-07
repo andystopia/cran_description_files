@@ -1,0 +1,39 @@
+Package: ag5Tools
+Title: Toolbox for Downloading and Extracting Copernicus AgERA5 Data
+Version: 0.0.1
+Authors@R: 
+          c(person(given = "David",
+          family = "Brown",
+          role = c("aut", "cre"),
+          email = "d.brown@cgiar.org",
+          comment = c(ORCID = "0000-0003-2859-1618")),
+          person("Kaue", "de Sousa", 
+          email = "kaue.desousa@inn.no", role = c("aut"),
+          comment = c(ORCID = "0000-0002-7571-7845")),
+          person("Jacob", "van Etten", role = c("ths"),
+          comment = c(ORCID = "0000-0001-7554-2558")),
+          person("Sytze", "de Bruin", role = c("ths"),
+          comment = c(ORCID = "0000-0002-6884-2832")))
+Description: Tools for downloading and extracting data from the Copernicus "Agrometeorological indicators 
+  from 1979 to present derived from reanalysis"
+  <https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-agrometeorological-indicators?tab=overview> (AgERA5).
+Config/reticulate: list( packages = list( list(package = "cdsapi", pip
+        = TRUE) ) )
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: terra, reticulate, fs
+RoxygenNote: 7.1.2
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+URL: https://agrdatasci.github.io/ag5Tools/
+NeedsCompilation: no
+Packaged: 2022-03-24 14:12:50 UTC; David
+Author: David Brown [aut, cre] (<https://orcid.org/0000-0003-2859-1618>),
+  Kaue de Sousa [aut] (<https://orcid.org/0000-0002-7571-7845>),
+  Jacob van Etten [ths] (<https://orcid.org/0000-0001-7554-2558>),
+  Sytze de Bruin [ths] (<https://orcid.org/0000-0002-6884-2832>)
+Maintainer: David Brown <d.brown@cgiar.org>
+Repository: CRAN
+Date/Publication: 2022-03-24 18:20:02 UTC

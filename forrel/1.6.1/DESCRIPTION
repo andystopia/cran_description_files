@@ -1,0 +1,38 @@
+Type: Package
+Package: forrel
+Title: Forensic Pedigree Analysis and Relatedness Inference
+Version: 1.6.1
+Authors@R: c(
+    person("Magnus Dehli", "Vigeland", , "m.d.vigeland@medisin.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9134-4962")),
+    person("Thore", "Egeland", , "thore.egeland@nmbu.no", role = "ctb")
+  )
+Description: Forensic applications of pedigree analysis, including
+    likelihood ratios for relationship testing, general relatedness
+    inference, marker simulation, and power analysis. 'forrel' is part of
+    the 'pedsuite', a collection of packages for pedigree analysis,
+    further described in the book 'Pedigree Analysis in R' (Vigeland,
+    2021, ISBN:9780128244302). Several functions deal specifically with
+    power analysis in missing person cases, implementing methods described
+    in Vigeland et al. (2020) <doi:10.1016/j.fsigen.2020.102376>. Data
+    import from the 'Familias' software (Egeland et al. (2000)
+    <doi:10.1016/S0379-0738(00)00147-X>) is supported through the
+    'pedFamilias' package.
+License: GPL (>= 2)
+URL: https://github.com/magnusdv/forrel
+BugReports: https://github.com/magnusdv/forrel/issues
+Depends: pedtools (>= 2.2.0), R (>= 4.1.0)
+Imports: glue, pedFamilias, pedprobr (>= 0.8), ribd (>= 1.5.0)
+Suggests: ggplot2, ibdsim2, poibin, scales, testthat
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-11-18 19:51:58 UTC; magnu
+Author: Magnus Dehli Vigeland [aut, cre]
+    (<https://orcid.org/0000-0002-9134-4962>),
+  Thore Egeland [ctb]
+Maintainer: Magnus Dehli Vigeland <m.d.vigeland@medisin.uio.no>
+Repository: CRAN
+Date/Publication: 2023-11-19 14:10:02 UTC

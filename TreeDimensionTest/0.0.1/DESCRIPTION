@@ -1,0 +1,37 @@
+Package: TreeDimensionTest
+Type: Package
+Title: Trajectory Presence and Heterogeneity in Multivariate Data
+Version: 0.0.1
+Date: 2022-01-18
+Authors@R: c(person("Lovemore", "Tenha", role = "aut", 
+                    comment = c(ORCID = "0000-0001-9705-2023"),
+	                  email = "ltenha@nmsu.edu"),
+             person("Joe", "Song", role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-6883-6547"),
+		                email = "joemsong@cs.nmsu.edu"))
+Author: Lovemore Tenha [aut] (<https://orcid.org/0000-0001-9705-2023>),
+  Joe Song [aut, cre] (<https://orcid.org/0000-0002-6883-6547>)
+Maintainer: Joe Song <joemsong@cs.nmsu.edu>
+Description: Testing on multivariate data for trajectory presence
+ and heterogeneity. Two statistical methods (Tenha & Song,
+ provisionally accepted) are implemented. The tree dimension test
+ quantifies the statistical evidence for trajectory presence. The
+ subset specificity measure summarizes pattern heterogeneity using the
+ minimum subtree cover. There is no user tunable parameters for either
+ method. Examples are included to illustrate how to use the methods on 
+ single-cell data for studying gene and pathway expression dynamics and
+ pathway expression specificity.
+License: GPL (>= 2)
+Imports: fitdistrplus, igraph, nFactors, Rcpp (>= 1.0.2), RColorBrewer,
+        Rdpack
+LinkingTo: Rcpp
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+RdMacros: Rdpack
+Depends: mlpack
+Packaged: 2022-01-19 14:17:14 UTC; joesong
+Repository: CRAN
+Date/Publication: 2022-01-20 08:52:44 UTC

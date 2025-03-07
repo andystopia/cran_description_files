@@ -1,0 +1,33 @@
+Package: kappaGold
+Title: Agreement of Nominal Scale Raters with a Gold Standard
+Version: 0.3.2
+Date: 2024-09-27
+Authors@R: 
+    c(person(given = "Matthias", family = "Kuhn",
+           email = "matthias.kuhn@tu-dresden.de",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2868-5155")),
+      person(given = "Jonas", family = "Breidenstein",
+           email = "jonas.breidenstein@tu-dresden.de",
+           role = "aut"))
+Description: Estimate agreement of a group of raters with a gold standard rating
+    on a nominal scale. For a single gold standard rater the average pairwise
+    agreement of raters with this gold standard is provided. For a group of gold
+    standard raters the approach of S. Vanbelle, A. Albert (2009)
+    <doi:10.1007/s11336-009-9116-1> is implemented. Bias and standard error are
+    estimated via delete-1 jackknife.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: future.apply (>= 1.6), purrr (>= 0.3), stats, tibble, tidyr
+Suggests: dplyr, irr, knitr, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Depends: R (>= 4.0)
+NeedsCompilation: no
+Packaged: 2024-09-27 12:56:22 UTC; kuhnmat
+Author: Matthias Kuhn [aut, cre] (<https://orcid.org/0000-0003-2868-5155>),
+  Jonas Breidenstein [aut]
+Maintainer: Matthias Kuhn <matthias.kuhn@tu-dresden.de>
+Repository: CRAN
+Date/Publication: 2024-09-30 16:50:02 UTC

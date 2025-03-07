@@ -1,0 +1,58 @@
+Package: nprcgenekeepr
+Type: Package
+Title: Genetic Tools for Colony Management
+Version: 1.0.3
+Authors@R: c(
+    person("Michael", "Raboin", role = c("aut")),
+    person("Terry", "Therneau", role = c("aut")),
+    person("Amanda", "Vinson", role = c("aut", "dtc")),
+    person("R. Mark", "Sharp", email = "rmsharp@me.com", 
+    comment = c(ORCID = "0000-0002-6170-6942"), 
+    role = c("aut", "cre", "cph", "dtc")),
+    person("Southwest National Primate Research Center NIH grant P51 RR13986", 
+    role = "fnd"),
+    person("Oregon National Primate Research Center grant P51 OD011092",
+    role = "fnd"))
+Description: Provides genetic tools for colony management and is a derivation 
+    of the work in Amanda Vinson and Michael J Raboin (2015) 
+    <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4671785/> "A Practical 
+    Approach for Designing Breeding Groups to Maximize Genetic Diversity in a 
+    Large Colony of Captive Rhesus Macaques ('Macaca' 'mulatto')".
+    It provides a 'Shiny' application with an exposed API. 
+    The application supports five groups of functions: 
+    (1) Quality control of studbooks contained in text files or 'Excel' 
+    workbooks and of pedigrees within 'LabKey' Electronic Health Records 
+    (EHR); 
+    (2) Creation of pedigrees from a list of animals using the 'LabKey' EHR 
+    integration; 
+    (3) Creation and display of an age by sex pyramid plot of the living 
+    animals within the designated pedigree; 
+    (4) Generation of genetic value analysis reports; and 
+    (5) Creation of potential breeding groups with and without proscribed sex 
+    ratios and defined maximum kinships.
+URL: https://rmsharp.github.io/nprcgenekeepr/,
+        https://github.com/rmsharp/nprcgenekeepr
+BugReports: https://github.com/rmsharp/nprcgenekeepr/issues
+Depends: R (>= 3.6.0)
+Imports: anytime, futile.logger, htmlTable, lubridate, Matrix, plotrix,
+        readxl, Rlabkey, shiny, shinyBS, stringi, utils, WriteXLS
+Suggests: covr, dplyr, ggplot2, grid, kableExtra, knitr, pkgdown, png,
+        rmarkdown, roxygen2 (>= 7.0.0), testthat
+Language: en-US
+Encoding: UTF-8
+License: MIT + file LICENSE
+RoxygenNote: 7.1.0
+LazyData: TRUE
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2020-05-27 02:15:14 UTC; msharp
+Author: Michael Raboin [aut],
+  Terry Therneau [aut],
+  Amanda Vinson [aut, dtc],
+  R. Mark Sharp [aut, cre, cph, dtc]
+    (<https://orcid.org/0000-0002-6170-6942>),
+  Southwest National Primate Research Center NIH grant P51 RR13986 [fnd],
+  Oregon National Primate Research Center grant P51 OD011092 [fnd]
+Maintainer: R. Mark Sharp <rmsharp@me.com>
+Repository: CRAN
+Date/Publication: 2020-06-02 12:40:03 UTC

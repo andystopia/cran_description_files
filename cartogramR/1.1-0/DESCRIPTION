@@ -1,0 +1,38 @@
+Package: cartogramR
+Version: 1.1-0
+Date: 2024-07-24
+Title: Continuous Cartogram
+Authors@R: c(person(given = "Pierre-Andre",
+                   family = "Cornillon",
+                   role = c("aut", "cre"),
+                   email = "pierre-andre.cornillon@univ-rennes2.fr"),
+              person(given = "Florent",
+                     family = "Demoraes",
+                     role = "aut",
+                     email="florent.demoraes@univ-rennes2.fr"),
+              person(given = "Flow-Based-Cartograms",
+              role = "cph",
+              email = "michael.gastner@yale-nus.edu.sg",
+              comment = "Author of core C code for gsm and gn procedures"))
+Description: Procedures for making continuous cartogram. Procedures available are:
+     flow based cartogram (Gastner & Newman (2004) <doi:10.1073/pnas.0400280101>),
+     fast flow based cartogram (Gastner, Seguy & More (2018) <doi:10.1073/pnas.1712674115>),
+     rubber band based cartogram (Dougenik et al. (1985)
+                        <doi:10.1111/j.0033-0124.1985.00075.x>).
+Depends: R (>= 3.5.0)
+Imports: sf, data.table
+Suggests: lwgeom
+SystemRequirements: FFTW (>=3.3.1); possible package: fftw-devel (rpm),
+        libfftw3-dev (deb) or fftw (brew).
+License: MIT + file LICENSE
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-07-24 16:18:36 UTC; pac
+Author: Pierre-Andre Cornillon [aut, cre],
+  Florent Demoraes [aut],
+  Flow-Based-Cartograms [cph] (Author of core C code for gsm and gn
+    procedures)
+Maintainer: Pierre-Andre Cornillon <pierre-andre.cornillon@univ-rennes2.fr>
+Repository: CRAN
+Date/Publication: 2024-07-26 23:40:02 UTC

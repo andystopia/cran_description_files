@@ -1,0 +1,32 @@
+Package: frailtyMMpen
+Type: Package
+Title: Efficient Algorithm for High-Dimensional Frailty Model
+Version: 1.0.0
+Authors@R: c(person(given = "Xifen",
+                    family = "Huang",
+                    role = c("aut")),
+             person(given = "Yunpeng",
+                    family = "Zhou",
+                    role = c("aut", "cre"),
+                    email = "u3514104@connect.hku.hk"),
+             person(given = "Jinfeng",
+                    family = "Xu",
+                    role = c("ctb")))
+Maintainer: Yunpeng Zhou <u3514104@connect.hku.hk>
+Description: The penalized and non-penalized Minorize-Maximization (MM) method for frailty models to fit the clustered data, multi-event data and recurrent data. Least absolute shrinkage and selection operator (LASSO), minimax concave penalty (MCP) and smoothly clipped absolute deviation (SCAD) penalized functions are implemented. All the methods are computationally efficient. These general methods are proposed based on the following papers,
+    Huang, Xu and Zhou (2022) <doi:10.3390/math10040538>,
+    Huang, Xu and Zhou (2023) <doi:10.1177/09622802221133554>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: false
+Depends: R (>= 3.5.0), survival, numDeriv, mgcv
+Imports: Rcpp (>= 1.0.8), graphics, stats
+LinkingTo: Rcpp, RcppGSL
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-03-23 13:58:09 UTC; michael81
+Author: Xifen Huang [aut],
+  Yunpeng Zhou [aut, cre],
+  Jinfeng Xu [ctb]
+Repository: CRAN
+Date/Publication: 2023-03-24 16:20:02 UTC

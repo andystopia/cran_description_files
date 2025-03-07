@@ -1,0 +1,30 @@
+Package: Ease
+Type: Package
+Title: Simulating Explicit Population Genetics Models
+Version: 0.1.0
+Author: Ehouarn Le Faou <ehouarnlefaou@orange.fr> [aut, cre]
+Maintainer: Ehouarn Le Faou <ehouarnlefaou@orange.fr>
+Description: Implementation in a simple and efficient way of fully customisable population genetics simulations,
+    considering multiple loci that have epistatic interactions. Specifically suited to the modelling of
+    multilocus nucleocytoplasmic systems (with both diploid and haploid loci), it is nevertheless possible
+    to simulate purely diploid (or purely haploid) genetic models.
+	Examples of models that can be simulated with Ease are numerous, for example models of genetic
+	incompatibilities as presented by Marie-Orleach et al. (2022) <doi:10.1101/2022.07.25.501356>.
+	Many others are conceivable, although few are actually explored, Ease having been developed
+	in particular to provide a solution so that these kinds of models can be simulated simply.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: methods, Rcpp (>= 1.0.7), ggplot2, ggpubr, RcppProgress (>=
+        0.1), tidyr
+LinkingTo: Rcpp, RcppProgress
+RoxygenNote: 7.2.1
+Collate: RcppExports.R ToolFunctions.R ModelFunctions.R GenomeClass.R
+        MutationMatrixClass.R SelectionClass.R EaseClass.R
+        UserFunctions.R
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-09-15 10:25:26 UTC; ehoua
+Repository: CRAN
+Date/Publication: 2022-09-19 08:26:19 UTC

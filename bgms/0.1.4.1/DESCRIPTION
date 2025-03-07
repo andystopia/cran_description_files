@@ -1,0 +1,39 @@
+Package: bgms
+Type: Package
+Title: Bayesian Analysis of Networks of Binary and/or Ordinal Variables
+Version: 0.1.4.1
+Date: 2024-11-12
+Authors@R: c(
+    person("Maarten", "Marsman", , "m.marsman@uva.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5309-7502")),
+    person("Karoline", "Huth", role = "ctb",
+           comment = c(ORCID = "0000-0002-0662-1591")),
+    person("Nikola", "Sekulovski", role = "ctb",
+           comment = c(ORCID = "0000-0001-7032-1684")),
+    person("Don", "van den Bergh", role = "ctb",
+    comment = c(ORCID = "0000-0002-9838-7308"))
+  )
+Maintainer: Maarten Marsman <m.marsman@uva.nl>
+Description: Bayesian variable selection methods for analyzing the structure of a Markov Random Field model for a network of binary and/or ordinal variables. Details of the implemented methods can be found in: Marsman, van den Bergh, and Haslbeck (in press) <doi:10.31234/osf.io/ukwrf>.
+License: GPL (>= 2)
+URL: https://maartenmarsman.github.io/bgms/
+BugReports: https://github.com/MaartenMarsman/bgms/issues
+Imports: Rcpp (>= 1.0.7), Rdpack, methods
+RdMacros: Rdpack
+LinkingTo: Rcpp, RcppProgress
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+LazyData: true
+Encoding: UTF-8
+Suggests: knitr, qgraph, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: tidyverse/tidytemplate
+NeedsCompilation: yes
+Packaged: 2024-11-12 15:20:42 UTC; maartenmarsman
+Author: Maarten Marsman [aut, cre] (<https://orcid.org/0000-0001-5309-7502>),
+  Karoline Huth [ctb] (<https://orcid.org/0000-0002-0662-1591>),
+  Nikola Sekulovski [ctb] (<https://orcid.org/0000-0001-7032-1684>),
+  Don van den Bergh [ctb] (<https://orcid.org/0000-0002-9838-7308>)
+Repository: CRAN
+Date/Publication: 2024-11-12 16:10:02 UTC

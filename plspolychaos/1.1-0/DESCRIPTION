@@ -1,0 +1,19 @@
+Package: plspolychaos
+Version: 1.1-0
+Date: 2016-04-30
+Title: Sensitivity Indexes from Polynomial Chaos Expansions and PLS
+Author: A. Bouvier [aut], J.-P. Gauchi [cre], A. Bensadoun [ctb]
+Maintainer: Annie Bouvier <annie.bouvier@jouy.inra.fr>
+Depends: methods
+Imports: utils, lhs, MASS, graphics, grDevices, stats
+Description: Computation of sensitivity indexes by using a method based on a truncated Polynomial Chaos Expansion of the response and regression PLS, for computer models with correlated continuous inputs, whatever the input distribution. The truncated Polynomial Chaos Expansion is built from the multivariate Legendre orthogonal polynomials. 
+ The number of runs (rows) can be smaller than the number of monomials. It is possible to select only the most significant monomials. 
+ Of course, this package can also be used if the inputs are independent. Note that, when they are  independent and uniformly distributed, the package 'polychaosbasics' is more appropriate. 
+License: GPL (>= 2)
+Collate: generic.R UtilPolychaos.R analyticsPolyLeg.R PCEdesign-class.R
+        PCEpoly-class.R PLSPCE-class.R regpls2.R polyLeg.R forward.R
+        calcPLSPCE.R
+NeedsCompilation: yes
+Packaged: 2016-05-09 08:19:14 UTC; abouvier
+Repository: CRAN
+Date/Publication: 2016-05-09 21:37:50

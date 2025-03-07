@@ -1,0 +1,61 @@
+Package: tidytext
+Type: Package
+Title: Text Mining using 'dplyr', 'ggplot2', and Other Tidy Tools
+Version: 0.3.0
+Authors@R: c(person("Gabriela", "De Queiroz", role = c("ctb"),
+             email = "gabidequeiroz@gmail.com"),
+             person("Colin", "Fay", role = c("ctb"),
+             email = "contact@colinfay.me",
+             comment = c(ORCID = "0000-0001-7343-1846")),
+             person("Emil", "Hvitfeldt", role = c("ctb"),
+             email = "emilhhvitfeldt@gmail.com"),
+             person("Os", "Keyes", role = c("ctb"),
+             email = "ironholds@gmail.com",
+             comment = c(ORCID = "0000-0001-5196-609X")),
+             person("Kanishka", "Misra", role = c("ctb"),
+             email = "kmisra@purdue.edu"),
+             person("Tim", "Mastny", role = c("ctb"),
+             email = "tim.mastny@gmail.com"),
+             person("Jeff", "Erickson", role = c("ctb"),
+             email = "jeff@erick.so"),
+             person("David", "Robinson", role = c("aut"),
+             email = "admiral.david@gmail.com"),
+             person("Julia", "Silge", role = c("aut", "cre"), 
+             email = "julia.silge@gmail.com", 
+             comment = c(ORCID = "0000-0002-3671-836X")))
+Description: Using tidy data principles can make many text mining tasks easier, 
+    more effective, and consistent with tools already in wide use. Much of the 
+    infrastructure needed for text mining with tidy data frames already exists 
+    in packages like 'dplyr', 'broom', 'tidyr', and 'ggplot2'. In this package, 
+    we provide functions and supporting data sets to allow conversion of text 
+    to and from tidy formats, and to switch seamlessly between tidy tools and 
+    existing text mining packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+URL: https://github.com/juliasilge/tidytext
+BugReports: https://github.com/juliasilge/tidytext/issues
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+Imports: rlang, tibble, dplyr, stringr, hunspell, generics, lifecycle,
+        Matrix, tokenizers, janeaustenr, purrr (>= 0.1.1), methods,
+        vctrs
+Suggests: readr, tidyr, XML, tm, quanteda, knitr, rmarkdown, ggplot2,
+        reshape2, wordcloud, topicmodels, NLP, scales, testthat (>=
+        2.1.0), vdiffr, mallet, stm, data.table, broom, textdata,
+        stopwords, covr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-05 17:36:28 UTC; juliasilge
+Author: Gabriela De Queiroz [ctb],
+  Colin Fay [ctb] (<https://orcid.org/0000-0001-7343-1846>),
+  Emil Hvitfeldt [ctb],
+  Os Keyes [ctb] (<https://orcid.org/0000-0001-5196-609X>),
+  Kanishka Misra [ctb],
+  Tim Mastny [ctb],
+  Jeff Erickson [ctb],
+  David Robinson [aut],
+  Julia Silge [aut, cre] (<https://orcid.org/0000-0002-3671-836X>)
+Maintainer: Julia Silge <julia.silge@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-06 17:40:05 UTC

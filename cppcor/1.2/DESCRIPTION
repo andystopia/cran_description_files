@@ -1,0 +1,28 @@
+Package: cppcor
+Type: Package
+Title: Probabilistic Composition of Correlated Preference
+Version: 1.2
+Authors@R: c(
+    person("Marcelo", "Ribeiro", email = "marcelo.ribeiro@ufop.edu.br", role = "aut"),
+    person("Ben", "Deivide", email = "ben.deivide@ufsj.edu.br", role = c("aut", "cre")),
+    person("Tiago", "Martins", email = "tiago.martin@gmail.com", role = "aut"), 
+    person("Fernando", "Oliveira", email = "fernandoluiz@ufop.edu.br", role = "aut"))
+Author: Marcelo Ribeiro [aut],
+  Ben Deivide [aut, cre],
+  Tiago Martins [aut],
+  Fernando Oliveira [aut]
+Maintainer: Ben Deivide <ben.deivide@ufsj.edu.br>
+Description: Individual classification method based on multivariate normal distribution, taking into account the correlation between the characteristics observed in the individuals.  Entering a data set whose individuals are previously classified,  this method will seek  to understand how these individuals were grouped into their classes.  This package will help you identify the class of new individuals without prior knowledge of your class. The way out is a set of measures that identify these new individuals.  An interesting measure is accuracy, which measures how well the method correctly identified an individual  for his or her class. The reference of this method was the result of the thesis of Marcelo Carlos Ribeiro, also author of the 'cppcor' package, and is still in the phase of corrections for publication. In the next updates of the package, we will add the reference of this method.
+Depends: R (>= 3.5.0)
+Imports: gWidgets (>= 0.0-54), gWidgetsRGtk2, foreach, caret, mvtnorm,
+        doParallel, e1071, pacman
+SystemRequirements: Cairo >= 1.0.0, ATK (>= 1.10.0), Pango (>= 1.10.0),
+        GTK+ (>= 2.8.0), GLib (>= 2.8.0)
+NeedsCompilation: no
+Encoding: UTF-8
+License: GPL (>= 2)
+LazyData: TRUE
+RoxygenNote: 7.0.1
+Repository: CRAN
+Packaged: 2020-03-28 22:40:18 UTC; MABENLA
+Date/Publication: 2020-03-29 00:30:02 UTC

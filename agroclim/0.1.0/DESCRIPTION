@@ -1,0 +1,31 @@
+Package: agroclim
+Type: Package
+Title: Climatic Indices for Agriculture
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Roberto",
+           family = "Serrano-Notivoli",
+           role = c("aut", "cre"),
+           email = "rserrano@eead.csic.es",
+           comment = c(ORCID = "0000-0001-7663-1202")))
+Description: Collection of functions to compute agroclimatic indices useful
+    to zoning areas based on climatic variables and to evaluate the importance
+    of temperature and precipitation for individual crops, or in general for 
+    agricultural lands. Some of the indices are adapted from Gladstones (1992, ISBN:1875130128); 
+    Trnka et al. (2014) <doi:10.1038/nclimate2242>; Wrinkler et al. (1974, ISBN:9780520025912);
+    Jones et al. (2010) <doi:10.1111/j.1755-0238.2010.00100.x>; Huglin (1978) <https://prodinra.inra.fr/record/116105>.
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: stats, ggplot2, gtable, plyr, zoo, abind, raster, ggpubr,
+        cowplot, reshape, ggforce, ncdf4, easyNCDF, sp, multiApply,
+        tools
+NeedsCompilation: no
+Packaged: 2020-03-16 15:47:10 UTC; rserrano
+Author: Roberto Serrano-Notivoli [aut, cre]
+    (<https://orcid.org/0000-0001-7663-1202>)
+Maintainer: Roberto Serrano-Notivoli <rserrano@eead.csic.es>
+Repository: CRAN
+Date/Publication: 2020-03-20 10:30:13 UTC

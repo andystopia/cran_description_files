@@ -1,0 +1,37 @@
+Package: pencal
+Title: Penalized Regression Calibration (PRC) for the Dynamic
+        Prediction of Survival
+Version: 2.2.1
+Authors@R: c(
+    person("Mirko", "Signorelli", , "msignorelli.rpackages@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8102-3356")),
+    person("Pietro", "Spitali", role = "ctb"),
+    person("Roula", "Tsonaka", role = "ctb"),
+    person("Barbara", "Vreede", role = "ctb")
+  )
+Description: Computes penalized regression calibration (PRC), a
+    statistical method for the dynamic prediction of survival when many
+    longitudinal predictors are available. PRC is described in Signorelli
+    et al.  (2021) <doi:10.1002/sim.9178> and Signorelli (2023)
+    <doi:10.48550/arXiv.2309.15600>.
+License: GPL (>= 3)
+URL: https://mirkosignorelli.github.io/r
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+biocViews:
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: doParallel, dplyr, foreach, glmnet, lcmm, magic, MASS, Matrix,
+        methods, nlme, purrr, riskRegression, stats, survcomp,
+        survival, survivalROC
+Suggests: knitr, ptmixed, rmarkdown, survminer
+NeedsCompilation: no
+Packaged: 2024-03-31 20:03:04 UTC; ms
+Author: Mirko Signorelli [aut, cre, cph]
+    (<https://orcid.org/0000-0002-8102-3356>),
+  Pietro Spitali [ctb],
+  Roula Tsonaka [ctb],
+  Barbara Vreede [ctb]
+Maintainer: Mirko Signorelli <msignorelli.rpackages@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-31 20:20:02 UTC

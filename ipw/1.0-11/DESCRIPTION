@@ -1,0 +1,26 @@
+Package: ipw
+Version: 1.0-11
+Date: 2015-08-18
+Title: Estimate Inverse Probability Weights
+Authors@R: c(person(c("Ronald", "B."), "Geskus", role=c("aut", "cre"),
+    , email="r.b.geskus@amc.uva.nl"),
+    person(c("Willem","M."), "van der Wal", role=c("aut"), 
+                         comment="maintainer until 2010"))
+Author: Ronald B. Geskus [aut, cre],
+    Willem M. van der Wal [aut] (maintainer until 2010)
+Maintainer: Ronald B. Geskus <r.b.geskus@amc.uva.nl>
+Depends: R (>= 3.0.0)
+Imports: MASS, nnet, survival, geepack, graphics, methods, stats
+Suggests: nlme, survey, boot
+Description: Functions to estimate the probability to receive the observed treatment, based on
+    individual characteristics. The inverse of these probabilities can be used as weights when
+	estimating causal effects from observational data via marginal structural models. Both point
+	treatment situations and longitudinal studies can be analysed. The same functions can be used to
+	correct for informative censoring.	
+Encoding: latin1
+License: GPL (>= 2)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2015-08-18 13:57:44 UTC; rbgeskus
+Repository: CRAN
+Date/Publication: 2015-08-18 16:58:46

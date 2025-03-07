@@ -1,0 +1,34 @@
+Package: profoc
+Type: Package
+Title: Probabilistic Forecast Combination Using CRPS Learning
+Version: 0.8.0
+Date: 2021-07-27
+Authors@R: c(
+    person(given = "Jonathan",
+             family = "Berrisch",
+             role = "cre",
+             email = "Jonathan@Berrisch.biz",
+             comment = c(ORCID = "0000-0002-4944-9074")),
+    person(given = "Florian",
+             family = "Ziel",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-2974-2660"))
+    )
+Description: Combine probabilistic forecasts using CRPS learning algorithms proposed in Berrisch, Ziel (2021) <arXiv:2102.00968>. The package implements multiple online learning algorithms like Bernstein online aggregation; see Wintenberger (2014) <arXiv:1404.1356>. Quantile regression is also implemented for comparison purposes. Model parameters can be tuned automatically with respect to the loss of the forecast combination. Methods like predict(), update(), plot() and print() are available for convenience. This package utilizes the optim C++ library for numeric optimization <https://github.com/kthohr/optim>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.0.2)
+Imports: Rcpp (>= 1.0.5), Matrix
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress, splines2 (>= 0.3.0)
+URL: https://profoc.berrisch.biz/, https://github.com/BerriJ/profoc
+BugReports: https://github.com/BerriJ/profoc/issues
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 3.0.0), gamlss.dist, ggplot2
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-07-27 09:14:49 UTC; vscode
+Author: Jonathan Berrisch [cre] (<https://orcid.org/0000-0002-4944-9074>),
+  Florian Ziel [aut] (<https://orcid.org/0000-0002-2974-2660>)
+Maintainer: Jonathan Berrisch <Jonathan@Berrisch.biz>
+Repository: CRAN
+Date/Publication: 2021-07-28 11:00:02 UTC

@@ -1,0 +1,32 @@
+Package: classyfireR
+Type: Package
+Title: R Interface to the ClassyFire RESTful API
+Version: 0.3.6
+Date: 2020-12-17
+Authors@R: c(
+    person("Tom", "Wilson", , "tpw2@aber.ac.uk", c("aut", "cre"),  comment = c(ORCID = "0000-0003-3112-4682")),
+    person("Jasen", "Finch", , "jsf9@aber.ac.uk", "aut"),
+    person("Gordon", "Getzinger", ,"gordon.getzinger@duke.edu", "ctb"))
+Description: Access to the ClassyFire RESTful API <http://classyfire.wishartlab.com>. Retrieve existing entity classifications and submit new entities for classification. 
+Depends: magrittr
+Imports: httr, jsonlite, tibble, crayon, clisymbols, cli, purrr, dplyr,
+        stringr, methods, rjson, tidyjson, tidyr
+Suggests: testthat, covr, knitr, rmarkdown
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/aberHRML/classyfireR
+BugReports: https://github.com/aberHRML/classyfireR/issues
+RoxygenNote: 7.1.0
+Collate: 'allGenerics.R' 'allClasses.R' 'accessor-methods.R'
+        'get_classification.R' 'internals.R' 'query.R' 'show-method.R'
+        'zzz.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-12-17 17:17:28 UTC; tom
+Author: Tom Wilson [aut, cre] (<https://orcid.org/0000-0003-3112-4682>),
+  Jasen Finch [aut],
+  Gordon Getzinger [ctb]
+Maintainer: Tom Wilson <tpw2@aber.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-12-17 17:30:09 UTC

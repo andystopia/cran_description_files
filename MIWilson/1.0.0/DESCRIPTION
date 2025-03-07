@@ -1,0 +1,29 @@
+Package: MIWilson
+Title: Implementing the MI-Wilson Confidence Interval
+Version: 1.0.0
+Authors@R: 
+    person(given = "Frances",
+           family = "Hung",
+           role = c("aut", "cre"),
+           email = "wyfhung@gmail.com")
+Description: Implements the Wilson confidence interval 
+    for binomial proportions given multiple imputations of missing data (detailed 
+    theory provided in "Wilson Confidence Intervals for Binomial
+    Proportions With Multiple Imputation for Missing
+    Data" (A. Lott & J. Reiter, 2018)). Our package also implements a Wald confidence
+    interval and allows for both MIDs object and proportion vector arguments. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+URL: https://github.com/hungf8342/MIWilson
+BugReports: https://github.com/hungf8342/MIWilson/issues
+Imports: dplyr, magrittr, mice, stats
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-08-16 17:44:40 UTC; Frances
+Author: Frances Hung [aut, cre]
+Maintainer: Frances Hung <wyfhung@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-23 17:40:02 UTC

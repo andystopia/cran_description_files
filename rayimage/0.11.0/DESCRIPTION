@@ -1,0 +1,28 @@
+Package: rayimage
+Type: Package
+Title: Image Processing for Simulated Cameras
+Version: 0.11.0
+Authors@R: c(person("Tyler", "Morgan-Wall", email = "tylermw@gmail.com", 
+    role = c("aut", "cph", "cre"), comment = c(ORCID = "0000-0002-3131-3814")),
+    person("Sean", "Barrett", role = c("ctb", "cph")))
+Maintainer: Tyler Morgan-Wall <tylermw@gmail.com>
+Description: Uses convolution-based techniques to generate simulated camera bokeh, depth of field, and other camera effects, using an image and an optional depth map. Accepts both filename inputs and in-memory array representations of images and matrices. Includes functions to perform 2D convolutions, reorient and resize images/matrices, add image overlays, generate camera vignette effects, and add titles to images. 
+License: GPL-3
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: Rcpp, png, jpeg, grDevices, grid, tiff
+Suggests: magick, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo, progress
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+URL: https://www.rayimage.dev,
+        https://github.com/tylermorganwall/rayimage
+BugReports: https://github.com/tylermorganwall/rayimage/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-07-13 21:06:41 UTC; tyler
+Author: Tyler Morgan-Wall [aut, cph, cre]
+    (<https://orcid.org/0000-0002-3131-3814>),
+  Sean Barrett [ctb, cph]
+Repository: CRAN
+Date/Publication: 2024-07-13 22:00:01 UTC

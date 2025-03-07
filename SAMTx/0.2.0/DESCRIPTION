@@ -1,0 +1,23 @@
+Package: SAMTx
+Type: Package
+Title: Sensitivity Assessment to Unmeasured Confounding with Multiple
+        Treatments
+Version: 0.2.0
+Authors@R: c(
+  person("Liangyuan", "Hu", role = "aut", email = "Liangyuan.Hu@mountsinai.org"),
+  person("Jungang", "Zou", role = "aut",
+         email = "jz3183@cumc.columbia.edu"),
+  person("Jiayi", "Ji", role = c("aut", "cre"), email = "Jiayi.Ji@mountsinai.org"))
+Description: A sensitivity analysis approach for unmeasured confounding in observational data with multiple treatments and a binary outcome. This approach derives the general bias formula and provides adjusted causal effect estimates in response to various assumptions about the degree of unmeasured confounding. Nested multiple imputation is embedded within the Bayesian framework to integrate   uncertainty about the sensitivity parameters and sampling variability.  Bayesian Additive Regression Model (BART) is used for outcome modeling. The causal estimands are the conditional average treatment effects (CATE) based on the risk difference.  For more details, see paper: Hu L et al. (2020) A flexible sensitivity analysis approach for unmeasured confounding with a multiple treatments and a binary outcome <arXiv:2012.06093>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: BART
+NeedsCompilation: no
+Packaged: 2021-06-21 21:14:18 UTC; jiayi
+Author: Liangyuan Hu [aut],
+  Jungang Zou [aut],
+  Jiayi Ji [aut, cre]
+Maintainer: Jiayi Ji <Jiayi.Ji@mountsinai.org>
+Repository: CRAN
+Date/Publication: 2021-06-22 04:00:02 UTC

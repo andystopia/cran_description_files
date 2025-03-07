@@ -1,0 +1,38 @@
+Package: htmcglm
+Type: Package
+Title: Hypothesis Testing for McGLMs
+Version: 0.0.1
+Author: Lineu Alberto Cavazani de Freitas [aut, cre],
+  Wagner Hugo Bonat [ctb],
+  Walmes Marques Zeviani [ctb]
+Maintainer: Lineu Alberto Cavazani de Freitas <lineuacf@gmail.com>
+Authors@R: c(person(c("Lineu Alberto","Cavazani"), "de Freitas", role = c("aut", "cre"),
+                    email = "lineuacf@gmail.com"),
+	     person(c("Wagner","Hugo"), "Bonat", role = "ctb"),
+	     person(c("Walmes", "Marques"), "Zeviani", role = "ctb"))
+Description: Performs hypothesis testing for multivariate covariance generalized linear
+     models (McGLMs).  McGLM is a general framework for non-normal
+     multivariate data analysis, designed to handle multivariate response
+     variables, along with a wide range of temporal and spatial correlation
+     structures defined in terms of a covariance link function combined
+     with a matrix linear predictor involving known matrices.
+     The models take non-normality into account in the conventional way
+     by means of a variance function, and the mean structure is modelled
+     by means of a link function and a linear predictor.
+     The models are fitted using an efficient Newton scoring algorithm
+     based on quasi-likelihood and Pearson estimating functions, using
+     only second-moment assumptions. This provides a unified approach to
+     a wide variety of different types of response variables and covariance
+     structures, including multivariate extensions of repeated measures,
+     time series, longitudinal, spatial and spatio-temporal structures.
+     The package offers a user-friendly interface for fitting McGLMs
+     similar to the glm() R function.
+License: MIT + file LICENSE
+URL: https://github.com/lineu96/htmcglm
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Imports: stats, doBy, Matrix, mcglm, sjmisc, stringr
+NeedsCompilation: no
+Packaged: 2022-07-20 20:13:15 UTC; lacf14
+Repository: CRAN
+Date/Publication: 2022-07-21 12:10:06 UTC

@@ -1,0 +1,26 @@
+Package: rar
+Title: Risk-Adjusted Regression
+Version: 0.0.2
+Authors@R: 
+    person("Johann", "Gaebler", , "me@jgaeb.com", role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "0000-0003-3340-9542"))
+Description: Perform risk-adjusted regression and sensitivity analysis as
+    developed in "Mitigating Omitted- and Included-Variable Bias in Estimates of
+    Disparate Impact" Jung et al. (2024) <arXiv:1809.05651>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://rar.jgaeb.com, https://github.com/jgaeb/rar
+BugReports: https://github.com/jgaeb/rar/issues
+RoxygenNote: 7.2.3
+LinkingTo: cpp11, testthat
+Suggests: broom, forcats, stringr, testthat (>= 3.0.0), xml2
+Config/testthat/edition: 3
+Imports: dplyr, glue, magrittr, purrr, rlang, tibble, tidyr,
+        tidyselect, vctrs
+NeedsCompilation: yes
+Packaged: 2024-01-18 11:41:58 UTC; jgaeb
+Author: Johann Gaebler [aut, cre, cph]
+    (<https://orcid.org/0000-0003-3340-9542>)
+Maintainer: Johann Gaebler <me@jgaeb.com>
+Repository: CRAN
+Date/Publication: 2024-01-18 20:20:02 UTC

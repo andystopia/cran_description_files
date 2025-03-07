@@ -1,0 +1,31 @@
+Package: ICBioMark
+Title: Data-Driven Design of Targeted Gene Panels for Estimating
+        Immunotherapy Biomarkers
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Jacob R.",
+           family = "Bradley",
+           role = c("aut", "cre"),
+           email = "cobrbradley@gmail.com",
+           comment = c(ORCID = "0000-0003-1616-4969")),
+      person(given = "Timothy I.",
+           family = "Cannings",
+           role = c("aut"),
+           email = "Timothy.cannings@sms.ed.ac.uk",
+           comment = c(ORCID = "0000-0002-2111-4168")))
+Description: Implementation of the methodology proposed in 'Data-driven design of targeted gene panels for estimating immunotherapy biomarkers', Bradley and Cannings (2021) <arXiv:2102.04296>. This package allows the user to fit generative models of mutation from an annotated mutation dataset, and then further to produce tunable linear estimators of exome-wide biomarkers. It also contains functions to simulate mutation annotated format (MAF) data, as well as to analyse the output and performance of models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 2.1.0)
+Imports: stats, utils, glmnet, Matrix, dplyr, purrr, latex2exp,
+        matrixStats, ggplot2, gglasso, PRROC
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-02-16 14:40:33 UTC; s1505825
+Author: Jacob R. Bradley [aut, cre] (<https://orcid.org/0000-0003-1616-4969>),
+  Timothy I. Cannings [aut] (<https://orcid.org/0000-0002-2111-4168>)
+Maintainer: Jacob R. Bradley <cobrbradley@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-17 18:40:02 UTC

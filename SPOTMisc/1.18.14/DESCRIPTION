@@ -1,0 +1,40 @@
+Package: SPOTMisc
+Type: Package
+Title: Misc Extensions for the 'SPOT' Package
+Version: 1.18.14
+Authors@R: c(	
+        person("Thomas", "Bartz-Beielstein", role = c("aut", "cre"), email = "tbb@bartzundbartz.de", comment = c(ORCID = "0000-0002-5938-5158")),
+				person("Martin", "Zaefferer", role = "aut", comment = c(ORCID = "0000-0003-2372-2092")),
+				person("Frederik","Rehbach", role = "aut" , comment = c(ORCID = "0000-0003-0922-8629"))
+				)
+Maintainer: Thomas Bartz-Beielstein <tbb@bartzundbartz.de>
+Description: Implements additional models, simulation tools, and interfaces as extensions to 'SPOT'.
+    It provides tools for hyperparameter tuning via 'keras/tensorflow', interfacing 'mlr', for performing Markov chain simulations, 
+    and for sensitivity analysis based on sequential bifurcation methods as described in Bettonvil and Kleijnen (1996). 
+    Furthermore, additional plotting functions for output from 'SPOT' runs are implemented.
+    Bartz-Beielstein T, Lasarczyk C W G, Preuss M (2005) <doi:10.1109/CEC.2005.1554761>.
+    Bartz-Beielstein T, Zaefferer M, Rehbach F (2021) <arXiv:1712.04076>.
+    Bartz-Beielstein T, Rehbach F, Sen A, Zaefferer M <arXiv:2105.14625>.
+    Bettonvil, B, Kleijnen JPC (1996) <doi:10.1016/S0377-2217(96)00156-7>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: true
+Date: 2022-04-30
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.1.2
+Imports: callr, dplyr, ggplot2, GGally, graphics, grDevices, keras,
+        magrittr, mlr, Metrics, OpenML, plotly, RColorBrewer,
+        reticulate, rlang, rpart.plot, rsample, sensitivity, smoof,
+        SPOT, stats, tensorflow, tfdatasets, utils
+Suggests: farff, knitr, rmarkdown, rpart, testthat
+URL: https://www.spotseven.de
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-05-01 19:53:29 UTC; bartz
+Author: Thomas Bartz-Beielstein [aut, cre]
+    (<https://orcid.org/0000-0002-5938-5158>),
+  Martin Zaefferer [aut] (<https://orcid.org/0000-0003-2372-2092>),
+  Frederik Rehbach [aut] (<https://orcid.org/0000-0003-0922-8629>)
+Repository: CRAN
+Date/Publication: 2022-05-02 08:20:07 UTC

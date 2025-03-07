@@ -1,0 +1,28 @@
+Package: splmm
+Type: Package
+Title: Simultaneous Penalized Linear Mixed Effects Models
+Version: 1.1.3
+Date: 2021-08-17
+Authors@R: c(person(given = "Luoying", family = "Yang",
+		   role = c("aut", "cre"),
+		   email = "lyang19@u.rochester.edu"),
+		   person(given = "Tong Tong", family = "Wu",
+		   role = c("aut"),
+		   email = "tongtong_wu@urmc.rochester.edu"))
+Maintainer: Luoying Yang <lyang19@u.rochester.edu>
+Description: Contains functions that fit linear mixed-effects models
+        for high-dimensional data (p>>n) with penalty for both the fixed effects and random effects for variable selection. 
+        The details of the algorithm can be found in Luoying Yang PhD thesis (Yang and Wu 2020). The algorithm implementation
+        is based on the R package 'lmmlasso'. 
+        Reference: Yang L, Wu TT (2020). Model-Based Clustering of Longitudinal Data in High-Dimensionality. Unpublished thesis.
+License: GPL-3
+Imports: Rcpp (>= 1.0.1), emulator, miscTools, penalized, ggplot2,
+        gridExtra, plot3D, MASS
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2021-09-07 15:29:59 UTC; lyang19
+Depends: R (>= 3.5.0)
+Author: Luoying Yang [aut, cre],
+  Tong Tong Wu [aut]
+Repository: CRAN
+Date/Publication: 2021-09-08 10:00:02 UTC

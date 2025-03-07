@@ -1,0 +1,30 @@
+Package: dcemriS4
+Version: 0.55
+Date: 2015-04-26
+Title: A Package for Image Analysis of DCE-MRI (S4 Implementation)
+Authors@R: c(person("Brandon", "Whitcher", role = c("aut", "cre"),
+		     email = "bwhitcher@gmail.com"),
+	      person("Volker", "Schmid", role = "aut",
+	        email="volker.schmid@lmu.de"),
+	      person("Andrew", "Thornton", role = "ctb",
+		     email = "zeripath@gmail.com"))
+Depends: R (>= 2.14.0), oro.nifti (>= 0.4.3)
+Suggests: bitops, minpack.lm, splines, XML, oro.dicom (>= 0.4.3),
+        testthat
+Imports: utils, parallel, methods
+Description: A collection of routines and documentation that allows one to
+  perform voxel-wise quantitative analysis of dynamic contrast-enhanced MRI 
+  (DEC-MRI) and diffusion-weighted imaging (DWI) data, with emphasis on 
+  oncology applications.
+License: BSD_3_clause + file LICENSE
+URL: http://www.dcemri.com/, http://dcemri.blogspot.com/
+LazyData: true
+LazyDataCompression: gzip
+NeedsCompilation: yes
+Packaged: 2015-04-28 08:18:03 UTC; brandon
+Author: Brandon Whitcher [aut, cre],
+  Volker Schmid [aut],
+  Andrew Thornton [ctb]
+Maintainer: Brandon Whitcher <bwhitcher@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-04-29 08:13:22

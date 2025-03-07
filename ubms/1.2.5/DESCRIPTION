@@ -1,0 +1,45 @@
+Package: ubms
+Version: 1.2.5
+Date: 2023-08-21
+Title: Bayesian Models for Data from Unmarked Animals using 'Stan'
+Authors@R: person("Ken", "Kellner", email="contact@kenkellner.com", 
+                  role=c("cre","aut"))
+Depends: R (>= 3.4.0), unmarked
+Imports: ggplot2 (>= 2.0.0), gridExtra, lme4, loo, Matrix (>= 1.5-0),
+        methods, pbapply, Rcpp (>= 0.12.0), rlang, RSpectra, rstan (>=
+        2.18.1), rstantools (>= 2.0.0), stats
+Suggests: covr, devtools, knitr, pkgdown, raster, rmarkdown, roxygen2,
+        testthat
+VignetteBuilder: knitr
+Description: Fit Bayesian hierarchical models of animal abundance and occurrence
+    via the 'rstan' package, the R interface to the 'Stan' C++ library.
+    Supported models include single-season occupancy, dynamic occupancy, and
+    N-mixture abundance models. Covariates on model parameters are specified
+    using a formula-based interface similar to package 'unmarked', while also
+    allowing for estimation of random slope and intercept terms. References:
+    Carpenter et al. (2017) <doi:10.18637/jss.v076.i01>;
+    Fiske and Chandler (2011) <doi:10.18637/jss.v043.i10>.
+License: GPL (>= 3)
+URL: https://kenkellner.com/ubms/
+BugReports: https://github.com/kenkellner/ubms/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Biarch: true
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppArmadillo (>=
+        0.9.300.2.0), RcppEigen (>= 0.3.3.3.0), rstan (>= 2.18.1),
+        StanHeaders (>= 2.18.0), RcppParallel (>= 5.0.2)
+SystemRequirements: GNU make
+Collate: 'RcppExports.R' 'submodel.R' 'response.R' 'inputs.R' 'fit.R'
+        'posterior_predict.R' 'posterior_linpred.R' 'fitted.R' 'gof.R'
+        'occu.R' 'colext.R' 'missing.R' 'distsamp.R' 'fitlist.R'
+        'kfold.R' 'occuTTD.R' 'multinomPois.R' 'occuRN.R' 'pcount.R'
+        'loglik.R' 'mb_chisq.R' 'plot_effects.R' 'plot_posteriors.R'
+        'predict.R' 'priors.R' 'ranef.R' 'residuals.R' 'spatial.R'
+        'stanmodels.R' 'test-helpers.R' 'ubms-package.R'
+        'ubmsFit-methods.R' 'ubmsFitList-methods.R' 'umf.R' 'utils.R'
+NeedsCompilation: yes
+Packaged: 2023-08-20 12:52:33 UTC; ken
+Author: Ken Kellner [cre, aut]
+Maintainer: Ken Kellner <contact@kenkellner.com>
+Repository: CRAN
+Date/Publication: 2023-08-21 14:10:02 UTC

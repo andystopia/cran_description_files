@@ -1,0 +1,40 @@
+Package: HYPEtools
+Version: 1.3.0
+Title: Tools for Processing and Analyzing Files from the Hydrological
+        Catchment Model HYPE
+Description: Work with model files (setup, input, output) from
+    the hydrological catchment model HYPE: Streamlined file import and export, standard 
+    evaluation plot routines, diverse post-processing and aggregation routines 
+    for hydrological model analysis.
+Authors@R: c(person("Rene", "Capell", role = c("aut", "cre"), email = "hypetools.rene@smhi.se", comment = c(orcid = "0000-0002-7784-1313")), 
+    person("Conrad", "Brendel", role = "aut", email = "conrad.brendel@smhi.se", comment = c(orcid = "0000-0002-5199-0580")),
+    person("Jafet", "Andersson", role = "ctb"),
+    person("David", "Gustafsson", role = "ctb"),
+    person("Jude", list("Musuuza", "Lubega"), role = "ctb"))
+Depends: R (>= 3.5.0)
+Imports: clipr, data.table (>= 1.9.8), dplyr, ggplot2, ggpubr, ggrepel,
+        ggspatial, grDevices, graphics, hydroGOF, ncdf4, parallel,
+        patchwork, pbapply, purrr, rlang, stats, stringr, tidyr,
+        tidyselect, utils
+License: LGPL-3
+LazyData: false
+URL: https://github.com/rcapell/HYPEtools,https://hypeweb.smhi.se/
+BugReports: https://github.com/rcapell/HYPEtools/issues
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Language: en-US
+Suggests: rmarkdown, knitr, DT, htmlwidgets, leaflet, leaflet.extras,
+        mapview, plotly, sf, shiny, shinyalert, shinyFiles,
+        shinyWidgets, randomcoloR, webshot
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-04-05 10:22:09 UTC; a002416
+Author: Rene Capell [aut, cre] (0000-0002-7784-1313),
+  Conrad Brendel [aut] (0000-0002-5199-0580),
+  Jafet Andersson [ctb],
+  David Gustafsson [ctb],
+  Jude Musuuza [ctb],
+  Jude Lubega [ctb]
+Maintainer: Rene Capell <hypetools.rene@smhi.se>
+Repository: CRAN
+Date/Publication: 2023-04-05 20:13:29 UTC

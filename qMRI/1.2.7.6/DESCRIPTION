@@ -1,0 +1,37 @@
+Package: qMRI
+Type: Package
+Title: Methods for Quantitative Magnetic Resonance Imaging ('qMRI')
+Version: 1.2.7.6
+Date: 2024-05-17
+Authors@R: c(person("Joerg", "Polzehl", role = c("aut"),
+                    email = "joerg.polzehl@wias-berlin.de"),
+             person("Karsten", "Tabelow", role = c("aut", "cre"),
+                    email = "karsten.tabelow@wias-berlin.de"),
+             person("WIAS Berlin", role = c("cph", "fnd")))
+Maintainer: Karsten Tabelow <karsten.tabelow@wias-berlin.de>
+Depends: R (>= 3.5), awsMethods (>= 1.0), methods, parallel
+Imports: oro.nifti (>= 0.9), stringr, aws (>= 2.4), adimpro (>= 0.9)
+LazyData: TRUE
+Description: Implementation of methods for estimation of quantitative maps
+    from Multi-Parameter Mapping (MPM) acquisitions (Weiskopf et al. (2013)
+    <doi:10.3389/fnins.2013.00095>) and analysis of Inversion Recovery MRI data.
+    Usage of the package is described in
+    Polzehl and Tabelow (2023),
+    "Magnetic Resonance Brain Imaging", 2nd Edition, Chapter 6 and 7, Springer, Use R! Series.
+    <doi:10.1007/978-3-031-38949-8>.
+    J. Polzehl and K. Tabelow (2023), "Magnetic Resonance Brain Imaging - Modeling and Data Analysis Using R: Code and Data."
+    <doi:10.20347/WIAS.DATA.6> provides extensive example code and data.
+License: GPL (>= 2)
+Copyright: This package is Copyright (C) 2015-2024 Weierstrass
+        Institute for Applied Analysis and Stochastics.
+URL: https://www.wias-berlin.de/research/ats/imaging/
+Suggests: covr, testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2024-05-22 08:40:06 UTC; tabelow
+Author: Joerg Polzehl [aut],
+  Karsten Tabelow [aut, cre],
+  WIAS Berlin [cph, fnd]
+Repository: CRAN
+Date/Publication: 2024-05-22 21:20:03 UTC

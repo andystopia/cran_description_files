@@ -1,0 +1,48 @@
+Package: mapsf
+Title: Thematic Cartography
+Version: 0.1.1
+Authors@R: c(
+    person("Timothée", "Giraud", email = "timothee.giraud@cnrs.fr", 
+        role = c("cre","aut"), comment = c(ORCID = "0000-0002-1932-3323")), 
+    person("Diego", "Hernangómez", role = "ctb", 
+        comment=c(ORCID="0000-0001-8457-4658")),
+    person("Hugues", "Pecout", role = "ctb"),
+    person("Ian", "Fellows", role = "cph", 
+        comment = "No overlap algorithm for labels, from wordcloud package"), 
+    person("Jim", "Lemon", role = "cph", 
+        comment = "Arc drawing algorithm for annotations, from plotrix package"),
+    person("Florian",  "Zenoni", role = "cph",
+        comment = "Orthographic projection visualisation")
+    )
+Description: Create and integrate thematic maps in your workflow. This package
+    helps to design various cartographic representations such as proportional
+    symbols, choropleth or typology maps. It also offers several functions to
+    display layout elements that improve the graphic presentation of maps
+    (e.g. scale bar, north arrow, title, labels). 'mapsf' maps 'sf' objects on
+    'base' graphics.
+License: GPL-3
+LazyData: true
+URL: https://github.com/riatelab/mapsf/,
+        https://riatelab.github.io/mapsf/
+BugReports: https://github.com/riatelab/mapsf/issues/
+Depends: R (>= 3.5.0), sf
+Imports: classInt, graphics, methods, Rcpp, stats, utils, grDevices
+Suggests: raster, rgdal, lwgeom, knitr, rmarkdown, tinytest, covr
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2021-02-25 14:11:00 UTC; tim
+Author: Timothée Giraud [cre, aut] (<https://orcid.org/0000-0002-1932-3323>),
+  Diego Hernangómez [ctb] (<https://orcid.org/0000-0001-8457-4658>),
+  Hugues Pecout [ctb],
+  Ian Fellows [cph] (No overlap algorithm for labels, from wordcloud
+    package),
+  Jim Lemon [cph] (Arc drawing algorithm for annotations, from plotrix
+    package),
+  Florian Zenoni [cph] (Orthographic projection visualisation)
+Maintainer: Timothée Giraud <timothee.giraud@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2021-03-01 09:10:02 UTC

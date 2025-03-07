@@ -1,0 +1,33 @@
+Package: usdc
+Type: Package
+Title: USDC and Centre Stablecoin Blockchain Data
+Version: 0.1.0
+Authors@R: person("Galen", "Simmons", email = "galen.simmons@gmail.com",
+  role = c("aut", "cre"))
+Maintainer: Galen Simmons <galen.simmons@gmail.com>
+Description: Client for data sources to track current and historical 'usdc' circulation
+    on blockchains officially supported by the Centre Consortium (Algorand, Ethereum,
+    Solana, Stellar).  USDC is a dollar-backed stablecoin issued by the Centre Consortium.  
+    This package utilizes block explorer APIs to retrieve current circulation data and the
+    Coin Metrics API to retrieve historical metrics.  Additional utility functions are
+    provided for charting and looking up the metrics definitions for Coin Metrics V4 API, 
+    which is documented at <https://docs.coinmetrics.io/api/v4>. 
+Encoding: UTF-8
+LazyData: true
+Suggests: covr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: scales, httr, jsonlite, lubridate, tidyselect, dplyr,
+        magrittr, tibble, knitr, ggplot2, rlang, ggthemes
+RoxygenNote: 7.1.1
+Language: en-US
+X-schema.org-applicationCategory: Blockchain
+X-schema.org-keywords: defi, usdc, ethereum, algorand, solana, stellar,
+        blockchain, cryptocurrency
+License: MIT + file LICENSE
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-06-20 14:09:06 UTC; galen-macbook
+Author: Galen Simmons [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-06-21 09:50:02 UTC

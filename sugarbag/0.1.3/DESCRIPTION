@@ -1,0 +1,31 @@
+Package: sugarbag
+Title: Create Tessellated Hexagon Maps
+Version: 0.1.3
+Authors@R: c(person("Stephanie", "Kobakian", email = "stephanie.kobakian@gmail.com", role = c("aut", "cre")),
+             person("Dianne", "Cook", role = c("aut", "ths")))
+Description: Create a hexagon tile map display from spatial polygons. Each 
+    polygon is represented by a hexagon tile, placed as close to it's original
+    centroid as possible, with a focus on maintaining spatial relationship to
+    a focal point. Developed to aid visualisation and analysis of spatial 
+    distributions across Australia, which can be challenging due to the 
+    concentration of the population on the coast and wide open interior.
+URL: https://srkobakian.github.io/sugarbag/,
+        https://github.com/srkobakian/sugarbag
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), dplyr (>= 1.0.0)
+Imports: geosphere (>= 1.5), lwgeom (>= 0.2), progress (>= 1.2.2),
+        purrr (>= 0.3.4), rlang (>= 0.4.6), rmapshaper (>= 0.4.4), sf
+        (>= 0.9), tibble (>= 3.0.1), tidyr (>= 1.1.0), utf8 (>= 1.1.4)
+RoxygenNote: 7.1.1
+Suggests: ggplot2 (>= 3.1.0), knitr, pkgdown, rmarkdown, spData,
+        testthat (>= 2.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-10-26 01:00:20 UTC; steff
+Author: Stephanie Kobakian [aut, cre],
+  Dianne Cook [aut, ths]
+Maintainer: Stephanie Kobakian <stephanie.kobakian@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-10-26 14:20:03 UTC

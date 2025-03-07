@@ -1,0 +1,32 @@
+Package: gtfsrouter
+Title: Routing with 'GTFS' (General Transit Feed Specification) Data
+Version: 0.1.2
+Authors@R: c(
+    person("Mark", "Padgham", , "mark.padgham@email.com", role = c("aut", "cre")),
+    person("Marcin", "Stepniak", , "marcinstepniak@ucm.es", role = "aut",
+           comment = c(ORCID = "0000-0002-6489-5443")),
+    person("Alexandra", "Kapp", , "alk@mobilityinstitute.com", role = "ctb")
+  )
+Description: Use 'GTFS' (General Transit Feed Specification) data for routing
+    from nominated start and end stations, for extracting 'isochrones', and
+    travel times from any nominated start station to all other stations.
+License: GPL-3
+URL: https://github.com/UrbanAnalyst/gtfsrouter
+BugReports: https://github.com/UrbanAnalyst/gtfsrouter/issues
+Depends: R (>= 2.10)
+Imports: cli, data.table, geodist, methods, Rcpp (>= 0.12.6)
+Suggests: digest, dodgr, dplyr, ggplot2, here, hms, knitr, lubridate,
+        lwgeom, markdown, pbapply, rmarkdown, testthat
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.2.3
+Packaged: 2023-09-22 08:30:51 UTC; smexus
+Author: Mark Padgham [aut, cre],
+  Marcin Stepniak [aut] (<https://orcid.org/0000-0002-6489-5443>),
+  Alexandra Kapp [ctb]
+Maintainer: Mark Padgham <mark.padgham@email.com>
+Repository: CRAN
+Date/Publication: 2023-09-23 23:00:02 UTC

@@ -1,0 +1,42 @@
+Package: ichimoku
+Type: Package
+Title: Visualization and Tools for Ichimoku Kinko Hyo Strategies
+Version: 1.2.0
+Description: An implementation of 'Ichimoku Kinko Hyo', also commonly known as
+    'cloud charts'. Static and interactive visualizations with tools for
+    creating, backtesting and development of quantitative 'ichimoku' strategies.
+    As described in Sasaki (1996, ISBN:4925152009), the technique is a refinement
+    on candlestick charting originating from Japan, now in widespread use in
+    technical analysis worldwide. Translating as 'one-glance equilibrium chart',
+    it allows the price action and market structure of financial securities to
+    be determined 'at-a-glance'. Incorporates an interface with the OANDA
+    fxTrade API <https://developer.oanda.com/> for retrieving historical and
+    live streaming price data for major currencies, metals, commodities,
+    government bonds and stock indices.
+Authors@R: 
+    person(given = "Charlie",
+           family = "Gao",
+           role = c("aut", "cre"),
+           email = "charlie.gao@shikokuchuo.net",
+           comment = c(ORCID = "0000-0002-0750-061X"))
+BugReports: https://github.com/shikokuchuo/ichimoku/issues
+License: GPL (>= 3)
+URL: https://shikokuchuo.net/ichimoku/,
+        https://github.com/shikokuchuo/ichimoku/
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.2)
+Imports: curl, ggplot2, gridExtra, jsonlite, stats, xts, zoo
+LinkingTo: cpp11
+Suggests: bslib, covr, keyring, knitr, openssl, rmarkdown, shiny,
+        testthat (>= 3.0.0)
+SystemRequirements: C++11
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-09-20 07:23:54 UTC; cg334
+Author: Charlie Gao [aut, cre] (<https://orcid.org/0000-0002-0750-061X>)
+Maintainer: Charlie Gao <charlie.gao@shikokuchuo.net>
+Repository: CRAN
+Date/Publication: 2021-09-20 07:40:02 UTC

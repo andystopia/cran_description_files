@@ -1,0 +1,28 @@
+Package: DCLEAR
+Version: 1.0.12
+Date: 2023-2-16
+Title: Distance Based Cell Lineage Reconstruction
+Authors@R: c(person("Il-Youp", "Kwak", role = c("aut", "cre"),
+                     email = "ikwak2@cau.ac.kr"),
+              person("Wuming", "Gong", role = "aut", email = "gongx030@umn.edu"))
+Author: Il-Youp Kwak [aut, cre],
+  Wuming Gong [aut]
+Maintainer: Il-Youp Kwak <ikwak2@cau.ac.kr>
+License: GPL-3
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.2
+Depends: R (>= 4.1.0), tensorflow(>= 2.2.0)
+biocViews:
+Encoding: UTF-8
+Imports: BiocParallel, dplyr, Matrix, matrixStats, ape, phangorn, Rcpp,
+        igraph, methods, purrr, stringr, tidyr, rBayesianOptimization,
+        rlang, BiocGenerics
+Suggests: knitr, rmarkdown, markdown
+Description: R codes for distance based cell lineage reconstruction. Our methods won both sub-challenges 2 and 3 of the Allen Institute Cell Lineage Reconstruction DREAM Challenge in 2020. 
+        References: Gong et al. (2021) <doi:10.1016/j.cels.2021.05.008>, Gong et al. (2022) <doi:10.1186/s12859-022-04633-x>. 
+URL: https://github.com/ikwak2/DCLEAR
+NeedsCompilation: yes
+Packaged: 2023-02-16 14:55:24 UTC; ikwak10
+Repository: CRAN
+Date/Publication: 2023-02-16 16:00:07 UTC

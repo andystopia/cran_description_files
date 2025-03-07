@@ -1,0 +1,31 @@
+Package: motifcluster
+Title: Motif-Based Spectral Clustering of Weighted Directed Networks
+Version: 0.2.2
+Authors@R: 
+    person(given = "William George",
+        family = "Underwood",
+        role = c("aut", "cre"),
+        email = "wgu2@princeton.edu")
+Description: 
+    Tools for spectral clustering of weighted directed networks using motif
+    adjacency matrices. Methods perform well on large and sparse networks, and
+    random sampling methods for generating weighted directed networks are also
+    provided. Based on methodology detailed in Underwood, Elliott and Cucuringu
+    (2020) <arXiv:2004.01293>.
+URL: https://github.com/wgunderwood/motifcluster
+Language: en-US
+BugReports: https://github.com/wgunderwood/motifcluster/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 3.6.0)
+Imports: igraph (>= 1.2.5), Matrix (>= 1.2), RSpectra (>= 0.16.0)
+Suggests: covr (>= 3.5.0), knitr (>= 1.28), mclust (>= 5.4.6),
+        rmarkdown (>= 2.1), testthat (>= 2.3.2)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-08-15 21:50:45 UTC; will
+Author: William George Underwood [aut, cre]
+Maintainer: William George Underwood <wgu2@princeton.edu>
+Repository: CRAN
+Date/Publication: 2022-08-15 22:30:02 UTC

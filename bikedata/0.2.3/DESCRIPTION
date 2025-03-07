@@ -1,0 +1,52 @@
+Package: bikedata
+Title: Download and Aggregate Data from Public Hire Bicycle Systems
+Version: 0.2.3
+Authors@R: c(
+    person("Mark", "Padgham", email = "mark.padgham@email.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "https://orcid.org/0000-0003-2172-5265")),
+    person("Richard", "Ellison", role = "aut"),
+    person("Tom", "Buckley", role = "aut"),
+    person("Bea", "Hernández", role = "rev",
+        comment = "Bea reviewed the package for ropensci, see https://github.com/ropensci/onboarding/issues/116"),
+    person("Elaine", "McVey", role = "rev",
+        comment = "Elaine reviewed the package for ropensci, see https://github.com/ropensci/onboarding/issues/116"),
+    person(family = "SQLite Consortium", role = "ctb", 
+        comment = "Authors of included SQLite code"))
+Description: Download and aggregate data from all public hire bicycle systems
+    which provide open data, currently including 'Santander' Cycles in London,
+    U.K.; from the U.S.A., 'Ford GoBike' in San Francisco CA, 'citibike' in New
+    York City NY, 'Divvy' in Chicago IL, 'Capital Bikeshare' in Washington DC,
+    'Hubway' in Boston MA, 'Metro' in Los Angeles LA, 'Indego' in Philadelphia
+    PA, and 'Nice Ride' in Minnesota; 'Bixi' from Montreal, Canada; and 'mibici'
+    from Guadalajara, Mexico.
+License: GPL-3
+Depends: R (>= 3.0)
+Imports: DBI, dodgr, httr, lubridate, magrittr, methods, Rcpp, readxl,
+        RSQLite, reshape2, tibble, xml2
+Suggests: knitr, rmarkdown, roxygen2, testthat, covr
+LinkingTo: BH, Rcpp
+VignetteBuilder: knitr
+SystemRequirements: C++11
+NeedsCompilation: yes
+URL: https://github.com/ropensci/bikedata
+BugReports: https://github.com/ropensci/bikedata/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+X-schema.org-applicationCategory: Data Access
+X-schema.org-keywords: bicycle-hire-systems, bike-hire-systems,
+        bike-hire, bicycle-hire, database, bike-data
+X-schema.org-isPartOf: https://ropensci.org
+Packaged: 2019-05-09 08:50:45 UTC; markus
+Author: Mark Padgham [aut, cre] (<https://orcid.org/0000-0003-2172-5265>),
+  Richard Ellison [aut],
+  Tom Buckley [aut],
+  Bea Hernández [rev] (Bea reviewed the package for ropensci, see
+    https://github.com/ropensci/onboarding/issues/116),
+  Elaine McVey [rev] (Elaine reviewed the package for ropensci, see
+    https://github.com/ropensci/onboarding/issues/116),
+  SQLite Consortium [ctb] (Authors of included SQLite code)
+Maintainer: Mark Padgham <mark.padgham@email.com>
+Repository: CRAN
+Date/Publication: 2019-05-09 09:30:07 UTC

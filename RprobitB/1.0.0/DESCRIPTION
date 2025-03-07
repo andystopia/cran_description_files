@@ -1,0 +1,42 @@
+Package: RprobitB
+Type: Package
+Title: Bayes Estimation of Latent Class Mixed Multinomial Probit Models
+Version: 1.0.0
+Date: 2021-11-11
+Authors@R: c(
+    person("Lennart", "Oelschl\u00e4ger", 
+           email = "lennart.oelschlaeger@uni-bielefeld.de", 
+           role = c("aut", "cre")),
+    person("Dietmar", "Bauer", 
+           email = "dietmar.bauer@uni-bielefeld.de", 
+           role = "aut"),
+    person("Sebastian", "B\u00fcscher", 
+           email = "sebastian.buescher@uni-bielefeld.de", 
+           role = "ctb"),
+    person("Manuel", "Batram", 
+           email = "manuel.batram@uni-bielefeld.de", 
+           role = "ctb"))
+Description: 
+    Fitting latent class mixed multinomial probit (LCMMNP) models to simulated
+    or empirical choice data via Bayesian estimation. The number of latent 
+    classes can be updated within the algorithm on a weight-based strategy. 
+    For a reference on the method see Oelschlaeger and Bauer (2021) 
+    <https://trid.trb.org/view/1759753>.
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp, mvtnorm, viridis
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, mlogit, vdiffr, testthat (>= 3.0.0)
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-11-12 16:26:28 UTC; loelschlaeger
+Author: Lennart Oelschläger [aut, cre],
+  Dietmar Bauer [aut],
+  Sebastian Büscher [ctb],
+  Manuel Batram [ctb]
+Maintainer: Lennart Oelschläger <lennart.oelschlaeger@uni-bielefeld.de>
+Repository: CRAN
+Date/Publication: 2021-11-12 16:50:09 UTC

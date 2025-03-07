@@ -1,0 +1,28 @@
+Package: bggAnalytics
+Type: Package
+Title: BoardGameGeek's Board Game Data Analysis Tools
+Description: Tools for analysing board game data. Mainly focused on providing 
+    an interface for BoardGameGeek's XML API2 through R6 class system objects.
+    More details about the BoardGameGeek's API can be obtained here
+    <https://boardgamegeek.com/wiki/page/BGG_XML_API2>.
+Version: 0.2.0
+Author: Jakub Bujnowicz [aut, cre]
+Maintainer: Jakub Bujnowicz <bujnowiczgithub@gmail.com>
+URL: https://github.com/JakubBujnowicz/bggAnalytics
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Language: en-GB
+Imports: checkmate, pryr, stringr, utils, xml2
+Depends: R (>= 4.0.0), data.table, R6
+Collate: 'class_utils.R' 'bggAPI.R' 'bggAnalytics-package.R'
+        'bggCollection.R' 'bggGames.R' 'bggSearch.R' 'bgg_tools.R'
+        'custom_fetches.R' 'data.R' 'h_index.R' 'html_utils.R'
+        'params_utils.R' 'postprocessing.R' 'squeeze.R' 'utils.R'
+        'zzz.R'
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2021-09-23 18:05:28 UTC; User
+Repository: CRAN
+Date/Publication: 2021-09-23 18:20:05 UTC

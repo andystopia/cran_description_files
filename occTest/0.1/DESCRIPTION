@@ -1,0 +1,38 @@
+Package: occTest
+Title: Characterizing and Filtering Species Occurrence Data
+Version: 0.1
+Authors@R: c(person(given = "Josep M", family = "Serra-Diaz", email = "pep.agroparistech@gmail.com",
+                    role = c("aut", "cre")),
+             person(given = "Cory", family = "Merow", role = c("aut","ctb"), 
+             comment = "Cory co-developped the structure for testing blocks"),
+             person(given = "Jeremy", family = "Borderieux", role = "ctb", 
+             comment="Jeremy developped plotting and filtering functions"),
+             person(given = "Brian", family = "Maitner", role = "ctb", 
+             comment = "Brian developped and incorporated centroid and GNRS analysis")
+             )
+Description: Perform multiple tests for potential errors in species occurrence data and filter, and filter data according to users specifications.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Imports: raster, data.table, rgeos, rgdal, biogeo, stringr, alphahull,
+        plyr, sp, sf, methods, stats, utils, outliers,
+        CoordinateCleaner, tictoc, rgbif, countrycode, rnaturalearth,
+        svMisc, spocc, tidyverse, rnaturalearthdata, pingr, ggplot2,
+        DT, Matrix, dplyr, graphics, dataPreparation
+Suggests: GNRS, testthat, knitr, rmarkdown, rworldmap, cleangeo,
+        geosphere, originr, parallelsugar, assertthat
+Additional_repositories: https://pepbioalerts.github.io/drat
+NeedsCompilation: no
+Packaged: 2022-10-10 07:20:41 UTC; pserra
+Author: Josep M Serra-Diaz [aut, cre],
+  Cory Merow [aut, ctb] (Cory co-developped the structure for testing
+    blocks),
+  Jeremy Borderieux [ctb] (Jeremy developped plotting and filtering
+    functions),
+  Brian Maitner [ctb] (Brian developped and incorporated centroid and
+    GNRS analysis)
+Maintainer: Josep M Serra-Diaz <pep.agroparistech@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2022-10-10 17:00:05 UTC

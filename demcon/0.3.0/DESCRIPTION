@@ -1,0 +1,37 @@
+Package: demcon
+Type: Package
+Title: Interfacing with Popular Polity, Institutional, and
+        Constitutional Datasets
+Version: 0.3.0
+Authors@R: person("Joshua", "Brinks", email = "jbrinks@isciences.com",
+                  role = c("aut", "cre"))
+Description: An open-source toolkit developed by ISciences, LLC and the DANTE 
+    Project that is intended for learning, accessing, pre-processing, and 
+    visualizing popular political, institutional, and constitutional datasets. 
+    ‘demcon' aims to reduce barriers to entry in political science research by 
+    automating common acquisition and pre-processing procedures. This package 
+    particularly focuses on the V-Dem dataset (<https://www.v-dem.net/vdemds.html>),
+    and provides adaptations of methods presented in Fjelde, H., Knutsen, C. H. 
+    & Nygård, H. M. 2021, <doi:10.1093/isq/sqaa076>.
+License: GPL (>= 3)
+URL: https://gitlab.com/dante-sttr/demcon,
+        https://dante-sttr.gitlab.io/demcon/index.html,
+        https://www.isciences.com
+BugReports: https://gitlab.com/dante-sttr/demcon/-/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+Imports: countrycode, data.table, httr, rlang, stringr, utils
+Suggests: cshapes, sf, states (>= 0.3.0), knitr, ggplot2, rmarkdown,
+        rnaturalearth, rnaturalearthdata, rgeos, kableExtra, lubridate,
+        haven, readxl, ggrepel, png, testthat (>= 3.0.0), vdiffr,
+        compare, magrittr, devtools
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-08-31 22:10:21 UTC; Josh
+Author: Joshua Brinks [aut, cre]
+Maintainer: Joshua Brinks <jbrinks@isciences.com>
+Repository: CRAN
+Date/Publication: 2022-09-01 15:20:02 UTC

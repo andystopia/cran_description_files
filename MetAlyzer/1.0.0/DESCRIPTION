@@ -1,0 +1,48 @@
+Package: MetAlyzer
+Type: Package
+Title: Read and Analyze 'MetIDQ&trade;' Software Output Files
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Nils",
+           family = "Mechtel",
+           role = c("aut", "cre"),
+           email = "nils.mech@gmail.com",
+           comment = c(ORCID = "0000-0002-1278-7125")),
+    person(given = "Luis",
+           family = "Herfurth",
+           role = c("aut"),
+           email = "luis.herfurth@stud.uni-heidelberg.de",
+           comment = c(ORCID = "0009-0000-9933-3056")),
+    person(given = "Carolin",
+           family = "Andresen",
+           role = c("aut"),
+           email = "carolinandresen@googlemail.com",
+           comment = c(ORCID = "0000-0002-8960-7719")),
+    person(given = "Daniel",
+           family = "Huebschmann",
+           role = c("aut"),
+           email = "d.huebschmann@dkfz-heidelberg.de",
+           comment = c(ORCID = "0000-0002-6041-7049")))
+Maintainer: Nils Mechtel <nils.mech@gmail.com>
+Depends: R (>= 4.0.0)
+biocViews:
+Imports: SummarizedExperiment, openxlsx, stringr, dplyr, tidyr, tibble,
+        agricolae, ggplot2, ggrepel, utils, rlang, methods, data.table,
+        S4Vectors, qvalue
+Description: The 'MetAlyzer' S4 object provides methods to read and reformat metabolomics data for convenient data handling, statistics and downstream analysis. The resulting format corresponds to input data of the Shiny app 'MetaboExtract' (<https://www.metaboextract.shiny.dkfz.de/MetaboExtract/>).
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+URL: https://github.com/nilsmechtel/MetAlyzer
+BugReports: https://github.com/nilsmechtel/MetAlyzer/issues
+NeedsCompilation: no
+Packaged: 2024-03-12 21:21:42 UTC; nilsm
+Author: Nils Mechtel [aut, cre] (<https://orcid.org/0000-0002-1278-7125>),
+  Luis Herfurth [aut] (<https://orcid.org/0009-0000-9933-3056>),
+  Carolin Andresen [aut] (<https://orcid.org/0000-0002-8960-7719>),
+  Daniel Huebschmann [aut] (<https://orcid.org/0000-0002-6041-7049>)
+Repository: CRAN
+Date/Publication: 2024-03-13 00:00:02 UTC

@@ -1,0 +1,35 @@
+Package: tibbletime
+Type: Package
+Title: Time Aware Tibbles
+Version: 0.1.8
+Authors@R: c(
+    person("Davis", "Vaughan", email = "davis@rstudio.com", role = c("aut", "cre")),
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut"))
+  )
+Maintainer: Davis Vaughan <davis@rstudio.com>
+Description: Built on top of the 'tibble' package, 'tibbletime' is an extension
+  that allows for the creation of time aware tibbles. Some immediate
+  advantages of this include: the ability to perform time-based subsetting
+  on tibbles, quickly summarising and aggregating results by time periods,
+  and creating columns that can be used as 'dplyr' time-based groups.
+URL: https://github.com/business-science/tibbletime
+BugReports: https://github.com/business-science/tibbletime/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.4.0)
+Imports: assertthat (>= 0.2.1), dplyr (>= 1.0.10), glue (>= 1.6.2), hms
+        (>= 1.1.2), lubridate (>= 1.9.1), pillar (>= 1.8.1), purrr (>=
+        0.3.5), Rcpp (>= 1.0.9), rlang (>= 1.0.6), tibble (>= 3.1.8),
+        vctrs (>= 0.5.0), zoo (>= 1.8-11), lifecycle (>= 1.0.3)
+Suggests: broom, covr, gapminder, knitr, rmarkdown, testthat, tidyr (>=
+        1.0.0)
+VignetteBuilder: knitr
+LinkingTo: Rcpp (>= 1.0.10)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2023-01-24 18:23:24 UTC; davis
+Author: Davis Vaughan [aut, cre],
+  Matt Dancho [aut]
+Repository: CRAN
+Date/Publication: 2023-01-24 19:10:02 UTC

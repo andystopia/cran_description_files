@@ -1,0 +1,30 @@
+Package: UPG
+Type: Package
+Title: Efficient Bayesian Models for Binary and Categorical Data
+Version: 0.2.2
+Authors@R: c(person("Gregor","Zens",role=c("aut","cre"),email="gzens@wu.ac.at"),
+             person("Sylvia","Fr�hwirth-Schnatter", role="aut"),
+             person("Helga","Wagner", role="aut"),
+             person("Daniel F.","Schmidt", role="ctb"),
+             person("Enes", "Makalic", role="ctb"))
+Author: Gregor Zens [aut, cre],
+  Sylvia Fr�hwirth-Schnatter [aut],
+  Helga Wagner [aut],
+  Daniel F. Schmidt [ctb],
+  Enes Makalic [ctb]
+Maintainer: Gregor Zens <gzens@wu.ac.at>
+Description: Highly efficient Bayesian implementations of probit, logit, multinomial logit and binomial logit models. Functions for plotting and tabulating the estimation output are available as well. Estimation is based on Gibbs sampling where the Markov chain Monte Carlo algorithms are based on the latent variable representations and boosting algorithms outlined in Fr�hwirth-Schnatter S., Zens G., Wagner H. (2020) <arXiv:2011.06898>. The underlying implementation is written in C++.
+Encoding: latin1
+License: GPL-3
+Language: en-US
+Depends: R (>= 3.5.0)
+SystemRequirements: C++11
+Imports: ggplot2, knitr, matrixStats, mnormt, pgdraw, reshape2, Rcpp,
+        RcppProgress, coda
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-01-02 10:06:10 UTC; g.zens
+Repository: CRAN
+Date/Publication: 2021-01-07 09:00:05 UTC

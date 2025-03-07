@@ -1,0 +1,27 @@
+Package: holodeck
+Title: A Tidy Interface for Simulating Multivariate Data
+Version: 0.2.1
+Authors@R: 
+    person(given = "Eric",
+           family = "Scott",
+           role = c("aut", "cre"),
+           email = "scottericr@gmail.com",
+           comment =c(ORCID = "0000-0002-7430-7879"))
+Description: Provides pipe-friendly (%>%) wrapper functions for MASS::mvrnorm() to create simulated multivariate data sets
+    with groups of variables with different degrees of variance, covariance, and effect size. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+biocViews:
+Imports: dplyr, tibble, MASS, purrr, rlang, assertthat
+RoxygenNote: 7.1.0
+URL: https://github.com/Aariq/holodeck
+BugReports: https://github.com/Aariq/holodeck/issues
+Suggests: testthat, covr, knitr, rmarkdown, mice, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-25 23:00:30 UTC; scottericr
+Author: Eric Scott [aut, cre] (<https://orcid.org/0000-0002-7430-7879>)
+Maintainer: Eric Scott <scottericr@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-26 10:20:03 UTC

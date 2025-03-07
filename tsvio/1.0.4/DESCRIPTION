@@ -1,0 +1,32 @@
+Package: tsvio
+Title: Simple Utilities for Tab-Separated-Value (TSV) Files
+Version: 1.0.4
+Authors@R: 
+  c(person(given=c("Bradley", "M"), family="Broom", role=c("aut"), email="bmbroom@mdanderson.org", comment=c(ORCID="0000-0002-0915-3164")),
+    person(given=c("Mary", "A"), family="Rohrdanz", role=c("ctb", "cre"), email="marohrdanz@mdanderson.org"),
+    person(given="Chris", family="Wakefield", role=c("ctb"), email="cwakefield@mdanderson.org"),
+    person(given="James", family="Melott", role=c("ctb"), email="jmmelott@mdanderson.org"),
+    person(given="Paul", family="Hsieh", role=c("ctb")),
+    person(given="MD Anderson Cancer Center", role=c("cph")))
+Depends: R (>= 3.4.0)
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Description: Utilities for rapidly loading specified rows and/or columns of data from large tab-separated value (tsv) files (large: e.g. 1 GB file of 10000 x 10000 matrix). 'tsvio' is an R wrapper to 'C' code that creates an index file for the rows of the tsv file, and uses that index file to collect rows and/or columns from the tsv file without reading the whole file into memory.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/MD-Anderson-Bioinformatics/tsvio
+NeedsCompilation: yes
+LazyLoad: Yes
+Collate: 'interface.R'
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Packaged: 2023-10-03 16:46:50 UTC; marohrdanz
+Author: Bradley M Broom [aut] (<https://orcid.org/0000-0002-0915-3164>),
+  Mary A Rohrdanz [ctb, cre],
+  Chris Wakefield [ctb],
+  James Melott [ctb],
+  Paul Hsieh [ctb],
+  MD Anderson Cancer Center [cph]
+Maintainer: Mary A Rohrdanz <marohrdanz@mdanderson.org>
+Repository: CRAN
+Date/Publication: 2023-10-04 16:10:02 UTC

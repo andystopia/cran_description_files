@@ -1,0 +1,54 @@
+Type: Package
+Package: FaaSr
+Title: FaaS (Function as a Service) Package
+Version: 1.3.0
+Authors@R: c(person("Figueiredo", "Renato", role = c("aut", "cre", "ths", "cph"),
+                    email = "renatof@ufl.edu",
+                    comment = c(ORCID = "0000-0001-9841-6060")),
+             person("Park", "Sungjae", role = "aut", comment = c(ORCID = "0009-0000-5357-804X")),
+             person("Mu", "Nan", role = "ctb"),
+             person("Ku", "Yun-Jung", role = "ctb"),
+             person("Daneshmand", "Vahid", role = "ctb"),
+             person("Thomas", "R. Quinn", role = "aut"),
+             person("Carey", "Cayelan", role = "ctb")
+	     )
+Maintainer: Figueiredo Renato <renatof@ufl.edu>
+Description: Allows users to create and deploy the workflow with multiple functions
+    in Function-as-a-Service (FaaS) cloud computing platforms.
+    The 'FaaSr' package makes it simpler for R developers to use FaaS platforms by providing the following functionality:
+    1) Parsing and validating a JSON-based payload compliant to 'FaaSr' schema supporting multiple FaaS platforms
+    2) Invoking user functions written in R in a Docker container (derived from rocker), using a list generated from
+       the parser as argument
+    3) Downloading/uploading of files from/to S3 buckets using simple primitives
+    4) Logging to files in S3 buckets
+    5) Triggering downstream actions supporting multiple FaaS platforms
+    6) Generating FaaS-specific API calls to simplify the registering of a user's workflow with a FaaS platform
+    Supported FaaS platforms:
+    Apache OpenWhisk <https://openwhisk.apache.org/>
+    GitHub Actions <https://github.com/features/actions>
+    Amazon Web Services (AWS) Lambda <https://aws.amazon.com/lambda/>
+    Supported cloud data storage for persistent storage:
+    Amazon Web Services (AWS) Simple Storage Service (S3) <https://aws.amazon.com/s3/>.
+License: MIT + file LICENSE
+URL: https://github.com/FaaSr/FaaSr-package
+BugReports: https://github.com/FaaSr/FaaSr-package/issues
+Depends: R (>= 3.5.0)
+Imports: jsonlite, httr, uuid, paws.application.integration,
+        paws.compute, paws.storage, paws.security.identity, cli,
+        jsonvalidate, base64enc, sodium, askpass
+Suggests: arrow, glue, rmarkdown, paws.common, testthat, knitr,
+        devtools, utils, methods, withr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-06-10 14:53:37 UTC; spark
+Author: Figueiredo Renato [aut, cre, ths, cph]
+    (<https://orcid.org/0000-0001-9841-6060>),
+  Park Sungjae [aut] (<https://orcid.org/0009-0000-5357-804X>),
+  Mu Nan [ctb],
+  Ku Yun-Jung [ctb],
+  Daneshmand Vahid [ctb],
+  Thomas R. Quinn [aut],
+  Carey Cayelan [ctb]
+Repository: CRAN
+Date/Publication: 2024-06-10 15:20:02 UTC

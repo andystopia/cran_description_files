@@ -1,0 +1,39 @@
+Package: mutualinf
+Type: Package
+Title: Calculation and Decomposition of the Mutual Information Index
+Version: 1.0.0
+Authors@R: c(person("Rafael", "Fuentealba-Chaura", email = "rfuentealba@inf.uct.cl", role = c("aut", "cre")),
+              person("Ricardo", "Mora", email = "ricmora@eco.uc3m.es", role = "aut"),
+              person("Julio", "Rojas-Mora", email = "jrojas@inf.uct.cl", role = "aut"))
+Description: The Mutual Information Index (M) introduced to social science literature by
+    Theil and Finizza (1971) <doi:10.1080/0022250X.1971.9989795> is a multigroup
+    segregation measure that is highly decomposable and that according to Frankel
+    and Volij (2011) <doi:10.1016/j.jet.2010.10.008> and Mora and Ruiz-Castillo
+    (2011) <doi:10.1111/j.1467-9531.2011.01237.x> satisfies the Strong Unit
+    Decomposability and Strong Group Decomposability properties. This package allows
+    calculating and decomposing the total index value into its "between" and
+    "within" terms. These last terms can also be decomposed into their
+    contributions, either by group or unit characteristics. The factors that produce
+    each "within" term can also be displayed at the user's request. The results can
+    be calculated considering a variable or sets of variables that define separate
+    clusters.
+License: GPL-3
+Imports: data.table, parallel, stats
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/RafaelFuentealbaC/mutualinf
+BugReports: https://github.com/RafaelFuentealbaC/mutualinf/issues
+Depends: R (>= 2.10)
+RoxygenNote: 7.1.1
+Collate: 'Data_Source.R' 'get_general_contribution.R'
+        'get_proportion.R' 'get_internal_data.R' 'M_within.R'
+        'mutual.R' 'get_contribution.R' 'M_value.R' 'M.R' 'globals.R'
+        'prepare_data.R'
+NeedsCompilation: no
+Packaged: 2021-07-12 23:21:39 UTC; rafael
+Author: Rafael Fuentealba-Chaura [aut, cre],
+  Ricardo Mora [aut],
+  Julio Rojas-Mora [aut]
+Maintainer: Rafael Fuentealba-Chaura <rfuentealba@inf.uct.cl>
+Repository: CRAN
+Date/Publication: 2021-07-13 15:20:05 UTC

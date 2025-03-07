@@ -1,0 +1,54 @@
+Package: tidychangepoint
+Title: A Tidy Framework for Changepoint Detection Analysis
+Version: 0.0.1
+Authors@R: c(
+    person("Benjamin S.", "Baumer", email = "ben.baumer@gmail.com", 
+      role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-3279-0516")
+    ),
+    person(
+      "Biviana Marcela", "Suarez Sierra", email = "bmsuarezs@eafit.edu.co", 
+      role = c("aut"), comment = c(ORCID = "0000-0003-2151-3537")
+    ),    
+    person(
+      "Arrigo", "Coen", role = c("aut"), 
+      comment = c(ORCID = "0000-0001-7798-7104")
+    ),
+    person(
+      "Carlos A.", "Taimal", role = c("aut"), 
+      comment = c(ORCID = "0000-0002-8716-1282")
+    ),
+    person(
+      "Xueheng", "Shi", role = c("ctb")
+    )
+  )
+Description: Changepoint detection algorithms for R are widespread but have
+    different interfaces and reporting conventions. 
+    This makes the comparative analysis of results difficult. 
+    We solve this problem by providing a tidy, unified interface for several 
+    different changepoint detection algorithms. 
+    We also provide consistent numerical and graphical reporting leveraging 
+    the 'broom' and 'ggplot2' packages. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: broom, changepoint, cli, dplyr, GA, ggplot2, lifecycle,
+        memoise, methods, patchwork, purrr, scales, stringr, tibble,
+        tidyr, tsibble, vctrs, wbs, xts, zoo
+Depends: R (>= 4.1)
+LazyData: true
+Suggests: bench, knitr, here, readr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://beanumber.github.io/tidychangepoint/
+NeedsCompilation: no
+Packaged: 2024-07-31 18:52:59 UTC; bbaumer
+Author: Benjamin S. Baumer [aut, cre, cph]
+    (<https://orcid.org/0000-0002-3279-0516>),
+  Biviana Marcela Suarez Sierra [aut]
+    (<https://orcid.org/0000-0003-2151-3537>),
+  Arrigo Coen [aut] (<https://orcid.org/0000-0001-7798-7104>),
+  Carlos A. Taimal [aut] (<https://orcid.org/0000-0002-8716-1282>),
+  Xueheng Shi [ctb]
+Maintainer: Benjamin S. Baumer <ben.baumer@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-19 08:50:02 UTC

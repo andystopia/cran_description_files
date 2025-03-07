@@ -1,0 +1,48 @@
+Type: Package
+Package: fastcpd
+Title: Fast Change Point Detection via Sequential Gradient Descent
+Version: 0.13.1
+Authors@R: c(
+    person("Xingchi", "Li", , "anthony.li@stat.tamu.edu",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0006-2493-0853")),
+    person("Xianyang", "Zhang", , "zhangxiany@stat.tamu.edu",
+           role = c("aut", "cph"))
+  )
+Description: Implements fast change point detection algorithm based on the
+    paper "Sequential Gradient Descent and Quasi-Newton's Method for
+    Change-Point Analysis" by Xianyang Zhang, Trisha Dawn
+    <https://proceedings.mlr.press/v206/zhang23b.html>. The algorithm is
+    based on dynamic programming with pruning and sequential gradient
+    descent. It is able to detect change points a magnitude faster than
+    the vanilla Pruned Exact Linear Time(PELT). The package includes
+    examples of linear regression, logistic regression, Poisson
+    regression, penalized linear regression data, and whole lot more
+    examples with custom cost function in case the user wants to use their
+    own cost function.
+License: GPL (>= 3)
+URL: https://fastcpd.xingchi.li, https://github.com/doccstat/fastcpd
+BugReports: https://github.com/doccstat/fastcpd/issues
+Depends: R (>= 2.10)
+Imports: fastglm, forecast, glmnet, Matrix, methods, Rcpp (>= 0.11.0),
+        stats, tseries, utils
+Suggests: abind, breakfast, changepoint, cpm, CptNonPar, ecp, fpop,
+        ggplot2, gridExtra, InspectChangepoint, jointseg, knitr,
+        lubridate, matrixStats, mcp, mockthat, mosum, mvtnorm, not,
+        numDeriv, Rbeast, rmarkdown, segmented, stepR, strucchange,
+        testthat (>= 3.0.0), VARDetect, wbs, xml2, zoo
+LinkingTo: progress, Rcpp, RcppArmadillo, testthat
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: vignettes-comparison-pelt, fastcpd_ts
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-03-31 00:10:48 UTC; doccstat
+Author: Xingchi Li [aut, cre, cph] (<https://orcid.org/0009-0006-2493-0853>),
+  Xianyang Zhang [aut, cph]
+Maintainer: Xingchi Li <anthony.li@stat.tamu.edu>
+Repository: CRAN
+Date/Publication: 2024-04-01 15:50:06 UTC

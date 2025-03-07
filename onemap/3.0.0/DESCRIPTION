@@ -1,0 +1,70 @@
+Package: onemap
+Title: Construction of Genetic Maps in Experimental Crosses
+Version: 3.0.0
+Description: Analysis of molecular marker data from model (backcrosses,
+    F2 and recombinant inbred lines) and non-model systems (i. e.
+    outcrossing species). For the later, it allows statistical
+    analysis by simultaneously estimating linkage and linkage
+    phases (genetic map construction) according to Wu et al. (2002)
+    <doi:10.1006/tpbi.2002.1577>. All analysis are based on multipoint 
+    approaches using hidden Markov models.
+Authors@R: c(person("Gabriel", 
+                    "Margarido", 
+                    role = "aut",
+                    email = "gramarga@usp.br"), 
+             person("Marcelo", 
+                    "Mollinari", 
+                    role = "aut"), 
+             person("Cristiane", 
+                    "Taniguti", 
+                    role=c("ctb", "cre"), 
+                    email="chtaniguti@tamu.edu"),
+             person("Getulio", 
+                    "Ferreira", 
+                    role="ctb"),
+             person("Rodrigo", 
+                    "Amadeu", 
+                    role = "ctb"),
+             person("Karl",
+                    "Broman", 
+                    role = "ctb"),
+            person(given = "Katharine",
+                    family = "Preedy",
+                    role = c("ctb", "cph"),
+                    comment = "MDS ordering algorithm"),
+            person(given = "Bastian", 
+                    family = "Schiffthaler", 
+                    role = c("ctb","cph"),
+                    comment = "HMM parallelization"),        
+             person("Augusto", 
+                    "Garcia", 
+                    role = c("aut", "ctb"), 
+                    email = "augusto.garcia@usp.br"))
+Author: Gabriel Margarido [aut],
+  Marcelo Mollinari [aut],
+  Cristiane Taniguti [ctb, cre],
+  Getulio Ferreira [ctb],
+  Rodrigo Amadeu [ctb],
+  Karl Broman [ctb],
+  Katharine Preedy [ctb, cph] (MDS ordering algorithm),
+  Bastian Schiffthaler [ctb, cph] (HMM parallelization),
+  Augusto Garcia [aut, ctb]
+LinkingTo: Rcpp (>= 0.10.5)
+Depends: R (>= 3.6.0)
+Imports: ggplot2 (>= 2.2.1), plotly (>= 4.7.1), reshape2 (>= 1.4.1),
+        Rcpp (>= 0.10.5), graphics, methods, stats, utils, grDevices,
+        smacof, princurve, parallel, dplyr, tidyr, htmlwidgets, ggpubr,
+        RColorBrewer, dendextend, rebus, vcfR (>= 1.6.0)
+Suggests: knitr (>= 1.10), rmarkdown, testthat, stringr
+VignetteBuilder: knitr
+Encoding: UTF-8
+License: GPL-3
+URL: https://github.com/augusto-garcia/onemap
+BugReports: https://github.com/augusto-garcia/onemap/wiki
+Maintainer: Cristiane Taniguti <chtaniguti@tamu.edu>
+Repository: CRAN
+Packaged: 2022-11-26 04:36:06 UTC; chtan
+NeedsCompilation: yes
+Date/Publication: 2022-11-26 05:00:02 UTC
+RoxygenNote: 7.1.2
+biocViews:

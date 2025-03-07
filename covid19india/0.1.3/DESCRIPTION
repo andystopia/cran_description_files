@@ -1,0 +1,27 @@
+Package: covid19india
+Type: Package
+Title: Pulling Clean Data from Covid19india.org
+Version: 0.1.3
+Authors@R: c(person("Max", "Salvatore", email = "mmsalva@umich.edu", role = c("aut", "cre")), 
+    person("Michael", "Kleinsasser", email = "mkleinsa@umich.edu", role = c("aut")))
+Description: Pull raw and pre-cleaned versions of national and state-level 
+    COVID-19 time-series data from covid19india.org <https://www.covid19india.org>. 
+    Easily obtain and merge case count data, testing data, and vaccine data. 
+    Also assists in calculating the time-varying effective reproduction number 
+    with sensible parameters for COVID-19.
+URL: https://github.com/maxsal/covid19india
+BugReports: https://github.com/maxsal/covid19india/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: EpiEstim, cli, dplyr, gt, httr, tibble, tidyr, glue, janitor,
+        magrittr, scales, purrr, readr, stringr, tidyselect
+Depends: R (>= 3.6)
+NeedsCompilation: no
+Packaged: 2021-07-27 16:16:35 UTC; maxsalvatore
+Author: Max Salvatore [aut, cre],
+  Michael Kleinsasser [aut]
+Maintainer: Max Salvatore <mmsalva@umich.edu>
+Repository: CRAN
+Date/Publication: 2021-07-28 07:40:02 UTC

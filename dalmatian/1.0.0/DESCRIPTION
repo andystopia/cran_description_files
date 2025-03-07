@@ -1,0 +1,27 @@
+Package: dalmatian
+Title: Automating the Fitting of Double Linear Mixed Models in 'JAGS'
+        and 'nimble'
+Version: 1.0.0
+Authors@R: c(
+  person("Simon", "Bonner",email="simon.bonner@uwo.ca", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2063-4572")),
+  person("Hanna","Kim",email="hkim787@uwo.ca",role=c("aut")))
+Description: Automates fitting of double GLM in 'JAGS'. Includes automatic
+    generation of 'JAGS' scripts, running 'JAGS' or 'nimble' via the 'rjags'
+    and 'nimble' package, and summarizing the resulting output. For further
+    information  see Bonner, Kim, Westneat, Mutzel, Wright, and Schofield
+    <doi:10.18637/jss.v100.i10>. 
+Depends: R (>= 3.5.0)
+License: GPL-2
+LazyData: true
+VignetteBuilder: knitr
+Imports: coda, ggmcmc, dglm, tidyr, dplyr, rlang
+Suggests: rmarkdown, rjags, nimble, knitr, ggplot2, parallel, dclone
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2021-11-22 12:58:47 UTC; sbonner
+Author: Simon Bonner [aut, cre] (<https://orcid.org/0000-0003-2063-4572>),
+  Hanna Kim [aut]
+Maintainer: Simon Bonner <simon.bonner@uwo.ca>
+Repository: CRAN
+Date/Publication: 2021-11-22 19:40:02 UTC

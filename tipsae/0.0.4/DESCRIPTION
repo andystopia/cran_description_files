@@ -1,0 +1,41 @@
+Package: tipsae
+Title: Tools for Handling Indices and Proportions in Small Area
+        Estimation
+Version: 0.0.4
+Authors@R: 
+    c(person(given = "Silvia",
+           family = "De Nicolò",
+           role = c("aut", "cre"),
+           email = "silvia.denicolo@phd.unipd.it",
+           comment = c(ORCID = "0000-0001-5052-6527")), 
+           person(given = "Aldo",
+           family = "Gardini",
+           role = c("aut"),
+           email = "aldo.gardini2@unibo.it",
+           comment = c(ORCID = "0000-0002-2164-5815")))
+Description: It allows for mapping proportions and indicators defined on the unit interval. It implements Beta-based small area methods comprising the classical Beta regression models, the Flexible Beta model and Zero and/or One Inflated extensions (Janicki 2020 <doi:10.1080/03610926.2019.1570266>). Such methods, developed within a Bayesian framework through Stan <https://mc-stan.org/>, come equipped with a set of diagnostics and complementary tools, visualizing and exporting functions. A Shiny application with a user-friendly interface can be launched to further simplify the process.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+VignetteBuilder: R.rsp
+RdMacros: Rdpack
+Biarch: true
+NeedsCompilation: yes
+Depends: R (>= 3.5.0), shiny (>= 1.0.3)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.1.1), loo (>= 2.3.1), ggplot2 (>=
+        3.3.2), gridExtra (>= 2.3), maptools (>= 1.0.2), rgeos, sp,
+        spdep, broom, nlme (>= 3.1.152), stats, spam, ggpubr, callr,
+        Rdpack
+Suggests: R.rsp
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Packaged: 2022-02-09 16:40:41 UTC; Acer
+Author: Silvia De Nicolò [aut, cre] (<https://orcid.org/0000-0001-5052-6527>),
+  Aldo Gardini [aut] (<https://orcid.org/0000-0002-2164-5815>)
+Maintainer: Silvia De Nicolò <silvia.denicolo@phd.unipd.it>
+Repository: CRAN
+Date/Publication: 2022-02-10 18:50:02 UTC

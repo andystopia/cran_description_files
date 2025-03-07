@@ -1,0 +1,21 @@
+Package: npcs
+Type: Package
+Title: Neyman-Pearson Classification via Cost-Sensitive Learning
+Version: 0.1.0
+Authors@R: c(person("Ye", "Tian", role = c("aut", "cre"), email = "ye.t@columbia.edu"), person("Yang", "Feng", role = "aut", email = "yang.feng@nyu.edu"))
+Description: We connect the multi-class Neyman-Pearson classification (NP) problem to the cost-sensitive learning (CS) problem, and propose two algorithms (NPMC-CX and NPMC-ER) to solve the multi-class NP problem through cost-sensitive learning tools. Under certain conditions, the two algorithms are shown to satisfy multi-class NP properties. More details are available in the paper "Neyman-Pearson Multi-class Classification via Cost-sensitive Learning" (Ye Tian and Yang Feng, 2021), which will be posted on arXiv soon.
+Imports: dfoptim, nnet, randomForest, e1071, magrittr, MASS,
+        smotefamily, rpart, foreach, naivebayes, caret, formatR
+License: GPL-2
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-10-18 14:16:01 UTC; yetian
+Author: Ye Tian [aut, cre],
+  Yang Feng [aut]
+Maintainer: Ye Tian <ye.t@columbia.edu>
+Repository: CRAN
+Date/Publication: 2021-10-19 07:20:05 UTC

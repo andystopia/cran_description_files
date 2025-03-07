@@ -1,0 +1,24 @@
+Package: sprint
+Title: Simple Parallel R INTerface
+Version: 1.0.0
+Date: 2012-01-20
+Author: University of Edinburgh SPRINT Team <sprint@ed.ac.uk>
+Maintainer: University of Edinburgh SPRINT Team <sprint@ed.ac.uk>
+Depends: R (>= 2.9.2), rlecuyer
+Suggests: ff (>= 2.1-1), randomForest, RankProd, cluster, RUnit,
+        multtest, IRanges
+Imports: boot
+SystemRequirements: MPI2, Unix
+Description: SPRINT (Simple Parallel R INTerface) is a parallel
+        framework for R. It provides a High Performance Computing (HPC)
+        harness which allow R scripts to run on HPC clusters. SPRINT
+        contains a library of selected R functions that have been
+        parallelized. Functions are named after the original R function
+        with the added prefix 'p', i.e. the parallel version of cor()
+        in SPRINT is called pcor(). Call to the parallel R functions
+        are included directly in standard R scripts.
+License: GPL (>= 3)
+URL: http://www.sprint-r.org
+Repository: CRAN
+Packaged: 2012-04-14 16:06:27 UTC; mpiotrow
+Date/Publication: 2012-04-15 06:30:08

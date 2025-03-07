@@ -1,0 +1,79 @@
+Package: mlr3torch
+Title: Deep Learning with 'mlr3'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Sebastian",
+             family = "Fischer",
+             role = c("cre", "aut"),
+             email = "sebf.fischer@gmail.com",
+             comment = c(ORCID = "0000-0002-9609-3197")),
+      person(given = "Bernd",
+             family = "Bischl",
+             role = "ctb",
+             email = "bernd_bischl@gmx.net",
+             comment = c(ORCID = "0000-0001-6002-6980")),
+      person(given = "Lukas",
+             family = "Burk",
+             role = "ctb",
+             email = "github@quantenbrot.de",
+             comment = c(ORCID = "0000-0001-7528-3795")),
+      person(given = "Martin",
+             family = "Binder",
+             role = "aut",
+             email = "mlr.developer@mb706.com"),
+      person(given = "Florian",
+             family = "Pfisterer",
+             role = "ctb",
+             email = "pfistererf@googlemail.com",
+             comment = c(ORCID = "0000-0001-8867-762X")))
+Description: Deep Learning library that extends the mlr3 framework by building
+  upon the 'torch' package. It allows to conveniently build, train,
+  and evaluate deep learning models without having to worry about low level
+  details. Custom architectures can be created using the graph language
+  defined in 'mlr3pipelines'.
+License: LGPL (>= 3)
+Depends: mlr3 (>= 0.20.0), mlr3pipelines (>= 0.6.0), torch (>= 0.13.0),
+        R (>= 3.5.0)
+Imports: backports, checkmate (>= 2.2.0), data.table, lgr, methods,
+        mlr3misc (>= 0.14.0), paradox (>= 1.0.0), R6, withr
+Suggests: callr, future, ggplot2, igraph, jsonlite, knitr, magick,
+        mlr3tuning (>= 1.0.0), progress, rmarkdown, rpart, viridis,
+        visNetwork, testthat (>= 3.0.0), torchvision (>= 0.6.0), waldo
+Config/testthat/edition: 3
+NeedsCompilation: no
+ByteCompile: no
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'CallbackSet.R' 'zzz.R' 'TorchCallback.R'
+        'CallbackSetCheckpoint.R' 'CallbackSetEarlyStopping.R'
+        'CallbackSetHistory.R' 'CallbackSetProgress.R' 'ContextTorch.R'
+        'DataBackendLazy.R' 'utils.R' 'DataDescriptor.R'
+        'LearnerTorch.R' 'LearnerTorchFeatureless.R'
+        'LearnerTorchImage.R' 'LearnerTorchMLP.R' 'task_dataset.R'
+        'shape.R' 'PipeOpTorchIngress.R' 'LearnerTorchModel.R'
+        'LearnerTorchTabResNet.R' 'LearnerTorchVision.R'
+        'ModelDescriptor.R' 'PipeOpModule.R' 'PipeOpTorch.R'
+        'PipeOpTaskPreprocTorch.R' 'PipeOpTorchActivation.R'
+        'PipeOpTorchAvgPool.R' 'PipeOpTorchBatchNorm.R'
+        'PipeOpTorchBlock.R' 'PipeOpTorchCallbacks.R'
+        'PipeOpTorchConv.R' 'PipeOpTorchConvTranspose.R'
+        'PipeOpTorchDropout.R' 'PipeOpTorchHead.R'
+        'PipeOpTorchLayerNorm.R' 'PipeOpTorchLinear.R' 'TorchLoss.R'
+        'PipeOpTorchLoss.R' 'PipeOpTorchMaxPool.R' 'PipeOpTorchMerge.R'
+        'PipeOpTorchModel.R' 'PipeOpTorchOptimizer.R'
+        'PipeOpTorchReshape.R' 'PipeOpTorchSoftmax.R'
+        'TaskClassif_lazy_iris.R' 'TaskClassif_mnist.R'
+        'TaskClassif_tiny_imagenet.R' 'TorchDescriptor.R'
+        'TorchOptimizer.R' 'bibentries.R' 'cache.R' 'lazy_tensor.R'
+        'learner_torch_methods.R' 'materialize.R' 'merge_graphs.R'
+        'nn_graph.R' 'paramset_torchlearner.R' 'preprocess.R'
+        'rd_info.R' 'with_torch_settings.R'
+Packaged: 2024-07-06 07:40:01 UTC; sebi
+Author: Sebastian Fischer [cre, aut] (<https://orcid.org/0000-0002-9609-3197>),
+  Bernd Bischl [ctb] (<https://orcid.org/0000-0001-6002-6980>),
+  Lukas Burk [ctb] (<https://orcid.org/0000-0001-7528-3795>),
+  Martin Binder [aut],
+  Florian Pfisterer [ctb] (<https://orcid.org/0000-0001-8867-762X>)
+Maintainer: Sebastian Fischer <sebf.fischer@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-08 05:40:02 UTC

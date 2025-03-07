@@ -1,0 +1,27 @@
+Package: didimputation
+Type: Package
+Title: Imputation Estimator from Borusyak, Jaravel, and Spiess (2021)
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Kyle",
+             family = "Butts",
+             role = c("aut","cre"),
+             email = "kyle.butts@colorado.edu",
+             comment = c(ORCID = "0000-0002-9048-8059")))
+Description: Estimates Two-way Fixed Effects difference-in-differences/event-study models using the imputation-based approach proposed by Borusyak, Jaravel, and Spiess (2021).
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 2.10), fixest (>= 0.9.0)
+Imports: Matrix, magrittr, Rcpp, broom, dplyr, glue, methods, rlang,
+        stringr
+Suggests: haven, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Packaged: 2021-07-29 16:19:25 UTC; kylebutts
+Author: Kyle Butts [aut, cre] (<https://orcid.org/0000-0002-9048-8059>)
+Maintainer: Kyle Butts <kyle.butts@colorado.edu>
+Repository: CRAN
+Date/Publication: 2021-08-02 08:10:07 UTC

@@ -1,0 +1,29 @@
+Package: evinf
+Type: Package
+Title: Inference with Extreme Value Inflated Count Data
+Version: 0.8.8
+Description: Allows users to model and draw inferences from extreme value inflated count data, and to evaluate these models and compare to non extreme-value inflated counterparts. The package is built to be compatible with standard presentation tools such as 'broom', 'tidy', and 'modelsummary'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, Rcpp, RcppArmadillo, foreach, doParallel, magrittr,
+        doRNG, tibble, mistr, tidyr, purrr, MASS, pscl, MLmetrics,
+        Rdpack, stringi, stringr, rlang, methods, stats, utils,
+        parallel
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+RdMacros: Rdpack
+Depends: generics, R (>= 2.10)
+Authors@R: c(
+    person("David", "Randahl", , "david.randahl@pcr.uu.se", role = c("cre", "aut")),
+    person("Johan", "Vegelius", role = "aut")
+  )
+URL: https://github.com/Doktorandahl/evinf
+BugReports: https://github.com/Doktorandahl/evinf/issues
+NeedsCompilation: yes
+Packaged: 2024-02-22 22:14:49 UTC; david
+Author: David Randahl [cre, aut],
+  Johan Vegelius [aut]
+Maintainer: David Randahl <david.randahl@pcr.uu.se>
+Repository: CRAN
+Date/Publication: 2024-02-23 09:40:11 UTC

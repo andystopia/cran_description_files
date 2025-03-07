@@ -1,0 +1,21 @@
+Package: CDGHMM
+Type: Package
+Title: Hidden Markov Models for Multivariate Panel Data
+Version: 0.1.0
+Date: 2024-05-13
+Authors@R: c(person("Mackenzie R.", "Neal", role = c("aut", "cre"), email = "nealm6@mcmaster.ca", comment = c(ORCID = "0009-0004-4619-3247")),
+  person("Alexa A.", "Sochaniwsky", role = c("aut")),
+  person("Paul D.", "McNicholas", role = c("aut"), comment = c(ORCID = "0000-0002-2482-523X")))
+Maintainer: Mackenzie R. Neal <nealm6@mcmaster.ca>
+Description: Estimates hidden Markov models from the family of Cholesky-decomposed Gaussian hidden Markov models (CDGHMM) under various missingness schemes. This family improves upon estimation of traditional Gaussian HMMs by directly modelling the distinct correlation structures that arise from longitudinal data, as well as, controlling for dropped out observations and non-random missingness. See Neal, Sochaniwsky and McNicholas (2024) <DOI:10.48550/arXiv.2404.04122>.
+License: GPL (>= 2)
+Imports: MASS, mvtnorm, ramify, cluster
+Encoding: UTF-8
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2024-05-15 16:47:16 UTC; mackenzieneal
+Author: Mackenzie R. Neal [aut, cre] (<https://orcid.org/0009-0004-4619-3247>),
+  Alexa A. Sochaniwsky [aut],
+  Paul D. McNicholas [aut] (<https://orcid.org/0000-0002-2482-523X>)
+Depends: R (>= 3.5.0)
+Date/Publication: 2024-05-16 14:10:20 UTC

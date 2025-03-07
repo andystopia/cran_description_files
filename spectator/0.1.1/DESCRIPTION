@@ -1,0 +1,29 @@
+Package: spectator
+Title: Interface to the 'Spectator Earth' API
+Version: 0.1.1
+Authors@R: 
+    person("Zivan", "Karaman", , "zivan.karaman@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8933-4589"))
+Description: Provides interface to the 'Spectator Earth' API <https://api.spectator.earth/>, 
+    mainly for obtaining the acquisition plans and satellite overpasses for Sentinel-1, 
+    Sentinel-2, Landsat-8 and Landsat-9 satellites. Current position and trajectory can 
+    also be obtained for a much larger set of satellites. It is also possible to search 
+    the archive for available images over the area of interest for a given (past) period, 
+    get the URL links to download the whole image tiles, or alternatively to download the 
+    image for just the area of interest based on selected spectral bands.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: geojsonsf, httr, sf
+Suggests: calendar, calendR, httptest, knitr, lubridate, lutz, maps,
+        rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-03-29 08:17:38 UTC; zivan
+Author: Zivan Karaman [aut, cre, cph] (<https://orcid.org/0000-0002-8933-4589>)
+Maintainer: Zivan Karaman <zivan.karaman@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-29 11:40:03 UTC

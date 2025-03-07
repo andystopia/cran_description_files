@@ -1,0 +1,26 @@
+Package: LMN
+Type: Package
+Title: Inference for Linear Models with Nuisance Parameters
+Version: 1.1.2
+Date: 2022-02-25
+Authors@R: c(person("Martin", "Lysy",
+                    email = "mlysy@uwaterloo.ca", role = c("aut", "cre")),
+             person("Bryan", "Yates", role = "aut"))
+Description: Efficient Frequentist profiling and Bayesian marginalization of parameters for which the conditional likelihood is that of a multivariate linear regression model.  Arbitrary inter-observation error correlations are supported, with optimized calculations provided for independent-heteroskedastic and stationary dependence structures.
+URL: https://github.com/mlysy/LMN/
+BugReports: https://github.com/mlysy/LMN/issues
+License: GPL-3
+Imports: Rcpp (>= 0.12.4.4), SuperGauss, stats
+LinkingTo: Rcpp, RcppEigen
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat, numDeriv, mniw, knitr, rmarkdown, bookdown,
+        kableExtra
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-02-25 13:06:37 UTC; mlysy
+Author: Martin Lysy [aut, cre],
+  Bryan Yates [aut]
+Maintainer: Martin Lysy <mlysy@uwaterloo.ca>
+Repository: CRAN
+Date/Publication: 2022-02-28 10:00:10 UTC

@@ -1,0 +1,38 @@
+Package: MOST
+Type: Package
+Title: Multiphase Optimization Strategy
+Version: 0.1.0
+Authors@R: c(
+    person("Linda","Collins", email = "LMcollins@psu.edu", role = "aut"),
+    person("Liying","Huang", email = "lxh37@psu.edu", role = c("aut","cre")),
+    person("John","Dziak", email = "jjd264@psu.edu", role ="aut"))
+Depends: R (>= 2.15.0)
+Copyright: The Pennsylvania State University
+Description: Provides functions similar to the 'SAS' macros previously provided
+              to accompany Collins, Dziak, and Li (2009) <DOI:10.1037/a0015826>
+              and Dziak, Nahum-Shani, and Collins (2012) <DOI:10.1037/a0026972>, papers
+              which outline practical benefits and challenges of factorial
+              and fractional factorial experiments for scientists interested
+              in developing biological and/or behavioral interventions, especially
+              in the context of the multiphase optimization strategy
+              (see Collins, Kugler & Gwadz 2016) <DOI:10.1007/s10461-015-1145-4>.  The package
+              currently contains three functions. First, RelativeCosts1() draws a graph
+              of the relative cost of complete and reduced factorial designs versus
+              other alternatives. Second, RandomAssignmentGenerator() returns a dataframe
+              which contains a list of random numbers that can be used to conveniently
+              assign participants to conditions in an experiment with
+              many conditions. Third, FactorialPowerPlan() estimates the power, detectable effect
+              size, or required sample size of a factorial or fractional factorial
+              experiment, for main effects or interactions, given several possible choices
+              of effect size metric, and allowing pretests and clustering.
+License: GPL (>= 2)
+LazyData: TRUE
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-11-08 20:48:26 UTC; admin_lxh37
+Author: Linda Collins [aut],
+  Liying Huang [aut, cre],
+  John Dziak [aut]
+Maintainer: Liying Huang <lxh37@psu.edu>
+Repository: CRAN
+Date/Publication: 2017-11-09 09:07:08 UTC

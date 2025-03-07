@@ -1,0 +1,33 @@
+Type: Package
+Package: EHRmuse
+Title: Multi-Cohort Selection Bias Correction using IPW and AIPW
+        Methods
+Version: 0.0.2.0
+Authors@R: c(
+    person("Ritoban", "Kundu", , "kundur@umich.edu", role = c("aut")),
+    person("Michael", "Kleinsasser", , "biostat-cran-manager@umich.edu", role = c("cre"))
+  )
+Description: Comprehensive toolkit for addressing selection 
+    bias in binary disease models across diverse non-probability samples, each 
+    with unique selection mechanisms. It utilizes Inverse Probability Weighting 
+    (IPW) and Augmented Inverse Probability Weighting (AIPW) methods to reduce 
+    selection bias effectively in multiple non-probability cohorts by integrating 
+    data from either individual-level or summary-level external sources. The 
+    package also provides a variety of variance estimation techniques. Please 
+    refer to Kundu et al. <doi:10.48550/arXiv.2412.00228>.
+License: GPL (>= 2)
+URL: https://github.com/Ritoban1/EHRmuse
+BugReports: https://github.com/Ritoban1/EHRmuse/issues
+Depends: R (>= 4.0.0)
+Imports: dplyr (>= 1.0.0), magrittr, MASS, nleqslv (>= 3.3.2), xgboost
+        (>= 1.4.1), survey (>= 4.1.0), stats, nnet (>= 7.3-17),
+        simplexreg (>= 0.1.6)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-17 14:47:35 UTC; mk
+Author: Ritoban Kundu [aut],
+  Michael Kleinsasser [cre]
+Maintainer: Michael Kleinsasser <biostat-cran-manager@umich.edu>
+Repository: CRAN
+Date/Publication: 2025-01-20 16:20:13 UTC

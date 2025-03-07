@@ -1,0 +1,33 @@
+Package: openeo
+Type: Package
+Title: Client Interface for 'openEO' Servers
+Version: 1.1.0
+Authors@R: c(
+        person(given="Florian", family="Lahn", email = "florian.lahn@eftas.com", role = c("aut", "cre")),
+        person(given=c("Peter","James"),family = "Zellner", email="peterjames.zellner@eurac.edu",role=c("ctb"))
+    )
+Description: Access data and processing functionalities of 'openEO' compliant back-ends in R.
+Depends: R (>= 3.3)
+Suggests: tibble, testthat, knitr, sf, geojsonsf, pkgdown, rmarkdown
+Imports: jsonlite, httr, methods, R6, lubridate, base64enc
+Encoding: UTF-8
+LazyData: false
+BugReports: https://github.com/Open-EO/openeo-r-client/issues
+URL: https://github.com/Open-EO/openeo-r-client
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+License: Apache License (>= 2)
+Collate: 'argument_types.R' 'authentication.R' 'zzz.R'
+        'capabilities-mapping.R' 'utilities.R' 'client.R' 'services.R'
+        'process_graph_building.R' 'user_defined_processes.R'
+        'coerce-functions.R' 'collection-functions.R' 'collections.R'
+        'debugging.R' 'jobs.R' 'ops.R' 'predefined_processes.R'
+        'print-functions.R' 'server_metadata.R' 'udf.R' 'user.R'
+        'viewer.R'
+NeedsCompilation: no
+Packaged: 2021-11-05 17:11:19 UTC; fla
+Author: Florian Lahn [aut, cre],
+  Peter James Zellner [ctb]
+Maintainer: Florian Lahn <florian.lahn@eftas.com>
+Repository: CRAN
+Date/Publication: 2021-11-08 08:50:02 UTC

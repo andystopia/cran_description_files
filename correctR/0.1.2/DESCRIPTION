@@ -1,0 +1,29 @@
+Package: correctR
+Type: Package
+Title: Corrected Test Statistics for Comparing Machine Learning Models
+        on Correlated Samples
+Version: 0.1.2
+Date: 2022-12-17
+Authors@R: c(
+  person("Trent", "Henderson", email = "then6675@uni.sydney.edu.au", role = c("cre", "aut"))
+  )
+Maintainer: Trent Henderson <then6675@uni.sydney.edu.au>
+Description: Calculate a set of corrected test statistics for cases when samples
+    are not independent, such as when classification accuracy values are obtained
+    over resamples or through k-fold cross-validation, as proposed by Nadeau and Bengio (2003) <doi:10.1023/A:1024068626366> 
+    and presented in Bouckaert and Frank (2004) <doi:10.1007/978-3-540-24775-3_3>.
+BugReports: https://github.com/hendersontrent/correctR/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: knitr, markdown, rmarkdown, pkgdown, testthat (>= 3.0.0)
+RoxygenNote: 7.2.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://hendersontrent.github.io/correctR/
+NeedsCompilation: no
+Packaged: 2022-12-19 00:59:44 UTC; User
+Author: Trent Henderson [cre, aut]
+Repository: CRAN
+Date/Publication: 2022-12-19 10:10:02 UTC

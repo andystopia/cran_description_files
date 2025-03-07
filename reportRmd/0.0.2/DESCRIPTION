@@ -1,0 +1,39 @@
+Package: reportRmd
+Title: Tidy Presentation of Clinical Reporting
+Version: 0.0.2
+Authors@R: c(
+    person(given="Lisa",family="Avery",email = "lisa.avery@uhn.ca",role=c("cre","aut")),
+    person(given="Ryan",family="Del Bel",email = "rdelbel@gmail.com",role="aut"),
+    person(given="Osvaldo",family="Espin-Garcia",email = "Osvaldo.Espin-Garcia@uhnresearch.ca",role="aut"),
+    person(given="Tyler",family="Pittman",email="Tyler.Pittman@uhnresearch.ca",role="aut",comment=c(ORCHID="0000-0002-5013-6980")),
+    person(given="Yanning",family="Wang",email = "21yw15@queensu.ca",role="ctr"),    
+    person(given="Jessica",family="Weiss",email = "jessica.weiss@uhn.ca",role="aut"),    
+    person(given="Wei", family="Xu",email = "wxu@uhnres.utoronto.ca",role="aut"))
+Description: Streamlined statistical reporting in 'Rmarkdown' environments. 
+    Facilitates the automated reporting of descriptive statistics, multiple 
+    univariate models, multivariable models and tables combining these outputs. 
+    Plotting functions include customisable survival curves, forest plots from 
+    logistic and ordinal regression and bivariate comparison plots.
+License: MIT + file LICENSE
+Suggests: rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: aod, cmprsk, geepack, ggplot2, ggpubr, gridExtra, kableExtra,
+        knitr, MASS, pander, plyr, rlang, rstatix, scales, survival
+Collate: 'helper.R' 'main.R' 'globals.R' 'data.R'
+Depends: R (>= 2.10)
+LazyData: true
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2023-01-13 17:31:20 UTC; lisa
+Author: Lisa Avery [cre, aut],
+  Ryan Del Bel [aut],
+  Osvaldo Espin-Garcia [aut],
+  Tyler Pittman [aut] (0000-0002-5013-6980),
+  Yanning Wang [ctr],
+  Jessica Weiss [aut],
+  Wei Xu [aut]
+Maintainer: Lisa Avery <lisa.avery@uhn.ca>
+Repository: CRAN
+Date/Publication: 2023-01-13 18:50:02 UTC

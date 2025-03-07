@@ -1,0 +1,54 @@
+Package: EMC2
+Title: Bayesian Hierarchical Analysis of Cognitive Models of Choice
+Version: 2.0.2
+Authors@R: 
+    c(person("Niek", "Stevenson", email = "niek.stevenson@gmail.com", 
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3206-7544")),
+      person("Michelle", "Donzallaz", 
+           role = c("aut")),
+      person("Andrew", "Heathcote", 
+           role = c("aut")),
+      person("Steven", "Miletić", 
+           role = c("ctb")),
+      person("Jochen", "Voss", 
+           role = c("ctb")),
+      person("Andreas", "Voss", 
+           role = c("ctb")))
+Description: Fit Bayesian (hierarchical) cognitive models
+    using a linear modeling language interface using particle metropolis Markov
+    chain Monte Carlo sampling with Gibbs steps. The diffusion decision model (DDM), 
+    linear ballistic accumulator model (LBA), racing diffusion model (RDM), and the lognormal
+    race model (LNR) are supported. Additionally, users can specify their own likelihood
+    function and/or choose for non-hierarchical
+    estimation, as well as for a diagonal, blocked or full multivariate normal
+    group-level distribution to test individual differences. Prior specification 
+    is facilitated through methods that visualize the (implied) prior. 
+    A wide range of plotting functions assist in assessing model convergence and
+    posterior inference. Models can be easily evaluated using functions
+    that plot posterior predictions or using relative model comparison metrics 
+    such as information criteria or Bayes factors.    
+    References: Stevenson et al. (2024) <doi:10.31234/osf.io/2e4dq>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), vdiffr
+Config/testthat/edition: 3
+Imports: abind, coda, corpcor, graphics, grDevices, magic, MASS,
+        matrixcalc, rtdists, methods, msm, mvtnorm, parallel, stats,
+        Matrix, Rcpp, Brobdingnag, corrplot, colorspace, psych, utils,
+        lpSolve
+LinkingTo: Rcpp
+Depends: R (>= 3.5.0)
+LazyData: true
+Config/testthat/parallel: true
+NeedsCompilation: yes
+Packaged: 2024-09-05 09:48:21 UTC; niek
+Author: Niek Stevenson [aut, cre] (<https://orcid.org/0000-0003-3206-7544>),
+  Michelle Donzallaz [aut],
+  Andrew Heathcote [aut],
+  Steven Miletić [ctb],
+  Jochen Voss [ctb],
+  Andreas Voss [ctb]
+Maintainer: Niek Stevenson <niek.stevenson@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-10 09:30:09 UTC

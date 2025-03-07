@@ -1,0 +1,18 @@
+Package: lsgl
+Type: Package
+Title: Linear Sparse Group Lasso
+Version: 1.2.0
+Date: 2015-09-16
+Author: Martin Vincent
+Maintainer: Martin Vincent <vincent@math.ku.dk>
+Description: Linear multiple output using sparse group lasso. The algorithm finds the sparse group lasso penalized maximum likelihood estimator. This result in feature and parameter selection, and parameter estimation. Use of multiple processors for cross validation and subsampling is supported through OpenMP. Development version is on github.
+URL: https://github.com/vincent-dk/lsgl
+License: GPL (>= 2)
+LazyLoad: yes
+Imports: methods, utils, stats
+Depends: R (>= 3.0.0), sglOptim (== 1.2.0), Matrix
+LinkingTo: sglOptim, Rcpp, RcppProgress, RcppArmadillo, BH
+NeedsCompilation: yes
+Packaged: 2015-09-19 20:44:44 UTC; martin
+Repository: CRAN
+Date/Publication: 2015-09-19 22:47:05

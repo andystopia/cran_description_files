@@ -1,0 +1,45 @@
+Package: BayesMultMeta
+Type: Package
+Title: Bayesian Multivariate Meta-Analysis
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Ohla", 
+             family = "Bodnar", 
+             role = "aut",
+             comment = c(ORCID = "0000-0003-1359-3311")),
+      person(given = "Taras", 
+             family = "Bodnar", 
+             role = "aut",
+             comment = c(ORCID = "0000-0001-7855-8221")),
+      person(given = "Erik",
+           family = "Thorsén",
+           role = c("aut", "cre"),
+           email = "erik.thorsen@math.su.se",
+           comment = c(ORCID = "0000-0001-5992-1216")))
+Author: Ohla Bodnar [aut] (<https://orcid.org/0000-0003-1359-3311>),
+  Taras Bodnar [aut] (<https://orcid.org/0000-0001-7855-8221>),
+  Erik Thorsén [aut, cre] (<https://orcid.org/0000-0001-5992-1216>)
+Maintainer: Erik Thorsén <erik.thorsen@math.su.se>
+Description: Objective Bayesian inference procedures for the parameters of the
+    multivariate random effects model with application to multivariate
+    meta-analysis. The posterior for the model parameters, namely the overall
+    mean vector and the between-study covariance matrix, are assessed by
+    constructing Markov chains based on the Metropolis-Hastings algorithms as
+    developed in Bodnar and Bodnar (2021) (<arXiv:2104.02105>). The
+    Metropolis-Hastings algorithm is designed under the assumption of the
+    normal distribution and the t-distribution when the Berger and Bernardo
+    reference prior and the Jeffreys prior are assigned to the model parameters.
+    Convergence properties of the generated Markov chains are investigated by
+    the rank plots and the split hat-R estimate based on the rank normalization,
+    which are proposed in Vehtari et al. (2021) (<DOI:10.1214/20-BA1221>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+Imports: assertthat, Rdpack
+Suggests: mvmeta, gplots, testthat
+RoxygenNote: 7.1.2
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2022-05-16 08:22:13 UTC; ethor
+Repository: CRAN
+Date/Publication: 2022-05-17 16:50:05 UTC

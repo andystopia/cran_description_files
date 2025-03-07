@@ -1,0 +1,44 @@
+Package: injurytools
+Title: A Toolkit for Sports Injury Data Analysis
+Version: 1.0.2
+Authors@R: c(
+    person(given = "Lore",
+           family = "Zumeta Olaskoaga",
+           role = c("aut", "cre"),
+           email = "lzumeta@bcamath.org",
+           comment = c(ORCID = "0000-0001-6141-1469")),
+    person(given = "Dae-Jin",
+           family = "Lee",
+           role = c("aut"),
+           email = "dlee@bcamath.org",
+           comment = c(ORCID = "0000-0002-8995-8535")))
+Description: Sports Injury Data analysis aims to identify and describe the
+  magnitude of the injury problem, and to gain more insights (e.g. determine
+  potential risk factors) by statistical modelling approaches. The 'injurytools'
+  package provides standardized routines and utilities that simplify such
+  analyses. It offers functions for data preparation, informative visualizations 
+  and descriptive and model-based analyses.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: covr, gridExtra, kableExtra, knitr, RColorBrewer, rmarkdown,
+        spelling, survival, survminer, coxme, pscl, lme4, MASS,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+Imports: checkmate, dplyr, forcats, ggplot2, lubridate, metR, purrr,
+        rlang, stats, stringr, tidyr, tidyselect, withr
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+URL: https://github.com/lzumeta/injurytools,
+        https://lzumeta.github.io/injurytools/
+BugReports: https://github.com/lzumeta/injurytools/issues
+NeedsCompilation: no
+Packaged: 2023-09-27 21:33:23 UTC; lzumeta
+Author: Lore Zumeta Olaskoaga [aut, cre]
+    (<https://orcid.org/0000-0001-6141-1469>),
+  Dae-Jin Lee [aut] (<https://orcid.org/0000-0002-8995-8535>)
+Maintainer: Lore Zumeta Olaskoaga <lzumeta@bcamath.org>
+Repository: CRAN
+Date/Publication: 2023-09-27 21:50:02 UTC

@@ -1,0 +1,32 @@
+Package: neuralGAM
+Type: Package
+Title: Interpretable Neural Network Based on Generalized Additive
+        Models
+Version: 1.0.0
+Authors@R: c(person("Ines", "Ortega-Fernandez", role = c("aut", "cre", "cph"),
+                     email = "iortega@gradiant.org", 
+                     comment = c(ORCID = "0000-0002-8041-6860")),
+              person("Marta", "Sestelo", role = c("aut","cph"),
+                      email = "sestelo@uvigo.es", 
+                      comment = c(ORCID = "0000-0003-4284-6509"))
+              )
+Maintainer: Ines Ortega-Fernandez <iortega@gradiant.org>
+Description: Neural network framework based on Generalized Additive Models from Hastie & Tibshirani (1990, ISBN:9780412343902), which trains a different neural network to estimate the contribution of each feature to the response variable. The networks are trained independently leveraging the local scoring and backfitting algorithms to ensure that the Generalized Additive Model converges and it is additive. The resultant Neural Network is a highly accurate and interpretable deep learning model, which can be used for high-risk AI practices where decision-making should be based on accountable and interpretable algorithms. 
+License: MPL-2.0
+BugReports: https://github.com/inesortega/neuralGAM/issues
+Encoding: UTF-8
+Imports: tensorflow, keras, ggplot2, magrittr, reticulate,
+        formula.tools, gridExtra
+SystemRequirements: Python (>= 3.9), TensorFlow
+        (https://www.tensorflow.org/)
+RoxygenNote: 7.2.3
+Suggests: covr, testthat (>= 3.0.0), fs, withr
+Config/testthat/edition: 3
+URL: https://inesortega.github.io/neuralGAM/
+NeedsCompilation: no
+Packaged: 2023-09-07 10:46:42 UTC; inesortega
+Author: Ines Ortega-Fernandez [aut, cre, cph]
+    (<https://orcid.org/0000-0002-8041-6860>),
+  Marta Sestelo [aut, cph] (<https://orcid.org/0000-0003-4284-6509>)
+Repository: CRAN
+Date/Publication: 2023-09-07 15:50:02 UTC

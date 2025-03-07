@@ -1,0 +1,73 @@
+Package: shinyscholar
+Version: 0.2.2
+Date: 2025-01-14
+Title: A Template for Creating Reproducible 'shiny' Applications
+Description: Create a skeleton 'shiny' application with create_template() that is
+    reproducible, can be saved and meets academic standards for attribution.
+    Forked from 'wallace'. Code is split into modules that are loaded and linked
+    together automatically and each call one function. Guidance pages explain
+    modules to users and flexible logging informs them of any errors. Options
+    enable asynchronous operations, viewing of source code, interactive maps and
+    data tables. Use to create complex analytical applications, following best
+    practices in open science and software development. Includes functions for
+    automating repetitive development tasks and an example application at
+    run_shinyscholar() that requires
+    install.packages("shinyscholar", dependencies = TRUE).
+Authors@R: 
+    c(person("Simon E. H.", "Smart", email = "simon.smart@cantab.net", role = c("aut", "cre", "cph")),
+      person("Tim", "Lucas", email =  "timcdlucas@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0003-4694-8107")),
+      person("Jamie M.", "Kass", email = "jamie.kass@oist.jp", role = "ctb"),
+      person("Gonzalo E.", "Pinilla-Buitrago", email = "gpinillabuitrago@gradcenter.cuny.edu", role = "ctb"),
+      person("Andrea", "Paz", email = "paz.andreita@gmail.com", role = "ctb"),
+      person("Bethany A.", "Johnson", email = "bjohnso005@citymail.cuny.edu", role = "ctb"),
+      person("Valentina", "Grisales-Betancur", email = "vgrisale@eafit.edu.co", role = "ctb"),
+      person("Dean", "Attali", email = "daattali@gmail.com", role = "ctb"),
+      person("Matthew E.", "Aiello-Lammens", email = "matt.lammens@gmail.com", role = "ctb"),
+      person("Cory", "Merow", email = "corymerow@gmail.com", role = "ctb"),
+      person("Mary E.", "Blair", email = "mblair1@amnh.org", role = "ctb"),
+      person("Robert P.", "Anderson", email = "randerson@ccny.cuny.edu", role = "ctb"),
+      person("Sarah I.", "Meenan", email = "sarah.meenan@gmail.com", role = "ctb"),
+      person("Olivier", "Broennimann", email = "olivier.broennimann@unil.ch", role = "ctb"),
+      person("Peter J.", "Galante", email = "pgalante@amnh.org", role = "ctb"),
+      person("Brian S.", "Maitner", email = "bmaitner@gmail.com", role = "ctb"),
+      person("Hannah L.", "Owens", email = "hannah.owens@gmail.com", role = "ctb"),
+      person("Sara", "Varela", email = "sara_varela@yahoo.com", role = "ctb"),
+      person("Bruno", "Vilela", email = "bvilela@wustl.edu", role = "ctb"),
+      person("Robert", "Muscarella", email = "bob.muscarella@gmail.com", role = "ctb"))
+Depends: R (>= 3.5.0), gargoyle, leaflet (>= 2.0.2), shiny (>= 1.8.1)
+Imports: curl, devtools, glue, knitr, magrittr, tools, zip
+Suggests: bslib, DT (>= 0.5), dplyr (>= 1.0.2), future, httr2,
+        knitcitations, leaflet.extras (>= 1.0.0), markdown, promises,
+        R6, RColorBrewer, renv, rintrojs, rmarkdown, shinyAce,
+        shinyalert, shinybusy, shinyjs, shinytest2, shinyWidgets (>=
+        0.6.0), terra, testthat, xml2
+License: GPL-3
+URL: https://simon-smart88.github.io/shinyscholar/
+BugReports: https://github.com/simon-smart88/shinyscholar/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-14 15:29:15 UTC; simon
+Author: Simon E. H. Smart [aut, cre, cph],
+  Tim Lucas [aut] (<https://orcid.org/0000-0003-4694-8107>),
+  Jamie M. Kass [ctb],
+  Gonzalo E. Pinilla-Buitrago [ctb],
+  Andrea Paz [ctb],
+  Bethany A. Johnson [ctb],
+  Valentina Grisales-Betancur [ctb],
+  Dean Attali [ctb],
+  Matthew E. Aiello-Lammens [ctb],
+  Cory Merow [ctb],
+  Mary E. Blair [ctb],
+  Robert P. Anderson [ctb],
+  Sarah I. Meenan [ctb],
+  Olivier Broennimann [ctb],
+  Peter J. Galante [ctb],
+  Brian S. Maitner [ctb],
+  Hannah L. Owens [ctb],
+  Sara Varela [ctb],
+  Bruno Vilela [ctb],
+  Robert Muscarella [ctb]
+Maintainer: Simon E. H. Smart <simon.smart@cantab.net>
+Repository: CRAN
+Date/Publication: 2025-01-15 18:30:02 UTC

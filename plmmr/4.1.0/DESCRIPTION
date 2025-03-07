@@ -1,0 +1,46 @@
+Package: plmmr
+Title: Penalized Linear Mixed Models for Correlated Data
+Version: 4.1.0
+Date: 2024-10-23
+Authors@R: c(
+    person("Tabitha K.", "Peter", , "tabitha-peter@uiowa.edu", role = "aut",
+           comment = c(ORCID = "0009-0005-2524-4751")),
+    person("Anna C.", "Reisetter", , "anna-reisetter@uiowa.edu", role = "aut",
+           comment = c(ORCID = "0000-0001-8332-4585")),
+    person("Patrick J.", "Breheny", , "patrick-breheny@uiowa.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0650-1119")),
+    person("Yujing", "Lu", role = "aut")
+  )
+Description: Fits penalized linear mixed models that correct for
+    unobserved confounding factors. 'plmmr' infers and corrects for the
+    presence of unobserved confounding effects such as population
+    stratification and environmental heterogeneity. It then fits a linear
+    model via penalized maximum likelihood. Originally designed for the
+    multivariate analysis of single nucleotide polymorphisms (SNPs)
+    measured in a genome-wide association study (GWAS), 'plmmr' eliminates
+    the need for subpopulation-specific analyses and post-analysis p-value
+    adjustments.  Functions for the appropriate processing of 'PLINK'
+    files are also supplied. For examples, see the package homepage.
+    <https://pbreheny.github.io/plmmr/>.
+License: GPL-3
+URL: https://pbreheny.github.io/plmmr/,
+        https://github.com/pbreheny/plmmr/
+Depends: bigalgebra, bigmemory, R (>= 4.4.0)
+Imports: biglasso (>= 1.6.0), data.table, glmnet, Matrix, ncvreg,
+        parallel, utils
+Suggests: bigsnpr, bigstatsr, graphics, grDevices, knitr, MASS,
+        rmarkdown, tinytest
+LinkingTo: BH, bigmemory, Rcpp, RcppArmadillo (>= 0.8.600)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-10-23 21:51:14 UTC; pbreheny
+Author: Tabitha K. Peter [aut] (<https://orcid.org/0009-0005-2524-4751>),
+  Anna C. Reisetter [aut] (<https://orcid.org/0000-0001-8332-4585>),
+  Patrick J. Breheny [aut, cre] (<https://orcid.org/0000-0002-0650-1119>),
+  Yujing Lu [aut]
+Maintainer: Patrick J. Breheny <patrick-breheny@uiowa.edu>
+Repository: CRAN
+Date/Publication: 2024-10-23 22:20:02 UTC

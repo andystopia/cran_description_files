@@ -1,0 +1,29 @@
+Package: confintROB
+Type: Package
+Title: Bootstrap Confidence Intervals for Robust and Classical Linear
+        Mixed Model Estimators
+Version: 1.0
+Date: 2024-04-02
+Authors@R: 
+  c(person("Fabio", "Mason", email = "fabio.mason@unige.ch", role = c("aut", "cre")),
+    person("Manuel", "Koller", email = "kollerma@proton.me", role = "aut"),
+    person("Eva", "Cantoni", email = "Eva.Cantoni@unige.ch", role = c("ctb", "ths")),
+    person("Paolo", "Ghisletta", email = "Paolo.Ghisletta@unige.ch", role = "ths"))
+Maintainer: Fabio Mason <fabio.mason@unige.ch>
+Encoding: UTF-8
+Description: The main function calculates confidence intervals (CI) for Mixed Models, utilizing both classical estimators from the lmer() function in the 'lme4' package and robust estimators from the rlmer() function in the 'robustlmm' package, as well as the varComprob() function in the 'robustvarComp' package. Three methods are available: the classical Wald method, the wild bootstrap, and the parametric bootstrap. Bootstrap methods offer flexibility in obtaining lower and upper bounds through percentile or BCa methods. More details are given in \n Mason, F., Cantoni, E., & Ghisletta, P. (2021) <doi:10.5964/meth.6607> and \n Mason, F., Cantoni, E., & Ghisletta, P. (2024) <doi:10.1037/met0000643>.
+License: GPL-2
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Depends: R (>= 3.5.0)
+Imports: foreach, lme4, MASS, mvtnorm, tidyr, methods
+Suggests: robustlmm (>= 3.1-1), robustvarComp (>= 0.1-7), lmerTest (>=
+        3.1-3), xtable, ggplot2, parallel, doParallel
+LazyData: true
+Packaged: 2024-04-02 11:47:45 UTC; mason
+Author: Fabio Mason [aut, cre],
+  Manuel Koller [aut],
+  Eva Cantoni [ctb, ths],
+  Paolo Ghisletta [ths]
+Repository: CRAN
+Date/Publication: 2024-04-02 13:42:06 UTC

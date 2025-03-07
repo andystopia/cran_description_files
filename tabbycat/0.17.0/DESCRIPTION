@@ -1,0 +1,30 @@
+Package: tabbycat
+Type: Package
+Title: Tabulate and Summarise Categorical Data
+Version: 0.17.0
+Authors@R: 
+    person(
+        given = "Oliver",
+        family = "Hawkins",
+        role = c("aut", "cre"),
+        email = "oli@olihawkins.com")
+Maintainer: Oliver Hawkins <oli@olihawkins.com>
+Description: Functions for tabulating and summarising categorical variables. 
+    Most functions are designed to work with dataframes, and use the 'tidyverse' 
+    idiom of taking the dataframe as the first argument so they work within 
+    pipelines. Equivalent functions that operate directly on vectors are also 
+    provided where it makes sense. This package aims to make exploratory data 
+    analysis involving categorical variables quicker, simpler and more robust.
+License: MIT + file LICENSE
+Depends: R (>= 3.4.0)
+Imports: dplyr (>= 1.0.0), janitor, magrittr, purrr, rlang, stringr,
+        tibble, tidyr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-11-22 12:13:16 UTC; oli
+Author: Oliver Hawkins [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-11-23 07:50:02 UTC

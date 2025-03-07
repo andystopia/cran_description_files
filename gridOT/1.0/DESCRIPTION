@@ -1,0 +1,24 @@
+Package: gridOT
+Type: Package
+Title: Approximate Optimal Transport Between Two-Dimensional Grids
+Version: 1.0
+Date: 2022-11-10
+Authors@R: 
+	c(person(given = "Michel", family = "Groppe", role = c("aut", "cre"), 
+	         email = "michel.groppe@stud.uni-goettingen.de"),
+	  person(given = "Nicholas", family = "Bonneel", role = "ctb"),
+	  person(given = "Egerváry Research Group on Combinatorial Optimization", role = "cph"))
+Description: Can be used for optimal transport between two-dimensional grids with respect to separable cost functions of l^p form. It utilizes the Frank-Wolfe algorithm to approximate so-called pivot measures: one-dimensional transport plans that fully describe the full transport, see G. Auricchio (2021) <arXiv:2105.07278>. For these, it offers methods for visualization and to extract the corresponding transport plans and costs. Additionally, related functions for one-dimensional optimal transport are available.
+License: GPL-3
+Imports: Rcpp (>= 1.0.8.3)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2022-10-14 14:57:38 UTC; Michl
+Author: Michel Groppe [aut, cre],
+  Nicholas Bonneel [ctb],
+  Egerváry Research Group on Combinatorial Optimization [cph]
+Maintainer: Michel Groppe <michel.groppe@stud.uni-goettingen.de>
+Repository: CRAN
+Date/Publication: 2022-10-17 06:22:41 UTC

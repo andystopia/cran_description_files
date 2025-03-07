@@ -1,0 +1,20 @@
+Type: Package
+Package: MonteCarloSEM
+Title: Monte Carlo Data Simulation Package
+Version: 0.0.1
+Authors@R: person(given = "Fatih", family = "Orcan", role = c("aut", "cre"), email = "fatihorcan84@gmail.com", comment = c(ORCID = "0000-0003-1727-0456"))
+Description: Monte Carlo simulation allows to test different conditions given to the correct structural equation models. This package runs Monte Carlo simulations under different conditions (such as sample size or normality of data). Within the package data sets can be simulated and run based on the given model.
+  First, continuous and normal data sets are generated based on the given model. Later Fleishman's power method (1978) <DOI:10.1007/BF02293811> is used to add non-normality if exists. 
+  When data generation is completed (or when generated data sets are given) model test can also be run.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: Matrix, stats, utils, lavaan
+Copyright: Fatih Orcan, Trabzon University, Turkey
+LazyData: true
+NeedsCompilation: no
+Packaged: 2020-09-15 17:26:50 UTC; FO
+Author: Fatih Orcan [aut, cre] (<https://orcid.org/0000-0003-1727-0456>)
+Maintainer: Fatih Orcan <fatihorcan84@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-09-22 09:50:12 UTC

@@ -1,0 +1,36 @@
+Package: modisfast
+Title: Fast and Efficient Access to MODIS Earth Observation Data
+Version: 0.9.1
+Authors@R: 
+    c(person(given = "Paul", 
+    family = "Taconet",
+    email="paul.taconet@gmail.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0001-7429-7204")),
+     person(given = "Nicolas",
+      family = "Moiroux",
+      email="nicolas.moiroux@ird.fr",
+      role = "fnd",
+      comment = c(ORCID = "0000-0001-6755-6167")),
+      person("French National Research Institute for Sustainable Development, IRD", role = "fnd"))
+Description: Programmatic interface to several NASA Earth Observation 'OPeNDAP' servers (Open-source Project for a Network Data Access Protocol) (<https://www.opendap.org/>). Allows for easy downloads of MODIS subsets, as well as other Earth Observation datacubes, in a time-saving and efficient way : by sampling it at the very downloading phase (spatially, temporally and dimensionally).
+License: GPL (>= 3)
+URL: https://github.com/ptaconet/modisfast
+BugReports: https://github.com/ptaconet/modisfast/issues
+Depends: R (>= 2.10)
+Imports: curl, dplyr, httr, lubridate, magrittr, parallel, purrr,
+        rvest, sf, stats, stringr, terra, xml2
+Suggests: ggplot2, knitr, mapview, rmarkdown, spelling, testthat
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-07-12 12:08:40 UTC; ptaconet
+Author: Paul Taconet [aut, cre, cph] (<https://orcid.org/0000-0001-7429-7204>),
+  Nicolas Moiroux [fnd] (<https://orcid.org/0000-0001-6755-6167>),
+  French National Research Institute for Sustainable Development, IRD
+    [fnd]
+Maintainer: Paul Taconet <paul.taconet@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-14 12:10:02 UTC

@@ -1,0 +1,58 @@
+Type: Package
+Package: biometryassist
+Title: Functions to Assist Design and Analysis of Agronomic Experiments
+Version: 1.1.3
+Authors@R: 
+    c(person(given = "Sharon",
+             family = "Nielsen",
+             role = "aut",
+             email = "biometrytraining@adelaide.edu.au"),
+      person(given = "Sam",
+             family = "Rogers",
+             role = c("aut", "cre"),
+             email = "biometrytraining@adelaide.edu.au"),
+      person(given = "Annie",
+             family = "Conway",
+             role = "aut",
+             email = "biometrytraining@adelaide.edu.au"),
+      person(given = "University of Adelaide",
+             role = c("cph", "fnd"),
+             comment = "https://adelaide.edu.au/"),
+      person(given = "Grains Research and Development Corporation",
+             role = c("cph", "fnd"),
+             comment = "https://grdc.com.au/"))
+Description: Provides functions to aid in the design and analysis of
+    agronomic and agricultural experiments through easy access to
+    documentation and helper functions, especially for users who are
+    learning these concepts. While not required for most functionality,
+    this package enhances the `asreml` package which provides a 
+    computationally efficient algorithm for fitting mixed models 
+    using Residual Maximum Likelihood. It is a commercial package 
+    that can be purchased as 'asreml-R' from 'VSNi' 
+    <https://vsni.co.uk/>, who will supply a zip file for local 
+    installation/updating (see <https://asreml.kb.vsni.co.uk/>). 
+License: MIT + file LICENSE
+URL: https://biometryhub.github.io/biometryassist/
+BugReports: https://github.com/biometryhub/biometryassist/issues
+Depends: R (>= 4.0.0)
+Imports: agricolae, cowplot, curl, emmeans, farver, ggplot2, lattice,
+        multcompView, pracma, rlang (>= 1.0.0), scales, stringi
+Suggests: covr, crayon, getPass, knitr, mockery, rmarkdown, testthat,
+        vdiffr, withr
+Enhances: asreml, ARTool, lme4, nlme, sommer
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-07-19 05:07:13 UTC; holly
+Author: Sharon Nielsen [aut],
+  Sam Rogers [aut, cre],
+  Annie Conway [aut],
+  University of Adelaide [cph, fnd] (https://adelaide.edu.au/),
+  Grains Research and Development Corporation [cph, fnd]
+    (https://grdc.com.au/)
+Maintainer: Sam Rogers <biometrytraining@adelaide.edu.au>
+Repository: CRAN
+Date/Publication: 2023-07-19 08:50:02 UTC

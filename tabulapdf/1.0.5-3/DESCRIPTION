@@ -1,0 +1,56 @@
+Package: tabulapdf
+Type: Package
+Title: Extract Tables from PDF Documents
+Description: Bindings for the 'Tabula' <https://tabula.technology/> 'Java'
+    library, which can extract tables from PDF files. This tool can reduce time
+    and effort in data extraction processes in fields like investigative
+    journalism. It allows for automatic and manual table extraction, the latter
+    facilitated through a 'Shiny' interface, enabling manual areas selection\
+    with a computer mouse for data retrieval.
+Version: 1.0.5-3
+Authors@R: c(
+    person("Thomas J.", "Leeper",
+            role = "aut", 
+            email = "thosjleeper@gmail.com",
+            comment = c(ORCID = "0000-0003-4097-6326")),
+    person("Mauricio", "Vargas Sepulveda",
+            role = c("aut","cre"), 
+            email = "m.sepulveda@mail.utoronto.ca", 
+            comment = c(ORCID = "0000-0003-1017-7574")),
+    person("Tom", "Paskhalis",
+            role = "aut",
+            email = "tpaskhalis@gmail.com",
+            comment = c(ORCID = "0000-0001-9298-8850")),
+    person("Manuel", "Aristaran",
+            role = "ctb"),
+    person("David", "Gohel",
+            role = "ctb",
+            comment = "rOpenSci reviewer"),
+    person("Lincoln", "Mullen",
+            role = "ctb",
+            comment = "rOpenSci reviewer")
+    )
+License: Apache License (>= 2)
+URL: https://docs.ropensci.org/tabulapdf/ (website)
+        https://github.com/ropensci/tabulapdf/
+BugReports: https://github.com/ropensci/tabulapdf/issues/
+Imports: png, readr, rJava, tools, utils
+Suggests: graphics, grDevices, knitr, miniUI, shiny, testthat,
+        rmarkdown, covr
+SystemRequirements: Java (>= 7.0): openjdk-11-jdk (deb),
+        java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-20 21:23:33 UTC; pacha
+Author: Thomas J. Leeper [aut] (<https://orcid.org/0000-0003-4097-6326>),
+  Mauricio Vargas Sepulveda [aut, cre]
+    (<https://orcid.org/0000-0003-1017-7574>),
+  Tom Paskhalis [aut] (<https://orcid.org/0000-0001-9298-8850>),
+  Manuel Aristaran [ctb],
+  David Gohel [ctb] (rOpenSci reviewer),
+  Lincoln Mullen [ctb] (rOpenSci reviewer)
+Maintainer: Mauricio Vargas Sepulveda <m.sepulveda@mail.utoronto.ca>
+Repository: CRAN
+Date/Publication: 2024-05-21 15:20:03 UTC

@@ -1,0 +1,76 @@
+Package: assemblerr
+Title: Assembly of Pharmacometric Models
+Description: Construct pharmacometric nonlinear mixed effect models by combining 
+    predefined model components and automatically generate model code for NONMEM. 
+    Models are created by combining parameter and observation models, algebraic 
+    relationships, compartments, and flows. Pharmacokinetic models can be assembled
+    from the higher-order components: absorption, distribution, and elimination. 
+    The generated code is optimized for performance by recognizing, for example,
+    linear differential equations or differential equations with an analytic 
+    solution.
+Version: 0.1.1
+Authors@R: 
+    c(
+    person(given = "Sebastian",
+           family = "Ueckert",
+           role = c("aut", "cre","cph"),
+           email = "sebastian.ueckert@gmail.com",
+           comment = c(ORCID = "0000-0002-3712-0255")),
+    person(given = "Mats O.",
+           family = "Karlsson",
+           role = c("sad")),
+    person(given = "Andrew C.",
+           family = "Hooker",
+           role = c("sad")),
+    person(given = "Rikard",
+           family = "Nordgren",
+           role = c("sad")),
+    person(given = "Simon", 
+            family = "Carter",
+            role = c("rev")),
+    person(given = "Simon", 
+            family = "Buatois",
+            role = c("rev")),
+    person(given = "João A.", 
+            family = "Abrantes",
+            role = c("rev")),
+    person("F. Hoffmann-La Roche Ltd.", 
+            role = c("fnd"))
+    )
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.2), knitr, rmarkdown, covr, withr, markdown,
+        devtools
+Imports: purrr (>= 0.3.0), rlang, magrittr, methods, glue, vctrs (>=
+        0.3.4), cli (>= 2.1.0), tidyselect
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+ByteCompile: true
+Collate: 'advans.R' 'generics.R' 'facet.R' 'conversion.R' 'model.R'
+        'pk_model.R' 'rendering.R' 'statement.R' 'nm_model.R'
+        'declaration-creation.R' 'declaration.R' 'algebraics.R'
+        'assemblerr-package.R' 'ast.R' 'compartment.R'
+        'conversion-compartment-nm.R' 'input_variable.R'
+        'conversion-input_variable-nm.R' 'meta.R'
+        'conversion-meta-nm.R' 'conversion-nm.R' 'observation.R'
+        'conversion-observation-nm.R' 'parameter.R'
+        'conversion-parameter-nm.R' 'node-classes.R' 'tasks.R'
+        'conversion-tasks-nm.R' 'description.R' 'issues.R'
+        'model-options.R' 'parameter-values.R' 'pk_component.R'
+        'test-helpers.R' 'util.R' 'variables.R'
+URL: https://github.com/UUPharmacometrics/assemblerr
+BugReports: https://github.com/UUPharmacometrics/assemblerr/issues
+NeedsCompilation: no
+Packaged: 2022-01-11 20:14:18 UTC; seb
+Author: Sebastian Ueckert [aut, cre, cph]
+    (<https://orcid.org/0000-0002-3712-0255>),
+  Mats O. Karlsson [sad],
+  Andrew C. Hooker [sad],
+  Rikard Nordgren [sad],
+  Simon Carter [rev],
+  Simon Buatois [rev],
+  João A. Abrantes [rev],
+  F. Hoffmann-La Roche Ltd. [fnd]
+Maintainer: Sebastian Ueckert <sebastian.ueckert@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-01-12 20:02:46 UTC

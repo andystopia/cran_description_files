@@ -1,0 +1,31 @@
+Package: kgrams
+Title: Classical k-gram Language Models
+Version: 0.1.0
+Authors@R: 
+    person(given = "Valerio",
+           family = "Gherardi",
+           role = c("aut", "cre"),
+           email = "vgherard@sissa.it",
+           comment = c(ORCID = "0000-0002-8215-3013"))
+Description: 
+        Tools for training and evaluating k-gram language models in R, 
+        supporting several probability smoothing techniques, 
+        perplexity computations, random text generation and more.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+SystemRequirements: C++11
+LinkingTo: Rcpp, RcppProgress
+Imports: Rcpp, rlang, methods, utils, RcppProgress (>= 0.1), Rdpack
+Depends: R (>= 3.5)
+Suggests: testthat (>= 3.0.0), covr, knitr, rmarkdown
+Config/testthat/edition: 3
+RdMacros: Rdpack
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-02-11 11:31:26 UTC; vale
+Author: Valerio Gherardi [aut, cre] (<https://orcid.org/0000-0002-8215-3013>)
+Maintainer: Valerio Gherardi <vgherard@sissa.it>
+Repository: CRAN
+Date/Publication: 2021-02-15 09:40:03 UTC

@@ -1,0 +1,34 @@
+Package: BEKKs
+Title: Multivariate Conditional Volatility Modelling and Forecasting
+Version: 1.1.0
+Authors@R: 
+    c(person(given = "Markus",
+           family = "Fülle",
+           role = c("aut"),
+           email = "fuelle@uni-goettingen.de"),
+      person("Helmut", "Herwartz", 
+           role = c("aut"), 
+           email = "hherwartz@uni-goettingen.de"),
+      person("Alexander", "Lange", 
+          role = c("aut", "cre"),
+          email = "alexander.lange@uni-goettingen.de"))
+Description: Methods and tools for estimating, simulating and forecasting of so-called BEKK-models (named after Baba, Engle, Kraft and Kroner ) based on the fast Berndt–Hall–Hall–Hausman (BHHH) algorithm described in Hafner and Herwartz (2008) <doi:10.1007/s00184-007-0130-y>. 
+Depends: R (>= 3.5.0)
+Imports: Rcpp, expm, reshape2, ggplot2, mathjaxr, gridExtra, grid,
+        ggfortify, parallel, xts, stats, future, forecast, future.apply
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+SystemRequirements: C++11
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 2.1.0)
+RdMacros: mathjaxr
+RoxygenNote: 7.1.2
+Packaged: 2022-03-18 21:28:57 UTC; alex
+Author: Markus Fülle [aut],
+  Helmut Herwartz [aut],
+  Alexander Lange [aut, cre]
+Maintainer: Alexander Lange <alexander.lange@uni-goettingen.de>
+Repository: CRAN
+Date/Publication: 2022-03-19 00:20:02 UTC

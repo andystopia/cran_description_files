@@ -1,0 +1,17 @@
+Package: r.jive
+Type: Package
+Title: Perform JIVE Decompositions for Multi-Source Data
+Version: 1.7
+Date: 2016-07-18
+Author: Michael J. O'Connell and Eric F. Lock
+Maintainer: Michael J. O'Connell <oconn725@umn.edu>
+Description: Performs the JIVE decompositions on a list of data sets when the data share a dimension, returning low-rank matrices that capture the joint and individual structure of the data. It provides two methods of rank selection when the rank is unknown, a permutation test and a BIC selection algorithm. Also included in the package are three plotting functions for visualizing the variance attributed to each data source: a bar plot that shows the percentages of the variability attributable to joint and individual structure, a heatmap that shows the structure of the variability, and principal component plots. 
+License: GPL-3
+Imports: SpatioTemporal, gplots, graphics, stats
+Suggests: knitr, rmarkdown
+Depends: R(>= 2.10.0)
+VignetteBuilder: knitr
+Packaged: 2016-07-18 21:27:08 UTC; Eric
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2016-07-25 10:12:01

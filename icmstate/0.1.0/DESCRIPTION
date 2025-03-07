@@ -1,0 +1,29 @@
+Package: icmstate
+Type: Package
+Title: Interval Censored Multi-State Models
+Version: 0.1.0
+Authors@R: c(
+  person("Daniel", "Gomon", email = "dgstatsoft@gmail.com", role = c("aut", "cre"),
+  comment = c(ORCID = "0000-0001-9011-3743")),
+  person("Hein", "Putter", , role = "aut",
+  comment = c(ORCID = "0000-0001-5395-1422")))
+Maintainer: Daniel Gomon <dgstatsoft@gmail.com>
+Description: Allows for the non-parametric estimation of transition intensities in interval-censored
+    multi-state models using the approach of Gomon and Putter (2024) <doi:10.48550/arXiv.2409.07176> or 
+    Gu et al. (2023) <doi:10.1093/biomet/asad073>.
+License: GPL (>= 2)
+Imports: Rcpp, mstate, prodlim, igraph (>= 1.3.0), checkmate, ggplot2,
+        deSolve, msm
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), icenReg, profvis, survival, knitr,
+        rmarkdown, bookdown, latex2exp
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-10-25 08:56:04 UTC; Daniel
+Author: Daniel Gomon [aut, cre] (<https://orcid.org/0000-0001-9011-3743>),
+  Hein Putter [aut] (<https://orcid.org/0000-0001-5395-1422>)
+Repository: CRAN
+Date/Publication: 2024-10-28 12:00:32 UTC

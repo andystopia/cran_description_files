@@ -1,0 +1,29 @@
+Package: populR
+Type: Package
+Title: Population Downscaling
+Version: 0.1.6
+Author: Marios Batsaris
+Maintainer: Marios Batsaris <m.batsaris@aegean.gr>
+Description: Downscaling of population data obtained
+    by census surveys using areal interpolation. Given a 
+    set of source zone polygons such as
+    census tracts or city blocks alongside with population counts and a 
+    target zone of incogruent yet superimposed polygon features (such as
+    individual buildings) populR transforms population counts from the 
+    former to the latter using Areal Weighting and Volume Weighting 
+    Interpolation methods.
+License: GPL-3
+URL: https://github.com/mbatsaris/populR/
+BugReports: https://github.com/mbatsaris/populR/issues/
+Encoding: UTF-8
+LazyData: true
+Imports: sf, rlang, Metrics, usethis, areal, microbenchmark
+Depends: R (>= 3.3.0)
+RoxygenNote: 7.1.2
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-08-09 15:16:47 UTC; mb
+Repository: CRAN
+Date/Publication: 2022-08-09 21:50:02 UTC

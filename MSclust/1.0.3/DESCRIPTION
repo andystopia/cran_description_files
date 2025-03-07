@@ -1,0 +1,29 @@
+Package: MSclust
+Type: Package
+Title: Multiple-Scaled Clustering
+Version: 1.0.3
+Date: 2023-05-04
+Authors@R: c(person("Cristina", "Tortora", role = c("aut", "cre","cph"), email = "grikris1@gmail.com", comment = c(ORCID = "0000-0001-8351-3730")),
+             person("Antonio", "Punzo", role = c("aut"), comment = c(ORCID = "0000-0001-7742-1821")),
+             person("Louis", "Tran", role = c("aut")))
+Maintainer: Cristina Tortora <grikris1@gmail.com>
+Description: Model based clustering using 
+    the multivariate multiple Scaled t (MST) and multivariate multiple 
+    scaled contaminated normal (MSCN) distributions. The MST is an 
+    extension of the multivariate Student-t distribution to include 
+    flexible tail behaviors, Forbes, F. & Wraith, D. (2014) <doi:10.1007/s11222-013-9414-4>. The MSCN represents a  heavy-tailed
+    generalization of the multivariate normal (MN) distribution to
+    model elliptical contoured scatters in the presence of mild outliers
+    (also referred to as "bad" points) and automatically detect bad points, Punzo, A. & Tortora, C. (2021) <doi:10.1177/1471082X19890935>.
+Depends: R (>= 3.5)
+Imports: gtools, Matrix, mclust, mnormt, mvtnorm, psych, cluster,
+        ggplot2, GGally
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2023-05-04 19:46:23 UTC; cristina
+Repository: CRAN
+Date/Publication: 2023-05-04 23:00:10 UTC
+Author: Cristina Tortora [aut, cre, cph]
+    (<https://orcid.org/0000-0001-8351-3730>),
+  Antonio Punzo [aut] (<https://orcid.org/0000-0001-7742-1821>),
+  Louis Tran [aut]

@@ -1,0 +1,39 @@
+Package: rgraph6
+Version: 2.0-0
+Title: Representing Graphs as 'graph6', 'digraph6' or 'sparse6' Strings
+Authors@R: c(
+             person(given = "Michal",
+             family = "Bojanowski",
+             role = c("aut", "cre"),
+             email = "michal2992@gmail.com",
+             comment = c(ORCID = "0000-0001-7503-852X", affil="Kozminski University")),
+             person(given = "David",
+             family = "Schoch",
+             role = "aut",
+             email = "david@schochastics.net",
+             comment = c(ORCID = "0000-0003-2952-4812"))
+            )
+Depends: R (>= 2.10)
+Imports: methods, Rcpp (>= 1.0.3)
+LinkingTo: Rcpp
+Suggests: testthat, knitr, rmarkdown, igraph, network, Matrix
+Description: Encode network data as strings of printable ASCII characters. Implemented 
+    functions include encoding and decoding adjacency matrices, edgelists, igraph, and
+    network objects to/from formats 'graph6', 'sparse6', and 'digraph6'. The formats and
+    methods are described in McKay, B.D. and Piperno, A (2014)
+    <doi:10.1016/j.jsc.2013.09.003>.
+License: GPL (>= 3)
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+LazyData: true
+URL: https://mbojan.github.io/rgraph6/
+BugReports: https://github.com/mbojan/rgraph6/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-02-20 20:39:08 UTC; mbojan
+Author: Michal Bojanowski [aut, cre] (<https://orcid.org/0000-0001-7503-852X>,
+    Kozminski University),
+  David Schoch [aut] (<https://orcid.org/0000-0003-2952-4812>)
+Maintainer: Michal Bojanowski <michal2992@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-22 08:10:02 UTC

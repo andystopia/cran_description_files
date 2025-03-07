@@ -1,0 +1,31 @@
+Package: presenter
+Type: Package
+Title: Present Data with Style
+Version: 0.1.0
+Authors@R: 
+    person(given = "Harrison",
+           family = "Tietze",
+           role = c("aut", "cre"),
+           email = "Harrison4192@gmail.com")
+Maintainer: Harrison Tietze <Harrison4192@gmail.com>
+Description: Consists of custom wrapper functions using packages
+    'openxlsx', 'flextable', and 'officer' to create highly formatted MS office friendly output of your data frames.
+    These viewer friendly outputs are intended to match expectations of professional looking presentations
+    in business and consulting scenarios. The functions are opinionated in the sense that they expect the input data
+    frame to have certain properties in order to take advantage of the automated formatting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: flextable, magrittr, dplyr, rlang, stringr, purrr, officer,
+        randomcoloR, tidyr, openxlsx, lubridate, janitor, tibble,
+        stringi, berryFunctions, rvg, tidyselect, formattable, badger,
+        framecleaner
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+URL: https://github.com/Harrison4192/presenter
+BugReports: https://github.com/Harrison4192/presenter/issues
+NeedsCompilation: no
+Packaged: 2021-10-07 17:03:26 UTC; Harrison
+Author: Harrison Tietze [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-10-08 07:00:02 UTC

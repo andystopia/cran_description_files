@@ -1,0 +1,24 @@
+Package: liGP
+Title: Locally Induced Gaussian Process Regression
+Version: 1.0.1
+Date: 2021-06-29
+Authors@R: c(person(c("D.", "Austin"), "Cole", role = c("aut", "cre"),
+                     email = "austin.cole8@vt.edu"),
+              person(c("Ryan", "B"), "Christianson", role = "cph"),
+              person(c("Robert", "B."), "Gramacy", role = "cph",
+                     email = "rbg@vt.edu"))
+Maintainer: D. Austin Cole <austin.cole8@vt.edu>
+Description: Performs locally induced approximate GP regression for large computer experiments and spatial datasets following Cole D.A., Christianson, R., Gramacy, R.B. (2021) Statistics and Computing, 31(3), 1-21, <arXiv:2008.12857>. The approximation is based on small local designs combined with a set of inducing points (latent design points) for predictions at particular inputs. Parallelization is supported for generating predictions over an immense out-of-sample testing set. Local optimization of the inducing points design is provided based on variance-based criteria. Inducing point template schemes, including scaling of space-filling designs, are also provided.
+Depends: R (>= 3.4)
+Imports: hetGP, laGP, doParallel, foreach
+Suggests: lhs
+License: LGPL
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-07-15 20:58:52 UTC; Austin
+Author: D. Austin Cole [aut, cre],
+  Ryan B Christianson [cph],
+  Robert B. Gramacy [cph]
+Repository: CRAN
+Date/Publication: 2021-07-17 06:00:02 UTC

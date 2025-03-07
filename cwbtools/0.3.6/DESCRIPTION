@@ -1,0 +1,45 @@
+Package: cwbtools
+Type: Package
+Title: Tools to Create, Modify and Manage 'CWB' Corpora
+Version: 0.3.6
+Date: 2022-06-03
+Authors@R: c(person("Andreas", "Blaette", role = c("aut", "cre"), email = "andreas.blaette@uni-due.de"),
+  person("Christoph", "Leonhardt", role = "aut", email = "christoph.leonhardt@uni-due.de")
+  )
+Description: The 'Corpus Workbench' ('CWB', <https://cwb.sourceforge.io/>) offers a classic and mature
+ approach for working with large, linguistically and structurally annotated corpora. The 'CWB'
+ is memory efficient and its design makes running queries fast (Evert and Hardie 2011,
+ <http://www.stefan-evert.de/PUB/EvertHardie2011.pdf>). The 'cwbtools' package offers
+ pure R tools to create indexed corpus files as well as high-level wrappers for the original C
+ implementation of CWB as exposed by the 'RcppCWB' package
+ <https://CRAN.R-project.org/package=RcppCWB>. Additional functionality to add and
+ modify annotations of corpora from within R makes working with CWB indexed corpora
+ much more flexible and convenient. The 'cwbtools' package in combination with the R packages
+ 'RcppCWB' (<https://CRAN.R-project.org/package=RcppCWB>) and 'polmineR'
+ (<https://CRAN.R-project.org/package=polmineR>) offers a lightweight infrastructure
+ to support the combination of quantitative and qualitative approaches for working
+ with textual data.
+Imports: data.table, R6, xml2, stringi, curl, RcppCWB (>= 0.5.2),
+        pbapply, methods, tools, cli, jsonlite, httr, rstudioapi,
+        zen4R, lifecycle, fs
+Suggests: tm (>= 0.7.3), knitr, markdown, tokenizers (>= 0.2.1),
+        tidytext, SnowballC, janeaustenr, NLP, testthat, rmarkdown,
+        openNLP, aws.s3
+VignetteBuilder: knitr
+License: GPL-3
+Language: en-US
+Encoding: UTF-8
+URL: https://github.com/PolMine/cwbtools
+BugReports: https://github.com/PolMine/cwbtools/issues
+Collate: 'CorpusData.R' 'corpus.R' 'cwb.R' 'cwbtools.R' 'directories.R'
+        'encoding.R' 'ner.R' 'p_attribute.R' 'pkg.R' 'registry_file.R'
+        's_attribute.R' 'vrt.R' 'zenodo.R'
+RoxygenNote: 7.1.2
+RdMacros: lifecycle
+NeedsCompilation: no
+Packaged: 2022-06-01 23:24:07 UTC; andreasblatte
+Author: Andreas Blaette [aut, cre],
+  Christoph Leonhardt [aut]
+Maintainer: Andreas Blaette <andreas.blaette@uni-due.de>
+Repository: CRAN
+Date/Publication: 2022-06-02 11:30:06 UTC

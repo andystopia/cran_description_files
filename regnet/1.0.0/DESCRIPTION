@@ -1,0 +1,27 @@
+Package: regnet
+Type: Package
+Title: Network-Based Regularization for Generalized Linear Models
+Version: 1.0.0
+Author: Jie Ren, Luann C. Jung, Yinhao Du, Cen Wu, Yu Jiang, Junhao Liu
+Maintainer: Jie Ren <jieren@ksu.edu>
+Description: Network-based regularization has achieved success in variable selection for 
+    high-dimensional biological data due to its ability to incorporate correlations among 
+    genomic features. This package provides procedures of network-based variable selection 
+    for generalized linear models (Ren et al. (2017) <doi:10.1186/s12863-017-0495-5> and 
+	Ren et al.(2019) <doi:10.1002/gepi.22194>). Continuous, binary, and survival response 
+	are supported. Robust network-based methods are available for continuous and survival 
+	responses. 
+Depends: R (>= 4.0.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: glmnet, stats, Rcpp, igraph, utils
+URL: https://github.com/jrhub/regnet
+BugReports: https://github.com/jrhub/regnet/issues
+RoxygenNote: 7.2.1
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, covr
+NeedsCompilation: yes
+Packaged: 2022-08-17 21:15:49 UTC; 17854
+Repository: CRAN
+Date/Publication: 2022-08-18 12:40:02 UTC

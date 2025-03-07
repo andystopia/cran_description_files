@@ -1,0 +1,37 @@
+Package: cbioportalR
+Title: Browse and Query Clinical and Genomic Data from cBioPortal
+Version: 1.1.0
+Authors@R: 
+    c(person(given = "Karissa",
+           family = "Whiting",
+           role = c("aut", "cre"),
+           email = "karissa.whiting@gmail.com",
+           comment = c(ORCID = "0000-0002-4683-1868")))
+Description: Provides R users with direct access to genomic and clinical data from the 'cBioPortal' web resource via user-friendly
+    functions that wrap 'cBioPortal's' existing API endpoints <https://www.cbioportal.org/api/swagger-ui/index.html>. Users can browse and query genomic data on mutations,
+    copy number alterations and fusions, as well as data on tumor mutational burden ('TMB'),
+    microsatellite instability status ('MSI'), 'FACETS' and select clinical data points (depending on the study). 
+    See <https://www.cbioportal.org/> and Gao et al., (2013) <doi:10.1126/scisignal.2004088> for more information on the cBioPortal web resource.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 3.1.4), knitr (>= 1.39), rmarkdown (>= 2.14),
+        covr (>= 3.5.1), spelling (>= 2.2)
+Depends: R (>= 2.10)
+Imports: httr (>= 1.4.3), tibble (>= 3.1.7), purrr (>= 0.3.4), magrittr
+        (>= 2.0.3), rlang (>= 1.0.3), glue (>= 1.6.2), jsonlite (>=
+        1.8.0), tidyr (>= 1.2.0), dplyr (>= 1.0.9), stringr (>= 1.4.0),
+        cli (>= 3.3.0)
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/karissawhiting/cbioportalR,
+        https://www.karissawhiting.com/cbioportalR/
+BugReports: https://github.com/karissawhiting/cbioportalR/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-10-05 15:52:47 UTC; kwhiting
+Author: Karissa Whiting [aut, cre] (<https://orcid.org/0000-0002-4683-1868>)
+Maintainer: Karissa Whiting <karissa.whiting@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-05 18:50:03 UTC

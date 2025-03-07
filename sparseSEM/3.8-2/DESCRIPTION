@@ -1,0 +1,19 @@
+Package: sparseSEM
+Type: Package
+Title: Elastic Net Penalized Maximum Likelihood for Structural Equation
+        Models
+Version: 3.8-2
+Date: 2023-06-11
+Authors@R: c(person("Anhui", "Huang", role=c("aut","ctb", "cre" ), email="anhuihuang@gmail.com"))
+Maintainer: Anhui Huang <anhuihuang@gmail.com>
+Description: Provides elastic net regularized maximum likelihood for structural equation models (SEM) in inferring network structure (topology) and estimating causal effects. The package implements `lasso` and `elastic net` (l1/l2) penalized SEM and estimates the model parameters with an efficient block coordinate ascent algorithm that maximizes the penalized likelihood of the SEM.  Hyperparameters are inferred from cross-validation (CV).  A Stability Selection (STS) function is also available to provide accurate causal effect selection.
+Depends: R (>= 3.5.0)
+Imports: parallel
+License: GPL
+Packaged: 2023-06-11 13:48:12 UTC; anhui
+NeedsCompilation: yes
+Repository: CRAN
+Suggests: knitr
+VignetteBuilder: knitr
+Date/Publication: 2023-06-11 19:30:05 UTC
+Author: Anhui Huang [aut, ctb, cre]

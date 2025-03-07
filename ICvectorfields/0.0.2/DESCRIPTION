@@ -1,0 +1,35 @@
+Package: ICvectorfields
+Title: Vector Fields from Spatial Time Series of Population Abundance
+Version: 0.0.2
+Authors@R: 
+    person(given = "Devin",
+           family = "Goodsman",
+           role = c("aut", "cre"),
+           email = "goodsman@ualberta.ca",
+           comment = c(ORCID = "https://orcid.org/0000-0003-1935-5779"))
+Description: Functions for converting time series of spatial abundance or density 
+    data in raster format to vector fields of population movement using the digital 
+    image correlation technique. More specifically, the functions in the package 
+    compute cross-covariance using discrete fast Fourier transforms for computational 
+    efficiency. Vectors in vector fields point in the direction of highest two 
+    dimensional cross-covariance. The package has a novel implementation of the 
+    digital image correlation algorithm that is designed to detect persistent 
+    directional movement when image time series extend beyond a sequence of 
+    two raster images. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: ggnewscale, ggplot2, knitr, metR, ncf, rmarkdown, testthat
+        (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: fftwtools, terra
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+BugReports: https://github.com/goodsman/ICvectorfields/issues
+NeedsCompilation: no
+Packaged: 2021-06-19 00:01:13 UTC; goods
+Author: Devin Goodsman [aut, cre] (<https://orcid.org/0000-0003-1935-5779>)
+Maintainer: Devin Goodsman <goodsman@ualberta.ca>
+Repository: CRAN
+Date/Publication: 2021-06-21 06:50:10 UTC

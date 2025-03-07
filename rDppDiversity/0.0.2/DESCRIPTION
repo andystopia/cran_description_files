@@ -1,0 +1,133 @@
+Package: rDppDiversity
+Title: Subset Searching Algorithm Using DPP Greedy MAP
+Version: 0.0.2
+Authors@R: 
+    c(
+        person(
+            given = "Sining",
+            family = "Ng",
+            role = c("aut", "cre"),
+            email = "sining_ng@icloud.com",
+            comment = c(ORCID = "https://orcid.org/0000-0003-3463-707X")),
+        person(
+            given = "Laming", 
+            family = "Chen", 
+            role = c("aut"), 
+            email = "laming.chen@hulu.com"), 
+        person(
+            given = "Guoxin", 
+            family = "Zhang", 
+            role = c("aut"), 
+            email = "guoxin.zhang@hulu.com"), 
+        person(
+            given = "Hanning", 
+            family = "Zhou", 
+            role = c("aut"), 
+            email = "eric.zhou@hulu.com"),
+        person(
+            given = "Jennifer", 
+            family = "Gillenwater", 
+            role = c("aut"), 
+            email = "jengi@google.com"),
+        person(
+            given = "Ed H.", 
+            family = "Chi", 
+            role = c("aut"), 
+            email = "edchi@google.com"),
+        person(
+            given = "Sagar", 
+            family = "Jain", 
+            role = c("aut"), 
+            email = "sagarj@google.com"),
+        person(
+            given = "Alexander", 
+            family = "Bonomo", 
+            role = c("aut"), 
+            email = "bonomo@google.com"),
+        person(
+            given = "Ajith", 
+            family = "Ramanathan", 
+            role = c("aut"), 
+            email = "ajith@google.com"),
+        person(
+            given = "Mark", 
+            family = "Wilhelm", 
+            role = c("aut"), 
+            email = "wilhelm@google.com"),
+        person(
+            given = "Antonio", 
+            family = "Sánchez", 
+            role = c("cph"), 
+            comment="https://gitlab.com/cantonios"),
+        person(
+            given = "Christoph", 
+            family = "Hertzberg", 
+            role = c("cph"), 
+            comment="https://gitlab.com/chhtz"),
+        person(
+            given = "David", 
+            family = "Tellenbach", 
+            role = c("cph"), 
+            comment="https://gitlab.com/tellenbach"),
+        person(
+            given = "Eigen", 
+            family = "Bugzilla", 
+            role = c("cph"), 
+            comment="https://gitlab.com/eigenbz"),
+        person(
+            given = "Gael", 
+            family = "Guennebaud", 
+            role = c("cph"), 
+            comment="https://gitlab.com/ggael"),
+        person(
+            given = "Rasmus Munk", 
+            family = "Larsen", 
+            role = c("cph"), 
+            comment="https://gitlab.com/rmlarsen1"),
+        person(
+            given = "Guoqiang", 
+            family = "QI", 
+            role = c("cph"), 
+            comment="https://gitlab.com/guoqiangqi1"),
+        person(
+            given = "Konstantinos", 
+            family = "Margaritis", 
+            role = c("cph"), 
+            comment="https://gitlab.com/freevec")
+    )
+Description: Given item set, item representation vector, and item ratings, 
+    find a subset with better relevance-diversity trade-off. Also provide 
+    machine learning algorithm to learn item representations maximizing 
+    log likelihood under DPP assumption. 
+    References: [1]Laming Chen, Guoxin Zhang, and Hanning Zhou(2017)<https://lsrs2017.files.wordpress.com/2017/08/lsrs_2017_lamingchen.pdf> 
+    [2]Laming Chen, Guoxin Zhang, and Hanning Zhou(2018)<https://papers.nips.cc/paper/2018/file/dbbf603ff0e99629dda5d75b6f75f966-Paper.pdf> 
+    [3]Wilhelm, Mark & Ramanathan, Ajith & Bonomo, Alexander & Jain, Sagar & Chi, Ed & Gillenwater, Jennifer(2018)<doi:10.1145/3269206.3272018>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp
+Imports: Rcpp
+NeedsCompilation: yes
+Packaged: 2021-05-31 12:48:06 UTC; menglingwu
+Author: Sining Ng [aut, cre] (<https://orcid.org/0000-0003-3463-707X>),
+  Laming Chen [aut],
+  Guoxin Zhang [aut],
+  Hanning Zhou [aut],
+  Jennifer Gillenwater [aut],
+  Ed H. Chi [aut],
+  Sagar Jain [aut],
+  Alexander Bonomo [aut],
+  Ajith Ramanathan [aut],
+  Mark Wilhelm [aut],
+  Antonio Sánchez [cph] (https://gitlab.com/cantonios),
+  Christoph Hertzberg [cph] (https://gitlab.com/chhtz),
+  David Tellenbach [cph] (https://gitlab.com/tellenbach),
+  Eigen Bugzilla [cph] (https://gitlab.com/eigenbz),
+  Gael Guennebaud [cph] (https://gitlab.com/ggael),
+  Rasmus Munk Larsen [cph] (https://gitlab.com/rmlarsen1),
+  Guoqiang QI [cph] (https://gitlab.com/guoqiangqi1),
+  Konstantinos Margaritis [cph] (https://gitlab.com/freevec)
+Maintainer: Sining Ng <sining_ng@icloud.com>
+Repository: CRAN
+Date/Publication: 2021-06-01 10:50:02 UTC

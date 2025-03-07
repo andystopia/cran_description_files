@@ -1,0 +1,37 @@
+Package: applicable
+Title: A Compilation of Applicability Domain Methods
+Version: 0.1.0
+Authors@R: c(
+    person("Marly", "Gotti", , "marlygotti@gmail.com", role = c("aut", "cre")),
+    person("Max", "Kuhn", , "max@rstudio.com", role = "aut"),
+    person("RStudio", role = "cph")
+  )
+Description: A modeling package compiling applicability domain methods in
+    R. It combines different methods to measure the amount of
+    extrapolation new samples can have from the training set. See Gadaleta et 
+    al (2016)  <doi:10.4018/IJQSPR.2016010102> for an overview of
+    applicability domains.
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/applicable,
+        https://applicable.tidymodels.org
+BugReports: https://github.com/tidymodels/applicable/issues
+Depends: ggplot2, R (>= 3.4)
+Imports: dplyr, glue, hardhat (>= 0.1.2), Matrix, proxyC, purrr, rlang,
+        stats, tibble, tidyr, tidyselect, utils
+Suggests: covr, isotree, knitr, modeldata, recipes (>= 0.1.7),
+        rmarkdown, spelling, testthat (>= 3.0.0), xml2
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.1.9000
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-08-18 19:01:35 UTC; max
+Author: Marly Gotti [aut, cre],
+  Max Kuhn [aut],
+  RStudio [cph]
+Maintainer: Marly Gotti <marlygotti@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-20 21:50:11 UTC

@@ -1,0 +1,22 @@
+Package: netUtils
+Title: A Collection of Tools for Network Analysis
+Version: 0.8.2
+Authors@R: 
+    person("David", "Schoch", email = "david@schochastics.net", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2952-4812"))
+Description: Provides a collection of network analytic (convenience) functions which are missing in other standard packages. This includes triad census with attributes <doi:10.1016/j.socnet.2019.04.003>, core-periphery models <doi:10.1016/S0378-8733(99)00019-2>, and several graph generators. Most functions are build upon 'igraph'.  
+URL: https://github.com/schochastics/netUtils/
+BugReports: https://github.com/schochastics/netUtils/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, igraph, stats
+Suggests: covr, GA, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-06-28 20:55:06 UTC; david
+Author: David Schoch [aut, cre] (<https://orcid.org/0000-0003-2952-4812>)
+Maintainer: David Schoch <david@schochastics.net>
+Repository: CRAN
+Date/Publication: 2023-06-29 16:40:08 UTC

@@ -1,0 +1,30 @@
+Package: sortinghat
+Title: sortinghat
+Version: 0.1
+Date: 2013-12-07
+Author: John A. Ramey
+Maintainer: John A. Ramey <johnramey@gmail.com>
+Description: sortinghat is a classification framework to streamline the
+    evaluation of classifiers (classification models and algorithms) and seeks
+    to determine the best classifiers on a variety of simulated and benchmark
+    data sets. Several error-rate estimators are included to evaluate the
+    performance of a classifier. This package is intended to complement the
+    well-known 'caret' package.
+Depends: R (>= 3.0.1)
+Imports: MASS, bdsmatrix, mvtnorm
+Suggests: testthat
+License: MIT + file LICENSE
+LazyData: true
+URL: http://github.com/ramhiser/sortinghat
+Collate: 'check-arguments.r' 'sortinghat-package.r'
+        'helper-partition-data.r' 'helper-which-min.r'
+        'simdata-normal.r' 'simdata-uniform.r' 'covariance-matrices.r'
+        'helpers.r' 'simdata-t.r' 'simdata-contaminated-normal.r'
+        'simdata-guo.r' 'simdata-friedman.r' 'simdata-wrapper.r'
+        'errorest-632.r' 'errorest-632plus.r' 'errorest-apparent.r'
+        'errorest-bcv.r' 'errorest-boot.r' 'errorest-cv.r'
+        'errorest-loo-boot.r' 'errorest-wrapper.r'
+Packaged: 2013-12-07 08:06:49 UTC; ramhiser
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2013-12-07 10:31:16

@@ -1,0 +1,54 @@
+Package: rmBayes
+Type: Package
+Title: Performing Bayesian Inference for Repeated-Measures Designs
+Version: 0.1.14
+Date: 2022-09-11
+Authors@R: 
+    c(person(given = "Zhengxiao",
+           family = "Wei",
+           role = c("aut", "cre"),
+           email = "zhengxiao@uvic.ca",
+           comment = c(ORCID = "0000-0003-1866-2320")),
+    person(given = "Farouk S.",
+           family = "Nathoo",
+           role = c("aut"),
+           email = "nathoo@uvic.ca",
+           comment = c(ORCID = "0000-0002-2569-3507")),
+    person(given = "Michael E.J.",
+           family = "Masson",
+           role = c("aut"),
+           email = "mmasson@uvic.ca",
+           comment = c(ORCID = "0000-0002-5430-6078")))
+Description: A Bayesian credible interval is interpreted with respect to posterior probability, 
+    and this interpretation is far more intuitive than that of a frequentist confidence interval. 
+    However, standard highest-density intervals can be wide due to between-subjects variability and tends 
+    to hide within-subjects effects, rendering its relationship with the Bayes factor less clear 
+    in within-subjects (repeated-measures) designs. 
+    This urgent issue can be addressed by using within-subjects intervals in within-subjects designs, 
+    which integrate four methods including the Loftus-Masson (1994) <doi:10.3758/BF03210951>, 
+    the Rouder-Morey-Speckman-Province (2012) <doi:10.1016/j.jmp.2012.08.001>,
+    the Nathoo-Kilshaw-Masson (2018) <doi:10.1016/j.jmp.2018.07.005>, 
+    and the Heck (2019) <doi:10.31234/osf.io/whp8t> interval estimates.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel, rstan (>= 2.18.1),
+        rstantools (>= 2.1.1), stats
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel, rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+URL: https://github.com/zhengxiaoUVic/rmBayes
+BugReports: https://github.com/zhengxiaoUVic/rmBayes/issues
+Suggests: knitr, testthat, rmarkdown, covr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-09-12 13:27:29 UTC; sherloconan
+Author: Zhengxiao Wei [aut, cre] (<https://orcid.org/0000-0003-1866-2320>),
+  Farouk S. Nathoo [aut] (<https://orcid.org/0000-0002-2569-3507>),
+  Michael E.J. Masson [aut] (<https://orcid.org/0000-0002-5430-6078>)
+Maintainer: Zhengxiao Wei <zhengxiao@uvic.ca>
+Repository: CRAN
+Date/Publication: 2022-09-12 14:40:02 UTC

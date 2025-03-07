@@ -1,0 +1,26 @@
+Package: rstoat
+Version: 1.0.1
+Date: 2021-10-21
+Title: R Interface to the 'STOAT' Platform
+Authors@R: c(person("John", "Wilshire", role = c("aut", "cre"), email = "john.wilshire@yale.edu"),
+    person("Richard", "Li", role = "aut"),
+    person("Ajay", "Ranipeta", role = "aut"))
+Author: John Wilshire [aut, cre],
+  Richard Li [aut],
+  Ajay Ranipeta [aut]
+Maintainer: John Wilshire <john.wilshire@yale.edu>
+Description: A wrapper for the 'Spatiotemporal Observation Annotation Tool' ('STOAT', <https://www.mol.org/stoat>) which allows users to run annotation jobs and retrieve results in the R environment.
+License: BSD_3_clause + file LICENSE
+URL: https://www.mol.org/stoat
+BugReports: https://github.com/MapofLife/rstoat/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: httr, jsonlite, curl, keyring
+Suggests: knitr, rstudioapi, dplyr, rmarkdown
+VignetteBuilder: knitr, rmarkdown
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-10-21 15:05:21 UTC; johnwilshire
+Repository: CRAN
+Date/Publication: 2021-10-27 19:50:02 UTC

@@ -1,0 +1,16 @@
+Package: SemiSupervised
+Type: Package
+Title: Safe Semi-Supervised Learning Tools
+Version: 1.0
+Date: 2018-5-07
+Author: Mark Vere Culp
+Maintainer: Mark Vere Culp <mvculp@mail.wvu.edu>
+Depends: R (>= 2.10),methods
+Suggests: caret,mlbench,kernlab,randomForest,glmnet,spa,e1071
+LazyLoad: Yes
+Description: Implements several safe graph-based semi-supervised learning algorithms. The first algorithm is the Semi-Supervised Semi-Parametric Model (S4PM) and the fast Anchor Graph version of this approach.  For additional technical details, refer to Culp and Ryan (2013) <http://jmlr.org/papers/v14/culp13a.html>, Ryan and Culp (2015) <http://www.jmlr.org/papers/v16/ryan15a.html> and the package vignette. The underlying fitting routines are executed in C++. All tuning parameter estimation is optimized using K-fold Cross-Validation.
+License: GPL-2
+NeedsCompilation: yes
+Repository: CRAN
+Packaged: 2018-05-09 18:36:30 UTC; mculp
+Date/Publication: 2018-05-11 09:59:25 UTC

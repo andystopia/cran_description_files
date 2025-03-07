@@ -1,0 +1,22 @@
+Encoding: UTF-8
+Package: geneExpressionFromGEO
+Title: Retrieves Gene Expression Dataset and Gene Symbols from GEO Code
+Version: 0.8
+Authors@R: person("Davide", "Chicco", email = "davidechicco@davidechicco.it", comment = c(ORCID = "0000-0001-9655-7142"),
+                  role = c("aut", "cre"))
+Description: A function that reads in the GEO code of a gene expression dataset, retrieves its data from GEO, (optionally) retrieves the gene symbols of the dataset, and returns a simple dataframe table containing all the data. Platforms available: GPL11532, GPL23126, GPL6244, GPL80, GPL8300, GPL80, GPL96, GPL570, GPL571, GPL20115, GPL1293,  GPL6102, GPL6104, GPL6883, GPL6884, GPL13497, GPL14550, GPL17077, GPL6480. GEO: Gene Expression Omnibus. ID: identifier code. The GEO datasets are downloaded from the URL <https://ftp.ncbi.nlm.nih.gov/geo/series/>. More information can be found in the following manuscript: Davide Chicco, "geneExpressionFromGEO: an R package to facilitate data reading from Gene Expression Omnibus (GEO)". Microarray Data Analysis, Methods in Molecular Biology, volume 2401, Springer Protocols, New York City, New York, USA, 2021. In press.
+BugReports: https://github.com/davidechicco/geneExpressionFromGEO/issues
+Depends: R (>= 3.1.0)
+License: GPL-3
+URL: https://github.com/davidechicco/geneExpressionFromGEO
+Imports: BiocManager, xml2, Biobase, annotate, GEOquery, markdown,
+        R.utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-11-05 13:08:56 UTC; dave
+Author: Davide Chicco [aut, cre] (<https://orcid.org/0000-0001-9655-7142>)
+Maintainer: Davide Chicco <davidechicco@davidechicco.it>
+Repository: CRAN
+Date/Publication: 2021-11-07 00:30:02 UTC

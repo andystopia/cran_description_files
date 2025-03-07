@@ -1,0 +1,25 @@
+Package: ocf
+Type: Package
+Title: Ordered Correlation Forest
+Version: 1.0.0
+Authors@R: person("Riccardo", "Di Francesco", email = "difrancesco.riccardo96@gmail.com", role = c("aut", "cre", "cph"))
+Description: Nonparametric estimator for ordered non-numeric outcomes. The estimator modifies a
+    standard random forest splitting criterion to build a collection of forests, each estimating the conditional 
+    probability of a single class. The package also implements a nonparametric estimator of the covariates’ marginal effects.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.4.0)
+Imports: Rcpp, Matrix, stats, utils, stringr, orf, glmnet, ranger
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://riccardo-df.github.io/ocf/
+Biarch: TRUE
+NeedsCompilation: yes
+Packaged: 2023-09-13 18:42:58 UTC; difra
+Author: Riccardo Di Francesco [aut, cre, cph]
+Maintainer: Riccardo Di Francesco <difrancesco.riccardo96@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-14 18:20:02 UTC

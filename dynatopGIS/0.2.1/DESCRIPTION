@@ -1,0 +1,27 @@
+Package: dynatopGIS
+Title: Algorithms for Helping Build Dynamic TOPMODEL Implementations
+        from Spatial Data
+Version: 0.2.1
+Authors@R: 
+    person(given = "Paul",
+           family = "Smith",
+           role = c("aut", "cre"),
+           email = "paul@waternumbers.co.uk",
+           comment = c(ORCID = "0000-0002-0034-3412"))
+Description: A set of algorithms based on Quinn et al. (1991) <doi:10.1002/hyp.3360050106> for processing river network and digital elevation data to build implementations of Dynamic TOPMODEL, a semi-distributed hydrological model proposed in Beven and Freer (2001) <doi:10.1002/hyp.252>. The 'dynatop' package implements simulation code for Dynamic TOPMODEL based on the output of 'dynatopGIS'.
+License: GPL-2
+Encoding: UTF-8
+Imports: R6, raster, rgeos, methods, jsonlite
+Depends: R (>= 4.0.0)
+BugReports: https://github.com/waternumbers/dynatopGIS/issues
+URL: https://waternumbers.github.io/dynatopGIS/,
+        https://github.com/waternumbers/dynatopGIS
+RoxygenNote: 7.1.2
+Suggests: rgdal, igraph, knitr, rmarkdown, covr, pkgdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-01-06 16:53:35 UTC; paul
+Author: Paul Smith [aut, cre] (<https://orcid.org/0000-0002-0034-3412>)
+Maintainer: Paul Smith <paul@waternumbers.co.uk>
+Repository: CRAN
+Date/Publication: 2022-01-07 13:32:49 UTC

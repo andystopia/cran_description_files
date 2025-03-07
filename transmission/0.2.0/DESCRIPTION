@@ -1,0 +1,26 @@
+Package: transmission
+Type: Package
+Title: Continuous time infectious disease models on individual data.
+Version: 0.2.0
+Date: 2014-05-15
+Authors@R: c(person('Alun', 'Thomas', email='alun.thomas@utah.edu',
+    role=c('aut', 'cph')) , person('Andrew', 'Redd',
+    email='andrew.redd@hsc.utah.edu', role=c('aut', 'com', 'cre')))
+Description: Simulate and fit continuous time infectious disease transmission
+    models. Infections can only occur through person to person contact or
+    imported from outside the unit.
+License: GPL (>= 3.0)
+LazyLoad: yes
+Suggests: testthat(>= 0.5), knitr(>= 1.1), pander
+Depends: R (>= 2.15.0), methods, Rcpp (>= 0.9.15)
+Imports: ggplot2, reshape2, plyr
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+RcppModules: continuous, sim
+Packaged: 2014-06-12 20:10:54 UTC; aredd
+Author: Alun Thomas [aut, cph],
+  Andrew Redd [aut, com, cre]
+Maintainer: Andrew Redd <andrew.redd@hsc.utah.edu>
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-06-13 06:35:49

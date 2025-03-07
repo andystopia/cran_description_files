@@ -1,0 +1,29 @@
+Package: CISE
+Type: Package
+Title: Common and Individual Structure Explained for Multiple Graphs
+Version: 0.1.0
+Authors@R: person("Lu", "Wang", email = "wangronglu22@gmail.com", 
+    role = c("aut","cre"))
+Description: Specific dimension reduction methods for replicated graphs 
+    (multiple undirected graphs repeatedly measured on a common set of 
+    nodes). The package contains efficient procedures for estimating 
+    a shared baseline propensity matrix and graph-specific low rank 
+    matrices. The algorithm uses block coordinate descent algorithm to 
+    solve the model, which alternatively performs L2-penalized logistic 
+    regression and multiple partial eigenvalue decompositions, as described 
+    in the paper Wang et al. (2017) <arXiv:1707.06360>. 
+Depends: R (>= 3.3.0)
+Imports: far, gdata, glmnet (>= 2.0-13), MASS, Matrix (>= 1.2-12),
+        rARPACK (>= 0.11-0)
+URL: https://arxiv.org/abs/1707.06360
+License: GPL-2
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-04-04 10:45:33 UTC; luwang
+Author: Lu Wang [aut, cre]
+Maintainer: Lu Wang <wangronglu22@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-04-05 15:19:31 UTC

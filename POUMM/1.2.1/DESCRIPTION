@@ -1,0 +1,31 @@
+Package: POUMM
+Type: Package
+Title: The Phylogenetic Ornstein-Uhlenbeck Mixed Model
+Version: 1.2.1
+Date: 2017-03-10
+Authors@R: person("Venelin", "Mitov", email = "vmitov@gmail.com",
+                 role = c("aut", "cre", "cph"))
+Description: Combined maximum likelihood and Bayesian inference of the 
+    univariate Phylogenetic Ornstein-Uhlenbeck Mixed Model; Fast POUMM likelihood
+    calculation. Maximum likelihood inference of the genotypic values
+    at the tips of a phylogeny assuming that the trait has evolved on it 
+    according to a POUMM with specified genotypic value at the root.
+    Functions for summarizing and plotting the inference results; 
+    Functions for simulation of univariate continuous trait evolution along a 
+    phylogenetic tree.
+License: GPL (>= 3.0)
+LazyData: true
+Depends: R (>= 3.1.0), stats, Rcpp, methods
+LinkingTo: Rcpp, RcppArmadillo
+Imports: ape, data.table, coda, foreach, ggplot2, gsl, Matrix
+Suggests: testthat, TreeSim (>= 2.2), Rmpfr, mvtnorm, lmtest, knitr,
+        rmarkdown, parallel, doParallel
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+ByteCompile: yes
+NeedsCompilation: yes
+Packaged: 2017-03-10 14:49:07 UTC; vmitov
+Author: Venelin Mitov [aut, cre, cph]
+Maintainer: Venelin Mitov <vmitov@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-03-11 09:18:21

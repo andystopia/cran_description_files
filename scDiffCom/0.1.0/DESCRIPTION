@@ -1,0 +1,52 @@
+Package: scDiffCom
+Type: Package
+Title: Differential Analysis of Intercellular Communication from
+        scRNA-Seq Data
+Version: 0.1.0
+Authors@R: c(
+    person("Cyril", "Lagger", email = "lagger.cyril@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-1701-6896")
+    ),
+    person("Eugen", "Ursu", email = "ursu_eugen@hotmail.com",
+    role = c("aut")),
+    person("Anais", "Equey", email = "anais.equey@gmail.com",
+    role = c("ctb"))
+    )
+Description: Analysis tools to investigate changes in intercellular
+    communication from scRNA-seq data. Using a Seurat object as input,
+    the package infers which cell-cell interactions are present in the dataset
+    and how these interactions change between two conditions of interest
+    (e.g. young vs old). It relies on an internal database of ligand-receptor
+    interactions (available for both human and mouse) that have been gathered
+    from several published studies. Detection and differential analyses
+    rely on permutation tests. The package also contains several tools
+    to perform over-representation analysis and visualize the results. See
+    Lagger, C. et al. (2021) <doi:10.1101/2021.08.13.456238> for a full 
+    description of the methodology.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.1.1
+biocViews:
+Suggests: biomaRt, covr, ggplot2, igraph, kableExtra, KEGGREST, knitr,
+        ontologyIndex, ontoProc, pkgdown, RColorBrewer, rmarkdown,
+        spelling, SingleCellSignalR, testthat (>= 3.0.0), visNetwork
+Imports: data.table, DelayedArray, future, future.apply, magrittr,
+        methods, Seurat (>= 4.0.0), stats, utils
+Collate: 'data.R' 'interaction_analysis.R' 'objects.R' 'utils_LRI.R'
+        'utils_cci.R' 'utils_filtering.R' 'utils_interactiveNetworks.R'
+        'utils_ora.R' 'utils_permutation.R' 'utils_preprocessing.R'
+        'utils_validation.R'
+URL: https://cyrillagger.github.io/scDiffCom/
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-08-16 11:20:11 UTC; clagger
+Author: Cyril Lagger [aut, cre] (<https://orcid.org/0000-0003-1701-6896>),
+  Eugen Ursu [aut],
+  Anais Equey [ctb]
+Maintainer: Cyril Lagger <lagger.cyril@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-17 07:20:05 UTC

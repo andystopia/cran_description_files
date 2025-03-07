@@ -1,0 +1,27 @@
+Package: vqtl
+Title: Genome Scans to Accommodate and Target Genetic and Non-Genetic
+        Effects on Trait Variance in Test Crosses
+Version: 2.0.0
+Authors@R: person("Robert", "Corty", email = "rcorty@gmail.com", role = c("aut", "cre"))
+Description: In recognition that there are many factors (genetic loci, macro-
+    genetic factors such as sex, and environmental factors) that influence the
+    extent of environmental variation, the 'vqtl' package conducts genome scans
+    that accommodate and target these factors. The main functions of this package,
+    scanonevar() and scanonevar.perm() take as input a cross object from the popular
+    'qtl' package.
+Depends: R (>= 3.3.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Imports: doParallel, foreach, iterators, parallel, knitr, dplyr, qtl,
+        dglm, evd, ggplot2, gtools, lazyeval, stringr, tidyr, testthat,
+        hglm, purrr
+Suggests: covr
+NeedsCompilation: no
+Packaged: 2018-02-08 15:00:37 UTC; rcorty
+Author: Robert Corty [aut, cre]
+Maintainer: Robert Corty <rcorty@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-02-08 15:29:24 UTC

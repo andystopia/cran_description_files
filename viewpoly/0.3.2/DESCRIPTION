@@ -1,0 +1,65 @@
+Package: viewpoly
+Title: A Shiny App to Visualize Genetic Maps and QTL Analysis in
+        Polyploid Species
+Version: 0.3.2
+Authors@R: c(
+           person(given = "Cristiane",
+                  family = "Taniguti",
+                  role = c("aut", "cre"),
+                  email = "chtaniguti@tamu.edu"),
+           person(given = "Gabriel",
+                  family = "de Siqueira Gesteira",
+                  role = c("aut"),
+                  email = "gdesiqu@ncsu.edu"),
+           person(given = "Jeekin",
+                  family = "Lau",
+                  role = c("ctb")),
+           person(given = "Guilherme",
+                  family = "da Silva Pereira",
+                  role = c("ctb")),
+           person(given = "David",
+                  family = "Byrne",
+                  role = c("ctb")),
+           person(given = "Zhao-Bang",
+                  family = "Zeng",
+                  role = c("ctb")),   
+           person(given = "Oscar",
+                  family = "Riera-Lizarazu",
+                  role = c("ctb")),
+           person(given = "Marcelo",
+                  family = "Mollinari",
+                  role = c("aut"),
+                  email = "mmollin@ncsu.edu")
+           )
+Maintainer: Cristiane Taniguti <chtaniguti@tamu.edu>
+Description: Provides a graphical user interface to integrate, visualize and explore results 
+            from linkage and quantitative trait loci analysis, together with genomic information for autopolyploid 
+            species. The app is meant for interactive use and allows users to optionally upload different sources 
+            of information, including  gene annotation and alignment files, enabling the exploitation and search for 
+            candidate genes in a genome browser. In its current version, 'VIEWpoly' supports inputs from 'MAPpoly', 
+            'polymapR', 'diaQTL', 'QTLpoly' and 'polyqtlR' packages. 
+License: GPL (>= 3)
+Depends: R (>= 4.0)
+Imports: shiny (>= 1.6.0), shinyjs, shinythemes, shinyWidgets,
+        shinydashboard, config (>= 0.3.1), golem (>= 0.3.1), JBrowseR,
+        dplyr, tidyr, DT, ggplot2, ggpubr, plotly, vroom, abind,
+        reshape2, markdown, stats, curl
+URL: https://github.com/mmollina/viewpoly
+BugReports: https://github.com/mmollina/viewpoly/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0), shinytest, rlang, pkgload, vdiffr
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-11-01 17:10:05 UTC; chtan
+Author: Cristiane Taniguti [aut, cre],
+  Gabriel de Siqueira Gesteira [aut],
+  Jeekin Lau [ctb],
+  Guilherme da Silva Pereira [ctb],
+  David Byrne [ctb],
+  Zhao-Bang Zeng [ctb],
+  Oscar Riera-Lizarazu [ctb],
+  Marcelo Mollinari [aut]
+Repository: CRAN
+Date/Publication: 2022-11-01 17:30:12 UTC

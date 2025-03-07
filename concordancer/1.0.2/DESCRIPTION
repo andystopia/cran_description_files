@@ -1,0 +1,31 @@
+Package: concordancer
+Title: An 'Rcpp' Implementation of Lin's Concordance Correlation
+        Coefficient (CCC)
+Version: 1.0.2
+Authors@R: 
+    person("Troy J", "Cross", , "troy.cross@sydney.edu.au", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2902-7787"))
+Description: Lin's Concordance Correlation Coefficient (CCC) is a statistic 
+  which measures the degree of agreement between two variables. The CCC is 
+  useful for assessing (i) the measurement agreement between two variables 
+  (typically outputs between two devices); (ii) the reproducibility between 
+  two measurements obtained from the same device; and (iii) inter-rater 
+  reliability. The 'concordancer' package provides a 'C++' implementation of 
+  Lin's CCC via 'Rcpp'. In so doing, the ccc() function contained herein is 
+  a much faster implementation than those contained in other R packages. For
+  more details on Lin's CCC, please see <https://en.wikipedia.org/wiki/Concordance_correlation_coefficient>.
+License: GPL (>= 3)
+URL: https://github.com/troyjcross/concordancer
+BugReports: https://github.com/troyjcross/concordancer/issues
+Imports: Rcpp
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: spelling
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2023-07-20 23:09:27 UTC; tcro3697
+Author: Troy J Cross [aut, cre, cph] (<https://orcid.org/0000-0003-2902-7787>)
+Maintainer: Troy J Cross <troy.cross@sydney.edu.au>
+Repository: CRAN
+Date/Publication: 2023-07-21 08:00:08 UTC

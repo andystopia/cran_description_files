@@ -1,0 +1,35 @@
+Package: tablesgg
+Version: 0.7-1
+Date: 2020-11-29
+Title: Presentation-Quality Tables, Displayed Using 'ggplot2'
+Authors@R: c(person("Richard", "Raubertas", role=c("aut", "cre"), 
+                    email="rrprf@emvt.net"))
+Author: Richard Raubertas [aut, cre]
+Maintainer: Richard Raubertas <rrprf@emvt.net>
+License: GPL (>= 3)
+Imports: ggplot2, tables, graphics, grDevices, stats, tools, utils,
+        grid
+Suggests: xtable, knitr, rmarkdown
+Description: Presentation-quality tables are displayed as plots on an R 
+  graphics device.  Although there are other packages that format tables 
+  for display, this package is unique in combining two features: (a) It is 
+  aware of the logical structure of the table being presented, and makes 
+  use of that for automatic layout and styling of the table.  This avoids 
+  the need for most manual adjustments to achieve an attractive result. 
+  (b) It displays tables using 'ggplot2' graphics.  Therefore a table can 
+  be presented anywhere a graph could be, with no more effort.  External 
+  software such as LaTeX or HTML or their viewers is not required.  The 
+  package provides a full set of tools to control the style and appearance 
+  of tables, including titles, footnotes and reference marks, horizontal 
+  and vertical rules, and spacing of rows and columns.  Methods are included 
+  to display data frames; tables created by R's ftable(), table(), and 
+  xtabs() functions; and tables created by the 'tables' and 'xtable' 
+  packages.  Methods can be added to display other table-like objects.  A 
+  vignette is included that illustrates usage and options available in the 
+  package.
+LazyData: yes
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-11-29 16:22:37 UTC; rfr
+Repository: CRAN
+Date/Publication: 2020-12-02 10:00:03 UTC

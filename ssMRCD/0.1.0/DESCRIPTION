@@ -1,0 +1,27 @@
+Package: ssMRCD
+Type: Package
+Title: Spatially Smoothed MRCD Estimator
+Version: 0.1.0
+Authors@R: 
+   c(
+   person(given = "Patricia", family = "Puchhammer", email = "patricia.puchhammer@tuwien.ac.at", role = c("aut", "cre", "cph")),
+   person(given = "Peter", family = "Filzmoser", role = c("aut"))
+   )
+Maintainer: Patricia Puchhammer <patricia.puchhammer@tuwien.ac.at>
+Description: Estimation of the Spatially Smoothed Minimum Regularized Determinant (ssMRCD) estimator and its usage in an ssMRCD-based outlier detection method as described in Puchhammer and Filzmoser (2023) <doi:10.48550/arXiv.2305.05371>. Included are also complementary visualization and parameter tuning tools.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: stats, grDevices, graphics, robustbase, scales, car, dbscan,
+        plot3D, dplyr, ggplot2
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.0.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-15 08:33:58 UTC; puchhammer
+Author: Patricia Puchhammer [aut, cre, cph],
+  Peter Filzmoser [aut]
+Repository: CRAN
+Date/Publication: 2023-05-15 19:20:02 UTC

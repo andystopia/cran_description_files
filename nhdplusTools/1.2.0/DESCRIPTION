@@ -1,0 +1,53 @@
+Package: nhdplusTools
+Type: Package
+Title: NHDPlus Tools
+Version: 1.2.0
+Authors@R: c(person(given = "David", 
+                    family = "Blodgett", 
+                    role = c("aut", "cre"), 
+                    email = "dblodgett@usgs.gov",
+                    comment = c(ORCID = "0000-0001-9489-1710")),
+             person(given = "Mike",
+                    family = "Johnson",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-5288-8350")),
+             person(given = "Marc",
+                    family = "Weber", 
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0002-9742-4744")),
+            person(given = "Josh", 
+                   family = "Erickson", 
+                   role = "ctb", 
+                   email = "joshualerickson@gmail.com"),
+            person(given = "Lauren",
+                   family = "Koenig",
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0002-7790-330X")))
+Description: Tools for traversing and working with National Hydrography Dataset Plus (NHDPlus) data. All methods implemented in 'nhdplusTools' are available in the NHDPlus documentation available from the US Environmental Protection Agency <https://www.epa.gov/waterdata/basic-information>.
+URL: https://doi-usgs.github.io/nhdplusTools/
+        https://github.com/doi-usgs/nhdplusTools/
+BugReports: https://github.com/doi-usgs/nhdplusTools/issues/
+Depends: R (>= 4.0)
+Imports: hydroloom, dataRetrieval, dplyr, sf, units, magrittr,
+        jsonlite, httr, xml2, R.utils, utils, tidyr, methods, maptiles,
+        mapsf, fst, arrow, tools, zip, pbapply, memoise, digest
+Suggests: testthat, knitr, rmarkdown, ggmap, ggplot2, lwgeom, gifski,
+        leaflet, httptest, future, future.apply
+License: CC0
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+LazyData: true
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-05-28 13:26:28 UTC; dblodgett
+Author: David Blodgett [aut, cre] (<https://orcid.org/0000-0001-9489-1710>),
+  Mike Johnson [aut] (<https://orcid.org/0000-0002-5288-8350>),
+  Marc Weber [ctb] (<https://orcid.org/0000-0002-9742-4744>),
+  Josh Erickson [ctb],
+  Lauren Koenig [ctb] (<https://orcid.org/0000-0002-7790-330X>)
+Maintainer: David Blodgett <dblodgett@usgs.gov>
+Repository: CRAN
+Date/Publication: 2024-05-28 14:20:03 UTC

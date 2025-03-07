@@ -1,0 +1,51 @@
+Package: string2path
+Title: Rendering Font into 'data.frame'
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Hiroaki",
+             family = "Yutani",
+             role = c("aut", "cre"),
+             email = "yutani.ini@gmail.com",
+             comment = c(ORCID = "0000-0002-3385-7233")),
+      person(given = "The authors of the dependency Rust crates",
+             role = c("ctb"),
+             comment = "see inst/AUTHORS file for details"))
+Description: Extract glyph information from font data, and translate the
+    outline curves to flattened paths or tessellated polygons. The converted
+    data is returned as a 'data.frame' in easy-to-plot format.
+License: MIT + file LICENSE
+Depends: R (>= 4.2)
+Imports: tibble, cli
+Suggests: testthat (>= 3.0.0)
+URL: https://yutannihilation.github.io/string2path/,
+        https://github.com/yutannihilation/string2path
+BugReports: https://github.com/yutannihilation/string2path/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+SystemRequirements: Cargo (rustc package manager)
+Biarch: true
+Config/testthat/edition: 3
+Config/string2path/MSRV: 1.56.0
+Config/string2path/crate_name: string2path
+Config/string2path/github_repo: yutannihilation/string2path
+Config/string2path/github_tag: build_20220801-11
+Config/string2path/binary_sha256sum: list(
+        `aarch64-apple-darwin-libstring2path.a` =
+        "be9395c67fa3b215197ac4144b325c07d74265a679a03aa52197139baccbb6d7",
+        `i686-pc-windows-gnu-libstring2path.a` =
+        "1851c29a1278fd39d88cce8fcd2a15bc0281c7de52d49fd199ee05aee6f9f2c1",
+        `ucrt-x86_64-pc-windows-gnu-libstring2path.a` =
+        "d79795b3282fddf0b180e7effa67143cd21efa1bae48a84c70f9628103b7ebad",
+        `x86_64-apple-darwin-libstring2path.a` =
+        "761bea016437230213353e8882821b7bbe411c3b3c8e4774d78a251041279d16",
+        `x86_64-pc-windows-gnu-libstring2path.a` =
+        "fe3ae7c9e9feadecee39b4f264141675e6a31cc388480af9897dc53f453b8dd9"
+        )
+NeedsCompilation: yes
+Packaged: 2022-08-06 01:25:24 UTC; Yutani
+Author: Hiroaki Yutani [aut, cre] (<https://orcid.org/0000-0002-3385-7233>),
+  The authors of the dependency Rust crates [ctb] (see inst/AUTHORS file
+    for details)
+Maintainer: Hiroaki Yutani <yutani.ini@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-06 06:30:03 UTC

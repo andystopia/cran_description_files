@@ -1,0 +1,24 @@
+Package: MLMOI
+Type: Package
+Title: Estimating Frequencies, Prevalence and Multiplicity of Infection
+Version: 0.1.1
+Authors@R: c(person("Meraj", "Hashemi", role = c("cre", "aut", "com"), email = "mhashemi@hs-mittweida.de"),
+             person("Kristan", "Schneider", role = c("aut", "ths"), email = "kristan.schneider@hs-mittweida.de"))
+Maintainer: Meraj Hashemi <mhashemi@hs-mittweida.de>
+Description: The implemented methods reach out to scientists that seek to estimate multiplicity of infection (MOI) and lineage (allele) frequencies and prevalences at molecular markers using the maximum-likelihood method described in Schneider (2018) <doi:10.1371/journal.pone.0194148>, and Schneider and Escalante (2014) <doi:10.1371/journal.pone.0097899>. Users can import data from Excel files in various formats, and perform maximum-likelihood estimation on the imported data by the package's moimle() function.
+Depends: R (>= 3.3.0)
+Imports: XLConnect (>= 0.2-15), rJava (>= 0.9-10), Rdpack (>= 0.10-1),
+        Rmpfr (>= 0.7-1),
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2020-01-08 11:35:01 UTC; Meraj
+Author: Meraj Hashemi [cre, aut, com],
+  Kristan Schneider [aut, ths]
+Repository: CRAN
+Date/Publication: 2020-01-10 17:30:02 UTC

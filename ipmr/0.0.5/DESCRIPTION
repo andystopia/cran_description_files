@@ -1,0 +1,75 @@
+Package: ipmr
+Title: Integral Projection Models
+Version: 0.0.5
+Authors@R: c( 
+    person(given = "Sam",
+           family = "Levin",
+           role = c("aut", "cre"),
+           email = "levisc8@gmail.com",
+           comment = c(ORCID = "0000-0002-3289-9925")),
+    person(given = "Aldo",
+           family = "Compagnoni",
+           email = "aldo.compagnoni@idiv.de",
+           role = "aut"),
+    person(given = "Dylan",
+           family = "Childs",
+           email = "d.childs@sheffield.ac.uk",
+           role = "aut"),
+    person(given = "Sanne",
+           family = "Evers",
+           email = "sanne.evers@idiv.de",
+           role = "aut"),
+    person(given = "Roberto",
+           family = "Salguero-Gomez",
+           email = "rob.salguero@zoo.ox.ac.uk",
+           role = "aut"),
+    person(given = "Tiffany",
+           family = "Knight",
+           email = "tiffany.knight@idiv.de",
+           role = "aut"),
+    person(given = "Eric",
+           family = "Scott",
+           email  = "scottericr@gmail.com",
+           role   = "ctb"))
+Description: Flexibly implements Integral Projection Models using a
+  mathematical(ish) syntax. This package will not help with the vital rate
+  modeling process, but will help convert those regression models into an
+  IPM. 'ipmr' handles density dependence and environmental stochasticity, with a
+  couple of options for implementing the latter. In addition, provides functions
+  to avoid unintentional eviction of individuals from models. Additionally, 
+  provides model diagnostic tools, plotting functionality, 
+  stochastic/deterministic simulations, and analysis tools.
+  Integral projection models are described in depth by Easterling et al. (2000) 
+  <doi:10.1890/0012-9658(2000)081[0694:SSSAAN]2.0.CO;2>, Merow et al. (2013) 
+  <doi:10.1111/2041-210X.12146>, Rees et al. (2014) <doi:10.1111/1365-2656.12178>,
+  and Metcalf et al. (2015) <doi:10.1111/2041-210X.12405>. 
+  Williams et al. (2012) <doi:10.1890/11-2147.1> discuss the problem of 
+  unintentional eviction.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: covr, knitr, lme4, mvtnorm, rmarkdown, roxygen2, spelling,
+        testthat, tools
+VignetteBuilder: knitr
+Language: en-US
+Imports: graphics, grDevices, magrittr, methods, purrr (>= 0.3.0),
+        rlang (>= 0.3.0), stats, utils, Rcpp
+Depends: R (>= 3.4)
+RoxygenNote: 7.1.2
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+URL: https://levisc8.github.io/ipmr/, https://github.com/levisc8/ipmr
+BugReports: https://github.com/levisc8/ipmr/issues
+NeedsCompilation: yes
+Packaged: 2022-04-28 01:08:25 UTC; sl13sise
+Author: Sam Levin [aut, cre] (<https://orcid.org/0000-0002-3289-9925>),
+  Aldo Compagnoni [aut],
+  Dylan Childs [aut],
+  Sanne Evers [aut],
+  Roberto Salguero-Gomez [aut],
+  Tiffany Knight [aut],
+  Eric Scott [ctb]
+Maintainer: Sam Levin <levisc8@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-04-28 13:40:08 UTC

@@ -1,0 +1,34 @@
+Package: cyclestreets
+Type: Package
+Title: Cycle Routing and Data for Cycling Advocacy
+Version: 0.3.0
+Authors@R: c(
+    person("Robin", "Lovelace", email = "rob00x@gmail.com", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-5679-6536")),
+    person("Martin", "Lucas-Smith", role = c("aut")),
+    person("Eric", "Krueger", role = c("ctb")),
+    person("Joey", "Talbot", email = "j.d.talbot@leeds.ac.uk", role = c("aut"), 
+      comment = c(ORCID = "0000-0002-6520-4560"))
+    )
+Description: An interface to the cycle routing/data services provided by 'CycleStreets',
+  a not-for-profit social enterprise and advocacy organisation.
+  The application programming interfaces (APIs) provided by 'CycleStreets' are documented at (<https://www.cyclestreets.net/api/>).
+  The focus of this package is the journey planning API, which aims to emulate the routes taken by a knowledgeable cyclist.
+  An innovative feature of the routing service of its provision of fastest, quietest and balanced profiles.
+  These represent routes taken to minimise time, avoid traffic and compromise between the two, respectively.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: sf, magrittr, jsonlite, httr, stringr, geodist
+RoxygenNote: 7.1.1
+Depends: R (>= 3.6.0)
+Suggests: stplanr, covr
+NeedsCompilation: no
+Packaged: 2020-09-25 23:32:11 UTC; robin
+Author: Robin Lovelace [aut, cre] (<https://orcid.org/0000-0001-5679-6536>),
+  Martin Lucas-Smith [aut],
+  Eric Krueger [ctb],
+  Joey Talbot [aut] (<https://orcid.org/0000-0002-6520-4560>)
+Maintainer: Robin Lovelace <rob00x@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-09-26 04:20:06 UTC

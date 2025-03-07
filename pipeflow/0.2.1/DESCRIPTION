@@ -1,0 +1,32 @@
+Package: pipeflow
+Title: Lightweight, General-Purpose Data Analysis Pipelines
+Version: 0.2.1
+Authors@R: 
+    person("Roman", "Pahl", , "roman.pahl@gmail.com", role = c("aut", "cre"))
+Description: A lightweight yet powerful framework for building robust
+    data analysis pipelines. With 'pipeflow', you initialize a pipeline
+    with your dataset and construct your workflow step by step by seamlessly
+    adding R functions. Modify, remove, or insert steps at any stage while
+    'pipeflow' ensures the integrity and correctness of your pipeline.
+    Designed to help you focus on the 'what' rather than the 'how', this
+    package simplifies the implementation of complex workflows, making
+    even large-scale data analysis projects manageable, adaptable, and
+    reusable with ease.
+License: GPL-3
+Imports: data.table, jsonlite, lgr, methods, R6, stats, utils
+Suggests: ggplot2, knitr, mockery, rmarkdown, testthat, visNetwork
+URL: https://rpahl.github.io/pipeflow/,
+        https://github.com/rpahl/pipeflow
+BugReports: https://github.com/rpahl/pipeflow/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Maintainer: Roman Pahl <roman.pahl@gmail.com>
+Packaged: 2024-12-04 17:01:48 UTC; Roman
+Author: Roman Pahl [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-12-05 08:30:09 UTC

@@ -1,0 +1,53 @@
+Package: QFASA
+Title: Quantitative Fatty Acid Signature Analysis
+Version: 1.2.0
+Date: 2023-11-07
+Authors@R: c(
+             person("Connie", "Stewart", email = "connie.stewart@unb.ca", role = c("cre","aut", "cph")),
+             person("Sara", "Iverson", email = "Sara.Iverson@dal.ca", role = c("aut","cph")),
+             person("Chris", "Field", email = "field@mathstat.dal.ca", role = c("aut")),
+             person("Don", "Bowen", email = "Don.Bowen@dfo-mpo.gc.ca", role = c("aut")),
+             person("Wade", "Blanchard", email = "wade.blanchard@anu.edu.au", role = c("aut")),
+                          person("Shelley", "Lang", email = "shelley.lang@dfo-mpo.gc.ca", role = c("aut")),
+             person("Justin", "Kamerman", email = "justin@kaleco.net", role = c("aut")),
+             person("Hongchang", "Bao", email = "hbao@unb.ca", role = c("ctb")),
+             person("Holly", "Steeves", email = "holly.steeves@uwo.ca", role = c("aut")),
+             person("Jennifer", "McNichol", email = "jmcnicho@unb.ca", role = c("aut")),
+             person("Tyler", "Rideout", email = "trideou2@unb.ca", role = c("aut")))
+Description: Accurate estimates of the diets of predators are required
+    in many areas of ecology, but for many species current methods are
+    imprecise, limited to the last meal, and often biased. The diversity
+    of fatty acids and their patterns in organisms, coupled with the
+    narrow limitations on their biosynthesis, properties of digestion in
+    monogastric animals, and the prevalence of large storage reservoirs of
+    lipid in many predators, led to the development of quantitative
+    fatty acid signature analysis (QFASA) to study predator diets.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: stats, Rsolnp, boot, futile.logger, gamlss, gamlss.dist,
+        vegan, bootstrap, Compositional, TMB, compositions, MASS,
+        dplyr, mvtnorm,
+LinkingTo: TMB, Rcpp, RcppEigen,
+RoxygenNote: 7.2.3
+VignetteBuilder: rmarkdown, knitr
+Suggests: plyr, knitr, rmarkdown, testthat, gtools
+BugReports: https://github.com/cstewartGH/QFASA/issues
+URL: https://CRAN.R-project.org/package=QFASA
+NeedsCompilation: yes
+Packaged: 2023-11-15 22:38:40 UTC; cstewart
+Author: Connie Stewart [cre, aut, cph],
+  Sara Iverson [aut, cph],
+  Chris Field [aut],
+  Don Bowen [aut],
+  Wade Blanchard [aut],
+  Shelley Lang [aut],
+  Justin Kamerman [aut],
+  Hongchang Bao [ctb],
+  Holly Steeves [aut],
+  Jennifer McNichol [aut],
+  Tyler Rideout [aut]
+Maintainer: Connie Stewart <connie.stewart@unb.ca>
+Repository: CRAN
+Date/Publication: 2023-11-16 20:34:05 UTC

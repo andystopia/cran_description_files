@@ -1,0 +1,31 @@
+Package: ZetaSuite
+Type: Package
+Title: Analyze High-Dimensional High-Throughput Dataset and Quality
+        Control Single-Cell RNA-Seq
+Version: 1.0.0
+Date: 2022-03-26
+Authors@R: c(
+    person(given = "Yajing", family = "Hao", email = "yahao@health.ucsd.edu", role  = c("aut"), comment = c(ORCID = "0000-0003-1384-4176")),
+    person(given = "Shuyang", family = "Zhang", email = "s4zhang@ucsd.edu", role  = "ctb", comment=c(ORCID="0000-0002-8428-1828")),
+    person(given = "Junhui", family = "Li", email = "ljh.biostat@gmail.com", role = "cre"),
+    person(given = "Guofeng", family = "Zhao", email = "gzhao@health.ucsd.edu", role = "ctb"),
+    person(given = "Xiang-Dong", family = "Fu", email = "xdfu@health.ucsd.edu", role = c("cph","fnd"), comment = c(ORCID = "0000-0001-5499-8732"))
+		)
+Maintainer: Junhui Li <ljh.biostat@gmail.com>
+Description: The advent of genomic technologies has enabled the generation of two-dimensional or even multi-dimensional high-throughput data, e.g., monitoring multiple changes in gene expression in genome-wide siRNA screens across many different cell types (E Robert McDonald 3rd (2017) <doi: 10.1016/j.cell.2017.07.005> and Tsherniak A (2017) <doi: 10.1016/j.cell.2017.06.010>) or single cell transcriptomics under different experimental conditions. We found that simple computational methods based on a single statistical criterion is no longer adequate for analyzing such multi-dimensional data. We herein introduce 'ZetaSuite', a statistical package initially designed to score hits from two-dimensional RNAi screens.We also illustrate a unique utility of 'ZetaSuite' in analyzing single cell transcriptomics to differentiate rare cells from damaged ones (Vento-Tormo R (2018) <doi: 10.1038/s41586-018-0698-6>). In 'ZetaSuite', we  have the following steps: QC of input datasets, normalization using Z-transformation, Zeta score calculation and hits selection based on defined Screen Strength.
+Imports: RColorBrewer, Rtsne, dplyr, e1071, ggplot2, reshape2, scater,
+        gridExtra, mixtools
+License: GPL-2 | GPL-3
+Depends: R (>= 2.10)
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Author: Yajing Hao [aut] (<https://orcid.org/0000-0003-1384-4176>),
+  Shuyang Zhang [ctb] (<https://orcid.org/0000-0002-8428-1828>),
+  Junhui Li [cre],
+  Guofeng Zhao [ctb],
+  Xiang-Dong Fu [cph, fnd] (<https://orcid.org/0000-0001-5499-8732>)
+NeedsCompilation: no
+Packaged: 2022-03-30 19:46:31 UTC; junhuili
+Repository: CRAN
+Date/Publication: 2022-03-31 07:30:14 UTC

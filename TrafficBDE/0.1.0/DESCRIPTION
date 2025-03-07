@@ -1,0 +1,37 @@
+Package: TrafficBDE
+Type: Package
+Title: Traffic Status Prediction in Urban Places using Neural Network
+        Models
+Version: 0.1.0
+Date: 2018-02-26
+Description: Estimate and return either the traffic speed or the car entries in the city of Thessaloniki using historical traffic data. It's used in transport pilot <http://trafficstatusprediction.imet.gr/> of the 'BigDataEurope' project <https://www.big-data-europe.eu/>. There are functions for processing these data, training a neural network, select the most appropriate model and predict the traffic speed or the car entries for a selected time date.
+Authors@R: c(person("Aikaterini", "Chatzopoulou", role = c("aut", "cre"),
+                     email = "kchatzopoul@okfn.gr"),
+              person("Kleanthis", "Koupidis", role = "aut",
+                     email ="koupidis@okfn.gr"),
+              person("Charalampos","Bratsas", role = "aut",
+                      email = "charalampos.bratsas@okfn.org"),
+              person("Panagiotis", "Tzenos", role = "dtc",
+                     email = "ptzenos@certh.gr"),
+              person("Josep Maria", "Salanova", role = "dtc",
+                     email = "jose@certh.gr"))
+Maintainer: Aikaterini Chatzopoulou <kchatzopoul@okfn.gr>
+URL: https://github.com/okgreece/TrafficBDE
+BugReports: https://github.com/okgreece/TrafficBDE/issues
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: caret, data.table, dplyr, lubridate, neuralnet, RCurl, stats,
+        zoo
+RoxygenNote: 6.0.1
+Suggests: ggplot2, knitr, lattice, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-03-01 09:27:42 UTC; Kleanthis-Okf
+Author: Aikaterini Chatzopoulou [aut, cre],
+  Kleanthis Koupidis [aut],
+  Charalampos Bratsas [aut],
+  Panagiotis Tzenos [dtc],
+  Josep Maria Salanova [dtc]
+Repository: CRAN
+Date/Publication: 2018-03-01 16:23:44 UTC

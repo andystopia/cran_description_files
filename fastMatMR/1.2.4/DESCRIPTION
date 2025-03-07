@@ -1,0 +1,32 @@
+Package: fastMatMR
+Title: High-Performance Matrix Market File Operations
+Version: 1.2.4
+Authors@R: 
+    c(
+    person("Rohit", "Goswami", email = "rgoswami@ieee.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2393-8056")),
+    person("Ildiko", "Czeller", email = "czeildi@users.noreply.github.com", role = c("rev"),
+           comment = c(ORCID = "0000-0002-9418-4589")),
+    person("Adam", "Lugowski", email = "alugowski@gmail.com", role = c("ctb"),
+           comment = c(ORCID = "0009-0004-0922-4067"))
+           )
+Description: An interface to the 'fast_matrix_market' 'C++' library, this package offers efficient read and write operations for Matrix Market files in R. It supports both sparse and dense matrix formats. Peer-reviewed at ROpenSci (<https://github.com/ropensci/software-review/issues/606>).
+Author: Rohit Goswami [aut, cre] (<https://orcid.org/0000-0002-2393-8056>),
+  Ildiko Czeller [rev] (<https://orcid.org/0000-0002-9418-4589>),
+  Adam Lugowski [ctb] (<https://orcid.org/0009-0004-0922-4067>)
+Maintainer: Rohit Goswami <rgoswami@ieee.org>
+License: MIT + file LICENSE
+SystemRequirements: C++17
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: cpp11
+Suggests: ggplot2, knitr, Matrix, microbenchmark, rmarkdown, testthat
+        (>= 3.0.0)
+URL: https://github.com/ropensci/fastMatMR
+BugReports: https://github.com/ropensci/fastMatMR/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-11-02 11:47:17 UTC; rgoswami
+Repository: CRAN
+Date/Publication: 2023-11-02 16:00:02 UTC

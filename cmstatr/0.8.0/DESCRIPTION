@@ -1,0 +1,48 @@
+Package: cmstatr
+Type: Package
+Title: Statistical Methods for Composite Material Data
+Version: 0.8.0
+Date: 2021-02-23
+Depends: R (>= 3.3)
+Authors@R: c(
+    person("Stefan", "Kloppenborg", email = "stefan@kloppenborg.ca",
+      role = c("aut", "cre")),
+    person("Billy", "Cheng", email = "bcheng@comtekadvanced.com",
+      role = c("ctb")),
+    person("Ally", "Fraser", email = "ally.fraser25@gmail.com",
+      role = c("ctb"))
+  )
+Description: An implementation of the statistical methods commonly
+  used for advanced composite materials in aerospace applications.
+  This package focuses on calculating basis values (lower tolerance
+  bounds) for material strength properties, as well as performing the
+  associated diagnostic tests. This package provides functions for
+  calculating basis values assuming several different distributions,
+  as well as providing functions for non-parametric methods of computing
+  basis values. Functions are also provided for testing the hypothesis
+  that there is no difference between strength and modulus data from an
+  alternate sample and that from a "qualification" or "baseline" sample.
+  For a discussion of these statistical methods and their use, see the
+  Composite Materials Handbook, Volume 1 (2012, ISBN: 978-0-7680-7811-4).
+  Additional details about this package are available in the paper by
+  Kloppenborg (2020, <doi:10.21105/joss.02265>).
+URL: https://www.cmstatr.net/,
+        https://github.com/ComtekAdvancedStructures/cmstatr
+BugReports: https://github.com/ComtekAdvancedStructures/cmstatr/issues
+License: AGPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, generics, ggplot2, kSamples, MASS, rlang, stats, tibble
+Suggests: knitr, lintr, purrr, rmarkdown, spelling, testthat, tidyr,
+        vdiffr
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-02-24 14:05:19 UTC; stefan
+Author: Stefan Kloppenborg [aut, cre],
+  Billy Cheng [ctb],
+  Ally Fraser [ctb]
+Maintainer: Stefan Kloppenborg <stefan@kloppenborg.ca>
+Repository: CRAN
+Date/Publication: 2021-02-24 14:30:02 UTC

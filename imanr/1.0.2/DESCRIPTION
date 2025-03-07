@@ -1,0 +1,53 @@
+Package: imanr
+Type: Package
+Title: Identify the Racial Complex of Native Corns from Mexico
+Version: 1.0.2
+Authors@R: c(person("Rafael","Nieves-Alvarez",
+                  email="nievesalvarez1618@gmail.com",
+                  role=c("aut","cre"),
+                  comment=c(ORCID="0009-0002-8016-1412")),
+          person("Arturo","Sanchez-Porras",
+                  email="sp.arturo@gmail.com",
+                  role=c("aut", "cph"),
+                  comment=c(ORCID="0000-0002-1691-286X")),
+          person("Aline","Romero-Natale",
+                  email="natalearn@gmail.com",
+                  role="aut",
+                  comment=c(ORCID="0000-0003-4267-1913")),
+          person("Otilio Arturo","Acevedo-Sandoval",
+                  email="acevedo@uaeh.edu.mx",
+                  role="aut",
+                  comment=c(ORCID="0000-0003-0475-7003")))
+Maintainer: Rafael Nieves-Alvarez <nievesalvarez1618@gmail.com>
+Description: A model that provides researchers with a powerful tool for the classification
+    and study of native corn by aiding in the identification of racial complexes
+    which are fundamental to Mexico's agriculture and culture. This package has been
+    developed based on data collected by "Proyecto Global de Maíces Nativos México",
+    which has conducted exhaustive surveys across the country to document the
+    qualitative and quantitative characteristics of different types of native maize.
+    The trained model uses a robust and diverse dataset, enabling it to achieve an
+    80% accuracy in classifying maize racial complexes. The characteristics included
+    in the analysis comprise geographic location, grain and cob colors, as well as
+    various physical measurements, such as lengths and widths.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.1
+Imports: missForest, caret, ranger, dplyr, parallel, doParallel,
+        foreach
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2024-06-16 16:28:06 UTC; rafa
+Author: Rafael Nieves-Alvarez [aut, cre]
+    (<https://orcid.org/0009-0002-8016-1412>),
+  Arturo Sanchez-Porras [aut, cph]
+    (<https://orcid.org/0000-0002-1691-286X>),
+  Aline Romero-Natale [aut] (<https://orcid.org/0000-0003-4267-1913>),
+  Otilio Arturo Acevedo-Sandoval [aut]
+    (<https://orcid.org/0000-0003-0475-7003>)
+Repository: CRAN
+Date/Publication: 2024-06-23 14:30:02 UTC

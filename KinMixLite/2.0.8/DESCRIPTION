@@ -1,0 +1,24 @@
+Package: KinMixLite
+Type: Package
+Title: Inference About Relationships from DNA Mixtures
+Version: 2.0.8
+Date: 2023-03-21
+Authors@R: c(person("Peter", "Green", role = c("aut", "cre"), email = "P.J.Green@bristol.ac.uk"))
+Maintainer: Peter Green <P.J.Green@bristol.ac.uk>
+Description: Methods for inference about relationships between contributors to a DNA mixture and 
+  other individuals of known genotype: a basic example would be testing whether a contributor to 
+  a mixture is the father of a child of known genotype. This provides most of the functionality
+  of the 'KinMix' package, but with some loss of efficiency and restriction on problem size,
+  as the latter uses 'RHugin' as the Bayes net engine, while this package uses 'gRain'.
+  The package implements the methods introduced in 
+  Green, P. J. and Mortera, J. (2017) <doi:10.1016/j.fsigen.2017.02.001> and 
+  Green, P. J. and Mortera, J. (2021) <doi:10.1111/rssc.12498>.
+License: GPL (>= 2)
+Depends: DNAmixturesLite, gRaven
+Imports: statnet.common, gRbase, Rsolnp, ribd, pedtools, methods
+URL: https://petergreenweb.wordpress.com/kinmix/
+NeedsCompilation: no
+Packaged: 2023-03-21 17:50:32 UTC; peter
+Author: Peter Green [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-03-22 08:50:12 UTC

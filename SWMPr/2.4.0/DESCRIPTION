@@ -1,0 +1,34 @@
+Package: SWMPr
+Type: Package
+Title: Retrieving, Organizing, and Analyzing Estuary Monitoring Data
+Version: 2.4.0
+Date: 2020-12-18
+Author: Marcus W. Beck [aut, cre],
+  Kimberly Cressman [ctb]
+Maintainer: Marcus W. Beck <mbeck@tbep.org>
+Description: Tools for retrieving, organizing, and analyzing environmental
+    data from the System Wide Monitoring Program of the National Estuarine
+    Research Reserve System <http://cdmo.baruch.sc.edu/>. These tools
+    address common challenges associated with continuous time series data
+    for environmental decision making.
+BugReports: https://github.com/fawda123/SWMPr/issues
+License: CC0
+Imports: data.table, httr, gridExtra, maptools, oce, dplyr, lattice,
+        openair, RColorBrewer, reshape2, tictoc, tidyr, XML
+LazyData: true
+Depends: R (>= 3.2.0), ggplot2, zoo
+Suggests: colorspace, ggmap, knitr, rmarkdown
+Authors@R: c(
+  person(given = "Marcus W.", family = "Beck",
+    role = c("aut","cre"),
+    email = "mbeck@tbep.org"),
+  person(given = "Kimberly", family = "Cressman", 
+    role = c("ctb"),
+    email = "kimberly.cressman@dmr.ms.gov")
+    )
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-05 13:29:45 UTC; mbeck
+Repository: CRAN
+Date/Publication: 2021-01-05 20:00:32 UTC

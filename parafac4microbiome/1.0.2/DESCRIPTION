@@ -1,0 +1,50 @@
+Package: parafac4microbiome
+Title: Parallel Factor Analysis Modelling of Longitudinal Microbiome
+        Data
+Version: 1.0.2
+Authors@R: c(
+    person("Geert Roelof", "van der Ploeg", , "g.r.ploeg@uva.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-5204-3386")),
+    person("Johan", "Westerhuis", , "j.a.westerhuis@uva.nl", role = "ctb",
+           comment = c(ORCID = "0000-0002-6747-9779")),
+    person("Anna", "Heintz-Buschart", , "a.u.s.heintzbuschart@uva.nl", role = "ctb",
+           comment = c(ORCID = "0000-0002-9780-1933")),
+    person("Age", "Smilde", , "a.k.smilde@uva.nl", role = "ctb",
+           comment = c(ORCID = "0000-0002-3052-4644")),
+    person("University of Amsterdam", role = c("cph", "fnd")))
+Description: Creation and selection of PARAllel FACtor Analysis (PARAFAC)
+    models of longitudinal microbiome data. You can import your own data with
+    our import functions or use one of the example datasets to create your own
+    PARAFAC models. Selection of the optimal number of components can be done
+    using assessModelQuality() and assessModelStability(). The selected model can
+    then be plotted using plotPARAFACmodel(). The Parallel Factor
+    Analysis method was originally described by Caroll and Chang (1970)
+    <doi:10.1007/BF02310791> and Harshman (1970)
+    <https://www.psychology.uwo.ca/faculty/harshman/wpppfac0.pdf>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: compositions, cowplot, doParallel, dplyr, foreach, ggplot2,
+        ggpubr, lifecycle, magrittr, methods, mize, multiway, parallel,
+        pracma, rlang, rTensor, stats, tidyr
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: knitr, MicrobiotaProcess, phyloseq, rmarkdown,
+        SummarizedExperiment, testthat (>= 3.0.0),
+        TreeSummarizedExperiment, withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://grvanderploeg.github.io/parafac4microbiome/,
+        https://github.com/GRvanderPloeg/parafac4microbiome
+BugReports: https://github.com/GRvanderPloeg/parafac4microbiome/issues
+NeedsCompilation: no
+Packaged: 2024-09-17 14:17:29 UTC; roelv
+Author: Geert Roelof van der Ploeg [aut, cre]
+    (<https://orcid.org/0009-0007-5204-3386>),
+  Johan Westerhuis [ctb] (<https://orcid.org/0000-0002-6747-9779>),
+  Anna Heintz-Buschart [ctb] (<https://orcid.org/0000-0002-9780-1933>),
+  Age Smilde [ctb] (<https://orcid.org/0000-0002-3052-4644>),
+  University of Amsterdam [cph, fnd]
+Maintainer: Geert Roelof van der Ploeg <g.r.ploeg@uva.nl>
+Repository: CRAN
+Date/Publication: 2024-09-17 16:30:01 UTC

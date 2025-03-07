@@ -1,0 +1,23 @@
+Package: GenoPop
+Title: Genotype Imputation and Population Genomics Efficiently from
+        Variant Call Formatted (VCF) Files
+Version: 0.9.3
+Authors@R: 
+    person(given = "Marie", family = "Gurke", email = "margurke@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9901-424X"))
+Description: Tools for efficient processing of large, whole genome genotype data sets in variant call format (VCF). It includes several functions to calculate commonly used population genomic metrics and a method for reference panel free genotype imputation, which is described in the preprint Gurke & Mayer (2024) <doi:10.22541/au.172515591.10119928/v1>.
+Date: 2024-09-09
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+biocViews:
+Imports: Rsamtools, GenomicRanges, foreach, doParallel, parallel,
+        missForest, IRanges
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-09 08:22:10 UTC; mick
+Author: Marie Gurke [aut, cre] (<https://orcid.org/0000-0001-9901-424X>)
+Maintainer: Marie Gurke <margurke@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-11 16:10:06 UTC

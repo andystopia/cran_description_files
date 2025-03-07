@@ -1,0 +1,24 @@
+Package: gpDDE
+Title: General Profiling Method for Delay Differential Equation
+Version: 0.8.2
+Authors@R: c(person("Ziqian", "Zhou", email = "ziqian-zhou@uiowa.edu",
+    role = c("aut", "cre")),
+    person("Kung-Sik", "Chan", email = "kung-sik-chan@uiowa.edu",
+    role = c("aut")))
+Description: Functions implement collocation-inference for
+    stochastic process driven by distributed delay differential equations.
+    They also provide tools for selecting the lags for distributed delay
+    using shrinkage methods, estimating time-varying coefficients,
+    and tools for inference and prediction.
+Depends: R (>= 3.2.1), fda, CollocInfer (>= 1.0.2)
+License: GPL (>= 2)
+LazyData: true
+Imports: penalized, nnls, deSolve, MASS, TSA, lars, limSolve, forecast,
+        trustOptim, methods
+NeedsCompilation: no
+Packaged: 2015-12-16 19:31:00 UTC; ziqian
+Author: Ziqian Zhou [aut, cre],
+  Kung-Sik Chan [aut]
+Maintainer: Ziqian Zhou <ziqian-zhou@uiowa.edu>
+Repository: CRAN
+Date/Publication: 2015-12-16 23:25:34

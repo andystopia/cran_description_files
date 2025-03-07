@@ -1,0 +1,88 @@
+Package: nlmixr
+Type: Package
+Title: Nonlinear Mixed Effects Models in Population Pharmacokinetics
+        and Pharmacodynamics
+Depends: R (>= 3.5)
+Imports: Rcpp (>= 0.12.3), brew, lattice, parallel, lbfgs, dparser,
+        methods, ggplot2, memoise, rex, minqa, Matrix, R.utils, n1qn1,
+        fastGHQuad, crayon, cli, RcppArmadillo (>= 0.5.600.2.0), vpc
+        (>= 1.0.0), RxODE(>= 0.9.0-6), nlme, magrittr, tidyr, sys,
+        generics, huxtable, digest, flextable, stringr, yaml
+Suggests: knitr, rmarkdown, dplyr, data.table, lbfgsb3c, testthat,
+        madness, devtools, expm, matrixcalc, reshape2, nloptr, ucminf,
+        Rvmmin, broom.mixed, dotwhisker, officer, pkgdown, gridExtra,
+        xpose,
+Version: 1.1.0-9
+Authors@R: c(person("Matthew","Fidler",
+      role = "aut", email = "matthew.fidler@gmail.com",
+      comment=c(ORCID="0000-0001-8538-6691")),
+   person("Yuan", "Xiong", 
+      role = "aut", email = "yuan.xiong@gmail.com"),
+   person("Rik", "Schoemaker", 
+      role = "aut", email = "rik.schoemaker@occams.com",
+      comment=c(ORCID="0000-0002-7538-3005")),
+   person("Justin", "Wilkins", 
+      role = "aut", email = "justin.wilkins@occams.com",
+      comment=c(ORCID="0000-0002-7099-9396")),
+   person("Mirjam","Trame",
+      role = "aut", email = "mirjam.trame@gmail.com"),
+   person("Richard", "Hooijmaijers", email = "richardhooijmaijers@gmail.com",
+      role = "aut"),
+   person("Teun","Post",
+      role = "aut", email = "t.post@lapp.nl"),   
+   person("Robert","Leary", role = "ctb"),
+   person("Wenping", "Wang", 
+      role = c("aut", "cre"), email = "wwang8198@gmail.com"),
+   person("Hadley","Wickham", role = "ctb"),
+   person("Dirk","Eddelbuettel",
+      role = "cph", email = "edd@debian.org"),
+   person("Johannes", "Pfeifer",role="ctb"),
+   person("Robert B.", "Schnabel",role="ctb"),
+   person("Elizabeth", "Eskow", role="ctb"),
+   person("Emmanuelle", "Comets", role="ctb", email="emmanuelle.comets@inserm.fr"),
+   person("Audrey", "Lavenu", role="ctb"),
+   person("Marc", "Lavielle", role="ctb"),
+   person("David","Ardia",role = "cph"),
+   person("Bill", "Denney", role=c("ctb"),
+      email="wdenney@humanpredictions.com",
+      comment=c(ORCID="0000-0002-5759-428X")),
+   person("Katharine","Mullen",role = "cph")
+   )
+Description: Fit and compare nonlinear mixed-effects models in differential
+    equations with flexible dosing information commonly seen in pharmacokinetics
+    and pharmacodynamics (Almquist, Leander, and Jirstrand 2015 
+    <doi:10.1007/s10928-015-9409-1>). Differential equation solving is 
+    by compiled C code provided in the 'RxODE' package
+    (Wang, Hallow, and James 2015 <doi:10.1002/psp4.12052>).
+License: GPL (>= 2)
+NeedsCompilation: yes
+LinkingTo: dparser(>= 0.1.8), Rcpp (>= 1.0.1), RxODE(>= 0.9.0-6),
+        RcppEigen (>= 0.3.3.3.0), StanHeaders(>= 2.18.0), BH, lbfgsb3c
+URL: https://github.com/nlmixrdevelopment/nlmixr
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Packaged: 2019-05-31 15:02:57 UTC; annie
+Maintainer: Wenping Wang <wwang8198@gmail.com>
+Author: Matthew Fidler [aut] (<https://orcid.org/0000-0001-8538-6691>),
+  Yuan Xiong [aut],
+  Rik Schoemaker [aut] (<https://orcid.org/0000-0002-7538-3005>),
+  Justin Wilkins [aut] (<https://orcid.org/0000-0002-7099-9396>),
+  Mirjam Trame [aut],
+  Richard Hooijmaijers [aut],
+  Teun Post [aut],
+  Robert Leary [ctb],
+  Wenping Wang [aut, cre],
+  Hadley Wickham [ctb],
+  Dirk Eddelbuettel [cph],
+  Johannes Pfeifer [ctb],
+  Robert B. Schnabel [ctb],
+  Elizabeth Eskow [ctb],
+  Emmanuelle Comets [ctb],
+  Audrey Lavenu [ctb],
+  Marc Lavielle [ctb],
+  David Ardia [cph],
+  Bill Denney [ctb] (<https://orcid.org/0000-0002-5759-428X>),
+  Katharine Mullen [cph]
+Repository: CRAN
+Date/Publication: 2019-05-31 16:50:05 UTC

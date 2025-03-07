@@ -1,0 +1,45 @@
+Package: causact
+Type: Package
+Title: Fast, Easy, and Visual Bayesian Inference
+Version: 0.5.2
+Authors@R: c(person("Adam", "Fleischhacker", email = "ajf@udel.edu", role = c("aut", "cre","cph")),
+    person("Daniela", "Dapena", role = "ctb"),
+    person("Rose", "Nguyen", role = "ctb"),
+    person("Jared", "Sharpe", role = "ctb")
+    )
+Description: Accelerate Bayesian analytics workflows in 'R' through interactive modelling,
+    visualization, and inference. Define probabilistic graphical models using directed
+    acyclic graphs (DAGs) as a unifying language for business stakeholders, statisticians, 
+    and programmers. This package relies on interfacing with the 'numpyro' python package. 
+License: MIT + file LICENSE
+URL: https://github.com/flyaflya/causact, https://www.causact.com/
+BugReports: https://github.com/flyaflya/causact/issues
+SystemRequirements: Python and numpyro are needed for Bayesian
+        inference computations; python (>= 3.8) with header files and
+        shared library; numpyro (= v0.12.1;
+        https://https://num.pyro.ai/en/latest/index.html); arviz (=
+        v0.15.1; https://https://python.arviz.org/en/stable/)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: DiagrammeR (>= 1.0.9), dplyr (>= 1.0.8), magrittr (>= 1.5),
+        ggplot2 (>= 3.4.0), rlang (>= 1.0.2), purrr (>= 1.0.0), tidyr
+        (>= 1.1.4), igraph (>= 1.2.7), stringr (>= 1.4.1), cowplot (>=
+        1.1.0), forcats (>= 0.5.0), rstudioapi (>= 0.11), lifecycle (>=
+        1.0.2), reticulate (>= 1.30)
+RoxygenNote: 7.2.3
+Suggests: knitr, covr, testthat (>= 3.0.0), rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/reticulate: list( packages = list( list(package = "jax[cpu]",
+        pip = TRUE), list(package = "numpyro[cpu]", pip = TRUE),
+        list(package = "arviz", pip = TRUE) ) )
+NeedsCompilation: no
+Packaged: 2023-08-19 12:56:38 UTC; ajf
+Author: Adam Fleischhacker [aut, cre, cph],
+  Daniela Dapena [ctb],
+  Rose Nguyen [ctb],
+  Jared Sharpe [ctb]
+Maintainer: Adam Fleischhacker <ajf@udel.edu>
+Repository: CRAN
+Date/Publication: 2023-08-19 13:22:32 UTC

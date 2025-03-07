@@ -1,0 +1,22 @@
+Package: ssh.utils
+Title: Local and remote system commands with output and error capture.
+Version: 1.0
+Author: Sergei Izrailev
+Maintainer: Sergei Izrailev <sizrailev@collective.com>
+Description: This package provides utility functions for system command
+    execution, both locally and remotely using ssh/scp. The command
+    output is captured and provided to the caller. This functionality is
+    intended to streamline calling shell commands from R, retrieving and
+    using their output, while instrumenting the calls with appropriate
+    error handling. NOTE: this first version is limited to unix with local
+    and remote systems running bash as the default shell.
+URL: http://github.com/collectivemedia/ssh.utils
+Depends: R (>= 3.0.3), stringr
+License: Apache License (== 2.0)
+Copyright: Copyright (C) Collective, Inc. | file inst/COPYRIGHTS
+LazyData: true
+OS_type: unix
+Packaged: 2014-07-24 02:53:39 UTC; user
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-07-24 21:13:49

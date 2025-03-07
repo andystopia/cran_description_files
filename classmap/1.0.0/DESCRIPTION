@@ -1,0 +1,34 @@
+Package: classmap
+Type: Package
+Title: Visualizing Classification Results by Classmaps
+Date: 2021-05-05
+Version: 1.0.0
+Authors@R: c(
+            person(given="Jakob",family="Raymaekers", role = c("aut","cre"),
+            email="jakob.raymaekers@kuleuven.be"),
+            person(given="Peter",family="Rousseeuw", role = c("aut")) 
+             )
+Author: Jakob Raymaekers [aut, cre],
+  Peter Rousseeuw [aut]
+Depends: R (>= 3.5.0)
+Suggests: knitr, reshape2, svd,
+Imports: stats, graphics, ggplot2, robustbase, e1071, cellWise,
+        cluster, kernlab, gridExtra
+Maintainer: Jakob Raymaekers <jakob.raymaekers@kuleuven.be>
+Description: Tools to visualize the results of a classification obtained by discriminant analysis,
+    k-nearest neighbors, and support vector machines, for two or more classes.
+    Implements the techniques described and illustrated in
+    Raymaekers, Rousseeuw and Hubert (2021),
+    Class maps for visualizing classification results, Technometrics, to appear.
+    In addition to class maps, also stacked plots are made. Examples can be found in the vignettes:
+    "Discriminant_analysis_examples","K_nearest_neighbors_examples" and
+    "Support_vector_machine_examples".
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-05-07 16:01:15 UTC; u0105404
+Repository: CRAN
+Date/Publication: 2021-05-10 07:52:20 UTC

@@ -1,0 +1,45 @@
+Package: stanette
+Encoding: UTF-8
+Type: Package
+Title: R Interface to 'Stan'
+Version: 2.21.2
+Date: 2021-08-12
+Authors@R: c(person("Yuan", "Xiong", role = "aut", email = "yuan.xiong@gmail.com"),
+             person("Wenping", "Wang", email = "wwang8198@gmail.com", role = c("cre", "aut", "cph")),
+             person("rstan", "developers", role = "aut"),
+             person("Trustees of", "Columbia University", role = "cph"),
+             person("John", "Plevyak", role = c("ctb", "cph"), comment = "dparser author"),
+             person("Linda", "Petzold", role="ctb", comment = "LSODA author"))
+Description: Expansion and additions to 'rstan' to facilitate pharmacokinetics (PK)
+    and pharmacodynamics (PD) modeling with 'rstan'.  A PKPD model often is specified
+    via a set of ordinary differential equations(ODEs) and requires flexible and 
+    different routes of drug administrations.  These features make PKPD modeling
+    with plain 'rstan' challenging and tedious to code.  'stanette' provides a powerful 
+    Stan-compatible ODE solver ('LSODA') and mechanism/utilities that make easy
+    specification of flexible dosing records.
+License: GPL (>= 3)
+NeedsCompilation: yes
+Imports: methods, stats4, inline, gridExtra (>= 2.0.0), Rcpp (>=
+        0.12.0), RcppParallel (>= 5.0.1), loo (>= 2.3.0), pkgbuild,
+        withr, V8, brew, coda
+Depends: R (>= 3.4.0), StanHeaders (>= 2.21.0), ggplot2 (>= 3.0.0),
+        lattice
+LinkingTo: Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0), BH (>=
+        1.72.0-2), StanHeaders (>= 2.21.0), RcppParallel
+Suggests: RUnit, RcppEigen (>= 0.3.3.3.0), BH (>= 1.72.0-2), parallel,
+        KernSmooth, shinystan (>= 2.3.0), bayesplot (>= 1.5.0),
+        rmarkdown, rstantools, rstudioapi, Matrix, knitr (>= 1.15.1)
+URL: https://mc-stan.org/rstan/, https://discourse.mc-stan.org
+BugReports: https://github.com/stan-dev/rstan/issues/
+SystemRequirements: GNU make, pandoc
+RoxygenNote: 5.0.1
+Packaged: 2021-08-13 12:28:21 UTC; annie
+Maintainer: Wenping Wang <wwang8198@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-16 08:30:02 UTC
+Author: Yuan Xiong [aut],
+  Wenping Wang [cre, aut, cph],
+  rstan developers [aut],
+  Trustees of Columbia University [cph],
+  John Plevyak [ctb, cph] (dparser author),
+  Linda Petzold [ctb] (LSODA author)

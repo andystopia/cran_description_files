@@ -1,0 +1,32 @@
+Package: maskRangeR
+Title: Mask Species Geographic Ranges
+Version: 1.0
+Authors@R: c(person('Cory','Merow',email='cory.merow@gmail.com',role=c('aut','cre')),
+    person('Peter J.', 'Galante',email='pgalante@amnh.org',role=c('aut')),
+    person("Jamie M.","Kass",email='jamie.m.kass@gmail.com',role=c('aut')),
+    person("Cecina","Babich Morrow",email='cbabichmorrow@amnh.org',role=c('aut')),
+    person("Valentina", 'Grisales Betancur',email='vgrisale@eafit.edu.com',role=c('aut')))
+Description: Mask ranges based on expert 
+    knowledge or remote sensing layers. These tools can 
+    be combined to quantitatively and reproducibly 
+    generate a new map or to update an existing map.
+    Methods include expert opinion and data-driven 
+    tools to generate thresholds for binary masks.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.4.0)
+Imports: gdalUtils, dismo, dplyr, e1071, lubridate, magrittr, maptools,
+        raster, rgdal, sp, stats, tidyverse, utils, virtualspecies
+Suggests: testthat, knitr, rmarkdown, wallace
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-11-10 02:25:20 UTC; ctg
+Author: Cory Merow [aut, cre],
+  Peter J. Galante [aut],
+  Jamie M. Kass [aut],
+  Cecina Babich Morrow [aut],
+  Valentina Grisales Betancur [aut]
+Maintainer: Cory Merow <cory.merow@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-11-10 15:50:05 UTC

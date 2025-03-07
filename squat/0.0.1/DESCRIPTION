@@ -1,0 +1,43 @@
+Package: squat
+Title: Statistics for Quaternion Temporal Data
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Lise", 
+           family = "Bellanger", 
+           role = "aut", 
+           email = "lise.bellanger@univ-nantes.fr"),
+    person(given = "Pierre", 
+           family = "Drouin", 
+           role = "aut", 
+           email = "pdrouin@umanit.fr"),
+    person(given = "Aymeric",
+           family = "Stamm",
+           role = c("aut", "cre"),
+           email = "aymeric.stamm@math.cnrs.fr",
+           comment = c(ORCID = "0000-0002-8725-3654")),
+    person(given = "Benjamin", 
+           family = "Martineau", 
+           role = "ctb"))
+Description: An implementation of statistical tools for the analysis 
+    of unit quaternion time series. It relies on pre-existing 
+    quaternion data structure provided by the 'Eigen' C++ library.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen, fdacluster
+Imports: cli, dtw, fdacluster, funData, furrr, ggplot2, ggrepel, MFPCA,
+        pbapply, purrr, Rcpp, roahd, scales, tibble, tidyr
+Depends: R (>= 4.1.0)
+Suggests: covr, gghighlight, testthat (>= 3.0.0), vdiffr, withr
+Config/testthat/edition: 3
+URL: https://lmjl-alea.github.io/squat/
+NeedsCompilation: yes
+Packaged: 2022-09-26 19:04:50 UTC; stamm-a
+Author: Lise Bellanger [aut],
+  Pierre Drouin [aut],
+  Aymeric Stamm [aut, cre] (<https://orcid.org/0000-0002-8725-3654>),
+  Benjamin Martineau [ctb]
+Maintainer: Aymeric Stamm <aymeric.stamm@math.cnrs.fr>
+Repository: CRAN
+Date/Publication: 2022-09-27 09:00:02 UTC

@@ -1,0 +1,46 @@
+Package: opm
+Version: 1.1.0
+Date: 2014-04-20
+Title: Analysing Phenotype Microarray and Growth Curve Data
+Author: Markus Goeker, with contributions by Benjamin Hofner, Lea A.I.
+    Vaas, Johannes Sikorski, Nora Buddruhs and Anne Fiebig
+Maintainer: Markus Goeker <markus.goeker@dsmz.de>
+Depends: R (>= 3.0.0)
+Imports: methods, lattice, parallel, boot, hwriter, plotrix,
+        Ckmeans.1d.dp, pkgutils (>= 0.6.0), yaml (>= 2.1.7), splines,
+        mgcv, grofit (>= 1.1), rjson (>= 0.2.12), nlme, DBI
+Suggests: optparse, gplots, opmdata (>= 0.4.0), testthat, multcomp,
+        KEGGREST, pathview, mboostDevel (>= 2.3.0), gridExtra
+Description: Tools for analysing OmniLog(R) and MicroStation(TM)
+    phenotype microarray (PM) data as produced by the devices
+    distributed by BIOLOG Inc. as well as similar kinds of data
+    such as growth curves. Major facilities are plotting data,
+    accurately estimating curve parameters, comparing and
+    discretising data, creating phylogenetic formats and reports
+    for taxonomic journals, drawing the PM analysis results in
+    biochemical pathway graphs optionally including genome
+    annotations, running multiple comparisons of means, easy
+    interaction with powerful feature-selection approaches,
+    integrating metadata, using the YAML format for the storage of
+    data and metadata, batch conversion of large numbers of files,
+    and database I/O. (The suggested mboostDevel is from R-Forge
+    and not necessary.)
+License: GPL (>= 2)
+URL: http://opm.dsmz.de/
+MailingList:
+        http://lists.r-forge.r-project.org/mailman/listinfo/opm-support
+Collate: 'substrate-info.R' 'well-map.R' 'plate-map.R' 'imports.R'
+        'package.R' 'constants.R' 'classes.R' 'auxiliary.R' 'kmeans.R'
+        'naming.R' 'metadata.R' 'getter.R' 'conversion.R'
+        'combination.R' 'aggregation.R' 'discretization.R' 'plotting.R'
+        'io.R' 'phylogeny.R' 'data.R' 'testing.R' 'multcomp.R'
+        'splinefit.R' 'dbio.R'
+LazyData: yes
+LazyDataCompression: bzip2
+Repository: CRAN
+Repository/R-Forge/Project: opm
+Repository/R-Forge/Revision: 602
+Repository/R-Forge/DateTimeStamp: 2014-04-20 04:46:43
+Date/Publication: 2014-04-22 07:23:32
+Packaged: 2014-04-20 06:35:31 UTC; rforge
+NeedsCompilation: no

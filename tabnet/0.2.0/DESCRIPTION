@@ -1,0 +1,29 @@
+Package: tabnet
+Title: Fit 'TabNet' Models for Classification and Regression
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Daniel", family = "Falbel", role = c("aut", "cre"), email = "daniel@rstudio.com"),
+    person(family = "RStudio", role = c("cph")),
+    person(given = "Christophe", family = "Regouby", role = c("ctb"))
+    )
+Description: Implements the 'TabNet' model by Sercan O. Arik et al (2019) <arXiv:1908.07442>
+    and provides a consistent interface for fitting and creating predictions. It's
+    also fully compatible with the 'tidymodels' ecosystem.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+URL: https://github.com/mlverse/tabnet
+BugReports: https://github.com/mlverse/tabnet/issues
+Imports: torch (>= 0.4.0), hardhat, magrittr, glue, progress, rlang,
+        methods, tibble, coro, vctrs
+Suggests: testthat, modeldata, recipes, parsnip, dials, withr, knitr,
+        rmarkdown, vip, tidyverse, ggplot2, dplyr, tidyr, purrr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-22 20:18:02 UTC; dfalbel
+Author: Daniel Falbel [aut, cre],
+  RStudio [cph],
+  Christophe Regouby [ctb]
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2021-06-22 22:00:02 UTC

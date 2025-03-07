@@ -1,0 +1,22 @@
+Package: rminizinc
+Type: Package
+Title: R Interface to Use 'MiniZinc'
+Version: 0.0.1
+Author: Akshit Achara, Lars Kotthoff, Hans W. Borchers, Guido Tack
+Maintainer: Akshit Achara <acharaakshit@gmail.com>
+Description: R users can use the package to solve constraint programming problems without using 'MiniZinc'
+    directly, modify existing 'MiniZinc' models and also create their own models.
+License: Mozilla Public License Version 2.0
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0), rjson
+Imports: R6, checkmate, Rcpp, rlang, rlist
+LinkingTo: Rcpp, testthat
+Suggests: knitr, rmarkdown, testthat, stringr
+VignetteBuilder: knitr
+Biarch: true
+NeedsCompilation: yes
+Packaged: 2020-12-10 16:51:44 UTC; akshit
+Repository: CRAN
+Date/Publication: 2020-12-14 09:00:02 UTC

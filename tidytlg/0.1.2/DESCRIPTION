@@ -1,0 +1,80 @@
+Package: tidytlg
+Title: Create TLGs using the 'tidyverse'
+Version: 0.1.2
+Authors@R: 
+     c(person(given = "Nicholas",
+           family = "Masel",
+           role = "aut",
+           email = "nmasel@its.jnj.com"),
+       person(given = "Steven",
+           family = "Haesendonckx",
+           role = "aut",
+           email = "shaesen2@its.jnj.com"),
+       person(given = "Pelagia",
+           family = "Alexandra Papadopoulou",
+           role = "aut",
+           email = "ppapadop@its.jnj.com"),
+       person(given = "Sheng-Wei",
+           family = "Wang",
+           role = "aut",
+           email = "swang69@its.jnj.com"),    
+       person(given = "Eli",
+           family = "Miller",
+           role = c("aut", "cre"),
+           email = "eli.miller@atorusresearch.com",
+           comment = c(ORCID = "0000-0002-2127-9456")),
+       person(given = "Nathan",
+           family = "Kosiba",
+           email = "nkosiba@its.jnj.com",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-5359-4234")),
+       person(given = "Aidan",
+           family = "Ceney",
+           role = "aut",
+           email = "aceney@its.jnj.com",
+           comment = c(ORCID = "0000-0001-8313-487X")),
+       person(given = "Janssen R&D",
+           role = c("cph", "fnd")),
+       person(given = "David",
+           family = "Hugh-Jones",
+           role = "cph",
+           comment = "Author of included huxtable library")
+     )
+Description: Generate tables, listings, and graphs (TLG) using 'tidyverse.'
+  Tables can be created functionally, using a standard TLG process, or by
+  specifying table and column metadata to create generic analysis summaries.
+  The 'envsetup' package can also be leveraged to create environments for table
+  creation.
+License: Apache License 2.0
+URL: https://github.com/pharmaverse/tidytlg
+BugReports: https://github.com/pharmaverse/tidytlg/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 2.1.0), knitr (>= 1.23), rmarkdown (>= 2.10),
+        renv (>= 0.13.2), shiny (>= 1.3.2), kableExtra (>= 1.3.4),
+        haven (>= 2.4.1), withr (>= 2.3.0), devtools, writexl
+Imports: dplyr (>= 1.0.4), tibble (>= 2.1.3), magrittr (>= 1.5), rlang
+        (>= 0.4.10), tidyr (>= 1.0.0), stats (>= 3.6.0), stringr (>=
+        1.4.0), forcats (>= 0.5.1), purrr (>= 0.3.4), huxtable (>=
+        5.1.0), assertthat (>= 0.2.1), glue (>= 1.4.2), usethis (>=
+        1.6.3), crayon (>= 1.4.1), tidyselect (>= 1.1.0), methods,
+        readxl (>= 1.3.1), cellranger (>= 1.1.0), png (>= 0.1-7),
+        ggplot2 (>= 3.3.2), rstudioapi (>= 0.13)
+Depends: R (>= 3.6.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-06-23 13:01:06 UTC; eli.miller
+Author: Nicholas Masel [aut],
+  Steven Haesendonckx [aut],
+  Pelagia Alexandra Papadopoulou [aut],
+  Sheng-Wei Wang [aut],
+  Eli Miller [aut, cre] (<https://orcid.org/0000-0002-2127-9456>),
+  Nathan Kosiba [aut] (<https://orcid.org/0000-0001-5359-4234>),
+  Aidan Ceney [aut] (<https://orcid.org/0000-0001-8313-487X>),
+  Janssen R&D [cph, fnd],
+  David Hugh-Jones [cph] (Author of included huxtable library)
+Maintainer: Eli Miller <eli.miller@atorusresearch.com>
+Repository: CRAN
+Date/Publication: 2023-06-23 15:00:02 UTC

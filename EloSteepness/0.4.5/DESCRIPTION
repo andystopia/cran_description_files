@@ -1,0 +1,35 @@
+Package: EloSteepness
+Title: Bayesian Dominance Hierarchy Steepness via Elo Rating and
+        David's Scores
+Version: 0.4.5
+Date: 2022-07-26
+Authors@R: c(
+  person(given="Christof", 
+         family="Neumann", 
+         role=c("aut", "cre"),
+         email="christofneumann1@gmail.com",
+         comment=c(ORCID="0000-0002-0236-1219"))
+  )
+Maintainer: Christof Neumann <christofneumann1@gmail.com>
+Description: Obtain Bayesian posterior distributions of dominance hierarchy steepness (Neumann and Fischer (2022) <doi:10.1101/2022.01.28.478016>). Steepness estimation is based on Bayesian implementations of either Elo-rating or David's scores. 
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Biarch: true
+Depends: R (>= 3.5.0), EloRating
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.1.1), aniDom
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: rmarkdown, bookdown, xtable, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/gobbios/EloSteepness
+BugReports: https://github.com/gobbios/EloSteepness/issues
+NeedsCompilation: yes
+Packaged: 2022-08-16 12:40:59 UTC; christofneumann
+Author: Christof Neumann [aut, cre] (<https://orcid.org/0000-0002-0236-1219>)
+Repository: CRAN
+Date/Publication: 2022-08-18 07:40:13 UTC

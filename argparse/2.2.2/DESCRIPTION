@@ -1,0 +1,36 @@
+Package: argparse
+Type: Package
+Title: Command Line Optional and Positional Argument Parser
+Version: 2.2.2
+Authors@R: c(person("Trevor L", "Davis", role=c("aut", "cre"),
+             email="trevor.l.davis@gmail.com",
+             comment = c(ORCID = "0000-0001-6341-4639")),
+    person("Allen", "Day", role="ctb", comment="Some documentation and examples ported from the getopt package."),
+    person("Python Software Foundation", role="ctb", comment="Some documentation from the argparse Python module."),
+    person("Paul", "Newell", role="ctb"))
+Description: A command line parser to
+    be used with 'Rscript' to write "#!" shebang scripts that gracefully
+    accept positional and optional arguments and automatically generate usage.
+License: GPL (>= 2)
+Copyright: See file (inst/)COPYRIGHTS.
+URL: https://github.com/trevorld/r-argparse
+BugReports: https://github.com/trevorld/r-argparse/issues
+LazyLoad: yes
+Depends: R (>= 3.6.0)
+Imports: R6, findpython, jsonlite
+SystemRequirements: python (>= 3.2)
+Suggests: knitr (>= 1.15.19), rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-02-15 19:40:37 UTC; trevor
+Author: Trevor L Davis [aut, cre] (<https://orcid.org/0000-0001-6341-4639>),
+  Allen Day [ctb] (Some documentation and examples ported from the getopt
+    package.),
+  Python Software Foundation [ctb] (Some documentation from the argparse
+    Python module.),
+  Paul Newell [ctb]
+Maintainer: Trevor L Davis <trevor.l.davis@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-15 19:50:02 UTC

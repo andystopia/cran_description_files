@@ -1,0 +1,21 @@
+Package: RtextSummary
+Type: Package
+Title: Summarizes Text by Extracting Relevant Sentences
+Version: 0.1.0
+Authors@R: c(
+	person("Suryavanshi", "Abhijit", role = c("aut", "cre"),
+		  email = "abhi.surya@gmail.com")  )
+Description: Build a text summary by extracting relevant sentences from your text. The training dataset should consist of several documents, each document should have sentences separated by a period. While fitting the model, the 'term frequency - inverse document frequency' (TF-IDF) matrix that reflects how important a word is to a document is calculated first. Then vector representations for words are obtained from the 'global vectors for word representation' algorithm (GloVe). While applying the model on new data, the GloVe word vectors for each word are weighted by their TF-IDF weights and averaged to give a sentence vector or a document vector. The magnitude of this sentence vector gives the importance of that sentence within the document. Another way to obtain the importance of the sentence is to calculate cosine similarity between the sentence vector and the document vector. The output can either be at the sentence level (sentences and weights are returned) or at a document level (the summary for each document is returned). It is useful to first get a sentence level output and get quantiles of the sentence weights to determine a cutoff threshold for the weights. This threshold can then be used in the document level output. This method is a variation of the TF-IDF extractive summarization method mentioned in a review paper by Gupta (2010) <doi:10.4304/jetwi.2.3.258-268>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+Imports: R6, mlapi, stringr, tidyr, tokenizers, text2vec, Matrix.utils,
+        dplyr
+Depends: R (>= 2.10)
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2019-06-06 16:03:15 UTC; ASuryav1
+Author: Suryavanshi Abhijit [aut, cre]
+Maintainer: Suryavanshi Abhijit <abhi.surya@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-06-07 08:30:03 UTC

@@ -1,0 +1,49 @@
+Package: equatiomatic
+Title: Transform Models into 'LaTeX' Equations
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Daniel",
+           family = "Anderson",
+           role = c("aut", "cre"),
+           email = "daniela@uoregon.edu",
+           comment = c(ORCID = "https://orcid.org/0000-0003-4699-4680")),
+    person(given = "Andrew",
+           family = "Heiss",
+           role = "aut",
+           email = "andrew@andrewheiss.com",
+           comment = c(ORCID = "https://orcid.org/0000-0002-3948-3914")),
+    person(given = "Joshua",
+           family = "Rosenberg",
+           role = "ctb",
+           email = "jmrosenberg@utk.edu",
+           comment = c(ORCID = "http://orcid.org/0000-0003-2170-0447")),
+    person(given   = 'Jonathan',
+           family  = 'Sidi',
+           role    =  'ctb',           
+           email   = 'yonis@metrumrg.com',
+           comment = c(ORCID = "https://orcid.org/0000-0002-4222-1819"))
+    )
+Description: The goal of 'equatiomatic' is to reduce the pain associated with
+             writing 'LaTeX' formulas from fitted models. The primary function of
+             the package, extract_eq(), takes a fitted model object as its input
+             and returns the corresponding 'LaTeX' code for the model.
+License: MIT + file LICENSE
+Depends: R (>= 3.3.0)
+Imports: broom (>= 0.7.0), stats
+Suggests: texPreview, testthat (>= 2.1.0), knitr, MASS, ordinal,
+        rmarkdown, covr
+URL: https://github.com/datalorax/equatiomatic
+BugReports: https://github.com/datalorax/equatiomatic/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-08-24 19:28:50 UTC; daniel
+Author: Daniel Anderson [aut, cre] (<https://orcid.org/0000-0003-4699-4680>),
+  Andrew Heiss [aut] (<https://orcid.org/0000-0002-3948-3914>),
+  Joshua Rosenberg [ctb] (<https://orcid.org/0000-0003-2170-0447>),
+  Jonathan Sidi [ctb] (<https://orcid.org/0000-0002-4222-1819>)
+Maintainer: Daniel Anderson <daniela@uoregon.edu>
+Repository: CRAN
+Date/Publication: 2020-08-27 14:20:06 UTC

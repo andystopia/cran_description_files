@@ -1,0 +1,30 @@
+Package: qtl2pattern
+Type: Package
+Title: Pattern Support for 'qtl2' Package
+Version: 1.0.17
+Date: 2021-09-21
+Authors@R: c(person("Brian S Yandell",
+                role = c("aut", "cre"),
+                email = "brian.yandell@wisc.edu"))
+Description: Routines in 'qtl2' to study allele patterns in quantitative trait loci (QTL)
+    mapping over a chromosome.
+    Useful in crosses with more than two alleles to identify how sets of alleles,
+    genetically different strands at the same locus, have different response levels.
+    Plots show profiles over a chromosome.
+    Can handle multiple traits together.
+    See <https://github.com/byandell/qtl2pattern>.
+Depends: R (>= 3.1.0)
+Imports: dplyr, tidyr, purrr, stringr, ggplot2, assertthat,
+        RColorBrewer, qtl2, qtl2fst, fst, rlang, stats, graphics
+Suggests: knitr, rmarkdown, qtl2ggplot
+VignetteBuilder: knitr
+License: GPL-3
+URL: https://github.com/byandell/qtl2pattern
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-09-21 18:54:32 UTC; brianyandell
+Author: Brian S Yandell [aut, cre]
+Maintainer: Brian S Yandell <brian.yandell@wisc.edu>
+Repository: CRAN
+Date/Publication: 2021-09-22 15:00:09 UTC

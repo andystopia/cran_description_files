@@ -1,0 +1,91 @@
+Package: finalsize
+Title: Calculate the Final Size of an Epidemic
+Version: 0.2.0
+Authors@R: 
+    c(
+        person(
+            given = "Pratik",
+            family = "Gupte",
+            role = c("aut", "cre", "cph"),
+            email = "pratik.gupte@lshtm.ac.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0001-5294-7819")
+        ),
+        person(
+            given = "Edwin",
+            family = "Van Leeuwen",
+            role = c("aut", "cph"),
+            email = "edwin.vanleeuwen@ukhsa.gov.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0002-2383-5305")
+        ),
+        person(
+            given = "Adam",
+            family = "Kucharski",
+            role = c("aut", "cph"),
+            email = "adam.kucharski@lshtm.ac.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0001-8814-9421")
+        ),
+        person(
+            given = "Rosalind",
+            family = "Eggo",
+            role = c("ctb"),
+            email = "r.eggo@lshtm.ac.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0002-0362-6717")
+        ),
+        person(
+            given = "Hugo",
+            family = "Gruson",
+            role = c("ctb"),
+            email = "hugo.gruson@data.org",
+            comment = c(ORCID = "https://orcid.org/0000-0002-4094-1476")
+        ),
+        person(
+            given = "Thibaut",
+            family = "Jombart",
+            role = c("ctb"),
+            email = "thibaut@data.org",
+            comment = c(ORCID = "https://orcid.org/0000-0003-3796-2097")
+        ),
+        person(
+            given = "Andree",
+            family = "Valle-Campos",
+            role = c("ctb"),
+            email = "andree.valle-campos@lshtm.ac.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0002-7779-481X")
+        ),
+        person(
+            given = "Joshua W.",
+            family = "Lambert",
+            role = c("rev"),
+            email = "joshua.lambert@lshtm.ac.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0001-5218-3046")
+        )
+    )
+Description: Calculate the final size of a susceptible-infectious-recovered epidemic in a population with demographic variation in contact patterns and susceptibility to disease, as discussed in Miller (2012) <doi:10.1007/s11538-012-9749-6>.
+License: MIT + file LICENSE
+URL: https://github.com/epiverse-trace/finalsize,
+        https://epiverse-trace.github.io/finalsize/
+BugReports: https://github.com/epiverse-trace/finalsize/issues
+Imports: checkmate, Rcpp
+LinkingTo: Rcpp, RcppEigen
+Suggests: colorspace, covr, dplyr, knitr, bookdown, scales, socialmixr,
+        testthat (>= 3.0.0), tibble, xml2, ggplot2, ggtext, rmarkdown,
+        usethis, forcats, purrr, tidyr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2023-05-09 13:58:27 UTC; lshpg6
+Author: Pratik Gupte [aut, cre, cph] (<https://orcid.org/0000-0001-5294-7819>),
+  Edwin Van Leeuwen [aut, cph] (<https://orcid.org/0000-0002-2383-5305>),
+  Adam Kucharski [aut, cph] (<https://orcid.org/0000-0001-8814-9421>),
+  Rosalind Eggo [ctb] (<https://orcid.org/0000-0002-0362-6717>),
+  Hugo Gruson [ctb] (<https://orcid.org/0000-0002-4094-1476>),
+  Thibaut Jombart [ctb] (<https://orcid.org/0000-0003-3796-2097>),
+  Andree Valle-Campos [ctb] (<https://orcid.org/0000-0002-7779-481X>),
+  Joshua W. Lambert [rev] (<https://orcid.org/0000-0001-5218-3046>)
+Maintainer: Pratik Gupte <pratik.gupte@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-05-09 23:10:02 UTC

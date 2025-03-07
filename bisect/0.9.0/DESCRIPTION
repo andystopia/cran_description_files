@@ -1,0 +1,19 @@
+Package: bisect
+Title: Estimating Cell Type Composition from Methylation Sequencing
+        Data
+Version: 0.9.0
+Maintainer: Eyal Fisher <ef388@cam.ac.uk>
+Author: Eyal Fisher [aut, cre]
+Description: An implementation of Bisect, a method for inferring cell type composition of samples based on methylation sequencing data (Whole Genome Bisulfite Sequencing and Reduced Representation Sequencing). The method is specifically tailored for sequencing data, and therefore works better than methods developed for methylation arrays. It contains a supervised mode that requires a reference (the methylation probabilities in the pure cell types), and a semi-supervised mode, that requires cell counts for a subset of the samples, but does not require a reference.
+URL: https://github.com/EyalFisher/BiSect
+Depends: R (>= 3.4.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: dplyr, knitr, rmarkdown, tidyr, sirt, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-04-15 19:40:58 UTC; eyal
+Repository: CRAN
+Date/Publication: 2018-04-16 16:34:49 UTC

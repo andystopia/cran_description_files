@@ -1,0 +1,41 @@
+Package: mixKernel
+Type: Package
+Title: Omics Data Integration Using Kernel Methods
+Version: 0.8
+Date: 2022-01-13
+Depends: R (>= 3.5.0), mixOmics, ggplot2, reticulate (>= 1.14)
+Imports: vegan, phyloseq, corrplot, psych, quadprog, LDRTools, Matrix,
+        methods, markdown
+Suggests: rmarkdown, knitr
+Authors@R: c(person("Jerome", "Mariette", role = c("aut", "cre"), email="jerome.mariette@inrae.fr"),
+             person("Celine", "Brouard", role = c("aut"), email="celine.brouard@inrae.fr"),
+             person("Remi", "Flamary", role = c("aut"), email="remi.flamary@polytechnique.edu"),
+             person("Nathalie", "Vialaneix", role = c("aut"), email="nathalie.vialaneix@inrae.fr"))
+Maintainer: Jerome Mariette <jerome.mariette@inrae.fr>
+Author: Jerome Mariette [aut, cre],
+  Celine Brouard [aut],
+  Remi Flamary [aut],
+  Nathalie Vialaneix [aut]
+Description: Kernel-based methods are powerful methods for integrating 
+    heterogeneous types of data. mixKernel aims at providing methods to combine
+    kernel for unsupervised exploratory analysis. Different solutions are 
+    provided to compute a meta-kernel, in a consensus way or in a way that 
+    best preserves the original topology of the data. mixKernel also integrates
+    kernel PCA to visualize similarities between samples in a non linear space
+    and from the multiple source point of view. Functions to assess and display
+    important variables are also provided in the package. Ref: Jerome Mariette 
+    and Nathalie Villa-Vialaneix (2018) <doi:10.1093/bioinformatics/btx682>.
+License: GPL (>= 2)
+Repository: CRAN
+Packaged: 2022-01-13 15:55:38 UTC; nathalie
+BugReports: https://forgemia.inra.fr/jerome.mariette/mixKernel/-/issues
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+URL: http://mixkernel.clementine.wf
+LazyData: true
+Config/reticulate: list( packages = list( list(package = "autograd",
+        pip = TRUE), list(package = "numpy", pip = TRUE), list(package
+        = "scipy", pip = TRUE), list(package = "sklearn", pip = TRUE) )
+        )
+Date/Publication: 2022-01-13 16:22:42 UTC

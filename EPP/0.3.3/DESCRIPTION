@@ -1,0 +1,36 @@
+Package: EPP
+Type: Package
+Title: Evaluation of Proximity Programs
+Version: 0.3.3
+Date: 2021-09-22
+Authors@R: c( person(given = "Richard", 
+	      family = "Detomasi", 
+	      email = "richard.detomasi@gmail.com",
+	      role = c("aut", "cre"), 
+	      comment = c(ORCID = "0000-0002-6725-0261")),
+	      person(given = "German", 
+	      family = "Botto", 
+	      role = c("aut"),
+	      comment = c(ORCID = "0000-0002-4055-9277")))
+Maintainer: Richard Detomasi <richard.detomasi@gmail.com>
+Description: A toolbox for coverage evaluation of proximity programs.
+BugReports: https://github.com/RichDeto/EPP/issues
+SystemRequirements: GDAL (>= 3.0.2), GEOS (>= 3.8.0), PROJ (>= 6.2.1)
+Depends: R (>= 3.5.0)
+Language: en
+Imports: sp, rgeos, maptools, flexclust, plyr, osrm, deldir, methods,
+        dplyr, rgdal, leaflet, leaflet.extras, sf, nngeo, curl,
+        assertthat, tibble
+Suggests: knitr, devtools, roxygen2, markdown, rstudioapi (>= 0.11),
+        testthat (>= 2.3.2), rsvg, gdtools
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-09-22 02:30:05 UTC; Usuario
+Author: Richard Detomasi [aut, cre] (<https://orcid.org/0000-0002-6725-0261>),
+  German Botto [aut] (<https://orcid.org/0000-0002-4055-9277>)
+Repository: CRAN
+Date/Publication: 2021-10-05 23:10:06 UTC

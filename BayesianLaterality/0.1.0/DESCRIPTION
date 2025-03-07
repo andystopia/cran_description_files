@@ -1,0 +1,31 @@
+Package: BayesianLaterality
+Type: Package
+Title: Predict Brain Asymmetry Based on Handedness and Dichotic
+        Listening
+Version: 0.1.0
+Author: Oystein Sorensen
+Maintainer: Oystein Sorensen <oystein.sorensen.1985@gmail.com>
+Description: Functional differences between the cerebral hemispheres 
+    are a fundamental characteristic of the human brain. Researchers 
+    interested in studying these differences often infer underlying 
+    hemispheric dominance for a certain function (e.g., language) from 
+    laterality indices calculated from observed performance or brain 
+    activation measures . However, any inference from observed measures 
+    to latent (unobserved) classes has to consider the prior probability 
+    of class membership in the population. The provided functions 
+    implement a Bayesian model for predicting hemispheric dominance from
+    observed laterality indices (Sorensen and Westerhausen, Laterality: 
+    Asymmetries of Body, Brain and Cognition, 2020, <doi:10.1080/1357650X.2020.1769124>).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+Imports: dplyr (>= 1.0.2), purrr (>= 0.3.4), rlang (>= 0.4.7), tidyr
+        (>= 1.1.2), tmvtnorm (>= 1.4-10), Rdpack
+Suggests: roxygen2, testthat (>= 2.1.0)
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2020-09-15 05:09:29 UTC; oyss
+Repository: CRAN
+Date/Publication: 2020-09-22 09:30:07 UTC

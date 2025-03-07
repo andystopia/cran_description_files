@@ -1,0 +1,50 @@
+Package: rgugik
+Type: Package
+Title: Search and Retrieve Spatial Data from 'GUGiK'
+Version: 0.2.0
+Authors@R: c(person(given = "Krzysztof",
+                    family = "Dyba",
+                    role = c("aut", "cre"),
+                    email = "adres7@gmail.com",
+                    comment = c(ORCID = "0000-0002-8614-3816")),
+             person(given = "Jakub", 
+                    family = "Nowosad", 
+                    role = "aut",
+                    email = "nowosad.jakub@gmail.com", 
+                    comment = c(ORCID = "0000-0002-1057-3721")),
+             person(given = "Maciej", 
+                    family = "Beręsewicz", 
+                    role = "ctb",
+                    email = "maciej.beresewicz@ue.poznan.pl", 
+                    comment = c(ORCID = "0000-0002-8281-4301")),
+             person("GUGiK",
+                    role = "ctb",
+                    comment = "source of the data"))
+Description: Automatic open data acquisition from resources of Polish Head Office
+    of Geodesy and Cartography ('Główny Urząd Geodezji i Kartografii')
+    (<www.gugik.gov.pl>).
+    Available datasets include various types of numeric, raster and vector data,
+    such as orthophotomaps, digital elevation models (digital terrain models,
+    digital surface model, point clouds), state register of borders, spatial
+    databases, geometries of cadastral parcels, 3D models of buildings, and more.
+    It is also possible to geocode addresses or objects using the geocodePL_get()
+    function.
+License: MIT + file LICENSE
+Depends: R (>= 3.5)
+Imports: sf, jsonlite, openssl
+Suggests: curl, knitr, rmarkdown, tibble, testthat, stars
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://kadyb.github.io/rgugik/, https://github.com/kadyb/rgugik
+BugReports: https://github.com/kadyb/rgugik/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-12-07 10:49:39 UTC; jn
+Author: Krzysztof Dyba [aut, cre] (<https://orcid.org/0000-0002-8614-3816>),
+  Jakub Nowosad [aut] (<https://orcid.org/0000-0002-1057-3721>),
+  Maciej Beręsewicz [ctb] (<https://orcid.org/0000-0002-8281-4301>),
+  GUGiK [ctb] (source of the data)
+Maintainer: Krzysztof Dyba <adres7@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-12-09 09:20:02 UTC

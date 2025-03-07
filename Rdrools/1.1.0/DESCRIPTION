@@ -1,0 +1,35 @@
+Package: Rdrools
+Type: Package
+Version: 1.1.0
+Date: 2018-07-07
+Title: A Rules Engine Based on 'Drools'
+Authors@R: c(person("Dheekshitha","PS", email = "Dheekshitha.PS@mu-sigma.com", role = c("aut")),
+    person("Naren","Srinivasan", email = "Naren.Srinivasan@mu-sigma.com", role = c("cre","aut")),
+    person("Mayukh","Bose", email = "Mayukh.Bose@mu-sigma.com", role = c("aut")),
+    person("Ashwin","Raaghav", email = "Ashwin.Raaghav@mu-sigma.com", role = c("aut")),
+    person("SMS","Chauhan", email = "sms.chauhan@mu-sigma.com", role = c("aut")),
+		person("Zubin","Dowlaty", email = "Zubin.Dowlaty@mu-sigma.com", role = c("aut")),
+		person("Arushi","Khattri",  email = "Arushi.Khattri@mu-sigma.com", role = c("aut")))
+Maintainer: Naren Srinivasan <Naren.Srinivasan@mu-sigma.com>
+Description: An interface for using the popular Java based Drools, which is a Business Rule Management System (See <https://www.drools.org> for more information). This package provides data scientists an intuitive interface to execute business rules on datasets for the purpose of analysis or designing intelligent systems, while leveraging the Drools rule engine. Rules can be defined in a simple format in a CSV, imported into the R Session as a data frame, and passed directly to the rule-checking functions. Rules written in DRL format, accepted natively by Drools, can also be executed through an R interface. Credits to Mu Sigma for their continued support throughout the development of the package.
+Depends: R (>= 3.0.0), rJava, Rdroolsjars (>= 1.0.0)
+Imports: magrittr, dplyr, purrr, tibble, rlang
+Suggests: knitr, testthat, DT, lubridate, ggplot2, rmarkdown
+SystemRequirements: Java (>= 7.0)
+License: Apache License 2.0
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: yes
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-07-11 08:16:17 UTC; naren
+Author: Dheekshitha PS [aut],
+  Naren Srinivasan [cre, aut],
+  Mayukh Bose [aut],
+  Ashwin Raaghav [aut],
+  SMS Chauhan [aut],
+  Zubin Dowlaty [aut],
+  Arushi Khattri [aut]
+Repository: CRAN
+Date/Publication: 2018-07-11 10:50:04 UTC

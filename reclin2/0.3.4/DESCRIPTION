@@ -1,0 +1,36 @@
+Package: reclin2
+Type: Package
+Title: Record Linkage Toolkit
+Version: 0.3.4
+Authors@R: 
+    person(given = "Jan",
+           family = "van der Laan",
+           role = c("aut", "cre"),
+           email = "r@eoos.dds.nl",
+           comment = c(ORCID = "0000-0002-0693-1514"))
+Description: Functions to assist in performing probabilistic record linkage and
+    deduplication: generating pairs, comparing records, em-algorithm for
+    estimating m- and u-probabilities
+    (I. Fellegi & A. Sunter (1969) <doi:10.1080/01621459.1969.10501049>, 
+    T.N. Herzog, F.J. Scheuren, & W.E. Winkler (2007), 
+    "Data Quality and Record Linkage Techniques", ISBN:978-0-387-69502-0),
+    forcing one-to-one matching. Can also be
+    used for pre- and post-processing for machine learning methods for record
+    linkage. Focus is on memory, CPU performance and flexibility. 
+BugReports: https://github.com/djvanderlaan/reclin2/issues
+URL: https://github.com/djvanderlaan/reclin2
+Depends: data.table, R (>= 3.6.0)
+Imports: stringdist, stats, utils, lpSolve, Rcpp, parallel
+Suggests: simplermarkdown
+LinkingTo: Rcpp
+VignetteBuilder: simplermarkdown
+License: GPL-3
+LazyLoad: yes
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-07-21 07:01:26 UTC; eoos
+Author: Jan van der Laan [aut, cre] (<https://orcid.org/0000-0002-0693-1514>)
+Maintainer: Jan van der Laan <r@eoos.dds.nl>
+Repository: CRAN
+Date/Publication: 2023-07-21 07:40:02 UTC

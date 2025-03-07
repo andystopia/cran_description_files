@@ -1,0 +1,30 @@
+Package: kerasR
+Type: Package
+Title: R Interface to the Keras Deep Learning Library
+Version: 0.8.1
+Authors@R: c(person("Taylor", "Arnold", email = "tarnold2@richmond.edu", role = c("aut", "cre")), person("Andrie", "de Vries", email = "apdevries@gmail.com", role = c("aut")))
+Author: Taylor Arnold [aut, cre],
+  Andrie de Vries [aut]
+Maintainer: Taylor Arnold <tarnold2@richmond.edu>
+Description: Provides a consistent interface to the 'Keras' Deep Learning Library
+  directly from within R. 'Keras' provides specifications for describing dense
+  neural networks, convolution neural networks (CNN) and recurrent neural networks
+  (RNN) running on top of either 'TensorFlow' or 'Theano'. Type conversions between
+  Python and R are automatically handled correctly, even when the default
+  choices would otherwise lead to errors. Includes complete R documentation
+  and many working examples.
+Depends: R (>= 2.10)
+Imports: reticulate (>= 0.7)
+Suggests: knitr, rmarkdown, testthat, covr
+URL: https://github.com/statsmaths/kerasR
+BugReports: https://github.com/statsmaths/kerasR/issues
+Encoding: UTF-8
+SystemRequirements: Python (>= 2.7); keras <https://keras.io/> (>=
+        2.0.1)
+License: LGPL-2
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-08-12 15:15:32 UTC; taylor
+Repository: CRAN
+Date/Publication: 2022-08-17 13:40:05 UTC

@@ -1,0 +1,42 @@
+Package: naturaList
+Type: Package
+Title: Classify Occurrences by Confidence Levels in the Species ID
+Version: 0.5.1
+Authors@R: c(
+    person("Arthur Vinicius", "Rodrigues", email = "rodrigues.arthur.v@gmail.com", 
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2656-558X")
+    ),
+    person("Gabriel", "Nakamura", role = "aut", 
+      comment = c(ORCID = "0000-0002-5144-5312")
+    ),
+	person("Leandro", "Duarte", role = "aut", 
+	  comment = c(ORCID = "0000-0003-1771-0407")
+	)
+  )  
+Description: Classify occurrence records based on confidence
+    levels of species identification. In addition, implement tools to filter
+    occurrences inside grid cells and to manually check for possibles errors with 
+	an interactive shiny application.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: shiny, shinyWidgets, dplyr, stringr, sp, raster,
+        shinydashboard, leaflet, leaflet.extras, tidytext, magrittr,
+        vegan, fasterize, sf, htmltools, methods, rlang, tm, stringi
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), rgeos, rgdal,
+        rnaturalearth, lwgeom, shinyLP, maptools
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+URL: https://github.com/avrodrigues/naturaList
+BugReports: https://github.com/avrodrigues/naturaList/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-04-27 12:40:27 UTC; rodriart
+Author: Arthur Vinicius Rodrigues [aut, cre]
+    (<https://orcid.org/0000-0003-2656-558X>),
+  Gabriel Nakamura [aut] (<https://orcid.org/0000-0002-5144-5312>),
+  Leandro Duarte [aut] (<https://orcid.org/0000-0003-1771-0407>)
+Maintainer: Arthur Vinicius Rodrigues <rodrigues.arthur.v@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-27 13:00:05 UTC

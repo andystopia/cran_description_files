@@ -1,0 +1,67 @@
+Type: Package
+Package: emayili
+Title: Send Email Messages
+Version: 0.7.15
+Authors@R: 
+    c(person(given = c("Andrew", "B."),
+             family = "Collier",
+             role = c("aut", "cre", "cph"),
+             email = "andrew@fathomdata.dev"),
+      person(given = "Matt",
+             family = "Dennis",
+             role = "ctb",
+             email = "matt@fathomdata.dev"),
+      person(given = "Antoine",
+             family = "Bichat",
+             role = "ctb",
+             email = "a.bichat@yahoo.fr",
+             comment = c(ORCID = "0000-0001-6599-7081")),
+      person(given = "Daniel",
+             family = "Fahey",
+             role = "ctb",
+             email = "dpfahey@gmail.com"),
+      person(given = c("Johann",  "R."),
+             family = "Kleinbub",
+             role = "ctb",
+             email = "johann.kleinbub@gmail.com"),
+      person(given = c("Panagiotis"),
+             family = "Moulos",
+             role = "ctb",
+             email = "pmoulos@gmail.com"),
+      person(given = "Swechhya",
+             family = "Bista",
+             role = "ctb",
+             email = "swechhyabista@gmail.com"),
+      person(given = "Colin",
+             family = "Fay",
+             role = "ctb",
+             email = "contact@colinfay.me",
+             comment = c(ORCID = "0000-0001-7343-1846")))
+Description: A light, simple tool for sending emails with minimal dependencies.
+URL: https://datawookie.github.io/emayili/
+BugReports: https://github.com/datawookie/emayili/issues
+License: GPL-3
+Language: en-GB
+Imports: base64enc, commonmark, curl (>= 4.0), digest, dplyr, glue,
+        htmltools, httr, logger, magrittr (>= 2.0.1), mime, purrr,
+        rmarkdown, rvest, stringi, stringr, tidyr, urltools, xfun, xml2
+Suggests: cld2, cld3, gpg, here, jinjar, lintr, memoise, testthat (>=
+        2.1.0), roxygen2, showtext, Microsoft365R
+SystemRequirements: The function render() requires Pandoc
+        (http://pandoc.org). To use PGP/GnuPG encryption requires gpg.
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+KeepSource: true
+NeedsCompilation: no
+Packaged: 2023-03-08 12:16:55 UTC; wookie
+Author: Andrew B. Collier [aut, cre, cph],
+  Matt Dennis [ctb],
+  Antoine Bichat [ctb] (<https://orcid.org/0000-0001-6599-7081>),
+  Daniel Fahey [ctb],
+  Johann R. Kleinbub [ctb],
+  Panagiotis Moulos [ctb],
+  Swechhya Bista [ctb],
+  Colin Fay [ctb] (<https://orcid.org/0000-0001-7343-1846>)
+Maintainer: Andrew B. Collier <andrew@fathomdata.dev>
+Repository: CRAN
+Date/Publication: 2023-03-08 13:50:07 UTC

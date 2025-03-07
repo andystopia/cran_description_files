@@ -1,0 +1,40 @@
+Package: SEAA
+Title: Splicing Efficiency Analysis and Annotation
+Version: 0.9.6
+Authors@R: 
+    c(
+    person(given = "Zixiang",
+           family = "Wang",
+           role = c("aut", "cre"),
+           email = "wangzixiang@mail.sdu.edu.cn",
+           comment = c(ORCID = "0000-0001-5252-9764")),
+    person(given = "Zhaojian",
+           family = "Liu",
+           role = c("aut"),
+           email = "liujian9782@mail.edu.cn")
+    )
+Description: The aim of 'SEAA' is to provide convenient and rapid splicing 
+    efficiency calculation and splicing sites annotation function using next 
+    generation sequencing data. Aligned files and a processed splicing sites 
+    annotation file are needed. The task can be finished in several minutes 
+    using multi-core computing with the assistance of 'Rsubread'. Plots of 
+    splicing status type and Cumulative Distribution Function (CDF) and 
+    annotated valid splicing efficiency can be exported. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+biocViews:
+Imports: clusterProfiler, ggforce, ggplot2, ggpubr, ggrepel, grDevices,
+        gridExtra, org.Hs.eg.db, org.Mm.eg.db, reshape2, Rsubread,
+        stats, tidyr, utils
+Suggests: testthat (>= 3.0.0)
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-09-17 06:09:45 UTC; wzx
+Author: Zixiang Wang [aut, cre] (<https://orcid.org/0000-0001-5252-9764>),
+  Zhaojian Liu [aut]
+Maintainer: Zixiang Wang <wangzixiang@mail.sdu.edu.cn>
+Repository: CRAN
+Date/Publication: 2021-09-19 06:30:02 UTC

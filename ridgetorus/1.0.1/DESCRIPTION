@@ -1,0 +1,40 @@
+Package: ridgetorus
+Type: Package
+Title: PCA on the Torus via Density Ridges
+Version: 1.0.1
+Date: 2023-01-09
+Authors@R: c(
+    person(given = "Eduardo", family = "García-Portugués",
+           role = c("aut", "cre"), email = "edgarcia@est-econ.uc3m.es",
+           comment = c(ORCID = "0000-0002-9224-4111")),
+    person(given = "Arturo", family = "Prieto-Tirado", role = "aut",
+    comment = c(ORCID = "0000-0003-0193-2988"))
+    )
+Description: Implementation of a Principal Component Analysis (PCA) in the
+    torus via density ridge estimation. The main function, ridge_pca(), obtains
+    the relevant density ridge for bivariate sine von Mises and bivariate
+    wrapped Cauchy distribution models and provides the associated scores and
+    variance decomposition. Auxiliary functions for evaluating, fitting, and
+    sampling these models are also provided. The package provides replicability
+    to García-Portugués and Prieto-Tirado (2022) <arXiv:2212.10856>.
+License: GPL-3
+LazyData: true
+Depends: R (>= 3.5.0), Rcpp
+Imports: rootSolve, sdetorus, sphunif, circular
+Suggests: BAMBI, covr, DirStats, GGally, ggplot2, knitr, markdown,
+        mvtnorm, numDeriv, rmarkdown, testthat, viridisLite
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/egarpor/ridgetorus
+BugReports: https://github.com/egarpor/ridgetorus
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-01-09 15:42:00 UTC; Eduardo
+Author: Eduardo García-Portugués [aut, cre]
+    (<https://orcid.org/0000-0002-9224-4111>),
+  Arturo Prieto-Tirado [aut] (<https://orcid.org/0000-0003-0193-2988>)
+Maintainer: Eduardo García-Portugués <edgarcia@est-econ.uc3m.es>
+Repository: CRAN
+Date/Publication: 2023-01-10 09:10:09 UTC

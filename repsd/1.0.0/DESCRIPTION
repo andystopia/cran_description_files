@@ -1,0 +1,34 @@
+Package: repsd
+Title: Root Expected Proportion Squared Difference for Detecting DIF
+Version: 1.0.0
+Authors@R: c(
+  person(given = c("Anne", "Corrine"), family = "Huggins-Manley",
+    email = "amanley@coe.ufl.edu", role = c("aut")),
+  person(given = c("Anthony", "William"), family = "Raborn",
+    email = "anthony.w.raborn@gmail.com", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-8083-4739"))
+  )
+Description: Root Expected Proportion Squared Difference (REPSD) is a nonparametric
+  differential item functioning (DIF) method that (a) allows practitioners 
+  to explore for DIF related to small, fine-grained focal groups of examinees, 
+  and (b) compares the focal group directly to the composite group that will be 
+  used to develop the reported test score scale. Using your provided response 
+  matrix with a column that identifies focal group membership, this package
+  provides the REPSD values, a simulated null distribution of possible REPSD
+  values, and the simulated p-values identifying items possibly displaying DIF 
+  without requiring enormous sample sizes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0), progress
+Suggests: colorDF, testthat (>= 3.0.0)
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-03-22 16:38:48 UTC; anthony_raborn
+Author: Anne Corrine Huggins-Manley [aut],
+  Anthony William Raborn [aut, cre]
+    (<https://orcid.org/0000-0002-8083-4739>)
+Maintainer: Anthony William Raborn <anthony.w.raborn@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-23 10:30:02 UTC

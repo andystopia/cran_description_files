@@ -1,0 +1,22 @@
+Package: rcreds
+Title: Securely Use Credentials Within R Scripts
+Version: 0.6.6
+Authors@R: c(person(given="Rick", family="Saporta", email="RickSaporta@gmail.com",  role=c("aut","cre"), comment=NULL)
+           , person(given="Mike", family="Reca",    email="michael.reca@vydia.com", role=c("ctb"),       comment=NULL)
+    )
+Description: Tools to write a list of credentials to an encrypted file and later read from that file into R. The goal is to have a useful alternative to including username/passwords as part of a script or even stored in the clear in a separate text file. Additional tools provided which are specific for connecting to a database.
+Depends: R (>= 3.3.1)
+License: MIT + file LICENSE
+Suggests: testthat, knitr, rmarkdown
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 6.0.1.9000
+Imports: jsonlite, digest, magrittr, stats, utils, collectArgs
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-10-26 19:04:16 UTC; rsaporta
+Author: Rick Saporta [aut, cre],
+  Mike Reca [ctb]
+Maintainer: Rick Saporta <RickSaporta@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-10-27 16:35:21 UTC

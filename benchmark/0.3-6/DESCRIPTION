@@ -1,0 +1,31 @@
+Package: benchmark
+Type: Package
+Title: Benchmark Experiments Toolbox
+Version: 0.3-6
+Date: 2014-05-02
+Authors@R: c(person("Manuel", "J. A. Eugster", role = c("aut", "cre"),
+    email = "manuel@mjae.net"))
+Depends: R (>= 2.10), utils, proto, ggplot2, relations, psychotools
+Imports: reshape, scales, plyr
+Suggests: coin, multcomp, lme4, e1071, entropy, archetypes, Rgraphviz,
+        psychotree
+Description: The benchmark package provides a toolbox for setup, execution
+    and analysis of benchmark experiments. Main focus is the analysis of
+    data accumulating during the execution -- one primary objective is the
+    statistical correct computation of the candidate algorithms' order.
+License: GPL (>= 2)
+URL: http://benchmark.r-forge.r-project.org/
+Collate: 'algperf-beplot0.R' 'testprocedure.R' 'proto.R'
+        'algperf-paircomp.R' 'algperf-preference.R'
+        'algperf-visualizations.R' 'warehouse.R' 'algperf.R'
+        'as.psychobench.R' 'as.warehouse.R' 'benchmark.R' 'bsgraph.R'
+        'bsplot.R' 'datachar-visualizations.R'
+        'dataset-characteristics.R' 'dataset.R'
+        'dataset-characterization.R' 'testres-analysis.R'
+        'testres-visualizations.R'
+Packaged: 2014-05-02 19:33:37 UTC; eugstem1
+Author: Manuel J. A. Eugster [aut, cre]
+Maintainer: Manuel J. A. Eugster <manuel@mjae.net>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-05-02 21:48:47

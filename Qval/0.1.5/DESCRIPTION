@@ -1,0 +1,25 @@
+Package: Qval
+Type: Package
+Title: The Q-Matrix Validation Methods Framework
+Version: 0.1.5
+Date: 2024-03-02
+Authors@R: c(person(given = "Haijiang", family = "Qin", role = c("aut", "cre", "cph"), email = "haijiang133@outlook.com"),
+             person(given = "Lei", family = "Guo", role = c("aut", "cph"), email = "happygl1229@swu.edu.cn"))
+Maintainer: Haijiang Qin <haijiang133@outlook.com>
+Description: Provide a variety of Q-matrix validation methods for the generalized cognitive diagnosis models, including the method based on the generalized deterministic input, noisy, and gate model (G-DINA) by de la Torre (2011) <DOI:10.1007/s11336-011-9207-7> discrimination index (the GDI method) by de la Torre and Chiu (2016) <DOI:10.1007/s11336-015-9467-8>, the step-wise Wald test method (the Wald method) by Ma and de la Torre (2020) <DOI:10.1111/bmsp.12156>, the Hull method by Najera et al. (2021) <DOI:10.1111/bmsp.12228>, the multiple logistic regression‑based Q‑matrix validation method (the MLR-B method) by Tu et al. (2022) <DOI:10.3758/s13428-022-01880-x>. Different research methods during Q-matrix validating are available.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: glmnet, GDINA, plyr, nloptr, Matrix, stats
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Collate: 'CDM.R' 'convex.R' 'cov.R' 'fit.R' 'GDI.R' 'Hull.R' 'MLR-B.R'
+        'MLR.R' 'MLRlasso.R' 'Mmatrix.R' 'OSR.R' 'P.R' 'Pattern.R'
+        'priority.R' 'PVAF.R' 'QRR.R' 'R2.R' 'sim.data.R' 'sim.MQ.R'
+        'sim.Q.R' 'TNR.R' 'TPR.R' 'USR.R' 'validation.R' 'VRR.R'
+        'Wald.R' 'Wald.test.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2024-03-02 05:03:06 UTC; Haiji
+Repository: CRAN
+Author: Haijiang Qin [aut, cre, cph],
+  Lei Guo [aut, cph]
+Date/Publication: 2024-03-02 05:22:35 UTC

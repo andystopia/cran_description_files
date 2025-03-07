@@ -1,0 +1,29 @@
+Package: bspm
+Type: Package
+Title: Bridge to System Package Manager
+Version: 0.4.0
+Authors@R: c(
+    person("Iñaki", "Ucar", email="iucar@fedoraproject.org",
+      role=c("aut", "cph", "cre"), comment=c(ORCID="0000-0001-6403-5550")))
+Description: Enables binary package installations on Linux distributions.
+    Provides functions to manage packages via the distribution's package
+    manager. Also provides transparent integration with R's install.packages()
+    and a fallback mechanism. When installed as a system package, interacts
+    with the system's package manager without requiring administrative
+    privileges via an integrated D-Bus service; otherwise, uses sudo.
+    Currently, the following backends are supported: DNF, APT, ALPM.
+License: MIT + file LICENSE
+Encoding: UTF-8
+OS_type: unix
+SystemRequirements: systemd, dbus-python, PyGObject,
+        python-(dnf|apt|alpm)
+Suggests: tinytest
+URL: https://enchufa2.github.io/bspm/
+BugReports: https://github.com/Enchufa2/bspm/issues
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2022-11-24 20:04:20 UTC; iucar
+Author: Iñaki Ucar [aut, cph, cre] (<https://orcid.org/0000-0001-6403-5550>)
+Maintainer: Iñaki Ucar <iucar@fedoraproject.org>
+Repository: CRAN
+Date/Publication: 2022-11-24 23:30:11 UTC

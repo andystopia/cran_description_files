@@ -1,0 +1,34 @@
+Package: vaccine
+Type: Package
+Title: Statistical Tools for Immune Correlates Analysis of Vaccine
+        Clinical Trial Data
+Version: 1.1.0
+Authors@R: person("Avi", "Kenny", email = "avi.kenny@gmail.com", role = c("aut", "cre", "cph"))
+Description: Various semiparametric and nonparametric statistical tools for
+    immune correlates analysis of vaccine clinical trial data. This includes
+    calculation of summary statistics and estimation of risk, vaccine efficacy,
+    controlled effects (controlled risk and controlled vaccine efficacy), and
+    mediation effects (natural direct effect, natural indirect effect,
+    proportion mediated). See Gilbert P, Fong Y, Kenny A, and Carone, M (2022)
+    <doi:10.1093/biostatistics/kxac024> and Fay MP and Follmann DA (2023)
+    <doi:10.48550/arXiv.2208.06465>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Imports: dplyr (>= 1.0.10), fdrtool (>= 1.2.17), ggplot2 (>= 3.4.0),
+        ggpubr (>= 0.5.0), methods (>= 4.2.2), rlang (>= 1.0.6), Rsolnp
+        (>= 1.16), simest (>= 0.4), splines (>= 4.2.2), stats (>=
+        4.2.2), SuperLearner (>= 2.0.28), survival (>= 3.4.0), survML
+        (>= 0.0.0.9000), truncnorm (>= 1.0.8), e1071 (>= 1.7.12), earth
+        (>= 5.3.1), glmnet (>= 4.1.6)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-04 00:39:05 UTC; avike
+Author: Avi Kenny [aut, cre, cph]
+Maintainer: Avi Kenny <avi.kenny@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-04 08:00:02 UTC

@@ -1,0 +1,35 @@
+Package: dracor
+Type: Package
+Title: Decode Draco Format 3D Mesh Data
+Version: 0.2.5
+Date: 2023-01-11
+Authors@R: c(
+    person("Gregory", "Jefferis", 
+    email="jefferis@gmail.com", 
+    role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0002-0587-9355")),
+    person("Google Inc", 
+    role=c("aut", "cph"), 
+    comment="for the Draco library")
+    )
+Description: Decodes meshes and point cloud data encoded by the Draco mesh
+    compression library from Google. Note that this is only designed for basic
+    decoding and not intended as a full scale wrapping of the Draco library.
+License: Apache License (>= 2.0)
+Imports: Rcpp (>= 1.0.5)
+LinkingTo: Rcpp
+Enhances: rgl
+Suggests: testthat, spelling, covr
+URL: https://github.com/natverse/dracor,
+        https://github.com/google/draco
+BugReports: https://github.com/natverse/dracor/issues
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2023-01-19 11:43:24 UTC; jefferis
+Author: Gregory Jefferis [aut, cre] (<https://orcid.org/0000-0002-0587-9355>),
+  Google Inc [aut, cph] (for the Draco library)
+Maintainer: Gregory Jefferis <jefferis@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-19 12:10:02 UTC

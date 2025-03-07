@@ -1,0 +1,33 @@
+Package: movieROC
+Type: Package
+Title: Visualizing the Decision Rules Underlying Binary Classification
+Version: 0.1.1
+Authors@R: c(person(given = "Sonia", family = "Perez-Fernandez", role = c("aut", "cre"), email = "perezsonia@uniovi.es", 
+                    comment = c(ORCID = "0000-0002-2767-6399")))
+Description: Visualization of decision rules for binary classification and Receiver Operating Characteristic (ROC) curve estimation under different generalizations proposed in the literature:
+  - making the classification subsets flexible to cover those scenarios where both extremes of the
+  marker are associated with a higher risk of being positive, considering two thresholds 
+  (gROC() function);
+  - transforming the marker by a proper function trying to improve the classification performance 
+  (hROC() function);
+  - when dealing with multivariate markers, considering a proper transformation to univariate space 
+  trying to maximize the resulting AUC of the TPR for each FPR (multiROC() function).
+  The classification regions behind each point of the ROC curve are displayed in both static 
+  graphics (plot_buildROC(), plot_regions() or plot_funregions() function) or 
+  videos (movieROC() function).
+License: GPL-3
+Encoding: UTF-8
+BugReports: https://github.com/perezsonia/movieROC/issues
+Imports: rms, animation, intrval, gtools, e1071, robustbase, Rsolnp,
+        ks, zoo
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Author: Sonia Perez-Fernandez [aut, cre]
+    (<https://orcid.org/0000-0002-2767-6399>)
+Maintainer: Sonia Perez-Fernandez <perezsonia@uniovi.es>
+Repository: CRAN
+Packaged: 2024-06-27 19:03:55 UTC; sonia
+Date/Publication: 2024-06-28 07:40:02 UTC

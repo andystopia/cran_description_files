@@ -1,0 +1,45 @@
+Package: SchoolDataIT
+Type: Package
+Title: Retrieve, Harmonise and Map Open Data Regarding the Italian
+        School System
+Version: 0.1.0
+Authors@R: c(person(given = "Leonardo", 
+             family = "Cefalo", 
+             role = c("aut", "cre"),
+             email = "leonardo.cefalo@uniba.it",
+             comment = c(ORCID = "0009-0001-7776-723X")),
+             person(given = "Alessio",
+             family = "Pollice", 
+             role = c("ctb","ths"),
+             email="alessio.pollice@uniba.it",
+             comment = c(ORCID = "0000-0002-2818-9373")),
+             person(given = "Paolo",
+             family = "Maranzano",
+             role = c("ctb"),
+             email = "pmaranzano.ricercastatistica@gmail.com",
+             comment = c(ORCID = "0000-0002-9228-2759")))
+Author: Leonardo Cefalo [aut, cre] (<https://orcid.org/0009-0001-7776-723X>),
+  Alessio Pollice [ctb, ths] (<https://orcid.org/0000-0002-2818-9373>),
+  Paolo Maranzano [ctb] (<https://orcid.org/0000-0002-9228-2759>)
+Maintainer: Leonardo Cefalo <leonardo.cefalo@uniba.it>
+Description: Compiles and displays the available data sets regarding the Italian school system, with a focus on the infrastructural aspects.
+    Input datasets are downloaded from the web, with the aim of updating everything to real time.  
+    The functions are divided in four main modules, namely 
+    'Get', to scrape raw data from the web
+    'Util', various utilities needed to process raw data
+    'Group', to aggregate data at the municipality or province level
+    'Map', to visualize the output datasets.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: curl, dplyr, ggplot2, grDevices, httr, leafpop, magrittr,
+        mapview, readr, readxl, rlang, rvest, sf, stringr, tidyr,
+        utils, xml2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tidyverse
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2024-03-20 15:04:00 UTC; Leonardo
+Repository: CRAN
+Date/Publication: 2024-03-21 18:00:05 UTC

@@ -1,0 +1,46 @@
+Package: adestr
+Type: Package
+Title: Estimation in Optimal Adaptive Two-Stage Designs
+Version: 0.5.0
+Authors@R: c(person("Jan", "Meis", role = c("aut", "cre"), email = "meis@imbi.uni-heidelberg.de", comment = c(ORCID = "0000-0001-5407-7220")),
+  person("Martin", "Maechler", role = c("cph"), email = "maechler@stat.math.ethz.ch", comment = c(ORCID = "0000-0002-8685-9910", "Original author of monoSpl.c (from the 'stats' package).")))
+Description: 
+  Methods to evaluate the performance characteristics of
+  various point and interval estimators for optimal adaptive two-stage designs.
+  Specifically, this package is written to work with trial designs created by the 'adoptr' package
+  (Kunzmann et al. (2021) <doi:10.18637/jss.v098.i09>; Pilz et al. (2021) <doi:10.1002/sim.8953>)).
+  Apart from the a priori evaluation of performance characteristics, this package also allows for the
+  evaluation of the implemented estimators on real datasets, and it implements methods
+  to calculate p-values.
+License: GPL (>= 2)
+Copyright: This package contains a modified version of the monotonic
+        spline functions from the 'stats' package. Specifically, the
+        code is containted in the files 'R/fastmonoHFC.R',
+        'src/fastmonoHFC.c', 'src/modreg.h' and 'src/monoSpl.c'. The R
+        Core team and Martin Maechler are the copyright holders of the
+        original code. Jan Meis is the copyright holder of everything
+        else.
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0.0)
+Imports: methods, stats, grDevices, cubature, ggplot2, ggpubr, scales,
+        latex2exp, forcats, future.apply, pracma, progressr, Rdpack
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0), microbenchmark
+Config/testthat/edition: 3
+Collate: 'adestr_package.R' 'twostagedesign_with_cache.R' 'analyze.R'
+        'estimators.R' 'densities.R' 'evaluate_estimator.R'
+        'fastmonoHFC.R' 'fisher_information.R' 'hcubature.R'
+        'helper_functions.R' 'integrate_over_sample_space.R'
+        'reference_implementation.R' 'mle_distribution.R'
+        'mlmse_score.R' 'n2c2_helpers.R' 'plot.R' 'priors.R' 'print.R'
+URL: https://jan-imbi.github.io/adestr/
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2023-09-26 11:41:51 UTC; pn425
+Author: Jan Meis [aut, cre] (<https://orcid.org/0000-0001-5407-7220>),
+  Martin Maechler [cph] (<https://orcid.org/0000-0002-8685-9910>,
+    Original author of monoSpl.c (from the 'stats' package).)
+Maintainer: Jan Meis <meis@imbi.uni-heidelberg.de>
+Repository: CRAN
+Date/Publication: 2023-09-27 09:20:11 UTC

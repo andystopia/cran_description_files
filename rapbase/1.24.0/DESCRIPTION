@@ -1,0 +1,39 @@
+Package: rapbase
+Type: Package
+Title: Base Functions and Resources for Rapporteket
+Version: 1.24.0
+Authors@R: c(
+    person(given = "Are",
+           family = "Edvardsen",
+           role = c("aut", "cre"),
+           email = "biorakel@gmail.com",
+           comment = c(ORCID = "0000-0002-5210-3656")),
+    person(given = "Kevin Otto",
+           family = "Thon",
+           role = c("aut"),
+           email = "kevin.thon@helse-nord.no"))
+Maintainer: Are Edvardsen <biorakel@gmail.com>
+Description: Provide common functions and resources for registry specific
+    R-packages at Rapporteket
+    <https://rapporteket.github.io/rapporteket/articles/short_introduction.html>.
+    This package is relevant for developers of packages/registries at
+    Rapporteket.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: blob, bookdown, DBI, digest, dplyr, DT, jsonlite, kableExtra,
+        knitr, magrittr, readr, rlang, RMariaDB, rmarkdown,
+        rpivotTable, sendmailR, shiny, shinyalert, sship (>= 0.9.0),
+        utils, yaml
+RoxygenNote: 7.2.3
+URL: https://github.com/Rapporteket/rapbase
+BugReports: https://github.com/Rapporteket/rapbase/issues
+Suggests: httptest, lifecycle, rvest, testthat, withr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-27 09:51:46 UTC; rstudio
+Author: Are Edvardsen [aut, cre] (<https://orcid.org/0000-0002-5210-3656>),
+  Kevin Otto Thon [aut]
+Repository: CRAN
+Date/Publication: 2023-02-27 10:22:31 UTC

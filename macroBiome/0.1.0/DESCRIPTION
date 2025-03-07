@@ -1,0 +1,36 @@
+Package: macroBiome
+Type: Package
+Title: A Tool for Mapping the Distribution of the Biomes and Bioclimate
+Version: 0.1.0
+Authors@R: 
+    c(person("Zoltán", "Szelepcsényi", email = "szelepcsenyi.zoltan@gmail.com", 
+             role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-9844-4958")))
+Maintainer: Zoltán Szelepcsényi <szelepcsenyi.zoltan@gmail.com>
+Description: Procedures for simulating biomes by equilibrium vegetation 
+  models, with a special focus on paleoenvironmental applications.
+  Two widely used equilibrium biome models are currently implemented in 
+  the package: the Holdridge Life Zone (HLZ) system (Holdridge 1947, 
+  <doi:10.1126/science.105.2727.367>) and the BIOME model (Prentice et 
+  al. 1992, <doi:10.2307/2845499>). Three climatic forest-steppe models 
+  are also implemented.
+  An approach for estimating monthly time series of relative sunshine 
+  duration from temperature and precipitation data (Yin 1999, 
+  <doi:10.1007/s007040050111>) is also adapted, allowing 
+  process-based biome models to be combined with high-resolution 
+  paleoclimate simulation datasets (e.g., CHELSA-TraCE21k v1.0 dataset: 
+  <https://chelsa-climate.org/chelsa-trace21k/>).
+Depends: R (>= 3.5.0), palinsol, raster
+Imports: rworldmap, rworldxtra, sp, strex
+URL: https://github.com/szelepcsenyi/macroBiome
+BugReports: https://github.com/szelepcsenyi/macroBiome/issues/
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.2.2
+Date: 2022-12-01
+NeedsCompilation: no
+Packaged: 2022-12-08 16:27:39 UTC; szelepcsenyi.zoltan
+Author: Zoltán Szelepcsényi [aut, cre, cph]
+    (<https://orcid.org/0000-0002-9844-4958>)
+Repository: CRAN
+Date/Publication: 2022-12-09 14:30:02 UTC

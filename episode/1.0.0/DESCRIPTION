@@ -1,0 +1,23 @@
+Package: episode
+Type: Package
+Title: Estimation with Penalisation in Systems of Ordinary Differential
+        Equations
+Version: 1.0.0
+Authors@R: person("Frederik Vissing", "Mikkelsen", email = "mifretz@gmail.com", role = c("aut", "cre"))
+Maintainer: Frederik Vissing Mikkelsen <mifretz@gmail.com>
+Description: A set of statistical tools for inferring unknown parameters in continuous time processes governed by ordinary differential equations (ODE). Moreover, variance reduction and model selection can be obtained through various implemented penalisation schemes. The package offers two estimation procedures: exact estimation via least squares and a faster approximate estimation via inverse collocation methods. All estimators can handle multiple data sets arising from the same ODE system, but subjected to different interventions.
+License: GPL-3
+LazyData: TRUE
+Imports: Matrix (>= 1.2-9), glmnet (>= 2.0-10), Rcpp (>= 0.12.11),
+        methods (>= 3.4), stats (>= 3.4), nnls (>= 1.4)
+Depends: R (>= 3.4.0)
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: GNU make
+RoxygenNote: 6.0.1
+Suggests: testthat, knitr, rmarkdown, devtools
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-10-24 15:23:41 UTC; hmn426
+Author: Frederik Vissing Mikkelsen [aut, cre]
+Repository: CRAN
+Date/Publication: 2017-10-29 14:27:39 UTC

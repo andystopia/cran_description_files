@@ -1,0 +1,36 @@
+Package: etwfe
+Type: Package
+Title: Extended Two-Way Fixed Effects
+Version: 0.4.0
+Date: 2024-02-26
+Authors@R: 
+    c(
+    person(given = "Grant",
+           family = "McDermott",
+           role = c("aut", "cre"),
+           email = "gmcd@amazon.com",
+           comment = c(ORCID = "0000-0001-7883-8573")),
+    person( given = "Frederic",
+            family = "Kluser",
+            role = "ctb",
+            email = "frederic.kluser@unibe.ch")
+            )
+Description: Convenience functions for implementing extended two-way 
+  fixed effect regressions a la Wooldridge (2021, 2022)
+  <doi:10.2139/ssrn.3906345>, <doi:10.2139/ssrn.4183726>.
+License: MIT + file LICENSE
+Imports: fixest (>= 0.11.2), stats, data.table, Formula,
+        marginaleffects (>= 0.10.0)
+Suggests: did, modelsummary, gt, ggplot2, knitr, rmarkdown, tinytest
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://grantmcdermott.com/etwfe/
+BugReports: https://github.com/grantmcdermott/etwfe/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-02-26 23:25:03 UTC; gmcd
+Author: Grant McDermott [aut, cre] (<https://orcid.org/0000-0001-7883-8573>),
+  Frederic Kluser [ctb]
+Maintainer: Grant McDermott <gmcd@amazon.com>
+Repository: CRAN
+Date/Publication: 2024-02-27 04:20:02 UTC

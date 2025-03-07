@@ -1,0 +1,28 @@
+Package: clinicalsignificance
+Type: Package
+Title: Determine the Clinical Significance in Clinical Trials
+Version: 1.0.0
+Authors@R: 
+    person("Benedikt", "Claus", , "b.claus@pedscience.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9501-0954"))
+Description: A clinical significance analysis can be used to determine if an 
+    intervention has a meaningful or practical effect for patients. You provide 
+    a tidy data set plus a few more metrics and this package will take care of 
+    it to make your results publication ready as proposed by Jacobson et al., 
+    (1984) <doi:10.1016/S0005-7894(84)80002-7>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+RoxygenNote: 7.2.0
+Imports: checkmate, crayon, dplyr, ggplot2, insight, lme4, magrittr,
+        purrr, rlang, tibble, tidyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tidyverse, vdiffr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-06-02 08:18:53 UTC; bened
+Author: Benedikt Claus [aut, cre] (<https://orcid.org/0000-0001-9501-0954>)
+Maintainer: Benedikt Claus <b.claus@pedscience.de>
+Repository: CRAN
+Date/Publication: 2022-06-03 07:30:05 UTC

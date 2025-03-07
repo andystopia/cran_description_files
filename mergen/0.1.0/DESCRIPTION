@@ -1,0 +1,32 @@
+Package: mergen
+Type: Package
+Title: AI-Driven Code Generation, Explanation and Execution for Data
+        Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Altuna", "Akalin", , "aakalin@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0468-0117")),
+    person("Jacqueline Anne", "Jansen", , "jacqueline-98@hotmail.com", role = "aut")
+  )
+Description: Employing artificial intelligence to convert data analysis questions into executable code, explanations, and algorithms. The self-correction feature ensures the generated code is optimized for performance and accuracy. 'mergen' features a user-friendly chat interface, enabling users to interact with the AI agent and extract valuable insights from their data effortlessly.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0),
+Imports: openai, rmarkdown, BiocManager, assertthat (>= 0.2.1), httr,
+        jsonlite
+Suggests: knitr, readxl, data.table (>= 1.9.6), testthat (>= 3.0.0),
+        purrr (>= 0.3.4),
+VignetteBuilder: knitr
+Collate: 'setupAgent.R' 'parseBotResponse.R' 'sendPrompt.R'
+        'executeCode.R' 'selfcorrect.R' 'clean_code_blocks.R'
+        'extractInstallPkg.R' 'extractFilenames.R' 'fileHeaderPrompt.R'
+        'test-helper-test_argument_validation.R' 'promptContext.R'
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-07 23:03:43 UTC; aakalin
+Author: Altuna Akalin [aut, cre] (<https://orcid.org/0000-0002-0468-0117>),
+  Jacqueline Anne Jansen [aut]
+Maintainer: Altuna Akalin <aakalin@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-08 11:20:05 UTC

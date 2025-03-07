@@ -1,0 +1,44 @@
+Package: linelist
+Title: Tagging and Validating Epidemiological Data
+Version: 1.0.0
+Authors@R: 
+    c(
+      person(given = "Hugo",
+             family = "Gruson",
+             role = c("aut", "cre"),
+             email = "hugo@data.org"),
+      person(given = "Thibaut",
+             family = "Jombart",
+             role = c("aut", "ccp")),
+      person(given = "Pietro",
+             family = "Monticone",
+             role = "ctb", 
+             email = "pit.monticone@gmail.com"),
+      person(given = "Tim",
+             family = "Taylor",
+             role = "ctb")
+    )
+Description: Provides tools to help storing and handling case line list data. The 'linelist' class adds a tagging system to classical 'data.frame' objects to identify key epidemiological data such as dates of symptom onset, epidemiological case definition, age, gender or disease outcome. Once tagged, these variables can be seamlessly used in downstream analyses, making data pipelines more robust and reliable. 
+License: MIT + file LICENSE
+URL: https://epiverse-trace.github.io/linelist/,
+        https://github.com/epiverse-trace/linelist
+BugReports: https://github.com/epiverse-trace/linelist/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/Needs/README: incidence2 (>= 2.1.1), ggplot2
+Depends: R (>= 3.1.0)
+Imports: checkmate, dplyr, lifecycle, tidyselect
+Suggests: callr, knitr, magrittr, outbreaks, rmarkdown, testthat,
+        tibble
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-12 10:33:28 UTC; hugo
+Author: Hugo Gruson [aut, cre],
+  Thibaut Jombart [aut, ccp],
+  Pietro Monticone [ctb],
+  Tim Taylor [ctb]
+Maintainer: Hugo Gruson <hugo@data.org>
+Repository: CRAN
+Date/Publication: 2023-10-19 07:30:02 UTC

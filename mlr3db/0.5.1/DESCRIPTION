@@ -1,0 +1,31 @@
+Package: mlr3db
+Title: Data Base Backend for 'mlr3'
+Version: 0.5.1
+Authors@R: 
+    person(given = "Michel",
+           family = "Lang",
+           role = c("cre", "aut"),
+           email = "michellang@gmail.com",
+           comment = c(ORCID = "0000-0001-9754-0393"))
+Description: Extends the 'mlr3' package with a backend to
+    transparently work with databases such as 'SQLite', 'DuckDB', 'MySQL',
+    'MariaDB', or 'PostgreSQL'. The package provides two additional backends:
+    'DataBackendDplyr' relies on the abstraction of package 'dbplyr' to
+    interact with most DBMS. 'DataBackendDuckDB' operates on 'DuckDB' data bases
+    and also on Apache Parquet files.
+License: LGPL-3
+URL: https:///mlr3db.mlr-org.com, https://github.com/mlr-org/mlr3db
+BugReports: https://github.com/mlr-org/mlr3db/issues
+Depends: mlr3 (>= 0.13.0), R (>= 3.1.0)
+Imports: R6, backports, checkmate, data.table, mlr3misc (>= 0.10.0)
+Suggests: DBI, RSQLite, dbplyr, dplyr, duckdb (>= 0.4.0), future,
+        future.apply, future.callr, lgr, testthat (>= 3.0.0), tibble
+Encoding: UTF-8
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-10-17 08:02:50 UTC; michel
+Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>)
+Maintainer: Michel Lang <michellang@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-17 08:40:02 UTC

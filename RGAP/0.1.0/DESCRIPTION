@@ -1,0 +1,22 @@
+Package: RGAP
+Type: Package
+Title: Production Function Output Gap Estimation
+Version: 0.1.0
+Authors@R: person(given = "Sina", family = "Streicher", email = "streicher@kof.ethz.ch", 
+               role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7848-1842"))
+Depends: R (>= 3.1.0)
+Description: The output gap indicates the percentage difference between the actual output of an economy and its potential. Since potential output is a latent process, the estimation of the output gap poses a challenge and numerous filtering techniques have been proposed. 'RGAP' facilitates the estimation of a Cobb-Douglas production function type output gap, as suggested by the European Commission (Havik et al. 2014) <https://ideas.repec.org/p/euf/ecopap/0535.html>. To that end, the non-accelerating wage rate of unemployment (NAWRU) and the trend of total factor productivity (TFP) can be estimated in two bivariate unobserved component models by means of Kalman filtering and smoothing. 'RGAP' features a flexible modeling framework for the appropriate state-space models and offers frequentist as well as Bayesian estimation techniques. Additional functionalities include direct access to the 'AMECO' <https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en> database and automated model selection procedures. See the paper by Streicher (2022) <http://hdl.handle.net/20.500.11850/552089> for details. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: stats, KFAS, zoo, dlm, openxlsx, ggplot2, gridExtra
+Suggests: testthat (>= 3.0.0), R.rsp
+VignetteBuilder: R.rsp
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-06-01 12:08:30 UTC; sinast
+Author: Sina Streicher [aut, cre] (<https://orcid.org/0000-0001-7848-1842>)
+Maintainer: Sina Streicher <streicher@kof.ethz.ch>
+Repository: CRAN
+Date/Publication: 2023-06-01 12:50:09 UTC

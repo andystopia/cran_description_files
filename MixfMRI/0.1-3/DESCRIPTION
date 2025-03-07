@@ -1,0 +1,43 @@
+Package: MixfMRI
+Version: 0.1-3
+Date: 2023-09-03
+Title: Mixture fMRI Clustering Analysis
+Authors@R: c(person("Wei-Chen", "Chen", role = c("aut", "cre"), email =
+        "wccsnow@gmail.com"),
+        person("Ranjan", "Maitra", role = "aut", email = "maitra@iastate.edu"),
+        person("Dan", "Nettleton", role = c("aut", "ctb")),
+        person("Pierre", "Lafaye De Micheaux", role = c("aut", "ctb"),
+	       comment = "Threshold functions from AnalyzeFMRI"),
+        person("Jonathan L", "Marchini", role = c("aut", "ctb"),
+               comment = "Threshold functions from AnalyzeFMRI"))
+Depends: R (>= 4.0.0)
+Imports: MASS, Matrix, RColorBrewer, fftw, MixSim, EMCluster
+Enhances: pbdMPI (>= 0.3-4), oro.nifti
+LazyLoad: yes
+LazyData: yes
+Description: Utilizing model-based clustering (unsupervised)
+        for functional magnetic resonance imaging (fMRI) data.
+        The developed methods (Chen and Maitra (2023) <doi:10.1002/hbm.26425>)
+        include 2D and 3D clustering analyses
+        (for p-values with voxel locations) and
+        segmentation analyses (for p-values alone) for fMRI data where p-values
+        indicate significant level of activation responding to stimulate
+        of interesting. The analyses are mainly identifying active
+        voxel/signal associated with normal brain behaviors.
+        Analysis pipelines (R scripts) utilizing this package
+        (see examples in 'inst/workflow/') is also implemented with high
+        performance techniques.
+License: Mozilla Public License 2.0
+BugReports: https://github.com/snoweye/MixfMRI/issues
+URL: https://github.com/snoweye/MixfMRI
+NeedsCompilation: yes
+Maintainer: Wei-Chen Chen <wccsnow@gmail.com>
+Packaged: 2023-09-04 21:16:02 UTC; snoweye
+Author: Wei-Chen Chen [aut, cre],
+  Ranjan Maitra [aut],
+  Dan Nettleton [aut, ctb],
+  Pierre Lafaye De Micheaux [aut, ctb] (Threshold functions from
+    AnalyzeFMRI),
+  Jonathan L Marchini [aut, ctb] (Threshold functions from AnalyzeFMRI)
+Repository: CRAN
+Date/Publication: 2023-09-04 21:50:05 UTC

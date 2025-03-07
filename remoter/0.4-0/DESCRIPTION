@@ -1,0 +1,33 @@
+Package: remoter
+Type: Package
+Title: Remote R: Control a Remote R Session from a Local One
+Version: 0.4-0
+Description: A set of utilities for client/server computing with R, controlling
+    a remote R session (the server) from a local one (the client).  Simply set
+    up a server (see package vignette for more details) and connect to it from
+    your local R session ('RStudio', terminal, etc).  The client/server
+    framework is a custom 'REPL' and runs entirely in your R session without the
+    need for installing a custom environment on your system.  Network
+    communication is handled by the 'ZeroMQ' library by way of the 'pbdZMQ'
+    package.
+License: BSD 2-clause License + file LICENSE
+Depends: R (>= 3.2.0)
+Imports: pbdZMQ (>= 0.3-0), getPass (>= 0.1-0), argon2 (>= 0.2-0),
+        stats, utils, tools, grDevices, graphics, png (>= 0.1-7)
+Suggests: sodium (>= 0.2), pbdRPC (>= 0.1-0)
+NeedsCompilation: no
+ByteCompile: yes
+Authors@R: c(
+    person("Drew", "Schmidt", role=c("aut", "cre"), email="wrathematics@gmail.com"),
+    person("Wei-Chen", "Chen", role="aut"),
+    person("R Core team", role = "ctb", comment = "some functions are modified from the R source code"))
+URL: https://github.com/RBigData/remoter
+BugReports: https://github.com/RBigData/remoter/issues
+Maintainer: Drew Schmidt <wrathematics@gmail.com>
+RoxygenNote: 6.0.1
+Packaged: 2018-01-05 03:42:33 UTC; mschmid3
+Author: Drew Schmidt [aut, cre],
+  Wei-Chen Chen [aut],
+  R Core team [ctb] (some functions are modified from the R source code)
+Repository: CRAN
+Date/Publication: 2018-01-05 05:04:32 UTC

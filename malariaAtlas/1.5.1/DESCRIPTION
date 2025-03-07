@@ -1,0 +1,48 @@
+Package: malariaAtlas
+Title: An R Interface to Open-Access Malaria Data, Hosted by the
+        'Malaria Atlas Project'
+Version: 1.5.1
+Authors@R: c(
+    person("Mauricio", "van den Berg", email =  "mauricio.vandenberg@telethonkids.org.au", role = c("aut", "cre")),
+    person("Sarah", "Connor", email =  "sarah.connor@telethonkids.org.au", role = c("aut")),
+    person("Daniel", "Pfeffer", email = "daniel.pfeffer@uqconnect.edu.au", role = c("aut"), comment = c(ORCID = "0000-0002-2204-3488")),
+    person("Tim", "Lucas", email =  "timcdlucas@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0003-4694-8107")),
+    person("Daniel", "May", role = c("aut"), comment = c(ORCID = "0000-0003-0005-2452")),
+    person("Suzanne", "Keddie", role = c("aut"), comment = c(ORCID = "0000-0003-1254-7794")),
+    person("Jen", "Rozier", role = c("aut"), comment = c(ORCID = "0000-0002-2610-7557")),
+    person("Oliver", "Watson", role = c("aut"), comment = c(ORCID = "0000-0003-2374-0741")),
+    person("Harry", "Gibson", role = c("aut"), comment = c(ORCID = "0000-0001-6779-3250")),
+    person("Nick", "Golding", role = c("ctb")),
+    person("David", "Smith", role = c("ctb")))
+Description: A suite of tools to allow you to download all 
+  publicly available parasite rate survey points, mosquito occurrence points and raster surfaces from 
+  the 'Malaria Atlas Project' <https://malariaatlas.org/> servers as well as utility functions for plotting
+  the downloaded data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: xml2, gridExtra, httr, dplyr, tidyr, methods, stats, utils,
+        rlang, sf, lifecycle, terra, tidyterra, ows4R, future.apply,
+        lubridate, jsonlite, stringr
+Depends: ggplot2
+RoxygenNote: 7.2.3
+Suggests: testthat, knitr, rmarkdown, palettetown, magrittr, tibble,
+        rdhs (>= 0.8.0)
+URL: https://github.com/malaria-atlas-project/malariaAtlas
+BugReports: https://github.com/malaria-atlas-project/malariaAtlas/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-27 06:06:22 UTC; mvandenberg
+Author: Mauricio van den Berg [aut, cre],
+  Sarah Connor [aut],
+  Daniel Pfeffer [aut] (<https://orcid.org/0000-0002-2204-3488>),
+  Tim Lucas [aut] (<https://orcid.org/0000-0003-4694-8107>),
+  Daniel May [aut] (<https://orcid.org/0000-0003-0005-2452>),
+  Suzanne Keddie [aut] (<https://orcid.org/0000-0003-1254-7794>),
+  Jen Rozier [aut] (<https://orcid.org/0000-0002-2610-7557>),
+  Oliver Watson [aut] (<https://orcid.org/0000-0003-2374-0741>),
+  Harry Gibson [aut] (<https://orcid.org/0000-0001-6779-3250>),
+  Nick Golding [ctb],
+  David Smith [ctb]
+Maintainer: Mauricio van den Berg <mauricio.vandenberg@telethonkids.org.au>
+Repository: CRAN
+Date/Publication: 2023-10-27 06:40:02 UTC

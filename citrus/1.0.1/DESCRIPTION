@@ -1,0 +1,39 @@
+Package: citrus
+Type: Package
+Title: Customer Intelligence Tool for Rapid Understandable Segmentation
+Version: 1.0.1
+Authors@R: c(
+    person("Dom","Clarke", email = "dom.clarke@peak.ai", role = c("aut", "cre")),
+    person("Cinzia","Braglia",email = "cinzia.braglia@peak.ai",role = "aut"),
+    person("Oskar","Nummedal",email = "oskar.nummadel@peak.ai",role = "aut"),
+    person("Leo", "McCarthy",email = "leo.mccarthy@peak.ai", role = "aut"),
+    person("Rebekah", "Yates",email = "rebekah.yates@peak.ai", role = "aut"),
+    person("Joash","Alonso",role = "aut"),
+    person("PEAK AI LIMITED", role = "cph")
+  )
+Maintainer: Dom Clarke <dom.clarke@peak.ai>
+Copyright: See the file COPYRIGHTS
+Description: A tool to easily run and visualise supervised and unsupervised state of the art customer segmentation. 
+    It is built like a pipeline covering the 3 main steps in a segmentation project: pre-processing, modelling, and plotting.
+    Users can either run the pipeline as a whole, or choose to run any one of the three individual steps.
+    It is equipped with a supervised option (tree optimisation) and an unsupervised option (k-clustering) as default models.
+License: MIT + file LICENSE
+Suggests: testthat
+Depends: R (>= 3.5.0)
+Imports: ggplot2, GGally, clustMixType (>= 0.1-16), treeClust, rpart,
+        tibble, rpart.plot, rpart.utils, stringr, dplyr, RColorBrewer,
+        rlang
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-11-16 11:47:11 UTC; oskarnummedal
+Author: Dom Clarke [aut, cre],
+  Cinzia Braglia [aut],
+  Oskar Nummedal [aut],
+  Leo McCarthy [aut],
+  Rebekah Yates [aut],
+  Joash Alonso [aut],
+  PEAK AI LIMITED [cph]
+Repository: CRAN
+Date/Publication: 2021-11-17 21:10:08 UTC

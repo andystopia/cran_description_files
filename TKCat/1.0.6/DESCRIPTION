@@ -1,0 +1,40 @@
+Package: TKCat
+Type: Package
+Title: Tailored Knowledge Catalog
+Version: 1.0.6
+Authors@R: c(
+    person(
+        "Patrice", "Godard",
+        role = c("aut", "cre","cph"),
+        email = "patrice.godard@gmail.com"
+    )
+    )
+Description: Facilitate the management of data from knowledge
+   resources that are frequently used alone or together
+   in research environments.
+   In 'TKCat', knowledge resources are manipulated as modeled database (MDB)
+   objects. These objects provide access to the data tables along with a general
+   description of the resource and a detail data model documenting the
+   tables, their fields and their relationships.
+   These MDBs are then gathered in catalogs that can be easily
+   explored an shared.
+   Finally, 'TKCat' provides tools to easily subset, filter and combine MDBs and
+   create new catalogs suited for specific needs.
+URL: https://patzaw.github.io/TKCat/, https://github.com/patzaw/TKCat/
+BugReports: https://github.com/patzaw/TKCat/issues
+Depends: R (>= 3.6), ReDaMoR (>= 0.7.0), magrittr, DBI, dplyr
+Imports: ClickHouseHTTP, rlang, tidyselect, visNetwork, getPass, shiny,
+        shinydashboard, DT, htmltools, readr, jsonlite, jsonvalidate
+        (>= 1.3.2), base64enc, markdown, promises, future, xml2,
+        Matrix, uuid
+Suggests: knitr, rmarkdown, stringr, RClickhouse, data.tree, BED
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-10-21 08:52:33 UTC; pgodard
+Author: Patrice Godard [aut, cre, cph]
+Maintainer: Patrice Godard <patrice.godard@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-10-21 11:35:09 UTC

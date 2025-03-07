@@ -1,0 +1,30 @@
+Package: NPMLEmix
+Type: Package
+Title: Two-Groups Mixture Model with Covariates
+Version: 1.1
+Date: 2020-11-19
+Depends: R (>= 3.0.1), Rmosek
+Authors@R: c(
+    person( "Nabarun", "Deb", email=  "nd2560@columbia.edu", role =  c("aut", "cre")),
+    person("Sujayam", "Saha", email =  "sujayam@berkeley.edu", role = "ctb"),
+    person("Adityanand", "Guntuboyina", email = "aditya@stat.berkeley.edu", role =  "ctb"),
+    person("Bodhisattva", "Sen", email = "bodhi@stat.columbia.edu", role =  "ctb")
+    )
+Maintainer: Nabarun Deb <nd2560@columbia.edu>
+Description: We develop three procedures for estimation in a two-groups model with covariates. One of them is a nonparametric maximum likelihood estimation based approach when the signal distribution is an infinite Gaussian location mixture and the signal proportion is a logistic function of the available covariates. Two other functions - marg1() and marg2() have also been implemented for inference in the above framework. All these methods can be used for inference in multiple hypotheses testing. For more information, see the paper: Deb, Saha, Guntuboyina and Sen (2019),``Two-component Mixture Model in the Presence of Covariates'' <arXiv:1810.07897v2>.
+License: GPL-2
+Encoding: UTF-8
+Author: Nabarun Deb [aut, cre],
+  Sujayam Saha [ctb],
+  Adityanand Guntuboyina [ctb],
+  Bodhisattva Sen [ctb]
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+SystemRequirements: MOSEK (http://www.mosek.com) and MOSEK license.
+URL: https://github.com/NabarunD/NPMLEmix
+Imports: R.utils, dplyr, spatstat, methods, latexpdf, Matrix, FDRreg,
+        Rcpp, REBayes, CAMAN, progress, pbapply, Hmisc, pracma, mosaic
+Packaged: 2020-11-25 03:40:50 UTC; Nabarun Deb
+Repository: CRAN
+Date/Publication: 2020-11-26 11:30:03 UTC

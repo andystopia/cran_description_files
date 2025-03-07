@@ -1,0 +1,45 @@
+Package: mixKernel
+Type: Package
+Title: Omics Data Integration Using Kernel Methods
+Version: 0.9
+Date: 2023-09-17
+Depends: R (>= 3.5.0), mixOmics, ggplot2, reticulate (>= 1.14)
+Imports: vegan, phyloseq, corrplot, psych, quadprog, LDRTools, Matrix,
+        methods, markdown
+Suggests: rmarkdown, knitr
+Authors@R: c(person("Nathalie", "Vialaneix", role = c("aut", "cre"), email="nathalie.vialaneix@inrae.fr"),
+             person("Celine", "Brouard", role = c("aut"), email="celine.brouard@inrae.fr"),
+             person("Remi", "Flamary", role = c("aut"), email="remi.flamary@polytechnique.edu"),
+             person("Julien", "Henry", role = c("aut"), email="julien.henry@inrae.fr"),
+             person("Jerome", "Mariette", role = c("aut"), email="jerome.mariette@inrae.fr"))
+Maintainer: Nathalie Vialaneix <nathalie.vialaneix@inrae.fr>
+Description: Kernel-based methods are powerful methods for integrating 
+    heterogeneous types of data. mixKernel aims at providing methods to combine
+    kernel for unsupervised exploratory analysis. Different solutions are 
+    provided to compute a meta-kernel, in a consensus way or in a way that 
+    best preserves the original topology of the data. mixKernel also integrates
+    kernel PCA to visualize similarities between samples in a non linear space
+    and from the multiple source point of view 
+    <doi:10.1093/bioinformatics/btx682>. A method to select (as well as 
+    funtions to display) important variables is also provided 
+    <doi:10.1093/nargab/lqac014>.
+License: GPL (>= 2)
+Repository: CRAN
+BugReports: https://forgemia.inra.fr/genotoul-bioinfo/mixKernel/-/issues
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+URL: http://mixkernel.clementine.wf
+LazyData: true
+Config/reticulate: list( packages = list( list(package = "autograd",
+        pip = TRUE), list(package = "numpy", pip = TRUE), list(package
+        = "scipy", pip = TRUE), list(package = "sklearn", pip = TRUE) )
+        )
+RoxygenNote: 7.2.3
+Packaged: 2023-09-18 05:50:33 UTC; nathalie
+Author: Nathalie Vialaneix [aut, cre],
+  Celine Brouard [aut],
+  Remi Flamary [aut],
+  Julien Henry [aut],
+  Jerome Mariette [aut]
+Date/Publication: 2023-09-18 12:40:09 UTC

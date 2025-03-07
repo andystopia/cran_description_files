@@ -1,0 +1,41 @@
+Package: archive
+Title: Multi-Format Archive and Compression Support
+Description: Bindings to 'libarchive' <http://www.libarchive.org> the
+  Multi-format archive and compression library. Offers R connections and direct
+  extraction for many archive formats including 'tar', 'ZIP', '7-zip', 'RAR',
+  'CAB' and compression formats including 'gzip', 'bzip2', 'compress', 'lzma'
+  and 'xz'.
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Jim",
+             family = "Hester",
+             role = c("aut", "cre"),
+             email = "jim.hester@rstudio.com",
+             comment = c(ORCID = "0000-0002-2739-7082")),
+      person(given = "Ondrej",
+             family = "Holy",
+             role = "cph",
+             comment = "archive_write_add_filter implementation"),
+        person(given = "RStudio",
+          role = c("cph", "fnd")))
+Depends: R (>= 3.1.0)
+Imports: tibble, glue, rlang
+Suggests: testthat, covr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LinkingTo: cpp11
+RoxygenNote: 7.1.1
+SystemRequirements: C++11, libarchive: libarchive-dev (deb),
+        libarchive-devel (rpm), libarchive (homebrew), libarchive_dev
+        (csw)
+URL: https://r-lib.github.io/archive/, https://github.com/r-lib/archive
+ByteCompile: true
+BugReports: https://github.com/r-lib/archive/issues
+NeedsCompilation: yes
+Packaged: 2021-06-29 14:22:24 UTC; jhester
+Author: Jim Hester [aut, cre] (<https://orcid.org/0000-0002-2739-7082>),
+  Ondrej Holy [cph] (archive_write_add_filter implementation),
+  RStudio [cph, fnd]
+Maintainer: Jim Hester <jim.hester@rstudio.com>
+Repository: CRAN
+Date/Publication: 2021-06-30 10:40:05 UTC

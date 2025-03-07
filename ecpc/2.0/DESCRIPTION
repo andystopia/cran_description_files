@@ -1,0 +1,33 @@
+Package: ecpc
+Type: Package
+Title: Flexible Co-Data Learning for High-Dimensional Prediction
+Version: 2.0
+Date: 2021-04-19
+Authors@R: c(person(c("Mirrelijn","M."), "van Nee", role = c("aut", "cre"),
+                     email = "m.vannee@amsterdamumc.nl"),
+              person(c("Lodewyk","F.A."), "Wessels", role = "aut"),
+              person(c("Mark","A."), "van de Wiel", role = "aut"))
+Author: Mirrelijn M. van Nee [aut, cre],
+  Lodewyk F.A. Wessels [aut],
+  Mark A. van de Wiel [aut]
+Maintainer: Mirrelijn M. van Nee <m.vannee@amsterdamumc.nl>
+Depends: R (>= 3.5.0)
+Imports: glmnet, stats, Matrix, gglasso, mvtnorm, CVXR, multiridge (>=
+        1.5), survival, pROC
+Suggests: Rsolnp, expm, mgcv, foreach, doParallel, parallel, ggplot2,
+        ggraph, igraph, scales, dplyr, magrittr
+Description: Fit linear, logistic and Cox survival regression models penalised with adaptive multi-group ridge penalties.
+  The multi-group penalties correspond to groups of covariates defined by (multiple) co-data sources. 
+  Group hyperparameters are estimated with an empirical Bayes method of moments, penalised with an extra level of hyper shrinkage.
+  Various types of hyper shrinkage may be used for various co-data.
+  The method accommodates inclusion of unpenalised covariates, posterior selection of covariates and multiple data types.
+  The model fit is used to predict for new samples.
+  The name 'ecpc' stands for Empirical Bayes, Co-data learnt, Prediction and Covariate selection.
+  See Van Nee et al. (2020) <arXiv:2005.04010>.
+License: GPL (>= 3)
+URL: https://arxiv.org/abs/2005.04010
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-04-30 15:27:48 UTC; VNOB-0728
+Repository: CRAN
+Date/Publication: 2021-05-03 07:20:02 UTC

@@ -1,0 +1,22 @@
+Package: annotator
+Title: Image Annotation and Polygon Outlining using Free Drawing
+Version: 0.0.1
+Authors@R: 
+    person("Mihai", "Valcu", , "mvalcu@gwdg.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6907-7802"))
+Description: Provides functions to create image annotations through polygon outlining. Annotator has the same function as 'graphics::locator()' but achieves its purpose through drawing, rather than multiple mouse clicks. It is based on the 'htmlwidgets' package and 'fabric.js' JavaScript library <http://fabricjs.com/>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Depends: R (>= 4.0.0),
+Imports: methods, utils, stringr, glue, imager, shiny, htmlwidgets,
+        knitr
+Suggests: testthat (>= 3.0.0), sf, terra, spelling
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-11-22 21:09:33 UTC; mihai
+Author: Mihai Valcu [aut, cre] (<https://orcid.org/0000-0002-6907-7802>)
+Maintainer: Mihai Valcu <mvalcu@gwdg.de>
+Repository: CRAN
+Date/Publication: 2022-11-23 12:00:07 UTC

@@ -1,0 +1,26 @@
+Package: epitopeR
+Type: Package
+Title: Predict Peptide-MHC Binding
+Version: 1.0.0
+Description: A suite of tools to predict peptide MHC (major histocompatibility complex) presentation in the context of both human and mouse. Polymorphic peptides between self and foreign proteins are identified. The ability of peptides to bind self MHC is assessed and scored. Based on half maximal inhibitory concentration as queried through the immune epitope database API <http://tools.iedb.org> using user defined methods, the foreign peptides most likely to be presented are output along with their predicted binding strength, amino acid position, the protein from which each peptide was derived, and the presenting allele. "References:" Vita R, Mahajan S, Overton JA, Dhanda SK, Martini S, Cantrell JR, Wheeler DK, Sette A, Peters B. <doi:10.1093/nar/gky1006>.
+Authors@R: c(person("Joan","Zhang",email = "joan.zhang@emory.edu", role = c("aut", "cre")),
+             person("Aileen","Johnson",email = "aileen.johnson@emory.edu ", role = c("aut")),
+             person("Christian P","Larsen",email = "clarsen@emory.edu", role = c("cph", "aut")))
+Depends: R (>= 4.2.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), ggseqlogo,
+        ggVennDiagram
+VignetteBuilder: knitr
+Imports: dplyr, fs, httr, janitor, purrr, rlang, stringr, tibble,
+        tidyverse, utils, readr, Biostrings, seqinr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-14 21:16:14 UTC; xzhan50
+Author: Joan Zhang [aut, cre],
+  Aileen Johnson [aut],
+  Christian P Larsen [cph, aut]
+Maintainer: Joan Zhang <joan.zhang@emory.edu>
+Repository: CRAN
+Date/Publication: 2023-02-15 12:50:13 UTC

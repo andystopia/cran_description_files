@@ -1,0 +1,25 @@
+Package: glm.predict
+Type: Package
+Title: Predicted Values and Discrete Changes for GLM
+Version: 4.2-0
+Date: 2022-12-02
+Author: Benjamin Schlegel [aut,cre]
+Maintainer: Benjamin Schlegel <kontakt@benjaminschlegel.ch>
+Description: Functions to calculate predicted values and the difference between
+    the two cases with confidence interval for lm() [linear model], glm() [generalised linear model], glm.nb() [negative binomial model],
+	polr() [ordinal logistic model], multinom() [multinomial model] and tobit() [tobit model],
+	svyglm() [survey-weighted generalised linear models], lmer() [linear multilevel models] using Monte Carlo simulations or bootstrap. Reference: Bennet A. Zelner (2009) <doi:10.1002/smj.783>.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0), stats
+Imports: nnet, AER, survival, MASS, parallel, mlogit, dfidx, survey,
+        lme4
+Suggests: knitr, rmarkdown, ggplot2, devtools
+VignetteBuilder: knitr, rmarkdown
+LazyData: true
+URL: https://benjaminschlegel.ch/r/glm-predict/
+Language: en-US
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-12-02 14:14:10 UTC; benja
+Repository: CRAN
+Date/Publication: 2022-12-02 14:50:02 UTC

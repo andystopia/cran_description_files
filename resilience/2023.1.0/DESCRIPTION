@@ -1,0 +1,24 @@
+Package: resilience
+Type: Package
+Title: Predictors of Resilience to a Stressor in a Single-Arm Study
+Version: 2023.1.0
+Date: 2023-06-18
+Authors@R: 
+  c(person(given = "Ravi",
+           family = "Varadhan",
+           role = c("aut", "cre"),
+           email = "ravi.varadhan@jhu.edu"),
+    person(given = "Jiafeng",
+           family = "Zhu",
+           role = "ctb"))
+Maintainer: Ravi Varadhan <ravi.varadhan@jhu.edu>
+Description: Studies of resilience in older adults employ a single-arm design where everyone experiences the stressor. The simplistic approach of regressing change versus baseline yields biased estimates due to regression-to-the-mean. This package provides a method to correct the bias. It also allows covariates to be included. The method implemented in the package is described in Varadhan, R., Zhu, J., and Bandeen-Roche, K (2023), Biostatistics (To appear).
+Depends: R(>= 3.5.0), nptest, parallel, doParallel, foreach
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2023-07-05 19:42:44 UTC; rvaradh1
+Author: Ravi Varadhan [aut, cre],
+  Jiafeng Zhu [ctb]
+Date/Publication: 2023-07-06 18:40:02 UTC

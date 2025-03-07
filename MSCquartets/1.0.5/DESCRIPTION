@@ -1,0 +1,30 @@
+Package: MSCquartets
+Title: Analyzing Gene Tree Quartets under the Multi-Species Coalescent
+Version: 1.0.5
+Authors@R: c(person("Elizabeth", "Allman", email ="e.allman@alaska.edu", role = "aut"),
+             person("Hector", "Banos", email = "hbanos@gatech.edu", role = "aut"),
+             person("Jonathan", "Mitchell", email = "jonathanmitchell88@gmail.com", role = "aut"),
+             person("John", "Rhodes", email = "j.rhodes@alaska.edu", role = c("aut", "cre")) )
+Description: Methods for analyzing and using quartets displayed on a collection of gene trees, 
+      primarily to make inferences about the species tree or network under the multi-species 
+      coalescent model. These include quartet hypothesis tests for the model, as developed by 
+      Mitchell et al. (2019) <doi:10.1214/19-EJS1576>, the species tree inference routines 
+      based on quartet distances of Rhodes (2019) <doi:10.1109/TCBB.2019.2917204> and 
+      Yourdkhani and Rhodes (2019), and the NANUQ algorithm for inference of level-1 
+      species networks of Allman et al. (2019) <arXiv:1905.07050>.
+License: MIT + file LICENSE
+Imports: RandomFieldsUtils, zipfR, graphics, stats, Rdpack
+RdMacros: Rdpack
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-12-15 19:21:29 UTC; johnrhodes
+Author: Elizabeth Allman [aut],
+  Hector Banos [aut],
+  Jonathan Mitchell [aut],
+  John Rhodes [aut, cre]
+Maintainer: John Rhodes <j.rhodes@alaska.edu>
+Depends: R (>= 3.2.0), ape (>= 5.0), phangorn
+Repository: CRAN
+Date/Publication: 2019-12-16 11:50:13 UTC

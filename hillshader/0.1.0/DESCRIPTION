@@ -1,0 +1,29 @@
+Package: hillshader
+Title: Create Hillshade Relief Maps Using Ray-Tracing
+Version: 0.1.0
+Authors@R: 
+    person(given = "Pierre",
+           family = "Roudier",
+           role = c("aut", "cre"),
+           email = "pierre.roudier@gmail.com",
+           comment = c(ORCID = "0000-0001-7431-2603"))
+Description: A set of tools to create georeferenced hillshade relief 
+    raster maps using ray-tracing and other advanced hill-shading 
+    techniques. It includes a wrapper function to create a georeferenced,
+    ray-traced hillshade map from a digital elevation model, and other
+    functions that can be used in a rayshader pipeline. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: methods, raster, rayshader, scales
+Suggests: rgdal
+Depends: R (>= 2.10)
+Collate: 'add_shadow_2d.R' 'matrix_to_raster.R' 'write_raster.R'
+        'utils.R' 'hillshader.R' 'maungawhau.R' 'maungawhau_hr.R'
+NeedsCompilation: no
+Packaged: 2021-06-09 07:20:47 UTC; pierre
+Author: Pierre Roudier [aut, cre] (<https://orcid.org/0000-0001-7431-2603>)
+Maintainer: Pierre Roudier <pierre.roudier@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-09 12:20:02 UTC

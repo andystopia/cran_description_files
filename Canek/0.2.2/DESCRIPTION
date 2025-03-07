@@ -1,0 +1,32 @@
+Package: Canek
+Type: Package
+Title: Batch Correction of Single Cell Transcriptome Data
+Version: 0.2.2
+Authors@R: c(
+    person("Martin", "Loza", email = "martin.loza.lopez@gmail.com", role = c("aut", "cre"), 
+        comment = c(ORCID = "0000-0002-3342-2643")),
+    person("Diego", "Diez", email = "diego10ruiz@gmail.com", role = c("aut"),
+        comment = c(ORCID = "0000-0002-2325-4893"))
+    )
+Description: Non-linear/linear hybrid method for batch-effect correction
+    that uses Mutual Nearest Neighbors (MNNs) to identify similar cells between 
+    datasets. Reference: Loza M. et al. (NAR Genomics and Bioinformatics, 2020) <doi:10.1093/nargab/lqac022>.
+Depends: R (>= 3.5.0)
+Imports: FNN, irlba, numbers, fpc, bluster, igraph, matrixStats
+Suggests: testthat (>= 2.1.0), Seurat, SingleCellExperiment,
+        SummarizedExperiment, scater, batchelor, scran, knitr,
+        rmarkdown, patchwork, ggplot2
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+URL: https://martinloza.github.io/Canek/
+BugReports: https://github.com/MartinLoza/Canek/issues
+NeedsCompilation: no
+Packaged: 2023-05-31 04:16:03 UTC; martin
+Author: Martin Loza [aut, cre] (<https://orcid.org/0000-0002-3342-2643>),
+  Diego Diez [aut] (<https://orcid.org/0000-0002-2325-4893>)
+Maintainer: Martin Loza <martin.loza.lopez@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-31 04:50:02 UTC

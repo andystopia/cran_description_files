@@ -1,0 +1,31 @@
+Package: ecce
+Type: Package
+Title: Translate English Words into Chinese, or Translate Chinese Words
+        into English
+Version: 1.0.7
+Authors@R: person("Xinyuan", "Chu", email = "chuxinyuan@outlook.com", role = c("aut", "cre"))
+Maintainer: Xinyuan Chu <chuxinyuan@outlook.com>
+Date: 2020-06-23 12:06:09 UTC
+Description: If translate English words into Chinese, there is a faster 
+    way for R user. 'RYoudaoTranslate' package provides interface to 
+    'Youdao' <http://youdao.com/> translation open API for R user. 'entcn' 
+    package also provides similar features. But it does not support Chinese 
+    words translation into English, I have made some improvements on the basis 
+    of this software. You can pass in a words or a vector consisting of multiple 
+    words, ecce package support both English and Chinese translation. It also 
+    support browse translation results in website.
+License: MIT + file LICENSE
+URL: https://cxy.rbind.io/ecce/, https://gitlab.com/chuxinyuan/ecce
+BugReports: https://gitlab.com/chuxinyuan/ecce/issues
+Depends: R (>= 3.5.0)
+Imports: RCurl, rjson, stringr
+RoxygenNote: 7.1.0
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, dplyr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2020-06-28 03:00:48 UTC; cxy
+Author: Xinyuan Chu [aut, cre]
+Repository: CRAN
+Date/Publication: 2020-06-29 09:10:05 UTC

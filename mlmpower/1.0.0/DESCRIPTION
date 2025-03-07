@@ -1,0 +1,30 @@
+Package: mlmpower
+Type: Package
+Title: Power Analysis and Data Simulation for Multilevel Models
+Version: 1.0.0
+Authors@R: person("Brian T.", "Keller", email = "bk@utexas.edu",
+  role = c("aut", "cre", "cph"))
+Description: 
+    A declarative language for specifying multilevel models,
+    solving for population parameters based on specified variance-explained effect
+    size measures, generating data, and conducting power analyses to determine
+    sample size recommendations. The specification allows for any number of
+    within-cluster effects, between-cluster effects, covariate effects
+    at either level, and random coefficients. Moreover, the models do not
+    assume orthogonal effects, and predictors can correlate at either level
+    and accommodate models with multiple interaction effects.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/bkeller2/mlmpower
+BugReports: https://github.com/bkeller2/mlmpower/issues
+Depends: R (>= 4.0.0)
+Imports: cli, lme4, lmerTest, varTestnlme
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-04-25 22:07:10 UTC; Bry
+Author: Brian T. Keller [aut, cre, cph]
+Maintainer: Brian T. Keller <bk@utexas.edu>
+Repository: CRAN
+Date/Publication: 2023-04-26 06:10:02 UTC

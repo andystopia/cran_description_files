@@ -1,0 +1,45 @@
+Package: startR
+Title: Automatically Retrieve Multidimensional Distributed Data Sets
+Version: 2.3.0
+Authors@R: c(
+    person("Nicolau", "Manubens", , "nicolau.manubens@bsc.es", role = c("aut")),
+    person("An-Chi", "Ho", , "an.ho@bsc.es", role = c("aut", "cre")), 
+    person("Nuria", "Perez-Zanon", , "nuria.perez@bsc.es", role = c("aut"), comment = c(ORCID = "0000-0001-8568-3071")),
+    person("Javier", "Vegas", , "javier.vegas@bsc.es", role = c("ctb")),
+    person("Pierre-Antoine", "Bretonniere", , "pierre-antoine.bretonniere@bsc.es", role = c("ctb")),
+    person("Roberto", "Serrano", , "rsnotivoli@gmal.com", role = c("ctb")),
+    person("Eva", "Rifa", , "eva.rifarovira@bsc.es", role = "ctb"),
+    person("BSC-CNS", role = c("aut", "cph")))
+Description: Tool to automatically fetch, transform and arrange subsets of
+    multi- dimensional data sets (collections of files) stored in local and/or
+    remote file systems or servers, using multicore capabilities where possible.
+    The tool provides an interface to perceive a collection of data sets as a single
+    large multidimensional data array, and enables the user to request for automatic
+    retrieval, processing and arrangement of subsets of the large array. Wrapper
+    functions to add support for custom file formats can be plugged in/out, making
+    the tool suitable for any research field where large multidimensional data sets
+    are involved.
+Depends: R (>= 3.6.0)
+Imports: abind, bigmemory, future, multiApply (>= 2.1.0), parallel,
+        easyNCDF, s2dv, ClimProjDiags, PCICt, methods
+Suggests: stats, utils, testthat, yaml
+License: GPL-3
+URL: https://earth.bsc.es/gitlab/es/startR/
+BugReports: https://earth.bsc.es/gitlab/es/startR/-/issues
+SystemRequirements: cdo ecFlow
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-08-31 13:49:50 UTC; aho
+Author: Nicolau Manubens [aut],
+  An-Chi Ho [aut, cre],
+  Nuria Perez-Zanon [aut] (<https://orcid.org/0000-0001-8568-3071>),
+  Javier Vegas [ctb],
+  Pierre-Antoine Bretonniere [ctb],
+  Roberto Serrano [ctb],
+  Eva Rifa [ctb],
+  BSC-CNS [aut, cph]
+Maintainer: An-Chi Ho <an.ho@bsc.es>
+Repository: CRAN
+Date/Publication: 2023-09-12 10:00:02 UTC

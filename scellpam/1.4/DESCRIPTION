@@ -1,0 +1,32 @@
+Package: scellpam
+Type: Package
+Title: Applying Partitioning Around Medoids to Single Cell Data with
+        High Number of Cells
+Version: 1.4
+Date: 2022-10-30
+Author: Juan Domingo [aut, cre] (<https://orcid.org/0000-0003-4728-6256>),
+  Guillermo Ayala [ctb] (<https://orcid.org/0000-0002-6231-2865>),
+  Spanish Ministry of Science and Innovation, MCIN/AEI
+    <doi:10.13039/501100011033> [fnd]
+Maintainer: Juan Domingo <Juan.Domingo@uv.es>
+Authors@R: c(person("Juan","Domingo", email = "Juan.Domingo@uv.es", role=c("aut","cre"), comment=c(ORCID="0000-0003-4728-6256")),
+             person("Guillermo","Ayala", email = "Guillermo.Ayala@uv.es", role=c("ctb"), comment=c(ORCID="0000-0002-6231-2865")),
+             person("Spanish Ministry of Science and Innovation, MCIN/AEI <doi:10.13039/501100011033>", role=c("fnd")))
+Description: PAM (Partitioning Around Medoids) algorithm application to samples of single cell sequencing techniques
+	     with a high number of cells (as many as the computer memory allows). The package uses a binary format to
+	     store matrices (either full, sparse or symmetric) in files written in the disk that can contain any data type
+	     (not just double) which allows its manipulation when memory is sufficient to load them as int or float, but not
+	     as double. The PAM implementation is done in parallel, using several/all the cores of the machine, if it has them.
+	     This package shares a great part of its code with packages 'jmatrix' and 'parallelpam' but their functionality is
+	     included here so there is no need to install them.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8), memuse (>= 4.2.1), cluster (>= 2.1.4)
+LinkingTo: Rcpp
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+Suggests: rmarkdown, knitr, DuoClustering2018, scater, splatter
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-11-26 18:54:29 UTC; jdomingo
+Repository: CRAN
+Date/Publication: 2022-11-28 10:10:02 UTC

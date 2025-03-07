@@ -1,0 +1,30 @@
+Package: modeltime.gluonts
+Type: Package
+Title: 'GluonTS' Deep Learning
+Version: 0.1.0
+Authors@R: c(
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut", "cre")),
+    person("Business Science", role = "cph"))
+Description: 
+    Use the 'GluonTS' deep learning library inside of 'modeltime'.
+    Available models include 'DeepAR', 'N-BEATS', and 'N-BEATS' Ensemble. 
+    Refer to "GluonTS - Probabilistic Time Series Modeling" 
+    (<https://ts.gluon.ai/index.html>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: modeltime (>= 0.3.1)
+Imports: parsnip, timetk, magrittr, rlang (>= 0.1.2), reticulate,
+        tibble, forcats, dplyr, tidyr, purrr, stringr, glue, fs
+Suggests: tidyverse, tidymodels, knitr, rmarkdown, roxygen2, testthat
+VignetteBuilder: knitr
+URL: https://github.com/business-science/modeltime.gluonts
+BugReports: https://github.com/business-science/modeltime.gluonts/issues
+NeedsCompilation: no
+Packaged: 2020-11-27 17:12:13 UTC; mdancho
+Author: Matt Dancho [aut, cre],
+  Business Science [cph]
+Maintainer: Matt Dancho <mdancho@business-science.io>
+Repository: CRAN
+Date/Publication: 2020-11-30 09:40:02 UTC

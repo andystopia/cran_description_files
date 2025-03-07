@@ -1,0 +1,44 @@
+Package: vachette
+Title: A Method for Visualization of Pharmacometric Models
+Version: 0.40.0
+Authors@R: c(
+      person("Jos", "Lommerse", email = "jos.lommerse@gmail.com", role = c("aut")),
+      person("Anna", "Largajolli", email = "anna.largajolli@certara.com", role = c("aut")),
+      person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Nele", "Mueller-Plock", email = "nele.mueller-plock@certara.com", role = c("ctb")),
+      person("Jeff", "Sachs", email = "jeff_sachs@merck.com", role = c("ctb")),
+      person("Amy", "Cheung", email = "amy.cheung@certara.com", role = c("ctb")),
+      person("Certara USA, Inc.", role = c("cph","fnd"))
+      )
+Description: A method to visualize pharmacometric analyses which are impacted by
+    covariate effects. Variability-aligned covariate harmonized-effects
+    and time-transformation equivalent ('vachette') facilitates intuitive
+    overlays of data and model predictions, allowing for comprehensive
+    comparison without dilution effects. 'vachette' improves upon previous
+    methods Lommerse et al. (2021) <doi:10.1002/psp4.12679>, enabling its
+    application to all pharmacometric models and enhancing Visual Predictive
+    Checks (VPC) by integrating data into cohesive plots that can highlight
+    model misspecification.
+URL: https://github.com/certara/vachette
+BugReports: https://github.com/certara/vachette/issues
+Depends: R (>= 4.0)
+License: LGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, mrgsolve, tidyvpc, testthat (>= 3.0.0),
+        learnr
+Imports: ggplot2, tidyr, dplyr, magrittr, prospectr, Hmisc, purrr,
+        minpack.lm, progress, rlang, utils, photobiology
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-04 03:31:27 UTC; jcraig
+Author: Jos Lommerse [aut],
+  Anna Largajolli [aut],
+  James Craig [aut, cre],
+  Nele Mueller-Plock [ctb],
+  Jeff Sachs [ctb],
+  Amy Cheung [ctb],
+  Certara USA, Inc. [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2024-09-09 08:50:02 UTC

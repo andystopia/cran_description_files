@@ -1,0 +1,31 @@
+Package: npclust
+Type: Package
+Title: Nonparametric Tests for Incomplete Clustered Data
+Version: 0.1.0
+Date: 2023-04-08
+Authors@R: 
+  c(person("Yue",
+           "Cui",
+           role = c("aut", "cre"),
+           email = "YueCui@MissouriState.edu",
+           comment = c(ORCID = "0000-0002-7304-9409")),
+    person(c("Solomon","W."),
+           "Harrar",
+	   email = "Solomon.Harrar@uky.edu",
+           role = "ctb"))
+Maintainer: Yue Cui <YueCui@MissouriState.edu>
+Description: Nonparametric tests for clustered data in pre-post intervention design documented in Cui and Harrar (2021) <doi:10.1002/bimj.201900310> and Harrar and Cui (2022) <doi:10.1016/j.jspi.2022.05.009>. Other than the main test results mentioned in the reference paper, this package also provides a function to calculate the sample size allocations for the input long format data set, and also a function for adjusted/unadjusted confidence intervals calculations. There are also functions to visualize the distribution of data across different intervention groups over time, and also the adjusted/unadjusted confidence intervals.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Repository: CRAN
+Date/Publication: 2023-04-12 18:50:02 UTC
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: graphics, stats, MASS, ggplot2
+NeedsCompilation: no
+Packaged: 2023-04-12 00:01:37 UTC; yuecui
+Author: Yue Cui [aut, cre] (<https://orcid.org/0000-0002-7304-9409>),
+  Solomon W. Harrar [ctb]

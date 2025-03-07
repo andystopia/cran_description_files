@@ -1,0 +1,45 @@
+Package: saotd
+Type: Package
+Title: Sentiment Analysis of Twitter Data
+Version: 0.2.0
+Date: 2019-04-02
+Authors@R: c(
+    person("Evan", "Munson", 
+           email = "evan.l.munson@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9958-6800")),
+    person("Christopher", "Smith", 
+           email = "Cms3am@virginia.edu", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-8288-270X")),
+    person("Bradley", "Boehmke",
+           email = "bradleyboehmke@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-3611-8516")),
+    person("Jason", "Freels",
+           email = "auburngrads@live.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-2415-0340"))
+           )
+Maintainer: Evan Munson <evan.l.munson@gmail.com>
+BugReports: https://github.com/evan-l-munson/saotd/issues
+Description: This analytic is an in initial foray into sentiment analysis.  This analytic will allow a user to access the Twitter API (once they create their own developer account), ingest tweets of their interest, clean / tidy data, perform topic modeling if interested, compute sentiment scores utilizing the x  bing Lexicon, and output visualizations.
+License: GPL (>= 2)
+Imports: plyr, dplyr, widyr, stringr, tidytext, twitteR, purrr, tidyr,
+        igraph, maps, ggplot2, ggraph, scales, reshape2, lubridate,
+        utils, stats, magrittr, ldatuning, topicmodels
+RoxygenNote: 6.1.1
+Suggests: testthat, knitr, rmarkdown, httr, base64enc
+Depends: R (>= 3.3.0)
+VignetteBuilder: knitr
+SystemRequirements: GSL (>=2.4), MPFR (>= 4.0.0), udunits2 (>=2.2.26-3)
+Encoding: UTF-8
+LazyLoad: true
+NeedsCompilation: no
+Packaged: 2019-04-03 02:50:23 UTC; eklm
+Author: Evan Munson [aut, cre] (<https://orcid.org/0000-0002-9958-6800>),
+  Christopher Smith [aut] (<https://orcid.org/0000-0002-8288-270X>),
+  Bradley Boehmke [aut] (<https://orcid.org/0000-0002-3611-8516>),
+  Jason Freels [aut] (<https://orcid.org/0000-0002-2415-0340>)
+Repository: CRAN
+Date/Publication: 2019-04-04 16:30:03 UTC

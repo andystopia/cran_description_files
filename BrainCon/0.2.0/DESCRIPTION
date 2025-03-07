@@ -1,0 +1,27 @@
+Package: BrainCon
+Type: Package
+Title: Inference the Partial Correlations Based on Time Series Data
+Version: 0.2.0
+Author: Yunhaonan Yang [aut, cre],
+  Peng Wu [aut],
+  Xin Gai [aut],
+  Yumou Qiu [aut],
+  Xiaohua Zhou [aut]
+Authors@R: c(
+  person("Yunhaonan", "Yang", email = "haonan_yy@pku.edu.cn", role = c("aut", "cre")),
+  person("Peng", "Wu", email = "wupeng@bicmr.pku.edu.cn", role = "aut"),
+  person("Xin", "Gai", email = "gaitianmu@outlook.com", role = "aut"),
+  person("Yumou", "Qiu", email = "yumouqiu@iastate.edu", role = "aut"),
+  person("Xiaohua", "Zhou", email = "azhou@math.pku.edu.cn", role = "aut"))
+Maintainer: Yunhaonan Yang <haonan_yy@pku.edu.cn>
+Description: A statistical tool to inference the multi-level partial correlations based on multi-subject time series data, especially for brain functional connectivity. It combines both individual and population level inference by using  the methods of Qiu and Zhou. (2021)<DOI: 10.1080/01621459.2021.1917417> and Genovese and Wasserman. (2006)<DOI: 10.1198/016214506000000339>. It realizes two reliable estimation methods of partial correlation coefficients, using scaled lasso and lasso. It can be used to estimate individual- or population-level partial correlations, identify nonzero ones, and find out unequal partial correlation coefficients between two populations.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: glmnet, MASS
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2022-04-21 15:47:57 UTC; Dinic
+Repository: CRAN
+Date/Publication: 2022-04-21 16:00:02 UTC

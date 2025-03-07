@@ -1,0 +1,25 @@
+Package: bdlp
+Version: 0.9-1
+Date: 2017-05-31
+Authors@R: c(person(given="Rainer", family="Dangl",
+        email="rainer.dangl@boku.ac.at", role=c("aut", "cre")))
+Title: Transparent and Reproducible Artificial Data Generation
+Depends: R (>= 3.0.0), graphics
+Imports: GenOrd, MultiOrd, stringdist, rgl, RSQLite, MASS, DBI,
+        methods, grDevices, stats, utils
+Description: The main function generateDataset() processes a user-supplied .R file that 
+  contains metadata parameters in order to generate actual data. The metadata parameters 
+  have to be structured in the form of metadata objects, the format of which is 
+  outlined in the package vignette. This approach allows to generate artificial data 
+  in a transparent and reproducible manner.
+License: GPL-2
+LazyLoad: yes
+Author: Rainer Dangl [aut, cre]
+Maintainer: Rainer Dangl <rainer.dangl@boku.ac.at>
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-06-06 19:15:49 UTC; raine
+Repository: CRAN
+Date/Publication: 2017-06-06 22:30:30 UTC

@@ -1,0 +1,60 @@
+Package: EBASE
+Title: Estuarine Bayesian Single-Station Estimation Method for
+        Ecosystem Metabolism
+Version: 1.0.0
+Date: 2024-03-06
+Authors@R: c(
+    person(given = "Marcus",
+      family = "Beck",
+      role = c("aut", "cre"),
+      email = "mbeck@tbep.org",
+      comment = c(ORCID = "0000-0002-4996-0059")
+    ),
+    person(given = "Maria",
+      family = "Herrmann",
+      role = c("aut"),
+      email = "mxh367@psu.edu"
+    ),
+    person(given = "Jill",
+      family = "Arriola",
+      role = c("aut"),
+      email = "jva5648@psu.edu",
+      comment = c(ORCID = "0000-0003-2173-8349")
+    ),
+    person(given = "Raymond",
+      family = "Najjar",
+      role = c("aut"),
+      email = "rgn1@psu.edu",
+      comment = c(ORCID = "0000-0002-2960-5965")
+    )
+  )
+Description: Estimate ecosystem metabolism in a Bayesian framework for
+  individual water quality monitoring stations with continuous dissolved
+  oxygen time series. A mass balance equation is used that provides
+  estimates of parameters for gross primary production, respiration,
+  and gas exchange. Methods adapted from Grace et al. (2015)
+  <doi:10.1002/lom3.10011> and Wanninkhof (2014) <doi:10.4319/lom.2014.12.351>.
+Depends: R (>= 3.5)
+Imports: dplyr, foreach, ggplot2 (>= 3.4.0), lubridate, R2jags (>=
+        0.6.1), rjags (>= 4.10), tidyr, truncnorm, zoo
+Suggests: testthat (>= 3.0.0), doParallel, knitr, rmarkdown, covr
+License: CC0
+SystemRequirements: JAGS 4.x.y (https://mcmc-jags.sourceforge.net)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://fawda123.github.io/EBASE/,
+        https://github.com/fawda123/EBASE/
+BugReports: https://github.com/fawda123/EBASE/issues
+LazyData: true
+LazyDataCompression: xz
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-03-07 00:31:58 UTC; mbeck
+Author: Marcus Beck [aut, cre] (<https://orcid.org/0000-0002-4996-0059>),
+  Maria Herrmann [aut],
+  Jill Arriola [aut] (<https://orcid.org/0000-0003-2173-8349>),
+  Raymond Najjar [aut] (<https://orcid.org/0000-0002-2960-5965>)
+Maintainer: Marcus Beck <mbeck@tbep.org>
+Repository: CRAN
+Date/Publication: 2024-03-08 20:30:06 UTC

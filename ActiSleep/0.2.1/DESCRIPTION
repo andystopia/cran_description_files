@@ -1,0 +1,40 @@
+Package: ActiSleep
+Type: Package
+Title: Sleep Duration Estimate Algorithm
+Version: 0.2.1
+Date: 2022-11-17
+Authors@R: c(person("Margaret", "Banker", role = c("aut"),
+              email = "mbanker@umich.edu"),
+             person("Nathan", "Szeto", role = c("aut"),
+              email = "nss2@williams.edu"),
+             person("Jonggyu", "Baek", role = c("aut")),
+             person("Alice", "Cleynen", role = c("aut")),
+             person("Guillem", "Rigaill", role = c("aut")),
+             person("Michel", "Koskas", role = c("aut")),
+             person("Michael", "Kleinsasser", role = c("cre"),
+              email = "mkleinsa@umich.edu"))
+Description: Estimate sleep duration using a Pruned Dynamic
+  Programming (PDP) algorithm that quickly and efficiently identifies
+  changepoints. When applied to physical activity data it can identify
+  transitions from wakefulness to sleep and vice versa. Baek, Jonggyu, Banker,
+  Margaret, Jansen, Erica C., She, Xichen, Peterson, Karen E., Pitchford,
+  E. Andrew, Song, Peter X. K. (2021) "An Efficient Segmentation Algorithm to
+  Estimate Sleep Duration from Actigraphy Data" <doi:10.1007/s12561-021-09309-3>.
+License: GPL (>= 2)
+Imports: dplyr, stringr, lubridate, accelerometry, DBI, RSQLite,
+        lazyeval, methods, utils, tibble
+Depends: R (>= 3.5)
+NeedsCompilation: yes
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Packaged: 2022-11-18 17:03:53 UTC; mk
+Author: Margaret Banker [aut],
+  Nathan Szeto [aut],
+  Jonggyu Baek [aut],
+  Alice Cleynen [aut],
+  Guillem Rigaill [aut],
+  Michel Koskas [aut],
+  Michael Kleinsasser [cre]
+Maintainer: Michael Kleinsasser <mkleinsa@umich.edu>
+Repository: CRAN
+Date/Publication: 2022-11-21 10:00:08 UTC

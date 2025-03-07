@@ -1,0 +1,34 @@
+Type: Package
+Package: gcplyr
+Title: Wrangle and Analyze Growth Curve Data
+Version: 1.10.0
+Date: 2024-07-09
+Authors@R: person("Mike", "Blazanin", , "mikeblazanin@gmail.com",
+               role = c("aut", "cre"), 
+               comment = c(ORCID = "0000-0003-4630-6235"))
+Description: Easy wrangling and model-free analysis of
+    microbial growth curve data, as commonly output by plate readers.
+    Tools for reshaping common plate reader outputs into 'tidy' formats and
+    merging them with design information, making data easy to work with using 
+    'gcplyr' and other packages. Also streamlines common growth curve
+    processing steps, like smoothing and calculating derivatives, and
+    facilitates model-free characterization and analysis of growth data.
+    See methods at <https://mikeblazanin.github.io/gcplyr/>.
+License: MIT + file LICENSE
+URL: https://mikeblazanin.github.io/gcplyr/,
+        https://github.com/mikeblazanin/gcplyr/
+Depends: R (>= 2.10)
+Imports: dplyr, rlang, stats, tidyr, tools, utils
+Suggests: caret, cowplot, ggplot2, knitr, lubridate, mgcv, readxl,
+        rmarkdown, sf, testthat (>= 3.0.0), xlsx
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-07-09 19:04:10 UTC; mikeb
+Author: Mike Blazanin [aut, cre] (<https://orcid.org/0000-0003-4630-6235>)
+Maintainer: Mike Blazanin <mikeblazanin@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-09 19:20:02 UTC

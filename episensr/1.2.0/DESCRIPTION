@@ -1,0 +1,33 @@
+Package: episensr
+Type: Package
+Title: Basic Sensitivity Analysis of Epidemiological Results
+Version: 1.2.0
+Imports: triangle, trapezoid, actuar, dagitty, ggdag, boot, magrittr
+Date: 2023-05-15
+Authors@R: 
+    person(given = "Denis",
+           family = "Haine",
+           role = c("aut", "cre"),
+           email = "denis.haine@gmail.com",
+           comment = c(ORCID = "0000-0002-6691-7335"))
+BugReports: https://github.com/dhaine/episensr/issues
+Description: Basic sensitivity analysis of the observed relative risks adjusting
+    for unmeasured confounding and misclassification of the
+    exposure/outcome, or both. It follows the bias analysis methods and
+    examples from the book by Lash T.L, Fox M.P, and Fink A.K.
+    "Applying Quantitative Bias Analysis to Epidemiologic Data",
+    ('Springer', 2021).
+Depends: R (>= 4.0.0), ggplot2 (>= 3.4.0)
+License: GPL-2
+Suggests: testthat, knitr, rmarkdown, aplore3, directlabels, tidyr,
+        lattice, covr
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://github.com/dhaine/episensr
+NeedsCompilation: no
+Packaged: 2023-05-16 17:49:09 UTC; denis
+Author: Denis Haine [aut, cre] (<https://orcid.org/0000-0002-6691-7335>)
+Maintainer: Denis Haine <denis.haine@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-16 23:00:02 UTC

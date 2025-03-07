@@ -1,0 +1,27 @@
+Package: Distance
+Maintainer: Laura Marshall <lhm@st-andrews.ac.uk>
+License: GPL (>= 2)
+Title: Distance Sampling Detection Function and Abundance Estimation
+LazyLoad: yes
+Author: David Lawrence Miller, T.J. Clark-Wolf
+Description: A simple way of fitting detection functions to distance sampling
+    data for both line and point transects. Adjustment term selection, left and
+    right truncation as well as monotonicity constraints and binning are
+    supported. Abundance and density estimates can also be calculated (via a
+    Horvitz-Thompson-like estimator) if survey area information is provided. See
+    Miller et al. (2019) <doi:10.18637/jss.v089.i01> for more information on
+    methods and <https://examples.distancesampling.org/> for example analyses.
+Version: 1.0.7
+URL: https://github.com/DistanceDevelopment/Distance/
+BugReports: https://github.com/DistanceDevelopment/Distance/issues
+Language: en-GB
+Depends: R (>= 3.5.0), mrds (>= 2.2.1)
+Imports: dplyr, methods, rlang
+Suggests: covr, progress, parallel, doParallel, doRNG, foreach,
+        activity, testthat, optimx, readxl
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-11-14 10:57:25 UTC; lhm
+Repository: CRAN
+Date/Publication: 2022-11-15 22:40:18 UTC

@@ -1,0 +1,21 @@
+Package: uni.survival.tree
+Type: Package
+Title: A Survival Tree Based on Stabilized Score Tests
+Version: 1.3
+Author: Takeshi Emura and Wei-Chern Hsu
+Maintainer: Takeshi Emura <takeshiemura@gmail.com>
+Description: A classification (decision) tree is constructed from survival data.
+ The method is a robust version of the logrank tree, where the variance is stabilized.
+ This function returns a classification tree for a given survival dataset. The decision of making inner nodes (splitting criterion) is
+ based on the univariate score tests.
+ The decision of declaring terminal nodes (stopping criterion) is the P-value threshold given by an argument.
+ This tree construction algorithm is proposed by Emura et al. (2021, in review).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: survival,compound.Cox
+NeedsCompilation: no
+Packaged: 2021-02-17 00:39:25 UTC; biouser
+Repository: CRAN
+Date/Publication: 2021-02-17 19:50:05 UTC

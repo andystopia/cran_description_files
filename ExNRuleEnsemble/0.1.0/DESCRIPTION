@@ -1,0 +1,21 @@
+Package: ExNRuleEnsemble
+Type: Package
+Title: A k Nearest Neibour Ensemble Based on Extended Neighbourhood
+        Rule
+Version: 0.1.0
+Authors@R: c(person("Amjad Ali", role = c("aut", "cre","cph"), email = "Amjad.ali@awkum.edu.pk"), person("Muhammad Hamraz", role = "aut"), person("Saeed Aldahmani", role = "aut"), person("Zardad Khan", role = "aut"))
+Description: The extended neighbourhood rule for the k nearest neighbour ensemble where the neighbours are determined in k steps. Starting from the first nearest observation of the test point, the algorithm identifies a single observation that is closest to the observation at the previous step. At each base learner in the ensemble, this search is extended to k steps on a random bootstrap sample with a random subset of features selected from the feature space. The final predicted class of the test point is determined by using a majority vote in the predicted classes given by all base models. Amjad Ali, Muhammad Hamraz, Naz Gul, Dost Muhammad Khan, Saeed Aldahmani, Zardad Khan (2022) <doi:10.48550/arXiv.2205.15111>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: FNN
+LazyData: true
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2022-12-13 15:39:08 UTC; aaliu
+Author: Amjad Ali [aut, cre, cph],
+  Muhammad Hamraz [aut],
+  Saeed Aldahmani [aut],
+  Zardad Khan [aut]
+Maintainer: Amjad Ali <Amjad.ali@awkum.edu.pk>
+Repository: CRAN
+Date/Publication: 2022-12-14 11:50:05 UTC

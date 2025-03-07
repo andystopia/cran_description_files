@@ -1,0 +1,30 @@
+Package: distanceHD
+Type: Package
+Title: Distance Metrics for High-Dimensional Clustering
+Version: 1.0
+Date: 2025-01-25
+Authors@R: c(
+	person( 
+		given = "Jung Ae",
+                family = "Lee",
+                role = c("aut","cre"),
+                email = "jungaeleeb@gmail.com"
+	),
+        person(
+		given  = "Jeonyoun",
+                family = "Ahn",
+                  role = "aut",
+                 email =  "jyahn@kaist.ac.kr"
+	  )
+	)
+Maintainer: Jung Ae Lee <jungaeleeb@gmail.com>
+Description: We provide three distance metrics for measuring the separation between two clusters in high-dimensional spaces. The first metric is the centroid distance, which calculates the Euclidean distance between the centers of the two groups. The second is a ridge Mahalanobis distance, which incorporates a ridge correction constant, alpha, to ensure that the covariance matrix is invertible. The third metric is the maximal data piling distance, which computes the orthogonal distance between the affine spaces spanned by each class. These three distances are asymptotically interconnected and are applicable in tasks such as discrimination, clustering, and outlier detection in high-dimensional settings.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0), MASS
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-01-29 15:40:10 UTC; jungae
+Author: Jung Ae Lee [aut, cre],
+  Jeonyoun Ahn [aut]
+Repository: CRAN
+Date/Publication: 2025-01-30 18:50:02 UTC

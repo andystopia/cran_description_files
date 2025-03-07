@@ -1,0 +1,46 @@
+Package: mlstrOpalr
+Type: Package
+Title: Support Compatibility Between 'Maelstrom' R Packages and 'Opal'
+        Environment
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Guillaume",
+             family = "Fabre",
+             role = c("aut", "cre", "cph"),
+             email = "guijoseph.fabre@gmail.com",
+             comment = c(ORCID = "0000-0002-0124-9970")),
+      person("Maelstrom-research group",
+             role=c("cph", "fnd"),
+             email="info@maelstrom-research.org"),
+      person("OBiBa group",
+             role="ctb",
+             email="info@obiba.org"))
+Description: The goal of this package is to provide functions to support 
+     compatibility between 'Maelstrom' R packages and 'Opal' environment. 
+     'Opal' is the 'OBiBa' core database application for biobanks. It is used 
+     to build data repositories that integrates data collected from multiple 
+     sources. 'Opal Maelstrom' is a specific implementation of this software. 
+     This 'Opal' client is specifically designed to interact with 
+     'Opal Maelstrom' distributions to perform operations on the R server side. 
+     The user must have adequate credentials.
+     Please see <https://opaldoc.obiba.org/en/dev/> for complete documentation.
+License: GPL-3
+LazyData: true
+Depends: R (>= 3.4)
+Imports: dplyr, rlang, tidyr, stringr, tools, opalr, fabR, madshapR
+URL: https://github.com/maelstrom-research/mlstrOpalr/
+BugReports: https://github.com/maelstrom-research/mlstrOpalr/issues
+RoxygenNote: 7.2.3
+Suggests: knitr
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-06-23 14:32:04 UTC; guill
+Author: Guillaume Fabre [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0124-9970>),
+  Maelstrom-research group [cph, fnd],
+  OBiBa group [ctb]
+Maintainer: Guillaume Fabre <guijoseph.fabre@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-23 19:20:02 UTC

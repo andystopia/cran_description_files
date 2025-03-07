@@ -1,0 +1,32 @@
+Package: worldmet
+Type: Package
+Title: Import Surface Meteorological Data from NOAA Integrated Surface
+        Database (ISD)
+Version: 0.9.8
+Date: 2023-06-05
+Authors@R: c(person("David", "Carslaw", role = c("aut", "cre"), email =
+    "david.carslaw@york.ac.uk"))
+ByteCompile: true
+Depends: R (>= 3.2.0)
+Imports: openair, doParallel, parallel, foreach, purrr (>= 1.0.0),
+        dplyr, leaflet, tidyr, readr, magrittr, tibble
+Maintainer: David Carslaw <david.carslaw@york.ac.uk>
+Description: Functions to import data from more than 30,000 surface
+    meteorological sites around the world managed by the National Oceanic and Atmospheric Administration (NOAA) Integrated Surface
+    Database (ISD).
+License: GPL (>= 2)
+URL: https://davidcarslaw.github.io/worldmet/index.html,
+        http://davidcarslaw.github.io/worldmet/
+BugReports: https://github.com/davidcarslaw/worldmet/issues
+Suggests: knitr, rmarkdown
+Language: en-GB
+LazyLoad: true
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-06-05 14:45:54 UTC; davidcarslaw
+Author: David Carslaw [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-06-05 18:20:02 UTC

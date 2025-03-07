@@ -1,0 +1,24 @@
+Package: GABB
+Title: Facilitation of Data Preparation and Plotting Procedures for RDA
+        and PCA Analyses
+Version: 0.3.2
+Authors@R: 
+    person("Gregoire", "Bianchetti", , "auguste.blam@gmail.com", role = c("aut", "cre"))
+Description: Help to the occasional R user for synthesis and enhanced graphical visualization of redundancy analysis (RDA) and principal component analysis (PCA) methods and objects.
+  Inputs are : data frame, RDA (package 'vegan') and PCA (package 'FactoMineR') objects.
+  Outputs are : synthesized results of RDA, displayed in console and saved in tables ; displayed and saved objects of PCA graphic visualization of individuals and variables projections with multiple graphic parameters.
+  Method note : for the RDA output synthesis, several functions of the package 'RVAideMemoire', developed by Maxime Hervé, are exploited.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Language: en
+Suggests: FactoMineR, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: dplyr, egg (>= 0.4.5), ggforce, ggplot2, ggrepel, ggplotify,
+        ggpubr, tidyr, Hotelling, pheatmap, RVAideMemoire, stats, vegan
+NeedsCompilation: no
+Packaged: 2023-06-12 10:07:32 UTC; Gregoire-Bianchetti
+Author: Gregoire Bianchetti [aut, cre]
+Maintainer: Gregoire Bianchetti <auguste.blam@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-12 10:20:03 UTC

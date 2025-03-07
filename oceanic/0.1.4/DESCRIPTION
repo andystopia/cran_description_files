@@ -1,0 +1,26 @@
+Package: oceanic
+Type: Package
+Title: Location Identify Tool
+Version: 0.1.4
+Authors@R: c(person("shiao chih hao", role = c("aut", "cre", "ctb"), email = "chihhao@ofdc.org.tw"), 
+             person("chang shu ting", role = c("aut", "ctb"), email = "lisa@ofdc.org.tw"))
+Date: 2022-7-21
+Author: shiao chih hao [aut, cre, ctb],
+  chang shu ting [aut, ctb]
+Maintainer: shiao chih hao <chihhao@ofdc.org.tw>
+Description: Determine the sea area where the fishing boat operates. 
+             The latitude and longitude of geographic coordinates are used to match oceanic areas and economic sea areas. 
+	    	     You can plot the distribution map with dotplot() function.
+		         Please refer to Flanders Marine Institute (2020) <doi:10.14284/403>.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: sf, sp, rgdal, broom, rgeos, ggplot2, maps, spData
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+LazyData: true
+Collate: 'idfocean.R' 'idfeez.R' 'data.R' 'dotplot.R' 'idfland.R'
+        'idfcode.R' 'idfport.R' 'sixtytoten.R'
+NeedsCompilation: no
+Packaged: 2022-07-21 03:26:38 UTC; chihhao
+Repository: CRAN
+Date/Publication: 2022-07-22 06:10:08 UTC

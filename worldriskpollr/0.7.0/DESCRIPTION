@@ -1,0 +1,32 @@
+Package: worldriskpollr
+Type: Package
+Title: Aggregated Survey Data from the World Risk Poll
+Version: 0.7.0
+Date: 2023-02-22
+Authors@R: person("David", "Hammond", email = "dhammond@economicsandpeace.org", role = c("aut", "cre"))
+Author: David Hammond [aut, cre]
+Maintainer: David Hammond <dhammond@economicsandpeace.org>
+Description: Provides users with programmatic access to aggregated survey 
+  data from the World Risk Poll, conveniently packaged for consumption by R 
+  users. It first downloads and formats the Lloyd's Register Foundation World 
+  Risk Poll individual survey responses. It then processes this 
+  data and provides weighting functions for users to select questions
+  of interest and aggregate to national levels, by gender, age, income, 
+  education urban/rural and household composition. The method of aggregation 
+  can be found at <https://www.gallup.com/178667/gallup-world-poll-work.aspx/>. 
+  More information about the World Risk Poll Survey can be found here 
+  <https://wrp.lrfoundation.org.uk/>.
+URL: <https://wrp.lrfoundation.org.uk/data-resources/>
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 2.10)
+RoxygenNote: 7.2.3
+Imports: magrittr, dplyr, tidyr, sjlabelled, janitor, rlang, stats,
+        utils, httr, curl, parallel
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-23 03:48:33 UTC; DavidHammond
+Repository: CRAN
+Date/Publication: 2023-02-23 14:00:02 UTC

@@ -1,0 +1,27 @@
+Package: enigma
+Title: Client for the 'Enigma' 'API'
+Description: The company 'Enigma' (<http://enigma.io>) holds many public
+    'datasets' from governments, companies, universities, and organizations.
+    'Enigma' provides an 'API' for data, 'metadata', and statistics on each of
+    the 'datasets'. 'enigma' is a client to interact with the 'Enigma' 'API',
+    including getting the data and 'metadata' for 'datasets' in 'Enigma', as 
+    well as collecting statistics on 'datasets'. In addition, you can download 
+    a 'gzipped' 'csv' file of a 'dataset' if you want the whole 'dataset'. An 
+    'API' key from 'Enigma' is required to use 'enigma'.
+Version: 0.3.0
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"))
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/ropengov/enigma
+BugReports: https://github.com/ropengov/enigma/issues
+VignetteBuilder: knitr
+Imports: utils, crul (>= 0.2.0), jsonlite, plyr, xml2, tibble
+Suggests: roxygen2 (>= 6.0.1), knitr, testthat, covr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-02-17 22:17:33 UTC; sacmac
+Author: Scott Chamberlain [aut, cre]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-02-17 23:36:59

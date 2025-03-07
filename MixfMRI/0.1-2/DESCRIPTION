@@ -1,0 +1,36 @@
+Package: MixfMRI
+Version: 0.1-2
+Date: 2021-11-06
+Title: Mixture fMRI Clustering Analysis
+Authors@R: c(person("Wei-Chen", "Chen", role = c("aut", "cre"), email =
+        "wccsnow@gmail.com"),
+        person("Ranjan", "Maitra", role = "aut", email = "maitra@iastate.edu"),
+        person("Dan", "Nettleton", role = "ctb"))
+Depends: R (>= 4.0.0)
+Imports: MASS, Matrix, RColorBrewer, fftw, MixSim, EMCluster
+Enhances: pbdMPI (>= 0.3-4), AnalyzeFMRI, oro.nifti
+LazyLoad: yes
+LazyData: yes
+Description: Utilizing model-based clustering (unsupervised)
+        for functional magnetic resonance imaging (fMRI) data.
+        The developed methods (Chen and Maitra (2021) <arXiv:2102.03639>)
+        include 2D and 3D clustering analyses
+        (for p-values with voxel locations) and
+        segmentation analyses (for p-values alone) for fMRI data where p-values
+        indicate significant level of activation responding to stimulate
+        of interesting. The analyses are mainly identifying active
+        voxel/signal associated with normal brain behaviors.
+        Analysis pipelines (R scripts) utilizing this package
+        (see examples in 'inst/workflow/') is also implemented with high
+        performance techniques.
+License: Mozilla Public License 2.0
+BugReports: https://github.com/snoweye/MixfMRI/issues
+URL: https://github.com/snoweye/MixfMRI
+NeedsCompilation: yes
+Maintainer: Wei-Chen Chen <wccsnow@gmail.com>
+Packaged: 2021-11-07 01:02:51 UTC; snoweye
+Author: Wei-Chen Chen [aut, cre],
+  Ranjan Maitra [aut],
+  Dan Nettleton [ctb]
+Repository: CRAN
+Date/Publication: 2021-11-07 17:20:07 UTC

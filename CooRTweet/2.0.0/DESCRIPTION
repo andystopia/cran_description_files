@@ -1,0 +1,36 @@
+Package: CooRTweet
+Version: 2.0.0
+Date: 2023-12-22
+Type: Package
+Title: Coordinated Networks Detection on Social Media
+Description: Detects a variety of coordinated actions on social media and outputs the network of coordinated users along with related information.
+Authors@R: 
+  c(
+      person("Nicola", "Righetti", 
+              email = "nicola.righetti@univie.ac.at", 
+              role = c("aut", "cre"),
+              comment = c(ORCID="0000-0002-9257-5113")),
+      person("Paul", "Balluff", 
+              email = "paul.balluff@univie.ac.at", 
+              role = c("aut"),
+              comment = c(ORCID="0000-0001-9548-3225"))
+    )
+Author: Nicola Righetti [aut, cre] (<https://orcid.org/0000-0002-9257-5113>),
+  Paul Balluff [aut] (<https://orcid.org/0000-0001-9548-3225>)
+Maintainer: Nicola Righetti <nicola.righetti@univie.ac.at>
+URL: https://github.com/nicolarighetti/CooRTweet
+BugReports: https://github.com/nicolarighetti/CooRTweet/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: data.table, tidytable, RcppSimdJson, lubridate, igraph,
+        stringi
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-01-13 12:45:45 UTC; righetti
+Repository: CRAN
+Date/Publication: 2024-01-15 14:10:02 UTC

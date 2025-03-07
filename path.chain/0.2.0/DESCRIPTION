@@ -1,0 +1,32 @@
+Package: path.chain
+Type: Package
+Title: Concise Structure for Chainable Paths
+Version: 0.2.0
+Authors@R: 
+    person(given   = "Krzysztof",
+           family  = "Joachimiak",
+           role    = c("aut", "cre"),
+           email   = "joachimiak.krzysztof@gmail.com",
+           comment = c(ORCID = "0000-0003-4780-7947"))
+Description: Provides path_chain class and functions, which facilitates loading and saving 
+             directory structure in YAML configuration files via 'config' package. 
+             The file structure you created during exploration can be transformed 
+             into legible section in the config file, and then easily loaded for further usage.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/krzjoa/path.chain/issues
+URL: https://github.com/krzjoa/path.chain,
+        https://krzjoa.github.io/path.chain/
+RoxygenNote: 6.1.1
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, config, yaml, fs,
+        magrittr
+VignetteBuilder: knitr
+Imports: rlang, stringi, logger
+NeedsCompilation: no
+Packaged: 2020-09-16 21:03:38 UTC; krzysztof
+Author: Krzysztof Joachimiak [aut, cre]
+    (<https://orcid.org/0000-0003-4780-7947>)
+Maintainer: Krzysztof Joachimiak <joachimiak.krzysztof@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-09-23 09:20:03 UTC

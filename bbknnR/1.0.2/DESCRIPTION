@@ -1,0 +1,27 @@
+Package: bbknnR
+Title: Perform Batch Balanced KNN in R
+Version: 1.0.2
+Date: 2022-09-22
+Authors@R: person(given = "Yuchen", family = "Li", email = "liyuchen_1995@outlook.com", role = c("aut", "cre"))
+Description: A fast and intuitive batch effect removal tool for single-cell data. BBKNN is originally used in the 'scanpy' python package, and now can be used with 'Seurat' seamlessly.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0), methods, utils
+LinkingTo: Rcpp (>= 1.0.8)
+Imports: dplyr, glmnet, Matrix, Rcpp, RcppAnnoy, reticulate, Rtsne,
+        Seurat, SeuratObject, tidytable, uwot (>= 0.1.14)
+LazyData: true
+RoxygenNote: 7.2.1
+URL: https://github.com/ycli1995/bbknnR,
+        https://github.com/Teichlab/bbknn,
+        https://bbknn.readthedocs.io/en/latest/
+BugReports: https://github.com/ycli1995/bbknnR/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), patchwork
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-09-22 23:41:16 UTC; mydocker
+Author: Yuchen Li [aut, cre]
+Maintainer: Yuchen Li <liyuchen_1995@outlook.com>
+Repository: CRAN
+Date/Publication: 2022-09-23 00:00:02 UTC

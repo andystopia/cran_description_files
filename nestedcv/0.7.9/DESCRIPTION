@@ -1,0 +1,41 @@
+Package: nestedcv
+Title: Nested Cross-Validation with 'glmnet' and 'caret'
+Version: 0.7.9
+Authors@R: 
+    c(person(given = "Myles",family = "Lewis",
+    role = c("aut", "cre"),
+    email = "myles.lewis@qmul.ac.uk",
+    comment = c(ORCID = "0000-0001-9365-5345")),
+    person(given = "Athina",family = "Spiliopoulou",
+    role = c("aut"),
+    comment = c(ORCID = "0000-0002-5929-6585")),
+    person(given = "Cankut",family = "Cubuk",
+    role = c("ctb"),
+    email = "c.cubuk@qmul.ac.uk",
+    comment = c(ORCID = "0000-0003-4646-0849")),
+    person(given = "Katriona",family = "Goldmann",
+    role = c("ctb"),
+    comment = c(ORCID = "0000-0002-9073-6323")))
+Maintainer: Myles Lewis <myles.lewis@qmul.ac.uk>
+BugReports: https://github.com/myles-lewis/nestedcv/issues
+URL: https://github.com/myles-lewis/nestedcv
+Description: Implements nested k*l-fold cross-validation for lasso and elastic-net regularised linear models via the 'glmnet' package and other machine learning models via the 'caret' package. Cross-validation of 'glmnet' alpha mixing parameter and embedded fast filter functions for feature selection are provided. Described as double cross-validation by Stone (1977) <doi:10.1111/j.2517-6161.1977.tb01603.x>. Also implemented is a method using outer CV to measure unbiased model performance metrics when fitting Bayesian linear and logistic regression shrinkage models using the horseshoe prior over parameters to encourage a sparse model as described by Piironen & Vehtari (2017) <doi:10.1214/17-EJS1337SI>.
+Language: en-gb
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: caret, data.table, doParallel, foreach, ggplot2, glmnet,
+        matrixStats, matrixTests, methods, parallel, pROC, Rfast,
+        RhpcBLASctl, rlang, ROCR
+RoxygenNote: 7.3.1
+Suggests: Boruta, CORElearn, fastshap (>= 0.1.0), gbm, ggbeeswarm,
+        ggpubr, hsstan, mda, mlbench, pbapply, pls, randomForest,
+        ranger, RcppEigen, rmarkdown, knitr, SuperLearner
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-07-04 15:20:00 UTC; myles
+Author: Myles Lewis [aut, cre] (<https://orcid.org/0000-0001-9365-5345>),
+  Athina Spiliopoulou [aut] (<https://orcid.org/0000-0002-5929-6585>),
+  Cankut Cubuk [ctb] (<https://orcid.org/0000-0003-4646-0849>),
+  Katriona Goldmann [ctb] (<https://orcid.org/0000-0002-9073-6323>)
+Repository: CRAN
+Date/Publication: 2024-07-04 15:40:02 UTC

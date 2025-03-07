@@ -1,0 +1,45 @@
+Package: epigraphdb
+Title: Interface Package for the 'EpiGraphDB' Platform
+Version: 0.2.1
+Authors@R: c(
+    person("Yi", "Liu", email = "yi6240.liu@bristol.ac.uk",
+      role = c("cre", "aut")
+    ),
+    person("Valeriia", "Haberland", email = "valeriia.haberland@bristol.ac.uk",
+      role = c("aut")
+    ),
+    person("Marina", "Vabistsevits", email = "ny19205@bristol.ac.uk",
+      role = c("aut")
+    ),
+    person("Tom", "Gaunt", email = "Tom.Gaunt@bristol.ac.uk",
+      role = c("aut")
+    ),
+    person(given = "MRC IEU", role = c("cph"))
+    )
+Description: The interface package to access data from the
+    'EpiGraphDB' <https://epigraphdb.org> platform.
+    It provides easy access to the 'EpiGraphDB' platform with functions that
+    query the corresponding REST endpoints on the API <https://api.epigraphdb.org>
+    and return the response data in the 'tibble' data frame format.
+URL: https://mrcieu.github.io/epigraphdb-r/
+BugReports: https://github.com/MRCIEU/epigraphdb-r/issues
+License: GPL-3
+Suggests: testthat, roxygen2, knitr, rmarkdown, spelling, devtools,
+        usethis, pkgdown, styler, lintr, covr, igraph, gtools, stringr,
+        dplyr, ggplot2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: magrittr, tibble, httr, glue, purrr, jsonlite
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2020-08-24 18:39:39 UTC; yiliu
+Author: Yi Liu [cre, aut],
+  Valeriia Haberland [aut],
+  Marina Vabistsevits [aut],
+  Tom Gaunt [aut],
+  MRC IEU [cph]
+Maintainer: Yi Liu <yi6240.liu@bristol.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-08-26 09:20:09 UTC

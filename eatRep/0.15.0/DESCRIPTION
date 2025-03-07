@@ -1,0 +1,39 @@
+Package: eatRep
+Type: Package
+Title: Educational Assessment Tools for Replication Methods
+Version: 0.15.0
+Depends: R (>= 4.1), survey (>= 4.1-1), BIFIEsurvey, progress, lavaan
+        (>= 0.6-7), parallel
+Imports: Hmisc, fmsb, mice (>= 2.46), boot, car, reshape2, plyr,
+        combinat, miceadds, tidyr, EffectLiteR, estimatr, eatTools (>=
+        0.7.8), eatGADS (>= 0.20.0), janitor, msm, lme4, utils,
+        methods, checkmate, lifecycle, dplyr (>= 1.0.0), future
+Authors@R: c(
+    person("Sebastian", "Weirich", email = "sebastian.weirich@iqb.hu-berlin.de", role = c("aut", "cre")),
+    person("Martin", "Hecht", role = c("aut")),
+    person("Karoline", "Sachse", role = c("aut")),
+    person("Benjamin", "Becker", role = c("aut")),
+    person("Edna", "Grewers", role = c("ctb")))
+Description: Replication methods to compute some basic statistic operations (means, standard deviations,
+  frequency tables, percentiles, mean comparisons using weighted effect coding, generalized linear models,
+  and linear multilevel models) in complex survey designs comprising multiple imputed or nested imputed
+  variables and/or a clustered sampling structure which both deserve special procedures at least in
+  estimating standard errors. See the package documentation for a more detailed description along with references.
+License: GPL (>= 2)
+Encoding: UTF-8
+URL: https://github.com/weirichs/eatRep,
+        https://weirichs.github.io/eatRep/
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: no
+Suggests: testthat, knitr, rmarkdown, zoo
+VignetteBuilder: knitr
+Packaged: 2025-01-08 21:56:21 UTC; Sebastian Weirich
+Author: Sebastian Weirich [aut, cre],
+  Martin Hecht [aut],
+  Karoline Sachse [aut],
+  Benjamin Becker [aut],
+  Edna Grewers [ctb]
+Maintainer: Sebastian Weirich <sebastian.weirich@iqb.hu-berlin.de>
+Repository: CRAN
+Date/Publication: 2025-01-08 22:10:07 UTC

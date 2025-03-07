@@ -1,0 +1,45 @@
+Package: INLAspacetime
+Type: Package
+Title: Spatial and Spatio-Temporal Models using 'INLA'
+Version: 0.1.10
+Authors@R: c(
+  person("Elias Teixeira", "Krainski", email = "eliaskrainski@gmail.com",
+         role = c("cre", "aut", "cph"), 
+         comment = c(ORCID = "0000-0002-7063-2615")),
+  person("Finn", "Lindgren", email = "finn.lindgren@gmail.com",
+         role = c("aut"),
+         comment = c(ORCID = "0000-0002-5833-2011")),
+  person("Haavard", "Rue", email = "haavard.rue@kaust.edu.sa",
+         role = c("aut"),
+         comment = c(ORCID = "0000-0002-0222-1881"))
+  )
+Description: Prepare objects to implement models over spatial and 
+  spacetime domains with the 'INLA' package (<https://www.r-inla.org>).
+  These objects contain data to for the 'cgeneric' interface in
+  'INLA', enabling fast parallel computations.
+  We implemented the spatial barrier model, see Bakka et. al. (2019) 
+  <doi:10.1016/j.spasta.2019.01.002>, and some of the spatio-temporal 
+  models proposed in Lindgren et. al. (2023) 
+  <https://www.idescat.cat/sort/sort481/48.1.1.Lindgren-etal.pdf>. 
+  Details are provided in the available vignettes and from the URL bellow.
+URL: https://github.com/eliaskrainski/INLAspacetime
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+BugReports: https://github.com/eliaskrainski/INLAspacetime/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Depends: R (>= 4.3), Matrix, fmesher
+Imports: graphics, grDevices, methods, stats, utils, sp, sf, terra
+Suggests: INLA (>= 24.02.09), inlabru (>= 2.10.1), knitr, ggplot2,
+        rmarkdown, parallel, data.table, rnaturalearth
+VignetteBuilder: knitr
+BuildVignettes: true
+Packaged: 2024-10-06 11:38:07 UTC; eliask
+Author: Elias Teixeira Krainski [cre, aut, cph]
+    (<https://orcid.org/0000-0002-7063-2615>),
+  Finn Lindgren [aut] (<https://orcid.org/0000-0002-5833-2011>),
+  Haavard Rue [aut] (<https://orcid.org/0000-0002-0222-1881>)
+Maintainer: Elias Teixeira Krainski <eliaskrainski@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-16 22:20:10 UTC

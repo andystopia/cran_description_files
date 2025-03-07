@@ -1,0 +1,29 @@
+Package: funest
+Title: Functional Ensemble Survival Tree for Dynamic Prediction
+Version: 0.0.1.3
+Authors@R: c(person("Yijun", "Xie", role = c("aut", "cre"),
+                     email = "yijun.xie@uwaterloo.ca"),
+             person("Shu", "Jiang", role = "aut",
+                     email = "jiang.shu@wustl.edu"),
+             person("Graham A.", "Colditz", role = "aut",
+                     email = "colditzg@wustl.edu"))
+Author: Yijun Xie [aut, cre],
+  Shu Jiang [aut],
+  Graham A. Colditz [aut]
+Maintainer: Yijun Xie <yijun.xie@uwaterloo.ca>
+Description: 
+  A fast implementation of functional ensemble survival tree is provided to facilitate dynamic prediction with right-censored data. Multiple time-varying covariates can be accommodated via multivariate principal component analysis. These extracted features along with baseline covariates are nested within the ensemble survival tree where dynamic prediction can be done under user-specified sliding windows. Prediction accuracy measures, Area under the receiver operating characteristic (ROC) curve and Brier score, are provided in this package. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+KeepSource: TRUE
+RoxygenNote: 7.0.2
+Depends: R (>= 3.5.0)
+Imports: MFPCA, funData, ranger, survival, pec, tdROC, prodlim, Rdpack,
+        purrr
+RdMacros: Rdpack
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2020-03-02 13:50:23 UTC; xyj
+Repository: CRAN
+Date/Publication: 2020-03-09 10:00:09 UTC

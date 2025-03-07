@@ -1,0 +1,28 @@
+Package: nfer
+Title: Event Stream Abstraction using Interval Logic
+Version: 1.0.0
+Authors@R: 
+    person("Sean", "Kauffman", , "seank@cs.aau.dk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6341-3898"))
+Description: This is the R API for the 'nfer' formalism (<http://nfer.io/>).
+    'nfer' was developed to specify event stream abstractions for spacecraft 
+    telemetry such as the Mars Science Laboratory.  Users write rules using 
+    a syntax that borrows heavily from Allen's Temporal Logic that, when 
+    applied to an event stream, construct a hierarchy of temporal intervals 
+    with data.  The R API supports loading rules from a file or mining them 
+    from historical data.  Traces of events or pools of intervals are 
+    provided as data frames.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: http://nfer.io/
+BugReports: https://bitbucket.org/seanmk/nfer/issues
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-11-23 10:42:49 UTC; sb37fk
+Author: Sean Kauffman [aut, cre] (<https://orcid.org/0000-0001-6341-3898>)
+Maintainer: Sean Kauffman <seank@cs.aau.dk>
+Repository: CRAN
+Date/Publication: 2021-11-23 19:20:02 UTC

@@ -1,0 +1,38 @@
+Package: spant
+Type: Package
+Title: MR Spectroscopy Analysis Tools
+Version: 1.11.0
+Date: 2021-03-26
+Authors@R: c(
+    person("Martin", "Wilson", email = "martin@pipegrep.co.uk",
+           role = c("cre", "aut"), comment = c(ORCID = "0000-0002-2089-3956")),
+    person("Yong", "Wang", role = "ctb"),
+    person("John", "Muschelli", role = "ctb"))
+Description: Tools for reading, visualising and processing Magnetic Resonance
+    Spectroscopy data. The package includes methods for spectral fitting: Wilson
+    (2021) <DOI:10.1002/mrm.28385> and spectral alignment: Wilson (2018)
+    <DOI:10.1002/mrm.27605>. 
+BugReports: https://github.com/martin3141/spant/issues/
+License: GPL-3
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+LazyData: yes
+Depends: R (>= 2.10)
+Imports: abind, plyr, foreach, pracma, stringr, complexplus, signal,
+        matrixcalc, minpack.lm, nnls, utils, graphics, grDevices,
+        smoother, readr, magrittr, ptw, mmand, RNifti, RNiftyReg,
+        fields, MASS, numDeriv, nloptr, irlba, tibble, jsonlite
+Suggests: viridisLite, shiny, miniUI, knitr, rmarkdown, testthat,
+        doParallel
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-GB
+URL: https://martin3141.github.io/spant/,
+        https://github.com/martin3141/spant/
+Packaged: 2021-03-26 08:54:01 UTC; marti
+Author: Martin Wilson [cre, aut] (<https://orcid.org/0000-0002-2089-3956>),
+  Yong Wang [ctb],
+  John Muschelli [ctb]
+Maintainer: Martin Wilson <martin@pipegrep.co.uk>
+Repository: CRAN
+Date/Publication: 2021-03-28 02:20:03 UTC

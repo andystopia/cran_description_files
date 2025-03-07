@@ -1,0 +1,33 @@
+Package: avotrex
+Version: 1.2.0
+Type: Package
+Title: A Global Dataset of Anthropogenic Extinct Birds and their
+        Traits: Phylogeny Builder
+Description: Grafts the extinct bird species from the 'Avotrex' database (Sayol et al., in review) on to the 'BirdTree' phylogenies <https://birdtree.org>, using a set of different commands.
+Authors@R: c(person("Joseph", "Wayman", email = "j.wayman@bham.ac.uk",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3122-8070")),
+                  person("Thomas J.", "Matthews", email = "txm676@gmail.com",
+                  role = c("aut"), comment = c(ORCID = "0000-0002-7624-244X")),
+                  person("Paul", "Dufour", role = c("ctb")),
+                  person("Ferran", "Sayol", role = c("ctb")),
+                  person("Pedro", "Cardoso", role = c("ctb")))
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 4.0.0)
+biocViews:
+LazyData: true
+Imports: ape, doParallel, doSNOW, dplyr, foreach, parallel, phytools,
+        snow, stringr, tidytree (>= 0.4.6), TreeTools, utils
+License: GPL-3
+Suggests: testthat, markdown, knitr, rmarkdown, covr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-07 20:05:49 UTC; Joe
+Author: Joseph Wayman [aut, cre] (<https://orcid.org/0000-0002-3122-8070>),
+  Thomas J. Matthews [aut] (<https://orcid.org/0000-0002-7624-244X>),
+  Paul Dufour [ctb],
+  Ferran Sayol [ctb],
+  Pedro Cardoso [ctb]
+Maintainer: Joseph Wayman <j.wayman@bham.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-06-08 21:50:17 UTC

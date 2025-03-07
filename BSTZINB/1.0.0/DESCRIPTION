@@ -1,0 +1,28 @@
+Package: BSTZINB
+Type: Package
+Title: Association Among Disease Counts and Socio-Environmental Factors
+Version: 1.0.0
+Authors@R: c(
+    person("Suman","Majumder",email="smajumd2@gmail.com",role=c("cre","aut","cph")),
+    person("Yoon-Bae","Jun",role=c("aut","cph"))
+    )
+Description: Estimation of association between disease or death counts (e.g. COVID-19) and socio-environmental risk factors using a zero-inflated Bayesian spatiotemporal model. Non-spatiotemporal models and/or models without zero-inflation are also included for comparison. Functions to produce corresponding maps are also included. See Chakraborty et al. (2022) <doi:10.1007/s13253-022-00487-1> for more details on the method.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+RoxygenNote: 7.3.2
+Imports: BayesLogit, boot, coda, dplyr, ggplot2, gt, gtsummary, maps,
+        matrixcalc, MCMCpack, msm, reshape, spam, viridis
+Suggests: knitr, rmarkdown, CorrMixed, ape, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/SumanM47/BSTZINB
+BugReports: https://github.com/SumanM47/BSTZINB/issues
+NeedsCompilation: no
+Packaged: 2024-10-28 18:28:25 UTC; sm8qr
+Author: Suman Majumder [cre, aut, cph],
+  Yoon-Bae Jun [aut, cph]
+Maintainer: Suman Majumder <smajumd2@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-31 14:00:05 UTC

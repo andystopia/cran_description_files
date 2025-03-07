@@ -1,0 +1,37 @@
+Package: MLVSBM
+Type: Package
+Title: A Stochastic Block Model for Multilevel Networks
+Version: 0.2.1
+Authors@R: 
+    person(given = "Saint-Clair",
+           family = "Chabert-Liddell",
+           role = c("aut", "cre"),
+           email = "saint-clair.chabert-liddell@agroparistech.fr",
+           comment = c(ORCID = "0000-0001-5604-7308"))
+Description: Simulation, inference and clustering of multilevel networks using a
+    Stochastic Block Model framework as described in Chabert-Liddell, Barbillon,
+    Donnet and Lazega (2021) <doi:10.1016/j.csda.2021.107179>. 
+    A multilevel network is defined as the junction of two interaction networks, 
+    the upper level or inter-organizational level and the lower level or 
+    inter-individual level. The inter-level represents an affiliation 
+    relationship.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/Chabert-Liddell/MLVSBM
+BugReports: https://github.com/Chabert-Liddell/MLVSBM/issues
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Imports: R6, blockmodels, ape, magrittr
+Suggests: testthat (>= 2.1.0), covr, knitr, rmarkdown, ggplot2 (>=
+        3.3.2), tidygraph (>= 1.2.0), ggraph (>= 2.0.3), ggforce,
+        spelling
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-02-05 17:07:57 UTC; chabertliddell
+Author: Saint-Clair Chabert-Liddell [aut, cre]
+    (<https://orcid.org/0000-0001-5604-7308>)
+Maintainer: Saint-Clair Chabert-Liddell <saint-clair.chabert-liddell@agroparistech.fr>
+Repository: CRAN
+Date/Publication: 2021-02-10 11:00:16 UTC

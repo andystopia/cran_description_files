@@ -1,0 +1,45 @@
+Package: TrialEmulation
+Title: Causal Analysis of Observational Time-to-Event Data
+Version: 0.0.3.8
+Authors@R: c(
+    person("Roonak", "Rezvani", , "roonak.r74@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-5580-5058", "Original package author")),
+    person("Isaac", "Gravestock", , "isaac.gravestock@roche.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0283-2065")),
+    person("Li", "Su", , "li.su@mrc-bsu.cam.ac.uk", role = "aut"),
+    person("Medical Research Council (MRC)", role = "fnd"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Implements target trial emulation methods to apply randomized
+    clinical trial design and analysis in an observational setting. Using
+    marginal structural models, it can estimate intention-to-treat and
+    per-protocol effects in emulated trials using electronic health
+    records. A description and application of the method can be found in
+    Danaei et al (2013) <doi:10.1177/0962280211403603>.
+License: Apache License (>= 2)
+URL: https://causal-lda.github.io/TrialEmulation/,
+        https://github.com/Causal-LDA/TrialEmulation
+BugReports: https://github.com/Causal-LDA/TrialEmulation/issues
+Depends: R (>= 3.5.0)
+Imports: broom (>= 0.7.10), checkmate, data.table (>= 1.9.8),
+        formula.tools, mvtnorm, parglm, Rcpp, sandwich
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.0
+NeedsCompilation: yes
+Packaged: 2024-01-24 11:47:27 UTC; gravesti
+Author: Roonak Rezvani [aut] (<https://orcid.org/0000-0001-5580-5058>, Original
+    package author),
+  Isaac Gravestock [aut, cre] (<https://orcid.org/0000-0003-0283-2065>),
+  Li Su [aut],
+  Medical Research Council (MRC) [fnd],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Isaac Gravestock <isaac.gravestock@roche.com>
+Repository: CRAN
+Date/Publication: 2024-01-24 13:53:00 UTC

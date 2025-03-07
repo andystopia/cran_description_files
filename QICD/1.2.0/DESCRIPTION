@@ -1,0 +1,35 @@
+Package: QICD
+Type: Package
+Title: Estimate the Coefficients for Non-Convex Penalized Quantile
+        Regression Model by using QICD Algorithm
+Version: 1.2.0
+Date: 2017-04-16
+Authors@R: c(person("Bo", "Peng", role = c("aut", "cre"),
+		     email = "peng0199@umn.edu"),
+	      person("Rondall", "E. Jones", role = "ctb"),
+	      person("John","A. Wisniewski", role = "ctb"))
+Author: Bo Peng [aut, cre],
+  Rondall E. Jones [ctb],
+  John A. Wisniewski [ctb]
+Maintainer: Bo Peng <peng0199@umn.edu>
+Imports: stats, parallel
+Depends: R (>= 3.0.0)
+Suggests: mvtnorm, knitr
+Description: Extremely fast algorithm "QICD", Iterative Coordinate 
+              Descent Algorithm for High-dimensional Nonconvex Penalized Quantile 
+              Regression. This algorithm combines the coordinate descent algorithm 
+              in the inner iteration with the majorization minimization step 
+              in the outside step. For each inner univariate minimization problem, 
+              we only need to compute a one-dimensional weighted median, 
+              which ensures fast computation. Tuning parameter selection is based 
+              on two different method: the cross validation and BIC for 
+              quantile regression model. Details are described in Peng,B and Wang,L. (2015) 
+              <DOI:10.1080/10618600.2014.913516>.
+License: GPL-2
+URL:
+        http://www.tandfonline.com/doi/abs/10.1080/10618600.2014.913516#.VsoK-JMrJp8
+Packaged: 2017-04-18 06:16:24 UTC; geogr
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2017-04-18 07:48:02 UTC
+RoxygenNote: 6.0.1

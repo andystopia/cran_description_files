@@ -1,0 +1,46 @@
+Package: r2dii.data
+Title: Datasets to Measure the Alignment of Corporate Loan Books with
+        Climate Goals
+Version: 0.5.0
+Authors@R: c(
+    person("Alex", "Axthelm", , "aaxthelm@rmi.org", role = c("aut", "cre", "dtc"),
+            comment = c(ORCID = "0000-0001-8579-8565")),
+    person("Jackson", "Hoffart", , "jackson.hoffart@gmail.com", role = c("aut", "ctr", "dtc"),
+           comment = c(ORCID = "0000-0002-8600-5042")),
+    person("Mauro", "Lepore", , "maurolepore@gmail.com", role = c("aut", "ctr"),
+           comment = c(ORCID = "0000-0002-1986-7988")),
+    person("Rocky Mountain Institute", , , "PACTA4banks@rmi.org", role = c("cph", "fnd"))
+  )
+Description: These datasets support the implementation in R of the
+    software 'PACTA' (Paris Agreement Capital Transition Assessment),
+    which is a free tool that calculates the alignment between corporate
+    lending portfolios and climate scenarios
+    (<https://www.transitionmonitor.com/>). Financial institutions use
+    'PACTA' to study how their capital allocation decisions align with
+    climate change mitigation goals. Because both financial institutions
+    and market data providers keep their data private, this package
+    provides fake, public data to enable the development and use of
+    'PACTA' in R.
+License: CC0
+URL: https://rmi-pacta.github.io/r2dii.data/,
+        https://github.com/RMI-PACTA/r2dii.data
+BugReports: https://github.com/RMI-PACTA/r2dii.data/issues
+Depends: R (>= 3.4)
+Imports: lifecycle, stats, utils
+Suggests: charlatan, covr, readr, rlang, rmarkdown, stringi, testthat
+        (>= 2.1.0)
+Config/testthat/edition: 3
+Config/Needs/website: rmi-pacta/pacta.pkgdown.rmitemplate
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-03-25 15:00:48 UTC; jdhoffa
+Author: Alex Axthelm [aut, cre, dtc] (<https://orcid.org/0000-0001-8579-8565>),
+  Jackson Hoffart [aut, ctr, dtc]
+    (<https://orcid.org/0000-0002-8600-5042>),
+  Mauro Lepore [aut, ctr] (<https://orcid.org/0000-0002-1986-7988>),
+  Rocky Mountain Institute [cph, fnd]
+Maintainer: Alex Axthelm <aaxthelm@rmi.org>
+Repository: CRAN
+Date/Publication: 2024-03-25 21:40:15 UTC

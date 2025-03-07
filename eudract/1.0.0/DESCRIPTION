@@ -1,0 +1,29 @@
+Package: eudract
+Type: Package
+Title: Creates Safety Results Summary in XML to Upload to EudraCT, or
+        ClinicalTrials.gov
+Date: 2024-03-14
+Version: 1.0.0
+Authors@R: c(
+    person("Simon", "Bond", email="simon.bond7@nhs.net", role="cre"),
+    person("Beatrice","Pantaleo", email="bp403@medschl.cam.ac.uk", role="aut"))
+URL: https://eudract-tool.medschl.cam.ac.uk/
+BugReports: https://github.com/shug0131/eudraCT/issues
+Description: The remit of the European Clinical Trials Data Base (EudraCT <https://eudract.ema.europa.eu/> ), or ClinicalTrials.gov <https://clinicaltrials.gov/>, is to provide open access to summaries of all registered clinical trial results; thus aiming to prevent non-reporting of negative results and provide open-access to results to inform future research. The amount of information required and the format of the results, however, imposes a large extra workload at the end of studies on clinical trial units. In particular, the adverse-event-reporting component requires entering: each unique combination of treatment group and safety event; for every such event above, a further 4 pieces of information (body system, number of occurrences, number of subjects, number exposed) for non-serious events, plus an extra three pieces of data for serious adverse events (numbers of causally related events, deaths, causally related deaths). This package prepares the required statistics needed by EudraCT and formats them into the precise requirements to directly upload an XML file into the web portal, with no further data entry by hand.
+License: GPL-2
+Language: en-GB
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, ggplot2, httr, magrittr, patchwork, scales, tidyr,
+        utils, xml2, xslt
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.1
+Suggests: covr, knitr, rmarkdown, stringr, testthat, tools, vdiffr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-03-14 14:27:44 UTC; rstudio
+Author: Simon Bond [cre],
+  Beatrice Pantaleo [aut]
+Maintainer: Simon Bond <simon.bond7@nhs.net>
+Repository: CRAN
+Date/Publication: 2024-03-18 08:20:02 UTC

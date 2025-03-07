@@ -1,0 +1,21 @@
+Package: pssmooth
+Type: Package
+Title: Flexible and Efficient Evaluation of Principal
+        Surrogates/Treatment Effect Modifiers
+Version: 1.0.1
+Authors@R: person("Michal", "Juraska", email = "mjuraska@fredhutch.org", role = c("aut", "cre"))
+BugReports: https://github.com/mjuraska/pssmooth/issues
+Description: Implements estimation and testing procedures for evaluating an intermediate biomarker response as a principal surrogate of a clinical response to treatment (i.e., principal stratification effect modification analysis), as described in Juraska M, Huang Y, and Gilbert PB, Inference on treatment effect modification by biomarker response in a three-phase sampling design (under review). The methods avoid the restrictive 'placebo structural risk' modeling assumption common to past methods and further improve robustness by the use of nonparametric kernel smoothing for biomarker density estimation. A randomized controlled two-group clinical efficacy trial is assumed with an ordered categorical or continuous univariate biomarker response measured at a fixed timepoint post-randomization and with a univariate baseline surrogate measure allowed to be observed in only a subset of trial participants with an observed biomarker response (see the flexible three-phase sampling design in the paper for details). Bootstrap-based procedures are available for pointwise and simultaneous confidence intervals and testing of four relevant hypotheses. Summary and plotting functions are provided for estimation results.
+License: GPL-2
+URL: https://github.com/mjuraska/pssmooth
+Encoding: UTF-8
+LazyData: true
+Imports: graphics, stats, osDesign, np, chngpt, MASS
+Suggests: knitr, rmarkdown
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-09-19 18:59:57 UTC; mjuraska
+Author: Michal Juraska [aut, cre]
+Maintainer: Michal Juraska <mjuraska@fredhutch.org>
+Repository: CRAN
+Date/Publication: 2018-09-19 20:10:03 UTC

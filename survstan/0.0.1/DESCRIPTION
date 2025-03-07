@@ -1,0 +1,36 @@
+Package: survstan
+Title: Fitting Survival Regression Models via 'Stan'
+Version: 0.0.1
+Authors@R: 
+    person(given = "Fabio",
+           family = "Demarqui",
+           role = c("aut", "cre", "cph"),
+           email = "fndemarqui@est.ufmg.br",
+           comment = c(ORCID = "0000-0001-9236-1986"))
+Description: Parametric survival regression models under the maximum likelihood approach via 'Stan'. Implemented regression models include accelerated failure time models, proportional hazards models, proportional odds models, and accelerated hazard models. Available baseline survival distributions include exponential, Weibull, log-normal, and log-logistic distributions. References: Lawless (2002) <ISBN:9780471372158>; Bennett (1982) <doi:10.1002/sim.4780020223>; Chen and Wang(2000) <doi:10.1080/01621459.2000.10474236>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Biarch: true
+Depends: R (>= 3.4.0), survival
+Imports: actuar (>= 3.0.0), dplyr, ggplot2, gridExtra, methods, Rcpp
+        (>= 0.12.0), RcppParallel (>= 5.0.1), Rdpack, rlang, rstan (>=
+        2.18.1), rstantools (>= 2.3.1), tibble
+RdMacros: Rdpack
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+URL: https://github.com/fndemarqui/survstan,
+        https://fndemarqui.github.io/survstan/
+BugReports: https://github.com/fndemarqui/survstan/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-05-03 22:17:52 UTC; fndemarqui
+Author: Fabio Demarqui [aut, cre, cph]
+    (<https://orcid.org/0000-0001-9236-1986>)
+Maintainer: Fabio Demarqui <fndemarqui@est.ufmg.br>
+Repository: CRAN
+Date/Publication: 2023-05-04 19:10:02 UTC

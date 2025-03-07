@@ -1,0 +1,55 @@
+Package: PLNmodels
+Title: Poisson Lognormal Models
+Version: 0.11.6
+Authors@R: c(
+  person("Julien", "Chiquet", role = c("aut", "cre"), email = "julien.chiquet@inrae.fr",
+      comment = c(ORCID = "0000-0002-3629-3429")),
+  person("Mahendra", "Mariadassou", role = "aut", email = "mahendra.mariadassou@inrae.fr", 
+      comment = c(ORCID = "0000-0003-2986-354X")),
+  person("Stéphane", "Robin", role ="ctb", email = "stephane.robin@inrae.fr"),
+  person("François", "Gindraud", role = "aut", email = "francois.gindraud@gmail.com")
+  )
+Description: The Poisson-lognormal model and variants (Chiquet, Mariadassou and Robin, 
+    2020 <doi:10.1101/2020.10.07.329383>) can be used for 
+    a variety of multivariate problems when count data are at play, including 
+    principal component analysis for count data, discriminant analysis, model-based clustering and 
+    network inference. Implements variational algorithms to fit such models accompanied with a set of 
+    functions for visualization and diagnostic. 
+URL: https://pln-team.github.io/PLNmodels/
+BugReports: https://github.com/pln-team/PLNmodels/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Depends: R (>= 3.4)
+LazyData: true
+biocViews:
+Imports: methods, stats, MASS, future, future.apply, R6, glassoFast,
+        Matrix, Rcpp, nloptr, igraph, grid, gridExtra, dplyr, tidyr,
+        purrr, ggplot2, corrplot, magrittr, rlang
+Suggests: knitr, rmarkdown, testthat, covr, pkgdown, biomformat,
+        phyloseq, spelling, factoextra, Wrench
+LinkingTo: Rcpp, RcppArmadillo, nloptr
+VignetteBuilder: knitr
+Collate: 'PLNfit-class.R' 'PLN.R' 'PLNLDA.R' 'PLNLDAfit-S3methods.R'
+        'PLNLDAfit-class.R' 'PLNPCA.R' 'PLNPCAfamily-S3methods.R'
+        'PLNfamily-class.R' 'PLNPCAfamily-class.R'
+        'PLNPCAfit-S3methods.R' 'PLNPCAfit-class.R'
+        'PLNfamily-S3methods.R' 'PLNfit-S3methods.R' 'PLNmixture.R'
+        'PLNmixturefamily-S3methods.R' 'PLNmixturefamily-class.R'
+        'PLNmixturefit-S3methods.R' 'PLNmixturefit-class.R'
+        'PLNmodels-package.R' 'PLNnetwork.R'
+        'PLNnetworkfamily-S3methods.R' 'PLNnetworkfamily-class.R'
+        'PLNnetworkfit-S3methods.R' 'PLNnetworkfit-class.R'
+        'RcppExports.R' 'deprecated.R' 'import_utils.R' 'mollusk.R'
+        'oaks.R' 'plot_utils.R' 'trichoptera.R' 'utils-pipe.R'
+        'utils.R' 'zzz.R'
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2022-01-31 16:22:39 UTC; jchiquet
+Author: Julien Chiquet [aut, cre] (<https://orcid.org/0000-0002-3629-3429>),
+  Mahendra Mariadassou [aut] (<https://orcid.org/0000-0003-2986-354X>),
+  Stéphane Robin [ctb],
+  François Gindraud [aut]
+Maintainer: Julien Chiquet <julien.chiquet@inrae.fr>
+Repository: CRAN
+Date/Publication: 2022-02-01 16:00:24 UTC

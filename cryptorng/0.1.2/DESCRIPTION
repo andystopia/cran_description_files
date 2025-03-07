@@ -1,0 +1,27 @@
+Package: cryptorng
+Type: Package
+Title: Access System Cryptographic Pseudorandom Number Generators
+Version: 0.1.2
+Authors@R: c(
+    person("Mike", "Cheng", role = c("aut", "cre", 'cph'), email = "mikefc@coolbutuseless.com")
+    )
+Maintainer: Mike Cheng <mikefc@coolbutuseless.com>
+Description: Generate random bytes from the Cryptographically Secure Pseudorandom 
+    Number Generator (CSPRNG) provided by the underlying operating system.  
+    These system CSPRNGs are seeded internally by the OS with entropy it gathers
+    and use random number generation algorithms which are considered 
+    cryptographically secure.  The following system functions are used:
+    arc4random_buf() on macOS and BSD; BCryptgenRandom() on Windows; 
+    Sys_getrandom() on Linux.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/coolbutuseless/cryptorng
+BugReports: https://github.com/coolbutuseless/cryptorng/issues
+NeedsCompilation: yes
+Packaged: 2024-04-27 20:58:24 UTC; mike
+Author: Mike Cheng [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2024-04-28 10:50:03 UTC

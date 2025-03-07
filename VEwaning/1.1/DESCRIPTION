@@ -1,0 +1,35 @@
+Package: VEwaning
+Type: Package
+Title: Vaccine Efficacy Over Time
+Version: 1.1
+Date: 2021-04-06
+Authors@R: c(person("Marie", "Davidian", role = "aut"),
+             person("A.A.", "Tsiatis", role = "aut"),
+             person("Shannon", "Holloway", role = c("aut", "cre"),
+                     email = "sthollow@ncsu.edu"))
+Description: Implements methods for inference on potential waning of vaccine
+    efficacy and for estimation of vaccine efficacy at a user-specified time
+    after vaccination based on data from a randomized, double-blind,
+    placebo-controlled vaccine trial in which participants may be unblinded
+    and placebo subjects may be crossed over to the study vaccine.  The
+    methods also allow adjustment for possible confounding via inverse
+    probability weighting through specification of models for the trial
+    entry process, unblinding mechanisms, and the probability an unblinded
+    placebo participant accepts study vaccine:  Tsiatis, A. A. and Davidian,
+    M. (2021) <arXiv:2102.13103> .
+License: GPL-2
+Depends: R (>= 2.10), survival, stats, graphics, ggplot2
+NeedsCompilation: no
+Repository: CRAN
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Collate: 'entryFit.R' 'gFunctions.R' 'estimateb.R' 'estimateu.R'
+        'ulbound.R' 'pre_dNYu.R' 'pre_dNYb.R' 'esttheta.R'
+        'plot.VEwaning.R' 'print.VEwaning.R' 'psiFit.R' 'unblindFit.R'
+        've.R' 'veWaning.R' 'veWaningData.R'
+Packaged: 2021-04-06 19:48:27 UTC; sthollow
+Author: Marie Davidian [aut],
+  A.A. Tsiatis [aut],
+  Shannon Holloway [aut, cre]
+Maintainer: Shannon Holloway <sthollow@ncsu.edu>
+Date/Publication: 2021-04-08 08:20:02 UTC

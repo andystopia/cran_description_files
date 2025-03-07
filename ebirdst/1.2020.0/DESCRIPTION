@@ -1,0 +1,45 @@
+Type: Package
+Package: ebirdst
+Title: Access and Analyze eBird Status and Trends Data
+Version: 1.2020.0
+Authors@R: c(
+    person("Matthew", "Strimas-Mackey", , "mes335@cornell.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8929-7776")),
+    person("Shawn", "Ligocki", , "sligocki@cornell.edu", role = "aut"),
+    person("Tom", "Auer", , "mta45@cornell.edu", role = "aut",
+           comment = c(ORCID = "0000-0001-8619-7147")),
+    person("Daniel", "Fink", , "df36@cornell.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-8368-1248")),
+    person("Cornell Lab of Ornithology", role = "cph")
+  )
+Description: Tools to download, load, plot, and analyze eBird Status and
+    Trends Data Products (<https://science.ebird.org/en/status-and-trends>). eBird
+    (<https://ebird.org/home>) is a global database of bird observations
+    collected by member of the public. eBird Status and Trends uses these
+    data to model global bird abundances, range boundaries, and habitat
+    associations at a high spatial and temporal resolution.
+License: GPL-3
+URL: https://github.com/CornellLabofOrnithology/ebirdst
+BugReports: https://github.com/CornellLabofOrnithology/ebirdst/issues
+Depends: R (>= 4.0.0)
+Imports: DBI, dplyr (>= 1.0.0), gbm, ggplot2, grDevices, gridExtra,
+        jsonlite, magrittr, mgcv, precrec, PresenceAbsence, raster (>=
+        3.1-5), rgdal, rlang, RSQLite, sf (>= 1.0-0), stats, stringr,
+        tidyr (>= 1.0.0), tools, utils, viridisLite
+Suggests: exactextractr, fields, knitr, rmarkdown, rnaturalearth,
+        testthat, withr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-07-07 17:27:29 UTC; mes335
+Author: Matthew Strimas-Mackey [aut, cre]
+    (<https://orcid.org/0000-0001-8929-7776>),
+  Shawn Ligocki [aut],
+  Tom Auer [aut] (<https://orcid.org/0000-0001-8619-7147>),
+  Daniel Fink [aut] (<https://orcid.org/0000-0002-8368-1248>),
+  Cornell Lab of Ornithology [cph]
+Maintainer: Matthew Strimas-Mackey <mes335@cornell.edu>
+Repository: CRAN
+Date/Publication: 2022-07-07 22:20:08 UTC

@@ -1,0 +1,26 @@
+Package: FactoClass
+Version: 1.2.8
+Date: 2023-09-13
+Title: Combination of Factorial Methods and Cluster Analysis
+Author: Campo Elias Pardo <cepardot@unal.edu.co>, 
+        Pedro Cesar del Campo <pcdelcampon@unal.edu.co> and 
+        Camilo Jose Torres <cjtorresj@unal.edu.co>, 
+        with the contributions from. 
+        Ivan Diaz <ildiazm@unal.edu.co>, 
+        Mauricio Sadinle <msadinleg@unal.edu.co>,
+        Jhonathan Medina <jmedinau@unal.edu.co>.
+Maintainer: Campo Elias Pardo <cepardot@unal.edu.co>
+Depends: R (>= 2.10), ade4,ggplot2,ggrepel,xtable,scatterplot3d
+Imports: KernSmooth
+Description: Some functions of 'ade4' and 'stats' are combined in order to obtain a partition of the rows of a data table, with columns representing variables of scales: quantitative, qualitative or frequency. 
+  First, a principal axes method is performed and then, a combination of Ward agglomerative hierarchical classification and K-means is performed, using some of the first coordinates obtained from the previous principal axes method. See, for example: 
+      Lebart, L. and Piron, M. and Morineau, A.  (2006).
+      Statistique Exploratoire Multidimensionnelle, Dunod, Paris.
+  In order to permit to have different weights of the elements to be clustered, the function 'kmeansW', programmed in C++, is included. It is a modification of 'kmeans'.   
+  Some graphical functions include the option: 'gg=FALSE'.  When 'gg=TRUE', they  use the 'ggplot2' and 'ggrepel' packages to avoid  the super-position of the labels.   
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2023-09-13 23:34:52 UTC; cepardot
+Repository: CRAN
+Date/Publication: 2023-09-14 00:02:36 UTC

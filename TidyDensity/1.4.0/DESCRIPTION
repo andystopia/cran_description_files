@@ -1,0 +1,32 @@
+Package: TidyDensity
+Title: Functions for Tidy Analysis and Generation of Random Data
+Version: 1.4.0
+Authors@R: c(
+    person("Steven","Sanderson", email = "spsanderson@gmail.com", role = c("aut","cre","cph"),
+      comment = c(ORCID = "0009-0006-7661-8247")
+      )
+    )
+Description: 
+    To make it easy to generate random numbers based upon the underlying stats 
+    distribution functions. All data is returned in a tidy and structured
+    format making working with the data simple and straight forward. Given that the
+    data is returned in a tidy 'tibble' it lends itself to working with the rest of the
+    'tidyverse'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://github.com/spsanderson/TidyDensity
+BugReports: https://github.com/spsanderson/TidyDensity/issues
+Depends: R (>= 4.1.0)
+Imports: magrittr, rlang (>= 0.4.11), dplyr, ggplot2, plotly, tidyr,
+        purrr, actuar, methods, stats, patchwork, survival, nloptr,
+        broom, tidyselect, data.table, stringr
+Suggests: rmarkdown, knitr, EnvStats
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-04-26 12:51:39 UTC; steve
+Author: Steven Sanderson [aut, cre, cph]
+    (<https://orcid.org/0009-0006-7661-8247>)
+Maintainer: Steven Sanderson <spsanderson@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-26 13:20:02 UTC

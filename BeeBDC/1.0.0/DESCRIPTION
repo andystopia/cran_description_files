@@ -1,0 +1,52 @@
+Package: BeeBDC
+Title: Occurrence Data Cleaning
+Version: 1.0.0
+Authors@R: c(
+    person("James B.", "Dorey", , "jbdorey@me.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2721-3842")),
+    person("Robert L.", "O'Reilly", , "robert.oreilly@flinders.edu.au", role = "aut",
+           comment = c(ORCID = "0000-0001-5291-7396")),
+    person("Silas", "Bossert", , "silas.bossert@wsu.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-3620-5468")),
+    person("Erica E.", "Fischer", , "fischeer@mail.gvsu.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-8202-158X"))
+  )
+Description: Flags and checks occurrence data that are in Darwin Core
+    format.  The package includes generic functions and data as well as
+    some that are specific to bees. This package is meant to build upon
+    and be complimentary to other excellent occurrence cleaning packages,
+    including 'bdc' and 'CoordinateCleaner'.  This package uses datasets
+    from several sources and particularly from the Discover Life Website,
+    created by Ascher and Pickering (2020).  For further information,
+    please see the original publication and package website.  Publication
+    - Dorey et al. (2023) <doi:10.1101/2023.06.30.547152> and package
+    website - Dorey et al. (2023) <https://github.com/jbdorey/BeeBDC>.
+License: GPL (>= 3)
+BugReports: https://github.com/jbdorey/BeeBDC/issues
+Depends: R (>= 2.10)
+Imports: circlize, ComplexHeatmap, CoordinateCleaner, cowplot, dplyr,
+        forcats, ggplot2, ggspatial, here, igraph, lubridate, mgsub,
+        openxlsx, paletteer, readr, rnaturalearth, sf, stringr,
+        tidyselect
+Suggests: bdc, BiocManager, classInt, countrycode, devtools, emld,
+        galah, hexbin, htmltools, htmlwidgets, httr, janitor, knitr,
+        leaflet, magrittr, pkgdown, plotly, prettydoc, purrr, R.utils,
+        renv, rgnparser, rlang, rmarkdown, rmdformats,
+        rnaturalearthdata, rvest, terra, testthat, tidyr, utils, xml2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-gb
+LazyData: TRUE
+LazyDataCompression: xz
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-15 06:47:48 UTC; jamesdorey
+Author: James B. Dorey [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2721-3842>),
+  Robert L. O'Reilly [aut] (<https://orcid.org/0000-0001-5291-7396>),
+  Silas Bossert [aut] (<https://orcid.org/0000-0002-3620-5468>),
+  Erica E. Fischer [aut] (<https://orcid.org/0000-0002-8202-158X>)
+Maintainer: James B. Dorey <jbdorey@me.com>
+Repository: CRAN
+Date/Publication: 2023-09-15 19:24:37 UTC

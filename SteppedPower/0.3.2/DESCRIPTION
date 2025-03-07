@@ -1,0 +1,28 @@
+Package: SteppedPower
+Type: Package
+Title: Power Calculation for Stepped Wedge Designs
+Version: 0.3.2
+Authors@R: c(
+    person("Philipp", "Mildenberger", role = c("aut", "cre"), email = "pmildenb@uni-mainz.de", comment = c(ORCID = "0000-0002-7367-1708")),
+    person("Federico", "Marini", role = "ctb", email = "marinif@uni-mainz.de", comment = c(ORCID = "0000-0003-3252-7758")))
+Description: Tools for power and sample size 
+    calculation as well as design diagnostics for 
+    longitudinal mixed model settings, with a focus on stepped wedge designs.
+    All calculations are oracle estimates i.e. assume random effect variances 
+    to be known (or guessed) in advance.  
+    The method is introduced in Hussey and Hughes (2007) <doi:10.1016/j.cct.2006.05.007>,
+    extensions are discussed in Li et al. (2020) <doi:10.1177/0962280220932962>.
+Imports: Matrix, plotly, Rfast, grDevices, stats, utils
+Suggests: knitr, rmarkdown, swCRTdesign, testthat, pwr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-06-10 13:48:10 UTC; pm
+Author: Philipp Mildenberger [aut, cre]
+    (<https://orcid.org/0000-0002-7367-1708>),
+  Federico Marini [ctb] (<https://orcid.org/0000-0003-3252-7758>)
+Maintainer: Philipp Mildenberger <pmildenb@uni-mainz.de>
+Repository: CRAN
+Date/Publication: 2022-07-05 00:20:10 UTC

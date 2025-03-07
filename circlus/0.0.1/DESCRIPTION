@@ -1,0 +1,31 @@
+Package: circlus
+Type: Package
+Title: Clustering and Simulation of Spherical Cauchy and PKBD Models
+Version: 0.0.1
+Authors@R: c(
+    person("Lukas", "Sablica", email = "lsablica@wu.ac.at", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9166-4563")), 
+    person("Kurt", "Hornik", email = "Kurt.Hornik@wu.ac.at", role = "aut",
+           comment = c(ORCID = "0000-0003-4198-9911")),
+    person("Bettina", "Gruen", role = c("aut"), email = "Bettina.Gruen@R-project.org",
+	         comment = c(ORCID = "0000-0001-7265-4773")),
+    person("Josef", "Leydold", email = "Josef.Leydold@wu.ac.at", role = "aut",
+           comment = c(ORCID = "0000-0002-9076-4893"))
+  )
+Description: Provides tools for estimation and clustering of spherical data, seamlessly integrated with the 'flexmix' package. Includes the necessary M-step implementations for both Poisson Kernel-Based Distribution (PKBD) and spherical Cauchy distribution. Additionally, the package provides random number generators for PKBD and spherical Cauchy distribution. Methods are based on Golzy M., Markatou M. (2020) <doi:10.1080/10618600.2020.1740713>, Kato S., McCullagh P. (2020) <doi:10.3150/20-bej1222> and Sablica L., Hornik K., Leydold J. (2023) <doi:10.1214/23-ejs2149>.
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp (>= 0.12.18), Tinflex (>= 1.8), flexmix, torch, methods
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Depends: R (>= 3.1.0)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2024-10-16 12:37:52 UTC; lukas
+Author: Lukas Sablica [aut, cre] (<https://orcid.org/0000-0001-9166-4563>),
+  Kurt Hornik [aut] (<https://orcid.org/0000-0003-4198-9911>),
+  Bettina Gruen [aut] (<https://orcid.org/0000-0001-7265-4773>),
+  Josef Leydold [aut] (<https://orcid.org/0000-0002-9076-4893>)
+Maintainer: Lukas Sablica <lsablica@wu.ac.at>
+Repository: CRAN
+Date/Publication: 2024-10-17 16:30:05 UTC

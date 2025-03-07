@@ -1,0 +1,36 @@
+Package: ACMEeqtl
+Type: Package
+Title: Estimation of Interpretable eQTL Effect Sizes Using a Log of
+        Linear Model
+Version: 1.5
+Date: 2018-01-11
+Authors@R: c(person("Andrey A", "Shabalin",
+                    role = c("aut", "cre"),
+                    email = "andrey.shabalin@gmail.com",
+                    comment = c(ORCID = "0000-0003-0309-6821")),
+             person("John", "Palowitch",
+                    role = c("aut"),
+                    comment = c(ORCID = "0000-0002-1419-3056")))
+Description: We use a non-linear model, termed ACME, 
+        that reflects a parsimonious biological model for 
+        allelic contributions of cis-acting eQTLs.
+        With non-linear least-squares algorithm we 
+        estimate maximum likelihood parameters. The ACME model
+        provides interpretable effect size estimates and
+        p-values with well controlled Type-I error.
+        Includes both R and (much faster) C implementations.
+        For more details see Palowitch et al. (2017) <doi:10.1111/biom.12810>.
+BugReports: https://github.com/andreyshabalin/ACMEeqtl/issues
+Depends: R (>= 3.3.0), filematrix
+Imports: parallel
+Suggests: knitr, rmarkdown, BiocStyle, pander
+URL: https://github.com/andreyshabalin/ACMEeqtl
+License: LGPL-3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-01-13 10:53:51 UTC; Andrey
+Author: Andrey A Shabalin [aut, cre] (0000-0003-0309-6821),
+  John Palowitch [aut] (0000-0002-1419-3056)
+Maintainer: Andrey A Shabalin <andrey.shabalin@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-01-13 17:13:16 UTC

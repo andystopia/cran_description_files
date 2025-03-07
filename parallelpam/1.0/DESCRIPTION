@@ -1,0 +1,36 @@
+Package: parallelpam
+Type: Package
+Title: Parallel Partitioning-Around-Medoids (PAM) for Big Sets of Data
+Version: 1.0
+Date: 2022-10-30
+Author: Juan Domingo [aut, cre] (<https://orcid.org/0000-0003-4728-6256>),
+  Guillermo Ayala [ctb] (<https://orcid.org/0000-0002-6231-2865>),
+  Spanish Ministry of Science and Innovation, MCIN/AEI
+    <doi:10.13039/501100011033> [fnd]
+Maintainer: Juan Domingo <Juan.Domingo@uv.es>
+Authors@R: c(person("Juan","Domingo", email = "Juan.Domingo@uv.es", role=c("aut","cre"), comment=c(ORCID="0000-0003-4728-6256")),
+             person("Guillermo","Ayala", email = "Guillermo.Ayala@uv.es", role=c("ctb"), comment=c(ORCID="0000-0002-6231-2865")),
+             person("Spanish Ministry of Science and Innovation, MCIN/AEI <doi:10.13039/501100011033>", role=c("fnd")))
+Description: Application of the Partitioning-Around-Medoids (PAM) clustering algorithm described in Schubert, E. and Rousseeuw, P.J.:
+        "Fast and eager k-medoids clustering: O(k) runtime improvement of the PAM, CLARA, and CLARANS algorithms." Information Systems,
+        vol. 101, p. 101804, (2021). <doi:10.1016/j.is.2021.101804>.
+	It uses a binary format for storing and retrieval of matrices developed for the 'jmatrix' package but the functionality of 'jmatrix'
+	is included here, so you do not need to install it. Also, it is used by package 'scellpam', so if you have installed it, you do not need
+	to install this package.
+	PAM can be applied to sets of data whose dissimilarity matrix can be very big. It has been tested with up to 100.000 points.
+	It does this with the help of the code developed for other package, 'jmatrix', which allows the matrix not to be loaded in 'R' memory (which
+	would force it to be of double type) but it gets from disk, which allows using float (or even smaller data types). Moreover, the
+	dissimilarity matrix is calculated in parallel if the computer has several cores so it can open many threads. The initial part
+	of the PAM algorithm can be done with the BUILD or LAB algorithms; the BUILD algorithm has been implemented in parallel. The optimization
+	phase implements the FastPAM1 algorithm, also in parallel. Finally, calculation of silhouette is available and also implemented in parallel.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8), memuse (>= 4.2.1)
+LinkingTo: Rcpp
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+Suggests: knitr, cluster
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-11-22 16:24:16 UTC; jdomingo
+Repository: CRAN
+Date/Publication: 2022-11-24 12:10:04 UTC

@@ -1,0 +1,40 @@
+Package: TruncExpFam
+Title: Truncated Exponential Family
+Version: 1.0.1
+Date: 2023-08-21
+Authors@R: 
+	c(
+		person(
+			given = "René",
+			family = "Holst",
+			role = "aut",
+			email = "rene.holst@medisin.uio.no"
+		),
+		person(
+			given = "Waldir",
+			family = "Leoncio",
+			role = c("cre", "aut"),
+			email = "w.l.netto@medisin.uio.no"
+		)
+	)
+Description: Handles truncated members from the exponential family of
+	probability distributions. Contains functions such as rtruncnorm() and
+	dtruncpois(), which are truncated versions of rnorm() and dpois() from the
+	stats package that also offer richer output containing, for example, the
+	distribution parameters. It also provides functions to retrieve the original
+	distribution parameters from a truncated sample by maximum-likelihood
+	estimation.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: methods, invgamma, rmutil
+Suggests: testthat
+URL: https://github.com/ocbe-uio/TruncExpFam
+BugReports: https://github.com/ocbe-uio/TruncExpFam/issues
+NeedsCompilation: no
+Packaged: 2023-08-22 09:18:02 UTC; waldir
+Author: René Holst [aut],
+  Waldir Leoncio [cre, aut]
+Maintainer: Waldir Leoncio <w.l.netto@medisin.uio.no>
+Repository: CRAN
+Date/Publication: 2023-08-22 12:30:07 UTC

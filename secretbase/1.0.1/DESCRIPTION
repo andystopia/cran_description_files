@@ -1,0 +1,32 @@
+Package: secretbase
+Type: Package
+Title: Cryptographic Hash, Extendable-Output and Base64 Functions
+Version: 1.0.1
+Description: Fast and memory-efficient streaming hash functions and base64
+    encoding and decoding. Performs direct hashing of strings and raw vectors.
+    Stream hashes files potentially larger than memory, as well as in-memory
+    objects through R's serialization mechanism. Implementations include the
+    SHA-256, SHA-3 and 'Keccak' cryptographic hash functions, SHAKE256
+    extendable-output function (XOF), and 'SipHash' pseudo-random function.
+Authors@R: 
+    c(person(given = "Charlie",
+             family = "Gao",
+             role = c("aut", "cre"),
+             email = "charlie.gao@shikokuchuo.net",
+             comment = c(ORCID = "0000-0002-0750-061X")),
+      person(given = "Hibiki AI Limited",
+             role = "cph"))
+License: GPL (>= 3)
+BugReports: https://github.com/shikokuchuo/secretbase/issues
+URL: https://shikokuchuo.net/secretbase/,
+        https://github.com/shikokuchuo/secretbase/
+Encoding: UTF-8
+Depends: R (>= 3.5)
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-07-22 07:30:06 UTC; cg334
+Author: Charlie Gao [aut, cre] (<https://orcid.org/0000-0002-0750-061X>),
+  Hibiki AI Limited [cph]
+Maintainer: Charlie Gao <charlie.gao@shikokuchuo.net>
+Repository: CRAN
+Date/Publication: 2024-07-22 09:50:06 UTC

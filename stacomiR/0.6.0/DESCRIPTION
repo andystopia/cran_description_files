@@ -1,0 +1,53 @@
+Package: stacomiR
+Version: 0.6.0
+Date: 2021-11-16
+Title: Fish Migration Monitoring
+Authors@R: c(person("Cedric", "Briand", role = c("aut", "cre"), email = "cedric.briand00@gmail.com"),
+	      person("Marion", "Legrand", role = "aut", email="tableau-salt-loire@logrami.fr"),
+	      person("Beaulaton", "Laurent", role = "ctb", email = "laurent.beaulaton@ofb.gouv.fr"),
+	      person("Boulenger", "Clarisse", role = "ctb", email = "Clarisse.Boulenger@ofb.gouv.fr"),
+	      person("Lafage", "Denis", role = "ctb", email = "denis.lafage@logrami.fr"),
+	      person("Grall", "Sebastien", role = "ctb", email = "seinormigr.grall@gmail.com"))
+Description: Graphical outputs and treatment for a database of fish pass
+    monitoring. It is a part of the 'STACOMI' open source project developed in
+    France by the French Office for Biodiversity institute to centralize
+    data obtained by fish pass monitoring. This version is available in French and
+    English. See <http://stacomir.r-forge.r-project.org/> for more information on
+    'STACOMI'.     
+License: GPL (>= 2)
+URL: http://stacomir.r-forge.r-project.org/
+BugReports: https://github.com/MarionLegrandLogrami/stacomiR/issues
+Collate: 'create_generic.R' 'data.R' 'fun_table_per_dis.R'
+        'fun_write_monthly.R' 'fungraph.R' 'fungraph_glasseel.R'
+        'funstat.R' 'funtable.R' 'ref_choice.R' 'ref_coe.R' 'ref_dc.R'
+        'ref_df.R' 'ref_env.R' 'ref_horodate.R' 'ref_list.R'
+        'ref_par.R' 'ref_parqual.R' 'ref_parquan.R' 'ref_period.R'
+        'ref_stage.R' 'ref_taxa.R' 'ref_textbox.R' 'ref_timestep.R'
+        'ref_timestep_daily.R' 'ref_year.R' 'report_annual.R'
+        'report_dc.R' 'report_df.R' 'utilities.R' 'report_env.R'
+        'report_ge_weight.R' 'report_ope.R' 'report_mig.R'
+        'report_sample_char.R' 'report_mig_char.R' 'report_mig_mult.R'
+        'report_mig_env.R' 'report_mig_interannual.R'
+        'report_sea_age.R' 'report_silver_eel.R' 'report_species.R'
+        'setAs.R' 'stacomi.R' 'stacomiR-package.R'
+LazyLoad: yes
+LazyData: true
+Depends: R (>= 4.0.0), methods, stacomirtools (>= 0.6.0)
+Imports: magrittr, intervals, RColorBrewer, stringr, RPostgres,
+        ggplot2, reshape2, graphics, utils, stats, lattice, grDevices,
+        Hmisc (>= 4.1-1), lubridate, dplyr, xtable, mgcv, rlang, pool,
+        withr
+Suggests: testthat, viridis, knitr, rmarkdown
+Author: Cedric Briand [aut, cre],
+  Marion Legrand [aut],
+  Beaulaton Laurent [ctb],
+  Boulenger Clarisse [ctb],
+  Lafage Denis [ctb],
+  Grall Sebastien [ctb]
+Maintainer: Cedric Briand <cedric.briand00@gmail.com>
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+VignetteBuilder: knitr
+Packaged: 2021-11-19 21:17:56 UTC; cedric.briand
+Repository: CRAN
+Date/Publication: 2021-11-22 08:00:02 UTC

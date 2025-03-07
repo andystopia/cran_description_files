@@ -1,0 +1,60 @@
+Package: sftrack
+Title: Modern Classes for Tracking and Movement Data
+Version: 0.5.2
+Date: 2020-10-19
+Authors@R: 
+    c(person(given = "Matthew",
+             family = "Boone",
+             role = "aut",
+             email = "mttboone@gmail.com",
+             comment = structure("0000-0002-8070-4715", .Names = "ORCID")),
+      person(given = "Rocío",
+             family = "Joo",
+             role = "aut",
+             email = "rocio.joo@ufl.edu",
+             comment = structure("0000-0003-0319-4210", .Names = "ORCID")),
+      # person(given = "Clement",
+      #        family = "Calenge",
+      #        role = "ctb",
+      #        email = "clement.calenge@ofb.gouv.fr"),
+      person(given = "Emiel",
+             family = "Van Loon",
+             role = "ctb",
+             email = "e.e.vanloon@uva.nl",
+             comment = structure("0000-0002-8895-0427", .Names = "ORCID")),
+      person(given = "Mathieu",
+             family = "Basille",
+             role = c("aut", "cre"),
+             email = "basille@ufl.edu",
+             comment = structure("0000-0001-9366-7127", .Names = "ORCID")))
+Depends: R (>= 3.2.0)
+Imports: sf
+Description: Modern classes for tracking and movement data, building
+    on 'sf' spatial infrastructure, and early theoretical work from
+    Turchin (1998, ISBN: 9780878938476), and Calenge et al. (2009)
+    <doi:10.1016/j.ecoinf.2008.10.002>. Tracking data are series of
+    locations with at least 2-dimensional spatial coordinates (x,y), a
+    time index (t), and individual identification (id) of the object
+    being monitored; movement data are made of trajectories, i.e. the
+    line representation of the path, composed by steps (the
+    straight-line segments connecting successive locations). 'sftrack'
+    is designed to handle movement of both living organisms and
+    inanimate objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+URL: https://mablab.org/sftrack/, https://github.com/mablab/sftrack
+BugReports: https://github.com/mablab/sftrack/issues
+Suggests: testthat (>= 2.1.0), utils, ggplot2, adehabitatLT, knitr,
+        geosphere, scales, covr, rmarkdown, lwgeom
+NeedsCompilation: no
+Packaged: 2020-10-30 02:50:11 UTC; mathieu
+Author: Matthew Boone [aut] (<https://orcid.org/0000-0002-8070-4715>),
+  Rocío Joo [aut] (<https://orcid.org/0000-0003-0319-4210>),
+  Emiel Van Loon [ctb] (<https://orcid.org/0000-0002-8895-0427>),
+  Mathieu Basille [aut, cre] (<https://orcid.org/0000-0001-9366-7127>)
+Maintainer: Mathieu Basille <basille@ufl.edu>
+Repository: CRAN
+Date/Publication: 2020-11-05 09:10:02 UTC

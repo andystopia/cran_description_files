@@ -1,0 +1,23 @@
+Package: stfit
+Type: Package
+Title: Spatio-Temporal Functional Imputation Tool
+Version: 0.99.8
+Date: 2020-09-29
+Authors@R: person("Weicheng", "Zhu", email = "mingsnu@gmail.com", role = c("aut", "cre"))
+Description: A general spatiotemporal satellite image imputation method based on sparse functional data analytic techniques. The imputation method applies and extends the Functional Principal Analysis by Conditional Estimation (PACE). The underlying idea for the proposed procedure is to impute a missing pixel by borrowing information from temporally and spatially contiguous pixels based on the best linear unbiased prediction.  
+BugReports: https://github.com/mingsnu/stfit/issues
+License: GPL-3
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: Rcpp, Matrix, doParallel, foreach, abind, fda, raster,
+        rasterVis, RColorBrewer
+LinkingTo: Rcpp
+Suggests: testthat, dplyr
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2020-09-30 01:08:11 UTC; Weicheng
+Author: Weicheng Zhu [aut, cre]
+Maintainer: Weicheng Zhu <mingsnu@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-10-02 08:30:02 UTC

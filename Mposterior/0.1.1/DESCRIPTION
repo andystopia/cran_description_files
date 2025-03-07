@@ -1,0 +1,26 @@
+Package: Mposterior
+Type: Package
+LazyLoad: yes
+Version: 0.1.1
+Date: 2014-05-31
+Title: Mposterior: R package for Robust and Scalable Bayes via a Median
+        of Subset Posterior Measures
+Author: Sanvesh Srivastava <sanvesh@gmail.com>
+Maintainer: Sanvesh Srivastava <sanvesh@gmail.com>
+Description: Mposterior package provides a general framework for estimating a
+    median of subset posterior measures (M-posterior). Each subset posterior measure
+    is represented as a matrix of posterior samples; rows represent the atoms and 
+    columns index the dimensions. All subset measures are represented as list of 
+    matrices; length of the list equals the number of subsets (or machines). The        
+    distance between subset posterior measures and M-posterior is measured using the RBF kernel.
+    M-posterior is represented as a weighted combination of empirical measures based on 
+    subsets measures. These weights are estimated using Weiszfeld algorithm implemented
+    in this package.
+License: GPL (>= 3)
+URL: http://www.stat.duke.edu/~ss602/Mposterior/Mposterior.html
+Depends: R (>= 3.0.2), Rcpp (>= 0.11.0)
+LinkingTo: Rcpp, RcppArmadillo (>= 0.3.4.4)
+Packaged: 2014-06-01 17:43:21 UTC; hanuman
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-06-01 22:35:47

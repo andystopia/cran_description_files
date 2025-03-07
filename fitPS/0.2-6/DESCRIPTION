@@ -1,0 +1,30 @@
+Package: fitPS
+Type: Package
+Title: Fit Zeta Distributions to Forensic Data
+Version: 0.2-6
+Date: 2023-06-07
+Authors@R: 
+    person("James", "Curran", , "j.curran@auckland.ac.nz", role = c("aut", "cre"))
+Description: Fits Zeta distributions (discrete power laws) to data that arises
+    from forensic surveys of clothing on the presence of glass and paint in
+    various populations. The general method is described to some extent in
+    Coulson, S.A., Buckleton, J.S., Gummer, A.B., and Triggs, C.M. (2001) 
+    <doi:10.1016/S1355-0306(01)71847-3>, although the implementation differs.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: foreach, R (>= 4.0.0)
+Imports: doParallel, dplyr, Hmisc, iterators, knitr, ks, methods,
+        pbapply, Rdpack, readxl, VGAM
+RdMacros: Rdpack
+RoxygenNote: 7.2.3
+URL: https://github.com/jmcurran/fitPS
+BugReports: https://github.com/jmcurran/fitPS/issues
+Suggests: rmarkdown, sp
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-06-10 05:35:31 UTC; jcur002
+Author: James Curran [aut, cre]
+Maintainer: James Curran <j.curran@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2023-06-10 11:50:02 UTC

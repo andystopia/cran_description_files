@@ -1,0 +1,74 @@
+Type: Package
+Package: teal.slice
+Title: Filter Module for 'teal' Applications
+Version: 0.5.0
+Date: 2024-01-31
+Authors@R: c(
+    person("Dawid", "Kaledkowski", , "dawid.kaledkowski@roche.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9533-457X")),
+    person("Pawel", "Rucki", , "pawel.rucki@roche.com", role = "aut"),
+    person("Aleksander", "Chlebowski", , "aleksander.chlebowski@contractors.roche.com", role = "aut", comment = c(ORCID = "0000-0001-5018-6294")),
+    person("Andre", "Verissimo", , "andre.verissimo@roche.com", role = "aut", comment = c(ORCID = "0000-0002-2212-339X")),
+    person("Kartikeya", "Kirar", , "kartikeya.kirar@businesspartner.roche.com", role = "aut"),
+    person("Marcin", "Kosinski", , "marcin.kosinski.mk1@roche.com", role = "aut"),
+    person("Chendi", "Liao", , "chendi.liao@roche.com", role = "rev"),
+    person("Dony", "Unardi", , "unardid@gene.com", role = "rev"),
+    person("Andrew", "Bates", role = "aut"),
+    person("Mahmoud", "Hallal", role = "aut"),
+    person("Nikolas", "Burkoff", role = "aut"),
+    person("Maciej", "Nasinski", role = "aut"),
+    person("Konrad", "Pagacz", role = "aut"),
+    person("Junlue", "Zhao", role = "aut"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Data filtering module for 'teal' applications.  Allows for
+    interactive filtering of data stored in 'data.frame' and
+    'MultiAssayExperiment' objects. Also displays filtered and unfiltered
+    observation counts.
+License: Apache License 2.0
+URL: https://insightsengineering.github.io/teal.slice/,
+        https://github.com/insightsengineering/teal.slice/
+BugReports: https://github.com/insightsengineering/teal.slice/issues
+Depends: R (>= 4.0)
+Imports: bslib (>= 0.4.0), checkmate (>= 2.1.0), dplyr (>= 1.0.5),
+        grDevices, htmltools (>= 0.5.4), jsonlite, lifecycle (>=
+        0.2.0), logger (>= 0.2.0), methods, plotly (>= 4.9.2.2), R6 (>=
+        2.2.0), shiny (>= 1.6.0), shinycssloaders (>= 1.0.0), shinyjs,
+        shinyWidgets (>= 0.6.2), teal.data (>= 0.4.0), teal.logger (>=
+        0.1.1), teal.widgets (>= 0.4.0), utils
+Suggests: knitr (>= 1.42), MultiAssayExperiment, SummarizedExperiment,
+        testthat (>= 3.1.5), withr (>= 2.1.0)
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Config/Needs/verdepcheck: rstudio/shiny, rstudio/bslib, mllg/checkmate,
+        tidyverse/dplyr, rstudio/htmltools, jeroen/jsonlite,
+        r-lib/lifecycle, daroczig/logger, plotly/plotly, r-lib/R6,
+        daattali/shinycssloaders, daattali/shinyjs,
+        dreamRs/shinyWidgets, insightsengineering/teal.data,
+        insightsengineering/teal.logger,
+        insightsengineering/teal.widgets, yihui/knitr,
+        bioc::MultiAssayExperiment, bioc::SummarizedExperiment,
+        r-lib/testthat, r-lib/withr
+Config/Needs/website: insightsengineering/nesttemplate
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-02-05 19:41:21 UTC; unardid
+Author: Dawid Kaledkowski [aut, cre] (<https://orcid.org/0000-0001-9533-457X>),
+  Pawel Rucki [aut],
+  Aleksander Chlebowski [aut] (<https://orcid.org/0000-0001-5018-6294>),
+  Andre Verissimo [aut] (<https://orcid.org/0000-0002-2212-339X>),
+  Kartikeya Kirar [aut],
+  Marcin Kosinski [aut],
+  Chendi Liao [rev],
+  Dony Unardi [rev],
+  Andrew Bates [aut],
+  Mahmoud Hallal [aut],
+  Nikolas Burkoff [aut],
+  Maciej Nasinski [aut],
+  Konrad Pagacz [aut],
+  Junlue Zhao [aut],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Dawid Kaledkowski <dawid.kaledkowski@roche.com>
+Repository: CRAN
+Date/Publication: 2024-02-06 17:40:02 UTC

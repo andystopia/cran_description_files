@@ -1,0 +1,36 @@
+Package: gms
+Type: Package
+Title: 'GAMS' Modularization Support Package
+Version: 0.4.0
+Date: 2020-06-17
+Authors@R: c(person("Jan Philipp", "Dietrich", email = "dietrich@pik-potsdam.de", role = c("aut","cre")),
+             person("David", "Klein", role = "aut"),
+             person("Anastasis", "Giannousakis", role = "aut"),
+             person("Felicitas", "Beier", role = "aut"),
+             person("Johannes", "Koch", role = "aut"),
+             person("Lavinia", "Baumstark", role = "aut"))
+Description: A collection of tools to create, use and maintain modularized model code written in the modeling 
+    language 'GAMS' (<https://www.gams.com/>). Out-of-the-box 'GAMS' does not come with support for modularized
+    model code. This package provides the tools necessary to convert a standard 'GAMS' model to a modularized one
+    by introducing a modularized code structure together with a naming convention which emulates local
+    environments. In addition, this package provides tools to monitor the compliance of the model code with
+    modular coding guidelines.
+Imports: dplyr, rlang, stringr, yaml
+Suggests: curl, magclass, qgraph, testthat
+URL: https://github.com/pik-piam/gms
+BugReports: https://github.com/pik-piam/gms/issues
+License: BSD_2_clause + file LICENSE
+LazyData: no
+Encoding: UTF-8
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-07-01 13:52:26 UTC; dietrich
+Author: Jan Philipp Dietrich [aut, cre],
+  David Klein [aut],
+  Anastasis Giannousakis [aut],
+  Felicitas Beier [aut],
+  Johannes Koch [aut],
+  Lavinia Baumstark [aut]
+Maintainer: Jan Philipp Dietrich <dietrich@pik-potsdam.de>
+Repository: CRAN
+Date/Publication: 2020-07-01 15:00:06 UTC

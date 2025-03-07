@@ -1,0 +1,28 @@
+Package: plasma
+Title: Partial LeAst Squares for Multiomic Analysis
+Version: 1.0.0
+Date: 2023-03-10
+Authors@R: c(person("Kevin R.", "Coombes", role = c("cre", "aut"),
+                    email = "krc@silicovore.com"),
+             person("Kyoko", "Yamaguchi", role = "aut"),
+             person("Salma", "Abdelbaky", role = "aut"))
+Description: Contains tools for supervised analyses of incomplete, overlapping
+  multiomics datasets. Applies partial least squares in multiple steps to find
+  models that predict survival outcomes. See Yamaguchi et al. (2023)
+  <doi:10.1101/2023.03.10.532096>.
+Depends: R (>= 3.5.0)
+Imports: methods, stats, graphics, survival, pls, plsRcox, Polychrome
+        (>= 1.5.0), viridisLite, beanplot, oompaBase
+Suggests: R.rsp, tidyr, ClassDiscovery
+License: Apache License (== 2.0)
+LazyLoad: yes
+URL: http://oompa.r-forge.r-project.org/
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2023-03-13 13:27:20 UTC; KRC
+Author: Kevin R. Coombes [cre, aut],
+  Kyoko Yamaguchi [aut],
+  Salma Abdelbaky [aut]
+Maintainer: Kevin R. Coombes <krc@silicovore.com>
+Repository: CRAN
+Date/Publication: 2023-03-13 14:50:02 UTC

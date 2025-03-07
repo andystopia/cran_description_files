@@ -1,0 +1,38 @@
+Package: mcradds
+Type: Package
+Title: Processing and Analyzing of Diagnostics Trials
+Version: 1.0.1
+Authors@R: c(
+    person("Kai", "Gu", , "gukai1212@163.com", role = c("aut", "cre", "cph"))
+    )
+Maintainer: Kai Gu <gukai1212@163.com>
+Description: Provides methods and functions to analyze the quantitative or 
+    qualitative performance for diagnostic assays, and outliers detection, 
+    reader precision and reference range are discussed. Most of the methods 
+    and algorithms refer to CLSI (Clinical & Laboratory Standards Institute) 
+    recommendations and NMPA (National Medical Products Administration) 
+    guidelines. In additional, relevant plots are constructed by 'ggplot2'.
+License: GPL (>= 3)
+URL: https://github.com/kaigu1990/mcradds,
+        https://kaigu1990.github.io/mcradds/
+BugReports: https://github.com/kaigu1990/mcradds/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6)
+Imports: boot, checkmate, DescTools, ggplot2, lifecycle, magrittr,
+        methods, pROC, purrr, stats, VCA
+Suggests: dplyr, knitr, rmarkdown, spelling, testthat (>= 3.0.0),
+        tibble, usethis, vdiffr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Collate: 'pkg_class.R' 'pkg_methods.R' 'autoplot.R' 'blandAltman.R'
+        'correlation.R' 'data.R' 'mcr.R' 'outlier.R' 'package.R'
+        'pairedroc.R' 'qual_stat.R' 'referenceInterval.R'
+        'samplesize.R' 'utils.R' 'vca.R'
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-10-10 14:51:18 UTC; TJ0695
+Author: Kai Gu [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2023-10-11 14:10:02 UTC

@@ -1,0 +1,29 @@
+Package: GDPuc
+Title: Easily Convert GDP Data
+Version: 1.0.0
+Date: 2024-06-5
+Authors@R: 
+    person("Johannes", "Koch", , "jokoch@pik-potsdam.de", role = c("aut", "cre"))
+Description: Convert GDP time series data from one unit to
+    another. All common GDP units are included, i.e. current and constant
+    local currency units, US$ via market exchange rates and international
+    dollars via purchasing power parities. 
+License: GPL (>= 3)
+URL: https://github.com/pik-piam/GDPuc,
+        https://pik-piam.github.io/GDPuc/
+BugReports: https://github.com/pik-piam/GDPuc/issues
+Depends: R (>= 2.10)
+Imports: cli (>= 2.4.0), crayon, dplyr, glue, lifecycle, magrittr,
+        rlang (>= 1.0.0), tibble, tidyr, tidyselect, withr
+Suggests: covr, knitr, magclass, purrr, rmarkdown, stringr, testthat
+        (>= 3.0.0), usethis, WDI, zoo
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-05 15:46:19 UTC; johannes
+Author: Johannes Koch [aut, cre]
+Maintainer: Johannes Koch <jokoch@pik-potsdam.de>
+Repository: CRAN
+Date/Publication: 2024-06-05 17:00:14 UTC

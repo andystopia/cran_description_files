@@ -1,0 +1,43 @@
+Package: pmartR
+Type: Package
+Title: Panomics Marketplace - Quality Control and Statistical Analysis
+        for Panomics Data
+Version: 2.4.2
+Date: 2023-12-11
+Authors@R: c(
+    person("Lisa", "Bramer", email = "lisa.bramer@pnnl.gov", role = c("aut", "cre")), 
+    person("Kelly", "Stratton", email = "kelly.stratton@pnnl.gov", role = c("aut")), 
+    person("Daniel", "Claborne", email = "daniel.claborne@pnnl.gov", role = c("aut")), 
+    person("Evan", "Glasscock", role = c("ctb")), 
+    person("Rachel", "Richardson", role = c("ctb")), 
+    person("David", "Degnan", role=c("ctb")),
+    person("Evan", "Martin", role=c("ctb"))
+    )
+Description: Provides functionality for quality control processing and statistical analysis of mass spectrometry (MS) omics data, in particular proteomic (either at the peptide or the protein level), lipidomic, and metabolomic data, as well as RNA-seq based count data and nuclear magnetic resonance (NMR) data. This includes data transformation, specification of groups that are to be compared against each other, filtering of features and/or samples, data normalization, data summarization (correlation, PCA), and statistical comparisons between defined groups.  Implements methods described in:  Webb-Robertson et al. (2014) <doi:10.1074/mcp.M113.030932>.  Webb-Robertson et al. (2011) <doi:10.1002/pmic.201100078>.  Matzke et al. (2011) <doi:10.1093/bioinformatics/btr479>.  Matzke et al. (2013) <doi:10.1002/pmic.201200269>.  Polpitiya et al. (2008) <doi:10.1093/bioinformatics/btn217>.  Webb-Robertson et al. (2010) <doi:10.1021/pr1005247>.  
+License: BSD_2_clause + file LICENSE
+Depends: R (>= 3.5.0)
+URL: https://github.com/pmartR/pmartR
+BugReports: https://github.com/pmartR/pmartR/issues
+LinkingTo: Rcpp, RcppArmadillo, BH
+biocViews:
+Imports: Rcpp (>= 0.12.8), data.table, doParallel, dplyr, ggplot2,
+        e1071, foreach, methods, mvtnorm, pcaMethods, plotly, purrr,
+        rrcov, stringr, tidyr (>= 1.3.0), RColorBrewer, magrittr,
+        parallelly, patchwork, glmpca,
+Suggests: knitr, limma, rmarkdown, edgeR, DESeq2, scales, S4Vectors,
+        survival, testthat, trelliscopejs, pmartRdata, vdiffr
+Additional_repositories: https://pmartR.github.io/drat
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2023-12-11 18:35:01 UTC; clab683
+Author: Lisa Bramer [aut, cre],
+  Kelly Stratton [aut],
+  Daniel Claborne [aut],
+  Evan Glasscock [ctb],
+  Rachel Richardson [ctb],
+  David Degnan [ctb],
+  Evan Martin [ctb]
+Maintainer: Lisa Bramer <lisa.bramer@pnnl.gov>
+Repository: CRAN
+Date/Publication: 2023-12-12 10:50:02 UTC

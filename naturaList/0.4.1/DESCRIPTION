@@ -1,0 +1,33 @@
+Package: naturaList
+Type: Package
+Title: Classify Occurrences by Confidence Levels in the Species ID
+Version: 0.4.1
+Authors@R: c(
+    person("Arthur  Vinicius", "Rodrigues", email = "rodrigues.arthur.v@gmail.com", role = "cre"),
+    person("Gabriel", "Nakamura", role = "aut"),
+	person("Leandro", "Duarte", role = "aut"))
+Description: Classify occurrence records based on confidence
+    levels of species identification. In addition, implement tools to filter
+    occurrence inside grid cells and to manually check for possibles errors with 
+	an interactive shiny application.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: shiny, shinyWidgets, dplyr, stringr, sp, raster,
+        shinydashboard, leaflet, leaflet.extras, tidytext, magrittr,
+        vegan, fasterize, sf, htmltools, methods, rlang
+Suggests: knitr, rmarkdown, testthat, tm, rgeos, rgdal, rnaturalearth,
+        lwgeom, shinyLP, maptools
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+URL: https://github.com/avrodrigues/naturaList
+BugReports: https://github.com/avrodrigues/naturaList/issues
+NeedsCompilation: no
+Packaged: 2021-08-20 12:15:47 UTC; avrodrigues
+Author: Arthur Vinicius Rodrigues [cre],
+  Gabriel Nakamura [aut],
+  Leandro Duarte [aut]
+Maintainer: Arthur  Vinicius Rodrigues <rodrigues.arthur.v@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-21 09:30:02 UTC

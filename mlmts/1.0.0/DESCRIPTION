@@ -1,0 +1,36 @@
+Package: mlmts
+Type: Package
+Title: Machine Learning Algorithms for Multivariate Time Series
+Version: 1.0.0
+Authors@R: c(
+    person("Angel", "Lopez-Oriona", email = "oriona38@hotmail.com", 
+    role = c("aut", "cre")),
+    person("Jose", "A. Vilar", role = "aut"))
+Description: An implementation of several machine learning algorithms for 
+    multivariate time series. The package includes functions allowing the
+    execution of clustering, classification or outlier detection methods,
+    among others. It also incorporates a collection of multivariate time
+    series datasets which can be used to analyse the performance of new
+    proposed algorithms. Practitioners from a broad variety of fields could
+    benefit from the general framework provided by 'mlmts'.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.1.2
+Imports: quantspec, waveslim, Rfast, TSclust, forecast, tseries, TSA,
+        tsfeatures, tseriesChaos, freqdom, e1071, dtw, base, psych,
+        complexplus, MTS, Matrix, ggplot2, multiwave, MASS, fda.usc,
+        TSdist, evolqg, geigen, DescTools, pracma, pspline, Rdpack,
+        stats, ClusterR, AID, caret, ranger
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2022-02-18 23:36:13 UTC; angel
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Author: Angel Lopez-Oriona [aut, cre],
+  Jose A. Vilar [aut]
+Maintainer: Angel Lopez-Oriona <oriona38@hotmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-21 08:50:05 UTC

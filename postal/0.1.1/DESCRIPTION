@@ -1,0 +1,29 @@
+Package: postal
+Type: Package
+Title: United States Postal Service API Interface
+Version: 0.1.1
+Authors@R: c(
+    person("Amanda", "Dobbyn", email = "amanda.e.dobbyn@gmail.com", role = c("aut", "cre")),
+    person("Bernie", "Gray", role = "ctb"))
+Maintainer: Amanda Dobbyn <amanda.e.dobbyn@gmail.com>
+Description: An interface to the United States Postal Service Post Calc and Zone Calc APIs <https://postcalc.usps.com/>, postal
+  allows users to find the postage price, delivery day, and other information for packages and envelopes, 
+  as well as to find the postal zone for an origin and a destination zip code pair.
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+URL: https://github.com/aedobbyn/postal/
+BugReports: https://github.com/aedobbyn/postal/issues/
+Imports: curl, dplyr, glue, janitor, jsonlite, lubridate, magrittr,
+        purrr, readr, stats, stringr, tibble (>= 1.2), tidyr
+Suggests: covr, cowsay, ggplot2, here, knitr, maps, rmarkdown,
+        testthat, zipcode
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-02-02 16:49:21 UTC; amanda
+Author: Amanda Dobbyn [aut, cre],
+  Bernie Gray [ctb]
+Repository: CRAN
+Date/Publication: 2019-02-02 17:20:03 UTC

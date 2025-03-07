@@ -1,0 +1,28 @@
+Package: skipTrack
+Title: A Bayesian Hierarchical Model that Controls for Non-Adherence in
+        Mobile Menstrual Cycle Tracking
+Version: 0.1.0
+Authors@R: 
+    person("Luke", "Duttweiler", , "lduttweiler@hsph.harvard.edu", role = c("aut", "cre", 'cph'),
+           comment = c(ORCID = "0000-0002-0467-995X"))
+Description: Implements a Bayesian hierarchical model designed to identify skips in mobile menstrual cycle self-tracking on mobile apps. Future developments will allow for the inclusion of covariates affecting cycle mean and regularity, as well as extra information regarding tracking non-adherence. Main methods to be outlined in a forthcoming paper, with alternative models from Li et al. (2022) <doi:10.1093/jamia/ocab182>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://github.com/LukeDuttweiler/skipTrack
+BugReports: https://github.com/LukeDuttweiler/skipTrack/issues
+Imports: doParallel (>= 1.0.0), foreach (>= 1.5.0), genMCMCDiag (>=
+        0.2.0), ggplot2 (>= 3.4.0), ggtext (>= 0.1.0), glmnet (>=
+        4.1.0), gridExtra (>= 2.0), LaplacesDemon (>= 16.0.0),
+        lifecycle, mvtnorm (>= 1.2.0), optimg (>= 0.1.2), parallel (>=
+        4.0.0), stats (>= 4.0.0), utils (>= 4.0.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-05-15 16:23:50 UTC; LukeDuttweiler
+Author: Luke Duttweiler [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0467-995X>)
+Maintainer: Luke Duttweiler <lduttweiler@hsph.harvard.edu>
+Repository: CRAN
+Date/Publication: 2024-05-16 14:10:07 UTC

@@ -1,0 +1,31 @@
+Title: Nested Cross Validation for the Relaxed Lasso and Other Machine
+        Learning Models
+Package: glmnetr
+Version: 0.3-1
+Date: 2023-07-28
+Depends: R (>= 3.4.0)
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Imports: glmnet, survival, Matrix, rpart, xgboost, smoof, mlrMBO,
+        ParamHelpers, torch
+ByteCompile: Yes
+Authors@R: c(person(c("Walter", "K"), "Kremers",
+                    role=c("aut", "cre"),
+                    email="kremers.walter@mayo.edu", 
+                    comment = c(ORCID = "0000-0001-5714-3473")),
+             person(c("Nicholas", "B"), "Larson", role=c("ctb")) )
+Author: Walter K Kremers [aut, cre] (<https://orcid.org/0000-0001-5714-3473>),
+  Nicholas B Larson [ctb]
+Maintainer: Walter K Kremers <kremers.walter@mayo.edu>
+Description: 
+    Cross validation informed Relaxed LASSO, Artificial Neural Network (ANN), gradient boosting machine ('xgboost'), Recursive Partitioning ('RPART') or step wise regression models are fit.  It fits all these model as extensions of linear, logistic and Cox regression models.  The package can fit all these models in a single call, and performs nested cross validation allowing the user to evaluate and compare the performances of these different models.  The package fits these models using other packages including 'glmnet', 'survival', 'xgboost', 'rpart' and 'torch'.  For the relaxed lasso models 'glmnetr' uses 'stat' and 'survival' to obtain stable model fits, and obtain these often more quickly.  This too might be achieved using the 'path=TRUE' option in 'glmnet'.
+    While the package fits nested cross validation for the lasso and other models, it does not fit the general elastic net model.  If you are fitting not a relaxed lasso model but an elastic-net model, then the R-packages 'nestedcv' <https://cran.r-project.org/package=nestedcv>, 'glmnetSE' <https://cran.r-project.org/package=glmnetSE> or others may provide greater functionality when performing a nested CV.
+    As with the 'glmnet' package, this package passes most relevant information to the output object which can be evaluated using plot, summary() and predict() functions.  The 'glmnetr' package has some features and functionality that we find useful, but omits some of the functionality of 'glmnet' as well.  Use of the 'glmnetr' package has many similarities to the 'glmnet' package and it is recommended that the user of 'glmnetr' first become familiar with the 'glmnet' package <https://cran.r-project.org/package=glmnet>, with the "An Introduction to glmnet" and "The Relaxed Lasso" being especially helpful in this regard.
+License: GPL-3
+NeedsCompilation: no
+Copyright: Mayo Foundation for Medical Education and Research
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Packaged: 2023-08-10 02:08:50 UTC; kremers
+Repository: CRAN
+Date/Publication: 2023-08-10 06:50:02 UTC

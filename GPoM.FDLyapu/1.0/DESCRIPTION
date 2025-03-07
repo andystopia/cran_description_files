@@ -1,0 +1,46 @@
+Package: GPoM.FDLyapu
+Type: Package
+Title: Lyapunov Exponents and Kaplan-Yorke Dimension
+Version: 1.0
+Date: 2019-08-23
+Encoding: UTF-8
+Authors@R: c(
+    person("Sylvain", "Mangiarotti", email = "sylvain.mangiarotti@cesbio.cnes.fr",role = c("aut")),
+    person("Mireille", "Huc", email = "mireille.huc@cesbio.cnes.fr", role = c("cre", "aut")),
+    person("Institut de Recherche pour le Développement", role ="fnd"),
+    person("Centre National de la Recherche Scientifique", role ="fnd")
+    )
+Maintainer: Mireille Huc <mireille.huc@cesbio.cnes.fr>
+Description: Estimation of the spectrum of Lyapunov Exponents and the Kaplan-Yorke 
+  dimension of any low-dimensional model of polynomial form.
+  It can be applied, for example, to systems such as the chaotic
+  Lorenz-1963 system or the hyperchaotic Rossler-1979 system.
+  It can also be applied to dynamical models in Ordinary Differential Equations (ODEs) directly obtained
+  from observational time series using the 'GPoM' package.
+  The approach used is semi-formal,
+  the Jacobian matrix being estimated automatically from the polynomial equations.
+  Two methods are made available; one introduced by Wolf et al. 
+  (1985) <doi:10.1016/0167-2789(85)90011-9>
+  and the other one introduced by Grond et al. (2003) <doi:10.1016/S0960-0779(02)00479-4>.
+  The package is provided with an interface for a more intuitive usage,
+  it can also be run without the interface.
+  This platform is developed at the Centre d'Etudes Spatiales de la Biosphere (CESBIO),
+  UMR 5126 UPS/CNRS/CNES/IRD, 18 av. Edouard Belin, 31401 TOULOUSE, FRANCE.
+  The developments were funded by the French program Les Enveloppes Fluides 
+  et l'Environnement (LEFE, MANU, projects GloMo, SpatioGloMo and MoMu). The 
+  French programs Defi InFiNiTi (CNRS) and PNTS (CNRS) are also acknowledged 
+  (projects Crops'I Chaos and Musc & SlowFast).
+License: CeCILL-2
+LazyData: TRUE
+RoxygenNote: 6.1.1
+Depends: R (>= 2.10), GPoM, deSolve
+Suggests: knitr, rmarkdown, rgl, shiny
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-08-29 07:49:40 UTC; hucm
+Author: Sylvain Mangiarotti [aut],
+  Mireille Huc [cre, aut],
+  Institut de Recherche pour le Développement [fnd],
+  Centre National de la Recherche Scientifique [fnd]
+Repository: CRAN
+Date/Publication: 2019-08-29 09:30:05 UTC

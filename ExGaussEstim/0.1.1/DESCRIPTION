@@ -1,0 +1,47 @@
+Package: ExGaussEstim
+Title: Quantile Maximization Likelihood Estimation and Bayesian
+        Ex-Gaussian Estimation
+Version: 0.1.1
+Authors@R: c(
+  person(given = "Yousri",
+           family = "SLAOUI",
+           role = "aut",
+           email = "Yousri.Slaoui@math.univ-poitiers.fr",
+           comment = c(ORCID = "0000-0001-5295-3311")),
+  person(given = "Alandra",
+           family = "ZAKKOUR",
+           role = "aut",
+           email = "alandra.zakkour@univ-poitiers.fr"),
+  person(given = "Caroline",
+           family = "BORDES",
+           role = c("aut", "ctb"),
+           email = "caroline.bordes@univ-poitiers.fr"),
+  person(given = "Cyril",
+           family = "PERRET",
+           role = "aut",
+           email = "cyril.perret@univ-poitiers.fr",
+           comment = c(ORCID = "0000-0002-4552-9093")),
+  person(given = "Jean",
+           family = "DUMONCEL",
+           role = c("aut", "cre"),
+           email = "jean.dumoncel@univ-poitiers.fr",
+           comment = c(ORCID = "0000-0003-0789-7458")))
+Description: Presents two methods to estimate the parameters 'mu', 'sigma', and 'tau' of an ex-Gaussian distribution. Those methods are Quantile Maximization Likelihood Estimation ('QMLE') and Bayesian. The 'QMLE' method allows a choice between three different estimation algorithms for these parameters : 'neldermead' ('NEMD'), 'fminsearch' ('FMIN'), and 'nlminb' ('NLMI'). For more details about the methods you can refer at the following list: Brown, S., & Heathcote, A. (2003) <doi:10.3758/BF03195527>; McCormack, P. D., & Wright, N. M. (1964) <doi:10.1037/h0083285>; Van Zandt, T. (2000) <doi:10.3758/BF03214357>; El Haj, A., Slaoui, Y., Solier, C., & Perret, C. (2021) <doi:10.19139/soic-2310-5070-1251>; Gilks, W. R., Best, N. G., & Tan, K. K. C. (1995) <doi:10.2307/2986138>.
+License: GPL-2
+Encoding: UTF-8
+LazyLoad: true
+RoxygenNote: 7.2.3
+Imports: pracma, stats, nloptr, invgamma, dlm, fitdistrplus,
+        gamlss.dist
+NeedsCompilation: no
+Packaged: 2023-09-22 12:20:24 UTC; jean
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Author: Yousri SLAOUI [aut] (<https://orcid.org/0000-0001-5295-3311>),
+  Alandra ZAKKOUR [aut],
+  Caroline BORDES [aut, ctb],
+  Cyril PERRET [aut] (<https://orcid.org/0000-0002-4552-9093>),
+  Jean DUMONCEL [aut, cre] (<https://orcid.org/0000-0003-0789-7458>)
+Maintainer: Jean DUMONCEL <jean.dumoncel@univ-poitiers.fr>
+Repository: CRAN
+Date/Publication: 2023-09-25 10:40:08 UTC

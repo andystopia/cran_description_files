@@ -1,0 +1,29 @@
+Package: BayesFBHborrow
+Title: Bayesian Dynamic Borrowing with Flexible Baseline Hazard
+        Function
+Version: 0.0.2
+Authors@R: c(
+    person(given = "Darren", family = "Scott", role = c("aut", "cre"), email = "darren.scott@astrazeneca.com"),
+    person(given = "Sophia", family = "Axillus", role = c("aut"), email = "sophia.axillus@astrazeneca.com")
+    )
+Description: Allows Bayesian borrowing from a historical dataset for time-to-
+    event data. A flexible baseline hazard function is achieved via a piecewise
+    exponential likelihood with time varying split points and smoothing prior on the
+    historic baseline hazards.
+License: Apache License (>= 2)
+Encoding: UTF-8
+Author: Darren Scott [aut, cre],
+  Sophia Axillus [aut]
+RoxygenNote: 7.2.3
+Suggests: tibble, readxl, testthat (>= 3.0.0), rmarkdown, ggfortify,
+        condSURV
+Config/testthat/edition: 3
+Imports: dplyr, stats, survival, invgamma, mvtnorm, checkmate,
+        magrittr, ggplot2
+Depends: R (>= 4.1)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-12-19 07:42:09 UTC; hidden
+Maintainer: Darren Scott <darren.scott@astrazeneca.com>
+Repository: CRAN
+Date/Publication: 2024-01-11 13:00:07 UTC

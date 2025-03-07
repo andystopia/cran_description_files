@@ -1,0 +1,33 @@
+Title: Nested Cross Validation for the Relaxed Lasso and Other Machine
+        Learning Models
+Package: glmnetr
+Version: 0.5-2
+Date: 2024-07-10
+Depends: R (>= 3.4.0)
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Imports: glmnet, survival, Matrix, xgboost, smoof, mlrMBO,
+        ParamHelpers, randomForestSRC, rpart, torch, aorsf,
+        DiceKriging, rgenoud
+ByteCompile: Yes
+Authors@R: c(person(c("Walter", "K"), "Kremers",
+                    role=c("aut", "cre"),
+                    email="kremers.walter@mayo.edu", 
+                    comment = c(ORCID = "0000-0001-5714-3473")),
+             person(c("Nicholas", "B"), "Larson", role=c("ctb")) )
+Author: Walter K Kremers [aut, cre] (<https://orcid.org/0000-0001-5714-3473>),
+  Nicholas B Larson [ctb]
+Maintainer: Walter K Kremers <kremers.walter@mayo.edu>
+Description: 
+    Cross validation informed Relaxed LASSO, Artificial Neural Network (ANN), gradient boosting machine ('xgboost'), Random Forest ('RandomForestSRC'), Oblique Random Forest ('aorsf'), Recursive Partitioning ('RPART') or step wise regression models are fit.  Cross validation leave out samples (leading to nested cross validation) or bootstrap out-of-bag samples are used to evaluate and compare performances between these models with results presented in tabular or graphical means.  Calibration plots can also be generated, again based upon (outer nested) cross validation or bootstrap leave out (out of bag) samples. 
+    For some datasets, for example when the design matrix is not of full rank, 'glmnet' may have very long run times when fitting the relaxed lasso model, from our experience when fitting Cox models on data with many predictors and many patients, making it difficult to get solutions from either glmnet() or cv.glmnet().  This may be remedied by using the 'path=TRUE' option when calling glmnet() and cv.glmnet().  Within the glmnetr package the approach of path=TRUE is taken by default. 
+    When fitting not a relaxed lasso model but an elastic-net model, then the R-packages 'nestedcv' <https://cran.r-project.org/package=nestedcv>, 'glmnetSE' <https://cran.r-project.org/package=glmnetSE> or others may provide greater functionality when performing a nested CV. 
+    Use of the 'glmnetr' has many similarities to the 'glmnet' package and it is recommended that the user of 'glmnetr' also become familiar with the 'glmnet' package <https://cran.r-project.org/package=glmnet>, with the "An Introduction to 'glmnet'" and "The Relaxed Lasso" being especially useful in this regard. 
+License: GPL-3
+NeedsCompilation: no
+Copyright: Mayo Foundation for Medical Education and Research
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Packaged: 2024-07-12 03:51:08 UTC; kremers.walter
+Repository: CRAN
+Date/Publication: 2024-07-12 14:20:02 UTC

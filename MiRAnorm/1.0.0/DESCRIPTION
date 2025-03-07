@@ -1,0 +1,24 @@
+Package: MiRAnorm
+Type: Package
+Title: Adaptive Normalization for miRNA Data
+Version: 1.0.0
+Authors@R: c(
+	person("Yuda", "Zhu", email = "yudazhu@gmail.com", role = c("aut", "cre")),
+  person("Amanda", "Zhao", email = "happysundae@gmail.com", role = c("aut")))
+Description: An adaptive normalization algorithm that selects housekeeping genes
+    based on the sample level variability in the data. This is suitable for any data
+    obtained from RT-qPCR assays.  A manuscript describing the method is submitted 
+    to Genome Biology under ``MiRA-norm: An Adaptive Method for the Normalization of MicroRNA Array Data``, Yuda Zhu et al.
+Depends: R (>= 3.1.0)
+Imports: grDevices, graphics, stats, utils, ggplot2, cluster, npmv,
+        dendextend, parallel, MASS, plyr, reshape2, ArgumentCheck
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-11-02 23:40:19 UTC; zhuy30
+Author: Yuda Zhu [aut, cre],
+  Amanda Zhao [aut]
+Maintainer: Yuda Zhu <yudazhu@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-11-03 11:33:06

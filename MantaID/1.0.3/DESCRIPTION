@@ -1,0 +1,32 @@
+Package: MantaID
+Title: A Machine-Learning Based Tool to Automate the Identification of
+        Biological Database IDs
+Version: 1.0.3
+Authors@R: 
+    c(person("Zhengpeng", "Zeng",email = "molaison@foxmail.com", role = c("aut","cre","ctb"),comment = c(ORCID = "0000-0001-7919-209X")),
+    person("Longfei","Mao",email = "longfeimao99@gmail.com",role = c("aut","cph"),comment = c(ORCID = "0000-0003-0759-0501")),
+    person("Feng","Yu",email = "feng_yu@hnu.edu.cn",role = c("aut"), comment = c(ORCID = "0000-0002-5221-281X")),
+    person("Jiamin","Hu",email = "Jiamin-Hu@hotmail.com",role = c("ctb"), comment = c(ORCID = "0000-0003-3030-2117")),
+    person("Xiting","Wang",email = "XitingWang2023@outlook.com",role = c("ctb"), comment = c(ORCID = "0009-0009-5235-0006"))
+    )
+Description: The number of biological databases is growing rapidly, but different databases use different IDs to refer to the same biological entity. The inconsistency in IDs impedes the integration of various types of biological data. To resolve the problem, we developed 'MantaID', a data-driven, machine-learning based approach that automates identifying IDs on a large scale. The 'MantaID' model's prediction accuracy was proven to be 99%, and it correctly and effectively predicted 100,000 ID entries within two minutes. 'MantaID' supports the discovery and exploitation of ID patterns from large quantities of databases. (e.g., up to 542 biological databases). An easy-to-use freely available open-source software R package, a user-friendly web application, and API were also developed for 'MantaID' to improve applicability. To our knowledge, 'MantaID' is the first tool that enables an automatic, quick, accurate, and comprehensive identification of large quantities of IDs, and can therefore be used as a starting point to facilitate the complex assimilation and aggregation of biological data across diverse databases.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.4.0),biomaRt,caret,keras,mlr3tuning,mlr3
+LazyData: true
+URL: https://molaison.github.io/MantaID/
+Imports:
+        ggplot2,data.table,magrittr,stringr,tibble,tidyr,tidyselect,ggcorrplot,reshape2,scutr,paradox,RColorBrewer,purrr,dplyr
+Suggests: mlr3hyperband,mlr3learners,ranger,rpart,xgboost
+NeedsCompilation: no
+Packaged: 2024-08-27 07:35:03 UTC; pc
+Author: Zhengpeng Zeng [aut, cre, ctb]
+    (<https://orcid.org/0000-0001-7919-209X>),
+  Longfei Mao [aut, cph] (<https://orcid.org/0000-0003-0759-0501>),
+  Feng Yu [aut] (<https://orcid.org/0000-0002-5221-281X>),
+  Jiamin Hu [ctb] (<https://orcid.org/0000-0003-3030-2117>),
+  Xiting Wang [ctb] (<https://orcid.org/0009-0009-5235-0006>)
+Maintainer: Zhengpeng Zeng <molaison@foxmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-27 08:40:02 UTC

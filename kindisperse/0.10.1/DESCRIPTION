@@ -1,0 +1,43 @@
+Package: kindisperse
+Title: Simulate and Estimate Close-Kin Dispersal Kernels
+Version: 0.10.1
+Authors@R: 
+    person(given = "Moshe-Elijah",
+           family = "Jasper",
+           role = c("aut", "cre"),
+           email = "moshe.jasper@unimelb.edu.au",
+           comment = c(ORCID = "0000-0003-4541-3223"))
+Description: Functions for simulating and estimating kinship-related dispersal. Based
+    on the methods described in M. Jasper, T.L. Schmidt., N.W. Ahmad, S.P. Sinkins & A.A. 
+    Hoffmann (2019) <doi:10.1111/1755-0998.13043> "A genomic approach to inferring kinship 
+    reveals limited intergenerational dispersal in the yellow fever mosquito".
+    Assumes an additive variance model of dispersal in two dimensions, compatible with 
+    Wright's neighbourhood area. Simple and composite dispersal simulations are supplied, 
+    as well as the functions needed to estimate parent-offspring dispersal for simulated or 
+    empirical data, and to undertake sampling design for future field studies of dispersal. 
+    For ease of use an integrated Shiny app is also included. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/moshejasper/kindisperse
+RoxygenNote: 7.1.1
+Suggests: testthat, knitr, rmarkdown
+Imports: ggplot2, readr, shiny, shinythemes, ggrepel, fitdistrplus,
+        LaplacesDemon, here, stats, methods, tibble, grid, magrittr,
+        plotly, dplyr, rlang, tidyselect, stringr
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Collate: 'DispersalModel.R' 'KinPairData.R' 'dispersal_model.R'
+        'KinPairSimulation.R' 'app.R' 'app_ports.R'
+        'axial_helper_functions.R' 'axials_standard.R' 'data.R'
+        'export_functions.R' 'import_kinpairs.R'
+        'kindisperse-package.R' 'sample_kindist.R' 'simgraph_data.R'
+        'simgraph_graph.R' 'simulate_kindist_composite.R'
+        'simulate_kindist_custom.R' 'simulate_kindist_simple.R'
+NeedsCompilation: no
+Packaged: 2021-07-17 15:02:02 UTC; mossu
+Author: Moshe-Elijah Jasper [aut, cre]
+    (<https://orcid.org/0000-0003-4541-3223>)
+Maintainer: Moshe-Elijah Jasper <moshe.jasper@unimelb.edu.au>
+Repository: CRAN
+Date/Publication: 2021-07-17 15:30:02 UTC

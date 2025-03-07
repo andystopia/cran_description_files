@@ -1,0 +1,58 @@
+Type: Package
+Package: concurve
+Title: Computes & Plots Compatibility (Confidence), Surprisal, &
+        Likelihood Distributions
+Version: 2.7.7
+Date: 2020-10-12
+Authors@R: 
+    c(person(given = "Zad",
+             family = "Rafi",
+             role = c("aut", "cre"),
+             email = "zad@lesslikely.com",
+             comment = c(ORCID = "0000-0003-1545-8199")),
+      person(given = "Andrew D.",
+             family = "Vigotsky",
+             role = "aut",
+             email = "avigotsky@gmail.com",
+             comment = c(ORCID = "0000-0003-3166-0688")),
+      person(given = "Aaron",
+             family = "Caldwell",
+             role = "ctb",
+             email = "arcaldwell49@gmail.com",
+             comment = c(ORCID = "0000-0002-4541-6283")))
+Maintainer: Zad Rafi <zad@lesslikely.com>
+Description: Computes compatibility (confidence) distributions along with their corresponding P-values,
+    S-values, and likelihoods. The intervals can be plotted to form the distributions themselves.  
+    Functions can be compared to one another to see how much they overlap. Results can be
+    exported to Microsoft Word, Powerpoint, and TeX documents. The package currently supports 
+    resampling methods, computing differences, generalized linear models, mixed-effects models, 
+    survival analysis, and meta-analysis. These methods are discussed 
+    by Schweder T, Hjort NL. (2016, ISBN:9781316445051) and 
+    Rafi Z, Greenland S. (2020) <doi:10.1186/s12874-020-01105-9>.
+License: GPL-3 | file LICENSE
+URL: https://data.lesslikely.com/concurve/,
+        https://github.com/zadrafi/concurve
+BugReports: https://github.com/zadrafi/concurve/issues
+Depends: R (>= 4.0.0)
+Imports: methods, bcaboot, boot, dplyr, flextable, ggplot2, knitr,
+        metafor, officer, parallel, pbmcapply, ProfileLikelihood,
+        scales, colorspace, survival, survminer, tibble, tidyr
+Suggests: MASS, lme4, covr, roxygen2, spelling, testthat, rmarkdown,
+        Lock5Data, carData, bench, rms, brms, rstan, rstanarm,
+        bayesplot, vdiffr, ggtext, daewr, svglite, data.table, nlme,
+        simstudy, patchwork, cowplot, reprex
+ByteCompile: true
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.1
+X-schema.org-keywords: confidence, compatibility, consonance, curve,
+        information statistics, surprisals, interval, function,
+        distribution, fiducial
+NeedsCompilation: no
+Packaged: 2020-10-12 16:07:50 UTC; zad
+Author: Zad Rafi [aut, cre] (<https://orcid.org/0000-0003-1545-8199>),
+  Andrew D. Vigotsky [aut] (<https://orcid.org/0000-0003-3166-0688>),
+  Aaron Caldwell [ctb] (<https://orcid.org/0000-0002-4541-6283>)
+Repository: CRAN
+Date/Publication: 2020-10-12 17:10:06 UTC

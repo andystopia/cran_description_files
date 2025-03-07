@@ -1,0 +1,77 @@
+Package: popRF
+Type: Package
+Title: Random Forest-Informed Population Disaggregation
+Version: 1.0.0
+Authors@R: c(
+    person( 
+          given = "Maksym", 
+          family = "Bondarenko", 
+          role = c("aut", "cre", "cph"), 
+          email = "mb4@soton.ac.uk", 
+          comment = c(ORCID = "0000-0003-4958-6551")
+          ),
+    person( 
+          given = "Jeremiah J", 
+          family = "Nieves", 
+          role = c("aut"), 
+          email = "j.j.nieves@liverpool.ac.uk", 
+          comment = c(ORCID = "0000-0002-7423-1341")
+          ),
+    person( 
+          given = "Forrest R.", 
+          family = "Stevens", 
+          role = c("aut"), 
+          email = "forrest.stevens@louisville.edu"
+          ),
+    person( 
+          given = "Andrea E.", 
+          family = "Gaughan", 
+          role = c("aut"), 
+          email = "ae.gaughan@louisville.edu"
+          ),            
+    person( 
+          given = "Chris", 
+          family = "Jochem", 
+          role = c("ctb"), 
+          email = "W.C.Jochem@soton.ac.uk", 
+          comment = c(ORCID = "0000-0003-2192-5988")
+          ),          
+    person( 
+          given = "David", 
+          family = "Kerr", 
+          role = c("ctb"), 
+          email = "dk2n16@soton.ac.uk"
+          ),
+    person( 
+          given = "Alessandro", 
+          family = "Sorichetta", 
+          role = c("ctb"), 
+          email = "as1v13@soton.ac.uk", 
+          comment = c(ORCID = "0000-0002-3576-5826")
+          )
+    )
+Maintainer: Maksym Bondarenko <mb4@soton.ac.uk>
+Description: Disaggregating census-based areal population counts to finer 
+    gridded population surfaces using Random Forest algorithm to determine 
+    the target area weights 
+    (see _Stevens, et al._ (2015) <doi:10.1371/journal.pone.0107042>). 
+URL: https://github.com/wpgp/popRF
+BugReports: https://github.com/wpgp/popRF/issues
+Imports: doParallel, parallel, raster, methods, stats, foreach,
+        gdalUtils, randomForest, quantregForest, plyr
+Depends: R (>= 3.2.0)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-07-24 09:55:49 UTC; Maxim
+Author: Maksym Bondarenko [aut, cre, cph]
+    (<https://orcid.org/0000-0003-4958-6551>),
+  Jeremiah J Nieves [aut] (<https://orcid.org/0000-0002-7423-1341>),
+  Forrest R. Stevens [aut],
+  Andrea E. Gaughan [aut],
+  Chris Jochem [ctb] (<https://orcid.org/0000-0003-2192-5988>),
+  David Kerr [ctb],
+  Alessandro Sorichetta [ctb] (<https://orcid.org/0000-0002-3576-5826>)
+Repository: CRAN
+Date/Publication: 2021-07-26 07:10:02 UTC

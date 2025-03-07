@@ -1,0 +1,35 @@
+Package: selenider
+Title: Concise, Lazy and Reliable Wrapper for 'chromote' and
+        'RSelenium'
+Version: 0.1.2
+Authors@R: 
+    person("Ashby", "Thorpe", , "ashbythorpe@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-3106-099X"))
+Description: A user-friendly wrapper for web automation, using either 'chromote'
+    or 'RSelenium'. Provides a simple and consistent API to make web scraping
+    and testing scripts easy to write and understand. Elements are lazy, and
+    automatically wait for the website to be valid, resulting in reliable and
+    reproducible code, with no visible impact on the experience of the programmer.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, coro, curl, lifecycle, prettyunits, processx, rlang (>=
+        1.1.0), utils, vctrs, withr
+URL: https://github.com/ashbythorpe/selenider,
+        https://ashbythorpe.github.io/selenider/
+BugReports: https://github.com/ashbythorpe/selenider/issues
+Suggests: chromote, jsonlite, knitr, purrr, rmarkdown, RSelenium,
+        rvest, shiny, shinytest2, showimage, testthat (>= 3.0.0),
+        wdman, xml2
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+Config/Needs/website: rmarkdown
+LazyData: true
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2023-09-29 18:36:33 UTC; ashbythorpe
+Author: Ashby Thorpe [aut, cre, cph] (<https://orcid.org/0000-0003-3106-099X>)
+Maintainer: Ashby Thorpe <ashbythorpe@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-01 16:30:02 UTC

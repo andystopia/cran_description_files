@@ -1,0 +1,33 @@
+Package: nestedcv
+Title: Nested Cross-Validation with 'glmnet' and 'caret'
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Myles",family = "Lewis",
+    role = c("aut", "cre"),
+    email = "myles.lewis@qmul.ac.uk",
+    comment = c(ORCID = "0000-0001-9365-5345")),
+    person(given = "Athina",family = "Spiliopoulou",
+    role = c("aut"),
+    comment = c(ORCID = "0000-0002-5929-6585")),
+    person(given = "Katriona",family = "Goldmann",
+    role = c("aut"),
+    email = "k.goldmann@qmul.ac.uk",
+    comment = c(ORCID = "0000-0002-9073-6323")))
+Maintainer: Myles Lewis <myles.lewis@qmul.ac.uk>
+Description: Implements nested k*l-fold cross-validation for lasso and elastic-net regularised linear models via the 'glmnet' package and other machine learning models via the 'caret' package. Cross-validation of 'glmnet' alpha mixing parameter and embedded fast filter functions for feature selection are provided. Described as double cross-validation by Stone (1977) <doi:10.1111/j.2517-6161.1977.tb01603.x>. Also implemented is a method using outer CV to measure unbiased model performance metrics when fitting Bayesian linear and logistic regression shrinkage models using the horseshoe prior over parameters to encourage a sparse model as described by Piironen & Vehtari (2017) <doi:10.1214/17-EJS1337SI>.
+Language: en-gb
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Boruta, caret, CORElearn, data.table, ggplot2, glmnet, hsstan,
+        matrixTests, methods, parallel, pROC, randomForest, RcppEigen,
+        Rfast, rlang
+RoxygenNote: 7.2.1
+Suggests: mda, rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-09-10 11:39:40 UTC; myles
+Author: Myles Lewis [aut, cre] (<https://orcid.org/0000-0001-9365-5345>),
+  Athina Spiliopoulou [aut] (<https://orcid.org/0000-0002-5929-6585>),
+  Katriona Goldmann [aut] (<https://orcid.org/0000-0002-9073-6323>)
+Repository: CRAN
+Date/Publication: 2022-09-10 21:50:02 UTC

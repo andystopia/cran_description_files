@@ -1,0 +1,37 @@
+Package: SPSP
+Type: Package
+Title: Selection by Partitioning the Solution Paths
+Description: An implementation of the feature Selection procedure by Partitioning the entire Solution Paths
+            (namely SPSP) to identify the relevant features rather than using a single tuning parameter. 
+            By utilizing the entire solution paths, this procedure can obtain better selection accuracy than 
+            the commonly used approach of selecting only one tuning parameter based on existing criteria, 
+            cross-validation (CV), generalized CV, AIC, BIC, and extended BIC (Liu, Y., & Wang, P. (2018) 
+            <doi:10.1214/18-EJS1434>). It is more stable and accurate (low false positive and 
+            false negative rates) than other variable selection approaches. In addition, it can be flexibly 
+            coupled with the solution paths of Lasso, adaptive Lasso, ridge regression, and other penalized 
+            estimators.
+Version: 0.1.0
+Date: 2021-07-25
+Authors@R: c(
+  person(given = "Xiaorui (Jeremy)", family = "Zhu", email = "zhuxiaorui1989@gmail.com", role = c("aut", "cre")),
+  person(given = "Yang", family = "Liu", email = "yliu23@fhcrc.org", role = c("aut")), 
+  person(given = "Peng", family = "Wang", email = "wangp9@ucmail.uc.edu", role = c("aut"))
+  )
+Maintainer: Xiaorui (Jeremy) Zhu <zhuxiaorui1989@gmail.com>
+URL: https://github.com/XiaoruiZhu/SPSP
+BugReports: https://github.com/XiaoruiZhu/SPSP/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0), glmnet, lars
+Imports: Rcpp (>= 1.0.7), MASS
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-07-29 19:13:39 UTC; Xiaorui
+Author: Xiaorui (Jeremy) Zhu [aut, cre],
+  Yang Liu [aut],
+  Peng Wang [aut]
+Repository: CRAN
+Date/Publication: 2021-08-02 08:40:04 UTC

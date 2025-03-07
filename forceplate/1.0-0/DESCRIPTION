@@ -1,0 +1,25 @@
+Package: forceplate
+Title: Processing Force-Plate Data
+Version: 1.0-0
+Authors@R: 
+    c(person("Raphae", "Hartmann", , "raphael.hartmann@protonmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4686-9329")),
+      person("Anton", "Koger", , "anton.koger@psych.rwth-aachen.de", role = c("aut", "ctb"), comment = c(ORCID = "0009-0004-6906-5184")),
+      person("Leif", "Johannsen", , "leif.johannsen@psych.rwth-aachen.de", role = c("ctb")))
+Description: Process raw force-plate data (txt-files) by segmenting them into trials and, if needed, calculating (user-defined) descriptive 
+    statistics of variables for user-defined time bins (relative to trigger onsets) for each trial. When segmenting the data a baseline 
+    correction, a filter, and a data imputation can be applied if needed. Experimental data can also be processed and combined with the 
+    segmented force-plate data. This procedure is suggested by Johannsen et al. (2023) <doi:10.6084/m9.figshare.22190155> and some of the 
+    options (e.g., choice of low-pass filter) are also suggested by Winter (2009) <doi:10.1002/9780470549148>.
+Imports: data.table, signal, stats, stringi
+Suggests: curl
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-12-18 15:49:05 UTC; fluffy
+Author: Raphae Hartmann [aut, cre] (<https://orcid.org/0000-0003-4686-9329>),
+  Anton Koger [aut, ctb] (<https://orcid.org/0009-0004-6906-5184>),
+  Leif Johannsen [ctb]
+Maintainer: Raphae Hartmann <raphael.hartmann@protonmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-19 16:30:02 UTC

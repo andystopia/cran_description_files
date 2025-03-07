@@ -1,0 +1,38 @@
+Package: Qindex
+Type: Package
+Title: Quantile-Based Predictors for Survival Outcome
+Version: 0.1.0
+Date: 2022-09-14
+Author: Misung Yi [aut, cph],
+  Tingting Zhan [aut, cre, cph] (<https://orcid.org/0000-0001-9971-4844>),
+  Inna Chervoneva [aut, cph]
+Maintainer: Tingting Zhan <tingtingzhan@gmail.com>
+Description: Select optimal quantile-based predictors for
+       survival outcome, to include the means to handle
+       dichotomizing the quantiles, mean-signal-intensity or
+       other continuous markers, and to obtain estimates for
+       dichotomized predictors by Bootstrap-based bias
+       correction.
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+License: GPL-2
+Depends: R (>= 4.2),
+Language: en-US
+Authors@R: c(person(given = 'Misung', family = 'Yi', role =
+       c('aut', 'cph'), email = 'Misung.Yi@jefferson.edu'),
+       person(given = 'Tingting', family = 'Zhan', role =
+       c('aut', 'cre', 'cph'), email =
+       'tingtingzhan@gmail.com', comment = c(ORCID =
+       '0000-0001-9971-4844')), person(given = 'Inna', family
+       = 'Chervoneva', role = c('aut', 'cph'), email =
+       'Inna.Chervoneva@jefferson.edu'))
+Imports: stats, boot, rpart, survival, matrixStats
+Suggests: knitr
+Collate: '0info.R' 'pkg_data_doc.R' 'optQp.R' 'sampleQp.R'
+        'BBC_dichotom.R'
+NeedsCompilation: no
+Packaged: 2022-09-15 15:07:35 UTC; tingtingzhan
+Repository: CRAN
+Date/Publication: 2022-09-19 08:36:11 UTC

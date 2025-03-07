@@ -1,0 +1,25 @@
+Package: precommit
+Title: Pre-Commit Hooks
+Version: 0.2.0
+Author: Lorenz Walthert
+Maintainer: Lorenz Walthert <lorenz.walthert@icloud.com>
+Description: Useful git hooks for R building on top of the multi-language
+    framework 'pre-commit' for hook management. This package provides git
+    hooks for common tasks like formatting files with 'styler' or spell
+    checking as well as wrapper functions to access the 'pre-commit'
+    executable.
+License: GPL-3
+URL: https://lorenzwalthert.github.io/precommit/,
+        https://github.com/lorenzwalthert/precommit
+Imports: R.cache, cli, docopt (>= 0.7.1), fs, here, magrittr, purrr,
+        rlang, rprojroot, rstudioapi, tibble, withr, yaml
+Suggests: desc, digest, git2r, glue, knitr, lintr, mockery, pkgload,
+        reticulate (>= 1.16), rmarkdown, roxygen2, spelling, styler,
+        testthat (>= 2.1.0), usethis (>= 2.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.1.9001
+NeedsCompilation: no
+Packaged: 2021-12-01 09:43:44 UTC; lorenz
+Repository: CRAN
+Date/Publication: 2021-12-01 10:10:02 UTC

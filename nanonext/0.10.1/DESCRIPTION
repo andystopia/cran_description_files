@@ -1,0 +1,39 @@
+Package: nanonext
+Type: Package
+Title: NNG (Nanomsg Next Gen) Lightweight Messaging Library
+Version: 0.10.1
+Description: R binding for NNG (Nanomsg Next Gen), a successor to ZeroMQ. NNG is 
+    a socket library providing high-performance scalability protocols, a
+    cross-platform standard for messaging and communications. Serves as a
+    concurrency framework for building distributed applications, utilising 'aio'
+    objects which resolve automatically upon completion of asynchronous
+    operations. Implements connections with transport layer security, and
+    synchronisation primitives, which allow R execution to wait upon events
+    being signalled by concurrent messaging threads.
+Authors@R: 
+    c(person(given = "Charlie",
+             family = "Gao",
+             role = c("aut", "cre"),
+             email = "charlie.gao@shikokuchuo.net",
+             comment = c(ORCID = "0000-0002-0750-061X")),
+      person(given = "Hibiki AI Limited",
+             role = "cph"),
+      person(given = "R Consortium",
+             role = "fnd"))
+License: GPL (>= 3)
+BugReports: https://github.com/shikokuchuo/nanonext/issues
+URL: https://shikokuchuo.net/nanonext/,
+        https://github.com/shikokuchuo/nanonext/
+Encoding: UTF-8
+SystemRequirements: 'libnng' >= 1.5 and 'libmbedtls' >= 2.5, or 'cmake'
+        to compile NNG and/or Mbed TLS included in package sources
+Depends: R (>= 3.5)
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-09-26 11:30:49 UTC; cg334
+Author: Charlie Gao [aut, cre] (<https://orcid.org/0000-0002-0750-061X>),
+  Hibiki AI Limited [cph],
+  R Consortium [fnd]
+Maintainer: Charlie Gao <charlie.gao@shikokuchuo.net>
+Repository: CRAN
+Date/Publication: 2023-09-26 12:50:02 UTC

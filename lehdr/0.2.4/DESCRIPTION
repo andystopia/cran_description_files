@@ -1,0 +1,28 @@
+Package: lehdr
+Type: Package
+Title: Grab Longitudinal Employer-Household Dynamics (LEHD) Flat Files
+Version: 0.2.4
+Authors@R: c(person("Jamaal", "Green", role = c("cre","aut"), email="jamaal.green@gmail.com"), 
+              person("Liming", "Wang", role =c("aut"), email="lmwang@pdx.edu"), 
+              person("Dillon", "Mahmoudi", role =c("aut"), email="dillonm@umbc.edu"))
+Maintainer: Jamaal Green <jamaal.green@gmail.com>
+Description: Designed to query Longitudinal Employer-Household Dynamics (LEHD) 
+    workplace/residential association and origin-destination flat files and 
+    optionally aggregate Census block-level data to block group, tract, county, 
+    or state. Data comes from the LODES FTP server <https://lehd.ces.census.gov/data/lodes/LODES7/>.
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: readr, rlang, stringr, glue, httr, dplyr, rappdirs
+Suggests: testthat, knitr, rmarkdown, devtools, pacman
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+URL: https://github.com/jamgreen/lehdr/
+BugReports: https://github.com/jamgreen/lehdr/issues/
+NeedsCompilation: no
+Packaged: 2021-04-04 16:32:54 UTC; jamaalg
+Author: Jamaal Green [cre, aut],
+  Liming Wang [aut],
+  Dillon Mahmoudi [aut]
+Repository: CRAN
+Date/Publication: 2021-04-06 09:20:02 UTC

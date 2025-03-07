@@ -1,0 +1,28 @@
+Package: ranktreeEnsemble
+Type: Package
+Title: Ensemble Models of Rank-Based Trees with Extracted Decision
+        Rules
+Version: 0.21
+Date: 2023-08-03
+Authors@R: c(
+    person("Ruijie", "Yin", role = "aut"),
+    person("Chen", "Ye", role = "aut"),
+    person("Min", "Lu", , "luminwin@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1386-1315")))
+Maintainer: Min Lu <luminwin@gmail.com>
+BugReports: https://github.com/TransBioInfoLab/ranktreeEnsemble/issues/
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.10),randomForestSRC,gbm,methods,data.tree
+LinkingTo: Rcpp
+Description: Fast computing an ensemble of rank-based trees via boosting or random forest on binary and multi-class problems. It converts continuous gene expression profiles into ranked gene pairs, for which the variable importance indices are computed and adopted for dimension reduction. Decision rules can be extracted from trees. 
+URL: https://github.com/TransBioInfoLab/ranktreeEnsemble/
+LazyData: TRUE
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-08-05 20:15:26 UTC; min
+Repository: CRAN
+Date/Publication: 2023-08-08 16:20:05 UTC
+Author: Ruijie Yin [aut],
+  Chen Ye [aut],
+  Min Lu [aut, cre] (<https://orcid.org/0000-0002-1386-1315>)

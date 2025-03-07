@@ -1,0 +1,25 @@
+Package: plotHMM
+Type: Package
+Title: Plot Hidden Markov Models
+Version: 2022.1.18
+Authors@R: c(
+    person("Toby", "Hocking",
+     email="toby.hocking@r-project.org",
+     role=c("aut", "cre")))
+Description: Hidden Markov Models are useful for modeling
+ sequential data. This package provides several functions
+ implemented in C++ for explaining the algorithms used for
+ Hidden Markov Models (forward, backward, decoding,
+ learning).
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.7)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, knitr, markdown, R.utils, covr, depmixS4,
+        data.table, ggplot2, neuroblastoma, microbenchmark
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-01-18 20:38:39 UTC; th798
+Author: Toby Hocking [aut, cre]
+Maintainer: Toby Hocking <toby.hocking@r-project.org>
+Repository: CRAN
+Date/Publication: 2022-01-19 09:32:42 UTC

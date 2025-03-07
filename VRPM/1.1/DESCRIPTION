@@ -1,0 +1,27 @@
+Package: VRPM
+Type: Package
+Title: Visualizing Risk Prediction Models
+Version: 1.1
+Date: 2016-09-01
+Author: Vanya Van Belle
+Maintainer: Vanya Van Belle <vanya.vanbelle@esat.kuleuven.be>
+Description: This is a package to visualize risk prediction models.  For each
+    predictor, a color bar represents the contribution to the linear predictor
+    or latent variable.  A conversion from the linear predictor to the
+    estimated risk or survival is also given.  (Cumulative) contribution charts
+    enable to visualize how the estimated risk for one particular observation
+    is obtained by the model. Several options allow to choose different color
+    maps, and to select the zero level of the contributions.  The package is
+    able to deal with 'glm', 'coxph', 'mfp', 'multinom' and 'ksvm' objects.  For 'ksvm'
+    objects, the visualization is not always exact.  Functions providing tools
+    to indicate the accuracy of the approximation are provided in addition to
+    the visualization.
+Imports: Hmisc, survival, fields, R2HTML, viridis, kernlab, ROCR,
+        ggplot2, shiny, methods, stats, grDevices, graphics, utils
+Suggests: mfp, VGAMdata, nnet
+License: GPL-3
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-09-01 13:04:48 UTC; vanya
+Repository: CRAN
+Date/Publication: 2016-09-01 15:41:33

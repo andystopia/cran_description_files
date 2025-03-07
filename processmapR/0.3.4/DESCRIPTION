@@ -1,0 +1,33 @@
+Package: processmapR
+Type: Package
+Title: Construct Process Maps Using Event Data
+Version: 0.3.4
+Date: 2020-03-04
+Authors@R: c(person("Gert","Janssenswillen",email = "gert.janssenswillen@uhasselt.be", role = c("aut","cre")),
+ person("Benoît","Depaire",email = "benoit.depaire@uhasselt.be", role = c("ctb")),
+ person("Felix","Mannhardt",email = "Felix.Mannhardt@sintef.no", role = c("ctb")),
+ person("Thijs","Beuving", email = "thijs.beuving@kpn.com", role = c("ctb")))
+Description: Visualize event logs using directed graphs, i.e. process maps. Part of the 'bupaR' framework.
+License: MIT + file LICENSE
+LinkingTo: Rcpp, BH
+SystemRequirements: C++11
+Imports: dplyr, bupaR (>= 0.4.0), edeaR (>= 0.8.0), DiagrammeR (>=
+        1.0.0), ggplot2, ggthemes, stringr, purrr, data.table, shiny,
+        miniUI, glue, forcats, hms, RColorBrewer, plotly, rlang,
+        scales, tidyr, htmltools, Rcpp
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown, eventdataR
+VignetteBuilder: knitr
+URL: https://www.bupar.net, https://github.com/bupaverse/processmapr
+BugReports: https://github.com/bupaverse/processmapr/issues
+NeedsCompilation: yes
+Packaged: 2020-03-04 16:24:11 UTC; lucp8407
+Author: Gert Janssenswillen [aut, cre],
+  Benoît Depaire [ctb],
+  Felix Mannhardt [ctb],
+  Thijs Beuving [ctb]
+Maintainer: Gert Janssenswillen <gert.janssenswillen@uhasselt.be>
+Repository: CRAN
+Date/Publication: 2020-03-11 23:10:15 UTC

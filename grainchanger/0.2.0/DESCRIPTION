@@ -1,0 +1,43 @@
+Package: grainchanger
+Title: Moving-Window and Direct Data Aggregation
+Version: 0.2.0
+Authors@R: c(person("Laura", "Graham", 
+             email = "LauraJaneEGraham@gmail.com", 
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-3611-7281")),
+             person("Felix", "Eigenbrod",
+             role = "ctb",
+             email = "f.eigenbrod@soton.ac.uk",
+             comment = "Input on initial conceptual development"),
+             person("Marco", "Sciaini",
+             role = "ctb",
+             email = "sciaini.marco@gmail.com",
+             comment = "Input on package development and structure"))
+Description: Data aggregation via moving window or direct methods. Aggregate a 
+    fine-resolution raster to a grid. The moving window method smooths the surface 
+    using a specified function within a moving window of a specified size and shape 
+    prior to aggregation. The direct method simply aggregates to the grid using the 
+    specified function. The package differs from other packages offering moving window 
+    analysis in 2 key ways: 1. The moving window code has been optimised so that it runs 
+    more quickly than \code{raster::focal} or other packages that build on this; 
+    2. It combines moving window and aggregation in a way which can be effectively parallelised.
+Depends: R (>= 3.3)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: raster, sf, furrr, checkmate, methods, usethis
+Suggests: dplyr (>= 0.8-0), testthat, spelling, knitr, rmarkdown, covr,
+        ggplot2, landscapetools, rgdal
+RoxygenNote: 6.1.1
+Language: en-GB
+VignetteBuilder: knitr
+URL: https://github.com/ropensci/grainchanger
+BugReports: https://github.com/ropensci/grainchanger/issues
+NeedsCompilation: no
+Packaged: 2019-06-28 14:51:28 UTC; lg1u16
+Author: Laura Graham [aut, cre] (<https://orcid.org/0000-0002-3611-7281>),
+  Felix Eigenbrod [ctb] (Input on initial conceptual development),
+  Marco Sciaini [ctb] (Input on package development and structure)
+Maintainer: Laura Graham <LauraJaneEGraham@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-06-28 15:30:02 UTC

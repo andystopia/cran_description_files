@@ -1,0 +1,34 @@
+Package: inlamemi
+Type: Package
+Title: Missing Data and Measurement Error Modelling in INLA
+Version: 1.0.0
+Authors@R: c(
+  person("Emma", "Skarstein", email = "emma@skarstein.no",
+         role = c("cre", "aut", "cph"), 
+         comment = c(ORCID = "0000-0002-6347-855X")),
+  person("Stefanie", "Muff",
+         role = c("aut"),
+         comment = c(ORCID = "0000-0002-8425-0757"))
+  )
+Description: Facilitates fitting measurement error and missing data imputation models using integrated nested Laplace approximations, according to the method described in Skarstein, Martino and Muff (2023) <doi:10.1002/bimj.202300078>. See Skarstein and Muff (2024) <doi:10.48550/arXiv.2406.08172> for details on using the package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+Suggests: INLA, knitr, testthat (>= 3.0.0), tibble, rmarkdown, spelling
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+Config/testthat/edition: 3
+Imports: dplyr, ggplot2, rlang, stats, methods, scales
+Depends: R (>= 2.10)
+URL: https://emmaskarstein.github.io/inlamemi/,
+        https://github.com/emmaSkarstein/inlamemi
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-06-21 12:03:56 UTC; emmass
+Author: Emma Skarstein [cre, aut, cph]
+    (<https://orcid.org/0000-0002-6347-855X>),
+  Stefanie Muff [aut] (<https://orcid.org/0000-0002-8425-0757>)
+Maintainer: Emma Skarstein <emma@skarstein.no>
+Repository: CRAN
+Date/Publication: 2024-06-24 15:00:05 UTC

@@ -1,0 +1,42 @@
+Package: bmstdr
+Type: Package
+Title: Bayesian Modeling of Spatio-Temporal Data with R
+Version: 0.1.4
+Authors@R: c(person(given="Sujit K.", family="Sahu", email="S.K.Sahu@soton.ac.uk", role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0003-2315-3598")), person(given="Duncan P.", family="Lee", 
+    email="Duncan.Lee@glasgow.ac.uk", role="aut"),  person(given="K. Shuvo", family="Bakar", 
+    email="shuvo.bakar@gmail.com", role="aut"))
+URL: https://www.sujitsahu.com
+Description: Fits, validates and compares a number of Bayesian models for 
+    spatial and space time point referenced and areal unit data. Model fitting
+    is done using several packages: 'rstan', 'INLA', 'spBayes', 'spTimer', 
+    'spTDyn', 'CARBayes' and 'CARBayesST'. Model comparison is performed using 
+    the DIC and WAIC,  and K-fold cross-validation where the user is free 
+    to select their own subset of data rows for validation. Sahu (2022) 
+    <doi:10.1201/9780429318443> describes the methods in detail.  
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: methods, spTimer, ggplot2, rstan, spBayes, CARBayes,
+        CARBayesST, spTDyn, MCMCpack, Rdpack
+RdMacros: Rdpack
+Depends: R (>= 3.4.0), Rcpp (>= 0.12.0)
+Suggests: INLA (>= 20.03.17), coda, extraDistr, RcppParallel, maps,
+        rstantools (>= 2.0.0), xtable, MASS, mnormt, loo, cowplot,
+        ggrepel, ggspatial, sf, knitr, rmarkdown, testthat, ggsn,
+        ggpubr, akima, tidyr, huxtable, RColorBrewer, magick, markdown,
+        bookdown, inlabru, BiocStyle
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+Additional_repositories: https://inla.r-inla-download.org/R/stable
+NeedsCompilation: yes
+Packaged: 2022-04-05 17:19:33 UTC; sks
+Author: Sujit K. Sahu [aut, cre] (<https://orcid.org/0000-0003-2315-3598>),
+  Duncan P. Lee [aut],
+  K. Shuvo Bakar [aut]
+Maintainer: Sujit K. Sahu <S.K.Sahu@soton.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-04-08 08:12:33 UTC

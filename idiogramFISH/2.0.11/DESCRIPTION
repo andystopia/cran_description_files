@@ -1,0 +1,31 @@
+Package: idiogramFISH
+Title: Shiny App. Idiograms with Marks and Karyotype Indices
+Version: 2.0.11
+Date: 2023-04-09
+Authors@R: c(person("Fernando", "Roa", email = "froao@unal.edu.co", role = c("aut", "cre") ), 
+             person(given="Mariana PC Telles", email = "", role = c("ctb")) 
+             )
+Description: Plot idiograms of karyotypes, plasmids, circular chr. having a set of data.frames for chromosome data and optionally mark data. Two styles of chromosomes can be used: without or with visible chromatids. Supports micrometers, cM and Mb or any unit. Three styles of centromeres are available: triangle, rounded and inProtein; and six styles of marks are available: square (squareLeft), dots, cM (cMLeft), cenStyle, upArrow (downArrow), exProtein (inProtein); its legend (label) can be drawn inline or to the right of karyotypes. Idiograms can also be plotted in concentric circles. It is possible to calculate chromosome indices by Levan et al. (1964) <https:onlinelibrary.wiley.com/doi/abs/10.1111/j.1601-5223.1964.tb01953.x>, karyotype indices of Watanabe et al. (1999) <doi:10.1007/PL00013869> and Romero-Zarco (1986) <doi:10.2307/1221906> and classify chromosomes by morphology Guerra (1986) and Levan et al. (1964).
+Depends: R (>= 3.5)
+Imports: rlang, crayon, plyr, dplyr, tidyr, scales
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Suggests: rentrez, ggplot2, ggpubr, ggtree, phytools, treeio,
+        rmdformats, knitr, kableExtra, rvcheck, badger, rmarkdown,
+        RCurl, shiny, shinydashboard, rhandsontable, gtools,
+        rclipboard, clipr, shinyjs
+VignetteBuilder: rmdformats, knitr, kableExtra, rmarkdown, RCurl,
+        rvcheck, badger, rentrez
+SystemRequirements: pandoc (>= 2.0)
+URL: https://ferroao.gitlab.io/manualidiogramfish/,
+        https://ferroao.gitlab.io/idiogramfishhelppages
+BugReports: https://gitlab.com/ferroao/idiogramFISH/-/issues
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2023-04-10 21:23:28 UTC; fernando
+Author: Fernando Roa [aut, cre],
+  Mariana PC Telles [ctb]
+Maintainer: Fernando Roa <froao@unal.edu.co>
+Repository: CRAN
+Date/Publication: 2023-04-11 06:20:02 UTC

@@ -1,0 +1,47 @@
+Package: uavRst
+Type: Package
+Title: Unmanned Aerial Vehicle Remote Sensing Tools
+Version: 0.5-4
+Date: 2019-12-18
+Authors@R: c(person("Chris", "Reudenbach", email = "reudenbach@uni-marburg.de", role = c("cre","aut")),
+             person("Hanna", "Meyer", email = "hanna.meyer@uni-marburg.de", role = c("aut")),
+             person("Florian", "Detsch", role = c("ctb")),
+             person("Finn", "Möller", role = c("ctb")),
+             person("Thomas", "Nauss", email = "nauss@uni-marburg.de", role = c("ctb")),
+             person("Lars", "Opgenoorth", email = "opgenoorth@uni-marburg.de", role = c("ctb")),
+             person("Environmental Informatics Marburg", role = c("ctb"))
+             )
+Encoding: UTF-8
+Maintainer: Chris Reudenbach <reudenbach@uni-marburg.de>
+Description: Support the analysis of drone derived imagery and point clouds as a cheap and easy to use alternative/complement to light detection and ranging data. It provides functionality to analyze poor quality digital aerial images as taken by low budget ready to fly drones. This includes supported machine learning based classification functions, comprehensive texture analysis, segmentation algorithms as well as forest relevant analyzes of metrics and measures on the derived products.
+License: GPL (>= 3)
+URL: https://github.com/gisma/uavRst/, https://gisma.github.io/uavRst/
+BugReports: https://github.com/gisma/uavRst/issues/
+Depends: R (>= 3.1.0)
+Imports: raster, foreach
+Suggests: knitr, stringr, sp, sf, htmlwidgets, htmltools, Rcpp, rgdal,
+        rgeos, gdalUtils, tools, caret, zoo, data.table, parallel,
+        spatial.tools, velox, link2GI, doParallel, CAST, glcm, crayon,
+        ForestTools, itcSegment, pROC, methods, RSAGA, reshape2,
+        rgrass7, randomForest, rLiDAR, rlas, lidR, rmarkdown, mapview,
+        R.utils
+LinkingTo: Rcpp
+RoxygenNote: 7.0.2
+SystemRequirements: GNU make
+Collate: 'RcppExports.R' 'rs_textures.R' 'tb_bluedjinn.R'
+        'rs_pc_2D_mdtm.R' 'rs_lidr_makros.R' 'fa_treepos.R'
+        'tb_digitize.R' 'rs_classify.R' 'rs_pc_2D_dsm.R'
+        'rs_pc_2D_fdtm.R' 'fa_crownseg.R' 'fa_crownfilter.R'
+        'fa_crownmetrics.R' 'fa_diversity.R' 'rs_colorspace.R'
+        'uavRst-package.R'
+NeedsCompilation: yes
+Packaged: 2019-12-18 18:22:47 UTC; creu
+Author: Chris Reudenbach [cre, aut],
+  Hanna Meyer [aut],
+  Florian Detsch [ctb],
+  Finn Möller [ctb],
+  Thomas Nauss [ctb],
+  Lars Opgenoorth [ctb],
+  Environmental Informatics Marburg [ctb]
+Repository: CRAN
+Date/Publication: 2019-12-30 14:50:03 UTC

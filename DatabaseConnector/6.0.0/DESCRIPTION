@@ -1,0 +1,45 @@
+Package: DatabaseConnector
+Type: Package
+Title: Connecting to Various Database Platforms
+Version: 6.0.0
+Date: 2023-01-30
+Authors@R: c(
+    person("Martijn", "Schuemie", email = "schuemie@ohdsi.org", role = c("aut", "cre")),
+    person("Marc", "Suchard", role = c("aut")),
+    person("Observational Health Data Science and Informatics", role = c("cph")),
+    person("Microsoft Inc.", role = c("cph"), comment = "SQL Server JDBC driver"),
+    person("PostgreSQL Global Development Group", role = c("cph"), comment = "PostgreSQL JDBC driver"),
+    person("Oracle Inc.", role = c("cph"), comment = "Oracle  JDBC driver"),
+    person("Amazon Inc.", role = c("cph"), comment = "RedShift  JDBC driver")
+  )
+Description: An R 'DataBase Interface' ('DBI') compatible interface to various database platforms ('PostgreSQL', 'Oracle', 'Microsoft SQL Server', 
+    'Amazon Redshift', 'Microsoft Parallel Database Warehouse', 'IBM Netezza', 'Apache Impala', 'Google BigQuery', 'Snowflake', 'Spark', and 'SQLite'). Also includes support for
+    fetching data as 'Andromeda' objects. Uses either 'Java Database Connectivity' ('JDBC') or other DB I drivers to connect to databases.
+SystemRequirements: Java version 8 or higher (https://www.java.com/)
+Depends: R (>= 4.0.0)
+Imports: rJava, SqlRender (>= 1.12.0), methods, stringr, readr, rlang,
+        utils, DBI (>= 1.0.0), urltools, bit64, checkmate, digest,
+        dbplyr (>= 2.3.0)
+Suggests: aws.s3, R.utils, withr, testthat, DBItest, knitr, rmarkdown,
+        RSQLite, ssh, Andromeda, dplyr, RPostgres, odbc, duckdb, pool,
+        ParallelLogger
+License: Apache License
+VignetteBuilder: knitr
+URL: https://ohdsi.github.io/DatabaseConnector/,
+        https://github.com/OHDSI/DatabaseConnector
+BugReports: https://github.com/OHDSI/DatabaseConnector/issues
+Copyright: See file COPYRIGHTS
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-01-30 10:59:21 UTC; MSCHUEMI
+Author: Martijn Schuemie [aut, cre],
+  Marc Suchard [aut],
+  Observational Health Data Science and Informatics [cph],
+  Microsoft Inc. [cph] (SQL Server JDBC driver),
+  PostgreSQL Global Development Group [cph] (PostgreSQL JDBC driver),
+  Oracle Inc. [cph] (Oracle JDBC driver),
+  Amazon Inc. [cph] (RedShift JDBC driver)
+Maintainer: Martijn Schuemie <schuemie@ohdsi.org>
+Repository: CRAN
+Date/Publication: 2023-01-30 11:20:02 UTC

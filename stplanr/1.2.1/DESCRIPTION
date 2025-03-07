@@ -1,0 +1,81 @@
+Type: Package
+Package: stplanr
+Title: Sustainable Transport Planning
+Version: 1.2.1
+Authors@R: c(
+    person("Robin", "Lovelace", , "rob00x@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5679-6536")),
+    person("Richard", "Ellison", role = "aut"),
+    person("Malcolm", "Morgan", role = "aut",
+           comment = c(ORCID = "0000-0002-9488-9183")),
+    person("Barry", "Rowlingson", role = "ctb"),
+    person("Nick", "Bearman", role = "ctb"),
+    person("Nikolai", "Berkoff", role = "ctb"),
+    person("Scott ", "Chamberlain", role = "rev",
+           comment = "Scott reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/10"),
+    person("Mark", "Padgham", , "mark.padgham@email.com", role = "ctb"),
+    person("Zhao", "Wang", role = "ctb",
+           comment = c(ORCID = "0000-0002-4054-0533")),
+    person("Andrea", "Gilardi", role = "ctb",
+           comment = c(ORCID = "0000-0002-9424-7439")),
+    person("Josiah", "Parry", role = "ctb",
+           comment = c(ORCID = "0000-0001-9910-865X"))
+  )
+Maintainer: Robin Lovelace <rob00x@gmail.com>
+Description: Tools for transport planning with an emphasis on spatial
+    transport data and non-motorized modes.
+    The package was originally developed to support the 'Propensity to Cycle Tool', a publicly available strategic cycle network planning tool
+    (Lovelace et al. 2017) <doi:10.5198/jtlu.2016.862>, but has since been
+    extended to support public transport routing and accessibility analysis
+    (Moreno-Monroy et al. 2017) <doi:10.1016/j.jtrangeo.2017.08.012> and
+    routing with locally hosted routing engines such as 'OSRM'
+    (Lowans et al. 2023) <doi:10.1016/j.enconman.2023.117337>.
+    The main functions are for creating and manipulating geographic "desire
+    lines" from origin-destination (OD) data (building on the 'od'
+    package); calculating routes on the transport network locally and via
+    interfaces to routing services such as <https://cyclestreets.net/>
+    (Desjardins et al. 2021) <doi:10.1007/s11116-021-10197-1>;
+    and calculating route segment attributes such as bearing. The package
+    implements the 'travel flow aggregration' method described in Morgan
+    and Lovelace (2020) <doi:10.1177/2399808320942779> and the
+    'OD jittering' method described in Lovelace et al. (2022)
+    <doi:10.32866/001c.33873>.
+    Further information on the package's aim and scope can be found in the
+    vignettes and in a paper in the R Journal (Lovelace and Ellison 2018)
+    <doi:10.32614/RJ-2018-053>, and in a paper outlining the landscape of
+    open source software for geographic methods in transport planning
+    (Lovelace, 2021) <doi:10.1007/s10109-020-00342-2>.
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/stplanr,
+        https://docs.ropensci.org/stplanr/
+BugReports: https://github.com/ropensci/stplanr/issues
+Depends: R (>= 3.5.0)
+Imports: curl (>= 3.2), data.table, dplyr (>= 0.7.6), geosphere, httr
+        (>= 1.3.1), jsonlite (>= 1.5), lwgeom (>= 0.1.4), magrittr,
+        methods, nabor (>= 0.5.0), od, pbapply, Rcpp (>= 0.12.1), rlang
+        (>= 0.2.2), sf (>= 0.6.3), sfheaders
+Suggests: cyclestreets, dodgr (>= 0.2.15), geodist, igraph (>= 1.2.2),
+        knitr (>= 1.20), leaflet, mapsapi, opentripplanner, osrm, pct,
+        rmarkdown (>= 1.10), rsgeo (>= 0.1.6), testthat (>= 2.0.0),
+        tmap
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: yes
+RoxygenNote: 7.3.1
+SystemRequirements: GNU make
+NeedsCompilation: no
+Packaged: 2024-05-01 15:17:41 UTC; robin
+Author: Robin Lovelace [aut, cre] (<https://orcid.org/0000-0001-5679-6536>),
+  Richard Ellison [aut],
+  Malcolm Morgan [aut] (<https://orcid.org/0000-0002-9488-9183>),
+  Barry Rowlingson [ctb],
+  Nick Bearman [ctb],
+  Nikolai Berkoff [ctb],
+  Scott Chamberlain [rev] (Scott reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/10),
+  Mark Padgham [ctb],
+  Zhao Wang [ctb] (<https://orcid.org/0000-0002-4054-0533>),
+  Andrea Gilardi [ctb] (<https://orcid.org/0000-0002-9424-7439>),
+  Josiah Parry [ctb] (<https://orcid.org/0000-0001-9910-865X>)
+Repository: CRAN
+Date/Publication: 2024-05-01 23:42:08 UTC

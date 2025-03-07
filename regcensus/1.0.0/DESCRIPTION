@@ -1,0 +1,34 @@
+Type: Package
+Package: regcensus
+Title: Accessing Data from the 'RegCensusAPI'
+Version: 1.0.0
+Authors@R: c(
+    person("Jonathan", "Nelson", , "jnelson@mercatus.gmu.edu", 
+            role = c("aut", "cre")),
+    person("Thurston", "Powers", , "tpowers@mercatus.gmu.edu", 
+            role = c("aut")),
+    person("Aayush", "Gadia", , "agadia@mercatus.gmu.edu", 
+            role = c("aut")),
+    person("Mercatus Center", email = "info@quantgov.org",
+            role = c("cph", "fnd")))
+Description: Allowing users to access data from the 'RegCensusAPI'. The 'RegCensusAPI' is an API client that connects to the 'RegData' regulatory restrictions data by the 'Mercatus Center' at 'George Mason University'. 'RegData' uses machine learning algorithms to quantify the number of regulatory restrictions in a jurisdiction. You can find out more about 'RegData' from 'QuantGov website' <https://www.quantgov.org>.
+License: MIT + file LICENSE
+URL: https://github.com/QuantGov/regcensus-api-client-R
+BugReports: https://github.com/QuantGov/regcensus-api-client-R/issues
+Depends: R (>= 4.3.0)
+Imports: jsonlite, stringr, httr, tidyverse, dplyr
+Suggests: knitr, rmarkdown, testthat (>= 3.1.9)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-09-28 18:50:10 UTC; agadia
+Author: Jonathan Nelson [aut, cre],
+  Thurston Powers [aut],
+  Aayush Gadia [aut],
+  Mercatus Center [cph, fnd]
+Maintainer: Jonathan Nelson <jnelson@mercatus.gmu.edu>
+Repository: CRAN
+Date/Publication: 2023-09-29 13:32:39 UTC

@@ -1,0 +1,32 @@
+Package: lettercase
+Title: Utilities for Formatting Strings with Consistent Capitalization,
+        Word Breaks and White Space
+Version: 0.13.1
+Date: 2016-03-03
+Authors@R: c(
+    person("Christopher", "Brown", , "chris.brown@decisionpatterns.com", c("aut", "cre") ),
+    person("Decision Patterns", role = "cph")
+    )
+Description: Utilities for formatting strings and character
+    vectors to for capitalization, word break and white space. Supported formats
+    are: snake_case, spine-case, camelCase, PascalCase, Title Case, UPPERCASE,
+    lowercase, Sentence case or combinations thereof. 'lettercase' strives to
+    provide a simple, consistent, intuitive and high performing interface.
+Depends: R (>= 3.1.0), stringr (>= 1.0.0)
+Suggests: testthat, knitr, magrittr (>= 1.5)
+License: GPL-2 | file LICENSE
+LazyData: true
+Collate: 'lettercase-package.R' 'make_names.R' 'make_str_replace.R'
+        'patterns.R' 'str_cap_words.R' 'str_collapse_whitespace.R'
+        'str_delete.R' 'str_functions.R' 'str_is.R' 'str_lowercase.R'
+        'str_sentence_case.R' 'str_snake_case.R' 'str_spine_case.R'
+        'str_title_case.R' 'str_transform.R' 'str_ucfirst.R'
+        'str_uppercase.R' 'utils.R' 'zzz.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-03-03 20:59:37 UTC; cbrown
+Author: Christopher Brown [aut, cre],
+  Decision Patterns [cph]
+Maintainer: Christopher Brown <chris.brown@decisionpatterns.com>
+Repository: CRAN
+Date/Publication: 2016-03-03 23:54:35

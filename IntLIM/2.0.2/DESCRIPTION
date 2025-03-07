@@ -1,0 +1,40 @@
+Package: IntLIM
+Type: Package
+Title: Integration of Omics Data Using Linear Modeling
+Version: 2.0.2
+Authors@R: c(
+ person("Jalal", "Siddiqui", email = "Jalal.Siddiqui@osumc.edu", role="aut"),
+ person("Shunchao", "Wang", email="shunchao.wang@osumc.edu", role="aut"),
+ person("Rohith", "Vanam", email="rohith.vanam@osumc.edu", role="aut"),
+ person("Elizabeth", "Baskin", email="baskin.18@osu.edu", role="aut"),
+ person("Tara", "Eicher", email="tara.eicher@nih.gov", role=c("aut", "cre")),
+ person("Kyle", "Spencer", email="kyle.spencer@nih.gov", role="aut"),
+ person("Ewy", "Mathe", email="ewy.mathe@nih.gov", role="aut"))
+Description: This workflow takes analyte levels from two different types of analytes (e.g. gene expression and metabolite abundance), meta-information on each analyte type, and sample outcome and metadata to identify analyte pairs that are significantly associated with a continuous or discrete outcome (e.g. drug response or tumor type). The following references describe the methods in this package: (1) Jalal K. Siddiqui, et al. (2018) <doi:10.1186/s12859-018-2085-6>, (2) Andrew Patt, et al. (2019) <doi:10.1007/978-1-4939-9027-6_23>.
+License: GPL-2
+Depends: R (>= 3.2.0)
+Imports: ComplexHeatmap, DT, ggplot2, graphics, grDevices, heatmaply,
+        highcharter, htmltools, KernSmooth, margins, methods, MASS,
+        RColorBrewer, reshape2, rmarkdown, shiny, shinydashboard,
+        shinyFiles, shinyjs, stats, testthat, utils
+Suggests: knitr,
+Encoding: UTF-8
+NeedsCompilation: no
+Collate: 'AllClasses.R' 'internalfunctions.R' '01_ReadData.R'
+        '02_FilterData.R' '03_RunIntLim.R' '04_ProcessResults.R'
+        'IntLimResults_extendedfunctions.R' 'PermuteIntLIM.R'
+        'crossvalfunctions.R' 'plottingfunctions.R' 'runShiny.R'
+        'statsfunctions.R' 'writingfunctions.R'
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+Packaged: 2022-08-20 18:54:52 UTC; eichertd
+Author: Jalal Siddiqui [aut],
+  Shunchao Wang [aut],
+  Rohith Vanam [aut],
+  Elizabeth Baskin [aut],
+  Tara Eicher [aut, cre],
+  Kyle Spencer [aut],
+  Ewy Mathe [aut]
+Maintainer: Tara Eicher <tara.eicher@nih.gov>
+Repository: CRAN
+Date/Publication: 2022-08-22 15:10:04 UTC

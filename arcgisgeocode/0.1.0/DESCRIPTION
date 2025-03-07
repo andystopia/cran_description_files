@@ -1,0 +1,35 @@
+Package: arcgisgeocode
+Title: A Robust Interface to ArcGIS 'Geocoding Services'
+Version: 0.1.0
+Authors@R: 
+    person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9910-865X"))
+Description: A very fast and robust interface to ArcGIS 'Geocoding
+    Services'. Provides capabilities for reverse geocoding, finding
+    address candidates, character-by-character search autosuggestion, and
+    batch geocoding. The public 'ArcGIS World Geocoder' is accessible for
+    free use via 'arcgisgeocode' for all services except batch geocoding.
+    'arcgisgeocode' also integrates with 'arcgisutils' to provide access
+    to custom locators or private 'ArcGIS World Geocoder' hosted on
+    'ArcGIS Enterprise'. Learn more in the 'Geocode service' API reference
+    <https://developers.arcgis.com/rest/geocode/api-reference/overview-world-geocoding-service.htm>.
+License: Apache License (>= 2)
+URL: https://github.com/r-arcgis/arcgisgeocode,
+        https://r.esri.com/arcgisgeocode/
+Imports: arcgisutils (>= 0.3.0), cli, curl, httr2 (>= 1.0.0), jsonify,
+        RcppSimdJson, rlang (>= 1.1.0), sf
+Suggests: data.table, dplyr, testthat (>= 3.0.0)
+Config/rextendr/version: 0.3.1.9000
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.1
+SystemRequirements: Cargo (Rust's package manager), rustc
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2024-05-23 13:06:20 UTC; josiahparry
+Author: Josiah Parry [aut, cre] (<https://orcid.org/0000-0001-9910-865X>)
+Maintainer: Josiah Parry <josiah.parry@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-25 09:50:09 UTC

@@ -1,0 +1,43 @@
+Package: amt
+Type: Package
+Title: Animal Movement Tools
+Version: 0.1.5
+Authors@R: c(person("Johannes","Signer", role = c("aut", "cre"), email = "jsigner@gwdg.de"), 
+  person("Brian", "Smith", role = "ctb"), 
+  person("Bjoern", "Reineking", role = "ctb"), 
+  person("Ulrike", "Schlaegel", role = "ctb"), 
+  person("John", "Fieberg", role = "ctb"), 
+  person("Josh", "O'Brien", role = "ctb"),
+  person("Bernardo", "Niebuhr", role = "ctb"),
+  person("Scott", "LaPoint", role = "dtc"))
+Description: Manage and analyze animal movement data. The functionality of 'amt' includes methods to calculate home ranges, track statistics (e.g. step lengths, speed, or turning angles), prepare data for fitting habitat selection analyses, and simulation of space-use from fitted step-selection functions.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/jmsigner/amt
+Depends: R (>= 3.5),
+Imports: checkmate, circular, ctmm, dplyr (>= 0.7.0), fitdistrplus,
+        lubridate, magrittr, methods, purrr, raster, Rdpack, Rcpp (>=
+        0.12.7), rgeos, rlang, sf, sp, survival, tibble, tidyr (>=
+        1.0.0)
+Suggests: adehabitatLT, adehabitatMA, broom, ggplot2, ggraph,
+        geosphere, KernSmooth, FNN, leaflet, moveHMM, move,
+        sessioninfo, spacetime, trajectories, knitr, rmarkdown,
+        tinytest, tidygraph, maptools
+LinkingTo: Rcpp
+RoxygenNote: 7.1.2
+RdMacros: Rdpack
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-12-02 22:02:23 UTC; jsigner
+Author: Johannes Signer [aut, cre],
+  Brian Smith [ctb],
+  Bjoern Reineking [ctb],
+  Ulrike Schlaegel [ctb],
+  John Fieberg [ctb],
+  Josh O'Brien [ctb],
+  Bernardo Niebuhr [ctb],
+  Scott LaPoint [dtc]
+Maintainer: Johannes Signer <jsigner@gwdg.de>
+Repository: CRAN
+Date/Publication: 2021-12-03 18:00:02 UTC

@@ -1,0 +1,39 @@
+Package: shorts
+Type: Package
+Title: Short Sprints
+Authors@R: 
+    c(person(given = "Mladen",
+           family = "Jovanović",
+           role = c("aut", "cre", "cph"),
+           email = "coach.mladen.jovanovic@gmail.com",
+           comment = c(ORCID = "0000-0002-4013-6530"))
+           )
+Version: 3.1.0
+Description: Create short sprint acceleration-velocity (AVP) and force-velocity (FVP) profiles
+     and predict kinematic and kinetic variables using the timing-gate split times, laser or 
+     radar gun data, tether devices data, as well as the data provided by the GPS and LPS 
+     monitoring systems. The modeling method utilized in this package is based on the works of 
+    Furusawa K, Hill AV, Parkinson JL (1927) <doi: 10.1098/rspb.1927.0035>, 
+    Greene PR. (1986) <doi: 10.1016/0025-5564(86)90063-5>, 
+    Chelly SM, Denis C. (2001) <doi: 10.1097/00005768-200102000-00024>,
+    Clark KP, Rieger RH, Bruno RF, Stearne DJ. (2017) <doi: 10.1519/JSC.0000000000002081>, 
+    Samozino P. (2018) <doi: 10.1007/978-3-319-05633-3_11>, 
+    Samozino P. and Peyrot N., et al (2022) <doi: 10.1111/sms.14097>, 
+    Clavel, P., et al (2023) <doi: 10.1016/j.jbiomech.2023.111602>, and 
+    Jovanovic M. (2023) <doi: 10.1080/10255842.2023.2170713>.
+URL: https://mladenjovanovic.github.io/shorts/
+BugReports: https://github.com/mladenjovanovic/shorts/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+Imports: stats, LambertW, tidyr, ggplot2, minpack.lm, purrr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-01-19 13:14:16 UTC; mladenjovanovic
+Author: Mladen Jovanović [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4013-6530>)
+Maintainer: Mladen Jovanović <coach.mladen.jovanovic@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-21 15:50:02 UTC

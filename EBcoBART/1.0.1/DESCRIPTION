@@ -1,0 +1,36 @@
+Package: EBcoBART
+Title: Co-Data Learning for Bayesian Additive Regression Trees
+Version: 1.0.1
+Authors@R: 
+    c(person(c("Jeroen", "M."), "Goedhart", , "jeroengoed@gmail.com", role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0003-0134-1897")),
+      person("Thomas", "Klausch", role = "aut"),
+      person(c("Mark","A."), "van de Wiel", role = "aut"),
+      person("Vincent", "Dorie", role = "ctb", comment = "Author of 'dbarts' 'R' package and auxiliary function getDepth"),
+      person("Hanarth Fonds", role = "fnd"))
+Description: Estimate prior variable weights for Bayesian Additive Regression
+    Trees (BART). These weights correspond to the probabilities of the variables
+    being selected in the splitting rules of the sum-of-trees.
+    Weights are estimated using empirical Bayes and external information on 
+    the explanatory variables (co-data).
+    BART models are fitted using the 'dbarts' 'R' package.
+    See Goedhart and others (2023) <doi:10.48550/arXiv.2311.09997> for details.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/JeroenGoedhart/EBcoBART
+RoxygenNote: 7.3.1
+Imports: dbarts, loo, posterior, univariateML, extraDistr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-08-28 18:09:38 UTC; VNOB-0732
+Author: Jeroen M. Goedhart [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0134-1897>),
+  Thomas Klausch [aut],
+  Mark A. van de Wiel [aut],
+  Vincent Dorie [ctb] (Author of 'dbarts' 'R' package and auxiliary
+    function getDepth),
+  Hanarth Fonds [fnd]
+Maintainer: Jeroen M. Goedhart <jeroengoed@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-02 21:50:02 UTC

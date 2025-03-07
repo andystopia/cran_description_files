@@ -1,0 +1,36 @@
+Package: ZeligChoice
+License: GPL (>= 3)
+Title: Zelig Choice Models
+Authors@R: c(
+    person("Christine.", "Choirat", role = "aut"),
+    person("Christopher", "Gandrud", email = "zelig.zee@gmail.com",
+    role = c("aut", "cre")),
+    person("James", "Honaker", role = "aut"),
+    person("Kosuke", "Imai", role = "aut"),
+    person("Gary", "King", role = "aut"),
+    person("Olivia", "Lau", role = "aut")
+    )
+Description: Add-on package for Zelig 5. Enables the use of a variety of logit
+    and probit regressions.
+URL: https://cran.r-project.org/package=ZeligChoice
+BugReports: https://github.com/IQSS/Zelig/issues
+Version: 0.9-6
+Date: 2017-06-07
+Imports: dplyr, Formula, jsonlite, MASS, methods, VGAM, Zelig (>=
+        5.1-1),
+Suggests: testthat, knitr, zeligverse
+Collate: 'model-mlogit.R' 'model-obinchoice.R' 'model-oprobit.R'
+        'model-ologit.R' 'model-bbinchoice.R' 'model-bprobit.R'
+        'model-blogit.R' 'create-json.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-06-07 15:07:31 UTC; cgandrud
+Author: Christine. Choirat [aut],
+  Christopher Gandrud [aut, cre],
+  James Honaker [aut],
+  Kosuke Imai [aut],
+  Gary King [aut],
+  Olivia Lau [aut]
+Maintainer: Christopher Gandrud <zelig.zee@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-06-07 22:44:09 UTC

@@ -1,0 +1,47 @@
+Package: nodbi
+Title: 'NoSQL' Database Connector
+Description: Simplified JSON document database access and manipulation,
+     providing a common API across supported 'NoSQL' databases 
+     'Elasticsearch', 'CouchDB', 'MongoDB' as well as 
+     'SQLite/JSON1', 'PostgreSQL', and 'DuckDB'.
+Version: 0.10.7
+Authors@R: c(
+    person(given = "Ralf",
+           family = "Herold",
+           role = c("aut", "cre"),
+           email = "ralf.herold@mailbox.org",
+           comment = c(ORCID = "0000-0002-8148-6748")),
+    person(given = "Scott", 
+           family = "Chamberlain", 
+           role = "aut",
+           comment = c(ORCID = "0000-0003-1444-9135")),
+    person("Rich", "FitzJohn", role = "aut"),
+    person("Jeroen", "Ooms", role = "aut")
+  )
+License: MIT + file LICENSE
+LazyData: true
+URL: https://docs.ropensci.org/nodbi/,
+        https://github.com/ropensci/nodbi
+BugReports: https://github.com/ropensci/nodbi/issues
+Depends: R (>= 3.4.0)
+Encoding: UTF-8
+Language: en-US
+Imports: stringi, jsonlite, uuid, jqr, DBI, V8, R.utils
+Suggests: sofa (>= 0.3.0), elastic (>= 1.0.0), mongolite (>= 1.6),
+        RSQLite (>= 2.3.5), duckdb (>= 1.1.0), RPostgres, testthat,
+        withr, callr, webfakes (>= 1.2.0), knitr, rmarkdown, tibble
+RoxygenNote: 7.3.2.9000
+X-schema.org-applicationCategory: Databases
+X-schema.org-keywords: database, MongoDB, Elasticsearch, CouchDB,
+        SQLite, PostgreSQL, DuckDB, NoSQL, JSON, documents
+X-schema.org-isPartOf: https://ropensci.org
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-29 18:20:03 UTC; ralfherold
+Author: Ralf Herold [aut, cre] (<https://orcid.org/0000-0002-8148-6748>),
+  Scott Chamberlain [aut] (<https://orcid.org/0000-0003-1444-9135>),
+  Rich FitzJohn [aut],
+  Jeroen Ooms [aut]
+Maintainer: Ralf Herold <ralf.herold@mailbox.org>
+Repository: CRAN
+Date/Publication: 2024-09-29 18:40:02 UTC

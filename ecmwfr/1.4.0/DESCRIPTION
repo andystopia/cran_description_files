@@ -1,0 +1,48 @@
+Package: ecmwfr
+Title: Interface to 'ECMWF' and 'CDS' Data Web Services
+Version: 1.4.0
+Authors@R: c(person(
+               family = "Hufkens",
+               given = "Koen",
+               email = "koen.hufkens@gmail.com",
+               role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0002-5070-8109")),
+             person(
+               family = "Stauffer",
+               given = "Reto",
+               email = "Reto.Stauffer@uibk.ac.at",
+               role = c("ctb"),
+               comment = c(ORCID = "0000-0002-3798-5507")),
+             person(
+               family = "Campitelli",
+               given = "Elio",
+               email = "elio.campitelli@cima.fcen.uba.ar",
+               role = c("ctb"),
+               comment = c(ORCID = "0000-0002-7742-9230")),
+            person(given = "BlueGreen Labs",
+              role = c("cph", "fnd"))
+           )
+Description: Programmatic interface to the European Centre for Medium-Range
+    Weather Forecasts dataset web services (ECMWF; <https://www.ecmwf.int/>)
+    and Copernicus's Climate Data Store (CDS; 
+    <https://cds.climate.copernicus.eu>). Allows for easy downloads of weather 
+    forecasts and climate reanalysis data in R.
+URL: https://github.com/bluegreen-labs/ecmwfr
+BugReports: https://github.com/bluegreen-labs/ecmwfr/issues
+Depends: R (>= 3.6)
+Imports: httr, keyring, memoise, getPass, curl, R6
+License: AGPL-3
+ByteCompile: true
+RoxygenNote: 7.2.0
+Suggests: rmarkdown, covr, testthat, raster, terra, maps, ncdf4, knitr,
+        rlang, rstudioapi, jsonlite
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-08-17 19:56:07 UTC; khufkens
+Author: Koen Hufkens [aut, cre] (<https://orcid.org/0000-0002-5070-8109>),
+  Reto Stauffer [ctb] (<https://orcid.org/0000-0002-3798-5507>),
+  Elio Campitelli [ctb] (<https://orcid.org/0000-0002-7742-9230>),
+  BlueGreen Labs [cph, fnd]
+Maintainer: Koen Hufkens <koen.hufkens@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-17 20:40:03 UTC

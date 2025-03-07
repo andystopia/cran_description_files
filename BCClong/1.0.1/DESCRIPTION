@@ -1,0 +1,44 @@
+Type: Package
+Package: BCClong
+Title: Bayesian Consensus Clustering for Multiple Longitudinal Features
+Version: 1.0.1
+Authors@R: c(
+    person("Zhiwen", "Tan", , "21zt9@queensu.ca", role = c("aut", "cre")),
+    person("Zihang", "Lu", , "zihang.lu@queensu.ca", role = "ctb"),
+    person("Chang", "Shen", role = "ctb")
+  )
+Maintainer: Zhiwen Tan <21zt9@queensu.ca>
+Description: It is very common nowadays for a study to collect multiple
+    features and appropriately integrating multiple longitudinal features
+    simultaneously for defining individual clusters becomes increasingly
+    crucial to understanding population heterogeneity and predicting
+    future outcomes.  'BCClong' implements a Bayesian consensus clustering
+    (BCC) model for multiple longitudinal features via a generalized
+    linear mixed model. Compared to existing packages, several key
+    features make the 'BCClong' package appealing: (a) it allows
+    simultaneous clustering of mixed-type (e.g., continuous, discrete and
+    categorical) longitudinal features, (b) it allows each longitudinal
+    feature to be collected from different sources with measurements taken
+    at distinct sets of time points (known as irregularly sampled
+    longitudinal data), (c) it relaxes the assumption that all features
+    have the same clustering structure by estimating the feature-specific
+    (local) clusterings and consensus (global) clustering.
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: cluster, coda, ggplot2, graphics, label.switching,
+        LaplacesDemon, lme4, MASS, mclust, MCMCpack, mixAK, mvtnorm,
+        nnet, Rcpp (>= 1.0.9), Rmpfr, stats, truncdist
+Suggests: cowplot, joineRML, knitr, rmarkdown, survival, survminer,
+        testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-08-08 09:11:18 UTC; leon
+Author: Zhiwen Tan [aut, cre],
+  Zihang Lu [ctb],
+  Chang Shen [ctb]
+Repository: CRAN
+Date/Publication: 2023-08-08 10:10:08 UTC

@@ -1,0 +1,43 @@
+Package: metaconfoundr
+Title: Visualize 'Confounder' Control in Meta-Analyses
+Version: 0.1.0
+Authors@R: c(
+    person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0299-5825")),
+    person("Julie M.", "Petersen", , "juliemo@bu.edu", role = "aut",
+           comment = c(ORCID = "0000-0001-7845-4545")),
+    person("Ludovic", "Trinquart", , "ludovic@bu.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-3028-4900"))
+  )
+Description: Visualize 'confounder' control in meta-analysis.
+    'metaconfoundr' is an approach to evaluating bias in studies used in
+    meta-analyses based on the causal inference framework. Study groups
+    create a causal diagram displaying their assumptions about the
+    scientific question. From this, they develop a list of important
+    'confounders'. Then, they evaluate whether studies controlled for
+    these variables well. 'metaconfoundr' is a toolkit to facilitate this
+    process and visualize the results as heat maps, traffic light plots,
+    and more.
+License: MIT + file LICENSE
+URL: https://github.com/malcolmbarrett/metaconfoundr
+BugReports: https://github.com/malcolmbarrett/metaconfoundr/issues
+Depends: R (>= 3.5.0)
+Imports: dplyr (>= 1.0.0), ellipsis, forcats, ggplot2 (>= 3.3.1), glue,
+        magrittr, purrr, rlang (>= 0.1.2), shiny, stringr, tibble,
+        tidyr (>= 1.0.0), tidyselect
+Suggests: covr, knitr, metafor, patchwork, readr, rio, rmarkdown,
+        roxygen2, spelling, testthat (>= 3.0.0), vdiffr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-10-10 15:26:23 UTC; malcolmbarrett
+Author: Malcolm Barrett [aut, cre] (<https://orcid.org/0000-0003-0299-5825>),
+  Julie M. Petersen [aut] (<https://orcid.org/0000-0001-7845-4545>),
+  Ludovic Trinquart [aut] (<https://orcid.org/0000-0002-3028-4900>)
+Maintainer: Malcolm Barrett <malcolmbarrett@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-10-12 08:10:02 UTC

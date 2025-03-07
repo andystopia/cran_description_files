@@ -1,0 +1,26 @@
+Package: CompGLM
+Type: Package
+Title: Conway-Maxwell-Poisson GLM and Distribution Functions
+Version: 2.0
+Date: 2018-04-29
+Author: Jeffrey Pollock
+Maintainer: Jeffrey Pollock <jeffpollock9@gmail.com>
+URL: https://github.com/jeffpollock9/CompGLM
+BugReports: https://github.com/jeffpollock9/CompGLM/issues
+Description: A function (which uses a similar interface to the `glm' function)
+    for the fitting of a Conway-Maxwell-Poisson GLM. There are also various
+    methods for analysis of the model fit. The package also contains functions
+    for the Conway-Maxwell-Poisson distribution in a similar interface to
+    functions `dpois', `ppois' and `rpois'. The functions are generally quick,
+    since the workhorse functions are written in C++ (thanks to the Rcpp
+    package).
+License: GPL (>= 2)
+Imports: Rcpp, stats
+LinkingTo: Rcpp
+Suggests: testthat, devtools, roxygen2, covr, lintr
+NeedsCompilation: yes
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+Packaged: 2018-04-29 12:20:11 UTC; jeff
+Repository: CRAN
+Date/Publication: 2018-04-29 12:45:36 UTC

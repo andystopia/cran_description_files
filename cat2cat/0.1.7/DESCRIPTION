@@ -1,0 +1,26 @@
+Package: cat2cat
+Title: Mapping of a Categorical Variable in a Panel Dataset
+Version: 0.1.7
+Authors@R: person("Maciej", "Nasinski", email = "nasinski.maciej@gmail.com", role = c("aut", "cre"))
+Maintainer: Maciej Nasinski <nasinski.maciej@gmail.com>
+Description: 
+  There are offered automatic methods to map a categorical variable according to a specific encoding across different time points. 
+  The main rule is to replicate the observation if it could be assign to a few categories.
+  Then using simple frequencies or statistical methods to approximate probabilities of being assign to each of them.
+  This algorithm was invented and implemented in the paper by (Nasinski, Majchrowska and Broniatowska (2020) <doi:10.24425/cejeme.2020.134747>).
+Depends: R (>= 3.6)
+License: GPL (>= 2)
+URL: https://github.com/Polkas/cat2cat
+BugReports: https://github.com/Polkas/cat2cat/issues
+Encoding: UTF-8
+Imports: rlang, caret, progress, randomForest, MASS, tidyr, dplyr,
+        data.table, assertthat
+Suggests: knitr, rmarkdown, pacman, testthat, magrittr
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-11-28 23:01:57 UTC; maciejnasinski
+Author: Maciej Nasinski [aut, cre]
+Repository: CRAN
+Date/Publication: 2020-11-29 05:30:02 UTC

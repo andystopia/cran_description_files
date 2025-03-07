@@ -1,0 +1,30 @@
+Package: kgraph
+Title: Knowledge Graphs Constructions and Visualizations
+Version: 1.0.0
+Authors@R: c(person("Thomas", "Charlon", role = c("aut", "cre"),
+                    email = "charlon@protonmail.com",
+                    comment = c(ORCID = "0000-0001-7497-0470")),
+             person("Hongyi", "Yuan", role = "ctb", comment = c(ORCID = "0000-0003-2597-1973")),
+             person("CELEHS", role = "aut", comment = "<https://celehs.hms.harvard.edu>"),
+             person("PARSE Health", role = "aut", comment = "<https://parse-health.org>"))
+Description: Knowledge graphs enable to efficiently visualize and gain insights into large-scale data analysis results, as p-values from multiple studies or embedding data matrices. The usual workflow is a user providing a data frame of association studies results and specifying target nodes, e.g. phenotypes, to visualize. The knowledge graph then shows all the features which are significantly associated with the phenotype, with the edges being proportional to the association scores. As the user adds several target nodes and grouping information about the nodes such as biological pathways, the construction of such graphs soon becomes complex. The 'kgraph' package aims to enable users to easily build such knowledge graphs, and provides two main features: first, to enable building a knowledge graph based on a data frame of concepts relationships, be it p-values or cosine similarities; second, to enable determining an appropriate cut-off on cosine similarities from a complete embedding matrix, to enable the building of a knowledge graph directly from an embedding matrix. The 'kgraph' package provides several display, layout and cut-off options, and has already proven useful to researchers to enable them to visualize large sets of p-value associations with various phenotypes, and to quickly be able to visualize embedding results. Two example datasets are provided to demonstrate these behaviors, and several live 'shiny' applications are hosted by the CELEHS laboratory and Parse Health, as the KESER Mental Health application <https://keser-mental-health.parse-health.org/> based on Hong C. (2021) <doi:10.1038/s41746-021-00519-z>.
+Imports: amap, bslib, data.table, dplyr, DT, grid, htmltools, igraph,
+        magrittr, Matrix, pROC, plyr, RColorBrewer, reshape2, rsvd,
+        sgraph, shiny, text2vec
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://gitlab.com/thomaschln/kgraph
+BugReports: https://gitlab.com/thomaschln/kgraph/-/issues
+NeedsCompilation: no
+Packaged: 2024-09-19 19:28:49 UTC; root
+Author: Thomas Charlon [aut, cre] (<https://orcid.org/0000-0001-7497-0470>),
+  Hongyi Yuan [ctb] (<https://orcid.org/0000-0003-2597-1973>),
+  CELEHS [aut] (<https://celehs.hms.harvard.edu>),
+  PARSE Health [aut] (<https://parse-health.org>)
+Maintainer: Thomas Charlon <charlon@protonmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-20 14:30:02 UTC

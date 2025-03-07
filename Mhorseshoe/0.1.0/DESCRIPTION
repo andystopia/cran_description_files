@@ -1,0 +1,27 @@
+Package: Mhorseshoe
+Title: Approximate Algorithm for Horseshoe Prior
+Version: 0.1.0
+Authors@R: c(
+    person("Kang", "Mingi", , "leehuimin115@g.skku.edu", role = c("aut","cre")),
+    person("Lee", "Kyoungjae", , "leekjstat@gmail.com", role = "aut"))
+Description: Provides an approximate algorithm for the horseshoe estimator
+    used in Bayesian linear models. By implementing a sampler with high
+    computational cost in the 'Rcpp' package and using an approximate algorithm
+    that reduces matrix calculation complexity, parameter estimation speed for
+    high-dimensional sparse data is faster. The approximate algorithm is
+    described in Johndrow et al. (2020)
+    <https://www.jmlr.org/papers/v21/19-536.html>.
+Encoding: UTF-8
+Imports: stats, Rcpp (>= 1.0.11)
+LinkingTo: Rcpp
+RoxygenNote: 7.2.3
+License: MIT + file LICENSE
+Suggests: knitr, rmarkdown, ggplot2, horseshoe
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-11-21 12:12:09 UTC; rkdal
+Author: Kang Mingi [aut, cre],
+  Lee Kyoungjae [aut]
+Maintainer: Kang Mingi <leehuimin115@g.skku.edu>
+Repository: CRAN
+Date/Publication: 2023-11-21 18:30:02 UTC

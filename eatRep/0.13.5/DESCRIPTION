@@ -1,0 +1,32 @@
+Package: eatRep
+Type: Package
+Title: Educational Assessment Tools for Replication Methods
+Version: 0.13.5
+Depends: R (>= 3.5.0), survey, BIFIEsurvey, progress, lavaan (>= 0.6-7)
+Imports: Hmisc, fmsb, mice (>= 2.46), boot, car, reshape2, plyr,
+        combinat, miceadds, tidyr, EffectLiteR, estimatr, eatTools (>=
+        0.3.0), eatGADS, janitor, msm, lme4
+Date: 2021-03-02
+Authors@R: c(
+    person("Sebastian", "Weirich", email = "sebastian.weirich@iqb.hu-berlin.de", role = c("aut", "cre")),
+    person("Martin", "Hecht", role = c("aut")),
+    person("Benjamin", "Becker", role = c("aut")))
+Description: Replication methods to compute some basic statistic operations (means, standard deviations,
+  frequency tables, percentiles and generalized linear models) in complex survey designs comprising multiple
+  imputed variables and/or a clustered sampling structure which both deserve special procedures at least in
+  estimating standard errors. See the package documentation for a more detailed description along with references.
+License: GPL (>= 2)
+Encoding: UTF-8
+URL: https://github.com/weirichs/eatRep
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: no
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2021-03-02 12:23:25 UTC; Sebastian Weirich
+Author: Sebastian Weirich [aut, cre],
+  Martin Hecht [aut],
+  Benjamin Becker [aut]
+Maintainer: Sebastian Weirich <sebastian.weirich@iqb.hu-berlin.de>
+Repository: CRAN
+Date/Publication: 2021-03-02 12:50:02 UTC

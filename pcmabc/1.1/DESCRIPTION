@@ -1,0 +1,22 @@
+Package: pcmabc
+Type: Package
+Title: Approximate Bayesian Computations for Phylogenetic Comparative
+        Methods
+Version: 1.1
+Date: 2020-01-21
+Author: Krzysztof Bartoszek <krzbar@protonmail.ch>, Pietro Lio'
+Maintainer: Krzysztof Bartoszek <krzbar@protonmail.ch>
+Description: Fits by ABC, the parameters of a stochastic process modelling the phylogeny and evolution of a suite of traits following the tree. The user may define an arbitrary Markov process for the trait and phylogeny. Importantly, trait-dependent speciation models are handled and fitted to data. See K. Bartoszek, P. Lio' (2019) <10.5506/APhysPolBSupp.12.25>. The suggested geiger package can be obtained from CRAN's archive <https://cran.r-project.org/src/contrib/Archive/geiger/>, suggested to take latest version. Otherwise its required code is present in the pcmabc package. The suggested distory package can be obtained from CRAN's archive <https://cran.r-project.org/src/contrib/Archive/distory/>, suggested to take latest version. Both distory and geiger are orphaned at the moment.
+Depends: R(>= 2.9.1)
+Imports: ape (>= 3.0.6), graphics, methods, mvSLOUCH, phangorn, stats,
+        TreeSim, utils, yuima
+Suggests: geiger, distory
+License: GPL (>= 2) | file LICENCE
+LazyLoad: yes
+Collate: ABCdist.R ABCmessage.R ABC.R ABCupdate.R draw.R
+        from_geiger_2_0_6_2_diversification.R getTipSample.R rates.R
+        simsde.R simtree.R
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2020-01-21 21:09:01 UTC; kbart
+Date/Publication: 2020-01-22 13:00:02 UTC

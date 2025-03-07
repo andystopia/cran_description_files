@@ -1,0 +1,35 @@
+Type: Package
+Package: ebTobit
+Title: Empirical Bayesian Tobit Matrix Estimation
+Version: 1.0.1
+Date: 2023-06-13
+Authors@R: c(
+    person("Alton", "Barbehenn", , "altonbarbehenn@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0000-3364-7204")),
+    person("Sihai Dave", "Zhao", , "sdzhao@illinois.edu", role = "aut")
+  )
+Description: Estimation tools for multidimensional Gaussian means using
+    empirical Bayesian g-modeling. Methods are able to handle fully observed data as
+    well as left-, right-, and interval-censored observations (Tobit
+    likelihood); descriptions of these methods can be found in Barbehenn and
+    Zhao (2023) <arXiv:2306.07239>. Additional, lower-level functionality based
+    on Kiefer and Wolfowitz (1956) <doi:10.1214/aoms/1177728066> and Jiang and
+    Zhang (2009) <doi:10.1214/08-AOS638> is provided that can be used to
+    accelerate many empirical Bayes and nonparametric maximum likelihood
+    problems.
+License: GPL-3
+URL: https://github.com/barbehenna/ebTobit
+BugReports: https://github.com/barbehenna/ebTobit/issues
+Imports: Rcpp (>= 1.0.10), RcppParallel, stats
+Suggests: REBayes
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.3.0)
+NeedsCompilation: yes
+Packaged: 2023-06-14 16:46:46 UTC; altonbarbehenn
+Author: Alton Barbehenn [aut, cre] (<https://orcid.org/0009-0000-3364-7204>),
+  Sihai Dave Zhao [aut]
+Maintainer: Alton Barbehenn <altonbarbehenn@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-15 07:30:02 UTC

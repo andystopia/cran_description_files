@@ -1,0 +1,64 @@
+Type: Package
+Package: remify
+Title: Processing and Transforming Relational Event History Data
+Version: 3.2.0
+Date: 2023-11-03
+Authors@R: 
+    c(person(given = "Giuseppe",
+             family = "Arena",
+             role = c("aut", "cre"),
+             email = "g.arena@tilburguniversity.edu"),
+      person(given = "Rumana",
+             family = "Lakdawala",
+             role = "ctb",
+             email = "r.j.lakdawala@tilburguniversity.edu"),
+      person(given = "Marlyne",
+             family = "Meijerink-Bosman",
+             role = "ctb",
+             email = "m.l.meijerink@tilburguniversity.edu"),
+      person(given = "Diana",
+             family = "Karimova",
+             role = "ctb",
+             email = "d.karimova@tilburguniversity.edu"),
+      person(given = "Fabio",
+             family = "Generoso Vieira",
+             role = "ctb",
+             email = "f.v.generosovieira@tilburguniversity.edu"),
+      person(given = "Mahdi",
+             family = "Shafiee Kamalabad",
+             role = "ctb",
+             email = "m.shafieekamalabad@uu.nl"),
+      person(given = "Roger",
+             family = "Leenders",
+             role = "ctb",
+             email = "r.t.a.j.leenders@tilburguniversity.edu"),
+      person(given = "Joris",
+             family = "Mulder",
+             role = "ctb",
+             email = "j.mulder3@tilburguniversity.edu"))
+Maintainer: Giuseppe Arena <g.arena@tilburguniversity.edu>
+Description: Efficiently processes relational event history data and transforms them into formats suitable for other packages. The primary objective of this package is to convert event history data into a format that integrates with the packages in 'remverse' and is compatible with various analytical tools (e.g., computing network statistics, estimating tie-oriented or actor-oriented social network models). Second, it can also transform the data into formats compatible with other packages out of 'remverse'. The package processes the data for two types of temporal social network models: tie-oriented modeling framework (Butts, C., 2008, <doi:10.1111/j.1467-9531.2008.00203.x>) and actor-oriented modeling framework (Stadtfeld, C., & Block, P., 2017, <doi:10.15195/v4.a14>). 
+License: MIT + file LICENSE
+URL: https://github.com/TilburgNetworkGroup/remify
+BugReports: https://github.com/TilburgNetworkGroup/remify/issues
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.8.3), igraph (>= 1.4.3)
+Suggests: knitr, rmarkdown, tinytest
+LinkingTo: Rcpp, RcppArmadillo,
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2023-11-07 11:44:52 UTC; giuseppe
+Author: Giuseppe Arena [aut, cre],
+  Rumana Lakdawala [ctb],
+  Marlyne Meijerink-Bosman [ctb],
+  Diana Karimova [ctb],
+  Fabio Generoso Vieira [ctb],
+  Mahdi Shafiee Kamalabad [ctb],
+  Roger Leenders [ctb],
+  Joris Mulder [ctb]
+Repository: CRAN
+Date/Publication: 2023-11-07 19:10:02 UTC

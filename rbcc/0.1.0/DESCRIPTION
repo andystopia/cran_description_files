@@ -1,0 +1,29 @@
+Package: rbcc
+Type: Package
+Title: Risk-Based Control Charts
+Version: 0.1.0
+Authors@R: c(
+    person(given="Aamir",family= "Saghir", role = "aut"),
+    person(given=c("Attila","Imre"),family="Katona", role = "aut"),
+    person(given=c("Zsolt","Tibor"),family="Kosztyan",email="kosztyan.zsolt@gtk.uni-pannon.hu", role = c("aut", "cre"))
+    )
+Maintainer: Zsolt Tibor Kosztyan <kosztyan.zsolt@gtk.uni-pannon.hu>
+Description: Univariate and multivariate versions of risk-based control charts. Univariate versions of control charts, such as the risk-based version of X-bar, Moving Average (MA), Exponentially Weighted Moving Average Control Charts (EWMA), and Cumulative Sum Control Charts (CUSUM) charts. The risk-based version of the multivariate T2 control chart. Plot and summary functions. Kosztyan et. al. (2016) <doi:10.1016/j.eswa.2016.06.019>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/kzst/rbcc
+Depends: R (>= 4.00)
+Imports: qcc, ggplot2, reshape2, PearsonDS, pracma
+Collate: 'data_gen.R' 'plot.rbcc.R' 'rbmcc.R' 'rbmcc_opt.R'
+        'rbewmacc.R' 'rbewmacc_opt.R' 'rbmacc.R' 'rbmacc_opt.R'
+        'rbcc.R' 'rbcc_opt.R' 'rbcusumcc.R' 'rbcusumcc_opt.R'
+        'summary.rbcc.R'
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-07-08 03:51:50 UTC; kzst
+Author: Aamir Saghir [aut],
+  Attila Imre Katona [aut],
+  Zsolt Tibor Kosztyan [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-07-08 17:40:06 UTC

@@ -1,0 +1,29 @@
+Package: hashmap
+Type: Package
+Title: The Faster Hash Map
+Version: 0.1.0
+Date: 2016-04-01
+Authors@R: person("Nathan", "Russell", email = "russell.nr2012@gmail.com",
+    role = c("aut", "cre"))
+URL: https://github.com/nathan-russell/hashmap
+BugReports: https://github.com/nathan-russell/hashmap/issues
+Description: Provides a hash table class for fast
+    key-value storage of atomic vector types.
+    Internally, hashmap makes extensive use of Rcpp, boost::variant,
+    and boost::unordered_map to achieve high performance, type-safety,
+    and versatility, while maintaining compliance with the C++98 standard.
+License: MIT + file LICENSE
+LazyData: Yes
+ByteCompile: TRUE
+Imports: Rcpp (>= 0.12.4)
+LinkingTo: Rcpp, BH
+Suggests: devtools, microbenchmark, testthat
+Depends: methods
+RcppModules: Hashmap
+Collate: 'hashmap.R' 'classes.R' 'Hashmap-class.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2016-04-08 10:23:03 UTC; nathan
+Author: Nathan Russell [aut, cre]
+Maintainer: Nathan Russell <russell.nr2012@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-04-09 01:15:32

@@ -1,0 +1,30 @@
+Package: ggside
+Type: Package
+Title: Side Grammar Graphics
+Version: 0.1.3
+Authors@R: 
+    person(given = "Justin",
+           family = "Landis",
+           role = c("aut", "cre"),
+           email = "jtlandis314@gmail.com")
+Maintainer: Justin Landis <jtlandis314@gmail.com>
+Description: The grammar of graphics as shown in 'ggplot2' has provided
+  an expressive API for users to build plots. 'ggside' extends 'ggplot2' 
+  by allowing users to add graphical information about one of the main panel's
+  axis using a familiar 'ggplot2' style API with tidy data. This package is
+  particularly useful for visualizing metadata on a discrete axis, or summary
+  graphics on a continuous axis such as a boxplot or a density distribution.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Depends: ggplot2 (>= 3.0.0)
+Imports: grid, gtable, rlang, scales, glue, stats
+Suggests: tidyr, dplyr, testthat (>= 3.0.3), knitr, rmarkdown, vdiffr
+        (>= 1.0.0), ggdendro, viridis
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-10-24 02:36:52 UTC; jtlandis
+Author: Justin Landis [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-10-24 13:10:03 UTC

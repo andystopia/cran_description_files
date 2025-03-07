@@ -1,0 +1,34 @@
+Package: SANple
+Type: Package
+Title: Fitting Shared Atoms Nested Models via Markov Chains Monte Carlo
+Version: 0.1.0
+Date: 2023-10-09
+Authors@R: c(
+    person("Laura", "D'Angelo", ,"laura.dangelo@live.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0001-5034-7414")),
+    person("Francesco", "Denti", ,"francescodenti.personal@gmail.com", 
+    role = c("aut"),
+    comment = c(ORCID = "0000-0003-2978-4702"))
+  )
+Maintainer: Laura D'Angelo <laura.dangelo@live.com>
+URL: https://github.com/laura-dangelo/SANple
+BugReports: https://github.com/laura-dangelo/SANple/issues
+Description: Estimate Bayesian nested mixture models via Markov Chain Monte Carlo methods. Specifically, the package implements the common atoms model (Denti et al., 2023), its finite version (D'Angelo et al., 2023), and a hybrid finite-infinite model. 
+             All models use Gaussian mixtures with a normal-inverse-gamma prior distribution on the parameters. Additional functions are provided to help analyzing the results of the fitting procedure.  
+             References:  
+             Denti, Camerlenghi, Guindani, Mira (2023) <doi:10.1080/01621459.2021.1933499>,   
+             D’Angelo, Canale, Yu, Guindani (2023) <doi:10.1111/biom.13626>.
+License: MIT + file LICENSE
+Imports: Rcpp, salso
+Depends: scales, RColorBrewer
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2023-10-09 15:12:10 UTC; francescodenti
+Author: Laura D'Angelo [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5034-7414>),
+  Francesco Denti [aut] (<https://orcid.org/0000-0003-2978-4702>)
+Repository: CRAN
+Date/Publication: 2023-10-10 17:20:09 UTC

@@ -1,0 +1,102 @@
+Package: dataquieR
+Title: Data Quality in Epidemiological Research
+Version: 2.5.0
+Authors@R: 
+    c(person(given = "University Medicine Greifswald",
+             role = "cph"),
+      person(given = "Elisa",
+             family = "Kasbohm",
+             role = "aut",
+             comment = c(ORCID = "0000-0001-5261-538X"),
+             email = "elisa.kasbohm@uni-greifswald.de"),
+      person(given = "Joany",
+             family = "Marino",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-4657-3758"),
+             email = "joany.marino@uni-greifswald.de"),
+      person(given = "Elena",
+             family = "Salogni",
+             role = "aut",
+             comment = c(ORCID = "0009-0007-3767-7145"),
+             email = "elena.salogni@uni-greifswald.de"),       
+      person(given = "Adrian",
+             family = "Richter",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-3372-2021"),
+             email = "richtera@uni-greifswald.de"),
+      person(given = "Carsten Oliver",
+             family = "Schmidt",
+             role = "aut",
+             comment = c(ORCID = "0000-0001-5266-9396"),
+             email = "carsten.schmidt@uni-greifswald.de"),
+      person(given = "Stephan",
+             family = "Struckmann",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-8565-7962"),
+             email = "stephan.struckmann@uni-greifswald.de"),
+      person(given = "German Research Foundation (DFG SCHM 2744/3-1, SCHM 2744/9-1, SCHM 2744/3-4)",
+             role = "fnd"),
+      person(given = "National Research Data Infrastructure for Personal Health Data: (NFDI 13/1)",
+             role = "fnd"),
+      person(given = "European Union’s Horizon 2020 programme (euCanSHare, grant agreement No. 825903)",
+             role = "fnd"))
+Description: Data quality assessments guided by a
+    'data quality framework introduced by Schmidt and colleagues, 2021' 
+    <doi:10.1186/s12874-021-01252-7> target the
+    data quality dimensions integrity, completeness, consistency, and
+    accuracy. The scope of applicable functions rests on the
+    availability of extensive metadata which can be provided in
+    spreadsheet tables. Either standardized (e.g. as 'html5' reports) or
+    individually tailored reports can be generated. For an introduction
+    into the specification of corresponding metadata, please refer to the
+    'package website'
+    <https://dataquality.qihs.uni-greifswald.de/VIN_Annotation_of_Metadata.html>.
+License: BSD_2_clause + file LICENSE
+URL: https://dataquality.qihs.uni-greifswald.de/
+BugReports: https://gitlab.com/libreumg/dataquier/-/issues
+Depends: R (>= 3.6.0)
+Imports: dplyr (>= 1.0.2), emmeans, ggplot2 (>= 3.5.0), lme4,
+        lubridate, MASS, MultinomialCI, parallelMap, patchwork (>=
+        1.3.0), R.devices, rlang, robustbase, qmrparser, utils, rio,
+        readr, scales, withr, lifecycle, units, methods
+Suggests: openxlsx2, GGally, grDevices, jsonlite, cli, whoami, anytime,
+        cowplot (>= 0.9.4), digest, DT (>= 0.23), flexdashboard,
+        flexsiteboard, htmltools, knitr, markdown, parallel,
+        parallelly, rJava, rmarkdown, rstudioapi, testthat (>= 3.1.9),
+        tibble, vdiffr, pkgload, Rdpack, callr, colorspace, plotly,
+        ggvenn, htmlwidgets, future, processx, R6, shiny, xml2, mgcv,
+        rvest, textutils, dbx, ggpubr, grImport2, rsvg, stringdist,
+        rankICC, nnet, ordinal, storr, reticulate
+VignetteBuilder: knitr
+Encoding: UTF-8
+KeepSource: FALSE
+Language: en-US
+RoxygenNote: 7.3.2
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+Config/testthat/start-first: dq_report_by_sm, dq_report2,
+        dq_report_by_arguments, dq_report_by_s, int_encoding_errors,
+        dq_report_by_pipesymbol_list, dq_report_by_m, plots, acc_loess,
+        com_item_missingness, dq_report_by_na,
+        dq_report_by_directories, con_limit_deviations,
+        con_contradictions_redcap, com_segment_missingness,
+        util_correct_variable_use
+BuildManual: TRUE
+NeedsCompilation: no
+Packaged: 2025-02-20 18:13:39 UTC; struckmanns
+Author: University Medicine Greifswald [cph],
+  Elisa Kasbohm [aut] (<https://orcid.org/0000-0001-5261-538X>),
+  Joany Marino [aut] (<https://orcid.org/0000-0002-4657-3758>),
+  Elena Salogni [aut] (<https://orcid.org/0009-0007-3767-7145>),
+  Adrian Richter [aut] (<https://orcid.org/0000-0002-3372-2021>),
+  Carsten Oliver Schmidt [aut] (<https://orcid.org/0000-0001-5266-9396>),
+  Stephan Struckmann [aut, cre] (<https://orcid.org/0000-0002-8565-7962>),
+  German Research Foundation (DFG SCHM 2744/3-1, SCHM 2744/9-1, SCHM
+    2744/3-4) [fnd],
+  National Research Data Infrastructure for Personal Health Data: (NFDI
+    13/1) [fnd],
+  European Union’s Horizon 2020 programme (euCanSHare, grant agreement
+    No. 825903) [fnd]
+Maintainer: Stephan Struckmann <stephan.struckmann@uni-greifswald.de>
+Repository: CRAN
+Date/Publication: 2025-02-20 18:40:02 UTC

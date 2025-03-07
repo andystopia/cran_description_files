@@ -1,0 +1,33 @@
+Package: cardx
+Title: Extra Analysis Results Data Utilities
+Version: 0.1.0
+Authors@R: c(
+    person("Daniel", "Sjoberg", , "danield.sjoberg@gmail.com", role = c("aut", "cre")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Create extra Analysis Results Data (ARD) summary objects.
+    The package supplements the simple ARD functions from the 'cards'
+    package, exporting functions to put statistical results in the ARD
+    format. These objects are used and re-used to construct summary
+    tables, visualizations, and written reports.
+License: Apache License 2.0
+URL: https://github.com/insightsengineering/cardx
+BugReports: https://github.com/insightsengineering/cardx/issues
+Depends: R (>= 4.1)
+Imports: cards (>= 0.1.0), cli (>= 3.6.1), dplyr (>= 1.1.2), glue (>=
+        1.6.2), rlang (>= 1.1.1), tidyr (>= 1.3.0)
+Suggests: broom (>= 1.0.5), broom.helpers (>= 1.13.0), spelling,
+        testthat (>= 3.2.0), withr
+Config/Needs/website: insightsengineering/nesttemplate
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-03-15 17:35:50 UTC; sjobergd
+Author: Daniel Sjoberg [aut, cre],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Daniel Sjoberg <danield.sjoberg@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-18 14:30:02 UTC

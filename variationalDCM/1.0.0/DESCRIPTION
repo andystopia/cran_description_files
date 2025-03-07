@@ -1,0 +1,37 @@
+Package: variationalDCM
+Type: Package
+Title: Variational Bayesian Estimation for Diagnostic Classification
+        Models
+Version: 1.0.0
+Authors@R: c(person("Keiichiro", "Hijikata", email = "k.hijikata.1120@outlook.jp", role = c("aut", "cre")),
+    person("Motonori", "Oka", role = "aut", comment = c(ORCID = "0000-0002-9867-8922")),
+    person("Kazuhiro", "Yamaguchi", role = "aut", comment = c(ORCID = "0000-0001-8011-8575")),
+    person("Kensuke", "Okada", role = "aut", comment = c(ORCID = "0000-0003-1663-5812")))
+Description: Enables computationally efficient parameters-estimation by variational Bayesian 
+    methods for various diagnostic classification models (DCMs). DCMs are a class of discrete latent variable models
+    for classifying respondents into latent classes that typically represent distinct combinations of skills they possess. 
+    Recently, to meet the growing need of large-scale diagnostic measurement in the field of educational, psychological, and psychiatric measurements,
+    variational Bayesian inference has been developed as a computationally efficient alternative to the Markov chain Monte Carlo methods 
+    e.g., Yamaguchi and Okada (2020a) <doi:10.1007/s11336-020-09739-w>, Yamaguchi and Okada (2020b) <doi:10.3102/1076998620911934>,
+    Yamaguchi (2020) <doi:10.1007/s41237-020-00104-w>, Oka and Okada (2023) <doi:10.1007/s11336-022-09884-4>, and Yamaguchi and Martinez (2023) <doi:10.1111/bmsp.12308>. 
+    To facilitate their applications, 'variationalDCM' is developed to provide a collection of recently-proposed variational Bayesian estimation methods for various DCMs.
+Maintainer: Keiichiro Hijikata <k.hijikata.1120@outlook.jp>
+Depends: R (>= 4.2.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: mvtnorm, stats
+Suggests: knitr
+VignetteBuilder: knitr
+RoxygenNote: 7.2.2
+URL: https://github.com/khijikata/variationalDCM
+BugReports: https://github.com/khijikata/variationalDCM/issues
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-11-08 05:59:01 UTC; khiji
+Author: Keiichiro Hijikata [aut, cre],
+  Motonori Oka [aut] (<https://orcid.org/0000-0002-9867-8922>),
+  Kazuhiro Yamaguchi [aut] (<https://orcid.org/0000-0001-8011-8575>),
+  Kensuke Okada [aut] (<https://orcid.org/0000-0003-1663-5812>)
+Repository: CRAN
+Date/Publication: 2023-11-08 19:30:02 UTC

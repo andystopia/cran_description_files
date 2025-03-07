@@ -1,0 +1,22 @@
+Package: emBayes
+Type: Package
+Title: Robust Bayesian Variable Selection via Expectation-Maximization
+Version: 0.1.0
+Date: 2023-05-15
+Authors@R: c( person("Yuwen", "Liu", role = c("aut", "cre") , email = "yuwen@ksu.edu"),
+              person("Cen", "Wu", role = "aut"))
+Maintainer: Yuwen Liu <yuwen@ksu.edu>
+Description: Variable selection methods have been extensively developed for analyzing high-dimensional omics data within both the frequentist and Bayesian frameworks. This package implemented the spike-and-slab quantile LASSO which has been developed along the line of Bayesian hierarchical model but deeply rooted in the frequentist regularization methods by utilizing the Expectation–Maximization (EM) algorithm. Therefore, the proposed method borrows strength from both the frequentist and Bayesian frameworks while overcoming their respective limitations. The spike-and-slab quantile LASSO can handle data irregularity in terms of skewness and outliers in the disease trait, compared to its nonrobust alternative, the spike-and-slab LASSO, which has also been implemented in the package. The core module of this package is developed in 'C++'.
+Depends: R (>= 4.2.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp, glmnet
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-05-18 20:21:09 UTC; 26057
+Author: Yuwen Liu [aut, cre],
+  Cen Wu [aut]
+Repository: CRAN
+Date/Publication: 2023-05-20 08:10:02 UTC

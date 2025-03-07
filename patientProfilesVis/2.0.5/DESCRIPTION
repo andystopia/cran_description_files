@@ -1,0 +1,41 @@
+Package: patientProfilesVis
+Type: Package
+Title: Visualization of Patient Profiles
+Version: 2.0.5
+Date: 2022-11-18
+Authors@R: c(
+  person(given = "Laure", family = "Cougnaud", 
+  role = c("aut", "cre"), email = "laure.cougnaud@openanalytics.eu"), 
+  person(given = "Margaux", family = "Faes", 
+  role = "rev", comment = "tests"),
+  person(given = "Open Analytics", role = "cph")
+  )
+Description: Creation of patient profile visualizations for
+  exploration, diagnostic or monitoring purposes during a clinical trial.
+  These static visualizations display a patient-specific overview
+  of the evolution during the trial time frame of 
+  parameters of interest (as laboratory, ECG, vital signs),
+  presence of adverse events, exposure to a treatment; 
+  associated with metadata patient information, 
+  as demography, concomitant medication.
+  The visualizations can be tailored for specific domain(s) or endpoint(s) of interest.
+  Visualizations are exported into patient profile report(s)
+  or can be embedded in custom report(s).
+Imports: clinUtils, ggplot2 (>= 3.0.0), plyr, cowplot, tools, reshape2,
+        knitr, grid, stringr, parallel, gridExtra, scales, utils
+Suggests: pander, shiny, testthat, grDevices, rmarkdown, gtable,
+        pdftools, viridisLite
+URL: https://github.com/openanalytics/patientProfilesVis
+BugReports: https://github.com/openanalytics/patientProfilesVis/issues
+License: MIT + file LICENSE
+RoxygenNote: 7.2.2
+VignetteBuilder: knitr
+SystemRequirements: latex
+NeedsCompilation: no
+Packaged: 2022-11-18 16:00:46 UTC; root
+Author: Laure Cougnaud [aut, cre],
+  Margaux Faes [rev] (tests),
+  Open Analytics [cph]
+Maintainer: Laure Cougnaud <laure.cougnaud@openanalytics.eu>
+Repository: CRAN
+Date/Publication: 2022-11-18 16:30:02 UTC

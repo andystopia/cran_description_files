@@ -1,0 +1,33 @@
+Package: tidygam
+Type: Package
+Title: Tidy Prediction and Plotting of Generalised Additive Models
+Version: 0.2.0
+Date: 2023-05-08
+Authors@R: 
+    c(person(given = "Stefano",
+             family = "Coretta",
+             email = paste0("stefano.coretta", "@", "gmail.com"),
+             role = c("aut", "cre")))
+Description: Provides functions that compute predictions from Generalised
+    Additive Models (GAMs) fitted with 'mgcv' and return them as a tibble.
+    These can be plotted with a generic plot()-method that uses 'ggplot2' or
+    plotted as any other data frame. The main function is predict_gam().
+License: MIT + file LICENSE
+URL: https://github.com/stefanocoretta/tidygam,
+        https://stefanocoretta.github.io/tidygam/
+BugReports: https://github.com/stefanocoretta/tidygam/issues
+Encoding: UTF-8
+LazyData: true
+Imports: cli, dplyr, ggplot2, glue, insight, magrittr, mgcv, rlang,
+        stringr, tibble, tidyr, tidyselect
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Language: en_GB
+RoxygenNote: 7.2.0
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-05-08 13:02:33 UTC; ste
+Author: Stefano Coretta [aut, cre]
+Maintainer: Stefano Coretta <stefano.coretta@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-09 08:50:02 UTC

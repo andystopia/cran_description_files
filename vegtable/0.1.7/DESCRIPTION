@@ -1,0 +1,36 @@
+Package: vegtable
+Version: 0.1.7
+Encoding: UTF-8
+Title: Handling Vegetation Data Sets
+Authors@R: 
+	person("Miguel", "Alvarez", email="kamapu78@gmail.com",
+		role=c("aut","cre"), comment=c(ORCID="0000-0003-1500-1834"))
+Depends: R (>= 3.5.0), taxlist
+Imports: foreign, methods, knitr, qdapRegex, sp, stringi, vegdata
+Suggests: rmarkdown, roxygen2, testthat, vegan
+Description: Import and handling data from vegetation-plot databases, especially
+    data stored in 'Turboveg 2' (<https://www.synbiosys.alterra.nl/turboveg/>).
+    Also import/export routines for exchange of data with 'Juice'
+    (<https://www.sci.muni.cz/botany/juice/>) are implemented.
+LazyData: true
+License: GPL (>= 2)
+URL: https://github.com/kamapu/vegtable
+BugReports: https://github.com/kamapu/vegtable/issues
+Collate: 'imports.R' 'NULLing.R' 'coverconvert-class.R'
+        'vegtable-class.R' 'shaker-class.R' 'transform.R'
+        'cover_trans.R' 'clean.R' 'as.list.R' 'merge_taxa.R'
+        'add_releves.R' 'header.R' 'Extract.R' 'veg_relation.R'
+        'vegtable_stat.R' 'df2vegtable.R' 'used_synonyms.R' 'subset.R'
+        'names.R' 'tv2vegtable.R' 'crosstable.R' 'aggregate.R'
+        'write_juice.R' 'vegtable2kml.R' 'layers2samples.R'
+        'make_cocktail.R' 'summary.R' 'match_names.R' 'count_taxa.R'
+        'trait_stats.R' 'update_det.R' 'aspect_con-data.R'
+        'braun_blanquet-data.R' 'dune_veg-data.R' 'Kenya_veg-data.R'
+        'Wetlands-data.R' 'vegtable-deprecated.R'
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-10-13 15:23:38 UTC; miguel
+Author: Miguel Alvarez [aut, cre] (<https://orcid.org/0000-0003-1500-1834>)
+Maintainer: Miguel Alvarez <kamapu78@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-10-13 21:10:02 UTC

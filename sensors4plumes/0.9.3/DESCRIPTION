@@ -1,0 +1,32 @@
+Package: sensors4plumes
+Type: Package
+Title: Test and Optimise Sampling Designs Based on Plume Simulations
+Version: 0.9.3
+Date: 2018-05-07
+Author: Kristina B. Helle
+Maintainer: Kristina B. Helle <kristina.helle@uni-muenster.de>
+Description: Test sampling designs by several flexible cost functions, usually based on the simulations, and optimise sampling designs using different optimisation algorithms; load plume simulations (on lattice or points) even if they do not fit into memory.
+License: GPL-3
+Imports: lattice, emdist, rgdal, FNN, graphics, conf.design, automap,
+        genalg
+Depends: R (>= 3.0.0), methods, gstat, sp, raster
+Collate: s4p.R points2polygrid.R SpatialPolygridDataFrame-class.R
+        SpatialPolygridDataFrame-methods.R
+        SpatialIndexDataFrame-class.R SpatialIndexDataFrame-methods.R
+        SpatialDataFrame-class.R subsetSDF.R areaSDF.R
+        Simulations-class.R Simulations-methods.R plotSimulations.R
+        cbindSimulations.R loadSimulations.R loadSimulations_raster.R
+        loadSimulations_scan.R extractSpatialDataFrame.R
+        SDF2simulations.R changeSimulationsPath.R subsetSimulations.R
+        summaryPlumes.R summaryLocations.R replaceDefault.R
+        simulationsApply.R fitMedianVariogram.R interpolate.R
+        interpolationErrorFunctions.R interpolationError.R
+        spatialSpreadFunctions.R spatialSpread.R
+        measurementsResultMap.R optimiseSD_greedy.R optimiseSD_ssa.R
+        optimiseSD_genetic.R completeSearch.R optimiseSD_global.R
+        coordCentral.R optimiseSD_manual.R optimiseSD.R plotSD.R
+        optimisationCurve.R postprocessing.R spplotLog.R
+NeedsCompilation: no
+Packaged: 2018-05-07 10:04:05 UTC; kristina
+Repository: CRAN
+Date/Publication: 2018-05-07 12:26:45 UTC

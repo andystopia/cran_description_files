@@ -1,0 +1,35 @@
+Package: hdnom
+Type: Package
+Title: Benchmarking and Visualization Toolkit for Penalized Cox Models
+Version: 6.0.0
+Authors@R: c(
+    person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0250-5673")),
+    person("Qing-Song", "Xu", email = "qsxu@csu.edu.cn", role = c("aut")),
+    person("Miao-Zhu", "Li", email = "miaozhu.li@duke.edu", role = c("aut")),
+    person("Frank", "Harrell", email = "f.harrell@vanderbilt.edu", role = c("ctb"))
+    )
+Maintainer: Nan Xiao <me@nanx.me>
+Description: Creates nomogram visualizations for penalized Cox regression
+    models, with the support of reproducible survival model building,
+    validation, calibration, and comparison for high-dimensional data.
+License: GPL-3 | file LICENSE
+LazyData: TRUE
+VignetteBuilder: knitr
+URL: https://nanx.me/hdnom/, https://github.com/nanxstats/hdnom,
+        http://hdnom.io
+BugReports: https://github.com/nanxstats/hdnom/issues
+Depends: R (>= 3.5.0)
+Imports: survival, glmnet, penalized, ncvreg, foreach, survAUC,
+        ggplot2, gridExtra
+Suggests: knitr, rmarkdown, doParallel
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-06-23 03:50:15 UTC; nanx
+Author: Nan Xiao [aut, cre] (<https://orcid.org/0000-0002-0250-5673>),
+  Qing-Song Xu [aut],
+  Miao-Zhu Li [aut],
+  Frank Harrell [ctb]
+Repository: CRAN
+Date/Publication: 2019-06-23 05:10:03 UTC

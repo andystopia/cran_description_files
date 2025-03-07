@@ -1,0 +1,43 @@
+Package: Rforestry
+Type: Package
+Title: Random Forests, Linear Trees, and Gradient Boosting for
+        Inference and Interpretability
+Version: 0.9.0.4
+Authors@R: c(
+    person("Sören", "Künzel", role = "aut"),
+    person("Theo", "Saarinen", role = c("aut","cre"), email = "theo_s@berkeley.edu"),
+    person("Simon", "Walter", role = "aut"),
+    person("Edward", "Liu", role = "aut"),
+    person("Allen", "Tang", role = "aut"),
+    person("Jasjeet", "Sekhon", role = "aut")
+    )
+Maintainer: Theo Saarinen <theo_s@berkeley.edu>
+BugReports: https://github.com/forestry-labs/Rforestry/issues
+URL: https://github.com/forestry-labs/Rforestry
+Description: Provides fast implementations of Honest Random Forests, 
+    Gradient Boosting, and Linear Random Forests, with an emphasis on inference 
+    and interpretability. Additionally contains methods for variable 
+    importance, out-of-bag prediction, regression monotonicity, and
+    several methods for missing data imputation. Soren R. Kunzel, 
+    Theo F. Saarinen, Edward W. Liu, Jasjeet S. Sekhon (2019) <arXiv:1906.06463>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: Rcpp (>= 0.12.9), parallel, methods, visNetwork, glmnet,
+        grDevices, onehot
+LinkingTo: Rcpp, RcppArmadillo, RcppThread
+RoxygenNote: 7.1.1
+SystemRequirements: C++11
+Suggests: testthat, knitr, rmarkdown, mvtnorm
+Collate: 'R_preprocessing.R' 'RcppExports.R' 'forestry.R'
+        'backwards_compatible.R' 'compute_rf_lp.R'
+        'neighborhood_imputation.R' 'plottree.R'
+NeedsCompilation: yes
+Packaged: 2021-03-31 21:18:53 UTC; theo
+Author: Sören Künzel [aut],
+  Theo Saarinen [aut, cre],
+  Simon Walter [aut],
+  Edward Liu [aut],
+  Allen Tang [aut],
+  Jasjeet Sekhon [aut]
+Repository: CRAN
+Date/Publication: 2021-04-02 08:30:02 UTC

@@ -1,0 +1,29 @@
+Package: snvecR
+Title: Calculate Earth’s Obliquity and Precession in the Past
+Version: 3.8.0
+Authors@R: 
+    c(person("Ilja", "Kocken", , "ikocken@hawaii.edu", role = c("aut", "cre", "trl", "cph"),
+             comment = c(ORCID = "0000-0003-2196-8718")),
+      person("Richard", "Zeebe", , "zeebe@soest.hawaii.edu", role = c("aut"),
+             comment = c(ORCID = "0000-0003-0806-8387"))
+    )
+Description: Easily calculate precession and obliquity from an orbital solution (defaults to ZB18a from Zeebe and Lourens (2019) <doi:10.1126/science.aax0612>) and assumed or reconstructed values for tidal dissipation (Td) and dynamical ellipticity (Ed). This is a translation and adaptation of the C-code in the supplementary material to Zeebe and Lourens (2022) <doi:10.1029/2021PA004349>, with further details on the methodology described in Zeebe (2022) <doi:10.3847/1538-3881/ac80f8>. The name of the C-routine is snvec, which refers to the key units of computation: spin vector s and orbit normal vector n.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+Suggests: ggplot2, testthat, roxygen2, knitr, rmarkdown
+Imports: deSolve, pracma, cli (>= 3.4.0), dplyr, tibble, purrr, readr,
+        tidyselect, lubridate, rlang (>= 0.4.11), withr, tidyr, glue,
+        curl, astrochron
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+URL: https://japhir.github.io/snvecR/
+NeedsCompilation: no
+Packaged: 2024-01-26 17:17:31 UTC; japhir
+Author: Ilja Kocken [aut, cre, trl, cph]
+    (<https://orcid.org/0000-0003-2196-8718>),
+  Richard Zeebe [aut] (<https://orcid.org/0000-0003-0806-8387>)
+Maintainer: Ilja Kocken <ikocken@hawaii.edu>
+Repository: CRAN
+Date/Publication: 2024-01-26 17:40:03 UTC

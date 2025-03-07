@@ -1,0 +1,101 @@
+Package: PFIM
+Type: Package
+Title: Population Fisher Information Matrix
+Version: 5.0
+Date: 2022-05-23
+Authors@R: c(person(given = "France",
+           family = "Mentré",
+           role = c("aut"),
+           email = "france.mentre@inserm.fr",
+           comment = c(ORCID = "0000-0002-7045-1275")),
+    person(given = "Hervé",
+           family = "Le Nagard",
+           role = c("aut"),
+           email = "herve.lenagard@inserm.fr"),
+    person(given = "Romain",
+           family = "Leroux",
+           role = c("aut","cre"),
+           email = "romain.leroux@inserm.fr"),
+    person(given = "Jérémy",
+           family = "Seurat",
+           role = c("aut"),
+           email = "jeremy.seurat@inserm.fr"),
+    person(given = "Tran Bach",
+           family = "Nguyen",
+           role = c("ctb")),
+    person(given = "Caroline",
+           family = "Bazzoli",
+           role = c("ctb")),        
+    person(given = "Emmanuelle",
+           family = "Comets",
+           role = c("ctb")),  
+    person(given = "Anne",
+           family = "Dubois",
+           role = c("ctb")),       
+    person(given = "Cyrielle",
+           family = "Dumont",
+           role = c("ctb")),  
+    person(given = "Giulia",
+           family = "Lestini",
+           role = c("ctb")),            
+    person(given = "Thi Huyen Tram",
+           family = "Nguyen",
+           role = c("ctb")),            
+    person(given = "Thu Thuy",
+           family = "Nguyen",
+           role = c("ctb")),                      
+    person(given = "Sylvie",
+           family = "Retout",
+           role = c("ctb")))       
+NeedsCompilation: no
+Description: Evaluate or optimize designs for nonlinear mixed effects models using the Fisher Information matrix. Methods used in the package refer to 
+    Mentré F, Mallet A, Baccar D (1997) <doi:10.1093/biomet/84.2.429>,
+    Retout S, Comets E, Samson A, Mentré F (2007) <doi:10.1002/sim.2910>,
+    Bazzoli C, Retout S, Mentré F (2009) <doi:10.1002/sim.3573>,
+    Le Nagard H, Chao L, Tenaillon O (2011) <doi:10.1186/1471-2148-11-326>,
+    Combes FP, Retout S, Frey N, Mentré F (2013) <doi:10.1007/s11095-013-1079-3> and
+    Seurat J, Tang Y, Mentré F, Nguyen TT (2021) <doi:10.1016/j.cmpb.2021.106126>.
+Depends: R (>= 4.0.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: methods, rmarkdown, stats, scales, deSolve, kableExtra,
+        gtable, Deriv, grid, knitr, markdown, Matrix, ggplot2, ggbreak,
+        pracma, Rcpp, filesstrings
+VignetteBuilder: knitr
+Suggests: testthat, inline, utils, devtools, htmltools
+RoxygenNote: 7.1.2
+Collate: 'Constraint.R' 'Administration.R' 'AdministrationConstraint.R'
+        'Arm.R' 'Fim.R' 'IndividualFim.R' 'BayesianFim.R'
+        'ModelError.R' 'Combined1.R' 'Combined1c.R' 'Combined2c.R'
+        'Combined2.R' 'Constant.R' 'ContinuousConstraint.R'
+        'Optimization.R' 'Design.R' 'DesignConstraint.R'
+        'DiscreteConstraint.R' 'Distribution.R'
+        'FedorovWynnAlgorithm.R' 'ModelEquations.R' 'Model.R'
+        'PKModel.R' 'PDModel.R' 'LibraryOfModels.R'
+        'ModelODEquations.R' 'ModelInfusionODEquations.R'
+        'ModelInfusionEquations.R' 'FillLibraryOfModels.R'
+        'StandardDistribution.R' 'LogNormalDistribution.R'
+        'ModelParameter.R' 'ModelVariable.R'
+        'MultiplicativeAlgorithm.R' 'NormalDistribution.R'
+        'PFIM-package.R' 'StatisticalModel.R' 'PFIMProject.R'
+        'PGBOAlgorithm.R' 'PKPDModel.R' 'PSOAlgorithm.R'
+        'PopulationFim.R' 'Proportional.R' 'ProportionalC.R'
+        'ReportAndPlots.R' 'Response.R' 'SamplingConstraint.R'
+        'SamplingTimes.R' 'SimplexAlgorithm.R' 'globals.R'
+Packaged: 2022-06-23 17:09:40 UTC; ADMIN Romain LEROUX
+Author: France Mentré [aut] (<https://orcid.org/0000-0002-7045-1275>),
+  Hervé Le Nagard [aut],
+  Romain Leroux [aut, cre],
+  Jérémy Seurat [aut],
+  Tran Bach Nguyen [ctb],
+  Caroline Bazzoli [ctb],
+  Emmanuelle Comets [ctb],
+  Anne Dubois [ctb],
+  Cyrielle Dumont [ctb],
+  Giulia Lestini [ctb],
+  Thi Huyen Tram Nguyen [ctb],
+  Thu Thuy Nguyen [ctb],
+  Sylvie Retout [ctb]
+Maintainer: Romain Leroux <romain.leroux@inserm.fr>
+Repository: CRAN
+Date/Publication: 2022-06-24 08:10:05 UTC

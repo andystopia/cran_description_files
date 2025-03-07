@@ -1,0 +1,36 @@
+Package: RTest
+Version: 1.2.2
+Date: 2018-12-11
+Title: A XML-Based Testing Framework for Automated Component Tests of R
+        Packages
+Authors@R: c(
+    person("Sebastian", "Wolf", , "sebastian@mail-wolf.de", role = c("aut","cre")),
+    person("Matthias", "Pfeifer", , "matthiaspfeifer@gmx.net", role = c("aut", "ctb")),
+    person("Sergej", "Potapov", , "sergej.potapov@roche.com", role = c("ctb")),
+    person("Roche", role = c("cph", "fnd"))
+    )
+Depends: R (>= 3.1.3), testthat (>= 1.0.0), magick(>= 1.3), methods,
+        XML, stringr, magrittr
+Imports: base64, jsonlite
+Suggests: knitr, rmarkdown
+Description: This provides a framework for R packages developed for
+	a regulatory environment. It is based on the 'testthat' unit testing system and provides the adapter
+    functionalities for XML-based test case definition as well as for standardized
+    reporting of the test results.
+Collate: RTest-package.R utils.R utils.examples.R utils.test.R
+        utils.xmlRead.R utils.xmlWrite.R RTestCollection.R RTestCase.R
+        RTestCase.test-adapter.R
+SystemRequirements: ImageMagick++: ImageMagick-c++-devel (rpm) or
+        libmagick++-dev (deb)
+VignetteBuilder: knitr
+License: GPL (>= 2)
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2018-12-11 11:30:41 UTC; news
+Author: Sebastian Wolf [aut, cre],
+  Matthias Pfeifer [aut, ctb],
+  Sergej Potapov [ctb],
+  Roche [cph, fnd]
+Maintainer: Sebastian Wolf <sebastian@mail-wolf.de>
+Repository: CRAN
+Date/Publication: 2018-12-14 17:30:03 UTC

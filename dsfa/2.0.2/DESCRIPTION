@@ -1,0 +1,24 @@
+Package: dsfa
+Title: Distributional Stochastic Frontier Analysis
+Version: 2.0.2
+Authors@R: c(person(given = "Rouven",
+           family = "Schmidt",
+           role = c("aut", "cre"),
+           email = "rouven.schmidt@tu-clausthal.de"))
+Description: Framework to fit distributional stochastic frontier models. Casts the stochastic frontier model into the flexible framework of distributional regression or otherwise known as General Additive Models of Location, Scale and Shape (GAMLSS). Allows for linear, non-linear, random and spatial effects on all the parameters of the distribution of the output, e.g. effects on the production or cost function, heterogeneity of the noise and inefficiency. Available distributions are the normal-halfnormal and normal-exponential distribution. Estimation via the fast and reliable routines of the 'mgcv' package. For more details see <doi:10.1016/j.csda.2023.107796>.
+Imports: mgcv, stats, Rdpack, Rcpp, RcppArmadillo, copula, gratia
+Suggests: plm, sfaR
+Depends: R (>= 3.5.0)
+NeedsCompilation: yes
+SystemRequirements: C++17
+License: MIT + file LICENSE
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RdMacros: Rdpack
+LazyData: true
+RoxygenNote: 7.2.3
+Packaged: 2023-07-19 14:58:34 UTC; Rouven
+Author: Rouven Schmidt [aut, cre]
+Maintainer: Rouven Schmidt <rouven.schmidt@tu-clausthal.de>
+Repository: CRAN
+Date/Publication: 2023-07-19 21:40:16 UTC

@@ -1,0 +1,40 @@
+Package: stacks
+Title: Tidy Model Stacking
+Version: 1.0.4
+Authors@R: c(
+    person("Simon", "Couch", , "simon.couch@posit.co", role = c("aut", "cre")),
+    person("Max", "Kuhn", , "max@posit.co", role = "aut"),
+    person(given = "Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Model stacking is an ensemble technique that involves
+    training a model to combine the outputs of many diverse statistical
+    models, and has been shown to improve predictive performance in a
+    variety of settings. 'stacks' implements a grammar for
+    'tidymodels'-aligned model stacking.
+License: MIT + file LICENSE
+URL: https://stacks.tidymodels.org/,
+        https://github.com/tidymodels/stacks
+BugReports: https://github.com/tidymodels/stacks/issues
+Depends: R (>= 3.6)
+Imports: butcher (>= 0.1.3), cli, doFuture, dplyr (>= 1.1.0), foreach,
+        future, generics, ggplot2, glmnet, glue, parsnip (>= 1.2.0),
+        purrr (>= 1.0.0), recipes (>= 1.0.10), rlang (>= 1.1.3),
+        rsample (>= 1.2.0), stats, tibble (>= 2.1.3), tidyr, tune (>=
+        1.2.0), vctrs (>= 0.6.1), workflows (>= 1.1.4)
+Suggests: covr, h2o, kernlab, kknn, knitr, mockr, modeldata, nnet,
+        ranger, rmarkdown, testthat (>= 3.0.0), workflowsets (>=
+        0.1.0), yardstick (>= 1.1.0)
+VignetteBuilder: knitr
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-03-21 17:54:31 UTC; simoncouch
+Author: Simon Couch [aut, cre],
+  Max Kuhn [aut],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Simon Couch <simon.couch@posit.co>
+Repository: CRAN
+Date/Publication: 2024-03-21 18:30:02 UTC

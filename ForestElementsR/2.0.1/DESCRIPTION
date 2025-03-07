@@ -1,0 +1,42 @@
+Package: ForestElementsR
+Title: Data Structures and Functions for Working with Forest Data
+Version: 2.0.1
+Date: 2024-12-20
+Authors@R: 
+    c(
+      person("Peter", "Biber", email = "p.biber@tum.de", 
+             role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0000-0002-9700-8708")),
+      person("Astor", "Toraño Caicoya", email="astor.torano-caicoya@tum.de",
+             role = c("aut"), comment = c(ORCID = "0000-0002-9658-8990")),       
+      person("Torben", "Hilmers", email = "torben.hilmers@tum.de", 
+             role = "ctb", comment = c(ORCID = "0000-0002-4982-8867"))
+    )
+Description: Provides generic data structures and algorithms for use with forest
+    mensuration data in a consistent framework. The functions and objects
+    included are a collection of broadly applicable tools. More specialized 
+    applications should be implemented in separate packages that build on this
+    foundation. Documentation about 'ForestElementsR' is provided by three
+    vignettes included in this package. For an introduction to the field of 
+    forest mensuration, refer to the textbooks by Kershaw et al. (2017)
+    <doi:10.1002/9781118902028>, and van Laar and Akca (2007)
+    <doi:10.1007/978-1-4020-5991-9>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: magrittr, ggplot2, tibble, dplyr, purrr, rlang, Rdpack, tidyr,
+        vctrs, stringr, tidyselect (>= 1.2.0), doBy
+RdMacros: Rdpack
+Depends: R (>= 4.3), sf
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.2.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-20 21:06:25 UTC; peter
+Author: Peter Biber [aut, cre, cph] (<https://orcid.org/0000-0002-9700-8708>),
+  Astor Toraño Caicoya [aut] (<https://orcid.org/0000-0002-9658-8990>),
+  Torben Hilmers [ctb] (<https://orcid.org/0000-0002-4982-8867>)
+Maintainer: Peter Biber <p.biber@tum.de>
+Repository: CRAN
+Date/Publication: 2024-12-23 11:10:07 UTC

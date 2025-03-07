@@ -1,0 +1,25 @@
+Package: MRMR
+Title: Multivariate Regression Models for Reserving
+Description: Non-life runoff reserves may be analyzed using linear models. This generalizes the special cases of multiplicative chain ladder and
+    the additive model. In addition, the package provides visual and statistical diagnostics to assess the quality of modeled link ratios.
+Version: 0.1.4
+Maintainer: Brian A. Fannin <FanninQED@Yahoo.com>
+Author: Brian A. Fannin
+License: GPL (>= 2)
+Depends: lubridate
+Imports: reshape2, ggplot2, stats, lmtest, methods, plyr
+Suggests: testthat, mondate
+Collate: 'CreateOriginPeriods.R' 'CreateEvaluationDates.R'
+        'CreateDevelopmentLags.R' 'TriangleAdjustMeasures.R'
+        'Triangle.R' 'TriangleModel.R' 'TriangleProjection.R'
+        'CompleteTriangle.R' 'GetTriangleData.R' 'Help.R'
+        'LatestDiagonal.R' 'PlotModelFactors.R' 'PlotModelGoF.R'
+        'PlotResiduals.R' 'PlotTriangle.R' 'PlotTriangleModel.R'
+        'ProjectToDate.R' 'ProjectToDev.R' 'ProjectValues.R'
+        'SerialCorrelation.R' 'SummaryTriangleModel.R' 'TriangleMeta.R'
+        'data.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-07-16 01:13:00 UTC; brian
+Repository: CRAN
+Date/Publication: 2016-07-16 15:16:52

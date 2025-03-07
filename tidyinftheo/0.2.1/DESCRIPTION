@@ -1,0 +1,31 @@
+Package: tidyinftheo
+Type: Package
+Title: Some Information-Theoretic Functions in the 'Tidy' Style
+Version: 0.2.1
+Authors@R: c(
+    person(given="Andy", family="Pohl", email="andy@pohl.io", role=c("aut", "cre")),
+    person(given="Pohl Data, LLC", role="cph")
+    )
+Description: A frontend to the Shannon entropy, conditional Shannon entropy,
+    and mutual information calculations provided by the 'infotheo' package.  See 
+    Cover and Thomas (2001) <doi:10.1002/0471200611> for an explanation of these
+    measures.  Also provides a convenient heatmap to compare more than two columns
+    in a pairwise fashion.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.0)
+Imports: dplyr, infotheo, ggplot2, magrittr, purrr, rlang, tibble,
+        tidyselect, tidyverse
+Suggests: knitr, rmarkdown (>= 0.2.65), testthat, covr
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+URL: https://github.com/pohlio/tidyinftheo
+BugReports: https://github.com/pohlio/tidyinftheo/issues
+NeedsCompilation: no
+Packaged: 2017-11-30 00:11:11 UTC; andy
+Author: Andy Pohl [aut, cre],
+  Pohl Data, LLC [cph]
+Maintainer: Andy Pohl <andy@pohl.io>
+Repository: CRAN
+Date/Publication: 2017-11-30 18:23:07 UTC

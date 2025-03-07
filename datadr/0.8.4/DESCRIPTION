@@ -1,0 +1,28 @@
+Package: datadr
+Type: Package
+Title: Divide and Recombine for Large, Complex Data
+Version: 0.8.4
+Date: 2016-03-14
+Authors@R: c(person("Ryan", "Hafen", email = "rhafen@gmail.com", role = c("aut", "cre")),
+    person("Landon", "Sego", role = "ctb"))
+Maintainer: Ryan Hafen <rhafen@gmail.com>
+Description: Methods for dividing data into subsets, applying analytical
+    methods to the subsets, and recombining the results.  Comes with a generic
+    MapReduce interface as well.  Works with key-value pairs stored in memory,
+    on local disk, or on HDFS, in the latter case using the R and Hadoop
+    Integrated Programming Environment (RHIPE).
+License: BSD_3_clause + file LICENSE
+URL: http://tessera.io/docs-datadr
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: no
+Imports: data.table (>= 1.9.6), digest, codetools, hexbin, parallel,
+        magrittr, dplyr, methods
+Suggests: testthat (>= 0.11.0), roxygen2 (>= 5.0.1), Rhipe
+RoxygenNote: 5.0.1
+Additional_repositories: http://ml.stat.purdue.edu/packages
+Packaged: 2016-03-14 18:58:23 UTC; hafen
+Author: Ryan Hafen [aut, cre],
+  Landon Sego [ctb]
+Repository: CRAN
+Date/Publication: 2016-03-14 23:55:14

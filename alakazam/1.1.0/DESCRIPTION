@@ -1,0 +1,68 @@
+Package: alakazam
+Type: Package
+Version: 1.1.0
+Date: 2021-02-06
+Authors@R: c(person("Namita", "Gupta", role=c("aut"), 
+                    email="namita.gupta@yale.edu"),
+             person("Susanna", "Marquez", role=c("aut"), 
+                    email="susanna.marquez@yale.edu"),
+             person("Nima", "Nouri", role=c("aut"), 
+                    email="nima.nouri@yale.edu"),
+             person("Ruoyi", "Jiang", role=c("aut"), 
+                    email="ruoyi.jiang@yale.edu"),
+             person("Julian", "Zhou", role=c("aut"), 
+                    email="julian.zhou@bulldogs.yale.edu"),
+             person("Kenneth", "Hoehn", role=c("aut"), 
+                    email="kenneth.hoehn@yale.edu"),
+             person("Daniel", "Gadala-Maria", role=c("ctb"), 
+                    email="daniel.gadala-maria@yale.edu"),
+              person("Edel", "Aron", role=c("ctb"), 
+                    email="edel.aron@yale.edu"),
+             person("Jason", "Vander Heiden", role=c("cre", "aut"), 
+                    email="jason.vanderheiden@gmail.com"), 
+             person("Steven", "Kleinstein", role=c("aut", "cph"), 
+                    email="steven.kleinstein@yale.edu"))
+Title: Immunoglobulin Clonal Lineage and Diversity Analysis
+Description: Provides methods for high-throughput adaptive immune 
+    receptor repertoire sequencing (AIRR-Seq; Rep-Seq) analysis. In 
+    particular, immunoglobulin (Ig) sequence lineage reconstruction, 
+    lineage topology analysis, diversity profiling, amino acid property 
+    analysis and gene usage.
+    Citations: 
+    Gupta and Vander Heiden, et al (2017) <doi:10.1093/bioinformatics/btv359>,
+    Stern, Yaari and Vander Heiden, et al (2014) <doi:10.1126/scitranslmed.3008879>.
+License: AGPL-3
+URL: https://alakazam.readthedocs.io/
+BugReports: https://bitbucket.org/kleinstein/alakazam/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+SystemRequirements: C++11
+biocViews:
+Depends: R (>= 3.5.0), ggplot2 (>= 3.2.0)
+Imports: airr, ape, Biostrings, dplyr (>= 1.0), GenomicAlignments,
+        graphics, grid, igraph (>= 1.0.0), IRanges, lazyeval, Matrix,
+        methods, progress, Rcpp (>= 0.12.12), readr, rlang, scales,
+        seqinr, stats, stringi, tibble, tidyr (>= 1.0.0), utils
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, testthat
+RoxygenNote: 7.1.1
+Collate: 'Alakazam.R' 'AminoAcids.R' 'Classes.R' 'Core.R' 'Data.R'
+        'Diversity.R' 'Deprecated.R' 'Fastq.R' 'Gene.R' 'Lineage.R'
+        'RcppExports.R' 'Sequence.R' 'Topology.R'
+NeedsCompilation: yes
+Packaged: 2021-02-07 02:44:47 UTC; vandej27
+Author: Namita Gupta [aut],
+  Susanna Marquez [aut],
+  Nima Nouri [aut],
+  Ruoyi Jiang [aut],
+  Julian Zhou [aut],
+  Kenneth Hoehn [aut],
+  Daniel Gadala-Maria [ctb],
+  Edel Aron [ctb],
+  Jason Vander Heiden [cre, aut],
+  Steven Kleinstein [aut, cph]
+Maintainer: Jason Vander Heiden <jason.vanderheiden@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-07 06:00:03 UTC

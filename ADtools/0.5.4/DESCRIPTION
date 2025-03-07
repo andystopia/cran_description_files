@@ -1,0 +1,50 @@
+Package: ADtools
+Type: Package
+Title: Automatic Differentiation Toolbox
+Version: 0.5.4
+Authors@R: c(
+    person("Chun Fung", "Kwok", email = "kwokcf@unimelb.edu.au", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0716-3879")),
+    person("Dan", "Zhu", email = "dan.zhu@monash.edu", role = "aut", comment = c(ORCID = "0000-0003-1487-2232")),
+    person("Liana", "Jacobi", email = "ljacobi@unimelb.edu.au", role = "aut", comment= c(ORCID = "0000-0001-7210-0500"))
+    )
+Maintainer: Chun Fung Kwok <kwokcf@unimelb.edu.au>
+Description: Implements the forward-mode automatic differentiation for
+    multivariate functions using the matrix-calculus notation from Magnus and
+    Neudecker (2019) <doi:10.1002/9781119541219>. Two key features of the package
+    are: (i) it incorporates various optimisation strategies to improve performance;
+    this includes applying memoisation to cut down object construction time, using
+    sparse matrix representation to speed up derivative calculation, and creating
+    specialised matrix operations to reduce computation time; (ii) it supports
+    differentiating random variates with respect to their parameters, targeting
+    Markov chain Monte Carlo (MCMC) and general simulation-based applications.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: testthat, covr, knitr, rmarkdown, pryr, MCMCpack
+Depends: R (>= 3.6.0), methods, Matrix
+Imports: purrr, dplyr, magrittr, assertthat, mvtnorm, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Collate: 'ADtools.R' 'RcppExports.R' 'auto_diff.R'
+        'class_dual_construction.R' 'class_dual_def.R'
+        'dual_list_operations.R' 'finite_diff.R'
+        'optim_special_matrix.R' 'interface_special_matrix.R'
+        'mc_arithmetic_1_cross_class.R' 'mc_arithmetic_2_same_class.R'
+        'mc_arithmetic_3_d_arithmetic.R'
+        'mc_arithmetic_4_d_arithmetic_primitives.R' 'mc_generic.R'
+        'mc_math_elementary.R' 'mc_math_sum.R' 'mc_matrix_ops.R'
+        'mc_rv_density.R' 'mc_rv_sim_normal.R' 'mc_rv_sim_student_t.R'
+        'mc_rv_simulation.R' 'mc_structure_binding.R'
+        'mc_structure_reshape.R' 'mc_structure_subsetting.R'
+        'optim_kronecker_product.R'
+        'optim_matrix_chain_multiplication.R' 'utils.R'
+VignetteBuilder: knitr
+URL: https://github.com/kcf-jackson/ADtools
+BugReports: https://github.com/kcf-jackson/ADtools/issues
+NeedsCompilation: yes
+Packaged: 2020-11-04 06:22:22 UTC; mac_ks
+Author: Chun Fung Kwok [aut, cre] (<https://orcid.org/0000-0002-0716-3879>),
+  Dan Zhu [aut] (<https://orcid.org/0000-0003-1487-2232>),
+  Liana Jacobi [aut] (<https://orcid.org/0000-0001-7210-0500>)
+Repository: CRAN
+Date/Publication: 2020-11-09 10:10:02 UTC

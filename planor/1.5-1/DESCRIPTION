@@ -1,0 +1,30 @@
+Package: planor
+Type: Package
+Title: Generation of Regular Factorial Designs
+Version: 1.5-1
+Date: 2019-05-19
+Author: Hervé Monod [aut, cre],
+  Annie Bouvier [aut],
+  André Kobilinsky [aut],
+  INRA [cph] (Institut National de la Recherche Agronomique, France)
+Maintainer: Hervé Monod <herve.monod@inra.fr>
+Authors@R: c(person("Hervé", "Monod", role = c("aut", "cre"),
+                     email = "herve.monod@inra.fr"),
+              person("Annie", "Bouvier", role = "aut"),
+              person("André", "Kobilinsky", role = "aut"),
+              person("INRA", role = "cph",
+                     comment = "Institut National de la Recherche Agronomique, France"))
+Description: Automatic generation of regular factorial designs, including fractional designs, orthogonal block designs, row-column designs and split-plots.
+License: GPL (>= 2)
+Imports: stats, conf.design, utils, bit64, Rcpp (>= 0.12.7)
+LinkingTo: Rcpp, RcppArmadillo
+Depends: methods
+Collate: zzz.R generic.R designfactors.R keymatrix.R keyring.R
+        listofkeyrings.R planor.R basep.R randomize.R designkey.R
+        listofdesignkeys.R planordesign.R makedesignkey.R
+Encoding: UTF-8
+URL: http://genome.jouy.inra.fr/logiciels/planor
+NeedsCompilation: yes
+Packaged: 2019-05-19 21:36:21 UTC; hmonod
+Repository: CRAN
+Date/Publication: 2019-05-21 08:50:03 UTC

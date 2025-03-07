@@ -1,0 +1,19 @@
+Package: lrstat
+Type: Package
+Title: Power and Sample Size Calculation for Non-Proportional Hazards
+Version: 0.1.0
+Date: 2021-12-15
+Author: Kaifeng Lu
+Maintainer: Kaifeng Lu <kaifenglu@gmail.com>
+Description: Performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests. The sequentially calculated log-rank test score statistics are assumed to have independent increments as characterized in Anastasios A. Tsiatis (1982) <doi:10.1080/01621459.1982.10477898>. The mean and variance of log-rank test score statistics are calculated based on Edward Lakatos (1986) <doi:10.1016/0197-2456(86)90047-4> and Kaifeng Lu (2021) <doi:10.1002/pst.2069>. The boundary crossing probabilities are calculated using the recursive integration algorithm described in Christopher Jennison and Bruce W. Turnbull (2000, ISBN:0849303168).  
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.7)
+LinkingTo: Rcpp
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown, rpact, mvtnorm
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2021-12-16 17:01:24 UTC; kaifeng
+Repository: CRAN
+Date/Publication: 2021-12-17 09:10:02 UTC

@@ -1,0 +1,47 @@
+Package: mgi.report.reader
+Title: Read Mouse Genome Informatics Reports
+Version: 0.0.1
+Authors@R: c(
+    person("Ramiro", "Magno", , "rmagno@pattern.institute", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5226-3441")),
+    person("Isabel", "Duarte", , "iduarte@pattern.institute", role = "aut",
+           comment = c(ORCID = "0000-0003-0060-2936")),
+    person(given = "Ismail", family = "Gbadamosi",
+      email = "i.gbadamosi@nencki.edu.pl",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-1932-7519")),  
+    person(given = "Ali", family = "Jawaid",
+      email = "a.jawaid@nencki.edu.pl",
+      role = "aut",
+      comment = c(ORCID = "0000-0002-5126-6744")), 
+    person("Nencki Institute of Experimental Biology", role = "fnd"),
+    person("University of Algarve", role = "fnd"),
+    person("Pattern Institute", role = c("cph", "fnd"))
+  )
+Description: Provides readers for easy and consistent importing of
+    Mouse Genome Informatics (MGI) report files:
+    <https://www.informatics.jax.org/downloads/reports/index.html>. These data
+    are provided by Baldarelli RM, Smith CL, Ringwald M, Richardson JE, Bult CJ,
+    Mouse Genome Informatics Group. (2024) <doi:10.1093/genetics/iyae031>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 2.10)
+LazyData: true
+Imports: data.table, dplyr, rlang, stringr, tibble, vroom
+URL: https://www.pattern.institute/mgi.report.reader/,
+        https://github.com/patterninstitute/mgi.report.reader/
+BugReports: https://github.com/patterninstitute/mgi.report.reader/issues
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2024-06-27 14:52:13 UTC; rmagno
+Author: Ramiro Magno [aut, cre] (<https://orcid.org/0000-0001-5226-3441>),
+  Isabel Duarte [aut] (<https://orcid.org/0000-0003-0060-2936>),
+  Ismail Gbadamosi [aut] (<https://orcid.org/0000-0002-1932-7519>),
+  Ali Jawaid [aut] (<https://orcid.org/0000-0002-5126-6744>),
+  Nencki Institute of Experimental Biology [fnd],
+  University of Algarve [fnd],
+  Pattern Institute [cph, fnd]
+Maintainer: Ramiro Magno <rmagno@pattern.institute>
+Repository: CRAN
+Date/Publication: 2024-06-28 09:40:01 UTC

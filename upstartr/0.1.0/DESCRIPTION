@@ -1,0 +1,39 @@
+Package: upstartr
+Type: Package
+Title: Utilities Powering the Globe and Mail's Data Journalism Template
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Tom",
+             family = "Cardoso",
+             email = "tcardoso@globeandmail.com",
+             role = c("aut", "cre"),
+             comment = "creator and maintainer"),
+      person(given = "Michael",
+             family = "Pereira",
+             email = "hello@monkeycycle.org",
+             role = c("ctb")),
+      person(given = "The Globe and Mail Inc.",
+             role = c("cph")))
+Maintainer: Tom Cardoso <tcardoso@globeandmail.com>
+Description: Core functions necessary for using The Globe and Mail's R data journalism template, 'startr', along with utilities for day-to-day data journalism tasks, such as reading and writing files, producing graphics and cleaning up datasets.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: here, stringr, readxl, magrittr, readr, purrr, ggplot2, glue,
+        dplyr, librarian, openxlsx, knitr, beepr, tidytext, scales,
+        rmarkdown, textclean, sf, tgamtheme, crayon
+Suggests: testthat (>= 3.0.0)
+Language: en-US
+URL: https://github.com/globeandmail/upstartr,
+        https://globeandmail.github.io/upstartr/
+BugReports: https://github.com/globeandmail/upstartr/issues
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-02-11 17:07:42 UTC; tcardoso
+Author: Tom Cardoso [aut, cre] (creator and maintainer),
+  Michael Pereira [ctb],
+  The Globe and Mail Inc. [cph]
+Repository: CRAN
+Date/Publication: 2021-02-15 10:50:02 UTC

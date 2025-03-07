@@ -1,0 +1,41 @@
+Package: CDMConnector
+Title: Connect to an OMOP Common Data Model
+Version: 1.2.0
+Authors@R: c(
+    person("Adam", "Black", , "black@ohdsi.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5576-8701")),
+    person("Artem", "Gorbachev", , "artem.gorbachev@odysseusinc.com", role = "aut"),
+    person("Edward", "Burn", , "edward.burn@ndorms.ox.ac.uk", role = "aut"),
+    person("Marti", "Catala Sabate", , "marti.catalasabate@ndorms.ox.ac.uk", role = "aut")
+  )
+Description: Provides tools for working with observational health data in the 
+  Observational Medical Outcomes Partnership (OMOP) Common Data Model format with a pipe friendly syntax.
+  Common data model database table references are stored in a single compound object along with metadata.
+License: Apache License (>= 2)
+URL: https://darwin-eu.github.io/CDMConnector/,
+        https://github.com/darwin-eu/CDMConnector
+BugReports: https://github.com/darwin-eu/CDMConnector/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0)
+Imports: dplyr, DBI (>= 0.3.0), checkmate, dbplyr (>= 2.4.0), cli,
+        purrr, rlang, tidyselect, readr, glue, waldo, methods, withr,
+        lifecycle, jsonlite, stringr, stringi, fs, generics, tidyr,
+        pool
+Suggests: arrow, SqlRender, rJava, covr, knitr, rmarkdown, duckdb,
+        RSQLite, RPostgres, odbc, ggplot2, bigrquery, testthat (>=
+        3.0.0), DatabaseConnector, lubridate, tibble, zeallot
+Enhances: CirceR, Capr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+VignetteBuilder: knitr
+Additional_repositories: https://OHDSI.github.io/drat
+NeedsCompilation: no
+Packaged: 2023-10-31 13:20:28 UTC; adamblack
+Author: Adam Black [aut, cre] (<https://orcid.org/0000-0001-5576-8701>),
+  Artem Gorbachev [aut],
+  Edward Burn [aut],
+  Marti Catala Sabate [aut]
+Maintainer: Adam Black <black@ohdsi.org>
+Repository: CRAN
+Date/Publication: 2023-10-31 16:40:17 UTC

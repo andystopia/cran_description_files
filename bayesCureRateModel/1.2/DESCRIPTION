@@ -1,0 +1,32 @@
+Package: bayesCureRateModel
+Type: Package
+Title: Bayesian Cure Rate Modeling for Time-to-Event Data
+Version: 1.2
+Date: 2024-09-13
+Authors@R: 
+    c(person(given = "Panagiotis",
+             family = "Papastamoulis",
+             email = "papapast@yahoo.gr",
+             role = c( "aut", "cre"),
+             comment = c(ORCID = "0000-0001-9468-7613")),
+	person(given = "Fotios",
+             family = "Milienos",
+             email = "milienos@panteion.gr",
+             role = c( "aut"),
+             comment = c(ORCID = "0000-0003-1423-7132"))             
+             )
+Maintainer: Panagiotis Papastamoulis <papapast@yahoo.gr>
+Description: A fully Bayesian approach in order to estimate a general family of cure rate models under the presence of covariates, see Papastamoulis and Milienos (2024) <doi:10.1007/s11749-024-00942-w>. The promotion time can be modelled (a) parametrically using typical distributional assumptions for time to event data (including the Weibull, Exponential, Gompertz, log-Logistic distributions), or (b) semiparametrically using finite mixtures of distributions. In both cases, user-defined families of distributions are allowed under some specific requirements. Posterior inference is carried out by constructing a Metropolis-coupled Markov chain Monte Carlo (MCMC) sampler, which combines Gibbs sampling for the latent cure indicators and Metropolis-Hastings steps with Langevin diffusion dynamics for parameter updates. The main MCMC algorithm is embedded within a parallel tempering scheme by considering heated versions of the target posterior distribution.
+License: GPL-2
+URL: https://github.com/mqbssppe/Bayesian_cure_rate_model
+Imports: Rcpp (>= 1.0.12), survival, doParallel, parallel, foreach,
+        mclust, coda, HDInterval, VGAM, calculus, flexsurv
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2024-09-14 07:31:09 UTC; panagiotis
+Author: Panagiotis Papastamoulis [aut, cre]
+    (<https://orcid.org/0000-0001-9468-7613>),
+  Fotios Milienos [aut] (<https://orcid.org/0000-0003-1423-7132>)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-09-14 08:00:02 UTC

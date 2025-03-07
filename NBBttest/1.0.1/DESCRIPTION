@@ -1,0 +1,20 @@
+Package: NBBttest
+Type: Package
+Title: Negative Binomial Beta t-Test
+Version: 1.0.1
+Date: 2022-05-08
+Suggests: BiocGenerics,DEXSeq
+Author: Yuan-De Tan
+Maintainer: Yuan-De Tan <tanyuande@gmail.com>
+Description: We constructed 'NBBttest' for identifying genes or RNA isoforms differentially expressed between two conditions on RNA-seq count data. Package 'NBBttest' can  perform data quality check, data normalization, differential analysis, annotation and graphic analysis. In differential analysis, 'NBBttest' can identify differentially expressed genes and differential RNA isoforms in alternative splicing sites and alternative polyadenylation sites, differential sgRNA, and differential CRISPR (clustered regularly interspaced short palindromic repeats) screening genes. In graphic analysis, 'NBBttest' provides two types of heatmaps to visualize differential expression at gene or isoform level using z-score and n-score and creates pathway heatmap. 'NBBttest' can plot differentially expressed exons within a specified gene. In addition, 'NBBttest' provides a tool for annotation of genes and exons. The methods used in 'NBBttest' were new statistical methods developed from Tan and others (2015) <doi:10.1371/journal.pone.0123658>. The statistical methods are robust and very powerful in identifying genes or RNA isoforms differentially expressed between two conditions in small samples.
+License: GPL-3
+Depends: R (>= 3.5.0),gplots,gtools,stats, utils,graphics,grDevices
+LazyLoad: yes
+biocViews: Sequencing, DifferentialExpression, MultipleComparison,
+        SAGE, GeneExpression, Transcription,
+        AlternativeSplicing,Coverage, DifferentialSplicing
+NeedsCompilation: no
+RoxygenNote: 6.1.1
+Packaged: 2022-05-21 16:03:21 UTC; tany
+Repository: CRAN
+Date/Publication: 2022-05-29 05:40:12 UTC

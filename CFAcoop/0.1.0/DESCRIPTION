@@ -1,0 +1,44 @@
+Package: CFAcoop
+Type: Package
+Title: Colony Formation Assay: Taking into Account Cellular Cooperation
+Version: 0.1.0
+Authors@R: c(
+    person("Daniel", "Samaga", 
+           email = "daniel.samaga@helmholtz-muenchen.de",
+           role = c("cre","aut")),
+    person("Nikko", "Brix", 
+           role = "aut"),
+    person("Kirsten", "Lauber", 
+           role = "aut"),
+    person("Horst", "Zitzelsberger", 
+           role = "aut"))
+Maintainer: Daniel Samaga <daniel.samaga@helmholtz-muenchen.de>
+Depends: R (>= 3.5.0)
+URL: https://github.com/ZytoHMGU/CFAcoop
+BugReports: https://github.com/ZytoHMGU/CFAcoop/issues
+Description: Cellular cooperation compromises the plating efficiency-based 
+    analysis of clonogenic survival data. This tool provides functions that 
+    enable a robust analysis of colony formation assay (CFA) data in presence 
+    or absence of cellular cooperation. 
+    The implemented method has been described 
+    in Brix et al. (2020). (Brix, N., Samaga, D., Hennel, R. et al. 
+    "The clonogenic assay: robustness of plating efficiency-based analysis is 
+    strongly compromised by cellular cooperation." Radiat Oncol 15, 248 (2020).
+    <doi:10.1186/s13014-020-01697-y>)
+        Power regression for parameter estimation, calculation of survival
+    fractions, uncertainty analysis and plotting functions are provided.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: mvtnorm, Hmisc
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-11-23 07:56:30 UTC; daniel.samaga
+Author: Daniel Samaga [cre, aut],
+  Nikko Brix [aut],
+  Kirsten Lauber [aut],
+  Horst Zitzelsberger [aut]
+Repository: CRAN
+Date/Publication: 2020-11-25 09:30:02 UTC

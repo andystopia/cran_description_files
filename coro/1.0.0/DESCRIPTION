@@ -1,0 +1,33 @@
+Package: coro
+Title: 'Coroutines' for R
+Version: 1.0.0
+Authors@R: c(
+    person("Lionel", "Henry", ,"lionel@rstudio.com", c("aut", "cre")),
+    person("RStudio", role = "cph")
+    )
+Description: Provides 'coroutines' for R, a family of functions that
+    can be suspended and resumed later on. This includes 'async'
+    functions (which await) and generators (which yield). 'Async'
+    functions are based on the concurrency framework of the 'promises'
+    package. Generators are based on a dependency free iteration
+    protocol defined in 'coro' and are compatible with iterators from
+    the 'reticulate' package.
+Depends: R (>= 3.5.0)
+Imports: rlang (>= 0.4.9)
+Suggests: knitr, later (>= 1.1.0), magrittr (>= 2.0.0), promises,
+        reticulate, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+URL: https://github.com/r-lib/coro
+BugReports: https://github.com/r-lib/coro/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2020-12-07 14:32:44 UTC; lionel
+Author: Lionel Henry [aut, cre],
+  RStudio [cph]
+Maintainer: Lionel Henry <lionel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2020-12-09 09:20:13 UTC

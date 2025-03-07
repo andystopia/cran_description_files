@@ -1,0 +1,30 @@
+Package: keyholder
+Title: Store Data About Rows
+Version: 0.1.6
+Authors@R: 
+    person(given = "Evgeni",
+           family = "Chasnovski",
+           role = c("aut", "cre"),
+           email = "evgeni.chasnovski@gmail.com",
+           comment = c(ORCID = "0000-0002-1617-4019"))
+Description: Tools for keeping track of information, named
+    "keys", about rows of data frame like objects. This is done by
+    creating special attribute "keys" which is updated after every change
+    in rows (subsetting, ordering, etc.).  This package is designed to
+    work tightly with 'dplyr' package.
+License: MIT + file LICENSE
+URL: https://echasnovski.github.io/keyholder/,
+        https://github.com/echasnovski/keyholder/
+BugReports: https://github.com/echasnovski/keyholder/issues/
+Depends: R (>= 3.4.0)
+Imports: dplyr (>= 0.7.0), rlang (>= 0.1), tibble, utils
+Suggests: covr, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-12-04 10:35:30 UTC; evgeni
+Author: Evgeni Chasnovski [aut, cre] (<https://orcid.org/0000-0002-1617-4019>)
+Maintainer: Evgeni Chasnovski <evgeni.chasnovski@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-12-04 10:50:02 UTC

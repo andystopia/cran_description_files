@@ -1,0 +1,26 @@
+Package: regtomean
+Type: Package
+Title: Regression Toward the Mean
+Version: 1.0
+Imports: formattable, effsize, mefa, plyr, plotrix, sjPlot, sjmisc,
+        sjlabelled,
+Authors@R: c(person("Daniela", "Recchia", role = c("aut","cre"), email = "daniela.rodriguesrecchia@uni-wh.de"), person("Thomas", "Ostermann", role = "ctb") )
+Description: In repeated measures studies with extreme large or small values it is common 
+  that the subjects measurements on average are closer to the mean of the basic population. 
+  Interpreting possible changes in the mean in such situations can lead to biased results 
+  since the values were not randomly selected, they come from truncated sampling.
+  This method allows to estimate the range of means where treatment effects are likely to occur 
+  when regression toward the mean is present. 
+  Ostermann, T., Willich, Stefan N. & Luedtke, Rainer. (2008). Regression toward the mean - a detection method for unknown population mean based on Mee and Chua's algorithm. BMC Medical Research Methodology.<doi:10.1186/1471-2288-8-52>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-01-26 08:05:57 UTC; drodriguesre
+Author: Daniela Recchia [aut, cre],
+  Thomas Ostermann [ctb]
+Maintainer: Daniela Recchia <daniela.rodriguesrecchia@uni-wh.de>
+Repository: CRAN
+Date/Publication: 2021-01-29 09:20:03 UTC

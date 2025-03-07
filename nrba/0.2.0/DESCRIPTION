@@ -1,0 +1,86 @@
+Package: nrba
+Title: Methods for Conducting Nonresponse Bias Analysis (NRBA)
+Version: 0.2.0
+Authors@R: 
+    c(
+      person(given = "Ben",
+             family = "Schneider",
+             role = c("aut", "cre"),
+             email = "BenjaminSchneider@westat.com",
+             comment = c(ORCID = "0000-0002-0406-8470")),
+      person(given = "Jim",
+             family = "Green",
+             role = c("aut"),
+             email = "JimGreen@westat.com"),
+      person(given = "Shelley",
+             family = "Brock",
+             role = "aut",
+             email = "ShelleyBrock@westat.com",
+             comment = "Author of original SAS macro, WesNRBA"),
+      person(given = "Tom",
+             family = "Krenzke",
+             role = "aut",
+             email = "TomKrenzke@westat.com",
+             comment = "Author of original SAS macro, WesNRBA"),
+      person(given = "Michael",
+             family = "Jones",
+             role = "aut",
+             email = "MichaelJones@westat.com",
+             comment = "Author of original SAS macro, WesNRBA"),
+      person(given = "Wendy",
+             family = "Van de Kerckhove",
+             role = "aut",
+             comment = "Author of original SAS macro, WesNRBA"),
+      person(given = "David",
+             family = "Ferraro",
+             role = "aut",
+             comment = "Author of original SAS macro, WesNRBA"),
+      person(given = "Laura",
+             family = "Alvarez-Rojas",
+             role = "aut",
+             comment = "Author of original SAS macro, WesNRBA"),
+      person(given = "Katie",
+             family = "Hubbell",
+             role = "aut",
+             email = "KatieHubbell@westat.com",
+             comment = "Author of original SAS macro, WesNRBA"),
+      person(given = "Westat", role = c("cph")))
+Description: Facilitates nonresponse bias analysis (NRBA) 
+    for survey data.  Such data may arise from a complex
+    sampling design with features such as stratification, clustering, or
+    unequal probabilities of selection. Multiple types of analyses may be
+    conducted: comparisons of response rates across subgroups; comparisons
+    of estimates before and after weighting adjustments; comparisons of
+    sample-based estimates to external population totals; tests of
+    systematic differences in covariate means between respondents
+    and full samples; tests of independence between response status
+    and covariates; and modeling of outcomes and response status as a 
+    function of covariates. Extensive documentation and references are
+    provided for each type of analysis. Krenzke, Van de Kerckhove,
+    and Mohadjer (2005) <http://www.asasrms.org/Proceedings/y2005/files/JSM2005-000572.pdf>
+    and Lohr and Riddles (2016) <https://www150.statcan.gc.ca/n1/en/pub/12-001-x/2016002/article/14677-eng.pdf?st=q7PyNsGR>
+    provide an overview of the methods implemented in this package.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: broom, dplyr, magrittr, stats, survey (>= 4.1-1), svrep
+Suggests: knitr, rmarkdown, stringr, testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-07-17 06:24:32 UTC; schneider_b
+Author: Ben Schneider [aut, cre] (<https://orcid.org/0000-0002-0406-8470>),
+  Jim Green [aut],
+  Shelley Brock [aut] (Author of original SAS macro, WesNRBA),
+  Tom Krenzke [aut] (Author of original SAS macro, WesNRBA),
+  Michael Jones [aut] (Author of original SAS macro, WesNRBA),
+  Wendy Van de Kerckhove [aut] (Author of original SAS macro, WesNRBA),
+  David Ferraro [aut] (Author of original SAS macro, WesNRBA),
+  Laura Alvarez-Rojas [aut] (Author of original SAS macro, WesNRBA),
+  Katie Hubbell [aut] (Author of original SAS macro, WesNRBA),
+  Westat [cph]
+Maintainer: Ben Schneider <BenjaminSchneider@westat.com>
+Repository: CRAN
+Date/Publication: 2023-07-17 06:50:02 UTC

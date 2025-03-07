@@ -1,0 +1,57 @@
+Package: tinkr
+Title: Cast '(R)Markdown' Files to 'XML' and Back Again
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Maëlle",
+             family = "Salmon",
+             role = c("aut"),
+             email = "msmaellesalmon@gmail.com",
+             comment = c(ORCID = "0000-0002-2815-0399")),
+      person(given = "Zhian N.",
+             family = "Kamvar",
+             role = c("aut", "cre"),
+             email = "zkamvar@gmail.com",
+             comment = c(ORCID = "0000-0003-1458-7108")),
+      person(given = "Jeroen",
+             family = "Ooms",
+             role = "aut"),
+      person(given = "Nick",
+             family = "Wellnhofer",
+             role = "cph",
+             comment = "Nick Wellnhofer wrote the XSLT stylesheet."),
+      person(given = "rOpenSci",
+             role = "fnd",
+             comment = "https://ropensci.org/"),
+      person(given = "Peter",
+             family = "Daengeli",
+             role = "ctb"))
+Description: Parsing '(R)Markdown' files with numerous regular expressions can
+    be fraught with peril, but it does not have to be this way. Converting
+    '(R)Markdown' files to 'XML' using the 'commonmark' package allows
+    in-memory editing via of 'markdown' elements via 'XPath' through the
+    extensible 'R6' class called 'yarn'. These modified 'XML' representations
+    can be written to '(R)Markdown' documents via an 'xslt' stylesheet which
+    implements an extended version of 'GitHub'-flavoured 'markdown' so that you
+    can tinker to your hearts content.
+License: GPL-3
+URL: https://docs.ropensci.org/tinkr/,
+        https://github.com/ropensci/tinkr
+BugReports: https://github.com/ropensci/tinkr/issues
+Imports: commonmark (>= 1.6), glue, magrittr, purrr, R6, stringr, xml2,
+        xslt, yaml
+Suggests: knitr, rmarkdown, covr, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-08-18 16:49:37 UTC; zhian
+Author: Maëlle Salmon [aut] (<https://orcid.org/0000-0002-2815-0399>),
+  Zhian N. Kamvar [aut, cre] (<https://orcid.org/0000-0003-1458-7108>),
+  Jeroen Ooms [aut],
+  Nick Wellnhofer [cph] (Nick Wellnhofer wrote the XSLT stylesheet.),
+  rOpenSci [fnd] (https://ropensci.org/),
+  Peter Daengeli [ctb]
+Maintainer: Zhian N. Kamvar <zkamvar@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-19 12:30:02 UTC

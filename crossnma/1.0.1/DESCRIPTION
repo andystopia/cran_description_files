@@ -1,0 +1,32 @@
+Package: crossnma
+Title: Cross-Design & Cross-Format Network Meta-Analysis and Regression
+Version: 1.0.1
+Date: 2022-04-13
+Depends: R (>= 3.5), netmeta
+Imports: rjags, coda, dplyr, plyr, rlang, magrittr, tidyr, ggplot2
+Suggests: rmarkdown, knitr
+URL: https://github.com/htx-r/crossnma
+Description: Network meta-analysis and meta-regression (allows including up to 3 covariates) for individual participant data, aggregate data, and mixtures of both formats using the three-level hierarchical model. Each format can come from randomized controlled trials or non-randomized studies or mixtures of both. Estimates are generated in a Bayesian framework using JAGS. The implemented models are described by Hamza et al. 2022 <DOI:10.48550/arXiv.2203.06350>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Authors@R: c( 
+	person("Tasnim", "Hamza",
+	       email = "tasnim.hamza@ispm.unibe.ch", role = "aut",
+               comment = c(ORCID = "0000-0002-4700-6990")),
+	person("Guido", "Schwarzer",
+	       email = "sc@imbi.uni-freiburg.de", role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0001-6214-9087")),
+	person("Georgia", "Salanti",
+	       email = "georgia.salanti@ispm.unibe.ch", role = "aut",
+               comment = c(ORCID = "0000-0002-3830-8508"))) 
+Maintainer: Guido Schwarzer <sc@imbi.uni-freiburg.de>
+Author: Tasnim Hamza [aut] (<https://orcid.org/0000-0002-4700-6990>),
+  Guido Schwarzer [aut, cre] (<https://orcid.org/0000-0001-6214-9087>),
+  Georgia Salanti [aut] (<https://orcid.org/0000-0002-3830-8508>)
+Repository: CRAN
+Packaged: 2022-04-13 16:35:09 UTC; sc
+Date/Publication: 2022-04-15 10:02:29 UTC

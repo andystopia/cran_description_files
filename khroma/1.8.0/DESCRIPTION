@@ -1,0 +1,58 @@
+Package: khroma
+Title: Colour Schemes for Scientific Data Visualization
+Version: 1.8.0
+Authors@R: 
+    c(person(given = "Nicolas",
+             family = "Frerebeau",
+             role = c("aut", "cre"),
+             email = "nicolas.frerebeau@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "0000-0001-5759-4944", 
+                         affiliation = "Université Bordeaux Montaigne")),
+      person(given = "Brice",
+             family = "Lebrun",
+             role = "ctb",
+             email = "brice.lebrun@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "0000-0001-7503-8685", 
+                         affiliation = "Université Bordeaux Montaigne")),
+      person(given = "Vincent",
+             family = "Arel-Bundock",
+             role = "ctb",
+             email = "vincent.arel-bundock@umontreal.ca",
+             comment = c(ORCID = "0000-0003-2042-7063", 
+                         affiliation = "Université de Montréal")))
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: Colour schemes ready for each type of data (qualitative,
+    diverging or sequential), with colours that are distinct for all
+    people, including colour-blind readers. This package provides an
+    implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:
+    10.5194/gmd-11-2541-2018> colour schemes for use with 'graphics' or
+    'ggplot2'. It provides tools to simulate colour-blindness and to test
+    how well the colours of any palette are identifiable. Several
+    scientific thematic schemes (geologic timescale, land cover, FAO
+    soils, etc.) are also implemented.
+License: GPL (>= 3)
+URL: https://packages.tesselle.org/khroma/,
+        https://github.com/tesselle/khroma
+BugReports: https://github.com/tesselle/khroma/issues
+Depends: R (>= 3.3)
+Imports: grDevices, grid, stats, utils
+Suggests: covr, crayon, fansi, ggplot2, ggraph, knitr, rmarkdown,
+        scales, spacesXYZ, testthat (>= 3.0.0), vdiffr (>= 1.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Collate: 'anomalize.R' 'colour.R' 'compare.R' 'convert.R' 'ggplot2.R'
+        'khroma-package.R' 'plot.R' 'scale_colour_crameri.R'
+        'scale_colour_okabeito.R' 'scale_colour_science.R'
+        'scale_colour_tol.R'
+NeedsCompilation: no
+Packaged: 2022-01-20 16:57:56 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>,
+    Université Bordeaux Montaigne),
+  Brice Lebrun [ctb] (<https://orcid.org/0000-0001-7503-8685>, Université
+    Bordeaux Montaigne),
+  Vincent Arel-Bundock [ctb] (<https://orcid.org/0000-0003-2042-7063>,
+    Université de Montréal)
+Repository: CRAN
+Date/Publication: 2022-01-20 20:02:47 UTC

@@ -1,0 +1,72 @@
+Package: PFIM
+Type: Package
+Title: Population Fisher Information Matrix
+Version: 6.0
+Date: 2023-11-27
+Authors@R: c(person(given = "France",
+           family = "Mentré",
+           role = c("aut"),
+           email = "france.mentre@inserm.fr"),
+    person(given = "Romain",
+           family = "Leroux",
+           role = c("aut","cre"),
+           email = "romain.leroux@inserm.fr"),
+    person(given = "Jérémy",
+           family = "Seurat",
+           role = c("aut"),
+           email = "jeremy.seurat@inserm.fr"),
+    person(given = "Lucie",
+           family = "Fayette",
+           role = c("aut"),
+           email = "lucie.fayette@inserm.fr"),      
+    person(given = "Emmanuelle",
+           family = "Comets",
+           role = c("ctb")),  
+    person(given = "Sylvie",
+           family = "Retout",
+           role = c("ctb")))       
+NeedsCompilation: no
+Description: Evaluate or optimize designs for nonlinear mixed effects models using the Fisher Information matrix. Methods used in the package refer to 
+    Mentré F, Mallet A, Baccar D (1997) <doi:10.1093/biomet/84.2.429>,
+    Retout S, Comets E, Samson A, Mentré F (2007) <doi:10.1002/sim.2910>,
+    Bazzoli C, Retout S, Mentré F (2009) <doi:10.1002/sim.3573>,
+    Le Nagard H, Chao L, Tenaillon O (2011) <doi:10.1186/1471-2148-11-326>,
+    Combes FP, Retout S, Frey N, Mentré F (2013) <doi:10.1007/s11095-013-1079-3> and
+    Seurat J, Tang Y, Mentré F, Nguyen TT (2021) <doi:10.1016/j.cmpb.2021.106126>.
+Depends: R (>= 4.0.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: inline, utils, methods, deSolve, Deriv, devtools, scales,
+        ggplot2, Matrix, pracma, stringr, Rcpp, knitr, rmarkdown,
+        kableExtra
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Collate: 'GenericMethods.R' 'Administration.R'
+        'AdministrationConstraints.R' 'Arm.R' 'Fim.R' 'BayesianFim.R'
+        'ModelError.R' 'Combined1.R' 'Constant.R' 'Design.R'
+        'Distribution.R' 'ModelParameter.R' 'LibraryOfPDModels.R'
+        'LibraryOfPKModels.R' 'LibraryOfModels.R'
+        'LibraryOfPKPDModels.R' 'Model.R' 'PFIMProject.R'
+        'Evaluation.R' 'OptimizationAlgorithm.R'
+        'FedorovWynnAlgorithm.R' 'IndividualFim.R' 'LogNormal.R'
+        'ModelODE.R' 'ModelAnalytic.R' 'ModelAnalyticBolus.R'
+        'ModelAnalyticSteadyState.R' 'ModelAnalyticBolusSteadyState.R'
+        'ModelInfusion.R' 'ModelAnalyticInfusion.R'
+        'ModelAnalyticInfusionSteadyState.R' 'ModelBolus.R'
+        'ModelODEBolus.R' 'ModelODEDoseInEquations.R'
+        'ModelODEDoseNotInEquations.R' 'ModelODEInfusion.R'
+        'ModelODEInfusionDoseInEquations.R' 'MultiplicativeAlgorithm.R'
+        'Normal.R' 'Optimization.R' 'PFIM-package.R' 'PGBOAlgorithm.R'
+        'PSOAlgorithm.R' 'PlotEvaluation.R' 'PopulationFim.R'
+        'Proportional.R' 'SamplingTimeConstraints.R' 'SamplingTimes.R'
+        'SimplexAlgorithm.R' 'globals.R'
+Packaged: 2023-11-07 23:43:31 UTC; Romai
+Author: France Mentré [aut],
+  Romain Leroux [aut, cre],
+  Jérémy Seurat [aut],
+  Lucie Fayette [aut],
+  Emmanuelle Comets [ctb],
+  Sylvie Retout [ctb]
+Maintainer: Romain Leroux <romain.leroux@inserm.fr>
+Repository: CRAN
+Date/Publication: 2023-11-08 00:00:06 UTC

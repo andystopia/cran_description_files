@@ -1,0 +1,35 @@
+Package: malan
+Type: Package
+Title: MAle Lineage ANalysis
+Version: 1.0.2
+Authors@R: c(
+    person(given = "Mikkel Meyer", family = "Andersen", 
+        email = "mikl@math.aau.dk", role = c("aut", "cre"))
+  )
+Author: Mikkel Meyer Andersen [aut, cre]
+Maintainer: Mikkel Meyer Andersen <mikl@math.aau.dk>
+Description: MAle Lineage ANalysis by simulating 
+    genealogies backwards and imposing short tandem repeats (STR) mutations forwards. 
+    Intended for forensic Y chromosomal STR (Y-STR) haplotype analyses. 
+    Numerous analyses are possible, e.g. number of matches and meiotic distance to matches. 
+    Refer to papers mentioned in citation("malan") (DOI's: 
+    <doi:10.1371/journal.pgen.1007028>, 
+    <doi:10.21105/joss.00684> and 
+    <doi:10.1016/j.fsigen.2018.10.004>).
+License: GPL-2 | file LICENSE
+Imports: Rcpp (>= 0.12.7), RcppProgress (>= 0.2.1), RcppArmadillo (>=
+        0.9.880.1.0), igraph (>= 1.0.1), tibble (>= 1.1), magrittr (>=
+        1.5), methods
+Depends: R (>= 2.10), dplyr (>= 0.7.3), tidygraph (>= 1.0.0.9999)
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+Suggests: knitr, rmarkdown, testthat, ggraph, dirmult, Rmpfr
+BugReports: https://github.com/mikldk/malan/issues
+VignetteBuilder: knitr
+Encoding: UTF-8
+SystemRequirements: C++11
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2020-06-25 11:02:10 UTC; mikl
+Repository: CRAN
+Date/Publication: 2020-06-25 12:00:06 UTC

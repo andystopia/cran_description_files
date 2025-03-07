@@ -1,0 +1,38 @@
+Package: SCDA
+Type: Package
+Title: Spatially-Clustered Data Analysis
+Version: 0.0.1
+Description: Contains functions for statistical data analysis based on spatially-clustered techniques.
+    The package allows estimating the spatially-clustered spatial regression models presented in Cerqueti, Maranzano \& Mattera (2024), "Spatially-clustered spatial autoregressive models
+    with application to agricultural market concentration in Europe", arXiv preprint 2407.15874 <doi:10.48550/arXiv.2407.15874>.
+    Specifically, the current release allows the estimation of the spatially-clustered linear regression model (SCLM), the spatially-clustered spatial autoregressive model (SCSAR),
+    the spatially-clustered spatial Durbin model (SCSEM), and the spatially-clustered linear regression model with spatially-lagged exogenous covariates (SCSLX).
+License: GPL (>= 2)
+Imports:
+        spatialreg,sp,spdep,utils,rlang,performance,stats,methods,dplyr
+Depends: R (>= 3.5.0)
+Suggests: tidyverse, ggplot2, sf
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+LazyData: true
+Maintainer: Paolo Maranzano <pmaranzano.ricercastatistica@gmail.com>
+Authors@R: 
+    c(person(given = "Paolo",
+             family = "Maranzano",
+             role = c("aut","cre","cph"),
+             email = "pmaranzano.ricercastatistica@gmail.com",
+             comment = c(ORCID = "0000-0002-9228-2759")),
+      person(given = "Raffaele",
+             family = "Mattera",
+             role = c("aut","cph"),
+             email = "raffaele.mattera@uniroma1.it",
+             comment = c(ORCID = "0000-0001-8770-7049"))
+             )
+NeedsCompilation: no
+Packaged: 2024-10-10 17:05:52 UTC; paulm
+Author: Paolo Maranzano [aut, cre, cph]
+    (<https://orcid.org/0000-0002-9228-2759>),
+  Raffaele Mattera [aut, cph] (<https://orcid.org/0000-0001-8770-7049>)
+Repository: CRAN
+Date/Publication: 2024-10-14 12:20:04 UTC

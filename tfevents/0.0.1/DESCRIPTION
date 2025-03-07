@@ -1,0 +1,35 @@
+Package: tfevents
+Title: Write Events for 'TensorBoard'
+Version: 0.0.1
+Authors@R: c(
+    person("Daniel", "Falbel", email = "daniel@posit.co", role = c("aut", "cre", "cph")),
+    person(family = "Posit, PBC", role = c("cph")),
+    person(family = "The tl::optional authors", role = c("cph"), comment = "For the vendored tl::optional code."),
+    person("Mark", "Adler", role = c("cph"), comment = "For the included crc32c code.")
+    )
+Description: Provides a convenient way to log scalars, images, audio, and histograms in the 'tfevent' record file format. 
+  Logged data can be visualized on the fly using 'TensorBoard', a web based tool that focuses on visualizing the training 
+  progress of machine learning models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp
+Imports: Rcpp, withr, fs, rlang, vctrs, ellipsis, blob, png, digest,
+        cli, zeallot
+Suggests: testthat (>= 3.0.0), tibble, tidyr, reticulate, rmarkdown,
+        ggplot2, tensorflow, wav
+SystemRequirements: libprotobuf, protobuf-compiler
+URL: https://github.com/mlverse/tfevents,
+        https://mlverse.github.io/tfevents/
+BugReports: https://github.com/mlverse/tfevents/issues
+Config/testthat/edition: 3
+Config/Needs/website: tensorflow, webshot2, keras
+NeedsCompilation: yes
+Packaged: 2023-02-13 10:07:49 UTC; dfalbel
+Author: Daniel Falbel [aut, cre, cph],
+  Posit, PBC [cph],
+  The tl::optional authors [cph] (For the vendored tl::optional code.),
+  Mark Adler [cph] (For the included crc32c code.)
+Maintainer: Daniel Falbel <daniel@posit.co>
+Repository: CRAN
+Date/Publication: 2023-02-14 09:40:02 UTC

@@ -1,0 +1,31 @@
+Package: ggip
+Title: Data Visualization for IP Addresses and Networks
+Version: 0.2.2
+Authors@R: 
+    person("David", "Hall", , "david.hall.physics@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2193-0480"))
+Description: A 'ggplot2' extension that enables visualization of IP
+    (Internet Protocol) addresses and networks. The address space is
+    mapped onto the Cartesian coordinate system using a space-filling
+    curve. Offers full support for both IPv4 and IPv6 (Internet Protocol
+    versions 4 and 6) address spaces.
+License: MIT + file LICENSE
+URL: https://davidchall.github.io/ggip/,
+        https://github.com/davidchall/ggip
+BugReports: https://github.com/davidchall/ggip/issues
+Depends: ggplot2 (>= 3.3.0), ipaddress (>= 0.5.1)
+Imports: dplyr (>= 1.0.0), glue, Rcpp, rlang (>= 0.4.2), tidyr, vctrs
+        (>= 0.3.0)
+Suggests: knitr, rmarkdown, testthat
+LinkingTo: ipaddress, Rcpp
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2022-09-28 15:13:35 UTC; davidhall
+Author: David Hall [aut, cre] (<https://orcid.org/0000-0002-2193-0480>)
+Maintainer: David Hall <david.hall.physics@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-29 06:00:02 UTC

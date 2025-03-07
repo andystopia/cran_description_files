@@ -1,0 +1,36 @@
+Package: SEHmodel
+Type: Package
+Encoding: UTF-8
+Title: Spatial Exposure-Hazard Model for Exposure and Impact Assessment
+        on Exposed Individuals
+Version: 0.0.9
+Date: 2015-10-02
+Authors@R: c(person("Marc", "Bourotte", role = "ctb", email = "marc.bourotte@paca.inra.fr"),
+        person("Melen", "Leclerc", role = "aut", email = "melen.leclerc@rennes.inra.fr"),
+	      person("Jean-Francois", "Rey", role = c("aut","cre"), email = "jean-francois.rey@paca.inra.fr"),
+	      person("Samuel", "Soubeyrand", role = "ctb", email = "samuel.soubeyrand@avignon.inra.fr"),
+        person("Emily", "Walker", role = "aut", email = "emily.walker@avignon.inra.fr"))
+Author: Marc Bourotte [ctb],
+    Melen Leclerc [aut],
+    Jean-Francois Rey [aut, cre],
+    Samuel Soubeyrand [ctb],
+    Emily Walker [aut]
+Maintainer: Jean-Francois Rey <jean-francois.rey@paca.inra.fr>
+Description: A model coupling polygon and point processes for assessing
+    risk due to contaminant sources and their impact on exposed individuals.
+License: GPL (>= 2) | file LICENSE
+Depends: methods, grDevices (>= 3.0.0), graphics (>= 3.0.0), R (>=
+        3.0.0)
+Imports: sp (>= 1.0-17), stats (>= 3.0.2), rgeos(>= 0.3), fields(>=
+        7.1), MASS(>= 7.3.29), deldir(>= 0.1), pracma(>= 1.8.3),
+        raster(>= 2.3.0), fftwtools(>= 0.9.6), mvtnorm(>= 1.0.2), rgdal
+        (>= 0.9)
+Collate: 'Class-Individuals.R' 'Class-Landscape.R'
+        'Individuals-Methods.R' 'toxicIntensity.R'
+        'Landscape-Methods.R' 'Landscape-Individuals-Methods.R'
+        'SEHmodel-package.R' 'demo.R' 'ecoToxic.R' 'pollen-data.R'
+        'simulPrecip.R'
+NeedsCompilation: no
+Packaged: 2015-10-02 07:42:09 UTC; jfrey
+Repository: CRAN
+Date/Publication: 2015-10-02 22:01:15

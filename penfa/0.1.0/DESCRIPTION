@@ -1,0 +1,41 @@
+Package: penfa
+Title: Single- And Multiple-Group Penalized Factor Analysis
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Elena",
+             family = "Geminiani",
+             role = c("aut", "cre"),
+             email = "geminianielena@gmail.com",
+             comment = c(ORCID = "0000-0001-5992-9728")),
+      person(given = "Giampiero",
+             family = "Marra",
+             role = c("aut"),
+             email = "giampiero.marra@ucl.ac.uk",
+             comment = c(ORCID = "0000-0002-9010-2646")),
+      person(given = "Irini",
+             family = "Moustaki",
+             role = c("aut"),
+             email = "i.moustaki@lse.ac.uk",
+             comment = c(ORCID = "0000-0001-8371-1251"))
+             )
+Description: Fits single- and multiple-group penalized factor analysis models 
+    via a trust-region algorithm with integrated automatic multiple tuning 
+    parameter selection (Geminiani et al., 2021 <doi:10.1007/s11336-021-09751-8>). 
+    Available penalties include lasso, adaptive lasso, scad, mcp, and ridge. 
+License: GPL-3
+Depends: R(>= 3.5.0)
+Imports: MASS, methods, mgcv, GJRM, stats, trust, utils
+Suggests: cartography, knitr, plotly, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/egeminiani/penfa
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-07-11 17:59:23 UTC; egeminiani
+Author: Elena Geminiani [aut, cre] (<https://orcid.org/0000-0001-5992-9728>),
+  Giampiero Marra [aut] (<https://orcid.org/0000-0002-9010-2646>),
+  Irini Moustaki [aut] (<https://orcid.org/0000-0001-8371-1251>)
+Maintainer: Elena Geminiani <geminianielena@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-07-12 09:20:02 UTC

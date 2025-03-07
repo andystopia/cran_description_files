@@ -1,0 +1,42 @@
+Package: clinDataReview
+Type: Package
+Title: Clinical Data Review Tool
+Version: 1.0.0
+Date: 2021-06-29
+Authors@R: c(
+  person(given = "Laure", family = "Cougnaud", role = c("aut", "cre"), 
+  email = "laure.cougnaud@openanalytics.eu"),
+  person(given = "Michela", family = "Pasetto", role = "aut", 
+  email = "michela.pasetto@openanalytics.eu"),
+  person(given = "Arne", family = "De Roeck", role = "ctb"),
+  person(given = "Open Analytics", role = "cph")
+  )
+Description: Creation of interactive tables, listings and figures ('TLFs') 
+  and associated report for exploratory analysis of data in a clinical trial, 
+  e.g. for clinical oversight activities.
+  Interactive figures include sunburst, treemap, scatterplot, line plot and
+  barplot of counts data. 
+  Interactive tables include table of summary statistics
+  (as counts of adverse events, enrollment table) and listings.
+  Possibility to compare data (summary table or listing) across two data batches/sets.
+  A clinical data review report is created via study-specific configuration 
+  files and template 'R Markdown' reports contained in the package.
+Imports: bookdown, clinUtils, crosstalk, data.table, ggplot2, haven,
+        htmltools, htmlwidgets, knitr, jsonlite, jsonvalidate, methods,
+        plotly, plyr, rmarkdown, stats, stringr, utils, tools, yaml
+Suggests: countrycode, inTextSummaryTable (>= 2.19.0), pander,
+        patientProfilesVis (>= 0.12.0), reshape2, testthat, xml2, DT
+URL: https://github.com/openanalytics/clinDataReview
+BugReports: https://github.com/openanalytics/clinDataReview/issues
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-06-29 16:08:35 UTC; lcougnaud
+Author: Laure Cougnaud [aut, cre],
+  Michela Pasetto [aut],
+  Arne De Roeck [ctb],
+  Open Analytics [cph]
+Maintainer: Laure Cougnaud <laure.cougnaud@openanalytics.eu>
+Repository: CRAN
+Date/Publication: 2021-06-30 10:50:02 UTC

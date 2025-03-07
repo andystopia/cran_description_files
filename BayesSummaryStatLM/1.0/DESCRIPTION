@@ -1,0 +1,14 @@
+Package: BayesSummaryStatLM
+Type: Package
+Title: MCMC Sampling of Bayesian Linear Models via Summary Statistics
+Version: 1.0
+Date: 2015-01-01
+Author: Evgeny Savel'ev, Alexey Miroshnikov, Erin Conlon
+Maintainer: Evgeny Savel'ev <savelev@vt.edu>
+Description: Methods for generating Markov Chain Monte Carlo (MCMC) posterior samples of Bayesian linear regression model parameters that require only summary statistics of data as input. Summary statistics are useful for systems with very limited amounts of physical memory. The package provides two functions:  one function that computes summary statistics of data and one function that carries out the MCMC posterior sampling for Bayesian linear regression models where summary statistics are used as input. The function read.regress.data.ff utilizes the R package 'ff' to handle data sets that are too large to fit into a user's physical memory, by reading in data in chunks.
+Depends: mvnfast, ff
+License: GPL (>= 2)
+Packaged: 2015-02-25 03:36:21 UTC; evgeny
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-02-25 08:05:16

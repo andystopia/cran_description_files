@@ -1,0 +1,39 @@
+Package: mpathsenser
+Title: Process and Analyse Data from m-Path Sense
+Version: 1.1.2
+Authors@R: c(
+    person("Koen", "Niemeijer", , "koen.niemeijer@kuleuven.be", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0816-534X")),
+    person("Kristof", "Meers", , "kristof.meers@kuleuven.be", role = "ctb",
+           comment = c(ORCID = "0000-0002-9610-7712")),
+    person("KU Leuven", role = c("cph", "fnd"))
+  )
+Description: Overcomes one of the major challenges in mobile (passive)
+    sensing, namely being able to pre-process the raw data that comes from
+    a mobile sensing app, specifically "m-Path Sense" <https://m-path.io>.
+    The main task of 'mpathsenser' is therefore to read "m-Path Sense"
+    JSON files into a database and provide several convenience functions
+    to aid in data processing.
+License: GPL (>= 3)
+URL:
+        https://gitlab.kuleuven.be/ppw-okpiv/researchers/u0134047/mpathsenser/,
+        https://ppw-okpiv.pages.gitlab.kuleuven.be/researchers/u0134047/mpathsenser/
+BugReports: https://gitlab.kuleuven.be/ppw-okpiv/researchers/u0134047/mpathsenser/-/issues/
+Depends: R (>= 4.0.0)
+Imports: DBI, dbplyr, dplyr, furrr, jsonlite, lifecycle, lubridate,
+        magrittr, purrr, rlang, RSQLite, stats, tibble, tidyr
+Suggests: cli, curl, ggplot2, httr, knitr, lintr, progressr, rmarkdown,
+        rvest, sodium, testthat (>= 3.0.0), vroom
+VignetteBuilder: knitr
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2022-12-12 10:55:55 UTC; u0134047
+Author: Koen Niemeijer [aut, cre] (<https://orcid.org/0000-0002-0816-534X>),
+  Kristof Meers [ctb] (<https://orcid.org/0000-0002-9610-7712>),
+  KU Leuven [cph, fnd]
+Maintainer: Koen Niemeijer <koen.niemeijer@kuleuven.be>
+Repository: CRAN
+Date/Publication: 2022-12-12 12:40:02 UTC

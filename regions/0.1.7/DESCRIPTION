@@ -1,0 +1,51 @@
+Package: regions
+Title: Processing Regional Statistics
+Version: 0.1.7
+Authors@R: 
+    c(
+  person(given = "Daniel",
+         family = "Antal",
+         role = c("aut", "cre"),
+         email = "daniel.antal@ceemid.eu",
+         comment = c(ORCID = "0000-0001-7513-6760")),
+  person(given = "Kasia",
+         family = "Kulma",
+         role = "ctb", 
+         comment = c(ORCID = "0000-0002-2952-9720")),
+  person(given = "Istvan",
+         family = "Zsoldos",
+         role = c("ctb"), 
+         email = "istvan.zsoldos@gmail.com",
+         comment = c(ORCID = "0000-0001-5712-2103")),
+  person(given = "Leo",
+         family = "Lahti",
+         role = c("ctb"), 
+         email = "leo.lahti@iki.fi",
+         comment = c(ORCID = "0000-0001-5537-637X"))
+    )
+Description: Validating sub-national statistical typologies, re-coding across 
+    standard typologies of sub-national statistics, and making valid aggregate
+    level imputation, re-aggregation, re-weighting and projection down to 
+    lower hierarchical levels to create meaningful data panels and time series.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+URL: https://regions.dataobservatory.eu/
+BugReports: https://github.com/rOpenGov/regions
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+Imports: dplyr, magrittr, countrycode, tidyselect, utils, purrr, rlang,
+        glue, stats, tidyr, readxl, stringr, assertthat, tibble, here
+Suggests: knitr, testthat, rmarkdown, covr, spelling, devtools,
+        eurostat, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-16 09:31:06 UTC; Daniel Antal
+Author: Daniel Antal [aut, cre] (<https://orcid.org/0000-0001-7513-6760>),
+  Kasia Kulma [ctb] (<https://orcid.org/0000-0002-2952-9720>),
+  Istvan Zsoldos [ctb] (<https://orcid.org/0000-0001-5712-2103>),
+  Leo Lahti [ctb] (<https://orcid.org/0000-0001-5537-637X>)
+Maintainer: Daniel Antal <daniel.antal@ceemid.eu>
+Repository: CRAN
+Date/Publication: 2021-06-16 10:20:02 UTC

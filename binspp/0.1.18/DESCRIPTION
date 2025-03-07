@@ -1,0 +1,35 @@
+Package: binspp
+Type: Package
+Title: Bayesian Inference for Neyman-Scott Point Processes
+Version: 0.1.18
+Authors@R: c(
+    person("Mrkvicka", "Tomas", email = "mrkvicka.toma@gmail.com", role = "aut"),
+    person("Dvorak","Jiri", email = "dvorak@karlin.mff.cuni.cz", role = "aut"),
+    person("Beranek", "Ladislav", email = "beranek@jcu.cz", role = c("aut")),
+    person("Remes","Radim", email = "inrem@jcu.cz", role = c("aut", "cre"))
+    )
+Description: The Bayesian MCMC estimation of parameters for Thomas-type cluster
+    point process with various inhomogeneities. It allows for inhomogeneity in
+    (i) distribution of parent points, (ii) mean number of points in a cluster,
+    (iii) cluster spread. The package also allows for the Bayesian MCMC
+    algorithm for the homogeneous generalized Thomas process. The cluster size
+    is allowed to have a variance that is greater or less than the expected
+    value (cluster sizes are over or under dispersed). Details are described in
+    Dvořák, Remeš, Beránek & Mrkvička (2022) <arXiv: 10.48550/arXiv.2205.07946>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), Rcpp
+Imports: VGAM, cluster, mvtnorm, spatstat, spatstat.core,
+        spatstat.geom, spatstat.random
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen
+RoxygenNote: 7.2.0
+NeedsCompilation: yes
+Packaged: 2022-05-25 16:06:01 UTC; RR
+Author: Mrkvicka Tomas [aut],
+  Dvorak Jiri [aut],
+  Beranek Ladislav [aut],
+  Remes Radim [aut, cre]
+Maintainer: Remes Radim <inrem@jcu.cz>
+Repository: CRAN
+Date/Publication: 2022-05-27 07:40:02 UTC

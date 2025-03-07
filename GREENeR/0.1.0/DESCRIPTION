@@ -1,0 +1,49 @@
+Package: GREENeR
+Type: Package
+Title: Geospatial Regression Equation for European Nutrient Losses
+        (GREEN)
+Version: 0.1.0
+Authors@R: c(person("A.", "Udias", role = "aut",
+                     email = "angeludias@gmail.com"),
+              person("B.", "Grizzetti", role = "aut", 
+                     email = "bruna.grizzetti@jrc.it"), 
+              person("O.", "Vigiak", role = "aut", 
+                     email = "Olga.VIGIAK@ec.europa.eu"),
+              person("J.", "Gomez", role = "aut", 
+                     email = "javier.gomez@urjc.es"),
+              person("C.", "Alfaro", role = c("aut", "cre"),
+                     email = "c.alfarog@gmail.com"),
+              person("A.", "Aloe", role = "aut", 
+                     email = "alberto.aloe@jrc.it"))
+Author: A. Udias [aut],
+  B. Grizzetti [aut],
+  O. Vigiak [aut],
+  J. Gomez [aut],
+  C. Alfaro [aut, cre],
+  A. Aloe [aut]
+Maintainer: C. Alfaro <c.alfarog@gmail.com>
+Description: Tools and methods to apply the model Geospatial Regression Equation
+    for European Nutrient losses (GREEN); 
+    Grizzetti et al. (2005) <doi:10.1016/j.jhydrol.2004.07.036>; 
+    Grizzetti et al. (2008);
+    Grizzetti et al. (2012) <doi:10.1111/j.1365-2486.2011.02576.x>; 
+    Grizzetti et al. (2021) <doi:10.1016/j.gloenvcha.2021.102281>. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: hydroGOF (>= 0.4-0), FME (>= 1.3.6.1), data.table (>= 1.13.6),
+        reshape2 (>= 1.4.4), ggplot2 (>= 3.3.5), graphics (>= 3.6.1),
+        sf (>= 1.0-2), dplyr (>= 1.0.7), magrittr (>= 2.0.1), tmap (>=
+        3.3-2), gridExtra (>= 2.3), tidyselect (>= 1.1.0), classInt (>=
+        0.4-3), grDevices (>= 3.5), networkD3 (>= 0.4), parallelly (>=
+        1.30.0)
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.1.2
+URL: https://github.com/calfarog/GREENeR
+BugReports: https://github.com/calfarog/GREENeR/issues
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-01-26 19:35:19 UTC; urjc
+Repository: CRAN
+Date/Publication: 2022-01-27 19:40:12 UTC

@@ -1,0 +1,40 @@
+Package: NetSimR
+Type: Package
+Title: Actuarial Functions for Non-Life Insurance Modelling
+Version: 0.1.4
+Author: Yiannis Parizas [aut, cre]
+Authors@R: person("Yiannis", "Parizas", email = "yiannis.parizas@gmail.com", role = c("aut", "cre"))
+Maintainer: Yiannis Parizas <yiannis.parizas@gmail.com>
+Description: Assists actuaries and other insurance modellers in pricing,
+    reserving and capital modelling for non-life insurance and
+    reinsurance modelling. Provides functions that help model
+    excess levels, capping and pure Incurred but not reported
+    claims (pure IBNR).
+    Includes capped mean, exposure curves and increased limit
+    factor curves (ILFs) for LogNormal, Gamma, Pareto, Sliced
+    LogNormal-Pareto and Sliced Gamma-Pareto distributions.
+    Includes mean, probability density function (pdf), cumulative
+    probability function (cdf) and inverse cumulative probability
+    function for Sliced LogNormal-Pareto and Sliced Gamma-Pareto
+    distributions.
+    Includes calculating pure IBNR exposure with LogNormal and
+    Gamma distribution for reporting delay.
+    Includes three shiny tools, one to simulate insurance claims applying
+    reinsurance structures, fit generalised linear models and fit claims
+    frequency or severity distributions.
+    Methods used in the package refer to
+    Free for All by Yiannis Parizas (2023) <https://www.theactuary.com/2023/03/02/free-all>;
+    Escaping the triangle by Yiannis Parizas (2019) <https://www.theactuary.com/features/2019/06/2019/06/05/escaping-triangle>;
+    Take to excess by Yiannis Parizas (2019) <https://www.theactuary.com/features/2019/03/2019/03/06/taken-excess>.
+License: GPL-3
+Encoding: UTF-8
+Imports: rmarkdown, shiny, shinybusy, future.apply, scales, future,
+        methods, DBI, RMySQL, RODBC, RPostgreSQL, RSQLite, plotly,
+        shinyjs, MASS, fitdistrplus, shinyWidgets
+Suggests: knitr, crch, testthat
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-10-24 21:16:25 UTC; yiann
+Repository: CRAN
+Date/Publication: 2023-10-24 22:10:10 UTC

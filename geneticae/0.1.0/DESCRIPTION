@@ -1,0 +1,54 @@
+Package: geneticae
+Title: Statistical Tools for the Analysis of Multi Environment
+        Agronomic Trials
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Julia",
+         family = "Angelini",
+         role = c("aut", "cre"),
+         email = "jangelini_93@hotmail.com",
+         comment = c(ORCID = "0000-0002-9611-527X")
+         ),
+  person(given = "Marcos",
+         family = "Prunello",
+         role = c("aut"),
+         email = "marcosprunello@gmail.com",
+         comment = c(ORCID = "0000-0002-9611-527X")
+         ),
+  person(given = "Gerardo",
+         family = "Cervigni",
+         role = c("aut")
+         )
+  )
+Description: Data from multi environment agronomic trials, which are often 
+  carried out by plant breeders, can be analyzed with the tools offered by this 
+  package such as the Additive Main effects and Multiplicative Interaction model 
+  or 'AMMI' ('Gauch' 1992, ISBN:9780444892409) 
+  and the Site Regression model or 'SREG' ('Cornelius' 1996, 
+  <doi:10.1201/9780367802226>). Since these methods present a poor performance 
+  under the presence of outliers and missing values, this package includes 
+  robust versions of the 'AMMI' model ('Rodrigues' 2016, 
+  <doi:10.1093/bioinformatics/btv533>), and also imputation techniques 
+  specifically developed for this kind of data ('Arciniegas-Alarcón' 2014, 
+  <doi:10.2478/bile-2014-0006>).
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: stats, GGEBiplots, ggforce, ggplot2, scales, MASS, pcaMethods,
+        rrcov, dplyr, bcv, missMDA, calibrate, graphics, agridat,
+        reshape2, matrixStats, tidyr, prettydoc
+Suggests: spelling, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Depends: R (>= 2.12.0)
+URL: https://github.com/jangelini/geneticae
+BugReports: https://github.com/jangelini/geneticae/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-09-15 21:55:57 UTC; julia-fedora
+Author: Julia Angelini [aut, cre] (<https://orcid.org/0000-0002-9611-527X>),
+  Marcos Prunello [aut] (<https://orcid.org/0000-0002-9611-527X>),
+  Gerardo Cervigni [aut]
+Maintainer: Julia Angelini <jangelini_93@hotmail.com>
+Repository: CRAN
+Date/Publication: 2021-09-16 07:10:02 UTC

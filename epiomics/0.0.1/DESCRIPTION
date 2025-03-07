@@ -1,0 +1,32 @@
+Package: epiomics
+Title: Analysis of Omics Data in Observational Studies
+Version: 0.0.1
+Authors@R: 
+    c(person("Jesse", "Goodrich", 
+           role = c("aut", "cre"),
+           email= "jagoodri@usc.edu",
+           comment = c(ORCID = "0000-0001-6615-0472")))
+Description: A collection of fast and flexible functions for analyzing omics
+    data in observational studies. Multiple different approaches for integrating 
+    environmental/genetic factors, omics data, and/or phenotype data are 
+    implemented. This includes functions for performing omics wide association 
+    studies with one or more variables of interest as the exposure or outcome; 
+    a function for performing a meet in the middle analysis for linking 
+    exposures, omics, and outcomes (as described by Chadeau-Hyam et al., (2010) 
+    <doi:10.3109/1354750X.2010.533285>); and a function for performing a 
+    mixtures analysis across all omics features using quantile-based 
+    g-Computation (as described by Keil et al., (2019) <doi:10.1289/EHP5838>).  
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+LazyData: true
+Imports: data.table, qgcomp, survival, lme4, lmerTest, ggplot2, ggrepel
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-12-12 02:08:06 UTC; jagoodri
+Author: Jesse Goodrich [aut, cre] (<https://orcid.org/0000-0001-6615-0472>)
+Maintainer: Jesse Goodrich <jagoodri@usc.edu>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2023-01-09 10:30:10 UTC

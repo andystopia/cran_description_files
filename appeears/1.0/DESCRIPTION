@@ -1,0 +1,41 @@
+Package: appeears
+Title: Interface to 'AppEARS' NASA Web Services
+Version: 1.0
+Authors@R: c(person(
+               family = "Hufkens",
+               given = "Koen",
+               email = "koen.hufkens@gmail.com",
+               role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0002-5070-8109")
+               ),
+             person(
+               family = "Campitelli",
+               given = "Elio",
+               email = "elio.campitelli@cima.fcen.uba.ar",
+               role = c("ctb"),
+               comment = c(ORCID = "0000-0002-7742-9230")
+               ),
+            person(given = "BlueGreen Labs",
+              role = c("cph", "fnd"))
+           )
+Description: Programmatic interface to the NASA Application for Extracting and Exploring Analysis Ready Samples services (AppEEARS; <https://appeears.earthdatacloud.nasa.gov/>).
+ The package provides easy access to analysis ready earth observation data in R.
+URL: https://github.com/bluegreen-labs/appeears
+BugReports: https://github.com/bluegreen-labs/appeears/issues
+Depends: R (>= 4.0)
+Imports: httr, keyring, memoise, getPass, R6, sf, jsonlite, geojsonio,
+        rstudioapi
+License: AGPL-3
+ByteCompile: true
+RoxygenNote: 7.2.3
+Suggests: rmarkdown, covr, testthat, terra, ncdf4, knitr, rlang, dplyr,
+        ggplot2, patchwork
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-22 12:30:53 UTC; khufkens
+Author: Koen Hufkens [aut, cre] (<https://orcid.org/0000-0002-5070-8109>),
+  Elio Campitelli [ctb] (<https://orcid.org/0000-0002-7742-9230>),
+  BlueGreen Labs [cph, fnd]
+Maintainer: Koen Hufkens <koen.hufkens@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-22 18:20:05 UTC

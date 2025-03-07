@@ -1,0 +1,39 @@
+Package: surveyCV
+Type: Package
+Title: Cross Validation Based on Survey Design
+Version: 0.1.1
+Authors@R: c(
+    person("Cole", "Guerin", email = "cole@guerincreative.com", role = "aut"),
+    person("Thomas", "McMahon", email = "thomasmcmahon9@gmail.com", role = "aut"),
+    person("Jerzy", "Wieczorek", email = "jawieczo@colby.edu", role = c("cre", "aut")),
+    person("Hunter", "Ratliff", role = "ctb"))
+Description: Functions to generate test error estimates using cross validation, 
+    based on how a survey design is constructed
+    (SRS, clustering, stratification, and/or unequal sampling weights).
+    You can input linear and logistic regression models, along with data and a 
+    type of survey design in order to get an output that can help you determine
+    which model best fits the data using K-fold cross validation.
+    Our draft paper on "K-Fold Cross-Validation for Complex Sample Surveys"
+    (under review; a copy is in the 'data-raw' folder of our GitHub repo)
+    explains why differing how we take folds based on survey design is useful.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+Depends: R (>= 4.0)
+Imports: survey (>= 4.1), magrittr (>= 2.0)
+Suggests: dplyr (>= 1.0), ggplot2 (>= 3.3), gridExtra (>= 2.3), ISLR
+        (>= 1.2), knitr (>= 1.29), rmarkdown (>= 2.2), testthat (>=
+        3.1), grid (>= 4.0), splines (>= 4.0)
+VignetteBuilder: knitr
+URL: https://github.com/ColbyStatSvyRsch/surveyCV/
+BugReports: https://github.com/ColbyStatSvyRsch/surveyCV/issues
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-01-07 19:51:51 UTC; jawieczo
+Author: Cole Guerin [aut],
+  Thomas McMahon [aut],
+  Jerzy Wieczorek [cre, aut],
+  Hunter Ratliff [ctb]
+Maintainer: Jerzy Wieczorek <jawieczo@colby.edu>
+Repository: CRAN
+Date/Publication: 2022-01-10 17:50:02 UTC

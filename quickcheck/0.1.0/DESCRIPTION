@@ -1,0 +1,30 @@
+Package: quickcheck
+Title: Property Based Testing
+Version: 0.1.0
+Authors@R: 
+    person(given = "Andrew",
+           family = "McNeil",
+           role = c("aut", "cre"),
+           email = "andrew.richard.mcneil@gmail.com")
+Description: Property based testing, inspired by 
+    the original 'QuickCheck'. This package builds on 
+    the property based testing framework provided by 
+    'hedgehog' and is designed to seamlessly integrate with 
+    'testthat'.
+License: MIT + file LICENSE
+URL: https://github.com/armcn/quickcheck,
+        https://armcn.github.io/quickcheck/
+BugReports: https://github.com/armcn/quickcheck/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: R (>= 4.1.0)
+Imports: testthat (>= 3.0.0), hedgehog, purrr, tibble, data.table, hms,
+        stats
+Suggests: knitr, rmarkdown, covr, dplyr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-02-10 23:51:03 UTC; mcneil
+Author: Andrew McNeil [aut, cre]
+Maintainer: Andrew McNeil <andrew.richard.mcneil@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-11 00:10:03 UTC

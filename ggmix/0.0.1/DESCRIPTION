@@ -1,0 +1,43 @@
+Package: ggmix
+Type: Package
+Title: Variable Selection in Linear Mixed Models for SNP Data
+Version: 0.0.1
+Authors@R: c(
+  person("Sahir", "Bhatnagar", email = "sahir.bhatnagar@gmail.com",
+  role = c("aut", "cre"), comment = "https://sahirbhatnagar.com/"),
+  person("Karim", "Oualkacha", email = "oualkacha.karim@uqam.ca",
+  role = c("aut"), comment = "http://karimoualkacha.uqam.ca/"),
+  person("Yi", "Yang", email = "yi.yang6@mcgill.ca",
+  role = c("aut"), comment = "http://www.math.mcgill.ca/yyang/"),
+  person("Celia", "Greenwood", email = "celia.greenwood@mcgill.ca",
+  role = c("aut"), comment = "http://www.mcgill.ca/statisticalgenetics/")
+  )
+Description: Fit penalized multivariable linear mixed models with a single 
+    random effect to control for population structure in genetic association 
+    studies. The goal is to simultaneously fit many genetic variants at the 
+    same time, in order to select markers that are independently associated 
+    with the response. Can also handle prior annotation information, 
+    for example, rare variants, in the form of variable weights. For more 
+    information, see the website below and the accompanying paper: 
+    Bhatnagar et al., "Simultaneous SNP selection and adjustment for 
+    population structure in high dimensional prediction models", 2020, 
+    <DOI:10.1101/408484>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4.0)
+Imports: glmnet, methods, stats, MASS, Matrix
+Suggests: RSpectra, popkin, bnpsd, testthat, covr, knitr, rmarkdown
+BugReports: https://github.com/sahirbhatnagar/ggmix/issues
+URL: https://github.com/sahirbhatnagar/ggmix
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-03-17 21:43:38 UTC; sahir
+Author: Sahir Bhatnagar [aut, cre] (https://sahirbhatnagar.com/),
+  Karim Oualkacha [aut] (http://karimoualkacha.uqam.ca/),
+  Yi Yang [aut] (http://www.math.mcgill.ca/yyang/),
+  Celia Greenwood [aut] (http://www.mcgill.ca/statisticalgenetics/)
+Maintainer: Sahir Bhatnagar <sahir.bhatnagar@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-20 13:00:05 UTC

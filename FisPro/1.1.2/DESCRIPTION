@@ -1,0 +1,36 @@
+Package: FisPro
+Type: Package
+Title: Fuzzy Inference System Design and Optimization
+Version: 1.1.2
+Authors@R: c(
+  person("Serge", "Guillaume", email = "serge.guillaume@inrae.fr", role = "aut"),
+  person("Brigitte", "Charnomordic", email = "brigitte.charnomordic@inra.fr", role = "aut"),
+  person("Jean-Luc", "Lablée", email = "jean-luc.lablee@inrae.fr", role = c("aut", "cre")),
+  person("Hazaël", "Jones", email = "hazael.jones@supagro.fr", role = "ctb"),
+  person("Lydie", "Desperben", role = "ctb"),
+  person("INRAE", role = "cph", comment = "National Research Institute for Agriculture, Food and Environment, France"))
+Author: Serge Guillaume [aut],
+  Brigitte Charnomordic [aut],
+  Jean-Luc Lablée [aut, cre],
+  Hazaël Jones [ctb],
+  Lydie Desperben [ctb],
+  INRAE [cph] (National Research Institute for Agriculture, Food and
+    Environment, France)
+Maintainer: Jean-Luc Lablée <jean-luc.lablee@inrae.fr>
+URL: https://www.fispro.org
+Description: Fuzzy inference systems are based on fuzzy rules, which have a good capability for managing progressive phenomenons. 
+  This package is a basic implementation of the main functions to use a Fuzzy Inference System (FIS) provided by the open source software 'FisPro' <https://www.fispro.org>. 
+  'FisPro' allows to create fuzzy inference systems and to use them for reasoning purposes, especially for simulating a physical or biological system.
+License: CeCILL
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: methods, utils, Rdpack, Rcpp (>= 1.0.0)
+RdMacros: Rdpack
+NeedsCompilation: yes
+LinkingTo: Rcpp, BH
+Suggests: testthat, rlang, knitr, rmarkdown
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Packaged: 2022-12-13 09:30:01 UTC; jllablee
+Repository: CRAN
+Date/Publication: 2022-12-13 13:30:02 UTC

@@ -1,0 +1,31 @@
+Package: opensensmapr
+Type: Package
+Title: Client for the Data API of openSenseMap.org
+Version: 0.5.1
+URL: http://github.com/sensebox/opensensmapR
+BugReports: http://github.com/sensebox/opensensmapR/issues
+Imports: dplyr, httr, digest, lazyeval, readr, purrr, magrittr
+Suggests: maps, maptools, tibble, rgeos, sf, knitr, rmarkdown,
+        lubridate, units, jsonlite, ggplot2, zoo, lintr, testthat, covr
+Authors@R: c(person("Norwin", "Roosen", role = c("aut", "cre"), email = "hello@nroo.de"),
+    person("Daniel", "Nuest", role = c("ctb"), email = "daniel.nuest@uni-muenster.de", comment = c(ORCID = "0000-0003-2392-6140")))
+Description: Download environmental measurements and sensor station metadata
+    from the API of open data sensor web platform <https://opensensemap.org> for
+    analysis in R.
+    This platform provides real time data of more than 1500 low-cost sensor
+    stations for PM10, PM2.5, temperature, humidity, UV-A intensity and more
+    phenomena.
+    The package aims to be compatible with 'sf' and the 'Tidyverse', and provides
+    several helper functions for data exploration and transformation.
+License: GPL (>= 2) | file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-03-10 12:38:51 UTC; norwin
+Author: Norwin Roosen [aut, cre],
+  Daniel Nuest [ctb] (<https://orcid.org/0000-0003-2392-6140>)
+Maintainer: Norwin Roosen <hello@nroo.de>
+Repository: CRAN
+Date/Publication: 2019-03-10 20:50:21 UTC

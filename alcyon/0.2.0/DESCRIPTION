@@ -1,0 +1,90 @@
+Package: alcyon
+Type: Package
+Title: Spatial Network Analysis
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Petros",
+           family = "Koutsolampros",
+           email = "r-devel@pklampros.net",
+           role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0003-2842-9899",
+                       "'sala' library contributor through 'depthmapX'")),
+    person(given = "Fani",
+           family = "Kostourou",
+           role = c("aut", "ctb", "cph"),
+           comment = c(ORCID = "0000-0002-6544-7693")),
+    person(given = "Kimon",
+           family = "Krenz",
+           role = c("ctb", "cph"),
+           comment = c(ORCID = "0000-0001-6077-7282")),
+    person(given = "Alasdair",
+           family = "Turner",
+           role = c("ctb", "cph"),
+           comment = c("'sala' library contributor through 'depthmapX'")),
+    person(given = "Tasos",
+           family = "Varoudis",
+           role = c("ctb", "cph"),
+           comment = c(ORCID = "0000-0001-7790-5623",
+                       "'sala' library contributor through 'depthmapX'")),
+    person(given = "Christian",
+           family = "Sailer",
+           role = c("ctb", "cph"),
+           comment = c("'sala' library contributor through 'depthmapX'")),
+    person(given = "Eva",
+           family = "Friedrich",
+           role = c("ctb", "cph"),
+           comment = c("'sala' library contributor through 'depthmapX'")),
+    person(given = "University College London",
+           role = "fnd"),
+    person(given = "Spacelab UK",
+           role = "fnd"))
+Description: Interface package for 'sala', the spatial network analysis library
+    from the 'depthmapX' software application. The R parts of the code are based
+    on the 'rdepthmap' package. Allows for the analysis of urban and
+    building-scale networks and provides metrics and methods usually found
+    within the Space Syntax domain. Methods in this package are described by K.
+    Al-Sayed, A. Turner, B. Hillier, S. Iida and A. Penn (2014) "Space Syntax
+    methodology", and also by A. Turner (2004)
+    <https://discovery.ucl.ac.uk/id/eprint/2651> "Depthmap 4: a researcher's
+    handbook".
+License: GPL-3
+Encoding: UTF-8
+LinkingTo: Rcpp, sp
+Imports: Rcpp, methods
+Depends: sp, sf, igraph
+Suggests: knitr, rmarkdown, testthat
+SystemRequirements: C++17
+VignetteBuilder: knitr
+Collate: 'generics.R' 'rcppRoxygen.R' 'helper-loadMapsRoxygen.R'
+        'ShapeMap.R' 'ShapeGraph.R' 'AxialShapeGraph.R'
+        'AllLineShapeGraph.R' 'SegmentShapeGraph.R' 'PointMap.R'
+        'TraversalType.R' 'AgentLookMode.R' 'RcppExports.R'
+        'agentAnalysis.R' 'allFewestLineMap.R' 'axialAnalysis.R'
+        'generateRandomCapString.R' 'getTopFeatures.R' 'isovist.R'
+        'matchPointsToLines.R' 'palettes.R' 'prepareVGA.R'
+        'readMetaGraph.R' 'refIDtoIndex.R' 'segmentAnalysis.R'
+        'sfConversions.R' 'shapegraphToIGraph.R' 'oneToAllTraverse.R'
+        'allToAllTraverse.R'
+RoxygenNote: 7.3.1
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2024-05-25 18:58:22 UTC; petros
+Author: Petros Koutsolampros [cre, aut, cph]
+    (<https://orcid.org/0000-0003-2842-9899>, 'sala' library
+    contributor through 'depthmapX'),
+  Fani Kostourou [aut, ctb, cph]
+    (<https://orcid.org/0000-0002-6544-7693>),
+  Kimon Krenz [ctb, cph] (<https://orcid.org/0000-0001-6077-7282>),
+  Alasdair Turner [ctb, cph] ('sala' library contributor through
+    'depthmapX'),
+  Tasos Varoudis [ctb, cph] (<https://orcid.org/0000-0001-7790-5623>,
+    'sala' library contributor through 'depthmapX'),
+  Christian Sailer [ctb, cph] ('sala' library contributor through
+    'depthmapX'),
+  Eva Friedrich [ctb, cph] ('sala' library contributor through
+    'depthmapX'),
+  University College London [fnd],
+  Spacelab UK [fnd]
+Maintainer: Petros Koutsolampros <r-devel@pklampros.net>
+Repository: CRAN
+Date/Publication: 2024-05-27 17:20:07 UTC

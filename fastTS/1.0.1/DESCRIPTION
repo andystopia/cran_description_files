@@ -1,0 +1,47 @@
+Package: fastTS
+Type: Package
+Title: Fast Time Series Modeling for Seasonal Series with Exogenous
+        Variables
+Version: 1.0.1
+Authors@R: person("Ryan Andrew", "Peterson", 
+                  email = "ryan.a.peterson@cuanschutz.edu", 
+                  role = c("aut", "cre", "cph"),
+                  comment = c(ORCID = "0000-0002-4650-5798"))
+Description: An implementation of sparsity-ranked lasso and related methods 
+    for time series data. This methodology is especially useful for 
+    large time series with exogenous features and/or complex 
+    seasonality. Originally described in Peterson and Cavanaugh 
+    (2022) <doi:10.1007/s10182-021-00431-7> in the context of variable 
+    selection with interactions and/or polynomials, ranked sparsity is 
+    a philosophy with methods useful for variable selection in the 
+    presence of prior informational asymmetry. This situation exists for time 
+    series data with complex seasonality, as shown in Peterson and Cavanaugh 
+    (2024) <doi:10.1177/1471082X231225307>, which also describes this package
+    in greater detail. The sparsity-ranked penalization methods for time series
+    implemented in 'fastTS' can fit large/complex/high-frequency time series
+    quickly, even with a high-dimensional exogenous feature set. The method is
+    considerably faster than its competitors, while often producing more 
+    accurate predictions. Also included is a long hourly series of arrivals 
+    into the University of Iowa Emergency Department with concurrent local 
+    temperature.
+Suggests: covr, kableExtra, knitr, magrittr, rmarkdown, testthat (>=
+        3.0.0), tibble
+Imports: dplyr, methods, ncvreg, RcppRoll, rlang, yardstick
+Depends: R (>= 3.5)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://petersonr.github.io/fastTS/,
+        https://github.com/petersonR/fastTS/
+BugReports: https://github.com/petersonR/fastTS/issues
+Date: 2024-03-28
+NeedsCompilation: no
+Packaged: 2024-03-28 21:21:10 UTC; ryanpeterson
+Author: Ryan Andrew Peterson [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4650-5798>)
+Maintainer: Ryan Andrew Peterson <ryan.a.peterson@cuanschutz.edu>
+Repository: CRAN
+Date/Publication: 2024-03-28 21:40:02 UTC

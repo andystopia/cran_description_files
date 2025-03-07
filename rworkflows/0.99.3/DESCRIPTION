@@ -1,0 +1,38 @@
+Package: rworkflows
+Type: Package
+Title: Test, Document, Containerise, and Deploy R Packages
+Version: 0.99.3
+Authors@R: 
+    c(person(given = "Brian",
+           family = "Schilder",
+           role = c("aut","cre"),
+           email = "brian_schilder@alumni.brown.edu",
+           comment = c(ORCID = "0000-0001-5949-2191")),
+      person(given = "Alan",
+           family = "Murphy",
+           role = c("aut","ctb"),
+           email = "alanmurph94@hotmail.com",
+           comment = c(ORCID = "0000-0002-2487-8753"))) 
+Description: Continuous integration for R packages. 
+    Automates testing, documentation website building,
+    and containerised deployment.
+URL: https://github.com/neurogenomics/rworkflows
+BugReports: https://github.com/neurogenomics/rworkflows/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+biocViews: Genetics, FunctionalGenomics, SystemsBiology
+Imports: here, yaml, utils, desc, badger
+Suggests: markdown, rmarkdown, magick, remotes, knitr, BiocStyle, covr,
+        testthat (>= 3.0.0), hexSticker, htmltools, rvest, UpSetR,
+        githubinstall, BiocManager, data.table
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+License: GPL-3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-12-20 19:59:46 UTC; schilder
+Author: Brian Schilder [aut, cre] (<https://orcid.org/0000-0001-5949-2191>),
+  Alan Murphy [aut, ctb] (<https://orcid.org/0000-0002-2487-8753>)
+Maintainer: Brian Schilder <brian_schilder@alumni.brown.edu>
+Repository: CRAN
+Date/Publication: 2022-12-21 12:20:02 UTC

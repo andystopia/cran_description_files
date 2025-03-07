@@ -1,0 +1,30 @@
+Package: LadderFuelsR
+Type: Package
+Title: Automated Tool for Vertical Fuel Continuity Analysis using
+        Airborne Laser Scanning Data
+Version: 0.0.1
+Authors@R: c(person("Olga", "Viedma", email = "olga.viedma@uclm.es", role = c("aut", "cph", "cre")),
+              person("Carlos Alberto", "Silva", email = "c.silva@ufl.edu", role = c("aut", "cph")),
+              person("Jose Manuel", "Moreno", email = "JoseM.Moreno@uclm.es", role = c("aut", "cph")))
+Description: Set of tools for analyzing vertical fuel continuity at the tree level using Airborne Laser Scanning data. The workflow consisted of: 1) calculating the vertical height profiles of each segmented tree; 2) identifying gaps and fuel layers; 3) estimating the distance between fuel layers; and 4) retrieving the fuel layers base height and depth. Additionally, other functions recalculate previous metrics after considering distances greater than 1 m and calculate the canopy base height as the fuel base height located at the largest- and at the last-distance. Moreover, the package calculates: i) the percentage of Leaf Area Density comprised in each fuel layer, ii) remove fuel layers with Leaf Area Density percentage less than 25, iii) recalculate the distances among the reminder ones, and iv) identify the canopy base height as the fuel base height with the highest Leaf Area Density percentage. On the other hand, when there is only one fuel layer, it identifies the canopy base height performing a segmented linear regression (breaking points) on the cumulative sum of Leaf Area Density as a function of height. Finally, a collection of plotting functions is developed to represent: i) the initial gaps and fuel layers; ii) the fuels base height, depths and gaps with distances greater than 1 m and, iii) the fuels base height and depths after applying the breaking point method over trees with only one fuel layer. The methods implemented in this package are original and have not been published elsewhere.
+URL: https://github.com/olgaviedma/LadderFuelsR
+License: GPL-3
+Encoding: UTF-8
+Imports: dplyr, gdata, ggplot2, magrittr, segmented, stringr, tidyr,
+        tibble, tidyselect
+RoxygenNote: 7.2.3
+Collate: 'calculate_gaps_perc2.R' 'gap_fbh.R' 'distances_calculation.R'
+        'depths_calculation.R' 'corrected_base_heights.R'
+        'corrected_depth.R' 'corrected_distances.R'
+        'cummLAD_breaks_metrics.R' 'maxlad_metrics_25perc.R'
+        'plot_cumm_breaks_metrics.R' 'plot_gaps_fbhs.R'
+        'plot_maxlad_metrics.R' 'renamed0_df.R' 'renamed_df.R'
+BugReports: https://github.com/olgaviedma/LadderFuelsR/issues
+NeedsCompilation: no
+Packaged: 2023-12-11 20:06:25 UTC; Olga.Viedma
+Author: Olga Viedma [aut, cph, cre],
+  Carlos Alberto Silva [aut, cph],
+  Jose Manuel Moreno [aut, cph]
+Maintainer: Olga Viedma <olga.viedma@uclm.es>
+Repository: CRAN
+Date/Publication: 2023-12-13 17:30:06 UTC

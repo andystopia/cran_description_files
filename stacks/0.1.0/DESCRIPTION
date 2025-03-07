@@ -1,0 +1,41 @@
+Package: stacks
+Title: Tidy Model Stacking
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Simon",
+           family = "Couch",
+           role = c("aut", "cre"),
+           email = "simonpatrickcouch@gmail.com"),
+    person(given = "Max", 
+           family = "Kuhn", 
+           email = "max@rstudio.com", 
+           role = "aut"),
+    person("RStudio", 
+           role = "cph")
+    )
+Description: Model stacking is an ensemble technique
+    that involves training a model to combine the outputs of many 
+    diverse statistical models, and has been shown to improve 
+    predictive performance in a variety of settings. 'stacks' 
+    implements a grammar for 'tidymodels'-aligned model stacking.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: tune (>= 0.1.2), dplyr (>= 1.0.0), rlang (>= 0.4.0), tibble
+        (>= 2.1.3), purrr (>= 0.3.2), parsnip (>= 0.0.4), workflows (>=
+        0.1.0), recipes (>= 0.1.15), yardstick, tidyr, dials, digest,
+        glue, ggplot2, glmnet, rsample, cli, butcher, stats, foreach,
+        generics
+Suggests: testthat, covr, kernlab, knitr, modeldata, rmarkdown,
+        palmerpenguins, ranger, nnet, kknn
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-11-20 00:13:21 UTC; simonpcouch
+Author: Simon Couch [aut, cre],
+  Max Kuhn [aut],
+  RStudio [cph]
+Maintainer: Simon Couch <simonpatrickcouch@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-11-23 08:40:02 UTC

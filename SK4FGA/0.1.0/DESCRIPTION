@@ -1,0 +1,49 @@
+Package: SK4FGA
+Type: Package
+Title: Scott-Knott for Forensic Glass Analysis
+Version: 0.1.0
+Authors@R: c(person(given = "Toby",
+                    family = "Hayward",
+                    role = c("aut", "cre"),
+                    email = "tobyhayward13@gmail.com",
+                    comment = "Main developer and maintainer of the package."),
+            person(given = "James",
+                    family = "Curran",
+                    role = c("aut", "ctb"),
+                    email = "j.curran@auckland.ac.nz",
+                    comment = "Supervised and contributed to the development of the package."),
+            person(given = "Lewis",
+                    family = "Kendall-Jones",
+                    role = "ctb",
+                    email = "lewiskendalljones@gmail.com",
+                    comment = "Wrote and supported the development of the C++ code."))
+Maintainer: Toby Hayward <tobyhayward13@gmail.com>
+Description: In forensics, it is common and effective practice to analyse glass fragments from the scene and suspects 
+  to gain evidence of placing a suspect at the crime scene. 
+  This kind of analysis involves comparing the physical and chemical attributes of glass fragments that exist on both the 
+  person and at the crime scene, and assessing the significance in a likeness that they share. 
+  The package implements the Scott-Knott Modification 2 algorithm (SKM2) (Christopher M. Triggs and 
+  James M. Curran and John S. Buckleton and Kevan A.J. Walsh (1997) <doi:10.1016/S0379-0738(96)02037-3> 
+  "The grouping problem in forensic glass analysis: a divisive approach", Forensic Science International, 85(1), 1--14)
+  for small sample glass fragment analysis using the refractive index (ri) of a set of glass samples. 
+  It also includes an experimental multivariate analog to the Scott-Knott algorithm for similar analysis on glass samples
+  with multiple chemical concentration variables and multiple samples of the same item; testing against the Hotellings T^2 
+  distribution (J.M. Curran and C.M. Triggs and J.R. Almirall and J.S. Buckleton and K.A.J. Walsh (1997) 
+  <doi:10.1016/S1355-0306(97)72197-X> "The interpretation of elemental composition measurements from forensic 
+  glass evidence", Science & Justice, 37(4), 241--244).
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp
+Imports: Rcpp
+NeedsCompilation: yes
+Packaged: 2023-01-25 01:13:35 UTC; tobiw
+Author: Toby Hayward [aut, cre] (Main developer and maintainer of the package.),
+  James Curran [aut, ctb] (Supervised and contributed to the development
+    of the package.),
+  Lewis Kendall-Jones [ctb] (Wrote and supported the development of the
+    C++ code.)
+Repository: CRAN
+Date/Publication: 2023-01-25 10:00:02 UTC

@@ -1,0 +1,49 @@
+Package: funcy
+Type: Package
+Title: Functional Clustering Algorithms
+Version: 0.8
+Date: 2015-09-24
+Authors@R: c(
+	   person(given="Christina", family="Yassouridis", email="c_ya02@yahoo.de",
+	   role=c("aut", "cre")),
+	   person(given="Dominik", family="Ernst", role="ctb"),
+	   person(given="Madison", family="Giacofci", role="ctb"),
+	   person(given="Sophie", family="Lambert-Lacroix", role="ctb"),
+	   person(given="Guillemette", family="Marot", role="ctb"),
+	   person(given="Franck", family="Picard", role="ctb"),
+	   person(given="Nicoleta", family="Serban", role="ctb"),
+	   person(given="Huijing", family="Jiang", role="ctb"),
+	   person(given="Gareth", family="James", role="ctb"),
+	   person(given="Catherine", family="Sugar", role="ctb"),
+	   person(given="Hans-Georg", family="M\"uller", role="ctb"),
+	   person(given="Jie", family="Peng", role="ctb"),
+	   person(given="Chiou", family="Jeng-Min", role="ctb"),
+	   person(given="Pai-Ling", family="Li", role="ctb")
+           )		 
+Description: Unified framework to cluster functional data according to one of seven models. All models are based on the projection of the curves onto a basis. The main function funcit() calls wrapper functions for the existing algorithms, so that input parameters are the same. A list is returned with each entry representing the same or extended output for the corresponding method. Method specific as well as general visualization tools are available.
+License: GPL-2
+Depends: flexclust, splines
+Imports: MASS, Matrix, fda, methods, wavethresh, kernlab, parallel,
+        car, fields, calibrate, cluster, sm, caTools, plyr
+Suggests: scatterplot3d, Funclustering, funHDDC
+LazyLoad: yes
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2015-10-13 10:09:55 UTC; christina
+Author: Christina Yassouridis [aut, cre],
+  Dominik Ernst [ctb],
+  Madison Giacofci [ctb],
+  Sophie Lambert-Lacroix [ctb],
+  Guillemette Marot [ctb],
+  Franck Picard [ctb],
+  Nicoleta Serban [ctb],
+  Huijing Jiang [ctb],
+  Gareth James [ctb],
+  Catherine Sugar [ctb],
+  Hans-Georg M"uller [ctb],
+  Jie Peng [ctb],
+  Chiou Jeng-Min [ctb],
+  Pai-Ling Li [ctb]
+Maintainer: Christina Yassouridis <c_ya02@yahoo.de>
+Repository: CRAN
+Date/Publication: 2015-10-13 12:45:13

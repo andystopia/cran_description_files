@@ -1,0 +1,32 @@
+Package: gsrc
+Type: Package
+Title: Genome Structure Rearrangement Calling in Genomes with High
+        Synteny
+Version: 1.1
+Date: 2016-10-12
+Authors@R: c(
+    person("Fabian", "Grandke", email = "grafabian@gmail.com", role = c("cre", "aut")),
+    person("Birgit", "Samans", email = "birgit.samans@uni-giessen.de", role = "aut"))
+Maintainer: Fabian Grandke <grafabian@gmail.com>
+Description: Pipeline to read and analyze raw SNP array data.
+    The data is preprocessed and normalized.
+    Genotypes and CNVs are called.
+    Synteny blocks are calculated and translocations detected.
+    The results can be plotted with special functions.
+License: GPL-3
+LazyData: TRUE
+Imports: illuminaio, limma, preprocessCore, R6, utils, grDevices,
+        graphics, dbscan, Ckmeans.1d.dp, DNAcopy, openxlsx
+RoxygenNote: 5.0.1
+Suggests: testthat, knitr, rmarkdown, brassicaData, mixtools, devtools,
+        KernSmooth
+VignetteBuilder: knitr
+Additional_repositories: https://grafab.github.io/drat/
+URL: http://github.com/grafab/gsrc
+BugReports: http://github.com/grafab/gsrc/issues
+NeedsCompilation: no
+Packaged: 2016-10-17 08:59:08 UTC; fabian
+Author: Fabian Grandke [cre, aut],
+  Birgit Samans [aut]
+Repository: CRAN
+Date/Publication: 2016-10-17 12:41:19

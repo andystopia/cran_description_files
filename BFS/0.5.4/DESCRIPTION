@@ -1,0 +1,31 @@
+Package: BFS
+Type: Package
+Title: Get Data from the Swiss Federal Statistical Office
+Version: 0.5.4
+Authors@R: 
+  c(person(given = "Felix",
+           family = "Luginbuhl",
+           role = c("aut", "cre"),
+           email = "felix.luginbuhl@protonmail.ch"),
+    person(given = "Janosch",
+           family = "Brenzel-Weiss",
+           role = "ctb"))
+Maintainer: Felix Luginbuhl <felix.luginbuhl@protonmail.ch>
+Description: Search and download data from the Swiss Federal Statistical Office (BFS) APIs <https://www.bfs.admin.ch/>.
+License: MIT + file LICENSE
+Depends: R (>= 3.0.1)
+Imports: pxweb, httr2, xml2, rvest, tibble, magrittr, janitor, tidyRSS,
+        purrr, dplyr, rstac, curl, sf, rappdirs, zip
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://felixluginbuhl.com/BFS/, https://github.com/lgnbhl/BFS/
+BugReports: https://github.com/lgnbhl/BFS/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-09-13 07:46:11 UTC; felix
+Author: Felix Luginbuhl [aut, cre],
+  Janosch Brenzel-Weiss [ctb]
+Repository: CRAN
+Date/Publication: 2023-09-13 13:02:37 UTC

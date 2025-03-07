@@ -1,0 +1,38 @@
+Package: ao
+Title: Alternating Optimization
+Version: 1.0.0
+Authors@R: 
+    c(
+    person(given = "Lennart",
+           family = "Oelschl\U00E4ger",
+           role = c("aut", "cre"),
+           email = "oelschlaeger.lennart@gmail.com",
+           comment = c(ORCID = "0000-0001-5421-9313")),
+    person(given = "Siddhartha", 
+           family = "Chib", 
+           role = "ctb",
+           email = "chib@wustl.edu")
+    )
+Description: Alternating optimization is an iterative procedure that optimizes 
+    a function by alternately performing restricted optimization over individual 
+    parameter subsets. Instead of tackling joint optimization directly, it 
+    breaks the problem down into simpler sub-problems. This approach can make 
+    optimization feasible when joint optimization is too difficult.
+URL: https://loelschlaeger.de/ao/, https://github.com/loelschlaeger/ao/
+BugReports: https://github.com/loelschlaeger/ao/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: checkmate, cli, oeli (>= 0.5.2), R6, stats, utils
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0), optimizeR (>= 1.1.1)
+NeedsCompilation: no
+Packaged: 2024-06-20 13:06:11 UTC; Lennart Oelschläger
+Author: Lennart Oelschläger [aut, cre]
+    (<https://orcid.org/0000-0001-5421-9313>),
+  Siddhartha Chib [ctb]
+Maintainer: Lennart Oelschläger <oelschlaeger.lennart@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-20 13:20:02 UTC

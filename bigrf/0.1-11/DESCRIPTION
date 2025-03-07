@@ -1,0 +1,38 @@
+Package: bigrf
+Version: 0.1-11
+Date: 2014-05-16
+Title: Big Random Forests: Classification and Regression Forests for
+        Large Data Sets
+Authors@R: c(person("Aloysius", "Lim", role = c("aut", "cre"),
+                    email="aloysius.lim@gmail.com"),
+             person("Leo", "Breiman", role = "aut"),
+             person("Adele", "Cutler", role = "aut"))
+Maintainer: Aloysius Lim <aloysius.lim@gmail.com>
+OS_type: unix
+Depends: R (>= 2.14), methods, bigmemory
+Imports: foreach
+Suggests: MASS, doParallel
+LinkingTo: bigmemory, BH
+Description: This is an implementation of Leo Breiman's and Adele Cutler's
+  Random Forest algorithms for classification and regression, with optimizations
+  for performance and for handling of data sets that are too large to be
+  processed in memory. Forests can be built in parallel at two levels. First,
+  trees can be grown in parallel on a single machine using foreach. Second,
+  multiple forests can be built in parallel on multiple machines, then merged
+  into one. For large data sets, disk-based big.matrix's may be used for storing
+  data and intermediate computations, to prevent excessive virtual memory
+  swapping by the operating system. Currently, only classification forests with
+  a subset of the functionality in Breiman and Cutler's original code are
+  implemented. More functionality and regression trees may be added in the
+  future.
+License: GPL-3
+Copyright: 2013-2014 Aloysius Lim
+URL: https://github.com/aloysius-lim/bigrf
+BugReports: https://github.com/aloysius-lim/bigrf/issues
+Packaged: 2014-05-15 18:24:59 UTC; aloysius
+Author: Aloysius Lim [aut, cre],
+  Leo Breiman [aut],
+  Adele Cutler [aut]
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-05-16 07:52:54

@@ -1,0 +1,36 @@
+Package: zoomerjoin
+Title: Superlatively Fast Fuzzy Joins
+Version: 0.1.4
+Authors@R: c(
+    person("Beniamino", "Green", , "beniamino.green@yale.edu", role = c("aut", "cre", "cph")),
+    person("Etienne", "Bacher", email = "etienne.bacher@protonmail.com", role = "ctb"),
+    person(given = "The authors of the dependency Rust crates",
+             role = c("ctb", "cph"),
+             comment = "see inst/AUTHORS file for details")
+    )
+Description: Empowers users to fuzzily-merge data frames with millions or tens of millions of rows in minutes with low memory usage.  The package uses the locality sensitive hashing algorithms developed by Datar, Immorlica, Indyk and Mirrokni (2004) <doi:10.1145/997817.997857>, and Broder (1998) <doi:10.1109/SEQUEN.1997.666900> to avoid having to compare every pair of records in each dataset, resulting in fuzzy-merges that finish in linear time.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+SystemRequirements: Cargo (>= 1.56) (Rust's package manager), rustc
+Imports: dplyr, tibble, tidyr
+Suggests: babynames, covr, fuzzyjoin, igraph, knitr, rmarkdown,
+        stringdist, testthat (>= 3.0.0), tidyverse, purrr,
+        microbenchmark, profmem
+Config/testthat/edition: 3
+URL: https://beniamino.org/zoomerjoin/
+BugReports: https://github.com/beniaminogreen/zoomerjoin/issues/
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+LazyDataCompression: xz
+Config/rextendr/version: 0.3.1.9000
+NeedsCompilation: yes
+Packaged: 2024-01-29 01:44:30 UTC; beniamino
+Author: Beniamino Green [aut, cre, cph],
+  Etienne Bacher [ctb],
+  The authors of the dependency Rust crates [ctb, cph] (see inst/AUTHORS
+    file for details)
+Maintainer: Beniamino Green <beniamino.green@yale.edu>
+Repository: CRAN
+Date/Publication: 2024-01-31 15:30:02 UTC

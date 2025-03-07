@@ -1,0 +1,60 @@
+Package: TestDesign
+Type: Package
+Title: Optimal Test Design Approach to Fixed and Adaptive Test
+        Construction
+Version: 1.3.4
+Date: 2022-07-21
+Authors@R: c(
+    person("Seung W.", "Choi",
+        email = "schoi@austin.utexas.edu",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-4777-5420")),
+    person("Sangdon", "Lim",
+        email = "sangdonlim@utexas.edu",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-2988-014X")))
+Maintainer: Seung W. Choi <schoi@austin.utexas.edu>
+Description: Uses the optimal test design approach by Birnbaum (1968, ISBN:9781593119348) and
+    van der Linden (2018) <doi:10.1201/9781315117430> to construct fixed, adaptive, and parallel tests.
+    Supports the following mixed-integer programming (MIP) solver packages: 'lpsymphony', 'Rsymphony',
+    'gurobi', 'lpSolve', and 'Rglpk'. The 'gurobi' package is not available from CRAN; see <https://www.gurobi.com/downloads/>. 
+URL: https://choi-phd.github.io/TestDesign/ (documentation)
+BugReports: https://github.com/choi-phd/TestDesign/issues/
+License: GPL (>= 2)
+Depends: R (>= 2.10)
+biocViews:
+Imports: Rcpp (>= 1.0.0), methods, lpSolve, foreach, logitnorm, crayon
+SystemRequirements: C++11
+Suggests: lpsymphony, Rsymphony, gurobi, Rglpk, mirt, mirtCAT,
+        progress, shiny, shinythemes, shinyWidgets, shinyjs, DT, knitr,
+        rmarkdown, kableExtra, testthat (>= 2.1.0), pkgdown, pkgload
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+Collate: 'RcppExports.R' 'import.R' 'extensions.R' 'item_class.R'
+        'calc_prob_functions.r' 'calc_escore_functions.r'
+        'calc_location_functions.r' 'calc_fisher_functions.r'
+        'calc_loglikelihood_functions.r' 'calc_jacobian_functions.r'
+        'calc_hessian_functions.r' 'sim_resp_functions.r'
+        'loading_functions.R' 'static_class.R' 'shadow_class.R'
+        'item_pool_operators.R' 'item_attrib_operators.R'
+        'st_attrib_operators.R' 'constraints_operators.R'
+        'static_functions.R' 'shadow_functions.R' 'bayes_functions.R'
+        'constraint_functions.R' 'cpp_documents.R' 'datasets.R'
+        'eligibility_functions.R' 'exposure_control_functions.R'
+        'solver_functions.R' 'helper_functions.R'
+        'item_pool_cluster_operators.R' 'other_functions.R'
+        'partitioning_class.r' 'partitioning_functions.r'
+        'plot_functions.R' 'summary_class.R' 'print_functions.R'
+        'runshiny.R' 'shadowtest_functions.R' 'summary_functions.R'
+        'show_functions.R' 'simulation_data_cache_class.r'
+        'simulation_data_cache_operators.r' 'theta_functions.R'
+        'xdata_functions.R'
+NeedsCompilation: yes
+Packaged: 2022-07-21 23:21:49 UTC; chois1
+Author: Seung W. Choi [aut, cre] (<https://orcid.org/0000-0003-4777-5420>),
+  Sangdon Lim [aut] (<https://orcid.org/0000-0002-2988-014X>)
+Repository: CRAN
+Date/Publication: 2022-07-22 06:10:11 UTC

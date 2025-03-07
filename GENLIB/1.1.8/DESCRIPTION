@@ -1,0 +1,34 @@
+Package: GENLIB
+Type: Package
+Title: Genealogical Data Analysis
+Version: 1.1.8
+Date: 2022-12-07
+Authors@R: c( person("Louis",			 "Houde",        role="aut"),
+		    person("Jean-Francois",	"Lefebvre",	role="aut", email="jf_lef@yahoo.ca"),
+		    person("Valery",		"Roy-Lagace",	role="aut"),
+		    person("Sebastien",		"Lemieux",	role="aut"),
+		    person("Michael J.",		"Fromberger",	role="ctb"),
+		    person("Jarno",		"van der Kolk",	role="ctb"),
+        person("Mohan",   "Rakesh", role="ctb"),
+		    person("Marie-Helene",	"Roy-Gagnon",	role="cre", email="mroygagn@uottawa.ca"))
+Description: Genealogical data analysis including descriptive statistics (e.g., kinship and inbreeding coefficients) and gene-dropping simulations. See: "GENLIB: an R package for the analysis of genealogical data" Gauvin et al. (2015) <doi:10.1186/s12859-015-0581-5>.
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 3.1.0), Rcpp (>= 0.9.10)
+Imports: kinship2, methods, bootstrap, Matrix, lattice, quadprog,
+        foreach, parallel, doParallel
+LinkingTo: Rcpp, BH
+NeedsCompilation: yes
+Author: Louis Houde [aut],
+  Jean-Francois Lefebvre [aut],
+  Valery Roy-Lagace [aut],
+  Sebastien Lemieux [aut],
+  Michael J. Fromberger [ctb],
+  Jarno van der Kolk [ctb],
+  Mohan Rakesh [ctb],
+  Marie-Helene Roy-Gagnon [cre]
+Maintainer: Marie-Helene Roy-Gagnon <mroygagn@uottawa.ca>
+Repository: CRAN
+RoxygenNote: 7.1.2
+Packaged: 2022-12-13 04:35:12 UTC; Mohan
+Date/Publication: 2022-12-13 14:20:02 UTC

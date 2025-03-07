@@ -1,0 +1,57 @@
+Package: nexus
+Title: Sourcing Archaeological Materials by Chemical Composition
+Version: 0.3.0
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944", affiliation = "Université Bordeaux Montaigne")),
+    person("Anne", "Philippe", , "anne.philippe@univ-nantes.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-5331-5087", affiliation = "Université de Nantes")),
+    person("Brice", "Lebrun", , "brice.lebrun@u-bordeaux-montaigne.fr", role = "ctb",
+           comment = c(ORCID = "0000-0001-7503-8685", "Logo designer")),
+    person("Arthur", "Leck", , "arthur.leck@u-bordeaux-montaigne.fr", role = "ctb",
+           comment = c(ORCID = "0009-0004-8819-9970", affiliation = "Université Bordeaux Montaigne")),
+    person("Université Bordeaux Montaigne", role = "fnd"),
+    person("CNRS", role = "fnd")
+  )
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: Exploration and analysis of compositional data in the
+    framework of Aitchison (1986, ISBN: 978-94-010-8324-9). This package
+    provides tools for chemical fingerprinting and source tracking of
+    ancient materials.
+License: GPL (>= 3)
+URL: https://packages.tesselle.org/nexus/,
+        https://github.com/tesselle/nexus
+BugReports: https://github.com/tesselle/nexus/issues
+Depends: R (>= 3.5), dimensio (>= 0.9.0)
+Imports: arkhe (>= 1.7.0), graphics, grDevices, isopleuros (>= 1.2.0),
+        khroma (>= 1.14.0), methods, MASS, stats, utils
+Suggests: cluster, folio (>= 1.5.0), igraph, knitr, markdown, rsvg,
+        svglite, tinysnapshot, tinytest
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Collate: 'AllClasses.R' 'AllGenerics.R' 'aggregate.R' 'barplot.R'
+        'chemistry.R' 'coerce.R' 'condense.R' 'covariance.R' 'data.R'
+        'describe.R' 'dist.R' 'graph.R' 'group.R' 'hist.R' 'margin.R'
+        'mean.R' 'mix.R' 'mutators.R' 'nexus-internal.R'
+        'nexus-package.R' 'outliers.R' 'pca.R' 'plot.R' 'quantile.R'
+        'reexport.R' 'replace.R' 'scale.R' 'show.R' 'simplex.R'
+        'split.R' 'subset.R' 'summary.R' 'transform_alr.R'
+        'transform_clr.R' 'transform_ilr.R' 'transform_inverse.R'
+        'transform_lr.R' 'transform_plr.R' 'validate.R' 'variance.R'
+        'variation.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2024-09-03 14:59:11 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>,
+    Université Bordeaux Montaigne),
+  Anne Philippe [aut] (<https://orcid.org/0000-0002-5331-5087>,
+    Université de Nantes),
+  Brice Lebrun [ctb] (<https://orcid.org/0000-0001-7503-8685>, Logo
+    designer),
+  Arthur Leck [ctb] (<https://orcid.org/0009-0004-8819-9970>, Université
+    Bordeaux Montaigne),
+  Université Bordeaux Montaigne [fnd],
+  CNRS [fnd]
+Repository: CRAN
+Date/Publication: 2024-09-03 15:20:02 UTC

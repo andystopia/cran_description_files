@@ -1,0 +1,39 @@
+Package: statsgrokse
+Title: R 'API' Binding to Stats.grok.se Server
+Version: 0.1.4
+Date: 2017-03-24
+Authors@R: c(
+    person(
+      given  = "Peter", 
+      middle = NULL, 
+      family = "Meissner",
+      email  = "retep.meissner@gmail.com",
+      role   = c("aut", "cre")
+    ),
+    person(
+      family  = "R Core Team", 
+      role    = c("ctb"),
+      comment = "wp_date() generic and its methods are copies/adoptions from 
+      base-R versions of as.Date(). See ?wp_date for details."
+    )
+  )
+Maintainer: Peter Meissner <retep.meissner@gmail.com>
+Description: The <http://stats.grok.se> server
+    provides data and an 'API' for Wikipedia page view statistics from 
+    2008 up to 2015. This package provides R bindings to the 'API'. 
+License: GPL (>= 2)
+Depends: R (>= 3.0.0)
+Imports: jsonlite (>= 1.3.0), stringr (>= 1.2.0), httr (>= 1.2.1),
+        utils
+Suggests: testthat, knitr
+BugReports: https://github.com/petermeissner/statsgrokse/issues
+URL: https://github.com/petermeissner/statsgrokse
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-03-24 19:06:22 UTC; peter
+Author: Peter Meissner [aut, cre],
+  R Core Team [ctb] (wp_date() generic and its methods are
+    copies/adoptions from base-R versions of as.Date(). See ?wp_date
+    for details.)
+Repository: CRAN
+Date/Publication: 2017-03-24 19:17:28 UTC

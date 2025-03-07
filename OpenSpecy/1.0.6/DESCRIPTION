@@ -1,0 +1,114 @@
+Package: OpenSpecy
+Type: Package
+Title: Analyze, Process, Identify, and Share Raman and (FT)IR Spectra
+Version: 1.0.6
+Date: 2023-11-25
+Authors@R: c(person("Win", "Cowger", role = c("cre", "aut", "dtc"),
+      email = "wincowger@gmail.com",
+      comment = c(ORCID = "0000-0001-9226-3104")),
+    person("Zacharias", "Steinmetz", role = c("aut"),
+      email = "z.steinmetz@rptu.de",
+      comment = c(ORCID = "0000-0001-6675-5033")),
+    person("Nick", "Leong", role = c("aut"),
+      comment = c(ORCID = "0009-0008-3313-4132")),
+    person("Andrea", "Faltynkova", role = c("aut", "dtc"),
+      comment = c(ORCID = "0000-0003-2523-3137")),
+    person("Andrew B", "Gray", role = c("ctb"),
+      comment = c(ORCID = "0000-0003-2252-7367")), 
+    person("Hannah", "Hapich", role = c("ctb"),
+      comment = c(ORCID = "0000-0003-0000-6632")),
+    person("Jennifer", "Lynch", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0003-3572-8782")),
+    person("Hannah", "De Frond", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0003-1199-0727")),
+    person("Keenan", "Munno", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0003-2916-5944")),
+    person("Chelsea", "Rochman", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0002-7624-711X")),
+    person("Sebastian", "Primpke", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0001-7633-8524")),
+    person("Orestis", "Herodotou", role = c("ctb")),
+    person("Mary C", "Norris", role = c("ctb")),
+    person("Christine M", "Knauss", role = c("ctb"), 
+      comment = c(ORCID = "0000-0003-4404-8922")), 
+    person("Aleksandra", "Karapetrova", role = c("ctb", "dtc", "rev"),
+      comment = c(ORCID = "0000-0002-9856-1644")),
+    person("Vesna", "Teofilovic", role = c("ctb"),
+      comment = c(ORCID = "0000-0002-3557-1482")),
+    person("Laura A. T.", "Markley", role = c("ctb"),
+      comment = c(ORCID = "0000-0003-0620-8366")),
+    person("Shreyas", "Patankar", role = c("ctb", "dtc")),
+    person("Rachel", "Kozloski", role = c("ctb", "dtc"),
+      comment = c(ORCID = "0000-0003-1211-9351")),
+    person("Samiksha", "Singh", role = c("ctb")),
+    person("Katherine", "Lasdin", role = c("ctb")),
+    person("Cristiane", "Vidal", role = c("ctb"), 
+      comment = c(ORCID = "0000-0001-6363-9475")),
+    person("Clare", "Murphy-Hagan", role = c("ctb"), 
+      comment = c(ORCID = "0009-0009-9629-2856")),
+    person("Philipp", "Baumann", role = c("ctb"),
+      email = "info@spectral-cockpit.space",
+      comment = c(ORCID = "0000-0002-3194-8975")),
+    person("Pierre", "Roudier", role = c("ctb")),
+    person("National Renewable Energy Laboratory", role = c("fnd")), 
+    person("Possibility Lab", role = c("fnd")))
+Description: Raman and (FT)IR spectral analysis tool for plastic particles and
+    other environmental samples (Cowger et al. 2021,
+    <doi:10.1021/acs.analchem.1c00123>). With read_any(), Open Specy provides a
+    single function for reading individual, batch, or map spectral data files
+    like .asp, .csv, .jdx, .spc, .spa, .0, and .zip. process_spec() simplifies
+    processing spectra, including smoothing, baseline correction,
+    range restriction and flattening, intensity conversions, wavenumber
+    alignment, and min-max normalization. Spectra can be identified in batch
+    using an onboard reference library (Cowger et al. 2020,
+    <doi:10.1177/0003702820929064>) using match_spec(). A Shiny app is available
+    via run_app() or online at <https://openanalysis.org/openspecy/>.
+URL: https://github.com/wincowgerDEV/OpenSpecy-package/,
+        http://wincowger.com/OpenSpecy-package/
+BugReports: https://github.com/wincowgerDEV/OpenSpecy-package/issues/
+License: CC BY 4.0
+Encoding: UTF-8
+LazyLoad: true
+LazyData: true
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+Imports: methods, data.table, jsonlite, yaml, osfr, caTools, hyperSpec,
+        imager, plotly, digest, signal, glmnet, shiny
+Suggests: knitr, rmarkdown, testthat (>= 3.1.9), config, qs, shinyjs,
+        shinyWidgets, bs4Dash, dplyr, ggplot2, DT, curl, aws.s3,
+        mongolite, loggit
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-25 12:55:52 UTC; zacharias
+Author: Win Cowger [cre, aut, dtc] (<https://orcid.org/0000-0001-9226-3104>),
+  Zacharias Steinmetz [aut] (<https://orcid.org/0000-0001-6675-5033>),
+  Nick Leong [aut] (<https://orcid.org/0009-0008-3313-4132>),
+  Andrea Faltynkova [aut, dtc] (<https://orcid.org/0000-0003-2523-3137>),
+  Andrew B Gray [ctb] (<https://orcid.org/0000-0003-2252-7367>),
+  Hannah Hapich [ctb] (<https://orcid.org/0000-0003-0000-6632>),
+  Jennifer Lynch [ctb, dtc] (<https://orcid.org/0000-0003-3572-8782>),
+  Hannah De Frond [ctb, dtc] (<https://orcid.org/0000-0003-1199-0727>),
+  Keenan Munno [ctb, dtc] (<https://orcid.org/0000-0003-2916-5944>),
+  Chelsea Rochman [ctb, dtc] (<https://orcid.org/0000-0002-7624-711X>),
+  Sebastian Primpke [ctb, dtc] (<https://orcid.org/0000-0001-7633-8524>),
+  Orestis Herodotou [ctb],
+  Mary C Norris [ctb],
+  Christine M Knauss [ctb] (<https://orcid.org/0000-0003-4404-8922>),
+  Aleksandra Karapetrova [ctb, dtc, rev]
+    (<https://orcid.org/0000-0002-9856-1644>),
+  Vesna Teofilovic [ctb] (<https://orcid.org/0000-0002-3557-1482>),
+  Laura A. T. Markley [ctb] (<https://orcid.org/0000-0003-0620-8366>),
+  Shreyas Patankar [ctb, dtc],
+  Rachel Kozloski [ctb, dtc] (<https://orcid.org/0000-0003-1211-9351>),
+  Samiksha Singh [ctb],
+  Katherine Lasdin [ctb],
+  Cristiane Vidal [ctb] (<https://orcid.org/0000-0001-6363-9475>),
+  Clare Murphy-Hagan [ctb] (<https://orcid.org/0009-0009-9629-2856>),
+  Philipp Baumann [ctb] (<https://orcid.org/0000-0002-3194-8975>),
+  Pierre Roudier [ctb],
+  National Renewable Energy Laboratory [fnd],
+  Possibility Lab [fnd]
+Maintainer: Win Cowger <wincowger@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-25 23:50:02 UTC

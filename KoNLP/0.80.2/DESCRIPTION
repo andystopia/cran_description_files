@@ -1,0 +1,30 @@
+Package: KoNLP
+Maintainer: Heewon Jeon <madjakarta@gmail.com>
+License: GPL-3
+Title: Korean NLP Package
+Authors@R: c(
+    person("Heewon", "Jeon", email = "madjakarta@gmail.com", role = c("aut", "cre")),
+    person("Taekyung", "Kim", role = "ctb")
+    )
+Description: POS Tagger and Morphological Analyzer for Korean text based research. It provides tools for corpus linguistics research such as Keystroke converter, Hangul automata, Concordance, and Mutual Information. It also provides a convenient interface for users to apply, edit and add morphological dictionary selectively. 
+SystemRequirements: Java (>= 1.6)
+URL: https://github.com/haven-jeon/KoNLP
+BugReports: https://github.com/haven-jeon/KoNLP/issues
+Version: 0.80.2
+Repository: CRAN
+Date: 2016-11-21
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+Depends: R(>= 3.3.1)
+Imports: rJava (>= 0.9-8), utils (>= 3.3.1), stringr (>= 1.1.0), hash
+        (>= 2.2.6), tau (>= 0.0-18), Sejong (>= 0.01), RSQLite (>=
+        1.0.0), devtools (>= 1.12.0)
+Collate: 'onLoad.R' 'manageDic.R' 'hangulUtils.R' 'koAnalyzerRun.R'
+        'tagdata.R' 'Concordances.R' 'utils.R'
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-01-18 12:23:11 UTC; ripley
+Author: Heewon Jeon [aut, cre],
+  Taekyung Kim [ctb]
+Date/Publication: 2020-01-18 12:33:07 UTC

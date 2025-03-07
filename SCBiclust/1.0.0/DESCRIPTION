@@ -1,0 +1,18 @@
+Package: SCBiclust
+Title: Identifies Mean, Variance, and Hierarchically Clustered
+        Biclusters
+Version: 1.0.0
+Date: 2019-03-27
+Author: Erika S. Helgeson, Qian Liu, Guanhua Chen, Michael R. Kosorok , and Eric Bair
+Maintainer: Erika S. Helgeson <helge@umn.edu>
+Description: Identifies a bicluster, a submatrix of the data such that the features and observations within the submatrix differ from those not contained in submatrix, using a two-step method. In the first step, observations in the bicluster are  identified to maximize the sum of weighted between cluster feature differences. The observations are identified in a similar fashion as in Witten and Tibshirani (2010) <doi:10.1198/jasa.2010.tm09415> except with a modified objective function and no feature sparsity constraint. In the second step, features in the bicluster are identified based on their contribution to the clustering of the observations. The cluster significance test of Liu, Hayes, Nobel, and Marron (2008): <doi:10.1198/016214508000000454> can then be used to test the strength of the identified bicluster. 'SCBiclust' can be used to identify biclusters which differ based on feature means, feature variances, or more general differences. 
+Depends: R (>= 3.4.0)
+Imports: sparcl, sigclust
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2019-04-01 16:51:45 UTC; eshel
+Repository: CRAN
+Date/Publication: 2019-04-02 15:50:07 UTC

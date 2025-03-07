@@ -1,0 +1,29 @@
+Package: albatross
+Type: Package
+Title: PARAFAC Analysis of Fluorescence Excitation-Emission Matrices
+Version: 0.3-7
+Authors@R: c(person('Ivan', 'Krylov', role = c('aut', 'cre'), email =
+	'ikrylov@laser.chem.msu.ru'), person('Timur', 'Labutin', role = 'ths'),
+	person('Anastasia', 'Drozdova', role = 'rev'))
+Depends: R (>= 3.3)
+Imports: multiway (>= 1.0-4), CMLS, pracma, lattice, parallel, Matrix
+Enhances: eemR, EEM
+Description: Perform parallel factor analysis (PARAFAC: Hitchcock, 1927)
+	<doi:10.1002/sapm192761164> on fluorescence excitation-emission
+	matrices: handle scattering signal and inner filter effect, scale
+	the dataset, fit the model; perform split-half validation or
+	jack-knifing. Modified approaches such as Whittaker interpolation,
+	randomised split-half, and fluorescence and scattering model
+	estimation are also available. The package has a low dependency
+	footprint and has been tested on a wide range of R versions.
+License: GPL (>= 3)
+BuildResaveData: no
+BuildManual: yes
+NeedsCompilation: no
+Packaged: 2023-11-10 18:43:10 UTC; nobody
+Author: Ivan Krylov [aut, cre],
+  Timur Labutin [ths],
+  Anastasia Drozdova [rev]
+Maintainer: Ivan Krylov <ikrylov@laser.chem.msu.ru>
+Repository: CRAN
+Date/Publication: 2023-11-10 21:03:18 UTC

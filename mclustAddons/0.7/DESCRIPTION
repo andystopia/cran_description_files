@@ -1,0 +1,32 @@
+Package: mclustAddons
+Version: 0.7
+Date: 2022-11-12
+Title: Addons for the 'mclust' Package
+Description: Extend the functionality of the 'mclust' package for 
+  Gaussian finite mixture modeling by including: 
+  density estimation for data with bounded support 
+  (Scrucca, 2019 <doi:10.1002/bimj.201800174>);
+  modal clustering using MEM algorithm for Gaussian mixtures 
+  (Scrucca, 2021 <doi:10.1002/sam.11527>);
+  entropy estimation via Gaussian mixture modeling
+  (Robin & Scrucca, 2023 <doi:10.1016/j.csda.2022.107582>).
+Authors@R: c(person("Luca", "Scrucca", role = c("aut", "cre"), 
+                    email = "luca.scrucca@unipg.it"))
+Depends: R (>= 4.0), mclust (>= 5.4)
+Imports: stats, graphics, grDevices, methods, foreach, iterators,
+        utils, Rcpp (>= 0.12)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: parallel, doParallel, doRNG (>= 1.6), cli, crayon, knitr (>=
+        1.12), rmarkdown (>= 0.9)
+License: GPL (>= 2)
+URL: https://mclust-org.github.io/mclustAddons/
+VignetteBuilder: knitr
+Repository: CRAN
+ByteCompile: true
+NeedsCompilation: yes
+LazyData: yes
+Encoding: UTF-8
+Packaged: 2022-11-13 12:37:54 UTC; luca
+Author: Luca Scrucca [aut, cre]
+Maintainer: Luca Scrucca <luca.scrucca@unipg.it>
+Date/Publication: 2022-11-15 19:20:02 UTC

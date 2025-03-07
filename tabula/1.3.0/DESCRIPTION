@@ -1,0 +1,80 @@
+Package: tabula
+Title: Analysis, Seriation and Visualization of Archaeological Count
+        Data
+Version: 1.3.0
+Authors@R: 
+    c(person(given = "Nicolas",
+             family = "Frerebeau",
+             role = c("aut", "cre"),
+             email = "nicolas.frerebeau@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "https://orcid.org/0000-0001-5759-4944")),
+      person(given = "Brice",
+             family = "Lebrun",
+             role = "ctb",
+             email = "brice.lebrun@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "https://orcid.org/0000-0001-7503-8685")),
+      person(given = "Matthew",
+             family = "Peeples",
+             role = "ctb",
+             email = "matthew.peeples@asu.edu",
+             comment = c(ORCID = "https://orcid.org/0000-0003-4496-623X")),
+      person(given = "Ben",
+             family = "Marwick",
+             role = "ctb",
+             email = "bmarwick@uw.edu",
+             comment = c(ORCID = "https://orcid.org/0000-0001-7879-4531")),
+      person(given = "Anne",
+             family = "Philippe",
+             role = "ctb",
+             email = "anne.philippe@univ-nantes.fr"),
+      person(given = "Jean-Baptiste",
+             family = "Fourvel",
+             role = "ctb",
+             email = "jbfourvel@yahoo.com",
+             comment = c(ORCID = "https://orcid.org/0000-0002-1061-4642")))
+Maintainer: Nicolas Frerebeau
+ <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: An easy way to examine archaeological count data. This package 
+    provides a convenient and reproducible toolkit for relative and absolute 
+    dating and analysis of (chronological) patterns. It includes functions for 
+    matrix seriation (reciprocal ranking, CA-based seriation), chronological 
+    modeling and dating of archaeological assemblages and/or objects. 
+    Beyond these, the package provides several tests and measures of diversity: 
+    heterogeneity and evenness (Brillouin, Shannon, Simpson, etc.), 
+    richness and rarefaction (Chao1, Chao2, ACE, ICE, etc.), 
+    turnover and similarity (Brainerd-Robinson, etc.). 
+    The package make it easy to visualize count data and statistical thresholds: 
+    rank vs. abundance plots, heatmaps, Ford (1962) and Bertin (1977) diagrams.
+License: GPL-3
+URL: http://tabula.archaeo.science,
+        http://github.com/nfrerebeau/tabula,
+        https://cran.r-project.org/package=tabula
+BugReports: http://github.com/nfrerebeau/tabula/issues
+Depends: R (>= 3.2)
+Imports: ca (>= 0.71), ggplot2 (>= 3.2.1), grDevices, methods, rlang
+        (>= 0.4.0), stats, utils
+Suggests: covr (>= 3.3.1), khroma (>= 1.2.0), knitr, magrittr (>= 1.5),
+        pbapply (>= 1.4-2), rmarkdown, testthat (>= 2.2.1), vdiffr (>=
+        0.3.1)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Collate: 'utilities.R' 'AllClasses.R' 'AllGenerics.R' 'predicates.R'
+        'check.R' 'coerce.R' 'data.R' 'date.R' 'deprecate.R'
+        'extract.R' 'index-diversity.R' 'index-rarefaction.R'
+        'index-richness.R' 'index-similarity.R' 'index-turnover.R'
+        'plot-prepare.R' 'plot-bar.R' 'plot-date.R' 'plot-matrix.R'
+        'plot-rank.R' 'plot-spot.R' 'plot-time.R' 'refine.R'
+        'seriation.R' 'seriate.R' 'show.R' 'statistics.R'
+        'tabula-package.R' 'test.R' 'validate.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2019-09-20 13:44:08 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>),
+  Brice Lebrun [ctb] (<https://orcid.org/0000-0001-7503-8685>),
+  Matthew Peeples [ctb] (<https://orcid.org/0000-0003-4496-623X>),
+  Ben Marwick [ctb] (<https://orcid.org/0000-0001-7879-4531>),
+  Anne Philippe [ctb],
+  Jean-Baptiste Fourvel [ctb] (<https://orcid.org/0000-0002-1061-4642>)
+Repository: CRAN
+Date/Publication: 2019-09-20 16:40:02 UTC

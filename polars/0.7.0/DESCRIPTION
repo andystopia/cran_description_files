@@ -1,0 +1,53 @@
+Package: polars
+Title: Lightning-Fast 'DataFrame' Library
+Version: 0.7.0
+Depends: R (>= 4.1.0)
+Imports: utils, codetools
+Authors@R: 
+  c(person("Ritchie", "Vink", , "ritchie46@gmail.com", role = c("aut")),
+    person("Soren", "Welling", , "sorhawell@gmail.com", role = c("aut")),
+    person("Tatsuya", "Shima", , "ts1s1andn@gmail.com", role = c("aut", "cre")),
+    person("Etienne", "Bacher", , "etienne.bacher@protonmail.com", role = c("ctb")))
+Description: Lightning-fast 'DataFrame' library written in 'Rust'. Convert R data
+  to 'Polars' data and vice versa. Perform fast, lazy, larger-than-memory and
+  optimized data queries. 'Polars' is interoperable with the package 'arrow',
+  as both are based on the 'Apache Arrow' Columnar Format.
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: Cargo (rustc package manager), cmake
+URL: https://github.com/pola-rs/r-polars
+        https://rpolars.r-universe.dev/polars
+Suggests: arrow, bench, bit64, data.table, knitr, lubridate, nanoarrow,
+        nycflights13, patrick, pillar, rmarkdown, testthat (>= 3.0.0),
+        tibble, withr
+Config/Needs/website: etiennebacher/altdoc, here, magrittr, pkgload,
+        yaml
+Config/Needs/dev: brio, devtools, RcppTOML, rextendr,
+        robinlovelace/styler.equals, spelling, stringr, styler
+Config/testthat/edition: 3
+Collate: 'utils.R' 'extendr-wrappers.R' 'after-wrappers.R' 'Field.R'
+        'PTime.R' 'autocompletion.R' 'construction.R' 'convert.R'
+        'csv.R' 'dataframe__frame.R' 'datatype.R' 'docs.R'
+        'error__rpolarserr.R' 'error__string.R' 'error__trait.R'
+        'error_conversion.R' 'expr__binary.R' 'expr__categorical.R'
+        'expr__datetime.R' 'expr__expr.R' 'expr__list.R' 'expr__meta.R'
+        'expr__string.R' 'expr__struct.R' 'functions__eager.R'
+        'functions__lazy.R' 'functions__whenthen.R' 'groupby.R'
+        'info.R' 'ipc.R' 'lazyframe__background.R'
+        'lazyframe__groupby.R' 'lazyframe__lazy.R' 'namespace.R'
+        'options.R' 'parquet.R' 'pkg-knitr.R' 'pkg-nanoarrow.R'
+        'rlang.R' 'rust_result.R' 's3_methods.R' 'series__series.R'
+        'translation.R' 'vctrs.R' 'zzz.R'
+Config/rextendr/version: 0.3.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-07-15 22:14:33 UTC; rstudio
+Author: Ritchie Vink [aut],
+  Soren Welling [aut],
+  Tatsuya Shima [aut, cre],
+  Etienne Bacher [ctb]
+Maintainer: Tatsuya Shima <ts1s1andn@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-07-17 14:00:02 UTC

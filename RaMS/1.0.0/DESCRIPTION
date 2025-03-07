@@ -1,0 +1,29 @@
+Package: RaMS
+Type: Package
+Title: R Access to Mass-Spec Data
+Version: 1.0.0
+Authors@R: person(given = "William", family = "Kumler", 
+                  email = "wkumler@uw.edu",
+                  role = c("aut", "cre", "cph"))
+Maintainer: William Kumler <wkumler@uw.edu>
+Description: R-based access to mass-spectrometry (MS) data. While many packages 
+  exist to process MS data, many of these make it difficult to 
+  access the underlying mass-to-charge ratio (m/z), intensity, and 
+  retention time of the files 
+  themselves. This package is designed to format MS data in a tidy fashion and 
+  allows the user perform the plotting and analysis.
+License: MIT + file LICENSE
+URL: https://github.com/wkumler/RaMS
+BugReports: https://github.com/wkumler/RaMS/issues
+Encoding: UTF-8
+LazyData: true
+Imports: xml2, base64enc, data.table, utils
+RoxygenNote: 7.1.1
+Suggests: testthat, knitr, rmarkdown, tidyverse, plotly, openxlsx, DBI,
+        RSQLite, reticulate
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-03-21 21:57:14 UTC; willi
+Author: William Kumler [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2021-03-22 16:00:02 UTC

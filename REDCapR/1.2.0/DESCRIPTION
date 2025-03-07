@@ -1,0 +1,76 @@
+Package: REDCapR
+Title: Interaction Between R and REDCap
+Description: Encapsulates functions to streamline calls from R to the REDCap
+    API.  REDCap (Research Electronic Data CAPture) is a web application for
+    building and managing online surveys and databases developed at Vanderbilt
+    University.  The Application Programming Interface (API) offers an avenue
+    to access and modify data programmatically, improving the capacity for
+    literate and reproducible programming.
+Version: 1.2.0
+Authors@R: c(person("Will", "Beasley", role = c("aut", "cre"), email =
+    "wibeasley@hotmail.com", comment = c(ORCID = "0000-0002-5613-5006")),
+    person("David", "Bard", role = "ctb", comment = c(ORCID = "0000-0002-3922-8489")),
+    person("Thomas", "Wilson", role = "ctb"), person(given="John J",
+    family="Aponte", role = "ctb", email="john.aponte@isglobal.org"),
+    person("Rollie", "Parrish", role = "ctb", email =
+    "rparrish@flightweb.com", comment = c(ORCID = "0000-0001-8858-6381")),
+    person("Benjamin", "Nutter",
+    role = "ctb"), person("Andrew", "Peters",
+    role = "ctb", comment = c(ORCID = "0000-0003-2487-1268")), person("Hao", "Zhu",
+    role = "ctb",
+    comment = c(ORCID = "0000-0002-3386-6076")), person("Janosch", "Linkersdörfer",
+    role = "ctb",
+    comment = c(ORCID = "0000-0002-1577-1233")), person("Jonathan", "Mang",
+    role = "ctb",
+    comment = c(ORCID = "0000-0003-0518-4710")), person("Felix", "Torres",
+    role = "ctb", email = "fetorres@ucsd.edu"), person("Philip", "Chase",
+    role = "ctb", email = "pbc@ufl.edu",
+    comment = c(ORCID = "0000-0002-5318-9420")), person("Victor", "Castro",
+    role = "ctb", email = "vcastro@mgh.harvard.edu",
+    comment = c(ORCID = "0000-0001-7390-6354")), person("Greg", "Botwin",
+    role = "ctb"), person("Stephan", "Kadauke",
+    role = "ctb",
+    comment = c(ORCID = "0000-0003-2996-8034")), person("Ezra", "Porter",
+    role = "ctb",
+    comment = c(ORCID = "0000-0002-4690-8343")), person("Matthew", "Schuelke",
+    role = "ctb", email="matt@themadstatter.com",
+    comment = c(ORCID = "0000-0001-5755-1725")))
+URL: https://ouhscbbmc.github.io/REDCapR/,
+        https://github.com/OuhscBbmc/REDCapR,
+        https://www.ouhsc.edu/bbmc/, https://projectredcap.org
+BugReports: https://github.com/OuhscBbmc/REDCapR/issues
+Depends: R(>= 3.5.0)
+Imports: checkmate (>= 2.0), dplyr (>= 1.0), httr (>= 1.4.0), jsonlite,
+        magrittr (>= 1.5), methods, readr (>= 2.0), rlang (>= 0.4),
+        tibble (>= 2.0), tidyr (>= 1.0)
+Suggests: spelling, covr (>= 3.4), DBI (>= 1.1), kableExtra (>= 1.0),
+        knitr (>= 1.18), odbc (>= 1.1.1), purrr (>= 0.3.4), rmarkdown
+        (>= 2.0), sessioninfo (>= 1.1.1), testthat (>= 3.0), tidyselect
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-09-07 20:18:53 UTC; wibeasley
+Author: Will Beasley [aut, cre] (<https://orcid.org/0000-0002-5613-5006>),
+  David Bard [ctb] (<https://orcid.org/0000-0002-3922-8489>),
+  Thomas Wilson [ctb],
+  John J Aponte [ctb],
+  Rollie Parrish [ctb] (<https://orcid.org/0000-0001-8858-6381>),
+  Benjamin Nutter [ctb],
+  Andrew Peters [ctb] (<https://orcid.org/0000-0003-2487-1268>),
+  Hao Zhu [ctb] (<https://orcid.org/0000-0002-3386-6076>),
+  Janosch Linkersdörfer [ctb] (<https://orcid.org/0000-0002-1577-1233>),
+  Jonathan Mang [ctb] (<https://orcid.org/0000-0003-0518-4710>),
+  Felix Torres [ctb],
+  Philip Chase [ctb] (<https://orcid.org/0000-0002-5318-9420>),
+  Victor Castro [ctb] (<https://orcid.org/0000-0001-7390-6354>),
+  Greg Botwin [ctb],
+  Stephan Kadauke [ctb] (<https://orcid.org/0000-0003-2996-8034>),
+  Ezra Porter [ctb] (<https://orcid.org/0000-0002-4690-8343>),
+  Matthew Schuelke [ctb] (<https://orcid.org/0000-0001-5755-1725>)
+Maintainer: Will Beasley <wibeasley@hotmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-09 06:00:10 UTC

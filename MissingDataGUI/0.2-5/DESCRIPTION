@@ -1,0 +1,26 @@
+Package: MissingDataGUI
+Type: Package
+Title: A GUI for Missing Data Exploration
+Version: 0.2-5
+Date: 2016-04-24
+Author: Xiaoyue Cheng, Dianne Cook, Heike Hofmann
+Maintainer: Xiaoyue Cheng <xycheng@unomaha.edu>
+Description: Provides numeric and graphical
+    summaries for the missing values from both categorical
+    and quantitative variables. A variety of imputation
+    methods are applied, including the univariate imputations
+    like fixed or random values, multivariate imputations
+    like the nearest neighbors and multiple imputations,
+    and imputations conditioned on a categorical variable.
+Depends: gWidgetsRGtk2, ggplot2
+Imports: GGally, cairoDevice (>= 2.23), grid, reshape
+Suggests: Hmisc, norm, mice, mi (>= 1.0)
+License: GPL (>= 2.0)
+LazyData: true
+Collate: 'MissingDataGUI-package.r' 'MissingDataGUI.r'
+        'WatchMissingValues.r' 'imputation.r' 'utils.r'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-04-24 22:00:46 UTC; xiaoyue
+Repository: CRAN
+Date/Publication: 2016-04-25 08:58:53

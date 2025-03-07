@@ -1,0 +1,26 @@
+Package: DatastreamDSWS2R
+Type: Package
+Title: Provides a Link Between the 'Refinitiv Datastream' System and R
+Version: 1.7.9
+Date: 2020-11-23
+Author: Charles Cara
+Maintainer: Charles Cara <charles.cara@absolute-strategy.com>
+Description: Provides a set of functions and a class to connect, extract and
+    upload information from the 'Refinitiv Datastream' database. This
+    package uses the 'DSWS' API and server used by the 'Datastream DFO addin'.  
+    Details of this API on the 'DSWS' page of <https://developers.refinitiv.com/en>.
+    Please report issues at <https://github.com/CharlesCara/DatastreamDSWS2R/issues>.
+License: GPL-3
+LazyData: TRUE
+Imports: httr, jsonlite, stringi, stringr, xts, zoo, methods, foreach,
+        dplyr
+Suggests: testthat
+RoxygenNote: 7.1.1
+Collate: 'DatastreamDSWS2R.R' 'common.R' 'classConstructor.R'
+        'wrapper.R' 'UCTSUpload.R' 'cbindRobust.R' 'data.R'
+Encoding: UTF-8
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2020-11-24 10:20:28 UTC; charlesc
+Repository: CRAN
+Date/Publication: 2020-11-25 14:20:04 UTC

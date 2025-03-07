@@ -1,0 +1,55 @@
+Package: Surrogate
+Type: Package
+Title: Evaluation of Surrogate Endpoints in Clinical Trials
+Version: 3.2.2
+Authors@R: c(
+  person("Wim", "Van Der Elst", email = "wim.vanderelst@gmail.com", role = c("cre", "aut")),
+  person("Florian", "Stijven", email = "florian.stijven@kuleuven.be", role = "aut"),
+  person("Fenny", "Ong", role = "aut"),
+  person("Paul", "Meyvisch", role = "aut"),
+  person("Alvaro", "Poveda", role = "aut"),
+  person("Ariel", "Alonso", role = "aut"),
+  person("Hannah", "Ensor", role = "aut"),
+  person("Christoper", "Weir", role = "aut"),
+  person("Geert", "Molenberghs", role = "aut")
+  )
+Description: In a clinical trial, it frequently occurs that the most credible 
+  outcome to evaluate the effectiveness of a new therapy (the true endpoint) is 
+  difficult to measure. In such a situation, it can be an effective strategy to 
+  replace the true endpoint by a (bio)marker that is easier to measure and that 
+  allows for a prediction of the treatment effect on the true endpoint (a 
+  surrogate endpoint). The package 'Surrogate' allows for an evaluation of the 
+  appropriateness of a candidate surrogate endpoint based on the meta-analytic, 
+  information-theoretic, and causal-inference frameworks. Part of this software
+  has been developed using funding provided from the European Union's Seventh 
+  Framework Programme for research, technological development and demonstration 
+  (Grant Agreement no 602552), the Special Research Fund (BOF) of Hasselt 
+  University (BOF-number: BOF2OCPO3), GlaxoSmithKline Biologicals, Baekeland 
+  Mandaat (HBC.2022.0145), and Johnson & Johnson Innovative Medicine. 
+Imports: MASS, lattice, latticeExtra, survival, nlme, lme4, msm,
+        logistf, rms, ks, extraDistr, pbapply, flexsurv, rvinecopulib,
+        maxLik, purrr, MBESS, tidyr
+License: GPL (>= 2)
+Repository: CRAN
+NeedsCompilation: no
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Suggests: FNN, mgcv, testthat (>= 3.0.0), vdiffr, parallel,
+        fitdistrplus, kdecopula, cubature, mvtnorm, copula, withr,
+        stringr
+Config/testthat/edition: 3
+URL: https://github.com/florianstijven/Surrogate-development
+BugReports: https://github.com/florianstijven/Surrogate-development/issues
+Packaged: 2024-02-20 09:19:27 UTC; u0157247
+Author: Wim Van Der Elst [cre, aut],
+  Florian Stijven [aut],
+  Fenny Ong [aut],
+  Paul Meyvisch [aut],
+  Alvaro Poveda [aut],
+  Ariel Alonso [aut],
+  Hannah Ensor [aut],
+  Christoper Weir [aut],
+  Geert Molenberghs [aut]
+Maintainer: Wim Van Der Elst <wim.vanderelst@gmail.com>
+Depends: R (>= 3.5.0)
+Date/Publication: 2024-02-20 10:10:10 UTC

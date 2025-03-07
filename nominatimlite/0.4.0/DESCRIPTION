@@ -1,0 +1,49 @@
+Type: Package
+Package: nominatimlite
+Title: Interface with 'Nominatim' API Service
+Version: 0.4.0
+Authors@R: c(
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658")),
+    person("Jindra", "Lacko", role = c("ctb", "rev"),
+           comment = c(ORCID = "0000-0002-0375-5156")),
+    person("Alex", "White", role = "ctb"),
+    person("OpenStreetMap", role = "cph",
+           comment = "For the data")
+  )
+Description: Lite interface for getting data from 'OSM' service
+    'Nominatim' <https://nominatim.org/release-docs/latest/>. Extract
+    coordinates from addresses, find places near a set of coordinates and
+    return spatial objects on 'sf' format.
+License: MIT + file LICENSE
+URL: https://dieghernan.github.io/nominatimlite/,
+        https://github.com/dieghernan/nominatimlite
+BugReports: https://github.com/dieghernan/nominatimlite/issues
+Depends: R (>= 3.6.0)
+Imports: dplyr (>= 1.0.0), jsonlite (>= 1.7.0), sf (>= 0.9.0), utils
+Suggests: arcgeocoder, ggplot2 (>= 3.0.0), knitr, lifecycle, rmarkdown,
+        testthat (>= 3.0.0), tibble, tidygeocoder
+VignetteBuilder: knitr
+Config/Needs/website: dieghernan/gitdevr, remotes, devtools, tidyverse,
+        leaflet, reactable, crosstalk, tidyr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Copyright: Data © OpenStreetMap contributors, ODbL 1.0.
+        <https://www.openstreetmap.org/copyright>
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+X-schema.org-applicationCategory: cartography
+X-schema.org-keywords: r, geocoding, openstreetmap, address, nominatim,
+        reverse-geocoding, rstats, shapefile, r-package, spatial, cran,
+        api-wrapper
+NeedsCompilation: no
+Packaged: 2024-05-27 17:39:46 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph]
+    (<https://orcid.org/0000-0001-8457-4658>),
+  Jindra Lacko [ctb, rev] (<https://orcid.org/0000-0002-0375-5156>),
+  Alex White [ctb],
+  OpenStreetMap [cph] (For the data)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-27 17:50:10 UTC

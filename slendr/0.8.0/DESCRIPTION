@@ -1,0 +1,51 @@
+Package: slendr
+Title: A Simulation Framework for Spatiotemporal Population Genetics
+Version: 0.8.0
+Authors@R: 
+    person(given = "Martin",
+           family = "Petr",
+           role = c("aut", "cre"),
+           email = "contact@bodkan.net",
+           comment = c(ORCID = "0000-0003-4879-8421"))
+Description: A framework for simulating spatially explicit genomic data which
+    leverages real cartographic information for programmatic and visual encoding
+    of spatiotemporal population dynamics on real geographic landscapes. Population
+    genetic models are then automatically executed by the 'SLiM' software by Haller
+    et al. (2019) <doi:10.1093/molbev/msy228> behind the scenes, using a custom
+    built-in simulation 'SLiM' script. Additionally, fully abstract spatial models
+    not tied to a specific geographic location are supported, and users can also
+    simulate data from standard, non-spatial, random-mating models. These can be
+    simulated either with the 'SLiM' built-in back-end script, or using an efficient
+    coalescent population genetics simulator 'msprime' by Baumdicker et al. (2022)
+    <doi:10.1093/genetics/iyab229> with a custom-built 'Python' script bundled with the
+    R package. Simulated genomic data is saved in a tree-sequence format and can be
+    loaded, manipulated, and summarised using tree-sequence functionality via an R
+    interface to the 'Python' module 'tskit' by Kelleher et al. (2019)
+    <doi:10.1038/s41588-019-0483-y>. Complete model configuration, simulation and
+    analysis pipelines can be therefore constructed without a need to leave the R
+    environment, eliminating friction between disparate tools for population genetic
+    simulations and data analysis.
+Depends: R (>= 3.6.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: 'SLiM' is a forward simulation software for
+        population genetics and evolutionary biology. See
+        <https://messerlab.org/slim/> for installation instructions and
+        further information. The 'Python' coalescent framework
+        'msprime' and the 'tskit' module can by installed by following
+        the instructions at <https://tskit.dev/>.
+Imports: ggplot2, dplyr, purrr, readr, magrittr, reticulate, tidyr,
+        png, ijtiff, ape, shinyWidgets, shiny, scales
+Suggests: testthat (>= 3.0.0), sf, stars, rnaturalearth, gganimate,
+        knitr, rmarkdown, admixr, units, magick, cowplot, forcats, rsvg
+VignetteBuilder: knitr
+URL: https://github.com/bodkan/slendr
+BugReports: https://github.com/bodkan/slendr/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-06 16:56:57 UTC; mp
+Author: Martin Petr [aut, cre] (<https://orcid.org/0000-0003-4879-8421>)
+Maintainer: Martin Petr <contact@bodkan.net>
+Repository: CRAN
+Date/Publication: 2023-12-07 10:50:06 UTC

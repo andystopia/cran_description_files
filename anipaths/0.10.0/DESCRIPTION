@@ -1,0 +1,27 @@
+Package: anipaths
+Type: Package
+Title: Animation of Multiple Trajectories with Uncertainty
+Version: 0.10.0
+Date: 2021-05-14
+Authors@R: c(person("Henry", "Scharf", email = "hscharf@sdsu.edu",
+                    role = c("aut", "cre")),
+             person("Kristine", "Dinh",
+                    role = c("aut")))
+Maintainer: Henry Scharf <hscharf@sdsu.edu>
+Description: Animation of observed trajectories using spline-based interpolation (see for example, Buderman, F. E., Hooten, M. B., Ivan, J. S. and Shenk, T. M. (2016), <doi:10.1111/2041-210X.12465> "A functional model for characterizing long-distance movement behaviour". Methods Ecol Evol). Intended to be used exploratory data analysis, and perhaps for preparation of presentations.
+License: GPL-3
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+Imports: animation, RColorBrewer, scales, sp, raster, mgcv, grDevices,
+        ggmap, crawl, dplyr, ellipse, ggplot2, igraph, lubridate,
+        magrittr, stringr, tidyr, tidyselect
+Suggests: knitr, rgdal, rmarkdown, testthat
+VignetteBuilder: knitr
+LazyData: true
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2021-05-15 03:04:57 UTC; hscharf
+Author: Henry Scharf [aut, cre],
+  Kristine Dinh [aut]
+Repository: CRAN
+Date/Publication: 2021-05-15 06:40:02 UTC

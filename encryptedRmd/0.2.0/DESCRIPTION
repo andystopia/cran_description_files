@@ -1,0 +1,35 @@
+Package: encryptedRmd
+Title: Encrypt Html Reports Using 'Libsodium'
+Version: 0.2.0
+Authors@R: c(
+    person(
+      given = "Dirk",
+      family = "Schumacher",
+      role = c("aut", "cre"),
+      email = "mail@dirk-schumacher.net"
+    ),
+    person(
+      given = "Jannis",
+      family = "R.",
+      role = "aut",
+      email = "mail@jannisr.de"
+    )
+  )
+Description: Create encrypted html files that are fully self contained and do
+  not require any additional software. Using the package you can encrypt
+  arbitrary html files and also directly create encrypted 'rmarkdown' html reports.
+License: MIT + file LICENSE
+Copyright: file inst/COPYRIGHTS
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: sodium, readr, rmarkdown
+Suggests: testthat (>= 2.1.0)
+Collate: 'encrypt_html_file.R' 'encrypted_html_document.R'
+NeedsCompilation: no
+Packaged: 2020-05-06 20:10:59 UTC; dirkschumacher
+Author: Dirk Schumacher [aut, cre],
+  Jannis R. [aut]
+Maintainer: Dirk Schumacher <mail@dirk-schumacher.net>
+Repository: CRAN
+Date/Publication: 2020-05-08 17:00:05 UTC

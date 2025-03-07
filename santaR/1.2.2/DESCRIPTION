@@ -1,0 +1,40 @@
+Package: santaR
+Title: Short Asynchronous Time-Series Analysis
+Version: 1.2.2
+Date: 2022-05-20
+Authors@R: c(
+	person("Arnaud", "Wolfer", email = "adwolfer@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5856-3218")),
+	person("Timothy", "Ebbels", email = "t.ebbels@imperial.ac.uk", role = "ctb"),
+	person("Joe", "Cheng", email = "joe@rstudio.com", role = c("ctb"), comment = "Shiny javascript custom-input control"))
+Description: A graphical and automated pipeline for the analysis 
+		of short time-series in R ('santaR'). This approach is designed to accommodate asynchronous 
+		time sampling (i.e. different time points for different individuals), 
+		inter-individual variability, noisy measurements and large numbers of variables. 
+		Based on a smoothing splines functional model, 'santaR' is able to detect variables
+		highlighting significantly different temporal trajectories between study groups.
+		Designed initially for metabolic phenotyping, 'santaR' is also suited for other Systems Biology 
+		disciplines. Command line and graphical analysis (via a 'shiny' application) enable fast and
+		parallel automated analysis and reporting, intuitive visualisation and comprehensive plotting
+		options for non-specialist users.
+Depends: R (>= 4.0.0)
+License: GPL-3
+BugReports: https://github.com/adwolfer/santaR/issues/new
+URL: https://github.com/adwolfer/santaR
+Encoding: UTF-8
+LazyData: true
+Imports: plyr (>= 1.8.4), foreach (>= 1.4.4), doParallel (>= 1.0.11),
+        pcaMethods (>= 1.70.0), ggplot2 (>= 2.2.1), gridExtra (>= 2.3),
+        reshape2 (>= 1.4.3), iterators (>= 1.0.9), shiny (>= 1.3.2),
+        bslib, DT (>= 0.9)
+biocViews: pcaMethods (>= 1.70.0)
+Suggests: knitr, rmarkdown, pander, R.rsp, testthat
+VignetteBuilder: knitr, R.rsp
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-05-21 15:02:01 UTC; Arnaud
+Author: Arnaud Wolfer [aut, cre] (<https://orcid.org/0000-0001-5856-3218>),
+  Timothy Ebbels [ctb],
+  Joe Cheng [ctb] (Shiny javascript custom-input control)
+Maintainer: Arnaud Wolfer <adwolfer@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-21 23:00:02 UTC

@@ -1,0 +1,40 @@
+Package: wtss
+Title: An R Client for Web Time-Series Service
+Version: 2.0.1
+Authors@R: c(person("Gilberto", "Ribeiro", role = c("aut"), email ="gilberto.queiroz@inpe.br"),
+             person("Gilberto", "Camara", role = c("aut", "cre"), email = "gilberto.camara@inpe.br"),
+             person("Pedro", "Andrade", role = c("aut"), email = "pedro.andrade@inpe.br"), 
+             person("Luiz Fernando", "Assis", role = c("aut"), email ="luizffga@dpi.inpe.br"),
+             person("Rolf", "Simoes", role = c("aut"), email ="rolf.simoes@dpi.inpe.br"),          
+             person("Alber", "Sanchez", role = c("aut"), email ="alber.ipia@inpe.br"), 
+             person("Victor", "Maus", role = c("aut"), email ="vwmaus1@gmail.com")
+             )
+Maintainer: Gilberto Camara <gilberto.camara@inpe.br>
+Description: An R client that provides remote access to satellite image time 
+    series using a web time series service. The client allows Earth observation 
+    users to obtain time series. The functions include listing the data sets 
+    available in the server, describing the contents of a data set, and 
+    retrieving a time series based on spatial location and temporal filters.
+URL: https://github.com/e-sensing/wtss/
+BugReports: https://github.com/e-sensing/wtss/issues
+ByteCompile: true
+LazyData: true
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: assertthat, dplyr, geosphere, ggplot2, reshape2, jsonlite,
+        lubridate, magrittr, purrr, RCurl, stats, tibble, zoo
+RoxygenNote: 7.0.2
+Suggests: bfast, knitr, rmarkdown, roxygen2, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-12-03 14:12:43 UTC; gcamara
+Author: Gilberto Ribeiro [aut],
+  Gilberto Camara [aut, cre],
+  Pedro Andrade [aut],
+  Luiz Fernando Assis [aut],
+  Rolf Simoes [aut],
+  Alber Sanchez [aut],
+  Victor Maus [aut]
+Repository: CRAN
+Date/Publication: 2019-12-03 17:20:02 UTC

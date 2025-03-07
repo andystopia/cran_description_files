@@ -1,0 +1,42 @@
+Package: mxfda
+Title: A Functional Data Analysis Package for Spatial Single Cell Data
+Version: 0.2.2
+Date: 2024-10-07
+Authors@R: 
+    c(
+    person("Julia", "Wrobel", role = c("aut"), 
+    email = "julia.wrobel@emory.edu",
+    comment = c(ORCID = "0000-0001-6783-1421")),
+    person("Alex", "Soupir", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-1251-9179"),
+    email = "alex.soupir@moffitt.org")
+    )
+Description: Methods and tools for deriving spatial summary functions from single-cell imaging
+  data and performing functional data analyses. Functions can be applied to other single-cell
+  technologies such as spatial transcriptomics. Functional regression and functional principal component analysis methods
+  are in the 'refund' package <https://cran.r-project.org/package=refund> while calculation of the
+  spatial summary functions are from the 'spatstat' package <https://spatstat.org/>.
+License: MIT + file LICENSE
+URL: https://github.com/julia-wrobel/mxfda/,
+        http://juliawrobel.com/mxfda/
+BugReports: https://github.com/julia-wrobel/mxfda/issues/
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tidyverse, survival,
+        ggpubr, spatialTIME, tibble, broom, refund.shiny, Seurat,
+        SeuratObject
+Imports: magrittr, rlang, tidyr, purrr, dplyr, ggplot2, lifecycle,
+        methods, stats, refund (>= 0.1-35), reshape2, mgcv,
+        spatstat.geom, spatstat.explore, SpatEntropy, SimDesign
+Depends: R (>= 2.10),
+LazyData: true
+LazyDataCompression: bzip2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-07 16:58:13 UTC; 4471592
+Author: Julia Wrobel [aut] (<https://orcid.org/0000-0001-6783-1421>),
+  Alex Soupir [aut, cre] (<https://orcid.org/0000-0003-1251-9179>)
+Maintainer: Alex Soupir <alex.soupir@moffitt.org>
+Repository: CRAN
+Date/Publication: 2024-10-07 17:40:02 UTC

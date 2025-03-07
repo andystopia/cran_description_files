@@ -1,0 +1,35 @@
+Package: supercells
+Title: Superpixels of Spatial Data
+Version: 0.9.5
+Authors@R: c(
+    person(given = "Jakub", family = "Nowosad", 
+    role = c("aut", "cre"),
+    email = "nowosad.jakub@gmail.com", 
+    comment = c(ORCID = "0000-0002-1057-3721")),
+    person("Pascal", "Mettes", 
+             role = "ctb", 
+             comment = "Author of the initial C++ implementation of the SLIC Superpixel algorithm for image data"),
+    person("Charles", "Jekel", 
+             role = "ctb", 
+             comment = "Author of underlying C++ code for dtw"))
+Description: Creates superpixels based on input spatial data. 
+  This package works on spatial data with one variable (e.g., continuous raster), many variables (e.g., RGB rasters), and spatial patterns (e.g., areas in categorical rasters).
+  It is based on the SLIC algorithm (Achanta et al. (2012) <doi:10.1109/TPAMI.2012.120>), and readapts it to work with arbitrary dissimilarity measures. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: sf, terra (>= 1.4-21), philentropy (>= 0.6.0), future.apply
+RoxygenNote: 7.2.3
+LinkingTo: cpp11
+URL: https://jakubnowosad.com/supercells/
+BugReports: https://github.com/Nowosad/supercells/issues
+Suggests: knitr, covr, testthat (>= 3.0.0), rmarkdown, stars
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-11-11 14:33:08 UTC; jn
+Author: Jakub Nowosad [aut, cre] (<https://orcid.org/0000-0002-1057-3721>),
+  Pascal Mettes [ctb] (Author of the initial C++ implementation of the
+    SLIC Superpixel algorithm for image data),
+  Charles Jekel [ctb] (Author of underlying C++ code for dtw)
+Maintainer: Jakub Nowosad <nowosad.jakub@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-11 15:40:02 UTC

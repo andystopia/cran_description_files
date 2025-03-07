@@ -1,0 +1,23 @@
+Package: fold
+Type: Package
+Title: A Self-Describing Dataset Format and Interface
+Version: 0.1
+Date: 2017-04-13
+Author: Tim Bergsma
+Maintainer: Tim Bergsma <bergsmat@gmail.com>
+Description: Defines a compact data format that includes metadata. 
+ The function fold() creates the format by converting 
+ from data.frame, and unfold() converts back. The predictability
+ of the folded format supports reusability of data processing tools,
+ while the presence of embedded metadata improves portability, 
+ interpretability, and efficiency.
+License: GPL-3
+LazyData: TRUE
+Imports: tidyr, dplyr, lazyeval, encode, csv
+Suggests: magrittr, wrangle
+Depends: R (>= 2.10)
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-04-13 21:20:55 UTC; tbergsma
+Repository: CRAN
+Date/Publication: 2017-04-13 22:27:32 UTC

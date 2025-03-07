@@ -1,0 +1,38 @@
+Package: genekitr
+Type: Package
+Title: Gene Analysis Toolkit in R
+Version: 0.8.5
+Authors@R: 
+    c(person(given = "Yunze",
+             family = "Liu",
+             role = c("aut", "cre"),
+             email = "jieandze1314@gmail.com",
+             comment = c(ORCID = "0000-0002-7414-8556")))
+Maintainer: Yunze Liu <jieandze1314@gmail.com>
+URL: https://github.com/GangLiLab/genekitr
+BugReports: https://github.com/GangLiLab/genekitr/issues
+Description: An analysis toolkit focused on genes. It mainly includes five
+    features (search, convert, analysis, plot, and export).
+    The user just needs to input feature id ('entrez', 'symbol', 'ensembl' or
+    'uniprot') to retrieve feature information and PubMed records, to convert id
+    types, to easily do enrichment analysis and draw publication-level plots of GO,
+    KEGG and GSEA, to plot group interaction and export results as sheets in one excel
+    file to easily share and communicate with others.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+Imports: clusterProfiler, dplyr, europepmc, fst, ggplot2, ggraph,
+        igraph, magrittr, openxlsx, stringr, stringi, tidyr,
+        VennDiagram, rlang
+Suggests: AnnotationDbi, BiocManager, cowplot, DOSE, data.table,
+        easyPubMed, forcats, fgsea, futile.logger, ggplotify, ggsci,
+        ggupset, ggrepel, ggridges, ggnewscale, GOplot, GOSemSim,
+        msigdbr, RColorBrewer, rappdirs, rentrez, reshape2, rio, rrvgo,
+        scales, stats, testthat (>= 3.0.0), tibble, knitr, rmarkdown
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-05-27 01:19:23 UTC; reedliu1
+Author: Yunze Liu [aut, cre] (<https://orcid.org/0000-0002-7414-8556>)
+Repository: CRAN
+Date/Publication: 2022-05-27 10:00:08 UTC

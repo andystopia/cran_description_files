@@ -1,0 +1,32 @@
+Type: Package
+Package: easydb
+Title: Easily Connect to Common Types of Databases
+Version: 1.0.0
+Authors@R: 
+  person(given = "Sam",
+  family = "El-Kamand",
+  role = c("aut", "cre", "cph"),
+  email = "sam.elkamand@gmail.com",
+  comment = c(ORCID = "0000-0003-2270-8088"))
+Description: A unified interface for connecting to databases ('SQLite', 'MySQL', 'PostgreSQL').
+    Just provide the database name and the package will ask you questions
+    to help you configure the connection and setup your credentials.  Once
+    database configuration and connection has been set up once, you won't
+    have to do it ever again.
+License: MIT + file LICENSE
+URL: https://github.com/selkamand/easydb,
+        https://selkamand.github.io/easydb/
+BugReports: https://github.com/selkamand/easydb/issues
+Imports: askpass, assertthat, cli, DBI, keyring, rlang, utils, yaml
+Suggests: knitr, RMariaDB, rmarkdown, RPostgres, RSQLite, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-09-27 13:35:33 UTC; User
+Author: Sam El-Kamand [aut, cre, cph] (<https://orcid.org/0000-0003-2270-8088>)
+Maintainer: Sam El-Kamand <sam.elkamand@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-29 08:40:09 UTC

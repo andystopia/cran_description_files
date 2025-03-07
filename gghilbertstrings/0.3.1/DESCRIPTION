@@ -1,0 +1,35 @@
+Package: gghilbertstrings
+Title: A Fast 'ggplot2'-Based Implementation of Hilbert Curves
+Version: 0.3.1
+Authors@R: 
+    person(given = "André",
+           family = "Calero Valdez",
+           role = c("aut", "cre"),
+           email = "andrecalerovaldez@gmail.com",
+           comment = c(ORCID = "0000-0002-6214-1461"))
+Description: A set of functions that help to create plots based on Hilbert curves. 
+    Hilbert curves are used to map one dimensional data into the 2D plane.
+    The package provides a function that generate a 2D coordinate from an 
+    integer position. As a specific use case the package provides a function 
+    that allows mapping a character column in a data frame into 2D space 
+    using 'ggplot2'. This allows visually comparing long lists of URLs, words,
+    genes or other data that has a fixed order and position.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://github.com/Sumidu/gghilbertstrings
+BugReports: https://github.com/Sumidu/gghilbertstrings/issues
+biocViews:
+Imports: ggplot2, dplyr, magrittr, tibble, lifecycle, Rcpp, rlang
+Suggests: testthat, covr, spelling, profvis
+Language: en-US
+RdMacros: lifecycle
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2021-03-15 16:06:53 UTC; andrecalerovaldez
+Author: André Calero Valdez [aut, cre]
+    (<https://orcid.org/0000-0002-6214-1461>)
+Maintainer: André Calero Valdez <andrecalerovaldez@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-03-15 17:40:10 UTC

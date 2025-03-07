@@ -1,0 +1,33 @@
+Type: Package
+Package: PheVis
+Title: Automatic Phenotyping of Electronic Health Record at Visit
+        Resolution
+Version: 1.0.3
+Date: 2023-09-21
+Authors@R: 
+    c(person(given = "Thomas",
+             family = "Ferte",
+             role = c("aut", "cre"),
+             email = "thomas.ferte@u-bordeaux.fr"),
+      person(given = "Boris P.",
+             family = "Hejblum",
+             role = "aut",
+             email = "boris.hejblum@u-bordeaux.fr"))
+Description: Using Electronic Health Record (EHR) is difficult because most of the time the true characteristic of the patient is not available. Instead we can retrieve the International Classification of Disease code related to the disease of interest or we can count the occurrence of the Unified Medical Language System. None of them is the true phenotype which needs chart review to identify. However chart review is time consuming and costly. 'PheVis' is an algorithm which is phenotyping (i.e identify a characteristic) at the visit level in an unsupervised fashion. It can be used for chronic or acute diseases. An example of how to use 'PheVis' is available in the vignette. Basically there are two functions that are to be used: `train_phevis()` which trains the algorithm and `test_phevis()` which get the predicted probabilities. The detailed method is described in preprint by Ferté et al. (2020) <doi:10.1101/2020.06.15.20131458>.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: dplyr, ggplot2, glmnet, knitr, lme4, purrr, randomForest, Rcpp
+        (>= 1.0.3), stats, tidyr, viridis, zoo
+Suggests: PRROC, rmarkdown, testthat
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-09-21 16:18:45 UTC; tf1
+Author: Thomas Ferte [aut, cre],
+  Boris P. Hejblum [aut]
+Maintainer: Thomas Ferte <thomas.ferte@u-bordeaux.fr>
+Repository: CRAN
+Date/Publication: 2023-09-21 20:40:02 UTC

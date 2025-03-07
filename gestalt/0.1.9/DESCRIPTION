@@ -1,0 +1,29 @@
+Package: gestalt
+Title: Tools for Making and Combining Functions
+Version: 0.1.9
+Authors@R: person("Eugene", "Ha", , "eha@posteo.de", c("aut", "cre"))
+Description: Provides a suite of function-building tools centered around a
+  (forward) composition operator, %>>>%, which extends the semantics of the
+  'magrittr' %>% operator and supports 'Tidyverse' quasiquotation. It enables
+  you to construct composite functions that can be inspected and transformed as
+  list-like objects. In conjunction with %>>>%, a compact function constructor,
+  fn(), and a partial-application constructor, partial(), are also provided;
+  both support quasiquotation.
+License: MIT + file LICENSE
+URL: https://github.com/egnha/gestalt
+BugReports: https://github.com/egnha/gestalt/issues
+Depends: R (>= 3.3.0)
+Imports: rlang (>= 1.0.0), utils
+Suggests: magrittr (>= 1.5), testthat (>= 3.0.0), knitr, rmarkdown
+Collate: 'gestalt.R' 'utils.R' 'closure.R' 'compose.R' 'constant.R'
+        'partial.R' 'fn.R' 'context.R' 'posure.R'
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Encoding: UTF-8
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2022-02-02 17:11:27 UTC; eha
+Author: Eugene Ha [aut, cre]
+Maintainer: Eugene Ha <eha@posteo.de>
+Repository: CRAN
+Date/Publication: 2022-02-02 19:40:02 UTC

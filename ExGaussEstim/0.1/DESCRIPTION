@@ -1,0 +1,41 @@
+Package: ExGaussEstim
+Title: Quantile Maximization Likelihood Estimation and Bayesian
+        Ex-Gaussian Estimation
+Version: 0.1
+Authors@R: c(
+  person(given = "Yousri",
+           family = "SLAOUI",
+           role = c("aut", "cre"),
+           email = "Yousri.Slaoui@math.univ-poitiers.fr",
+           comment = c(ORCID = "0000-0001-5295-3311")),
+  person(given = "Abir",
+           family = "EL HAJ",
+           role = c("aut", "ctb"),
+           email = "abir_hajj_1993@hotmail.com",
+           comment = c(ORCID = "0000-0003-3210-9097")),
+  person(given = "Caroline",
+           family = "BORDES",
+           role = c("aut", "ctb"),
+           email = "caroline.bordes@univ-poitiers.fr"),
+  person(given = "Cyril",
+           family = "PERRET",
+           role = "aut",
+           email = "cyril.perret@univ-poitiers.fr",
+           comment = c(ORCID = "0000-0002-4552-9093")))
+Description: Presents two methods to estimate the parameters 'mu', 'sigma', and 'tau' of an ex-Gaussian distribution. Those methods are Quantile Maximization Likelihood Estimation ('QMLE') and Bayesian. The 'QMLE' method allows a choice between three different estimation algorithms for these parameters : 'neldermead' ('NEMD'), 'fminsearch' ('FMIN'), and 'nlminb' ('NLMI'). For more details about the methods you can refer at the following list: Brown, S., & Heathcote, A. (2003) <doi:10.3758/BF03195527>; McCormack, P. D., & Wright, N. M. (1964) <doi:10.1037/h0083285>; Van Zandt, T. (2000) <doi:10.3758/BF03214357>; El Haj, A., Slaoui, Y., Solier, C., & Perret, C. (2021) <doi:10.19139/soic-2310-5070-1251>; Gilks, W. R., Best, N. G., & Tan, K. K. C. (1995) <doi:10.2307/2986138>.
+License: GPL-2
+Encoding: UTF-8
+LazyLoad: true
+RoxygenNote: 7.2.0
+Imports: pracma, stats, nloptr, invgamma, HI, fitdistrplus, gamlss.dist
+NeedsCompilation: no
+Packaged: 2022-08-23 09:05:53 UTC; cborde07
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Author: Yousri SLAOUI [aut, cre] (<https://orcid.org/0000-0001-5295-3311>),
+  Abir EL HAJ [aut, ctb] (<https://orcid.org/0000-0003-3210-9097>),
+  Caroline BORDES [aut, ctb],
+  Cyril PERRET [aut] (<https://orcid.org/0000-0002-4552-9093>)
+Maintainer: Yousri SLAOUI <Yousri.Slaoui@math.univ-poitiers.fr>
+Repository: CRAN
+Date/Publication: 2022-08-23 12:50:08 UTC

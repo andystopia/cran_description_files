@@ -1,0 +1,29 @@
+Package: ggcoverage
+Type: Package
+Title: Visualize Genome Coverage with Various Annotations
+Version: 0.7.0
+Authors@R: 
+    person(given = "Yabing",
+           family = "Song",
+           role = c("aut", "cre"),
+           email = "songyb0519@gmail.com")
+Maintainer: Yabing Song <songyb0519@gmail.com>
+Description: The goal of 'ggcoverage' is to simplify the process of visualizing genome coverage. It contains functions to 
+    load data from BAM, BigWig or BedGraph files, create genome coverage plot, add various annotations to 
+    the coverage plot, including base and amino acid annotation, GC annotation, gene annotation, transcript annotation, ideogram annotation and peak annotation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: dplyr, GenomicRanges, ggbio, ggh4x, ggplot2, ggrepel,
+        grDevices, IRanges, magrittr, patchwork, RColorBrewer, rlang,
+        Rsamtools, rtracklayer, scales, stats, utils, methods,
+        GenomeInfoDb, S4Vectors, Biostrings, BSgenome,
+        GenomicAlignments, reshape2, seqinr
+Suggests: rmarkdown, knitr, BiocStyle, htmltools,
+        BSgenome.Hsapiens.UCSC.hg19, graphics
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-08-16 13:24:48 UTC; songyabing
+Author: Yabing Song [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-08-18 07:20:02 UTC

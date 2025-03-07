@@ -1,0 +1,33 @@
+Package: nhdplusTools
+Type: Package
+Title: NHDPlus Tools
+Version: 0.4.3
+Authors@R: c(person(given = "David", 
+                    family = "Blodgett", 
+                    role = c("aut", "cre"), 
+                    email = "dblodgett@usgs.gov"),
+             person(given = "Mike",
+                    family = "Johnson",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0002-5288-8350")))
+Description: Tools for traversing and working with National Hydrography Dataset Plus (NHDPlus) data. All methods implemented in 'nhdplusTools' are available in the NHDPlus documentation available from the US Environmental Protection Agency <https://www.epa.gov/waterdata/basic-information>.
+URL: https://usgs-r.github.io/nhdplusTools/
+        https://github.com/usgs-r/nhdplusTools/
+BugReports: https://github.com/usgs-r/nhdplusTools/issues/
+Depends: R (>= 4.0)
+Imports: dplyr, sf, RANN, units, magrittr, jsonlite, httr, igraph,
+        xml2, R.utils, utils, tidyr, methods, rosm, prettymapr, fst,
+        dataRetrieval, tools, zip, pbapply
+Suggests: testthat, knitr, rmarkdown, markdown, ggmap, ggplot2, sp,
+        lwgeom, devtools, codetools, data.table, parallel, s2
+License: CC0
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-08-12 15:27:15 UTC; dblodgett
+Author: David Blodgett [aut, cre],
+  Mike Johnson [ctb] (<https://orcid.org/0000-0002-5288-8350>)
+Maintainer: David Blodgett <dblodgett@usgs.gov>
+Repository: CRAN
+Date/Publication: 2021-08-18 10:00:07 UTC

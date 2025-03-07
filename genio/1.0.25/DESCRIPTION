@@ -1,0 +1,25 @@
+Package: genio
+Title: Genetics Input/Output Functions
+Version: 1.0.25
+Authors@R: 
+    person(given = "Alejandro",
+	   family = "Ochoa",
+	   role = c("aut", "cre"),
+	   email = "alejandro.ochoa@duke.edu",
+           comment = c(ORCID = "0000-0003-4928-3403"))
+Description: Implements readers and writers for file formats associated with genetics data.  Reading and writing Plink BED/BIM/FAM and GCTA binary GRM formats is fully supported, including a lightning-fast BED reader and writer implementations.  Other functions are 'readr' wrappers that are more constrained, user-friendly, and efficient for these particular applications; handles Plink and Eigenstrat tables (FAM, BIM, IND, and SNP files).  There are also make functions for FAM and BIM tables with default values to go with simulated genotype data.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: readr (>= 2.0.0), tibble, dplyr, Rcpp
+LinkingTo: Rcpp
+Suggests: testthat, knitr, rmarkdown, BEDMatrix, snpStats, lobstr
+VignetteBuilder: knitr
+URL: https://github.com/OchoaLab/genio
+BugReports: https://github.com/OchoaLab/genio/issues
+NeedsCompilation: yes
+Packaged: 2021-07-26 21:49:02 UTC; viiia
+Author: Alejandro Ochoa [aut, cre] (<https://orcid.org/0000-0003-4928-3403>)
+Maintainer: Alejandro Ochoa <alejandro.ochoa@duke.edu>
+Repository: CRAN
+Date/Publication: 2021-07-26 22:10:02 UTC

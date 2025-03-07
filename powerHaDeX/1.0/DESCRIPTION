@@ -1,0 +1,42 @@
+Package: powerHaDeX
+Type: Package
+Title: Efficient Simulation of HDX-MS Data and Tools for the
+        Statistical Analysis
+Version: 1.0
+Date: 2022-01-21
+Authors@R: c(person(given = "Krystyna", 
+           family = "Grzesiak", 
+           email = "krygrz11@gmail.com",
+           role = c("cre", "aut")),
+           person(given = "Mateusz", 
+           family = "Staniak", 
+           email = "mtst@mstaniak.pl", 
+           role = c("aut")),
+           person(given = "Michal", 
+           family = "Burdukiewicz", 
+           email = "michalburdukiewicz@gmail.com", 
+           comment = c(ORCID = "0000-0001-8926-582X"),
+           role = c("ctb")))
+Maintainer: Krystyna Grzesiak <krygrz11@gmail.com>
+Description: Facilitates simulating and analyzing data coming from HDX-MS 
+             experiments along with the possibility of comparing the power of 
+             the tests verifying differences in the levels of deuterium uptake. 
+             The simulation of mass spectra is a fast version of 
+             <https://github.com/kanzy/HX-MS-Simulations>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: checkmate, data.table, expm, ggplot2, glmnet, lme4, lmerTest,
+        methods, nlme, plyr, Rcpp (>= 1.0.3), signal,
+Depends: R (>= 3.5.0)
+LinkingTo: Rcpp
+RoxygenNote: 7.1.2
+Suggests: testthat, spelling, knitr, rmarkdown, covr
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-01-21 13:26:38 UTC; Kanti
+Author: Krystyna Grzesiak [cre, aut],
+  Mateusz Staniak [aut],
+  Michal Burdukiewicz [ctb] (<https://orcid.org/0000-0001-8926-582X>)
+Repository: CRAN
+Date/Publication: 2022-01-24 19:32:46 UTC

@@ -1,0 +1,16 @@
+Package: salbm
+Version: 1.0
+Type: Package
+Date: 2021-05-20
+Title: Sensitivity Analysis for Binary Missing Data
+Authors@R: c(person("Daniel", "O. Scharfstein", role = c("aut"), email = "dscharf@jhu.edu" ), person("Aidan", "McDermott", role = c("aut", "cre"), email = "amcderm1@jhu.edu")) 
+Author: Daniel O. Scharfstein [aut],
+  Aidan McDermott [aut, cre]
+Maintainer: Aidan McDermott <amcderm1@jhu.edu>
+Description: In a clinical trial with repeated measures designs, outcomes are often taken from subjects at fixed time-points.  The focus of the trial may be to compare the mean outcome in two or more groups at some pre-specified time after enrollment. In the presence of missing data auxiliary assumptions are necessary to perform such comparisons.  One commonly employed assumption is the missing at random assumption (MAR). The 'salbm' package allows the user to perform a (parameterized) sensitivity analysis of this assumption where the outcome of interest is binary (coded as 0, 1, or NA).  In particular it can be used to examine the sensitivity of tests in the difference in outcomes to violations of the MAR assumption. See the paper Daniel O. Scharfstein, Jaron J. R. Lee, Aidan McDermott, Aimee Campbell, Edward Nunes, Abigail G. Matthews, Ilya Shpitser "Markov-Restricted Analysis of Randomized Trials with Non-Monotone Missing Binary Outcomes: Sensitivity Analysis and Identification Results" (2021) <arXiv:2105.08868>.
+Imports: randomForestSRC
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2021-05-21 19:01:40 UTC; aidanmcdermott
+Repository: CRAN
+Date/Publication: 2021-05-25 07:30:02 UTC

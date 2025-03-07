@@ -1,0 +1,26 @@
+Package: demoKde
+Type: Package
+Title: Kernel Density Estimation for Demonstration Purposes
+Version: 1.0.0
+Date: 2021-02-23
+Imports: stats
+Suggests: MASS, graphics
+Author: Bill Venables
+Maintainer: Bill Venables <Bill.Venables@gmail.com>
+Description: Demonstration code showing how (univariate) kernel
+	     density estimates are computed, at least conceptually,
+	     and allowing users to experiment with different kernels,
+	     should they so wish.  The method used follows directly
+	     the definition, but gains efficiency by replacing the
+	     observations by frequencies in a very fine grid covering
+	     the sample range.  A canonical reference is
+	     B. W. Silverman, (1998) <doi: 10.1201/9781315140919>.
+	     NOTE: the density function in the
+	     stats package uses a more sophisticated method based on the
+	     fast Fourier transform and that function should be used if
+	     computational efficiency is a prime consideration.
+License: GPL-2
+Packaged: 2021-02-25 21:50:46 UTC; bill
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2021-02-26 00:00:02 UTC

@@ -1,0 +1,32 @@
+Package: mlr3oml
+Title: Connector Between 'mlr3' and 'OpenML'
+Version: 0.6.0
+Authors@R: 
+    c(person("Michel", "Lang", , "michellang@gmail.com", role = "aut",
+             comment = c(ORCID = "0000-0001-9754-0393")),
+      person("Sebastian", "Fischer", , "sebf.fischer@gmail.com", role = c("cre", "aut"),
+             comment = c(ORCID = "0000-0002-9609-3197")))
+Description: Provides an interface to 'OpenML.org' to list and download
+    machine learning data, tasks and experiments. The 'OpenML' objects can be
+    automatically converted to 'mlr3' objects.
+    For a more sophisticated interface which also allows uploading to 'OpenML',
+    see the 'OpenML' package.
+License: LGPL-3
+URL: https://mlr3oml.mlr-org.com, https://github.com/mlr-org/mlr3oml
+BugReports: https://github.com/mlr-org/mlr3oml/issues
+Depends: R (>= 3.1.0)
+Imports: backports (>= 1.1.6), checkmate, curl, data.table, jsonlite,
+        lgr, methods, mlr3 (>= 0.14.0), mlr3misc (>= 0.7.0), paradox,
+        R6, stringi, uuid, withr
+Suggests: DBI, duckdb, mlr3db (>= 0.5.0), qs, RWeka, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 7.2.1
+Packaged: 2022-10-11 14:12:58 UTC; sebi
+Author: Michel Lang [aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Sebastian Fischer [cre, aut] (<https://orcid.org/0000-0002-9609-3197>)
+Maintainer: Sebastian Fischer <sebf.fischer@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-10-12 12:10:12 UTC

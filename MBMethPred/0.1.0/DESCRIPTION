@@ -1,0 +1,34 @@
+Package: MBMethPred
+Type: Package
+Title: Medulloblastoma Subgroups Prediction
+Version: 0.1.0
+Date: 2022-11-23
+Description: Utilizing a combination of machine learning models (Random Forest, Naive Bayes, K-Nearest Neighbor, Support Vector Machines, Extreme Gradient Boosting, and Linear Discriminant Analysis) and a deep Artificial Neural Network model, 'MBMethPred' can predict medulloblastoma subgroups, including wingless (WNT), sonic hedgehog (SHH), Group 3, and Group 4 from methylation data.
+Authors@R: c(
+  person(given = "Edris", family = "Sharif Rahmani", email = "rahmani.biotech@gmail.com", role = c("aut", "ctb", "cre"), comment = c(ORCID = "0000-0002-7899-1663")),
+  person(given = "Ankita", family = "Sunil Lawarde", email = "ankita.sunil.lawarde@ut.ee", role = c("aut", "ctb"), comment = c(ORCID = "0000-0001-7572-4431")),
+  person(given = "Vijayachitra", family = "Modhukur", email = "vijayachitra.m@gmail.com", role = c("aut", "ctb"), comment = c(ORCID = "0000-0002-7123-9903")))
+Maintainer: Edris Sharif Rahmani <rahmani.biotech@gmail.com>
+BugReports: https://github.com/sharifrahmanie/MBMethPred/issues
+License: GPL
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.2
+Imports: stringr, ggplot2, parallel, caTools, caret, keras, MASS,
+        Rtsne, SNFtool, class, dplyr, e1071, pROC, randomForest, readr,
+        reshape2, reticulate, rgl, tensorflow, xgboost
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, testthat, utils, stats, scales
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-12-11 15:41:00 UTC; root
+Author: Edris Sharif Rahmani [aut, ctb, cre]
+    (<https://orcid.org/0000-0002-7899-1663>),
+  Ankita Sunil Lawarde [aut, ctb]
+    (<https://orcid.org/0000-0001-7572-4431>),
+  Vijayachitra Modhukur [aut, ctb]
+    (<https://orcid.org/0000-0002-7123-9903>)
+Repository: CRAN
+Date/Publication: 2022-12-13 12:20:02 UTC

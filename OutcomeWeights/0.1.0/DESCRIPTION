@@ -1,0 +1,29 @@
+Package: OutcomeWeights
+Type: Package
+Title: Outcome Weights of Treatment Effect Estimators
+Version: 0.1.0
+Description: Many treatment effect estimators can be written as weighted outcomes.
+    These weights have established use cases like checking covariate balancing via packages like 'cobalt'.
+    This package takes the original estimator objects and outputs these outcome weights.
+    It builds on the general framework of Knaus (2024) <doi:10.48550/arXiv.2411.11559>.
+    This version is compatible with the 'grf' package and provides an internal implementation of Double Machine Learning.
+Authors@R: c(
+    person("Michael C.", "Knaus", email = "michael.knaus@uni-tuebingen.de", role = c("aut","cre"), comment = c(ORCID = "0000-0002-7328-1363")),
+    person("Henri", "Pfleiderer", email = "henri.1999@web.de", role = "ctb")
+    )
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/MCKnaus/OutcomeWeights
+BugReports: https://github.com/MCKnaus/OutcomeWeights/issues
+Imports: ggplot2, grf, methods
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-11-20 13:34:23 UTC; Michael
+Author: Michael C. Knaus [aut, cre] (<https://orcid.org/0000-0002-7328-1363>),
+  Henri Pfleiderer [ctb]
+Maintainer: Michael C. Knaus <michael.knaus@uni-tuebingen.de>
+Repository: CRAN
+Date/Publication: 2024-11-21 08:00:10 UTC

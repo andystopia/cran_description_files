@@ -1,0 +1,68 @@
+Package: finalsize
+Title: Calculate the Final Size of an Epidemic
+Version: 0.1
+Authors@R: 
+    c(
+        person(
+            given = "Pratik",
+            family = "Gupte",
+            role = c("aut", "cre", "cph"),
+            email = "pratik.gupte@lshtm.ac.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0001-5294-7819")
+        ),
+        person(
+            given = "Edwin",
+            family = "Van Leeuwen",
+            role = c("aut", "cph"),
+            email = "edwin.vanleeuwen@ukhsa.gov.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0002-2383-5305")
+        ),
+        person(
+            given = "Adam",
+            family = "Kucharski",
+            role = c("aut", "cph"),
+            email = "adam.kucharski@lshtm.ac.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0001-8814-9421")
+        ),
+        person(
+            given = "Hugo",
+            family = "Gruson",
+            role = c("ctb"),
+            email = "hugo.gruson@lshtm.ac.uk",
+            comment = c(ORCID = "https://orcid.org/0000-0002-4094-1476")
+        ),
+        person(
+            given = "Thibaut",
+            family = "Jombart",
+            role = c("ctb"),
+            email = "thibaut@data.org",
+            comment = c(ORCID = "https://orcid.org/0000-0003-3796-2097")
+        )
+    )
+Description: Calculate the final size of a susceptible-infectious-recovered epidemic in a population with demographic variation in contact patterns and susceptibility to disease, as discussed in Miller (2012) <doi:10.1007/s11538-012-9749-6>.
+License: MIT + file LICENSE
+URL: https://epiverse-trace.github.io/finalsize/,
+        https://github.com/epiverse-trace/finalsize
+BugReports: https://github.com/epiverse-trace/finalsize/issues
+Imports: Rcpp
+LinkingTo: Rcpp, RcppEigen
+Suggests: colorspace, covr, data.table, knitr, bookdown, scales,
+        socialmixr, testthat (>= 3.0.0), xml2, ggplot2, ggtext,
+        rmarkdown, usethis
+Config/testthat/edition: 3
+SystemRequirements: C++14
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2022-12-05 09:52:22 UTC; lshpg6
+Author: Pratik Gupte [aut, cre, cph] (<https://orcid.org/0000-0001-5294-7819>),
+  Edwin Van Leeuwen [aut, cph] (<https://orcid.org/0000-0002-2383-5305>),
+  Adam Kucharski [aut, cph] (<https://orcid.org/0000-0001-8814-9421>),
+  Hugo Gruson [ctb] (<https://orcid.org/0000-0002-4094-1476>),
+  Thibaut Jombart [ctb] (<https://orcid.org/0000-0003-3796-2097>)
+Maintainer: Pratik Gupte <pratik.gupte@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-12-05 14:10:05 UTC

@@ -1,0 +1,31 @@
+Package: HCV
+Title: Hierarchical Clustering from Vertex-Links
+Description: Hierarchical clustering for spatial data, which requires clustering 
+    results not only homogeneous in non-geographical features among samples but 
+    also geographically close to each other within a cluster. It modified typically 
+    used hierarchical agglomerative clustering algorithms for introducing the spatial 
+    homogeneity, by considering geographical locations as vertices and converting 
+    spatial adjacency into whether a shared edge exists between a pair of vertices 
+    (Tzeng & Hsu, 2022) <arXiv:2201.08302>. The constraints of the vertex links 
+    automatically enforce the spatial contiguity property at each step of iterations. 
+    In addition, methods to find an appropriate number of clusters and to report 
+    cluster members are also provided.
+Version: 1.1.0
+Date: 2022-01-24
+Depends: R (>= 4.0.0)
+Imports: BLSM (>= 0.1.0), cluster, geometry (>= 0.4.5), graphics,
+        grDevices, M3C (>= 1.12.0), MASS, Matrix, rgeos (>= 0.5.1), sp
+        (>= 1.4.2)
+Suggests: alphahull, knitr, fields (>= 11.4)
+Authors@R: c(person("ShengLi", "Tzeng", email = "slt.cmu@gmail.com", role=c("cre","aut")),
+             person("Hao-Yun", "Hsu", email = "zoez5230100@gmail.com", role="aut"))
+Maintainer: ShengLi Tzeng <slt.cmu@gmail.com>
+NeedsCompilation: no
+License: LGPL-3
+Date/Publication: 2022-01-27 08:50:05 UTC
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Packaged: 2022-01-25 22:30:55 UTC; h0h1
+Author: ShengLi Tzeng [cre, aut],
+  Hao-Yun Hsu [aut]
+Repository: CRAN

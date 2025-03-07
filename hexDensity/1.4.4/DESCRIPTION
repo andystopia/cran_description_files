@@ -1,0 +1,43 @@
+Package: hexDensity
+Type: Package
+Title: Fast Kernel Density Estimation with Hexagonal Grid
+Version: 1.4.4
+Authors@R: c(person(given = "Quoc Hoang",
+                  family = "Nguyen",
+                  role = c("aut","cre"),
+                  email = "nguyen.q@wehi.edu.au",
+                  comment = c(ORCID = "0009-0007-2828-7567")),
+             person(given = "Dan",
+                  family = "Carr",
+                  role = "ctb",
+                  email = "dcarr@voxel.galaxy.gmu.edu"),
+             person(given = c("binning","routine","ported", "by", "Nicholas"),
+                  family = "Lewin-Koh",
+                  role = "ctb"),
+             person(given = "Martin",
+                  family = "Maechler",
+                  role = "ctb",
+                  email = "maechler@stat.math.ethz.ch"))
+Maintainer: Quoc Hoang Nguyen <nguyen.q@wehi.edu.au>
+Description: Kernel density estimation with hexagonal grid for bivariate data.
+      Hexagonal grid has many beneficial properties like equidistant neighbours
+      and less edge bias, making it better for spatial analyses than the more
+      commonly used rectangular grid.
+      Carr, D. B. et al. (1987) <doi:10.2307/2289444>.
+      Diggle, P. J. (2010) <doi:10.1201/9781420072884>.
+      Hill, B. (2017) <https://blog.bruce-hill.com/meandering-triangles>.
+      Jones, M. C. (1993) <doi:10.1007/BF00147776>.
+URL: https://github.com/ChenLaboratory/hexDensity
+License: GPL
+Encoding: UTF-8
+NeedsCompilation: yes
+Imports: hexbin, spatstat.geom, grid, grDevices, methods
+Suggests: ggplot2
+RoxygenNote: 7.3.2
+Packaged: 2024-09-20 11:53:39 UTC; hoang
+Author: Quoc Hoang Nguyen [aut, cre] (<https://orcid.org/0009-0007-2828-7567>),
+  Dan Carr [ctb],
+  binning routine ported by Nicholas Lewin-Koh [ctb],
+  Martin Maechler [ctb]
+Repository: CRAN
+Date/Publication: 2024-09-23 12:50:34 UTC

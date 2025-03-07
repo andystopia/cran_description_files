@@ -1,0 +1,52 @@
+Package: procs
+Type: Package
+Title: Recreates Some 'SAS®' Procedures in 'R'
+Version: 1.0.4
+Authors@R: c(
+    person(given = "David",
+           family = "Bosak",
+           role = c("aut", "cre"),
+           email = "dbosak01@gmail.com"),
+    person(given = "Kevin",
+           family = "Kramer",
+           role = c("ctb"),
+           email = "kkrame02@amgen.com"),
+    person(given = "Brian",
+           family = "Varney",
+           role = c("ctb"),
+           email = "brian.varney@experis.com"),
+    person(given = "Duong",
+           family = "Tran",
+           role = c("ctb"),
+           email = "trand000@aol.com"),
+    person(given = "Yifei",
+           family = "Chen",
+           role = c("ctb"),
+           email = "yifeichen@andrewsosborne.com")
+           )
+Maintainer: David Bosak <dbosak01@gmail.com>
+Description: Contains functions to simulate the most commonly used 
+    'SAS®' procedures.  Specifically, the package aims to 
+    simulate the functionality of 'proc freq', 'proc means', 'proc ttest',
+    'proc transpose', 'proc sort', and 'proc print'. 
+    The simulation will include recreating 
+    all statistics with the highest fidelity possible. 
+License: CC0
+Encoding: UTF-8
+URL: https://procs.r-sassy.org, https://github.com/dbosak01/procs
+BugReports: https://github.com/dbosak01/procs/issues
+Depends: R (>= 3.6.0), common
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), covr, logr
+Imports: utils, fmtr, reporter, stats, tibble, sasLM
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-20 18:27:06 UTC; dbosa
+Author: David Bosak [aut, cre],
+  Kevin Kramer [ctb],
+  Brian Varney [ctb],
+  Duong Tran [ctb],
+  Yifei Chen [ctb]
+Repository: CRAN
+Date/Publication: 2023-12-20 19:20:08 UTC

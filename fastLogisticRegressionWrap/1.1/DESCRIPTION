@@ -1,0 +1,27 @@
+Package: fastLogisticRegressionWrap
+Type: Package
+Title: Fast Logistic Regression Wrapper
+Date: 2023-07-11
+Version: 1.1
+Authors@R: c(
+	person("Adam", "Kapelner", email = "kapelner@qc.cuny.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5985-6792")),
+	person("Beau", "Walker", email = "beau@methoddatascience.com", role = c("rev", "dtc"), comment = c(ORCID = "0000-0001-7872-4007")),
+	person("Gabriel", "Mayer", email = "gmayer@revelartechnologies.com", role = c("fnd", "dtc"))
+  )
+License: GPL-3
+Description: Provides very fast logistic regression with coefficient inferences plus other useful methods such as a forward stepwise model generator (see the benchmarks by visiting the github page at the URL below). The inputs are flexible enough to accomodate GPU computations. The coefficient estimation is the fastLR() method in the 'RcppNumerical' package by Yixuan Qiu et al. This package allows their work to be more useful to a wider community that demands inference.
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: RcppNumerical, Rcpp, checkmate, stats, MASS, methods
+LinkingTo: Rcpp, RcppEigen
+URL: https://github.com/kapelner/fastLogisticRegressionWrap
+BugReports: https://github.com/kapelner/fastLogisticRegressionWrap/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-07-11 06:43:19 UTC; kapel
+Author: Adam Kapelner [aut, cre] (<https://orcid.org/0000-0001-5985-6792>),
+  Beau Walker [rev, dtc] (<https://orcid.org/0000-0001-7872-4007>),
+  Gabriel Mayer [fnd, dtc]
+Maintainer: Adam Kapelner <kapelner@qc.cuny.edu>
+Repository: CRAN
+Date/Publication: 2023-07-13 21:50:04 UTC

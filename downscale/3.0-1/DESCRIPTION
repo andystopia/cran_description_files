@@ -1,0 +1,29 @@
+Package: downscale
+Type: Package
+Title: Downscaling Species Occupancy
+Version: 3.0-1
+Date: 2018-08-31
+Author: Charles Marsh [aut, cre]
+Maintainer: Charles Marsh <charliem2003@gmail.com>
+Description: Downscales species occupancy at coarse grain sizes to predict species occupancy at fine grain sizes. Ten models are provided to fit and extrapolate the occupancy-area relationship, as well as methods for preparing atlas data for modelling. See Marsh et. al. (2018) doi:10.18637/jss.v086.c03.
+License: GPL-2
+Depends: raster (>= 2.4-20), R (>= 3.0.0)
+Imports: cubature (>= 1.1-2), graphics, grDevices, methods, minpack.lm
+        (>= 1.1-9), Rmpfr (>= 0.5-7), sp (>= 1.2-0), stats
+Suggests: rgeos, rgbif (>= 0.9.2),
+LazyData: true
+Collate: 'DataInput.R' 'downscale.R' 'OptimiseParameters.R'
+        'OptimiseParametersGNB.R' 'OptimiseParametersFNB.R'
+        'OptimiseParametersLogis.R' 'OptimiseParametersThomas.R'
+        'PredictFunctions.R' 'ResidFunctions.R' 'StartingParams.R'
+        'ThomasFunctions.R' 'plot.predict.downscale.R'
+        'predict.downscale.R' 'ensemble.downscale.R' 'upgrain.R'
+        'hui.downscale.R' 'HuiFunctions.R' 'upgrain.threshold.R'
+RoxygenNote: 6.0.1
+Repository: CRAN
+Repository/R-Forge/Project: downscale
+Repository/R-Forge/Revision: 59
+Repository/R-Forge/DateTimeStamp: 2018-08-31 11:17:03
+Date/Publication: 2018-08-31 13:50:03 UTC
+NeedsCompilation: no
+Packaged: 2018-08-31 11:30:23 UTC; rforge

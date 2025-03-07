@@ -1,0 +1,29 @@
+Encoding: UTF-8
+Package: COMBIA
+Type: Package
+Title: Synergy/Antagonism Analyses of Drug Combinations
+Version: 1.0.5
+Date: 2017-10-21
+Author: Muhammad Kashif
+Maintainer: Muhammad Kashif <Muhammad.Kashif@medsci.uu.se>
+Description: A comprehensive synergy/antagonism analyses of drug combinations with 
+		quality graphics and data. The analyses can be performed by Bliss 
+		independence and Loewe additivity models. 'COMBIA' provides improved 
+		statistical analysis and makes only very weak assumption of data 
+		variability while calculating bootstrap intervals (BIs). It is based
+		on heteroscedasticity controlled resampling (bootstrapping) and includes
+		a global (omnibus) test. Finally, package saves analyzed data, 2D and 3D
+	 	plots ready to use in research publications. 'COMBIA' does not require manual
+		data entry. Data can be directly input from wetlab experimental platforms for
+	 	example fluostar, automated robots etc. One only needs to call a single function, 
+		analyzeCOMBO(), to perform all analysis (examples are provided with sample data).
+Depends: hash, lattice, latticeExtra, oro.nifti
+Imports: gdata, grDevices, stats, utils
+License: GPL (>= 2)
+SystemRequirements: perl (>= 5.10.0)
+LazyLoad: yes
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-10-23 08:52:51 UTC; muhkas
+Repository: CRAN
+Date/Publication: 2017-10-23 10:02:18 UTC

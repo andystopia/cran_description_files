@@ -1,0 +1,41 @@
+Package: RcppCGAL
+Type: Package
+Title: 'Rcpp' Integration for 'CGAL'
+Version: 5.6.1
+Date: 2024-01-16
+Authors@R: 
+    c(
+    person(given = "Eric", family = "Dunipace", 
+        role = c("aut", "cre"),
+        email = "edunipace@mail.harvard.edu",
+        comment = c(ORCID = "0000-0001-8909-213X")),
+    person(given = "Tyler", "Morgan-Wall", 
+        role = c("ctb"),
+        email = "tylermw@gmail.com"),
+    person("The CGAL Project", role = "cph")
+    )
+Description: Creates a header only package to link to the 'CGAL' 
+  (Computational Geometry Algorithms Library)
+  header files in 'Rcpp'. There are a variety of potential uses for 
+  the software such as Hilbert sorting, K-D Tree nearest neighbors, 
+  and convex hull algorithms. For more information about how to use the header files, 
+  see the 'CGAL' documentation at <https://www.cgal.org>. Currently
+  downloads the 'CGAL' version 5.6 stable release.
+License: GPL-3
+Imports: Rcpp, utils
+Suggests: knitr, rmarkdown, spelling
+BugReports: https://github.com/ericdunipace/RcppCGAL/issues
+NeedsCompilation: no
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+VignetteBuilder: knitr
+Biarch: TRUE
+Language: en-US
+URL: https://github.com/ericdunipace/RcppCGAL
+Packaged: 2024-01-17 00:32:25 UTC; eifer
+Author: Eric Dunipace [aut, cre] (<https://orcid.org/0000-0001-8909-213X>),
+  Tyler Morgan-Wall [ctb],
+  The CGAL Project [cph]
+Maintainer: Eric Dunipace <edunipace@mail.harvard.edu>
+Repository: CRAN
+Date/Publication: 2024-01-17 06:10:02 UTC

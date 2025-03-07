@@ -1,0 +1,87 @@
+Type: Package
+Package: modelsummary
+Title: Summary Tables and Plots for Statistical Models and Data:
+        Beautiful, Customizable, and Publication-Ready
+Description: Create beautiful and customizable tables to summarize several
+    statistical models side-by-side. Draw coefficient plots, multi-level
+    cross-tabs, dataset summaries, balance tables (a.k.a. "Table 1s"), and
+    correlation matrices. This package supports dozens of statistical models,
+    and it can produce tables in HTML, LaTeX, Word, Markdown, PDF, PowerPoint,
+    Excel, RTF, JPG, or PNG. Tables can easily be embedded in 'Rmarkdown' or 
+    'knitr' dynamic documents.
+Version: 0.9.5
+Authors@R: c(person("Vincent", "Arel-Bundock", 
+                   email = "vincent.arel-bundock@umontreal.ca", 
+                   role = c("aut", "cre"),
+                   comment = c(ORCID = "0000-0003-2042-7063")),
+            person("Joachim", "Gassen", 
+                   email = "gassen@wiwi.hu-berlin.de",
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0003-4364-2911")),
+            person("Nathan", "Eastwood",
+                   role = "ctb",
+                   email = "nathan.eastwood@icloud.com"),
+            person("Nick", "Huntington-Klein", 
+                   email = "nhuntington-klein@seattleu.edu",
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0002-7352-3991")),
+            person("Moritz", "Schwarz", 
+                   email = "moritz.schwarz@scmo.eu",
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0003-0340-3780")),
+            person("Benjamin", "Elbers",
+                   email = "be2239@columbia.edu",
+                   role = "ctb",
+                   comment = c(ORDIC = "0000-0001-5392-3448")),
+            person(given = "Grant",
+                   family = "McDermott",
+                   role = "ctb",
+                   email = "grantmcd@uoregon.edu",
+                   comment = c(ORCID = "0000-0001-7883-8573")))
+URL: https://vincentarelbundock.github.io/modelsummary/
+BugReports: https://github.com/vincentarelbundock/modelsummary/issues/
+Depends: R (>= 3.5.0)
+Imports: broom, checkmate, generics, glue, insight, kableExtra (>=
+        1.2.1), parameters, performance, rlang, tables
+Suggests: betareg, bookdown, broom.mixed, covr, digest, DT, estimatr,
+        fixest, flextable, gamlss, ggplot2, gt (>= 0.3.0), huxtable,
+        IRdisplay, knitr, lfe, lme4, lmtest, magick, officer,
+        rmarkdown, sandwich, spelling, testthat, tibble, MASS, mice,
+        nnet, pscl, vdiffr
+License: GPL-3
+Encoding: UTF-8
+Config/testthat/edition: 3
+Config/testthat/start-first: pkg-lme4
+Language: en-US
+RoxygenNote: 7.1.2
+Collate: 'coef_rename.R' 'convenience.R' 'datasummary.R'
+        'datasummary_balance.R' 'datasummary_correlation.R'
+        'datasummary_crosstab.R' 'datasummary_df.R'
+        'datasummary_extract.R' 'datasummary_functions.R'
+        'datasummary_skim.R' 'dvnames.R' 'escape.R' 'factory.R'
+        'factory_dataframe.R' 'factory_flextable.R' 'factory_gt.R'
+        'factory_huxtable.R' 'factory_kableExtra.R'
+        'format_estimates.R' 'format_gof.R' 'get_estimates.R'
+        'get_gof.R' 'get_vcov.R' 'glance_custom.R' 'gof_map.R'
+        'methods_did.R' 'methods_estimatr.R' 'methods_fixest.R'
+        'methods_lfe.R' 'methods_stats.R' 'modelplot.R'
+        'modelsummary.R' 'modelsummary_list.R' 'modelsummary_wide.R'
+        'poorman.R' 'reexport.R' 'sanitize_gof_map.R'
+        'sanitize_group.R' 'sanitize_models.R' 'sanitize_output.R'
+        'sanitize_vcov.R' 'sanity_checks.R' 'settings.R' 'stars.R'
+        'supported_models.R' 'themes.R' 'tidy_custom.R' 'utils_pad.R'
+        'utils_print.R' 'utils_replace.R' 'utils_rounding.R'
+        'utils_stats.R'
+NeedsCompilation: no
+Packaged: 2022-01-10 17:01:10 UTC; vincent
+Author: Vincent Arel-Bundock [aut, cre]
+    (<https://orcid.org/0000-0003-2042-7063>),
+  Joachim Gassen [ctb] (<https://orcid.org/0000-0003-4364-2911>),
+  Nathan Eastwood [ctb],
+  Nick Huntington-Klein [ctb] (<https://orcid.org/0000-0002-7352-3991>),
+  Moritz Schwarz [ctb] (<https://orcid.org/0000-0003-0340-3780>),
+  Benjamin Elbers [ctb] (0000-0001-5392-3448),
+  Grant McDermott [ctb] (<https://orcid.org/0000-0001-7883-8573>)
+Maintainer: Vincent Arel-Bundock <vincent.arel-bundock@umontreal.ca>
+Repository: CRAN
+Date/Publication: 2022-01-10 17:32:48 UTC

@@ -1,0 +1,24 @@
+Package: hlaR
+Type: Package
+Title: Tools for HLA Data
+Version: 0.1.1
+Description: A streamlined tool for eplet analysis of donor and recipient HLA (human leukocyte antigen) mismatch. Messy, low-resolution HLA typing data is cleaned, and imputed to high-resolution using the NMDP (National Marrow Donor Program) haplotype reference database <https://haplostats.org/haplostats>. High resolution data is analyzed for overall or single antigen eplet mismatch using a reference table (currently supporting 'HLAMatchMaker' <http://www.epitopes.net> versions 2 and 3). Data can enter or exit the workflow at different points depending on the user's aims and initial data quality.
+Authors@R: c(person("Joan","Zhang",email = "joan.zhang@emory.edu", role = c("aut", "cre")),
+             person("Aileen","Johnson",email = "aileen.johnson@emory.edu ", role = c("aut")),
+             person("Christian P","Larsen",email = "clarsen@emory.edu", role = c("cph", "aut")))
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Imports: devtools, usethis, tidyverse, dplyr, reshape2, schoolmath,
+        tibble, stringr, purrr, tidyr, utils, readr, here, readxlsb
+NeedsCompilation: no
+Packaged: 2021-09-27 19:23:56 UTC; xzhan50
+Author: Joan Zhang [aut, cre],
+  Aileen Johnson [aut],
+  Christian P Larsen [cph, aut]
+Maintainer: Joan Zhang <joan.zhang@emory.edu>
+Repository: CRAN
+Date/Publication: 2021-09-27 20:10:02 UTC

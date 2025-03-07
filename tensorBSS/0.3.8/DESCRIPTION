@@ -1,0 +1,47 @@
+Package: tensorBSS
+Type: Package
+Title: Blind Source Separation Methods for Tensor-Valued Observations
+Version: 0.3.8
+Date: 2021-05-26
+Authors@R: 
+    c(person(given = "Joni",
+             family = "Virta",
+             role = c("aut", "cre"),
+             email = "joni.virta@outlook.com",
+             comment = c(ORCID = "0000-0001-7330-8434")),
+      person(given = "Christoph L.",
+             family = "Koesner",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-2061-8022")),
+      person(given = "Bing",
+             family = "Li",
+             role = "aut"),
+      person(given = "Klaus",
+             family = "Nordhausen",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-3758-8501")),
+      person(given = "Hannu",
+             family = "Oja",
+             role = "aut"),
+      person(given = "Una",
+             family = "Radojicic",
+             role = "aut",
+             comment = c(ORCID = "0000-0003-0329-0595"))
+     )
+Maintainer: Joni Virta <joni.virta@outlook.com>
+Description: Contains several utility functions for manipulating tensor-valued data (centering, multiplication from a single mode etc.) and the implementations of the following blind source separation methods for tensor-valued data: 'tPCA', 'tFOBI', 'tJADE', k-tJADE', 'tgFOBI', 'tgJADE', 'tSOBI', 'tNSS.SD', 'tNSS.JD', 'tNSS.TD.JD', 'tPP' and 'tTUCKER'.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.3), tensor, tsBSS, ICtest, ggplot2, abind
+LinkingTo: Rcpp, RcppArmadillo
+Depends: JADE, R (>= 2.10), fICA
+Suggests: stochvol
+NeedsCompilation: yes
+Packaged: 2021-06-02 05:59:43 UTC; joniv
+Repository: CRAN
+Date/Publication: 2021-06-02 06:20:02 UTC
+Author: Joni Virta [aut, cre] (<https://orcid.org/0000-0001-7330-8434>),
+  Christoph L. Koesner [aut] (<https://orcid.org/0000-0002-2061-8022>),
+  Bing Li [aut],
+  Klaus Nordhausen [aut] (<https://orcid.org/0000-0002-3758-8501>),
+  Hannu Oja [aut],
+  Una Radojicic [aut] (<https://orcid.org/0000-0003-0329-0595>)

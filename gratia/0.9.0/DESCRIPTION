@@ -1,0 +1,36 @@
+Package: gratia
+Version: 0.9.0
+Date: 2024-03-26
+Title: Graceful 'ggplot'-Based Graphics and Other Functions for GAMs
+        Fitted Using 'mgcv'
+Authors@R: c(person(given = "Gavin L.", family = "Simpson",
+                    email = "ucfagls@gmail.com",
+                    role = c("aut","cre"),
+		            comment = c(ORCID = "0000-0002-9084-8413")),
+             person(given = "Henrik", family = "Singmann",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0002-4842-3657")))
+Maintainer: Gavin L. Simpson <ucfagls@gmail.com>
+Depends: R (>= 4.1.0)
+Imports: mgcv (>= 1.9-0), ggplot2 (>= 3.5.0), tibble (>= 3.0.0), dplyr
+        (>= 1.1.0), tidyr, rlang, patchwork, vctrs, grid, mvnfast,
+        purrr, stats, tools, grDevices, stringr, tidyselect (>= 1.2.0),
+        lifecycle, pillar, cli, nlme, ggokabeito, withr
+Suggests: gamm4, lme4, testthat, vdiffr, MASS, scam, datasets, knitr,
+        rmarkdown, forcats, GJRM, readr, glmmTMB, ggdist,
+        distributional, hexbin, gamair, sf (>= 0.7-3)
+Description: Graceful 'ggplot'-based graphics and utility functions for working with generalized additive models (GAMs) fitted using the 'mgcv' package. Provides a reimplementation of the plot() method for GAMs that 'mgcv' provides, as well as 'tidyverse' compatible representations of estimated smooths.
+License: MIT + file LICENSE
+LazyData: true
+URL: https://gavinsimpson.github.io/gratia/
+BugReports: https://github.com/gavinsimpson/gratia/issues
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-03-26 14:38:08 UTC; au690221
+Author: Gavin L. Simpson [aut, cre] (<https://orcid.org/0000-0002-9084-8413>),
+  Henrik Singmann [ctb] (<https://orcid.org/0000-0002-4842-3657>)
+Repository: CRAN
+Date/Publication: 2024-03-27 17:40:02 UTC

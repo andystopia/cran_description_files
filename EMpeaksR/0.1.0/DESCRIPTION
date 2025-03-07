@@ -1,0 +1,16 @@
+Package: EMpeaksR
+Type: Package
+Title: Conducting the Peak Fitting Based on the EM Algorithm
+Version: 0.1.0
+Authors@R: person("Tarojiro", "Matsumura", role = c("aut", "cre"), email = "matsumura-tarojiro@aist.go.jp")
+Description: The peak fitting of spectral data is performed by using the frame work of EM algorithm.     We adapted the EM algorithm for the peak fitting of spectral data set by considering     the weight of the intensity corresponding to the measurement energy steps    (Matsumura, T., Nagamura, N., Akaho, S., Nagata, K., & Ando, Y. (2019) <doi:10.1080/14686996.2019.1620123>).    The package efficiently estimates the parameters of Gaussian mixture model during    iterative calculation between E-step and M-step, and    the parameters are converged to a local optimal solution.    This package can support the investigation of peak shift with two advantages:    (1) a large amount of data can be processed at high speed; and   (2) stable and automatic calculation can be easily performed.
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-04-20 12:59:10 UTC; tarojiro.matsumura
+Author: Tarojiro Matsumura [aut, cre]
+Maintainer: Tarojiro Matsumura <matsumura-tarojiro@aist.go.jp>
+Repository: CRAN
+Date/Publication: 2021-04-20 13:50:05 UTC

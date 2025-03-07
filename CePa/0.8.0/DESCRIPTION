@@ -1,0 +1,30 @@
+Package: CePa
+Type: Package
+Title: Centrality-Based Pathway Enrichment
+Version: 0.8.0
+Date: 2022-06-10
+Authors@R: person("Zuguang", "Gu", email = "z.gu@dkfz.de", role = c("aut", "cre"),
+                  comment = c('ORCID'="0000-0002-7395-8709"))
+Depends: R (>= 3.6.0)
+Imports: igraph (>= 0.6), stats, graphics, methods, grDevices,
+        parallel, Rgraphviz, graph
+Description: It aims to find significant pathways through 
+    network topology information. It has several advantages compared 
+    with current pathway enrichment tools. First, pathway node instead 
+    of single gene is taken as the basic unit when analysing networks 
+    to meet the fact that genes must be constructed into complexes to 
+    hold normal functions. Second, multiple network centrality measures are 
+    applied simultaneously to measure importance of nodes from different 
+    aspects to make a full view on the biological system. CePa extends 
+    standard pathway enrichment methods, which include both over-representation 
+    analysis procedure and gene-set analysis procedure. 
+    <doi:10.1093/bioinformatics/btt008>.
+LazyLoad: yes
+URL: https://github.com/jokergoo/CePa
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2022-06-11 11:59:04 UTC; guz
+Author: Zuguang Gu [aut, cre] (<https://orcid.org/0000-0002-7395-8709>)
+Maintainer: Zuguang Gu <z.gu@dkfz.de>
+Repository: CRAN
+Date/Publication: 2022-06-11 21:30:06 UTC

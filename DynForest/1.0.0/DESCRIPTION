@@ -1,0 +1,29 @@
+Package: DynForest
+Title: Random Forest with Multivariate Longitudinal Predictors
+Version: 1.0.0
+Authors@R: 
+    person("Anthony", "Devaux", email = "anthony.devaux@u-bordeaux.fr", 
+    role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8862-4218"))
+Description: Based on random forest principle, 'DynForest' is able to include 
+    multiple longitudinal predictors to provide individual predictions. 
+    Longitudinal predictors are modeled through the random forest. The 
+    methodology is fully described for a survival outcome in: 
+    Devaux, Helmer, Dufouil, Genuer & Proust-Lima (2022) 
+    <doi: 10.48550/arXiv.2208.05801>.
+Imports: DescTools, cmprsk, doParallel, foreach, ggplot2, lcmm,
+        methods, pbapply, pec, prodlim, stringr, survival, zoo
+Depends: R (>= 3.5.0)
+License: LGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+URL: https://github.com/anthonydevaux/DynForest
+BugReports: https://github.com/anthonydevaux/DynForest/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-09-20 08:34:19 UTC; antho
+Author: Anthony Devaux [aut, cre] (<https://orcid.org/0000-0002-8862-4218>)
+Maintainer: Anthony Devaux <anthony.devaux@u-bordeaux.fr>
+Repository: CRAN
+Date/Publication: 2022-09-20 10:46:17 UTC

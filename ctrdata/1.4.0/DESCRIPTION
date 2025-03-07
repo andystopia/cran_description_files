@@ -1,0 +1,37 @@
+Package: ctrdata
+Type: Package
+Title: Retrieve and Analyze Clinical Trials in Public Registers
+Version: 1.4.0
+Date: 2020-10-17
+Imports: jsonlite, httr, curl, clipr, xml2, rvest, nodbi (>= 0.4)
+SystemRequirements: sed, php, cat, perl
+URL: https://cran.r-project.org/package=ctrdata
+BugReports: https://github.com/rfhb/ctrdata/issues
+Description: Provides functions for querying, retrieving and analysing
+        protocol- and results-related information on clinical trials from
+        two public registers, the European Union Clinical Trials Register
+        (EUCTR, <https://www.clinicaltrialsregister.eu/>) and
+        ClinicalTrials.gov (CTGOV, <https://clinicaltrials.gov/>). The
+        trial information is transformed and stored in a database (RSQLite 
+        or MongoDB, via nodbi). Functions are provided to identify de-
+        duplicated records, to easily find and extract variables (fields)
+        of interest even from complex nesting as used by the registers, 
+        and to update previous queries that users retrieved in a database. 
+        The package can be used for meta analysis and trend-analysis of
+        the design and conduct as well as results of clinical trials.
+License: MIT + file LICENSE
+RoxygenNote: 7.1.1
+LazyData: true
+Suggests: devtools, knitr, rmarkdown, RSQLite (>= 2.1.2), mongolite,
+        tinytest (>= 1.2.1), R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Encoding: UTF-8
+Authors@R: person(given = "Ralf", family = "Herold", role = c("aut", "cre"),
+        email = "ralf.herold@mailbox.org", comment = c(ORCID =
+        "0000-0002-8148-6748"))
+Packaged: 2020-10-17 14:52:06 UTC; ralfherold
+Author: Ralf Herold [aut, cre] (<https://orcid.org/0000-0002-8148-6748>)
+Maintainer: Ralf Herold <ralf.herold@mailbox.org>
+Repository: CRAN
+Date/Publication: 2020-10-19 17:40:02 UTC

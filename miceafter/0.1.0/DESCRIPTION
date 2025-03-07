@@ -1,0 +1,44 @@
+Package: miceafter
+Type: Package
+Depends: R (>= 4.0.0),
+Imports: survival (>= 3.1-12), pROC (>= 1.16.2), rms (>= 6.1-0), mice
+        (>= 3.12.0), mitml (>= 0.3-7), mitools (>= 2.4), dplyr (>=
+        1.0.2), purrr (>= 0.3.4), tidyr (>= 1.1.2), tibble (>= 3.0.4),
+        stringr (>= 1.4.0), car (>= 3.0-10), rlang, magrittr
+Suggests: foreign (>= 0.8-80), knitr, rmarkdown, testthat (>= 3.0.0),
+        bookdown, readr
+Title: Data and Statistical Analyses after Multiple Imputation
+Version: 0.1.0
+Authors@R: c(
+   person("Martijn", "Heymans", email = "mw.heymans@amsterdamumc.nl", role=c("cre", "aut"),
+   comment = c(ORCID = "0000-0002-3889-0921")),
+   person("Jaap", "Brand", email = "jaapbrand2651965@gmail.com", role=c("ctb")))
+Description: 
+   Statistical Analyses and Pooling after Multiple Imputation. A large variety 
+   of repeated statistical analysis can be performed and finally pooled. Statistical analysis 
+   that are available are, among others, Levene's test, Odds and Risk Ratios, One sample 
+   proportions, difference between proportions and linear and logistic regression models. 
+   Functions can also be used in combination with the Pipe operator. 
+   More and more statistical analyses and pooling functions will be added over time.
+   Heymans (2007) <doi:10.1186/1471-2288-7-33>.
+   Eekhout (2017) <doi:10.1186/s12874-017-0404-7>.
+	 Wiel (2009) <doi:10.1093/biostatistics/kxp011>.
+	 Marshall (2009) <doi:10.1186/1471-2288-9-57>.
+	 Sidi (2021) <doi:10.1080/00031305.2021.1898468>.
+	 Lott (2018) <doi:10.1080/00031305.2018.1473796>.
+	 Grund (2021) <doi:10.31234/osf.io/d459g>.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+License: GPL (>= 2)
+URL: https://mwheymans.github.io/miceafter/
+BugReports: https://github.com/mwheymans/miceafter/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-12-15 20:41:40 UTC; mwhey
+Author: Martijn Heymans [cre, aut] (<https://orcid.org/0000-0002-3889-0921>),
+  Jaap Brand [ctb]
+Maintainer: Martijn Heymans <mw.heymans@amsterdamumc.nl>
+Repository: CRAN
+Date/Publication: 2021-12-16 10:10:02 UTC

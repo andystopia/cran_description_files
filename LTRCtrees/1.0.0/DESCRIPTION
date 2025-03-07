@@ -1,0 +1,25 @@
+Package: LTRCtrees
+Type: Package
+Title: Survival Trees to Fit Left-Truncated and Right-Censored and
+        Interval-Censored Survival Data
+Version: 1.0.0
+Description: Recursive partition algorithms designed for fitting survival tree with left-truncated and right censored (LTRC) data, as well as interval-censored data.
+    The LTRC trees can also be used to fit survival tree with time-varying covariates.
+Authors@R: c(
+    person("Wei", "Fu",  email = "weifu.scott@gmail.com", role = c("aut", "cre")),
+    person("Jeffrey", "Simonoff", role = "aut")
+    )
+Imports: partykit (>= 1.2.0), rpart, survival, interval,inum
+Suggests: Formula, rpart.plot, knitr, rmarkdown
+Depends: R (>= 3.2.0)
+License: GPL-3
+LazyData: TRUE
+Author: Wei Fu [aut, cre],
+  Jeffrey Simonoff [aut]
+Maintainer: Wei Fu <weifu.scott@gmail.com>
+VignetteBuilder: knitr, rmarkdown
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-01-06 21:18:42 UTC; fuwei
+Repository: CRAN
+Date/Publication: 2018-01-06 22:20:50 UTC

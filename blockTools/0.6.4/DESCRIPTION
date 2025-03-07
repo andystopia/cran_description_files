@@ -1,0 +1,24 @@
+Package: blockTools
+Type: Package
+Title: Block, Assign, and Diagnose Potential Interference in Randomized
+        Experiments
+Version: 0.6.4
+Date: 2023-02-03
+Authors@R: c(person(c("Ryan", "T."), "Moore", 
+                    email = "rtm@american.edu", 
+                    comment = c(ORCID = "0000-0002-3916-8113"), 
+                    role = c("aut", "cre")),
+             person("Keith", "Schnakenberg", role = "aut"))
+Imports: dplyr, MASS, tibble
+Suggests: nbpMatching, RItools, testthat (>= 3.0.0), xtable
+Config/testthat/edition: 3
+Description: Blocks units into experimental blocks, with one unit per treatment condition, by creating a measure of multivariate distance between all possible pairs of units.  Maximum, minimum, or an allowable range of differences between units on one variable can be set.  Randomly assign units to treatment conditions.  Diagnose potential interference between units assigned to different treatment conditions.  Write outputs to .tex and .csv files.
+License: GPL (>= 2) | file LICENSE
+URL: https://www.ryantmoore.org/html/software.blockTools.html
+NeedsCompilation: yes
+Packaged: 2023-02-04 20:29:12 UTC; rtm
+Author: Ryan T. Moore [aut, cre] (<https://orcid.org/0000-0002-3916-8113>),
+  Keith Schnakenberg [aut]
+Maintainer: Ryan T. Moore <rtm@american.edu>
+Repository: CRAN
+Date/Publication: 2023-02-06 08:22:38 UTC

@@ -1,0 +1,26 @@
+Package: ExprNet
+Type: Package
+Title: Characterizing Differential Expression of Selected Edges on a
+        Network
+Version: 1.0.0
+Authors@R: c(
+    person("Wenbin", "Wu", email = "drkwu999@gmail.com", role = c("aut", "cre")),
+    person("Leqi", "Tian", role = "ctb"))
+Description: A toy model studying expressions of selected edges (namely a sub-network) on a network. We aim to characterize how the lengths of selected edges vary between two phenotypes based on t tests results. Two statistics, AT1 and AT2, are computed to summarize the t tests results and distinguish the differentially expressed patterns of the sub-network.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/WenbinWu2001/ExprNet
+BugReports: https://github.com/WenbinWu2001/ExprNet/issues
+RoxygenNote: 7.2.3
+Imports: doParallel, foreach, here, parallel
+Depends: igraph, R (>= 2.10)
+Suggests: readr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-08-12 01:11:32 UTC; wenbinwu
+Author: Wenbin Wu [aut, cre],
+  Leqi Tian [ctb]
+Maintainer: Wenbin Wu <drkwu999@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-08-15 06:30:02 UTC

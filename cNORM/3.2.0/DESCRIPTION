@@ -1,0 +1,46 @@
+Package: cNORM
+Type: Package
+Title: Continuous Norming
+Version: 3.2.0
+Maintainer: Wolfgang Lenhard <wolfgang.lenhard@uni-wuerzburg.de>
+Date: 2024-08-17
+Authors@R: c(person("Alexandra", "Lenhard", role=c("aut"),
+    email="lenhard@psychometrica.de", comment=c(ORCID = "0000-0001-8680-4381")), 
+    person("Wolfgang", "Lenhard", role = c("cre","aut"), 
+    email="wolfgang.lenhard@uni-wuerzburg.de", 
+    comment=c(ORCID = "0000-0002-8184-6889")), 
+    person("Sebastian", "Gary", role=c("aut")),
+    person("WPS publisher", role = c("fnd"), comment=c("<https://www.wpspublish.com/>")))
+Description: A comprehensive toolkit for generating continuous test norms in 
+    psychometrics and biometrics, and analyzing model fit. cNORM offers both 
+    distribution-free modeling using Taylor polynomials and parametric modeling 
+    using the beta-binomial distribution. Originally developed for achievement 
+    tests, it's applicable to a wide range of mental, physical, or other test 
+    scores dependent on continuous or discrete explanatory variables. The package 
+    provides several advantages: It minimizes deviations from representativeness 
+    in subsamples, interpolates between discrete levels of explanatory variables, 
+    and significantly reduces the required sample size compared to conventional 
+    norming per age group. cNORM enables graphical and analytical evaluation of 
+    model fit, accommodates a wide range of scales including those with negative 
+    and descending values, and even supports conventional norming. It generates 
+    norm tables including confidence intervals. It also includes methods for 
+    addressing representativeness issues through Iterative Proportional Fitting.
+Depends: R (>= 4.0.0)
+Imports: leaps (>= 3.1), ggplot2 (>= 3.5.1)
+Suggests: knitr, shiny, foreign, readxl, rmarkdown, testthat
+License: AGPL-3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Repository: CRAN
+Encoding: UTF-8
+LazyData: true
+URL: https://www.psychometrica.de/cNorm_en.html,
+        https://github.com/WLenhard/cNORM
+BugReports: https://github.com/WLenhard/cNORM/issues
+Packaged: 2024-08-17 07:39:47 UTC; gbpa005
+Author: Alexandra Lenhard [aut] (<https://orcid.org/0000-0001-8680-4381>),
+  Wolfgang Lenhard [cre, aut] (<https://orcid.org/0000-0002-8184-6889>),
+  Sebastian Gary [aut],
+  WPS publisher [fnd] (<https://www.wpspublish.com/>)
+Date/Publication: 2024-08-17 23:20:10 UTC

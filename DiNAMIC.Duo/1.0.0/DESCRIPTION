@@ -1,0 +1,59 @@
+Package: DiNAMIC.Duo
+Title: Finding Recurrent DNA Copy Number Alterations and Differences
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Vonn",
+           family = "Walter",
+           role = c("aut", "cre"),
+           email = "vwalter1@pennstatehealth.psu.edu",
+		   comment = c(ORCID = "0000-0001-6114-6714")),
+	person(given = "Hyo Young",
+           family = "Choi",
+           role = c("aut"),
+           email = "hyoyoung.choi@uthsc.edu",
+		   comment = c(ORCID = "0000-0002-7627-8493")),
+	person(given = "Xiaobei",
+           family = "Zhao",
+           role = c("aut"),
+           email = "xiaobei_zhao@uthsc.edu",
+		   comment = c(ORCID = "0000-0002-5277-0846")),
+	person(given = "Yan",
+           family = "Gao",
+           role = c("aut"),
+           email = "ygao45@uthsc.edu",
+		   comment = c(ORCID = "0000-0002-6852-2038")),
+	person(given = "David Neil",
+           family = "Hayes",
+           role = c("aut"),
+           email = "Neil.Hayes@uthsc.edu",
+		   comment = c(ORCID = "0000-0001-6203-7771")))
+Description: In tumor tissue, underlying genomic instability can lead to DNA copy number alterations,
+	e.g., copy number gains or losses. Sporadic copy number alterations occur randomly throughout the
+	genome, whereas recurrent alterations are observed in the same genomic region across multiple
+	independent samples, perhaps because they provide a selective growth advantage. Here we use
+	cyclic shift permutations to identify recurrent copy number alterations in a single cohort or
+	recurrent copy number differences in two cohorts based on a common set of genomic markers.
+	Additional functionality is provided to perform downstream analyses, including the creation of
+	summary files and graphics. DiNAMIC.Duo builds upon the original DiNAMIC package of Walter et al.
+	(2011) <doi:10.1093/bioinformatics/btq717> and leverages the theory developed in Walter et al.
+	(2015) <doi:10.1093/biomet/asv046>. A manuscript based on DiNAMIC.Duo is currently under development.
+Config/reticulate: list( packages = list( list(package = "numpy") ) )
+Depends: R (>= 3.5.0)
+VignetteBuilder: R.rsp
+Suggests: R.rsp
+biocViews: biomaRt
+Imports: biomaRt, dinamic, plyr, reticulate
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-09-28 19:46:12 UTC; vwalter1
+Author: Vonn Walter [aut, cre] (<https://orcid.org/0000-0001-6114-6714>),
+  Hyo Young Choi [aut] (<https://orcid.org/0000-0002-7627-8493>),
+  Xiaobei Zhao [aut] (<https://orcid.org/0000-0002-5277-0846>),
+  Yan Gao [aut] (<https://orcid.org/0000-0002-6852-2038>),
+  David Neil Hayes [aut] (<https://orcid.org/0000-0001-6203-7771>)
+Maintainer: Vonn Walter <vwalter1@pennstatehealth.psu.edu>
+Repository: CRAN
+Date/Publication: 2021-09-29 08:20:19 UTC

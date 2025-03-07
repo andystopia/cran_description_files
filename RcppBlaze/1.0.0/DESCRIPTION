@@ -1,0 +1,44 @@
+Package: RcppBlaze
+Type: Package
+Title: 'Rcpp' Integration for the 'Blaze' High-Performance 'C++' Math
+        Library
+Version: 1.0.0
+Date: 2024-04-27
+Authors@R: c(
+   person(given = "Ching-Chuan",
+           family = "Chen",
+           role = c("aut", "cre", "ctr"),
+           email = "zw12356@gmail.com",
+           comment = c(ORCID = '0009-0007-8273-3206')),
+    person("Klaus", "Iglberger", role = "aut", comment = "blaze"),
+    person("Georg", "Georg", role = "aut", comment = "blaze"),
+    person("Tobias", "Scharpff", role = "aut", comment = "blaze")
+    )
+Maintainer: Ching-Chuan Chen <zw12356@gmail.com>
+URL: https://github.com/Chingchuan-chen/RcppBlaze,
+        https://bitbucket.org/blaze-lib/blaze
+BugReports: https://github.com/Chingchuan-chen/RcppBlaze/issues
+Description: Blaze is an open-source, high-performance 'C++' math library for dense and sparse arithmetic. 
+    With its state-of-the-art Smart Expression Template implementation Blaze combines the elegance and 
+    ease of use of a domain-specific language with HPC-grade performance, making it one of the most 
+    intuitive and fastest 'C++' math libraries available. The 'RcppBlaze' package includes the header files 
+    from the 'Blaze' library with disabling some functionalities related to link to the thread and system
+    libraries which make 'RcppBlaze' be a header-only library. Therefore, users do not need to install 
+    'Blaze'.
+Depends: R (>= 4.2.0)
+Imports: Rcpp (>= 1.0.0), Matrix (>= 1.5-0)
+LinkingTo: Rcpp
+Suggests: MatrixExtra, microbenchmark, tinytest, pkgKitten
+LazyLoad: yes
+Encoding: UTF-8
+License: BSD_3_clause + file LICENSE
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-04-30 12:06:16 UTC; root
+Author: Ching-Chuan Chen [aut, cre, ctr]
+    (<https://orcid.org/0009-0007-8273-3206>),
+  Klaus Iglberger [aut] (blaze),
+  Georg Georg [aut] (blaze),
+  Tobias Scharpff [aut] (blaze)
+Repository: CRAN
+Date/Publication: 2024-05-02 13:12:42 UTC

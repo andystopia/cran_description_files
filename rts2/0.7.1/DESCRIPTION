@@ -1,0 +1,36 @@
+Package: rts2
+Title: Real-Time Disease Surveillance
+Version: 0.7.1
+Date: 2024-02-21
+Authors@R: 
+    person(given = "Sam",
+           family = "Watson",
+           role = c("aut", "cre"),
+           email = "s.i.watson@bham.ac.uk",
+           comment = c(ORCID = "0000-0002-8972-769X"))
+Description: Supports modelling real-time case data to facilitate the real-time
+    surveillance of infectious diseases and other point phenomena. The package provides automated computational grid generation over
+    an area of interest with methods to map covariates between geographies, model fitting including spatially aggregated case counts, 
+    and predictions and visualisation. Both Bayesian and maximum likelihood methods are provided. Log-Gaussian Cox Processes are described by 
+    Diggle et al. (2013) <doi:10.1214/13-STS441> and we provide both the low-rank approximation for Gaussian processes 
+    described by Solin and Särkkä (2020) <doi:10.1007/s11222-019-09886-w> and Riutort-Mayol et al (2020) <arXiv:2004.11408> and the
+    nearest neighbour Gaussian process described by Datta et al (2016) <doi:10.1080/01621459.2015.1044091>. 'cmdstanr' can be downloaded at <https://mc-stan.org/cmdstanr/>.
+License: CC BY-SA 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Biarch: true
+Depends: R (>= 3.5.0), sf (>= 1.0-14)
+Imports: methods, R6, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan
+        (>= 2.26.0), rstantools (>= 2.1.1), lubridate
+Suggests: cmdstanr (>= 0.4.0), testthat
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.32.0), glmmrBase (>= 0.7.1), SparseChol (>= 0.2.2)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2024-03-01 17:42:24 UTC; samue
+Author: Sam Watson [aut, cre] (<https://orcid.org/0000-0002-8972-769X>)
+Maintainer: Sam Watson <s.i.watson@bham.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-03-01 18:50:02 UTC

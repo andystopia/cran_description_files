@@ -1,0 +1,33 @@
+Package: rstanbdp
+Title: Bayesian Deming Regression for Method Comparison
+Version: 0.0.2
+Maintainer: Giorgio Pioda <gfwp@ticino.com>
+Authors@R: 
+    person("Giorgio", "Pioda", ,"gfwp@ticino.com",
+    role = c("aut","cre"), comment=c(ORCID="0000-0002-8714-8678"))
+Description: Regression methods to quantify the relation 
+    between two measurement methods are provided by this package. The
+    focus is on a Bayesian Deming regressions family. With a Bayesian
+    method the Deming regression can be run in a traditional fashion or
+    can be run in a robust way just decreasing the degree of freedom
+    d.f. of the sampling distribution. With d.f. = 1 an extremely robust
+    Cauchy distribution can be sampled. Moreover, models for dealing
+    with heteroscedastic data are also provided. For reference see
+    G. Pioda (2024) <https://piodag.github.io/bd1/>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.4.0), rrcov, mixtools, bayestestR,
+        KernSmooth
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2024-02-22 22:27:31 UTC; gfwp
+Author: Giorgio Pioda [aut, cre] (<https://orcid.org/0000-0002-8714-8678>)
+Repository: CRAN
+Date/Publication: 2024-02-23 19:20:08 UTC

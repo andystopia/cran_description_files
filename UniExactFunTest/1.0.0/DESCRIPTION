@@ -1,0 +1,35 @@
+Package: UniExactFunTest
+Type: Package
+Title: Uniform Exact Functional Tests for Contingency Tables
+Version: 1.0.0
+Date: 2023-09-27
+Authors@R: c(
+ person(
+ "Yiyi", "Li", role = c("aut", "cre"), 
+ email = "gtarex@nmsu.edu", 
+ comment = c(ORCID = "0000-0001-8859-3987")
+ ),
+ person(
+ "Joe", "Song", role = c("aut"),
+ email = "joemsong@cs.nmsu.edu",
+ comment = c(ORCID = "0000-0002-6883-6547")))
+Author: Yiyi Li [aut, cre] (<https://orcid.org/0000-0001-8859-3987>),
+  Joe Song [aut] (<https://orcid.org/0000-0002-6883-6547>)
+Maintainer: Yiyi Li <gtarex@nmsu.edu>
+Description: Testing whether two discrete variables have a functional
+  relationship under null distributions where the two variables are
+  statistically independent with fixed marginal counts.
+  The fast enumeration algorithm was based on (Nguyen et al. 2020) <doi:10.24963/ijcai.2020/372>.
+License: LGPL (>= 3)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.5)
+LinkingTo: Rcpp
+Depends: R (>= 3.5.0), stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-10-05 21:36:49 UTC; yili
+Repository: CRAN
+Date/Publication: 2023-10-06 16:20:09 UTC

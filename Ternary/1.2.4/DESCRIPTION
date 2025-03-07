@@ -1,0 +1,43 @@
+Package: Ternary
+Version: 1.2.4
+Title: Create Ternary Plots
+Description: Plots ternary diagrams (simplex plots / Gibbs triangles) using the
+  standard graphics functions.
+  An alternative to 'ggtern', which uses the 'ggplot2' family of plotting 
+  functions.
+  Includes a 'Shiny' user interface for point-and-click plotting.
+URL: https://ms609.github.io/Ternary/,
+        https://github.com/ms609/Ternary/
+BugReports: https://github.com/ms609/Ternary/issues/
+Authors@R: c(person('Martin R.', 'Smith',
+                    email = 'martin.smith@durham.ac.uk',
+                    role = c("aut", "cre", "cph"), 
+                    comment = c(ORCID = '0000-0001-5660-1727')
+                   ),
+             person('Lilian', 'Sanselme', role = "ctb")
+            )
+License: GPL (>= 2)
+Language: en-GB
+Depends: R (>= 3.2.0)
+Imports: shiny, viridisLite,
+Suggests: colourpicker, knitr, readxl, rmarkdown, shinyjs, testthat (>=
+        3.0), vdiffr,
+Config/Needs/coverage: covr
+Config/Needs/memcheck: devtools, rcmdcheck
+Config/Needs/metadata: codemetar
+Config/Needs/revdeps: revdepcheck
+Config/Needs/website: pkgdown
+Config/testthat/parallel: false
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-12-03 15:33:43 UTC; ms609
+Author: Martin R. Smith [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5660-1727>),
+  Lilian Sanselme [ctb]
+Maintainer: Martin R. Smith <martin.smith@durham.ac.uk>
+Repository: CRAN
+Date/Publication: 2021-12-03 16:20:02 UTC

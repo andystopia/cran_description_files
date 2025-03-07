@@ -1,0 +1,19 @@
+Package: RObsDat
+Type: Package
+Title: Data Mangement for Hydrology and Beyond Using the Observations
+        Data Model
+Version: 14.12
+Date: 2014-12-29
+Author: Dominik Reusser
+Maintainer: Dominik Reusser <reusser@pik-potsdam.de>
+Depends: R (>= 2.11.0), methods, zoo
+Imports: spacetime, xts, DBI, vwr, e1071, sp
+Suggests: RSQLite, testthat, RColorBrewer, maptools, SSOAP, XML,
+        geonames
+Additional_repositories: http://www.omegahat.org/R
+Description: RObsDat is designed to support data management in hydrology and other fields. It provides functions to enter and modify your data in a database according to the Observations Data Model (ODM) standard by CUASHI (Consortium of Universities for the Advancement of Hydrologic Science). While this data model has been developed in hydrology, it is also useful for other fields. RObsDat helps in the setup of the database within one of the free database systems MariaDB, PostgreSQL or SQLite. It imports the controlled water vocabulary from the CUASHI web service and provides a smart interface between the analyst and the database: Already existing data entries are detected and duplicates avoided. The data import function converts different data table designs to make import simple. Cleaning and modifications of data are handled with a simple version control system. Variable and location names are treated in a user friendly way, accepting and processing multiple versions. When querying data from the database, it is stored in a spacetime objects within R for subsequent processing.
+License: GPL
+NeedsCompilation: no
+Packaged: 2014-12-29 12:56:25 UTC; reusser
+Repository: CRAN
+Date/Publication: 2014-12-29 14:16:54

@@ -1,0 +1,22 @@
+Package: fscache
+Title: File System Cache
+Version: 1.0.2
+Authors@R: c(person("Pierrick", "Roger", email="pierrick.roger@cea.fr", role=c("aut", "cre"), comment=c(ORCID="0000-0001-8177-4873")))
+Maintainer: Pierrick Roger <pierrick.roger@cea.fr>
+Description: Manages a file system cache. Regular files can be moved or copied to the cache folder. Sub-folders can be created in order to organize the files. Files can be located inside the cache using a glob function. Text contents can be easily stored in and retrieved from the cache using dedicated functions. It can be used for an application or a package, as a global cache, or as a per-user cache, in which case the standard OS user cache folder will be used (e.g.: on Linux $HOME/.cache/R/my_app_or_pkg_cache_folder).
+URL: https://gitlab.com/dbapis/r-fscache
+BugReports: https://gitlab.com/dbapis/r-fscache/-/issues
+Depends: R (>= 4.1)
+License: AGPL-3
+Encoding: UTF-8
+Suggests: covr, knitr, rmarkdown, roxygen2, stringr, testthat (>=
+        2.0.0)
+Imports: R.utils, R6, chk, lgr, stringi, tools
+NeedsCompilation: no
+RoxygenNote: 7.3.1
+Collate: 'fcts.R' 'Cache.R' 'package.R'
+VignetteBuilder: knitr
+Packaged: 2024-02-21 17:25:11 UTC; pierrick
+Author: Pierrick Roger [aut, cre] (<https://orcid.org/0000-0001-8177-4873>)
+Repository: CRAN
+Date/Publication: 2024-02-23 19:10:05 UTC

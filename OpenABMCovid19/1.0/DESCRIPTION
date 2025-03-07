@@ -1,0 +1,102 @@
+Package: OpenABMCovid19
+Version: 1.0
+Title: Agent-Based Model for Modelling the COVID-19
+License: GPL-3
+Authors@R: 
+  c(
+    person("Oli", "Legat", role = c("cre"), email = "olegat@google.com"),
+    person("Robert", "Hinch", role = "aut", email = "robert.hinch@gmail.com"),
+    person("Will", "Probert", role = "aut", comment = "a.k.a. p-robot", email = "will@probert.co.nz"),
+    person("Ana", "Bulas Cruz", role = "ctb"),
+    person("Andrea", "Stewart", role = "ctb"),
+    person("Anel", "Nurtay", role = "ctb"),
+    person("Anthony", "Finkelstein", role = "ctb"),
+    person("Ares", "Meroueh", role = "ctb"),
+    person("Arun", "Lobo", role = "ctb"),
+    person("Bryn", "Mathias", role = "ctb"),
+    person("Chris", "Wymant", role = "ctb"),
+    person("Christophe", "Fraser", role = "ctb"),
+    person("Daniel", "Montero", role = "ctb"),
+    person("David", "G Bonsall", role = "ctb"),
+    person("Evan", "Blumgart", role = "ctb"),
+    person("Feifan", "Chen", role = "ctb"),
+    person("Felix", "Breuer", role = "ctb"),
+    person("James", "Lockyer", role = "ctb"),
+    person("James", "Warren", role = "ctb"),
+    person("Katrina", "Lythgoe", role = "ctb"),
+    person("Kelvin", "Van Vurren", role = "ctb"),
+    person("Lele", "Zhao", role = "ctb"),
+    person("Luca", "Ferretti", role = "ctb"),
+    person("Lucie", "Abeler-Dörner", role = "ctb"),
+    person("Matthew", "Abueg", role = "ctb"),
+    person("Matthew", "Hall", role = "ctb"),
+    person("Michelle", "Kendall", role = "ctb"),
+    person("Neo", "Wu", role = "ctb"),
+    person("Nicole", "Mather", role = "ctb"),
+    person("Ross", "Boylan", role = "ctb"),
+    person("Scott", "Stevenson", role = "ctb"),
+    person("Setrak", "Balian", role = "ctb"),
+    person("feldnerd", "", role = "ctb", email = "56836977+feldnerd@users.noreply.github.com"),
+    person("mattea", "", role = "ctb", email = "mattea@users.noreply.github.com"),
+    person("neozwu", "", role = "ctb", email = "neozwu@users.noreply.github.com"),
+    person("rory-improbable", "", role = "ctb", email = "rory@improbable.io"))
+Description: 
+  OpenABM-Covid19 is an agent-based model (ABM) developed to simulate the spread
+  of COVID-19 in a city and to analyse the effect of both passive and active
+  intervention strategies. Interactions between individuals are modelled on
+  networks representing households, work-places and random contacts. The
+  infection is transmitted between these contacts and the progression of the
+  disease in individuals is modelled. Instantaneous contract-tracing and
+  quarantining of contacts is modelled allowing the evaluation of the design and
+  configuration of digital contract-tracing mobile phone apps.
+  Robert Hinch, William J M Probert, et al. (2020) <doi:10.1101/2020.09.16.20195925>.
+Depends: R6
+Imports: methods, xptr
+Collate: OpenABMCovid19.R util.R Parameters.R Network.R Model.R
+        Simulation.R VaccineSchedule.R
+Suggests: testthat
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+SystemRequirements: GNU GSL
+Biarch: FALSE
+NeedsCompilation: yes
+Packaged: 2021-05-14 14:37:19 UTC; olegat
+Author: Oli Legat [cre],
+  Robert Hinch [aut],
+  Will Probert [aut] (a.k.a. p-robot),
+  Ana Bulas Cruz [ctb],
+  Andrea Stewart [ctb],
+  Anel Nurtay [ctb],
+  Anthony Finkelstein [ctb],
+  Ares Meroueh [ctb],
+  Arun Lobo [ctb],
+  Bryn Mathias [ctb],
+  Chris Wymant [ctb],
+  Christophe Fraser [ctb],
+  Daniel Montero [ctb],
+  David G Bonsall [ctb],
+  Evan Blumgart [ctb],
+  Feifan Chen [ctb],
+  Felix Breuer [ctb],
+  James Lockyer [ctb],
+  James Warren [ctb],
+  Katrina Lythgoe [ctb],
+  Kelvin Van Vurren [ctb],
+  Lele Zhao [ctb],
+  Luca Ferretti [ctb],
+  Lucie Abeler-Dörner [ctb],
+  Matthew Abueg [ctb],
+  Matthew Hall [ctb],
+  Michelle Kendall [ctb],
+  Neo Wu [ctb],
+  Nicole Mather [ctb],
+  Ross Boylan [ctb],
+  Scott Stevenson [ctb],
+  Setrak Balian [ctb],
+  feldnerd [ctb],
+  mattea [ctb],
+  neozwu [ctb],
+  rory-improbable [ctb]
+Maintainer: Oli Legat <olegat@google.com>
+Repository: CRAN
+Date/Publication: 2021-05-17 07:10:10 UTC

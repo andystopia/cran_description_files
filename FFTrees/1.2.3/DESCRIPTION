@@ -1,0 +1,26 @@
+Package: FFTrees
+Type: Package
+Title: Generate, Visualise, and Compare Fast and Frugal Decision Trees
+Version: 1.2.3
+Date: 2017-5-4
+Authors@R: person("Nathaniel", "Phillips", email = "Nathaniel.D.Phillips.is@gmail.com",
+                  role = c("aut", "cre"))
+Maintainer: Nathaniel Phillips <Nathaniel.D.Phillips.is@gmail.com>
+Description: Create, visualise, and test fast and frugal decision trees (FFTrees). FFTrees are very simple decision trees for
+    classifying cases (i.e.; breast cancer patients) into one of two classes (e.g.;
+    no cancer vs. true cancer) based on a small number of cues (e.g.; test results). FFTrees can be preferable to more complex algorithms because they are easy to communicate, require very little information, and are
+    robust against overfitting.
+LazyData: TRUE
+Depends: R(>= 2.10)
+Imports: rpart, yarrr, MASS, circlize, mlbench, graphics, randomForest,
+        igraph, snow, snowfall, e1071
+License: CC0
+BugReports: https://github.com/ndphillips/FFTrees/issues
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-05-04 16:13:35 UTC; nphillips
+Author: Nathaniel Phillips [aut, cre]
+Repository: CRAN
+Date/Publication: 2017-05-04 16:23:34 UTC

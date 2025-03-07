@@ -1,0 +1,45 @@
+Package: spatPomp
+Type: Package
+Title: Inference for Spatiotemporal Partially Observed Markov Processes
+Version: 0.23.0.0
+Date: 2021-07-08
+Authors@R: c(person("Kidus", "Asfaw", email = "kasfaw@umich.edu", role = c("aut", "cre")),
+             person("Aaron A.", "King", email = "kingaa@umich.edu", role = c("aut")),
+             person("Edward", "Ionides", email = "ionides@umich.edu", role = c("aut")),
+             person("Joonha", "Park", email = "j.park@ku.edu", role = c("ctb")),
+             person("Allister", "Ho", email = "allistho@umich.edu", role = c("ctb")))
+URL: https://github.com/kidusasfaw/spatPomp
+Description: Inference on panel data using spatiotemporal partially-observed Markov process (SpatPOMP) models. To do so, it relies on and extends a number of facilities that the 'pomp' package provides for inference on time series data using partially-observed Markov process (POMP) models. Implemented methods include filtering and inference methods in Park and Ionides (2020) <doi:10.1007/s11222-020-09957-3>, Rebeschini and van Handel (2015) <doi:10.1214/14-AAP1061>, Evensen and van Leeuwen (1996) <doi:10.1029/94JC00572> and Ionides et al. (2021) <arXiv:2002.05211v2>. Pre-print statistical software article: Asfaw et al. (2021) <arXiv:2101.01157>.
+SystemRequirements: For Windows users, Rtools (see
+        https://cran.r-project.org/bin/windows/Rtools/).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Contact: kasfaw at umich dot edu
+Depends: pomp (>= 3.3), R(>= 4.0.0), methods
+LinkingTo: pomp
+Suggests: testthat
+Imports: doParallel (>= 1.0.11), parallel, foreach, dplyr, tidyr,
+        stringr, ggplot2, abind, rlang, magrittr
+Collate: 'spatPomp_class.R' 'abf.R' 'abfir.R' 'get_covariate_names.R'
+        'as_data_frame.R' 'as_spatPomp.R' 'bm.R' 'bpfilter.R'
+        'city_data_UK.R' 'skeleton_spec.R' 'safecall.R'
+        'rprocess_spec.R' 'pstop.R' 'undefined.R' 'spatPomp.R'
+        'dunit_measure.R' 'enkf.R' 'eunit_measure.R' 'gbm.R' 'girf.R'
+        'iter_filter.R' 'ienkf.R' 'igirf.R' 'iubf.R' 'loglik.R'
+        'lorenz.R' 'mcap.R' 'measles.R' 'measlesUK.R' 'munit_measure.R'
+        'package.R' 'pipe.R' 'plot.R' 'print.R' 'runit_measure.R'
+        'simulate.R' 'spatPomp_Csnippet.R' 'spatPomp_workhorses.R'
+        'unit_names.R' 'vec_dmeasure.R' 'vec_rmeasure.R'
+        'vunit_measure.R'
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2021-07-08 21:59:58 UTC; kasfaw
+Author: Kidus Asfaw [aut, cre],
+  Aaron A. King [aut],
+  Edward Ionides [aut],
+  Joonha Park [ctb],
+  Allister Ho [ctb]
+Maintainer: Kidus Asfaw <kasfaw@umich.edu>
+Repository: CRAN
+Date/Publication: 2021-07-09 08:00:02 UTC

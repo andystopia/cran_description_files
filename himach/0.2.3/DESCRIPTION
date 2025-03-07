@@ -1,0 +1,38 @@
+Type: Package
+Package: himach
+Title: High Mach Finds Routes for Supersonic Aircraft
+Version: 0.2.3
+Authors@R: 
+    c(person(given = "David",
+           family = "Marsh",
+           role = c("aut", "cre"),
+           email = "david.marsh@eurocontrol.int"),
+    person(family = "EUROCONTROL",
+    role = c("fnd", "cph")))
+Description: For supersonic aircraft, flying subsonic over land,
+    High Mach finds the best route between airports. Allows for coastal buffer and
+    potentially closed regions. Uses a minimal model of aircraft
+    performance: the focus is on time saved versus subsonic flight, rather
+    than on vertical flight profile. For modelling and forecasting, not for planning your
+    flight!
+License: MIT + file LICENSE
+URL: https://github.com/david6marsh/himach
+BugReports: https://github.com/david6marsh/himach/issues
+Depends: R (>= 3.5.0)
+Imports: cppRouting, data.table, dplyr (>= 1.0.0), geosphere, ggplot2,
+        lwgeom, purrr, s2, sf (>= 1.0), tidyr
+Suggests: airportr, cowplot, knitr, methods, progress, rmarkdown,
+        rnaturalearthdata, scales, stringr, testthat, units, utils,
+        viridis, covr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Language: en-GB
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-12-01 05:42:07 UTC; david
+Author: David Marsh [aut, cre],
+  EUROCONTROL [fnd, cph]
+Maintainer: David Marsh <david.marsh@eurocontrol.int>
+Repository: CRAN
+Date/Publication: 2021-12-01 06:10:02 UTC

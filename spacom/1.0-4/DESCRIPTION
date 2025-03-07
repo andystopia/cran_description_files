@@ -1,0 +1,35 @@
+Package: spacom
+Type: Package
+Title: Spatially weighted context data for multilevel modelling
+Version: 1.0-4
+Date: 2013-11-26
+Authors@R: c(person("Till", "Junge", role = c("aut", "cre"),
+                    email = "till.junge@altermail.ch"),
+             person("Sandra", "Penic", role = "aut",
+                    email = "sandra.penic@unil.ch"),
+             person("Mathieu", "Cossuta", role = "aut",
+                    email = "mcossutta@gmail.com"),
+             person("Guy", "Elcheroth", role = "aut",
+                    email = "guy.elcheroth@unil.ch"),
+             person("Stephanie", "Glaeser", role = "ctb",
+                    email = "stephanie.glaeser@unil.ch"),
+             person("Davide", "Morselli", role = "ctb",
+                    email = "davide.morselli@unil.ch"))
+Description: The package provides tools to construct and exploit spatially weighted context data. Spatial weights are derived by a Kernel function from a user-defined matrix of distances between contextual units. Spatial weights can then be applied either to precise contextual measures or to aggregate estimates based on micro-level survey data, to compute spatially weighted context data. Available aggregation functions include indicators of central tendency, dispersion, or inter-group variability, and take into account survey design weights. The package further allows combining the resulting spatially weighted context data with individual-level predictor and outcome variables, for the purposes of multilevel modelling. An ad hoc stratified bootstrap resampling procedure generates robust point estimates for multilevel regression coefficients and model fit indicators, and computes confidence intervals adjusted for measurement dependency and measurement error of aggregate estimates. As an additional feature, residual and explained spatial dependency can be estimated for the tested models.
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 2.14-0)
+Imports: methods, spdep, foreach, iterators, lme4, nlme, Matrix
+Collate: all_classes.R common.R moran.R SpawML.R Descriptives.R
+        ResExSpawML.R ResAggSpawML.R Weights.R ExplorSpawML.R
+Packaged: 2013-12-17 14:14:40 UTC; junge
+Author: Till Junge [aut, cre],
+  Sandra Penic [aut],
+  Mathieu Cossuta [aut],
+  Guy Elcheroth [aut],
+  Stephanie Glaeser [ctb],
+  Davide Morselli [ctb]
+Maintainer: Till Junge <till.junge@altermail.ch>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2013-12-17 16:46:02

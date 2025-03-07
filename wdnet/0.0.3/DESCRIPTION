@@ -1,0 +1,41 @@
+Package: wdnet
+Title: Weighted and Directed Networks
+Version: 0.0.3
+Date: 2022-06-22
+Authors@R: c(
+    person("Yelie", "Yuan", email = "yelie.yuan@uconn.edu",
+           role = c("aut", "cre")),
+    person("Tiandong", "Wang", email = "twang@stat.tamu.edu",
+           role = "aut"),
+    person("Jun", "Yan", email = "jun.yan@uconn.edu",
+           role = c("aut")),
+    person("Panpan", "Zhang", email = "panpan.zhang@pennmedicine.upenn.edu",
+           role = "aut"))
+Description: Implementations of network analysis including
+    (1) assortativity coefficient of weighted and directed networks, 
+    Yuan, Yan and Zhang (2021) <doi:10.1093/comnet/cnab017>,
+    (2) centrality measures for weighted and directed networks,
+    Opsahl, Agneessens and Skvoretz (2010) <doi:10.1016/j.socnet.2010.03.006>,
+    Zhang, Wang and Yan (2022) <doi:10.1016/j.physa.2021.126438>,
+    (3) clustering coefficient of weighted and directed networks, 
+    Fagiolo (2007) <doi:10.1103/PhysRevE.76.026107> and 
+    Clemente and Grassi (2018) <doi:10.1016/j.chaos.2017.12.007>,
+    (4) network rewiring,
+    (5) preferential attachment network generation.
+Depends: R (>= 4.2.0)
+License: GPL (>= 3.0)
+Encoding: UTF-8
+Imports: stats, igraph, wdm, Rcpp, rARPACK, Matrix, CVXR
+LinkingTo: Rcpp, RcppArmadillo
+BugReports: https://gitlab.com/wdnetwork/wdnet/-/issues
+URL: https://gitlab.com/wdnetwork/wdnet
+RoxygenNote: 7.2.0
+NeedsCompilation: yes
+Packaged: 2022-06-22 04:43:58 UTC; Yelie
+Author: Yelie Yuan [aut, cre],
+  Tiandong Wang [aut],
+  Jun Yan [aut],
+  Panpan Zhang [aut]
+Maintainer: Yelie Yuan <yelie.yuan@uconn.edu>
+Repository: CRAN
+Date/Publication: 2022-06-23 06:00:02 UTC

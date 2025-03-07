@@ -1,0 +1,24 @@
+Package: AHR
+Type: Package
+Title: Estimation and Testing of Average Hazard Ratios
+Version: 1.4.2
+Date: 2016-08-28
+Author: Matthias Brueckner <matthias.brueckner@posteo.de>
+Maintainer: Matthias Brueckner <matthias.brueckner@posteo.de>
+Description: Methods for estimation of multivariate average hazard ratios as
+    defined by Kalbfleisch and Prentice. The underlying survival functions of the
+    event of interest in each group can be estimated using either the (weighted)
+    Kaplan-Meier estimator or the Aalen-Johansen estimator for the transition
+    probabilities in Markov multi-state models. Right-censored and left-truncated
+    data is supported. Moreover, the difference in restricted mean survival can be
+    estimated.
+License: GPL (>= 3)
+Depends: survival
+Imports: stats, MASS, etm, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-08-28 12:15:00 UTC; mwb
+Repository: CRAN
+Date/Publication: 2016-08-28 15:20:42

@@ -1,0 +1,46 @@
+Type: Package
+Package: StrucDiv
+Title: Spatial Structural Diversity Quantification in Raster Data
+Version: 0.2.0
+Authors@R: c(
+    person("Leila", "Schuh", , "l.schuh@posteo.net", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5646-7767")),
+    person("Reinhard", "Furrer", , "reinhard.furrer@math.uzh.ch", role = "aut",
+           comment = c(ORCID = "0000-0002-6319-2332")),
+    person("Kalina", "Cherneva", , "kachernev@gmail.com", role = c("ctb", "ctr")),
+    person("Kirill", "Müller", role = "ctr"),
+    person("Patrick", "Schratz", role = "ctr"),
+    person("University Research Priority Progam Global Change and Biodiversity of the University of Zurich", role = "fnd")
+  )
+Maintainer: Leila Schuh <l.schuh@posteo.net>
+Description: Spatial structural diversity refers to the spatial, i.e.
+    horizontal arrangement of landscape elements and can reveal itself as
+    landscape features, such as patches and linear features. The 'R' package
+    'StrucDiv' provides methods to quantify spatial structural diversity
+    in continuous remote sensing data, or in other data in raster format.
+    Structure is based on the spatial arrangement of value pairs. The 'R' package 'StrucDiv'
+    includes methods to combine information from different spatial scales, which allows to quantify
+    multi-scale spatial structural diversity.
+License: GPL (>= 3)
+URL: https://github.com/leilsc/StrucDiv
+BugReports: https://github.com/leilsc/StrucDiv
+Depends: R (>= 3.5.0)
+Imports: doParallel (>= 1.0.15), foreach (>= 1.5.0), glue, raster (>=
+        3.1.5), Rcpp (>= 1.0.4)
+Suggests: knitr, rmarkdown, testthat
+LinkingTo: Rcpp, RcppProgress
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+NeedsCompilation: yes
+Packaged: 2022-12-13 06:55:54 UTC; leila
+Author: Leila Schuh [aut, cre] (<https://orcid.org/0000-0001-5646-7767>),
+  Reinhard Furrer [aut] (<https://orcid.org/0000-0002-6319-2332>),
+  Kalina Cherneva [ctb, ctr],
+  Kirill Müller [ctr],
+  Patrick Schratz [ctr],
+  University Research Priority Progam Global Change and Biodiversity of
+    the University of Zurich [fnd]
+Repository: CRAN
+Date/Publication: 2022-12-13 08:20:02 UTC

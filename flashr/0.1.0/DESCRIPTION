@@ -1,0 +1,32 @@
+Type: Package
+Package: flashr
+Title: Create Flashcards of Terms and Definitions
+Version: 0.1.0
+Authors@R: 
+    person("Jeffrey R.", "Stevens", , "jeffrey.r.stevens@protonmail.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-2375-1360"))
+Maintainer: Jeffrey R. Stevens <jeffrey.r.stevens@protonmail.com>
+Description: Provides functions for creating flashcard decks of terms and 
+    definitions. This package creates HTML slides using 'revealjs' that can be 
+    viewed in the 'RStudio' viewer or a web browser.  Users can create 
+    flashcards from either existing built-in decks or create their own from CSV
+    files or vectors of function names.
+License: MIT + file LICENSE
+URL: https://github.com/JeffreyRStevens/flashr,
+        https://jeffreyrstevens.github.io/flashr/
+BugReports: https://github.com/JeffreyRStevens/flashr/issues
+Depends: R (>= 2.10)
+Imports: cli, curl, gh, httr, memoise, revealjs, rmarkdown, testthat
+Suggests: covr, knitr, withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2022-11-21 14:03:35 UTC; jstevens
+Author: Jeffrey R. Stevens [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2375-1360>)
+Repository: CRAN
+Date/Publication: 2022-11-22 08:50:02 UTC

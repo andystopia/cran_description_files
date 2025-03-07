@@ -1,0 +1,45 @@
+Type: Package
+Package: optic
+Title: Simulation Tool for Causal Inference Using Longitudinal Data
+Version: 1.0.0
+Authors@R: c(
+    person("Beth Ann", "Griffin", , "bethg@rand.org", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-2391-4601")),
+    person("Pedro", "Nascimento de Lima", , "plima@rand.org", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0001-9057-198X")),
+    person("Max", "Griswold", role = "aut",
+           comment = c(ORCID = "0000-0002-6387-128X")),
+    person("Adam", "Scherling", role = "aut"),
+    person("Joseph", "Pane", role = "aut"),
+    person("Geoffrey", "Grimm", role = "aut")
+  )
+Description: Implements a simulation study to assess the strengths and
+    weaknesses of causal inference methods for estimating policy effects
+    using panel data. See Griffin et al. (2021)
+    <doi:10.1007/s10742-022-00284-w> and Griffin et al. (2022)
+    <doi:10.1186/s12874-021-01471-y> for a description of our methods.
+License: GPL-3
+URL: https://randcorporation.github.io/optic/,
+        https://github.com/randcorporation/optic
+BugReports: https://github.com/randcorporation/optic/issues
+Depends: R (>= 4.1.0)
+Imports: did, dplyr, future.apply, lmtest, magrittr, MASS, methods,
+        purrr, R6, rlang, sandwich, stats, tidyr, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-25 12:00:11 UTC; plima
+Author: Beth Ann Griffin [aut, cph] (<https://orcid.org/0000-0002-2391-4601>),
+  Pedro Nascimento de Lima [cre, aut]
+    (<https://orcid.org/0000-0001-9057-198X>),
+  Max Griswold [aut] (<https://orcid.org/0000-0002-6387-128X>),
+  Adam Scherling [aut],
+  Joseph Pane [aut],
+  Geoffrey Grimm [aut]
+Maintainer: Pedro Nascimento de Lima <plima@rand.org>
+Repository: CRAN
+Date/Publication: 2023-05-26 07:50:02 UTC

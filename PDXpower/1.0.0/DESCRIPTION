@@ -1,0 +1,34 @@
+Package: PDXpower
+Type: Package
+Title: Time to Event Outcome in Experimental Designs of Pre-Clinical
+        Studies
+Version: 1.0.0
+Date: 2024-03-08
+Authors@R: c(
+    person("Shanpeng", "Li", email = "lishanpeng0913@ucla.edu", 
+        role = c("aut", "cre")),
+    person("Gang", "Li", email = "vli@ucla.edu", 
+        role = "ctb")
+    )
+Maintainer: Shanpeng Li <lishanpeng0913@ucla.edu>
+Description: Conduct simulation-based customized power calculation 
+             for clustered time to event data in a mixed crossed/nested design,
+             where a number of cell lines and a number of mice within each cell line are considered to achieve a desired statistical power,
+             motivated by Eckel-Passow and colleagues (2021) <doi:10.1093/neuonc/noab137>.
+             This package provides two commonly used models for powering a design, linear mixed effects and Cox frailty model. Both models account for
+             within-subject (cell line) correlation while holding different distributional assumptions about the outcome. 
+             Alternatively, the counterparts of fixed effects model are also available, which produces similar estimates of statistical power.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0),survival,stats,parallel
+Imports: nlme,frailtypack,ggplot2,ggpubr
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), spelling
+Language: en-US
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-03-09 14:41:39 UTC; shanpengli
+Author: Shanpeng Li [aut, cre],
+  Gang Li [ctb]
+Repository: CRAN
+Date/Publication: 2024-03-11 15:20:02 UTC

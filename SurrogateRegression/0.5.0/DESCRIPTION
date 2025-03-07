@@ -1,0 +1,27 @@
+Package: SurrogateRegression
+Title: Surrogate Outcome Regression Analysis
+Date: 2020-12-01
+Version: 0.5.0
+Authors@R: 
+    person(given = "Zachary",
+           family = "McCaw",
+           role = c("aut", "cre"),
+           email = "zmccaw@alumni.harvard.edu",
+           comment = c(ORCID = "0000-0002-2006-9828")
+           )
+Description: Performs estimation and inference on a partially missing target outcome while borrowing information from a correlated surrogate outcome to increase estimation precision and improve power. The target and surrogate outcomes are jointly modeled within a bivariate outcome regression framework. Unobserved values of either outcome are regarded as missing data. Estimation in the presence of bilateral outcome missingness is performed via an expectation conditional maximization algorithm. A flexible association test is provided for evaluating hypotheses about the target regression parameters. See McCaw ZR, Gaynor SM, Sun R, Lin X; “Cross-tissue eQTL mapping in the presence of missing data via surrogate outcome analysis” <doi:10.1101/2020.11.29.403063>.
+Depends: R (>= 3.4.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: methods, mvnfast, plyr, Rcpp, stats
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-12-01 15:47:59 UTC; zmccaw
+Author: Zachary McCaw [aut, cre] (<https://orcid.org/0000-0002-2006-9828>)
+Maintainer: Zachary McCaw <zmccaw@alumni.harvard.edu>
+Repository: CRAN
+Date/Publication: 2020-12-03 10:10:03 UTC

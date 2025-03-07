@@ -1,0 +1,34 @@
+Package: walkr
+Version: 0.4.0
+Date: 2019-06-25
+Type: Package
+Title: Random Walks in the Intersection of Hyperplanes and the
+        N-Simplex
+Authors@R: c(
+    person("Andy", "Yao", , "andy.yao17@gmail.com", c("aut", "cre")),
+    person("David", "Kane", , "dave.kane@gmail.com", "aut"),
+    person("Jeffrey ", "Enos", , "jeffrey.enos@gmail.com", "aut")
+    )
+Maintainer: Andy Yao <andy.yao17@gmail.com>
+Depends: R (>= 3.1)
+Suggests: testthat, knitr, grid, gridExtra, rmarkdown
+Imports: hitandrun, limSolve, MASS, Rcpp (>= 0.11.6), shinystan
+Description: Consider the intersection of two spaces: the complete solution space
+             to Ax = b and the N-simplex. The intersection of these two spaces is 
+             a non-negative convex polytope. The package walkr samples from this 
+             intersection using two Monte-Carlo Markov Chain (MCMC) methods: 
+             hit-and-run and Dikin walk. walkr also provide tools to examine sample 
+             quality. The package implements Dikin walk specified in Sachdeva (2016) <doi:10.1016/j.orl.2016.07.005>.
+License: GPL-3
+URL: https://github.com/andyyao95/walkr
+BugReports: https://github.com/andyyao95/walkr/issues
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Packaged: 2019-06-29 03:20:42 UTC; andyy
+Author: Andy Yao [aut, cre],
+  David Kane [aut],
+  Jeffrey Enos [aut]
+Repository: CRAN
+Date/Publication: 2019-06-29 05:10:03 UTC

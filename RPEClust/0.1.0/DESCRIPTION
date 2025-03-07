@@ -1,0 +1,18 @@
+Package: RPEClust
+Title: Random Projection Ensemble Clustering Algorithm
+Version: 0.1.0
+Date: 2019-11-05
+Author: L. Anderlucci [aut], F. Fortunato [aut, cre], A. Montanari [ctb]
+Maintainer: Francesca Fortunato <francesca.fortunato3@unibo.it>
+Depends: R (>= 3.6.0), clusteval
+Imports: mclust, clue
+Description: Implements the methodology proposed by Anderlucci, Fortunato and Montanari (2019) <arXiv:1909.10832> for high-dimensional unsupervised classification. The random projection ensemble clustering algorithm applies a Gaussian Mixture Model to different random projections of the high-dimensional data and selects a subset of solutions accordingly to the Bayesian Information Criterion, computed here as discussed in Raftery and Dean (2006) <doi:10.1198/016214506000000113>. The clustering results obtained on the selected projections are then aggregated via consensus to derive the final partition.
+URL: https://arxiv.org/abs/1909.10832
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2019-11-05 16:36:41 UTC; francesca.fortunato3
+Date/Publication: 2019-11-06 12:50:05 UTC

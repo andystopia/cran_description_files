@@ -1,0 +1,29 @@
+Package: plotmm
+Type: Package
+Title: Tidy Tools for Visualizing Mixture Models
+Version: 0.1.1
+BugReports: https://github.com/pdwaggoner/plotmm/issues
+Authors@R: c(person("Philip", "Waggoner", role = c("aut", "cre"), email = "philip.waggoner@gmail.com"),
+             person("Fong", "Chan", role = c("aut", "ctb")),
+             person("Lu", "Zhang", role = c("aut", "ctb")))
+Maintainer: Philip Waggoner <philip.waggoner@gmail.com>
+Description: The main function, plot_mm(), is used for (gg)plotting output from mixture models, 
+    including both densities and overlaying mixture weight component curves from the fit models in line with the
+    tidy principles. The package includes several additional functions for added plot customization. 
+    Supported model objects include: 'mixtools', 'EMCluster', and 'flexmix', with more from each in active dev. 
+    Supported mixture model specifications include mixtures of univariate Gaussians, multivariate Gaussians, Gammas, 
+    logistic regressions, linear regressions, and Poisson regressions.
+Imports: methods, wesanderson, amerika, ggplot2
+Suggests: mixtools, EMCluster, flexmix, testthat, graphics, dplyr,
+        patchwork, magrittr, knitr, rmarkdown
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-09 18:25:32 UTC; philip.waggoner
+Author: Philip Waggoner [aut, cre],
+  Fong Chan [aut, ctb],
+  Lu Zhang [aut, ctb]
+Repository: CRAN
+Date/Publication: 2022-11-09 21:50:02 UTC

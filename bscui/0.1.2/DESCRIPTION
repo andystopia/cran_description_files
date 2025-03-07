@@ -1,0 +1,36 @@
+Package: bscui
+Type: Package
+Title: Build SVG Custom User Interface
+Version: 0.1.2
+Authors@R: c(
+    person(
+        "Patrice", "Godard",
+        role = c("aut", "cre","cph"),
+        email = "patrice.godard@gmail.com",
+        comment = c(ORCID = "0000-0001-6257-9730")
+    )
+    )
+Description: Render SVG as interactive figures to display contextual
+   information, with selectable and clickable user interface elements.
+   These figures can be seamlessly integrated into 'rmarkdown' and 'Quarto'
+   documents, as well as 'shiny' applications, allowing manipulation of elements
+   and reporting actions performed on them.
+   Additional features include pan, zoom in/out functionality, and the ability
+   to export the figures in SVG or PNG formats.
+URL: https://patzaw.github.io/bscui/, https://github.com/patzaw/bscui/
+BugReports: https://github.com/patzaw/bscui/issues
+Depends: R (>= 4.1)
+Imports: htmlwidgets, webshot2
+Suggests: knitr, rmarkdown, here, xml2, dplyr, readr, stringr, glue,
+        scales, shiny, reactable, reactable.extras
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-11 05:54:19 UTC; pgodard
+Author: Patrice Godard [aut, cre, cph]
+    (<https://orcid.org/0000-0001-6257-9730>)
+Maintainer: Patrice Godard <patrice.godard@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-11 11:00:06 UTC

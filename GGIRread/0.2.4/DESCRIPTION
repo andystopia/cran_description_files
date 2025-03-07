@@ -1,0 +1,37 @@
+Package: GGIRread
+Type: Package
+Title: Wearable Accelerometer Data File Readers
+Version: 0.2.4
+Date: 2022-10-09
+Authors@R: c(person("Vincent T","van Hees",role=c("aut","cre"),
+                  email="v.vanhees@accelting.com"),
+             person(given = "Patrick",family = "Bos",
+                  role = c("aut"),
+                  email = "egpbos@gmail.com",
+                  comment = c(ORCID = "0000-0002-6033-960X")),
+             person("Jing Hua","Zhao",role="ctb"),
+             person("Evgeny","Mirkes",role="ctb"),
+             person("Dan","Jackson",role="ctb"),
+             person("Medical Research Council UK",  role = c("cph", "fnd")),
+             person("Accelting",  role = c("cph", "fnd")))
+Maintainer: Vincent T van Hees <v.vanhees@accelting.com>
+Description: Reads data collected from wearable acceleratometers as used in sleep and physical activity research. Currently supports file formats: binary data from 'GENEActiv' <https://activinsights.com/>, binary data from GENEA devices (not for sale), and .cwa-format and .wav-format data from 'Axivity' <https://axivity.com>. Primarily designed to complement R package GGIR <https://CRAN.R-project.org/package=GGIR>.
+URL: https://github.com/wadpac/GGIRread/
+BugReports: https://github.com/wadpac/GGIRread/issues
+License: LGPL (>= 2.0, < 3)
+Suggests: testthat
+Imports: matlab, bitops, Rcpp (>= 0.12.10), tuneR
+Depends: stats, utils, R (>= 3.5.0)
+NeedsCompilation: yes
+LinkingTo: Rcpp
+ByteCompile: yes
+Packaged: 2022-10-09 12:29:41 UTC; vincent
+Author: Vincent T van Hees [aut, cre],
+  Patrick Bos [aut] (<https://orcid.org/0000-0002-6033-960X>),
+  Jing Hua Zhao [ctb],
+  Evgeny Mirkes [ctb],
+  Dan Jackson [ctb],
+  Medical Research Council UK [cph, fnd],
+  Accelting [cph, fnd]
+Repository: CRAN
+Date/Publication: 2022-10-09 14:20:02 UTC

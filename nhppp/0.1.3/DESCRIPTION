@@ -1,0 +1,33 @@
+Package: nhppp
+Title: Simulating Nonhomogeneous Poisson Point Processes
+Version: 0.1.3
+Authors@R: 
+    c(person(given = "Thomas", 
+             family = "Trikalinos", 
+             email = "thomas_trikalinos@brown.edu", 
+             role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0000-0002-3990-1848")), 
+      person(given = "Yuliia", 
+             family = "Sereda", 
+             email = "sereda_yuliia@brown.edu", 
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-4017-4561"))
+    )
+Description: Simulates events from one dimensional nonhomogeneous Poisson point processes (NHPPPs). Functions are based on three algorithms that provably sample from a target NHPPP: the time-transformation of a homogeneous Poisson process (of intensity one) via the inverse of the integrated intensity function (Cinlar E, "Theory of stochastic processes" (1975, ISBN:0486497996)); the generation of a Poisson number of order statistics from a fixed density function; and the thinning of a majorizing NHPPP via an acceptance-rejection scheme (Lewis PAW, Shedler, GS (1979) <doi:10.1002/nav.3800260304>).
+License: GPL (>= 3)
+Imports: lifecycle, rstream
+Encoding: UTF-8
+Language: es
+RoxygenNote: 7.2.3
+Suggests: testthat, withr
+Config/Needs/website: rmarkdown
+URL: https://github.com/bladder-ca/nhppp-fast
+BugReports: https://github.com/bladder-ca/nhppp-fast/issues
+NeedsCompilation: no
+Packaged: 2024-02-01 12:41:54 UTC; tom
+Author: Thomas Trikalinos [aut, cre, cph]
+    (<https://orcid.org/0000-0002-3990-1848>),
+  Yuliia Sereda [aut] (<https://orcid.org/0000-0002-4017-4561>)
+Maintainer: Thomas Trikalinos <thomas_trikalinos@brown.edu>
+Repository: CRAN
+Date/Publication: 2024-02-02 19:50:08 UTC

@@ -1,0 +1,43 @@
+Type: Package
+Package: conformalInference.fd
+Title: Tools for Conformal Inference for Regression in Multivariate
+        Functional Setting
+Version: 1.0.0
+Authors@R: c(
+    person("Jacopo", "Diquigiovanni", role = c("aut", "ths")),
+    person("Matteo", "Fontana", , "matteo.fontana@ec.europa.eu", role = c("aut", "ths")),
+    person("Aldo", "Solari", role = c("aut", "ths")),
+    person("Simone", "Vantini", role = c("aut", "ths")),
+    person("Paolo", "Vergottini", , "paolo.vergottini@gmail.com", role = c("aut", "cre")),
+    person("Ryan", "Tibshirani", role = "ctb")
+    )
+Description: It computes full conformal, split conformal and multi split
+    conformal prediction regions when the response has functional nature.
+    Moreover, the package also contain a plot function to visualize the
+    output of the split conformal.
+    To guarantee consistency, the package structure mimics the univariate 
+    'conformalInference' package of professor Ryan Tibshirani.
+    The main references for the code are: 
+    Diquigiovanni, Fontana, and Vantini (2021) <arXiv:2102.06746>, 
+    Diquigiovanni, Fontana, and Vantini (2021) <arXiv:2106.01792>,
+    Solari, and Djordjilovic (2021) <arXiv:2103.00627>.
+URL: https://github.com/ryantibs/conformal ,
+        https://github.com/paolo-vergo/conformalInference.fd
+License: GPL-2
+Depends: R (>= 4.1.0)
+Imports: fda (>= 5.5.1), future (>= 1.23.0), future.apply (>= 1.8.1),
+        ggplot2 (>= 3.3.5), gridExtra (>= 2.3), stats, utils,
+Suggests: roahd
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-01-23 13:06:11 UTC; paolo
+Author: Jacopo Diquigiovanni [aut, ths],
+  Matteo Fontana [aut, ths],
+  Aldo Solari [aut, ths],
+  Simone Vantini [aut, ths],
+  Paolo Vergottini [aut, cre],
+  Ryan Tibshirani [ctb]
+Maintainer: Paolo Vergottini <paolo.vergottini@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-01-25 08:42:46 UTC

@@ -1,0 +1,36 @@
+Package: HospitalNetwork
+Type: Package
+Title: Building Networks of Hospitals Through Patients Transfers
+Version: 0.9.3
+Authors@R: c(
+  person("Pascal", "Crépey", email = "pascal.crepey@ehesp.fr", role = c("aut", "cre", "cph")),
+  person("Tjibbe", "Donker", email = "tjibbe.donker@uniklinik-freiburg.de", role = "aut"),
+  person("Clément", "Massonnaud", email = "clement.massonnaud@gmail.com", role = "aut"),
+  person("Michael", "Lydeamore", email="michael.lydeamore@monash.edu", role=c("aut"))
+  )
+Description: Set of tools to help interested researchers to build hospital networks 
+  from data on hospitalized patients transferred between hospitals. Methods provided 
+  have been used in Donker T, Wallinga J, Grundmann H. (2010) <doi:10.1371/journal.pcbi.1000715>, 
+  and Nekkab N, Crépey P, Astagneau P, Opatowski L, Temime L. (2020) <doi:10.1038/s41598-020-71212-6>.
+URL: https://pascalcrepey.github.io/HospitalNetwork/
+BugReports: https://github.com/PascalCrepey/HospitalNetwork/issues
+License: GPL-3
+Encoding: UTF-8
+LazyLoad: true
+Imports: checkmate, igraph, lubridate, R6, ggplot2, ggraph
+Depends: data.table
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0), shiny, shinyWidgets,
+        shinydashboard, DT, shinyalert, shinyjs, vdiffr, pander, glue,
+        golem, htmltools
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-02-25 14:28:38 UTC; pascalcrepey
+Author: Pascal Crépey [aut, cre, cph],
+  Tjibbe Donker [aut],
+  Clément Massonnaud [aut],
+  Michael Lydeamore [aut]
+Maintainer: Pascal Crépey <pascal.crepey@ehesp.fr>
+Repository: CRAN
+Date/Publication: 2023-02-27 08:22:43 UTC

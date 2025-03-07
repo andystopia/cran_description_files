@@ -1,0 +1,33 @@
+Package: image2data
+Type: Package
+Title: Turn Images into Data Sets
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "P.-O.",
+             family = "Caron",
+             role = c("aut","cre","cph"),
+             email = "pocaron19@gmail.com",
+             comment = c(ORCID = "0000-0001-6346-5583")),
+             person(given = "Alexandre",
+             family = "Dufresne",
+             email = "alexandredufresne018@gmail.com",
+             role = c("aut","cph")))
+Description: The goal of 'image2data' is to extract images and return
+    them into a data set, 
+    especially for teaching data manipulation and data visualization. 
+    Basically, the eponymous function takes an 
+    image file ('png', 'tiff', 'jpeg', 'bmp') and turn it into a data set,
+    pixels being rows (subjects) and columns (variables) being their coordinate positions (x- and y-axis) and their respective color (in hex codes). 
+    The function can return a complete image or a range of color (i.e., contour, silhouette).
+    The data can then be manipulated as would any data set by either creating other related variables (to hide the image) or as a genuine toy data set.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: readbitmap (>= 0.1.0)
+NeedsCompilation: no
+Packaged: 2022-02-23 21:23:47 UTC; pocar
+Author: P.-O. Caron [aut, cre, cph] (<https://orcid.org/0000-0001-6346-5583>),
+  Alexandre Dufresne [aut, cph]
+Maintainer: P.-O. Caron <pocaron19@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-24 19:30:04 UTC

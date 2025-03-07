@@ -1,0 +1,38 @@
+Package: FieldSimR
+Title: Simulation of Plot-Level Data in Plant Breeding Field Trials
+Version: 1.0.0
+Date: 2022-09-19
+Authors@R: c(person("Christian", "Werner", email = "werner.christian@proton.me", 
+	  role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9400-5061")),
+    person("Daniel", "Tolhurst", role = "aut",
+    comment = c(ORCID = "0000-0002-4787-080X")),
+    person("Chris", "Gaynor", role = "ctb", 
+    comment = c(ORCID = "0000-0003-0558-6656")),
+	  person("Giovanny", "Covarrubias-Pazaran", role = "ctb", 
+    comment = c(ORCID = "0000-0002-7194-3837")),
+    person("Lorena", "Batista", role = "ctb", 
+    comment = c(ORCID = "0000-0001-8472-8776")))
+Maintainer: Christian Werner <werner.christian@proton.me>
+Description: Simulates plot-level data in plant breeding field trials for multiple traits in multiple 
+    environments. Its core function simulates spatially correlated plot-level errors across correlated 
+    traits using bivariate interpolation or a two-dimensional autoregressive process of order one (AR1:AR1). 
+    'FieldSimR' then combines this spatial error with random measurement error at a user-defined 
+    ratio. The simulated plot-level errors can be combined with genetic values (e.g. true, simulated or 
+    predicted) to generate plot-level phenotypes. 'FieldSimR' provides wrapper functions to simulate the 
+    genetic values for multiple traits in multiple environments using the 'R' package 'AlphaSimR'.
+License: GPL (>= 3)
+URL: https://github.com/crWerner/fieldsimr
+Encoding: UTF-8
+Imports: fields, interp, matrixcalc, mbend
+Suggests: AlphaSimR
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-09-19 21:31:04 UTC; CWERNER
+Author: Christian Werner [aut, cre] (<https://orcid.org/0000-0001-9400-5061>),
+  Daniel Tolhurst [aut] (<https://orcid.org/0000-0002-4787-080X>),
+  Chris Gaynor [ctb] (<https://orcid.org/0000-0003-0558-6656>),
+  Giovanny Covarrubias-Pazaran [ctb]
+    (<https://orcid.org/0000-0002-7194-3837>),
+  Lorena Batista [ctb] (<https://orcid.org/0000-0001-8472-8776>)
+Repository: CRAN
+Date/Publication: 2022-09-20 09:46:06 UTC

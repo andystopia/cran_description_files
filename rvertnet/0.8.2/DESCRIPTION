@@ -1,0 +1,37 @@
+Package: rvertnet
+Title: Search 'Vertnet', a 'Database' of Vertebrate Specimen Records
+Description: Retrieve, map and summarize data from the 'VertNet.org' 
+    archives (<http://vertnet.org/>).  Functions allow searching by many 
+    parameters, including 'taxonomic' names, places, and dates. In addition, 
+    there is an interface for conducting spatially delimited searches, and 
+    another for requesting large 'datasets' via email.
+Version: 0.8.2
+Authors@R: c(
+    person("Scott", "Chamberlain",
+        role = c("aut", "cre"),
+        email = "myrmecocystus@gmail.com",
+        comment = c("0000-0003-1444-9135")),
+    person("Chris", "Ray", role = "ctb"),
+    person("Vijay", "Barve", role = "ctb")
+    )
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/rvertnet (devel)
+        https://docs.ropensci.org/rvertnet/ (documentation)
+BugReports: https://github.com/ropensci/rvertnet/issues
+Encoding: UTF-8
+Imports: jsonlite (>= 1.5), crul (>= 0.5.2), dplyr (>= 0.5.0), tibble,
+        ggplot2, maps
+Suggests: testthat, vcr
+RoxygenNote: 7.1.1
+X-schema.org-applicationCategory: Data Access
+X-schema.org-keywords: species, occurrences, biodiversity, maps,
+        vertnet, mammals, mammalia, specimens
+X-schema.org-isPartOf: "https://ropensci.org"
+NeedsCompilation: no
+Packaged: 2021-05-13 18:37:04 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (0000-0003-1444-9135),
+  Chris Ray [ctb],
+  Vijay Barve [ctb]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-05-13 19:10:02 UTC

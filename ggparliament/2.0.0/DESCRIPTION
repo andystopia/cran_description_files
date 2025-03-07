@@ -1,0 +1,32 @@
+Package: ggparliament
+Type: Package
+Title: Parliament Plots
+Description: Simple parliament plots using 'ggplot2'. Visualize election results as points in the architectural layout of the legislative chamber.
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+Version: 2.0.0
+Date: 2018-09-14
+Authors@R: c(person("Robert", "Hickman", role = c("aut","cre"), email = "robwhickman@gmail.com"), person("Zoe", "Meers", role = c("aut"), email = "zoe.meers@gmail.com"), person("Thomas J.", "Leeper",role = c("aut"), email = "thosjleeper@gmail.com", comment = c(ORCID = "0000-0003-4097-6326")))
+URL: https://github.com/robwhickman/ggparliament
+BugReports: https://github.com/robwhickman/ggparliament/issues
+LazyData: true
+Imports: ggplot2, dplyr, rlang
+Suggests: tidyr, magrittr, knitr, testthat, rmarkdown, purrr, ggrepel,
+        scales
+VignetteBuilder: knitr
+RoxygenNote: 6.1.0.9000
+Encoding: UTF-8
+Collate: 'ggparliament_package.R' 'data.R' 'draw_majoritythreshold.R'
+        'helper_funcs.R' 'parliament_data.R' 'draw_partylabels.R'
+        'draw_totalseats.R' 'geom_parliament_seats.R'
+        'geom_emphasize_parliamentarians.R' 'geom_parliament_bar.R'
+        'geom_highlight_government.R' 'geom_overhang_seats.R'
+        'theme_ggparliament.R'
+NeedsCompilation: no
+Packaged: 2018-09-19 00:43:56 UTC; Robert
+Author: Robert Hickman [aut, cre],
+  Zoe Meers [aut],
+  Thomas J. Leeper [aut] (<https://orcid.org/0000-0003-4097-6326>)
+Maintainer: Robert Hickman <robwhickman@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-09-30 13:00:03 UTC

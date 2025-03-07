@@ -1,0 +1,21 @@
+Package: ICDS
+Type: Package
+Title: Identification of Cancer Dysfunctional Subpathway by Integrating
+        DNA Methylation, Copy Number Variation, and Gene Expression
+        Data
+Version: 0.1.1
+Author: Junwei Han,Baotong Zheng,Siyao Liu
+Maintainer: Junwei Han <hanjunwei1981@163.com>
+Description: Identify Cancer Dysfunctional Sub-pathway by integrating gene expression, DNA methylation and copy number variation, and pathway topological information. 1)We firstly calculate the gene risk scores by integrating three kinds of data: DNA methylation, copy number variation, and gene expression.  2)Secondly, we perform a greedy search algorithm to identify the key dysfunctional sub-pathways within the pathways for which the discriminative scores were locally maximal. 3)Finally, the permutation test was used to calculate statistical significance level for these key dysfunctional sub-pathways.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, prettydoc
+VignetteBuilder: knitr
+Imports: igraph, graphite, metap, methods, org.Hs.eg.db
+Depends: R (>= 2.10)
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-01-18 08:22:40 UTC; zbt
+Repository: CRAN
+Date/Publication: 2019-01-25 17:00:10 UTC

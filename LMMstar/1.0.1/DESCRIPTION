@@ -1,0 +1,55 @@
+Package: LMMstar
+Type: Package
+Title: Repeated Measurement Models for Discrete Times
+Version: 1.0.1
+Date: 2024-01-10
+Authors@R: c(
+    person("Brice", "Ozenne", role = c("aut", "cre"), email = "brice.mh.ozenne@gmail.com", comment = c(ORCID = "0000-0001-9694-2956")),
+    person("Julie", "Forman", role = "aut", email = "jufo@sund.ku.dk", comment = c(ORCID = "0000-0001-7368-0869"))
+	)
+Description: Companion R package for the course "Statistical analysis of correlated and repeated measurements for health science researchers"
+	     taught by the section of Biostatistics of the University of Copenhagen.
+	     It implements linear mixed models where the model for the variance-covariance of the residuals is specified via patterns (compound symmetry, toeplitz, unstructured, ...).
+	     Statistical inference for mean, variance, and correlation parameters is performed based on the observed information and a Satterthwaite approximation of the degrees of freedom.
+	     Normalized residuals are provided to assess model misspecification.
+	     Statistical inference can be performed for arbitrary linear or non-linear combination(s) of model coefficients.
+	     Predictions can be computed conditional to covariates only or also to outcome values. 
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/bozenne/LMMstar
+BugReports: https://github.com/bozenne/LMMstar/issues
+Depends: R (>= 3.5.0)
+Imports: copula, doParallel, emmeans, foreach, ggplot2, grid, lava,
+        Matrix, multcomp, nlme, numDeriv, parallel, pbapply, rlang,
+        scales, sandwich
+Suggests: AICcmodavg, asht, data.table, ggh4x, ggpubr, lattice,
+        mvtnorm, lme4, lmerTest, mice, nlmeU, optimx, psych, Publish,
+        qqtest, R.rsp, reshape2, rmcorr, testthat
+VignetteBuilder: R.rsp
+RoxygenNote: 7.2.3
+Collate: '0-onload.R' 'BuyseTest_discreteRoot.R' 'LMMstar-package.R'
+        'LMMstar.options.R' 'add.R' 'addNA.R' 'anova.R' 'autoplot.R'
+        'backtransform.R' 'baselineAdjustment.R' 'coef.R' 'confint.R'
+        'constrain.R' 'df.R' 'discreteRoot.R' 'doc-data.R'
+        'dummy.coef.R' 'emmeans.R' 'estimate.R' 'findPatterns.R'
+        'fitted.R' 'formula.R' 'iid.R' 'information.R' 'levels.R'
+        'lmm.R' 'lmmCC.R' 'logLik.R' 'manifest.R' 'mlmm.R'
+        'model.frame.R' 'model.matrix.R' 'model.tables.R' 'moments.R'
+        'mt.test.R' 'multcomp.R' 'nobs.R' 'operator.R' 'partialCor.R'
+        'plot.R' 'precompute.R' 'predict.R' 'print.R' 'profile.R'
+        'proportion.R' 'ranef.R' 'rbind.R' 'reformat.R' 'remove.R'
+        'reparametrize.R' 'resample.R' 'residuals.R' 'sampleRem.R'
+        'scatterplot.R' 'score.R' 'sigma.R' 'structure-calc_Omega.R'
+        'structure-calc_d2Omega.R' 'structure-calc_dOmega.R'
+        'structure-initialization.R' 'structure-skeleton.R'
+        'structure-skeletonK.R' 'structure-skeletonRho.R'
+        'structure-skeletonSigma.R' 'structure-update.R' 'structure.R'
+        'summarize.R' 'summarizeNA.R' 'summary.R' 'terms.R' 'utils.R'
+        'vcov.R' 'weights.R'
+NeedsCompilation: no
+Packaged: 2024-01-10 14:56:51 UTC; hpl802
+Author: Brice Ozenne [aut, cre] (<https://orcid.org/0000-0001-9694-2956>),
+  Julie Forman [aut] (<https://orcid.org/0000-0001-7368-0869>)
+Maintainer: Brice Ozenne <brice.mh.ozenne@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-11 21:20:02 UTC

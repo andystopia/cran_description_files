@@ -1,0 +1,22 @@
+Package: deduped
+Type: Package
+Title: Making "Deduplicated" Functions
+Version: 0.1.4
+Authors@R: 
+    person("Or", "Gadish", email = "orgadish@gmail.com", role = c("aut", "cre", "cph"))
+Description: Contains one main function deduped() that returns a 
+    function that acts on the unique values of the first input
+    and expands the results back. This can significantly speed
+    up certain slow iterative functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: collapse, fastmatch
+RoxygenNote: 7.2.3
+Suggests: dplyr, hashr, purrr, readr, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-10-24 02:27:37 UTC; orgadish
+Author: Or Gadish [aut, cre, cph]
+Maintainer: Or Gadish <orgadish@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-25 06:40:02 UTC

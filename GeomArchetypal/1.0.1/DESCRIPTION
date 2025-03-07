@@ -1,0 +1,39 @@
+Package: GeomArchetypal
+Type: Package
+Title: Finds the Geometrical Archetypal Analysis of a Data Frame
+Version: 1.0.1
+Date: 2024-05-30
+Authors@R: c(
+             person("Demetris", "Christopoulos",email = "dchristop@econ.uoa.gr",role = c("aut", "cre","cph")),
+             person("David", "Midgley", email = "david.midgley@insead.edu", role = c("ctb","cph")),
+             person("Sunil", "Venaik", email = "s.venaik@business.uq.edu.au", role = c("ctb")),
+             person("INSEAD Hoffmann Institute France", role = c("fnd")),
+			       person("The University of Queensland Australia", role = c("fnd"))
+             )  
+Maintainer: Demetris Christopoulos <dchristop@econ.uoa.gr>
+Description: Performs Geometrical Archetypal Analysis after creating Grid Archetypes 
+    which are the Cartesian Product of all minimum, maximum variable values. Since the archetypes 
+    are fixed now, we have the ability to compute the convex composition coefficients for all 
+    our available data points much faster by using the half part of Principal Convex Hull Archetypal method. 
+    Additionally we can decide to keep as archetypes the closer to the Grid Archetypes ones. Finally 
+    the number of archetypes is always 2 to the power of the dimension of our data points 
+    if we consider them as a vector space. 
+    Cutler, A., Breiman, L. (1994)      <doi:10.1080/00401706.1994.10485840>.
+    Morup, M., Hansen, LK. (2012) <doi:10.1016/j.neucom.2011.06.033>.
+    Christopoulos, DT. (2024) <doi:10.13140/RG.2.2.14030.88642>.   
+License: GPL (>= 2)
+Depends: R (>= 3.1.0)
+Imports: Matrix, geometry, archetypal, doParallel, methods, plot3D,
+        distances, rlang, magrittr, dplyr, mirai, abind, scales
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Author: Demetris Christopoulos [aut, cre, cph],
+  David Midgley [ctb, cph],
+  Sunil Venaik [ctb],
+  INSEAD Hoffmann Institute France [fnd],
+  The University of Queensland Australia [fnd]
+NeedsCompilation: no
+Language: en-US
+Packaged: 2024-05-31 16:25:30 UTC; demetris_ws
+Repository: CRAN
+Date/Publication: 2024-06-01 10:33:26 UTC

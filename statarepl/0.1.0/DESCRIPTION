@@ -1,0 +1,33 @@
+Package: statarepl
+Type: Package
+Title: Launch and Interact with a 'Stata' Session
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Zhenxing",
+           family = "Cheng",
+           role = c("aut", "cre"),
+           email = "czxjnu@163.com"),
+    person(given = "Shuiqin",
+           family = "Zhang",
+           role = c("aut", "ctb"),
+           email = "2633461990@qq.com"))
+Description: Launch and interact with a 'Stata' session. Provides a interface for the user to evaluate 'Stata' codes from R or start a 'Stata' session to evaluate 'Stata' codes interactively. 
+License: MIT + file LICENSE
+Date: 2019-12-16
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0.0)
+Imports: R6, cli, crayon, subprocess, rlang, jsonlite, knitr, utils,
+        attempt, tools, rstudioapi
+SystemRequirements: Stata
+Suggests: rmarkdown
+URL: https://github.com/czxa/statarepl
+BugReports: https://github.com/czxa/statarepl/issues
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2019-12-16 12:49:19 UTC; czx
+Author: Zhenxing Cheng [aut, cre],
+  Shuiqin Zhang [aut, ctb]
+Maintainer: Zhenxing Cheng <czxjnu@163.com>
+Repository: CRAN
+Date/Publication: 2019-12-16 14:20:02 UTC

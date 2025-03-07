@@ -1,0 +1,28 @@
+Package: AICcPermanova
+Title: Model Selection of PERMANOVA Models Using AICc
+Version: 0.0.1
+Authors@R: 
+    person(given = "Derek", family ="Corcoran",  
+    email = "derek.corcoran.barrios@gmail.com", role = c("aut", "cre"))
+Description: Provides tools for model selection and model averaging of PerMANOVA 
+    models using Akaike Information Criterion corrected for small sample sizes 
+    (AICc) and Information Theoretic criteria principles. The package is built 
+    around the PERMANOVA analysis from the 'vegan' package and provides a 
+    streamlined workflow for generating and comparing models, obtaining model 
+    weights, and summarizing results using model averaging approaches.  The 
+    methods implemented in this package are based on the practical information-
+    theoretic approach described by Burnham, K. P. and Anderson, D. R. (2002) 
+    (<doi:10.1007/b97636>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: broom, car, data.table, doParallel, dplyr, foreach, furrr,
+        future, parallel, stats, stringr, tidyr, vegan
+URL: https://github.com/Sustainscapes/AICcPerm
+BugReports: https://github.com/Sustainscapes/AICcPerm/issues
+NeedsCompilation: no
+Packaged: 2023-04-05 00:13:03 UTC; au687614
+Author: Derek Corcoran [aut, cre]
+Maintainer: Derek Corcoran <derek.corcoran.barrios@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-05 18:26:04 UTC

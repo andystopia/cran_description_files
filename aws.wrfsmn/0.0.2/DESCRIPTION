@@ -1,0 +1,29 @@
+Type: Package
+Package: aws.wrfsmn
+Title: Data Processing of SMN Hi-Res Weather Forecast from 'AWS'
+Version: 0.0.2
+Authors@R: 
+    person("Gonzalo", "Diaz", , "gonzalomartindiaz22@gmail.com", role = c("cre", "aut"))
+Description: Exploration of Weather Research & Forecasting ('WRF') Model data
+    of Servicio Meteorologico Nacional (SMN) from Amazon Web Services
+    (<https://registry.opendata.aws/smn-ar-wrf-dataset/>) cloud. The package
+    provides the possibility of data downloading, processing and correction
+    methods. It also has map management and series exploration of available
+    meteorological variables of 'WRF' forecast.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Imports: aws.s3 (>= 0.3.21), lubridate (>= 1.9.3), terra (>= 1.7-65),
+        dplyr (>= 1.1.4), ggplot2 (>= 3.4.4), hydroGOF (>= 0.5-4),
+        stats (>= 4.1.2), magrittr (>= 2.0.3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-03-06 18:50:21 UTC; gdiaz
+Author: Gonzalo Diaz [cre, aut]
+Maintainer: Gonzalo Diaz <gonzalomartindiaz22@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-06 19:00:02 UTC

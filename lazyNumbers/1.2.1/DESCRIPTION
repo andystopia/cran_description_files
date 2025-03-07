@@ -1,0 +1,29 @@
+Type: Package
+Package: lazyNumbers
+Title: Exact Floating-Point Arithmetic
+Version: 1.2.1
+Authors@R: 
+    person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
+Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
+Description: Provides a new type of numbers called the lazy numbers.
+    Arithmetic on lazy numbers is exact, contrary to ordinary
+    floating-point arithmetic. The lazy numbers are implemented in 'C++'
+    with the 'CGAL' library (<https://www.cgal.org/>).
+License: GPL-3
+URL: https://github.com/stla/lazyNumbers
+BugReports: https://github.com/stla/lazyNumbers/issues
+Imports: methods, Rcpp (>= 1.0.9), stats
+LinkingTo: BH, Rcpp, RcppCGAL, RcppEigen
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+SystemRequirements: C++ 17, gmp, mpfr
+Collate: 'classes.R' 'Arith.R' 'Compare.R' 'Concat.R' 'Extract.R'
+        'Math.R' 'RcppExports.R' 'Summary.R' 'Transpose.R' 'aaa.R'
+        'lazyMatrices.R' 'lazyNumbers.R'
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-11-21 15:29:23 UTC; stla
+Author: Stéphane Laurent [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-11-21 21:50:06 UTC

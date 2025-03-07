@@ -1,0 +1,28 @@
+Package: fdasrvf
+Type: Package
+Title: Elastic Functional Data Analysis
+Version: 1.9.8
+Date: 2022-06-04
+Author: J. Derek Tucker <jdtuck@sandia.gov>
+Maintainer: J. Derek Tucker <jdtuck@sandia.gov>
+Description: Performs alignment, PCA, and modeling of multidimensional and
+            unidimensional functions using the square-root velocity framework
+            (Srivastava et al., 2011 <arXiv:1103.3817> and
+            Tucker et al., 2014 <DOI:10.1016/j.csda.2012.12.001>). This framework
+            allows for elastic analysis of functional data through phase and
+            amplitude separation.
+License: GPL-3
+LazyData: TRUE
+SystemRequirements: C++11
+Imports: Rcpp (>= 0.12.1), coda, foreach, mvtnorm, methods, matrixcalc,
+        splines, parallel, fields, doParallel, viridisLite, tolerance,
+        lpSolve, Matrix, testthat
+Suggests: interp, plot3D, plot3Drgl, rgl
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.5.0),
+RoxygenNote: 7.2.0
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2022-06-07 14:02:34 UTC; jtucker
+Repository: CRAN
+Date/Publication: 2022-06-07 14:50:06 UTC

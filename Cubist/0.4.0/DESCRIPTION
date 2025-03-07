@@ -1,0 +1,37 @@
+Package: Cubist
+Type: Package
+Title: Rule- And Instance-Based Regression Modeling
+Version: 0.4.0
+Authors@R: c(
+    person("Max", "Kuhn", , "mxkuhn@gmail.com", c("aut", "cre")),
+    person("Steve", "Weston", role = "ctb"),
+    person("Chris", "Keefer", role = "ctb"),
+    person("Nathan", "Coulter", role = "ctb"),
+    person("Ross", "Quinlan", role = "aut", comment = "Author of imported C code"),
+    person("Rulequest Research Pty Ltd.", role = "cph", comment = "Copyright holder of imported C code"))
+Maintainer: Max Kuhn <mxkuhn@gmail.com>
+Description: Regression modeling using rules with added instance-based corrections.
+Depends: lattice
+Imports: reshape2, utils
+Config/Needs/website: pkgdown, caret, tidymodels, rules
+Suggests: mlbench, knitr, modeldata, dplyr (>= 0.7.4), rlang,
+        tidyrules, rmarkdown
+URL: https://topepo.github.io/Cubist//,
+        https://topepo.github.io/Cubist/
+BugReports: https://github.com/topepo/Cubist/issues
+License: GPL-3
+LazyLoad: yes
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Encoding: UTF-8
+Biarch: true
+NeedsCompilation: yes
+Packaged: 2022-02-05 13:18:19 UTC; maxkuhn
+Author: Max Kuhn [aut, cre],
+  Steve Weston [ctb],
+  Chris Keefer [ctb],
+  Nathan Coulter [ctb],
+  Ross Quinlan [aut] (Author of imported C code),
+  Rulequest Research Pty Ltd. [cph] (Copyright holder of imported C code)
+Repository: CRAN
+Date/Publication: 2022-02-05 13:40:02 UTC

@@ -1,0 +1,38 @@
+Package: posologyr
+Title: Individual Dose Optimization using Population Pharmacokinetics
+Version: 1.2.2
+Authors@R: c(
+    person("Cyril","Leven",role = c("aut", "cre","cph"),
+           email = "cyril.leven@chu-brest.fr",
+           comment = c(ORCID = "0000-0002-0697-4370")),
+    person("Emmanuelle","Comets",role = c("ctb")),
+    person("Audrey","Lavenu",role = c("ctb")),
+    person("Marc","Lavielle",role = c("ctb"))
+    )
+Description: Determine individual pharmacokinetic (and 
+    pharmacokinetic-pharmacodynamic) profiles and use them to personalise drug 
+    regimens. You provide the data and a population pharmacokinetic model, 
+    'posologyr' provides the individual a posteriori estimate and allows you to 
+    determine the optimal dosing. The empirical Bayes estimates are computed as 
+    described in Kang et al. (2012) <doi:10.4196/kjpp.2012.16.2.97>.
+License: AGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: rxode2, stats, mvtnorm, data.table
+Suggests: lotri, knitr, rmarkdown, testthat (>= 3.0.0), ggplot2,
+        magrittr, tidyr
+URL: https://levenc.github.io/posologyr/,
+        https://github.com/levenc/posologyr
+BugReports: https://github.com/levenc/posologyr/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-06-12 09:39:10 UTC; cyril
+Author: Cyril Leven [aut, cre, cph] (<https://orcid.org/0000-0002-0697-4370>),
+  Emmanuelle Comets [ctb],
+  Audrey Lavenu [ctb],
+  Marc Lavielle [ctb]
+Maintainer: Cyril Leven <cyril.leven@chu-brest.fr>
+Repository: CRAN
+Date/Publication: 2023-06-12 18:10:02 UTC

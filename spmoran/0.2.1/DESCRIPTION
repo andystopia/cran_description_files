@@ -1,0 +1,19 @@
+Package: spmoran
+Type: Package
+Title: Moran Eigenvector-Based Scalable Spatial Additive Mixed Models
+Version: 0.2.1
+Date: 2021-01-10
+Author: Daisuke Murakami <dmuraka@ism.ac.jp>
+Maintainer: Daisuke Murakami <dmuraka@ism.ac.jp>
+Description: Functions for estimating spatial additive mixed models and other spatial regression models for Gaussian and non-Gaussian data. Moran eigenvectors are used to an approximate Gaussian process modeling which is interpretable in terms of the Moran coefficient. The GP is used for modeling the spatial processes in residuals and regression coefficients. For details see Murakami (2020) <arXiv:1703.04467>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: sp, fields, vegan, Matrix, doParallel, foreach, ggplot2,
+        spdep, rARPACK, RColorBrewer, splines, methods
+Suggests: R.rsp, rgdal
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2021-01-10 16:33:25 UTC; matsui_lab
+Repository: CRAN
+Date/Publication: 2021-01-10 23:30:02 UTC

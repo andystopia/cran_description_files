@@ -1,0 +1,47 @@
+Package: salesforcer
+Title: An Implementation of 'Salesforce' APIs Using Tidy Principles
+Version: 0.2.2
+Date: 2020-09-07
+Description: Functions connecting to the 'Salesforce' Platform APIs (REST, SOAP, 
+    Bulk 1.0, Bulk 2.0, Metadata, Reports and Dashboards) 
+    <https://trailhead.salesforce.com/en/content/learn/modules/api_basics/api_basics_overview>. 
+    "API" is an acronym for "application programming interface". Most all calls 
+    from these APIs are supported as they use CSV, XML or JSON data that can be 
+    parsed into R data structures. For more details please see the 'Salesforce' 
+    API documentation and this package's website 
+    <https://stevenmmortimer.github.io/salesforcer/> for more information, 
+    documentation, and examples.
+Authors@R: c(
+    person(c("Steven", "M."), "Mortimer", , "mortimer.steven.m@gmail.com", c("aut", "cre")),
+    person("Takekatsu", "Hiramura", , "thira@plavox.info", c("ctb")),
+    person("Jennifer", "Bryan", , "jenny@rstudio.com", c("ctb", "cph")),
+    person("Joanna", "Zhao", , "joanna.zhao@alumni.ubc.ca", c("ctb", "cph"))
+    )
+License: MIT + file LICENSE
+URL: https://github.com/StevenMMortimer/salesforcer
+BugReports: https://github.com/StevenMMortimer/salesforcer/issues
+Depends: R (>= 3.6.0)
+Imports: methods (>= 3.6.0), utils (>= 3.6.0), stats (>= 3.6.0), dplyr
+        (>= 1.0.0), purrr (>= 0.3.4), vctrs (>= 0.3.4), tibble (>=
+        3.0.3), readr (>= 1.3.1), lubridate (>= 1.7.8), rlang (>=
+        0.4.7), httr (>= 1.4.1), curl (>= 4.3), data.table (>= 1.13.0),
+        XML (>= 3.99-0.3), xml2 (>= 1.3.2), jsonlite (>= 1.6.1), rlist
+        (>= 0.4.6.1), zip (>= 2.0.4), base64enc (>= 0.1-3), mime (>=
+        0.9), lifecycle (>= 0.2.0)
+Suggests: knitr, testthat, spelling, rmarkdown, here, microbenchmark,
+        ggplot2, sessioninfo, RForcecom
+VignetteBuilder: knitr
+ByteCompile: true
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-09-09 03:00:44 UTC; steven.mortimer
+Author: Steven M. Mortimer [aut, cre],
+  Takekatsu Hiramura [ctb],
+  Jennifer Bryan [ctb, cph],
+  Joanna Zhao [ctb, cph]
+Maintainer: Steven M. Mortimer <mortimer.steven.m@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-09-09 06:40:14 UTC

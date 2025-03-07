@@ -1,0 +1,29 @@
+Package: CIMTx
+Type: Package
+Title: Causal Inference for Multiple Treatments with a Binary Outcome
+Version: 1.1.0
+Authors@R: c(
+  person("Liangyuan", "Hu", role = "aut", email = "Liangyuan.Hu@mountsinai.org"),
+  person("Chenyang", "Gu", role = "aut",
+         email = "chenyang_gu@alumni.brown.edu"),
+  person("Michael", "Lopez", role = "aut", email = "Michael.Lopez@nfl.com"),
+  person("Jiayi", "Ji", role = c("aut", "cre"), email = "Jiayi.Ji@mountsinai.org"))
+Description: Different methods to conduct causal inference for multiple treatments with a binary outcome, including regression adjustment, vector matching, Bayesian additive regression trees, targeted maximum likelihood and inverse probability of treatment weighting using different generalized propensity score models such as multinomial logistic regression, generalized boosted models and super learner. For more details, see the paper by Hu et al. <doi:10.1177/0962280220921909>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: nnet (>= 7.3-16), BART (>= 2.9), twang (>= 2.5), arm (>=
+        1.2-12), dplyr (>= 1.0.7), Matching (>= 4.9-11), magrittr (>=
+        2.0.1), WeightIt (>= 0.12.0), tmle (>= 1.5.0.2), tidyr (>=
+        1.1.4), stats, ggplot2 (>= 3.3.5), cowplot (>= 1.1.1), mgcv (>=
+        1.8-38), metR (>= 0.11.0), stringr (>= 1.4.0), SuperLearner (>=
+        2.0-28), foreach (>= 1.5.1), doParallel (>= 1.0.16)
+NeedsCompilation: no
+Packaged: 2021-11-29 22:46:13 UTC; jiayi
+Author: Liangyuan Hu [aut],
+  Chenyang Gu [aut],
+  Michael Lopez [aut],
+  Jiayi Ji [aut, cre]
+Maintainer: Jiayi Ji <Jiayi.Ji@mountsinai.org>
+Repository: CRAN
+Date/Publication: 2021-11-29 23:10:09 UTC

@@ -1,0 +1,41 @@
+Package: ctrdata
+Type: Package
+Title: Retrieve and Analyze Clinical Trials in Public Registers
+Version: 1.13.2
+Imports: jsonlite, httr, curl (>= 5.0), clipr, xml2, nodbi (>= 0.9.3),
+        stringi, tibble, lubridate, jqr
+SystemRequirements: sed, php, cat, perl
+URL: https://cran.r-project.org/package=ctrdata
+BugReports: https://github.com/rfhb/ctrdata/issues
+Description: A system for querying, retrieving and analyzing
+        protocol- and results-related information on clinical trials from
+        four public registers, the 'European Union Clinical Trials Register'
+        ('EUCTR', <https://www.clinicaltrialsregister.eu/>), 
+        'ClinicalTrials.gov' ('CTGOV', <https://clinicaltrials.gov/>), 
+        the 'ISRCTN' (<http://www.isrctn.com/>) and the
+        'European Union Clinical Trials Information System'
+        ('CTIS', <https://euclinicaltrials.eu/>). 
+        Trial information is downloaded, converted and stored in a database 
+        ('PostgreSQL', 'SQLite', 'DuckDB' or 'MongoDB'; via package 'nodbi'). 
+        Documents in registers associated with trials can also be downloaded. 
+        Functions can identify deduplicated records, 
+        easily find and extract variables (fields) of interest even 
+        from complex nesting as used by the registers, and
+        to update queries. 
+        The package can be used for meta-analysis and trend-analysis of
+        the design and conduct as well as of the results of clinical trials.
+License: MIT + file LICENSE
+RoxygenNote: 7.2.3
+Suggests: devtools, knitr, rmarkdown, RSQLite (>= 2.2.4), mongolite,
+        tinytest (>= 1.2.1), R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Encoding: UTF-8
+Authors@R: person(given = "Ralf", family = "Herold", role = c("aut", "cre"),
+        email = "ralf.herold@mailbox.org", comment = c(ORCID =
+        "0000-0002-8148-6748"))
+Packaged: 2023-05-26 09:10:32 UTC; ralfherold
+Author: Ralf Herold [aut, cre] (<https://orcid.org/0000-0002-8148-6748>)
+Maintainer: Ralf Herold <ralf.herold@mailbox.org>
+Repository: CRAN
+Date/Publication: 2023-05-26 09:30:02 UTC

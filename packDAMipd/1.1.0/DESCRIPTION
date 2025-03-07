@@ -1,0 +1,32 @@
+Type: Package
+Package: packDAMipd
+Title: Decision Analysis Modelling Package with Parameters Estimation
+        Ability from Individual Patient Level Data
+Version: 1.1.0
+Authors@R: c(person("Sheeja", "Manchira Krishnan", , "sheejamk@gmail.com", c("aut", "cre")))
+Maintainer: Sheeja Manchira Krishnan <sheejamk@gmail.com>
+Description: A collection of functions to construct Markov model for model-based 
+    cost-effectiveness analysis. This includes creating Markov model (both time
+    homogenous and time dependent models), decision analysis, sensitivity 
+    analysis (deterministic and probabilistic). The package allows estimation 
+    of parameters for the Markov model from a given individual patient level 
+    data, provided the data file follows some standard data entry rules. 
+License: GPL-3
+Depends: R (>= 4.3.0)
+Imports: readxl, stringr, data.table, reshape2, rlang, stats, lme4,
+        survminer, SurvRegCensCov, survival, MASS, systemfit,
+        IPDFileCheck, valueEQ5D, car, ggplot2, grDevices, lmtest,
+        broom, effects, gvlma, methods, relaimpo, dplyr, tidyr, hash,
+        haven, flextable, ggpubr, labelled, purrr, ISLR
+Suggests: knitr, rmarkdown, covr, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+URL: https://github.com/sheejamk/packDAMipd
+BugReports: https://github.com/sheejamk/packDAMipd/issues
+NeedsCompilation: no
+Packaged: 2024-03-24 19:46:29 UTC; sheeja.krishnan
+Author: Sheeja Manchira Krishnan [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-03-24 21:10:02 UTC

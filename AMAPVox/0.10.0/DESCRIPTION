@@ -1,0 +1,40 @@
+Type: Package
+Package: AMAPVox
+Title: LiDAR Data Voxelisation
+Version: 0.10.0
+Authors@R: c(
+    person("Grégoire", "Vincent", , "gregoire.vincent@ird.fr", role = "aut"),
+    person("Julien", "Heurtebize", , "julienhtbe@gmail.com", role = "aut"),
+    person("Philippe", "Verley", , "philippe.verley@ird.fr", role = c("aut", "cre"))
+  )
+Description: Read, manipulate and write voxel spaces. Voxel spaces are
+    read from text-based output files of the 'AMAPVox' software. 'AMAPVox'
+    is a LiDAR point cloud voxelisation software that aims at estimating
+    leaf area through several theoretical/numerical approaches. See more
+    in the article Vincent et al. (2017) <doi:10.23708/1AJNMP> and the
+    technical note Vincent et al. (2021) <doi:10.23708/1AJNMP>.
+License: CeCILL (>= 2)
+URL: https://amapvox.org
+BugReports: https://github.com/umr-amap/AMAPVox/issues
+Depends: R (>= 4.0.0)
+Imports: curl, data.table, dplyr, methods, rappdirs, rvest, stringr,
+        utils
+Suggests: fields, ggplot2, graphics, grDevices, knitr, RANN, rgl,
+        RefManageR, rmarkdown, terra
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+SystemRequirements: Java 1.8 64-Bit (Oracle or Corretto)
+Collate: 'AMAPVox.R' 'VersionManager.R' 'AMAPVoxGUI.R' 'Butterfly.R'
+        'Canopy.R' 'Classes.R' 'ComputeG.R' 'Crop.R' 'FillNA.R'
+        'Generics.R' 'Getters.R' 'Ground.R' 'Operators.R' 'PlantArea.R'
+        'PlotVoxelSpace.R' 'ReadVoxelSpace.R' 'Utils-voxel.R'
+        'WriteVoxelSpace.R'
+NeedsCompilation: no
+Packaged: 2022-04-20 12:35:33 UTC; pverley
+Author: Grégoire Vincent [aut],
+  Julien Heurtebize [aut],
+  Philippe Verley [aut, cre]
+Maintainer: Philippe Verley <philippe.verley@ird.fr>
+Repository: CRAN
+Date/Publication: 2022-04-20 12:52:29 UTC

@@ -1,0 +1,25 @@
+Package: dwp
+Type: Package
+Title: Density-Weighted Proportion
+Version: 1.0
+Date: 2022-01-20
+Authors@R: c(
+    person("Daniel", "Dalthorp", , "ddalthorp@protonmail.com", c("aut", "cre")),
+    person("Manuela", "Huso", , "mhuso@usgs.gov", "aut"))
+Description: Fit a Poisson regression to carcass distance data and integrate over the searched area at a wind farm to estimate the fraction of carcasses falling in the searched area and format the output for use as the dwp parameter in the 'GenEst' or 'eoa' package for estimating bird and bat mortality, following Dalthorp, et al. (2022) <arXiv:2201.10064>.
+Depends: R (>= 3.6.0)
+License: CC0
+LazyData: true
+Encoding: UTF-8
+Imports: boot, expint, GenEst, gtools, invgamma, magrittr, MASS,
+        matrixStats, methods, mvtnorm, numDeriv, plotrix, pracma, sf,
+        statmod, VGAM
+Suggests: gpclib
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-01-26 19:30:56 UTC; ddalt
+Author: Daniel Dalthorp [aut, cre],
+  Manuela Huso [aut]
+Maintainer: Daniel Dalthorp <ddalthorp@protonmail.com>
+Repository: CRAN
+Date/Publication: 2022-01-27 19:40:08 UTC

@@ -1,0 +1,33 @@
+Package: mdendro
+Version: 2.2.0
+Date: 2023-10-15
+Title: Extended Agglomerative Hierarchical Clustering
+Description: A comprehensive collection of linkage methods for agglomerative
+  hierarchical clustering on a matrix of proximity data (distances or
+  similarities), returning a multifurcated dendrogram or multidendrogram.
+  Multidendrograms can group more than two clusters when ties in proximity data
+  occur, and therefore they do not depend on the order of the input data.
+  Descriptive measures to analyze the resulting dendrogram are additionally
+  provided.
+Encoding: UTF-8
+Authors@R: c(person(given = "Alberto", family = "Fernandez",
+                    email = "alberto.fernandez@urv.cat",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-1241-1646")),
+             person(given = "Sergio", family = "Gomez",
+                    email = "sergio.gomez@urv.cat",
+                    role = c("aut"),
+                    comment = c(ORCID = "0000-0003-1820-0062")))
+URL: https://deim.urv.cat/~sergio.gomez/mdendro.php
+License: AGPL-3
+Imports: graphics, grDevices, Rcpp, stats, utils
+LinkingTo: Rcpp
+Suggests: ape, cluster, dendextend, knitr, rmarkdown
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: yes
+Packaged: 2023-10-15 08:55:37 UTC; Alberto
+Author: Alberto Fernandez [aut, cre] (<https://orcid.org/0000-0002-1241-1646>),
+  Sergio Gomez [aut] (<https://orcid.org/0000-0003-1820-0062>)
+Maintainer: Alberto Fernandez <alberto.fernandez@urv.cat>
+Repository: CRAN
+Date/Publication: 2023-10-18 10:30:03 UTC

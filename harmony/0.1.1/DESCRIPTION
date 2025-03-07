@@ -1,0 +1,41 @@
+Package: harmony
+Title: Fast, Sensitive, and Accurate Integration of Single Cell Data
+Version: 0.1.1
+Authors@R: c(
+    person("Ilya", "Korsunsky", email = "ilya.korsunsky@gmail.com",
+        role = c("cre", "aut"), comment = c(ORCID = "0000-0003-4848-3948")),
+    person("Nghia", "Millard", email = "nmillard@g.harvard.edu",
+        role = "aut", comment = c(ORCID = "0000-0002-0518-7674")),
+    person("Jean", "Fan", email = "jeanfan@fas.harvard.edu",
+        role = c("aut", "ctb"), comment = c(ORCID = "0000-0002-0212-5451")),
+    person("Kamil", "Slowikowski", email = "kslowikowski@gmail.com",
+        role = c("aut", "ctb"), comment = c(ORCID = "0000-0002-2843-6370")),
+    person("Miles", "Smith",
+        role = c("ctb")),
+    person("Soumya", "Raychaudhuri",
+        role = c("aut"), comment = c(ORCID = "0000-0002-1901-8265"))
+    )
+Description: Implementation of the Harmony algorithm for single cell integration, described in Korsunsky et al <doi:10.1038/s41592-019-0619-0>. Package includes a standalone Harmony function and interfaces to external frameworks.
+URL: software.broadinstitute.org/harmony
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R(>= 3.4.0), Rcpp
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+Imports: dplyr, cowplot, tidyr, ggplot2, irlba, Matrix, methods,
+        tibble, rlang
+Suggests: SingleCellExperiment, Seurat (>= 4.1.1), testthat, knitr,
+        rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-11-12 13:18:25 UTC; ik97
+Author: Ilya Korsunsky [cre, aut] (<https://orcid.org/0000-0003-4848-3948>),
+  Nghia Millard [aut] (<https://orcid.org/0000-0002-0518-7674>),
+  Jean Fan [aut, ctb] (<https://orcid.org/0000-0002-0212-5451>),
+  Kamil Slowikowski [aut, ctb] (<https://orcid.org/0000-0002-2843-6370>),
+  Miles Smith [ctb],
+  Soumya Raychaudhuri [aut] (<https://orcid.org/0000-0002-1901-8265>)
+Maintainer: Ilya Korsunsky <ilya.korsunsky@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-11-14 09:20:08 UTC

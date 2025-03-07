@@ -1,0 +1,39 @@
+Package: Rediscover
+Type: Package
+Title: Identify Mutually Exclusive Mutations
+Version: 0.1.0
+Authors@R: c(person("Juan A. Ferrer-Bonsoms", "Developer", role = c("aut", "cre"),
+                     email = "jafhernandez@tecnun.es"),
+              person("Laura Jareno", "Developer", role = "aut"),
+              person("Angel Rubio", "User", role = c("aut","ctb"),
+                     email = "arubio@tecnun.es"))
+Description: An optimized method for identifying mutually 
+    exclusive genomic events.  Its main contribution is a
+    statistical analysis based on the Poisson-Binomial 
+    distribution that takes into account that some samples
+    are more mutated than others. See [Canisius, Sander, John WM Martens,
+    and  Lodewyk FA Wessels. (2016)  "A novel independence test for
+    somatic alterations in cancer shows that 
+    biology drives mutual exclusivity but chance explains
+    most co-occurrence." Genome biology 17.1 : 1-17. <doi:10.1186/s13059-016-1114-x>].
+    The mutations matrices are sparce matrices. The method developed takes 
+    advantage of the advantages of this type of matrix to save 
+    time and computing resources.
+Depends: R (>= 4.0), Matrix, speedglm, PoissonBinomial
+Imports: maftools, data.table, parallel, RColorBrewer, methods
+Suggests: knitr, rmarkdown, RUnit, BiocStyle, BiocGenerics, dplyr,
+        kableExtra, TCGAbiolinks, magick, stats
+License: Artistic-2.0
+LazyData: true
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+biocViews: mutex
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-04-06 08:32:42 UTC; jferrerb
+Author: Juan A. Ferrer-Bonsoms Developer [aut, cre],
+  Laura Jareno Developer [aut],
+  Angel Rubio User [aut, ctb]
+Maintainer: Juan A. Ferrer-Bonsoms Developer <jafhernandez@tecnun.es>
+Repository: CRAN
+Date/Publication: 2021-04-07 09:00:02 UTC

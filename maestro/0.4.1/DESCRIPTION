@@ -1,0 +1,33 @@
+Package: maestro
+Type: Package
+Title: Orchestration of Data Pipelines
+Version: 0.4.1
+Authors@R: 
+    c(
+      person("Will", "Hipson", , "will.e.hipson@gmail.com", role = c("cre", "aut", "cph"), 
+      comment = c(ORCID = "0000-0002-3931-2189")),
+      person("Ryan", "Garnett", , "ryangarnett78@gmail.com", role = c("aut", "ctb", "cph"))
+    )
+Maintainer: Will Hipson <will.e.hipson@gmail.com>
+Description: Framework for creating and orchestrating data pipelines. Organize, orchestrate, and monitor multiple pipelines in a single project. Use tags to decorate functions with scheduling parameters and configuration.
+License: MIT + file LICENSE
+URL: https://github.com/whipson/maestro,
+        https://whipson.github.io/maestro/
+BugReports: https://github.com/whipson/maestro/issues
+Encoding: UTF-8
+LazyData: true
+Imports: cli (>= 3.3.0), dplyr (>= 1.1.0), glue, lifecycle, logger,
+        lubridate (>= 1.9.1), purrr (>= 1.0.0), R.utils, R6, rlang (>=
+        1.0.0), roxygen2, tictoc, timechange, utils
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Suggests: DiagrammeR, furrr, future, knitr, rmarkdown, rstudioapi,
+        testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-22 14:35:17 UTC; willhipson
+Author: Will Hipson [cre, aut, cph] (<https://orcid.org/0000-0002-3931-2189>),
+  Ryan Garnett [aut, ctb, cph]
+Repository: CRAN
+Date/Publication: 2024-11-22 15:00:02 UTC

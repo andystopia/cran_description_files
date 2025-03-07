@@ -1,0 +1,23 @@
+Package: DRviaSPCN
+Type: Package
+Title: Drug Repurposing in Cancer via a Subpathway Crosstalk Network
+Version: 0.1.0
+Maintainer: Junwei Han <hanjunwei1981@163.com>
+Authors@R: c(person(given = "Junwei", family = "Han", email = "hanjunwei1981@163.com", role  = c("aut", "cre", "cph")),
+             person(given = "Jiashuo", family = "Wu", role  = "aut"))
+Description: A systematic biology tool was developed to repurpose drugs via a subpathway crosstalk network. The operation modes include 1) evaluating the eigenvector centrality (centrality score) of subpathways and identifying dysregulated subpathways in the subpathway-subpathway network, 2) evaluating the activity of subpathways by GSEA and weighting them with corresponding centrality score, 3) identifying optimal drugs for specific disease through constructing disease-drug reverse association based on the weighted activity of subpathways. There are also several functions used to visualize the results.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: ChemmineR, GSVA, clusterProfiler, graphics, igraph, pheatmap,
+        rvest, xml2, stats
+Depends: R (>= 3.6)
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-12-08 07:14:49 UTC; DELL
+Author: Junwei Han [aut, cre, cph],
+  Jiashuo Wu [aut]
+Repository: CRAN
+Date/Publication: 2021-12-09 09:00:14 UTC

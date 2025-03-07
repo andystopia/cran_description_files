@@ -1,0 +1,41 @@
+Package: bisg
+Type: Package
+Title: Performs Bayesian Improved Surname Geocoding
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Ari",
+           family = "Decter-Frain",
+           role = c("aut"),
+           email = "adecterfrain@gmail.com",
+           comment = c(ORCID = "0000-0001-9635-3334")),
+    person(given = "Pratik",
+           family = "Sachdeva",
+           role = c("aut"),
+           email = "pratik.sachdeva@berkeley.edu",
+           comment = c(ORCID = "0000-0002-6809-2437")),
+    person(given ="Rachel", 
+           family = "Carroll", 
+           role = c("aut", "cre"),
+           email = "rachelcarroll4@gmail.com"))
+URL: https://github.com/RPVote/bisg
+Maintainer: Rachel Carroll <rachelcarroll4@gmail.com>
+Description: Performs Bayesian Improved Surname Geocoding (BISG) analysis to
+  obtain probabilistic estimates of race based on surname and geolocation.   
+  This package can be used in tandem with the 'eiCompare' package.
+  Methods implemented in this package are described in Decter-Frain, 
+  A., Sachdeva, P., Collingwood, L., Burke, J.,  Murayama, H., 
+  Barreto, M., … Zingher, J. (2022). "Comparing Methods for Estimating 
+  Demographics in Racially Polarized Voting Analyses" <doi:10.31235/osf.io/e854z>.
+License: GPL-3
+Depends: R (>= 3.5.0), wru (>= 1.0.0)
+Imports: dplyr, rlang, stringr, tidycensus, tigris
+Suggests: eiCompare, eiExpand
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2023-07-21 03:23:05 UTC; rachelcarroll
+Author: Ari Decter-Frain [aut] (<https://orcid.org/0000-0001-9635-3334>),
+  Pratik Sachdeva [aut] (<https://orcid.org/0000-0002-6809-2437>),
+  Rachel Carroll [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-07-21 08:10:02 UTC

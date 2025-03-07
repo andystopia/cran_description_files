@@ -1,0 +1,44 @@
+Package: rbiom
+Type: Package
+Title: Read/Write, Analyze, and Visualize 'BIOM' Data
+Version: 2.0.10
+Date: 2025-01-19
+Authors@R: c(
+    person(
+      "Daniel P.", "Smith",
+      email   = "dansmith01@gmail.com",
+      role    = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-2479-2044")),
+    person(
+      "Alkek Center for Metagenomics and Microbiome Research", 
+      role = c("cph", "fnd") ))
+Description: 
+    A toolkit for working with Biological Observation Matrix ('BIOM') files.
+    Read/write all 'BIOM' formats. Compute rarefaction, alpha diversity, and 
+    beta diversity (including 'UniFrac'). Summarize counts by taxonomic level. 
+    Subset based on metadata. Generate visualizations and statistical analyses. 
+    CPU intensive operations are coded in C for speed.
+URL: https://cmmr.github.io/rbiom/, https://github.com/cmmr/rbiom
+BugReports: https://github.com/cmmr/rbiom/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.2.0)
+RoxygenNote: 7.3.2
+Config/Needs/website: rmarkdown, phyloseq, npregfast
+Config/testthat/edition: 3
+Imports: cluster, methods, mgcv, stats, utils, ape, broom, dplyr,
+        emmeans, fillpattern, ggnewscale, ggplot2, ggtext, jsonlite,
+        magrittr, parallelly, pillar, plyr, readr, readxl, slam,
+        tidyplots, vegan
+Suggests: cli, crayon, ggbeeswarm, ggdensity, ggrepel, glue, labeling,
+        lifecycle, openxlsx, optparse, patchwork, pkgconfig,
+        prettycode, R6, rhdf5, rlang, scales, testthat, tibble, tsne,
+        uwot
+NeedsCompilation: yes
+Packaged: 2025-01-19 21:47:30 UTC; Daniel
+Author: Daniel P. Smith [aut, cre] (<https://orcid.org/0000-0002-2479-2044>),
+  Alkek Center for Metagenomics and Microbiome Research [cph, fnd]
+Maintainer: Daniel P. Smith <dansmith01@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-19 22:10:05 UTC

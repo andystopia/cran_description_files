@@ -1,0 +1,47 @@
+Type: Package
+Package: MigConnectivity
+Title: Estimate Migratory Connectivity for Migratory Animals
+Version: 0.4.5
+Date: 2024-1-15
+Authors@R: c(
+    person("Jeffrey A.", "Hostetler", email = "jhostetler@usgs.gov", 
+           role = c("cre", "aut")),
+    person("Michael T.", "Hallworth", role = "aut"),
+    person("Clark S.", "Rushing", role = "ctb"),
+    person("Emily B.", "Cohen", role = "ctb")
+  )
+Description: Allows the user to estimate transition probabilities for
+    migratory animals between any two phases of the annual cycle, using a
+    variety of different data types. Also quantifies the strength of
+    migratory connectivity (MC), a standardized metric to quantify the
+    extent to which populations co-occur between two phases of the annual
+    cycle. Includes functions to estimate MC and the more traditional
+    metric of migratory connectivity strength (Mantel correlation)
+    incorporating uncertainty from multiple sources of sampling error. For
+    cross-species comparisons, methods are provided to estimate
+    differences in migratory connectivity strength, incorporating
+    uncertainty. See Cohen et al. (2018) <doi:10.1111/2041-210X.12916>, Cohen et
+    al. (2019) <doi:10.1111/ecog.03974>, and Roberts et al. (2023) 
+    <doi:10.1002/eap.2788> for details on some of these methods.
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Imports: coda, geodist, gplots, graphics, grDevices, MASS, methods,
+        ncf, R2jags, RMark (>= 2.1.14), sf, shape, stats, terra, utils,
+        VGAM
+Suggests: knitr, maps, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.3
+SystemRequirements: JAGS (https://mcmc-jags.sourceforge.net)
+URL: https://github.com/SMBC-NZP/MigConnectivity
+NeedsCompilation: no
+Packaged: 2024-01-15 19:02:18 UTC; jhostetler
+Author: Jeffrey A. Hostetler [cre, aut],
+  Michael T. Hallworth [aut],
+  Clark S. Rushing [ctb],
+  Emily B. Cohen [ctb]
+Maintainer: Jeffrey A. Hostetler <jhostetler@usgs.gov>
+Repository: CRAN
+Date/Publication: 2024-01-16 14:20:09 UTC

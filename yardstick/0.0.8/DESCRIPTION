@@ -1,0 +1,39 @@
+Type: Package
+Package: yardstick
+Title: Tidy Characterizations of Model Performance
+Version: 0.0.8
+Authors@R: 
+    c(person(given = "Max",
+             family = "Kuhn",
+             role = "aut",
+             email = "max@rstudio.com"),
+      person(given = "Davis",
+             family = "Vaughan",
+             role = c("aut", "cre"),
+             email = "davis@rstudio.com"),
+      person(given = "RStudio",
+             role = "cph"))
+Description: Tidy tools for quantifying how well model fits to a
+    data set such as confusion matrices, class probability curve
+    summaries, and regression metrics (e.g., RMSE).
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/yardstick,
+        https://yardstick.tidymodels.org
+BugReports: https://github.com/tidymodels/yardstick/issues
+Depends: R (>= 2.10)
+Imports: dplyr (>= 0.8.5), generics, pROC (>= 1.15.0), rlang (>=
+        0.4.0), tidyselect, utils, vctrs (>= 0.3.6)
+Suggests: covr, crayon, ggplot2, knitr, probably (>= 0.0.6), purrr,
+        rmarkdown, testthat (>= 3.0.0), tidyr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-03-26 17:25:15 UTC; davis
+Author: Max Kuhn [aut],
+  Davis Vaughan [aut, cre],
+  RStudio [cph]
+Maintainer: Davis Vaughan <davis@rstudio.com>
+Repository: CRAN
+Date/Publication: 2021-03-28 14:50:03 UTC

@@ -1,0 +1,23 @@
+Package: longevity
+Type: Package
+Title: Statistical Methods for the Analysis of Excess Lifetimes
+Version: 1.1
+Authors@R: c(person(given="Leo", family="Belzile", role = c("aut", "cre"), email = "belzilel@gmail.com", comment = c(ORCID = "0000-0002-9135-014X")))
+BugReports: https://github.com/lbelzile/longevity/issues
+URL: https://lbelzile.github.io/longevity/
+Depends: R (>= 4.0.0)
+Imports: numDeriv, Rcpp (>= 1.0.6), rlang, Rsolnp
+Suggests: knitr, ggplot2 (>= 3.0.0), tinytest, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+Description: A collection of parametric and nonparametric methods for the analysis of survival data. Parametric families implemented include Gompertz-Makeham, exponential and generalized Pareto models and extended models. The package includes an implementation of the nonparametric maximum likelihood estimator for arbitrary truncation and censoring pattern based on Turnbull (1976) <doi:10.1111/j.2517-6161.1976.tb01597.x>, along with graphical goodness-of-fit diagnostics. Parametric models for positive random variables and peaks over threshold models based on extreme value theory are described in Rootzén and Zholud (2017) <doi:10.1007/s10687-017-0305-5>; Belzile et al. (2021) <doi:10.1098/rsos.202097> and Belzile et al. (2022) <doi:10.1146/annurev-statistics-040120-025426>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-07-06 03:13:47 UTC; lbelzile
+Author: Leo Belzile [aut, cre] (<https://orcid.org/0000-0002-9135-014X>)
+Maintainer: Leo Belzile <belzilel@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-06 03:30:02 UTC

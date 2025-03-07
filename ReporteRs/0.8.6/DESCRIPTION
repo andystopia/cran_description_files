@@ -1,0 +1,38 @@
+Package: ReporteRs
+Type: Package
+Title: Microsoft Word, Microsoft PowerPoint and HTML Documents
+        Generation
+Version: 0.8.6
+Authors@R: c(
+    person("David", "Gohel", role = c("aut", "cre"),
+    email = "david.gohel@lysis-consultants.fr"),
+    person("Bootstrap", role = c("ctb", "cph"),
+    comment = "Bootstrap development team"),
+    person("jQuery", role = c("ctb", "cph"),
+    comment = "The jQuery Foundation") )
+Description: Create 'Microsoft Word' document (>=2007),
+    'Microsoft PowerPoint' document (>=2007) and 'HTML' documents from R. There are
+    several features to let you format and present R outputs ; e.g. Editable
+    Vector Graphics, functions for complex tables reporting, reuse of corporate
+    template document. You can use the package as a tool for fast reporting
+    and as a tool for reporting automation. The package does not require
+    any installation of Microsoft product to be able to write Microsoft files.
+License: GPL-3
+Copyright: See file COPYRIGHTS.
+Depends: R (>= 3.0), ReporteRsjars (>= 0.0.2)
+Imports: grDevices, rJava, utils, rvg (>= 0.0.8), xml2, gdtools, png,
+        R.utils, knitr, shiny
+Suggests: ggplot2, jpeg, bmp, testthat, magrittr, rmarkdown, ggiraph
+SystemRequirements: java (>= 1.6)
+URL: http://davidgohel.github.io/ReporteRs/index.html,
+        http://groups.google.com/group/reporters-package
+BugReports: https://github.com/davidgohel/ReporteRs/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-03-08 07:27:05 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  Bootstrap [ctb, cph] (Bootstrap development team),
+  jQuery [ctb, cph] (The jQuery Foundation)
+Maintainer: David Gohel <david.gohel@lysis-consultants.fr>
+Repository: CRAN
+Date/Publication: 2016-03-08 14:21:45

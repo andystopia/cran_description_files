@@ -1,0 +1,31 @@
+Package: CDsampling
+Type: Package
+Title: 'CDsampling': Constraint Sampling in Paid Research Studies
+Version: 0.1.0
+Authors@R: c(person(given = "Yifei",
+                      family = "Huang",
+                      role = c("aut", "cre"),
+                      email = "yhuan39@uic.edu"),
+               person(given = "Liping",
+                      family = "Tong",
+                      role = "aut"),
+               person(given = "Jie",
+                      family = "Yang",
+                      role = "aut"))
+Maintainer: Yifei Huang <yhuan39@uic.edu>
+Description: In the context of paid research studies and clinical trials, budget considerations and patient sampling from available populations are subject to inherent constraints. We introduce the 'CDsampling' package, which integrates optimal design theories within the framework of constrained sampling. This package offers the possibility to find both D-optimal approximate and exact allocations for samplings with or without constraints. Additionally, it provides functions to find constrained uniform sampling as a robust sampling strategy with limited model information. Our package offers functions for the computation of the Fisher information matrix under generalized linear models (including regular linear regression model) and multinomial logistic models.To demonstrate the applications, we also provide a simulated dataset and a real dataset embedded in the package. Yifei Huang, Liping Tong, and Jie Yang (2025)<doi:10.5705/ss.202022.0414>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: lpSolve, Rglpk, stats
+RoxygenNote: 7.3.1
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-03 04:02:12 UTC; yifeih
+Author: Yifei Huang [aut, cre],
+  Liping Tong [aut],
+  Jie Yang [aut]
+Repository: CRAN
+Date/Publication: 2024-10-07 09:00:02 UTC

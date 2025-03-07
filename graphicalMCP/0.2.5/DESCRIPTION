@@ -1,0 +1,36 @@
+Type: Package
+Package: graphicalMCP
+Title: Graphical Multiple Comparison Procedures
+Version: 0.2.5
+Authors@R: c(
+    person("Dong", "Xi", , "dong.xi1@gilead.com", role = c("aut", "cre")),
+    person("Ethan", "Brockmann", , "ethan.brockmann@atorusresearch.com", role = "aut"),
+    person("Gilead Sciences, Inc.", role = c("cph", "fnd"))
+  )
+Description: Multiple comparison procedures (MCPs) control the familywise error
+    rate in clinical trials. Graphical MCPs include many commonly used
+    procedures as special cases; see Bretz et al. (2011)
+    <doi:10.1002/bimj.201000239>, Lu (2016) <doi:10.1002/sim.6985>, and Xi et
+    al. (2017) <doi:10.1002/bimj.201600233>. This package is a low-dependency
+    implementation of graphical MCPs which allow mixed types of tests. It also
+    includes power simulations and visualization of graphical MCPs.
+License: Apache License (>= 2)
+URL: https://gilead-biostats.github.io/graphicalMCP/
+BugReports: https://github.com/Gilead-BioStats/graphicalMCP/issues
+Depends: R (>= 4.1.0)
+Imports: matrixStats, mvtnorm
+Suggests: bench, dplyr, forcats, ggplot2, gMCP, gt, here, htmltools,
+        igraph, knitr, lrstat, prompt, rmarkdown, scales, testthat (>=
+        3.0.0), tibble, tictoc, tidyr, xfun
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+NeedsCompilation: no
+Packaged: 2024-07-11 22:16:32 UTC; dxi1
+Author: Dong Xi [aut, cre],
+  Ethan Brockmann [aut],
+  Gilead Sciences, Inc. [cph, fnd]
+Maintainer: Dong Xi <dong.xi1@gilead.com>
+Repository: CRAN
+Date/Publication: 2024-07-13 12:50:01 UTC

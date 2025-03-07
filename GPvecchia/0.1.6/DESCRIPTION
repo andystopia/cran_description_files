@@ -1,0 +1,34 @@
+Package: GPvecchia
+Type: Package
+Title: Scalable Gaussian-Process Approximations
+Version: 0.1.6
+Date: 2024-02-08
+Authors@R: c(
+	   person("Matthias", "Katzfuss", role=c("aut"), email="katzfuss@gmail.com"),
+	   person("Marcin", "Jurek", role=c("aut", "cre"), email="marcinjurek1988@gmail.com"),
+	   person("Daniel", "Zilber", role="aut"),
+	   person("Wenlong", "Gong", role="aut"),
+	   person("Joe", "Guinness", role="ctb"),
+	   person("Jingjie", "Zhang", role="ctb"),
+	   person("Florian", "Schaefer", role="ctb"))
+Maintainer: Marcin Jurek <marcinjurek1988@gmail.com>
+Author: Matthias Katzfuss [aut],
+  Marcin Jurek [aut, cre],
+  Daniel Zilber [aut],
+  Wenlong Gong [aut],
+  Joe Guinness [ctb],
+  Jingjie Zhang [ctb],
+  Florian Schaefer [ctb]
+Description: Fast scalable Gaussian process approximations, particularly well suited to spatial (aerial, remote-sensed) and environmental data, described in more detail in Katzfuss and Guinness (2017) <arXiv:1708.06302>. Package also contains a fast implementation of the incomplete Cholesky decomposition (IC0), based on Schaefer et al. (2019) <arXiv:1706.02205> and MaxMin ordering proposed in Guinness (2018) <arXiv:1609.05372>.
+Encoding: UTF-8
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.9), methods, stats, sparseinv, fields, Matrix(>=
+        1.5.1), parallel, GpGp, FNN
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+Suggests: mvtnorm, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-02-08 19:55:54 UTC; jurek
+Repository: CRAN
+Date/Publication: 2024-02-08 20:30:02 UTC

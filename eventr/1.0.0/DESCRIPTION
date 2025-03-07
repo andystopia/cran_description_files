@@ -1,0 +1,29 @@
+Package: eventr
+Title: Create Event Based Data Architectures
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Alvaro", family = "Franquet", role = c("aut", "cre"), email = "afranquet@salutemporda.cat"),
+    person(given = "Maria Antonia", family = "Barceló", role = c("aut"), email = "antonia.barcelo@udg.edu", comment = c(ORCID = "0000-0001-9720-690X")),
+    person(given = "Marc", family = "Saez", role = c("aut"), email = "marc.saez@udg.edu", comment = c(ORCID = "0000-0003-1882-0157")),
+    person(given = "Pere", family = "Plaja", role = c("aut"), email = "pplaja@salutemporda.cat")
+    )
+Description: Event-driven programming is a programming paradigm where the flow of execution is defined by event.
+    In this paradigm an event can be defined as "a change in the state" of an object. This package offers a set
+    of functions for creating event-based architectures using three basic functions: events, dispatchers, and
+    handlers. The handlers manage the events, the dispatchers are in charge of redirecting the events to each of
+    the handlers, finally the events are the objects that carry the information about the change of state.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: purrr, dplyr, magrittr
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2020-05-18 14:12:01 UTC; afranquet
+Author: Alvaro Franquet [aut, cre],
+  Maria Antonia Barceló [aut] (<https://orcid.org/0000-0001-9720-690X>),
+  Marc Saez [aut] (<https://orcid.org/0000-0003-1882-0157>),
+  Pere Plaja [aut]
+Maintainer: Alvaro Franquet <afranquet@salutemporda.cat>
+Repository: CRAN
+Date/Publication: 2020-05-26 14:40:02 UTC

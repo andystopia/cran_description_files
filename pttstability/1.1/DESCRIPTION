@@ -1,0 +1,27 @@
+Package: pttstability
+Title: Particle-Takens Stability
+Version: 1.1
+Authors@R: person("Adam", "Clark", email = "adam.tclark@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8843-3278"))
+Description: Includes a collection of functions presented in "Measuring stability in ecological systems without static equilibria" by Clark et al. (2022) <doi:10.1002/ecs2.4328> in Ecosphere.
+	These can be used to estimate the parameters of a stochastic state space model (i.e. a model where
+	a time series is observed with error). The goal of this package is to estimate the variability
+	around a deterministic process, both in terms of observation error - i.e. variability due to
+	imperfect observations that does not influence system state - and in terms of process noise - i.e.
+	stochastic variation in the actual state of the process. Unlike classical methods for estimating
+	variability, this package does not necessarily assume that the deterministic state is fixed (i.e.
+	a fixed-point equilibrium), meaning that variability around a dynamic trajectory can be estimated
+	(e.g. stochastic fluctuations during predator-prey dynamics).
+Depends: R (>= 3.4)
+Imports: graphics, stats, rEDM (>= 1.7.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Collate: 'bayesfun.R' 'data.R' 'fake_data.R' 'logit_funs.R'
+        'particlefilter.R' 'pttstability_man.R'
+NeedsCompilation: no
+Packaged: 2022-12-27 15:25:56 UTC; aclark
+Author: Adam Clark [aut, cre] (<https://orcid.org/0000-0002-8843-3278>)
+Maintainer: Adam Clark <adam.tclark@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-09 09:50:06 UTC

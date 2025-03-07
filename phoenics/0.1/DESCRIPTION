@@ -1,0 +1,33 @@
+Package: phoenics
+Type: Package
+Title: Pathways Longitudinal and Differential Analysis in Metabolomics
+Version: 0.1
+Date: 2024-04-22
+Depends: R (>= 4.0.0)
+Imports: lme4, blme, tibble, FactoMineR, factoextra, tidyr, stats
+Suggests: KEGGREST
+Authors@R: c(person("Camille", "Guilmineau", role = c("aut", "cre"), 
+                    email = "camille.guilmineau@inrae.fr"),
+             person("Remi", "Servien", role = "aut", 
+                    email = "remi.servien@inrae.fr",
+                    comment = c(ORCID = "0000-0003-1270-1843")),
+             person("Nathalie", "Vialaneix", role = "aut", 
+                    email = "nathalie.vialaneix@inrae.fr",
+                    comment = c(ORCID = "0000-0003-1156-0639")))
+Maintainer: Camille Guilmineau <camille.guilmineau@inrae.fr>
+Description: Perform a differential analysis at pathway level based on metabolite quantifications and information on pathway metabolite composition.
+  The method is based on a Principal Component Analysis step and on a linear mixed model.
+  Automatic query of metabolic pathways is also implemented. 
+License: GPL-3
+Repository: CRAN
+BugReports: https://forgemia.inra.fr/panoramics/phoenics/-/issues
+Encoding: UTF-8
+NeedsCompilation: no
+URL: https://forgemia.inra.fr/panoramics/phoenics
+LazyData: true
+RoxygenNote: 7.3.1
+Packaged: 2024-05-21 11:56:10 UTC; cguilmineau
+Author: Camille Guilmineau [aut, cre],
+  Remi Servien [aut] (<https://orcid.org/0000-0003-1270-1843>),
+  Nathalie Vialaneix [aut] (<https://orcid.org/0000-0003-1156-0639>)
+Date/Publication: 2024-05-22 12:20:02 UTC

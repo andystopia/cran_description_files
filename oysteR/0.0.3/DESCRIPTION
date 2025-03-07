@@ -1,0 +1,46 @@
+Package: oysteR
+Title: Scans R Projects for Vulnerable Third Party Dependencies
+Version: 0.0.3
+Authors@R: 
+    c(person(given = "Jeffry",
+             family = "Hesse",
+             role = "aut",
+             email = "jhesse@sonatype.com"),
+      person(given = "Brittany",
+             family = "Belle",
+             role = "aut",
+             email = "bbelle@sonatype.com"),
+      person(given = "Colin",
+             family = "Gillespie",
+             role = c("aut", "cre"),
+             email = "csgillespie@gmail.com",
+             comment = c(ORCID = "0000-0003-1787-0275")),
+      person(given = "Dan",
+             family = "Rollo",
+             role = "aut",
+             email = "drollo@sonatype.com"),
+      person(given = "Sonatype",
+             role = "cph"))
+Maintainer: Colin Gillespie <csgillespie@gmail.com>
+Description: Collects a list of your third party R packages, and
+    scans them with the 'OSS' Index provided by 'Sonatype', reporting back
+    on any vulnerabilities that are found in the third party packages you
+    use.
+License: Apache License 2.0 | file LICENSE
+URL: https://github.com/sonatype-nexus-community/oysteR
+BugReports: https://github.com/sonatype-nexus-community/oysteR/issues
+Depends: R (>= 3.5.0)
+Imports: cli, dplyr, glue, httr, purrr, rjson, tibble, tidyr, utils
+Suggests: httptest, knitr, rmarkdown, testthat (>= 2.1.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-07-01 13:59:42 UTC; ncsg3
+Author: Jeffry Hesse [aut],
+  Brittany Belle [aut],
+  Colin Gillespie [aut, cre] (<https://orcid.org/0000-0003-1787-0275>),
+  Dan Rollo [aut],
+  Sonatype [cph]
+Repository: CRAN
+Date/Publication: 2020-07-02 11:30:13 UTC

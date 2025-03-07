@@ -1,0 +1,28 @@
+Package: rocbc
+Type: Package
+Title: Statistical Inference for Box-Cox Based Receiver Operating
+        Characteristic Curves
+Version: 2.0.0
+Authors@R: c(person("Leonidas", "Bantis", role = c("aut"),
+             email = "lbantis@kumc.edu"),
+             person("Benjamin", "Brewer", role = c("cre", "ctb"),
+             email = "tennisbenj@gmail.com"),
+             person("Christos", "Nakas", role = c("ctb"),
+             email = "cnakas@uth.gr"),
+             person("Benjamin", "Reiser", role = c("ctb"),
+             email = "reiser@stat.haifa.ac.il"))
+Maintainer: Benjamin Brewer <tennisbenj@gmail.com>
+Description: Generation of Box-Cox based ROC curves and several aspects of inferences and hypothesis testing. Can be used when inferences for one biomarker (Bantis LE, Nakas CT, Reiser B. (2018) <doi:10.1002/bimj.201700107>) are of interest or when comparisons of two correlated biomarkers (Bantis LE, Nakas CT, Reiser B. (2021) <doi:10.1002/bimj.202000128>) are of interest. Provides inferences and comparisons around the AUC, the Youden index, the sensitivity at a given specificity level (and vice versa), the optimal operating point of the ROC curve (in the Youden sense), and the Youden based cutoff.
+License: GPL-3
+Encoding: UTF-8
+Imports: pracma, clinfun, splancs, mvtnorm, formattable
+Suggests: knitr, markdown, matlab
+VignetteBuilder: knitr
+Author: Leonidas Bantis [aut],
+  Benjamin Brewer [cre, ctb],
+  Christos Nakas [ctb],
+  Benjamin Reiser [ctb]
+NeedsCompilation: no
+Packaged: 2023-11-15 17:43:56 UTC; benbrewer
+Repository: CRAN
+Date/Publication: 2023-11-16 15:50:03 UTC

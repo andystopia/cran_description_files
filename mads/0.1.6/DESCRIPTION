@@ -1,0 +1,46 @@
+Package: mads
+Depends: R (>= 3.5.0), mrds, stats
+Suggests: testthat
+Type: Package
+Title: Multi-Analysis Distance Sampling
+Version: 0.1.6
+Author: Laura Marshall
+Maintainer: Laura Marshall <lhm@st-and.ac.uk>
+Description: Performs distance sampling analyses on a number of species 
+    at once and can account for unidentified sightings, model uncertainty 
+    and covariate uncertainty. Unidentified sightings refer to sightings 
+    which cannot be allocated to a single species but may instead be 
+    allocated to a group of species. The abundance of each unidentified 
+    group is estimated and then prorated to the species estimates. Model 
+    uncertainty should be incorporated when multiple models give equally
+    good fit to the data but lead to large differences in estimated
+    density / abundance. Covariate uncertainty should be incorporated
+    when covariates cannot be measured accurately, for example this is 
+    often the case for group size in marine mammal surveys. Variance 
+    estimation for these methods is via a non parametric bootstrap. 
+    The methods implemented are described in Gerodette T. and Forcada 
+    J. (2005) <doi:10.3354/meps291001> Non-recovery of two spotted and 
+    spinner dolphin populations in the eastern tropical Pacific Ocean.
+BugReports: https://github.com/DistanceDevelopment/mads/issues
+License: GPL (>= 2)
+Collate: 'accumulate.results.R' 'calculate.dht.R'
+        'check.bootstrap.options.r' 'check.convergence.R'
+        'check.fitted.R' 'check.covar.uncertainty.R'
+        'check.ddf.models.R' 'check.species.code.definitions.R'
+        'check.species.presence.r' 'create.obs.table.R'
+        'create.param.arrays.r' 'create.result.arrays.R'
+        'execute.multi.analysis.R' 'fit.ddf.models.R'
+        'format.dht.results.R' 'get.datasets.R' 'glossary.R'
+        'mae.warning.R' 'model.description.R' 'object.description.R'
+        'process.bootstrap.results.R' 'process.warnings.R'
+        'prorate.unidentified.R' 'renumber.duplicates.R'
+        'resample.covariates.R' 'resample.data.R' 'rtpois.R'
+        'store.param.ests.R' 'summary.ma.allspecies.R'
+        'summary.ma.allunid.R' 'summary.ma.analysis.R' 'summary.ma.R'
+        'summary.ma.species.R' 'summary.ma.unid.R' 'mads-package.R'
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2020-05-26 23:29:45 UTC; lhm
+Repository: CRAN
+Date/Publication: 2020-05-27 13:10:02 UTC

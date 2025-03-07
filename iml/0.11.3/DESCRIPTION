@@ -1,0 +1,45 @@
+Type: Package
+Package: iml
+Title: Interpretable Machine Learning
+Version: 0.11.3
+Authors@R: c(
+    person("Giuseppe", "Casalicchio", , "giuseppe.casalicchio@lmu.de", role = c("aut", "cre")),
+    person("Christoph", "Molnar", , "christoph.molnar@gmail.com", role = c("aut")),
+    person("Patrick", "Schratz", , "patrick.schratz@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-0748-6624"))
+  )
+Maintainer: Giuseppe Casalicchio <giuseppe.casalicchio@lmu.de>
+Description: Interpretability methods to analyze the behavior and
+    predictions of any machine learning model.  Implemented methods are:
+    Feature importance described by Fisher et al. (2018)
+    <doi:10.48550/arxiv.1801.01489>, accumulated local effects plots described by Apley
+    (2018) <doi:10.48550/arxiv.1612.08468>, partial dependence plots described by
+    Friedman (2001) <www.jstor.org/stable/2699986>, individual conditional
+    expectation ('ice') plots described by Goldstein et al.  (2013)
+    <doi:10.1080/10618600.2014.907095>, local models (variant of 'lime')
+    described by Ribeiro et. al (2016) <doi:10.48550/arXiv.1602.04938>, the Shapley
+    Value described by Strumbelj et. al (2014)
+    <doi:10.1007/s10115-013-0679-x>, feature interactions described by
+    Friedman et. al <doi:10.1214/07-AOAS148> and tree surrogate models.
+License: MIT + file LICENSE
+URL: https://giuseppec.github.io/iml/,
+        https://github.com/giuseppec/iml/
+BugReports: https://github.com/giuseppec/iml/issues
+Imports: checkmate, data.table, Formula, future, future.apply, ggplot2,
+        Metrics, R6
+Suggests: ALEPlot, bench, bit64, caret, covr, e1071, future.callr,
+        glmnet, gower, h2o, keras (>= 2.2.5.0), knitr, MASS, mlr, mlr3,
+        party, partykit, patchwork, randomForest, ranger, rmarkdown,
+        rpart, testthat, yaImpute
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-27 16:08:29 UTC; GDaddy
+Author: Giuseppe Casalicchio [aut, cre],
+  Christoph Molnar [aut],
+  Patrick Schratz [aut] (<https://orcid.org/0000-0003-0748-6624>)
+Repository: CRAN
+Date/Publication: 2024-04-27 17:00:02 UTC

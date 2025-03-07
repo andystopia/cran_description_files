@@ -1,0 +1,39 @@
+Package: ciftiTools
+Type: Package
+Title: Tools for Reading and Visualizing CIFTI Brain Files
+Version: 0.1.6.0
+Authors@R: c(
+    person(given = "Amanda",
+           family = "Mejia",
+           email = "mandy.mejia@gmail.com",
+           role = c("aut", "cre")),
+    person(given = "Damon",
+           family = "Pham",
+           email = "damondpham@gmail.com",
+           role = c("ctb"),
+           comment = c(ORCID = "0000-0001-7563-4727")))
+Maintainer: Amanda Mejia <mandy.mejia@gmail.com>
+Description: CIFTI files contain brain imaging data in "gray-ordinates", which 
+    represent the gray matter as cortical surface vertices (left and right) and
+    subcortical voxels (cerebellum, basal ganglia, and other deep gray matter). 
+    'ciftiTools' uses the Connectome Workbench to read CIFTI files into R and
+    apply common pre-processing steps (e.g. smoothing, resampling). It also
+    provides tools for visualizing the cortical surface with GIFTI files, and
+    for visualizing the subcortical volume. 
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: gifti (> 0.7.5), grDevices, oro.nifti, RNifti, RColorBrewer,
+        xml2
+Suggests: fields, ggplot2, ggpubr, knitr, rmarkdown, papayar, rgl,
+        testthat (>= 2.1.0), covr
+RoxygenNote: 7.1.1
+URL: https://github.com/mandymejia/ciftiTools
+BugReports: https://github.com/mandymejia/ciftiTools/issues
+NeedsCompilation: no
+Packaged: 2020-11-19 02:52:18 UTC; damon
+Author: Amanda Mejia [aut, cre],
+  Damon Pham [ctb] (<https://orcid.org/0000-0001-7563-4727>)
+Repository: CRAN
+Date/Publication: 2020-11-20 10:20:05 UTC

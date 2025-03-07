@@ -1,0 +1,32 @@
+Package: dcmodifydb
+Title: Modifying Rules on a DataBase
+Version: 0.3.1
+Authors@R: c(
+    person(given = "Edwin",
+           family = "de Jonge",
+           role = c("aut", "cre"),
+           email = "edwindjonge@gmail.com",
+           comment = c(ORCID = "0000-0002-6580-4718")),
+    person(given="Wytze", family = "Gelderloos", role=c("ctb"), email="")
+    )
+Description: Apply modification rules from R package 'dcmodify' to the database, 
+  prescribing and documenting deterministic data cleaning steps on records in a database.
+  The rules are translated into SQL statements using R package 'dbplyr'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Suggests: testthat (>= 3.0.0), RSQLite, covr, knitr, rmarkdown
+Imports: dplyr, dbplyr, DBI, dcmodify (>= 0.1.9), validate, methods
+URL: https://github.com/data-cleaning/dcmodifydb
+BugReports: https://github.com/data-cleaning/dcmodifydb/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-06-17 14:32:37 UTC; edwindj
+Author: Edwin de Jonge [aut, cre] (<https://orcid.org/0000-0002-6580-4718>),
+  Wytze Gelderloos [ctb]
+Maintainer: Edwin de Jonge <edwindjonge@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-17 15:10:02 UTC

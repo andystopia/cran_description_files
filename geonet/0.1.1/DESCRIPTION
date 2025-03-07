@@ -1,0 +1,29 @@
+Package: geonet
+Title: Intensity Estimation on Geometric Networks with Penalized
+        Splines
+Version: 0.1.1
+Authors@R: 
+    person(given = "Marc",
+           family = "Schneble",
+           role = c("aut", "cre"),
+           email = "marc.schneble@stat.uni-muenchen.de")
+Description: Fitting the intensity function of point 
+    processes on geometric networks. The method makes use of generalized 
+    additive models (GAM). The method is described in Schneble and Kauermann 
+    (2020) <arXiv:2002.10270>. A new class for representing linear networks as 
+    geometric networks is the core of the package.
+Language: en-US
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: spatstat.linnet, spatstat.geom, mgcv, Matrix, splines, igraph,
+        dplyr (>= 1.0.2), ggplot2 (>= 3.3.2)
+Depends: R (>= 4.0.0),
+Suggests: testthat, spatstat, spatstat.data
+NeedsCompilation: no
+Packaged: 2021-06-04 12:12:20 UTC; ru58paj
+Author: Marc Schneble [aut, cre]
+Maintainer: Marc Schneble <marc.schneble@stat.uni-muenchen.de>
+Repository: CRAN
+Date/Publication: 2021-06-07 06:50:10 UTC

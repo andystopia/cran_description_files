@@ -1,0 +1,28 @@
+Package: opencv
+Type: Package
+Title: Bindings to 'OpenCV' Computer Vision Library
+Version: 0.3.1
+Authors@R: c(
+    person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroen@berkeley.edu", 
+      comment = c(ORCID = "0000-0002-4035-0289")),
+    person('Jan', 'Wijffels', role = 'aut'))
+Description: Exposes some of the available 'OpenCV' <https://opencv.org/> algorithms,
+    such as edge, body or face detection. These can either be applied to analyze 
+    static images, or to filter live video footage from a camera device.
+License: MIT + file LICENSE
+SystemRequirements: OpenCV 3 or newer: libopencv-dev (Debian, Ubuntu)
+        or opencv-devel (Fedora)
+URL: https://ropensci.r-universe.dev/opencv
+BugReports: https://github.com/ropensci/opencv/issues
+LinkingTo: Rcpp
+Imports: Rcpp, magrittr
+Suggests: grDevices, qrcode
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-10-16 19:06:14 UTC; jeroen
+Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),
+  Jan Wijffels [aut]
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2023-10-16 19:30:11 UTC

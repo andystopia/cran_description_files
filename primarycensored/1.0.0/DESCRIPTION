@@ -1,0 +1,61 @@
+Package: primarycensored
+Title: Primary Event Censored Distributions
+Version: 1.0.0
+Authors@R: 
+  c(person(given = "Sam",
+           family = "Abbott",
+           role = c("aut", "cre", "cph"),
+           email = "contact@samabbott.co.uk",
+           comment = c(ORCID = "0000-0001-8057-8037")),
+    person(given = "Sam",
+           family = "Brand",
+           role = c("aut"),
+           email = "usi1@cdc.gov",
+           comment = c(ORCID = "0000-0003-0645-5367")),
+    person(given = "Adam",
+           family = "Howes",
+           role = c("ctb"),
+           email = "adamthowes@gmail.com",
+           comment = c(ORCID = "0000-0003-2386-4031")),
+    person(given = "Sebastian",
+           family = "Funk",
+           role = c("ctb"),
+           email = "sebastian.funk@lshtm.ac.uk",
+           comment = c(ORCID = "0000-0002-2842-3406")))
+Description: Provides functions for working with primary
+    event censored distributions and 'Stan' implementations for use in Bayesian
+    modeling. Primary event censored distributions are useful for modeling
+    delayed reporting scenarios in epidemiology and other fields (Charniga et
+    al. (2024) <doi:10.48550/arXiv.2405.08841>). It also provides support for
+    arbitrary delay distributions, a range of common primary distributions, and
+    allows for truncation and secondary event censoring to be accounted for
+    (Park et al. (2024) <doi:10.1101/2024.01.12.24301247>). A subset of
+    common distributions also have analytical solutions implemented, allowing
+    for faster computation. In addition, it provides multiple methods for
+    fitting primary event censored distributions to data via optional
+    dependencies.
+License: MIT + file LICENSE
+URL: https://primarycensored.epinowcast.org,
+        https://github.com/epinowcast/primarycensored/
+BugReports: https://github.com/epinowcast/primarycensored/issues
+Depends: R (>= 4.0.0)
+Imports: pracma
+Suggests: bookdown, cmdstanr, dplyr, fitdistrplus, knitr, ggplot2,
+        rmarkdown, spelling, testthat (>= 3.1.9), usethis, withr
+Additional_repositories: https://stan-dev.r-universe.dev
+Config/Needs/hexsticker: hexSticker, sysfonts, ggplot2
+Config/Needs/website: r-lib/pkgdown, epinowcast/enwtheme
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-25 15:28:28 UTC; seabbs
+Author: Sam Abbott [aut, cre, cph] (<https://orcid.org/0000-0001-8057-8037>),
+  Sam Brand [aut] (<https://orcid.org/0000-0003-0645-5367>),
+  Adam Howes [ctb] (<https://orcid.org/0000-0003-2386-4031>),
+  Sebastian Funk [ctb] (<https://orcid.org/0000-0002-2842-3406>)
+Maintainer: Sam Abbott <contact@samabbott.co.uk>
+Repository: CRAN
+Date/Publication: 2024-10-28 12:20:06 UTC

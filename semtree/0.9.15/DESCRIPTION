@@ -1,0 +1,33 @@
+Package: semtree
+Type: Package
+Title: Recursive Partitioning for Structural Equation Models
+Authors@R: c(person("Andreas M. Brandmaier", email="andy@brandmaier.de", role=c("aut","cre")), person("John J. Prindle", email="jprindle@usc.edu",role=c("aut")),person("Manuel Arnold", email="arnoldmz@hu-berlin.de",role=c("aut")))
+Author: Andreas M. Brandmaier [aut, cre],
+  John J. Prindle [aut],
+  Manuel Arnold [aut]
+Maintainer: Andreas M. Brandmaier <andy@brandmaier.de>
+Depends: R (>= 2.10), OpenMx (>= 2.6.9),
+Imports: bitops, sets, digest, rpart, rpart.plot (>= 3.0.6), parallel,
+        plotrix, cluster, stringr, lavaan, expm, ggplot2, viridis,
+        tidyr, methods, strucchange, sandwich, zoo, crayon, clisymbols,
+        testthat
+Suggests: knitr, rmarkdown, MASS, psychTools
+Description: SEM Trees and SEM Forests -- an extension of model-based decision
+    trees and forests to Structural Equation Models (SEM). SEM trees hierarchically
+    split empirical data into homogeneous groups sharing similar data patterns
+    with respect to a SEM by recursively selecting optimal predictors of these
+    differences. SEM forests are an extension of SEM trees. They are ensembles of
+    SEM trees each built on a random sample of the original data. By aggregating
+    over a forest, we obtain measures of variable importance that are more robust
+    than measures from single trees.
+License: GPL-3
+Encoding: UTF-8
+LazyLoad: yes
+Version: 0.9.15
+Date: 2021-04-26
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-04-28 15:11:32 UTC; brandmaier
+Repository: CRAN
+Date/Publication: 2021-04-28 23:20:08 UTC

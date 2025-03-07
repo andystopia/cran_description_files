@@ -1,0 +1,26 @@
+Package: flow
+Title: View and Browse Code Using Flow Diagrams
+Version: 0.0.2
+Authors@R: 
+    person(given = "Antoine",
+           family = "Fabri",
+           role = c("aut", "cre"),
+           email = "antoine.fabri@gmail.com")
+Description: Visualize as flow diagrams the logic of functions, expressions or 
+  scripts in a static way or when running a call, and ease debugging. Advanced
+  features include analogs to 'debug' and 'debugonce' to target specific functions to draw,
+  an utility to draw the calls used in the tests of the package in a markdown report, 
+  and an utility to draw all the functions of one package in a markdown report.
+License: GPL-3
+Encoding: UTF-8
+Suggests: testthat (>= 2.1.0), covr, knitr, rmarkdown
+Imports: nomnoml, utils, htmlwidgets, rstudioapi, webshot, styler
+RoxygenNote: 7.1.1.9001
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-08-11 22:01:08 UTC; Antoine
+Author: Antoine Fabri [aut, cre]
+Maintainer: Antoine Fabri <antoine.fabri@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-13 09:00:04 UTC

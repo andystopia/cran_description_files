@@ -1,0 +1,33 @@
+Package: occUncertain
+Type: Package
+Title: Addressing Occurrence Point Uncertainty When Calculating Spatial
+        Metrics
+Version: 0.1.0
+Date: 2023-01-14
+Authors@R: c(
+    person("Samuel V.", "Chang Triguero", email = "changalfsam@gmail.com", role = c("aut", "cre")), 
+    person("Matthew E.", "Aiello-Lammens", email = "matt.lammens@gmail.com", role = "aut"))
+Description: Repeatable processing of species occurrence datasets that makes it easier to propagate 
+    georeferencing imprecisions and data input mistakes to downstream analyses, allowing analysts to assess 
+    the impacts of these imprecisions in quantifying range of occurrence (EOO) or  area of occupancy (AOO) . Users can use the software to: 
+    (a) change each coordinate record's uncertainty from meters to decimal degrees,
+    The formula for converting from meters to decimal degrees is in part based on information from the ESRI ArcUser magazine "Measuring in Arc-Seconds" at this site<https://www.esri.com/news/arcuser/0400/wdside.html>
+    (b) deal with records that don't have uncertainty values in multiple ways, 
+    (c) create a new random location for each occurrence using a uniform distribution with a defined interval 
+    within the occurrence location uncertainty, and 
+    (d) use repetitions to quantify EOO and AOO with attribute uncertainty. 
+BugReports: https://github.com/mlammens/occUncertain/issues
+Depends: R (>= 3.5.0), knitr, ConR, rgdal
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Suggests: rmarkdown, testthat, ggplot2, dplyr
+NeedsCompilation: no
+Packaged: 2023-01-18 18:21:37 UTC; samuelchang
+Author: Samuel V. Chang Triguero [aut, cre],
+  Matthew E. Aiello-Lammens [aut]
+Maintainer: Samuel V. Chang Triguero <changalfsam@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-20 10:10:06 UTC

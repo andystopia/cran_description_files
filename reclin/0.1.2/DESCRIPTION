@@ -1,0 +1,26 @@
+Package: reclin
+Type: Package
+Title: Record Linkage Toolkit
+Version: 0.1.2
+Date: 2021-11-22
+Author: Jan van der Laan
+Maintainer: Jan van der Laan <r@eoos.dds.nl>
+Description: Functions to assist in performing probabilistic record linkage and
+    deduplication: generating pairs, comparing records, em-algorithm for
+    estimating m- and u-probabilities, forcing one-to-one matching. Can also be
+    used for pre- and post-processing for machine learning methods for record
+    linkage.
+URL: https://github.com/djvanderlaan/reclin
+Depends: stats, lvec, ldat, R (>= 3.4.0)
+Imports: dplyr, stringdist, utils, methods, lpSolve, Rcpp
+Suggests: testthat, knitr, rmarkdown
+LinkingTo: Rcpp
+SystemRequirements: C++11
+License: GPL-3
+LazyLoad: yes
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-11-22 15:45:42 UTC; eoos
+Repository: CRAN
+Date/Publication: 2021-11-23 08:40:02 UTC

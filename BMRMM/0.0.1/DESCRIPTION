@@ -1,0 +1,22 @@
+Package: BMRMM
+Title: An Implementation of the Bayesian Markov (Renewal) Mixed Models
+Version: 0.0.1
+Authors@R: 
+    person(given = "Yutong",
+           family = "Wu",
+           role = c("aut", "cre"),
+           email = "yutong.wu@utexas.edu")
+Description: The Bayesian Markov renewal mixed models take sequentially observed categorical data with continuous duration times, being either state duration or inter-state duration. These models comprehensively analyze the stochastic dynamics of both state transitions and duration times under the influence of multiple exogenous factors and random individual effect. The default setting flexibly models the transition probabilities using Dirichlet mixtures and the duration times using gamma mixtures. It also provides the flexibility of modeling the categorical sequences using Bayesian Markov mixed models alone, either ignoring the duration times altogether or dividing duration time into multiples of an additional category in the sequence by a user-specific unit. The package allows extensive inference of the state transition probabilities and the duration times as well as relevant plots and graphs. It also includes a synthetic data set to demonstrate the desired format of input data set and the utility of various functions. Methods for Bayesian Markov renewal mixed models are as described in: Abhra Sarkar et al., (2018) <doi:10.1080/01621459.2018.1423986> and Yutong Wu et al., (2021) <arXiv:2107.07648>.
+Imports: fields, graphics, grDevices, gsubfn, logOfGamma, MCMCpack,
+        mhsmm, multicool, pracma, stats, utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-11-14 15:30:52 UTC; yutongwu
+Author: Yutong Wu [aut, cre]
+Maintainer: Yutong Wu <yutong.wu@utexas.edu>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2021-11-15 19:30:05 UTC

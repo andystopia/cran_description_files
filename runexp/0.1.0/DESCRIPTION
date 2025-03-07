@@ -1,0 +1,31 @@
+Package: runexp
+Type: Package
+Title: Softball Run Expectancy using Markov Chains and Simulation
+Version: 0.1.0
+Authors@R: c(
+    person("Annie", "Sauer", role = c("aut", "cre"), email = "anniees@vt.edu"), 
+    person("Sierra", "Merkes", role = "aut", email = "smerkes@vt.edu"))
+Depends: R (>= 3.6)
+Description: Implements two methods of estimating runs scored in a softball 
+    scenario: (1) theoretical expectation using discrete Markov chains and (2) empirical
+    distribution using multinomial random simulation.  Scores are based on player-specific input 
+    probabilities (out, single, double, triple, walk, and homerun).  Optional inputs include probability
+    of attempting a steal, probability of succeeding in an attempted steal, and an indicator of whether
+    a player is "fast" (e.g. the player could stretch home).  These probabilities may be 
+    calculated from common player statistics that are publicly available on team's webpages. 
+    Scores are evaluated based on a nine-player lineup and may be used to compare lineups, 
+    evaluate base scenarios, and compare the offensive potential of individual players.  
+    Manuscript forthcoming.  See Bukiet & Harold (1997) <doi:10.1287/opre.45.1.14> for 
+    implementation of discrete Markov chains. 
+License: LGPL
+LazyData: true
+Encoding: UTF-8
+Imports: stringr, doParallel, foreach, parallel
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-02-11 15:59:08 UTC; anniesauer
+Author: Annie Sauer [aut, cre],
+  Sierra Merkes [aut]
+Maintainer: Annie Sauer <anniees@vt.edu>
+Repository: CRAN
+Date/Publication: 2021-02-15 10:40:02 UTC

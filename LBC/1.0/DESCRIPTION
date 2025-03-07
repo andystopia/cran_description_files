@@ -1,0 +1,41 @@
+Package: LBC
+Type: Package
+Title: Logistic Box Cox
+Version: 1.0
+Author: Haoxue Wang [aut, cre] (Development of the whole packages),
+  Li Xing [aut] (Authors of some functions),
+  Xuekui Zhang [aut] (Revison of this package),
+  Igor Burstyn [aut] (Revison of this package),
+  Paul Gustafson [aut] (Revison of this package)
+Authors@R: c(person("Haoxue", "Wang", role = c("aut","cre"),
+                     comment="Development of the whole packages",
+                     email="haoxwang@student.ethz.ch"),
+             person("Li", "Xing", role = c("aut"),
+                    comment="Authors of some functions"),
+             person("Xuekui", "Zhang", role = c("aut"),
+                    comment="Revison of this package"),
+             person("Igor", "Burstyn", role = c("aut"),
+                    comment="Revison of this package"),
+             person("Paul", "Gustafson",role=c("aut"),
+                    comment="Revison of this package"))
+Date: 2021-11-11
+Maintainer: Haoxue Wang <haoxwang@student.ethz.ch>
+Depends: R (>= 3.5.0)
+URL: https://github.com/wanghaoxue0/LBC
+BugReports: https://github.com/wanghaoxue0/LBC/issues
+Imports: stats
+Suggests: knitr, rmarkdown
+Description: The logistic Box-Cox model is a formal method, which can accommodate the non-linear 
+              relationship between the log-odds and exposure via a shape parameter. Thus, it is 
+              superior to the common two-step approach, which adds a data transformation step 
+              before fitting a logistic regression model to accommodate any non-linearity in the 
+              disease-exposure relationship. This package includes key functions in our model and 
+              dataset for simulation. Simulation experiments can be reproduced following the Vignette. 
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 7.1.1
+License: MIT + file LICENSE
+Packaged: 2021-11-11 22:42:32 UTC; wang
+Repository: CRAN
+Date/Publication: 2021-11-15 08:20:05 UTC

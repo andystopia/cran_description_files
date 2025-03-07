@@ -1,0 +1,57 @@
+Package: funGp
+Type: Package
+Title: Gaussian Process Models for Scalar and Functional Inputs
+Version: 0.3.2
+Authors@R: c(
+    person("Jose", "Betancourt", email = "djbetancourt@uninorte.edu.co", role = c("cre", "aut")),
+    person("François", "Bachoc", email = "francois.bachoc@math.univ-toulouse.fr", role = "aut"),
+    person("Thierry", "Klein", email = "thierry.klein@math.univ-toulouse.fr", role = "aut"),
+    person("Jeremy", "Rohmer", email = "J.Rohmer@brgm.fr", role = "aut"),
+    person("Yves", "Deville", email = "deville.yves@alpestat.com", role = "ctb"),
+    person("Deborah", "Idier", email = "D.Idier@brgm.fr", role = "ctb"))
+Maintainer: Jose Betancourt <djbetancourt@uninorte.edu.co>
+Description: Construction and smart selection of Gaussian process models
+	for analysis of computer experiments
+	with emphasis on treatment of functional inputs that are regularly sampled. This package
+	offers: (i) flexible modeling of functional-input regression
+	problems through the fairly general Gaussian process model; (ii)
+	built-in dimension reduction for functional inputs; (iii)
+	heuristic optimization of the structural parameters of the model
+	(e.g., active inputs, kernel function, type of distance).
+	Metamodeling background is provided in
+	Betancourt et al. (2020) <doi:10.1016/j.ress.2020.106870>.
+	The algorithm for structural parameter optimization is described
+	in <https://hal.archives-ouvertes.fr/hal-02532713>.
+Note: research product of the RISCOPE project (ANR, project
+        No.16CE04-0011) <https://perso.math.univ-toulouse.fr/riscope/>.
+License: GPL-3
+URL: https://djbetancourt-gh.github.io/funGp/,
+        https://github.com/djbetancourt-gh/funGp
+BugReports: https://github.com/djbetancourt-gh/funGp/issues
+Depends: R (>= 3.5.0)
+Imports: methods, foreach, knitr, scales, microbenchmark, doFuture,
+        doRNG, future, progressr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Collate: '0_funGp_Doc.R' '0_show_Doc.R' '0_summary_Doc.R'
+        '8_outilsCode.R' '3_ant_admin.R' '2_fgpKern_Class.R'
+        '2_fgpProj_Class.R' '1_fgpm_Class.R' '1_Xfgpm_Class.R'
+        '3_ant_search.R' '3_training_F.R' '3_training_S.R'
+        '3_training_SF.R' '4_prediction_F.R' '4_prediction_S.R'
+        '4_prediction_SF.R' '5_simulation_F.R' '5_simulation_S.R'
+        '5_simulation_SF.R' '6_updating.R' '7_blackBoxFunctions.R'
+        '7_checkingFunctions.R' '7_correlFunctions.R'
+        '7_dimRedFunctions.R' '7_distanceFunctions.R'
+        '7_plottingFunctions.R' '7_plottingFunctionsStandard.R'
+        '8_outilsStats.R' '8_precalculated_Xfgpm_objects.R'
+NeedsCompilation: no
+Packaged: 2023-04-25 07:24:37 UTC; djbet
+Author: Jose Betancourt [cre, aut],
+  François Bachoc [aut],
+  Thierry Klein [aut],
+  Jeremy Rohmer [aut],
+  Yves Deville [ctb],
+  Deborah Idier [ctb]
+Repository: CRAN
+Date/Publication: 2023-04-25 07:40:08 UTC

@@ -1,0 +1,29 @@
+Package: lmms
+Version: 1.3.3
+Date: 2016-03-04
+Title: Linear Mixed Effect Model Splines for Modelling and Analysis of
+        Time Course Data
+Authors@R: c(person("Jasmin", "Straube", role = c("aut", "cre"),email = "j.straube@qfab.org"),
+			person("Kim-Anh", "Le Cao", role = "aut"),
+			person("Emma", "Huang", role = "aut"),
+			person("Dominique", "Gorse", role = "ctb"))
+Author: Jasmin Straube [aut, cre],
+    Kim-Anh Le Cao [aut],
+    Emma Huang [aut],
+    Dominique Gorse [ctb]
+Maintainer: Jasmin Straube <j.straube@qfab.org>
+Depends: R (>= 3.0.0), ggplot2
+Imports: stats, methods, nlme, lmeSplines, parallel, reshape2, gdata,
+        gplots, gridExtra
+Description: Linear Mixed effect Model Splines ('lmms') implements linear mixed
+    effect model splines for modelling and differential expression for highly
+    dimensional data sets: investNoise() for quality control and filterNoise() for
+    removing non-informative trajectories; lmmSpline() to model time course expression
+    profiles and lmmsDE() performs differential expression analysis to identify
+    differential expression between groups, time and/or group x time interaction.
+License: GPL (>= 2)
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-03-06 23:01:35 UTC; j.Straube
+Repository: CRAN
+Date/Publication: 2016-03-07 01:09:11

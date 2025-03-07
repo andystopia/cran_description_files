@@ -1,0 +1,39 @@
+Package: riem
+Type: Package
+Title: Accesses Weather Data from the Iowa Environment Mesonet
+Version: 0.2.0
+Authors@R: c(
+    person("Maëlle", "Salmon", , "maelle.salmon@yahoo.se", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2815-0399")),
+    person("Brooke", "Anderson", role = "rev",
+           comment = "Brooke Anderson reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/39."),
+    person("CHAI Project", role = "fnd",
+           comment = "The research leading to these results has received funding from the European Research Council under the ERC Grant Agreement number 336167– the CHAI Project"),
+    person("rOpenSci", role = "fnd",
+           comment = "https://ropensci.org/"),
+    person("Daryl", "Herzmann", , "akrherz@gmail.com", role = "ctb")
+  )
+Description: Allows to get weather data from Automated Surface Observing System (ASOS) stations (airports) in the
+    whole world thanks to the Iowa Environment Mesonet website.
+License: GPL (>= 2)
+Imports: httr (>= 1.1.0), lubridate (>= 1.5.6), tibble, jsonlite (>=
+        0.9.19)
+RoxygenNote: 7.1.1
+URL: https://docs.ropensci.org/riem/, https://github.com/ropensci/riem
+BugReports: https://github.com/ropensci/riem/issues
+Suggests: testthat, knitr, rmarkdown, ggplot2, forecast, xts,
+        weathermetrics, dplyr, vcr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2021-12-17 08:22:16 UTC; maelle
+Author: Maëlle Salmon [aut, cre] (<https://orcid.org/0000-0002-2815-0399>),
+  Brooke Anderson [rev] (Brooke Anderson reviewed the package for
+    rOpenSci, see https://github.com/ropensci/onboarding/issues/39.),
+  CHAI Project [fnd] (The research leading to these results has received
+    funding from the European Research Council under the ERC Grant
+    Agreement number 336167– the CHAI Project),
+  rOpenSci [fnd] (https://ropensci.org/),
+  Daryl Herzmann [ctb]
+Maintainer: Maëlle Salmon <maelle.salmon@yahoo.se>
+Repository: CRAN
+Date/Publication: 2021-12-17 08:40:06 UTC

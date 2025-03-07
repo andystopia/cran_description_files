@@ -1,0 +1,31 @@
+Type: Package
+Package: foundry
+Title: 'Palantir Foundry' Software Development Kit
+Version: 0.12.0
+Authors@R: 
+    c(person(given = "Alexandre",
+             family = "Guinaudeau",
+             role = c("aut", "cre"),
+             email = "aguinaudeau@palantir.com"),
+      person(family = "Palantir Technologies",
+             role = c("aut", "cph")))
+Maintainer: Alexandre Guinaudeau <aguinaudeau@palantir.com>
+Description: Interface to 'Palantir Foundry', including
+    reading and writing structured or unstructured datasets, and more
+    <https://www.palantir.com/platforms/foundry/>.
+URL: https://github.com/palantir/palantir-r-sdk
+BugReports: https://github.com/palantir/palantir-r-sdk/issues
+Encoding: UTF-8
+License: Apache License 2.0
+RoxygenNote: 7.2.1
+Depends: R (>= 3.5.0)
+Imports: arrow (>= 0.14.0), jsonlite, httr, R6, yaml
+Suggests: lintr, httptest, testthat (>= 3.0.0), withr
+Collate: 'config.R' 'api_client.R' 'utils.R' 'schema.R'
+        'datasets_api_client.R' 'datasets.R'
+NeedsCompilation: no
+Packaged: 2023-02-27 10:08:21 UTC; aguinaudeau
+Author: Alexandre Guinaudeau [aut, cre],
+  Palantir Technologies [aut, cph]
+Repository: CRAN
+Date/Publication: 2023-02-27 16:42:33 UTC

@@ -1,0 +1,25 @@
+Package: cda
+Version: 2.0.0
+Authors@R: c(person("Baptiste", "Auguie",
+    email = "baptiste.auguie@gmail.com",
+    role = c("aut", "cre")))
+License: GPL-3
+Title: Coupled-Dipole Approximation for Electromagnetic Scattering by
+        Three-Dimensional Clusters of Sub-Wavelength Particles
+Description: Coupled-dipole simulations for electromagnetic scattering of light by sub-wavelength particles in arbitrary 3-dimensional configurations. Scattering and absorption spectra are simulated by inversion of the interaction matrix, or by an order-of-scattering approximation scheme. High-level functions are provided to simulate spectra with varying angles of incidence, as well as with full angular averaging.  
+URL: https://github.com/baptiste/cda
+BugReports: https://github.com/baptiste/cda/issues
+Type: Package
+LazyLoad: yes
+SystemRequirements: GNU make
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: dielectric, RcppFaddeeva, plyr, rgl, grid, ggplot2,
+        gridExtra, testthat, knitr, scales
+Imports: Rcpp, statmod, randtoolbox, reshape2
+RoxygenNote: 5.0.1.9000
+NeedsCompilation: yes
+Packaged: 2016-08-16 20:52:54 UTC; baptiste
+Author: Baptiste Auguie [aut, cre]
+Maintainer: Baptiste Auguie <baptiste.auguie@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-08-16 23:58:00

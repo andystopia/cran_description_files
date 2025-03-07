@@ -1,0 +1,23 @@
+Package: FuzzyImputationTest
+Type: Package
+Title: Imputation Procedures and Quality Tests for Fuzzy Data
+Version: 0.2.0
+Authors@R: c(
+    person("Maciej", "Romaniuk", email = "mroman@ibspan.waw.pl",
+    role = c("cre","aut"),comment = c(ORCID = "0000-0001-9649-396X"))
+    )
+Description: Special procedures for the imputation of missing fuzzy numbers are still underdeveloped. The goal of the package is to provide the new d-imputation method (DIMP for short, Romaniuk, M. and Grzegorzewski, P. "Fuzzy Data Imputation with DIMP and FGAIN" RB/23/2023 (2023)) and covert some classical ones applied in R packages ('missForest','miceRanger','knn') for use with fuzzy datasets. Additionally, specially tailored benchmarking tests are provided to check and compare these imputation procedures with fuzzy datasets.
+License: GPL-3
+NeedsCompilation: yes
+Imports: stats, methods, FuzzySimRes, FuzzyNumbers, missForest,
+        miceRanger, VIM
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Packaged: 2024-09-04 06:53:46 UTC; mroman
+Author: Maciej Romaniuk [cre, aut] (<https://orcid.org/0000-0001-9649-396X>)
+Maintainer: Maciej Romaniuk <mroman@ibspan.waw.pl>
+Repository: CRAN
+Date/Publication: 2024-09-09 09:00:05 UTC

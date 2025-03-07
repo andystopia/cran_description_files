@@ -1,0 +1,33 @@
+Package: ghcm
+Type: Package
+Title: Functional Conditional Independence Testing with the GHCM
+Version: 2.0.0
+Authors@R: c(person("Anton Rask", "Lundborg", email = "a.lundborg@statslab.cam.ac.uk",
+  role = c("aut", "cre")),
+  person("Rajen D.", "Shah", role = c("aut")),
+  person("Jonas", "Peters", role = c("aut")))
+Description: A statistical hypothesis test for conditional independence.
+    Given residuals from a sufficiently powerful regression, it tests whether 
+    the covariance of the residuals is vanishing. It can be applied to both
+    discretely-observed functional data and multivariate data. 
+    Details of the method can be found in Anton Rask Lundborg, Rajen D. Shah and Jonas
+    Peters (2021) <arXiv:2101.07108>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: graphics, MASS, refund, stats, utils, CompQuadForm
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.1.1
+Suggests: testthat, knitr, rmarkdown, bookdown,
+        GeneralisedCovarianceMeasure, ggplot2, reshape2
+URL: https://github.com/arlundborg/ghcm
+BugReports: https://github.com/arlundborg/ghcm/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-27 17:48:26 UTC; lundborg
+Author: Anton Rask Lundborg [aut, cre],
+  Rajen D. Shah [aut],
+  Jonas Peters [aut]
+Maintainer: Anton Rask Lundborg <a.lundborg@statslab.cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2021-09-27 18:20:02 UTC

@@ -1,0 +1,39 @@
+Package: semTests
+Type: Package
+Title: Goodness-of-Fit Testing for Structural Equation Models
+Description: Supports eigenvalue block-averaging p-values (Foldnes, Grønneberg, 2018) <doi:10.1080/10705511.2017.1373021>,
+    penalized eigenvalue block-averaging p-values (Foldnes, Moss, Grønneberg, WIP), penalized
+    regression p-values (Foldnes, Moss, Grønneberg, WIP), as well as traditional p-values such as Satorra-Bentler. All p-values can
+    be calculated using unbiased or biased gamma estimates (Du, Bentler, 2022) <doi:10.1080/10705511.2022.2063870> 
+    and two choices of chi square statistics.
+Version: 0.5.0
+Authors@R: c(
+    person(given="Jonas", 
+           family="Moss",
+           email="jonas.moss.statistics@gmail.com", 
+           role=c("aut", "cre"), 
+           comment = c(ORCID = "0000-0002-6876-6964")), 
+    person(given="Njål", 
+           family="Foldnes", 
+           role = "ctb",
+           email="njalfoldnes@gmail.com",
+           comment = c(ORCID=0000-0001-6889-6067)),
+    person(given="Steffen",
+           family="Grønneberg", 
+           email="steffeng@gmail.com",
+           role = "ctb", 
+           comment = c(ORCID="0000-0003-2785-6530")))
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: lavaan (>= 0.6-16), CompQuadForm, progressr, future.apply
+Suggests: covr, testthat (>= 3.0.0), psych
+Config/testthat/edition: 3
+RoxygenNote: 7.3.0
+NeedsCompilation: no
+Packaged: 2024-01-18 13:42:17 UTC; A2010578
+Author: Jonas Moss [aut, cre] (<https://orcid.org/0000-0002-6876-6964>),
+  Njål Foldnes [ctb] (-12957),
+  Steffen Grønneberg [ctb] (<https://orcid.org/0000-0003-2785-6530>)
+Maintainer: Jonas Moss <jonas.moss.statistics@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-18 20:40:02 UTC

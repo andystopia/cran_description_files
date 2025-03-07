@@ -1,0 +1,35 @@
+Package: rdecision
+Title: Decision Analytic Modelling in Health Economics
+Version: 1.0.2
+Authors@R: c(
+  person(given="Andrew", family="Sims", 
+         email = "andrew.sims@newcastle.ac.uk", 
+         role = c("aut", "cre"),
+         comment = c(ORCID="0000-0002-9553-7278")),
+  person(given="Kim", family="Fairbairn", 
+         email="kim.fairbairn@nhs.net", 
+         role=c("aut"),
+         comment = c(ORCID="0000-0001-5108-6279")))
+Description: Classes and functions for modelling health care interventions 
+  using cohort models (decision trees). Mechanisms are provided for 
+  associating an uncertainty distribution with each source variable and for
+  ensuring transparency of the mathematical relationships between variables.
+  The package terminology follows Briggs et al "Decision Modelling for Health
+  Economic Evaluation" (2006, ISBN:978-0-19-852662-9).
+Depends: R (>= 3.1.0)
+Imports: R6, rlang (>= 0.4.2), stats, utils, grid
+Suggests: rmarkdown, knitr, pander, testthat (>= 3.0.0), utf8
+License: GPL-3
+LazyData: true
+Language: en-GB
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-03-07 23:02:21 UTC; andrew
+Author: Andrew Sims [aut, cre] (<https://orcid.org/0000-0002-9553-7278>),
+  Kim Fairbairn [aut] (<https://orcid.org/0000-0001-5108-6279>)
+Maintainer: Andrew Sims <andrew.sims@newcastle.ac.uk>
+Repository: CRAN
+Date/Publication: 2021-03-10 19:20:02 UTC

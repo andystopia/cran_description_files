@@ -1,0 +1,65 @@
+Package: Zelig
+License: GPL (>= 3)
+Title: Everyone's Statistical Software
+Authors@R: c(
+    person("Christine.", "Choirat", role = "aut"),
+    person("Christopher", "Gandrud", email = "zelig.zee@gmail.com",
+    role = c("aut", "cre")),
+    person("James", "Honaker", role = "aut"),
+    person("Kosuke", "Imai", role = "aut"),
+    person("Gary", "King", role = "aut"),
+    person("Olivia", "Lau", role = "aut")
+    )
+Description: A framework that brings together an abundance of common
+    statistical models found across packages into a unified interface, and
+    provides a common architecture for estimation and interpretation, as well
+    as bridging functions to absorb increasingly more models into the
+    collective library. Zelig allows each individual package, for each
+    statistical model, to be accessed by a common uniformly structured call and
+    set of arguments. Moreover, Zelig automates all the surrounding building
+    blocks of a statistical work-flow--procedures and algorithms that may be
+    essential to one user's application but which the original package
+    developer did not use in their own research and might not themselves
+    support. These include bootstrapping, jackknifing, and re-weighting of data.
+    In particular, Zelig automatically generates predicted and simulated
+    quantities of interest (such as relative risk ratios, average treatment
+    effects, first differences and predicted and expected values) to interpret
+    and visualize complex models.
+URL: https://cran.r-project.org/package=Zelig
+BugReports: https://github.com/IQSS/Zelig/issues
+Version: 5.0-15
+Date: 2017-02-09
+Imports: AER, Amelia, coda, dplyr (>= 0.3.0.2), geepack, jsonlite,
+        sandwich, methods, MASS, MatchIt, maxLik, MCMCpack, quantreg,
+        survey, survival, VGAM
+Suggests: testthat, knitr
+Collate: 'assertions.R' 'model-zelig.R' 'model-timeseries.R'
+        'model-ma.R' 'model-ar.R' 'model-arima.R' 'model-weibull.R'
+        'model-tobit.R' 'model-bayes.R' 'model-tobit-bayes.R'
+        'model-glm.R' 'model-binchoice.R' 'model-probit.R'
+        'model-probit-bayes.R' 'model-poisson.R'
+        'model-poisson-bayes.R' 'model-oprobit-bayes.R'
+        'model-normal.R' 'model-normal-bayes.R' 'model-mlogit-bayes.R'
+        'model-gamma.R' 'model-gee.R' 'model-logit.R'
+        'model-logit-bayes.R' 'model-factor-bayes.R'
+        'model-poisson-gee.R' 'model-normal-gee.R' 'model-gamma-gee.R'
+        'model-binchoice-gee.R' 'model-probit-gee.R'
+        'model-logit-gee.R' 'model-relogit.R' 'model-quantile.R'
+        'model-lognorm.R' 'model-exp.R' 'model-negbinom.R' 'model-ls.R'
+        'utils.R' 'create-json.R' 'model-survey.R'
+        'model-binchoice-survey.R' 'model-gamma-survey.R'
+        'model-logit-survey.R' 'model-normal-survey.R'
+        'model-poisson-survey.R' 'model-probit-survey.R' 'plots.R'
+        'wrappers.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-02-09 06:34:11 UTC; christophergandrud
+Author: Christine. Choirat [aut],
+  Christopher Gandrud [aut, cre],
+  James Honaker [aut],
+  Kosuke Imai [aut],
+  Gary King [aut],
+  Olivia Lau [aut]
+Maintainer: Christopher Gandrud <zelig.zee@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-02-09 15:24:10

@@ -1,0 +1,20 @@
+Package: PRNG
+Title: A Pseudo-Random Number Generator
+Version: 0.0.1
+Authors@R: c(
+           person("Sajad Ahmad", "Mir", email = "mir.1@iitj.ac.in", role = c("aut", "cre"), comment = c(ORCID = "https://orcid.org/0009-0009-6422-1893")),
+           person("Dr. Puneet", "Sharma", email = "puneet@iitj.ac.in", role = c("aut"), comment = c(ORCID = "https://orcid.org/0000-0001-7839-0051"))
+           )
+Description: Provides functions for generating pseudo-random numbers that follow a uniform distribution [0,1]. Randomness tests were conducted using the National Institute of Standards and Technology test suite<https://csrc.nist.gov/pubs/sp/800/22/r1/upd1/final>, along with additional tests. The sequence generated depends on the initial values and parameters. The package includes a linear congruence map as the decision map and three chaotic maps to generate the pseudo-random sequence, which follow a uniform distribution. Other distributions can be generated from the uniform distribution using the Inversion Principle Method and BOX-Muller transformation. Small perturbations in seed values result in entirely different sequences of numbers due to the sensitive nature of the maps being used. The chaotic nature of the maps helps achieve randomness in the generator. Additionally, the generator is capable of producing random bits.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-05-25 10:36:55 UTC; pervaiz
+Author: Sajad Ahmad Mir [aut, cre] (<https://orcid.org/0009-0009-6422-1893>),
+  Dr. Puneet Sharma [aut] (<https://orcid.org/0000-0001-7839-0051>)
+Maintainer: Sajad Ahmad Mir <mir.1@iitj.ac.in>
+Repository: CRAN
+Date/Publication: 2024-05-26 17:10:05 UTC

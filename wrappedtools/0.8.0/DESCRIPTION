@@ -1,0 +1,42 @@
+Package: wrappedtools
+Type: Package
+Title: Useful Wrappers Around Commonly Used Functions
+Description: The main functionalities of 'wrappedtools' are:
+    adding backticks to variable names; rounding to desired precision 
+    with special case for p-values; 
+    selecting columns based on pattern and storing their position, name, 
+    and backticked name; computing and formatting of descriptive statistics 
+    (e.g. mean±SD), comparing groups and creating publication-ready tables with 
+    descriptive statistics and p-values; creating specialized plots for 
+    correlation matrices. Functions were mainly written for my own daily work or 
+    teaching, but may be of use to others as well.
+Version: 0.8.0
+Date: 2022-09-01
+Authors@R: c(
+    person(given = "Andreas",
+           family = "Busjahn",
+           role = c("cre", "aut"),
+           email = "andreas@busjahn.net",
+           comment = c(ORCID = "0000-0001-9650-6919")),
+    person(given = "Bilal",
+           family = "Asser",
+           role = c("aut"),
+           email = "billyasser@hotmail.co.uk",
+           comment = ""))
+Maintainer: Andreas Busjahn <andreas@busjahn.net>
+License: GPL-3
+Encoding: UTF-8
+Imports: stats, boot, knitr, coin, utils, dplyr, forcats, purrr, glue,
+        rlang, stringr, magrittr, ggplot2, tibble, tidyr, kableExtra,
+        lifecycle
+Depends: R (>= 3.5), tidyverse
+RoxygenNote: 7.2.1
+LazyData: true
+VignetteBuilder: knitr
+Suggests: rmarkdown, testthat
+NeedsCompilation: no
+Packaged: 2022-09-01 09:05:49 UTC; abusj
+Author: Andreas Busjahn [cre, aut] (<https://orcid.org/0000-0001-9650-6919>),
+  Bilal Asser [aut]
+Repository: CRAN
+Date/Publication: 2022-09-01 09:20:02 UTC

@@ -1,0 +1,23 @@
+Package: quantregGrowth
+Type: Package
+Title: Non-Crossing Additive Regression Quantiles and Non-Parametric
+        Growth Charts
+Version: 1.7-0
+Date: 2023-07-05
+Authors@R: c(person(given = c("Vito","M.","R."), family = "Muggeo", role =
+        c("aut", "cre"), email = "vito.muggeo@unipa.it", comment=c(ORCID="0000-0002-3386-4054")))
+Maintainer: Vito M. R. Muggeo <vito.muggeo@unipa.it>
+Description: Fits non-crossing regression quantiles as a function of linear covariates and multiple smooth terms, including varying coefficients, via B-splines with L1-norm difference penalties.  
+    Random intercepts and variable selection are allowed via the lasso penalties.
+    The smoothing parameters are estimated as part of the model fitting, see Muggeo and others (2021) <doi:10.1177/1471082X20929802>. Monotonicity and concavity 
+    constraints on the fitted curves are allowed, see Muggeo and others (2013) <doi:10.1007/s10651-012-0232-1>, 
+    and also <doi:10.13140/RG.2.2.12924.85122> or <doi:10.13140/RG.2.2.29306.21445> some code examples.
+Depends: R (>= 3.5.0), quantreg, splines, SparseM, methods
+License: GPL
+Suggests: knitr, rmarkdown, mgcv, markdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-07-05 14:58:22 UTC; vito
+Author: Vito M. R. Muggeo [aut, cre] (<https://orcid.org/0000-0002-3386-4054>)
+Repository: CRAN
+Date/Publication: 2023-07-06 11:30:11 UTC

@@ -1,0 +1,25 @@
+Package: crm12Comb
+Type: Package
+Title: Phase I/II CRM Based Drug Combination Design
+Version: 0.1.3
+Authors@R: c(
+    person("Junying", "Wang", email = "junying.wang@stonybrook.edu", role = c("cre", "aut")),
+    person("Song", "Wu", email = "song.wu@stonyrbook.edu", role = "aut"),
+    person("Jie", "Yang", email = "jie.yang@stonyrbookmedicine.edu", role = "aut"))
+Maintainer: Junying Wang <junying.wang@stonybrook.edu>
+Description: Implements the adaptive designs for integrated phase I/II trials of drug combinations via continual reassessment method (CRM) to evaluate toxicity and efficacy simultaneously for each enrolled patient cohort based on Bayesian inference. It supports patients assignment guidance in a single trial using current enrolled data, as well as conducting extensive simulation studies to evaluate operating characteristics before the trial starts. It includes various link functions such as empiric, one-parameter logistic, two-parameter logistic, and hyperbolic tangent, as well as considering multiple prior distributions of the parameters like normal distribution, gamma distribution and exponential distribution to accommodate diverse clinical scenarios. Method using Bayesian framework with empiric link function is described in: Wages and Conaway (2014) <doi:10.1002/sim.6097>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Imports: dplyr, ggplot2, ggforce
+Suggests: knitr, rmarkdown
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2024-05-02 14:40:13 UTC; junyingwang
+Author: Junying Wang [cre, aut],
+  Song Wu [aut],
+  Jie Yang [aut]
+Repository: CRAN
+Date/Publication: 2024-05-02 15:52:43 UTC

@@ -1,0 +1,64 @@
+Package: nlmixr
+Type: Package
+Title: Nonlinear Mixed Effects Models in Population Pharmacokinetics
+        and Pharmacodynamics
+Depends: R (>= 3.2), nlme, RxODE
+Imports: Rcpp (>= 0.12.3), brew, lattice, parallel, lbfgs, inline,
+        dparser, methods, ggplot2, memoise, rex, minqa, Matrix,
+        numDeriv, R.utils, mvtnorm, n1qn1, PreciseSums, fastGHQuad,
+        crayon, cli, RcppArmadillo (>= 0.5.600.2.0), vpc (>= 1.0.0)
+Suggests: knitr, rmarkdown, dplyr, data.table, lbfgsb3, testthat,
+        madness, devtools, expm, matrixcalc, reshape2
+Version: 0.9.1-0
+Date: 2018-04-29
+Authors@R: c(person("Matthew","Fidler",
+      role = "aut", email = "matthew.fidler@gmail.com"),      
+   person("Yuan", "Xiong", 
+      role = "aut", email = "yuan.xiong@gmail.com"),
+   person("Rik", "Schoemaker", 
+      role = "aut", email = "rik.schoemaker@occams.com"),
+   person("Justin", "Wilkins", 
+      role = "aut", email = "justin.wilkins@occams.com"),
+   person("Mirjam","Trame",
+      role = "aut", email = "mirjam.trame@gmail.com"),   
+   person("Teun","Post",
+      role = "aut", email = "t.post@lapp.nl"),   
+   person("Robert","Leary", role = "ctb"),
+   person("Wenping", "Wang", 
+      role = c("aut", "cre"), email = "wwang8198@gmail.com"),
+   person("Hadley","Wickham", role = "ctb"),
+   person("Dirk","Eddelbuettel",
+      role = "cph", email = "edd@debian.org"),   
+   person("David","Ardia",role = "cph"),
+   person("Katharine","Mullen",role = "cph")
+   )
+Description: Fit and compare nonlinear mixed-effects models in differential
+    equations with flexible dosing information commonly seen in pharmacokinetics
+    and pharmacodynamics (Almquist, Leander, and Jirstrand 2015 
+    <doi:10.1007/s10928-015-9409-1>). Differential equation solving is 
+    by compiled C code provided in the 'RxODE' package
+    (Wang, Hallow, and James 2015 <doi:10.1002/psp4.12052>).
+License: GPL (>= 2)
+NeedsCompilation: yes
+LinkingTo: dparser(>= 0.1.8), Rcpp (>= 0.12.3), RcppEigen (>=
+        0.3.3.3.0), StanHeaders, BH
+URL: https://github.com/nlmixrdevelopment/nlmixr
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Packaged: 2018-05-19 14:59:52 UTC; annie
+Maintainer: Wenping Wang <wwang8198@gmail.com>
+Author: Matthew Fidler [aut],
+  Yuan Xiong [aut],
+  Rik Schoemaker [aut],
+  Justin Wilkins [aut],
+  Mirjam Trame [aut],
+  Teun Post [aut],
+  Robert Leary [ctb],
+  Wenping Wang [aut, cre],
+  Hadley Wickham [ctb],
+  Dirk Eddelbuettel [cph],
+  David Ardia [cph],
+  Katharine Mullen [cph]
+Repository: CRAN
+Date/Publication: 2018-05-19 21:01:06 UTC

@@ -1,0 +1,37 @@
+Package: ontophylo
+Title: Ontology-Informed Phylogenetic Comparative Analyses
+Version: 1.1.2
+Authors@R: 
+    c(person("Diego S.", "Porto",
+             email = "diegosporto@gmail.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID="0000-0002-1657-9606")
+           ),
+      person("Sergei", "Tarasov",
+             email = "sergei.tarasov@helsinki.fi",
+             role = c("aut"),
+             comment = c(ORCID="0000-0001-5237-2330")
+             )
+    )
+Description: Provides new tools for analyzing discrete trait data integrating bio-ontologies and phylogenetics. It expands on the previous work of Tarasov et al. (2019) <doi:10.1093/isd/ixz009>. The PARAMO pipeline allows to reconstruct ancestral phenomes treating groups of morphological traits as a single complex character. The pipeline incorporates knowledge from ontologies during the amalgamation of individual character stochastic maps.
+  Here we expand the current PARAMO functionality by adding new statistical methods for inferring evolutionary phenome dynamics using non-homogeneous Poisson process (NHPP). The new functionalities include: (1) reconstruction of evolutionary rate shifts of phenomes across lineages and time; (2) reconstruction of morphospace dynamics through time; and (3) estimation of rates of phenome evolution at different levels of anatomical hierarchy (e.g., entire body or specific regions only). The package also includes user-friendly tools for visualizing evolutionary rates of different anatomical regions using vector images of the organisms of interest.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+URL: https://github.com/diegosasso/ontophylo
+BugReports: https://github.com/diegosasso/ontophylo/issues
+Depends: R (>= 3.5.0)
+Imports: magrittr, dplyr, tidyr, purrr, tibble, ggplot2, stringdist,
+        ape, phytools, ontologyIndex, RColorBrewer, grid, truncnorm,
+        fANCOVA, grImport
+Suggests: rmarkdown, knitr, roxygen2, testthat (>= 3.0.0), stringr
+LazyData: true
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-20 14:44:36 UTC; diego
+Author: Diego S. Porto [aut, cre] (<https://orcid.org/0000-0002-1657-9606>),
+  Sergei Tarasov [aut] (<https://orcid.org/0000-0001-5237-2330>)
+Maintainer: Diego S. Porto <diegosporto@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-20 16:30:06 UTC

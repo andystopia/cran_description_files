@@ -1,0 +1,23 @@
+Package: hrIPW
+Title: Hazard Ratio Estimation using Cox Model Weighted by the
+        Estimated Propensity Score
+Version: 0.1.3
+Authors@R: person("David", "Hajage", email = "david.hajage@aphp.fr", role = c("aut", "cre"))
+Description: Estimates the log hazard ratio associated with a binary exposure using a Cox PH model weighted by the propensity score. 
+  Propensity model is estimated using a simple logistic regression. 
+  Variance estimation takes into account the propensity score estimation step with the method proposed by Hajage et al. (2018) <doi:10.1002/bimj.201700330>. 
+  Both the average treatment effect on the overall (ATE) or the treated (ATT) population can be estimated. 
+  For the ATE estimation, both unstabilized and stabilized weights can be used. 
+Depends: R (>= 3.3)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: survival
+Suggests: RISCA, boot
+NeedsCompilation: no
+Packaged: 2020-04-13 13:34:10 UTC; david
+Author: David Hajage [aut, cre]
+Maintainer: David Hajage <david.hajage@aphp.fr>
+Repository: CRAN
+Date/Publication: 2020-04-13 13:50:02 UTC

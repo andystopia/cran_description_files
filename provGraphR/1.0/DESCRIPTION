@@ -1,0 +1,34 @@
+Package: provGraphR
+Title: Creates Adjacency Matrices for Lineage Searches
+Version: 1.0
+Authors@R: c(
+    person("Orenna", "Brand", email = "o.brand@columbia.edu", role = "aut"),
+    person("Joseph", "Wonsil", email = "jwonsil@carthage.edu", role = "aut"),
+    person("Emery", "Boose", email = "boose@fas.harvard.edu", role = "aut"), 
+    person("Barbara", "Lerner", email = "blerner@mtholyoke.edu", role = "cre") 
+    )
+Copyright: President and Fellows of Harvard College, Trustees of Mount
+        Holyoke College
+Description: Creates and manages a provenance graph corresponding to the 
+    provenance created by the 'rdtLite' package, which
+    collects provenance from R scripts.  'rdtLite' is available on CRAN.
+    The provenance format is an extension of the 
+    W3C PROV JSON format (<https://www.w3.org/Submission/2013/SUBM-prov-json-20130424/>).
+    The extended JSON provenance format is described 
+    in <https://github.com/End-to-end-provenance/ExtendedProvJson>.
+Depends: R (>= 3.5.0)
+Imports: igraph, Matrix, methods, provParseR (>= 0.2)
+Suggests: testthat
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2020-01-14 19:05:16 UTC; blerner
+Author: Orenna Brand [aut],
+  Joseph Wonsil [aut],
+  Emery Boose [aut],
+  Barbara Lerner [cre]
+Maintainer: Barbara Lerner <blerner@mtholyoke.edu>
+Repository: CRAN
+Date/Publication: 2020-01-20 09:30:09 UTC

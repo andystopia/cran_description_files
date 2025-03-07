@@ -1,0 +1,55 @@
+Package: bsem
+Type: Package
+Title: Bayesian Structural Equation Models
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Renato",
+           family = "Panaro",
+           role = c("aut", "cre"),
+           email = "renatovp@ime.usp.br",
+           comment = c(ORCID = "0000-0002-1903-2091", URL= "https://rvpanaro.github.io/")),
+	person(given = "Vinícius",
+           family = "Mayrink",
+           role = "aut",
+           email = "vdinizm@gmail.com",
+           comment = c(ORCID = "0000-0002-5683-8326", URL= "http://www.est.ufmg.br/~vdinizm/")),
+  	person(given = "Marcelo",
+           family = "Costa",
+           role = "aut",
+           email = "macosta.est@gmail.com",
+           comment = c(URL= "http://somos.ufmg.br/professor/marcelo-azevedo-costa"))
+           )         
+Maintainer: Renato Panaro <renatovp@ime.usp.br>
+Description: Flexible routines to allow structural equation modeling particular cases using 'rstan' integration. 'bsem' includes Bayesian semi Confirmatory Factor Analysis, Confirmatory Factor Analysis, and Structural Equation Model.  VD Mayrink (2013) <doi:10.1214/12-AOAS607>.
+License: GPL-3
+Biarch: true
+Depends: R (>= 3.5.0), coda (>= 0.19-3), lattice (>= 0.20-38), magrittr
+        (>= 1.5), viridis (>= 0.5.1)
+Imports: visNetwork (>= 2.0.9), shiny (>= 1.5.0), methods, Rcpp (>=
+        0.12.0), rstan (>= 2.18.1), rstantools (>= 1.5.1), DiagrammeR
+        (>= 1.0.5)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+Suggests: knitr, devtools, roxygen2, testthat (>= 2.1.0), covr,
+        rmarkdown, bayesplot, tidybayes, ggplot2, gridExtra (>= 2.3),
+        shinythemes (>= 1.1.2), ggfortify (>= 0.4.1), shinyjs (>= 1.1),
+        shinycssloaders (>= 0.3), plotly (>= 4.9.2.1), ggridges (>=
+        0.5.2), fmsb (>= 0.5.3), visdat (>= 0.5.3), DT (>= 0.14), tidyr
+        (>= 1.1.0), dplyr (>= 1.0.0), reshape2 (>= 1.4.4)
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: GNU make
+BugReports: https://github.com/rvpanaro/bsem/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+URL: https://github.com/rvpanaro/bsem
+NeedsCompilation: yes
+Packaged: 2020-08-08 01:48:31 UTC; renato
+Author: Renato Panaro [aut, cre] (<https://orcid.org/0000-0002-1903-2091>,
+    https://rvpanaro.github.io/),
+  Vinícius Mayrink [aut] (<https://orcid.org/0000-0002-5683-8326>,
+    http://www.est.ufmg.br/~vdinizm/),
+  Marcelo Costa [aut]
+    (http://somos.ufmg.br/professor/marcelo-azevedo-costa)
+Repository: CRAN
+Date/Publication: 2020-08-14 13:40:03 UTC

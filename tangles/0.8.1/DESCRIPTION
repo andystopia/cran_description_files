@@ -1,0 +1,20 @@
+Package: tangles
+Type: Package
+Title: Anonymization of Spatial Point Patterns and Raster Objects
+Version: 0.8.1
+Date: 2019-10-10
+Authors@R: c(person("Brendan", "Malone", email = "brendan.malone@csiro.au", role = c("cre", "aut")))
+Description: Spatial data anonymization preserves confidentiality. Using methods described in Zandbergen (2014) <doi:10.1155/2014/567049>, spatial data anonymization is achieved by dithering original spatial coordinates with combinations of randomized vertical, horizontal and rotational shifts. This can apply to non-grid spatial point patterns and raster objects, and the methods preserve the same spatial characteristics and relationships of the original data. Unique hash keying enables data subjected to anonymization sequences to be re-identified where required.  
+Depends: R (>= 3.0.1)
+Imports: raster, digest, sp
+Suggests: rasterVis, rgdal, knitr, rmarkdown
+VignetteBuilder: knitr
+License: GPL-2
+LazyData: no
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-10-10 09:18:20 UTC; mal181
+Author: Brendan Malone [cre, aut]
+Maintainer: Brendan Malone <brendan.malone@csiro.au>
+Repository: CRAN
+Date/Publication: 2019-10-11 11:30:02 UTC

@@ -1,0 +1,36 @@
+Package: baguette
+Title: Efficient Model Functions for Bagging
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Max",
+             family = "Kuhn",
+             role = c("aut", "cre"),
+             email = "max@rstudio.com",
+             comment = c(ORCID = "0000-0003-2402-136X")),
+      person(given = "RStudio",
+             role = "cph"))
+Description: Tree- and rule-based models can be bagged using this package
+    and their predictions equations are stored in an efficient format to
+    reduce the model objects size and speed.
+License: MIT + file LICENSE
+URL: https://baguette.tidymodels.org,
+        https://github.com/tidymodels/baguette,
+        https://baguette.tidymodels.org/
+BugReports: https://github.com/tidymodels/baguette/issues
+Depends: parsnip (>= 0.2.0)
+Imports: butcher, C50, dials, dplyr, earth, furrr, generics, hardhat
+        (>= 0.1.4), magrittr, purrr, rlang, rpart, rsample, tibble,
+        tidyr, utils, withr
+Suggests: AmesHousing, covr, modeldata, recipes, rmarkdown, spelling,
+        testthat, yardstick
+Config/Needs/website: tidyverse/tidytemplate
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-03-09 13:20:09 UTC; max
+Author: Max Kuhn [aut, cre] (<https://orcid.org/0000-0003-2402-136X>),
+  RStudio [cph]
+Maintainer: Max Kuhn <max@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-03-09 13:40:02 UTC

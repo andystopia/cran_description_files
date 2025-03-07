@@ -1,0 +1,45 @@
+Package: medfateland
+Type: Package
+Title: Mediterranean Landscape Simulation
+Version: 2.4.6
+Date: 2024-10-02
+Authors@R: c(
+	person('Miquel', 'De Cáceres', role=c('aut','cre'),
+	email='miquelcaceres@gmail.com'),
+	person('Aitor', 'Améztegui', role=c('aut'), comment = c(ORCID = "0000-0003-2006-1559")),
+	person('María', 'González', role=c('aut'), comment = c(ORCID = "0000-0002-2227-8404")),
+	person('Núria', 'Aquilué', role=c('aut')),
+	person('Daniel', 'Caviedes-Voullième', role=c('aut')),
+	person('Mario', 'Morales-Hernández', role=c('aut')),
+	person('Mario', 'Beltrán', role=c('ctb')),
+	person('Rodrigo', 'Balaguer-Romano', role=c('ctb'), comment = c(ORCID = "0000-0003-2808-6777")),
+	person('Roberto', 'Molowny-Horas', role=c('ctb'), comment = c(ORCID = "0000-0003-2626-6379")))
+Description: Simulate forest hydrology, forest function and dynamics over landscapes [De Caceres et al. (2015) <doi:10.1016/j.agrformet.2015.06.012>]. Parallelization is allowed in several simulation functions and simulations may be conducted including spatial processes such as lateral water transfer and seed dispersal.
+License: GPL (>= 2)
+URL: https://emf-creaf.github.io/medfateland/
+LazyLoad: yes
+Depends: R (>= 3.4.0), medfate (>= 4.4.0)
+Imports: cli, ggplot2, dplyr, httr, jsonlite, lifecycle, methods,
+        meteoland (>= 2.0.2), rlang, Rcpp (>= 0.12.12), parallel, sf,
+        shiny, stars, terra, tidyterra, tidyr, tibble, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, meteoland, medfate
+Encoding: UTF-8
+NeedsCompilation: yes
+LazyData: true
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+BugReports: https://github.com/emf-creaf/medfateland/issues
+Packaged: 2024-10-03 13:02:57 UTC; miquel
+Author: Miquel De Cáceres [aut, cre],
+  Aitor Améztegui [aut] (<https://orcid.org/0000-0003-2006-1559>),
+  María González [aut] (<https://orcid.org/0000-0002-2227-8404>),
+  Núria Aquilué [aut],
+  Daniel Caviedes-Voullième [aut],
+  Mario Morales-Hernández [aut],
+  Mario Beltrán [ctb],
+  Rodrigo Balaguer-Romano [ctb] (<https://orcid.org/0000-0003-2808-6777>),
+  Roberto Molowny-Horas [ctb] (<https://orcid.org/0000-0003-2626-6379>)
+Maintainer: Miquel De Cáceres <miquelcaceres@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-03 13:30:02 UTC

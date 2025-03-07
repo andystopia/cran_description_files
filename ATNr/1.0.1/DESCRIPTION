@@ -1,0 +1,25 @@
+Package: ATNr
+Type: Package
+Title: Run Allometric Trophic Networks Models
+Version: 1.0.1
+Date: 2022-01-25
+Authors@R: 
+    c(person("Benoit", "Gauzens", role = c("cre", "aut"), email = "benoit.gauzens@gmail.com"), 
+      person("Emilio", "Berti", role = "aut"))
+Description: Implements the differential equations associated to different versions of Allometric Trophic Models (ATN) to estimate the temporal dynamics of species biomasses in food webs. It offers several features to generate synthetic food webs and to parametrise models as well as a wrapper to the ODE solver deSolve.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.7), methods, stats, utils, deSolve
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.2
+LazyData: true
+Depends: R (>= 2.10)
+Suggests: rmarkdown, knitr, testthat, R.rsp
+VignetteBuilder: knitr, R.rsp
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-02-04 15:33:19 UTC; bg33novu
+Author: Benoit Gauzens [cre, aut],
+  Emilio Berti [aut]
+Maintainer: Benoit Gauzens <benoit.gauzens@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-07 11:30:02 UTC

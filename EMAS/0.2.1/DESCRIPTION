@@ -1,0 +1,38 @@
+Package: EMAS
+Type: Package
+Title: Epigenome-Wide Mediation Analysis Study
+Version: 0.2.1
+Date: 2022-06-11
+Authors@R: c(person(given = "Xiuquan", 
+                    family = "Nie", 
+                    role = c("aut", "cph", "cre"), 
+                    email = "niexiuquan1995@foxmail.com"), 
+             person(given = "Mengyi", 
+                    family = "Wang", 
+                    role = c("ctb", "rev")), 
+             person(given = "Weihong", 
+                    family = "Chen", 
+                    role = c("fnd")))
+Author: Xiuquan Nie [aut, cph, cre],
+  Mengyi Wang [ctb, rev],
+  Weihong Chen [fnd]
+Maintainer: Xiuquan Nie <niexiuquan1995@foxmail.com>
+Depends: R (>= 4.1.0)
+Imports: mediation, parallel, multilevel, minfi, ggplot2, qqman, lavaan
+Suggests: IlluminaHumanMethylationEPICanno.ilm10b4.hg19,
+        IlluminaHumanMethylation450kanno.ilmn12.hg19
+Description: DNA methylation is essential for human, and environment can change the DNA methylation
+    and affect body status. Epigenome-Wide Mediation Analysis Study (EMAS) can find
+    potential mediator CpG sites between exposure (x) and outcome (y) in epigenome-wide.
+    For more information on the methods we used, please see the following references:
+    Tingley, D. (2014) <doi:10.18637/jss.v059.i05>,
+    Turner, S. D. (2018) <doi:10.21105/joss.00731>,
+    Rosseel, D. (2012) <doi:10.18637/jss.v048.i02>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-06-12 02:05:45 UTC; niexi
+Repository: CRAN
+Date/Publication: 2022-06-19 00:00:10 UTC

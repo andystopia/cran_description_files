@@ -1,0 +1,31 @@
+Package: regweight
+Title: Convenience Functions for Implicit Regression Weights
+Version: 1.0.2
+Authors@R: 
+    person(given = "Drew",
+           family = "Dimmery",
+           role = c("aut", "cre"),
+           email = "drew.dimmery@univie.ac.at",
+           comment = c(ORCID = "0000-0001-9602-6325"))
+Description: A simple wrapper for calculating regression weights as defined by Aronow and 
+    Samii (2015) <doi:10.1111/ajps.12185>. Given a model object and a term of
+    interest, 'regweight' will calculate implicit regression weights and provide a variety of useful
+    visualizations and summary statistics.
+URL: https://github.com/ddimmery/regweight
+        https://ddimmery.github.io/regweight/
+BugReports: https://github.com/ddimmery/regweight/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: covr, CBPS, devtools, estimatr, knitr, rmarkdown, sf,
+        testthat (>= 3.0.0), USAboundaries, tibble, htmltools
+Imports: checkmate, dplyr, ggplot2, glue, gt, lpdensity, rlang, scales,
+        tidyr, tidyselect
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-02-14 17:55:24 UTC; drewd
+Author: Drew Dimmery [aut, cre] (<https://orcid.org/0000-0001-9602-6325>)
+Maintainer: Drew Dimmery <drew.dimmery@univie.ac.at>
+Repository: CRAN
+Date/Publication: 2022-02-16 13:50:02 UTC

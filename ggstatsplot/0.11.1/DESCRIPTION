@@ -1,0 +1,54 @@
+Type: Package
+Package: ggstatsplot
+Title: 'ggplot2' Based Plots with Statistical Details
+Version: 0.11.1
+Authors@R: 
+    c(person(given = "Indrajeet",
+             family = "Patil",
+             role = c("cre", "aut", "cph"),
+             email = "patilindrajeet.science@gmail.com",
+             comment = c(ORCID = "0000-0003-1995-6531", Twitter = "@patilindrajeets")),
+      person(given = "Chuck",
+             family = "Powell",
+             email = "ibecav@gmail.com",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-3606-2188")))
+Maintainer: Indrajeet Patil <patilindrajeet.science@gmail.com>
+Description: Extension of 'ggplot2', 'ggstatsplot' creates graphics with
+    details from statistical tests included in the plots themselves. It
+    provides an easier syntax to generate information-rich plots for
+    statistical analysis of continuous (violin plots, scatterplots,
+    histograms, dot plots, dot-and-whisker plots) or categorical (pie and
+    bar charts) data. Currently, it supports the most common types of
+    statistical approaches and tests: parametric, nonparametric, robust,
+    and Bayesian versions of t-test/ANOVA, correlation analyses,
+    contingency table analysis, meta-analysis, and regression analyses.
+    References: Patil (2021) <doi:10.21105/joss.03236>.
+License: GPL-3 | file LICENSE
+URL: https://indrajeetpatil.github.io/ggstatsplot/,
+        https://github.com/IndrajeetPatil/ggstatsplot
+BugReports: https://github.com/IndrajeetPatil/ggstatsplot/issues
+Depends: R (>= 4.1.0)
+Imports: correlation (>= 0.8.4), datawizard (>= 0.7.1), dplyr (>=
+        1.1.1), ggplot2 (>= 3.4.2), ggrepel (>= 0.9.3), ggsignif, glue,
+        insight (>= 0.19.1), paletteer, parameters (>= 0.20.3),
+        patchwork, performance (>= 0.10.2), purrr (>= 1.0.1), rlang,
+        stats, statsExpressions (>= 1.5.0), tidyr, utils
+Suggests: afex, BayesFactor (>= 0.9.12-4.4), gapminder, ggcorrplot (>=
+        0.1.4), ggside (>= 0.2.2), knitr, lme4, MASS, metaBMA, metafor,
+        metaplus, PMCMRplus, psych, rmarkdown, survival, testthat (>=
+        3.1.7), tibble, vdiffr (>= 1.0.5), WRS2
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3.9000
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+NeedsCompilation: no
+Packaged: 2023-04-14 07:04:40 UTC; indrajeetpatil
+Author: Indrajeet Patil [cre, aut, cph]
+    (<https://orcid.org/0000-0003-1995-6531>, @patilindrajeets),
+  Chuck Powell [ctb] (<https://orcid.org/0000-0002-3606-2188>)
+Repository: CRAN
+Date/Publication: 2023-04-14 07:50:03 UTC

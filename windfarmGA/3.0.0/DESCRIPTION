@@ -1,0 +1,28 @@
+Package: windfarmGA
+Title: Genetic Algorithm for Wind Farm Layout Optimization
+Version: 3.0.0
+Authors@R: c(
+    person("Sebastian", "Gatscha", , email="sebastian_gatscha@gmx.at", c("aut", "cre"))
+    )
+Maintainer: Sebastian Gatscha <sebastian_gatscha@gmx.at>
+Description: The genetic algorithm is designed to optimize wind farms of any shape. It requires a predefined amount of turbines, a unified rotor radius and an average wind speed value for each incoming wind direction. A terrain effect model can be included that downloads an 'SRTM' elevation model and loads a Corine Land Cover raster to approximate surface roughness.
+Depends: R (>= 3.2.3)
+Imports: Rcpp, raster, sf, elevatr, RColorBrewer, calibrate, grDevices,
+        graphics, foreach, parallel, doParallel, magrittr, methods,
+        stats, utils
+LinkingTo: Rcpp
+LazyData: TRUE
+License: MIT + file LICENSE
+URL: https://ysosirius.github.io/windfarmGA/index.html
+BugReports: https://github.com/YsoSirius/windfarmGA/issues
+RoxygenNote: 7.1.1
+Suggests: testthat, rgdal, rgeos, stars, leaflet, ggplot2, gstat,
+        rworldmap
+Encoding: UTF-8
+X-schema.org-keywords: windfarm-layout, optimization,
+        genetic-algorithm, renewable-energy, r, rstats, r-package
+NeedsCompilation: yes
+Packaged: 2021-05-05 06:04:44 UTC; gatscha
+Author: Sebastian Gatscha [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-05-05 15:20:03 UTC

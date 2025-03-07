@@ -1,0 +1,50 @@
+Type: Package
+Package: sprtt
+Title: Sequential Probability Ratio Tests: Using t-Statistic
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Meike",
+             family = "Steinhilber",
+             role = c("aut", "cre"),
+             email = "Meike.Steinhilber@aol.com",
+             comment = c(ORCID = "0000-0002-7144-2100")),
+      person(given = "Martin",
+             family = "Schnuerch",
+             role = c("aut", "ths"),
+             comment = c(ORCID = "0000-0001-6531-2265")),
+      person(given = "Anna-Lena",
+             family = "Schubert",
+             role = c("aut", "ths"),
+             comment = c(ORCID = "0000-0001-7248-0662"))
+      )
+Maintainer: Meike Steinhilber <Meike.Steinhilber@aol.com>
+Description: The seq_ttest() function is the implementation of Abraham
+    Wald’s (1947) <doi:10.2134/agronj1947.00021962003900070011x> Sequential Probability Ratio Test (SPRT) for the test of
+    a normal mean (difference) with unknown variance in R (R Core Team, 2018).
+    It performs sequential t tests developed by Rushton (1950) <doi:10.2307/2332385>, Rushton (1952) <doi:10.2307/2334026> and
+    Hajnal (1961) <doi:10.2307/2333131>, based on the SPRT. Specifically, seq_ttest() performs
+    one-sample, two-sample, and paired t tests for testing one- and
+    two-sided hypotheses.  The test is to be applied to the data during
+    the sampling process, ideally after each observation. At any stage, it
+    will return a decision to either continue sampling or terminate and
+    accept one of the specified hypotheses. For more information on the
+    SPRT t test, see Schnuerch & Erdfelder (2019) <doi:10.1037/met0000234>.
+License: GPL (>= 3)
+URL: https://meikesteinhilber.github.io/sprtt/
+BugReports: https://github.com/MeikeSteinhilber/sprtt/issues
+Depends: R (>= 3.5.0)
+Imports: methods, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), testthis, dplyr,
+        effsize
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-08-05 12:38:26 UTC; msteinhi
+Author: Meike Steinhilber [aut, cre] (<https://orcid.org/0000-0002-7144-2100>),
+  Martin Schnuerch [aut, ths] (<https://orcid.org/0000-0001-6531-2265>),
+  Anna-Lena Schubert [aut, ths] (<https://orcid.org/0000-0001-7248-0662>)
+Repository: CRAN
+Date/Publication: 2021-08-06 17:50:02 UTC

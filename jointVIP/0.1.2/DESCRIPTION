@@ -1,0 +1,47 @@
+Package: jointVIP
+Title: Prioritize Variables with Joint Variable Importance Plot in
+        Observational Study Design
+Version: 0.1.2
+Authors@R: c(person(given = "Lauren D.",
+           family = "Liao",
+           role = c("aut", "cre"),
+           email = "ldliao@berkeley.edu",
+           comment = c(ORCID = "0000-0003-4697-6909")),
+           person(given = "Samuel D.",
+           family = "Pimentel",
+           role = c("aut"),
+           email = "spi@berkeley.edu",
+           comment = c(ORCID = "0000-0002-0409-6586")))
+Description: In the observational study design stage, matching/weighting methods are
+    conducted. However, when many background variables are present, the decision as to 
+    which variables to prioritize for matching/weighting is not trivial. Thus, the 
+    joint treatment-outcome variable importance plots are created to guide variable
+    selection. The joint variable importance plots enhance variable comparisons via
+    unadjusted bias curves derived under the omitted variable bias framework. The 
+    plots translate variable importance into recommended values for tuning parameters 
+    in existing methods. Post-matching and/or weighting plots can also be used to 
+    visualize and assess the quality of the observational study design. The method 
+    motivation and derivation is presented in "Using Joint Variable Importance Plots 
+    to Prioritize Variables in Assessing the Impact of Glyburide on Adverse Birth 
+    Outcomes" by Liao et al. (2023) <arXiv:2301.09754>. See the package paper by Liao 
+    and Pimentel (2023) <arxiv:2302.10367> for a beginner friendly user introduction.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 3.3)
+Suggests: causaldata, devtools (>= 2.4.5), knitr, MatchIt, WeightIt,
+        optmatch, optweight (>= 0.2.4), rmarkdown (>= 2.18), testthat
+        (>= 3.0.0)
+Config/testthat/edition: 3
+Collate: 'measures.R' 'general.R'
+Imports: ggrepel (>= 0.9.2), ggplot2 (>= 3.4.0)
+VignetteBuilder: knitr
+URL: https://github.com/ldliao/jointVIP
+BugReports: https://github.com/ldliao/jointVIP/issues
+NeedsCompilation: no
+Packaged: 2023-03-08 18:58:16 UTC; ldliao
+Author: Lauren D. Liao [aut, cre] (<https://orcid.org/0000-0003-4697-6909>),
+  Samuel D. Pimentel [aut] (<https://orcid.org/0000-0002-0409-6586>)
+Maintainer: Lauren D. Liao <ldliao@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2023-03-08 22:00:11 UTC

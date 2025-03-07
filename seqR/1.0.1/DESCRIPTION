@@ -1,0 +1,43 @@
+Package: seqR
+Type: Package
+Title: Fast and Comprehensive K-Mer Counting Package
+Version: 1.0.1
+Date: 2021-09-27
+Authors@R: c(
+    person(given = "Jadwiga",
+           family = "Słowik",
+           role = c("aut", "cre"),
+           email = "jadwiga.slowik5@gmail.com",
+           comment = c(ORCID = "0000-0003-3466-8933")),
+    person(given = "Michał",
+           family = "Burdukiewicz",
+           role = c("ths"),
+           email = "michalburdukiewicz@gmail.com", 
+           comment = c(ORCID = "0000-0001-8926-582X"))
+    )
+Description: A fast implementation of k-mer (subsequences of length k) counting with the support for all types of biological sequences and k-mer variants.
+License: GPL (>= 3)
+Imports: Matrix, Rcpp (>= 1.0.4), RcppParallel (>= 5.1.2), rlang, slam
+Depends: R(>= 3.6)
+LinkingTo: Rcpp, RcppParallel
+Suggests: covr, ggplot2, knitr, microbenchmark, pryr, rmarkdown,
+        spelling, testthat
+VignetteBuilder: knitr
+SystemRequirements: c++17, GNU make
+NeedsCompilation: yes
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Language: en-US
+URL: https://github.com/slowikj/seqR
+BugReports: https://github.com/slowikj/seqR/issues
+LazyData: TRUE
+Collate: 'CsgA.R' 'RcppExports.R' 'atomic_validators.R' 'common.R'
+        'seqR_result.R' 'kmer_typed_functions.R'
+        'kmer_functions_provider.R' 'count_kmers.R' 'count_multimers.R'
+        'package.R' 'zzz.R'
+Packaged: 2021-09-27 16:48:12 UTC; slowik
+Author: Jadwiga Słowik [aut, cre] (<https://orcid.org/0000-0003-3466-8933>),
+  Michał Burdukiewicz [ths] (<https://orcid.org/0000-0001-8926-582X>)
+Maintainer: Jadwiga Słowik <jadwiga.slowik5@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-10-05 23:20:13 UTC

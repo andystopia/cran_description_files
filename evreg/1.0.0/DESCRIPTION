@@ -1,0 +1,22 @@
+Package: evreg
+Type: Package
+Title: Evidential Regression
+Version: 1.0.0
+Date: 2023-01-12
+Authors@R: 
+    person("Thierry", "Denoeux", , "tdenoeux@utc.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0660-5436"))
+Description: An implementation of the 'Evidential Neural Network for Regression' model recently introduced in Denoeux (2023) <doi:10.36227/techrxiv.21791831.v1>. In this model, prediction uncertainty is quantified by Gaussian random fuzzy numbers as introduced in Denoeux (2023) <doi:10.1016/j.fss.2022.06.004>. The package contains functions for training the network, tuning hyperparameters by cross-validation or the hold-out method, and making predictions. It also contains utilities for making calculations with Gaussian random fuzzy numbers (such as, e.g., computing the degrees of belief and plausibility of an interval, or combining Gaussian random fuzzy numbers).
+License: GPL-3
+Depends: R (>= 3.1.0)
+Imports: evclust,stats
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr,rmarkdown,nnet,MASS,ggplot2
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-01-15 06:19:34 UTC; Thierry
+Author: Thierry Denoeux [aut, cre] (<https://orcid.org/0000-0002-0660-5436>)
+Maintainer: Thierry Denoeux <tdenoeux@utc.fr>
+Repository: CRAN
+Date/Publication: 2023-01-17 16:40:02 UTC

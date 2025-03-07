@@ -1,0 +1,27 @@
+Package: tidytreatment
+Type: Package
+Title: Tidy Methods for Bayesian Treatment Effect Models
+Version: 0.2.1
+Authors@R: person("Joshua J", "Bon", email = "joshuajbon@gmail.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-2313-2949"))
+Description: Functions for extracting tidy data from Bayesian treatment effect models, in particular BART, but extensions are possible. Functionality includes extracting tidy posterior summaries as in 'tidybayes' <https://github.com/mjskay/tidybayes>, estimating (average) treatment effects, common support calculations, and plotting useful summaries of these.
+Encoding: UTF-8
+LazyData: true
+License: MIT + file LICENSE
+URL: https://github.com/bonStats/tidytreatment
+BugReports: https://github.com/bonStats/tidytreatment/issues
+Language: en-US
+Depends: R (>= 3.1.0)
+Suggests: knitr, rmarkdown, BART, ggplot2, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Imports: tidybayes, purrr, tidyr, dplyr, readr, rlang
+Enhances: bartMachine
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-07-26 01:40:41 UTC; joshua
+Author: Joshua J Bon [aut, cre] (<https://orcid.org/0000-0003-2313-2949>)
+Maintainer: Joshua J Bon <joshuajbon@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-07-26 06:00:02 UTC

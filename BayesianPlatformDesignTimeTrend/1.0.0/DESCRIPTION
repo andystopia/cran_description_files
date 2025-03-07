@@ -1,0 +1,44 @@
+Package: BayesianPlatformDesignTimeTrend
+Title: Simulate and Analyse Bayesian Platform Trial with Time Trend
+Version: 1.0.0
+Author: Ziyan Wang [aut, cre]
+Maintainer: Ziyan Wang <zw7g20@soton.ac.uk>
+Authors@R: 
+	person(given = "Ziyan",
+           family = "Wang",
+           role = c("aut", "cre"),
+           email = "zw7g20@soton.ac.uk")
+Description: Simulating the multi-arm multi-stage or platform trial with Bayesian approach using the 'rstan' package, which provides the R interface for the Stan. 
+    This package supports fixed ratio and Bayesian adaptive randomization approaches for randomization. 
+    Additionally, it allows for the study of time trend problems in platform trials. 
+    There are demos available for a multi-arm multi-stage trial with two different null scenarios, as well as for Bayesian trial cutoff screening.
+    The Bayesian adaptive randomisation approaches are described in:
+    Trippa et al. (2012) <doi:10.1200/JCO.2011.39.8420> and
+    Wathen et al. (2017) <doi:10.1177/1740774517692302>.
+    The randomisation algorithm is described in: 
+    Zhao W <doi:10.1016/j.cct.2015.06.008>.
+    The analysis methods of time trend effect in platform trial are described in:
+    Saville et al. (2022) <doi:10.1177/17407745221112013> and
+    Bofill Roig et al. (2022) <doi:10.1186/s12874-022-01683-w>.
+URL: https://github.com/ZXW834/PlatFormDesignTime
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Biarch: true
+Depends: R (>= 4.0.0), rstan (>= 2.18.1)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstantools
+        (>= 2.3.0), ggplot2 (>= 3.4.0), doParallel (>= 1.0.17), boot
+        (>= 1.3-28), matrixStats (>= 0.61.0), stringr (>= 1.4.0),
+        foreach (>= 1.5.1), iterators (>= 1.0.13), reshape (>= 0.8.8),
+        BiocManager (>= 1.30.19)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), StanHeaders (>= 2.18.0), rstan (>=
+        2.18.1)
+SystemRequirements: GNU make, C++17
+License: MIT + file LICENSE
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2023-03-15 12:56:05 UTC; ziyanwang
+Repository: CRAN
+Date/Publication: 2023-03-15 18:40:02 UTC

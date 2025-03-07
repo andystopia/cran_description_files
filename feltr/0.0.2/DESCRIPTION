@@ -1,0 +1,30 @@
+Package: feltr
+Title: Access the Felt API
+Version: 0.0.2
+Authors@R: 
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "christopherkenny@fas.harvard.edu",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Upload, download, and edit internet maps with the Felt API 
+    (<https://feltmaps.notion.site/Felt-Public-API-reference-c01e0e6b0d954a678c608131b894e8e1>). 
+    Allows users to create new maps, edit existing maps, and extract data.
+    Provides tools for working with layers, which represent geographic data, and elements,
+    which are interactive annotations. Spatial data accessed from the API is 
+    transformed to work with 'sf'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, curl, fs, geojsonsf, httr2, jsonlite, purrr, rlang, sf,
+        stringr, tibble
+URL: http://christophertkenny.com/feltr/
+Suggests: httptest2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-07-05 18:23:29 UTC; chris
+Author: Christopher T. Kenny [aut, cre]
+    (<https://orcid.org/0000-0002-9386-6860>)
+Maintainer: Christopher T. Kenny <christopherkenny@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2023-07-06 14:00:05 UTC

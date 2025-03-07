@@ -1,0 +1,45 @@
+Package: rmoo
+Title: Multi-Objective Optimization in R
+Version: 0.1.7
+Authors@R: 
+    c(person(given = "Francisco",
+             family = "Benitez",
+             role = c("aut", "cre"),
+             email = "benitezfj94@gmail.com"),
+      person(given = "Diego",
+             family = "Pinto Roa",
+             role = "aut",
+             email = "dpinto@pol.una.py",
+             comment = c(ORCID = "0000-0003-2479-9876")))
+Description: A multiobjective optimization package based on K. Deb's 
+    algorithm and inspired in 'GA' package by Luca Scrucca (2017) <DOI:10.32614/RJ-2017-008>. 
+    The 'rmoo' package is a framework for multi- and many-objective optimization, 
+    allowing to work with representation of real numbers, permutations and 
+    binaries, offering a high range of configurations.
+License: GPL (>= 2)
+Encoding: UTF-8
+Language: es
+LazyData: true
+RoxygenNote: 7.1.1
+Collate: 'associate.R' 'crowding_distance.R' 'data.R'
+        'generate_reference_points.R' 'geneticoperator.R'
+        'get_fixed_rowsum_integer_matrix.R' 'miscfun.R' 'niching.R'
+        'non_dominated_fronts.R' 'numberOrNAOrMatrix-class.R'
+        'nsga-class.R' 'nsga.R' 'nsga2-class.R' 'nsga2.R'
+        'nsga3-class.R' 'nsga3.R' 'nsgaControl.R'
+        'reference_point_multi_layer.R' 'rmoo.R'
+        'performance_metrics.R' 'plotting.R' 'sharing.R'
+        'update_points.R' 'zzz.R'
+Imports: stats, utils, ecr, graphics, methods, grDevices, ggplot2,
+        reshape2, dplyr, cdata, plotly
+URL: https://github.com/Evolutionary-Optimization-Laboratory/rmoo/
+BugReports: https://github.com/Evolutionary-Optimization-Laboratory/rmoo/issues/
+Suggests: testthat, covr, rgl
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-09-06 23:23:08 UTC; Fran
+Author: Francisco Benitez [aut, cre],
+  Diego Pinto Roa [aut] (<https://orcid.org/0000-0003-2479-9876>)
+Maintainer: Francisco Benitez <benitezfj94@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-09-07 04:30:02 UTC

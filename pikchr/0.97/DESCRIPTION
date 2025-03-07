@@ -1,0 +1,28 @@
+Type: Package
+Package: pikchr
+Title: R Wrapper for 'pikchr' (PIC) Diagram Language
+Version: 0.97
+Date: 2024-09-25
+Authors@R: c(
+            person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+            person("Hugo", "Vaconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+            person("Richard", "Hipp", email = "drh@sqlite.org", role = ("ctb")),
+            person("Brian", "Kernighan", role = c("ctb")))
+Description: An 'R' interface to 'pikchr' (<https://pikchr.org>, pronounced “picture”), a 'PIC'-like markup language for creating diagrams within technical documentation. Originally developed by Brian Kernighan, 'PIC' has been adapted into 'pikchr' by D. Richard Hipp, the creator of 'SQLite'. 'pikchr' is designed to be embedded in fenced code blocks of Markdown or other documentation markup languages, making it ideal for generating diagrams in text-based formats. This package allows R users to seamlessly integrate the descriptive syntax of 'pikchr' for diagram creation directly within the 'R' environment.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Imports: knitr, brio, htmltools, rlang, purrr, stringr, rsvg
+URL: <https://github.com/StrategicProjects/pikchr>
+Note: This package makes use of the 'pikchr' source code created by
+        Richard Hipp (<https://pikchr.org>).
+NeedsCompilation: yes
+Packaged: 2024-09-27 11:33:45 UTC; leite
+Author: Andre Leite [aut, cre],
+  Hugo Vaconcelos [aut],
+  Richard Hipp [ctb],
+  Brian Kernighan [ctb]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2024-09-30 16:40:02 UTC

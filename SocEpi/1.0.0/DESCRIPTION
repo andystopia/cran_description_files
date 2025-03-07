@@ -1,0 +1,28 @@
+Package: SocEpi
+Type: Package
+Title: Health Inequality Analysis
+Version: 1.0.0
+Authors@R: person("Mirjam", "Allik", email="mirjam.allik@gmail.com",
+                  role=c("aut", "cre"))
+Description: Tools for calculating deprivation measures and analysing health outcomes and mortality by deprivation.
+    Included are the functions: zscore() and w_pcntile() for developing deprivation measures and the functions smr(),
+    st_rate() and rii() for calculating standardized mortality ratios, direct standardized rates and Slope and Relative
+    indices of Inequality (SII and RII). Test data is included (dep_data and health_data).
+    The RII/SII are calculated following Pamuk ER (1985) <doi:10.1080/0032472031000141256>.
+    The confidence intervals for SII/RII are calculated using a multinomial distribution as described in Lumme et al (2015)
+    <doi:10.1007/s10742-015-0137-1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: R (>= 3.2.0)
+Imports: tidyr, dplyr, Rcpp
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-05-18 08:15:04 UTC; ma166k
+Author: Mirjam Allik [aut, cre]
+Maintainer: Mirjam Allik <mirjam.allik@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-26 14:20:06 UTC

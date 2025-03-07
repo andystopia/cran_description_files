@@ -1,0 +1,33 @@
+Package: constants
+Type: Package
+Title: Reference on Constants, Units and Uncertainty
+Version: 1.0.0
+Authors@R: c(
+    person("Iñaki", "Ucar", email="iucar@fedoraproject.org",
+      role=c("aut", "cph", "cre"), comment=c(ORCID="0000-0001-6403-5550")))
+Description: CODATA internationally recommended values of the fundamental
+    physical constants, provided as symbols for direct use within the R language.
+    Optionally, the values with uncertainties and/or units are also provided if
+    the 'errors', 'units' and/or 'quantities' packages are installed.
+    The Committee on Data for Science and Technology (CODATA) is an
+    interdisciplinary committee of the International Council for Science which
+    periodically provides the internationally accepted set of values of the
+    fundamental physical constants. This package contains the "2018 CODATA"
+    version, published on May 2019:
+    Eite Tiesinga, Peter J. Mohr, David B. Newell, and Barry N. Taylor (2020)
+    <http://physics.nist.gov/constants>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/r-quantities/constants
+BugReports: https://github.com/r-quantities/constants/issues
+Depends: R (>= 3.5.0)
+Suggests: errors (>= 0.3.6), units, quantities, testthat
+ByteCompile: yes
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-11-10 18:55:27 UTC; iucar
+Author: Iñaki Ucar [aut, cph, cre] (<https://orcid.org/0000-0001-6403-5550>)
+Maintainer: Iñaki Ucar <iucar@fedoraproject.org>
+Repository: CRAN
+Date/Publication: 2020-11-11 07:40:12 UTC

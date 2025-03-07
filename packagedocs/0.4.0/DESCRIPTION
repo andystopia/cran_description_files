@@ -1,0 +1,32 @@
+Package: packagedocs
+Title: Build Website of Package Documentation
+Version: 0.4.0
+Date: 2016-10-28
+Authors@R: c(
+    person("Ryan", "Hafen", email = "rhafen@gmail.com", role = c("aut", "cre")),
+    person("Barret", "Schloerke", email = "schloerke@gmail.com", role = c("aut")),
+    person("Hadley", "Wickham", role = c("aut", "cph"),
+      comment = "Rd munging code from staticdocs package (see comments in 'z_staticdocs' source)"
+    ))
+Description: Build a package documentation and function reference site and use it as the package vignette.
+Depends: R (>= 3.1.1)
+License: MIT + file LICENSE
+URL: http://hafen.github.io/packagedocs,
+        https://github.com/hafen/packagedocs
+BugReports: https://github.com/hafen/packagedocs/issues
+LazyData: true
+Imports: crayon, devtools, digest, evaluate, highlight, htmltools,
+        lazyrmd (>= 0.2.0), magrittr, rmarkdown, stringr, tools,
+        whisker, yaml
+Suggests: testthat
+RoxygenNote: 5.0.1
+VignetteBuilder: packagedocs
+NeedsCompilation: no
+Packaged: 2016-11-03 19:55:27 UTC; hafen
+Author: Ryan Hafen [aut, cre],
+  Barret Schloerke [aut],
+  Hadley Wickham [aut, cph] (Rd munging code from staticdocs package (see
+    comments in 'z_staticdocs' source))
+Maintainer: Ryan Hafen <rhafen@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-11-04 00:41:33

@@ -1,0 +1,20 @@
+Package: bayesGDS
+Type: Package
+Title: Scalable Rejection Sampling for Bayesian Hierarchical Models
+Version: 0.6.1
+Date: 2015-03-30
+Authors@R: person(family="Braun", given="Michael", role=c("aut","cre","cph"), email="braunm@smu.edu")
+URL: coxprofs.cox.smu.edu/braunm
+Description: Functions for implementing the Braun and Damien (2015) rejection sampling algorithm for Bayesian hierarchical models.  The algorithm generates posterior samples in parallel, and is scalable when the individual units are conditionally independent.
+License: MPL (== 2.0)
+Depends: R (>= 3.1.2), Matrix (>= 1.1.5)
+Suggests: sparseHessianFD(>= 0.2.0), sparseMVN(>= 0.2.0), mvtnorm,
+        trustOptim (>= 0.8.5), plyr (>= 1.8), dplyr, testthat, knitr,
+        R.rsp, MCMCpack
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2015-03-30 19:56:02 UTC; braunm
+Author: Michael Braun [aut, cre, cph]
+Maintainer: Michael Braun <braunm@smu.edu>
+Repository: CRAN
+Date/Publication: 2015-03-31 07:49:38

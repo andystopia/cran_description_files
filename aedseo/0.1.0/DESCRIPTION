@@ -1,0 +1,36 @@
+Package: aedseo
+Title: Automated and Early Detection of Seasonal Epidemic Onset
+Version: 0.1.0
+Authors@R: c(
+    person("Kasper", "Schou Telkamp", ,"ksst@ssi.dk", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-5126-0190")),
+    person("Statens Serum Institut, SSI", role = c("cph", "fnd"))
+    )
+Description: A powerful tool for automating the early detection of seasonal epidemic
+             onsets in time series data. It offers the ability to estimate growth rates
+             for consecutive time intervals and calculate the sum of cases (SoC) within 
+             those intervals. It is particularly useful for epidemiologists, public 
+             health professionals, and researchers seeking to identify and respond to 
+             seasonal epidemics in a timely fashion.
+             For reference on growth rate estimation, see Walling and Lipstich (2007) 
+             <doi:10.1098/rspb.2006.3754> and Obadia et al. (2012) <doi:10.1186/1472-6947-12-147>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/ssi-dk/aedseo, https://ssi-dk.github.io/aedseo/
+BugReports: https://github.com/ssi-dk/aedseo/issues
+Suggests: ISOweek, kableExtra, knitr, rmarkdown, testthat (>= 3.0.0),
+        tidyr
+Config/testthat/edition: 3
+Imports: base, dplyr, ggplot2, lifecycle, magrittr, purrr, rlang,
+        stats, tibble
+Config/Needs/website: rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-11-07 08:01:11 UTC; b280787
+Author: Kasper Schou Telkamp [aut, cre]
+    (<https://orcid.org/0009-0001-5126-0190>),
+  Statens Serum Institut, SSI [cph, fnd]
+Maintainer: Kasper Schou Telkamp <ksst@ssi.dk>
+Repository: CRAN
+Date/Publication: 2023-11-07 18:50:02 UTC

@@ -1,0 +1,59 @@
+Package: gdalraster
+Title: Bindings to the 'Geospatial Data Abstraction Library' Raster API
+Version: 1.2.0
+Authors@R: c( 
+    person("Chris", "Toney", email = "chris.toney@usda.gov",
+            role = c("aut", "cre")),
+    person("Frank", "Warmerdam", 
+            role = c("ctb", "cph"), comment = "GDAL API/documentation; src/progress_r.cpp from /gdal/port/cpl_progress.cpp"),
+    person("Even", "Rouault", 
+            role = c("ctb", "cph"), comment = "GDAL API/documentation"),
+    person("Marius", "Appel", 
+            role = c("ctb", "cph"), comment = "configure.ac based on https://github.com/appelmar/gdalcubes"),
+    person("Daniel", "James", 
+            role = c("ctb", "cph"), comment = "Boost combine hashes method"),
+    person("Peter", "Dimov", 
+            role = c("ctb", "cph"), comment = "Boost combine hashes method"))
+Description: Interface to the raster API of the 'Geospatial Data Abstraction
+    Library' ('GDAL') supporting manual creation of uninitialized datasets,
+    creation from existing raster as template, low level I/O, configuration of
+    virtual raster (VRT), coordinate transformation, and access to 'gdalwarp'
+    for reprojection. Convenience functions facilitate working with spatial
+    reference systems. Calling signatures resemble the native C, C++ and
+    Python APIs provided by the 'GDAL' project (<https://gdal.org>).
+    Bindings to 'GDAL' are implemented in class 'GDALRaster' along with
+    several stand-alone functions. Additional functionality includes: class
+    'RunningStats' for efficient summary statistics on large data streams;
+    class 'CmbTable' for counting unique combinations of integer values with a
+    hash table; a raster overlay utility to identify and count unique
+    combinations across multiple inputs; and a calculation utility for
+    evaluating an R expression on raster layers with pixel coordinates
+    available as variables. 'gdalraster' may be suitable for applications that
+    primarily need low-level raster I/O, explicit manipulation of VRT format,
+    or prefer native 'GDAL'-like calling. Additional functionality is somewhat
+    aimed at thematic data analysis but may have other utility.
+License: MIT + file LICENSE
+Copyright: See file inst/COPYRIGHTS for details.
+URL: https://usdaforestservice.github.io/gdalraster/
+BugReports: https://github.com/USDAForestService/gdalraster/issues
+Depends: R (>= 4.2.0)
+Imports: methods, tools, utils, Rcpp (>= 1.0.7)
+LinkingTo: Rcpp
+Suggests: xml2
+NeedsCompilation: yes
+SystemRequirements: GDAL (>= 2.3.0, built against GEOS), PROJ (>=
+        4.8.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Packaged: 2023-05-26 20:30:30 UTC; ctoney
+Author: Chris Toney [aut, cre],
+  Frank Warmerdam [ctb, cph] (GDAL API/documentation; src/progress_r.cpp
+    from /gdal/port/cpl_progress.cpp),
+  Even Rouault [ctb, cph] (GDAL API/documentation),
+  Marius Appel [ctb, cph] (configure.ac based on
+    https://github.com/appelmar/gdalcubes),
+  Daniel James [ctb, cph] (Boost combine hashes method),
+  Peter Dimov [ctb, cph] (Boost combine hashes method)
+Maintainer: Chris Toney <chris.toney@usda.gov>
+Repository: CRAN
+Date/Publication: 2023-05-28 23:20:07 UTC

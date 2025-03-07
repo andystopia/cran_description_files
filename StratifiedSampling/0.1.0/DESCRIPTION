@@ -1,0 +1,27 @@
+Package: StratifiedSampling
+Type: Package
+Title: Different Methods for Stratified Sampling
+Version: 0.1.0
+Authors@R: c(
+  person("Raphael", "Jauslin", email = "raphael.jauslin@unine.ch",role = c("aut", "cre"),comment = c(ORCID = "0000-0003-1088-3356")),
+  person("Esther", "Eustache", email = "esther.eustache@unine.ch",role = c("aut")),
+  person("Yves", "Tillé",role = c("aut"),comment = c(ORCID = "0000-0003-0904-5523"))
+  )
+Description: Integrating a stratified structure in the population in a sampling design can considerably reduce the variance of the Horvitz-Thompson estimator. We propose in this package different methods to handle the selection of a balanced sample in stratified population. For more details see Raphaël Jauslin, Esther Eustache and Yves Tillé (2021) <arXiv:2101.05568>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+LinkingTo: RcppArmadillo, Rcpp
+Imports: Rcpp
+Depends: Matrix, R (>= 3.5.0)
+Suggests: knitr, rmarkdown, ggplot2, sampling, BalancedSampling, MASS,
+        stats, testthat
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-01-22 09:34:23 UTC; jauslinr
+Author: Raphael Jauslin [aut, cre] (<https://orcid.org/0000-0003-1088-3356>),
+  Esther Eustache [aut],
+  Yves Tillé [aut] (<https://orcid.org/0000-0003-0904-5523>)
+Maintainer: Raphael Jauslin <raphael.jauslin@unine.ch>
+Repository: CRAN
+Date/Publication: 2021-01-26 12:20:06 UTC

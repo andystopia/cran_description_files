@@ -1,0 +1,28 @@
+Package: shiny.worker
+Type: Package
+Title: Delegate Jobs for Shiny Web Applications
+Version: 0.0.1
+Authors@R: c(person("Paweł", "Przytuła",
+                    email = "paweł@appsilon.com",
+                    role = c("aut")),
+            person("Dominik", "Krzemiński",
+                    email = "dominik@appsilon.com",
+                    role = c("cre")),
+             person(family = "Appsilon", role = c("cph"))
+           )
+Description: It allows you to delegate heavy computation tasks
+    to a separate process, such that it does not freeze your Shiny app.
+Encoding: UTF-8
+LazyData: true
+License: MIT + file LICENSE
+Imports: future, shiny, R6
+RoxygenNote: 7.1.1
+Suggests: testthat, covr
+NeedsCompilation: no
+Packaged: 2021-01-19 10:05:26 UTC; dominik
+Author: Paweł Przytuła [aut],
+  Dominik Krzemiński [cre],
+  Appsilon [cph]
+Maintainer: Dominik Krzemiński <dominik@appsilon.com>
+Repository: CRAN
+Date/Publication: 2021-01-21 11:00:02 UTC

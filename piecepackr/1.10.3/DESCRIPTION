@@ -1,0 +1,42 @@
+Encoding: UTF-8
+Package: piecepackr
+Type: Package
+Title: Board Game Graphics
+Version: 1.10.3
+Description: Functions to make board game graphics with the 'ggplot2', 'grid', 'rayrender', 'rayvertex', and 'rgl' packages.  Specializes in game diagrams, animations, and "Print & Play" layouts for the 'piecepack' <https://www.ludism.org/ppwiki> but can make graphics for other board game systems.  Includes configurations for several public domain game systems such as checkers, (double-18) dominoes, go, 'piecepack', playing cards, etc.
+Authors@R: c(person("Trevor L", "Davis", role=c("aut", "cre"), email="trevor.l.davis@gmail.com"),
+             person("Linux Foundation", role="dtc",
+                    comment = 'Uses some data from the "SPDX License List" <https://github.com/spdx/license-list-XML>'),
+             person("Delapouite <https://delapouite.com/>", role="ill",
+                     comment = 'Meeple shape extracted from "Meeple icon" <https://game-icons.net/1x1/delapouite/meeple.html> / "CC BY 3.0" <https://creativecommons.org/licenses/by/3.0/>'),
+             person("Creative Commons", role="ill",
+                    comment = '`save_print_and_play()` uses "license badges" from Creative Commons to describe the generated print-and-play file\'s license'))
+License: MIT + file LICENSE
+URL: https://trevorldavis.com/piecepackr/ (blog),
+        https://trevorldavis.com/R/piecepackr/ (pkgdown),
+        https://groups.google.com/forum/#!forum/piecepackr (forum)
+BugReports: https://github.com/piecepackr/piecepackr/issues
+LazyData: true
+LazyLoad: yes
+Imports: grid, gridGeometry, grImport2, grDevices, purrr, jpeg, png,
+        R6, rlang, stringr, tibble, tools, utils
+Suggests: animation (>= 2.7), ggplot2, gifski, gridpattern, magick,
+        rayrender (>= 0.5.8), rayvertex (>= 0.3.3), readobj (>= 0.4.0),
+        rgl (>= 0.106.8), systemfonts, testthat, tweenr, vdiffr
+SystemRequirements: ghostscript
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-03-22 21:17:17 UTC; trevorld
+Author: Trevor L Davis [aut, cre],
+  Linux Foundation [dtc] (Uses some data from the "SPDX License List"
+    <https://github.com/spdx/license-list-XML>),
+  Delapouite <https://delapouite.com/> [ill] (Meeple shape extracted from
+    "Meeple icon" <https://game-icons.net/1x1/delapouite/meeple.html> /
+    "CC BY 3.0" <https://creativecommons.org/licenses/by/3.0/>),
+  Creative Commons [ill] (`save_print_and_play()` uses "license badges"
+    from Creative Commons to describe the generated print-and-play
+    file's license)
+Maintainer: Trevor L Davis <trevor.l.davis@gmail.com>
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2022-03-22 21:50:02 UTC

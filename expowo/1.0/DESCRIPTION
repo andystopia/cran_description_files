@@ -1,0 +1,37 @@
+Type: Package
+Package: expowo
+Title: Data Mining of Plant Diversity and Distribution for R
+Version: 1.0
+Authors@R: 
+    c(person(given = "Debora",
+             family = "Zuanny",
+             role = c("aut", "cre", "cph"),
+             email = "deborazuanny@gmail.com",
+             comment = c(ORCID = "0000-0001-6623-3788")),
+      person(given = "Domingos",
+             family = "Cardoso",
+             role = c("aut", "ctb", "cph"),
+             email = "cardosobot@gmail.com",
+             comment = c(ORCID = "0000-0001-7072-2656")))
+Maintainer: Debora Zuanny <deborazuanny@gmail.com>
+Description: Produces diversity estimates and species lists with associated global distribution for any angiosperm family and genus from 'Plants of the World Online' database <https://powo.science.kew.org/>, by interacting with the source code of each plant taxon page, and creates global maps of species richness.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: RColorBrewer, dplyr, magrittr, data.table, ggplot2,
+        rnaturalearth, sp, sf, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://dboslab.github.io/expowo/,
+        https://github.com/dboslab/expowo
+BugReports: https://github.com/DBOSlab/expowo/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-22 02:06:06 UTC; Domingos
+Author: Debora Zuanny [aut, cre, cph] (<https://orcid.org/0000-0001-6623-3788>),
+  Domingos Cardoso [aut, ctb, cph]
+    (<https://orcid.org/0000-0001-7072-2656>)
+Repository: CRAN
+Date/Publication: 2023-02-22 15:10:08 UTC

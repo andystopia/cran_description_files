@@ -1,0 +1,25 @@
+Package: convertid
+Type: Package
+Title: Convert Gene IDs Between Each Other and Fetch Annotations from
+        Biomart
+Version: 0.1.1
+Date: 2021-08-20
+Author: Vidal Fey [aut, cre],
+  Henrik Edgren [aut]
+Authors@R: c(person("Vidal", "Fey", email = "vidal.fey@gmail.com", role=c("aut", "cre")), person("Henrik", "Edgren", email = "henrik.edgren@gmail.com", role = "aut"))
+Maintainer: Vidal Fey <vidal.fey@gmail.com>
+Description: Gene Symbols or Ensembl Gene IDs are converted using the Bimap interface in 'AnnotationDbi' in convertId2() but
+    that function is only provided as fallback mechanism for the most common use cases in data analysis. The main function
+    in the package is convert.bm() which queries BioMart using the full capacity of the API provided through the
+    'biomaRt' package. Presets and defaults are provided for convenience but all "marts", "filters" and "attributes"
+    can be set by the user. Function convert.alias() converts Gene Symbols to Aliases and vice versa.
+Depends: AnnotationDbi
+Imports: org.Hs.eg.db, org.Mm.eg.db, plyr, stringr, biomaRt, stats,
+        xml2
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-08-20 10:35:35 UTC; fsvife
+Repository: CRAN
+Date/Publication: 2021-08-21 09:30:06 UTC

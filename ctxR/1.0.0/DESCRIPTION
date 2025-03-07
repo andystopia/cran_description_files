@@ -1,0 +1,51 @@
+Type: Package
+Package: ctxR
+Title: Utilities for Interacting with the 'CTX' APIs
+Version: 1.0.0
+Authors@R: c(
+            person("Paul", "Kruse", email = "kruse.paul@epa.gov", 
+              role = c("aut", "cre"), 
+              comment = c(ORCID = "0000-0001-5516-9717")),
+    	      person("Caroline", "Ring", email = "ring.caroline@epa.gov", 
+    	        role = c("aut"), 
+    	        comment = c(ORCID = "0000-0002-0463-1251")),
+	          person("Madison", "Feshuk", role = "ctb", 
+	            email = "feshuk.madison@epa.gov", 
+	            comment = c(ORCID = "0000-0002-1390-6405")),
+	          person("Carter", "Thunes", role = "ctb", 
+	            email = "thunes.carter@epa.gov"),
+    	      person("Jason", "Brown", role = "ctb", 
+    	        email = "brown.jason@epa.gov")
+    	        )
+Description: Access chemical, hazard, bioactivity, and exposure data from the 
+   Computational Toxicology and Exposure ('CTX') APIs 
+   <https://api-ccte.epa.gov/docs/>. 'ctxR' was developed to streamline the 
+   process of accessing the information available through the 'CTX' APIs 
+   without requiring prior knowledge of how to use APIs. Most data is also 
+   available on the CompTox Chemical Dashboard ('CCD') 
+   <https://comptox.epa.gov/dashboard/> and other resources found at the 
+   EPA Computational Toxicology and Exposure Online Resources 
+   <https://www.epa.gov/comptox-tools>. 
+License: GPL (>= 3)
+Imports: cli, data.table, httr, jsonlite, purrr, rlang, stringr, tidyr,
+        tibble, urltools
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: countcolors, devtools, DT, ggplot2, gridExtra, httptest,
+        knitr, prettydoc, rmarkdown, testthat (>= 3.0.0), XML
+URL: https://github.com/USEPA/ctxR
+BugReports: https://github.com/USEPA/ctxR/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2024-07-03 12:20:29 UTC; PKRUSE
+Author: Paul Kruse [aut, cre] (<https://orcid.org/0000-0001-5516-9717>),
+  Caroline Ring [aut] (<https://orcid.org/0000-0002-0463-1251>),
+  Madison Feshuk [ctb] (<https://orcid.org/0000-0002-1390-6405>),
+  Carter Thunes [ctb],
+  Jason Brown [ctb]
+Maintainer: Paul Kruse <kruse.paul@epa.gov>
+Repository: CRAN
+Date/Publication: 2024-07-04 16:40:02 UTC

@@ -1,0 +1,42 @@
+Package: GreedyExperimentalDesign
+Type: Package
+Title: Greedy Experimental Design Construction
+Version: 1.4
+Date: 2020-12-07
+Author: Adam Kapelner, David Azriel and Abba M. Krieger
+Maintainer: Adam Kapelner <kapelner@qc.cuny.edu>
+Description: Computes experimental designs for a
+    two-arm experiment with covariates via a number of methods. 
+    (0) complete randomization and randomization with forced-balance.
+    (1) Greedily optimizing a
+    balance objective function via pairwise switching. This optimization 
+    provides lower variance for the treatment effect estimator (and higher 
+    power) while preserving a design that is close to complete randomization.
+    We return all iterations of the designs for use in a permutation test.
+    (2) The second is via numerical optimization 
+    (via 'gurobi' which must be installed, see <https://www.gurobi.com/documentation/9.1/quickstart_windows/r_ins_the_r_package.html>) 
+    a la Bertsimas and Kallus. 
+    (3) rerandomization, 
+    (4) Karp's method for one covariate, 
+    (5) exhaustive enumeration to find the 
+    optimal solution (only for small sample sizes)
+    (6) Binary pair matching using the 'nbpMatching' library
+    (7) Binary pair matching plus (1) to further optimize balance
+    (8) Binary pair matching plus (3) to further optimize balance
+    (9) Hadamard designs
+    We also allow for three objective functions:
+    Mahalanobis distance,
+    Sum of absolute differences standardized and
+    Kernel distances via the 'kernlab' library.
+License: GPL-3
+Depends: R (>= 3.2.0), rJava (>= 0.9-6), GreedyExperimentalDesignJARs
+        (>= 1.0)
+SystemRequirements: Java (>= 7.0)
+LinkingTo: Rcpp
+Imports: Rcpp, checkmate, nbpMatching, survey, kernlab, graphics,
+        grDevices, stats
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2020-12-07 15:01:43 UTC; kapel
+Repository: CRAN
+Date/Publication: 2020-12-07 16:30:06 UTC

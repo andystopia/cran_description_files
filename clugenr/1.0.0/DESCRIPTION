@@ -1,0 +1,32 @@
+Package: clugenr
+Title: Multidimensional Cluster Generation Using Support Lines
+Version: 1.0.0
+Authors@R: 
+    person(given = "Nuno",
+           family = "Fachada",
+           role = c("aut", "cre", "cph"),
+           email = "faken@fakenmc.com",
+           comment = c(ORCID = "0000-0002-8487-5837"))
+Description: An implementation of the clugen algorithm for generating
+    multidimensional clusters with arbitrary distributions. Each cluster is
+    supported by a line segment, the position, orientation and length of which
+    guide where the respective points are placed. This package is described in
+    Fachada & de Andrade (2023) <doi:10.1016/j.knosys.2023.110836>.
+Depends: R (>= 3.6.0)
+Imports: mathjaxr
+Suggests: devtools, ggplot2, knitr, lintr, patchwork, rgl, rmarkdown,
+        roxygen2, testthat (>= 3.0.0)
+RdMacros: mathjaxr
+License: MIT + file LICENSE
+URL: https://github.com/clugen/clugenr
+BugReports: https://github.com/clugen/clugenr/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-08-07 15:17:52 UTC; nuno
+Author: Nuno Fachada [aut, cre, cph] (<https://orcid.org/0000-0002-8487-5837>)
+Maintainer: Nuno Fachada <faken@fakenmc.com>
+Repository: CRAN
+Date/Publication: 2023-08-07 15:50:23 UTC

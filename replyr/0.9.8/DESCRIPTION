@@ -1,0 +1,37 @@
+Package: replyr
+Type: Package
+Title: Patches to Use 'dplyr' on Remote Data Sources
+Version: 0.9.8
+Date: 2018-09-18
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person("Nina", "Zumel", email = "nzumel@win-vector.com", role = c("aut")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+Maintainer: John Mount <jmount@win-vector.com>
+URL: https://github.com/WinVector/replyr/,
+        https://winvector.github.io/replyr/
+BugReports: https://github.com/WinVector/replyr/issues
+Description: Patches to use 'dplyr' on remote data sources ('SQL' databases,
+   'Spark' 2.0.0 and above) in a reliable "generic" fashion (generic meaning
+   user code works similarly on all such sources, without needing per-source
+   adaption).  Due to the fluctuating nature of 'dplyr'/'dbplyr'/'rlang' 'APIs' this package
+   is going into maintenance mode.  Most of the 'replyr' functions are already 
+   done better by one of the non-monolithic replacement packages: 'wrapr', 'seplyr', 'rquery',
+   or 'cdata'.
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 3.4.0), wrapr (>= 1.6.2)
+Imports: dplyr (>= 0.7.0), rlang (>= 0.2.0), DBI
+RoxygenNote: 6.1.0
+Suggests: testthat, knitr, rmarkdown, sparklyr, ggplot2, igraph,
+        DiagrammeR, RSQLite
+VignetteBuilder: knitr
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2018-09-19 01:35:12 UTC; johnmount
+Author: John Mount [aut, cre],
+  Nina Zumel [aut],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2018-09-19 05:40:03 UTC

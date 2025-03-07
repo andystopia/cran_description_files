@@ -1,0 +1,39 @@
+Package: inlpubs
+Title: USGS INL Project Office Publications
+Version: 1.0.2
+Authors@R: person(given = c("Jason", "C."),
+                  family = "Fisher", role=c("aut", "cre"),
+                  email = "jfisher@usgs.gov",
+                  comment = c(ORCID="0000-0001-9032-8912"))
+Description: Contains bibliographic information for the U.S. Geological Survey
+    (USGS) Idaho National Laboratory (INL) Project Office.
+Depends: R (>= 3.6.0)
+Imports: checkmate, stats, tm
+Suggests: covr, DT, graphics, inlmisc, kableExtra, knitr, pkgdown,
+        rmarkdown, RWeka, stringi, textutils, testthat, tools, usethis,
+        utils
+License: CC0
+URL: https://code.usgs.gov/inl/inlpubs
+BugReports: https://code.usgs.gov/inl/inlpubs/-/issues
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the United States
+        Geological Survey (USGS), an agency of the United States
+        Department of Interior. For more information, see the official
+        USGS copyright policy at
+        https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+Encoding: UTF-8
+VignetteBuilder: knitr
+SystemRequirements: Package vignettes require pandoc
+        (https://pandoc.org/) and phantomjs (https://phantomjs.org/).
+        Text mining using n-grams requires Amazon Corretto
+        (https://aws.amazon.com/corretto/).
+BuildVignettes: true
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-01-13 03:15:51 UTC; jfisher
+Author: Jason C. Fisher [aut, cre] (<https://orcid.org/0000-0001-9032-8912>)
+Maintainer: Jason C. Fisher <jfisher@usgs.gov>
+Repository: CRAN
+Date/Publication: 2022-01-13 18:52:46 UTC

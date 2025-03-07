@@ -1,0 +1,40 @@
+Package: metapack
+Type: Package
+Title: Bayesian Meta-Analysis and Network Meta-Analysis
+Version: 0.1.0
+Date: 2021-02-06
+Authors@R: c(
+	person("Daeyoung", "Lim", email = "daeyoung.lim@uconn.edu",
+	role = c("aut", "cre")),
+	person("Ming-Hui", "Chen", email = "ming-hui.chen@uconn.edu",
+	role = "ctb"),
+	person("Sungduk", "Kim", email = "kims2@mail.nih.gov",
+	role = "ctb"),
+	person("Joseph", "Ibrahim", email = "ibrahim@bios.unc.edu",
+	role = "ctb"),
+	person("Arvind", "Shah", email = "arvind_shah@merck.com", role = "ctb"),
+	person("Jianxin", "Lin", email = "jianxin_lin@merck.com", role = "ctb"))
+Description: Contains functions performing Bayesian inference for meta-analytic and network meta-analytic models through Markov chain Monte Carlo algorithm. Currently, the package implements Yao, Kim, Chen, Ibrahim, Shah, and Jianxin Lin (2015) <doi:10.1080/01621459.2015.1006065> and network meta-regression models using heavy-tailed multivariate random effects with covariate-dependent variances. For maximal computational efficiency, the Markov chain Monte Carlo samplers for each model, written in C++, are fine-tuned. This software has been developed under the auspices of the National Institutes of Health and Merck & Co., Inc., Kenilworth, NJ, USA.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Imports: Rcpp, ggplot2, methods, gridExtra
+Depends: R (>= 3.4)
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress, BH
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: http://merlot.stat.uconn.edu/packages/metapack/
+BugReports: https://github.com/daeyounglim/metapack/issues
+Packaged: 2021-02-15 18:00:20 UTC; dal18007
+Author: Daeyoung Lim [aut, cre],
+  Ming-Hui Chen [ctb],
+  Sungduk Kim [ctb],
+  Joseph Ibrahim [ctb],
+  Arvind Shah [ctb],
+  Jianxin Lin [ctb]
+Maintainer: Daeyoung Lim <daeyoung.lim@uconn.edu>
+Repository: CRAN
+Date/Publication: 2021-02-17 10:00:02 UTC

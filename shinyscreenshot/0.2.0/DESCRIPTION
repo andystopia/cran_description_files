@@ -1,0 +1,34 @@
+Package: shinyscreenshot
+Title: Capture Screenshots of Entire Pages or Parts of Pages in 'Shiny'
+Version: 0.2.0
+Authors@R: c(
+    person("Dean", "Attali",
+        email = "daattali@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID="0000-0002-5645-3493")),
+    person("Niklas", "von Hertzen", email = "niklasvh@gmail.com",
+        role = c("aut"), comment = "html2canvas library"),
+    person("Eli", "Grey", email = "~@eligrey.com",
+        role = c("aut"), comment = "FileSaver library")
+    )
+Description: Capture screenshots in 'Shiny' applications. Screenshots can either be
+    of the entire viewable page, or a specific section of the page. The captured
+    image is automatically downloaded as a PNG image, or it can also be saved on
+    the server. Powered by the 'html2canvas' JavaScript library.
+URL: https://github.com/daattali/shinyscreenshot
+        https://daattali.com/shiny/shinyscreenshot-demo/
+BugReports: https://github.com/daattali/shinyscreenshot/issues
+Depends: R (>= 3.1.0)
+Imports: base64enc, jsonlite, shiny (>= 1.0.0), uuid
+Suggests: timevis
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-12-20 21:34:01 UTC; Dean-X1C
+Author: Dean Attali [aut, cre] (<https://orcid.org/0000-0002-5645-3493>),
+  Niklas von Hertzen [aut] (html2canvas library),
+  Eli Grey [aut] (FileSaver library)
+Maintainer: Dean Attali <daattali@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-12-20 21:50:02 UTC

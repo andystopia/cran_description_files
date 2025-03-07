@@ -1,0 +1,35 @@
+Package: mmetrics
+Type: Package
+Title: Easy Computation of Marketing Metrics with Different Analysis
+        Axis
+Version: 0.3.0
+Authors@R: c(
+  person("Shinichi", "Takayanagi", , "shinichi.takayanagi@gmail.com", role = c("aut", "cre")),
+  person("Nagi", "Teramo", , "teramonagi@gmail.com", role = c("aut")),
+  person("Takahiro", "Yoshinaga", , "t.yoshinaga0106@gmail.com", role = c("aut")),
+  person("Yanjin", "Li", , "yanjin0501@gmail.com", role = c("aut"))
+  )
+Description: Provides a mechanism for easy computation of marketing metrics.
+  By default in this package, metrics for digital marketing (e.g. CTR (Click Through Rate), CVR (Conversion Rate), CPC (Cost Per Click) etc) are calculated but you can define your own metrics easily.
+  In addition to that, you can change an analysis axis to calculate these metrics.
+URL: https://github.com/y-bar/mmetrics
+BugReports: https://github.com/y-bar/mmetrics/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.1.0)
+Imports: magrittr, dplyr, purrr, stringr, rlang, ggplot2
+Suggests: covr, devtools, testthat, knitr, rmarkdown
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Collate: 'data.R' 'disaggregate.R' 'mmetrics.R' 'metrics_definition.R'
+        'mplot.R'
+NeedsCompilation: no
+Packaged: 2019-07-26 08:42:04 UTC; JP22285
+Author: Shinichi Takayanagi [aut, cre],
+  Nagi Teramo [aut],
+  Takahiro Yoshinaga [aut],
+  Yanjin Li [aut]
+Maintainer: Shinichi Takayanagi <shinichi.takayanagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-26 08:50:02 UTC

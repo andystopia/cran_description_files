@@ -1,0 +1,29 @@
+Package: graphicalEvidence
+Type: Package
+Title: Graphical Evidence
+Version: 1.0
+Date: 2024-10-07
+Authors@R: person(given = "David",
+                    family = "Rowe",
+                    role = c("aut", "cre"),
+                    email = "david@rowe-stats.com")
+Maintainer: David Rowe <david@rowe-stats.com>
+Description: Computes marginal likelihood in Gaussian graphical models through a
+  novel telescoping block decomposition of the precision matrix which allows
+  estimation of model evidence. The top level function used to estimate marginal
+  likelihood is called evidence, which expects the prior name, data, and
+  relevant prior specific parameters. This package also provides an MCMC prior
+  sampler using the same underlying approach, implemented in prior_sampling,
+  which expects a prior name and prior specific parameters. Both functions also
+  expect the number of burn-in iterations and the number of sampling iterations
+  for the underlying MCMC sampler.
+License: GPL-3
+Imports: Rcpp, parallel, doParallel, foreach, mvtnorm
+LinkingTo: Rcpp, RcppArmadillo
+StagedInstall: true
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-10-22 17:44:56 UTC; dprow
+Author: David Rowe [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-10-25 07:30:06 UTC

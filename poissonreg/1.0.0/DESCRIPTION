@@ -1,0 +1,35 @@
+Package: poissonreg
+Title: Model Wrappers for Poisson Regression
+Version: 1.0.0
+Authors@R: c(
+    person("Max", "Kuhn", , "max@rstudio.com", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2402-136X")),
+    person("Hannah", "Frick", , "hannah@rstudio.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6049-5258")),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: Bindings for Poisson regression models for use with the
+    'parsnip' package. Models include simple generalized linear models,
+    Bayesian models, and zero-inflated Poisson models (Zeileis, Kleiber,
+    and Jackman (2008) <doi:10.18637/jss.v027.i08>).
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/poissonreg,
+        https://poissonreg.tidymodels.org/
+BugReports: https://github.com/tidymodels/poissonreg/issues
+Depends: parsnip (>= 0.2.0), R (>= 3.4)
+Imports: dplyr, generics, glue, purrr, rlang, stats, tibble, tidyr
+Suggests: covr, pscl, spelling, testthat (>= 3.0.0)
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-06-14 10:52:01 UTC; hannah
+Author: Max Kuhn [aut] (<https://orcid.org/0000-0003-2402-136X>),
+  Hannah Frick [aut, cre] (<https://orcid.org/0000-0002-6049-5258>),
+  RStudio [cph, fnd]
+Maintainer: Hannah Frick <hannah@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-06-15 08:20:02 UTC

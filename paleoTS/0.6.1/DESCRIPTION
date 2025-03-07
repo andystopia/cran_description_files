@@ -1,0 +1,26 @@
+Package: paleoTS
+Title: Analyze Paleontological Time-Series
+Version: 0.6.1
+Authors@R: c(
+    person("Gene", "Hunt", email = "hunte@si.edu", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-6430-5020")),
+    person("John", "Fricks", email = "jfricks@asu.edu", role = "ctb") )
+Description: Facilitates analysis of paleontological sequences of trait values.  
+    Functions are provided to fit, using maximum likelihood, simple 
+    evolutionary models (including unbiased random walks, directional 
+    evolution,stasis, Ornstein-Uhlenbeck, covariate-tracking) and 
+    complex models (punctuation, mode shifts).
+Depends: R (>= 3.4.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: mnormt, foreach, parallel, doParallel
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-05 13:52:36 UTC; hunte
+Author: Gene Hunt [aut, cre, cph] (<https://orcid.org/0000-0001-6430-5020>),
+  John Fricks [ctb]
+Maintainer: Gene Hunt <hunte@si.edu>
+Repository: CRAN
+Date/Publication: 2024-06-06 16:30:02 UTC

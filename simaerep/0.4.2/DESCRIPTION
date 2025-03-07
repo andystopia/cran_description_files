@@ -1,0 +1,37 @@
+Package: simaerep
+Title: Find Clinical Trial Sites Under-Reporting Adverse Events
+Version: 0.4.2
+Authors@R: c(
+    person(given = "Bjoern",
+           family = "Koneswarakantha",
+           role = c("aut", "cre", "cph"),
+           email = "bjoern.koneswarakantha@roche.com",
+           comment = c(ORCID = "0000-0003-4585-7799")),
+    person("F. Hoffmann-La Roche Ltd",
+           role = c("cph"))
+  )
+Description: Monitoring of Adverse Event (AE) reporting in clinical trials is 
+  important for patient safety. Sites that are under-reporting AEs can be detected 
+  using Bootstrap-based simulations that simulate overall AE reporting. Based on the 
+  simulation an AE under-reporting probability is assigned to each site in a 
+  given trial (Koneswarakantha 2021 <doi:10.1007/s40264-020-01011-5>).
+URL: https://openpharma.github.io/simaerep/,
+        https://github.com/openpharma/simaerep
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0), ggplot2
+Imports: dplyr (>= 1.0.0), tidyr (>= 1.1.0), magrittr, purrr, rlang,
+        stringr, forcats, cowplot, RColorBrewer, furrr (>= 0.2.1),
+        progressr, knitr, tibble
+Suggests: testthat, devtools, pkgdown, spelling, haven, vdiffr, lintr
+RoxygenNote: 7.2.0
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-24 16:59:55 UTC; koneswab
+Author: Bjoern Koneswarakantha [aut, cre, cph]
+    (<https://orcid.org/0000-0003-4585-7799>),
+  F. Hoffmann-La Roche Ltd [cph]
+Maintainer: Bjoern Koneswarakantha <bjoern.koneswarakantha@roche.com>
+Repository: CRAN
+Date/Publication: 2023-02-25 06:50:02 UTC

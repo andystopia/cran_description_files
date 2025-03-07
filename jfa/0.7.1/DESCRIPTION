@@ -1,0 +1,49 @@
+Package: jfa
+Title: Statistical Methods for Auditing
+Version: 0.7.1
+Date: 2024-03-07
+Authors@R: 
+    person(given = "Koen",
+           family = "Derks",
+           role = c("aut", "cre"),
+           email = "k.derks@nyenrode.nl",
+           comment = c(ORCID = '0000-0002-5533-9349'))
+Description: Provides statistical methods for auditing as implemented in JASP
+    for Audit (Derks et al., 2021 <doi:10.21105/joss.02733>). First, the package
+    makes it easy for an auditor to plan a statistical sample, select the sample
+    from the population, and evaluate the misstatement in the sample compliant
+    with international auditing standards. Second, the package provides
+    statistical methods for auditing data, including tests of digit
+    distributions and repeated values. Finally, the package includes methods for
+    auditing algorithms on the aspect of fairness and bias. Next to classical
+    statistical methodology, the package implements Bayesian equivalents of
+    these methods whose statistical underpinnings are described in Derks et al.
+    (2021) <doi:10.1111/ijau.12240>, Derks et al. (2021)
+    <doi:10.31234/osf.io/kzqp5>, and Derks et al. (2022)
+    <doi:10.31234/osf.io/8nf3e>.
+Depends: R (>= 3.5.0)
+Imports: bde (>= 1.0.1.1), extraDistr (>= 1.9.1), ggplot2 (>= 3.4.2),
+        methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.26.0), rstantools (>= 2.2.0), stats, truncdist (>= 1.0-2)
+Suggests: benford.analysis (>= 0.1.5), BenfordTests (>= 1.2.0),
+        BeyondBenford (>= 1.4), fairness, knitr, MUS (>= 0.1.6),
+        rmarkdown, samplingbook (>= 1.2.4), testthat
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.26.0)
+VignetteBuilder: knitr
+URL: https://koenderks.github.io/jfa/, https://github.com/koenderks/jfa
+BugReports: https://github.com/koenderks/jfa/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+SystemRequirements: C++17, GNU make
+Language: en-US
+RoxygenNote: 7.3.1
+Biarch: true
+Packaged: 2024-03-07 12:56:07 UTC; koenderks
+Author: Koen Derks [aut, cre] (<https://orcid.org/0000-0002-5533-9349>)
+Maintainer: Koen Derks <k.derks@nyenrode.nl>
+Repository: CRAN
+Date/Publication: 2024-03-07 13:20:03 UTC

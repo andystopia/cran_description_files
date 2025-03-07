@@ -1,0 +1,38 @@
+Package: batchmix
+Type: Package
+Title: Semi-Supervised Bayesian Mixture Models Incorporating Batch
+        Correction
+License: GPL-3
+Version: 2.2.0
+Authors@R: c(person(given = "Stephen", family = "Coleman",
+                    email = "stcolema@tcd.ie",
+                    role = c("aut","cre")),
+             person(given = "Paul", family ="Kirk",
+                    email = "paul.kirk@mrc-bsu.cam.ac.uk",
+                    role = "aut"),
+             person(given = "Chris", family ="Wallace",
+                    email = "cew54@cam.ac.uk",
+                    role = "aut"))
+Description: Semi-supervised and unsupervised Bayesian mixture models that
+  simultaneously infer the cluster/class structure and a batch correction.
+  Densities available are the multivariate normal and the multivariate t.
+  The model sampler is implemented in C++. This package is aimed at analysis of
+  low-dimensional data generated across several batches. See Coleman et al.
+  (2022) <doi:10.1101/2022.01.14.476352> for details of the model.
+Imports: Rcpp (>= 1.0.5), tidyr, ggplot2, salso
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: xml2, knitr, rmarkdown
+SystemRequirements: GNU make
+Encoding: UTF-8
+URL: https://github.com/stcolema/batchmix
+BugReports: https://github.com/stcolema/batchmix/issues
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: yes
+Packaged: 2024-04-18 15:09:53 UTC; colemste
+Author: Stephen Coleman [aut, cre],
+  Paul Kirk [aut],
+  Chris Wallace [aut]
+Maintainer: Stephen Coleman <stcolema@tcd.ie>
+Repository: CRAN
+Date/Publication: 2024-04-18 15:42:37 UTC

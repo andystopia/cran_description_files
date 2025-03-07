@@ -1,0 +1,36 @@
+Type: Package
+Package: gtfs2gps
+Title: Converting Transport Data from GTFS Format to GPS-Like Records
+Version: 2.1-0
+Authors@R: c(person(given="Rafael H. M.", family="Pereira", email="rafa.pereira.br@gmail.com", role="aut", comment = c(ORCID = "0000-0003-2125-7465")),
+            person(given="Pedro R.", family="Andrade", email="pedro.andrade@inpe.br", role=c("aut", "cre"), comment = c(ORCID = "0000-0001-8675-4046")),
+            person(given="Joao", family="Bazzo", role="aut", comment = c(ORCID = "0000-0003-4536-5006")),
+            person(given = "Daniel", family = "Herszenhut", role = "ctb", email = "dhersz@gmail.com", comment = c(ORCID = "0000-0001-8066-1105")),
+            person(given="Marcin", family="Stepniak", role="ctb"),
+            person(given="Marcus", family="Saraiva", email="marcus.saraiva@gmail.com", role="ctb", comment = c(ORCID = "0000-0001-6218-2338")),
+            person("Ipea - Institue for Applied Economic Research", role = c("cph", "fnd")))
+Date: 2022-08-05
+URL: https://github.com/ipeaGIT/gtfs2gps
+BugReports: https://github.com/ipeaGIT/gtfs2gps/issues
+Description: Convert general transit feed specification (GTFS) data to global positioning system (GPS) records in 'data.table' format. It also has some functions to subset GTFS data in time and space and to convert both representations to simple feature format.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Suggests: magrittr, rmarkdown, markdown, knitr, testthat, dplyr, bit64
+Imports: data.table, furrr, future, gtfstools, Rcpp, units, sf, terra,
+        sfheaders, progressr, lwgeom, checkmate
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2022-08-16 16:47:13 UTC; pedro
+Author: Rafael H. M. Pereira [aut] (<https://orcid.org/0000-0003-2125-7465>),
+  Pedro R. Andrade [aut, cre] (<https://orcid.org/0000-0001-8675-4046>),
+  Joao Bazzo [aut] (<https://orcid.org/0000-0003-4536-5006>),
+  Daniel Herszenhut [ctb] (<https://orcid.org/0000-0001-8066-1105>),
+  Marcin Stepniak [ctb],
+  Marcus Saraiva [ctb] (<https://orcid.org/0000-0001-6218-2338>),
+  Ipea - Institue for Applied Economic Research [cph, fnd]
+Maintainer: Pedro R. Andrade <pedro.andrade@inpe.br>
+Repository: CRAN
+Date/Publication: 2022-08-16 18:00:02 UTC

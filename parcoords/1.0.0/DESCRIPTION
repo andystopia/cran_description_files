@@ -1,0 +1,45 @@
+Package: parcoords
+Title: 'Htmlwidget' for 'd3.js' Parallel Coordinates Chart
+Version: 1.0.0
+Date: 2019-05-13
+Authors@R: c(
+    person("Mike", "Bostock", role = c("aut", "cph"), comment =
+      "d3.js library in htmlwidgets/lib, http://d3js.org"),
+    person("Kai", "Chang",role = c( "aut","cph" ), comment = "parallel coordinates reusable chart,
+      https://github.com/syntagmatic/parallel-coordinates"),
+    person("Xing", "Yun", role = c( "aut","cph" ), comment = "'es6' parallel coordinates,
+      https://github.com/BigFatDog/parcoords-es"),
+    person("Kenton","Russell", role = c("aut","cre"), comment = "R interface",
+      email = "kent.russell@timelyportfolio.com"),
+    person("Anobel","Odisho", role = c("aut"), comment = "R interface guidance, suggestions, testing, review, and feedback",
+      email = "Anobel.Odisho@ucsf.edu"),
+    person("Mark","Albrecht",role = c("ctb"),comment = "Shiny output and example",
+      email="malbrech@nmdp.org")
+  )
+Maintainer: Kenton Russell <kent.russell@timelyportfolio.com>
+Description: Create interactive parallel coordinates charts with this 'htmlwidget'
+    wrapper for 'd3.js' <https://github.com/BigFatDog/parcoords-es>
+    {'parallel-coordinates'}.
+URL: https://github.com/timelyportfolio/parcoords
+BugReports: https://github.com/timelyportfolio/parcoords/issues
+Depends: R (>= 3.2.0)
+License: MIT + file LICENSE
+LazyData: true
+Imports: crosstalk, htmlwidgets (>= 0.6.0), utils
+Suggests: d3r, ggplot2, htmltools, knitr, shiny, testthat, rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-22 03:29:18 UTC; kentr
+Author: Mike Bostock [aut, cph] (d3.js library in htmlwidgets/lib,
+    http://d3js.org),
+  Kai Chang [aut, cph] (parallel coordinates reusable chart,
+    https://github.com/syntagmatic/parallel-coordinates),
+  Xing Yun [aut, cph] ('es6' parallel coordinates,
+    https://github.com/BigFatDog/parcoords-es),
+  Kenton Russell [aut, cre] (R interface),
+  Anobel Odisho [aut] (R interface guidance, suggestions, testing,
+    review, and feedback),
+  Mark Albrecht [ctb] (Shiny output and example)
+Repository: CRAN
+Date/Publication: 2019-05-24 13:10:03 UTC

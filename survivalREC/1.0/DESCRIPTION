@@ -1,0 +1,69 @@
+Package: survivalREC
+Type: Package
+Title: Nonparametric Estimation of the Distribution of Gap Times for
+        Recurrent Events
+Version: 1.0
+Date: 2022-03-09
+Authors@R: c(
+	person(
+		given = "Gustavo",
+		family = "Soutinho",
+		role = c("aut", "cre"),
+		email = "gustavosoutinho@sapo.pt",
+		comment = c(ORCID = "0000-0002-0559-1327")
+	),
+	person(
+		given = "Luis",
+		family = "Meira-Machado",
+		role = "aut",
+		email = "lmachado@math.uminho.pt",
+		comment = c(ORCID = "0000-0002-8577-7665")
+	),
+		person(
+    given = "Artur",
+    family = "Araujo",
+    role = "ctb",
+    email = "artur.stat@gmail.com",
+    comment = c(ORCID = "0000-0003-1419-4208")
+	),
+	person(
+    given = "Ana",
+    family = "Moreira",
+    role = "ctb",
+    email = "a.moreira.cris@gmail.com",
+    comment = c(ORCID = "")
+	)
+	)
+Description: Provides estimates for the bivariate and trivariate distribution 
+             functions and bivariate and trivariate survival functions for 
+             censored gap times. Two approaches, using existing methodologies, 
+             are considered: (i) the Lin's estimator, which is based on the 
+             extension the Kaplan-Meier estimator of the distribution function 
+             for the first event time and the Inverse Probability of Censoring 
+             Weights for the second time (Lin DY, Sun W, Ying Z (1999) 
+             <doi:10.1093/biomet/86.1.59> and (ii) another estimator
+             based on Kaplan-Meier weights (Una-Alvarez J, Meira-Machado L (2008)
+             <https://w3.math.uminho.pt/~lmachado/Biometria_conference.pdf>). 
+             The proposed methods are the landmark estimators based on 
+             subsampling approach, and the estimator based on weighted cumulative
+             hazard estimator. The package also provides nonparametric estimator
+             conditional to a given continuous covariate. All these methods have
+             been submitted to be published.  
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: survival, KernSmooth, graphics, stats, utils
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: yes
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+Packaged: 2022-03-14 14:48:11 UTC; asus
+Author: Gustavo Soutinho [aut, cre] (<https://orcid.org/0000-0002-0559-1327>),
+  Luis Meira-Machado [aut] (<https://orcid.org/0000-0002-8577-7665>),
+  Artur Araujo [ctb] (<https://orcid.org/0000-0003-1419-4208>),
+  Ana Moreira [ctb]
+Maintainer: Gustavo Soutinho <gustavosoutinho@sapo.pt>
+Repository: CRAN
+Date/Publication: 2022-03-15 18:50:05 UTC

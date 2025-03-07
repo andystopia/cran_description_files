@@ -1,0 +1,24 @@
+Package: ICSKAT
+Type: Package
+Title: Interval-Censored Sequence Kernel Association Test
+Version: 0.1.0
+Authors@R: c(
+	person("Ryan", "Sun", email = "ryansun.work@gmail.com", role = c("aut", "cre")),
+	person("Liang", "Zhu", role="aut"))
+Description: Implements the Interval-Censored Sequence Kernel Association (ICSKAT) test for testing the association between interval-censored time-to-event outcomes and groups of single nucleotide polymorphisms (SNPs). Interval-censored time-to-event data occur when the event time is not known exactly but can be deduced to fall within a given interval. For example, some medical conditions like bone mineral density deficiency are generally only diagnosed at clinical visits. If a patient goes for clinical checkups yearly and is diagnosed at, say, age 30, then the onset of the deficiency is only known to fall between the date of their age 29 checkup and the date of the age 30 checkup. Interval-censored data include right- and left-censored data as special cases. This package also implements the interval-censored Burden test and the ICSKATO test, which is the optimal combination of the ICSKAT and Burden tests. Please see the vignette for a quickstart guide.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: CompQuadForm, dplyr, magrittr, Rcpp (>= 0.11.3), rje,
+        survival, tidyr, zoo
+LinkingTo: Rcpp, RcppEigen
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-03-02 14:43:44 UTC; rsun3
+Author: Ryan Sun [aut, cre],
+  Liang Zhu [aut]
+Maintainer: Ryan Sun <ryansun.work@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-03-04 09:10:02 UTC

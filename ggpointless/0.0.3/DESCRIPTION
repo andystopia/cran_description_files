@@ -1,0 +1,36 @@
+Package: ggpointless
+Title: A Small Collection of Geometries, and Stats for 'ggplot2'
+Version: 0.0.3
+Authors@R: 
+    person(
+     given = "Markus",
+     family = "Döring",
+     email = "m4rkus.doering@gmail.com",
+     role = c("aut", "cre"))
+Description: A collection of geometries and stats for
+    'ggplot2'. Currently it supports geom_pointless() which adds
+    minimal emphasis to your plots. Or just some visual sugar. 
+    geom_lexis() draws a 45° lifeline of an event that mimics 
+    lexis diagrams. geom_chaikin() applies Chaikin's corner
+    cutting algorithm to a path.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+URL: https://flrd.github.io/ggpointless/,
+        https://github.com/flrd/ggpointless
+BugReports: https://github.com/flrd/ggpointless/issues
+Depends: ggplot2 (>= 3.3.0), R (>= 3.3)
+Suggests: knitr, covr, testthat (>= 3.0.0), rmarkdown, ragg, scales,
+        ggtext, ggrepel, vdiffr (>= 1.0.0)
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
+Collate: 'aaa.R' 'data.R' 'geom-chaikin.R' 'legend-draw.R'
+        'geom-lexis.R' 'geom-pointless.R' 'ggpointless-package.R'
+        'stat-lexis.R' 'stat-pointless.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2022-08-24 21:42:33 UTC; markus
+Author: Markus Döring [aut, cre]
+Maintainer: Markus Döring <m4rkus.doering@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-25 08:22:40 UTC

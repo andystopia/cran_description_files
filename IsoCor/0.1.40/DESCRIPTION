@@ -1,0 +1,41 @@
+Package: IsoCor
+Title: Analyze Isotope Ratios in a 'Shiny'-App
+Version: 0.1.40
+Date: 2022-09-06
+Authors@R: 
+    person(
+      given = "Jan", 
+      family = "Lisec", 
+      email = "jan.lisec@bam.de", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-1220-2286")
+    )
+Description: Analyzing Inductively Coupled Plasma - Mass Spectrometry (ICP-MS) 
+    measurement data to evaluate isotope ratios (IRs) is a complex process.
+    The 'IsoCor' package facilitates this process and renders it reproducible 
+    by providing a function to run a 'Shiny'-App locally in any web browser. 
+    In this App the user can upload data files of various formats, select ion 
+    traces, apply peak detection and perform calculation of IRs and delta values.
+    Results are provided as figures and tables and can be exported.
+    The App, therefore, facilitates data processing of ICP-MS experiments to
+    quickly obtain optimal processing parameters compared to traditional 'Excel'
+    worksheet based approaches. A more detailed description can be found in the
+    corresponding article "Data processing made easy: standalone tool for 
+    automated calculation of isotope ratio from transient signals – IsoCor" 
+    by Tukhmetova et al. in Journal of Analytical Atomic Spectrometry (JAAS).
+    The most recent version of 'IsoCor' can be tested online 
+    at <https://jali.shinyapps.io/isocor>.
+URL: https://jali.shinyapps.io/isocor
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 3.50)
+Imports: bsplus, DT, golem, htmltools, MALDIquant, markdown, plyr,
+        rmarkdown, shiny, shinyalert, shinyjs
+Suggests: config, pkgload, rsconnect, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2022-09-06 11:13:45 UTC; jlisec
+Author: Jan Lisec [aut, cre] (<https://orcid.org/0000-0003-1220-2286>)
+Maintainer: Jan Lisec <jan.lisec@bam.de>
+Repository: CRAN
+Date/Publication: 2022-09-07 18:00:07 UTC

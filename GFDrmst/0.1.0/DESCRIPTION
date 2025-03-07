@@ -1,0 +1,35 @@
+Package: GFDrmst
+Type: Package
+Title: Multiple RMST-Based Tests in General Factorial Designs
+Version: 0.1.0
+Authors@R: 
+  c(
+  person(given = "Marc",
+           family = "Ditzhaus",
+           role = c("aut")),
+  person(given = "Dennis",
+          family = "Dobler",
+          role = "aut"),
+  person(given = "Marc",
+           family = "Kindop",
+           role = "aut"),
+  person(given = "Merle",
+           family = "Munko",
+           role = c("aut","cre"), email = "merle.munko@ovgu.de")
+  )
+Maintainer: Merle Munko <merle.munko@ovgu.de>
+Description: We implemented multiple tests based on the restricted mean survival time (RMST) for general factorial designs as described in Munko et al. (2024) <doi:10.1002/sim.10017>. Therefore, an asymptotic test, a groupwise bootstrap test, and a permutation test are incorporated with a Wald-type test statistic. The asymptotic and groupwise bootstrap test take the asymptotic exact dependence structure of the test statistics into account to gain more power. Furthermore, confidence intervals for RMST contrasts can be calculated and plotted and a stepwise extension that can improve the power of the multiple tests is available.
+License: GPL (>= 3)
+Encoding: UTF-8
+Suggests: condSURV
+Imports: GFDmcv, lpSolve, shinyWidgets, shinyMatrix, shiny (>= 1.5.0),
+        tippy (>= 0.1.0), mvtnorm, MASS (>= 7.3-53), plyr (>= 1.8.6),
+        shinyjs (>= 2.0.0), shinythemes (>= 1.1.2)
+NeedsCompilation: no
+Packaged: 2024-03-01 15:02:32 UTC; munko
+Author: Marc Ditzhaus [aut],
+  Dennis Dobler [aut],
+  Marc Kindop [aut],
+  Merle Munko [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-03-04 10:40:08 UTC

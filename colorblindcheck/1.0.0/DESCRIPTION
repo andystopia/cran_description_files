@@ -1,0 +1,28 @@
+Package: colorblindcheck
+Title: Check Color Palettes for Problems with Color Vision Deficiency
+Version: 1.0.0
+Authors@R: c(
+           person(given = "Jakub", 
+           family = "Nowosad", 
+           role = c("aut", "cre"),
+           email = "nowosad.jakub@gmail.com", 
+           comment = c(ORCID = "0000-0002-1057-3721"))
+           )
+Description: Compare color palettes with simulations of color vision deficiencies - deuteranopia, protanopia, and tritanopia.
+        It includes calculation of distances between colors, and creating summaries of differences between a color palette and simulations of color vision deficiencies.
+        This work was inspired by the blog post at <http://www.vis4.net/blog/2018/02/automate-colorblind-checking/>.
+Imports: colorspace, methods, spacesXYZ
+Suggests: rcartocolor, testthat, knitr, rmarkdown, covr, vdiffr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+URL: https://github.com/Nowosad/colorblindcheck
+BugReports: https://github.com/Nowosad/colorblindcheck/issues
+NeedsCompilation: no
+Packaged: 2021-09-07 18:43:16 UTC; jn
+Author: Jakub Nowosad [aut, cre] (<https://orcid.org/0000-0002-1057-3721>)
+Maintainer: Jakub Nowosad <nowosad.jakub@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-09-09 09:00:11 UTC

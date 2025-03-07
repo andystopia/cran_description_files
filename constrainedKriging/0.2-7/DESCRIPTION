@@ -1,0 +1,20 @@
+Package: constrainedKriging
+Version: 0.2-7
+Type: Package
+Title: Constrained, Covariance-Matching Constrained and Universal Point
+        or Block Kriging
+Date: 2023-12-15
+Authors@R: c(person("Christoph", "Hofer", role = "aut", email = "christoph.hofer@alumni.ethz.ch"),        person("Andreas", "Papritz", role = c("ctb", "cre"), email =  "papritz@retired.ethz.ch" ))
+Description: Provides functions for efficient computation of non-linear spatial predictions with local change of support (Hofer, C. and Papritz, A. (2011) "constrainedKriging: An R-package for customary, constrained and covariance-matching constrained point or block kriging" <doi:10.1016/j.cageo.2011.02.009>).  This package supplies functions for two-dimensional spatial interpolation by constrained (Cressie, N. (1993) "Aggregation in geostatistical problems" <doi:10.1007/978-94-011-1739-5_3>), covariance-matching constrained (Aldworth, J. and Cressie, N. (2003) "Prediction of nonlinear spatial functionals" <doi:10.1016/S0378-3758(02)00321-X>) and universal (external drift) Kriging for points or blocks of any shape from data with a non-stationary mean function and an isotropic weakly stationary covariance function.  The linear spatial interpolation methods, constrained and covariance-matching constrained Kriging, provide approximately unbiased prediction for non-linear target values under change of support.  This package extends the range of tools for spatial predictions available in R and provides an alternative to conditional simulation for non-linear spatial prediction problems with local change of support.
+License: GPL (>= 2)
+Depends: R (>= 2.9), sp(>= 0.9-60)
+Imports: graphics, grDevices, methods, parallel, sf(>= 1.0-14),
+        spatialCovariance(>= 0.6-4), stats
+Suggests: spdep(>= 0.5-43)
+NeedsCompilation: yes
+Packaged: 2023-12-17 16:21:42 UTC; papritz
+Author: Christoph Hofer [aut],
+  Andreas Papritz [ctb, cre]
+Maintainer: Andreas Papritz <papritz@retired.ethz.ch>
+Repository: CRAN
+Date/Publication: 2023-12-19 19:40:02 UTC

@@ -1,0 +1,37 @@
+Type: Package
+Package: tidyBF
+Title: Tidy Wrapper for 'BayesFactor' Package
+Version: 0.4.0
+Authors@R: 
+    person(given = "Indrajeet",
+           family = "Patil",
+           role = c("aut", "cre", "cph"),
+           email = "patilindrajeet.science@gmail.com",
+           comment = c(ORCID = "0000-0003-1995-6531", Twitter = "@patilindrajeets"))
+Maintainer: Indrajeet Patil <patilindrajeet.science@gmail.com>
+Description: Provides helper functions that make it easy to run
+    'BayesFactor' package tests on a data which is in a tidy format.
+    Additionally, it provides a more consistent syntax and by default
+    returns a dataframe with rich details. These functions can also return
+    expressions containing results from Bayes Factor tests that can then
+    be displayed on custom plots. Posterior estimation is carried out using 
+    the 'bayestestR' package.
+License: GPL-3 | file LICENSE
+URL: https://indrajeetpatil.github.io/tidyBF/,
+        https://github.com/IndrajeetPatil/tidyBF
+BugReports: https://github.com/IndrajeetPatil/tidyBF/issues
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.6.0)
+Imports: BayesFactor, dplyr, effectsize (>= 0.4.0), insight (>=
+        0.10.0), ipmisc (>= 4.1.0), lme4, metaBMA (>= 0.6.5),
+        parameters (>= 0.9.0), performance (>= 0.5.1), rlang, tidyr
+Suggests: ggplot2, knitr, rmarkdown, spelling, testthat, utils
+NeedsCompilation: no
+Packaged: 2020-10-29 20:51:58 UTC; inp099
+Author: Indrajeet Patil [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1995-6531>, @patilindrajeets)
+Repository: CRAN
+Date/Publication: 2020-10-30 12:20:02 UTC

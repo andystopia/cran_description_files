@@ -1,0 +1,26 @@
+Package: MGMM
+Title: Missingness Aware Gaussian Mixture Models
+Date: 2020-08-24
+Version: 0.3.1
+Authors@R: 
+    person(given = "Zachary",
+           family = "McCaw",
+           role = c("aut", "cre"),
+           email = "zmccaw@alumni.harvard.edu",
+           comment = c(ORCID = "0000-0002-2006-9828"))
+Description: Parameter estimation and classification for Gaussian Mixture Models (GMMs) in the presence of missing data. This package uses an expectation conditional maximization algorithm to obtain maximum likelihood estimates for all model parameters and maximum a posteriori classifications of the input vectors. For additional details, please see McCaw ZR, Julienne H, Aschard H. "MGMM: an R package for fitting Gaussian Mixture Models on Incomplete Data." <doi:10.1101/2019.12.20.884551>.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: cluster, methods, mvnfast, plyr, Rcpp (>= 1.0.3), stats
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2020-08-25 13:36:53 UTC; zmccaw
+Author: Zachary McCaw [aut, cre] (<https://orcid.org/0000-0002-2006-9828>)
+Maintainer: Zachary McCaw <zmccaw@alumni.harvard.edu>
+Repository: CRAN
+Date/Publication: 2020-08-26 11:50:02 UTC

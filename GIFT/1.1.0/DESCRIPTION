@@ -1,0 +1,39 @@
+Package: GIFT
+Type: Package
+Title: Access to the Global Inventory of Floras and Traits (GIFT)
+Version: 1.1.0
+Authors@R: c(
+  person("Pierre", "Denelle", email = "pierre.denelle@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5037-2281")),
+    person("Patrick", "Weigelt", email = "pweigel@uni-goettingen.de",
+    role = c("aut" ), comment = c(ORCID = "0000-0002-2485-3708"))
+  )
+Description: Retrieving regional plant checklists, species traits and
+  distributions, and environmental data from the Global Inventory of Floras and
+  Traits (GIFT). More information about the GIFT database can be found at
+  <https://gift.uni-goettingen.de/about> and the map of available floras can be
+  visualized at <https://gift.uni-goettingen.de/map>. The API and associated
+  queries can be accessed according the following scheme:
+  <https://gift.uni-goettingen.de/api/extended/index2.0.php?query=env_raster>.
+Depends: R (>= 3.5.3)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: ape, curl, dplyr, httr2, jsonlite, phytools, purrr, sf, stats,
+        tidyr, utils
+RoxygenNote: 7.2.3
+Suggests: covr, ggplot2, kableExtra, knitr, patchwork, testthat (>=
+        3.0.0), RColorBrewer, rmarkdown, rnaturalearth,
+        rnaturalearthdata, scales
+Config/testthat/edition: 3
+URL: https://github.com/BioGeoMacro/GIFT,
+        https://biogeomacro.github.io/GIFT/
+BugReports: https://github.com/BioGeoMacro/GIFT/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-06-19 12:18:52 UTC; Pierre
+Author: Pierre Denelle [aut, cre] (<https://orcid.org/0000-0001-5037-2281>),
+  Patrick Weigelt [aut] (<https://orcid.org/0000-0002-2485-3708>)
+Maintainer: Pierre Denelle <pierre.denelle@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-20 13:50:13 UTC

@@ -1,0 +1,18 @@
+Package: wTO
+Type: Package
+Title: Computing Weighted Topological Overlaps (wTO) & Consensus wTO
+        Network
+Version: 2.0
+Author: Deisy Morselli Gysi, Andre Voigt, Tiago Miranda Fragoso, Eivind Almaas and Katja Nowick.
+Maintainer: Deisy Morselli Gysi <deisy.ccnr@gmail.com>
+Description: Computes the Weighted Topological Overlap with positive and negative signs (wTO) networks given a data frame containing the mRNA count/ expression/ abundance per sample, and a vector containing the interested nodes of interaction (a subset of the elements of the full data frame). It also computes the cut-off threshold or p-value based on the individuals bootstrap or the values reshuffle per individual. It also allows the construction of a consensus network, based on multiple wTO networks. The package includes a visualization tool for the networks.  More about the methodology can be found at <arXiv:1711.04702>.
+License: GPL-2
+LazyData: TRUE
+Imports: data.table, igraph, magrittr, plyr, parallel, som, visNetwork,
+        reshape2, Rfast, HiClimR, methods
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-05-10 19:16:37 UTC; deisygysi
+Repository: CRAN
+Date/Publication: 2022-05-10 22:00:03 UTC

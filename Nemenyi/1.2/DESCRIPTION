@@ -1,0 +1,17 @@
+Package: Nemenyi
+Type: Package
+Title: Implementation of the Nemenyi post-hoc test to find the groups
+        of data that differ after a statistical test of multiple
+        comparisons, e.g. Friedman test. Reference: Japkowicz/Shah
+        (2011), Evaluating Learning Algorithms. Pages 255 ff.
+Version: 1.2
+Date: 2014-08-18
+Author: Christian Guckelsberger
+Maintainer: Christian Guckelsberger <cguckels@students.uni-mainz.de>
+Description: Takes a matrix with samples (rows) for multiple groups (columns). Calculates Friedman-like ranks of the groups per row. Sums the ranks of each group over all samples. Calculates the pairwise difference between the summed ranks, representing the Nemenyi-value. Looks up the corresponding p-value from the studentized range (q)-distribution.
+Depends: stats
+License: GPL-2
+Packaged: 2014-08-18 16:15:47 UTC; worldwindow
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-08-18 19:20:35

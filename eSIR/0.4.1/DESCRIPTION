@@ -1,0 +1,35 @@
+Package: eSIR
+Type: Package
+Title: Extended State-Space SIR Models
+Version: 0.4.1
+Authors@R: c(
+    person("Lili", "Wang", email = "lilywang@umich.edu", role = c("aut")),
+    person("Song Lab", role = "aut", comment = "<http://websites.umich.edu/~songlab/>"),
+    person("Paul", "Egeler", email = "paul.egeler@spectrumhealth.org", role = "ctb", comment = "Spectrum Health Office of Research and Education"),
+    person("Michael", "Kleinsasser", email = "biostat-cran-manager@umich.edu", role = c("cre"))
+    )
+Description: An implementation of extended state-space SIR models developed by
+    Song Lab at UM school of Public Health. There are several functions available
+    by 1) including a time-varying transmission modifier, 2) adding a time-dependent
+    quarantine compartment, 3) adding a time-dependent antibody-immunization compartment.
+    Wang L et al. (2020) <doi:10.6339/JDS.202007_18(3).0003>.
+License: CC BY 4.0
+Encoding: UTF-8
+Imports: coda (>= 0.19.3), chron (>= 2.3.54), data.table (>= 1.12.0),
+        ggplot2 (>= 3.2.1), grDevices (>= 3.5.2), graphics (>= 3.5.2),
+        gtools (>= 3.8.1), scales (>= 1.1.0), stats (>= 3.5.2),
+        reshape2 (>= 1.4.3), rjags (>= 4.10), utils (>= 3.5.2)
+Depends: R (>= 3.5.2)
+RoxygenNote: 7.1.2
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-11-11 15:55:24 UTC; mjkle
+Author: Lili Wang [aut],
+  Song Lab [aut] (<http://websites.umich.edu/~songlab/>),
+  Paul Egeler [ctb] (Spectrum Health Office of Research and Education),
+  Michael Kleinsasser [cre]
+Maintainer: Michael Kleinsasser <biostat-cran-manager@umich.edu>
+Repository: CRAN
+Date/Publication: 2021-11-11 19:40:05 UTC

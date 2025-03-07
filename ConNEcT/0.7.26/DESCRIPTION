@@ -1,0 +1,22 @@
+Package: ConNEcT
+Title: Contingency Measure-Based Networks for Binary Time Series
+Version: 0.7.26
+Authors@R: c(
+    person("Nadja", "Bodner", email = "nadja.bodner@kuleuven.be",role = c("aut", "cre")),
+    person("Eva", "Ceulemans", email = "eva.ceulemans@kuleuven.be",role = c("ctb","rev")))
+Maintainer: Nadja Bodner <nadja.bodner@kuleuven.be>
+Description: The ConNEcT approach investigates the pairwise association strength of binary time series by calculating contingency measures and depicts the results in a network. The package includes features to explore and visualize the data. To calculate the pairwise concurrent or temporal sequenced relationship between the variables, the package provides seven contingency measures (proportion of agreement, classical & corrected Jaccard, Cohen's kappa, phi correlation coefficient, odds ratio, and log odds ratio), however, others can easily be implemented. The package also includes non-parametric significance tests, that can be applied to test whether the contingency value quantifying the relationship between the variables is significantly higher than chance level. Most importantly this test accounts for auto-dependence and relative frequency.See Bodner et al.(2021) <doi: 10.1111/bmsp.12222>.Finally, a network can be drawn. Variables depicted the nodes of the network, with the node size adapted to the prevalence. The association strength between the variables defines the undirected (concurrent) or directed (temporal sequenced) links between the nodes. The results of the non-parametric significance test can be included by depicting either all links or only the significant ones. Tutorial see Bodner et al.(2021) <doi: 10.31234/osf.io/2w864>.
+Imports: qgraph, Rlab, stats, graphics
+Depends: R (>= 2.10)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: covr, lintr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-10-29 12:37:55 UTC; u0090403
+Author: Nadja Bodner [aut, cre],
+  Eva Ceulemans [ctb, rev]
+Repository: CRAN
+Date/Publication: 2021-11-02 08:50:05 UTC

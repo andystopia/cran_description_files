@@ -1,0 +1,32 @@
+Package: HBP
+Type: Package
+Title: Hi-C BED File Analysis Pipeline
+Version: 0.1.2
+Date: 2017-07-05
+Depends: R (>= 3.0.0)
+Imports:
+        grid,lattice,BiocInstaller,rtracklayer,OmicCircos,ggplot2,igraph,reshape2,pgirmess,coin,multcomp,flexclust,HiTC,gplots
+Suggests: BSgenome.Hsapiens.UCSC.hg19
+Author: Chao He
+Maintainer: Chao He <hechao2010@tsinghua.org.cn>
+Description: Hi-C dataset processing algorithm introduced by Chao He (2016) <doi.org/10.1101/083576>.
+   The optimized and flexible pipeline for analyzing the
+   folding of whole chromosome and interactions between some
+   specific sites from the Hi-C raw sequencing reads to the
+   partially processed datasets. The other complex genetic and
+   epigenetic datasets from public sources such as GWAS, ENCODE
+   consortiums etc. will also easily be integrated into HBP,
+   hence the final output results of HBP could provide a
+   comprehensive in-depth understanding for the specific
+   chromatin interactions, potential molecular mechanisms and
+   biological significance. We believe that HBP is a reliable
+   tool for the rapidly analysis of Hi-C data and will be very
+   useful for a wide range of researchers, particularly those
+   who lack of background in computational biology.
+License: GPL (>= 2)
+LazyData: TRUE
+LazyLoad: yes
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2017-07-06 11:38:21 UTC; hc
+Date/Publication: 2017-07-07 05:01:44 UTC

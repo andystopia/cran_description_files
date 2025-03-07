@@ -1,0 +1,32 @@
+Package: itdr
+Type: Package
+Title: Integral Transformation Methods for SDR in Regression
+Version: 2.0.0
+Authors@R: c(person(given="Tharindu", family="P. De Alwis",
+    role=c("aut","cre"),email="talwis@wpi.edu",
+    comment = c(ORCID = "0000-0002-3446-0502")),
+    person(given="S. Yaser ", family="Samadi",
+    role=c("ctb","aut"),email="ysamadi@siu.edu",
+    comment = c(ORCID = "0000-0002-6121-0234")),
+    person(given="Jiaying ",family="Weng",
+    role=c("ctb","aut"),email="jweng@bentley.edu",
+    comment = c(ORCID = "0000-0002-9463-5714")))
+Depends: R(>= 3.5.0)
+Imports: stats,utils,MASS,geigen,magic,energy,tidyr
+Description: The routine, itdr(), which allows to estimate the sufficient dimension reduction subspaces, i.e., central mean subspace or central subspace in regression, using Fourier transformation proposed by Zhu and Zeng (2006) <doi:10.1198/016214506000000140>, convolution transformation proposed by Zeng and Zhu (2010) <doi:10.1016/j.jmva.2009.08.004> and iterative Hessian transformation methods proposed by Cook and Li (2002) <doi:10.1214/aos/1021379861>. The function fm_xire() function provides optimal estimators by optimizing a discrepancy function using a Fourier transform approach proposed by Weng and Yin (2022) <doi:10.5705/ss.202020.0312>. The admmft() function selects the sufficient variables using a Fourier transform sparse inverse regression estimators proposed by Weng (2022) <doi:10.1016/j.csda.2021.107380>.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-06-23 02:35:14 UTC; User
+Author: Tharindu P. De Alwis [aut, cre]
+    (<https://orcid.org/0000-0002-3446-0502>),
+  S. Yaser Samadi [ctb, aut] (<https://orcid.org/0000-0002-6121-0234>),
+  Jiaying Weng [ctb, aut] (<https://orcid.org/0000-0002-9463-5714>)
+Maintainer: Tharindu P. De Alwis <talwis@wpi.edu>
+Repository: CRAN
+Date/Publication: 2023-06-23 09:00:12 UTC

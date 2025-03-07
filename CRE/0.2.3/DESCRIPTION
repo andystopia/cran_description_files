@@ -1,0 +1,56 @@
+Type: Package
+Package: CRE
+Title: Interpretable Subgroups Identification Through Ensemble Learning
+        of Causal Rules
+Version: 0.2.3
+Authors@R: c(
+    person("Naeem", "Khoshnevis", , "nkhoshnevis@g.harvard.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4315-1426", AFFILIATION = "FASRC")),
+    person("Daniela Maria", "Garcia", , "danielagarcia@college.harvard.edu", role = "aut",
+           comment = c(ORCID = "0000-0003-3226-3561")),
+    person("Riccardo", "Cadei", , "rcadei@hsph.harvard.edu", role = "aut",
+           comment = c(ORCID = "0000-0003-2416-8943")),
+    person("Kwonsang", "Lee", , "kwonsanglee.stat@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-5823-4331")),
+    person("Falco Joannes", "Bargagli Stoffi", , "fbargaglistoffi@hsph.harvard.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-6131-8165"))
+  )
+Maintainer: Naeem Khoshnevis <nkhoshnevis@g.harvard.edu>
+Description: Provides an interpretable identification of subgroups with
+    heterogeneous causal effect. The heterogeneous subgroups are
+    discovered through ensemble learning of causal rules. Causal rules are
+    highly interpretable if-then statement that recursively partition the
+    features space into heterogeneous subgroups. A small number of
+    significant causal rules are selected through Stability Selection to
+    control for family-wise error rate in the finite sample setting. It
+    proposes various estimation methods for the conditional causal effects
+    for each discovered causal rule.  It is highly flexible and multiple
+    causal estimands and imputation methods are implemented.  Lee, K.,
+    Bargagli-Stoffi, F. J., & Dominici, F. (2020). Causal rule ensemble:
+    Interpretable inference of heterogeneous treatment effects.  arXiv
+    preprint <arXiv:2009.09036>.
+License: GPL-3
+URL: https://github.com/NSAPH-Software/CRE
+BugReports: https://github.com/NSAPH-Software/CRE/issues
+Depends: R (>= 3.5.0)
+Imports: MASS, stats, logger, gbm, randomForest, methods, xgboost, RRF,
+        data.table, xtable, glmnet, bartCause, stabs, stringr,
+        SuperLearner, magrittr, ggplot2, inTrees
+Suggests: baggr, grf, BART, gnm, covr, knitr, rmarkdown, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Copyright: Harvard University
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2023-04-27 18:06:00 UTC; nak443
+Author: Naeem Khoshnevis [aut, cre] (<https://orcid.org/0000-0003-4315-1426>,
+    FASRC),
+  Daniela Maria Garcia [aut] (<https://orcid.org/0000-0003-3226-3561>),
+  Riccardo Cadei [aut] (<https://orcid.org/0000-0003-2416-8943>),
+  Kwonsang Lee [aut] (<https://orcid.org/0000-0002-5823-4331>),
+  Falco Joannes Bargagli Stoffi [aut]
+    (<https://orcid.org/0000-0002-6131-8165>)
+Repository: CRAN
+Date/Publication: 2023-04-27 20:20:02 UTC

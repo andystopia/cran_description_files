@@ -1,0 +1,27 @@
+Package: NAP
+Type: Package
+Title: Non-Local Alternative Priors in Psychology
+Version: 1.0
+Date: 2021-11-2
+Authors@R: c(person("Sandipan", "Pramanik", email = "sandy@stat.tamu.edu",
+                    role = c("aut", "cre")),
+             person("Valen E.", "Johnson", role = "aut"))
+Author: Sandipan Pramanik [aut, cre],
+  Valen E. Johnson [aut]
+Maintainer: Sandipan Pramanik <sandy@stat.tamu.edu>
+Description: Conducts Bayesian Hypothesis tests of a point null hypothesis against a two-sided alternative
+             using Non-local Alternative Prior (NAP) for one- and two-sample z- and t-tests (Johnson, V. and Rossell, R. (2010) <doi:10.1111/j.1467-9868.2009.00730.x>).
+             Under the alternative, the NAP is assumed on the standardized effects size in one-sample tests and
+             on their differences in two-sample tests. The package considers two types of NAP densities:
+             (1) the normal moment prior, and (2) the composite alternative. In fixed design tests,
+             the functions calculate the Bayes factors and the expected weight of evidence for varied 
+             effect size and sample size. The package also provides a sequential testing framework using the
+             Sequential Bayes Factor (SBF) design. The functions calculate the operating characteristics (OC)
+             and the average sample number (ASN), and also conducts sequential tests for a sequentially 
+             observed data.
+Imports: foreach, stats, utils, parallel, doParallel, graphics
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2021-11-02 22:26:01 UTC; sandipanpramanik
+Repository: CRAN
+Date/Publication: 2021-11-04 07:10:02 UTC

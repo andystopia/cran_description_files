@@ -1,0 +1,29 @@
+Package: ivdoctr
+Title: Ensures Mutually Consistent Beliefs When Using IVs
+Version: 1.0.0
+Authors@R: c(
+    person("Frank", "DiTraglia", email = "francis.ditraglia@economics.ox.ac.uk", role = "aut"),
+    person("Mallick", "Hossain", email = "emallickhossain@gmail.com", role = c("aut", "cre")))
+Description: Uses data and researcher's beliefs on measurement error and
+    instrumental variable (IV) endogeneity to generate the space of consistent 
+    beliefs across measurement error, instrument endogeneity, and instrumental 
+    relevance for IV regressions. 
+    Package based on DiTraglia and Garcia-Jimeno (2020) <doi:10.1080/07350015.2020.1753528>.
+License: CC0
+LazyData: TRUE
+Depends: R (>= 2.10)
+Imports: AER, coda, data.table, graphics, MASS, Rcpp (>= 0.11.6), rgl,
+        sandwich, stats
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, haven, MCMCpack, knitr, rmarkdown
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+NeedsCompilation: yes
+BugReports: https://github.com/emallickhossain/ivdoctr/issues
+VignetteBuilder: knitr
+Packaged: 2020-07-01 21:23:02 UTC; mallick
+Author: Frank DiTraglia [aut],
+  Mallick Hossain [aut, cre]
+Maintainer: Mallick Hossain <emallickhossain@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-07-03 11:00:09 UTC

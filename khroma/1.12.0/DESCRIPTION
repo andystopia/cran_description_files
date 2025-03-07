@@ -1,0 +1,56 @@
+Package: khroma
+Title: Colour Schemes for Scientific Data Visualization
+Version: 1.12.0
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944", affiliation = "Université Bordeaux Montaigne")),
+    person("Brice", "Lebrun", , "brice.lebrun@u-bordeaux-montaigne.fr", role = "ctb",
+           comment = c(ORCID = "0000-0001-7503-8685", affiliation = "Université Bordeaux Montaigne")),
+    person("Vincent", "Arel-Bundock", , "vincent.arel-bundock@umontreal.ca", role = "ctb",
+           comment = c(ORCID = "0000-0003-2042-7063", affiliation = "Université de Montréal")),
+    person("Ulrik", "Stervbo", , "ulrik.stervbo@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-2831-8868", affiliation = "Ruhr-Universität Bochum")),
+    person("Université Bordeaux Montaigne", role = "fnd"),
+    person("CNRS", role = "fnd")
+  )
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: Color schemes ready for each type of data (qualitative,
+    diverging or sequential), with colors that are distinct for all
+    people, including color-blind readers. This package provides an
+    implementation of Paul Tol (2018) and Fabio Crameri (2018)
+    <doi:10.5194/gmd-11-2541-2018> color schemes for use with 'graphics'
+    or 'ggplot2'. It provides tools to simulate color-blindness and to
+    test how well the colors of any palette are identifiable. Several
+    scientific thematic schemes (geologic timescale, land cover, FAO
+    soils, etc.) are also implemented.
+License: GPL (>= 3)
+URL: https://packages.tesselle.org/khroma/,
+        https://github.com/tesselle/khroma
+BugReports: https://github.com/tesselle/khroma/issues
+Depends: R (>= 3.5.0)
+Imports: graphics, grDevices, grid, stats, utils
+Suggests: ggplot2, ggraph, knitr, markdown, rsvg, scales, spacesXYZ,
+        svglite, tinysnapshot, tinytest
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Collate: 'anomalize.R' 'color.R' 'compare.R' 'convert.R' 'ggplot2.R'
+        'info.R' 'khroma-internal.R' 'khroma-package.R' 'plot.R'
+        'plot_map.R' 'plot_scheme.R' 'plot_scheme_colorblind.R'
+        'plot_tiles.R' 'print.R' 'ramp.R' 'scale_colour_crameri.R'
+        'scale_colour_okabeito.R' 'scale_colour_other.R'
+        'scale_colour_science.R' 'scale_colour_tol.R'
+NeedsCompilation: no
+Packaged: 2024-01-08 09:28:25 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>,
+    Université Bordeaux Montaigne),
+  Brice Lebrun [ctb] (<https://orcid.org/0000-0001-7503-8685>, Université
+    Bordeaux Montaigne),
+  Vincent Arel-Bundock [ctb] (<https://orcid.org/0000-0003-2042-7063>,
+    Université de Montréal),
+  Ulrik Stervbo [ctb] (<https://orcid.org/0000-0002-2831-8868>,
+    Ruhr-Universität Bochum),
+  Université Bordeaux Montaigne [fnd],
+  CNRS [fnd]
+Repository: CRAN
+Date/Publication: 2024-01-08 12:20:02 UTC

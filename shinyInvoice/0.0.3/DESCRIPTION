@@ -1,0 +1,27 @@
+Package: shinyInvoice
+Title: Shiny App - Generate a Pdf Invoice with 'Rmarkdown'
+Version: 0.0.3
+Date: 2023-12-12
+Authors@R: c(person("Fernando", "Roa", email = "froao@unal.edu.co", role = c("aut", "cre") )
+             )
+Description: Generate an invoice containing a header with invoice number and businesses details. The invoice table contains
+  any of: salary, one-liner costs, grouped costs. Under the table signature and bank account details appear. 
+  Pages are numbered when more than one. Source .json and .Rmd files are editable in the app. A .csv file with raw data can be downloaded.
+  This package includes functions for getting exchange rates between currencies based on 
+  'quantmod' (Ryan and Ulrich, 2023 <https://CRAN.R-project.org/package=quantmod>).
+Depends: R (>= 3.5)
+Imports: tibble, dplyr, quantmod, rlang, stringr, shiny
+Suggests: fs, jsonlite, lubridate, pillar, readr, rhino, rjson,
+        shinyAce, tinytex, rmarkdown, curl
+License: GPL (>= 2)
+Encoding: UTF-8
+SystemRequirements: pandoc (>= 2.0)
+URL: https://github.com/fernandoroa/invoice-public
+BugReports: https://github.com/fernandoroa/invoice-public/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-12-13 03:31:15 UTC; fernando
+Author: Fernando Roa [aut, cre]
+Maintainer: Fernando Roa <froao@unal.edu.co>
+Repository: CRAN
+Date/Publication: 2023-12-13 14:50:02 UTC

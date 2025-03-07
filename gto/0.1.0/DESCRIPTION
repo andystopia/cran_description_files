@@ -1,0 +1,29 @@
+Package: gto
+Type: Package
+Title: Insert 'gt' Tables into Word Documents
+Version: 0.1.0
+Authors@R: 
+    c( person(given = "Ellis",
+              family = "Hughes",
+              role = c("aut","cre"),
+              email = "ellis.h.hughes@gsk.com",
+              comment = c(ORCID = "0000-0003-0637-4436")),
+       person("GlaxoSmithKline Research & Development Limited", role = c("cph", "fnd"))       
+    )
+Description: Insert tables created by the 'gt' R package into 'Microsoft Word' 
+    documents. This gives users the ability to add to their existing word documents
+    the tables made in 'gt' using the familiar 'officer' package and syntax from
+    the 'officeverse'.
+License: Apache License (>= 2)
+Encoding: UTF-8
+Imports: gt (>= 0.8.0), magrittr, officer, rlang, xml2
+Suggests: testthat (>= 3.0.0), dplyr, tibble, covr
+RoxygenNote: 7.2.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-20 17:00:14 UTC; ehh82309
+Author: Ellis Hughes [aut, cre] (<https://orcid.org/0000-0003-0637-4436>),
+  GlaxoSmithKline Research & Development Limited [cph, fnd]
+Maintainer: Ellis Hughes <ellis.h.hughes@gsk.com>
+Repository: CRAN
+Date/Publication: 2023-02-22 14:20:09 UTC

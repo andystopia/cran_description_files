@@ -1,0 +1,40 @@
+Package: protti
+Title: Bottom-Up Proteomics and LiP-MS Quality Control and Data
+        Analysis Tools
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Jan-Philipp",
+           family = "Quast",
+           role = c("aut", "cre"),
+           email = "quast@imsb.biol.ethz.ch"),
+	person(given = "Dina",
+           family = "Schuster",
+           role = c("aut"),
+           email = "dschuster@ethz.ch"),
+	person(given = "ETH Zurich",
+           role = c("cph", "fnd")))
+Description: Useful functions and workflows for proteomics quality control and data analysis of both limited proteolysis-coupled mass spectrometry (LiP-MS) (Feng et. al. (2014) <doi:10.1038/nbt.2999>) and regular bottom-up proteomics experiments. Data generated with search tools such as 'Spectronaut', 'MaxQuant' and 'Proteome Discover' can be easily used due to flexibility of functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+biocViews:
+Imports: rlang, dplyr, stringr, magrittr, data.table, janitor,
+        progress, purrr, tidyr, ggplot2, forcats, tibble, plotly,
+        ggrepel, utils, grDevices, curl, readr, lifecycle
+RoxygenNote: 7.1.1
+Suggests: testthat, covr, knitr, rmarkdown, proDA, limma, dendextend,
+        pheatmap, heatmaply, viridis, iq, furrr, future, parallel,
+        seriation, drc, httr, igraph, stringi, STRINGdb
+Depends: R (>= 4.0)
+URL: https://github.com/jpquast/protti,
+        https://jpquast.github.io/protti/
+BugReports: https://github.com/jpquast/protti/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-14 07:56:56 UTC; jan-philippquast
+Author: Jan-Philipp Quast [aut, cre],
+  Dina Schuster [aut],
+  ETH Zurich [cph, fnd]
+Maintainer: Jan-Philipp Quast <quast@imsb.biol.ethz.ch>
+Repository: CRAN
+Date/Publication: 2021-09-17 12:20:02 UTC

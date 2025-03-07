@@ -1,0 +1,34 @@
+Package: maraca
+Version: 0.3.10
+Type: Package
+Title: The Maraca Plot: Visualization of Hierarchical Composite
+        Endpoints in Clinical Trials
+License: Apache License (>= 2)
+Authors@R: c(
+    person("Martin Karpefors", "", email = "martin.karpefors@astrazeneca.com", role = "aut"),
+    person("Samvel Gasparyan", "", email = "samvel.gasparyan@astrazeneca.com", role = "aut"),
+    person("Stefano Borini", "", email = "stefano.borini@astrazeneca.com", role = c("ctb", "cre")))
+Description: Library that supports visual interpretation of hierarchical composite
+    endpoints (HCEs). HCEs are complex constructs used as primary endpoints in
+    clinical trials, combining outcomes of different types into ordinal endpoints,
+    in which each patient contributes the most clinically important event (one and
+    only one) to the analysis. 
+URL: https://github.com/AstraZeneca/maraca
+BugReports: https://github.com/AstraZeneca/maraca/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5), ggfortify (>= 0.4)
+Imports: dplyr (>= 1.0), tidyr (>= 1.2), ggplot2 (>= 3.3), gridExtra
+        (>= 2.3), survival (>= 3.3), sanon (>= 1.6), checkmate (>= 2.1)
+RoxygenNote: 7.2.1
+Suggests: knitr (>= 1.39), here (>= 1.0.1), lintr (>= 3.0.0), withr (>=
+        2.5.0), testthat (>= 3.1), rmarkdown
+NeedsCompilation: no
+VignetteBuilder: knitr
+Packaged: 2022-09-26 15:51:07 UTC; ktwg434
+Author: Martin Karpefors [aut],
+  Samvel Gasparyan [aut],
+  Stefano Borini [ctb, cre]
+Maintainer: Stefano Borini <stefano.borini@astrazeneca.com>
+Repository: CRAN
+Date/Publication: 2022-10-05 09:10:05 UTC

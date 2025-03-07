@@ -1,0 +1,31 @@
+Package: matric
+Type: Package
+Title: Metrics for Similarity Matrices
+Version: 0.2.0
+Authors@R: c(
+    person("Shantanu", "Singh", email = "shsingh@broadinstitute.org", role = c("aut", "cre", "cph")),
+    person("Gregory", "Way", email = "gway@broadinstitute.org", role = c("aut"))
+  )
+Description: Calculate quality metrics for readouts from high-throughput 
+  profiling experiments.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: arrow, dplyr, magrittr, tibble, tidyr, readr, jsonlite, glue,
+        purrr, ggplot2, stringr, rlang (>= 0.4.11), yardstick, foreach,
+        logger, furrr, future
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), covr, knitr, markdown, rmarkdown,
+        roxygen2
+Config/testthat/edition: 3
+URL: https://github.com/cytomining/matric
+BugReports: https://github.com/cytomining/matric/issues
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-03-21 20:32:19 UTC; shsingh
+Author: Shantanu Singh [aut, cre, cph],
+  Gregory Way [aut]
+Maintainer: Shantanu Singh <shsingh@broadinstitute.org>
+Repository: CRAN
+Date/Publication: 2023-03-22 08:50:02 UTC

@@ -1,0 +1,49 @@
+Package: superb
+Type: Package
+Title: Summary Plots with Adjusted Error Bars
+Version: 0.95.0
+Date: 2022-05-10
+Authors@R: c(
+             person("Denis", "Cousineau", email = "denis.cousineau@uottawa.ca",
+                    role = c("aut", "cre")),
+             person("Bradley", "Harding", email = "bradley.harding@umoncton.ca",
+                    role = c("ctb")),
+             person("Marc-Andre", "Goulet", email = "magoulet101@gmail.com",
+                    role = c("ctb")),
+             person("Jesika", "Walker", email = "jwalk050@uottawa.ca",
+                    role = c("art","pre"))
+           )
+Author: Denis Cousineau [aut, cre],
+  Bradley Harding [ctb],
+  Marc-Andre Goulet [ctb],
+  Jesika Walker [art, pre]
+Maintainer: Denis Cousineau <denis.cousineau@uottawa.ca>
+BugReports: https://github.com/dcousin3/superb/issues/
+URL: https://dcousin3.github.io/superb/
+Description: 
+    Computes standard error and confidence interval of various descriptive statistics under 
+    various designs and sampling schemes. The main function, superbPlot(), can either return a plot 
+    or a dataframe with the statistic and its precision interval so that other plotting package
+    can be used. See Cousineau and colleagues (2021) <doi:10.1177/25152459211035109> 
+    or Cousineau (2017) <doi:10.5709/acp-0214-z> for a review as well as Cousineau (2005)
+    <doi:10.20982/tqmp.01.1.p042>, Morey (2008) <doi:10.20982/tqmp.04.2.p061>, Baguley (2012)
+    <doi:10.3758/s13428-011-0123-7>, Cousineau & Laurencelle (2016) <doi:10.1037/met0000055>,
+    Cousineau & O'Brien (2014) <doi:10.3758/s13428-013-0441-z>, Calderini & Harding 
+    <doi:10.20982/tqmp.15.1.p001> for specific references.
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Imports: foreign, plyr (>= 1.8.4), ggplot2 (>= 3.1.0), MASS, lsr (>=
+        0.5), methods, Rdpack (>= 0.7), stats, shiny, shinyBS, stringr,
+        utils
+Suggests: dplyr, psych, emojifont, fMultivar, grid, gridExtra, knitr,
+        lattice, lawstat, boot, png, reshape2, rmarkdown, sadists,
+        scales, testthat, tibble
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2022-05-11 08:36:28 UTC; DenisCousineau
+Repository: CRAN
+Date/Publication: 2022-05-11 12:10:03 UTC

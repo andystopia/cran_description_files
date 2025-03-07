@@ -1,0 +1,32 @@
+Package: rpms
+Type: Package
+Title: Recursive Partitioning for Modeling Survey Data
+Version: 0.4.0
+Date: 2019-05-30
+Authors@R: person("Daniell", "Toth", email="danielltoth@yahoo.com",
+    role=c("aut", "cre"))
+Maintainer: Daniell Toth <danielltoth@yahoo.com>
+Description: Functions to allow users to build and analyze design consistent 
+    tree and random forest models using survey data from a complex sample 
+    design.  The algorithm can fit a linear model to survey data in each 
+    node obtained by recursively partitioning the data.  The splitting 
+    variables and selected splits are obtained using a randomized permutation 
+    test procedure which adjusted for complex sample design features used to 
+    obtain the data. Likewise the model fitting algorithm produces 
+    design-consistent coefficients to any specified least squares linear model 
+    between the dependent and independent variables used in the end nodes.
+    The main functions return the resulting binary tree or random forest as 
+    an object of "rpms" or "rpms_forest" type. The package also provides a number 
+    of functions and methods available for use with these object types.
+License: CC0
+Depends: R (>= 2.10)
+Imports: Rcpp (>= 0.12.3)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+NeedsCompilation: yes
+LazyData: true
+Packaged: 2019-05-30 17:01:32 UTC; goddess
+Author: Daniell Toth [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-05-30 22:10:47 UTC

@@ -1,0 +1,42 @@
+Package: eia
+Title: API Wrapper for 'US Energy Information Administration' Open Data
+Version: 0.4.0
+Authors@R: 
+    c(person(
+        given = "Matthew",
+        family = "Leonawicz", 
+        role = "aut",
+        comment = c(ORCID = "0000-0001-9452-2771")
+      ),
+      person(
+        given = "Matthew",
+        family = "Hoff",
+        role = c("aut", "cre"),
+        email = "matthew.g.hoff@gmail.com"
+      )
+    )
+Description: Provides API access to data from the 'US Energy Information Administration' ('EIA') <https://www.eia.gov/>.
+    Use of the API requires a free API key obtainable at <https://www.eia.gov/opendata/register.php>.
+    The package includes functions for searching 'EIA' data categories and importing time series and geoset time series datasets.
+    Datasets returned by these functions are provided in a tidy format or alternatively in more raw form.
+    It also offers helper functions for working with 'EIA' date strings and time formats and for inspecting different summaries of series metadata.
+    The package also provides control over API key storage and caching of API request results.
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/eia/ (website)
+        https://github.com/ropensci/eia
+BugReports: https://github.com/ropensci/eia/issues
+Imports: tibble, httr, jsonlite, purrr, memoise, lubridate, readxl
+Suggests: testthat (>= 3.0.0), knitr, covr, rmarkdown, dplyr, tidyr,
+        ggplot2, spelling
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-10-31 15:34:14 UTC; mghoff
+Author: Matthew Leonawicz [aut] (<https://orcid.org/0000-0001-9452-2771>),
+  Matthew Hoff [aut, cre]
+Maintainer: Matthew Hoff <matthew.g.hoff@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-31 16:20:09 UTC

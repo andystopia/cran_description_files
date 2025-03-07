@@ -1,0 +1,29 @@
+Package: hydroloom
+Title: Utilities to Weave Hydrologic Fabrics
+Version: 1.0.0
+Authors@R: 
+    person(given = "David", 
+           family = "Blodgett", 
+           role = c("aut", "cre"), 
+           email = "dblodgett@usgs.gov",
+           comment = c(ORCID = "0000-0001-9489-1710"))
+Description: A collection of utilities that support creation of network attributes for hydrologic networks. Methods and algorithms implemented are documented in Moore et al. (2019) <doi:10.3133/ofr20191096>), Cormen and Leiserson (2022) <ISBN:9780262046305> and Verdin and Verdin (1999) <doi:10.1016/S0022-1694(99)00011-6>.  
+Depends: R (>= 4.0)
+Imports: dplyr, data.table, sf, units, stats, methods, utils, pbapply,
+        tidyr, RANN, rlang, fastmap
+Suggests: testthat, nhdplusTools, future, lwgeom, future.apply, knitr,
+        gifski, mapview
+License: CC0
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+URL: https://github.com/DOI-USGS/hydroloom
+NeedsCompilation: no
+Packaged: 2023-09-28 13:20:07 UTC; dblodgett
+Author: David Blodgett [aut, cre] (<https://orcid.org/0000-0001-9489-1710>)
+Maintainer: David Blodgett <dblodgett@usgs.gov>
+Repository: CRAN
+Date/Publication: 2023-09-29 13:20:03 UTC

@@ -1,0 +1,61 @@
+Package: bdc
+Title: Biodiversity Data Cleaning
+Version: 1.0.0
+Authors@R: c(
+    person("Bruno", "Ribeiro", , "ribeiro.brr@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7755-6715")),
+    person("Geiziane", "Tessarolo", , "geites@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-1361-0062")),
+    person("Santiago", "Velazco", , "sjevelazco@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-7527-0967")),
+    person("Lucas", "Jardim", , "lucas.ljardim9@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-2602-5575")),
+    person("Karlo", "Guidoni-Martins", , "kguidonimartins@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-8458-8467")),
+    person("Rafael", "Loyola", , "rdiasloyola@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-5323-2735")),
+    person("Steven", "Bachman", , "S.Bachman@kew.org ", role = "ctb",
+           comment = c(ORCID = "0000-0003-1085-6075"))
+  )
+Description: The bdc package brings together several aspects of
+    biodiversity data-cleaning in one place. It is organized in thematic
+    modules related to different biodiversity dimensions, including 1)
+    Standardization and integration of different datasets; 2) Pre-filter:
+    flagging and removal of invalid or non-interpretable information,
+    followed by data amendments; 3) Taxonomy: cleaning, parsing, and
+    harmonization of scientific names from several taxonomic groups
+    against taxonomic databases locally stored through the application of
+    exact and partial matching algorithms; 4) Space: flagging of
+    erroneous, suspect, and low-precision geographic coordinates; and 5)
+    Time: flagging and, whenever possible, correction of inconsistent
+    collection date. In addition, the package contains features to
+    visualize, document, and report data quality – which is essential for
+    making data quality assessment transparent and reproducible.
+License: GPL (>= 3)
+URL: https://brunobrr.github.io/bdc/ (website)
+        https://github.com/brunobrr/bdc
+BugReports: https://github.com/brunobrr/bdc/issues
+Imports: CoordinateCleaner, dplyr, DT, foreach, fs, ggplot2, here,
+        magrittr, purrr, qs, readr, rgnparser, rnaturalearth, sf (>=
+        1.0.5), stringdist, stringi, stringr, taxadb (>= 0.1.3),
+        tibble, tidyselect
+Suggests: contentid (>= 0.0.15), countrycode, covr, cowplot, DBI,
+        doParallel, duckdb (>= 0.3.2), knitr, maps, markdown,
+        rangeBuilder, rappdirs, raster, remotes, rmarkdown,
+        rnaturalearthdata, rvest, sp, testthat (>= 3.0.0), xml2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-02-26 10:40:30 UTC; Bruno
+Author: Bruno Ribeiro [aut, cre] (<https://orcid.org/0000-0002-7755-6715>),
+  Geiziane Tessarolo [aut] (<https://orcid.org/0000-0003-1361-0062>),
+  Santiago Velazco [aut] (<https://orcid.org/0000-0002-7527-0967>),
+  Lucas Jardim [aut] (<https://orcid.org/0000-0003-2602-5575>),
+  Karlo Guidoni-Martins [aut] (<https://orcid.org/0000-0002-8458-8467>),
+  Rafael Loyola [ctb] (<https://orcid.org/0000-0001-5323-2735>),
+  Steven Bachman [ctb] (<https://orcid.org/0000-0003-1085-6075>)
+Maintainer: Bruno Ribeiro <ribeiro.brr@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-01 09:00:03 UTC

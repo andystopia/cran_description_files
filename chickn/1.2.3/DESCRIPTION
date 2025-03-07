@@ -1,0 +1,31 @@
+Package: chickn
+Type: Package
+Title: 'Compressive' Hierarchical Kernel Clustering Toolbox
+Version: 1.2.3
+Date: 2020-11-08
+Authors@R: c(person("Olga","Permiakova", role = c("aut", "cre"), email = "olga.permiakova@gmail.com"),
+    person("Romain", "Guibert", role = "aut", email = "romain.guibert@icloud.com"),
+    person("Thomas","Burger",role = "aut",email = "thomas.burger@cea.fr"))
+Maintainer: Olga Permiakova <olga.permiakova@gmail.com>
+Description: Routines for efficient cluster analysis of large scale data. This package implements the 'CHICKN' 
+      clustering algorithm (see 'Permiakova' 'et' 'al.' (2020) "'CHICKN': Extraction of 'peptide' 'chromatographic' 
+      'elution' profiles from large scale mass 'spectrometry' data by means of 'Wasserstein' 'compressive' hierarchical 
+      cluster analysis"). Functions for data compression, hierarchical clustering and post processing are provided. 
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5)
+Imports: Rcpp, bigstatsr (>= 1.2.3), RcppParallel, mvnfast, zipfR,
+        MASS, pracma, nloptr, foreach, doRNG, parallel, doParallel,
+        Rdpack
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel, bigstatsr (>= 1.2.3),
+        rmio
+SystemRequirements: C++11
+RoxygenNote: 7.1.1
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2020-11-24 12:54:26 UTC; satrix
+Author: Olga Permiakova [aut, cre],
+  Romain Guibert [aut],
+  Thomas Burger [aut]
+Repository: CRAN
+Date/Publication: 2020-11-24 14:00:02 UTC

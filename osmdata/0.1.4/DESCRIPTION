@@ -1,0 +1,81 @@
+Package: osmdata
+Title: Import 'OpenStreetMap' Data as Simple Features or Spatial
+        Objects
+Version: 0.1.4
+Authors@R: 
+    c(person(given = "Mark",
+             family = "Padgham",
+             role = c("aut", "cre"),
+             email = "mark.padgham@email.com"),
+      person(given = "Bob",
+             family = "Rudis",
+             role = "aut"),
+      person(given = "Robin",
+             family = "Lovelace",
+             role = "aut"),
+      person(given = "Maëlle",
+             family = "Salmon",
+             role = "aut"),
+      person(given = "Andrew",
+             family = "Smith",
+             role = "ctb"),
+      person(given = "James",
+             family = "Smith",
+             role = "ctb"),
+      person(given = "Andrea",
+             family = "Gilardi",
+             role = "ctb"),
+      person(given = "Enrico",
+             family = "Spinielli",
+             role = "ctb"),
+      person(given = "Marcin",
+             family = "Kalicinski",
+             role = c("ctb", "cph"),
+             comment = "Author of included RapidXML code"),
+      person(given = "Finkelstein",
+             family = "Noam",
+             role = c("ctb", "cph"),
+             comment = "Author of included stub.R code"),
+      person(given = "Bartnik",
+             family = "Lukasz",
+             role = c("ctb", "cph"),
+             comment = "Author of included stub.R code"))
+Maintainer: Mark Padgham <mark.padgham@email.com>
+Description: Download and import of 'OpenStreetMap' ('OSM') data
+    as 'sf' or 'sp' objects.  'OSM' data are extracted from the 'Overpass'
+    web server (<https://overpass-api.de/>) and processed with very fast
+    'C++' routines for return to 'R'.
+License: GPL-3
+URL: https://docs.ropensci.org/osmdata/ (website)
+        https://github.com/ropensci/osmdata/ (devel)
+BugReports: https://github.com/ropensci/osmdata/issues
+Depends: R (>= 3.2.4)
+Imports: curl, httr, jsonlite, lubridate, magrittr, methods, Rcpp (>=
+        0.12.4), rvest, sp, tibble, utils, xml2
+Suggests: devtools, knitr, pkgdown, raster, rmarkdown, roxygen2, sf,
+        testthat
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.1.1
+SystemRequirements: C++11
+X-schema.org-applicationCategory: Data Access
+X-schema.org-isPartOf: https://ropensci.org
+X-schema.org-keywords: open0street0map, openstreetmap, overpass0API,
+        OSM
+Packaged: 2020-11-03 11:43:06 UTC; smexus
+Author: Mark Padgham [aut, cre],
+  Bob Rudis [aut],
+  Robin Lovelace [aut],
+  Maëlle Salmon [aut],
+  Andrew Smith [ctb],
+  James Smith [ctb],
+  Andrea Gilardi [ctb],
+  Enrico Spinielli [ctb],
+  Marcin Kalicinski [ctb, cph] (Author of included RapidXML code),
+  Finkelstein Noam [ctb, cph] (Author of included stub.R code),
+  Bartnik Lukasz [ctb, cph] (Author of included stub.R code)
+Repository: CRAN
+Date/Publication: 2020-11-04 00:00:02 UTC

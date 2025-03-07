@@ -1,0 +1,24 @@
+Package: ClimInd
+Type: Package
+Version: 0.1-2
+Date: 2019-07-4
+Title: Climate Indices
+Author: Fergus Reig-Gracia [aut, cre], Sergio M. Vicente-Serrano [aut], Fernando Dominguez-Castro [aut], Joaquin Bedia-Jiménez [ctb]
+Maintainer: Fergus Reig-Gracia <fergusrg@gmail.com>
+Depends: R (>= 2.10), SPEI, chron, weathermetrics
+Description: Computes 138 standard climate indices at monthly, seasonal and annual resolution. These indices were selected, based on their direct and significant impacts on target sectors, after a thorough review of the literature in the field of extreme weather events and natural hazards. Overall, the selected indices characterize different aspects of the frequency, intensity and duration of extreme events, and are derived from a broad set of climatic variables, including surface air temperature, precipitation, relative humidity, wind speed, cloudiness, solar radiation, and snow cover. The 138 indices have been classified as follow: Temperature based indices (42), Precipitation based indices (22), Bioclimatic indices (21), Wind-based indices (5), Aridity/ continentality indices (10), Snow-based indices (13), Cloud/radiation based indices (6), Drought indices (8), Fire indices (5), Tourism indices (5).
+License: GPL (>= 3)
+URL: https://gitlab.com/indecis-eu/indecis
+LazyLoad: yes
+Encoding: UTF-8
+Suggests: MASS, rmarkdown, testthat
+NeedsCompilation: no
+Packaged: 2019-07-11 11:15:55 UTC; fergus
+RoxygenNote: 6.1.1
+ByteCompile: true
+Collate: 'ClimInd.R' 'ClimIndNews.R' 'custom_functions.R' 'data.R'
+        'ffdi.R' 'fwi1D.R' 'penman_fao_dia.R' 'nesterovIndex.R'
+        'macArthurFFDI.R' 'kbdindex.R' 'indecis_indices_functions.R'
+        'indecis_indices.R' 'indecis.R'
+Repository: CRAN
+Date/Publication: 2019-07-18 06:35:41 UTC

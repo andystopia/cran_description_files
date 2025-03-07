@@ -1,0 +1,29 @@
+Package: s3
+Title: Download Files from 'AWS S3'
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Cole",
+           family = "Brokamp",
+           role = c("aut", "cre"),
+           email = "cole.brokamp@gmail.com",
+           comment = c(ORCID = "0000-0002-0289-3151")),
+    person(given = "Erika",
+    family = "Rasnick",
+    role = c("aut"),
+    email = "erika.rasnick@cchmc.org"))
+Description: Download files hosted on 'AWS S3' (Amazon Web Services Simple Storage Service; <https://aws.amazon.com/s3/>) to a local directory based on their URI. Avoid downloading files that are already present locally.  Allow for customization of where to store downloaded files.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, prettyunits, fs, httr, glue, purrr (>= 0.3.4), dplyr,
+        aws.signature, digest
+Suggests: testthat, withr
+URL: https://github.com/geomarker-io/s3
+BugReports: https://github.com/geomarker-io/s3/issues
+NeedsCompilation: no
+Packaged: 2023-08-08 02:09:08 UTC; broeg1
+Author: Cole Brokamp [aut, cre] (<https://orcid.org/0000-0002-0289-3151>),
+  Erika Rasnick [aut]
+Maintainer: Cole Brokamp <cole.brokamp@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-08-08 16:20:02 UTC

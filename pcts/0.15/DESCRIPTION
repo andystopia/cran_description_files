@@ -1,0 +1,37 @@
+Package: pcts
+Type: Package
+Title: Periodically Correlated and Periodically Integrated Time Series
+Description: Classes and methods for modelling and simulation of
+    periodically correlated (PC) and periodically integrated time
+    series.  Compute theoretical periodic autocovariances and related
+    properties of PC autoregressive moving average models. Some original
+    methods including Boshnakov & Iqelan (2009)
+    <doi:10.1111/j.1467-9892.2009.00617.x>, Boshnakov (1996)
+    <doi:10.1111/j.1467-9892.1996.tb00281.x>.
+Version: 0.15
+Date: 2020-10-31
+Author: Georgi N. Boshnakov
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Depends: R (>= 3.5.0)
+Imports: methods, sarima, Matrix, BB, PolynomF (>= 2.0-2), gbutils,
+        zoo, xts, stats4, lagged (>= 0.2.2), mcompanion, Rdpack (>=
+        0.9), lubridate
+Suggests: testthat, fUnitRoots, partsm, knitr, rmarkdown
+RdMacros: Rdpack
+LazyData: yes
+URL: https://geobosh.github.io/pcts/ (website)
+        https://github.com/GeoBosh/pcts/ (devel)
+BugReports: https://github.com/GeoBosh/pcts/issues
+License: GPL (>= 2)
+Collate: utils.R test1.r PeriodicCalc.R pcstat.R pc00smallutil.r
+        pc02filters.r pc03simu.r acfsums.R pcls.R pcarma_model.R
+        pcarma_acf.R generics.R autocovariances.R classCycle.R
+        pcFilterClasses.R PeriodicClasses.R cyclic.R
+        FittedPeriodicModels.R fitPM.R pcTest.R PeriodicVector.R sim.R
+        optimcore.R trig.R
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-10-31 11:44:27 UTC; georgi
+Repository: CRAN
+Date/Publication: 2020-10-31 13:40:02 UTC

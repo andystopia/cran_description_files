@@ -1,0 +1,29 @@
+Package: onlineforecast
+Type: Package
+Title: Forecast Modelling for Online Applications
+Version: 0.10.0
+Description: A framework for fitting adaptive forecasting models. Provides a way to use forecasts as input to models, e.g. weather forecasts for energy related forecasting. The models can be fitted recursively and can easily be setup for updating parameters when new data arrives. See the included vignettes, the website <https://onlineforecasting.org> and the paper "Short-term heat load forecasting for single family houses" <doi:10.1016/j.enbuild.2013.04.022>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Authors@R: c(
+    person("Peder", "Bacher", email="pbac@dtu.dk", role = "cre"),
+    person("Hjorleifur G", "Bergsteinsson", email="hgbe@dtu.dk", role = "aut"))
+Depends: R (>= 3.0.0)
+Imports: Rcpp (>= 0.12.18), R6 (>= 2.2.2), splines (>= 3.1.1), pbs,
+        digest
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, R.rsp, testthat (>= 3.0.0), data.table,
+        plotly
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+URL: https://onlineforecasting.org
+BugReports: https://lab.compute.dtu.dk/packages/onlineforecast/-/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-08-21 12:06:16 UTC; pbac
+Author: Peder Bacher [cre],
+  Hjorleifur G Bergsteinsson [aut]
+Maintainer: Peder Bacher <pbac@dtu.dk>
+Repository: CRAN
+Date/Publication: 2021-08-21 12:40:02 UTC

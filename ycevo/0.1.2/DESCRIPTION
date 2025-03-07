@@ -1,0 +1,48 @@
+Package: ycevo
+Type: Package
+Title: Nonparametric Estimation of the Yield Curve Evolution
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Bonsoo",
+             family = "Koo",
+             role = c("aut"),
+             email = "Bonsoo.Koo@monash.edu"),
+      person(given = "Nathaniel",
+             family = "Tomasetti",
+             role = "aut",
+             email = "nathaniel.tomasetti@gmail.com"),
+      person(given = "Kai-Yang",
+             family = "Goh",
+             role = "aut",
+             email = "kai-yang.goh@monash.edu"),
+      person(given = "Yangzhuoran Fin",
+             family = "Yang",
+             role = c("aut", "cre"),
+             email = "yangyangzhuoran@gmail.com",
+             comment = c(ORCID = "0000-0002-1232-8017")))
+Maintainer: Yangzhuoran Fin Yang <yangyangzhuoran@gmail.com>
+Description: Nonparametric estimation of the discount rate and yield curve. 
+    Koo, B., La Vecchia, D., & Linton, O. B. (2021) <doi:10.1016/j.jeconom.2020.04.014> 
+    describe the application with the Center for Research in Security Prices (CRSP) Bond Data 
+    and document the methods of this package.
+URL: https://github.com/bonsook/ycevo
+BugReports: https://github.com/bonsook/ycevo/issues
+License: GPL-3
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, magrittr, Matrix, Rcpp (>= 0.12.18), rlang, stats
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0), knitr, plotly, rmarkdown, tidyverse
+Language: en-AU
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-06-28 08:02:34 UTC; yangy
+Author: Bonsoo Koo [aut],
+  Nathaniel Tomasetti [aut],
+  Kai-Yang Goh [aut],
+  Yangzhuoran Fin Yang [aut, cre]
+    (<https://orcid.org/0000-0002-1232-8017>)
+Repository: CRAN
+Date/Publication: 2022-06-28 08:20:02 UTC

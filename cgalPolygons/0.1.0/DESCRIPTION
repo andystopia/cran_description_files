@@ -1,0 +1,26 @@
+Type: Package
+Package: cgalPolygons
+Title: R6 Based Utilities for Polygons using 'CGAL'
+Version: 0.1.0
+Authors@R: 
+    person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
+Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
+Description: Provides some utilities for polygons: area calculation,
+    decomposition into convex parts, Minkowski addition, Boolean operations, 
+    and more. Polygons with holes are supported. The algorithms are performed 
+    by the 'C++' library' CGAL' (<https://www.cgal.org/>).
+License: GPL-3
+URL: https://github.com/stla/cgalPolygons
+BugReports: https://github.com/stla/cgalPolygons/issues
+Depends: R (>= 2.10)
+Imports: graphics, methods, R6, Rcpp (>= 1.0.9)
+LinkingTo: BH, Rcpp, RcppCGAL, RcppEigen
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.2.3
+SystemRequirements: C++ 17, gmp, mpfr
+NeedsCompilation: yes
+Packaged: 2023-04-05 18:18:13 UTC; stla
+Author: Stéphane Laurent [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-04-06 10:03:21 UTC

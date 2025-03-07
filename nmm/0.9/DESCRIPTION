@@ -1,0 +1,31 @@
+Package: nmm
+Type: Package
+Title: Nonlinear Multivariate Models
+Version: 0.9
+Authors@R: c(
+            person("Simona","Jokubauskaite", email = "rteam.prog@gmail.com", role=c("aut", "cre")),
+            person("Reinhard","Hoessinger", role="aut"),
+            person("Friedrich","Leisch", role="aut"))
+Description: Estimates a subset of nonlinear multivariate models (NMM):
+    system of nonlinear regressions (SNR), logit, and a joint model of SNR and logit. 
+    'nmm' uniquely accounts for correlations between the error terms from nonlinear regressions 
+    and the probabilities from logit models. 
+    It also enables a very flexible design of logit: alternative-specific indirect utilities,
+    individual-specific choice set and number of actual choices.
+Imports: Rdpack, AER, mlogit, Hmisc, stats, gsubfn, abind, tidyr, plyr,
+        dplyr
+Depends: R (>= 4.0), systemfit, DEoptim, data.table, magrittr, maxLik
+RdMacros: Rdpack
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, recipes, Stat2Data
+NeedsCompilation: no
+Packaged: 2021-01-05 11:14:39 UTC; joku
+Author: Simona Jokubauskaite [aut, cre],
+  Reinhard Hoessinger [aut],
+  Friedrich Leisch [aut]
+Maintainer: Simona Jokubauskaite <rteam.prog@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-07 11:20:03 UTC

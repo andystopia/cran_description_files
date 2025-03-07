@@ -1,0 +1,54 @@
+Package: autoMrP
+Type: Package
+Title: Improving MrP with Ensemble Learning
+Version: 0.98
+Authors@R: c(
+    person(given = "Reto",
+		   family = "Wüest",
+		   role = c("aut"),
+		   email = "wuest.reto@gmail.com",
+		   comment = c(ORCID = "0000-0002-7502-6489")),
+    person(given = "Lucas",
+	       family = "Leemann",
+		   role = c("aut"),
+		   email = "leemann@ipz.uzh.ch",
+		   comment = c(ORCID = "0000-0001-5201-869X")),
+	person(given = "Philipp",
+	       family = "Broniecki",
+		   role = c("aut", "cre"),
+		   email = "philippbroniecki@gmail.com",
+		   comment = c(ORCID = "0000-0001-9214-4404")),
+	person(given = "Hadley",
+		   family = "Wickham",
+		   role = "ctb",
+		   email = "hadley@rstudio.com"))
+Description: A tool that improves the prediction performance of multilevel
+    regression with post-stratification (MrP) by combining a number of machine
+    learning methods. For information on the method, please refer to Broniecki, 
+	Wüest, Leemann (2020) ''Improving Multilevel Regression with 
+	Post-Stratification Through Machine Learning (autoMrP)'' forthcoming in 
+	'Journal of Politics'. Final pre-print version: 
+	<https://lucasleemann.files.wordpress.com/2020/07/automrp-r2pa.pdf>.
+URL: https://github.com/retowuest/autoMrP
+BugReports: https://github.com/retowuest/autoMrP/issues
+Depends: R (>= 3.6)
+Imports: rlang (>= 0.4.5), dplyr (>= 1.0.2), lme4 (>= 1.1), gbm (>=
+        2.1.5), e1071 (>= 1.7-3), tibble (>= 3.0.1), glmmLasso (>=
+        1.5.1), EBMAforecast (>= 1.0.0), foreach (>= 1.5.0), doParallel
+        (>= 1.0.15), doRNG (>= 1.8.2), ggplot2 (>= 3.3.2), knitr (>=
+        1.29), tidyr (>= 1.1.2), purrr (>= 0.3.4)
+Suggests: rmarkdown, R.rsp
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2021-01-19 10:11:26 UTC; Philipp
+Author: Reto Wüest [aut] (<https://orcid.org/0000-0002-7502-6489>),
+  Lucas Leemann [aut] (<https://orcid.org/0000-0001-5201-869X>),
+  Philipp Broniecki [aut, cre] (<https://orcid.org/0000-0001-9214-4404>),
+  Hadley Wickham [ctb]
+Maintainer: Philipp Broniecki <philippbroniecki@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-21 11:00:09 UTC

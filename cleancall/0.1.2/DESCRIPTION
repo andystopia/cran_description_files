@@ -1,0 +1,29 @@
+Package: cleancall
+Title: C Resource Cleanup via Exit Handlers
+Version: 0.1.2
+Authors@R: c(
+    person("Lionel", "Henry", , "lionel@rstudio.com", role = "aut"),
+    person("Gábor", "Csárdi", , "csardi.gabor@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7098-9676")),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: Wrapper of .Call() that runs exit handlers to clean up C
+    resources. Helps managing C (non-R) resources while using the R API.
+License: MIT + file LICENSE
+URL: https://github.com/r-lib/cleancall#readme,
+        https://r-lib.github.io/cleancall/
+BugReports: https://github.com/r-lib/cleancall/issues
+Depends: R (>= 3.4)
+Suggests: covr, testthat (>= 3.0.0)
+Config/Needs/website: tidyverse/tidytemplate
+Encoding: UTF-8
+RoxygenNote: 7.0.2
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-03-10 10:37:49 UTC; gaborcsardi
+Author: Lionel Henry [aut],
+  Gábor Csárdi [aut, cre] (<https://orcid.org/0000-0001-7098-9676>),
+  RStudio [cph, fnd]
+Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-10 11:40:07 UTC

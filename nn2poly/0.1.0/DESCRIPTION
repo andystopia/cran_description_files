@@ -1,0 +1,40 @@
+Package: nn2poly
+Title: Neural Network Weights Transformation into Polynomial
+        Coefficients
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Pablo", family = "Morala", role = c("aut", "cre"),
+           email = "moralapablo@gmail.com",
+           comment = c(ORCID = "0000-0002-4109-2330")),
+    person(given = "Iñaki", family = "Ucar", role = c("aut"),
+           email = "iucar@fedoraproject.org",
+           comment = c(ORCID = "0000-0001-6403-5550")),
+    person(given = "Jose Ignacio", family = "Diez", role = c("ctr"))
+    )
+Description: Implements a method that builds the coefficients of a polynomial
+    model that performs almost equivalently as a given neural network
+    (densely connected). This is achieved using Taylor expansion at the
+    activation functions.  The obtained polynomial coefficients can be used
+    to explain features (and their interactions) importance  in the neural network,
+    therefore working as a tool for interpretability or eXplainable Artificial 
+    Intelligence (XAI). See Morala et al. 2021 <doi:10.1016/j.neunet.2021.04.036>,
+    and 2023 <doi:10.1109/TNNLS.2023.3330328>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp, generics, matrixStats, pracma
+Suggests: keras, tensorflow, reticulate, luz, torch, cowplot, ggplot2,
+        patchwork, testthat (>= 3.0.0), vdiffr, knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+URL: https://ibidat.github.io/nn2poly/
+NeedsCompilation: yes
+Packaged: 2024-01-24 11:53:49 UTC; pablo
+Author: Pablo Morala [aut, cre] (<https://orcid.org/0000-0002-4109-2330>),
+  Iñaki Ucar [aut] (<https://orcid.org/0000-0001-6403-5550>),
+  Jose Ignacio Diez [ctr]
+Maintainer: Pablo Morala <moralapablo@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-24 14:50:14 UTC

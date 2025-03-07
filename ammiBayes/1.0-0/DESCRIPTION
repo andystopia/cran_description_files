@@ -1,0 +1,30 @@
+Package: ammiBayes
+Type: Package
+Title: Bayesian Ammi Model for Ordinal Data
+Version: 1.0-0
+Date: 2022-02-03
+Maintainer: Fabio M. Correa <f.correa@ru.ac.za>
+Contact: Fabio Mathias Correa <f.correa@ru.ac.za>
+Authors@R: c(person("Cristian T. E.", "Mendes", role="aut")
+ , person("Carlos P.", "Silva", role=c("com", "ths"))
+ , person("Julio S. S.", "Bueno-Filho", role="ths")
+ , person("Fabio M.", "Correa", role=c("aut","cre"), email="f.correa@ru.ac.za", 
+   comment = c(ORCID = "0000-0002-6708-9316"))
+   )
+Author: Cristian T. E. Mendes [aut],
+  Carlos P. Silva [com, ths],
+  Julio S. S. Bueno-Filho [ths],
+  Fabio M. Correa [aut, cre] (<https://orcid.org/0000-0002-6708-9316>)
+Depends: R (>= 4.0.0)
+VignetteBuilder: R.rsp
+Imports: lattice, latticeExtra, distfree.cr, coda, spam, movMF, msm,
+        bayesplot, Hmisc
+Suggests: ggpubr, R.rsp
+LazyData: true
+Description: Flexible multi-environment trials analysis via MCMC method for Additive Main Effects and Multiplicative Model (AMMI) for ordinal data. 
+ Biplot with the averages and regions of confidence can be generated. The chains run in parallel on Linux systems and run serially on Windows.
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2022-02-07 19:03:41 UTC; fmcron
+Repository: CRAN
+Date/Publication: 2022-02-08 16:20:05 UTC

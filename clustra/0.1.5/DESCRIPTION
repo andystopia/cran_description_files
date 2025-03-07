@@ -1,0 +1,43 @@
+Package: clustra
+Version: 0.1.5
+Date: 2021-11-19
+Title: Clustering Trajectories Anchored at Intervention Time
+Authors@R: c(person("George", "Ostrouchov", role = c("aut", "cre"), email = 
+        "ostrouchovg@ornl.gov"),
+        person("David", "Gagnon", role = "aut"),
+        person("Hanna", "Gerlovin", role = "aut"),
+        person("Chen", "Wei-Chen", role = "ctb"),
+        person("Schmidt", "Drew", role = "ctb"),
+        person("Oak Ridge National Laboratory", role="cph"),
+        person("U.S. Department of Veteran's Affairs", role="fnd",
+        comment="Project: Million Veteran Program Data Core")
+        )
+Depends: R (>= 3.5.0)
+Imports: data.table, graphics, grDevices, methods, mgcv, MixSim,
+        parallel, stats
+Suggests: ggplot2, knitr, rmarkdown
+Description: Clusters medical trajectories (unequally spaced and unequal 
+    length time series) aligned by an intervention time. Performs k-means 
+    clustering, where each mean is a thin plate spline fit to all points in 
+    a cluster. Distance is MSE across trajectory points to cluster spline.
+    Provides silhouette plots and Adjusted Rand Index evaluations of the number
+    of clusters. Scales well to large data with multicore parallelism available
+    to speed computation.
+LazyLoad: yes
+License: BSD 2-clause License + file LICENSE
+Encoding: UTF-8
+Maintainer: George Ostrouchov <ostrouchovg@ornl.gov>
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-11-22 00:34:34 UTC; ost
+Author: George Ostrouchov [aut, cre],
+  David Gagnon [aut],
+  Hanna Gerlovin [aut],
+  Chen Wei-Chen [ctb],
+  Schmidt Drew [ctb],
+  Oak Ridge National Laboratory [cph],
+  U.S. Department of Veteran's Affairs [fnd] (Project: Million Veteran
+    Program Data Core)
+Repository: CRAN
+Date/Publication: 2021-11-22 09:00:08 UTC

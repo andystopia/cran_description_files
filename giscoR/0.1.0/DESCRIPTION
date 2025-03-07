@@ -1,0 +1,30 @@
+Package: giscoR
+Type: Package
+Title: Download Geospatial Data from GISCO API - Eurostat
+Version: 0.1.0
+Authors@R: c(
+  person("Diego", "Hernangómez", role=c("aut", "cre"), email="diego.hernangomezherrero@gmail.com", comment=c(ORCID="0000-0001-8457-4658")))
+Description: Tools to download data from the GISCO 
+    (Geographic Information System of the Commission) Eurostat database
+    <https://ec.europa.eu/eurostat/web/gisco>.
+    This package is in no way officially related to or endorsed by Eurostat.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+BugReports: https://github.com/dieghernan/giscoR/issues
+URL: https://dieghernan.github.io/giscoR/,
+        https://github.com/dieghernan/giscoR
+Depends: R (>= 3.3.0)
+Imports: sf (>= 0.9), countrycode (>= 1.2.0), geojsonsf (>= 2.0)
+Suggests: cartography (>= 2.0.0), colorspace, eurostat, lwgeom,
+        tinytest, knitr, rmarkdown
+Date: 2020-10-05
+VignetteBuilder: knitr
+SystemRequirements: GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ.4 (>= 4.8.0)
+NeedsCompilation: no
+Packaged: 2020-10-06 12:02:04 UTC; rstudio-user
+Author: Diego Hernangómez [aut, cre] (<https://orcid.org/0000-0001-8457-4658>)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-10-13 14:30:02 UTC

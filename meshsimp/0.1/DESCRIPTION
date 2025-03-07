@@ -1,0 +1,29 @@
+Package: meshsimp
+Version: 0.1
+Date: 2017-06-09
+Title: Simplification of Surface Triangular Meshes with Associated
+        Distributed Data
+Authors@R: c(person("Franco", "Dassi", email = "franco.dassi@unimib.it", role = "aut"),
+	person("Bree", "Ettinger", email = "", role = "aut"),
+	person("Marco", "Martinolli", email = "marco.martinolli@mail.polimi.it", role = "aut"),
+	person("Simona", "Perotto", email = "simona.perotto@polimi.it", role = "aut"),
+	person("Laura M.", "Sangalli", email = "laura.sangalli@polimi.it", role = "aut"),
+	person("Stefano", "Ubbiali", email = "stefano.ubbiali@mail.polimi.it", role = c("aut","cre")))
+Author: Franco Dassi [aut],
+	Bree Ettinger [aut],
+	Marco Martinolli [aut],
+	Simona Perotto [aut],
+	Laura M. Sangalli [aut],
+	Stefano Ubbiali [aut, cre]
+Maintainer: Stefano Ubbiali <stefano.ubbiali@mail.polimi.it>
+Depends: R (>= 3.0.2), Rcpp (>= 0.9.11), plot3D
+LinkingTo: Rcpp (>= 0.9.11), RcppEigen
+Imports: methods
+Description: Iterative simplification strategy for surface triangular meshes (2.5D meshes) with associated data. Each iteration corresponds to an edge collapse where the selection of the edge to contract is driven by a cost functional that depends both on the geometry of the mesh than on the distribution of the data locations over the mesh. The library can handle both zero and higher genus surfaces. The package has been designed to be fully compatible with the R package 'fdaPDE', which implements regression models with partial differential regularizations, making use of the Finite Element Method. In the future, the functionalities provided by the current package may be directly integrated into 'fdaPDE'.	
+License: GPL-3
+NeedsCompilation: yes
+SystemRequirements: C++11
+RoxygenNote: 6.0.1
+Packaged: 2017-06-12 20:29:56 UTC; stefano
+Repository: CRAN
+Date/Publication: 2017-06-12 23:17:00 UTC

@@ -1,0 +1,25 @@
+Package: W4MRUtils
+Title: Utils List for W4M - Workflow for Metabolomics
+Version: 0.0.1
+Authors@R: 
+    person("Lain", "Pavot", "", "lain.pavot@inrae.fr", role = c("aut", "cre"))
+Description: Provides a set of utility function to prevent the spread of
+    utilities script in W4M (Workflow For Metabolomics) scripts, and centralize
+    them in a single package.
+    Some are meant to be replaced by real packages in a near future, like
+    the parse_args() function: it is here only to prepare the ground for
+    more global changes in W4M scripts and tools.
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: methods
+Suggests: covr, DT, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Collate: dataframe_helpers.R miniTools.R RcheckLibrary.R
+NeedsCompilation: no
+Packaged: 2022-12-14 16:58:18 UTC; lpavot
+Author: Lain Pavot [aut, cre]
+Maintainer: Lain Pavot <lain.pavot@inrae.fr>
+Repository: CRAN
+Date/Publication: 2022-12-15 09:00:02 UTC

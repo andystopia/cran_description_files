@@ -1,0 +1,38 @@
+Package: viruslearner
+Title: Ensemble Learning for HIV-Related Metrics
+Version: 0.0.1
+Authors@R: c(
+    person("Juan Pablo", "Acuña González", email = "22253567@uagro.mx", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0003-6029-6560")),
+    person("María de los Ángeles", "Salgado Jiménez", email = "ansaji83@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0003-3078-9156")),
+    person("Baltazar", "Joanico Morales", role = c("aut"),
+           comment = c(ORCID = "0000-0001-5001-5647")),
+    person("Juan", "Villagómez Méndez", role = c("aut"),
+           comment = c(ORCID = "0000-0001-8385-8624"))     
+           )
+Description: Advanced statistical modeling techniques for ensemble learning, specifically tailored to the analysis of lymphocyte counts and viral load data in the context of HIV research. Empowering researchers and practitioners, this tool provides a comprehensive solution for tasks such as analysis, prediction and risk calculation related to key viral metrics. The package incorporates cutting-edge ensemble learning principles, inspired by model stacking techniques of Simon P. Couch and Max Kuhn (2022) <doi:10.21105/joss.04471> and adhering to tidy data principles, offering a robust and reproducible framework for HIV research.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: baguette, kernlab, kknn, knitr, ranger, rmarkdown, rules,
+        testthat (>= 3.0.0), vdiffr
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyData: true
+Imports: dials, dplyr, hardhat, parsnip, recipes, rsample, stacks,
+        stats, tidyselect, tune, workflows, workflowsets, yardstick
+URL: https://github.com/juanv66x/viruslearner
+BugReports: https://github.com/juanv66x/viruslearner/issues
+NeedsCompilation: no
+Packaged: 2024-01-27 15:36:34 UTC; jp
+Author: Juan Pablo Acuña González [aut, cre, cph]
+    (<https://orcid.org/0009-0003-6029-6560>),
+  María de los Ángeles Salgado Jiménez [aut]
+    (<https://orcid.org/0000-0003-3078-9156>),
+  Baltazar Joanico Morales [aut]
+    (<https://orcid.org/0000-0001-5001-5647>),
+  Juan Villagómez Méndez [aut] (<https://orcid.org/0000-0001-8385-8624>)
+Maintainer: Juan Pablo Acuña González <22253567@uagro.mx>
+Repository: CRAN
+Date/Publication: 2024-01-31 15:10:02 UTC

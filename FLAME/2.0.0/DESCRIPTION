@@ -1,0 +1,44 @@
+Package: FLAME
+Type: Package
+Title: Interpretable Matching for Causal Inference
+Version: 2.0.0
+Authors@R: 
+  c(person(given = 'Vittorio', 
+           family = 'Orlandi',
+           role = c('aut', 'cre'),
+           email = 'almost.matching.exactly@gmail.com'),
+    person(given = 'Sudeepa',
+           family = 'Roy',
+           role = 'aut',
+           email = 'sudeepa@cs.duke.edu'),
+    person(given = 'Cynthia', 
+           family = 'Rudin', 
+           role = 'aut', 
+           email = 'cynthia@cs.duke.edu'),
+    person(given = 'Alexander',
+           family = 'Volfovsky',
+           role = 'aut', 
+           email = 'alexander.volfovsky@duke.edu'))
+BugReports: https://github.com/vittorioorlandi/FLAME/issues
+Description: Efficient implementations of the algorithms in the 
+    Almost-Matching-Exactly framework for interpretable matching in causal
+    inference. These algorithms match units via a learned, weighted Hamming
+    distance that determines which covariates are more important to match on.
+    For more information and examples, see the Almost-Matching-Exactly website. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, magrittr, mice, glmnet, gmp, rlang, tidyr, xgboost,
+        devtools
+RoxygenNote: 7.0.2
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-04-12 02:56:47 UTC; vittorioorlandi
+Author: Vittorio Orlandi [aut, cre],
+  Sudeepa Roy [aut],
+  Cynthia Rudin [aut],
+  Alexander Volfovsky [aut]
+Maintainer: Vittorio Orlandi <almost.matching.exactly@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-04-15 00:30:06 UTC

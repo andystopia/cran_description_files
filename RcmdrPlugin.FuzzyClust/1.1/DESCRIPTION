@@ -1,0 +1,27 @@
+Package: RcmdrPlugin.FuzzyClust
+Type: Package
+Title: R Commander Plug-in for Fuzzy Clustering Methods (Fuzzy C-Means
+        and Gustafson Kessel)
+Version: 1.1
+Date: 2016-09-03
+Author: Achmad Fauzi Bagus F <uzi.fauz@gmail.com>, Setia Pramana
+Maintainer: Achmad Fauzi Bagus F <uzi.fauz@gmail.com>
+Description: The R Commander Plug-in for Fuzzy Clustering Methods. This Plug-
+    in provide Graphical User Interface of 2 methods of Fuzzy Clustering (Fuzzy C-
+    Means /FCM and Gustafson Kessel-Babuska). For validation of clustering, this plug-
+    in use Xie Beni Index, MPC index, and CE index. For statistical test (test
+    of significant differences of grouping/clustering), this plug-in use MANOVA
+    analysis with Pillai trace statistics. For stabilize the result, this package provide
+    soft voting cluster ensemble function. Visualization of result are provided via plugin that must be load in Rcmdr file.
+Depends: R (>= 3.2.5)
+Imports: Rcmdr, doParallel, tcltk2, foreach, clue, ggplot2, MASS,
+        reshape2, tkrplot, iterators, parallel
+Suggests: knitr, rmarkdown
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-09-03 21:57:09 UTC; Achmad Fauzi
+Repository: CRAN
+Date/Publication: 2016-09-04 09:36:21

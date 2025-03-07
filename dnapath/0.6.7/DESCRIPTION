@@ -1,0 +1,25 @@
+Package: dnapath
+Type: Package
+Title: Differential Network Analysis using Gene Pathways
+Version: 0.6.7
+Author: Tyler Grimes and Somnath Datta
+Maintainer: Tyler Grimes <tyler.grimes@unf.edu>
+Description: Integrates pathway information into the differential network analysis of two gene expression datasets as described in Grimes, Potter, and Datta (2019) <doi:10.1038/s41598-019-41918-3>. Provides summary functions to break down the results at the pathway, gene, or individual connection level. The differential networks for each pathway of interest can be plotted, and the visualization will highlight any differentially expressed genes and all of the gene-gene associations that are significantly differentially connected.
+Depends: R (>= 4.0)
+License: GPL-2 | GPL-3
+LazyData: true
+Imports: Rcpp (>= 1.0.1), biomaRt, corpcor, igraph, ggplot2, SeqNet,
+        Rdpack, dplyr, tibble, stats, methods, curl, graphics,
+        grDevices, utils
+RdMacros: Rdpack
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+SystemRequirements: C++11
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, readr, bc3net,
+        DWLasso, huge, GENIE3, minet, reactome.db
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-03-18 00:23:29 UTC; Grimes
+Repository: CRAN
+Date/Publication: 2021-03-18 10:10:08 UTC

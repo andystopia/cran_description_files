@@ -1,0 +1,28 @@
+Package: signnet
+Title: Methods to Analyse Signed Networks
+Version: 0.8.1
+Authors@R: 
+    person(given = "David",
+           family = "Schoch",
+           role = c("aut", "cre"),
+           email = "david@schochastics.net",
+           comment = c(ORCID = "0000-0003-2952-4812"))
+Description: Methods for the analysis of signed networks. This includes several measures for structural balance as introduced by Cartwright and Harary (1956) <doi:10.1037/h0046049>, blockmodeling algorithms from Doreian (2008) <doi:10.1016/j.socnet.2008.03.005>, various centrality indices, and projections of signed two-mode networks introduced by Schoch (2020) <doi:10.1080/0022250X.2019.1711376>.
+Depends: R (>= 3.2.0)
+URL: https://github.com/schochastics/signnet
+BugReports: https://github.com/schochastics/signnet/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: igraph, Rcpp, Matrix
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 2.1.0), covr, ggplot2, ggraph, knitr, rmarkdown,
+        ompr, ompr.roi, ROI.plugin.glpk, ROI
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-10-17 16:24:16 UTC; david
+Author: David Schoch [aut, cre] (<https://orcid.org/0000-0003-2952-4812>)
+Maintainer: David Schoch <david@schochastics.net>
+Repository: CRAN
+Date/Publication: 2022-10-18 07:40:02 UTC

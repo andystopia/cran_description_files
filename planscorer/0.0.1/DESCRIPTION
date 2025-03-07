@@ -1,0 +1,42 @@
+Package: planscorer
+Title: Score Redistricting Plans with 'PlanScore'
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "trl", "cre"),
+           email = "christopherkenny@fas.harvard.edu",
+           comment = c("R port", ORCID = "0000-0002-9386-6860")),
+    person(given = "Michal",
+           family = "Migurski",
+           role = c("aut"),
+           comment = c("python original, https://github.com/PlanScore/PlanScore-CLI")),
+    person(given = "Cory",
+           family = "McCartan",
+           role = "art")
+           )
+Description: Provides access to the 'PlanScore' Application Programming Interface 
+    (<https://github.com/PlanScore/PlanScore/blob/main/API.md>) for scoring redistricting
+    plans. Allows for upload of plans from block assignment files and shape files. 
+    For shapes in memory, such as from 'sf' or 'redist', it processes them to save
+    and upload. Includes tools for tidying responses and saving output from the 
+    website.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, curl, dplyr, fs, httr2, jsonlite, purrr, readr, rlang,
+        sf, stringr, tibble, tidyr
+URL: http://christophertkenny.com/planscorer/
+Suggests: httptest2, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-02-22 19:26:01 UTC; chris
+Author: Christopher T. Kenny [aut, trl, cre] (R port,
+    <https://orcid.org/0000-0002-9386-6860>),
+  Michal Migurski [aut] (python original,
+    https://github.com/PlanScore/PlanScore-CLI),
+  Cory McCartan [art]
+Maintainer: Christopher T. Kenny <christopherkenny@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2024-02-23 19:10:02 UTC

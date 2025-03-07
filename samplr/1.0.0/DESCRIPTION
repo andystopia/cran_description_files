@@ -1,0 +1,48 @@
+Package: samplr
+Type: Package
+Title: Compare Human Performance to Sampling Algorithms
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Lucas",
+           family = "Castillo",
+           role = c("aut", "cre", "cph"),
+           email = "lucas.castillo-marti@warwick.ac.uk",
+           comment = c(ORCID = "0000-0003-0274-0777")),
+    person(given = "Yun-Xiao",
+           family = "Li",
+           role = c("aut", "cph"),
+           email = "yunxiao.li@warwick.ac.uk",
+           comment = c(ORCID = "0000-0002-3509-6618")),
+    person(given = "Adam N",
+           family = "Sanborn",
+           role = c("aut", "cph"),
+           email = "a.n.sanborn@warwick.ac.uk",
+           comment = c(ORCID = "0000-0003-0442-4372")),
+    person("European Research Council (ERC)",
+           role = c("fnd"))
+   )
+Maintainer: Lucas Castillo <lucas.castillo-marti@warwick.ac.uk>
+Description: Understand human performance from the perspective of sampling, both looking at how people generate samples and how people use the samples they have generated. A longer overview and other resources can be found at <https://sampling.warwick.ac.uk>.
+License: CC BY 4.0
+Imports: Rcpp (>= 1.0.6), ggplot2, latex2exp, pracma, stats, lme4,
+        Rdpack, R6, graphics
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), vdiffr, bench, dplyr,
+        tidyr, magrittr, mvtnorm, xml2, samplrData
+LinkingTo: Rcpp, RcppArmadillo, RcppDist, testthat,
+RdMacros: Rdpack
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/lucas-castillo/samplr
+BugReports: https://github.com/lucas-castillo/samplr/issues
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2024-07-30 10:49:45 UTC; Lucas
+Author: Lucas Castillo [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0274-0777>),
+  Yun-Xiao Li [aut, cph] (<https://orcid.org/0000-0002-3509-6618>),
+  Adam N Sanborn [aut, cph] (<https://orcid.org/0000-0003-0442-4372>),
+  European Research Council (ERC) [fnd]
+Repository: CRAN
+Date/Publication: 2024-08-01 09:00:02 UTC

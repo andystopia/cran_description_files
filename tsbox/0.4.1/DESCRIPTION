@@ -1,0 +1,36 @@
+Package: tsbox
+Type: Package
+Title: Class-Agnostic Time Series
+Version: 0.4.1
+Authors@R: c(
+    person("Christoph", "Sax", email = "christoph.sax@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7192-7044")),
+    person("Cathy", "Chamberlin", role = c("rev")),
+    person("Nunes", "Matt", role = c("rev"))
+    )
+Description: Time series toolkit with identical behavior for all
+  time series classes: 'ts','xts', 'data.frame', 'data.table', 'tibble', 'zoo',
+  'timeSeries', 'tsibble', 'tis' or 'irts'. Also converts reliably between these classes.
+Imports: data.table (>= 1.10.0), anytime
+Suggests: testthat, dplyr, tibble, tidyr, forecast, seasonal, dygraphs,
+        xts, ggplot2, scales, knitr, rmarkdown, tsibble (>= 0.8.2),
+        tsibbledata, tibbletime, tseries, units, zoo, tis, timeSeries,
+        nycflights13, imputeTS, spelling, covr
+License: GPL-3
+Encoding: UTF-8
+URL: https://docs.ropensci.org/tsbox/,
+        https://github.com/ropensci/tsbox
+BugReports: https://github.com/ropensci/tsbox/issues
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-05-06 18:26:49 UTC; christophsax
+Author: Christoph Sax [aut, cre] (<https://orcid.org/0000-0002-7192-7044>),
+  Cathy Chamberlin [rev],
+  Nunes Matt [rev]
+Maintainer: Christoph Sax <christoph.sax@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-08 09:20:02 UTC

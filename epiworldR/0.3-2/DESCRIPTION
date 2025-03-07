@@ -1,0 +1,42 @@
+Package: epiworldR
+Type: Package
+Title: Fast Agent-Based Epi Models
+Version: 0.3-2
+Authors@R: c(
+  person(given="George", family="Vega Yon", role=c("aut","cre"),
+  email="g.vegayon@gmail.com", comment = c(ORCID = "0000-0002-3171-0844")),
+  person(given="Derek", family="Meyer", role=c("aut"),
+  email="derekmeyer37@gmail.com", comment = c(ORCID = "0009-0005-1350-6988")),
+  person(given="Susan", family="Holmes", role = "rev", comment =
+         c(what = "JOSS reviewer", ORCID="0000-0002-2208-8168")),
+  person(given="Abinash", family="Satapathy", role = "rev", comment =
+         c(what = "JOSS reviewer", ORCID="0000-0002-2955-2744")),
+  person(given="Carinogurjao", role = "rev"),
+  person("Centers for Disease Control and Prevention", role="fnd", comment = "Award number 1U01CK000585; 75D30121F00003"
+  ))
+Description: A flexible framework for Agent-Based Models (ABM), the 'epiworldR' package provides methods for prototyping disease outbreaks and transmission models using a 'C++' backend, making it very fast. It supports multiple epidemiological models, including the Susceptible-Infected-Susceptible (SIS), Susceptible-Infected-Removed (SIR), Susceptible-Exposed-Infected-Removed (SEIR), and others, involving arbitrary mitigation policies and multiple-disease models. Users can specify infectiousness/susceptibility rates as a function of agents' features, providing great complexity for the model dynamics. Furthermore, 'epiworldR' is ideal for simulation studies featuring large populations.
+URL: https://github.com/UofUEpiBio/epiworldR,
+        https://uofuepibio.github.io/epiworldR/,
+        https://uofuepibio.github.io/epiworldR-workshop/
+BugReports: https://github.com/UofUEpiBio/epiworldR/issues
+License: MIT + file LICENSE
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+LinkingTo: cpp11
+Suggests: knitr, rmarkdown, tinytest, netplot, igraph, data.table
+Imports: utils
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-10-07 21:39:04 UTC; root
+Author: George Vega Yon [aut, cre] (<https://orcid.org/0000-0002-3171-0844>),
+  Derek Meyer [aut] (<https://orcid.org/0009-0005-1350-6988>),
+  Susan Holmes [rev] (JOSS reviewer,
+    <https://orcid.org/0000-0002-2208-8168>),
+  Abinash Satapathy [rev] (JOSS reviewer,
+    <https://orcid.org/0000-0002-2955-2744>),
+  Carinogurjao [rev],
+  Centers for Disease Control and Prevention [fnd] (Award number
+    1U01CK000585; 75D30121F00003)
+Maintainer: George Vega Yon <g.vegayon@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-08 07:10:02 UTC

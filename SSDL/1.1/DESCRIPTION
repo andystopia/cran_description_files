@@ -1,0 +1,28 @@
+Package: SSDL
+Type: Package
+Title: Sketched Stochastic Dictionary Learning
+Version: 1.1
+Date: 2021-03-03
+Authors@R: c(person("Olga","Permiakova", role = c("aut", "cre"), email = "olga.permiakova@gmail.com"),
+    person("Thomas","Burger",role = "aut",email = "thomas.burger@cea.fr"))
+Maintainer: Olga Permiakova <olga.permiakova@gmail.com>
+Description: Toolbox for learning a dictionary from large-scale data collection
+  using the Sketched Stochastic Dictionary Learning method (see Permiakova O, Burger T. 
+ "Sketched Stochastic Dictionary Learning for large-scale data and application to large-scale 
+ mass spectrometry data", 2021). It includes the routines for the dictionary initialization. 
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Imports: Rcpp, bigstatsr (>= 1.2.3), chickn (>= 1.2.3), RcppParallel,
+        glmnet, parallel, foreach, doParallel, doRNG, reshape2, stats,
+        utils, pracma, Rdpack
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel, rmio
+SystemRequirements: C++11
+RoxygenNote: 7.1.1
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2021-03-08 14:50:00 UTC; satrix
+Author: Olga Permiakova [aut, cre],
+  Thomas Burger [aut]
+Repository: CRAN
+Date/Publication: 2021-03-10 19:40:08 UTC

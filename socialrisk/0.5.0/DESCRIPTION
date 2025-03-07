@@ -1,0 +1,36 @@
+Package: socialrisk
+Type: Package
+Title: Identifying Patient Social Risk from Administrative Health Care
+        Data
+Version: 0.5.0
+Authors@R: 
+    person(given = "Wyatt",
+           family = "Bensken",
+           role = c("aut", "cre"),
+           email = "wpb27@case.edu",
+           comment = c(ORCID = "0000-0002-2597-9732"))
+Description: Social risks are increasingly becoming a critical component of health
+    care research. One of the most common ways to identify social needs is by using
+    ICD-10-CM "Z-codes." This package identifies social risks using varying taxonomies
+    of ICD-10-CM Z-codes from administrative health care data. The conceptual
+    taxonomies come from:
+    Centers for Medicare and Medicaid Services (2021) <https://www.cms.gov/files/document/zcodes-infographic.pdf>,
+    Reidhead (2018) <https://www.mhanet.com/mhaimages/Policy_Briefs/PolicyBrief_SDOH.pdf>,
+    A Arons, S DeSilvey, C Fichtenberg, L Gottlieb (2018) <https://sirenetwork.ucsf.edu/tools-resources/resources/compendium-medical-terminology-codes-social-risk-factors>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: tidyverse, dplyr, magrittr, stringr, rlang, tidyselect, tidyr,
+        stats, devtools
+URL: https://github.com/WYATTBENSKEN/multimorbidity
+BugReports: https://github.com/WYATTBENSKEN/multimorbidity/issues
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2022-03-09 23:27:04 UTC; wyattbensken
+Author: Wyatt Bensken [aut, cre] (<https://orcid.org/0000-0002-2597-9732>)
+Maintainer: Wyatt Bensken <wpb27@case.edu>
+Repository: CRAN
+Date/Publication: 2022-03-11 10:00:02 UTC

@@ -1,0 +1,33 @@
+Package: spatstat.Knet
+Type: Package
+Title: Extension to 'spatstat' for Large Datasets on a Linear Network
+Version: 2.0-1
+Date: 2022-01-12
+Depends: R (>= 3.5.0), spatstat.data (>= 2.0), spatstat.sparse (>=
+        2.0), spatstat.geom (>= 2.0), spatstat.random (>= 2.0),
+        spatstat.core (>= 2.3-2), spatstat.linnet (>= 2.3-1), spatstat
+        (>= 2.0)
+Imports: spatstat.utils (>= 2.1), Matrix
+Authors@R: c(person(given="Suman",
+		    family="Rakshit",
+		    role = c("aut", "cph"),
+     		    email = "suman.rakshit@curtin.edu.au",
+		    comment=c(ORCID="0000-0003-0052-128X")),
+	     person(given="Adrian",
+	            family="Baddeley",
+		    role = c("cre", "cph"),
+       	            email = "Adrian.Baddeley@curtin.edu.au",
+		    comment = c(ORCID="0000-0001-9499-8382")))
+Maintainer: Adrian Baddeley <Adrian.Baddeley@curtin.edu.au>
+Description: Extension to the 'spatstat' family of packages, for analysing
+	     large datasets of spatial points on a network. The geometrically-
+	     corrected K function is computed using a memory-efficient
+	     tree-based algorithm described by Rakshit, Baddeley and Nair (2019).
+License: GPL (>= 2)
+NeedsCompilation: yes
+ByteCompile: true
+Packaged: 2022-02-12 10:41:06 UTC; adrian
+Author: Suman Rakshit [aut, cph] (<https://orcid.org/0000-0003-0052-128X>),
+  Adrian Baddeley [cre, cph] (<https://orcid.org/0000-0001-9499-8382>)
+Repository: CRAN
+Date/Publication: 2022-02-16 13:40:05 UTC

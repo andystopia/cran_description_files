@@ -1,0 +1,29 @@
+Package: densityClust
+Type: Package
+Title: Clustering by Fast Search and Find of Density Peaks
+Version: 0.3
+Date: 2017-10-24
+Authors@R: c(
+  person("Thomas Lin", "Pedersen", email = "thomasp85@gmail.com", role = c("aut", "cre")),
+  person("Sean", "Hughes", email = "", role = c("aut")),
+  person("Xiaojie", "Qiu", email = "xqiu@uw.edu", role = c("aut")))
+Maintainer: Thomas Lin Pedersen <thomasp85@gmail.com>
+Description: An improved implementation (based on k-nearest neighbors) of the 
+    density peak clustering algorithm, originally described by Alex Rodriguez 
+    and Alessandro Laio (Science, 2014 vol. 344). It can handle large datasets
+    (> 100, 000 samples) very efficiently. It was initially implemented by 
+    Thomas Lin Pedersen, with inputs from Sean Hughes and later improved by 
+    Xiaojie Qiu to handle large datasets with kNNs.
+License: GPL (>= 2)
+Suggests: testthat
+LinkingTo: Rcpp
+Imports: Rcpp, FNN, Rtsne, ggplot2, ggrepel, grDevices, gridExtra,
+        RColorBrewer
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-10-24 11:49:46 UTC; w22066
+Author: Thomas Lin Pedersen [aut, cre],
+  Sean Hughes [aut],
+  Xiaojie Qiu [aut]
+Repository: CRAN
+Date/Publication: 2017-10-24 12:52:51 UTC

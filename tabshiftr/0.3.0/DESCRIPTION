@@ -1,0 +1,61 @@
+Package: tabshiftr
+Title: Reshape Disorganised Messy Data
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Steffen",
+             family = "Ehrmann",
+             role = c("aut", "cre"),
+             email = "steffen@funroll-loops.de",
+             comment = c(ORCID = "0000-0002-2958-0796")),
+      person(given = "Carsten",
+             family = "Meyer",
+             role = "aut",
+             email = "carsten.meyer@idiv.de",
+             comment = c(ORCID = "0000-0003-3927-5856")),
+      person(given = "Abdualmaged",
+             family = "Alhemiary",
+             role = "ctb"),
+      person(given = "Amelie",
+             family = "Haas",
+             role = "ctb"),
+      person(given = "Annika",
+             family = "Ertel",
+             role = "ctb"),
+      person(given = "Arne",
+             family = "Rümmler",
+             role = "ctb",
+             email = "arne.ruemmler@tu-dresden.de",
+             comment = c(ORCID = "0000-0001-8637-9071")),
+      person(given = "Caroline",
+             family = "Busse",
+             role = "ctb"))
+Description: Helps the user to build and register schema descriptions of 
+    disorganised (messy) tables. Disorganised tables are tables that are 
+    not in a topologically coherent form, where packages such as 'tidyr' could 
+    be used for reshaping. The schema description documents the arrangement of 
+    input tables and is used to reshape them into a standardised (tidy) output 
+    format.
+URL: https://github.com/EhrmannS/tabshiftr
+BugReports: https://github.com/EhrmannS/tabshiftr/issues
+Depends: R (>= 2.10)
+Language: en-gb
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: checkmate, rlang, tibble, dplyr, tidyr, magrittr, tidyselect,
+        testthat, crayon, methods, purrr, stringr
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, bookdown, readr, covr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-30 15:29:22 UTC; se87kuhe
+Author: Steffen Ehrmann [aut, cre] (<https://orcid.org/0000-0002-2958-0796>),
+  Carsten Meyer [aut] (<https://orcid.org/0000-0003-3927-5856>),
+  Abdualmaged Alhemiary [ctb],
+  Amelie Haas [ctb],
+  Annika Ertel [ctb],
+  Arne Rümmler [ctb] (<https://orcid.org/0000-0001-8637-9071>),
+  Caroline Busse [ctb]
+Maintainer: Steffen Ehrmann <steffen@funroll-loops.de>
+Repository: CRAN
+Date/Publication: 2021-07-01 07:10:02 UTC

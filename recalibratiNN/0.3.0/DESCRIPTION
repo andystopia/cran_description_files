@@ -1,0 +1,50 @@
+Package: recalibratiNN
+Title: Quantile Recalibration for Regression Models
+Version: 0.3.0
+Authors@R: 
+  c(person(given = "Carolina",
+           family = "Musso",
+           role = c("aut", "cre", 'cph'),
+           email = "cmusso86@gmail.com",
+           comment = c(ORCID = "0000-0002-8107-6458")),
+    person(given = "Ricardo",
+           family = "Torres",
+           role = c("aut", 'cph'),
+           email = "ricardotbreis@gmail.com",
+           comment = c(ORCID = "0009-0000-9100-7125")),
+    person(given = "João",
+           family = "Reis",
+           role = c("aut", 'cph'),
+           email = "j.rodriguesreis@gmail.com"),
+    person(given = "Guilherme",
+           family = "Rodrigues",
+           role = c("aut","ths", 'cph'),
+           email = "guilhermerodrigues@unb.br",
+           comment = c(ORCID = "0000-0003-2009-4844")))
+Description: Enables the diagnostics and enhancement of regression model calibration.It offers both global and local visualization tools for calibration diagnostics and provides one recalibration method: Torres R, Nott DJ, Sisson SA, Rodrigues T, Reis JG, Rodrigues GS (2024) <doi:10.48550/arXiv.2403.05756>. The method leverages on Probabilistic Integral Transform (PIT) values to both evaluate and perform the calibration of statistical models. For a more detailed description of the package, please refer to the bachelor's thesis available bellow.  
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://bdm.unb.br/handle/10483/38504,
+        https://github.com/cmusso86/recalibratiNN,
+        https://cmusso86.github.io/recalibratiNN/
+BugReports: https://github.com/cmusso86/recalibratiNN/issues
+Imports: stats(>= 3.0.0), dplyr(>= 1.0.0), ggplot2 (>= 3.0.0), purrr(>=
+        1.0.0), RANN(>= 2.0.0), tidyr(>= 1.0.0), tibble(>= 3.0.0), glue
+        (>= 1.0.0), magrittr(>= 2.0.0), Hmisc (>= 5.0.0), Rdpack
+RdMacros: Rdpack
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-07-06 00:14:17 UTC; carolinamusso
+Author: Carolina Musso [aut, cre, cph]
+    (<https://orcid.org/0000-0002-8107-6458>),
+  Ricardo Torres [aut, cph] (<https://orcid.org/0009-0000-9100-7125>),
+  João Reis [aut, cph],
+  Guilherme Rodrigues [aut, ths, cph]
+    (<https://orcid.org/0000-0003-2009-4844>)
+Maintainer: Carolina Musso <cmusso86@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-07-06 02:10:02 UTC

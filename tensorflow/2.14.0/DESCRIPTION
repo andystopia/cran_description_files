@@ -1,0 +1,56 @@
+Package: tensorflow
+Type: Package
+Title: R Interface to 'TensorFlow'
+Version: 2.14.0
+Authors@R: c(
+  person("JJ", "Allaire", role = c("aut", "cph")),
+  person("Tomasz", "Kalinowski", role = c("ctb", "cph", "cre"),
+         email = "tomasz.kalinowski@posit.co"),
+  person("Daniel", "Falbel", role = c("ctb", "cph"), email = "daniel@posit.co"),
+  person("Dirk", "Eddelbuettel", role = c("ctb", "cph"),
+         email = "edd@debian.org"),
+  person("Yuan", "Tang", role = c("aut", "cph"),
+         email = "terrytangyuan@gmail.com",
+         comment = c(ORCID = "0000-0001-5243-233X")),
+  person("Nick", "Golding", role = c("ctb", "cph"),
+         email = "nick.golding.research@gmail.com"),
+  person("Google Inc.", role = c("ctb", "cph"),
+         comment = "Examples and Tutorials"),
+  person("Posit, PBC", role = c("cph", "fnd"))
+  )
+Description: Interface to 'TensorFlow' <https://www.tensorflow.org/>,
+  an open source software library for numerical computation using data
+  flow graphs. Nodes in the graph represent mathematical operations,
+  while the graph edges represent the multidimensional data arrays
+  (tensors) communicated between them. The flexible architecture allows
+  you to deploy computation to one or more 'CPUs' or 'GPUs' in a desktop,
+  server, or mobile device with a single 'API'. 'TensorFlow' was originally
+  developed by researchers and engineers working on the Google Brain Team
+  within Google's Machine Intelligence research organization for the
+  purposes of conducting machine learning and deep neural networks research,
+  but the system is general enough to be applicable in a wide variety
+  of other domains as well.
+License: Apache License 2.0
+URL: https://github.com/rstudio/tensorflow
+BugReports: https://github.com/rstudio/tensorflow/issues
+SystemRequirements: TensorFlow (https://www.tensorflow.org/)
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Imports: config, processx, reticulate (>= 1.32), tfruns (>= 1.0),
+        utils, yaml, grDevices, tfautograph (>= 0.3.1), rstudioapi (>=
+        0.7), lifecycle
+Suggests: testthat (>= 2.1.0), keras, pillar, withr, callr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-28 12:50:39 UTC; tomasz
+Author: JJ Allaire [aut, cph],
+  Tomasz Kalinowski [ctb, cph, cre],
+  Daniel Falbel [ctb, cph],
+  Dirk Eddelbuettel [ctb, cph],
+  Yuan Tang [aut, cph] (<https://orcid.org/0000-0001-5243-233X>),
+  Nick Golding [ctb, cph],
+  Google Inc. [ctb, cph] (Examples and Tutorials),
+  Posit, PBC [cph, fnd]
+Maintainer: Tomasz Kalinowski <tomasz.kalinowski@posit.co>
+Repository: CRAN
+Date/Publication: 2023-09-28 15:50:02 UTC

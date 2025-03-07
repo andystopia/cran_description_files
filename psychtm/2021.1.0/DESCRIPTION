@@ -1,0 +1,36 @@
+Package: psychtm
+Type: Package
+Title: Text Mining Methods for Psychological Research
+Version: 2021.1.0
+Authors@R: person("Kenneth", "Wilcox", email = "kwilcox3@nd.edu",
+                  role = c("aut", "cre", "cph"))
+Description: Provides text mining methods for social science research. The
+    package implements estimation, inference, summarization, and goodness-of-fit
+    methods for topic models including Latent Dirichlet Allocation (LDA),
+    supervised LDA, and supervised LDA with covariates using Bayesian Markov Chain
+    Monte Carlo. A description of the key models and estimation methods is available
+    in Wilcox, Jacobucci, Zhang, & Ammerman (2021). <doi:10.31234/osf.io/62tc3>.
+License: LGPL (>= 3)
+URL: https://github.com/ktw5691/psychtm/
+BugReports: https://github.com/ktw5691/psychtm/issues
+Depends: R (>= 3.3.0)
+Imports: coda (>= 0.4), label.switching, methods, Rcpp (>= 0.11.0),
+        rlang (>= 0.4.10), tibble (>= 2.1.3)
+Suggests: spelling, knitr (>= 1.22), covr, dplyr, ggplot2, lda,
+        testthat (>= 3.0.2), rmarkdown
+LinkingTo: Rcpp (>= 0.11.0), RcppArmadillo, RcppProgress (>= 0.4.2)
+SystemRequirements: C++11
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.2
+Collate: 'RcppExports.R' 'aaa-classes.R' 'aaa-generics.R' 'data.R'
+        'deprec-functions.R' 'helper-functions.R' 'onUnload.R'
+        'psychtm-package.R' 'psychtm.R' 'sldax-methods.R' 'utils.R'
+NeedsCompilation: yes
+Packaged: 2021-10-30 06:18:50 UTC; kennethwilcox
+Author: Kenneth Wilcox [aut, cre, cph]
+Maintainer: Kenneth Wilcox <kwilcox3@nd.edu>
+Repository: CRAN
+Date/Publication: 2021-11-02 09:20:05 UTC

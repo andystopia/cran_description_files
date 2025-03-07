@@ -1,0 +1,34 @@
+Package: rciplot
+Type: Package
+Title: Plot Jacobson-Truax Reliable Change Indices
+Version: 0.1.0
+Authors@R: person("Maximilian", "Hagspiel", role = c("aut", "cre","cph"), email = "maxhag@mailbox.org")
+Description: The concept of reliable and clinically significant change
+    (Jacobson & Truax, 1991) helps you answer the following questions for a
+    sample with two measurements at different points in time (pre & post):
+    Which proportion of my sample has a (considering the reliability of the
+    instrument) probably not-just-by-chance difference in pre- vs. post-scores?
+    Which proportion of my sample does not only change in a statistically
+    significant way (see question one), but also in a clinically significant way
+    (e.g. change from a test score regarded "dysfunctional" to a score regarded
+    "functional")?
+    This package allows you to very easily create a scatterplot of your sample
+    in which the x-axis maps to the pre-scores, the y-axis maps to the
+    post-scores and several graphical elements (lines, colors) allow you to gain
+    a quick overview about reliable changes in these scores.
+    An example of this kind of plot is Figure 2 of Jacobson & Truax (1991).
+    Referenced article:
+    Jacobson, N. S., & Truax, P. (1991) <doi:10.1037/0022-006X.59.1.12>.
+License: MIT + file LICENSE
+URL: https://gitlab.com/REDS1736/rciplot
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, ggplot2, stats, tibble
+RoxygenNote: 7.2.2
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2022-11-17 16:55:28 UTC; max
+Author: Maximilian Hagspiel [aut, cre, cph]
+Maintainer: Maximilian Hagspiel <maxhag@mailbox.org>
+Repository: CRAN
+Date/Publication: 2022-11-18 17:10:02 UTC

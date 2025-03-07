@@ -1,0 +1,37 @@
+Package: transfR
+Type: Package
+Title: Transfer of Hydrograph from Gauged to Ungauged Catchments
+Version: 1.0.0
+Date: 2022-10-04
+Authors@R: c(
+  person("Alban", "de Lavenne", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9448-3490"), email = "alban.delavenne@inrae.fr"),
+  person("Christophe", "Cudennec", role = c("ths"), comment = c(ORCID = "0000-0002-1707-8926"), email = "christophe.cudennec@agrocampus-ouest.fr"),
+  person("Tom", "Loree", role = c("ctb"), email = "tom.loree@agrocampus-ouest.fr"),
+  person("Hervé", "Squividant", role = c("ctb"), email = "herve.squividant@agrocampus-ouest.fr")
+  )
+Depends: R (>= 3.5.0), stars (>= 0.4-0), sf (>= 0.8-0)
+Imports: doParallel, foreach, units, Rdpack
+RdMacros: Rdpack
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, elevatr, whitebox
+Description: A geomorphology-based hydrological modelling for transferring
+    streamflow measurements from gauged to ungauged catchments. Inverse
+    modelling enables to estimate net rainfall from streamflow measurements 
+    following Boudhraâ et al. (2018) <doi:10.1080/02626667.2018.1425801>. 
+    Resulting net rainfall is then estimated on the ungauged catchments 
+    by spatial interpolation in order to finally simulate streamflow 
+    following de Lavenne et al. (2016) <doi:10.1002/2016WR018716>.
+License: GPL-2
+URL: https://gitlab.irstea.fr/HYCAR-Hydro/transfr
+BugReports: https://gitlab.irstea.fr/HYCAR-Hydro/transfr/-/issues
+NeedsCompilation: yes
+Encoding: UTF-8
+Author: Alban de Lavenne [aut, cre] (<https://orcid.org/0000-0002-9448-3490>),
+  Christophe Cudennec [ths] (<https://orcid.org/0000-0002-1707-8926>),
+  Tom Loree [ctb],
+  Hervé Squividant [ctb]
+Maintainer: Alban de Lavenne <alban.delavenne@inrae.fr>
+RoxygenNote: 7.2.1
+Packaged: 2022-10-05 22:28:38 UTC; delavenne
+Repository: CRAN
+Date/Publication: 2022-10-05 23:00:02 UTC

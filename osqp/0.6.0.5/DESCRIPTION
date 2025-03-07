@@ -1,0 +1,33 @@
+Package: osqp
+Title: Quadratic Programming Solver using the 'OSQP' Library
+Version: 0.6.0.5
+Date: 2021-12-06
+Authors@R: c(
+  person("Bartolomeo", "Stellato", role = c("aut", "ctb", "cph"),
+         email = "bartolomeo.stellato@gmail.com"),
+  person("Goran", "Banjac", role = c("aut", "ctb", "cph")),
+  person("Paul", "Goulart", role = c("aut", "ctb", "cph"),
+         email = "paul.goulart@eng.ox.ac.uk"),
+  person("Stephen", "Boyd", role = c("aut", "ctb", "cph")),
+  person("Eric", "Anderson", role = c("ctb")),
+  person("Vineet", "Bansal", role = c("cre"), email = "vineetb@princeton.edu"))
+Copyright: file COPYRIGHT
+Description: Provides bindings to the 'OSQP' solver. The 'OSQP' solver is a numerical optimization package or solving convex quadratic programs written in 'C' and based on the alternating direction method of multipliers. See <arXiv:1711.08013> for details.
+License: Apache License 2.0 | file LICENSE
+Imports: Rcpp (>= 0.12.14), methods, Matrix, R6
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+Collate: 'RcppExports.R' 'osqp-package.R' 'solve.R' 'osqp.R' 'params.R'
+NeedsCompilation: yes
+Suggests: testthat
+URL: https://osqp.org
+Packaged: 2021-12-06 17:51:17 UTC; vineetb
+Author: Bartolomeo Stellato [aut, ctb, cph],
+  Goran Banjac [aut, ctb, cph],
+  Paul Goulart [aut, ctb, cph],
+  Stephen Boyd [aut, ctb, cph],
+  Eric Anderson [ctb],
+  Vineet Bansal [cre]
+Maintainer: Vineet Bansal <vineetb@princeton.edu>
+Repository: CRAN
+Date/Publication: 2021-12-07 08:20:09 UTC

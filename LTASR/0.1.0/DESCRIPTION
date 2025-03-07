@@ -1,0 +1,24 @@
+Package: LTASR
+Title: Functions to Replicate the Center for Disease Control and
+        Prevention's 'LTAS' Software in R
+Version: 0.1.0
+Authors@R: 
+    person("Stephen", "Bertke", , "nioshltas@cdc.gov", role = c("aut", "cre"))
+Description: A suite of functions for reading in a rate file in XML format, 
+    stratify a cohort, and calculate 'SMRs' from the stratified cohort and rate file. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: dplyr, knitr, lubridate, magrittr, purrr, readr, rlang,
+        stringr, tidyr, XML, zoo
+Suggests: rmarkdown, tidyverse, ggplot2, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-20 18:28:04 UTC; inh4
+Author: Stephen Bertke [aut, cre]
+Maintainer: Stephen Bertke <nioshltas@cdc.gov>
+Repository: CRAN
+Date/Publication: 2022-10-21 14:17:53 UTC

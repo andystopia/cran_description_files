@@ -1,0 +1,33 @@
+Package: micompr
+Title: Multivariate Independent Comparison of Observations
+Version: 1.1.1
+Date: 2021-07-08
+Authors@R: person("Nuno", "Fachada", email = "faken@fakenmc.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-8487-5837"))
+Maintainer: Nuno Fachada <faken@fakenmc.com>
+Description: A procedure for comparing multivariate samples associated with
+    different groups. It uses principal component analysis to convert
+    multivariate observations into a set of linearly uncorrelated statistical
+    measures, which are then compared using a number of statistical methods. The
+    procedure is independent of the distributional properties of samples and
+    automatically selects features that best explain their differences, avoiding
+    manual selection of specific points or summary statistics. It is appropriate
+    for comparing samples of time series, images, spectrometric measures or
+    similar multivariate observations.
+Depends: R (>= 3.5.0)
+Imports: utils, graphics, methods, stats
+Suggests: biotools, MVN (>= 5.0), deseasonalize, testthat (>= 0.8),
+        knitr, roxygen2, devtools
+License: MIT + file LICENSE
+URL: https://github.com/fakenmc/micompr
+BugReports: https://github.com/fakenmc/micompr/issues
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-07-08 08:28:20 UTC; nuno
+Author: Nuno Fachada [aut, cre] (<https://orcid.org/0000-0002-8487-5837>)
+Repository: CRAN
+Date/Publication: 2021-07-08 09:40:02 UTC

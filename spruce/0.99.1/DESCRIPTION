@@ -1,0 +1,33 @@
+Package: spruce
+Type: Package
+Title: Spatial Random Effects Clustering of Single Cell Data
+Version: 0.99.1
+Authors@R: 
+    c(person(given = "Carter",
+           family = "Allen",
+           role = c("aut", "cre"),
+           email = "carter.allen12@gmail.com",
+           comment = c(ORCID = "0000-0001-6937-7234")),
+     person(given = "Dongjun",
+           family = "Chung",
+           role = c("aut")))
+Date: 2022-02-17
+Description: Allows for identification of cell sub-populations within tissue samples using
+  Bayesian multivariate mixture models with spatial random effects to account for a wide range of 
+  spatial gene expression patterns, as described in Allen et. al, 2021 <doi:10.1101/2021.06.23.449615>.
+  Bayesian inference is conducted using efficient Gibbs sampling implemented using 'Rcpp'.
+License: GPL (>= 2)
+Imports: Rcpp, mvtnorm, BayesLogit, truncnorm, stats, igraph, MCMCpack,
+        patchwork, tidyr, dplyr, ggplot2, tidyselect, Seurat, rlang
+RoxygenNote: 7.1.2
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+NeedsCompilation: yes
+Packaged: 2022-02-19 00:28:22 UTC; carterallen
+Author: Carter Allen [aut, cre] (<https://orcid.org/0000-0001-6937-7234>),
+  Dongjun Chung [aut]
+Maintainer: Carter Allen <carter.allen12@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-21 08:50:02 UTC

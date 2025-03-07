@@ -1,0 +1,59 @@
+Package: flippant
+Title: Dithionite Scramblase Assay Analysis
+Description: The lipid scrambling activity of protein extracts and purified
+    scramblases is often determined using a fluorescence-based assay involving
+    many manual steps. flippant offers an integrated solution for the analysis
+    and publication-grade graphical presentation of dithionite scramblase
+    assays, as well as a platform for review, dissemination and extension of the
+    strategies it employs. The package's name derives from a play on the fact
+    that lipid scrambling is also sometimes referred to as 'flipping'.
+    The package is originally published as Cotton, R.J., Ploier, B., Goren,
+    M.A., Menon, A.K., and Graumann, J. (2017). "flippant–An R package for the
+    automated analysis of fluorescence-based scramblase assays." BMC
+    Bioinformatics 18, 146. <DOI:10.1186/s12859-017-1542-y>.
+Version: 1.5.4
+Author: Johannes Graumann [cre, aut],
+  Richard Cotton [aut]
+Maintainer: Johannes Graumann <johannes.graumann@uni-marburg.de>
+Authors@R: c(person("Johannes", "Graumann", email =
+    "johannes.graumann@uni-marburg.de", role = c("cre", "aut")),
+    person("Richard","Cotton", email = "richierocks@gmail.com",
+    role = c("aut")))
+Depends: R (>= 3.5.0), ggplot2 (>= 2.2.1)
+Suggests: bookdown, devtools, microbenchmark, multipanelfigure, pander,
+        roxygen2, tools
+Imports: assertive.base (>= 0.0-7), assertive.files (>= 0.0-2),
+        assertive.numbers (>= 0.0-2), data.table (>= 1.11.4), magrittr
+        (>= 1.5), minpack.lm (>= 1.2-1), plyr (>= 1.8.4), pracma (>=
+        2.3.3), stringi (>= 1.2.3), utils, withr (>= 2.1.2)
+License: GPL (>= 3)
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Collate: 'assertive.properties_assert-has-attributes.R'
+        'assertive.properties_assert-has-dims.R'
+        'assertive.properties_assert-is-empty-scalar.R'
+        'assertive.properties_assert-is-null.R'
+        'assertive.properties_has-attributes.R'
+        'assertive.properties_has-dims.R'
+        'assertive.properties_is-empty-scalar.R'
+        'assertive.properties_is-null.R' 'assertive.properties_utils.R'
+        'assertive.strings_assert-is-empty-character.R'
+        'assertive.strings_assert-is-empty-string.R'
+        'assertive.strings_is-empty-character.R'
+        'assertive.strings_is-empty-string.R'
+        'assertive.types_assert-is-a-type.R'
+        'assertive.types_assert-is-type-base.R'
+        'assertive.types_is-a-type.R' 'assertive.types_is-type-base.R'
+        'extract_case_study_data.R' 'extract_fluorescence_extrema.R'
+        'flippant-package.R' 'parse_FluorS_Essence_3.8_output.R'
+        'parse_felix_32_output.R' 'parse_felix_gx_output.R'
+        'parse_fluorimeter_output.R' 'parse_manual_output.R'
+        'read_felix_gx.R' 'read_scramblase_input_file.R'
+        'scramblase_assay_calculations.R'
+        'scramblase_assay_input_template.R'
+        'scramblase_assay_input_validation.R' 'scramblase_assay_plot.R'
+        'scramblase_assay_stats.R' 'scramblase_assay_traces.R'
+NeedsCompilation: no
+Packaged: 2023-11-26 21:52:27 UTC; rstudio
+Repository: CRAN
+Date/Publication: 2023-11-27 14:50:02 UTC

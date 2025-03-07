@@ -1,0 +1,37 @@
+Package: xQTLbiolinks
+Title: Integrative Analysis of Quantitative Trait Locus Data of 'xQTL'
+Version: 1.4.2
+Authors@R: c(
+    person(given = "Ruofan", family = "Ding",        email = "dingruofan1@foxmail.com",   role  = c("aut", "cre")),
+    person(given = "Xudong", family = "Zou",        email = "zouxd@szbl.ac.cn",   role  = c("aut","ctb")),
+    person(given = "Yangmei", family = "Qin",        email = "qinym@szbl.ac.cn",   role  = c("aut","ctb")),
+    person(given = "Gao", family = "Wang",        email = "wang.gao@columbia.edu",   role  = c("aut","ctb")),
+    person(given = "Lei", family = "Li",        email = "lei.li@szbl.ac.cn",   role  = c("aut","ctb", "cph"))
+	)
+Description: Enables users-customized data retrieval, processing, analysis, and data visualization of molecular quantitative trait locus and gene expression data from public resources through the application programming interface <https://gtexportal.org/home/api-docs/index.html> of 'GTEx' and <http://www.ebi.ac.uk/eqtl/api> of 'eQTL cagalogue'. 
+URL: https://github.com/dingruofan/xQTLbiolinks
+BugReports: https://github.com/dingruofan/xQTLbiolinks/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Depends: R (>= 4.00)
+VignetteBuilder: knitr
+Imports: BiocGenerics, cowplot (>= 1.1.1), curl (>= 4.3.2), data.table
+        (>= 1.14.2), DBI, SummarizedExperiment, GenomeInfoDb,
+        GenomicFeatures, GenomicRanges, ggplot2 (>= 3.3.6), ggrepel,
+        IRanges, jsonlite (>= 1.7.2), viridis, RMySQL, stringr (>=
+        1.4.0), utils (>= 4.0.3)
+Suggests: VariantAnnotation, TxDb.Hsapiens.UCSC.hg38.knownGene,
+        PupillometryR, coloc, knitr, rtracklayer, usethis, ggridges,
+        CMplot, R.utils
+NeedsCompilation: no
+Packaged: 2023-05-04 14:54:07 UTC; DELL
+Author: Ruofan Ding [aut, cre],
+  Xudong Zou [aut, ctb],
+  Yangmei Qin [aut, ctb],
+  Gao Wang [aut, ctb],
+  Lei Li [aut, ctb, cph]
+Maintainer: Ruofan Ding <dingruofan1@foxmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-04 15:20:02 UTC

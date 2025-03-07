@@ -1,0 +1,21 @@
+Package: pflamelet
+Type: Package
+Title: Persistence Flamelets: Computation and Inferential Tools
+Version: 0.1.1
+Author: Tullia Padellini
+Maintainer: Tullia Padellini <t.padellini@imperial.ac.uk>
+Description: Computes the Persistence Flamelets, a statistical tool for exploring the Topological Invariants of Scale-Space families introduced in Padellini and Brutti (2017) "Persistence Flamelets: multiscale Persistent Homology for kernel density exploration" <arXiv:1709.07097>.
+    Flamelets can be built from either sub/super level sets of arbitrary functions or
+    from a precomputed list of Persistence Diagrams. 
+    In addition, this package provides functions to compute confidence bands for a Flamelet via bootstrap, assess significance of each feature, 
+    clean a Flamelet from topological noise, perform a two sample permutation test for groups of Flamelets and it also implements a topological heuristic for bandwidth selection for kernel density estimators. 
+License: GPL-3
+Imports: TDA, plotly, viridis, pbapply, graphics, stats, abind
+Suggests: eegkit, dplyr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-12-15 19:28:34 UTC; tulliapadellini
+Repository: CRAN
+Date/Publication: 2020-12-17 09:30:02 UTC

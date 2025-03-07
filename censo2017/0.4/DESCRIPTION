@@ -1,0 +1,45 @@
+Package: censo2017
+Title: Base de Datos de Facil Acceso del Censo 2017 de Chile (2017
+        Chilean Census Easy Access Database)
+Version: 0.4
+Authors@R: c(
+        person(given = "Mauricio",
+               family = "Vargas",
+               role = c("aut", "cre"),
+               email = "mvargas@dcc.uchile.cl",
+               comment = c(ORCID = "0000-0003-1017-7574")),
+        person(given = "Juan",
+               family = "Correa",
+               role = c("ctb")),
+        person(family = "Instituto Nacional de Estadisticas (INE)",
+               role = c("dtc")
+        )
+    )
+Description: Provee un acceso conveniente a mas de 17 millones de registros
+    de la base de datos del Censo 2017. Los datos fueron importados desde
+    el DVD oficial del INE usando el Convertidor REDATAM creado por Pablo De
+    Grande. Esta paquete esta documentado intencionalmente en castellano
+    asciificado para que funcione sin problema en diferentes plataformas.
+    (Provides convenient access to more than 17 million records from the
+    Chilean Census 2017 database. The datasets were imported from the official
+    DVD provided by the Chilean National Bureau of Statistics by using the
+    REDATAM converter created by Pablo De Grande and in addition it includes the
+    maps accompanying these datasets.)
+URL: https://pacha.dev/censo2017/
+BugReports: https://github.com/pachamaltese/censo2017/issues/
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: DBI, duckdb, httr, tibble, purrr, cli, crayon, rstudioapi,
+        tools
+Suggests: testthat, covr, knitr, dplyr, dbplyr
+Depends: R (>= 4.0)
+NeedsCompilation: no
+Packaged: 2021-02-05 21:57:54 UTC; cavar
+Author: Mauricio Vargas [aut, cre] (<https://orcid.org/0000-0003-1017-7574>),
+  Juan Correa [ctb],
+  Instituto Nacional de Estadisticas (INE) [dtc]
+Maintainer: Mauricio Vargas <mvargas@dcc.uchile.cl>
+Repository: CRAN
+Date/Publication: 2021-02-06 07:20:07 UTC

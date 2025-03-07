@@ -1,0 +1,29 @@
+Package: phylotypr
+Type: Package
+Title: Classifying DNA Sequences to Taxonomic Groupings
+Version: 0.1.0
+Authors@R: 
+    person("Pat", "Schloss", , "pschloss@umich.edu",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6935-4275"))
+Description: Classification based analysis of DNA sequences to taxonomic groupings. This package primarily implements Naive Bayesian Classifier from the Ribosomal Database Project. This approach has traditionally been used to classify 16S rRNA gene sequences to bacterial taxonomic outlines; however, it can be used for any type of gene sequence. The method was originally described by Wang, Garrity, Tiedje, and Cole in Applied and Environmental Microbiology 73(16):5261-7 <doi:10.1128/AEM.00062-07>. The package also provides functions to read in 'FASTA'-formatted sequence data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+URL: https://github.com/mothur/phylotypr, https://mothur.org/phylotypr/
+BugReports: https://github.com/mothur/phylotypr/issues
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, purrr, dplyr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: Rcpp, readr (>= 2.1.0), Rfast (>= 2.1.0), stats (>= 4.0.0),
+        stringi (>= 1.8.0)
+LinkingTo: Rcpp
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-10-09 13:14:59 UTC; pschloss
+Author: Pat Schloss [aut, cre, cph] (<https://orcid.org/0000-0002-6935-4275>)
+Maintainer: Pat Schloss <pschloss@umich.edu>
+Repository: CRAN
+Date/Publication: 2024-10-14 09:20:01 UTC

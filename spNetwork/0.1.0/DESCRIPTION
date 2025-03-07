@@ -1,0 +1,40 @@
+Package: spNetwork
+Type: Package
+Title: Spatial Analysis on Network
+Version: 0.1.0
+Authors@R: c(
+    person("Jeremy", "Gelb", email = "jeremy.gelb@ucs.inrs.ca",role = c("aut", "cre")),
+    person("Philippe", "Apparicio", email="philippe.apparicio@ucs.inrs.ca", role=c("ctb")))
+Description: Perform spatial analysis on network.
+    Allow to calculate Network Kernel Density Estimate, and to build
+    spatial matrices ('listw' objects like in 'spdep' package) to conduct any kind of traditional 
+    spatial analysis with spatial weights based on reticular distances. K functions on network
+    are also available but still experimental. References: Okabe et al (2019) <doi:10.1080/13658810802475491>;
+    Okabe et al (2012, ISBN:978-0470770818);Baddeley el al (2015, ISBN:9781482210200).
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: spdep (>= 1.1.2), maptools (>= 0.9-5), rgeos (>= 0.5-2), sp
+        (>= 1.3-1), sf (>= 0.9-0), raster (>= 3.0-12), igraph (>=
+        1.2.4.2), cubature (>= 2.0.4.1), future.apply (>= 1.4.0),
+        methods (>= 1.7.1), ggplot2 (>= 3.3.0), progressr (>= 0.4.0),
+        data.table (>= 1.12.8), SearchTrees (>= 0.5.2), Rcpp (>=
+        1.0.4.6)
+Depends: R (>= 3.6)
+Suggests: future (>= 1.16.0), testthat (>= 3.0.0), knitr (>= 1.28),
+        kableExtra (>= 1.1.0), rmarkdown (>= 2.1), RColorBrewer (>=
+        1.1-2), classInt (>= 0.4-3), reshape2 (>= 1.4.3), dplyr (>=
+        0.8.3), rlang (>= 0.4.6), rgdal (>= 1.5-18), plot3D (>= 1.3)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+URL: https://github.com/JeremyGelb/spNetwork
+BugReports: https://github.com/JeremyGelb/spNetwork/issues
+LinkingTo: Rcpp, RcppProgress, RcppArmadillo
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2021-01-14 14:32:32 UTC; gelbj
+Author: Jeremy Gelb [aut, cre],
+  Philippe Apparicio [ctb]
+Maintainer: Jeremy Gelb <jeremy.gelb@ucs.inrs.ca>
+Repository: CRAN
+Date/Publication: 2021-01-18 10:10:07 UTC

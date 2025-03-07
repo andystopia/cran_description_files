@@ -1,0 +1,47 @@
+Package: ANOFA
+Type: Package
+Title: Analyses of Frequency Data
+Version: 0.1.2
+Date: 2023-11-16
+Authors@R: c(
+             person("Denis", "Cousineau", email = "denis.cousineau@uottawa.ca",
+                    role = c("aut", "cre")),
+             person("Louis", "Laurencelle", email = "louis.laurencelle@gmail.com",
+                    role = c("ctb")),
+             person("Pier-Olivier", "Caron", email = "pocaron19@gmail.com",
+                    role = c("ctb"))
+           )
+Author: Denis Cousineau [aut, cre],
+  Louis Laurencelle [ctb],
+  Pier-Olivier Caron [ctb]
+Maintainer: Denis Cousineau <denis.cousineau@uottawa.ca>
+BugReports: https://github.com/dcousin3/ANOFA/issues/
+URL: https://dcousin3.github.io/ANOFA/
+Description: 
+    Analyses of frequencies can be performed using an alternative test based 
+    on the G statistic. The test has similar type-I error rates and power as 
+    the chi-square test. However, it is based on a total statistic that can be 
+    decomposed in an additive fashion into interaction effects, main effects, simple 
+    effects, contrast effects, etc., mimicking precisely the logic of ANOVA. We call 
+    this set of tools 'ANOFA' (Analysis of Frequency data) to highlight its 
+    similarities with ANOVA. This framework also renders plots of frequencies 
+    along with confidence intervals. Finally, effect sizes and planning statistical 
+    power are easily done under this framework. The ANOFA is a tool that assesses 
+    the significance of effects instead of the significance of parameters; as such, 
+    it is more intuitive to most researchers than alternative approaches based on 
+    generalized linear models. 
+    See Laurencelle and Cousineau (2023) <doi:10.20982/tqmp.19.2.p173>.
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: rrapply (>= 1.2.6), superb (>= 0.95.0), Rdpack (>= 0.7),
+        ggplot2 (>= 3.1.0), stats, utils
+Suggests: rmarkdown, testthat, knitr
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2023-11-16 22:33:44 UTC; Denis Cousineau
+Repository: CRAN
+Date/Publication: 2023-11-17 08:34:01 UTC

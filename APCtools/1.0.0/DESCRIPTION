@@ -1,0 +1,38 @@
+Package: APCtools
+Title: Routines for Descriptive and Model-Based APC Analysis
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Alexander",  family = "Bauer",   email = "alexander.bauer@stat.uni-muenchen.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3495-5131")),
+    person(given = "Maximilian", family = "Weigert", email = "maximilian.weigert@stat.uni-muenchen.de", role = "aut", comment = c(ORCID = "0000-0003-4400-134X")),
+    person(given = "Hawre",      family = "Jalal",   email = "hjalal@uottawa.ca", role = "aut", comment=c(ORCID = "0000-0002-8224-6834")),
+    person(given = "Pauline",    family = "Hohenemser", role = "ctb"))
+Maintainer: Alexander Bauer <alexander.bauer@stat.uni-muenchen.de>
+Description: Age-Period-Cohort (APC) analyses are used to differentiate relevant drivers for long-term developments.
+    The 'APCtools' package offers visualization techniques and general routines to simplify the workflow of an APC analysis.
+    Sophisticated functions are available both for descriptive and regression model-based analyses.
+    For the former, we use density (or ridgeline) matrices and (hexagonally binned) heatmaps as innovative visualization
+    techniques building on the concept of Lexis diagrams.
+    Model-based analyses build on the separation of the temporal dimensions based on generalized additive models,
+    where a tensor product interaction surface (usually between age and period) is utilized
+    to represent the third dimension (usually cohort) on its diagonal.
+    Such tensor product surfaces can also be estimated while accounting for
+    further covariates in the regression model.
+    See Weigert et al. (2021) <doi:10.1177/1354816620987198> for methodological details.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: ggpubr, checkmate, knitr, ggplot2, colorspace, dplyr, mgcv,
+        scales, tidyr
+Suggests: testthat (>= 3.0.0), rmarkdown, covr
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-01-04 11:19:39 UTC; alex
+Author: Alexander Bauer [aut, cre] (<https://orcid.org/0000-0003-3495-5131>),
+  Maximilian Weigert [aut] (<https://orcid.org/0000-0003-4400-134X>),
+  Hawre Jalal [aut] (<https://orcid.org/0000-0002-8224-6834>),
+  Pauline Hohenemser [ctb]
+Repository: CRAN
+Date/Publication: 2022-01-05 09:20:10 UTC

@@ -1,0 +1,23 @@
+Package: doFuture
+Version: 0.12.0
+Title: A Universal Foreach Parallel Adapter using the Future API of the
+        'future' Package
+Depends: foreach (>= 1.5.0), future (>= 1.21.0)
+Imports: globals, iterators, parallel, utils
+Suggests: doRNG (>= 1.8.2), markdown, R.rsp
+VignetteBuilder: R.rsp
+Authors@R: c(person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"),
+                                          email = "henrikb@braju.com"))
+Description: Provides a '%dopar%' adapter such that any type of futures can
+    be used as backends for the 'foreach' framework.
+License: LGPL (>= 2.1)
+LazyLoad: TRUE
+URL: https://github.com/HenrikBengtsson/doFuture
+BugReports: https://github.com/HenrikBengtsson/doFuture/issues
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-01-04 13:54:40 UTC; hb
+Author: Henrik Bengtsson [aut, cre, cph]
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Repository: CRAN
+Date/Publication: 2021-01-04 21:20:19 UTC

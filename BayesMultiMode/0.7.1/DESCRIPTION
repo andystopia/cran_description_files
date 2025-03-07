@@ -1,0 +1,44 @@
+Package: BayesMultiMode
+Type: Package
+Title: Bayesian Mode Inference
+Version: 0.7.1
+Authors@R: c(person(given = "Nalan", family = "Baştürk", role = "aut"),
+  person(given = "Jamie", family = "Cross", role = "aut"),
+  person(given = "Peter", family = "de Knijff", role = "aut"),
+  person(given = "Lennart", family = "Hoogerheide", role = "aut"),
+  person(given = "Paul", family = "Labonne", email= "paul.labonne@bi.no", role = c("aut", "cre")),
+  person(given = "Herman", family = "van Dijk", role = "aut"))
+Description: A two-step Bayesian approach for mode inference following 
+      Cross, Hoogerheide, Labonne and van Dijk (2024) <doi:10.1016/j.econlet.2024.111579>).
+      First, a mixture distribution is fitted on the data using a sparse finite
+      mixture (SFM) Markov chain Monte Carlo (MCMC) algorithm. The number of
+      mixture components does not have to be known; the size of the mixture is
+      estimated endogenously through the SFM approach. Second, the modes of the
+      estimated mixture at each MCMC draw are retrieved using algorithms
+      specifically tailored for mode detection. These estimates are then used to
+      construct posterior probabilities for the number of modes, their locations
+      and uncertainties, providing a powerful tool for mode inference.
+License: GPL (>= 3)
+Imports: assertthat, bayesplot, dplyr, ggplot2, ggpubr, gtools,
+        magrittr, MCMCglmm, mvtnorm, posterior, sn, stringr, tidyr,
+        Rdpack
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0)
+RdMacros: Rdpack
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/paullabonne/BayesMultiMode
+BugReports: https://github.com/paullabonne/BayesMultiMode/issues
+NeedsCompilation: no
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+Packaged: 2024-03-21 14:05:13 UTC; paullabonne
+Author: Nalan Baştürk [aut],
+  Jamie Cross [aut],
+  Peter de Knijff [aut],
+  Lennart Hoogerheide [aut],
+  Paul Labonne [aut, cre],
+  Herman van Dijk [aut]
+Maintainer: Paul Labonne <paul.labonne@bi.no>
+Repository: CRAN
+Date/Publication: 2024-03-21 14:40:11 UTC

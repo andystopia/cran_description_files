@@ -1,0 +1,45 @@
+Package: pfocal
+Type: Package
+Title: Fast Convolution of Matrices
+Version: 1.0.0
+Authors@R: c(  
+    person("Griffin", "Barrett", email = "griffin-barrett@outlook.com", 
+           role = c("aut")),
+    person("Valentin", "Lucet", email = "valentin.lucet@gmail.com", 
+           role = c("aut")),
+    person("Josie", "Hughes", email = "josie.hughes@ec.gc.ca", 
+           role = c("aut", "cre")), 
+    person(paste0("Her Majesty the Queen in Right of Canada, as represented by",
+                  " the Minister of Environment and Climate Change"),    
+           role = "cph"))
+Description: Provides functions to create and apply convolution kernels to 
+    rectangular data (matrix, raster). Implements calculations of convolutions
+    in parallel, emphasizing performance over convolution function diversity.
+    Moving window calculations are common in many fields, from image processing
+    to raster data manipulation. The process of ingesting values in the
+    neighborhood of a each cell in a grid, passing them through a function,
+    and returning a reduced value, is embarrassingly parallel. This package
+    implements this with parallel C code. In doing so, it provides a much faster
+    option than other similarly aimed packages and functions.
+License: GPL-3
+BugReports: https://github.com/LandSciTech/pfocal/
+Depends: R (>= 4.0.0)
+Imports: Rcpp, stats, methods
+LinkingTo: Rcpp
+Suggests: testthat (>= 3.0.0), starsExtra, raster, terra, covr, knitr,
+        rmarkdown, microbenchmark, stars
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+URL: https://landscitech.github.io/pfocal/
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-06-16 16:54:33 UTC; HughesJo
+Author: Griffin Barrett [aut],
+  Valentin Lucet [aut],
+  Josie Hughes [aut, cre],
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Environment and Climate Change [cph]
+Maintainer: Josie Hughes <josie.hughes@ec.gc.ca>
+Repository: CRAN
+Date/Publication: 2022-06-17 10:30:02 UTC

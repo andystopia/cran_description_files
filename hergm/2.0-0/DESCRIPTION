@@ -1,0 +1,20 @@
+Package: hergm
+Version: 2.0-0
+Date: 2014-12-15
+Title: Hierarchical Exponential-Family Random Graph Models with Local
+        Dependence
+Author: Michael Schweinberger <michael.schweinberger@rice.edu> [aut, cre], Mark S. Handcock <handcock@ucla.edu> [ctb], Pamela Luna <pamela.luna@rice.edu> [ctb]
+Maintainer: Michael Schweinberger <michael.schweinberger@rice.edu>
+Depends: ergm, latentnet, network, parallel, sna
+Description: Estimate and simulate hierarchical exponential-family random graph models with local dependence.
+License: GPL-3
+URL: http://cran.r-project.org/web/packages/hergm/index.html
+BugReports: In some past versions of hergm, lack of memory deallocation
+        at the C level meant that systems could run out of memory when
+        conducting >24-hour runs involving networks with >100 nodes.
+        The memory deallocation issues have been fixed in hergm version
+        2.0-0.
+Packaged: 2014-12-16 00:41:23 UTC; gilgamesh
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-12-16 04:37:43

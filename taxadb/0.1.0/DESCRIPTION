@@ -1,0 +1,45 @@
+Package: taxadb
+Version: 0.1.0
+Title: A High-Performance Local Taxonomic Database Interface
+Description: Creates a local database of many commonly used taxonomic authorities
+             and provides functions that can quickly query this data.
+Authors@R: c(
+            person("Carl", "Boettiger", , "cboettig@gmail.com", c("aut", "cre"),
+                   comment = c(ORCID = "0000-0002-1642-628X")),
+            person("Kari", "Norman", role= "aut",
+                   comment = c(ORCID = "0000-0002-2029-2325")),       
+            person("Jorrit", "Poelen", role ="aut", 
+                   comment = c(ORCID="0000-0003-3138-4118")),
+            person("Scott", "Chamberlain", role ="aut", 
+                   comment = c(ORCID="0000-0003-1444-9135")),
+            person("Noam", "Ross", , "ross@ecohealthalliance.org", role ="ctb",
+                   comment = c(ORCID = "0000-0002-2136-0000"))
+            )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 2.10)
+Imports: dplyr, DBI, arkdb, tibble, memoise, readr, rappdirs, rlang,
+        magrittr, stringi, progress, utils, dbplyr, RSQLite, curl,
+        jsonlite
+RoxygenNote: 7.0.2
+Suggests: spelling, testthat, covr, knitr, rmarkdown, purrr,
+        MonetDBLite, duckdb
+Language: en-US
+VignetteBuilder: knitr
+URL: https://docs.ropensci.org/taxadb,
+        https://github.com/ropensci/taxadb
+BugReports: https://github.com/ropensci/taxadb/issues
+Additional_repositories: https://cboettig.github.io/drat,
+        http://download.duckdb.org/alias/master/rstats/
+NeedsCompilation: no
+Packaged: 2020-02-17 20:44:42 UTC; cboettig
+Author: Carl Boettiger [aut, cre] (<https://orcid.org/0000-0002-1642-628X>),
+  Kari Norman [aut] (<https://orcid.org/0000-0002-2029-2325>),
+  Jorrit Poelen [aut] (<https://orcid.org/0000-0003-3138-4118>),
+  Scott Chamberlain [aut] (<https://orcid.org/0000-0003-1444-9135>),
+  Noam Ross [ctb] (<https://orcid.org/0000-0002-2136-0000>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-19 07:50:02 UTC

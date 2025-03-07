@@ -1,0 +1,40 @@
+Package: MapeBay
+Type: Package
+Title: Multivariate Analysis of Variance Panel, PERMANOVA and Bayesian
+Version: 0.1.0
+Authors@R: c(person("Maria", "Mendoza-Marcillo", role = c("aut", "cre"),
+                     email = "mtmendoz@espol.edu.ec"),
+              person("Johny", "Pambabay-Calero", role = c("aut","ctb"),
+                     email = "jpambaba@espol.edu.ec"),
+              person("Mauricio", "Rojas-Campuzano", role = c("aut","ctb"),
+		     email="maujroja@espol.edu.ec"),
+              person("Sergio", "Bauz-Olvera", role = c("aut","ctb"),
+                     email = "serabauz@espol.edu.ec"),
+              person("Omar", "Ruiz-Barzola", role = "ctb",
+                     email = "oruiz@espol.edu.ec"))
+Maintainer: Maria Mendoza-Marcillo <mtmendoz@espol.edu.ec>
+Description: It covers approaches to multivariate analysis of variance, PERMANOVA and a Bayesian analysis, presenting an assumption test section together with a decision diagram that will allow selecting the appropriate technique for the analysis. The presentation of results is through an interactive panel, in which you can view automatic conclusions based on the tests, dynamic graphics through 'Highchart', also the package uses 'Stan' for Bayesian analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, DT, MANOVA.RM, shiny, shinydashboardPlus,
+        shinydashboard, MultBiplotR, broom, car, dplyr, highcharter,
+        htmltools, nortest, purrr, reshape, shinycssloaders, stringr,
+        tibble, MVN, heplots, mvnormtest, vegan, waiter, moments, Rcpp
+        (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>= 2.18.1),
+        rstantools (>= 2.1.1)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-11-12 23:08:37 UTC; javierrojas
+Author: Maria Mendoza-Marcillo [aut, cre],
+  Johny Pambabay-Calero [aut, ctb],
+  Mauricio Rojas-Campuzano [aut, ctb],
+  Sergio Bauz-Olvera [aut, ctb],
+  Omar Ruiz-Barzola [ctb]
+Repository: CRAN
+Date/Publication: 2021-11-15 09:00:09 UTC

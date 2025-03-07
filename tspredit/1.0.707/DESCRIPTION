@@ -1,0 +1,79 @@
+Package: tspredit
+Title: Time Series Prediction Integrated Tuning
+Version: 1.0.707
+Authors@R: 
+  c(    person(
+            given = "Rebecca",
+            family = "Salles",
+            role = c("aut"),
+            email = "rebecca.salles@eic.cefet-rj.br"
+        ),
+        person(
+            given = "Cristiane",
+            family = "Gea",
+            role = c("aut"),
+            email = "cristiane.gea@eic.cefet-rj.br"
+        ),
+        person(
+            given = "Cristiane",
+            family = "Gea",
+            role = c("aut"),
+            email = "carla.pacheco@eic.cefet-rj.br"
+        ),        
+        person(
+            given = "Eduardo",
+            family = "Bezerra",
+            role = c("aut"),
+            email = "ebezerra@cefet-rj.br"
+        ),
+        person(
+            given = "Esther",
+            family = "Pacitti",
+            role = c("aut"),
+            email = "Esther.Pacitti@lirmm.fr"
+        ),
+        person(
+            given = "Fabio",
+            family = "Porto",
+            role = c("aut"),
+            email = "fporto@lncc.br"
+        ),
+        person(
+            given = "Eduardo",
+            family = "Ogasawara",
+            role = c("aut", "ths", "cre"),
+            email = "eogasawara@ieee.org",
+            comment = c(ORCID = "0000-0002-0466-0626")
+        ),
+        person(
+            given = "Federal Center for Technological Education of Rio de Janeiro (CEFET/RJ)",
+            role = "cph"
+        )
+   )
+Description: Prediction is one of the most important activities while working with time series. There are many alternative ways to model the time series. Finding the right one is challenging to model them. Most data-driven models (either statistical or machine learning) demand tuning. Setting them right is mandatory for good predictions. It is even more complex since time series prediction also demands choosing a data pre-processing that complies with the chosen model. Many time series frameworks have features to build and tune models. The package differs as it provides a framework that seamlessly integrates tuning data pre-processing activities with the building of models. The package provides functions for defining and conducting time series prediction, including data pre(post)processing, decomposition, tuning, modeling, prediction, and accuracy assessment. More information is available at Izau et al. <doi:10.5753/sbbd.2022.224330>.
+License: MIT + file LICENSE
+URL: https://github.com/cefet-rj-dal/daltoolbox,
+        https://cefet-rj-dal.github.io/daltoolbox/
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Imports: glmnet, smotefamily, leaps, FSelector, doBy, dplyr, daltoolbox
+Config/reticulate: list( packages = list( list(package = "scipy"),
+        list(package = "torch"), list(package = "pandas"), list(package
+        = "numpy"), list(package = "matplotlib"), list(package =
+        "scikit-learn") ) )
+NeedsCompilation: no
+Packaged: 2023-07-19 02:54:52 UTC; gpca
+Author: Rebecca Salles [aut],
+  Cristiane Gea [aut],
+  Cristiane Gea [aut],
+  Eduardo Bezerra [aut],
+  Esther Pacitti [aut],
+  Fabio Porto [aut],
+  Eduardo Ogasawara [aut, ths, cre]
+    (<https://orcid.org/0000-0002-0466-0626>),
+  Federal Center for Technological Education of Rio de Janeiro (CEFET/RJ)
+    [cph]
+Maintainer: Eduardo Ogasawara <eogasawara@ieee.org>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2023-07-19 15:20:02 UTC

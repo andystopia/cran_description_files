@@ -1,0 +1,30 @@
+Package: gasmodel
+Type: Package
+Title: Generalized Autoregressive Score Models
+Version: 0.1.0
+Author: Vladimír Holý
+Maintainer: Vladimír Holý <vladimir.holy@vse.cz>
+Description: Estimation, forecasting, and simulation of generalized
+    autoregressive score (GAS) models of Creal, Koopman, and Lucas (2013)
+    <doi:10.1002/jae.1279> and Harvey (2013) <doi:10.1017/cbo9781139540933>.
+    Model specification allows for various conditional distributions, different
+    parametrizations, exogenous variables, higher score and autoregressive
+    orders, custom and unconditional initial values of time-varying parameters,
+    fixed and bounded values of coefficients, and missing values.
+    Model estimation is performed by the maximum likelihood method and the
+    Hessian matrix.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: abind, arrangements, Matrix, mvnfast, nloptr, numDeriv, pracma
+Suggests: knitr, rmarkdown, testthat, tidyverse
+RoxygenNote: 7.2.1
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/vladimirholy/gasmodel
+BugReports: https://github.com/vladimirholy/gasmodel/issues
+NeedsCompilation: no
+Packaged: 2022-09-19 17:03:53 UTC; mira
+Repository: CRAN
+Date/Publication: 2022-09-20 09:16:12 UTC

@@ -1,0 +1,40 @@
+Package: VARMER
+Type: Package
+Title: Variational Merging
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Jacinto", family = "Ulloa",
+             role = "aut"),
+      person(given = "Esteban", family = "Samaniego",
+             role = "aut"), 
+      person(given = "Lenin", family = "Campozano",
+             role = "aut"),
+      person(given = "Daniela", family = "Ballari",
+             role = "aut"),
+      person(given = "Leandro", family = "Robaina",
+             role = c("cre", "com", "trl"),
+             email = "metclimaepn.libs@gmail.com"),
+      person(given = "Ronald", family = "Gualan",
+             role = "com"))
+Description: A new mathematical formulation to merge observed data with gridded images of environmental variables using partial differential equations in a variational setting. The original method was created, developed and published by Ulloa, Samaniego, Campozano and Ballari (2018) <doi:10.1002/2017JD027982>. 
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: stats, methods, raster, pracma, rgl, deldir, grDevices, zoo,
+        sf, gstat, Metrics, hydroGOF, tictoc, cluster, parallel
+Suggests: knitr, rmarkdown, rgdal, RFmerge
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-02-05 22:29:51 UTC; ronald
+Author: Jacinto Ulloa [aut],
+  Esteban Samaniego [aut],
+  Lenin Campozano [aut],
+  Daniela Ballari [aut],
+  Leandro Robaina [cre, com, trl],
+  Ronald Gualan [com]
+Maintainer: Leandro Robaina <metclimaepn.libs@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-07 23:00:03 UTC

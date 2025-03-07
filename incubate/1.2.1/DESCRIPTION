@@ -1,0 +1,35 @@
+Package: incubate
+Title: Parametric Time-to-Event Analysis with Variable Incubation
+        Phases
+Version: 1.2.1
+Date: 2023-08-21
+Authors@R: 
+    person(given = "Matthias",
+           family = "Kuhn",
+           role = c("aut", "cre"),
+           email = "matthias.kuhn@tu-dresden.de",
+           comment = c(ORCID = "0000-0003-2868-5155"))
+Description: Fit parametric models for time-to-event data that show an initial
+    'incubation period', i.e., a variable delay phase where the hazard is zero. The
+    delayed Weibull distribution serves as foundational data model. The
+    specific method of 'MPSE' (maximum product of spacings estimation) is used for parameter
+    estimation. Bootstrap confidence intervals for parameters and significance
+    tests in a two group setting are provided.
+License: LGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: future (>= 1.21), future.apply (>= 1.6), glue (>= 1.4), MASS,
+        purrr (>= 0.3), rlang (>= 0.4), stats, survival, tibble
+Suggests: boot, future.callr, ggplot2 (>= 3.3), knitr, testthat (>=
+        3.0.0)
+URL: https://gitlab.com/imb-dev/incubate/
+BugReports: https://gitlab.com/imb-dev/incubate/-/issues/
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-08-21 13:58:42 UTC; kuhnmat
+Author: Matthias Kuhn [aut, cre] (<https://orcid.org/0000-0003-2868-5155>)
+Maintainer: Matthias Kuhn <matthias.kuhn@tu-dresden.de>
+Repository: CRAN
+Date/Publication: 2023-08-21 15:00:26 UTC

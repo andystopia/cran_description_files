@@ -1,0 +1,55 @@
+Package: fhircrackr
+Type: Package
+Title: Handling HL7 FHIR Resources in R
+Version: 2.1.0
+Date: 2022-11-18
+Authors@R: c(
+    person( given = "Thomas", 
+            family = "Peschel", 
+            email = "thomas.peschel@imise.uni-leipzig.de", 
+            role = c("aut")),
+    person( given = "Julia", 
+            family = "Palm", 
+            email = "julia.palm@med.uni-jena.de", 
+            role = c("aut","cre"),
+            comment=c(ORCID = "0000-0003-1568-5893")),
+    person( given = "Jens", 
+            family = "Przybilla", 
+            email = "jprzybilla@imise.uni-leipzig.de", 
+            role = "aut"),
+    person( given = "Frank", 
+            family = "Meineke", 
+            email = "frank.meineke@imise.uni-leipzig.de", 
+            role = "aut",
+            comment=c(ORCID = "0000-0002-9256-7543")))
+Description: Useful tools for conveniently downloading FHIR resources in xml format 
+    and converting them to R data.frames. The package uses FHIR-search to download bundles 
+    from a FHIR server, provides functions to save and read xml-files containing such bundles 
+    and allows flattening the bundles to data.frames using XPath expressions.
+BugReports: https://github.com/POLAR-fhiR/fhircrackr/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: xml2, stringr, httr, utils, data.table, methods, parallel,
+        lifecycle
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+Collate: 'fhir_body.R' 'fhir_resource.R' 'fhir_url.R' 'fhir_bundle.R'
+        'fhir_bundle_list.R' 'build_resources.R' 'design.R'
+        'download_resources.R' 'fhir_xpath_expression.R'
+        'fhir_columns.R' 'fhir_resource_type.R'
+        'fhir_table_description.R' 'fhir_design.R' 'fhir_style.R'
+        'fhir_table_list.R' 'fhir_tree.R' 'flatten_resources.R'
+        'miscellaneous.R' 'multiple_entries.R' 'sample_resources.R'
+NeedsCompilation: no
+Packaged: 2022-11-18 10:42:33 UTC; J01546
+Author: Thomas Peschel [aut],
+  Julia Palm [aut, cre] (<https://orcid.org/0000-0003-1568-5893>),
+  Jens Przybilla [aut],
+  Frank Meineke [aut] (<https://orcid.org/0000-0002-9256-7543>)
+Maintainer: Julia Palm <julia.palm@med.uni-jena.de>
+Repository: CRAN
+Date/Publication: 2022-11-18 23:50:06 UTC

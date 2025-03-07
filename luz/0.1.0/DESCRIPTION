@@ -1,0 +1,34 @@
+Package: luz
+Title: Higher Level 'API' for 'torch'
+Version: 0.1.0
+Authors@R: c(
+    person("Daniel", "Falbel", email = "daniel@rstudio.com", role = c("aut", "cre", "cph")),
+    person(family = "RStudio", role = c("cph"))
+    )
+Description: A high level interface for 'torch' providing utilities to reduce the
+    the amount of code needed for common tasks, abstract away torch details and 
+    make the same code work on both the 'CPU' and 'GPU'. It's flexible enough to
+    support expressing a large range of models. It's heavily inspired by 'fastai' by 
+    Howard et al. (2020) <arXiv:2002.04688>, 'Keras' by Chollet et al. (2015) and 
+    'Pytorch Lightning' by Falcon et al. (2019) <doi:10.5281/zenodo.3828935>.
+License: MIT + file LICENSE
+URL: https://mlverse.github.io/luz/, https://github.com/mlverse/luz
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: torch (>= 0.4.0), magrittr, zeallot, rlang, coro, glue,
+        progress, R6, generics, purrr, ellipsis, fs, prettyunits, cli
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), covr, Metrics, withr,
+        vdiffr, ggplot2, dplyr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Collate: 'accelerator.R' 'utils.R' 'callbacks.R'
+        'callbacks-interrupt.R' 'callbacks-profile.R' 'context.R'
+        'metrics.R' 'metrics-auc.R' 'module-plot.R' 'module-print.R'
+        'module.R' 'reexports.R' 'serialization.R'
+NeedsCompilation: no
+Packaged: 2021-06-16 17:56:07 UTC; dfalbel
+Author: Daniel Falbel [aut, cre, cph],
+  RStudio [cph]
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2021-06-17 08:40:04 UTC

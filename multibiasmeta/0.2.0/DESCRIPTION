@@ -1,0 +1,41 @@
+Package: multibiasmeta
+Type: Package
+Title: Sensitivity Analysis for Multiple Biases in Meta-Analyses
+Description: Meta-analyses can be compromised by studies' internal biases (e.g.,
+  confounding in nonrandomized studies) as well as by publication bias. This
+  package conducts sensitivity analyses for the joint effects of these biases
+  (per Mathur (2022) <doi:10.31219/osf.io/u7vcb>). These sensitivity analyses 
+  address two questions: (1) For a given severity of internal bias across
+  studies and of publication bias, how much could the results change?; and
+  (2) For a given severity of publication bias, how severe would internal bias
+  have to be, hypothetically, to attenuate the results to the null or by a given
+  amount?
+Version: 0.2.0
+Authors@R: c(
+  person("Peter", "Solymos", email = "peter@analythium.io", role = c("cre", "ctb"), comment = c(ORCID = "0000-0001-7337-1740")),
+  person("Maya", "Mathur", email = "mmathur@stanford.edu", role = c("aut")),
+  person("Mika", "Braginsky", email = "mika.br@gmail.com", role = c("aut"))
+  )
+License: MIT + file LICENSE
+URL: https://github.com/mathurlabstanford/multibiasmeta,
+        https://mathurlabstanford.github.io/multibiasmeta/
+BugReports: https://github.com/mathurlabstanford/multibiasmeta/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: dplyr, EValue, metabias, metafor, purrr, Rdpack, rlang,
+        robumeta
+RoxygenNote: 7.2.3
+RdMacros: Rdpack
+Suggests: glue, knitr, phacking, PublicationBias (>= 2.3.0), rmarkdown,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-08-18 16:59:09 UTC; root
+Author: Peter Solymos [cre, ctb] (<https://orcid.org/0000-0001-7337-1740>),
+  Maya Mathur [aut],
+  Mika Braginsky [aut]
+Maintainer: Peter Solymos <peter@analythium.io>
+Repository: CRAN
+Date/Publication: 2023-08-18 18:32:32 UTC

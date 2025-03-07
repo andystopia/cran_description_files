@@ -1,0 +1,24 @@
+Package: GDSARM
+Title: Gauss - Dantzig Selector: Aggregation over Random Models
+Version: 0.1.0
+Authors@R: c(
+   person("Rakhi", "Singh", email = "agrakhi@gmail.com", role = c("cre", "aut"), comment = c(ORCID = "0000-0003-3469-295X")),
+   person("John", "Stufken", email= "jstufken@asu.edu", role = "aut", comment = c(ORCID = "0000-0001-9026-3610")))
+Description: The method aims to identify important factors in screening experiments by aggregation over random models as studied in Singh and Stufken (2022) <doi:10.48550/arXiv.2205.13497>. This package provides functions to run Gauss-Dantzig selector on screening experiments when interactions may be affecting the response. Currently, all functions require each factor to be at two-levels coded as +1 and -1. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Depends: R (>= 2.10)
+LazyData: true
+Imports: lpSolve
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+URL: https://github.com/agrakhi/GDSARM
+BugReports: https://github.com/agrakhi/GDSARM/issues
+Author: Rakhi Singh [cre, aut] (<https://orcid.org/0000-0003-3469-295X>),
+  John Stufken [aut] (<https://orcid.org/0000-0001-9026-3610>)
+Maintainer: Rakhi Singh <agrakhi@gmail.com>
+Packaged: 2022-06-22 20:13:56 UTC; R_SINGH5
+Repository: CRAN
+Date/Publication: 2022-06-23 07:30:05 UTC

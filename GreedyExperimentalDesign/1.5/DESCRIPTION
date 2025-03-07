@@ -1,0 +1,54 @@
+Package: GreedyExperimentalDesign
+Type: Package
+Title: Greedy Experimental Design Construction
+Version: 1.5
+Date: 2022-11-03
+Authors@R: c(
+        person("Adam", "Kapelner", email = "kapelner@qc.cuny.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5985-6792")),
+        person("David", "Azriel", email = "davidazr@technion.ac.il", role = "aut"),
+        person("Abba", "Krieger", email = "krieger@wharton.upenn.edu", role = "aut")
+    )
+Description: Computes experimental designs for a
+    two-arm experiment with covariates via a number of methods:
+    (0) complete randomization and randomization with forced-balance,
+    (1) Greedily optimizing a
+    balance objective function via pairwise switching. This optimization 
+    provides lower variance for the treatment effect estimator (and higher 
+    power) while preserving a design that is close to complete randomization.
+    We return all iterations of the designs for use in a permutation test,
+    (2) The second is via numerical optimization 
+    (via 'gurobi' which must be installed, see <https://www.gurobi.com/documentation/9.1/quickstart_windows/r_ins_the_r_package.html>) 
+    a la Bertsimas and Kallus, 
+    (3) rerandomization, 
+    (4) Karp's method for one covariate, 
+    (5) exhaustive enumeration to find the 
+    optimal solution (only for small sample sizes),
+    (6) Binary pair matching using the 'nbpMatching' library,
+    (7) Binary pair matching plus design number (1) to further optimize balance,
+    (8) Binary pair matching plus design number (3) to further optimize balance,
+    (9) Hadamard designs,
+    (10) Simultaneous Multiple Kernels.
+    In (1-9) we allow for three objective functions:
+    Mahalanobis distance,
+    Sum of absolute differences standardized and
+    Kernel distances via the 'kernlab' library. This package is the result of a stream of research that can be found in 
+    Krieger, A, Azriel, D and Kapelner, A "Nearly Random Designs with Greatly Improved Balance" (2016) <arXiv:1612.02315>,
+    Krieger, A, Azriel, D and Kapelner, A "Better Experimental Design by Hybridizing Binary Matching with Imbalance 
+    Optimization" (2021) <arXiv:2012.03330>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0), rJava (>= 0.9-6)
+SystemRequirements: Java (>= 7.0)
+LinkingTo: Rcpp
+Imports: Rcpp, checkmate, nbpMatching, survey, stringr, stringi,
+        kernlab, graphics, grDevices, stats
+URL: https://github.com/kapelner/GreedyExperimentalDesign
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Packaged: 2022-11-03 22:43:33 UTC; kapel
+Author: Adam Kapelner [aut, cre] (<https://orcid.org/0000-0001-5985-6792>),
+  David Azriel [aut],
+  Abba Krieger [aut]
+Maintainer: Adam Kapelner <kapelner@qc.cuny.edu>
+Repository: CRAN
+Date/Publication: 2022-11-04 15:40:05 UTC

@@ -1,0 +1,48 @@
+Type: Package
+Package: waywiser
+Title: Methods for Assessing Spatial Models
+Version: 0.2.0
+Authors@R: c(
+    person("Michael", "Mahoney", , "mike.mahoney.218@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2402-304X")),
+    person("Lucas", "Johnson", , "lucas.k.johnson03@gmail.com", role = c("ctb"),
+           comment = c(ORCID = "0000-0002-7953-0260")),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: Assessing predictive models of spatial data can be challenging, 
+    both because these models are typically built for extrapolating outside the
+    original region represented by training data and due to potential spatially
+    structured errors, with "hot spots" of higher than expected error
+    clustered geographically due to spatial structure in the underlying
+    data. These functions provide methods for measuring the spatial
+    structure of model errors and evaluating where predictions can be made 
+    safely, and are particularly useful for models fit using the 'tidymodels' 
+    framework. Methods include Moran's I
+    ('Moran' (1950) <doi:10.2307/2332142>), Geary's C 
+    ('Geary' (1954) <doi:10.2307/2986645>), Getis-Ord's G
+    ('Ord' and 'Getis' (1995) <doi:10.1111/j.1538-4632.1995.tb00912.x>),
+    as well as an implementation of the area of applicability methodology from
+    'Meyer' and 'Pebesma' (2021) (<doi:10.1111/2041-210X.13650>).
+License: MIT + file LICENSE
+URL: https://github.com/mikemahoney218/waywiser,
+        https://mikemahoney218.github.io/waywiser/
+BugReports: https://github.com/mikemahoney218/waywiser/issues
+Depends: R (>= 3.6)
+Imports: fields, glue, hardhat, Matrix, purrr, rlang, rsample, sf,
+        spdep, stats, tibble, yardstick
+Suggests: applicable, covr, dplyr, ggplot2, recipes, sfdep,
+        spatialsample, spelling, testthat (>= 3.0.0), tidymodels,
+        tidyr, vip
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-10-23 00:40:21 UTC; mikemahoney218
+Author: Michael Mahoney [aut, cre] (<https://orcid.org/0000-0003-2402-304X>),
+  Lucas Johnson [ctb] (<https://orcid.org/0000-0002-7953-0260>),
+  RStudio [cph, fnd]
+Maintainer: Michael Mahoney <mike.mahoney.218@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-10-23 02:20:02 UTC

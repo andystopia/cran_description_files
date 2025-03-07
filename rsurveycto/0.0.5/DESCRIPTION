@@ -1,0 +1,31 @@
+Package: rsurveycto
+Type: Package
+Title: Interact with Data on 'SurveyCTO'
+Version: 0.0.5
+Authors@R: c(
+  person('Jake', 'Hughey', , 'jakejhughey@gmail.com', c('aut', 'cre')),
+  person('Robert', 'On', , 'roberton@gmail.com', 'aut'))
+Description: 'SurveyCTO' is a platform for mobile data collection in offline settings.
+  The 'rsurveycto' R package uses the 'SurveyCTO' REST API
+  <https://docs.surveycto.com/05-exporting-and-publishing-data/05-api-access/01.api-access.html>
+  to read datasets and forms from a 'SurveyCTO' server into R as 'data.table's
+  and to download file attachments. The package also has limited support to
+  write datasets to a server.
+URL: https://youth-impact.github.io/rsurveycto/,
+        https://github.com/youth-impact/rsurveycto
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 4.1)
+Imports: checkmate (>= 2.1.0), curl (>= 4.3.2), data.table (>= 1.14.2),
+        glue (>= 1.6.2), httr (>= 1.4.3), jsonlite (>= 1.8.0), withr
+        (>= 2.5.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.1.4)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-09-07 20:43:18 UTC; jakehughey
+Author: Jake Hughey [aut, cre],
+  Robert On [aut]
+Maintainer: Jake Hughey <jakejhughey@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-08 06:50:02 UTC

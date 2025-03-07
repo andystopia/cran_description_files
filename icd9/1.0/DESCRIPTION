@@ -1,0 +1,32 @@
+Package: icd9
+Title: Tools for Working with ICD-9 Codes, and Finding Comorbidities
+Description: Calculate comorbidities, and perform fast and accurate
+    validation, conversion, manipulation, filtering and comparison of ICD-9-CM
+    (clinical modification) codes. ICD-9 codes appear numeric but leading and
+    trailing zeroes, and both decimal and non-decimal "short" format codes
+    exist. The package enables a work flow from raw lists of ICD-9 codes from
+    hospital billing databases to comorbidities. ICD-9 to comorbidity mappings
+    from Quan (Deyo and Elixhauser versions), Elixhauser and AHRQ included.
+Version: 1.0
+Date: 2015-01-24
+Authors@R: person(given = "Jack O.", family = "Wasey",
+    role = c("aut", "cre", "cph"),
+    email = c("jack@jackwasey.com"))
+Maintainer: Jack O. Wasey <jack@jackwasey.com>
+URL: https://github.com/jackwasey/icd9
+Depends: R (>= 3.0.0)
+Imports: Rcpp (>= 0.11.4), checkmate (>= 1.5.1)
+Suggests: testthat, knitr, microbenchmark, XML, magrittr, memoise,
+        profr, ggplot2
+LazyData: true
+LazyDataCompression: xz
+BugReports: https://github.com/jackwasey/icd9/issues
+License: GPL-3
+Copyright: See file (inst/)COPYRIGHTS
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+Packaged: 2015-01-26 23:25:52 UTC; jack
+Author: Jack O. Wasey [aut, cre, cph]
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-01-27 08:16:25

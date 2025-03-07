@@ -1,0 +1,38 @@
+Package: interfacer
+Title: Define and Enforce Contracts for Dataframes as Function
+        Parameters
+Version: 0.2.3
+Authors@R: 
+    person("Robert", "Challen", , "rob.challen@bristol.ac.uk", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-5504-7768"))
+Description: A dataframe validation framework for package builders who use
+  dataframes as function parameters. It performs checks on column names, coerces
+  data-types, and checks grouping to make sure user inputs conform to a
+  specification provided by the package author. It provides a mechanism for
+  package authors to automatically document supported dataframe inputs and
+  selectively dispatch to functions depending on the format of a dataframe much
+  like S3 does for classes. It also contains some developer tools to make
+  working with and documenting dataframe specifications easier. It helps package
+  developers to improve their documentation and simplifies parameter validation
+  where dataframes are used as function parameters.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Language: en-GB
+Imports: dplyr, glue, magrittr, purrr, rlang, tibble, tidyselect,
+        stringr, forcats, knitr, digest, roxygen2
+Suggests: rmarkdown, devtools, ggplot2, testthat (>= 3.0.0), fs, readr,
+        usethis, whisker, clipr, tidyr, binom, spelling
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+URL: https://bristol-vaccine-centre.github.io/interfacer/,
+        https://github.com/bristol-vaccine-centre/interfacer
+BugReports: https://github.com/bristol-vaccine-centre/interfacer/issues
+NeedsCompilation: no
+Packaged: 2024-07-30 08:42:57 UTC; vp22681
+Author: Robert Challen [aut, cre, cph]
+    (<https://orcid.org/0000-0002-5504-7768>)
+Maintainer: Robert Challen <rob.challen@bristol.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-08-01 08:50:02 UTC

@@ -1,0 +1,41 @@
+Package: clinUtils
+Type: Package
+Title: General Utility Functions for Analysis of Clinical Data
+Version: 0.1.3
+Date: 2022-10-24
+Authors@R: c(
+  person(given = "Laure", family = "Cougnaud", role = c("aut", "cre"),
+  email = "laure.cougnaud@openanalytics.eu"),
+  person(given = "Michela", family = "Pasetto", role = "aut",
+  email = "michela.pasetto@openanalytics.eu"),
+  person(given = "Arne", family = "De Roeck", 
+  role = "rev", comment = "tests"),
+  person(given = "Open Analytics", role = "cph")
+  )
+Description: 
+ Utility functions to facilitate the import, 
+ the reporting and analysis of clinical data.
+ Example datasets in 'SDTM' and 'ADaM' format, containing a subset of patients/domains
+ from the 'CDISC Pilot 01 study' are also available as R datasets to demonstrate
+ the package functionalities.
+Imports: crosstalk, data.table, DT, haven, htmlwidgets, knitr, plyr,
+        tools, utils, viridisLite
+Suggests: tibble, ggplot2, plotly, htmltools, pander, rmarkdown,
+        testthat, flextable
+SystemRequirements: pandoc (for export clin DT to a file - inclusion of
+        list of interactive plots/objects with knitr)
+URL: https://github.com/openanalytics/clinUtils
+BugReports: https://github.com/openanalytics/clinUtils/issues
+License: MIT + file LICENSE
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2022-10-24 15:46:57 UTC; lcougnaud
+Author: Laure Cougnaud [aut, cre],
+  Michela Pasetto [aut],
+  Arne De Roeck [rev] (tests),
+  Open Analytics [cph]
+Maintainer: Laure Cougnaud <laure.cougnaud@openanalytics.eu>
+Repository: CRAN
+Date/Publication: 2022-10-24 16:25:08 UTC

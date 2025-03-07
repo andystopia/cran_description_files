@@ -1,0 +1,35 @@
+Package: glmmrOptim
+Type: Package
+Title: Approximate Optimal Experimental Designs Using Generalised
+        Linear Mixed Models
+Version: 0.3.2
+Date: 2023-09-11
+Authors@R: c(person("Sam", "Watson", email = "S.I.Watson@bham.ac.uk",
+                  role = c("aut", "cre")),
+             person("Yi", "Pan", email = "ypan1988@gmail.com",
+                  role = c("aut")))
+Maintainer: Sam Watson <S.I.Watson@bham.ac.uk>
+Description: Optimal design analysis algorithms for any study design that can be represented or
+  modelled as a generalised linear mixed model including cluster randomised trials,
+  cohort studies, spatial and temporal epidemiological studies, and split-plot designs.
+  See <https://github.com/samuel-watson/glmmrBase/blob/master/README.md> for a
+  detailed manual on model specification. A detailed discussion of the methods in this
+  package can be found in Watson and Pan (2022) <arXiv:2207.09183>.
+License: GPL (>= 2)
+Imports: methods, Rcpp (>= 1.0.7), digest
+LinkingTo: Rcpp (>= 1.0.7), RcppEigen, RcppProgress, glmmrBase (>=
+        0.4.5), SparseChol (>= 0.2.1), BH, rminqa (>= 0.2.2)
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Author: Sam Watson [aut, cre],
+  Yi Pan [aut]
+URL: https://github.com/samuel-watson/glmmrOptim
+BugReports: https://github.com/samuel-watson/glmmrOptim/issues
+Suggests: testthat, CVXR
+Biarch: true
+Depends: R (>= 3.4.0), Matrix, glmmrBase
+SystemRequirements: GNU make
+Encoding: UTF-8
+Packaged: 2023-09-11 10:17:06 UTC; samue
+Repository: CRAN
+Date/Publication: 2023-09-11 10:40:02 UTC

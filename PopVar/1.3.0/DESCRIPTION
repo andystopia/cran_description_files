@@ -1,0 +1,46 @@
+Package: PopVar
+Title: Genomic Breeding Tools: Genetic Variance Prediction and
+        Cross-Validation
+Version: 1.3.0
+Authors@R: 
+    c(person(given = "Tyler",
+           family = "Tiede",
+           role = c("aut"),
+           email = "tyler.tiede7@gmail.com"),
+      person(given = "Jeffrey",
+             family = "Neyhart",
+             role = c("aut", "ctb", "cre"),
+             email = "neyhartje@gmail.com",
+             comment = c(ORCID = "0000-0002-1991-5310")),
+      person(given = "Mohsen",
+             family = "Mohammadi",
+             role = c("ctb"),
+             comment = c(ORCID = "0000-0002-4536-1200")),
+      person(given = "Kevin",
+             family = "Smith",
+             role = c("ctb"),
+             comment = c(ORCID = "0000-0001-8253-3326")))
+Description: The main attribute of 'PopVar' is the prediction of genetic variance in bi-parental populations, 
+    from which the package derives its name. 'PopVar' contains a set of functions that use phenotypic and genotypic
+    data from a set of candidate parents to 1) predict the mean, genetic variance, and superior progeny value of all, 
+    or a defined set of pairwise bi-parental crosses, and 2) perform cross-validation to estimate genome-wide prediction 
+    accuracy of multiple statistical models. More details are available in Mohammadi, Tiede, and Smith (2015, <doi:10.2135/cropsci2015.01.0030>). 
+    A dataset 'think_barley.rda' is included for reference and examples.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Imports: BGLR, qtl, rrBLUP, stats, utils, methods, parallel
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-13 19:20:51 UTC; jln54
+Author: Tyler Tiede [aut],
+  Jeffrey Neyhart [aut, ctb, cre]
+    (<https://orcid.org/0000-0002-1991-5310>),
+  Mohsen Mohammadi [ctb] (<https://orcid.org/0000-0002-4536-1200>),
+  Kevin Smith [ctb] (<https://orcid.org/0000-0001-8253-3326>)
+Maintainer: Jeffrey Neyhart <neyhartje@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-07 20:10:17 UTC

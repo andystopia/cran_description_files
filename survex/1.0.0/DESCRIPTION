@@ -1,0 +1,39 @@
+Package: survex
+Title: Explainable Machine Learning in Survival Analysis
+Version: 1.0.0
+Authors@R: 
+    c(
+        person("Mikołaj", "Spytek", email = "mikolajspytek@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7111-2286")),
+        person("Mateusz", "Krzyziński", role = c("aut"), comment = c(ORCID = "0000-0001-6143-488X")),
+        person("Hubert", "Baniecki", role = c("aut"), comment = c(ORCID = "0000-0001-6661-5364")),
+        person("Przemyslaw", "Biecek", role = c("aut"), comment = c(ORCID = "0000-0001-8423-1823"))
+    )
+Description: Survival analysis models are commonly used in medicine and other areas. Many of them
+    are too complex to be interpreted by human. Exploration and explanation is needed, but
+    standard methods do not give a broad enough picture. 'survex' provides easy-to-apply
+    methods for explaining survival models, both complex black-boxes and simpler statistical models.
+    They include methods specific to survival analysis such as SurvSHAP(t) introduced in Krzyzinski et al., (2023)
+    <doi:10.1016/j.knosys.2022.110234>, SurvLIME described in Kovalev et al., (2020) <doi:10.1016/j.knosys.2020.106164> as well as
+    extensions of existing ones described in Biecek et al., (2021) <doi:10.1201/9780429027192>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 3.5.0)
+Imports: DALEX (>= 2.2.1), ggplot2, kernelshap, pec, survival,
+        patchwork
+Suggests: censored, covr, gbm, generics, glmnet, ingredients, knitr,
+        mboost, parsnip, progressr, randomForestSRC, ranger, rmarkdown,
+        testthat (>= 3.0.0), withr, xgboost
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://modeloriented.github.io/survex/
+BugReports: https://github.com/ModelOriented/survex/issues
+NeedsCompilation: no
+Packaged: 2023-03-20 18:17:57 UTC; Mikołaj
+Author: Mikołaj Spytek [aut, cre] (<https://orcid.org/0000-0001-7111-2286>),
+  Mateusz Krzyziński [aut] (<https://orcid.org/0000-0001-6143-488X>),
+  Hubert Baniecki [aut] (<https://orcid.org/0000-0001-6661-5364>),
+  Przemyslaw Biecek [aut] (<https://orcid.org/0000-0001-8423-1823>)
+Maintainer: Mikołaj Spytek <mikolajspytek@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-20 19:30:02 UTC

@@ -1,0 +1,45 @@
+Package: EvoPhylo
+Version: 0.3
+Title: Pre- And Postprocessing of Morphological Data from Relaxed Clock
+        Bayesian Phylogenetics
+Description: Performs automated morphological character partitioning for 
+             phylogenetic analyses and analyze macroevolutionary parameter 
+             outputs from clock (time-calibrated) Bayesian inference analyses, following 
+             concepts introduced by Simões and Pierce (2021) <doi:10.1038/s41559-021-01532-x>.
+Authors@R: c(
+  person("Tiago", "Simoes", role = c("cre", "aut"),
+         email = "trsimoes87@gmail.com", 
+         comment = c(ORCID = "0000-0003-4716-649X")),
+  person("Noah", "Greifer", role = c("aut"), 
+         email = "ngreifer@iq.harvard.edu",
+	       comment = c(ORCID="0000-0003-3067-7154")),
+  person("Joelle", "Barido-Sottani", role = c("aut"), 
+         email = "joelle.barido-sottani@m4x.org",
+	       comment = c(ORCID="0000-0002-5220-5468")),
+  person("Stephanie", "Pierce", role = c("aut"),
+         email = "spierce@oeb.harvard.edu", 
+         comment = c(ORCID = "0000-0003-0717-1841"))
+  )
+Depends: R (>= 4.0.0)
+Imports: ape (>= 1.16.2), dplyr (>= 1.0.8), cluster (>= 2.1.2),
+        deeptime (>= 0.2.0), ggplot2 (>= 3.3.5), ggrepel (>= 0.9.1),
+        ggtree (>= 3.1.5.902), patchwork, treeio (>= 1.16.2), Rtsne (>=
+        0.15), unglue (>= 0.1.0)
+Suggests: kableExtra, knitr, rmarkdown
+Encoding: UTF-8
+LazyData: false
+License: GPL (>= 2)
+URL: https://github.com/tiago-simoes/EvoPhylo,
+        https://tiago-simoes.github.io/EvoPhylo/
+BugReports: https://github.com/tiago-simoes/EvoPhylo/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-08-19 12:52:34 UTC; tiago
+Author: Tiago Simoes [cre, aut] (<https://orcid.org/0000-0003-4716-649X>),
+  Noah Greifer [aut] (<https://orcid.org/0000-0003-3067-7154>),
+  Joelle Barido-Sottani [aut] (<https://orcid.org/0000-0002-5220-5468>),
+  Stephanie Pierce [aut] (<https://orcid.org/0000-0003-0717-1841>)
+Maintainer: Tiago Simoes <trsimoes87@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-19 13:30:02 UTC

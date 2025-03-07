@@ -1,0 +1,26 @@
+Package: HIMA
+Type: Package
+Title: High-Dimensional Mediation Analysis
+Version: 2.0.0
+Date: 2022-02-02
+Authors@R: c(person("Yinan","Zheng", role = c("aut","cre"), email = "y-zheng@northwestern.edu"), person("Haixiang","Zhang", role = c("aut"), email = "haixiang.zhang@tju.edu.cn"), person("Lifang","Hou", role = c("aut"), email = "l-hou@northwestern.edu"), person("Lei","Liu", role = c("aut","cph"), email = "lei.liu@wustl.edu"))
+Description: Allows to estimate and test high-dimensional mediation effects based on advanced mediator screening and penalized regression techniques. Methods used in the package refer to Zhang H, Zheng Y, Hou L, Zheng C, Liu L. Mediation Analysis for Survival Data with High-Dimensional Mediators. (2021) <doi: 10.1093/bioinformatics/btab564>.
+License: GPL-3
+Depends: R (>= 3.4.0), ncvreg, glmnet
+Imports: utils, stats, MASS, survival, HDMT, hommel, iterators,
+        parallel, foreach, doParallel
+Collate: utils.R simHIMA.R hima.R survHIMA.R microHIMA.R onAttach.R
+        HIMA-package.R
+Encoding: UTF-8
+URL: https://github.com/YinanZheng/HIMA/
+BugReports: https://github.com/YinanZheng/HIMA/issues/
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-02-03 07:27:47 UTC; yzk256
+Author: Yinan Zheng [aut, cre],
+  Haixiang Zhang [aut],
+  Lifang Hou [aut],
+  Lei Liu [aut, cph]
+Maintainer: Yinan Zheng <y-zheng@northwestern.edu>
+Repository: CRAN
+Date/Publication: 2022-02-03 07:40:17 UTC

@@ -1,0 +1,77 @@
+Package: mapme.biodiversity
+Title: Efficient Monitoring of Global Biodiversity Portfolios
+Version: 0.9.1
+Authors@R: c(person(given = "Darius A.", 
+                    family = "G\u00F6rgen", 
+                    email =  "info@dariusgoergen.com", 
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0009-0008-5503-7704")),
+             person(given = "Om Prakash", 
+                    family = "Bhandari", 
+                    role = "aut")
+                    )
+Description: Biodiversity areas, especially primary forest, serve a
+    multitude of functions for local economy, regional functionality of
+    the ecosystems as well as the global health of our planet. Recently,
+    adverse changes in human land use practices and climatic responses to
+    increased greenhouse gas emissions, put these biodiversity areas under
+    a variety of different threats. The present package helps to analyse a
+    number of biodiversity indicators based on freely available
+    geographical datasets. It supports computational efficient routines
+    that allow the analysis of potentially global biodiversity portfolios.
+    The primary use case of the package is to support evidence based
+    reporting of an organization's effort to protect biodiversity areas
+    under threat and to identify regions were intervention is most duly
+    needed.
+License: GPL (>= 3)
+URL: https://mapme-initiative.github.io/mapme.biodiversity/index.html,
+        https://github.com/mapme-initiative/mapme.biodiversity/
+BugReports: https://github.com/mapme-initiative/mapme.biodiversity/issues
+Depends: R (>= 3.5.0)
+SystemRequirements: GDAL (>= 3.7.0), PROJ (>= 4.8.0)
+Imports: dplyr, furrr, httr2, jsonlite, magrittr, purrr, sf, terra,
+        tibble, tidyr
+Suggests: exactextractr, future, knitr, landscapemetrics, progressr,
+        rmarkdown, rstac, rvest, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: DiagrammeR
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.2
+Collate: 'register.R' 'calc_biodiversity_intactness_index.R'
+        'calc_biome.R' 'calc_burned_area.R' 'calc_carbon.R'
+        'calc_deforestation_drivers.R' 'calc_drought_indicator.R'
+        'calc_ecoregion.R' 'calc_elevation.R'
+        'calc_exposed_population.R' 'calc_fatalities.R'
+        'calc_gsw_change.R' 'calc_gsw_occurrence.R'
+        'calc_gsw_recurrence.R' 'calc_gsw_seasonality.R'
+        'calc_gsw_time_series.R' 'calc_gsw_transitions.R' 'calc_hfp.R'
+        'get_resources.R' 'calc_indicators.R' 'calc_ipbes_biomes.R'
+        'calc_iucn.R' 'calc_key_biodiversity_areas.R'
+        'calc_landcover.R' 'calc_mangroves_area.R'
+        'calc_population_count.R' 'calc_precipitation_chelsa.R'
+        'calc_precipitation_chirps.R' 'calc_precipitation_wc.R'
+        'calc_slope.R' 'calc_soilproperties.R'
+        'calc_temperature_max_wc.R' 'calc_temperature_min_wc.R'
+        'calc_traveltime.R' 'calc_traveltime_2000.R'
+        'calc_treecover_area.R' 'calc_treecover_area_and_emissions.R'
+        'calc_treecoverloss_emissions.R' 'calc_tri.R' 'chunking.R'
+        'engines.R' 'get_accessibility_2000.R'
+        'get_biodiversity_intactness_index.R' 'get_carbon.R'
+        'get_chelsa.R' 'get_chirps.R' 'get_esalandcover.R'
+        'get_fritz_et_al.R' 'get_gfw_emissions.R' 'get_gfw_lossyear.R'
+        'get_gfw_treecover.R' 'get_gmw.R' 'get_gsw.R'
+        'get_gsw_time_series.R' 'get_hfp.R' 'get_ipbes_biomes.R'
+        'get_iucn.R' 'get_key_biodiversity_areas.R' 'get_mcd64A1.R'
+        'get_nasa_grace.R' 'get_nasa_srtm.R' 'get_nelson_et_al.R'
+        'get_soilgrids.R' 'get_teow.R' 'get_ucdp_ged.R'
+        'get_worldclim.R' 'get_worldpop.R' 'mapme.biodiversity-pkg.R'
+        'portfolio.R' 'spatial-utils.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2024-09-02 07:12:24 UTC; rstudio
+Author: Darius A. Görgen [aut, cre] (<https://orcid.org/0009-0008-5503-7704>),
+  Om Prakash Bhandari [aut]
+Maintainer: Darius A. Görgen <info@dariusgoergen.com>
+Repository: CRAN
+Date/Publication: 2024-09-02 09:20:01 UTC

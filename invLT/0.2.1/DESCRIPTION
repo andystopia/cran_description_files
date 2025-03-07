@@ -1,0 +1,16 @@
+Package: invLT
+Type: Package
+Title: Inversion of Laplace-Transformed Functions
+Version: 0.2.1
+Date: 2015-08-25
+Author: Christopher Barry
+Maintainer: Christopher Barry <cjb309@bham.ac.uk>
+Description: Provides two functions for the numerical inversion of Laplace-Transformed functions, returning the value of the standard (time) domain function at a specified value.  The first algorithm is the first optimum contour algorithm described by Evans and Chung (2000)[1].
+    The second algorithm uses the Bromwich contour as per the definition of the inverse Laplace Transform.  The latter is unstable for numerical inversion and mainly included for comparison or interest.  There are also some additional functions provided for utility, including plotting and some simple Laplace Transform examples, for which there are known analytical solutions.  Polar-cartesian conversion functions are included in this package and are used by the inversion functions.
+    [1] Evans & Chung, 2000: Laplace transform inversions using optimal contours in the complex plane; International Journal of Computer Mathematics v73 pp531-543.
+License: MIT + file LICENSE
+LazyData: TRUE
+NeedsCompilation: no
+Packaged: 2015-09-01 13:18:33 UTC; cjb309
+Repository: CRAN
+Date/Publication: 2015-09-03 13:26:48

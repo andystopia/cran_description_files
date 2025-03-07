@@ -1,0 +1,25 @@
+Package: FBMS
+Type: Package
+Title: Flexible Bayesian Model Selection and Model Averaging
+Version: 1.0
+Date: 2023-12-20
+Encoding: UTF-8
+Authors@R: c(
+    person("Jon", "Lachmann", email = "jon@lachmann.nu", role = c("cre", "aut")),
+    person("Aliaksandr", "Hubin", email = "aliaksah@math.uio.no", role = "aut")
+    )
+Description: Implements MJMCMC (mode jumping MCMC) described in Hubin and Storvik (2018) <doi:10.1016/j.csda.2018.05.020> and GMJMCMC (genetically modified MJMCMC) described in Hubin et al. (2021) <doi:10.1613/jair.1.13047> algorithms as well as the subsampling counterpart described in Lachmann et al. (2022) <doi:10.1016/j.ijar.2022.08.018> for flexible Bayesian model selection and model averaging.
+License: GPL-2
+Depends: R (>= 3.5.0), fastglm, GenSA, parallel, stats, graphics
+Imports: Rcpp
+LinkingTo: Rcpp
+Suggests: testthat, knitr, rmarkdown, markdown
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-12-20 15:39:57 UTC; jonlachmann
+Author: Jon Lachmann [cre, aut],
+  Aliaksandr Hubin [aut]
+Maintainer: Jon Lachmann <jon@lachmann.nu>
+Repository: CRAN
+Date/Publication: 2023-12-21 16:30:11 UTC

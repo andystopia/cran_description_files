@@ -1,0 +1,38 @@
+Package: mcmcensemble
+Title: Ensemble Sampler for Affine-Invariant MCMC
+Version: 2.0
+Authors@R: 
+    c(person(given = "Hugo",
+             family = "Gruson",
+             role = c("cre", "aut", "cph"),
+             email = "hugo.gruson+R@normalesup.org",
+             comment = c(ORCID = "0000-0002-4094-1476")),
+      person(given = "Sanda",
+             family = "Dejanic",
+             role = c("aut", "cph")),
+      person(given = "Andreas",
+             family = "Scheidegger",
+             role = c("aut", "cph"),
+             comment = c(ORCID = "0000-0003-2575-2172")))
+Description: Provides ensemble samplers for
+    affine-invariant Monte Carlo Markov Chain, which allow a faster
+    convergence for badly scaled estimation problems. Two samplers are
+    proposed: the 'differential.evolution' sampler from ter Braak and
+    Vrugt (2008) <doi:10.1007/s11222-008-9104-9> and the 'stretch' sampler
+    from Goodman and Weare (2010) <doi:10.2140/camcos.2010.5.65>.
+License: GPL-2
+URL: https://github.com/Bisaloo/mcmcensemble,
+        https://bisaloo.github.io/mcmcensemble/
+BugReports: https://github.com/Bisaloo/mcmcensemble/issues
+Suggests: coda, mockery, testthat
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-10-09 14:08:44 UTC; hugo
+Author: Hugo Gruson [cre, aut, cph] (<https://orcid.org/0000-0002-4094-1476>),
+  Sanda Dejanic [aut, cph],
+  Andreas Scheidegger [aut, cph]
+    (<https://orcid.org/0000-0003-2575-2172>)
+Maintainer: Hugo Gruson <hugo.gruson+R@normalesup.org>
+Repository: CRAN
+Date/Publication: 2020-10-17 12:20:02 UTC

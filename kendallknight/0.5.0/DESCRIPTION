@@ -1,0 +1,61 @@
+Package: kendallknight
+Type: Package
+Title: Efficient Implementation of Kendall's Correlation Coefficient
+        Computation
+Version: 0.5.0
+Authors@R: c(
+    person(
+        given = "Mauricio",
+        family = "Vargas Sepulveda",
+        role = c("aut", "cre"),
+        email = "m.sepulveda@mail.utoronto.ca",
+        comment = c(ORCID = "0000-0003-1017-7574")),
+    person(
+        given = "Loader",
+        family = "Catherine",
+        role = "ctb",
+        comment = "original stirlerr implementations in C (2000)"
+    ),
+    person(
+        given = "Ross",
+        family = "Ihaka",
+        role = "ctb",
+        comment = "original chebyshev_eval, gammafn and lgammacor implementations in C (1998)"
+    )
+    )
+Imports: stats
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Depends: R(>= 3.5.0)
+Description: The computational complexity of the implemented algorithm for
+    Kendall's correlation is O(n log(n)), which is faster than the base R
+    implementation with a computational complexity of O(n^2). For small vectors
+    (i.e., less than 100 observations), the time difference is negligible.
+    However, for larger vectors, the speed difference can be substantial and the
+    numerical difference is minimal. The references are
+    Knight (1966) <doi:10.2307/2282833>,
+    Abrevaya (1999) <doi:10.1016/S0165-1765(98)00255-9>,
+    Christensen (2005) <doi:10.1007/BF02736122> and
+    Emara (2024) <https://learningcpp.org/>.
+    This implementation is described in
+    Vargas Sepulveda (2024) <doi:10.48550/arXiv.2408.09618>.
+License: Apache License (>= 2)
+BugReports: https://github.com/pachadotdev/capybara/issues
+URL: https://pacha.dev/capybara/,
+        https://github.com/pachadotdev/capybara
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+LinkingTo: cpp11
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Language: en-US
+LazyData: true
+Packaged: 2025-01-23 21:28:19 UTC; pacha
+Author: Mauricio Vargas Sepulveda [aut, cre]
+    (<https://orcid.org/0000-0003-1017-7574>),
+  Loader Catherine [ctb] (original stirlerr implementations in C (2000)),
+  Ross Ihaka [ctb] (original chebyshev_eval, gammafn and lgammacor
+    implementations in C (1998))
+Maintainer: Mauricio Vargas Sepulveda <m.sepulveda@mail.utoronto.ca>
+Repository: CRAN
+Date/Publication: 2025-01-23 21:40:02 UTC

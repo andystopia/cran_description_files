@@ -1,0 +1,59 @@
+Package: migraph
+Title: Tools for Multimodal Network Analysis
+Version: 0.12.1
+Date: 2022-10-03
+Description: A set of tools for analysing multimodal networks.
+   All functions operate with matrices, edge lists, 
+   and 'igraph', 'network', and 'tidygraph' objects,
+   and on one-mode, two-mode (bipartite), and sometimes three-mode networks.
+   It includes functions for measuring 
+   centrality, centralization, cohesion, closure, and constraint,
+   as well as for network block-modelling and regression.
+   The package is released as a complement to 
+   'Multimodal Political Networks' (2021, ISBN:9781108985000),
+   and includes various datasets used in the book in addition to other network data.
+URL: https://github.com/snlab-ch/migraph
+BugReports: https://github.com/snlab-ch/migraph/issues
+Depends: R (>= 3.6.0)
+License: MIT + file LICENSE
+Language: en-GB
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: BiocManager, dplyr, generics, ggforce, ggplot2, ggraph,
+        igraph, methods, network, future, furrr, patchwork, pillar,
+        purrr, rlang, sna, tidygraph, tidyr
+Suggests: concaveman, covr, ggdendro, knitr, oaqc, readxl, Rgraphviz,
+        rmarkdown, roxygen2, testthat
+Authors@R: 
+    c(person(given = "James",
+             family = "Hollway",
+             role = c("cre", "aut", "ctb"),
+             email = "james.hollway@graduateinstitute.ch",
+             comment = c("IHEID", ORCID = "0000-0002-8361-9647")),
+      person(given = "Jael",
+             family = "Tan",
+             role = "ctb",
+             email = "jael.tan@graduateinstitute.ch",
+             comment = c("IHEID", ORCID = "0000-0002-6234-9764")),
+      person(given = "Bernhard",
+           family = "Bieri",
+           role = c("ctb"),
+           email = "bernhard.bieri@graduateinstitute.ch",
+           comment = c(ORCID = "0000-0001-5943-9059")),
+      person(given = "Henrique",
+             family = "Sposito",
+             role = "ctb",
+             comment = c("IHEID", ORCID = "0000-0003-3420-6085"))
+    )
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-10-03 20:36:04 UTC; hollway
+Author: James Hollway [cre, aut, ctb] (IHEID,
+    <https://orcid.org/0000-0002-8361-9647>),
+  Jael Tan [ctb] (IHEID, <https://orcid.org/0000-0002-6234-9764>),
+  Bernhard Bieri [ctb] (<https://orcid.org/0000-0001-5943-9059>),
+  Henrique Sposito [ctb] (IHEID, <https://orcid.org/0000-0003-3420-6085>)
+Maintainer: James Hollway <james.hollway@graduateinstitute.ch>
+Repository: CRAN
+Date/Publication: 2022-10-04 09:30:02 UTC

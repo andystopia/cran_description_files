@@ -1,0 +1,63 @@
+Package: functClust
+Title: Functional Clustering of Redundant Components of a System
+Version: 0.1.6
+Date: 2020-11-12
+URL: https://gitlab.com/ecosols/functclust/
+Type: Package
+Author: Benoît Jaillard [aut, cre] (<https://orcid.org/0000-0002-5156-1866>),
+  Philippe Deleporte [aut] (<https://orcid.org/0000-0002-2160-4888>),
+  Michel Loreau [aut],
+  Cyrille Violle [aut] (<https://orcid.org/0000-0002-2471-9226>)
+Authors@R: 
+ c(person(given = "Benoît", family = "Jaillard",
+          role = c("aut", "cre"), 
+          email = "benito.jaillard@wanadoo.fr",
+          comment = c(ORCID = "0000-0002-5156-1866")),
+   person(given = "Philippe", family = "Deleporte",
+          role = "aut", 
+          email = "philippe.deleporte@cirad.fr",
+          comment = c(ORCID = "0000-0002-2160-4888")),
+   person(given = "Michel", family = "Loreau",
+          role = "aut",
+          email = "michel.loreau@sete.cnrs.fr"), 
+   person(given = "Cyrille", family = "Violle", 
+          role = "aut", 
+          email = "cyrille.violle@cefe.cnrs.fr",
+          comment = c(ORCID = "0000-0002-2471-9226")))
+Description: Cluster together the components that make up an interactive
+ system on the basis of their functional redundancy 
+ for one or more collective, systemic performances. 
+ Plot the hierarchical tree of component clusters,
+ the modelled and predicted performances of component assemblages,
+ and other results associated with a functional clustering.
+ Test and prioritize the significance of the different components 
+ that make up the interactive system, 
+ of the different assemblages of components that make up the dataset, 
+ and of the different performances observed on the component assemblages.
+ The method finds application in ecology, for instance,
+ where the system is an ecosystem, the components are organisms or species,
+ and the systemic performance is the production of biomass 
+ or the respiration of the ecosystem. 
+ The method is extensively described in 
+ Jaillard B, Deleporte P, Loreau M, Violle C (2018) 
+ "A combinatorial analysis using observational data identifies species
+ that govern ecosystem functioning" 
+ <doi:10.1371/journal.pone.0201135>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 6.1.1
+Depends: R (>= 3.4.0)
+Imports: stats, utils, graphics, grDevices, multcompView, clusterCrit
+Suggests: testthat, rmarkdown, knitr, R.rsp
+VignetteBuilder: knitr, R.rsp
+Collate: 'functClust-package.R' 'data.R' 'constants.R' 'stats.R'
+        'tools.R' 'labelling.R' 'calibrating.R' 'predicting.R'
+        'clustering.R' 'validating.R' 'validating_loo.R'
+        'validating_jack.R' 'fclust.R' 'plot_fclust.R' 'test_fclust.R'
+        'boot_fclust.R' 'fexport.R'
+Packaged: 2020-11-30 09:33:04 UTC; Benito
+Maintainer: Benoît Jaillard <benito.jaillard@wanadoo.fr>
+Repository: CRAN
+Date/Publication: 2020-12-02 10:30:02 UTC

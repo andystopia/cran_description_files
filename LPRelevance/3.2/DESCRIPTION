@@ -1,0 +1,20 @@
+Package: LPRelevance
+Type: Package
+Title: Relevance-Integrated Statistical Inference Engine
+Version: 3.2
+Date: 2021-04-08
+Author: Subhadeep Mukhopadhyay, Kaijun Wang
+Maintainer: Kaijun Wang <kaijunwang.19@gmail.com>
+Description: Provide methods to perform customized inference at individual level by taking 
+	contextual covariates into account. Three main functions are provided 
+	in this package: (i) LASER(): it generates specially-designed artificial relevant 
+	samples for a given case; (ii) g2l.proc(): computes customized fdr(z|x); and (iii) 
+	rEB.proc(): performs empirical Bayes inference based on LASERs. The details can be 
+	found in Mukhopadhyay, S., and Wang, K (2021, <arXiv:2004.09588>). 
+Imports: leaps,locfdr,Bolstad2,reshape2,ggplot2,polynom,glmnet,caret
+Depends: R (>= 3.5.0), stats, BayesGOF, MASS
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2021-04-22 21:46:56 UTC; palan
+Repository: CRAN
+Date/Publication: 2021-04-22 22:10:02 UTC

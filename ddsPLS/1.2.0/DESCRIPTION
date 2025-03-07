@@ -1,0 +1,38 @@
+Package: ddsPLS
+Version: 1.2.0
+Date: 2023-05-12
+Title: Data-Driven Sparse Partial Least Squares
+Description: Allows to build Data-Driven Sparse Partial Least Squares models 
+    with high-dimensional settings. 
+    Number of components and regularization coefficients are automatically set. 
+    It comes with visualization functions and uses 'Rcpp' functions for fast 
+    computations and 'doParallel' to parallelize bootstrap operations. 
+    An applet has been developed to apply this procedure.
+    This is based on H Lorenzo, O Cloarec, R Thiebaut, J Saracco (2021) 
+    <doi:10.1002/sam.11558>.
+Authors@R: c(person("Hadrien","Lorenzo", role = c("aut", "cre"),
+                     email = "hadrien.lorenzo.2015@gmail.com"),
+             person("Misbah","Razzaq", role = "ctb",
+                     email = "misbahch6@gmail.com"),
+             person("Olivier","Cloarec", role = "aut",
+                     email = "ocloarec@mac.com"),
+             person("Jerome","Saracco", role = c("aut"),
+                     email = "jerome.saracco@math.u-bordeaux1.fr"))
+Maintainer: Hadrien Lorenzo <hadrien.lorenzo.2015@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: true
+Depends: foreach, doParallel, shiny
+Imports: Rcpp (>= 1.0.5)
+LinkingTo: Rcpp, RcppEigen
+Suggests: knitr,rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+NeedsCompilation: yes
+Packaged: 2023-05-12 14:58:47 UTC; hlorenzo
+Author: Hadrien Lorenzo [aut, cre],
+  Misbah Razzaq [ctb],
+  Olivier Cloarec [aut],
+  Jerome Saracco [aut]
+Repository: CRAN
+Date/Publication: 2023-05-15 08:20:09 UTC

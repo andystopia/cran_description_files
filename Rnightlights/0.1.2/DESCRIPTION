@@ -1,0 +1,47 @@
+Package: Rnightlights
+Version: 0.1.2
+Date: 2017-09-09
+Title: Satellite Nightlight Data Extraction
+Description: The Rnightlights package extracts raster and zonal statistics
+    from satellite nightlight rasters downloaded from the United States 
+    National Oceanic and Atmospheric Administration (<http://www.noaa.gov>) 
+    free data repositories. Both the DMSP-OLS annual and SNPP-VIIRS monthly 
+    nightlight raster data are supported. Satellite nightlight raster tiles are 
+    downloaded and cropped to the country boundaries using shapefiles from the GADM
+    database of Global Administrative Areas (<http://gadm.org>). Zonal statistics
+    are then calculated at the lowest administrative boundary for the selected
+    country and cached locally for future retrieval. Finally, a simple data
+    explorer/browser is included that allows one to visualize the cached data e.g.
+    graphing, mapping and clustering regional data.
+Authors@R: c(person(given="Christopher", family="Njuguna", role=c("aut", "cre", "cph"), email="chris.njuguna@gmail.com"),
+            person(given="Henrik", family="Bengtsson", role="ctb", email="henrikb@braju.com", comment="data setup, https://cran.r-project.org/package=R.cache"),
+            person(given="Black", family="Guru", role="ctb", comment="gdal zonal, http://www.guru-gis.net/efficient-zonal-statistics-using-r-and-gdal/"),
+            person(given="Jeff", family="Chen", role="ctb", comment="masq function, https://commercedataservice.github.io/tutorial_viirs_part1/"),
+            person(given="Star", family="Ying", role="ctb", comment="masq function, https://commercedataservice.github.io/tutorial_viirs_part1/"),
+            person(given="Chris", family="Elvidge", role="ctb", comment="information + masq function"))
+License: GPL-3
+Imports: cleangeo, compiler, data.table, doParallel, dplyr, foreach,
+        gdalUtils, lubridate, methods, raster, readr, reshape2, rgdal,
+        rgeos, R.utils, rvest, rworldmap, settings, sp, stats, stringr,
+        utils, xml2
+Suggests: dendextend, ggdendro, ggplot2, leaflet, plotly, RColorBrewer,
+        reshape, shiny, shinydashboard
+SystemRequirements: gdal wget curl aria2
+RoxygenNote: 6.0.1
+BugReports: https://github.com/chrisvwn/Rnightlights/issues
+URL: https://github.com/chrisvwn/Rnightlights
+NeedsCompilation: no
+Packaged: 2017-09-09 17:12:42 UTC; chris
+Author: Christopher Njuguna [aut, cre, cph],
+  Henrik Bengtsson [ctb] (data setup,
+    https://cran.r-project.org/package=R.cache),
+  Black Guru [ctb] (gdal zonal,
+    http://www.guru-gis.net/efficient-zonal-statistics-using-r-and-gdal/),
+  Jeff Chen [ctb] (masq function,
+    https://commercedataservice.github.io/tutorial_viirs_part1/),
+  Star Ying [ctb] (masq function,
+    https://commercedataservice.github.io/tutorial_viirs_part1/),
+  Chris Elvidge [ctb] (information + masq function)
+Maintainer: Christopher Njuguna <chris.njuguna@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-09-09 17:22:22 UTC

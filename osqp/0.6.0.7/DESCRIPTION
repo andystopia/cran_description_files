@@ -1,0 +1,36 @@
+Package: osqp
+Title: Quadratic Programming Solver using the 'OSQP' Library
+Version: 0.6.0.7
+Date: 2022-11-08
+Authors@R: c(
+  person("Bartolomeo", "Stellato", role = c("aut", "ctb", "cph"),
+         email = "bartolomeo.stellato@gmail.com"),
+  person("Goran", "Banjac", role = c("aut", "ctb", "cph")),
+  person("Paul", "Goulart", role = c("aut", "ctb", "cph"),
+         email = "paul.goulart@eng.ox.ac.uk"),
+  person("Stephen", "Boyd", role = c("aut", "ctb", "cph")),
+  person("Eric", "Anderson", role = c("ctb")),
+  person("Vineet", "Bansal", role = c("aut", "ctb"), email = "vineetb@princeton.edu"),
+  person("Balasubramanian", "Narasimhan", role = c("cre", "ctb"), email = "naras@stanford.edu"))	
+Copyright: file COPYRIGHT
+Description: Provides bindings to the 'OSQP' solver. The 'OSQP' solver is a numerical optimization package or solving convex quadratic programs written in 'C' and based on the alternating direction method of multipliers. See <arXiv:1711.08013> for details.
+License: Apache License 2.0 | file LICENSE
+Imports: Rcpp (>= 0.12.14), methods, Matrix, R6
+LinkingTo: Rcpp
+RoxygenNote: 7.2.1
+Collate: 'RcppExports.R' 'osqp-package.R' 'solve.R' 'osqp.R' 'params.R'
+NeedsCompilation: yes
+Suggests: testthat
+Encoding: UTF-8
+URL: https://osqp.org
+Packaged: 2022-11-09 02:56:30 UTC; naras
+Author: Bartolomeo Stellato [aut, ctb, cph],
+  Goran Banjac [aut, ctb, cph],
+  Paul Goulart [aut, ctb, cph],
+  Stephen Boyd [aut, ctb, cph],
+  Eric Anderson [ctb],
+  Vineet Bansal [aut, ctb],
+  Balasubramanian Narasimhan [cre, ctb]
+Maintainer: Balasubramanian Narasimhan <naras@stanford.edu>
+Repository: CRAN
+Date/Publication: 2022-11-09 22:10:13 UTC

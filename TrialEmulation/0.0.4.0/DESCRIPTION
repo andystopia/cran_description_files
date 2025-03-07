@@ -1,0 +1,57 @@
+Package: TrialEmulation
+Title: Causal Analysis of Observational Time-to-Event Data
+Version: 0.0.4.0
+Authors@R: c(
+    person("Isaac", "Gravestock", , "isaac.gravestock@roche.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0283-2065")),
+    person("Li", "Su", , "li.su@mrc-bsu.cam.ac.uk", role = "aut"),
+    person("Roonak", "Rezvani", , "roonak.r74@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-5580-5058", "Original package author")),
+    person("Julia", "Moesch", , "julia.moesch@roche.com", role = "aut"),
+    person("Medical Research Council (MRC)", role = "fnd"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Implements target trial emulation methods to apply randomized
+    clinical trial design and analysis in an observational setting. Using
+    marginal structural models, it can estimate intention-to-treat and
+    per-protocol effects in emulated trials using electronic health
+    records. A description and application of the method can be found in
+    Danaei et al (2013) <doi:10.1177/0962280211403603>.
+License: Apache License (>= 2)
+URL: https://causal-lda.github.io/TrialEmulation/,
+        https://github.com/Causal-LDA/TrialEmulation
+BugReports: https://github.com/Causal-LDA/TrialEmulation/issues
+Depends: R (>= 4.0.0)
+Imports: broom (>= 0.7.10), checkmate, data.table (>= 1.9.8), DBI,
+        duckdb, formula.tools, lifecycle, lmtest, methods, mvtnorm,
+        parglm, Rcpp, sandwich
+Suggests: knitr, parsnip, rmarkdown, rpart, testthat (>= 3.0.0), withr
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2.9000
+Collate: 'RcppExports.R' 'calculate_weights.R' 'data.R'
+        'data_extension.R' 'data_manipulation.R' 'data_preparation.R'
+        'data_simulation.R' 'data_utils.R' 'expand_trials.R'
+        'generics.R' 'initiators.R' 'lr_utils.R' 'te_model_fitter.R'
+        'te_outcome_model.R' 'te_datastore.R' 'te_weights.R'
+        'te_data.R' 'te_expansion.R' 'trial_sequence.R' 'modelling.R'
+        'package.R' 'predict.R' 'robust.R' 'sampling.R'
+        'te_datastore_csv.R' 'te_datastore_duckdb.R' 'te_parsnip.R'
+        'te_stats_glm_logit.R' 'utils.R' 'weighting.R'
+NeedsCompilation: yes
+Packaged: 2024-11-29 16:27:12 UTC; root
+Author: Isaac Gravestock [aut, cre] (<https://orcid.org/0000-0003-0283-2065>),
+  Li Su [aut],
+  Roonak Rezvani [aut] (<https://orcid.org/0000-0001-5580-5058>, Original
+    package author),
+  Julia Moesch [aut],
+  Medical Research Council (MRC) [fnd],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Isaac Gravestock <isaac.gravestock@roche.com>
+Repository: CRAN
+Date/Publication: 2024-11-29 17:10:02 UTC

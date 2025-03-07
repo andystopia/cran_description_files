@@ -1,0 +1,36 @@
+Package: blockcpd
+Title: Change Point Detection for Multiple Aligned Independent Time
+        Series
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Lucas",
+           family = "Prates",
+           role = c("aut", "cre"),
+           email = "lucasdelprates@gmail.com",
+           comment = c(ORCID = "0000-0002-6431-8232")),
+      person(given = "Florencia",
+           family = "Leonardi",
+           role = c("aut"),
+           email = "florencia@usp.br",
+           comment = c(ORCID = "0000-0002-0299-0680"))
+    )
+Description: Implementation of statistical models based on 
+    regularized likelihood for offline change point detection on multiple 
+    aligned independent time series. It detects changes in 
+    parameters for the specified family for the series as group or block. 
+    As a reference for the method, see Prates et al. (2021) <arXiv:2111.10187>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: Rcpp, graphics, stats
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-08-08 23:16:33 UTC; lucasprates
+Author: Lucas Prates [aut, cre] (<https://orcid.org/0000-0002-6431-8232>),
+  Florencia Leonardi [aut] (<https://orcid.org/0000-0002-0299-0680>)
+Maintainer: Lucas Prates <lucasdelprates@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-12 11:20:06 UTC

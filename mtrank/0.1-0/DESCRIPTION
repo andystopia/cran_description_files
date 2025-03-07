@@ -1,0 +1,28 @@
+Package: mtrank
+Title: Ranking using Probabilistic Models and Treatment Choice Criteria
+Version: 0.1-0
+Date: 2025-01-31
+Depends: R (>= 4.0.0), meta (>= 8.0-2), netmeta (>= 3.0-2)
+Imports: PlackettLuce, dplyr, magrittr
+Suggests: rmarkdown, knitr
+Authors@R: c(person("Theodoros", "Evrenoglou",
+                    role = c("aut", "cre"),
+                    email = "theodoros.evrenoglou@uniklinik-freiburg.de",
+                    comment = c(ORCID = "0000-0003-3336-8058")),
+             person("Guido", "Schwarzer",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0001-6214-9087")))
+Maintainer: Theodoros Evrenoglou <theodoros.evrenoglou@uniklinik-freiburg.de>
+URL: https://github.com/TEvrenoglou/mtrank
+Description: Implementation of a novel frequentist approach to produce clinically relevant treatment hierarchies in network meta-analysis. The method is based on treatment choice criteria (TCC) and probabilistic ranking models, as described by Evrenoglou et al. (2024) <DOI:10.48550/arXiv.2406.10612>. The TCC are defined using a rule based on the minimal clinically important difference. Using the defined TCC, the study-level data (i.e., treatment effects and standard errors) are first transformed into a preference format, indicating either a treatment preference (e.g., treatment A > treatment B) or a tie (treatment A = treatment B). The preference data are then synthesized using a probabilistic ranking model, which estimates the latent ability parameter of each treatment and produces the final treatment hierarchy. This parameter represents each treatment’s ability to outperform all the other competing treatments in the network. Consequently, larger ability estimates indicate higher positions in the ranking list.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-31 08:00:28 UTC; sc
+Author: Theodoros Evrenoglou [aut, cre]
+    (<https://orcid.org/0000-0003-3336-8058>),
+  Guido Schwarzer [aut] (<https://orcid.org/0000-0001-6214-9087>)
+Repository: CRAN
+Date/Publication: 2025-01-31 15:50:01 UTC

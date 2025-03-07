@@ -1,0 +1,24 @@
+Package: modello
+Title: Homemade Deep Learning Library
+Version: 0.1
+Date: 2021-01-1<c2><a1>27 20:00:00
+Authors@R: c(person("Filippo", "Monari", role = c("aut", "cre"), email = "ingfimo@gmail.com"))
+Author: Filippo Monari [aut, cre]
+Maintainer: Filippo Monari <ingfimo@gmail.com>
+Description: Allows to build and train  different flavors of Neural Networks. 
+             In particular, it can be used to build fairly complex computational graphs, 
+             which ca be automatically differentiated and optimized with gradient descent
+	     methods.
+URL: https://gitlab.com/ingfimo/modello
+Depends: R (>= 4.0.0), methods, R6, LaF, foreach, doParallel
+Suggests: testthat
+Collate: 'modello.R' 'interfaces.R' 'session.R' 'numbers.R'
+        'numbers_math.R' 'utils.R' 'graphs.R' 'modules.R' 'optim.R'
+        'dataLoaders.R'
+License: GPL-2
+OS_type: unix
+NeedsCompilation: yes
+Packaged: 2021-01-27 19:18:39 UTC; filippo
+RoxygenNote: 7.1.0
+Repository: CRAN
+Date/Publication: 2021-02-01 09:00:03 UTC

@@ -1,0 +1,49 @@
+Package: babsim.hospital
+License: GPL (>= 2)
+Title: Bartz & Bartz Simulation Hospital
+Type: Package
+LazyLoad: yes
+LazyData: true
+LazyDataCompression: xz
+Encoding: UTF-8
+Authors@R: c(	
+    person("Thomas", "Bartz-Beielstein", role = c("aut", "cre"), email = "tbb@bartzundbartz.de", comment = c(ORCID = "0000-0002-5938-5158")),
+  	person("Frederik", "Rehbach", role = c("aut"), email = "frederik.rehbach@bartzundbartz.de", comment = c(ORCID = "0000-0003-0922-8629")),
+  	person("Eva", "Bartz", role = c("aut"), email = "eva.bartz@bartzundbartz.de"),
+  	person("Olaf", "Mersmann", role = c("aut"), email = "olafm@p-value.net", comment = c(ORCID = "0000-0002-7720-4939")),
+  	person("Martin", "Zaefferer", role = c("ctb"),email = "martin.zaefferer@bartzundbartz.de", comment = c(ORCID = "0000-0003-2372-2092"))
+  	)
+Description: Implements a discrete-event simulation model for a hospital resource planning problem.
+    The project is motivated by the challenges faced by health care institutions in the current COVID-19 pandemic. 
+    It can be used by health departments to forecast demand for intensive care beds, ventilators, and staff resources.
+    Our modelling approach is inspired by "A novel modelling technique to predict resource requirements in critical care - a case study" (Lawton and McCooe 2019) and combines two powerful technologies: 
+      (i) discrete event simulation using the 'simmer' package and 
+      (ii) model-based optimization using 'SPOT'.
+    Ucar I, Smeets B, Azcorra A (2019) <doi:10.18637/jss.v090.i02>.
+    Bartz-Beielstein T, Lasarczyk C W G, Preuss M (2005) <doi:10.1109/CEC.2005.1554761>.
+    Lawton T, McCooe M (2019) <doi:10.7861/futurehosp.6-1-17>.
+Copyright: file inst/COPYRIGHTS
+URL: https://www.th-koeln.de/babsimhospital
+Version: 11.8.4
+Date: 2021-11-10
+Depends: R (>= 4.0.0)
+Imports: SPOT, checkmate, curl, data.table, dplyr, ggplot2, golem,
+        igraph, lubridate, markovchain, methods, padr, parallel, rvest,
+        scales, simmer, slider, testthat, plyr, xml2
+Suggests: batchtools, knitr, rmarkdown, rpart, rpart.plot, simmer.plot,
+        stringr, tidyverse, usethis, vctrs
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-11-10 20:13:19 UTC; bartz
+Author: Thomas Bartz-Beielstein [aut, cre]
+    (<https://orcid.org/0000-0002-5938-5158>),
+  Frederik Rehbach [aut] (<https://orcid.org/0000-0003-0922-8629>),
+  Eva Bartz [aut],
+  Olaf Mersmann [aut] (<https://orcid.org/0000-0002-7720-4939>),
+  Martin Zaefferer [ctb] (<https://orcid.org/0000-0003-2372-2092>)
+Maintainer: Thomas Bartz-Beielstein <tbb@bartzundbartz.de>
+Repository: CRAN
+Date/Publication: 2021-11-10 23:10:06 UTC

@@ -1,0 +1,31 @@
+Package: stgam
+Title: Spatially and Temporally Varying Coefficient Models Using
+        Generalized Additive Models
+Version: 0.0.1.0
+Authors@R: c(
+    person("Lex", "Comber", email = "a.comber@leeds.ac.uk", role = c("aut", "cre")),
+    person("Paul", "Harris", email = "paul.harris@rothamsted.ac.uk", role = c("ctb")),
+    person("Chris", "Brunsdon", email = "christopher.brunsdon@mu.ie", role = c("ctb"))
+           )
+Author: Lex Comber [aut, cre],
+  Paul Harris [ctb],
+  Chris Brunsdon [ctb]
+Maintainer: Lex Comber <a.comber@leeds.ac.uk>
+Description: A framework for specifying spatially, temporally and spatial-and-temporally varying coefficient models using Generalized Additive Models with Gaussian Process smooths. The smooths are parameterised with location and / or time attributes. Importantly the framework supports the investigation of the presence and nature of any space-time dependencies in the data, allows the user to evaluate different model forms (specifications) and to pick the most probable model or to combine multiple varying coefficient models using Bayesian Model Averaging. For more details see: Brunsdon et al (2023) <doi:10.4230/LIPIcs.GIScience.2023.17>, Comber et al (2023) <doi:10.4230/LIPIcs.GIScience.2023.22> and Comber et al (2024) <doi:10.1080/13658816.2023.2270285>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: cols4all, knitr, purrr, rmarkdown, sf, testthat (>= 3.0.0),
+        tidyr
+Config/testthat/edition: 3
+URL: https://github.com/lexcomber/stgam
+BugReports: https://github.com/lexcomber/stgam/issues
+Depends: R (>= 2.10),
+LazyData: true
+Imports: cowplot, doParallel, dplyr, foreach, ggplot2, glue, grDevices,
+        magrittr, metR, mgcv, parallel, tidyselect
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-24 15:05:36 UTC; geoaco
+Repository: CRAN
+Date/Publication: 2024-06-25 14:20:02 UTC

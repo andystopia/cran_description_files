@@ -1,0 +1,32 @@
+Package: DoseFinding
+Type: Package
+Title: Planning and Analyzing Dose Finding Experiments
+Version: 1.0-1
+Date: 2021-06-24
+Authors@R: c(
+   person("Bjoern", "Bornkamp", email = "bbnkmp@mail.de", comment = c(ORCID = "0000-0002-6294-8185"), role = c("aut", "cre")),
+   person("Jose", "Pinheiro", role = "aut"),
+   person("Frank", "Bretz", role = "aut"),
+   person("Ludger", "Sandig", role = "aut"))
+Depends: lattice, mvtnorm, R (>= 2.15.0)
+Suggests: numDeriv, Rsolnp, quadprog, parallel, multcomp, ggplot2,
+        knitr, rmarkdown, MASS, testthat
+Maintainer: Bjoern Bornkamp <bbnkmp@mail.de>
+Description: The DoseFinding package provides functions for the design and analysis
+	     of dose-finding experiments (with focus on pharmaceutical Phase
+	     II clinical trials). It provides functions for: multiple contrast
+	     tests, fitting non-linear dose-response models (using Bayesian and
+	     non-Bayesian estimation), calculating optimal designs and an
+	     implementation of the MCPMod methodology (Pinheiro et al. (2014)
+	     <doi:10.1002/sim.6052>).
+VignetteBuilder: knitr
+License: GPL-3
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2021-06-24 15:50:18 UTC; bjoern
+Author: Bjoern Bornkamp [aut, cre] (<https://orcid.org/0000-0002-6294-8185>),
+  Jose Pinheiro [aut],
+  Frank Bretz [aut],
+  Ludger Sandig [aut]
+Repository: CRAN
+Date/Publication: 2021-06-25 11:20:10 UTC

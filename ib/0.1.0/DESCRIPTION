@@ -1,0 +1,30 @@
+Package: ib
+Type: Package
+Title: Bias Correction via Iterative Bootstrap
+Version: 0.1.0
+Description: An implementation of the iterative bootstrap procedure of 
+    Kuk (1995) <doi:10.1111/j.2517-6161.1995.tb02035.x> to correct the estimation bias of a fitted model object. This
+    procedure has better bias correction properties than the 
+    bootstrap bias correction technique.
+Authors@R: c(
+    person("Samuel", "Orso", email="Samuel.Orso@unige.ch", role=c("aut","cre")),
+    person("Stéphane", "Guerrier", role="ctb")
+    )
+Maintainer: Samuel Orso <Samuel.Orso@unige.ch>
+Depends: R (>= 4.0.0)
+Imports: lme4, MASS, Matrix, methods, Rdpack (>= 0.7), stats, utils,
+        VGAM
+Suggests: knitr, nlraa, rmarkdown
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RdMacros: Rdpack
+RoxygenNote: 7.1.1
+URL: https://github.com/SMAC-Group/ib/
+BugReports: https://github.com/SMAC-Group/ib/issues/
+NeedsCompilation: no
+Packaged: 2020-12-14 13:42:44 UTC; orsos
+Author: Samuel Orso [aut, cre],
+  Stéphane Guerrier [ctb]
+Repository: CRAN
+Date/Publication: 2020-12-16 10:10:02 UTC

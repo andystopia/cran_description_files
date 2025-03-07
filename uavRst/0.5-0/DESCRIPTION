@@ -1,0 +1,36 @@
+Package: uavRst
+Type: Package
+Title: Unmanned Aerial Vehicle Remote Sensing Tools
+Version: 0.5-0
+Date: 2018-11-11
+Authors@R: c(person("Florian", "Detsch", role = c("ctb")),
+             person("Hanna", "Meyer", email = "hanna.meyer@uni-marburg.de", role = c("aut")),
+             person("Thomas", "Nauss", email = "nauss@uni-marburg.de", role = c("ctb")),
+             person("Lars", "Opgenoorth", email = "opgenoorth@uni-marburg.de", role = c("ctb")),
+             person("Chris", "Reudenbach", email = "reudenbach@uni-marburg.de", role = c("cre","aut")),
+             person("Environmental Informatics Marburg", role = c("ctb"))
+             )
+Encoding: UTF-8
+Maintainer: Chris Reudenbach <reudenbach@uni-marburg.de>
+Description: Support the analysis of drone derived imagery and point clouds as a cheap and easy to use alternative/complement to light detection and ranging data. It provides functionality to analyze poor quality digital aerial images as taken by low budget ready to fly drones. This includes supported machine learning based classification functions, comprehensive texture analysis, segmentation algorithms as well as forest relevant analyzes of metrics and measures on the derived products.
+License: GPL (>= 3) | file LICENSE
+Depends: R (>= 3.1.0)
+Imports: raster, foreach
+Suggests: knitr, stringr, sp, sf, htmlwidgets, htmltools, Rcpp, rgdal,
+        rgeos, gdalUtils, tools, caret, zoo, data.table, parallel,
+        spatial.tools, velox, link2GI, doParallel, CAST, glcm, crayon,
+        ForestTools, itcSegment, pROC, methods, RSAGA, reshape2,
+        rgrass7, randomForest, rLiDAR, rlas, lidR, rmarkdown, mapview
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2018-11-13 00:39:19 UTC; creu
+Author: Florian Detsch [ctb],
+  Hanna Meyer [aut],
+  Thomas Nauss [ctb],
+  Lars Opgenoorth [ctb],
+  Chris Reudenbach [cre, aut],
+  Environmental Informatics Marburg [ctb]
+Repository: CRAN
+Date/Publication: 2018-11-19 19:00:03 UTC

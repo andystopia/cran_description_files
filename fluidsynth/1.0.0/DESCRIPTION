@@ -1,0 +1,30 @@
+Package: fluidsynth
+Type: Package
+Title: Read and Play Digital Music (MIDI)
+Version: 1.0.0
+Authors@R: c(
+    person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroen@berkeley.edu",
+      comment = c(ORCID = "0000-0002-4035-0289")),
+    person("S. Christian Collins", role = "cph", comment = "author of generaluser-gs 
+      soundbank"))
+Description: Bindings to 'libfluidsynth' to parse and synthesize MIDI files. It can
+    read MIDI into a data frame, play it on the local audio device, or convert into
+    an audio file.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: av, rappdirs
+SystemRequirements: fluidsynth: fluidsynth-devel (rpm) or
+        libfluidsynth-dev (deb). On Linux you also need a soundfont
+        provided by 'fluid-soundfont-gm' (Fedora) or 'sf3-soundfont-gm'
+        (Debian/Ubuntu)
+URL: https://docs.ropensci.org/fluidsynth/
+        https://ropensci.r-universe.dev/fluidsynth
+BugReports: https://github.com/ropensci/fluidsynth/issues
+NeedsCompilation: yes
+Packaged: 2024-02-19 23:14:30 UTC; jeroen
+Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),
+  S. Christian Collins [cph] (author of generaluser-gs soundbank)
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2024-02-21 15:40:02 UTC

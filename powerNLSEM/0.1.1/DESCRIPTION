@@ -1,0 +1,35 @@
+Type: Package
+Package: powerNLSEM
+Title: Simulation-Based Power Estimation (MSPE) for Nonlinear SEM
+Version: 0.1.1
+Authors@R: 
+    person(c("Julien Patrick", "Irmer"), email = "jpirmer@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-7544-6483"))
+Author: Julien Patrick Irmer [aut, cre, cph]
+    (<https://orcid.org/0000-0002-7544-6483>)
+Maintainer: Julien Patrick Irmer <jpirmer@gmail.com>
+Description: Model-implied simulation-based power estimation (MSPE) for
+    nonlinear (and linear) SEM, path analysis and regression analysis. A
+    theoretical framework is used to approximate the relation between
+    power and sample size for given type I error rates and effect sizes.
+    The package offers an adaptive search algorithm to find the optimal N for
+    given effect sizes and type I error rates. Plots can be used to visualize
+    the power relation to N for different parameters of interest (POI). 
+    Theoretical justifications are given in Irmer et al. 
+    (2024a) <doi:10.31219/osf.io/pe5bj> and detailed description
+    are given in Irmer et al. (2024b).
+License: GPL-3
+URL: https://github.com/jpirmer/powerNLSEM
+BugReports: https://github.com/jpirmer/powerNLSEM/issues
+Depends: ggplot2, stats, utils
+Imports: crayon, lavaan (>= 0.6.16), mvtnorm, numDeriv, pbapply, rlang
+        (>= 1.1.0), stringr
+Suggests: knitr, MplusAutomation (>= 0.7-2), rmarkdown, semTools,
+        simsem
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-07-29 17:30:16 UTC; irmer
+Repository: CRAN
+Date/Publication: 2024-07-31 10:30:29 UTC

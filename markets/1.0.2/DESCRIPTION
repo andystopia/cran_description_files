@@ -1,0 +1,66 @@
+Package: markets
+Title: Estimation Methods for Markets in Equilibrium and Disequilibrium
+Version: 1.0.2
+Date: 2022-05-18
+Authors@R: 
+    person(given = "Pantelis",
+           family = "Karapanagiotis",
+           role = c("aut", "cre"),
+           email = "pikappa.devel@gmail.com",
+           comment = c(ORCID = "0000-0001-9871-1908"))
+Description: Provides estimation methods for markets in equilibrium and
+    disequilibrium. Supports the estimation of an equilibrium and
+    four disequilibrium models with both correlated and independent shocks.
+    Also provides post-estimation analysis tools, such as aggregation,
+    marginal effect, and shortage calculations. The estimation methods are
+    based on full information maximum likelihood techniques given in
+    Maddala and Nelson (1974) <doi:10.2307/1914215>. They are implemented
+    using the analytic derivative expressions calculated in
+    Karapanagiotis (2020) <doi:10.2139/ssrn.3525622>. Standard
+    errors can be estimated by adjusting for heteroscedasticity or clustering.
+    The equilibrium estimation constitutes a case of a system of linear,
+    simultaneous equations. Instead, the disequilibrium models replace the
+    market-clearing condition with a non-linear,
+    short-side rule and allow for different specifications of price dynamics. 
+Language: en-US
+URL: https://github.com/pi-kappa-devel/markets/,
+        https://markets.pikappa.eu/
+BugReports: https://github.com/pi-kappa-devel/markets/issues
+Depends: R (>= 3.5.0)
+Imports: bbmle (>= 1.0.20), dplyr (>= 0.7.6), Formula, magrittr (>=
+        1.5), MASS (>= 7.3-50), methods, rlang (>= 0.2.1), systemfit
+        (>= 1.1), tibble (>= 1.4.2), tidyr (>= 1.0.2), Rcpp, RcppGSL,
+        RcppParallel
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+Suggests: ggplot2 (>= 3.0.0), knitr (>= 1.20), numDeriv (>=
+        2016.8.1.1), rmarkdown (>= 1.10), testthat (>= 2.0.0)
+VignetteBuilder: knitr
+Collate: 'data.R' 'equation_base.R' 'system_base.R' 'model_logger.R'
+        'market_model.R' 'disequilibrium_model.R' 'diseq_basic.R'
+        'diseq_deterministic_adjustment.R' 'diseq_directional.R'
+        'diseq_stochastic_adjustment.R' 'equation_basic.R'
+        'equation_deterministic_adjustment.R' 'equation_directional.R'
+        'equation_stochastic_adjustment.R' 'equilibrium_model.R'
+        'system_basic.R' 'gradient_basic.R'
+        'system_deterministic_adjustment.R'
+        'gradient_deterministic_adjustment.R' 'system_directional.R'
+        'gradient_directional.R' 'system_equilibrium.R'
+        'gradient_equilibrium.R' 'system_stochastic_adjustment.R'
+        'gradient_stochastic_adjustment.R' 'hessian_basic.R'
+        'hessian_directional.R' 'likelihood_basic.R'
+        'likelihood_deterministic_adjustment.R'
+        'likelihood_directional.R' 'likelihood_equilibrium.R'
+        'likelihood_stochastic_adjustment.R' 'market_fit.R' 'markets.R'
+        'model_simulation.R'
+LinkingTo: Rcpp, RcppGSL
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2022-05-18 11:24:28 UTC; ntelispak
+Author: Pantelis Karapanagiotis [aut, cre]
+    (<https://orcid.org/0000-0001-9871-1908>)
+Maintainer: Pantelis Karapanagiotis <pikappa.devel@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-18 19:10:02 UTC

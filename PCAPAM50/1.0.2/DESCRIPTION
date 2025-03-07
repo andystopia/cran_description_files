@@ -1,0 +1,28 @@
+Package: PCAPAM50
+Type: Package
+Title: Enhanced 'PAM50' Subtyping of Breast Cancer
+Version: 1.0.2
+Authors@R: c(person("Praveen-Kumar", "Raj-Kumar", role = c("aut", "cre", "cph"), email = "p.rajkumar@wriwindber.org"), person("Boyi", "Chen", role = "aut"), person("Ming-Wen", "Hu", role = "aut"), person("Tyler", "Hohenstein", role = "aut"), person("Jianfang", "Liu", role = "aut"), person("Craig D.", "Shriver", role = "aut"), person("Xiaoying", "Lin", role = c("aut", "cph")), person("Hai", "Hu", role = c("aut", "cph")))
+Maintainer: Praveen-Kumar Raj-Kumar <p.rajkumar@wriwindber.org>
+Description: Accurate classification of breast cancer tumors based on gene expression data is not a trivial task, and it lacks standard practices.The 'PAM50' classifier, which uses 50 gene centroid correlation distances to classify tumors, faces challenges with balancing estrogen receptor (ER) status and gene centering. The 'PCAPAM50' package leverages principal component analysis and iterative 'PAM50' calls to create a gene expression-based ER-balanced subset for gene centering, avoiding the use of protein expression-based ER data resulting into an enhanced Breast Cancer subtyping.
+License: GPL (>= 3)
+Copyright: 2024 Windber Research Institute, Windber, PA - 15963. All
+        Rights Reserved.
+Encoding: UTF-8
+Suggests: testthat, knitr, rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+Imports: Biobase, lattice, ComplexHeatmap, impute
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-23 23:51:37 UTC; praveen
+Author: Praveen-Kumar Raj-Kumar [aut, cre, cph],
+  Boyi Chen [aut],
+  Ming-Wen Hu [aut],
+  Tyler Hohenstein [aut],
+  Jianfang Liu [aut],
+  Craig D. Shriver [aut],
+  Xiaoying Lin [aut, cph],
+  Hai Hu [aut, cph]
+Repository: CRAN
+Date/Publication: 2024-11-24 03:10:03 UTC

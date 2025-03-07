@@ -1,0 +1,80 @@
+Package: ravetools
+Type: Package
+Title: Signal and Image Processing Toolbox for Analyzing Intracranial
+        Electroencephalography Data
+Version: 0.2.1
+Language: en-US
+Authors@R: c(
+    person("Zhengjia", "Wang", email = "dipterix.wang@gmail.com", role = c("aut", "cre")),
+    person("John", "Magnotti", email = "john.magnotti@pennmedicine.upenn.edu", role = c("aut")),
+    person("Michael", "Beauchamp", email = "michael.beauchamp@pennmedicine.upenn.edu", role = c("aut")),
+    person("Trustees of the University of Pennsylvania", role = c("cph"), 
+            comment = "All files in this package unless explicitly stated in the file or listed in the 'Copyright' section below."),
+    person("Karim", "Rahim", email = "karim.rahim@queensu.ca", role = c("cph", "ctb"), 
+            comment = "Contributed to src/ffts.h and stc/ffts.cpp"),
+    person("Thomas", "Possidente", role = c("cph", "ctb"), 
+            comment = "Contributed to R/multitaper.R"),
+    person("Michael", "Prerau", role = c("cph", "ctb"), 
+            comment = "Contributed to R/multitaper.R"),
+    person("Marcus", "Geelnard", role = c("ctb", "cph"), 
+            comment = "TinyThread library, tinythreadpp.bitsnbites.eu, located at inst/include/tthread/"),
+    person("Stefan", "Schlager", role = c("ctb", "cph"), 
+            comment = "R-vcg interface, located at src/vcgCommon.h"),
+    person("Visual Computing Lab, ISTI", role = c("ctb", "cph"), 
+            comment = "Copyright holder of vcglib, located at src/vcglib/")
+    )
+Description: Implemented fast and memory-efficient Notch-filter, 
+    Welch-periodogram, discrete wavelet spectrogram for minutes of 
+    high-resolution signals, fast 3D convolution, image registration,
+    3D mesh manipulation; providing fundamental toolbox for intracranial 
+    Electroencephalography (iEEG) pipelines. 
+    Documentation and examples about 'RAVE' project are provided at 
+    <https://rave.wiki>, and the paper by John F. Magnotti, 
+    Zhengjia Wang, Michael S. Beauchamp (2020) 
+    <doi:10.1016/j.neuroimage.2020.117341>; see 'citation("ravetools")' for 
+    details.
+BugReports: https://github.com/dipterix/ravetools/issues
+URL: https://rave.wiki, https://dipterix.org/ravetools/
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+SystemRequirements: fftw3 (libfftw3-dev (deb), or fftw-devel (rpm)),
+        pkg-config
+Copyright: Karim Rahim (author of R package 'fftwtools', licensed under
+        'GPL-2' or later) is the original author of 'src/ffts.h' and
+        'src/ffts.cpp'. Prerau's Lab wrote the original
+        'R/multitaper.R', licensed under 'MIT'. Marcus Geelnard wrote
+        the source code of 'TinyThread' library ('MIT' license) located
+        at 'inst/include/tthread'. Stefan Schlager wrote the original
+        code that converts R objects to 'vcg' (see 'src/vcgCommon.h',
+        licensed under 'GPL-2' or later). Visual Computing Lab is the
+        copyright holder of 'vcglib' source code (see 'src/vcglib',
+        licensed under GPL-2 or later).
+Imports: graphics, stats, filearray (>= 0.1.3), Rcpp, waveslim (>=
+        1.8.2), pracma, digest (>= 0.6.29), splines, RNiftyReg (>=
+        2.7.1), R6 (>= 2.5.1), gsignal (>= 0.3.5)
+LinkingTo: Rcpp, RcppEigen
+Suggests: fftwtools, bit64, grDevices, microbenchmark,
+        freesurferformats, testthat, vctrs
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-01-24 17:30:16 UTC; dipterix
+Author: Zhengjia Wang [aut, cre],
+  John Magnotti [aut],
+  Michael Beauchamp [aut],
+  Trustees of the University of Pennsylvania [cph] (All files in this
+    package unless explicitly stated in the file or listed in the
+    'Copyright' section below.),
+  Karim Rahim [cph, ctb] (Contributed to src/ffts.h and stc/ffts.cpp),
+  Thomas Possidente [cph, ctb] (Contributed to R/multitaper.R),
+  Michael Prerau [cph, ctb] (Contributed to R/multitaper.R),
+  Marcus Geelnard [ctb, cph] (TinyThread library,
+    tinythreadpp.bitsnbites.eu, located at inst/include/tthread/),
+  Stefan Schlager [ctb, cph] (R-vcg interface, located at
+    src/vcgCommon.h),
+  Visual Computing Lab, ISTI [ctb, cph] (Copyright holder of vcglib,
+    located at src/vcglib/)
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-24 18:30:02 UTC

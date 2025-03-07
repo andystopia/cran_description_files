@@ -1,0 +1,19 @@
+Package: gmresls
+Title: Solve Least Squares with GMRES(k)
+Version: 0.2.2
+Date: 2024-10-17
+Authors@R: 
+    person("Serguei", "Sokol", , "sokol@insa-toulouse.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5674-3327"))
+Description: Solves a least squares system Ax~=b (dim(A)=(m,n) with m >= n) with a precondition matrix B: BAx=Bb (dim(B)=(n,m)). Implemented method is based on GMRES (Saad, Youcef; Schultz, Martin H. (1986). "GMRES: A Generalized Minimal Residual Algorithm for Solving Nonsymmetric Linear Systems" <doi:10.1137/0907058>) with callback functions, i.e. no explicit A, B or b are required.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: RUnit
+BugReports: https://forgemia.inra.fr/mathscell/gmresls/-/issues
+NeedsCompilation: no
+Packaged: 2024-10-17 08:20:43 UTC; sokol
+Author: Serguei Sokol [aut, cre] (<https://orcid.org/0000-0002-5674-3327>)
+Maintainer: Serguei Sokol <sokol@insa-toulouse.fr>
+Repository: CRAN
+Date/Publication: 2024-10-18 10:40:44 UTC

@@ -1,0 +1,35 @@
+Package: coconots
+Type: Package
+Title: Convolution-Closed Models for Count Time Series
+Version: 1.1.2
+Date: 2023-8-19
+Authors@R: c(
+    person(given = "Manuel",
+           family = "Huth",
+           role = c("aut", "cre"),
+           email = "manuel.huth@yahoo.com"),
+    person(given = "Robert C.",
+           family = "Jung",
+           role = "aut"),
+    person(given = "Andy",
+           family = "Tremayne",
+           role =  "aut"
+           ))
+Description: Useful tools for fitting, validating, and forecasting of practical convolution-closed time series models for low counts are provided. Marginal distributions of the data can be modeled via Poisson and Generalized Poisson innovations. Regression effects can be modelled via time varying innovation rates. The models are described in Jung and Tremayne (2011) <doi:10.1111/j.1467-9892.2010.00697.x> and the model assessment tools are presented in Czado et al. (2009) <doi:10.1111/j.1541-0420.2009.01191.x>, Gneiting and Raftery (2007) <doi:10.1198/016214506000001437> and, Tsay (1992) <doi:10.2307/2347612>.
+Imports: Rcpp, forecast, numDeriv, HMMpa, stats, ggplot2, utils,
+        matrixStats, JuliaConnectoR
+LazyData: true
+LinkingTo: Rcpp, StanHeaders (>= 2.21.0), RcppParallel (>= 5.0.1)
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Suggests: covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Packaged: 2023-08-19 09:48:27 UTC; manuel
+Author: Manuel Huth [aut, cre],
+  Robert C. Jung [aut],
+  Andy Tremayne [aut]
+Maintainer: Manuel Huth <manuel.huth@yahoo.com>
+Repository: CRAN
+Date/Publication: 2023-08-19 10:12:33 UTC

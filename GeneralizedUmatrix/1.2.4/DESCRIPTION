@@ -1,0 +1,33 @@
+Package: GeneralizedUmatrix
+Type: Package
+Title: Credible Visualization for Two-Dimensional Projections of Data
+Version: 1.2.4
+Date: 2022-05-25
+Authors@R: c(person("Michael", "Thrun", email= "m.thrun@gmx.net",role=c("aut","cre","cph"), comment = c(ORCID = "0000-0001-9542-5543")),person("Felix", "Pape",role=c("ctb","ctr")),person("Tim", "Schreier",role=c("ctb","ctr")),person("Luis", "Winckelman",role=c("ctb","ctr")),person("Quirin", "Stier",role=c("ctb","ctr")),person("Alfred", "Ultsch",role="ths"))
+Maintainer: Michael Thrun <m.thrun@gmx.net>
+Description: Projections are common dimensionality reduction methods, which represent high-dimensional data in a two-dimensional space. However, when restricting the output space to two dimensions, which results in a two dimensional scatter plot (projection) of the data, low dimensional similarities do not represent high dimensional distances coercively [Thrun, 2018] <DOI: 10.1007/978-3-658-20540-9>. This could lead to a misleading interpretation of the underlying structures [Thrun, 2018]. By means of the 3D topographic map the generalized Umatrix is able to depict errors of these two-dimensional scatter plots. The package is derived from the book of Thrun, M.C.: "Projection Based Clustering through Self-Organization and Swarm Intelligence" (2018) <DOI:10.1007/978-3-658-20540-9> and the main algorithm called simplified self-organizing map for dimensionality reduction methods is published in <DOI: 10.1016/j.mex.2020.101093>.
+License: GPL-3
+Imports: Rcpp (>= 1.0.8), RcppParallel (>= 5.1.4), ggplot2
+Suggests: DataVisualizations, rgl, grid, mgcv, png, reshape2, fields,
+        ABCanalysis, plotly, deldir, methods, knitr (>= 1.12),
+        rmarkdown (>= 0.9)
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+Depends: R (>= 3.0)
+NeedsCompilation: yes
+SystemRequirements: C++11, GNU make, pandoc (>=1.12.3, needed for
+        vignettes)
+LazyLoad: yes
+LazyData: TRUE
+URL: https://www.deepbionics.org
+Encoding: UTF-8
+VignetteBuilder: knitr
+BugReports: https://github.com/Mthrun/GeneralizedUmatrix/issues
+Packaged: 2022-05-25 05:55:52 UTC; MCT
+Author: Michael Thrun [aut, cre, cph] (<https://orcid.org/0000-0001-9542-5543>),
+  Felix Pape [ctb, ctr],
+  Tim Schreier [ctb, ctr],
+  Luis Winckelman [ctb, ctr],
+  Quirin Stier [ctb, ctr],
+  Alfred Ultsch [ths]
+Repository: CRAN
+Date/Publication: 2022-05-25 15:30:08 UTC

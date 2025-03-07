@@ -1,0 +1,19 @@
+Package: tmbstan
+Type: Package
+Title: MCMC Sampling from 'TMB' Model Object using 'Stan'
+Version: 1.0.3
+Date: 2021-12-14
+Author: Kasper Kristensen
+Maintainer: Kasper Kristensen <kaskr@dtu.dk>
+Description: Enables all 'rstan' functionality for a 'TMB' model object, in particular MCMC sampling and chain visualization. Sampling can be performed with or without Laplace approximation for the random effects.
+Imports: methods, Rcpp
+Depends: rstan, TMB (>= 1.7.12)
+LinkingTo: StanHeaders, rstan, BH, Rcpp, RcppEigen, TMB, RcppParallel
+License: GPL (>= 3)
+BugReports: https://github.com/kaskr/tmbstan/issues
+NeedsCompilation: yes
+SystemRequirements: GNU make
+RoxygenNote: 7.1.2
+Packaged: 2021-12-14 18:32:32 UTC; kaskr
+Repository: CRAN
+Date/Publication: 2021-12-14 22:20:02 UTC

@@ -1,0 +1,36 @@
+Package: StatCharrms
+Version: 0.90.2
+Date: 2017-05-15
+Title: Statistical Analysis of Chemistry, Histopathology, and
+        Reproduction Endpoints Including Repeated Measures and
+        Multi-Generation Studies
+Authors@R: c(person("Joe", "Swintek", role = c("aut", "cre"), email = "swintek.joe@epa.gov"),
+		person("Kevin", "Flynn", role = "ctb", email = "Flynn.Kevin@epa.gov"),
+		person("Jon", "Haselman", role = "ctb", email = "Haselman.Jon@epa.gov")
+	)
+Depends: R (>= 3.1.0)
+Imports: RGtk2, R2HTML, gWidgets, gWidgetsRGtk2, multcomp, nlme,
+        lattice, cairoDevice, car, clinfun, survival, coxme, methods,
+        RSCABS
+SystemRequirements: GTK+ (>= 2.8.0)
+ByteCompile: no
+LazyLoad: yes
+LazyData: yes
+Description: A front end for the statistical analyses involved in the tier II endocrine 
+	disruptor screening program. The analyses available to this package are: 
+	Rao-Scott adjusted Cochran-Armitage test for trend By Slices (RSCABS), 
+	a Standard Cochran-Armitage test for trend By Slices (SCABS), 
+	mixed effects Cox proportional model, Jonckheere-Terpstra step down trend test 
+	Dunn test, one way ANOVA, weighted ANOVA, mixed effects ANOVA, repeated 
+	measures ANOVA, and Dunnett test. 		
+License: CC0
+URL: https://CRAN.R-project.org/package=StatCharrms
+Author: Joe Swintek [aut, cre],
+	Kevin Flynn [ctb],
+	Jon Haselman [ctb]
+Maintainer: Joe Swintek <swintek.joe@epa.gov>
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-05-15 15:57:12 UTC; jswintek
+Repository: CRAN
+Date/Publication: 2017-05-15 17:37:20 UTC

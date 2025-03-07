@@ -1,0 +1,35 @@
+Package: fable.ata
+Type: Package
+Title: 'ATAforecasting' Modelling Interface for 'fable' Framework
+Version: 0.0.2
+Date: 2021-11-10
+Authors@R: c(
+  person("Ali Sabri", "Taylan", email="alisabritaylan@gmail.com", role=c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-9514-934X")),
+  person("Hanife", "Taylan Selamlar", role=c("aut", "cph"), comment = c(ORCID = "0000-0002-4091-884X")),
+  person("Guckan", "Yapar", role=c("aut", "ths", "cph"), comment=c(ORCID = "0000-0002-0971-6676"))
+  )
+Maintainer: Ali Sabri Taylan <alisabritaylan@gmail.com>
+Description: Allows ATA (Automatic Time series analysis using the Ata method) models from the 'ATAforecasting' package to be used in a tidy workflow with the modeling interface of
+    'fabletools'. This extends 'ATAforecasting' to provide enhanced model specification and management, performance evaluation methods, and
+    model combination tools. The Ata method (Yapar et al. (2019) <doi:10.15672/hujms.461032>), an alternative to exponential smoothing (described in Yapar (2016) 
+    <doi:10.15672/HJMS.201614320580>, Yapar et al. (2017) <doi:10.15672/HJMS.2017.493>), is a new univariate time series forecasting method which provides 
+    innovative solutions to issues faced during the initialization and optimization stages of existing forecasting methods. 
+    Forecasting performance of the Ata method is superior to existing methods both in terms of easy implementation and accurate forecasting. 
+    It can be applied to non-seasonal or seasonal time series which can be decomposed into four components (remainder, level, trend and seasonal).
+Imports: stats, rlang, tibble, dplyr, tsibble, distributional, tsbox
+Depends: fabletools (>= 0.3.1), ATAforecasting (>= 0.0.55)
+License: GPL (>= 3)
+URL: https://alsabtay.github.io/fable.ata/
+BugReports: https://github.com/alsabtay/fable.ata/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2021-11-15 15:10:07 UTC; astaylan
+Author: Ali Sabri Taylan [aut, cre, cph]
+    (<https://orcid.org/0000-0001-9514-934X>),
+  Hanife Taylan Selamlar [aut, cph]
+    (<https://orcid.org/0000-0002-4091-884X>),
+  Guckan Yapar [aut, ths, cph] (<https://orcid.org/0000-0002-0971-6676>)
+Repository: CRAN
+Date/Publication: 2021-11-17 20:10:02 UTC

@@ -1,0 +1,32 @@
+Package: polymapR
+Type: Package
+Title: Linkage Analysis in Outcrossing Polyploids
+Version: 1.1.4
+Date: 2023-11-04
+Authors@R: c(person("Peter","Bourke", email = "pbourkey@gmail.com", role = c("aut","cre")),
+             person("Geert","van Geest", role = "aut"),
+             person("Roeland","Voorrips", role = "ctb"),
+             person("Yanlin","Liao", role = "ctb"))
+Description: Creation of linkage maps in polyploid species from marker dosage
+    scores of an F1 cross from two heterozygous parents. Currently works for outcrossing diploid, autotriploid, autotetraploid and autohexaploid species, 
+    as well as segmental allotetraploids. Methods are described in a manuscript of Bourke et al. (2018) <doi:10.1093/bioinformatics/bty371>. Since version 1.1.0,
+    both discrete and probabilistic genotypes are acceptable input; for more details on the latter see Liao et al. (2021) <doi:10.1007/s00122-021-03834-x>.
+Depends: R (>= 3.5.0)
+License: GPL
+Imports: doParallel, foreach, graphics, grDevices, igraph, knitr,
+        MDSMap, stats, utils
+RoxygenNote: 7.2.3
+Suggests: ggplot2, hexbin, Hmisc, RColorBrewer, reshape2, rmarkdown,
+        polyRAD, updog, mappoly
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: TRUE
+NeedsCompilation: no
+Packaged: 2023-11-04 12:02:52 UTC; bourk001
+Author: Peter Bourke [aut, cre],
+  Geert van Geest [aut],
+  Roeland Voorrips [ctb],
+  Yanlin Liao [ctb]
+Maintainer: Peter Bourke <pbourkey@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-04 19:10:02 UTC

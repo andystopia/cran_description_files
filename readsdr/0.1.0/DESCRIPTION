@@ -1,0 +1,28 @@
+Package: readsdr
+Type: Package
+Title: Translate Models from System Dynamics Software into 'R'
+Version: 0.1.0
+Authors@R: person("Jair", "Andrade", email = "jair.albert.andrade@gmail.com", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-1412-7868"))
+Description: The goal of 'readsdr' is to bridge the design capabilities from
+    specialised System Dynamics software with the powerful numerical tools 
+    offered by 'R' libraries. The package accomplishes this goal by parsing 
+    'XMILE' files ('Vensim' and 'Stella') models into 'R' objects to construct 
+    networks (graph theory); 'ODE' functions for 'Stan'; and inputs to simulate
+    via 'deSolve' as described in Duggan (2016) <doi:10.1007/978-3-319-34043-2>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: testthat (>= 2.1.0), igraph, knitr, rmarkdown, ggplot2, tidyr
+Imports: stringr, xml2, purrr, dplyr, rlang, stringi, magrittr, stats,
+        deSolve
+BugReports: https://github.com/jandraor/readsdr/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-06-07 11:33:08 UTC; jairandrade
+Author: Jair Andrade [aut, cre] (<https://orcid.org/0000-0002-1412-7868>)
+Maintainer: Jair Andrade <jair.albert.andrade@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-12 08:10:03 UTC

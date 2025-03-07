@@ -1,0 +1,33 @@
+Package: causalBatch
+Type: Package
+Title: Causal Batch Effects
+Version: 1.0
+Date: 2024-01-21
+Authors@R: 
+  c(person(given="Eric W.", family="Bridgeford", role=c("aut", "cre"),
+    email="ericwb95@gmail.com"),
+    person(given="Michael", family="Powell", role="ctb"),
+    person(given="Brian", family="Caffo", role="ctb"),
+    person(given="Joshua T.", family="Vogelstein", role="ctb")
+  )
+Maintainer: Eric W. Bridgeford <ericwb95@gmail.com>
+Description: Software for using causal techniques to detect and correct for group/batch effects in high-dimensional scientific data sets, as-described in our manuscripts Bridgeford et al. (2024) <doi:10.1101/2021.09.03.458920> and Bridgeford et al. (2023) <arXiv:2307.13868>. Also provides a number of useful utilities for generating simulations and balancing covariates across multiple groups/batches of data.
+Depends: R (>= 4.2.0)
+biocViews:
+Imports: cdcsis, sva, MatchIt, nnet, dplyr, magrittr
+URL: https://github.com/neurodata/causal_batch
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: tidyr, knitr, rmarkdown, parallel, testthat (>= 3.0.0), covr,
+        roxygen2, ks, ggplot2
+License: MIT + file LICENSE
+RoxygenNote: 7.3.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-01-24 09:08:14 UTC; eric
+Author: Eric W. Bridgeford [aut, cre],
+  Michael Powell [ctb],
+  Brian Caffo [ctb],
+  Joshua T. Vogelstein [ctb]
+Repository: CRAN
+Date/Publication: 2024-01-24 16:02:55 UTC

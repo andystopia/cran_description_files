@@ -1,0 +1,36 @@
+Package: fastverse
+Title: A Suite of High-Performance Packages for Statistics and Data
+        Manipulation
+Version: 0.3.1
+Authors@R: c(person("Sebastian", "Krantz", role = c("aut", "cre"), 
+                    email = "sebastian.krantz@graduateinstitute.ch"),
+             person("Hadley", "Wickham", role = "ctb"))
+Description: Easy installation, loading and management, of high-performance packages 
+             for statistical computing and data manipulation in R. 
+             The core 'fastverse' consists of 4 packages: 'data.table', 'collapse', 
+             'kit' and 'magrittr', that jointly only depend on 'Rcpp'. 
+             The 'fastverse' can be freely and permanently extended with 
+             additional packages, both globally or for individual projects. 
+             Separate package verses can also be created. Fast packages 
+             for many common tasks such as time series, dates and times, strings, 
+             spatial data, statistics, data serialization, larger-than-memory 
+             processing, and compilation of R code are listed in the README file: 
+             <https://github.com/fastverse/fastverse#suggested-extensions>.
+License: GPL-3
+Encoding: UTF-8
+Imports: data.table, collapse, kit, magrittr
+Suggests: matrixStats, Rfast, arrow, duckdb, qs, fst, xts, roll,
+        anytime, fasttime, stringi, stringfish, coop, rrapply, geos,
+        lubridate, knitr, rmarkdown
+URL: https://fastverse.github.io/fastverse/,
+        https://fastverse.r-universe.dev/, https://github.com/fastverse
+BugReports: https://github.com/fastverse/fastverse/issues
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+VignetteBuilder: knitr
+Packaged: 2023-01-29 00:36:06 UTC; sebastiankrantz
+Author: Sebastian Krantz [aut, cre],
+  Hadley Wickham [ctb]
+Maintainer: Sebastian Krantz <sebastian.krantz@graduateinstitute.ch>
+Repository: CRAN
+Date/Publication: 2023-01-29 21:10:02 UTC

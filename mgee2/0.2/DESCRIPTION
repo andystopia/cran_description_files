@@ -1,0 +1,31 @@
+Package: mgee2
+Title: Marginal Analysis of Misclassified Longitudinal Ordinal Data
+Version: 0.2
+Authors@R: c(
+	person("Yuliang", "Xu", email = "yuliangx@umich.edu", role = c("aut","cre")),
+	person("Zhijian", "Chen", email = " ", role = "aut"),
+        person("Shuo Shuo", "Liu", email = "shuoshuo.liu@psu.edu", role = "aut"),
+	person("Grace", "Yi", email = "yyi@uwaterloo.ca", role = "aut"))
+Description: Three estimating equation methods are provided in this package for marginal analysis of longitudinal ordinal data with misclassified responses and covariates. 
+ The naive analysis which is solely based on the observed data without adjustment may lead to bias.
+ The corrected generalized estimating equations (GEE2) method which is unbiased requires the misclassification parameters to be known beforehand. 
+ The corrected generalized estimating equations (GEE2) with validation subsample method estimates the misclassification parameters based on a given
+ validation set. This package is an implementation 
+ of Chen (2013) <doi:10.1002/bimj.201200195>.
+Depends: R (>= 3.6.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: MASS, ggplot2
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2021-05-01 03:44:56 UTC; sdzzx
+Author: Yuliang Xu [aut, cre],
+  Zhijian Chen [aut],
+  Shuo Shuo Liu [aut],
+  Grace Yi [aut]
+Maintainer: Yuliang Xu <yuliangx@umich.edu>
+Repository: CRAN
+Date/Publication: 2021-05-01 06:00:02 UTC

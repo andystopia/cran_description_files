@@ -1,0 +1,49 @@
+Package: marginaleffects
+Title: Marginal Effects, Marginal Means, Predictions, and Contrasts
+Version: 0.1.0
+Authors@R: 
+    person(given = "Vincent",
+           family = "Arel-Bundock",
+           role = c("aut", "cre"),
+           email = "vincent.arel-bundock@umontreal.ca",
+           comment = c(ORCID = "0000-0003-2042-7063"))
+Description: Compute, summarize, and plot marginal effects, adjusted predictions, contrasts, and marginal means for a wide variety of models.
+License: GPL (>= 3)
+Copyright: inst/COPYRIGHTS
+LazyData: true
+Encoding: UTF-8
+URL: https://vincentarelbundock.github.io/marginaleffects/
+        https://github.com/vincentarelbundock/marginaleffects
+BugReports: https://github.com/vincentarelbundock/marginaleffects/issues
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Depends: R (>= 3.5.0)
+Imports: checkmate, generics, insight, methods, numDeriv
+Suggests: bench, broom, dplyr, emmeans, ggplot2, ggbeeswarm, haven,
+        kableExtra, knitr, margins, modelsummary, patchwork, rlang,
+        rmarkdown, testthat (>= 3.0.0), tidyverse, vdiffr, AER,
+        betareg, bife, brglm2, crch, estimatr, fixest, gam, geepack,
+        glmx, ivreg, lme4, MASS, nlme, nnet, ordinal, plm, pscl,
+        quantreg, rms, robustbase, sandwich, speedglm, survey,
+        survival, truncreg, covr
+Collate: 'complete_levels.R' 'counterfactual_typical.R' 'get_coef.R'
+        'get_dydx_and_se.R' 'get_dydx_categorical.R'
+        'get_dydx_continuous.R' 'get_group_names.R' 'get_predict.R'
+        'get_vcov.R' 'marginaleffects.R' 'marginalmeans.R'
+        'mean_or_mode.R' 'set_coef.R' 'methods_MASS.R'
+        'methods_betareg.R' 'methods_bife.R' 'methods_crch.R'
+        'methods_glmx.R' 'methods_lme4.R' 'sanity_model.R'
+        'methods_nnet.R' 'methods_plm.R' 'methods_pscl.R'
+        'methods_quantreg.R' 'methods_stats.R' 'package.R' 'plot.R'
+        'plot_cap.R' 'plot_cme.R' 'predictions.R' 'sanity.R'
+        'sanity_type.R' 'summary.R' 'supported_models.R' 'tidy.R'
+        'utils.R'
+NeedsCompilation: no
+Packaged: 2021-09-28 13:36:05 UTC; vincent
+Author: Vincent Arel-Bundock [aut, cre]
+    (<https://orcid.org/0000-0003-2042-7063>)
+Maintainer: Vincent Arel-Bundock <vincent.arel-bundock@umontreal.ca>
+Repository: CRAN
+Date/Publication: 2021-09-29 08:10:05 UTC

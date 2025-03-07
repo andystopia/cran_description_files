@@ -1,0 +1,27 @@
+Package: IDSL.UFAx
+Type: Package
+Title: Exhaustive Chemical Enumeration for Ultimate Formula Annotation
+Version: 1.0
+Authors@R: c(
+    person(family = "Fakouri-Baygi", given = "Sadjad", email = "sadjad.fakouri-baygi@mssm.edu",
+    role = c("cre","aut"), comment = c(ORCID = "0000-0002-6864-6911")),
+    person(family = "Barupal", given = "Dinesh", email = "dinesh.kumar@mssm.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-9954-8628")))
+Depends: R (>= 4.0)
+Imports: Rcpp, BiocManager, mzR, readxl, parallel, doSNOW, foreach,
+        stringr, RcppAlgos, IDSL.IPA (>= 1.3), IDSL.UFA
+Author: Sadjad Fakouri-Baygi [cre, aut]
+    (<https://orcid.org/0000-0002-6864-6911>),
+  Dinesh Barupal [aut] (<https://orcid.org/0000-0002-9954-8628>)
+Maintainer: Sadjad Fakouri-Baygi <sadjad.fakouri-baygi@mssm.edu>
+Description: A pipeline to annotate a number of peaks from the IDSL.IPA peaklists using a exhaustive chemical enumeration-based approach.
+License: MIT + file LICENSE
+URL: https://ufa.idsl.me, https://github.com/idslme/idsl.ufa
+BugReports: https://github.com/idslme/idsl.ufa/issues
+Encoding: UTF-8
+LazyData: true
+Archs: i386, x64
+NeedsCompilation: no
+Packaged: 2022-01-04 17:30:40 UTC; sfbaygi
+Repository: CRAN
+Date/Publication: 2022-01-06 09:20:04 UTC

@@ -1,0 +1,42 @@
+Package: sergeant
+Title: Tools to Transform and Query Data with Apache Drill
+Version: 0.9.0
+Authors@R: c(
+      person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+             comment = c(ORCID = "0000-0001-5670-2640")),
+      person("Edward", "Visel", email = "edward.visel@gmail.com", role = "ctb"),
+      person("Andy", "Hine", email = "andyyhine@gmail.com", role = "ctb"),
+      person("Scott", "Came", email = "scottcame10@gmail.com", role = "ctb"),
+      person("David", "Severski", email = "davidski@deadheaven.com", role = "ctb",
+        comment = c(ORCID = "https://orcid.org/0000-0001-7867-0459")),
+      person("James", "Lamb", email = "jaylamb20@gmail.com", role = "ctb")
+    )
+Description: Apache Drill is a low-latency distributed query engine designed to enable 
+    data exploration and analysis on both relational and non-relational data stores, 
+    scaling to petabytes of data. Methods are provided that enable working with Apache 
+    Drill instances via the REST API, DBI methods
+    and using 'dplyr'/'dbplyr' idioms. Helper functions are included to facilitate
+    using official Drill Docker images/containers.
+Depends: R (>= 3.6.0)
+URL: https://gitlab.com/hrbrmstr/sergeant
+BugReports: https://gitlab.com/hrbrmstr/sergeant/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: bit64 (>= 0.9-7), DBI (>= 0.7), dplyr (>= 0.8.0), dbplyr (>=
+        1.3.0), httr (>= 1.2.1), jsonlite (>= 1.5.0), htmltools (>=
+        0.3.6), readr (>= 1.1.1), purrr (>= 0.2.2), scales (>= 0.4.1),
+        tibble, utils, methods, magrittr (>= 1.5)
+Suggests: DT (>= 0.5), stevedore, tinytest, covr (>= 3.0.0), DBItest
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-01 14:41:31 UTC; hrbrmstr
+Author: Bob Rudis [aut, cre] (<https://orcid.org/0000-0001-5670-2640>),
+  Edward Visel [ctb],
+  Andy Hine [ctb],
+  Scott Came [ctb],
+  David Severski [ctb] (<https://orcid.org/0000-0001-7867-0459>),
+  James Lamb [ctb]
+Maintainer: Bob Rudis <bob@rud.is>
+Repository: CRAN
+Date/Publication: 2020-06-01 15:00:02 UTC

@@ -1,0 +1,46 @@
+Type: Package
+Package: Holomics
+Title: An User-Friendly R 'shiny' Application for Multi-Omics Data
+        Integration and Analysis
+Version: 1.0.0
+Authors@R: c(
+    person("Katharina", "Munk", , "katharinamunk@yahoo.de", role = c("aut", "cre")),
+    person("Eva M.", "Molin", role = c("aut", "ctb")),
+    person("Günter", "Brader", role = "ctb"),
+    person("Lisa", "Tucek", role = "ctb"),
+    person("AIT Austrian Institute of Technology GmbH", role = "cph")
+  )
+Description: A 'shiny' application, which allows you to perform single- and
+    multi-omics analyses using your own omics datasets. After the upload 
+    of the omics datasets and a metadata file, single-omics is performed
+    for feature selection and dataset reduction. These datasets are used 
+    for pairwise- and multi-omics analyses, where automatic tuning is 
+    done to identify correlations between the datasets - the end goal 
+    of the recommended 'Holomics' workflow.
+    Methods used in the package were implemented in the package 'mixomics'
+    by Florian Rohart,Benoît Gautier,Amrit Singh,Kim-Anh Lê Cao (2017) <doi:10.1371/journal.pcbi.1005752>
+    and are described there in further detail.
+License: GPL (>= 3)
+URL: https://github.com/MolinLab/Holomics
+BugReports: https://github.com/MolinLab/Holomics/issues
+Depends: R (>= 4.0)
+biocViews:
+Imports: bs4Dash (>= 2.0.2), config, dplyr, DT, ggplot2, golem, igraph,
+        openxlsx, readxl, shiny (>= 1.6.0), shinyalert, shinybusy,
+        shinyjs, shinyvalidate, shinyWidgets, stringr, tippy,
+        visNetwork, mixOmics, BiocParallel
+Suggests: bookdown, knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2023-08-20 09:29:26 UTC; Kathi
+Author: Katharina Munk [aut, cre],
+  Eva M. Molin [aut, ctb],
+  Günter Brader [ctb],
+  Lisa Tucek [ctb],
+  AIT Austrian Institute of Technology GmbH [cph]
+Maintainer: Katharina Munk <katharinamunk@yahoo.de>
+Repository: CRAN
+Date/Publication: 2023-08-21 14:00:10 UTC

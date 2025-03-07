@@ -1,0 +1,34 @@
+Package: diemr
+Title: Diagnostic Index Expectation Maximisation in R
+Version: 1.2.1
+Authors@R: c(
+    person(given = "Natalia",
+           family = "Martinkova",
+           role = c("aut", "cre"),
+           email = "martinkova@ivb.cz",
+           comment = c(ORCID = "0000-0003-4556-4363")),
+    person(given = "Stuart",
+           family = "Baird",
+           role = c("aut"),
+           email = "stuartj.e.baird@gmail.com",
+           comment = c(ORCID = "0000-0002-7144-9919")))
+Description: Likelihood-based genome polarisation finds which alleles of genomic markers 
+    belong to which side of the barrier. 
+	Co-estimates which individuals belong to either side of the barrier and barrier strength.
+	Uses expectation maximisation in likelihood framework. The method is described in 
+	Baird et al. (2023) <doi:10.1111/2041-210X.14010>.
+BugReports: https://github.com/StuartJEBaird/diem/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Imports: zoo, vcfR
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2023-04-19 12:06:40 UTC; martinkova
+Author: Natalia Martinkova [aut, cre] (<https://orcid.org/0000-0003-4556-4363>),
+  Stuart Baird [aut] (<https://orcid.org/0000-0002-7144-9919>)
+Maintainer: Natalia Martinkova <martinkova@ivb.cz>
+Repository: CRAN
+Date/Publication: 2023-04-19 12:30:02 UTC

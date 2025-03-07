@@ -1,0 +1,39 @@
+Package: mlr3cluster
+Title: Cluster Extension for 'mlr3'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Damir",
+             family = "Pulatov",
+             role = c("cre", "aut"),
+             email = "dpulatov@uwyo.edu"),
+      person(given = "Michel",
+             family = "Lang",
+             role = "aut",
+             email = "michellang@gmail.com",
+             comment = c(ORCID = "0000-0001-9754-0393")))
+Description: Extends the 'mlr3' package with cluster analysis.
+License: LGPL-3
+URL: https://mlr3cluster.mlr-org.com,
+        https://github.com/mlr-org/mlr3cluster
+BugReports: https://github.com/mlr-org/mlr3cluster/issues
+Depends: R (>= 3.1.0)
+Imports: backports (>= 1.1.10), checkmate, clue, clusterCrit,
+        data.table, mlr3 (>= 0.5.0), mlr3misc (>= 0.4.0), paradox, R6
+Suggests: bibtex, dbscan, e1071, mlbench, RWeka, testthat
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Collate: 'LearnerClust.R' 'LearnerClustAgnes.R' 'LearnerClustCMeans.R'
+        'LearnerClustDBSCAN.R' 'LearnerClustDiana.R'
+        'LearnerClustFanny.R' 'LearnerClustFeatureless.R'
+        'LearnerClustKMeans.R' 'LearnerClustPAM.R'
+        'LearnerClustXMeans.R' 'MeasureClust.R' 'measures.R'
+        'MeasureClustInternal.R' 'PredictionClust.R'
+        'PredictionDataClust.R' 'TaskClust.R' 'TaskClust_usarrest.R'
+        'helper.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2020-09-29 01:55:05 UTC; damir
+Author: Damir Pulatov [cre, aut],
+  Michel Lang [aut] (<https://orcid.org/0000-0001-9754-0393>)
+Maintainer: Damir Pulatov <dpulatov@uwyo.edu>
+Repository: CRAN
+Date/Publication: 2020-10-01 09:10:02 UTC

@@ -1,0 +1,31 @@
+Package: lsm
+Type: Package
+Title: Estimation of the log Likelihood of the Saturated Model
+Version: 0.2.1.2
+Date: 2022-02-03
+Authors@R: c(person("Humberto", "Llinas", email = "hllinas@uninorte.edu.co", role = c("aut"), comment = c(ORCID = "0000-0002-2976-5109")),
+  person("Omar", "Fabregas", email = "ofabregas@uninorte.edu.co", role = c("aut"), comment = c(ORCID = "0000-0001-6853-6280")),
+  person("Jorge", "Villalba", email = "jlvia1191@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2888-9660")))
+Author: Humberto Llinas [aut] (<https://orcid.org/0000-0002-2976-5109>),
+  Omar Fabregas [aut] (<https://orcid.org/0000-0001-6853-6280>),
+  Jorge Villalba [aut, cre] (<https://orcid.org/0000-0002-2888-9660>)
+Maintainer: Jorge Villalba <jlvia1191@gmail.com>
+Description: When the values of the outcome variable Y are either 0 or 1,
+      the function lsm() calculates the estimation of the log likelihood 
+      in the saturated model. 
+      This model is characterized by Llinas (2006, ISSN:2389-8976) in section 2.3 
+      through the assumptions 1 and 2. 
+      The function LogLik() works (almost perfectly) when the number of independent
+      variables K is high, but for small K it calculates wrong values in some cases.
+      For this reason, when Y is dichotomous and the data are grouped in J populations,
+      it is recommended to use the function lsm() because it works very well for all K.
+Depends: R (>= 3.5.0)
+Imports: stats, dplyr (>= 1.0.0), ggplot2 (>= 1.0.0)
+Encoding: UTF-8
+License: MIT + file LICENSE
+LazyData: TRUE
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2022-02-04 02:46:33 UTC; ASUS
+Repository: CRAN
+Date/Publication: 2022-02-04 03:10:02 UTC

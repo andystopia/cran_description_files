@@ -1,0 +1,30 @@
+Package: qualV
+Title: Qualitative Validation Methods
+Version: 0.3-4
+Authors@R: c(person("K. Gerald", "van den Boogaart", role = c("aut", "ths"),
+                 comment = c(ORCID = "0000-0003-4646-943X")),
+             person("Stefanie", "Rost", role = "aut"),
+             person("Thomas", "Petzoldt", role = c("aut", "ths", "cre"),
+			     comment=c(ORCID = "0000-0002-4951-6468"),
+                 email = "thomas.petzoldt@tu-dresden.de"))
+Author: K. Gerald van den Boogaart [aut, ths]
+    (<https://orcid.org/0000-0003-4646-943X>),
+  Stefanie Rost [aut],
+  Thomas Petzoldt [aut, ths, cre]
+    (<https://orcid.org/0000-0002-4951-6468>)
+Description: Qualitative methods for the validation of dynamic models.
+    It contains (i) an orthogonal set of deviance measures for absolute,
+    relative and ordinal scale and (ii) approaches accounting for time
+    shifts. The first approach transforms time to take time delays and speed
+    differences into account. The second divides the time series into
+    interval units according to their main features and finds the longest
+    common subsequence (LCS) using a dynamic programming algorithm.
+Maintainer: Thomas Petzoldt <thomas.petzoldt@tu-dresden.de>
+Depends: R (>= 2.0.0), KernSmooth
+Imports: graphics, grDevices, stats, utils
+License: GPL (>= 2)
+URL: http://qualV.R-Forge.R-Project.org/
+NeedsCompilation: yes
+Packaged: 2021-10-06 21:30:50 UTC; thpe
+Repository: CRAN
+Date/Publication: 2021-10-07 05:10:02 UTC

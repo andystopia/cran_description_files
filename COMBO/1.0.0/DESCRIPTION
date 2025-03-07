@@ -1,0 +1,43 @@
+Package: COMBO
+Title: Correcting Misclassified Binary Outcomes in Association Studies
+Version: 1.0.0
+Authors@R: 
+    person("Kimberly", "Hochstedler",
+           email = "kah343@cornell.edu", role = c("aut", "cre"))
+Author: Kimberly Hochstedler [aut, cre]
+Maintainer: Kimberly Hochstedler  <kah343@cornell.edu>
+Description: Use frequentist and Bayesian methods to estimate parameters from a
+  binary outcome misclassification model. These methods correct for the problem
+  of "label switching" by assuming that correct outcome classification occurs
+  in at least 50% of observations. A description of the analysis methods is
+  available in Hochstedler and Wells (2023) <arXiv:2303.10215>. 
+Depends: R (>= 4.2.0)
+Imports: dplyr (>= 1.0.10), tidyr (>= 1.2.1), Matrix (> 1.4-1), rjags
+        (>= 4-13), turboEM (>= 2021.1), SAMBA (>= 0.9.0), utils (>=
+        4.2.0)
+Suggests: knitr (>= 1.40), kableExtra (>= 1.3.4)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Collate: 'sum_every_n1.R' 'sum_every_n.R' 'pistar_compute.R'
+        'pi_compute.R' 'COMBO_data.R' 'expit.R'
+        'perfect_sensitivity_EM.R' 'w_j.R' 'q_gamma_f.R' 'q_beta_f.R'
+        'em_function.R' 'loglik.R' 'COMBO_EM.R' 'pitilde_compute.R'
+        'COMBO_data_2stage.R' 'w_j_2stage.R' 'q_delta_f.R'
+        'em_function_2stage.R' 'loglik_2stage.R' 'COMBO_EM_2stage.R'
+        'label_switch.R' 'check_and_fix_chains.R'
+        'mean_pistarjj_compute.R' 'pistar_compute_for_chains.R'
+        'pistar_by_chain.R' 'naive_jags_picker.R'
+        'naive_model_picker.R' 'jags_picker.R' 'model_picker.R'
+        'COMBO_MCMC.R' 'model_picker_2stage.R' 'COMBO_MCMC_2stage.R'
+        'check_and_fix_chains_2stage.R' 'jags_picker_2stage.R'
+        'label_switch_2stage.R' 'misclassification_prob.R'
+        'misclassification_prob2.R' 'naive_jags_picker_2stage.R'
+        'naive_loglik_2stage.R' 'naive_model_picker_2stage.R'
+        'pitilde_by_chain.R' 'pitilde_compute_for_chains.R'
+        'true_classification_prob.R'
+NeedsCompilation: no
+Packaged: 2023-04-17 14:52:13 UTC; hochsted
+Repository: CRAN
+Date/Publication: 2023-04-19 13:50:06 UTC

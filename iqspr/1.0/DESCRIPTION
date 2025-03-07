@@ -1,0 +1,24 @@
+Package: iqspr
+Type: Package
+Title: Generate Chemical Strings (SMILES) with the Inverse QSPR Model
+Version: 1.0
+Date: 2016-5-21
+Author: Hisaki Ikebata
+Maintainer: Hisaki Ikebata <ikebata.hisaki@ism.ac.jp>
+Description: Generate chemical structures possibly satisfying desired properties
+ using the inverse QSPR model. It has three reference classes. ENgram is a class for learning the grammar 
+ structure of existing chemical strings using an extended N-gram model. QSPRpred contains 
+ a simple Bayes regression model to predict properties from structures. SmcChem is a class of the generator of
+ chemical strings from the Inverse-QSPR model. This class has ENgram and QSPRpred class objects inside. 
+ The generator is implemented by the Sequential Monte Carlo sampler. 
+License: Artistic-2.0
+SystemRequirements: OpenBabel (>= 2.3.1) with headers.
+        http://openbabel.org
+Suggests: testthat
+Depends: R (>= 2.10), rcdk
+Imports: methods
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-05-21 09:36:32 UTC; hisaki
+Repository: CRAN
+Date/Publication: 2016-05-21 12:07:40

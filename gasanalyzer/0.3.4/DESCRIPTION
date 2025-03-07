@@ -1,0 +1,35 @@
+Type: Package
+Package: gasanalyzer
+Title: Import, Recompute and Analyze Data from Portable Gas Analyzers
+Version: 0.3.4
+Date: 2023-12-23
+Authors@R: 
+    person("Danny", "Tholen", , "thalecress+p@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9517-0939"))
+Description: Provides functions to import data from several instruments
+    commonly used by plant physiologists to measure characteristics
+    related to photosynthesis. It provides a standardized list of variable
+    names, and several sets of equations to calculate additional variables
+    based on the measurements.  These equations have been described by von
+    Caemmerer and Farquhar (1981) <doi:10.1007/BF00384257>, Busch et al.
+    (2020) <doi:10.1038/s41477-020-0606-6> and Márquez et al. (2021)
+    <doi:10.1038/s41477-021-00861-w>. In addition, this package
+    facilitates performing sensitivity analyses on variables or
+    assumptions used in the calculations.
+License: GPL-3
+URL: https://gitlab.com/plantphys/gasanalyzer
+Depends: R (>= 4.3.0)
+Imports: jsonify, methods, stats, stringi, tibble, tidyxl (>= 1.0.8),
+        tools, units, utils, vctrs, xml2
+Suggests: knitr, rmarkdown, spelling, graphics, ggplot2, gridExtra,
+        photosynthesis
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-09 16:19:18 UTC; danny
+Author: Danny Tholen [aut, cre] (<https://orcid.org/0000-0002-9517-0939>)
+Maintainer: Danny Tholen <thalecress+p@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-10 19:13:03 UTC

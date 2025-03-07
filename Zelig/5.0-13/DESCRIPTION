@@ -1,0 +1,46 @@
+Package: Zelig
+Maintainer: James Honaker <zelig.zee@gmail.com>
+License: GPL (>= 2)
+Title: Everyone's Statistical Software
+Author: Christine Choirat, James Honaker, Kosuke Imai, Gary King, Olivia Lau
+Description: A framework that brings together an abundance of common
+    statistical models found across packages into a unified interface, and
+    provides a common architecture for estimation and interpretation, as well
+    as bridging functions to absorb increasingly more models into the
+    collective library.  Zelig allows each individual package, for each
+    statistical model, to be accessed by a common uniformly structured call and
+    set of arguments.  Moreover, Zelig automates all the surrounding building
+    blocks of a statistical work-flow --procedures and algorithms that may be
+    essential to one user's application but which the original package
+    developer did not use in their own research and might not themselves
+    support. These include bootstrapping, jackknifing, and re-weighting of data.
+    In particular, Zelig automatically generates predicted and simulated
+    quantities of interest (such as relative risk ratios, average treatment
+    effects, first differences and predicted and expected values) to interpret
+    and visualize complex models.
+Version: 5.0-13
+Date: 2016-11-01
+Imports: sandwich, methods, MASS, survival, VGAM, jsonlite, AER, plyr,
+        dplyr (>= 0.3.0.2), quantreg, geepack, MCMCpack, coda, Amelia,
+        MatchIt, maxLik, survey
+Suggests: testthat, knitr
+Collate: 'utils.R' 'model-zelig.R' 'model-weibull.R' 'model-tobit.R'
+        'model-bayes.R' 'model-tobit-bayes.R' 'model-glm.R'
+        'model-gee.R' 'model-gamma.R' 'model-binchoice.R'
+        'model-logit.R' 'model-relogit.R' 'model-quantile.R'
+        'model-probit.R' 'model-binchoice-gee.R' 'model-probit-gee.R'
+        'model-probit-bayes.R' 'model-poisson.R' 'model-poisson-gee.R'
+        'model-poisson-bayes.R' 'model-oprobit-bayes.R'
+        'model-normal.R' 'model-normal-gee.R' 'model-normal-bayes.R'
+        'model-negbinom.R' 'model-mlogit-bayes.R' 'model-ls.R'
+        'model-lognorm.R' 'model-logit-gee.R' 'model-logit-bayes.R'
+        'model-gamma-gee.R' 'model-factor-bayes.R' 'model-exp.R'
+        'create-json.R' 'model-survey.R' 'model-binchoice-survey.R'
+        'model-gamma-survey.R' 'model-logit-survey.R'
+        'model-normal-survey.R' 'model-poisson-survey.R'
+        'model-probit-survey.R' 'model-timeseries.R' 'model-arima.R'
+        'model-ar.R' 'model-ma.R' 'plots.R' 'wrappers.R'
+NeedsCompilation: no
+Packaged: 2016-11-01 23:23:33 UTC; tercer
+Repository: CRAN
+Date/Publication: 2016-11-02 18:19:57

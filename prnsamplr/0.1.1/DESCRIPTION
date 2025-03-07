@@ -1,0 +1,27 @@
+Package: prnsamplr
+Type: Package
+Title: Permanent Random Number Sampling
+Version: 0.1.1
+Date: 2020-02-09
+Author: Kira Coder Gylling
+Maintainer: Kira Coder Gylling <kira.gylling@gmail.com>
+Description: Survey sampling using permanent random numbers (PRN's). A solution to the
+    problem of unknown overlap between survey samples, which leads to a low
+    precision in estimates when the survey is repeated or combined with other
+    surveys. The PRN solution is to supply the U(0, 1) random numbers to the 
+    sampling procedure, instead of having the sampling procedure generate them.
+    In Lindblom (2014) <doi:10.2478/jos-2014-0047>, and therein cited articles,
+    it is shown how this is carried out and how it improves the estimates. This
+    package supports two common fixed-size sampling procedures (simple random 
+    sampling and probability-proportional-to-size sampling) and includes a 
+    function for transforming the PRN's in order to control the sample overlap.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+Imports: stats
+LazyData: true
+NeedsCompilation: no
+Packaged: 2020-02-09 16:01:25 UTC; kirag
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2020-02-09 17:00:02 UTC

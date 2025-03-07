@@ -1,0 +1,33 @@
+Package: sc2sc
+Type: Package
+Title: Spatial Transfer of Statistics among Spanish Census Sections
+Version: 0.0.1-7
+Authors@R: 
+    c(person(given = "Pérez",
+           family = "Virgilio",
+           role = "aut",
+           email = "virgilio.perez@uv.es",,
+           comment = c(ORCID = "0000-0002-7628-2855")),
+      person(given = "Jose M.",
+           family = "Pavía",
+           role = c("aut", "cre"),
+           email = "jose.m.pavia@uv.es",
+           comment = c(ORCID = "0000-0002-0129-726X"))
+       )
+Description: Transfers/imputes statistics among Spanish spatial polygons (census sections or postal code areas) from different moments in time (2001-2022) without need of spatial files, just linking statistics to the ID codes of the spatial units. 
+    The data available in the census sections of a partition/division (cartography) into force in a moment of time is transferred to the census sections of another partition/division employing the geometric approach (also known as areal weighting or polygon overlay). 
+    References: 
+    Goerlich (2022) <doi:10.12842/WPIVIE_0322>.
+    Pavía and Cantarino (2017a, b) <doi:10.1111/gean.12112>, <doi:10.1016/j.apgeog.2017.06.021>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: stats
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-03-20 09:13:52 UTC; Jose M Pavia
+Author: Pérez Virgilio [aut] (<https://orcid.org/0000-0002-7628-2855>),
+  Jose M. Pavía [aut, cre] (<https://orcid.org/0000-0002-0129-726X>)
+Maintainer: Jose M. Pavía <jose.m.pavia@uv.es>
+Repository: CRAN
+Date/Publication: 2023-03-21 16:50:02 UTC

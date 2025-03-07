@@ -1,0 +1,35 @@
+Package: vaultr
+Authors@R: c(person("Rich", "FitzJohn", role = c("aut", "cre"),
+                    email = "rich.fitzjohn@gmail.com"),
+             person("Robert", "Ashton", role = "aut"),
+             person("Wes", "Hinsley", role = "aut"),
+             person("Imperial College of Science, Technology and Medicine",
+                    role = "cph"))
+Title: Vault Client for Secrets and Sensitive Data
+Version: 1.0.2
+Description: Provides an interface to a 'HashiCorp' vault server over
+  its http API (typically these are self-hosted; see
+  <https://www.vaultproject.io>).  This allows for secure storage and
+  retrieval of secrets over a network, such as tokens, passwords and
+  certificates.  Authentication with vault is supported through
+  several backends including user name/password and authentication via
+  'GitHub'.
+License: MIT + file LICENSE
+URL: https://github.com/vimc/vaultr
+BugReports: https://github.com/vimc/vaultr/issues
+SystemRequirements: vault
+Imports: R6, getPass, httr, jsonlite
+Suggests: knitr, mockery, processx, rmarkdown, testthat, withr
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2019-05-15 14:10:57 UTC; rfitzjoh
+Author: Rich FitzJohn [aut, cre],
+  Robert Ashton [aut],
+  Wes Hinsley [aut],
+  Imperial College of Science, Technology and Medicine [cph]
+Maintainer: Rich FitzJohn <rich.fitzjohn@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-16 13:30:03 UTC

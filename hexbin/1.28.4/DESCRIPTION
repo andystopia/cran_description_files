@@ -1,0 +1,44 @@
+Package: hexbin
+Version: 1.28.4
+Title: Hexagonal Binning Routines
+Authors@R: c(person(given = "Dan",
+                      family = "Carr",
+                      role = "aut",
+                      email = "dcarr@voxel.galaxy.gmu.edu"),
+               person(given = c("ported", "by", "Nicholas"),
+                      family = "Lewin-Koh",
+                      role = "aut"),
+               person(given = "Martin",
+                      family = "Maechler",
+                      role = "aut",
+                      email = "maechler@stat.math.ethz.ch"),
+               person(given = c("contains", "copies", "of", "lattice", "functions", "written", "by", "Deepayan"),
+                      family = "Sarkar",
+                      role = "aut",
+                      email = "deepayan.sarkar@r-project.org"),
+               person(given = "Edzer",
+                      family = "Pebesma",
+                      role = "cre",
+                      comment = c(ORCID = "0000-0001-8049-7069"),
+                      email = "edzer.pebesma@uni-muenster.de"))
+Depends: R (>= 2.0.1), methods
+Imports: lattice, grid, graphics, grDevices, stats, utils
+Suggests: marray, affy, Biobase, limma, knitr
+Description: Binning and plotting functions for hexagonal bins.
+Collate: lattice.R BTC.R BTY.R grid.hexagons.R grid.hexlegend.R hbox.R
+        hdiffplot.R hexbinList.R hexbinplot.R hexbin.s4.R hexpanel.R
+        hexplom.R hexPlotMA.R hexutil.R hexViewport.R HO.R LINGRAY.R
+        LOCS.R MAG.R RB.R smoothHexbin.R
+License: GPL-2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+URL: https://github.com/edzer/hexbin
+Packaged: 2024-09-03 19:46:42 UTC; edzer
+Author: Dan Carr [aut],
+  ported by Nicholas Lewin-Koh [aut],
+  Martin Maechler [aut],
+  contains copies of lattice functions written by Deepayan Sarkar [aut],
+  Edzer Pebesma [cre] (<https://orcid.org/0000-0001-8049-7069>)
+Maintainer: Edzer Pebesma <edzer.pebesma@uni-muenster.de>
+Repository: CRAN
+Date/Publication: 2024-09-04 16:30:06 UTC

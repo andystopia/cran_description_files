@@ -1,0 +1,43 @@
+Package: iNEXT.beta3D
+Type: Package
+Title: Interpolation and Extrapolation with Beta Diversity for Three
+        Dimensions of Biodiversity
+Version: 1.0.0
+Author: Anne Chao [aut, cre],
+  KaiHsiang Hu [ctb]
+Maintainer: Anne Chao <chao@stat.nthu.edu.tw>
+Authors@R: 
+  c(person("Anne", 
+           "Chao", 
+           role = c("aut","cre"),
+           email = "chao@stat.nthu.edu.tw"),
+    person("KaiHsiang", 
+           "Hu", 
+           role = "ctb",
+           email = "river19951224@gmail.com"))
+URL:
+        https://sites.google.com/view/chao-lab-website/software/inext-beta3d
+Description: As a sequel to 'iNEXT', the 'iNEXT.beta3D' package provides functions to compute 
+              standardized taxonomic, phylogenetic, and functional diversity (3D) estimates 
+              with a common sample size (for alpha and gamma diversity) or sample coverage 
+              (for alpha, beta, gamma diversity as well as dissimilarity or turnover indices). 
+              Hill numbers and their generalizations are used to quantify 3D and to make 
+              multiplicative decomposition (gamma = alpha x beta). The package also features 
+              size- and coverage-based rarefaction and extrapolation sampling curves to 
+              facilitate rigorous comparison of beta diversity across datasets.  
+              See Chao et al. (2023) <doi:10.1002/ecm.1588> for more details.
+License: GPL (>= 3)
+Depends: R (>= 4.0)
+Imports: stats, magrittr, ggplot2, abind, iNEXT.3D, future.apply,
+        tibble, dplyr, tidytree, tidyr, phyclust, ape
+Suggests: testthat, knitr, rmarkdown, ggthemes
+Encoding: UTF-8
+BugReports: https://github.com/AnneChao/iNEXT.beta3D/issues
+LazyData: yes
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+ByteCompile: true
+Packaged: 2024-02-22 13:46:35 UTC; stat-pc
+Repository: CRAN
+NeedsCompilation: no
+Date/Publication: 2024-02-23 18:50:05 UTC

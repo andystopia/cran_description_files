@@ -1,0 +1,26 @@
+Package: cemco
+Version: 0.1
+Date: 2020-04-05
+Title: Fit 'CemCO' Algorithm
+Authors@R: c(person('Carlos', 'Relvas', role = c('aut'),
+                     email = 'carlos.edu.relvas@gmail.com'),
+              person('Andre', 'Fujita', role = c('aut','cre'),
+                     email = 'andrefujita@usp.br'))
+Description: Functions to fit the 'CemCO' algorithm, a model-based (Gaussian)
+    clustering algorithm that 
+    removes/minimizes the effects of undesirable covariates during the 
+    clustering process both in cluster centroid and in cluster covariance
+    structures (Relvas C. & Fujita A., (2020) <arXiv:2004.02333>).
+Depends: R (>= 3.1.0)
+License: GPL (>= 2)
+LazyData: true.
+Imports: clusteval, doParallel, nnet, rootSolve, foreach, MASS, mclust,
+        mvtnorm
+RoxygenNote: 6.1.1.9000
+NeedsCompilation: no
+Packaged: 2020-04-24 13:41:30 UTC; carlosrelvas
+Author: Carlos Relvas [aut],
+  Andre Fujita [aut, cre]
+Maintainer: Andre Fujita <andrefujita@usp.br>
+Repository: CRAN
+Date/Publication: 2020-04-29 14:30:03 UTC

@@ -1,0 +1,37 @@
+Package: eff2
+Type: Package
+Title: Efficient Least Squares for Total Causal Effects
+Version: 1.0.0
+Author: Richard Guo [aut, cre] (<https://orcid.org/0000-0002-2081-7398>)
+Maintainer: Richard Guo <ricguo@uw.edu>
+Authors@R: c(
+    person("Richard", "Guo", , "ricguo@uw.edu", role = c("aut", "cre"), 
+      comment = c(ORCID = "0000-0002-2081-7398"))
+    )
+Description: Estimate a total causal effect from observational data under 
+    linearity and causal sufficiency. The observational data is supposed to 
+    be generated from a linear structural equation model (SEM) with independent 
+    and additive noise. The underlying causal DAG associated the SEM is required
+    to be known up to a maximally oriented partially directed graph (MPDAG), 
+    which is a general class of graphs consisting of both directed and 
+    undirected edges, including CPDAGs (i.e., essential graphs) and DAGs. Such
+    graphs are usually obtained with structure learning algorithms with added 
+    background knowledge. The program is able to estimate every identified 
+    effect, including single and multiple treatment variables. Moreover, the 
+    resulting estimate has the minimal asymptotic covariance (and hence 
+    shortest confidence intervals) among all estimators that are based on the 
+    sample covariance. 
+License: MIT + file LICENSE
+URL: https://github.com/richardkwo/eff2
+BugReports: https://github.com/richardkwo/eff2/issues
+Depends: R (>= 3.5.0)
+Imports: pcalg (>= 2.6), RBGL, igraph
+Suggests: knitr, rmarkdown, testthat, qgraph
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2021-05-20 16:04:09 UTC; ricguo
+Repository: CRAN
+Date/Publication: 2021-05-21 08:10:05 UTC

@@ -1,0 +1,27 @@
+Package: smacofx
+Title: Flexible Multidimensional Scaling and 'smacof' Extensions
+Version: 1.5-3
+Authors@R: c(
+    person(given="Thomas", family="Rusch", email="thomas.rusch@wu.ac.at", role = c("aut","cre"), comment = c(ORCID = "0000-0002-7773-2096")),
+    person(given="Jan",family="de Leeuw", role = c("aut")),
+    person(given="Lisha",family="Chen", role = "aut"),
+    person("Patrick","Mair",email="mair@fas.harvard.edu",comment=c(ORCID="0000-0003-0100-6511"),role=c("aut")))
+Maintainer: Thomas Rusch <thomas.rusch@wu.ac.at>
+Description: Flexible multidimensional scaling (MDS) methods and extensions to the package 'smacof'. This package contains various functions, wrappers, methods and classes for fitting, plotting and displaying a large number of different flexible MDS models (some as of yet unpublished). These are: Torgerson scaling (Torgerson, 1958, ISBN:978-0471879459) with powers, Sammon mapping (Sammon, 1969, <doi:10.1109/T-C.1969.222678>) with ratio and interval optimal scaling, Multiscale MDS (Ramsay, 1977, <doi:10.1007/BF02294052>) with ratio and interval optimal scaling, S-stress MDS (ALSCAL; Takane, Young & De Leeuw, 1977, <doi:10.1007/BF02293745>) with ratio and interval optimal scaling, elastic scaling (McGee, 1966, <doi:10.1111/j.2044-8317.1966.tb00367.x>) with ratio and interval optimal scaling, r-stress MDS (De Leeuw, Groenen & Mair, 2016, <https://rpubs.com/deleeuw/142619>) with ratio, interval and non-metric optimal scaling, power-stress MDS (POST-MDS; Buja & Swayne, 2002 <doi:10.1007/s00357-001-0031-0>) with ratio and interval optimal scaling, restricted power-stress (Rusch, Mair & Hornik, 2021, <doi:10.1080/10618600.2020.1869027>) with ratio and interval optimal scaling, approximate power-stress with ratio optimal scaling (Rusch, Mair & Hornik, 2021, <doi:10.1080/10618600.2020.1869027>), Box-Cox MDS (Chen & Buja, 2013, <https://jmlr.org/papers/v14/chen13a.html>), local MDS (Chen & Buja, 2009, <doi:10.1198/jasa.2009.0111>), curvilinear component analysis (Demartines & Herault, 1997, <doi:10.1109/72.554199>) and curvilinear distance analysis (Lee, Lendasse & Verleysen, 2004, <doi:10.1016/j.neucom.2004.01.007>). There also are experimental models (e.g., sparsified MDS and sparsified POST-MDS). Some functions are suitably flexible to allow any other sensible combination of explicit power transformations for weights, distances and input proximities with implicit ratio, interval or non-metric optimal scaling of the input proximities. Most functions use a Majorization-Minimization algorithm. Currently the methods are only available for one-mode data (symmetric dissimilarity matrices).   
+Depends: R (>= 3.5.0), smacof (>= 1.10-4)
+Imports: MASS, minqa, plotrix, ProjectionBasedClustering, weights,
+        vegan
+License: GPL-2 | GPL-3
+LazyData: true
+URL: https://r-forge.r-project.org/projects/stops/
+BugReports: https://r-forge.r-project.org/tracker/?atid=5375&group_id=2037&func=browse
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-06-19 18:21:51 UTC; trusch
+Author: Thomas Rusch [aut, cre] (<https://orcid.org/0000-0002-7773-2096>),
+  Jan de Leeuw [aut],
+  Lisha Chen [aut],
+  Patrick Mair [aut] (<https://orcid.org/0000-0003-0100-6511>)
+Repository: CRAN
+Date/Publication: 2024-06-19 18:50:02 UTC

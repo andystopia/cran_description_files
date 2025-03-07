@@ -1,0 +1,33 @@
+Package: redistmetrics
+Title: Redistricting Metrics
+Version: 1.0.1
+Date: 2022-02-17
+Authors@R: c(
+    person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu", role = c("aut", "cre")),
+    person("Cory", "McCartan", email = "cmccartan@g.harvard.edu", role = "aut"),
+    person("Ben", "Fifield", email = "benfifield@gmail.com", role = "aut"),
+    person("Kosuke", "Imai", email = "imai@harvard.edu", role = "aut"))
+Description: Reliable and flexible tools for scoring redistricting plans using common measures and metrics. These functions provide key direct access to tools useful for non-simulation analyses of redistricting plans, such as for measuring compactness or partisan fairness. Tools are designed to work with the 'redist' package seamlessly.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+LinkingTo: Rcpp, RcppArmadillo
+Imports: sf, Rcpp, cli, foreach, doParallel, magrittr, dplyr, rlang,
+        geos, wk
+URL: https://alarm-redist.github.io/redistmetrics/,
+        https::/github.com/alarm-redist/redistmetrics/
+BugReports: https://github.com/alarm-redist/redistmetrics/issues
+Depends: R (>= 2.10)
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-02-17 18:27:40 UTC; chris
+Author: Christopher T. Kenny [aut, cre],
+  Cory McCartan [aut],
+  Ben Fifield [aut],
+  Kosuke Imai [aut]
+Maintainer: Christopher T. Kenny <christopherkenny@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2022-02-17 18:52:03 UTC

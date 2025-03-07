@@ -1,0 +1,35 @@
+Type: Package
+Package: chemdeg
+Title: Analysis of Chemical Degradation Kinetic Data
+Version: 0.1.2
+Authors@R: c(
+    person("Matteo", "Migliorini", , "matteo.migliorini@univr.it", role = c("aut", "cre", "cph")),
+    person("Roberto", "Chignola", , "roberto.chignola@univr.it", role = "aut")
+  )
+Description: A collection of functions that have been developed to assist
+    experimenter in modeling chemical degradation kinetic data. The
+    selection of the appropriate degradation model and parameter
+    estimation is carried out automatically as far as possible and is
+    driven by a rigorous statistical interpretation of the results.  The
+    package integrates already available goodness-of-fit statistics for
+    nonlinear models. In addition it allows data fitting with the
+    nonlinear first-order multi-target (FOMT) model.
+License: GPL (>= 3)
+URL: https://github.com/migliomatte/chemdeg,
+        https://migliomatte.github.io/chemdeg/
+BugReports: https://github.com/migliomatte/chemdeg/issues
+Depends: R (>= 2.10)
+Imports: graphics, MASS, methods, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tibble
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-17 09:35:04 UTC; matteo
+Author: Matteo Migliorini [aut, cre, cph],
+  Roberto Chignola [aut]
+Maintainer: Matteo Migliorini <matteo.migliorini@univr.it>
+Repository: CRAN
+Date/Publication: 2023-05-17 14:50:02 UTC

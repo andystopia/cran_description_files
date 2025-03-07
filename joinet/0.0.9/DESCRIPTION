@@ -1,0 +1,22 @@
+Package: joinet
+Version: 0.0.9
+Title: Multivariate Elastic Net Regression
+Description: Implements high-dimensional multivariate regression by stacked generalisation (Wolpert 1992 <doi:10.1016/S0893-6080(05)80023-1>). For positively correlated outcomes, a single multivariate regression is typically more predictive than multiple univariate regressions. Includes functions for model fitting, extracting coefficients, outcome prediction, and performance measurement. If required, install MRCE or remMap from GitHub (<https://github.com/cran/MRCE>, <https://github.com/cran/remMap>).
+Depends: R (>= 3.0.0)
+Imports: glmnet, palasso, cornet
+Suggests: knitr, rmarkdown, testthat, MASS
+Enhances: mice, earth, spls, MRCE, remMap, MultivariateRandomForest,
+        SiER, mcen, GPM, RMTL, MTPS
+Authors@R: person("Armin","Rauschenberger",email="armin.rauschenberger@uni.lu",role=c("aut","cre"))
+VignetteBuilder: knitr
+License: GPL-3
+Language: en-GB
+RoxygenNote: 7.1.1
+URL: https://github.com/rauschenberger/joinet
+BugReports: https://github.com/rauschenberger/joinet/issues
+NeedsCompilation: no
+Packaged: 2021-07-16 11:46:43 UTC; armin.rauschenberger
+Author: Armin Rauschenberger [aut, cre]
+Maintainer: Armin Rauschenberger <armin.rauschenberger@uni.lu>
+Repository: CRAN
+Date/Publication: 2021-07-16 12:20:02 UTC

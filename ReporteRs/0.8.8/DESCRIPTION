@@ -1,0 +1,31 @@
+Package: ReporteRs
+Type: Package
+Title: Microsoft Word and PowerPoint Documents Generation
+Version: 0.8.8
+Authors@R: c(
+    person("David", "Gohel", role = c("aut", "cre"),
+    email = "david.gohel@lysis-consultants.fr")
+    )
+Description: Create 'Microsoft Word' document (>=2007) and 
+    'Microsoft PowerPoint' document (>=2007) from R. There are
+    several features to let you format and present R outputs ; e.g. Editable
+    Vector Graphics, functions for complex tables reporting, reuse of corporate
+    template document. You can use the package as a tool for fast reporting
+    and as a tool for reporting automation. The package does not require
+    any installation of Microsoft product to be able to write Microsoft files.
+License: GPL-3
+Depends: R (>= 3.0), ReporteRsjars (>= 0.0.2)
+Imports: grDevices, rJava, utils, rvg (>= 0.1.2), xml2, gdtools, png,
+        R.utils, knitr, shiny, htmltools
+Suggests: ggplot2, jpeg, bmp, testthat, magrittr, rmarkdown
+SystemRequirements: java (>= 1.6)
+URL: http://davidgohel.github.io/ReporteRs/index.html,
+        http://groups.google.com/group/reporters-package
+BugReports: https://github.com/davidgohel/ReporteRs/issues
+RoxygenNote: 5.0.1.9000
+NeedsCompilation: no
+Packaged: 2017-01-09 14:10:11 UTC; davidgohel
+Author: David Gohel [aut, cre]
+Maintainer: David Gohel <david.gohel@lysis-consultants.fr>
+Repository: CRAN
+Date/Publication: 2017-01-09 17:11:35

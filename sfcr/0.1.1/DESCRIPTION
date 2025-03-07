@@ -1,0 +1,34 @@
+Package: sfcr
+Title: Simulate Stock-Flow Consistent Models
+Version: 0.1.1
+Authors@R: 
+    person(given = "Joao",
+           family = "Macalos",
+           role = c("aut", "cre"),
+           email = "joaomacalos@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0001-6050-6394"))
+Description: Routines to write, simulate, and validate stock-flow consistent (SFC) models. The accounting structure of SFC models are described in Godley and Lavoie (2007, ISBN:978-1-137-08599-3). The algorithms implemented to solve the models (Gauss-Seidel and Broyden) are described in Kinsella and O'Shea (2010) <doi:10.2139/ssrn.1729205> and Peressini and Sullivan (1988, ISBN:0-387-96614-5).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://github.com/joaomacalos/sfcr
+BugReports: https://github.com/joaomacalos/sfcr/issues
+Imports: dplyr (>= 1.0.2), expm (>= 0.999.5), forcats (>= 0.5.0),
+        igraph (>= 1.2.6), kableExtra (>= 1.3.1), magrittr (>= 1.5),
+        purrr (>= 0.3.4), Rdpack (>= 2.1), rootSolve (>= 1.8.2.1),
+        rlang (>= 0.4.7), tibble (>= 3.0.3), tidyr (>= 1.1.2),
+        tidyselect (>= 1.1.0), stringr (>= 1.4.0), utils, vctrs (>=
+        0.3.5), Rcpp (>= 1.0.5)
+Suggests: ggraph, ggplot2, grDevices, knitr, pkgdown, rmarkdown,
+        RColorBrewer, testthat (>= 2.3.2), tidygraph, tidyverse,
+        networkD3
+VignetteBuilder: knitr
+RdMacros: Rdpack
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2021-01-06 09:13:23 UTC; JouJo
+Author: Joao Macalos [aut, cre] (<https://orcid.org/0000-0001-6050-6394>)
+Maintainer: Joao Macalos <joaomacalos@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-08 09:30:06 UTC

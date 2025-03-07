@@ -1,0 +1,44 @@
+Package: depower
+Title: Power Analysis for Differential Expression Studies
+Version: 2024.12.4
+Authors@R: c(
+    person(
+      given = "Brett", 
+      family = "Klamer", 
+      email = "code@brettklamer.com", 
+      comment = c(ORCID = "0000-0002-8334-4831"),
+      role = c("aut", "cre")
+    ),
+    person(
+      given = "Lianbo", 
+      family = "Yu", 
+      email = "lianbo.yu@osumc.edu", 
+      comment = c(ORCID = "0000-0002-2025-2585"),
+      role = c("aut")
+    )
+  )
+Description: Provides a convenient framework to simulate, test, power, and visualize 
+    data for differential expression studies with lognormal or negative binomial 
+    outcomes. Supported designs are two-sample comparisons of independent or 
+    dependent outcomes. Power may be summarized in the context of controlling the 
+    per-family error rate or family-wise error rate. Negative binomial methods are 
+    described in Yu, Fernandez, and Brock (2017) <doi:10.1186/s12859-017-1648-2> 
+    and Yu, Fernandez, and Brock (2020) <doi:10.1186/s12859-020-3541-7>.
+URL: https://brettklamer.com/work/depower/,
+        https://bitbucket.org/bklamer/depower/
+License: MIT + file LICENSE
+Depends: R (>= 4.2.0)
+Imports: Rdpack, stats, mvnfast, glmmTMB, dplyr, multidplyr, ggplot2,
+        scales
+Suggests: tinytest, rmarkdown
+RdMacros: Rdpack
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-12-05 04:48:07 UTC; x
+Author: Brett Klamer [aut, cre] (<https://orcid.org/0000-0002-8334-4831>),
+  Lianbo Yu [aut] (<https://orcid.org/0000-0002-2025-2585>)
+Maintainer: Brett Klamer <code@brettklamer.com>
+Repository: CRAN
+Date/Publication: 2024-12-08 21:50:02 UTC

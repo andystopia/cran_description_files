@@ -1,0 +1,27 @@
+Package: TSjson
+Version: 2014.4-1
+Title: TSdbi extension for importing time series from web sources via
+        JSON
+Description: Provides methods for generics in the TSdbi package to 
+	retrieve data from web data sources, importing them using Javascript 
+	object notation. Direct connections or a proxy connection are
+	possible. (Only Statistics Canada connections are currently supported.)
+	Comprehensive examples of all the TS* packages is provided in the
+	vignette Guide.pdf with the TSdata package.
+Depends: R (>= 2.14.0), TSdbi (>= 2012.8-1), findpython
+Imports: methods, DBI, tframe (>= 2011.11-1), tframePlus, rjson
+Suggests: tfplot, zoo
+SystemRequirements: python 2, python-sys, python-json,
+        python-mechanize, python-re, python-csv, python-urllib2
+BuildVignettes: FALSE
+License: GPL-2
+Author: Paul Gilbert <pgilbert.ttv9z@ncf.ca>
+Maintainer: Paul Gilbert <pgilbert.ttv9z@ncf.ca>
+URL: http://tsdbi.r-forge.r-project.org/
+Repository: CRAN
+Repository/R-Forge/Project: tsdbi
+Repository/R-Forge/Revision: 501
+Repository/R-Forge/DateTimeStamp: 2014-04-05 18:28:50
+Date/Publication: 2014-04-09 10:16:12
+Packaged: 2014-04-05 20:15:14 UTC; rforge
+NeedsCompilation: no

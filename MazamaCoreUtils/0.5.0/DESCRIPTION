@@ -1,0 +1,35 @@
+Type: Package
+Package: MazamaCoreUtils
+Version: 0.5.0
+Title: Utility Functions for Production R Code
+Authors@R: c(
+    person("Jonathan", "Callahan", email="jonathan.s.callahan@gmail.com", role=c("aut","cre")),
+    person("Eli", "Grosman", email="eligrosman1@gmail.com", role=c("ctb")),
+    person("Spencer", "Pease", email="spencerpease618@gmail.com", role=c("ctb")),
+    person("Thomas", "Bergamaschi", email="tbergama@gmail.com", role=c("ctb"))
+    )
+Maintainer: Jonathan Callahan <jonathan.s.callahan@gmail.com>
+Description: A suite of utility functions providing functionality commonly
+    needed for production level projects such as logging, error handling,
+    cache management and date-time parsing. Functions for date-time parsing and 
+    formatting require that time zones be specified explicitly, avoiding a common 
+    source of error when working with environmental time series.
+License: GPL-3
+URL: https://github.com/MazamaScience/MazamaCoreUtils
+BugReports: https://github.com/MazamaScience/MazamaCoreUtils/issues
+Depends: R (>= 4.0.0)
+Imports: devtools, digest, dplyr, futile.logger, geohashTools,
+        lubridate, magrittr, purrr, rlang (>= 1.1.0), rvest, stringr,
+        tibble, xml2
+Suggests: knitr, markdown, testthat (>= 3.1.7), rmarkdown, roxygen2
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-10-26 22:52:35 UTC; jonathancallahan
+Author: Jonathan Callahan [aut, cre],
+  Eli Grosman [ctb],
+  Spencer Pease [ctb],
+  Thomas Bergamaschi [ctb]
+Repository: CRAN
+Date/Publication: 2023-10-28 05:40:12 UTC

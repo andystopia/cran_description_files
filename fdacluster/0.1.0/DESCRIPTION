@@ -1,0 +1,57 @@
+Package: fdacluster
+Title: Joint Clustering and Alignment of Functional Data
+Version: 0.1.0
+Type: Package
+Authors@R: c(
+    person(given = "Laura",
+           family = "Sangalli",
+           role = "aut",
+           email = "laura.sangalli@polimi.it"),
+    person(given = "Piercesare",
+           family = "Secchi",
+           role = "aut",
+           email = "piercesare.secchi@polimi.it"),
+    person(given = "Aymeric",
+           family = "Stamm",
+           role = c("cre", "ctb"),
+           email = "aymeric.stamm@math.cnrs.fr",
+           comment = c(ORCID = "0000-0002-8725-3654")),
+    person(given = "Simone",
+           family = "Vantini",
+           role = "aut",
+           email = "simone.vantini@polimi.it"),
+    person(given = "Valeria",
+           family = "Vitelli",
+           role = "aut",
+           email = "valeria.vitelli@medisin.uio.no"),
+    person(given = "Alessandro",
+           family = "Zito",
+           role = "ctb",
+           email = "zito.ales@gmail.com"))
+Description: Revisited clustering approaches to accommodate functional 
+    data by allowing to jointly align the data during the clustering 
+    process. Currently, shift, dilation and affine transformations 
+    only are available to perform alignment. The k-mean algorithm has 
+    been extended to integrate alignment and is fully parallelized. 
+    Hierarchical clustering will soon be available as well.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo, nloptr
+RoxygenNote: 7.1.2
+Suggests: testthat
+Imports: Rcpp, magrittr, tibble, dplyr, tidyr, purrr, ggplot2, nloptr
+Depends: R (>= 2.10)
+URL: https://astamm.github.io/fdacluster/index.html,
+        https://github.com/astamm/fdacluster
+NeedsCompilation: yes
+Packaged: 2022-01-31 22:04:07 UTC; stamm-a
+Author: Laura Sangalli [aut],
+  Piercesare Secchi [aut],
+  Aymeric Stamm [cre, ctb] (<https://orcid.org/0000-0002-8725-3654>),
+  Simone Vantini [aut],
+  Valeria Vitelli [aut],
+  Alessandro Zito [ctb]
+Maintainer: Aymeric Stamm <aymeric.stamm@math.cnrs.fr>
+Repository: CRAN
+Date/Publication: 2022-02-01 19:00:02 UTC

@@ -1,0 +1,41 @@
+Package: WhatIf
+Title: Evaluate Counterfactuals
+Version: 1.5-8
+Date: 2017-03-18
+Authors@R: c(
+    person("Christopher", "Gandrud", email = "zelig.zee@gmail.com",
+    role = c("aut", "cre")),
+    person("Gary", "King", role = "aut"),
+    person("Heather", "Stoll", role = "aut"),
+    person("Langche", "Zeng", role = "aut")
+    )
+Description: Inferences about counterfactuals are essential for prediction,
+      answering what if questions, and estimating causal effects.
+      However, when the counterfactuals posed are too far from the data at
+      hand, conclusions drawn from well-specified statistical analyses
+      become based largely on speculation hidden in convenient modeling
+      assumptions that few would be willing to defend. Unfortunately,
+      standard statistical approaches assume the veracity of the model
+      rather than revealing the degree of model-dependence, which makes this
+      problem hard to detect. WhatIf offers easy-to-apply methods to
+      evaluate counterfactuals that do not require sensitivity testing over
+      specified classes of models. If an analysis fails the tests offered
+      here, then we know that substantive inferences will be sensitive to at
+      least some modeling choices that are not based on empirical evidence,
+      no matter what method of inference one chooses to use.
+License: GPL (>= 3)
+URL: http://gking.harvard.edu/whatif
+BugReports: https://github.com/IQSS/WhatIf/issues
+Depends: R (>= 2.3.1)
+Imports: lpSolve, Zelig (>= 5.0-17)
+Suggests: testthat
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-03-20 22:17:22 UTC; cgandrud
+Author: Christopher Gandrud [aut, cre],
+  Gary King [aut],
+  Heather Stoll [aut],
+  Langche Zeng [aut]
+Maintainer: Christopher Gandrud <zelig.zee@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-03-21 15:20:18 UTC

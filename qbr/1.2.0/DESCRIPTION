@@ -1,0 +1,26 @@
+Package: qbr
+Title: Access the 'Quickbase' JSON API
+Version: 1.2.0
+Authors@R: c(
+    person("John", "Erdmann", , "john.erdmann@keene.edu", role = c("aut", "cre")),
+    person("Keene State College", role = c("cph", "fnd")))
+Description: Programmatically access the 'Quickbase' JSON API <https://developer.quickbase.com>. 
+    You supply parameters for an API call, 'qbr' delivers an http request to the 
+    API endpoint and returns its response. Outputs follow 'tidyverse' philosophy.
+URL: https://github.com/BHII-KSC/qbr
+BugReports: https://github.com/BHII-KSC/qbr/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: dplyr (>= 1.0.9), tidyr (>= 1.2.0), httr (>= 1.4.3), jsonlite
+        (>= 1.8.0), magrittr (>= 2.0.3), purrr (>= 0.3.4), stringr (>=
+        1.4.0), tibble (>= 3.1.7)
+Suggests: testthat (>= 3.0.0), keyring
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-11-11 16:28:01 UTC; jae1028
+Author: John Erdmann [aut, cre],
+  Keene State College [cph, fnd]
+Maintainer: John Erdmann <john.erdmann@keene.edu>
+Repository: CRAN
+Date/Publication: 2022-11-11 16:50:02 UTC

@@ -1,0 +1,61 @@
+Package: mcrPioda
+Version: 1.3.3
+Date: 2024-05-30
+Title: Method Comparison Regression - Mcr Fork for M- And MM-Deming
+        Regression
+Maintainer: Giorgio Pioda <gfwp@ticino.com>
+Authors@R: c(
+    person("Giorgio", "Pioda", ,"gfwp@ticino.com", role = c("aut","cre"), comment=c(ORCID="0000-0002-8714-8678")),
+    person("Sergej", "Potapov", , "sergej.potapov@roche.com", role = c("aut"), comment=c(ORCID="0009-0002-6251-0279")),
+    person("Fabian", "Model", , , role = c("aut")),
+    person("Andre", "Schuetzenmeister", , "andre.schuetzenmeister@roche.com", role = c("aut"), comment=c(ORCID="0000-0002-2964-5502")),
+    person("Ekaterina", "Manuilova", , "ekaterina.manuilova@roche.com", role = c("aut")),
+    person("Florian", "Dufey", , "florian.dufey@roche.com", role = c("aut"), comment = c(ORCID = "0000-0001-6467-8556")),
+    person("Jakob", "Raymaekers", ,"jakob.raymaekers@kuleuven.com", role = c("aut"), comment=c(ORCID="0000-0002-2093-3137")),
+    person(given = "Venkatraman E.", family = "Seshan", role = c("ctb"), email = "seshanv@mskcc.org"),
+    person("Roche", role = c("cph", "fnd"))
+    )
+Copyright: This package includes code from the 'clinfun' library owned
+        by Ventatraman E. Seshan (ktau.r and ktau.f).
+Depends: R (>= 3.0.0), parallel, robslopes
+Imports: stats, graphics, grDevices, methods, rrcov, mixtools
+Description: Regression methods to quantify the relation between two measurement
+    methods are provided by this package. In particular it addresses regression
+    problems with errors in both variables and without repeated measurements. It
+    implements the Clinical Laboratory Standard International (CLSI) 
+    recommendations (see J. A. Budd et al. 
+    (2018, <https://clsi.org/standards/products/method-evaluation/documents/ep09/>) 
+    for analytical method comparison and bias estimation using patient samples.
+    Furthermore, algorithms for Theil-Sen and equivariant Passing-Bablok estimators 
+    are implemented, see F. Dufey (2020, <doi:10.1515/ijb-2019-0157>) and 
+    J. Raymaekers and F. Dufey (2022, <arXiv:2202:08060>).
+    Further the robust M-Deming and MM-Deming (experimental) are available, see
+    G. Pioda (2021, <arXiv:2105:04628>).
+    A comprehensive overview over the implemented methods and references can be found 
+    in the manual pages 'mcrPioda-package' and 'mcreg'.
+License: GPL (>= 3)
+Collate: "mcrMisc.r" "mcLinReg.r" "mcDeming.r" "mcWDeming.r"
+        "mcPaBaLarge.r" "mcPaBa.r" "mcPBequi.r" "mcCalcCI.r"
+        "mcCalcTstar.r" "mcBootstrap.r" "MCResultMethods.r"
+        "MCResult.r" "MCResultAnalyticalMethods.r"
+        "MCResultAnalytical.r" "MCResultJackknifeMethods.r"
+        "MCResultJackknife.r" "MCResultResamplingMethods.r"
+        "MCResultResampling.r" "MCResultBCaMethods.r" "MCResultBCa.r"
+        "mcrInterface.r" "mcrCompareFit.r" "mcrIncludeLegend.r" "zzz.r"
+        "ktau.r" "mcMDeming.r" "mcMMDeming.r" "mcNgMMDeming.r"
+        "mcPiMMDeming.r"
+RoxygenNote: 7.3.1
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2024-06-01 08:17:56 UTC; gfwp
+Author: Giorgio Pioda [aut, cre] (<https://orcid.org/0000-0002-8714-8678>),
+  Sergej Potapov [aut] (<https://orcid.org/0009-0002-6251-0279>),
+  Fabian Model [aut],
+  Andre Schuetzenmeister [aut] (<https://orcid.org/0000-0002-2964-5502>),
+  Ekaterina Manuilova [aut],
+  Florian Dufey [aut] (<https://orcid.org/0000-0001-6467-8556>),
+  Jakob Raymaekers [aut] (<https://orcid.org/0000-0002-2093-3137>),
+  Venkatraman E. Seshan [ctb],
+  Roche [cph, fnd]
+Repository: CRAN
+Date/Publication: 2024-06-04 09:45:26 UTC

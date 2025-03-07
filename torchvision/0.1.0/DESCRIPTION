@@ -1,0 +1,28 @@
+Package: torchvision
+Title: Models, Datasets and Transformations for Images
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Daniel",
+           family = "Falbel",
+           role = c("aut", "cre"),
+           email = "daniel@rstudio.com"
+           ),
+    person(family = "RStudio", role = c("cph"))
+    )
+Description: Provides access to datasets, models and preprocessing
+    facilities for deep learning with images. Integrates seamlessly
+    with the 'torch' package and it's 'API' borrows heavily from 
+    'PyTorch' vision package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: testthat, magick
+Imports: torch (>= 0.1.0), fs, rlang, rappdirs, utils, jpeg, png, abind
+NeedsCompilation: no
+Packaged: 2020-10-21 03:02:18 UTC; dfalbel
+Author: Daniel Falbel [aut, cre],
+  RStudio [cph]
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2020-10-29 15:00:02 UTC

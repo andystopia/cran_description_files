@@ -1,0 +1,47 @@
+Package: missSBM
+Type: Package
+Title: Handling Missing Data in Stochastic Block Models
+Version: 0.3.0
+Authors@R: c(
+  person("Julien", "Chiquet", role = c("aut", "cre"), email = "julien.chiquet@inrae.fr",
+      comment = c(ORCID = "0000-0002-3629-3429")),
+  person("Pierre", "Barbillon", role = c("aut"), email = "pierre.barbillon@agroparistech.fr",
+      comment = c(ORCID = "0000-0002-7766-7693")),
+  person("Timothée", "Tabouy", role = c("aut"), email = "timothee.tabouy@agroparistech.fr"),
+  person("großBM team", role = c("ctb"))
+  )
+Maintainer: Julien Chiquet <julien.chiquet@inrae.fr>
+Description: When a network is partially observed (here, NAs in the adjacency matrix rather than 1 or 0 
+  due to missing information between node pairs), it is possible to account for the underlying process
+  that generates those NAs. 'missSBM' adjusts the popular stochastic block model from network data 
+  sampled under various missing data conditions, as described in Tabouy, Barbillon and Chiquet (2019) <doi:10.1080/01621459.2018.1562934>.
+URL: https://grosssbm.github.io/missSBM/
+BugReports: https://github.com/grossSBM/missSBM/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.4.0)
+Imports: Rcpp, methods, ape, igraph, nloptr, ggplot2, corrplot, R6,
+        rlang, sbm, magrittr
+LinkingTo: Rcpp, RcppArmadillo
+Collate: 'utils_missSBM.R' 'R6Class-networkSampling.R'
+        'R6Class-networkSampling_fit.R'
+        'R6Class-simpleSBM_fit_missSBM.R' 'R6Class-missSBM_fit.R'
+        'R6Class-missSBM_collection.R' 'R6Class-networkSampler.R'
+        'R6Class-partlyObservedNetwork.R' 'RcppExports.R' 'defunct.R'
+        'er_network.R' 'estimateMissSBM.R' 'frenchblog2007.R'
+        'missSBM-package.R' 'observeNetwork.R' 'utils_initialization.R'
+        'war.R'
+Suggests: aricode, blockmodels, testthat (>= 2.1.0), covr, knitr,
+        rmarkdown, spelling
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2020-11-18 19:26:42 UTC; jchiquet
+Author: Julien Chiquet [aut, cre] (<https://orcid.org/0000-0002-3629-3429>),
+  Pierre Barbillon [aut] (<https://orcid.org/0000-0002-7766-7693>),
+  Timothée Tabouy [aut],
+  großBM team [ctb]
+Repository: CRAN
+Date/Publication: 2020-11-18 23:10:02 UTC

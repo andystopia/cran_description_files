@@ -1,0 +1,46 @@
+Package: BayesGmed
+Title: Bayesian Causal Mediation Analysis using 'Stan'
+Version: 0.0.2
+Authors@R: 
+    c(person(given = "Belay Birlie", 
+           family = "Yimer", 
+           role = c("aut", "cre"),
+           email = "belaybirlie.yimer@manchester.ac.uk",
+           comment = c(ORCID = "0000-0001-8621-6539")),
+    person(given = "Mark",
+           family = "Lunt",
+           role = c("aut")),
+    person(given = "Marcus",
+           family = "Beasley",
+           role = c("aut")), 
+    person(given = " Gary J ",
+           family = "Macfarlane",
+           role = c("aut")), 
+    person(given = "John",
+           family = "McBeth",
+           role = c("aut")))                     
+Description: Performs parametric mediation analysis using the Bayesian g-formula approach for binary and continuous outcomes. The methodology is based on Comment (2018) <doi:10.5281/zenodo.1285275> and a demonstration of its application can be found at Yimer et al. (2022) <doi:10.48550/arXiv.2210.08499>. 
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.1.1)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Packaged: 2023-11-09 20:18:26 UTC; mbmhsby2
+Author: Belay Birlie Yimer [aut, cre] (<https://orcid.org/0000-0001-8621-6539>),
+  Mark Lunt [aut],
+  Marcus Beasley [aut],
+  Gary J Macfarlane [aut],
+  John McBeth [aut]
+Maintainer: Belay Birlie Yimer <belaybirlie.yimer@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-11-10 07:20:08 UTC

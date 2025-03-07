@@ -1,0 +1,39 @@
+Package: wconf
+Type: Package
+Title: Weighted Confusion Matrix
+Version: 1.0.0
+Authors@R: person(given = "Alexandru",
+           family = "Monahov",
+           role = c("aut", "cre", "cph"),
+           email = "alexandru.monahov@proton.me",
+           comment = c(ORCID = "0000-0001-6204-9131"))
+URL: https://www.alexandrumonahov.eu.org/projects
+Description: Allows users to create weighted confusion matrices and accuracy
+    metrics that help with the model selection process for classification
+    problems, where distance from the correct category is important. The
+    package includes several weighting schemes which can be parameterized, as
+    well as custom configuration options. Furthermore, users can decide
+    whether they wish to positively or negatively affect the accuracy score
+    as a result of applying weights to the confusion matrix. 'wconf' integrates
+    well with the 'caret' package, but it can also work standalone when
+    provided data in matrix form.
+    References:
+    Kuhn, M. (2008) "Building Perspective Models in R Using the caret Package"
+    <doi:10.18637/jss.v028.i05>
+    Monahov, A. (2021) "Model Evaluation with Weighted Threshold Optimization
+    (and the mewto R package)" <doi:10.2139/ssrn.3805911>
+    Van de Velden, M., Iodice D'Enza, A., Markos, A., Cavicchia, C. (2023)
+    "A general framework for implementing distances for categorical variables"
+    <arXiv:2301.02190v1>.
+License: CC BY-SA 4.0
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, caret
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-12-11 21:40:25 UTC; Admin
+Author: Alexandru Monahov [aut, cre, cph]
+    (<https://orcid.org/0000-0001-6204-9131>)
+Maintainer: Alexandru Monahov <alexandru.monahov@proton.me>
+Repository: CRAN
+Date/Publication: 2023-12-12 20:50:02 UTC

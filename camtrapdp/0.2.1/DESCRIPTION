@@ -1,0 +1,43 @@
+Package: camtrapdp
+Title: Read and Manipulate Camera Trap Data Packages
+Version: 0.2.1
+Authors@R: c(
+    person("Peter", "Desmet", , "peter.desmet@inbo.be", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8442-8025")),
+    person("Sanne", "Govaert", , "sanne.govaert@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0002-8939-1305")),
+    person("Pieter", "Huybrechts", , "pieter.huybrechts@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0002-6658-6062")),
+    person("Damiano", "Oldoni", , "damiano.oldoni@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0003-3445-7562")),
+    person("Research Institute for Nature and Forest (INBO)", role = "cph",
+           comment = "https://www.vlaanderen.be/inbo/en-gb/"),
+    person("LifeWatch Belgium", role = "fnd",
+           comment = "https://lifewatch.be")
+  )
+Description: Read and manipulate Camera Trap Data Packages ('Camtrap DP').
+    'Camtrap DP' (<https://camtrap-dp.tdwg.org>) is a data exchange format
+    for camera trap data. With 'camtrapdp' you can read, filter and
+    transform data (including to Darwin Core) before further analysis in
+    e.g. 'camtraptor' or 'camtrapR'.
+License: MIT + file LICENSE
+URL: https://github.com/inbo/camtrapdp,
+        https://inbo.github.io/camtrapdp/
+BugReports: https://github.com/inbo/camtrapdp/issues
+Imports: cli, dplyr, frictionless (>= 1.1.0), memoise, purrr, readr
+Suggests: lubridate, testthat (>= 3.0.0), xml2
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-04 17:28:58 UTC; peter_desmet
+Author: Peter Desmet [aut, cre] (<https://orcid.org/0000-0002-8442-8025>),
+  Sanne Govaert [aut] (<https://orcid.org/0000-0002-8939-1305>),
+  Pieter Huybrechts [aut] (<https://orcid.org/0000-0002-6658-6062>),
+  Damiano Oldoni [aut] (<https://orcid.org/0000-0003-3445-7562>),
+  Research Institute for Nature and Forest (INBO) [cph]
+    (https://www.vlaanderen.be/inbo/en-gb/),
+  LifeWatch Belgium [fnd] (https://lifewatch.be)
+Maintainer: Peter Desmet <peter.desmet@inbo.be>
+Repository: CRAN
+Date/Publication: 2024-06-05 15:00:02 UTC

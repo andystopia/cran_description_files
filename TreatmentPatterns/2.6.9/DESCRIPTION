@@ -1,0 +1,42 @@
+Package: TreatmentPatterns
+Type: Package
+Title: Analyzes Real-World Treatment Patterns of a Study Population of
+        Interest
+Version: 2.6.9
+Authors@R: 
+    c(person("Aniek", "Markus", , role = c("aut"), comment = c(ORCID = "0000-0001-5779-4794")),
+      person("Maarten", "van Kessel", email = "m.l.vankessel@erasmusmc.nl", role = c("cre"), comment = c(ORCID = "0009-0006-8832-6030")))
+Maintainer: Maarten van Kessel <m.l.vankessel@erasmusmc.nl>
+Description: 
+    Computes treatment patterns within a given cohort using the Observational
+    Medical Outcomes Partnership (OMOP) common data model (CDM). As described
+    in Markus, Verhamme, Kors, and Rijnbeek (2022) <doi:10.1016/j.cmpb.2022.107081>.
+URL: https://github.com/darwin-eu/TreatmentPatterns
+BugReports: https://github.com/darwin-eu/TreatmentPatterns/issues
+Language: en-US
+Depends: R (>= 4.2)
+Imports: checkmate, dplyr, stringr, utils, stats, Andromeda, tidyr, R6,
+        sunburstR, networkD3, htmlwidgets, shiny, shinydashboard
+Suggests: knitr, rmarkdown, tibble, testthat (>= 3.0.0), usethis,
+        Eunomia, CDMConnector, DatabaseConnector (>= 6.0.0), SqlRender,
+        CohortGenerator, webshot2, CirceR, duckdb, DBI, withr, plotly,
+        ggplot2, Capr
+License: Apache License 2.0
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Additional_repositories: https://ohdsi.github.io/drat
+Collate: 'CDMInterface.R' 'ShinyModule.R' 'CharacterizationPlots.R'
+        'InputHandler.R' 'InteractivePlots.R' 'SankeyDiagram.R'
+        'ShinyApp.R' 'SunburstPlot.R' 'TreatmentPatterns-package.R'
+        'computePathways.R' 'constructPathways.R'
+        'createSankeyDiagram.R' 'createSunburstPlot.R'
+        'executeTreatmentPatterns.R' 'export.R'
+NeedsCompilation: no
+Packaged: 2024-09-02 09:13:33 UTC; mvankessel
+Author: Aniek Markus [aut] (<https://orcid.org/0000-0001-5779-4794>),
+  Maarten van Kessel [cre] (<https://orcid.org/0009-0006-8832-6030>)
+Repository: CRAN
+Date/Publication: 2024-09-02 12:40:06 UTC

@@ -1,0 +1,39 @@
+Package: LMMsolver
+Type: Package
+Title: Linear Mixed Model Solver
+Description: An efficient and flexible system to solve sparse mixed model
+    equations, for models that are often used in statistical genetics. 
+    Important applications are the use of splines to model spatial or temporal
+    trends. Another application area is mixed model QTL analysis for 
+    multiparental populations, allowing for heterogeneous residual variance and
+    random design matrices with Identity-By-Descent (IBD) probabilities.
+Version: 1.0.0
+Date: 2021-10-29
+Authors@R: c(person(given = "Martin", 
+                    family = "Boer", 
+                    email = "martin.boer@wur.nl", 
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-1879-4588")),
+            person(given = "Bart-Jan", 
+                   family = "van Rossum", 
+                   email = "bart-jan.vanrossum@wur.nl", 
+                   role = c("aut", "cre"),
+                   comment = c(ORCID = "0000-0002-8673-2514")))
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6)
+Imports: agridat, ggplot2, maps, Matrix, methods, Rcpp (>= 0.10.4), sp,
+        spam, splines
+LinkingTo: Rcpp
+RoxygenNote: 7.1.2
+Suggests: rmarkdown, knitr, tinytest
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-10-29 13:30:37 UTC; rossu027
+Author: Martin Boer [aut] (<https://orcid.org/0000-0002-1879-4588>),
+  Bart-Jan van Rossum [aut, cre]
+    (<https://orcid.org/0000-0002-8673-2514>)
+Maintainer: Bart-Jan van Rossum <bart-jan.vanrossum@wur.nl>
+Repository: CRAN
+Date/Publication: 2021-11-02 08:50:02 UTC

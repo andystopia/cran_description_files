@@ -1,0 +1,45 @@
+Package: voluModel
+Title: Modeling Species Distributions in Three Dimensions
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Hannah L.",
+             family = "Owens",
+             role = c("aut", "cre"),
+             email = "hannah.owens@gmail.com",
+             comment = c(ORCID = "0000-0003-0071-1745")),
+      person(given = "Carsten", 
+             family = "Rahbek",,,
+             role="aut",
+             comment = c(ORCID = "0000-0003-4585-0300")))
+Maintainer: Hannah L. Owens <hannah.owens@gmail.com>
+Description: Facilitates modeling species' ecological niches and 
+  geographic distributions based on occurrences and environments that 
+  have a vertical as well as horizontal component, and projecting models 
+  into three-dimensional geographic space. Working in three dimensions is 
+  useful in an aquatic context when the organisms one wishes to model can 
+  be found across a wide range of depths in the water column. The package
+  also contains functions to automatically generate marine training
+  model training regions using machine learning, and interpolate and smooth
+  patchily sampled environmental rasters using thin plate splines.
+  Davis Rabosky AR, Cox CL, Rabosky DL, Title PO, Holmes IA, Feldman A, McGuire JA (2016) <doi:10.1038/ncomms11484>.
+  Nychka D, Furrer R, Paige J, Sain S (2021) <doi:10.5065/D6W957CT>.
+  Pateiro-Lopez B, Rodriguez-Casal A (2019) <https://CRAN.R-project.org/package=alphahull>.
+License: ACM
+URL: https://hannahlowens.github.io/voluModel/
+BugReports: https://github.com/hannahlowens/voluModel/issues
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: dplyr, dismo, fields, ggplot2, ggtext, grDevices,
+        latticeExtra, methods, raster, rangeBuilder, rgeos, terra,
+        viridisLite, sp
+Suggests: testthat (>= 3.0.0), nlme, knitr, covr, gridExtra, rgdal,
+        rmarkdown, rnaturalearth, rnaturalearthdata, tibble
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-03-14 16:21:38 UTC; HannahOwens
+Author: Hannah L. Owens [aut, cre] (<https://orcid.org/0000-0003-0071-1745>),
+  Carsten Rahbek [aut] (<https://orcid.org/0000-0003-4585-0300>)
+Repository: CRAN
+Date/Publication: 2022-03-15 18:50:02 UTC

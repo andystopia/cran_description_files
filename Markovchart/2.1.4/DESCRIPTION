@@ -1,0 +1,19 @@
+Package: Markovchart
+Type: Package
+Title: Markov Chain-Based Cost-Optimal Control Charts
+Version: 2.1.4
+Author: Balazs Dobi & Andras Zempleni
+Maintainer: Balazs Dobi <dobibalazs@inf.elte.hu>
+Description: Functions for cost-optimal control charts with a focus on health care applications. Compared to assumptions in traditional control chart theory, here, we allow random shift sizes, random repair and random sampling times. The package focuses on X-bar charts with a sample size of 1 (representing the monitoring of a single patient at a time). The methods are described in Zempleni et al. (2004) <doi:10.1002/asmb.521>, Dobi and Zempleni (2019) <doi:10.1002/qre.2518> and Dobi and Zempleni (2019) <http://ac.inf.elte.hu/Vol_049_2019/129_49.pdf>.
+License: GPL
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, kableExtra, gridExtra, reshape2, zoo
+Imports: stats, parallel, doParallel, optimParallel, foreach, ggplot2,
+        metR
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-10-31 17:24:29 UTC; Bazsi
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2021-11-01 19:40:02 UTC

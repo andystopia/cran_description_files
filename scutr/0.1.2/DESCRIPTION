@@ -1,0 +1,25 @@
+Package: scutr
+Title: Balancing Multiclass Datasets for Classification Tasks
+Version: 0.1.2
+Authors@R: 
+    person(given = "Keenan",
+           family = "Ganz",
+           role = c("aut", "cre"),
+           email = "ganzkeenan1@gmail.com")
+Maintainer: Keenan Ganz <ganzkeenan1@gmail.com>
+Description: Imbalanced training datasets impede many popular classifiers. To balance training data, a combination of oversampling minority classes and undersampling majority classes is useful. This package implements the SCUT (SMOTE and Cluster-based Undersampling Technique) algorithm as described in Agrawal et. al. (2015) <doi:10.5220/0005595502260234>. Their paper uses model-based clustering and synthetic oversampling to balance multiclass training datasets, although other resampling methods are provided in this package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: smotefamily, parallel, mclust
+Depends: R (>= 2.10)
+URL: https://github.com/s-kganz/scutr
+BugReports: https://github.com/s-kganz/scutr/issues
+Suggests: testthat (>= 2.0.0)
+Config/testthat/edition: 2
+NeedsCompilation: no
+Packaged: 2021-06-24 01:23:01 UTC; ganzk
+Author: Keenan Ganz [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-06-24 11:40:02 UTC

@@ -1,0 +1,15 @@
+Package: cpfa
+Type: Package
+Title: Classification with Parallel Factor Analysis
+Version: 1.0-5
+Date: 2023-08-07
+Author: Matthew A. Snodgress <snodg031@umn.edu>
+Maintainer: Matthew A. Snodgress <snodg031@umn.edu>
+Depends: multiway, glmnet, e1071, randomForest, nnet
+Imports: foreach, doParallel
+Description: Classification using Richard A. Harshman's Parallel Factor Analysis (Parafac) model-1 fit to a three-way or four-way data tensor/array. See Harshman and Lundy (1994): <doi:10.1016/0167-9473(94)90132-5>. Uses Parafac factor weights from one mode of this model as predictors to tune parameters for one or more classification methods via a k-fold cross-validation procedure. Supports penalized logistic regression, support vector machine, random forest, and feed-forward neural network. Supports binary and multiclass classification. Predicts class labels or class probabilities and calculates multiple classification performance measures. Parallel computing is implemented via the 'parallel' and 'doParallel' packages.
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2023-08-07 16:56:30 UTC; matthewsnodgress
+Repository: CRAN
+Date/Publication: 2023-08-07 17:30:02 UTC

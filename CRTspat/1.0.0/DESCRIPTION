@@ -1,0 +1,34 @@
+Package: CRTspat
+Title: Workflow for Cluster Randomised Trials with Spillover
+Version: 1.0.0
+Authors@R: c(person(given = "Thomas",
+                    family = "Smith", 
+                    email = "Thomas-a.Smith@unibas.ch",
+                    role = c("aut", "cre", "cph"),
+                    comment = c(ORCID = "0000-0002-3650-9381")),
+            person(given = "Lea",
+                   family = "Multerer",
+                   role = "ctb"),
+            person(given = "Mariah",
+                   family = "Silkey",
+                   role = "ctb"))
+Maintainer: Thomas Smith <Thomas-a.Smith@unibas.ch>
+Description: Design, workflow and statistical analysis of Cluster Randomised Trials of (health) interventions where there may be geographical contamination between the arms (see <https://thomasasmith.github.io/articles/CRTspat.html>). 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+Imports: ggplot2, stats, utils, geepack, MASS, tidyr, magrittr, dplyr,
+        OOR, lme4, sf, Matrix, spatstat.geom, spatstat.random, jagsUI,
+        TSP
+Suggests: knitr, rmarkdown, INLA, testthat (>= 2.0.0)
+Config/testthat/edition: 2
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-10-15 18:11:26 UTC; smith
+Author: Thomas Smith [aut, cre, cph] (<https://orcid.org/0000-0002-3650-9381>),
+  Lea Multerer [ctb],
+  Mariah Silkey [ctb]
+Repository: CRAN
+Date/Publication: 2023-10-16 17:20:02 UTC

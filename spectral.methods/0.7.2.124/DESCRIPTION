@@ -1,0 +1,16 @@
+Package: spectral.methods
+Title: Singular Spectrum Analysis (SSA) tools for time series analysis
+Version: 0.7.2.124
+Date: 2014-01-01
+Author: Jannis v. Buttlar
+Maintainer: Jannis v. Buttlar <jbuttlar@bgc-jena.mpg.de>
+Imports: Rssa, raster, nnet, abind, RNetCDF, ncdf.tools, foreach,
+        JBTools, parallel, DistributionUtils, RColorBrewer
+Description: This package contains some implementations of Singular Spectrum Analysis (SSA) for the gapfilling (gapfillSSA() ) and spectral decomposition (filterTseriesSSA() ) of time series. It contains the code used by Buttlar et. al. (2014), Nonlinear Processes in Geophysics (gapfillNcdf). In addition, the iterative SSA gapfilling of Kondrashov and Ghil (2006) is implemented. All SSA calculations are done via the truncated and fast SSA algorithm of Korobeneykov (2010) (package Rssa). 
+License: GPL-2
+LazyLoad: yes
+Depends: R (>= 2.10.0)
+Packaged: 2014-04-07 09:47:27 UTC; jbuttlar
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-04-07 13:02:37

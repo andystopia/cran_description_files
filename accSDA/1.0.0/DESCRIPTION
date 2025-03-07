@@ -1,0 +1,36 @@
+Package: accSDA
+Version: 1.0.0
+Date: 2017-08-22
+Authors@R: c(
+     person("Gudmundur", "Einarsson", , "gumeo140688@gmail.com", role = c("aut", "cre", "trl")),
+     person("Line", "Clemmensen", , "lkhc@dtu.dk", role = c("aut","ths")),
+     person("Brendan", "Ames", , "bpames@ua.edu", role = c("aut")),
+     person("Summer", "Atkins", , "sratkins@crimson.ua.edu", role = c("aut"))
+     )
+Title: Accelerated Sparse Discriminant Analysis
+Imports: MASS (>= 7.3.45), rARPACK (>= 0.10.0), sparseLDA (>= 0.1.7),
+        ggplot2 (>= 2.1.0), ggthemes (>= 3.2.0), grid (>= 3.2.2),
+        gridExtra (>= 2.2.1)
+Depends: R (>= 3.2)
+Description: Implementation of sparse linear discriminant analysis, which is a supervised
+    classification method for multiple classes. Various novel optimization approaches to
+    this problem are implemented including alternating direction method of multipliers (ADMM),
+    proximal gradient (PG) and accelerated proximal gradient (APG) (See Atkins et al. <arXiv:1705.07194>).
+    Functions for performing cross validation are also supplied along with basic prediction
+    and plotting functions.
+    Sparse zero variance discriminant analysis (SZVD) is also included in the package
+    (See Ames and Hong, <arXiv:1401.5492>). See the github wiki for a more extended description.
+License: GPL (>= 2)
+URL: https://github.com/gumeo/accSDA/wiki
+BugReports: https://github.com/gumeo/accSDA/issues
+LazyData: TRUE
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-08-24 11:00:19 UTC; guei
+Author: Gudmundur Einarsson [aut, cre, trl],
+  Line Clemmensen [aut, ths],
+  Brendan Ames [aut],
+  Summer Atkins [aut]
+Maintainer: Gudmundur Einarsson <gumeo140688@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-08-24 11:53:10 UTC

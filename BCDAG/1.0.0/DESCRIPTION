@@ -1,0 +1,37 @@
+Package: BCDAG
+Title: Bayesian Structure and Causal Learning of Gaussian Directed
+        Graphs
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Federico",
+           family = "Castelletti",
+           role = "aut",
+           email = "federico.castelletti@unicatt.it"),
+           person(given = "Alessandro",
+           family = "Mascaro",
+           role = c("aut", "cre"),
+           email = "a.mascaro3@campus.unimib.it"))
+Description: A collection of functions for structure learning of causal networks and estimation of joint 
+    causal effects from observational Gaussian data. Main algorithm consists of a Markov chain Monte Carlo 
+    scheme for posterior inference of causal structures, parameters and causal effects between variables.
+    References:
+    F. Castelletti and A. Mascaro (2021) <doi:10.1007/s10260-021-00579-1>,
+    F. Castelletti and A. Mascaro (2022) <arXiv:2201.12003>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+biocViews:
+Imports: graphics, gRbase, grDevices, lattice, methods, mvtnorm, stats,
+        utils
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2022-03-14 17:39:44 UTC; aless
+Author: Federico Castelletti [aut],
+  Alessandro Mascaro [aut, cre]
+Maintainer: Alessandro Mascaro <a.mascaro3@campus.unimib.it>
+Repository: CRAN
+Date/Publication: 2022-03-15 19:00:02 UTC

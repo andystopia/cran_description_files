@@ -1,0 +1,20 @@
+Package: welo
+Title: Weighted and Standard Elo Rates
+Version: 0.1.3
+Authors@R: person("Vincenzo", "Candila", email="candilav@gmail.com", role=c("aut", "cre"))
+Description: Estimates the standard and weighted Elo (WElo, Angelini et al., 2022 <doi:10.1016/j.ejor.2021.04.011>) rates. The current version provides Elo and WElo rates for tennis, according to different systems of weights (games or sets) and scale factors (constant, proportional to the number of matches, with more weight on Grand Slam matches or matches played on a specific surface). Moreover, the package gives the possibility of estimating the (bootstrap) standard errors for the rates. Finally, the package includes betting functions that automatically select the matches on which place a bet.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+RdMacros: Rdpack
+Depends: R (>= 4.1.0),
+Imports: xts (>= 0.12.0), Rdpack (>= 1.0.0), boot (>= 1.3), rio (>=
+        0.5.29), ggplot2 (>= 3.3.5), reshape2 (>= 1.4.4)
+Suggests: knitr
+NeedsCompilation: no
+Packaged: 2022-12-28 17:34:52 UTC; Vincenzo
+Author: Vincenzo Candila [aut, cre]
+Maintainer: Vincenzo Candila <candilav@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-05 17:50:02 UTC

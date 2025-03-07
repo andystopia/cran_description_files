@@ -1,0 +1,21 @@
+Package: amber
+Type: Package
+Title: Automated Model Benchmarking R Package
+Version: 1.0.3
+Author: Christian Seiler [cre, aut]
+Maintainer: Christian Seiler <christian.seiler@canada.ca>
+Description: Functions that quantify how well the Canadian Land Surface Scheme Including Biogeochemical Cycles (CLASSIC) reproduces land surface processes when compared against reference data. To summarize model performance across different statistical metrics, this package employs a skill score system that was originally developed by Collier et. al., (2018) <doi:10.1029/2018MS001354> .
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4.0)
+Imports: classInt, doParallel, foreach, Hmisc, latex2exp, ncdf4,
+        parallel, raster, rgdal, rgeos, scico, sp, stats, utils,
+        viridis, xtable
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2020-08-28 09:01:44 UTC; acrpcsr
+Repository: CRAN
+Date/Publication: 2020-08-28 11:20:02 UTC

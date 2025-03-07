@@ -1,0 +1,48 @@
+Package: TSCI
+Title: Tools for Causal Inference with Possibly Invalid Instrumental
+        Variables
+Version: 1.0.0
+Authors@R: 
+    c(
+    person(given="David",
+            family = "Carl",
+            role = c("aut", "cre"),
+            email = "dcarl@ethz.ch",
+            comment = c(ORCID = "0000-0003-0615-0133")),
+    person(given = "Corinne",
+            family = "Emmenegger",
+            role = c("aut"),
+            email = "emmenegger@stat.math.ethz.ch", 
+            comment = c(ORCID = "0000-0003-0353-8888")),
+    person(given = "Wei",
+            family = "Yuan",
+            role = c("aut"),
+            email = "wy204@stat.rutgers.edu"),
+    person(given = "Zijian",
+            family = "Guo",
+            role = c("aut"),
+            email = "zijguo@stat.rutgers.edu",
+            comment = c(ORCID = "0000-0002-2888-7016")))
+Description: Two stage curvature identification with machine learning for causal 
+    inference in settings when instrumental variable regression is not suitable
+    because of potentially invalid instrumental variables. Based on Guo and 
+    Buehlmann (2022) "Two Stage Curvature Identification with Machine Learning: 
+    Causal Inference with Possibly Invalid Instrumental Variables"
+    <arXiv:2203.12808> .
+URL: https://github.com/dlcarl/TSML
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Depends: R (>= 4.0.0)
+Suggests: fda, MASS, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Imports: xgboost, Rfast, stats, ranger, parallel
+NeedsCompilation: no
+Packaged: 2022-09-18 12:26:38 UTC; david
+Author: David Carl [aut, cre] (<https://orcid.org/0000-0003-0615-0133>),
+  Corinne Emmenegger [aut] (<https://orcid.org/0000-0003-0353-8888>),
+  Wei Yuan [aut],
+  Zijian Guo [aut] (<https://orcid.org/0000-0002-2888-7016>)
+Maintainer: David Carl <dcarl@ethz.ch>
+Repository: CRAN
+Date/Publication: 2022-09-19 13:16:10 UTC

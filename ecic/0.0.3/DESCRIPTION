@@ -1,0 +1,31 @@
+Package: ecic
+Title: Extended Changes-in-Changes
+Version: 0.0.3
+Authors@R: 
+    person("Frederic", "Kluser", , "frederic.kluser@unibe.ch", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4454-7572"))
+Description: Extends the Changes-in-Changes model a la Athey and Imbens
+    (2006) <doi:10.1111/j.1468-0262.2006.00668.x> to multiple cohorts and
+    time periods, which generalizes difference-in-differences estimation
+    techniques to the entire distribution. Computes quantile treatment
+    effects for every possible two-by-two combination in ecic(). Then,
+    aggregating all bootstrap runs adds the standard errors in
+    summary_ecic(). Results can be plotted with plot_ecic() aggregated
+    over all cohort-group combinations or in an event-study style for
+    either individual periods or individual quantiles.
+License: MIT + file LICENSE
+URL: https://frederickluser.github.io/ecic/
+BugReports: https://github.com/frederickluser/ecic/issues
+Depends: R (>= 2.10)
+Imports: furrr, future, ggplot2, patchwork, progress, progressr, stats
+Suggests: tinytest
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-02-21 09:49:30 UTC; frkl
+Author: Frederic Kluser [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4454-7572>)
+Maintainer: Frederic Kluser <frederic.kluser@unibe.ch>
+Repository: CRAN
+Date/Publication: 2023-02-21 10:40:02 UTC

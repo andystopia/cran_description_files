@@ -1,0 +1,37 @@
+Package: mvGPS
+Title: Causal Inference using Multivariate Generalized Propensity Score
+Version: 1.2.1
+Authors@R: 
+    person(given = "Justin",
+           family = "Williams",
+           role = c("aut", "cre"),
+           email = "williazo@ucla.edu",
+           comment = c(ORCID = "https://orcid.org/0000-0002-5045-2764"))
+Description: 
+    Methods for estimating and utilizing the multivariate generalized
+    propensity score (mvGPS) for multiple continuous exposures described in
+    Williams, J.R, and Crespi, C.M. (2020) <arxiv:2008.13767>. The methods allow
+    estimation of a dose-response surface relating the joint distribution of multiple
+    continuous exposure variables to an outcome. Weights are constructed assuming a
+    multivariate normal density for the marginal and conditional distribution of
+    exposures given a set of confounders. Confounders can be different for different
+    exposure variables. The weights are designed to achieve balance across all
+    exposure dimensions and can be used to estimate dose-response surfaces.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.0
+RdMacros: Rdpack
+VignetteBuilder: knitr
+Depends: R (>= 3.6)
+Imports: Rdpack, MASS, WeightIt, cobalt, matrixNormal, geometry, sp,
+        gbm, CBPS
+BugReports: https://github.com/williazo/mvGPS/issues
+URL: https://github.com/williazo/mvGPS
+Suggests: testthat, knitr, dagitty, ggdag, dplyr, rmarkdown, ggplot2
+NeedsCompilation: no
+Packaged: 2021-10-16 19:08:54 UTC; williazo
+Author: Justin Williams [aut, cre] (<https://orcid.org/0000-0002-5045-2764>)
+Maintainer: Justin Williams <williazo@ucla.edu>
+Repository: CRAN
+Date/Publication: 2021-10-16 23:30:10 UTC

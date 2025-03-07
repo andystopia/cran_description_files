@@ -1,0 +1,40 @@
+Package: ProFAST
+Type: Package
+Title: Probabilistic Factor Analysis for Spatially-Aware Dimension
+        Reduction
+Version: 1.2
+Date: 2023-06-08
+Authors@R: 
+    c(person(given = "Wei",
+             family = "Liu",
+             role = c("aut", "cre"),
+             email = "wei.liu@duke-nus.edu.sg"),
+      person(given = "Xiao",
+             family = "Zhang",
+             role = c("aut")),
+      person(given = "Jin",
+             family = "Liu",
+             role = "aut"))
+Author: Wei Liu [aut, cre],
+  Xiao Zhang [aut],
+  Jin Liu [aut]
+Maintainer: Wei Liu <wei.liu@duke-nus.edu.sg>
+Description: Probabilistic factor analysis for spatially-aware dimension reduction across multi-section spatial transcriptomics data with millions of spatial locations.
+    More details can be referred to Wei Liu, et al. (2023) <doi:10.1038/s41467-023-35947-w>.
+License: GPL-3
+Depends: R (>= 4.0.0), gtools
+Imports: Rcpp (>= 1.0.10), AnnotationDbi, DR.SC, Matrix, mclust,
+        PRECAST, pbapply, biomaRt, irlba, org.Hs.eg.db, org.Mm.eg.db,
+        Seurat, parallel, performance, harmony, nnet, methods, stats,
+        utils
+URL: https://github.com/feiyoung/ProFAST
+BugReports: https://github.com/feiyoung/ProFAST/issues
+Suggests: knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2023-06-08 03:10:49 UTC; Liuxianju
+Repository: CRAN
+Date/Publication: 2023-06-08 18:22:58 UTC

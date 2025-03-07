@@ -1,0 +1,41 @@
+Package: CNAIM
+Type: Package
+Title: Common Network Asset Indices Methodology (CNAIM)
+Version: 1.0.1
+Authors@R: 
+    c(person(given = "Emil",
+             family = "Larsen",
+             role = c("aut", "cre"),
+             email = "mohsin@utiligize.com"),
+      person(given = "Kalle",
+             family = "Hansen",
+             role = c("aut"),
+             email = "kalle@utiligize.com"),
+      person(given = "Peter",
+             family = "Larsen",
+             role = c("aut"),
+             email = "peter@utiligize.com"))
+Maintainer: Emil Larsen <mohsin@utiligize.com>
+Description: Implementation of the CNAIM standard in R. Contains a series of
+    algorithms which determine the probability of failure, consequences of
+    failure and monetary risk associated with electricity distribution
+    companies' assets such as transformers and cables. Results are visualized
+    in an easy-to-understand risk matrix.
+URL: https://www.cnaim.io/
+BugReports: https://github.com/Utiligize/CNAIM/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+Depends: R (>= 3.5.0)
+Imports: plyr, dplyr, htmltools, htmlwidgets (>= 1.2), jsonlite,
+        magrittr, r2d3, readxl, stringr, testthat, tibble, widgetframe
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-10-29 14:20:59 UTC; mohsinvindhani
+Author: Emil Larsen [aut, cre],
+  Kalle Hansen [aut],
+  Peter Larsen [aut]
+Repository: CRAN
+Date/Publication: 2020-10-29 15:20:03 UTC

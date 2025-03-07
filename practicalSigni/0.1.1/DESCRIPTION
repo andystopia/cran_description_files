@@ -1,0 +1,36 @@
+Package: practicalSigni
+Type: Package
+Title: Practical Significance Ranking of Regressors
+Version: 0.1.1
+Date: 2023-03-29
+Authors@R: c(person("Hrishikesh", "Vinod", role = c("aut", "cre"),
+      email= "vinod@fordham.edu"))
+Encoding: UTF-8
+Depends: R (>= 4.2.0), np (>= 0.60), xtable (>= 1.8), generalCorr (>=
+        1.2), NNS (>= 0.9), randomForest (>= 4.7),
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Description: Consider a possibly nonlinear nonparametric regression
+   with p regressors. We provide evaluations by 13 methods to rank
+   regressors by their practical significance or importance using 
+   various methods, including machine learning tools. Comprehensive
+   methods are as follows. 
+   m6=Generalized partial correlation coefficient or
+   GPCC by Vinod (2021)<doi:10.1007/s10614-021-10190-x> and
+   Vinod (2022)<https://www.mdpi.com/1911-8074/15/1/32>.
+   m7= a generalization of psychologists' effect size incorporating 
+   nonlinearity and many variables.
+   m8= local linear partial (dy/dxi) using the 'np' package for kernel 
+   regressions.
+   m9= partial (dy/dxi) using the 'NNS' package.
+   m10= importance measure using the 'NNS' boost function.
+   m11= Shapley Value measure of importance (cooperative game theory).
+   m12 and m13= two versions of the random forest algorithm.
+License: GPL (>= 2)
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-03-29 15:55:04 UTC; vinod
+Author: Hrishikesh Vinod [aut, cre]
+Maintainer: Hrishikesh Vinod <vinod@fordham.edu>
+Repository: CRAN
+Date/Publication: 2023-03-29 17:10:05 UTC

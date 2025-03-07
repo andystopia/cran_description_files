@@ -1,0 +1,34 @@
+Package: sims
+Title: Simulate Data from R or 'JAGS' Code
+Version: 0.0.2
+Authors@R: 
+    c(person(given = "Audrey",
+             family = "Beliveau",
+             role = "aut",
+             email = "audrey.beliveau@uwaterloo.ca"),
+      person(given = "Joe",
+             family = "Thorley",
+             role = c("aut", "cre"),
+             email = "joe@poissonconsulting.ca",
+             comment = c(ORCID = "0000-0002-7683-4592")))
+Description: Generates data from R or 'JAGS' code for use in
+    simulation studies.  The data are returned as an 'nlist::nlists'
+    object and/or saved to file as individual '.rds' files.
+    Parallelization is implemented using the 'future' package.  Progress
+    is reported using the 'progressr' package.
+License: MIT + file LICENSE
+Depends: R (>= 3.6)
+Imports: chk, future.apply, nlist, parallel, stats, yesno
+Suggests: covr, future, knitr, progressr, rjags, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-01-14 15:52:52 UTC; joe
+Author: Audrey Beliveau [aut],
+  Joe Thorley [aut, cre] (<https://orcid.org/0000-0002-7683-4592>)
+Maintainer: Joe Thorley <joe@poissonconsulting.ca>
+Repository: CRAN
+Date/Publication: 2021-01-18 15:50:02 UTC

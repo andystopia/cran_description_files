@@ -1,0 +1,29 @@
+Package: pmcalibration
+Type: Package
+Title: Calibration Curves for Clinical Prediction Models
+Version: 0.1.0
+Authors@R: person(given = "Stephen", family = "Rhodes", email= "steverho89@gmail.com", role=c("aut", "cre", "cph"))
+Maintainer: Stephen Rhodes <steverho89@gmail.com>
+Description: Fit calibrations curves for clinical prediction models and calculate several associated 
+  metrics (Eavg, E50, E90, Emax). Ideally predicted probabilities from a prediction model 
+  should align with observed probabilities. Calibration curves relate predicted probabilities 
+  (or a transformation thereof) to observed outcomes via a flexible non-linear smoothing function. 
+  'pmcalibration' allows users to choose between several smoothers (regression splines, generalized 
+  additive models/GAMs, lowess, loess). Both binary and time-to-event outcomes are supported. 
+  See Van Calster et al. (2016) <doi:10.1016/j.jclinepi.2015.12.005>; 
+  Austin and Steyerberg (2019) <doi:10.1002/sim.8281>; 
+  Austin et al. (2020) <doi:10.1002/sim.8570>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/stephenrho/pmcalibration
+BugReports: https://github.com/stephenrho/pmcalibration/issues
+Imports: Hmisc, MASS, checkmate, chk, mgcv, splines, graphics, stats,
+        methods, survival, pbapply, parallel
+Suggests: knitr, rmarkdown, data.table, ggplot2, rms, simsurv
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-09-06 00:19:48 UTC; stephenrhodes
+Author: Stephen Rhodes [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2023-09-06 17:50:02 UTC

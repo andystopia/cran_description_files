@@ -1,0 +1,41 @@
+Package: volker
+Type: Package
+Title: High-Level Functions for Tabulating, Charting and Reporting
+        Survey Data
+Version: 1.0.2
+Date: 2024-02-03
+Authors@R: 
+  c(
+    person("Jakob", "Jünger", email = "jakob.juenger@uni-muenster.de", role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0003-1860-6695")),
+    person("Henrieke", "Kotthoff", email = "henrieke.kotthoff@uni-muenster.de", role = "ctb"),
+    person("Chantal", "Gärtner", email = "chantal.gaertner@uni-muenster.de", role = "ctb", 
+      comment = c(ORCID = "0000-0002-3653-6013"))
+  )
+Description: Craft polished tables and plots in Markdown reports. 
+             Simply choose whether to treat your data as counts or metrics, 
+             and the package will automatically generate well-designed default tables and plots for you.
+             Boiled down to the basics, with labeling features and simple interactive reports.
+             All functions are 'tidyverse' compatible.
+URL: https://github.com/strohne/volker
+BugReports: https://github.com/strohne/volker/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LazyData: true
+Imports: stats, rlang, lifecycle, glue, tibble, dplyr, tidyr,
+        tidyselect, ggplot2 (>= 2.2.1), scales, base64enc, stringr,
+        purrr, magrittr, forcats, skimr, knitr, kableExtra, rmarkdown,
+        janitor, psych
+Depends: R (>= 4.2)
+Suggests: tidyverse, remotes, usethis, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-02-21 22:30:41 UTC; Jakob
+Author: Jakob Jünger [aut, cre, cph] (<https://orcid.org/0000-0003-1860-6695>),
+  Henrieke Kotthoff [ctb],
+  Chantal Gärtner [ctb] (<https://orcid.org/0000-0002-3653-6013>)
+Maintainer: Jakob Jünger <jakob.juenger@uni-muenster.de>
+Repository: CRAN
+Date/Publication: 2024-02-22 21:00:02 UTC

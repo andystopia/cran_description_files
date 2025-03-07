@@ -1,0 +1,50 @@
+Type: Package
+Package: MazamaSpatialUtils
+Version: 0.8.6
+Title: Spatial Data Download and Utility Functions
+Authors@R: c(
+    person("Jonathan", "Callahan", email="jonathan.s.callahan@gmail.com", role=c("aut","cre")), 
+    person("Rachel", "Carroll", email="rachelcarroll4@gmail.com", role=c("aut")),
+    person("Eli", "Grosman", email="eligrosman1@gmail.com", role=c("aut")),
+    person("Roger", "Andre", email="randre@gmail.com", role=c("aut")),
+    person("Tom", "Bergamaschi", email="tbergama@gmail.com", role=c("aut")),
+    person("Tina", "Chen", email="chen.tinaa@gmail.com", role=c("aut")),
+    person("Ruby", "Fore", email="ruby.a.fore@gmail.com", role=c("aut")),
+    person("Will", "Leahy", email="procterw@gmail.com", role=c("aut")),
+    person("Helen", "Miller", email="helen@ohana.org", role=c("aut")),
+    person("Henry", "Nguyen", email="oh.henry.nguyen@gmail.com", role=c("aut")),
+    person("Robin", "Winstanley", email="robin@winstan.net", role=c("aut")),
+    person("Alice", "Yang", email="wenhuy@uw.edu", role=c("aut"))
+    )
+Author: Jonathan Callahan [aut, cre],
+  Rachel Carroll [aut],
+  Eli Grosman [aut],
+  Roger Andre [aut],
+  Tom Bergamaschi [aut],
+  Tina Chen [aut],
+  Ruby Fore [aut],
+  Will Leahy [aut],
+  Helen Miller [aut],
+  Henry Nguyen [aut],
+  Robin Winstanley [aut],
+  Alice Yang [aut]
+Maintainer: Jonathan Callahan <jonathan.s.callahan@gmail.com>
+Description: A suite of conversion functions to create internally standardized
+    spatial polygons data frames. Utility functions use these data sets to
+    return values such as country, state, time zone, watershed, etc. associated
+    with a set of longitude/latitude pairs. (They also make cool maps.)
+License: GPL-2
+URL: https://github.com/MazamaScience/MazamaSpatialUtils
+BugReports: https://github.com/MazamaScience/MazamaSpatialUtils/issues
+Repository: CRAN
+Depends: R (>= 4.0.0), sf
+Imports: countrycode, dplyr, magrittr, MazamaCoreUtils (>= 0.4.5),
+        rlang, rmapshaper, stringr
+Suggests: knitr, markdown, readr, rmarkdown, testthat
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-06 16:55:45 UTC; jonathancallahan
+Date/Publication: 2023-09-06 17:50:08 UTC

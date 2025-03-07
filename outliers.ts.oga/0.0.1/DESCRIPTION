@@ -1,0 +1,38 @@
+Package: outliers.ts.oga
+Type: Package
+Title: Efficient Outlier Detection in Heterogeneous Time Series
+        Databases
+Version: 0.0.1
+Authors@R: 
+  c(person(given = "Pedro",
+           family = "Galeano",
+           email = "pedro.galeano@uc3m.es",
+           role = c("aut","cre"),
+           comment = c(ORCID="0000-0003-2577-2747")),
+    person(given = "Daniel",
+           family = "Peña",
+           email = "daniel.pena@uc3m.es",
+           role = "aut",
+           comment = c(ORCID="0000-0002-9137-1557")),
+    person(given = "Ruey S.",
+           family = "Tsay",
+           email = "ruey.tsay@chicagobooth.edu",
+           role = "aut",
+           comment = c(ORCID="0000-0002-4949-4035"))
+           )
+Maintainer: Pedro Galeano <pedro.galeano@uc3m.es>
+Description: Programs for detecting and cleaning outliers in single time series and in time series from homogeneous and heterogeneous databases using an Orthogonal Greedy Algorithm (OGA) for saturated linear regression models. The programs implement the procedures presented in the paper entitled "Efficient outlier detection in heterogeneous time series databases" by Pedro Galeano, Daniel Peña and Ruey S. Tsay (2024), working paper, Universidad Carlos III de Madrid.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.3.0)
+Imports: caret (>= 6.0-94), forecast (>= 8.22.0), gsarima (>= 0.1-5),
+        parallel (>= 3.6.2), parallelly (>= 1.37.1), robust (>= 0.7-4),
+        SLBDD (>= 0.0.4)
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2024-05-28 15:36:46 UTC; PGALEANO
+Author: Pedro Galeano [aut, cre] (<https://orcid.org/0000-0003-2577-2747>),
+  Daniel Peña [aut] (<https://orcid.org/0000-0002-9137-1557>),
+  Ruey S. Tsay [aut] (<https://orcid.org/0000-0002-4949-4035>)
+Repository: CRAN
+Date/Publication: 2024-05-28 17:00:02 UTC

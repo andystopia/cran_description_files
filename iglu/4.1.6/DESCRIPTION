@@ -1,0 +1,73 @@
+Package: iglu
+Type: Package
+Title: Interpreting Glucose Data from Continuous Glucose Monitors
+Version: 4.1.6
+Authors@R: c(person("Elizabeth", "Chun",
+            role = c("aut")),
+            person("Steve", "Broll",
+            role = c("aut")),
+            person("David", "Buchanan",
+            role = c("aut")),
+            person("John", "Muschelli",
+            role = c("aut"),
+            email = "muschellij2@gmail.com",
+            comment = c(ORCID = "0000-0001-6469-1750")),
+            person("Nathaniel", "Fernandes",
+            email = "njferns020@gmail.com",
+            comment = c(ORCID = "0000-0003-0485-0726"),
+            role = c("aut")),
+            person("Jung Hoon", "Seo",
+            role = c("ctb")),
+            person("Johnathan", "Shih",
+            role = c("ctb")),
+            person("Jacek", "Urbanek",
+            role = c("ctb")),
+            person("John", "Schwenck",
+            role = c("ctb")),
+            person("Marielle", "Hicban",
+            role = c("ctb")),
+            person("Mary", "Martin",
+            role = c("ctb")),
+            person("Pratik", "Patel",
+            role = c("ctb")),
+            person("Meyappan", "Ashok",
+            role = c("ctb")),
+            person("Nhan", "Nguyen",
+            role = c("ctb")),
+            person("Irina", "Gaynanova",
+            email = "irinagn@umich.edu",role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-4116-0268")))
+Description: Implements a wide range of metrics for measuring glucose control and glucose variability based on continuous glucose monitoring data. The list of implemented metrics is summarized in Rodbard (2009) <doi:10.1089/dia.2009.0015>. Additional visualization tools include time-series plots, lasagna plots and ambulatory glucose profile report. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Imports: caTools, dplyr, DT, ggplot2, ggpubr, gridExtra, hms,
+        lubridate, magrittr, patchwork, pheatmap, scales, shiny, stats,
+        tibble, tidyr, utils, zoo, gtable, grid, plotly
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://irinagain.github.io/iglu/
+BugReports: https://github.com/irinagain/iglu/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-06-14 12:57:40 UTC; irinagn
+Author: Elizabeth Chun [aut],
+  Steve Broll [aut],
+  David Buchanan [aut],
+  John Muschelli [aut] (<https://orcid.org/0000-0001-6469-1750>),
+  Nathaniel Fernandes [aut] (<https://orcid.org/0000-0003-0485-0726>),
+  Jung Hoon Seo [ctb],
+  Johnathan Shih [ctb],
+  Jacek Urbanek [ctb],
+  John Schwenck [ctb],
+  Marielle Hicban [ctb],
+  Mary Martin [ctb],
+  Pratik Patel [ctb],
+  Meyappan Ashok [ctb],
+  Nhan Nguyen [ctb],
+  Irina Gaynanova [aut, cre] (<https://orcid.org/0000-0002-4116-0268>)
+Maintainer: Irina Gaynanova <irinagn@umich.edu>
+Repository: CRAN
+Date/Publication: 2024-06-14 14:20:11 UTC

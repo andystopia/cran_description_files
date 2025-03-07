@@ -1,0 +1,41 @@
+Type: Package
+Package: DR.SC
+Title: Joint Dimension Reduction and Spatial Clustering
+Version: 2.7
+Date: 2022-02-25
+Authors@R: 
+    c(person(given = "Wei",
+             family = "Liu",
+             role = c("aut", "cre"),
+             email = "wei.liu@duke-nus.edu.sg"),
+      person(given = "Yi",
+             family = "Yang",
+             role = c("aut")),
+      person(given = "Xingjie",
+             family = "Shi",
+             role = "aut"),
+      person(given = "Jin",
+             family = "Liu",
+             role = "aut"))
+Author: Wei Liu [aut, cre],
+  Yi Yang [aut],
+  Xingjie Shi [aut],
+  Jin Liu [aut]
+Maintainer: Wei Liu <wei.liu@duke-nus.edu.sg>
+Description: Joint dimension reduction and spatial clustering is conducted for
+    Single-cell RNA sequencing and spatial transcriptomics data, and more details can be referred to 
+    Wei Liu, Xu Liao, Yi Yang, Huazhen Lin, Joe Yeong, Xiang Zhou, Xingjie Shi and Jin Liu. (2022) <doi:10.1101/2021.12.25.474153>. It is not only computationally efficient and scalable to the sample size increment, but also is capable of choosing the smoothness parameter and the number of clusters as well.
+License: GPL-3
+Depends: parallel, spatstat.geom, R (>= 4.0.0)
+Imports: CompQuadForm, cowplot, ggplot2, GiRaF, MASS, Matrix, mclust,
+        methods, purrr, S4Vectors, RColorBrewer, Rcpp (>= 1.0.5),
+        Seurat, stats
+Suggests: knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 7.1.1
+Packaged: 2022-02-25 00:20:37 UTC; Liuxianju
+Repository: CRAN
+Date/Publication: 2022-02-25 07:50:11 UTC

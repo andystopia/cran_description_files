@@ -1,0 +1,31 @@
+Package: mvgam
+Title: Multivariate (Dynamic) Generalized Additive Models
+Version: 1.1.0
+Date: 2024-05-03
+Authors@R: person("Nicholas J", "Clark", , "nicholas.j.clark1214@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7131-3301"))
+Description: Fit Bayesian Dynamic Generalized Additive Models to sets of time series. Users can build dynamic nonlinear State-Space models that can incorporate semiparametric effects in observation and process components, using a wide range of observation families. Estimation is performed using Markov Chain Monte Carlo with Hamiltonian Monte Carlo in the software 'Stan'. References: Clark & Wells (2022) <doi:10.1111/2041-210X.13974>.
+URL: https://github.com/nicholasjclark/mvgam,
+        https://nicholasjclark.github.io/mvgam/
+BugReports: https://github.com/nicholasjclark/mvgam/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.6.0), mgcv (>= 1.8-13), Rcpp (>= 0.12.0), brms (>=
+        2.17), marginaleffects, insight (>= 0.19.1), methods
+Imports: rstan (>= 2.29.0), posterior (>= 1.0.0), loo (>= 2.3.1),
+        rstantools (>= 2.1.1), bayesplot (>= 1.5.0), ggplot2 (>=
+        2.0.0), matrixStats, parallel, pbapply, mvnfast, purrr, zoo,
+        scoringRules, smooth, dplyr, magrittr, Matrix, rlang
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: cmdstanr (>= 0.5.0), tweedie, splines2, extraDistr, wrswoR,
+        xts, lubridate, knitr, collapse, rmarkdown, rjags, coda,
+        runjags, usethis, testthat
+Additional_repositories: https://mc-stan.org/r-packages/
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-05-04 02:22:12 UTC; uqnclar2
+Author: Nicholas J Clark [aut, cre] (<https://orcid.org/0000-0001-7131-3301>)
+Maintainer: Nicholas J Clark <nicholas.j.clark1214@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-06 18:50:02 UTC

@@ -1,0 +1,26 @@
+Package: DESP
+Type: Package
+Title: Estimation of Diagonal Elements of Sparse Precision-Matrices
+Version: 0.1
+Date: 2015-05-25
+Authors@R: c(person("Arnak", "Dalalyan", role = c("aut"),
+		     email = "Arnak.Dalalyan@ensae.fr"),
+	      person("Samuel", "Balmand", role = c("aut","cre"),
+		     email = "Samuel.Balmand@ensg.eu"))
+Author: Arnak Dalalyan [aut], Samuel Balmand [aut, cre]
+Maintainer: Samuel Balmand <Samuel.Balmand@ensg.eu>
+Description: Several estimators of the diagonal elements of a sparse precision
+	(inverse covariance) matrix from a sample of Gaussian vectors for a
+	given matrix of estimated marginal regression coefficients.
+	To install gurobi, follow the instructions at 
+	http://user.gurobi.com/download/gurobi-optimizer and 
+	http://www.gurobi.com/documentation/6.0/refman/r_api_overview.html.
+License: GPL-3
+Imports: MASS, Matrix, graph, RBGL, SparseM
+Suggests: Rmosek, gurobi
+LazyLoad: yes
+NeedsCompilation: yes
+SystemRequirements: GNU make
+Packaged: 2015-05-28 15:54:53 UTC; balmand
+Repository: CRAN
+Date/Publication: 2015-05-29 11:10:27

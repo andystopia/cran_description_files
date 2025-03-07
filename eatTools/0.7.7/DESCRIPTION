@@ -1,0 +1,38 @@
+Package: eatTools
+Type: Package
+Title: Miscellaneous Functions for the Analysis of Educational
+        Assessments
+Version: 0.7.7
+Depends: R (>= 4.0.0)
+Imports: stats, data.table, stringi, checkmate
+Authors@R: c(
+    person("Sebastian", "Weirich", email = "sebastian.weirich@iqb.hu-berlin.de", role = c("aut", "cre")),
+    person("Martin", "Hecht", role = c("aut")),
+    person("Karoline", "Sachse", role = c("aut")),
+    person("Benjamin", "Becker", role = c("aut")),
+    person("Nicole", "Mahler", role = c("aut")),
+    person("Edna", "Grewers", role = c("ctb")))
+Description: 
+   Miscellaneous functions for data cleaning and data analysis of educational assessments. Includes functions for descriptive 
+   analyses, character vector manipulations and weighted statistics. Mainly a lightweight dependency for the packages 'eatRep', 
+   'eatGADS', 'eatPrep' and 'eatModel' (which will be subsequently submitted to 'CRAN').
+   The function for defining (weighted) contrasts in weighted effect coding refers to
+   te Grotenhuis et al. (2017) <doi:10.1007/s00038-016-0901-1>.
+   Functions for weighted statistics refer to
+   Wolter (2007) <doi:10.1007/978-0-387-35099-8>.
+License: GPL (>= 2)
+URL: https://github.com/weirichs/eatTools,
+        https://weirichs.github.io/eatTools/
+Suggests: testthat, covr
+NeedsCompilation: no
+RoxygenNote: 7.3.1
+Packaged: 2024-10-11 14:28:46 UTC; Sebastian Weirich
+Author: Sebastian Weirich [aut, cre],
+  Martin Hecht [aut],
+  Karoline Sachse [aut],
+  Benjamin Becker [aut],
+  Nicole Mahler [aut],
+  Edna Grewers [ctb]
+Maintainer: Sebastian Weirich <sebastian.weirich@iqb.hu-berlin.de>
+Repository: CRAN
+Date/Publication: 2024-10-11 18:50:02 UTC

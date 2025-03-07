@@ -1,0 +1,32 @@
+Package: mmstat4
+Title: Access to Teaching Materials from a ZIP File or GitHub
+Version: 0.1.4
+Authors@R: 
+  c(person(given = "Sigbert",
+           family = "Klinke",
+           role = c("aut", "cre"),
+           email = "sigbert@hu-berlin.de",
+           comment = c(ORCID="0000-0003-3337-1863")),
+    person(given = "Jekaterna",
+           family = "Zukovska",
+           role = "ctb",
+           email = "jekaterina.zukovska@hu-berlin.de",
+           comment = c(ORCID="0000-0003-3337-1863")))
+Description: Provides access to teaching materials for various statistics courses, including R programs, 
+    Shiny apps, data, and PDF/HTML documents. These materials are stored on the Internet as a ZIP file 
+    (e.g., in a GitHub repository) and can be downloaded and displayed or run locally. The content of the ZIP file 
+    is temporarily or permanently stored. By default, the package uses the GitHub repository 
+    'sigbertklinke/mmstat4.data.' Additionally, the package includes some auxiliary functions.
+License: GPL-3
+Encoding: UTF-8
+Imports: digest, tcltk, rappdirs, rio, rstudioapi, shiny
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-01 14:35:52 UTC; sk
+Author: Sigbert Klinke [aut, cre] (<https://orcid.org/0000-0003-3337-1863>),
+  Jekaterna Zukovska [ctb] (<https://orcid.org/0000-0003-3337-1863>)
+Maintainer: Sigbert Klinke <sigbert@hu-berlin.de>
+Repository: CRAN
+Date/Publication: 2023-05-02 09:10:02 UTC

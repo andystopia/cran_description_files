@@ -1,0 +1,37 @@
+Package: wql
+Type: Package
+Title: Exploring Water Quality Monitoring Data
+Version: 0.4.9
+Authors@R: c(
+  person("Alan", "Jassby", role = c("aut")),
+  person("James", "Cloern", role = c("ctb")),
+  person("Joseph", "Stachelek", role = c("ctb", "cre"), email = "stachel2@msu.edu")
+  )
+Maintainer: Joseph Stachelek <stachel2@msu.edu>
+URL: https://github.com/jsta/wql
+BugReports: https://github.com/jsta/wql/issues
+Description: Functions to assist in the processing and
+    exploration of data from environmental monitoring programs.
+    The package name stands for "water quality" and reflects the
+    original focus on time series data for physical and chemical
+    properties of water, as well as the biota. Intended for
+    programs that sample approximately monthly, quarterly or
+    annually at discrete stations, a feature of many legacy data
+    sets. Most of the functions should be useful for analysis of
+    similar-frequency time series regardless of the subject
+    matter.
+Depends: R (>= 3.0.0)
+Imports: graphics, grDevices, methods, stats, ggplot2 (>= 1.0),
+        reshape2, zoo
+LazyData: yes
+License: GPL-2
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+Packaged: 2017-07-04 19:21:11 UTC; jose
+Author: Alan Jassby [aut],
+  James Cloern [ctb],
+  Joseph Stachelek [ctb, cre]
+Repository: CRAN
+Date/Publication: 2017-07-04 20:23:24 UTC

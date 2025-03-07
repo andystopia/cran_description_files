@@ -1,0 +1,50 @@
+Package: InformativeCensoring
+Type: Package
+Title: Multiple Imputation for Informative Censoring
+Version: 0.3.5
+Authors@R: c(
+  person("David", "Ruau", 
+         email='davidruau@gmail.com',
+         role=c("aut")),
+  person("Nikolas", "Burkoff", 
+         role=c("aut")),
+  person("Jonathan", "Bartlett", 
+         email='j.w.bartlett@bath.ac.uk',
+         role=c("aut","cre")),
+  person("Dan", "Jackson", 
+         email='daniel.jackson1@astrazeneca.com',
+         role=c("aut")),
+  person("Edmund", "Jones", 
+         email='epaj2@medschl.cam.ac.uk',
+         role=c("aut")),
+  person("Martin", "Law", 
+         email='martin.law@mrc-bsu.cam.ac.uk',
+         role=c("aut")),
+  person("Paul", "Metcalfe", 
+         email='paul.metcalfe@astrazeneca.com',
+         role=c("aut"))
+  )
+Maintainer: Jonathan Bartlett <j.w.bartlett@bath.ac.uk>
+Author: David Ruau [aut],
+  Nikolas Burkoff [aut],
+  Jonathan Bartlett [aut, cre],
+  Dan Jackson [aut],
+  Edmund Jones [aut],
+  Martin Law [aut],
+  Paul Metcalfe [aut]
+Description: Multiple Imputation for Informative Censoring.
+    This package implements two methods. Gamma Imputation
+    described in <DOI:10.1002/sim.6274> and Risk Score Imputation
+    described in <DOI:10.1002/sim.3480>.
+License: GPL (>= 2) | file LICENSE
+LazyLoad: yes
+Depends: R (>= 3.1.2), survival (>= 2.36-1)
+Imports: boot, dplyr (>= 0.4.3), parallel
+Suggests: knitr, testthat
+VignetteBuilder: knitr
+URL: https://github.com/jwb133/InformativeCensoring
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-07-23 16:42:21 UTC; JWB-beast
+Repository: CRAN
+Date/Publication: 2020-07-24 09:42:20 UTC

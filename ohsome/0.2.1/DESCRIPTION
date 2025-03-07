@@ -1,0 +1,36 @@
+Package: ohsome
+Title: An 'ohsome API' Client
+Version: 0.2.1
+Authors@R: c(
+    person("Heidelberg Institute for Geoinformation Technology (HeiGIT) gGmbH", role = "cph"),
+    person("Oliver", "Fritz", , "oliver.fritz@heigit.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6324-7295"))
+  )
+Description: A client that grants access to the power of the 'ohsome API'
+    from R. It lets you analyze the rich data source of the 
+    'OpenStreetMap (OSM)' history. You can retrieve the geometry of 'OSM' 
+    data at specific points in time, and you can get aggregated statistics 
+    on the evolution of 'OSM' elements and specify your own temporal, 
+    spatial and/or thematic filters.
+License: LGPL (>= 3)
+URL:
+        https://github.com/GIScience/ohsome-r,https://docs.ohsome.org/ohsome-api/stable/
+BugReports: https://github.com/GIScience/ohsome-r/issues
+Depends: R (>= 2.10)
+Imports: geojsonsf, httr, jsonlite, readr, sf, utils
+Suggests: dplyr, ggplot2, httptest, janitor, knitr, mapview,
+        nominatimlite, osmdata, rmarkdown, spelling, testthat (>=
+        3.0.0), tmaptools, tidyr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2023-02-21 13:46:07 UTC; ofritz
+Author: Heidelberg Institute for Geoinformation Technology (HeiGIT) gGmbH [cph],
+  Oliver Fritz [aut, cre] (<https://orcid.org/0000-0001-6324-7295>)
+Maintainer: Oliver Fritz <oliver.fritz@heigit.org>
+Repository: CRAN
+Date/Publication: 2023-02-22 14:50:02 UTC

@@ -1,0 +1,34 @@
+Package: iDOVE
+Type: Package
+Title: Durability of Vaccine Efficacy Against SARS-CoV-2 Infection
+Version: 1.3
+Date: 2021-09-14
+Authors@R: c(person("Yu", "Gu", role = "aut"),
+             person("Shannon T.", "Holloway", role = c("aut", "cre"),
+                     email = "sthollow@ncsu.edu"),
+             person("Dan-Yu", "Lin", role = "aut"))
+Author: Yu Gu [aut],
+  Shannon T. Holloway [aut, cre],
+  Dan-Yu Lin [aut]
+Maintainer: Shannon T. Holloway <sthollow@ncsu.edu>
+Description: Implements a nonparametric maximum likelihood method for assessing 
+  potentially time-varying vaccine efficacy (VE) against SARS-CoV-2 infection 
+  under staggered enrollment and time-varying community transmission, allowing 
+  crossover of placebo volunteers to the vaccine arm. 
+  Lin, D. Y., Gu, Y., Zeng, D., Janes, H. E., and Gilbert, P. B. (2021) 
+  <doi:10.1093/cid/ciab630>.
+License: GPL-2
+Encoding: UTF-8
+Suggests: rmarkdown
+VignetteBuilder: utils, knitr
+Imports: Rcpp (>= 1.0.4.6), methods, stats, graphics, knitr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.1
+Collate: 'VEplot.R' 'VEcal.R' 'postProcess.R' 'EMmeth.R'
+        'RcppExports.R' 'verifyInputs.R' 'idove.R' 'idoveData.R'
+        'intCens.R' 'plot.iDOVE.R' 'print.iDOVE.R'
+NeedsCompilation: yes
+Packaged: 2021-09-14 15:01:47 UTC; sthollow
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2021-09-15 09:00:05 UTC

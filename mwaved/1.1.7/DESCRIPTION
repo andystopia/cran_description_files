@@ -1,0 +1,27 @@
+Package: mwaved
+Type: Package
+Title: Multichannel Wavelet Deconvolution with Additive Long Memory
+        Noise
+Version: 1.1.7
+Date: 2019-11-06
+Authors@R: c(person(given = "Justin Rory", family = "Wishart", role = c("aut", "cre"), email = "justin.r.wishart@gmail.com", comment = c(ORCID = "0000-0002-8235-1845")))
+Description: Computes the Wavelet deconvolution estimate of a common signal
+    present in multiple channels that have possible different levels of blur
+    and long memory additive error, see Kulik, Sapatinas and Wishart (2015), <doi:10.1016/j.acha.2014.04.004>.
+Encoding: UTF-8
+License: GPL
+LinkingTo: Rcpp
+Imports: Rcpp, shiny, grid
+SystemRequirements: fftw3 (>= 3.3.4)
+NeedsCompilation: yes
+Suggests: fracdiff, ggplot2, testthat, knitr, rmarkdown
+URL: https://github.com/jrwishart/mwaved
+BugReports: https://github.com/jrwishart/mwaved/issues
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Packaged: 2019-11-09 09:27:22 UTC; justinw
+Author: Justin Rory Wishart [aut, cre]
+    (<https://orcid.org/0000-0002-8235-1845>)
+Maintainer: Justin Rory Wishart <justin.r.wishart@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-11-10 11:30:02 UTC

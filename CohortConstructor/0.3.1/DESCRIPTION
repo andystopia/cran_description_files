@@ -1,0 +1,55 @@
+Package: CohortConstructor
+Title: Build and Manipulate Study Cohorts Using a Common Data Model
+Version: 0.3.1
+Authors@R: c(
+    person("Edward", "Burn", , "edward.burn@ndorms.ox.ac.uk", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9286-1128")),
+    person("Marti", "Catala", , "marti.catalasabate@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0000-0003-3308-9905")),
+    person("Nuria", "Mercade-Besora", , "nuria.mercadebesora@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0006-7948-3747")),
+    person("Marta", "Alcalde-Herraiz", , "marta.alcaldeherraiz@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0002-4405-1814")),
+    person("Mike", "Du", , "mike.du@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0000-0002-9517-8834")),
+    person("Yuchen", "Guo", email = "yuchen.guo@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0000-0002-0847-4855")),
+    person("Xihang", "Chen", , "xihang.chen@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0001-8112-8959")),
+    person("Kim", "Lopez-Guell", , "kim.lopez@spc.ox.ac.uk", 
+    role = "aut", comment = c(ORCID = "0000-0002-8462-8668")),
+    person("Elin", "Rowlands", , "elin.rowlands@ndorms.ox.ac.uk", 
+    role = "aut", comment = c(ORCID = "0009-0005-5166-0417")))
+Description: Create and manipulate study cohorts in data mapped to the 
+    Observational Medical Outcomes Partnership Common Data Model.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: CDMConnector (>= 1.3.1), checkmate, cli, dbplyr (>= 2.5.0),
+        dplyr, glue, magrittr, omopgenerics (>= 0.2.1), PatientProfiles
+        (>= 1.2.0), purrr, rlang, tidyr, utils
+Suggests: DBI, CodelistGenerator, DrugUtilisation, duckdb, knitr,
+        rmarkdown, testthat (>= 3.0.0), tibble, stringr,
+        IncidencePrevalence, omock (>= 0.2.0), covr, RPostgres, odbc,
+        CohortCharacteristics, ggplot2, DiagrammeR, visOmopResults, gt,
+        scales, here, ggpubr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+VignetteBuilder: knitr
+Depends: R (>= 4.1)
+URL: https://ohdsi.github.io/CohortConstructor/
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-10-08 08:03:36 UTC; eburn
+Author: Edward Burn [aut, cre] (<https://orcid.org/0000-0002-9286-1128>),
+  Marti Catala [aut] (<https://orcid.org/0000-0003-3308-9905>),
+  Nuria Mercade-Besora [aut] (<https://orcid.org/0009-0006-7948-3747>),
+  Marta Alcalde-Herraiz [aut] (<https://orcid.org/0009-0002-4405-1814>),
+  Mike Du [aut] (<https://orcid.org/0000-0002-9517-8834>),
+  Yuchen Guo [aut] (<https://orcid.org/0000-0002-0847-4855>),
+  Xihang Chen [aut] (<https://orcid.org/0009-0001-8112-8959>),
+  Kim Lopez-Guell [aut] (<https://orcid.org/0000-0002-8462-8668>),
+  Elin Rowlands [aut] (<https://orcid.org/0009-0005-5166-0417>)
+Maintainer: Edward Burn <edward.burn@ndorms.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-10-08 08:40:02 UTC

@@ -1,0 +1,53 @@
+Package: npde
+Title: Normalised Prediction Distribution Errors for Nonlinear
+        Mixed-Effect Models
+Version: 3.2
+Date: 2021-12-10
+Authors@R: c(person(given = "Emmanuelle",
+           family = "Comets",
+           role = c("aut", "cre"),
+           email = "emmanuelle.comets@inserm.fr",
+           comment = c(ORCID = "0000-0002-9150-9886")),
+    person(given = "Karl",
+           family = "Brendel",
+           role = "ctb"),
+    person(given = "Thi Huyen Tram",
+           family = "Nguyen",
+           role = "ctb"),
+    person(given="Marc", 
+            family="Cerou", 
+            role = "ctb"),
+    person(given = "Romain",
+           family = "Leroux",
+           role = "ctb"),
+    person(given = "France",
+           family = "Mentre",
+           role = "ctb"))
+Maintainer: Emmanuelle Comets <emmanuelle.comets@inserm.fr>
+Description: Provides routines to compute normalised prediction distribution errors, a metric designed to evaluate non-linear mixed effect models such as those used in pharmacokinetics and pharmacodynamics.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: yes
+Imports: methods, scales, ggplot2, mclust, grid, gridExtra, testthat,
+        rlang
+RoxygenNote: 7.1.2
+Collate: 'NpdeSimData.R' 'NpdeData.R' 'aaa_generics.R'
+        'NpdeData-methods.R' 'NpdeRes.R' 'NpdeRes-methods.R'
+        'NpdeObject.R' 'NpdeObject-methods.R' 'compute_distribution.R'
+        'compute_npde.R' 'compute_pd.R' 'compute_ploq.R' 'mainNpde.R'
+        'npde.R' 'npdeControl.R' 'plotNpde-auxDistPlot.R'
+        'plotNpde-auxScatter.R' 'plotNpde-auxScatterPlot.R'
+        'plotNpde-binningPI.R' 'plotNpde-covplot.R'
+        'plotNpde-distributionPlot.R' 'plotNpde-methods.R'
+        'plotNpde-plotFunctions.R' 'plotNpde-scatterplot.R'
+NeedsCompilation: no
+Packaged: 2021-12-20 16:58:02 UTC; eco
+Author: Emmanuelle Comets [aut, cre] (<https://orcid.org/0000-0002-9150-9886>),
+  Karl Brendel [ctb],
+  Thi Huyen Tram Nguyen [ctb],
+  Marc Cerou [ctb],
+  Romain Leroux [ctb],
+  France Mentre [ctb]
+Repository: CRAN
+Date/Publication: 2021-12-20 17:30:02 UTC

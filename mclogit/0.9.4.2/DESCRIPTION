@@ -1,0 +1,27 @@
+Package: mclogit
+Type: Package
+Title: Multinomial Logit Models, with or without Random Effects or
+        Overdispersion
+Version: 0.9.4.2
+Date: 2022-04-14
+Author: Martin Elff
+Maintainer: Martin Elff <mclogit@elff.eu>
+Description: Provides estimators for multinomial logit models in their
+    conditional logit and baseline logit variants, with or without random effects,
+    with or without overdispersion. 
+    Random effects models are estimated using the PQL technique (based on a Laplace approximation)
+    or the MQL technique (based on a Solomon-Cox approximation). Estimates should be treated
+    with caution if the group sizes are small.
+License: GPL-2
+Depends: stats, Matrix
+Imports: memisc, methods
+Suggests: MASS, nnet
+Enhances: emmeans
+LazyLoad: Yes
+URL: http://mclogit.elff.eu,https://github.com/melff/mclogit/
+BugReports: https://github.com/melff/mclogit/issues
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-04-19 15:39:59 UTC; elff
+Repository: CRAN
+Date/Publication: 2022-04-19 16:22:35 UTC

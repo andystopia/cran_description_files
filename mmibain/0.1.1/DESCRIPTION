@@ -1,0 +1,37 @@
+Package: mmibain
+Title: Bayesian Informative Hypotheses Evaluation Web Applications
+Version: 0.1.1
+Authors@R: c(
+    person("Mackson", "Ncube", , "macksonncube.stats@gmail.com", role = c("aut", "cre")),
+    person("mightymetrika, LLC", role = c("cph", "fnd"))
+  )
+Description: Researchers often have expectations about the relations between means
+    of different groups or standardized regression coefficients; using informative
+    hypothesis testing to incorporate these expectations into the analysis through
+    order constraints increases statistical power
+    Vanbrabant and Rosseel (2020) <doi:10.4324/9780429273872-14>. Another valuable
+    tool, the Bayes factor, can evaluate evidence for multiple hypotheses without
+    concerns about multiple testing, and can be used in Bayesian updating
+    Hoijtink, Mulder, van Lissa & Gu (2019) <doi:10.1037/met0000201>. The 'bain'
+    R package enables informative hypothesis testing using the Bayes factor. The
+    'mmibain' package provides 'shiny' web applications based on 'bain'. The
+    RepliCrisis() function launches a 'shiny' card game to simulate the evaluation
+    of replication studies while the mmibain() function launches a 'shiny'
+    application to fit Bayesian informative hypotheses evaluation models from
+    'bain'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/mightymetrika/mmibain
+BugReports: https://github.com/mightymetrika/mmibain/issues
+Imports: bain, broom, car, e1071, igraph, lavaan, mmcards, psych,
+        shiny, shinythemes
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-08 15:53:05 UTC; Administrator
+Author: Mackson Ncube [aut, cre],
+  mightymetrika, LLC [cph, fnd]
+Maintainer: Mackson Ncube <macksonncube.stats@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-08 20:00:02 UTC

@@ -1,0 +1,35 @@
+Package: read.gt3x
+Type: Package
+Title: Parse 'Actigraph' 'GT3X'/'GT3X+' 'Accelerometer' Data
+Version: 1.0.1
+Authors@R: 
+    c(person(given = "Tuomo",
+             family = "Nieminen",
+             role = c("aut", "cre"),
+             email = "tuomo.a.nieminen@gmail.com"),
+      person(given = "John",
+             family = "Muschelli",
+             role = "aut",
+             email = "muschellij2@gmail.com",
+             comment = c(ORCID = "0000-0001-6469-1750")))
+Description: Implements a high performance C++ parser 
+    for 'ActiGraph' 'GT3X'/'GT3X+' data format (with extension '.gt3x') 
+    for 'accelerometer' samples. Activity samples can be easily read into a
+    matrix or data.frame.  This allows for storing the raw 'accelerometer' 
+    samples in the original binary format to reserve space.
+License: EUPL
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+Imports: Rcpp, utils, R.utils, tools
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0), data.table, zoo,
+        readr, lubridate, zip
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-01-06 22:23:54 UTC; tuomo
+Author: Tuomo Nieminen [aut, cre],
+  John Muschelli [aut] (<https://orcid.org/0000-0001-6469-1750>)
+Maintainer: Tuomo Nieminen <tuomo.a.nieminen@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-08 13:20:05 UTC

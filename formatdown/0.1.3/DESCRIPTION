@@ -1,0 +1,35 @@
+Package: formatdown
+Title: Formatting Tools for 'rmarkdown' Documents
+Version: 0.1.3
+Language: en-US
+Authors@R: person("Richard", "Layton", email="graphdoctor@gmail.com", role=c("aut", "cre"))
+Description: Provides a small set of tools for formatting tasks when creating 
+    documents in R Markdown or Quarto Markdown. Convert the elements of a 
+    numerical vector to character strings in one of several forms: powers-of-ten 
+    notation in engineering or scientific form delimited for rendering as inline 
+    equations; integer or decimal notation delimited for equation rendering; 
+    numbers with measurement units (non-delimited) where units are selected to 
+    eliminate the need for powers-of-ten or scientific notation. Useful for 
+    rendering a numerical scalar in an inline R code chunk as well as formatting 
+    columns of data frames displayed in a table. 
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+LazyDataCompression: bzip2
+RoxygenNote: 7.2.3
+Imports: checkmate, data.table, units, wrapr
+Suggests: covr, knitr, rmarkdown, tinytest
+VignetteBuilder: knitr
+URL: https://github.com/graphdr/formatdown/,
+        https://graphdr.github.io/formatdown/,
+        https://CRAN.R-project.org/package=formatdown
+BugReports: https://github.com/graphdr/formatdown/issues
+Collate: 'data.R' 'utils.R' 'format_decimal.R' 'format_power.R'
+        'format_text.R' 'format_units.R' 'formatdown-package.R'
+NeedsCompilation: no
+Packaged: 2024-03-15 15:20:53 UTC; layto
+Author: Richard Layton [aut, cre]
+Maintainer: Richard Layton <graphdoctor@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-15 15:50:04 UTC

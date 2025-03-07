@@ -1,0 +1,26 @@
+Package: renz
+Type: Package
+Title: R-Enzymology
+Version: 0.1.1
+Author: Juan Carlos Aledo
+Maintainer: Juan Carlos Aledo <caledo@uma.es>
+Description: Contains utilities for the analysis of Michaelian kinetic data. Beside the classical linearization 
+	methods (Lineweaver-Burk, Eadie-Hofstee, Hanes-Woolf and Eisenthal-Cornish-Bowden), features include the 
+	ability to carry out weighted regression analysis that, in most cases, substantially improves the estimation 
+	of kinetic parameters (Aledo (2021) <doi:10.1002/bmb.21522>). To avoid data transformation and the potential
+	biases introduced by them, the package also offers functions to directly fitting data to the Michaelis-Menten 
+	equation, either using ([S], v) or (time, [S]) data. Utilities to simulate substrate progress-curves (making 
+	use of the Lambert W function) are also provided. The package is accompanied of vignettes that aim to orientate
+	the user in the choice of the most suitable method to estimate the kinetic parameter of an Michaelian enzyme.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 4.0.0)
+Imports: graphics, stats, VGAM
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-12-02 10:39:34 UTC; JCA
+Repository: CRAN
+Date/Publication: 2021-12-02 13:50:02 UTC

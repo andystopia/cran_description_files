@@ -1,0 +1,37 @@
+Package: icrf
+Title: Interval Censored Recursive Forests
+Version: 1.0.0
+Date: 2019-12-25
+Depends: R (>= 3.5.0), stats
+Imports: Icens
+Suggests: survival, ggplot2
+Authors@R: c(person(given = c("Hunyong"), family = "Cho", email = "hunycho@live.unc.edu", role = c("aut", "cre")),
+            person(given = c("Nicholas", "P"), family = "Jewell", role = c("aut")),
+            person(given = c("Michael", "R"), family = "Kosorok", role = c("aut")),
+            person("Leo", "Breiman", role = "ctb", comment = "Author of incldued randomForest C codes"),
+            person("Adele", "Cutler", role = "ctb", comment = "Author of included randomForest Fortran codes"),
+            person("Andy", "Liaw", role = "ctb", comment = "Author of included randomForest R codes"),
+            person("Matthew", "Wiener", role = "ctb", comment = "Author of included randomForest R codes"),
+            person("Merck & Co. Inc.", role = "cph", comment = "Copyright holder of included randomForest R codes"),
+            person("The R Foundation", role = "cph", comment = "Copyright holder of included ksmooth C codes"))
+Description: Implements interval censored recursive forests (ICRF) based on Cho, Jewell, and Kosorok (2020+). 
+            ICRF is a variant of random forests where the outcome variable is interval censored survival data.
+            It can be used for usual right censored data and current status data as well.
+            A recursion technique is used to improve accuracy and smoothed survival curves are provided.
+Maintainer: Hunyong Cho <hunycho@live.unc.edu>
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2020-01-12 11:28:57 UTC; hycho
+Repository: CRAN
+Date/Publication: 2020-01-23 15:30:02 UTC
+RoxygenNote: 6.1.1
+Author: Hunyong Cho [aut, cre],
+  Nicholas P Jewell [aut],
+  Michael R Kosorok [aut],
+  Leo Breiman [ctb] (Author of incldued randomForest C codes),
+  Adele Cutler [ctb] (Author of included randomForest Fortran codes),
+  Andy Liaw [ctb] (Author of included randomForest R codes),
+  Matthew Wiener [ctb] (Author of included randomForest R codes),
+  Merck & Co. Inc. [cph] (Copyright holder of included randomForest R
+    codes),
+  The R Foundation [cph] (Copyright holder of included ksmooth C codes)

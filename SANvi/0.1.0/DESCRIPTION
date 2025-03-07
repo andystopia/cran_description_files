@@ -1,0 +1,35 @@
+Package: SANvi
+Type: Package
+Title: Fitting Shared Atoms Nested Models via Variational Bayes
+Version: 0.1.0
+Date: 2023-10-09
+Authors@R: c(
+    person("Francesco", "Denti", ,"francescodenti.personal@gmail.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0001-5034-7414")),
+    person("Laura", "D'Angelo", ,"laura.dangelo@live.com", 
+    role = c("aut"),
+    comment = c(ORCID = "0000-0003-2978-4702"))
+  )
+Maintainer: Francesco Denti <francescodenti.personal@gmail.com>
+URL: https://github.com/fradenti/SANvi
+BugReports: https://github.com/fradenti/SANvi/issues
+Description: An efficient tool for fitting the nested common and shared atoms models using variational Bayes approximate inference for fast computation. Specifically, the package implements the common atoms model (Denti et al., 2023), its finite version (D'Angelo et al., 2023), and a hybrid finite-infinite model. 
+            All models use Gaussian mixtures with a normal-inverse-gamma prior distribution on the parameters. Additional functions are provided to help analyze the results of the fitting procedure.  
+            References:   
+            Denti, Camerlenghi, Guindani, Mira (2023) <doi:10.1080/01621459.2021.1933499>,    
+            D’Angelo, Canale, Yu, Guindani (2023) <doi:10.1111/biom.13626>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: Rcpp, matrixStats
+Depends: scales, RColorBrewer
+LinkingTo: Rcpp, RcppArmadillo
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2023-10-09 15:24:17 UTC; francescodenti
+Author: Francesco Denti [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5034-7414>),
+  Laura D'Angelo [aut] (<https://orcid.org/0000-0003-2978-4702>)
+Repository: CRAN
+Date/Publication: 2023-10-10 17:20:05 UTC

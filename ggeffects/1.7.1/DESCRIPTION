@@ -1,0 +1,51 @@
+Package: ggeffects
+Type: Package
+Encoding: UTF-8
+Title: Create Tidy Data Frames of Marginal Effects for 'ggplot' from
+        Model Outputs
+Version: 1.7.1
+Authors@R: c(
+      person("Daniel", "Lüdecke", role = c("aut", "cre"), email = "d.luedecke@uke.de", comment = c(ORCID = "0000-0002-8895-3206")),
+      person("Frederik", "Aust", role = "ctb", comment = c(ORCID = "0000-0003-4900-788X")),
+      person("Sam", "Crawley", role = "ctb", email = "sam@crawley.nz", comment = c(ORCID = "0000-0002-7847-0411")),
+      person(c("Mattan", "S."), "Ben-Shachar", role = "ctb", email = "matanshm@post.bgu.ac.il", comment = c(ORCID = "0000-0002-4287-4801")),
+      person(c("Sean", "C."), "Anderson", role = "ctb", email = "sean@seananderson.ca", comment = c(ORCID = "0000-0001-9563-1937"))
+    )
+Maintainer: Daniel Lüdecke <d.luedecke@uke.de>
+Description: Compute marginal effects and adjusted predictions from statistical
+    models and returns the result as tidy data frames. These data frames are
+    ready to use with the 'ggplot2'-package. Effects and predictions can be
+    calculated for many different models. Interaction terms, splines and
+    polynomial terms are also supported. The main functions are ggpredict(),
+    ggemmeans() and ggeffect(). There is a generic plot()-method to plot the
+    results using 'ggplot2'.
+Depends: R (>= 3.6)
+Imports: graphics, insight (>= 0.19.8), stats, utils
+Suggests: AER, aod, bayestestR, betareg, brglm2, brms, broom, car,
+        carData, clubSandwich, datawizard (>= 0.9.0), effects (>=
+        4.2-2), emmeans (>= 1.8.9), fixest, gam, gamlss, gamm4, gee,
+        geepack, ggplot2, ggrepel, GLMMadaptive, glmmTMB (>= 1.1.7),
+        gridExtra, gt, haven, htmltools, httr, jsonlite, knitr, lme4
+        (>= 1.1-35), logistf, marginaleffects (>= 0.19.0), MASS,
+        Matrix, mice, MCMCglmm, mgcv, nestedLogit (>= 0.3.0), nlme,
+        nnet, ordinal, parameters, parsnip, patchwork, pscl, quantreg,
+        rmarkdown, rms, robustbase, rstanarm, rstantools, sandwich,
+        sdmTMB (>= 0.4.0), see, sjlabelled (>= 1.1.2), sjstats, survey,
+        survival, testthat, tibble, tinytable (>= 0.1.0), vdiffr,
+        withr, VGAM
+URL: https://strengejacke.github.io/ggeffects/
+BugReports: https://github.com/strengejacke/ggeffects/issues/
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+License: MIT + file LICENSE
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-09-01 18:43:28 UTC; Daniel
+Author: Daniel Lüdecke [aut, cre] (<https://orcid.org/0000-0002-8895-3206>),
+  Frederik Aust [ctb] (<https://orcid.org/0000-0003-4900-788X>),
+  Sam Crawley [ctb] (<https://orcid.org/0000-0002-7847-0411>),
+  Mattan S. Ben-Shachar [ctb] (<https://orcid.org/0000-0002-4287-4801>),
+  Sean C. Anderson [ctb] (<https://orcid.org/0000-0001-9563-1937>)
+Repository: CRAN
+Date/Publication: 2024-09-01 20:00:02 UTC

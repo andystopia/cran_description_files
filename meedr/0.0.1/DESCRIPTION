@@ -1,0 +1,28 @@
+Package: meedr
+Title: Macroeconomic Expectations Data in R using the Central Bank of
+        Brazil API
+Version: 0.0.1
+Authors@R: 
+    person(given = "Fernando",
+           family = "da Silva",
+           role = c("aut", "cre"),
+           email = "fernando@fortietwo.com",
+           comment = c(ORCID = "0000-0002-7491-6930"))
+Description: Provides quick and easy access to market expectations data to the main macroeconomic indicators in the Focus report, made available by the Central Bank of Brazil through the Expectations System data API <https://dadosabertos.bcb.gov.br/>. This package offers an R interface to the API and other advantages, such as using a caching system and the option to use all the machine's cores (parallel computing).
+License: MIT + file LICENSE
+URL: https://github.com/schoulten/meedr
+BugReports: https://github.com/schoulten/meedr/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: dplyr, furrr, future, httr, jsonlite, memoise, purrr,
+        lubridate
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, utf8
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-03-16 13:15:22 UTC; ferna
+Author: Fernando da Silva [aut, cre] (<https://orcid.org/0000-0002-7491-6930>)
+Maintainer: Fernando da Silva <fernando@fortietwo.com>
+Repository: CRAN
+Date/Publication: 2021-03-18 09:00:02 UTC

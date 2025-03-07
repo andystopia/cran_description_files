@@ -1,0 +1,29 @@
+Package: ecopower
+Type: Package
+Title: Power Estimates and Equivalence Testing for Multivariate Data
+Version: 0.1.0
+Authors@R: c(
+    person("Ben", "Maslen", role = "aut"),
+    person("Michelle", "Lim", email = "michelle.lim@unsw.edu.au", role = c("aut", "cre"))
+    )
+Description: Estimates power by simulation for multivariate
+    abundance data to be used for sample size estimates. Multivariate
+    equivalence testing by simulation from a Gaussian copula model.
+    The package also provides functions for parameterising multivariate effect
+    sizes and simulating multivariate abundance data jointly. The discrete
+    Gaussian copula approach is described in
+    Popovic et al. (2018) <doi:10.1016/j.jmva.2017.12.002>.
+Depends: R (>= 3.5.0)
+Imports: parallel, mvabund, ecoCopula, stats
+Encoding: UTF-8
+LazyData: true
+License: LGPL (>= 2.1)
+RoxygenNote: 7.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2021-09-02 14:44:42 UTC; michelle
+Author: Ben Maslen [aut],
+  Michelle Lim [aut, cre]
+Maintainer: Michelle Lim <michelle.lim@unsw.edu.au>
+Repository: CRAN
+Date/Publication: 2021-09-06 08:10:02 UTC

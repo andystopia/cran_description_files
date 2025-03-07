@@ -1,0 +1,27 @@
+Package: fpmoutliers
+Type: Package
+Title: Frequent Pattern Mining Outliers
+Version: 0.1.0
+Authors@R: person("Jaroslav", "Kuchar", email = "jaroslav.kuchar@gmail.com", role = c("aut", "cre"))
+Author: Jaroslav Kuchar [aut, cre]
+Maintainer: Jaroslav Kuchar <jaroslav.kuchar@gmail.com>
+URL: https://github.com/jaroslav-kuchar/fpmoutliers
+BugReports: https://github.com/jaroslav-kuchar/fpmoutliers/issues
+Description: Algorithms for detection of outliers based on frequent pattern
+    mining. Such algorithms follow the paradigm: if an instance contains more frequent patterns, 
+    it means that this data instance is unlikely to be an anomaly (He Zengyou, Xu Xiaofei, Huang 
+    Zhexue Joshua, Deng Shengchun (2005) <doi:10.2298/CSIS0501103H>).
+    The package implements a list of existing state of the art algorithms as well as other published 
+    approaches: FPI, WFPI, FPOF, FPCOF, LFPOF, MFPOF, WCFPOF and WFPOF.
+License: Apache License (== 2.0) | file LICENSE
+LazyData: TRUE
+Encoding: UTF-8
+Depends: R (>= 3.3.0)
+Imports: pmml, XML, Matrix, R.utils, arules (>= 1.5-4), foreach,
+        doParallel, parallel, methods, pryr
+RoxygenNote: 6.0.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2017-11-21 20:31:02 UTC; kuchar
+Repository: CRAN
+Date/Publication: 2017-11-22 09:25:49 UTC

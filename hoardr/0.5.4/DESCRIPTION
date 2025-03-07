@@ -1,0 +1,33 @@
+Package: hoardr
+Type: Package
+Title: Manage Cached Files
+Description: Suite of tools for managing cached files, targeting
+    use in other R packages. Uses 'rappdirs' for cross-platform paths.
+    Provides utilities to manage cache directories, including targeting
+    files by path or by key; cached directories can be compressed and
+    uncompressed easily to save disk space.
+Version: 0.5.4
+Authors@R: c(person("Scott", "Chamberlain", role = "aut", 
+    comment = c(ORCID="0000-0003-2542-2202")),
+    person("Tamás", "Stirling", role = c("ctb", "cre"),
+    email = "stirling.tamas@gmail.com"))
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/hoardr/,
+        https://github.com/ropensci/hoardr
+BugReports: https://github.com/ropensci/hoardr/issues
+VignetteBuilder: knitr
+Encoding: UTF-8
+Imports: R6, rappdirs, digest
+Suggests: testthat, knitr, rmarkdown
+RoxygenNote: 7.2.3
+X-schema.org-applicationCategory: Data
+X-schema.org-keywords: caching, data, files, xml, pdf
+X-schema.org-isPartOf: https://ropensci.org
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-01-23 09:10:25 UTC; tamas
+Author: Scott Chamberlain [aut] (<https://orcid.org/0000-0003-2542-2202>),
+  Tamás Stirling [ctb, cre]
+Maintainer: Tamás Stirling <stirling.tamas@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-23 09:40:06 UTC

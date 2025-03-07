@@ -1,0 +1,20 @@
+Package: Temporal
+Title: Parametric Time to Event Analysis
+Version: 0.2.0
+Authors@R: person("Zachary", "McCaw", email = "zmccaw@alumni.harvard.edu", role = c("aut", "cre"))
+Description: Performs maximum likelihood based estimation and inference on time to event data, possibly subject to non-informative right censoring. fitParaSurv() provides maximum likelihood estimates of model parameters and distributional characteristics, including the mean, median, variance, and restricted mean. compParaSurv() compares the mean, median, and restricted mean survival experiences of two treatment groups. Candidate distributions include the exponential, gamma, generalized gamma, log-normal, and Weibull. 
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: expint, methods, numDeriv, plyr, Rcpp (>= 1.0.3), stats
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-03-13 20:35:46 UTC; zmccaw
+Author: Zachary McCaw [aut, cre]
+Maintainer: Zachary McCaw <zmccaw@alumni.harvard.edu>
+Repository: CRAN
+Date/Publication: 2020-03-16 12:40:05 UTC

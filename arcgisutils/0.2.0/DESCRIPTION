@@ -1,0 +1,39 @@
+Package: arcgisutils
+Title: ArcGIS Utility Functions
+Version: 0.2.0
+Authors@R: c(
+    person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9910-865X")),
+    person("Kenneth", "Vernon", , "kenneth.b.vernon@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-0098-5092")),
+    person("Martha", "Bass", role = "ctb",
+           comment = c(ORCID = "0009-0004-0268-5426"))
+  )
+Description: Developer oriented utility functions designed to be used as
+    the building blocks of R packages that work with ArcGIS Location
+    Services. It provides functionality for authorization, Esri JSON
+    construction and parsing, as well as other utilities pertaining to
+    geometry and Esri type conversions. To support 'ArcGIS Pro' users,
+    authorization can be done via 'arcgisbinding'. Installation
+    instructions for 'arcgisbinding' can be found at
+    <https://r.esri.com/r-bridge-site/arcgisbinding/installing-arcgisbinding.html>.
+License: Apache License (>= 2)
+URL: https://github.com/R-ArcGIS/arcgisutils,
+        https://r.esri.com/arcgisutils/
+BugReports: https://github.com/R-ArcGIS/arcgisutils/issues
+Imports: cli, dbplyr, httr2 (>= 1.0.0), jsonify, Rcpp, RcppSimdJson,
+        rlang, sf, utils
+Suggests: arcgisbinding, testthat (>= 3.0.0)
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-02-22 20:10:54 UTC; josiahparry
+Author: Josiah Parry [aut, cre] (<https://orcid.org/0000-0001-9910-865X>),
+  Kenneth Vernon [ctb] (<https://orcid.org/0000-0003-0098-5092>),
+  Martha Bass [ctb] (<https://orcid.org/0009-0004-0268-5426>)
+Maintainer: Josiah Parry <josiah.parry@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-02-22 23:00:08 UTC

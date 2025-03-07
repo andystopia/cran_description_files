@@ -1,0 +1,41 @@
+Package: rpostgisLT
+Title: Managing Animal Movement Data with 'PostGIS' and R
+Version: 0.4.0
+Date: 2016-10-26
+Authors@R: c(
+    person("Balázs", "Dukai", email = "balazs.dukai@gmail.com", role = c("aut"),
+          comment =  "Package creator during Google Summer of Code 2016"),
+    person("Mathieu", "Basille", email = "basille@ufl.edu", role =
+           c("aut")),
+    person("David", "Bucklin", email = "dbucklin@ufl.edu", role =
+           c("aut", "cre")),
+    person("Clément", "Calenge", email = "clement.calenge@oncfs.gouv.fr",
+          role = c("aut")) )
+Description: Integrates R and the 'PostgreSQL/PostGIS' database 
+    system to build and manage animal trajectory (movement) data sets. 
+    The package relies on 'ltraj' objects from the R package 'adehabitatLT',
+    building the analogous 'pgtraj' data structure in 'PostGIS'. Functions
+    allow users to seamlessly transfer between 'ltraj' and 'pgtraj', as
+    well as build new 'pgtraj' directly from location data stored in the 
+    database.
+SystemRequirements: PostgreSQL with PostGIS extension
+Depends: R (>= 3.3.0), DBI, RPostgreSQL, rpostgis (>= 1.0.3),
+        adehabitatLT (>= 0.3.12)
+License: GPL (>= 3)
+URL: https://github.com/mablab/rpostgisLT
+BugReports: https://github.com/mablab/rpostgisLT/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Imports: sp, testthat
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-11-01 09:24:30 UTC; bdukai
+Author: Balázs Dukai [aut] (Package creator during Google Summer of Code 2016),
+  Mathieu Basille [aut],
+  David Bucklin [aut, cre],
+  Clément Calenge [aut]
+Maintainer: David Bucklin <dbucklin@ufl.edu>
+Repository: CRAN
+Date/Publication: 2016-11-01 18:51:55

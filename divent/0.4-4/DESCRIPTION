@@ -1,0 +1,30 @@
+Package: divent
+Type: Package
+Title: Entropy Partitioning to Measure Diversity
+Version: 0.4-4
+Authors@R: c(
+    person("Eric", "Marcon", email="eric.marcon@agroparistech.fr", role=c("aut", "cre"), comment=c(ORCID="0000-0002-5249-321X"))
+    )
+Description: Measurement and partitioning of diversity, based on Tsallis entropy, following Marcon and Herault (2015) <doi:10.18637/jss.v067.i08>.
+  'divent' provides functions to estimate alpha, beta and gamma diversity of communities, including phylogenetic and functional diversity.
+URL: https://ericmarcon.github.io/divent/,
+        https://github.com/EricMarcon/divent
+BugReports: https://github.com/EricMarcon/divent/issues
+License: GNU General Public License
+Depends: R (>= 3.5)
+Imports: ape, cli, dplyr, ggplot2, graphics, EntropyEstimation,
+        RColorBrewer, Rdpack, rlang, stats, tibble, tidyr, vegan
+Suggests: ade4, knitr, pkgdown, rmarkdown, SPECIES, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+SystemRequirements: pandoc
+RdMacros: Rdpack
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-11-04 16:41:15 UTC; emarc
+Author: Eric Marcon [aut, cre] (<https://orcid.org/0000-0002-5249-321X>)
+Maintainer: Eric Marcon <eric.marcon@agroparistech.fr>
+Repository: CRAN
+Date/Publication: 2024-11-06 16:10:08 UTC

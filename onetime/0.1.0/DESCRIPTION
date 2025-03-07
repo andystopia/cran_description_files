@@ -1,0 +1,27 @@
+Package: onetime
+Type: Package
+Title: Run Code Only Once
+Version: 0.1.0
+Authors@R: 
+    person(given = "David",
+           family = "Hugh-Jones",
+           role = c("aut", "cre"),
+           email = "davidhughjones@gmail.com")
+Author: David Hugh-Jones [aut, cre]
+Maintainer: David Hugh-Jones <davidhughjones@gmail.com>
+Description: Allows code to be run only once on a given computer, using
+  lockfiles. Typical use cases include startup messages shown only when a
+  package is loaded for the very first time.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Imports: rappdirs, filelock
+URL: https://github.com/hughjonesd/onetime,
+        https://hughjonesd.github.io/onetime/
+BugReports: https://github.com/hughjonesd/onetime/issues
+Suggests: callr, covr, devtools, mockr, rlang, testthat (>= 2.1.0),
+        withr
+NeedsCompilation: no
+Packaged: 2022-11-21 18:16:16 UTC; david
+Repository: CRAN
+Date/Publication: 2022-11-22 14:00:05 UTC

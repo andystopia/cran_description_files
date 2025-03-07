@@ -1,0 +1,25 @@
+Package: LassoBacktracking
+Type: Package
+Title: Modelling Interactions in High-Dimensional Data with
+        Backtracking
+Version: 0.1.2
+Date: 2017-04-03
+Authors@R: person("Rajen", "Shah", email = "r.shah@statslab.cam.ac.uk",
+                  role = c("aut", "cre"))
+Description: Implementation of the algorithm introduced in Shah, R. D.
+    (2016) <http://www.jmlr.org/papers/volume17/13-515/13-515.pdf>.
+    Data with thousands of predictors can be handled. The algorithm
+    performs sequential Lasso fits on design matrices containing
+    increasing sets of candidate interactions. Previous fits are used to greatly
+    speed up subsequent fits so the algorithm is very efficient.
+License: GPL (>= 2)
+Imports: Matrix, parallel, Rcpp
+LinkingTo: Rcpp
+URL: www.jmlr.org/papers/volume17/13-515/13-515.pdf
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2017-04-04 06:32:32 UTC; rds37
+Author: Rajen Shah [aut, cre]
+Maintainer: Rajen Shah <r.shah@statslab.cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2017-04-04 08:48:43 UTC

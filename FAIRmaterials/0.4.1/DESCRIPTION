@@ -1,0 +1,266 @@
+Package: FAIRmaterials
+Title: Make Materials Data FAIR
+Version: 0.4.1
+Authors@R: c(
+    person(
+        given = c("Will"),
+        family = c("Oltjen"),
+        role = c("aut"),
+        email = "william.oltjen@case.edu",
+        comment = c(ORCID = "0000-0003-0380-1033")
+    ),
+    person(
+        given = "Mingjian",
+        family = "Lu",
+        role = c("aut"),
+        email = "mingjian.lu@case.edu"
+    ),
+    person(
+        given = "Xuanji",
+        family = "Yu",
+        role = c("aut"),
+        email = "xuanji.yu@case.edu",
+        comment = c(ORCID = "0000-0003-1967-3769")
+    ),
+    person(
+        given = "Liangyi",
+        family = "Huang",
+        role = c("aut"),
+        email = "liangyi.huang@case.edu",
+        comment = c(ORCID = "0000-0003-0845-3293")
+    ),
+    person(
+        given = "Arafath",
+        family = "Nihar",
+        role = c("aut"),
+        email = "arafath.nihar@case.edu"
+    ),
+    person(
+        given = "Tommy",
+        family = "Ciardi",
+        role = c("aut"),
+        email = "tommy.ciardi@case.edu"
+    ),
+    person(
+        given = "Erika",
+        family = "Barcelos",
+        role = c("aut"),
+        email = "erika.barcelos@case.edu",
+        comment = c(ORCID = "0000-0002-9273-8488")
+    ),
+    person(
+        given = "Pawan",
+        family = "Tripathi",
+        role = c("aut"),
+        email = "pawan.tripathi@case.edu",
+        comment = c(ORCID = "0000-0002-8604-7744")
+    ),
+    person(
+        given = "Abhishek",
+        family = "Daundkar",
+        role = c("aut"),
+        email = "abhishek.daundkar@case.edu"
+    ),
+    person(
+        given = "Deepa",
+        family = "Bhuvanagiri",
+        role = c("aut"),
+        email = "deepa.bhuvanagiri@case.edu",
+        comment = c(ORCID = "0000-0002-5896-545X")
+    ),
+    person(
+        given = "Hope",
+        family = "Omodolor",
+        role = c("aut"),
+        email = "hope.omodolor@case.edu"
+    ),
+    person(
+        given = "Hein",
+        family = "Htet-Aung",
+        role = c("aut"),
+        email = "hein.htetaung@case.edu",
+        comment = c(ORCID = "0000-0002-8191-8213")
+    ),
+    person(
+        given = "Kristen",
+        family = "Hernandez",
+        role = c("aut"),
+        email = "kristen.hernandez@case.edu",
+        comment = c(ORCID = "0000-0001-6139-1218")
+    ),
+    person(
+        given = "Mirra",
+        family = "Rasmussen",
+        role = c("aut"),
+        email = "mirra.rasmussen@case.edu"
+    ),
+    person(
+        given = "Olatunde",
+        family = "Akanbi",
+        role = c("aut"),
+        email = "olatunde.akanbi@case.edu",
+        comment = c(ORCID = "0000-0001-7719-2619")
+    ),
+    person(
+        given = "Raymond",
+        family = "Wieser",
+        role = c("aut"),
+        email = "raymond.wieser@case.edu",
+        comment = c(ORCID = "0000-0003-1531-6430")
+    ),
+    person(
+        given = "Sameera",
+        family = "Nalin-Venkat",
+        role = c("aut"),
+        email = "sameera.nalinvenkat@case.edu",
+        comment = c(ORCID = "0000-0002-9114-4602")
+    ),
+    person(
+        given = "Tian",
+        family = "Wang",
+        role = c("aut"),
+        email = "tian.wang@case.edu",
+        comment = c(ORCID = "0000-0002-6088-4405")
+    ),
+    person(
+        given = "Weiqi",
+        family = "Yue",
+        role = c("aut"),
+        email = "weiqi.yue@case.edu"
+    ),
+    person(
+        given = "Yangxin",
+        family = "Fan",
+        role = c("aut"),
+        email = "yangxin.fan@case.edu",
+        comment = c(ORCID = "0000-0003-1728-9560")
+    ),
+    person(
+        given = "Rounak",
+        family = "Chawla",
+        role = c("aut"),
+        email = "rounak.chawla@case.edu"
+    ),
+    person(
+        given = "Leean",
+        family = "Jo",
+        role = c("aut"),
+        email = "leean.jo@case.edu",
+        comment = c(ORCID = "0000-0001-7026-3779")
+    ),
+    person(
+        given = "Jarod",
+        family = "Kaltenbaugh",
+        role = c("aut"),
+        email = "jkaltenbaugh@knights.ucf.edu",
+        comment = c(ORCID = "0009-0007-4576-7714")
+    ),
+    person(
+        given = "Zelin",
+        family = "Li",
+        role = c("aut"),
+        email = "zelin.li@case.edu",
+        comment = c(ORCID = "0000-0002-6287-3697")
+    ),
+    person(
+        given = "Jonathan",
+        family = "Gordon",
+        role = c("aut"),
+        email = "jgordon5@bowdoin.edu",
+        comment = c(ORCID = "0009-0007-5958-7386")
+    ),
+    person(
+        given = "Jeffrey",
+        family = "Yarus",
+        role = c("aut"),
+        email = "jeffrey.yarus@case.edu",
+        comment = c(ORCID = "0000-0002-9331-9568")
+    ),
+    person(
+        given = "Mengjie",
+        family = "Li",
+        role = c("aut"),
+        email = "mengjie.li@ucf.edu",
+        comment = c(ORCID = "0000-0002-9531-2474")
+    ),
+    person(
+        given = "Kristopher O",
+        family = "Davis",
+        role = c("aut"),
+        email = "kristopher.davis@ucf.edu",
+        comment = c(ORCID = "0000-0002-5772-6254")
+    ),
+    person(
+        given = "Laura",
+        family = "Bruckman",
+        role = c("aut"),
+        email = "laura.bruckman@case.edu",
+        comment = c(ORCID = "0000-0003-1271-1072")
+    ),
+    person(
+        given = "Yinghui",
+        family = "Wu",
+        role = c("aut"),
+        email = "yinghui.wu@case.edu",
+        comment = c(ORCID = "0000-0003-3991-5155")
+    ),
+    person(
+        given = "Roger",
+        family = "French",
+        role = c("aut", "cre"),
+        email = "roger.french@case.edu",
+        comment = c(ORCID = "0000-0002-6162-0532")
+    ),
+    person(
+        given = "Solar Durability and Lifetime Extension Center",
+        role = c("cph", "fnd")))
+Description: We provide here tools used by the Solar Durability and Lifetime Extension Center (SDLE)
+    for FAIRifying data from materials science projects. Functions have been created for numerous tools common
+    in the field in order to make the metadata more Findable, Accessible, Interoperable, and Reproducible. 
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: stringr, jsonlite, svDialogs, tidyjson, RColorBrewer, igraph,
+        dplyr, graphics, jsonld, utils
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-08-09 20:06:36 UTC; jeg165
+Author: Will Oltjen [aut] (<https://orcid.org/0000-0003-0380-1033>),
+  Mingjian Lu [aut],
+  Xuanji Yu [aut] (<https://orcid.org/0000-0003-1967-3769>),
+  Liangyi Huang [aut] (<https://orcid.org/0000-0003-0845-3293>),
+  Arafath Nihar [aut],
+  Tommy Ciardi [aut],
+  Erika Barcelos [aut] (<https://orcid.org/0000-0002-9273-8488>),
+  Pawan Tripathi [aut] (<https://orcid.org/0000-0002-8604-7744>),
+  Abhishek Daundkar [aut],
+  Deepa Bhuvanagiri [aut] (<https://orcid.org/0000-0002-5896-545X>),
+  Hope Omodolor [aut],
+  Hein Htet-Aung [aut] (<https://orcid.org/0000-0002-8191-8213>),
+  Kristen Hernandez [aut] (<https://orcid.org/0000-0001-6139-1218>),
+  Mirra Rasmussen [aut],
+  Olatunde Akanbi [aut] (<https://orcid.org/0000-0001-7719-2619>),
+  Raymond Wieser [aut] (<https://orcid.org/0000-0003-1531-6430>),
+  Sameera Nalin-Venkat [aut] (<https://orcid.org/0000-0002-9114-4602>),
+  Tian Wang [aut] (<https://orcid.org/0000-0002-6088-4405>),
+  Weiqi Yue [aut],
+  Yangxin Fan [aut] (<https://orcid.org/0000-0003-1728-9560>),
+  Rounak Chawla [aut],
+  Leean Jo [aut] (<https://orcid.org/0000-0001-7026-3779>),
+  Jarod Kaltenbaugh [aut] (<https://orcid.org/0009-0007-4576-7714>),
+  Zelin Li [aut] (<https://orcid.org/0000-0002-6287-3697>),
+  Jonathan Gordon [aut] (<https://orcid.org/0009-0007-5958-7386>),
+  Jeffrey Yarus [aut] (<https://orcid.org/0000-0002-9331-9568>),
+  Mengjie Li [aut] (<https://orcid.org/0000-0002-9531-2474>),
+  Kristopher O Davis [aut] (<https://orcid.org/0000-0002-5772-6254>),
+  Laura Bruckman [aut] (<https://orcid.org/0000-0003-1271-1072>),
+  Yinghui Wu [aut] (<https://orcid.org/0000-0003-3991-5155>),
+  Roger French [aut, cre] (<https://orcid.org/0000-0002-6162-0532>),
+  Solar Durability and Lifetime Extension Center [cph, fnd]
+Maintainer: Roger French <roger.french@case.edu>
+Repository: CRAN
+Date/Publication: 2023-08-09 21:10:03 UTC

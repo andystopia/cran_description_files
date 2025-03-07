@@ -1,0 +1,50 @@
+Package: EvaluateCore
+Title: Quality Evaluation of Core Collections
+Version: 0.1.1
+Authors@R: c(
+    person(given = "J.", family = "Aravind",
+           email = "j.aravind@icar.gov.in",
+           role = c("aut", "cre"),
+		       comment = c(ORCID = "0000-0002-4791-442X")),
+    person(given = "Vikender", family = "Kaur",
+           email = "vikender.kaur@icar.gov.in",
+		       role = "aut"),
+	person(given = c("Dhammaprakash", "Pandhari"), family = "Wankhede", 
+           email = "d.wankhede@icar.gov.in",
+		       role = "aut",
+		       comment = c(ORCID = "0000-0001-6384-8664")),
+	person(given = "Joghee", family = "Nanjundan", 
+           email = "j.nanjundan@icar.gov.in",
+		       role = "aut",
+		       comment = c(ORCID = "0000-0001-6254-7341")),
+    person("ICAR-NBGPR",
+           role = c("cph"),
+		   comment = c(url = "www.nbpgr.ernet.in")))
+Description: Implements various quality evaluation statistics to assess the
+    value of plant germplasm core collections using qualitative and 
+    quantitative phenotypic trait data according to Odong et al. (2015) 
+    <doi:10.1007/s00122-012-1971-y>.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+URL: https://github.com/aravind-j/EvaluateCore
+        https://aravind-j.github.io/EvaluateCore
+BugReports: https://github.com/aravind-j/EvaluateCore/issues
+RdMacros: Rdpack
+Depends: R (>= 3.5.0)
+Imports: agricolae, car, cluster, dplyr, entropy, ggcorrplot, ggplot2,
+        grDevices, gridExtra, kSamples, psych, reshape2, Rdpack, stats,
+        vegan
+Suggests: ccChooser, corehunter, rJava (>= 0.9-8)
+NeedsCompilation: no
+Packaged: 2020-05-27 14:10:23 UTC; aravind
+Author: J. Aravind [aut, cre] (<https://orcid.org/0000-0002-4791-442X>),
+  Vikender Kaur [aut],
+  Dhammaprakash Pandhari Wankhede [aut]
+    (<https://orcid.org/0000-0001-6384-8664>),
+  Joghee Nanjundan [aut] (<https://orcid.org/0000-0001-6254-7341>),
+  ICAR-NBGPR [cph] (www.nbpgr.ernet.in)
+Maintainer: J. Aravind <j.aravind@icar.gov.in>
+Repository: CRAN
+Date/Publication: 2020-06-03 11:30:07 UTC

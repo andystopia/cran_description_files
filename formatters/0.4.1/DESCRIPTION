@@ -1,0 +1,38 @@
+Package: formatters
+Title: ASCII Formatting for Values and Tables
+Version: 0.4.1
+Date: 2023-04-12
+Authors@R: c(
+    person("Gabriel", "Becker", , "gabembecker@gmail.com", role = c("aut", "cre")),
+    person("Adrian", "Waddell", , "adrian.waddell@gene.com", role = "aut"),
+    person("Davide", "Garolini", , "davide.garolini@roche.com", role = "ctb"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: We provide a framework for rendering complex tables to ASCII,
+    and a set of formatters for transforming values or sets of values into
+    ASCII-ready display strings.
+License: Apache License 2.0
+URL: https://github.com/insightsengineering/formatters
+BugReports: https://github.com/insightsengineering/formatters/issues
+Depends: methods, R (>= 2.10)
+Imports: checkmate, grid, htmltools
+Suggests: dplyr, gt (>= 0.7.0), huxtable, knitr, r2rtf, rmarkdown,
+        testthat
+VignetteBuilder: knitr
+Config/Needs/website: insightsengineering/nesttemplate
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'data.R' 'format_value.R' 'matrix_form.R' 'generics.R'
+        'labels.R' 'mpf_exporters.R' 'page_size.R' 'pagination.R'
+        'tostring.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2023-04-14 23:24:11 UTC; gabrielbecker
+Author: Gabriel Becker [aut, cre],
+  Adrian Waddell [aut],
+  Davide Garolini [ctb],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Gabriel Becker <gabembecker@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-14 23:50:02 UTC

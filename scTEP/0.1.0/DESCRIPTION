@@ -1,0 +1,33 @@
+Package: scTEP
+Type: Package
+Title: Single-Cell Trajectory Inference using Ensemble Pseudotimes
+Version: 0.1.0
+Authors@R: c(
+    person("Yifan", "Zhang", ,"yfzhang@nevada.unr.edu", role = c("aut", "cre")),
+    person("Duc", "Tran", role = c("aut")),
+    person("Tin", "Nguyen", role = c("fnd")),
+    person("Sergiu M.", "Dascalu", role = c("fnd")),
+    person("Frederick C.", "Harris, Jr.", role = c("fnd"))
+    ) 
+Maintainer: Yifan Zhang <yfzhang@nevada.unr.edu>
+Description: A single-cell trajectory inference method using 'Autoencoder' and Minimum Spanning Tree (MST) from high dimensional 'scRNA-Seq' data. The software run clustering methods six times using 'scDHA' with the number of clusters set from 6 to 10. Then, the 'scTEP' calculates pseudotime based on multiple clustering results. Lastly, the 'scTEP' generates trajectory using MST algorithm and fine-tunes it according to the pseudotime of clusters.
+License: LGPL
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Depends: R (>= 3.6.0)
+Imports: stats, dplyr, igraph, scDHA, foreach, BiocGenerics, Matrix,
+        SummarizedExperiment, doParallel, ggsci, psych, tibble, rlang,
+        SingleCellExperiment
+RoxygenNote: 7.2.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-09-25 20:14:33 UTC; yifanzhang
+Author: Yifan Zhang [aut, cre],
+  Duc Tran [aut],
+  Tin Nguyen [fnd],
+  Sergiu M. Dascalu [fnd],
+  Frederick C. Harris, Jr. [fnd]
+Repository: CRAN
+Date/Publication: 2022-09-26 13:10:02 UTC

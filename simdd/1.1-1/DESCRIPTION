@@ -1,0 +1,25 @@
+Package: simdd
+Type: Package
+Title: Simulation of Fisher Bingham and Related Directional
+        Distributions
+Version: 1.1-1
+Date: 2023-02-19
+Authors@R: 
+  c(person(given = "John", family = "Kent", email = "j.t.kent@leeds.ac.uk",
+     role = c("aut", "cph")),
+  person(given = "Kassel Liam", family = "Hingee", role = "cre",
+     email = "kassel.hingee@anu.edu.au")
+  )
+Description: Simulation methods for the Fisher Bingham distribution on the unit sphere, the matrix Bingham distribution on a Grassmann manifold, the matrix Fisher distribution on SO(3), and the bivariate von Mises sine model on the torus.
+ The methods use the first ever general purpose acceptance/rejection simulation algorithm for the Bingham distribution and are described fully by Kent, Ganeiber and Mardia (2018) <doi:10.1080/10618600.2017.1390468>.
+ These methods superseded earlier MCMC simulation methods and are more general than earlier simulation methods.
+ The methods can be slower in specific situations where there are existing non-MCMC simulation methods (see Section 8 of Kent, Ganeiber and Mardia (2018) <doi:10.1080/10618600.2017.1390468> for further details).
+License: GPL-2
+Suggests: CircStats
+NeedsCompilation: no
+Packaged: 2023-02-21 22:27:50 UTC; kassel
+Author: John Kent [aut, cph],
+  Kassel Liam Hingee [cre]
+Maintainer: Kassel Liam Hingee <kassel.hingee@anu.edu.au>
+Repository: CRAN
+Date/Publication: 2023-02-22 15:10:02 UTC

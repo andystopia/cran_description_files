@@ -1,0 +1,33 @@
+Package: TestDataImputation
+Type: Package
+Title: Missing Item Responses Imputation for Test and Assessment Data
+Version: 2.1
+Date: 2021-07-27
+Authors@R: c(person("Shenghai", "Dai", role = c("aut", "cre"), 
+                     email = "s.dai@wsu.edu"),
+             person("Xiaolin", "Wang", role = "aut"),
+             person("Dubravka", "Svetina", role = "aut"))
+Author: Shenghai Dai [aut, cre],
+  Xiaolin Wang [aut],
+  Dubravka Svetina [aut]
+Maintainer: Shenghai Dai <s.dai@wsu.edu>
+Description: Functions for imputing missing item responses for dichotomous and
+    polytomous test and assessment data. This package enables missing imputation
+    methods that are suitable for test and assessment data, including: 
+    listwise (LW) deletion (see De Ayala et al. 2001 <doi:10.1111/j.1745-3984.2001.tb01124.x>), 
+    treating as incorrect (IN, see Lord, 1974 <doi: 10.1111/j.1745-3984.1974.tb00996.x>; 
+    Mislevy & Wu, 1996 <doi: 10.1002/j.2333-8504.1996.tb01708.x>; 
+    Pohl et al., 2014 <doi: 10.1177/0013164413504926>), person mean imputation (PM), 
+    item mean imputation (IM), two-way (TW) and response function (RF) imputation 
+    (see Sijtsma & van der Ark, 2003 <doi: 10.1207/s15327906mbr3804_4>),
+    logistic regression (LR) imputation, and expectation–maximization (EM) 
+    imputation (see Finch, 2008 <doi: 10.1111/j.1745-3984.2008.00062.x>).
+Depends: R (>= 3.4.0), stats, mice, Amelia
+Encoding: UTF-8
+NeedsCompilation: no
+LazyData: true
+License: GPL (>= 2)
+RoxygenNote: 7.1.1
+Packaged: 2021-07-28 00:27:45 UTC; s.dai
+Repository: CRAN
+Date/Publication: 2021-07-28 05:00:08 UTC

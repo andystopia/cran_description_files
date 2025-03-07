@@ -1,0 +1,28 @@
+Package: selectSNPs
+Type: Package
+Title: Optimal Selection of SNPs Using a Unified Local Function
+Version: 1.0.1
+Date: 2020-02-20
+Author: Xiao-Lin Nick Wu
+Maintainer: Nick Wu <xwu8@wisc.edu>
+Description: Applies a unified local function to select SNPs for low-density 
+  SNPs. The method is described in Wu et al. (2020) <doi:10.1111/age.12916>. 
+  Briefly, the local function gives different weights to the uniformity (U score) 
+  and average Shannon entropy (E score), depending on the inputs of the weights, 
+  thus facilitating SNP designs under varied scenarios for low-density SNP chips, 
+  including selecting uniformly-distributed SNPs or SNPs with the highest minor 
+  allele frequencies. This is an educational version. For more information about 
+  this package, please contact Dr. Nick Wu. 
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 2.10)
+Imports: Rcpp (>= 1.0.3), methods, graphics, stats, utils
+LinkingTo: Rcpp
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-02-20 16:39:35 UTC; NickWu
+Repository: CRAN
+Date/Publication: 2020-02-28 10:30:02 UTC

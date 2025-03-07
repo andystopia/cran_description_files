@@ -1,0 +1,36 @@
+Package: modeltime
+Title: The Tidymodels Extension for Time Series Modeling
+Version: 0.5.0
+Authors@R: c(
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut", "cre")),
+    person("Business Science", role = "cph"))
+Description: 
+    The time series forecasting framework for use with the 'tidymodels' ecosystem. 
+    Models include ARIMA, Exponential Smoothing, and additional time series models
+    from the 'forecast' and 'prophet' packages. Refer to "Forecasting Principles & Practice, Second edition" 
+    (<https://otexts.com/fpp2/>).
+    Refer to "Prophet: forecasting at scale" 
+    (<https://research.fb.com/blog/2017/02/prophet-forecasting-at-scale/>.).
+URL: https://github.com/business-science/modeltime
+BugReports: https://github.com/business-science/modeltime/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: StanHeaders, timetk (>= 2.6.0), parsnip (>= 0.1.4), dials,
+        yardstick (>= 0.0.8), workflows (>= 0.1.3), hardhat, rlang (>=
+        0.1.2), glue, plotly, reactable, gt, ggplot2, tibble, tidyr,
+        dplyr, purrr, stringr, forcats, scales, janitor, progressr,
+        magrittr, forecast, xgboost (>= 1.2.0.1), prophet, methods, cli
+Suggests: rstan, slider, tidymodels, recipes, rsample, tune, tidyverse,
+        lubridate, progress, testthat, roxygen2, kernlab, earth,
+        randomForest, tidyquant, knitr, rmarkdown, webshot, covr
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-03-29 15:21:01 UTC; mdancho
+Author: Matt Dancho [aut, cre],
+  Business Science [cph]
+Maintainer: Matt Dancho <mdancho@business-science.io>
+Repository: CRAN
+Date/Publication: 2021-03-29 16:30:07 UTC

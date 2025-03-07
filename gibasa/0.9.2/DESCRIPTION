@@ -1,0 +1,40 @@
+Type: Package
+Package: gibasa
+Title: An Alternative 'Rcpp' Wrapper of 'MeCab'
+Version: 0.9.2
+Authors@R: c(
+    person("Akiru", "Kato", , "paithiov909@gmail.com", role = c("aut", "cre")),
+    person("Shogo", "Ichinose", role = "aut"),
+    person("Taku", "Kudo", role = "aut"),
+    person("Jorge", "Nocedal", role = "ctb"),
+    person("Nippon Telegraph", "and Telephone Corporation", role = "cph")
+  )
+Maintainer: Akiru Kato <paithiov909@gmail.com>
+Description: A plain 'Rcpp' wrapper of 'MeCab' that can segment Chinese,
+    Japanese, and Korean text into tokens. The main goal of this package
+    is to provide an alternative to 'tidytext' using morphological
+    analysis.
+License: GPL (>= 3)
+URL: https://paithiov909.github.io/gibasa/
+BugReports: https://github.com/paithiov909/gibasa/issues
+Imports: audubon (>= 0.5.0), dplyr, Matrix, purrr, Rcpp, RcppParallel,
+        rlang (>= 0.4.11), stringi, utils
+Suggests: roxygen2, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppParallel
+Config/Needs/website: ggdendro, ggpubr, quanteda, quanteda.textmodels,
+        quanteda.textplots, quanteda.textstats, reactable, stringr,
+        textmineR, textrecipes, tidymodels, topicmodels, uwot, xgboost,
+        paithiov909/ldccr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: GNU make, MeCab
+NeedsCompilation: yes
+Packaged: 2023-04-11 12:39:55 UTC; user
+Author: Akiru Kato [aut, cre],
+  Shogo Ichinose [aut],
+  Taku Kudo [aut],
+  Jorge Nocedal [ctb],
+  Nippon Telegraph and Telephone Corporation [cph]
+Repository: CRAN
+Date/Publication: 2023-04-12 12:00:02 UTC

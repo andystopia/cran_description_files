@@ -1,0 +1,33 @@
+Package: aRchi
+Type: Package
+Title: Quantitative Structural Model ('QSM') Treatment for Tree
+        Architecture
+Version: 2.1.2
+Author: Olivier Martin and Bastien Lecigne
+Maintainer: Olivier Martin <oli.martin@ntymail.com>
+Description: Provides a set of tools to make quantitative structural model of trees (i.e the so-called 'QSM') from LiDAR point cloud, to manipulate and visualize the QSMs as well as to compute metrics from them. It can be used in various context of forest ecology (i.e biomass estimation) and tree architecture (i.e architectural metrics), see Martin-Ducup et al. (2020) <doi:10.1111/1365-2435.13678>. The package is based on a new S4 class called 'aRchi'.
+License: CeCILL
+Encoding: UTF-8
+URL: https://github.com/umr-amap/aRchi
+RoxygenNote: 7.1.1
+Imports: data.table, dplyr, plyr, rgl, methods, lidR, FNN, DiceKriging,
+        stringr, utils, stats, progress, gtools, Rfast, VoxR,
+        fastcluster, pracma, pkgcond, R.matlab, svMisc, circular
+Collate: 'nullOrnumeric.R' 'nullOrlist.R' 'nullOrLASOrDatatable.R'
+        'nullOrDatatable.R' 'aRchiClass.R' 'BranchAngle.R'
+        'Compute_A0.R' 'Compute_Mf.R' 'DAI.R' 'ForkRate.R'
+        'LeonardoRatio.R' 'Make_Node.R' 'Make_Path.R' 'PathFraction.R'
+        'QSM2mesh.R' 'SelectinQSM_3d.R' 'TreeBiomass.R' 'TreeVolume.R'
+        'Truncate_QSM.R' 'WBEparameters.R' 'WoodSurface.R' 'aRchi.R'
+        'aRchi2treeQSM.R' 'add_diameter.R' 'add_leaves.R'
+        'add_non_reconstructed.R' 'add_physiological_ages.R'
+        'add_pointcloud.R' 'angle3d.R' 'build_aRchi.R' 'clean_QSM.R'
+        'clean_point_cloud.R' 'cross_prod_3d.R' 'dist2line.R'
+        'get_QSM.R' 'get_nodes.R' 'get_operations.R' 'get_paths.R'
+        'get_pointcloud.R' 'plot.R' 'read_QSM.R' 'read_aRchi.R'
+        'segment_annual_shoots.R' 'simplify_skeleton.R' 'skeletonize.R'
+        'smooth_skeleton.R' 'write_aRchi.R'
+NeedsCompilation: no
+Packaged: 2022-08-07 11:45:45 UTC; omartin
+Repository: CRAN
+Date/Publication: 2022-08-07 14:30:05 UTC

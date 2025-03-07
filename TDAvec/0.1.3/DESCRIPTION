@@ -1,0 +1,27 @@
+Package: TDAvec
+Type: Package
+Title: Vector Summaries of Persistence Diagrams
+Version: 0.1.3
+Authors@R: c(
+  person("Umar","Islambekov", email = "iumar@bgsu.edu", role=c("aut")), 
+  person("Alexey", "Luchinsky", email = "aluchi@bgsu.edu", role = c("aut", "cre")),
+  person("Hasani", "Pathirana", email = "pathirh@bgsu.edu", role = "ctb")
+  )
+Description: Tools for computing various vector summaries of persistence diagrams 
+    studied in Topological Data Analysis. For improved computational efficiency, 
+    all code for the vector summaries is written in 'C++' using the 'Rcpp' package.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.9), TDA, microbenchmark
+LinkingTo: Rcpp
+Suggests: knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-10-31 14:40:47 UTC; luchinsky
+RoxygenNote: 7.2.1
+Author: Umar Islambekov [aut],
+  Alexey Luchinsky [aut, cre],
+  Hasani Pathirana [ctb]
+Maintainer: Alexey Luchinsky <aluchi@bgsu.edu>
+Repository: CRAN
+Date/Publication: 2022-10-31 16:00:23 UTC

@@ -1,0 +1,35 @@
+Package: geozoning
+Title: Zoning Methods for Spatial Data
+Version: 1.0.0
+Authors@R: c(
+  person("Brigitte", "Charnomordic", email = "brigitte.charnomordic@inra.fr", role = c("aut")),
+  person("Hazaël", "Jones", email = "hazael.jones@supagro.fr", role = c("aut", "cre")),
+  person("Patrice", "Loisel", email = "patrice.loisel@inra.fr", role = c("aut")),
+  person("Isabelle", "Sanchez", email = "isabelle.sanchez@inra.fr", role = c("ctb")),
+  person("Ngoc-Phi", "Tran", email = "Ngoc-Phi.Tran@gmail.fr", role = c("ctr")))
+Author: Brigitte Charnomordic [aut],
+  Hazaël Jones [aut, cre],
+  Patrice Loisel [aut],
+  Isabelle Sanchez [ctb],
+  Ngoc-Phi Tran [ctr]
+Maintainer: Hazaël Jones <hazael.jones@supagro.fr>
+Description: A zoning method and a numerical criterion for zoning quality are available in this package.
+   The zoning method is based on a numerical criterion that evaluates the zoning quality.
+   This criterion quantifies simultaneously how zones are heterogeneous on
+   the whole map and how neighbouring zones are similar. This approach allows comparison
+   between maps either with different zones or different labels, which is of importance
+   for zone delineation algorithms aiming at maximizing inter-zone variability. An optimisation
+   procedure provides the user with the best zonings thanks to contour delineation for a given map.
+Depends: R (>= 3.3.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: gstat, RandomFields, sp, maptools, deldir, fields, raster,
+        graphics, stats, utils,grDevices, rgeos, ggplot2
+Suggests: rmarkdown, knitr
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-02-07 08:11:18 UTC; sanchezi
+Repository: CRAN
+Date/Publication: 2018-02-08 09:58:39 UTC

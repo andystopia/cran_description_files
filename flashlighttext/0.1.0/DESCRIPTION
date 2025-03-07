@@ -1,0 +1,34 @@
+Type: Package
+Package: flashlighttext
+Title: Flashlight Text R Interface
+Version: 0.1.0
+Authors@R: c(
+    person("Athos", "Damiani", email = "athos.damiani@gmail.com", role = c("aut", "cre", "cph")),
+    person("Daniel", "Falbel", role = c("aut"))
+    )
+Description: Provides bindings to part of the Flashlight's Text toolkit.
+    The Flashlight Text R package contains beam search decoder, KenLM api, and
+    Dictionary components.
+    Jacob Kahn et al. (2022) <arXiv:2201.12465> "Flashlight: Enabling Innovation in Tools for Machine Learning".
+    Kenneth Heafield (2011) <https://aclanthology.org/W11-2123.pdf> "KenLM: Faster and Smaller Language Model Queries".
+License: MIT + file LICENSE
+Imports: glue, magrittr, methods, R6, Rcpp (>= 1.0.10), rlang, zeallot
+Suggests: testthat (>= 3.0.0), purrr
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LazyData: true
+SystemRequirements: C++17, GNU make, CMake (>= 3.16), Flashlight Text
+        (https://github.com/flashlight/text/), KenLM Text
+        (https://github.com/kpu/kenlm/), Boost (libboost-dev
+        libboost-program-options-dev libboost-system-dev
+        libboost-thread-dev libboost-test-dev)
+NeedsCompilation: yes
+Packaged: 2023-06-20 22:56:37 UTC; ap_da
+Author: Athos Damiani [aut, cre, cph],
+  Daniel Falbel [aut]
+Maintainer: Athos Damiani <athos.damiani@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-21 09:00:02 UTC

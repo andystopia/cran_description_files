@@ -1,0 +1,58 @@
+Package: miesmuschel
+Title: Mixed Integer Evolution Strategies
+Description: Evolutionary black box optimization algorithms building on the
+  'bbotk' package. 'miesmuschel' offers both ready-to-use optimization
+  algorithms, as well as their fundamental building blocks that can be used to
+  manually construct specialized optimization loops. The Mixed Integer Evolution
+  Strategies as described by Li et al. (2013) <doi:10.1162/EVCO_a_00059> can be
+  implemented, as well as the multi-objective optimization algorithms NSGA-II
+  by Deb, Pratap, Agarwal, and Meyarivan (2002) <doi:10.1109/4235.996017>.
+Authors@R: c(
+  person("Martin", "Binder", email = "mlr.developer@mb706.com", role = c("aut", "cre")),
+  person(given = "Lennart", family = "Schneider", role = c("ctb"), email = "lennart.sch@web.de", comment = c(ORCID = "0000-0003-4152-5308")),
+  person(given = "Susanne", family = "Dandl", role = c("ctb"), email = "dandl.susanne@googlemail.com", comment = c(ORCID = "0000-0003-4324-4163")),
+  person(given = "Andreas", family = "Hofheinz", role = c("ctb"), email = "andreas.hofheinz@outlook.com")
+  )
+URL: https://github.com/mlr-org/miesmuschel
+BugReports: https://github.com/mlr-org/miesmuschel/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: yes
+Version: 0.0.1
+Depends: paradox (>= 0.7.1)
+Imports: mlr3misc (>= 0.5.0), checkmate (>= 1.9.0), R6, bbotk (>=
+        0.3.0.900), data.table, matrixStats, lgr
+Suggests: tinytest, mlr3tuning, mlr3, mlr3learners, ranger, xgboost,
+        rpart
+RoxygenNote: 7.2.1
+Collate: 'dictionaries.R' 'MiesOperator.R' 'Filtor.R' 'FiltorMaybe.R'
+        'FiltorNull.R' 'FiltorProxy.R' 'FiltorSurrogate.R'
+        'FiltorSurrogateProgressive.R' 'FiltorSurrogateTournament.R'
+        'Mutator.R' 'MutatorCmpMaybe.R' 'MutatorDiscreteUniform.R'
+        'MutatorErase.R' 'MutatorGauss.R' 'MutatorMaybe.R'
+        'MutatorNull.R' 'MutatorProxy.R' 'MutatorSequential.R'
+        'ParamSetShadow.R' 'OperatorCombination.R' 'Recombinator.R'
+        'Selector.R' 'mies_methods.R' 'OptimizerMies.R'
+        'RecombinatorCmpMaybe.R' 'RecombinatorConvex.R'
+        'RecombinatorConvexPair.R' 'RecombinatorCrossoverNary.R'
+        'RecombinatorCrossoverUniform.R' 'RecombinatorMaybe.R'
+        'RecombinatorNull.R' 'RecombinatorProxy.R'
+        'RecombinatorSequential.R'
+        'RecombinatorSimulatedBinaryCrossover.R' 'RecombinatorSwap.R'
+        'Scalor.R' 'ScalorAggregate.R' 'ScalorDomcount.R'
+        'ScalorFixedProjections.R' 'ScalorHypervolume.R'
+        'ScalorNondom.R' 'ScalorOne.R' 'ScalorProxy.R'
+        'ScalorSingleObjective.R' 'SelectorBest.R' 'SelectorMaybe.R'
+        'SelectorNull.R' 'SelectorProxy.R' 'SelectorRandom.R'
+        'SelectorSequential.R' 'SelectorTournament.R'
+        'TerminatorBudget.R' 'TerminatorGenerations.R' 'TunerMies.R'
+        'bibentries.R' 'repr.R' 'utils.R' 'utils_mo.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2022-11-09 13:52:30 UTC; user
+Author: Martin Binder [aut, cre],
+  Lennart Schneider [ctb] (<https://orcid.org/0000-0003-4152-5308>),
+  Susanne Dandl [ctb] (<https://orcid.org/0000-0003-4324-4163>),
+  Andreas Hofheinz [ctb]
+Maintainer: Martin Binder <mlr.developer@mb706.com>
+Repository: CRAN
+Date/Publication: 2022-11-09 15:50:02 UTC

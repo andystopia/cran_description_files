@@ -1,0 +1,26 @@
+Package: dockr
+Title: Creation of Lightweight Docker Images for Your Packages
+Version: 0.8.6
+Authors@R: 
+    person(given = "Lars",
+           family = "Kjeldgaard",
+           role = c("aut", "cre"),
+           email = "lars_kjeldgaard@hotmail.com")
+Description: Build a lightweight Docker r-base container image for your R 
+    package, in which the package itself is available. The Docker image seeks 
+    to mirror your R session as close as possible with respect to R specific 
+    dependencies. Both dependencies on CRAN R packages as well as local non-CRAN 
+    R packages will be included in the Docker container image.
+Depends: R (>= 3.4.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: cli, pkgload, gtools, crayon, devtools, roxygen2, curl
+RoxygenNote: 6.1.1
+Suggests: testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2019-12-15 17:01:11 UTC; Lars
+Author: Lars Kjeldgaard [aut, cre]
+Maintainer: Lars Kjeldgaard <lars_kjeldgaard@hotmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-20 10:30:02 UTC

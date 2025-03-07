@@ -1,0 +1,27 @@
+Package: rgl.cry
+Title: 'cry' and 'rgl' — Applications in Crystallography
+Version: 0.1.0
+Authors@R: 
+    person("Toshihide", "Saitou", , "saitou.toshihide@gmail.com", role = c("aut", "cre", "cph"))
+Description: Visualizing crystal structures and selected area electron diffraction (SAED) patterns.  It provides functions cry_demo() and dp_demo() to load a file in 'CIF' (Crystallographic Information Framework) formats and display crystal structures and electron diffraction patterns.  The function dp_demo() also performs simple simulation of powder X-ray diffraction (PXRD) patterns, and the results can be saved to a file in the working directory.  The package has been tested on several platforms, including Linux on 'Crostini' with a Core™ m3-8100Y Chromebook, I found that even on this low-powered platform, the performance was acceptable.
+    T. Hanashima (2001) <https://www2.kek.jp/imss/pf/tools/sasaki/sinram/sinram.html>
+    Todd Helmenstine (2019) <https://sciencenotes.org/molecule-atom-colors-cpk-colors/>
+    Wikipedia contributors (2023) <https://en.wikipedia.org/w/index.php?title=Atomic_radius&oldid=1179864711>.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: cry, rgl, utils
+Collate: 'zzz.R' 'cry_demo.R' 'dp_demo.R' 'getCIF.R' 'align.R'
+        'select.R' 'rgl.cry-package.R'
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/SaitouToshihide/rgl.cry/,
+        https://saitoutoshihide.github.io/rgl.cry/
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-02-27 16:59:05 UTC; saitoutoshihide
+Author: Toshihide Saitou [aut, cre, cph]
+Maintainer: Toshihide Saitou <saitou.toshihide@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-02-28 18:30:02 UTC

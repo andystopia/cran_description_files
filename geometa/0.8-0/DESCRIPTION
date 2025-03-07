@@ -1,0 +1,28 @@
+Package: geometa
+Type: Package
+Title: Tools for Reading and Writing ISO/OGC Geographic Metadata
+Version: 0.8-0
+Date: 2024-04-18
+Authors@R: c(person("Emmanuel", "Blondel", role = c("aut", "cre"), email = "emmanuel.blondel1@gmail.com", comment = c(ORCID = "0000-0002-5870-5762")))
+Maintainer: Emmanuel Blondel <emmanuel.blondel1@gmail.com>
+Description: Provides facilities to read, write and validate geographic metadata 
+ defined with ISO TC211 / OGC ISO geographic information metadata standards, and 
+ encoded using the ISO 19139 (XML) standard technical specification. This includes 
+ ISO 19110 (Feature cataloguing), 19115 (dataset metadata), 19119 (service metadata) 
+ and 19136 (GML). Other interoperable schemas from the OGC are progressively supported 
+ as well, such as the Sensor Web Enablement (SWE) Common Data Model, the OGC GML 
+ Coverage Implementation Schema (GMLCOV), or the OGC GML Referenceable Grid (GMLRGRID).
+Depends: R (>= 3.3.0)
+Imports: methods, R6, XML, httr, jsonlite, keyring, readr, crayon
+Suggests: sf, ncdf4, EML, emld, units, testthat, roxygen2
+License: MIT + file LICENSE
+URL: https://github.com/eblondel/geometa/wiki
+BugReports: https://github.com/eblondel/geometa/issues
+LazyLoad: yes
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-18 08:16:36 UTC; emman
+Author: Emmanuel Blondel [aut, cre] (<https://orcid.org/0000-0002-5870-5762>)
+Repository: CRAN
+Date/Publication: 2024-04-18 09:10:02 UTC

@@ -1,0 +1,36 @@
+Package: Dire
+Version: 1.0.2
+Date: 2021-03-17
+Title: Linear Regressions with a Latent Outcome Variable
+Authors@R: c(person("Harold", "Doran", role="aut"),
+             person("Paul", "Bailey", role=c("aut", "cre"), email="pbailey@air.org"),
+             person("Eric", "Buehler", role="aut"),
+             person("Sun-joo", "Lee", role="aut"),
+             person("Claire", "Kelley", role="ctb"))
+Maintainer: Paul Bailey <pbailey@air.org>
+Depends: R (>= 3.3.0)
+Imports: minqa, foreach, iterators, methods, Matrix, haven, Rcpp
+Description: Fit linear models, estimating score distributions for groups of people, following Cohen and Jiang (1999) <doi:10.2307/2669917>. In this model, the response is a latent trait (such as student ability) and raw item responses are combined with item difficulties in an item response theory (IRT) framework to form a density for each unit (student). This latent trait is then integrated out. This software is intended to fit the same models as the existing software 'AM' <http://am.air.org/>.
+License: GPL-2
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat, withr, doParallel, EdSurvey
+URL: https://american-institutes-for-research.github.io/Dire/
+BugReports: https://github.com/American-Institutes-for-Research/Dire/issues
+LazyData: true
+ByteCompile: true
+Note: This publication was prepared for NCES under Contract No.
+        ED-IES-12-D-0002 with the American Institutes for Research.
+        Mention of trade names, commercial products, or organizations
+        does not imply endorsement by the U.S. Government.
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2021-03-19 19:28:23 UTC; ebuehler
+Author: Harold Doran [aut],
+  Paul Bailey [aut, cre],
+  Eric Buehler [aut],
+  Sun-joo Lee [aut],
+  Claire Kelley [ctb]
+Repository: CRAN
+Date/Publication: 2021-03-22 10:10:02 UTC

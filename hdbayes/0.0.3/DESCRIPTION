@@ -1,0 +1,51 @@
+Package: hdbayes
+Title: Bayesian Analysis of Generalized Linear Models with Historical
+        Data
+Version: 0.0.3
+Authors@R: c(person("Ethan M.", "Alt", email = "ethanalt@live.unc.edu", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-6112-9030")), 
+    person("Xinxin", "Chen", role = "aut"), 
+    person("Luiz M.", "Carvalho", role = "aut"),
+    person("Joseph G.", "Ibrahim", role = "aut"),
+    person("Xiuya", "Chang", role = "ctb")
+    )
+Description: User-friendly functions for leveraging (multiple) historical data set(s)
+    for generalized linear models. Contains functions for sampling from the posterior
+    distribution of a generalized linear model using the prior induced by the Bayesian 
+    hierarchical model, power prior by Ibrahim and Chen (2000) <doi:10.1214/ss/1009212673>, 
+    normalized power prior by Duan et al. (2006) <doi:10.1002/env.752>, normalized
+    asymptotic power prior by Ibrahim et al. (2015) <doi:10.1002/sim.6728>, commensurate
+    prior by Hobbs et al. (2011) <doi:10.1111/j.1541-0420.2011.01564.x>, robust 
+    meta-analytic-predictive prior by Schmidli et al. (2014) <doi:10.1111/biom.12242>,
+    and the latent exchangeability prior (LEAP) by Alt et al. (2023) <arXiv:2303.05223>.
+    The package compiles all the 'CmdStan' models once during installation using the
+    'instantiate' package.
+License: MIT + file LICENSE
+URL: https://github.com/ethan-alt/hdbayes
+BugReports: https://github.com/ethan-alt/hdbayes/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 4.2.0)
+Imports: instantiate (>= 0.1.0), callr, fs, formula.tools, stats,
+        posterior, enrichwith, mclust, bridgesampling
+Suggests: cmdstanr (>= 0.6.0), parallel
+Additional_repositories: https://mc-stan.org/r-packages/
+SystemRequirements: CmdStan
+        (https://mc-stan.org/users/interfaces/cmdstan)
+LazyData: true
+Collate: 'E1694-data.R' 'E2696-data.R' 'IBCSG_curr-data.R'
+        'IBCSG_hist-data.R' 'actg019-data.R' 'actg036-data.R'
+        'data_checks.R' 'expfam_loglik.R' 'glm_bhm.R'
+        'glm_commensurate.R' 'glm_leap.R' 'glm_napp.R'
+        'glm_npp_lognc.R' 'glm_npp.R' 'glm_pp.R' 'glm_rmap.R'
+        'glm_rmap_bhm.R' 'glm_rmap_bhm_approx.R' 'hdbayes-package.R'
+        'lm_npp.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2024-04-05 20:39:28 UTC; xinxin
+Author: Ethan M. Alt [aut, cre, cph] (<https://orcid.org/0000-0002-6112-9030>),
+  Xinxin Chen [aut],
+  Luiz M. Carvalho [aut],
+  Joseph G. Ibrahim [aut],
+  Xiuya Chang [ctb]
+Maintainer: Ethan M. Alt <ethanalt@live.unc.edu>
+Repository: CRAN
+Date/Publication: 2024-04-08 14:50:08 UTC

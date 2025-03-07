@@ -1,0 +1,19 @@
+Package: R6causal
+Type: Package
+Title: R6 Class for Structural Causal Models
+Version: 0.6.0
+Authors@R: person("Juha", "Karvanen", email = "juha.karvanen@iki.fi",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5530-769X")) 
+Maintainer: Juha Karvanen <juha.karvanen@iki.fi>
+Description: The implemented R6 class 'SCM' aims to simplify working with structural causal models. The missing data mechanism can be defined as a part of the structural model. The class contains methods for 1) defining a structural causal model via functions, text or conditional probability tables, 2) printing basic information on the model, 3) plotting the graph for the model using packages 'igraph' or 'qgraph', 4) simulating data from the model, 5) applying an intervention, 6) checking the identifiability of a query using the R packages 'causaleffect' and 'dosearch', 7) defining the missing data mechanism, 8) simulating incomplete data from the model according to the specified missing data mechanism and 9) checking the identifiability in a missing data problem using the R package 'dosearch'. In addition, there are functions for running experiments and doing counterfactual inference using simulation.
+License: AGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: causaleffect, data.table, dosearch, igraph, R6, stats
+Suggests: rmarkdown, knitr, qgraph, sqldf
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-08-05 12:24:52 UTC; juhak
+Author: Juha Karvanen [aut, cre] (<https://orcid.org/0000-0001-5530-769X>)
+Repository: CRAN
+Date/Publication: 2021-08-06 08:20:13 UTC

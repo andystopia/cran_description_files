@@ -1,0 +1,39 @@
+Package: BayesPPDSurv
+Title: Bayesian Power Prior Design for Survival Data
+Version: 1.0.0
+Date: 2024-01-04
+Authors@R: c(
+    person(given = "Yueqi",
+           family = "Shen",
+           role = c("aut","cre"),
+           email = "ys137@live.unc.edu"),
+    person(given = "Matthew A.",
+           family = "Psioda",
+           role = c("aut"),
+           email = "matt.a.psioda@gsk.com"),
+    person(given = "Joseph G.",
+           family = "Ibrahim",
+           role = c("aut"),
+           email = "ibrahim@bios.unc.edu"))
+Description: Bayesian power/type I error calculation and model fitting using 
+  the power prior and the normalized power prior for proportional hazards models
+  with piecewise constant hazard. The Bayesian clinical trial design methodology is 
+  described in Chen et al. (2011) <doi:10.1111/j.1541-0420.2011.01561.x>, 
+  and Psioda and Ibrahim (2019) <doi:10.1093/biostatistics/kxy009>. 
+  The proportional hazards model with piecewise constant hazard is detailed in 
+  Ibrahim et al. (2001) <doi:10.1007/978-1-4757-3447-8>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: Rcpp, dplyr, tidyr
+LinkingTo: Rcpp, RcppArmadillo, RcppDist
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-01-09 22:16:27 UTC; angie
+Author: Yueqi Shen [aut, cre],
+  Matthew A. Psioda [aut],
+  Joseph G. Ibrahim [aut]
+Maintainer: Yueqi Shen <ys137@live.unc.edu>
+Repository: CRAN
+Date/Publication: 2024-01-10 20:03:06 UTC

@@ -1,0 +1,42 @@
+Package: accucor
+Type: Package
+Title: Natural Abundance Correction of Mass Spectrometer Data
+Version: 0.2.4
+Authors@R: c(
+    person(given = "Xiaoyang",
+           family = "Su",
+           email = "xs137@rwjms.rutgers.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-8081-1396")),
+    person(given = "Lance",
+           family = "Parsons",
+           email = "lparsons@princeton.edu",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8521-714X")),
+    person(given = "Yujue",
+           family = "Wang",
+           email = "yw429@rwjms.rutgers.edu",
+           role = "ctb",
+           comment = c(ORCID = "0000-0001-7088-1729")),
+    person(given = "Princeton University",
+           role = "cph"))
+Description: An isotope natural abundance correction algorithm that
+  is needed especially for high resolution mass spectrometers. Supports
+  correction for 13C, 2H and 15N.
+URL: https://github.com/XiaoyangSu/AccuCor
+BugReports: https://github.com/XiaoyangSu/AccuCor/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: gsubfn, nnls, dplyr, stringr, readxl, readr, rlang, tibble,
+        writexl, CHNOSZ
+RoxygenNote: 7.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2021-04-10 01:30:33 UTC; lparsons
+Author: Xiaoyang Su [aut] (<https://orcid.org/0000-0001-8081-1396>),
+  Lance Parsons [aut, cre] (<https://orcid.org/0000-0002-8521-714X>),
+  Yujue Wang [ctb] (<https://orcid.org/0000-0001-7088-1729>),
+  Princeton University [cph]
+Maintainer: Lance Parsons <lparsons@princeton.edu>
+Repository: CRAN
+Date/Publication: 2021-04-12 08:50:02 UTC

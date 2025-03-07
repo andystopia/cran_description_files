@@ -1,0 +1,45 @@
+Type: Package
+Package: melt
+Title: Multiple Empirical Likelihood Tests
+Version: 1.9.0
+Authors@R: c(
+    person("Eunseop", "Kim", , "kim.7302@osu.edu", role = c("aut", "cre")),
+    person("Steven", "MacEachern", role = c("ctb", "ths")),
+    person("Mario", "Peruggia", role = c("ctb", "ths")),
+    person("Pierre", "Chausse", role = "rev"),
+    person("Alex", "Stringer", role = "rev")
+  )
+Description: Performs multiple empirical likelihood tests for linear and
+    generalized linear models. The package offers an easy-to-use interface
+    and flexibility in specifying hypotheses and calibration methods,
+    extending the framework to simultaneous inferences. The core
+    computational routines are implemented using the 'Eigen' C++ library
+    and 'RcppEigen' interface, with OpenMP for parallel computation.
+    Details of the testing procedures are given in Kim, MacEachern, and
+    Peruggia (2021) <arxiv:2112.09206>. This work was supported by the
+    U.S. National Science Foundation under Grants No. SES-1921523 and
+    DMS-2015552.
+License: GPL (>= 2)
+URL: https://docs.ropensci.org/melt/, https://github.com/ropensci/melt
+BugReports: https://github.com/ropensci/melt/issues
+Depends: R (>= 4.1.0)
+Imports: graphics, methods, Rcpp, stats, utils
+Suggests: covr, ggplot2, knitr, microbenchmark, R.rsp, rmarkdown,
+        spelling, testthat (>= 3.0.0), withr
+LinkingTo: BH, dqrng, Rcpp, RcppEigen
+VignetteBuilder: knitr, R.rsp
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.2.1
+Packaged: 2022-11-04 21:09:49 UTC; markean
+Author: Eunseop Kim [aut, cre],
+  Steven MacEachern [ctb, ths],
+  Mario Peruggia [ctb, ths],
+  Pierre Chausse [rev],
+  Alex Stringer [rev]
+Maintainer: Eunseop Kim <kim.7302@osu.edu>
+Repository: CRAN
+Date/Publication: 2022-11-04 21:40:02 UTC

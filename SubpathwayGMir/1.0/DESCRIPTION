@@ -1,0 +1,21 @@
+Package: SubpathwayGMir
+Type: Package
+Title: Identify Metabolic Subpathways Mediated by MicroRNAs
+Version: 1.0
+Date: 2015-05-20
+Author: Li Feng, Chunquan Li and Xia Li
+Maintainer: Li Feng <biofengfeng@sina.com>
+Description: Routines for identifying metabolic subpathways mediated by microRNAs (miRNAs) through topologically locating miRNAs and genes within reconstructed Kyoto Encyclopedia of Genes and Genomes (KEGG) metabolic pathway graphs embedded by miRNAs. (1) This package can obtain the reconstructed KEGG metabolic pathway graphs with genes and miRNAs as nodes, through converting KEGG metabolic pathways to graphs with genes as nodes and compounds as edges, and then integrating miRNA-target interactions verified by low-throughput experiments from four databases (TarBase, miRecords, mirTarBase and miR2Disease) into converted pathway graphs. (2) This package can locate metabolic subpathways mediated by miRNAs by topologically analyzing the "lenient distance" of miRNAs and genes within reconstructed KEGG metabolic pathway graphs.(3) This package can identify significantly enriched miRNA-mediated metabolic subpathways based on located subpathways by hypergenomic test. (4) This package can support six species for metabolic subpathway identification, such as caenorhabditis elegans, drosophila melanogaster, danio rerio, homo sapiens, mus musculus and rattus norvegicus, and user only need to update interested organism-specific environment variables.
+Depends: R (>= 3.0.2), XML, igraph
+Collate: fdr.est.R getBackground.R getEdgeLabel.R getEdgeLty.R
+        getInteGraphList.R GetK2riData.R getLayout.R getLocSubGraph.R
+        getOneNodePath.R getSymbolFromGene.R identifyGraph.R
+        initializeK2ri.R plotGraph.R printGraph.R updateOrgEnvir.R
+        mytriangle.R
+LazyData: Yes
+License: GPL (>= 2)
+biocViews: Statistics, Annotation, SubPathways, Graphs, MicroRNAs
+Packaged: 2015-05-20 06:50:06 UTC; sunyao
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-05-20 14:15:38

@@ -1,0 +1,36 @@
+Package: rmzqc
+Title: Creation, Reading and Validation of 'mzqc' Files
+Version: 0.5.3
+Date: 2023-08-24
+Authors@R: 
+    c(person("Chris", "Bielow", 
+              email = "chris.bielow@bsc.fu-berlin.de", 
+              role = c("aut", "cre"), 
+              comment = c(ORCID = "0000-0001-5756-3988")),
+      person("David", "Jimenez-Morales", 
+              email = "biodavidjm@gmail.com", 
+              role = c("rev", "ctb"), 
+              comment = c(ORCID = "0000-0003-4356-6461")))
+Description: Reads, writes and validates 'mzQC' files. The 'mzQC' format is a 
+  standardized file format for the exchange, transmission, and archiving of 
+  quality metrics derived from biological mass spectrometry data, as defined 
+  by the HUPO-PSI (Human Proteome Organisation - Proteomics Standards Initiative) 
+  Quality Control working group. 
+  See <https://hupo-psi.github.io/mzQC/> for details.
+Imports: jsonlite, jsonvalidate, knitr, methods, ontologyIndex,
+        rmarkdown, R6, R6P, testthat, tools
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+URL: https://github.com/MS-Quality-hub/rmzqc
+BugReports: https://github.com/MS-Quality-hub/rmzqc/issues
+Encoding: UTF-8
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-08-25 12:34:25 UTC; bielow
+Author: Chris Bielow [aut, cre] (<https://orcid.org/0000-0001-5756-3988>),
+  David Jimenez-Morales [rev, ctb]
+    (<https://orcid.org/0000-0003-4356-6461>)
+Maintainer: Chris Bielow <chris.bielow@bsc.fu-berlin.de>
+Repository: CRAN
+Date/Publication: 2023-08-25 13:20:02 UTC

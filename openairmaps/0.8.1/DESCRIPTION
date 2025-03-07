@@ -1,0 +1,32 @@
+Type: Package
+Package: openairmaps
+Title: Create Maps of Air Pollution Data
+Version: 0.8.1
+Authors@R: c(
+    person("Jack", "Davison", , "jack.davison@ricardo.com", role = c("cre", "aut")),
+    person("David", "Carslaw", , "david.carslaw@york.ac.uk", role = "aut")
+  )
+Description: Combine the air quality data analysis methods of 'openair'
+    with the JavaScript 'Leaflet' (<https://leafletjs.com/>) library.
+    Functionality includes plotting site maps, "directional analysis"
+    figures such as polar plots, and air mass trajectories.
+License: GPL (>= 3)
+URL: https://davidcarslaw.github.io/openairmaps/,
+        https://github.com/davidcarslaw/openairmaps
+BugReports: https://github.com/davidcarslaw/openairmaps/issues
+Depends: R (>= 3.2.0)
+Imports: cli, dplyr, forcats, ggmap, ggplot2, ggtext, leaflet,
+        lifecycle, lubridate, magrittr, mgcv, openair (>= 2.13), purrr
+        (>= 1.0.0), rlang, sf, stringr, tibble, tidyr
+Suggests: httr, jsonlite, worldmet
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-11-03 09:18:23 UTC; JD38
+Author: Jack Davison [cre, aut],
+  David Carslaw [aut]
+Maintainer: Jack Davison <jack.davison@ricardo.com>
+Repository: CRAN
+Date/Publication: 2023-11-03 10:30:02 UTC

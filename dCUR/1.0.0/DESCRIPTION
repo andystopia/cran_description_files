@@ -1,0 +1,28 @@
+Package: dCUR
+Type: Package
+Title: Dimension Reduction with Dynamic CUR
+Version: 1.0.0
+Depends: R (>= 3.5.0)
+Maintainer: Cesar Gamboa <info@cesargamboasanabria.com>
+URL: https://www.cesargamboasanabria.com
+Author: Cesar Gamboa-Sanabria [aut, mdc, cph, cre] (<https://orcid.org/0000-0001-6733-4759>),
+    Stefani Matarrita-Munoz [aut] (<https://orcid.org/0000-0002-1222-1981>),
+    Katherine Barquero-Mejias [aut] (<https://orcid.org/0000-0003-1760-9026>),
+    Greibin Villegas-Barahona [aut] (<https://orcid.org/0000-0002-4380-0812>),
+    Mercedes Sanchez-Barba [aqt] (<https://orcid.org/0000-0002-3324-5798>),
+    Maria Purificacion Galindo-Villardon [aqt] (<https://orcid.org/0000-0001-6977-7545>)
+Description: Dynamic CUR (dCUR) boosts the CUR decomposition (Mahoney MW., Drineas P. (2009) <doi:10.1073/pnas.0803205106>) varying the k, the number of columns and rows used, and its final purposes to help find the stage, which minimizes the relative error to reduce matrix dimension.
+    The goal of CUR Decomposition is to give a better interpretation of the matrix decomposition employing proper variable selection in the data matrix, in a way that yields a simplified structure. Its origins come from analysis in genetics. 
+    The goal of this package is to show an alternative to variable selection (columns) or individuals (rows). The idea proposed consists of adjusting the probability distributions to the leverage scores and selecting the best columns and rows that minimize the reconstruction error of the matrix approximation ||A-CUR||. It also includes a method that recalibrates the relative importance of the leverage scores according to an external variable of the user's interest.
+Imports: parallel, magrittr, stackoverflow, mclust, MASS, ppcor,
+        ggplot2, dplyr, Rdpack
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RdMacros: Rdpack
+RoxygenNote: 7.1.1
+Suggests: testthat, snow
+NeedsCompilation: no
+Packaged: 2020-10-02 13:52:15 UTC; Dell
+Repository: CRAN
+Date/Publication: 2020-10-08 11:30:02 UTC

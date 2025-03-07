@@ -1,0 +1,15 @@
+Package: lincom
+Version: 1.0
+Date: 2023-03-28
+Title: Linear Biomarker Combination: Empirical Performance Optimization
+Author: Yijian Huang <yhuang5@emory.edu>
+Maintainer: Yijian Huang <yhuang5@emory.edu>
+Depends: R (>= 3.6.0)
+Imports: SparseM, Matrix, Rmosek, methods, stats
+SystemRequirements: MOSEK (>= 6), MOSEK License (>= 6)
+Description: Perform two linear combination methods for biomarkers: (1) Empirical performance optimization for specificity (or sensitivity) at a controlled sensitivity (or specificity) level of Huang and Sanda (2022) <doi:10.1214/22-aos2210>, and (2) weighted maximum score estimator with empirical minimization of averaged false positive rate and false negative rate. Both adopt the algorithms of Huang and Sanda (2022) <doi:10.1214/22-aos2210>. 'MOSEK' solver is used and needs to be installed; an academic license for 'MOSEK' is free.
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2023-04-06 11:44:14 UTC; eugene
+Repository: CRAN
+Date/Publication: 2023-04-07 08:40:02 UTC

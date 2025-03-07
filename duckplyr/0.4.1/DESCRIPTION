@@ -1,0 +1,40 @@
+Type: Package
+Package: duckplyr
+Title: A 'DuckDB'-Backed Version of 'dplyr'
+Version: 0.4.1
+Authors@R: c(
+    person("Hannes", "Mühleisen", role = "aut",
+           comment = c(ORCID = "0000-0001-8552-0029")),
+    person("Kirill", "Müller", , "kirill@cynkra.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1416-3412")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: A drop-in replacement for 'dplyr', powered by 'DuckDB' for performance.
+    Also defines a set of generics that provide a low-level
+    implementer's interface for the high-level user interface of 'dplyr'.
+License: MIT + file LICENSE
+URL: https://duckdblabs.github.io/duckplyr/,
+        https://github.com/duckdblabs/duckplyr
+BugReports: https://github.com/duckdblabs/duckplyr/issues
+Depends: R (>= 4.1.0)
+Imports: cli, collections, DBI, dplyr (>= 1.1.4), duckdb (>= 0.10.2),
+        glue, jsonlite, lifecycle, rlang (>= 1.0.6), tibble,
+        tidyselect, utils, vctrs (>= 0.6.3)
+Suggests: arrow, brio, constructive (>= 1.0.0), curl, dbplyr, hms,
+        lobstr, lubridate, palmerpenguins, pillar, prettycode, purrr,
+        qs, reprex, rstudioapi, testthat (>= 3.1.5), usethis, withr
+Config/Needs/check: anthonynorth/roxyglobals
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Config/testthat/start-first: rel_api, tpch, as_duckplyr_df, mutate,
+        filter, count-tally
+Encoding: UTF-8
+RoxygenNote: 7.3.2.9000
+NeedsCompilation: no
+Packaged: 2024-07-12 10:34:25 UTC; kirill
+Author: Hannes Mühleisen [aut] (<https://orcid.org/0000-0001-8552-0029>),
+  Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
+  Posit Software, PBC [cph, fnd]
+Maintainer: Kirill Müller <kirill@cynkra.com>
+Repository: CRAN
+Date/Publication: 2024-07-12 10:50:02 UTC

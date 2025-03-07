@@ -1,0 +1,24 @@
+Package: extrafrail
+Type: Package
+Title: Estimation and Additional Tools for Alternative Multivariate
+        Frailty Models
+Version: 1.0
+Date: 2022-06-09
+Authors@R: c(person("Diego", "Gallardo", role = c("aut","cre"), email = "diego.gallardo@uda.cl"),
+	person("Marcelo", "Bourguignon", role = "aut", email = "m.p.bourguignon@gmail.com"))
+Author: Diego Gallardo [aut, cre],
+  Marcelo Bourguignon [aut]
+Maintainer: Diego Gallardo <diego.gallardo@uda.cl>
+Description: Provide estimation and data generation tools for some new multivariate frailty models.
+             This initial version includes only the weighted Lindley as the distribution for the frailty terms. 
+             For the basal model, it is considered a parametric approach based on the Weibull distribution 
+             and a semiparametric approach. For details, see Gallardo and Bourguignon (2022) 
+             <arXiv:2206.12973>.
+Depends: R (>= 4.0.0), stats
+Imports: survival, pracma
+Suggests: frailtypack
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2022-06-28 16:49:30 UTC; Usuario
+Repository: CRAN
+Date/Publication: 2022-06-30 06:10:07 UTC

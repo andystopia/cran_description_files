@@ -1,0 +1,49 @@
+Package: twangMediation
+Title: Twang Causal Mediation Modeling via Weighting
+Version: 1.0
+Authors@R: 
+    c(person(given = "Dan",
+           family = "McCaffrey",
+           role = c("aut", "cre"),
+           email = "dmccaffrey@ets.org"),
+    person(given = "Katherine",
+           family = "Castellano",
+           role = c("aut"),
+           email = "kecastellano@ets.org"),
+    person(given = "Donna",
+           family = "Coffman",
+           role = c("aut"),
+           email = "donna.coffman@temple.edu"),
+    person(given = "Brian",
+           family = "Vegetabile",
+           role = c("aut"),
+           email = "bvegetab@rand.org"),
+    person(given = "Megan",
+           family = "Schuler",
+           role = c("aut"),
+           email = "mschuler@rand.org"),
+    person(given = "Haoyu",
+           family = "Zhou",
+           role = c("aut"),
+           email = "haoyu.zhou@temple.edu"))
+Author: Dan McCaffrey [aut, cre],
+  Katherine Castellano [aut],
+  Donna Coffman [aut],
+  Brian Vegetabile [aut],
+  Megan Schuler [aut],
+  Haoyu Zhou [aut]
+Maintainer: Dan McCaffrey <dmccaffrey@ets.org>
+Description: Provides functions for estimating natural direct and indirect effects for mediation analysis. It uses weighting where the weights are functions of estimates of the probability of exposure or treatment assignment (Hong, G (2010). <https://cepa.stanford.edu/sites/default/files/workshops/GH_JSM%20Proceedings%202010.pdf> Huber, M. (2014). <doi:10.1002/jae.2341>). Estimation of probabilities can use generalized boosting or logistic regression. Additional functions provide diagnostics of the model fit and weights. The vignette provides details and examples.
+Depends: R (>= 2.10)
+Imports: twang, gbm (>= 1.5-3), gridExtra, graphics, stats, lattice,
+        latticeExtra, survey
+Suggests: knitr
+VignetteBuilder: knitr
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+LazyData: true
+NeedsCompilation: no
+Packaged: 2021-07-27 02:20:36 UTC; DMCCAFFREY
+Repository: CRAN
+Date/Publication: 2021-07-27 08:50:02 UTC

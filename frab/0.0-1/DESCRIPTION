@@ -1,0 +1,26 @@
+Package: frab
+Type: Package
+Title: An Alternative Interpretation of Named Vectors
+Version: 0.0-1
+Authors@R: person(given=c("Robin", "K. S."), family="Hankin", role = c("aut","cre"), email="hankin.robin@gmail.com", comment = c(ORCID = "0000-0001-5982-0415"))
+Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
+Description: An alternative interpretation of named vectors as
+     generalized tables, so that c(a=1,b=2,c=3) + c(b=3,a=-1) will
+     return c(b=5,c=3).  Uses 'disordR' discipline (Hankin, 2022,
+     <doi:10.48550/ARXIV.2210.03856>).  Extraction and replacement
+     methods are provided.  The underlying mathematical structure is
+     the Free Abelian group, hence the name.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Suggests: knitr, markdown, rmarkdown, testthat
+VignetteBuilder: knitr
+Imports: Rcpp (>= 1.0-7), mathjaxr, disordR (>= 0.9-8-1), methods
+LinkingTo: Rcpp
+URL: https://github.com/RobinHankin/frab
+BugReports: https://github.com/RobinHankin/frab
+RdMacros: mathjaxr
+NeedsCompilation: yes
+Packaged: 2023-07-19 21:37:40 UTC; rhankin
+Author: Robin K. S. Hankin [aut, cre] (<https://orcid.org/0000-0001-5982-0415>)
+Repository: CRAN
+Date/Publication: 2023-07-20 11:20:02 UTC

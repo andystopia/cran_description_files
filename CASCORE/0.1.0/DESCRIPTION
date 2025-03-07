@@ -1,0 +1,21 @@
+Package: CASCORE
+Type: Package
+Title: Covariate Assisted Spectral Clustering on Ratios of Eigenvectors
+Version: 0.1.0
+Author: Yaofang Hu [aut, cre],
+  Wanjie Wang [aut]
+Maintainer: Yaofang Hu <yaofangh@smu.edu>
+Description: Functions for the novel algorithm CASCORE, proposed to detect the latent community structure in graphs with node covariates. The models we can handle include covariate assisted degree corrected stochastic block model (CADCSBM). CASCORE allows for the disagreement between the community structure revealed in the adjacency information and the community structure revealed in the covariate information. More details are in the reference paper: Yaofang Hu and Wanjie Wang (2022) <arXiv:2208.00257>. 
+    This package also includes other classical community detection algorithms that are compared to CASCORE in our paper, such as Spectral Clustering On Ratios-of Eigenvectors (SCORE), normalized PCA, ordinary PCA and covariate-assisted spectral clustering (CASC).
+Imports: stats, pracma, igraph
+License: GPL-2
+Encoding: UTF-8
+URL: https://arxiv.org/abs/2006.03284
+Authors@R: c(person("Yaofang", "Hu", role=c("aut", "cre"), email = "yaofangh@smu.edu"),
+             person("Wanjie", "Wang", role=c("aut"), email = "staww@nus.edu.sg"))
+RoxygenNote: 7.2.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2022-08-15 18:25:32 UTC; yaofang
+Repository: CRAN
+Date/Publication: 2022-08-17 06:40:09 UTC

@@ -1,0 +1,32 @@
+Package: SAMtool
+Type: Package
+Title: Stock Assessment Methods Toolkit
+Version: 1.5.1
+Authors@R: c(person("Quang", "Huynh", email = "quang@bluematterscience.com", role = c("aut", "cre")), 
+  person("Tom", "Carruthers", email = "tom@bluematterscience.com", role = "aut"),
+  person("Adrian", "Hordyk", email = "adrian@bluematterscience.com", role = "aut"))
+Date: 2023-02-08
+Maintainer: Quang Huynh <quang@bluematterscience.com>
+Description: Simulation tools for closed-loop simulation are provided for the 'MSEtool' operating model to inform data-rich fisheries. 
+  'SAMtool' provides a conditioning model, assessment models of varying complexity with standardized reporting, 
+  model-based management procedures, and diagnostic tools for evaluating assessments inside closed-loop simulation.
+License: GPL-3
+Depends: R (>= 3.5.0), MSEtool (>= 3.0.0)
+Imports: TMB (>= 1.9.0), corpcor, dplyr, gplots, graphics, methods,
+        pbapply, rmarkdown, snowfall, stats, utils, vars
+LinkingTo: TMB, RcppEigen
+Suggests: abind, caret, covr, extraDistr, ggplot2, Gmisc, knitr,
+        mvtnorm, numDeriv, reshape2, shiny, testthat, tmbstan, usethis
+LazyData: yes
+LazyLoad: yes
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+URL: https://openmse.com, https://github.com/Blue-Matter/SAMtool
+BugReports: https://github.com/Blue-Matter/SAMtool/issues
+NeedsCompilation: yes
+Packaged: 2023-02-08 20:55:27 UTC; qhuynh
+Author: Quang Huynh [aut, cre],
+  Tom Carruthers [aut],
+  Adrian Hordyk [aut]
+Repository: CRAN
+Date/Publication: 2023-02-08 23:20:02 UTC

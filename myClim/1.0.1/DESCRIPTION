@@ -1,0 +1,46 @@
+Package: myClim
+Type: Package
+Title: Microclimatic Data Processing
+Version: 1.0.1
+URL: http://labgis.ibot.cas.cz/myclim/index.html,
+        https://github.com/ibot-geoecology/myClim
+Authors@R: c(
+    person("Matěj", "Man", email = "Matej.Man@ibot.cas.cz", role = "aut"),
+    person("Vojtěch", "Kalčík", email = "Vojtech.Kalcik@ibot.cas.cz", role = c("aut", "cre")),
+    person("Martin", "Macek", email = "Martin.Macek@ibot.cas.cz", role = "aut"),
+    person("Jan", "Wild", email = "Jan.Wild@ibot.cas.cz", role = "aut"),
+    person("Martin", "Kopecký", email = "Martin.Kopecky@ibot.cas.cz", role = "aut"),
+    person("Josef", "Brůna", email = "Josef.Bruna@ibot.cas.cz", role = "aut"),
+    person("Lucia", "Hederová", email = "Lucia.Hederova@ibot.cas.cz", role = "aut"),
+    person("Institute of Botany of the Czech Academy of Sciences", role = "cph"))
+Description: Handling the microclimatic data in R. The 'myClim' workflow begins
+    at the reading data primary from microclimatic dataloggers,
+    but can be also reading of meteorological station data from files.
+    Cleaning time step, time zone settings and metadata collecting is the next step of the work flow.
+    With 'myClim' tools one can crop, join, downscale, and convert microclimatic data formats, sort them into localities,
+    request descriptive characteristics and compute microclimatic variables.
+    Handy plotting functions are provided with smart defaults.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5)
+Imports: stringr, lubridate, tibble, dplyr, purrr, tidyr, ggplot2,
+        ggforce, viridis, runner, plotly, zoo, methods
+Additional_repositories: https://ibot-geoecology.github.io/drat
+Suggests: rmarkdown, knitr, kableExtra, rTubeDB, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-05-07 20:53:46 UTC; jules
+Author: Matěj Man [aut],
+  Vojtěch Kalčík [aut, cre],
+  Martin Macek [aut],
+  Jan Wild [aut],
+  Martin Kopecký [aut],
+  Josef Brůna [aut],
+  Lucia Hederová [aut],
+  Institute of Botany of the Czech Academy of Sciences [cph]
+Maintainer: Vojtěch Kalčík <Vojtech.Kalcik@ibot.cas.cz>
+Repository: CRAN
+Date/Publication: 2023-05-08 17:40:02 UTC

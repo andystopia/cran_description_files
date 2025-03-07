@@ -1,0 +1,35 @@
+Package: tramME
+Title: Transformation Models with Mixed Effects
+Version: 1.0.2
+Date: 2022-07-04
+Authors@R: c(person("Balint", "Tamasi", role = c("aut", "cre"),
+                    email = "balint.tamasi@uzh.ch", comment = c(ORCID = "0000-0002-2629-7362")),
+             person("Torsten", "Hothorn",  role = "ctb",
+                    email = "Torsten.Hothorn@R-project.org", comment = c(ORCID = "0000-0001-8301-0471")))
+Description: Likelihood-based estimation of mixed-effects transformation models using the Template
+  Model Builder ('TMB', Kristensen et al., 2016, <doi:10.18637/jss.v070.i05>). The technical details
+  of transformation models are given in Hothorn et al. (2018, <doi:10.1111/sjos.12291>). Likelihood
+  contributions of exact, randomly censored (left, right, interval) and truncated observations are
+  supported. The random effects are assumed to be normally distributed on the scale of the
+  transformation function, the marginal likelihood is evaluated using the Laplace approximation,
+  and the gradients are calculated with automatic differentiation (Tamasi and Hothorn, 2021,
+  <doi:10.32614/RJ-2021-075>). Penalized smooth shift terms can be defined using 'mgcv'.
+Depends: R (>= 3.6.0), tram (>= 0.3.2), mlt (>= 1.1.0)
+Imports: alabama, lme4 (>= 1.1.19), Matrix, methods, mgcv (>= 1.8.34),
+        nlme, TMB (>= 1.7.15), stats, variables (>= 1.0.2), basefun (>=
+        1.0.6), numDeriv, MASS, coneproj
+Suggests: multcomp, parallel, survival, knitr, coxme, ordinal,
+        ordinalCont, gamm4, gamlss.dist, glmmTMB, xtable
+LinkingTo: TMB, RcppEigen
+VignetteBuilder: knitr
+License: GPL-2
+URL: http://ctm.R-forge.R-project.org
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+NeedsCompilation: yes
+Packaged: 2022-07-04 14:31:16 UTC; balint
+Author: Balint Tamasi [aut, cre] (<https://orcid.org/0000-0002-2629-7362>),
+  Torsten Hothorn [ctb] (<https://orcid.org/0000-0001-8301-0471>)
+Maintainer: Balint Tamasi <balint.tamasi@uzh.ch>
+Repository: CRAN
+Date/Publication: 2022-07-05 00:20:02 UTC

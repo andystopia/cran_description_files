@@ -1,0 +1,32 @@
+Package: codacore
+Title: Learning Sparse Log-Ratios for Compositional Data
+Version: 0.0.3
+Authors@R: c(
+    person("Elliott", "Gordon-Rodriguez", email = "eg2912@columbia.edu", role = c("aut", "cre")),
+    person("Thomas", "Quinn", email = "contacttomquinn@gmail.com", role = c("aut"))
+    )
+Description: In the context of high-throughput genetic data,
+    CoDaCoRe identifies a set of sparse biomarkers that are
+    predictive of a response variable of interest (Gordon-Rodriguez 
+    et al., 2021) <doi:10.1093/bioinformatics/btab645>. More 
+    generally, CoDaCoRe can be applied to any regression problem 
+    where the independent variable is Compositional (CoDa), to 
+    derive a set of scale-invariant log-ratios (ILR or SLR) that 
+    are maximally associated to a dependent variable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.6.0)
+Imports: tensorflow (>= 2.1), keras (>= 2.3), pROC (>= 1.17), R6 (>=
+        2.5), gtools(>= 3.8)
+SystemRequirements: TensorFlow (https://www.tensorflow.org/)
+Suggests: zCompositions, testthat (>= 2.1.0), knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-01-05 18:12:36 UTC; elliott
+Author: Elliott Gordon-Rodriguez [aut, cre],
+  Thomas Quinn [aut]
+Maintainer: Elliott Gordon-Rodriguez <eg2912@columbia.edu>
+Repository: CRAN
+Date/Publication: 2022-01-07 10:10:02 UTC

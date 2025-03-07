@@ -1,0 +1,27 @@
+Package: pastboon
+Type: Package
+Title: Simulation of Parameterized Stochastic Boolean Networks
+Version: 0.1.0
+Description: Applying stochastic noise to Boolean networks is a useful approach for representing the effects of various perturbing stimuli on complex systems. A number of methods have been developed to control noise effects on Boolean networks using parameters integrated into the update rules. This package provides functions to examine three such methods: BNp (Boolean network with perturbations), described by Trairatphisan et al. (2013) <doi:10.1186/1478-811X-11-46>, SDDS (stochastic discrete dynamical systems), proposed by Murrugarra et al. (2012) <doi:10.1186/1687-4153-2012-5>, and PEW (Boolean network with probabilistic edge weights), presented by Deritei et al. (2022) <doi:10.1371/journal.pcbi.1010536>. This package includes source code derived from the 'BoolNet' package, which is licensed under the Artistic License 2.0.
+Authors@R: c(person("Mohammad", "Taheri-Ledari", role = c("aut", "cre","cph"), email = "mo.taheri@ut.ac.ir", comment = c(ORCID = "0009-0007-9132-077X")),
+    person("Kaveh", "Kavousi", role = "ctb", email = "kkavousi@ut.ac.ir", comment = c(ORCID = "0000-0002-1906-3912")),
+    person("Sayed-Amir", "Marashi", role = "ctb", email = "marashi@ut.ac.ir", comment = c(ORCID = "0000-0001-9801-7449")),
+    person(given = "Authors of BoolNet", role = "ctb", comment = "Original authors of the BoolNet package"),
+    person(c("Troy", "D."), "Hanson", role = "ctb", comment="contributed uthash macros"))
+Author: Mohammad Taheri-Ledari [aut, cre, cph]
+    (<https://orcid.org/0009-0007-9132-077X>),
+  Kaveh Kavousi [ctb] (<https://orcid.org/0000-0002-1906-3912>),
+  Sayed-Amir Marashi [ctb] (<https://orcid.org/0000-0001-9801-7449>),
+  Authors of BoolNet [ctb] (Original authors of the BoolNet package),
+  Troy D. Hanson [ctb] (contributed uthash macros)
+Maintainer: Mohammad Taheri-Ledari <mo.taheri@ut.ac.ir>
+Depends: R (>= 3.5.0)
+Suggests: BoolNet
+License: Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+BugReports: https://github.com/taherimo/pastboon/issues
+Packaged: 2024-07-21 15:04:32 UTC; taheri
+Repository: CRAN
+Date/Publication: 2024-07-23 00:30:06 UTC

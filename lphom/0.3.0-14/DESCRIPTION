@@ -1,0 +1,35 @@
+Package: lphom
+Type: Package
+Title: Ecological Inference by Linear Programming under Homogeneity
+Version: 0.3.0-14
+Authors@R: 
+    c(person(given = "Jose M.",
+           family = "Pavía",
+           role = c("aut", "cre"),
+           email = "jose.m.pavia@uv.es",
+           comment = c(ORCID = "0000-0002-0129-726X")),
+       person(given = "Rafael",
+           family = "Romero",
+           role = "aut",
+           email = "rromero@eio.upv.es"))
+Description: Provides a bunch of algorithms based on linear programming for estimating, 
+    under the homogeneity hypothesis, RxC ecological contingency tables 
+    (or vote transition matrices) using exclusively aggregate
+    data (from voting units). References: 
+    Romero, Pavía, Martín and Romero (2020) <doi:10.1080/02664763.2020.1804842>.
+    Pavía and Romero (2021a) <doi:10.31124/advance.14716638.v1>.
+    Pavía and Romero (2021b) Symmetry estimating R×C vote transfer matrices from aggregate data.
+License: EPL | file LICENSE
+Encoding: UTF-8
+Imports: stats, lpSolve, Rsymphony (>= 0.1-30)
+Depends: R (>= 3.5.0)
+Suggests: ggplot2, scales
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-12-21 00:03:55 UTC; Jose M Pavia
+Author: Jose M. Pavía [aut, cre] (<https://orcid.org/0000-0002-0129-726X>),
+  Rafael Romero [aut]
+Maintainer: Jose M. Pavía <jose.m.pavia@uv.es>
+Repository: CRAN
+Date/Publication: 2021-12-23 08:20:06 UTC

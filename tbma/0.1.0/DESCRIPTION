@@ -1,0 +1,20 @@
+Package: tbma
+Type: Package
+Title: Tree-Based Moving Average Forecasting Model
+Version: 0.1.0
+Date: 2020-03-16
+Authors@R: c(person("Burakhan", "Sel", email = "burakhan.sel@boun.edu.tr",  role = c("aut", "cre")),person("Mustafa Gokce", "Baydogan", role = "aut"))
+Author: Burakhan Sel [aut, cre],
+  Mustafa Gokce Baydogan [aut]
+Description: We provide a forecasting model for time series forecasting problems with predictors. The offered model, which is based on a submitted research and called tree-based moving average (TBMA),  is based on the integration of the moving average approach to tree-based ensemble approach.  The tree-based ensemble models can capture the complex correlations between the predictors and response variable but lack in modelling time series components. The integration of the moving average approach to the tree-based ensemble approach helps the TBMA model to handle both correlations and autocorrelations in time series data. This package provides a tbma() forecasting function that utilizes the ranger() function from the 'ranger' package. With the help of the ranger() function, various types of tree-based ensemble models, such as extremely randomized trees and random forests, can be used in the TBMA model.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown
+Imports: data.table, ranger, zoo, RcppRoll
+NeedsCompilation: no
+Packaged: 2020-04-04 14:26:20 UTC; Burakhan
+Maintainer: Burakhan Sel <burakhan.sel@boun.edu.tr>
+Repository: CRAN
+Date/Publication: 2020-04-06 14:20:03 UTC

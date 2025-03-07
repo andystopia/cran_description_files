@@ -1,0 +1,28 @@
+Package: directlabels
+Maintainer: Toby Dylan Hocking <toby.hocking@r-project.org>
+Author: Toby Dylan Hocking
+Version: 2020.12.29
+BugReports: https://github.com/tdhock/directlabels/issues
+License: GPL-3
+Title: Direct Labels for Multicolor Plots
+Description: An extensible framework
+ for automatically placing direct labels onto multicolor 'lattice' or
+ 'ggplot2' plots.
+ Label positions are described using Positioning Methods
+ which can be re-used across several different plots.
+ There are heuristics for examining "trellis" and "ggplot" objects
+ and inferring an appropriate Positioning Method.
+URL: https://github.com/tdhock/directlabels
+LazyData: true
+Suggests: MASS, knitr, markdown, inlinedocs, RColorBrewer, ggplot2 (>=
+        2.0), rlang, lattice, alphahull, nlme, lars, latticeExtra,
+        dplyr, ggthemes, testthat
+Imports: grid, quadprog
+Collate: utility.function.R compare.R dotplot.R lineplot.R
+        densityplot.R ggplot2.R positioning.functions.R doc.R lattice.R
+        scatterplot.R contourplot.R
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-12-30 04:56:21 UTC; tdhock
+Repository: CRAN
+Date/Publication: 2021-01-05 18:10:03 UTC

@@ -1,0 +1,36 @@
+Package: MedianaDesigner
+Type: Package
+Title: Power and Sample Size Calculations for Clinical Trials
+Version: 0.12
+Date: 2023-01-12
+Author: Alex Dmitrienko [aut, cre]
+Authors@R: c(
+  person("Alex", "Dmitrienko", email = "admitrienko@mediana.us", role = c("aut", "cre")))
+Depends: R (>= 3.1.2)
+Imports: Rcpp (>= 0.12.10), RcppNumerical, methods, officer, flextable,
+        devEMF, mvtnorm, shiny, shinydashboard, shinyMatrix, foreach,
+        parallel, doParallel, MASS, rootSolve, lme4, lmerTest, pbkrtest
+Suggests: testthat, doRNG
+LinkingTo: Rcpp, RcppEigen, RcppNumerical
+Maintainer: Alex Dmitrienko <admitrienko@mediana.us>
+Description: 
+  Efficient simulation-based power and sample size calculations are supported for a
+  broad class of late-stage clinical trials. The following modules are included in
+  the package:
+  Adaptive designs with data-driven sample size or event count re-estimation,
+  Adaptive designs with data-driven treatment selection,
+  Adaptive designs with data-driven population selection,
+  Optimal selection of a futility stopping rule,
+  Event prediction in event-driven trials,
+  Adaptive trials with response-adaptive randomization (experimental module),
+  Traditional trials with multiple objectives (experimental module).
+  Traditional trials with cluster-randomized designs (experimental module).
+License: GPL-3
+LazyLoad: yes
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2023-01-12 13:08:33 UTC; victordmitrienko
+Repository: CRAN
+Date/Publication: 2023-01-12 13:50:02 UTC
+URL: https://github.com/medianasoft/MedianaDesigner
+BugReports: https://github.com/medianasoft/MedianaDesigner/issues

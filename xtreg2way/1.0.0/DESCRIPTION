@@ -1,0 +1,35 @@
+Package: xtreg2way
+Type: Package
+Title: Feasible Estimation of the Two-Way Fixed Effect Model
+Version: 1.0.0
+Authors@R: c(
+    person("Paulo", "Somaini", email = "soma@stanford.edu", role = c("aut", "cre","cph")),
+    person("Frank", "Wolak", email= "wolak@stanford.edu", role=c("aut")),
+    person("Brian", "Chivers", email = "bchivers@stanford.edu", role = c("aut")))
+Description: Implemented is an algorithm to estimate the two-way fixed effect linear model. 
+    The coefficients of interest are computed using the residuals from the 
+    projection of all variables on the two sets of fixed effects. Our algorithm
+    has three desirable features. First, it manages memory and computational 
+    resources efficiently which speeds up the computation of the estimates. 
+    Second, it allows the researcher to estimate multiple specifications 
+    using the same set of fixed effects at a very low computational cost. 
+    Third, the asymptotic variance of the parameters of interest can be 
+    consistently estimated using standard routines on the residualized data. 
+    Somaini P., Wolak F. A. (2016) <doi:10.1515/jem-2014-0008>
+    Arellano, M. (1987) <https://ideas.repec.org/a/bla/obuest/v49y1987i4p431-34.html>.
+License: MIT + file LICENSE
+URL: https://github.com/paulosomaini/xtreg2way
+Encoding: UTF-8
+LazyData: true
+Imports: pracma, Matrix, stats, MASS
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-08-04 22:10:06 UTC; chivers
+Author: Paulo Somaini [aut, cre, cph],
+  Frank Wolak [aut],
+  Brian Chivers [aut]
+Maintainer: Paulo Somaini <soma@stanford.edu>
+Repository: CRAN
+Date/Publication: 2020-08-11 08:40:03 UTC

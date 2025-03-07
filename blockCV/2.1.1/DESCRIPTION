@@ -1,0 +1,34 @@
+Package: blockCV
+Type: Package
+Title: Spatial and Environmental Blocking for K-Fold Cross-Validation
+Version: 2.1.1
+Date: 2020-02-16
+Authors@R: c(person("Roozbeh", "Valavi", role = c("aut", "cre"),
+                    email = "valavi.r@gmail.com"),
+             person("Jane", "Elith", role = "aut",
+                    email = "j.elith@unimelb.edu.au"),
+             person("José", "Lahoz-Monfort", role = "aut",
+                    email = "jose.lahoz@unimelb.edu.au"),
+             person("Gurutzeta", "Guillera-Arroita", role = "aut",
+                    email = "gurutzeta.guillera@unimelb.edu.au"))
+URL: https://github.com/rvalavi/blockCV
+Maintainer: Roozbeh Valavi <valavi.r@gmail.com>
+Description: Creating spatially or environmentally separated folds for cross-validation to provide a robust error estimation in spatially structured environments; Investigating and visualising the effective range of spatial autocorrelation in continuous raster covariates to find an initial realistic distance band to separate training and testing datasets spatially described in Valavi, R. et al. (2019) <doi:10.1111/2041-210X.13107>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: raster (>= 2.5-8), sf (>= 0.8-0), progress
+RoxygenNote: 7.0.2
+Suggests: knitr, ggplot2 (>= 3.2.1), cowplot, automap (>= 1.0-14),
+        rgeos, future, future.apply, shiny (>= 1.0.3), shinydashboard,
+        geosphere, methods, rmarkdown, testthat, covr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-02-17 11:54:41 UTC; rvalavi
+Author: Roozbeh Valavi [aut, cre],
+  Jane Elith [aut],
+  José Lahoz-Monfort [aut],
+  Gurutzeta Guillera-Arroita [aut]
+Repository: CRAN
+Date/Publication: 2020-02-23 20:00:02 UTC

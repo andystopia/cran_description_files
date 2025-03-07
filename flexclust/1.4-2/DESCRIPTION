@@ -1,0 +1,33 @@
+Package: flexclust
+Version: 1.4-2
+Date: 2024-04-26
+Encoding: UTF-8
+Authors@R: c(person("Friedrich", "Leisch", role="aut",
+		    comment = c(ORCID = "0000-0001-7278-1983",
+		                "maintainer up to 2024")),
+	     person("Evgenia", "Dimitriadou", role="ctb"),
+	     person("Bettina", "Grün", role=c("ctb", "cre"),
+                    email = "Bettina.Gruen@R-project.org",
+                    comment = c(ORCID = "0000-0001-7265-4773")))
+Title: Flexible Cluster Algorithms
+Depends: R (>= 2.14.0), graphics, grid, lattice, modeltools
+Imports: methods, parallel, stats, stats4, class
+Suggests: ellipse, clue, cluster, seriation, skmeans
+Description: The main function kcca implements a general framework for
+  k-centroids cluster analysis supporting arbitrary distance measures
+  and centroid computation. Further cluster methods include hard
+  competitive learning, neural gas, and QT clustering. There are
+  numerous visualization methods for cluster results (neighborhood
+  graphs, convex cluster hulls, barcharts of centroids, ...), and
+  bootstrap methods for the analysis of cluster stability.
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2024-04-26 18:09:42 UTC; gruen
+Author: Friedrich Leisch [aut] (<https://orcid.org/0000-0001-7278-1983>,
+    maintainer up to 2024),
+  Evgenia Dimitriadou [ctb],
+  Bettina Grün [ctb, cre] (<https://orcid.org/0000-0001-7265-4773>)
+Maintainer: Bettina Grün <Bettina.Gruen@R-project.org>
+Repository: CRAN
+Date/Publication: 2024-04-27 06:32:37 UTC

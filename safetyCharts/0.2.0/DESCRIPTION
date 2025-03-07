@@ -1,0 +1,26 @@
+Package: safetyCharts
+Title: Charts for Monitoring Clinical Trial Safety
+Version: 0.2.0
+Authors@R: 
+    person(
+        given = "Jeremy",
+        family = "Wildfire",
+        role = c("aut", "cre"),
+        email = "jwildfire@gmail.com"
+    )
+Maintainer: Jeremy Wildfire <jwildfire@gmail.com>
+Description: Contains chart code for monitoring clinical trial safety. Charts can be used as standalone output, but are also designed for use with the 'safetyGraphics' package, which makes it easy to load data and customize the charts using an interactive web-based interface created with Shiny.
+URL: https://github.com/SafetyGraphics/safetyCharts
+BugReports: https://github.com/SafetyGraphics/safetyCharts/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: dplyr, DT, Tplyr, ggplot2, rlang, shiny, knitr, RColorBrewer,
+        stringr, forcats, Tendril, kableExtra, huxtable, pharmaRTF
+Suggests: testthat, shinytest, safetyData, safetyGraphics, yaml
+Depends: R (>= 4.0)
+NeedsCompilation: no
+Packaged: 2021-09-13 17:44:56 UTC; jwildfire
+Author: Jeremy Wildfire [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-09-14 07:10:06 UTC

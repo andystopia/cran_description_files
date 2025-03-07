@@ -1,0 +1,30 @@
+Type: Package
+Package: ShapleyOutlier
+Title: Multivariate Outlier Explanations using Shapley Values and
+        Mahalanobis Distances
+Version: 0.1.0
+Authors@R: 
+   c(
+   person(given = "Marcus", family = "Mayrhofer", email = "marcus.mayrhofer@tuwien.ac.at", role = c("aut", "cre")),
+   person(given = "Peter", family = "Filzmoser", role = c("aut"))
+   )
+Depends: R (>= 4.0.0)
+Maintainer: Marcus Mayrhofer <marcus.mayrhofer@tuwien.ac.at>
+Description: Based on Shapley values to explain multivariate outlyingness and to detect and impute cellwise outliers.
+    Includes implementations of methods described in Mayrhofer and Filzmoser (2022) <doi:10.48550/ARXIV.2210.10063>.
+License: GPL-3
+Imports: dplyr, Rdpack, stats, tibble, tidyr, robustbase, forcats, egg,
+        ggplot2, gridExtra, RColorBrewer, magrittr
+Suggests: grDevices, cellWise, robustHD, tidyverse, knitr, MASS,
+        rmarkdown
+RdMacros: Rdpack
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2022-10-21 07:25:30 UTC; max78
+Author: Marcus Mayrhofer [aut, cre],
+  Peter Filzmoser [aut]
+Date/Publication: 2022-10-21 15:15:07 UTC

@@ -1,0 +1,33 @@
+Package: urbin
+Version: 0.1-4
+Date: 2018-10-31
+Title: Unifying Estimation Results with Binary Dependent Variables
+Author: Arne Henningsen, Geraldine Henningsen
+Maintainer: Arne Henningsen <arne.henningsen@gmail.com>
+Depends: R (>= 2.14.0)
+Suggests: sampleSelection (>= 0.7-0), maxLik (>= 1.1-2), mfx (>= 1.1),
+        mlogit (>= 0.3-0), MASS (>= 7.3-50), mvProbit (>= 0.1-8)
+Description: Calculate unified measures
+  that quantify the effect of a covariate on a binary dependent variable
+  (e.g., for meta-analyses).
+  This can be particularly important
+  if the estimation results are obtained
+  with different models/estimators
+  (e.g., linear probability model, logit, probit, ...)
+  and/or with different transformations of the explanatory variable of interest
+  (e.g., linear, quadratic, interval-coded, ...).
+  The calculated unified measures are:
+  (a) semi-elasticities of linear, quadratic, or interval-coded covariates and
+  (b) effects of linear, quadratic, interval-coded, or categorical covariates
+  when a linear or quadratic covariate changes between distinct intervals,
+  the reference category of a categorical variable
+  or the reference interval of an interval-coded variable needs to be changed,
+  or some categories of a categorical covariate
+  or some intervals of an interval-coded covariate need to be grouped together.
+  Approximate standard errors of the unified measures are also calculated.
+License: GPL (>= 2)
+URL: http://r-forge.r-project.org/projects/urbin/
+NeedsCompilation: no
+Packaged: 2018-10-31 10:06:46 UTC; gsl324
+Repository: CRAN
+Date/Publication: 2018-10-31 10:50:04 UTC

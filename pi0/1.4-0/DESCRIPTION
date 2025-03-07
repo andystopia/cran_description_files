@@ -1,0 +1,37 @@
+Package: pi0
+Type: Package
+Title: Estimating the Proportion of True Null Hypotheses for FDR
+Version: 1.4-0
+Date: 2015-07-05
+Authors@R: c(
+  person("Long", "Qu", role=c("aut", "cre","ctb"), email="long.qu@wright.edu"), 
+  person("Kun", "Liang", role='ctb'),
+  person(list("Yudi","Alexander"), list("Pawitan", "Ploner"), role="aut", comment="The author(s) of OCplus::tMixture, which was modified slightly leading to discTMix in this package."),
+  person(list('Egil', 'Mette', 'Marcus'), list('Ferkingstad', 'Langaas', 'Davy') , role="aut", comment="The author(s) of limma::convest, which was modified slightly leading to convest in this package.")
+  )
+Depends: R (>= 2.12.0)
+Imports: Matrix (>= 1.0-0), numDeriv, limSolve (>= 1.5.2), rgl,
+        scatterplot3d, qvalue, Iso(>= 0.0-5), quadprog (>= 1.5-3),
+        kernlab, LowRankQP, graphics, grDevices, methods, stats
+Suggests: limma, OCplus
+Description: Methods for estimating the proportion of true null hypotheses, i.e., the pi0, when a very large number of hypotheses are simultaneously tested, especially for the purpose of (local) false discovery rate control for microarray data. It also contains functions to estimate the distribution of noncentrality parameters from a large number of parametric tests. 
+License: GPL (>= 2)
+URL: https://github.com/gitlongor/pi0
+BugReports: https://github.com/gitlongor/pi0/issues
+NeedsCompilation: yes
+Packaged: 2015-07-06 03:14:17 UTC; Longor
+Author: Long Qu [aut, cre, ctb],
+  Kun Liang [ctb],
+  Yudi Pawitan [aut] (The author(s) of OCplus::tMixture, which was
+    modified slightly leading to discTMix in this package.),
+  Alexander Ploner [aut] (The author(s) of OCplus::tMixture, which was
+    modified slightly leading to discTMix in this package.),
+  Egil Ferkingstad [aut] (The author(s) of limma::convest, which was
+    modified slightly leading to convest in this package.),
+  Mette Langaas [aut] (The author(s) of limma::convest, which was
+    modified slightly leading to convest in this package.),
+  Marcus Davy [aut] (The author(s) of limma::convest, which was modified
+    slightly leading to convest in this package.)
+Maintainer: Long Qu <long.qu@wright.edu>
+Repository: CRAN
+Date/Publication: 2015-07-06 19:32:47

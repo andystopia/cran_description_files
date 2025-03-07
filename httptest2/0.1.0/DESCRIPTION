@@ -1,0 +1,36 @@
+Package: httptest2
+Type: Package
+Title: Test Helpers for 'httr2'
+Description: Testing and documenting code that communicates with remote servers
+    can be painful. This package helps with writing tests for packages that
+    use 'httr2'. It enables testing all of the logic
+    on the R sides of the API without requiring access to the
+    remote service, and it also allows recording real API responses to use as
+    test fixtures. The ability to save responses and load them offline also
+    enables writing vignettes and other dynamic documents that can be
+    distributed without access to a live server.
+Version: 0.1.0
+Authors@R: c(
+        person("Neal", "Richardson", role=c("aut", "cre"), email="neal.p.richardson@gmail.com"),
+        person("Jonathan", "Keane", role="ctb", email="jkeane@gmail.com"),
+        person("Maëlle", "Salmon", role="ctb", email="maelle.salmon@yahoo.se", comment=c(ORCID="0000-0002-2815-0399"))
+    )
+URL: https://enpiar.com/httptest2/,
+        https://github.com/nealrichardson/httptest2
+BugReports: https://github.com/nealrichardson/httptest2/issues
+License: MIT + file LICENSE
+Imports: digest, httr2, jsonlite, rlang, stats, testthat, utils
+Suggests: curl, knitr, pkgload, rmarkdown, spelling, xml2
+Language: en-US
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-01-07 13:39:23 UTC; enpiar
+Author: Neal Richardson [aut, cre],
+  Jonathan Keane [ctb],
+  Maëlle Salmon [ctb] (<https://orcid.org/0000-0002-2815-0399>)
+Maintainer: Neal Richardson <neal.p.richardson@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-01-10 08:52:45 UTC

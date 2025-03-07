@@ -1,0 +1,30 @@
+Package: LorenzRegression
+Type: Package
+Title: Lorenz and Penalized Lorenz Regressions
+Version: 2.0.0
+Authors@R: c(person("Alexandre","Jacquemain",email="aljacquemain@gmail.com",role=c("aut","cre"),comment = c(ORCID = "0000-0001-9349-780X")),
+             person("Xingjie","Shi",email="xingjieshi@njue.edu.cn",role="ctb",
+             comment="Author of an R implementation of the FABS algorithm available at https://github.com/shuanggema/Fabs, of which function Lorenz.FABS is derived"))
+Description: Inference for the Lorenz and penalized Lorenz regressions. More broadly, the package proposes functions to assess inequality and graphically represent it. The Lorenz Regression procedure is introduced in Heuchenne and Jacquemain (2022) <doi:10.1016/j.csda.2021.107347> and in Jacquemain, A., C. Heuchenne, and E. Pircalabelu (2024) <doi:10.1214/23-EJS2200>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.3.1)
+LazyData: true
+Imports: stats, ggplot2, scales, parsnip, boot, rsample, parallel,
+        doParallel, foreach, MASS, GA, locpol, Rearrangement, Rcpp (>=
+        0.11.0)
+RoxygenNote: 7.3.2
+Suggests: rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/AlJacq/LorenzRegression
+BugReports: https://github.com/AlJacq/LorenzRegression/issues
+NeedsCompilation: yes
+Packaged: 2024-09-09 08:38:16 UTC; Jacquemain
+Author: Alexandre Jacquemain [aut, cre]
+    (<https://orcid.org/0000-0001-9349-780X>),
+  Xingjie Shi [ctb] (Author of an R implementation of the FABS algorithm
+    available at https://github.com/shuanggema/Fabs, of which function
+    Lorenz.FABS is derived)
+Maintainer: Alexandre Jacquemain <aljacquemain@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-09 11:20:33 UTC

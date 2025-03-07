@@ -1,0 +1,39 @@
+Package: hbamr
+Title: Hierarchical Bayesian Aldrich-McKelvey Scaling via 'Stan'
+Version: 2.2.1
+Authors@R: 
+    person("Jørgen", "Bølstad", , "jorgen.bolstad@stv.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7623-5741"))
+Description: Perform hierarchical Bayesian Aldrich-McKelvey scaling using Hamiltonian Monte
+    Carlo via 'Stan'. Aldrich-McKelvey ('AM') scaling is a method for estimating the ideological 
+    positions of survey respondents and political actors on a common scale using positional survey 
+    data. The hierarchical versions of the Bayesian 'AM' model included in this package outperform 
+    other versions both in terms of yielding meaningful posterior distributions for respondent 
+    positions and in terms of recovering true respondent positions in simulations. The package 
+    contains functions for preparing data, fitting models, extracting estimates, plotting key 
+    results, and comparing models using cross-validation. The original version of the default 
+    model is described in Bølstad (2024) <doi:10.1017/pan.2023.18>.
+License: GPL (>= 3)
+URL: https://jbolstad.github.io/hbamr/
+BugReports: https://github.com/jbolstad/hbamr/issues
+Depends: R (>= 3.4.0)
+Imports: dplyr, future, future.apply, ggplot2, loo, matrixStats,
+        methods, parallel, plyr, progressr, RColorBrewer, Rcpp (>=
+        1.0.7), RcppParallel (>= 5.1.4), rlang, rstan (>= 2.26.1),
+        rstantools (>= 2.2.0), stats, tidyr
+Suggests: data.table, knitr, rmarkdown
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 1.0.7), RcppEigen (>= 0.3.3.9.1),
+        RcppParallel (>= 5.1.4), rstan (>= 2.26.1), StanHeaders (>=
+        2.26.22)
+Biarch: true
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+SystemRequirements: GNU make
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-02-23 11:53:34 UTC; boelstad
+Author: Jørgen Bølstad [aut, cre] (<https://orcid.org/0000-0002-7623-5741>)
+Maintainer: Jørgen Bølstad <jorgen.bolstad@stv.uio.no>
+Repository: CRAN
+Date/Publication: 2024-02-23 12:30:02 UTC

@@ -1,0 +1,26 @@
+Package: BiCausality
+Title: Binary Causality Inference Framework
+Version: 0.1.2
+Authors@R: 
+    person(given = "Chainarong",
+           family = "Amornbunchornvej",
+           role = c("aut", "cre"),
+           email = "grandca@gmail.com",
+           comment = c(ORCID = "0000-0003-3131-0370"))
+Maintainer: Chainarong Amornbunchornvej <grandca@gmail.com>
+Description: A framework to infer causality on binary data using techniques in frequent pattern mining and estimation statistics. Given a set of individual vectors S={x} where x(i) is a realization value of binary variable i, the framework infers empirical causal relations of binary variables i,j from S in a form of causal graph G=(V,E) where V is a set of nodes representing binary variables and there is an edge from i to j in E if the variable i causes j. The framework determines dependency among variables as well as analyzing confounding factors before deciding whether i causes j.  The publication of this package is at <arXiv:2205.06131>.
+License: MIT + file LICENSE
+URL: https://github.com/DarkEyes/BiCausality
+BugReports: https://github.com/DarkEyes/BiCausality/issues
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+LazyData: TRUE
+Suggests: knitr, rmarkdown, markdown, igraph
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-08-19 14:15:10 UTC; 006005
+Author: Chainarong Amornbunchornvej [aut, cre]
+    (<https://orcid.org/0000-0003-3131-0370>)
+Repository: CRAN
+Date/Publication: 2022-08-19 14:40:06 UTC

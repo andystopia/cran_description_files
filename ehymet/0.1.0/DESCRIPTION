@@ -1,0 +1,40 @@
+Package: ehymet
+Title: Methodologies for Functional Data Based on the Epigraph and
+        Hypograph Indices
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Belen", family = "Pulido", role = c("aut", "cre"),
+           email = "bpulidob4@gmail.com", 
+           comment = c(ORCID = "0000-0003-2105-959X")),
+    person(given = "Jose Ignacio", family = "Diez", role = c("ctr"))
+  )
+Description: Implements methods for functional data analysis based on the epigraph 
+  and hypograph indices. These methods transform 
+  functional datasets, whether in one or multiple dimensions, into multivariate 
+  datasets. The transformation involves applying the epigraph, hypograph, and 
+  their modified versions to both the original curves and their first and second 
+  derivatives. The calculation of these indices is tailored to the dimensionality 
+  of the functional dataset, with special considerations for dependencies between 
+  dimensions in multidimensional cases. This approach extends traditional multivariate
+  data analysis techniques to the functional data setting. A key application of 
+  this package is the EHyClus method, which enhances clustering analysis for 
+  functional data across one or multiple dimensions using the epigraph and 
+  hypograph indices.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/bpulidob/ehymet,
+        https://bpulidob.github.io/ehymet/
+BugReports: https://github.com/bpulidob/ehymet/issues
+Depends: R (>= 4.1)
+Imports: kernlab, stats, tf,
+Suggests: ggplot2, knitr, MASS, rmarkdown, testthat (>= 3.0.0), tidyr
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-13 16:34:13 UTC; belen
+Author: Belen Pulido [aut, cre] (<https://orcid.org/0000-0003-2105-959X>),
+  Jose Ignacio Diez [ctr]
+Maintainer: Belen Pulido <bpulidob4@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-14 10:10:14 UTC

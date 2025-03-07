@@ -1,0 +1,38 @@
+Package: ammiBayes
+Type: Package
+Title: Bayesian Ammi Model for Continuous Data
+Version: 1.0-1
+Date: 2022-03-14
+Maintainer: Fabio M. Correa <f.correa@ru.ac.za>
+Contact: Fabio Mathias Correa <f.correa@ru.ac.za>
+Authors@R: c( person("Luciano A.",  "Oliveira", role="aut")
+ , person("Carlos P.", "Silva", role="aut")
+ , person("Cristian T. E.", "Mendes", role="aut")
+ , person("Alessandra Q.", "Silva", role="aut")
+ , person("Joel J.", "Nuvunga", role="aut")
+ , person("Marcio", "Balestre", role="ths")
+ , person("Julio S. S.", "Bueno-Filho", role="ths")
+ , person("Fabio M.", "Correa", role=c("aut","cre"), email="f.correa@ru.ac.za", 
+   comment = c(ORCID = "0000-0002-6708-9316"))
+   )
+Author: Luciano A. Oliveira [aut],
+  Carlos P. Silva [aut],
+  Cristian T. E. Mendes [aut],
+  Alessandra Q. Silva [aut],
+  Joel J. Nuvunga [aut],
+  Marcio Balestre [ths],
+  Julio S. S. Bueno-Filho [ths],
+  Fabio M. Correa [aut, cre] (<https://orcid.org/0000-0002-6708-9316>)
+Depends: R (>= 4.0.0)
+VignetteBuilder: R.rsp
+Imports: lattice, latticeExtra, distfree.cr, coda, spam, movMF, msm,
+        bayesplot, Hmisc
+Suggests: ggpubr, R.rsp
+LazyData: true
+Description: Flexible multi-environment trials analysis via MCMC method for Additive Main Effects and Multiplicative Model (AMMI) for continuous data. 
+ Biplot with the averages and regions of confidence can be generated. The chains run in parallel on Linux systems and run serially on Windows.
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2022-03-14 15:41:45 UTC; fmcron
+Repository: CRAN
+Date/Publication: 2022-03-14 16:10:02 UTC

@@ -1,0 +1,30 @@
+Package: Rigma
+Type: Package
+Title: Access to the 'Figma' API
+Version: 0.2.1
+Authors@R: c(
+ person("Alexandros", "Kouretsis", email = "alexandros@appsilon.com", role = c("aut", "cre")))
+Maintainer: Alexandros Kouretsis <alexandros@appsilon.com>
+Description: The goal of Rigma is to provide a user friendly client to the 'Figma'
+ API <https://www.figma.com/developers/api>. It uses the latest `httr2` for a 
+ stable interface with the REST API. More than 20 methods are provided to 
+ interact with 'Figma' files, and teams. Get design data into R by reading 
+ published components and styles, converting and downloading images, getting 
+ access to the full 'Figma' file as a hierarchical data structure, and much 
+ more. Enhance your creativity and streamline the application development by
+ automating the extraction, transformation, and loading of design data to your 
+ applications and 'HTML' documents.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/AleKoure/Rigma
+RoxygenNote: 7.2.1
+Imports: bslib, checkmate, dplyr, fs, glue, httr2, lubridate, magrittr,
+        png, purrr, rlang, tibble, tidyr, withr, xml2
+Suggests: covr, httptest2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-26 21:42:59 UTC; ale
+Author: Alexandros Kouretsis [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-11-27 22:00:06 UTC

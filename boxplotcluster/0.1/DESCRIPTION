@@ -1,0 +1,17 @@
+Package: boxplotcluster
+Title: Clustering Method Based on Boxplot Statistics
+Version: 0.1
+Authors@R: person("Gianmarco", "Alberti", email = "gianmarcoalberti@gmail.com", role = c("aut", "cre"))
+Description: Following Arroyo-Maté-Roque (2006), the function calculates the distance between columns of the dataset using the generalized Minkowski metric as described by Ichino-Yaguchi (1994). The distance measure gives more weight to differences between quartiles than to differences between extremes, making it less sensitive to outliers. Further,the function calculates the silhouette width (Rousseeuw 1987) for different numbers of clusters and selects the number of clusters that maximizes the average silhouette width, unless a specific number of clusters is provided by the user. The approach implemented in this package is based on the following publications: Rousseeuw (1987) <doi:10.1016/0377-0427(87)90125-7>; Ichino-Yaguchi (1994) <doi:10.1109/21.286391>; Arroyo-Maté-Roque (2006) <doi:10.1007/3-540-34416-0_7>.
+Depends: R (>= 4.0.0)
+Imports: cluster (>= 2.1.4), graphics (>= 4.2.0), grDevices (>= 4.2.0),
+        stats (>= 4.2.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-22 15:00:38 UTC; gianmarcoalberti
+Author: Gianmarco Alberti [aut, cre]
+Maintainer: Gianmarco Alberti <gianmarcoalberti@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-24 07:40:05 UTC

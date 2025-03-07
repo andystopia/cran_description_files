@@ -1,0 +1,32 @@
+Type: Package
+Package: alphaci
+Title: Confidence Intervals for Coefficient Alpha and Standardized
+        Alpha
+Version: 1.0.0
+Authors@R: 
+    person("Jonas", "Moss", , "jonas.moss.statistics@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6876-6964"))
+Description: Calculate confidence intervals for alpha and standardized
+    alpha using asymptotic theory or the studentized bootstrap, with or
+    without transformations. Supports the asymptotic distribution-free
+    method of Maydeu-Olivares, et al. (2007)
+    <doi:10.1037/1082-989X.12.2.157>, the pseudo-elliptical method of Yuan
+    & Bentler (2002) <doi:10.1007/BF02294845>, and the normal method of
+    van Zyl et al. (1999) <doi:10.1007/BF02296146>, for both coefficient
+    alpha and standardized alpha.
+License: MIT + file LICENSE
+URL: https://jonasmoss.github.io/alphaci/
+Depends: R (>= 3.5.0)
+Imports: future.apply, matrixcalc
+Suggests: covr, extraDistr, knitr, lavaan, psychTools, rmarkdown,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-10-10 08:43:58 UTC; jonas
+Author: Jonas Moss [aut, cre] (<https://orcid.org/0000-0002-6876-6964>)
+Maintainer: Jonas Moss <jonas.moss.statistics@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-10-11 06:12:37 UTC

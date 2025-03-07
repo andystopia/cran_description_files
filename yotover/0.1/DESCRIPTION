@@ -1,0 +1,40 @@
+Package: yotover
+Title: An Advanced Guide to Trade Policy Analysis
+Version: 0.1
+Authors@R: c( 
+        person(given = "Mauricio",
+               family = "Vargas",
+               role = c("aut", "cre"),
+               email = "mvargas@dcc.uchile.cl",
+               comment = c(ORCID = "0000-0003-1017-7574")),
+        person(given = "Alexey",
+               family = "Kravchenko",
+               role = c("ths"),
+               email = "kravchenkoa@un.org"),
+        person(family = "The United Nations",
+               role = c("dtc", "cph", "fnd")
+        )
+    )
+Description: On-disk embedded database with SQL versions of the original 
+    datasets from Yotov, et al (2016, ISBN: 978-92-870-4367-2) and functions to 
+    report regressions with clustered robust standard errors.
+URL: https://pacha.dev/yotover/
+BugReports: https://github.com/pachamaltese/yotover/issues/
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1.9000
+Imports: magrittr, tibble, ggplot2, dbplyr, dplyr, tidyr, purrr, cli,
+        crayon, multiwayvcov, lmtest, broom, Matrix, msm, DBI, duckdb,
+        rappdirs, httr, scales, munsell, pander, gtable, colorspace,
+        rstudioapi
+Suggests: devtools, usethis, testthat, covr
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2020-10-30 16:17:54 UTC; pacha
+Author: Mauricio Vargas [aut, cre] (<https://orcid.org/0000-0003-1017-7574>),
+  Alexey Kravchenko [ths],
+  The United Nations [dtc, cph, fnd]
+Maintainer: Mauricio Vargas <mvargas@dcc.uchile.cl>
+Repository: CRAN
+Date/Publication: 2020-11-05 16:40:02 UTC

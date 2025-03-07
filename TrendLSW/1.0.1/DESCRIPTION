@@ -1,0 +1,31 @@
+Package: TrendLSW
+Type: Package
+Title: Wavelet Methods for Analysing Locally Stationary Time Series
+Version: 1.0.1
+Authors@R: c(person("Euan T.", "McGonigle", email="e.t.mcgonigle@soton.ac.uk",role=c("aut", "cre")),
+        person("Rebecca","Killick", role="aut"),
+        person("Matthew","Nunes", role="aut"))
+Depends: R (>= 4.1.0)
+Maintainer: Euan T. McGonigle <e.t.mcgonigle@soton.ac.uk>
+Description: Fitting models for, and simulation of, trend locally stationary 
+    wavelet (TLSW) time series models, which take account of time-varying 
+    trend and dependence structure in a univariate time series. The TLSW model, 
+    and its estimation, is described in McGonigle, Killick and Nunes (2022a) 
+    <doi:10.1111/jtsa.12643>, (2022b) <doi:10.1214/22-EJS2044>. New users will 
+    likely want to start with the TLSW function.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: wavethresh, locits
+URL: https://github.com/EuanMcGonigle/TrendLSW
+BugReports: https://github.com/EuanMcGonigle/TrendLSW/issues
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0), vdiffr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-04-19 15:27:32 UTC; euanmcgonigle
+Author: Euan T. McGonigle [aut, cre],
+  Rebecca Killick [aut],
+  Matthew Nunes [aut]
+Repository: CRAN
+Date/Publication: 2024-04-22 14:42:38 UTC

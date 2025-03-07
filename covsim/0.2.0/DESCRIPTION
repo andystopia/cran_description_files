@@ -1,0 +1,26 @@
+Package: covsim
+Type: Package
+Title: VITA, IG and PLSIM Simulation for Given Covariance and Marginals
+Version: 0.2.0
+Authors@R: c(person("Njaal", "Foldnes", email = "njal.foldnes@gmail.com", role = c("aut", "cre")),
+           person("Steffen", "Groenneberg", email = "steffeng@gmail.com", role = c("aut")))
+Description: User specifies population covariance matrix. Marginal information may be fully
+        specified, for which the package implements the VITA (VIne-To-Anything) algorithm. 
+        Groenneberg and Foldnes (2017) <doi:10.1007/s11336-017-9569-6>.
+        Alternatively, marginal skewness and kurtosis may be specified, for which the package
+        implements the IG (independent generator) and PLSIM (piecewise linear) algorithms. Foldnes and Olsson (2016) <doi:10.1080/00273171.2015.1133274>.
+        Foldnes and Groenneberg (2021). 
+License: GPL (>= 2)
+Depends: R (>= 3.1.0)
+Imports: rvinecopulib (>= 0.5.1.1.0), lavaan (>= 0.6-5), nleqslv,
+        PearsonDS, MASS, stats, Rcpp, gsl, tmvtnorm, Matrix
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests:
+NeedsCompilation: no
+Packaged: 2021-06-08 20:16:49 UTC; Njaal0
+Author: Njaal Foldnes [aut, cre],
+  Steffen Groenneberg [aut]
+Maintainer: Njaal Foldnes <njal.foldnes@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-09 08:10:02 UTC

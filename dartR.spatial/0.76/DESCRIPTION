@@ -1,0 +1,41 @@
+Package: dartR.spatial
+Type: Package
+Title: Applying Landscape Genomic Methods on 'SNP' and 'Silicodart'
+        Data
+Version: 0.76
+Date: 2023-08-17
+Authors@R: c(
+            person("Bernd", "Gruber", email="bernd.gruber@canberra.edu.au", role=c("aut","cre")), 
+            person("Arthur", "Georges", email="georges@aerg.edu.au", role="aut"),
+            person("Jose L.", "Mijangos", email="Luis.MijangosAraujo@canberra.edu.au", role="aut"), 
+            person("Carlo", "Pacioni",email="carlo.pacioni@delwp.vic.gov.au",role="aut"),
+            person("Peter J.", "Unmack", email="peter.mail2@unmack.net", role="ctb"),
+            person("Oliver", "Berry", email="oliver.berry@csiro.au", role="ctb" )
+            )
+Description: Provides landscape genomic functions to analyse 'SNP' (single nuclear
+    polymorphism) data, such as least cost path analysis and isolation by distance. 
+    Therefore each sample needs to have coordinate data attached (lat/lon) to be 
+    able to run most of the functions. 'dartR.spatial' is a package that belongs
+    to the 'dartRverse' suit of packages and depends on 'dartR.base' and 'dartR.data'.
+Revision: Attractive Abalone
+Encoding: UTF-8
+Depends: R (>= 3.5), adegenet (>= 2.0.0), dartR.base, dartR.data
+Imports: methods, utils, crayon, StAMPP, raster, sp, tidyr, vegan,
+        MASS, ggplot2, data.table
+Suggests: mmod, dismo, gdistance, gplots, rrBLUP, terra (>= 1.7-39),
+        sf, PopGenReport
+License: GPL (>= 3)
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-08-17 03:48:03 UTC; s425824
+Author: Bernd Gruber [aut, cre],
+  Arthur Georges [aut],
+  Jose L. Mijangos [aut],
+  Carlo Pacioni [aut],
+  Peter J. Unmack [ctb],
+  Oliver Berry [ctb]
+URL: https://green-striped-gecko.github.io/dartR/
+BugReports: https://groups.google.com/g/dartr?pli=1
+Maintainer: Bernd Gruber <bernd.gruber@canberra.edu.au>
+Repository: CRAN
+Date/Publication: 2023-08-17 14:52:35 UTC

@@ -1,0 +1,21 @@
+Package: TrustVDJ
+Title: Tools for Immune Repertoire Analysis
+Version: 0.1.0
+Authors@R: 
+    person('Lianhao', 'Song', , 'hatsunecode@gmail.com', role = c('aut', 'cre'),
+           comment = c(ORCID = '0000-0002-3211-3726'))
+Description: A toolkit for read and prepare immune repertoire data. 'TrustVDJ' package focuses on the reading and processing of 'TRUST4' and '10x cellranger' software output results by using 'ReadTrust' and 'Read10x' functions, respectively, and also provides a convenience function 'build_IMGT_reference' to download the 'IMGT' database reference and split its sequences by species.
+BugReports: https://github.com/HatsuneCode/TrustVDJ/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Collate: 'constants.r' 'utils.r' 'class.r' 'download.r' 'read10x.r'
+        'readTrust.r' 'refIMGT.r' 'test.r'
+Imports: Biostrings, data.table, methods, rvest, stats
+Suggests: R.utils
+NeedsCompilation: no
+Packaged: 2022-03-16 08:16:27 UTC; lhsong
+Author: Lianhao Song [aut, cre] (<https://orcid.org/0000-0002-3211-3726>)
+Maintainer: Lianhao Song <hatsunecode@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-16 21:00:02 UTC

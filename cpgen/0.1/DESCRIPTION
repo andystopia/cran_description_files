@@ -1,0 +1,24 @@
+Package: cpgen
+Type: Package
+Title: Parallelized Genomic Prediction and GWAS
+Version: 0.1
+Date: 2015-09-14
+Author: Claas Heuer
+Maintainer: Claas Heuer <cheuer@tierzucht.uni-kiel.de>
+Description: Frequently used methods in genomic applications with emphasis on parallel computing (OpenMP).
+ At its core, the package has a Gibbs Sampler that allows running univariate linear
+ mixed models that have both, sparse and dense design matrices. The parallel sampling method
+ in case of dense design matrices (e.g. Genotypes) allows running Ridge Regression or BayesA for
+ a very large number of individuals. The Gibbs Sampler is capable of running Single Step Genomic Prediction models.
+ In addition, the package offers parallelized functions for common tasks like genome-wide
+ association studies and cross validation in a memory efficient way.
+License: GPL (>= 2)
+SystemRequirements: C++11
+Imports: methods, stats
+URL: https://github.com/cheuerde/cpgen
+Depends: R(>= 3.1.0), Matrix(>= 1.0-5), pedigreemm(>= 0.3-3)
+LinkingTo: Rcpp, RcppEigen, RcppProgress
+NeedsCompilation: yes
+Packaged: 2015-09-14 21:44:43 UTC; cheuer
+Repository: CRAN
+Date/Publication: 2015-09-15 08:35:30

@@ -1,0 +1,45 @@
+Package: memisc
+Type: Package
+Title: Management of Survey Data and Presentation of Analysis Results
+Version: 0.99.31.8
+Date: 2024-09-28
+Authors@R: c(person(given = "Martin",
+                    family = "Elff",
+                    role = c("aut", "cre"),
+                    email = "memisc@elff.eu"),
+             person(given = "Christopher N.", family = "Lawrence", role = "ctb"),
+             person(given = "Dave", family = "Atkins", role = "ctb"),
+             person(given = "Jason W.", family = "Morgan", role = "ctb"),
+             person(given = "Achim", family = "Zeileis", role = "ctb"),
+             person(given = "Mael", family = "Astruc-Le Souder", role = "ctb"),
+             person(given = "Kiril", family = "Mueller", role = "ctb"),
+             person(given = "Pieter", family = "Schoonees", role = "ctb"))
+Maintainer: Martin Elff <memisc@elff.eu>
+Description: An infrastructure for the management of survey data including
+        value labels, definable missing values, recoding of variables,
+        production of code books, and import of (subsets of) 'SPSS' and
+        'Stata' files is provided. Further, the package allows to produce
+        tables and data frames of arbitrary descriptive statistics and
+        (almost) publication-ready tables of regression model
+        estimates, which can be exported to 'LaTeX' and HTML.
+License: GPL-2 | GPL-3
+LazyLoad: Yes
+Depends: R (>= 3.3.0), lattice, stats, methods, utils, MASS
+Suggests: splines, knitr, rmarkdown, sandwich
+Enhances: AER, car, eha, lme4, ordinal, simex, tibble, haven
+Imports: grid, data.table, yaml, jsonlite
+VignetteBuilder: knitr
+URL: https://melff.github.io/memisc/,https://github.com/melff/memisc/
+BugReports: https://github.com/melff/memisc/issues
+NeedsCompilation: yes
+Packaged: 2024-09-28 19:26:25 UTC; elff
+Author: Martin Elff [aut, cre],
+  Christopher N. Lawrence [ctb],
+  Dave Atkins [ctb],
+  Jason W. Morgan [ctb],
+  Achim Zeileis [ctb],
+  Mael Astruc-Le Souder [ctb],
+  Kiril Mueller [ctb],
+  Pieter Schoonees [ctb]
+Repository: CRAN
+Date/Publication: 2024-09-28 20:30:02 UTC

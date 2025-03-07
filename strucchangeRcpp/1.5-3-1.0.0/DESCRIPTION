@@ -1,0 +1,51 @@
+Package: strucchangeRcpp
+Version: 1.5-3-1.0.0
+Date: 2021-03-12
+Title: Testing, Monitoring, and Dating Structural Changes: C++ Version
+Authors@R: c(person(given = "Dainius", family = "Masiliunas", role = c("aut", "cre"),
+             email = "pastas4@gmail.com", comment = c(ORCID = "0000-0001-5654-1277")),
+             person(given = "Achim", family = "Zeileis", role = c("aut"), email = "Achim.Zeileis@R-project.org",
+                    comment = c(ORCID = "0000-0003-0918-3766")),
+             person(given = "Marius", family = "Appel", role = "aut", email = "marius.appel@uni-muenster.de"),
+             person(given = "Friedrich", family = "Leisch", role = "aut", email = "Friedrich.Leisch@R-project.org"),
+             person(given = "Kurt", family = "Hornik", role = "aut", email = "Kurt.Hornik@R-project.org"),
+             person(given = "Christian", family = "Kleiber", role = "aut", email = "Christian.Kleiber@unibas.ch"),
+             person(given = "Andrei", family = "Mirt", role = "ctb", email = "andrei.mirt@wur.nl",
+                    comment = c(ORCID = "0000-0003-3654-2090")),
+             person(given = "Bruce", family = "Hansen", role = "ctb"),
+             person(given = c("Edgar", "C."), family = "Merkle", role = "ctb"))
+Description: A fast implementation with additional experimental features for
+             testing, monitoring and dating structural changes in (linear)
+             regression models. 'strucchangeRcpp' features tests/methods from
+	     the generalized fluctuation test framework as well as from
+	     the F test (Chow test) framework. This includes methods to
+             fit, plot and test fluctuation processes (e.g. cumulative/moving
+             sum, recursive/moving estimates) and F statistics, respectively.
+             These methods are described in Zeileis et al. (2002)
+             <doi:10.18637/jss.v007.i02>.
+             Finally, the breakpoints in regression models with structural
+             changes can be estimated together with confidence intervals,
+             and their magnitude as well as the model fit can be evaluated
+             using a variety of statistical measures.
+LazyData: yes
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 2.10.0), zoo, sandwich
+Suggests: stats4, car, dynlm, e1071, foreach, lmtest, mvtnorm, tseries
+Imports: graphics, stats, Rcpp (>= 0.12.7), utils
+License: GPL-2 | GPL-3
+URL: https://github.com/bfast2/strucchangeRcpp/
+BugReports: https://github.com/bfast2/strucchangeRcpp/issues
+NeedsCompilation: yes
+Packaged: 2021-03-23 10:41:18 UTC; dainius
+Author: Dainius Masiliunas [aut, cre] (<https://orcid.org/0000-0001-5654-1277>),
+  Achim Zeileis [aut] (<https://orcid.org/0000-0003-0918-3766>),
+  Marius Appel [aut],
+  Friedrich Leisch [aut],
+  Kurt Hornik [aut],
+  Christian Kleiber [aut],
+  Andrei Mirt [ctb] (<https://orcid.org/0000-0003-3654-2090>),
+  Bruce Hansen [ctb],
+  Edgar C. Merkle [ctb]
+Maintainer: Dainius Masiliunas <pastas4@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-03-24 08:50:02 UTC

@@ -1,0 +1,24 @@
+Package: simtrait
+Title: Simulate Complex Traits from Genotypes
+Version: 1.1.0
+Authors@R: 
+    person(given = "Alejandro",
+	   family = "Ochoa",
+	   role = c("aut", "cre"),
+	   email = "alejandro.ochoa@duke.edu",
+           comment = c(ORCID = "0000-0003-4928-3403"))
+Description: Simulate complex traits given a SNP genotype matrix and model parameters (the desired heritability, number of causal loci, and either the true ancestral allele frequencies used to generate the genotypes or the mean kinship for a real dataset).  Emphasis on avoiding common biases due to the use of estimated allele frequencies.  The code selects random loci to be causal, constructs coefficients for these loci and random independent non-genetic effects, and can optionally generate random group effects.  Traits can follow three models: random coefficients, fixed effect sizes, and infinitesimal (multivariate normal).  GWAS method benchmarking functions are also provided.  Described in Yao and Ochoa (2022) <doi:10.1101/2022.03.25.485885>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: PRROC
+Suggests: popkin, testthat, knitr, rmarkdown, bnpsd, BEDMatrix
+VignetteBuilder: knitr
+URL: https://github.com/OchoaLab/simtrait
+BugReports: https://github.com/OchoaLab/simtrait/issues
+NeedsCompilation: no
+Packaged: 2022-08-23 00:20:10 UTC; viiia
+Author: Alejandro Ochoa [aut, cre] (<https://orcid.org/0000-0003-4928-3403>)
+Maintainer: Alejandro Ochoa <alejandro.ochoa@duke.edu>
+Repository: CRAN
+Date/Publication: 2022-08-23 02:20:02 UTC

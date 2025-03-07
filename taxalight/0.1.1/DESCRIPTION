@@ -1,0 +1,40 @@
+Package: taxalight
+Version: 0.1.1
+Title: A Lightweight and Lightning-Fast Taxonomic Naming Interface
+Description: Creates a local Lightning Memory-Mapped Database ('LMDB') 
+             of many commonly used taxonomic authorities
+             and provides functions that can quickly query this data.
+             Supported taxonomic authorities include 
+             the Integrated Taxonomic Information System ('ITIS'),
+             National Center for Biotechnology Information ('NCBI'),
+             Global Biodiversity Information Facility ('GBIF'), 
+             Catalogue of Life ('COL'), and Open Tree Taxonomy ('OTT'). 
+             Name and identifier resolution using 'LMDB' can
+             be hundreds of times faster than either relational databases or
+             internet-based queries. Precise data provenance information for
+             data derived from naming providers is also included.
+Authors@R: c(
+            person("Carl", "Boettiger", , "cboettig@gmail.com", c("aut", "cre"),
+                   comment = c(ORCID = "0000-0002-1642-628X")),
+            person("Kari", "Norman", role= "aut",
+                   comment = c(ORCID = "0000-0002-2029-2325"))
+            )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 4.0)
+Imports: thor, contentid
+Suggests: jsonlite, spelling, testthat, covr, knitr, rmarkdown,
+        progress, utf8
+URL: https://github.com/cboettig/taxalight
+BugReports: https://github.com/cboettig/taxalight
+Language: en-US
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-02-27 04:16:04 UTC; cboettig
+Author: Carl Boettiger [aut, cre] (<https://orcid.org/0000-0002-1642-628X>),
+  Kari Norman [aut] (<https://orcid.org/0000-0002-2029-2325>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-03-01 10:20:02 UTC

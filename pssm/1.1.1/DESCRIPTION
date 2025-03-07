@@ -1,0 +1,20 @@
+Package: pssm
+Version: 1.1.1
+Type: Package
+Date: 2022-05-01
+Title: Piecewise Exponential Model for Time to Progression and Time
+        from Progression to Death
+Author: David A. Schoenfeld [aut, cre]
+Maintainer: David A. Schoenfeld <dschoenfeld@mgh.harvard.edu>
+Description: Estimates parameters of a piecewise exponential model for time to progression and time from progression to death with interval censoring of the time to progression and covariates for each distribution using proportional hazards.
+License: GPL-2
+Imports: MASS, abind, numDeriv, MHadaptive
+Depends: methods
+Collate: 'pssm.generate.data.R' 'llikef.R' 'rprog.R' 'rsurv.R'
+        'startv.R' 'generic_functions.R' 'pssm.R' 'pssm.survivalcurv.R'
+        'pssm.simulate.R' 'pssm.power.R'
+        'pssm.noninferiority.boundary.R'
+NeedsCompilation: no
+Packaged: 2022-05-02 00:05:10 UTC; das15
+Repository: CRAN
+Date/Publication: 2022-05-02 11:50:05 UTC

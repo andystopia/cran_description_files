@@ -1,0 +1,50 @@
+Package: rslurm
+Type: Package
+Title: Submit R Calculations to a 'Slurm' Cluster
+Description: Functions that simplify submitting R scripts to a 'Slurm' 
+    workload manager, in part by automating the division of embarrassingly
+    parallel calculations across cluster nodes.
+Acknowledgements: Development of this R package was supported by the
+        National Socio-Environmental Synthesis Center (SESYNC) under
+        funding received from the National Science Foundation grants
+        DBI-1052875 and DBI-1639145.
+Version: 0.6.0
+Date: 2021-04-21
+License: GPL-3
+URL: http://cyberhelp.sesync.org/rslurm/
+BugReports: https://github.com/SESYNC-ci/rslurm/issues
+Authors@R: c(person('Philippe', 'Marchand', email = "marchand.philippe@gmail.com", role = 'aut'),
+             person('Ian', 'Carroll', role = 'aut'),
+             person('Mike', 'Smorul', role = 'aut'),
+             person('Rachael', 'Blake', role = 'aut'),
+             person('Quentin', 'Read', email = 'qread@sesync.org', role = c('aut', 'cre')),
+             person('Dayne', 'Filer', role = 'ctb'),
+             person('Ben', 'Fasoli', role = 'ctb'),
+             person('Pol', 'van Rijn', role = 'ctb'),
+             person('Sebastian', 'Schubert', role = 'ctb'),
+             person('Rob', 'Gilmore', role = 'ctb'),
+             person('Christopher', 'Barrington', role = 'ctb'),
+             person('Se Jong', 'Cho', role = 'art')
+             )
+Depends: R (>= 3.5.0)
+Imports: whisker (>= 0.3)
+RoxygenNote: 7.1.1
+Suggests: parallel, testthat, knitr, rmarkdown, markdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-04-22 14:01:02 UTC; qread-fs@research.sesync.org
+Author: Philippe Marchand [aut],
+  Ian Carroll [aut],
+  Mike Smorul [aut],
+  Rachael Blake [aut],
+  Quentin Read [aut, cre],
+  Dayne Filer [ctb],
+  Ben Fasoli [ctb],
+  Pol van Rijn [ctb],
+  Sebastian Schubert [ctb],
+  Rob Gilmore [ctb],
+  Christopher Barrington [ctb],
+  Se Jong Cho [art]
+Maintainer: Quentin Read <qread@sesync.org>
+Repository: CRAN
+Date/Publication: 2021-04-22 14:30:02 UTC

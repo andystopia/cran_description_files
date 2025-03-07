@@ -1,0 +1,36 @@
+Package: covid19br
+Type: Package
+Title: Brazilian COVID-19 Pandemic Data
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Fabio", 
+      family = "Demarqui", 
+      email = "fndemarqui@est.ufmg.br", 
+      role = c("aut", "cre")),
+      person(given = "Cristiano", 
+      family = "Santos", 
+      email = "ccsgaus@ufmg.br", 
+      role = "aut"),
+      person(given = "Matheus", 
+      family = "Costa", 
+      email = "matheus_belo@id.uff.br", 
+      role = "ctb"))
+Description: Set of functions to import COVID-19 pandemic data into R. The Brazilian COVID-19 data, obtained from the official Brazilian repository at <https://covid.saude.gov.br/>, is available at country, region, state, and city-levels. The package also downloads the world-level COVID-19 data from the John Hopkins University's repository.
+URL: https://github.com/fndemarqui/covid19br
+BugReports: https://github.com/fndemarqui/covid19br/issues
+Encoding: UTF-8
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: data.table, dplyr, httr, lubridate, openxlsx, rlang, R.utils,
+        tidyr
+Suggests: testthat, tidyverse
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-09-26 15:07:25 UTC; fndemarqui
+Author: Fabio Demarqui [aut, cre],
+  Cristiano Santos [aut],
+  Matheus Costa [ctb]
+Maintainer: Fabio Demarqui <fndemarqui@est.ufmg.br>
+Repository: CRAN
+Date/Publication: 2020-09-29 09:20:05 UTC

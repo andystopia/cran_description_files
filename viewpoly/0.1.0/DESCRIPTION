@@ -1,0 +1,62 @@
+Package: viewpoly
+Title: A Shiny App to Visualize Genetic Maps and QTL Analysis in
+        Polyploid Species
+Version: 0.1.0
+Authors@R: c(
+           person(given = "Cristiane",
+                  family = "Taniguti",
+                  role = c("aut", "cre"),
+                  email = "chtaniguti@tamu.edu"),
+           person(given = "Gabriel",
+                  family = "Gesteira",
+                  role = c("aut")),
+           person(given = "Jeekin",
+                  family = "Lau",
+                  role = c("ctb")),
+           person(given = "Guilherme",
+                  family = "Pereira",
+                  role = c("ctb")),
+           person(given = "David",
+                  family = "Byrne",
+                  role = c("ctb")),
+           person(given = "Zhao-Bang",
+                  family = "Zeng",
+                  role = c("ctb")),   
+           person(given = "Oscar",
+                  family = "Riera-Lizarau",
+                  role = c("ctb")),
+           person(given = "Marcelo",
+                  family = "Mollinari",
+                  role = c("aut"),
+                  email = "mmollin@ncsu.edu")
+           )
+Maintainer: Cristiane Taniguti <chtaniguti@tamu.edu>
+Description: Provides a graphical user interface to integrate, visualize and explore results 
+            from linkage and quantitative trait loci analysis, together with genomic information for autopolyploid 
+            species. The app is meant for interactive use and allows users to optionally upload different sources 
+            of information, including  gene annotation and alignment files, enabling the exploitation and search for 
+            candidate genes in a genome browser. In its current version, 'VIEWpoly' supports inputs from 'MAPpoly', 
+            'polymapR', 'diaQTL', 'QTLpoly' and 'polyqtlR' packages. 
+License: GPL-3
+Depends: R (>= 4.0)
+Imports: shiny (>= 1.6.0), shinyjs, shinythemes, shinyWidgets,
+        shinydashboard, config (>= 0.3.1), golem (>= 0.3.1), JBrowseR,
+        dplyr, tidyr, DT, ggplot2, ggpubr, plotly, vroom, abind,
+        reshape2, markdown, stats, rlang
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-12-16 15:10:49 UTC; chtan
+Author: Cristiane Taniguti [aut, cre],
+  Gabriel Gesteira [aut],
+  Jeekin Lau [ctb],
+  Guilherme Pereira [ctb],
+  David Byrne [ctb],
+  Zhao-Bang Zeng [ctb],
+  Oscar Riera-Lizarau [ctb],
+  Marcelo Mollinari [aut]
+Repository: CRAN
+Date/Publication: 2021-12-16 21:00:02 UTC

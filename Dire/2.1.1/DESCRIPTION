@@ -1,0 +1,40 @@
+Package: Dire
+Version: 2.1.1
+Date: 2022-12-22
+Title: Linear Regressions with a Latent Outcome Variable
+Authors@R: c(person("Emmanuel", "Sikali", role="pdr", email = "Emmanuel.Sikali@ed.gov"),
+             person("Paul", "Bailey", role=c("aut", "cre"), email="pbailey@air.org"),
+             person("Eric", "Buehler", role="aut"),
+             person("Sun-joo", "Lee", role="aut"),
+             person("Harold", "Doran", role="aut"),
+             person("Claire", "Kelley", role="ctb"))
+Maintainer: Paul Bailey <pbailey@air.org>
+Depends: R (>= 4.0.0)
+Imports: foreach, iterators, methods, Matrix, haven, Rcpp (>= 1.0.8.3),
+        MASS
+Description: Fit latent variable linear models, estimating score distributions for groups of people, following Cohen and Jiang (1999) <doi:10.2307/2669917>. In this model, a latent distribution is conditional on students item response, item characteristics, and conditioning variables the user includes. This latent trait is then integrated out. This software is intended to fit the same models as the existing software 'AM' <https://am.air.org/>. As of version 2, also allows the user to draw plausible values.
+License: GPL-2
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat, withr, doParallel, parallel,
+        EdSurvey
+URL: https://american-institutes-for-research.github.io/Dire/
+BugReports: https://github.com/American-Institutes-for-Research/Dire/issues
+ByteCompile: true
+Note: This publication was prepared for NCES under Contract No.
+        ED-IES-12-D-0002/0004 with the American Institutes for
+        Research. Mention of trade names, commercial products, or
+        organizations does not imply endorsement by the U.S.
+        Government.
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2023-01-09 15:32:25 UTC; pbailey
+Author: Emmanuel Sikali [pdr],
+  Paul Bailey [aut, cre],
+  Eric Buehler [aut],
+  Sun-joo Lee [aut],
+  Harold Doran [aut],
+  Claire Kelley [ctb]
+Repository: CRAN
+Date/Publication: 2023-01-09 20:53:10 UTC

@@ -1,0 +1,25 @@
+Package: rhosa
+Title: Higher-Order Spectral Analysis
+Date: 2022-01-21
+Version: 0.2.0
+Authors@R: 
+    person(given = "Takeshi",
+           family = "Abe",
+           role = c("aut", "cre"),
+           email = "tabe@fixedpoint.jp",
+           comment = c(ORCID = "0000-0002-7074-4561"))
+Description: Higher-order spectra or polyspectra of time series, such as bispectrum and bicoherence, have been investigated in abundant literature and applied to problems of signal detection in a wide range of fields. This package aims to provide a simple API to estimate and analyze them. The current implementation is based on Brillinger and Irizarry (1998) <doi:10.1016/S0165-1684(97)00217-X> for estimating bispectrum or bicoherence, Lii and Helland (1981) <doi:10.1145/355958.355961> for cross-bispectrum, and Kim and Powers (1979) <doi:10.1109/TPS.1979.4317207> for cross-bicoherence.
+License: GPL-3
+Encoding: UTF-8
+URL: https://tabe.github.io/rhosa/
+BugReports: https://github.com/tabe/rhosa/issues
+RoxygenNote: 7.1.2
+Imports: parallel
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-01-21 05:24:01 UTC; abe
+Author: Takeshi Abe [aut, cre] (<https://orcid.org/0000-0002-7074-4561>)
+Maintainer: Takeshi Abe <tabe@fixedpoint.jp>
+Repository: CRAN
+Date/Publication: 2022-01-21 09:12:43 UTC

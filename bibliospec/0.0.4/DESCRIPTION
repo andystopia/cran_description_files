@@ -1,0 +1,23 @@
+Package: bibliospec
+Type: Package
+Title: Reading Mass Spectrometric Search Results
+Version: 0.0.4
+Author: Christian Panse <cp@fgcz.ethz.ch>, Witold E. Wolski <wew@fgcz.ethz.ch>
+Maintainer: Witold E. Wolski <wew@fgcz.ethz.ch>
+Depends: R (>= 3.2), methods, DBI, RSQLite
+Suggests: testthat,parallel
+Description: R class to access 'sqlite', 'BiblioSpec' generated, mass spectrometry search result files,
+    containing detailed information about peptide spectra matches.
+    Convert 'Mascot' '.dat' or e.g. 'comet' '.pep.xml' files with 'BiblioSpec' into 'sqlite' files and than 
+    access them with the 'CRAN' 'bibliospec' package to analyse with the R-packages 'specL' to generate
+    spectra libraries, 'protViz' to annotate spectra, or 'prozor' for false discovery rate 
+    estimation and protein inference.
+License: GPL-3
+URL: https://github.com/protViz/bibliospec
+BugReports: https://github.com/protViz/bibliospec/issues
+Repository: CRAN
+Collate: bibliospec.R zzz.R
+NeedsCompilation: no
+RoxygenNote: 5.0.1
+Packaged: 2016-06-30 21:02:16 UTC; wewol
+Date/Publication: 2016-07-01 10:57:25

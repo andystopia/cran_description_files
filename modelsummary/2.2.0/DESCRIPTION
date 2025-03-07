@@ -1,0 +1,107 @@
+Type: Package
+Package: modelsummary
+Title: Summary Tables and Plots for Statistical Models and Data:
+        Beautiful, Customizable, and Publication-Ready
+Description: Create beautiful and customizable tables to summarize several
+    statistical models side-by-side. Draw coefficient plots, multi-level
+    cross-tabs, dataset summaries, balance tables (a.k.a. "Table 1s"), and
+    correlation matrices. This package supports dozens of statistical models, and
+    it can produce tables in HTML, LaTeX, Word, Markdown, PDF, PowerPoint, Excel,
+    RTF, JPG, or PNG. Tables can easily be embedded in 'Rmarkdown' or 'knitr'
+    dynamic documents. Details can be found in Arel-Bundock (2022)
+    <doi:10.18637/jss.v103.i01>.
+Version: 2.2.0
+Authors@R: c(person("Vincent", "Arel-Bundock", 
+                   email = "vincent.arel-bundock@umontreal.ca", 
+                   role = c("aut", "cre", "cph"),
+                   comment = c(ORCID = "0000-0003-2042-7063")),
+            person("Joachim", "Gassen", 
+                   email = "gassen@wiwi.hu-berlin.de",
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0003-4364-2911")),
+            person("Nathan", "Eastwood",
+                   role = "ctb",
+                   email = "nathan.eastwood@icloud.com"),
+            person("Nick", "Huntington-Klein", 
+                   email = "nhuntington-klein@seattleu.edu",
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0002-7352-3991")),
+            person("Moritz", "Schwarz", 
+                   email = "moritz.schwarz@scmo.eu",
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0003-0340-3780")),
+            person("Benjamin", "Elbers",
+                   email = "be2239@columbia.edu",
+                   role = "ctb",
+                   comment = c(ORDIC = "0000-0001-5392-3448")),
+            person(given = "Grant",
+                   family = "McDermott",
+                   role = "ctb",
+                   email = "grantmcd@uoregon.edu",
+                   comment = c(ORCID = "0000-0001-7883-8573")),
+            person(given = "Lukas",
+                   family = "Wallrich",
+                   role = "ctb",
+                   email = "l.wallrich@bbk.ac.uk",
+                   comment = c(ORCID = "0000-0003-2121-5177")))
+URL: https://modelsummary.com
+BugReports: https://github.com/vincentarelbundock/modelsummary/issues/
+Depends: R (>= 4.0.0)
+Imports: checkmate (>= 2.3.1), data.table (>= 1.15.2), generics, glue,
+        insight (>= 0.20.3), methods, parameters (>= 0.22.1),
+        performance (>= 0.11.0), tables (>= 0.9.17), tinytable (>=
+        0.4.0)
+Suggests: AER, altdoc, Amelia, betareg, bookdown, brms, broom,
+        broom.mixed, car, clubSandwich, correlation, covr, did, digest,
+        DT, estimatr, fixest, flextable, future, future.apply, gamlss,
+        ggdist, ggplot2, gh, gt (>= 0.8.0), gtExtras, haven, huxtable,
+        labelled, IRdisplay, ivreg, kableExtra, knitr, lavaan, lfe,
+        lme4, lmtest, magick, magrittr, marginaleffects, MASS, mgcv,
+        mice, nlme, nnet, officer, openxlsx, pandoc, parallel, pscl,
+        psych, remotes, rmarkdown, rstanarm, rsvg, sandwich, spelling,
+        survey, survival, tibble, tictoc, tidyselect, tidyverse,
+        tinysnapshot (>= 0.0.6), tinytest, tinytex, webshot2,
+        wesanderson
+License: GPL-3
+Encoding: UTF-8
+Config/testthat/edition: 3
+Language: en-US
+RoxygenNote: 7.3.2
+Collate: 'bind_est_gof.R' 'coef_rename.R' 'config_modelsummary.R'
+        'convenience.R' 'datasummary.R' 'datasummary_balance.R'
+        'datasummary_correlation.R' 'datasummary_crosstab.R'
+        'datasummary_df.R' 'datasummary_extract.R'
+        'datasummary_functions.R' 'datasummary_skim.R' 'dvnames.R'
+        'escape.R' 'factory.R' 'factory_DT.R' 'factory_dataframe.R'
+        'factory_flextable.R' 'factory_gt.R' 'factory_huxtable.R'
+        'factory_kableExtra.R' 'factory_markdown.R'
+        'factory_tinytable.R' 'factory_typst.R' 'fmt_factory.R'
+        'format_estimates.R' 'format_gof.R' 'format_msg.R'
+        'get_estimates.R' 'get_gof.R' 'get_vcov.R' 'glance_custom.R'
+        'gof_map.R' 'hush.R' 'map_estimates.R' 'map_gof.R'
+        'methods_did.R' 'methods_estimatr.R' 'methods_fixest.R'
+        'methods_lfe.R' 'methods_stats.R' 'modelplot.R'
+        'modelsummary.R' 'modelsummary_cbind.R' 'modelsummary_list.R'
+        'modelsummary_rbind.R' 'modelsummary_wide.R' 'poorman.R'
+        'reexport.R' 'rename_statistics.R' 'sanitize_conf_level.R'
+        'sanitize_fmt.R' 'sanitize_gof_map.R' 'sanitize_models.R'
+        'sanitize_output.R' 'sanitize_shape.R' 'sanitize_statistic.R'
+        'sanitize_vcov.R' 'sanity_checks.R' 'settings.R'
+        'shape_estimates.R' 'span.R' 'stars.R' 'supported_models.R'
+        'themes.R' 'tidy_custom.R' 'update_modelsummary.R'
+        'utils_labels.R' 'utils_pad.R' 'utils_print.R'
+        'utils_replace.R' 'utils_stats.R' 'utils_warn.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2024-09-02 19:21:47 UTC; vincent
+Author: Vincent Arel-Bundock [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2042-7063>),
+  Joachim Gassen [ctb] (<https://orcid.org/0000-0003-4364-2911>),
+  Nathan Eastwood [ctb],
+  Nick Huntington-Klein [ctb] (<https://orcid.org/0000-0002-7352-3991>),
+  Moritz Schwarz [ctb] (<https://orcid.org/0000-0003-0340-3780>),
+  Benjamin Elbers [ctb] (0000-0001-5392-3448),
+  Grant McDermott [ctb] (<https://orcid.org/0000-0001-7883-8573>),
+  Lukas Wallrich [ctb] (<https://orcid.org/0000-0003-2121-5177>)
+Maintainer: Vincent Arel-Bundock <vincent.arel-bundock@umontreal.ca>
+Repository: CRAN
+Date/Publication: 2024-09-02 21:20:02 UTC

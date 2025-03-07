@@ -1,0 +1,30 @@
+Package: RESI
+Type: Package
+Title: Robust Effect Size Index (RESI) Estimation
+Version: 1.0.5
+Authors@R: 
+  c(person('Megan', 'Jones', email='megan.n.taylor@vanderbilt.edu', role=c('aut', 'cre')),
+  person('Kaidi', 'Kang', email = 'kaidi.kang@vanderbilt.edu', role = c('aut')),
+  person('Simon', 'Vandekar', email='simon.vandekar@vanderbilt.edu', role=c('aut')))
+Description: Summarize model output using a robust effect size index. The index is introduced in Vandekar, Rao, & Blume (2020) <doi:10.1007/s11336-020-09698-2>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Collate: 'internal_functions.R' 'summary.resi.R' 'resi.R' 'resi_pe.R'
+        'Anova.resi.R' 'data.R' 'chisq2S.R' 'f2S.R' 't2S.R' 't2S_alt.R'
+        'z2S.R' 'z2S_alt.R' 'Rsq2S.R' 'S2Rsq.R' 'S2d.R' 'S2fsq.R'
+        'd2S.R' 'fsq2S.R' 'plot.R' 'print.R'
+Imports: aod, car, clubSandwich, lmtest, nlme, regtools, sandwich
+Suggests: gee, geepack, knitr, lme4, pscl, rmarkdown, splines,
+        survival, testthat (>= 3.0.0)
+RoxygenNote: 7.2.0
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-09-05 19:56:44 UTC; megan
+Author: Megan Jones [aut, cre],
+  Kaidi Kang [aut],
+  Simon Vandekar [aut]
+Maintainer: Megan Jones <megan.n.taylor@vanderbilt.edu>
+Repository: CRAN
+Date/Publication: 2022-09-06 07:00:02 UTC

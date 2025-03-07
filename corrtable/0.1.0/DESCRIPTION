@@ -1,0 +1,30 @@
+Package: corrtable
+Title: Creates and Saves Out a Correlation Table with Significance
+        Levels Indicated
+Version: 0.1.0
+Authors@R: 
+    c(person("Paul", "van der Laken", , "paulvanderlaken@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-0404-9114")),
+    person("Laura", "Lambert", , "laura.lambert.99@gmail.com", role = c("ctb", "cre"),
+           comment = c(ORCID = "0000-0003-4057-7114")))
+Description: After using this, a publication-ready correlation table with p-values
+  indicated will be created.  The input can be a full data frame; any
+  string and Boolean terms will be dropped as part of functionality.  Correlations and
+  p-values are calculated using the 'Hmisc' framework.  Output of the 
+  correlation_matrix() function is a table of strings; this gets saved out to a '.csv2'
+  with the save_correlation_matrix() function for easy insertion into a paper.
+  For more details about the process, consult
+  <https://paulvanderlaken.com/2020/07/28/publication-ready-correlation-matrix-significance-r/>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: Hmisc
+Suggests: waldo, withr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-09-09 23:59:31 UTC; Laura
+Author: Paul van der Laken [aut] (<https://orcid.org/0000-0002-0404-9114>),
+  Laura Lambert [ctb, cre] (<https://orcid.org/0000-0003-4057-7114>)
+Maintainer: Laura Lambert <laura.lambert.99@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-12 09:52:54 UTC

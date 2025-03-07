@@ -1,0 +1,34 @@
+Package: brinton
+Type: Package
+Version: 0.2.6
+Title: A Graphical EDA Tool
+Description: An automated graphical exploratory data analysis (EDA) tool that introduces: 
+  a.) wideplot graphics for exploring the structure of a dataset through a grid of variables 
+      and graphic types. 
+  b.) longplot graphics, which present the entire catalog of available graphics for representing 
+      a particular variable using a grid of graphic types and variations on these types.
+  c.) plotup function, which presents a particular graphic for a specific variable of a dataset. 
+      The plotup() function also makes it possible to obtain the code used to generate the graphic, 
+      meaning that the user can adjust its properties as needed.
+  d.) matrixplot graphics that is a grid of a particular graphic showing bivariate relationships
+      between all pairs of variables of a certain(s) type(s) in a multivariate data set.
+Authors@R: c(person(given = "Pere", family = "Millán-Martínez", email="info@sciencegraph.org", role = c("aut", "cre")), person(given = "Ramon", family = "Oller Piqué", email="ramon.oller@uvic.cat", role = "ctb"))
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+Imports: ggplot2, gridExtra, rmarkdown, glue, pander, lubridate,
+        tibble, sm, RColorBrewer, forcats, GGally
+Suggests: knitr, MASS, hexbin, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+SystemRequirements: Pandoc (>= 1.12.3), web browser
+URL: https://sciencegraph.github.io/brinton/,
+        https://github.com/sciencegraph/brinton
+BugReports: https://github.com/sciencegraph/brinton/issues
+NeedsCompilation: no
+Packaged: 2022-07-14 07:33:31 UTC; pmillan
+Author: Pere Millán-Martínez [aut, cre],
+  Ramon Oller Piqué [ctb]
+Maintainer: Pere Millán-Martínez <info@sciencegraph.org>
+Repository: CRAN
+Date/Publication: 2022-07-16 23:50:02 UTC

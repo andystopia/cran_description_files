@@ -1,0 +1,36 @@
+Package: localScore
+Type: Package
+Title: Package for Sequence Analysis by Local Score
+Version: 1.0.10
+Date: 2023-11-02
+Authors@R: c(person("Sebastian", "Simon", role = "aut"),
+            person("David", "Robelin", role = c("aut","cre"),
+                   email = "david.robelin@inrae.fr"),
+            person("Sabine", "Mercier", role = "aut",
+                   email = "sabine.mercier@univ-tlse2.fr"),
+            person("Sebastien", "Dejean", role = "aut",
+                   email="sebastien.dejean@math.univ-toulouse.fr"),
+            person(given="The authors of Eigen the library for the included version of Eigen", role = "cph"))
+Copyright: See the file COPYRIGHTS for various embedded Eigen library
+        copyright details
+Maintainer: David Robelin <david.robelin@inrae.fr>
+Description: Functionalities for calculating the local score and calculating statistical relevance (p-value) to find a local Score in a sequence of given distribution (S. Mercier and J.-J. Daudin (2001) <https://hal.science/hal-00714174/>) ; S. Karlin and S. Altschul (1990) <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC53667/>  ; S. Mercier, D. Cellier and F. Charlot (2003) <https://hal.science/hal-00937529v1/> ; A. Lagnoux, S. Mercier and P. Valois (2017) <doi:10.1093/bioinformatics/btw699> ).
+License: GPL (>= 2) | file LICENSE
+Imports: Rcpp (>= 0.12.16), utils
+LinkingTo: Rcpp
+RoxygenNote: 7.2.3
+LazyData: true
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.2.0)
+NeedsCompilation: yes
+Packaged: 2023-11-02 07:26:26 UTC; drobelin
+Author: Sebastian Simon [aut],
+  David Robelin [aut, cre],
+  Sabine Mercier [aut],
+  Sebastien Dejean [aut],
+  The authors of Eigen the library for the included version of Eigen
+    [cph]
+Repository: CRAN
+Date/Publication: 2023-11-02 08:50:03 UTC

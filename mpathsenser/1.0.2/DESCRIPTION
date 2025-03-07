@@ -1,0 +1,33 @@
+Package: mpathsenser
+Title: Process and Analyse Data from m-Path Sense
+Version: 1.0.2
+Authors@R: 
+    person(given = "Koen",
+           family = "Niemeijer",
+           role = c("aut", "cre"),
+           email = "koen.niemeijer@kuleuven.be",
+           comment = c(ORCID = "0000-0002-0816-534X"))
+Description: Overcomes one of the major challenges in mobile (passive) sensing, namely 
+    being able to pre-process the raw data that comes from a mobile sensing app, 
+    specifically "m-Path Sense" <https://m-path.io>. The main task of 'mpathsenser' is 
+    therefore to read "m-Path Sense" JSON files into a database and provide several
+    convenience functions to aid in data processing.
+Depends: R (>= 4.0.0)
+License: GPL (>= 3)
+URL:
+        https://gitlab.kuleuven.be/ppw-okpiv/researchers/u0134047/mpathsenser/
+BugReports: https://gitlab.kuleuven.be/ppw-okpiv/researchers/u0134047/mpathsenser/-/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: DBI, dbplyr, dplyr, furrr, future, jsonlite, lubridate,
+        magrittr, purrr, rjson, RSQLite, stats, tibble, tidyr
+Suggests: curl, dbx, ggplot2, httr, lme4, lmerTest, progressr, rlang,
+        rvest, sodium, testthat (>= 3.0.0), vroom
+Config/testthat/edition: 3
+Config/Needs/website: tidyverse/tidytemplate
+NeedsCompilation: no
+Packaged: 2022-05-22 19:56:29 UTC; u0134047
+Author: Koen Niemeijer [aut, cre] (<https://orcid.org/0000-0002-0816-534X>)
+Maintainer: Koen Niemeijer <koen.niemeijer@kuleuven.be>
+Repository: CRAN
+Date/Publication: 2022-05-24 14:00:02 UTC

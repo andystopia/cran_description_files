@@ -1,0 +1,39 @@
+Package: rangr
+Type: Package
+Title: Mechanistic Simulation of Species Range Dynamics
+Version: 1.0.5
+Authors@R: c(
+    person("Katarzyna", "Markowska", email = "katarzyna.markowska@amu.edu.pl", role = c("aut", "cre")),
+    person("Lechosław", "Kuczyński", email = "lechu@amu.edu.pl", role = "aut"),
+    person("Tad", "Dallas", role = "rev"),
+    person("Joanne", "Potts", role = "rev"))
+Description: Integrates population dynamics and dispersal into a mechanistic 
+  virtual species simulator. The package can be used to study the effects of 
+  environmental change on population growth and range shifts. It allows for 
+  simple and straightforward definition of population dynamics (including 
+  positive density dependence), extensive possibilities for defining dispersal 
+  kernels, and the ability to generate virtual ecologist data. Learn more about 
+  the 'rangr' at <https://docs.ropensci.org/rangr/>.
+License: MIT + file LICENSE
+Imports: methods, parallel, pbapply, grDevices, graphics, stats, utils,
+        zoo, terra, assertthat
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), covr, bookdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+URL: https://github.com/ropensci/rangr,
+        https://docs.ropensci.org/rangr/,
+        https://doi.org/10.1111/2041-210X.14475
+BugReports: https://github.com/ropensci/rangr/issues
+NeedsCompilation: no
+Packaged: 2025-02-13 10:47:09 UTC; katar
+Author: Katarzyna Markowska [aut, cre],
+  Lechosław Kuczyński [aut],
+  Tad Dallas [rev],
+  Joanne Potts [rev]
+Maintainer: Katarzyna Markowska <katarzyna.markowska@amu.edu.pl>
+Repository: CRAN
+Date/Publication: 2025-02-14 14:30:02 UTC

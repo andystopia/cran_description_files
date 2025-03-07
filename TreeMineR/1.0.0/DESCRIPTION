@@ -1,0 +1,35 @@
+Package: TreeMineR
+Type: Package
+Title: Tree-Based Scan Statistics
+Version: 1.0.0
+Authors@R: c(person(given = "Joshua P.",
+                    family = "Entrop",
+           	        role = c("aut", "cre", "cph"),
+           	        email = "joshuaentrop@posteo.de",
+           	        comment = c(ORCID = "0000-0003-1614-8096")),
+           	 person(given = "Viktor",
+           	        family = "Wintzell",
+           	        role = "aut",
+           	        email = "viktor.wintzell@ki.se"))
+Description: Implementation of unconditional Bernoulli Scan Statistic developed
+             by Kulldorff et al. (2003) <doi:10.1111/1541-0420.00039> 
+             for hierarchical tree structures. Tree-based Scan Statistics are an
+             exploratory method to identify event clusters across the space of a 
+             hierarchical tree.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10), data.table
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0), tidyr (>= 1.3.0), comorbidity (>= 1.0.7)
+Config/testthat/edition: 3
+Imports: future, future.apply, cli (>= 3.6.1)
+URL: https://entjos.github.io/TreeMineR/
+NeedsCompilation: no
+Packaged: 2024-03-22 10:26:36 UTC; josent
+Author: Joshua P. Entrop [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1614-8096>),
+  Viktor Wintzell [aut]
+Maintainer: Joshua P. Entrop <joshuaentrop@posteo.de>
+Repository: CRAN
+Date/Publication: 2024-03-22 20:10:06 UTC

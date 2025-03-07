@@ -1,0 +1,31 @@
+Package: rosv
+Title: Client to Access and Operate on the 'Open Source Vulnerability'
+        API
+Version: 0.5.0
+Authors@R: 
+    person("Allen", "OBrien", , "allen.g.obrien@gmail.com", role = c("aut", "cre", "cph"))
+Description: Connect, query, and operate on information available from the 
+    'Open Source Vulnerability' database <https://osv.dev/>. Although 'CRAN' 
+    has vulnerabilities listed, these are few compared to projects such as 
+    'PyPI'. With tighter integration between 'R' and 'Python', having an 
+    'R' specific package to access details about vulnerabilities from 
+    various sources is a worthwhile enterprise.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: httptest2 (>= 1.0.0), knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: digest (>= 0.6.0), furrr (>= 0.3.0), httr2 (>= 1.0.0),
+        jsonlite (>= 0.9.16), memoise (>= 2.0.0), purrr (>= 1.0.0), R6
+        (>= 2.0.0), utils
+Depends: R (>= 2.10)
+URL: https://al-obrien.github.io/rosv/,
+        https://github.com/al-obrien/rosv
+BugReports: https://github.com/al-obrien/rosv/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-11-23 17:11:02 UTC; allen
+Author: Allen OBrien [aut, cre, cph]
+Maintainer: Allen OBrien <allen.g.obrien@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-23 17:30:02 UTC

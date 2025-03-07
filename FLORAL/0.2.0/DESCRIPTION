@@ -1,0 +1,41 @@
+Package: FLORAL
+Type: Package
+Title: Fit Log-Ratio Lasso Regression for Compositional Data
+Version: 0.2.0
+Date: 2023-07-04
+Authors@R: c(
+    person("Teng", "Fei", , "feit1@mskcc.org", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7888-1715")),
+    person("Tyler", "Funnell", role=c("aut"),
+           comment = c(ORCID = "0000-0003-1612-5644")),
+    person("Nicholas", "Waters", role=c("aut"),
+           comment = c(ORCID = "0000-0002-9035-2143")),
+    person("Sandeep", "Raj", role=c("aut"),
+           comment = c(ORCID = "0000-0003-4629-0528"))
+  )
+Description: Log-ratio Lasso regression for continuous, binary, and survival outcomes with compositional features. See Fei and others (2023) <doi:10.1101/2023.05.02.538599>.
+License: GPL (>= 3)
+URL: https://vdblab.github.io/FLORAL/
+BugReports: https://github.com/vdblab/FLORAL/issues
+Depends: R (>= 3.5.0)
+biocViews:
+Imports: Rcpp (>= 1.0.9), stats, survival, ggplot2, survcomp, reshape,
+        dplyr, glmnet, caret, grDevices, utils, mvtnorm, doParallel,
+        doRNG, foreach
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Suggests: covr, knitr, rmarkdown, spelling, testthat (>= 3.0.0),
+        patchwork
+Language: en-US
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-07-05 04:27:32 UTC; feit1
+Author: Teng Fei [aut, cre, cph] (<https://orcid.org/0000-0001-7888-1715>),
+  Tyler Funnell [aut] (<https://orcid.org/0000-0003-1612-5644>),
+  Nicholas Waters [aut] (<https://orcid.org/0000-0002-9035-2143>),
+  Sandeep Raj [aut] (<https://orcid.org/0000-0003-4629-0528>)
+Maintainer: Teng Fei <feit1@mskcc.org>
+Repository: CRAN
+Date/Publication: 2023-07-05 23:43:05 UTC

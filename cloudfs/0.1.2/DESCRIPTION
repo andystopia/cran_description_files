@@ -1,0 +1,35 @@
+Package: cloudfs
+Title: Streamlined Interface to Interact with Cloud Storage Platforms
+Version: 0.1.2
+Authors@R: c(
+    person("Iaroslav", "Domin", email = "iaroslav@gradientmetrics.com", role = c("aut", "cre")),
+    person("Stefan", "Musch", email = "stefan@gradientmetrics.com", role = c("aut")),
+    person("Michal", "Czyz", email = "michal@gradientmetrics.com", role = c("aut")),
+    person("Emmanuel", "Ugochukwu", email = "emmanuel@gradientmetrics.com", role = c("aut")),
+    person("Gradient Metrics", role = c("cph", "fnd"))
+  )
+Description: A unified interface for simplifying cloud storage interactions, 
+    including uploading, downloading, reading, and writing files, with functions
+    for both 'Google Drive' (<https://www.google.com/drive/>) and 'Amazon S3' 
+    (<https://aws.amazon.com/s3/>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: aws.s3, googledrive, desc, dplyr, cli, utils, rlang, glue,
+        httr
+Suggests: googlesheets4, haven, jsonlite, knitr, readr, readxl,
+        rmarkdown, testthat (>= 3.0.0), withr, writexl, xml2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://g6t.github.io/cloudfs/, https://github.com/g6t/cloudfs
+BugReports: https://github.com/g6t/cloudfs/issues
+NeedsCompilation: no
+Packaged: 2023-10-18 01:19:30 UTC; iaroslav@gradientmetrics.com
+Author: Iaroslav Domin [aut, cre],
+  Stefan Musch [aut],
+  Michal Czyz [aut],
+  Emmanuel Ugochukwu [aut],
+  Gradient Metrics [cph, fnd]
+Maintainer: Iaroslav Domin <iaroslav@gradientmetrics.com>
+Repository: CRAN
+Date/Publication: 2023-10-18 15:30:08 UTC

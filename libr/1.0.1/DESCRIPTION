@@ -1,0 +1,27 @@
+Package: libr
+Type: Package
+Title: Libraries, Data Dictionaries, and a Data Step for R
+Version: 1.0.1
+Author: David J. Bosak
+Maintainer: David Bosak <dbosak01@gmail.com>
+Description: Contains a set of functions to create data libraries,
+    generate data dictionaries, and simulate a data step.
+    The libname() function will load a directory of data into 
+    a library in one line of code.  The dictionary() function
+    will generate data dictionaries for individual
+    data frames or an entire library.  And the datestep() function
+    will perform row-by-row data processing.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/dbosak01/libr
+BugReports: https://github.com/dbosak01/libr/issues
+Depends: R (>= 4.0.0)
+Suggests: testthat, knitr, rmarkdown, foreign, magrittr
+Imports: readr, readxl, haven, openxlsx, crayon, dplyr, tibble, tools
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-12-07 06:16:59 UTC; User
+Repository: CRAN
+Date/Publication: 2020-12-09 09:00:02 UTC

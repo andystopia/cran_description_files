@@ -1,0 +1,32 @@
+Package: makeParallel
+Version: 0.1.1
+Date: 2018-07-18
+Title: Transform Serial R Code into Parallel R Code
+Authors@R: person("Clark", "Fitzgerald", role = c("aut", "cre"),
+                     email = "clarkfitzg@gmail.com",
+                     comment = c(ORCID = "0000-0003-3446-6389"))
+Maintainer: Clark Fitzgerald <clarkfitzg@gmail.com>
+Depends: R (>= 3.1.0)
+Imports: methods, utils, graphics, parallel, codetools, CodeDepends,
+        whisker
+Suggests: igraph, roxygen2, knitr, rmarkdown, testthat
+Description: 
+    Writing parallel R code can be difficult, particularly for code
+    that is not "embarrassingly parallel".
+    This experimental package automates the transformation of serial R code
+    into more efficient parallel versions. It identifies task parallelism by
+    statically analyzing entire scripts to detect dependencies between
+    statements. It implements an extensible system for scheduling
+    and generating new code. It includes a reference implementation of the
+    'List Scheduling' approach to the general task scheduling problem of scheduling 
+    statements on multiple processors.
+License: MIT + file LICENSE
+URL: https://github.com/clarkfitzg/makeParallel
+BugReports: https://github.com/clarkfitzg/makeParallel
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-07-30 19:23:01 UTC; clark
+Author: Clark Fitzgerald [aut, cre] (<https://orcid.org/0000-0003-3446-6389>)
+Repository: CRAN
+Date/Publication: 2018-07-31 10:30:03 UTC

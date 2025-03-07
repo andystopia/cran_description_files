@@ -1,0 +1,16 @@
+Package: SCAT
+Type: Package
+Title: Summary Based Conditional Association Test
+Version: 0.5.0
+Date: 2019-02-01
+Author: Han Zhang, Kai Yu
+Maintainer: Han Zhang <han.zhang2@nih.gov>
+Depends: stats, utils
+Description: Conditional association test based on summary data from genome-wide association study (GWAS). SCAT adjusts for heterogeneity in SNP coverage that exists in summary data if SNPs are not present in all of the participating studies of a GWAS meta-analysis. This commonly happens when different reference panels are used in participating studies for genotype imputation. This could happen when ones simply do not have data for some SNPs (e.g. different array, or imputated data is not available). Without properly adjusting for this kind of heterogeneity leads to inflated false positive rate. SCAT can also be used to conduct conventional conditional analysis when coverage heterogeneity is absent. For more details, refer to Zhang et al. (2018) Brief Bioinform. 19(6):1337-1343. <doi: 10.1093/bib/bbx072>. 
+License: GPL-2 | GPL-3
+LazyData: TRUE
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2019-02-01 15:47:57 UTC; zhangh12
+Repository: CRAN
+Date/Publication: 2019-02-01 16:43:27 UTC

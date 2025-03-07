@@ -1,0 +1,27 @@
+Package: pompp
+Title: Presence-Only for Marked Point Process
+Version: 0.1.0
+Authors@R: 
+    person("Guido", "Alberti Moreira", email = "guidoalber@gmail.com",
+    role = c("cre","aut"), comment=c(ORCID="0000-0001-7557-0874"))
+Description: Inspired by Moreira and Gamerman (2022) <doi:10.1214/21-AOAS1569>,
+    this methodology expands the idea by including Marks in the point process.
+    Using efficient 'C++' code, the estimation is possible and made faster with
+    'OpenMP' <https://www.openmp.org/> enabled computers.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Depends: R (>= 2.14.0)
+LinkingTo: Rcpp, RcppEigen, RcppProgress
+Imports: Rcpp, coda, geoR, parallel, methods, graphics, stats, tools
+Suggests: bayesplot, ggplot2, MASS
+Collate: 'RcppExports.R' 'covariance_importance.R' 'prior-class.R'
+        'initial-class.R' 'model-class.R' 'fit-class.R'
+        'pompp-package.R' 'pompp.R'
+NeedsCompilation: yes
+Packaged: 2022-09-26 20:30:08 UTC; anthorg
+Author: Guido Alberti Moreira [cre, aut]
+    (<https://orcid.org/0000-0001-7557-0874>)
+Maintainer: Guido Alberti Moreira <guidoalber@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-27 09:20:02 UTC

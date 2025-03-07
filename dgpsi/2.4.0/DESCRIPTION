@@ -1,0 +1,37 @@
+Package: dgpsi
+Type: Package
+Title: Interface to 'dgpsi' for Deep and Linked Gaussian Process
+        Emulations
+Version: 2.4.0
+Authors@R: c(
+  person('Deyu', 'Ming', role = c('aut', 'cre', 'cph'),
+         email = 'deyu.ming.16@ucl.ac.uk'),
+  person('Daniel', 'Williamson', role = c('aut'),
+         email = 'd.williamson@exeter.ac.uk')
+  )
+Maintainer: Deyu Ming <deyu.ming.16@ucl.ac.uk>
+Description: Interface to the 'python' package 'dgpsi' for Gaussian process, deep Gaussian process, 
+             and linked deep Gaussian process emulations of computer models and networks using stochastic imputation (SI). 
+             The implementations follow Ming & Guillas (2021) <doi:10.1137/20M1323771> and 
+             Ming, Williamson, & Guillas (2023) <doi:10.1080/00401706.2022.2124311> and 
+             Ming & Williamson (2023) <arXiv:2306.01212>. To get started with the package, 
+             see <https://mingdeyu.github.io/dgpsi-R/>.
+License: MIT + file LICENSE
+URL: https://github.com/mingdeyu/dgpsi-R,
+        https://mingdeyu.github.io/dgpsi-R/
+BugReports: https://github.com/mingdeyu/dgpsi-R/issues
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: reticulate (>= 1.26), benchmarkme (>= 1.0.8), utils, ggplot2,
+        ggforce, reshape2, patchwork, lhs, methods, stats, bitops,
+        clhs, dplyr, uuid
+Suggests: knitr, rmarkdown, MASS, R.utils, spelling
+VignetteBuilder: knitr
+RoxygenNote: 7.2.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-01-14 11:51:41 UTC; deyu
+Author: Deyu Ming [aut, cre, cph],
+  Daniel Williamson [aut]
+Repository: CRAN
+Date/Publication: 2024-01-14 12:20:03 UTC

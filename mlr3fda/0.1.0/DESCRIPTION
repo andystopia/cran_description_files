@@ -1,0 +1,44 @@
+Package: mlr3fda
+Title: Extending 'mlr3' to Functional Data Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Sebastian", "Fischer", , "sebf.fischer@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9609-3197")),
+    person("Maximilian", "Muecke", , "muecke.maximilian@gmail.com", role = "aut",
+           comment = c(ORCID = "0009-0000-9432-9795")),
+    person("Fabian", "Scheipl", email = "fabian.scheipl@googlemail.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-8172-3603")),
+    person("Bernd", "Bischl", , "bernd_bischl@gmx.net", role = "ctb",
+           comment = c(ORCID = "0000-0001-6002-6980"))
+  )
+Description: Extends the 'mlr3' ecosystem to functional analysis by adding support
+    for irregular and regular functional data as defined in the 'tf' package.
+    The package provides 'PipeOps' for preprocessing functional columns and for
+    extracting scalar features, thereby allowing standard machine learning
+    algorithms to be applied afterwards. Available operations include simple
+    functional features such as the mean or maximum, smoothing, interpolation,
+    flattening, and functional 'PCA'.
+License: LGPL-3
+URL: https://mlr3fda.mlr-org.com, https://github.com/mlr-org/mlr3fda
+BugReports: https://github.com/mlr-org/mlr3fda/issues
+Depends: mlr3 (>= 0.14.0), R (>= 3.1.0)
+Imports: checkmate, data.table, lgr, mlr3misc (>= 0.14.0),
+        mlr3pipelines, paradox, R6, tf
+Suggests: rpart, testthat (>= 3.0.0), zoo
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Collate: 'zzz.R' 'PipeOpFDAExtract.R' 'PipeOpFDAFlatten.R'
+        'PipeOpFDAInterpol.R' 'PipeOpFDASmooth.R' 'PipeOpFPCA.R'
+        'TaskClassif_phoneme.R' 'TaskRegr_dti.R' 'TaskRegr_fuel.R'
+        'bibentries.R' 'datasets.R' 'hash_input.R'
+NeedsCompilation: no
+Packaged: 2024-04-04 07:55:52 UTC; sebi
+Author: Sebastian Fischer [aut, cre] (<https://orcid.org/0000-0002-9609-3197>),
+  Maximilian Muecke [aut] (<https://orcid.org/0009-0000-9432-9795>),
+  Fabian Scheipl [ctb] (<https://orcid.org/0000-0001-8172-3603>),
+  Bernd Bischl [ctb] (<https://orcid.org/0000-0001-6002-6980>)
+Maintainer: Sebastian Fischer <sebf.fischer@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-04 17:22:59 UTC

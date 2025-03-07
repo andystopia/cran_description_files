@@ -1,0 +1,84 @@
+Package: marginaleffects
+Title: Marginal Effects, Marginal Means, Predictions, and Contrasts
+Version: 0.8.0
+Authors@R: 
+    c(person(given = "Vincent",
+             family = "Arel-Bundock",
+             role = c("aut", "cre", "cph"),
+             email = "vincent.arel-bundock@umontreal.ca",
+             comment = c(ORCID = "0000-0003-2042-7063")),
+      person(given = "Marcio Augusto",
+             family = "Diniz",
+             role = "ctb",
+             email = "marcio.diniz@cshs.org",
+             comment = c(ORCID = "0000-0002-2427-7843")),
+      person(given = "Noah",
+             family = "Greifer",
+             role = "ctb",
+             email = "noah.greifer@gmail.com",
+             comment = c(ORCID = "0000-0003-3067-7154")))
+Description: Compute and plot adjusted predictions, contrasts, marginal effects, and marginal means for over 70 classes of statistical models in R. Conduct linear and non-linear hypothesis tests using the delta method.
+License: GPL (>= 3)
+Copyright: inst/COPYRIGHTS
+Encoding: UTF-8
+URL: https://vincentarelbundock.github.io/marginaleffects/
+BugReports: https://github.com/vincentarelbundock/marginaleffects/issues
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+Imports: checkmate, data.table, generics, insight (>= 0.18.5), methods
+Suggests: AER, afex, aod, bench, betareg, BH, bife, biglm, brglm2,
+        brms, brmsmargins, broom, collapse, conflicted, covr, crch,
+        datawizard, dplyr, emmeans, estimatr, fixest (>= 0.10.1),
+        future, future.apply, gam, gamlss, gamlss.dist, geepack,
+        ggbeeswarm, ggdag, ggdist, ggplot2, ggrepel, glmmTMB, glmx,
+        haven, here, itsadug, ivreg, kableExtra, knitr, lme4, lmerTest,
+        magrittr, margins, MASS, MatchIt, mclogit, mgcv, mhurdle, mice,
+        mlogit, modelbased, modelsummary, nlme, nnet, ordinal,
+        patchwork, pkgdown, plm, prediction, pscl, quantreg, RcppEigen,
+        remotes, rlang, rmarkdown, rms, robust, robustbase, robustlmm,
+        rstanarm, rstantools, sampleSelection, sandwich, scam,
+        speedglm, spelling, survey, survival, systemfonts, tidymodels,
+        tidyr, tidyverse, tinytest, titanic, truncreg, tsModel, vdiffr,
+        withr
+Collate: 'align_J_V.R' 'arg_name_change.R' 'attributes.R'
+        'backtransform.R' 'by.R' 'comparisons.R' 'complete_levels.R'
+        'datagrid.R' 'deltamethod.R' 'deprecate_arg.R'
+        'find_categorical.R' 'find_variable_class.R' 'format_msg.R'
+        'get_ci.R' 'get_coef.R' 'get_contrast_data.R'
+        'get_contrast_data_character.R' 'get_contrast_data_factor.R'
+        'get_contrast_data_logical.R' 'get_contrast_data_numeric.R'
+        'get_contrasts.R' 'get_eti.R' 'get_group_names.R' 'get_hdi.R'
+        'get_hypothesis.R' 'get_jacobian.R' 'get_predict.R'
+        'get_se_delta.R' 'get_vcov.R' 'github_issue.R' 'glance.R'
+        'hush.R' 'marginaleffects.R' 'marginalmeans.R' 'mean_or_mode.R'
+        'set_coef.R' 'methods_MASS.R' 'methods_afex.R' 'methods_aod.R'
+        'methods_betareg.R' 'methods_bife.R' 'methods_biglm.R'
+        'methods_nnet.R' 'methods_brglm2.R' 'sanity_model.R'
+        'methods_brms.R' 'methods_crch.R' 'methods_fixest.R'
+        'methods_gamlss.R' 'methods_glmmTMB.R' 'methods_glmx.R'
+        'methods_lme4.R' 'methods_mclogit.R' 'methods_mgcv.R'
+        'methods_mhurdle.R' 'methods_mlogit.R' 'methods_ordinal.R'
+        'methods_plm.R' 'methods_pscl.R' 'methods_quantreg.R'
+        'methods_rms.R' 'methods_robustlmm.R' 'methods_rstanarm.R'
+        'methods_sampleSelection.R' 'methods_scam.R' 'methods_stats.R'
+        'methods_survival.R' 'methods_tobit1.R' 'modelarchive.R'
+        'myTryCatch.R' 'package.R' 'plot.R' 'plot_cap.R' 'plot_cco.R'
+        'plot_cme.R' 'posteriordraws.R' 'predictions.R'
+        'sanitize_conf_level.R' 'sanitize_hypothesis.R'
+        'sanitize_interaction.R' 'sanitize_newdata.R'
+        'sanitize_transform_pre.R' 'sanitize_type.R'
+        'sanitize_variables.R' 'sanity.R' 'sanity_by.R' 'sanity_dots.R'
+        'settings.R' 'summary.R' 'tidy.R' 'tidy.comparisons.R'
+        'tidy.predictions.R' 'type_dictionary.R' 'unpack_matrix_cols.R'
+        'utils_cjdt.R' 'warn_once.R'
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-11-02 15:21:08 UTC; vincent
+Author: Vincent Arel-Bundock [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2042-7063>),
+  Marcio Augusto Diniz [ctb] (<https://orcid.org/0000-0002-2427-7843>),
+  Noah Greifer [ctb] (<https://orcid.org/0000-0003-3067-7154>)
+Maintainer: Vincent Arel-Bundock <vincent.arel-bundock@umontreal.ca>
+Repository: CRAN
+Date/Publication: 2022-11-02 16:07:38 UTC

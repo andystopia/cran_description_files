@@ -1,0 +1,31 @@
+Package: HURDAT
+Type: Package
+Title: Hurricane Re-Analysis Project
+Version: 0.2.3
+Authors@R: c(
+    person("Tim", "Trice", email = "tim.trice@gmail.com", role = c("aut", "cre")), 
+    person("Chris", "Landsea", email = "Chris.Landsea@noaa.gov", 
+        role = c("aut", "dtc")))
+Depends: R (>= 3.5)
+Description: Scraped dataset of the Hurricane Research Division's Hurricane 
+    Re-Analysis Project known as HURDAT. Storm details are available for most 
+    known hurricanes and tropical storms for the Atlantic and northeastern 
+    Pacific ocean (northwestern hemisphere). See <http://www.aoml.noaa.gov/hrd/hurdat/Data_Storm.html> 
+    for more information.
+URL: https://github.com/timtrice/HURDAT
+BugReports: https://github.com/timtrice/HURDAT/issues
+License: MIT + file LICENSE
+Language: en-us
+LazyData: TRUE
+Imports: dplyr, purrr, readr, rlang, rvest, tidyr, xml2
+Suggests: covr, devtools, knitr, testthat, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-07-14 15:47:47 UTC; timtrice
+Author: Tim Trice [aut, cre],
+  Chris Landsea [aut, dtc]
+Maintainer: Tim Trice <tim.trice@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-14 22:30:04 UTC

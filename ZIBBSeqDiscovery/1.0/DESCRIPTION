@@ -1,0 +1,16 @@
+Package: ZIBBSeqDiscovery
+Type: Package
+Title: Zero-Inflated Beta-Binomial Modeling of Microbiome Count Data
+Version: 1.0
+Date: 2018-03-22
+Author: Tao Hu, Yihui Zhou
+Maintainer: Yihui Zhou <yihui_zhou@ncsu.edu>
+Description: Microbiome count data (Operational Taxonomic Unit, OTUs) is usually overdispersed and has excessive zero counts. The 'ZIBBSeqDiscovery' assumes a zero-inflated beta-binomial model for the distribution of the count data, and employes link functions to adjust interested covariates. To fit the model, two approaches are proposed (i) a free approach which treats the overdispersion parameters for OTUs as independent, and (ii) a constrained approach which proposes a mean-overdispersion relationship to the count data. This package can be used to test the association between the composition of the microbiome counts and the interested covariates.
+License: GPL-2
+Imports: mcc
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-03-22 22:51:22 UTC; Tao
+Repository: CRAN
+Date/Publication: 2018-03-23 13:48:19 UTC

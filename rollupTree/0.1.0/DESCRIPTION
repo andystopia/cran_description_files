@@ -1,0 +1,29 @@
+Package: rollupTree
+Title: Perform Recursive Computations
+Version: 0.1.0
+Authors@R: 
+    person(given=c("James", "Steven"), family="Jenkins",
+      email = "sjenkins@studioj.us",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-0725-0884")
+    )
+Description: Mass rollup for a Bill of Materials is an example of a class of computations in which elements are arranged in a tree structure and some property of each element is a computed function of the corresponding values of its child elements. Leaf elements, i.e., those with no children, have values assigned. In many cases, the combining function is simple arithmetic sum; in other cases (e.g., mass properties), the combiner may involve other information such as the geometric relationship between parent and child, or statistical relations such as root-sum-of-squares (RSS). This package implements a general function for such problems. It is adapted to specific recursive computations by functional programming techniques; the caller passes a function as the update parameter to rollup() (or, at a lower level, passes functions as the get, set, combine, and override parameters to update_prop()) at runtime to specify the desired operations. The implementation relies on graph-theoretic algorithms from the 'igraph' package of Csárdi, et al. (2006 <doi:10.5281/zenodo.7682609>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: igraph
+Depends: R (>= 3.5)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://jsjuni.github.io/rollupTree/,
+        https://github.com/jsjuni/rollupTree
+BugReports: https://github.com/jsjuni/rollupTree/issues
+NeedsCompilation: no
+Packaged: 2025-01-17 14:40:46 UTC; sjenkins
+Author: James Steven Jenkins [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0725-0884>)
+Maintainer: James Steven Jenkins <sjenkins@studioj.us>
+Repository: CRAN
+Date/Publication: 2025-01-20 16:20:05 UTC

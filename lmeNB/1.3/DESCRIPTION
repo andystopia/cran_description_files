@@ -1,0 +1,24 @@
+Package: lmeNB
+Type: Package
+Title: Compute the Personalized Activity Index Based on a Negative
+        Binomial Model
+Version: 1.3
+Date: 2015-01-14
+Author: Yinshan Zhao and Yumi Kondo (with contributions from Steven G. Johnson, Rudolf Schuerer and Brian Gough on the integration subroutines)
+Maintainer: Yumi Kondo <y.kondo@stat.ubc.ca>
+Description: The functions in this package implement the safety monitoring procedures proposed in the paper titled "Detection of unusual increases in MRI lesion counts in individual multiple sclerosis patients" by Zhao, Y., Li, D.K.B., Petkau, A.J., Riddehough, A., Traboulsee, A., published in Journal of the American Statistical Association in 2013. The procedure first models longitudinally collected count variables with a negative binomial mixed-effect regression model. To account for the correlation among repeated measures from the same patient, the model has subject-specific random intercept, which can be modelled with a gamma or log-normal distributions. One can also choose the semi-parametric option which does not assume any distribution for the random effect. These mixed-effect models could be useful beyond the application of the safety monitoring. The maximum likelihood methods are used to estimate the unknown fixed effect parameters of the model. Based on the fitted model, the personalized activity index is computed for each patient. Lastly, this package is companion to R package lmeNBBayes, which contains the functions to compute the Personalized Activity Index in Bayesian framework.
+License: GPL (>= 2)
+Copyright: The portion of numerical integration is based on Cubature,
+        Copyright (c) 2005-2013 Steven G. Johnson
+        (http://ab-initio.mit.edu/wiki/index.php/Cubature), which in
+        turn is based on HIntLib (also distributed under * the GNU GPL,
+        v2 or later), copyright (c) 2002-2005 Rudolf Schuerer and GNU
+        GSL (also distributed under the GNU GPL, v2 or later),
+        copyright (c) 1996-2000 Brian
+        Gough.(http://www.gnu.org/software/gsl/).
+LazyData: true
+Depends: numDeriv,statmod,lmeNBBayes
+Packaged: 2015-02-02 20:00:39 UTC; yumikondo
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-02-02 22:40:23

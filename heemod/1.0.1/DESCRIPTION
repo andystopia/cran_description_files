@@ -1,0 +1,48 @@
+Package: heemod
+Title: Markov Models for Health Economic Evaluations
+Version: 1.0.1
+Authors@R: c(
+    person("Kevin", "Zarca", email = "kevin.zarca@gmail.com", role = c("aut", "cre")),
+    person("Antoine", "Filipovic-Pierucci", role = "aut"),
+    person("Matthew", "Wiener", role = "ctb"),  
+    person("Zdenek", "Kabat", role = "ctb"),
+    person("Vojtech", "Filipec", role = "ctb"),
+	  person("Jordan", "Amdahl", role=c("ctb")),
+	  person("Yonatan", "Carranza Alarcon", role=c("ctb")),
+	  person("Vince", "Daniels", role=c("ctb"))
+    )
+Description: An implementation of the modelling and reporting features described 
+    in reference textbook and guidelines (Briggs, Andrew, et al. Decision 
+    Modelling for Health Economic Evaluation. Oxford Univ. Press, 2011;
+    Siebert, U. et al. State-Transition Modeling. Medical Decision Making 
+    32, 690-700 (2012).): deterministic and probabilistic sensitivity analysis, 
+    heterogeneity analysis, time dependency on state-time and model-time 
+    (semi-Markov and non-homogeneous Markov models), etc.
+Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.1.0), ggplot2 (>= 3.4.0), memoise (>= 2.0.0),
+        mvnfast (>= 0.2.5), tibble (>= 3.2.0), rlang (>= 1.1.0), purrr
+        (>= 1.0.0), glue (>= 1.6.0), lifecycle (>= 1.0.0), vctrs (>=
+        0.6.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.0
+Suggests: BCEA, diagram, flexsurv, knitr, logitnorm, lpSolve, mgcv,
+        optimx, parallel, readxl, rgho (>= 3.0.0), rmarkdown, stringr,
+        survival, testthat (>= 3.0.0), triangle, magrittr, cli
+BugReports: https://github.com/aphp/heemod/issues
+Encoding: UTF-8
+Config/testthat/edition: 3
+License: GPL (>= 3)
+URL: https://aphp.github.io/heemod/
+NeedsCompilation: no
+Packaged: 2024-01-31 11:55:27 UTC; kevin
+Author: Kevin Zarca [aut, cre],
+  Antoine Filipovic-Pierucci [aut],
+  Matthew Wiener [ctb],
+  Zdenek Kabat [ctb],
+  Vojtech Filipec [ctb],
+  Jordan Amdahl [ctb],
+  Yonatan Carranza Alarcon [ctb],
+  Vince Daniels [ctb]
+Maintainer: Kevin Zarca <kevin.zarca@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-31 12:30:02 UTC

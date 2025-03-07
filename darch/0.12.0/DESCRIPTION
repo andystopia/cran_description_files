@@ -1,0 +1,53 @@
+Package: darch
+Type: Package
+Title: Package for Deep Architectures and Restricted Boltzmann Machines
+Version: 0.12.0
+Date: 2016-07-19
+Author: Martin Drees [aut, cre, cph],
+    Johannes Rueckert [ctb],
+    Christoph M. Friedrich [ctb],
+    Geoffrey Hinton [cph],
+    Ruslan Salakhutdinov [cph],
+    Carl Edward Rasmussen [cph],
+Maintainer: Martin Drees <mdrees@stud.fh-dortmund.de>
+Description: The darch package is built on the basis of the code from G. E.
+    Hinton and R. R. Salakhutdinov (available under Matlab Code for deep belief
+    nets). This package is for generating neural networks with many layers (deep
+    architectures) and train them with the method introduced by the publications
+    "A fast learning algorithm for deep belief nets" (G. E. Hinton, S. Osindero,
+    Y. W. Teh (2006) <DOI:10.1162/neco.2006.18.7.1527>) and "Reducing the
+    dimensionality of data with neural networks" (G. E. Hinton, R. R.
+    Salakhutdinov (2006) <DOI:10.1126/science.1127647>). This method includes a
+    pre training with the contrastive divergence method published by G.E Hinton
+    (2002) <DOI:10.1162/089976602760128018> and a fine tuning with common known
+    training algorithms like backpropagation or conjugate gradients.
+    Additionally, supervised fine-tuning can be enhanced with maxout and
+    dropout, two recently developed techniques to improve fine-tuning for deep
+    learning.
+License: GPL (>= 2) | file LICENSE
+URL: https://github.com/maddin79/darch
+BugReports: https://github.com/maddin79/darch/issues
+Depends: R (>= 3.0.0)
+Imports: stats, methods, ggplot2, reshape2, futile.logger (>= 1.4.1),
+        caret, Rcpp (>= 0.12.3)
+LinkingTo: Rcpp
+Suggests: foreach, doRNG, NeuralNetTools, gputools, testthat, plyr (>=
+        1.8.3.9000)
+Collate: 'RcppExports.R' 'autosave.R' 'net.Class.R' 'darch.Class.R'
+        'backpropagation.R' 'benchmark.R' 'bootstrap.R' 'caret.R'
+        'compat.R' 'config.R' 'darch.Add.R' 'darch.Getter.R'
+        'dataset.R' 'darch.Learn.R' 'darch.R' 'darch.Setter.R'
+        'darchUnitFunctions.R' 'dropout.R' 'errorFunctions.R'
+        'rbm.Class.R' 'generateRBMs.R' 'generateWeightsFunctions.R'
+        'loadDArch.R' 'log.R' 'makeStartEndPoints.R' 'minimize.R'
+        'minimizeAutoencoder.R' 'minimizeClassifier.R' 'mnist.R'
+        'momentum.R' 'net.Getter.R' 'newDArch.R' 'params.R' 'plot.R'
+        'predict.R' 'print.R' 'rbm.Learn.R' 'rbm.Reset.R'
+        'rbmUnitFunctions.R' 'rbmUpdate.R' 'rpropagation.R'
+        'runDArch.R' 'saveDArch.R' 'test.R' 'util.R'
+        'weightUpdateFunctions.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-07-19 07:23:05 UTC; saviola
+Repository: CRAN
+Date/Publication: 2016-07-20 00:33:10

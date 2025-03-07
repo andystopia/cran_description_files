@@ -1,0 +1,38 @@
+Package: triptych
+Title: Diagnostic Graphics to Evaluate Forecast Performance
+Version: 0.1.2
+Authors@R: c(
+    person(given = "Timo",
+           family = "Dimitriadis",
+           role = c("aut", "cph")),
+    person(given = c("Alexander", "I."),
+           family = "Jordan",
+           role = c("aut", "cre", "cph"),
+           email = "alexander.jordan@h-its.org")
+  )
+URL: https://github.com/aijordan/triptych/,
+        https://aijordan.github.io/triptych/
+Description: Overall predictive performance is measured by a mean score
+    (or loss), which decomposes into miscalibration, discrimination, and
+    uncertainty components. The main focus is visualization of these distinct
+    and complementary aspects in joint displays.
+    See Dimitriadis, Gneiting, Jordan, Vogel (2023) <arXiv:2301.10803>.
+License: MIT + file LICENSE
+Depends: R (>= 4.2)
+Imports: ggplot2, patchwork, pROC, monotone, tidyr, vctrs, dplyr,
+        purrr, tibble, rlang, tidyselect, class, scales, geomtextpath,
+        ggrepel
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: C++20
+LinkingTo: cpp11
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2023-10-02 18:32:30 UTC; jordanar
+Author: Timo Dimitriadis [aut, cph],
+  Alexander I. Jordan [aut, cre, cph]
+Maintainer: Alexander I. Jordan <alexander.jordan@h-its.org>
+Repository: CRAN
+Date/Publication: 2023-10-03 16:30:02 UTC

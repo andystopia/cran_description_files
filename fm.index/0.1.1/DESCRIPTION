@@ -1,0 +1,30 @@
+Package: fm.index
+Title: Fast String Searching
+Version: 0.1.1
+Authors@R: 
+    person(given = "Clemens",
+           family = "Hug",
+           role = c("aut", "cre"),
+           email = "clemens.hug@gmail.com",
+           comment = c(ORCID = "0000-0002-8299-3274"))
+Description: Wrapper for the Succinct Data Structure C++ library (SDSL v3)
+  <https://github.com/xxsds/sdsl-lite> enabling fast string searching using FM
+  indices. Partial string matching can be ~50-fold faster than simple string
+  scans for many real-world string collections (corpora). A given corpus is
+  converted into a compact in-memory FM index representation that can be
+  efficiently queried for partial string matches.
+License: MIT + file LICENSE
+URL: https://github.com/clemenshug/fm.index
+BugReports: https://github.com/clemenshug/fm.index/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp, stringi
+Imports: Rcpp, stringi
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-04-06 21:07:59 UTC; chug
+Author: Clemens Hug [aut, cre] (<https://orcid.org/0000-0002-8299-3274>)
+Maintainer: Clemens Hug <clemens.hug@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-04-08 09:12:29 UTC

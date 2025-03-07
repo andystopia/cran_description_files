@@ -1,0 +1,32 @@
+Package: AMPLE
+Title: Shiny Apps to Support Capacity Building on Harvest Control Rules
+Version: 1.0.1
+Authors@R: 
+    c(person("Finlay", "Scott", , "finlays@spc.int", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9950-9023")),
+      person(given = "Pacific Community (SPC)", role="cph"))
+Author: Finlay Scott [aut, cre] (<https://orcid.org/0000-0001-9950-9023>),
+  Pacific Community (SPC) [cph]
+Maintainer: Finlay Scott <finlays@spc.int>
+Description: Three Shiny apps are provided that introduce Harvest Control Rules (HCR) for fisheries management.
+    'Introduction to HCRs' provides a simple overview to how HCRs work. Users are able to select their own HCR and
+    step through its performance, year by year. Biological variability and estimation uncertainty are introduced.
+    'Measuring performance' builds on the previous app and introduces the idea of using performance indicators
+    to measure HCR performance.
+    'Comparing performance' allows multiple HCRs to be created and tested, and their performance compared so that the
+    preferred HCR can be selected.
+License: GPL (>= 3)
+URL: https://github.com/PacificCommunity/ofp-sam-ample
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Suggests: knitr, rmarkdown, bookdown, testthat (>= 3.1.5)
+Config/testthat/edition: 3
+Depends: shiny (>= 1.7.3)
+Imports: markdown, graphics, grDevices, RColorBrewer, stats, R6 (>=
+        2.5.1), scales (>= 1.2.1), shinyjs (>= 2.1.0), ggplot2 (>=
+        3.4.0), shinyscreenshot (>= 0.2.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-24 03:02:44 UTC; Finlays
+Repository: CRAN
+Date/Publication: 2022-11-24 03:40:06 UTC

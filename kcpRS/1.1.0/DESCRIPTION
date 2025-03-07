@@ -1,0 +1,50 @@
+Package: kcpRS
+Type: Package
+Title: Kernel Change Point Detection on the Running Statistics
+Version: 1.1.0
+Authors@R: 
+  c(person(given = "Jedelyn",
+           family = "Cabrieto",
+           role="aut"),
+    person(given = "Kristof",
+           family = "Meers",
+           email = "kristof.meers+cran@kuleuven.be",
+           role=c("aut","cre")),
+    person(given = "Evelien",
+           family = "Schat",
+           role="ctb"),
+    person(given = "Janne",
+           family = "Adolf",
+           role="ctb"),
+    person(given = "Peter",
+           family = "Kuppens",
+           role="ctb"),
+    person(given = "Francis",
+           family = "Tuerlinckx",
+           role="ctb"),
+    person(given = "Eva",
+           family = "Ceulemans",
+           role="ctb"))
+Maintainer: Kristof Meers <kristof.meers+cran@kuleuven.be>
+Description: The running statistics of interest is first extracted using a time window which is slid across the time series, and in each window, the running statistics value is computed. KCP (Kernel Change Point) detection proposed by Arlot et al. (2012) <arXiv:1202.3878> is then implemented to flag the change points on the running statistics (Cabrieto et al., 2018, <doi:10.1016/j.ins.2018.03.010>). Change points are located by minimizing a variance criterion based on the pairwise similarities between running statistics which are computed via the Gaussian kernel. KCP can locate change points for a given k number of change points. To determine the optimal k, the KCP permutation test is first carried out by comparing the variance of the running statistics extracted from the original data to that of permuted data. If this test is significant, then there is sufficient evidence for at least one change point in the data. Model selection is then used to determine the optimal k>0.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.0)
+Depends: RColorBrewer, stats, utils, graphics, roll, foreach,
+        doParallel
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-01-19 13:25:40 UTC; u0046811
+Author: Jedelyn Cabrieto [aut],
+  Kristof Meers [aut, cre],
+  Evelien Schat [ctb],
+  Janne Adolf [ctb],
+  Peter Kuppens [ctb],
+  Francis Tuerlinckx [ctb],
+  Eva Ceulemans [ctb]
+Repository: CRAN
+Date/Publication: 2023-01-19 23:30:14 UTC

@@ -1,0 +1,20 @@
+Package: humarray
+Type: Package
+Title: Simplify Analysis and Annotation of Human Microarray Datasets
+Version: 1.0.0
+Date: 2016-03-03
+Author: Nicholas Cooper
+Maintainer: Nicholas Cooper <njcooper@gmx.co.uk>
+Depends: R (>= 3.2), NCmisc (>= 1.1.4), BiocGenerics (>= 0.10.0),
+        IRanges (>= 1.22.10), GenomicRanges (>= 1.16.4), S4Vectors
+Imports: Rcpp, methods, parallel, GenomicFeatures (>= 1.22.10),
+        GenomeInfoDb, rtracklayer, biomaRt, BiocInstaller (>= 1.20.1),
+        genoset (>= 1.16.2), reader (>= 1.0.1), utils, stats, graphics
+Description: Utilises GRanges, data.frame or IRanges objects. Integrates gene annotation for ImmunoChip (or your custom chip) with function calls. Intuitive wrappers for annotation lookup (gene lists, exon ranges, etc) and conversion (e.g, between build 36 and 37 coordinates). Conversion between ensembl and HGNC gene ids, chip ids to rs-ids for SNP-arrays. Retrieval of chromosome and position for gene, band or SNP-ids, or reverse lookup. Simulation functions for ranges objects. 
+LazyData: true
+License: GPL (>= 2)
+Collate: 'humarray.R' 'humarray_datasets.R'
+NeedsCompilation: no
+Packaged: 2016-03-03 19:33:28 UTC; ncooper
+Repository: CRAN
+Date/Publication: 2016-03-03 23:52:29

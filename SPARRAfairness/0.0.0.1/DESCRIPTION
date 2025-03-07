@@ -1,0 +1,55 @@
+Package: SPARRAfairness
+Title: Analysis of Differential Behaviour of SPARRA Score Across
+        Demographic Groups
+Version: 0.0.0.1
+Authors@R: 
+  c(person(given = "Ioanna",
+           family = "Thoma",
+           role = c("aut"),
+           email = "ithoma@ed.ac.uk",
+           comment = c(ORCID = "0000-0001-6928-2198")),
+    person(given = "Catalina",
+           family = "Vallejos",
+           role = c("ctb"),
+           email = "catalina.vallejos@ed.ac.uk",
+           comment = c(ORCID = "0000-0003-3638-1960")), 
+    person(given = "Louis",
+           family = "Aslett",
+           role = c("ctb"),
+           email = "louis.aslett@durham.ac.uk",
+           comment = c(ORCID = "0000-0003-2211-233X")), 
+    person(given = "Jill",
+           family = "Ireland",
+           role = c("ctb"),
+           email = "jill.ireland@phs.scot",
+           comment = c(ORCID = "0009-0009-5324-6630")),  
+    person(given = "Simon",
+           family = "Rogers",
+           role = c("ctb"),
+           email = "simon.rogers@nhs.scot",
+           comment = c(ORCID = "0000-0003-3578-4477")),                                
+    person(given = "James",
+           family = "Liley",
+           role = c("cre","aut"),
+           email = "james.liley@durham.ac.uk",
+           comment = c(ORCID = "0000-0002-0049-8238")))
+Maintainer: James Liley <james.liley@durham.ac.uk>
+Description: The SPARRA risk score (Scottish Patients At Risk of admission and Re-Admission) estimates yearly risk of emergency hospital admission using electronic health records on a monthly basis for most of the Scottish population. This package implements a suite of functions used to analyse the behaviour and performance of the score, focusing particularly on differential performance over demographically-defined groups. It includes useful utility functions to plot receiver-operator-characteristic, precision-recall and calibration curves, draw stock human figures, estimate counterfactual quantities without the need to re-compute risk scores, to simulate a semi-realistic dataset.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), stats, graphics, grDevices, matrixStats,
+        mvtnorm, cvAUC, ranger
+RoxygenNote: 7.2.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-04-20 08:13:46 UTC; vwbw55
+Author: Ioanna Thoma [aut] (<https://orcid.org/0000-0001-6928-2198>),
+  Catalina Vallejos [ctb] (<https://orcid.org/0000-0003-3638-1960>),
+  Louis Aslett [ctb] (<https://orcid.org/0000-0003-2211-233X>),
+  Jill Ireland [ctb] (<https://orcid.org/0009-0009-5324-6630>),
+  Simon Rogers [ctb] (<https://orcid.org/0000-0003-3578-4477>),
+  James Liley [cre, aut] (<https://orcid.org/0000-0002-0049-8238>)
+Repository: CRAN
+Date/Publication: 2023-04-20 17:22:34 UTC

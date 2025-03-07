@@ -1,0 +1,31 @@
+Package: modeval
+Type: Package
+Title: Evaluation of Classification Model Options
+Version: 0.1.3
+Authors@R: c(
+    person("Younggun", "You", email = "younggun@stanford.edu", role = "cre"),
+    person("Eric", "Stickney", email = "eric13@stanford.edu", role = "aut")
+    )
+Maintainer: Younggun You <younggun@stanford.edu>
+Description: Designed to assist novice to intermediate analysts in choosing
+    an optimal classification model, particularly for working with relatively
+    small data sets. It provides cross-validated results comparing several 
+    different models at once using a consistent set of performance metrics,
+    so users can hone in on the most promising approach rather than attempting
+    single model fittings at a time. The package predefined 12 most common 
+    classification models, although users are free to select from the 200+ 
+    other options available in caret package.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: mlbench, e1071, purrr, magrittr, ggplot2, ModelMetrics, dplyr,
+        stringr, gridExtra, tibble, psych, utils, knitr, caret
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2017-04-11 01:28:04 UTC; i0206158
+Author: Younggun You [cre],
+  Eric Stickney [aut]
+Repository: CRAN
+Date/Publication: 2017-04-11 10:14:45 UTC

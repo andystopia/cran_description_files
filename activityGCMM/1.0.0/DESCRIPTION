@@ -1,0 +1,22 @@
+Package: activityGCMM
+Title: Circular Mixed Effect Mixture Models of Animal Activity Patterns
+Version: 1.0.0
+Authors@R: 
+    person(given = "Liz AD",
+           family = "Campbell",
+           role = c("aut", "cre"),
+           email = "liz.campbell@zoo.ox.ac.uk",
+           comment = c(ORCID = "https://orcid.org/0000-0002-8302-7430"))
+Description: Bayesian parametric generalized circular mixed effect mixture models (GCMMs) for estimating animal activity patterns from camera trap data and other nested data structures using 'JAGS', including automatic Bayesian k-cluster selection and random circular intercepts for nested data. The GCMM function automatically selects the number of components for the mixture model (supporting up to 4 mixture components) based on a Bayesian linear finite normal mixture model and fits a Bayesian parametric circular mixed effect  mixture model with one or two random effects as random circular intercepts with a a von Mises or wrapped Cauchy distribution. Provides graphs of the combined mixture model or separate mixture components. Functionality is provided to allow quantitative  comparisons between model parameters. See Campbell et al. (in press) It's time to expand our analyses of animal activity;  Campbell et al. (in press) Temporal and microspatial niche partitioning; Campbell et al. (in press) A novel approach to comparing animal activity patterns. News, updates, and tutorials will be available on www.atlasgoldenwolf.org/stats and www.github.com/LizADCampbell .
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.00)
+Imports: mclust, runjags, circular, overlap, stats, graphics, utils,
+NeedsCompilation: no
+Packaged: 2021-03-12 04:00:23 UTC; linc4519
+Author: Liz AD Campbell [aut, cre] (<https://orcid.org/0000-0002-8302-7430>)
+Maintainer: Liz AD Campbell <liz.campbell@zoo.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2021-03-15 08:50:03 UTC

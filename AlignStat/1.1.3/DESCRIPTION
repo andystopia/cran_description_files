@@ -1,0 +1,24 @@
+Package: AlignStat
+Type: Package
+Title: Comparison of Alternative Multiple Sequence Alignments
+Version: 1.1.3
+Date: 2016-03-14
+Author: Thomas Shafee, Ira Cooke
+Maintainer: Thomas Shafee <thomas.shafee@gmail.com>
+Description: Methods for comparing two alternative multiple 
+    sequence alignments (MSAs) to determine whether they align homologous residues in 
+    the same columns as one another. It then classifies similarities and differences 
+    into conserved gaps, conserved sequence, merges, splits or shifts of one MSA relative 
+    to the other. Summarising these categories for each MSA column yields information 
+    on which sequence regions are agreed upon my both MSAs, and which differ. Several 
+    plotting functions enable easily visualisation of the comparison data for analysis.
+License: GPL (>= 2)
+Depends: R (>= 2.10)
+Imports: Rcpp (>= 0.11.6), seqinr, ggplot2, reshape2
+LinkingTo: Rcpp
+Suggests: testthat
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-03-17 22:05:09 UTC; icooke
+Repository: CRAN
+Date/Publication: 2016-03-18 07:23:18

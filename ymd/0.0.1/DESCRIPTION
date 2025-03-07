@@ -1,0 +1,44 @@
+Package: ymd
+Title: Parse 'YMD' Format Number or String to Date
+Version: 0.0.1
+Authors@R: c(
+    person("Xianying", "Tan", , "shrektan@126.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6072-3521")),
+    person("Hiroaki", "Yutani", , "yutani.ini@gmail.com", role = c("ctb"),
+           comment = c(ORCID = "0000-0002-3385-7233", "configure, configure.win, tools/configure.R"))
+    )
+Maintainer: Xianying Tan <shrektan@126.com>
+Description: Convert 'YMD' format number or string to Date efficiently, using Rust's
+    standard library. It also provides helper functions to handle Date, e.g., quick
+    finding the beginning or ending of the given period, adding months to Date, etc.
+License: MIT + file LICENSE
+URL: https://shrektan.github.io/ymd/, https://github.com/shrektan/ymd
+BugReports: https://github.com/shrektan/ymd/issues
+SystemRequirements: Cargo (rustc package manager)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Biarch: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/ymd/windows_toolchain: stable-msvc
+Config/ymd/crate_name: ymd
+Config/ymd/github_repo: shrektan/ymd
+Config/ymd/github_tag: v0.0.1
+Config/ymd/binary_sha256sum: list( `aarch64-apple-darwin-libymd.a` =
+        "e6f9a33396a8c97dcd6b0faf92b822f4efa1ae02cc9ddc10a7aea2a25b4e3293",
+        `i686-pc-windows-gnu-libymd.a` =
+        "dabad815be64e6134f8e4a453dcfca35229d19726c551c071f203fa636527f35",
+        `ucrt-x86_64-pc-windows-gnu-libymd.a` =
+        "063862240340b93ad5eb96138e42a5392c3f3c77241468f2d8e5bb39815cc2ee",
+        `x86_64-apple-darwin-libymd.a` =
+        "4e4bfa69b22c0611d212fd6e09f32c6066c3af61d2f8c16e29327782308b98d4",
+        `x86_64-pc-windows-gnu-libymd.a` =
+        "063862240340b93ad5eb96138e42a5392c3f3c77241468f2d8e5bb39815cc2ee"
+        )
+NeedsCompilation: yes
+Packaged: 2022-01-04 17:01:56 UTC; shrektan
+Author: Xianying Tan [aut, cre] (<https://orcid.org/0000-0002-6072-3521>),
+  Hiroaki Yutani [ctb] (<https://orcid.org/0000-0002-3385-7233>,
+    configure, configure.win, tools/configure.R)
+Repository: CRAN
+Date/Publication: 2022-01-06 09:10:02 UTC

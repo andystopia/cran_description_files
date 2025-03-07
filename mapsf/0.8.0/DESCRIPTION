@@ -1,0 +1,45 @@
+Package: mapsf
+Title: Thematic Cartography
+Version: 0.8.0
+Authors@R: c(
+    person("Timothée", "Giraud", email = "timothee.giraud@cnrs.fr", 
+        role = c("cre","aut"), 
+        comment = c(ORCID = "0000-0002-1932-3323")), 
+    person("Hugues", "Pecout", role = "ctb", 
+        comment = c(ORCID = "0000-0002-0246-0954", "Logo")),
+    person("Ronan", "Ysebaert", role = "ctb",
+        comment = c(ORCID = "0000-0002-7344-5911", "Cheat sheet")),
+    person("Ian", "Fellows", role = "cph", 
+        comment = "No overlap algorithm for labels, from wordcloud package"), 
+    person("Jim", "Lemon", role = "cph", 
+        comment = "Arc drawing algorithm for annotations, from plotrix package")
+    )
+Description: Create and integrate thematic maps in your workflow. This package
+    helps to design various cartographic representations such as proportional
+    symbols, choropleth or typology maps. It also offers several functions to
+    display layout elements that improve the graphic presentation of maps
+    (e.g. scale bar, north arrow, title, labels). 'mapsf' maps 'sf' objects on
+    'base' graphics.
+License: GPL-3
+URL: https://riatelab.github.io/mapsf/
+BugReports: https://github.com/riatelab/mapsf/issues/
+Depends: R (>= 3.6.0)
+Imports: classInt, graphics, maplegend, s2, sf, stats, utils, grDevices
+Suggests: terra, png, jpeg, lwgeom, knitr, rmarkdown, tinytest, covr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-11-21 13:06:54 UTC; tim
+Author: Timothée Giraud [cre, aut] (<https://orcid.org/0000-0002-1932-3323>),
+  Hugues Pecout [ctb] (<https://orcid.org/0000-0002-0246-0954>, Logo),
+  Ronan Ysebaert [ctb] (<https://orcid.org/0000-0002-7344-5911>, Cheat
+    sheet),
+  Ian Fellows [cph] (No overlap algorithm for labels, from wordcloud
+    package),
+  Jim Lemon [cph] (Arc drawing algorithm for annotations, from plotrix
+    package)
+Maintainer: Timothée Giraud <timothee.giraud@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2023-11-21 13:40:02 UTC

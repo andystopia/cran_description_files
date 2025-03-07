@@ -1,0 +1,37 @@
+Package: ecoregime
+Title: Analysis of Ecological Dynamic Regimes
+Version: 0.1.2
+Authors@R: 
+    person(given = "Martina", family = "Sánchez-Pinillos", 
+           email = "martina.sanchez.pinillos@gmail.com", 
+           role = c("aut", "cre", "cph"), 
+           comment = c(ORCID = "0000-0002-1499-4507"))
+Description: A toolbox for implementing the Ecological Dynamic Regime framework 
+    (Sánchez-Pinillos et al., 2023 <doi:10.1002/ecm.1589>) to 
+    characterize and compare groups of ecological trajectories in multidimensional 
+    spaces defined by state variables. The package includes the RETRA-EDR algorithm 
+    to identify representative trajectories, functions to generate, summarize, 
+    and visualize representative trajectories, and several metrics to quantify 
+    the distribution and heterogeneity of trajectories in an ecological dynamic 
+    regime and quantify the dissimilarity between two or more ecological dynamic 
+    regimes.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://mspinillos.github.io/ecoregime/
+BugReports: https://github.com/MSPinillos/ecoregime/issues
+Depends: R (>= 3.4.0)
+LazyData: true
+Imports: ape, data.table, ecotraj, GDAtools, graphics, methods, shape,
+        smacof, stats, stringr
+Suggests: knitr, primer, RColorBrewer, rmarkdown, testthat (>= 3.0.0),
+        vegan
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-08-10 18:01:53 UTC; martina.sanchez
+Author: Martina Sánchez-Pinillos [aut, cre, cph]
+    (<https://orcid.org/0000-0002-1499-4507>)
+Maintainer: Martina Sánchez-Pinillos <martina.sanchez.pinillos@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-08-11 13:30:02 UTC

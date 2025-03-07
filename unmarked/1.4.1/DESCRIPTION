@@ -1,0 +1,67 @@
+Package: unmarked
+Version: 1.4.1
+Date: 2024-01-08
+Type: Package
+Title: Models for Data from Unmarked Animals
+Authors@R: c(
+    person("Richard", "Chandler", role="aut"), 
+    person("Ken", "Kellner", email="contact@kenkellner.com", role=c("cre", "aut")),
+    person("Ian", "Fiske", role="aut"), 
+    person("David", "Miller", role="aut"),
+    person("Andy", "Royle", role="aut"),
+    person("Jeff", "Hostetler", role="aut"),
+    person("Rebecca", "Hutchinson", role="aut"),
+    person("Adam", "Smith", role="aut"),
+    person("Lea", "Pautrel", role="aut"),
+    person("Marc", "Kery", role="ctb"),
+    person("Mike", "Meredith", role="ctb"),
+    person("Auriel", "Fournier", role="ctb"),
+    person("Ariel", "Muldoon", role="ctb"),
+    person("Chris", "Baker", role="ctb")
+    )
+Depends: R (>= 4.0)
+Imports: graphics, lattice, lme4, MASS, Matrix, methods, parallel, Rcpp
+        (>= 0.8.0), stats, TMB (>= 1.7.18), utils
+Suggests: pbapply, knitr, rmarkdown, raster, shiny, testthat, terra
+Description: Fits hierarchical models of animal abundance and occurrence to data collected using survey methods such as point counts, site occupancy sampling, distance sampling, removal sampling, and double observer sampling. Parameters governing the state and observation processes can be modeled as functions of covariates. References: Kellner et al. (2023) <doi:10.1111/2041-210X.14123>, Fiske and Chandler (2011) <doi:10.18637/jss.v043.i10>.
+License: GPL (>= 3)
+LazyLoad: yes
+LazyData: yes
+Collate: 'classes.R' 'unmarkedEstimate.R' 'mapInfo.R' 'unmarkedFrame.R'
+        'unmarkedFit.R' 'utils.R' 'getDesign.R' 'colext.R' 'distsamp.R'
+        'multinomPois.R' 'occu.R' 'occuRN.R' 'occuMulti.R' 'pcount.R'
+        'gmultmix.R' 'pcountOpen.R' 'gdistsamp.R' 'unmarkedFitList.R'
+        'unmarkedLinComb.R' 'ranef.R' 'boot.R' 'occuFP.R' 'gpcount.R'
+        'occuPEN.R' 'pcount.spHDS.R' 'occuMS.R' 'occuTTD.R'
+        'distsampOpen.R' 'multmixOpen.R' 'unmarkedCrossVal.R' 'piFun.R'
+        'vif.R' 'makePiFun.R' 'posteriorSamples.R' 'nmixTTD.R'
+        'gdistremoval.R' 'plotEffects.R' 'mixedModelTools.R' 'power.R'
+        'simulate.R' 'predict.R' 'goccu.R' 'occuCOP.R' 'RcppExports.R'
+        'zzz.R'
+LinkingTo: Rcpp, RcppArmadillo, TMB, RcppEigen
+SystemRequirements: GNU make
+URL: https://groups.google.com/d/forum/unmarked,
+        https://rbchan.github.io/unmarked/,
+        https://github.com/ianfiske/unmarked,
+        https://github.com/rbchan/unmarked
+BugReports: https://github.com/rbchan/unmarked/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-01-08 21:07:52 UTC; ken
+Author: Richard Chandler [aut],
+  Ken Kellner [cre, aut],
+  Ian Fiske [aut],
+  David Miller [aut],
+  Andy Royle [aut],
+  Jeff Hostetler [aut],
+  Rebecca Hutchinson [aut],
+  Adam Smith [aut],
+  Lea Pautrel [aut],
+  Marc Kery [ctb],
+  Mike Meredith [ctb],
+  Auriel Fournier [ctb],
+  Ariel Muldoon [ctb],
+  Chris Baker [ctb]
+Maintainer: Ken Kellner <contact@kenkellner.com>
+Repository: CRAN
+Date/Publication: 2024-01-09 10:20:02 UTC

@@ -1,0 +1,38 @@
+Package: gllvm
+Type: Package
+Title: Generalized Linear Latent Variable Models
+Version: 1.3.1
+Date: 2021-7-28
+Authors@R: c(person("Jenni", "Niku", role = c("aut", "cre"), email = "jenni.m.e.niku@jyu.fi"),
+             person("Wesley", "Brooks", role = "aut"),
+             person("Riki", "Herliansyah", role = "aut"),
+             person("Francis K.C.", "Hui", role = "aut"),
+             person("Sara", "Taskinen", role = "aut"), 
+             person("David I.", "Warton", role = "aut"),
+             person("Bert", "van der Veen", role = "aut"))
+Maintainer: Jenni Niku <jenni.m.e.niku@jyu.fi>
+Description: Analysis of multivariate data using generalized linear latent variable models (gllvm). 
+      Estimation is performed using either Laplace approximation method or variational approximation method implemented via TMB (Kristensen et al., (2016), <doi:10.18637/jss.v070.i05>). 
+      For details see Niku et al. (2019a) <doi:10.1371/journal.pone.0216129> and 
+      Niku et al. (2019b) <doi:10.1111/2041-210X.13303>.
+License: GPL-2
+Imports: MASS, Matrix, statmod, fishMod, mgcv
+Depends: R (>= 3.5.0), TMB, mvabund
+Encoding: UTF-8
+LazyData: true
+LinkingTo: TMB, RcppEigen
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+URL: https://github.com/JenniNiku/gllvm
+BugReports: https://github.com/JenniNiku/gllvm/issues
+Suggests: rmarkdown, testthat, gclus, corrplot, lattice
+Packaged: 2021-07-28 16:40:01 UTC; jemaelni
+Author: Jenni Niku [aut, cre],
+  Wesley Brooks [aut],
+  Riki Herliansyah [aut],
+  Francis K.C. Hui [aut],
+  Sara Taskinen [aut],
+  David I. Warton [aut],
+  Bert van der Veen [aut]
+Repository: CRAN
+Date/Publication: 2021-07-28 17:20:02 UTC

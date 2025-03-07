@@ -1,0 +1,29 @@
+Package: varitas
+Type: Package
+Title: Variant Calling in Targeted Analysis Sequencing Data
+Version: 0.0.1
+Date: 2020-02-07
+Authors@R: c(
+  person("Adam", "Mills", role = c("aut", "cre"), email = "Adam.Mills@icr.ac.uk"),
+  person("Erle", "Holgersen", role = "aut"),
+  person("Ros", "Cutts", role = "aut"),
+  person("Syed", "Haider", role = "aut", email = "Syed.Haider@icr.ac.uk")
+  )
+Description: Multi-caller variant analysis pipeline for targeted analysis sequencing (TAS) data. Features a modular, automated workflow that can start with raw reads and produces a user-friendly PDF summary and a spreadsheet containing consensus variant information. 
+SystemRequirements: perl, bedtools (>=2.27.1), bwa
+License: GPL-2
+Suggests: testthat, knitr, rmarkdown, futile.logger
+Imports: stringr, dplyr, yaml, openxlsx, VennDiagram, assertthat,
+        magrittr, tools, utils, tidyr, doParallel, foreach
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-02-10 10:55:05 UTC; amills
+Author: Adam Mills [aut, cre],
+  Erle Holgersen [aut],
+  Ros Cutts [aut],
+  Syed Haider [aut]
+Maintainer: Adam Mills <Adam.Mills@icr.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-02-21 12:00:03 UTC

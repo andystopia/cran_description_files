@@ -1,0 +1,49 @@
+Type: Package
+Package: mapSpain
+Title: Administrative Boundaries of Spain
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Diego",
+             family = "Hernangómez",
+             role = c("aut", "cre", "cph"),
+             email = "diego.hernangomezherrero@gmail.com",
+             comment = c(ORCID = "0000-0001-8457-4658", affiliation = "rOpenSpain")),
+      person(given = "EuroGeographics",
+             role = "cph",
+             comment = "for the administrative boundaries."),
+      person(given = "Instituto Geográfico Nacional",
+             role = "cph",
+             comment = "for the administrative boundaries."))
+Description: Administrative Boundaries of Spain at several levels (CCAA,
+    Provinces, Municipalities) based on the GISCO Eurostat database
+    <https://ec.europa.eu/eurostat/web/gisco> and 'CartoBase SIANE' from
+    'Instituto Geografico Nacional' <https://www.ign.es/>.  It also
+    provides a 'leaflet' plugin and the ability of downloading and
+    processing static tiles.
+License: GPL-3
+URL: https://ropenspain.github.io/mapSpain/,
+        https://github.com/rOpenSpain/mapSpain
+BugReports: https://github.com/rOpenSpain/mapSpain/issues
+Depends: R (>= 3.6.0)
+Imports: countrycode (>= 1.2.0), giscoR (>= 0.2.4), leaflet (>= 2.0.0),
+        png (>= 0.1-5), rappdirs (>= 0.3.0), raster (>= 3.0), sf (>=
+        0.9), slippymath (>= 0.3.1), utils
+Suggests: knitr, rgdal, rmarkdown, testthat (>= 3.0.0), tibble, tmap
+        (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+X-schema.org-applicationCategory: Cartography
+X-schema.org-isPartOf: https://ropenspain.es/
+NeedsCompilation: no
+Packaged: 2021-09-01 08:50:02 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph]
+    (<https://orcid.org/0000-0001-8457-4658>, rOpenSpain),
+  EuroGeographics [cph] (for the administrative boundaries.),
+  Instituto Geográfico Nacional [cph] (for the administrative
+    boundaries.)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-09-01 21:30:02 UTC

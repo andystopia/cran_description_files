@@ -1,0 +1,39 @@
+Package: shinyEventLogger
+Type: Package
+Title: Logging Events in Shiny Apps
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Kamil", family = "Wais", 
+           email = "kamil.wais@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4062-055X")
+           )
+    )
+Description: Logging framework dedicated for complex shiny apps. 
+    Different types of events can be logged 
+    (value of a variable, multi-line output of a function,
+    result of a unit test, custom error, warning, or diagnostic message).
+    Each event can be logged with a list of parameters that are event-specific, 
+    common for events within the same scope, session-specific, or app-wide.
+    Logging can be done simultaneously to R console, 
+    browser JavaScript console, a file log, and a database (MongoDB).
+    Log data can be further analyzed with the help of process-mining techniques 
+    from 'bupaR' package.
+URL: https://github.com/kalimu/shinyEventLogger#readme,
+        https://kalimu.github.io/project/shinyeventlogger/
+BugReports: https://github.com/kalimu/shinyEventLogger/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Imports: shiny, jsonlite, mongolite, R.utils, utils, stringr, purrr,
+        bupaR
+Suggests: spelling, DiagrammeR, testthat, knitr, rmarkdown
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-11 07:31:47 UTC; Kamil Wais
+Author: Kamil Wais [aut, cre] (<https://orcid.org/0000-0002-4062-055X>)
+Maintainer: Kamil Wais <kamil.wais@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-22 10:20:03 UTC

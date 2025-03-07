@@ -1,0 +1,37 @@
+Package: hgnc
+Type: Package
+Title: Download and Import the HUGO Gene Nomenclature Committee
+        ('HGNC') Data Set into R
+Version: 0.1.3
+Authors@R: c(
+    person(given = "Ramiro", family = "Magno",
+      email = "rmagno@pattern.institute",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-5226-3441")),
+    person(given = "Ana-Teresa", family = "Maia",
+      email = "maia.anateresa@gmail.com", role = "aut", 
+      comment = c(ORCID = "0000-0002-0454-9207")),
+    person("CINTESIS", role = c("cph", "fnd")),
+    person("Pattern Institute", role = c("cph", "fnd"))
+    )
+Description: A set of routines to quickly download and import the 'HGNC'
+    data set on mapping of gene symbols to gene entries in other popular
+    databases or resources.
+License: MIT + file LICENSE
+URL: https://github.com/ramiromagno/hgnc, https://rmagno.eu/hgnc/
+BugReports: https://github.com/ramiromagno/hgnc/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr, hms, httr, jsonlite, lubridate, magrittr, purrr, readr,
+        rlang, rvest, stringr, tibble
+Suggests: spelling
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-06-28 13:08:40 UTC; rmagno
+Author: Ramiro Magno [aut, cre] (<https://orcid.org/0000-0001-5226-3441>),
+  Ana-Teresa Maia [aut] (<https://orcid.org/0000-0002-0454-9207>),
+  CINTESIS [cph, fnd],
+  Pattern Institute [cph, fnd]
+Maintainer: Ramiro Magno <rmagno@pattern.institute>
+Repository: CRAN
+Date/Publication: 2023-06-29 21:10:02 UTC

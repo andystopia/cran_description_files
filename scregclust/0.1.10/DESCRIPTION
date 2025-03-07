@@ -1,0 +1,38 @@
+Package: scregclust
+Title: Reconstructing the Regulatory Programs of Target Genes in
+        scRNA-Seq Data
+Version: 0.1.10
+Authors@R: c(
+    person("Felix", "Held", ,"felix.held@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7679-7752")),
+    person("Ida", "Larsson", ,"ida.larsson@igp.uu.se", role = c("aut"),
+           comment = c(ORCID = "0000-0001-5422-4243")),
+    person("Sven", "Nelander", ,"sven.nelander@igp.uu.se", role = c("aut"),
+           comment = c(ORCID = "0000-0003-1758-1262")))
+Description: Implementation of the scregclust algorithm
+  described in Larsson, Held, et al. (2024) <doi:10.1038/s41467-024-53954-3>
+  which reconstructs regulatory programs of target genes in scRNA-seq data.
+  Target genes are clustered into modules and each module is associated with a linear
+  model describing the regulatory program.
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Matrix, stats, methods, utils, reshape, igraph, graphics,
+        grid, cli, prettyunits, ggplot2, rlang, Rcpp (>= 1.0.8)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), Seurat (>= 5.0.0),
+        glmGamPoi, hdf5r
+LinkingTo: Rcpp, RcppEigen
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+License: GPL (>= 3)
+Config/testthat/edition: 3
+URL: https://scmethods.github.io/scregclust/,
+        https://github.com/scmethods/scregclust/
+BugReports: https://github.com/scmethods/scregclust/issues
+NeedsCompilation: yes
+Packaged: 2024-11-20 09:16:53 UTC; felixheld
+Author: Felix Held [aut, cre] (<https://orcid.org/0000-0002-7679-7752>),
+  Ida Larsson [aut] (<https://orcid.org/0000-0001-5422-4243>),
+  Sven Nelander [aut] (<https://orcid.org/0000-0003-1758-1262>)
+Maintainer: Felix Held <felix.held@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-21 07:30:02 UTC

@@ -1,0 +1,28 @@
+Package: WhiteStripe
+Type: Package
+Title: White Matter Normalization for Magnetic Resonance Images using
+        WhiteStripe
+Version: 2.3.2
+Date: 2019-09-26
+Author: R. Taki Shinohara, John Muschelli
+Maintainer: John Muschelli <muschellij2@gmail.com>
+Description: Shinohara (2014) <DOI:10.1016/j.nicl.2014.08.008>
+    introduced 'WhiteStripe', an intensity-based normalization of T1 
+    and T2 images, where normal 
+    appearing white matter performs well, but requires segmentation.
+    This method performs white matter mean and standard deviation
+    estimates on data that has been rigidly-registered to the 'MNI'
+    template and uses histogram-based methods.
+License: GPL-3
+Depends: R (>= 2.10), methods
+Imports: graphics, stats, utils, oro.nifti (>= 0.5.0), mgcv
+LazyData: true
+BugReports: https://github.com/muschellij2/WhiteStripe/issues
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-10-01 04:18:18 UTC; johnmuschelli
+Repository: CRAN
+Date/Publication: 2019-10-01 13:00:02 UTC

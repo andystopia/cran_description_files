@@ -1,0 +1,36 @@
+Package: optimizeR
+Title: Unified Framework for Numerical Optimizers
+Version: 1.0.3
+Authors@R: c(
+    person("Lennart", "Oelschl\u00e4ger", 
+           email = "oelschlaeger.lennart@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5421-9313")),
+    person("Marius", "\u00d6tting", 
+           email = "marius.oetting@uni-bielefeld.de", 
+           role = c("ctb"),
+           comment = c(ORCID = "0000-0002-9373-0365"))
+           )
+Description: Provides a unified object-oriented framework for numerical 
+    optimizers in R. Allows for both minimization and maximization with any 
+    optimizer, optimization over more than one function argument, measuring of 
+    computation time, setting a time limit for long optimization tasks.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+Suggests: knitr, pracma, rmarkdown, testthat
+Config/testthat/edition: 3
+URL: https://loelschlaeger.de/optimizeR/,
+        https://github.com/loelschlaeger/optimizeR/
+BugReports: https://github.com/loelschlaeger/optimizeR/issues
+Depends: R (>= 4.0.0)
+Imports: checkmate, cli, oeli (>= 0.3.2), R6, stats, TestFunctions,
+        utils
+NeedsCompilation: no
+Packaged: 2024-01-31 10:48:30 UTC; loelschlaeger
+Author: Lennart Oelschläger [aut, cre]
+    (<https://orcid.org/0000-0001-5421-9313>),
+  Marius Ötting [ctb] (<https://orcid.org/0000-0002-9373-0365>)
+Maintainer: Lennart Oelschläger <oelschlaeger.lennart@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-31 11:10:02 UTC

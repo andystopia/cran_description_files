@@ -1,0 +1,38 @@
+Package: PAMpal
+Type: Package
+Title: Load and Process Passive Acoustic Data
+Version: 0.17.0
+Authors@R: c(
+  TS = person("Taiki", "Sakai", email = "taiki.sakai@noaa.gov", role = c("aut", "cre")),
+  JB = person("Jay", "Barlow", role = c("ctb")),
+  EG = person("Emily", "Griffiths", role = c("ctb")),
+  MO = person("Michael", "Oswald", role = c("ctb")),
+  SB = person("Simone", "Baumann-Pickering", role = c("ctb")),
+  JO = person("Julie", "Oswald", role = c("ctb")))
+Maintainer: Taiki Sakai <taiki.sakai@noaa.gov>
+Description: Tools for loading and processing passive acoustic data. Read in data
+    that has been processed in 'Pamguard' (<https://www.pamguard.org/>), apply a suite
+    processing functions, and export data for reports or external modeling tools. Parameter 
+    calculations implement methods by Oswald et al (2007) <doi:10.1121/1.2743157>,
+    Griffiths et al (2020) <doi:10.1121/10.0001229> and Baumann-Pickering et al (2010)
+    <doi:10.1121/1.3479549>.
+License: GNU General Public License
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), PamBinaries (>= 1.3.0), PAMmisc (>= 1.8.3),
+        dplyr
+Imports: tuneR, seewave, gam, data.table, RSQLite, stringr, purrr,
+        methods, signal, tidyr, ggplot2, manipulate, knitr, xml2,
+        rlang, reticulate, lubridate
+RoxygenNote: 7.2.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2022-11-07 19:37:23 UTC; tnsak
+Author: Taiki Sakai [aut, cre],
+  Jay Barlow [ctb],
+  Emily Griffiths [ctb],
+  Michael Oswald [ctb],
+  Simone Baumann-Pickering [ctb],
+  Julie Oswald [ctb]
+Repository: CRAN
+Date/Publication: 2022-11-08 20:20:07 UTC

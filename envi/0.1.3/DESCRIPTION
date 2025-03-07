@@ -1,0 +1,49 @@
+Package: envi
+Type: Package
+Title: Environmental Interpolation using Spatial Kernel Density
+        Estimation
+Version: 0.1.3
+Date: 2020-11-25
+Authors@R: 
+    c(person(given = "Ian D.",
+             family = "Buller",
+             role = c("aut", "cre", "cph"),
+             email = "ian.buller@alumni.emory.edu",
+             comment = c(ORCID = "0000-0001-9477-8582")),
+      person(given = "Lance A.",
+             family = "Waller",
+             role = c("ctb", "ths"),
+             email = "lwaller@emory.edu",
+             comment = c(ORCID = "0000-0001-5002-8886")),
+      person(given = "Emory University",
+             role = "cph")
+             )
+Maintainer: Ian D. Buller <ian.buller@alumni.emory.edu>
+Description: Estimates an ecological niche using occurrence data, covariates, and kernel
+        density-based estimation methods. For a single species with presence and absence data,
+        the 'envi' package uses the spatial relative risk function that is estimated using the
+        'sparr' package. Details about the 'sparr' package methods can be found in the tutorial:
+        Davies et al. (2018) <doi:10.1002/sim.7577>. Details about kernel density estimation can
+        be found in J. F. Bithell (1990) <doi:10.1002/sim.4780090616>.  More information about
+        relative risk functions using kernel density estimation can be found in J. F. Bithell
+        (1991) <doi:10.1002/sim.4780101112>.
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Imports: concaveman, cvAUC, doParallel, fields, foreach, graphics,
+        grDevices, maptools, parallel, pls, raster, rgeos, ROCR, sp,
+        sparr, spatstat, stats, utils
+Suggests: R.rsp, spatstat.data, spelling, testthat
+VignetteBuilder: R.rsp
+Language: en-US
+URL: https://github.com/Waller-SUSAN/envi
+BugReports: https://github.com/Waller-SUSAN/envi/issues
+NeedsCompilation: no
+Packaged: 2020-11-25 19:27:42 UTC; bullerid
+Author: Ian D. Buller [aut, cre, cph] (<https://orcid.org/0000-0001-9477-8582>),
+  Lance A. Waller [ctb, ths] (<https://orcid.org/0000-0001-5002-8886>),
+  Emory University [cph]
+Repository: CRAN
+Date/Publication: 2020-12-22 00:10:02 UTC

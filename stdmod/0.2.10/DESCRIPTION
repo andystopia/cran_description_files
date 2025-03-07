@@ -1,0 +1,36 @@
+Package: stdmod
+Title: Standardized Moderation Effect and Its Confidence Interval
+Version: 0.2.10
+Authors@R: 
+    c(person(given = "Shu Fai",
+           family = "Cheung",
+           role = c("aut", "cre"),
+           email = "shufai.cheung@gmail.com",
+           comment = c(ORCID = "0000-0002-9871-9448")),
+      person(given = "David Weng Ngai",
+           family = "Vong",
+           role = c("ctb")))
+Description: Functions for computing a standardized moderation effect
+             in moderated regression and forming its confidence interval
+             by nonparametric bootstrapping as proposed in
+             Cheung, Cheung, Lau, Hui, and Vong (2022)
+             <doi:10.1037/hea0001188>. Also includes simple-to-use
+             functions for computing conditional effects (unstandardized
+             or standardized) and plotting moderation effects.
+URL: https://sfcheung.github.io/stdmod/
+BugReports: https://github.com/sfcheung/stdmod/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: testthat, knitr, rmarkdown, visreg, lm.beta
+Depends: R (>= 4.0.0)
+Imports: boot, ggplot2, stats, utils, lavaan, manymome, rlang
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-02-22 13:26:37 UTC; sfcheung
+Author: Shu Fai Cheung [aut, cre] (<https://orcid.org/0000-0002-9871-9448>),
+  David Weng Ngai Vong [ctb]
+Maintainer: Shu Fai Cheung <shufai.cheung@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-02-22 14:10:02 UTC

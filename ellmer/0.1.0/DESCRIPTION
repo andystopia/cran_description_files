@@ -1,0 +1,47 @@
+Package: ellmer
+Title: Chat with Large Language Models
+Version: 0.1.0
+Authors@R: c(
+    person("Hadley", "Wickham", , "hadley@posit.co", role = c("aut", "cre")),
+    person("Joe", "Cheng", role = "aut"),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Chat with large language models from a range of providers
+  including 'Claude' <https://claude.ai>, 'OpenAI' <https://chatgpt.com>,
+  and more. Supports streaming, asynchronous calls, tool calling, and
+  structured data extraction.
+License: MIT + file LICENSE
+URL: https://ellmer.tidyverse.org, https://github.com/tidyverse/ellmer
+BugReports: https://github.com/tidyverse/ellmer/issues
+Imports: cli, coro (>= 1.1.0), glue, httr2 (>= 1.0.7), jsonlite, later
+        (>= 1.4.0), promises (>= 1.3.1), R6, rlang (>= 1.1.0), S7 (>=
+        0.2.0)
+Suggests: base64enc, bslib, curl (>= 6.0.1), gitcreds, knitr, magick,
+        openssl, paws.common, rmarkdown, shiny, shinychat (>= 0.1.1),
+        testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/Needs/website: tidyverse/tidytemplate, rmarkdown
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: test-provider-*
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'utils-S7.R' 'types.R' 'content.R' 'provider.R' 'as-json.R'
+        'utils-coro.R' 'chat.R' 'content-image.R' 'content-tools.R'
+        'ellmer-package.R' 'httr2.R' 'import-standalone-obj-type.R'
+        'import-standalone-purrr.R' 'import-standalone-types-check.R'
+        'interpolate.R' 'tools-def.R' 'turns.R' 'provider-openai.R'
+        'provider-azure.R' 'provider-bedrock.R' 'provider-claude.R'
+        'provider-cortex.R' 'provider-databricks.R' 'provider-gemini.R'
+        'provider-github.R' 'provider-groq.R' 'provider-ollama.R'
+        'provider-perplexity.R' 'provider-vllm.R' 'shiny.R' 'tokens.R'
+        'tools-def-auto.R' 'utils-cat.R' 'utils-merge.R' 'utils.R'
+        'zzz.R'
+NeedsCompilation: no
+Packaged: 2025-01-07 23:15:32 UTC; hadleywickham
+Author: Hadley Wickham [aut, cre],
+  Joe Cheng [aut],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Hadley Wickham <hadley@posit.co>
+Repository: CRAN
+Date/Publication: 2025-01-09 13:50:05 UTC

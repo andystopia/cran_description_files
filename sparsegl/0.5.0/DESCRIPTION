@@ -1,0 +1,36 @@
+Type: Package
+Package: sparsegl
+Title: Sparse Group Lasso
+Version: 0.5.0
+Authors@R: c(
+    person("Daniel J.", "McDonald", , "daniel@stat.ubc.ca", role = c("aut", "cre")),
+    person("Xiaoxuan", "Liang", , "xiaoxuan.liang@stat.ubc.ca", role = "aut"),
+    person("Aaron", "Cohen", , "cohenaa@indiana.edu", role = "aut")
+  )
+Description: Efficient implementation of sparse group lasso with optional
+    bound constraints on the coefficients. It supports the use of a sparse
+    design matrix as well as returning coefficient estimates in a sparse
+    matrix. Furthermore, it correctly calculates the degrees of freedom to
+    allow for information criteria rather than cross-validation with very
+    large data. Finally, the interface to compiled code avoids unnecessary
+    copies and allows for the use of long integers.
+License: GPL (>= 2)
+URL: https://github.com/dajmcdon/sparsegl/
+BugReports: https://github.com/dajmcdon/sparsegl/issues/
+Depends: R (>= 3.5)
+Imports: assertthat, dotCall64, ggplot2, magrittr, Matrix, methods,
+        rlang, RSpectra, tidyr
+Suggests: glmnet, knitr, markdown, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.2.1
+Packaged: 2022-09-21 17:25:19 UTC; dajmcdon
+Author: Daniel J. McDonald [aut, cre],
+  Xiaoxuan Liang [aut],
+  Aaron Cohen [aut]
+Maintainer: Daniel J. McDonald <daniel@stat.ubc.ca>
+Repository: CRAN
+Date/Publication: 2022-09-22 08:30:02 UTC

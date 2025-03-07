@@ -1,0 +1,17 @@
+Package: RichR
+Type: Package
+Title: Enrichment for Diseases in a Set of Genes
+Version: 1.0.0
+Author: Deisy Morselli Gysi and Katja Nowick
+Maintainer: Deisy Morselli Gysi <deisy@bioinf.uni-leipzig.de>
+Description: It provides a list of genes associated to diseases (g2d$clean and g2d$complete) based on the following  4 publications (GS2D, Fontaine (2016) <doi:10.18547/gcb.2016.vol2.iss1.e33>, DisGeNET, Pinero (2016) <doi:10.1093/nar/gkw943> Berto2016, Berto (2016) <doi:10.3389/fgene.2016.00031> and  PsyGeNET, Sacristan (2015) <doi:10.1093/bioinformatics/btv301>). Those lists were combined and manually curated to have matching disease names.  When provided a list of gene names, it calculates the disease enrichment of the gene set. The enrichment is calculated using proportion test and Fisher's exact test. Adjusted fdr p-values are returned alongside with p-values combined using the Fisher's method. 
+License: GPL-2
+Imports: plyr, reshape2, magrittr, stats, metap
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1)
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-02-13 13:27:48 UTC; deisy
+Repository: CRAN
+Date/Publication: 2019-02-22 14:00:03 UTC

@@ -1,0 +1,25 @@
+Package: MPAgenomics
+Type: Package
+Title: Multi-Patient Analysis of Genomic Markers
+Version: 1.1.0
+Date: 2014-07-23
+Author: Quentin Grimonprez with contributions from Guillemette Marot and Samuel
+    Blanck. Some functions use code created by Sjoerd Vosse, Mark van de Wiel,
+    Pierre Neuvial, Henrik Bengtsson.
+Maintainer: Samuel Blanck <samuel.blanck@inria.fr>
+Description: MPAgenomics provides functions to preprocess and analyze genomic
+    data. It provides wrappers from commonly used packages to streamline their
+    repeated manipulation, offering an easy-to-use pipeline.
+    The segmentation of successive multiple profiles is performed with an
+    automatic choice of parameters involved in the wrapped packages.
+    Considering multiple profiles in the same time, MPAgenomics wraps
+    efficient penalized regression methods to select relevant markers
+    associated with a given outcome.
+License: GPL (>= 2)
+Copyright: Inria 2012-2014.
+Imports: R.utils,changepoint(>= 1.1),glmnet,cghseg
+Suggests: HDPenReg,CGHcall,aroma.affymetrix,aroma.cn,snowfall
+Packaged: 2014-07-23 12:43:12 UTC; sblanck
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-07-23 15:24:28

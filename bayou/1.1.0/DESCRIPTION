@@ -1,0 +1,25 @@
+Package: bayou
+Type: Package
+Title: Bayesian Fitting of Ornstein-Uhlenbeck Models to Phylogenies
+Version: 1.1.0
+Date: 2015-10-16
+Author: Josef C. Uyeda, Jon Eastman and Luke Harmon
+Maintainer: Josef C. Uyeda <josef.uyeda@gmail.com>
+Description: Tools for fitting and simulating multi-optima Ornstein-Uhlenbeck
+    models to phylogenetic comparative data using Bayesian reversible-jump
+    methods.
+License: GPL (>= 2)
+Depends: ape (>= 3.0-6), geiger(>= 2.0), R (>= 2.15.0), phytools, coda
+Imports: Rcpp (>= 0.10.3), MASS, mnormt, fitdistrplus, denstrip,
+        foreach, stats, grDevices, graphics
+Suggests: doParallel
+LinkingTo: Rcpp, RcppArmadillo
+Collate: 'RcppExports.R' 'bayou-utilities.R' 'probability.R'
+        'bayou-weight_matrix.R' 'bayou-moves.R' 'bayou-likelihood.R'
+        'bayou-prior.R' 'conversion-utilities.R'
+        'bayou-mcmc-utilities.R' 'bayou-mcmc.R' 'bayou-plotting.R'
+        'bayou-simulation.r' 'bayou-steppingstone.R' 'bayou-package.R'
+NeedsCompilation: yes
+Packaged: 2015-10-17 14:40:06 UTC; josef
+Repository: CRAN
+Date/Publication: 2015-10-25 08:55:52

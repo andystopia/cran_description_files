@@ -1,0 +1,33 @@
+Package: CSTE
+Version: 1.0
+Date: 2021-08-24
+Type: Package
+Title: Covariate Specific Treatment Effect (CSTE) Curve
+Description: A uniform  statistical inferential tool in making 
+    individualized treatment decisions, which implements the methods of  
+    Ma et al. (2017)<DOI:10.1177/0962280214541724>
+    and Guo et al. (2021)<DOI:10.1080/01621459.2020.1865167>. 
+    It uses a flexible semiparametric modeling strategy for heterogeneous treatment effect
+    estimation in high-dimensional settings and can gave valid confidence bands. Based on it,  
+    one can find the subgroups of patients that benefit from each treatment, thereby  making 
+    individualized treatment selection.
+Authors@R: c(
+  person("Peng", "Wu", email = "wupeng@bicmr.pku.edu.cn", role = "aut"),
+  person("Wenjie", "Hu", email = "huwenjie@pku.edu.cn", role = c("aut", "cre")),
+  person("Yuhao", "Deng", email = "dengyuhao@pku.edu.cn", role = "aut"),
+  person("Xiaohua", "Zhou", email = "azhou@math.pku.edu.cn", role = "aut"))
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.4), fda, splines, survival
+LinkingTo: Rcpp
+RoxygenNote: 7.1.1
+Suggests: mvtnorm, sigmoid
+NeedsCompilation: yes
+Packaged: 2021-09-03 10:05:13 UTC; hwj
+Author: Peng Wu [aut],
+  Wenjie Hu [aut, cre],
+  Yuhao Deng [aut],
+  Xiaohua Zhou [aut]
+Maintainer: Wenjie Hu <huwenjie@pku.edu.cn>
+Repository: CRAN
+Date/Publication: 2021-09-07 09:20:08 UTC

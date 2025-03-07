@@ -1,0 +1,43 @@
+Package: SIMplyBee
+Type: Package
+Title: 'AlphaSimR' Extension for Simulating Honeybee Populations and
+        Breeding Programmes
+Version: 0.3.0
+Authors@R: c(
+  person("Jana", "Obšteter", email = "obsteter.jana@gmail.com",
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1511-3916")),
+  person("Laura", "Strachan", role = "aut", 
+  comment = c(ORCID = "0000-0002-2569-0250")),
+  person("Jernej", "Bubnič", role = "aut", 
+  comment = c(ORCID = "0000-0003-1362-3736")),
+  person("Gregor", "Gorjanc", role = c("aut"), 
+  comment = c(ORCID = "0000-0001-8008-2787")))
+Description: An extension of the 'AlphaSimR' package
+  (<https://cran.r-project.org/package=AlphaSimR>) for stochastic simulations of
+  honeybee populations and breeding programmes. 'SIMplyBee' enables simulation of
+  individual bees that form a colony, which includes a queen, fathers (drones
+  the queen mated with), virgin queens, workers, and drones. Multiple colony can
+  be merged into a population of colonies, such as an apiary or a whole country
+  of colonies. Functions enable operations on castes, colony, or colonies, to
+  ease 'R' scripting of whole populations. All 'AlphaSimR' functionality with
+  respect to genomes and genetic and phenotype values is available and further
+  extended for honeybees, including haplo-diploidy, complementary sex determiner
+  locus, colony events (swarming, supersedure, etc.), and colony phenotype values.
+URL: https://github.com/HighlanderLab/SIMplyBee
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: methods, R6, stats, utils, extraDistr (>= 1.9.1)
+Depends: R (>= 3.3.0), AlphaSimR (>= 1.3.2)
+RoxygenNote: 7.2.2
+Suggests: rmarkdown, knitr, ggplot2, testthat (>= 3.0.0), Matrix
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-12-14 20:31:26 UTC; jana
+Author: Jana Obšteter [aut, cre] (<https://orcid.org/0000-0003-1511-3916>),
+  Laura Strachan [aut] (<https://orcid.org/0000-0002-2569-0250>),
+  Jernej Bubnič [aut] (<https://orcid.org/0000-0003-1362-3736>),
+  Gregor Gorjanc [aut] (<https://orcid.org/0000-0001-8008-2787>)
+Maintainer: Jana Obšteter <obsteter.jana@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-12-15 09:20:08 UTC

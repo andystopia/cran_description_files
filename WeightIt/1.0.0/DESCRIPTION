@@ -1,0 +1,40 @@
+Package: WeightIt
+Type: Package
+Title: Weighting for Covariate Balance in Observational Studies
+Version: 1.0.0
+Authors@R: c(
+    person("Noah", "Greifer", role=c("aut", "cre"), 
+           email = "noah.greifer@gmail.com",
+	       comment=c(ORCID="0000-0003-3067-7154"))
+    )
+Description: Generates balancing weights for causal effect estimation in observational studies with
+             binary, multi-category, or continuous point or longitudinal treatments by easing and
+             extending the functionality of several R packages and providing in-house estimation methods.
+             Available methods include propensity score weighting using generalized linear models, gradient
+             boosting machines, the covariate balancing propensity score algorithm, inverse probability tilting, Bayesian additive regression trees, and
+             SuperLearner, and directly estimating balancing weights using entropy balancing, energy balancing, and optimization-based weights. Also
+             allows for assessment of weights and checking of covariate balance by interfacing directly
+             with the 'cobalt' package. See the vignette "Installing Supporting Packages" for instructions on how
+             to install any package 'WeightIt' uses, including those that may not be on CRAN.
+Depends: R (>= 3.3.0)
+Imports: cobalt (>= 4.5.1), ggplot2 (>= 3.3.0), chk (>= 0.8.1), rlang
+        (>= 1.1.0), crayon, backports (>= 1.4.1), utils, stats
+Suggests: rootSolve (>= 1.8.2.4), CBPS (>= 0.18), optweight (>= 0.2.4),
+        SuperLearner (>= 2.0-25), mclogit, MNP (>= 3.1-4), brglm2 (>=
+        0.5.2), osqp (>= 0.6.0.5), survival, fwb (>= 0.2.0), splines,
+        marginaleffects (>= 0.11.1), sandwich, MASS, gbm (>= 2.1.3),
+        dbarts (>= 0.9-20), misaem (>= 1.0.1), knitr, rmarkdown
+License: GPL (>= 2)
+Encoding: UTF-8
+URL: https://ngreifer.github.io/WeightIt/,
+        https://github.com/ngreifer/WeightIt
+BugReports: https://github.com/ngreifer/WeightIt/issues
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-03-22 22:57:47 UTC; NoahGreifer
+Author: Noah Greifer [aut, cre] (<https://orcid.org/0000-0003-3067-7154>)
+Maintainer: Noah Greifer <noah.greifer@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-23 11:20:02 UTC

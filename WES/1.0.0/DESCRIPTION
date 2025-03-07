@@ -1,0 +1,38 @@
+Package: WES
+Type: Package
+Title: Tools for Analyzing Wastewater and Environmental Sampling Data
+Version: 1.0.0
+Date: 2024-07-03
+Authors@R: c(
+          person("John R", "Giles", 
+                 email = "john.giles@gatesfoundation.org", 
+                 role = c("aut", "cre"), 
+                 comment = c(ORCID = "0000-0002-0954-4093"))
+     )
+Description: Provides reproducible functions for collating and analyzing 
+     data from environmental sampling studies. Environmental Sampling (ES) 
+     of infectious diseases involves collecting samples from various sources 
+     (such as sewage, water, air, soil, or surfaces) to monitor the presence 
+     of pathogens in the environment. Analysis of ES data often requires the 
+     calculation of Real-Time Quantitative PCR (qPCR) variables, normalizing 
+     ES observations, and analyzing sampling site characteristics. To help 
+     reduce the complexity of these analyses we have implemented tools that 
+     assist with establishing standardized ES data formats, absolute and 
+     relative quantification of qPCR data, estimation of qPCR amplification 
+     efficiency, and collating open-source spatial data for sampling sites.
+URL: https://www.r-wes.com/
+License: CC BY 4.0
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+LazyData: true
+Imports: glue, foreach, data.table, dplyr, HDInterval, zoo, openmeteo,
+        chirps, whitebox, exactextractr, elevatr, raster, sp, sf,
+        rworldmap, stars, RCurl, XML, httr, jsonlite
+Depends: R (>= 4.1.1), stats, graphics, grDevices, utils
+Suggests: rmarkdown, rworldxtra, progress
+NeedsCompilation: no
+Packaged: 2024-07-11 02:31:38 UTC; johngiles
+Author: John R Giles [aut, cre] (<https://orcid.org/0000-0002-0954-4093>)
+Maintainer: John R Giles <john.giles@gatesfoundation.org>
+Repository: CRAN
+Date/Publication: 2024-07-12 14:00:06 UTC

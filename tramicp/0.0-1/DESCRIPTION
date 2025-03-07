@@ -1,0 +1,33 @@
+Package: tramicp
+Type: Package
+Title: Model-Based Causal Feature Selection for General Response Types
+Version: 0.0-1
+Authors@R: c(person("Lucas", "Kook", role = c("aut", "cre"),
+    comment = c("ORCID" = "0000-0002-7546-7356"),
+    email = "lucasheinrich.kook@gmail.com"), person("Sorawit", "Saengkyongam",
+    role = "ctb"), person("Anton Rask", "Lundborg", role = "ctb"),
+    person("Torsten", "Hothorn", role = "ctb"), person("Jonas", "Peters",
+    role = "ctb"))
+Description: Extends invariant causal prediction (Peters et al., 2016, 
+    <doi:10.1111/rssb.12167>) to generalized linear and transformation models 
+    (Hothorn et al., 2018, <doi:10.1111/sjos.12291>).
+    The methodology is described in Kook et al. (2023,
+    <doi:10.48550/arXiv.2309.12833>).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0.0)
+Imports: tram, mlt, coin, multcomp, survival, variables, basefun, MASS,
+        cotram, dHSIC, ranger, sandwich
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-09-29 13:26:28 UTC; stigler
+Author: Lucas Kook [aut, cre] (<https://orcid.org/0000-0002-7546-7356>),
+  Sorawit Saengkyongam [ctb],
+  Anton Rask Lundborg [ctb],
+  Torsten Hothorn [ctb],
+  Jonas Peters [ctb]
+Maintainer: Lucas Kook <lucasheinrich.kook@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-29 13:52:43 UTC

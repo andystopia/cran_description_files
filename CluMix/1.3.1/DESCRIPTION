@@ -1,0 +1,17 @@
+Package: CluMix
+Type: Package
+Title: Clustering and Visualization of Mixed-Type Data
+Version: 1.3.1
+Date: 2016-12-28
+Author: M. Hummel, A. Kopp-Schneider
+Maintainer: Manuela Hummel <m.hummel@dkfz.de>
+Description: Provides utilities for clustering subjects and variables of mixed data types. Similarities between subjects are measured by Gower's general similarity coefficient with an extension of Podani for ordinal variables. Similarities between variables are assessed by combination of appropriate measures of association for different pairs of data types. Alternatively, variables can also be clustered by the 'ClustOfVar' approach. The main feature of the package is the generation of a mixed-data heatmap. For visualizing similarities between either subjects or variables, a heatmap of the corresponding distance matrix can be drawn. Associations between variables can be explored by a 'confounderPlot', which allows visual detection of possible confounding, collinear, or surrogate factors for some variables of primary interest. Distance matrices and dendrograms for subjects and variables can be derived and used for further visualizations and applications.   
+License: GPL (>= 2)
+Depends:
+Imports: ClustOfVar, Hmisc, DescTools, extracat, marray, FD, gplots,
+        Matrix, Biobase
+Suggests: devtools, dendextend
+NeedsCompilation: no
+Packaged: 2016-12-28 11:09:25 UTC; hummelma
+Repository: CRAN
+Date/Publication: 2016-12-29 11:52:10

@@ -1,0 +1,35 @@
+Package: dgpsi
+Type: Package
+Title: Interface to 'dgpsi' for Deep and Linked Gaussian Process
+        Emulations
+Version: 2.1.5
+Authors@R: c(
+  person('Deyu', 'Ming', role = c('aut', 'cre', 'cph'),
+         email = 'deyu.ming.16@ucl.ac.uk'),
+  person('Daniel', 'Williamson', role = c('aut'),
+         email = 'd.williamson@exeter.ac.uk')
+  )
+Maintainer: Deyu Ming <deyu.ming.16@ucl.ac.uk>
+Description: Interface to the 'python' package 'dgpsi' for Gaussian process, deep Gaussian process, 
+             and linked Gaussian process emulations of computer models and systems of computer
+             models. The implementations follow Ming & Guillas (2021) <doi:10.1137/20M1323771> and 
+             Ming, Williamson, & Guillas (2022) <arXiv:2107.01590>. To get started with the package, 
+             see <https://mingdeyu.github.io/dgpsi-R/>.
+License: MIT + file LICENSE
+URL: https://github.com/mingdeyu/dgpsi-R,
+        https://mingdeyu.github.io/dgpsi-R/
+BugReports: https://github.com/mingdeyu/dgpsi-R/issues
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: reticulate (>= 1.26), benchmarkme (>= 1.0.8), utils, ggplot2,
+        reshape2, patchwork
+Suggests: knitr, rmarkdown, MASS, R.utils, spelling
+VignetteBuilder: knitr
+RoxygenNote: 7.2.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-09-27 21:57:28 UTC; deyu
+Author: Deyu Ming [aut, cre, cph],
+  Daniel Williamson [aut]
+Repository: CRAN
+Date/Publication: 2022-09-29 12:50:02 UTC

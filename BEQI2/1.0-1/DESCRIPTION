@@ -1,0 +1,20 @@
+Package: BEQI2
+Type: Package
+Title: Benthic Ecosystem Quality Index 2
+Description: Benthic Ecosystem Quality Index 2. This package facilitates the analysis of benthos data. It estimates several quality indices like the total abundance of species, species richness, Shannon index, AZTI Marine Biotic Index (AMBI), and the BEQI-2 index. The package includes two additional optional features that enhance data preprocessing: (1) genus to species conversion, i.e.,taxa counts at the taxonomic genus level can optionally be converted to the species level and (2) pooling: small samples are combined to bigger samples with a standardized size to (a) meet the data requirements of the AMBI, (b) generate comparable species richness values and (c) give a higher benthos signal to noise ratio.
+Version: 1.0-1
+Date: 2014-06-10
+Authors@R: c(person(given = "Willem", family = "van Loon", email = "willem.van.loon@rws.nl", role = c("aut", "cph")),
+	person(given = "Dennis", family = "Walvoort", email = "dennis.Walvoort@wur.nl", role = c("aut", "cre")))
+Depends: R (>= 3.0.2), methods, tcltk
+Imports: knitr, markdown, RJSONIO, xtable, plyr, reshape2
+Suggests: testthat
+VignetteBuilder: knitr
+License: GPL (>= 3)
+Packaged: 2014-06-10 14:23:27 UTC; dennis
+Author: Willem van Loon [aut, cph],
+  Dennis Walvoort [aut, cre]
+Maintainer: Dennis Walvoort <dennis.Walvoort@wur.nl>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-06-10 18:47:24

@@ -1,0 +1,31 @@
+Package: qualpalr
+Title: Automatic Generation of Qualitative Color Palettes
+Version: 0.4.3
+Authors@R: person("Johan", "Larsson", email = "mail@larssonjohan.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-4029-5945"))
+Description: Automatic generation of distinct qualitative color palettes,
+    optionally adapted to color deficiency. It takes a subspace of the HSL color
+    space as input and projects it to the DIN99d color space where it selects
+    and return colors that are maximally distinct.
+Depends: R (>= 3.3.0)
+Imports: randtoolbox (>= 1.17), graphics, stats, grDevices, utils,
+        assertthat, Rcpp, RcppParallel
+Suggests: testthat, knitr, maps, rmarkdown, rgl, spelling
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+URL: https://jolars.github.io/qualpalr/
+BugReports: https://github.com/jolars/qualpalr/issues
+VignetteBuilder: knitr
+LinkingTo: Rcpp (>= 0.12.9), RcppParallel (>= 4.3.20), RcppArmadillo
+        (>= 0.7.600.1.0)
+SystemRequirements: GNU make
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2018-10-29 11:41:11 UTC; jolars
+Author: Johan Larsson [aut, cre] (<https://orcid.org/0000-0002-4029-5945>)
+Maintainer: Johan Larsson <mail@larssonjohan.com>
+Repository: CRAN
+Date/Publication: 2018-10-29 17:00:03 UTC

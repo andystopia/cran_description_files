@@ -1,0 +1,27 @@
+Package: nsdr
+Type: Package
+Title: Nonlinear Sufficient Dimension Reduction
+Version: 0.1.1
+Authors@R: 
+  c(person(given = "Bing",
+           family = "Li",
+           role = "aut"),
+    person(given = "Kyongwon",
+           family = "Kim",
+           role = c("aut", "cre"),
+           email = "kimk@ewha.ac.kr"))
+Description: Provides tools to implement both unsupervised and supervised nonlinear dimension reduction methods. Principal Component Analysis (PCA), Sliced Inverse Regression (SIR), and Sliced Average Variance Estimation (SAVE) are useful methods to reduce the dimensionality of covariates. However, they produce linear combinations of covariates. Kernel PCA, generalized SIR, and generalized SAVE address this problem by extending the applicability of the dimension reduction problem to nonlinear settings. This package includes a comprehensive algorithm for  kernel PCA, generalized SIR, and generalized SAVE, including methods for choosing tuning parameters and some essential functions. 
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1.9001
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Maintainer: Kyongwon Kim <kimk@ewha.ac.kr>
+Packaged: 2021-06-03 05:50:40 UTC; kyongwonkim
+Author: Bing Li [aut],
+  Kyongwon Kim [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-06-03 06:10:02 UTC

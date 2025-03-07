@@ -1,0 +1,50 @@
+Package: projections
+Title: Project Future Case Incidence
+Version: 0.5.4
+Authors@R: 
+    c(person(given = "Thibaut",
+             family = "Jombart",
+             role = c("aut", "cre"),
+             email = "thibautjombart@gmail.com"),
+      person(given = "Pierre",
+             family = "Nouvellet",
+             role = "aut",
+             email = "p.nouvellet@imperial.ac.uk"),
+      person(given = "Sangeeta",
+             family = "Bhatia",
+             role = "ctb",
+             email = "sangeetabhatia03@gmail.com"),
+      person(given = "Zhian N.",
+             family = "Kamvar",
+             role = "ctb",
+             email = "zkamvar@gmail.com"),
+      person(given = "Tim",
+             family = "Taylor",
+             role = "ctb",
+             email = "tim.taylor@hiddenelephants.co.uk"),
+      person(given = "Stephane",
+             family = "Ghozzi",
+             role = "ctb",
+             email = "stephane.ghozzi@mailbox.org"))
+Description: Provides functions and graphics for projecting daily incidence based on past incidence, and estimates of the serial interval and reproduction number. Projections are based on a branching process using a Poisson-distributed number of new cases per day, similar to the model used for estimating R in 'EpiEstim' or in 'earlyR', and described by Nouvellet et al. (2017) <doi:10.1016/j.epidem.2017.02.012>. The package provides the S3 class 'projections' which extends 'matrix', with accessors and additional helpers for handling, subsetting, merging, or adding these objects, as well as dedicated printing and plotting methods.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: testthat, roxygen2, knitr, rmarkdown, outbreaks, magrittr,
+        distcrete, svglite, EpiEstim
+Imports: stats, utils, incidence (>= 1.4.1), ggplot2, methods
+RoxygenNote: 7.1.1
+URL: https://www.repidemicsconsortium.org/projections/
+BugReports: https://github.com/reconhub/projections/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-04-22 09:14:17 UTC; thibaut
+Author: Thibaut Jombart [aut, cre],
+  Pierre Nouvellet [aut],
+  Sangeeta Bhatia [ctb],
+  Zhian N. Kamvar [ctb],
+  Tim Taylor [ctb],
+  Stephane Ghozzi [ctb]
+Maintainer: Thibaut Jombart <thibautjombart@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-22 09:30:05 UTC

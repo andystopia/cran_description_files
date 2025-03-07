@@ -1,0 +1,33 @@
+Package: collin
+Title: Visualization the Effects of Collinearity in Distributed Lag
+        Models and Other Linear Models
+Version: 0.0.3
+Authors@R: 
+    c(person(given = "Jose", family = "Barrera-Gomez", role = c("aut", "cre"), email = "jose.barrera@isglobal.org",
+                    comment = c(ORCID = "0000-0002-2688-6036")),
+             person(given = "Xavier", family = "Basagana", role = "aut", email = "xavier.basagana@isglobal.org",
+                    comment = c(ORCID = "0000-0002-8457-1489")))
+Description: Tool to assessing whether the results of a study could be influenced by
+    collinearity. Simulations under a given hypothesized truth regarding effects of an
+    exposure on the outcome are used and the resulting curves of lagged effects are
+    visualized. A user's manual is provided, which includes detailed examples (e.g. a
+    cohort study looking for windows of vulnerability to air pollution, a time series
+    study examining the linear association of air pollution with hospital admissions,
+    and a time series study examining the non-linear association between temperature and
+    mortality). The methods are described in Basagana and Barrera-Gomez (2021) <doi:10.1093/ije/dyab179>.
+Depends: R (>= 4.1)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: dlnm, graphics, grDevices, MASS, mgcv, nlme, stats, utils,
+        VGAM
+Suggests: knitr, rmarkdown, splines, xtable
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-09-18 12:05:53 UTC; jbarrera
+Author: Jose Barrera-Gomez [aut, cre] (<https://orcid.org/0000-0002-2688-6036>),
+  Xavier Basagana [aut] (<https://orcid.org/0000-0002-8457-1489>)
+Maintainer: Jose Barrera-Gomez <jose.barrera@isglobal.org>
+Repository: CRAN
+Date/Publication: 2023-09-18 13:10:02 UTC

@@ -1,0 +1,30 @@
+Package: dataverifyr
+Type: Package
+Title: A Lightweight, Flexible, and Fast Data Validation Package that
+        Can Handle All Sizes of Data
+Version: 0.1.4
+Authors@R: c(
+      person(given = "David",
+             family = "Zimmermann-Kollenda",
+             role = c("aut","cre"),
+             email = "david_j_zimmermann@hotmail.com"))
+Description: Allows you to define rules which can be used to verify a given
+    dataset.
+    The package acts as a thin wrapper around more powerful data packages such
+    as 'dplyr', 'data.table', 'arrow', and 'DBI' ('SQL'), which do the heavy lifting.
+License: MIT + file LICENSE
+URL: https://github.com/DavZim/dataverifyr,
+        https://davzim.github.io/dataverifyr/
+BugReports: https://github.com/DavZim/dataverifyr/issues
+Imports: yaml
+Suggests: arrow, data.table, DBI, dplyr, dbplyr, duckdb, RSQLite,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-04-24 19:55:28 UTC; david
+Author: David Zimmermann-Kollenda [aut, cre]
+Maintainer: David Zimmermann-Kollenda <david_j_zimmermann@hotmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-25 17:40:05 UTC

@@ -1,0 +1,20 @@
+Package: RMVL
+Title: Mappable Vector Library for Handling Large Datasets
+Version: 0.0.3.0
+Authors@R: 
+    person(given = "Vladimir",
+           family = "Dergachev",
+           role = c("aut", "cre"),
+           email = "support@altumrete.com",
+           comment = structure("https://orcid.org/0000-0003-4708-6625", .Names = "ORCID"))
+Description: Mappable vector library provides convenient way to access large datasets on solid state drives. This bypasses limitation of physical memory size as well as limited bandwidth of database interfaces. Memory mapped data can be shared between multiple R processes. Access speed depends on storage medium, so solid state drive is recommended, preferably with PCI Express (or M.2 nvme) interface. The data is memory mapped into R and then accessed using usual R list and array subscription operators. Convenience functions are provided for merging, grouping and indexing large vectors and data.frames. The layout of underlying MVL files is optimized for large datasets. The vectors are stored to guarantee alignment for vector intrinsics after memory map. The package is built on top of libMVL, which can be used as standalone C library. libMVL has simple C API making it easy to interchange of datasets with outside programs. 
+License: LGPL-2.1
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-09-20 21:10:31 UTC; volodya
+Author: Vladimir Dergachev [aut, cre] (<https://orcid.org/0000-0003-4708-6625>)
+Maintainer: Vladimir Dergachev <support@altumrete.com>
+Repository: CRAN
+Date/Publication: 2021-09-20 21:40:02 UTC

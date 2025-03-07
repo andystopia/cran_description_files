@@ -1,0 +1,45 @@
+Package: multibridge
+Title: Evaluating Multinomial Order Restrictions with Bridge Sampling
+Version: 1.0.0
+Date: 2021-01-21
+Authors@R: c(
+	person(given = "Alexandra", family = "Sarafoglou", email = "alexandra.sarafoglou@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0031-685X")),
+	person(given = "Frederik", family = "Aust", role = "aut", comment = c(ORCID = "0000-0003-4900-788X")),
+	person(given = "Julia M.", family = "Haaf", role = "aut", comment = c(ORCID = "0000-0001-5122-706X")),
+	person(given = "Joris", family = "Goosen", role = "aut"),
+	person(given = "Quentin F.", family = "Gronau", role = "aut"),
+	person(given = "Maarten", family = "Marsman", role = "aut", comment = c(ORCID = "0000-0001-5309-7502"))
+	)
+Description: Evaluate hypotheses concerning the distribution of multinomial
+  proportions using bridge sampling. The bridge sampling routine is able to
+  compute Bayes factors for hypotheses that entail inequality constraints,
+  equality constraints, free parameters, and mixtures of all three. These
+  hypotheses are tested against the encompassing hypothesis, that all parameters
+  vary freely or against the null hypothesis that all category proportions are equal.
+  For more information see Sarafoglou et al. (2020) <doi:10.31234/osf.io/bux7p>.
+URL: https://github.com/asarafoglou/multibridge/
+BugReports: https://github.com/asarafoglou/multibridge/issues
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: Brobdingnag, coda, mvtnorm, purrr, Rcpp (>= 0.12.17),
+        magrittr, progress, Rdpack, stringr
+Suggests: knitr, rmarkdown, testthat
+SystemRequirements: GNU make, mpfr (>= 3.0.0)
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+RdMacros: Rdpack
+Depends: R (>= 3.5.0)
+NeedsCompilation: yes
+Packaged: 2021-01-21 14:54:55 UTC; alexandra.sarafoglou
+Author: Alexandra Sarafoglou [aut, cre]
+    (<https://orcid.org/0000-0003-0031-685X>),
+  Frederik Aust [aut] (<https://orcid.org/0000-0003-4900-788X>),
+  Julia M. Haaf [aut] (<https://orcid.org/0000-0001-5122-706X>),
+  Joris Goosen [aut],
+  Quentin F. Gronau [aut],
+  Maarten Marsman [aut] (<https://orcid.org/0000-0001-5309-7502>)
+Maintainer: Alexandra Sarafoglou <alexandra.sarafoglou@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-25 08:40:02 UTC

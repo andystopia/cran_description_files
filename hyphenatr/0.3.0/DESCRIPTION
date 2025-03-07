@@ -1,0 +1,48 @@
+Package: hyphenatr
+Encoding: UTF-8
+Title: Tools to Hyphenate Strings Using the 'Hunspell' Hyphenation
+        Library
+Version: 0.3.0
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")),
+    person("Raph", "Levien", comment="original libhnj", role = c("aut", "cph")),
+    person("Rene", "Engelhard", comment="libhnj maintainer", role = c("aut", "cph")),
+    person("Chris", "Halls", comment="libhnj maintainer", role = c("aut", "cph")),
+    person("Peter", "Novodvorsky", comment="libhnj OOo integration",
+           role = c("aut", "cph")),
+    person("László", "Németh", role = c("aut", "cph"),
+           comment="libhnj non-standard and compound hyphenation with Unicode support"),
+    person("Nanning", "Buitenhuis", comment="libhnj substrings.c",
+           role = c("aut", "cph")),
+    person("Edwin", "de Jonge", role="ctb", comment="Language testing"),
+    person("Gergely", "Daróczi", role="ctb", comment="Language testing")
+  )
+Description: Identifying hyphenation points in strings can be useful for both
+    text processing and display functions. The 'Hunspell' hyphenation library
+    <https://github.com/hunspell/hyphen> provides tools to perform hyphenation
+    using custom language rule dictionaries. Many hyphenation rules
+    dictionaries are included. Words can be hyphenated directly or split into
+    hyphenated component strings for further processing.
+Depends: R (>= 3.1.0)
+NeedsCompilation: yes
+Copyright: file inst/COPYRIGHTS
+License: GPL-3 + file LICENSE
+LazyData: true
+Suggests: testthat
+Imports: Rcpp, stringi
+RoxygenNote: 5.0.1
+LinkingTo: Rcpp
+Packaged: 2016-03-18 00:37:30 UTC; bob
+Author: Bob Rudis [aut, cre],
+  Raph Levien [aut, cph] (original libhnj),
+  Rene Engelhard [aut, cph] (libhnj maintainer),
+  Chris Halls [aut, cph] (libhnj maintainer),
+  Peter Novodvorsky [aut, cph] (libhnj OOo integration),
+  László Németh [aut, cph] (libhnj non-standard and compound hyphenation
+    with Unicode support),
+  Nanning Buitenhuis [aut, cph] (libhnj substrings.c),
+  Edwin de Jonge [ctb] (Language testing),
+  Gergely Daróczi [ctb] (Language testing)
+Maintainer: Bob Rudis <bob@rudis.net>
+Repository: CRAN
+Date/Publication: 2016-03-18 07:21:39

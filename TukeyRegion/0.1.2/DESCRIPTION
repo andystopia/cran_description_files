@@ -1,0 +1,27 @@
+Package: TukeyRegion
+Type: Package
+Title: Tukey Region and Median
+Version: 0.1.2
+Date: 2018-01-16
+Authors@R: c(person("C.B.", "Barber", role = c("aut", "cph"), 
+    comment = "Qhull library"),
+    person("The Geometry Center", "University of Minnesota", role = c("cph"), 
+    comment = "Qhull library"), 
+    person("Pavlo", "Mozharovskyi", role = c("aut", "cre"), 
+    email = "pavlo.mozharovskyi@ensai.fr"))
+Description: Tukey regions are polytopes in the Euclidean space, viz. upper-level sets of the Tukey depth function on given data. The bordering hyperplanes of a Tukey region are computed as well as its vertices, facets, centroid, and volume. In addition, the Tukey median set, which is the non-empty Tukey region having highest depth level, and its barycenter (= Tukey median) are calculated. Tukey regions are visualized in dimension two and three. For details see Liu, Mosler, and Mozharovskyi (2017) <arXiv:1412.5122>. See file LICENSE.note for additional license information.
+License: GPL (>= 3)
+SystemRequirements: C++11
+Depends: rgl,ddalpha,MASS,bfp,Rglpk
+Imports: Rcpp (>= 0.11.0)
+LinkingTo: Rcpp,BH
+NeedsCompilation: yes
+Packaged: 2018-01-16 06:50:39 UTC; pavlo.mozharovskyi
+Author: C.B. Barber [aut, cph] (Qhull library),
+  The Geometry Center University of Minnesota [cph] (Qhull library),
+  Pavlo Mozharovskyi [aut, cre]
+Maintainer: Pavlo Mozharovskyi <pavlo.mozharovskyi@ensai.fr>
+X-CRAN-Comment: Archived on 2018-01-08 as C++ errors were not corrected
+        even in an update after reminders.
+Repository: CRAN
+Date/Publication: 2018-01-18 12:43:24 UTC

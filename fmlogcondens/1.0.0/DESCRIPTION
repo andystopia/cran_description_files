@@ -1,0 +1,35 @@
+Package: fmlogcondens
+Type: Package
+Title: Fast Multivariate Log-Concave Density Estimation
+Version: 1.0.0
+Authors@R: c(person("Fabian", "Rathke", role=c("aut", "cre"),
+                    email = "frathke@gmail.com"),
+             person("Christoph", "Schnörr", role="aut"),
+             person("Giovanni", "Garberoglio", role="cph"))
+Description: A fast solver for the maximum likelihood estimator (MLE) of a 
+  multivariate log-concave probability function. Given a sample X, it estimates 
+  a non-parametric density function whose logarithm is a concave function. Many 
+  well-known parametric densities belong to that class, among them the normal 
+  density, the uniform density, the exponential distribution and many more. This
+  package provides functions for the estimation of a log-concave density and
+  a mixture of log-concave densities in multiple dimensions. While being similar
+  to the package LogConcDEAD, fmlogcondens provides much fast run times for 
+  large samples (>= 250 points). As a reference see Fabian Rathke, Christoph 
+  Schnörr (2015), <doi:10.1515/auom-2015-0053>.
+License: GPL (>= 2)
+URL: https://github.com/FabianRathke/fmlogcondens
+Depends: R (>= 3.2.4)
+Imports: geometry, MASS, mclust, mvtnorm
+Encoding: UTF-8
+LazyData: true
+Suggests: LogConcDEAD, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-03-07 11:59:41 UTC; fabian
+Author: Fabian Rathke [aut, cre],
+  Christoph Schnörr [aut],
+  Giovanni Garberoglio [cph]
+Maintainer: Fabian Rathke <frathke@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-09 09:43:16 UTC

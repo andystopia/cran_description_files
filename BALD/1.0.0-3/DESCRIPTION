@@ -1,0 +1,27 @@
+Package: BALD
+Maintainer: Can Wang <bald@frankschmid.com>
+License: GPL (>= 3)
+Title: Robust Loss Development Using MCMC
+LazyLoad: yes
+Author: Can Wang, Christopher W. Laws, Frank A. Schmid
+SystemRequirements: JAGS (>= 4.3.0), GNU make
+Description: Bayesian analysis of loss development on insurance triangles or 'BALD' is a Bayesian model of developing aggregate loss triangles in property casualty insurance. This actuarial model makes use of a heteroskedastic and skewed t-likelihood with endogenous degrees of freedom, employs model averaging by means of Reversible Jump MCMC, and accommodates a structural break in the path of the consumption of benefits. Further, the model is capable of incorporating expert information in the calendar year effect. In an accompanying vignette, this model is applied to two widely studied General Liability and Auto Bodily Injury Liability loss triangles. For a description of the methodology, see Frank A. Schmid (2010) <doi:10.2139/ssrn.1501706>.
+Version: 1.0.0-3
+Repository: CRAN
+Date: 2018-10-19
+Imports: stats, graphics
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Depends: R (>= 3.3.0), methods, rjags (>= 3-3), logspline, utils,
+        lattice
+Collate: 'zzz.R' 'LossDevModelInput.R' 'AnnualAggLossDevModelInput.R'
+        'LossDevModelOutput.R' 'NodeOutput.R'
+        'AnnualAggLossDevModelOutput.R'
+        'BreakAnnualAggLossDevModelOutput.R'
+        'StandardAnnualAggLossDevModelOutput.R'
+        'AnnualAggLossDevModelOutputWithZeros.R' 'BALD.R'
+        'BreakAnnualAggLossDevModelInput.R' 'DocumentationOfData.R'
+        'StandardAnnualAggLossDevModelInput.R' 'util.R'
+NeedsCompilation: yes
+Packaged: 2018-10-19 16:36:43 UTC; canwang
+Date/Publication: 2018-10-22 12:00:07 UTC

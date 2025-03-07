@@ -1,0 +1,24 @@
+Package: ppiPre
+Type: Package
+Title: Predict protein-protein interactions based on functional and
+        topological similarities.
+Version: 1.6
+Date: 2015-01-25
+Author: Yue Deng, Rongjie Shao, Gang Wang and Yuanjun Sun, with contributions from Guangchuang Yu.
+Maintainer: Yue Deng <anfdeng@163.com>
+Description: This package provides functions for computing similarities between proteins based on their GO annotation, KEGG annotation and PPI network topology. It integrates seven features (TCSS, IntelliGO, Wang, KEGG, Jaccard, RA and AA) to predict PPIs using an SVM classifier. Some internal functions are derived from R package GOSemSim authored by Guangchuang Yu.
+License: GPL-2
+LazyLoad: yes
+Depends: R (>= 3.0.0)
+Imports: AnnotationDbi, igraph, e1071, GOSemSim, GO.db
+Enhances: KEGG.db, org.Hs.eg.db, org.Sc.sgd.db, org.Ag.eg.db,
+        org.Pt.eg.db, org.Rn.eg.db, org.Ss.eg.db, org.At.tair.db,
+        org.Bt.eg.db, org.Ce.eg.db, org.Cf.eg.db, org.Dm.eg.db,
+        org.Dr.eg.db, org.EcK12.eg.db, org.EcSakai.eg.db, org.Gg.eg.db,
+        org.Mm.eg.db, org.Mmu.eg.db, org.Pf.plasmo.db, org.Xl.eg.db
+NeedsCompilation: no
+Packaged: 2015-01-29 10:13:00 UTC; Administrator
+X-CRAN-Comment: Earlier versions were removed as source code had been
+        copied uncredited.
+Repository: CRAN
+Date/Publication: 2015-01-29 11:45:23

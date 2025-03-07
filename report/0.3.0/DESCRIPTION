@@ -1,0 +1,77 @@
+Type: Package
+Package: report
+Title: Automated Reporting of Results and Statistical Models
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Dominique",
+             family = "Makowski",
+             role = c("aut", "cre"),
+             email = "dom.makowski@gmail.com",
+             comment = c(ORCID = "0000-0001-5375-9967", Twitter = "@Dom_Makowski")),
+      person(given = "Daniel",
+             family = "Lüdecke",
+             role = "aut",
+             email = "d.luedecke@uke.de",
+             comment = c(ORCID = "0000-0002-8895-3206")),
+      person(given = "Mattan S.",
+             family = "Ben-Shachar",
+             role = "aut",
+             email = "matanshm@post.bgu.ac.il",
+             comment = c(ORCID = "0000-0002-4287-4801")),
+      person(given = "Indrajeet",
+             family = "Patil",
+             role = "aut",
+             email = "patilindrajeet.science@gmail.com",
+             comment = c(ORCID = "0000-0003-1995-6531", Twitter = "@patilindrajeets")),
+      person(given = "Rudolf",
+             family = "Siegel",
+             role = "ctb",
+             email = "mutlusun@users.noreply.github.com",
+             comment = c(ORCID = "0000-0002-6021-804X")))
+Maintainer: Dominique Makowski <dom.makowski@gmail.com>
+Description: The aim of the 'report' package is to bridge the gap between 
+    R’s output and the formatted results contained in your manuscript. 
+    This package converts statistical models and data frames into textual 
+    reports suited for publication, ensuring standardization and quality 
+    in results reporting.
+License: GPL-3
+URL: https://easystats.github.io/report/
+BugReports: https://github.com/easystats/report/issues
+Imports: bayestestR (>= 0.9.0), effectsize (>= 0.4.4), insight (>=
+        0.13.2), parameters (>= 0.13.0), performance (>= 0.7.1), stats,
+        tools, utils
+Suggests: BayesFactor, brms, dplyr, httr, knitr, lavaan, lme4,
+        logspline, rmarkdown, rstanarm, spelling, testthat
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.1.1.9001
+Collate: 'cite_easystats.R' 'format_algorithm.R' 'format_citation.R'
+        'format_formula.R' 'format_model.R' 'format_text.R'
+        'utils_combine_tables.R' 'report.lm.R' 'report.MixMod.R'
+        'report_text.R' 'report.R' 'report.htest.R' 'report.aov.R'
+        'report.bayesfactor_models.R' 'report.lme4.R'
+        'report.stanreg.R' 'report.brmsfit.R' 'report.character.R'
+        'report.compare_performance.R' 'report.data.frame.R'
+        'report.default.R' 'report.factor.R' 'report.glm.R'
+        'report.glmmTMB.R' 'report.lavaan.R' 'report.lme.R'
+        'report.numeric.R' 'report.sessionInfo.R' 'report.survreg.R'
+        'report.test_performance.R' 'report.zeroinfl.R'
+        'report_effectsize.R' 'report_info.R' 'report_intecept.R'
+        'report_misc.R' 'report_model.R' 'report_parameters.R'
+        'report_participants.R' 'report_performance.R'
+        'report_priors.R' 'report_random.R' 'report_sample.R'
+        'report_statistics.R' 'report_table.R' 'startup_message.R'
+        'utils_data.R' 'utils_error_message.R' 'utils_grouped_df.R'
+NeedsCompilation: no
+Packaged: 2021-04-14 03:44:51 UTC; user
+Author: Dominique Makowski [aut, cre] (<https://orcid.org/0000-0001-5375-9967>,
+    @Dom_Makowski),
+  Daniel Lüdecke [aut] (<https://orcid.org/0000-0002-8895-3206>),
+  Mattan S. Ben-Shachar [aut] (<https://orcid.org/0000-0002-4287-4801>),
+  Indrajeet Patil [aut] (<https://orcid.org/0000-0003-1995-6531>,
+    @patilindrajeets),
+  Rudolf Siegel [ctb] (<https://orcid.org/0000-0002-6021-804X>)
+Repository: CRAN
+Date/Publication: 2021-04-15 08:50:22 UTC

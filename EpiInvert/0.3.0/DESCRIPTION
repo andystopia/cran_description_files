@@ -1,0 +1,37 @@
+Package: EpiInvert
+Version: 0.3.0
+Type: Package
+Title: Variational Techniques in Epidemiology
+Authors@R: c(person("Luis", "Alvarez", email = "lalvarez@ulpgc.es", role = c("aut", "cre"), 
+  comment = c(ORCID = "0000-0002-6953-9587")), 
+  person("Jean-David", "Morel", role = "ctb", comment = c(ORCID = "0000-0002-7122-9924")),
+  person("Jean-Michel", "Morel", role = "ctb", comment = c(ORCID = "0000-0002-6108-897X"))
+  )
+Maintainer: Luis Alvarez <lalvarez@ulpgc.es>
+Description: Using variational techniques we address some epidemiological
+  problems as the incidence curve decomposition by inverting the renewal 
+  equation as described in Alvarez et al. (2021) <doi:10.1073/pnas.2105112118> 
+  and Alvarez et al. (2022) <doi:10.3390/biology11040540> or the estimation of 
+  the functional relationship between epidemiological indicators. We also 
+  propose a learning method for the short time forecast of the trend 
+  incidence curve  as described in 
+  Morel et al. (2022) <doi:10.1101/2022.11.05.22281904>.
+URL: https://github.com/lalvarezmat/EpiInvert
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.8.3)
+LinkingTo: Rcpp
+Suggests: knitr, ggplot2, grid, dplyr, testthat (>= 3.0.0), rmarkdown,
+        ggpubr
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyLoad: yes
+RoxygenNote: 7.2.2
+NeedsCompilation: yes
+Packaged: 2022-12-08 14:28:18 UTC; lalva
+Author: Luis Alvarez [aut, cre] (<https://orcid.org/0000-0002-6953-9587>),
+  Jean-David Morel [ctb] (<https://orcid.org/0000-0002-7122-9924>),
+  Jean-Michel Morel [ctb] (<https://orcid.org/0000-0002-6108-897X>)
+Repository: CRAN
+Date/Publication: 2022-12-08 15:02:34 UTC

@@ -1,0 +1,30 @@
+Package: VEwaningVariant
+Type: Package
+Title: Vaccine Efficacy Over Time - Variant Aware
+Version: 1.1
+Date: 2021-11-02
+Authors@R: c(person("Marie", "Davidian", role = "aut"),
+             person("A.A.", "Tsiatis", role = "aut"),
+             person("Shannon", "Holloway", role = c("aut", "cre"),
+                     email = "sthollow@ncsu.edu"))
+Description: Implements methods for inference on potential waning of vaccine efficacy and for estimation of vaccine efficacy at a user-specified time after vaccination based on data from a randomized, double-blind, placebo-controlled vaccine trial in which participants may be unblinded and placebo subjects may be crossed over to the study vaccine.  The methods also for variant stratification and allow adjustment for possible confounding via inverse probability weighting through specification of models for the trial entry process, unblinding mechanisms, and the probability an unblinded placebo participant accepts study vaccine.
+License: GPL-2
+Depends: R (>= 3.5.0), survival, stats, graphics, ggplot2, Rcpp,
+        methods
+NeedsCompilation: yes
+LinkingTo: Rcpp, RcppArmadillo
+Repository: CRAN
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Collate: 'RcppExports.R' 'censorFit.R' 'confirmIntegerLike.R' 'pzero.R'
+        'survFunc.R' 'entryFit.R' 'esttheta.R' 'fitCensor.R' 'psiFit.R'
+        'unblindFit.R' 'fitERPsi.R' 'gFunc_v.R'
+        'plot.VEwaningVariant.R' 'print.VEwaningVariant.R' 'variant.R'
+        'variantData.R' 've.R' 'verifyPhase.R' 'verifyModels.R'
+        'verifyInputs.R' 'veWaningVariant.R'
+Packaged: 2021-11-02 18:19:20 UTC; sthollow
+Author: Marie Davidian [aut],
+  A.A. Tsiatis [aut],
+  Shannon Holloway [aut, cre]
+Maintainer: Shannon Holloway <sthollow@ncsu.edu>
+Date/Publication: 2021-11-04 20:30:02 UTC

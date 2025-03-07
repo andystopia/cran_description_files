@@ -1,0 +1,34 @@
+Package: JointAI
+Version: 1.0.1
+Title: Joint Analysis and Imputation of Incomplete Data
+Authors@R: c(person("Nicole S.", "Erler", email = "n.erler@erasmusmc.nl",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-9370-6832")))
+Description: Joint analysis and imputation of incomplete data in the Bayesian
+    framework, using (generalized) linear (mixed) models and extensions there of,
+    survival models, or joint models for longitudinal and survival data.
+    Incomplete covariates, if present, are automatically imputed.
+    The package performs some preprocessing of the data and creates a 'JAGS'
+    model, which will then automatically be passed to 'JAGS' 
+    <http://mcmc-jags.sourceforge.net/> with the help of 
+    the package 'rjags'.
+URL: https://nerler.github.io/JointAI/
+License: GPL (>= 2)
+BugReports: https://github.com/nerler/JointAI/issues/
+LazyData: TRUE
+RoxygenNote: 7.1.1
+Imports: rjags, mcmcse, coda, rlang, future, foreach, mathjaxr,
+        survival, MASS
+SystemRequirements: JAGS (http://mcmc-jags.sourceforge.net/)
+Suggests: knitr, rmarkdown, bookdown, foreign, ggplot2, ggpubr,
+        testthat, covr, doFuture
+VignetteBuilder: knitr
+Encoding: UTF-8
+RdMacros: mathjaxr
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2020-11-16 11:59:28 UTC; erler
+Author: Nicole S. Erler [aut, cre] (<https://orcid.org/0000-0002-9370-6832>)
+Maintainer: Nicole S. Erler <n.erler@erasmusmc.nl>
+Repository: CRAN
+Date/Publication: 2020-11-16 12:50:06 UTC

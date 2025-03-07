@@ -1,0 +1,40 @@
+Package: mhazard
+Title: Nonparametric and Semiparametric Methods for Multivariate
+        Failure Time Data
+Version: 0.2.2
+Authors@R: 
+    c(person(given = "Eric",
+           family = "Bair",
+           role = c("aut", "cre"),
+           email = "eric.bair@sciome.com"),
+      person(given = "Taylor",
+           family = "Petty",
+	   role = "aut"),
+      person(given = "Shanshan",
+           family = "Zhao",
+	   role = "aut"))
+Description: Nonparametric survival function estimates and semiparametric
+    regression for the multivariate failure time data with right-censoring.
+    For nonparametric survival function estimates, the Volterra, Dabrowska,
+    and Prentice-Cai estimates for bivariate failure time data may be
+    computed as well as the Dabrowska estimate for the trivariate failure
+    time data. Bivariate marginal hazard rate regression can be fitted for
+    the bivariate failure time data. Functions are also provided to compute
+    (bootstrap) confidence intervals and plot the estimates of the bivariate
+    survival function. For details, see "The Statistical Analysis of
+    Multivariate Failure Time Data: A Marginal Modeling Approach", Prentice,
+    R., Zhao, S. (2019, ISBN: 978-1-4822-5657-4), CRC Press.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, boot, plot3D, survival, rootSolve
+NeedsCompilation: yes
+Packaged: 2023-08-09 02:01:16 UTC; ebair
+Author: Eric Bair [aut, cre],
+  Taylor Petty [aut],
+  Shanshan Zhao [aut]
+Maintainer: Eric Bair <eric.bair@sciome.com>
+Repository: CRAN
+Date/Publication: 2023-08-09 04:20:02 UTC

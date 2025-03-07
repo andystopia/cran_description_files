@@ -1,0 +1,47 @@
+Package: ufRisk
+Type: Package
+Title: Risk Measure Calculation in Financial TS
+Version: 1.0.0
+Description: Enables the user to calculate Value at Risk (VaR) and Expected 
+    Shortfall (ES) by means of various parametric and semiparametric 
+    GARCH-type models. For the latter the estimation of the nonparametric scale
+    function is carried out by means of a data-driven smoothing approach. Model
+    quality, in terms of forecasting VaR and ES, can be assessed by means of 
+    various backtesting methods such as the traffic light test for VaR and a 
+    newly developed traffic light test for ES. The approaches implemented in 
+    this package are described in e.g. Feng Y., Beran J., Letmathe S. and 
+    Ghosh S. <https://ideas.repec.org/p/pdn/ciepap/137.html> as well as 
+    Letmathe S., Feng Y. and Uhde A. (2021) 
+    <https://ideas.repec.org/p/pdn/ciepap/141.html>. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: esemifar, fracdiff, rugarch, smoots, stats, utils
+Depends: R (>= 2.10)
+Authors@R: c(
+  person("Yuanhua", "Feng", role = "aut", 
+    comment = "Paderborn University, Germany"),
+  person("Xuehai", "Zhang", role = "aut",
+    comment = "Ernst & Young, Germany"),
+  person("Christian", "Peitz", role = "aut",
+    comment = "Paderborn University, Germany"),
+  person("Dominik", "Schulz", role = "aut", 
+    comment = "Paderborn University, Germany"),
+  person("Shujie", "Li", role = "aut", 
+    comment = "Paderborn Universtiy, Germany"),
+  person("Sebastian", "Letmathe", role = c("aut", "cre"),
+    email = "sebastian.letmathe@uni-paderborn.de",
+    comment = "Paderborn University, Germany"))
+URL: https://wiwi.uni-paderborn.de/en/dep4/feng/
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-01-10 00:12:26 UTC; Letmode
+Author: Yuanhua Feng [aut] (Paderborn University, Germany),
+  Xuehai Zhang [aut] (Ernst & Young, Germany),
+  Christian Peitz [aut] (Paderborn University, Germany),
+  Dominik Schulz [aut] (Paderborn University, Germany),
+  Shujie Li [aut] (Paderborn Universtiy, Germany),
+  Sebastian Letmathe [aut, cre] (Paderborn University, Germany)
+Maintainer: Sebastian Letmathe <sebastian.letmathe@uni-paderborn.de>
+Repository: CRAN
+Date/Publication: 2022-01-11 09:40:02 UTC

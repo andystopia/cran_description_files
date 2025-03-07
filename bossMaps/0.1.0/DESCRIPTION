@@ -1,0 +1,27 @@
+Package: bossMaps
+Type: Package
+Title: Convert Binary Species Range Maps into Continuous Surfaces Based
+        on Distance to Range Edge
+Version: 0.1.0
+Date: 2016-12-21
+Authors@R: c(person("Adam M. Wilson", email = "adamw@buffalo.edu",
+                  role = c("aut", "cre")),
+            person("Cory", "Merow", email = "cmerow@uconn.edu",
+                  role = c("aut")))
+Description: Contains functions to convert binary (presence-absence) expert species range maps (like those found in a field guide) into continuous surfaces based on distance to range edge.  These maps can then be used in species distribution models such as Maximum Entropy (Phillips 2008 <DOI:10.1111/j.0906-7590.2008.5203.x>) using additional information (such as point occurrence data) to refine the expert map.
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+Imports: raster, sp, rgeos, rgdal, ggplot2, scales, foreach,
+        doParallel, methods, grDevices, stats, tidyr, utils
+LazyData: true
+Suggests: testthat, directlabels, profr, rasterVis, magrittr, dplyr,
+        knitr, rgrass7, rmarkdown
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-12-29 15:05:48 UTC; adamw
+Author: Adam M. Wilson [aut, cre],
+  Cory Merow [aut]
+Maintainer: Adam M. Wilson <adamw@buffalo.edu>
+Repository: CRAN
+Date/Publication: 2016-12-30 01:07:50

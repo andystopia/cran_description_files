@@ -1,0 +1,46 @@
+Package: RARfreq
+Type: Package
+Title: Response Adaptive Randomization with 'Frequentist' Approaches
+Version: 0.1.4
+Authors@R: c(person("Mengjia", "Yu", role = c("aut"),
+                     email = "mengjia.yu.uiuc@gmail.com"),
+             person("Xiu", "Huang", role = c("aut", "cre"),
+                     email = "xiu.huang@aya.yale.edu"),
+             person("Feifang", "Hu", role = c("aut"),
+                     email = "feifang@gwu.edu"),
+             person("Li", "Wang", role = c("aut"),
+                     email = "wangleelee@gmail.com"),
+             person("Hongjian", "Zhu", role = "aut",
+                     email = "hz5n@virginia.edu"))
+Description: Provides functions and command-line user interface to generate allocation sequence 
+             by response-adaptive randomization for clinical trials. The package currently supports 
+             two families of frequentist response-adaptive randomization procedures, Doubly Adaptive 
+             Biased Coin Design ('DBCD') and Sequential Estimation-adjusted Urn Model ('SEU'), for 
+             binary and normal endpoints. One-sided proportion (or mean) difference and Chi-square 
+             (or 'ANOVA') hypothesis testing methods are also available in the package to  facilitate 
+             the inference for treatment effect. Additionally, the package provides comprehensive and 
+             efficient tools to allow one to evaluate and  compare the performance of randomization 
+             procedures and tests based on various criteria. For example, plots for relationship among 
+             assumed treatment effects,  sample size, and power are provided. Five allocation functions 
+             for 'DBCD' and six addition rule functions for 'SEU' are implemented to target allocations 
+             such as 'Neyman', 'Rosenberger' Rosenberger et al. (2001) 
+             <doi:10.1111/j.0006-341X.2001.00909.x> and 'Urn' allocations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: dplyr, ggplot2, latex2exp, magrittr, patchwork, stats, tidyr,
+        data.table, reshape2, Rdpack
+RdMacros: Rdpack
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-04-04 03:17:31 UTC; huangxx6
+Author: Mengjia Yu [aut],
+  Xiu Huang [aut, cre],
+  Feifang Hu [aut],
+  Li Wang [aut],
+  Hongjian Zhu [aut]
+Maintainer: Xiu Huang <xiu.huang@aya.yale.edu>
+Repository: CRAN
+Date/Publication: 2023-04-04 15:00:06 UTC

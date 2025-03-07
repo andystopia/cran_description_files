@@ -1,0 +1,49 @@
+Package: GenoTriplo
+Type: Package
+Title: Genotyping Triploids (or Diploids) from Luminescence Data
+Version: 1.0.1
+Authors@R: 
+  c(person(given = "Julien",
+           family = "Roche",
+           role = c("aut", "cre"),
+           email = "jjm.roche@gmail.com"),
+    person(given = "Florence",
+           family = "Phocas",
+           role = "aut"),
+    person(given = "Mathieu",
+           family = "Besson",
+           role = "aut"),
+    person(given = "Pierre",
+           family = "Patrice",
+           role = "aut"),
+    person(given = "Marc",
+           family = "Vandeputte",
+           role = "aut"),
+    person(given = "François",
+           family = "Allal",
+           role = "aut"),
+    person(given = "Pierrick",
+           family = "Haffray",
+           role = "aut"))
+Description: Genotyping of triploid individuals from luminescence data (marker probeset A and B). Works also for diploids.
+	Two main functions: Run_Clustering() that regroups individuals with a same genotype based on proximity and
+	Run_Genotyping() that assigns a genotype to each cluster. For Shiny interface use: launch_GenoShiny().
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: cowplot, doParallel, dplyr, DT, foreach, ggplot2, htmltools,
+        parallel, processx, rlang, Rmixmod, shiny, shinythemes, tidyr
+Depends: R (>= 3.5.0), shinyBS
+NeedsCompilation: no
+Packaged: 2023-06-29 11:28:41 UTC; Proprietaire
+Author: Julien Roche [aut, cre],
+  Florence Phocas [aut],
+  Mathieu Besson [aut],
+  Pierre Patrice [aut],
+  Marc Vandeputte [aut],
+  François Allal [aut],
+  Pierrick Haffray [aut]
+Maintainer: Julien Roche <jjm.roche@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-30 19:10:02 UTC

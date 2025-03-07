@@ -1,0 +1,27 @@
+Package: demi
+Type: Package
+Title: Differential Expression from Multiple Indicators
+Description: Implementation of the DEMI method for the analysis of high-density microarray data.
+URL: http://biit.cs.ut.ee/demi
+Version: 1.1.2
+Date: 2015-01-02
+Authors@R: c( person( "Sten", "Ilmjarv", role = c( "aut", "cre" ),
+    email = "sten.ilmjarv@gmail.com"), person( "Hendrik", "Luuk",
+    role = "aut", email = "hendrik.luuk@gmail.com" ) )
+Depends: R (>= 3.0.0), utils
+Imports: R.utils, affxparser, affy, oligo, plyr, methods, devtools
+Suggests: ggplot2, reshape
+License: GPL (>= 2)
+Collate: 'AllClasses.R' 'AllGenerics.R' 'Constructors.R'
+        'DEMICel-methods.R' 'DEMIClust-methods.R' 'DEMIDiff-methods.R'
+        'DEMIExperiment-methods.R' 'DEMIGroup-methods.R'
+        'DEMIResult-methods.R' 'cluster-methods.R' 'custom-methods.R'
+        'cytoband-methods.R' 'diffexp-methods.R' 'messages.R'
+        'normalization-methods.R' 'other-methods.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2015-02-13 19:03:32 UTC; sten
+Author: Sten Ilmjarv [aut, cre],
+  Hendrik Luuk [aut]
+Maintainer: Sten Ilmjarv <sten.ilmjarv@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-02-13 20:22:57

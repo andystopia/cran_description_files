@@ -1,0 +1,35 @@
+Package: noisyr
+Type: Package
+Title: Noise Quantification in High Throughput Sequencing Output
+Version: 0.1.0
+Authors@R: c(
+            person("Ilias", "Moutsopoulos", , "im383@cam.ac.uk", c("aut", "cre")),
+            person("Irina", "Mohorianu", , "iim22@cam.ac.uk", role = c("aut","ctb")),
+            person("Hajk-Georg", "Drost", , "hajk-georg.drost@tuebingen.mpg.de", role="ctb"),
+            person("Elze", "Lauzikaite", , "el523@cam.ac.uk", role = "ctb")
+            )
+Maintainer: Ilias Moutsopoulos <im383@cam.ac.uk>
+Description: Quantifies and removes technical noise from high-throughput 
+        sequencing data. Two approaches are used, one based on the count
+        matrix, and one using the alignment BAM files directly.
+        Contains several options for every step of the process, as well
+        as tools to quality check and assess the stability of output.
+Depends: R (>= 3.1.2)
+Imports: utils, grDevices, tibble, dplyr,magrittr, ggplot2,
+        preprocessCore, IRanges, GenomicRanges, Rsamtools, philentropy,
+        doParallel, foreach
+Suggests: testthat, roxygen2
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/Core-Bioinformatics/noisyR
+BugReports: https://github.com/Core-Bioinformatics/noisyR/issues
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-01-04 14:56:17 UTC; Ilias Moutsopoulos
+Author: Ilias Moutsopoulos [aut, cre],
+  Irina Mohorianu [aut, ctb],
+  Hajk-Georg Drost [ctb],
+  Elze Lauzikaite [ctb]
+Repository: CRAN
+Date/Publication: 2021-01-06 09:50:02 UTC

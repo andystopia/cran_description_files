@@ -1,0 +1,39 @@
+Package: tcgaViz
+Title: Visualization Tool for the Cancer Genome Atlas Program (TCGA)
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Etienne",
+             family = "Camenen",
+             role = c("aut", "cre"),
+             email = "etienne.camenen@gmail.com"),
+      person(given = "Gilles",
+             family = "Marodon",
+             role = "aut"),
+      person(given = "Nicolas",
+             family = "Aubert",
+             role = "aut"))
+Description: Differential analysis of tumor tissue immune cell type
+    abundance based on RNA-seq gene-level expression from The Cancer
+    Genome Atlas (TCGA; <https://pancanatlas.xenahubs.net>) database.
+License: GPL-3
+Depends: R (>= 2.10)
+Imports: config, data.table, dplyr, DT, ggplot2, ggpubr, golem,
+        grDevices, magrittr, methods, openxlsx, plotly, readr,
+        reshape2, rlang, rstatix, shiny, shinyFeedback, shinyjs, stats,
+        stringr, tidyr, tidyselect, utils
+Suggests: BiocCheck, covr, knitr, rmarkdown, spelling, testthat
+VignetteBuilder: knitr
+biocViews: Visualization, ImmunoOncology, Genetics, GeneExpression,
+        MultipleComparison, DifferentialExpression, RNASeq
+Encoding: UTF-8
+Language: en-US
+LazyData: false
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-06-27 14:26:10 UTC; rstudio
+Author: Etienne Camenen [aut, cre],
+  Gilles Marodon [aut],
+  Nicolas Aubert [aut]
+Maintainer: Etienne Camenen <etienne.camenen@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-28 15:50:02 UTC

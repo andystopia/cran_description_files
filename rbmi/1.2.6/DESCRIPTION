@@ -1,0 +1,44 @@
+Package: rbmi
+Title: Reference Based Multiple Imputation
+Version: 1.2.6
+Authors@R: c(
+    person("Craig", "Gower-Page", email = "craig.gower-page@roche.com", role = c("aut", "cre")),
+    person("Alessandro", "Noci", email = "alessandro.noci@roche.com", role = c("aut")),
+    person("Marcel", "Wolbers", email = "marcel.wolbers@roche.com", role = "ctb"),
+    person("Roche", role = c("cph", "fnd"))
+    )
+Description: Implements standard and reference based multiple imputation methods for continuous
+    longitudinal endpoints (Gower-Page et al. (2022) <doi:10.21105/joss.04251>). In particular,
+    this package supports deterministic conditional mean imputation and jackknifing as described
+    in Wolbers et al.  (2022) <doi:10.1002/pst.2234>, Bayesian multiple imputation as described
+    in Carpenter et al. (2013) <doi:10.1080/10543406.2013.834911>, and bootstrapped maximum
+    likelihood imputation as described in von Hippel and Bartlett (2021) <doi: 10.1214/20-STS793>.
+Encoding: UTF-8
+LazyData: true
+URL: https://insightsengineering.github.io/rbmi/,
+        https://github.com/insightsengineering/rbmi
+BugReports: https://github.com/insightsengineering/rbmi/issues
+RoxygenNote: 7.2.3
+Suggests: dplyr, tidyr, nlme, testthat, emmeans, tibble, mvtnorm,
+        knitr, rmarkdown, bookdown, lubridate, purrr, ggplot2, R.rsp
+Biarch: true
+Config/testthat/edition: 3
+Imports: mmrm, pkgload, Matrix, methods, Rcpp (>= 0.12.0), RcppParallel
+        (>= 5.0.1), rstan (>= 2.26.0), rstantools (>= 2.1.1), R6,
+        assertthat
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.26.0)
+SystemRequirements: GNU make
+Depends: R (>= 3.4.0)
+License: Apache License (>= 2)
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2023-11-24 13:29:25 UTC; gowerc
+Author: Craig Gower-Page [aut, cre],
+  Alessandro Noci [aut],
+  Marcel Wolbers [ctb],
+  Roche [cph, fnd]
+Maintainer: Craig Gower-Page <craig.gower-page@roche.com>
+Repository: CRAN
+Date/Publication: 2023-11-24 14:00:03 UTC

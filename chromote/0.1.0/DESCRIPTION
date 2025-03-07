@@ -1,0 +1,30 @@
+Package: chromote
+Title: Headless Chrome Web Browser Interface
+Version: 0.1.0
+Authors@R: c(
+      person("Winston", "Chang", role = c("aut", "cre"), email = "winston@rstudio.com"),
+      person("Barret", "Schloerke", role = c("aut"), email = "barret@rstudio.com"),
+      person(given = "RStudio", role = c("cph", "fnd"))
+    )
+Description: An implementation of the 'Chrome DevTools Protocol', for controlling a headless Chrome web browser.
+License: GPL-2
+Encoding: UTF-8
+SystemRequirements: Google Chrome or other Chromium-based browser.
+        chromium: chromium (rpm) or chromium-browser (deb)
+Imports: curl, jsonlite, websocket (>= 1.2.0), processx, R6, later (>=
+        1.1.0), promises (>= 1.1.1), magrittr, rlang, fastmap
+Suggests: testthat (>= 3.0.0), showimage
+RoxygenNote: 7.1.2
+URL: https://github.com/rstudio/chromote
+BugReports: https://github.com/rstudio/chromote/issues
+Config/testthat/edition: 3
+Config/Needs/website: tidyverse/tidytemplate
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-04-15 18:48:57 UTC; barret
+Author: Winston Chang [aut, cre],
+  Barret Schloerke [aut],
+  RStudio [cph, fnd]
+Maintainer: Winston Chang <winston@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-04-19 09:02:29 UTC

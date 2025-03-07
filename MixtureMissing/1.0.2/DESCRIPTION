@@ -1,0 +1,36 @@
+Package: MixtureMissing
+Type: Package
+Title: Robust Model-Based Clustering for Data Sets with Missing Values
+        at Random
+Version: 1.0.2
+Authors@R: 
+  c(person(given = "Hung",
+           family = "Tong",
+           role = c("aut", "cre"),
+           email = "hungtongmx@gmail.com"),
+    person(given = "Cristina",
+           family = "Tortora",
+           role = c("aut", "ths", "dgs"),
+           email = "cristina.tortora@sjsu.edu"))
+Description: Implementation of robust model based cluster analysis with missing data. 
+    The models used are: Multivariate Contaminated Normal Mixtures (MCNM),
+    Multivariate Student's t  Mixtures (MtM), and Multivariate Normal Mixtures (MNM)
+    for data sets with missing values at random. 
+    See "Model-Based Clustering and Outlier Detection with Missing Data" by
+    Hung Tong and Cristina Tortora (2022) <doi:10.1007/s11634-021-00476-1>.
+Imports: ContaminatedMixt (>= 1.3.4.1), mvtnorm (>= 1.1-2), mnormt (>=
+        2.0.2), cluster (>= 2.1.2), rootSolve (>= 1.8.2.2), MASS (>=
+        7.3)
+Suggests: mice (>= 3.10.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Repository: CRAN
+RoxygenNote: 7.1.2
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2022-01-29 21:04:56 UTC; hmtong
+Author: Hung Tong [aut, cre],
+  Cristina Tortora [aut, ths, dgs]
+Maintainer: Hung Tong <hungtongmx@gmail.com>
+Date/Publication: 2022-01-30 23:00:04 UTC

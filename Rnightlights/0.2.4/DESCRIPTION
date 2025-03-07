@@ -1,0 +1,35 @@
+Package: Rnightlights
+Version: 0.2.4
+Date: 2019-08-29
+Title: Satellite Nightlight Data Extraction
+Description: Extracts raster and zonal statistics
+    from satellite nightlight rasters downloaded from the United States 
+    National Oceanic and Atmospheric Administration (<http://www.noaa.gov>) 
+    free data repositories. Both the DMSP-OLS annual and SNPP-VIIRS monthly 
+    nightlight raster data are supported. Satellite nightlight raster tiles are 
+    downloaded and cropped to the country boundaries using shapefiles from the GADM
+    database of Global Administrative Areas (<http://gadm.org>). Zonal statistics
+    are then calculated at the lowest administrative boundary for the selected
+    country and cached locally for future retrieval. Finally, a simple data
+    explorer/browser is included that allows one to visualize the cached data e.g.
+    graphing, mapping and clustering regional data.
+Authors@R: c(person(given="Christopher", family="Njuguna", role=c("aut", "cre", "cph"), email="chris.njuguna@gmail.com"))
+License: GPL-3
+ByteCompile: true
+Encoding: UTF-8
+Imports: cleangeo, compiler, curl, data.table, doSNOW, dplyr, ff,
+        ffbase, foreach, lubridate, methods, raster, readr, reshape2,
+        rgdal, rgeos, R.utils, rvest, rworldmap, settings, snow, sp,
+        stats, stringr, utils, xml2
+Suggests: dendextend, DT, gdalUtils, ggdendro, ggplot2, leaflet,
+        plotly, RColorBrewer, shiny, shinydashboard, testthat
+SystemRequirements: aria2, curl, gdal, wget
+RoxygenNote: 6.1.1
+BugReports: https://github.com/chrisvwn/Rnightlights/issues
+URL: https://github.com/chrisvwn/Rnightlights
+NeedsCompilation: no
+Packaged: 2019-08-29 13:18:50 UTC; chris
+Author: Christopher Njuguna [aut, cre, cph]
+Maintainer: Christopher Njuguna <chris.njuguna@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-08-29 15:20:04 UTC

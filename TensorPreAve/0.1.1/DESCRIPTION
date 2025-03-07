@@ -1,0 +1,23 @@
+Package: TensorPreAve
+Type: Package
+Title: Rank and Factor Loadings Estimation in Time Series Tensor Factor
+        Models
+Version: 0.1.1
+Author: Weilin Chen [aut, cre]
+Authors@R: c(person("Weilin", "Chen", role = c("aut", "cre"), email = "w.chen56@lse.ac.uk"))
+Description: A set of functions to estimate rank and factor loadings of time series tensor factor models. A tensor is a multidimensional array. To analyze high-dimensional tensor time series, factor model is a major dimension reduction tool. 'TensorPreAve' provides functions to estimate the rank of core tensors and factor loading spaces of tensor time series. More specifically, a pre-averaging method that accumulates information from tensor fibres is used to estimate the factor loading spaces. The estimated directions corresponding to the strongest factors are then used for projecting the data for a potentially improved re-estimation of the factor loading spaces themselves. A new rank estimation method is also implemented to utilizes correlation information from the projected data. 
+    See Chen and Lam (2022) <arXiv:2208.04012> for more details.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/William-Chenwl/TensorPreAve
+RoxygenNote: 7.2.1
+Imports: rTensor,MASS,stats,pracma
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-07 23:32:03 UTC; William Chan
+Maintainer: Weilin Chen <w.chen56@lse.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-11-08 14:20:21 UTC

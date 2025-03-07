@@ -1,0 +1,38 @@
+Package: pqrBayes
+Type: Package
+Title: Bayesian Penalized Quantile Regression
+Version: 1.0.4
+Date: 2025-01-24
+Authors@R: c( 
+              person("Kun", "Fan", role = "aut"),
+              person("Cen", "Wu", role = c("aut", "cre"),email = "wucen@ksu.edu"),
+              person("Jie", "Ren", role = "aut"),
+              person("Fei", "Zhou", role = "aut"))
+Description: The quantile varying coefficient model is robust to data heterogeneity, 
+    outliers and heavy-tailed distributions in the response variable. In addition, 
+    it can flexibly model dynamic patterns of regression coefficients through 
+    nonparametric varying coefficient functions. In this package, we have implemented 
+    the Gibbs samplers of the penalized Bayesian quantile varying coefficient model with 
+    spike-and-slab priors [Zhou et al.(2023)]<doi:10.1016/j.csda.2023.107808> for efficient 
+    Bayesian shrinkage estimation, variable selection and statistical inference. In particular,
+    valid Bayesian inferences on sparse quantile varying coefficient functions can be validated 
+    on finite samples. The Markov Chain Monte Carlo (MCMC) algorithms of the proposed
+    and alternative models can be efficiently performed by using the package.   
+Depends: R (>= 3.5.0)
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/cenwu/pqrBayes
+BugReports: https://github.com/cenwu/pqrBayes/issues
+LazyData: true
+Imports: Rcpp,glmnet,splines, stats
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Repository: CRAN
+Packaged: 2025-01-24 23:47:43 UTC; cenwu
+Author: Kun Fan [aut],
+  Cen Wu [aut, cre],
+  Jie Ren [aut],
+  Fei Zhou [aut]
+Maintainer: Cen Wu <wucen@ksu.edu>
+Date/Publication: 2025-01-25 00:00:02 UTC

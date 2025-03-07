@@ -1,0 +1,50 @@
+Package: ggside
+Type: Package
+Title: Side Grammar Graphics
+Version: 0.3.0
+Authors@R: 
+    person(given = "Justin",
+           family = "Landis",
+           role = c("aut", "cre"),
+           email = "jtlandis314@gmail.com",
+           comment = c(ORCID = "0000-0001-5501-4934"))
+Maintainer: Justin Landis <jtlandis314@gmail.com>
+Description: The grammar of graphics as shown in 'ggplot2' has provided
+  an expressive API for users to build plots. 'ggside' extends 'ggplot2' 
+  by allowing users to add graphical information about one of the main panel's
+  axis using a familiar 'ggplot2' style API with tidy data. This package is
+  particularly useful for visualizing metadata on a discrete axis, or summary
+  graphics on a continuous axis such as a boxplot or a density distribution.
+License: MIT + file LICENSE
+URL: https://github.com/jtlandis/ggside
+BugReports: https://github.com/jtlandis/ggside/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Depends: ggplot2 (>= 3.5.0)
+Imports: grid, gtable, rlang, scales (>= 1.3.0), cli, glue, stats,
+        tibble, vctrs
+Suggests: tidyr, dplyr, testthat (>= 3.0.3), knitr, rmarkdown, vdiffr
+        (>= 1.0.0), ggdendro, viridis, waldo
+Config/testthat/edition: 3
+Collate: 'z-depricated.R' 'utils-ggproto.R' 'utils-calls.R'
+        'utils-ggplot2-reimpl-.R' 'utils-constructors.R' 'side-layer.R'
+        'constructor-.R' 'utils-.R' 'ggside.R' 'utils-side-facet.R'
+        'side-facet_.R' 'side-layout-.r' 'utils-side-coord.R'
+        'side-coord-cartesian.R' 'plot-construction.R' 'ggplot_add.R'
+        'add_gg.R' 'geom-sideabline.r' 'geom-sidebar.r'
+        'geom-sideboxplot.r' 'geom-sidecol.r' 'geom-sidedensity.r'
+        'geom-sidefreqpoly.r' 'geom-sidefunction.r'
+        'geom-sidehistogram.r' 'geom-sidehline.r' 'geom-sidelabel.r'
+        'geom-sideline.r' 'geom-sidepath.r' 'geom-sidepoint.r'
+        'geom-sidesegment.r' 'geom-sidetext.r' 'geom-sidetile.r'
+        'geom-sideviolin.r' 'geom-sidevline.r' 'ggside-ggproto.r'
+        'ggside-package.r' 'ggside-themes.R' 'position_rescale.r'
+        'scales-sides-.R' 'scales-xycolour.R' 'scales-xyfill.R'
+        'utils-ggplot2-reimpl-facet.R' 'side-facet-wrap.R'
+        'side-facet-grid.R' 'side-facet-null.R' 'stats.r' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2024-02-26 01:32:03 UTC; jtlandis
+Author: Justin Landis [aut, cre] (<https://orcid.org/0000-0001-5501-4934>)
+Repository: CRAN
+Date/Publication: 2024-02-26 03:30:02 UTC

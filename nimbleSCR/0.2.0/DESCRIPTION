@@ -1,0 +1,52 @@
+Package: nimbleSCR
+Type: Package
+Title: Spatial Capture-Recapture (SCR) Methods Using 'nimble'
+Version: 0.2.0
+Maintainer: Daniel Turek <danielturek@gmail.com>
+Authors@R: c(person("Richard", "Bischof", role = "aut"),
+             person("Daniel", "Turek", role = c("aut", "cre"), email = "danielturek@gmail.com"),
+             person("Cyril", "Milleret", role = "aut"),
+             person("Torbjørn", "Ergon", role = "aut"),
+             person("Pierre", "Dupont", role = "aut"),
+             person("Soumen", "Dey", role = "aut"),
+             person("Wei", "Zhang", role = "aut"),
+             person("Perry", "de Valpine", role = "aut"))
+Date: 2022-08-31
+Description: Provides utility functions, distributions, and fitting methods for Bayesian Spatial Capture-Recapture (SCR) and Open Population Spatial Capture-Recapture (OPSCR) modelling using the nimble package (de Valpine et al. 2017 <doi:10.1080/10618600.2016.1172487 >). Development of the package was motivated primarily by the need for flexible and efficient analysis of large-scale SCR data (Bischof et al. 2020 <doi:10.1073/pnas.2011383117 >). Computational methods and techniques implemented in nimbleSCR include those discussed in Turek et al. 2021 <doi:10.1002/ecs2.3385>; among others. For a recent application of nimbleSCR, see Milleret et al. (2021) <doi:10.1098/rsbl.2021.0128>.
+License: GPL-3
+Depends: R (>= 3.5.0), nimble
+Imports: methods
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), coda, basicMCMCplots
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Collate: calcWindowSizes.R getWindowIndex.R
+        integrateIntensityLocal_normal.R integrateIntensityLocal_exp.R
+        integrateIntensity_normal.R integrateIntensity_exp.R
+        stratRejectionSampler_normal.R stratRejectionSampler_exp.R
+        dDispersal_exp.R dHabitatMask.R dbernppAC.R
+        dbernppACmovement_normal.R dbernppACmovement_exp.R
+        dbernppDetection_normal.R dbernppLocalACmovement_normal.R
+        dbernppLocalACmovement_exp.R dbernppLocalDetection_normal.R
+        dbinomLocal_normal.R dmultiLocal_normal.R dbinom_vector.R
+        dnormalizer.R dpoisLocal_normal.R dbinomLocal_normalPlateau.R
+        dbinomLocal_exp.R dpoisppAC.R dpoisppDetection_normal.R
+        dpoisppLocalDetection_normal.R getLocalObjects.R
+        getMidPointNodes.R getWindowCoords.R getSparseY.R
+        getHomeRangeArea.R localTrapCalculations.R
+        makeConstantNimbleFunction.R marginalVoidProbIntegrand.R
+        marginalVoidProbNumIntegration.R scaleCoordsToHabitatGrid.R
+        zzz.R
+NeedsCompilation: no
+Packaged: 2022-09-01 15:13:32 UTC; dturek
+Author: Richard Bischof [aut],
+  Daniel Turek [aut, cre],
+  Cyril Milleret [aut],
+  Torbjørn Ergon [aut],
+  Pierre Dupont [aut],
+  Soumen Dey [aut],
+  Wei Zhang [aut],
+  Perry de Valpine [aut]
+Repository: CRAN
+Date/Publication: 2022-09-02 10:40:02 UTC

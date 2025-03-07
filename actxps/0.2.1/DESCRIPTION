@@ -1,0 +1,36 @@
+Package: actxps
+Title: Create Actuarial Experience Studies: Prepare Data, Summarize
+        Results, and Create Reports
+Version: 0.2.1
+Authors@R: 
+    person("Matt", "Heaphy", email = "mattrmattrs@gmail.com", role = c("aut", "cre"))
+Maintainer: Matt Heaphy <mattrmattrs@gmail.com>
+Description: Experience studies are used by actuaries to explore historical
+    experience across blocks of business and to inform assumption setting
+    activities. This package provides functions for preparing data, creating 
+    studies, and beginning assumption development. Experience study methods, 
+    including exposure calculations, are described in: Atkinson & McGarry 
+    (2016) "Experience Study Calculations" 
+    <https://www.soa.org/49378a/globalassets/assets/files/research/experience-study-calculations.pdf>.
+    The limited fluctuation credibility method used by the 'exp_stats()'
+    function is described in: Herzog (1999, ISBN:1-56698-374-6) 
+    "Introduction to Credibility Theory".
+License: MIT + file LICENSE
+URL: https://github.com/mattheaphy/actxps/,
+        https://mattheaphy.github.io/actxps/
+BugReports: https://github.com/mattheaphy/actxps/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, RColorBrewer, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 4.1)
+Imports: lubridate, dplyr, ggplot2, tibble, rlang, glue, purrr, scales,
+        gt, paletteer, recipes, generics, shiny (>= 1.6), bslib,
+        thematic, readr
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-11 12:56:37 UTC; Matt
+Author: Matt Heaphy [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-02-11 13:10:02 UTC

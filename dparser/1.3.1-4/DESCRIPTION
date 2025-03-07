@@ -1,0 +1,30 @@
+Package: dparser
+Title: Port of 'Dparser' Package
+Version: 1.3.1-4
+Authors@R: c(person("Matthew", "Fidler", email = "matthew.fidler@gmail.com", role = c("aut", "cre")),
+	   person("John", "Plevyak", role = c("aut", "cph"), email = "jplevyak@gmail.com"))
+Imports: digest, methods
+Suggests: rex, covr, testthat, knitr, devtools,
+Description: A Scannerless GLR parser/parser generator.  Note that GLR standing for "generalized LR", where L stands for "left-to-right" and
+   R stands for "rightmost (derivation)".  For more information see <https://en.wikipedia.org/wiki/GLR_parser>. This parser is based on the Tomita
+   (1987) algorithm. (Paper can be found at <https://www.aclweb.org/anthology/P84-1073.pdf>).
+   The original 'dparser' package documentation can be found at <http://dparser.sourceforge.net/>.  This allows you to add mini-languages to R (like
+   RxODE's ODE mini-language Wang, Hallow, and James 2015 <DOI:10.1002/psp4.12052>) or to parse other languages like 'NONMEM' to automatically translate
+   them to R code.   To use this in your code, add a LinkingTo dparser in your DESCRIPTION file and instead of using #include <dparse.h> use
+   #include <dparser.h>.  This also provides a R-based port of the make_dparser <http://dparser.sourceforge.net/d/make_dparser.cat> command called
+   mkdparser().  Additionally you can parse an arbitrary grammar within R using the dparse() function, which works on most OSes and is mainly for grammar
+   testing.  The fastest parsing, of course, occurs at the C level, and is suggested.
+Depends: R (>= 3.3)
+License: BSD_3_clause + file LICENSE
+BugReports: https://github.com/nlmixrdevelopment/dparser-R/issues/
+URL: https://nlmixrdevelopment.github.io/dparser-R/,
+        https://github.com/nlmixrdevelopment/dparser-R/
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-04-06 19:32:09 UTC; matt
+Author: Matthew Fidler [aut, cre],
+  John Plevyak [aut, cph]
+Maintainer: Matthew Fidler <matthew.fidler@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-07 09:10:02 UTC

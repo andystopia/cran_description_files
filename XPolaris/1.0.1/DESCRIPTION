@@ -1,0 +1,34 @@
+Package: XPolaris
+Title: Retrieving Soil Data from POLARIS
+Version: 1.0.1
+Authors@R: c(
+    person("Luiz", "Moro Rosso", email = "lhmrosso@ksu.edu", role = "cre"),
+    person("Andre", "Borja Reis", email = "andrefbr@ksu.edu", role = "aut"),
+    person("Adrian", "Correndo", email = "correndo@ksu.edu", role = "aut"),
+    person("Ignacio", "Ciampitti", email = "ciampitti@ksu.edu", role = "aut"))
+Description: The POLARIS database <http://hydrology.cee.duke.edu/POLARIS/> 
+    is a 30-meter probabilistic soil series map of the contiguous United 
+    States (US). It represents an optimization of the Soil Survey 
+    Geographic database. This R package facilitates the access 
+    to large amounts of soil data within the US, currently 
+    stored online as raster images (TIFF).
+License: MIT + file LICENSE
+URL: https://github.com/lhmrosso/XPolaris
+BugReports: https://github.com/lhmrosso/XPolaris/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: covr, knitr, mapproj, maps, methods, rgdal, rmarkdown,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+Imports: dplyr, ggplot2, magrittr, purrr, raster, sf, tidyr, utils
+NeedsCompilation: no
+Packaged: 2021-06-16 01:17:15 UTC; lhmrosso
+Author: Luiz Moro Rosso [cre],
+  Andre Borja Reis [aut],
+  Adrian Correndo [aut],
+  Ignacio Ciampitti [aut]
+Maintainer: Luiz Moro Rosso <lhmrosso@ksu.edu>
+Repository: CRAN
+Date/Publication: 2021-06-17 07:50:09 UTC

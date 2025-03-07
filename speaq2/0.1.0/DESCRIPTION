@@ -1,0 +1,23 @@
+Package: speaq2
+Version: 0.1.0
+Date: 2016-11-10
+Title: Wavelet Based Tools for Feature-Wise Analysis and Quantification
+        of Nuclear Magnetic Resonance (NMR) Spectra
+Author: Charlie Beirnaert, Kris Laukens
+Maintainer: Charlie Beirnaert <charlie.beirnaert@uantwerpen.be>
+Description: Tools for feature based analysis of Nuclear Magnetic Resonance (NMR) spectra. Wavelets are
+    used to quantify the peaks which are grouped into features with hierarchical
+    clustering. The results can easily be incorporated in large-scale studies that include LC-MS analysis (as this is also peak/feature based).
+Depends: R (>= 2.15),
+Imports: MassSpecWavelet, mQTL, parallel, doSNOW, data.table, foreach,
+        stats, cluster, utils, graphics, grDevices
+Suggests: datasets, speaq, knitr, rmarkdown, grid, gridExtra, gridBase,
+        ggplot2
+LazyData: true
+VignetteBuilder: knitr
+License: GPL-3
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-11-14 15:51:41 UTC; Charlie
+Repository: CRAN
+Date/Publication: 2016-11-15 08:45:34

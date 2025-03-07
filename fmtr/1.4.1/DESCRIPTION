@@ -1,0 +1,27 @@
+Package: fmtr
+Type: Package
+Title: Easily Apply Formats to Data
+Version: 1.4.1
+Author: David Bosak
+Maintainer: David Bosak <dbosak01@gmail.com>
+Description: Contains a set of functions that can be used to apply
+  formats to data frames or vectors.  The package aims to provide to 
+  functionality similar to that of SAS® formats. Formats are assigned to
+  the format attribute on data frame columns.  Then when the fdata() 
+  function is called, a new data frame is created with the column data
+  formatted as specified.  The package also contains a value() function
+  to create a user-defined format, similar to a SAS® user-defined format.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+URL: https://fmtr.r-sassy.org
+BugReports: https://github.com/dbosak01/fmtr/issues
+Depends: R (>= 4.0.0)
+Suggests: testthat, knitr, rmarkdown
+Imports: tibble, stats, crayon
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-05 05:20:28 UTC; User
+Repository: CRAN
+Date/Publication: 2021-01-06 16:00:45 UTC

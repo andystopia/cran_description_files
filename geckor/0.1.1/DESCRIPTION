@@ -1,0 +1,32 @@
+Package: geckor
+Title: R Client for the 'CoinGecko' API
+Version: 0.1.1
+Authors@R: c(
+    person("Sergey", "Mastitsky",
+           role = c("aut", "cre"),
+           email = "sergey@nextgamesolutions.com"),
+    person("Next Game Solutions", role = c("cph"))
+  )
+Description: Collect the current and historical cryptocurrency market data using 
+    the public 'CoinGecko' API (<https://www.coingecko.com/en/api>).
+License: MIT + file LICENSE
+URL: https://github.com/next-game-solutions/geckor
+BugReports: https://github.com/next-game-solutions/geckor/issues
+Depends: R (>= 4.0)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: covr, markdown, readr, rmarkdown, spelling, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+Imports: dplyr, jsonlite, httr, knitr, lifecycle, magrittr, rlang,
+        tibble, tidyr, tidyselect
+VignetteBuilder: knitr
+RdMacros: lifecycle
+NeedsCompilation: no
+Packaged: 2021-07-12 12:40:21 UTC; masti
+Author: Sergey Mastitsky [aut, cre],
+  Next Game Solutions [cph]
+Maintainer: Sergey Mastitsky <sergey@nextgamesolutions.com>
+Repository: CRAN
+Date/Publication: 2021-07-13 14:40:05 UTC

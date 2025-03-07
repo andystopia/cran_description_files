@@ -1,0 +1,63 @@
+Package: gdalraster
+Title: Bindings to the 'Geospatial Data Abstraction Library' Raster API
+Version: 1.4.0
+Authors@R: c( 
+    person("Chris", "Toney", email = "chris.toney@usda.gov",
+            role = c("aut", "cre")),
+    person("Frank", "Warmerdam", 
+            role = c("ctb", "cph"), comment = "GDAL API/documentation; src/progress_r.cpp from /gdal/port/cpl_progress.cpp"),
+    person("Even", "Rouault", 
+            role = c("ctb", "cph"), comment = "GDAL API/documentation"),
+    person("Marius", "Appel", 
+            role = c("ctb", "cph"), comment = "configure.ac based on https://github.com/appelmar/gdalcubes"),
+    person("Daniel", "James", 
+            role = c("ctb", "cph"), comment = "Boost combine hashes method"),
+    person("Peter", "Dimov", 
+            role = c("ctb", "cph"), comment = "Boost combine hashes method"))
+Description: Interface to the raster API of the 'Geospatial Data Abstraction
+    Library' ('GDAL') supporting manual creation of uninitialized datasets,
+    creation from existing raster as template, low level I/O, configuration of
+    virtual raster (VRT), coordinate transformation, and access to 'gdalwarp'
+    for reprojection. Includes selected 'GDAL' algorithms and functions for
+    working with spatial reference systems. Calling signatures resemble the
+    native C, C++ and Python APIs provided by the 'GDAL' project
+    (<https://gdal.org>). Bindings are implemented via 'Rcpp' exposed class
+    along with several stand-alone functions. Additional functionality
+    includes: class 'RunningStats' for efficient summary statistics on large
+    data streams; class 'CmbTable' for counting unique combinations of integers
+    with a hash table; raster overlay to identify and count unique pixel
+    combinations across multiple input layers; raster calculation by evaluating
+    any R expression on a stack of layers with pixel coordinates available as
+    variables; and raster display using base 'graphics'. 'gdalraster' may be
+    suitable for applications that primarily need low-level I/O or prefer a
+    direct 'GDAL' API. The additional functionality is somewhat aimed at
+    thematic data analysis but may have other utility.
+License: MIT + file LICENSE
+Copyright: See file inst/COPYRIGHTS for details.
+URL: https://usdaforestservice.github.io/gdalraster/,
+        https://github.com/USDAForestService/gdalraster
+BugReports: https://github.com/USDAForestService/gdalraster/issues
+Depends: R (>= 4.2.0)
+Imports: graphics, grDevices, methods, Rcpp (>= 1.0.7), stats, tools,
+        utils
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, scales, testthat (>= 3.0.0), xml2
+NeedsCompilation: yes
+SystemRequirements: GDAL (>= 2.3.0, built against GEOS), PROJ (>=
+        4.8.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Packaged: 2023-08-29 16:55:34 UTC; ctoney
+Author: Chris Toney [aut, cre],
+  Frank Warmerdam [ctb, cph] (GDAL API/documentation; src/progress_r.cpp
+    from /gdal/port/cpl_progress.cpp),
+  Even Rouault [ctb, cph] (GDAL API/documentation),
+  Marius Appel [ctb, cph] (configure.ac based on
+    https://github.com/appelmar/gdalcubes),
+  Daniel James [ctb, cph] (Boost combine hashes method),
+  Peter Dimov [ctb, cph] (Boost combine hashes method)
+Maintainer: Chris Toney <chris.toney@usda.gov>
+Repository: CRAN
+Date/Publication: 2023-08-29 18:40:02 UTC

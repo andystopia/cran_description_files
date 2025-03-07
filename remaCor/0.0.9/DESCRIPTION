@@ -1,0 +1,25 @@
+Type: Package
+Package: remaCor
+Title: Random Effects Meta-Analysis for Correlated Test Statistics
+Version: 0.0.9
+Date: 2022-09-06
+Authors@R: 
+    person("Gabriel", "Hoffman", , "gabriel.hoffman@mssm.edu", role = c("aut", "cre"))
+Description: Meta-analysis is widely used to summarize estimated effects sizes across multiple statistical tests. Standard fixed and random effect meta-analysis methods assume that the estimated of the effect sizes are statistically independent.  Here we relax this assumption and enable meta-analysis when the correlation matrix between effect size estimates is known.  Fixed effect meta-analysis uses the method of Lin and Sullivan (2009) <doi:10.1016/j.ajhg.2009.11.001>, and random effects meta-analysis uses the method of Han, et al. <doi:10.1093/hmg/ddw049>.
+License: Artistic-2.0
+URL: https://github.com/GabrielHoffman/remaCor
+BugReports: https://github.com/GabrielHoffman/remaCor/issues
+Suggests: knitr, metafor
+Depends: R (>= 3.6.0), RUnit, clusterGeneration, ggplot2, grid,
+        reshape2, methods
+Imports: mvtnorm, compiler, Rdpack, stats
+VignetteBuilder: knitr
+RdMacros: Rdpack
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-09-06 13:55:04 UTC; gabrielhoffman
+Author: Gabriel Hoffman [aut, cre]
+Maintainer: Gabriel Hoffman <gabriel.hoffman@mssm.edu>
+Repository: CRAN
+Date/Publication: 2022-09-07 08:30:02 UTC

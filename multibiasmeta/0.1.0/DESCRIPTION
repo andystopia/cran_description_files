@@ -1,0 +1,38 @@
+Package: multibiasmeta
+Type: Package
+Title: Sensitivity Analysis for Multiple Biases in Meta-Analyses
+Description: Meta-analyses can be compromised by studies' internal biases (e.g.,
+  confounding in nonrandomized studies) as well as by publication bias. This
+  package conducts sensitivity analyses for the joint effects of these biases
+  (per Mathur (2022) <doi:10.31219/osf.io/u7vcb>). These sensitivity analyses 
+  address two questions: (1) For a given severity of internal bias across
+  studies and of publication bias, how much could the results change?; and
+  (2) For a given severity of publication bias, how severe would internal bias
+  have to be, hypothetically, to attenuate the results to the null or by a given
+  amount?
+Version: 0.1.0
+Authors@R: c(
+  person("Mika", "Braginsky", email = "mika.br@gmail.com", role = c("aut", "cre")),
+  person("Maya", "Mathur", email = "mmathur@stanford.edu", role = c("aut")))
+Maintainer: Mika Braginsky <mika.br@gmail.com>
+License: MIT + file LICENSE
+URL: https://github.com/mathurlabstanford/multibiasmeta,
+        https://mathurlabstanford.github.io/multibiasmeta/
+BugReports: https://github.com/mathurlabstanford/multibiasmeta/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports: dplyr, EValue, metabias, metafor, purrr, Rdpack, rlang,
+        robumeta
+RoxygenNote: 7.2.3
+RdMacros: Rdpack
+Suggests: glue, knitr, phacking, PublicationBias (>= 2.3.0), rmarkdown,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-07 17:32:20 UTC; mbraginsky
+Author: Mika Braginsky [aut, cre],
+  Maya Mathur [aut]
+Repository: CRAN
+Date/Publication: 2023-02-08 09:40:02 UTC

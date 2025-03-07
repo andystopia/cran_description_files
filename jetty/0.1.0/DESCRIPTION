@@ -1,0 +1,30 @@
+Package: jetty
+Type: Package
+Title: Execute R in a 'Docker' Context
+Version: 0.1.0
+Authors@R: 
+    person(given = "Daniel",
+           family = "Molitor",
+           role = c("aut", "cph", "cre"),
+           email = "molitdj97@gmail.com")
+Description: The goal of 'jetty' is to execute R functions and code
+    snippets in an isolated R subprocess within a 'Docker' container
+    and return the evaluated results to the local R session. 'jetty'
+    can install necessary packages at runtime and seamlessly propagates
+    errors and outputs from the 'Docker' subprocess back to the main
+    session. 'jetty' is primarily designed for sandboxed testing and
+    quick execution of example code.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: renv (>= 1.0.0), rlang
+Suggests: here, Matrix, ggplot2, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+URL: https://github.com/dmolitor/jetty, http://www.dmolitor.com/jetty/
+BugReports: https://github.com/dmolitor/jetty/issues
+NeedsCompilation: no
+Packaged: 2025-01-08 17:59:08 UTC; dmolitor
+Author: Daniel Molitor [aut, cph, cre]
+Maintainer: Daniel Molitor <molitdj97@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-09 14:50:02 UTC

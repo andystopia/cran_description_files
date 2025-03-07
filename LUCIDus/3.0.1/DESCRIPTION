@@ -1,0 +1,36 @@
+Package: LUCIDus
+Title: LUCID with Multiple Omics Data
+Version: 3.0.1
+Authors@R: c(
+    person("Qiran", "Jia", , "qiranjia@usc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0790-5967")),
+    person(given = "Yinqi", family = "Zhao", 
+           email = "yinqiz@usc.edu", 
+           role = "aut",
+           comment = c(ORCID = "0000-0003-2413-732X")),
+    person(given = "David", family = "Conti", 
+           email = "dconti@usc.med.edu", role = "ths",
+           comment = c(ORCID = "0000-0002-2941-7833")),
+    person(given = "Jesse", family = "Goodrich", 
+           role = "ctb",
+           comment = c(ORCID = "0000-0001-6615-0472"))
+  )
+Description: An implementation of estimating the Latent Unknown Clusters By Integrating Multi-omics Data (LUCID) model (Peng (2019) <doi:10.1093/bioinformatics/btz667>). LUCID conducts integrated clustering using exposures, omics data (and outcome as an option). This is a major update from the last version while conserving all the previous features. This package implements three different integration strategies for multiple omics data analysis within the LUCID framework: LUCID early integration (the original LUCID model), LUCID in parallel (intermediate), and LUCID in serial (late). Automated model selection for each LUCID model is available to obtain the optimal number of latent clusters, and an integrated imputation approach is implemented to handle sporadic and list-wise missing multiple omics data.
+Depends: R (>= 3.6.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: mclust, nnet, boot, jsonlite, networkD3, progress, stats,
+        utils, glasso, glmnet
+NeedsCompilation: no
+Packaged: 2023-10-30 23:47:30 UTC; qiranjia19961112
+Author: Qiran Jia [aut, cre] (<https://orcid.org/0000-0002-0790-5967>),
+  Yinqi Zhao [aut] (<https://orcid.org/0000-0003-2413-732X>),
+  David Conti [ths] (<https://orcid.org/0000-0002-2941-7833>),
+  Jesse Goodrich [ctb] (<https://orcid.org/0000-0001-6615-0472>)
+Maintainer: Qiran Jia <qiranjia@usc.edu>
+Repository: CRAN
+Date/Publication: 2023-10-31 11:30:07 UTC

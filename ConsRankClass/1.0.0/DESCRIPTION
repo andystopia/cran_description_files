@@ -1,0 +1,28 @@
+Package: ConsRankClass
+Type: Package
+Title: Classification and Clustering of Preference Rankings
+Version: 1.0.0
+Date: 2021-05-17
+Authors@R: c(person("Antonio", "D'Ambrosio", role = c("aut", "cre"), email = "antdambr@unina.it"))
+Maintainer: Antonio D'Ambrosio <antdambr@unina.it>
+Depends: ConsRank
+Imports: janitor, methods, pracma, rlist, proxy
+Description: Tree-based classification and soft-clustering method for preference rankings, with tools for external validation of fuzzy clustering.
+    It contains the recursive partitioning algorithm for preference rankings, non-parametric tree-based method for a matrix of preference rankings as a response variable. It contains also the distribution-free soft clustering method for preference rankings, namely the K-median cluster component analysis (CCA). 
+    The package depends on the 'ConsRank' R package.
+    Options for validate the tree-based method are both test-set procedure and V-fold cross validation.
+    The package contains the routines to compute the adjusted concordance index (a fuzzy version of the adjusted rand index) and the normalized degree of concordance (the corresponding fuzzy version of the rand index).
+    Essential references:
+    D'Ambrosio, A., Amodio, S., Iorio, C., Pandolfo, G., and Siciliano, R. (2021) <doi:10.1007/s00357-020-09367-0>
+    D'Ambrosio, A., and Heiser, W.J. (2019) <doi:10.1007/s41237-018-0069-5>;    
+    D'Ambrosio, A., and Heiser W.J. (2016) <doi:10.1007/s11336-016-9505-1>;
+    Hullermeier, E., Rifqi, M., Henzgen, S., and Senge, R. (2012) <doi:10.1109/TFUZZ.2011.2179303>.
+License: GPL-3
+Encoding: UTF-8
+URL: https://www.r-project.org/
+Repository: CRAN
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-05-17 12:23:33 UTC; Antonio
+Author: Antonio D'Ambrosio [aut, cre]
+Date/Publication: 2021-05-18 07:40:02 UTC

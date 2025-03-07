@@ -1,0 +1,28 @@
+Package: wintime
+Type: Package
+Title: Win Time Methods for Time-to-Event Data in Clinical Trials
+Version: 0.1.0
+Authors@R: c(person("James", "Troendle", email = "james.troendle@nih.gov", role = c("aut", "cre")),
+           person("Samuel", "Lawrence", email = "roaders79@gmail.com", role = "aut"))
+Description: Performs an analysis of time-to-event clinical trial data using various "win time" methods, 
+  including 'ewt', 'ewtr', 'rmt', 'max', 'wtr', 'rwtr', and 'pwt'. These methods are used to calculate and compare 
+  treatment effects on ordered composite endpoints. The package handles event times, event indicators, and treatment 
+  arm indicators and supports calculations on observed and resampled data. Detailed explanations of each method and 
+  usage examples are provided in "Use of win time for ordered composite endpoints in clinical trials," by Troendle et al. 
+  (2024)<https://pubmed.ncbi.nlm.nih.gov/38417455/>. For more information, see the package documentation or the vignette titled "Introduction to wintime."
+URL: https://pubmed.ncbi.nlm.nih.gov/38417455/
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Imports: survival
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown (>= 2.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2024-08-27 14:17:34 UTC; troendlj
+Author: James Troendle [aut, cre],
+  Samuel Lawrence [aut]
+Maintainer: James Troendle <james.troendle@nih.gov>
+Repository: CRAN
+Date/Publication: 2024-09-02 12:00:02 UTC

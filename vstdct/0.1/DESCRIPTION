@@ -1,0 +1,21 @@
+Package: vstdct
+Title: Nonparametric Estimation of Toeplitz Covariance Matrices
+Version: 0.1
+Authors@R: c(person("Karolina", "Klockmann", email="karolina.klockmann@gmx.de", role = c("aut", "cre")), person("Tatyana", "Krivobokova",  role = c("aut")))
+Description: A nonparametric method to estimate Toeplitz covariance matrices from a sample of n independently and identically distributed p-dimensional vectors with mean zero. The data is preprocessed with the discrete cosine matrix and a variance stabilization transformation to obtain an approximate Gaussian regression setting for the log-spectral density function. Estimates of the spectral density function and the inverse of the covariance matrix are provided as well. Functions for simulating data and a protein data example are included. For details see (Klockmann, Krivobokova; 2023), <arXiv:2303.10018>.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: dtt, MASS, nlme
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+LazyData: true
+LazyDataCompression: xz
+NeedsCompilation: no
+Packaged: 2023-06-21 08:13:00 UTC; klockmann
+Author: Karolina Klockmann [aut, cre],
+  Tatyana Krivobokova [aut]
+Maintainer: Karolina Klockmann <karolina.klockmann@gmx.de>
+Repository: CRAN
+Date/Publication: 2023-06-22 07:30:02 UTC

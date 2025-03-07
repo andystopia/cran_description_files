@@ -1,0 +1,28 @@
+Package: aniSNA
+Type: Package
+Title: Statistical Network Analysis of Animal Social Networks
+Version: 1.0
+Date: 2023-02-01
+Authors@R: c(person("Prabhleen", "Kaur", role = c("aut", "cre"), email = "prabhleen.kaur.ucd@gmail.com"), person("Michael", "Salter-Townshend", role = "ctb", email = "michael.salter-townshend@ucd.ie"))
+Description: Obtain network structures from animal GPS telemetry observations and 
+    statistically analyse them to assess their adequacy for social network analysis. Methods include 
+    pre-network data permutations, bootstrapping techniques to obtain confidence intervals for global
+    network metrics, and correlation and regression analysis of the local network metrics. 
+License: MIT + file LICENSE
+Imports: dplyr, ggplot2, graphics, igraph, lubridate, magrittr,
+        parallel, Rcpp, reshape, rlang, stats, stringr, utils
+LinkingTo: Rcpp
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyData: true
+LazyDataCompression: xz
+NeedsCompilation: yes
+Packaged: 2023-02-16 16:05:33 UTC; prabhleenkaur
+Author: Prabhleen Kaur [aut, cre],
+  Michael Salter-Townshend [ctb]
+Maintainer: Prabhleen Kaur <prabhleen.kaur.ucd@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-17 09:50:09 UTC

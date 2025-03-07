@@ -1,0 +1,20 @@
+Package: polychaosbasics
+Version: 1.1-1
+Date: 2017-03-01
+Title: Sensitivity Indexes Calculated from Polynomial Chaos Expansions
+Author: A. Bouvier [aut], J.-P. Gauchi [cre], A. Bensadoun [aut]
+Maintainer: Annie Bouvier <annie.bouvier@inra.fr>
+Depends: methods
+Imports: utils, lhs, MASS
+Suggests: graphics, stats
+Description: Computation of sensitivity indexes by using a method based on a truncated Polynomial Chaos Expansions of the response.
+ The necessary condition of the method is: the inputs must be uniformly and independently sampled. Since the inputs are uniformly distributed, the truncated Polynomial Chaos Expansion is built from the multivariate Legendre orthogonal polynomials.
+License: GPL (>= 2)
+URL: https://cran.r-project.org/package=polychaosbasics,
+        http://genome.jouy.inra.fr/logiciels/polychaosbasics
+Collate: generic.R UtilPolychaos.R analyticsPolyLeg.R PCEdesign-class.R
+        PCEfit-class.R PCEpoly-class.R PCESI.R polyLeg.R
+NeedsCompilation: no
+Packaged: 2017-03-01 08:23:00 UTC; abouvier
+Repository: CRAN
+Date/Publication: 2017-03-01 12:29:25

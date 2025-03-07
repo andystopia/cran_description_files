@@ -1,0 +1,42 @@
+Package: bundle
+Title: Serialize Model Objects with a Consistent Interface
+Version: 0.1.1
+Authors@R: c(
+    person("Julia", "Silge", , "julia.silge@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3671-836X")),
+    person("Simon", "Couch", , "simonpatrickcouch@gmail.com", role = "aut"),
+    person("Qiushi", "Yan", , "qiushi.yann@gmail.com", role = "aut"),
+    person("Max", "Kuhn", , "max@posit.co", role = "aut"),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Typically, models in 'R' exist in memory and can be saved via
+    regular 'R' serialization. However, some models store information in
+    locations that cannot be saved using 'R' serialization alone. The goal
+    of 'bundle' is to provide a common interface to capture this
+    information, situate it within a portable object, and restore it for
+    use in new settings.
+License: MIT + file LICENSE
+URL: https://github.com/rstudio/bundle,
+        https://rstudio.github.io/bundle/
+BugReports: https://github.com/rstudio/bundle/issues
+Depends: R (>= 3.6)
+Imports: glue, purrr, rlang, utils, withr
+Suggests: bonsai, butcher, callr, caret, covr, embed, h2o, keras,
+        kernlab, knitr, luz, MASS, modeldata, parsnip, recipes, renv,
+        rmarkdown, stacks, tensorflow, testthat (>= 3.0.0), torch,
+        torchvision, uwot, vetiver, workflows, xgboost
+VignetteBuilder: knitr
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2023-09-08 20:33:05 UTC; juliasilge
+Author: Julia Silge [aut, cre] (<https://orcid.org/0000-0002-3671-836X>),
+  Simon Couch [aut],
+  Qiushi Yan [aut],
+  Max Kuhn [aut],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Julia Silge <julia.silge@posit.co>
+Repository: CRAN
+Date/Publication: 2023-09-09 08:20:11 UTC

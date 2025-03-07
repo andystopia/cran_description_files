@@ -1,0 +1,48 @@
+Package: DiscreteFDR
+Type: Package
+Title: FDR Based Multiple Testing Procedures with Adaptation for
+        Discrete Tests
+Version: 2.0.1
+Date: 2024-10-24
+Authors@R: c(
+    person("Sebastian", "Döhler", role = c("aut", "ctb"),
+           email = "sebastian.doehler@h-da.de",
+           comment = c(ORCID = "0000-0002-0321-6355")),
+    person("Florian", "Junge", role = c("aut", "ctb", "cre"), 
+           email = "diso.fbmn@h-da.de",
+           comment = c(ORCID = "0009-0001-6856-6938")),
+    person("Guillermo", "Durand", role = c("aut", "ctb")),
+    person("Etienne", "Roquain", role = "ctb"),
+    person("Christina", "Kihn", role = "ctb")
+  )
+Description: Implementations of the multiple testing procedures for discrete
+    tests described in the paper Döhler, Durand and Roquain (2018) "New FDR
+    bounds for discrete and heterogeneous tests" <doi:10.1214/18-EJS1441>. The
+    main procedures of the paper (HSU and HSD), their adaptive counterparts
+    (AHSU and AHSD), and the HBR variant are available and are coded to take as
+    input the results of a test procedure from package 'DiscreteTests', or a set
+    of observed p-values and their discrete support under their nulls. A
+    shortcut function to obtain such p-values and supports is also provided,
+    along with a wrapper allowing to apply discrete procedures directly to data.
+License: GPL-3
+Language: en-US
+Encoding: UTF-8
+Depends: R (>= 3.00)
+Imports: Rcpp (>= 1.0.12), DiscreteTests, lifecycle, checkmate,
+        DiscreteDatasets
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: rmarkdown, knitr, R.rsp, kableExtra
+VignetteBuilder: knitr, R.rsp
+URL: https://github.com/DISOhda/DiscreteFDR
+BugReports: https://github.com/DISOhda/DiscreteFDR/issues
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-10-24 10:11:10 UTC; fjunge
+Author: Sebastian Döhler [aut, ctb] (<https://orcid.org/0000-0002-0321-6355>),
+  Florian Junge [aut, ctb, cre] (<https://orcid.org/0009-0001-6856-6938>),
+  Guillermo Durand [aut, ctb],
+  Etienne Roquain [ctb],
+  Christina Kihn [ctb]
+Maintainer: Florian Junge <diso.fbmn@h-da.de>
+Repository: CRAN
+Date/Publication: 2024-10-24 12:30:04 UTC

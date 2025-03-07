@@ -1,0 +1,26 @@
+Type: Package
+Package: CoxAIPW
+Title: Doubly Robust Inference for Cox Marginal Structural Model with
+        Informative Censoring
+Version: 0.0.2
+Authors@R: c(
+    person("Jiyu", "Luo", email = "charlesluo1002@gmail.com", role = c("cre","aut")),
+    person("Dennis", "Rava", email = "drava@ucsd.edu", role = "aut"),
+	person("Ronghui", "Xu", email = "rxu@health.ucsd.edu", role = "aut"))
+Description: Doubly robust estimation and inference of log hazard ratio under the Cox marginal structural model with informative censoring. An augmented inverse probability weighted estimator that involves 3 working models, one for conditional failure time T, one for conditional censoring time C and one for propensity score. Both models for T and C can depend on both a binary treatment A and additional baseline covariates Z, while the propensity score model only depends on Z. With the help of cross-fitting techniques, achieves the rate-doubly robust property that allows the use of most machine learning or non-parametric methods for all 3 working models, which are not permitted in classic inverse probability weighting or doubly robust estimators. Reference: Luo & Xu (2022) <doi:10.48550/arXiv.2206.02296>; Rava (2021) <https://escholarship.org/uc/item/8h1846gs>.
+License: GPL-3
+URL: https://github.com/charlesluo1002/CoxAIPW
+BugReports: https://github.com/charlesluo1002/CoxAIPW/issues
+Imports: survival, randomForestSRC, polspline, tidyr, ranger, pracma,
+        gbm
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-30 17:17:59 UTC; xinyi0401
+Author: Jiyu Luo [cre, aut],
+  Dennis Rava [aut],
+  Ronghui Xu [aut]
+Maintainer: Jiyu Luo <charlesluo1002@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-31 08:00:31 UTC

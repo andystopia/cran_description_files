@@ -1,0 +1,42 @@
+Package: foster
+Type: Package
+Title: Forest Structure Extrapolation with R
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Martin",
+             family = "Queinnec",
+             role = c("cre", "aut"),
+             email = "queinnec@mail.ubc.ca"),
+      person(given = "Piotr",
+             family = "Tompalski",
+             role = "aut"),
+      person(given = "Douglas",
+             family = "Bolton",
+             role = "aut"),
+      person(given = "Nicholas",
+             family = "Coops",
+             role = "aut"))
+Description: Set of tools to streamline the modeling of the relationship between 
+    satellite imagery time series or any other environmental information, 
+    such as terrain elevation, with forest structural attributes derived from 
+    3D point cloud data and their subsequent imputation over the broader 
+    landscape. 
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: raster, reshape2, dplyr, stats, RStoolbox, yaImpute, sp,
+        tools, spatstat, randomForest, rgdal, caret, trend, data.table
+Suggests: ggplot2, knitr, rmarkdown
+VignetteBuilder: knitr
+License: GPL-3
+Depends: R (>= 3.5.0)
+BugReports: https://github.com/mqueinnec/foster/issues
+NeedsCompilation: no
+Packaged: 2020-10-28 21:56:34 UTC; queinnec.stu
+Author: Martin Queinnec [cre, aut],
+  Piotr Tompalski [aut],
+  Douglas Bolton [aut],
+  Nicholas Coops [aut]
+Maintainer: Martin Queinnec <queinnec@mail.ubc.ca>
+Repository: CRAN
+Date/Publication: 2020-11-05 07:50:02 UTC

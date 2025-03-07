@@ -1,0 +1,25 @@
+Package: moderate.mediation
+Version: 0.0.4
+Date: 2023-04-26
+Title: Causal Moderated Mediation Analysis
+Authors@R: 
+  c(person(given = "Xu",
+           family = "Qin",
+           role = c("aut", "cre","cph"),
+           email = "xuqin@pitt.edu"),
+    person(given = "Lijuan",
+           family = "Wang",
+           role = "ctb"))
+Maintainer: Xu Qin <xuqin@pitt.edu>
+Depends: R (>= 3.5.0)
+Imports: stats, mvtnorm, cowplot, distr, graphics, ggplot2, reshape2,
+        doSNOW, scales, foreach, earth
+Description: Causal moderated mediation analysis using the methods proposed by Qin and Wang (2022). Causal moderated mediation analysis is crucial for investigating how, for whom, and where a treatment is effective by assessing the heterogeneity of mediation mechanism across individuals and contexts. This package enables researchers to estimate and test the conditional and moderated mediation effects, assess their sensitivity to unmeasured pre-treatment confounding, and visualize the results. The package is built based on the quasi-Bayesian Monte Carlo method, because it has relatively better performance at small sample sizes, and its running speed is the fastest. The package is applicable to a treatment of any scale, a binary or continuous mediator, a binary or continuous outcome, and one or more moderators of any scale. 
+License: GPL-2
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-04-27 04:00:07 UTC; XUQIN
+Author: Xu Qin [aut, cre, cph],
+  Lijuan Wang [ctb]
+Repository: CRAN
+Date/Publication: 2023-04-27 13:10:02 UTC

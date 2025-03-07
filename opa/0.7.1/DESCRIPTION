@@ -1,0 +1,28 @@
+Package: opa
+Type: Package
+Title: An Implementation of Ordinal Pattern Analysis
+Version: 0.7.1
+Authors@R: person("Timothy", "Beechey", email = "tim.beechey@proton.me",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8858-946X"))
+Description: Quantifies hypothesis to data fit for repeated measures 
+    and longitudinal data, as described by Thorngate (1987) 
+    <doi:10.1016/S0166-4115(08)60083-7> and Grice et al., (2015) 
+    <doi:10.1177/2158244015604192>. Hypothesis and data are encoded as
+    pairwise relative orderings which are then compared to determine the
+    percentage of orderings in the data that are matched by the hypothesis.
+License: GPL (>= 3)
+URL: https://github.com/timbeechey/opa
+BugReports: https://github.com/timbeechey/opa/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: cpp11, Rcpp
+Imports: Rcpp
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2023-02-03 23:07:13 UTC; tim
+Author: Timothy Beechey [aut, cre] (<https://orcid.org/0000-0001-8858-946X>)
+Maintainer: Timothy Beechey <tim.beechey@proton.me>
+Repository: CRAN
+Date/Publication: 2023-02-03 23:22:29 UTC

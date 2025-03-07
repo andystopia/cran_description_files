@@ -1,0 +1,40 @@
+Package: ILS
+Type: Package
+Title: Interlaboratory Study
+Version: 0.2
+Date: 2018-03-06
+Authors@R: c(
+      person("Miguel","Flores",role=c("aut","cre"), email="ma.flores@outlook.com"),
+			person("Ruben","Fernandez",role=c("aut")),
+			person("Salvador","Naya",role=c("aut")),
+			person("Javier","Tarrio-Saavedra",role=c("aut")),
+			person("Roberto","Bossano",role=c("aut"))
+      )
+Depends: R (>= 3.1.0), lattice, multcomp, depthTools, fda.usc, MASS,
+        stats
+Description: It performs interlaboratory studies (ILS) to detect those
+    laboratories that provide non-consistent results when comparing to others. It
+    permits to work simultaneously with various testing materials, from standard
+    univariate, and functional data analysis (FDA) perspectives. The univariate
+    approach based on ASTM E691-08 consist of estimating the Mandel's h and
+    k statistics to identify those laboratories that provide more significant
+    different results, testing also the presence of outliers by Cochran and Grubbs
+    tests, Analysis of variance (ANOVA) techniques are provided (F and Tuckey
+    tests) to test differences in means corresponding to different laboratories per
+    each material. Taking into account the functional nature of data retrieved in
+    analytical chemistry, applied physics and engineering (spectra, thermograms,
+    etc.). ILS package provides a FDA approach for finding the Mandel's k and h
+    statistics distribution by smoothing bootstrap resampling.
+License: GPL (>= 2)
+LazyData: yes
+Author: Miguel Flores [aut, cre],
+  Ruben Fernandez [aut],
+  Salvador Naya [aut],
+  Javier Tarrio-Saavedra [aut],
+  Roberto Bossano [aut]
+Maintainer: Miguel Flores <ma.flores@outlook.com>
+Repository: CRAN
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-03-07 03:15:13 UTC; MiguelA
+Date/Publication: 2018-03-06 21:42:25 UTC

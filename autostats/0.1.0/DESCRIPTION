@@ -1,0 +1,30 @@
+Package: autostats
+Type: Package
+Title: Auto Stats
+Version: 0.1.0
+Authors@R: 
+    person(given = "Harrison",
+           family = "Tietze",
+           role = c("aut", "cre"),
+           email = "harrison4192@gmail.com")
+Maintainer: Harrison Tietze <harrison4192@gmail.com>
+Description: Automatically do statistical exploration. Create formulas using 'tidyselect' syntax, and then determine cross-validated model accuracy and variable contributions using 'glm' and 'xgboost'. Contains additional helper functions to create and modify formulas. Has a flagship function to quickly determine relationships between categorical and continuous variables in the data set.
+Encoding: UTF-8
+Imports: dplyr, stringr, tidyselect, purrr, janitor, tibble, rlang,
+        stats, rlist, broom, broom.mixed, magrittr, gtools, Matrix,
+        ggeasy, ggplot2, jtools, ggthemes, patchwork, tidyr, xgboost,
+        flextable, nnet, parsnip, recipes, rsample, tune, workflows,
+        ggstance, Ckmeans.1d.dp, glmnet, framecleaner, presenter,
+        yardstick, BBmisc, dials, readr, lubridate, party
+RoxygenNote: 7.1.1
+URL: https://github.com/Harrison4192/autostats
+BugReports: https://github.com/Harrison4192/autostats/issues
+Suggests: knitr, rmarkdown, markdown, moreparty
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2021-10-27 17:24:32 UTC; Harrison
+Author: Harrison Tietze [aut, cre]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2021-10-28 19:40:09 UTC

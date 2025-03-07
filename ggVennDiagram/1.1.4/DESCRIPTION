@@ -1,0 +1,34 @@
+Package: ggVennDiagram
+Type: Package
+Title: A 'ggplot2' Implement of Venn Diagram
+Version: 1.1.4
+Authors@R: c(
+  person("Chun-Hui","Gao",email="gaospecial@gmail.com",role=c("aut","cre"), comment=c(ORCID = "0000-0002-1445-7939")),
+  person("Guangchuang", "Yu", email = "guangchuangyu@gmail.com", role = c("ctb"), comment = c(ORCID = "0000-0002-6485-8781")),
+  person("Adrian", "Dusa", role = c("ctb"),  email = "dusa.adrian@unibuc.ro")
+  )
+Maintainer: Chun-Hui Gao <gaospecial@gmail.com>
+Description: Easy-to-use functions to generate 2-7 sets Venn plot in publication quality. 
+  'ggVennDiagram' plot Venn using well-defined geometry dataset and 'ggplot2'. The shapes of 2-4 sets 
+  Venn use circles and ellipses, while the shapes of 4-7 sets Venn use irregular polygons (4 has both forms), which 
+  are developed and imported from another package 'venn', authored by Adrian Dusa. We provided internal functions to 
+  integrate shape data with user provided sets data, and calculated the geometry of every regions/intersections 
+  of them, then separately plot Venn in three components: set edges, set labels, and regions.
+  From version 1.0, it is possible to customize these components as you demand in ordinary 'ggplot2' grammar.
+Depends: R (>= 3.5.0)
+Imports: sf, ggplot2, dplyr, stringr, magrittr, methods, purrr, tibble,
+        plotly, RVenn
+URL: https://github.com/gaospecial/ggVennDiagram
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, tidyr, venn,
+        RColorBrewer
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-07-07 10:35:49 UTC; gaoch
+Author: Chun-Hui Gao [aut, cre] (<https://orcid.org/0000-0002-1445-7939>),
+  Guangchuang Yu [ctb] (<https://orcid.org/0000-0002-6485-8781>),
+  Adrian Dusa [ctb]
+Repository: CRAN
+Date/Publication: 2021-07-07 10:50:02 UTC

@@ -1,0 +1,29 @@
+Package: BISdata
+Type: Package
+Title: Download Data from the Bank for International Settlements (BIS)
+Version: 0.1-1
+Date: 2022-03-07
+Maintainer: Enrico Schumann <es@enricoschumann.net>
+Authors@R: person("Enrico", "Schumann",
+                  role  = c("aut", "cre"),
+                  email = "es@enricoschumann.net",
+                  comment = c(ORCID = "0000-0001-7601-6576"))
+Description: Functions for downloading data from the Bank for
+     International Settlements (BIS; <https://www.bis.org/>) in
+     Basel.  Supported are only full datasets in (typically) CSV
+     format.  The package is lightweight and without dependencies;
+     suggested packages are used only if data is to be transformed
+     into particular data structures, for instance into 'zoo'
+     objects. Downloaded data can optionally be cached, to avoid
+     repeated downloads of the same files.
+Suggests: zoo
+License: GPL-3
+URL: http://enricoschumann.net/R/packages/BISdata/,
+        https://github.com/enricoschumann/BISdata
+LazyLoad: yes
+ByteCompile: yes
+NeedsCompilation: no
+Packaged: 2022-03-07 13:55:42 UTC; es19
+Author: Enrico Schumann [aut, cre] (<https://orcid.org/0000-0001-7601-6576>)
+Repository: CRAN
+Date/Publication: 2022-03-09 09:00:05 UTC

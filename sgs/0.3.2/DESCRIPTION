@@ -1,0 +1,22 @@
+Package: sgs
+Title: Sparse-Group SLOPE: Adaptive Bi-Level Selection with FDR Control
+Version: 0.3.2
+Date: 2024-11-28
+Authors@R: person("Fabio", "Feser", role = c("aut", "cre"), email = "ff120@ic.ac.uk",comment = c(ORCID = "0009-0007-3088-9727"))
+Maintainer: Fabio Feser <ff120@ic.ac.uk>
+Description: Implementation of Sparse-group SLOPE (SGS) (Feser and Evangelou (2023) <doi:10.48550/arXiv.2305.09467>) models. Linear and logistic regression models are supported, both of which can be fit using k-fold cross-validation. Dense and sparse input matrices are supported. In addition, a general Adaptive Three Operator Splitting (ATOS) (Pedregosa and Gidel (2018) <doi:10.48550/arXiv.1804.02339>) implementation is provided. Group SLOPE (gSLOPE) (Brzyski et al. (2019) <doi:10.1080/01621459.2017.1411269>) and group-based OSCAR models (Feser and Evangelou (2024) <doi:10.48550/arXiv.2405.15357>) are also implemented. All models are available with strong screening rules (Feser and Evangelou (2024) <doi:10.48550/arXiv.2405.15357>) for computational speed-up.
+Imports: Matrix, MASS, caret, grDevices, graphics, methods, stats,
+        SLOPE, Rlab, Rcpp (>= 1.0.10)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: SGL, gglasso, glmnet, testthat, knitr, grpSLOPE, rmarkdown
+RoxygenNote: 7.3.1
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/ff1201/sgs
+BugReports: https://github.com/ff1201/sgs/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-11-28 12:16:17 UTC; ff120
+Author: Fabio Feser [aut, cre] (<https://orcid.org/0009-0007-3088-9727>)
+Repository: CRAN
+Date/Publication: 2024-11-28 13:50:03 UTC

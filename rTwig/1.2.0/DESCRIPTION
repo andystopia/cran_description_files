@@ -1,0 +1,42 @@
+Package: rTwig
+Title: Realistic Quantitative Structure Models
+Version: 1.2.0
+Authors@R: 
+  c(
+    person(
+      given = "Aidan", 
+      family = "Morales", 
+      email = "moral169@msu.edu", 
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0009-0000-4513-4908")
+    ),
+    person(
+      given = "David W.",    
+      family = "MacFarlane", 
+      email = "macfar24@msu.edu", 
+      role = c("aut", "cph")
+    )
+  )
+Description: Real Twig is a method to correct branch overestimation in quantitative structure models. Overestimated cylinders are correctly tapered using measured twig diameters of corresponding tree species. Supported quantitative structure modeling software includes 'TreeQSM', 'SimpleForest', 'Treegraph', and 'aRchi'. Also included is a novel database of twig diameters and tools for fractal analysis of point clouds.
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+RdMacros: Rdpack
+Imports: R.matlab, rmatio, tidytable, cobs, igraph, rgl, colourvalues,
+        Rdpack, rlang, Rcpp, RcppSimdJson, geometry
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+LazyData: true
+Suggests: knitr, rmarkdown, ggplot2, ggpmisc, ggpubr, gt, yardstick,
+        dplyr, tidyr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-11-08 01:13:23 UTC; moral169
+Maintainer: Aidan Morales <moral169@msu.edu>
+URL: https://aidanmorales.github.io/rTwig/,
+        https://github.com/aidanmorales/rTwig
+BugReports: https://github.com/aidanmorales/rTwig/issues
+LinkingTo: Rcpp, RcppArmadillo
+Author: Aidan Morales [aut, cre, cph] (<https://orcid.org/0009-0000-4513-4908>),
+  David W. MacFarlane [aut, cph]
+Repository: CRAN
+Date/Publication: 2024-11-08 06:00:02 UTC

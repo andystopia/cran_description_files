@@ -1,0 +1,31 @@
+Package: GDPuc
+Title: Easily Convert GDP Data
+Version: 0.5.1
+Authors@R: 
+    c(person(given = "Johannes",
+             family = "Koch",
+             role = c("aut", "cre"),
+             email = "jokoch@pik-potsdam.de"))
+Description: A function to convert GDP time series from one unit to another.
+    All common GDP units are included, i.e. current and constant local currency
+    units, US$ via market exchange rates and international dollars via
+    purchasing power parities. Conversion factors can easily be customized. 
+    Conversion at a regional/aggregated level is also possible.
+License: GPL (>= 3)
+URL: https://github.com/johanneskoch94/GDPuc#readme,
+        https://johanneskoch94.github.io/GDPuc/
+BugReports: https://github.com/johanneskoch94/GDPuc/issues
+RoxygenNote: 7.1.2
+Depends: R (>= 2.10)
+Imports: dplyr, stringr, tidyselect, glue, cli (>= 2.4.0), crayon,
+        magrittr, rlang, tibble, lifecycle
+Suggests: tidyr, readxl, testthat (>= 3.0.0), covr, magclass, WDI
+Config/testthat/edition: 3
+Encoding: UTF-8
+Date: 2021-10-25
+NeedsCompilation: no
+Packaged: 2021-10-25 09:47:26 UTC; johannes
+Author: Johannes Koch [aut, cre]
+Maintainer: Johannes Koch <jokoch@pik-potsdam.de>
+Repository: CRAN
+Date/Publication: 2021-10-26 08:10:06 UTC

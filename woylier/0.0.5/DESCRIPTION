@@ -1,0 +1,27 @@
+Package: woylier
+Title: Alternative Tour Frame Interpolation Method
+Version: 0.0.5
+Authors@R: 
+    c(person("Zola", "Batsaikan", email = "zoljargal11@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-0055-1448")),
+      person("Dianne", "Cook", email = "dicook@monash.edu", role = c("aut"),
+           comment = c(ORCID = "0000-0002-3813-7155")),
+      person("Ursula", "Laa", email = "ursula.laa@boku.ac.at", role = c("aut"),
+           comment = c(ORCID = "0000-0002-0249-6439")))
+Description: This method generates a tour path by interpolating between d-D frames in p-D using Givens rotations. The algorithm arises from the problem of zeroing elements of a matrix. This interpolation method is useful for showing specific d-D frames in the tour, as opposed to d-D planes, as done by the geodesic interpolation. It is useful for projection pursuit indexes which are not s invariant. See Buja et al (2005) <doi:10.1016/S0169-7161(04)24014-7>. 
+Depends: R (>= 4.1)
+Imports: tourr, geozoo, dplyr, tibble
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: knitr, rmarkdown, purrr, ggplot2, ash, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-17 11:59:46 UTC; zoljargal
+Author: Zola Batsaikan [aut, cre] (<https://orcid.org/0009-0005-0055-1448>),
+  Dianne Cook [aut] (<https://orcid.org/0000-0002-3813-7155>),
+  Ursula Laa [aut] (<https://orcid.org/0000-0002-0249-6439>)
+Maintainer: Zola Batsaikan <zoljargal11@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-18 15:30:02 UTC

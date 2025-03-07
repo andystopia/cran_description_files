@@ -1,0 +1,30 @@
+Package: rsae
+Type: Package
+Title: Robust Small Area Estimation
+Version: 0.2
+Authors@R: c(
+    person("Tobias", "Schoch", role = c("aut", "cre"),
+        email = "tobias.schoch@fhnw.ch",
+        comment = c(ORCID = "0000-0002-1640-3395")),
+    person("Brent", "Richard", role = c("cph"), comment = "F77 code zeroin.f"))
+Description: Empirical best linear unbiased prediction (EBLUP) and
+    robust prediction of the area-level means under the basic unit-level
+    model. The model can be fitted by maximum likelihood or a (robust)
+    M-estimator. Mean square prediction error is computed by a parametric
+    bootstrap.
+License: GPL (>= 2) | FreeBSD
+NeedsCompilation: yes
+URL: https://github.com/tobiasschoch/rsae
+BugReports: https://github.com/tobiasschoch/rsae/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: stats, graphics
+Suggests: knitr, rmarkdown, robustbase, nlme
+VignetteBuilder: knitr, rmarkdown
+Packaged: 2022-05-24 07:57:59 UTC; tobias.schoch
+Author: Tobias Schoch [aut, cre] (<https://orcid.org/0000-0002-1640-3395>),
+  Brent Richard [cph] (F77 code zeroin.f)
+Maintainer: Tobias Schoch <tobias.schoch@fhnw.ch>
+Repository: CRAN
+Date/Publication: 2022-05-24 10:00:05 UTC

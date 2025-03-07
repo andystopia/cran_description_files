@@ -1,0 +1,34 @@
+Package: distillML
+Type: Package
+Title: Model Distillation and Interpretability Methods for Machine
+        Learning Models
+Version: 0.1.0.9
+Authors@R: c(
+    person("Brian", "Cho", role = "aut"),
+    person("Theo", "Saarinen", role = c("aut","cre"), email = "theo_s@berkeley.edu"),
+    person("Jasjeet", "Sekhon", role = "aut"),
+    person("Simon", "Walter", role = "aut")
+    )
+Maintainer: Theo Saarinen <theo_s@berkeley.edu>
+BugReports: https://github.com/forestry-labs/distillML/issues
+URL: https://github.com/forestry-labs/distillML
+Description: Provides several methods for model distillation and interpretability 
+    for general black box machine learning models and treatment effect estimation
+    methods. For details on the algorithms implemented, see <https://forestry-labs.github.io/distillML/index.html>
+    Brian Cho, Theo F. Saarinen, Jasjeet S. Sekhon, Simon Walter.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: ggplot2, glmnet, Rforestry, MASS, dplyr, R6 (>= 2.0),
+        checkmate, purrr, tidyr, data.table, mltools, gridExtra
+Suggests: testthat, knitr, rmarkdown, mvtnorm
+Collate: 'predictor.R' 'interpret.R' 'distiller.R' 'plotter.R'
+        'surrogate.R'
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-07-06 00:08:44 UTC; theosaa
+Author: Brian Cho [aut],
+  Theo Saarinen [aut, cre],
+  Jasjeet Sekhon [aut],
+  Simon Walter [aut]
+Repository: CRAN
+Date/Publication: 2022-07-07 08:50:06 UTC

@@ -1,0 +1,24 @@
+Package: GPUmatrix
+Type: Package
+Title: Basic Linear Algebra with GPU
+Version: 0.1.0
+Authors@R: c(person("Cesar", "Lobato-Fernandez", email = "clobatofern@unav.es",role = c("aut", "cre")),
+              person("Juan", "A.Ferrer-Bonsoms", role = "aut"),
+              person("Angel", "Rubio", email = "arubio@tecnun.es",role = c("aut","ctb")))
+Description: Motivation: GPU power is a great resource for computational biology specifically in statistics and linear algebra. Unfortunately, very few packages connect R with the GPU and none of them are transparent enough to perform the computations on the GPU without substantial changes to the code. Most of them lack proper maintenance: several of the previous attempts were removed from the corresponding repositories. It would be desirable to have an R package, properly maintained, that exploits the use of the GPU with minimal changes in the existing code. Results: We have developed the 'GPUMatrix' package. 'GPUMatrix' mimics the behavior of the Matrix package and extends R to use the GPU for computations. It is easy to learn and very few changes in the code are required to work on the GPU. 'GPUMatrix' relies on either 'Tensorflow' or 'Torch' R packages to perform the GPU operations. Its vignette shows some toy examples on non-negative factorization and other factorization used in 'bioinformatics'.
+Depends: R (>= 4.1)
+Imports: stats, methods
+Suggests: torch, tensorflow, Matrix, matrixStats, float, MASS, knitr,
+        rmarkdown
+VignetteBuilder: knitr
+License: Artistic-2.0
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-04-20 07:24:53 UTC; clobatofern
+Author: Cesar Lobato-Fernandez [aut, cre],
+  Juan A.Ferrer-Bonsoms [aut],
+  Angel Rubio [aut, ctb]
+Maintainer: Cesar Lobato-Fernandez <clobatofern@unav.es>
+Repository: CRAN
+Date/Publication: 2023-04-20 16:52:38 UTC

@@ -1,0 +1,29 @@
+Package: scatteR
+Type: Package
+Title: Generate Instance Space Based on Scagnostics
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Janith C.",
+           family = "Wanniarachchi",
+           role = c("aut", "cre"),
+           email = "janithcwanni@gmail.com"),
+    person(given = "Thiyanga S.",
+           family = "Talagala",
+           role = c("aut"),
+           email = "ttalagala@sjp.ac.lk",
+           comment = c(ORCID = "0000-0002-5058-7503")))
+Maintainer: Janith C. Wanniarachchi <janithcwanni@gmail.com>
+Description: Generate bivariate data based on scatterplot features defined through scagnostics. Scagnostics is an exploratory graphical tool that defines nine features of a scatterplot based on the characteristics of three geometric graphs defined on the scatterplot. The exact calculation of these measurements are based on Wilkinson, L., Anand, A., & Grossman, R. (2005) <doi:10.1109/INFVIS.2005.1532142>. 
+    Set the required values for the scagnostic measurement type and the number of points that are needed to generate a bivariate dataset that gives the expected scagnostic measurements.
+SystemRequirements: Java 8 or higher
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: scagnostics, GenSA, stats, rJava
+Suggests: testthat
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-08-15 17:50:25 UTC; janith
+Author: Janith C. Wanniarachchi [aut, cre],
+  Thiyanga S. Talagala [aut] (<https://orcid.org/0000-0002-5058-7503>)
+Repository: CRAN
+Date/Publication: 2022-08-17 06:40:01 UTC

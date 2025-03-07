@@ -1,0 +1,34 @@
+Package: bayefdr
+Type: Package
+Title: Bayesian Estimation and Optimisation of Expected False Discovery
+        Rate
+Version: 0.1.0
+Date: 2020-07-24
+Authors@R: c(
+        person("Alan", "O'Callaghan",
+            email = "alan.ocallaghan@outlook.com",
+            role = c("aut", "cre")
+        ),
+        person("Catalina", "Vallejos", role = "aut")
+    )
+Description: 
+    Implements the Bayesian FDR control described by 
+    Newton et al. (2004), <doi:10.1093/biostatistics/5.2.155>.
+    Allows optimisation and visualisation of expected error rates based on
+    tail posterior probability tests.
+    Based on code written by Catalina Vallejos for BASiCS, see
+    Beyond comparisons of means: understanding changes in gene expression at the
+    single-cell level Vallejos et al. (2016) <doi:10.1186/s13059-016-0930-3>.
+Imports: ggplot2, reshape2, assertthat, utils, stats
+License: GPL-3
+BugReports: https://github.com/VallejosGroup/bayefdr/issues
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2020-07-24 11:29:18 UTC; alan
+Author: Alan O'Callaghan [aut, cre],
+  Catalina Vallejos [aut]
+Maintainer: Alan O'Callaghan <alan.ocallaghan@outlook.com>
+Repository: CRAN
+Date/Publication: 2020-07-30 10:00:02 UTC

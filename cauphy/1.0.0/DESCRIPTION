@@ -1,0 +1,30 @@
+Package: cauphy
+Version: 1.0.0
+Title: Trait Evolution on Phylogenies Using the Cauchy Process
+Description: The Cauchy Process can model pulsed continuous trait evolution
+    on phylogenies. The likelihood is tractable, and is used for parameter
+    inference and ancestral trait reconstruction.
+    See Bastide and Didier (2023) <doi:10.1093/sysbio/syad053>.
+Authors@R: c(
+    person("Gilles", "Didier", email = "gilles.didier@free.fr", role = c("aut", "cph")),
+    person("Paul", "Bastide", email = "paul.bastide@cnrs.fr", role = c("aut", "cre")))
+Depends: R (>= 3.5), ape (>= 5.5)
+Imports: methods, robustbase, phylolm, nloptr, pracma, foreach,
+        doParallel, HDInterval
+Suggests: covr, knitr, rmarkdown, spelling, geiger, testthat (>= 3.0.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+LazyData: true
+VignetteBuilder: knitr
+URL: https://gilles-didier.github.io/cauphy/
+BugReports: https://github.com/gilles-didier/cauphy/issues
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2023-09-11 16:41:31 UTC; bastidep
+Author: Gilles Didier [aut, cph],
+  Paul Bastide [aut, cre]
+Maintainer: Paul Bastide <paul.bastide@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2023-09-12 06:50:02 UTC

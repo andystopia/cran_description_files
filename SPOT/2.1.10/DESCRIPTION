@@ -1,0 +1,42 @@
+Package: SPOT
+License: GPL (>= 2)
+Title: Sequential Parameter Optimization Toolbox
+Type: Package
+LazyLoad: yes
+LazyData: true
+Encoding: UTF-8
+Authors@R: c(	
+        person("Thomas", "Bartz-Beielstein", role = c("aut", "cre"), email = "tbb@bartzundbartz.de", comment = c(ORCID = "0000-0002-5938-5158")),
+				person("Joerg", "Stork", role = "aut", comment = c(ORCHID="0000-0002-7471-3498")),
+				person("Martin", "Zaefferer", role = "aut", comment = c(ORCID = "0000-0003-2372-2092")),
+	      person("Margarita", "Rebolledo", role = "ctb"),
+	      person("Christian", "Lasarczyk", role = "ctb"),
+				person("Frederik","Rehbach", role = "aut" , comment = c(ORCID = "0000-0003-0922-8629"))
+				)
+Description: A set of tools for model-based optimization and tuning of
+    algorithms. It includes surrogate models, optimizers, and design of experiment
+    approaches. The main interface is spot, which uses sequentially updated
+    surrogate models for the purpose of efficient optimization. The main goal is
+    to ease the burden of objective function evaluations, when a single evaluation
+    requires a significant amount of resources.
+Version: 2.1.10
+Date: 2020-12-10
+Depends: R (>= 3.5.0)
+Imports: randomForest, ranger, stats, utils, graphics, grDevices, MASS,
+        DEoptim, rgenoud, plotly, rsm, nloptr, ggplot2, glmnet, SimInf,
+        rpart, rpart.plot, smoof
+RoxygenNote: 7.1.1
+Suggests: car, testthat, batchtools, knitr, rmarkdown, readr, party
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-12-10 18:13:08 UTC; bartz
+Author: Thomas Bartz-Beielstein [aut, cre]
+    (<https://orcid.org/0000-0002-5938-5158>),
+  Joerg Stork [aut] (0000-0002-7471-3498),
+  Martin Zaefferer [aut] (<https://orcid.org/0000-0003-2372-2092>),
+  Margarita Rebolledo [ctb],
+  Christian Lasarczyk [ctb],
+  Frederik Rehbach [aut] (<https://orcid.org/0000-0003-0922-8629>)
+Maintainer: Thomas Bartz-Beielstein <tbb@bartzundbartz.de>
+Repository: CRAN
+Date/Publication: 2020-12-10 19:20:02 UTC

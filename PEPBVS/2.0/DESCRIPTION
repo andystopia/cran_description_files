@@ -1,0 +1,38 @@
+Package: PEPBVS
+Type: Package
+Title: Bayesian Variable Selection using Power-Expected-Posterior Prior
+Version: 2.0
+Date: 2024-10-30
+Authors@R: c(person("Konstantina", "Charmpi", email="xarmpi.kon@gmail.com",
+	   		       role=c("aut","cre")),
+           person("Dimitris", "Fouskakis", email="fouskakis@math.ntua.gr", role="aut"),
+	     person("Ioannis", "Ntzoufras", email="ntzoufras@aueb.gr", role="aut"))
+Maintainer: Konstantina Charmpi <xarmpi.kon@gmail.com>
+Description: Performs Bayesian variable selection under normal linear
+          models for the data with the model parameters following as prior distributions either 
+          the power-expected-posterior (PEP) or the intrinsic (a special case of the former)
+          (Fouskakis and Ntzoufras (2022) <doi: 10.1214/21-BA1288>,
+          Fouskakis and Ntzoufras (2020) <doi: 10.3390/econometrics8020017>).          
+          The prior distribution on model space is the uniform over all models
+          or the uniform on model dimension (a special case of the beta-binomial prior). 
+          The selection is performed by either implementing a full enumeration 
+          and evaluation of all possible models or using the Markov Chain 
+          Monte Carlo Model Composition (MC3) algorithm (Madigan and York (1995) <doi: 10.2307/1403615>). 
+          Complementary functions for hypothesis testing, estimation and 
+          predictions under Bayesian model averaging, as well as, plotting and 
+          printing the results are also provided. The results can be compared to the
+          ones obtained under other well-known priors on model parameters and model spaces.
+License: GPL (>= 2)
+Imports: BAS, BayesVarSel, Matrix, mcmcse, mvtnorm, Rcpp (>= 1.0.9)
+LinkingTo: Rcpp, RcppArmadillo, RcppGSL
+SystemRequirements: GNU GSL
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2024-10-30 10:29:24 UTC; xarmp
+Author: Konstantina Charmpi [aut, cre],
+  Dimitris Fouskakis [aut],
+  Ioannis Ntzoufras [aut]
+Repository: CRAN
+Date/Publication: 2024-10-30 10:50:04 UTC

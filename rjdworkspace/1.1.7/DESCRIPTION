@@ -1,0 +1,41 @@
+Package: rjdworkspace
+Type: Package
+Title: Manipulate 'JDemetra+' Workspaces
+Version: 1.1.7
+Authors@R: c(
+    person(given = "Tanguy", 
+           family = "Barthelemy", role = c("aut", "cre", "art"),
+           email ="tanguy.barthelemy@insee.fr"),
+    person(given = "Alain",
+           family = "Quartier-la-Tente",
+           role = c("aut"),
+           email = "alain.quartier-la-tente@insee.fr",
+           comment = c(ORCID = "0000-0001-7890-3857")),
+    person(given = "Institut national de la statistique et des études économiques",
+           role = "cph",
+           comment = "https://www.insee.fr/"),
+    person(given = "Anna", 
+           family = "Smyk", role = c("aut"),
+           email ="anna.smyk@insee.fr"))
+Description: Set of tools to manipulate the 'JDemetra+' workspaces.
+    Based on the 'RJDemetra' package (which interfaces with version 2 of the 'JDemetra+' (<https://github.com/jdemetra/jdemetra-app>), the seasonal adjustment software officially
+    recommended to the members of the European Statistical System (ESS) and the European System of Central Banks).
+    This package provides access to additional workspace manipulation functions such as metadata manipulation, raw paths and wrangling of several workspaces simultaneously. 
+    These additional functionalities are useful as part of a CVS data production chain.
+Depends: R (>= 3.1.1)
+Imports: rJava (>= 0.9-8), RJDemetra, XML
+License: EUPL
+URL: https://github.com/InseeFrLab/rjdworkspace
+BugReports: https://github.com/InseeFrLab/rjdworkspace/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-20 14:29:48 UTC; UTZK0M
+Author: Tanguy Barthelemy [aut, cre, art],
+  Alain Quartier-la-Tente [aut] (<https://orcid.org/0000-0001-7890-3857>),
+  Institut national de la statistique et des études économiques [cph]
+    (https://www.insee.fr/),
+  Anna Smyk [aut]
+Maintainer: Tanguy Barthelemy <tanguy.barthelemy@insee.fr>
+Repository: CRAN
+Date/Publication: 2024-05-21 15:10:02 UTC

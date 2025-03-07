@@ -1,0 +1,69 @@
+Package: metasnf
+Title: Meta Clustering with Similarity Network Fusion
+Version: 1.1.1
+Authors@R: 
+    c(
+        person(
+            "Prashanth S",
+            "Velayudhan",
+            email = "psvelayu@gmail.com",
+            role = c("aut", "cre")
+        ),
+        person("Xiaoqiao", "Xu", role = c("aut")),
+        person("Prajkta", "Kallurkar", role = c("aut")),
+        person("Ana Patricia", "Balbon", role = c("aut")),
+        person("Maria T", "Secara", role = c("aut")),
+        person("Adam", "Taback", role = c("aut")),
+        person("Denise", "Sabac", role = c("aut")),
+        person("Nicholas", "Chan", role = c("aut")),
+        person("Shihao", "Ma", role = c("aut")),
+        person("Bo", "Wang", role = c("aut")),
+        person("Daniel", "Felsky", role = c("aut")),
+        person("Stephanie H", "Ameis", role = c("aut")),
+        person("Brian", "Cox", role = c("aut")),
+        person("Colin", "Hawco", role = c("aut")),
+        person(given = "Lauren", family = "Erdman", role = c("aut")),
+        person(
+            given = "Anne L",
+            family = "Wheeler",
+            email = "anne.wheeler@sickkids.ca",
+            role = c("aut", "ths")
+        )
+    )
+Description: Framework to facilitate patient subtyping with similarity network fusion and meta clustering. The similarity network fusion (SNF) algorithm was introduced by Wang et al. (2014) in <doi:10.1038/nmeth.2810>. SNF is a data integration approach that can transform high-dimensional and diverse data types into a single similarity network suitable for clustering with minimal loss of information from each initial data source. The meta clustering approach was introduced by Caruana et al. (2006) in <doi:10.1109/ICDM.2006.103>. Meta clustering involves generating a wide range of cluster solutions by adjusting clustering hyperparameters, then clustering the solutions themselves into a manageable number of qualitatively similar solutions, and finally characterizing representative solutions to find ones that are best for the user's specific context. This package provides a framework to easily transform multi-modal data into a wide range of similarity network fusion-derived cluster solutions as well as to visualize, characterize, and validate those solutions. Core package functionality includes easy customization of distance metrics, clustering algorithms, and SNF hyperparameters to generate diverse clustering solutions; calculation and plotting of associations between features, between patients, and between cluster solutions; and standard cluster validation approaches including resampled measures of cluster stability, standard metrics of cluster quality, and label propagation to evaluate generalizability in unseen data. Associated vignettes guide the user through using the package to identify patient subtypes while adhering to best practices for unsupervised learning.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cluster, digest, dplyr, ggplot2, grDevices, MASS, mclust,
+        methods, progressr, purrr, rlang, SNFtool, stats, tidyr, utils
+Suggests: circlize, ComplexHeatmap, InteractiveComplexHeatmap, clv,
+        future, future.apply, knitr, rmarkdown, testthat (>= 3.0.0),
+        ggalluvial, dbscan
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+VignetteBuilder: knitr
+URL: https://branchlab.github.io/metasnf/,
+        https://github.com/BRANCHlab/metasnf/
+BugReports: https://github.com/BRANCHlab/metasnf/issues
+NeedsCompilation: no
+Packaged: 2024-11-06 18:40:32 UTC; prashanth
+Author: Prashanth S Velayudhan [aut, cre],
+  Xiaoqiao Xu [aut],
+  Prajkta Kallurkar [aut],
+  Ana Patricia Balbon [aut],
+  Maria T Secara [aut],
+  Adam Taback [aut],
+  Denise Sabac [aut],
+  Nicholas Chan [aut],
+  Shihao Ma [aut],
+  Bo Wang [aut],
+  Daniel Felsky [aut],
+  Stephanie H Ameis [aut],
+  Brian Cox [aut],
+  Colin Hawco [aut],
+  Lauren Erdman [aut],
+  Anne L Wheeler [aut, ths]
+Maintainer: Prashanth S Velayudhan <psvelayu@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-08 15:00:08 UTC

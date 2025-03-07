@@ -1,0 +1,23 @@
+Package: SEI
+Title: Calculating Standardised Indices
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Sam", family = "Allen", email = "sam.allen@unibe.ch", role = c('aut','cre')),
+  person(given = "Noelia", family = "Otero", email = "noeli1680@gmail.com", role=c('aut')))
+Description: Convert a time series of observations to a time series of standardised indices that can be used to monitor variables on a common and probabilistically interpretable scale. The indices can be aggregated and rescaled to different time scales, visualised using plot capabilities, and calculated using a range of distributions. This includes flexible non- and semi-parametric methods, as suggested by Allen and Otero (2023) <doi:10.1016/j.renene.2023.119206>.
+URL: https://github.com/noeliaof/SEI
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: ggplot2, xts, zoo, fitdistrplus
+Suggests: knitr, lubridate, dplyr, gridExtra, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-14 08:19:59 UTC; sa20i493
+Author: Sam Allen [aut, cre],
+  Noelia Otero [aut]
+Maintainer: Sam Allen <sam.allen@unibe.ch>
+Repository: CRAN
+Date/Publication: 2023-11-14 17:50:05 UTC

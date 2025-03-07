@@ -1,0 +1,52 @@
+Package: REDCapCAST
+Title: REDCap Metadata Casting and Castellated Data Handling
+Version: 24.11.2
+Authors@R: c(
+    person("Andreas Gammelgaard", "Damsbo", email = "agdamsbo@clin.au.dk", 
+    role = c("aut", "cre"),comment = c(ORCID = "0000-0002-7559-1154")), 
+    person("Paul", "Egeler", email = "paulegeler@gmail.com", role = c("aut"), 
+    comment = c(ORCID = "0000-0001-6948-9498")))
+Description: Casting metadata for REDCap database creation and handling of 
+    castellated data using repeated instruments and longitudinal projects in 
+    'REDCap'. Keeps a focused data export approach, by allowing to only export 
+    required data from the database. Also for casting new REDCap databases based 
+    on datasets from other sources.
+    Originally forked from the R part of 'REDCapRITS' by Paul Egeler. 
+    See <https://github.com/pegeler/REDCapRITS>.
+    'REDCap' (Research Electronic Data Capture) is a secure, web-based software
+    platform designed to support data capture for research studies, providing
+    1) an intuitive interface for validated data capture; 2) audit trails for
+    tracking data manipulation and export procedures; 3) automated export
+    procedures for seamless data downloads to common statistical packages; and
+    4) procedures for data integration and interoperability with external 
+    sources (Harris et al (2009) <doi:10.1016/j.jbi.2008.08.010>; 
+    Harris et al (2019) <doi:10.1016/j.jbi.2019.103208>).
+Depends: R (>= 3.4.0)
+Suggests: httr, jsonlite, testthat, Hmisc, knitr, rmarkdown, styler,
+        devtools, roxygen2, spelling, rhub
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/agdamsbo/REDCapCAST,
+        https://agdamsbo.github.io/REDCapCAST/
+BugReports: https://github.com/agdamsbo/REDCapCAST/issues
+Imports: dplyr, REDCapR, tidyr, tidyselect, keyring, purrr, readr,
+        stats, shiny, haven, zip, assertthat, openxlsx2, readODS,
+        forcats, vctrs, gt, bslib, here, glue
+Collate: 'REDCapCAST-package.R' 'utils.r' 'process_user_input.r'
+        'REDCap_split.r' 'as_factor.R' 'doc2dd.R' 'ds2dd.R'
+        'ds2dd_detailed.R' 'easy_redcap.R' 'export_redcap_instrument.R'
+        'html_styling.R' 'mtcars_redcap.R' 'read_redcap_instrument.R'
+        'read_redcap_tables.R' 'redcap_wider.R' 'redcapcast_data.R'
+        'redcapcast_meta.R' 'shiny_cast.R'
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-22 12:08:37 UTC; au301842
+Author: Andreas Gammelgaard Damsbo [aut, cre]
+    (<https://orcid.org/0000-0002-7559-1154>),
+  Paul Egeler [aut] (<https://orcid.org/0000-0001-6948-9498>)
+Maintainer: Andreas Gammelgaard Damsbo <agdamsbo@clin.au.dk>
+Repository: CRAN
+Date/Publication: 2024-11-22 12:40:05 UTC

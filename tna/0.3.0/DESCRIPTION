@@ -1,0 +1,36 @@
+Package: tna
+Title: Transition Network Analysis (TNA)
+Version: 0.3.0
+Authors@R: c(
+    person("Sonsoles", "L\u00f3pez-Pernas", 
+           email = "sonsoles.lopez@uef.fi", role = c("aut", "cre")), 
+    person("Santtu", "Tikka", role = "aut"),
+    person("Mohammed", "Saqr", role = "aut")
+  )
+Description: Provides tools for performing Transition Network Analysis (TNA) to 
+    study relational dynamics, including functions for building and plotting TNA 
+    models, calculating centrality measures, and identifying dominant events and 
+    patterns. TNA statistical techniques (e.g., bootstrapping and permutation 
+    tests) ensure the reliability of observed insights and confirm that 
+    identified dynamics are meaningful. See (Saqr et al., 2024) 
+    <doi:10.48550/arXiv.2411.15486> for more details on TNA.
+License: MIT + file LICENSE
+URL: https://github.com/sonsoleslp/tna/
+BugReports: https://github.com/sonsoleslp/tna/issues/
+Depends: R (>= 4.1.0)
+Imports: checkmate, cli, colorspace, dplyr, ggplot2, graphics, igraph,
+        qgraph, RColorBrewer, rlang, stats, tibble, tidyr
+Suggests: gt, knitr, rmarkdown, seqHMM, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-12-11 10:31:30 UTC; tna
+Author: Sonsoles López-Pernas [aut, cre],
+  Santtu Tikka [aut],
+  Mohammed Saqr [aut]
+Maintainer: Sonsoles López-Pernas <sonsoles.lopez@uef.fi>
+Repository: CRAN
+Date/Publication: 2024-12-11 17:10:01 UTC

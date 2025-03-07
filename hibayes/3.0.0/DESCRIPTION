@@ -1,0 +1,43 @@
+Package: hibayes
+Title: Individual-Level, Summary-Level and Single-Step Bayesian
+        Regression Model
+Version: 3.0.0
+Date: 2023-09-01
+Authors@R: c(
+    person("Lilin", "Yin", email = "ylilin@163.com", 
+           role = c("aut", "cre", "cph")),
+    person("Haohao", "Zhang", email = "haohaozhang@whut.edu.cn", 
+           role = c("aut", "cph")),
+    person("Xiaolei", "Liu", email = "xiaoleiliu@mail.hzau.edu.cn", 
+           role = c("aut", "cph"))
+    )
+Description: A user-friendly tool to fit Bayesian regression models. It can fit 3 types of Bayesian models using individual-level, summary-level, and individual plus pedigree-level (single-step) data for both Genomic prediction/selection (GS) and Genome-Wide Association Study (GWAS), it was designed to estimate joint effects and genetic parameters for a complex trait, including:
+    (1) fixed effects and coefficients of covariates,
+    (2) environmental random effects, and its corresponding variance, 
+    (3) genetic variance, 
+    (4) residual variance, 
+    (5) heritability, 
+    (6) genomic estimated breeding values (GEBV) for both genotyped and non-genotyped individuals,
+    (7) SNP effect size, 
+    (8) phenotype/genetic variance explained (PVE) for single or multiple SNPs, 
+    (9) posterior probability of association of the genomic window (WPPA), 
+    (10) posterior inclusive probability (PIP). 
+    The functions are not limited, we will keep on going in enriching it with more features. 
+    References: Meuwissen et al. (2001) <doi:10.1093/genetics/157.4.1819>; Gustavo et al. (2013) <doi:10.1534/genetics.112.143313>; Habier et al. (2011) <doi:10.1186/1471-2105-12-186>; Yi et al. (2008) <doi:10.1534/genetics.107.085589>; Zhou et al. (2013) <doi:10.1371/journal.pgen.1003264>; Moser et al. (2015) <doi:10.1371/journal.pgen.1004969>; Lloyd-Jones et al. (2019) <doi:10.1038/s41467-019-12653-0>; Henderson (1976) <doi:10.2307/2529339>; Fernando et al. (2014) <doi:10.1186/1297-9686-46-50>.
+License: GPL-3
+Maintainer: Lilin Yin <ylilin@163.com>
+URL: https://github.com/YinLiLin/hibayes
+BugReports: https://github.com/YinLiLin/hibayes/issues
+Encoding: UTF-8
+Imports: utils, stats, methods, stringr, CMplot
+Depends: R (>= 3.3.0), bigmemory, Matrix, RcppProgress
+LinkingTo: Rcpp, RcppArmadillo (>= 0.9.600.0.0), RcppProgress, BH,
+        bigmemory, Matrix
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-09-01 03:57:53 UTC; yinll
+Author: Lilin Yin [aut, cre, cph],
+  Haohao Zhang [aut, cph],
+  Xiaolei Liu [aut, cph]
+Repository: CRAN
+Date/Publication: 2023-09-01 04:30:02 UTC

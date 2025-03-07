@@ -1,0 +1,40 @@
+Package: archetypal
+Version: 1.3.0
+Title: Finds the Archetypal Analysis of a Data Frame
+Description: Performs archetypal analysis by using Principal Convex Hull Analysis 
+    under a full control of all algorithmic parameters. 
+    It contains a set of functions for determining the initial solution, the optimal 
+    algorithmic parameters and the optimal number of archetypes.
+    Post run tools are also available for the assessment of the derived solution. 
+    Morup, M., Hansen, LK (2012) <doi:10.1016/j.neucom.2011.06.033>.
+    Hochbaum, DS, Shmoys, DB (1985) <doi:10.1287/moor.10.2.180>.
+    Eddy, WF (1977) <doi:10.1145/355759.355768>.
+    Barber, CB, Dobkin, DP, Huhdanpaa, HT (1996) <doi:10.1145/235815.235821>.    
+    Christopoulos, DT (2016) <doi:10.2139/ssrn.3043076>.    
+    Falk, A., Becker, A., Dohmen, T., Enke, B., Huffman, D., Sunde, U. (2018), <doi:10.1093/qje/qjy013>. 
+    Christopoulos, DT (2015) <doi:10.1016/j.jastp.2015.03.009> .  
+    Murari, A., Peluso, E., Cianfrani, Gaudio, F., Lungaroni, M., (2019), <doi:10.3390/e21040394>.    
+Authors@R: c(
+             person("Demetris", "Christopoulos", email = "dchristop@econ.uoa.gr", role = c("aut", "cre")),
+             person("David", "Midgley", email = "david.midgley@insead.edu", role = c("ctb")),
+             person("Sunil", "Venaik", email = "s.venaik@business.uq.edu.au", role = c("ctb")),
+             person("INSEAD Fontainebleau France", role = c("fnd", "cph"))
+             )  
+Maintainer: Demetris Christopoulos <dchristop@econ.uoa.gr>
+Depends: R (>= 3.1.0)
+Imports: Matrix, geometry, inflection, doParallel, lpSolve, methods,
+        plot3D, entropy
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2022-07-04 10:21:26 UTC; demetris_ws
+Author: Demetris Christopoulos [aut, cre],
+  David Midgley [ctb],
+  Sunil Venaik [ctb],
+  INSEAD Fontainebleau France [fnd, cph]
+Repository: CRAN
+Date/Publication: 2022-07-04 12:30:02 UTC

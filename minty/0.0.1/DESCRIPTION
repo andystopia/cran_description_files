@@ -1,0 +1,41 @@
+Package: minty
+Title: Minimal Type Guesser
+Version: 0.0.1
+Authors@R: c(
+    person("Chung-hong", "Chan", role = c("aut", "cre"), email = "chainsawtiney@gmail.com", comment = c(ORCID = "0000-0002-6232-7530")),
+    person("Hadley", "Wickham", , "hadley@posit.co", role = "aut", comment = "author of the ported code from readr"),
+    person("Jim", "Hester", role = "aut", comment = "author of the ported code from readr"),
+    person("Romain", "Francois", role = "ctb", comment = "author of the ported code from readr"),
+    person("Jennifer", "Bryan", , "jenny@posit.co", role = c("aut"), comment = "author of the ported code from readr"),
+    person("Shelby", "Bearrows", role = "ctb", comment = "author of the ported code from readr"),
+    person("Posit Software, PBC", role = "cph", comment = "copyright holder of readr"),
+    person("David", "Olson", role = "aut", comment = "author of src/tzfile.h")
+    )
+Description: Port the type guesser from 'readr' (so-called 'readr' first edition parsing engine, now superseded by 'vroom').
+License: MIT + file LICENSE
+URL: https://gesistsa.github.io/minty/,
+        https://github.com/gesistsa/minty
+BugReports: https://github.com/gesistsa/minty/issues
+Depends: R (>= 3.6)
+LinkingTo: cpp11, tzdb (>= 0.1.1)
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+Imports: tzdb
+Suggests: knitr, stringi, testthat, withr, hms, readr
+Config/Needs/website: gesistsa/tsatemplate
+NeedsCompilation: yes
+Packaged: 2024-05-20 11:16:09 UTC; chainsawriot
+Author: Chung-hong Chan [aut, cre] (<https://orcid.org/0000-0002-6232-7530>),
+  Hadley Wickham [aut] (author of the ported code from readr),
+  Jim Hester [aut] (author of the ported code from readr),
+  Romain Francois [ctb] (author of the ported code from readr),
+  Jennifer Bryan [aut] (author of the ported code from readr),
+  Shelby Bearrows [ctb] (author of the ported code from readr),
+  Posit Software, PBC [cph] (copyright holder of readr),
+  David Olson [aut] (author of src/tzfile.h)
+Maintainer: Chung-hong Chan <chainsawtiney@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-22 11:50:06 UTC

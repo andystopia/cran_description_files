@@ -1,0 +1,66 @@
+Package: rsyncrosim
+Type: Package
+Title: The R Interface to 'SyncroSim'
+Version: 1.5.0
+Authors@R: c(
+    person("Colin", "Daniel", email = "colin.daniel@apexrms.com",
+           role = "aut"),
+    person("Josie", "Hughes", email = "josie.hughes@canada.ca",
+           role = "aut"),
+    person("Valentin", "Lucet",
+           role = "aut"),           
+    person("Alex", "Embrey", 
+           role = "aut"),
+    person("Katie", "Birchard", email="katie.birchard@apexrms.com",
+           role = c("aut", "cre")),
+    person("Leonardo", "Frid", 
+           role = "aut"), 
+    person("Tabitha", "Kennedy", 
+           role = "aut"),
+    person("Shreeram", "Senthivasan",
+           role = "aut"),
+    person("ApexRMS", role="cph"))
+Description: 'SyncroSim' is a generalized framework for managing scenario-based 
+    datasets (<https://syncrosim.com/>). 'rsyncrosim' provides an interface to 
+    'SyncroSim'. Simulation models can be added to 'SyncroSim' in order to 
+    transform these datasets, taking advantage of general features such as 
+    defining scenarios of model inputs, running Monte Carlo simulations, and 
+    summarizing model outputs. 'rsyncrosim' requires 'SyncroSim' 2.3.5 or higher 
+    (API documentation: <https://docs.syncrosim.com/>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: methods, DBI, RSQLite, terra, gtools, lifecycle
+Suggests: knitr, testthat (>= 3.0.0), ggplot2, Rcpp, rmarkdown, raster
+SystemRequirements: SyncroSim (>=2.3.10)
+Collate: 'AAAClassDefinitions.R' 'addPackage.R' 'addRow.R' 'addon.R'
+        'autogentags.R' 'backup.R' 'breakpoint.R' 'command.R'
+        'condaFilepath.R' 'datasheet.R' 'datasheetRaster.R'
+        'datasheetSpatRaster.R' 'dateModified.R' 'delete.R'
+        'dependency.R' 'deprecated.R' 'description.R' 'disableAddon.R'
+        'enableAddon.R' 'filepath.R' 'folder.R' 'folderId.R'
+        'ignoreDependencies.R' 'info.R' 'installConda.R'
+        'internalHelpers.R' 'name.R' 'scenarioId.R' 'projectId.R'
+        'sqlStatement.R' 'scenario.R' 'project.R' 'ssimLibrary.R'
+        'session.R' 'internalWrappers.R' 'mergeDependencies.R'
+        'owner.R' 'package.R' 'parentId.R' 'print.R' 'printCmd.R'
+        'readOnly.R' 'removePackage.R' 'rsyncrosim.R' 'run.R'
+        'runLog.R' 'saveDatasheet.R' 'silent.R' 'ssimEnvironment.R'
+        'ssimUpdate.R' 'updatePackage.R' 'useConda.R' 'version.R'
+RoxygenNote: 7.2.3
+URL: <https://syncrosim.github.io/rsyncrosim/>
+BugReports: https://github.com/syncrosim/rsyncrosim/issues/
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-02-01 16:26:11 UTC; birch
+Author: Colin Daniel [aut],
+  Josie Hughes [aut],
+  Valentin Lucet [aut],
+  Alex Embrey [aut],
+  Katie Birchard [aut, cre],
+  Leonardo Frid [aut],
+  Tabitha Kennedy [aut],
+  Shreeram Senthivasan [aut],
+  ApexRMS [cph]
+Maintainer: Katie Birchard <katie.birchard@apexrms.com>
+Repository: CRAN
+Date/Publication: 2024-02-01 16:40:09 UTC

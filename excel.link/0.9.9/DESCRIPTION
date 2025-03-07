@@ -1,0 +1,31 @@
+Package: excel.link
+Type: Package
+Title: Convenient Data Exchange with Microsoft Excel
+Version: 0.9.9
+Author: Gregory Demin <excel.link.feedback@gmail.com>. To comply CRAN policy
+    includes source code from 'RDCOMClient' (http://www.omegahat.net/RDCOMClient/) by
+    Duncan Temple Lang <duncan@wald.ucdavis.edu>.
+Maintainer: Gregory Demin <excel.link.feedback@gmail.com>
+Depends: methods, grDevices, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+OS_type: windows
+Description: Allows access to data in running instance of Microsoft Excel
+    (e. g. 'xl[a1] = xl[b2]*3' and so on). Graphics can be transferred with
+    'xl[a1] = current.graphics()'. Additionally there are function for reading/writing 
+    'Excel' files - 'xl.read.file'/'xl.save.file'. They are not fast but able to read/write 
+    '*.xlsb'-files and password-protected files. There is an Excel workbook with 
+    examples of calling R from Excel in the 'doc' folder. It tries to keep things as
+    simple as possible - there are no needs in any additional
+    installations besides R, only 'VBA' code in the Excel workbook.
+    Microsoft Excel is required for this package.
+License: GPL (>= 2)
+URL: https://github.com/gdemin/excel.link
+BugReports: https://github.com/gdemin/excel.link/issues
+LazyLoad: yes
+ByteCompile: TRUE
+NeedsCompilation: yes
+RoxygenNote: 7.1.1
+Packaged: 2021-03-21 16:55:21 UTC; cekor
+Repository: CRAN
+Date/Publication: 2021-03-21 22:40:02 UTC

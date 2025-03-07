@@ -1,0 +1,68 @@
+Type: Package
+Package: admiralpeds
+Title: Pediatrics Extension Package for ADaM in 'R' Asset Library
+Version: 0.1.0
+Authors@R: c(
+    person("Fanny", "Gautier", , "fanny.gautier@cytel.com", role = c("aut", "cre")),
+    person("Ross", "Farrugia", role = "aut"),
+    person("Zelos", "Zhu", role = "aut"),
+    person("Sukalpo", "Saha", role = "aut"),
+    person("Lina", "Patil", role = "aut"),
+    person("Samia", "Kabi", role = "aut"),
+    person("Laura", "Liao", role = "ctb"),
+    person("Remigiusz", "Kudlacz", role = "ctb"),
+    person("Pierre", "Wallet", role = "ctb"),
+    person("Amin", "Sherzad", role = "ctb"),
+    person("David", "Freedman", role = "ctb"),
+    person("Mahmoud", "Hamza", role = "ctb"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("Cytel", role = c("cph", "fnd")),
+    person("Pfizer Inc.", role = c("cph", "fnd")),
+    person("Atorus Research", role = c("cph", "fnd"))
+  )
+Description: A toolbox for programming Clinical Data Standards Interchange
+    Consortium (CDISC) compliant Analysis Data Model (ADaM) datasets in R.
+    ADaM datasets are a mandatory part of any New Drug or Biologics
+    License Application submitted to the United States Food and Drug
+    Administration (FDA). Analysis derivations are implemented in
+    accordance with the "Analysis Data Model Implementation Guide" (CDISC
+    Analysis Data Model Team, 2021,
+    <https://www.cdisc.org/standards/foundational/adam>). The package is
+    an extension package of the 'admiral' package for pediatric clinical
+    trials.
+License: Apache License (>= 2)
+URL: https://pharmaverse.github.io/admiralpeds/,
+        https://github.com/pharmaverse/admiralpeds
+Depends: R (>= 4.1)
+Imports: admiral (>= 1.0.0), admiraldev (>= 1.0.0), cli (>= 3.6.2),
+        dplyr (>= 1.0.5), magrittr (>= 1.5), purrr (>= 0.3.3), rlang
+        (>= 0.4.4), tidyselect (>= 1.1.0), zoo (>= 1.8.12)
+Suggests: knitr, lubridate (>= 1.7.4), pharmaversesdtm (>= 0.2.0),
+        rmarkdown, stringr (>= 1.4.0), testthat (>= 3.0.0), tibble
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-08-16 13:03:15 UTC; fanny.gautier
+Author: Fanny Gautier [aut, cre],
+  Ross Farrugia [aut],
+  Zelos Zhu [aut],
+  Sukalpo Saha [aut],
+  Lina Patil [aut],
+  Samia Kabi [aut],
+  Laura Liao [ctb],
+  Remigiusz Kudlacz [ctb],
+  Pierre Wallet [ctb],
+  Amin Sherzad [ctb],
+  David Freedman [ctb],
+  Mahmoud Hamza [ctb],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  Cytel [cph, fnd],
+  Pfizer Inc. [cph, fnd],
+  Atorus Research [cph, fnd]
+Maintainer: Fanny Gautier <fanny.gautier@cytel.com>
+Repository: CRAN
+Date/Publication: 2024-08-21 12:50:02 UTC

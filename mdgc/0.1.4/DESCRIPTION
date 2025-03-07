@@ -1,0 +1,50 @@
+Package: mdgc
+Type: Package
+Title: Missing Data Imputation Using Gaussian Copulas
+Version: 0.1.4
+Authors@R: c(
+  person("Benjamin", "Christoffersen", 
+         email = "boennecd@gmail.com", 
+         role = c("cre", "aut"), 
+         comment = c(ORCID = "0000-0002-7182-1346")), 
+  person("Alan", "Genz", 
+         role = "cph"),
+  person("Frank", "Bretz", 
+         role = "cph"),
+  person("Torsten", "Hothorn", 
+         role = "cph"),
+  person("R-core", email = "R-core@R-project.org",
+         role = "cph"),
+  person("Ross", "Ihaka", 
+         role = "cph"))
+Description: Provides functions to impute missing values using Gaussian 
+    copulas for mixed data types as described by Christoffersen et al. 
+    (2021) <arXiv:2102.02642>. The method is related to Hoff (2007) 
+    <doi:10.1214/07-AOAS107> and Zhao and Udell (2019) <arXiv:1910.12845> 
+    but differs by making a direct approximation of the log marginal likelihood 
+    using an extended version of the Fortran code created by Genz and Bretz 
+    (2002) <doi:10.1198/106186002394> in addition to also support multinomial 
+    variables.
+License: GPL-2
+BugReports: https://github.com/boennecd/mdgc/issues
+URL: https://github.com/boennecd/mdgc
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+LinkingTo: Rcpp, RcppArmadillo, testthat, BH, psqn
+Imports: Rcpp
+Suggests: testthat, catdata
+SystemRequirements: C++14
+NeedsCompilation: yes
+Packaged: 2021-03-12 05:31:56 UTC; boennecd
+Author: Benjamin Christoffersen [cre, aut]
+    (<https://orcid.org/0000-0002-7182-1346>),
+  Alan Genz [cph],
+  Frank Bretz [cph],
+  Torsten Hothorn [cph],
+  R-core [cph],
+  Ross Ihaka [cph]
+Maintainer: Benjamin Christoffersen <boennecd@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-03-12 21:50:03 UTC

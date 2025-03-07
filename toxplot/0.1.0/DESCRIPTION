@@ -1,0 +1,22 @@
+Package: toxplot
+Type: Package
+Title: Batch Processing, Modeling and Visualizing the Dose-Response of
+        High-Throughput Screening Bioassay
+Version: 0.1.0
+Author: Jun Wang
+Maintainer: Jun Wang <njekin@gmail.com>
+Description: A convenient interface to batch process high-throughput toxicology bioassay screening data. It's designed specifically for screening experiment that features a primary inhibition-type assay and a companion cytotoxicity assay. This package provides functions for data normalization, quality-control analysis, dose-response curve fitting (using the Hill model provided in the 'tcpl' package), visualization, and a unique toxicity-adjusted potency ranking system.  
+URL: http://github.com/njekin/ToxPlot-R-Package
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3.0)
+Imports: dplyr (>= 0.5.0), tidyr (>= 0.5.0), tcpl (>= 1.0.0), ggplot2
+        (>= 2.2.0), ggthemes (>= 3.4.0)
+Suggests: knitr, rmarkdown, testthat, plotly, devtools,
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-09-19 20:38:10 UTC; njekin
+Repository: CRAN
+Date/Publication: 2017-09-20 08:50:03 UTC

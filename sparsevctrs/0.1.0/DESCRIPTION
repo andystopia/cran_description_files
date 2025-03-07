@@ -1,0 +1,36 @@
+Package: sparsevctrs
+Title: Sparse Vectors for Use in Data Frames
+Version: 0.1.0
+Authors@R: c(
+    person("Emil", "Hvitfeldt", , "emil.hvitfeldt@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0679-1945")),
+    person("Davis", "Vaughan", , "davis@posit.co", role = "ctb"),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Provides sparse vectors powered by ALTREP (Alternative
+    Representations for R Objects) that behave like regular vectors, and
+    can thus be used in data frames. Also provides tools to convert
+    between sparse matrices and data frames with sparse columns and
+    functions to interact with sparse vectors.
+License: MIT + file LICENSE
+URL: https://github.com/r-lib/sparsevctrs,
+        https://r-lib.github.io/sparsevctrs/
+BugReports: https://github.com/r-lib/sparsevctrs/issues
+Depends: R (>= 4.0.0)
+Imports: cli (>= 3.4.0), rlang (>= 1.1.0), vctrs
+Suggests: knitr, Matrix, methods, rmarkdown, testthat (>= 3.0.0),
+        tibble, withr
+VignetteBuilder: knitr
+Config/Needs/website: tidyverse/tidytemplate, rmarkdown, lobstr,
+        ggplot2, bench, tidyr, ggbeeswarm
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1.9000
+NeedsCompilation: yes
+Packaged: 2024-05-28 23:58:30 UTC; emilhvitfeldt
+Author: Emil Hvitfeldt [aut, cre] (<https://orcid.org/0000-0002-0679-1945>),
+  Davis Vaughan [ctb],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Emil Hvitfeldt <emil.hvitfeldt@posit.co>
+Repository: CRAN
+Date/Publication: 2024-05-31 18:50:03 UTC

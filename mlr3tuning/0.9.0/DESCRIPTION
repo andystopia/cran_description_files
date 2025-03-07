@@ -1,0 +1,66 @@
+Package: mlr3tuning
+Title: Tuning for 'mlr3'
+Version: 0.9.0
+Authors@R: 
+    c(person(given = "Marc",
+             family = "Becker",
+             role = c("cre", "aut"),
+             email = "marcbecker@posteo.de",
+             comment = c(ORCID = "0000-0002-8115-0400")),
+      person(given = "Michel",
+             family = "Lang",
+             role = "aut",
+             email = "michellang@gmail.com",
+             comment = c(ORCID = "0000-0001-9754-0393")),
+      person(given = "Jakob",
+             family = "Richter",
+             role = "aut",
+             email = "jakob1richter@gmail.com",
+             comment = c(ORCID = "0000-0003-4481-5554")),
+      person(given = "Bernd",
+             family = "Bischl",
+             role = "aut",
+             email = "bernd_bischl@gmx.net",
+             comment = c(ORCID = "0000-0001-6002-6980")),
+      person(given = "Daniel",
+             family = "Schalk",
+             role = "aut",
+             email = "daniel.schalk@stat.uni-muenchen.de",
+             comment = c(ORCID = "0000-0003-0950-1947")))
+Description: Implements methods for hyperparameter tuning with 'mlr3',
+    e.g. grid search, random search, generalized simulated annealing and
+    iterated racing.  Various termination criteria can be set and
+    combined.  The class 'AutoTuner' provides a convenient way to perform
+    nested resampling in combination with 'mlr3'.
+License: LGPL-3
+URL: https://mlr3tuning.mlr-org.com,
+        https://github.com/mlr-org/mlr3tuning
+BugReports: https://github.com/mlr-org/mlr3tuning/issues
+Depends: mlr3 (>= 0.12.0), paradox (>= 0.7.0), R (>= 3.1.0)
+Imports: bbotk (>= 0.4.0), checkmate (>= 2.0.0), data.table, digest,
+        lgr, mlr3misc (>= 0.9.4), R6
+Suggests: adagio, GenSA, irace, mlr3pipelines, nloptr, rpart, testthat
+        (>= 3.0.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.1.1
+Collate: 'ArchiveTuning.R' 'AutoTuner.R' 'ObjectiveTuning.R'
+        'mlr_tuners.R' 'Tuner.R' 'TunerCmaes.R' 'TunerDesignPoints.R'
+        'TunerFromOptimizer.R' 'TunerGenSA.R' 'TunerGridSearch.R'
+        'TunerIrace.R' 'TunerNLoptr.R' 'TunerRandomSearch.R'
+        'TuningInstanceMulticrit.R' 'TuningInstanceSingleCrit.R'
+        'assertions.R' 'auto_tuner.R' 'bibentries.R'
+        'extract_inner_tuning_archives.R'
+        'extract_inner_tuning_results.R' 'helper.R' 'reexport.R'
+        'sugar.R' 'tune.R' 'tune_nested.R' 'zzz.R'
+Packaged: 2021-09-14 07:00:30 UTC; marc
+Author: Marc Becker [cre, aut] (<https://orcid.org/0000-0002-8115-0400>),
+  Michel Lang [aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Jakob Richter [aut] (<https://orcid.org/0000-0003-4481-5554>),
+  Bernd Bischl [aut] (<https://orcid.org/0000-0001-6002-6980>),
+  Daniel Schalk [aut] (<https://orcid.org/0000-0003-0950-1947>)
+Maintainer: Marc Becker <marcbecker@posteo.de>
+Repository: CRAN
+Date/Publication: 2021-09-14 07:30:02 UTC

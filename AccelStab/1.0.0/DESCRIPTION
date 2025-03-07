@@ -1,0 +1,46 @@
+Package: AccelStab
+Title: Accelerated Stability Kinetic Modelling
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Bernard G",
+             family = "Franq",
+             role = c("aut","cph"),
+             email = "accelstab@gmail.com"),
+      person(given = "Ben",
+             family = "Wells",
+             role = "aut",
+             email = "benwells@bayezian.com"),
+      person(given = "Alex",
+             family = "Ball",
+             role = c("cre","ctb"),
+             email = "alex_keith_ball@hotmail.com")
+      )
+Description: Estimate the Šesták–Berggren kinetic model (degradation model) from experimental data.
+  A closed-form (analytic) solution to the degradation model is implemented as a non-linear fit,
+  allowing for the extrapolation of the degradation of a drug product - both in time and 
+  temperature (Campa C. et al, 2021 <doi:10.3390/vaccines9101114>). Parametric bootstrap, with kinetic parameters drawn from the multivariate
+  t-distribution, and analytical formulae (the delta method) are available options to calculate
+  the confidence and prediction intervals.
+  The results (modelling, extrapolations and statistical intervals) can be visualised
+  with multiple plots. The examples illustrate the accelerated stability modelling in drugs and
+  vaccines development.
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Imports: dplyr, ggplot2, minpack.lm, mvtnorm, stats
+Suggests: testthat, knitr, rmarkdown, lifecycle
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+Language: en-GB
+URL: https://github.com/AccelStab/AccelStab
+BugReports: https://github.com/AccelStab/AccelStab/issues
+NeedsCompilation: no
+Packaged: 2023-12-08 12:42:15 UTC; alex_
+Author: Bernard G Franq [aut, cph],
+  Ben Wells [aut],
+  Alex Ball [cre, ctb]
+Maintainer: Alex Ball <alex_keith_ball@hotmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-10 11:20:08 UTC

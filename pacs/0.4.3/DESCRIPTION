@@ -1,0 +1,36 @@
+Package: pacs
+Title: Supplementary Tools for R Packages Developers
+Version: 0.4.3
+Authors@R: 
+    person(given = "Maciej",
+           family = "Nasinski",
+           role = c("aut", "cre"),
+           email = "nasinski.maciej@gmail.com")
+Maintainer: Maciej Nasinski <nasinski.maciej@gmail.com>
+Description: 
+  Supplementary utils for CRAN maintainers and R packages developers.
+  Validating the library, packages and lock files.
+  Exploring a complexity of a specific package like evaluating its size in bytes with all dependencies.
+  The shiny app complexity could be explored too.
+  Assessing the life duration of a specific package version.
+  Checking a CRAN package check page status for any errors and warnings.
+  Retrieving a DESCRIPTION or NAMESPACE file for any package version. 
+  Comparing DESCRIPTION or NAMESPACE files between different package versions.
+  Getting a list of all releases for a specific package.
+  The Bioconductor is partly supported.
+License: GPL (>= 3)
+URL: https://github.com/Polkas/pacs
+BugReports: https://github.com/Polkas/pacs/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Depends: R (>= 3.5.0)
+Suggests: remotes, withr, pkgsearch, mockery, testthat (>= 3.0.0),
+        knitr, rmarkdown
+Config/testthat/edition: 3
+Imports: memoise, stringi, xml2, renv, jsonlite, curl
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-03-03 19:51:25 UTC; maciejnasinski
+Author: Maciej Nasinski [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-03-03 20:20:02 UTC

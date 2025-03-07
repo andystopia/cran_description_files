@@ -1,0 +1,34 @@
+Package: tboot
+Title: Tilted Bootstrap
+Version: 0.2.0
+Authors@R: c(
+  person(
+    family = "Morris",
+    given = "Nathan",
+    email = "morris_nathan@lilly.com",
+    role = c("aut", "cre")),
+  person(
+    family = "Landau",
+    given = c("William", "Michael"),
+    email = "will.landau@lilly.com",
+    role = c("ctb")),
+  person(
+    family = "Eli Lilly and Company",
+    role = "cph"))
+Description: Creates simulated clinical trial data with realistic correlation structures and assumed efficacy levels by using a tilted bootstrap resampling approach. Samples are drawn from observed data with some samples appearing more frequently than others. May also be used for simulating from a joint Bayesian distribution along with clinical trials based on the Bayesian distribution.
+License: GPL-3
+Depends: R (>= 3.4.0)
+Imports: stats, quadprog, kernlab
+Suggests: knitr, rmarkdown, testthat, MASS, ggplot2
+VignetteBuilder: knitr
+URL: https://github.com/njm18/tboot
+BugReports: https://github.com/njm18/tboot/issues
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-07-27 17:43:23 UTC; c243080
+Author: Nathan Morris [aut, cre],
+  William Michael Landau [ctb],
+  Eli Lilly and Company [cph]
+Maintainer: Nathan Morris <morris_nathan@lilly.com>
+Repository: CRAN
+Date/Publication: 2020-08-01 11:10:02 UTC

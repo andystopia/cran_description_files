@@ -1,0 +1,41 @@
+Package: margins
+Type: Package
+Title: Marginal Effects for Model Objects
+Description: An R port of the margins command from 'Stata', which can be used to
+    calculate marginal (or partial) effects from model objects.
+License: MIT + file LICENSE
+Version: 0.3.27
+Authors@R: c(person("Thomas J.", "Leeper",
+                    role = c("aut"), 
+                    comment = c(ORCID = "0000-0003-4097-6326")),
+             person("Jeffrey", "Arnold", 
+                    role = c("ctb")),
+             person("Vincent", "Arel-Bundock", 
+                    role = c("ctb")),
+             person("Jacob A.", "Long", 
+                    role = c("ctb"),
+                    comment = c(ORCID = "0000-0002-1582-6214")),
+            person("Ben","Bolker",email="bolker@mcmaster.ca", 
+                    role=c("ctb","cre"),
+                    comment=c(ORCID="0000-0002-2127-0443"))
+             )
+URL: https://github.com/bbolker/margins
+BugReports: https://github.com/bbolker/margins/issues
+Imports: utils, stats, prediction (>= 0.3.6), data.table, graphics,
+        grDevices, MASS
+Suggests: methods, knitr, rmarkdown, testthat, ggplot2, gapminder,
+        sandwich, stargazer, lme4
+Enhances: AER, betareg, nnet, ordinal, survey
+ByteCompile: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2024-06-12 14:10:43 UTC; bolker
+Author: Thomas J. Leeper [aut] (<https://orcid.org/0000-0003-4097-6326>),
+  Jeffrey Arnold [ctb],
+  Vincent Arel-Bundock [ctb],
+  Jacob A. Long [ctb] (<https://orcid.org/0000-0002-1582-6214>),
+  Ben Bolker [ctb, cre] (<https://orcid.org/0000-0002-2127-0443>)
+Maintainer: Ben Bolker <bolker@mcmaster.ca>
+Repository: CRAN
+Date/Publication: 2024-06-13 09:40:05 UTC

@@ -1,0 +1,46 @@
+Package: sarima
+Type: Package
+Title: Simulation and Prediction with Seasonal ARIMA Models
+Version: 0.9.2
+Authors@R: c( person(given = c("Georgi", "N."), 
+                     family = "Boshnakov", 
+                     role = c("aut", "cre"), 
+                     email = "georgi.boshnakov@manchester.ac.uk"), 
+	      person(given = "Jamie", 
+	             family = "Halliday", 
+	             role = "aut", email = "jamie.halliday@manchester.ac.uk") )
+Description: Functions, classes and methods for time series modelling with ARIMA
+    and related models. The aim of the package is to provide consistent
+    interface for the user. For example, a single function autocorrelations()
+    computes various kinds of theoretical and sample autocorrelations. This is
+    work in progress, see the documentation and vignettes for the current
+    functionality.  Function sarima() fits extended multiplicative seasonal
+    ARIMA models with trends, exogenous variables and arbitrary roots on the
+    unit circle, which can be fixed or estimated (for the algebraic basis for
+    this see <arXiv:2208.05055>, a paper on the methodology is being prepared).
+    The suggested package 'FitARMA' can be installed with
+    'remotes::install_github("cran/FitARMA")' if necessary but is no longer
+    needed in normal use.
+URL: https://geobosh.github.io/sarima/ (doc)
+        https://github.com/GeoBosh/sarima (devel)
+BugReports: https://github.com/GeoBosh/sarima/issues
+Depends: R (>= 2.10), methods, stats4
+Imports: graphics, stats, utils, PolynomF (>= 1.0-0), Formula, lagged
+        (>= 0.2.1), Rcpp (>= 0.12.14), Rdpack, numDeriv, ltsa
+Suggests: testthat, KFAS, FKF, FitARMA, fGarch, forecast
+RdMacros: Rdpack
+License: GPL (>= 2)
+LazyLoad: yes
+Collate: RcppExports.R utils.R generics.R filterClasses.R
+        modelClasses.R sarima.R autocovariances.R armacalc.R fit.R
+        wrapKFAS.R arma_Q0dotdotstats.R Kalman.R fitTools.R
+        periodogram.R predict.Sarima.R zzz.R
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2024-03-01 21:50:03 UTC; georgi
+Author: Georgi N. Boshnakov [aut, cre],
+  Jamie Halliday [aut]
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-03-01 23:30:02 UTC

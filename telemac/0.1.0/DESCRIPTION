@@ -1,0 +1,35 @@
+Package: telemac
+Type: Package
+Title: R Interface to the TELEMAC Model Suite
+Description: An R interface to the TELEMAC suite for modelling
+    of free surface flow. This includes methods for model initialisation, simulation,
+    and visualisation. So far only the TELEMAC-2D module for 2-dimensional hydrodynamic
+    modelling is implemented. 
+Version: 0.1.0
+Authors@R: c(person(given="Tobias",
+                    family="Pilz",
+                    email="topilz@pik-potsdam.de",
+                    role=c("aut","cre"),
+                    comment = c(ORCID = "0000-0002-5641-3918")),
+             person(given="Potsdam Institute for Climate Impact Research (PIK)",
+                    role=c("cph", "fnd")))
+URL: https://github.com/tpilz/telemac
+BugReports: https://github.com/tpilz/telemac/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr (>= 1.0.0), fs, gstat, lubridate, magrittr, purrr,
+        raster, Rcpp, rlang, sf, sp, stringr, sys, tidyr (>= 1.0.0),
+        tidyselect
+Suggests: knitr, rgdal, rmarkdown, RTriangle, stars, terrainmeshr,
+        tidyverse
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2021-02-18 07:41:53 UTC; tobias
+Author: Tobias Pilz [aut, cre] (<https://orcid.org/0000-0002-5641-3918>),
+  Potsdam Institute for Climate Impact Research (PIK) [cph, fnd]
+Maintainer: Tobias Pilz <topilz@pik-potsdam.de>
+Repository: CRAN
+Date/Publication: 2021-02-19 10:10:05 UTC

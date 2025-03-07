@@ -1,0 +1,31 @@
+Package: cogmapr
+Title: Cognitive Mapping Tools Based on Coding of Textual Sources
+Version: 0.9.2
+Date: 2021-11-20
+Authors@R: c(person("Frédéric M.", "Vanwindekens", role = c("aut", "cre"),
+                          email = "f.vanwindekens@cra.wallonie.be",
+			  comment = c(ORCID = "0000-0002-9117-7543")),
+              person("Didier", "Stilmant", role = c("aut","ths"), email = "d.stimant@cra.wallonie.be"),
+              person("Philippe V.", "Baret",role = c("aut","ths"), email = "philippe.baret@uclouvain.be")
+	      )
+Description: Functions for building cognitive maps based on qualitative data. Inputs are textual sources (articles, transcription of qualitative interviews of agents,...). These sources have been coded using relations and are linked to (i) a table describing the variables (or concepts) used for the coding and (ii) a table describing the sources (typology of agents, ...). Main outputs are Individual Cognitive Maps (ICM), Social Cognitive Maps (all sources or group of sources) and a list of quotes linked to relations. This package is linked to the work done during the PhD of Frederic M. Vanwindekens (CRA-W / UCL) hold the 13 of May 2014 at University of Louvain in collaboration with the Walloon Agricultural Research Centre (project MIMOSA, MOERMAN fund).
+URL: https://frdvnw.gitlab.io/cogmapr/
+BugReports: https://gitlab.com/FrdVnW/cogmapr/-/issues
+License: GPL-3
+SystemRequirements: libcurl: libcurl-devel (rpm) or
+        libcurl4-openssl-dev (deb).
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: grDevices, methods, utils, grid, graph, Rgraphviz, ggplot2,
+        magrittr, dplyr (>= 0.8.0.1), tidyr
+biocViews: graph, Rgraphviz
+Suggests: testthat, car
+Maintainer: Frédéric M. Vanwindekens <f.vanwindekens@cra.wallonie.be>
+NeedsCompilation: no
+Packaged: 2021-11-20 15:50:22 UTC; fred
+Author: Frédéric M. Vanwindekens [aut, cre]
+    (<https://orcid.org/0000-0002-9117-7543>),
+  Didier Stilmant [aut, ths],
+  Philippe V. Baret [aut, ths]
+Repository: CRAN
+Date/Publication: 2021-11-20 16:20:02 UTC

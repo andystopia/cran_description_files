@@ -1,0 +1,53 @@
+Package: cvCovEst
+Title: Cross-Validated Covariance Matrix Estimation
+Version: 0.3.5
+Authors@R: c(
+    person("Philippe", "Boileau", email = "philippe_boileau@berkeley.edu",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4850-2507")),
+    person("Nima", "Hejazi", email = "nh@nimahejazi.org",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-7127-2789")),
+    person("Brian", "Collica", email = "bcollica@berkeley.edu ",
+           role = "aut"),
+    person("Jamarcus", "Liu", email = "yanwei.liu@berkeley.edu ",
+           role = "ctb"),
+    person("Mark", "van der Laan", email = "laan@berkeley.edu",
+           role = c("ctb", "ths"),
+           comment = c(ORCID = "0000-0003-1432-5511")),
+    person("Sandrine", "Dudoit", email = "sandrine@stat.berkeley.edu",
+           role = c("ctb", "ths"),
+           comment = c(ORCID = "0000-0002-6069-8629"))
+  )
+Description: An efficient cross-validated approach for covariance matrix
+    estimation, particularly useful in high-dimensional settings. This
+    method relies upon the theory of loss-based estimator selection to
+    identify the optimal estimator of the covariance matrix from among a
+    prespecified set of candidates.
+Depends: R (>= 4.0.0)
+Imports: matrixStats, Matrix, stats, methods, origami, coop, Rdpack,
+        rlang, dplyr, stringr, purrr, tibble, assertthat, RSpectra,
+        ggplot2, ggpubr, RColorBrewer
+Suggests: future, future.apply, MASS, testthat, knitr, rmarkdown, covr,
+        spelling
+License: MIT + file LICENSE
+URL: https://github.com/PhilBoileau/cvCovEst
+BugReports: https://github.com/PhilBoileau/cvCovEst/issues
+Encoding: UTF-8
+LazyData: false
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+RdMacros: Rdpack
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-04-17 20:53:35 UTC; philippe
+Author: Philippe Boileau [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4850-2507>),
+  Nima Hejazi [aut] (<https://orcid.org/0000-0002-7127-2789>),
+  Brian Collica [aut],
+  Jamarcus Liu [ctb],
+  Mark van der Laan [ctb, ths] (<https://orcid.org/0000-0003-1432-5511>),
+  Sandrine Dudoit [ctb, ths] (<https://orcid.org/0000-0002-6069-8629>)
+Maintainer: Philippe Boileau <philippe_boileau@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2021-04-18 06:50:07 UTC

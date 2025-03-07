@@ -1,0 +1,51 @@
+Package: neojags
+Type: Package
+Title: Neo-Normal Distributions Family for Markov Chain Monte Carlo
+        (MCMC) Models in 'JAGS'
+Version: 0.1.1
+Authors@R: c(person("Achmad Syahrul", "Choir", role=c("aut","cre"), email="madsyair@stis.ac.id"),
+             person("Resi", "Ramadani", role="aut", email="resi.ramadhi@gmail.com"), 
+             person("Nur", "Iriawan", role="aut", email="nur_i@statistika.its.ac.id"),
+             person("S Sifa'ul Khusna Malikhatul", "Mutmainah", role="ctb"),
+             person("Matthew", "Denwood", role="cph"), 
+             person("Martyn", "Plummer", role="cph", 
+             comment="Copyright holder of the code in src/distributions/D*.*, configure.ac, R/runjags_functions.R, and original copyright holder of some modified code where indicated"))
+Description: A 'JAGS' extension module provides neo-normal distributions
+    family including MSNBurr, MSNBurr-IIa, GMSNBurr, Lunetta Exponential Power,
+    Fernandez-Steel Skew t, Fernandez-Steel Skew Normal, Fernandez-Osiewalski-Steel
+    Skew Exponential Power, Jones Skew Exponential Power.
+    References:
+    Choir, A. S. (2020). "The New Neo-Normal Distributions and Their Properties".Unpublished Dissertation.
+    Denwood, M.J. (2016) <doi:10.18637/jss.v071.i09>.
+    Fernandez, C., Osiewalski, J., & Steel, M. F. (1995) <doi:10.1080/01621459.1995.10476637>.
+    Fernandez, C., & Steel, M. F. (1998) <doi:10.1080/01621459.1998.10474117>.
+    Iriawan, N. (2000). "Computationally Intensive Approaches to Inference in NeoNormal Linear Models".Unpublished Dissertation.
+    Mineo, A., & Ruggieri, M. (2005) <doi:10.18637/jss.v012.i04>.
+    Rigby, R. A., & Stasinopoulos, D. M. (2005) <doi:10.1111/j.1467-9876.2005.00510.x>.
+    Lunetta, G. (1963). "Di una Generalizzazione dello Schema della Curva Normale".
+    Rigby, R. A., Stasinopoulos, M. D., Heller, G. Z., & Bastiani, F. D. (2019) <doi:10.1201/9780429298547>.
+URL: https://github.com/madsyair/neojags
+BugReports: https://github.com/madsyair/neojags/issues
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: JAGS >= 4.3.0 (https://mcmc-jags.sourceforge.io/)
+Depends: R (>= 2.14.0)
+Imports: runjags, stats, utils, rjags,coda
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, markdown, spelling
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2023-06-28 00:26:10 UTC; user
+Maintainer: Achmad Syahrul Choir <madsyair@stis.ac.id>
+Author: Achmad Syahrul Choir [aut, cre],
+  Resi Ramadani [aut],
+  Nur Iriawan [aut],
+  S Sifa'ul Khusna Malikhatul Mutmainah [ctb],
+  Matthew Denwood [cph],
+  Martyn Plummer [cph] (Copyright holder of the code in
+    src/distributions/D*.*, configure.ac, R/runjags_functions.R, and
+    original copyright holder of some modified code where indicated)
+Repository: CRAN
+Date/Publication: 2023-06-29 14:40:05 UTC

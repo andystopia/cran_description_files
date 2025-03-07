@@ -1,0 +1,40 @@
+Package: dgo
+Title: Dynamic Estimation of Group-Level Opinion
+Version: 0.2.12
+Date: 2017-11-13
+Description: Fit dynamic group-level IRT and MRP models from individual or
+    aggregated item response data. This package handles common preprocessing
+    tasks and extends functions for inspecting results, poststratification, and
+    quick iteration over alternative models.
+Maintainer: James Dunham <james@jdunham.io>
+Authors@R: c(
+    person("James", "Dunham", email = "james@jdunham.io", role = c("aut", "cre")),
+    person("Devin", "Caughey", email = "caughey@mit.edu", role = c("aut")),
+    person("Christopher", "Warshaw", email = "cwarshaw@mit.edu", role = c("aut"))
+    )
+License: GPL-3
+URL: https://jdunham.io/dgo/
+BugReports: https://github.com/jamesdunham/dgo/issues
+Depends: dgodata, R (>= 3.2.2), rstan (>= 2.15.1)
+LazyData: true
+Imports: assertthat, data.table, ggplot2, lubridate, methods, R6,
+        survey
+Suggests: knitr, rmarkdown, testthat
+Collate: 'aggregate_item_responses.r' 'assertions.r' 'class-control.r'
+        'class-dgo_fit.r' 'class-dgirt_fit.r' 'constants.r'
+        'class-dgirtin.r' 'class-dgmrp_fit.r' 'dgirt.r'
+        'dichotomize_item_responses.r' 'methods-control.r'
+        'methods-dgirtfit-plot.r' 'methods-dgirtfit-poststratify.r'
+        'methods-dgirtfit.r' 'methods-dgirtin.r' 'name_helpers.r'
+        'package.R' 'rake_partial.r' 'restrict_input_data.r'
+        'reweight_item_responses.r' 'shape.r' 'shape_hierarchical.r'
+        'toy_dgirt_in.r' 'toy_dgirtfit.r' 'validate_dgirtIn.r'
+        'validate_input_data.r'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-11-30 02:24:20 UTC; james
+Author: James Dunham [aut, cre],
+  Devin Caughey [aut],
+  Christopher Warshaw [aut]
+Repository: CRAN
+Date/Publication: 2017-11-30 20:38:18 UTC

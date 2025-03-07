@@ -1,0 +1,54 @@
+Package: midfieldr
+Title: Tools and Methods for Working with MIDFIELD Data in 'R'
+Version: 1.0.1
+Description: Provides tools and demonstrates methods for working with individual 
+  undergraduate student-level records (registrar's data) in 'R'. Tools include 
+  filters for program codes, data sufficiency, and timely completion. Methods 
+  include gathering blocs of records, computing quantitative metrics such as 
+  graduation rate, and creating charts to visualize comparisons. 'midfieldr'  
+  interacts with practice data provided in 'midfielddata', a data package with 
+  an installed size of about 24 Mb available via a 'drat' repository. 
+  Instructions at <https://midfieldr.github.io/midfielddata/>. This work is 
+  supported by the US National Science Foundation through grant numbers 1545667 
+  and 2142087.
+Authors@R: c(
+    person("Richard", "Layton", 
+        email = "graphdoctor@gmail.com", 
+        role = c("cre", "aut", "cph")),
+    person("Russell", "Long", 
+        email = "ralong@purdue.edu", 
+        role = c("aut", "cph", "dtm")), 
+    person("Matthew", "Ohland", 
+        email = "ohland@purdue.edu",
+        role = c("aut", "cph")),
+    person("Marisa", "Orr", 
+        email = "marisak@clemson.edu", 
+        role = c("aut", "cph")),
+    person("Susan", "Lord", 
+        email = "slord@sandiego.edu",
+        role = c("aut", "cph"))
+    )
+Maintainer: Richard Layton <graphdoctor@gmail.com>
+Additional_repositories: http://midfieldr.github.io/drat
+BugReports: https://github.com/MIDFIELDR/midfieldr/issues
+URL: https://midfieldr.github.io/midfieldr/
+RoxygenNote: 7.2.3
+LazyDataCompression: bzip2
+LazyData: TRUE
+VignetteBuilder: knitr, rmarkdown
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+Language: en-US
+Imports: checkmate, data.table (>= 1.9.8), stats, wrapr
+Suggests: ggplot2, here, kableExtra, knitr, mice, midfielddata (>=
+        0.2.0), rmarkdown, tinytest
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2023-07-07 19:28:47 UTC; layto
+Author: Richard Layton [cre, aut, cph],
+  Russell Long [aut, cph, dtm],
+  Matthew Ohland [aut, cph],
+  Marisa Orr [aut, cph],
+  Susan Lord [aut, cph]
+Repository: CRAN
+Date/Publication: 2023-07-08 09:50:06 UTC

@@ -1,0 +1,50 @@
+Package: EGRET
+Type: Package
+Title: Exploration and Graphics for RivEr Trends
+Version: 3.0.8
+Authors@R: c( person("Robert", "Hirsch", role = c("aut"),
+    email = "rhirsch@usgs.gov", 
+    comment=c(ORCID="0000-0002-4534-075X")),
+    person("Laura", "DeCicco", role = c("aut","cre"),
+    email = "ldecicco@usgs.gov",
+    comment=c(ORCID="0000-0002-3915-9487")), 
+    person("Tim", "Cohn", role = c("ctb")),
+    person("David", "Watkins", role = c("ctb")),
+    person("Lindsay","Carr", role = c("ctb")),
+    person("Jennifer","Murphy", role = c("aut"),
+    email = "jmurphy@usgs.gov",
+    comment=c(ORCID="0000-0002-0881-0919")))
+Description: Statistics and graphics for streamflow history,
+    water quality trends, and the statistical modeling algorithm: Weighted
+    Regressions on Time, Discharge, and Season (WRTDS). 
+License: CC0
+Depends: R (>= 3.5)
+Imports: dataRetrieval (>= 2.0.1), survival, fields, methods, utils,
+        grDevices, graphics, stats, truncnorm, foreach, MASS
+Suggests: EGRETci, knitr, rmarkdown, extrafont, testthat, rkt,
+        doParallel, parallel, pkgdown, png, dplyr, zyp, lubridate, covr
+LazyLoad: yes
+LazyData: yes
+BugReports: https://github.com/DOI-USGS/EGRET/issues
+VignetteBuilder: knitr
+BuildVignettes: true
+URL: https://pubs.usgs.gov/tm/04/a10/
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the United States
+        Geological Survey, an agency of the United States Department of
+        Interior. For more information, see the official USGS copyright
+        policy at
+        https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-03-02 16:57:00 UTC; ldecicco
+Author: Robert Hirsch [aut] (<https://orcid.org/0000-0002-4534-075X>),
+  Laura DeCicco [aut, cre] (<https://orcid.org/0000-0002-3915-9487>),
+  Tim Cohn [ctb],
+  David Watkins [ctb],
+  Lindsay Carr [ctb],
+  Jennifer Murphy [aut] (<https://orcid.org/0000-0002-0881-0919>)
+Maintainer: Laura DeCicco <ldecicco@usgs.gov>
+Repository: CRAN
+Date/Publication: 2023-03-03 01:00:12 UTC

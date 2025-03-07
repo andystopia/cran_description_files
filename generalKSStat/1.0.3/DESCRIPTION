@@ -1,0 +1,24 @@
+Package: generalKSStat
+Type: Package
+Title: Computes KS-Like Goodness-of-Fit Test Statistics
+Version: 1.0.3
+Date: 2020-03-23
+Author: Jiefei Wang
+Maintainer: Jiefei Wang<jwang96@buffalo.edu>
+Description: Computing KS-like goodness-of-fit test statistics such as the 
+    Kolmogorov-Smirnov, Berk-Jones and the higher criticism statistics. 
+    The p-values are computed via the Exact-KS-FFT(fast Fourier transform) method 
+    developed by Dimitrova, Kaishev, Tan (2017) <doi:10.18637/jss.v039.i11>. 
+    The algorithm works for the sample size up to 25,000.
+License: GPL-3
+SystemRequirements: C++11
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+LinkingTo: Rcpp
+Imports: Rcpp, methods, stats
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-03-26 17:25:25 UTC; wangj
+Repository: CRAN
+Date/Publication: 2020-03-28 12:10:05 UTC

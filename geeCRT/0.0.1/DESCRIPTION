@@ -1,0 +1,44 @@
+Package: geeCRT
+Type: Package
+Title: Bias-Corrected GEE for Cluster Randomized Trials
+Version: 0.0.1
+Date: 2020-11-06
+Authors@R: c(person(given = "Hengshi", family = "Yu", role = c("aut", "cre"), 
+             email="hengshi@umich.edu"), 
+             person(given = "Fan", family = "Li", role ="aut", 
+             email = "fan.f.li@yale.edu"),
+             person(given = "Paul", family = "Rathouz", role ="aut", 
+             email = "paul.rathouz@austin.utexas.edu"), 
+             person(given = "Elizabeth L.", family = "Turner", role ="aut", 
+             email = "liz.turner@duke.edu"), 
+             person(given = "John", family = "Preisser", role ="aut", 
+             email = "jpreisse@bios.unc.edu")
+             ) 
+Maintainer: Hengshi Yu <hengshi@umich.edu>
+Description: Population-averaged models have been increasingly used in the design and analysis of 
+             cluster randomized trials (CRTs). To facilitate the applications of population-averaged 
+             models in CRTs, the package implements the generalized estimating equations (GEE) and 
+             matrix-adjusted estimating equations (MAEE) approaches to jointly estimate the marginal 
+             mean models correlation models both for general CRTs and stepped wedge CRTs. Despite the 
+             general GEE/MAEE approach, the package also implements a fast cluster-period GEE method 
+             specifically for stepped wedge CRTs with large and variable cluster-period sizes and gives 
+             a simple and efficient estimating equations approach based on the cluster-period means to 
+             estimate the intervention effects as well as correlation parameters. In addition, the package 
+             also provides functions for generating correlated binary data with specific mean vector and 
+             correlation matrix based on the multivariate probit method in Emrich and Piedmonte (1991) <doi:10.1080/00031305.1991.10475828> or 
+             the conditional linear family method in Qaqish (2003) <doi:10.1093/biomet/90.2.455>. 
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.6.0)
+Imports: MASS, rootSolve, mvtnorm
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-11-07 01:39:08 UTC; hengshiyu
+Author: Hengshi Yu [aut, cre],
+  Fan Li [aut],
+  Paul Rathouz [aut],
+  Elizabeth L. Turner [aut],
+  John Preisser [aut]
+Repository: CRAN
+Date/Publication: 2020-11-11 15:50:05 UTC

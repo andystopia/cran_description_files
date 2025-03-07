@@ -1,0 +1,41 @@
+Package: IRon
+Type: Package
+Title: Solving Imbalanced Regression Tasks
+Version: 0.1.2
+Authors@R: c(person("Nuno", "Moniz", email = "nmmoniz@inesctec.pt",
+                                        role = c("cre","aut")),
+           person("Rita", "P. Ribeiro", email = "rpribeiro@dcc.fc.up.pt",
+                                        role = "aut"),
+           person("Miguel", "Margarido", email = "miguelmargarido@gmail.com",
+                                        role = "ctb"))
+Description: Imbalanced domain learning has almost exclusively focused on solving 
+    classification tasks, where the objective is to predict cases labelled with a 
+    rare class accurately. Such a well-defined approach for regression tasks lacked 
+    due to two main factors. First, standard regression tasks assume that each value 
+    is equally important to the user. Second, standard evaluation metrics focus on 
+    assessing the performance of the model on the most common cases. This package 
+    contains methods to tackle imbalanced domain learning problems in regression 
+    tasks, where the objective is to predict extreme (rare) values.
+    The methods contained in this package are: 1) an automatic and non-parametric 
+    method to obtain such relevance functions; 2) visualisation tools; 3) suite of 
+    evaluation measures for optimisation/validation processes; 4) the squared-error 
+    relevance area measure, an evaluation metric tailored for imbalanced regression tasks.
+    More information can be found in Ribeiro and Moniz (2020) <doi:10.1007/s10994-020-05900-9>.
+URL: https://github.com/nunompmoniz/IRon
+BugReports: https://github.com/nunompmoniz/IRon/issues
+License: CC0
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+Depends: R (>= 2.10)
+Imports: Rcpp, stats, ggpubr, gridExtra, ggplot2, robustbase, scam
+Suggests: rpart, e1071, earth, randomForest, mgcv, reshape
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2022-06-13 23:02:59 UTC; admin
+Author: Nuno Moniz [cre, aut],
+  Rita P. Ribeiro [aut],
+  Miguel Margarido [ctb]
+Maintainer: Nuno Moniz <nmmoniz@inesctec.pt>
+Repository: CRAN
+Date/Publication: 2022-06-14 06:50:02 UTC

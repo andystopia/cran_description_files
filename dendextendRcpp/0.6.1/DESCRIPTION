@@ -1,0 +1,33 @@
+Package: dendextendRcpp
+Type: Package
+Title: Faster Dendrogram Manipulation using 'Rcpp'
+Version: 0.6.1
+Date: 2015-05-22
+Authors@R: c(person("Tal", "Galili", role = c("aut", "cre", "cph"), email =
+    "tal.galili@gmail.com", comment = "http://www.r-statistics.com"),
+    person("Romain", "Francois", role = "ctb"), person("Dirk", "Eddelbuettel",
+    role = "ctb"), person("Kevin", "Ushey", role = "ctb"),
+    person("Yoav", "Benjamini", role = "ths"))
+Description: Offers faster manipulation of dendrogram objects in
+    R. A dendrogram object in R is a list structure with attributes in its
+    nodes and leaves. Working with dendrogram objects often require a function
+    to recursively go through all (or most) element in the list object.
+    Naturally, such function are rather slow in R, but can become much faster
+    thanks to 'Rcpp'.
+License: GPL-2 | GPL-3
+URL: https://github.com/talgalili/dendextendRcpp/,
+        http://cran.r-project.org/web/packages/dendextendRcpp/
+BugReports: https://github.com/talgalili/dendextendRcpp/issues
+Depends: R (>= 3.0.0), Rcpp (>= 0.11.0), dendextend (>= 0.14.0)
+Suggests: testthat, microbenchmark
+LinkingTo: Rcpp
+Packaged: 2015-05-22 18:15:52 UTC; junior
+Author: Tal Galili [aut, cre, cph] (http://www.r-statistics.com),
+  Romain Francois [ctb],
+  Dirk Eddelbuettel [ctb],
+  Kevin Ushey [ctb],
+  Yoav Benjamini [ths]
+Maintainer: Tal Galili <tal.galili@gmail.com>
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-05-22 20:21:16

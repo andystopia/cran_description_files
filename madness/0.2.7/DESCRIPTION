@@ -1,0 +1,32 @@
+Package: madness
+Maintainer: Steven E. Pav <shabbychef@gmail.com>
+Authors@R: c(person(c("Steven", "E."), "Pav", 
+    role=c("aut","cre"),
+    email="shabbychef@gmail.com",
+    comment = c(ORCID = "0000-0002-4197-6195")))
+Version: 0.2.7
+Date: 2020-02-07
+License: LGPL-3
+Title: Automatic Differentiation of Multivariate Operations
+BugReports: https://github.com/shabbychef/madness/issues
+Description: An object that supports automatic differentiation
+    of matrix- and multidimensional-valued functions with 
+    respect to multidimensional independent variables. 
+    Automatic differentiation is via 'forward accumulation'.
+Depends: R (>= 3.2.0)
+Imports: Matrix, matrixcalc, expm, methods
+Suggests: testthat, dplyr, tidyr, lubridate, SharpeR, sandwich,
+        formatR, knitr
+URL: https://github.com/shabbychef/madness
+LazyData: true
+VignetteBuilder: knitr
+Collate: 'AllClass.r' 'bind.r' 'blockrep.r' 'coerce.r' 'data.r' 'det.r'
+        'diag.r' 'eigen.r' 'elwise.r' 'madness_pkg.r' 'matwise.r'
+        'max.r' 'norm.r' 'numderiv.r' 'Ops.r' 'reshape.r' 'solve.r'
+        'sum.r' 'sums.r' 'theta.r' 'to_objective.r' 'trace.r'
+        'twomoments.r' 'utils.r' 'vcov.r' 'vec.r'
+NeedsCompilation: no
+Packaged: 2020-02-08 05:52:43 UTC; spav
+Author: Steven E. Pav [aut, cre] (<https://orcid.org/0000-0002-4197-6195>)
+Repository: CRAN
+Date/Publication: 2020-02-08 07:00:03 UTC

@@ -1,0 +1,30 @@
+Package: lookout
+Type: Package
+Title: Leave One Out Kernel Density Estimates for Outlier Detection
+Version: 0.1.0
+Authors@R: c(
+  person("Sevvandi", "Kandanaarachchi", email = "sevvandik@gmail.com",
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0337-0395")),
+  person("Rob", "Hyndman", email = "rob.hyndman@monash.edu",
+  role = c("aut"), comment = c(ORCID = "0000-0002-2140-5352")) 
+ )
+Maintainer: Sevvandi Kandanaarachchi <sevvandik@gmail.com>
+Description: Outlier detection using leave-one-out kernel density estimates and
+    extreme value theory. The bandwidth for kernel density estimates is computed 
+    using persistent homology, a technique in topological data analysis. Using 
+    peak-over-threshold method, a generalized Pareto distribution is fitted to
+    the log of leave-one-out kde values to identify outliers. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: TDAstats, evd, RANN, ggplot2, tidyr
+Suggests: knitr, rmarkdown
+URL: https://sevvandi.github.io/lookout/
+NeedsCompilation: no
+Packaged: 2021-02-10 04:10:14 UTC; Sevvandi
+Author: Sevvandi Kandanaarachchi [aut, cre]
+    (<https://orcid.org/0000-0002-0337-0395>),
+  Rob Hyndman [aut] (<https://orcid.org/0000-0002-2140-5352>)
+Repository: CRAN
+Date/Publication: 2021-02-12 10:20:02 UTC

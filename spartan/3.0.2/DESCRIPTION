@@ -1,0 +1,33 @@
+Package: spartan
+Type: Package
+Title: Simulation Parameter Analysis R Toolkit ApplicatioN: 'spartan'
+Version: 3.0.2
+Authors@R: c(person("Kieran","Alden", email = "kieran.alden@gmail.com", role =c("cre","aut")),
+	     person("Mark","Read",role ="aut"),
+	     person("Paul","Andrews",role ="aut"),
+	     person("Jason","Cosgrove",role ="aut"),
+	     person("Mark","Coles",role ="aut"),
+	     person("Jon","Timmis",role ="aut"))
+Description: Computer simulations are becoming a popular technique to use in attempts to further our understanding of complex systems. 'spartan', first described in our 2013 publication in PLoS Computational Biology, provided code for four techniques described in available literature which aid the analysis of simulation results, at both single and multiple timepoints in the simulation run. The first technique addresses aleatory uncertainty in the system caused through inherent stochasticity, and determines the number of replicate runs necessary to generate a representative result. The second examines how robust a simulation is to parameter perturbation, through the use of a one-at-a-time parameter analysis technique. Thirdly, a latin hypercube based sensitivity analysis technique is included which can elucidate non-linear effects between parameters and indicate implications of epistemic uncertainty with reference to the system being modelled. Finally, a further sensitivity analysis technique, the extended Fourier Amplitude Sampling Test (eFAST) has been included to partition the variance in simulation results between input parameters, to determine the parameters which have a significant effect on simulation behaviour. Version 1.3 added support for Netlogo simulations, aiding simulation developers who use Netlogo to build their simulations perform the same analyses. Version 2.0 added the ability to read all simulations in from a single CSV file in addition to the prescribed folder structure in previous versions. Version 3.0 offers significant additional functionality that permits the creation of emulations of simulation results, derived using the same sampling techniques in the global sensitivity analysis techniques, and the generation of combinations of these machine learning algorithms to one create one predictive tool, more commonly known as an ensemble model. Version 3.0 also improved the standard of the graphs produced in the original sensitivity analysis techniques, and introduced a polar plot to examine parameter sensitivity.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: lhs, gplots, XML, plotrix, mlegp, ggplot2, neuralnet, psych,
+        mco
+Depends: randomForest, e1071, R (>= 2.10.0)
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+URL: http://www.york.ac.uk/ycil/software/spartan
+BugReports: http://github.com/kalden/spartan/issues
+NeedsCompilation: no
+Packaged: 2018-11-19 17:57:51 UTC; kieran
+Author: Kieran Alden [cre, aut],
+  Mark Read [aut],
+  Paul Andrews [aut],
+  Jason Cosgrove [aut],
+  Mark Coles [aut],
+  Jon Timmis [aut]
+Maintainer: Kieran Alden <kieran.alden@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-11-19 18:20:03 UTC

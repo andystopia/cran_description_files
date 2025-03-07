@@ -1,0 +1,32 @@
+Package: ClimDown
+Version: 1.0.2
+Date: 2016-12-01
+Title: Climate Downscaling Library for Daily Climate Model Output
+Authors@R: c(person("Alex Cannon", role = "aut", email = "acannon@uvic.ca"),
+	     person("James Hiebert", role = c("aut", "cre"), email = "hiebert@uvic.ca"),
+	     person("Arelia Werner", role = "aut", email = "wernera@uvic.ca"),
+	     person("Steven Sobie", role = "aut", email = "ssobie@uvic.ca"))
+Imports: PCICt, udunits2, ncdf4, fields, foreach, seas, abind, stats
+Suggests: RUnit
+Encoding: UTF-8
+Description: A suite of routines for downscaling coarse scale global
+    climate model (GCM) output to a fine spatial resolution. Includes
+    Bias-Corrected Spatial Downscaling (BCDS), Constructed Analogues
+    (CA), Climate Imprint (CI), and Bias Correction/Constructed
+    Analogues with Quantile mapping reordering (BCCAQ). Developed by
+    the the Pacific Climate Impacts Consortium (PCIC), Victoria,
+    British Columbia, Canada.
+License: GPL-3
+URL: https://www.r-project.org
+LazyData: yes
+BugReports: https://github.com/pacificclimate/ClimDown
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-12-02 00:54:49 UTC; james
+Author: Alex Cannon [aut],
+  James Hiebert [aut, cre],
+  Arelia Werner [aut],
+  Steven Sobie [aut]
+Maintainer: James Hiebert <hiebert@uvic.ca>
+Repository: CRAN
+Date/Publication: 2016-12-02 10:46:19

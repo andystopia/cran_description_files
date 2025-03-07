@@ -1,0 +1,32 @@
+Package: ph2rand
+Type: Package
+Title: Randomized Phase II Oncology Trials with Bernoulli Outcomes
+Version: 0.1.0
+Date: 2021-02-24
+Authors@R: c(person(given = "Michael", family = "Grayling",
+                    email = "michael.grayling@newcastle.ac.uk",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-0680-6668")))
+Description: Provides functions to assist with the design of randomized
+    comparative phase II oncology trials that assume their primary outcome
+    variable is Bernoulli distributed. Specifically, support is provided to (a)
+    perform a sample size calculation when using one of several published
+    designs, (b) evaluate the operating characteristics of a given design (both
+    analytically and via simulation), and (c) produce informative plots.
+License: MIT + file LICENSE
+Imports: dplyr, ggplot2, Rcpp, scales, stats, tibble, tidyr
+LinkingTo: Rcpp
+RoxygenNote: 7.1.1
+URL: https://github.com/mjg211/ph2rand
+BugReports: https://github.com/mjg211/ph2rand/issues
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2021-03-01 13:42:18 UTC; michaelgrayling
+Author: Michael Grayling [aut, cre] (<https://orcid.org/0000-0002-0680-6668>)
+Maintainer: Michael Grayling <michael.grayling@newcastle.ac.uk>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2021-03-02 19:10:03 UTC

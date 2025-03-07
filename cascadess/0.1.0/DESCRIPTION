@@ -1,0 +1,37 @@
+Package: cascadess
+Type: Package
+Title: A Style Pronoun for 'htmltools' Tags
+Version: 0.1.0
+Authors@R: c(
+  person("Nathan", "Teetor", email = "nate@haufin.ch",
+         role = c("aut", "cre")),
+  person(family = "The Bootstrap Authors", comment = "Bootstrap library",
+         role = "cph"),
+  person(family = "Twitter, Inc", comment = "Bootstrap library",
+         role = "cph"))
+Description: Apply styles to tag elements directly or with the
+  .style pronoun. Using the pronoun, styles are created within
+  the context of a tag element. Change borders, background colors,
+  margins, layouts, and more.
+License: MIT + file LICENSE
+URL: https://github.com/nteetor/cascadess
+BugReports: https://github.com/nteetor/cascadess/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.3)
+Imports: crayon, htmltools (>= 0.4.0), magrittr, rlang, utils
+Suggests: rmarkdown, shiny, testthat (>= 2.1.0)
+Collate: 'align.R' 'utils.R' 'background.R' 'border.R' 'cascadess.R'
+        'display.R' 'eval-style.R' 'flex.R' 'float.R' 'font.R' 'gap.R'
+        'height.R' 'margin.R' 'overflow.R' 'padding.R' 'position.R'
+        'reexports.R' 'responsive.R' 'shadow.R' 'text.R' 'utils-docs.R'
+        'visible.R' 'width.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2020-11-26 18:32:44 UTC; Nate
+Author: Nathan Teetor [aut, cre],
+  The Bootstrap Authors [cph] (Bootstrap library),
+  Twitter, Inc [cph] (Bootstrap library)
+Maintainer: Nathan Teetor <nate@haufin.ch>
+Repository: CRAN
+Date/Publication: 2020-11-30 09:00:08 UTC

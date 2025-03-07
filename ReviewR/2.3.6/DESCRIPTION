@@ -1,0 +1,46 @@
+Package: ReviewR
+Title: A Light-Weight, Portable Tool for Reviewing Individual Patient
+        Records
+Version: 2.3.6
+Authors@R: c(
+            person('Laura', 'Wiley', email = 'laura.wiley@cuanschutz.edu', role = c('aut'), comment = c(ORCID = "0000-0001-6681-9754")),
+            person('Luke', 'Rasmussen', email = 'luke.rasmussen@northwestern.edu', role = c('aut'), comment = c(ORCID = "0000-0002-4497-8049")),
+            person('David', 'Mayer', email = 'david.mayer@cuanschutz.edu', role = c('cre', 'aut')),
+            person(given = "The Wiley Lab", role = c("cph", "fnd"))
+            )
+Description: A portable Shiny tool to explore patient-level electronic health record data 
+    and perform chart review in a single integrated framework. This tool supports 
+    browsing clinical data in many different formats including multiple versions 
+    of the 'OMOP' common data model as well as the 'MIMIC-III' data model. In 
+    addition, chart review information is captured and stored securely via the 
+    Shiny interface in a 'REDCap' (Research Electronic Data Capture) project 
+    using the 'REDCap' API. See the 'ReviewR' website for additional information, 
+    documentation, and examples.
+License: BSD_3_clause + file LICENSE
+URL: https://reviewr.thewileylab.org/,
+        https://github.com/thewileylab/ReviewR/
+BugReports: https://github.com/thewileylab/ReviewR/issues
+Depends: R (>= 3.5.0)
+Imports: bigrquery (>= 1.2.0), config, dashboardthemes, DBI, dbplyr,
+        dplyr (>= 1.0.0), DT, gargle, glue, golem, httr, jsonlite,
+        magrittr, pkgload, purrr, redcapAPI, REDCapR, rlang (>= 0.4.7),
+        RPostgres, RSQLite, shiny (>= 1.5.0), shinycssloaders (>=
+        1.0.0), shinydashboard, shinydashboardPlus (>= 2.0.0), shinyjs,
+        shinyWidgets (>= 0.6.0), snakecase, stringr, tibble, tidyr (>=
+        1.1.0)
+Suggests: fs, gt, here, htmltools, knitr, processx, readr, rmarkdown,
+        rstudioapi, spelling, testthat (>= 2.1.0), usethis
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-04-01 16:17:32 UTC; MayerDav
+Author: Laura Wiley [aut] (<https://orcid.org/0000-0001-6681-9754>),
+  Luke Rasmussen [aut] (<https://orcid.org/0000-0002-4497-8049>),
+  David Mayer [cre, aut],
+  The Wiley Lab [cph, fnd]
+Maintainer: David Mayer <david.mayer@cuanschutz.edu>
+Repository: CRAN
+Date/Publication: 2021-04-02 11:30:05 UTC

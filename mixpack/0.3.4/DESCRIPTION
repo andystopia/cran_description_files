@@ -1,0 +1,26 @@
+Package: mixpack
+Encoding: UTF-8
+Title: Tools to Work with Mixture Components
+Version: 0.3.4
+Date: 2015-12-06
+Authors@R: c(person("Marc", "Comas-Cufí", role = c("aut", "cre"), 
+                    email = "mcomas@imae.udg.edu"),
+             person("Josep Antoni", "Martín-Fernández", role = "aut"),
+             person("Glòria", "Mateu-Figueras", role = "aut"))
+URL: http://mcomas.net/software/mixpack
+Description: A collection of tools implemented to facilitate the analysis of the components of a finite mixture distributions. The package has some functions to generate random samples coming from a finite mixture. The package provides a C++ implementation for the construction of a hierarchy over the components of a given finite mixture.
+Depends: R (>= 3.0.2)
+Imports: Rcpp (>= 0.11.5), mvtnorm, methods, stats
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: mclust, Rmixmod, knitr
+License: GPL
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 5.0.1
+Packaged: 2015-12-08 14:29:55 UTC; marc
+Author: Marc Comas-Cufí [aut, cre],
+  Josep Antoni Martín-Fernández [aut],
+  Glòria Mateu-Figueras [aut]
+Maintainer: Marc Comas-Cufí <mcomas@imae.udg.edu>
+Repository: CRAN
+Date/Publication: 2015-12-08 23:37:46

@@ -1,0 +1,40 @@
+Package: Rd
+Type: Package
+Title: Rd Manipulation and Creation
+Version: 0.2.0
+Authors@R: c( 
+    person("Andrew", "Redd", role = c("aut", "cre")
+          , email = "andrew.redd@hsc.utah.edu"
+          , comment = c(ORCID = "https://orcid.org/000-0002-6149-2438")
+          ), 
+    person("R Documentation Task Force", role=c("ctb")
+          , comment = c(url = "https://rdoctaskforce.github.io/")
+          ),
+    person("R Consortium", role=c("fnd", "cph")
+          , comment = c(url = "https://www.r-consortium.org")
+          ))
+Maintainer: Andrew Redd <andrew.redd@hsc.utah.edu>
+License: GPL-2
+Description: Creation and manipulation of R documentation (Rd) as 
+    R objects.  Also contains functions for checking consistency 
+    of Rd and S4 generics and methods for converting  
+    objects to Rd formatted output.
+Imports: assertthat, methods, pkgcond, postlogic, purrr, rlang,
+        testthat, tools, utils
+Suggests: covr, htmltools, rmarkdown (>= 1.8), stringi
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+Language: en-US
+Collate: 'setup-set_old_classes.R' 'util-aliases.R' 'Class-Rd.R'
+        'Fun-toRd.R' 'Rd_lines.R' 'S3_extensions.R' 'canon.R'
+        'construction.R' 'convenience.R' 'globals.R' 'indent.R'
+        'keyword.db.R' 'testextra.R' 'util-Rd.R'
+URL: https://github.com/RDocTaskForce/Rd
+BugReports: https://github.com/RDocTaskForce/Rd/issues
+NeedsCompilation: no
+Packaged: 2019-05-22 23:37:20 UTC; u0092104
+Author: Andrew Redd [aut, cre] (<https://orcid.org/000-0002-6149-2438>),
+  R Documentation Task Force [ctb] (https://rdoctaskforce.github.io/),
+  R Consortium [fnd, cph] (https://www.r-consortium.org)
+Repository: CRAN
+Date/Publication: 2019-05-23 04:10:27 UTC

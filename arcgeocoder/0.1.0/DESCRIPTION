@@ -1,0 +1,36 @@
+Package: arcgeocoder
+Title: Geocoding with the 'ArcGIS' REST API Service
+Version: 0.1.0
+Authors@R: 
+    person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8457-4658"))
+Description: Lite interface for finding locations of addresses or
+    businesses around the world using the 'ArcGIS' REST API service
+    <https://developers.arcgis.com/rest/geocode/api-reference/overview-world-geocoding-service.htm>.
+    Address text can be converted to location candidates and a location
+    can be converted into an address.
+License: MIT + file LICENSE
+URL: https://dieghernan.github.io/arcgeocoder/,
+        https://github.com/dieghernan/arcgeocoder
+BugReports: https://github.com/dieghernan/arcgeocoder/issues
+Depends: R (>= 3.6.0)
+Imports: dplyr (>= 1.0.0), jsonlite (>= 1.7.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tidygeocoder
+VignetteBuilder: knitr
+Config/Needs/website: dieghernan/gitdevr, ggplot2, sf, lwgeom, leaflet,
+        terra, tidyterra, maptiles, styler, mapSpain
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.0
+X-schema.org-applicationCategory: cartography
+X-schema.org-keywords: r, geocoding, arcgis, address,
+        reverse-geocoding, rstats, r-package, api-wrapper
+NeedsCompilation: no
+Packaged: 2024-01-14 20:57:58 UTC; diego
+Author: Diego Hernangómez [aut, cre, cph]
+    (<https://orcid.org/0000-0001-8457-4658>)
+Maintainer: Diego Hernangómez <diego.hernangomezherrero@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-15 17:00:06 UTC

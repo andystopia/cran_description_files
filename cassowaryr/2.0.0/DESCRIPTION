@@ -1,0 +1,51 @@
+Package: cassowaryr
+Title: Compute Scagnostics on Pairs of Numeric Variables in a Data Set
+Version: 2.0.0
+Authors@R: 
+    c(person(given = "Harriet",
+             family = "Mason",
+             email = "harriet.m.mason@gmail.com",
+             role = c("aut", "cre")),
+      person(given = "Stuart", 
+             family = "Lee", 
+             email = "stuart.andrew.lee@gmail.com", 
+             role = "aut", 
+             comment = c(ORCID = "0000-0003-1179-8436")),
+      person(given = "Ursula", 
+             family = "Laa", 
+             email = "ursula.laa@boku.ac.at", 
+             role = "aut", 
+             comment = c(ORCID = "0000-0002-0249-6439")),
+      person(given = "Di", 
+             family = "Cook", 
+             email = "dicook@monash.edu", 
+             role = "aut", 
+             comment = c(ORCID = "0000-0002-3813-7155")))
+Description: Computes a range of scatterplot diagnostics (scagnostics) on pairs
+  of numerical variables in a data set. A range of scagnostics, including graph
+  and association-based scagnostics described by Leland Wilkinson and Graham
+  Wills (2008) <doi:10.1198/106186008X320465> and association-based
+  scagnostics described by Katrin Grimm (2016,ISBN:978-3-8439-3092-5) can be 
+  computed. Summary and plotting functions are provided.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/numbats/cassowaryr
+BugReports: https://github.com/numbats/cassowaryr/issues
+Depends: R (>= 4.0.0)
+Imports: igraph, alphahull (>= 2.5), splancs, interp, energy, dplyr,
+        ggplot2, magrittr, progress, tibble, stats, tidyselect
+RoxygenNote: 7.2.0
+Suggests: rmarkdown, knitr, mgcv, GGally, tidyr, testthat (>= 3.0.0),
+        covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-07-22 08:47:29 UTC; hmas0003
+Author: Harriet Mason [aut, cre],
+  Stuart Lee [aut] (<https://orcid.org/0000-0003-1179-8436>),
+  Ursula Laa [aut] (<https://orcid.org/0000-0002-0249-6439>),
+  Di Cook [aut] (<https://orcid.org/0000-0002-3813-7155>)
+Maintainer: Harriet Mason <harriet.m.mason@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-09 12:30:02 UTC

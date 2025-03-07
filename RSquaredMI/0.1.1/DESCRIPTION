@@ -1,0 +1,29 @@
+Package: RSquaredMI
+Type: Package
+Title: R-Squared with Multiply Imputed Data
+Version: 0.1.1
+Authors@R: c(
+    person(c("Julian",  "D."), "Karch",
+      email = "j.d.karch@fsw.leidenuniv.nl", 
+      role = c("aut", "cph"),
+      comment = c(ORCID = "0000-0002-1625-2822")),
+    person("Joost", "van Ginkel",
+      email = "jginkel@fsw.leidenuniv.nl", 
+      role = c("aut", "cre", "cph"))
+  )
+Description: Provides R-squared values and standardized regression coefficients for linear models applied to multiply imputed datasets as obtained by 'mice'. Confidence intervals, zero-order correlations, and alternative adjusted R-squared estimates are also available. The methods are described in Van Ginkel and Karch (2024) <doi:10.1111/bmsp.12344> and in Van Ginkel (2020) <doi:10.1007/s11336-020-09696-4>.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: altR2 (>= 1.1.0), lm.beta, matrixStats, stats, mice
+RoxygenNote: 7.3.2
+URL: https://github.com/karchjd/RsquaredMI
+BugReports: https://github.com/karchjd/RsquaredMI/issues
+NeedsCompilation: no
+Packaged: 2024-09-19 08:04:21 UTC; karch
+Author: Julian D. Karch [aut, cph] (<https://orcid.org/0000-0002-1625-2822>),
+  Joost van Ginkel [aut, cre, cph]
+Maintainer: Joost van Ginkel <jginkel@fsw.leidenuniv.nl>
+Repository: CRAN
+Date/Publication: 2024-09-19 16:00:07 UTC

@@ -1,0 +1,26 @@
+Package: GeoTcgaData
+Type: Package
+Title: Processing various types of data on GEO and TCGA
+Version: 1.0.2
+Authors@R: person(given = "Erqiang", family = "Hu", email = "13766876214@163.com", role  = c("aut", "cre"))
+Description: Gene Expression Omnibus(GEO) and The Cancer Genome Atlas (TCGA) 
+    provide us with a wealth of data, such as RNA-seq, DNA Methylation, SNP
+    and Copy number variation data. It's easy to download data from TCGA using the 
+    gdc tool, but processing these data into a format suitable for bioinformatics 
+    analysis requires more work. This R package was developed to handle these data.
+Depends: R (>= 3.6.0)
+License: Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, DESeq2, S4Vectors, ChAMP, impute, tidyr,
+        clusterProfiler, org.Hs.eg.db, edgeR, limma, quantreg
+VignetteBuilder: knitr
+Imports: utils, data.table, magrittr, plyr, cqn
+Language: en-US
+NeedsCompilation: no
+Packaged: 2021-10-24 08:43:09 UTC; Dell
+Author: Erqiang Hu [aut, cre]
+Maintainer: Erqiang Hu <13766876214@163.com>
+Repository: CRAN
+Date/Publication: 2021-10-24 09:20:05 UTC

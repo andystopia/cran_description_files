@@ -1,0 +1,45 @@
+Package: rjsoncons
+Title: 'C++' Header-Only 'jsoncons' Library for 'JSON' Queries
+Version: 1.2.0
+Authors@R: c(
+    person(
+        "Martin", "Morgan", role = c("aut", "cre"),
+        email = "mtmorgan.xyz@gmail.com",
+        comment = c(ORCID = "0000-0002-5874-8148")
+    ),
+    person(
+        "Marcel", "Ramos", role = "aut",
+        comment = c(ORCID = "0000-0002-3242-0582")
+    ),
+    person(
+        "Daniel", "Parker", role = c("aut", "cph"),
+        email = "danielaparker@yahoo.com",
+        comment = "jsoncons C++ library maintainer"
+    ))
+Description: The 'jsoncons'
+    <https://danielaparker.github.io/jsoncons/> 'C++' header-only
+    library constructs representations from a 'JSON' character vector,
+    and provides extensions for flexible queries and other operations
+    on 'JSON' objects. This package provides 'R' functions to query
+    (filter or transform) and pivot (convert from array-of-objects to
+    object-of-arrays, for easy import into 'R') 'JSON' or 'NDJSON'
+    strings or files using 'JSONpointer', 'JSONpath' or 'JMESpath'
+    expression. The 'jsoncons' library is also be easily linked to
+    other packages for direct access to 'C++' functionality.
+Imports: utils
+Suggests: jsonlite, tibble, cli, tinytest, BiocStyle, knitr, rmarkdown
+LinkingTo: cpp11
+License: BSL-1.0
+NeedsCompilation: yes
+Encoding: UTF-8
+BugReports: https://github.com/mtmorgan/rjsoncons/issues
+RoxygenNote: 7.3.0
+VignetteBuilder: knitr
+URL: https://mtmorgan.github.io/rjsoncons/
+Packaged: 2024-01-26 22:14:07 UTC; ma38727
+Author: Martin Morgan [aut, cre] (<https://orcid.org/0000-0002-5874-8148>),
+  Marcel Ramos [aut] (<https://orcid.org/0000-0002-3242-0582>),
+  Daniel Parker [aut, cph] (jsoncons C++ library maintainer)
+Maintainer: Martin Morgan <mtmorgan.xyz@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-26 22:30:02 UTC

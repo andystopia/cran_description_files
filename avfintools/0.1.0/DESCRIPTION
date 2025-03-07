@@ -1,0 +1,27 @@
+Package: avfintools
+Type: Package
+Title: Financial Analysis Tools Using Data from 'Alpha Vantager'
+Version: 0.1.0
+Authors@R: 
+     person("Edward", "Wei", role = c("aut", "cre", "cph"), email = "edwwei2020@gmail.com")
+Maintainer: Edward Wei <edwwei2020@gmail.com>
+Description: To pull data from 'ALPHA VANTAGE' <https://www.alphavantage.co/>, 
+  use the av_api_key() function from 'alphavantager' for inserting your API key. 
+  This is a complement to the 'alphavantager' package from CRAN. Contains 
+  commonly used quantitative finance tools. 'avfintools' stands for 
+  'ALPHA VANTAGE' Finance Tools, as it depends on sourcing financial data from 
+  the 'ALPHA VANTAGE' <https://www.alphavantage.co/documentation/> API.
+Language: en-US
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Depends: R(>= 4.0)
+Imports: methods(>= 4.2.0), alphavantager(>= 0.1.2), dplyr(>= 1.0.9),
+        lubridate(>= 1.8.0), plotly(>= 4.10.0), ggplot2(>= 3.3.6),
+        tibble(>= 3.1.7)
+NeedsCompilation: no
+Packaged: 2022-10-05 20:01:13 UTC; edmon
+Author: Edward Wei [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2022-10-06 16:10:08 UTC

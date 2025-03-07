@@ -1,0 +1,34 @@
+Package: micss
+Type: Package
+Title: Modified Iterative Cumulative Sum of Squares Algorithm
+Version: 0.1.5
+Authors@R: c(person("Josep Lluís", "Carrion-i-Silvestre", role = "aut", email = "carrion@ub.edu"),
+             person("Andreu", "Sansó", role = c("aut","cre"), email = "andreu.sanso@uib.eu"))
+Maintainer: Andreu Sansó <andreu.sanso@uib.eu>
+Description: Companion package of Carrion-i-Silvestre & Sansó (2023): 
+  "Generalized Extreme Value Approximation to the CUMSUMQ Test for Constant 
+  Unconditional Variance in Heavy-Tailed Time Series". It implements the Modified 
+  Iterative Cumulative Sum of Squares Algorithm, which is an extension of 
+  the Iterative Cumulative Sum of Squares (ICSS) Algorithm of Inclan and Tiao (1994), and it checks for changes in the 
+  unconditional variance of a time series controlling for the tail index of 
+  the underlying distribution. The fourth order moment is estimated non-parametrically
+  to avoid the size problems when the innovations are non-Gaussian (see, Sansó et al., 2004). 
+  Critical values and p-values are generated using a Generalized Extreme Value distribution approach.
+  References
+  Carrion-i-Silvestre J.J & Sansó A (2023) <https://www.ub.edu/irea/working_papers/2023/202309.pdf>.
+  Inclan C & Tiao G.C (1994) <doi:10.1080/01621459.1994.10476824>,
+  Sansó A & Aragó V & Carrion-i-Silvestre J.L (2004) <https://dspace.uib.es/xmlui/bitstream/handle/11201/152078/524035.pdf>.
+License: GPL-2
+Depends: R (>= 3.5.0), dplyr
+Imports: methods
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-08-16 08:02:57 UTC; HP
+Author: Josep Lluís Carrion-i-Silvestre [aut],
+  Andreu Sansó [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-08-16 09:52:37 UTC

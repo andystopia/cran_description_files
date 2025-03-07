@@ -1,0 +1,52 @@
+Package: spectralAnalysis
+Type: Package
+Title: Pre-Process, Visualize and Analyse Process Analytical Data, by
+        Spectral Data Measurements Made During a Chemical Process
+Version: 3.12.0
+Authors@R: c( person("Robin", "Van Oirbeek", role = c("aut") ),
+              person("Adriaan", "Blommaert", role = c("aut", "cre"),
+                     email = "adriaan.blommaert@openanalytics.eu"),
+              person("Nicolas", "Sauwen", role = c("aut"),
+                     email = "nicolas.sauwen@openanalytics.eu"),
+              person("Tor", "Maes", role = "ctb" ),
+              person("Jan", "Dijkmans", role = "ctb" ),
+              person("Jef", "Cuypers", role = "ctb" ),
+              person("Tatsiana", "Khamiakova", role = "ctb" ),
+              person("Michel", "Tiel", role = "ctb" ),
+              person("Claudia" , "Beleites" , role = "ctb" )
+              )                
+LazyData: true
+Maintainer: Adriaan Blommaert <adriaan.blommaert@openanalytics.eu>
+URL: http://www.openanalytics.eu
+Description: 
+    Infrared, near-infrared and Raman spectroscopic data measured during chemical reactions, provide structural fingerprints by which molecules can be identified and quantified. The application of these spectroscopic techniques as inline process analytical tools (PAT), provides the (pharma-)chemical industry with novel tools, allowing to monitor their chemical processes, resulting in a better process understanding through insight in reaction rates, mechanistics, stability, etc.
+    Data can be read into R via the generic spc-format, which is generally supported by spectrometer vendor software. Versatile pre-processing functions are available to perform baseline correction by linking to the 'baseline' package; noise reduction via the 'signal' package; as well as time alignment, normalization, differentiation, integration and interpolation. Implementation based on the S4 object system allows storing a pre-processing pipeline as part of a spectral data object, and easily transferring it to other datasets. Interactive plotting tools are provided based on the 'plotly' package. 
+    Non-negative matrix factorization (NMF) has been implemented to perform multivariate analyses on individual spectral datasets or on multiple datasets at once. NMF provides a parts-based representation of the spectral data in terms of spectral signatures of the chemical compounds and their relative proportions.
+    The functionality to read in spc-files was adapted from the 'hyperSpec' package.
+License: GPL-3
+Imports: baseline, BiocGenerics, data.table, ggplot2, jsonlite,
+        magrittr, methods, nnls, NMF, plotly, plyr, RColorBrewer,
+        signal, stats, viridis, hNMF
+RoxygenNote: 6.0.1.9000
+Suggests: testthat
+Collate: 'internalHelpers.R' 'allGenericFunctions.R'
+        'objectSpectraInTime.R' 'objectProcessTimes.R'
+        'objectLinking.R' 'alignmentFunctions.R'
+        'dataManagementTools.R' 'defaults.R' 'readSPC.R'
+        'saveSpectraInTime.R' 'spectralAnalysis.R'
+        'spectralIntegration.R' 'spectralNMF.R'
+        'spectralPreprocessing.R' 'spectralVisualization.R'
+        'subsetting.R'
+NeedsCompilation: no
+Packaged: 2018-06-11 10:37:24 UTC; ablommaert
+Author: Robin Van Oirbeek [aut],
+  Adriaan Blommaert [aut, cre],
+  Nicolas Sauwen [aut],
+  Tor Maes [ctb],
+  Jan Dijkmans [ctb],
+  Jef Cuypers [ctb],
+  Tatsiana Khamiakova [ctb],
+  Michel Tiel [ctb],
+  Claudia Beleites [ctb]
+Repository: CRAN
+Date/Publication: 2018-06-12 14:30:39 UTC

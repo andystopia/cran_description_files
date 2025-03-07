@@ -1,0 +1,31 @@
+Package: prqlr
+Title: R Bindings for the 'prql-compiler' Rust Library
+Description: 
+    Provides a function to convert 'PRQL' strings to 'SQL' strings.
+    Combined with other R functions that take 'SQL' as an argument,
+    'PRQL' can be used on R.
+Version: 0.2.1
+Authors@R: 
+    person("Tatsuya", "Shima", email = "ts1s1andn@gmail.com", role = c("aut", "cre"))
+URL: https://eitsupi.github.io/prqlr/, https://github.com/eitsupi/prqlr
+BugReports: https://github.com/eitsupi/prqlr/issues
+Depends: R (>= 4.2)
+Suggests: knitr (>= 1.38), rmarkdown, DBI, RSQLite, tidyquery,
+        nycflights13, dplyr, testthat (>= 3.0.0), patrick, withr
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: Cargo (rustc package manager)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/rextendr/version: 0.2.0.9000
+Config/Needs/dev: devtools, rextendr, data.table, dplyr, lintr, styler,
+        purrr, RcppTOML
+Config/Needs/website: pkgdown, rextendr
+NeedsCompilation: yes
+Packaged: 2023-02-28 10:19:18 UTC; rstudio
+Author: Tatsuya Shima [aut, cre]
+Maintainer: Tatsuya Shima <ts1s1andn@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-28 11:02:30 UTC

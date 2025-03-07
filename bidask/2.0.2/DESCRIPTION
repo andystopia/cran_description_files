@@ -1,0 +1,34 @@
+Package: bidask
+Type: Package
+Title: Efficient Estimation of Bid-Ask Spreads from Open, High, Low,
+        and Close Prices
+Version: 2.0.2
+Authors@R: c(
+    person(given = "Emanuele", family = "Guidotti", email = "emanuele.guidotti@usi.ch", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8961-6623")),
+    person(given = "David", family = "Ardia", role = c("ctb"), comment = c(ORCID = "0000-0003-2823-782X")),
+    person(given = "Tim", family = "Kroencke", role = c("ctb"), comment = c(ORCID = "0000-0001-8700-356X"))
+  )
+Description: Implements an efficient estimator of bid-ask spreads from open, high, low, and close prices
+  as described in Ardia, Guidotti, & Kroencke (2021) <https://www.ssrn.com/abstract=3892335>. 
+  It also provides an implementation of the estimators described in 
+  Roll (1984) <doi:10.1111/j.1540-6261.1984.tb03897.x>, 
+  Corwin & Schultz (2012) <doi:10.1111/j.1540-6261.2012.01729.x>,
+  and Abdi & Ranaldo (2017) <doi:10.1093/rfs/hhx084>.
+License: GPL-3
+URL: https://github.com/eguidotti/bidask
+BugReports: https://github.com/eguidotti/bidask/issues
+Encoding: UTF-8
+Imports: xts, zoo
+RoxygenNote: 7.2.3
+Suggests: dplyr, crypto2, quantmod, knitr, rmarkdown, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-12-15 16:30:07 UTC; eguidotti
+Author: Emanuele Guidotti [aut, cre] (<https://orcid.org/0000-0002-8961-6623>),
+  David Ardia [ctb] (<https://orcid.org/0000-0003-2823-782X>),
+  Tim Kroencke [ctb] (<https://orcid.org/0000-0001-8700-356X>)
+Maintainer: Emanuele Guidotti <emanuele.guidotti@usi.ch>
+Repository: CRAN
+Date/Publication: 2023-12-17 07:30:02 UTC

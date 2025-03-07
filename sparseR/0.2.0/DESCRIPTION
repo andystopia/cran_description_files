@@ -1,0 +1,43 @@
+Package: sparseR
+Type: Package
+Title: Variable Selection under Ranked Sparsity Principles for
+        Interactions and Polynomials
+Version: 0.2.0
+Authors@R: person("Ryan Andrew", "Peterson", 
+                  email = "ryan.a.peterson@cuanschutz.edu", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-4650-5798"))
+Description: 
+    An implementation of ranked sparsity methods, including
+    penalized regression methods such as the sparsity-ranked lasso, its
+    non-convex alternatives, and elastic net, as well as the sparsity-ranked
+    Bayesian Information Criterion. As described in Peterson and
+    Cavanaugh (2022) <doi:10.1007/s10182-021-00431-7>, ranked
+    sparsity is a philosophy with methods primarily useful for
+    variable selection in the presence of prior informational
+    asymmetry, which occurs in the context of trying to perform variable
+    selection in the presence of interactions and/or polynomials. Ultimately,
+    this package attempts to facilitate dealing with cumbersome interactions
+    and polynomials while not avoiding them entirely. Typically, models
+    selected under ranked sparsity principles will also be more transparent,
+    having fewer falsely selected interactions and polynomials than other
+    methods.
+Suggests: survival, knitr, rmarkdown, kableExtra, testthat, covr,
+        modeldata, MASS
+Imports: ncvreg, rlang, magrittr, dplyr, recipes (>= 1.0.0)
+Depends: R (>= 3.5)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+URL: https://petersonr.github.io/sparseR/,
+        https://github.com/petersonR/sparseR/
+Date: 2022-08-15
+NeedsCompilation: no
+Packaged: 2022-08-15 22:37:16 UTC; rpterson
+Author: Ryan Andrew Peterson [aut, cre]
+    (<https://orcid.org/0000-0002-4650-5798>)
+Maintainer: Ryan Andrew Peterson <ryan.a.peterson@cuanschutz.edu>
+Repository: CRAN
+Date/Publication: 2022-08-17 07:10:02 UTC

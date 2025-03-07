@@ -1,0 +1,32 @@
+Package: robust2sls
+Type: Package
+Title: Outlier Robust Two-Stage Least Squares Inference and Testing
+Version: 0.1.0
+Authors@R: person("Jonas", "Kurle", email = "mail@jonaskurle.com", 
+                  role = c("aut","cre"), comment = (ORCID = "0000-0003-2197-2012"))
+Description: An implementation of easy tools for outlier robust inference in
+    two-stage least squares (2SLS) models. The user specifies a reference 
+    distribution against which observations are classified as outliers or not. 
+    After removing the outliers, adjusted standard errors are automatically 
+    provided. Furthermore, several statistical tests for the false outlier 
+    detection rate can be calculated. The outlier removing algorithm can be 
+    iterated a fixed number of times or until the procedure converges. The 
+    algorithms and robust inference are described in more detail in Jiao (2019) 
+    <https://drive.google.com/file/d/1qPxDJnLlzLqdk94X9wwVASptf1MPpI2w/view>.
+URL: https://github.com/jkurle/robust2sls
+BugReports: https://github.com/jkurle/robust2sls/issues
+License: GPL-3
+Encoding: UTF-8
+Suggests: datasets, doFuture, doParallel, future, ggplot2, grDevices,
+        knitr, MASS, parallel, rmarkdown, testthat, utils
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
+Imports: AER, doRNG, foreach, pracma, stats
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-11-18 00:21:52 UTC; jonas
+Author: Jonas Kurle [aut, cre] (0000-0003-2197-2012)
+Maintainer: Jonas Kurle <mail@jonaskurle.com>
+Repository: CRAN
+Date/Publication: 2021-11-23 07:50:08 UTC

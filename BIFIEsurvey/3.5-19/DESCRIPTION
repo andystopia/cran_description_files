@@ -1,0 +1,38 @@
+Package: BIFIEsurvey
+Type: Package
+Title: Tools for Survey Statistics in Educational Assessment
+Version: 3.5-19
+Date: 2024-02-18 19:15:32
+Author: BIFIE [aut], Alexander Robitzsch [aut, cre], 
+        Konrad Oberwimmer [aut]
+Maintainer: Alexander Robitzsch <robitzsch@ipn.uni-kiel.de>
+Description: 
+    Contains tools for survey statistics (especially in educational
+    assessment) for datasets with replication designs (jackknife, 
+    bootstrap, replicate weights; see Kolenikov, 2010;
+    Pfefferman & Rao, 2009a, 2009b, <doi:10.1016/S0169-7161(09)70003-3>,
+    <doi:10.1016/S0169-7161(09)70037-9>); Shao, 1996, 
+    <doi:10.1080/02331889708802523>). 
+    Descriptive statistics, linear and logistic regression, 
+    path models for manifest variables with measurement error 
+    correction and two-level hierarchical regressions for weighted 
+    samples are included. Statistical inference can be conducted for 
+    multiply imputed datasets and nested multiply imputed datasets
+    and is in particularly suited for the analysis of plausible values
+    (for details see George, Oberwimmer & Itzlinger-Bruneforth, 2016; 
+    Bruneforth, Oberwimmer & Robitzsch, 2016; Robitzsch, Pham &
+    Yanagida, 2016). The package development was supported by BIFIE 
+    (Federal Institute for Educational Research, Innovation and Development 
+    of the Austrian School System; Salzburg, Austria).
+Depends: R (>= 3.1)
+Imports: methods, miceadds, Rcpp, stats, utils
+Suggests: graphics, grDevices, lavaan, mitools, survey, TAM
+Enhances: Hmisc, intsvy, LSAmitR
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL (>= 2)
+URL: https://github.com/alexanderrobitzsch/BIFIEsurvey,
+        https://sites.google.com/view/alexander-robitzsch/software
+NeedsCompilation: yes
+Packaged: 2024-02-18 18:19:44 UTC; sunpn563
+Repository: CRAN
+Date/Publication: 2024-02-18 18:50:02 UTC

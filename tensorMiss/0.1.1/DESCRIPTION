@@ -1,0 +1,21 @@
+Package: tensorMiss
+Type: Package
+Title: Handle Missing Tensor Data with C++ Integration
+Version: 0.1.1
+Date: 2024-03-21
+Author: Zetai Cen [aut, cre]
+Authors@R: c(person("Zetai", "Cen", email = "z.cen@lse.ac.uk", role=c("aut","cre")))
+Maintainer: Zetai Cen <z.cen@lse.ac.uk>
+Description: To handle higher-order tensor data. See Kolda and Bader (2009) <doi:10.1137/07070111X> for details on tensor. While existing packages on tensor data extend the base 'array' class to some data classes, this package serves as an alternative resort to handle tensor only as 'array' class.
+    Some functionalities related to missingness are also supported.
+License: GPL-3
+Imports: Rcpp (>= 1.0.11), RcppEigen, rTensor, stats
+Encoding: UTF-8
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-03-22 20:22:23 UTC; pc
+Repository: CRAN
+Date/Publication: 2024-03-23 11:30:05 UTC

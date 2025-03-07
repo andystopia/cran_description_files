@@ -1,0 +1,56 @@
+Package: Coxmos
+Title: Cox MultiBlock Survival
+Version: 1.0.0
+Authors@R: 
+    c(person("Pedro", "Salguero García", , "pedrosalguerog@gmail.com", role = c("aut", "cre", "rev"),
+           comment = c(ORCID = "0000-0002-1879-3374")),
+    person("Sonia", "Tarazona Campos", , "sotacam@eio.upv.es", role = c("ths")),
+    person("Ana", "Conesa Cegarra", , "ana.conesa@csic.es", role = c("ths")),
+    person("Kassu", "Mehari Beyene", , "kasu.beyene@uclouvain.be", role = c("ctb")),
+    person("Luis", "Meira Machado", , "", role = c("ctb")),
+    person("Marta", "Sestelo", , "", role = c("ctb")),
+    person("Artur", "Araújo", , "", role = c("ctb"))
+    )
+Maintainer: Pedro Salguero García <pedrosalguerog@gmail.com>
+Description: This software package provides Cox survival analysis for high-dimensional and multiblock datasets. 
+             It encompasses a suite of functions dedicated from the classical Cox regression to newest analysis,
+             including Cox proportional hazards model, Stepwise Cox regression, and Elastic-Net Cox regression, 
+             Sparse Partial Least Squares Cox regression (sPLS-COX) incorporating three distinct strategies, 
+             and two Multiblock-PLS Cox regression (MB-sPLS-COX) methods. This tool is designed to adeptly handle 
+             high-dimensional data, and provides tools for cross-validation, plot generation, and additional resources 
+             for interpreting results. While references are available within the corresponding functions, 
+             key literature is mentioned below.
+             Terry M Therneau (2024) <https://CRAN.R-project.org/package=survival>,
+             Noah Simon et al. (2011) <doi:10.18637/jss.v039.i05>,
+             Philippe Bastien et al. (2005) <doi:10.1016/j.csda.2004.02.005>,
+             Philippe Bastien (2008) <doi:10.1016/j.chemolab.2007.09.009>,
+             Philippe Bastien et al. (2014) <doi:10.1093/bioinformatics/btu660>,
+             Kassu Mehari Beyene and Anouar El Ghouch (2020) <doi:10.1002/sim.8671>,
+             Florian Rohart et al. (2017) <doi:10.1371/journal.pcbi.1005752>.
+URL: https://github.com/BiostatOmics/Coxmos
+BugReports: https://github.com/BiostatOmics/Coxmos/issues
+License: CC BY 4.0
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+biocViews:
+Depends: R (>= 4.1.0),
+Imports: caret, cowplot, furrr, future, ggrepel, ggplot2, ggpubr,
+        glmnet, MASS, mixOmics, progress, purrr, Rdpack, scattermore,
+        stats, survcomp, survival, survminer, svglite, tidyr, utils
+Suggests: nsROC, smoothROCtime, survivalROC, risksetROC, ggforce,
+        knitr, RColorConesa, rmarkdown
+RdMacros: Rdpack
+LazyData: true
+NeedsCompilation: yes
+VignetteBuilder: knitr
+Packaged: 2024-03-11 22:39:36 UTC; Ps
+Author: Pedro Salguero García [aut, cre, rev]
+    (<https://orcid.org/0000-0002-1879-3374>),
+  Sonia Tarazona Campos [ths],
+  Ana Conesa Cegarra [ths],
+  Kassu Mehari Beyene [ctb],
+  Luis Meira Machado [ctb],
+  Marta Sestelo [ctb],
+  Artur Araújo [ctb]
+Repository: CRAN
+Date/Publication: 2024-03-12 20:00:09 UTC

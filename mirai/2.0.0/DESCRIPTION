@@ -1,0 +1,48 @@
+Package: mirai
+Type: Package
+Title: Minimalist Async Evaluation Framework for R
+Version: 2.0.0
+Description: Designed for simplicity, a 'mirai' evaluates an R expression
+    asynchronously in a parallel process, locally or distributed over the
+    network, with the result automatically available upon completion. Modern
+    networking and concurrency built on 'nanonext' and 'NNG' (Nanomsg Next Gen)
+    ensure reliable and efficient scheduling, over fast inter-process
+    communications or TCP/IP secured by TLS. Advantages include being inherently
+    queued thus handling many more tasks than available processes, no storage on
+    the file system, support for otherwise non-exportable reference objects, an
+    event-driven promises implementation, and built-in asynchronous parallel
+    map.
+Authors@R: 
+    c(person(given = "Charlie",
+             family = "Gao",
+             role = c("aut", "cre"),
+             email = "charlie.gao@shikokuchuo.net",
+             comment = c(ORCID = "0000-0002-0750-061X")),
+      person(given = "Joe",
+             family = "Cheng",
+             role = "ctb",
+             email = "joe@posit.co"),
+      person(given = "Hibiki AI Limited",
+             role = "cph"),
+      person(given = "Posit Software, PBC",
+             role = "cph"))
+License: GPL (>= 3)
+BugReports: https://github.com/shikokuchuo/mirai/issues
+URL: https://shikokuchuo.net/mirai/,
+        https://github.com/shikokuchuo/mirai/
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Imports: nanonext (>= 1.4.0)
+Enhances: parallel, promises
+Suggests: cli, litedown
+VignetteBuilder: litedown
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-08 16:11:40 UTC; cg334
+Author: Charlie Gao [aut, cre] (<https://orcid.org/0000-0002-0750-061X>),
+  Joe Cheng [ctb],
+  Hibiki AI Limited [cph],
+  Posit Software, PBC [cph]
+Maintainer: Charlie Gao <charlie.gao@shikokuchuo.net>
+Repository: CRAN
+Date/Publication: 2025-01-08 17:50:02 UTC

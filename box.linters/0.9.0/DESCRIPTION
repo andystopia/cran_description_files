@@ -1,0 +1,33 @@
+Package: box.linters
+Title: Linters for 'box' Modules
+Version: 0.9.0
+Authors@R: 
+  c(
+    person("Rodrigo", "Basa", role = c("aut", "cre"), email = "opensource+rodrigo@appsilon.com"),
+    person("Jakub", "Nowicki", role = "aut", email = "kuba@appsilon.com"),
+    person("Appsilon Sp. z o.o.", role = "cph", email = "opensource@appsilon.com")
+  )
+Description: Static code analysis of 'box' modules.
+  The package enhances code quality by providing linters that check for common issues,
+  enforce best practices, and ensure consistent coding standards.
+URL: https://appsilon.github.io/box.linters/,
+        https://github.com/Appsilon/box.linters
+License: LGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 2.10)
+Imports: cli, fs, glue, lintr (>= 3.0.0), rlang, xml2
+Suggests: box, covr, dplyr, knitr, rcmdcheck, rmarkdown, R6, rex,
+        rhino, shiny, spelling, stringr, testthat (>= 3.0.0), withr,
+        xmlparsedata
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-05-24 08:37:03 UTC; kuba
+Author: Rodrigo Basa [aut, cre],
+  Jakub Nowicki [aut],
+  Appsilon Sp. z o.o. [cph]
+Maintainer: Rodrigo Basa <opensource+rodrigo@appsilon.com>
+Repository: CRAN
+Date/Publication: 2024-05-25 17:40:02 UTC

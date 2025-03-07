@@ -1,0 +1,31 @@
+Package: daymetr
+Title: Interface to the 'Daymet' Web Services
+Version: 1.5
+Authors@R: c(person(
+               family = "Hufkens",
+               given = "Koen",
+               email = "koen.hufkens@gmail.com",
+               role = c("aut", "cre"),
+               comment = c(ORCID = "0000-0002-5070-8109")))
+Description: Programmatic interface to the 'Daymet' web services
+    (<http://daymet.ornl.gov>). Allows for easy downloads of
+    'Daymet' climate data directly to your R workspace or your computer.
+    Routines for both single pixel data downloads and
+    gridded (netCDF) data are provided.
+Depends: R (>= 3.6)
+Imports: sf, raster, httr, tidyr, tibble, tools, utils
+License: AGPL-3
+LazyData: true
+ByteCompile: true
+RoxygenNote: 7.1.1
+Suggests: ggplot2, dplyr, rgdal, ncdf4, knitr, markdown, rmarkdown,
+        covr, testthat
+VignetteBuilder: knitr
+URL: https://github.com/bluegreen-labs/daymetr
+BugReports: https://github.com/bluegreen-labs/daymetr/issues
+NeedsCompilation: no
+Packaged: 2021-05-21 15:36:46 UTC; khufkens
+Author: Koen Hufkens [aut, cre] (<https://orcid.org/0000-0002-5070-8109>)
+Maintainer: Koen Hufkens <koen.hufkens@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-05-25 13:10:02 UTC

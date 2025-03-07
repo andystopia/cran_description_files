@@ -1,0 +1,40 @@
+Package: complexlm
+Version: 1.0
+Date: 2023-05-31
+Depends: R (>= 3.3.0), MASS
+Imports: methods, grDevices, utils, ggplot2, reshape2, pracma,
+        graphics, stats
+Authors@R: c(person("William", "Ryan", role = c("aut", "cre", "cph"), email = "wryan1@binghamton.edu"),
+	     person("Bruce", "White", role = "ths"),
+       person("Brian", "Ripley", role = c("ctb", "cph"),
+                  comment = "Wrote 'MASS' rlm() code upon which complexlm rlm() is based"),
+	     person("Bill", "Venables", role = "ctb",
+	                comment = "Wrote 'MASS' rlm() code upon which complexlm rlm() is based"),
+       person("John", "Maindonald", role = "ctb",
+                  comment = "Wrote plot.lm() on which plot.zlm() is based"),
+       person("Martin", "Maechler", role = "ctb",
+                  comment = "Wrote plot.lm() on which plot.zlm() is based"),
+       person("R Core", "Team", role = c("ctb", "cph"),
+                  comment = "Several functions in 'complexlm' are based on similar functions in 'base' or 'stats'"))
+Description: Tools for linear fitting with complex variables. Includes ordinary least-squares (zlm()) and robust M-estimation (rzlm()), and complex methods for oft used generics. Originally adapted from the rlm() functions of 'MASS' and the lm() functions of 'stats'.
+Title: Linear Fitting for Complex Valued Data
+ByteCompile: yes
+License: GPL-2 | GPL-3
+URL: https://github.com/QuantumOfMoose/complexlm
+Contact: <wryan1@binghamton.edu>
+NeedsCompilation: yes
+Packaged: 2023-06-11 18:13:23 UTC; billy
+Author: William Ryan [aut, cre, cph],
+  Bruce White [ths],
+  Brian Ripley [ctb, cph] (Wrote 'MASS' rlm() code upon which complexlm
+    rlm() is based),
+  Bill Venables [ctb] (Wrote 'MASS' rlm() code upon which complexlm rlm()
+    is based),
+  John Maindonald [ctb] (Wrote plot.lm() on which plot.zlm() is based),
+  Martin Maechler [ctb] (Wrote plot.lm() on which plot.zlm() is based),
+  R Core Team [ctb, cph] (Several functions in 'complexlm' are based on
+    similar functions in 'base' or 'stats')
+Maintainer: William Ryan <wryan1@binghamton.edu>
+Repository: CRAN
+Date/Publication: 2023-06-12 09:50:05 UTC
+RoxygenNote: 7.1.2

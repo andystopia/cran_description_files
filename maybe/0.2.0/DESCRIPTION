@@ -1,0 +1,28 @@
+Package: maybe
+Title: The Maybe Monad
+Version: 0.2.0
+Authors@R: 
+    person(given = "Andrew",
+           family = "McNeil",
+           role = c("aut", "cre"),
+           email = "andrew.richard.mcneil@gmail.com")
+Description: 
+    The maybe type represents the possibility of some value or nothing. 
+    It is often used instead of throwing an error or returning `NULL`.
+    The advantage of using a maybe type over `NULL` is that it is both composable 
+    and requires the developer to explicitly acknowledge the potential absence 
+    of a value, helping to avoid the existence of unexpected behaviour.
+License: MIT + file LICENSE
+URL: https://github.com/armcn/maybe, https://armcn.github.io/maybe/
+BugReports: https://github.com/armcn/maybe/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: R (>= 4.1.0)
+Suggests: testthat (>= 3.0.0), quickcheck (>= 0.1.0), covr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-02-11 20:30:54 UTC; mcneil
+Author: Andrew McNeil [aut, cre]
+Maintainer: Andrew McNeil <andrew.richard.mcneil@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-11 20:50:02 UTC

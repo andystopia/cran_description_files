@@ -1,0 +1,45 @@
+Package: cito
+Type: Package
+Title: Building and Training Neural Networks
+Version: 1.0.2
+Authors@R: 
+    c(person(given = "Christian",
+           family = "Amesöder",
+           role = c("aut"),
+           email = "Christian.Amesoeder@informatik.uni-regensburg.de"),
+      person(given = "Maximilian",
+           family = "Pichler",
+           role = c("aut", "cre"),
+           email = "maximilian.pichler@biologie.uni-regensburg.de",
+           comment = c(ORCID = "0000-0003-2252-8327")),
+      person(given = "Florian",
+             family = "Hartig",
+             role = "ctb",
+             email = "florian.hartig@biologie.uni-regensburg.de",
+             comment = c(ORCID = "0000-0002-6255-9059")),           
+      person(given = "Armin",
+             family = "Schenk",
+             role = "ctb",
+             email = "armin.schenk99@gmail.com")
+           )
+Description: Building and training custom neural networks in the typical R syntax. The 'torch' package is used for numerical calculations, which allows for training on CPU as well as on a graphics card. 
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5)
+Imports: coro, checkmate, torch, gridExtra, parabar, abind, progress,
+        cli
+License: GPL (>= 3)
+Suggests: rmarkdown, testthat, plotly, ggraph, igraph, stats, ggplot2,
+        knitr
+VignetteBuilder: knitr
+BugReports: https://github.com/citoverse/cito/issues
+URL: https://citoverse.github.io/cito/
+NeedsCompilation: no
+Packaged: 2023-10-06 08:18:22 UTC; maximilianpichler
+Author: Christian Amesöder [aut],
+  Maximilian Pichler [aut, cre] (<https://orcid.org/0000-0003-2252-8327>),
+  Florian Hartig [ctb] (<https://orcid.org/0000-0002-6255-9059>),
+  Armin Schenk [ctb]
+Maintainer: Maximilian Pichler <maximilian.pichler@biologie.uni-regensburg.de>
+Repository: CRAN
+Date/Publication: 2023-10-06 14:40:02 UTC

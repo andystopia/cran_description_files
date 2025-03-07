@@ -1,0 +1,38 @@
+Package: PRECAST
+Type: Package
+Title: Embedding and Clustering with Alignment for Spatial Datasets
+Version: 1.5
+Date: 2023-03-26
+Authors@R: 
+    c(person(given = "Wei",
+             family = "Liu",
+             role = c("aut", "cre"),
+             email = "wei.liu@duke-nus.edu.sg"),
+      person(given = "Yi",
+             family = "Yang",
+             role = c("aut")),
+      person(given = "Jin",
+             family = "Liu",
+             role = "aut"))
+Author: Wei Liu [aut, cre],
+  Yi Yang [aut],
+  Jin Liu [aut]
+Maintainer: Wei Liu <wei.liu@duke-nus.edu.sg>
+Description: An efficient data integration method is provided for multiple spatial transcriptomics data with non-cluster-relevant effects such as the complex batch effects. It unifies spatial factor analysis simultaneously with spatial clustering and embedding alignment, requiring only partially shared cell/domain clusters across datasets. More details can be referred to Wei Liu, et al. (2023) <doi:10.1038/s41467-023-35947-w>.
+License: GPL-3
+Depends: parallel, gtools, R (>= 4.0.0)
+Imports: GiRaF, MASS, Matrix, mclust, methods, purrr, utils, Seurat,
+        cowplot, patchwork, scater, pbapply, ggthemes, dplyr, ggplot2,
+        stats, DR.SC, scales, ggpubr, graphics, colorspace, Rcpp (>=
+        1.0.5)
+LazyData: true
+URL: https://github.com/feiyoung/PRECAST
+BugReports: https://github.com/feiyoung/PRECAST/issues
+Suggests: knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2023-03-23 09:00:02 UTC; Liuxianju
+Repository: CRAN
+Date/Publication: 2023-03-23 10:00:05 UTC

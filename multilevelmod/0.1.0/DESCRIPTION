@@ -1,0 +1,32 @@
+Package: multilevelmod
+Title: Model Wrappers for Multi-Level Models
+Version: 0.1.0
+Authors@R: c(
+    person("Max", "Kuhn", , "max@rstudio.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2402-136X")),
+    person("RStudio", role = "cph")
+  )
+Description: Bindings for hierarchical regression models for use with the
+    'parsnip' package. Models include longitudinal generalized linear models 
+    (Liang and Zeger, 1986) <doi:10.1093/biomet/73.1.13>, and mixed-effect
+    models (Pinheiro and Bates) <doi:10.1007/978-1-4419-0318-1_1>.
+License: MIT + file LICENSE
+Depends: parsnip (>= 0.2.0), R (>= 2.10)
+Imports: dplyr, lme4, purrr, rlang, tibble, withr
+Suggests: contrast, covr, gee, knitr, nlme, rmarkdown, spelling,
+        testthat, tidymodels
+VignetteBuilder: knitr
+Config/Needs/website: tidymodels/tidymodels tidyverse/tidytemplate
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.2
+URL: https://github.com/tidymodels/multilevelmod,
+        http://multilevelmod.tidymodels.org/
+NeedsCompilation: no
+Packaged: 2022-03-09 14:45:06 UTC; max
+Author: Max Kuhn [aut, cre] (<https://orcid.org/0000-0003-2402-136X>),
+  RStudio [cph]
+Maintainer: Max Kuhn <max@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-03-11 09:40:02 UTC

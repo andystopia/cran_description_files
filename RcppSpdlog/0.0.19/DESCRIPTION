@@ -1,0 +1,30 @@
+Package: RcppSpdlog
+Type: Package
+Title: R and C++ Interfaces to 'spdlog' C++ Header Library for Logging
+Version: 0.0.19
+Date: 2024-11-10
+License: GPL (>= 2)
+Authors@R: c(person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                    comment = c(ORCID = "0000-0001-6419-907X")),
+             person("Gabi", "Melman", role = "aut", comment = "Author of spdlog"),
+             person("Victor", "Zverovic", role = "aut", comment = "Author of fmt"))
+Description: The mature and widely-used C++ logging library 'spdlog' by Gabi Melman provides
+ many desirable features. This package bundles these header files for easy use by R packages
+ from both their R and C or C++ code. Explicit use via 'LinkingTo:' is also supported. Also
+ see the 'spdl' package which enhanced this package with a consistent R and C++ interface.
+URL: https://github.com/eddelbuettel/rcppspdlog,
+        https://dirk.eddelbuettel.com/code/rcpp.spdlog.html
+BugReports: https://github.com/eddelbuettel/rcppspdlog/issues
+LinkingTo: Rcpp
+Imports: Rcpp
+Suggests: simplermarkdown
+VignetteBuilder: simplermarkdown
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2024-11-10 23:06:13 UTC; edd
+Author: Dirk Eddelbuettel [aut, cre] (<https://orcid.org/0000-0001-6419-907X>),
+  Gabi Melman [aut] (Author of spdlog),
+  Victor Zverovic [aut] (Author of fmt)
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2024-11-11 11:30:07 UTC

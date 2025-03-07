@@ -1,0 +1,36 @@
+Package: mixgb
+Title: Multiple Imputation Through 'XGBoost'
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Yongshi", family ="Deng", email = "yongshi.deng@auckland.ac.nz",
+           role = c("aut","cre"),comment =c(ORCID = "0000-0001-5845-859X")),
+    person(given = "Thomas", family = "Lumley", email = "t.lumley@auckland.ac.nz",
+           role = "ths")
+  ) 
+Description: Multiple imputation using 'XGBoost', bootstrapping and predictive mean 
+    matching as described in Deng and Lumley (2021) <arXiv:2106.01574>. It is built 
+    under Fully Conditional Specification, where 'XGBoost' imputation models are
+    built for each incomplete variable. It supports various types of variables and 
+    offers different settings regarding bootstrapping and predictive mean matching. 
+    Visual diagnostic functions are also provided for inspecting multiply imputed 
+    values for incomplete variables.
+URL: https://github.com/agnesdeng/mixgb,
+        https://agnesdeng.github.io/mixgb/
+BugReports: https://github.com/agnesdeng/mixgb/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: data.table, ggplot2, Matrix, mice, Rfast, rlang, scales,
+        stats, tidyr, utils, xgboost
+Suggests: knitr, rmarkdown, RColorBrewer
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-06-06 23:11:31 UTC; agnes
+Author: Yongshi Deng [aut, cre] (<https://orcid.org/0000-0001-5845-859X>),
+  Thomas Lumley [ths]
+Maintainer: Yongshi Deng <yongshi.deng@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2022-06-07 08:40:06 UTC

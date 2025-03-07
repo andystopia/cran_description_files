@@ -1,0 +1,41 @@
+Package: xpose4
+Title: Diagnostics for Nonlinear Mixed-Effect Models
+Version: 4.7.1
+Authors@R: c(person("Andrew C.","Hooker",role=c("aut","cre","cph"),email="andrew.hooker@farmaci.uu.se"),
+             person("Mats O.","Karlsson",role=c("aut","cph")),
+             person("Justin J.","Wilkins",role="aut"),
+             person("E. Niclas","Jonsson",role=c("aut","trl","cph")),
+             person("Ron","Keizer",role="ctb",comment="functionality for bootstrap of GAM and SCM"))
+Depends: R (>= 2.2.0), lattice
+Imports: Hmisc, survival, dplyr, tibble, methods, lazyeval, gam,
+        splines, grid, readr
+Suggests: testthat
+Description: A model building aid for nonlinear mixed-effects 
+    (population) model analysis using NONMEM, facilitating data set 
+    checkout, exploration and visualization, model diagnostics, candidate 
+    covariate identification and model comparison. The methods are described 
+    in Keizer et al. (2013) <doi:10.1038/psp.2013.24>, and Jonsson et al. (1999) 
+    <doi:10.1016/s0169-2607(98)00067-4>.
+LazyLoad: yes
+LazyData: yes
+ByteCompile: true
+License: LGPL (>= 3)
+URL: https://uupharmacometrics.github.io/xpose4/,
+        https://github.com/UUPharmacometrics/xpose4
+BugReports: https://github.com/UUPharmacometrics/xpose4/issues
+Copyright: 2009-2020 Andrew C. Hooker, E. Niclas Jonsson and Mats O.
+        Karlsson. 2005-2008 Andrew C. Hooker, Justin J. Wilkins, Mats
+        O. Karlsson and E. Niclas Jonsson. 1998-2004 E. Niclas Jonsson
+        and Mats Karlsson.
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2020-12-17 19:21:27 UTC; ancho179
+Author: Andrew C. Hooker [aut, cre, cph],
+  Mats O. Karlsson [aut, cph],
+  Justin J. Wilkins [aut],
+  E. Niclas Jonsson [aut, trl, cph],
+  Ron Keizer [ctb] (functionality for bootstrap of GAM and SCM)
+Maintainer: Andrew C. Hooker <andrew.hooker@farmaci.uu.se>
+Repository: CRAN
+Date/Publication: 2020-12-18 13:00:02 UTC

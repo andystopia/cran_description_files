@@ -1,0 +1,29 @@
+Package: norMmix
+Version: 0.1-1
+Title: Direct MLE for Multivariate Normal Mixture Distributions
+Description: Multivariate Normal (i.e. Gaussian) Mixture Models (S3) Classes.
+    Fitting models to data using MLE (maximum likelihood estimation) for
+    multivariate normal mixtures via smart parametrization using the LDLt
+    (Cholesky) decomposition.
+    McLachlan, G. and Peel, D. (2000, ISBN:9780471006268) "Finite Mixture Models".
+    Celeux, G. and Govaert, G. (1995) <doi:10.1016/0031-3203(94)00125-6> "Gaussian parsimonious clustering models".
+    Marron, S. and Wand, M. (1992) <doi:10.1214/aos/1176348653> "Exact Mean Integrated Squared Error".
+Authors@R: c(person(given = "Nicolas", family = "Trutmann", role = c("aut", "cre"),
+                    email = "nicolas.trutmann@gmx.ch")
+           , person("Martin", "Maechler", role = c("aut", "ths"),# B.Sc. thesis supervisor
+                    email = "maechler@stat.math.ethz.ch",
+                    comment = c(ORCID = "0000-0002-8685-9910", "based on 'nor1mix'"))
+            )
+Imports: cluster, MASS, mvtnorm, mclust, sfsmisc
+Suggests: nor1mix, Matrix, testthat (>= 2.1.0), knitr, rmarkdown
+License: GPL (>= 3)
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-04-14 22:16:55 UTC; trn
+Author: Nicolas Trutmann [aut, cre],
+  Martin Maechler [aut, ths] (<https://orcid.org/0000-0002-8685-9910>,
+    based on 'nor1mix')
+Maintainer: Nicolas Trutmann <nicolas.trutmann@gmx.ch>
+Repository: CRAN
+Date/Publication: 2024-04-16 09:00:02 UTC

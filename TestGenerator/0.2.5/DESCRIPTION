@@ -1,0 +1,30 @@
+Package: TestGenerator
+Type: Package
+Title: Integration Unit Tests for Pharmacoepidemiological Studies
+Version: 0.2.5
+Authors@R: c(
+    person("Cesar", "Barboza", , "c.barboza@darwin-eu.org", role = c("cre", "aut"), comment = c(ORCID = "0009-0002-4453-3071")),
+    person("Ger", "Inberg", , "g.inberg@darwin-eu.org", role = "aut", comment = c(ORCID = "0000-0001-8993-8748")),
+    person("Adam", "Black", , "black@ohdsi.org", role = "aut", comment = c(ORCID = "0000-0001-5576-8701"))
+  )
+Maintainer: Cesar Barboza <c.barboza@darwin-eu.org>
+Description: Push a sample population for unit testing on data mapped to the Observational Medical Outcomes Partnership (OMOP) Common Data Model.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1.0)
+Imports: fs, jsonlite, readxl, usethis, CDMConnector, DBI, dplyr,
+        checkmate, glue, duckdb
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/darwin-eu-dev/TestGenerator,
+        https://darwin-eu-dev.github.io/TestGenerator/
+BugReports: https://github.com/darwin-eu-dev/TestGenerator/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-01-30 09:49:05 UTC; cbarboza
+Author: Cesar Barboza [cre, aut] (<https://orcid.org/0009-0002-4453-3071>),
+  Ger Inberg [aut] (<https://orcid.org/0000-0001-8993-8748>),
+  Adam Black [aut] (<https://orcid.org/0000-0001-5576-8701>)
+Repository: CRAN
+Date/Publication: 2024-02-01 10:30:13 UTC

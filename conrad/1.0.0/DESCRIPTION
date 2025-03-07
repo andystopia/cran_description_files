@@ -1,0 +1,30 @@
+Package: conrad
+Title: Client for the Microsoft's 'Cognitive Services Text to Speech
+        REST' API
+Version: 1.0.0
+Authors@R: c( 
+    person("Howard", "Baek", email = "howardbaek.fh@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0000-8942-1618")),
+    person("John", "Muschelli", email = "muschellij2@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0009-0000-8942-1618"))
+           )
+Description: Convert text into synthesized speech and get a list of supported voices for a region. 
+    Microsoft's 'Cognitive Services Text to Speech REST' API <https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-text-to-speech?tabs=streaming>  
+    supports neural text to speech voices, which support specific languages and dialects that are identified by locale. 
+URL: https://github.com/fhdsl/conrad
+BugReports: https://github.com/fhdsl/conrad/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LazyData: true
+Imports: httr2, jsonlite, magrittr
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-06-30 20:06:32 UTC; howardbaek
+Author: Howard Baek [aut, cre, cph] (<https://orcid.org/0009-0000-8942-1618>),
+  John Muschelli [aut] (<https://orcid.org/0009-0000-8942-1618>)
+Maintainer: Howard Baek <howardbaek.fh@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-07-03 16:30:07 UTC

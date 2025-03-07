@@ -1,0 +1,39 @@
+Package: SimNPH
+Type: Package
+Title: Simulate Non-Proportional Hazards
+Version: 0.5.3
+Authors@R: c(person("Tobias", "Fellinger", email="tobias.fellinger@ages.at", role=c("aut", "cre"), comment = c(ORCID = "0000-0001-9474-2731")),
+            person("Florian", "Klinglmueller", role=c("aut"), comment = c(ORCID = "0000-0002-7346-3669")))
+License: BSL-1.0
+Description: A toolkit for simulation studies concerning time-to-event endpoints
+    with non-proportional hazards. 'SimNPH' encompasses functions for simulating
+    time-to-event data in various scenarios, simulating different trial designs
+    like fixed-followup, event-driven, and group sequential designs. The package
+    provides functions to calculate the true values of common summary statistics
+    for the implemented scenarios and offers common analysis methods for
+    time-to-event data. Helper functions for running simulations with the
+    'SimDesign' package and for aggregating and presenting the results are also
+    included. Results of the conducted simulation study are available as
+    preprint: "A neutral comparison of statistical methods for time-to-event
+    analyses under non-proportional hazards", Klinglmueller et al. (2023)
+    <doi:10.48550/ARXIV.2310.05622>.
+Encoding: UTF-8
+LazyData: true
+Depends: SimDesign, survival, R (>= 4.1.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), covr, withr, ldbounds,
+        ggplot2, patchwork, R.rsp
+Imports: miniPCH (>= 0.3.0), purrr (>= 1.0.0), rlang, tibble, nph,
+        nphRCT, car, dplyr, stringr, methods, tidyr
+Config/testthat/edition: 3
+VignetteBuilder: R.rsp
+RoxygenNote: 7.2.3
+URL: https://simnph.github.io/SimNPH/,
+        https://github.com/SimNPH/SimNPH/
+BugReports: https://github.com/SimNPH/SimNPH/issues/
+NeedsCompilation: no
+Packaged: 2023-11-09 10:31:27 UTC; Tobias11
+Author: Tobias Fellinger [aut, cre] (<https://orcid.org/0000-0001-9474-2731>),
+  Florian Klinglmueller [aut] (<https://orcid.org/0000-0002-7346-3669>)
+Maintainer: Tobias Fellinger <tobias.fellinger@ages.at>
+Repository: CRAN
+Date/Publication: 2023-11-09 15:20:09 UTC

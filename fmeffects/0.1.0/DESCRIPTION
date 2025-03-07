@@ -1,0 +1,36 @@
+Package: fmeffects
+Title: Model-Agnostic Interpretations with Forward Marginal Effects
+Version: 0.1.0
+Authors@R: c(
+    person("Holger", "Löwe", , "hbj.loewe@gmail.com", role = c("cre", "aut")),
+    person("Christian", "Scholbeck", , "christian.scholbeck@stat.uni-muenchen.de", role = "aut"),
+    person("Christian", "Heumann", , "christian.heumann@stat.uni-muenchen.de", role = "rev"),
+    person("Bernd", "Bischl", , "bernd.bischl@stat.uni-muenchen.de", role = "rev"),
+    person("Giuseppe", "Casalicchio", , "giuseppe.casalicchio@stat.uni-muenchen.de", role = "rev")
+  )
+Description: Create local, regional, and global explanations for any machine learning model with forward marginal effects. You provide a model and data, and 'fmeffects' computes feature effects. The package is based on the theory in: C. A. Scholbeck, G. Casalicchio, C. Molnar, B. Bischl, and C. Heumann (2022) <arXiv:2201.08837>.
+License: LGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: caret, knitr, mlr3verse, ranger, rmarkdown, rpart
+Imports: checkmate, data.table, partykit, ggparty, ggplot2, cowplot,
+        R6, testthat
+Collate: 'ExtrapolationDetector.R' 'FME.R' 'FMEPlot.R'
+        'NonLinearityMeasure.R' 'Partitioning.R' 'PartitioningCtree.R'
+        'PartitioningPlot.R' 'PartitioningRpart.R' 'Predictor.R'
+        'PredictorCaret.R' 'PredictorMLR3.R' 'Pruner.R' 'S3.R' 'ame.R'
+        'bikes.R' 'misc.R' 'zzz.R'
+URL: https://github.com/holgstr/fme
+BugReports: https://github.com/holgstr/fme/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-07-18 11:45:26 UTC; christian
+Author: Holger Löwe [cre, aut],
+  Christian Scholbeck [aut],
+  Christian Heumann [rev],
+  Bernd Bischl [rev],
+  Giuseppe Casalicchio [rev]
+Maintainer: Holger Löwe <hbj.loewe@gmail.com>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2023-07-19 11:00:02 UTC

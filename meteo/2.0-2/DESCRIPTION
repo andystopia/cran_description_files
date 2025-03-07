@@ -1,0 +1,34 @@
+Package: meteo
+Version: 2.0-2
+Date: 2023-10-09
+Type: Package
+Encoding: UTF-8
+Title: RFSI and Spatio-Temporal Geostatistical Interpolation for
+        Meteorological and Other Environmental Variables
+Authors@R: c(person("Milan", "Kilibarda", role = c("aut"), email = "kili@grf.bg.ac.rs", comment = c(ORCID = "0000-0002-2930-3596")),
+             person("Aleksandar", "Sekulić", role = c("aut", "cre"), email = "asekulic@grf.bg.ac.rs", comment = c(ORCID = "0000-0002-5515-2779")),
+             person("Tomislav", "Hengl", role = c("ctb")),
+             person("Edzer", "Pebesma", role = c("ctb")),
+             person("Benedikt", "Graeler", role = c("ctb")))
+Author: Milan Kilibarda [aut] (<https://orcid.org/0000-0002-2930-3596>),
+  Aleksandar Sekulić [aut, cre] (<https://orcid.org/0000-0002-5515-2779>),
+  Tomislav Hengl [ctb],
+  Edzer Pebesma [ctb],
+  Benedikt Graeler [ctb]
+Maintainer: Aleksandar Sekulić <asekulic@grf.bg.ac.rs>
+Depends: R (>= 4.0.0)
+Description: RFSI and spatio-temporal geostatistical interpolation for meteorological and other environmental variables. Global spatio-temporal models calculated using publicly available data are stored in package.
+License: GPL (>= 2.0) | file LICENCE
+URL: https://www.r-pkg.org/pkg/meteo,
+        https://r-forge.r-project.org/projects/meteo/,
+        https://github.com/AleksandarSekulic/Rmeteo
+LazyLoad: yes
+Imports: methods, utils, stats, DescTools, caret, data.table, dplyr,
+        sp, spacetime, gstat, foreach, parallel, snowfall, doParallel,
+        plyr, units, nabor, CAST, ranger, sf, sftime, raster, terra
+BugReports: https://github.com/AleksandarSekulic/Rmeteo/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-10-14 07:56:58 UTC; sekulic
+Repository: CRAN
+Date/Publication: 2023-10-14 12:50:11 UTC

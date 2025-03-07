@@ -1,0 +1,26 @@
+Package: RcppFastFloat
+Type: Package
+Title: 'Rcpp' Bindings for the 'fast_float' Header-Only Library for
+        Number Parsing
+Version: 0.0.2
+Date: 2021-02-13
+Author: Dirk Eddelbuettel, Brendan Knapp
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: Converting ascii text into (floating-point) numeric values is a
+ very common problem. The 'fast_float' header-only C++ library by Daniel Lemire
+ does it very well and very fast at up to or over to 1 gigabyte per second as
+ described in more detail in <arXiv:2101.11408>. 'fast_float' is licensed under
+ the Apache 2.0 license and provided here for use by other R packages via a simple
+ 'LinkingTo:' statement.
+License: GPL (>= 2)
+Imports: Rcpp
+LinkingTo: Rcpp
+Suggests: tinytest
+URL: https://github.com/eddelbuettel/rcppfastfloat/
+BugReports: https://github.com/eddelbuettel/rcppfastfloat/issues
+RoxygenNote: 6.0.1
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2021-02-13 21:58:31 UTC; edd
+Repository: CRAN
+Date/Publication: 2021-02-13 22:20:02 UTC

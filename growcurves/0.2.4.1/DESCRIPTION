@@ -1,0 +1,34 @@
+Package: growcurves
+Type: Package
+Title: Bayesian Semi and Nonparametric Growth Curve Models that
+        Additionally Include Multiple Membership Random Effects
+Version: 0.2.4.1
+Date: 2016-04-13
+Author: Terrance Savitsky
+Maintainer: Terrance Savitsky <tds151@gmail.com>
+Description: Employs a non-parametric formulation for by-subject random effect
+    parameters to borrow strength over a constrained number of repeated
+    measurement waves in a fashion that permits multiple effects per subject.
+    One class of models employs a Dirichlet process (DP) prior for the subject
+    random effects and includes an additional set of random effects that
+    utilize a different grouping factor and are mapped back to clients through
+    a multiple membership weight matrix; e.g. treatment(s) exposure or dosage.
+    A second class of models employs a dependent DP (DDP) prior for the subject
+    random effects that directly incorporates the multiple membership pattern.
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 3.2.2), Rcpp (>= 0.11.6)
+LinkingTo: Rcpp (>= 0.11.6), RcppArmadillo (>= 0.5.000)
+Imports: reshape2 (>= 1.2.1), Formula (>= 1.0-0), ggplot2 (>= 1.0.1)
+Suggests: testthat (>= 0.9.1)
+Collate: 'getmf.R' 'XZcov.R' 'datbrghtmodterms.R' 'datbrghtterms.R'
+        'dateduc.R' 'datsim.R' 'datsimcov.R' 'datsimmult.R'
+        'ddpMCMCplots.R' 'ddp_quantiles.R' 'ddpeffectsplot.R'
+        'summary_quantiles.R' 'mcmcPlots.R' 'relabel.R' 'growthCurve.R'
+        'dpgrowmm.R' 'ddpgrow.R' 'dpgrow.R' 'dpgrowmult.R'
+        'effectsplot.R' 'growplot.R' 'help.R' 'trtplot.R'
+NeedsCompilation: yes
+RoxygenNote: 5.0.1
+Packaged: 2016-12-20 19:11:23 UTC; savitsky_t
+Repository: CRAN
+Date/Publication: 2016-12-21 08:30:35

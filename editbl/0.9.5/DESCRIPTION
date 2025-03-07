@@ -1,0 +1,25 @@
+Package: editbl
+Type: Package
+Version: 0.9.5
+Date: 2023-09-05
+Title: 'DT' Extension for CRUD (Create, Read, Update, Delete)
+        Applications in 'shiny'
+Authors@R: person("Jasper", "Schelfhout", "", "jasper.schelfhout@openanalytics.eu",
+           role = c("aut", "cre"))
+Maintainer: Jasper Schelfhout <jasper.schelfhout@openanalytics.eu>
+Description: The core of this package is a function eDT() which enhances DT::datatable() such that it can be used to interactively modify data in 'shiny'. By the use of generic 'dplyr' methods it supports many types of data storage, with relational databases ('dbplyr') being the main use case.
+License: GPL-3
+Copyright: Open Analytics NV, 2023
+Imports: shiny, shinyjs, DT, tibble, dplyr, uuid, fontawesome (>=
+        0.4.0)
+Suggests: testthat, dtplyr, data.table, vctrs, RSQLite, dbplyr, glue,
+        DBI, bit64
+URL: https://github.com/openanalytics/editbl
+BugReports: https://github.com/openanalytics/editbl/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-05 06:24:50 UTC; jschelfhout
+Author: Jasper Schelfhout [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-09-05 19:50:12 UTC

@@ -1,0 +1,30 @@
+Package: RMaCzek
+Type: Package
+Title: Czekanowski's Diagrams
+Version: 1.5.0
+Date: 2022-09-26
+Encoding: UTF-8
+Authors@R: c(person(family = "Vasterlund", given = "Albin", email = "abbe--93@hotmail.com", role = c("aut")),
+  	person(family = "Bartoszek", given = "Krzysztof", email = "krzbar@protonmail.ch", role = c("cre","aut","ths")),
+	person(family = "Luo", given = "Ying", email = "kelly.yingluo@gmail.com", role = c("aut")),
+	person(family="Jaskulski",given="Piotr",role=c("ctb")))
+Maintainer: Krzysztof Bartoszek <krzbar@protonmail.ch>
+Description: Allows for production of Czekanowski's Diagrams. See K. Bartoszek, A. Vasterlund (2020) <doi:10.2478/bile-2020-0008>.
+Depends: R(>= 3.6)
+Imports: GA(>= 3.2), graphics, methods, seriation(>= 1.3.4), stats,
+        e1071, ecp, RColorBrewer, utils
+License: GPL-3
+Collate: czek_matrix.R dot_functions.R plot.czek_matrix.R
+        register_seriate_ga.R RMaCzek.R seriate_ga.R Um_factor.R
+        utils_czek_matrix.R cluster_distance.R data.R read_maczek.R
+LazyLoad: yes
+LazyData: true
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2022-09-30 21:51:12 UTC; kbart
+Author: Albin Vasterlund [aut],
+  Krzysztof Bartoszek [cre, aut, ths],
+  Ying Luo [aut],
+  Piotr Jaskulski [ctb]
+Date/Publication: 2022-09-30 22:10:02 UTC
+RoxygenNote: 7.1.2

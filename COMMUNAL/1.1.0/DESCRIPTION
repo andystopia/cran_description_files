@@ -1,0 +1,22 @@
+Package: COMMUNAL
+Type: Package
+Title: Robust Selection of Cluster Number K
+Version: 1.1.0
+Date: 2015-10-12
+Author: Albert Chen [aut, cre], Timothy E Sweeney [aut], Olivier Gevaert [ths]
+Maintainer: Albert Chen <acc2015@stanford.edu>
+Authors@R: c(person("Albert", "Chen", role = c("aut", "cre"),
+              email = "acc2015@stanford.edu"),
+             person(c("Timothy", "E"), 	"Sweeney", role = "aut",
+              email = "tes17@stanford.edu"),
+             person("Olivier", "Gevaert", role = "ths",
+              email = "ogevaert@stanford.edu"))
+Depends: R (>= 2.10), cluster, clValid, fpc
+Suggests: RUnit, NMF, ConsensusClusterPlus, rgl, kohonen
+Imports: methods, grDevices, graphics, stats, utils
+Description: Facilitates optimal clustering of a data set. Provides a framework to run a wide range of clustering algorithms to determine the optimal number (k) of clusters in the data. Then analyzes the cluster assignments from each clustering algorithm to identify samples that repeatedly classify to the same group. We call these 'core clusters', providing a basis for later class discovery.
+NeedsCompilation: no
+License: GPL-2
+Packaged: 2015-10-11 21:02:44 UTC; Albert
+Repository: CRAN
+Date/Publication: 2015-10-12 00:26:16

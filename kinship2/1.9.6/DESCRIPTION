@@ -1,0 +1,33 @@
+Package: kinship2
+Version: 1.9.6
+Date: 2022-10-05
+Title: Pedigree Functions
+Authors@R: c(
+	person("Jason", "Sinnwell", email="sinnwell.jason@mayo.edu", role=c("aut","cre")),
+	person("Terry", "Therneau", role="aut"),
+	person("Daniel", "Schaid", role="ctb"),
+	person("Elizabeth", "Atkinson", role="ctb"),
+	person("Carly", "Mester", role='ctb'))
+Depends: R (>= 3.6.0), Matrix, quadprog
+Imports: graphics, stats, methods, knitr
+Description: Routines to handle family data with a pedigree object. The initial purpose
+	     was to create correlation structures that describe family relationships such 
+	     as kinship and identity-by-descent, which can be used to model family data 
+	     in mixed effects models, such as in the coxme function. Also includes a tool
+	     for pedigree drawing which is focused on producing compact layouts without 
+	     intervention. Recent additions include utilities to trim the pedigree object
+	     with various criteria, and kinship for the X chromosome.
+License: GPL (>= 2)
+URL: https://cran.r-project.org/package=kinship2
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-10-05 15:51:07 UTC; sinnwell
+Author: Jason Sinnwell [aut, cre],
+  Terry Therneau [aut],
+  Daniel Schaid [ctb],
+  Elizabeth Atkinson [ctb],
+  Carly Mester [ctb]
+Maintainer: Jason Sinnwell <sinnwell.jason@mayo.edu>
+Repository: CRAN
+Date/Publication: 2022-10-05 16:50:02 UTC

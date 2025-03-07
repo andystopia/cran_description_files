@@ -1,0 +1,35 @@
+Package: collinear
+Title: Seamless Multicollinearity Management
+Version: 1.1.1
+Authors@R: 
+    person(given = "Blas M.", 
+          family = "Benito", , 
+          email = "blasbenito@gmail.com", 
+          role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5105-7232"))
+Description: System for seamless management of multicollinearity in data frames
+    with numeric and/or categorical variables for statistical analysis and 
+    machine learning modeling. The package combines bivariate correlation 
+    (Pearson, Spearman, and Cramer's V) with variance inflation factor analysis, 
+    target encoding to transform categorical variables into numeric (Micci-Barreca, D. 2001 
+    <DOI:10.1145/507533.507538>), and a flexible 
+    feature prioritization method, to deliver a comprehensive 
+    multicollinearity management tool covering a wide range of use cases.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr
+Suggests: ranger, mgcv, future, future.apply, testthat (>= 3.0.0),
+        spelling
+Config/testthat/edition: 3
+Depends: R (>= 4.0)
+LazyData: true
+URL: https://blasbenito.github.io/collinear/
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-12-07 19:44:28 UTC; blas
+Author: Blas M. Benito [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5105-7232>)
+Maintainer: Blas M. Benito <blasbenito@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-08 08:50:02 UTC

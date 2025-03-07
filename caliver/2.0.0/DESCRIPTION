@@ -1,0 +1,36 @@
+Package: caliver
+Type: Package
+Title: Calibration and Verification of Gridded Model Outputs
+Version: 2.0.0
+Authors@R: c(person(given = "Claudia",
+                    family = "Vitolo",
+                    email = "claudia.vitolo@ecmwf.int",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-4252-1176")),
+             person("Francesca", "Di Giuseppe", role = c("ctb")),
+             person("Mirko", "D'Andrea", role = c("aut", "ctb")))
+Maintainer: Claudia Vitolo <claudia.vitolo@ecmwf.int>
+URL: https://ecmwf.github.io/caliver/, https://github.com/ecmwf/caliver
+BugReports: https://github.com/ecmwf/caliver/issues
+Description: Utility functions for the post-processing, calibration and
+  validation of grid model outputs. Initial test cases include the outputs of
+  the following forest fire models: GEFF and RISICO. The package is
+  described in Vitolo et al. (2018) "Caliver: An R package for CALIbration and
+  VERification of forest fire gridded model outputs"
+  <doi:10.1371/journal.pone.0189419>.
+Depends: R (>= 3.5)
+Imports: ncdf4, ggplot2, lubridate, raster, rworldmap, graphics, stats
+Suggests: testthat, knitr, rmarkdown, covr, lintr
+VignetteBuilder: knitr
+Encoding: UTF-8
+SystemRequirements: GDAL, PROJ, netcdf4, openssl
+License: Apache License 2.0
+Language: en-GB
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-02-18 13:36:50 UTC; claudia
+Author: Claudia Vitolo [aut, cre] (<https://orcid.org/0000-0002-4252-1176>),
+  Francesca Di Giuseppe [ctb],
+  Mirko D'Andrea [aut, ctb]
+Repository: CRAN
+Date/Publication: 2021-02-19 11:00:03 UTC

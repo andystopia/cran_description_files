@@ -1,0 +1,24 @@
+Package: SpaCCI
+Type: Package
+Title: Spatially Aware Cell-Cell Interaction Analysis
+Version: 1.0
+Date: 2024-09-26
+Authors@R: person(given = "Li-Ting",
+                  family = "Ku",
+                  role = c("aut", "cre"),
+                  email = "lku@mdanderson.org")
+Maintainer: Li-Ting Ku <lku@mdanderson.org>
+Description: Provides tools for analyzing spatial cell-cell interactions based on ligand-receptor pairs, including functions for local, regional, and global analysis using spatial transcriptomics data. Integrates with databases like 'CellChat' <http://www.cellchat.org/>, 'CellPhoneDB' <https://www.cellphonedb.org/>, 'Cellinker' <https://www.rna-society.org/cellinker/>, 'ICELLNET' <https://github.com/soumelis-lab/ICELLNET>, and 'ConnectomeDB' <https://humanconnectome.org/software/connectomedb/> to identify ligand-receptor pairs, visualize interactions through heatmaps, chord diagrams, and infer interactions on different spatial scales. 
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.13), Seurat (>= 4.0.0), nnls, ggrepel, pheatmap,
+        circlize (>= 0.4.12), Matrix, dplyr, patchwork, grDevices,
+        reshape2, graphics, ggplot2
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-09-26 23:55:52 UTC; lku
+Author: Li-Ting Ku [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-09-30 10:30:14 UTC

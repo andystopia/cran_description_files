@@ -1,0 +1,32 @@
+Package: ruta
+Title: Implementation of Unsupervised Neural Architectures
+Version: 1.2.0
+Authors@R: c(person("David", "Charte", email = "fdavidcl@ugr.es", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-4830-9512")), person("Francisco", "Charte", 
+    email = "francisco@fcharte.com", role = "aut", comment = c(ORCID = "0000-0002-3083-8942")), 
+    person("Francisco", "Herrera", email = "herrera@decsai.ugr.es", role = "aut"))
+Description: Implementation of several unsupervised neural networks,
+    from building their architecture to their training and evaluation. Available
+    networks are auto-encoders including their main variants: sparse, contractive,
+    denoising, robust and variational, as described in Charte et al. (2018)
+    <doi:10.1016/j.inffus.2017.12.007>.
+License: GPL (>= 3) | file LICENSE
+URL: https://github.com/fdavidcl/ruta
+BugReports: https://github.com/fdavidcl/ruta/issues
+Depends: R (>= 4.1)
+Imports: graphics (>= 4.0.0), keras (>= 2.11.0), tensorflow (>=
+        2.11.0), purrr (>= 1.0.0), R.utils (>= 2.12.2), stats (>=
+        4.0.0), utils
+Suggests: knitr, rmarkdown, testthat (>= 2.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: TensorFlow (https://www.tensorflow.org/)
+NeedsCompilation: no
+Packaged: 2023-01-08 11:08:36 UTC; fdavidcl
+Author: David Charte [aut, cre] (<https://orcid.org/0000-0002-4830-9512>),
+  Francisco Charte [aut] (<https://orcid.org/0000-0002-3083-8942>),
+  Francisco Herrera [aut]
+Maintainer: David Charte <fdavidcl@ugr.es>
+Repository: CRAN
+Date/Publication: 2023-01-08 15:10:02 UTC

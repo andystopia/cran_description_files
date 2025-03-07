@@ -1,0 +1,41 @@
+Package: winch
+Title: Portable Native and Joint Stack Traces
+Version: 0.0.7
+Date: 2021-10-24
+Authors@R: 
+    c(person(given = "Kirill",
+             family = "Müller",
+             role = c("aut", "cre"),
+             email = "krlmlr+r@mailbox.org",
+             comment = c(ORCID = "0000-0002-1416-3412")),
+      person(given = "R Consortium",
+             role = "fnd"),
+      person(given = "Ian Lance",
+             family = "Taylor",
+             role = "aut",
+             comment = "Bundled libbacktrace library"),
+      person(given = "Free Software Foundation",
+             role = "cph",
+             comment = "Bundled libbacktrace library"))
+Description: Obtain the native stack trace and fuse it with R's
+    stack trace for easier debugging of R packages with native code.
+License: GPL-3
+URL: https://r-prof.github.io/winch/, https://github.com/r-prof/winch
+BugReports: https://github.com/r-prof/winch/issues
+Imports: procmaps (>= 0.0.2)
+Suggests: DBI, knitr, magrittr, purrr, rlang (>= 0.4.8), rmarkdown,
+        RSQLite, testthat (>= 3.0.0), vctrs
+VignetteBuilder: knitr
+Encoding: UTF-8
+Biarch: yes
+RoxygenNote: 7.1.1.9001
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-10-24 09:02:14 UTC; kirill
+Author: Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
+  R Consortium [fnd],
+  Ian Lance Taylor [aut] (Bundled libbacktrace library),
+  Free Software Foundation [cph] (Bundled libbacktrace library)
+Maintainer: Kirill Müller <krlmlr+r@mailbox.org>
+Repository: CRAN
+Date/Publication: 2021-10-24 09:20:02 UTC

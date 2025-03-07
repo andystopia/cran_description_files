@@ -1,0 +1,43 @@
+Package: DoubleML
+Type: Package
+Title: Double Machine Learning in R
+Version: 0.1.1
+Authors@R: c(
+    person("Philipp", "Bach", email = "philipp.bach@uni-hamburg.de", role="aut"),
+    person("Victor", "Chernozhukov", role="aut"),
+    person("Malte S.", "Kurz", email = "malte.simon.kurz@uni-hamburg.de", role=c("aut", "cre")),
+    person("Martin", "Spindler", email="martin.spindler@gmx.de", role="aut"))
+Description: Implementation of the double/debiased machine learning framework of
+    Chernozhukov et al. (2018) <doi:10.1111/ectj.12097> for partially linear
+    regression models, partially linear instrumental variable regression models,
+    interactive regression models and interactive instrumental variable
+    regression models. 'DoubleML' allows estimation of the nuisance parts in
+    these models by machine learning methods and computation of the Neyman
+    orthogonal score functions. 'DoubleML' is built on top of 'mlr3' and the
+    'mlr3' ecosystem. The object-oriented implementation of 'DoubleML' based on
+    the 'R6' package is very flexible. 
+License: MIT + file LICENSE
+URL: https://github.com/DoubleML/doubleml-for-r/
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: R6 (>= 2.4.1), data.table (>= 1.12.8), stats, checkmate, mlr3
+        (>= 0.5.0), mlr3tuning (>= 0.3.0), mvtnorm, utils,
+        clusterGeneration, readstata13
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat, patrick, mlr3learners (>= 0.3.0),
+        paradox (>= 0.4.0), dplyr, glmnet, lgr, ranger, sandwich, AER,
+        rpart
+VignetteBuilder: knitr
+Collate: 'double_ml.R' 'double_ml_data.R' 'double_ml_iivm.R'
+        'double_ml_irm.R' 'double_ml_pliv.R' 'double_ml_plr.R'
+        'helper.R' 'datasets.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2020-12-14 12:44:53 UTC; runner
+Author: Philipp Bach [aut],
+  Victor Chernozhukov [aut],
+  Malte S. Kurz [aut, cre],
+  Martin Spindler [aut]
+Maintainer: Malte S. Kurz <malte.simon.kurz@uni-hamburg.de>
+Repository: CRAN
+Date/Publication: 2020-12-16 10:30:06 UTC

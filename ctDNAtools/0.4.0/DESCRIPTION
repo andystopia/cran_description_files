@@ -1,0 +1,33 @@
+Package: ctDNAtools
+Title: Analyze Circulating Tumor DNA Sequencing Data
+Version: 0.4.0
+Authors@R: 
+    person(given = "Amjad",
+           family = "Alkodsi",
+           role = c("aut", "cre"),
+           email = "amjad.alkodsi@gmail.com",
+           comment = c(ORCID = "0000-0003-3528-4683"))
+Description: Contains tools to analyze minimal residual disease and cell-free DNA fragmentation from aligned sequencing data.
+    More details on the methods can be found in:
+    Amjad Alkodsi, Leo Meriranta, Annika Pasanen, Sirpa Leppä (2020) <doi:10.1101/2020.01.27.912790>.
+License: MIT + file LICENSE
+Depends: R (>= 3.6.0),
+Imports: magrittr, dplyr (>= 0.8.3), tidyr (>= 1.0.0), purrr (>=
+        0.3.2), Rsamtools (>= 2.0.0), assertthat (>= 0.2.1),
+        GenomicRanges, IRanges, GenomeInfoDb, BiocGenerics, BSgenome,
+        GenomicAlignments, rlang (>= 0.4.0), Biostrings, methods, furrr
+        (>= 0.1.0), ellipsis (>= 0.3.0), VariantAnnotation (>= 1.30.1)
+Suggests: BSgenome.Hsapiens.UCSC.hg19, testthat (>= 2.1.0), ggplot2,
+        knitr, rmarkdown, covr, pkgdown
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+URL: https://github.com/alkodsi/ctDNAtools
+BugReports: https://github.com/alkodsi/ctDNAtools/issues
+NeedsCompilation: no
+Packaged: 2020-02-25 21:33:59 UTC; amjad
+Author: Amjad Alkodsi [aut, cre] (<https://orcid.org/0000-0003-3528-4683>)
+Maintainer: Amjad Alkodsi <amjad.alkodsi@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-04 18:10:02 UTC

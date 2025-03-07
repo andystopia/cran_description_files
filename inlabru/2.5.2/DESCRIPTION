@@ -1,0 +1,85 @@
+Package: inlabru
+Type: Package
+Title: Bayesian Latent Gaussian Modelling using INLA and Extensions
+Version: 2.5.2
+Authors@R: c(
+  person("Finn", "Lindgren", email = "finn.lindgren@gmail.com",
+         role = c("aut", "cre", "cph"),
+         comment = c(ORCID = "0000-0002-5833-2011",
+                     "Finn Lindgren continued development of the main code")),
+  person("Fabian E.", "Bachl", email = "bachlfab@gmail.com",
+         role = c("aut", "cph"),
+         comment = "Fabian Bachl wrote the main code"),
+  person("David L.", "Borchers", email = "dlb@st-andrews.ac.uk",
+         role = c("ctb", "dtc", "cph"),
+         comment = "David Borchers wrote code for Gorilla data import and sampling, multiplot tool"),
+  person("Daniel", "Simpson", email = "dp.simpson@gmail.com",
+         role = c("ctb", "cph"),
+         comment = "Daniel Simpson wrote the basic LGCP sampling method"),
+  person("Lindesay", "Scott-Howard", email = "lass@st-andrews.ac.uk",
+         role = c("ctb", "dtc", "cph"),
+         comment = "Lindesay Scott-Howard provided MRSea data import code"),
+  person("Seaton", "Andy", email = "andy.e.seaton@gmail.com", role = c("ctb"),
+         comment = "Andy Seaton provided testing and bugfixes"),
+  person("Suen", "Man Ho", email = "M.H.Suen@sms.ed.ac.uk", role = c("ctb", "cph"),
+         comment = "Man Ho Suen contributed features for aggregated responses")
+  )
+URL: http://www.inlabru.org, https://inlabru-org.github.io/inlabru/
+BugReports: https://github.com/inlabru-org/inlabru/issues
+Description: Facilitates spatial and general latent Gaussian modeling using
+  integrated nested Laplace approximation via the INLA package (<https://www.r-inla.org>).
+  Additionally, extends the GAM-like model class to more general nonlinear predictor
+  expressions, and implements a log Gaussian Cox process likelihood for 
+  modeling univariate and spatial point processes based on ecological survey data.
+  Model components are specified with general inputs and mapping methods to the
+  latent variables, and the predictors are specified via general R expressions,
+  with separate expressions for each observation likelihood model in
+  multi-likelihood models. A prediction method based on fast Monte Carlo sampling
+  allows posterior prediction of general expressions of the latent variables.
+  Ecology-focused introduction in Bachl, Lindgren, Borchers, and Illian (2019)
+  <doi:10.1111/2041-210X.13168>.
+License: GPL (>= 2)
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+Depends: methods, R (>= 3.5), sp (>= 1.4-5), stats
+Imports: MatrixModels, magrittr, Matrix, plyr, rgdal (>= 1.5.8), rgeos,
+        rlang, utils, withr
+Suggests: covr, dplyr, ggmap, ggplot2, ggpolypath, graphics, INLA (>=
+        21.08.31), knitr, maptools, mgcv, patchwork, raster,
+        RColorBrewer, rgl, rmarkdown, shiny, sn, spatstat.geom,
+        spatstat.core, spatstat.data, spatstat (>= 2.0-0), sphereplot,
+        testthat
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+Collate: '0_inlabru_envir.R' 'bru.covariate.R' 'bru.gof.R'
+        'bru.inference.R' 'bru.integration.R' 'bru.spatial.R'
+        'covariate.R' 'data.Poisson1_1D.R' 'data.Poisson2_1D.R'
+        'data.Poisson3_1D.R' 'data.gorillas.R' 'data.mexdolphin.R'
+        'data.mrsea.R' 'data.seals.R' 'data.shrimp.R'
+        'data.toygroups.R' 'deltaIC.R' 'deprecated.R' 'dsdata.R'
+        'dsmdata.R' 'dsmdata.tools.R' 'effect.R' 'environment.R'
+        'fmesher_crs.R' 'fmesher_utils.R' 'ggplot.R' 'inla.R'
+        'inlabru.R' 'integration.R' 'local_testthat.R' 'mesh.R'
+        'model.R' 'nlinla.R' 'plotsample.R' 'prediction.R' 'rgl.R'
+        'sampling.R' 'shapefile.R' 'spatstat.R' 'spde.R' 'stack.R'
+        'track_plotting.R' 'transformation.R' 'utils.R'
+VignetteBuilder: knitr
+BuildVignettes: true
+NeedsCompilation: no
+Packaged: 2022-03-30 15:39:40 UTC; flindgre
+Author: Finn Lindgren [aut, cre, cph] (<https://orcid.org/0000-0002-5833-2011>,
+    Finn Lindgren continued development of the main code),
+  Fabian E. Bachl [aut, cph] (Fabian Bachl wrote the main code),
+  David L. Borchers [ctb, dtc, cph] (David Borchers wrote code for
+    Gorilla data import and sampling, multiplot tool),
+  Daniel Simpson [ctb, cph] (Daniel Simpson wrote the basic LGCP sampling
+    method),
+  Lindesay Scott-Howard [ctb, dtc, cph] (Lindesay Scott-Howard provided
+    MRSea data import code),
+  Seaton Andy [ctb] (Andy Seaton provided testing and bugfixes),
+  Suen Man Ho [ctb, cph] (Man Ho Suen contributed features for aggregated
+    responses)
+Maintainer: Finn Lindgren <finn.lindgren@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-30 16:20:05 UTC

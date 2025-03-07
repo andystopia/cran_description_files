@@ -1,0 +1,38 @@
+Package: tscopula
+Type: Package
+Title: Time Series Copula Models
+Version: 0.2.1
+Date: 2021-07-03
+Authors@R: 
+    c(person(given = "Alexander", 
+             family = "McNeil", 
+             email = "alexanderjmcneil@gmail.com", 
+             role = c("aut", "cre")),
+     person(given = "Martin", 
+            family = "Bladt", 
+            email = "martinbladt@gmail.com", 
+            role = "aut"))
+Maintainer: Alexander McNeil <alexanderjmcneil@gmail.com>
+Description: Functions for the analysis of time series using copula models.  
+    The package is based on methodology described in the following references.
+    McNeil, A.J. (2021) <doi:10.3390/risks9010014>,
+    Bladt, M., & McNeil, A.J. (2020) <arXiv:2006.11088>.
+Depends: R (>= 3.5.0)
+License: GPL-3
+LazyData: true
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Imports: methods, stats, graphics, utils, zoo, xts, FKF, ltsa,
+        rvinecopulib, FitAR, arfima, Matrix
+Collate: 'basic_objects.R' 'armacopula.R' 'dvinecopula.R'
+        'dvinecopula2.R' 'fitting_basic.R' 'margins.R' 'full_models.R'
+        'vtransforms.R' 'fitting_vtscopula.R' 'helper_vtarma.R'
+        'data.R'
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-07-06 13:04:26 UTC; alexanderjmcneil
+Author: Alexander McNeil [aut, cre],
+  Martin Bladt [aut]
+Repository: CRAN
+Date/Publication: 2021-07-07 08:20:02 UTC

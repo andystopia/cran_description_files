@@ -1,0 +1,27 @@
+Package: shinyExprPortal
+Title: A Configurable 'shiny' Portal for Sharing Analysis of Molecular
+        Expression Data
+Version: 1.2.0
+Authors@R: person('Rafael', 'Henkin', email = 'r.henkin@qmul.ac.uk', role = c('cre', 'aut', 'cph'), comment = c(ORCID = '0000-0002-5511-5230'))
+Maintainer: Rafael Henkin <r.henkin@qmul.ac.uk>
+Description: Enables deploying configuration file-based 'shiny' apps with minimal programming for interactive exploration and analysis showcase of molecular expression data. For exploration, supports visualization of correlations between rows of an expression matrix and a table of observations, such as clinical measures, and comparison of changes in expression over time. For showcase, enables visualizing the results of differential expression from package such as 'limma', co-expression modules from 'WGCNA' and lower dimensional projections.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+biocViews:
+Imports: config, stats, utils, shiny, htmltools, markdown, cli, dplyr,
+        tidyr, yaml, data.table, bslib, iheatmapr, vegawidget, DT,
+        qvalue, parallel, Rfast, rlang, shinyhelper
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), whisker, knitr, rmarkdown, r2d3,
+        kableExtra, RColorBrewer
+VignetteBuilder: knitr
+URL: https://c4tb.github.io/shinyExprPortal/,
+        https://github.com/C4TB/shinyExprPortal
+Config/testthat/edition: 3
+BugReports: https://github.com/C4TB/shinyExprPortal/issues
+NeedsCompilation: no
+Packaged: 2024-07-26 15:13:49 UTC; rafaelhenkin
+Author: Rafael Henkin [cre, aut, cph] (<https://orcid.org/0000-0002-5511-5230>)
+Repository: CRAN
+Date/Publication: 2024-07-26 16:30:02 UTC

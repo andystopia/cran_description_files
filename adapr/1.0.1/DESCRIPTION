@@ -1,0 +1,19 @@
+Package: adapr
+Type: Package
+Title: Implementation of an Accountable Data Analysis Process
+Version: 1.0.1
+Date: 2016-12-29
+Author: Jon Gelfond, Martin Goros
+Maintainer: Jonathan Gelfond <gelfondjal@uthscsa.edu>
+Description: Tracks reading and writing within R scripts that are organized into a directed acyclic graph. Contains an interactive shiny application adaprApp(). Uses git2r package, Git and file hashes to track version histories of input and output. See package vignette for how to get started.
+License: LGPL-2
+Depends: R (>= 3.1)
+Imports: gdata, plotly, ggplot2, shiny, shinydashboard, knitr,
+        rmarkdown, igraph, digest, devtools, plyr, git2r, methods
+Suggests: pkgKitten
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-12-29 20:53:57 UTC; Gelfond
+Repository: CRAN
+Date/Publication: 2016-12-30 00:13:36

@@ -1,0 +1,25 @@
+Package: simplexdesign
+Type: Package
+Title: Simplex Design for Stochastic Simulations and Agent Based Models
+Version: 0.1.0
+Authors@R: c(person(c("Kevin", "R."), "Quinlan", role = c("aut", "cre"),
+                     email = "quinlan5@llnl.gov"),
+              person(c("Jim", "R."), "Leek", role = "aut"),
+	      person("Lawrence Livermore National Security", role = "cph") )
+Author: Kevin R. Quinlan [aut, cre],
+  Jim R. Leek [aut],
+  Lawrence Livermore National Security [cph]
+Maintainer: Kevin R. Quinlan <quinlan5@llnl.gov>
+Description: Design statistical experiments on agent based models, including a coordinate exchange algorithm for homogeneous agents, and more generally any simplex.  There is also an optimization algorithm for the case with multiple classes of homogeneous agents. See our paper "Uncertainty Quantification for Models of Homogeneous Agents" for more details when it is published.   
+Depends: R (>= 3.6.0)
+Imports: ggplot2 (>= 3.2.1), GGally (>= 1.4.0), Rfast (>= 1.9.5),
+        progress (>= 1.2.2), DiceDesign (>= 1.8.1), stats
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2020-03-09 21:57:58 UTC; quinlan5
+Repository: CRAN
+Date/Publication: 2020-03-16 14:20:02 UTC

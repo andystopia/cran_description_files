@@ -1,0 +1,28 @@
+Package: glmtlp
+Type: Package
+Title: Generalized Linear Models with Truncated Lasso Penalty
+Version: 2.0.1
+Date: 2021-12-17
+Authors@R: c(
+    person("Chunlin", "Li", role = "aut"),
+    person("Yu", "Yang", email = "yang6367@umn.edu", role = c("aut", "cre")), 
+    person("Chong", "Wu", role = "aut"))
+URL: https://yuyangyy.com/glmtlp/
+Depends: R (>= 3.5.0)
+Imports: foreach, doParallel, ggplot2
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Description: Extremely efficient procedures for fitting regularization path with l0, l1, and truncated lasso penalty for linear regression and logistic regression models. This version is a completely new version compared with our previous version, which was mainly based on R. New core algorithms are developed and are now written in C++ and highly optimized. 
+Encoding: UTF-8
+License: GPL-3
+LazyData: true
+Author: Chunlin Li [aut],
+  Yu Yang [aut, cre],
+  Chong Wu [aut]
+Maintainer: Yu Yang <yang6367@umn.edu>
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-12-17 22:42:26 UTC; yuyang
+Repository: CRAN
+Date/Publication: 2021-12-17 23:00:02 UTC

@@ -1,0 +1,33 @@
+Package: gmwmx
+Title: Estimate Functional and Stochastic Parameters of Linear Models
+        with Correlated Residuals
+Version: 1.0.1
+Authors@R: c(
+    person("Davide Antonio", "Cucci", role = c("aut")),
+    person("Lionel", "Voirol", email = "lionelvoirol@hotmail.com", role = c("aut", "cre")),
+    person("Stéphane", "Guerrier", role = "aut"),
+    person("Jean-Philippe", "Montillet", role = "ctb"),
+    person("Gaël", "Kermarrec", role = "ctb")
+    )
+License: AGPL-3
+Description: Implements the Generalized Method of Wavelet Moments with Exogenous Inputs estimator (GMWMX) presented in Cucci, D. A., Voirol, L., Kermarrec, G., Montillet, J. P., and Guerrier, S. (2022) <arXiv:2206.09668>.
+             The GMWMX estimator allows to estimate functional and stochastic parameters of linear models with correlated residuals. 
+             The 'gmwmx' package provides functions to estimate, compare and analyze models, utilities to load and work with Global Navigation Satellite System (GNSS) data as well as methods to compare results with the Maximum Likelihood Estimator (MLE) implemented in Hector.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Depends: R (>= 4.0.0)
+Suggests: rmarkdown, knitr, simts
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, fs, stringi, wv, Matrix, longmemo, rjson
+NeedsCompilation: yes
+Packaged: 2022-08-20 14:39:10 UTC; lionel
+Author: Davide Antonio Cucci [aut],
+  Lionel Voirol [aut, cre],
+  Stéphane Guerrier [aut],
+  Jean-Philippe Montillet [ctb],
+  Gaël Kermarrec [ctb]
+Maintainer: Lionel Voirol <lionelvoirol@hotmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-22 09:20:08 UTC

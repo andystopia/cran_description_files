@@ -1,0 +1,26 @@
+Package: dann
+Type: Package
+Title: Discriminant Adaptive Nearest Neighbor Classification
+Version: 0.2.6
+Author: Greg McMahan
+Maintainer: Greg McMahan <gmcmacran@gmail.com>
+Description: Discriminant Adaptive Nearest Neighbor Classification is a 
+    variation of k nearest neighbors where the shape of the neighborhood is 
+    data driven. This package implements dann and sub_dann from
+    Hastie (1995) <https://web.stanford.edu/~hastie/Papers/dann_IEEE.pdf>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: MASS (>= 7.3), stats (>= 3.5.3), tibble (>= 2.1.1), ggplot2
+        (>= 3.1.1), stringr (>= 1.4.0), purrr (>= 0.3.2), rlang (>=
+        0.3.4), fpc (>= 2.1-11.1), Rcpp (>= 1.0.1)
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 3.0.0), knitr (>= 1.22), rmarkdown (>= 1.18),
+        covr (>= 3.2.1), mlbench (>= 2.1-1), dplyr (>= 0.8.0.1),
+        magrittr (>= 1.5),
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-02-14 16:18:46 UTC; gmcma
+Repository: CRAN
+Date/Publication: 2022-02-14 17:40:05 UTC

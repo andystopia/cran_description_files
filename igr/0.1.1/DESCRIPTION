@@ -1,0 +1,29 @@
+Package: igr
+Title: Irish Grid Reference Utilities
+Version: 0.1.1
+Authors@R: c(
+    person("John", "Kennedy", , "john@digitalnature.ie", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1128-987X")),
+    person("Digital Nature", role = "fnd")
+  )
+Description: Convert between Irish grid references and Irish Grid coordinates. Irish grid 
+    references can also be converted to or from an 'sf' object in any coordinate reference 
+    system. Precisions from 1 m to 100 km are supported, as are datasets with mixed 
+    precision. Conversion to 'sf' polygons is precision-aware.
+License: GPL (>= 3)
+URL: https://github.com/digitalnature-ie/igr,
+        https://digitalnature-ie.github.io/igr/
+BugReports: https://github.com/digitalnature-ie/igr/issues
+Imports: sf
+Suggests: knitr, maps, rmarkdown, testthat (>= 3.0.0), tmap
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-07-22 21:16:05 UTC; jkenn
+Author: John Kennedy [aut, cre, cph] (<https://orcid.org/0000-0002-1128-987X>),
+  Digital Nature [fnd]
+Maintainer: John Kennedy <john@digitalnature.ie>
+Repository: CRAN
+Date/Publication: 2024-07-27 16:20:05 UTC

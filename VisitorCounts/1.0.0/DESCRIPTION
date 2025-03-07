@@ -1,0 +1,36 @@
+Package: VisitorCounts
+Type: Package
+Title: Modeling and Forecasting Visitor Counts Using Social Media
+Version: 1.0.0
+Date: 2021-11-24
+Authors@R: c(
+        person("Russell", "Goebel", email = "rgoebel@bu.edu", role = "aut"),
+        person("Robert", "Bowen", email = "robertbowen.bham@gmail.com", role = c("aut", "cre")),
+        person("Beth Ann", "Brackett", email = "eliannkb@gmail.com", role = "ctb"),
+        person("Kimihiro", "Noguchi", email = "Kimihiro.noguchi@wwu.edu", role = "aut")
+    )
+Author: Russell Goebel [aut],
+  Robert Bowen [aut, cre],
+  Beth Ann Brackett [ctb],
+  Kimihiro Noguchi [aut]
+Maintainer: Robert Bowen <robertbowen.bham@gmail.com>
+Description: Performs modeling and forecasting of park visitor counts
+	using social media data and (partial) on-site visitor counts.
+	Specifically, the model is built based on an automatic decomposition
+	of the trend and seasonal components of the social media-based park visitor counts,
+	from which short-term forecasts of the visitor counts and percent changes
+	in the visitor counts can be made. A reference for generating social media-based
+	visitor counts can be found at
+	Wood, Guerry, Silver, and Lacayo (2013) <doi:10.1038/srep02976>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: Rssa, ggplot2, ggthemes, tibble, methods
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2021-11-24 23:15:29 UTC; Robert
+Repository: CRAN
+Date/Publication: 2021-11-25 08:50:02 UTC

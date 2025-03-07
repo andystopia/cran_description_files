@@ -1,0 +1,33 @@
+Package: attrCUSUM
+Type: Package
+Title: Tools for Attribute VSI CUSUM Control Chart
+Version: 0.1.0
+Authors@R: c(
+  person("Hanwool", "Kim", email = "stat.hanwool@gmail.com",
+         role = c("aut", "cre")),
+  person("Sangyeol", "Lee", email = "sylee@stat.snu.ac.kr",
+         role = "aut"))
+Description: An implementation of tools for design of attribute 
+  variable sampling interval cumulative sum chart. 
+  It currently provides information for monitoring of mean increase such as 
+  average number of sample to signal, average time to signal,
+  a matrix of transient probabilities, suitable control limits when the data are
+  (zero inflated) Poisson/binomial distribution. 
+  Functions in the tools can be easily applied to other count processes.
+  Also, tools might be extended to more complicated cumulative sum control chart.
+  We leave these issues as our perpetual work.
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.3.2)
+Imports: Rcpp (>= 0.12.8), stats (>= 3.3.2), utils (>= 3.3.2)
+Suggests: testthat (>= 1.0.2), knitr (>= 1.15.1), rmarkdown (>= 1.2)
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+LinkingTo: Rcpp (>= 0.12.8), RcppArmadillo (>= 0.7.500.0.0)
+NeedsCompilation: yes
+Packaged: 2016-12-28 15:53:59 UTC; hanwool
+Author: Hanwool Kim [aut, cre],
+  Sangyeol Lee [aut]
+Maintainer: Hanwool Kim <stat.hanwool@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-12-28 17:18:36

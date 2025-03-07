@@ -1,0 +1,32 @@
+Package: polle
+Title: Policy Learning
+Version: 1.0
+Authors@R: c(person(given = "Andreas",
+                    family = "Nordland",
+                    role = c("aut", "cre"),
+                    email = "andreasnordland@gmail.com"),
+             person(given = "Klaus",
+                    family = "Holst",
+                    role = c("aut"),
+                    email = "klaus@holst.it",
+                    comment = c(ORCID="0000-0002-1364-6789"))
+             )
+Description: Framework for evaluating user-specified finite stage policies and learning realistic policies via doubly robust loss functions. Policy learning methods include doubly robust restricted Q-learning, sequential policy tree learning and outcome weighted learning. See Nordland and Holst (2022) for documentation and references.
+License: Apache License (>= 2)
+Encoding: UTF-8
+Imports: data.table (>= 1.14.5), future.apply, lava (>= 1.7.0),
+        methods, policytree (>= 1.2.0), SuperLearner, survival,
+        targeted, DynTxRegime
+Suggests: DTRlearn2, glmnet, mgcv, knitr, ranger, rmarkdown, testthat
+        (>= 3.0)
+Depends: R (>= 4.0)
+RoxygenNote: 7.2.1
+URL: https://arxiv.org/abs/2212.02335
+BugReports: https://github.com/AndreasNordland/polle/issues
+NeedsCompilation: no
+Packaged: 2022-12-06 13:47:47 UTC; andreasnordland
+Author: Andreas Nordland [aut, cre],
+  Klaus Holst [aut] (<https://orcid.org/0000-0002-1364-6789>)
+Maintainer: Andreas Nordland <andreasnordland@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-12-06 17:30:02 UTC

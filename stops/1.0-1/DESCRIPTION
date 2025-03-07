@@ -1,0 +1,28 @@
+Package: stops
+Title: Structure Optimized Proximity Scaling
+Version: 1.0-1
+Date: 2023-01-18
+Authors@R: c(person(given="Thomas", family="Rusch", email="thomas.rusch@wu.ac.at", role = c("aut","cre")), person(given="Jan",family="de Leeuw", role = c("aut")), person(given="Lisha",family="Chen", role = "aut"),  person(given="Patrick",family="Mair", role = "aut"), person(given="Kurt",family="Hornik", role = "ctb"))
+Author: Thomas Rusch [aut, cre],
+  Jan de Leeuw [aut],
+  Lisha Chen [aut],
+  Patrick Mair [aut],
+  Kurt Hornik [ctb]
+Maintainer: Thomas Rusch <thomas.rusch@wu.ac.at>
+Description: A collection of methods that fit nonlinear distance transformations in multidimensional scaling (MDS) and trade-off the fit with structure considerations to find optimal parameters also known as structure optimized proximity scaling (STOPS) (Rusch, Mair & Hornik, 2023,<doi:10.1007/s11222-022-10197-w>). The package contains various functions, wrappers, methods and classes for fitting, plotting and displaying different MDS models in a STOPS framework like Torgerson (classical) scaling, scaling by majorizing a complex function (SMACOF), Sammon mapping, elastic scaling, symmetric SMACOF, spherical SMACOF, s-stress, r-stress, power MDS, power elastic scaling, power Sammon mapping, power stress MDS (POST-MDS), approximate power stress, Box-Cox MDS, local MDS and Isomap. All of these models can also be fit individually with given hyperparameters or by optimizing over hyperparameters based on fit only (i.e., no structure considerations). The package further contains functions for optimization, specifically the adaptive Luus-Jaakola algorithm and a wrapper for Bayesian optimization with treed Gaussian process with jumps to linear models, and functions for various c-structuredness indices.
+Depends: R (>= 3.5.0), smacof, rgl
+Imports: cordillera, MASS, pso, scatterplot3d, acepack, minerva,
+        energy, DiceOptim, DiceKriging, tgp, pomp, vegan, scagnostics,
+        clue, cmaes, dfoptim, nloptr
+Enhances: stats
+Suggests: sp, R.rsp
+License: GPL-2 | GPL-3
+LazyData: true
+URL: https://r-forge.r-project.org/projects/stops/
+VignetteBuilder: R.rsp
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-01-18 21:02:27 UTC; trusch
+Repository: CRAN
+Date/Publication: 2023-01-20 10:10:02 UTC

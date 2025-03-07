@@ -1,0 +1,22 @@
+Package: currr
+Title: Apply Mapping Functions in Frequent Saving
+Version: 0.1.0
+Authors@R: 
+    person("Marcell", "Granat", , "granat.marcell@uni-neumann.hu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4036-1500"))
+Description: Implementations of the family of map() functions with frequent saving of the intermediate results. The contained functions let you start the evaluation of the iterations where you stopped  (reading the already evaluated ones from cache), and work with the currently evaluated iterations while remaining ones are running in a background job. Parallel computing is also easier with the workers parameter.
+License: MIT + file LICENSE
+URL: https://github.com/MarcellGranat/currr
+BugReports: https://github.com/MarcellGranat/currr/issues
+Depends: R (>= 4.1.0)
+Imports: dplyr, tidyr, readr, stringr, broom, pacman, tibble,
+        clisymbols, job, rstudioapi, scales, parallel, purrr, crayon,
+        stats
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-02-13 15:35:26 UTC; marci
+Author: Marcell Granat [aut, cre] (<https://orcid.org/0000-0002-4036-1500>)
+Maintainer: Marcell Granat <granat.marcell@uni-neumann.hu>
+Repository: CRAN
+Date/Publication: 2023-02-14 09:50:07 UTC

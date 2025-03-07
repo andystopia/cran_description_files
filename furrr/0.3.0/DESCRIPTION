@@ -1,0 +1,32 @@
+Package: furrr
+Title: Apply Mapping Functions in Parallel using Futures
+Version: 0.3.0
+Authors@R: c(
+    person("Davis", "Vaughan", , "davis@rstudio.com", role = c("aut", "cre")),
+    person("Matt", "Dancho", , "mdancho@business-science.io", role = "aut"),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: Implementations of the family of map() functions from 'purrr'
+    that can be resolved using any 'future'-supported backend, e.g.
+    parallel on the local machine or distributed on a compute cluster.
+License: MIT + file LICENSE
+URL: https://github.com/DavisVaughan/furrr,
+        https://furrr.futureverse.org/
+BugReports: https://github.com/DavisVaughan/furrr/issues
+Depends: future (>= 1.25.0), R (>= 3.4.0)
+Imports: globals (>= 0.14.0), lifecycle (>= 1.0.1), purrr (>= 0.3.4),
+        rlang (>= 1.0.2), vctrs (>= 0.4.1)
+Suggests: carrier, covr, dplyr (>= 0.7.4), knitr, listenv (>= 0.6.0),
+        magrittr, rmarkdown, testthat (>= 3.0.0), tidyselect, withr
+Config/Needs/website: progressr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-05-04 14:36:06 UTC; davis
+Author: Davis Vaughan [aut, cre],
+  Matt Dancho [aut],
+  RStudio [cph, fnd]
+Maintainer: Davis Vaughan <davis@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-05-04 15:50:02 UTC

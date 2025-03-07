@@ -1,0 +1,37 @@
+Package: ctsemOMX
+Type: Package
+Title: Continuous Time SEM - 'OpenMx' Based Functions
+Version: 1.0.2
+Date: 2020-7-7
+Authors@R: c(person("Charles", "Driver", role =
+    c("aut","cre","cph"),email="driver@mpib-berlin.mpg.de"),
+    person("Manuel", "Voelkle", role = c("aut","cph")),
+    person("Han", "Oud", role = c("aut","cph") ))
+Description: Original 'ctsem' (continuous time structural equation modelling)
+    functionality, based on the 'OpenMx' software, as described in 
+    Driver, Oud, Voelkle (2017) <doi:10.18637/jss.v077.i05>, with updated details in vignette. 
+    Combines stochastic differential equations representing latent processes with 
+    structural equation measurement models. These functions were split off from
+    the main package of 'ctsem', as the main package uses the 'rstan' package as a backend now --
+    offering estimation options from max likelihood to Bayesian.
+    There are nevertheless use cases for the wide format SEM style approach as offered here, 
+    particularly when there are no individual differences in observation timing and the
+    number of individuals is large. For the main 'ctsem' package, see <https://cran.r-project.org/package=ctsem>.
+License: GPL-3
+Depends: R (>= 3.5.0), ctsem (>= 3.3.2), OpenMx (>= 2.9.0)
+URL: https://github.com/cdriveraus/ctsemOMX
+Imports: graphics, grDevices, Matrix, methods, plyr, stats, utils
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Suggests: knitr, testthat
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-07-07 13:38:55 UTC; Driver
+Author: Charles Driver [aut, cre, cph],
+  Manuel Voelkle [aut, cph],
+  Han Oud [aut, cph]
+Maintainer: Charles Driver <driver@mpib-berlin.mpg.de>
+Repository: CRAN
+Date/Publication: 2020-07-07 15:40:02 UTC

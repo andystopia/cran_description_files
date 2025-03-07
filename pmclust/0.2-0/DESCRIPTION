@@ -1,0 +1,39 @@
+Package: pmclust
+Version: 0.2-0
+Date: 2018-02-01
+Title: Parallel Model-Based Clustering using
+        Expectation-Gathering-Maximization Algorithm for Finite Mixture
+        Gaussian Model
+Authors@R: c(person("Wei-Chen", "Chen", role = c("aut", "cre"), email =
+        "wccsnow@gmail.com"), person("George", "Ostrouchov", role = "aut"))
+Depends: R (>= 3.0.0), pbdMPI (>= 0.3-1), pbdBASE (>= 0.4-3), pbdDMAT
+        (>= 0.4-0)
+Imports: methods, MASS
+Enhances: MixSim
+LazyLoad: yes
+LazyData: yes
+Description: Aims to utilize model-based clustering (unsupervised)
+        for high dimensional and ultra large data, especially in a distributed
+        manner. The code employs 'pbdMPI' to perform a
+        expectation-gathering-maximization algorithm
+        for finite mixture Gaussian
+        models. The unstructured dispersion matrices are assumed in the
+        Gaussian models. The implementation is default in the single program
+        multiple data programming model. The code can be executed
+        through 'pbdMPI' and MPI' implementations such as 'OpenMPI'
+        and 'MPICH'.
+        See the High Performance Statistical Computing website
+	<https://snoweye.github.io/hpsc/>
+	for more information, documents and examples.
+License: GPL (>= 2)
+URL: http://r-pbd.org/
+BugReports: http://group.r-pbd.org/
+MailingList: Please send questions and comments regarding pbdR to
+        RBigData@gmail.com
+NeedsCompilation: yes
+Maintainer: Wei-Chen Chen <wccsnow@gmail.com>
+Packaged: 2018-02-02 04:12:21 UTC; snoweye
+Author: Wei-Chen Chen [aut, cre],
+  George Ostrouchov [aut]
+Repository: CRAN
+Date/Publication: 2018-02-02 04:41:01 UTC

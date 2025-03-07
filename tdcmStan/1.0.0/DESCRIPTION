@@ -1,0 +1,37 @@
+Package: tdcmStan
+Type: Package
+Title: Automating the Creation of Stan Code for TDCMs
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Jeffrey",
+             family = "Hoover",
+             role = c("aut", "cre", "cph"),
+             email = "jeffrey.c.hoover@gmail.com",
+             comment = c(ORCID = "0000-0002-0276-0308")),
+      person(given = "W. Jake",
+             family = "Thompson",
+             role = c("aut"),
+             email = "wjakethompson@gmail.com",
+             comment = c(ORCID = "0000-0001-7339-0300")))
+Description: A collection of functions for automatically creating 'Stan'
+      code for transition diagnostic classification models (TDCMs) as they are
+      defined by Madison and Bradshaw (2018) <DOI:10.1007/s11336-018-9638-5>.
+      This package supports automating the creation of 'Stan' code for TDCMs,
+      fungible TDCMs (i.e., TDCMs with item parameters constrained to be equal
+      across all items), and multi-threaded TDCMs.
+License: GPL (>= 2)
+Imports: dplyr (>= 1.0.7), glue (>= 1.4.2), magrittr (>= 2.0.1), rlang
+        (>= 0.4.11), stringr (>= 1.4.0), tibble (>= 3.1.5), tidyr (>=
+        1.1.4)
+Suggests: readr (>= 2.0.0), testthat (>= 3.0.4)
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-05-06 21:30:31 UTC; jeff
+Author: Jeffrey Hoover [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0276-0308>),
+  W. Jake Thompson [aut] (<https://orcid.org/0000-0001-7339-0300>)
+Maintainer: Jeffrey Hoover <jeffrey.c.hoover@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-09 07:50:02 UTC

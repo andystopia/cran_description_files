@@ -1,0 +1,49 @@
+Package: squid
+Title: Statistical Quantification of Individual Differences
+Version: 0.1.2
+Authors@R: c(
+    person("Hassen"  , "Allegue"        , email = "h.all@disroot.org"                 , role = c("aut","cre")),
+    person("Yimen"   , "G. Araya-Ajoy"  , email = "yimencr@gmail.com"                 , role = "aut"),
+    person("Niels"   , "J. Dingemanse"  , email = "ndingemanse@orn.mpg.de"            , role = "aut"),
+    person("Ned"     , "A. Dochtermann" , email = "ned.dochtermann@gmail.com"         , role = "aut"),
+    person("Laszlo"  , "Z. Garamszegi"  , email = "laszlo.garamszegi@ebd.csic.es"     , role = "aut"),
+    person("Shinichi", "Nakagawa"       , email = "itchyshin@gmail.com"               , role = "aut"),
+    person("Denis"   , "Reale"          , email = "reale.denis@uqam.ca"               , role = "aut"),
+    person("Holger"  , "Schielzeth"     , email = "holger.schielzeth@uni-bielefeld.de", role = "aut"),
+    person("David"   , "F. Westneat"    , email = "david.westneat@uky.edu"            , role = "aut"))
+Description: A simulation-based tool made to help researchers to become familiar with
+    multilevel variations, and to build up sampling designs for their study. 
+    This tool has two main objectives: First, it provides an educational tool useful for students, 
+    teachers and researchers who want to learn to use mixed-effects models. 
+    Users can experience how the mixed-effects model framework can be used to understand 
+    distinct biological phenomena by interactively exploring simulated multilevel data. 
+    Second, it offers research opportunities to those who are already familiar with 
+    mixed-effects models, as it enables the generation of data sets that users may download 
+    and use for a range of simulation-based statistical analyses such as power 
+    and sensitivity analysis of multilevel and multivariate data [Allegue, H., Araya-Ajoy, Y.G., Dingemanse, 
+    N.J., Dochtermann N.A., Garamszegi, L.Z., Nakagawa, S., Reale, D., Schielzeth, H. and Westneat, D.F. (2016) 
+    <doi: 10.1111/2041-210X.12659>].
+URL: https://github.com/hallegue/squid
+BugReports: https://github.com/hallegue/squid/issues
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+LazyData: true
+Imports: stats, shiny (>= 1.3.2), ggplot2 (>= 3.1.1), grid (>= 3.5.3),
+        MASS (>= 7.3-51.1), lme4 (>= 1.1-21), arm (>= 1.10-1),
+        data.table (>= 1.12.2)
+RoxygenNote: 6.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2019-08-06 15:31:22 UTC; HASSEN
+Author: Hassen Allegue [aut, cre],
+  Yimen G. Araya-Ajoy [aut],
+  Niels J. Dingemanse [aut],
+  Ned A. Dochtermann [aut],
+  Laszlo Z. Garamszegi [aut],
+  Shinichi Nakagawa [aut],
+  Denis Reale [aut],
+  Holger Schielzeth [aut],
+  David F. Westneat [aut]
+Maintainer: Hassen Allegue <h.all@disroot.org>
+Repository: CRAN
+Date/Publication: 2019-08-06 16:10:02 UTC

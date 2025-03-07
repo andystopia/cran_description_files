@@ -1,0 +1,29 @@
+Package: rscielo
+Type: Package
+Title: A Scraper for Scientific Journals Hosted on Scielo
+Version: 1.0.0
+Authors@R: c(
+    person("Fernando", "Meireles", , "fernando.meireles@iesp.uerj.br", c("aut", "cre"), c(ORCID = "0000-0002-7027-2058")),
+    person("Denisson", "Silva", , "silvadenisson@ufmg.br", c("aut"), c(ORCID = "0000-0003-2771-8146")),
+    person("Rogerio", "Barbosa", , "antrologos@gmail.com", c("aut"), c(ORCID = "0000-0002-7027-2058"))
+    )
+Description: Scrapes data from scientific articles hosted on the Scientific 
+    Electronic Library Online Platform <http://www.scielo.br/>. The data 
+    information includes author's names, articles' metadata and contents, among others. 
+    The package also provides additional functions to easily summarize the scraped data.
+License: GPL-3
+Depends: R (>= 3.1)
+Imports: graphics, magrittr, stats, xml2, httr (>= 0.5), rvest,
+        stringr, tibble, purrr, dplyr
+LazyData: TRUE
+URL: https://github.com/meirelesff/rscielo
+BugReports: https://github.com/meirelesff/rscielo/issues
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-08-21 15:44:21 UTC; meire
+Author: Fernando Meireles [aut, cre] (<https://orcid.org/0000-0002-7027-2058>),
+  Denisson Silva [aut] (<https://orcid.org/0000-0003-2771-8146>),
+  Rogerio Barbosa [aut] (<https://orcid.org/0000-0002-7027-2058>)
+Maintainer: Fernando Meireles <fernando.meireles@iesp.uerj.br>
+Repository: CRAN
+Date/Publication: 2019-08-22 12:10:02 UTC

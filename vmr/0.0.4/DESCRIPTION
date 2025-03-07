@@ -1,0 +1,30 @@
+Package: vmr
+Type: Package
+Encoding: UTF-8
+Title: Virtual Machines for R
+Version: 0.0.4
+Date: 2022-07-08
+Authors@R: c(person("Jean-François", "Rey", role = c("cre","aut"), email = "jf.rey.public@gmail.com"))
+Maintainer: Jean-François Rey <jf.rey.public@gmail.com>
+Description: Manage, provision and use Virtual Machines pre-configured for R.
+             Develop, test and build package in a clean environment.
+             'Vagrant' tool and a provider (such as 'Virtualbox') have to be installed.
+URL: https://gitlab.com/rstuff/vmr, https://rstuff.gitlab.io/vmr
+BugReports: https://gitlab.com/rstuff/vmr/-/issues
+License: GPL (>= 3)
+BuildVignettes: true
+NeedsCompilation: no
+Biarch: true
+SystemRequirements: Vagrant <https://www.vagrantup.com>
+Depends: utils, R (>= 3.3.0)
+Imports: jsonlite, curl
+Collate: 'vmr.R' 'package.R' 'virtualbox.R' 'vagrantcloudAPI.R'
+        'vagrant.R' 'vmr-methods.R'
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), ssh
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Packaged: 2022-07-08 15:11:22 UTC; root
+Author: Jean-François Rey [cre, aut]
+Repository: CRAN
+Date/Publication: 2022-07-08 15:30:02 UTC

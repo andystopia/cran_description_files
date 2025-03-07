@@ -1,0 +1,44 @@
+Package: globaltrends
+Type: Package
+Title: Download and Measure Global Trends Through Google Search Volumes
+Version: 0.0.12
+Authors@R: c(
+    person("Harald", "Puhr", role = c("aut", "cre"), email = "harald.puhr@gmail.com"),
+    person("Jakob", "Muellner", role = c("ccp"))
+  )
+URL: https://github.com/ha-pu/globaltrends/
+BugReports: https://github.com/ha-pu/globaltrends/issues/
+Description: Google offers public access to global search volumes from its
+    search engine through the Google Trends portal. The package downloads
+	these search volumes provided by Google Trends and uses them to measure
+	and analyze the distribution of search scores across countries or
+    within countries. The package allows researchers and analysts to use these
+    search scores to investigate global trends based on patterns within these
+    scores. This offers insights such as degree of internationalization of
+    firms and organizations or dissemination of political, social, or
+    technological trends across the globe or within single countries.
+	An outline of the package's methodological foundations and potential
+	applications is available as a working paper:
+	<https://www.ssrn.com/abstract=3969013>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: DBI (>= 1.1.0), dbplyr (>= 1.4.4), dplyr (>= 1.0.2), forcats
+        (>= 0.5.0), forecast (>= 8.12), ggplot2 (>= 3.3.2), glue (>=
+        1.4.2), gtrendsR (>= 1.5.1), ineq (>= 0.2.13), maps (>= 3.4.0),
+        lubridate (>= 1.7.9), purrr (>= 0.3.4), rlang (>= 0.4.7),
+        RSQLite (>= 2.2.0), stats (>= 4.0.2), stringr (>= 1.4.0),
+        tibble (>= 3.0.3), tidyr (>= 1.0.0), utils (>= 4.0.2), WDI (>=
+        2.7.1), zoo (>= 1.8.8)
+RoxygenNote: 7.2.0
+Suggests: covr, knitr (>= 1.29), rmarkdown (>= 2.3), testthat (>=
+        2.3.2)
+VignetteBuilder: knitr
+Depends: R (>= 2.15.1)
+NeedsCompilation: no
+Packaged: 2022-06-22 13:54:11 UTC; c4361369
+Author: Harald Puhr [aut, cre],
+  Jakob Muellner [ccp]
+Maintainer: Harald Puhr <harald.puhr@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-23 07:10:11 UTC

@@ -1,0 +1,28 @@
+Package: dcmodify
+Maintainer: Mark van der Loo <mark.vanderloo@gmail.com>
+License: GPL-3
+Title: Modify Data Using Externally Defined Modification Rules
+Type: Package
+LazyLoad: yes
+Authors@R: c(person("Mark", "van der Loo",role=c("cre","aut"),email="mark.vanderloo@gmail.com")
+    , person("Edwin", "de Jonge", role="aut"))
+Description: Data cleaning scripts typically contain a lot of 'if this change that'
+    type of statements. Such statements are typically condensed expert knowledge.
+    With this package, such 'data modifying rules' are taken out of the code and
+    become in stead parameters to the work flow. This allows one to maintain, document,
+    and reason about data modification rules as separate entities.
+Version: 0.1.9
+Depends: methods
+URL: https://github.com/data-cleaning/dcmodify
+BugReports: https://github.com/data-cleaning/dcmodify/issues
+Imports: yaml, validate (>= 0.1.5), settings, utils
+Suggests: tinytest, knitr, lumberjack, rmarkdown
+VignetteBuilder: knitr
+Collate: 'dplyr_verbs.R' 'guard.R' 'modifier.R' 'modify.R' 'validate.R'
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-09-24 09:29:10 UTC; mark
+Author: Mark van der Loo [cre, aut],
+  Edwin de Jonge [aut]
+Repository: CRAN
+Date/Publication: 2021-09-24 09:40:02 UTC

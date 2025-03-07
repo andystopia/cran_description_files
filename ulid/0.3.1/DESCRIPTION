@@ -1,0 +1,40 @@
+Package: ulid
+Type: Package
+Title: Generate Universally Unique 'Lexicographically' 'Sortable'
+        Identifiers
+Version: 0.3.1
+Date: 2024-04-02
+Authors@R: c(
+  person("Bob", "Rudis", role = "aut", comment = c(ORCID = "0000-0001-5670-2640")),
+  person("Suyash", "Verma", role = "aut", comment = "ULID C++ <https://github.com/suyash/ulid/>"),
+  person("Dirk", "Eddelbuettel", role = "cre", comment = c(ORCID = "0000-0001-6419-907X"),
+         email = "edd@debian.org"))
+Description: Universally unique identifiers ('UUIDs') can be sub-optimal for many
+  uses-cases because they are not the most character efficient way of encoding
+  128 bits of randomness; v1/v2 versions are impractical in many environments,
+  as they require access to a unique, stable MAC address; v3/v5 versions require
+  a unique seed and produce randomly distributed IDs, which can cause fragmentation
+  in many data structures; v4 provides no other information than randomness which
+  can cause fragmentation in many data structures. Providing an alternative, 'ULIDs'
+  (<https://github.com/ulid/spec>) have 128-bit compatibility with 'UUID', 1.21e+24
+  unique 'ULIDs' per millisecond, support standard (text) sorting, canonically encoded
+  as a 26 character string, as opposed to the 36 character 'UUID', use 'base32'
+  encoding for better efficiency and readability (5 bits per character), are case
+  insensitive, have no special characters (i.e. are 'URL' safe) and have a monotonic
+  sort order (correctly detects and handles the same millisecond).
+URL: https://github.com/eddelbuettel/ulid
+BugReports: https://github.com/eddelbuettel/ulid/issues
+NeedsCompilation: yes
+Encoding: UTF-8
+License: MIT + file LICENSE
+Suggests: tinytest
+Imports: Rcpp
+LinkingTo: Rcpp
+RoxygenNote: 7.3.1
+Packaged: 2024-04-02 11:58:33 UTC; edd
+Author: Bob Rudis [aut] (<https://orcid.org/0000-0001-5670-2640>),
+  Suyash Verma [aut] (ULID C++ <https://github.com/suyash/ulid/>),
+  Dirk Eddelbuettel [cre] (<https://orcid.org/0000-0001-6419-907X>)
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2024-04-02 13:40:02 UTC

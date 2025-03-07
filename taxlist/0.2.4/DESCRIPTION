@@ -1,0 +1,48 @@
+Package: taxlist
+Version: 0.2.4
+Encoding: UTF-8
+Title: Handling Taxonomic Lists
+Authors@R: c(
+    person("Miguel", "Alvarez", email="kamapu78@gmail.com",
+        role=c("aut","cre"), comment=c(ORCID="0000-0003-1500-1834")),
+    person("Zachary", "Foster", email="zacharyfoster1989@gmail.com",
+        role="ctb", comment=c(ORCID = "0000-0002-5075-0948")),
+    person("Sam", "Levin", email="levisc8@gmail.com", role="rev"),
+	person("Margaret", "Siple", email="siplem@uw.edu", role="rev")
+    )
+Depends: R(>= 4.0)
+Imports: biblio (>= 0.0.8), foreign, methods, stats, stringdist,
+        stringi, stringr, tools, utils, vegdata
+Suggests: ape, knitr, rmarkdown, taxa, testthat
+LazyData: true
+Description: Handling taxonomic lists through objects of class 'taxlist'.
+    This package provides functions to import species lists from 'Turboveg'
+    (<https://www.synbiosys.alterra.nl/turboveg/>) and the possibility to create
+    backups from resulting R-objects.
+    Also quick displays are implemented as summary-methods.
+License: GPL (>= 2)
+URL: https://cran.r-project.org/package=taxlist,
+        https://github.com/ropensci/taxlist,
+        https://docs.ropensci.org/taxlist/
+BugReports: https://github.com/ropensci/taxlist/issues
+Collate: 'imports.R' 'internal.R' 'levels.R' 'deprecated-functions.R'
+        'id_generator.R' 'replace_x.R' 'dissect_name.R'
+        'clean_strings.R' 'taxlist-class.R' 'matched_names-class.R'
+        'clean.R' 'coerce-methods.R' 'taxon_views.R' 'count_taxa.R'
+        'taxon_names.R' 'taxon_relations.R' 'add_concept.R'
+        'taxon_traits.R' 'accepted_name.R' 'get_children.R'
+        'merge_taxa.R' 'Extract.R' 'subset.R' 'backup_object.R'
+        'summary.R' 'df2taxlist.R' 'tv2taxlist.R' 'tax2traits.R'
+        'match_names.R' 'print_name.R' 'indented_list.R'
+        'Easplist-data.R' 'taxlist-package.R'
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-03-12 16:41:03 UTC; miguel
+Author: Miguel Alvarez [aut, cre] (<https://orcid.org/0000-0003-1500-1834>),
+  Zachary Foster [ctb] (<https://orcid.org/0000-0002-5075-0948>),
+  Sam Levin [rev],
+  Margaret Siple [rev]
+Maintainer: Miguel Alvarez <kamapu78@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-12 21:50:02 UTC

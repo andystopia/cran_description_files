@@ -1,0 +1,38 @@
+Package: MFKnockoffs
+Type: Package
+Title: Model-Free Knockoff Filter for Controlled Variable Selection
+Version: 0.9
+Date: 2017-07-07
+Authors@R: c(person("Rina", "Foygel Barber", role = c("ctb"),
+                     comment="Development of the original fixed-design Knockoffs"),
+             person("Emmanuel", "Candes", role = c("ctb"),
+                    comment="Development of Model-Free Knockoffs and original fixed-design Knockoffs"),
+             person("Lucas", "Janson", role = c("ctb"),
+                    comment="Development of Model-Free Knockoffs"),
+             person("Evan", "Patterson", role = c("aut"),
+                    comment="Original R package for the original fixed-design Knockoffs"),
+             person("Matteo", "Sesia", role = c("aut","cre"),
+                    comment="R package for Model-Free Knockoffs", email="msesia@stanford.edu"))
+Description: Model-free knockoffs are a general procedure for controlling the false
+  discovery rate (FDR) when performing variable selection.
+License: GPL-3
+URL: https://statweb.stanford.edu/~candes/MF_Knockoffs/index.html
+Depends: methods, stats
+Imports: scs, Matrix, matrixcalc, corpcor
+Suggests: knitr, testthat, glmnet, lars, ranger, stabs, flare, rARPACK,
+        RSpectra, rmarkdown, gtools, doMC, parallel
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-07-08 04:48:10 UTC; msesia
+Author: Rina Foygel Barber [ctb] (Development of the original fixed-design
+    Knockoffs),
+  Emmanuel Candes [ctb] (Development of Model-Free Knockoffs and original
+    fixed-design Knockoffs),
+  Lucas Janson [ctb] (Development of Model-Free Knockoffs),
+  Evan Patterson [aut] (Original R package for the original fixed-design
+    Knockoffs),
+  Matteo Sesia [aut, cre] (R package for Model-Free Knockoffs)
+Maintainer: Matteo Sesia <msesia@stanford.edu>
+Repository: CRAN
+Date/Publication: 2017-07-08 05:15:46 UTC

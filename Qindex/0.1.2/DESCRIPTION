@@ -1,0 +1,38 @@
+Package: Qindex
+Type: Package
+Title: Quantile-Based Predictors for Survival Outcome
+Version: 0.1.2
+Date: 2023-03-16
+Author: Misung Yi [aut, cph] (<https://orcid.org/0000-0002-4007-5408>),
+  Tingting Zhan [aut, cre, cph] (<https://orcid.org/0000-0001-9971-4844>),
+  Inna Chervoneva [aut, cph] (<https://orcid.org/0000-0002-9104-4505>)
+Maintainer: Tingting Zhan <tingtingzhan@gmail.com>
+Description: Select optimal quantile-based predictors for survival outcome,
+        to include the means to handle dichotomizing the quantiles,
+        mean-signal-intensity or other continuous markers, and to obtain
+        estimates for dichotomized predictors by Bootstrap-based bias
+        correction.
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+License: GPL-2
+Depends: R (>= 4.2),
+Language: en-US
+Authors@R: c(person(given = 'Misung', family = 'Yi', role = c('aut', 'cph'),
+        email = 'Misung.Yi@jefferson.edu', comment = c(ORCID =
+        '0000-0002-4007-5408')), person(given = 'Tingting', family =
+        'Zhan', role = c('aut', 'cre', 'cph'), email =
+        'tingtingzhan@gmail.com', comment = c(ORCID =
+        '0000-0001-9971-4844')), person(given = 'Inna', family =
+        'Chervoneva', role = c('aut', 'cph'), email =
+        'Inna.Chervoneva@jefferson.edu', comment = c(ORCID =
+        '0000-0002-9104-4505')))
+Imports: stats, boot, rpart, survival, matrixStats, mgcv, grDevices
+Suggests: knitr
+Collate: '0info.R' 'pkg_data_doc.R' 'optQp.R' 'sampleQp.R'
+        'BBC_dichotom.R' 'FRindex.R'
+NeedsCompilation: no
+Packaged: 2023-03-16 16:56:29 UTC; tingtingzhan
+Repository: CRAN
+Date/Publication: 2023-03-16 18:00:10 UTC

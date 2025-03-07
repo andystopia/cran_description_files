@@ -1,0 +1,37 @@
+Package: GeoAdjust
+Type: Package
+Title: Accounting for Random Displacements of True GPS Coordinates of
+        Data
+Version: 1.0.0
+Authors@R: c(person(given = "Umut", family = "Altay", email= "altayumut.ua@gmail.com", role = c("cre","aut")),
+             person(given = "John", family = "Paige", email = "john.paige@ntnu.no", role = "aut"),
+             person(given = "Geir-Arne", family = "Fuglstad", email = "geir-arne.fuglstad@ntnu.no", role = "aut"),
+             person(given = "Andrea", family = "Riebler", email = "andrea.riebler@ntnu.no", role = "aut")
+            )
+Description: The purpose is to account for the random displacements 
+ (jittering) of true survey household cluster center coordinates in geostatistical 
+ analyses of Demographic and Health Surveys program (DHS) data. Adjustment for 
+ jittering can be implemented either in the spatial random effect, or in the 
+ raster/distance based covariates, or in both. Detailed information about the methods 
+ behind the package functionality can be found in two preprints.
+ Umut Altay, John Paige, Andrea Riebler, Geir-Arne Fuglstad (2022) <arXiv:2202.11035v2>. 
+ Umut Altay, John Paige, Andrea Riebler, Geir-Arne Fuglstad (2022) <arXiv:2211.07442v1>. 
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Suggests: INLA, knitr, rmarkdown, testthat (>= 3.0.0), rgdal, maptools
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+LinkingTo: TMB, RcppEigen
+License: GPL (>= 2)
+Imports: raster, sp, stats, rgeos, SUMMER, Matrix, ggplot2, fields,
+        geosphere, TMB
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+NeedsCompilation: yes
+Packaged: 2023-03-11 00:34:29 UTC; umuta
+Author: Umut Altay [cre, aut],
+  John Paige [aut],
+  Geir-Arne Fuglstad [aut],
+  Andrea Riebler [aut]
+Maintainer: Umut Altay <altayumut.ua@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-13 14:10:06 UTC

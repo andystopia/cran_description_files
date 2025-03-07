@@ -1,0 +1,123 @@
+Package: admiral
+Type: Package
+Title: ADaM in R Asset Library
+Version: 0.8.3
+Authors@R: c(
+    person("Thomas", "Neitmann", email = "thomas.neitmann@roche.com", role = c("aut", "cre")),
+    person("Stefan", "Bundfuss", role = "aut"),
+    person("Ben", "Straub", role = "aut"),
+    person("Samia", "Kabi", role = "aut"),
+    person("Gordon", "Miller", role = "aut"),
+    person("Teckla", "Akinyi", role = "aut"),
+    person("Andrew", "Smith", role = "aut"),
+    person("Konstantina", "Koukourikou", role = "aut"),
+    person("Ross", "Farrugia", role = "aut"),
+    person("Eric", "Simms", role = "aut"),
+    person("Annie", "Yang", role = "aut"),
+    person("Robin", "Koeger", role = "aut"),
+    person("Sophie", "Shapcott", role = "aut"), 
+    person("Ojesh", "Upadhyay", role = "aut"),
+    person("Jack", "McGavigan", role = "aut"),
+    person("Kamila", "Duniec", role = "aut"),
+    person("Gayatri", "G", role = "aut"),
+    person("Alana", "Harris", role = "aut"),
+    person("Mahdi", "About", role = "aut"),
+    person("Pooja", "Kumari", role = "aut"),
+    person("Claudia", "Carlucci", role = "aut"),
+    person("Daniil", "Stefonishin", role = "aut"), 
+    person("Michael", "Thorpe", role = "ctb"),
+    person("Pavan", "Kumar", role = "ctb"),
+    person("Hamza", "Rahal", role = "ctb"),
+    person("Alice", "Ehmann", role = "ctb"),
+    person("Tom", "Ratford", role = "ctb"),
+    person("Vignesh", "Thanikachalam", role = "ctb"),
+    person("Ondrej", "Slama", role = "ctb"),
+    person("Shimeng", "Huang", role = "ctb"),
+    person("James", "Kim", role = "ctb"),
+    person("Shan", "Lee", role = "ctb"),
+    person("Bill", "Denney", role = "ctb"),
+    person("Syed", "Mubasheer", role = "ctb"),
+    person("Wenyi", "Liu", role = "ctb"),
+    person("Dinakar", "Kulkarni", role = "ctb"),
+    person("Tamara", "Senior", role = "ctb"),
+    person("Jordanna", "Morrish", role = "ctb"),
+    person("Anthony", "Howard", role = "ctb"),
+    person("Barbara", "O'Reilly", role = "ctb"),
+    person("John", "Kirkpatrick", role = "ctb"),
+    person("James", "Black", role = "ctb"),
+    person("Leena", "Khatri", role = "ctb"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("GlaxoSmithKline LLC", role = c("cph", "fnd"))
+    )
+Description: A toolbox for programming Clinical Data Interchange Standards Consortium
+    (CDISC) compliant Analysis Data Model (ADaM) datasets in R. ADaM datasets are a
+    mandatory part of any New Drug or Biologics License Application submitted to the
+    United States Food and Drug Administration (FDA). Analysis derivations are
+    implemented in accordance with the "Analysis Data Model Implementation Guide"
+    (CDISC Analysis Data Model Team, 2021, <https://www.cdisc.org/standards/foundational/adam/adamig-v1-3-release-package>).
+Language: en-US
+License: Apache License (>= 2)
+URL: https://pharmaverse.github.io/admiral/,
+        https://github.com/pharmaverse/admiral
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+Depends: R (>= 3.5)
+Imports: admiraldev, assertthat (>= 0.2.1), dplyr (>= 0.8.4), hms (>=
+        0.5.3), lifecycle (>= 0.1.0), lubridate (>= 1.7.4), magrittr
+        (>= 1.5), purrr (>= 0.3.3), rlang (>= 0.4.4), stringr (>=
+        1.4.0), tidyr (>= 1.0.2), tidyselect (>= 1.0.0)
+Suggests: admiral.test, covr, devtools, DT, diffdf, knitr, lintr,
+        methods, pkgdown, readxl, rmarkdown, roxygen2, spelling,
+        styler, testthat, tibble, usethis
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-10-07 05:26:13 UTC; neitmant
+Author: Thomas Neitmann [aut, cre],
+  Stefan Bundfuss [aut],
+  Ben Straub [aut],
+  Samia Kabi [aut],
+  Gordon Miller [aut],
+  Teckla Akinyi [aut],
+  Andrew Smith [aut],
+  Konstantina Koukourikou [aut],
+  Ross Farrugia [aut],
+  Eric Simms [aut],
+  Annie Yang [aut],
+  Robin Koeger [aut],
+  Sophie Shapcott [aut],
+  Ojesh Upadhyay [aut],
+  Jack McGavigan [aut],
+  Kamila Duniec [aut],
+  Gayatri G [aut],
+  Alana Harris [aut],
+  Mahdi About [aut],
+  Pooja Kumari [aut],
+  Claudia Carlucci [aut],
+  Daniil Stefonishin [aut],
+  Michael Thorpe [ctb],
+  Pavan Kumar [ctb],
+  Hamza Rahal [ctb],
+  Alice Ehmann [ctb],
+  Tom Ratford [ctb],
+  Vignesh Thanikachalam [ctb],
+  Ondrej Slama [ctb],
+  Shimeng Huang [ctb],
+  James Kim [ctb],
+  Shan Lee [ctb],
+  Bill Denney [ctb],
+  Syed Mubasheer [ctb],
+  Wenyi Liu [ctb],
+  Dinakar Kulkarni [ctb],
+  Tamara Senior [ctb],
+  Jordanna Morrish [ctb],
+  Anthony Howard [ctb],
+  Barbara O'Reilly [ctb],
+  John Kirkpatrick [ctb],
+  James Black [ctb],
+  Leena Khatri [ctb],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  GlaxoSmithKline LLC [cph, fnd]
+Maintainer: Thomas Neitmann <thomas.neitmann@roche.com>
+Repository: CRAN
+Date/Publication: 2022-10-07 07:20:02 UTC

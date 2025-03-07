@@ -1,0 +1,28 @@
+Package: maczic
+Type: Package
+Title: Mediation Analysis for Count and Zero-Inflated Count Data
+Version: 0.1.0
+Author: Nancy Cheng, Zijian Guo, Jing Cheng
+Maintainer: Nancy Cheng <Nancy.Cheng@ucsf.edu>
+Depends: R (>= 4.0), MASS, pscl, graphics
+Imports: sandwich, survival, stats, mediation, emplik, BB, mathjaxr
+Suggests: SuppDists
+RdMacros: mathjaxr
+Description: Performs causal mediation analysis for count and zero-inflated
+    count data without or with a post-treatment confounder; calculates power
+    to detect prespecified causal mediation effects, direct effects, and 
+    total effects; performs sensitivity analysis when there is a treatment-
+    induced mediator-outcome confounder as described by Cheng, J., Cheng, N.F., 
+    Guo, Z., Gregorich, S., Ismail, A.I., Gansky, S.A. (2018) 
+    <doi:10.1177/0962280216686131>. Implements Instrumental Variable (IV) 
+    method to estimate the controlled (natural) direct and mediation effects, 
+    and compute the bootstrap Confidence Intervals as described by Guo, Z., 
+    Small, D.S., Gansky, S.A., Cheng, J. (2018) <doi:10.1111/rssc.12233>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-11-04 22:11:23 UTC; NCheng
+Repository: CRAN
+Date/Publication: 2020-11-09 20:40:02 UTC

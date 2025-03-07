@@ -1,0 +1,38 @@
+Package: vvtableau
+Type: Package
+Title: R Interface for 'Tableau' Services
+Version: 0.3.0
+Authors@R: 
+  c(person(given = "Tomer", 
+           family = "Iwan", 
+           role = c("aut", "cre"), 
+           email = "t.iwan@vu.nl"
+           ),
+    person(given = "Ruben",
+           family = "Korvinus",
+           role = "ctb"
+           ),
+    person(given = "VU Analytics",
+           role = "cph"
+           ))
+Description: Provides an R interface for interacting with the 'Tableau' Server.
+    It allows users to perform various operations such as publishing workbooks, refreshing data extracts, 
+    and managing users using the 'Tableau' REST API (see <https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref.htm> for details). Additionally, 
+    it includes functions to perform manipulations on local 'Tableau' workbooks.
+URL: https://github.com/vusaverse/vvtableau,
+        https://vusaverse.github.io/vvtableau/
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: data.table, dplyr, httr, jsonlite, magrittr, purrr, stringr,
+        tidyr, XML, xml2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-31 08:51:50 UTC; tin900
+Author: Tomer Iwan [aut, cre],
+  Ruben Korvinus [ctb],
+  VU Analytics [cph]
+Maintainer: Tomer Iwan <t.iwan@vu.nl>
+Repository: CRAN
+Date/Publication: 2023-10-31 09:10:02 UTC

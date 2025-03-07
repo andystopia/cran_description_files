@@ -1,0 +1,47 @@
+Package: LexFindR
+Title: Find Related Items and Lexical Dimensions in a Lexicon
+Version: 1.0.2
+Date: 2021-10-23
+Authors@R: 
+    c(person(given = "ZhaoBin",
+           family = "Li",
+           role = c("aut", "cre"),
+           email = "bzilplj@gmail.com"),
+      person(given = "Anne Marie", 
+             family = "Crinnion",
+             role = c("aut"),
+             email = "anne.crinnion@uconn.edu"),
+      person(given = "James S.",
+           family = "Magnuson",
+           role = c("aut", "cph"),
+           email = "james.magnuson@uconn.edu")) 
+Description: Implements code to identify lexical competitors in a given list
+  of words. We include many of the standard competitor types used in spoken word
+  recognition research, such as functions to find cohorts, neighbors, and
+  rhymes, amongst many others. The package includes documentation for using a
+  variety of lexicon files, including those with form codes made up of multiple
+  letters (i.e., phoneme codes) and also basic orthographies. Importantly, the
+  code makes use of multiple CPU cores and vectorization when possible, making
+  it extremely fast and able to handle large lexicons. Additionally, the package
+  contains documentation for users to easily write new functions, allowing
+  researchers to examine other relationships within a lexicon. 
+  Preprint: <https://psyarxiv.com/8dyru/>. Open access: <https://link.springer.com/epdf/10.3758/s13428-021-01667-6?sharing_token=9WlO9soCc9y0uSuwWSUYfJAH0g46feNdnc402WrhzyrdKcK8uzZx_hDEtgbYzn3gvxdG5Cuj0j0cC4lVMFBqYCGTQmE2blN2Gwo74LJ8ro1pEOAYDRFy6Lhf1nc719vD-zU7GDvKOQxDAwPbrisvPBeXSIu0NkqXF7Jx3IuUwIs%3D>. 
+  Citation: Li, Z., Crinnion, A.M. & Magnuson, J.S. (2021). 
+  <doi:10.3758/s13428-021-01667-6>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: tidyverse, knitr, rmarkdown, testthat, future.apply, tictoc
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+URL: https://github.com/maglab-uconn/LexFindR
+BugReports: https://github.com/maglab-uconn/LexFindR/issues
+NeedsCompilation: no
+Packaged: 2021-10-28 13:40:11 UTC; zhaobinli
+Author: ZhaoBin Li [aut, cre],
+  Anne Marie Crinnion [aut],
+  James S. Magnuson [aut, cph]
+Maintainer: ZhaoBin Li <bzilplj@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-10-29 06:30:08 UTC

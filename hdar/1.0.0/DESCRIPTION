@@ -1,0 +1,27 @@
+Package: hdar
+Type: Package
+Title: 'REST' API Client for Accessing Data on 'WEkEO HDA V2'
+Version: 1.0.0
+URL: https://www.wekeo.eu/
+BugReports: https://github.com/eea/hdar/issues
+Authors@R: person("Matteo", "Mattiuzzi", email = "matteo@mattiuzzi.com", role = c("aut", "cre"))
+Maintainer: Matteo Mattiuzzi <matteo@mattiuzzi.com>
+Description: 
+  Provides seamless access to the WEkEO Harmonised Data Access (HDA) API, enabling 
+  users to query, download, and process data efficiently from the HDA platform. 
+  With 'hdar', researchers and data scientists can integrate the extensive HDA 
+  datasets into their R workflows, enhancing their data analysis capabilities. 
+  Comprehensive information on the API functionality and usage is available 
+  at <https://gateway.prod.wekeo2.eu/hda-broker/docs>.  
+License: EUPL (>= 1.2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: R6, httr2, jsonlite, magrittr, htmltools, stringr, humanize
+Depends: R (>= 2.10),
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-03 18:49:45 UTC; Mattiuzzi
+Author: Matteo Mattiuzzi [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-09-05 17:30:10 UTC

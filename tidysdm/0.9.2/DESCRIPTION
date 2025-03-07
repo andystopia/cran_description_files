@@ -1,0 +1,40 @@
+Package: tidysdm
+Title: Species Distribution Models with Tidymodels
+Version: 0.9.2
+Authors@R: c(
+    person("Michela", "Leonardi", role = "aut"),
+    person("Margherita", "Colucci", role = "aut"),
+    person("Andrea", "Manica", , "am315@cam.ac.uk", role = c("aut", "cre")))
+Description: Fit species distribution models (SDMs) using the 'tidymodels' framework, 
+  which provides a standardised interface to define models and process their 
+  outputs. 'tidysdm' expands 'tidymodels' by providing methods for spatial objects,
+  as well as a number of specialised functions to process presences and pseudoabsences
+  for contemporary and palaeo datasets. The full 
+  functionalities of the package are described
+  in Leonardi et al. (2023) <doi:10.1101/2023.07.24.550358>.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+URL: https://github.com/EvolEcolGroup/tidysdm,
+        https://evolecolgroup.github.io/tidysdm/
+BugReports: https://github.com/EvolEcolGroup/tidysdm/issues
+RoxygenNote: 7.2.3
+Depends: tidymodels, spatialsample, R (>= 3.50)
+Imports: dials, DALEX, DALEXtra, dplyr, ggplot2, lubridate, magrittr,
+        maxnet, parsnip, patchwork, recipes, rsample, rlang (>= 1.0.0),
+        stats, sf, terra, tibble, tune, workflows, workflowsets,
+        yardstick
+Suggests: blockCV, doParallel, earth, kernlab, knitr, overlapping,
+        pastclim (>= 2.0.0), ranger, readr, rmarkdown, spelling,
+        stacks, testthat (>= 3.0.0), tidyterra, xgboost, V8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-11-12 20:38:19 UTC; andrea
+Author: Michela Leonardi [aut],
+  Margherita Colucci [aut],
+  Andrea Manica [aut, cre]
+Maintainer: Andrea Manica <am315@cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-11-13 17:30:03 UTC

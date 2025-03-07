@@ -1,0 +1,24 @@
+Package: mfdb
+Type: Package
+Title: MareFrame DB Querying Library
+Encoding: UTF-8
+Version: 6.2-0
+Date: 2020-04-10
+Authors@R: c(person("Jamie", "Lentin", email="lentinj@shuttlethread.com",role = c("aut", "cre", "cph")),
+             person("Bjarki Thor", "Elvarsson", email="bjarki.elvarsson@hafogvatn.is",role = c("aut")))
+Maintainer: Jamie Lentin <lentinj@shuttlethread.com>
+Description: Creates and manages a PostgreSQL database suitable for storing fisheries data
+             and aggregating ready for use within a Gadget <https://hafro.github.io/gadget> model.
+             See <https://mareframe.github.io/mfdb> for more information.
+License: GPL-3
+Depends: R (>= 3.1.1)
+Imports: logging (>= 0.7-103), DBI (>= 0.3.1), getPass (>= 0.1-1),
+        RPostgreSQL (>= 0.4)
+Suggests: unittest (>= 1.2), dplyr (>= 0.7.1), dbplyr (>= 1.0.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2020-04-10 11:44:33 UTC; lentinj
+Author: Jamie Lentin [aut, cre, cph],
+  Bjarki Thor Elvarsson [aut]
+Repository: CRAN
+Date/Publication: 2020-04-14 11:00:10 UTC

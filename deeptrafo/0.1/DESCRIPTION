@@ -1,0 +1,30 @@
+Package: deeptrafo
+Title: Fitting Deep Conditional Transformation Models
+Version: 0.1
+Authors@R: c(
+    person("Lucas", "Kook", , "lucasheinrich.kook@gmail.com", role = c("aut", "cre")),
+    person("Philipp", "Baumann", , "baumann@kof.ethz.ch", role = c("aut")),
+    person("David", "Ruegamer", , "david.ruegamer@gmail.com", role = c("aut"))
+    )
+Description: Allows for the specification of deep conditional transformation 
+    models (DCTMs) and ordinal neural network transformation models, as 
+    described in Baumann et al (2021) <doi:10.1007/978-3-030-86523-8_1> and 
+    Kook et al (2022) <doi:10.1016/j.patcog.2021.108263>. Extensions such as
+    autoregressive DCTMs (Ruegamer et al, 2022, <doi:10.48550/arXiv.2110.08248>)
+    and transformation ensembles (Kook et al, 2022, <doi:10.48550/arXiv.2205.12729>)
+    are implemented.
+Depends: R (>= 4.0.0), Formula, tensorflow (>= 2.2.0), keras (>=
+        2.2.0), tfprobability (>= 0.15), deepregression
+Suggests: testthat, knitr, ordinal, tram, cotram, covr
+Imports: mlt, variables, stats, purrr, survival, R6, reticulate
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-11-17 14:22:53 UTC; stigler
+Author: Lucas Kook [aut, cre],
+  Philipp Baumann [aut],
+  David Ruegamer [aut]
+Maintainer: Lucas Kook <lucasheinrich.kook@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-11-18 09:30:02 UTC

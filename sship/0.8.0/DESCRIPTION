@@ -1,0 +1,30 @@
+Package: sship
+Title: Tool for Secure Shipment of Content
+Version: 0.8.0
+Authors@R: 
+    person(given = "Are",
+           family = "Edvardsen",
+           role = c("aut", "cre"),
+           email = "biorakel@gmail.com",
+           comment = c(ORCID = "0000-0002-5210-3656"))
+Maintainer: Are Edvardsen <biorakel@gmail.com>
+Description: Convenient tools for exchanging files securely from within R. By
+    encrypting the content safe passage of files (shipment) can be provided by
+    common but insecure carriers such as ftp and email. Based on asymmetric
+    cryptography no management of shared secrets is needed to make a secure
+    shipment as long as authentic public keys are available. Public keys used
+    for secure shipments may also be obtained from external providers as part of
+    the overall process. Transportation of files will require that relevant
+    services such as ftp and email servers are available.
+License: GPL-3
+Encoding: UTF-8
+Imports: httr, jsonlite, openssl, RCurl, yaml
+Suggests: httptest, httpuv, rmarkdown, testthat (>= 2.1.0), withr
+RoxygenNote: 7.1.2
+URL: https://github.com/Rapporteket/sship
+BugReports: https://github.com/Rapporteket/sship/issues
+NeedsCompilation: no
+Packaged: 2022-08-05 11:58:40 UTC; rstudio
+Author: Are Edvardsen [aut, cre] (<https://orcid.org/0000-0002-5210-3656>)
+Repository: CRAN
+Date/Publication: 2022-08-05 12:20:02 UTC

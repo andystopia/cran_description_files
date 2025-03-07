@@ -1,0 +1,31 @@
+Package: panelPomp
+Type: Package
+Title: Inference for Panel Partially Observed Markov Processes
+Version: 1.4
+Authors@R: c(person(given="Carles",family="Breto",role="aut",email="carles.breto@uv.es",comment=c(ORCID="0000-0003-4695-4902")),
+	person(given=c("Edward","L."),family="Ionides",role="aut",comment=c(ORCID="0000-0002-4190-0174")),
+	person(given=c("Aaron","A."),family="King",role="aut",comment=c(ORCID="0000-0001-6159-3207")),
+	person(given="Jesse",family="Wheeler",role=c("aut","cre"),email="jeswheel@umich.edu",comment=c(ORCID="0000-0003-3941-3884")))
+Description: Data analysis based on panel partially-observed Markov process (PanelPOMP) models. To implement such models, simulate them and fit them to panel data, 'panelPomp' extends some of the facilities provided for time series data by the 'pomp' package. Implemented methods include filtering (panel particle filtering) and maximum likelihood estimation (Panel Iterated Filtering) as proposed in Breto, Ionides and King (2020) "Panel Data Analysis via Mechanistic Models" <doi:10.1080/01621459.2019.1604367>.
+License: GPL-3
+Depends: R(>= 4.1.0), pomp(>= 4.5.2)
+Imports: lifecycle, methods
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Collate: 'panelPomp-package.R' 'aaa.R' 'contacts.R' 'generics.R'
+        'get_col_row.R' 'panel_loglik.R' 'panel_logmeanexp.R'
+        'panelPomp.R' 'panelPomp_methods.R' 'params.R' 'pfilter.R'
+        'pfilter_methods.R' 'mif2.R' 'mif2_methods.R' 'panelGompertz.R'
+        'panelGompertzLikelihood.R' 'panelRandomWalk.R'
+        'panel_designs.R' 'plot.R' 'simulate.R'
+Suggests: knitr, rmarkdown, bookdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-06 22:05:15 UTC; jeswheel
+Author: Carles Breto [aut] (<https://orcid.org/0000-0003-4695-4902>),
+  Edward L. Ionides [aut] (<https://orcid.org/0000-0002-4190-0174>),
+  Aaron A. King [aut] (<https://orcid.org/0000-0001-6159-3207>),
+  Jesse Wheeler [aut, cre] (<https://orcid.org/0000-0003-3941-3884>)
+Maintainer: Jesse Wheeler <jeswheel@umich.edu>
+Repository: CRAN
+Date/Publication: 2024-09-12 07:10:02 UTC

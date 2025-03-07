@@ -1,0 +1,64 @@
+Package: rtry
+Title: Preprocessing Plant Trait Data
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Olee Hoi Ying",
+        family = "Lam",
+        email = "hlam9@wisc.edu",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-7731-3246")),
+    person(given = "Susanne",
+        family = "Tautenhahn",
+        email = "staut@bgc-jena.mpg.de",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-2753-3443")),
+    person(given = "Gabriel",
+        family = "Walther",
+        email = "gabriel.walther@uni-jena.de",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0003-3550-9045")),
+    person(given = "Gerhard",
+        family = "Boenisch",
+        email = "boenisch@bgc-jena.mpg.de",
+        role = c("aut")),
+    person(given = "Pramod",
+        family = "Baddam",
+        email = "pbaddam@bgc-jena.mpg.de",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-7858-9295")),
+    person(given = "Jens",
+        family = "Kattge",
+        email = "jkattge@bgc-jena.mpg.de",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-1022-8469")),
+    person(given = "Fellowship Group Functional Biogeography at MPI-BGC, Jena, Germany",
+        role = c("cph")))
+Description: Designed to support the application of plant trait data providing easy applicable functions
+    for the basic steps of data preprocessing, e.g. data import, data exploration, selection of columns
+    and rows, excluding trait data according to different attributes, geocoding, long- to wide-table
+    transformation, and data export. 'rtry' was initially developed as part of the TRY R project to
+    preprocess trait data received via the TRY database.
+License: CC BY 4.0
+Depends: R (>= 4.0.0)
+Imports: utils, data.table, dplyr, tidyr, jsonlite, curl
+URL: https://github.com/MPI-BGC-Functional-Biogeography/rtry,
+        https://www.try-db.org/TryWeb/Home.php
+BugReports: https://github.com/MPI-BGC-Functional-Biogeography/rtry/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Maintainer: Olee Hoi Ying Lam <hlam9@wisc.edu>
+NeedsCompilation: no
+Packaged: 2022-01-15 13:38:29 UTC; user
+Author: Olee Hoi Ying Lam [aut, cre] (<https://orcid.org/0000-0002-7731-3246>),
+  Susanne Tautenhahn [aut] (<https://orcid.org/0000-0002-2753-3443>),
+  Gabriel Walther [aut] (<https://orcid.org/0000-0003-3550-9045>),
+  Gerhard Boenisch [aut],
+  Pramod Baddam [aut] (<https://orcid.org/0000-0002-7858-9295>),
+  Jens Kattge [aut] (<https://orcid.org/0000-0002-1022-8469>),
+  Fellowship Group Functional Biogeography at MPI-BGC, Jena, Germany
+    [cph]
+Repository: CRAN
+Date/Publication: 2022-01-17 09:02:42 UTC

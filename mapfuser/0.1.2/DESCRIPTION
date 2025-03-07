@@ -1,0 +1,23 @@
+Package: mapfuser
+Type: Package
+Title: Construct Consensus Genetic Maps and Estimate Recombination
+        Rates
+Version: 0.1.2
+Author: Dennis van Muijen, Ram Kumar Basnet, Nathalie J. Dek
+Maintainer: Dennis van Muijen <d.van.muijen@rijkzwaan.nl>
+Description: Construct consensus genetic maps with LPmerge, see Endelman and Plomion (2014) <doi:10.1093/bioinformatics/btu091> and 
+             model the relationship between physical distance and genetic distance using thin-plate regression splines, 
+             see Wood (2003) <doi:10.1111/1467-9868.00374>. Perform quality control on input data and visualise intermediate steps.
+Depends: igraph
+Imports: dplyr, ggplot2, mgcv, doParallel, parallel, foreach, stringi,
+        plotly, visNetwork, LPmerge, lazyeval, tidyr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2017-10-10 09:59:13 UTC; dmu
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Repository: CRAN
+Date/Publication: 2017-10-10 10:13:54 UTC

@@ -1,0 +1,62 @@
+Package: rextendr
+Title: Call Rust Code from R using the 'extendr' Crate
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Claus O.",
+             family = "Wilke",
+             role = c("aut", "cre"),
+             email = "wilke@austin.utexas.edu",
+             comment = c(ORCID = "0000-0002-7470-9261")),
+      person(given = "Andy",
+             family = "Thomason",
+             role = "aut",
+             email = "andy@andythomason.com"),
+      person(given = "Mossa M.",
+             family = "Reimert",
+             role = "aut",
+             email = "mossa@sund.ku.dk"),
+      person(given = "Ilia",
+             family = "Kosenkov",
+             role = "aut",
+             email = "ilia.kosenkov@outlook.com",
+             comment = c(ORCID = "0000-0001-5563-7840")),
+      person(given = "Hiroaki",
+             family = "Yutani",
+             role = "aut",
+             email = "yutani.ini@gmail.com",
+             comment = c(ORCID = "0000-0002-3385-7233")),
+      person(given = "Malcolm",
+             family = "Barrett",
+             role = "aut",
+             email = "malcolmbarrett@gmail.com",
+             comment = c(ORCID = "0000-0003-0299-5825")))
+Description: Provides functions to compile and load Rust code from R, similar
+    to how 'Rcpp' or 'cpp11' allow easy interfacing with C++ code. Also provides
+    helper functions to create R packages that use Rust code. Under the hood,
+    the Rust crate 'extendr' is used to do all the heavy lifting.
+License: MIT + file LICENSE
+URL: https://extendr.github.io/rextendr/
+BugReports: https://github.com/extendr/rextendr/issues
+Depends: R (>= 4.0)
+Imports: brio, callr, cli, desc, dplyr, glue, pkgbuild, pkgload, purrr,
+        rlang (>= 0.4.10), rprojroot, stringi, tibble, withr
+Suggests: devtools, knitr, mockr, rmarkdown, rstudioapi, testthat (>=
+        3.0.2), usethis
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+SystemRequirements: Rust 'cargo'; the crate 'libR-sys' must compile
+        without error
+NeedsCompilation: no
+Packaged: 2021-06-14 23:01:56 UTC; clauswilke
+Author: Claus O. Wilke [aut, cre] (<https://orcid.org/0000-0002-7470-9261>),
+  Andy Thomason [aut],
+  Mossa M. Reimert [aut],
+  Ilia Kosenkov [aut] (<https://orcid.org/0000-0001-5563-7840>),
+  Hiroaki Yutani [aut] (<https://orcid.org/0000-0002-3385-7233>),
+  Malcolm Barrett [aut] (<https://orcid.org/0000-0003-0299-5825>)
+Maintainer: Claus O. Wilke <wilke@austin.utexas.edu>
+Repository: CRAN
+Date/Publication: 2021-06-15 14:50:13 UTC

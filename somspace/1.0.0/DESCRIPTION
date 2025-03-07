@@ -1,0 +1,27 @@
+Package: somspace
+Type: Package
+Title: Spatial Analysis with Self-Organizing Maps
+Version: 1.0.0
+Authors@R: c(person("Yannis", "Markonis",
+                     role = c("aut", "cre"),
+                     email = "imarkonis@gmail.com"),
+              person("Filip", "Strnad", 
+                      role = "aut"),
+              person("Simon Michael", "Papalexiou",
+                      role = "aut"))
+Description: Application of the Self-Organizing Maps technique for spatial classification of time series. The package uses spatial data, point or gridded, to create clusters with similar characteristics. The clusters can be further refined to a smaller number of regions by hierarchical clustering and their spatial dependencies can be presented as complex networks. Thus, meaningful maps can be created, representing the regional heterogeneity of a single variable. More information and an example of implementation can be found in Markonis and Strnad (2019).
+License: GPL-3
+Depends: R (>= 3.4.0), ggplot2, data.table, kohonen, maps
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-10 07:07:49 UTC; markonis
+Author: Yannis Markonis [aut, cre],
+  Filip Strnad [aut],
+  Simon Michael Papalexiou [aut]
+Maintainer: Yannis Markonis <imarkonis@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-13 11:00:02 UTC

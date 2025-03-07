@@ -1,0 +1,51 @@
+Package: isopleuros
+Title: Ternary Plots
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Nicolas",
+             family = "Frerebeau",
+             role = c("aut", "cre"),
+             email = "nicolas.frerebeau@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "0000-0001-5759-4944", 
+                         affiliation = "Université Bordeaux Montaigne")),
+      person(given = "Brice",
+             family = "Lebrun",
+             role = "ctb",
+             email = "brice.lebrun@u-bordeaux-montaigne.fr",
+             comment = c(ORCID = "0000-0001-7503-8685",
+                         affiliation = "Université Bordeaux Montaigne")))
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: Ternary plots made simple. This package allows to create
+    ternary plots using 'graphics'. It provides functions to display the
+    data in the ternary space, to add or tune graphical elements and to
+    display statistical summaries. It also includes common ternary
+    diagrams which are useful for the archaeologist (e.g. soil texture charts,
+    ceramic phase diagram).
+License: GPL (>= 3)
+URL: https://packages.tesselle.org/isopleuros/,
+        https://github.com/tesselle/isopleuros
+BugReports: https://github.com/tesselle/isopleuros/issues
+Depends: R (>= 2.10)
+Imports: graphics, grDevices, methods, utils
+Suggests: akima, testthat (>= 3.0.0), vdiffr (>= 1.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'AllGenerics.R' 'coordinates.R' 'data.R'
+        'isopleuros-package.R' 'ternary_arrows.R' 'ternary_axes.R'
+        'ternary_box.R' 'ternary_contour.R' 'ternary_crosshairs.R'
+        'ternary_density.R' 'ternary_ellipse.R' 'ternary_grid.R'
+        'ternary_hull.R' 'ternary_lines.R' 'ternary_mean.R'
+        'ternary_pairs.R' 'ternary_pca.R' 'ternary_plot.R'
+        'ternary_points.R' 'ternary_polygon.R' 'ternary_segments.R'
+        'ternary_text.R' 'ternary_title.R' 'triangle_phase.R'
+        'triangle_soil.R' 'utilities.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2023-05-15 22:24:57 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>,
+    Université Bordeaux Montaigne),
+  Brice Lebrun [ctb] (<https://orcid.org/0000-0001-7503-8685>, Université
+    Bordeaux Montaigne)
+Repository: CRAN
+Date/Publication: 2023-05-16 08:40:02 UTC

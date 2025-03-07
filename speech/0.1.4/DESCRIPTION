@@ -1,0 +1,37 @@
+Package: speech
+Type: Package
+Title: Legislative Speeches
+Version: 0.1.4
+Authors@R: c(person(given = "Nicolas", 
+                    family = "Schmidt", 
+                    role = c("aut", "cre"), 
+                    email = "nschmidt@cienciassociales.edu.uy",
+                    comment = c(ORCID = "0000-0001-5083-5792")),
+             person(given = "Diego",
+                    family = "Lujan",
+                    role = c("aut")),
+             person(given = "Juan Andres",
+                    family = "Moraes",
+                    role = c("aut")),
+            person(given = "Elina",
+                    family = "Gomez",
+                    role = c("ctb"))
+                    )
+Description: Converts the floor speeches of Uruguayan legislators, extracted from the 
+    parliamentary minutes, to tidy data.frame where each observation is the intervention of a single legislator.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+URL: https://github.com/Nicolas-Schmidt/speech
+Imports: dplyr, lubridate, magrittr, purrr, stringr, tibble, tm, tidyr,
+        pdftools, rvest
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-10-30 14:18:30 UTC; Nicolás Schmidt
+Author: Nicolas Schmidt [aut, cre] (<https://orcid.org/0000-0001-5083-5792>),
+  Diego Lujan [aut],
+  Juan Andres Moraes [aut],
+  Elina Gomez [ctb]
+Maintainer: Nicolas Schmidt <nschmidt@cienciassociales.edu.uy>
+Repository: CRAN
+Date/Publication: 2021-10-30 14:40:02 UTC

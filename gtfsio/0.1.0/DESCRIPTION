@@ -1,0 +1,56 @@
+Type: Package
+Package: gtfsio
+Title: Read and Write General Transit Feed Specification (GTFS) Files
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Daniel",
+             family = "Herszenhut",
+             role = c("aut", "cre"),
+             email = "dhersz@gmail.com",
+             comment = c(ORCID = "0000-0001-8066-1105")),
+      person(given = "Flavio",
+             family = "Poletti",
+             role = "ctb",
+             email = "flavio.poletti@hotmail.ch"),
+      person(given = "Mark",
+             family = "Padgham",
+             role = "ctb",
+             email = "mark.padgham@email.com"),
+      person(given = "Rafael H. M.",
+             family = "Pereira",
+             role = "ctb",
+             email = "rafa.pereira.br@gmail.com",
+             comment = c(ORCID = "0000-0003-2125-7465")),
+      person(given = "Tom",
+             family = "Buckley",
+             role = "ctb",
+             email = "tom@tbuckl.com"),
+      person(given = "Ipea - Institute for Applied Economic Research",
+             role = c("cph", "fnd")))
+Description: Tools for the development of packages related to General
+    Transit Feed Specification (GTFS) files. Establishes a standard for
+    representing GTFS feeds using R data types. Provides fast and flexible
+    functions to read and write GTFS feeds while sticking to this
+    standard. Defines a basic 'gtfs' class which is meant to be extended
+    by packages that depend on it. And offers utility functions that
+    support checking the structure of GTFS objects.
+License: MIT + file LICENSE
+URL: https://r-transit.github.io/gtfsio/,
+        https://github.com/r-transit/gtfsio
+BugReports: https://github.com/r-transit/gtfsio/issues
+Imports: data.table, utils, zip
+Suggests: knitr, rmarkdown, tinytest
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-04-04 00:06:08 UTC; dhersz
+Author: Daniel Herszenhut [aut, cre] (<https://orcid.org/0000-0001-8066-1105>),
+  Flavio Poletti [ctb],
+  Mark Padgham [ctb],
+  Rafael H. M. Pereira [ctb] (<https://orcid.org/0000-0003-2125-7465>),
+  Tom Buckley [ctb],
+  Ipea - Institute for Applied Economic Research [cph, fnd]
+Maintainer: Daniel Herszenhut <dhersz@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-06 08:50:05 UTC

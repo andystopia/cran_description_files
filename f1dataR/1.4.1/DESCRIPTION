@@ -1,0 +1,32 @@
+Package: f1dataR
+Title: Access Formula 1 Data
+Version: 1.4.1
+Authors@R: c(
+    person("Santiago", "Casanova", , "santiago.casanova@yahoo.com", role = c("aut", "cre", "cph")),
+    person("Philip", "Bulsink", , "bulsinkp@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9668-2429"))
+  )
+Description: Obtain Formula 1 data via the 'Ergast API' <https://ergast.com/mrd/> and the unofficial API <https://www.formula1.com/en/f1-live.html> via the 'fastf1' 'Python' library <https://docs.fastf1.dev/>.
+Config/reticulate: list( packages = list( list(package = "fastf1", pip
+        = TRUE) ) )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10), reticulate (>= 1.14),
+Imports: glue, magrittr, tibble, jsonlite, httr2, memoise, janitor,
+        dplyr, tidyr, rlang, lifecycle, cli, rappdirs, cachem, withr
+Suggests: ggplot2, httptest, knitr, rmarkdown, testthat (>= 3.0.0),
+        usethis
+VignetteBuilder: knitr
+URL: https://scasanova.github.io/f1dataR/,
+        https://github.com/scasanova/f1dataR/
+BugReports: https://github.com/scasanova/f1dataR/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-13 16:21:49 UTC; santiagocasanova
+Author: Santiago Casanova [aut, cre, cph],
+  Philip Bulsink [aut] (<https://orcid.org/0000-0001-9668-2429>)
+Maintainer: Santiago Casanova <santiago.casanova@yahoo.com>
+Repository: CRAN
+Date/Publication: 2023-11-13 16:43:19 UTC

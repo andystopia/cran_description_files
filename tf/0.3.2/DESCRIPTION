@@ -1,0 +1,59 @@
+Package: tf
+Title: S3 Classes and Methods for Tidy Functional Data
+Version: 0.3.2
+Authors@R: c(
+    person("Fabian", "Scheipl", email = "fabian.scheipl@googlemail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8172-3603")),
+    person("Jeff", "Goldsmith", role = "aut"),
+    person("Julia", "Wrobel", role = "ctb", 
+           comment = c(ORCID = "0000-0001-6783-1421")),
+    person("Maximilian", "Muecke", role = "ctb",
+           comment = c(ORCID = "0009-0000-9432-9795")),
+    person("Sebastian", "Fischer", role = "ctb",
+           comment = c(ORCID = "0000-0002-9609-3197")),
+    person("Trevor", "Hastie", role = "ctb", 
+           comment = "softImpute author"),       
+    person("Rahul", "Mazumder", role = "ctb", 
+           comment = "softImpute author"),
+    person("Chen", "Meng", role = "ctb", 
+           comment = "mogsa author")
+  )
+Description: Defines S3 vector data types for vectors of functional data 
+   (grid-based, spline-based or functional principal components-based) with all 
+   arithmetic and summary methods, derivation, integration and smoothing, 
+   plotting, data import and export, and data wrangling, such as re-evaluating, 
+   subsetting, sub-assigning, zooming into sub-domains, or extracting functional 
+   features like minima/maxima and their locations. 
+   The implementation allows including such vectors in data frames for joint 
+   analysis of functional and scalar variables.
+License: AGPL (>= 3)
+URL: https://tidyfun.github.io/tf/, https://github.com/tidyfun/tf/
+BugReports: https://github.com/tidyfun/tf/issues
+Depends: R (>= 4.1)
+Imports: checkmate, methods, mgcv, mvtnorm, pracma, purrr, rlang,
+        stats, vctrs (>= 0.2.4), zoo
+Suggests: covr, dplyr, knitr, refund, testthat (>= 3.0.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Collate: 'approx.R' 'bibentries.R' 'brackets.R' 'calculus.R'
+        'convert-construct-utils.R' 'convert.R' 'depth.R' 'evaluate.R'
+        'fwise.R' 'globals.R' 'graphics.R' 'interpolate.R' 'ops.R'
+        'math.R' 'methods.R' 'print-format.R' 'rebase.R' 'rng.R'
+        'smooth.R' 'soft-impute-svd.R' 'summarize.R' 'tf-package.R'
+        'tfb-fpc.R' 'tfb-spline.R' 'tfb-class.R' 'tfd-class.R'
+        'tf-s4.R' 'tfb-fpc-utils.R' 'tfb-spline-utils.R' 'utils.R'
+        'vctrs-cast.R' 'vctrs-ptype2.R' 'where.R' 'zoom.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-03-15 13:18:58 UTC; fabians
+Author: Fabian Scheipl [aut, cre] (<https://orcid.org/0000-0001-8172-3603>),
+  Jeff Goldsmith [aut],
+  Julia Wrobel [ctb] (<https://orcid.org/0000-0001-6783-1421>),
+  Maximilian Muecke [ctb] (<https://orcid.org/0009-0000-9432-9795>),
+  Sebastian Fischer [ctb] (<https://orcid.org/0000-0002-9609-3197>),
+  Trevor Hastie [ctb] (softImpute author),
+  Rahul Mazumder [ctb] (softImpute author),
+  Chen Meng [ctb] (mogsa author)
+Maintainer: Fabian Scheipl <fabian.scheipl@googlemail.com>
+Repository: CRAN
+Date/Publication: 2024-03-18 17:30:02 UTC

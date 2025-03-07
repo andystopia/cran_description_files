@@ -1,0 +1,22 @@
+Package: pemultinom
+Type: Package
+Title: L1-Penalized Multinomial Regression with Statistical Inference
+Version: 0.1.0
+Authors@R: c(person("Ye", "Tian", role = c("aut", "cre"), email = "ye.t@columbia.edu"), person("Henry", "Rusinek", role = "aut", email = "hr18@nyu.edu"), person("Arjun", "V. Masurkar", role = "aut", email = "Arjun.Masurkar@nyulangone.org"), person("Yang", "Feng", role = "aut", email = "yang.feng@nyu.edu"))
+Description: We aim for fitting a multinomial regression model with Lasso penalty and doing statistical inference (calculating confidence intervals of coefficients and p-values for individual variables). It implements 1) the coordinate descent algorithm to fit an l1-penalized multinomial regression model (parameterized with a reference level); 2) the debiasing approach to obtain the inference results, which is described in Tian et al. (2023) <arXiv:2302.02310>.
+Imports: foreach, doParallel, stats, Rcpp, nnet, magrittr, utils
+LinkingTo: Rcpp
+License: GPL-2
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown
+NeedsCompilation: yes
+Packaged: 2023-02-16 02:23:32 UTC; yetian
+Author: Ye Tian [aut, cre],
+  Henry Rusinek [aut],
+  Arjun V. Masurkar [aut],
+  Yang Feng [aut]
+Maintainer: Ye Tian <ye.t@columbia.edu>
+Repository: CRAN
+Date/Publication: 2023-02-16 15:40:02 UTC

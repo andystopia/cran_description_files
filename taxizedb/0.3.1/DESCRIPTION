@@ -1,0 +1,32 @@
+Package: taxizedb
+Type: Package
+Title: Tools for Working with 'Taxonomic' Databases
+Description: Tools for working with 'taxonomic' databases, including utilities
+    for downloading databases, loading them into various 'SQL' databases,
+    cleaning up files, and providing a 'SQL' connection that can be used to do
+    'SQL' queries directly or used in 'dplyr'.
+Version: 0.3.1
+Authors@R: c(
+    person("Scott", "Chamberlain", role = "aut"),
+    person("Zebulun", "Arendsee", role = "aut"),
+    person("Tamás", "Stirling", email = "stirling.tamas@gmail.com",
+           role = c("ctb", "cre")))
+URL: https://docs.ropensci.org/taxizedb/,
+        https://github.com/ropensci/taxizedb
+BugReports: https://github.com/ropensci/taxizedb/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Imports: curl (>= 2.4), DBI (>= 0.6-1), RSQLite (>= 1.1.2), dplyr (>=
+        0.7.0), tibble, rlang, readr (>= 1.1.1), dbplyr (>= 1.0.0),
+        magrittr (>= 1.5), hoardr (>= 0.1.0)
+Suggests: testthat, taxize
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-04-03 17:17:13 UTC; tamas
+Author: Scott Chamberlain [aut],
+  Zebulun Arendsee [aut],
+  Tamás Stirling [ctb, cre]
+Maintainer: Tamás Stirling <stirling.tamas@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-03 18:40:02 UTC

@@ -1,0 +1,52 @@
+Package: dowser
+Type: Package
+Version: 2.2.0
+Date: 2024-05-07
+Authors@R: c(person("Kenneth", "Hoehn", role=c("aut", "cre"),
+                    email="kenneth.b.hoehn@dartmouth.edu"),
+             person("Cole", "Jensen", role=c("ctb"),
+                    email="cole.jensen@yale.edu"),
+             person("Susanna", "Marquez", role=c("ctb"),
+                    email="susanna.marquez@yale.edu"),
+             person("Jason", "Vander Heiden", role=c("ctb"),
+                    email="jason.vanderheiden@gmail.com"),
+             person("Steven", "Kleinstein", role=c("aut", "cph"),
+                    email="steven.kleinstein@yale.edu"))
+Title: B Cell Receptor Phylogenetics Toolkit
+Description: Provides a set of functions for inferring, visualizing, and analyzing B cell phylogenetic trees.
+    Provides methods to 1) reconstruct unmutated ancestral sequences,
+    2) build B cell phylogenetic trees using multiple methods,
+    3) visualize trees with metadata at the tips,
+    4) reconstruct intermediate sequences,
+    5) detect biased ancestor-descendant relationships among metadata types
+    Workflow examples available at documentation site (see URL).
+    Citations:
+    Hoehn et al (2022) <doi:10.1371/journal.pcbi.1009885>,
+    Hoehn et al (2021) <doi:10.1101/2021.01.06.425648>.
+License: AGPL-3
+URL: https://dowser.readthedocs.io
+BugReports: https://bitbucket.org/kleinstein/dowser/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 4.0), ggplot2 (>= 3.4.0)
+biocViews:
+Imports: alakazam (>= 1.1.0), ape (>= 5.6), Biostrings, dplyr (>= 1.0),
+        ggtree, graphics, gridExtra, markdown, methods, phangorn (>=
+        2.7.1), phylotate, RColorBrewer, rlang, shazam (>= 1.1.1),
+        stats, stringr, tidyselect, tidyr, utils
+Suggests: knitr, rmarkdown, testthat, pwalign
+RoxygenNote: 7.3.1
+Collate: 'Data.R' 'Dowser.R' 'Clones.R' 'Classes.R' 'Plotting.R'
+        'Germlines.R' 'Statistics.R' 'TreeFunctions.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2024-05-08 13:53:16 UTC; kenneth
+Author: Kenneth Hoehn [aut, cre],
+  Cole Jensen [ctb],
+  Susanna Marquez [ctb],
+  Jason Vander Heiden [ctb],
+  Steven Kleinstein [aut, cph]
+Maintainer: Kenneth Hoehn <kenneth.b.hoehn@dartmouth.edu>
+Repository: CRAN
+Date/Publication: 2024-05-09 18:20:03 UTC

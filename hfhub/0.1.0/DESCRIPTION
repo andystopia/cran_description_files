@@ -1,0 +1,23 @@
+Package: hfhub
+Title: Hugging Face Hub Interface
+Version: 0.1.0
+Authors@R: c(
+    person("Daniel", "Falbel", , "daniel@posit.co", role = c("aut", "cre")),
+    person(family = "Posit", role = c("cph"))
+    )
+Description: Provides functionality to download and cache files from 'Hugging Face Hub' <https://huggingface.co/models>. 
+    Uses the same caching structure so files can be shared between different client libraries.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: httr, filelock, fs, cli, withr, curl, glue, urltools, rlang
+Suggests: testthat (>= 3.0.0), jsonlite
+Config/testthat/edition: 3
+URL: https://mlverse.github.io/hfhub/
+NeedsCompilation: no
+Packaged: 2023-06-26 11:09:07 UTC; dfalbel
+Author: Daniel Falbel [aut, cre],
+  Posit [cph]
+Maintainer: Daniel Falbel <daniel@posit.co>
+Repository: CRAN
+Date/Publication: 2023-06-28 13:50:09 UTC

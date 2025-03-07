@@ -1,0 +1,34 @@
+Package: whomds
+Type: Package
+Title: Calculate Results from WHO Model Disability Survey Data
+Version: 1.1.0
+Authors@R: c(person("Lindsay", "Lee", email = "lindsayevanslee@gmail.com", role = c("aut","cre")), person("Carolina", "Fellinghauer", email = "carolina.fellinghauer@data-fittery.ch", role = c("ctb")),  person("World Health Organization", email = "disability@who.int", role = "cph"))
+Description: The Model Disability Survey (MDS) <https://www.who.int/activities/collection-of-data-on-disability> is a World Health Organization (WHO) general population survey
+    instrument to assess the distribution of disability within a country or 
+    region, grounded in the International Classification of Functioning, 
+    Disability and Health <https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health>. This package provides fit-for-purpose functions 
+    for calculating and presenting the results from this survey, as used by 
+    the WHO. The package primarily provides functions for implementing
+    Rasch Analysis (see Andrich (2011) <doi:10.1586/erp.11.59>) to
+    calculate a metric scale for disability.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: colorspace, dplyr, eRm, ggraph, ggplot2, GPArotation,
+        grDevices, igraph, nFactors, plyr, polycor, purrr,
+        RColorBrewer, readr, rlang, scales, srvyr, stringr, TAM,
+        tibble, tidygraph, tidyr, WrightMap
+Depends: R (>= 3.6.0), psych
+BugReports: https://github.com/lindsayevanslee/whomds/issues
+RoxygenNote: 7.2.0
+Suggests: covr, httr, knitr, lubridate, rmarkdown, testthat
+VignetteBuilder: knitr
+URL: https://github.com/lindsayevanslee/whomds
+NeedsCompilation: no
+Packaged: 2022-05-26 22:52:00 UTC; lindsaylee
+Author: Lindsay Lee [aut, cre],
+  Carolina Fellinghauer [ctb],
+  World Health Organization [cph]
+Maintainer: Lindsay Lee <lindsayevanslee@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-27 09:30:02 UTC

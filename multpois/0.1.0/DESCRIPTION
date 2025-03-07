@@ -1,0 +1,41 @@
+Package: multpois
+Title: Analyze Nominal Response Data with the Multinomial-Poisson Trick
+Version: 0.1.0
+Authors@R: 
+    person("Jacob O.", "Wobbrock", , "wobbrock@uw.edu", role = c("aut", "cre","cph"),
+           comment = c(ORCID = "0000-0003-3675-5491"))
+Maintainer: Jacob O. Wobbrock <wobbrock@uw.edu>
+Description: Dichotomous responses having two categories can be analyzed
+    with stats::glm() or lme4::glmer() using the family=binomial option.
+    Unfortunately, polytomous responses with three or more unordered
+    categories cannot be analyzed similarly because there is no analogous
+    family=multinomial option. For between-subjects data,
+    nnet::multinom() can address this need, but it cannot handle random
+    factors and therefore cannot handle repeated measures. To address this
+    gap, we implement the multinomial-Poisson trick (Baker 1994) <doi:10.2307/2348134>, 
+    which transforms nominal response data into counts for each categorical 
+    alternative. These counts are then analyzed using (mixed) Poisson regression. 
+    Omnibus analyses of variance can be run along with post hoc pairwise 
+    comparisons. For users wishing to analyze nominal responses from surveys 
+    or experiments, the functions in this package essentially act as though 
+    stats::glm() or lme4::glmer() had a family=multinomial option.
+License: GPL (>= 2)
+URL: https://github.com/wobbrock/multpois/
+BugReports: https://github.com/wobbrock/multpois/issues/new
+Depends: R (>= 2.10)
+Imports: car (>= 3.1.2), dfidx (>= 0.0.5), dplyr (>= 1.1.4), lme4 (>=
+        1.1.35.5), plyr (>= 1.8.9)
+Suggests: emmeans (>= 1.10.3), knitr (>= 1.48), lmerTest (>= 3.1.3),
+        nnet (>= 7.3.19), rmarkdown, spelling, testthat (>= 3.2.1.1)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-10-13 16:34:08 UTC; wobbrock
+Author: Jacob O. Wobbrock [aut, cre, cph]
+    (<https://orcid.org/0000-0003-3675-5491>)
+Repository: CRAN
+Date/Publication: 2024-10-16 16:50:03 UTC

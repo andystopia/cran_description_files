@@ -1,0 +1,26 @@
+Package: GetFREData
+Title: Reading FRE Corporate Data of Public Traded Companies from B3
+Version: 0.6
+Date: 2021-04-03
+Authors@R: c(person("Marcelo", "Perlin", email = "marceloperlin@gmail.com", role = c("aut", "cre")),
+             person("Guilherme", "Kirch", email = "guilhermekirch@gmail.com", role = c("aut")))  
+Description: Reads corporate data such as board composition and compensation for companies traded at B3, 
+             the Brazilian exchange <http://www.b3.com.br/>. All data is downloaded and imported from the ftp site <http://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/FRE/>.
+Depends: R (>= 3.5.0)
+Imports: stringr, xml2, dplyr, readr, curl, lubridate, magrittr, purrr,
+        memoise, rvest, tidyr, XML
+ByteCompile: true
+License: GPL-2
+BugReports: https://github.com/msperlin/GetFREData/issues
+URL: https://github.com/msperlin/GetFREData/
+LazyData: false
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-04-03 20:06:33 UTC; msperlin
+Author: Marcelo Perlin [aut, cre],
+  Guilherme Kirch [aut]
+Maintainer: Marcelo Perlin <marceloperlin@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-06 08:50:16 UTC

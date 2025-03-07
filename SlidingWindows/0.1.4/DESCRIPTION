@@ -1,0 +1,42 @@
+Package: SlidingWindows
+Type: Package
+Title: Methods for Time Series Analysis
+Description: A collection of functions to perform Detrended Fluctuation Analysis (DFA exponent), GUEDES et al. (2019) <doi:10.1016/j.physa.2019.04.132> , Detrended cross-correlation coefficient (RHODCCA), GUEDES & ZEBENDE (2019) <doi:10.1016/j.physa.2019.121286>, and Detrended Multiple cross-correlation coefficient (DMC), ZEBENDE & SILVA-FILHO (2018) <doi:10.1016/j.physa.2018.06.119>, both with sliding windows approach. 
+Version: 0.1.4
+Date: 2020-09-11
+Authors@R: c(person("Everaldo Freitas","Guedes",
+                     email = "efgestatistico@gmail.com", 
+                     role = c("aut","cre"),  
+                     comment = c(ORCID="0000-0002-2986-7367")),
+          person("Ivan Costa da Cunha","Lima", 
+                     email = "ivandacunhalima@gmail.com",	
+                     role = c("aut"), 
+                     comment = c(ORCID="0000-0002-4525-2346")),
+          person("Gilney Figueira","Zebende", 
+                     email = "gfzebende@hotmail",	
+                     role = c("aut"), 
+                     comment = c(ORCID="0000-0003-2420-9805")),
+          person("Aloísio Machado","Silva-Filho", 
+                     email = "aloisioestatistico@uefs.br",	
+                     role = c("aut"), 
+                     comment = c(ORCID="0000-0001-8250-1527")))
+Maintainer: Everaldo Freitas Guedes <efgestatistico@gmail.com>
+License: GPL-3
+URL: https://github.com/efguedes/SlidingWindows
+BugReports: https://github.com/efguedes/SlidingWindows
+NeedsCompilation: no
+Encoding: UTF-8
+LazyData: true
+Imports: stats, DCCA, PerformanceAnalytics, nonlinearTseries
+Suggests: xts, zoo, quantmod
+RoxygenNote: 7.1.1
+Packaged: 2020-09-11 14:46:25 UTC; Everaldo Guedes
+Author: Everaldo Freitas Guedes [aut, cre]
+    (<https://orcid.org/0000-0002-2986-7367>),
+  Ivan Costa da Cunha Lima [aut]
+    (<https://orcid.org/0000-0002-4525-2346>),
+  Gilney Figueira Zebende [aut] (<https://orcid.org/0000-0003-2420-9805>),
+  Aloísio Machado Silva-Filho [aut]
+    (<https://orcid.org/0000-0001-8250-1527>)
+Repository: CRAN
+Date/Publication: 2020-09-21 08:30:03 UTC

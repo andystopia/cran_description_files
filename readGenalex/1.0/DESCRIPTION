@@ -1,0 +1,31 @@
+Package: readGenalex
+Type: Package
+Title: Read, Write, Manipulate and Convert GenAlEx-Format Genotype
+        Files
+Version: 1.0
+Date: 2015-04-21
+Authors@R: person(c("Douglas", "G."), "Scofield", email = "douglasgscofield@gmail.com", role = c("aut", "cre"))
+Maintainer: Douglas G. Scofield <douglasgscofield@gmail.com>
+Description: A collection of R functions to read, write, manipulate, and
+    convert genotype data in GenAlEx format.  GenAlEx is a widely-used Excel
+    plugin for manipulating and analysing genotype data.  This package reads
+    GenAlEx data from text or Excel files and creates an annotated data frame
+    of class 'genalex'. Several functions are provided for accessing,
+    manipulating, printing, writing and converting this data. GenAlEx and its
+    documentation are available at http://biology-assets.anu.edu.au/GenAlEx.
+URL: https://github.com/douglasgscofield/readGenalex
+BugReports: https://github.com/douglasgscofield/readGenalex/issues
+Depends: R (>= 3.0.0)
+Imports: pegas (>= 0.7)
+Suggests: XLConnect, testthat, genetics, combinat, gdata, gtools, MASS,
+        mvtnorm, ape (>= 2.4), adegenet
+License: LGPL-3 | file LICENSE
+Collate: 'readGenalex.R' 'checkNullAlleles.R' 'readGenalex-readwrite.R'
+        'readGenalex-Genepop.R' 'readGenalex-data.R'
+        'readGenalex-deprecated.R' 'readGenalex-genetics.R'
+        'readGenalex-package.R' 'readGenalex-pegas.R'
+NeedsCompilation: no
+Packaged: 2015-04-20 23:05:10 UTC; douglasgscofield
+Author: Douglas G. Scofield [aut, cre]
+Repository: CRAN
+Date/Publication: 2015-04-21 08:57:05

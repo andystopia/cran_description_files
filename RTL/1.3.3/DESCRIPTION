@@ -1,0 +1,36 @@
+Type: Package
+Package: RTL
+Title: Risk Tool Library - Trading, Risk, 'Analytics' for Commodities
+Version: 1.3.3
+Date: 2023-04-11
+Authors@R: c(
+    person("Philippe", "Cote", , "pcote@ualberta.ca", role = c("aut", "cre")),
+    person("Nima", "Safaian", , "nima.safaian@gmail.com", role = "aut")
+  )
+Description: A toolkit for Commodities 'analytics', risk management and
+    trading professionals. Includes functions for API calls to
+    <https://commodities.morningstar.com/#/>, <https://developer.genscape.com/>,
+    and <https://www.bankofcanada.ca/valet/docs>.
+License: MIT + file LICENSE
+URL: https://github.com/risktoollib/RTL
+Depends: R (>= 4.0)
+Imports: dplyr, ggplot2, httr, jsonlite, lubridate, magrittr, plotly,
+        purrr, RCurl, readr, rlang, stringr, tibble, tidyr, timetk,
+        tsibble, xts, zoo, glue, Rcpp, lifecycle, TTR, tidyselect,
+        PerformanceAnalytics
+Suggests: testthat (>= 3.0.0), covr, lpSolve, rgdal, rugarch,
+        tidyquant, feasts, fabletools, MASS
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+BugReports: https://github.com/risktoollib/RTL/issues
+NeedsCompilation: yes
+Packaged: 2023-04-12 05:01:50 UTC; philippecote
+Author: Philippe Cote [aut, cre],
+  Nima Safaian [aut]
+Maintainer: Philippe Cote <pcote@ualberta.ca>
+Repository: CRAN
+Date/Publication: 2023-04-12 10:00:09 UTC

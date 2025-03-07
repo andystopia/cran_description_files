@@ -1,0 +1,78 @@
+Package: statgenQTLxT
+Type: Package
+Title: Multi-Trait and Multi-Trial Genome Wide Association Studies
+Version: 1.0.0
+Date: 2023-02-22
+Authors@R: c(person(given = "Bart-Jan", 
+                    family = "van Rossum", 
+                    email = "bart-jan.vanrossum@wur.nl", 
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-8673-2514")),
+             person(given = "Willem", 
+                    family = "Kruijer",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0001-7179-1733")),
+             person(given = "Fred", 
+                    family = "van Eeuwijk",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0003-3672-2921")),
+             person(given = "Martin", 
+                    family = "Boer",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0002-1879-4588")),
+             person(given = "Daniela", 
+                    family = "Bustos-Korts",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0003-3827-6726")),
+             person(given = "Emilie J", 
+                    family = "Millet",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0002-2913-4892")),
+             person(given = "Joao", 
+                    family = "Paulo",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0002-4180-0763")),
+             person(given = "Maikel", 
+                    family = "Verouden",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0002-4893-3323")),
+             person(given = "Ron", 
+                    family = "Wehrens",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0002-8798-5599")),
+             person(given = "Choazhi", 
+                    family = "Zheng",
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0001-6030-3933"))
+                    )
+Description: Fast multi-trait and multi-trail Genome Wide Association Studies 
+    (GWAS) following the method described in Zhou and Stephens. (2014), 
+    <doi:10.1038/nmeth.2848>. One of a series of statistical genetic packages 
+    for streamlining the analysis of typical plant breeding experiments 
+    developed by Biometris.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5)
+Imports: data.table, foreach, Rcpp, sommer (>= 4.2.0), statgenGWAS (>=
+        1.0.9)
+Suggests: covr, knitr, rmarkdown, tinytest
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2023-02-22 15:48:38 UTC; rossu027
+Author: Bart-Jan van Rossum [aut, cre]
+    (<https://orcid.org/0000-0002-8673-2514>),
+  Willem Kruijer [aut] (<https://orcid.org/0000-0001-7179-1733>),
+  Fred van Eeuwijk [ctb] (<https://orcid.org/0000-0003-3672-2921>),
+  Martin Boer [ctb] (<https://orcid.org/0000-0002-1879-4588>),
+  Daniela Bustos-Korts [ctb] (<https://orcid.org/0000-0003-3827-6726>),
+  Emilie J Millet [ctb] (<https://orcid.org/0000-0002-2913-4892>),
+  Joao Paulo [ctb] (<https://orcid.org/0000-0002-4180-0763>),
+  Maikel Verouden [ctb] (<https://orcid.org/0000-0002-4893-3323>),
+  Ron Wehrens [ctb] (<https://orcid.org/0000-0002-8798-5599>),
+  Choazhi Zheng [ctb] (<https://orcid.org/0000-0001-6030-3933>)
+Maintainer: Bart-Jan van Rossum <bart-jan.vanrossum@wur.nl>
+Repository: CRAN
+Date/Publication: 2023-02-23 09:40:03 UTC

@@ -1,0 +1,99 @@
+Package: caviarpd
+Type: Package
+Title: Cluster Analysis via Random Partition Distributions
+Version: 0.3.4
+Authors@R: c(person(given = "David B.", family= "Dahl", role=c("aut", "cre", "cph"), email = "dahl@stat.byu.edu", comment=c(ORCID="0000-0002-8173-1547")), 
+             person(given = "R. Jacob", family = "Andros", role=c("aut"), email = "androsrj@gmail.com", comment=c(ORCID="0000-0002-1289-385X")),
+             person(given = "J. Brandon", family = "Carter",role=c("aut"), email = "carterj4@icloud.com", comment=c(ORCID="0000-0003-1687-0564")),
+             person(given = "Alex", family = "Crichton", email = "alex@alexcrichton.com", role = "cph", comment = "Rust crates: proc-macro2, cfg-if. See AUTHORS file."),
+             person(given = "\"bluss\" Ulrik", family = "Sverdrup", role = "cph", comment = "Rust crate: rawpointer, matrixmultiply, scopeguard, ndarray. See AUTHORS file."),
+             person(given = "Brendan", family = "Zabarauskas", email = "bjzaba@yahoo.com.au", role = "cph", comment = "Rust crate: approx. See AUTHORS file."),
+             person(given = "DutchGhost", role = "cph", comment = "Rust crate: matrixmultiply. See AUTHORS file."),
+             person(given = "David", family = "Schultz", email = "das@freebsd.org", role = "cph", comment = "Rust crates: libm. See AUTHORS file."),
+             person(given = "Enthought, Inc.", role = "cph", comment = "Rust crate: ndarray. See AUTHORS file."),
+             person(given = "Gilad", family = "Naaman", email = "gilad.naaman@gmail.com", role = "cph", comment = "Rust crate: memoffset. See AUTHORS file."),
+             person(given = "Jim", family = "Turner", role = "cph", comment = "Rust crate: ndarray. See AUTHORS file."),
+             person(given = "Jorge", family = "Aparicio", email = "jorge@japaric.io", role = "cph", comment = "Rust crate: libm. See AUTHORS file."),
+             person(given = "Josh", family = "Stone", email = "cuviper@gmail.com", role = "cph", comment = "Rust crate: autocfg. See AUTHORS file."),
+             person(given = "Melissa", family = "O'Neill", role = "cph", comment = "Rust crate: rand_pcg. See AUTHORS file."),
+             person(given = "Mikhail", family = "Vorotilov", email = "mikhail.vorotilov@gmail.com", role = "cph", comment = "Rust crate: roots. See AUTHORS file."),
+             person(given = "Paul", family = "Dicker", role = "cph", comment = "Rust crate: rand_pcg. See AUTHORS file."),
+             person(given = "R. Janis", family = "Goldschmidt", role = "cph", comment = "Rust crate: matrixmultiply. See AUTHORS file."),
+             person(given = "SciPy Developers", role = "cph", comment = "Rust crate: ndarray. See AUTHORS file."),
+             person(given = "Sean", family = "McArthur", email = "sean@seanmonstar.com", role = "cph", comment = "Rust crate: num_cpus. See AUTHORS file."),
+             person(given = "Sun Microsystems, Inc.", role = "cph", comment = "Rust crate: libm. See AUTHORS file."),
+             person(given = "Stefan", family = "Lankes", role = "cph", comment = "Rust crate: hermit-abi. See AUTHORS file."),
+             person(given = "The Cranelift Project Developers", role = "cph", comment = "Rust crate: wasi. See AUTHORS file."),
+             person(given = "The Crossbeam Project Developers", role = "cph", comment = "Rust crates: crossbeam, crossbeam-channel, crossbeam-deque, crossbeam-epoch, crossbeam-queue, crossbeam-utils. See AUTHORS file."),
+             person(given = "The CryptoCorrosion Contributors", role = "cph", comment = "Rust crates: ppv-lite86, rand_chacha. See AUTHORS file."),
+             person(given = "The Go Authors", role = "cph", comment = "Rust crate: crossbeam-channel. See AUTHORS file."),
+             person(given = "The PCG Project Contributors", role = "cph", comment = "Rust crate: rand_pcg. See AUTHORS file."),
+             person(given = "The matrixmultiply Authors", role = "cph", comment = "Rust crate: matrixmultiply. See AUTHORS file."),
+             person(given = "The ndarray Developers", role = "cph", comment = "Rust crate: ndarray. See AUTHORS file."),
+             person(given = "The Rand Project Developers", role = "cph", comment = "Rust crates: rand_core, rand_chacha, rand_pcg, rand, getrandom, rand_distr. See AUTHORS file."),
+             person(given = "The Rust Project Developers", role = "cph", comment = "Rust crates: crossbmean-channel, rand_chacha, num-integer, rand_core, num-complex, libc, num-traits, rand. See AUTHORS file."),
+             person(given = "The scopeguard Developers", role = "cph", comment = "Rust crates: scopeguard. See AUTHORS file."),
+             person(given = "Unicode, Inc.", role = "cph", comment = "Rust crates: unicode-ident. See AUTHORS file.")
+             )
+Description: Cluster analysis is performed using pairwise distance information and a random partition distribution. The method is
+             implemented for two random partition distributions. It draws samples and then obtains and plots clustering estimates.
+             An implementation of a selection algorithm is provided for the mass parameter of the partition distribution. Since 
+             pairwise distances are the principal input to this procedure, it is most comparable to the hierarchical and k-medoids
+             clustering methods. The method is Dahl, Andros, Carter (2022+) <doi:10.1002/sam.11602>.
+License: MIT + file LICENSE | Apache License 2.0
+Depends: R (>= 4.2.0)
+Suggests: salso (>= 0.3.0)
+SystemRequirements: Cargo (>= 1.56) for installation from source: see
+        INSTALL file
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+NeedsCompilation: yes
+Packaged: 2022-12-07 00:54:17 UTC; dahl
+Author: David B. Dahl [aut, cre, cph] (<https://orcid.org/0000-0002-8173-1547>),
+  R. Jacob Andros [aut] (<https://orcid.org/0000-0002-1289-385X>),
+  J. Brandon Carter [aut] (<https://orcid.org/0000-0003-1687-0564>),
+  Alex Crichton [cph] (Rust crates: proc-macro2, cfg-if. See AUTHORS
+    file.),
+  "bluss" Ulrik Sverdrup [cph] (Rust crate: rawpointer, matrixmultiply,
+    scopeguard, ndarray. See AUTHORS file.),
+  Brendan Zabarauskas [cph] (Rust crate: approx. See AUTHORS file.),
+  DutchGhost [cph] (Rust crate: matrixmultiply. See AUTHORS file.),
+  David Schultz [cph] (Rust crates: libm. See AUTHORS file.),
+  Enthought, Inc. [cph] (Rust crate: ndarray. See AUTHORS file.),
+  Gilad Naaman [cph] (Rust crate: memoffset. See AUTHORS file.),
+  Jim Turner [cph] (Rust crate: ndarray. See AUTHORS file.),
+  Jorge Aparicio [cph] (Rust crate: libm. See AUTHORS file.),
+  Josh Stone [cph] (Rust crate: autocfg. See AUTHORS file.),
+  Melissa O'Neill [cph] (Rust crate: rand_pcg. See AUTHORS file.),
+  Mikhail Vorotilov [cph] (Rust crate: roots. See AUTHORS file.),
+  Paul Dicker [cph] (Rust crate: rand_pcg. See AUTHORS file.),
+  R. Janis Goldschmidt [cph] (Rust crate: matrixmultiply. See AUTHORS
+    file.),
+  SciPy Developers [cph] (Rust crate: ndarray. See AUTHORS file.),
+  Sean McArthur [cph] (Rust crate: num_cpus. See AUTHORS file.),
+  Sun Microsystems, Inc. [cph] (Rust crate: libm. See AUTHORS file.),
+  Stefan Lankes [cph] (Rust crate: hermit-abi. See AUTHORS file.),
+  The Cranelift Project Developers [cph] (Rust crate: wasi. See AUTHORS
+    file.),
+  The Crossbeam Project Developers [cph] (Rust crates: crossbeam,
+    crossbeam-channel, crossbeam-deque, crossbeam-epoch,
+    crossbeam-queue, crossbeam-utils. See AUTHORS file.),
+  The CryptoCorrosion Contributors [cph] (Rust crates: ppv-lite86,
+    rand_chacha. See AUTHORS file.),
+  The Go Authors [cph] (Rust crate: crossbeam-channel. See AUTHORS file.),
+  The PCG Project Contributors [cph] (Rust crate: rand_pcg. See AUTHORS
+    file.),
+  The matrixmultiply Authors [cph] (Rust crate: matrixmultiply. See
+    AUTHORS file.),
+  The ndarray Developers [cph] (Rust crate: ndarray. See AUTHORS file.),
+  The Rand Project Developers [cph] (Rust crates: rand_core, rand_chacha,
+    rand_pcg, rand, getrandom, rand_distr. See AUTHORS file.),
+  The Rust Project Developers [cph] (Rust crates: crossbmean-channel,
+    rand_chacha, num-integer, rand_core, num-complex, libc, num-traits,
+    rand. See AUTHORS file.),
+  The scopeguard Developers [cph] (Rust crates: scopeguard. See AUTHORS
+    file.),
+  Unicode, Inc. [cph] (Rust crates: unicode-ident. See AUTHORS file.)
+Maintainer: David B. Dahl <dahl@stat.byu.edu>
+Repository: CRAN
+Date/Publication: 2022-12-07 21:10:02 UTC

@@ -1,0 +1,33 @@
+Package: move2
+Title: Processing and Analysing Animal Trajectories
+Version: 0.4.0
+Authors@R: c(
+    person("Bart", "Kranstauber", email = "b.kranstauber@uva.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8303-780X")),
+           person('Kamran','Safi', role='aut', comment=c(ORCID="0000-0002-8418-6759")),
+           person('Anne K.','Scharf', role='aut', comment =c("ORCID"= "0000-0002-3357-8533")))
+Description: Tools to handle, manipulate and explore trajectory data, with an emphasis on data from tracked animals. The package is designed to support large studies with several million location records and keep track of units where possible. Data import directly from 'movebank' <https://www.movebank.org/cms/movebank-main> and files is facilitated.
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://bartk.gitlab.io/move2/
+BugReports: https://gitlab.com/bartk/move2/-/issues
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: methods, assertthat, sf (>= 1.0.16), rlang, units, tidyselect,
+        dplyr (>= 1.1.0), tibble, vroom (>= 1.6.1), cli, vctrs (>=
+        0.5.2), bit64 (>= 4.5.2)
+Suggests: knitr, askpass, digest, keyring, xml2, curl, magrittr, purrr,
+        ggplot2, testthat (>= 3.0.0), rmarkdown, lwgeom, s2, move,
+        raster, withr, lubridate, rnaturalearth, rnaturalearthdata,
+        circular, tidyr, gganimate, prettymapr, gifski, ggspatial
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-09 13:50:39 UTC; bart
+Author: Bart Kranstauber [aut, cre] (<https://orcid.org/0000-0001-8303-780X>),
+  Kamran Safi [aut] (<https://orcid.org/0000-0002-8418-6759>),
+  Anne K. Scharf [aut] (<https://orcid.org/0000-0002-3357-8533>)
+Maintainer: Bart Kranstauber <b.kranstauber@uva.nl>
+Repository: CRAN
+Date/Publication: 2024-12-10 00:00:07 UTC

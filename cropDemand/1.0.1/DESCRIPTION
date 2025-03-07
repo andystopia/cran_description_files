@@ -1,0 +1,39 @@
+Package: cropDemand
+Type: Package
+Title: Spatial Crop Water Demand for Brazil
+Version: 1.0.1
+Authors@R: c(person(given = "Roberto",
+                    family = "Filgueiras",
+                    role = c("aut","cre"),
+                    email = "betofilgueiras@gmail.com",
+                    comment = c(ORCID = "0000-0002-0186-8907")),
+            person(given = "Luan P.",
+                    family = "Venancio",
+                    role = ("aut"),
+                    comment = c(ORCID = "0000-0002-5544-8588")),
+            person(given = "Catariny C.",
+                    family = "Aleman",
+                    role = ("aut"),
+                    comment = c(ORCID = "0000-0002-3894-3077")),
+            person(given = "Fernando F.",
+                    family = "da Cunha",
+                    role = ("aut"),
+                    comment = c(ORCID = "0000-0002-1671-1021")))
+Description: Estimation of crop water demand can be processed via this package. As example, the data  from 'TerraClimate' dataset (<http://www.climatologylab.org/terraclimate.html>) calibrated with automatic weather stations of National Meteorological Institute of Brazil is available in a coarse spatial resolution to do the crop water demand. However, the user have also the option to download the variables directly from 'TerraClimate' repository with the download.terraclimate function  and access the original 'TerraClimate' products. If the user believes that is necessary calibrate the variables, there is another function to do it. Lastly, the estimation of the crop water demand present in this package can be run for all the Brazilian territory with 'TerraClimate' dataset. 
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.2.0),
+Imports: dplyr(>= 0.3.0.1), ggplot2(>= 3.3.2), raster, rgdal, tidyr,
+        ncdf4
+BugReports: https://github.com/FilgueirasR/cropDemand/issues
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-01-26 04:16:28 UTC; betof
+Author: Roberto Filgueiras [aut, cre] (<https://orcid.org/0000-0002-0186-8907>),
+  Luan P. Venancio [aut] (<https://orcid.org/0000-0002-5544-8588>),
+  Catariny C. Aleman [aut] (<https://orcid.org/0000-0002-3894-3077>),
+  Fernando F. da Cunha [aut] (<https://orcid.org/0000-0002-1671-1021>)
+Maintainer: Roberto Filgueiras <betofilgueiras@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-26 17:30:02 UTC

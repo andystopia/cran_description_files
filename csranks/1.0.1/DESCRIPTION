@@ -1,0 +1,32 @@
+Package: csranks
+Type: Package
+Title: Confidence Sets for Ranks
+Version: 1.0.1
+Authors@R: c(
+    person("Daniel", "Wilhelm", ,"d.wilhelm@ucl.ac.uk", role = c("aut", "cre")),
+    person("Pawel", "Morgen", ,"seriousmorgen@protonmail.com", role = "aut")
+  )
+Description: Construct confidence sets for positions of populations in a ranking 
+    based on values of a certain feature and their estimation errors. 
+    Both simultaneous and marginal confidence sets are available, as well as 
+    confidence sets with populations occupying top-n positions in the ranking.
+    Theory based on Mogstad, Romano, Shaikh, and Wilhelm (2023)<doi:10.1093/restud/rdad006>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/danielwilhelm/R-CS-ranks,
+        https://danielwilhelm.github.io/R-CS-ranks/
+BugReports: https://github.com/danielwilhelm/R-CS-ranks/issues
+RoxygenNote: 7.2.1
+Depends: R (>= 3.5.0)
+Imports: stats, ggplot2, scales, MASS, cli
+Suggests: spelling, testthat (>= 2.1.0), grid, knitr, rmarkdown
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-03-22 10:11:43 UTC; mrdomani
+Author: Daniel Wilhelm [aut, cre],
+  Pawel Morgen [aut]
+Maintainer: Daniel Wilhelm <d.wilhelm@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-03-22 19:40:13 UTC

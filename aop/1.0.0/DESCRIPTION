@@ -1,0 +1,26 @@
+Package: aop
+Type: Package
+Title: Adverse Outcome Pathway Analysis
+Version: 1.0.0
+Date: 2015-08-25
+Author: Lyle D. Burgoon <Lyle.D.Burgoon@usace.army.mil>
+Maintainer: Lyle D. Burgoon <Lyle.D.Burgoon@usace.army.mil>
+Description: Provides tools for analyzing adverse outcome pathways
+    (AOPs) for pharmacological and toxicological research. Functionality
+    includes the ability to perform causal network analysis of networks
+    developed in and exported from Cytoscape or existing as R graph objects, and
+    identifying the point of departure/screening/risk value from concentration-
+    response data.
+License: CC0
+Suggests: RUnit, knitr, rmarkdown, BiocGenerics
+Imports: graph (>= 1.38.3), rjson (>= 0.2.14), igraph (>= 0.7.1),
+        Rgraphviz (>= 2.10.0), methods, plyr (>= 1.8.3), ggplot2 (>=
+        1.0.1), splines
+VignetteBuilder: knitr
+LazyData: true
+Collate: 'aopCytoscape_Class.R' 'aop_cytoscape_methods.R'
+        'aop_graph_analysis.R' 'bmr_Class.R' 'pod_analysis.R'
+NeedsCompilation: no
+Packaged: 2016-03-30 21:05:28 UTC; burgoonl
+Repository: CRAN
+Date/Publication: 2016-03-31 17:38:42

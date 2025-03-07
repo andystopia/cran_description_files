@@ -1,0 +1,29 @@
+Package: entcn
+Type: Package
+Title: Translate English Words into Chinese Words
+Version: 0.1.0
+Authors@R: person("Xinyuan", "Chu", email = "chuxinyuan@outlook.com", role = c("aut", "cre"))
+Maintainer: Xinyuan Chu <chuxinyuan@outlook.com>
+Date: 2020-02-12 02:35:09 UTC
+Description: If translate English words into Chinese, you might consider 
+    looking up a dictionary or online query, in fact, there is a faster 
+    way for R user. Ke-Hao Wu (2014) <RYoudaoTranslate: R package provide 
+    functions to translate English words into Chinese.> provides interface 
+    to Youdao translation open API for R user. But this software is not 
+    very friendly to use, I have made some improvements on the basis of 
+    this software. You can pass in a words or a vector consisting of multiple 
+    words, which will return the corresponding type of Chinese representation 
+    and be easy to reuse.
+License: GPL-2
+URL: https://gitlab.com/chuxinyuan/entcn
+BugReports: https://gitlab.com/chuxinyuan/entcn/issues
+Encoding: UTF-8
+LazyData: true
+Imports: bitops,RCurl,rjson,stringr,RYoudaoTranslate
+RoxygenNote: 6.1.1
+Suggests: testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2020-02-13 18:51:20 UTC; cxy
+Author: Xinyuan Chu [aut, cre]
+Repository: CRAN
+Date/Publication: 2020-02-21 14:00:02 UTC

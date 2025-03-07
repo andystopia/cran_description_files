@@ -1,0 +1,34 @@
+Package: RJcluster
+Title: RJ Clustering Algorithm
+Version: 2.5.0
+Authors@R: 
+    c(person(given = "Rachael",
+           family = "Shudde",
+           role = c("aut", "cre"),
+           email = "rachael.shudde@gmail.com"),
+           person(given = "Shahina",
+           family = "Rahman",
+           role = c("aut"),
+           email = "srahman@stat.tamu.edu"),
+          person(given = "Valen",
+           family = "Johnson",
+           role = c("aut"),
+           email = "vejohnson@exchange.tamu.edu"))
+Author: Rachael Shudde [aut, cre],
+  Shahina Rahman [aut],
+  Valen Johnson [aut]
+Maintainer: Rachael Shudde <rachael.shudde@gmail.com>
+Description: Clustering algorithm for high dimensional data. This algorithm is ideal for data where N << P. Assuming that P feature measurements on N objects are arranged in an N×P matrix X, this package provides clustering based on the left Gram matrix XX^T. When the P-dimensional feature vectors of objects are drawn independently from a K distinct mixture distribution,  the N-dimensional  rows of the modified Gram matrix XX^T/P converges almost surely to K distinct cluster means. This transformation/projection thus allows  the  clusters  to  be  tighter  with  order of P.  To simulate data, type "help('simulate_HD_data')" and to learn how to use the clustering algorithm, type "help('RJclust')".
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.2), matrixStats, infotheo, rlang, stats,
+        graphics, profvis, mclust, foreach
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2021-04-06 20:08:35 UTC; rachaelshudde
+Repository: CRAN
+Date/Publication: 2021-04-06 21:00:03 UTC

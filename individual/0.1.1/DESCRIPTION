@@ -1,0 +1,59 @@
+Package: individual
+Title: Framework for Specifying and Simulating Individual Based Models
+Version: 0.1.1
+Authors@R: c(
+  person(
+    given = "Giovanni",
+    family = "Charles",
+    role = c('aut', 'cre'),
+    email = 'giovanni.charles@gmail.com'
+  ),
+  person(
+    given = "Sean L.",
+    family = "Wu",
+    role = c('aut'),
+    comment = c(ORCID = "0000-0002-5781-9493"),
+    email = 'slwood89@gmail.com'
+  ),
+  person(
+    given = "Pete",
+    family = "Winskill",
+    role = c('aut'),
+    email = 'p.winskill@imperial.ac.uk'
+  ),
+  person(
+    given = "Imperial College of Science, Technology and Medicine",
+    family = "",
+    role = c('cph'),
+    email = 'giovanni.charles10@imperial.ac.uk'
+  ))
+Description: A framework which provides users a set of useful primitive elements for
+  specifying individual based simulation models, with special attention models for
+  infectious disease epidemiology. Users build models by specifying variables for
+  each characteristic of individuals in the simulated population by using data
+  structures exposed by the package. The package provides efficient methods for
+  finding subsets of individuals based on these variables, or cohorts. Cohorts can
+  then be targeted for variable updates or scheduled for events. Variable updates
+  queued during a time step are executed at the end of a discrete time step, and
+  the code places no restrictions on how individuals are allowed to interact.
+  These data structures are designed to provide an intuitive way for users to turn
+  their conceptual model of a system into executable code, which is fast and
+  memory efficient.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: R6, Rcpp
+Suggests: ggplot2, knitr, mockery, rmarkdown, reshape2, pkgdown,
+        testthat (>= 2.1.0)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+LinkingTo: Rcpp, testthat
+RcppModules: individual_cpp
+NeedsCompilation: yes
+Packaged: 2021-06-14 08:36:45 UTC; root
+Author: Giovanni Charles [aut, cre],
+  Sean L. Wu [aut] (<https://orcid.org/0000-0002-5781-9493>),
+  Pete Winskill [aut],
+  Imperial College of Science, Technology and Medicine [cph]
+Maintainer: Giovanni Charles <giovanni.charles@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-15 07:50:02 UTC

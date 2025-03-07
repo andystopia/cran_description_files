@@ -1,0 +1,30 @@
+Package: impactr
+Title: Mechanical Loading Prediction Through Accelerometer Data
+Version: 0.1.0
+Authors@R: 
+    person(given = "Lucas",
+           family = "Veras",
+           role = c("aut", "cre"),
+           email = "lucasdsveras@gmail.com",
+           comment = c(ORCID = "0000-0003-0562-5803"))
+Description: Functions to read, process and analyse accelerometer
+    data related to mechanical loading variables. This package is
+    developed and tested for use with raw accelerometer data from
+    triaxial 'ActiGraph' <https://actigraphcorp.com> accelerometers.
+License: MIT + file LICENSE
+URL: https://lveras.com/impactr/
+BugReports: https://github.com/verasls/impactr/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: glue, lubridate, lvmisc, pillar, pracma, purrr, Rcpp, rlang
+        (>= 0.4.6), signal, stringr, tibble, toOrdinal, utils, vroom
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-06-30 09:37:42 UTC; lucasveras
+Author: Lucas Veras [aut, cre] (<https://orcid.org/0000-0003-0562-5803>)
+Maintainer: Lucas Veras <lucasdsveras@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-07-01 07:30:11 UTC

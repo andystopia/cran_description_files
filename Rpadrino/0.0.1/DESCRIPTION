@@ -1,0 +1,69 @@
+Package: Rpadrino
+Title: Interact with the 'PADRINO' IPM Database
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Sam",
+           family = "Levin",
+           role = c("aut", "cre"),
+           email = "levisc8@gmail.com",
+           comment = c(ORCID = "0000-0002-3289-9925")),
+    person(given = "Aldo",
+           family = "Compagnoni",
+           email = "aldo.compagnoni@idiv.de",
+           role = "aut"),
+    person(given = "Dylan",
+           family = "Childs",
+           email = "d.childs@sheffield.ac.uk",
+           role = "aut"),
+    person(given = "Sanne",
+           family = "Evers",
+           email = "sanne.evers@idiv.de",
+           role = "aut"),
+    person(given = "Tomos", 
+           family = "Potter", 
+           email = "tomos.potter@zoo.ox.ac.uk", 
+           role = "aut"),
+    person(given = "Roberto",
+           family = "Salguero-Gomez",
+           email = "rob.salguero@zoo.ox.ac.uk",
+           role = "aut"),
+    person(given = "Tiffany",
+           family = "Knight",
+           email = "tiffany.knight@idiv.de",
+           role = "aut"))
+Description: 'PADRINO' houses textual representations of
+    Integral Projection Models which can be converted from their 
+    table format into full kernels to reproduce or extend an 
+    already published analysis. 'Rpadrino' is an R interface to this database. For
+    more information on Integral Projection Models, see Easterling et al. (2000) 
+  <doi:10.1890/0012-9658(2000)081[0694:SSSAAN]2.0.CO;2>, Merow et al. (2013) 
+  <doi:10.1111/2041-210X.12146>, Rees et al. (2014) <doi:10.1111/1365-2656.12178>,
+  and Metcalf et al. (2015) <doi:10.1111/2041-210X.12405>. See Levin et al. (2021)
+  for more information on 'ipmr', the engine that powers model reconstruction
+  <doi:10.1111/2041-210X.13683>.
+Depends: R (>= 3.3.0), ipmr (>= 0.0.4)
+Imports: ggplot2, magrittr, maps, mvtnorm, purrr, rlang (>= 0.3.0),
+        rmarkdown, tools, truncdist, utils
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/padrinoDB/Rpadrino/issues
+URL: https://github.com/padrinoDB/Rpadrino,
+        https://padrinoDB.github.io/Rpadrino/
+RoxygenNote: 7.1.2
+Suggests: testthat, knitr, covr, roxygen2
+VignetteBuilder: knitr
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-11-14 16:23:15 UTC; sl13sise
+Author: Sam Levin [aut, cre] (<https://orcid.org/0000-0002-3289-9925>),
+  Aldo Compagnoni [aut],
+  Dylan Childs [aut],
+  Sanne Evers [aut],
+  Tomos Potter [aut],
+  Roberto Salguero-Gomez [aut],
+  Tiffany Knight [aut]
+Maintainer: Sam Levin <levisc8@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-11-15 19:30:02 UTC

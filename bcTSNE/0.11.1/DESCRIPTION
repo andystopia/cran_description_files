@@ -1,0 +1,39 @@
+Package: bcTSNE
+Type: Package
+Title: Projected t-SNE for Batch Correction
+Version: 0.11.1
+Authors@R: c(person("Dayne L", "Filer", 
+                    role = c("aut", "cre"), 
+                    email = "dayne.filer@gmail.com"),
+             person("Emanuele", "Aliverti", 
+                    role = c("aut"), 
+                    email = "aliverti@stat.unipd.it"),
+             person("Jeff", "Tilson", 
+                    role = c("aut")),
+             person("Kirk C", "Wilhelmsen", 
+                    role = c("aut")),
+             person("David B", "Dunson", 
+                    role = c("aut"))) 
+Maintainer: Dayne L Filer <dayne.filer@gmail.com>
+Description: Implements the projected t-SNE method for batch correction of 
+  high-dimensional data. Please see Aliverti et al. (2020) 
+  <doi:10.1093/bioinformatics/btaa189> for more information.
+Imports: stats, RSpectra, utils, Rtsne, graphics, splatter
+Suggests: data.table, batchelor, kBET, scater, knitr, lisi, harmony,
+        dlfUtils, xtable
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/emanuelealiverti/BC_tSNE
+RoxygenNote: 7.1.2
+Additional_repositories: https://daynefiler.github.io/drat
+NeedsCompilation: yes
+Packaged: 2021-11-30 18:23:13 UTC; dayne
+Author: Dayne L Filer [aut, cre],
+  Emanuele Aliverti [aut],
+  Jeff Tilson [aut],
+  Kirk C Wilhelmsen [aut],
+  David B Dunson [aut]
+Repository: CRAN
+Date/Publication: 2021-12-01 07:40:05 UTC

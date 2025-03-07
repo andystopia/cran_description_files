@@ -1,0 +1,44 @@
+Package: cosmicsig
+Title: Mutational Signatures from COSMIC (Catalogue of Somatic
+        Mutations in Cancer)
+Version: 1.0.7
+Authors@R: 
+    c(person(given = "Steven",
+             family = "Rozen",
+             role = c("aut", "cre"),
+             email = "steverozen@pm.me",
+             comment = c(ORCID = "0000-0002-4288-0056")),
+      person(given = "Nanhai",
+             family = "Jiang",
+             role = "aut",
+             comment = c(ORCID = "0000-0003-4974-2753")))
+Description: A data package with 2 main package variables: 'signature' and 'etiology'. 
+     The 'signature' variable contains the latest mutational signature profiles 
+     released on COSMIC <https://cancer.sanger.ac.uk/signatures/> for 4 mutation
+     types:
+     * single base substitutions in the context of preceding and following bases,
+     * Strand bias single base substitutions: single base substitutions
+        from transcribed regions, that take into consideration the 
+        the transcribed versus non-transcribed strand,
+     * Doublet base substitutions, and
+     * Small insertions and deletions.
+    The 'etiology' variable provides the known or hypothesized causes of signatures. 
+    'cosmicsig' stands for COSMIC signatures. Please run ?'cosmicsig' for more
+    information.
+License: GPL-3
+URL: https://github.com/Rozen-Lab/cosmicsig
+BugReports: https://github.com/Rozen-Lab/cosmicsig/issues
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 3.5)
+Suggests: testthat (>= 3.0.0), ICAMS, usethis
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-12-17 15:22:00 UTC; posit
+Author: Steven Rozen [aut, cre] (<https://orcid.org/0000-0002-4288-0056>),
+  Nanhai Jiang [aut] (<https://orcid.org/0000-0003-4974-2753>)
+Maintainer: Steven Rozen <steverozen@pm.me>
+Repository: CRAN
+Date/Publication: 2021-12-20 09:50:06 UTC

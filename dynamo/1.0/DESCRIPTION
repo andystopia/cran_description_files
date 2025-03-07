@@ -1,0 +1,17 @@
+Package: dynamo
+Type: Package
+Title: Fit a Stochastic Dynamical Array Model to Array Data
+Version: 1.0
+Date: 2018-02-23
+Author: Adam Lund
+Maintainer: Adam Lund <adam.lund@math.ku.dk>
+Description: An implementation of the method proposed in Lund and Hansen (2018) for fitting 3-dimensional dynamical array models.  The implementation is based on the glamlasso package, see Lund et al. (2017) <doi:10.1080/10618600.2017.1279548>, for efficient design matrix free lasso regularized estimation in a generalized linear array model. The implementation uses a block relaxation scheme to fit each individual component in the model using functions from the glamlasso package.
+License: GPL (>= 2)
+Depends: glamlasso (>= 3.0), abind, MortalitySmooth
+Imports: Rcpp (>= 0.12.12)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-02-23 17:02:30 UTC; adamlund
+Repository: CRAN
+Date/Publication: 2018-02-23 17:28:37 UTC

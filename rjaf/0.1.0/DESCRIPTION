@@ -1,0 +1,46 @@
+Package: rjaf
+Title: Regularized Joint Assignment Forest with Treatment Arm
+        Clustering
+Version: 0.1.0
+URL: https://github.com/wustat/rjaf
+BugReports: https://github.com/wustat/rjaf/issues
+Authors@R: 
+    c(person(given = "Wenbo",
+             family = "Wu",
+             email = "Wenbo.Wu@med.nyu.edu", 
+             role = c("aut", "cph"),
+             comment = c(ORCID = "0000-0002-7642-9773")),
+      person(given = "Xinyi", 
+             family = "Zhang", 
+             email = "zhang.xinyi@nyu.edu",
+             role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0009-0007-7306-491X")),
+      person(given = "Jann",
+             family = "Spiess",
+             email = "jspiess@stanford.edu",
+             role = c("aut", "cph"),
+             comment = c(ORCID = "0000-0002-4120-8241")),
+      person(given = "Rahul",
+             family = "Ladhania",
+             email = "ladhania@umich.edu",
+             role = c("aut", "cph"),
+             comment = c(ORCID = "0000-0002-7902-7681")))
+Description: Personalized assignment to one of many treatment arms via regularized and clustered joint assignment forests as described in Ladhania, Spiess, Ungar, and Wu (2023) <doi:10.48550/arXiv.2311.00577>. The algorithm pools information across treatment arms: it considers a regularized forest-based assignment algorithm based on greedy recursive partitioning that shrinks effect estimates across arms; and it incorporates a clustering scheme that combines treatment arms with consistently similar outcomes.
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: Rcpp, dplyr, tibble, magrittr, readr, randomForest, ranger,
+        forcats, rlang (>= 1.1.0), tidyr, stringr, MASS
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+NeedsCompilation: yes
+Packaged: 2024-11-08 00:31:37 UTC; xinyizhang
+Author: Wenbo Wu [aut, cph] (<https://orcid.org/0000-0002-7642-9773>),
+  Xinyi Zhang [aut, cre, cph] (<https://orcid.org/0009-0007-7306-491X>),
+  Jann Spiess [aut, cph] (<https://orcid.org/0000-0002-4120-8241>),
+  Rahul Ladhania [aut, cph] (<https://orcid.org/0000-0002-7902-7681>)
+Maintainer: Xinyi Zhang <zhang.xinyi@nyu.edu>
+Repository: CRAN
+Date/Publication: 2024-11-11 20:10:02 UTC

@@ -1,0 +1,33 @@
+Type: Package
+Package: GeSciLiVis
+Title: Gene-Based Publication Activity Visualiser
+Version: 1.1.0
+Authors@R: c(
+      person("Marina","Leer",email="marina.leer@dife.de",role = c("aut", "cre","cph"), comment = c(ORCID="0000-0002-8714-2807")),
+      person("George", "Soultoukis", role = c("ctb"), comment = c(ORCID="0000-0002-7290-1444")),
+      person("Masoome", "Oveisi", role = c("ctb")),
+      person("German Research Foundation", role = c("fnd")),
+      person("German Ministry of Education and Research ", role = c("fnd")),
+      person("State of Brandenburg", role = c("fnd")))
+Description: Visualising publication activity per gene based on a gene list and  a user-defined set of keywords utilising R 'rentrez' <https://cran.r-project.org/package=rentrez/> that provides 'NCBI' <https://www.ncbi.nlm.nih.gov> database search like in 'PubMed' <https://pubmed.ncbi.nlm.nih.gov>. It summarises the retrieved number of publications for each gene in an overview bar plot (saved as 'png' file) and by choice a summary table (as 'csv') that including the most recent 100 'PubMed' IDs and publication titles.
+License: GPL (>= 3)
+Depends: R (>= 2.10)
+Imports: rentrez (>= 1.2.3), biomaRt (>= 2.54.0), biomartr (>= 1.0.2),
+        grDevices (>= 4.2.2), graphics (>= 4.2.2), utils (>= 4.2.2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-03-13 08:43:51 UTC; Marina
+Author: Marina Leer [aut, cre, cph] (<https://orcid.org/0000-0002-8714-2807>),
+  George Soultoukis [ctb] (<https://orcid.org/0000-0002-7290-1444>),
+  Masoome Oveisi [ctb],
+  German Research Foundation [fnd],
+  German Ministry of Education and Research [fnd],
+  State of Brandenburg [fnd]
+Maintainer: Marina Leer <marina.leer@dife.de>
+Repository: CRAN
+Date/Publication: 2023-03-14 11:00:02 UTC

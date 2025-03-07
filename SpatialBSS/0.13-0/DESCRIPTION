@@ -1,0 +1,47 @@
+Package: SpatialBSS
+Type: Package
+Title: Blind Source Separation for Multivariate Spatial Data
+Version: 0.13-0
+Date: 2022-11-15
+Authors@R: 
+    c(person(given = "Christoph",
+             family = "Muehlmann",
+             role = c("aut", "cre"),
+             email = "christoph.muehlmann@tuwien.ac.at",
+             comment = c(ORCID = "0000-0001-7330-8434")),
+      person(given = "Mika",
+             family = "Sipil<e4>",
+             role = "aut",
+             email = "mika.e.sipila@jyu.fi",
+             comment = c(ORCID = "0000-0002-5912-840X")),
+      person(given = "Klaus",
+             family = "Nordhausen",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-3758-8501")),
+      person(given = "Sara",
+             family = "Taskinen",
+             role = "aut",
+             comment = c(ORCID = "0000-0001-9470-7258")),
+      person(given = "Joni",
+             family = "Virta",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-2150-2769")))
+Maintainer: Christoph Muehlmann <christoph.muehlmann@tuwien.ac.at>
+Description: Blind source separation for multivariate spatial data based on simultaneous/joint diagonalization of (robust) local covariance matrices. This package is an implementation of the methods described in Bachoc, Genton, Nordhausen, Ruiz-Gazen and Virta (2020) <doi:10.1093/biomet/asz079>.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.2), JADE, sp, stats, SpatialNP, distances,
+        robustbase
+Suggests: sf, knitr, rmarkdown, markdown, gstat
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2022-11-15 13:17:47 UTC; cmuehlmann
+Author: Christoph Muehlmann [aut, cre]
+    (<https://orcid.org/0000-0001-7330-8434>),
+  Mika Sipil<e4> [aut] (<https://orcid.org/0000-0002-5912-840X>),
+  Klaus Nordhausen [aut] (<https://orcid.org/0000-0002-3758-8501>),
+  Sara Taskinen [aut] (<https://orcid.org/0000-0001-9470-7258>),
+  Joni Virta [aut] (<https://orcid.org/0000-0002-2150-2769>)
+Repository: CRAN
+Date/Publication: 2022-11-16 12:11:28 UTC

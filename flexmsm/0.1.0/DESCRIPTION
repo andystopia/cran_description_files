@@ -1,0 +1,36 @@
+Package: flexmsm
+Type: Package
+Title: A General Framework for Flexible Multi-State Survival Modelling
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Alessia",
+           family = "Eletti",
+           role = c("aut", "cre"),
+           email = "alessia.eletti.19@ucl.ac.uk"),
+    person(given = "Giampiero",
+           family = "Marra",
+           role = "aut"),
+    person(given = "Rosalba",
+           family = "Radice",
+           role = "aut"))
+Description: A general estimation framework for multi-state Markov processes with flexible specification of the transition intensities.
+    The log-transition intensities can be specified through Generalised Additive Models which allow for virtually any type of covariate
+    effect. Elementary specifications such as time-homogeneous processes and simple parametric forms are also supported. There are 
+    no limitations on the type of process one can assume, with both forward and backward transitions allowed and virtually any number
+    of states.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: GJRM, mgcv, stats, trust, msm, matrixStats, parallel
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-06-21 07:57:03 UTC; Alessia
+Author: Alessia Eletti [aut, cre],
+  Giampiero Marra [aut],
+  Rosalba Radice [aut]
+Maintainer: Alessia Eletti <alessia.eletti.19@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-06-22 18:20:02 UTC

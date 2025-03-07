@@ -1,0 +1,30 @@
+Package: rtrek
+Title: Data Analysis Relating to Star Trek
+Version: 0.4.0
+Authors@R: person("Matthew", "Leonawicz", email = "mfleonawicz@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9452-2771"))
+Description: Provides datasets related to the Star Trek fictional universe and functions for working with the data.
+    The package also provides access to real world datasets based on the televised series and other related licensed media productions.
+    It interfaces with the Star Trek API (STAPI) (<http://stapi.co/>), 
+    Memory Alpha (<https://memory-alpha.fandom.com/wiki/Portal:Main>), and Memory Beta (<https://memory-beta.fandom.com/wiki/Main_Page>) 
+    to retrieve data, metadata and other information relating to Star Trek.
+    It also contains several local datasets covering a variety of topics. 
+    The package also provides functions for working with data from other Star Trek-related 
+    R data packages containing larger datasets not stored in 'rtrek'.
+License: MIT + file LICENSE
+URL: https://github.com/leonawicz/rtrek
+BugReports: https://github.com/leonawicz/rtrek/issues
+Depends: R (>= 2.10)
+Imports: dplyr, jsonlite, xml2, rvest, jpeg, purrr, ggplot2, memoise,
+        tibble, tidyr, downloader
+Suggests: lubridate, testthat, knitr, rmarkdown, leaflet, showtext,
+        sysfonts, trekfont, png
+ByteCompile: true
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-13 18:57:03 UTC; Matt
+Author: Matthew Leonawicz [aut, cre] (<https://orcid.org/0000-0001-9452-2771>)
+Maintainer: Matthew Leonawicz <mfleonawicz@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-14 22:20:06 UTC

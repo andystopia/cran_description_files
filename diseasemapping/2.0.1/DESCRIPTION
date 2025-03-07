@@ -1,0 +1,27 @@
+Package: diseasemapping
+Type: Package
+Title: Modelling Spatial Variation in Disease Risk for Areal Data
+Version: 2.0.1
+Date: 2023-09-17
+Depends: R (>= 3.5.0)
+Imports: stats, utils, terra, methods
+Suggests: mgcv, mapmisc (>= 1.9.0), knitr
+Enhances: INLA, XML
+Authors@R: c(person("Patrick", "Brown", 
+                    role = c("aut", "cre","cph"),
+                     email = "patrick.brown@utoronto.ca"
+                     ),
+             person("Lutong", "Zhou", role = "aut") 
+             )
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+Description: Formatting of population and case data, calculation of Standardized
+    Incidence Ratios, and fitting the BYM model using 'INLA'. For details see Brown (2015) <doi:10.18637/jss.v063.i12>. 
+License: GPL
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-09-17 17:04:59 UTC; patrick
+Author: Patrick Brown [aut, cre, cph],
+  Lutong Zhou [aut]
+Maintainer: Patrick Brown <patrick.brown@utoronto.ca>
+Repository: CRAN
+Date/Publication: 2023-09-17 22:50:13 UTC

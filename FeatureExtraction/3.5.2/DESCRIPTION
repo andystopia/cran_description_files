@@ -1,0 +1,40 @@
+Package: FeatureExtraction
+Type: Package
+Title: Generating Features for a Cohort
+Version: 3.5.2
+Date: 2024-04-24
+Authors@R: c(
+  person("Martijn", "Schuemie", , "schuemie@ohdsi.org", role = c("aut")),
+  person("Marc", "Suchard", role = c("aut")),
+  person("Patrick", "Ryan", role = c("aut")),
+  person("Jenna", "Reps", role = c("aut")),
+  person("Anthony", "Sena", , "sena@ohdsi.org", role = c("aut")),
+  person("Ger", "Inberg", , "g.inberg@erasmusmc.nl", role = c("aut", "cre")),
+  person("Observational Health Data Science and Informatics", role = c("cph"))
+  )
+Maintainer: Ger Inberg <g.inberg@erasmusmc.nl>
+Description: An R interface for generating features for a cohort using data in the Common Data Model. Features can be constructed using default or custom made feature definitions. Furthermore it's possible to aggregate features and get the summary statistics.
+Depends: R (>= 3.5.0), DatabaseConnector (>= 3.0.0), Andromeda
+Imports: methods, dplyr, rJava, jsonlite, SqlRender (>= 1.6.0),
+        ParallelLogger (>= 2.0.2), cli, pillar, readr, rlang, RSQLite,
+        DBI, checkmate
+Suggests: testthat, knitr, rmarkdown, Eunomia (>= 2.0.0), withr, curl,
+        httr
+License: Apache License 2.0
+VignetteBuilder: knitr
+URL: https://github.com/OHDSI/FeatureExtraction
+BugReports: https://github.com/OHDSI/FeatureExtraction/issues
+NeedsCompilation: no
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Language: en-US
+Packaged: 2024-04-30 18:12:51 UTC; ginberg
+Author: Martijn Schuemie [aut],
+  Marc Suchard [aut],
+  Patrick Ryan [aut],
+  Jenna Reps [aut],
+  Anthony Sena [aut],
+  Ger Inberg [aut, cre],
+  Observational Health Data Science and Informatics [cph]
+Repository: CRAN
+Date/Publication: 2024-05-01 18:54:41 UTC

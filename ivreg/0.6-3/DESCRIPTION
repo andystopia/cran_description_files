@@ -1,0 +1,32 @@
+Package: ivreg
+Title: Instrumental-Variables Regression by '2SLS', '2SM', or '2SMM',
+        with Diagnostics
+Version: 0.6-3
+Date: 2024-04-20
+Authors@R: c(person(given = "John", family = "Fox", role = "aut", email = "jfox@mcmaster.ca", comment = c(ORCID = "0000-0002-1196-8012")),
+             person(given = "Christian", family = "Kleiber", role = "aut", email = "Christian.Kleiber@unibas.ch", comment = c(ORCID = "0000-0002-6781-4733")),
+             person(given = "Achim", family = "Zeileis", role = c("aut", "cre"), email = "Achim.Zeileis@R-project.org", comment = c(ORCID = "0000-0003-0918-3766")),
+             person(given = "Nikolas", family = "Kuschnig", role = "ctb", email = "nikolas.kuschnig@wu.ac.at", comment = c(ORCID = "0000-0002-6642-2543")),
+             person(given = "R Core Team", role = "ctb", email = "R-core@R-project.org"))
+Description: Instrumental variable estimation for linear models by two-stage least-squares (2SLS) regression or by robust-regression via M-estimation (2SM) or MM-estimation (2SMM). The main ivreg() model-fitting function is designed to provide a workflow as similar as possible to standard lm() regression. A wide range of methods is provided for fitted ivreg model objects, including extensive functionality for computing and graphing regression diagnostics in addition to other standard model tools.
+License: GPL (>= 2)
+Depends: R (>= 3.6.0)
+Imports: car (>= 3.0-9), Formula, lmtest, MASS, stats
+Suggests: AER, effects (>= 4.2.0), knitr, insight, parallel, rmarkdown,
+        sandwich, testthat, modelsummary, gt, ggplot2
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+BugReports: https://github.com/zeileis/ivreg/issues/
+URL: https://zeileis.github.io/ivreg/
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-20 14:04:34 UTC; zeileis
+Author: John Fox [aut] (<https://orcid.org/0000-0002-1196-8012>),
+  Christian Kleiber [aut] (<https://orcid.org/0000-0002-6781-4733>),
+  Achim Zeileis [aut, cre] (<https://orcid.org/0000-0003-0918-3766>),
+  Nikolas Kuschnig [ctb] (<https://orcid.org/0000-0002-6642-2543>),
+  R Core Team [ctb]
+Maintainer: Achim Zeileis <Achim.Zeileis@R-project.org>
+Repository: CRAN
+Date/Publication: 2024-04-20 15:22:35 UTC

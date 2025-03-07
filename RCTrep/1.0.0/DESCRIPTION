@@ -1,0 +1,27 @@
+Package: RCTrep
+Type: Package
+Title: Validation of Estimates of Treatment Effects in Observational
+        Data
+Version: 1.0.0
+Authors@R: c(person("Lingjie", "Shen", role = c("aut", "cre", "cph"), email = "602249910@qq.com"), person("Gijs","Geleijnse", role = "aut", email = "g.geleijnse@iknl.nl"), person("Maurits","Kaptein", role = "aut", email = "M.C.Kaptein@tilburguniversity.edu"))
+Author: Lingjie Shen [aut, cre, cph],
+  Gijs Geleijnse [aut],
+  Maurits Kaptein [aut]
+Maintainer: Lingjie Shen <602249910@qq.com>
+Description: Validates estimates of (conditional) average treatment effects obtained using observational data by a) making it easy to obtain and visualize estimates derived using a large variety of methods (G-computation, inverse propensity score weighting, etc.), and b) ensuring that estimates are easily compared to a gold standard (i.e., estimates derived from randomized controlled trials). 'RCTrep' offers a generic protocol for treatment effect validation based on four simple steps, namely, set-selection, estimation, diagnosis, and validation. 'RCTrep' provides a simple dashboard to review the obtained results. The validation approach is introduced by Shen, L., Geleijnse, G. and Kaptein, M. (2023) <doi:10.21203/rs.3.rs-2559287/v1>.
+License: MIT + file LICENSE
+URL: https://github.com/duolajiang/RCTrep
+Encoding: UTF-8
+LazyData: true
+Imports: mvtnorm, MASS, MatchIt, ggplot2, ggpubr, PSweight, numDeriv,
+        R6, dplyr, geex, optmatch, BART, fastDummies, tidyr, copula,
+        shiny, shinydashboard, glue, stats, utils, caret
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Depends: R (>= 2.10), base
+NeedsCompilation: no
+Packaged: 2023-03-29 02:47:01 UTC; lsh1901.47873
+Repository: CRAN
+Date/Publication: 2023-03-29 08:10:02 UTC

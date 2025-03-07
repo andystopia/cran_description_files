@@ -1,0 +1,27 @@
+Package: pysparklyr
+Title: Provides a 'PySpark' Back-End for the 'sparklyr' Package
+Version: 0.1.2
+Authors@R: c(
+    person("Edgar", "Ruiz", , "edgar@posit.co", role = c("aut", "cre")),
+    person(given = "Posit Software, PBC", role = c("cph", "fnd"))
+    )
+Description: It enables 'sparklyr' to integrate with 'Spark Connect', and
+    'Databricks Connect' by providing a wrapper over the 'PySpark' 'python'
+    library.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, DBI, dplyr, dbplyr, glue, purrr, reticulate (>= 1.33),
+        methods, rlang, sparklyr (>= 1.8.4), tidyselect, fs, magrittr,
+        tidyr, vctrs, processx, httr2, rstudioapi
+URL: https://github.com/mlverse/pysparklyr
+BugReports: https://github.com/mlverse/pysparklyr/issues
+Suggests: crayon, R6, testthat (>= 3.0.0), tibble, withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-05 18:36:27 UTC; edgar
+Author: Edgar Ruiz [aut, cre],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Edgar Ruiz <edgar@posit.co>
+Repository: CRAN
+Date/Publication: 2023-12-06 00:40:02 UTC

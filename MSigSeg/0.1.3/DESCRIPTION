@@ -1,0 +1,28 @@
+Package: MSigSeg
+Type: Package
+Title: Common Change Points Detection for Multiple Signals
+Version: 0.1.3
+Authors@R: c(person("Xuanyu", "Liu", role = c("aut", "cre"), email = "lxy382198251@stu.xjtu.edu.cn"), person("Junbo", "Duan", role = "aut"))
+Description: Traditional change points detection methods do not have  ability in detecting optimal common change points for multi-signal.
+    This package implements common change points detection for multiple signals, can be used in bioinformatics, economics and many other fields.
+    Unlike detecting single signals independently, this package can detect optimal common change points with more sensitivity and specificity.
+    After receiving the collected signal, this method selects the number of change points and the original matrix according to the actual situation, solves the minimization optimization problem based on different input parameters, obtains the position of change points and processed signal.
+    The fun_segmentation_PELT(), fun_lambda_estimator() functions are the main functions of this package.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Collate: 'MSigSeg_Class.R' 'allGenerics.R' 'brkps_method.R' 'data.R'
+        'data.input_method.R' 'data.output_method.R' 'fun_change.R'
+        'fun_lambda_estimator.R' 'fun_segmentation_PELT.R'
+        'funtion_colsum_colmean.R' 'lambda_method.R' 'noisegen.R'
+        'print_method.R' 'seg.len_method.R' 'summary_method.R'
+Depends: R (>= 4.0.0), methods
+Imports: MASS
+NeedsCompilation: no
+Packaged: 2023-06-06 08:23:35 UTC; lxy123
+Author: Xuanyu Liu [aut, cre],
+  Junbo Duan [aut]
+Maintainer: Xuanyu Liu <lxy382198251@stu.xjtu.edu.cn>
+Repository: CRAN
+Date/Publication: 2023-06-07 13:20:08 UTC

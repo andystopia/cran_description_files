@@ -1,0 +1,36 @@
+Package: grandR
+Version: 0.2.0
+Title: Comprehensive Analysis of Nucleotide Conversion Sequencing Data
+Authors@R: c(
+    person("Florian", "Erhard", email = "Florian.Erhard@uni-wuerzburg.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3574-6983")),
+    person("Teresa", "Rummel", email = "Teresa.Rummel@uni-wuerzburg.de", role = "ctb"),
+    person("Lygeri", "Sakellaridi", email = "Lygeri.Sakellaridi@uni-wuerzburg.de", role = "ctb")
+    )
+Description: Nucleotide conversion sequencing experiments have been
+  developed to add a temporal dimension to RNA-seq and single-cell RNA-seq. Such 
+  experiments require specialized tools for primary processing such as GRAND-SLAM,
+  (see 'Jürges et al' <doi:10.1093/bioinformatics/bty256>) and specialized tools for 
+  downstream analyses. 'grandR' provides a comprehensive toolbox for quality control,
+  kinetic modeling, differential gene expression analysis and visualization of such data.
+Author: Florian Erhard [aut, cre] (<https://orcid.org/0000-0002-3574-6983>),
+  Teresa Rummel [ctb],
+  Lygeri Sakellaridi [ctb]
+Maintainer: Florian Erhard <Florian.Erhard@uni-wuerzburg.de>
+License: Apache License (>= 2)
+Encoding: UTF-8
+URL: https://github.com/erhard-lab/grandR
+BugReports: https://github.com/erhard-lab/grandR/issues
+Imports: stats, Matrix, ggplot2, grDevices, patchwork, plyr, parallel,
+        reshape2, MASS, cowplot, minpack.lm, lfc, methods, utils,
+        numDeriv
+Suggests: knitr, rmarkdown, circlize, Seurat, ComplexHeatmap, ggrepel,
+        RCurl, DESeq2, clusterProfiler, msigdbr, fgsea, rclipboard,
+        cubature, lamW, DT, RColorBrewer, eulerr, gsl, htmltools,
+        labeling, matrixStats, monocle, VGAM, quantreg, rlang,
+        graphics, scales, shiny
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-09-19 11:24:31 UTC; erhard
+Repository: CRAN
+Date/Publication: 2022-09-20 07:56:10 UTC

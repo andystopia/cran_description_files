@@ -1,0 +1,37 @@
+Package: DQAstats
+Title: Core Functions for Data Quality Assessment
+Version: 0.3.3
+Date: 2023-07-20
+Authors@R: c(
+    person("Lorenz A.", "Kapsner", , "lorenz.kapsner@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0003-1866-860X")),
+    person("Jonathan M.", "Mang", role = "aut",
+           comment = c(ORCID = "0000-0003-0518-4710")),
+    person("MIRACUM - Medical Informatics in Research and Care in University Medicine", role = "fnd"),
+    person("Universitätsklinikum Erlangen", role = "cph")
+  )
+Description: Perform data quality assessment ('DQA') of electronic health
+    records ('EHR'). Publication: Kapsner et al. (2021)
+    <doi:10.1055/s-0041-1733847>.
+License: GPL-3
+URL: https://github.com/miracum/dqa-dqastats
+BugReports: https://github.com/miracum/dqa-dqastats/issues
+Imports: data.table, DIZtools (>= 0.0.8), DIZutils (>= 0.1.2), future,
+        future.apply, jsonlite, kableExtra, knitr, magrittr, parsedate,
+        rmarkdown, stats, tinytex, utils
+Suggests: DT, lintr, remotes, testthat
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-07-20 15:50:23 UTC; user
+Author: Lorenz A. Kapsner [cre, aut] (<https://orcid.org/0000-0003-1866-860X>),
+  Jonathan M. Mang [aut] (<https://orcid.org/0000-0003-0518-4710>),
+  MIRACUM - Medical Informatics in Research and Care in University
+    Medicine [fnd],
+  Universitätsklinikum Erlangen [cph]
+Maintainer: Lorenz A. Kapsner <lorenz.kapsner@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-07-20 17:02:46 UTC

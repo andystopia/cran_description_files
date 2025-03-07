@@ -1,0 +1,42 @@
+Type: Package
+Package: incase
+Title: Pipe-Friendly Vector Replacement with Case Statements
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Alexander",
+             family = "Rossell Hayes",
+             role = c("aut", "cre", "cph"),
+             email = "alexander@rossellhayes.com",
+             comment = c(ORCID = "0000-0001-9412-0457")),
+      person(given = "Patrice",
+             family = "Kiener",
+             role = "ctb",
+             email = "fattailsr@inmodelia.com",
+             comment = c("Contributed example for fn_case()", ORCID = "0000-0002-0505-9920")))
+Description: Offers a pipe-friendly alternative to the 'dplyr' functions
+    case_when() and if_else(), as well as a number of user-friendly
+    simplifications for common use cases.  These functions accept a vector
+    as an optional first argument, allowing conditional statements to be
+    built using the 'magrittr' dot operator.  The functions also coerce
+    all outputs to the same type, meaning you no longer have to worry
+    about using specific typed variants of NA or explicitly declaring
+    integer outputs, and evaluate outputs somewhat lazily, so you don't
+    waste time on long operations that won't be used.
+License: MIT + file LICENSE
+URL: https://incase.rossellhayes.com,
+        https://github.com/rossellhayes/incase
+BugReports: https://github.com/rossellhayes/incase/issues
+Imports: backports, magrittr, plu, rlang
+Suggests: covr, crayon, dplyr, nombre, stringi, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-04-03 18:46:26 UTC; Alex
+Author: Alexander Rossell Hayes [aut, cre, cph]
+    (<https://orcid.org/0000-0001-9412-0457>),
+  Patrice Kiener [ctb] (Contributed example for fn_case(),
+    <https://orcid.org/0000-0002-0505-9920>)
+Maintainer: Alexander Rossell Hayes <alexander@rossellhayes.com>
+Repository: CRAN
+Date/Publication: 2021-04-03 19:00:07 UTC

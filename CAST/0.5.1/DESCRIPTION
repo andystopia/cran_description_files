@@ -1,0 +1,32 @@
+Package: CAST
+Type: Package
+Title: 'caret' Applications for Spatial-Temporal Models
+Version: 0.5.1
+Authors@R: c(person("Hanna", "Meyer", email = "hanna.meyer@uni-muenster.de", role = c("cre", "aut")),
+             person("Chris", "Reudenbach", role = c("ctb")),
+             person("Marvin", "Ludwig", role = c("ctb")),
+             person("Thomas", "Nauss", role = c("ctb")),
+             person("Edzer", "Pebesma", role = c("ctb")))
+Author: Hanna Meyer [cre, aut],
+  Chris Reudenbach [ctb],
+  Marvin Ludwig [ctb],
+  Thomas Nauss [ctb],
+  Edzer Pebesma [ctb]
+Maintainer: Hanna Meyer <hanna.meyer@uni-muenster.de>
+Description: Supporting functionality to run 'caret' with spatial or spatial-temporal data. 'caret' is a frequently used package for model training and prediction using machine learning. This package includes functions to improve spatial-temporal modelling tasks using 'caret'. It prepares data for Leave-Location-Out and Leave-Time-Out cross-validation which are target-oriented validation strategies for spatial-temporal models. To decrease overfitting and improve model performances, the package implements a forward feature selection that selects suitable predictor variables in view to their contribution to the target-oriented performance. CAST further includes functionality to estimate the (spatial) area of applicability of prediction models by analysing the similarity between new data and training data.
+License: GPL (>= 2)
+URL: https://github.com/HannaMeyer/CAST
+Encoding: UTF-8
+LazyData: false
+Depends: R (>= 3.5.0)
+Imports: caret, stats, utils, ggplot2, graphics, reshape, FNN, plyr,
+        zoo, methods, grDevices, data.table, lattice
+Suggests: doParallel, randomForest, lubridate, raster, sp, knitr,
+        mapview, rmarkdown, sf, scales, parallel, latticeExtra,
+        virtualspecies, gridExtra, viridis, rgeos, stars, scam
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-04-07 07:55:11 UTC; hanna
+Repository: CRAN
+Date/Publication: 2021-04-07 13:20:17 UTC

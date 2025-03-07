@@ -1,0 +1,48 @@
+Package: dwctaxon
+Title: Edit and Validate Darwin Core Taxon Data
+Version: 2.0.2
+Authors@R: 
+    c(
+      person(given = "Joel H.",
+           family = "Nitta",
+           role = c("aut", "cre", "cph"),
+           email = "joelnitta@gmail.com",
+           comment = c(ORCID = "0000-0003-4719-7472")),
+      person(given = "Wataru",
+           family = "Iwasaki",
+           role = c("ctb"),
+           comment = c(ORCID = "0000-0002-9169-9245")),
+      person("Collin", "Schwantes", role = "rev",
+           comment = "Collin reviewed the package (v. 1.0.0.9000) for rOpenSci, see <https://github.com/ropensci/software-review/issues/574>"),
+      person("Stephen", "Formel", role = "rev",
+           comment = "Stephen reviewed the package (v. 1.0.0.9000) for rOpenSci, see <https://github.com/ropensci/software-review/issues/574>")
+    )
+Description: Edit and validate taxonomic data in compliance with Darwin Core
+    standards (Darwin Core 'Taxon' class <https://dwc.tdwg.org/terms/#taxon>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: assertthat, digest, dplyr, glue, purrr, rlang, settings,
+        stringr, tibble
+Suggests: testthat (>= 3.0.0), mockery, readr, usethis, knitr,
+        rmarkdown, patrick, stringi, english, tidyr, utils
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+URL: https://docs.ropensci.org/dwctaxon/,
+        https://github.com/ropensci/dwctaxon
+BugReports: https://github.com/ropensci/dwctaxon/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-30 00:59:18 UTC; joelnitta
+Author: Joel H. Nitta [aut, cre, cph] (<https://orcid.org/0000-0003-4719-7472>),
+  Wataru Iwasaki [ctb] (<https://orcid.org/0000-0002-9169-9245>),
+  Collin Schwantes [rev] (Collin reviewed the package (v. 1.0.0.9000) for
+    rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/574>),
+  Stephen Formel [rev] (Stephen reviewed the package (v. 1.0.0.9000) for
+    rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/574>)
+Maintainer: Joel H. Nitta <joelnitta@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-30 10:40:02 UTC

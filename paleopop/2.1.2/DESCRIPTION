@@ -1,0 +1,40 @@
+Package: paleopop
+Type: Package
+Title: Pattern-Oriented Modeling Framework for Coupled Niche-Population
+        Paleo-Climatic Models
+Version: 2.1.2
+Authors@R: c(
+    person("Sean", "Haythorne", email = "sean.haythorne@adelaide.edu.au", role = c("aut")),
+    person("Julia", "Pilowsky", email = "julia.pilowsky@adelaide.edu.au", role = c("aut", "cre"),
+    comment = c(ORCID = "https://orcid.org/0000-0002-6376-2585")),
+    person("Stuart", "Brown", email = "s.brown@adelaide.edu.au", role = c("aut"),
+    comment = c(ORCID = "https://orcid.org/0000-0002-0669-1418")),
+    person("Damien", "Fordham", email = "damien.fordham@adelaide.edu.au", role = c("aut"),
+    comment = c(ORCID = "https://orcid.org/0000-0003-2137-5592")))
+Maintainer: Julia Pilowsky <julia.pilowsky@adelaide.edu.au>
+URL: https://github.com/GlobalEcologyLab/paleopop/
+BugReports: https://github.com/GlobalEcologyLab/paleopop/issues
+Description: This extension of the poems pattern-oriented modeling (POM) framework
+    provides a collection of modules and functions customized for paleontological
+    time-scales, and optimized for single-generation transitions and large populations,
+    across multiple generations.
+Depends: R (>= 3.6.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: poems (>= 1.0.0), R6 (>= 2.5.0), sf (>= 0.9)
+Collate: data.R PaleoPopModel.R PaleoPopResults.R PaleoRegion.R
+        paleopop_simulator.R paleopop.R region_subset.R
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, markdown, dplyr,
+        raster
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-10-14 01:01:40 UTC; Julia Pilowsky
+Author: Sean Haythorne [aut],
+  Julia Pilowsky [aut, cre] (<https://orcid.org/0000-0002-6376-2585>),
+  Stuart Brown [aut] (<https://orcid.org/0000-0002-0669-1418>),
+  Damien Fordham [aut] (<https://orcid.org/0000-0003-2137-5592>)
+Repository: CRAN
+Date/Publication: 2021-10-14 04:20:02 UTC

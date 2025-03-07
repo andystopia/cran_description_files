@@ -1,0 +1,30 @@
+Type: Package
+Package: LikertMakeR
+Title: Synthesise and Correlate Rating-Scale Data
+Version: 0.3.0
+Authors@R: 
+    person("Hume", "Winzar", , "winzar@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0001-7475-2641"))
+Description: Synthesise rating-scale data with predefined first & second
+    moments (mean & standard deviation) and, optionally, correlate
+    multiple vectors with predefined correlation matrix.  Also generate
+    synthetic rating-scale data with predefined Cronbach's Alpha, or
+    generate rating-scale items from a predefined scale.
+License: MIT + file LICENSE
+URL: https://github.com/WinzarH/LikertMakeR
+BugReports: https://github.com/WinzarH/LikertMakeR/issues
+Depends: R (>= 4.2.0)
+Imports: dplyr, gtools, Rcpp
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-05-19 09:54:41 UTC; winza
+Author: Hume Winzar [cre, aut] (<https://orcid.org/0000-0001-7475-2641>)
+Maintainer: Hume Winzar <winzar@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-19 13:00:06 UTC

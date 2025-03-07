@@ -1,0 +1,38 @@
+Package: MAFDash
+Type: Package
+Title: Create an HTML Dashboard to Visualize Data from MAF File
+Version: 0.1.0
+Authors@R: c(
+    person("Mayank", "Tandon", role = c("aut"), email = "mayank.tandon@nih.gov"),
+    person("Ashish", "Jain", role = c("aut", "cre"), email = "ashish.jain2@nih.gov"),
+    person("Frederick National Laboratory For Cancer Research", role = c("cph"))
+    )
+Description: Mutation Annotation Format (MAF) is a tabular data format used for storing genetic mutation data. 
+    For example, The Cancer Genome Atlas (TCGA) project has made MAF files from each project publicly available.
+    This package contains a set of tools to easily create an HTML dashboard to summarize and visualize data from MAF file.
+    The resulting HTML file serves as a self-contained report that can be used to explore the result.
+    Mayank Tandon & Ashish Jain (2020) <doi:10.5281/zenodo.4472978>.
+License: GPL
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0), rmarkdown (>= 2.5.0), knitr (>= 1.3), htmltools
+        (>= 0.5.0), ggplot2 (>= 2.3.3), TCGAbiolinks (>= 2.14.1)
+Imports: DT (>= 0.16.0), flexdashboard (>= 0.5.2), maftools (>= 2.0.0),
+        bsplus (>= 0.1.2), crosstalk (>= 1.1.0), plotly (>= 4.9.2),
+        canvasXpress (>= 1.29.0), dplyr (>= 1.0.2), ComplexHeatmap (>=
+        2.2.0), circlize (>= 0.4.11), RColorBrewer (>= 1.1.0),
+        ggbeeswarm (>= 0.6.0), ensurer (>= 1.1.0), data.table (>=
+        1.13.2), reshape2 (>= 1.4.4), GenomicRanges (>= 1.38.0),
+        IRanges (>= 2.20.0), pheatmap (>= 1.0.0)
+URL: https://github.com/ashishjain1988/MAFDash/
+Suggests: jsonlite
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-02-02 01:53:26 UTC; jaina13
+Author: Mayank Tandon [aut],
+  Ashish Jain [aut, cre],
+  Frederick National Laboratory For Cancer Research [cph]
+Maintainer: Ashish Jain <ashish.jain2@nih.gov>
+Repository: CRAN
+Date/Publication: 2021-02-08 09:20:09 UTC

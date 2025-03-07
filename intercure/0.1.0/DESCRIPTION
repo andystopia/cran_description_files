@@ -1,0 +1,26 @@
+Package: intercure
+Type: Package
+Title: Cure Rate Estimators for Interval Censored Data
+Version: 0.1.0
+Date: 2016-01-02
+Authors@R: person("Julio", "Brettas", email = "jbrettas@ime.usp.br",
+  role = c("aut", "cre"))
+URL: https://github.com/JBrettas/intercure
+BugReports: https://github.com/JBrettas/intercure/issues
+Maintainer: Julio Brettas <jbrettas@ime.usp.br>
+Description: Implementations of semiparametric cure rate estimators for interval
+    censored data in R. The algorithms are based on the promotion time and
+    frailty models, all for interval censoring. For the frailty model,
+    there is also a implementation contemplating clustered data.
+License: GPL-2 | GPL-3
+LazyData: TRUE
+Imports: foreach, survival, MASS, stats4, Matrix, iterators, parallel
+Suggests: testthat, knitr, rmarkdown, doParallel
+Depends: R (>= 2.10)
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-01-12 01:02:43 UTC; Julio
+Author: Julio Brettas [aut, cre]
+Repository: CRAN
+Date/Publication: 2016-01-12 08:12:06

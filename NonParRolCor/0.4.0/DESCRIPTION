@@ -1,0 +1,20 @@
+Package: NonParRolCor
+Type: Package
+Title: a Non-Parametric Statistical Significance Test for Rolling
+        Correlation
+Version: 0.4.0
+Authors@R: c(person(given = "Josue M.", family = "Polanco-Martinez", role = c("aut", "cph", "cre"), email = "josue.m.polanco@gmail.com", comment = c(ORCID = "0000-0001-7164-0185")), person(given = "Jose L.", family = "Lopez-Martinez", role = c("ctb"), email = "jose.lopez@correo.uady.mx", comment = c(ORCID = "0000-0002-2489-7559")))
+Maintainer: Josue M. Polanco-Martinez <josue.m.polanco@gmail.com>
+Depends: R (>= 3.5.0), gtools, pracma, colorspace, doParallel
+Imports: foreach, scales
+Description: Estimates and plots (as a heat map) the statistical significance of rolling window correlation coefficients, which is carried out through a non-parametric computing-intensive method. This method addresses the effects due to the multiple testing (inflation of the Type I error) when the statistical significance is estimated for the rolling window correlation coefficients. The method is based on Monte Carlo simulations by permuting one of the variables (dependent) under analysis and keeping fixed the other variable (independent). We improve the computational efficiency of this method to reduce the computation time through parallel computing. The 'NonParRolCor' package also provides examples with synthetic and real-life ecological time series to exemplify its use. Methods derived from R. Telford (2013) <https://quantpalaeo.wordpress.com/2013/01/04/> and J.M. Polanco-Martinez (2020) <doi:10.1016/j.ecoinf.2020.101163>.
+License: GPL (>= 2)
+Repository: CRAN
+Encoding: UTF-8
+LazyData: true
+Date/Publication: 2021-03-31 09:00:05 UTC
+NeedsCompilation: no
+Packaged: 2021-03-30 10:37:43 UTC; jomopo
+Author: Josue M. Polanco-Martinez [aut, cph, cre]
+    (<https://orcid.org/0000-0001-7164-0185>),
+  Jose L. Lopez-Martinez [ctb] (<https://orcid.org/0000-0002-2489-7559>)

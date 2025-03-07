@@ -1,0 +1,28 @@
+Package: metaheur
+Type: Package
+Title: Metaheuristic Optimization Framework for Preprocessing
+        Combinations
+Version: 0.2.0
+Date: 2016-6-30
+Author: Markus Vattulainen
+Maintainer: Markus Vattulainen <markus.vattulainen@gmail.com>
+Description: Automation of preprocessing often requires computationally costly
+    preprocessing combinations. This package helps to find near-best combinations
+    faster. Metaheuristics supported are taboo search, simulated annealing, reheating
+    and late acceptance. Start conditions include random and grid starts. End conditions
+    include all iteration rounds completed, objective threshold reached and convergence.
+    Metaheuristics, start and end conditions can be hybridized and hyperparameters optimized.
+    Parallel computations are supported. The package is intended to be used with package
+    'preprocomb' and takes its 'GridClass' object as input.
+License: GPL-2
+LazyData: TRUE
+Depends: R (>= 2.10)
+Imports: utils, methods, stats, reshape2, ggplot2, preprocomb (>=
+        0.3.0), doParallel, foreach
+Suggests: testthat, knitr, rmarkdown, rpart
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-06-30 05:40:37 UTC; Markus
+Repository: CRAN
+Date/Publication: 2016-06-30 12:14:14

@@ -1,0 +1,41 @@
+Package: OptHoldoutSize
+Title: Estimation of Optimal Size for a Holdout Set for Updating a
+        Predictive Score
+Version: 0.0.0.1
+Authors@R: 
+  c(person(given = "Sami",
+           family = "Haidar-Wehbe",
+           role = c("aut"),
+           email = "sami.haidar96@gmail.com"),
+    person(given = "Sam",
+           family = "Emerson",
+           role = c("aut"),
+           email = "samuel.r.emerson@durham.ac.uk",
+           comment = c(ORCID = "0000-0002-8379-2781")),
+    person(given = "Louis",
+           family = "Aslett",
+           role = c("aut"),
+           email = "louis.aslett@durham.ac.uk",
+           comment = c(ORCID = "0000-0003-2211-233X")),
+    person(given = "James",
+           family = "Liley",
+           role = c("cre","aut"),
+           email = "james.liley@durham.ac.uk",
+           comment = c(ORCID = "0000-0002-0049-8238")))
+Maintainer: James Liley <james.liley@durham.ac.uk>
+Description: Predictive scores must be updated with care, because actions taken on the basis of existing risk scores causes bias in risk estimates from the updated score. A holdout set is a straightforward way to manage this problem: a proportion of the population is 'held-out' from computation of the previous risk score. This package provides tools to estimate a size for this holdout set and associated errors. Comprehensive vignettes are included.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), matrixStats, mnormt, mvtnorm, ranger, mle.tools
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-02-08 16:46:30 UTC; vwbw55
+Author: Sami Haidar-Wehbe [aut],
+  Sam Emerson [aut] (<https://orcid.org/0000-0002-8379-2781>),
+  Louis Aslett [aut] (<https://orcid.org/0000-0003-2211-233X>),
+  James Liley [cre, aut] (<https://orcid.org/0000-0002-0049-8238>)
+Repository: CRAN
+Date/Publication: 2022-02-09 09:50:08 UTC

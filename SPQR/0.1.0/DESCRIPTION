@@ -1,0 +1,31 @@
+Package: SPQR
+Type: Package
+Title: Semi-Parametric Quantile Regression
+Version: 0.1.0
+Date: 2022-4-26
+Archs: x64
+Authors@R: c(person("Steven", "Xu", email = "sgxu@ncsu.edu", role = c("aut","cre")), 
+             person("Reetam", "Majumder", email = "rmajumd3@ncsu.edu", role = c("aut")),
+             person("Brian", "Reich", email = "bjreich@ncsu.edu", role = c("ctb")))
+Description: Methods for flexible estimation of conditional density and quantile function, as well as model agnostic tools for analyzing quantile covariate effect and variable importance. The estimation method implements the semi-parametric quantile regression model described in Xu and Reich (2021) <doi:10.1111/biom.13576>, and the model agnostic tools extend accumulative local effects (ALE) to quantile regression setting.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Depends: R (>= 3.6)
+Imports: Rcpp (>= 1.0.8), stats, torch, splines2, ggplot2, loo,
+        progress, progressr, interp, RColorBrewer, yaImpute, coro (>=
+        1.0.2)
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+SystemRequirements: C++11
+Author: Steven Xu [aut, cre],
+  Reetam Majumder [aut],
+  Brian Reich [ctb]
+Maintainer: Steven Xu <sgxu@ncsu.edu>
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/stevengxu/SPQR
+BugReports: https://github.com/stevengxu/SPQR/issues
+Packaged: 2022-04-29 19:08:35 UTC; 15306
+Repository: CRAN
+Date/Publication: 2022-05-02 20:02:03 UTC

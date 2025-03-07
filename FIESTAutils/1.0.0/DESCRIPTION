@@ -1,0 +1,43 @@
+Package: FIESTAutils
+Type: Package
+Title: Utility Functions for Forest Inventory Estimation and Analysis
+Version: 1.0.0
+Date: 2022-02-15
+Authors@R: 
+    c(person(given = "Tracey",
+             family = "Frescino",
+             role = "aut",
+             email = "tracey.frescino@usda.gov"),
+      person(given = "Chris",
+             family = "Toney",
+             role = "aut",
+             email = "chris.toney@usda.gov"),
+      person(given = "Grayson",
+             family = "White",
+             role = c("aut", "cre"),
+             email = "graysonwhite13@gmail.com"))
+Description: A set of tools for data wrangling, spatial data analysis,
+    statistical modeling (including direct, model-assisted, photo-based, and
+    small area tools), and USDA Forest Service data base tools. These tools are
+    aimed to help Foresters, Analysts, and Scientists extract and perform
+    analyses on USDA Forest Service data.
+Depends: R (>= 3.5.0)
+Imports: data.table, DBI, graphics, hbsae, JoSAE, mase, methods, nlme,
+        Rcpp, RColorBrewer, rgdal, RPostgreSQL, RSQLite, sae, sf, sp,
+        sqldf, stats, units, utils, xml2
+Suggests: knitr
+License: MIT + file LICENSE
+URL: https://github.com/USDAForestService/FIESTAutils
+BugReports: https://github.com/USDAForestService/FIESTAutils/issues
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2022-02-25 00:21:30 UTC; graysonwhite
+Author: Tracey Frescino [aut],
+  Chris Toney [aut],
+  Grayson White [aut, cre]
+Maintainer: Grayson White <graysonwhite13@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-28 19:30:08 UTC

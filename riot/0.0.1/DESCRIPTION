@@ -1,0 +1,46 @@
+Package: riot
+Title: R Inputs/Outputs for Tractography
+Version: 0.0.1
+Authors@R: c(
+    person(
+        given = "Aymeric",
+        family = "Stamm",
+        role = c("aut", "cre"),
+        email = "aymeric.stamm@math.cnrs.fr",
+        comment = c(ORCID = "0000-0002-8725-3654")
+    ),
+    person(
+        given = "Jeroen",
+        family = "Ooms",
+        role = "ctb"
+    ),
+    person(
+        given = "Lee", 
+        family = "Thomason", 
+        role = "ctb", 
+        comment = "Author of the TinyXML2 C++ XML parser"
+    ))
+Description: An input-output interface for reading in and writing out common 
+    VTK formats that store tractography data. This data comes in the form of 3D 
+    polygons with possibly attributes at each point. These are obtained via 
+    tracking algorithms from diffusion MRI and are a non-invasive way of 
+    studying brain structural connectivity.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+LinkingTo: Rcpp
+Imports: Rcpp, readr, fs, cli, rlang
+URL: https://github.com/astamm/riot
+BugReports: https://github.com/astamm/riot/issues
+Suggests: covr, testthat (>= 3.0.0), withr, tibble
+SystemRequirements: cmake (>= 3.15.0) used only but systematically on
+        macOS and Linux platforms to build VTK from source.
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-05-04 09:13:05 UTC; stamm-a
+Author: Aymeric Stamm [aut, cre] (<https://orcid.org/0000-0002-8725-3654>),
+  Jeroen Ooms [ctb],
+  Lee Thomason [ctb] (Author of the TinyXML2 C++ XML parser)
+Maintainer: Aymeric Stamm <aymeric.stamm@math.cnrs.fr>
+Repository: CRAN
+Date/Publication: 2022-05-05 09:40:02 UTC

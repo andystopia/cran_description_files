@@ -1,0 +1,34 @@
+Package: ARPALData
+Type: Package
+Title: Retrieving, Managing and Analysing Air Quality and Weather Data
+        for Lombardy (Italy) using ARPA Lombardia Open Database
+Version: 1.3.0
+Description: Contains functions for retrieving, managing and analysing air quality and weather data from Regione Lombardia open database (<https://www.dati.lombardia.it/>).
+    Data are collected by ARPA Lombardia (Lombardia Environmental Protection Agency), Italy, through its ground monitoring network.
+    See the webpage <https://www.arpalombardia.it/Pages/ARPA_Home_Page.aspx> for further information on ARPA Lombardia's activities and history.
+    Data quality (e.g. missing values, exported values, graphical mapping) has been checked involving members of the ARPA Lombardia's office for air quality control.
+    The package makes available observations since 1989 (for weather) and 1996 (for air quality) and are updated with daily frequency by the regional agency.
+License: GPL (>= 2)
+Imports:
+        RSocrata,tidyselect,dplyr,utils,lubridate,magrittr,rlang,readr,stringi,stringr,tm,tidyr,purrr,eurostat,sf,ggplot2,tibble,data.table,aweek,parallel,doParallel,moments,mondate
+Suggests: tidyverse
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Authors@R: 
+    c(person(given = "Paolo",
+             family = "Maranzano",
+             role = c("aut", "cre", "cph"),
+             email = "pmaranzano.ricercastatistica@gmail.com",
+             comment = c(ORCID = "0000-0002-9228-2759")),
+      person(given = "Andrea",
+             family = "Algieri",
+             role = c("aut", "cph"),
+             email = "a.algieri@arpalombardia.it"))
+NeedsCompilation: no
+Packaged: 2023-02-27 15:17:16 UTC; paulm
+Author: Paolo Maranzano [aut, cre, cph]
+    (<https://orcid.org/0000-0002-9228-2759>),
+  Andrea Algieri [aut, cph]
+Maintainer: Paolo Maranzano <pmaranzano.ricercastatistica@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-27 19:42:47 UTC

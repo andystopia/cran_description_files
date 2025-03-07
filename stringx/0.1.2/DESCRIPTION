@@ -1,0 +1,40 @@
+Package: stringx
+Type: Package
+Title: Drop-in Replacements for Base String Functions Powered by
+        'stringi'
+Version: 0.1.2
+Date: 2021-07-27
+Authors@R: c(
+    person("Marek", "Gagolewski",
+        role = c("aut", "cre", "cph"),
+        email = "marek@gagolewski.com",
+        comment = c(ORCID = "0000-0003-0637-6028"))
+    )
+Description: English is the native language for only 5% of the World population.
+    Also, only 17% of us can understand this text. Moreover, the Latin alphabet
+    is the main one for merely 36% of the total.
+    The early computer era, now a very long time ago, was dominated by the US.
+    Due to the proliferation of the internet, smartphones, social media, and
+    other technologies and communication platforms, this is no longer the case.
+    This package replaces base R string functions (such as grep(),
+    tolower(), and sprintf()) with ones that fully
+    support the Unicode standards related to natural language processing,
+    fixes some long-standing inconsistencies, and introduces
+    some new, useful features.
+    Thanks to 'ICU' (International Components for Unicode) and 'stringi',
+    they are fast, reliable, and portable across different platforms.
+BugReports: https://github.com/gagolews/stringx/issues
+URL: https://stringx.gagolewski.com/
+License: GPL (>= 2)
+Depends: R (>= 4.1.0)
+Imports: stringi (>= 1.7.2)
+Suggests: realtest (>= 0.2.1)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-07-27 08:26:13 UTC; gagolews
+Author: Marek Gagolewski [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0637-6028>)
+Maintainer: Marek Gagolewski <marek@gagolewski.com>
+Repository: CRAN
+Date/Publication: 2021-07-28 10:50:02 UTC

@@ -1,0 +1,31 @@
+Package: parquetize
+Type: Package
+Title: Convert Files to Parquet Format
+Version: 0.5.1
+Authors@R: 
+    c(person(given = "Damien",
+             family = "Dotta",
+             role = c("aut", "cre"),
+             email = "damien.dotta@live.fr"))
+Description: Collection of functions to get files in parquet format.
+    Parquet is a columnar storage file format <https://parquet.apache.org/>. 
+    The files to convert can be of several formats 
+    ("csv", "RData", "rds", "RSQLite", 
+    "json", "ndjson", "SAS", "SPSS"...).
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+URL: https://ddotta.github.io/parquetize/,
+        https://github.com/ddotta/parquetize
+BugReports: https://github.com/ddotta/parquetize/issues
+RoxygenNote: 7.2.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: haven, arrow, curl, readr, dplyr, jsonlite, DBI, RSQLite, cli
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-01-23 12:07:23 UTC; AQEW8W
+Author: Damien Dotta [aut, cre]
+Maintainer: Damien Dotta <damien.dotta@live.fr>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2023-01-30 19:20:02 UTC

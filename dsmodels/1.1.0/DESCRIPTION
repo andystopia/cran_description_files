@@ -1,0 +1,37 @@
+Package: dsmodels
+Type: Package
+Title: A Language to Facilitate Simulation and Visualization of
+        Two-Dimensional Dynamical Systems
+Version: 1.1.0
+Authors@R: c(
+         person("Charles", "Stein", email = "cstein1@trinity.edu", role = c("aut", "cre")),
+         person("Seth", "Fogarty", email = "sfogarty@trinity.edu", role = c("aut"))
+        )
+Description: An expressive language to facilitate simulation and visualization
+    of two-dimensional dynamical systems. The basic elements of the language are
+    a model wrapping around a function(x,y) which outputs a list(x
+    = xprime, y = yprime), and a range. The language supports three
+    types of visual objects: visualizations, features, and backgrounds. Visualizations, including dots and arrows,
+    depict the behavior of the dynamical system over the entire range.
+    Features display
+    user-defined curves and points, and their images under the system.
+    Backgrounds define and color regions of interest, such as basins of attraction.
+    The language
+    can also approximate attractors and their basins through simulation.
+License: GPL-2 | file LICENSE
+Depends: R (>= 3.1.0)
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Collate: 'dsproto.R' 'axeslabel.R' 'dsarrows.R' 'dscurve.R' 'dsdots.R'
+        'dsmodel.R' 'dspoint.R' 'dsrange.R' 'dsregion.R'
+        'dssimulation.R' 'features.R' 'modelConstruction.R'
+Imports: shape, graphics, grDevices, latex2exp, pryr
+BugReports: https://github.com/Trinity-Automata-Research/dsmodels/issues
+URL: https://github.com/Trinity-Automata-Research/dsmodels
+NeedsCompilation: no
+Packaged: 2017-07-22 03:22:25 UTC; cstein
+Author: Charles Stein [aut, cre],
+  Seth Fogarty [aut]
+Maintainer: Charles Stein <cstein1@trinity.edu>
+Repository: CRAN
+Date/Publication: 2017-07-22 06:37:56 UTC

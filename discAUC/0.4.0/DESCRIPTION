@@ -1,0 +1,36 @@
+Package: discAUC
+Type: Package
+Title: Linear and Non-Linear AUC for Discounting Data
+Description: Area under the curve (AUC; Myerson et al., 2001) <doi:10.1901/jeab.2001.76-235> 
+  is a popular measure used in discounting research. Although the calculation of
+  AUC is standardized, there are differences in AUC based on some assumptions. 
+  For example, Myerson et al. (2001) <doi:10.1901/jeab.2001.76-235> 
+  assumed that (with delay discounting data) a researcher would impute an
+  indifference point at zero delay equal to the value of the larger, later outcome.
+  However, this practice is not clearly followed. This imputed zero-delay indifference
+  point plays an important role in log and ordinal versions of AUC.
+  Ordinal and log versions of AUC are described by Borges et al. (2016)<doi:10.1002/jeab.219>. 
+  The package can calculate all three versions of AUC [and includes a new version: IHS(AUC)],
+  impute indifference points when x = 0, calculate ordinal AUC in the case of Halton
+  sampling of x-values, and account for probability discounting AUC.
+Version: 0.4.0
+Authors@R: person(given = "Jonathan E.",
+  family = "Friedel",
+  email = "jfriedel@georgiasouthern.edu",
+  comment = c(ORCID = "https://orcid.org/0000-0002-1516-330X"),
+  role = c("aut","cre"))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat
+Imports: dplyr, tibble, rlang, glue
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-01 14:13:05 UTC; jfriedel
+Author: Jonathan E. Friedel [aut, cre]
+    (<https://orcid.org/0000-0002-1516-330X>)
+Maintainer: Jonathan E. Friedel <jfriedel@georgiasouthern.edu>
+Repository: CRAN
+Date/Publication: 2021-06-02 07:40:05 UTC

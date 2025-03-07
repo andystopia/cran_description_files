@@ -1,0 +1,76 @@
+Package: brms.mmrm
+Title: Bayesian MMRMs using 'brms'
+Version: 1.0.0
+Authors@R: c(
+  person(
+    given = c("William", "Michael"),
+    family = "Landau",
+    role = c("aut", "cre"),
+    email = "will.landau.oss@gmail.com",
+    comment = c(ORCID = "0000-0003-1878-3253")
+  ),
+  person(
+    given = "Kevin",
+    family = "Kunzmann",
+    role = "aut",
+    email = "kevin.kunzmann@boehringer-ingelheim.com",
+    comment = c(ORCID = "0000-0002-1140-7143")
+  ),
+  person(
+    given = "Yoni",
+    family = "Sidi",
+    role = "aut",
+    email = "yoni.sidi@sagerx.com"
+  ),
+  person(
+    given = "Christian",
+    family = "Stock",
+    role = "aut",
+    email = "christian.stock@boehringer-ingelheim.com",
+    comment = c(ORCID = "0000-0002-3493-3234")
+  ),
+  person(
+    family = "Eli Lilly and Company",
+    role = c("cph", "fnd")
+  ),
+  person(
+    "Boehringer Ingelheim Pharma GmbH & Co. KG",
+    role = c("cph", "fnd")
+  ))
+Description: The mixed model for repeated measures (MMRM) is a popular
+  model for longitudinal clinical trial data with continuous endpoints,
+  and 'brms' is a powerful and versatile package for fitting Bayesian
+  regression models.  The 'brms.mmrm' R package leverages 'brms' to run
+  MMRMs, and it supports a simplified interfaced to reduce difficulty
+  and align with the best practices of the life sciences.  References:
+  Bürkner (2017) <doi:10.18637/jss.v080.i01>, Mallinckrodt (2008)
+  <doi:10.1177/009286150804200402>.
+License: MIT + file LICENSE
+URL: https://openpharma.github.io/brms.mmrm/,
+        https://github.com/openpharma/brms.mmrm
+BugReports: https://github.com/openpharma/brms.mmrm/issues
+Depends: R (>= 4.0.0)
+Imports: brms (>= 2.19.0), dplyr, ggplot2, ggridges, MASS, posterior,
+        purrr, rlang, stats, tibble, tidyr, tidyselect, trialr, utils,
+        zoo
+Suggests: BH, emmeans (>= 1.8.7), fst, gt, gtsummary, knitr (>= 1.30),
+        markdown (>= 1.1), mmrm, parallel, Rcpp, RcppEigen,
+        RcppParallel, rmarkdown (>= 2.4), rstan, StanHeaders, testthat
+        (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-04 12:09:06 UTC; C240390
+Author: William Michael Landau [aut, cre]
+    (<https://orcid.org/0000-0003-1878-3253>),
+  Kevin Kunzmann [aut] (<https://orcid.org/0000-0002-1140-7143>),
+  Yoni Sidi [aut],
+  Christian Stock [aut] (<https://orcid.org/0000-0002-3493-3234>),
+  Eli Lilly and Company [cph, fnd],
+  Boehringer Ingelheim Pharma GmbH & Co. KG [cph, fnd]
+Maintainer: William Michael Landau <will.landau.oss@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-04 20:50:06 UTC

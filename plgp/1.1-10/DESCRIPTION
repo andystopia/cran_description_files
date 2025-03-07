@@ -1,0 +1,33 @@
+Package: plgp
+Type: Package
+Title: Particle Learning of Gaussian Processes
+Version: 1.1-10
+Date: 2022-04-18
+Author: Robert B. Gramacy <rbg@vt.edu>
+Maintainer: Robert B. Gramacy <rbg@vt.edu>
+Description: Sequential Monte Carlo (SMC) inference for fully Bayesian
+  Gaussian process (GP) regression and classification models by
+  particle learning (PL) following Gramacy & Polson (2011) <arXiv:0909.5262>.
+  The sequential nature of inference
+  and the active learning (AL) hooks provided facilitate thrifty 
+  sequential design (by entropy) and optimization
+  (by improvement) for classification and
+  regression models, respectively.
+  This package essentially provides a generic
+  PL interface, and functions (arguments to the interface) which
+  implement the GP models and AL heuristics.  Functions for 
+  a special, linked, regression/classification GP model and 
+  an integrated expected conditional improvement (IECI) statistic 
+  provide for optimization in the presence of unknown constraints.
+  Separable and isotropic Gaussian, and single-index correlation
+  functions are supported.
+  See the examples section of ?plgp and demo(package="plgp") 
+  for an index of demos.
+Depends: R (>= 2.4), mvtnorm, tgp
+Suggests: ellipse, splancs, akima
+License: LGPL
+URL: https://bobby.gramacy.com/r_packages/plgp/
+NeedsCompilation: yes
+Packaged: 2022-04-18 13:24:40 UTC; bobby
+Repository: CRAN
+Date/Publication: 2022-04-18 14:00:01 UTC

@@ -1,0 +1,27 @@
+Package: brclimr
+Title: Fetch Zonal Statistics of Weather Indicators for Brazilian
+        Municipalities
+Version: 0.1.0
+Authors@R: 
+    person("Raphael", "Saldanha", , "raphael.de-freitas-saldanha@inria.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0652-8466"))
+Description: Fetches zonal statistics from weather indicators that were calculated for each municipality in Brazil using data from the BR-DWGD and TerraClimate projects.
+    Zonal statistics such as mean, maximum, minimum, standard deviation, and sum were computed by taking into account the data cells that intersect the boundaries of each municipality and stored in Parquet files. This procedure was carried out for all Brazilian municipalities, and for all available dates, for every indicator available in the weather products (BR-DWGD and TerraClimate projects). This package queries on-line the already calculated statistics on the Parquet files and returns easy-to-use data.frames.
+License: MIT + file LICENSE
+URL: https://rfsaldanha.github.io/brclimr/,
+        https://github.com/rfsaldanha/brclimr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: checkmate, DBI, duckdb, ggplot2, glue, knitr, lobstr,
+        rmarkdown
+Suggests: testthat (>= 3.0.0), spelling
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyData: true
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-03-06 13:26:41 UTC; raphaelsaldanha
+Author: Raphael Saldanha [aut, cre] (<https://orcid.org/0000-0003-0652-8466>)
+Maintainer: Raphael Saldanha <raphael.de-freitas-saldanha@inria.fr>
+Repository: CRAN
+Date/Publication: 2023-03-07 07:00:06 UTC

@@ -1,0 +1,25 @@
+Package: pubprint
+Version: 0.1.1
+Date: 2016-01-28
+Title: Printing Results of Statistical Computing in a Publishable Way
+Description: Takes the output of statistical tests and transforms it in a publish-friendly pattern. Currently only APA style is supported with output to HTML, LaTeX, Markdown and plain text. It is easily extendable and can be used well with 'knitr'.
+Author: Rudolf Siegel [aut, cre]
+Maintainer: Rudolf Siegel <rs.os@t-online.de>
+Authors@R: c(person("Rudolf", "Siegel",
+    role = c("aut", "cre"),
+    email = "rs.os@t-online.de"))
+URL: https://bitbucket.org/mutluyum/pubprint/
+BugReports: https://bitbucket.org/mutluyum/pubprint/issues/
+License: BSD_2_clause + file LICENSE
+VignetteBuilder: knitr
+Depends: R (>= 3.0.2)
+Imports: stringr
+Suggests: knitr, testthat
+Collate: 'utils.R' 'style_default.R' 'style_apa.R' 'style.R'
+        'out_plain.R' 'out_default.R' 'out_html.R' 'out_markdown.R'
+        'out_latex.R' 'out.R' 'defaults.R' 'io.R' 'pubprint.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-01-28 15:54:45 UTC; fire
+Repository: CRAN
+Date/Publication: 2016-01-28 20:45:39

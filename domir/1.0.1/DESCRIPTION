@@ -1,0 +1,36 @@
+Package: domir
+Title: Tools to Support Relative Importance Analysis
+Version: 1.0.1
+Date: 2023-4-22
+Authors@R: 
+    person(given = "Joseph",
+           family = "Luchman",
+           role = c("aut", "cre"),
+           email = "jluchman@gmail.com",
+           comment = c(ORCID = "0000-0002-8886-9717"))
+Description: Methods to apply decomposition-based relative importance 
+  analysis for R functions. This package supports the application of 
+  decomposition methods by providing 'lapply'- or 'Map'-like meta-functions that 
+  compute dominance analysis (Azen, R., & Budescu, D. V. (2003) 
+  <doi:10.1037/1082-989X.8.2.129>; Grömping, U. (2007) 
+  <doi:10.1198/000313007X188252>) or Shapley value regression 
+  (Lipovetsky, S., & Conklin, M. (2001) <doi:10.1002/asmb.446>)
+  based on the values returned from other functions.
+Imports: stats, utils
+Suggests: dplyr, forcats, Formula, ggplot2, knitr, parameters,
+        performance, purrr, relaimpo, rlang, rmarkdown, stringr,
+        testthat (>= 3.0.0), tidyr
+License: GPL (>= 3)
+URL: https://github.com/jluchman/domir
+BugReports: https://github.com/jluchman/domir/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-04-24 18:29:35 UTC; josephluchman
+Author: Joseph Luchman [aut, cre] (<https://orcid.org/0000-0002-8886-9717>)
+Maintainer: Joseph Luchman <jluchman@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-24 20:00:03 UTC

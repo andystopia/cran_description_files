@@ -1,0 +1,25 @@
+Package: marble
+Type: Package
+Title: Robust Marginal Bayesian Variable Selection for Gene-Environment
+        Interactions
+Version: 0.0.1
+Date: 2023-04-06
+Authors@R: c( person("Xi", "Lu", role = c("aut", "cre"),
+                      email = "xilu@ksu.edu"),
+              person("Cen", "Wu", role = "aut"))
+Description: Recently, multiple marginal variable selection methods have been developed and shown to be effective in Gene-Environment interactions studies. We propose a novel marginal Bayesian variable selection method for Gene-Environment interactions studies. In particular, our marginal Bayesian method is robust to data contamination and outliers in the outcome variables. With the incorporation of spike-and-slab priors, we have implemented the Gibbs sampler based on Markov Chain Monte Carlo. The core algorithms of the package have been developed in 'C++'.
+Depends: R (>= 3.5.0)
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/xilustat/marble
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, stats
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Repository: CRAN
+Packaged: 2023-04-28 20:24:37 UTC; grimf
+Author: Xi Lu [aut, cre],
+  Cen Wu [aut]
+Maintainer: Xi Lu <xilu@ksu.edu>
+Date/Publication: 2023-05-02 08:20:05 UTC

@@ -1,0 +1,30 @@
+Package: UncerIn2
+Version: 2.0
+Date: 2015-11-10
+Type: Package
+Title: Implements Models of Uncertainty into the Interpolation
+        Functions
+Author: Tomas Burian <Buri777@seznam.cz>
+Maintainer: Tomas Burian <Buri777@seznam.cz>
+Description: Provides a basic (random) data, grids, 6 models of uncertainty, 3 automatic interpolations (idw, spline, kriging), variogram and basic data visualization.
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 3.0.0), sp, RandomFields, automap, fields, gstat
+Imports: geoR, methods, stats, Rcpp, utils
+Collate: 'class-01-Points.R' 'class-02-UncertainPoints.R'
+        'class-03-UncertainInterpolation.R'
+        'class-04-FuzzyInterpolation.R' 'class-05-Variogram.R'
+        'methods-as.data.frame.R' 'methods-as.UncertainPoints.R'
+        'methods-uncertaintyConstant.R' 'methods-uncertaintyError.R'
+        'methods-uncertaintyPercent.R'
+        'methods-uncertaintyRandomDeviate.R'
+        'methods-uncertaintyRandomNumber.R'
+        'methods-uncertaintyRandomPercent.R' 'methods-Grid.R'
+        'methods-idwUncertain.R' 'methods-splineUncertain.R'
+        'methods-krigingUncertain.R' 'methods-variogram.R'
+        'methods-plot.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2015-11-24 16:27:58 UTC; Tom<c3><a1><c5><a1>
+Repository: CRAN
+Date/Publication: 2015-11-24 18:37:19

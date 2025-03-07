@@ -1,0 +1,48 @@
+Package: mlr3cluster
+Title: Cluster Extension for 'mlr3'
+Version: 0.1.10
+Authors@R: c(
+    person("Damir", "Pulatov", , "damirpolat@protonmail.com", role = c("cre", "aut")),
+    person("Michel", "Lang", , "michellang@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9754-0393")),
+    person("Maximilian", "Mücke", role = "ctb",
+           comment = c(ORCID = "0009-0000-9432-9795"))
+  )
+Description: Extends the 'mlr3' package with cluster analysis.
+License: LGPL-3
+URL: https://mlr3cluster.mlr-org.com,
+        https://github.com/mlr-org/mlr3cluster
+BugReports: https://github.com/mlr-org/mlr3cluster/issues
+Depends: mlr3 (>= 0.21.0), R (>= 3.1.0)
+Imports: backports (>= 1.1.10), checkmate, clue, cluster, data.table,
+        fpc, mlr3misc (>= 0.14.0), paradox (>= 1.0.0), R6, stats
+Suggests: apcluster, ClusterR (>= 1.3.1), dbscan, e1071, kernlab, LPCM,
+        mclust, mlbench, RWeka, stream, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'LearnerClust.R' 'zzz.R' 'LearnerClustAffinityPropagation.R'
+        'LearnerClustAgnes.R' 'LearnerClustBICO.R'
+        'LearnerClustBIRCH.R' 'LearnerClustCMeans.R'
+        'LearnerClustCobweb.R' 'LearnerClustDBSCAN.R'
+        'LearnerClustDBSCANfpc.R' 'LearnerClustDiana.R'
+        'LearnerClustEM.R' 'LearnerClustFanny.R'
+        'LearnerClustFarthestFirst.R' 'LearnerClustFeatureless.R'
+        'LearnerClustHDBSCAN.R' 'LearnerClustHclust.R'
+        'LearnerClustKKMeans.R' 'LearnerClustKMeans.R'
+        'LearnerClustMclust.R' 'LearnerClustMeanShift.R'
+        'LearnerClustMiniBatchKMeans.R' 'LearnerClustOPTICS.R'
+        'LearnerClustPAM.R' 'LearnerClustSimpleKMeans.R'
+        'LearnerClustXMeans.R' 'MeasureClust.R' 'measures.R'
+        'MeasureClustInternal.R' 'PredictionClust.R'
+        'PredictionDataClust.R' 'TaskClust.R' 'TaskClust_ruspini.R'
+        'TaskClust_usarrest.R' 'as_prediction_clust.R'
+        'as_task_clust.R' 'bibentries.R' 'helper.R'
+NeedsCompilation: no
+Packaged: 2024-10-03 16:12:50 UTC; marc
+Author: Damir Pulatov [cre, aut],
+  Michel Lang [aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Maximilian Mücke [ctb] (<https://orcid.org/0009-0000-9432-9795>)
+Maintainer: Damir Pulatov <damirpolat@protonmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-03 23:00:24 UTC

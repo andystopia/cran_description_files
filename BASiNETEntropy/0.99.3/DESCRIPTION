@@ -1,0 +1,37 @@
+Package: BASiNETEntropy
+Title: Classification of RNA Sequences using Complex Network and
+        Information Theory
+Version: 0.99.3
+Authors@R: c(
+        person("Murilo Montanini", "Breve", 
+        email = "murilo_breve@hotmail.com",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-5781-0480")),
+        person("Matheus Henrique", "Pimenta-Zanon", 
+        email = "matheus.pimenta@outlook.com",
+        role = "aut",
+        comment = c(ORCID = "0000-0003-0698-6360")),
+        person("Fabricio Martins", "Lopes", 
+        email = "fabricio@utfpr.edu.br",
+        role = c("aut","cre"),
+        comment = c(ORCID = "0000-0002-8786-3313")))
+Description: It makes the creation of networks from sequences of RNA, with this is done the abstraction of characteristics of these networks with a methodology of maximum entropy for the purpose of making a classification between the classes of the sequences. There are two data present in the 'BASiNET' package, "mRNA", and "ncRNA" with 100 sequences. These sequences were taken from the data set used in the article (LI, Aimin; ZHANG, Junying; ZHOU, Zhongyin, 2014) <doi:10.1186/1471-2105-15-311>, these sequences are used to run examples. 
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: igraph, Biostrings, randomForest
+biocViews: Software, BiologicalQuestion, GenePrediction,
+        FunctionalPrediction, Network, Classification
+RoxygenNote: 7.2.0
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-07-05 21:05:00 UTC; matheuspimenta
+Author: Murilo Montanini Breve [aut] (<https://orcid.org/0000-0002-5781-0480>),
+  Matheus Henrique Pimenta-Zanon [aut]
+    (<https://orcid.org/0000-0003-0698-6360>),
+  Fabricio Martins Lopes [aut, cre]
+    (<https://orcid.org/0000-0002-8786-3313>)
+Maintainer: Fabricio Martins Lopes <fabricio@utfpr.edu.br>
+Repository: CRAN
+Date/Publication: 2022-07-05 22:10:02 UTC

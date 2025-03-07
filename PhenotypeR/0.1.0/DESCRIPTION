@@ -1,0 +1,45 @@
+Package: PhenotypeR
+Type: Package
+Title: Assess Study Cohorts Using a Common Data Model
+Version: 0.1.0
+Authors@R: c(
+    person("Edward", "Burn", , "edward.burn@ndorms.ox.ac.uk", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9286-1128")),
+    person("Marti", "Catala", , "marti.catalasabate@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0000-0003-3308-9905")),
+    person("Xihang", "Chen", , "xihang.chen@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0001-8112-8959")),
+    person("Marta", "Alcalde-Herraiz", , "marta.alcaldeherraiz@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0002-4405-1814")),
+    person("Albert", "Prats-Uribe", , "albert.prats-uribe@ndorms.ox.ac.uk", 
+    role = "aut", comment = c(ORCID = "0000-0003-1202-9153")))
+Description: Phenotype study cohorts in data mapped to the 
+    Observational Medical Outcomes Partnership Common Data Model. Diagnostics 
+    are run at the database, code list, cohort, and population level to assess 
+    whether study cohorts are ready for research.
+License: Apache License (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Suggests: CDMConnector (>= 1.6.1), duckdb, DBI, gt, omock, testthat (>=
+        3.0.0), knitr, visOmopResults (>= 0.5.0), glue, RPostgres,
+        PatientProfiles (>= 1.2.2), ggplot2, ggpubr, stringr, shiny,
+        DiagrammeR, sortable, shinycssloaders, here, DT, bslib,
+        shinyWidgets, plotly, tidyr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Imports: CodelistGenerator (>= 3.3.1), CohortCharacteristics (>=
+        0.4.0), CohortConstructor (>= 0.3.2), cli, dplyr,
+        IncidencePrevalence (>= 0.9.0), omopgenerics (>= 0.4.0),
+        OmopSketch (>= 0.1.2), magrittr, purrr, rlang, vctrs, usethis
+URL: https://ohdsi.github.io/PhenotypeR/
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-04 13:42:21 UTC; eburn
+Author: Edward Burn [aut, cre] (<https://orcid.org/0000-0002-9286-1128>),
+  Marti Catala [aut] (<https://orcid.org/0000-0003-3308-9905>),
+  Xihang Chen [aut] (<https://orcid.org/0009-0001-8112-8959>),
+  Marta Alcalde-Herraiz [aut] (<https://orcid.org/0009-0002-4405-1814>),
+  Albert Prats-Uribe [aut] (<https://orcid.org/0000-0003-1202-9153>)
+Maintainer: Edward Burn <edward.burn@ndorms.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-12-06 09:10:05 UTC

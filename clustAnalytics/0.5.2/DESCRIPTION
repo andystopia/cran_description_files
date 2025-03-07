@@ -1,0 +1,27 @@
+Package: clustAnalytics
+Type: Package
+Title: Cluster Evaluation on Graphs
+Version: 0.5.2
+Date: 2022-11-09
+Author: Martí Renedo Mirambell
+Maintainer: Martí Renedo Mirambell <marti.renedo@gmail.com>
+Description: Evaluates the stability and significance of clusters on 'igraph' graphs.
+    Supports weighted and unweighted graphs. Implements the cluster evaluation methods
+    defined by Arratia A, Renedo M (2021) <doi:10.7717/peerj-cs.600>. Also includes an
+    implementation of the Reduced Mutual Information introduced by Newman et al. (2020) 
+    <doi:10.1103/PhysRevE.101.042304>.
+License: GPL (>= 3)
+Imports: Rcpp (>= 1.0.1), mcclust, mclust, truncnorm, boot, fossil,
+        dplyr, Rdpack
+LinkingTo: Rcpp
+RdMacros: Rdpack
+RoxygenNote: 7.1.2
+Suggests: igraphdata, knitr, rmarkdown, testthat,
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 2.10), igraph
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2022-11-09 10:18:21 UTC; blaug
+Repository: CRAN
+Date/Publication: 2022-11-09 11:50:09 UTC

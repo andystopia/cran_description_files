@@ -1,0 +1,42 @@
+Package: flps
+Type: Package
+Title: Fully-Latent Principal Stratification
+Version: 0.1.0
+Date: 2023-4-23
+Authors@R: 
+    c(person(given = "Sooyong",
+             family = "Lee",
+             role = c("aut", "cre"),
+             email = "sooyongl09@gmail.com"),
+	  person(given = "Adam",
+             family = "Sales",
+             role = "aut"),
+    person(given = "Hyeon-Ah",
+           family = "Kang",
+           role = "aut"),
+    person(given = "Tiffany",
+           family = "Whittaker",
+           role = "aut")
+    )
+Description: Simulation and analysis of Fully-Latent Principal Stratification (FLPS) with measurement models. Sales & Pane (2019). <doi:10.1214/18-AOAS1196>.
+License: GPL-3
+Imports: rstan, Rcpp (>= 1.0.8.3), methods, mirt, MASS, utils, stats,
+        mvtnorm, ggplot2
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, lavaan, data.table
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Collate: 'flps-package.r' 'load_rstan.r' 'make_FLPSdata.r' 'run_FLPS.r'
+        'priors.r' 'sim_gen_measurement.r' 'sim_gen_structure.r'
+        'sim_gen_standata.r' 'sim_make_data.r' 'z_utils.r'
+        'z_validate.r' 'plot_function.r' 'summary_function.r' 'zzz.r'
+URL: https://sooyongl.github.io/flps/
+NeedsCompilation: no
+Packaged: 2023-05-04 12:09:59 UTC; sooyong
+Author: Sooyong Lee [aut, cre],
+  Adam Sales [aut],
+  Hyeon-Ah Kang [aut],
+  Tiffany Whittaker [aut]
+Maintainer: Sooyong Lee <sooyongl09@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-05 09:20:12 UTC

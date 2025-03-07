@@ -1,0 +1,26 @@
+Package: bayespm
+Version: 0.1.0
+Title: Bayesian Statistical Process Monitoring
+Authors@R: c(person("Dimitrios", "Kiagias", 
+             role = c("aut", "cre", "cph"), 
+             email = "d.kiagias@sheffield.ac.uk"),
+             person("Konstantinos", "Bourazas", 
+             role = c("aut", "cph"), 
+             email = "bourazas.konstantinos@ucy.ac.cy"),
+             person("Panagiotis", "Tsiamyrtzis", 
+             role = c("aut", "cph"), 
+             email = "panagiotis.tsiamyrtzis@polimi.it"))
+Author: Dimitrios Kiagias [aut, cre, cph],
+  Konstantinos Bourazas [aut, cph],
+  Panagiotis Tsiamyrtzis [aut, cph]
+Maintainer: Dimitrios Kiagias <d.kiagias@sheffield.ac.uk>
+Description: The methods utilize available prior information and/or historical data, providing efficient online quality monitoring of a process, in terms of identifying moderate/large transient shifts (i.e., outliers) in the process. These self-starting, sequentially updated tools can also run under complete absence of any prior information. The Predictive Control Chart (PCC) mechanism is introduced for the quality monitoring of data from any discrete or continuous distribution that is a member of the regular exponential family. Apart from monitoring, PCC allows also to derive sequentially updated posterior inference for the monitored parameter. Bourazas K., Kiagias D. and Tsiamyrtzis P. (2022) "Predictive Control Charts (PCC): A Bayesian approach in online monitoring of short runs" <doi:10.1080/00224065.2021.1916413>.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: grDevices, stats, ggplot2, grid, gridExtra, extraDistr,
+        rmutil, invgamma
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-07-03 05:55:28 UTC; dimitris
+Repository: CRAN
+Date/Publication: 2023-07-05 14:03:06 UTC

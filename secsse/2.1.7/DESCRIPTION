@@ -1,0 +1,42 @@
+Package: secsse
+Type: Package
+Title: Several Examined and Concealed States-Dependent Speciation and
+        Extinction
+Version: 2.1.7
+Date: 2021-07-13
+License: GPL-3
+Authors@R: c(
+ person(given = "Leonel",
+        family = "Herrera Alsina",
+        email = "leonelhalsina@gmail.com",
+        role = "aut"),
+ person(given = "Paul",
+        family = "van Els",
+        email = "paulvanels@gmail.com",
+        role = "aut"),
+ person(given = "Rampal S.",
+        family = "Etienne",
+        email = "r.s.etienne@rug.nl",
+        role = c("cre","aut"),
+        comment = c(ORCID = "0000-0003-2142-7612")))
+Description: Simultaneously infers state-dependent diversification across
+ two or more states of a single or multiple traits while accounting for the
+ role of a possible concealed trait. See Herrera-Alsina et al. 2019
+ Systematic Biology 68: 317-328 <DOI:10.1093/sysbio/syy057>.  
+Depends: R (>= 3.5.0)
+Imports: utils, DDD (>= 4.0), ape, foreach, doParallel, apTreeshape,
+        phylobase, geiger, deSolve
+Suggests: diversitree, phytools, testthat, testit, knitr, rmarkdown
+Enhances: doMC
+NeedsCompilation: yes
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Packaged: 2021-07-14 07:44:52 UTC; rampa
+Author: Leonel Herrera Alsina [aut],
+  Paul van Els [aut],
+  Rampal S. Etienne [cre, aut] (<https://orcid.org/0000-0003-2142-7612>)
+Maintainer: Rampal S. Etienne <r.s.etienne@rug.nl>
+Repository: CRAN
+Date/Publication: 2021-07-16 07:30:05 UTC

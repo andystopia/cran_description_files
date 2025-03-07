@@ -1,0 +1,25 @@
+Package: ratematrix
+Title: Bayesian Estimation of the Evolutionary Rate Matrix
+Version: 1.2.3
+Authors@R: c(
+    person("Daniel", "Caetano", email = "caetanods1@gmail.com", role = c("aut", "cre")),
+    person("Luke", "Harmon", email = "lukeh@uidaho.edu", role = "aut") )
+Description: The Evolutionary Rate Matrix is a variance-covariance matrix which describes both the rates of trait evolution and the evolutionary correlation among multiple traits. This package has functions to estimate these parameters using Bayesian MCMC. It is possible to test if the pattern of evolutionary correlations among traits has changed between predictive regimes painted along the branches of the phylogenetic tree. Regimes can be created a priori or estimated as part of the MCMC under a joint estimation approach. The package has functions to run MCMC chains, plot results, evaluate convergence, and summarize posterior distributions.
+URL: https://github.com/Caetanods/ratematrix
+License: GPL (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: ape, geiger, coda, corpcor, MASS, phylolm, readr, mvMORPH,
+        Rcpp, ellipse
+Suggests: knitr, rmarkdown, phytools, markdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2021-02-24 11:37:51 UTC; daniel
+Author: Daniel Caetano [aut, cre],
+  Luke Harmon [aut]
+Maintainer: Daniel Caetano <caetanods1@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-24 13:40:02 UTC

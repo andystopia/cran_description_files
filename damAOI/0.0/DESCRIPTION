@@ -1,0 +1,31 @@
+Package: damAOI
+Title: Create an 'Area of Interest' Around a Constructed Dam for
+        Comparative Impact Evaluations
+Version: 0.0
+Authors@R: c(
+    person("Chris", "Littleboy", , "chris.littleboy@stir.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3293-7987")),
+    person("Isabel", "Jones", , "i.l.jones@stir.ac.uk", role = c("ctb", "fnd"))
+  )
+Description: Define a spatial 'Area of Interest' (AOI) around a constructed dam using hydrology data.
+  Dams have environmental and social impacts, both positive and negative.
+  Current analyses of dams have no consistent way to specify at what spatial extent we should evaluate these impacts.
+  'damAOI' implements methods to adjust reservoir polygons to match satellite-observed surface water areas, plot upstream and downstream rivers using elevation data and accumulated river flow, and draw buffers clipped by river basins around reservoirs and relevant rivers. 
+  This helps to consistently determine the areas which could be impacted by dam construction, facilitating comparative analysis and informed infrastructure investments.
+License: GPL (>= 3)
+Depends: R (>= 4.0)
+Imports: dplyr, FNN, magrittr, sf, units, smoothr, terra, tibble,
+        tidyr, shiny, leaflet, shinydashboard
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-02-06 14:26:47 UTC; chris
+Author: Chris Littleboy [aut, cre] (<https://orcid.org/0000-0002-3293-7987>),
+  Isabel Jones [ctb, fnd]
+Maintainer: Chris Littleboy <chris.littleboy@stir.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-02-07 18:00:02 UTC

@@ -1,0 +1,45 @@
+Type: Package
+Package: binaryTimeSeries
+Title: Analyzes a Binary Variable During a Time Series
+Version: 1.0.2
+Authors@R: 
+  c(person(given = "Thomas Mumuni",
+           family = "Bilintoh",
+           role = c("aut", "cre"),
+           email = "tbilintoh@clarku.edu",
+           comment = c(ORCID = "0000-0002-6852-4439")),
+    person(given = "Robert Gilmore",
+           family = "Pontius Jr",
+           role = "aut",
+           comment = c(ORCID = "0000-0001-7287-5875")))
+Description: A procedure to create maps, pie charts, and stacked bar plots 
+    showing the trajectory of a binary variable during a time series. 
+    You provide a time series of data sets as a stack of raster files or a 
+    data frame and call the various functions in 'binaryTimeSeries' to create 
+    your desired graphics.For more information please consult: 
+    Pontius Jr, R. G. (2022). "Metrics That Make a Difference: 
+    How to Analyze Change and Error" Springer Nature Switzerland AG
+    <doi:10.1007/978-3-030-70765-1> and 
+    Bilintoh, T.M., (2022). "Intensity Analysis to Study the Dynamics of 
+    reforestation in the Rio Doce Water Basin, Brazil". 
+    Frontiers in Remote Sensing, 3 (873341), 13. 
+    <doi:10.3389/frsen.2022.873341>. 
+License: AGPL (>= 3)
+Depends: R (>= 3.3.0), rgdal
+Imports: dplyr, ggnewscale, ggplot2, graphics, grDevices, magrittr,
+        mice, prettymapr, raster, reshape2, stats, terra, utils
+Suggests: knitr, maptools, rmarkdown, spelling
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-07-16 23:36:56 UTC; TBilintoh
+Author: Thomas Mumuni Bilintoh [aut, cre]
+    (<https://orcid.org/0000-0002-6852-4439>),
+  Robert Gilmore Pontius Jr [aut]
+    (<https://orcid.org/0000-0001-7287-5875>)
+Maintainer: Thomas Mumuni Bilintoh <tbilintoh@clarku.edu>
+Repository: CRAN
+Date/Publication: 2022-07-18 12:10:15 UTC

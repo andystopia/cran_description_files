@@ -1,0 +1,34 @@
+Package: idealstan
+Type: Package
+Title: Generalized IRT Ideal Point Models with 'Stan'
+Version: 0.5.1
+Date: 2018-11-26
+Authors@R: c(person("Robert","Kubinec", role = c("aut","cre"),
+                     email = "rmk7@nyu.edu"),
+              person("Jonah", "Gabry", role = "ctb"),
+              person("Ben", "Goodrich", role = "ctb"),
+              person("Trustees of Columbia University",role='cph'))
+BugReports: https://github.com/saudiwin/idealstan/issues
+Description: Offers item-response theory (IRT) ideal-point estimation for binary, ordinal, counts and continuous responses with time-varying and missing-data inference. Full and approximate Bayesian sampling with 'Stan' (www.mc-stan.org). 
+License: GPL
+Depends: methods, R (>= 3.4.0), Rcpp (>= 0.12.18)
+Imports: rstan (>= 2.18.2), rstantools (>= 1.5.1), dplyr, tidyr,
+        stringr, bayesplot, ggplot2, lazyeval, rlang, shinystan,
+        gghighlight, forcats, ggrepel
+Suggests: pscl, loo, lubridate, R.rsp
+LinkingTo: StanHeaders (>= 2.18.0), rstan (>= 2.18.2), BH (>= 1.66),
+        Rcpp (>= 0.12.7), RcppEigen (>= 0.3.2.9.0)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+SystemRequirements: GNU make
+VignetteBuilder: R.rsp
+RoxygenNote: 6.1.0
+Packaged: 2018-12-06 21:26:50 UTC; rkubinec
+Author: Robert Kubinec [aut, cre],
+  Jonah Gabry [ctb],
+  Ben Goodrich [ctb],
+  Trustees of Columbia University [cph]
+Maintainer: Robert Kubinec <rmk7@nyu.edu>
+Repository: CRAN
+Date/Publication: 2018-12-06 21:50:04 UTC

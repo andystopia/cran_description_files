@@ -1,0 +1,23 @@
+Package: sklarsomega
+Type: Package
+Title: Measuring Agreement Using Sklar's Omega Coefficient
+Version: 3.0-1
+Date: 2021-11-04
+Author: John Hughes <drjphughesjr@gmail.com>
+Maintainer: John Hughes <drjphughesjr@gmail.com>
+Imports: extraDistr, hash, LaplacesDemon, Matrix, mcmcse, numDeriv,
+        spam, dfoptim
+Suggests: lattice, parallel, pbapply
+Description: Provides tools for applying Sklar's Omega (Hughes, 2018) <arXiv:1803.02734>
+    methodology to nominal scores, ordinal scores, percentages, counts, amounts (i.e.,
+    non-negative real numbers), and balances (i.e., any real number). The framework can
+    accommodate any number of units, any number of coders, and missingness; and
+    can be used to measure agreement with a gold standard, intra-coder agreement,
+    and/or inter-coder agreement. Frequentist inference is supported for all levels
+    of measurement. Bayesian inference is supported for continuous scores only.
+License: GPL (>= 2)
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-11-05 13:04:21 UTC; jphughesjr
+Repository: CRAN
+Date/Publication: 2021-11-06 14:50:02 UTC

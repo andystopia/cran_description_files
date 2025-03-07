@@ -1,0 +1,23 @@
+Package: TDA
+Type: Package
+Title: Statistical Tools for Topological Data Analysis
+Version: 1.8.8
+Date: 2022-10-29
+Author: Brittany T. Fasy, Jisu Kim, Fabrizio Lecci, Clement Maria,
+    David L. Millman, Vincent Rouvreau.
+Maintainer: Jisu Kim <jisu.kim@inria.fr>
+Copyright: See inst/COPYRIGHTS
+Description: Tools for the statistical analysis of persistent homology and for
+    density clustering. For that, this package provides an R interface for the
+    efficient algorithms of the C++ libraries 'GUDHI' <https://project.inria.fr/gudhi/software/>, 'Dionysus' <https://www.mrzv.org/software/dionysus/>, and 'PHAT' <https://bitbucket.org/phat-code/phat/>. This package also implements the methods in Fasy et al. (2014) <doi:10.1214/14-AOS1252> and Chazal et al. (2014) <doi:10.1145/2582112.2582128>  for analyzing the statistical significance of persistent homology features.
+Depends: R (>= 3.1.0)
+Repository: CRAN
+License: GPL-3
+Imports: FNN, Rcpp (>= 0.11.0), igraph, parallel, scales
+Suggests: testthat, lintr
+Encoding: UTF-8
+LinkingTo: BH (>= 1.78.0-0), Rcpp, RcppEigen
+SystemRequirements: C++14, gmp, GNU make
+NeedsCompilation: yes
+Packaged: 2022-10-29 23:25:23 UTC; jiskim
+Date/Publication: 2022-10-30 21:19:54 UTC

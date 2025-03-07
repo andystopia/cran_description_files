@@ -1,0 +1,51 @@
+Package: extBatchMarking
+Type: Package
+Title: Extended Batch Marking Models
+Version: 1.0.1
+Date: 2024-01-05
+Maintainer: Kehinde Olobatuyi <olobatuyikenny@uvic.ca>
+Authors@R: 
+    c(person(given = "Kehinde",
+            family = "Olobatuyi",
+            role = c("aut", "cre"),
+            email = "olobatuyikenny@uvic.ca",
+            comment = c(ORCID = "0000-0002-4635-7895")),
+      person(given = "Simon",
+            family = "Johns",
+            role = c("aut"),
+            email = "simon737@outlook.com"),      
+      person(given = "Matthew RP",
+            family = "Parker",
+            role = c("aut"),
+            email = "mrparker909@gmail.com",
+            comment = c(ORCID = "0000-0003-3021-7959")),
+      person(given = "Steve",
+            family = "Hof",
+            role = c("aut"),
+            email = "steven.Hof@icloud.com"),
+      person(given = "Laura LE",
+            family = "Cowen",
+            role = c("aut"),
+            email = "lcowen@uvic.ca",
+            comment = c(ORCID = "0000-0002-0853-1450")) )
+Description: A system for batch-marking data analysis to estimate survival probabilities, capture probabilities, and enumerate the population abundance for both marked and unmarked individuals. The estimation of only marked individuals can be achieved through the batchMarkOptim() function. Similarly, the combined marked and unmarked can be achieved through the batchMarkUnmarkOptim() function. The algorithm was also implemented for the hidden Markov model encapsulated in batchMarkUnmarkOptim() to estimate the abundance of both marked and unmarked individuals in the population. The package is based on the paper: "Hidden Markov Models for Extended Batch Data" of Cowen et al. (2017) <doi:10.1111/biom.12701>.
+License: AGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: doParallel, foreach, optimbase, Rcpp, parallel
+Depends: R (>= 4.0)
+LazyData: true
+Suggests: testthat (>= 3.0.0), knitr
+Config/testthat/edition: 3
+URL: https://github.com/Olobatuyi/extBatchMarking
+BugReports: https://github.com/Olobatuyi/extBatchMarking/issues
+NeedsCompilation: yes
+Packaged: 2024-01-09 18:46:31 UTC; Windows
+Author: Kehinde Olobatuyi [aut, cre] (<https://orcid.org/0000-0002-4635-7895>),
+  Simon Johns [aut],
+  Matthew RP Parker [aut] (<https://orcid.org/0000-0003-3021-7959>),
+  Steve Hof [aut],
+  Laura LE Cowen [aut] (<https://orcid.org/0000-0002-0853-1450>)
+Repository: CRAN
+Date/Publication: 2024-01-10 10:23:04 UTC

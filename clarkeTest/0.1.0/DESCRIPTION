@@ -1,0 +1,27 @@
+Package: clarkeTest
+Type: Package
+Title: Distribution-Free Tests of Non-Nested Models
+Version: 0.1.0
+Authors@R: c(person("Dave", "Armstrong", email="dave@quantoid.net", 
+  role=c("aut", "cre")), 
+  person("Brenton", "Kenkel", email="brenton.kenkel@@gmail.com", 
+  role=c("aut")))
+Description: Implementation of Clarke's distribution-free test of
+  non-nested models.  Currently supported model functions are: 
+  lm(), glm() ('binomial', 'poisson', 'negative binomial' links), 
+  polr() ('MASS'), clm() ('ordinal'), and multinom() ('nnet').  
+  For more information on the test, see Clarke (2007) 
+  <doi:10.1093/pan/mpm004>. 
+Depends: R (>= 3.5.0)
+Suggests: MASS, ordinal, nnet
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-03-03 14:56:45 UTC; david
+Author: Dave Armstrong [aut, cre],
+  Brenton Kenkel [aut]
+Maintainer: Dave Armstrong <dave@quantoid.net>
+Repository: CRAN
+Date/Publication: 2020-03-12 16:10:11 UTC

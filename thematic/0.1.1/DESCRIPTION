@@ -1,0 +1,39 @@
+Package: thematic
+Title: Unified and Automatic 'Theming' of 'ggplot2', 'lattice', and
+        'base' R Graphics
+Version: 0.1.1
+Authors@R: c(
+  person("Carson", "Sievert", role = c("aut", "cre"), email = "carson@rstudio.com", comment = c(ORCID = "0000-0002-4958-2844")),
+  person("Barret", "Schloerke", email = "barret@rstudio.com", role = "aut", comment = c(ORCID = "0000-0001-9986-114X")),
+  person("Joe", "Cheng", role = "aut", email = "joe@rstudio.com"),
+  person(family = "RStudio", role = "cph")
+  )
+Description: 
+  Theme 'ggplot2', 'lattice', and 'base' graphics based on a few choices, including foreground color, background color, accent color,
+  and font family. Fonts that aren't available on the system, but are available via download on 'Google Fonts',
+  can be automatically downloaded, cached, and registered for use with the 'showtext' and 'ragg' packages.
+URL: https://rstudio.github.io/thematic/,
+        https://github.com/rstudio/thematic#readme
+Depends: R (>= 3.0.0)
+Imports: utils, graphics, grDevices, grid, farver, rlang, scales,
+        rstudioapi (>= 0.8), rappdirs, ggplot2 (>= 3.3.0)
+Suggests: lattice, stats, withr, sysfonts, showtext, Cairo,
+        systemfonts, ragg, knitr, rmarkdown, htmltools, shiny (>=
+        1.5.0), testthat, vdiffr, svglite, jsonlite, curl
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Collate: 'auto.R' 'base.R' 'cache.R' 'gfonts.R' 'ggplot.R' 'globals.R'
+        'hooks.R' 'imports.R' 'knitr.R' 'lattice.R' 'onLoad.R'
+        'thematic-save-plot.R' 'thematic.R' 'utils.R'
+        'view-shinytest.R'
+NeedsCompilation: no
+Packaged: 2021-01-15 22:16:59 UTC; cpsievert
+Author: Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),
+  Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>),
+  Joe Cheng [aut],
+  RStudio [cph]
+Maintainer: Carson Sievert <carson@rstudio.com>
+Repository: CRAN
+Date/Publication: 2021-01-16 10:30:02 UTC

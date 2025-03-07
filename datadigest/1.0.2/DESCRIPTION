@@ -1,0 +1,30 @@
+Package: datadigest
+Type: Package
+Title: Create an Interactive Data Summary
+Version: 1.0.2
+Authors@R: c(
+	person("Becca", "Krouse", email = "rebecca_krouse@rhoworld.com", role = c("cre","aut")),
+	person("Spencer", "Childress", role = "aut"),
+	person("Jeremy", "Wildfire", role = "aut"),
+	person("Rho Inc.", role = "cph"))
+Maintainer: Becca Krouse <rebecca_krouse@rhoworld.com>
+Description: An R interface for Rho's 'web-codebook' 'JavaScript' charting library, which provides a simple interactive framework for exploring data. 'datadigest' includes two key functions (codebook() and explorer()) that deliver a concise summary of every variable in a data frame, along with interactive features such as real-time filters, grouping, and highlighting. Each function has an associated 'RStudio' addin/'Shiny' app for quick and convenient exploration of one or more data frames.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Depends: R (>= 3.3.0)
+Imports: htmlwidgets, shiny, miniUI, Hmisc, htmltools, haven, jsonlite,
+        tibble, datasets
+URL: https://github.com/RhoInc/datadigest
+BugReports: https://github.com/RhoInc/datadigest/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-08-31 14:35:02 UTC; rzabel
+Author: Becca Krouse [cre, aut],
+  Spencer Childress [aut],
+  Jeremy Wildfire [aut],
+  Rho Inc. [cph]
+Repository: CRAN
+Date/Publication: 2018-09-03 11:10:06 UTC

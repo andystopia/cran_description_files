@@ -1,0 +1,28 @@
+Package: HTT
+Type: Package
+Title: Hypothesis Testing Tree
+Version: 0.1.0
+Date: 2022-11-06
+Authors@R: c(
+  person(given = "Jiaqi", family = "Hu", email = "hujiaqi@mail.ustc.edu.cn", role = c("cre", "aut")),
+  person(given = "Zhe", family = "Gao", email = "gaozh8@mail2.sysu.edu.cn", role = c("aut")),
+  person(given = "Bo", family = "Zhang", email = "wbchpmp@ustc.edu.cn", role = c("aut")),
+  person(given = "Xueqin", family = "Wang", email = "wangxq20@ustc.edu.cn", role = c("aut")))
+Author: Jiaqi Hu [cre, aut],
+  Zhe Gao [aut],
+  Bo Zhang [aut],
+  Xueqin Wang [aut]
+Maintainer: Jiaqi Hu <hujiaqi@mail.ustc.edu.cn>
+Description: A novel decision tree algorithm in the hypothesis testing framework. The algorithm examines the distribution difference between two child nodes over all possible binary partitions. The test statistic of the hypothesis testing is equivalent to the generalized energy distance, which enables the algorithm to be more powerful in detecting the complex structure, not only the mean difference. It is applicable for numeric, nominal, ordinal explanatory variables and the response in general metric space of strong negative type. The algorithm has superior performance compared to other tree models in type I error, power, prediction accuracy, and complexity.
+License: GPL-3
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, MASS
+Imports: Rcpp (>= 1.0.6), ggraph, igraph, ggplot2
+LinkingTo: Rcpp
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2022-11-30 11:57:04 UTC; jqhu
+Repository: CRAN
+Date/Publication: 2022-12-01 08:00:05 UTC

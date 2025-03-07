@@ -1,0 +1,32 @@
+Package: conleyreg
+Type: Package
+Title: Estimations using Conley Standard Errors
+Version: 0.1.1
+Authors@R: c(person("Christian", "Düben", email = "christian.dueben@uni-hamburg.de", role = c("aut", "cre")), person("Richard", "Bluhm", role = "cph"), 
+  person("Luis", "Calderon", role = "cph"), person("Darin", "Christensen", role = "cph"), person("Timothy", "Conley", role = "cph"), person("Thiemo", "Fetzer", role = "cph"), 
+  person("Leander", "Heldring", role = "cph"))
+Description: Merges and extends multiple packages and other published scripts calculating Conley (1999) <doi:10.1016/S0304-4076(98)00084-0> standard errors. Details are 
+  available in the function documentation and in the vignette.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: base, stats, sf, raster, Rcpp, RcppArmadillo, data.table, lfe,
+        lmtest, foreach, parallel, doParallel, Rdpack, fixest, Matrix,
+        lwgeom
+Suggests: rmarkdown, knitr, s2
+LinkingTo: Rcpp, RcppArmadillo
+RdMacros: Rdpack
+SystemRequirements: GNU make
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-05-26 15:38:15 UTC; BAU2796
+Author: Christian Düben [aut, cre],
+  Richard Bluhm [cph],
+  Luis Calderon [cph],
+  Darin Christensen [cph],
+  Timothy Conley [cph],
+  Thiemo Fetzer [cph],
+  Leander Heldring [cph]
+Maintainer: Christian Düben <christian.dueben@uni-hamburg.de>
+Repository: CRAN
+Date/Publication: 2021-05-27 08:40:02 UTC

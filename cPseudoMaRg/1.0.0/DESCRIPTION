@@ -1,0 +1,16 @@
+Package: cPseudoMaRg
+Type: Package
+Title: Constructs a Correlated Pseudo-Marginal Sampler
+Version: 1.0.0
+Date: 2021-07-01
+Authors@R: person("Taylor", "Brown", email = "trb5me@virginia.edu",
+                  role = c("aut", "cre"))
+Description: The primary function makeCPMSampler() generates a sampler function which performs the correlated pseudo-marginal method of Deligiannidis, Doucet and Pitt (2017) <arXiv:1511.04992>. If the 'rho=' argument of makeCPMSampler() is set to 0, then the generated sampler function performs the original pseudo-marginal method of Andrieu and Roberts (2009) <DOI:10.1214/07-AOS574>. The sampler function is constructed with the user's choice of prior, parameter proposal distribution, and the likelihood approximation scheme. Note that this algorithm is not automatically tuned--each one of these arguments must be carefully chosen. 
+License: MIT + file LICENSE
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-07-07 18:09:13 UTC; clare.obrien.brown
+Author: Taylor Brown [aut, cre]
+Maintainer: Taylor Brown <trb5me@virginia.edu>
+Repository: CRAN
+Date/Publication: 2021-07-08 07:50:02 UTC

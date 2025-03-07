@@ -1,0 +1,32 @@
+Package: congress
+Title: Access the Congress.gov API
+Version: 0.0.1
+Authors@R: 
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "christopherkenny@fas.harvard.edu",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Download and read data on United States congressional proceedings. 
+    Data is read from the Library of Congress's Congress.gov Application Programming 
+    Interface (<https://github.com/LibraryOfCongress/api.congress.gov/>). Functions
+    exist for all version 3 endpoints, including for bills, amendments, congresses, 
+    summaries, members, reports, communications, nominations, and treaties.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 4.1.0)
+Imports: cli, dplyr, glue, httr2, purrr, rlang, stringr, tibble, tidyr
+URL: https://github.com/christopherkenny/congress,
+        http://christophertkenny.com/congress/
+BugReports: https://github.com/christopherkenny/congress/issues
+Suggests: httptest2, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-10-10 20:28:28 UTC; chris
+Author: Christopher T. Kenny [aut, cre]
+    (<https://orcid.org/0000-0002-9386-6860>)
+Maintainer: Christopher T. Kenny <christopherkenny@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2022-10-12 08:02:32 UTC

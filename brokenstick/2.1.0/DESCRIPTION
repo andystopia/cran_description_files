@@ -1,0 +1,33 @@
+Package: brokenstick
+Type: Package
+Title: Broken Stick Model for Irregular Longitudinal Data
+Version: 2.1.0
+Authors@R: person("Stef", "van Buuren", email = "stef.vanbuuren@tno.nl", role = c("aut","cre"))
+Description: The broken stick model describes a set of individual curves by a
+    linear mixed model using a second-order linear B-spline. The main use of the model
+    is to align irregularly observed data to a user-specified grid of break ages.
+    All fitting can done in the Z-score scale, so non-linearity and irregular data
+    can be treated as separate problems. This package contains functions for fitting
+    a broken stick model to data, for predicting broken stick curves in new data,
+    and for plotting the broken stick estimates. For additional documentation on 
+    background, methodology and applications see
+    <https://stefvanbuuren.name/publications/2021_brokenstick_JSS_manuscript.pdf>.
+Depends: R (>= 3.5.0)
+Imports: coda, dplyr, lme4, matrixsampling, methods, rlang, splines,
+        stats, tidyr
+Suggests: AGD, bookdown, ggplot2, grDevices, gridExtra, knitr, lattice,
+        MASS, Matrix, mice, mvtnorm, plyr, svglite, testthat, rmarkdown
+URL: https://github.com/growthcharts/brokenstick,
+        https://growthcharts.org/brokenstick/
+BugReports: https://github.com/growthcharts/brokenstick/issues
+Encoding: UTF-8
+License: MIT + file LICENSE
+LazyData: TRUE
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-03-30 18:25:38 UTC; buurensv
+Author: Stef van Buuren [aut, cre]
+Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
+Repository: CRAN
+Date/Publication: 2022-03-30 18:40:10 UTC

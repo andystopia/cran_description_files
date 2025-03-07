@@ -1,0 +1,43 @@
+Package: webmap
+Title: Create Interactive Web Maps Using 'The National Map' Services
+Version: 1.1.0
+Authors@R: c(
+      person(given = c("Jason", "C."),
+             family = "Fisher",
+             role=c("aut", "cre"),
+             email = "jfisher@usgs.gov",
+             comment = c(ORCID="0000-0001-9032-8912")),
+      person(given = "Stefano",
+             family = "Cudini",
+             role = c("ctb", "cph"),
+             comment = "leaflet-search library"),
+      person(given = "John",
+             family = "Firebaugh",
+             role = c("ctb", "cph"),
+             comment = "Leaflet.fullscreen library")
+    )
+Description: Creates interactive web maps using the 'JavaScript' 'Leaflet'
+    library with base layers of 'The National Map' ('TNM'). 'TNM' services
+    provide access to base geospatial information that describes the landscape
+    of the United States and its territories. This package is dependent on, and
+    intended to be used with, the 'leaflet' package.
+Depends: R (>= 4.1)
+Imports: checkmate, htmltools, htmlwidgets, leaflet
+Suggests: connectapi, covr, knitr, pkgbuild, pkgdown, pkgload,
+        rcmdcheck, remotes, renv, roxygen2, tinytest
+License: MIT + file LICENSE
+URL: https://rconnect.usgs.gov/INLPO/webmap-main/,
+        https://code.usgs.gov/inl/webmap
+BugReports: https://code.usgs.gov/inl/webmap/-/issues
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-03-25 17:17:18 UTC; jfisher
+Author: Jason C. Fisher [aut, cre] (<https://orcid.org/0000-0001-9032-8912>),
+  Stefano Cudini [ctb, cph] (leaflet-search library),
+  John Firebaugh [ctb, cph] (Leaflet.fullscreen library)
+Maintainer: Jason C. Fisher <jfisher@usgs.gov>
+Repository: CRAN
+Date/Publication: 2024-03-25 20:50:02 UTC

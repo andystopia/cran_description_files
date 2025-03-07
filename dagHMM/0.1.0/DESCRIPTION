@@ -1,0 +1,18 @@
+Package: dagHMM
+Type: Package
+Title: Directed Acyclic Graph HMM with TAN Structured Emissions
+Version: 0.1.0
+Authors@R: c(person("Prajwal","Bende", role=c("aut","cre"),email="prajwal.bende@gmail.com"), person("Russ", "Greiner", role=c("ths"), email='rgreiner@ualberta.ca'),person("Pouria", "Ramazi", role=c("ths"), email='pramazi@brocku.ca'))
+Maintainer: Prajwal Bende <prajwal.bende@gmail.com>
+Description: Hidden Markov models (HMMs) are a formal foundation for making probabilistic models of linear sequence. They provide a conceptual toolkit for building complex models just by drawing an intuitive picture. They are at the heart of a diverse range of programs, including genefinding, profile searches, multiple sequence alignment and regulatory site identification. HMMs are the Legos of computational sequence analysis. In graph theory, a tree is an undirected graph in which any two vertices are connected by exactly one path, or equivalently a connected acyclic undirected graph. Tree represents the nodes connected by edges. It is a non-linear data structure. A poly-tree is simply a directed acyclic graph whose underlying undirected graph is a tree. The model proposed in this package is the same as an HMM but where the states are linked via a polytree structure rather than a simple path.
+License: GPL (>= 2.0.0)
+Encoding: UTF-8
+Imports: gtools, future, matrixStats, PRROC, bnlearn, bnclassify
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-01-09 16:19:40 UTC; prajw
+Author: Prajwal Bende [aut, cre],
+  Russ Greiner [ths],
+  Pouria Ramazi [ths]
+Repository: CRAN
+Date/Publication: 2023-01-10 18:40:05 UTC

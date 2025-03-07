@@ -1,0 +1,48 @@
+Package: epikit
+Title: Miscellaneous Helper Tools for Epidemiologists
+Version: 0.1.5
+Authors@R: 
+    c(person(given = "Alexander",
+             family = "Spina",
+             email = "aspina@appliedepi.org", 
+             comment = c(ORCID = "0000-0001-8425-1867"),
+             role = c("aut")),
+      person(given = "Zhian N.",
+             family = "Kamvar",
+             role = c("aut", "cre"),
+             email = "zkamvar@gmail.com",
+             comment = c(ORCID = "0000-0003-1458-7108")),
+      person(given = "Dirk",
+             family = "Schumacher",
+             role = "aut",
+             email = "mai@dirk-schumacher.net"),
+      person(given = "Kate",
+             family = "Doyle",
+             role = "ctb"))
+Description: Contains tools for formatting inline code, renaming redundant
+  columns, aggregating age categories, adding survey weights, finding the earliest
+  date of an event, plotting z-curves, generating population counts and 
+  calculating proportions with confidence intervals. This is part of the 
+  'R4Epis' project <https://r4epis.netlify.app/>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: binom, scales, dplyr (>= 1.0.2), rlang, forcats, tidyr (>=
+        1.0.0), tibble (>= 3.0.0), glue, tidyselect, ggplot2, sf
+Suggests: testthat (>= 2.1.0), outbreaks, epidict, covr, knitr,
+        magrittr, rmarkdown
+Additional_repositories: https://r4epi.github.io/drat
+URL: https://github.com/R4EPI/epikit, https://r4epis.netlify.app,
+        https://r4epi.github.io/epikit/
+BugReports: https://github.com/R4EPI/epikit/issues
+VignetteBuilder: knitr
+Config/Needs/check: R4EPI/epidict
+NeedsCompilation: no
+Packaged: 2023-02-14 17:12:50 UTC; zhian
+Author: Alexander Spina [aut] (<https://orcid.org/0000-0001-8425-1867>),
+  Zhian N. Kamvar [aut, cre] (<https://orcid.org/0000-0003-1458-7108>),
+  Dirk Schumacher [aut],
+  Kate Doyle [ctb]
+Maintainer: Zhian N. Kamvar <zkamvar@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-15 21:10:02 UTC

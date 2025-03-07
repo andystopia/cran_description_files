@@ -1,0 +1,36 @@
+Package: footBayes
+Type: Package
+Title: Fitting Bayesian and MLE Football Models
+Version: 0.2.0
+Date: 2023-08-25
+Author: Leonardo Egidi[aut, cre], Vasilis Palaskas[aut].
+Maintainer: Leonardo Egidi <legidi@units.it>
+License: GPL-2
+Description: This is the first package allowing for the estimation,
+             visualization and prediction of the most well-known 
+             football models: double Poisson, bivariate Poisson,
+             Skellam, student_t, diagonal-inflated bivariate Poisson, and
+             zero-inflated Skellam. The package allows Hamiltonian
+             Monte Carlo (HMC) estimation through the underlying Stan
+             environment and Maximum Likelihood estimation (MLE, for 
+             'static' models only). The model construction relies on
+             the most well-known football references, such as 
+             Dixon and Coles (1997) <doi:10.1111/1467-9876.00065>,
+             Karlis and Ntzoufras (2003) <doi:10.1111/1467-9884.00366> and
+             Egidi, Pauli and Torelli (2018) <doi:10.1177/1471082X18798414>.
+URL: https://github.com/leoegidi/footbayes
+Encoding: UTF-8
+SystemRequirements: pandoc (>= 1.12.3), pandoc-citeproc
+Depends: R (>= 3.1.0)
+Imports: rstan (>= 2.18.1), arm, reshape2, ggplot2, bayesplot,
+        matrixStats, extraDistr, parallel, metRology, dplyr, numDeriv,
+        tidyverse, magrittr
+Suggests: testthat, knitr (>= 1.37), rmarkdown (>= 2.10), loo
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+LazyData: true
+BuildManual: yes
+NeedsCompilation: no
+Packaged: 2023-08-31 14:22:41 UTC; leoeg
+Repository: CRAN
+Date/Publication: 2023-08-31 14:50:02 UTC

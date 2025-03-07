@@ -1,0 +1,37 @@
+Package: sbpiper
+Version: 1.5.0
+Date: 2018-02-28
+Title: Data Analysis Functions for 'SBpipe' Package
+Authors@R: c(
+    person("Piero", "Dalle Pezze", email = "piero.dallepezze@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-1695-6763")),
+    person("Nicolas", "Le Novère", email = "nicolas.lenovere@babraham.ac.uk", role = c("cph"), comment = c(ORCID = "0000-0002-6309-7327"))
+    )
+Depends: R (>= 3.2.0)
+Imports: colorRamps, data.table, ggplot2 (>= 2.2.0), grDevices, Hmisc,
+        reshape2, scales, stats, stringr, utils
+Description: Provides an API for analysing repetitive parameter estimations and simulations of
+    mathematical models. Examples of mathematical models are Ordinary Differential equations (ODEs) 
+    or Stochastic Differential Equations (SDEs) models. Among the analyses for parameter 
+    estimation 'sbpiper' calculates statistics and generates plots for parameter density, 
+    parameter profile likelihood estimations (PLEs), and 2D parameter PLEs. These results can 
+    be generated using all or a subset of the best computed parameter sets. Among the analyses 
+    for model simulation 'sbpiper' calculates statistics and generates plots for deterministic 
+    and stochastic time courses via cartesian and heatmap plots. Plots for the scan of one or two model 
+    parameters can also be generated. This package is primarily used by the software 'SBpipe'. Citation: Dalle Pezze P, Le Novère N. SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks. BMC Systems Biology. 2017;11:46. <doi:10.1186/s12918-017-0423-3>.
+License: LGPL-3 | file LICENSE
+URL: https://github.com/pdp10/sbpiper
+BugReports: https://github.com/pdp10/sbpiper/issues
+LazyLoad: true
+Collate: 'sbpiper.r' 'sbpiper_ggplot2_themes.r' 'sbpiper_plots.r'
+        'sbpiper_sim.r' 'sbpiper_ps1.r' 'sbpiper_ps2.r' 'sbpiper_pe.r'
+        'data.r'
+RoxygenNote: 6.0.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2018-03-02 09:48:58 UTC; dallepep
+Author: Piero Dalle Pezze [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1695-6763>),
+  Nicolas Le Novère [cph] (<https://orcid.org/0000-0002-6309-7327>)
+Maintainer: Piero Dalle Pezze <piero.dallepezze@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-02 14:26:11 UTC

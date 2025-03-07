@@ -1,0 +1,37 @@
+Package: clinUtils
+Type: Package
+Title: General Utility Functions for Analysis of Clinical Data
+Version: 0.0.3
+Date: 2021-07-16
+Authors@R: c(
+  person(given = "Laure", family = "Cougnaud", role = "aut",
+  email = "laure.cougnaud@openanalytics.eu"),
+  person(given = "Michela", family = "Pasetto", role = c("aut", "cre"),
+  email = "michela.pasetto@openanalytics.eu"),
+  person(given = "Open Analytics", role = "cph")
+  )
+Description: 
+ Utility functions to facilitate the import, 
+ the reporting and analysis of clinical data.
+ Example datasets in 'SDTM' and 'ADaM' format, containing a subset of patients/domains
+ from the 'CDISC Pilot 01 study' are also available as R datasets to demonstrate
+ the package functionalities.
+Imports: crosstalk, data.table, DT, haven, htmlwidgets, knitr, plyr,
+        tools, utils, viridisLite
+Suggests: dplyr, tibble, ggplot2, plotly, htmltools, pander, rmarkdown,
+        testthat, flextable
+SystemRequirements: pandoc
+URL: https://github.com/openanalytics/clinUtils
+BugReports: https://github.com/openanalytics/clinUtils/issues
+License: MIT + file LICENSE
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2021-07-16 12:07:18 UTC; mpasetto
+Author: Laure Cougnaud [aut],
+  Michela Pasetto [aut, cre],
+  Open Analytics [cph]
+Maintainer: Michela Pasetto <michela.pasetto@openanalytics.eu>
+Repository: CRAN
+Date/Publication: 2021-07-16 14:50:06 UTC

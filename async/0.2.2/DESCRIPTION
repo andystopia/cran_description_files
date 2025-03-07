@@ -1,0 +1,35 @@
+Package: async
+Title: Asynchronous Code Constructs: Generators, Yield, Async, Await
+Version: 0.2.2
+Date: 2022-09-07
+Authors@R: 
+    person(given = "Peter",
+           family = "Meilstrup",
+           role = c("aut", "cre"),
+           email = "peter.meilstrup@gmail.com")
+URL: https://crowding.github.io/async/,
+        https://github.com/crowding/async/
+BugReports: https://github.com/crowding/async/issues
+Description: Write sequential-looking code that pauses and resumes.
+             gen() creates a generator, an iterator that returns a
+             value and pauses each time it reaches a yield() call.
+             async() creates a promise, which runs until it reaches
+             a call to await(), then resumes when information is available.
+             These work similarly to generator and async constructs
+             from 'Python' or 'JavaScript'. Objects produced are
+             compatible with the 'iterators' and 'promises' packages.
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: nseval (>= 0.4), iterators, itertools, later, promises
+Suggests: rmarkdown, testthat (>= 3.0.0), knitr, magrittr, audio,
+        profvis, covr
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-09-08 06:40:51 UTC; peter
+Author: Peter Meilstrup [aut, cre]
+Maintainer: Peter Meilstrup <peter.meilstrup@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-08 07:02:55 UTC

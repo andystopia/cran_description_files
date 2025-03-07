@@ -1,0 +1,31 @@
+Package: medScan
+Title: Large Scale Single Mediator Hypothesis Testing
+Version: 1.0.1
+URL: https://github.com/umich-cphds/medScan
+BugReports: https://github.com/umich-cphds/medScan/issues
+Authors@R: c(
+    person("Jiacong","Du",role=c("aut"), email="jiacong@umich.edu"),
+    person("Michael","Kleinsasser",role=c("cre"),email="mkleinsa@umich.edu")
+  )
+Description: A collection of methods for large scale single mediator hypothesis
+    testing. The six included methods for testing the mediation effect are Sobel's
+    test, Max P test, joint significance test under the composite null hypothesis,
+    high dimensional mediation testing, divide-aggregate composite null test,
+    and Sobel's test under the composite null hypothesis. Du, J., Zhou, X., Hao, W.,
+    Liu, Y., Smith, J. A., & Mukherjee, B (2022) "Methods for Large-scale Single
+    Mediator Hypothesis Testing: Possible Choices and Comparisons."
+    arXiv preprint <arXiv:2203.13293>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+biocViews:
+Imports: HDMT, locfdr, qqman, qvalue, fdrtool
+Depends: R (>= 3.5),
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2022-10-04 13:18:30 UTC; mk
+Author: Jiacong Du [aut],
+  Michael Kleinsasser [cre]
+Maintainer: Michael Kleinsasser <mkleinsa@umich.edu>
+Repository: CRAN
+Date/Publication: 2022-10-05 17:00:02 UTC

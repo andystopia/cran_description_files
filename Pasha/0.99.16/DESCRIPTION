@@ -1,0 +1,18 @@
+Package: Pasha
+Type: Package
+Title: Preprocessing of Aligned Sequences from HTS Analyses
+Version: 0.99.16
+Date: 2015-07-01
+Author: Romain Fenouil, Nicolas Descostes, Lionel Spinelli, Jean-Christophe Andrau
+Maintainer: Romain Fenouil <romain.fenouil@mssm.edu>
+Description: Pipeline and additional tools designed to handle aligned data from chromatin NGS experiments (less adapted for typical RNAseq applications). Specifically, starting from aligned reads after sequencing, the pipeline function aims at removing artefacts from datasets, estimate in-silico the fragments size, and generate WIG files with corrected values. The package also provides several tools for WIG files manipulations, scaling, merging and subtract (e.g. input).
+License: GPL-3
+LazyLoad: yes
+Imports: bitops, tools, methods, S4Vectors, IRanges, GenomicRanges,
+        ShortRead, Rsamtools, Biostrings, gtools
+Depends: R (>= 3.2.0), parallel, GenomicAlignments
+biocViews: ChIPSeq, Sequencing, Software, Preprocessing, Alignment
+NeedsCompilation: yes
+Packaged: 2015-07-31 20:36:18 UTC; fenouil
+Repository: CRAN
+Date/Publication: 2015-08-01 07:37:30

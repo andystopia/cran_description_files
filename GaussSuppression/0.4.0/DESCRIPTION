@@ -1,0 +1,27 @@
+Package: GaussSuppression
+Type: Package
+Title: Tabular Data Suppression using Gaussian Elimination
+Version: 0.4.0
+Date: 2022-06-28
+Authors@R: c(person("Øyvind", "Langsrud", role = c("aut", "cre"),
+                    email = "oyl@ssb.no"),
+             person("Daniel", "Lupp", role = c("aut")),        
+             person("Hege", "Bøvelstad", role = c("ctb")))
+Maintainer: Øyvind Langsrud <oyl@ssb.no>
+Depends: Matrix
+Imports: SSBtools, RegSDC, stats, methods
+Description: A statistical disclosure control tool to protect tables by suppression using the Gaussian elimination secondary suppression algorithm. Primary suppression functions for the minimum frequency rule, the dominance rule and a directly-disclosive rule are included. General primary suppression functions can be supplied as input. Suppressed frequencies can be replaced by synthetic decimal numbers as described in Langsrud (2019) <doi:10.1007/s11222-018-9848-9>.
+License: Apache License 2.0
+URL: https://github.com/statisticsnorway/GaussSuppression
+BugReports: https://github.com/statisticsnorway/GaussSuppression/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-06-28 13:57:51 UTC; oyl
+Author: Øyvind Langsrud [aut, cre],
+  Daniel Lupp [aut],
+  Hege Bøvelstad [ctb]
+Repository: CRAN
+Date/Publication: 2022-06-28 14:30:02 UTC

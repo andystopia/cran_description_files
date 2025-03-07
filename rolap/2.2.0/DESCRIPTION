@@ -1,0 +1,37 @@
+Package: rolap
+Title: Obtaining Star Databases from Flat Tables
+Version: 2.2.0
+Authors@R: 
+    person("Jose", "Samos", , "jsamos@ugr.es", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4457-3439"))
+Description: Data in multidimensional systems is obtained from operational
+    systems and is transformed to adapt it to the new structure.
+    Frequently, the operations to be performed aim to transform a flat
+    table into a ROLAP (Relational On-Line Analytical Processing) star
+    database. The main objective of the package is to allow the definition
+    of these transformations easily. The implementation of the
+    multidimensional database obtained can be exported to work with
+    multidimensional analysis tools on spreadsheets or relational
+    databases.
+License: MIT + file LICENSE
+URL: https://josesamos.github.io/rolap/,
+        https://github.com/josesamos/rolap
+BugReports: https://github.com/josesamos/rolap/issues
+Depends: R (>= 2.10)
+Imports: dm, dplyr, methods, purrr, readr, rlang, snakecase, tibble,
+        tidyr, tidyselect
+Suggests: DBI, dbplyr, DiagrammeR, DiagrammeRsvg, knitr, lubridate,
+        maps, pander, RMariaDB, rmarkdown, RSQLite, stringr, testthat
+        (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-15 07:16:47 UTC; joses
+Author: Jose Samos [aut, cre, cph] (<https://orcid.org/0000-0002-4457-3439>)
+Maintainer: Jose Samos <jsamos@ugr.es>
+Repository: CRAN
+Date/Publication: 2023-09-15 07:50:02 UTC

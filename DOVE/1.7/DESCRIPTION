@@ -1,0 +1,41 @@
+Package: DOVE
+Type: Package
+Title: Durability of Vaccine Efficacy
+Version: 1.7
+Date: 2021-08-31
+Authors@R: c(person("Danyu", "Lin", role = "aut"),
+             person("Yu", "Gu", role = "aut"),
+             person("Donglin", "Zeng", role = "aut"),
+             person("Shannon", "Holloway", role = c("aut", "cre"),
+                     email = "sthollow@ncsu.edu"))
+Description: Implements maximum likelihood methods for 
+    evaluating the durability of vaccine efficacy in a randomized, 
+    placebo-controlled clinical trial with staggered enrollment of participants 
+    and potential crossover of placebo recipients before the end of the trial. 
+    Lin, D. Y., Zeng, D., and Gilbert, P. B. (2021) 
+    <doi:10.1093/cid/ciab226>
+    and 
+    Lin, D. Y., Gu, Y., Zeng, D., Janes, H. E., and Gilbert, P. B. (2021) 
+    <doi:10.1093/cid/ciab630>. 
+License: GPL-2
+Depends: R (>= 3.5.0), methods, survival
+Suggests: rmarkdown, knitr
+Imports: Rcpp (>= 1.0.4.6), stats, graphics
+VignetteBuilder: utils, knitr
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Repository: CRAN
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Collate: 'VEplot_type2.R' 'VEcal.R' 'postProcess.R' 'CoxReg.R'
+        'RcppExports.R' 'VEplot_type1.R' 'postInterval.R' 'postBeta.R'
+        'infBeta.R' 'postProcessDove.R' 'scores.R' 'loc.R' 'vcFit.R'
+        'verifyInputs.R' 'dove.R' 'dove2.R' 'doveData.R' 'iterations.R'
+        'plot.DOVE.R' 'postVE.R' 'print.DOVE.R' 'vaccine.R'
+Author: Danyu Lin [aut],
+  Yu Gu [aut],
+  Donglin Zeng [aut],
+  Shannon Holloway [aut, cre]
+Maintainer: Shannon Holloway <sthollow@ncsu.edu>
+Packaged: 2021-09-06 16:27:10 UTC; sthollow
+Date/Publication: 2021-09-06 17:00:02 UTC

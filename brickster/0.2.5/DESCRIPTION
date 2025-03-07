@@ -1,0 +1,39 @@
+Package: brickster
+Title: R Toolkit for 'Databricks'
+Version: 0.2.5
+Authors@R: 
+  c(
+    person(given = "Zac",
+           family = "Davies",
+           role = c("aut", "cre"),
+           email = "zac@databricks.com"),
+    person(given = "Rafi",
+           family = "Kurlansik",
+           role = c("aut"),
+           email = "rafi.kurlansik@databricks.com"),
+    person("Databricks", role = c("cph", "fnd"))
+  )
+Description: Collection of utilities that improve using 'Databricks' from R. 
+  Primarily functions that wrap specific 'Databricks' APIs
+  (<https://docs.databricks.com/api>), 'RStudio' connection pane support, quality
+  of life functions to make 'Databricks' simpler to use.
+License: Apache License (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: arrow, base64enc, cli, curl, dplyr, glue, httr2, ini,
+        jsonlite, purrr, reticulate, R6 (>= 2.4.0), rlang, tibble,
+        utils
+Suggests: testthat (>= 3.0.0), huxtable, htmltools, knitr, magick,
+        rmarkdown, rstudioapi, withr
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+URL: https://github.com/databrickslabs/brickster
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-11-12 07:54:34 UTC; zachary.davies
+Author: Zac Davies [aut, cre],
+  Rafi Kurlansik [aut],
+  Databricks [cph, fnd]
+Maintainer: Zac Davies <zac@databricks.com>
+Repository: CRAN
+Date/Publication: 2024-11-13 14:10:06 UTC

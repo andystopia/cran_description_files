@@ -1,0 +1,47 @@
+Package: crosshap
+Type: Package
+Title: Local Haplotype Clustering and Visualization
+Version: 1.2.2
+Authors@R: 
+  c(person(given = "Jacob", 
+           family = "Marsh", 
+           role = c("aut", "cre"), 
+           email = "jake.marsh@live.com.au",
+           comment = c(ORCID = "0000-0003-3734-2023")),
+    person(given = "Brady",
+           family = "Johnston",
+           role = "aut",
+           email = "brady.johnston@me.com",
+           comment = c(ORCID = "0000-0001-6301-2269")),
+    person(given = "Jakob",
+           family = "Petereit",
+           role = "aut",
+           email = "petinho86@gmail.com",
+           comment = c(ORCID = "0000-0003-2159-0380"))
+           )
+Maintainer: Jacob Marsh <jake.marsh@live.com.au>
+Description: A local haplotyping visualization toolbox to capture major patterns 
+    of co-inheritance between clusters of linked variants, whilst connecting findings 
+    to phenotypic and demographic traits across individuals. 'crosshap' enables users 
+    to explore and understand genomic variation across a trait-associated region. 
+    For an example of successful local haplotype analysis, see Marsh et al. (2022) 
+    <doi:10.1007/s00122-022-04045-8>.
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.2.3
+Imports: cli, clustree, data.table, dbscan, dplyr, ggdist, ggplot2,
+        ggpp, gridExtra, gtable, magrittr, patchwork, rlang, scales,
+        tibble, tidyr
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0), umap, vdiffr
+Depends: R (>= 4.00)
+URL: https://jacobimarsh.github.io/crosshap/
+License: MIT + file LICENSE
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-05-02 07:02:12 UTC; jmarsh96
+Author: Jacob Marsh [aut, cre] (<https://orcid.org/0000-0003-3734-2023>),
+  Brady Johnston [aut] (<https://orcid.org/0000-0001-6301-2269>),
+  Jakob Petereit [aut] (<https://orcid.org/0000-0003-2159-0380>)
+Repository: CRAN
+Date/Publication: 2023-05-02 07:50:08 UTC

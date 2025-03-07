@@ -1,0 +1,50 @@
+Package: WeightedTreemaps
+Title: Generate and Plot Voronoi or Sunburst Treemaps from Hierarchical
+        Data
+Version: 0.1.3
+Authors@R: c(
+    person("Michael", "Jahn", , "jahn@mpusp.mpg.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3913-153X")),
+    person("David", "Leslie", , "david.leslie@scilifelab.se", role = "aut"),
+    person("Ahmadou", "Dicko", , "mail@ahmadoudicko.com", role = "aut",
+           comment = c(ORCID = "0000-0002-9654-7582")),
+    person("Paul", "Murrell", , "p.murrell@auckland.ac.nz", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-3224-8858"))
+  )
+Description: Treemaps are a visually appealing graphical representation of
+    numerical data using a space-filling approach. A plane or 'map' is
+    subdivided into smaller areas called cells.  The cells in the map are
+    scaled according to an underlying metric which allows to grasp the
+    hierarchical organization and relative importance of many objects at
+    once. This package contains two different implementations of treemaps,
+    Voronoi treemaps and Sunburst treemaps.  The Voronoi treemap function
+    subdivides the plot area in polygonal cells according to the highest
+    hierarchical level, then continues to subdivide those parental cells
+    on the next lower hierarchical level, and so on. The Sunburst treemap
+    is a computationally less demanding treemap that does not require
+    iterative refinement, but simply generates circle sectors that are
+    sized according to predefined weights.  The Voronoi tesselation is
+    based on functions from Paul Murrell (2012)
+    <https://www.stat.auckland.ac.nz/~paul/Reports/VoronoiTreemap/voronoiTreeMap.html>.
+License: GPL-3
+URL: https://github.com/m-jahn/WeightedTreemaps
+BugReports: https://github.com/m-jahn/WeightedTreemaps/issues
+Depends: R (>= 3.5.0)
+Imports: colorspace, dplyr, grid, lattice, methods, Rcpp, scales, sf,
+        sp, tibble
+Suggests: knitr, parallel, rmarkdown
+LinkingTo: BH, Rcpp, RcppCGAL
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2024-11-04 20:40:11 UTC; michael
+Author: Michael Jahn [aut, cre] (<https://orcid.org/0000-0002-3913-153X>),
+  David Leslie [aut],
+  Ahmadou Dicko [aut] (<https://orcid.org/0000-0002-9654-7582>),
+  Paul Murrell [aut, cph] (<https://orcid.org/0000-0002-3224-8858>)
+Maintainer: Michael Jahn <jahn@mpusp.mpg.de>
+Repository: CRAN
+Date/Publication: 2024-11-04 22:30:02 UTC

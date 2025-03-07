@@ -1,0 +1,23 @@
+Package: sisus
+Version: 3.9-12
+Date: 2014-03-10
+Title: SISUS: Stable Isotope Sourcing using Sampling
+Authors@R: person(given = "Erik Barry", family = "Erhardt", email = "erik@statacumen.com", role = c("aut", "cre"))
+Description: SISUS for source partitioning using stable isotopes.
+  SISUS reads in a specific Excel-like workbook and performs an IsoSource-type analysis by
+    returning a sample of feasible solutions to p in the non-over constrained linear systems, b=Ap.
+  Edit \file{sisus_*_template.xls} and input data values and run parameters.
+  Run \code{\link{sisus.run}(filename)}. See output in current working directory.
+Depends: R (>= 3.0.0)
+Imports: MASS, RColorBrewer, coda, gtools, moments, polyapost, rcdd,
+        stats
+Suggests: gdata
+License: GPL (>= 2)
+LazyLoad: yes
+URL: http://StatAcumen.com/sisus
+Packaged: 2014-03-11 20:36:01 UTC; erik
+Author: Erik Barry Erhardt [aut, cre]
+Maintainer: Erik Barry Erhardt <erik@statacumen.com>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-03-12 00:54:11

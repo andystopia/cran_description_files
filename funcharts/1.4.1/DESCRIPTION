@@ -1,0 +1,43 @@
+Package: funcharts
+Type: Package
+Title: Functional Control Charts
+Version: 1.4.1
+Authors@R: c(
+    person("Christian", "Capezza", 
+      email = "christian.capezza@unina.it", 
+      role = c("cre","aut")),
+    person("Fabio", "Centofanti", role = c("aut")), 
+    person("Antonio", "Lepore", role = c("aut")), 
+    person("Alessandra", "Menafoglio", role = c("aut")),
+    person("Biagio", "Palumbo", role = c("aut")),
+    person("Simone", "Vantini", role = c("aut"))
+    )
+Description: Provides functional control charts 
+    for statistical process monitoring of functional data, 
+    using the methods of Capezza et al. (2020) <doi:10.1002/asmb.2507> and 
+    Centofanti et al. (2021) <doi:10.1080/00401706.2020.1753581>.
+    The package is thoroughly illustrated in the paper of 
+    Capezza et al (2023) <doi:10.1080/00224065.2023.2219012>.
+Depends: R (>= 3.6.0), robustbase
+Imports: fda, ggplot2, rlang, parallel, tidyr, patchwork, RSpectra,
+        matrixStats, roahd, dplyr, stringr, fda.usc, rrcov, rofanova,
+        Matrix, MASS, mvtnorm
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: covr, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+URL: https://github.com/unina-sfere/funcharts
+BugReports: https://github.com/unina-sfere/funcharts/issues
+NeedsCompilation: no
+Packaged: 2024-02-20 13:41:21 UTC; christian.capezza
+Author: Christian Capezza [cre, aut],
+  Fabio Centofanti [aut],
+  Antonio Lepore [aut],
+  Alessandra Menafoglio [aut],
+  Biagio Palumbo [aut],
+  Simone Vantini [aut]
+Maintainer: Christian Capezza <christian.capezza@unina.it>
+Repository: CRAN
+Date/Publication: 2024-02-22 08:50:02 UTC

@@ -1,0 +1,32 @@
+Package: TOSTER
+Version: 0.8.2
+Title: Two One-Sided Tests (TOST) Equivalence Testing
+Description: Two one-sided tests (TOST) procedure to test equivalence for t-tests, correlations, differences between proportions, and meta-analyses, including power analysis for t-tests and correlations. Allows you to specify equivalence bounds in raw scale units or in terms of effect sizes. See: Lakens (2017) <doi:10.1177/1948550617697177>.
+Authors@R: c(
+           person(given = "Daniel",family = "Lakens",
+           role = c("aut"),
+           email = "D.Lakens@tue.nl"),
+           person(given = "Aaron",
+           family = "Caldwell",
+           role = c("aut", "cre"),
+           email = "arcaldwell49@gmail.com"))
+Maintainer: Aaron Caldwell <arcaldwell49@gmail.com>
+URL: https://aaroncaldwell.us/TOSTERpkg/
+License: GPL-3
+Imports: stats, graphics, jmvcore (>= 0.9.6.4), ggplot2, ggdist,
+        distributional, cowplot, tidyr, utils, R6, lifecycle
+Suggests: knitr, rmarkdown, broom, car, afex, testthat (>= 3.0.0),
+        spelling
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+RoxygenNote: 7.2.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-04-16 15:54:09 UTC; CaldwellAaron
+Author: Daniel Lakens [aut],
+  Aaron Caldwell [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-04-16 16:40:02 UTC

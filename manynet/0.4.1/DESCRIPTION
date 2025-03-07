@@ -1,0 +1,47 @@
+Package: manynet
+Title: Many Ways to Make, Modify, Mark, and Map Myriad Networks
+Version: 0.4.1
+Date: 2024-01-24
+Description: A set of tools for making, modifying, marking, and mapping many different types of networks.
+   All functions operate with matrices, edge lists, and 'igraph', 'network', and 'tidygraph' objects,
+   and on one-mode, two-mode (bipartite), and sometimes three-mode networks.
+   The package includes functions for importing and exporting, creating and generating networks,
+   modifying networks and node and tie attributes,
+   and describing and visualizing networks with sensible defaults.
+URL: https://stocnet.github.io/manynet/
+BugReports: https://github.com/stocnet/manynet/issues
+Depends: R (>= 3.6.0)
+License: MIT + file LICENSE
+Language: en-GB
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.0
+Imports: dplyr (>= 1.1.0), ggplot2, ggraph, igraph (>= 1.6.0), network,
+        pillar, tidygraph
+Suggests: BiocManager, concaveman, gganimate, ggforce, gifski,
+        graphlayouts, grDevices, knitr, learnr, methods, migraph,
+        minMSE, multiplex, patchwork, png, readxl, rmarkdown, roxygen2,
+        RSiena, testthat (>= 3.0.0), xml2, future, furrr
+Enhances: Rgraphviz
+Authors@R: 
+    c(person(given = "James",
+             family = "Hollway",
+             role = c("cre", "aut", "ctb"),
+             email = "james.hollway@graduateinstitute.ch",
+             comment = c("IHEID", ORCID = "0000-0002-8361-9647")),
+      person(given = "Henrique",
+             family = "Sposito",
+             role = "ctb",
+             comment = c("IHEID", ORCID = "0000-0003-3420-6085"))
+    )
+Config/testthat/parallel: true
+Config/testthat/edition: 3
+Config/testthat/start-first: mark_is
+NeedsCompilation: no
+Packaged: 2024-01-24 19:43:00 UTC; hollway
+Author: James Hollway [cre, aut, ctb] (IHEID,
+    <https://orcid.org/0000-0002-8361-9647>),
+  Henrique Sposito [ctb] (IHEID, <https://orcid.org/0000-0003-3420-6085>)
+Maintainer: James Hollway <james.hollway@graduateinstitute.ch>
+Repository: CRAN
+Date/Publication: 2024-01-24 23:10:06 UTC

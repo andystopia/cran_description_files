@@ -1,0 +1,77 @@
+Package: pomp
+Type: Package
+Title: Statistical Inference for Partially Observed Markov Processes
+Version: 5.10
+Date: 2024-07-01
+Authors@R: c(person(given=c("Aaron","A."),family="King",role=c("aut","cre"),email="kingaa@umich.edu",comment=c(ORCID="0000-0001-6159-3207")),
+	  person(given=c("Edward","L."),family="Ionides",role="aut",comment=c(ORCID="0000-0002-4190-0174"))	,
+	  person(given="Carles",family="Bretó",role="aut",comment=c(ORCID="0000-0003-4695-4902")),
+	  person(given=c("Stephen","P."),family="Ellner",role="ctb",comment=c(ORCID="0000-0002-8351-9734")),
+	  person(given=c("Matthew","J."),family="Ferrari",role="ctb",comment=c(ORCID="0000-0001-5251-8168")),
+	  person(given="Sebastian",family="Funk",role="ctb",comment=c(ORCID="0000-0002-2842-3406")),
+	  person(given=c("Steven","G."),family="Johnson",role="ctb"),
+	  person(given=c("Bruce","E."),family="Kendall",role="ctb",comment=c(ORCID="0000-0003-1782-8106")),
+	  person(given=c("Michael"),family="Lavine",role="ctb"),
+	  person(given="Dao",family="Nguyen",role="ctb",comment=c(ORCID="0000-0003-2215-613X")),
+	  person(given=c("Eamon","B."),family="O'Dea",role="ctb",comment=c(ORCID="0000-0003-4748-683X")),
+	  person(given=c("Daniel","C."),family="Reuman",role="ctb"),
+	  person(given=c("Helen"),family="Wearing",role="ctb",comment=c(ORCID="0000-0002-9837-9797")),
+	  person(given=c("Simon","N."),family="Wood",role="ctb",comment=c(ORCID="0000-0002-2034-7453"))
+	  )
+URL: https://kingaa.github.io/pomp/
+Description: Tools for data analysis with partially observed Markov process (POMP) models (also known as stochastic dynamical systems, hidden Markov models, and nonlinear, non-Gaussian, state-space models).  The package provides facilities for implementing POMP models, simulating them, and fitting them to time series data by a variety of frequentist and Bayesian methods.  It is also a versatile platform for implementation of inference methods for general POMP models.
+Depends: R(>= 4.1.0)
+Imports: methods, stats, graphics, digest, mvtnorm, deSolve, coda,
+        data.table
+Suggests: ggplot2, knitr, dplyr, tidyr, subplex, nloptr
+SystemRequirements: For Windows users, Rtools (see
+        https://cran.r-project.org/bin/windows/Rtools/).
+License: GPL-3
+LazyData: true
+BugReports: https://github.com/kingaa/pomp/issues/
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'package.R' 'pstop.R' 'undefined.R' 'csnippet.R' 'pomp_fun.R'
+        'parameter_trans.R' 'covariate_table.R' 'skeleton_spec.R'
+        'rprocess_spec.R' 'safecall.R' 'pomp_class.R' 'load.R'
+        'workhorses.R' 'continue.R' 'summary.R' 'prior_spec.R'
+        'dmeasure_spec.R' 'dprocess_spec.R' 'rmeasure_spec.R'
+        'rinit_spec.R' 'dinit_spec.R' 'templates.R' 'builder.R'
+        'pomp.R' 'probe.R' 'abc.R' 'accumulators.R' 'melt.R' 'kalman.R'
+        'pfilter.R' 'wpfilter.R' 'proposals.R' 'pmcmc.R' 'mif2.R'
+        'listie.R' 'simulate.R' 'spect.R' 'plot.R' 'bsmc2.R'
+        'as_data_frame.R' 'as_pomp.R' 'bake.R' 'basic_components.R'
+        'basic_probes.R' 'betabinom.R' 'blowflies.R' 'bsflu.R'
+        'bsplines.R' 'childhood.R' 'coef.R' 'conc.R' 'concat.R'
+        'cond_logLik.R' 'covmat.R' 'dacca.R' 'design.R' 'ebola.R'
+        'eff_sample_size.R' 'elementary_algorithms.R' 'emeasure_spec.R'
+        'estimation_algorithms.R' 'eulermultinom.R' 'extract.R'
+        'filter_mean.R' 'filter_traj.R' 'flow.R' 'forecast.R'
+        'gompertz.R' 'kf.R' 'probe_match.R' 'spect_match.R' 'nlf.R'
+        'trajectory.R' 'traj_match.R' 'objfun.R' 'loglik.R'
+        'logmeanexp.R' 'lookup.R' 'mcap.R' 'obs.R' 'ou2.R' 'parmat.R'
+        'parus.R' 'pomp_examp.R' 'pred_mean.R' 'pred_var.R' 'show.R'
+        'print.R' 'profile_design.R' 'resample.R' 'ricker.R'
+        'runif_design.R' 'rw2.R' 'sannbox.R' 'saved_states.R' 'sir.R'
+        'slice_design.R' 'sobol_design.R' 'spy.R' 'states.R' 'time.R'
+        'timezero.R' 'traces.R' 'transformations.R' 'userdata.R'
+        'verhulst.R' 'vmeasure_spec.R' 'window.R' 'wquant.R'
+NeedsCompilation: yes
+Packaged: 2024-07-01 16:19:27 UTC; kingaa
+Author: Aaron A. King [aut, cre] (<https://orcid.org/0000-0001-6159-3207>),
+  Edward L. Ionides [aut] (<https://orcid.org/0000-0002-4190-0174>),
+  Carles Bretó [aut] (<https://orcid.org/0000-0003-4695-4902>),
+  Stephen P. Ellner [ctb] (<https://orcid.org/0000-0002-8351-9734>),
+  Matthew J. Ferrari [ctb] (<https://orcid.org/0000-0001-5251-8168>),
+  Sebastian Funk [ctb] (<https://orcid.org/0000-0002-2842-3406>),
+  Steven G. Johnson [ctb],
+  Bruce E. Kendall [ctb] (<https://orcid.org/0000-0003-1782-8106>),
+  Michael Lavine [ctb],
+  Dao Nguyen [ctb] (<https://orcid.org/0000-0003-2215-613X>),
+  Eamon B. O'Dea [ctb] (<https://orcid.org/0000-0003-4748-683X>),
+  Daniel C. Reuman [ctb],
+  Helen Wearing [ctb] (<https://orcid.org/0000-0002-9837-9797>),
+  Simon N. Wood [ctb] (<https://orcid.org/0000-0002-2034-7453>)
+Maintainer: Aaron A. King <kingaa@umich.edu>
+Repository: CRAN
+Date/Publication: 2024-07-01 16:40:02 UTC

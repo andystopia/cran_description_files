@@ -1,0 +1,47 @@
+Package: retroharmonize
+Type: Package
+Title: Ex Post Survey Data Harmonization
+Version: 0.1.17
+Date: 2021-06-27
+Authors@R: 
+    c(person(given = "Daniel",
+           family = "Antal",
+           role = c("aut", "cre"),
+           email = "daniel.antal@ceemid.eu",
+           comment = c(ORCID = "0000-0001-7513-6760")),
+      person(given = "Marta",
+           family = "Kolczynska",
+           role = c("ctb"),
+           email = "mkolczynska@gmail.com",
+           comment = c(ORCID = "0000-0003-4981-0437")), 
+      person(given = "Pyry",
+             family = "Kantanen", 
+             role = "ctb", 
+             comment = c(ORCID = "0000-0003-2853-2765"))
+      )
+Maintainer: Daniel Antal <daniel.antal@ceemid.eu>
+Description: Assist in reproducible retrospective (ex-post) harmonization of data,
+    particularly individual level survey data, by providing tools for organizing metadata,
+    standardizing the coding of variables, and variable names and value labels, 
+    including missing values, and documenting the data transformations,
+    with the help of comprehensive s3 classes.
+License: GPL-3
+Encoding: UTF-8
+Language: en-US
+URL: https://retroharmonize.dataobservatory.eu/
+BugReports: https://github.com/rOpenGov/retroharmonize/issues
+Imports: vctrs, haven, dplyr (>= 1.0.0), magrittr, stats, tibble,
+        labelled, methods, rlang, fs, assertthat, tidyselect, pillar,
+        snakecase, purrr, tidyr, here, glue, stringr, utils
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, covr, testthat, png, spelling, markdown,
+        ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-27 10:03:54 UTC; Daniel Antal
+Author: Daniel Antal [aut, cre] (<https://orcid.org/0000-0001-7513-6760>),
+  Marta Kolczynska [ctb] (<https://orcid.org/0000-0003-4981-0437>),
+  Pyry Kantanen [ctb] (<https://orcid.org/0000-0003-2853-2765>)
+Repository: CRAN
+Date/Publication: 2021-06-27 10:20:02 UTC

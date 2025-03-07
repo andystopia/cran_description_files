@@ -1,0 +1,56 @@
+Package: marginaleffects
+Title: Marginal Effects, Marginal Means, Predictions, and Contrasts
+Version: 0.3.4
+Authors@R: 
+    c(person(given = "Vincent",
+             family = "Arel-Bundock",
+             role = c("aut", "cre", "cph"),
+             email = "vincent.arel-bundock@umontreal.ca",
+             comment = c(ORCID = "0000-0003-2042-7063")))
+Description: Compute, summarize, and plot marginal effects, adjusted predictions, contrasts, and marginal means for a wide variety of models.
+License: GPL (>= 3)
+Copyright: inst/COPYRIGHTS
+Encoding: UTF-8
+URL: https://vincentarelbundock.github.io/marginaleffects/
+        https://github.com/vincentarelbundock/marginaleffects
+BugReports: https://github.com/vincentarelbundock/marginaleffects/issues
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Depends: R (>= 3.5.0)
+Imports: checkmate, generics, insight (>= 0.14.5), methods
+Suggests: bench, brms, broom, data.table, dplyr, emmeans, ggdist,
+        ggplot2, ggbeeswarm, gt, haven, kableExtra, knitr, magrittr,
+        margins, modelsummary, systemfonts, patchwork, quantreg, rlang,
+        rmarkdown, testthat (>= 3.0.0), tidyverse, vdiffr, AER, aod,
+        betareg, bife, brglm2, crch, estimatr, fixest (>= 0.10.1), gam,
+        geepack, glmx, ivreg, lme4, lmerTest, MASS, mclogit, mgcv,
+        nlme, nnet, ordinal, plm, pscl, rms, robust, robustbase,
+        robustlmm, rstantools, rstanarm, sandwich, scam, speedglm,
+        survey, survival, truncreg, covr, spelling
+Collate: 'complete_levels.R' 'datagrid.R' 'get_coef.R'
+        'get_contrasts.R' 'get_dydx.R' 'get_gradient.R'
+        'get_group_names.R' 'get_hdi.R' 'get_jacobian.R'
+        'get_predict.R' 'get_vcov.R' 'marginaleffects.R'
+        'marginalmeans.R' 'mean_or_mode.R' 'set_coef.R'
+        'methods_MASS.R' 'methods_aod.R' 'methods_betareg.R'
+        'methods_bife.R' 'sanity_model.R' 'methods_nnet.R'
+        'methods_brglm2.R' 'methods_brms.R' 'methods_crch.R'
+        'methods_fixest.R' 'methods_glmx.R' 'methods_lme4.R'
+        'methods_mclogit.R' 'methods_mgcv.R' 'methods_ordinal.R'
+        'methods_plm.R' 'methods_pscl.R' 'methods_quantreg.R'
+        'methods_robust.R' 'methods_robustlmm.R' 'methods_rstanarm.R'
+        'methods_scam.R' 'methods_stats.R' 'methods_survival.R'
+        'package.R' 'plot.R' 'plot_cap.R' 'plot_cme.R' 'poorman.R'
+        'posteriordraws.R' 'predictions.R' 'sanity.R' 'sanity_dots.R'
+        'sanity_type.R' 'standard_errors_delta.R' 'summary.R' 'tidy.R'
+        'type_dictionary.R' 'utils.R'
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-03-03 03:27:30 UTC; vincent
+Author: Vincent Arel-Bundock [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2042-7063>)
+Maintainer: Vincent Arel-Bundock <vincent.arel-bundock@umontreal.ca>
+Repository: CRAN
+Date/Publication: 2022-03-03 10:50:02 UTC

@@ -1,0 +1,24 @@
+Package: SplitGLM
+Type: Package
+Title: Split Generalized Linear Models
+Version: 1.0.0
+Date: 2021-02-03
+Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>,
+    Stefan Van Aelst <stefan.vanaelst@kuleuven.be>,
+    Ruben Zamar <ruben@stat.ubc.ca>
+Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
+Description: Functions to compute split generalized linear models. The approach fits 
+             generalized linear models that split the covariates into groups. The 
+             optimal split of the variables into groups and the regularized estimation 
+             of the coefficients are performed by minimizing an objective function 
+             that encourages sparsity within each group and diversity among them.
+License: GPL (>= 2)
+Biarch: true
+Imports: Rcpp (>= 1.0.3), mvnfast
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.0.2
+Suggests: testthat, vctrs
+NeedsCompilation: yes
+Packaged: 2021-02-04 05:56:10 UTC; antho
+Repository: CRAN
+Date/Publication: 2021-02-09 10:00:03 UTC

@@ -1,0 +1,48 @@
+Type: Package
+Package: melt
+Title: Multiple Empirical Likelihood Tests
+Version: 1.11.2
+Authors@R: c(
+    person("Eunseop", "Kim", , "markean@pm.me", role = c("aut", "cph", "cre")),
+    person("Steven", "MacEachern", role = c("ctb", "ths")),
+    person("Mario", "Peruggia", role = c("ctb", "ths")),
+    person("Pierre", "Chausse", role = "rev"),
+    person("Alex", "Stringer", role = "rev")
+  )
+Description: Performs multiple empirical likelihood tests. It offers an
+    easy-to-use interface and flexibility in specifying hypotheses and
+    calibration methods, extending the framework to simultaneous
+    inferences.  The core computational routines are implemented using the
+    'Eigen' 'C++' library and 'RcppEigen' interface, with 'OpenMP' for
+    parallel computation.  Details of the testing procedures are provided
+    in Kim, MacEachern, and Peruggia (2023)
+    <doi:10.1080/10485252.2023.2206919>. A companion paper by Kim,
+    MacEachern, and Peruggia (2024) <doi:10.18637/jss.v108.i05> is
+    available for further information. This work was supported by the U.S.
+    National Science Foundation under Grants No. SES-1921523 and
+    DMS-2015552.
+License: GPL (>= 2)
+URL: https://docs.ropensci.org/melt/, https://github.com/ropensci/melt
+BugReports: https://github.com/ropensci/melt/issues
+Depends: R (>= 4.1.0)
+Imports: checkmate, graphics, methods, Rcpp, stats, utils
+Suggests: car, carData, covr, dplyr, ggplot2, ggridges, knitr, MASS,
+        microbenchmark, multcomp, rmarkdown, spelling, testthat (>=
+        3.0.0), withr
+LinkingTo: BH, dqrng, Rcpp, RcppEigen
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.3.1
+Packaged: 2024-03-21 01:50:26 UTC; markean
+Author: Eunseop Kim [aut, cph, cre],
+  Steven MacEachern [ctb, ths],
+  Mario Peruggia [ctb, ths],
+  Pierre Chausse [rev],
+  Alex Stringer [rev]
+Maintainer: Eunseop Kim <markean@pm.me>
+Repository: CRAN
+Date/Publication: 2024-03-21 03:40:02 UTC

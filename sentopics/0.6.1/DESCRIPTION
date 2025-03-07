@@ -1,0 +1,55 @@
+Package: sentopics
+Type: Package
+Title: Tools for Joint Sentiment and Topic Analysis of Textual Data
+Version: 0.6.1
+Date: 2022-03-02
+Authors@R: c(
+  person("Olivier", "Delmarcelle", email = "delmarcelle.olivier@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4347-070X")),
+  person("Samuel", "Borms", email = "samuel.borms@unine.ch", role = c("ctb"), comment = c(ORCID = "0000-0001-9533-1870")),
+  person("Chengua", "Lin", email = "chenghua.lin@abdn.ac.uk", role = "cph", comment = "Original JST implementation"),
+  person("Yulan", "He", email = "yulan.he@warwick.ac.uk", role = "cph", comment = "Original JST implementation"),
+  person("Jose", "Bernardo", role = "cph", comment = "Original JST implementation"),
+  person("David", "Robinson", , "admiral.david@gmail.com", role = "cph", comment = "Implementation of reorder_within()"),
+  person("Julia", "Silge", , "julia.silge@gmail.com", role = "cph",
+           comment = c("Implementation of reorder_within()", ORCID = "0000-0002-3671-836X"))
+  )
+Maintainer: Olivier Delmarcelle <delmarcelle.olivier@gmail.com>
+Description: A framework that joins topic modeling and sentiment analysis of
+  textual data. The package implements a fast Gibbs sampling estimation of
+  Latent Dirichlet Allocation (Griffiths and Steyvers (2004)
+  <doi:10.1073/pnas.0307752101>) and Joint Sentiment/Topic Model (Lin, He,
+  Everson and Ruger (2012) <doi:10.1109/TKDE.2011.48>). It offers a variety of
+  helpers and visualizations to analyze the result of topic modeling. The
+  framework also allows enriching topic models with dates and externally
+  computed sentiment measures. A flexible aggregation scheme enables the
+  creation of time series of sentiment or topical proportions from the enriched
+  topic models. Moreover, a novel method jointly aggregates topic proportions
+  and sentiment measures to derive time series of topical sentiment.
+License: GPL (>= 3)
+BugReports: https://github.com/odelmarcelle/sentopics/issues
+URL: https://github.com/odelmarcelle/sentopics
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.4.6), methods, quanteda (>= 3.2.0), data.table
+        (>= 1.13.6), foreach, future, doFuture, doRNG, RcppHungarian
+Suggests: ggplot2, ggridges, plotly, RColorBrewer, xts, zoo, testthat,
+        covr, textcat, stringr, sentometrics, spacyr, knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+RcppModules: model_module
+RoxygenNote: 7.1.2
+LazyData: true
+SystemRequirements: C++11
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-03-09 12:34:00 UTC; Olivier
+Author: Olivier Delmarcelle [aut, cre]
+    (<https://orcid.org/0000-0003-4347-070X>),
+  Samuel Borms [ctb] (<https://orcid.org/0000-0001-9533-1870>),
+  Chengua Lin [cph] (Original JST implementation),
+  Yulan He [cph] (Original JST implementation),
+  Jose Bernardo [cph] (Original JST implementation),
+  David Robinson [cph] (Implementation of reorder_within()),
+  Julia Silge [cph] (Implementation of reorder_within(),
+    <https://orcid.org/0000-0002-3671-836X>)
+Repository: CRAN
+Date/Publication: 2022-03-10 08:00:02 UTC

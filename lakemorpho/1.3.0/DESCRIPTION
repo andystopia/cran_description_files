@@ -1,0 +1,38 @@
+Package: lakemorpho
+Type: Package
+Title: Lake Morphometry Metrics
+Version: 1.3.0
+Authors@R: c(
+    person(given = "Jeffrey W.", family = "Hollister",
+    role = c("aut","cre"),
+    email = "hollister.jeff@epa.gov", 
+    comment = c(ORCID = c("0000-0002-9254-9740"))),
+    person(given = "Jemma", family = "Stachelek",
+    role = "aut", 
+    comment = c(ORCID = c("0000-0002-5924-2464")))
+    )
+URL: https://github.com/jhollist/lakemorpho/
+BugReports: https://github.com/jhollist/lakemorpho/issues/
+Maintainer: Jeffrey W. Hollister <hollister.jeff@epa.gov>
+License: CC0
+Encoding: UTF-8
+Description: Lake morphometry metrics are used by limnologists to understand,
+    among other things, the ecological processes in a lake. Traditionally, these
+    metrics are calculated by hand, with planimeters, and increasingly with
+    commercial GIS products. All of these methods work; however, they are either
+    outdated, difficult to reproduce, or require expensive licenses to use. The
+    'lakemorpho' package provides the tools to calculate a typical suite
+    of these metrics from an input elevation model and lake polygon. The metrics
+    currently supported are: fetch, major axis, minor axis, major/minor axis 
+    ratio, maximum length, maximum width, mean width, maximum depth, mean depth, 
+    shoreline development, shoreline length, surface area, and volume.
+Depends: R (>= 3.5.0)
+Imports: methods, stats, grDevices, raster, sp, sf, geosphere, cluster
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-15 19:28:42 UTC; JHollist
+Author: Jeffrey W. Hollister [aut, cre]
+    (<https://orcid.org/0000-0002-9254-9740>),
+  Jemma Stachelek [aut] (<https://orcid.org/0000-0002-5924-2464>)
+Repository: CRAN
+Date/Publication: 2023-09-15 22:12:09 UTC

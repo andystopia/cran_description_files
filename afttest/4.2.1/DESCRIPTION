@@ -1,0 +1,26 @@
+Package: afttest
+Type: Package
+Title: Model Diagnostics for Accelerated Failure Time Models
+Version: 4.2.1
+Date: 2022-08-24
+Authors@R: c(person("WooJung", "Bae", email = "matt.woojung@gmail.com", role = c("aut", "cre")),
+	   person("Dongrak", "Choi", role = "aut"),
+	   person("Sangwook", "Kang", role = "aut"))
+Author: WooJung Bae [aut, cre],
+  Dongrak Choi [aut],
+  Sangwook Kang [aut]
+Maintainer: WooJung Bae <matt.woojung@gmail.com>
+URL: https://github.com/WooJungBae/afttest
+BugReports: https://github.com/WooJungBae/afttest/issues
+Description: A collection of model checking methods for semiparametric accelerated failure time (AFT) models under the rank-based approach. For the (computational) efficiency, Gehan's weight is used. It provides functions to verify whether the observed data fit the specific model assumptions such as a functional form of each covariate, a link function, and an omnibus test. The p-value offered in this package is based on the Kolmogorov-type supremum test and the variance of the proposed test statistics is estimated through the re-sampling method. Furthermore, a graphical technique to compare the shape of the observed residual to a number of the approximated realizations is provided.
+License: GPL (>= 3)
+Depends: R (>= 3.4.0)
+Imports: Rcpp, survival, aftgee, ggplot2, gridExtra
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Collate: 'RcppExports.R' 'afttest.R' 'source_r.R' 'afttestplot.R'
+NeedsCompilation: yes
+Packaged: 2022-08-28 15:57:10 UTC; WooJung
+Repository: CRAN
+Date/Publication: 2022-08-29 12:20:02 UTC

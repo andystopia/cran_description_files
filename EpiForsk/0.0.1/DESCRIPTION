@@ -1,0 +1,30 @@
+Package: EpiForsk
+Title: Code Sharing at the Department of Epidemiological Research at
+        Statens Serum Institut
+Version: 0.0.1
+Authors@R: 
+    person("Anna", "Laksafoss", , "adls@ssi.dk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9898-2924"))
+Description: This is a collection of assorted functions and examples collected 
+    from various projects. Currently we have functionalities for simplifying 
+    overlapping time intervals, Charlson comorbidity score constructors for 
+    Danish data, sibling design linear regression functionalities, and a method 
+    for calculating the confidence intervals for functions of parameters from a 
+    GLM.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cowplot, data.table, doParallel, dplyr, foreach, ggplot2,
+        glue, parallel, purrr, rlang, stringr, tibble, tidyr,
+        tidyselect (>= 1.2.0)
+Depends: R (>= 4.2)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-09 09:46:23 UTC; B245807
+Author: Anna Laksafoss [aut, cre] (<https://orcid.org/0000-0002-9898-2924>)
+Maintainer: Anna Laksafoss <adls@ssi.dk>
+Repository: CRAN
+Date/Publication: 2023-02-10 10:10:11 UTC

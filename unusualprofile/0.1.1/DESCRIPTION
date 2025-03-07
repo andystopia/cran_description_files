@@ -1,0 +1,39 @@
+Type: Package
+Package: unusualprofile
+Title: Calculates Conditional Mahalanobis Distances
+Version: 0.1.1
+Authors@R: c(
+    person("W. Joel", "Schneider", , "w.joel.schneider@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8393-5316")),
+    person("Feng", "Ji", , "fengji@berkeley.edu", role = "aut")
+  )
+Description: Calculates a Mahalanobis distance for every row of a set of
+    outcome variables (Mahalanobis, 1936
+    <doi:10.1007/s13171-019-00164-5>). The conditional Mahalanobis
+    distance is calculated using a conditional covariance matrix (i.e., a
+    covariance matrix of the outcome variables after controlling for a set
+    of predictors). Plotting the output of the cond_maha() function can
+    help identify which elements of a profile are unusual after
+    controlling for the predictors.
+License: GPL (>= 3)
+URL: https://github.com/wjschne/unusualprofile
+BugReports: https://github.com/wjschne/unusualprofile/issues
+Depends: R (>= 3.1)
+Imports: dplyr, ggnormalviolin, ggplot2, magrittr, purrr, rlang, stats,
+        tibble, tidyr
+Suggests: bookdown, covr, extrafont, forcats, glue, kableExtra, knitr,
+        lavaan, lifecycle, mvtnorm, patchwork, ragg, rmarkdown,
+        roxygen2, scales, simstandard (>= 0.6.3), stringr, sysfonts,
+        testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: TRUE
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2022-11-30 00:20:01 UTC; renee
+Author: W. Joel Schneider [aut, cre] (<https://orcid.org/0000-0002-8393-5316>),
+  Feng Ji [aut]
+Maintainer: W. Joel Schneider <w.joel.schneider@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-11-30 00:40:02 UTC

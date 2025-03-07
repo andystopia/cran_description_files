@@ -1,0 +1,51 @@
+Package: PROsetta
+Type: Package
+Title: Linking Patient-Reported Outcomes Measures
+Version: 0.3.0
+Date: 2021-04-01
+Authors@R: c(
+    person("Seung W.", "Choi",
+        email = "schoi@austin.utexas.edu",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-4777-5420")),
+    person("Sangdon", "Lim",
+        email = "sangdonlim@utexas.edu",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-2988-014X")),
+    person("Benjamin D.", "Schalet",
+        email = "b-schalet@northwewstern.edu",
+        role = c("ctb")),
+    person("Aaron J.", "Kaat",
+        email = "aaron.kaat@northwestern.edu",
+        role = c("ctb")),
+    person("David", "Cella",
+        email = "d-cella@northwestern.edu",
+        role = c("ctb")))
+Description: Perform scale linking to establish relationships between instruments
+    that measure similar constructs according to the PROsetta Stone methodology, as in Choi, Schalet, Cook, & Cella (2014) <doi:10.1037/a0035768>.
+URL: http://prosettastone.org (project description),
+        https://choi-phd.github.io/PROsetta/ (documentation)
+BugReports: https://github.com/choi-phd/PROsetta/issues
+Imports: equate, lavaan, mirt, plink, psych, methods, mvnfast
+Depends: R (>= 3.5.0)
+Suggests: shiny, shinythemes, shinyWidgets, shinyjs, DT, knitr,
+        kableExtra, testthat (>= 2.1.0), rmarkdown, dplyr, pkgdown
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Collate: 'import.R' 'configPROsetta.R' 'post_functions.R'
+        'core_functions.R' 'datasets.R' 'example.R'
+        'helper_functions.R' 'linking_functions.R' 'plot_functions.R'
+        'runshiny.R'
+NeedsCompilation: no
+Packaged: 2021-04-12 22:38:58 UTC; chois1
+Author: Seung W. Choi [aut, cre] (<https://orcid.org/0000-0003-4777-5420>),
+  Sangdon Lim [aut] (<https://orcid.org/0000-0002-2988-014X>),
+  Benjamin D. Schalet [ctb],
+  Aaron J. Kaat [ctb],
+  David Cella [ctb]
+Maintainer: Seung W. Choi <schoi@austin.utexas.edu>
+Repository: CRAN
+Date/Publication: 2021-04-13 15:50:02 UTC
