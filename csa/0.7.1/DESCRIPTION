@@ -1,0 +1,33 @@
+Package: csa
+Title: A Cross-Scale Analysis Tool for Model-Observation Visualization
+        and Integration
+Version: 0.7.1
+Authors@R: c(
+  person("Yannis", "Markonis", email = "imarkonis@gmail.com", role = c("aut", "cre")),
+  person("Christoforos", "Pappas", email = "christoforos.pappas@umontreal.ca", role = c("aut")),
+  person("Mijael", "Vargas", email = "vargas_godoy@fzp.czu.cz", role = c("ctb")),
+  person("Simon", "Papalexiou", email = "simon@uni.edu", role = c("ctb")),
+  person("Martin", "Hanel", email = "hanel@fzp.czu.cz", role = c("ctb"))
+  )
+Description: Integration of Earth system data from various sources is a challenging task. Except for their qualitative heterogeneity, different data records exist for describing similar Earth system process at different spatio-temporal scales. Data inter-comparison and validation are usually performed at a single spatial or temporal scale, which could hamper the identification of potential discrepancies in other scales. 'csa' package offers a simple, yet efficient, graphical method for synthesizing and comparing observed and modelled data across a range of spatio-temporal scales. Instead of focusing at specific scales, such as annual means or original grid resolution, we examine how their statistical properties change across spatio-temporal continuum.  
+Depends: R (>= 3.4.0)
+Imports: grDevices, stats, ggplot2, data.table, scales, reshape2,
+        moments, Lmoments, foreach, ggpubr, raster, doParallel,
+        parallel
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/imarkonis/csa
+BugReports: https://github.com/imarkonis/csa/issues
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 2.1.0), colorspace
+NeedsCompilation: no
+Packaged: 2023-10-23 15:21:23 UTC; mirovago
+Author: Yannis Markonis [aut, cre],
+  Christoforos Pappas [aut],
+  Mijael Vargas [ctb],
+  Simon Papalexiou [ctb],
+  Martin Hanel [ctb]
+Maintainer: Yannis Markonis <imarkonis@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-24 13:40:11 UTC

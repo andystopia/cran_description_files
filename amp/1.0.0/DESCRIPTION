@@ -1,0 +1,37 @@
+Package: amp
+Type: Package
+Title: Statistical Test for the Multivariate Point Null Hypotheses
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Adam",
+             family = "Elder",
+             role = c("aut", "cre"),
+             email = "shmelder@gmail.com",
+             comment = c(ORCID = "0000-0003-1665-2639")),
+      person(given = "Marco", 
+             family = "Carone",
+             role = "ths",
+             comment = c(ORCID = "0000-0003-2106-0953")),
+      person(given = "Alex", 
+             family = "Luedtke",
+             role = "ths", 
+             comment = c(ORCID = "0000-0002-9936-3236")))
+Description: A testing framework for testing the multivariate point null hypothesis. 
+    A testing framework described in Elder et al. (2022) <arXiv:2203.01897> to test the multivariate point null hypothesis.  After the user selects a parameter of interest and defines the assumed data generating mechanism, this information should be encoded in functions for the parameter estimator and its corresponding influence curve. Some parameter and data generating mechanism combinations have codings in this package, and are explained in detail in the article.
+License: GPL (>= 3)
+Encoding: UTF-8
+BugReports: https://github.com/adam-s-elder/amp/issues
+Imports: MASS, stats, SuperLearner, glmnet, dplyr, rlang, ggplot2,
+        tidyr
+RoxygenNote: 7.1.2
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-03-25 16:00:34 UTC; adamelder
+Author: Adam Elder [aut, cre] (<https://orcid.org/0000-0003-1665-2639>),
+  Marco Carone [ths] (<https://orcid.org/0000-0003-2106-0953>),
+  Alex Luedtke [ths] (<https://orcid.org/0000-0002-9936-3236>)
+Maintainer: Adam Elder <shmelder@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-04-06 07:32:30 UTC

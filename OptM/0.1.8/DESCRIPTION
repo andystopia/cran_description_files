@@ -1,0 +1,26 @@
+Package: OptM
+Title: Estimating the Optimal Number of Migration Edges from 'Treemix'
+Version: 0.1.8
+Authors@R: person("Robert", "Fitak", email = "rfitak9@gmail.com", role = c("aut", "cre"))
+Description: The popular population genetic software 'Treemix' by
+    'Pickrell and Pritchard' (2012) <DOI:10.1371/journal.pgen.1002967>
+    estimates the number of migration edges on a population tree.
+    However, it can be difficult to determine the number of migration
+    edges to include. Previously, it was customary to stop adding migration
+    edges when 99.8% of variation in the data was explained, but 'OptM'
+    automates this process using an ad hoc statistic based on the
+    second-order rate of change in the log likelihood.  'OptM' also
+    has added functionality for various threshold modeling
+    to compare with the ad hoc statistic.
+Maintainer: Robert Fitak <rfitak9@gmail.com>
+Author: Robert Fitak [aut, cre]
+Depends: R (>= 3.2.2)
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+Imports: SiZer (>= 0.1-4), stats, grDevices
+Date: 2024-6-16
+Repository: CRAN
+RoxygenNote: 7.3.1
+Packaged: 2024-06-17 03:06:07 UTC; rfitak
+Date/Publication: 2024-06-17 03:50:02 UTC

@@ -1,0 +1,38 @@
+Package: flowchart
+Type: Package
+Title: Tidy Flowchart Generator
+Version: 0.7.0
+Authors@R: c(
+    person("Pau", "Satorra", , "psatorra@igtp.cat", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8144-4089")),
+    person("João", "Carmezim", role = "aut",
+           comment = c(ORCID = "0009-0009-1443-5578")),
+    person("Natàlia", "Pallarès", role = "aut",
+           comment = c(ORCID = "0000-0002-1462-379X")),
+    person("Cristian", "Tebé", role = "aut",
+           comment = c(ORCID = "0000-0003-2320-1385")),
+    person("Kenneth", "Taylor", role = "ctb",
+           comment = c(ORCID = "0000-0002-3205-9280"))
+  )
+Maintainer: Pau Satorra <psatorra@igtp.cat>
+Description: Creates participant flow diagrams directly from a dataframe. Representing the flow of participants through each stage of a study, especially in clinical trials, is essential to assess the generalisability and validity of the results. This package provides a set of functions that can be combined with a pipe operator to create all kinds of flowcharts from a data frame in an easy way.
+License: GPL (>= 3)
+BugReports: https://github.com/bruigtp/flowchart/issues
+Encoding: UTF-8
+LazyData: true
+Imports: Gmisc, grid, tidyr, dplyr (>= 1.1.0), purrr, stringr, tibble,
+        tidyselect, rlang, grDevices
+Suggests: knitr, ragg, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.2
+URL: https://bruigtp.github.io/flowchart/
+NeedsCompilation: no
+Packaged: 2025-01-20 13:50:38 UTC; psatorra
+Author: Pau Satorra [aut, cre] (<https://orcid.org/0000-0002-8144-4089>),
+  João Carmezim [aut] (<https://orcid.org/0009-0009-1443-5578>),
+  Natàlia Pallarès [aut] (<https://orcid.org/0000-0002-1462-379X>),
+  Cristian Tebé [aut] (<https://orcid.org/0000-0003-2320-1385>),
+  Kenneth Taylor [ctb] (<https://orcid.org/0000-0002-3205-9280>)
+Repository: CRAN
+Date/Publication: 2025-01-20 14:10:01 UTC

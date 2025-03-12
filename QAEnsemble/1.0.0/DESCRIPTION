@@ -1,0 +1,35 @@
+Package: QAEnsemble
+Title: Ensemble Quadratic and Affine Invariant Markov Chain Monte Carlo
+Version: 1.0.0
+Authors@R: c(person("Weston", "Roda", email = "wroda@ihe.ca", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7200-7605")), person("Karsten", "Hempel", email = "khempel@ihe.ca", role = c("aut"), comment = c(ORCID = "0000-0003-3273-4247")), person("Sasha", "van Katwyk", email = "skatwyk@ihe.ca", role = c("aut"), comment = c(ORCID = "0000-0003-3026-2063")), person("Diepreye", "Ayabina", email = "dayabina@ihe.ca", role = c("aut"), comment = c(ORCID = "0000-0002-7005-6734")), person("Children's Hospital of Eastern Ontario", role = c("fnd")), person("Canada's Drug Agency", role = c("fnd")), person("Institute of Health Economics", role = "cph"))
+Description: The Ensemble Quadratic and Affine Invariant Markov chain Monte 
+    Carlo algorithms provide an efficient way to perform Bayesian inference in 
+    difficult parameter space geometries. The Ensemble Quadratic Monte Carlo 
+    algorithm was developed by Militzer (2023) <doi:10.3847/1538-4357/ace1f1>. 
+    The Ensemble Affine Invariant algorithm was developed by Goodman and Weare 
+    (2010) <doi:10.2140/camcos.2010.5.65> and it was implemented in Python by 
+    Foreman-Mackey et al (2013) <doi:10.48550/arXiv.1202.3665>. The Quadratic 
+    Monte Carlo method was shown to perform better than the Affine Invariant 
+    method in the paper by Militzer (2023) <doi:10.3847/1538-4357/ace1f1> and 
+    the Quadratic Monte Carlo method is the default method used. The Chen-Shao 
+    Highest Posterior Density Estimation algorithm is used for obtaining 
+    credible intervals and the potential scale reduction factor diagnostic is 
+    used for checking the convergence of the chains.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: coda, diagram, expm, knitr, rmarkdown, svMisc
+VignetteBuilder: knitr
+Imports: stats
+NeedsCompilation: no
+Packaged: 2025-01-08 18:47:26 UTC; wroda
+Author: Weston Roda [aut, cre] (<https://orcid.org/0000-0001-7200-7605>),
+  Karsten Hempel [aut] (<https://orcid.org/0000-0003-3273-4247>),
+  Sasha van Katwyk [aut] (<https://orcid.org/0000-0003-3026-2063>),
+  Diepreye Ayabina [aut] (<https://orcid.org/0000-0002-7005-6734>),
+  Children's Hospital of Eastern Ontario [fnd],
+  Canada's Drug Agency [fnd],
+  Institute of Health Economics [cph]
+Maintainer: Weston Roda <wroda@ihe.ca>
+Repository: CRAN
+Date/Publication: 2025-01-09 14:50:05 UTC

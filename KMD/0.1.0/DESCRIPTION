@@ -1,0 +1,29 @@
+Package: KMD
+Type: Package
+Title: Kernel Measure of Multi-Sample Dissimilarity
+Version: 0.1.0
+Authors@R: 
+    person("Zhen", "Huang", , "zh2395@columbia.edu", role = c("aut", "cre"))
+Maintainer: Zhen Huang <zh2395@columbia.edu>
+Description: Implementations of the kernel measure of multi-sample dissimilarity (KMD) between
+    several samples using K-nearest neighbor graphs and minimum spanning trees. The KMD 
+    measures the dissimilarity between multiple samples, based on the observations from them.
+    It converges to the population quantity (depending on the kernel) which is between 0 and 1.
+    A small value indicates the multiple samples are from the same distribution, and a large value
+    indicates the corresponding distributions are different. The population quantity is 0 if and only
+    if all distributions are the same, and 1 if and only if all distributions are mutually singular.
+    The package also implements the tests based on KMD for H0: the M distributions are equal
+    against H1: not all the distributions are equal. Both permutation test and asymptotic test are
+    available. These tests are consistent against all alternatives where at least two samples have
+    different distributions. For more details on KMD and the associated tests, see Huang, Z. and
+    B. Sen (2022) <arXiv:2210.00634>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Depends: R (>= 4.0.0), data.table
+Imports: RANN, proxy, mlpack, boot, igraph
+NeedsCompilation: no
+Packaged: 2022-10-05 18:21:01 UTC; huangzhen
+Author: Zhen Huang [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-10-06 16:10:12 UTC

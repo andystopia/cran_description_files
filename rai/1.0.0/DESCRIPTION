@@ -1,0 +1,32 @@
+Package: rai
+Type: Package
+Title: Revisiting-Alpha-Investing for Polynomial Regression
+Version: 1.0.0
+Authors@R: c(
+    person("Kory D.", "Johnson", email = "korydjohnson@gmail.com", role = c("aut", "cre")),
+    person("Robert A.", "Stine", email = "stine@wharton.upenn.edu", role = "aut")
+    )
+Description: A modified implementation of stepwise regression that greedily searches 
+    the space of interactions among features in order to build polynomial regression models.
+    Furthermore, the hypothesis tests conducted are valid-post model selection
+    due to the use of a revisiting procedure that implements an alpha-investing
+    rule. As a result, the set of rejected sequential hypotheses is proven to 
+    control the marginal false discover rate. When not searching for polynomials,
+    the package provides a statistically valid algorithm
+    to run and terminate stepwise regression. For more information, see 
+    Johnson, Stine, and Foster (2019) <arXiv:1510.06322>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/korydjohnson/rai
+BugReports: https://github.com/korydjohnson/rai/issues
+Imports: stats, dplyr, ggplot2, readr, rlang
+Suggests: testthat
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-07-01 14:25:43 UTC; kory
+Author: Kory D. Johnson [aut, cre],
+  Robert A. Stine [aut]
+Maintainer: Kory D. Johnson <korydjohnson@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-02 15:40:03 UTC

@@ -1,0 +1,27 @@
+Package: EquiTrends
+Type: Package
+Title: Equivalence Testing for Pre-Trends in Difference-in-Differences
+        Designs
+Version: 1.0.0
+Authors@R: c(
+    person("Ties", "Bos", email = "tc.bos@student.maastrichtuniversity.nl", role = c("aut","cre")),
+    person("Martin", "Schumann", email = "m.schumann@maastrichtuniversity.nl", role = "ctb"))
+Maintainer: Ties Bos <tc.bos@student.maastrichtuniversity.nl>
+Description: Testing for parallel trends is crucial in the Difference-in-Differences framework. To this end, this package performs equivalence testing in the context of Difference-in-Differences estimation. It allows users to test if pre-treatment trends in the treated group are “equivalent” to those in the control group. Here, “equivalence” means that rejection of the null hypothesis implies that a function of the pre-treatment placebo effects (maximum absolute, average or root mean squared value) does not exceed a pre-specified threshold below which trend differences are considered negligible. The package is based on the theory developed in Dette & Schumann (2024) <doi:10.1080/07350015.2024.2308121>. 
+License: MIT + file LICENSE
+Imports: clubSandwich, nloptr, dplyr, rlang, plm, Rcpp (>= 1.0.12),
+        RcppParallel, stats, VGAM
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+URL: https://github.com/TiesBos/EquiTrends
+BugReports: https://github.com/TiesBos/EquiTrends/issues
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-08-29 17:40:12 UTC; tiesbos
+Author: Ties Bos [aut, cre],
+  Martin Schumann [ctb]
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-09-03 15:40:02 UTC

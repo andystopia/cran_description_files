@@ -1,0 +1,42 @@
+Package: pwrFDR
+Version: 3.2.4
+Title: FDR Power
+Authors@R: person("Grant", "Izmirlian", role=c("aut", "cre"),
+                  email="izmirlig@mail.nih.gov")
+Imports: flextable, ggplot2, methods, mvtnorm, stats, stringr,
+        TableMonster
+Description: Computing Average and TPX Power under various BHFDR type sequential
+    procedures. All of these procedures involve control of some summary of the
+    distribution of the FDP, e.g. the proportion of discoveries which are false
+    in a given experiment. The most widely known of these, the BH-FDR procedure,
+    controls the FDR which is the mean of the FDP. A lesser known procedure, due
+    to Lehmann and Romano, controls the FDX, or probability that the FDP exceeds
+    a user provided threshold. This is less conservative than FWE control
+    procedures but much more conservative than the BH-FDR proceudre. This
+    package and the references supporting it introduce a new procedure for
+    controlling the FDX which we call the BH-FDX procedure. This procedure
+    iteratively identifies, given alpha and lower threshold delta, an alpha*
+    less than alpha at which BH-FDR guarantees FDX control.  This uses
+    asymptotic approximation and is only slightly more conservative than the
+    BH-FDR procedure. Likewise, we can think of the power in multiple testing
+    experiments in terms of a summary of the distribution of the True Positive
+    Proportion (TPP), the portion of tests truly non-null distributed that are
+    called significant. The package will compute power, sample size or any other
+    missing parameter required for power defined as (i) the mean of the TPP
+    (average power) or (ii) the probability that the TPP exceeds a given value,
+    lambda, (TPX power) via asymptotic approximation. All supplied theoretical
+    results are also obtainable via simulation. The suggested approach is to
+    narrow in on a design via the theoretical approaches and then make final
+    adjustments/verify the results by simulation. The theoretical results are
+    described in Izmirlian, G (2020) Statistics and Probability letters,
+    "<doi:10.1016/j.spl.2020.108713>", and an applied paper describing the
+    methodology with a simulation study is in preparation.
+    See citation("pwrFDR").
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2025-01-14 05:06:47 UTC; izmirlig
+Author: Grant Izmirlian [aut, cre]
+Maintainer: Grant Izmirlian <izmirlig@mail.nih.gov>
+Repository: CRAN
+Date/Publication: 2025-01-14 17:10:02 UTC

@@ -1,0 +1,31 @@
+Package: NBLDA
+Type: Package
+Title: Negative Binomial Linear Discriminant Analysis
+Version: 1.0.1
+Date: 2022-02-21
+Authors@R: c(person("Dincer", "Goksuluk", role = c("aut", "cre"), email = "dincergoksuluk@erciyes.edu.tr"),
+  person("Gokmen", "Zararsiz", role = c("aut")),
+  person("Selcuk", "Korkmaz", role = c("aut")),
+  person(c("Ahmet", "Ergun"), "Karaagaoglu", role = c("ths")))
+Description: We proposed a package for the classification task which uses Negative Binomial distribution within Linear Discriminant Analysis (NBLDA). It is an extension of the 'PoiClaClu' package to Negative Binomial distribution. The classification algorithms are based on the papers Dong et al. (2016, ISSN: 1471-2105) and Witten, DM (2011, ISSN: 1932-6157) for NBLDA and PLDA, respectively. Although PLDA is a sparse algorithm and can be used for variable selection, the algorithm proposed by Dong et al. is not sparse. Therefore, it uses all variables in the classifier. Here, we extend Dong et al.'s algorithm to the sparse case by shrinking overdispersion towards 0 (Yu et al., 2013, ISSN: 1367-4803) and offset parameter towards 1 (as proposed by Witten DM, 2011). We support only the classification task with this version.
+Imports: methods, stats, graphics
+Suggests: knitr, PoiClaClu, sSeq
+Depends: ggplot2
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Collate: 'FindBestTransform.R' 'all_classes.R' 'all_generics.R'
+        'control.R' 'copiedFromOtherPackages.R' 'generateCountData.R'
+        'getShrinkedDispersions.R' 'helper_functions.R'
+        'normalize_counts.R' 'package_and_supplementary.R'
+        'plot.nblda.R' 'predict.nblda.R' 'trainNBLDA.R' 'zzz_methods.R'
+NeedsCompilation: no
+Packaged: 2022-02-21 18:57:52 UTC; root
+Author: Dincer Goksuluk [aut, cre],
+  Gokmen Zararsiz [aut],
+  Selcuk Korkmaz [aut],
+  Ahmet Ergun Karaagaoglu [ths]
+Maintainer: Dincer Goksuluk <dincergoksuluk@erciyes.edu.tr>
+Repository: CRAN
+Date/Publication: 2022-02-21 19:20:02 UTC

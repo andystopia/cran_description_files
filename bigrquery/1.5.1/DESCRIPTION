@@ -1,0 +1,44 @@
+Package: bigrquery
+Title: An Interface to Google's 'BigQuery' 'API'
+Version: 1.5.1
+Authors@R: c(
+    person("Hadley", "Wickham", , "hadley@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4757-117X")),
+    person("Jennifer", "Bryan", , "jenny@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0002-6983-2759")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Easily talk to Google's 'BigQuery' database from R.
+License: MIT + file LICENSE
+URL: https://bigrquery.r-dbi.org, https://github.com/r-dbi/bigrquery
+BugReports: https://github.com/r-dbi/bigrquery/issues
+Depends: R (>= 3.6)
+Imports: bit64, brio, cli, clock, curl, DBI, gargle (>= 1.5.0), httr,
+        jsonlite, lifecycle, methods, prettyunits, rlang (>= 1.1.0),
+        tibble
+Suggests: blob, covr, dbplyr (>= 2.4.0), dplyr (>= 1.1.0), hms, readr,
+        sodium, testthat (>= 3.1.5), wk (>= 0.3.2), withr
+LinkingTo: cli, cpp11, rapidjsonr
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Config/testthat/parallel: TRUE
+Config/testthat/start-first: bq-table, dplyr
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Collate: 'bigrquery-package.R' 'bq-auth.R' 'bq-dataset.R'
+        'bq-download.R' 'bq-field.R' 'bq-job.R' 'bq-param.R'
+        'bq-parse.R' 'bq-perform.R' 'bq-project.R' 'bq-projects.R'
+        'bq-query.R' 'bq-refs.R' 'bq-request.R' 'bq-table.R'
+        'bq-test.R' 'camelCase.R' 'connections-page.R' 'cpp11.R'
+        'dbi-driver.R' 'dbi-connection.R' 'dbi-result.R' 'dplyr.R'
+        'gs-object.R' 'import-standalone-obj-type.R'
+        'import-standalone-s3-register.R'
+        'import-standalone-types-check.R' 'utils.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2024-03-14 16:42:02 UTC; hadleywickham
+Author: Hadley Wickham [aut, cre] (<https://orcid.org/0000-0003-4757-117X>),
+  Jennifer Bryan [aut] (<https://orcid.org/0000-0002-6983-2759>),
+  Posit Software, PBC [cph, fnd]
+Maintainer: Hadley Wickham <hadley@posit.co>
+Repository: CRAN
+Date/Publication: 2024-03-14 17:10:02 UTC

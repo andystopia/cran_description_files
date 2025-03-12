@@ -1,0 +1,27 @@
+Package: lfstat
+Type: Package
+Title: Calculation of Low Flow Statistics for Daily Stream Flow Data
+Version: 0.9.12
+Date: 2022-11-06
+Authors@R: c(
+      person("Tobias", "Gauster", role = c("ctb", "cre"), email = "t.gauster@gmail.com"),
+	    person("Gregor", "Laaha", role = "aut", email = "gregor.laaha@boku.ac.at", comment = c(ORCID = "0000-0002-6793-9640")),
+	    person("Daniel", "Koffler", role = "aut", email = "daniel.koffler@boku.ac.at")
+	     )
+BugReports: https://github.com/mundl/lfstat/issues
+Description: The "Manual on Low-flow Estimation and Prediction" (Gustard & Demuth (2009, ISBN:978-92-63-11029-9)), published by the World Meteorological Organisation, gives a comprehensive summary on how to analyse stream flow data focusing on low-flows. This packages provides functions to compute the described statistics and produces plots similar to the ones in the manual. 
+License: GPL (>= 2)
+Language: en-GB
+LazyLoad: yes
+Depends: R (>= 2.10), xts, lmom, lattice
+Imports: lmomRFA, dygraphs, zoo, latticeExtra, plyr, scales
+Suggests: testthat
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-11-06 18:44:34 UTC; tobi
+Author: Tobias Gauster [ctb, cre],
+  Gregor Laaha [aut] (<https://orcid.org/0000-0002-6793-9640>),
+  Daniel Koffler [aut]
+Maintainer: Tobias Gauster <t.gauster@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-11-08 10:20:05 UTC

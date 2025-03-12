@@ -1,0 +1,35 @@
+Package: inlinedocs
+Title: Convert Inline Comments to Documentation
+Type: Package
+Version: 2023.9.4
+Authors@R: c(person("Toby Dylan","Hocking",role=c("aut","cre"),
+             email="toby.hocking@r-project.org"),
+	  person("Keith","Ponting",role="aut"),
+	  person("Thomas","Wutzler",role="aut"),
+	  person("Philippe","Grosjean",role="aut"),
+	  person("Markus","Müller",role="aut"),
+	  person("R Core Team",role=c("ctb","cph")))
+Description: Generates Rd files from R source code with comments.
+ The main features of the default syntax are that
+ (1) docs are defined in comments near the relevant code,
+ (2) function argument names are not repeated in comments, and
+ (3) examples are defined in R code, not comments.
+ It is also easy to define a new syntax.
+URL: https://github.com/tdhock/inlinedocs
+BugReports: https://github.com/tdhock/inlinedocs/issues
+Depends: methods, utils, R (>= 2.9)
+License: GPL-2 | GPL-3
+LazyLoad: yes
+Encoding: UTF-8
+Suggests: future.apply, future, R.methodsS3
+NeedsCompilation: no
+Packaged: 2023-10-17 21:32:29 UTC; tdhock
+Author: Toby Dylan Hocking [aut, cre],
+  Keith Ponting [aut],
+  Thomas Wutzler [aut],
+  Philippe Grosjean [aut],
+  Markus Müller [aut],
+  R Core Team [ctb, cph]
+Maintainer: Toby Dylan Hocking <toby.hocking@r-project.org>
+Repository: CRAN
+Date/Publication: 2023-10-18 18:30:02 UTC

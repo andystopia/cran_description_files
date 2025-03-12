@@ -1,0 +1,31 @@
+Package: RcppCNPy
+Type: Package
+Title: Read-Write Support for 'NumPy' Files via 'Rcpp'
+Version: 0.2.13
+Date: 2024-09-03
+Authors@R: c(person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                    comment = c(ORCID = "0000-0001-6419-907X")),
+             person("Wush", "Wu", role="aut", comment = c(ORCID = "0000-0001-5180-0567")),
+             person("Carl", "Rogers", role="aut", comment = "Author of CNPy"))
+Description: The 'cnpy' library written by Carl Rogers provides read and write
+ facilities for files created with (or for) the 'NumPy' extension for 'Python'.
+ Vectors and matrices of numeric types can be read or written to and from
+ files as well as compressed files. Support for integer files is available if
+ the package has been built with as C++11 which should be the default on
+ all platforms since the release of R 3.3.0.
+URL: https://github.com/eddelbuettel/rcppcnpy,
+        https://dirk.eddelbuettel.com/code/rcpp.cnpy.html
+BugReports: https://github.com/eddelbuettel/rcppcnpy/issues
+License: GPL (>= 2)
+Depends: R (>= 3.1.0)
+Imports: methods, Rcpp
+LinkingTo: Rcpp
+Suggests: reticulate, pinp
+NeedsCompilation: yes
+Packaged: 2024-09-03 18:49:28 UTC; edd
+Author: Dirk Eddelbuettel [aut, cre] (<https://orcid.org/0000-0001-6419-907X>),
+  Wush Wu [aut] (<https://orcid.org/0000-0001-5180-0567>),
+  Carl Rogers [aut] (Author of CNPy)
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2024-09-03 19:30:02 UTC

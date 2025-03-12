@@ -1,0 +1,40 @@
+Package: DesignLibrary
+Type: Package
+Title: Library of Research Designs
+Version: 0.1.10
+Authors@R: c(
+    person("Graeme", "Blair", , "graeme.blair@ucla.edu", role = "aut"),
+    person("Jasper", "Cooper", , "jjc2247@columbia.edu", role = c("aut", "cre")),
+    person("Alexander", "Coppock", , "alex.coppock@yale.edu", role = "aut"),
+    person("Macartan", "Humphreys", , "macartan@gmail.com", role = "aut"),
+    person("Clara", "Bicalho", , "clarabmcorreia@gmail.com", role = "aut"),
+    person("Neal", "Fultz", , "nfultz@gmail.com", role = "aut"),
+    person("Lily", "Medina", , "lilymiru@gmail.com", role = "aut")
+  )
+Description: 
+    A simple interface to build designs using the package 'DeclareDesign'. 
+    In one line of code, users can specify the parameters of individual 
+    designs and diagnose their properties. The designers can also be used 
+    to compare performance of a given design across a range of combinations 
+    of parameters, such as effect size, sample size, and assignment probabilities.
+URL: https://declaredesign.org/r/designlibrary/,
+        https://github.com/DeclareDesign/DesignLibrary
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: DeclareDesign (>= 0.17.0), R (>= 3.4.0), randomizr (>=
+        0.16.1), fabricatr (>= 0.8.0), estimatr (>= 0.16.0)
+Imports: generics, rlang, glue
+Suggests: testthat, knitr, rmarkdown
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-10-18 15:29:33 UTC; gblair
+Author: Graeme Blair [aut],
+  Jasper Cooper [aut, cre],
+  Alexander Coppock [aut],
+  Macartan Humphreys [aut],
+  Clara Bicalho [aut],
+  Neal Fultz [aut],
+  Lily Medina [aut]
+Maintainer: Jasper Cooper <jjc2247@columbia.edu>
+Repository: CRAN
+Date/Publication: 2021-10-18 16:20:09 UTC

@@ -1,0 +1,27 @@
+Package: My.stepwise
+Type: Package
+Title: Stepwise Variable Selection Procedures for Regression Analysis
+Version: 0.1.0
+Author: International-Harvard Statistical Consulting Company <nhsc2010@hotmail.com>
+Maintainer: Fu-Chang Hu <fuchang.hu@gmail.com>
+Description: The stepwise variable selection procedure (with iterations
+ between the 'forward' and 'backward' steps) can be used to obtain
+ the best candidate final regression model in regression analysis.
+ All the relevant covariates are put on the 'variable list' to be
+ selected. The significance levels for entry (SLE) and for stay
+ (SLS) are usually set to 0.15 (or larger) for being conservative.
+ Then, with the aid of substantive knowledge, the best candidate
+ final regression model is identified manually by dropping the
+ covariates with p value > 0.05 one at a time until all regression
+ coefficients are significantly different from 0 at the chosen alpha
+ level of 0.05.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: True
+Depends: R (>= 3.3.3)
+Imports: car, lmtest, survival, stats
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-06-29 07:43:02 UTC; Jane
+Repository: CRAN
+Date/Publication: 2017-06-29 09:13:47 UTC

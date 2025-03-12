@@ -1,0 +1,35 @@
+Package: ASML
+Type: Package
+Title: Algorithm Portfolio Selection with Machine Learning
+Version: 1.0.0
+Authors@R: c(
+  person(given = "Brais", family = "González-Rodríguez", email = "brais.gonzalez.rodriguez@uvigo.gal", role = c("aut","cre"), comment = c(ORCID = "0000-0001-5276-2320")),
+  person(given = "Ignacio", family = "Gómez-Casares", role = c("aut"), comment = c(ORCID = "0000-0003-0420-7319")),
+  person(given = "Beatriz", family = "Pateiro-López", role = c("aut"), comment = c(ORCID = "0000-0002-7714-1835")),
+  person(given = "Julio", family = "González-Díaz", role = c("aut"), comment = c(ORCID = "0000-0002-4667-4348")),
+  person(given = "María", family = "Caseiro-Arias", role = c("ctb")),
+  person(given = "Antonio", family = "Fariña-Elorza", role = c("ctb")),
+  person(given = "Manuel", family = "Timiraos-López", role = c("ctb")))
+Description: A wrapper for machine learning (ML) methods to select among a portfolio of algorithms based on the value of a key performance indicator (KPI). A number of features is used to adjust a model to predict the value of the KPI for each algorithm, then, for a new value of the features the KPI is estimated and the algorithm with the best one is chosen. To learn it can use the regression methods in 'caret' package or a custom function defined by the user. Several graphics available to analyze the results obtained. This library has been used in Ghaddar et al. (2023) <doi:10.1287/ijoc.2022.0090>).
+License: GPL-3
+Language: en-US
+Encoding: UTF-8
+LazyData: true
+Imports: caret, ggplot2, dplyr, purrr, tibble, tidyr, reshape2,
+        Polychrome, scales, rlang
+Suggests: snow
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-02-18 13:01:46 UTC; brais
+Author: Brais González-Rodríguez [aut, cre]
+    (<https://orcid.org/0000-0001-5276-2320>),
+  Ignacio Gómez-Casares [aut] (<https://orcid.org/0000-0003-0420-7319>),
+  Beatriz Pateiro-López [aut] (<https://orcid.org/0000-0002-7714-1835>),
+  Julio González-Díaz [aut] (<https://orcid.org/0000-0002-4667-4348>),
+  María Caseiro-Arias [ctb],
+  Antonio Fariña-Elorza [ctb],
+  Manuel Timiraos-López [ctb]
+Maintainer: Brais González-Rodríguez <brais.gonzalez.rodriguez@uvigo.gal>
+Repository: CRAN
+Date/Publication: 2025-02-19 14:40:05 UTC

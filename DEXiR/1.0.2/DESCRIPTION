@@ -1,0 +1,35 @@
+Package: DEXiR
+Title: 'DEXi' Library
+Version: 1.0.2
+Authors@R: 
+    person("Marko", "Bohanec", , "marko.bohanec@ijs.si", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4317-2833"))
+Description: A software package for using 'DEXi' models. 'DEXi' models are
+  hierarchical qualitative multi-criteria decision models developed according to the method
+  DEX (Decision EXpert, <https://dex.ijs.si/documentation/DEX_Method/DEX_Method.html>),
+  using the program 'DEXi' (<https://kt.ijs.si/MarkoBohanec/dexi.html>) or
+  'DEXiWin' (<https://dex.ijs.si/dexisuite/dexiwin.html>).
+  A typical workflow with 'DEXiR' consists of:
+  (1) reading a '.dxi' file, previously made using the 'DEXi' software (function read_dexi()),
+  (2) making a data frame containing input values of one or more decision alternatives,
+  (3) evaluating those alternatives (function evaluate()),
+  (4) analyzing alternatives (selective_explanation(), plus_minus(), compare_alternatives()),
+  (5) drawing charts.
+  'DEXiR' is restricted to using models produced externally by the 'DEXi' software and does not
+  provide functionality for creating and/or editing 'DEXi' models directly in 'R'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), grDevices, ggplot2, GGally, fmsb
+Config/testthat/edition: 3
+Imports: utils, xml2, methods, stringr, graphics
+Collate: 'DEXiR.R' 'DexiClasses.R' 'DexiAlternatives.R' 'DexiUtils.R'
+        'DexiAnalysis.R' 'DexiFunctions.R' 'DexiScales.R'
+        'DexiAttributes.R' 'DexiCharts.R' 'DexiData.R' 'DexiEvaluate.R'
+        'DexiModels.R' 'DexiValues.R'
+NeedsCompilation: no
+Packaged: 2024-09-16 09:52:20 UTC; Mare
+Author: Marko Bohanec [aut, cre] (<https://orcid.org/0000-0003-4317-2833>)
+Maintainer: Marko Bohanec <marko.bohanec@ijs.si>
+Repository: CRAN
+Date/Publication: 2024-09-17 16:30:09 UTC

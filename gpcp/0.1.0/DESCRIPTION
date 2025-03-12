@@ -1,0 +1,31 @@
+Package: gpcp
+Type: Package
+Title: Genomic Prediction of Cross Performance
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Marlee", family = "Labroo", role = c("aut")),
+    person(given = "Christine", family = "Nyaga", role = c("cre", "aut"), email = "cmn92@cornell.edu"),
+    person(given = "Lukas", family = "Mueller", role = c("aut")))
+Maintainer: Christine Nyaga <cmn92@cornell.edu>
+Description: This function performs genomic prediction of cross performance using genotype and phenotype data.
+  It processes data in several steps including loading necessary software, converting genotype data, processing phenotype data,
+  fitting mixed models, and predicting cross performance based on weighted marker effects.
+  For more information, see Labroo et al. (2023) <doi:10.1007/s00122-023-04377-z>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: BiocManager, Rcpp, dplyr, sommer, AGHmatrix, snpStats,
+        VariantAnnotation, tools, magrittr, methods
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2024-11-04 13:31:44 UTC; cmn92
+Author: Marlee Labroo [aut],
+  Christine Nyaga [cre, aut],
+  Lukas Mueller [aut]
+Repository: CRAN
+Date/Publication: 2024-11-06 15:50:02 UTC

@@ -1,0 +1,31 @@
+Package: flexrsurv
+Type: Package
+Title: Flexible Relative Survival Analysis
+Version: 2.0.18
+Date: 2024-02-01
+Authors@R: c(
+    person("Isabelle", "Clerc-Urmès", role="aut"), 
+    person("Michel", "Grzebyk", role = c("aut", "cre"), email = "michel.grzebyk@inrs.fr"),
+    person("Guy", "Hédelin", role="ctb"), 
+    person("CENSUR working survival group", role = "ctb")
+	)
+Author: Isabelle Clerc-Urmès [aut],
+  Michel Grzebyk [aut, cre],
+  Guy Hédelin [ctb],
+  CENSUR working survival group [ctb]
+Maintainer: Michel Grzebyk <michel.grzebyk@inrs.fr>
+Description: Package for parametric relative survival analyses. It allows to model non-linear and 
+        non-proportional effects and both non proportional and non linear effects, using splines (B-spline and truncated power basis), Weighted Cumulative Index of Exposure effect, with correction model for 
+        the life table. Both non proportional and non linear effects are described in 
+			Remontet, L. et al. (2007) <doi:10.1002/sim.2656> and 
+			Mahboubi, A. et al. (2011) <doi:10.1002/sim.4208>. 
+License: GPL (>= 2.0)
+Depends: survival
+Suggests: relsurv, mexhaz, ggplot2, date, lubridate
+Imports: utils, orthogonalsplinebasis, methods, stats, Epi, Formula,
+        formula.tools, splines, statmod, numDeriv, R.utils, Matrix
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-02-09 14:44:29 UTC; michel.grzebyk
+Repository: CRAN
+Date/Publication: 2024-02-09 16:10:02 UTC

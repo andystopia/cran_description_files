@@ -1,0 +1,26 @@
+Package: bbmix
+Title: Bayesian Model for Genotyping using RNA-Seq
+Version: 1.0.0
+Authors@R: c(
+    person("Elena", "Vigorito", email = "elena.vigorito@mrc-bsu.cam.ac.uk",  role = c("aut", "cre")),
+    person("Chris", "Wallace", email="cew54@cam.ac.uk", role="aut"))
+Description: The method models RNA-seq reads using a mixture of 3 beta-binomial distributions to generate posterior probabilities for genotyping bi-allelic single nucleotide polymorphisms. Elena Vigorito, Anne Barton, Costantino Pitzalis, Myles J. Lewis and Chris Wallace (2023) <doi:10.1093/bioinformatics/btad393> "BBmix: a Bayesian beta-binomial mixture model for accurate genotyping from RNA-sequencing."
+License: GPL-2
+Encoding: UTF-8
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, Rcpp (>= 0.12.0), rstan (>= 2.18.1), R.utils,
+        data.table, rmutil
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+RoxygenNote: 7.1.0
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-07-05 18:36:26 UTC; ev250
+Author: Elena Vigorito [aut, cre],
+  Chris Wallace [aut]
+Maintainer: Elena Vigorito <elena.vigorito@mrc-bsu.cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-07-06 14:00:09 UTC

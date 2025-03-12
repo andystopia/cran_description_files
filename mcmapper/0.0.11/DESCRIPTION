@@ -1,0 +1,17 @@
+Package: mcmapper
+Title: Mapping First Moment and C-Statistic to the Parameters of
+        Distributions for Risk
+Version: 0.0.11
+Authors@R: 
+    person("Mohsen", "Sadatsafavi", , "mohsen.sadatsafavi@ubc.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0419-7862"))
+Description: Provides a series of numerical methods for extracting parameters of distributions for risks based on knowing the expected value and c-statistics (e.g., from a published report on the performance of a risk prediction model). This package implements the methodology described in Sadatsafavi et al (2024) <doi:10.48550/arXiv.2409.09178>. The core of the package is mcmap(), which takes a pair of (mean, c-statistic) and the distribution type requested. This function provides a generic interface to more customized functions (mcmap_beta(), mcmap_logitnorm(), mcmap_probitnorm()) for specific distributions. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-10-31 04:23:02 UTC; msafavi
+Author: Mohsen Sadatsafavi [aut, cre] (<https://orcid.org/0000-0002-0419-7862>)
+Maintainer: Mohsen Sadatsafavi <mohsen.sadatsafavi@ubc.ca>
+Repository: CRAN
+Date/Publication: 2024-11-04 10:40:06 UTC

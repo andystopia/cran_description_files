@@ -1,0 +1,38 @@
+Type: Package
+Package: MAICtools
+Title: Performing Matched-Adjusted Indirect Comparisons (MAIC)
+Version: 0.1.1
+Authors@R: 
+    person("Xiao", "Qi", , "qixiao2024@outlook.com", role = c("aut", "cre"))
+Author: Xiao Qi [aut, cre]
+Maintainer: Xiao Qi <qixiao2024@outlook.com>
+Description: A generalised workflow for Matching-Adjusted Indirect
+    Comparison (MAIC) analysis, which supports both anchored and
+    non-anchored MAIC methods.  In MAIC, unbiased trial outcome comparison
+    is achieved by weighting the subject-level outcomes of the
+    intervention trial so that the weighted aggregate measures of
+    prognostic or effect-modifying variables match those of the comparator
+    trial. Measurements supported include time-to-event (e.g., overall
+    survival) and binary (e.g., objective tumor response). The method is
+    described in Signorovitch et al. (2010)
+    <doi:10.2165/11538370-000000000-00000> and Signorovitch et al. (2012)
+    <doi:10.1016/j.jval.2012.05.004>.
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: assertthat (>= 0.2.1), boot (>= 1.3-28), broom (>= 0.7.10),
+        data.table (>= 1.14.0), dplyr (>= 1.0.7), ggplot2 (>= 3.3.5),
+        graphics (>= 4.0.0), grDevices (>= 4.0.0), grid (>= 4.0.0),
+        magrittr (>= 2.0.1), purrr (>= 0.3.4), rlang (>= 0.4.11), stats
+        (>= 4.0.0), stringr (>= 1.4.0), survival (>= 3.2-11), survminer
+        (>= 0.4.9), tibble (>= 3.1.3), tidyr (>= 1.1.3), tidyselect (>=
+        1.0.0), VIM (>= 6.1.0)
+Suggests: haven (>= 2.4.3), testthat (>= 3.0.0), tidyverse (>= 1.3.1)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Packaged: 2024-12-11 06:20:50 UTC; Xiao_Qi
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2024-12-11 17:00:06 UTC

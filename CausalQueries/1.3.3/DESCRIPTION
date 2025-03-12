@@ -1,0 +1,51 @@
+Package: CausalQueries
+Type: Package
+Title: Make, Update, and Query Binary Causal Models
+Version: 1.3.3
+Authors@R: c(person("Clara", "Bicalho", email = "clarabmcorreia@gmail.com", role = c("ctb")),
+             person("Jasper", "Cooper", email = "jjc2247@columbia.edu", role = c("ctb")),
+             person("Macartan", "Humphreys", email = "macartan@gmail.com", role = c("aut"),
+                    comment = c(ORCID = "0000-0001-7029-2326")),
+             person("Till", "Tietz", email = "ttietz2014@gmail.com", role = c("aut","cre"),
+                    comment = c(ORCID = "0000-0002-2916-9059")),
+             person("Alan", "Jacobs", email = "alan.jacobs@ubc.ca", role = c("aut")),
+	           person("Merlin", "Heidemanns", email = "mnh2123@columbia.edu ", role = c("ctb")),
+             person("Lily", "Medina", email = "lilymiru@gmail.com", role = c("aut"),
+                    comment = c(ORCID = "0009-0004-2423-524X")),
+             person("Julio", "Solis", email = "juliosolisar@gmail.com", role = c("ctb")),
+             person("Georgiy", "Syunyaev", email = "georgiy.syunyaev@vanderbilt.edu", role = c("aut"),
+                    comment = c(ORCID = "0000-0002-4391-6313")))
+Description: Users can declare causal models over binary nodes, update beliefs about causal types given data, and calculate arbitrary queries.  Updating is implemented in 'stan'. See Humphreys and Jacobs, 2023, Integrated Inferences (<DOI: 10.1017/9781316718636>) and Pearl, 2009 Causality (<DOI:10.1017/CBO9780511803161>).
+BugReports: https://github.com/integrated-inferences/CausalQueries/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: methods, R (>= 4.2.0)
+Imports: dplyr, dirmult (>= 0.1.3-4), stats (>= 4.1.1), rlang (>=
+        0.2.0), rstan (>= 2.26.0), rstantools (>= 2.0.0), stringr (>=
+        1.4.0), latex2exp (>= 0.9.4), knitr (>= 1.45), ggplot2 (>=
+        3.3.5), lifecycle (>= 1.0.1), ggraph (>= 2.2.0), Rcpp (>=
+        0.12.0)
+LinkingTo: Rcpp (>= 0.12.0), BH (>= 1.66.0), RcppArmadillo, RcppEigen
+        (>= 0.3.3.3.0), rstan (>= 2.26.0), StanHeaders (>= 2.26.0)
+Suggests: testthat, rmarkdown, DeclareDesign, fabricatr, estimatr,
+        bayesplot, covr, curl
+SystemRequirements: GNU make
+Biarch: true
+VignetteBuilder: knitr
+URL: https://integrated-inferences.github.io/CausalQueries/
+NeedsCompilation: yes
+Packaged: 2025-02-22 10:56:57 UTC; tilltietz
+Author: Clara Bicalho [ctb],
+  Jasper Cooper [ctb],
+  Macartan Humphreys [aut] (<https://orcid.org/0000-0001-7029-2326>),
+  Till Tietz [aut, cre] (<https://orcid.org/0000-0002-2916-9059>),
+  Alan Jacobs [aut],
+  Merlin Heidemanns [ctb],
+  Lily Medina [aut] (<https://orcid.org/0009-0004-2423-524X>),
+  Julio Solis [ctb],
+  Georgiy Syunyaev [aut] (<https://orcid.org/0000-0002-4391-6313>)
+Maintainer: Till Tietz <ttietz2014@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-02-22 11:20:02 UTC

@@ -1,0 +1,30 @@
+Package: timeEL
+Title: Time to Event Analysis via Empirical Likelihood Inference
+Version: 0.9.1
+Authors@R: c(person("Paul", "Blanche", email= "paulfblanche@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1415-7976")),person("Frank", "Eriksson", role = c("ctb")))
+Description: Computation of t-year survival probabilities and t-year
+    risks with right censored survival data. The Kaplan-Meier estimator
+    is used to provide estimates for data without competing risks and
+    the Aalen-Johansen estimator is used when there are competing risks.
+    Confidence intervals and p-values are obtained using either usual
+    Wald-type inference or empirical likelihood inference, as described
+    in Thomas and Grunkemeier (1975) <doi:10.1080/01621459.1975.10480315>
+    and Blanche (2020) <doi:10.1007/s10985-018-09458-6>. Functions for
+    both one-sample and two-sample inference are provided. Unlike Wald-type
+    inference, empirical likelihood inference always leads to consistent
+    conclusions, in terms of statistical significance, when comparing
+    two risks (or survival probabilities) via either a ratio or a difference.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: km.ci, prodlim, survival, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-08-26 09:27:56 UTC; paul
+Author: Paul Blanche [aut, cre] (<https://orcid.org/0000-0003-1415-7976>),
+  Frank Eriksson [ctb]
+Maintainer: Paul Blanche <paulfblanche@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-29 19:00:01 UTC

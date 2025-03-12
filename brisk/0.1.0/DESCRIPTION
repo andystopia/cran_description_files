@@ -1,0 +1,45 @@
+Package: brisk
+Title: Bayesian Benefit Risk Analysis
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Richard",
+           family = "Payne",
+           role = c("aut", "cre"),
+           email = "paynestatistics@gmail.com"),
+    person(given = "Sai",
+           family = "Dharmarajan",
+           role = "rev",
+           email = c("sai.dharmarajan@fda.hhs.gov", "shdharma@umich.edu")),
+    person(family = "Eli Lilly and Company",
+           role = "cph"))
+Description: Quantitative methods for benefit-risk analysis help to condense
+    complex decisions into a univariate metric describing the overall benefit
+    relative to risk.  One approach is to use the multi-criteria decision
+    analysis framework (MCDA), as in Mussen, Salek, and Walker
+    (2007) <doi:10.1002/pds.1435>.  Bayesian benefit-risk
+    analysis incorporates uncertainty through posterior distributions which are
+    inputs to the benefit-risk framework.  The brisk package provides functions
+    to assist with Bayesian benefit-risk analyses, such as MCDA.
+    Users input posterior samples, utility functions, weights, and the package
+    outputs quantitative benefit-risk scores.  The posterior of the benefit-risk
+    scores for each group can be compared.  Some plotting capabilities are also
+    included.
+License: MIT + file LICENSE
+Imports: dplyr (>= 1.0), ellipsis (>= 0.3), ggplot2 (>= 3.3), hitandrun
+        (>= 0.5), purrr (>= 0.3), rlang (>= 1.0), tidyr (>= 1.1)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: knitr, fs (>= 1.5), testthat (>= 3.0.0), tibble (>= 3.1),
+        rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://rich-payne.github.io/brisk/
+BugReports: https://github.com/rich-payne/brisk/issues
+NeedsCompilation: no
+Packaged: 2022-08-30 17:30:19 UTC; c263386
+Author: Richard Payne [aut, cre],
+  Sai Dharmarajan [rev],
+  Eli Lilly and Company [cph]
+Maintainer: Richard Payne <paynestatistics@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-31 08:20:05 UTC

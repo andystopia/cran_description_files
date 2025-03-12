@@ -1,0 +1,47 @@
+Package: SOMMD
+Title: Self Organising Maps for the Analysis of Molecular Dynamics Data
+Version: 0.1.2
+Authors@R: c(
+    person(given = "Alessandro",
+           family = "Pandini",
+           role = c("aut", "cph"),
+           email = "alessandro.pandini@brunel.ac.uk",
+           comment = c(ORCID = "https://orcid.org/0000-0002-4158-233X")),
+    person(given = "Stefano",
+           family = "Motta",
+           role = c("aut", "cre", "cph"),
+           email = "stefano.motta@unimib.it",
+           comment = c(ORCID = "https://orcid.org/0000-0002-0812-6834")),
+    person(given = "Erik",
+           family = "Lindahl",
+           role = c("ctb"),
+           comment = "Author of xdrfile C library"),
+    person(given = "David",
+           family = "van der Spoel",
+           role = c("ctb"),
+           comment = "Author of xdrfile C library")) 
+Description: Processes data from Molecular Dynamics simulations using 
+    Self Organising Maps. Features include the ability to read different 
+    input formats. Trajectories can be analysed to identify groups of important
+    frames. Output visualisation can be generated for maps and pathways.
+    Methodological details can be found in Motta S et al (2022) 
+    <doi:10.1021/acs.jctc.1c01163>.
+    I/O functions for xtc format files were implemented using the 'xdrfile'
+    library available under open source license. The relevant information can 
+    be found in inst/COPYRIGHT.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: bio3d, kohonen, abind, cluster, methods, igraph
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-10-01 07:52:26 UTC; apandini
+Author: Alessandro Pandini [aut, cph] (<https://orcid.org/0000-0002-4158-233X>),
+  Stefano Motta [aut, cre, cph] (<https://orcid.org/0000-0002-0812-6834>),
+  Erik Lindahl [ctb] (Author of xdrfile C library),
+  David van der Spoel [ctb] (Author of xdrfile C library)
+Maintainer: Stefano Motta <stefano.motta@unimib.it>
+Repository: CRAN
+Date/Publication: 2024-10-02 13:50:06 UTC

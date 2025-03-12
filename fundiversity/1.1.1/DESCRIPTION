@@ -1,0 +1,40 @@
+Package: fundiversity
+Title: Easy Computation of Functional Diversity Indices
+Version: 1.1.1
+Authors@R: 
+    c(
+      person("Matthias", "Grenié",
+        email = "matthias.grenie@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-4659-7522")),
+      person("Hugo", "Gruson",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-4094-1476"))
+    )
+Description: Computes six functional diversity indices. These are namely,
+  Functional Divergence (FDiv), Function Evenness (FEve), Functional Richness
+  (FRic), Functional Richness intersections (FRic_intersect), Functional
+  Dispersion (FDis), and Rao's entropy (Q) (reviewed in Villéger et al. 2008
+  <doi:10.1890/07-1206.1>). Provides efficient, modular, and parallel functions
+  to compute functional diversity indices
+  (preprint: <doi:10.32942/osf.io/dg7hw>).
+License: GPL-3
+Language: en
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Depends: R (>= 2.10)
+Imports: future.apply, geometry, Matrix, vegan
+Suggests: future, knitr, memoise, rmarkdown, testthat (>= 3.0.0)
+URL: https://funecology.github.io/fundiversity/,
+        https://github.com/funecology/fundiversity
+BugReports: https://github.com/funecology/fundiversity/issues
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-21 13:08:00 UTC; ke76dimu
+Author: Matthias Grenié [aut, cre] (<https://orcid.org/0000-0002-4659-7522>),
+  Hugo Gruson [aut] (<https://orcid.org/0000-0002-4094-1476>)
+Maintainer: Matthias Grenié <matthias.grenie@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-11-21 13:30:02 UTC

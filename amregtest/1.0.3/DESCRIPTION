@@ -1,0 +1,37 @@
+Package: amregtest
+Title: Runs Allelematch Regression Tests
+Version: 1.0.3
+Authors@R: c(
+    person("Department of Wildlife, Fish and Environmental Studies at Swedish University of Agricultural Sciences", role = "cph"),
+    person("Göran", "Spong", , "Goran.Spong@slu.se", role = "cph",
+           comment = "Senior Lecturer at the Department of Wildlife, Fish and Environmental Studies"),
+    person("Paul", "Galpern", , "pgalpern@gmail.com", role = "ctb",
+           comment = "Author of the excellent package 'allelematch' from which the five amExample data files have been copied under MIT license"),
+    person("Torvald", "Staxler", , "torvald.staxler@telia.com", role = c("aut", "cre"))
+  )
+Description: Automates regression testing of package 'allelematch'. Over
+    2500 tests covers all functions in 'allelematch', reproduces the
+    examples from the documentation and includes negative tests. The
+    implementation is based on 'testthat'.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: allelematch, digest, remotes, testthat (>= 3.0.0), utils,
+        withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-12 13:58:14 UTC; Torva
+Author: Department of Wildlife, Fish and Environmental Studies at Swedish
+    University of Agricultural Sciences [cph],
+  Göran Spong [cph] (Senior Lecturer at the Department of Wildlife, Fish
+    and Environmental Studies),
+  Paul Galpern [ctb] (Author of the excellent package 'allelematch' from
+    which the five amExample data files have been copied under MIT
+    license),
+  Torvald Staxler [aut, cre]
+Maintainer: Torvald Staxler <torvald.staxler@telia.com>
+Repository: CRAN
+Date/Publication: 2024-04-12 15:30:09 UTC

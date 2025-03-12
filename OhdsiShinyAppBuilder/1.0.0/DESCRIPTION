@@ -1,0 +1,32 @@
+Package: OhdsiShinyAppBuilder
+Type: Package
+Title: Viewing Observational Health Data Sciences and Informatics
+        Results via 'shiny' Modules
+Version: 1.0.0
+Date: 2024-12-09
+Authors@R: c(
+  person("Jenna", "Reps", email = "jreps@its.jnj.com", role = c("aut", "cre")),
+  person("Nathan", "Hall", role = c("aut")),
+  person("Josh", "Ide", role = c("aut")),
+  person("Jamie", "Gibert", role = c("aut"))
+  )
+Maintainer: Jenna Reps <jreps@its.jnj.com>
+Description: Users can build a single 'shiny' app for exploring population characterization, population-level causal effect estimation, and patient-level prediction results generated via the R analyses packages in 'HADES' (see <https://ohdsi.github.io/Hades/>). Learn more about 'OhdsiShinyAppBuilder' at <https://ohdsi.github.io/OhdsiShinyAppBuilder/>.
+License: Apache License 2.0
+VignetteBuilder: knitr
+Depends: R (>= 3.3.0)
+Imports: checkmate, DatabaseConnector, devtools, dplyr, ParallelLogger
+        (>= 2.0.0), ResultModelManager (>= 0.4.0), rlang, shiny,
+        shinydashboard, utils
+Suggests: Eunomia, jsonlite, knitr, rmarkdown, testthat, markdown,
+        remotes
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-12-09 20:37:22 UTC; jreps
+Author: Jenna Reps [aut, cre],
+  Nathan Hall [aut],
+  Josh Ide [aut],
+  Jamie Gibert [aut]
+Repository: CRAN
+Date/Publication: 2024-12-10 21:10:11 UTC

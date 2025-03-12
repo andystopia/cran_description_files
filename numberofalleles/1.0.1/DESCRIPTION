@@ -1,0 +1,27 @@
+Package: numberofalleles
+Type: Package
+Title: Compute the Probability Distribution of the Number of Alleles in
+        a DNA Mixture
+Version: 1.0.1
+Date: 2022-04-28
+Authors@R: 
+    c(person("Maarten", "Kruijver", , "maarten.kruijver@esr.cri.nz", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6890-7632")),
+    person("James", "Curran", , "j.curran@auckland.ac.nz", role = c("aut"),
+           comment = c(ORCID = "0000-0003-3323-6733")))
+Description: The number of distinct alleles observed in a DNA mixture is informative of the number of contributors to the mixture. The package provides methods for computing the probability distribution of the number of distinct alleles in a mixture for a given set of allele frequencies. The mixture contributors may be related according to a provided pedigree.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.7), pedtools, ribd, partitions, methods
+LinkingTo: Rcpp
+RoxygenNote: 7.1.2
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), ggplot2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-04-27 23:07:07 UTC; mkruijver
+Author: Maarten Kruijver [aut, cre] (<https://orcid.org/0000-0002-6890-7632>),
+  James Curran [aut] (<https://orcid.org/0000-0003-3323-6733>)
+Maintainer: Maarten Kruijver <maarten.kruijver@esr.cri.nz>
+Repository: CRAN
+Date/Publication: 2022-04-29 08:00:09 UTC

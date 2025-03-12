@@ -1,0 +1,33 @@
+Package: WMWssp
+Type: Package
+Title: Wilcoxon-Mann-Whitney Sample Size Planning
+Version: 0.5.3
+Date: 2025-02-18
+Authors@R: c(
+    person("Arne C.", "Bathke", role = "aut"),
+    person("Edgar", "Brunner", role = "aut"),
+    person("Martin", "Happ", role = c("aut", "cre"),
+                      email = "statistics@happ.co.at",
+                      comment = c(ORCID = "0000-0003-0009-2665")),
+    person("Frank", "Konietschke", role = "aut")
+  )
+Maintainer: Martin Happ <statistics@happ.co.at>
+Description: Calculates the minimal sample size for the Wilcoxon-Mann-Whitney test
+    that is needed for a given power and two sided type I error rate. The method works for metric data with and without
+    ties, count data, ordered categorical data, and even dichotomous data.
+    But data is needed for the reference group to generate synthetic data for the treatment group based on a relevant effect.
+    See Happ et al. (2019, <doi:10.1002/sim.7983>) for details.
+Depends: R (>= 3.4.0)
+License: GPL-3
+URL: https://github.com/happma/WMWssp
+BugReports: https://github.com/happma/WMWssp/issues
+RoxygenNote: 6.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2025-02-18 16:36:45 UTC; happma
+Author: Arne C. Bathke [aut],
+  Edgar Brunner [aut],
+  Martin Happ [aut, cre] (<https://orcid.org/0000-0003-0009-2665>),
+  Frank Konietschke [aut]
+Repository: CRAN
+Date/Publication: 2025-02-18 23:40:05 UTC

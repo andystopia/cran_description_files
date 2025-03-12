@@ -1,0 +1,23 @@
+Package: ROKET
+Type: Package
+Title: Optimal Transport-Based Kernel Regression
+Version: 1.0.0
+Date: 2025-03-04
+Authors@R: 
+	person("Paul","Little",
+		email = "pllittle321@gmail.com",
+		role = c("aut","cre"))
+Description: Perform optimal transport on somatic point mutations and kernel regression hypothesis testing by integrating pathway level similarities at the gene level (Little et al. (2023) <doi:10.1111/biom.13769>). The software implements balanced and unbalanced optimal transport and omnibus tests with 'C++' across a set of tumor samples and allows for multi-threading to decrease computational runtime.
+Encoding: UTF-8
+Imports: Rcpp, smarter, ggplot2, survival, MiRKAT
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+License: GPL (>= 3)
+Suggests: rmarkdown, knitr, reshape2, ggdendro
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-03-04 22:23:50 UTC; Admin
+Author: Paul Little [aut, cre]
+Maintainer: Paul Little <pllittle321@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-06 17:00:02 UTC

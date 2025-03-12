@@ -1,0 +1,26 @@
+Package: cordillera
+Title: Calculation of the OPTICS Cordillera
+Version: 1.0-3
+Date: 2024-09-22
+Authors@R: c(person(given="Thomas", family="Rusch", email="thomas.rusch@wu.ac.at", role = c("aut","cre"),comment=c(ORCID="0000-0002-7773-2096")),
+             person(given="Patrick",family="Mair", role = "ctb",email="mair@fas.harvard.edu",comment=c(ORCID="0000-0003-0100-6511")),
+	     person(given="Kurt",family="Hornik", role = "ctb",email = "Kurt.Hornik@R-project.org",comment=c(ORCID="0000-0003-4198-9911")))
+Author: Thomas Rusch [aut, cre] (<https://orcid.org/0000-0002-7773-2096>),
+  Patrick Mair [ctb] (<https://orcid.org/0000-0003-0100-6511>),
+  Kurt Hornik [ctb] (<https://orcid.org/0000-0003-4198-9911>)
+Maintainer: Thomas Rusch <thomas.rusch@wu.ac.at>
+Description: Functions for calculating the OPTICS Cordillera. The OPTICS Cordillera measures the amount of 'clusteredness' in a numeric data matrix within a distance-density based framework for a given minimum number of points comprising a cluster, as described in Rusch, Hornik, Mair (2018) <doi:10.1080/10618600.2017.1349664>. We provide an R native version with methods for printing, summarizing, and plotting the result. 
+Depends: R (>= 3.1.2),
+SystemRequirements:
+Imports: dbscan
+Suggests: cluster, scatterplot3d, MASS, R.rsp
+VignetteBuilder: R.rsp
+License: GPL-2 | GPL-3
+LazyData: true
+URL: https://r-forge.r-project.org/projects/stops/
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-09-22 15:10:48 UTC; trusch
+Repository: CRAN
+Date/Publication: 2024-09-22 16:00:01 UTC

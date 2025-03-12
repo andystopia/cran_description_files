@@ -1,0 +1,30 @@
+Package: cpsurvsim
+Type: Package
+Title: Simulating Survival Data from Change-Point Hazard Distributions
+Version: 1.2.2
+Date: 2023-09-05
+Author: Camille Hochheimer [aut, cre]
+Authors@R: person("Camille", "Hochheimer", 
+    email = "dochoch19@gmail.com", role = c("aut", "cre"))
+Maintainer: Camille Hochheimer <dochoch19@gmail.com>
+Description: Simulates time-to-event data
+    with type I right censoring using two methods: the inverse CDF
+    method and our proposed memoryless method. The latter method
+    takes advantage of the memoryless property of survival and
+    simulates a separate distribution between change-points. We
+    include two parametric distributions: exponential and Weibull.
+    Inverse CDF method draws on the work of Rainer Walke (2010), 
+    <https://www.demogr.mpg.de/papers/technicalreports/tr-2010-003.pdf>.
+Depends: R (>= 3.6.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: plyr (>= 1.8.5), stats, Hmisc (>= 4.3.0), knitr (>= 1.27)
+Suggests: rmarkdown, testthat
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+URL: https://github.com/camillejo/cpsurvsim
+BugReports: https://github.com/camillejo/cpsurvsim/issues
+NeedsCompilation: no
+Packaged: 2023-09-05 21:04:10 UTC; hochheic
+Repository: CRAN
+Date/Publication: 2023-09-05 21:30:02 UTC

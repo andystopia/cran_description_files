@@ -1,0 +1,16 @@
+Package: SPEV
+Title: Unsmoothed and Smoothed Penalized PCA using Nesterov Smoothing
+Version: 1.0.0
+Authors@R: c(person("Rebecca", "Hurwitz", role = c("aut", "cre"), email = "rebeccahurwitz@hsph.harvard.edu"), person("Georg", "Hahn", role = "ctb"))
+Maintainer: Rebecca Hurwitz <rebeccahurwitz@hsph.harvard.edu>
+Description: We provide functionality to implement penalized PCA with an option to smooth the objective function using Nesterov smoothing. Two functions are available to compute a user-specified number of eigenvectors. The function unsmoothed_penalized_EV() computes a penalized PCA without smoothing and has three parameters (the input matrix, the Lasso penalty, and the number of desired eigenvectors). The function smoothed_penalized_EV() computes a smoothed penalized PCA using the same parameters and additionally requires the specification of a smoothing parameter. Both functions return a matrix having the desired eigenvectors as columns.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: stats
+NeedsCompilation: no
+Packaged: 2023-08-16 18:52:44 UTC; rebeccahurwitz
+Author: Rebecca Hurwitz [aut, cre],
+  Georg Hahn [ctb]
+Repository: CRAN
+Date/Publication: 2023-08-17 14:42:33 UTC

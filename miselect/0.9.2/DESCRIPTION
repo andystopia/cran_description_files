@@ -1,0 +1,38 @@
+Package: miselect
+Title: Variable Selection for Multiply Imputed Data
+Version: 0.9.2
+Authors@R: c(
+    person("Michael", "Kleinsasser", email = "biostat-cran-manager@umich.edu", role = c("cre")),
+    person("Alexander", "Rix", email = "alexrix@umich.edu", role = c("aut")),
+    person("Jiacong", "Du", email = "jiacong@umich.edu", role = "aut")
+    )
+Description: 
+    Penalized regression methods, such as lasso and elastic net, are used in
+    many biomedical applications when simultaneous regression coefficient
+    estimation and variable selection is desired. However, missing data
+    complicates the implementation of these methods, particularly when
+    missingness is handled using multiple imputation. Applying a variable
+    selection algorithm on each imputed dataset will likely lead
+    to different sets of selected predictors, making it difficult
+    to ascertain a final active set without resorting to ad hoc
+    combination rules. 'miselect' presents Stacked Adaptive Elastic Net (saenet)
+    and Grouped Adaptive LASSO (galasso) for continuous and binary outcomes,
+    developed by Du et al (2022) <doi:10.1080/10618600.2022.2035739>. They, 
+    by construction, force selection of the same variables across multiply 
+    imputed data. 'miselect' also provides cross validated variants of these 
+    methods.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Suggests: mice, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-03-05 15:39:46 UTC; mk
+Author: Michael Kleinsasser [cre],
+  Alexander Rix [aut],
+  Jiacong Du [aut]
+Maintainer: Michael Kleinsasser <biostat-cran-manager@umich.edu>
+Repository: CRAN
+Date/Publication: 2024-03-05 17:00:08 UTC

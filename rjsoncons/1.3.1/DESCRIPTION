@@ -1,0 +1,44 @@
+Package: rjsoncons
+Title: Query, Pivot, Patch, and Validate 'JSON' and 'NDJSON'
+Version: 1.3.1
+Authors@R: c(
+    person(
+        "Martin", "Morgan", role = c("aut", "cre"),
+        email = "mtmorgan.xyz@gmail.com",
+        comment = c(ORCID = "0000-0002-5874-8148")
+    ),
+    person(
+        "Marcel", "Ramos", role = "aut",
+        comment = c(ORCID = "0000-0002-3242-0582")
+    ),
+    person(
+        "Daniel", "Parker", role = c("aut", "cph"),
+        email = "danielaparker@yahoo.com",
+        comment = "jsoncons C++ library maintainer"
+    ))
+Description: Functions to query (filter or transform), pivot (convert
+    from array-of-objects to object-of-arrays, for easy import as 'R'
+    data frame), search, patch (edit), and validate (against 'JSON Schema')
+    'JSON' and 'NDJSON' strings, files, or URLs. Query and
+    pivot support 'JSONpointer', 'JSONpath' or 'JMESpath'
+    expressions. The implementation uses the 'jsoncons'
+    <https://danielaparker.github.io/jsoncons/> header-only library;
+    the library is easily linked to other packages for direct access
+    to 'C++' functionality not implemented here.
+Imports: cli, tibble
+Suggests: jsonlite, tinytest, BiocStyle, knitr, rmarkdown
+LinkingTo: cpp11, cli
+License: BSL-1.0
+NeedsCompilation: yes
+Encoding: UTF-8
+BugReports: https://github.com/mtmorgan/rjsoncons/issues
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+URL: https://mtmorgan.github.io/rjsoncons/
+Packaged: 2024-07-01 18:23:42 UTC; ma38727
+Author: Martin Morgan [aut, cre] (<https://orcid.org/0000-0002-5874-8148>),
+  Marcel Ramos [aut] (<https://orcid.org/0000-0002-3242-0582>),
+  Daniel Parker [aut, cph] (jsoncons C++ library maintainer)
+Maintainer: Martin Morgan <mtmorgan.xyz@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-07 15:40:02 UTC

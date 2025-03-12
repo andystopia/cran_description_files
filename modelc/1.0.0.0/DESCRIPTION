@@ -1,0 +1,20 @@
+Package: modelc
+Title: A Linear Model to 'SQL' Compiler
+Version: 1.0.0.0
+Authors@R: c(person("Sparkfish Analytics", role=c("cph")),
+      person(given = "Hugo", family = "Saavedra", email = "analytics+hugo@sparkfish.com", role = c("aut", "cre")))
+Description: This is a cross-platform linear model to 'SQL' compiler. It generates 'SQL' from linear and generalized linear models. Its interface consists of a single function, modelc(), which takes the output of lm() or glm() functions (or any object which has the same signature) and outputs a 'SQL' character vector representing the predictions on the scale of the response variable as described in Dunn & Smith (2018) <doi:10.1007/978-1-4419-0118-7> and originating in Nelder & Wedderburn (1972) <doi:10.2307/2344614>. The resultant 'SQL' can be included in a 'SELECT' statement and returns output similar to that of the glm.predict() or lm.predict() predictions, assuming numeric types are represented in the database using sufficient precision. Currently log and identity link functions are supported.
+License: MIT + file LICENSE
+URL: https://github.com/sparkfish/modelc
+BugReports: https://github.com/sparkfish/modelc/issues
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 2.1.0)
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-24 22:21:46 UTC; hugo
+Author: Sparkfish Analytics [cph],
+  Hugo Saavedra [aut, cre]
+Maintainer: Hugo Saavedra <analytics+hugo@sparkfish.com>
+Repository: CRAN
+Date/Publication: 2020-06-28 10:00:05 UTC

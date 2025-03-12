@@ -1,0 +1,47 @@
+Package: footBayes
+Type: Package
+Title: Fitting Bayesian and MLE Football Models
+Version: 1.0.0
+Date: 2025-01-09
+Authors@R: c(person(given = "Leonardo",
+                      family = "Egidi",
+                      role = c("aut", "cre"),
+                      email = "legidi@units.it"),
+               person(given = c("Roberto", "Macrì"),
+                      family = "Demartino",
+                      role = "aut"),
+               person(given = "Vasilis",
+                      family = "Palaskas.",
+                      role = "aut"))
+Maintainer: Leonardo Egidi <legidi@units.it>
+License: GPL-2
+Description: This is the first package allowing for the estimation,
+             visualization and prediction of the most well-known 
+             football models: double Poisson, bivariate Poisson,
+             Skellam, student_t, diagonal-inflated bivariate Poisson, and
+             zero-inflated Skellam. The package allows Hamiltonian
+             Monte Carlo (HMC) estimation through the underlying Stan
+             environment and Maximum Likelihood estimation (MLE, for 
+             'static' models only). The model construction relies on
+             the most well-known football references, such as 
+             Dixon and Coles (1997) <doi:10.1111/1467-9876.00065>,
+             Karlis and Ntzoufras (2003) <doi:10.1111/1467-9884.00366> and
+             Egidi, Pauli and Torelli (2018) <doi:10.1177/1471082X18798414>.
+URL: https://github.com/leoegidi/footbayes
+Encoding: UTF-8
+SystemRequirements: pandoc (>= 1.12.3), pandoc-citeproc
+Depends: R (>= 3.1.0)
+Imports: rstan (>= 2.18.1), arm, reshape2, ggplot2, ggridges,
+        bayesplot, matrixStats, extraDistr, parallel, metRology, dplyr,
+        tidyr, numDeriv, magrittr, rlang
+Suggests: testthat, knitr (>= 1.37), rmarkdown (>= 2.10), loo
+RoxygenNote: 7.3.2
+LazyData: true
+BuildManual: yes
+NeedsCompilation: no
+Packaged: 2025-01-09 15:07:52 UTC; 17245
+Author: Leonardo Egidi [aut, cre],
+  Roberto Macrì Demartino [aut],
+  Vasilis Palaskas. [aut]
+Repository: CRAN
+Date/Publication: 2025-01-09 15:20:02 UTC

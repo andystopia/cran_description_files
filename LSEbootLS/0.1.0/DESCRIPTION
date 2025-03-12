@@ -1,0 +1,30 @@
+Package: LSEbootLS
+Date: 2024-06-28
+Type: Package
+Title: Bootstrap Methods for Regression Models with Locally Stationary
+        Errors
+Version: 0.1.0
+Authors@R: c(person("Guillermo", "Ferreira", role = "aut",
+                     email = "gferreri@udec.cl"),
+              person("Joel", "Muñoz", role = "aut",
+                     email = "joelmuno@udec.cl"),
+              person("Nicolas", "Loyola", role = c("aut", "cre"),
+                     email = "nloyola2016@udec.cl"))
+Maintainer: Nicolas Loyola <nloyola2016@udec.cl>
+Description: Implements bootstrap methods for linear regression models with errors following a time-varying process, focusing on approximating the distribution of the least-squares estimator for regression models with locally stationary errors. It enables the construction of bootstrap and classical confidence intervals for regression coefficients, leveraging intensive simulation studies and real data analysis.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: TRUE
+Depends: doParallel, R (>= 2.10)
+Imports: foreach, doRNG, stats, parallel, LSTS, tibble, iterators,
+        rlecuyer
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-06-29 04:35:05 UTC; nicol
+Author: Guillermo Ferreira [aut],
+  Joel Muñoz [aut],
+  Nicolas Loyola [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-07-01 10:10:03 UTC

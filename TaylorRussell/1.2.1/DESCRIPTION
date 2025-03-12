@@ -1,0 +1,22 @@
+Package: TaylorRussell
+Type: Package
+Version: 1.2.1
+Date: 2023-12-04
+Title: A Taylor-Russell Function for Multiple Predictors
+Authors@R: c(
+    person("Niels", "Waller", role = c("aut", "cre"), email="nwaller@umn.edu" ),
+    person("Ziyu","Ren", role = "ctb"))
+Maintainer: Niels Waller <nwaller@umn.edu>
+Depends: R (>= 3.5)
+Imports: mvtnorm, shiny, shinyWidgets,
+Description: The Taylor Russell model is a widely used method for assessing test validity in personnel selection tasks. The three functions in this package extend this model in a number of notable ways. TR() estimates test validity for a single selection test via the original Taylor Russell model. It extends this model by allowing users greater flexibility in argument choice. For example, users can specify any three of the four parameters (base rate, selection ratio, criterion validity, and positive predictive value) of the Taylor Russell model and estimate the remaining parameter (see the help file for examples).  The TaylorRussell() function generalizes the original Taylor Russell model to allow for multiple selection tests (predictors).  To our knowledge, this is the first generalization of the Taylor Russell model to allow for three or more selection tests (it is also the first to correctly handle models with two selection tests). TRDemo() is a 'shiny' program for illustrating the underlying logic of the Taylor Russell model. Taylor, HC and Russell, JT (1939) "The relationship of validity coefficients to the practical effectiveness of tests in selection: Discussion and tables" <doi:10.1037/h0057079>.
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.2.3
+Suggests: rmarkdown, knitr
+Packaged: 2023-12-04 16:06:20 UTC; nielswaller
+Author: Niels Waller [aut, cre],
+  Ziyu Ren [ctb]
+Repository: CRAN
+Date/Publication: 2023-12-04 21:40:06 UTC

@@ -1,0 +1,44 @@
+Package: rrum
+Type: Package
+Title: Bayesian Estimation of the Reduced Reparameterized Unified Model
+        with Gibbs Sampling
+Version: 0.2.1
+Authors@R: c(
+           person("Steven Andrew", "Culpepper", 
+                  email = "sculpepp@illinois.edu",
+                  role = c("aut", "cph"),
+                  comment = c(ORCID = "0000-0003-4226-6176")
+           ),
+           person("Aaron", "Hudson", 
+                  email = "awhudson@uw.edu", 
+                  role = c("aut", "cph"),
+                  comment = c(ORCID = "0000-0002-9731-2224")
+           ),
+           person("James Joseph", "Balamuta", 
+                  email = "balamut2@illinois.edu",
+                  role = c("aut", "cph", "cre"),
+                  comment = c(ORCID = "0000-0003-2826-8458")
+           )
+          )
+Description: Implementation of Gibbs sampling algorithm for Bayesian Estimation
+    of the Reduced Reparameterized Unified Model ('rrum'), described by 
+    Culpepper and Hudson (2017) <doi: 10.1177/0146621617707511>.
+URL: https://tmsalab.github.io/rrum/, https://github.com/tmsalab/rrum
+BugReports: https://github.com/tmsalab/rrum/issues
+License: GPL (>= 2)
+Depends: R (>= 4.1.0), simcdm (>= 0.1.0)
+Imports: Rcpp (>= 1.0.11)
+LinkingTo: Rcpp, RcppArmadillo (>= 0.12.6.6.0), rgen, simcdm
+Suggests: testthat, covr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-11-29 07:25:13 UTC; ronin
+Author: Steven Andrew Culpepper [aut, cph]
+    (<https://orcid.org/0000-0003-4226-6176>),
+  Aaron Hudson [aut, cph] (<https://orcid.org/0000-0002-9731-2224>),
+  James Joseph Balamuta [aut, cph, cre]
+    (<https://orcid.org/0000-0003-2826-8458>)
+Maintainer: James Joseph Balamuta <balamut2@illinois.edu>
+Repository: CRAN
+Date/Publication: 2023-11-29 07:40:02 UTC

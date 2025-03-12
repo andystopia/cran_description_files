@@ -1,0 +1,37 @@
+Package: polyqtlR
+Type: Package
+Title: QTL Analysis in Autopolyploid Bi-Parental F1 Populations
+Version: 0.1.1
+Date: 2024-01-08
+Authors@R: c(person("Peter","Bourke", email = "pbourkey@gmail.com", role = c("aut","cre")),
+          person("Christine","Hackett", role = "ctb"),
+             person("Chris","Maliepaard", role = "ctb"),
+             person("Geert","van Geest", role = "ctb"),
+             person("Roeland","Voorrips", role = "ctb"),
+             person("Johan","Willemsen", role = "ctb"))
+Maintainer: Peter Bourke <pbourkey@gmail.com>
+Description: Quantitative trait loci (QTL) analysis and exploration of meiotic patterns in 
+    autopolyploid bi-parental F1 populations. 
+    For all ploidy levels, identity-by-descent (IBD) probabilities can be estimated.
+    Significance thresholds, exploring QTL allele effects and visualising results are provided. 
+    For more background and to reference the package see <doi:10.1093/bioinformatics/btab574>.
+Depends: R (>= 3.5.0)
+Imports: abind, doParallel, foreach, grDevices, graphics, Hmisc, knitr,
+        nlme, RColorBrewer, Rcpp (>= 0.12.19), reshape2, stats, utils
+Suggests: igraph, mappoly (>= 0.3.0), polymapR, rmarkdown
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2024-01-09 08:02:35 UTC; bourk001
+Author: Peter Bourke [aut, cre],
+  Christine Hackett [ctb],
+  Chris Maliepaard [ctb],
+  Geert van Geest [ctb],
+  Roeland Voorrips [ctb],
+  Johan Willemsen [ctb]
+Repository: CRAN
+Date/Publication: 2024-01-09 08:20:08 UTC

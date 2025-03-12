@@ -1,0 +1,46 @@
+Package: ConfMatrix
+Type: Package
+Title: Confusion Matrix
+Version: 0.1.0
+Authors@R: c(
+    person("Francisco Javier", "Ariza-Lopez", role = "aut", email = "fjariza@ujaen.es"),
+    person("Paola", "Barba-Ceballos", role = "aut", email = "pbarba@ujaen.es"),
+    person("Silverio", "Vilchez-Lopez", role = c("aut", "cre"), email = "svilchez@ujaen.es"),
+    person("Jose", "Rodriguez-Avi", role = "aut", email = "jravi@ujaen.es"),
+    person("Maria Virtudes", "Alba-Fernandez", role = "aut", email = "mvalba@ujaen.es"),
+    person("Jose Luis", "Garcia-Balboa", role = "aut", email = "jlbalboa@ujaen.es"))
+Maintainer: Silverio Vilchez-Lopez <svilchez@ujaen.es>
+Description: Thematic quality indices are provided to facilitate the evaluation
+    and quality control of geospatial data products (e.g. thematic maps, remote
+    sensing classifications, etc.). The indices offered are based on the
+    so-called confusion matrix. This matrix is constructed by comparing the
+    assigned classes or attributes of a set of pairs of positions or objects
+    in the product and the ground truth. In this package it is considered that
+    the classes of the ground truth correspond to the columns and that the
+    classes of the product to be valued correspond to the rows. The package
+    offers two object classes with their methods: 'ConfMatrix' (Confusion
+    matrix) and 'QCCS' (Quality Control Columns Set). The 'ConfMatrix' class of
+    objects offers more than 20 methods based on the confusion matrix. The
+    'QCCS' class of objects offers a different perspective in which the ground
+    truth is considered to allow the values of the column marginals to be fixed,
+    see Ariza López et al. (2019) <doi:10.3390/app9204240> and Canran Liu et al.
+    (2007) <doi:10.1016/j.rse.2006.10.010> for more details. The package was
+    created with 'R6'.
+Imports: R6, Rdpack, ggplot2, gridExtra
+RdMacros: Rdpack
+License: GPL
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, roxygen2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-30 11:53:33 UTC; UJA
+Author: Francisco Javier Ariza-Lopez [aut],
+  Paola Barba-Ceballos [aut],
+  Silverio Vilchez-Lopez [aut, cre],
+  Jose Rodriguez-Avi [aut],
+  Maria Virtudes Alba-Fernandez [aut],
+  Jose Luis Garcia-Balboa [aut]
+Repository: CRAN
+Date/Publication: 2024-11-03 12:40:02 UTC

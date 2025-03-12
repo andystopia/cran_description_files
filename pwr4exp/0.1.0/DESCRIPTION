@@ -1,0 +1,33 @@
+Package: pwr4exp
+Title: Power Analysis for Research Experiments
+Version: 0.1.0
+Authors@R: c(
+    person("Kai", "Wang", email = "kai.wang@usys.ethz.ch", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6672-1121")),
+           person("Mutian", "Niu", email = "mutian.niu@usys.ethz.ch", role = c("aut", "cph"), 
+           comment = c(ORCID = "0000-0003-4484-4611"))
+           )
+Description: Provides tools for calculating statistical power and determining sample size
+  for a variety of experimental designs used in agricultural and biological research,
+  including completely randomized, block, and split-plot designs. Supports customized
+  designs and allows specification of main effects, interactions, and contrasts for
+  accurate power analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: car (>= 3.1.2), emmeans (>= 1.10.3), lme4 (>= 1.1.35.4),
+        lmerTest (>= 3.1.3), methods
+Suggests: agricolae, AlgDesign, crossdes, FrF2, knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/an-ethz/pwr4exp,
+        https://an-ethz.github.io/pwr4exp/
+BugReports: https://github.com/an-ethz/pwr4exp/issues
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-10-08 21:10:55 UTC; wangkai
+Author: Kai Wang [aut, cre, cph] (<https://orcid.org/0000-0002-6672-1121>),
+  Mutian Niu [aut, cph] (<https://orcid.org/0000-0003-4484-4611>)
+Maintainer: Kai Wang <kai.wang@usys.ethz.ch>
+Repository: CRAN
+Date/Publication: 2024-10-11 08:20:05 UTC

@@ -1,0 +1,26 @@
+Package: vscc
+Type: Package
+Title: Variable Selection for Clustering and Classification
+Version: 0.7
+Date: 2023-10-17
+Authors@R: c(person("Jeffrey L.", "Andrews", role = c("aut")),
+  person("Mackenzie R.", "Neal", role = "aut"),
+  person("Paul D.", "McNicholas", role = c("aut", "cre"), email = "mcnicholas@math.mcmaster.ca",
+  comment = c(ORCID = "0000-0002-2482-523X")))
+Author: Jeffrey L. Andrews [aut],
+  Mackenzie R. Neal [aut],
+  Paul D. McNicholas [aut, cre] (<https://orcid.org/0000-0002-2482-523X>)
+Maintainer: Paul D. McNicholas <mcnicholas@math.mcmaster.ca>
+Description: Performs variable selection/feature reduction under a clustering or 
+  classification framework. In particular, it can be used in an automated fashion 
+  using mixture model-based methods ('teigen' and 'mclust' are currently supported).
+  Can account for mixtures of non-Gaussian distributions via Manly transform (via 'ManlyMix').
+  See Andrews and McNicholas (2014) <doi:10.1007/s00357-013-9139-2> and Neal and McNicholas (2023)
+  <doi:10.48550/arXiv.2305.16464>. 
+License: GPL (>= 2)
+Imports: teigen, mclust, MixGHD
+Depends: ManlyMix
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2023-10-17 17:17:35 UTC; paul
+Date/Publication: 2023-10-17 22:20:02 UTC

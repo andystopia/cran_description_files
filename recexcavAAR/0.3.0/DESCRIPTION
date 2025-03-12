@@ -1,0 +1,28 @@
+Package: recexcavAAR
+Type: Package
+Title: 3D Reconstruction of Archaeological Excavations
+Version: 0.3.0
+Authors@R: c(
+  person("Clemens", "Schmid", email = "clemens@nevrome.de", role = c("cre", "cph", "aut")),
+  person("Benjamin", "Serbe", email = "b.serbe@web.de", role = c("aut"))
+  )
+Maintainer: Clemens Schmid <clemens@nevrome.de>
+Description: A toolset for 3D reconstruction and analysis of excavations. It provides methods to reconstruct natural and artificial surfaces based on field measurements. This allows to spatially contextualize documented subunits and features. Intended to be part of a 3D visualization workflow.
+Date: 2017-02-15
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 6.0.1
+URL: https://github.com/ISAAKiel/recexcavAAR
+Imports: Rcpp (>= 0.12.7)
+Suggests: devtools (>= 1.12.0), dplyr (>= 0.5.0), knitr (>= 1.15.1),
+        magrittr (>= 1.5), rgl (>= 0.96.0), rmarkdown (>= 1.0),
+        roxygen2 (>= 5.0.1), testthat (>= 1.0.2)
+VignetteBuilder: knitr
+Depends: R (>= 3.3.2), kriging (>= 1.1)
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2017-02-25 21:29:06 UTC; clemens
+Author: Clemens Schmid [cre, cph, aut],
+  Benjamin Serbe [aut]
+Repository: CRAN
+Date/Publication: 2017-02-25 23:55:29

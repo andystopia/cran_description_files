@@ -1,0 +1,31 @@
+Package: XNomial
+Type: Package
+Title: Exact Goodness-of-Fit Test for Multinomial Data with Fixed
+        Probabilities
+Version: 1.0.4.1
+Date: 2015-12-22
+Authors@R: person(given = "Bill",
+                  family = "Engels",
+                  role = c("aut", "cre"),
+                  email = "wrengels@wisc.edu")
+Description: Tests whether a set of counts fit a given expected ratio. For
+    example, a genetic cross might be expected to produce four types in the
+    relative frequencies of 9:3:3:1. To see whether a set of observed counts
+    fits this expectation, one can examine all possible outcomes with xmulti() or a
+    random sample of them with xmonte() and find the probability of an observation
+    deviating from the expectation by at least as much as the observed. As a
+    measure of deviation from the expected, one can use the log-likelihood
+    ratio, the multinomial probability, or the classic chi-square statistic. A
+    histogram of the test statistic can also be plotted and compared with the
+    asymptotic curve.
+VignetteBuilder: knitr
+Depends: R (>= 2.14)
+Suggests: knitr
+NeedsCompilation: yes
+License: GPL
+RoxygenNote: 5.0.0
+Packaged: 2024-11-05 05:33:50 UTC; hornik
+Repository: CRAN
+Date/Publication: 2024-11-05 05:38:55 UTC
+Author: Bill Engels [aut, cre]
+Maintainer: Bill Engels <wrengels@wisc.edu>

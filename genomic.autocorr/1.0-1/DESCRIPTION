@@ -1,0 +1,21 @@
+Package: genomic.autocorr
+Title: Models Dealing with Spatial Dependency in Genomic Data
+Version: 1.0-1
+Authors@R: c(person("Chris", "Wallace", email = "cew54@cam.ac.uk", role = c("aut", "cre")),
+	   person("Oliver", "Burren", email = "ob219@cam.ac.uk", role = c("aut")))
+Description: Local structure in genomic data often induces dependence between observations taken at different genomic locations.  Ignoring this dependence leads to underestimation of the standard error of parameter estimates.  This package uses block bootstrapping to estimate asymptotically correct standard errors of parameters from any standard generalised linear model that may be fit by the glm() function.
+Date: 2017-10-17
+Depends: R (>= 3.2.2)
+License: GPL-2
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: data.table, magrittr, reshape, parallel
+Suggests: testthat
+URL: https://github.com/chr1swallace/genomic.autocorr
+NeedsCompilation: no
+Packaged: 2017-10-19 20:51:01 UTC; chris
+Author: Chris Wallace [aut, cre],
+  Oliver Burren [aut]
+Maintainer: Chris Wallace <cew54@cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2017-10-20 09:17:08 UTC

@@ -1,0 +1,51 @@
+Package: dcm2
+Type: Package
+Title: Calculating the M2 Model Fit Statistic for Diagnostic
+        Classification Models
+Version: 1.0.2
+Authors@R: 
+    c(person(given = "Jeffrey",
+             family = "Hoover",
+             role = c("aut", "cre", "cph"),
+             email = "jeffrey.c.hoover@gmail.com",
+             comment = c(ORCID = "0000-0002-0276-0308")),
+      person(given = "W. Jake",
+             family = "Thompson",
+             role = c("aut"),
+             email = "wjakethompson@gmail.com",
+             comment = c(ORCID = "0000-0001-7339-0300")),
+      person(given = "Wenchao",
+             family = "Ma",
+             role = c("ctb"),
+             email = "wenchao.ma@ua.edu",
+             comment = c("Author of Mord.cpp")))
+Description: A collection of functions for calculating the M2 model fit
+    statistic for diagnostic classification models as described by Liu et al.
+    (2016) <DOI:10.3102/1076998615621293>. These functions provide multiple
+    sources of information for model fit according to the M2 statistic,
+    including the M2 statistic, the *p* value for that M2 statistic, and the
+    Root Mean Square Error of Approximation based on the M2 statistic.
+License: GPL-3
+URL: https://github.com/atlas-aai/dcm2
+BugReports: https://github.com/atlas-aai/dcm2/issues
+Depends: R (>= 3.6)
+Imports: dplyr (>= 0.8.4), glue (>= 1.4.2), magrittr (>= 1.5), methods
+        (>= 4.1.0), modelr (>= 0.1.8), purrr (>= 0.3.3), Rcpp, rlang
+        (>= 0.4.11), stringr (>= 1.4.0), tibble (>= 2.1.3), tidyr (>=
+        1.1.4)
+Suggests: covr, GDINA, roxygen2, spelling, testthat (>= 2.1.0)
+LinkingTo: Rcpp, RcppArmadillo (>= 0.9.800.1.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2023-03-20 19:54:01 UTC; jeff
+Author: Jeffrey Hoover [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0276-0308>),
+  W. Jake Thompson [aut] (<https://orcid.org/0000-0001-7339-0300>),
+  Wenchao Ma [ctb] (Author of Mord.cpp)
+Maintainer: Jeffrey Hoover <jeffrey.c.hoover@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-21 19:50:02 UTC

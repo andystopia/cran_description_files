@@ -1,0 +1,29 @@
+Package: landmulti
+Type: Package
+Title: Landmark Prediction with Multiple Short-Term Events
+Version: 0.5.0
+Authors@R: c(person(given = "Wen",
+          family = "Li",
+          role = c("aut", "cre"),
+          email = "wen.li@uth.tmc.edu"),
+          person(given = "Qian",
+          family = "Wang",
+          email = "qian.wang@uth.tmc.edu",
+          role = "aut"))
+Maintainer: Wen Li <wen.li@uth.tmc.edu>
+Description: Contains functions for a flexible varying-coefficient landmark model by incorporating multiple short-term events into the prediction of long-term survival probability. For more information about landmark prediction please see Li, W., Ning, J., Zhang, J., Li, Z., Savitz, S.I., Tahanan, A., Rahbar.M.H., (2023+). "Enhancing Long-term Survival Prediction with Multiple Short-term Events: Landmarking with A Flexible Varying Coefficient Model".
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: survival, landpred, NMOF, emdbook, snow
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Collate: 'HelperFunctions.R' 'dat.R' 'globals.R' 'multipredict.R'
+NeedsCompilation: no
+Packaged: 2023-11-09 17:03:37 UTC; qwang12
+Author: Wen Li [aut, cre],
+  Qian Wang [aut]
+Repository: CRAN
+Date/Publication: 2023-11-10 07:20:05 UTC

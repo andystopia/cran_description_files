@@ -1,0 +1,24 @@
+Package: covadap
+Type: Package
+Date: 2023-12-06
+Title: Implement Covariate-Adaptive Randomization
+Version: 1.0.1
+Authors@R: c(
+  	   person("Rosamarie", "Frieri", email="rosamarie.frieri2@unibo.it", role=c("aut","cre")),
+  	   person("Marco", "Novelli", email="m.novelli@unibo.it", role="aut")
+	)
+Author: Rosamarie Frieri [aut, cre],
+  Marco Novelli [aut]
+Maintainer: Rosamarie Frieri <rosamarie.frieri2@unibo.it>
+Imports: stats
+Description: Implementing seven Covariate-Adaptive Randomization to assign patients to two treatments. 
+    Three of these procedures can also accommodate quantitative and mixed covariates. Given a set of covariates, the user can
+    generate a single sequence of allocations or replicate the design multiple times by simulating the patients' covariate
+    profiles. At the end, an extensive assessment of the performance of the randomization procedures is provided, calculating
+    several imbalance measures. See Baldi Antognini A, Frieri R, Zagoraiou M and Novelli M (2022) <doi:10.1007/s00362-022-01381-1> for details.
+License: GPL (>= 3)
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-12-06 16:47:46 UTC; marco
+Repository: CRAN
+Date/Publication: 2023-12-06 19:20:02 UTC

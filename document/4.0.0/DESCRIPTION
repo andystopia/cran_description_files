@@ -1,0 +1,25 @@
+Package: document
+Title: Run 'roxygen2' on (Chunks of) Single Code Files
+Version: 4.0.0
+Authors@R: person(given = c("Andreas", "Dominik"), family = "Cullmann",
+    email = "fvafrcu@mailbox.org", role = c("aut","cre"))
+Description: Have you ever been tempted to create 'roxygen2'-style documentation
+    comments for one of your functions that was not part of one of your
+    packages (yet)?
+    This is exactly what this package is about: running 'roxygen2' on
+    (chunks of) a single code file.
+Depends: R (>= 3.3.0)
+License: BSD_2_clause + file LICENSE
+URL: https://gitlab.com/fvafrcu/document
+Encoding: UTF-8
+Imports: callr, checkmate, desc, fritools, rcmdcheck, roxygen2,
+        rstudioapi
+Suggests: knitr, pkgload, rmarkdown, RUnit, testthat
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-06-14 10:01:30 UTC; qwer
+Author: Andreas Dominik Cullmann [aut, cre]
+Maintainer: Andreas Dominik Cullmann <fvafrcu@mailbox.org>
+Repository: CRAN
+Date/Publication: 2023-06-14 10:42:07 UTC

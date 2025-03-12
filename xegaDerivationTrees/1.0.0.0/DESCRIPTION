@@ -1,0 +1,43 @@
+Package: xegaDerivationTrees
+Title: Generating and Manipulating Derivation Trees
+Version: 1.0.0.0
+Authors@R: 
+    person(given = "Andreas",
+           family = "Geyer-Schulz",
+           role = c("aut", "cre"),
+           email = "Andreas.Geyer-Schulz@kit.edu",
+           comment = c(ORCID = "0009-0000-5237-3579"))
+Description: Derivation tree operations are needed for implementing 
+            grammar-based genetic programming and grammatical evolution:  
+            Generating of a random derivation trees of a context-free grammar 
+            of bounded depth, decoding a derivation tree, 
+            choosing a random node in a derivation tree, 
+            extracting a tree whose root is a specified node, and 
+            inserting a subtree into a derivation tree at a specified node.
+            These operations are necessary for the initializiation and 
+            for decoders of a random population of programs, 
+            as well as for implementing crossover and mutation operators.
+            Depth-bounds are guaranteed by switching to a grammar 
+            without recursive production rules. 
+            For executing the examples, the package 'BNF' is needed.
+            The basic tree operations of generating, extracting, and 
+            inserting of derivation trees as well as the conditions 
+            for guaranteeing complete derivation trees have been 
+            presented in Geyer-Schulz (1997, ISBN:978-3-7908-0830-X).
+            The use of random integer vectors for the generation 
+            of derivation trees has been introduced in 
+            Ryan, C., Collins, J. J., and  O'Neill, M. (1998)
+            <doi:10.1007/BFb0055930>. 
+License: MIT + file LICENSE
+URL: <https://github.com/ageyerschulz/xegaDerivationTrees>
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Imports: xegaBNF
+NeedsCompilation: no
+Packaged: 2024-02-12 19:23:17 UTC; dj2333
+Author: Andreas Geyer-Schulz [aut, cre]
+    (<https://orcid.org/0009-0000-5237-3579>)
+Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
+Repository: CRAN
+Date/Publication: 2024-02-13 16:50:02 UTC

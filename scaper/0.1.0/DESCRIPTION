@@ -1,0 +1,23 @@
+Package: scaper
+Title: Single Cell Transcriptomics-Level Cytokine Activity Prediction
+        and Estimation
+Version: 0.1.0
+Authors@R: c(
+    person("H. Robert", "Frost", email = "hildreth.r.frost@dartmouth.edu", role = c("aut")),
+    person("Azka", "Javaid", email = "azka.javaid.gr@dartmouth.edu", role = c("aut", "cre")))
+Maintainer: Azka Javaid <azka.javaid.gr@dartmouth.edu>
+Description: Generates cell-level cytokine activity estimates using relevant information from gene sets constructed with the 'CytoSig' and the 'Reactome' databases and scored using the modified 'Variance-adjusted Mahalanobis (VAM)' framework for single-cell RNA-sequencing (scRNA-seq) data. 'CytoSig' database is described in: Jiang at al., (2021) <doi:10.1038/s41592-021-01274-5>. 'Reactome' database is described in: Gillespie et al., (2021) <doi:10.1093/nar/gkab1028>. The 'VAM' method is outlined in: Frost (2020) <doi:10.1093/nar/gkaa582>.
+Suggests: knitr, pheatmap, rmarkdown, usethis
+Imports: magrittr, xml2, stringr, dplyr, Seurat, SeuratObject, VAM,
+        utils
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-10-18 20:08:25 UTC; azkajavaid
+Author: H. Robert Frost [aut],
+  Azka Javaid [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-10-19 07:20:02 UTC

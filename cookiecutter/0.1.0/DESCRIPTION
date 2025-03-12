@@ -1,0 +1,36 @@
+Package: cookiecutter
+Title: Generate Project Files from a Template
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Felix",
+           family = "Henninger",
+           role = c("aut", "cre", "cph"),
+           email = "mailbox@felixhenninger.com",
+           comment = c(ORCID = "0000-0002-7730-9511")),
+    person("National Research Data Infrastructure Germany", role = c("fnd"))
+  )
+Description: Generate project files and directories following a pre-made template.
+  You can specify variables to customize file names and content, and
+  flexibly adapt the template to your needs. 'cookiecutter' for 'R'
+  implements a subset of the excellent 'cookiecutter' package for the
+  'Python' programming language (<https://github.com/cookiecutter/>), and
+  aims to be largely compatible with the original 'cookiecutter' template
+  format.
+URL: https://github.com/felixhenninger/cookiecutter/,
+        https://felixhenninger.github.io/cookiecutter/,
+        https://github.com/FelixHenninger/cookiecutter
+License: Apache License (>= 2)
+Config/Needs/website: pkgdown, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: fs, jsonlite, mime, purrr, readr, rlang, stringr, utils,
+        whisker
+BugReports: https://github.com/FelixHenninger/cookiecutter/issues
+NeedsCompilation: no
+Packaged: 2023-09-07 19:26:25 UTC; felix
+Author: Felix Henninger [aut, cre, cph]
+    (<https://orcid.org/0000-0002-7730-9511>),
+  National Research Data Infrastructure Germany [fnd]
+Maintainer: Felix Henninger <mailbox@felixhenninger.com>
+Repository: CRAN
+Date/Publication: 2023-09-08 07:00:02 UTC

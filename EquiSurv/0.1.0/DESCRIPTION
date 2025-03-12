@@ -1,0 +1,20 @@
+Package: EquiSurv
+Type: Package
+Title: Modeling, Confidence Intervals and Equivalence of Survival
+        Curves
+Version: 0.1.0
+Author: Kathrin Moellenhoff
+Maintainer: Kathrin Moellenhoff <kathrin.moellenhoff@rub.de>
+Description: We provide a non-parametric and a parametric approach to investigate the equivalence (or non-inferiority) of two survival curves, obtained from two given datasets. The test is based on the creation of confidence intervals at pre-specified time points.
+    For the non-parametric approach, the curves are given by Kaplan-Meier curves and the variance for calculating the confidence intervals is obtained by Greenwood's formula.
+    The parametric approach is based on estimating the underlying distribution, where the user can choose between a Weibull, Exponential, Gaussian, Logistic, Log-normal or a Log-logistic distribution. Estimates for the variance for calculating the confidence bands are obtained by a (parametric) bootstrap approach. For this bootstrap censoring is assumed to be exponentially distributed and estimates are obtained from the datasets under consideration.
+    All details can be found in K.Moellenhoff and A.Tresch: Survival analysis under non-proportional hazards: investigating non-inferiority or equivalence in time-to-event data <arXiv:2009.06699>.
+Depends: survival, eha, graphics
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-09-17 08:47:18 UTC; Kathrin
+Repository: CRAN
+Date/Publication: 2020-09-23 13:30:02 UTC

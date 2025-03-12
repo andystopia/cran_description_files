@@ -1,0 +1,31 @@
+Package: TaxaNorm
+Title: Feature-Wise Normalization for Microbiome Sequencing Data
+Version: 2.4
+Authors@R: c(
+      person("Ziyue", "Wang", email = "wangziyue57@gmail.com", role = c("aut")),
+      person("Dillon", "Lloyd", email = "dtlloyd@ncsu.edu", role = c("aut","cre","cph")),
+      person("Shanshan", "Zhao", email = "shanshan.zhao@nih.gov", role = c("aut","ctb")),
+      person("Alison", "Motsinger-Reif", email = "alison.motsinger-reif@nih.gov", role = c("aut","ctb")))
+Maintainer: Dillon Lloyd <dtlloyd@ncsu.edu>
+Description: A novel feature-wise normalization method based on a zero-inflated negative binomial model. This method assumes that the effects of sequencing depth vary for each taxon on their mean and also incorporates a rational link of zero probability and taxon dispersion as a function of sequencing depth. Ziyue Wang, Dillon Lloyd, Shanshan Zhao, Alison Motsinger-Reif (2023) <doi:10.1101/2023.10.31.563648>.
+License: GPL-3
+Depends: R (>= 4.0.0), microbiome,
+Imports: phyloseq, stats, S4Vectors, BiocGenerics, vegan, methods,
+        MASS, future, future.apply, matrixStats, pscl, parallelly,
+        ggplot2, utils
+URL: https://github.com/wangziyue57/TaxaNorm
+biocViews: Sequencing, Microbiome, Metagenomics, Normalization,
+        Visualization
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+BugReports: https://github.com/wangziyue57/TaxaNorm/issues
+NeedsCompilation: no
+Packaged: 2023-12-11 15:19:47 UTC; Dillon
+Author: Ziyue Wang [aut],
+  Dillon Lloyd [aut, cre, cph],
+  Shanshan Zhao [aut, ctb],
+  Alison Motsinger-Reif [aut, ctb]
+Repository: CRAN
+Date/Publication: 2023-12-12 18:30:05 UTC

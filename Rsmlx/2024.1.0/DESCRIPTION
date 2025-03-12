@@ -1,0 +1,43 @@
+Package: Rsmlx
+Type: Package
+Title: R Speaks 'Monolix'
+Version: 2024.1.0
+Authors@R: c(
+    person( "Chloe", "Bracis", role = c("ctb","cre"), email = "support@lixoft.com" ),
+    person( "Frano", "Mihaljevic", role = c("aut") ),
+    person( "Marc", "Lavielle", role = c("aut") ),
+    person( "Jonathan", "Chauvin", role = c("ctb") ),
+    person( "Clémence", "Pinaud", role = c("ctb")))
+Maintainer: Chloe Bracis <support@lixoft.com>
+Description: Provides methods for model building and model evaluation of mixed effects models using 
+    'Monolix' <https://monolix.lixoft.com>. 'Monolix' is a software tool for nonlinear mixed effects 
+    modeling that must have been installed in order to use 'Rsmlx'. 
+    Among other tasks, 'Rsmlx' provides a powerful tool for automatic PK model building, performs 
+    statistical tests for model assessment, bootstrap simulation and likelihood profiling for 
+    computing confidence intervals. 'Rsmlx' also proposes several automatic covariate search methods for 
+    mixed effects models. 
+URL: https://monolix.lixoft.com/rsmlx/
+SystemRequirements: 'Monolix' (<https://monolix.lixoft.com>)
+Depends: R (>= 3.0.0)
+Imports: graphics, grDevices, utils, stats, MASS, ggplot2, gridExtra,
+        dplyr, tidyr
+Collate: mlxConnectors.R bootstrap.R buildmlx.R buildVar.R buildAll.R
+        confintmlx.R correlationModelSelection.R
+        covariateModelSelection.R covariateSearch.R
+        errorModelSelection.R llp.R newConnectors.R setSettings.R
+        testmlx.R zzz.R RsmlxTools.R readDatamlx.R pkbuild.R pkpopini.R
+        whichPKmodel.R
+License: BSD_2_clause + file LICENSE
+Copyright: Inria
+NeedsCompilation: no
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Packaged: 2024-06-10 13:19:46 UTC; cbracis
+Author: Chloe Bracis [ctb, cre],
+  Frano Mihaljevic [aut],
+  Marc Lavielle [aut],
+  Jonathan Chauvin [ctb],
+  Clémence Pinaud [ctb]
+Repository: CRAN
+Date/Publication: 2024-06-10 13:30:07 UTC

@@ -1,0 +1,23 @@
+Package: nbody
+Type: Package
+Title: Gravitational N-Body Simulation
+Version: 1.41
+Authors@R: 
+    c(person(given = "Danail",
+             family = "Obreschkow",
+             role = c("aut", "cre"),
+             email = "danail.obreschkow@gmail.com",
+             comment = c(ORCID = "0000-0002-1527-0762")))
+Description: Run simple direct gravitational N-body simulations. The package can access different external N-body simulators (e.g. GADGET-4 by Springel et al. (2021) <doi:10.48550/arXiv.2010.03567>), but also has a simple built-in simulator. This default simulator uses a variable block time step and lets the user choose between a range of integrators, including 4th and 6th order integrators for high-accuracy simulations. Basic top-hat smoothing is available as an option. The code also allows the definition of background particles that are fixed or in uniform motion, not subject to acceleration by other particles.
+Depends: R (>= 4.0.0)
+Imports: magicaxis, Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-08-01 09:32:53 UTC; 00077389
+Author: Danail Obreschkow [aut, cre] (<https://orcid.org/0000-0002-1527-0762>)
+Maintainer: Danail Obreschkow <danail.obreschkow@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-20 14:50:05 UTC

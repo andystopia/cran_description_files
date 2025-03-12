@@ -1,0 +1,32 @@
+Package: waspr
+Type: Package
+Title: Wasserstein Barycenters of Subset Posteriors
+Version: 1.0.1
+Authors@R: person("Jolien", "Cremers", email = "joliencremers@gmail.com",
+                  role = c("aut", "cre"))
+Description: Functions to compute Wasserstein barycenters
+    of subset posteriors using the swapping algorithm developed by Puccetti, 
+    Rüschendorf and Vanduffel (2020) <doi:10.1016/j.jmaa.2017.02.003>. The 
+    Wasserstein barycenter is a geometric approach for combining subset 
+    posteriors. It allows for parallel and distributed computation of the 
+    posterior in case of complex models and/or big datasets, thereby increasing
+    computational speed tremendously.
+License: GPL-3
+URL: https://github.com/joliencremers/waspr
+BugReports: https://github.com/joliencremers/waspr/issues
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.4.6)
+LinkingTo: BH, Rcpp, RcppArmadillo,
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat, spelling
+VignetteBuilder: knitr
+Language: en-US
+Biarch: true
+Depends: R (>= 3.5.0)
+NeedsCompilation: yes
+Packaged: 2023-09-11 13:09:38 UTC; Jolien
+Author: Jolien Cremers [aut, cre]
+Maintainer: Jolien Cremers <joliencremers@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-11 14:00:03 UTC

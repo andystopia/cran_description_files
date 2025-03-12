@@ -1,0 +1,28 @@
+Package: psmineR
+Type: Package
+Title: Performance Spectrum Miner for Event Data
+Version: 0.1.0
+Date: 2022-10-06
+Authors@R: c(person("Greg","Van Houdt", email = "greg.vanhoudt@uhasselt.be", role = "aut"),
+             person("Gert","Janssenswillen",email = "gert.janssenswillen@uhasselt.be", role = c("ctb","cre")),
+             person("Gerard","van Hulzen",email = "gerard.vanhulzen@uhasselt.be", role = c("ctb")))
+Description: Compute detailed and aggregated performance spectrum for event data. The detailed performance spectrum describes the event data in terms of segments, where the performance of each segment is measured and plotted for any occurrences of this segment over time and can be classified, e.g., regarding the overall population. The aggregated performance spectrum visualises the amount of cases of particular performance over time. Denisov, V., Fahland, D., & van der Aalst, W. M. P. (2018) <doi:10.1007/978-3-319-98648-7_9>.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: bupaR (>= 0.5.1), dplyr, data.table, forcats, ggplot2, tidyr,
+        rlang (>= 1.0.0), cli (>= 3.2.0), glue, stringi
+RoxygenNote: 7.2.1
+URL: https://bupar.net/, https://github.com/bupaverse/psmineR/,
+        https://bupaverse.github.io/psmineR/
+Suggests: knitr, eventdataR, rmarkdown, covr, testthat (>= 3.1.3)
+BugReports: https://github.com/bupaverse/psmineR/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-10 08:59:52 UTC; lucp8407
+Author: Greg Van Houdt [aut],
+  Gert Janssenswillen [ctb, cre],
+  Gerard van Hulzen [ctb]
+Maintainer: Gert Janssenswillen <gert.janssenswillen@uhasselt.be>
+Repository: CRAN
+Date/Publication: 2022-10-10 17:00:02 UTC

@@ -1,0 +1,32 @@
+Package: ccostr
+Type: Package
+Title: Estimation of Mean Costs in Censored Data
+Version: 0.1.0
+Authors@R: c(
+    person("Lars", "Boerty", email = "lars.borty@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3715-8528")),
+    person("Rasmus", "Broendum", role = "aut", comment = c(ORCID = "0000-0001-5537-6767")),
+    person("Martin", "Boegsted", role = "aut", comment = c(ORCID = "0000-0001-9192-1814")),
+    person("Haematology Research Unit - Aalborg", role = "cph"))
+Description: Implementation of estimators for inferring 
+    the mean of censored cost data. Including the estimators
+    BT from Bang and Tsiatis (2000) <doi:10.1093/biomet/87.2.329> and 
+    ZT from Zhao and Tian (2001) <doi:10.1111/j.0006-341X.2001.01002.x>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: rmarkdown, parallel, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Imports: ggplot2, dplyr, tibble, knitr, msm, forcats, rlang,
+        data.table, survival, Rdpack
+Depends: R (>= 3.5.0)
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2019-09-06 10:34:08 UTC; larsn
+Author: Lars Boerty [aut, cre] (<https://orcid.org/0000-0002-3715-8528>),
+  Rasmus Broendum [aut] (<https://orcid.org/0000-0001-5537-6767>),
+  Martin Boegsted [aut] (<https://orcid.org/0000-0001-9192-1814>),
+  Haematology Research Unit - Aalborg [cph]
+Maintainer: Lars Boerty <lars.borty@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-09-09 10:10:02 UTC

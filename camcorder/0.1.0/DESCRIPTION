@@ -1,0 +1,48 @@
+Package: camcorder
+Type: Package
+Title: Record Your Plot History
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(
+        given = "Ellis", 
+        family = "Hughes", 
+        email = "ellishughes@live.com", 
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-0637-4436")
+      ),
+      person(
+        given = "Cédric", 
+        family = "Scherer", 
+        email = "cedricphilippscherer@gmail.com", 
+        role = c("ctb")
+      ),
+      person(
+        given = "Georgios", 
+        family = "Karamanis", 
+        email = "georgios@karaman.is", 
+        role = c("ctb")
+      )
+    )
+Description: Record and generate a 'gif' of your 'R' sessions plots. When creating 
+    a visualization, there is inevitably iteration and refinement that occurs. 
+    Automatically save the plots made to a specified directory, previewing them 
+    as they would be saved. Then combine all plots generated into a 'gif'
+    to show the plot refinement over time.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: ggplot2, gifski, tools, magick, rsvg, jsonlite, rlang,
+        grDevices, svglite
+Suggests: knitr, rmarkdown, markdown, ragg, grid, covr, testthat (>=
+        3.0.0), patchwork, withr, dplyr, systemfonts, scales, extrafont
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-02 08:17:00 UTC; Ellis
+Author: Ellis Hughes [aut, cre] (<https://orcid.org/0000-0003-0637-4436>),
+  Cédric Scherer [ctb],
+  Georgios Karamanis [ctb]
+Maintainer: Ellis Hughes <ellishughes@live.com>
+Repository: CRAN
+Date/Publication: 2022-10-03 07:40:05 UTC

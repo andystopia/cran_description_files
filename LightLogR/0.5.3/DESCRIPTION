@@ -1,0 +1,57 @@
+Package: LightLogR
+Title: Process Data from Wearable Light Loggers and Optical Radiation
+        Dosimeters
+Version: 0.5.3
+Authors@R: c(
+    person("Johannes", "Zauner", 
+      email = "johannes.zauner@tum.de", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-2171-4566")),
+    person("Manuel", "Spitschan", 
+      email = "manuel.spitschan@tum.de", role = "aut",
+      comment = c(ORCID = "0000-0002-8572-9268")),
+    person("Steffen", "Hartmeyer", 
+      email = "steffen.hartmeyer@epfl.ch", role = "aut",
+      comment = c(ORCID = "0000-0002-2813-2668")),
+    person("MeLiDos", role = "fnd"),
+    person("EURAMET", role = "fnd", comment = "European Association of National Metrology Institutes. Website: www.euramet.org. Grant Number: 22NRM05 MeLiDos. Grant Statement: The project (22NRM05 MeLiDos) has received funding from the European Partnership on Metrology, co-financed from the European Union’s Horizon Europe Research and Innovation Programme and by the Participating States."),    
+    person("European Union", role = "fnd", comment = "Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or EURAMET. Neither the European Union nor the granting authority can be held responsible for them."),
+    person("TSCN-Lab", comment = c(URL = "www.tscnlab.org"), role = "cph"))
+Description: Import, processing, validation, and visualization of personal light exposure measurement data from wearable devices. The package implements features such as the import of data and metadata files, conversion of common file formats, validation of light logging data, verification of crucial metadata, calculation of common parameters, and semi-automated analysis and visualization.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/tscnlab/LightLogR,
+        https://tscnlab.github.io/LightLogR/,
+        https://zenodo.org/doi/10.5281/zenodo.11562600
+BugReports: https://github.com/tscnlab/LightLogR/issues
+Imports: cowplot, dplyr, flextable, ggplot2, ggsci, ggtext, hms,
+        janitor, lubridate, magrittr, pkgload, plotly, purrr, readr,
+        rlang, rsconnect, scales, slider, stats, stringr, suntools,
+        tibble, tidyr, utils
+Depends: R (>= 4.3)
+LazyData: true
+Suggests: covr, gghighlight, gt, gtsummary, knitr, patchwork,
+        rmarkdown, testthat (>= 3.0.0), tidyverse
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2025-02-24 17:54:15 UTC; zauner
+Author: Johannes Zauner [aut, cre] (<https://orcid.org/0000-0003-2171-4566>),
+  Manuel Spitschan [aut] (<https://orcid.org/0000-0002-8572-9268>),
+  Steffen Hartmeyer [aut] (<https://orcid.org/0000-0002-2813-2668>),
+  MeLiDos [fnd],
+  EURAMET [fnd] (European Association of National Metrology Institutes.
+    Website: www.euramet.org. Grant Number: 22NRM05 MeLiDos. Grant
+    Statement: The project (22NRM05 MeLiDos) has received funding from
+    the European Partnership on Metrology, co-financed from the
+    European Union’s Horizon Europe Research and Innovation Programme
+    and by the Participating States.),
+  European Union [fnd] (Co-funded by the European Union. Views and
+    opinions expressed are however those of the author(s) only and do
+    not necessarily reflect those of the European Union or EURAMET.
+    Neither the European Union nor the granting authority can be held
+    responsible for them.),
+  TSCN-Lab [cph] (www.tscnlab.org)
+Maintainer: Johannes Zauner <johannes.zauner@tum.de>
+Repository: CRAN
+Date/Publication: 2025-02-24 18:10:01 UTC

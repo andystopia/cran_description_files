@@ -1,0 +1,44 @@
+Package: surrosurv
+Type: Package
+Title: Evaluation of Failure Time Surrogate Endpoints in Individual
+        Patient Data Meta-Analyses
+Version: 1.1.26
+Authors@R: c(
+  person("Federico", "Rotolo", role="aut", email="federico.rotolo@gustaveroussy.fr",
+          comment = c(ORCID = "0000-0003-4837-6501")),
+  person("Xavier", "Paoletti", role="ctb"),
+  person("Marc", "Buyse", role="ctb"),
+  person("Tomasz", "Burzykowski", role="ctb"),
+  person("Stefan", "Michiels", role="ctb", email="stefan.michiels@gustaveroussy.fr",
+          comment = c(ORCID = "0000-0002-6963-2968")),
+  person("Dan", "Chaltiel", role="cre", email="dan.chaltiel@gustaveroussy.fr",
+          comment = c(ORCID = "0000-0003-3488-779X")))
+Maintainer: Dan Chaltiel <dan.chaltiel@gustaveroussy.fr>
+Description: Provides functions for the evaluation of
+    surrogate endpoints when both the surrogate and the true endpoint are failure
+    time variables. The approaches implemented are:
+    (1) the two-step approach (Burzykowski et al, 2001) <DOI:10.1111/1467-9876.00244> with a copula model (Clayton, Plackett, Hougaard) at
+    the first step and either a linear regression of log-hazard ratios at the second
+    step (either adjusted or not for measurement error);
+    (2) mixed proportional hazard models estimated via mixed Poisson GLM
+    (Rotolo et al, 2017 <DOI:10.1177/0962280217718582>).
+Depends: R (>= 3.5.0)
+Imports: copula, eha, grDevices, lme4, MASS, Matrix, msm, mvmeta,
+        optimx, parallel, parfm, stats, survival
+License: GPL-2
+URL: https://github.com/Oncostat/surrosurv
+BugReports: https://github.com/Oncostat/surrosurv/issues/
+VignetteBuilder: R.rsp
+Suggests: R.rsp, testthat (>= 3.0.0)
+Encoding: UTF-8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-04-13 07:54:04 UTC; Dan
+Author: Federico Rotolo [aut] (<https://orcid.org/0000-0003-4837-6501>),
+  Xavier Paoletti [ctb],
+  Marc Buyse [ctb],
+  Tomasz Burzykowski [ctb],
+  Stefan Michiels [ctb] (<https://orcid.org/0000-0002-6963-2968>),
+  Dan Chaltiel [cre] (<https://orcid.org/0000-0003-3488-779X>)
+Repository: CRAN
+Date/Publication: 2023-04-14 08:50:05 UTC

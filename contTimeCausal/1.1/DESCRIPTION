@@ -1,0 +1,30 @@
+Package: contTimeCausal
+Type: Package
+Title: Continuous Time Causal Models
+Version: 1.1
+Date: 2022-06-05
+Author: Shu Yang [aut],
+  Shannon T. Holloway [aut, cre]
+Authors@R: c(person("Shu", "Yang", role = "aut"),
+             person("Shannon T.", "Holloway", role = c("aut", "cre"),
+                     email = "shannon.t.holloway@gmail.com"))
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Description: Implements the semiparametric efficient estimators of 
+    continuous-time causal models for time-varying treatments and confounders 
+    in the presence of dependent censoring (including structural failure time 
+    model and Cox proportional hazards marginal structural model). 
+    S. Yang, K. Pieper, and F. Cools (2019) <doi:10.1111/biom.12845>.
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: dplyr, survival
+Imports: zoo, stats, methods
+VignetteBuilder: knitr
+Suggests: rmarkdown, knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Collate: 'zooStep.R' 'IPCWStep.R' 'VStep.R' 'VStep2.R' 'verifyInputs.R'
+        'ctCoxMSM.R' 'ctSFTM.R' 'ctcData.R' 'print.ctc.R'
+NeedsCompilation: no
+Packaged: 2022-06-05 18:37:23 UTC; 19194
+Repository: CRAN
+Date/Publication: 2022-06-06 23:10:19 UTC

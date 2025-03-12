@@ -1,0 +1,39 @@
+Package: transltr
+Title: Support Many Languages in R
+Version: 0.1.0
+Authors@R: c(
+    person("Jean-Mathieu", "Potvin",
+        role  = c("aut", "cre", "cph"),
+        email = "jeanmathieupotvin@ununoctium.dev"),
+    person("Jérôme", "Lavoué",
+        role    = c("ctb", "fnd", "rev"),
+        email   = "jerome.lavoue@umontreal.ca",
+        comment = c(ORCID = "0000-0003-4950-5475"))
+  )
+Description: An object model for source text and translations. Find and extract
+    translatable strings. Provide translations and seamlessly retrieve them at
+    runtime.
+License: MIT + file LICENSE
+URL: https://transltr.ununoctium.dev
+BugReports: https://github.com/jeanmathieupotvin/transltr/issues
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Depends: R (>= 4.3)
+Imports: digest, R6, stringi, utils, yaml
+Suggests: covr, devtools, lifecycle, microbenchmark, pkgdown, testthat
+        (>= 3.0.0), usethis, withr
+Collate: 'aaa.R' 'assert.R' 'class-location.R' 'class-text.R'
+        'class-translator.R' 'find-source-in-exprs.R' 'find-source.R'
+        'flat.R' 'hash.R' 'language.R' 'normalize.R' 'serialize.R'
+        'text-io.R' 'translator-io.R' 'transltr-package.R'
+        'utils-format-vector.R' 'utils-map.R' 'utils-nullish-op.R'
+        'utils-stop.R' 'utils-strings.R' 'uuid.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2025-02-14 16:05:36 UTC; jmp
+Author: Jean-Mathieu Potvin [aut, cre, cph],
+  Jérôme Lavoué [ctb, fnd, rev] (<https://orcid.org/0000-0003-4950-5475>)
+Maintainer: Jean-Mathieu Potvin <jeanmathieupotvin@ununoctium.dev>
+Repository: CRAN
+Date/Publication: 2025-02-14 16:40:02 UTC

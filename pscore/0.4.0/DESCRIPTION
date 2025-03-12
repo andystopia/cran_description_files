@@ -1,0 +1,34 @@
+Package: pscore
+Title: Standardizing Physiological Composite Risk Endpoints
+Version: 0.4.0
+Authors@R: 
+    person(given = "Joshua F.",
+           family = "Wiley",
+           role = c("aut", "cre"),
+           email = "jwiley.psych@gmail.com",
+           comment = c(ORCID = "0000-0002-0271-6702"))	   
+URL: https://score-project.org, https://github.com/JWiley/score-project
+BugReports: https://github.com/JWiley/score-project/issues
+Description: Provides a number of functions to
+  simplify and automate the scoring, comparison, and evaluation of
+  different ways of creating composites of data.  It is particularly
+  aimed at facilitating the creation of physiological composites of
+  metabolic syndrome symptom score (MetSSS) and allostatic load (AL).
+  Provides a wrapper to calculate the MetSSS on new data using the
+  Healthy Hearts formula. 
+License: LGPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0), methods
+Imports: stats, ggplot2, reshape2, lavaan, JWileymisc (>= 1.3.0)
+Suggests: testthat, covr, knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: false
+RoxygenNote: 7.2.0
+Collate: 'MetSSS.R' 'MetSSS_model.R' 'methods.R' 'misc.R' 'classes.R'
+        'composite.R' 'onLoad.R' 'predictions.R'
+NeedsCompilation: no
+Packaged: 2022-05-13 21:39:47 UTC; jwile
+Author: Joshua F. Wiley [aut, cre] (<https://orcid.org/0000-0002-0271-6702>)
+Maintainer: Joshua F. Wiley <jwiley.psych@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-13 22:30:02 UTC

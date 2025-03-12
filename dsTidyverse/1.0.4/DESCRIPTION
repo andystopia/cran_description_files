@@ -1,0 +1,41 @@
+Package: dsTidyverse
+Type: Package
+Title: 'DataSHIELD' 'Tidyverse' Serverside Package
+Version: 1.0.4
+Authors@R: 
+    c(
+      person(given = "Tim",
+             family = "Cadman",
+             role = c("aut", "cre"),
+             email = "t.j.cadman@umcg.nl",
+             comment = c(ORCID = "0000-0002-7682-5645")), 
+     person(given = "Mariska",
+             family = "Slofstra",
+             role = c("aut"),
+             email = "m.k.slofstra@umcg.nl",
+             comment = c(ORCID = "0000-0002-0400-0468")),
+     person(given = "Stuart",
+            family = "Wheater",
+            role = c("aut")),
+     person(given = "Demetris",
+            family = "Avraam",
+            role = c("aut"))
+       )
+Maintainer: Tim Cadman <t.j.cadman@umcg.nl>
+Description: Implementation of selected 'Tidyverse' functions within 'DataSHIELD', an open-source federated analysis solution in R. Currently, DataSHIELD contains very limited tools for data manipulation, so the aim of this package is to improve the researcher experience by implementing essential functions for data manipulation, including subsetting, filtering, grouping, and renaming variables. This is the serverside package which should be installed on the server holding the data, and is used in conjuncture with the clientside package 'dsTidyverseClient' which is installed in the local R environment of the analyst. For more information, see <https://www.tidyverse.org/> and <https://datashield.org/>.
+License: LGPL (>= 2.1)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: rlang, cli
+Suggests: testthat (>= 3.0.0), tibble, DSLite, dsBaseClient, dsBase,
+        DSI, dplyr, purrr, mockery
+Config/testthat/edition: 3
+Additional_repositories: https://cran.obiba.org/
+NeedsCompilation: no
+Packaged: 2025-02-27 09:19:47 UTC; tcadman
+Author: Tim Cadman [aut, cre] (<https://orcid.org/0000-0002-7682-5645>),
+  Mariska Slofstra [aut] (<https://orcid.org/0000-0002-0400-0468>),
+  Stuart Wheater [aut],
+  Demetris Avraam [aut]
+Repository: CRAN
+Date/Publication: 2025-02-27 09:40:06 UTC

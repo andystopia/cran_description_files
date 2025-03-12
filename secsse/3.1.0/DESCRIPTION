@@ -1,0 +1,66 @@
+Package: secsse
+Type: Package
+Title: Several Examined and Concealed States-Dependent Speciation and
+        Extinction
+Version: 3.1.0
+Date: 2024-04-26
+License: GPL (>= 3) | file LICENSE
+Authors@R: c(
+ person(given = "Leonel",
+        family = "Herrera Alsina",
+        email = "leonelhalsina@gmail.com",
+        role = "aut",
+        comment = c(ORCID = "0000-0003-0474-3592")),
+ person(given = "Paul",
+        family = "van Els",
+        email = "paulvanels@gmail.com",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-9499-8873")),
+ person(given = "Thijs",
+        family = "Janzen",
+        email = "t.janzen@rug.nl",
+        role = "ctb",
+        comment = c(ORCID = "0000-0002-4162-1140")),
+ person(given = "Hanno",
+        family = "Hildenbrandt",
+        email = "h.hildenbrandt@rug.nl",
+        role = "ctb",
+        comment = c(ORCID = "0000-0002-6784-1037")),
+ person(given = "Pedro",
+        family = "Santos Neves",
+        email = "p.m.santos.neves@rug.nl",
+        role = "ctb",
+        comment = c(ORCID = "0000-0003-2561-4677")),
+ person(given = "Rampal S.",
+        family = "Etienne",
+        email = "r.s.etienne@rug.nl",
+        role = c("cre","aut"),
+        comment = c(ORCID = "0000-0003-2142-7612")))
+Description: Simultaneously infers state-dependent diversification across
+ two or more states of a single or multiple traits while accounting for the
+ role of a possible concealed trait. See Herrera-Alsina et al. (2019)
+ <doi:10.1093/sysbio/syy057>.  
+Depends: R (>= 4.2.0)
+Imports: utils, DDD (>= 5.0), ape, geiger, Rcpp (>= 1.0.10),
+        RcppParallel, ggplot2, tibble, rlang, treestats
+Suggests: diversitree, phytools, testthat, subplex, knitr, rmarkdown
+LinkingTo: Rcpp, RcppParallel, BH (>= 1.81.0-1)
+NeedsCompilation: yes
+SystemRequirements: C++17
+Encoding: UTF-8
+LazyData: true
+URL: https://rsetienne.github.io/secsse/,
+        https://github.com/rsetienne/secsse
+BugReports: https://github.com/rsetienne/secsse/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Packaged: 2024-04-30 12:02:13 UTC; rampa
+Author: Leonel Herrera Alsina [aut] (<https://orcid.org/0000-0003-0474-3592>),
+  Paul van Els [aut] (<https://orcid.org/0000-0002-9499-8873>),
+  Thijs Janzen [ctb] (<https://orcid.org/0000-0002-4162-1140>),
+  Hanno Hildenbrandt [ctb] (<https://orcid.org/0000-0002-6784-1037>),
+  Pedro Santos Neves [ctb] (<https://orcid.org/0000-0003-2561-4677>),
+  Rampal S. Etienne [cre, aut] (<https://orcid.org/0000-0003-2142-7612>)
+Maintainer: Rampal S. Etienne <r.s.etienne@rug.nl>
+Repository: CRAN
+Date/Publication: 2024-04-30 20:30:02 UTC

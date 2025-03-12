@@ -1,0 +1,40 @@
+Package: neodistr
+Type: Package
+Title: Neo-Normal Distribution
+Version: 0.1.1
+Authors@R: 
+    c(person("Achmad Syahrul", "Choir", email = "madsyair@stis.ac.id",
+             comment = c(ORCID = "0000-0001-7088-0646"), role = c("aut", "cre")),
+      person("Anisa'", "Faoziah", role = c("aut")),
+      person("Nur", "Iriawan", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2833-6115"))
+      )
+Maintainer: Achmad Syahrul Choir <madsyair@stis.ac.id>
+Description: Provides functions for calculating the 
+    density, cumulative distribution, quantile, and random number of 
+    neo-normal distribution. It also interfaces with the 'brms' package, 
+    allowing the use of the neo-normal distribution as a custom family. 
+    This integration enables the application of various 'brms' formulas 
+    for neo-normal regression. The package implements the following 
+    distributions: Modified to be Stable as Normal from Burr (MSNBurr), Modified to be Stable as Normal from Burr-IIa (MSNBurr-IIa), Generalized of MSNBurr (GMSNBurr), and Jones-Faddy Skew-t. 
+    References:
+    Choir, A. S. (2020).Unpublished Dissertation.
+    Iriawan, N. (2000).Unpublished Dissertation.
+    Jones,  M. C. and Faddy,M. J. (2003).<doi:10.1111/1467-9868.00378>.
+    Rigby, R. A., Stasinopoulos, M. D., Heller, G. Z., & Bastiani, F. D. (2019) <doi:10.1201/9780429298547>.
+License: GPL-3
+Depends: R (>= 3.6.0),shinythemes,plotly,brms
+Imports: rstan , stats,Rmpfr,ggplot2,shiny
+Suggests: kableExtra,knitr, testthat
+URL: https://github.com/madsyair/neodistr
+BugReports: https://github.com/madsyair/neodistr/issues
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-06-25 12:34:26 UTC; madsyair
+RoxygenNote: 7.3.1
+Author: Achmad Syahrul Choir [aut, cre]
+    (<https://orcid.org/0000-0001-7088-0646>),
+  Anisa' Faoziah [aut],
+  Nur Iriawan [aut] (<https://orcid.org/0000-0003-2833-6115>)
+Repository: CRAN
+Date/Publication: 2024-06-26 12:40:02 UTC

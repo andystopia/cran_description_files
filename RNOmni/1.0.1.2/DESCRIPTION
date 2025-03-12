@@ -1,0 +1,28 @@
+Package: RNOmni
+Title: Rank Normal Transformation Omnibus Test
+Version: 1.0.1.2
+Date: 2023-09-10
+Authors@R: 
+    person(
+        given = "Zachary",
+	family = "McCaw",
+	role = c("aut", "cre"),
+	email = "zmccaw@alumni.harvard.edu",
+	comment = c(ORCID = "0000-0002-2006-9828")
+    )
+Description: Inverse normal transformation (INT) based genetic association testing. These tests are recommend for continuous traits with non-normally distributed residuals. INT-based tests robustly control the type I error in settings where standard linear regression does not, as when the residual distribution exhibits excess skew or kurtosis. Moreover, INT-based tests outperform standard linear regression in terms of power. These tests may be classified into two types. In direct INT (D-INT), the phenotype is itself transformed. In indirect INT (I-INT), phenotypic residuals are transformed. The omnibus test (O-INT) adaptively combines D-INT and I-INT into a single robust and statistically powerful approach. See McCaw ZR, Lane JM, Saxena R, Redline S, Lin X. "Operating characteristics of the rank-based inverse normal transformation for quantitative trait analysis in genome-wide association studies" <doi:10.1111/biom.13214>.
+Depends: R (>= 3.2.2)
+Imports: plyr, Rcpp, stats
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0), withr, R.rsp
+VignetteBuilder: R.rsp
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-09-11 00:26:43 UTC; zmccaw
+Author: Zachary McCaw [aut, cre] (<https://orcid.org/0000-0002-2006-9828>)
+Maintainer: Zachary McCaw <zmccaw@alumni.harvard.edu>
+Repository: CRAN
+Date/Publication: 2023-09-11 03:50:02 UTC

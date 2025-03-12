@@ -1,0 +1,38 @@
+Package: OLStrajr
+Title: Ordinary Least Squares Trajectory Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Mackson", "Ncube", , "macksonncube.stats@gmail.com", role = c("aut", "cre")),
+    person("mightymetrika, LLC", role = c("cph", "fnd"))
+  )
+Description: The 'OLStrajr' package provides comprehensive functions for ordinary
+    least squares (OLS) trajectory analysis and case-by-case OLS regression as
+    outlined in Carrig, Wirth, and Curran (2004) <doi:10.1207/S15328007SEM1101_9>
+    and Rogosa and Saner (1995) <doi:10.3102/10769986020002149>. It encompasses two
+    primary functions, OLStraj() and cbc_lm(). The OLStraj() function simplifies
+    the estimation of individual growth curves over time via OLS regression, with
+    options for visualizing both group-level and individual-level growth trajectories
+    and support for linear and quadratic models. The cbc_lm() function facilitates
+    case-by-case OLS estimates and provides unbiased mean population intercept and
+    slope estimators by averaging OLS intercepts and slopes across cases. It further
+    offers standard error calculations across bootstrap replicates and computation
+    of 95% confidence intervals based on empirical distributions from the resampling
+    processes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/mightymetrika/OLStrajr
+BugReports: https://github.com/mightymetrika/OLStrajr/issues
+Imports: boot, broom, ggplot2, purrr, tidyr, tidyselect
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-06-17 15:45:19 UTC; Administrator
+Author: Mackson Ncube [aut, cre],
+  mightymetrika, LLC [cph, fnd]
+Maintainer: Mackson Ncube <macksonncube.stats@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-19 15:20:12 UTC

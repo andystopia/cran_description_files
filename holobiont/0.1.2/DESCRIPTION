@@ -1,0 +1,31 @@
+Package: holobiont
+Type: Package
+Title: Microbiome Analysis Tools
+Version: 0.1.2
+Authors@R: 
+  c(person(given = "Sharon",
+           family = "Bewick",
+           email = "sbewick@clemson.edu",
+           role = c("aut","cre")),
+    person(given = "Benjamin",
+           family = "Camper",
+           role = c("aut")),
+           person(given="National Science Foundation Division of Integrative Organismal Systems (award #2104605)",
+           role="fnd"))
+Description: We provide functions for identifying the core community phylogeny in any microbiome, drawing phylogenetic Venn diagrams, calculating the core Faith’s PD for a set of communities, and calculating the core UniFrac distance between two sets of communities. All functions rely on construction of a core community phylogeny, which is a phylogeny where branches are defined based on their presence in multiple samples from a single type of habitat. Our package provides two options for constructing the core community phylogeny, a tip-based approach, where the core community phylogeny is identified based on incidence of leaf nodes and a branch-based approach, where the core community phylogeny is identified based on incidence of individual branches. We suggest use of the microViz package, which can be downloaded from the website provided under Additional repositories.
+License: GPL-2
+Encoding: UTF-8
+biocViews: Software, phyloseq
+Imports: ape, phyloseq, phytools, ggplot2, dplyr, utils, tibble
+Suggests: microViz
+RoxygenNote: 7.3.2
+Additional_repositories: https://david-barnett.r-universe.dev/builds
+NeedsCompilation: no
+Packaged: 2024-10-12 03:51:08 UTC; loaner
+Author: Sharon Bewick [aut, cre],
+  Benjamin Camper [aut],
+  National Science Foundation Division of Integrative Organismal Systems
+    (award #2104605) [fnd]
+Maintainer: Sharon Bewick <sbewick@clemson.edu>
+Repository: CRAN
+Date/Publication: 2024-10-16 17:40:02 UTC

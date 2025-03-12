@@ -1,0 +1,24 @@
+Package: spmoran
+Type: Package
+Title: Fast Spatial and Spatio-Temporal Regression using Moran
+        Eigenvectors
+Version: 0.3.3
+Date: 2024-12-05
+Authors@R: person(given = "Daisuke",
+                    family = "Murakami",
+                    role = c("aut", "cre"),
+                    email = "dmuraka@ism.ac.jp")
+Maintainer: Daisuke Murakami <dmuraka@ism.ac.jp>
+Description: A collection of functions for estimating spatial and spatio-temporal regression models. Moran eigenvectors are used as spatial basis functions to efficiently approximate spatially dependent Gaussian processes (i.e., random effects eigenvector spatial filtering; see Murakami and Griffith 2015 <doi: 10.1007/s10109-015-0213-7>). The implemented models include linear regression with residual spatial dependence, spatially/spatio-temporally varying coefficient models (Murakami et al., 2017, 2024; <doi:10.1016/j.spasta.2016.12.001>,<doi:10.48550/arXiv.2410.07229>), spatially filtered unconditional quantile regression (Murakami and Seya, 2019 <doi:10.1002/env.2556>), Gaussian and non-Gaussian spatial mixed models through compositionally-warping (Murakami et al. 2021, <doi:10.1016/j.spasta.2021.100520>).
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: sf, fields, vegan, Matrix, doParallel, foreach, ggplot2,
+        spdep, rARPACK, RColorBrewer, splines, FNN, methods
+Suggests: R.rsp, spData (>= 2.3.1)
+VignetteBuilder: R.rsp
+URL: https://github.com/dmuraka/spmoran
+NeedsCompilation: no
+Author: Daisuke Murakami [aut, cre]
+Repository: CRAN
+Packaged: 2024-12-04 16:18:56 UTC; murak
+Date/Publication: 2024-12-05 08:30:02 UTC

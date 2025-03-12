@@ -1,0 +1,36 @@
+Package: SNSchart
+Type: Package
+Title: Sequential Normal Scores in Statistical Process Management
+Version: 1.4.0
+Authors@R: c(person("Victor", "Tercero", email = "victor.tercero@tec.mx", role=c("aut")),
+  person("Luis", "Benavides", email = "luisbv@tec.mx", role = c("aut", "cre")),
+  person("Jorge", "Merlo", email = "jorgemerlo24@gmail.com", role = c("ctb")))
+Author: Victor Tercero [aut],
+  Luis Benavides [aut, cre],
+  Jorge Merlo [ctb]
+Maintainer: Luis Benavides <luisbv@tec.mx>
+Description: The methods discussed in this package are new non-parametric methods
+    based on sequential normal scores 'SNS' (Conover et al (2017)
+    <doi:10.1080/07474946.2017.1360091>), designed for sequences of observations,
+    usually time series data, which may occur singly or in batches,
+    and may be univariate or multivariate. These methods are designed
+    to detect changes in the process, which may occur as changes in location
+    (mean or median), changes in scale (standard deviation, or variance), or
+    other changes of interest in the distribution of the observations,
+    over the time observed. They usually apply to large data sets,
+    so computations need to be simple enough to be done in a reasonable
+    time on a computer, and easily updated as each new observation
+    (or batch of observations) becomes available. Some examples and more detail
+    in 'SNS' is presented in the work by Conover et al (2019) <arXiv:1901.04443>.
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: parallel, stats, MASS
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-04-05 18:22:03 UTC; L03099908
+Repository: CRAN
+Date/Publication: 2021-04-07 08:40:15 UTC

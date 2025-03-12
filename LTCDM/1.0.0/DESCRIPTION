@@ -1,0 +1,24 @@
+Package: LTCDM
+Type: Package
+Title: Latent Transition Cognitive Diagnosis Model with Covariates
+Version: 1.0.0
+Authors@R: 
+    c( person(given = "Qianru", family = "Liang", email = "liangqr@jnu.edu.cn", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-7558-0431")),
+       person(given = "Jimmy", family = "de la Torre", email = "j.delatorre@hku.hk", role = c("aut"), comment = c(ORCID = "0000-0002-0893-3863")),
+       person(given = "Jingping", family = "Du", email = "774680197@qq.com", role = "ctb")
+           )    
+Description: Implementation of the three-step approach of latent transition cognitive diagnosis model (CDM) with covariates. This approach can be used to assess changes in attribute mastery status and to evaluate the covariate effects on both the initial states and transition probabilities over time using latent logistic regression. Because stepwise approaches often yield biased estimates, correction for classification error probabilities (CEPs) is considered in this approach. The three-step approach for latent transition CDM with covariates involves the following steps: (1) fitting a CDM to the response data without covariates at each time point separately, (2) assigning examinees to latent states at each time point and computing the associated CEPs, and (3) estimating the latent transition CDM with the known CEPs and computing the regression coefficients. The method was proposed in Liang et al. (2023) <doi:10.3102/10769986231163320> and demonstrated using mental health data in Liang et al. (in press; annotated R code and data utilized in this example are available in Mendeley data) <doi:10.17632/kpjp3gnwbt.1>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: GDINA,ggplot2, ggpubr, ggsignif
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-05-15 03:19:24 UTC; 33406
+Author: Qianru Liang [aut, cre, cph] (<https://orcid.org/0000-0001-7558-0431>),
+  Jimmy de la Torre [aut] (<https://orcid.org/0000-0002-0893-3863>),
+  Jingping Du [ctb]
+Maintainer: Qianru Liang <liangqr@jnu.edu.cn>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-05-15 20:00:02 UTC

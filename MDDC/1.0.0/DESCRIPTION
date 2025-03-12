@@ -1,0 +1,43 @@
+Package: MDDC
+Type: Package
+Title: Modified Detecting Deviating Cells Algorithm in
+        Pharmacovigilance
+Version: 1.0.0
+Authors@R: 
+    c(
+      person(given = "Anran", family = "Liu", role = c("aut", "cre"), 
+      email = "anranliu@buffalo.edu", 
+      comment = c(ORCID = "0000-0002-4504-9786")),
+      person(given = "Raktim", family = "Mukhopadhyay", 
+      role = c("aut"), email = "raktimmu@buffalo.edu",
+      comment = c(ORCID = "0009-0007-8972-6682")),
+      person(given = "Marianthi", family = "Markatou", 
+      role = c("aut"), email = "markatou@buffalo.edu",
+      comment = c(ORCID = "0000-0002-1453-8229"))
+    )
+Maintainer: Anran Liu <anranliu@buffalo.edu>
+Description: Methods for detecting signals related to (adverse event, medical
+    product e.g. drugs, vaccines) pairs, a data generation function for 
+    simulating pharmacovigilance datasets, and various utility functions.
+    For more details please see Liu A., Mukhopadhyay R., and Markatou M. 
+    <doi:10.48550/arXiv.2410.01168>.
+URL: https://github.com/niuniular/MDDC
+BugReports: https://github.com/niuniular/MDDC/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: doParallel, foreach, ggplot2, MASS, Rcpp, stats
+Suggests: knitr, rmarkdown, roxygen2, spelling, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppEigen
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2024-10-03 23:04:11 UTC; raktimmukhopadhyay
+Author: Anran Liu [aut, cre] (<https://orcid.org/0000-0002-4504-9786>),
+  Raktim Mukhopadhyay [aut] (<https://orcid.org/0009-0007-8972-6682>),
+  Marianthi Markatou [aut] (<https://orcid.org/0000-0002-1453-8229>)
+Repository: CRAN
+Date/Publication: 2024-10-04 10:10:17 UTC

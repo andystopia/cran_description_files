@@ -1,0 +1,48 @@
+Package: tidysdm
+Title: Species Distribution Models with Tidymodels
+Version: 1.0.0
+Authors@R: c(
+    person("Michela", "Leonardi", role = "aut"),
+    person("Margherita", "Colucci", role = "aut"),
+    person("Andrea Vittorio", "Pozzi", role = "aut"),
+    person("Eleanor M.L.","Scerri", role = "aut"),
+    person("Ben","Tupper", role = "ctb"),
+    person("Andrea", "Manica", email = "am315@cam.ac.uk", role = c("aut", "cre")))
+Description: Fit species distribution models (SDMs) using the 'tidymodels' framework, 
+  which provides a standardised interface to define models and process their 
+  outputs. 'tidysdm' expands 'tidymodels' by providing methods for spatial objects,
+  models and metrics specific to SDMs,
+  as well as a number of specialised functions to process occurrences
+  for contemporary and palaeo datasets. The full 
+  functionalities of the package are described
+  in Leonardi et al. (2023) <doi:10.1101/2023.07.24.550358>.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Language: en-GB
+URL: https://github.com/EvolEcolGroup/tidysdm,
+        https://evolecolgroup.github.io/tidysdm/
+BugReports: https://github.com/EvolEcolGroup/tidysdm/issues
+RoxygenNote: 7.3.2
+Depends: tidymodels, spatialsample, R (>= 3.5.0)
+Imports: DALEX, dials, dplyr, ggplot2, lubridate, magrittr, maxnet,
+        methods, parsnip, patchwork, recipes, rsample, rlang (>=
+        1.0.0), stats, stars, sf, terra, tibble, tune, workflows,
+        workflowsets, yardstick
+Suggests: blockCV, data.table, DALEXtra, doParallel, earth, kernlab,
+        knitr, overlapping, pastclim (>= 2.0.0), ranger, rgbif,
+        rmarkdown, spelling, stacks, testthat (>= 3.0.0), tidyterra,
+        vdiffr, xgboost, ggpattern, RhpcBLASctl
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-03-05 17:16:30 UTC; andrea
+Author: Michela Leonardi [aut],
+  Margherita Colucci [aut],
+  Andrea Vittorio Pozzi [aut],
+  Eleanor M.L. Scerri [aut],
+  Ben Tupper [ctb],
+  Andrea Manica [aut, cre]
+Maintainer: Andrea Manica <am315@cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-03-05 17:40:02 UTC

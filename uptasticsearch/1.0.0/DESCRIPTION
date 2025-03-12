@@ -1,0 +1,42 @@
+Package: uptasticsearch
+Type: Package
+Title: Get Data Frame Representations of 'Elasticsearch' Results
+Version: 1.0.0
+Authors@R: c(
+    person("James", "Lamb", email = "jaylamb20@gmail.com", role = c("aut", "cre")),
+    person("Nick", "Paras", role = c("aut")),
+    person("Austin", "Dickey", role = c("aut")),
+    person("Michael", "Frasco", email = "mfrasco6@gmail.com", role = c("ctb")),
+    person("Weiwen", "Gu", role = c("ctb")),
+    person("Will", "Dearden", role = c("ctb")),
+    person("Uptake Technologies Inc.", role = c("cph")))
+Maintainer: James Lamb <jaylamb20@gmail.com>
+Description: 
+    'Elasticsearch' is an open-source, distributed, document-based datastore
+    (<https://www.elastic.co/products/elasticsearch>).
+    It provides an 'HTTP' 'API' for querying the database and extracting datasets, but that
+    'API' was not designed for common data science workflows like pulling large batches of
+    records and normalizing those documents into a data frame that can be used as a training
+    dataset for statistical models. 'uptasticsearch' provides an interface for 'Elasticsearch'
+    that is explicitly designed to make these data science workflows easy and fun.
+Depends: R (>= 3.3.0)
+Imports: curl, data.table, futile.logger, jsonlite, purrr, stats,
+        stringr
+Suggests: knitr, markdown, testthat
+License: BSD_3_clause + file LICENSE
+URL: https://github.com/uptake/uptasticsearch
+BugReports: https://github.com/uptake/uptasticsearch/issues
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2025-02-24 18:24:57 UTC; jlamb
+Author: James Lamb [aut, cre],
+  Nick Paras [aut],
+  Austin Dickey [aut],
+  Michael Frasco [ctb],
+  Weiwen Gu [ctb],
+  Will Dearden [ctb],
+  Uptake Technologies Inc. [cph]
+Repository: CRAN
+Date/Publication: 2025-02-24 18:50:02 UTC

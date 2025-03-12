@@ -1,0 +1,22 @@
+Package: LatentBMA
+Type: Package
+Title: Bayesian Model Averaging for Univariate Link Latent Gaussian
+        Models
+Version: 0.1.1
+Authors@R: c(person("Gregor","Zens",role=c("aut","cre"),email="zens@iiasa.ac.at"),
+             person("Mark F.J.","Steel", role="aut"))
+Author: Gregor Zens [aut, cre],
+  Mark F.J. Steel [aut]
+Maintainer: Gregor Zens <zens@iiasa.ac.at>
+Description: Bayesian model averaging (BMA) algorithms for univariate link latent Gaussian models (ULLGMs). For detailed information, refer to Steel M.F.J. & Zens G. (2024) "Model Uncertainty in Latent Gaussian Models with Univariate Link Function" <doi:10.48550/arXiv.2406.17318>. The package supports various g-priors and a beta-binomial prior on the model space. It also includes auxiliary functions for visualizing and tabulating BMA results. Currently, it offers an out-of-the-box solution for model averaging of Poisson log-normal (PLN) and binomial logistic-normal (BiL) models. The codebase is designed to be easily extendable to other likelihoods, priors, and link functions.
+Encoding: UTF-8
+License: MIT + file LICENSE
+RoxygenNote: 7.3.1
+Imports: ggplot2 (>= 3.5.1), knitr (>= 1.47), mnormt (>= 2.1.1),
+        progress (>= 1.2.3), reshape2 (>= 1.4.4)
+Suggests: rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-07-01 14:06:50 UTC; Gregor
+Repository: CRAN
+Date/Publication: 2024-07-01 19:00:08 UTC

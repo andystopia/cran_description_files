@@ -1,0 +1,46 @@
+Package: RDM
+Type: Package
+Title: Quantify Dependence using Rearranged Dependence Measures
+Version: 0.1.1
+Authors@R: 
+  c(person( given = "Holger", 
+            family = "Dette", 
+            role = c("aut"),
+            comment = c(ORCID = "0000-0001-7048-474X")), 
+    person( given = "Karl Friedrich", 
+            family = "Siburg", 
+            role = c("aut")), 
+    person( given = "Christopher", 
+            family = "Strothmann", 
+            role = c("aut", "cre"), 
+            email = "rdmpackage@gmail.com",
+            comment = c(ORCID = "0000-0002-3537-5019")),
+    person (given = "qad contributors",
+            family = "",
+            role = c("cph"),
+            comment = "Authors of the modified code.cpp of the R-package 'qad' listed in inst/qad-authors.txt (GPL-2)"))
+Description: Estimates the rearranged dependence measure ('RDM') of two continuous random variables for different underlying measures. 
+  Furthermore, it provides a method to estimate the (SI)-rearrangement copula using empirical checkerboard copulas.
+  It is based on the theoretical results presented in Strothmann et al. (2022) <arXiv:2201.03329> and Strothmann (2021) <doi:10.17877/DE290R-22733>.
+URL: https://github.com/ChristopherStrothmann/RDM
+BugReports: https://github.com/ChristopherStrothmann/RDM/issues
+License: GPL-2
+Language: en-GB
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rfast (>= 2.0.0), Rcpp (>= 1.0.8.3)
+LinkingTo: Rcpp
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), copula (>= 1.0.0), qad (>= 1.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-02-24 15:45:39 UTC; chris
+Author: Holger Dette [aut] (<https://orcid.org/0000-0001-7048-474X>),
+  Karl Friedrich Siburg [aut],
+  Christopher Strothmann [aut, cre]
+    (<https://orcid.org/0000-0002-3537-5019>),
+  qad contributors [cph] (Authors of the modified code.cpp of the
+    R-package 'qad' listed in inst/qad-authors.txt (GPL-2))
+Maintainer: Christopher Strothmann <rdmpackage@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-24 19:50:05 UTC

@@ -1,0 +1,18 @@
+Package: sparsereg
+Type: Package
+Title: Sparse Bayesian Models for Regression, Subgroup Analysis, and
+        Panel Data
+Version: 1.2
+Date: 2016-03-01
+Author: Marc Ratkovic and Dustin Tingley
+Maintainer: Marc Ratkovic <ratkovic@princeton.edu>
+Description: Sparse modeling provides a mean selecting a small number of non-zero effects from a large possible number of candidate effects.  This package includes a suite of methods for sparse modeling: estimation via EM or MCMC, approximate confidence intervals with nominal coverage, and diagnostic and summary plots.  The method can implement sparse linear regression and sparse probit regression.  Beyond regression analyses, applications include subgroup analysis, particularly for conjoint experiments, and panel data. Future versions will include extensions to  models with truncated outcomes, propensity score, and instrumental variable analysis.
+License: GPL (>= 2)
+Depends: R (>= 3.0.2), MASS, ggplot2
+Imports: Rcpp (>= 0.11.0), msm, VGAM, MCMCpack, coda, glmnet,
+        gridExtra, grid, GIGrvg
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2016-03-02 17:11:07 UTC; ratkovic
+Repository: CRAN
+Date/Publication: 2016-03-10 23:32:18

@@ -1,0 +1,34 @@
+Package: FourWayHMM
+Title: Parsimonious Hidden Markov Models for Four-Way Data
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Salvatore D.",
+           family = "Tomarchio",
+           role = c("aut","cre"),
+           email = "daniele.tomarchio@unict.it"),
+    person(given = "Antonio",
+           family = "Punzo",
+           role = "aut"),
+    person(given = "Antonello",
+           family = "Maruotti",
+           role = "aut"))
+Description: Implements parsimonious hidden Markov models for four-way data via expectation-
+    conditional maximization algorithm, as described in Tomarchio et al. (2020) <arXiv:2107.04330>.
+    The matrix-variate normal distribution is used as emission distribution. For each hidden
+    state, parsimony is reached via the eigen-decomposition of the covariance matrices of the
+    emission distribution. This produces a family of 98 parsimonious hidden Markov models.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: withr, snow, doSNOW, foreach, mclust, tensor, tidyr,
+        data.table, LaplacesDemon
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-11-29 17:24:17 UTC; Daniele
+Author: Salvatore D. Tomarchio [aut, cre],
+  Antonio Punzo [aut],
+  Antonello Maruotti [aut]
+Maintainer: Salvatore D. Tomarchio <daniele.tomarchio@unict.it>
+Repository: CRAN
+Date/Publication: 2021-11-30 21:20:02 UTC

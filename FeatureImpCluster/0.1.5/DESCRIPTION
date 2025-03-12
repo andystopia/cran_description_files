@@ -1,0 +1,22 @@
+Package: FeatureImpCluster
+Title: Feature Importance for Partitional Clustering
+Version: 0.1.5
+Authors@R: 
+    person(given = "Oliver",
+           family = "Pfaffel",
+           role = c("aut", "cre"),
+           email = "opfaffel@gmail.com")
+Description: Implements a novel approach for measuring feature importance in k-means clustering. Importance of a feature is measured by the misclassification rate relative to the baseline cluster assignment due to a random permutation of feature values. An explanation of permutation feature importance in general can be found here: <https://christophm.github.io/interpretable-ml-book/feature-importance.html>.
+License: GPL-3
+Encoding: UTF-8
+Suggests: flexclust, clustMixType, knitr, rmarkdown, testthat, attempt,
+        ClustImpute, covr
+Imports: ggplot2
+RoxygenNote: 7.1.1
+Depends: data.table
+NeedsCompilation: no
+Packaged: 2021-10-20 16:04:14 UTC; opfaf
+Author: Oliver Pfaffel [aut, cre]
+Maintainer: Oliver Pfaffel <opfaffel@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-10-20 16:20:02 UTC

@@ -1,0 +1,33 @@
+Package: holi
+Title: Higher Order Likelihood Inference Web Applications
+Version: 0.1.1
+Authors@R: c(
+    person("Mackson", "Ncube", , "macksonncube.stats@gmail.com", role = c("aut", "cre")),
+    person("mightymetrika, LLC", role = c("cph", "fnd"))
+  )
+Description: Higher order likelihood inference is a promising approach for
+    analyzing small sample size data. The 'holi' package provides web applications
+    for higher order likelihood inference. It currently supports linear, logistic,
+    and Poisson generalized linear models through the rstar_glm() function, based
+    on Pierce and Bellio (2017) <doi:10.1111/insr.12232> and 'likelihoodAsy'.
+    The package offers two main features: LA_rstar(), which launches an interactive
+    'shiny' application allowing users to fit models with rstar_glm() through their
+    web browser, and sim_rstar_glm_pgsql(), which streamlines the process of
+    launching a web-based 'shiny' simulation application that saves results to a
+    user-created 'PostgreSQL' database.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/mightymetrika/holi
+BugReports: https://github.com/mightymetrika/holi/issues
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: DT, ggplot2, likelihoodAsy, MASS, pool, RPostgres, shiny,
+        shinythemes, sn
+NeedsCompilation: no
+Packaged: 2024-08-25 04:38:17 UTC; Administrator
+Author: Mackson Ncube [aut, cre],
+  mightymetrika, LLC [cph, fnd]
+Maintainer: Mackson Ncube <macksonncube.stats@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-25 05:20:02 UTC

@@ -1,0 +1,35 @@
+Package: WaveSampling
+Type: Package
+Title: Weakly Associated Vectors (WAVE) Sampling
+Version: 0.1.4
+Authors@R: c(
+  person("Raphaël", "Jauslin", email = "raphael.jauslin@bfs.admin.ch",role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-1088-3356")
+    ),
+  person("Yves", "Tillé",role = c("aut"),
+    comment = c(ORCID = "0000-0003-0904-5523"))
+  )
+Description: Spatial data are generally auto-correlated, meaning that if two 
+  units selected are close to each other, then it is likely that they share the
+  same properties. For this reason, when sampling in the population it is often
+  needed that the sample is well spread over space. A new method to draw a sample
+  from a population with spatial coordinates is proposed. This method is called
+  wave (Weakly Associated Vectors) sampling. It uses the less correlated vector
+  to a spatial weights matrix to update the inclusion probabilities vector
+  into a sample. For more details see Raphaël Jauslin and Yves Tillé (2019) <doi:10.1007/s13253-020-00407-1>.
+URL: https://github.com/RJauslin/WaveSampling
+BugReports: https://github.com/RJauslin/WaveSampling/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: RcppArmadillo, Rcpp
+Imports: Rcpp
+Depends: Matrix, R (>= 2.10)
+Suggests: knitr, rmarkdown, ggplot2, sampling, BalancedSampling, stats
+NeedsCompilation: yes
+Packaged: 2025-01-31 12:51:07 UTC; Raphael
+Author: Raphaël Jauslin [aut, cre] (<https://orcid.org/0000-0003-1088-3356>),
+  Yves Tillé [aut] (<https://orcid.org/0000-0003-0904-5523>)
+Maintainer: Raphaël Jauslin <raphael.jauslin@bfs.admin.ch>
+Repository: CRAN
+Date/Publication: 2025-02-08 16:30:02 UTC

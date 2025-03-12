@@ -1,0 +1,40 @@
+Package: linkspotter
+Type: Package
+Title: Bivariate Correlations Calculation and Visualization
+Version: 1.3.0
+Date: 2020-07-23
+Authors@R: c(
+  person("Alassane", "Samba", role = c("aut", "cre"),email = "alassane.samba@orange.com"), 
+  person(family="Orange", role = c("cph"))
+  )
+Description: Compute and visualize using the 'visNetwork' package all the bivariate correlations of a dataframe.
+  Several and different types of correlation coefficients (Pearson's r, Spearman's rho, Kendall's tau,
+  distance correlation, maximal information coefficient and 
+  equal-freq discretization-based maximal normalized mutual information) are used according to 
+  the variable couple type (quantitative vs categorical, quantitative vs quantitative, categorical vs categorical).
+License: MIT + file LICENSE
+URL: https://github.com/sambaala/linkspotter
+BugReports: https://github.com/sambaala/linkspotter/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.2.0)
+Imports: shiny, visNetwork, infotheo, minerva, energy, mclust,
+        rAmCharts, pbapply, ggplot2, dplyr, tidyr, shinybusy
+Collate: 'linkspotterComplete.R' 'clusterVariables.R'
+        'linkspotterDurationEstimator.R' 'linkspotterGraph.R'
+        'linkspotterGraphOnMatrix.R' 'linkspotterOnFile.R'
+        'linkspotterUI.R' 'corCouplesToMatrix.R' 'matrixToCorCouples.R'
+        'maxNMI.R' 'BeEFdiscretization_numfact.R'
+        'BeEFdiscretization_numnum.R' 'multiBivariateCorrelation.R'
+        'NormalizedMI.R' 'createShinyAppFolder.R' 'EFdiscretization.R'
+        'non_informative_var.R'
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-07-23 10:22:57 UTC; XXGB1668
+Author: Alassane Samba [aut, cre],
+  Orange [cph]
+Maintainer: Alassane Samba <alassane.samba@orange.com>
+Repository: CRAN
+Date/Publication: 2020-07-23 10:40:02 UTC

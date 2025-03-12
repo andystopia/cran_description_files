@@ -1,0 +1,33 @@
+Type: Package
+Package: rexer
+Title: Random Exercises and Exams Generator
+Version: 1.0.0
+Authors@R: c(
+    person("Jose", "Samos", , "jsamos@ugr.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4457-3439")),
+    person("Universidad de Granada", role = "cph")
+  )
+Description: The main purpose of this package is to streamline the
+    generation of exams that include random elements in exercises.
+    Exercises can be defined in a table, based on text and figures, and
+    may contain gaps to be filled with provided options. Exam documents
+    can be generated in various formats. It allows us to generate a
+    version for conducting the assessment and another version that
+    facilitates correction, linked through a code.
+License: MIT + file LICENSE
+URL: https://josesamos.github.io/rexer/,
+        https://github.com/josesamos/rexer
+BugReports: https://github.com/josesamos/rexer/issues
+Imports: readr, readxl, rmarkdown, snakecase, stringr, tidyr, xlsx
+Suggests: knitr, pander, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-03-01 16:15:04 UTC; joses
+Author: Jose Samos [aut, cre] (<https://orcid.org/0000-0002-4457-3439>),
+  Universidad de Granada [cph]
+Maintainer: Jose Samos <jsamos@ugr.es>
+Repository: CRAN
+Date/Publication: 2024-03-04 11:10:02 UTC

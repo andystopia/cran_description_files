@@ -1,0 +1,24 @@
+Package: SpatGC
+Type: Package
+Title: Bayesian Modeling of Spatial Count Data
+Version: 0.1.0
+Authors@R: c(
+    person("Mahsa", "Nadifar", email = "mahsa.nst@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9130-125X")),
+    person("Hossein", "Baghishani", email = "hbaghishani@shahroodut.ac.ir", role = "aut", comment = c(ORCID = "0000-0002-6396-0303"))
+    )
+Maintainer: Mahsa Nadifar <mahsa.nst@gmail.com>
+Description: Provides a collection of functions for preparing data and fitting Bayesian count spatial regression models, with a specific focus on the Gamma-Count (GC) model. The GC model is well-suited for modeling dispersed count data, including under-dispersed or over-dispersed counts, or counts with equivalent dispersion, using Integrated Nested Laplace Approximations (INLA). The package includes functions for generating data from the GC model, as well as spatially correlated versions of the model. See Nadifar, Baghishani, Fallah (2023) <doi:10.1007/s13253-023-00550-5>.
+License: GPL (>= 2)
+URL: https://github.com/mahsanst/SpatGC
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 4.0)
+Additional_repositories: https://inla.r-inla-download.org/R/testing
+Imports: mvtnorm, stats, spdep, sf
+Suggests: INLA (>= 23.06.15)
+NeedsCompilation: no
+Packaged: 2024-04-24 19:15:06 UTC; u23027917
+Author: Mahsa Nadifar [aut, cre] (<https://orcid.org/0000-0002-9130-125X>),
+  Hossein Baghishani [aut] (<https://orcid.org/0000-0002-6396-0303>)
+Repository: CRAN
+Date/Publication: 2024-04-25 15:40:05 UTC

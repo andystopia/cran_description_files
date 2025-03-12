@@ -1,0 +1,37 @@
+Package: Orcs
+Title: Omnidirectional R Code Snippets
+Version: 1.2.3
+Authors@R: c(
+	person("Florian", "Detsch", role = c("cre", "aut"), email = "fdetsch@web.de"),
+	person("Tim", "Appelhans", role = "aut", email = "tim.appelhans@gmail.com"),
+	person("Baptiste", "Auguie", role = "ctb"),
+	person("OpenStreetMap contributors", role = "cph"))
+Maintainer: Florian Detsch <fdetsch@web.de>
+Description: I tend to repeat the same code chunks over and over again. At
+    first, this was fine for me and I paid little attention to such redundancies.
+    A little later, when I got tired of manually replacing Linux filepaths with
+    the referring Windows versions, and vice versa, I started to stuff some very
+    frequently used work-steps into functions and, even later, into a proper R
+    package. And that's what this package is - a hodgepodge of various R functions
+    meant to simplify (my) everyday-life coding work without, at the same time,
+    being devoted to a particular scope of application.
+License: MIT + file LICENSE
+URL: https://github.com/fdetsch/Orcs
+BugReports: https://github.com/fdetsch/Orcs/issues
+Depends: methods, R (>= 2.10)
+Imports: bookdown, grDevices, grid, knitr, lattice, latticeExtra,
+        plotrix, Rcpp (>= 0.11.3), remotes, sf, sp, stats, terra
+Suggests: checkmate, raster, rmarkdown, tinytest
+LinkingTo: Rcpp
+RoxygenNote: 7.2.3
+SystemRequirements: GNU make, 7zip, unix2dos
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2023-01-04 09:29:20 UTC; fdetsch
+Author: Florian Detsch [cre, aut],
+  Tim Appelhans [aut],
+  Baptiste Auguie [ctb],
+  OpenStreetMap contributors [cph]
+Repository: CRAN
+Date/Publication: 2023-01-06 13:30:12 UTC

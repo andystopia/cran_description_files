@@ -1,0 +1,30 @@
+Package: roundwork
+Title: Rounding Infrastructure
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Lukas",
+           family = "Jung",
+           role = c("aut", "cre"),
+           email = "jung-lukas@gmx.net")
+  )
+Description: Flexible rounding functions for use in error detection. They were
+    outsourced from the 'scrutiny' package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: conflicted, ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: cli, dplyr, magrittr, purrr, rlang, stringr, tibble
+Collate: 'round.R' 'ieee-754.R' 'utils.R' 'reround-to-fraction.R'
+        'round-ceil-floor.R' 'reround.R' 'rounding-bias.R' 'unround.R'
+        'utils-pipe.R'
+URL: https://lhdjung.github.io/roundwork/,
+        https://github.com/lhdjung/roundwork/
+BugReports: https://github.com/lhdjung/roundwork/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-23 22:45:24 UTC; lukas
+Author: Lukas Jung [aut, cre]
+Maintainer: Lukas Jung <jung-lukas@gmx.net>
+Repository: CRAN
+Date/Publication: 2024-09-25 08:30:01 UTC

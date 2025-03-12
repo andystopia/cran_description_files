@@ -1,0 +1,24 @@
+Package: hdcate
+Type: Package
+Title: Estimation of Conditional Average Treatment Effects with
+        High-Dimensional Data
+Version: 0.1.0
+Authors@R: c(person("Qingliang", "Fan", role = c("aut", "cre"),
+	             email = "michaelqfan@cuhk.edu.hk"),
+             person("Hengzhao", "Hong", role = "aut",	
+	             email = "hengzhaohong@gmail.com"))
+Imports: KernSmooth, R6, hdm, locpol, caret
+Description: A two-step double-robust method to estimate the conditional average treatment effects (CATE) with potentially high-dimensional covariate(s). In the first stage, the nuisance functions necessary for identifying CATE are estimated by machine learning methods, allowing the number of covariates to be comparable to or larger than the sample size. The second stage consists of a low-dimensional local linear regression, reducing CATE to a function of the covariate(s) of interest. The CATE estimator implemented in this package not only allows for high-dimensional data, but also has the “double robustness” property: either the model for the propensity score or the models for the conditional means of the potential outcomes are allowed to be misspecified (but not both). This package is based on the paper by Fan et al., "Estimation of Conditional Average Treatment Effects With High-Dimensional Data" (2022), Journal of Business & Economic Statistics <doi:10.1080/07350015.2020.1811102>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, xfun, randomForest, dplyr, ggplot2,
+        ggthemes
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-12-13 19:08:51 UTC; hengzhaohong
+Author: Qingliang Fan [aut, cre],
+  Hengzhao Hong [aut]
+Maintainer: Qingliang Fan <michaelqfan@cuhk.edu.hk>
+Repository: CRAN
+Date/Publication: 2022-12-14 11:50:02 UTC

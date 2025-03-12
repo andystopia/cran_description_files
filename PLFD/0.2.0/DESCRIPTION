@@ -1,0 +1,35 @@
+Package: PLFD
+Type: Package
+Title: Portmanteau Local Feature Discrimination for Matrix-Variate Data
+Version: 0.2.0
+Date: 2023-01-10
+Authors@R: c(
+    person("Zengchao", "Xu", role = c("aut", "cre"), email = "zengc.xu@aliyun.com"),
+    person("Shan", "Luo",    role="aut"),
+    person("Zehua", "Chen",  role="aut"))
+Maintainer: Zengchao Xu <zengc.xu@aliyun.com>
+Description: 
+    The portmanteau local feature discriminant approach first identifies the local 
+    discriminant features and their differential structures, then constructs the 
+    discriminant rule by pooling the identified local features together. This method 
+    is applicable to high-dimensional matrix-variate data. 
+    See the paper by Xu, Luo and Chen (2021, <doi:10.1007/s13171-021-00255-2>).
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.2), mathjaxr
+LinkingTo: Rcpp (>= 1.0.2), RcppArmadillo (>= 0.9.800)
+URL: https://github.com/paradoxical-rhapsody/PLFD
+BugReports: https://github.com/paradoxical-rhapsody/PLFD/issues
+License: GPL-3
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.2.2
+Suggests: knitr, rmarkdown, markdown
+RdMacros: mathjaxr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-01-10 07:30:54 UTC; zengchao
+Author: Zengchao Xu [aut, cre],
+  Shan Luo [aut],
+  Zehua Chen [aut]
+Repository: CRAN
+Date/Publication: 2023-01-10 08:13:18 UTC

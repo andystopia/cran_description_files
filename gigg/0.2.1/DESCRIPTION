@@ -1,0 +1,34 @@
+Type: Package
+Package: gigg
+Title: Group Inverse-Gamma Gamma Shrinkage for Sparse Regression with
+        Grouping Structure
+Version: 0.2.1
+Description: A Gibbs sampler corresponding to a Group 
+    Inverse-Gamma Gamma (GIGG) regression model with adjustment covariates. 
+    Hyperparameters in the GIGG prior specification can either be fixed by the 
+    user or can be estimated via Marginal Maximum Likelihood Estimation.
+    Jonathan Boss, Jyotishka Datta, Xin Wang, Sung Kyun Park, Jian Kang, Bhramar 
+    Mukherjee (2021) <arXiv:2102.10670>.
+Authors@R: c(
+    person(given = "Jon", family = "Boss", role = c("aut"), email = "gutian@umich.edu"),
+    person(given = "Bhramar", family = "Mukherjee", role = c("aut"), email = "bhramar@umich.edu"),
+    person(given = "Michael", family = "Kleinsasser", role = c("cre"), email = "mkleinsa@umich.edu")
+    )
+Maintainer: Michael Kleinsasser <mkleinsa@umich.edu>
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Biarch: true
+Depends: R (>= 3.5.0)
+LinkingTo: Rcpp, RcppArmadillo, BH
+Imports: Rcpp
+URL: https://github.com/umich-cphds/gigg
+BugReports: https://github.com/umich-cphds/gigg/issues
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2021-03-05 23:21:05 UTC; mkleinsa
+Author: Jon Boss [aut],
+  Bhramar Mukherjee [aut],
+  Michael Kleinsasser [cre]
+Repository: CRAN
+Date/Publication: 2021-03-09 09:00:20 UTC

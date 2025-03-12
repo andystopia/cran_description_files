@@ -1,0 +1,43 @@
+Type: Package
+Package: mycaas
+Title: My Computerized Adaptive Assessment
+Version: 0.0.1
+Authors@R: c(person(given = "Andrea",
+                      family = "Brancaccio",
+                      role = c("aut", "cph", "cre"),
+                      email = "andreabrancaccio01@gmail.com", 
+                      comment = c(ORCID = "0000-0001-5919-6990")),
+               person(given = "Umberto",
+                      family = "Granziol",
+                      role = c("aut", "ctb"),
+                       comment = c(ORCID = "0000-0002-6286-6569")))
+Maintainer: Andrea Brancaccio <andreabrancaccio01@gmail.com>
+Description: Implementation of adaptive assessment procedures based
+    on Knowledge Space Theory (KST, Doignon & Falmagne, 1999 <ISBN:9783540645016>) and Formal Psychological Assessment
+    (FPA, Spoto, Stefanutti & Vidotto, 2010 <doi:10.3758/BRM.42.1.342>) frameworks. An adaptive assessment is a type of evaluation that
+    adjusts the difficulty and nature of subsequent questions based on the
+    test taker's responses to previous ones. The package contains functions
+    to perform and simulate an adaptive assessment. Moreover, it is
+    integrated with two 'Shiny' interfaces, making it both accessible and
+    user-friendly.  The package has been partially funded by the European Union -
+    NextGenerationEU and by the Ministry of University and Research (MUR),
+    National Recovery and Resilience Plan (NRRP), Mission 4, Component 2,
+    Investment 1.5, project “RAISE - Robotics and AI for Socio-economic
+    Empowerment” (ECS00000035).
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: ggplot2, graphics, grDevices, igraph, methods, rlang, rPref,
+        shiny, stats
+Suggests: pks, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-10-03 12:39:37 UTC; Psico
+Author: Andrea Brancaccio [aut, cph, cre]
+    (<https://orcid.org/0000-0001-5919-6990>),
+  Umberto Granziol [aut, ctb] (<https://orcid.org/0000-0002-6286-6569>)
+Repository: CRAN
+Date/Publication: 2024-10-11 08:10:02 UTC

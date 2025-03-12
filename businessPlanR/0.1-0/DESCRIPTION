@@ -1,0 +1,42 @@
+Package: businessPlanR
+Type: Package
+Title: Simple Modelling Tools for Business Plans
+Description: A collection of S4 classes, methods and functions to create
+        and visualize business plans. Different types of cash flows can be
+        defined, which can then be used and tabulated to create profit and
+        loss statements, cash flow plans, investment and depreciation
+        schedules, loan amortization schedules, etc. The methods are
+        designed to produce handsome tables in both PDF and HTML using
+        'RMarkdown' or 'Shiny'.
+Depends: R (>= 4.0.0)
+Imports: methods,kableExtra,knitr
+Suggests: testthat,rmarkdown,shiny
+VignetteBuilder: knitr
+URL: https://www.c3s.cc
+BugReports: https://github.com/C3S/businessPlanR/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+Authors@R: c(person(given="Meik", family="Michalke",
+        email="meik.michalke@c3s.cc", role=c("aut", "cre")))
+Version: 0.1-0
+Date: 2023-08-14
+RoxygenNote: 7.2.2
+Collate: '00_environment.R' '01_class_01_operations.R'
+        '01_class_02_transaction.R' '01_class_03_revenue.R'
+        '01_class_04_expense.R' '01_class_05_loan.R'
+        '01_class_06_depreciation.R' '01_class_07_transaction_plan.R'
+        '02_method_barplot.R' '02_method_condense.R'
+        '02_method_get_set_as.R' '02_method_kable_bpR.R'
+        '02_method_kbl_by_types.R' '02_method_model2df.R'
+        '02_method_update_operations.R' '02_method_update_plan.R'
+        'businessPlanR-package.R' 'businessPlanR_internal.R'
+        'calc_staff.R' 'fin_needs.R' 'first_last.R' 'growth.R'
+        'model_node.R' 'nice_numbers.R' 'options.R' 'permalink2list.R'
+        'regularly.R' 'regularly_delayed.R'
+NeedsCompilation: no
+Packaged: 2023-08-14 11:32:29 UTC; m
+Author: Meik Michalke [aut, cre]
+Maintainer: Meik Michalke <meik.michalke@c3s.cc>
+Repository: CRAN
+Date/Publication: 2023-08-15 11:20:09 UTC

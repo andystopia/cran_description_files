@@ -1,0 +1,51 @@
+Package: srppp
+Type: Package
+Title: Read the Swiss Register of Plant Protection Products
+Version: 1.0.1
+Date: 2024-10-29
+Authors@R: c(
+  person("Daniel", "Baumgartner", role = "ctb",
+    comment = "Provided feedback, explanations and background information"),
+  person("Marcel", "Mathis", role = c("rev", "ctb"),
+    email = "marcel.mathis@agroscope.admin.ch"),
+  person("Romualdus", "Kasteel", role = "rev",
+    email = "romualdus.kasteel@agroscope.admin.ch",
+    comment = "Provided feedback to version 0.3.4"),
+  person("Elisabeth", "Lutz", role = c("ctb"),
+    email = "elisabeth.lutz@agroscope.admin.ch"),
+  person("Johannes", "Ranke", role = c("aut", "cre"),
+    email = "johannes.ranke@agroscope.admin.ch",
+    comment = c(ORCID = "0000-0003-4371-6538")),
+  person("Agroscope", role = "cph"))
+Description: Generate data objects from XML versions of the Swiss
+  Register of Plant Protection Products. An online version of the
+  register can be accessed at <https://www.psm.admin.ch/de/produkte>. There is no
+  guarantee of correspondence of the data read in using this package with that
+  online version, or with the original registration documents.  Also, the
+  Federal Food Safety and Veterinary Office, coordinating the authorisation of
+  plant protection products in Switzerland, does not answer requests regarding
+  this package. 
+Depends: R (>= 4.1.0), dm
+Imports: xml2, tibble, stringr, dplyr, tidyr, cli
+Suggests: knitr, rmarkdown, here, DiagrammeR, DiagrammeRsvg, testthat
+        (>= 3.0.0), parallel, waldo
+BugReports: https://github.com/agroscope-ch/srppp/issues
+URL: https://agroscope-ch.github.io/srppp/
+License: GPL (>= 3)
+RoxygenNote: 7.3.2.9000
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-GB
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-10-29 15:59:16 UTC; f80868656
+Author: Daniel Baumgartner [ctb] (Provided feedback, explanations and
+    background information),
+  Marcel Mathis [rev, ctb],
+  Romualdus Kasteel [rev] (Provided feedback to version 0.3.4),
+  Elisabeth Lutz [ctb],
+  Johannes Ranke [aut, cre] (<https://orcid.org/0000-0003-4371-6538>),
+  Agroscope [cph]
+Maintainer: Johannes Ranke <johannes.ranke@agroscope.admin.ch>
+Repository: CRAN
+Date/Publication: 2024-11-01 14:40:02 UTC

@@ -1,0 +1,37 @@
+Package: nonnest2
+Title: Tests of Non-Nested Models
+Version: 0.5-8
+Date: 2024-08-28
+Authors@R: c(person(given = "Edgar", family = "Merkle",
+                    role = c("aut","cre"), email = "merklee@missouri.edu"),
+             person(given = "Dongjun", family = "You", role = "aut"),
+             person(given = "Lennart", family = "Schneider", role = "ctb"),
+             person(given = "Mauricio", family = "Garnier-Villarreal", role = "ctb"),
+             person(given = "Seongho", family = "Bae", role = "ctb"),
+             person(given = "Phil", family = "Chalmers", role = "ctb")
+            )
+Description: Testing non-nested models via theory supplied by Vuong (1989) <DOI:10.2307/1912557>.
+    Includes tests of model distinguishability and of model fit that can be applied
+    to both nested and non-nested models. Also includes functionality to obtain
+    confidence intervals associated with AIC and BIC. This material is partially based on
+    work supported by the National Science Foundation under Grant Number SES-1061334.
+Depends: R (>= 3.0.0)
+Imports: CompQuadForm, mvtnorm, lavaan (>= 0.6-6), sandwich, methods
+License: GPL-2 | GPL-3
+Suggests: mirt (>= 1.42), OpenMx, tidySEM, AER, MASS, faraway, mlogit,
+        ordinal, pscl, knitr, rmarkdown, testthat
+URL: https://github.com/qpsy/nonnest2
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-08-28 13:33:17 UTC; merkle
+Author: Edgar Merkle [aut, cre],
+  Dongjun You [aut],
+  Lennart Schneider [ctb],
+  Mauricio Garnier-Villarreal [ctb],
+  Seongho Bae [ctb],
+  Phil Chalmers [ctb]
+Maintainer: Edgar Merkle <merklee@missouri.edu>
+Repository: CRAN
+Date/Publication: 2024-08-28 17:10:02 UTC

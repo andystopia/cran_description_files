@@ -1,0 +1,37 @@
+Package: mlpwr
+Title: A Power Analysis Toolbox to Find Cost-Efficient Study Designs
+Version: 1.1.1
+Authors@R: c(
+    person("Felix", "Zimmer", , "felix.zimmer@mail.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8127-0007")),
+    person("Rudolf", "Debelak", , "rudolf.debelak@psychologie.uzh.ch", role = c("aut"),
+           comment = c(ORCID = "0000-0001-8900-2106")),
+    person("Marc", "Egli", , "eglimar@ethz.ch", role = c("ctb"))
+  )
+Description: We implement a surrogate modeling algorithm to guide simulation-based
+    sample size planning. The method is described in detail in our paper (Zimmer &
+    Debelak (2023) <doi:10.1037/met0000611>). It supports multiple study design
+    parameters and optimization with respect to a cost function. It can find
+    optimal designs that correspond to a desired statistical power or that fulfill
+    a cost constraint. We also provide a tutorial paper (Zimmer et al. (2023)
+    <doi:10.3758/s13428-023-02269-0>).
+License: GPL (>= 3)
+LazyData: true
+URL: https://github.com/flxzimmer/mlpwr
+BugReports: https://github.com/flxzimmer/mlpwr/issues
+Imports: utils, stats, DiceKriging, digest, ggplot2, randtoolbox,
+        rlist, rgenoud
+Suggests: knitr, lme4, lmerTest, mirt, pwr, rmarkdown, simr, sn, tidyr,
+        WeightSVM
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2024-10-03 16:19:14 UTC; felix
+Author: Felix Zimmer [aut, cre] (<https://orcid.org/0000-0002-8127-0007>),
+  Rudolf Debelak [aut] (<https://orcid.org/0000-0001-8900-2106>),
+  Marc Egli [ctb]
+Maintainer: Felix Zimmer <felix.zimmer@mail.de>
+Repository: CRAN
+Date/Publication: 2024-10-03 23:00:30 UTC

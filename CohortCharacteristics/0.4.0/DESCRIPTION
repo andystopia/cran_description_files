@@ -1,0 +1,54 @@
+Package: CohortCharacteristics
+Type: Package
+Title: Summarise and Visualise Characteristics of Patients in the OMOP
+        CDM
+Version: 0.4.0
+Authors@R: c(
+    person("Marti", "Catala", , "marti.catalasabate@ndorms.ox.ac.uk", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3308-9905")),
+    person("Yuchen", "Guo", , "yuchen.guo@ndorms.ox.ac.uk", role = c("aut"),
+    comment = c(ORCID = "0000-0002-0847-4855")),
+    person("Mike", "Du", , "mike.du@ndorms.ox.ac.uk", role = c("ctb"), 
+    comment = c(ORCID = "0000-0002-9517-8834")),
+    person("Kim", "Lopez-Guell", , "kim.lopez@spc.ox.ac.uk", role = c("aut"),
+    comment = c(ORCID = "0000-0002-8462-8668")),
+    person("Edward", "Burn", , "edward.burn@ndorms.ox.ac.uk", role = c("aut"),
+    comment = c(ORCID = "0000-0002-9286-1128")),
+    person("Nuria", "Mercade-Besora", , "nuria.mercadebesora@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0006-7948-3747")),
+    person("Marta", "Alcalde", , "marta.alcaldeherraiz@ndorms.ox.ac.uk", 
+    role = c("aut"), comment = c(ORCID = "0009-0002-4405-1814"))
+    )
+Maintainer: Marti Catala <marti.catalasabate@ndorms.ox.ac.uk>
+Description: Summarise and visualise the characteristics of patients in data 
+    mapped to the Observational Medical Outcomes Partnership (OMOP) common data 
+    model (CDM).
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: CDMConnector (>= 1.6.0), dplyr, tidyr, rlang, cli, stringr,
+        omopgenerics (>= 0.4.0), visOmopResults (>= 0.5.0),
+        PatientProfiles (>= 1.2.0), snakecase, lifecycle, purrr
+URL: https://darwin-eu.github.io/CohortCharacteristics/
+BugReports: https://github.com/darwin-eu/CohortCharacteristics/issues
+Language: en-US
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+VignetteBuilder: knitr
+Suggests: CodelistGenerator, CohortConstructor, covr, DBI, dbplyr,
+        DiagrammeR, DrugUtilisation, duckdb (>= 1.0.0), flextable,
+        ggplot2, ggpubr, glue, gt, here, knitr, odbc, omock, plotly,
+        rmarkdown, RPostgres, scales, spelling, testthat (>= 3.1.5),
+        tictoc, withr
+NeedsCompilation: no
+Packaged: 2024-11-26 21:36:09 UTC; martics
+Author: Marti Catala [aut, cre] (<https://orcid.org/0000-0003-3308-9905>),
+  Yuchen Guo [aut] (<https://orcid.org/0000-0002-0847-4855>),
+  Mike Du [ctb] (<https://orcid.org/0000-0002-9517-8834>),
+  Kim Lopez-Guell [aut] (<https://orcid.org/0000-0002-8462-8668>),
+  Edward Burn [aut] (<https://orcid.org/0000-0002-9286-1128>),
+  Nuria Mercade-Besora [aut] (<https://orcid.org/0009-0006-7948-3747>),
+  Marta Alcalde [aut] (<https://orcid.org/0009-0002-4405-1814>)
+Repository: CRAN
+Date/Publication: 2024-11-26 22:10:02 UTC

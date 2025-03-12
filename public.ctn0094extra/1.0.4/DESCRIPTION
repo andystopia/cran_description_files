@@ -1,0 +1,46 @@
+Package: public.ctn0094extra
+Title: Helper Files for the CTN-0094 Relational Database
+Version: 1.0.4
+Date: 2023-11-21
+Authors@R: 
+    c(
+      person(
+        given = "Gabriel", family = "Odom",
+        role = c("aut", "cre"),
+        email = "gabriel.j.odom@gmail.com",
+        comment = c(ORCID = "0000-0003-1341-4555")
+      ),
+      person(
+        given = "Raymond", family = "Balise",
+        role = "aut",
+        email = "balise@miami.edu",
+        comment = c(ORCID = "0000-0002-9856-5901")
+      )
+    )
+Description: Engineered features and "helper" functions ancillary to the
+    'public.ctn0094data' package, extending this package for ease of use (see 
+    <https://CRAN.R-project.org/package=public.ctn0094data>). This
+    'public.ctn0094data' package contains harmonized datasets from some of the
+    National Institute of Drug Abuse's Clinical Trials Network (NIDA's CTN)
+    projects. Specifically, the CTN-0094 project is to harmonize and de-identify
+    clinical trials data from the CTN-0027, CTN-0030, and CTN-51 studies for
+    opioid use disorder. This current version is built from 'public.ctn0094data'
+    v. 1.0.6.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 2.10), public.ctn0094data
+Imports: dplyr, magrittr, purrr, tibble, tidyr, utils
+Suggests: knitr, kableExtra, rmarkdown, scales, stringr
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+URL: https://ctn-0094.github.io/public.ctn0094extra/
+BugReports: https://github.com/CTN-0094/public.ctn0094extra/issues
+NeedsCompilation: no
+Packaged: 2023-11-21 21:21:53 UTC; gabrielodom
+Author: Gabriel Odom [aut, cre] (<https://orcid.org/0000-0003-1341-4555>),
+  Raymond Balise [aut] (<https://orcid.org/0000-0002-9856-5901>)
+Maintainer: Gabriel Odom <gabriel.j.odom@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-22 10:00:02 UTC

@@ -1,0 +1,31 @@
+Package: ipaddress
+Title: Data Analysis for IP Addresses and Networks
+Version: 1.0.2
+Authors@R: 
+    person("David", "Hall", , "david.hall.physics@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2193-0480"))
+Description: Classes and functions for working with IP (Internet Protocol)
+    addresses and networks, inspired by the Python 'ipaddress' module.
+    Offers full support for both IPv4 and IPv6 (Internet Protocol versions
+    4 and 6) address spaces. It is specifically designed to work well with
+    the 'tidyverse'.
+License: MIT + file LICENSE
+URL: https://davidchall.github.io/ipaddress/,
+        https://github.com/davidchall/ipaddress
+BugReports: https://github.com/davidchall/ipaddress/issues
+Depends: R (>= 3.5)
+Imports: cli (>= 3.4.0), Rcpp, rlang (>= 1.0.3), vctrs
+Suggests: bignum, blob, crayon, dplyr, fuzzyjoin, knitr, pillar,
+        rmarkdown, testthat, tibble, tidyr
+LinkingTo: AsioHeaders, Rcpp
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-12-01 16:30:34 UTC; davidhall
+Author: David Hall [aut, cre] (<https://orcid.org/0000-0002-2193-0480>)
+Maintainer: David Hall <david.hall.physics@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-01 23:10:02 UTC

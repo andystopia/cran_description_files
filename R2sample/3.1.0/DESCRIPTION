@@ -1,0 +1,28 @@
+Package: R2sample
+Title: Various Methods for the Two Sample Problem
+Version: 3.1.0
+Authors@R: 
+    person("Wolfgang", "Rolke", , "wolfgang.rolke@upr.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3514-726X"))
+Description: The routine twosample_test() in this package runs the
+    two sample test using various test statistic. The p values are
+    found via permutation or large sample theory. The routine twosample_power() allows the
+    calculation of the power in various cases, and plot_power() draws the corresponding power graphs.
+    The routine run.studies allows a user to quickly study the power of a new method and 
+    how it compares to some of the standard ones.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp
+Imports: Rcpp, parallel, shiny, ggplot2, stats, graphics,
+        microbenchmark
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-03-09 11:09:34 UTC; Wolfgang
+Author: Wolfgang Rolke [aut, cre] (<https://orcid.org/0000-0002-3514-726X>)
+Maintainer: Wolfgang Rolke <wolfgang.rolke@upr.edu>
+Repository: CRAN
+Date/Publication: 2025-03-09 11:20:02 UTC

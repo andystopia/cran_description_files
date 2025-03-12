@@ -1,0 +1,18 @@
+Package: SequentialDesign
+Title: Observational Database Study Planning using Exact Sequential
+        Analysis for Poisson and Binomial Data
+Version: 1.0
+Authors@R: c(person("Judith", "Maro", role=c("aut", "cre"), email = "judy_maro@harvardpilgrim.org"), person("Laura", "Hou", role="aut", email="laura_hou@harvardpilgrim.org"))
+Author: Judith Maro [aut, cre], Laura Hou [aut]
+Maintainer: Judith Maro <judy_maro@harvardpilgrim.org>
+Description: Functions to be used in conjunction with the 'Sequential' package that allows for planning of observational database studies that will be analyzed with exact sequential analysis. This package supports Poisson- and binomial-based data. The primary function, seq_wrapper(...), accepts parameters for simulation of a simple exposure pattern and for the 'Sequential' package setup and analysis functions. The exposure matrix is used to simulate the true and false positive and negative populations (Green (1983) <doi:10.1093/oxfordjournals.aje.a113521>, Brenner (1993) <doi:10.1093/oxfordjournals.aje.a116805>). Functions are then run from the 'Sequential' package on these populations, which allows for the exploration of outcome misclassification in data.
+Depends: R (>= 3.3.1)
+Imports: Sequential, stats
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-11-15 13:55:21 UTC; lhou2
+Repository: CRAN
+Date/Publication: 2017-11-16 09:52:56 UTC

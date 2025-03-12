@@ -1,0 +1,26 @@
+Package: fragility
+Type: Package
+Title: Assessing and Visualizing Fragility of Clinical Results with
+        Binary Outcomes
+Version: 1.6.1
+Date: 2025-01-23
+Authors@R: 
+  c(person(given = "Lifeng", family = "Lin",
+    role = c("aut", "cre"), email = "lifenglin@arizona.edu",
+    comment = c(ORCID = "0000-0002-3562-9816")),
+    person(given = "Haitao", family = "Chu",
+    role = c("aut"), email = "chux0051@umn.edu",
+    comment = c(ORCID = "0000-0003-0932-598X")))
+Maintainer: Lifeng Lin <lifenglin@arizona.edu>
+Depends: R (>= 3.5.0)
+Imports: graphics (>= 3.5.0), grDevices (>= 3.5.0), meta (>= 8.0-1),
+        metafor (>= 2.0-0), netmeta (>= 1.0-0), plotrix (>= 3.7-5),
+        stats (>= 3.5.0)
+Description: A collection of user-friendly functions for assessing and visualizing fragility of individual studies (Walsh et al., 2014 <doi:10.1016/j.jclinepi.2013.10.019>; Lin, 2021 <doi:10.1111/jep.13428>), conventional pairwise meta-analyses (Atal et al., 2019 <doi:10.1016/j.jclinepi.2019.03.012>), and network meta-analyses of multiple treatments with binary outcomes (Xing et al., 2020 <doi:10.1016/j.jclinepi.2020.07.003>). The included functions are designed to: 1) calculate the fragility index (i.e., the minimal event status modifications that can alter the significance or non-significance of the original result) and fragility quotient (i.e., fragility index divided by sample size) at a specific significance level; 2) give the cases of event status modifications for altering the result's significance or non-significance and visualize these cases; 3) visualize the trend of statistical significance as event status is modified; 4) efficiently derive fragility indexes and fragility quotients at multiple significance levels, and visualize the relationship between these fragility measures against the significance levels; and 5) calculate fragility indexes and fragility quotients of multiple datasets (e.g., a collection of clinical trials or meta-analyses) and produce plots of their overall distributions. The outputs from these functions may inform the robustness of clinical results in terms of statistical significance and aid the interpretation of fragility measures. The usage of this package is illustrated in Lin et al. (2023 <doi:10.1016/j.ajog.2022.08.053>) and detailed in Lin and Chu (2022 <doi:10.1371/journal.pone.0268754>).
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2025-01-23 18:22:51 UTC; lifen
+Author: Lifeng Lin [aut, cre] (<https://orcid.org/0000-0002-3562-9816>),
+  Haitao Chu [aut] (<https://orcid.org/0000-0003-0932-598X>)
+Repository: CRAN
+Date/Publication: 2025-01-23 19:00:05 UTC

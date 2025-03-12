@@ -1,0 +1,31 @@
+Package: neuroim
+Imports: Matrix, yaImpute, Rcpp, iterators, abind, assertthat, readr,
+        rgl
+LinkingTo: Rcpp
+License: GPL (>= 2)
+Maintainer: Bradley Buchsbaum <brad.buchsbaum@gmail.com>
+Type: Package
+Author: Bradley R. Buchsbaum
+Title: Data Structures and Handling for Neuroimaging Data
+Description: A collection of data structures that represent
+    volumetric brain imaging data. The focus is on basic data handling for 3D
+    and 4D neuroimaging data. In addition, there are function to read and write
+    NIFTI files and limited support for reading AFNI files.
+Date: 2016-01-06
+Suggests: foreach, testthat, knitr
+Version: 0.0.6
+Depends: R (>= 3.0.0), stringr, hash, methods, stats, grDevices, grid,
+        utils
+VignetteBuilder: knitr
+Collate: 'AFNI_IO.R' 'AllGeneric.R' 'AllClass.R' 'Axis.R' 'BinaryIO.R'
+        'BrainData.R' 'common.R' 'NIFTI_IO.R' 'BrainFileDescriptor.R'
+        'BrainMetaInfo.R' 'BrainRegion3D.R' 'BrainSlice.R'
+        'BrainSpace.R' 'BrainSurface.R' 'SparseBrainVector.R'
+        'BrainVector.R' 'BrainVolume.R' 'Display.R' 'FREESURFER_IO.R'
+        'IndexLookupVolume.R' 'Ops.R' 'RcppExports.R' 'conncomp.R'
+        'datadoc.R' 'neuroim.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-01-07 20:45:46 UTC; brad
+Repository: CRAN
+Date/Publication: 2016-01-07 23:59:04

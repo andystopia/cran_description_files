@@ -1,0 +1,35 @@
+Package: IgorR
+Type: Package
+Title: Read Binary Files Saved by 'Igor Pro' (Including 'Neuromatic'
+        Data)
+Version: 0.9.0
+Authors@R: c(
+    person("Gregory","Jefferis", email="jefferis@gmail.com", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0587-9355")),
+    person("Thomas", "Braun", role = "ctb", 
+    comment = c(ORCID = "0000-0002-1416-2065"))
+    )
+Description: Provides function to read data from the 'Igor Pro' data analysis
+    program by 'Wavemetrics'. The data formats supported are 'Igor' packed 
+    experiment format ('pxp') and 'Igor' binary wave ('ibw'). See: 
+    <https://www.wavemetrics.com/> for details. Also includes functions to load 
+    special 'pxp' files produced by the 'Igor Pro' 'Neuromatic' and 'Nclamp' 
+    packages for recording and analysing neuronal data. See 
+    <https://github.com/SilverLabUCL/NeuroMatic> for details.
+Imports: bitops, tools, timechange
+Suggests: spelling, testthat
+License: GPL (>= 2)
+LazyLoad: yes
+RoxygenNote: 7.3.2
+Language: en-GB
+Encoding: UTF-8
+URL: https://github.com/jefferis/IgorR,
+        https://jefferis.github.io/IgorR/
+BugReports: https://github.com/jefferis/IgorR/issues
+NeedsCompilation: no
+Packaged: 2024-08-23 09:30:04 UTC; jefferis
+Author: Gregory Jefferis [aut, cre] (<https://orcid.org/0000-0002-0587-9355>),
+  Thomas Braun [ctb] (<https://orcid.org/0000-0002-1416-2065>)
+Maintainer: Gregory Jefferis <jefferis@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-28 08:20:09 UTC

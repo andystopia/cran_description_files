@@ -1,0 +1,40 @@
+Version: 1.0.1
+Date: 2020-11-24
+Title: Tools to Evaluate Disclosure Risk
+Authors@R: 
+    c(person(given = "John",
+             family = "Riddles",
+             role = c("aut", "cre"),
+             email = "JohnRiddles@westat.com"),
+      person("Westat", role = "cph"))
+Maintainer: John Riddles <JohnRiddles@westat.com>
+Depends: R (>= 3.6.0), Rdpack
+Imports: methods, plyr (>= 1.8.5), dplyr (>= 0.8.4), ggplot2 (>=
+        3.2.1), MASS (>= 3.6.0)
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+RdMacros: Rdpack
+Description: Tools for calculating disclosure risk measures for microdata,
+    including record-level and file-level measures. The record-level disclosure
+    risk is estimated primarily using exhaustive tabulation. The file-level
+    disclosure risk is estimated by fitting loglinear models on the observed 
+    sample counts in cells formed by key variables and their interactions. 
+    Funded by the National Center for Education Statistics. See Skinner and
+    Shlomo (2008) <doi:10.1198/016214507000001328> for a description of the
+    file-level risk measures and the loglinear model approach.
+Note: This publication was prepared for NCES under Contract No.
+        ED-IES-12-D-0009/0005 with Sanametrix and Westat. Mention of
+        trade names, commercial products, or organizations does not
+        imply endorsement by the U.S. Government.
+Package: SDCNway
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+NeedsCompilation: no
+RoxygenNote: 7.1.1
+Packaged: 2020-12-17 19:33:01 UTC; riddles_j
+Author: John Riddles [aut, cre],
+  Westat [cph]
+Repository: CRAN
+Date/Publication: 2020-12-17 22:50:13 UTC

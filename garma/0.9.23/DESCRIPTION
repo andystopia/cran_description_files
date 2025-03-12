@@ -1,0 +1,26 @@
+Package: garma
+Type: Package
+Title: Fitting and Forecasting Gegenbauer ARMA Time Series Models
+Version: 0.9.23
+Date: 2024-09-13
+Authors@R: person("Richard", "Hunt", email = "maint@huntemail.id.au",
+  role = c("aut", "cre"))
+Maintainer: Richard Hunt <maint@huntemail.id.au>
+Description: Methods for estimating univariate long memory-seasonal/cyclical
+             Gegenbauer time series processes. See for example (2022) <doi:10.1007/s00362-022-01290-3>.
+             Refer to the vignette for details of fitting these processes.
+License: GPL-3
+URL: https://github.com/rlph50/garma
+Encoding: UTF-8
+Depends: forecast, ggplot2
+Imports: Rsolnp, nloptr, pracma, signal, zoo, lubridate, rlang, crayon,
+        utils
+Suggests: longmemo, yardstick, testthat (>= 3.0.0), knitr, rmarkdown
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-13 03:23:14 UTC; richard
+Author: Richard Hunt [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-09-13 03:40:02 UTC

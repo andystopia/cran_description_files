@@ -1,0 +1,37 @@
+Package: ProcData
+Type: Package
+Title: Process Data Analysis
+Version: 0.3.2
+Date: 2021-03-24
+Authors@R: c(
+    person("Xueying", "Tang", email = "xueyingtang1989@gmail.com", role = c("aut", "cre")),
+    person("Susu", "Zhang", email = "susu.zhang1992@gmail.com", role = c("aut")),
+    person("Zhi", "Wang", email = "zhiwpku@gmail.com", role=c("aut")),
+    person("Jingchen", "Liu", email = "jcliu@stat.columbia.edu", role=c("aut")),
+    person("Zhiliang", "Ying", email = "zying@stat.columbia.edu", role=c("aut")))
+Description: Provides tools for exploratory process data analysis. Process data refers to the data describing
+    participants' problem-solving processes in computer-based assessments. It is often recorded in computer
+    log files. This package provides functions to read, process, and write process data. It also implements
+    two feature extraction methods to compress the information stored in process data into standard 
+    numerical vectors. This package also provides recurrent neural network based models that relate response processes 
+    with other binary or scale variables of interest. The functions that involve training and evaluating neural networks 
+    are wrappers of functions in 'keras'.
+BugReports: https://github.com/xytangtang/ProcData/issues
+License: GPL (>= 2)
+Depends: R (>= 3.5)
+Imports: Rcpp (>= 0.12.16), keras (>= 2.2.4)
+LinkingTo: Rcpp
+SystemRequirements: Python (>= 2.7), Keras (>= 2.0), TensorFlow (>=
+        1.13)
+RoxygenNote: 7.1.0
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2021-03-25 05:31:36 UTC; xueyingtang
+Author: Xueying Tang [aut, cre],
+  Susu Zhang [aut],
+  Zhi Wang [aut],
+  Jingchen Liu [aut],
+  Zhiliang Ying [aut]
+Maintainer: Xueying Tang <xueyingtang1989@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-01 12:50:09 UTC

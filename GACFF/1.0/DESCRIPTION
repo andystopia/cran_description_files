@@ -1,0 +1,21 @@
+Package: GACFF
+Type: Package
+Title: Genetic Similarity in User-Based Collaborative Filtering
+Version: 1.0
+Date: 2019-12-08
+Depends: R (>= 3.0.0), graphics, stats, utils
+Encoding: UTF-8
+Author: Farimah Houshmand Nanehkaran, Seyed Mohammad Reza Lajevardi <R.Lajevardi@iaukashan.ac.ir>, Mahmoud Mahlouji Bidgholi <m.mahlouji@iaukashan.ac.ir> 
+Maintainer: Farimah Houshmand Nanehkaran <hoshmandcomputer@gmail.com>
+Description: The genetic algorithm can be used directly to find the similarity of users and more effectively to increase the efficiency of the collaborative filtering method.
+  By identifying the nearest neighbors to the active user, before the genetic algorithm, and by identifying suitable starting points, an effective method for user-based collaborative filtering method has been developed.
+  This package uses an optimization algorithm (continuous genetic algorithm) to directly find the optimal similarities between active users (users for whom current recommendations are made) and others.
+  First, by determining the nearest neighbor and their number, the number of genes in a chromosome is determined. Each gene represents the neighbor's similarity to the active user.
+  By estimating the starting points of the genetic algorithm, it quickly converges to the optimal solutions.
+  The positive point is the independence of the genetic algorithm on the number of data that for big data is an effective help in solving the problem.
+License: GPL (>= 2)
+RoxygenNote: 7.0.1
+NeedsCompilation: no
+Packaged: 2019-12-17 02:17:58 UTC; farimah
+Repository: CRAN
+Date/Publication: 2019-12-20 13:50:11 UTC

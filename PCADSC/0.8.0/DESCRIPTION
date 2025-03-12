@@ -1,0 +1,31 @@
+Package: PCADSC
+Type: Package
+Title: Tools for Principal Component Analysis-Based Data Structure
+        Comparisons
+Version: 0.8.0
+Authors@R: c(person("Anne H.", "Petersen", , email="ahpe@sund.ku.dk", role=c("aut", "cre")),
+             person("Bo", "Markussen", , email="bomar@math.ku.dk", role=c("aut")))
+Description: A suite of non-parametric, visual tools for assessing differences in data structures
+    for two datasets that contain different observations of the same variables. These tools are all 
+    based on Principal Component Analysis (PCA) and thus effectively address differences in the structures
+    of the covariance matrices of the two datasets. The PCASDC tools consist of easy-to-use, 
+    intuitive plots that each focus on different aspects of the PCA decompositions. The cumulative eigenvalue
+    (CE) plot describes differences in the variance components (eigenvalues) of the deconstructed covariance matrices. The
+    angle plot presents the information loss when moving from the PCA decomposition of one dataset to the 
+    PCA decomposition of the other. The chroma plot describes the loading patterns of the two datasets, thereby
+    presenting the relative weighting and importance of the variables from the original dataset. 
+Depends: R (>= 3.2.2)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: reshape2, methods, pander, ggplot2, Matrix
+RoxygenNote: 5.0.1
+URL: https://github.com/annepetersen1/PCADSC
+BugReports: https://github.com/annepetersen1/PCADSC/issues
+NeedsCompilation: no
+Packaged: 2017-04-19 10:00:23 UTC; zms499
+Author: Anne H. Petersen [aut, cre],
+  Bo Markussen [aut]
+Maintainer: Anne H. Petersen <ahpe@sund.ku.dk>
+Repository: CRAN
+Date/Publication: 2017-04-19 10:07:43 UTC

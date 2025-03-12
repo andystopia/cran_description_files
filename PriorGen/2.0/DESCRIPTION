@@ -1,0 +1,35 @@
+Package: PriorGen
+Title: Generates Prior Distributions for Proportions
+Version: 2.0
+Date: 2023-04-04
+Authors@R: 
+    c(
+    person(given = "Konstantinos",
+           family = "Pateras",
+           role = c("aut","cre"),
+           email = "kostas.pateras@gmail.com",),
+    person(given = "Polychronis",
+           family = "Kostoulas",
+           role = c("aut"),
+           email = "pkost@uth.gr")
+    )
+Description: 
+  Translates beliefs into prior information in the form of Beta and Gamma distributions. 
+	It can be used for the generation of priors on the prevalence of disease and 
+	the sensitivity/specificity of diagnostic tests and any other binomial experiment.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: graphics
+Depends: R (>= 3.5.0), rootSolve, nleqslv
+Suggests: spelling, testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-04-02 17:27:01 UTC; kosta
+Author: Konstantinos Pateras [aut, cre],
+  Polychronis Kostoulas [aut]
+Maintainer: Konstantinos Pateras <kostas.pateras@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-03 10:50:11 UTC

@@ -1,0 +1,47 @@
+Package: spanishoddata
+Title: Get Spanish Origin-Destination Data
+Version: 0.1.0
+Authors@R: c(
+    person("Egor", "Kotov", , "kotov.egor@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6690-5345")),
+    person("Robin", "Lovelace", , "rob00x@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-5679-6536")),
+    person("Eugeni", "Vidal-Tortosa", role = "ctb",
+           comment = c(ORCID = "0000-0001-5199-4103"))
+  )
+Description: Gain seamless access to origin-destination (OD) data from the
+    Spanish Ministry of Transport, hosted at
+    <https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/opendata-movilidad>.
+    This package simplifies the management of these large datasets by
+    providing tools to download zone boundaries, handle associated
+    origin-destination data, and process it efficiently with the 'duckdb'
+    database interface.  Local caching minimizes repeated downloads,
+    streamlining workflows for researchers and analysts. Extensive
+    documentation is available at
+    <https://ropenspain.github.io/spanishoddata/index.html>, offering
+    guides on creating static and dynamic mobility flow visualizations and
+    transforming large datasets into analysis-ready formats.
+License: MIT + file LICENSE
+URL: https://rOpenSpain.github.io/spanishoddata/,
+        https://github.com/rOpenSpain/spanishoddata
+BugReports: https://github.com/rOpenSpain/spanishoddata/issues
+Depends: R (>= 3.5.0)
+Imports: checkmate, curl (>= 5.0.0), DBI, dplyr, duckdb (>= 0.5.0), fs,
+        glue, here, httr2, lubridate, memuse, parallelly, purrr, readr,
+        rlang, sf, stats, stringr, tibble, xml2
+Suggests: flowmapblue, flowmapper (>= 0.1.2), furrr, future,
+        hexSticker, mapSpain, quarto, remotes, scales, testthat (>=
+        3.0.0), tidyverse
+VignetteBuilder: quarto
+Config/Needs/website: rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-12-17 11:48:19 UTC; ek
+Author: Egor Kotov [aut, cre] (<https://orcid.org/0000-0001-6690-5345>),
+  Robin Lovelace [aut] (<https://orcid.org/0000-0001-5679-6536>),
+  Eugeni Vidal-Tortosa [ctb] (<https://orcid.org/0000-0001-5199-4103>)
+Maintainer: Egor Kotov <kotov.egor@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-18 15:40:02 UTC

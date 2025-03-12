@@ -1,0 +1,33 @@
+Package: parTimeROC
+Title: Parametric Time-Dependent Receiver Operating Characteristic
+Version: 0.1.0
+Authors@R: 
+    person("Faiz", "Azhar", , "faiz.azhar241@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0003-8017-2565"))
+Maintainer: Faiz Azhar <faiz.azhar241@gmail.com>
+Description: Producing the time-dependent receiver operating characteristic (ROC) curve through parametric approaches. Tools for
+    generating random data, fitting, predicting and check goodness of fit are prepared. The methods are
+    developed from the theoretical framework of proportional hazard model and copula functions.
+    Using this package, users can now simulate parametric time-dependent ROC and run experiment
+    to understand the behavior of the curve under different scenario.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, moments, RcppParallel (>= 5.0.1), Rcpp (>= 0.12.0),
+        rstan (>= 2.18.1), rstantools (>= 2.3.1), cubature, DescTools,
+        flexsurv (>= 2.2.2), graphics, Matrix, mvtnorm, sn (>= 2.1.1),
+        stats, survival (>= 3.5.5), VineCopula (>= 2.4.5)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2024-06-13 17:32:06 UTC; farea
+Author: Faiz Azhar [aut, cre, cph] (<https://orcid.org/0009-0003-8017-2565>)
+Repository: CRAN
+Date/Publication: 2024-06-14 10:10:03 UTC

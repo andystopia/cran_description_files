@@ -1,0 +1,31 @@
+Package: healthdb
+Type: Package
+Title: Working with Healthcare Databases
+Version: 0.4.0
+Authors@R: person("Kevin", "Hu",
+    email = "kevin.hu@bccdc.ca",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-0254-5277"))
+Description: A system for identifying diseases or events from healthcare databases and
+    preparing data for epidemiological studies. It includes capabilities not
+    supported by 'SQL', such as matching strings by 'stringr' style regular
+    expressions, and can compute comorbidity scores (Quan et al. (2005)
+    <doi:10.1097/01.mlr.0000182534.19832.83>) directly on a database server. The
+    implementation is based on 'dbplyr' with full 'tidyverse' compatibility.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: clock, data.table, dbplyr (>= 2.5.0), dplyr (>= 1.1.0), glue,
+        lubridate, magrittr, purrr, rlang, stringr (>= 1.5.0), tidyr
+RoxygenNote: 7.3.2
+URL: https://github.com/KevinHzq/healthdb,
+        https://kevinhzq.github.io/healthdb/
+BugReports: https://github.com/KevinHzq/healthdb/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), withr, RSQLite
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-02-28 01:25:40 UTC; kevin.hu
+Author: Kevin Hu [aut, cre, cph] (<https://orcid.org/0000-0003-0254-5277>)
+Maintainer: Kevin Hu <kevin.hu@bccdc.ca>
+Repository: CRAN
+Date/Publication: 2025-02-28 03:10:06 UTC

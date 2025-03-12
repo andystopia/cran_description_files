@@ -1,0 +1,36 @@
+Package: scquantum
+Title: Estimate Ploidy and Absolute Copy Number from Single Cell
+        Sequencing
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Alexander",
+           family = "Davis",
+           role = c("aut", "cre"),
+           email = "alexlovesmolecules@gmail.com"),
+    person(given = "Taylor",
+           family = "Arnold",
+           role = "cph",
+           comment = "Author of segmentation function"),
+    person(given = "Veeranjaneyulu",
+           family = "Sadhanala",
+           role = "cph",
+           comment = "Author of segmentation function"),
+    person(given = "Ryan",
+           family = "Tibshirani",
+           role = "cph",
+           comment = "Author of segmentation function"))
+Description: Given bincount data from single-cell copy number profiling (segmented or unsegmented), estimates ploidy, and uses the ploidy estimate to scale the data to absolute copy numbers. Uses the modular quantogram proposed by Kendall (1986) <doi:10.1002/0471667196.ess2129.pub2>, modified by weighting segments according to confidence, and quantifying confidence in the estimate using a theoretical quantogram. Includes optional fused-lasso segmentation with the algorithm in Johnson (2013) <doi:10.1080/10618600.2012.681238>, using the implementation from glmgen by Arnold, Sadhanala, and Tibshirani.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-03-16 17:28:46 UTC; alexdavis
+Author: Alexander Davis [aut, cre],
+  Taylor Arnold [cph] (Author of segmentation function),
+  Veeranjaneyulu Sadhanala [cph] (Author of segmentation function),
+  Ryan Tibshirani [cph] (Author of segmentation function)
+Maintainer: Alexander Davis <alexlovesmolecules@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-23 09:00:06 UTC

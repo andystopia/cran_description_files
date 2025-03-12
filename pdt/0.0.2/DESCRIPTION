@@ -1,0 +1,27 @@
+Type: Package
+Package: pdt
+Title: Permutation Distancing Test
+Version: 0.0.2
+Authors@R: c(
+    person("Jan", "Houtveen", email = "janhoutveen@gmail.com", role = c("aut", "cre")), 
+    person("Anouk", "Vroegindeweij", email = "A.Vroegindeweij@umcutrecht.nl", role = "ctb") )
+Author: Jan Houtveen [aut, cre],
+  Anouk Vroegindeweij [ctb]
+Maintainer: Jan Houtveen <janhoutveen@gmail.com>
+Depends: R (>= 4.1.0)
+Description: Permutation (randomisation) test for single-case phase design data with 
+    two phases (e.g., pre- and post-treatment). Correction for dependency of observations 
+    is done through stepwise resampling the time series while varying 
+    the distance between observations. The required distance 0,1,2,3.. is determined 
+    based on repeated dependency testing while stepwise increasing the distance.
+    In preparation: Vroegindeweij et al. "A Permutation distancing test 
+    for single-case observational AB phase design data: A Monte Carlo simulation study".
+License: GPL-3
+Repository: CRAN
+NeedsCompilation: no
+Imports: stats, graphics
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+Packaged: 2023-01-11 12:05:18 UTC; JanHoutveen
+Date/Publication: 2023-01-12 18:20:02 UTC

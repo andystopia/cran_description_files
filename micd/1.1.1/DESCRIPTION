@@ -1,0 +1,32 @@
+Package: micd
+Type: Package
+Title: Multiple Imputation in Causal Graph Discovery
+Version: 1.1.1
+Date: 2023-02-09
+Authors@R: c(
+      person(given = "Ronja", family = "Foraita", 
+             email = "foraita@leibniz-bips.de", role = c("aut", "cph", "cre"),
+             comment = c(ORCID = "0000-0003-2216-6653")),
+      person(given = "Janine", family = "Witte",
+             email = "witte@leibniz-bips.de", role = "aut"))
+Maintainer: Ronja Foraita <foraita@leibniz-bips.de>
+Description: Modified functions of the package 'pcalg' and some additional functions
+            to run the PC and the FCI (Fast Causal Inference) algorithm for constraint-based 
+            causal discovery in incomplete and multiply imputed datasets.
+            Foraita R, Friemel J, Günther K, Behrens T, Bullerdiek J, Nimzyk R, Ahrens W, Didelez V (2020) <doi:10.1111/rssa.12565>;
+            Andrews RM, Foraita R, Didelez V, Witte J (2021) <arXiv:2108.13395>; Witte J, Foraita R, Didelez V (2022) <doi:10.1002/sim.9535>.
+Depends: R (>= 3.0.2), pcalg, mice
+Imports: RBGL, Rfast, methods, stats, utils
+Suggests: nnet, ranger, Rgraphviz, testthat (>= 3.0.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/bips-hb/micd
+BugReports: https://github.com/bips-hb/micd/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-17 16:36:02 UTC; foraita
+Author: Ronja Foraita [aut, cph, cre] (<https://orcid.org/0000-0003-2216-6653>),
+  Janine Witte [aut]
+Repository: CRAN
+Date/Publication: 2023-02-17 17:40:02 UTC

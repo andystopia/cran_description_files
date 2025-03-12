@@ -1,0 +1,48 @@
+Package: tigger
+Type: Package
+Version: 1.1.0
+Date: 2023-10-10
+Authors@R: c(person("Daniel", "Gadala-Maria", role=c("aut"), 
+                    email="daniel.gadala-maria@yale.edu"),
+             person("Susanna", "Marquez", role=c("aut", "cre"), 
+                    email="susanna.marquez@yale.edu"),                    
+             person("Moriah", "Cohen", role=c("aut"), 
+                    email="moriah.cohen@biu.ac.il"),   
+             person("Jason", "Vander Heiden", role=c("aut"), 
+                    email="jason.vanderheiden@gmail.com"),
+             person("Gur", "Yaari", role=c("aut"), 
+                    email="gur.yaari@biu.ac.il"),
+             person("Steven", "Kleinstein", role=c("aut", "cph"), 
+                    email="steven.kleinstein@yale.edu"))
+Title: Infers Novel Immunoglobulin Alleles from Sequencing Data
+Description: Infers the V genotype of an individual from immunoglobulin (Ig)
+    repertoire sequencing data (AIRR-Seq, Rep-Seq). Includes detection of 
+    any novel alleles. This information is then used to correct existing V 
+    allele calls from among the sample sequences.
+    Citations:
+    Gadala-Maria, et al (2015) <doi:10.1073/pnas.1417683112>,
+    Gadala-Maria, et al (2019) <doi:10.3389/fimmu.2019.00129>.
+License: AGPL-3
+URL: http://tigger.readthedocs.io
+BugReports: https://bitbucket.org/kleinstein/tigger/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 4.0), ggplot2 (>= 3.4.0)
+Imports: alakazam (>= 1.3.0), dplyr (>= 1.0.0), doParallel, foreach,
+        graphics, gridExtra, gtools, iterators, lazyeval, parallel,
+        rlang, stats, stringi, tidyr (>= 1.1.0), utils
+Suggests: knitr, rmarkdown, testthat
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-10-10 12:54:05 UTC; susanna
+Author: Daniel Gadala-Maria [aut],
+  Susanna Marquez [aut, cre],
+  Moriah Cohen [aut],
+  Jason Vander Heiden [aut],
+  Gur Yaari [aut],
+  Steven Kleinstein [aut, cph]
+Maintainer: Susanna Marquez <susanna.marquez@yale.edu>
+Repository: CRAN
+Date/Publication: 2023-10-10 13:40:02 UTC

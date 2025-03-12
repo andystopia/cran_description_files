@@ -1,0 +1,41 @@
+Package: oncmap
+Type: Package
+Title: Analyze Data from Electronic Adherence Monitoring Devices
+Version: 0.1.5
+Authors@R: c(
+    person("Michal", "Kouril", email = "Michal.Kouril@cchmc.org",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4786-7934")),
+    person("Meghan", "McGrady", email = "Meghan.McGrady@cchmc.org",
+           role = c("aut"), comment = c(ORCID = "0000-0002-3150-3239")),
+    person("Mara", "Constance", email = "Constance.Mara@cchmc.org",
+           role = c("aut"), comment = c(ORCID = "0000-0002-6776-8060")),
+    person("Kevin", "Hommel", email = "Kevin.Hommel@cchmc.org",
+           role = c("aut"), comment = c(ORCID = "0000-0002-9913-509X"))
+           )
+Description: Medication adherence, defined as medication-taking behavior that aligns with the agreed-upon 
+    treatment protocol, is critical for realizing the benefits of prescription medications. 
+    Medication adherence can be assessed using electronic adherence monitoring devices (EAMDs), 
+    pill bottles or boxes that contain a computer chip that records the date and time of each 
+    opening (or “actuation”). Before researchers can use EAMD data, they must apply a series of 
+    decision rules to transform actuation data into adherence data. 
+    The purpose of this R package ('oncmap') is to transform EAMD actuations in the form of a raw .csv file, 
+    information about the patient, regimen, and non-monitored periods into two daily adherence values -- 
+    Dose Taken and Correct Dose Taken.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: readr, methods, readxl, dplyr, hms, lubridate, zoo
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+Depends: R (>= 3.60)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-23 01:46:43 UTC; michal
+Author: Michal Kouril [aut, cre] (<https://orcid.org/0000-0002-4786-7934>),
+  Meghan McGrady [aut] (<https://orcid.org/0000-0002-3150-3239>),
+  Mara Constance [aut] (<https://orcid.org/0000-0002-6776-8060>),
+  Kevin Hommel [aut] (<https://orcid.org/0000-0002-9913-509X>)
+Maintainer: Michal Kouril <Michal.Kouril@cchmc.org>
+Repository: CRAN
+Date/Publication: 2025-01-27 18:20:05 UTC

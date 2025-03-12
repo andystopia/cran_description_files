@@ -1,0 +1,28 @@
+Package: TCA
+Type: Package
+Title: Tensor Composition Analysis
+Version: 1.2.1
+Authors@R: c(
+    person("Elior", "Rahmani", role=c("aut", "cre"), email = "elior.rahmani@gmail.com"),
+    person("Brandon", "Jew", role=c("ctb"))
+    )
+Description: Tensor Composition Analysis (TCA) allows the deconvolution of two-dimensional data (features by observations) coming from a mixture of heterogeneous sources into a three-dimensional matrix of signals (features by observations by sources). The TCA framework further allows to test the features in the data for different statistical relations with an outcome of interest while modeling source-specific effects; particularly, it allows to look for statistical relations between source-specific signals and an outcome. For example, TCA can deconvolve bulk tissue-level DNA methylation data (methylation sites by individuals) into a three-dimensional tensor of cell-type-specific methylation levels for each individual (i.e. methylation sites by individuals by cell types) and it allows to detect cell-type-specific statistical relations (associations) with phenotypes. For more details see Rahmani et al. (2019) <DOI:10.1038/s41467-019-11052-9>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: config, data.table, futile.logger, gmodels, matrixcalc,
+        matrixStats, nloptr, parallel, pbapply, pracma, rsvd, stats,
+        quadprog, Matrix
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Suggests: testthat, knitr, rmarkdown
+URL: https://www.nature.com/articles/s41467-019-11052-9
+BugReports: https://github.com/cozygene/TCA/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-02-14 17:40:34 UTC; erahmani
+Author: Elior Rahmani [aut, cre],
+  Brandon Jew [ctb]
+Maintainer: Elior Rahmani <elior.rahmani@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-14 21:50:06 UTC

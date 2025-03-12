@@ -1,0 +1,28 @@
+Package: CooccurrenceAffinity
+Type: Package
+Title: Affinity in Co-Occurrence Data
+Version: 1.0
+Date: 2023-05-02
+Authors@R: c(
+    person("Kumar", "Mainali", role = c("aut", "cre"), email = "kpmainali@gmail.com"),
+    person("Eric", "Slud", role = c("aut"))
+    )
+Description: Computes a novel metric of affinity between two entities based on their co-occurrence 
+  (using binary presence/absence data). The metric and its MLE, alpha hat, were advanced in 
+  Mainali, Slud, et al, 2021 <doi:10.1126/sciadv.abj9204>. Various types of confidence intervals and median interval
+  were developed in Mainali and Slud, 2022 <doi:10.1101/2022.11.01.514801>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1), BiasedUrn (>= 2.0.9)
+Imports: cowplot, ggplot2, plyr, reshape
+Suggests: cooccur
+URL: https://github.com/kpmainali/CooccurrenceAffinity
+BugReports: https://github.com/kpmainali/CooccurrenceAffinity/issues
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2023-05-02 16:46:36 UTC; kpmainali
+Author: Kumar Mainali [aut, cre],
+  Eric Slud [aut]
+Maintainer: Kumar Mainali <kpmainali@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-03 18:45:42 UTC

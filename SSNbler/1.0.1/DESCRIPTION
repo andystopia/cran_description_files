@@ -1,0 +1,49 @@
+Package: SSNbler
+Title: Assemble 'SSN' Objects
+Version: 1.0.1
+Authors@R: c(
+	   person(given = "Erin",
+    		 family = "Peterson",
+    		 email = "erin@peterson-consulting.com",
+    		 role = c("aut", "cre"),
+    		 comment = c(ORCID = "0000-0003-2992-0372")),
+	   person(given = "Michael",
+           		family = "Dumelle",
+           		role = c("aut"),
+           		email = "Dumelle.Michael@epa.gov",
+           		comment = c(ORCID = "0000-0002-3393-5529")),
+     person(given = "Alan",
+           	 family = "Pearse",
+           	 role = "aut",
+           	 comment = c(ORCID = "0000-0002-4133-8548")),
+      person(given = "Dan",
+               family = "Teleki",
+               role = "ctb"),
+    person(given = "Jay M.",
+       family = "Ver Hoef",
+       role = "ctb",
+       email = "jay.verhoef@noaa.gov",
+       comment = c(ORCID = "0000-0003-4302-6895"))
+	   )
+Description: Import, create and assemble data needed to fit spatial-statistical stream-network models using the 'SSN2' package for 'R'. Streams, observations, and prediction locations are represented as simple features and specific tools provided to define topological relationships between features; calculate the hydrologic distances (with flow-direction preserved) and the spatial additive function used to weight converging stream segments; and export the topological, spatial, and attribute information to an `SSN` (spatial stream network) object, which can be efficiently stored, accessed and analysed in 'R'. A detailed description of methods used to calculate and format the spatial data can be found in Peterson, E.E. and Ver Hoef, J.M., (2014) <doi:10.18637/jss.v056.i02>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: sf, dplyr, pdist, stats, utils, igraph, RSQLite, withr, SSN2
+Suggests: ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://github.com/pet221/SSNbler
+BugReports: https://github.com/pet221/SSNbler/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-25 05:58:30 UTC; erin
+Author: Erin Peterson [aut, cre] (<https://orcid.org/0000-0003-2992-0372>),
+  Michael Dumelle [aut] (<https://orcid.org/0000-0002-3393-5529>),
+  Alan Pearse [aut] (<https://orcid.org/0000-0002-4133-8548>),
+  Dan Teleki [ctb],
+  Jay M. Ver Hoef [ctb] (<https://orcid.org/0000-0003-4302-6895>)
+Maintainer: Erin Peterson <erin@peterson-consulting.com>
+Repository: CRAN
+Date/Publication: 2024-09-25 10:20:12 UTC

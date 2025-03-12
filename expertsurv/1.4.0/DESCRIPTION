@@ -1,0 +1,44 @@
+Package: expertsurv
+Title: Incorporate Expert Opinion with Parametric Survival Models
+Version: 1.4.0
+Date: 2025-02-17
+Authors@R: 
+    c(person(given = "Philip",
+           family = "Cooney",
+           role = c("aut", "cre"),
+           email = "phcooney@tcd.ie",
+           comment = c(ORCID = "0000-0001-9649-0195")),
+     person(given = "Arthur",
+           family = "White",
+           role = "ths",
+           comment = c(ORCID = "0000-0002-7268-5163")))
+Description: Enables users to incorporate expert opinion with parametric survival analysis using a Bayesian or frequentist approach. Expert Opinion can be provided on the survival probabilities at certain time-point(s) or for the difference in mean survival between two treatment arms. Please reference it's use as Cooney, P., White, A. (2023) <doi:10.1177/0272989X221150212>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+Biarch: true
+Depends: R (>= 3.5.0), survival
+Imports: abind, assertthat, dplyr, generics, ggplot2, magrittr (>=
+        2.0), Matrix, numDeriv, purrr, Rcpp (>= 0.12.0), Rdpack, rlang,
+        rms, rstan (>= 2.26.0), rstantools (>= 2.2.0), rstpm2, scales,
+        SHELF, statmod, stats, stringr, tibble, tidyr, tidyselect,
+        utils, broom, sn, muhaz, mvtnorm, quadprog,
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppArmadillo, RcppEigen
+        (>= 0.3.3.3.0), RcppParallel (>= 5.0.1), rstan (>= 2.26.0),
+        splines2, StanHeaders (>= 2.26.0)
+SystemRequirements: GNU make
+Suggests: rmarkdown, bookdown, knitr, rjags, R2jags, loo, xlsx, shiny,
+        shinyWidgets, shinycssloaders, shinyjs, shinyMatrix, shinybusy,
+        ggpubr, splines2, survminer, colorspace, testthat, covr, eha
+VignetteBuilder: knitr
+RdMacros: Rdpack
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-02-19 15:25:05 UTC; phili
+Author: Philip Cooney [aut, cre] (<https://orcid.org/0000-0001-9649-0195>),
+  Arthur White [ths] (<https://orcid.org/0000-0002-7268-5163>)
+Maintainer: Philip Cooney <phcooney@tcd.ie>
+Repository: CRAN
+Date/Publication: 2025-02-20 18:00:02 UTC

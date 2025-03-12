@@ -1,0 +1,33 @@
+Package: timevarcorr
+Title: Time Varying Correlation
+Version: 0.1.1
+Authors@R: 
+    c(person("Alexandre", "Courtiol", email = "alexandre.courtiol@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-0637-2959")),
+      person("François", "Rousset", role = "aut", comment = c(ORCID = "0000-0003-4670-0371")))
+Description: 
+    Computes how the correlation between 2 time-series changes over time.
+    To do so, the package follows the method from Choi & Shin (2021) <doi:10.1007/s42952-020-00073-6>.
+    It performs a non-parametric kernel smoothing (using a common bandwidth) of all underlying components required for the computation of a correlation coefficient (i.e., x, y, x^2, y^2, xy).
+    An automatic selection procedure for the bandwidth parameter is implemented.
+    Alternative kernels can be used (Epanechnikov, box and normal).
+    Both Pearson and Spearman correlation coefficients can be estimated and change in correlation over time can be tested.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+Imports: lpridge
+LazyData: true
+Suggests: dplyr, ggplot2, spelling, testthat (>= 3.0.0)
+Language: en-US
+URL: https://courtiol.github.io/timevarcorr/,
+        https://github.com/courtiol/timevarcorr
+BugReports: https://github.com/courtiol/timevarcorr/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-06 21:19:27 UTC; courtiol
+Author: Alexandre Courtiol [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0637-2959>),
+  François Rousset [aut] (<https://orcid.org/0000-0003-4670-0371>)
+Maintainer: Alexandre Courtiol <alexandre.courtiol@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-07 18:20:02 UTC

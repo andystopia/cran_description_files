@@ -1,0 +1,35 @@
+Package: tidyrules
+Type: Package
+Title: Utilities to Retrieve Rulelists from Model Fits, Filter, Prune,
+        Reorder and Predict on Unseen Data
+Version: 0.2.7
+Authors@R: c(
+    person("Srikanth", "Komala Sheshachala", email = "sri.teach@gmail.com", role = c("aut", "cre")),
+    person("Amith Kumar", "Ullur Raghavendra", email = "amith54@gmail.com", role = c("aut"))
+    )
+Maintainer: Srikanth Komala Sheshachala <sri.teach@gmail.com>
+Depends: R (>= 3.6.0),
+Imports: stringr (>= 1.3.1), magrittr (>= 1.5), purrr (>= 0.3.2),
+        partykit (>= 1.2.2), rlang (>= 1.1.3), generics (>= 0.1.3),
+        checkmate (>= 2.3.1), tidytable (>= 0.11.0), data.table (>=
+        1.14.6), DescTools (>= 0.99.54), MetricsWeighted (>= 1.0.3),
+        cli (>= 3.6.2), glue (>= 1.7.0), pheatmap (>= 1.0.12), proxy
+        (>= 0.4.27), tibble (>= 3.2.1),
+Suggests: AmesHousing (>= 0.0.3), dplyr (>= 0.8), C50 (>= 0.1.2),
+        Cubist (>= 0.2.2), rpart (>= 1.2.2), rpart.plot (>= 3.0.7),
+        modeldata (>= 0.0.1), testthat (>= 2.0.1), MASS (>= 7.3.50),
+        mlbench (>= 2.1.1), rmarkdown (>= 1.13), palmerpenguins (>=
+        0.1.1),
+Description: Provides a framework to work with decision rules. Rules can be extracted from supported models, augmented with (custom) metrics using validation data, manipulated using standard dataframe operations, reordered and pruned based on a metric, predict on unseen (test) data. Utilities include; Creating a rulelist manually, Exporting a rulelist as a SQL case statement and so on. The package offers two classes; rulelist and ruleset based on dataframe.
+URL: https://github.com/talegari/tidyrules,
+        https://talegari.github.io/tidyrules/
+BugReports: https://github.com/talegari/tidyrules/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-29 12:19:43 UTC; srikanth-ks
+Author: Srikanth Komala Sheshachala [aut, cre],
+  Amith Kumar Ullur Raghavendra [aut]
+Repository: CRAN
+Date/Publication: 2024-06-29 22:40:06 UTC

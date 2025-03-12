@@ -1,0 +1,29 @@
+Package: StackImpute
+Title: Tools for Analysis of Stacked Multiple Imputations
+Version: 0.1.0
+Authors@R: c(person("Lauren", "Beesley", email = "lbeesley@umich.edu", role = c("aut")),
+             person("Mike", "Kleinsasser", email = "mkleinsa@umich.edu", role = c("cre")))
+Description: Provides methods for inference using stacked multiple 
+    imputations augmented with weights. The vignette provides example R code for 
+    implementation in general multiple imputation settings. For additional details 
+    about the estimation algorithm, we refer the reader to Beesley, Lauren J and 
+    Taylor, Jeremy M G (2020) “A stacked approach for chained equations multiple 
+    imputation incorporating the substantive model” <doi:10.1111/biom.13372>, 
+    and Beesley, Lauren J and Taylor, Jeremy M G (2021) “Accounting for not-at-random 
+    missingness through imputation stacking” <arXiv:2101.07954>.
+Depends: R (>= 3.6.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.1.1
+Imports: sandwich, zoo, mice, dplyr, MASS, magrittr, boot
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-08 18:16:12 UTC; mkleinsa
+Author: Lauren Beesley [aut],
+  Mike Kleinsasser [cre]
+Maintainer: Mike Kleinsasser <mkleinsa@umich.edu>
+Repository: CRAN
+Date/Publication: 2021-09-10 11:10:02 UTC

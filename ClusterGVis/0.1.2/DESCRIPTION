@@ -1,0 +1,25 @@
+Package: ClusterGVis
+Title: One-Step to Cluster and Visualize Gene Expression Data
+Version: 0.1.2
+Authors@R: 
+  person("Jun", "Zhang", , "3219030654@stu.cpu.edu.cn", role = c("aut", "cre"),comment = c(ORCID = "0000-0001-7692-9105"))
+Description: Streamlining the clustering and visualization of time-series gene expression data from RNA-Seq experiments, this tool supports fuzzy c-means and k-means clustering algorithms. It is compatible with outputs from widely-used packages such as 'Seurat', 'Monocle', and 'WGCNA', enabling seamless downstream visualization and analysis. See Lokesh Kumar and Matthias E Futschik (2007) <doi:10.6026/97320630002005> for more details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+Imports:
+        Biobase,circlize,clusterProfiler,colorRamps,ComplexHeatmap,dplyr,e1071,
+        factoextra,ggplot2,grDevices,grid,magrittr,Matrix,methods,Mfuzz,purrr,
+        reshape2,scales,SingleCellExperiment,stats,SummarizedExperiment,TCseq,tibble
+Suggests: igraph, monocle, pheatmap, Seurat, WGCNA
+biocViews: Sequencing,clusterProfiler,SummarizedExperiment,Mfuzz
+BugReports: https://github.com/junjunlab/ClusterGVis/issues
+NeedsCompilation: no
+Packaged: 2025-02-13 11:34:18 UTC; 11389
+Author: Jun Zhang [aut, cre] (<https://orcid.org/0000-0001-7692-9105>)
+Maintainer: Jun Zhang <3219030654@stu.cpu.edu.cn>
+Repository: CRAN
+Date/Publication: 2025-02-14 14:30:13 UTC

@@ -1,0 +1,64 @@
+Package: metaBMA
+Type: Package
+Date: 2023-09-12
+Title: Bayesian Model Averaging for Random and Fixed Effects
+        Meta-Analysis
+Version: 0.6.9
+Authors@R: c(person(given = "Daniel W.",  
+                    family = "Heck", 
+                    email="daniel.heck@uni-marburg.de", 
+                    role=c("aut","cre"),
+                    comment = c(ORCID = "0000-0002-6302-9252")),
+             person(given = "Quentin F.",  
+                    family = "Gronau", 
+                    email="quentingronau@web.de", 
+                    role = "ctb"),
+             person(given = "Eric-Jan",  
+                    family = "Wagenmakers", 
+                    email="ej.wagenmakers@gmail.com", 
+                    role = "ctb"),
+             person(given = "Indrajeet", 
+                    family = "Patil", 
+                    email = "patilindrajeet.science@gmail.com", 
+                    role = "ctb",
+                    comment = c(ORCID = "0000-0003-1995-6531")))
+Description: Computes the posterior model probabilities for standard meta-analysis models 
+    (null model vs. alternative model assuming either fixed- or random-effects, respectively).
+    These posterior probabilities are used to estimate the overall mean effect size 
+    as the weighted average of the mean effect size estimates of the random- and 
+    fixed-effect model as proposed by Gronau, Van Erp, Heck, Cesario, Jonas, & 
+    Wagenmakers (2017, <doi:10.1080/23743603.2017.1326760>). The user can define 
+    a wide range of non-informative or informative priors for the mean effect size 
+    and the heterogeneity coefficient. Moreover, using pre-compiled Stan models, 
+    meta-analysis with continuous and discrete moderators with Jeffreys-Zellner-Siow (JZS) 
+    priors can be fitted and tested. This allows to compute Bayes factors and 
+    perform Bayesian model averaging across random- and fixed-effects meta-analysis 
+    with and without moderators. For a primer on Bayesian model-averaged meta-analysis, 
+    see Gronau, Heck, Berkhout, Haaf, & Wagenmakers (2021, <doi:10.1177/25152459211031256>).
+Depends: R (>= 4.0.0), Rcpp (>= 1.0.0), methods
+Imports: bridgesampling, coda, LaplacesDemon, logspline, mvtnorm,
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), rstantools (>=
+        2.3.0)
+Suggests: testthat, knitr, rmarkdown, spelling
+LinkingTo: BH (>= 1.78.0), Rcpp (>= 1.0.0), RcppEigen (>= 0.3.3.9.1),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.26.0)
+VignetteBuilder: knitr
+URL: https://github.com/danheck/metaBMA,
+        https://danheck.github.io/metaBMA/
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+SystemRequirements: GNU make
+Biarch: true
+Language: en-US
+RoxygenNote: 7.2.3
+Packaged: 2023-09-12 21:04:25 UTC; daniel
+Author: Daniel W. Heck [aut, cre] (<https://orcid.org/0000-0002-6302-9252>),
+  Quentin F. Gronau [ctb],
+  Eric-Jan Wagenmakers [ctb],
+  Indrajeet Patil [ctb] (<https://orcid.org/0000-0003-1995-6531>)
+Maintainer: Daniel W. Heck <daniel.heck@uni-marburg.de>
+Repository: CRAN
+Date/Publication: 2023-09-13 07:20:02 UTC

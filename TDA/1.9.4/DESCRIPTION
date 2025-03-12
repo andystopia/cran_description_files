@@ -1,0 +1,44 @@
+Package: TDA
+Title: Statistical Tools for Topological Data Analysis
+Description: Tools for Topological Data Analysis. The package focuses on statistical analysis of persistent homology and density clustering. For that, this package provides an R interface for the efficient algorithms of the C++ libraries 'GUDHI' <https://project.inria.fr/gudhi/software/>, 'Dionysus' <https://www.mrzv.org/software/dionysus/>, and 'PHAT' <https://bitbucket.org/phat-code/phat/>. This package also implements methods from Fasy et al. (2014) <doi:10.1214/14-AOS1252> and Chazal et al. (2015) <doi:10.20382/jocg.v6i2a8>  for analyzing the statistical significance of persistent homology features.
+Version: 1.9.4
+Depends: R (>= 3.1.0)
+Imports: FNN, Rcpp (>= 0.11.0), igraph, parallel, scales
+LinkingTo: BH (>= 1.87.0-1), Rcpp, RcppEigen
+Suggests: testthat, lintr
+Date: 2025-02-01
+Authors@R: c(person(given = c("Brittany", "T."),
+                    family = "Fasy",
+                    role = "aut"),
+             person(given = "Jisu",
+                    family = "Kim",
+                    role = c("aut", "cre"),
+                    email = "jkim82133@snu.ac.kr"),
+             person(given = "Fabrizio",
+                    family = "Lecci",
+                    role = "aut"),
+             person(given = "Clement",
+                    family = "Maria",
+                    role = "aut"),
+             person(given = c("David", "L."),
+                    family = "Millman",
+                    role = "aut"),
+             person(given = "Vincent",
+                    family = "Rouvreau.",
+                    role = "aut"))
+Author: Brittany T. Fasy [aut],
+  Jisu Kim [aut, cre],
+  Fabrizio Lecci [aut],
+  Clement Maria [aut],
+  David L. Millman [aut],
+  Vincent Rouvreau. [aut]
+Maintainer: Jisu Kim <jkim82133@snu.ac.kr>
+License: GPL-3
+Copyright: See inst/COPYRIGHTS
+SystemRequirements: gmp, GNU make
+Encoding: UTF-8
+Type: Package
+Repository: CRAN
+NeedsCompilation: yes
+Packaged: 2025-02-01 23:56:55 UTC; rupik
+Date/Publication: 2025-02-02 08:10:05 UTC

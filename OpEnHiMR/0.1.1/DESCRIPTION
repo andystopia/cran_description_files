@@ -1,0 +1,38 @@
+Package: OpEnHiMR
+Type: Package
+Title: Optimization Based Ensemble Model for Prediction of Histone
+        Modifications in Rice
+Version: 0.1.1
+Authors@R: c(person("Dipro", "Sinha", role = c("aut","cre"), email = "diprosinha@gmail.com"),
+             person("Sneha", "Murmu", role = c("aut")),
+             person("Girish Kumar", "Jha", role = c("aut")),
+             person("Md", "Yeasin", role = c("aut")),
+             person("Saikath", "Das", role = c("aut")),
+             person("Sougata", "Bhattacharjee", role = c("aut")),
+             person("Dwijesh Chandra", "Mishra", role = c("aut")),
+             person("Neeraj", "Budhlakoti", role = c("aut")),
+             person("Sudhir", "Srivastava", role = c("aut")),
+             person("Sunil", "Archak", role = c("aut")))
+Description: The comprehensive knowledge of epigenetic modifications in plants, encompassing histone modifications in regulating gene expression, is not completely ingrained. It is noteworthy that histone deacetylation and histone H3 lysine 27 trimethylation (H3K27me3) play a role in repressing transcription in eukaryotes. In contrast, histone acetylation (H3K9ac) and H3K4me3 have been inevitably linked to the stimulation of gene expression, which significantly influences plant development and plays a role in plant responses to biotic and abiotic stresses. To our knowledge this the first multiclass classifier for predicting histone modification in plants. <doi:10.1186/s12864-019-5489-4>.
+License: GPL-3
+Encoding: UTF-8
+Imports: Biostrings, devtools, tidyverse, seqinr, splitstackshape,
+        entropy, party, e1071, caret, randomForest, gbm, stats,
+        stringr, ftrCOOL, dplyr, RCurl
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-05-29 18:22:38 UTC; dipro
+Author: Dipro Sinha [aut, cre],
+  Sneha Murmu [aut],
+  Girish Kumar Jha [aut],
+  Md Yeasin [aut],
+  Saikath Das [aut],
+  Sougata Bhattacharjee [aut],
+  Dwijesh Chandra Mishra [aut],
+  Neeraj Budhlakoti [aut],
+  Sudhir Srivastava [aut],
+  Sunil Archak [aut]
+Maintainer: Dipro Sinha <diprosinha@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-30 07:00:34 UTC

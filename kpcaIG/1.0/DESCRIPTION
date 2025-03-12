@@ -1,0 +1,17 @@
+Package: kpcaIG
+Title: Variables Interpretability with Kernel PCA
+Version: 1.0
+Authors@R: c(person("Mitja", "Briscik", role = c("aut", "cre"), email="mitja.briscik@math.univ-toulouse.fr"), person("Mohamed", "Heimida", role = c("aut"), email="21067@esp.mr"),person("Sébastien", "Déjean", role = c("aut"), email="sebastien.dejean@math.univ-toulouse.f"))
+Maintainer: Mitja Briscik <mitja.briscik@math.univ-toulouse.fr>
+Description: The kernelized version of principal component analysis (KPCA) has proven to be a valid nonlinear alternative for tackling the nonlinearity of biological sample spaces. However, it poses new challenges in terms of the interpretability of the original variables. 'kpcaIG' aims to provide a tool to select the most relevant variables based on the kernel PCA representation of the data as in Briscik et al. (2023) <doi:10.1186/s12859-023-05404-y>. It also includes functions for 2D and 3D visualization of the original variables (as arrows) into the kernel principal components axes, highlighting the contribution of the most important ones.
+License: GPL-3
+Encoding: UTF-8
+Imports: grDevices, rgl, kernlab, ggplot2, stats, progress, viridis,
+        WallomicsData
+NeedsCompilation: no
+Packaged: 2024-07-17 15:29:03 UTC; mbriscik
+Author: Mitja Briscik [aut, cre],
+  Mohamed Heimida [aut],
+  Sébastien Déjean [aut]
+Repository: CRAN
+Date/Publication: 2024-07-21 08:50:05 UTC

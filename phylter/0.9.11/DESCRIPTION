@@ -1,0 +1,32 @@
+Package: phylter
+Title: Detect and Remove Outliers in Phylogenomics Datasets
+Version: 0.9.11
+Imports: ape, ggplot2, reshape2, Rfast, RSpectra, stats, utils
+Suggests: knitr, rmarkdown
+LinkingTo: RcppEigen (>= 0.3.2.9.0), Rcpp (>= 0.12.6), RcppArmadillo
+        (>= 0.7.600.1.0)
+Authors@R: c(
+    person("Damien M.", "de Vienne", role = "aut", email = "damien.de-vienne@univ-lyon1.fr"),
+    person("Stéphane", "Dray", role = "aut", email = "stephane.dray@univ-lyon1.fr"),
+    person("Théo", "Tricou", role = "aut", email = "treecou.theo@gmail.com"),
+    person("Aurélie", "Siberchicot", role = c("aut", "cre"), email = "aurelie.siberchicot@univ-lyon1.fr")
+    )
+License: GPL (>= 2)
+Description: Analyzis and filtering of phylogenomics datasets. 
+	It takes an input either a collection of gene trees (then transformed to matrices) or directly a collection of gene matrices and performs an iterative process to identify
+	what species in what genes are outliers, and whose elimination significantly improves the concordance between the input matrices. The methods builds upon the Distatis approach (Abdi et al. (2005) <doi:10.1101/2021.09.08.459421>), a generalization of classical multidimensional scaling to multiple distance matrices.
+LazyData: true
+Depends: R (>= 4.0)
+BugReports: https://github.com/damiendevienne/phylter/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-08-24 08:05:20 UTC; siberchicot
+Author: Damien M. de Vienne [aut],
+  Stéphane Dray [aut],
+  Théo Tricou [aut],
+  Aurélie Siberchicot [aut, cre]
+Maintainer: Aurélie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
+Repository: CRAN
+Date/Publication: 2023-08-24 08:20:03 UTC

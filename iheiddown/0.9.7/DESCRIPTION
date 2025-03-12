@@ -1,0 +1,50 @@
+Package: iheiddown
+Title: For Writing Geneva Graduate Institute Documents
+Description: A set of tools for writing documents
+    according to Geneva Graduate Institute conventions and regulations.
+    The most common use is for writing and compiling theses or thesis
+    chapters, as drafts or for examination with correct preamble formatting. 
+    However, the package also offers users to create HTML presentation
+    slides with 'xaringan', complete problem sets, format posters, and, 
+    for course instructors, prepare a syllabus.
+    The package includes additional functions for institutional color palettes,
+    an institutional 'ggplot' theme, a function for counting manuscript words,
+    and a bibliographical analysis toolkit.
+Date: 2022-11-09
+Version: 0.9.7
+Authors@R: 
+    c(person(given = "James",
+           family = "Hollway",
+           role = c("aut", "cre", "cph"),
+           email = "james.hollway@graduateinstitute.ch",
+           comment = c(ORCID = "0000-0002-8361-9647")),
+      person(given = "Bernhard",
+           family = "Bieri",
+           role = "ctb",
+           email = "bernhard.bieri@graduateinstitute.ch",
+           comment = c(ORCID = "0000-0001-5943-9059")),
+      person(given = "Henrique",
+           family = "Sposito",
+           role = "ctb",
+           comment = c(ORCID = "0000-0003-3420-6085"))
+    )
+URL: https://github.com/jhollway/iheiddown
+BugReports: https://github.com/jhollway/iheiddown/issues
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Imports: bookdown, dplyr, ggplot2 (>= 3.4.0), rmarkdown, xaringan,
+        crayon, pdftools, rlang, servr, readr, rstudioapi, tibble,
+        tidytext, bib2df, stringr, fs, usethis, gender, pagedown
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: testthat, kableExtra, knitr, DT, leaflet, remotes,
+        modelsummary, gt
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-09 14:09:07 UTC; henriquesposito
+Author: James Hollway [aut, cre, cph] (<https://orcid.org/0000-0002-8361-9647>),
+  Bernhard Bieri [ctb] (<https://orcid.org/0000-0001-5943-9059>),
+  Henrique Sposito [ctb] (<https://orcid.org/0000-0003-3420-6085>)
+Maintainer: James Hollway <james.hollway@graduateinstitute.ch>
+Repository: CRAN
+Date/Publication: 2022-11-09 17:20:02 UTC

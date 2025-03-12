@@ -1,0 +1,31 @@
+Package: assertr
+Type: Package
+Title: Assertive Programming for R Analysis Pipelines
+Version: 3.0.1
+Authors@R: person("Tony", "Fischetti",
+              email="tony.fischetti@gmail.com",
+              role = c("aut", "cre"))
+Description: Provides functionality to assert conditions
+    that have to be met so that errors in data used in
+    analysis pipelines can fail quickly. Similar to
+    'stopifnot()' but more powerful, friendly, and easier
+    for use in pipelines.
+URL: https://docs.ropensci.org/assertr/ (website)
+        https://github.com/ropensci/assertr
+BugReports: https://github.com/ropensci/assertr/issues
+License: MIT + file LICENSE
+ByteCompile: TRUE
+Depends: R (>= 3.1.0)
+Imports: dplyr (>= 0.7.0), MASS, methods, stats, utils, rlang (>=
+        0.3.0)
+Suggests: knitr, testthat (>= 3.0.0), magrittr, rmarkdown, tibble, covr
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-22 23:34:48 UTC; tony
+Author: Tony Fischetti [aut, cre]
+Maintainer: Tony Fischetti <tony.fischetti@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-23 00:00:02 UTC

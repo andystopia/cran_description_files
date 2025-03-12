@@ -1,0 +1,33 @@
+Package: customizedTraining
+Type: Package
+Title: Customized Training for Lasso and Elastic-Net Regularized
+        Generalized Linear Models
+Version: 1.3
+Date: 2024-12-23
+Authors@R: c(person(given = "Scott",
+                    family = "Powers",
+                    role = c("aut", "cre"),
+                    email = "saberpowers@gmail.com"),
+             person(given = "Trevor",
+                    family = "Hastie",
+                    role = "aut"),
+             person(given = "Robert",
+                    family = "Tibshirani",
+                    role = "aut"))
+Maintainer: Scott Powers <saberpowers@gmail.com>
+Imports: FNN, glmnet
+Description: Customized training is a simple technique for transductive
+    learning, when the test covariates are known at the time of training. The
+    method identifies a subset of the training set to serve as the training set
+    for each of a few identified subsets in the training set. This package
+    implements customized training for the glmnet() and cv.glmnet() functions.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-08 17:56:47 UTC; sp161
+Author: Scott Powers [aut, cre],
+  Trevor Hastie [aut],
+  Robert Tibshirani [aut]
+Repository: CRAN
+Date/Publication: 2025-01-08 19:00:02 UTC

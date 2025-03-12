@@ -1,0 +1,31 @@
+Package: ShinyLink
+Title: 'Shiny' Based Record Linkage Tool
+Version: 0.2.2
+Authors@R: c(
+    person("Shufu", "Chen", role = c("aut"), email = "shufuchen@nelsonscilabs.com"),       
+    person("John", "Tyburski", role = c("aut"), email = "jtyburski@nelsonscilabs.com"),
+    person('Yaoxiang', 'Li', role = c("aut", "cre"), email = 'liyaoxiang@outlook.com'),
+    person("Amrita", "Cheema", role = c("aut"), email = "akc27@georgetown.edu")
+    )
+Description: A bridge is created between existing robust open-source record linkage algorithms and an urgently needed user-friendly platform that removes financial and technical barriers, setting a new standard for data interoperability in public health and bioinformatics. The 'fastLink' algorithms are used for matching. Ted Enamorado et al. (2019) <doi:10.1017/S0003055418000783>.
+SystemRequirements: C++11
+License: GPL-3
+Imports: config (>= 0.3.1), DT (>= 0.25), fastLink, gender, ggplot2,
+        ggvenn, golem (>= 0.3.5), haven, htmlwidgets, jsonlite,
+        lubridate, magrittr, readxl, shiny (>= 1.7.2), shinydashboard,
+        shinydashboardPlus, shinyWidgets, tidyr, tidyselect, vroom
+Suggests: dplyr, knitr, purrr, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-01-17 23:03:00 UTC; bach
+Author: Shufu Chen [aut],
+  John Tyburski [aut],
+  Yaoxiang Li [aut, cre],
+  Amrita Cheema [aut]
+Maintainer: Yaoxiang Li <liyaoxiang@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-01-18 11:40:05 UTC

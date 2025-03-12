@@ -1,0 +1,30 @@
+Package: BASiNET
+Title: Classification of RNA Sequences using Complex Network Theory
+Version: 0.0.5
+Authors@R: c(
+        person("Eric Augusto", "Ito", 
+        email = "ericaugustoito@hotmail.com",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-0030-6881")),
+        person("Fabricio Martins", "Lopes", 
+        email = "fabricio@utfpr.edu.br",
+        role = c("aut","cre"),
+        comment = c(ORCID = "0000-0002-8786-3313")))
+Description: It makes the creation of networks from sequences of RNA, with this is done the abstraction of characteristics of these networks with a methodology of threshold for the purpose of making a classification between the classes of the sequences. There are four data present in the 'BASiNET' package, "sequences", "sequences2", "sequences-predict" and "sequences2-predict" with 11, 10, 11 and 11 sequences respectively. These sequences were taken from the data set used in the article (LI, Aimin; ZHANG, Junying; ZHOU, Zhongyin, 2014) <doi:10.1186/1471-2105-15-311>, these sequences are used to run examples. The BASiNET was published on Nucleic Acids Research, (ITO, Eric; KATAHIRA, Isaque; VICENTE, Fábio; PEREIRA, Felipe; LOPES, Fabrício, 2018) <doi:10.1093/nar/gky462>.
+Depends: R (>= 3.4.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: igraph, Biostrings, RWeka, randomForest, rmcfs, grDevices,
+        graphics, stats, rJava
+biocViews: Software, BiologicalQuestion, GenePrediction
+RoxygenNote: 6.1.0
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-08-18 12:17:20 UTC; matheuspimenta
+Repository: CRAN
+Date/Publication: 2022-08-19 08:50:25 UTC
+Author: Eric Augusto Ito [aut] (<https://orcid.org/0000-0002-0030-6881>),
+  Fabricio Martins Lopes [aut, cre]
+    (<https://orcid.org/0000-0002-8786-3313>)
+Maintainer: Fabricio Martins Lopes <fabricio@utfpr.edu.br>

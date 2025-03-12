@@ -1,0 +1,38 @@
+Package: revert
+Type: Package
+Title: Reversion Mutation Identifier for Sequencing Data
+Version: 0.0.1
+Date: 2023-11-03
+Authors@R: c(
+	person("Hui", "Xiao", role = c("aut", "cre"), email = "hui.xiao@icr.ac.uk"),
+	person("Adam", "Mills", role = c("aut"), email = "Adam.Mills@icr.ac.uk"),
+	person("John", "Alexander", role = c("ctb"), email = "john.alexander@icr.ac.uk"),
+	person("Stephen", "Pettitt", role = "aut", email = "stephen.pettitt@icr.ac.uk"),
+	person("Syed", "Haider", role = c("aut"), email = "Syed.Haider@icr.ac.uk")
+  )
+Author: Hui Xiao [aut, cre],
+  Adam Mills [aut],
+  John Alexander [ctb],
+  Stephen Pettitt [aut],
+  Syed Haider [aut]
+Maintainer: Hui Xiao <hui.xiao@icr.ac.uk>
+Description: A tool for detecting reversions for a given pathogenic mutation from 
+	next-generation DNA sequencing data. It analyses reads aligned to the locus of the 
+	pathogenic mutation and reports reversion events where secondary mutations have 
+	restored or undone the deleterious effect of the original pathogenic mutation, e.g., 
+	secondary indels complement to a frameshift pathogenic mutation converting the 
+	orignal frameshift mutation into inframe mutaions, deletions or SNVs that replaced 
+	the original pathogenic mutation restoring the open reading frame, SNVs changing the 
+	stop codon caused by the original nonsense SNV into an amino acid, etc.
+SystemRequirements: R >= 4.1.0, SAMtools >= 1.11
+License: GPL-2
+Suggests: knitr, rmarkdown, futile.logger
+Imports: IRanges, GenomicRanges, Biostrings, Rsamtools, BSgenome,
+        BSgenome.Hsapiens.UCSC.hg38
+RoxygenNote: 7.2.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-11-23 15:35:55 UTC; hxiao
+Repository: CRAN
+Date/Publication: 2023-11-23 16:20:05 UTC

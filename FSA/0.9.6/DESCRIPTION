@@ -1,0 +1,39 @@
+Package: FSA
+Version: 0.9.6
+Date: 2025-1-6
+Title: Simple Fisheries Stock Assessment Methods
+Description: A variety of simple fish stock assessment methods.
+Authors@R: c(
+    person(c("Derek","H."), "Ogle", email="DerekOgle51@gmail.com",
+           role=c("aut","cre"),
+           comment=c(ORCID="0000-0002-0370-9299")),
+    person(c("Jason","C."), "Doll", email="jason.doll@fmarion.edu",
+           role=c("aut")),
+    person(c("A.","Powell"), "Wheeler", email="powell.wheeler@gmail.com",
+           role="aut"),
+    person("Alexis", "Dinno", email="alexis.dinno@pdx.edu",
+           role="aut",
+           comment="Provided base functionality of dunnTest()")
+    )
+URL: https://fishr-core-team.github.io/FSA/
+BugReports: https://github.com/fishR-Core-Team/FSA/issues
+License: GPL (>= 2)
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: graphics, grDevices, stats, tools, utils, car, dunn.test,
+        lmtest, plotrix, withr
+Suggests: DescTools, dplyr, fishmethods, FSAdata, knitr, marked, nlme,
+        nlstools, pkgdown, plyr, psych, Rcapture, rmarkdown, testthat
+        (>= 3.0.0), tibble, tidyr, covr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-06 16:07:35 UTC; derek
+Author: Derek H. Ogle [aut, cre] (<https://orcid.org/0000-0002-0370-9299>),
+  Jason C. Doll [aut],
+  A. Powell Wheeler [aut],
+  Alexis Dinno [aut] (Provided base functionality of dunnTest())
+Maintainer: Derek H. Ogle <DerekOgle51@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-07 16:10:07 UTC

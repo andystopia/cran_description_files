@@ -1,0 +1,33 @@
+Package: plsmod
+Title: Model Wrappers for Projection Methods
+Version: 1.0.0
+Authors@R: c(
+    person("Max", "Kuhn", , "max@rstudio.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2402-136X")),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: Bindings for additional regression models for use with the
+    'parsnip' package, including ordinary and spare partial least squares
+    models for regression and classification (Rohart et al (2017)
+    <doi:10.1371/journal.pcbi.1005752>).
+License: MIT + file LICENSE
+URL: https://plsmod.tidymodels.org,
+        https://github.com/tidymodels/plsmod
+BugReports: https://github.com/tidymodels/plsmod/issues
+Depends: parsnip (>= 0.2.0), R (>= 3.4)
+Imports: dplyr, generics, magrittr, mixOmics, purrr, rlang, tibble,
+        tidyr
+Suggests: rmarkdown, covr, modeldata, spelling, testthat (>= 3.0.0)
+biocViews: mixOmics
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.1.9000
+NeedsCompilation: no
+Packaged: 2022-09-06 19:09:50 UTC; max
+Author: Max Kuhn [aut, cre] (<https://orcid.org/0000-0003-2402-136X>),
+  RStudio [cph, fnd]
+Maintainer: Max Kuhn <max@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-09-06 19:20:02 UTC

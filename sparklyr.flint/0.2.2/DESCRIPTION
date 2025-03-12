@@ -1,0 +1,37 @@
+Type: Package
+Package: sparklyr.flint
+Title: Sparklyr Extension for 'Flint'
+Version: 0.2.2
+Authors@R: 
+    c(person(given = "Yitao",
+           family = "Li",
+           role = c("aut"),
+           email = "yitao@rstudio.com",
+           comment = c(ORCID = "0000-0002-1261-905X")),
+      person(given = "Edgar",
+             family = "Ruiz",
+             role = c("aut", "cre"),
+             email = "edgar@rstudio.com"))
+Maintainer: Edgar Ruiz <edgar@rstudio.com>
+Description: This sparklyr extension makes 'Flint' time series
+    library functionalities (<https://github.com/twosigma/flint>) easily
+    accessible through R.
+License: Apache License 2.0
+URL: <https://github.com/r-spark/sparklyr.flint>
+BugReports: https://github.com/r-spark/sparklyr.flint/issues
+Depends: R (>= 3.2)
+Imports: dbplyr, dplyr, rlang, sparklyr (>= 1.3)
+Suggests: knitr, rmarkdown, tibble
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+SystemRequirements: Spark: 2.x or above
+Collate: 'imports.R' 'globals.R' 'sdf_utils.R' 'asof_join.R' 'init.R'
+        'window_exprs.R' 'summarizers.R' 'ols_regression.R'
+        'reexports.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2022-01-10 15:59:43 UTC; yitaoli
+Author: Yitao Li [aut] (<https://orcid.org/0000-0002-1261-905X>),
+  Edgar Ruiz [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-01-11 08:50:13 UTC

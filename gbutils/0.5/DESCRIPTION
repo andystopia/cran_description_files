@@ -1,0 +1,36 @@
+Package: gbutils
+Type: Package
+Title: Utilities for Simulation, Plots, Quantile Functions and
+        Programming
+Version: 0.5
+Date: 2022-05-27
+Depends: methods
+Imports: stats, utils, Rdpack (>= 0.9)
+Suggests: testthat (>= 3.0.0), classGraph, graph, Rgraphviz
+RdMacros: Rdpack
+Authors@R: person(given = c("Georgi", "N."), family = "Boshnakov",
+                  role = c("aut", "cre"), 
+                  email = "georgi.boshnakov@manchester.ac.uk")
+Description: Plot density and distribution functions with automatic selection of
+       suitable regions. Numerically invert (compute quantiles) distribution
+       functions. Simulate real and complex numbers from distributions of their
+       magnitude and arguments. Optionally, the magnitudes and/or arguments may
+       be fixed in almost arbitrary ways. Create polynomials from roots given in
+       Cartesian or polar form. Small programming utilities: check if an object
+       is identical to NA, count positional arguments in a call, set
+       intersection of more than two sets, check if an argument is unnamed,
+       compute the graph of S4 classes in packages.
+URL: https://github.com/GeoBosh/gbutils (devel),
+        https://geobosh.github.io/gbutils/ (website)
+BugReports: https://github.com/GeoBosh/gbutils/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+Collate: parse_text.R sim_numbers.R isNA.R mintersect.R pad.R args.R
+        history.R cdf2qf.R S4utils.R pseudoInverse.R rpoly.R
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-05-27 07:31:07 UTC; georgi
+Author: Georgi N. Boshnakov [aut, cre]
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-05-27 09:30:07 UTC

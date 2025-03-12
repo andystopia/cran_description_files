@@ -1,0 +1,23 @@
+Package: KEPTED
+Type: Package
+Title: Kernel-Embedding-of-Probability Test for Elliptical Distribution
+URL: https://github.com/tyy20/KEPTED
+BugReports: https://github.com/tyy20/KEPTED/issues
+Version: 0.2.0
+Authors@R: c(person("Yin", "Tang", email="yqt5219@psu.edu", role=c("aut","cre")),
+    person("Bing","Li", email="bxl9@psu.edu", role=c("cph","aut")))
+Maintainer: Yin Tang <yqt5219@psu.edu>
+Description: Provides an implementation of a kernel-embedding of probability test for elliptical distribution. This is an asymptotic test for elliptical distribution under general alternatives, and the location and shape parameters are assumed to be unknown. Some side-products are posted, including the transformation between rectangular and polar coordinates and two product-type kernel functions. See Tang and Li (2024) <doi:10.48550/arXiv.2306.10594> for details.
+Encoding: UTF-8
+License: BSD_3_clause + file LICENSE
+Imports: expm, CompQuadForm, cubature, stats
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-04-12 02:10:39 UTC; yintang
+Author: Yin Tang [aut, cre],
+  Bing Li [cph, aut]
+Repository: CRAN
+Date/Publication: 2024-04-13 05:50:07 UTC

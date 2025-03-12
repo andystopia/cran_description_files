@@ -1,0 +1,21 @@
+Package: tidymodlr
+Title: An R6 Class to Perform Analysis on Long Tidy Data
+Version: 1.0.0
+Authors@R: person("David", "Hammond", email = "anotherdavidhammond@gmail.com", role = c("aut", "cre"))
+Author: David Hammond [aut, cre]
+URL: https://github.com/david-hammond/tidymodlr
+BugReports: https://github.com/david-hammond/tidymodlr/issues
+Maintainer: David Hammond <anotherdavidhammond@gmail.com>
+Description: Transforms long data into a matrix form to allow for ease of input into modelling packages for regression, principal components, imputation or machine learning. It does this by pivoting on user defined columns, generating a key-value table for variable names to ensure one-to-one mappings are preserved. It is particularly useful when the indicator names in the columns are long descriptive strings, for example "Energy imports, net (% of energy use)". High level analysis wrapper functions for correlation and principal components analysis are provided.
+License: MIT + file LICENSE
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: R6, dplyr, tidyr, tm, corrr, FactoMineR
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-08-20 07:05:39 UTC; DavidHammond
+Repository: CRAN
+Date/Publication: 2024-08-26 12:30:02 UTC

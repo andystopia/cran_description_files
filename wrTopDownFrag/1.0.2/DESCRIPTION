@@ -1,0 +1,25 @@
+Package: wrTopDownFrag
+Title: Internal Fragment Identification from Top-Down Mass Spectrometry
+Version: 1.0.2
+Authors@R: person("Wolfgang", "Raffelsberger", email = "w.raffelsberger@unistra.fr", role = c("aut", "cre"))
+Author: Wolfgang Raffelsberger [aut, cre]
+Maintainer: Wolfgang Raffelsberger <w.raffelsberger@unistra.fr>
+Description: Top-Down mass spectrometry aims to identify entire proteins as well as their (post-translational) modifications or ions bound (eg Chen et al (2018) <doi:10.1021/acs.analchem.7b04747>). 
+    The pattern of internal fragments (Haverland et al (2017) <doi:10.1007/s13361-017-1635-x>) may reveal important information about the original structure of the proteins studied 
+    (Skinner et al (2018) <doi:10.1038/nchembio.2515> and Li et al (2018) <doi:10.1038/nchem.2908>). 
+    However, the number of possible internal fragments gets huge with longer proteins and subsequent identification of internal fragments remains challenging, 
+    in particular since the the accuracy of measurements with current mass spectrometers represents a limiting factor.   
+    This package attempts to deal with the complexity of internal fragments and allows identification of terminal and internal fragments from deconvoluted mass-spectrometry data. 
+Depends: R (>= 3.1.0)
+VignetteBuilder: knitr, rmarkdown
+Imports: graphics, grDevices, stats, utils, wrMisc, wrProteo
+Suggests: BiocParallel, boot, data.tree, fdrtool, knitr, limma,
+        parallel, preprocessCore, RColorBrewer, rmarkdown, wrGraph
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-09-01 09:17:27 UTC; wraff
+Repository: CRAN
+Date/Publication: 2020-09-08 08:10:02 UTC

@@ -1,0 +1,31 @@
+Package: rockr
+Type: Package
+Title: 'Rock' R Server Client
+Description: Connector to the REST API of a 'Rock' R server, to perform operations 
+  on a remote R server session, or administration tasks. See 'Rock' documentation at
+  <https://rockdoc.obiba.org/>.
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Yannick",
+             family = "Marcon",
+             role = c("aut", "cre"),
+             email = "yannick.marcon@obiba.org",
+             comment = c(ORCID = "0000-0003-0138-2023")),
+      person("OBiBa group",
+             role="cph",
+             email="info@obiba.org"))
+Depends: R (>= 3.1), httr
+Imports: jsonlite, mime, progress
+Suggests: knitr, testthat (>= 3.0.0), tibble
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-03-11 14:57:42 UTC; yannick
+Author: Yannick Marcon [aut, cre] (<https://orcid.org/0000-0003-0138-2023>),
+  OBiBa group [cph]
+Maintainer: Yannick Marcon <yannick.marcon@obiba.org>
+Repository: CRAN
+Date/Publication: 2021-03-12 14:00:02 UTC

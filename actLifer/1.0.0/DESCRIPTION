@@ -1,0 +1,48 @@
+Package: actLifer
+Title: Creating Actuarial Life Tables
+Version: 1.0.0
+Authors@R: c(
+    person(
+    given = "Grace", 
+    family = "Rade", 
+    email = "grade03426@gmail.com", 
+    role = c("aut", "cre", "cph"), 
+    comment = c(ORCID = "0000-0001-5319-1371")),
+    person(
+    given = "Maeve", 
+    family = "Tyler-Penny", 
+    email = "mtylerpenny@smith.edu", 
+    role = "aut", 
+    comment = c(ORCID = "0000-0002-9131-2004")),
+    person(
+    given = "Julia", 
+    family = "Ting", 
+    email = "ting.y.julia@gmail.com", 
+    role = "aut", 
+    comment = c(ORCID = "0009-0001-3838-6653"))
+    )
+Maintainer: Grace Rade <grade03426@gmail.com>
+Description: Contains data and functions that can be used to make 
+  actuarial life tables. Each function adds a column to the inputted dataset for
+  each intermediate calculation between mortality rate and life expectancy. Users can 
+  run any of our functions to complete the life table until that step, or run
+  lifetable() to output a full life table that can be customized to remove optional columns. 
+  Methods for creating lifetables are as described in Zedstatistics (2021) <https://www.youtube.com/watch?v=Dfe59glNXAQ>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10), dplyr (>= 1.0.10)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tibble (>= 3.1.8),
+        htmltools
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/g-rade/actLifer
+        https://g-rade.github.io/actLifer/
+NeedsCompilation: no
+Packaged: 2023-11-16 18:56:39 UTC; grace.rade
+Author: Grace Rade [aut, cre, cph] (<https://orcid.org/0000-0001-5319-1371>),
+  Maeve Tyler-Penny [aut] (<https://orcid.org/0000-0002-9131-2004>),
+  Julia Ting [aut] (<https://orcid.org/0009-0001-3838-6653>)
+Repository: CRAN
+Date/Publication: 2023-11-16 21:13:55 UTC

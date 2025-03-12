@@ -1,0 +1,23 @@
+Package: mergingTools
+Title: Tools to Merge Hardware Event Monitors (HEMs) Coming from
+        Separate Subexperiments into One Single Dataframe
+Version: 1.0.1
+Authors@R: person(given = "Sergi",
+           family = "Vilardell",
+           role = c("aut", "cre"),
+           email = "sergi.vilardell@bsc.es")
+Description: Implementation of two tools to merge Hardware Event Monitors (HEMs) from different subexperiments. Hardware Reading and Merging (HRM), which uses order statistics to merge; and MUlti-Correlation HEM (MUCH) which merges using a multivariate normal distribution. The reference paper for HRM is: S. Vilardell, I. Serra, R. Santalla, E. Mezzetti, J. Abella and F. J. Cazorla, "HRM: Merging Hardware Event Monitors for Improved Timing Analysis of Complex MPSoCs," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 11, pp. 3662-3673, Nov. 2020, <doi:10.1109/TCAD.2020.3013051>. For MUCH: S. Vilardell, I. Serra, E. Mezzetti, J. Abella, and F. J. Cazorla. 2021. "MUCH: exploiting pairwise hardware event monitor correlations for improved timing analysis of complex MPSoCs". In Proceedings of the 36th Annual ACM Symposium on Applied Computing (SAC '21). Association for Computing Machinery. <doi:10.1145/3412841.3441931>. This work has been supported by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement No. 772773).
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: dplyr, purrr, tidyr, stringr, rlang, MASS
+Suggests: DT, knitr, rmarkdown, devtools
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-09-13 09:59:59 UTC; Sergi Vilardell
+Author: Sergi Vilardell [aut, cre]
+Maintainer: Sergi Vilardell <sergi.vilardell@bsc.es>
+Repository: CRAN
+Date/Publication: 2023-09-13 18:40:02 UTC

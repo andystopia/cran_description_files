@@ -1,0 +1,45 @@
+Package: swag
+Type: Package
+Title: Sparse Wrapper Algorithm
+Version: 0.1.0
+Authors@R: c(
+    person("Samuel", "Orso", email="Samuel.Orso@unige.ch", role=c("aut","cre")),
+    person("Gaetan", "Bakalli", role="aut"),
+    person("Cesare", "Miglioli", role="aut"),
+    person("Stephane", "Guerrier", role="ctb"),
+    person("Roberto", "Molinari", role="ctb"))
+Maintainer: Samuel Orso <Samuel.Orso@unige.ch>
+Description: An algorithm that trains a meta-learning procedure that combines 
+    screening and wrapper methods to find a set of extremely low-dimensional attribute 
+    combinations. This package works on top of the 'caret' package and proceeds in a 
+    forward-step manner. More specifically, it builds and tests learners starting 
+    from very few attributes until it includes a maximal number of attributes by 
+    increasing the number of attributes at each step. Hence, for each fixed number
+    of attributes, the algorithm tests various (randomly selected) learners and 
+    picks those with the best performance in terms of training error. Throughout,
+    the algorithm uses the information coming from the best learners at the previous
+    step to build and test learners in the following step. In the end, it outputs
+    a set of strong low-dimensional learners.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: false
+Depends: R (>= 4.0.0)
+Imports: caret, Rdpack (>= 0.7), stats
+Suggests: doParallel, e1071, foreach, ggplot2, glmnet, grDevices,
+        iterators, kernlab, knitr, lattice, methods, mlbench,
+        ModelMetrics, nlme, parallel, plyr, pROC, randomForest,
+        recipes, remotes, reshape2, stats4, rmarkdown, utils, withr
+RdMacros: Rdpack
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+URL: https://github.com/SMAC-Group/SWAG-R-Package/
+BugReports: https://github.com/SMAC-Group/SWAG-R-Package/issues/
+NeedsCompilation: no
+Packaged: 2020-11-05 14:30:11 UTC; orsos
+Author: Samuel Orso [aut, cre],
+  Gaetan Bakalli [aut],
+  Cesare Miglioli [aut],
+  Stephane Guerrier [ctb],
+  Roberto Molinari [ctb]
+Repository: CRAN
+Date/Publication: 2020-11-10 15:30:02 UTC

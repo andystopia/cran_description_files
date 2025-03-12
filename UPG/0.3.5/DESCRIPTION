@@ -1,0 +1,25 @@
+Package: UPG
+Type: Package
+Title: Efficient Bayesian Algorithms for Binary and Categorical Data
+        Regression Models
+Version: 0.3.5
+Authors@R: c(person("Gregor","Zens",role=c("aut","cre"),email="zens@iiasa.ac.at"),
+             person("Sylvia","Frühwirth-Schnatter", role="aut"),
+             person("Helga","Wagner", role="aut"))
+Author: Gregor Zens [aut, cre],
+  Sylvia Frühwirth-Schnatter [aut],
+  Helga Wagner [aut]
+Maintainer: Gregor Zens <zens@iiasa.ac.at>
+Description: Efficient Bayesian implementations of probit, logit, multinomial logit and binomial logit models. Functions for plotting and tabulating the estimation output are available as well. Estimation is based on Gibbs sampling where the Markov chain Monte Carlo algorithms are based on the latent variable representations and marginal data augmentation algorithms described in "Gregor Zens, Sylvia Frühwirth-Schnatter & Helga Wagner (2023). Ultimate Pólya Gamma Samplers – Efficient MCMC for possibly imbalanced binary and categorical data, Journal of the American Statistical Association <doi:10.1080/01621459.2023.2259030>". 
+Encoding: UTF-8
+License: GPL-3
+Language: en-US
+Depends: R (>= 3.5.0)
+Imports: ggplot2, knitr, matrixStats, mnormt, pgdraw, reshape2, coda,
+        truncnorm
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2024-11-10 14:37:06 UTC; Gregor
+Repository: CRAN
+Date/Publication: 2024-11-10 17:00:10 UTC

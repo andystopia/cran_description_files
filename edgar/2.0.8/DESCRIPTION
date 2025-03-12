@@ -1,0 +1,38 @@
+Package: edgar
+Type: Package
+Title: Tool for the U.S. SEC EDGAR Retrieval and Parsing of Corporate
+        Filings
+Version: 2.0.8
+Date: 2025-03-07
+Authors@R: c(person(given = "Gunratan",
+                    family = "Lonare",
+                    role = c("aut", "cre"),
+                    email = "lonare.gunratan@gmail.com"),
+             person(given = "Bharat",
+                    family = "Patil",
+                    role = "aut",
+                    email = "bharatspatil@gmail.com"))
+Maintainer: Gunratan Lonare <lonare.gunratan@gmail.com>
+Depends: R (>= 3.5.0)
+Imports: R.utils, tm, XML, stringr, stringi, qdapRegex, httr
+Description: In the USA, companies file different forms with the U.S. 
+    Securities and Exchange Commission (SEC) through EDGAR (Electronic 
+    Data Gathering, Analysis, and Retrieval system). The EDGAR 
+    database automated system collects all the different necessary 
+    filings and makes it publicly available. This package facilitates
+    retrieving, storing, searching, and parsing of all the available 
+    filings on the EDGAR server. It downloads filings from SEC 
+    server in bulk with a single query. Additionally, it provides 
+    various useful functions: extracts 8-K triggering events, extract
+    "Business (Item 1)" and "Management's Discussion and Analysis(Item 7)"
+    sections of annual statements, searches filings for desired 
+    keywords, provides sentiment measures, parses filing header 
+    information, and provides HTML view of SEC filings.  
+License: GPL-2
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-03-08 00:44:28 UTC; lonar
+Author: Gunratan Lonare [aut, cre],
+  Bharat Patil [aut]
+Repository: CRAN
+Date/Publication: 2025-03-08 01:00:02 UTC

@@ -1,0 +1,32 @@
+Package: xrnet
+Type: Package
+Title: Hierarchical Regularized Regression
+Version: 1.0.0
+Authors@R: c(
+  person("Garrett", "Weaver", email = "gmweaver.usc@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9918-8386")),
+  person("Dixin", "Shen", email = "dixinshe@usc.edu", role = c("aut")),
+  person("Juan Pablo", "Lewinger", email = "lewinger@usc.edu", role = c("ctb", "ths")))
+URL: https://github.com/USCbiostats/xrnet,
+        https://uscbiostats.github.io/xrnet/
+Description: Fits hierarchical regularized regression models
+    to incorporate potentially informative external data, Weaver and Lewinger (2019) <doi:10.21105/joss.01761>. 
+    Utilizes coordinate descent to efficiently fit regularized regression models both with and without
+    external information with the most common penalties used in practice (i.e. ridge, lasso, elastic net). 
+    Support for standard R matrices, sparse matrices and big.matrix objects.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, testthat, Matrix, doParallel
+LinkingTo: Rcpp, RcppEigen, BH, bigmemory
+Imports: Rcpp (>= 0.12.19), foreach, bigmemory, methods
+Depends: R (>= 4.0)
+BugReports: https://github.com/USCbiostats/xrnet/issues
+NeedsCompilation: yes
+Packaged: 2024-07-15 04:54:39 UTC; garrett.weaver
+Author: Garrett Weaver [aut, cre] (<https://orcid.org/0000-0002-9918-8386>),
+  Dixin Shen [aut],
+  Juan Pablo Lewinger [ctb, ths]
+Maintainer: Garrett Weaver <gmweaver.usc@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-16 00:40:02 UTC

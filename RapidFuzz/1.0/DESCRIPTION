@@ -1,0 +1,30 @@
+Package: RapidFuzz
+Type: Package
+Title: String Similarity Computation Using 'RapidFuzz'
+Version: 1.0
+Date: 2024-11-30
+Authors@R: c(
+            person("Andre", "Leite", email = "leite@castlab.org", role = c("aut", "cre")),
+            person("Hugo", "Vaconcelos", email = "hugo.vasconcelos@ufpe.br", role = "aut"),
+            person("Max", "Bachmann", role = ("ctb")),
+            person("Adam", "Cohen", role = c("ctb")))
+Description: Provides a high-performance interface for calculating string similarities and distances, leveraging the efficient library 'RapidFuzz' <https://github.com/rapidfuzz/rapidfuzz-cpp>. This package integrates the 'C++' implementation, allowing 'R' users to access cutting-edge algorithms for fuzzy matching and text analysis.
+URL: <https://github.com/StrategicProjects/RapidFuzz>
+Note: This package makes use of the 'RapidFuzz' source code created by
+        Max Bachmann and Adam Cohen
+        (<https://github.com/rapidfuzz/rapidfuzz-cpp>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.13)
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2024-12-03 20:17:05 UTC; leite
+Author: Andre Leite [aut, cre],
+  Hugo Vaconcelos [aut],
+  Max Bachmann [ctb],
+  Adam Cohen [ctb]
+Maintainer: Andre Leite <leite@castlab.org>
+Repository: CRAN
+Date/Publication: 2024-12-05 18:40:14 UTC

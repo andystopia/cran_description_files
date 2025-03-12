@@ -1,0 +1,30 @@
+Package: webshot2
+Title: Take Screenshots of Web Pages
+Version: 0.1.1
+Authors@R: c(
+    person("Winston", "Chang", , "winston@posit.co", role = c("aut", "cre")),
+    person("Barret", "Schloerke", , "barret@posit.co", role = "ctb",
+           comment = c(ORCID = "0000-0001-9986-114X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Takes screenshots of web pages, including Shiny applications
+    and R Markdown documents. 'webshot2' uses headless Chrome or Chromium
+    as the browser back-end.
+License: GPL-2
+URL: https://rstudio.github.io/webshot2/,
+        https://github.com/rstudio/webshot2
+BugReports: https://github.com/rstudio/webshot2/issues
+Depends: R (>= 3.2)
+Imports: callr, chromote (>= 0.1.0), later, magrittr, promises
+Suggests: httpuv, rmarkdown, shiny
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-08-11 21:17:46 UTC; garrick
+Author: Winston Chang [aut, cre],
+  Barret Schloerke [ctb] (<https://orcid.org/0000-0001-9986-114X>),
+  Posit Software, PBC [cph, fnd]
+Maintainer: Winston Chang <winston@posit.co>
+Repository: CRAN
+Date/Publication: 2023-08-11 22:00:02 UTC

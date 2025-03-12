@@ -1,0 +1,23 @@
+Package: archeofrag
+Type: Package
+Title: Spatial Analysis in Archaeology from Refitting Fragments
+Version: 1.0.0
+Date: 2024-12-16
+Authors@R: person("Sebastien", "Plutniak", email = "sebastien.plutniak@posteo.net", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6674-3806"))
+Author: Sebastien Plutniak [aut, cre] (<https://orcid.org/0000-0002-6674-3806>)
+Maintainer: Sebastien Plutniak <sebastien.plutniak@posteo.net>
+Description: Methods to analyse spatial units in archaeology from the relationships between refitting fragmented objects scattered in these units (e.g. stratigraphic layers). Graphs are used to model archaeological observations. The package is mainly based on the 'igraph' package for graph analysis. Functions can: 1) create, manipulate, and simulate fragmentation graphs, 2) measure the cohesion and admixture of archaeological spatial units, and 3) characterise the topology of a specific set of refitting relationships. Empirical datasets are provided as examples. Documentation about 'archeofrag' is provided by the vignette included in this package, by the accompanying scientific papers: Plutniak (2021, Journal of Archaeological Science, <doi:10.1016/j.jas.2021.105501>) and Plutniak (2022, Journal of Open Source Software, <doi:10.21105/joss.04335>). This package is complemented by a companion GUI application available at <https://analytics.huma-num.fr/Sebastien.Plutniak/archeofrag/>.
+License: GPL-3
+Repository: CRAN
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: igraph, graphics, stats, grDevices, methods, utils
+Suggests: RBGL, knitr, covr, rmarkdown, markdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/sebastien-plutniak/archeofrag
+BugReports: https://github.com/sebastien-plutniak/archeofrag/issues
+NeedsCompilation: no
+Packaged: 2024-12-17 11:17:24 UTC; seb
+Date/Publication: 2024-12-17 11:40:02 UTC

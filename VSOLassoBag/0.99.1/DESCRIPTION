@@ -1,0 +1,27 @@
+Package: VSOLassoBag
+Type: Package
+Title: Variable Selection Oriented LASSO Bagging Algorithm
+Version: 0.99.1
+Date: 2023-3-24
+biocViews: Software, StatisticalMethod, FeatureExtraction
+Authors@R: c(
+  person('Jiaqi', 'Liang',  email = 'liangjq27@mail2.sysu.edu.cn', role = c('aut')),
+  person('Chaoye', 'Wang',  email = 'wangcy1@sysucc.org.cn', role = c('aut', 'cre'))
+  )
+Description: A wrapped LASSO approach by integrating an ensemble learning strategy to help select efficient, stable, and high confidential variables from omics-based data. Using a bagging strategy in combination of a parametric method or inflection point search method for cut-off threshold determination. This package can integrate and vote variables generated from multiple LASSO models to determine the optimal candidates. Luo H, Zhao Q, et al (2020) <doi:10.1126/scitranslmed.aax7533> for more details.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: glmnet, survival, ggplot2, POT, parallel, utils, pbapply,
+        methods, SummarizedExperiment
+RoxygenNote: 7.2.0
+Suggests: rmarkdown, knitr, rmdformats, qpdf
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-03-24 16:11:44 UTC; zhou
+Author: Jiaqi Liang [aut],
+  Chaoye Wang [aut, cre]
+Maintainer: Chaoye Wang <wangcy1@sysucc.org.cn>
+Repository: CRAN
+Date/Publication: 2023-03-24 16:40:08 UTC

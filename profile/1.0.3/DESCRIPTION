@@ -1,0 +1,30 @@
+Package: profile
+Title: Read, Manipulate, and Write Profiler Data
+Version: 1.0.3
+Date: 2022-08-21
+Authors@R: 
+    c(
+      person("Kirill", "Müller", role = c("aut", "cre"), email = "kirill@cynkra.com", comment = c(ORCID = "0000-0002-1416-3412")),
+      person("R Consortium", role = "fnd")
+    )
+Description: Defines a data structure for profiler data, and methods to read and
+    write from the 'Rprof' and 'pprof' file formats.
+License: MIT + file LICENSE
+URL: https://r-prof.github.io/profile/,
+        https://github.com/r-prof/profile
+BugReports: https://github.com/r-prof/profile/issues
+Imports: methods, rlang, tibble (>= 3.0.0), vctrs, withr
+Suggests: covr, dm, DiagrammeR, DiagrammeRsvg, RProtoBuf, testthat
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Collate: 'api.R' 'compat-purrr.R' 'pprof-from-ds.R' 'rprof-read.R'
+        'pprof-read.R' 'pprof-to-ds.R' 'rprof-write.R' 'pprof-write.R'
+        'profile-package.R' 'proto.R' 'rprof-from-ds.R' 'rprof-to-ds.R'
+        'utils.R'
+NeedsCompilation: no
+Packaged: 2022-08-21 09:16:31 UTC; kirill
+Author: Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
+  R Consortium [fnd]
+Maintainer: Kirill Müller <kirill@cynkra.com>
+Repository: CRAN
+Date/Publication: 2022-08-22 09:00:13 UTC

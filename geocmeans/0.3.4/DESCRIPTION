@@ -1,0 +1,43 @@
+Package: geocmeans
+Type: Package
+Title: Implementing Methods for Spatial Fuzzy Unsupervised
+        Classification
+Version: 0.3.4
+Authors@R: c(
+    person("Jeremy", "Gelb", email = "jeremy.gelb@ucs.inrs.ca",role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7114-2714")),
+    person("Philippe", "Apparicio", email="philippe.apparicio@ucs.inrs.ca", role=c("ctb"), comment = c(ORCID = "0000-0001-6466-9342"))
+    )
+Maintainer: Jeremy Gelb <jeremy.gelb@ucs.inrs.ca>
+Imports: ggplot2 (>= 3.2.1), tmap (>= 3.3-1), spdep (>= 1.1.2), reldist
+        (>= 1.6.6), dplyr (>= 0.8.3), fclust (>= 2.1.1), fmsb (>=
+        0.7.0), future.apply (>= 1.4.0), progressr (>= 0.4.0), reshape2
+        (>= 1.4.4), stats (>= 3.5), grDevices (>= 3.5), shiny (>=
+        1.6.0), sf (>= 1.0-6), leaflet (>= 2.1.1), plotly (>= 4.9.3),
+        Rdpack (>= 2.1.1), matrixStats (>= 0.58.0), methods (>= 3.5),
+        terra (>= 1.6-47), Rcpp (>= 1.0.6)
+Depends: R (>= 3.5)
+Suggests: knitr (>= 1.28), rmarkdown (>= 2.1), markdown (>= 1.1),
+        future (>= 1.16.0), ppclust (>= 1.1.0), ClustGeo (>= 2.0), car
+        (>= 3.0-7), rgl (>= 0.100), ggpubr (>= 0.2.5), RColorBrewer (>=
+        1.1-2), kableExtra (>= 1.1.0), viridis (>= 0.5.1), testthat (>=
+        3.0.0), bslib (>= 0.2.5), shinyWidgets (>= 0.6), shinyhelper
+        (>= 0.3.2), waiter (>= 0.2.2), classInt(>= 0.4-3), covr
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Description: Provides functions to apply spatial fuzzy unsupervised classification, visualize and interpret results. This method is well suited when the user wants to analyze data with a fuzzy clustering algorithm and to account for the spatial dimension of the dataset. In addition, indexes for estimating the spatial consistency and classification quality are proposed.
+    The methods were originally proposed in the field of brain imagery (seed Cai and al. 2007 <doi:10.1016/j.patcog.2006.07.011> and Zaho and al. 2013 <doi:10.1016/j.dsp.2012.09.016>) and recently applied in geography (see Gelb and Apparicio <doi:10.4000/cybergeo.36414>).
+URL: https://github.com/JeremyGelb/geocmeans
+BugReports: https://github.com/JeremyGelb/geocmeans/issues
+RdMacros: Rdpack
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++17
+Language: en-CA
+NeedsCompilation: yes
+Packaged: 2023-09-12 02:04:57 UTC; Gelb
+Author: Jeremy Gelb [aut, cre] (<https://orcid.org/0000-0002-7114-2714>),
+  Philippe Apparicio [ctb] (<https://orcid.org/0000-0001-6466-9342>)
+Repository: CRAN
+Date/Publication: 2023-09-12 03:10:02 UTC

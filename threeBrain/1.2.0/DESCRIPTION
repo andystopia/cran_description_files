@@ -1,0 +1,52 @@
+Package: threeBrain
+Type: Package
+Title: Your Advanced 3D Brain Visualization
+Version: 1.2.0
+Authors@R: c(
+    person("Zhengjia", "Wang", email = "dipterix.wang@gmail.com", role = c("aut", "cre", "cph")),
+    person("John", "Magnotti", email = "John.Magnotti@Pennmedicine.upenn.edu", role = c("ctb", "res")),
+    person("Xiang", "Zhang", email = "xiang.zhang@pennmedicine.upenn.edu", role = c("ctb", "res")),
+    person("Brian", "Metzger", email = "bmetzge1@swarthmore.edu", role = c("res")),
+    person("Elizabeth", "Nesbitt", email = "Elizabeth.Nesbitt@bcm.edu", role = c("res")),
+    person("Meng", "Li", email = "meng@rice.edu", role = c("ths")),
+    person("Michael", "Beauchamp", email = "Michael.Beauchamp@Pennmedicine.upenn.edu", role = c("ths", "ctb", "dtc"))
+    )
+Description: A fast, interactive cross-platform, and easy to share 
+    'WebGL'-based 3D brain viewer that visualizes 'FreeSurfer' and/or
+    'AFNI/SUMA' surfaces. The viewer widget can be either standalone or 
+    embedded into 'R-shiny' applications. The standalone version only require
+    a web browser with 'WebGL2' support (for example, 'Chrome', 'Firefox', 
+    'Safari'), and can be inserted into any websites. The 'R-shiny' 
+    support allows the 3D viewer to be dynamically generated from reactive user 
+    inputs. Please check the publication by Wang, Magnotti, Zhang,
+    and Beauchamp (2023, <doi:10.1523/ENEURO.0328-23.2023>) for electrode 
+    localization. This viewer has been fully adopted by 'RAVE' 
+    <https://openwetware.org/wiki/RAVE>, an interactive toolbox to 
+    analyze 'iEEG' data by Magnotti, Wang, and Beauchamp (2020, 
+    <doi:10.1016/j.neuroimage.2020.117341>). Please check 
+    'citation("threeBrain")' for details.
+License: MPL-2.0
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Language: en-US
+URL: https://dipterix.org/threeBrain/,
+        https://github.com/dipterix/threeBrain
+BugReports: https://github.com/dipterix/threeBrain/issues
+Imports: utils, grDevices, graphics, dipsaus, xml2, servr, png, knitr,
+        shiny (>= 1.2.0), digest (>= 0.6.22), freesurferformats (>=
+        0.1.7), jsonlite (>= 1.5), stringr (>= 1.3.1), htmlwidgets (>=
+        1.3), R6 (>= 2.3.0), gifti (>= 0.7.5), oro.nifti (>= 0.9.1)
+Suggests: rmarkdown, DT, ravetools, htmltools
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-05 16:10:27 UTC; dipterix
+Author: Zhengjia Wang [aut, cre, cph],
+  John Magnotti [ctb, res],
+  Xiang Zhang [ctb, res],
+  Brian Metzger [res],
+  Elizabeth Nesbitt [res],
+  Meng Li [ths],
+  Michael Beauchamp [ths, ctb, dtc]
+Maintainer: Zhengjia Wang <dipterix.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-07 18:20:03 UTC

@@ -1,0 +1,52 @@
+Package: rslurm
+Type: Package
+Title: Submit R Calculations to a 'Slurm' Cluster
+Description: Functions that simplify submitting R scripts to a 'Slurm' 
+    workload manager, in part by automating the division of embarrassingly
+    parallel calculations across cluster nodes.
+Acknowledgements: Development of this R package was supported by the
+        National Socio-Environmental Synthesis Center (SESYNC) under
+        funding received from the National Science Foundation grants
+        DBI-1052875 and DBI-1639145.
+Version: 0.6.2
+Date: 2023-01-31
+License: GPL-3
+URL: https://www.earthdatascience.org/rslurm/
+BugReports: https://github.com/earthlab/rslurm/issues
+Authors@R: c(person('Philippe', 'Marchand', email = "marchand.philippe@gmail.com", role = 'aut'),
+             person('Ian', 'Carroll', role = 'aut'),
+             person('Mike', 'Smorul', role = 'aut'),
+             person('Rachael', 'Blake', role = 'aut'),
+             person('Quentin', 'Read', email = 'quentin.read@usda.gov', role = 'aut'),
+             person('Dayne', 'Filer', role = 'ctb'),
+             person('Ben', 'Fasoli', role = 'ctb'),
+             person('Pol', 'van Rijn', role = 'ctb'),
+             person('Sebastian', 'Schubert', role = 'ctb'),
+             person('Rob', 'Gilmore', role = 'ctb'),
+             person('Christopher', 'Barrington', role = 'ctb'),
+             person('Se Jong', 'Cho', role = 'art'),
+             person('Erick Verleye', email='erve3705@colorado.edu', role = 'cre')
+             )
+Depends: R (>= 3.5.0)
+Imports: whisker (>= 0.3)
+RoxygenNote: 7.2.3
+Suggests: parallel, testthat, knitr, rmarkdown, markdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-23 19:14:46 UTC; verleyee
+Author: Philippe Marchand [aut],
+  Ian Carroll [aut],
+  Mike Smorul [aut],
+  Rachael Blake [aut],
+  Quentin Read [aut],
+  Dayne Filer [ctb],
+  Ben Fasoli [ctb],
+  Pol van Rijn [ctb],
+  Sebastian Schubert [ctb],
+  Rob Gilmore [ctb],
+  Christopher Barrington [ctb],
+  Se Jong Cho [art],
+  Erick Verleye [cre]
+Maintainer: Erick Verleye <erve3705@colorado.edu>
+Repository: CRAN
+Date/Publication: 2023-02-24 08:42:35 UTC

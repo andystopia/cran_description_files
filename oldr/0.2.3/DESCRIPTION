@@ -1,0 +1,43 @@
+Package: oldr
+Title: An Implementation of Rapid Assessment Method for Older People
+Version: 0.2.3
+Authors@R: c(
+    person("Mark", "Myatt", comment = c(ORCID = "0000-0003-1119-1474"),
+           email = "mark@brixtonhealth.com", role = c("aut", "cph")),
+    person("Ernest", "Guevarra", comment = c(ORCID = "0000-0002-4887-4415"), 
+           email = "ernest@guevarra.io", role = c("aut", "cre", "cph")),
+    person("Pascale", "Fritsch", role = "aut"),
+    person("Katja", "Siling", role = "aut"),
+    person("HelpAge International", role = "cph"),
+    person("Elrha", role = "fnd"))
+Description: An implementation of the Rapid Assessment Method for Older People
+    or RAM-OP <https://www.helpage.org/resource/rapid-assessment-method-for-older-people-ramop-manual/>.
+    It provides various functions that allow the user to design and plan the
+    assessment and analyse the collected data. RAM-OP provides accurate and
+    reliable estimates of the needs of older people.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: bbw, car, withr, tibble, rmarkdown, cli, tinytex
+Suggests: testthat (>= 3.0.0), covr, DiagrammeR, knitr, kableExtra,
+        spelling
+Encoding: UTF-8
+LazyData: true
+Language: en-GB
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+URL: https://rapidsurveys.io/oldr/,
+        https://github.com/rapidsurveys/oldr
+BugReports: https://github.com/rapidsurveys/oldr/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-22 18:58:13 UTC; ernestguevarra
+Author: Mark Myatt [aut, cph] (<https://orcid.org/0000-0003-1119-1474>),
+  Ernest Guevarra [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4887-4415>),
+  Pascale Fritsch [aut],
+  Katja Siling [aut],
+  HelpAge International [cph],
+  Elrha [fnd]
+Maintainer: Ernest Guevarra <ernest@guevarra.io>
+Repository: CRAN
+Date/Publication: 2025-01-24 13:00:06 UTC

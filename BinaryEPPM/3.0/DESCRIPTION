@@ -1,0 +1,33 @@
+Package: BinaryEPPM
+Type: Package
+Title: Mean and Scale-Factor Modeling of Under- And Over-Dispersed
+        Binary Data
+Version: 3.0
+Imports: Formula, expm, numDeriv, stats, lmtest, grDevices, graphics
+Date: 2024-06-03
+Authors@R: c(person(c("David", "M."), "Smith", role = c("aut", "cre"),
+                    email = "dmccsmith@verizon.net"),
+             person(c("Malcolm", "J."), "Faddy", role = "aut"))
+Depends: R (>= 3.5.0)
+Description: Under- and over-dispersed binary data are modeled using an extended Poisson 
+ process model (EPPM) appropriate for binary data. A feature of the model is that the 
+ under-dispersion relative to the binomial distribution only needs to be greater than
+ zero, but the over-dispersion is  restricted compared to other distributional models  
+ such as the beta and correlated binomials. Because of this, the examples focus on 
+ under-dispersed data and how, in combination with the beta or correlated distributions,
+ flexible models can be fitted to data displaying both under- and over-dispersion. Using
+ Generalized Linear Model (GLM)  terminology, the functions utilize linear predictors for
+ the probability of success and scale-factor with various link functions for p, and log 
+ link for scale-factor, to fit a variety of models relevant to areas such as bioassay. 
+ Details of the EPPM are in Faddy and Smith (2012) <doi:10.1002/bimj.201100214> and 
+ Smith and Faddy (2019) <doi:10.18637/jss.v090.i08>.
+License: GPL-2
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2024-06-03 18:18:25 UTC; dmccs
+Author: David M. Smith [aut, cre],
+  Malcolm J. Faddy [aut]
+Maintainer: David M. Smith <dmccsmith@verizon.net>
+Repository: CRAN
+Date/Publication: 2024-06-04 10:32:25 UTC

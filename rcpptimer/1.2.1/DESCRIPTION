@@ -1,0 +1,30 @@
+Package: rcpptimer
+Type: Package
+Title: 'Rcpp' Tic-Toc Timer with 'OpenMP' Support
+Version: 1.2.1
+Date: 2024-09-21
+Authors@R: c(
+    person(given = "Jonathan",
+             family = "Berrisch",
+             role = c("aut", "cre"),
+             email = "Jonathan@Berrisch.biz",
+             comment = c(ORCID = "0000-0002-4944-9074")))
+Description: Provides 'Rcpp' bindings for 'cpptimer', a simple tic-toc timer class for benchmarking 'C++' code <https://github.com/BerriJ/cpptimer>. It's not just simple, it's blazing fast! This sleek tic-toc timer class supports overlapping timers as well as 'OpenMP' parallelism <https://www.openmp.org/>. It boasts a nanosecond-level time resolution. We did not find any overhead of the timer itself at this resolution. Results (with summary statistics) are automatically passed back to 'R' as a data frame.
+URL: https://rcpptimer.berrisch.biz,
+        https://github.com/BerriJ/rcpptimer
+BugReports: https://github.com/BerriJ/rcpptimer/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: Rcpp
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2024-09-21 21:54:54 UTC; vscode
+Author: Jonathan Berrisch [aut, cre] (<https://orcid.org/0000-0002-4944-9074>)
+Maintainer: Jonathan Berrisch <Jonathan@Berrisch.biz>
+Repository: CRAN
+Date/Publication: 2024-09-22 21:40:02 UTC

@@ -1,0 +1,38 @@
+Package: ActivityIndex
+Type: Package
+Title: Activity Index Calculation using Raw 'Accelerometry' Data
+Version: 0.3.7
+Authors@R: c(
+    person(given = "Jiawei",
+           family = "Bai",
+           role = c("cre", "aut"),
+           email = "jbai@jhsph.edu",
+           comment = c(ORCID = "0000-0003-4021-0101")
+           ),
+    person(given = "John",
+           family = "Muschelli",
+           email = "muschellij2@gmail.com",
+           role = c("ctb"),
+           comment = c(ORCID = "0000-0001-6469-1750"))
+           )
+Description: Reads raw 'accelerometry' from 'GT3X+' data and 
+    plain table data to calculate Activity Index from 'Bai et al.' (2016)
+    <doi:10.1371/journal.pone.0160644>.  The Activity Index refers to the 
+    square root of the second-level average variance of the three
+    'accelerometry' axes.
+License: GPL-3
+Depends: R (>= 2.10)
+Imports: matrixStats, data.table, utils, R.utils
+Suggests: knitr, testthat, graphics, rmarkdown
+LazyData: true
+LazyLoad: true
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2021-01-07 22:20:06 UTC; terry
+Author: Jiawei Bai [cre, aut] (<https://orcid.org/0000-0003-4021-0101>),
+  John Muschelli [ctb] (<https://orcid.org/0000-0001-6469-1750>)
+Maintainer: Jiawei Bai <jbai@jhsph.edu>
+Repository: CRAN
+Date/Publication: 2021-01-11 06:50:23 UTC

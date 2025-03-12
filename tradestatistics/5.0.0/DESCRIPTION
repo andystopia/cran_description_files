@@ -1,0 +1,64 @@
+Type: Package
+Package: tradestatistics
+Title: Open Trade Statistics API Wrapper and Utility Program
+Version: 5.0.0
+Authors@R: c(
+    person("Mauricio", "Vargas", , "mavargas11@uc.cl", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-1017-7574")),
+    person("Joshua", "Kunst", role = "ctb",
+           comment = "contributed to different parts of the pre-release code"),
+    person("Alexey", "Kravchenko", role = "ctb",
+           comment = "reviewed 2021 version of the API"),
+    person("Emma", "Mendelsohn", role = "ctb",
+           comment = "updated the functions to take available years from the API instead of hardcoded values"),
+    person("Daniela", "de los Santos", role = "ctb",
+           comment = "proposed improvements to default parameters"),
+    person("Emily", "Riederer", role = "rev",
+           comment = "reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/274"),
+    person("Mark", "Padgham", role = "rev",
+           comment = "reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/274"),
+    person("Amanda", "Dobbyn", role = "rev",
+           comment = "reviewed a previous package that evolved into the current package for rOpenSci, see https://github.com/ropensci/onboarding/issues/217"),
+    person("Jorge", "Cimentada", role = "rev",
+           comment = "reviewed a previous package that evolved into the current package for rOpenSci, see https://github.com/ropensci/onboarding/issues/217"),
+    person(, "UN Comtrade", role = "dtc"),
+    person(, "The World Bank", role = "dtc")
+  )
+Description: Access 'Open Trade Statistics' API from R to download
+    international trade data.
+License: Apache License (>= 2)
+URL: https://docs.ropensci.org/tradestatistics/
+BugReports: https://github.com/ropensci/tradestatistics/issues/
+Depends: R (>= 2.10)
+Imports: crul, data.table, digest, jsonlite, memoise, utils
+Suggests: covr, knitr, rmarkdown, testthat (>= 2.1.0), tibble, vcr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-08-22 20:59:13 UTC; pacha
+Author: Mauricio Vargas [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1017-7574>),
+  Joshua Kunst [ctb] (contributed to different parts of the pre-release
+    code),
+  Alexey Kravchenko [ctb] (reviewed 2021 version of the API),
+  Emma Mendelsohn [ctb] (updated the functions to take available years
+    from the API instead of hardcoded values),
+  Daniela de los Santos [ctb] (proposed improvements to default
+    parameters),
+  Emily Riederer [rev] (reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/274),
+  Mark Padgham [rev] (reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/274),
+  Amanda Dobbyn [rev] (reviewed a previous package that evolved into the
+    current package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/217),
+  Jorge Cimentada [rev] (reviewed a previous package that evolved into
+    the current package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/217),
+  UN Comtrade [dtc],
+  The World Bank [dtc]
+Maintainer: Mauricio Vargas <mavargas11@uc.cl>
+Repository: CRAN
+Date/Publication: 2024-08-23 04:40:02 UTC

@@ -1,0 +1,28 @@
+Package: mrregression
+Type: Package
+Title: Regression Analysis for Very Large Data Sets via Merge and
+        Reduce
+Version: 1.0.0
+Author: Esther Denecke [aut], Leo N. Geppert [aut, cre], Steffen Maletz [ctb],
+  R Core Team [ctb]
+Maintainer: Leo N. Geppert <geppert@statistik.uni-dortmund.de>
+Description: Frequentist and Bayesian linear regression for large data sets. Useful 
+    when the data does not fit into memory (for both frequentist and Bayesian regression), 
+    to make running time manageable (mainly for Bayesian regression), and to reduce 
+    the total running time because of reduced or less severe memory-spillover into 
+    the virtual memory. This is an implementation of Merge & Reduce for linear regression
+    as described in Geppert, L.N., Ickstadt, K., Munteanu, A., & Sohler, C. (2020).
+    'Streaming statistical models via Merge & Reduce'. International Journal of
+    Data Science and Analytics, 1-17, <doi:10.1007/s41060-020-00226-0>.
+Depends: R (>= 4.0.0), Rcpp (>= 1.0.5),
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 2.3.2),
+Imports: data.table (>= 1.12.8),
+Enhances: rstan (>= 2.19.3),
+NeedsCompilation: no
+Packaged: 2020-09-13 15:47:51 UTC; leo
+Repository: CRAN
+Date/Publication: 2020-09-22 08:20:02 UTC

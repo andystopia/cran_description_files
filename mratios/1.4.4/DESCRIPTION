@@ -1,0 +1,26 @@
+Package: mratios
+Type: Package
+Title: Ratios of Coefficients in the General Linear Model
+Version: 1.4.4
+Date: 2025-01-08
+Authors@R: c(person("Gemechis", "Djira", role="aut"),
+ person("Mario","Hasler", role="aut"),
+ person("Daniel", "Gerhard", role="aut"), 
+ person("Lawrence", "Segbehoe", role="aut"),
+ person("Frank","Schaarschmidt", role=c("aut","cre"), email="schaarschmidt@biostat.uni-hannover.de"))
+Author: Gemechis Djira [aut],
+  Mario Hasler [aut],
+  Daniel Gerhard [aut],
+  Lawrence Segbehoe [aut],
+  Frank Schaarschmidt [aut, cre]
+Maintainer: Frank Schaarschmidt <schaarschmidt@biostat.uni-hannover.de>
+Depends: R (>= 2.12.0)
+Suggests: nlme
+Imports: mvtnorm, multcomp, survival, survPresmooth, stats
+Description: Performs (simultaneous) inferences for ratios of linear combinations of coefficients in the general linear model, linear mixed model, and for quantiles in a one-way layout. Multiple comparisons and simultaneous confidence interval estimations can be performed for ratios of treatment means in the normal one-way layout with homogeneous and heterogeneous treatment variances, according to Dilba et al. (2007) <https://cran.r-project.org/doc/Rnews/Rnews_2007-1.pdf> and Hasler and Hothorn (2008) <doi:10.1002/bimj.200710466>. Confidence interval estimations for ratios of linear combinations of linear model parameters like in (multiple) slope ratio and parallel line assays can be carried out. Moreover, it is possible to calculate the sample sizes required in comparisons with a control based on relative margins. For the simple two-sample problem, functions for a t-test for ratio-formatted hypotheses and the corresponding confidence interval are provided assuming homogeneous or heterogeneous group variances.
+License: GPL-2
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2025-01-09 10:16:37 UTC; Schaarschmidt
+Repository: CRAN
+Date/Publication: 2025-01-10 16:10:01 UTC

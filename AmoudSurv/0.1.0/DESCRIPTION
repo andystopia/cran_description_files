@@ -1,0 +1,30 @@
+Package: AmoudSurv
+Type: Package
+Title: Tractable Parametric Odds-Based Regression Models
+Authors@R: c(person(given = "Abdisalam", family = "Hassan Muse",
+        role = c("aut", "cre"), email =
+        "abdisalam.h.muse@gmail.com", comment = c(ORCID = "0000-0003-4905-0044")),person(given = "Samuel",
+        family = "Mwalili", role = c("aut","ctb"), email =
+        "samuel.mwalili@gmail.com"), person(given = "Oscar",
+        family = "Ngesa", role = c("aut","ctb"), email =
+        "oscanges@gmail.com"),person(given = "Christophe",
+        family = "Chesneau", role = c("aut","ctb"), email =
+        "christophe.chesneau@gmail.com"))
+Version: 0.1.0
+Maintainer: Abdisalam Hassan Muse <abdisalam.h.muse@gmail.com>
+Description: Fits tractable fully parametric odds-based regression models for survival data, including proportional odds (PO), accelerated failure time (AFT), accelerated odds (AO), and General Odds (GO) models in overall survival frameworks. Given at least an R function specifying the survivor, hazard rate and cumulative distribution functions, any user-defined parametric distribution can be fitted. We applied and evaluated a minimum of seventeen (17) various baseline distributions that can handle different failure rate shapes for each of the four different proposed odds-based regression models. For more information see Bennet et al., (1983) <doi:10.1002/sim.4780020223>, and Muse et al., (2022) <doi:10.1016/j.aej.2022.01.033>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: AHSurv, flexsurv, pracma, stats, stats4
+Depends: R (>= 2.10)
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-09-07 22:05:23 UTC; Admin
+Author: Abdisalam Hassan Muse [aut, cre]
+    (<https://orcid.org/0000-0003-4905-0044>),
+  Samuel Mwalili [aut, ctb],
+  Oscar Ngesa [aut, ctb],
+  Christophe Chesneau [aut, ctb]
+Repository: CRAN
+Date/Publication: 2022-09-08 09:12:56 UTC

@@ -1,0 +1,73 @@
+Package: creditr
+Version: 0.6.2
+Date: 2024-12-15
+Title: Credit Default Swaps
+Authors@R: c(
+      person(given = "Yanrong", 
+             family = "Song", 
+             role = c("aut", "cre"), 
+             email = "yrsong129@gmail.com"),
+      person(given = "Zijie", 
+             family = "Zhu", 
+             role = "aut", 
+             email = "zijie.miller.zhu@gmail.com"),
+      person(given = "David", 
+             family = "Kane", 
+             role = "aut", 
+             email = "dave.kane@gmail.com"),
+      person(given = "Heidi", 
+             family = "Chen", 
+             role = "aut", 
+             email = "s.heidi.chen@gmail.com"),
+      person(given = "Yuanchu", 
+             family = "Dang", 
+             role = "aut", 
+             email = "yuanchu.dang@gmail.com"),
+      person(given = "Yang", 
+             family = "Lu", 
+             role = "aut", 
+             email = "yang.lu2014@gmail.com"),
+      person(given = "Kanishka", 
+             family = "Malik", 
+             role = "aut", 
+             email = "kanishkamalik@gmail.com"),
+      person(given = "Skylar", 
+             family = "Smith", 
+             role = "aut", 
+             email = "sws2@williams.edu"),
+      person(given = "International Swaps and Derivatives Association", 
+             role = "cph", 
+             comment = "Copyright holder of the free CDS standard model code used in this package")
+  )
+Depends: R (>= 3.1.0)
+Imports: utils, quantmod, devtools, methods, Rcpp (>= 0.10.6), RCurl,
+        XML, zoo, xts
+LinkingTo: Rcpp
+Suggests: testthat
+License: file LICENSE
+URL: https://github.com/yanrong-stacy-song/creditr
+Description: Price credit default swaps using
+             'C' code from the International Swaps and Derivatives
+             Association CDS Standard Model. See
+             <https://www.cdsmodel.com/cdsmodel/documentation.html>
+             for more information about the model and 
+             <https://www.cdsmodel.com/cdsmodel/cds-disclaimer.html>
+             for license details for the 'C' code.
+LazyData: true
+Repository: CRAN
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-12-19 03:11:31 UTC; milz
+Author: Yanrong Song [aut, cre],
+  Zijie Zhu [aut],
+  David Kane [aut],
+  Heidi Chen [aut],
+  Yuanchu Dang [aut],
+  Yang Lu [aut],
+  Kanishka Malik [aut],
+  Skylar Smith [aut],
+  International Swaps and Derivatives Association [cph] (Copyright holder
+    of the free CDS standard model code used in this package)
+Maintainer: Yanrong Song <yrsong129@gmail.com>
+Date/Publication: 2024-12-19 21:00:02 UTC

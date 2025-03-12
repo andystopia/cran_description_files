@@ -1,0 +1,38 @@
+Package: prinvars
+Type: Package
+Title: Principal Variables
+Version: 1.0.0
+Authors@R: c(
+        person(
+            given = "Jan O.", 
+            family = "Bauer", 
+            email = "", 
+            role = c("aut")
+        ),
+        person(
+            given = "Ron",
+            family = "Holzapfel",
+            email = "ronholzapfel@outlook.de",
+            role = c("aut", "cre")
+        )
+    )
+Description: Provides methods for reducing the number of features within a data set. See Bauer JO (2021) <doi:10.1145/3475827.3475832> and Bauer JO, Drabant B (2021) <doi:10.1016/j.jmva.2021.104754> for more information on principal loading analysis.
+License: MIT + file LICENSE
+Imports: methods, Rdpack, elasticnet, PMA
+RdMacros: Rdpack
+Encoding: UTF-8
+URL: https://github.com/Ronho/prinvars
+BugReports: https://github.com/Ronho/prinvars/issues
+RoxygenNote: 7.2.1
+Collate: 'block.R' 'cor.R' 'explained-variance.R' 'get-blocks.R'
+        'thresholding.R' 'scale.R' 'utils.R' 'pla.R'
+        'prinvars-package.R'
+Suggests: testthat (>= 3.0.0), AER
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-01-09 09:20:26 UTC; Qunor
+Author: Jan O. Bauer [aut],
+  Ron Holzapfel [aut, cre]
+Maintainer: Ron Holzapfel <ronholzapfel@outlook.de>
+Repository: CRAN
+Date/Publication: 2023-01-09 09:50:09 UTC

@@ -1,0 +1,28 @@
+Package: gridGraphviz
+Version: 0.3-1
+Depends: R (>= 2.15.0), grid, graph, Rgraphviz
+Imports: methods
+Suggests: gridSVG
+SystemRequirements: graphviz
+Title: Drawing Graphs with 'grid'
+Authors@R: c(person(given="Paul", family="Murrell", 
+	               email="p.murrell@auckland.ac.nz", role=c("cre","aut")), 
+		person(given="Ashley Noel", family="Hinton", 
+		       email="ahin017@aucklanduni.ac.nz", role="aut"))
+Description: Functions for drawing node-and-edge graphs that have been 
+              laid out by 'graphviz'.  This provides an alternative 
+              rendering to that provided by the 'Rgraphviz' package, with
+              two main advantages:  the rendering provided by 'gridGraphviz'
+              should be more similar to what 'graphviz' itself would draw;
+              and rendering with 'grid' allows for post-hoc customisations
+              using the named viewports and grobs that 'gridGraphviz'
+              produces.
+License: GPL (>= 2)
+URL: https://r-forge.r-project.org/projects/gridgraph/
+NeedsCompilation: no
+Packaged: 2022-04-10 22:18:22 UTC; pmur002
+Author: Paul Murrell [cre, aut],
+  Ashley Noel Hinton [aut]
+Maintainer: Paul Murrell <p.murrell@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2022-04-11 00:02:29 UTC

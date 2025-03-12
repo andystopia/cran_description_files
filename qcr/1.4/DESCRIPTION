@@ -1,0 +1,44 @@
+Package: qcr
+Type: Package
+Title: Quality Control Review
+Version: 1.4
+Date: 2022-02-15
+Authors@R: c(
+      person("Miguel","Flores", , "ma.flores@outlook.com", role = c("aut", "cre"), 
+      comment = c(ORCID = "0000-0002-7742-1247")),
+      person("Ruben", "Fernandez-Casal", , "rubenfcasal@gmail.com", role = "aut", 
+      comment = c(ORCID = "0000-0002-5785-3739")),
+			person("Salvador", "Naya", role="aut"),
+			person("Javier", "Tarrio-Saavedra", role="aut")
+      )      
+Maintainer: Miguel Flores <ma.flores@outlook.com>
+Depends: R (>= 2.10), qcc, fda.usc, mvtnorm, MASS
+Suggests: rmarkdown, knitr
+Description: Univariate and multivariate SQC tools that completes and increases
+    the SQC techniques available in R. Apart from integrating different R packages 
+    devoted to SQC ('qcc','MSQC'), provides nonparametric tools that are highly 
+    useful when Gaussian assumption is not met. 
+    This package computes standard univariate control charts for individual measurements, 
+    'X-bar', 'S', 'R', 'p', 'np', 'c', 'u', 'EWMA' and 'CUSUM'. In addition, it 
+    includes functions to perform multivariate control charts such as 'Hotelling T2', 
+    'MEWMA' and 'MCUSUM'. As representative feature, multivariate nonparametric 
+    alternatives based on data depth are implemented in this package: 'r', 'Q' and 
+    'S' control charts. In addition, Phase I and II control charts for functional 
+    data are included. This package also allows the estimation of the most complete 
+    set of capability indices from first to fourth generation, covering the nonparametric 
+    alternatives, and performing the corresponding capability analysis graphical outputs,
+    including the process capability plots. See Flores et al. (2021) <doi:10.32614/RJ-2021-034>.
+License: GPL (>= 2)
+URL: https://github.com/mflores72000/qcr
+BugReports: https://github.com/mflores72000/qcr/issues
+LazyData: yes
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-02-25 17:54:54 UTC; ruben.fcasal
+Repository: CRAN
+Date/Publication: 2022-03-02 09:00:06 UTC
+Author: Miguel Flores [aut, cre] (<https://orcid.org/0000-0002-7742-1247>),
+  Ruben Fernandez-Casal [aut] (<https://orcid.org/0000-0002-5785-3739>),
+  Salvador Naya [aut],
+  Javier Tarrio-Saavedra [aut]

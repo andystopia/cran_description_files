@@ -1,0 +1,24 @@
+Package: deflist
+Type: Package
+Title: Deferred List - A Read-Only List-Like Object with Deferred
+        Access
+Version: 0.2.0
+Authors@R: person("Bradley", "Buchsbaum", email = "brad.buchsbaum@gmail.com", role = c("aut", "cre"))
+Description: Implements the 'deflist' class, a read-only list-like object that accesses its elements via a function.
+    The 'deflist' class can be used to model deferred access to data or computations by routing indexed list access to a function.
+    This approach is particularly useful when sequential list-like access to data is required but holding all the data in memory at once is not feasible.
+    The package also provides utilities for memoisation and caching to optimize access to frequently requested elements.
+License: LGPL (>= 2.1)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: purrr, memoise, rlang, assertthat
+Suggests: testthat (>= 3.0.0), covr, knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://bbuchsbaum.github.io/deflist/
+NeedsCompilation: no
+Packaged: 2023-04-26 13:35:29 UTC; bbuchsbaum
+Author: Bradley Buchsbaum [aut, cre]
+Maintainer: Bradley Buchsbaum <brad.buchsbaum@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-27 12:52:35 UTC

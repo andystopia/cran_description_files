@@ -1,0 +1,40 @@
+Package: ulrb
+Type: Package
+Title: Unsupervised Learning Based Definition of Microbial Rare
+        Biosphere
+Version: 0.1.5
+Authors@R: c(
+    person("Francisco", "Pascoal",,"fpascoal1996@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0000-0003-2315-358X")),
+    person("Paula", "Branco",,"paobranco@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0002-9917-3694")),
+    person("Luís", "Torgo",,"ltorgo@dal.ca", role = c("aut"), comment = c(ORCID = "0000-0002-6892-8871")),
+    person("Rodrigo", "Costa",,"rodrigoscosta@tecnico.ulisboa.pt", role = c("aut"), comment = c(ORCID = "0000-0002-5932-4101")),
+    person("Catarina", "Magalhães",,"catarinamagalhaes1972@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0001-9576-2398")))
+Maintainer: Francisco Pascoal <fpascoal1996@gmail.com>
+Date: 2024-06-18
+Description: A tool to define rare biosphere. 'ulrb' solves the problem of the 
+    definition of rarity by replacing arbitrary thresholds with an unsupervised machine 
+    learning algorithm (partitioning around medoids, or k-medoids). This algorithm 
+    works for any type of microbiome data, provided there is a species abundance table.
+    For validation of this method to different species abundance tables see Pascoal et al, 2024 (in peer-review).
+    This method also works for non-microbiome data.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, stringr, testthat (>= 3.0.0), vegan
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+Imports: cluster, dplyr, ggplot2, purrr, rlang, stats, tidyr,
+        clusterSim, gridExtra
+VignetteBuilder: knitr
+URL: https://pascoalf.github.io/ulrb/
+BugReports: https://github.com/pascoalf/ulrb/issues
+NeedsCompilation: no
+Packaged: 2024-06-18 09:37:13 UTC; fpascoal
+Author: Francisco Pascoal [aut, cre] (<https://orcid.org/0000-0003-2315-358X>),
+  Paula Branco [aut] (<https://orcid.org/0000-0002-9917-3694>),
+  Luís Torgo [aut] (<https://orcid.org/0000-0002-6892-8871>),
+  Rodrigo Costa [aut] (<https://orcid.org/0000-0002-5932-4101>),
+  Catarina Magalhães [aut] (<https://orcid.org/0000-0001-9576-2398>)
+Repository: CRAN
+Date/Publication: 2024-06-18 10:40:02 UTC

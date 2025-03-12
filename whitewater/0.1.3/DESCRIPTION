@@ -1,0 +1,29 @@
+Package: whitewater
+Title: Parallel Processing Options for Package 'dataRetrieval'
+Version: 0.1.3
+Authors@R: 
+    person(given = "Josh",
+           family = "Erickson",
+           role = c('aut', 'cre', 'cph'),
+           email = "joshualerickson@gmail.com"
+           )
+Description: Provides methods for retrieving United States Geological Survey (USGS) water data using sequential and parallel processing (Bengtsson, 2022 <doi:10.32614/RJ-2021-048>). In addition to parallel methods, data wrangling and additional statistical attributes are provided. 
+URL: https://github.com/joshualerickson/whitewater/,
+        https://joshualerickson.github.io/whitewater/
+BugReports: https://github.com/joshualerickson/whitewater/issues/
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: dataRetrieval, dplyr, cli, crayon, furrr, httr, plyr, purrr,
+        stringr, usethis, lubridate, readr, tidyr, future
+Suggests: ggplot2, covr, rmarkdown, knitr, ggfx, broom, patchwork,
+        jsonlite, Kendall, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.4.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-04-01 17:31:19 UTC; joshu
+Author: Josh Erickson [aut, cre, cph]
+Maintainer: Josh Erickson <joshualerickson@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-01 18:00:02 UTC

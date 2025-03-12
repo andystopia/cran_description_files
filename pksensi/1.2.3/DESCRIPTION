@@ -1,0 +1,46 @@
+Package: pksensi
+Title: Global Sensitivity Analysis in Physiologically Based Kinetic
+        Modeling
+Version: 1.2.3
+Authors@R: 
+    c(person(given = "Nan-Hung", 
+             family = "Hsieh", 
+             role = c("aut", "cre"),
+             email = "d99622005@ntu.edu.tw",
+             comment = c(ORCID = "0000-0003-0163-2766")),
+      person(given = "Brad", 
+             family = "Reisfeld",
+             role = "ctb", 
+             comment = c(ORCID = "0000-0003-1310-1495")),
+      person(given = "Weihsueh A.", 
+             family =  "Chiu", 
+             role = "ctb", 
+             comment = c(ORCID = "0000-0002-7575-2368")))
+Description: Applying the global sensitivity analysis workflow to investigate 
+    the parameter uncertainty and sensitivity in physiologically based 
+    kinetic (PK) models, especially the physiologically based 
+    pharmacokinetic/toxicokinetic model with multivariate outputs. 
+    The package also provides some functions to check the convergence 
+    and sensitivity of model parameters. The workflow was first mentioned 
+    in Hsieh et al., (2018) <doi:10.3389/fphar.2018.00588>, then further 
+    refined (Hsieh et al., 2020 <doi:10.1016/j.softx.2020.100609>).                
+License: GPL-3 | file LICENSE
+URL: https://github.com/nanhung/pksensi,
+        https://nanhung.github.io/pksensi/
+BugReports: https://github.com/nanhung/pksensi/issues
+Depends: R (>= 4.1)
+Imports: ggplot2, data.table, deSolve, foreach, parallel, doParallel
+Suggests: covr, knitr, httk, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-09-21 16:56:17 UTC; lanhsieh
+Author: Nan-Hung Hsieh [aut, cre] (<https://orcid.org/0000-0003-0163-2766>),
+  Brad Reisfeld [ctb] (<https://orcid.org/0000-0003-1310-1495>),
+  Weihsueh A. Chiu [ctb] (<https://orcid.org/0000-0002-7575-2368>)
+Maintainer: Nan-Hung Hsieh <d99622005@ntu.edu.tw>
+Repository: CRAN
+Date/Publication: 2022-09-21 18:20:02 UTC

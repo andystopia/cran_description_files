@@ -1,0 +1,31 @@
+Package: doParabar
+Title: 'foreach' Parallel Adapter for 'parabar' Backends
+Version: 1.0.2
+Authors@R: 
+    person(given = "Mihai",
+           family = "Constantin",
+           role = c("aut", "cre"),
+           email = "mihai@mihaiconstantin.com",
+           comment = c(ORCID = "0000-0002-6460-0107"))
+Description: Provides a 'foreach' parallel adapter for 'parabar' backends. This
+    package offers a minimal implementation of the '%dopar%' operator, enabling
+    users to run 'foreach' loops in parallel, leveraging the parallel and
+    progress-tracking capabilities of the 'parabar' package. Learn more about
+    'parabar' and 'doParabar' at <https://parabar.mihaiconstantin.com>.
+License: MIT + file LICENSE
+URL: https://github.com/mihaiconstantin/doParabar,
+        https://parabar.mihaiconstantin.com/articles/foreach
+BugReports: https://github.com/mihaiconstantin/doParabar/issues
+Imports: parabar, foreach, iterators, utils
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Collate: 'doPar.R' 'doParabar-package.R' 'helpers.R' 'logo.R'
+        'registerDoParabar.R'
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-12-18 10:34:28 UTC; mihai
+Author: Mihai Constantin [aut, cre] (<https://orcid.org/0000-0002-6460-0107>)
+Maintainer: Mihai Constantin <mihai@mihaiconstantin.com>
+Repository: CRAN
+Date/Publication: 2024-12-19 16:00:05 UTC

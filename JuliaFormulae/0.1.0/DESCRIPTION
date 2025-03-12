@@ -1,0 +1,26 @@
+Package: JuliaFormulae
+Title: Translate R Regression Model Formulae to 'Julia' Syntax
+Version: 0.1.0
+Authors@R: 
+    person("June", "Choe", , "jchoe001@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0701-921X"))
+Description: Metaprogramming utilities for converting R regression model
+    formulae to equivalents in 'Julia' <doi:10.1137/141000671>, via
+    modifications to the abstract syntax tree. Supports translations in
+    zero correlation random effects syntax, protection of expressions to
+    be evaluated as-is, interaction terms, and more. Accepts strings or R
+    formula objects and returns modified R formula objects where
+    possible (or a modified string, if not a valid formula in R).
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0)
+Imports: rrapply, stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-21 11:58:43 UTC; jchoe
+Author: June Choe [aut, cre] (<https://orcid.org/0000-0002-0701-921X>)
+Maintainer: June Choe <jchoe001@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-24 12:10:09 UTC

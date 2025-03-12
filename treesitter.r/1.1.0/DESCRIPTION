@@ -1,0 +1,31 @@
+Package: treesitter.r
+Title: 'R' Grammar for 'Tree-Sitter'
+Version: 1.1.0
+Authors@R: c(
+    person("Davis", "Vaughan", , "davis@posit.co", role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd")),
+    person("Tree-sitter authors", role = "cph",
+           comment = "Tree-sitter C headers and parser.c")
+  )
+Description: Provides bindings to an 'R' grammar for 'Tree-sitter', to be
+    used alongside the 'treesitter' package. 'Tree-sitter' builds concrete
+    syntax trees for source files of any language, and can efficiently
+    update those syntax trees as the source file is edited.
+License: MIT + file LICENSE
+URL: https://github.com/r-lib/tree-sitter-r
+BugReports: https://github.com/r-lib/tree-sitter-r/issues
+Depends: R (>= 4.3.0)
+Suggests: testthat (>= 3.0.0), treesitter
+Config/build/bootstrap: TRUE
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-09-06 20:41:54 UTC; davis
+Author: Davis Vaughan [aut, cre],
+  Posit Software, PBC [cph, fnd],
+  Tree-sitter authors [cph] (Tree-sitter C headers and parser.c)
+Maintainer: Davis Vaughan <davis@posit.co>
+Repository: CRAN
+Date/Publication: 2024-09-06 21:00:02 UTC

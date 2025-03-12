@@ -1,0 +1,23 @@
+Package: Ricrt
+Type: Package
+Title: Randomization Inference of Clustered Randomized Trials
+Version: 0.1.0
+Authors@R: c(person("Yang", "Dong", email = "flankado@sas.upenn.edu", role = c("aut", "cph", "cre")), person("Bingkai", "Wang", email = "bingkai@wharton.upenn.edu", role = c("aut", "cph")), person("Dylan", "Small", email = "dsmall@wharton.upenn.edu", role = c("aut", "cph")))
+Description: Methods for randomization inference in group-randomized trials. Specifically, it can be used to analyze the treatment effect of stratified data with multiple clusters in each stratum with treatment given on cluster level. 
+    User may also input as many covariates as they want to fit the data. Methods are described by Dylan S Small et al., (2012) <doi:10.1198/016214507000000897>.
+License: MIT + file LICENSE
+Imports: dplyr, randomForest, tidyverse, stats, SuperLearner, glmnet,
+        rlang, Rdpack
+RdMacros: Rdpack
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-02-21 04:21:35 UTC; flankado
+Author: Yang Dong [aut, cph, cre],
+  Bingkai Wang [aut, cph],
+  Dylan Small [aut, cph]
+Maintainer: Yang Dong <flankado@sas.upenn.edu>
+Repository: CRAN
+Date/Publication: 2023-02-22 14:40:09 UTC

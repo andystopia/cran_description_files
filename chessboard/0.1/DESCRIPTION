@@ -1,0 +1,63 @@
+Package: chessboard
+Type: Package
+Title: Create Network Connections Based on Chess Moves
+Version: 0.1
+Authors@R: c(
+    person(given   = "Nicolas",
+           family  = "Casajus",
+           role    = c("aut", "cre", "cph"),
+           email   = "nicolas.casajus@fondationbiodiversite.fr",
+           comment = c(ORCID = "0000-0002-5537-5294")),
+    person(given   = "Erica",
+           family  = "Rievrs Borges",
+           role    = "aut",
+           email   = "erica.rievrs@fondationbiodiversite.fr",
+           comment = c(ORCID = "0000-0001-7751-6265")),
+    person(given   = "Eric",
+           family  = "Tabacchi",
+           role    = "aut",
+           email   = "eric.tabacchi@univ-tlse3.fr",
+           comment = c(ORCID = "0000-0001-7729-4439")),
+    person(given   = "Guillaume",
+           family  = "Fried",
+           role    = "aut",
+           email   = "guillaume.fried@anses.fr",
+           comment = c(ORCID = "0000-0002-3653-195X")),
+    person(given   = "Nicolas",
+           family  = "Mouquet",
+           role    = "aut",
+           email   = "nicolas.mouquet@cnrs.fr",
+           comment = c(ORCID = "0000-0003-1840-6984")))
+Description: Provides functions to work with directed (asymmetric) and 
+    undirected (symmetric) spatial networks. It makes the creation of 
+    connectivity matrices easier, i.e. a binary matrix of dimension n x n, where 
+    n is the number of nodes (sampling units) indicating the presence (1) or  
+    the absence (0) of an edge (link) between pairs of nodes. Different network
+    objects can be produced by 'chessboard': node list, neighbor list, edge 
+    list, connectivity matrix. It can also produce objects that will be used 
+    later in Moran's Eigenvector Maps (Dray et al. (2006) <doi:10.1016/j.ecolmodel.2006.02.015>)
+    and Asymetric Eigenvector Maps (Blanchet et al. (2008) <doi:10.1016/j.ecolmodel.2008.04.001>), 
+    methods available in the package 'adespatial' (Dray et al. (2023) 
+    <https://CRAN.R-project.org/package=adespatial>). This work is part of the 
+    FRB-CESAB working group Bridge 
+    <https://www.fondationbiodiversite.fr/en/the-frb-in-action/programs-and-projects/le-cesab/bridge/>.
+URL: https://github.com/frbcesab/chessboard
+BugReports: https://github.com/frbcesab/chessboard/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: dplyr, ggplot2, magrittr, rlang, sf, tidyr
+Suggests: knitr, igraph, patchwork, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-10-13 18:10:41 UTC; Nicolas
+Author: Nicolas Casajus [aut, cre, cph]
+    (<https://orcid.org/0000-0002-5537-5294>),
+  Erica Rievrs Borges [aut] (<https://orcid.org/0000-0001-7751-6265>),
+  Eric Tabacchi [aut] (<https://orcid.org/0000-0001-7729-4439>),
+  Guillaume Fried [aut] (<https://orcid.org/0000-0002-3653-195X>),
+  Nicolas Mouquet [aut] (<https://orcid.org/0000-0003-1840-6984>)
+Maintainer: Nicolas Casajus <nicolas.casajus@fondationbiodiversite.fr>
+Repository: CRAN
+Date/Publication: 2023-10-14 08:00:02 UTC

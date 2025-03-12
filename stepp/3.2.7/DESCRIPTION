@@ -1,0 +1,32 @@
+Package: stepp
+Type: Package
+Title: Subpopulation Treatment Effect Pattern Plot (STEPP)
+Version: 3.2.7
+Date: 2024-06-02
+Author: Wai-ki Yip [aut, cre],
+  Ann Lazar [ctb],
+  David Zahrieh [ctb],
+  Chip Cole [ctb],
+  Ann Lazar [ctb],
+  Marco Bonetti [ctb],
+  Victoria Wang [ctb],
+  William Barcella [ctb],
+  Sergio Venturini [aut]
+  Richard Gelber [ctb]
+Maintainer: Wai-ki Yip <yuser86@yahoo.com>
+Imports: rstudioapi, scales
+Depends: methods, car, survival, splines
+Collate: 'zzz.R' 'utility.R' 'stutil.R' 'stwin.R' 'stsubpop.R'
+        'stmodelKM.R' 'stmodelCI.R' 'stmodelGLM.R' 'stmodel.R'
+        'steppes.R' 'stepp.R'
+Description: A method to explore the treatment-covariate interactions in survival or generalized 
+	linear model (GLM) for continuous, binomial and count data arising from two or more treatment 
+	arms of a clinical trial. A permutation distribution approach to inference is implemented, 
+	based on permuting the covariate values within each treatment group.
+License: GPL (>= 2)
+URL: https://www.r-project.org
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2024-06-03 00:38:51 UTC; wkyip
+Repository: CRAN
+Date/Publication: 2024-06-03 02:20:02 UTC

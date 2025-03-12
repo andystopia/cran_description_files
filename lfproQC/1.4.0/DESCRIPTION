@@ -1,0 +1,33 @@
+Package: lfproQC
+Type: Package
+Title: Quality Control for Label-Free Proteomics Expression Data
+Version: 1.4.0
+Authors@R: c(person("Kabilan", "S", role = c("aut", "cre"),   email = "kabilan151414@gmail.com"), person("Dr", "Shashi Bhushan Lal",  role = c("aut", "ths"), email = "sb.lal@icar.gov.in"), person("Dr", "Sudhir Srivastava", role = c("aut", "ths"), email = "Sudhir.Srivastava@icar.gov.in"), person("Dr", "Krishna Kumar Chaturvedi", role = c("ths"), email = "kk.chaturvedi@icar.gov.in" ), person("Dr", "Yasin Jeshima K", role = c("ths"), email = "yasinlab1.icar@gmail.com"), person("Dr", "Ramasubramanian V", role = c("ths"), email = "R.Subramanian@icar.gov.in"), person("Dr", "Girish Kumar Jha", role = c("ctb"), email = "girish.jha@icar.gov.in"))
+Maintainer: Kabilan S <kabilan151414@gmail.com>
+Description: Label-free bottom-up proteomics expression data is often affected by data heterogeneity and missing values. Normalization and missing value imputation are commonly used techniques to address these issues and make the dataset suitable for further downstream analysis. This package provides an optimal combination of normalization and imputation methods for the dataset. The package utilizes three normalization methods and three imputation methods.The statistical evaluation measures named pooled co-efficient of variance, pooled estimate of variance and pooled median absolute deviation are used for selecting the best combination of normalization and imputation method for the given dataset. The user can also visualize the results by using various plots available in this package. The user can also perform the differential expression  analysis between two sample groups with the function included in this package. The chosen three normalization methods, three imputation methods and three evaluation measures were chosen for this study based on the research papers published by	Välikangas et al. (2016) <doi:10.1093/bib/bbw095>, Jin et al. (2021) <doi:10.1038/s41598-021-81279-4> and Srivastava et al. (2023) <doi:10.2174/1574893618666230223150253>.
+Imports: VIM, dplyr, limma, matrixStats, pcaMethods, vsn, reshape2,
+        laeken, ggplot2, Hmisc, reshape, stats, tidyr, magrittr,
+        plotly, MASS, tidyselect
+Suggests: knitr, plyr, rmarkdown, testthat (>= 3.0.0), tibble
+License: GPL-3
+URL: https://github.com/kabilansbio/lfproQC,
+        https://dabiniasri.shinyapps.io/lfproQC,
+        http://omics.icar.gov.in/lfproQC
+BugReports: https://github.com/kabilansbio/lfproQC/issues
+Encoding: UTF-8
+Depends: R (>= 4.2)
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-10-10 12:49:22 UTC; kabil
+Author: Kabilan S [aut, cre],
+  Dr Shashi Bhushan Lal [aut, ths],
+  Dr Sudhir Srivastava [aut, ths],
+  Dr Krishna Kumar Chaturvedi [ths],
+  Dr Yasin Jeshima K [ths],
+  Dr Ramasubramanian V [ths],
+  Dr Girish Kumar Jha [ctb]
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Repository: CRAN
+Date/Publication: 2024-10-10 13:10:02 UTC

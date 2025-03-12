@@ -1,0 +1,34 @@
+Package: prozor
+Type: Package
+Title: Minimal Protein Set Explaining Peptide Spectrum Matches
+Version: 0.3.1
+Authors@R: c(person("Witold", "Wolski",
+        email = c("wewolski@gmail.com"),
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-6468-120X")))
+Description: Determine minimal protein set explaining
+    peptide spectrum matches. Utility functions for creating fasta amino acid databases with decoys and contaminants.
+    Peptide false discovery rate estimation for target decoy search results on psm, precursor, peptide and protein
+    level. Computing dynamic swath window sizes based on MS1 or MS2 signal distributions.
+License: GPL-3
+Imports: AhoCorasickTrie, docopt, Matrix, methods, purrr, readr, rlang,
+        seqinr, stringr, dplyr
+Suggests: knitr, rmarkdown,
+URL: https://github.com/protviz/prozor
+BugReports: https://github.com/protviz/prozor/issues
+Repository: CRAN
+RoxygenNote: 7.1.2
+Depends: R (>= 3.1.0)
+VignetteBuilder: knitr
+Collate: 'annotatePeptides.R' 'readjustWindow.R' 'cdsw.R'
+        'computeFDR.R' 'createDecoyDB.R' 'create_fgcz_fasta_db.R'
+        'greedy.R' 'hello.R' 'loadContaminantsFasta.R'
+        'prepareMatrix.R' 'readFasta.R' 'removeSignalPeptides.R'
+        'reverseSeq.R' 'writeFasta.R' 'zzz.R'
+biocViews: Software, MassSpectrometry, Proteomics,
+        ExperimentHubSoftware,
+NeedsCompilation: no
+Packaged: 2021-12-07 11:48:58 UTC; wolski
+Author: Witold Wolski [aut, cre] (<https://orcid.org/0000-0002-6468-120X>)
+Maintainer: Witold Wolski <wewolski@gmail.com>
+Date/Publication: 2021-12-07 16:20:02 UTC

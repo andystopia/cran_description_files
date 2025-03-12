@@ -1,0 +1,23 @@
+Package: spfa
+Type: Package
+Title: Semi-Parametric Factor Analysis
+Version: 1.0
+Date: 2023-04-25
+Authors@R: c(
+    person("Yang", family = "Liu", email = "yliu87@umd.edu", role = c("cre","aut")),
+    person("Weimeng", family = "Wang", email = "weimengbonnie@gmail.com", role = c("aut","ctb")))
+Maintainer: Yang Liu <yliu87@umd.edu>
+Description: Estimation, scoring, and plotting functions for the semi-parametric factor model proposed by Liu & Wang (2022) <doi:10.1007/s11336-021-09832-8> and Liu & Wang (2023) <arXiv:2303.10079>. Both the conditional densities of observed responses given the latent factors and the joint density of latent factors are estimated non-parametrically. Functional parameters are approximated by smoothing splines, whose coefficients are estimated by penalized maximum likelihood using an expectation-maximization (EM) algorithm. E- and M-steps can be parallelized on multi-thread computing platforms that support 'OpenMP'. Both continuous and unordered categorical response variables are supported.
+License: MIT + file LICENSE
+Imports: graphics, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+LazyData: true
+Encoding: UTF-8
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2023-05-26 00:43:04 UTC; wwang
+Author: Yang Liu [cre, aut],
+  Weimeng Wang [aut, ctb]
+Repository: CRAN
+Date/Publication: 2023-05-26 08:20:02 UTC

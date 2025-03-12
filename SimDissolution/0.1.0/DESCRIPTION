@@ -1,0 +1,16 @@
+Package: SimDissolution
+Type: Package
+Title: Modeling and Assessing Similarity of Drug Dissolutions Profiles
+Version: 0.1.0
+Author: Kathrin Moellenhoff
+Maintainer: Kathrin Moellenhoff <kathrin.moellenhoff@rub.de>
+Description: Implementation of a model-based bootstrap approach for testing whether two formulations are similar. The package provides a function for fitting a pharmacokinetic model to time-concentration data and comparing the results for all five candidate models regarding the Residual Sum of Squares (RSS). The candidate set contains a First order, Hixson-Crowell, Higuchi, Weibull and a logistic model. The assessment of similarity implemented in this package is performed regarding the maximum deviation of the profiles. See Moellenhoff et al. (2018) <doi:10.1002/sim.7689> for details.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: dplyr, alabama, mvtnorm, graphics
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-09-20 06:48:20 UTC; Kathrin
+Repository: CRAN
+Date/Publication: 2019-09-27 10:20:11 UTC

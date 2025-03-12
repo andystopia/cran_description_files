@@ -1,0 +1,28 @@
+Package: einsum
+Type: Package
+Title: Einstein Summation
+Version: 0.1.2
+Authors@R: person("Constantin", "Ahlmann-Eltze", email = "artjom31415@googlemail.com", 
+               role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3762-068X"))
+Description: The summation notation suggested by Einstein (1916) <doi:10.1002/andp.19163540702> is a 
+  concise mathematical notation that implicitly sums over repeated indices of n-dimensional arrays. Many ordinary
+  matrix operations (e.g. transpose, matrix multiplication, scalar product, 'diag()', trace etc.)
+  can be written using Einstein notation. The notation is particularly convenient for 
+  expressing operations on arrays with more than two dimensions because the 
+  respective operators ('tensor products') might not have a standardized name.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: testthat, covr
+RdMacros: mathjaxr
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp
+Imports: Rcpp, glue, mathjaxr
+URL: https://const-ae.github.io/einsum/
+BugReports: https://github.com/const-ae/einsum/issues
+NeedsCompilation: yes
+Packaged: 2023-08-28 14:17:21 UTC; ahlmanne
+Author: Constantin Ahlmann-Eltze [aut, cre]
+    (<https://orcid.org/0000-0002-3762-068X>)
+Maintainer: Constantin Ahlmann-Eltze <artjom31415@googlemail.com>
+Repository: CRAN
+Date/Publication: 2023-08-28 14:40:03 UTC

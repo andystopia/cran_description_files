@@ -1,0 +1,27 @@
+Package: quantdr
+Type: Package
+Title: Dimension Reduction Techniques for Conditional Quantiles
+Version: 1.2.2
+Authors@R: person("Eliana", "Christou", email="echris15@uncc.edu",
+    role = c("aut", "cre"), comment = c(ORCID = "https://orcid.org/0000-0001-5044-0969"))
+Description: An implementation of dimension reduction techniques
+    for conditional quantiles. Nonparametric estimation of 
+    conditional quantiles is also available.  
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Imports: dr, KernSmooth, mvtnorm, quantreg
+Depends: R (>= 3.2.0)
+RoxygenNote: 7.1.1
+Collate: 'ValAR.R' 'bic_d.R' 'llqrcv.R' 'llqr.R' 'cqs.R'
+Suggests: ggplot2, knitr, rmarkdown, testthat, pracma, MASS,
+        PerformanceAnalytics, png
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+URL: https://github.com/elianachristou/quantdr
+BugReports: https://github.com/elianachristou/quantdr/issues
+NeedsCompilation: no
+Packaged: 2022-05-06 21:30:33 UTC; echris15
+Author: Eliana Christou [aut, cre] (<https://orcid.org/0000-0001-5044-0969>)
+Maintainer: Eliana Christou <echris15@uncc.edu>
+Repository: CRAN
+Date/Publication: 2022-05-09 09:10:02 UTC

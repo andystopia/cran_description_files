@@ -1,0 +1,35 @@
+Package: sweep
+Type: Package
+Title: Tidy Tools for Forecasting
+Version: 0.2.5
+Authors@R: c(
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut", "cre")),
+    person("Davis", "Vaughan", email = "dvaughan@business-science.io", role = c("aut"))
+  )
+Maintainer: Matt Dancho <mdancho@business-science.io>
+Description: 
+    Tidies up the forecasting modeling and prediction work flow, 
+    extends the 'broom' package 
+    with 'sw_tidy', 'sw_glance', 'sw_augment', and 'sw_tidy_decomp' functions 
+    for various forecasting models,
+    and enables converting 'forecast' objects to 
+    "tidy" data frames with 'sw_sweep'.
+URL: https://github.com/business-science/sweep
+BugReports: https://github.com/business-science/sweep/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3.0)
+Imports: broom (>= 0.5.6), dplyr (>= 1.0.0), forecast (>= 8.0),
+        lubridate (>= 1.6.0), tibble (>= 1.2), tidyr (>= 1.0.0), timetk
+        (>= 2.1.0), rlang, tidyverse, tidyquant
+Suggests: forcats, knitr, rmarkdown, testthat, purrr, readr, stringr,
+        scales, fracdiff
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-07-04 13:01:45 UTC; mdanc
+Author: Matt Dancho [aut, cre],
+  Davis Vaughan [aut]
+Repository: CRAN
+Date/Publication: 2023-07-06 12:40:02 UTC

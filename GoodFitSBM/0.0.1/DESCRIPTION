@@ -1,0 +1,40 @@
+Package: GoodFitSBM
+Title: Monte Carlo Goodness-of-Fit Tests for Stochastic Block Models
+Version: 0.0.1
+Authors@R: 
+    c(person("Soham", "Ghosh",
+    email = "sohamghosh@tamu.edu", 
+    role = c("aut", "cre")),
+    person("Somjit", "Roy",
+    email = "sroy_123@tamu.edu", 
+    role = "aut"),
+    person("Debdeep", "Pati",
+    email = "debdeep@stat.tamu.edu",
+    role = "aut"))
+Description: Performing goodness-of-fit tests for stochastic block models used to fit network data. Among the three variants discussed in Karwa et al. (2023) <doi:10.1093/jrsssb/qkad084>, goodness-of-fit test has been performed for the Erdos-Renyi (ER) and Beta versions. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/Roy-SR-007/GoodFitSBM
+BugReports: https://github.com/Roy-SR-007/GoodFitSBM/issues
+Imports: stats, igraph, utils, irlba
+Depends: R (>= 2.10)
+LazyData: true
+Collate: 'Bipartite_Walk.R' 'Estimation_BetaSBM.R' 'Estimation_Block.R'
+        'Estimation_ERSBM.R' 'Get_Directed_Piece.R'
+        'Get_Directed_Move_p1_ed.R'
+        'Get_Between_Blocks_Move_beta_SBM.R' 'as_arbitrary_directed.R'
+        'Get_Bidirected_Piece.R' 'Get_Bidirected_Move.R'
+        'Get_Induced_Subgraph.R' 'Get_Within_Blocks_beta_SBM.R'
+        'Get_Move_Beta_SBM.R' 'Get_Next_Network.R'
+        'Sampling_Graph_BetaSBM.R' 'TestStatistic_BetaSBM.R'
+        'GoFTest_BetaSBM.R' 'Sampling_Graph_ERSBM.R'
+        'TestStatistic_ERSBM.R' 'GoFTest_ERSBM.R' 'zachary.R'
+NeedsCompilation: no
+Packaged: 2024-02-22 18:09:10 UTC; sohamghosh
+Author: Soham Ghosh [aut, cre],
+  Somjit Roy [aut],
+  Debdeep Pati [aut]
+Maintainer: Soham Ghosh <sohamghosh@tamu.edu>
+Repository: CRAN
+Date/Publication: 2024-02-23 19:10:08 UTC

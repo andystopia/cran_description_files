@@ -1,0 +1,31 @@
+Package: pensynth
+Type: Package
+Title: Penalized Synthetic Control Estimation
+Version: 0.5.1
+Authors@R: c(
+    person("Erik-Jan", "van Kesteren", email = "e.vankesteren1@uu.nl",
+           role = c("cre", "aut"), comment = c(ORCID = "0000-0003-1548-1663")),
+    person("Isaac", "Slaughter", email = "is28@uw.edu", role = "ctb",
+           comment = c(ORCID = "0000-0002-1911-2374"))
+  )
+Description: Estimate penalized synthetic control models
+    and perform hold-out validation to determine their 
+    penalty parameter. This method is based on the work by
+    Abadie & L'Hour (2021) <doi:10.1080/01621459.2021.1971535>.
+    Penalized synthetic controls smoothly interpolate between 
+    one-to-one matching and the synthetic control method.
+License: MIT + file LICENSE
+URL: https://github.com/vankesteren/pensynth
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: clarabel, Matrix
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-03-28 10:28:13 UTC; erikj
+Author: Erik-Jan van Kesteren [cre, aut]
+    (<https://orcid.org/0000-0003-1548-1663>),
+  Isaac Slaughter [ctb] (<https://orcid.org/0000-0002-1911-2374>)
+Maintainer: Erik-Jan van Kesteren <e.vankesteren1@uu.nl>
+Repository: CRAN
+Date/Publication: 2024-03-28 15:10:02 UTC

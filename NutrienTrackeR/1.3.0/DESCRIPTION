@@ -1,0 +1,45 @@
+Package: NutrienTrackeR
+Type: Package
+Title: Food Composition Information and Dietary Assessment
+Version: 1.3.0
+Date: 2023-07-10
+Authors@R: c(
+    person("Andrea", "Rodriguez-Martinez", email = "andrea.rodriguez-martinez13@imperial.ac.uk", role = "aut"),
+    person("Rafael", "Ayala", email = "rafael.ayala@oist.jp", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9332-4623")),
+    person("Mark", "Balchunas", role = "aut"),
+    person("Daniel", "Gutiérrez-Del-Río", role = "aut", comment = c(ORCID = "0000-0002-4592-9345")),
+    person("Ting-Hua", "Chen", role = "aut", comment = c(ORCID="0000-0001-8104-0562")),
+    person("Yacine", "Debbabi", role = "aut"),
+    person("Lara", "Sellés Vidal", role = "aut", comment = c(ORCID="0000-0003-2537-6824"))
+    )
+Maintainer: Rafael Ayala <rafael.ayala@oist.jp>
+Contact: Andrea Rodriguez-Martinez
+        <andrea.rodriguez-martinez13@imperial.ac.uk>, Rafael Ayala
+        <rafael.ayala@oist.jp>
+Description: Provides a tool set for food information and dietary assessment. It 
+    uses food composition data from several reference databases, including: 'USDA' (United States), 
+    'CIQUAL' (France), 'BEDCA' (Spain), 'CNF' (Canada) and 'STFCJ' (Japan). 'NutrienTrackeR' calculates 
+    the intake levels for both macronutrient and micronutrients, and compares them with the recommended 
+    dietary allowances (RDA). It includes a number of visualization tools, such as time series 
+    plots of nutrient intake, and pie-charts showing the main foods contributing to the intake 
+    level of a given nutrient. A shiny app exposing the main functionalities of the package is also 
+    provided.
+License: GPL-3
+Depends: R(>= 3.5)
+Suggests: RUnit, knitr, BiocStyle, rmarkdown, BiocGenerics
+VignetteBuilder: knitr
+Imports: ggplot2, shiny
+NeedsCompilation: no
+LazyData: true
+Encoding: UTF-8
+Packaged: 2023-07-10 08:28:14 UTC; rafael
+Author: Andrea Rodriguez-Martinez [aut],
+  Rafael Ayala [aut, cre] (<https://orcid.org/0000-0002-9332-4623>),
+  Mark Balchunas [aut],
+  Daniel Gutiérrez-Del-Río [aut]
+    (<https://orcid.org/0000-0002-4592-9345>),
+  Ting-Hua Chen [aut] (<https://orcid.org/0000-0001-8104-0562>),
+  Yacine Debbabi [aut],
+  Lara Sellés Vidal [aut] (<https://orcid.org/0000-0003-2537-6824>)
+Repository: CRAN
+Date/Publication: 2023-07-10 20:00:04 UTC

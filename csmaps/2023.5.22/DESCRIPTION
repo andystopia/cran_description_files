@@ -1,0 +1,40 @@
+Package: csmaps
+Title: Preformatted Maps of Norway that Don't Need Geolibraries
+Version: 2023.5.22
+Authors@R: c(
+  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-6747-1726")
+  ),
+  person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut"), 
+    comment = c(ORCID = "0000-0003-0501-5909")
+  ),
+  person("Geonorge", role = c("ctb")),
+  person("CSIDS", email = "hello@csids.no", role = c("cph"))
+  )
+Description: Provides datasets containing preformatted maps of Norway at
+    the county, municipality, and ward (Oslo only) level for redistricting in 
+    2024, 2020, 2018, and 2017. Multiple layouts are provided (normal, split, 
+    and with an insert for Oslo), allowing the user to rapidly create choropleth
+    maps of Norway without any geolibraries.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+URL: https://www.csids.no/csmaps/, https://github.com/csids/csmaps
+BugReports: https://github.com/csids/csmaps/issues
+LazyData: true
+Imports: data.table, utils
+Suggests: testthat, knitr, rmarkdown, ggplot2, magrittr, ggrepel,
+        leaflet, sf, csdata (>= 2023.5.22)
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyDataCompression: xz
+NeedsCompilation: no
+Packaged: 2023-05-23 07:57:28 UTC; raw996
+Author: Richard Aubrey White [aut, cre]
+    (<https://orcid.org/0000-0002-6747-1726>),
+  Chi Zhang [aut] (<https://orcid.org/0000-0003-0501-5909>),
+  Geonorge [ctb],
+  CSIDS [cph]
+Maintainer: Richard Aubrey White <hello@rwhite.no>
+Repository: CRAN
+Date/Publication: 2023-05-23 08:50:07 UTC

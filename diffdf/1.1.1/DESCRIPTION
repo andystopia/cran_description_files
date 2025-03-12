@@ -1,0 +1,32 @@
+Package: diffdf
+Type: Package
+Title: Dataframe Difference Tool
+Version: 1.1.1
+Authors@R: c( 
+    person("Craig" ,"Gower-Page" , email = "craig.gower-page@roche.com" , role = c("cre","aut")),
+    person("Kieran", "Martin" , email = "kieran.martin@roche.com" , role = "aut")
+    )
+Description: Functions for comparing two data.frames against 
+    each other. The core functionality is to provide a detailed breakdown of any differences 
+    between two data.frames as well as providing utility functions to help narrow down the 
+    source of problems and differences.
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 3.1.2)
+Imports: tibble, assertthat, methods
+Suggests: testthat, lubridate, knitr, rmarkdown, purrr, dplyr, stringi,
+        stringr, devtools, covr, bit64
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+URL: https://gowerc.github.io/diffdf/,
+        https://github.com/gowerc/diffdf/
+Config/testthat/edition: 3
+BugReports: https://github.com/gowerc/diffdf/issues
+NeedsCompilation: no
+Packaged: 2024-09-24 16:38:01 UTC; gowerc
+Author: Craig Gower-Page [cre, aut],
+  Kieran Martin [aut]
+Maintainer: Craig Gower-Page <craig.gower-page@roche.com>
+Repository: CRAN
+Date/Publication: 2024-09-24 17:00:02 UTC

@@ -1,0 +1,33 @@
+Package: funneljoin
+Type: Package
+Title: Time-Based Joins to Analyze Sequences of Events
+Version: 0.2.0
+Authors@R: c(
+    person("Emily", "Robinson", email = "robinson.es@gmail.com", role = c("aut", "cre")),
+    person("Anthony", "Baker", email = "anthony@datacamp.com", role = c("aut")),
+    person("David", "Robinson", email = "admiral.david@gmail.com", role = c("aut")),
+    person("Jacqueline", "Nolis", email = "jacquelinenolis@outlook.com", role = c("art")))
+Depends: R (>= 2.10)
+Maintainer: Emily Robinson <robinson.es@gmail.com>
+Description: Time-based joins to analyze sequence of events, 
+    both in memory and out of memory. after_join() joins two 
+    tables of events, while funnel_start() and funnel_step() 
+    join events in the same table. With the type argument, you
+    can switch between different funnel types, like first-first
+    and last-firstafter.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, knitr, rmarkdown, tibble
+RoxygenNote: 7.2.1
+Imports: dplyr, glue, magrittr, broom, purrr, rlang, tidyr, methods,
+        forcats
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-03-21 19:35:45 UTC; emilyrobinson
+Author: Emily Robinson [aut, cre],
+  Anthony Baker [aut],
+  David Robinson [aut],
+  Jacqueline Nolis [art]
+Repository: CRAN
+Date/Publication: 2023-03-21 20:00:02 UTC

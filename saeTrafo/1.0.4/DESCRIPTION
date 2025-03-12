@@ -1,0 +1,43 @@
+Package: saeTrafo
+Type: Package
+Title: Transformations for Unit-Level Small Area Models
+Version: 1.0.4
+Author: Nora Würz [aut]
+Maintainer: Nora Würz <nora.wuerz@uni-bamberg.de>
+Description: The aim of this package is to offer new methodology for unit-level 
+    small area models under transformations and limited population auxiliary 
+    information. In addition to this new methodology, the widely used nested 
+    error regression model without transformations (see "An Error-Components 
+    Model for Prediction of County Crop Areas Using Survey and Satellite Data" 
+    by Battese, Harter and Fuller (1988) <doi:10.1080/01621459.1988.10478561>) 
+    and its well-known uncertainty estimate (see "The estimation of the mean 
+    squared error of small-area estimators" by Prasad and Rao (1990) 
+    <doi:10.1080/01621459.1995.10476570>) are provided. In this package, the 
+    log transformation and the data-driven log-shift transformation are 
+    provided. If a transformation is selected, an appropriate method is chosen 
+    depending on the respective input of the population data: Individual 
+    population data (see "Empirical best prediction under a nested error model 
+    with log transformation" by Molina and Martín (2018) 
+    <doi:10.1214/17-aos1608>) but also aggregated population data (see 
+    "Estimating regional income indicators under transformations and access to 
+    limited population auxiliary information" by Würz, Schmid and Tzavidis 
+    <unpublished>) can be entered. Especially under limited data access, new 
+    methodologies are provided in saeTrafo. Several options are available to 
+    assess the used model and to judge, present and export its results. For a 
+    detailed description of the package and the methods used see the 
+    corresponding vignette.
+License: GPL-2
+URL: https://github.com/NoraWuerz/saeTrafo
+LazyData: true
+Encoding: UTF-8
+Imports: nlme, emdi, stats, sfsmisc, parallelMap, ggplot2, moments,
+        openxlsx, reshape2, HLMdiag, gridExtra, stringr, readODS, rlang
+Suggests: simFrame, sf, graphics, R.rsp
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Copyright: inst/COPYRIGHTS
+Packaged: 2024-06-10 05:41:18 UTC; ba8em6
+Repository: CRAN
+Date/Publication: 2024-06-10 06:00:02 UTC

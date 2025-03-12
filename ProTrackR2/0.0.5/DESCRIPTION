@@ -1,0 +1,41 @@
+Package: ProTrackR2
+Title: Manipulate and Play 'ProTracker' Modules
+Version: 0.0.5
+Authors@R: c(
+    person("Pepijn", "de Vries", role = c("aut", "cre"),
+    email = "pepijn.devries@outlook.com",
+    comment = c(ORCID = "0000-0002-7961-6646")),
+    person("Olav", "Sørensen", role = c("aut"),
+    comment = c("Developer of the ProTracker 2.3d clone"))
+    )
+Maintainer: Pepijn de Vries <pepijn.devries@outlook.com>
+Description: 'ProTracker' is a popular music tracker to sequence
+    music on a Commodore Amiga machine. This package offers the
+    opportunity to import, export, manipulate and play 'ProTracker'
+    module files. Even though the file format could be considered
+    archaic, it still remains popular to this date. This package
+    intends to contribute to this popularity and therewith
+    keeping the legacy of 'ProTracker' and the Commodore Amiga
+    alive. This package is the successor of 'ProTrackR' providing
+    better performance.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: cpp11
+Collate: 'ProTrackR2-package.R' 'cell.R' 'command.R' 'cpp11.R' 'data.R'
+        'demo.R' 'helpers.R' 'instrument.R' 'io.R' 'mod_info.R'
+        'modplug.R' 'note.R' 'pattern.R' 'render.R' 's3.R' 'samples.R'
+        'select_ops.R' 'validate.R'
+Imports: audio
+Suggests: cli, htmltools, kableExtra, knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://pepijn-devries.github.io/ProTrackR2/,
+        https://github.com/pepijn-devries/ProTrackR2
+BugReports: https://github.com/pepijn-devries/ProTrackR2/issues
+NeedsCompilation: yes
+Packaged: 2024-11-09 11:10:58 UTC; vries171
+Author: Pepijn de Vries [aut, cre] (<https://orcid.org/0000-0002-7961-6646>),
+  Olav Sørensen [aut] (Developer of the ProTracker 2.3d clone)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-11-09 15:00:07 UTC

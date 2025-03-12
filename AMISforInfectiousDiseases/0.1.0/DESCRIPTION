@@ -1,0 +1,54 @@
+Package: AMISforInfectiousDiseases
+Title: Implement the AMIS Algorithm for Infectious Disease Models
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Evandro",
+             family = "Konzen",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-6275-1681")),
+    person(given = "Renata",
+           family = "Retkute",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-3877-6440")),
+    person(given = "Raiha",
+           family = "Browning",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-6175-2244")),
+    person(given = "Thilbault",
+           family = "Lestang",
+           role=c("aut")),
+    person(given = "Simon",
+           family = "Spencer",
+           role = c("aut", "cre"),
+           email = "s.e.f.spencer@warwick.ac.uk",
+           comment = c(ORCID = "0000-0002-8375-5542")),
+    person(given = "University of Warwick",
+           role=c("cph")),
+    person(given = "Oxford Research Software Engineering",
+           role=c("cph")))
+Description: Implements the Adaptive Multiple Importance Sampling (AMIS) algorithm, as described by Retkute et al. (2021, <doi:10.1214/21-AOAS1486>), to estimate key epidemiological parameters by combining outputs from a geostatistical model of infectious diseases (such as prevalence, incidence, or relative risk) with a disease transmission model. Utilising the resulting posterior distributions, the package enables forward projections at the local level.
+Acknowledgements: This work was supported by the NTD Modelling
+        Consortium grant INV-030046, funded by the Bill & Melinda Gates
+        Foundation.
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Hmisc, mclust, mnormt, Rcpp, weights
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 4.1)
+Suggests: knitr, ggplot2, patchwork, rmarkdown, sf, viridis
+VignetteBuilder: knitr
+URL: https://github.com/drsimonspencer/AMISforInfectiousDiseases-dev
+BugReports: https://github.com/drsimonspencer/AMISforInfectiousDiseases-dev/issues
+License: MIT + file LICENSE
+NeedsCompilation: yes
+Packaged: 2025-01-17 05:58:43 UTC; evandro
+Author: Evandro Konzen [aut] (<https://orcid.org/0000-0002-6275-1681>),
+  Renata Retkute [aut] (<https://orcid.org/0000-0002-3877-6440>),
+  Raiha Browning [aut] (<https://orcid.org/0000-0002-6175-2244>),
+  Thilbault Lestang [aut],
+  Simon Spencer [aut, cre] (<https://orcid.org/0000-0002-8375-5542>),
+  University of Warwick [cph],
+  Oxford Research Software Engineering [cph]
+Maintainer: Simon Spencer <s.e.f.spencer@warwick.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-01-20 16:02:05 UTC

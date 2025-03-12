@@ -1,0 +1,38 @@
+Package: sr
+Type: Package
+Title: Smooth Regression - The Gamma Test and Tools
+Version: 0.1.0
+Authors@R: c(person(given="Wayne", family="Haythorn", 
+                  email = "support@smoothregression.com", role = c("aut", "cre")),
+           person(given="Antonia", family="Jones", role = "aut", 
+                  comment="Principal creator of the Gamma test"),
+           person(given="Sam", family="Kemp", role = "ctb", 
+                  comment="Wrote the original code for the Gamma test in R"))
+Description: Finds causal connections in precision data, finds lags and embeddings in 
+  time series, guides training of neural networks and other smooth models, evaluates 
+  their performance, gives a mathematically grounded answer to the over-training 
+  problem.  Smooth regression is based on the Gamma test, which measures smoothness
+  in a multivariate relationship.  Causal relations are smooth, noise is not.  
+  'sr' includes the Gamma test and search techniques that use it. 
+  References: Evans & Jones (2002) <doi:10.1098/rspa.2002.1010>, 
+  AJ Jones (2004) <doi:10.1007/s10287-003-0006-1>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+Imports: ggplot2, dplyr, progress, RANN, stats, vdiffr
+Suggests: knitr, magrittr, nnet, rmarkdown, testthat (>= 3.0.0)
+URL: https://smoothregression.com, https://github.com/haythorn/sr/
+BugReports: https://github.com/haythorn/sr/issues
+NeedsCompilation: no
+Packaged: 2023-03-09 20:56:16 UTC; wayne
+Author: Wayne Haythorn [aut, cre],
+  Antonia Jones [aut] (Principal creator of the Gamma test),
+  Sam Kemp [ctb] (Wrote the original code for the Gamma test in R)
+Maintainer: Wayne Haythorn <support@smoothregression.com>
+Repository: CRAN
+Date/Publication: 2023-03-10 08:00:03 UTC

@@ -1,0 +1,22 @@
+Package: rope
+Title: Model Selection with FDR Control of Selected Variables
+Version: 1.0
+Author: Jonatan Kallus [aut, cre]
+Maintainer: Jonatan Kallus <kallus@chalmers.se>
+Authors@R: person("Jonatan", "Kallus", email = "kallus@chalmers.se",
+                  role = c("aut", "cre"))
+Description: Selects one model with variable selection FDR controlled at a
+    specified level. A q-value for each potential variable is also returned. The
+    input, variable selection counts over many bootstraps for several levels of
+    penalization, is modeled as coming from a beta-binomial mixture
+    distribution.
+Depends: R (>= 3.1.0)
+Suggests: Matrix, parallel, knitr, rmarkdown
+License: GPL-3
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.0
+NeedsCompilation: no
+Packaged: 2017-02-15 20:43:22 UTC; jonatan
+Repository: CRAN
+Date/Publication: 2017-02-16 07:55:41

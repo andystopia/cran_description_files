@@ -1,0 +1,46 @@
+Package: afttest
+Type: Package
+Title: Model Diagnostics for Accelerated Failure Time Models
+Version: 4.3.2.3
+Date: 2024-01-15 EDT
+Authors@R: c(
+    person(given = "Woojung", family = "Bae", 
+           email = "matt.woojung@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6760-9900")),
+    person(given = "Dongrak", family = "Choi", role = "aut",
+           comment = c(ORCID = "0000-0003-3280-3329")),
+    person(given = "Jun", family = "Yan", role = "aut",
+           comment = c(ORCID = "0000-0003-4401-7296")),
+    person(given = "Sangwook", family = "Kang", role = "aut",
+           comment = c(ORCID = "0000-0003-2658-481X"))
+  )
+Maintainer: Woojung Bae <matt.woojung@gmail.com>
+Description: A collection of model checking methods for semiparametric accelerated 
+    failure time (AFT) models under the rank-based approach. For the (computational)
+    efficiency, Gehan's weight is used. It provides functions to verify whether the 
+    observed data fit the specific model assumptions such as a functional form of 
+    each covariate, a link function, and an omnibus test. The p-value offered in this 
+    package is based on the Kolmogorov-type supremum test and the variance of the 
+    proposed test statistics is estimated through the re-sampling method. Furthermore, 
+    a graphical technique to compare the shape of the observed residual to a number of 
+    the approximated realizations is provided.
+Imports: survival, aftgee, ggplot2, gridExtra
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Depends: R (>= 3.4.0)
+Config/testthat/edition: 3
+License: GPL (>= 3)
+URL: https://github.com/WooJungBae/afttest
+BugReports: https://github.com/WooJungBae/afttest/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.0
+NeedsCompilation: yes
+Packaged: 2024-01-16 01:34:01 UTC; woojung
+Author: Woojung Bae [aut, cre] (<https://orcid.org/0000-0001-6760-9900>),
+  Dongrak Choi [aut] (<https://orcid.org/0000-0003-3280-3329>),
+  Jun Yan [aut] (<https://orcid.org/0000-0003-4401-7296>),
+  Sangwook Kang [aut] (<https://orcid.org/0000-0003-2658-481X>)
+Repository: CRAN
+Date/Publication: 2024-01-16 16:30:05 UTC

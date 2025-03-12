@@ -1,0 +1,34 @@
+Package: Certara.ModelResults
+Title: Generate Diagnostics for Pharmacometric Models Using 'shiny'
+Version: 3.0.1
+Authors@R: c(
+      person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Shuhua", "Hu", email = "shuhua.hu@certara.com", role = c("ctb")),
+      person("Mike", "Talley", email = "mike.talley@certara.com", role = c("aut")),
+      person("Certara USA, Inc", role = c("cph","fnd")))
+Description: Utilize the 'shiny' interface to generate Goodness of Fit (GOF) plots and tables
+      for Non-Linear Mixed Effects (NLME / NONMEM) pharmacometric models. From the interface,
+      users can customize model diagnostics and generate the underlying R code to reproduce the 
+      diagnostic plots and tables outside of the 'shiny' session. Model diagnostics can be included
+      in a 'rmarkdown' document and rendered to desired output format.
+Depends: R (>= 4.0)
+License: LGPL-3
+URL: https://certara.github.io/R-model-results/
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), Certara.RsNLME
+Imports: colourpicker, shinyAce, shinymeta, Certara.Xpose.NLME, xpose,
+        dplyr, flextable, shinyjqui, grDevices, ggplot2, plotly,
+        magrittr, scales, shiny (>= 1.7.0), shinyjs, shinyWidgets,
+        shinyTree (>= 0.3.1), sortable, tidyr, rlang, bslib (>= 0.7.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-02-27 23:19:17 UTC; jcraig
+Author: James Craig [aut, cre],
+  Shuhua Hu [ctb],
+  Mike Talley [aut],
+  Certara USA, Inc [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2025-03-03 11:50:24 UTC

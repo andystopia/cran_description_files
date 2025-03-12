@@ -1,0 +1,25 @@
+Package: image.Otsu
+Type: Package
+Title: Otsu's Image Segmentation Method
+Description: An implementation of the Otsu's Image Segmentation Method described in the paper: "A C++ Implementation of Otsu's Image Segmentation Method". The algorithm is explained at <doi:10.5201/ipol.2016.158>.
+Maintainer: Jan Wijffels <jwijffels@bnosac.be>
+Authors@R: c(
+    person("Jan", "Wijffels", role = c("aut", "cre", "cph"), email = "jwijffels@bnosac.be", comment = "R wrapper"), 
+    person("BNOSAC", role = "cph", comment = "R wrapper"), 
+    person("Juan Pablo Balarini", role = c("ctb", "cph"), comment = "Otsu C++ code"),
+    person("Sergio Nesmachnow", role = c("ctb", "cph"), comment = "Otsu C++ code"))
+License: MIT + file LICENSE
+Version: 0.1
+URL: https://github.com/bnosac/image
+Imports: Rcpp (>= 0.12.8)
+LinkingTo: Rcpp
+Suggests: magick
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2020-07-20 19:44:04 UTC; Jan
+Author: Jan Wijffels [aut, cre, cph] (R wrapper),
+  BNOSAC [cph] (R wrapper),
+  Juan Pablo Balarini [ctb, cph] (Otsu C++ code),
+  Sergio Nesmachnow [ctb, cph] (Otsu C++ code)
+Repository: CRAN
+Date/Publication: 2020-07-27 12:30:10 UTC

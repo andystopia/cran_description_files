@@ -1,0 +1,33 @@
+Package: ApplyPolygenicScore
+Type: Package
+Title: Utilities for the Application of a Polygenic Score to a VCF
+Version: 3.0.1
+Authors@R: c(
+    person('Paul', 'Boutros', role = 'cre', email = 'PBoutros@mednet.ucla.edu'),
+    person('Nicole', 'Zeltser', role = 'aut', comment = c(ORCID = '0000-0001-7246-2771')),
+    person('Rachel', 'Dang', role = 'ctb'))
+Description: Simple and transparent parsing of genotype/dosage data
+    from an input Variant Call Format (VCF) file, matching of genotype
+    coordinates to the component Single Nucleotide Polymorphisms (SNPs)
+    of an existing polygenic score (PGS), and application of SNP weights
+    to dosages for the calculation of a polygenic score for each individual
+    in accordance with the additive weighted sum of dosages model. Methods
+    are designed in reference to best practices described by
+    Collister, Liu, and Clifton (2022) <doi:10.3389/fgene.2022.818574>.
+Depends: R (>= 4.2.0)
+Imports: vcfR, pROC, data.table, reshape2, BoutrosLab.plotting.general,
+        lattice
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-03-04 01:32:04 UTC; nzeltser
+Author: Paul Boutros [cre],
+  Nicole Zeltser [aut] (<https://orcid.org/0000-0001-7246-2771>),
+  Rachel Dang [ctb]
+Maintainer: Paul Boutros <PBoutros@mednet.ucla.edu>
+Repository: CRAN
+Date/Publication: 2025-03-05 15:50:15 UTC

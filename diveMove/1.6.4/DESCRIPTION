@@ -1,0 +1,36 @@
+Package: diveMove
+Type: Package
+Title: Dive Analysis and Calibration
+Version: 1.6.4
+Depends: R (>= 4.4.0), methods, stats4
+Suggests: knitr, lattice, pander, rmarkdown, tinytest
+Imports: geosphere, KernSmooth, plotly, quantreg, uniReg
+Authors@R: person(given = c("Sebastian", "P."),
+                  family = "Luque",
+		  role = c("aut", "cre"),
+		  email = "spluque@gmail.com",
+		  comment = c(ORCID = "0000-0002-9647-3691"))
+Author: Sebastian P. Luque [aut, cre] (<https://orcid.org/0000-0002-9647-3691>)
+Maintainer: Sebastian P. Luque <spluque@gmail.com>
+Description: Utilities to represent, visualize, filter, analyse, and summarize
+	     time-depth recorder (TDR) data.  Miscellaneous functions for
+	     handling location data are also provided.
+LazyLoad: yes
+LazyData: no
+Encoding: UTF-8
+ZipData: no
+BuildResaveData: no
+VignetteBuilder: knitr
+Collate: AllClass.R AllGenerics.R AllMethod.R austFilter.R
+        bouts_helpers.R bouts.R calibrate.R detDive.R detPhase.R
+        distSpeed.R diveStats.R oneDiveStats.R plotTDR.R plotZOC.R
+        readLocs.R readTDR.R runquantile.R speedStats.R stampDive.R
+        zoc.R diveMove-deprecated.R diveMove-defunct.R zzz.R
+NeedsCompilation: yes
+License: GPL-3
+URL: https://github.com/spluque/diveMove
+BugReports: https://github.com/spluque/diveMove/issues
+RoxygenNote: 7.1.1
+Packaged: 2024-10-13 00:11:08 UTC; sluque
+Repository: CRAN
+Date/Publication: 2024-10-13 08:20:02 UTC

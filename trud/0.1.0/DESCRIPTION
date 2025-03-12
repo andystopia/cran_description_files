@@ -1,0 +1,39 @@
+Package: trud
+Title: Query the 'NHS TRUD API'
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Alasdair",
+           family = "Warwick",
+           role = c("aut", "cre", "cph"),
+           email = "alasdair.warwick.19@ucl.ac.uk",
+           comment = c(ORCID = "0000-0002-0800-2890")),
+    person("Robert", "Luben", role = "aut",
+           comment = c(ORCID = "0000-0002-5088-6343")),
+    person("Abraham", "Olvera-Barrios", role = "aut",
+           comment = c(ORCID = "0000-0002-3305-4465")),
+    person("Chuin Ying", "Ung", role = "aut",
+           comment = c(ORCID = "0000-0001-8487-4589"))
+    )
+Description: A convenient R interface to the 'National Health Service (NHS) 
+    Technology Reference Update Distribution (TRUD) API'. Retrieve available
+    releases for items that you are subscribed to and download these with ease.
+    For more information on the API, see <https://isd.digital.nhs.uk/trud/users/guest/filters/0/api>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: cli, dplyr, httr2, magrittr, purrr, rlang, rvest, stringr,
+        tibble, tidyselect
+URL: https://rmgpanw.github.io/trud/, https://github.com/rmgpanw/trud
+BugReports: https://github.com/rmgpanw/trud/issues
+Suggests: testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-07-21 14:30:14 UTC; alasdair
+Author: Alasdair Warwick [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0800-2890>),
+  Robert Luben [aut] (<https://orcid.org/0000-0002-5088-6343>),
+  Abraham Olvera-Barrios [aut] (<https://orcid.org/0000-0002-3305-4465>),
+  Chuin Ying Ung [aut] (<https://orcid.org/0000-0001-8487-4589>)
+Maintainer: Alasdair Warwick <alasdair.warwick.19@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-07-23 00:20:02 UTC

@@ -1,0 +1,38 @@
+Package: OmicsQC
+Type: Package
+Title: Nominating Quality Control Outliers in Genomic Profiling Studies
+Version: 1.1.0
+Authors@R: 
+    c(
+    person(given = "Anders Hugo",
+           family = "Frelin",
+           email = "ahfrelin@g.ucla.edu",
+           role = c("aut")),
+    person(given = "Helen",
+           family = "Zhu",
+           role = c("aut"),
+           email = "helen.zhu@mail.utoronto.ca"),
+    person(given = "Paul C.",
+           family = "Boutros",
+           role = c("aut", "cre"),
+           email = "PBoutros@mednet.ucla.edu",
+           comment = c(ORCID = "0000-0003-0553-7520"))
+    )
+Description: A method that analyzes quality control metrics from multi-sample genomic sequencing studies and nominates poor quality samples for exclusion. Per sample quality control data are transformed into z-scores and aggregated. The distribution of aggregated z-scores are modelled using parametric distributions. The parameters of the optimal model, selected either by goodness-of-fit statistics or user-designation, are used for outlier nomination. Two implementations of the Cosine Similarity Outlier Detection algorithm are provided with flexible parameters for dataset customization.
+Depends: R (>= 2.10)
+Imports: stats, utils, fitdistrplus, lsa, BoutrosLab.plotting.general
+Suggests: knitr, rmarkdown, kableExtra, dplyr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-02-29 22:17:18 UTC; helenzhu
+Author: Anders Hugo Frelin [aut],
+  Helen Zhu [aut],
+  Paul C. Boutros [aut, cre] (<https://orcid.org/0000-0003-0553-7520>)
+Maintainer: Paul C. Boutros <PBoutros@mednet.ucla.edu>
+Repository: CRAN
+Date/Publication: 2024-03-01 15:02:43 UTC

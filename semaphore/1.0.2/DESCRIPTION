@@ -1,0 +1,36 @@
+Package: semaphore
+Type: Package
+Title: Shared Memory Atomic Operations
+Version: 1.0.2
+Date: 2024-11-12
+Authors@R: c(
+    person(
+      "Daniel P.", "Smith",
+      email   = "dansmith01@gmail.com",
+      role    = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-2479-2044")),
+    person(
+      "Alkek Center for Metagenomics and Microbiome Research", 
+      role = c("cph", "fnd") ))
+Description: Implements named semaphores from the 'boost' 'C++' library 
+    <https://www.boost.org/>. A semaphore object is shared amongst several 
+    processes. This integer value can be safely incremented or decremented by
+    each processes. Processes can also wait (blocking) for the value to become 
+    non-zero.
+URL: https://cmmr.github.io/semaphore/,
+        https://github.com/cmmr/semaphore
+BugReports: https://github.com/cmmr/semaphore/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+LinkingTo: Rcpp, BH
+Imports: Rcpp
+Suggests: testthat
+NeedsCompilation: yes
+Packaged: 2024-11-12 23:01:17 UTC; Daniel
+Author: Daniel P. Smith [aut, cre] (<https://orcid.org/0000-0002-2479-2044>),
+  Alkek Center for Metagenomics and Microbiome Research [cph, fnd]
+Maintainer: Daniel P. Smith <dansmith01@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-13 08:30:02 UTC

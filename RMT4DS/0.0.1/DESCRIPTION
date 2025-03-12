@@ -1,0 +1,24 @@
+Package: RMT4DS
+Title: Computation of Random Matrix Models
+Version: 0.0.1
+Authors@R: c(person("Xiucai", "Ding", role = c("aut", "cre","cph"),
+                     email = "xiucaiding89@gmail.com"),
+             person("Yichen", "Hu", role = c("aut","cph"),
+                     email = "ethhu@ucdavis.edu"))
+Description: We generate random variables following general Marchenko-Pastur distribution and Tracy-Widom distribution. We compute limits and distributions of eigenvalues and generalized components of spiked covariance matrices. We give estimation of all population eigenvalues of spiked covariance matrix model. We give tests of population covariance matrix. We also perform matrix denoising for signal-plus-noise model.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Repository: CRAN
+Collate: 'Limits.R' 'CovEst.R' 'CovTest.R' 'GeneralMP.R'
+        'GeneralWishartMax.R' 'SignalPlusNoise.R'
+Imports: MASS, RMTstat, lpSolve, mpoly, nleqslv, pracma, rARPACK,
+        rootSolve, quadprog
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-11 19:51:47 UTC; Ethan
+Author: Xiucai Ding [aut, cre, cph],
+  Yichen Hu [aut, cph]
+Maintainer: Xiucai Ding <xiucaiding89@gmail.com>
+Date/Publication: 2022-11-14 17:30:05 UTC

@@ -1,0 +1,59 @@
+Package: dimensio
+Title: Multivariate Data Analysis
+Version: 0.12.0
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944")),
+    person("Jean-Baptiste", "Fourvel", , "jean-baptiste.fourvel@univ-amu.fr", role = "ctb",
+           comment = c(ORCID = "0000-0002-1061-4642")),
+    person("Brice", "Lebrun", role = "art",
+           comment = c(ORCID = "0000-0001-7503-8685", "Logo designer")),
+    person("Université Bordeaux Montaigne", role = "fnd",
+           comment = c(ROR = "03pbgwk21")),
+    person("CNRS", role = "fnd",
+           comment = c(ROR = "02feahw73"))
+  )
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: Simple Principal Components Analysis (PCA) and (Multiple)
+    Correspondence Analysis (CA) based on the Singular Value Decomposition
+    (SVD). This package provides S4 classes and methods to compute,
+    extract, summarize and visualize results of multivariate data
+    analysis. It also includes methods for partial bootstrap validation
+    described in Greenacre (1984, ISBN: 978-0-12-299050-2) and Lebart et
+    al. (2006, ISBN: 978-2-10-049616-7).
+License: GPL (>= 3)
+URL: https://codeberg.org/tesselle/dimensio,
+        https://packages.tesselle.org/dimensio/
+BugReports: https://codeberg.org/tesselle/dimensio/issues
+Depends: R (>= 3.5)
+Imports: arkhe (>= 1.10.0), graphics, grDevices, khroma (>= 1.16.0),
+        methods, utils
+Suggests: knitr, markdown, rsvg, svglite, tinysnapshot, tinytest
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+X-schema.org-isPartOf: https://www.tesselle.org
+X-schema.org-keywords: data-analysis, multivariate-analysis, r-package
+Collate: 'AllClasses.R' 'AllGenerics.R' 'annotations.R' 'augment.R'
+        'biplot.R' 'bootstrap.R' 'ca.R' 'coerce.R' 'data.R'
+        'dimensio-defunct.R' 'dimensio-deprecated.R'
+        'dimensio-internal.R' 'dimensio-package.R' 'export.R'
+        'get_contributions.R' 'get_coordinates.R' 'get_correlations.R'
+        'get_cos2.R' 'get_data.R' 'get_distances.R' 'get_eigenvalues.R'
+        'get_inertia.R' 'get_variance.R' 'mca.R' 'mutators.R' 'pca.R'
+        'pcoa.R' 'plot.R' 'predict.R' 'reexport.R' 'screeplot.R'
+        'show.R' 'subset.R' 'summary.R' 'svd.R' 'tidy.R' 'tools.R'
+        'viz_contributions.R' 'viz_coordinates.R' 'viz_cos2.R'
+        'viz_ellipse.R' 'viz_hull.R' 'wrap_ellipses.R' 'wrap_hull.R'
+        'zzz.R'
+NeedsCompilation: no
+Packaged: 2025-02-25 20:09:17 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>),
+  Jean-Baptiste Fourvel [ctb] (<https://orcid.org/0000-0002-1061-4642>),
+  Brice Lebrun [art] (<https://orcid.org/0000-0001-7503-8685>, Logo
+    designer),
+  Université Bordeaux Montaigne [fnd] (03pbgwk21),
+  CNRS [fnd] (02feahw73)
+Repository: CRAN
+Date/Publication: 2025-02-25 20:30:02 UTC

@@ -1,0 +1,45 @@
+Package: Karen
+Title: Kalman Reaction Networks
+Version: 1.0
+Authors@R: 
+    c(person(given = "Luca", 
+            family = "Del Core", 
+            email = "l.del.core@rug.nl", 
+            role = c("aut", "cre", "cph"),
+            comment = c(ORCID = "0000-0002-1672-6995")),
+    person(given = "Danilo", 
+            family = "Pellin", 
+            email = "Danilo_Pellin@DFCI.HARVARD.EDU", 
+            role = c("aut"),
+            comment = c(ORCID = "0000-0002-2647-0508")),
+    person(given = "Marco", 
+            family = "Grzegorczyk", 
+            email = "m.a.grzegorczyk@rug.nl", 
+            role = c("aut", "ths"),
+            comment = c(ORCID = "0000-0002-2604-9270")),
+    person(given = "Ernst", 
+            family = "Wit", 
+            email = "ernst.jan.camiel.wit@usi.ch", 
+            role = c("aut", "ths"),
+            comment = c(ORCID = "0000-0002-3671-9610")))
+Description: This is a stochastic framework that combines biochemical reaction networks with extended Kalman filter and Rauch-Tung-Striebel smoothing. 
+  This framework allows to investigate the dynamics of cell differentiation from high-dimensional clonal tracking data subject to measurement noise, false negative errors, and systematically unobserved cell types. 
+  Our tool can provide statistical support to biologists in gene therapy clonal tracking studies for a deeper understanding of clonal reconstitution dynamics. Further details on the methods can be found in L. Del Core et al., (2022) <doi:10.1101/2022.07.08.499353>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: Matrix, parallel, gaussquad, splines, scales, mvtnorm,
+        tmvtnorm, MASS, igraph, xtable, stringr, abind, expm, methods
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2022-09-14 16:28:19 UTC; delcore.luca
+Author: Luca Del Core [aut, cre, cph] (<https://orcid.org/0000-0002-1672-6995>),
+  Danilo Pellin [aut] (<https://orcid.org/0000-0002-2647-0508>),
+  Marco Grzegorczyk [aut, ths] (<https://orcid.org/0000-0002-2604-9270>),
+  Ernst Wit [aut, ths] (<https://orcid.org/0000-0002-3671-9610>)
+Maintainer: Luca Del Core <l.del.core@rug.nl>
+Repository: CRAN
+Date/Publication: 2022-09-15 07:40:02 UTC

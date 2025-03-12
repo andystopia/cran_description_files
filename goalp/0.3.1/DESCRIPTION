@@ -1,0 +1,30 @@
+Package: goalp
+Type: Package
+Title: Weighted and Lexicographic Goal Programming Interface
+Version: 0.3.1
+Authors@R: c(
+    person("David", "Palma", email="D.Palma@leeds.ac.uk", 
+    role=c("aut", "cre")), 
+    person("Richard", "Hodgett", email="R.E.Hodgett@leeds.ac.uk", 
+    role="ctb"))
+Description: Solves goal programming problems of the weighted and  
+    lexicographic type, as well as combinations of the two, as described 
+    by Ignizio (1983) <doi:10.1016/0305-0548(83)90003-5>. Allows for 
+    a simple human-readable input describing the problem as a series 
+    of equations. Relies on the 'lpSolve' package to solve the underlying 
+    linear optimisation problem.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: lpSolve
+RoxygenNote: 7.2.2
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-28 16:19:15 UTC; tradpa
+Author: David Palma [aut, cre],
+  Richard Hodgett [ctb]
+Maintainer: David Palma <D.Palma@leeds.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-11-29 10:30:02 UTC

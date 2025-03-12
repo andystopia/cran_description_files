@@ -1,0 +1,34 @@
+Package: DiscreteDLM
+Title: Bayesian Distributed Lag Model Fitting for Binary and Count
+        Response Data
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Daniel", family = "Dempsey", email = "daniel.dempsey0@gmail.com", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0899-5412")),
+    person(given = "Jason", family = "Wyse", role = "ctb", 
+    comment = c(ORCID = "0000-0003-1391-7371")),
+    person(given = "Christian E.", family = "Galarza", role = "ctb", 
+    comment = "Author of the ald package, which this package derives some code from (see the COPYRIGHT file in the inst folder)."),
+    person(given = "Victor H.", family = "Lachos", role = "ctb", 
+    comment = "Author of the ald package, which this package derives some code from (see the COPYRIGHT file in the inst folder)."))
+Maintainer: Daniel Dempsey <daniel.dempsey0@gmail.com>
+Description: Tools for fitting Bayesian Distributed Lag Models (DLMs) to longitudinal response data that is a count or binary. Count data is fit using negative binomial regression and binary is fit using quantile regression. The contribution of the lags are fit via b-splines. In addition, infers the predictor inclusion uncertainty. Multimomial models are not supported. Based on Dempsey and Wyse (2025) <doi:10.48550/arXiv.2403.03646>.
+License: GPL-3
+Encoding: UTF-8
+Imports: statmod, BayesLogit, dlnm, splines, dplyr, ggplot2, ggridges,
+        reshape2
+RoxygenNote: 7.3.2
+URL: https://github.com/DanDempsey/DiscreteDLM
+BugReports: https://github.com/DanDempsey/DiscreteDLM/issues
+NeedsCompilation: yes
+Packaged: 2025-02-06 01:49:36 UTC; bluff
+Author: Daniel Dempsey [aut, cre] (<https://orcid.org/0000-0003-0899-5412>),
+  Jason Wyse [ctb] (<https://orcid.org/0000-0003-1391-7371>),
+  Christian E. Galarza [ctb] (Author of the ald package, which this
+    package derives some code from (see the COPYRIGHT file in the inst
+    folder).),
+  Victor H. Lachos [ctb] (Author of the ald package, which this package
+    derives some code from (see the COPYRIGHT file in the inst
+    folder).)
+Repository: CRAN
+Date/Publication: 2025-02-06 19:40:10 UTC

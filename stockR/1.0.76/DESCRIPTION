@@ -1,0 +1,18 @@
+Package: stockR
+Title: Identifying Stocks in Genetic Data
+Version: 1.0.76
+Authors@R: c(person("Scott D.", "Foster", role = c("aut", "cre"),
+                     email = "scott.foster@data61.csiro.au"))
+Author: Scott D. Foster [aut, cre]
+Description: Provides a mixture model for clustering individuals (or sampling groups) into stocks based on their genetic profile. Here, sampling groups are individuals that are sure to come from the same stock (e.g. breeding adults or larvae). The mixture (log-)likelihood is maximised using the EM-algorithm after finding good starting values via a K-means clustering of the genetic data. Details can be found in: Foster, S. D.; Feutry, P.; Grewe, P. M.; Berry, O.; Hui, F. K. C. & Davies (2020) <doi:10.1111/1755-0998.12920>.
+License: GPL (>= 2)
+LinkingTo: Rcpp
+Imports: Rcpp, stats, gtools, parallel, RColorBrewer, methods
+Suggests: knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-04-26 06:52:04 UTC; fos085
+Maintainer: Scott D. Foster <scott.foster@data61.csiro.au>
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2023-04-26 08:00:02 UTC

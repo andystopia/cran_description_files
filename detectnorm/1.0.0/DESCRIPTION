@@ -1,0 +1,37 @@
+Package: detectnorm
+Type: Package
+Title: Detect Nonnormality in Meta-Analysis without Raw Data
+Version: 1.0.0
+Authors@R: c(person(given="Rongwei", 
+                    family="Sun", 
+                    role = c("aut", "cre", "cph"),
+                    email = "irissun_s@hotmail.com", 
+                    comment = c(ORCID = "0000-0003-0034-1422")
+                    ),
+            person(given = "Shu Fai",
+                    family="Cheung",
+                    role = c("aut", "ctb", "cph"),
+                    email = "sfcheung@um.edu.mo",
+                    comment = c(ORCID = "0000-0002-9871-9448")
+                    ))
+Maintainer: Rongwei Sun <irissun_s@hotmail.com>
+Description: Non-normality could greatly distort the meta-analytic results, according to the simulation in Sun and Cheung (2020) <doi: 10.3758/s13428-019-01334-x>. This package aims to detect non-normality for two independent groups with only limited descriptive statistics, including mean, standard deviation, minimum, and maximum. 
+License: MIT + file LICENSE
+URL: https://github.com/irissun/detectnorm
+BugReports: https://github.com/irissun/detectnorm/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: nleqslv, ggplot2, truncnorm, Rdpack, psych
+Suggests: knitr, metafor (>= 3.4-0), rmarkdown, testthat (>= 3.0.0)
+RdMacros: Rdpack
+RoxygenNote: 7.2.0
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-07-15 13:29:16 UTC; iris
+Author: Rongwei Sun [aut, cre, cph] (<https://orcid.org/0000-0003-0034-1422>),
+  Shu Fai Cheung [aut, ctb, cph]
+    (<https://orcid.org/0000-0002-9871-9448>)
+Repository: CRAN
+Date/Publication: 2022-07-16 09:10:05 UTC

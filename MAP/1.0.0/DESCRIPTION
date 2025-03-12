@@ -1,0 +1,51 @@
+Package: MAP
+Type: Package
+Title: Multimodal Automated Phenotyping
+Version: 1.0.0
+Authors@R: c(
+    person("Thomas", "Charlon", role = c("aut", "cre"),
+           email = "charlon@protonmail.com",
+           comment = c(ORCID = "0000-0001-7497-0470")),
+    person("Chuan", "Hong", role = "aut"),
+    person("Jiehuan", "Sun", role = "aut"),
+    person("Katherine", "Liao", role = "aut"),
+    person("Sheng", "Yu", role = "aut"),
+    person("Tianxi", "Cai", role = "aut"),
+    person("PARSE Health", role = "aut", comment = "<https://parse-health.org>"),
+    person("CELEHS", role = "aut", comment = "<https://celehs.hms.harvard.edu>")
+    )
+Description: Electronic health records (EHR) linked with biorepositories are 
+    a powerful platform for translational studies. A major bottleneck exists 
+    in the ability to phenotype patients accurately and efficiently. 
+    Towards that end, we developed an automated high-throughput 
+    phenotyping method integrating International 
+    Classification of Diseases (ICD) codes and narrative data extracted 
+    using natural language processing (NLP). Specifically, our proposed method, 
+    called MAP (Map Automated Phenotyping algorithm), fits an ensemble of latent 
+    mixture models on aggregated ICD and NLP counts along with healthcare 
+    utilization. The MAP algorithm yields a predicted probability of phenotype 
+    for each patient and a threshold for classifying subjects with phenotype 
+    yes/no (See Katherine P. Liao, et al. (2019) <doi:10.1093/jamia/ocz066>.).
+URL: https://celehs.github.io/MAP/
+BugReports: https://github.com/celehs/MAP/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4.0), flexmix (>= 2.3-14), Matrix(>= 1.2-10)
+Imports: magrittr
+Suggests: knitr, pROC, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Packaged: 2024-12-02 14:38:25 UTC; root
+Author: Thomas Charlon [aut, cre] (<https://orcid.org/0000-0001-7497-0470>),
+  Chuan Hong [aut],
+  Jiehuan Sun [aut],
+  Katherine Liao [aut],
+  Sheng Yu [aut],
+  Tianxi Cai [aut],
+  PARSE Health [aut] (<https://parse-health.org>),
+  CELEHS [aut] (<https://celehs.hms.harvard.edu>)
+Maintainer: Thomas Charlon <charlon@protonmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-02 17:10:01 UTC

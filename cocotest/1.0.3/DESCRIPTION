@@ -1,0 +1,22 @@
+Package: cocotest
+Type: Package
+Title: Dependence Condition Test Using Ranked Correlation Coefficients
+Version: 1.0.3
+Date: 2023-12-22
+Authors@R: c(
+    person("Jiangtao", "Gou", email = "gouRpackage@gmail.com", role = c("aut", "cre")),
+    person("Fengqing (Zoe)", "Zhang", role = "aut"))
+Description: A common misconception is that the Hochberg procedure comes up with adequate overall type I error control when test statistics are positively correlated. However, unless the test statistics follow some standard distributions, the Hochberg procedure requires a more stringent positive dependence assumption, beyond mere positive correlation, to ensure valid overall type I error control. To fill this gap, we formulate statistical tests grounded in rank correlation coefficients to validate fulfillment of the positive dependence through stochastic ordering (PDS) condition.
+    See Gou, J., Wu, K. and Chen, O. Y. (2024). Rank correlation coefficient based tests on positive dependence through stochastic ordering with application in cancer studies, Technical Report.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: boot (>= 1.1), stats (>= 4.0.0)
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-12-22 18:11:09 UTC; psystat
+Author: Jiangtao Gou [aut, cre],
+  Fengqing (Zoe) Zhang [aut]
+Maintainer: Jiangtao Gou <gouRpackage@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-10 14:23:08 UTC

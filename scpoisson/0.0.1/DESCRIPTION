@@ -1,0 +1,35 @@
+Package: scpoisson
+Title: Single Cell Poisson Probability Paradigm
+Version: 0.0.1
+Authors@R: c(
+    person("Yue", "Pan", email = "yuep027@gmail.com", role = c("aut", "cre")),
+    person("Justin", "Landis", email = "jtlandis314@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0001-5501-4934")),
+    person("Dirk", "Dittmer", email = "dirk_dittmer@med.unc.edu", role = "aut"),
+    person("James S.", "Marron", role = "aut", email = "marron@unc.edu"),
+    person("Di", "Wu", role = "aut", email = "did@email.unc.edu"))
+Description: Useful to visualize the Poissoneity (an independent Poisson statistical framework, 
+  where each RNA measurement for each cell comes from its own independent Poisson distribution) of 
+  Unique Molecular Identifier (UMI) based single cell RNA sequencing (scRNA-seq) data, and explore 
+  cell clustering based on model departure as a novel data representation. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: renv, testthat (>= 3.0.0), vdiffr, rmarkdown, knitr, qpdf
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Imports: ggplot2, glmpca, Seurat, magrittr, dplyr, tidyr, purrr,
+        Matrix, Rdpack, SeuratObject, WGCNA, broom, stats, methods,
+        matrixStats
+RdMacros: Rdpack
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2022-08-15 18:12:26 UTC; yue
+Author: Yue Pan [aut, cre],
+  Justin Landis [aut] (<https://orcid.org/0000-0001-5501-4934>),
+  Dirk Dittmer [aut],
+  James S. Marron [aut],
+  Di Wu [aut]
+Maintainer: Yue Pan <yuep027@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-17 06:50:02 UTC

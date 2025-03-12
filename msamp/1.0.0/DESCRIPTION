@@ -1,0 +1,27 @@
+Package: msamp
+Title: Estimate Sample Size to Detect Bacterial Contamination in a
+        Product Lot
+Version: 1.0.0
+Authors@R: 
+    person("Martine", "Ferguson", , "martine.ferguson@fda.hhs.gov", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4479-3674"))
+Description: Estimates the sample size needed to detect microbial contamination 
+ in a lot with a user-specified detection probability and user-specified analytical sensitivity.
+ Various patterns of microbial contamination are accounted for: homogeneous (Poisson), 
+ heterogeneous (Poisson-Gamma) or localized(Zero-inflated Poisson).
+  Ida Jongenburger et al. (2010) <doi:10.1016/j.foodcont.2012.02.004> 
+  "Impact of microbial distributions on food safety".
+  Leroy Simon (1963) <doi:10.1017/S0515036100001975>
+  "Casualty Actuarial Society - The Negative Binomial and Poisson Distributions Compared". 
+License: Unlimited
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+Imports: graphics, stats, grDevices
+NeedsCompilation: no
+Packaged: 2022-10-16 18:30:56 UTC; MFerguso
+Author: Martine Ferguson [aut, cre] (<https://orcid.org/0000-0003-4479-3674>)
+Maintainer: Martine Ferguson <martine.ferguson@fda.hhs.gov>
+Repository: CRAN
+Date/Publication: 2022-10-17 12:00:05 UTC

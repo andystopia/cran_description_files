@@ -1,0 +1,43 @@
+Package: survML
+Title: Tools for Flexible Survival Analysis Using Machine Learning
+Version: 1.2.0
+Authors@R: 
+    c(person(given = "Charles",
+           family = "Wolock",
+           role = c("aut", "cre", "cph"),
+           email = "cwolock@gmail.com",
+           comment = c(ORCID = "0000-0003-3527-1102")),
+      person(given = "Avi",
+             family = "Kenny",
+             role = c("ctb"),
+             email = "avi.kenny@gmail.com",
+             comment = c(ORCID = "0000-0002-9465-7307")))
+Description: Statistical tools for analyzing time-to-event data using
+             machine learning. Implements survival stacking for conditional 
+             survival estimation, standardized survival function estimation for 
+             current status data, and methods for algorithm-agnostic variable
+             importance. See Wolock CJ, Gilbert PB, Simon N, 
+             and Carone M (2024) <doi:10.1080/10618600.2024.2304070>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: SuperLearner (>= 2.0.28),
+Imports: Iso (>= 0.0.18.1), haldensify (>= 0.2.3), fdrtool (>= 1.2.17),
+        ChernoffDist (>= 0.1.0), dplyr (>= 1.0.10), gtools (>= 3.9.5),
+        mboost (>= 2.9.0), survival (>= 3.5.0), stats (>= 4.3.2),
+        methods (>= 4.3.2)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), ggplot2 (>= 3.4.0),
+        gam (>= 1.22.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/cwolock/survML,
+        https://cwolock.github.io/survML/
+BugReports: https://github.com/cwolock/survML/issues
+NeedsCompilation: no
+Packaged: 2024-10-30 22:52:17 UTC; cwolock
+Author: Charles Wolock [aut, cre, cph]
+    (<https://orcid.org/0000-0003-3527-1102>),
+  Avi Kenny [ctb] (<https://orcid.org/0000-0002-9465-7307>)
+Maintainer: Charles Wolock <cwolock@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-31 00:20:01 UTC

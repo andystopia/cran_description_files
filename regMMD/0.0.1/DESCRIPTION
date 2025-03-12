@@ -1,0 +1,23 @@
+Package: regMMD
+Version: 0.0.1
+Title: Robust Regression and Estimation Through Maximum Mean
+        Discrepancy Minimization
+Description: The functions in this package compute robust estimators by minimizing a kernel-based distance known as MMD (Maximum Mean Discrepancy) between the sample and a statistical model. Recent works proved that these estimators enjoy a universal consistency property, and are extremely robust to outliers. Various optimization algorithms are implemented: stochastic gradient is available for most models, but the package also allows gradient descent in a few models for which an exact formula is available for the gradient. In terms of distribution fit, a large number of continuous and discrete distributions are available: Gaussian, exponential, uniform, gamma, Poisson, geometric, etc. In terms of regression, the models available are: linear, logistic, gamma, beta and Poisson.
+	Alquier, P. and Gerber, M. (2024) <doi:10.1093/biomet/asad031>
+	Cherief-Abdellatif, B.-E. and Alquier, P. (2022) <doi:10.3150/21-BEJ1338>.
+Authors@R: c(
+    person("Pierre", "Alquier",, email = "pierre.alquier.stat@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4249-7337")),
+    person("Mathieu", "Gerber",, email = "mathieu.gerber@bristol.ac.uk", role = "aut", comment = c(ORCID = "0000-0001-6774-2330"))
+	)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+RdMacros: Rdpack
+Imports: Rdpack (>= 0.7)
+Author: Pierre Alquier [aut, cre] (<https://orcid.org/0000-0003-4249-7337>),
+  Mathieu Gerber [aut] (<https://orcid.org/0000-0001-6774-2330>)
+Maintainer: Pierre Alquier <pierre.alquier.stat@gmail.com>
+NeedsCompilation: no
+Packaged: 2024-10-23 01:49:30 UTC; alquier
+Repository: CRAN
+Date/Publication: 2024-10-25 08:10:02 UTC

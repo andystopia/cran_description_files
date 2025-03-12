@@ -1,0 +1,38 @@
+Package: heckmanGE
+Title: Estimation and Inference for Heckman Selection Models with
+        Cluster-Robust Variance
+Version: 1.0.0
+Date: 2024-10-02
+Authors@R: 
+    c(person("Bastos", "Fernando de Souza", , "fernando.bastos@ufv.br", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0003-1503-4599")),
+      person("Barbosa", "Rogério Jerônimo", , "rogerio.barbosa@iesp.uerj.br", role = "aut",
+             comment = c(ORCID = "0000-0002-6796-4547")),
+      person("Prates", "Marcos Oliveira", , "marcosop@est.ufmg.br", role = "aut",
+             comment = c(ORCID = "0000-0001-8077-4898"))
+    )
+Description: Tools for the estimation of Heckman selection models with robust 
+  variance-covariance matrices. It includes functions for computing the bread 
+  and meat matrices, as well as clustered standard errors for generalized Heckman 
+  models, see Fernando de Souza Bastos and Wagner Barreto-Souza and Marc G. Genton 
+  (2022, ISSN: <https://www.jstor.org/stable/27164235>). The package also offers 
+  cluster-robust inference with sandwich estimators, and tools for handling issues 
+  related to eigenvalues in covariance matrices.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/fsbmat-ufv/heckmanGE
+BugReports: https://github.com/fsbmat-ufv/heckmanGE/issues
+Imports: glm2, maxLik, miscTools, vctrs
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-10-05 22:52:43 UTC; Fernando
+Author: Bastos Fernando de Souza [aut, cre]
+    (<https://orcid.org/0000-0003-1503-4599>),
+  Barbosa Rogério Jerônimo [aut]
+    (<https://orcid.org/0000-0002-6796-4547>),
+  Prates Marcos Oliveira [aut] (<https://orcid.org/0000-0001-8077-4898>)
+Maintainer: Bastos Fernando de Souza <fernando.bastos@ufv.br>
+Repository: CRAN
+Date/Publication: 2024-10-07 12:20:02 UTC

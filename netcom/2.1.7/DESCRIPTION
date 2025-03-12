@@ -1,0 +1,30 @@
+Package: netcom
+Type: Package
+Title: NETwork COMparison Inference
+Version: 2.1.7
+Date: 2024-5-28
+Description: Infer system functioning with empirical NETwork COMparisons. These methods are part of a growing paradigm in network science that uses relative comparisons of networks to infer mechanistic classifications and predict systemic interventions. They have been developed and applied in Langendorf and Burgess (2021) <doi:10.1038/s41598-021-99251-7>, Langendorf (2020) <doi:10.1201/9781351190831-6>, and Langendorf and Goldberg (2019) <doi:10.48550/arXiv.1912.12551>.
+Authors@R: c(
+    person("Ryan", "Langendorf", role = c("aut", "cre"), email = "ryan.langendorf@colorado.edu"),
+    person("Debra", "Goldberg", role = "ctb", email = "debra@colorado.edu"),
+    person("Matthew", "Burgess", role = "ctb", email = "Matthew.G.Burgess@colorado.edu")
+    )
+URL: https://github.com/langendorfr/netcom
+Repository: CRAN
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.1.0)
+Imports: stats, dplyr, tibble, clue, expm, igraph, Matrix, pdist,
+        pracma, vegan, magrittr, foreach, parallel, doParallel, optimx,
+        GenSA, rlang, ggfortify, ggplot2, ggraph, reshape2
+RoxygenNote: 7.3.1
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-06-04 16:27:43 UTC; ryan
+Author: Ryan Langendorf [aut, cre],
+  Debra Goldberg [ctb],
+  Matthew Burgess [ctb]
+Maintainer: Ryan Langendorf <ryan.langendorf@colorado.edu>
+Date/Publication: 2024-06-04 17:50:05 UTC

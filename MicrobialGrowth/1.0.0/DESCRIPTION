@@ -1,0 +1,28 @@
+Package: MicrobialGrowth
+Type: Package
+Title: Estimates Growth Parameters from Models and Plots the Curve
+Version: 1.0.0
+Authors@R: c(
+        person("Florentin", "L'Homme", email = "florentin.lhomme@gmail.com", role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0001-9684-3085")),
+        person("Clarisse", "Breard", email = "clarisse.breard@inrae.fr", role = c("aut"),
+            comment = c(ORCID = "0009-0007-5310-7599"))
+    )
+Maintainer: Florentin L'Homme <florentin.lhomme@gmail.com>
+Description: Fit growth curves to various known microbial growth models automatically to estimate growth parameters. Growth curves can be plotted with their uncertainty band. Growth models are: modified Gompertz model (Zwietering et al. (1990) <doi:10.1128/aem.56.6.1875-1881.1990>), Baranyi model (Baranyi and Roberts (1994) <doi:10.1016/0168-1605%2894%2990157-0>), Rosso model (Rosso et al. (1993) <doi:10.1006/jtbi.1993.1099>) and linear model (Dantigny (2005) <doi:10.1016/j.ijfoodmicro.2004.10.013>).
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: graphics, grDevices, methods, nlstools, stats, utils
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+LazyData: true
+Collate: 'utils.R' 'base.R' 'acide.R' 'baranyi.R' 'data.R' 'gompertz.R'
+        'linear.R' 'rosso.R'
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-03-08 21:08:17 UTC; florentin
+Author: Florentin L'Homme [aut, cre] (<https://orcid.org/0000-0001-9684-3085>),
+  Clarisse Breard [aut] (<https://orcid.org/0009-0007-5310-7599>)
+Repository: CRAN
+Date/Publication: 2025-03-10 16:40:08 UTC

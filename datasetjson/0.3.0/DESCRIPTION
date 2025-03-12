@@ -1,0 +1,36 @@
+Package: datasetjson
+Type: Package
+Title: Read and Write CDISC Dataset JSON Files
+Version: 0.3.0
+Authors@R: c(
+    person(given = "Mike",
+           family = "Stackhouse",
+           role = c("aut", "cre"),
+           email = "mike.stackhouse@atorusresearch.com",
+           comment = c(ORCID = "0000-0001-6030-723X")),
+    person(given = "Nicholas",
+           family = "Masel",
+           email = "nmasel@its.jnj.com",
+           role = "aut")
+    )
+Description: Read, construct and write CDISC (Clinical Data Interchange Standards Consortium) Dataset JSON (JavaScript Object Notation) files, while validating per the Dataset JSON schema file, as described in CDISC (2023) <https://www.cdisc.org/standards/data-exchange/dataset-json>.
+URL: https://atorus-research.github.io/datasetjson/
+BugReports: https://github.com/atorus-research/datasetjson/issues/
+Encoding: UTF-8
+Language: en-US
+License: Apache License (>= 2)
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0)
+Imports: yyjsonr (>= 0.1.18), jsonvalidate (>= 1.3.1), hms
+Suggests: testthat (>= 2.1.0), jsonlite (>= 1.8.0), knitr, haven,
+        rmarkdown, withr, purrr, tibble, dplyr, lubridate, data.table
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-30 15:44:49 UTC; mstackhouse
+Author: Mike Stackhouse [aut, cre] (<https://orcid.org/0000-0001-6030-723X>),
+  Nicholas Masel [aut]
+Maintainer: Mike Stackhouse <mike.stackhouse@atorusresearch.com>
+Repository: CRAN
+Date/Publication: 2025-01-30 16:00:01 UTC

@@ -1,0 +1,31 @@
+Package: cenROC
+Type: Package
+Title: Estimating Time-Dependent ROC Curve and AUC for Censored Data
+Version: 2.0.0
+Authors@R: c(person(given = "Kassu Mehari",
+           family = "Beyene",
+           role = c("aut", "cre"),
+           email = "kassu.mehari@wu.edu.et"),
+           person(given = "Anouar",
+           family = "El Ghouch",
+           role = c("aut","ths")))
+Description: Contains functions to estimate a smoothed and a non-smoothed (empirical) time-dependent 
+             receiver operating characteristic curve and the corresponding area under the receiver 
+             operating characteristic curve and the optimal cutoff point for the right and interval 
+             censored survival data. See Beyene and El Ghouch (2020)<doi:10.1002/sim.8671> and Beyene 
+             and El Ghouch (2022) <doi:10.1002/bimj.202000382>.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0), icenReg, condSURV, survival, stats, graphics,
+        methods
+LinkingTo: Rcpp, RcppEigen
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-03-27 03:57:11 UTC; m2kas
+Author: Kassu Mehari Beyene [aut, cre],
+  Anouar El Ghouch [aut, ths]
+Maintainer: Kassu Mehari Beyene <kassu.mehari@wu.edu.et>
+Repository: CRAN
+Date/Publication: 2023-03-27 08:10:05 UTC

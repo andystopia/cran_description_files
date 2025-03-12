@@ -1,0 +1,38 @@
+Type: Package
+Package: seqimpute
+Title: Imputation of Missing Data in Sequence Analysis
+Version: 2.2.0
+Authors@R: c(
+    person("Kevin", "Emery", , "kevin.emery@unige.ch", role = c("aut", "cre")),
+    person("Anthony", "Guinchard", role = "aut"),
+    person("Andre", "Berchtold", role = "aut"),
+    person("Kamyar", "Taher", role = "aut")
+  )
+Description: Multiple imputation of missing data in a dataset using MICT or 
+    MICT-timing methods. The core idea of the algorithms is to fill gaps of 
+    missing data, which is the typical form of missing data in a longitudinal 
+    setting, recursively from their edges. Prediction is based on either a 
+    multinomial or random forest regression model. Covariates and 
+    time-dependent covariates can be included in the model.
+License: GPL-2
+Imports: Amelia, cluster, dfidx, doRNG, doSNOW, dplyr, foreach,
+        graphics, mlr, nnet, parallel, plyr, ranger, rms, stats,
+        stringr, TraMineR, TraMineRextras, utils, mice, parallelly
+Suggests: R.rsp, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: R.rsp
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/emerykevin/seqimpute
+BugReports: https://github.com/emerykevin/seqimpute/issues
+NeedsCompilation: no
+Packaged: 2025-01-15 14:33:26 UTC; Kevin
+Author: Kevin Emery [aut, cre],
+  Anthony Guinchard [aut],
+  Andre Berchtold [aut],
+  Kamyar Taher [aut]
+Maintainer: Kevin Emery <kevin.emery@unige.ch>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-01-15 16:10:02 UTC

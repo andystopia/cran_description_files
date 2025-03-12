@@ -1,0 +1,24 @@
+Package: bagged.outliertrees
+Maintainer: Rafael Santos <rafael.jpsantos@outlook.com>
+Title: Robust Explainable Outlier Detection Based on OutlierTree
+Version: 1.0.0
+Authors@R: 
+    person(given = "Rafael",
+           family = "Santos",
+           role = c("aut", "cre"),
+           email = "rafael.jpsantos@outlook.com")
+Description: Bagged OutlierTrees is an explainable unsupervised outlier detection method based on an ensemble implementation of the existing OutlierTree procedure (Cortes, 2020). This implementation takes advantage of bootstrap aggregating (bagging) to improve robustness by reducing the possible masking effect and subsequent high variance (similarly to Isolation Forest), hence the name "Bagged OutlierTrees". To learn more about the base procedure OutlierTree (Cortes, 2020), please refer to <arXiv:2001.00636>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: outliertree, dplyr, doSNOW, parallel, foreach, rlist,
+        data.table
+Depends: R (>= 3.5.0)
+URL: https://github.com/RafaJPSantos/bagged.outliertrees
+BugReports: https://github.com/RafaJPSantos/bagged.outliertrees/issues
+NeedsCompilation: no
+Packaged: 2021-07-05 09:07:11 UTC; ptrafjossan
+Author: Rafael Santos [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-07-06 09:00:02 UTC

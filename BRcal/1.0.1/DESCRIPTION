@@ -1,0 +1,26 @@
+Package: BRcal
+Title: Boldness-Recalibration of Binary Events
+Version: 1.0.1
+Authors@R: 
+    c(person("Adeline P.", "Guthrie", , "apguthrie47@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0000-1548-3648")),
+      person("Christopher T.", "Franck", , "chfranck@vt.edu", role = c("aut")))
+Description: Boldness-recalibration maximally spreads out probability predictions while maintaining a user specified level of calibration, facilitated the brcal() function. Supporting functions to assess calibration via Bayesian and Frequentist approaches, Maximum Likelihood Estimator (MLE) recalibration, Linear in Log Odds (LLO)-adjust via any specified parameters, and visualize results are also provided. Methodological details can be found in Guthrie & Franck (2024) <doi:10.1080/00031305.2024.2339266>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 4.3)
+LazyData: true
+Imports: nloptr, fields, ggplot2, lifecycle
+Suggests: knitr, rmarkdown, devtools, xfun, gridExtra, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/apguthrie/BRcal
+BugReports: https://github.com/apguthrie/BRcal/issues
+NeedsCompilation: no
+Packaged: 2024-10-14 13:19:41 UTC; apgut
+Author: Adeline P. Guthrie [aut, cre] (<https://orcid.org/0009-0000-1548-3648>),
+  Christopher T. Franck [aut]
+Maintainer: Adeline P. Guthrie <apguthrie47@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-14 14:10:02 UTC

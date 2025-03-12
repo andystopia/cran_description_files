@@ -1,0 +1,41 @@
+Package: fairadapt
+Title: Fair Data Adaptation with Quantile Preservation
+Description: An implementation of the fair data adaptation with quantile
+    preservation described in Plecko & Meinshausen (JMLR 2020, 21(242), 1-44).
+    The adaptation procedure uses the specified causal graph to pre-process the
+    given training and testing data in such a way to remove the bias caused by
+    the protected attribute. The procedure uses tree ensembles for quantile
+    regression. Instructions for using the methods are further elaborated in 
+    the corresponding JSS manuscript, see <doi:10.18637/jss.v110.i04>.
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Drago",
+           family = "Plecko",
+           role = c("aut", "cre"),
+           email = "www.plecko@gmail.com"),
+    person(given = "Nicolas",
+           family = "Bennett",
+           role = "aut",
+           email = "nicolas.bennett@stat.math.ethz.ch")
+    )
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+URL: https://github.com/dplecko/fairadapt
+BugReports: https://github.com/dplecko/fairadapt/issues
+Depends: R (>= 3.5.0)
+Imports: ranger (>= 0.13.1), assertthat, quantreg, qrnn, igraph,
+        ggplot2, cowplot, scales
+Suggests: testthat (>= 3.0.3), knitr, rmarkdown, rticles, mvtnorm,
+        magick, ggraph, pdftools, microbenchmark, xtable, spelling
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-05 16:14:37 UTC; pleckod
+Author: Drago Plecko [aut, cre],
+  Nicolas Bennett [aut]
+Maintainer: Drago Plecko <www.plecko@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-06 12:50:08 UTC

@@ -1,0 +1,37 @@
+Package: pharmaRTF
+Type: Package
+Title: Enhanced RTF Wrapper for Use with Existing Table Packages
+Version: 0.1.4
+Authors@R: c(
+    person(family = "Miller", given = "Eli", email = "eli.miller@atorusresearch.com", role = "aut", comment = c(ORCID = "0000-0002-2127-9456")), 
+    person(family = "Tarasiewicz", given = "Ashley", email = "Ashley.Tarasiewicz@atorusresearch.com", role = "aut"),
+    person(family = "Stackhouse", given = "Michael", email = "mike.stackhouse@atorusresearch.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6030-723X")),
+    person(given = "Atorus Research LLC", role = "cph")
+    )
+Description: Enhanced RTF wrapper written in R for use with existing R tables
+    packages such as 'Huxtable' or 'GT'. This package fills a gap where tables in
+    certain packages can be written out to RTF, but cannot add certain metadata
+    or features to the document that are required/expected in a report for a
+    regulatory submission, such as multiple levels of titles and footnotes,
+    making the document landscape, and controlling properties such as margins.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+BugReports: https://github.com/atorus-research/pharmaRTF/issues
+Encoding: UTF-8
+Imports: assertthat (>= 0.2.1), stringr (>= 1.4.0), purrr (>= 0.3.3),
+        huxtable (>= 4.7.1)
+Suggests: testthat (>= 2.1.0), dplyr (>= 0.8.4), readr (>= 1.3.1), gt
+        (>= 0.2.0), magrittr (>= 1.5), knitr (>= 1.28), rmarkdown (>=
+        2.1), readxl (>= 1.3.1), kableExtra (>= 1.1.0), plyr (>=
+        1.8.5), tidyverse (>= 1.3.0)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-28 13:22:04 UTC; eli.miller
+Author: Eli Miller [aut] (<https://orcid.org/0000-0002-2127-9456>),
+  Ashley Tarasiewicz [aut],
+  Michael Stackhouse [aut, cre] (<https://orcid.org/0000-0001-6030-723X>),
+  Atorus Research LLC [cph]
+Maintainer: Michael Stackhouse <mike.stackhouse@atorusresearch.com>
+Repository: CRAN
+Date/Publication: 2021-09-28 14:00:02 UTC

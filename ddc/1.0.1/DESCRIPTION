@@ -1,0 +1,26 @@
+Package: ddc
+Type: Package
+Title: Distance Density Clustering Algorithm
+Version: 1.0.1
+Date: 2022-12-13
+Authors@R: c(person("Ruizhe", "Ma", email = "maruizhe.cs@gmail.com", role = c("cre", "aut")), person("Bing", "Jiang", email = "bingjiang1985@gmail.com", role = "aut"))
+Maintainer: Ruizhe Ma <maruizhe.cs@gmail.com>
+Description: A distance density clustering (DDC) algorithm in R. DDC uses dynamic time warping (DTW) to compute a similarity matrix, based on which cluster centers and cluster assignments are found. DDC inherits dynamic time warping (DTW) arguments and constraints. The cluster centers are centroid points that are calculated using the DTW Barycenter Averaging (DBA) algorithm. The clustering process is divisive. At each iteration, cluster centers are updated and data is reassigned to cluster centers. Early stopping is possible. The output includes cluster centers and clustering assignment, as described in the paper (Ma et al (2017) <doi:10.1109/ICDMW.2017.11>).
+License: GPL (>= 2)
+Depends: R (>= 4.2)
+Imports: dtw (>= 1.22), dtwclust (>= 5.5), parallel (>= 4.2), magrittr
+        (>= 2.0), utils
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+ByteCompile: yes
+BuildResaveData: no
+NeedsCompilation: yes
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Language: en-US
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Packaged: 2022-12-14 04:11:40 UTC; bingjiang
+Author: Ruizhe Ma [cre, aut],
+  Bing Jiang [aut]
+Repository: CRAN
+Date/Publication: 2022-12-14 12:00:05 UTC

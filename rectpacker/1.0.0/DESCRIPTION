@@ -1,0 +1,32 @@
+Package: rectpacker
+Type: Package
+Title: Rectangle Packing
+Version: 1.0.0
+Authors@R: c(
+    person("Mike", "Cheng", role = c("aut", "cre", 'cph'), email = "mikefc@coolbutuseless.com"),
+    person("Sean", "Barrett", role = c("aut", 'cph'), comment = "Author of included stb_rect_pack.h library")
+    )
+Maintainer: Mike Cheng <mikefc@coolbutuseless.com>
+URL: https://github.com/coolbutuseless/rectpacker
+BugReports: https://github.com/coolbutuseless/rectpacker/issues
+Description: Rectangle packing is a packing problem where rectangles are placed
+    into a larger rectangular region (without overlapping) in order to maximise
+    the use space.  Rectangles are packed using the skyline heuristic as discussed 
+    in Lijun et al (2011) 'A Skyline-Based Heuristic for the 2D Rectangular Strip
+    Packing Problem' <doi:10.1007/978-3-642-21827-9_29>.  A function is also 
+    included for determining a good small-sized box for containing a given
+    set of rectangles.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Copyright: The included 'stb_rect_pack.h' header (v1.01) is Copyright
+        (c) 2017 Sean Barrett and licensed under the MIT license. See
+        COPYRIGHTS file for more details.
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-12-04 06:32:19 UTC; mike
+Author: Mike Cheng [aut, cre, cph],
+  Sean Barrett [aut, cph] (Author of included stb_rect_pack.h library)
+Repository: CRAN
+Date/Publication: 2024-12-05 19:00:02 UTC

@@ -1,0 +1,55 @@
+Package: ContRespPP
+Title: Predictive Probability for a Continuous Response with an ANOVA
+        Structure
+Version: 0.4.2
+Authors@R: c(
+    person(given = "Victoria",
+           family = "Sieck",
+           role = c("aut", "cre"),
+           email = "vcarrillo314@gmail.com",
+           comment = c(ORCID = "0000-0002-7169-7795")),
+    person(given = "Joshua",
+           family = "Clifford",
+           role = "aut",
+           email = "jcliff89@gmail.com",
+           comment = c(ORCID = "0000-0002-6969-2581")),
+    person(given = "Fletcher",
+           family = "Christensen",
+           role = "aut",
+           email = "ronald@stat.unm.edu",
+           comment = c(ORCID = "0000-0002-5303-8139"))
+    )
+Description: A Bayesian approach to using 
+    predictive probability in an ANOVA construct with a continuous normal response, 
+    when threshold values must be obtained for the question of interest to be 
+    evaluated as successful (Sieck and Christensen (2021) <doi:10.1002/qre.2802>). 
+    The Bayesian Mission Mean (BMM) is used to evaluate a question 
+    of interest (that is, a mean that randomly selects combination of factor levels 
+    based on their probability of occurring instead of averaging over the factor 
+    levels, as in the grand mean). Under this construct, in contrast to a Gibbs 
+    sampler (or Metropolis-within-Gibbs sampler), a two-stage sampling method is 
+    required. The nested sampler determines the conditional posterior distribution 
+    of the model parameters, given Y, and the outside sampler determines the marginal 
+    posterior distribution of Y (also commonly called the predictive distribution for Y). 
+    This approach provides a sample from the joint posterior distribution of Y and 
+    the model parameters, while also accounting for the threshold value that must be 
+    obtained in order for the question of interest to be evaluated as successful.
+URL: https://github.com/jcliff89/ContRespPP
+BugReports: https://github.com/jcliff89/ContRespPP/issues
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: stats
+Suggests: rjags, coda, knitr, devtools, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-13 20:09:26 UTC; jcliff
+Author: Victoria Sieck [aut, cre] (<https://orcid.org/0000-0002-7169-7795>),
+  Joshua Clifford [aut] (<https://orcid.org/0000-0002-6969-2581>),
+  Fletcher Christensen [aut] (<https://orcid.org/0000-0002-5303-8139>)
+Maintainer: Victoria Sieck <vcarrillo314@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-10-15 22:45:27 UTC

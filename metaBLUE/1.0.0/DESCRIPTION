@@ -1,0 +1,26 @@
+Package: metaBLUE
+Title: BLUE for Combining Location and Scale Information in a
+        Meta-Analysis
+Version: 1.0.0
+Authors@R: c(
+    person("Xin", "Yang", email = "xyang.krystal@gmail.com", role = c("cre","aut")),
+    person("Alan", "Hutson", email = "Alan.Hutson@roswellpark.org", role = "aut"),
+    person("Dongliang", "Wang", email = "WangD@upstate.edu", role = "aut"))
+Description: The sample mean and standard deviation are two commonly used statistics in meta-analyses, 
+    but some trials use other summary statistics such as the median and quartiles to report the results. 
+    Therefore, researchers need to transform those information back to the sample mean and 
+    standard deviation. This package implemented sample mean estimators by Luo et al. (2016) <arXiv:1505.05687>, sample standard deviation estimators by Wan et al. (2014) <arXiv:1407.8038>, and the best linear unbiased estimators (BLUEs) of location and scale parameters by Yang et al. (2018, submitted) based on sample quantiles derived summaries in a meta-analysis.
+Depends: R (>= 3.3)
+Imports: stats, Matrix
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-05-27 22:53:23 UTC; HP-PC
+Author: Xin Yang [cre, aut],
+  Alan Hutson [aut],
+  Dongliang Wang [aut]
+Maintainer: Xin Yang <xyang.krystal@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-05-29 08:30:49 UTC

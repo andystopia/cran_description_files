@@ -1,0 +1,33 @@
+Package: parabar
+Title: Progress Bar for Parallel Tasks
+Version: 1.4.2
+Authors@R: 
+    person(given = "Mihai",
+           family = "Constantin",
+           role = c("aut", "cre"),
+           email = "mihai@mihaiconstantin.com",
+           comment = c(ORCID = "0000-0002-6460-0107"))
+Description: A simple interface in the form of R6 classes for executing tasks in
+    parallel, tracking their progress, and displaying accurate progress bars.
+License: MIT + file LICENSE
+URL: https://parabar.mihaiconstantin.com
+BugReports: https://github.com/mihaiconstantin/parabar/issues
+Imports: R6, progress, parallel, callr, filelock, utils
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Collate: 'TaskState.R' 'Options.R' 'Helper.R' 'Exception.R'
+        'Specification.R' 'BackendService.R' 'Backend.R'
+        'AsyncBackend.R' 'SyncBackend.R' 'BackendFactory.R' 'Bar.R'
+        'ModernBar.R' 'BasicBar.R' 'BarFactory.R' 'Context.R'
+        'ProgressTrackingContext.R' 'ContextFactory.R' 'SessionState.R'
+        'Warning.R' 'UserApiConsumer.R' 'exports.R' 'logo.R'
+        'parabar-package.R'
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-16 23:10:06 UTC; mihai
+Author: Mihai Constantin [aut, cre] (<https://orcid.org/0000-0002-6460-0107>)
+Maintainer: Mihai Constantin <mihai@mihaiconstantin.com>
+Repository: CRAN
+Date/Publication: 2024-12-17 08:50:02 UTC

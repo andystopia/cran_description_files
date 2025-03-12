@@ -1,0 +1,42 @@
+Package: FDboost
+Type: Package
+Title: Boosting Functional Regression Models
+Version: 1.1-2
+Date: 2023-08-12
+Authors@R: c(person("Sarah", "Brockhaus", role = "aut",
+		            email = "Sarah.Brockhaus@stat.uni-muenchen.de"), 
+			 person("David", "Ruegamer", role = c("aut", "cre"), 
+			        email = "david.ruegamer@gmail.com"),
+			 person("Almond", "Stoecker", role = "aut", 
+			        email = "almond.stoecker@hu-berlin.de"),
+			 person("Torsten", "Hothorn", role = "ctb"), 
+			 person("with contributions by many others", "(see inst/CONTRIBUTIONS)", role = "ctb"))
+Maintainer: David Ruegamer <david.ruegamer@gmail.com>
+Description: Regression models for functional data, i.e., scalar-on-function,
+    function-on-scalar and function-on-function regression models, are fitted
+    by a component-wise gradient boosting algorithm. 
+	For a manual on how to use 'FDboost', see Brockhaus, Ruegamer, Greven (2017) <doi:10.18637/jss.v094.i10>.
+Depends: R (>= 3.5.0), mboost (>= 2.9-0)
+Imports: methods, graphics, grDevices, utils, stats, Matrix,
+        gamboostLSS (>= 2.0-0), stabs, mgcv, MASS, zoo
+Suggests: fda, fields, ggplot2, maps, mapdata, knitr, refund, testthat
+License: GPL-2
+Packaged: 2023-08-12 14:51:20 UTC; david
+Collate: 'aaa.R' 'FDboost-package.R' 'FDboost.R' 'baselearners.R'
+        'baselearnersX.R' 'bootstrapCIs.R' 'clr_functions.R'
+        'constrainedX.R' 'crossvalidation.R' 'factorize.R'
+        'FDboostLSS.R' 'hmatrix.R' 'methods.R' 'stabsel.R'
+        'utilityFunctions.R'
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+BugReports: https://github.com/boost-R/FDboost/issues
+URL: https://github.com/boost-R/FDboost
+VignetteBuilder: knitr
+NeedsCompilation: no
+Author: Sarah Brockhaus [aut],
+  David Ruegamer [aut, cre],
+  Almond Stoecker [aut],
+  Torsten Hothorn [ctb],
+  with contributions by many others (see inst/CONTRIBUTIONS) [ctb]
+Repository: CRAN
+Date/Publication: 2023-08-12 15:20:09 UTC

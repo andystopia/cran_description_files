@@ -1,0 +1,52 @@
+Package: EVI
+Title: Epidemic Volatility Index as an Early-Warning Tool
+Version: 0.2.0-0
+Date: 2023-11-30
+Authors@R: 
+    c(
+    person(given = "Eletherios",
+           family = "Meletis",
+           role = c("aut"),
+           email = "emeletis@outlook.com"),
+    person(given = "Konstantinos",
+           family = "Pateras",
+           role = c("aut", "cre"),
+           email = "kostas.pateras@gmail.com"),
+    person(given = "Paolo",
+           family = "Eusebi",
+           role = c("aut"),
+           email = "paoloeusebi@gmail.com"),
+    person(given = "Matt",
+           family = "Denwood",
+           role = c("aut"),
+           email = "md@sund.ku.dk"),
+    person(given = "Polychronis",
+           family = "Kostoulas",
+           role = c("aut"),
+           email = "pkost@uth.gr")
+    )
+Description: 
+    This is an R package implementing the epidemic volatility index (EVI), as 
+    discussed by Kostoulas et. al. (2021) and variations by Pateras et. al. (2023). EVI is a new, conceptually simple, early warning tool for oncoming epidemic waves. 
+    EVI is based on the volatility of newly reported cases per unit of time,
+    ideally per day, and issues an early warning when the volatility change rate exceeds a threshold.
+URL: https://www.nature.com/articles/s41598-021-02622-3
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 3.5.0)
+Imports: ggplot2, cowplot
+Suggests: knitr, markdown, rmarkdown, spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-12-02 15:14:23 UTC; kosta
+Author: Eletherios Meletis [aut],
+  Konstantinos Pateras [aut, cre],
+  Paolo Eusebi [aut],
+  Matt Denwood [aut],
+  Polychronis Kostoulas [aut]
+Maintainer: Konstantinos Pateras <kostas.pateras@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-05 09:20:02 UTC

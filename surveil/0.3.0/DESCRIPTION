@@ -1,0 +1,35 @@
+Package: surveil
+Title: Time Series Models for Disease Surveillance
+Version: 0.3.0
+Date: 2024-07-07
+Authors@R: 
+    person(given = "Connor",
+           family = "Donegan",
+           role = c("aut", "cre"),
+           email = "connor.donegan@gmail.com",
+           comment = c(ORCID = "0000-0002-9698-5443"))
+URL: https://connordonegan.github.io/surveil/,
+        https://github.com/ConnorDonegan/surveil/
+Description: Fits time trend models for routine disease surveillance tasks and returns probability distributions for a variety of quantities of interest, including age-standardized rates, period and cumulative percent change, and measures of health inequality. The models are appropriate for count data such as disease incidence and mortality data, employing a Poisson or binomial likelihood and the first-difference (random-walk) prior for unknown risk. Optionally add a covariance matrix for multiple, correlated time series models. Inference is completed using Markov chain Monte Carlo via the Stan modeling language. References: Donegan, Hughes, and Lee (2022) <doi:10.2196/34589>; Stan Development Team (2021) <https://mc-stan.org>; Theil (1972, ISBN:0-444-10378-3).
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: rstantools (>= 2.1.1), methods, Rcpp (>= 0.12.0), RcppParallel
+        (>= 5.0.1), rstan (>= 2.26.0), tidybayes (>= 3.0.0), dplyr (>=
+        1.0.7), rlang (>= 0.4.0), tidyr (>= 1.1.0), ggplot2 (>= 3.0.0),
+        gridExtra (>= 2.0), scales (>= 0.4.0), ggdist (>= 3.0.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.26.0)
+Suggests: rmarkdown, knitr, testthat
+SystemRequirements: GNU make
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-07-08 14:44:26 UTC; connor
+Author: Connor Donegan [aut, cre] (<https://orcid.org/0000-0002-9698-5443>)
+Maintainer: Connor Donegan <connor.donegan@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-08 15:30:02 UTC

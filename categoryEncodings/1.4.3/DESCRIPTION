@@ -1,0 +1,29 @@
+Package: categoryEncodings
+Type: Package
+Title: Category Variable Encodings
+Encoding: UTF-8
+Version: 1.4.3
+Date: 2020-1-30
+Authors@R: 
+    person(given = "Juraj",
+           family = "Szitas",
+           role = c("aut", "cre"),
+           email = "szitas.juraj13@gmail.com")
+BugReports: https://github.com/JSzitas/categoryEncodings/issues
+Description: Simple, fast, and automatic encodings for category data using 
+             a data.table backend. Most of the methods are an implementation 
+             of "Sufficient Representation for Categorical Variables" by
+             Johannemann, Hadad, Athey, Wager (2019) <arXiv:1908.09874>,
+             particularly their mean, sparse principal component analysis, 
+             low rank representation, and multinomial logit encodings.
+License: GPL-3
+RoxygenNote: 6.1.1
+Suggests: testthat (>= 2.1.0), covr
+URL: https://github.com/JSzitas/categoryEncodings
+Imports: glmnet, sparsepca, data.table
+NeedsCompilation: no
+Packaged: 2020-02-22 10:42:43 UTC; juraj
+Author: Juraj Szitas [aut, cre]
+Maintainer: Juraj Szitas <szitas.juraj13@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-02 11:20:06 UTC

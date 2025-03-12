@@ -1,0 +1,25 @@
+Package: BayesPieceHazSelect
+Type: Package
+Title: Variable Selection in a Hierarchical Bayesian Model for a Hazard
+        Function
+Version: 1.1.0
+Authors@R: person("Andrew", "Chapple", email = "AndrewChapple21@gmail.com", role = c("aut", "cre"))
+Maintainer: Andrew Chapple <AndrewChapple21@gmail.com>
+Description: Fits a piecewise exponential hazard to survival data using a
+    Hierarchical Bayesian model with an Intrinsic Conditional Autoregressive
+    formulation for the spatial dependency in the hazard rates for each piece.
+    This function uses Metropolis- Hastings-Green MCMC to allow the number of split
+    points to vary and also uses Stochastic Search Variable Selection to determine
+    what covariates drive the risk of the event. This function outputs trace plots
+    depicting the number of split points in the hazard and the number of variables
+    included in the hazard. The function saves all posterior quantities to the
+    desired path.
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 5.0.1
+Depends: mvtnorm
+NeedsCompilation: no
+Packaged: 2017-01-24 14:57:10 UTC; Andrew
+Author: Andrew Chapple [aut, cre]
+Repository: CRAN
+Date/Publication: 2017-01-26 12:07:54

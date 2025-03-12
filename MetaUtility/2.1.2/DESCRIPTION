@@ -1,0 +1,18 @@
+Package: MetaUtility
+Type: Package
+Title: Utility Functions for Conducting and Interpreting Meta-Analyses
+Version: 2.1.2
+Author: Maya B. Mathur, Rui Wang, Tyler J. VanderWeele
+Maintainer: Maya B. Mathur <mmathur@stanford.edu>
+Description: Contains functions to estimate the proportion of effects stronger than a threshold
+    of scientific importance (function prop_stronger), to nonparametrically characterize the distribution of effects in a meta-analysis (calib_ests, pct_pval),
+    to make effect size conversions (r_to_d, r_to_z, z_to_r, d_to_logRR), to compute and format inference in a meta-analysis (format_CI, format_stat, tau_CI), to scrape results from 
+    existing meta-analyses for re-analysis (scrape_meta, parse_CI_string, ci_to_var).
+License: GPL-2
+Encoding: UTF-8
+Imports: metafor, metadat, stats, stringr, purrr, dplyr, tidyr, rlang
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-10-29 23:26:37 UTC; mmathur
+Repository: CRAN
+Date/Publication: 2021-10-30 09:50:17 UTC

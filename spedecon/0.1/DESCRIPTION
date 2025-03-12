@@ -1,0 +1,19 @@
+Package: spedecon
+Type: Package
+Title: Smoothness-Penalized Deconvolution for Density Estimation Under
+        Measurement Error
+Version: 0.1
+Date: 2024-01-11
+Authors@R: person("David", "Kent", email = "dk657@cornell.edu", role = c("aut","cre"), comment = c(ORCID = "0000-0003-2880-1216"))
+URL: https://www.davidjkent.org
+Description: Implements the Smoothness-Penalized Deconvolution method for estimating a probability density under measurement error of Kent and Ruppert (2023) <doi:10.1080/01621459.2023.2259028>. The estimator is formed by computing a histogram of the error-contaminated data, and then finding an estimate that minimizes a reconstruction error plus a smoothness-inducing penalty term. The primary function, sped(), takes the data and error distribution, and returns the estimator as a function.
+License: GPL-3
+Imports: quadprog, splines, methods, stats, graphics
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+Packaged: 2024-01-12 00:00:28 UTC; davidk
+Author: David Kent [aut, cre] (<https://orcid.org/0000-0003-2880-1216>)
+Maintainer: David Kent <dk657@cornell.edu>
+Repository: CRAN
+Date/Publication: 2024-01-12 10:00:02 UTC

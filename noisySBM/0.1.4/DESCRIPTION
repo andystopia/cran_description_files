@@ -1,0 +1,36 @@
+Package: noisySBM
+Type: Package
+Title: Noisy Stochastic Block Mode: Graph Inference by Multiple Testing
+Version: 0.1.4
+Authors@R: 
+  c(person(given = "Tabea",
+           family = "Rebafka",
+           role = c("aut", "cre"),
+           email = "tabea.rebafka@sorbonne-universite.fr"),
+    person(given = "Etienne",
+           family = "Roquain",
+           role = "ctb"),
+    person(given = "Fanny",
+           family = "Villers",
+           role = "aut"))
+Author: Tabea Rebafka [aut, cre],
+  Etienne Roquain [ctb],
+  Fanny Villers [aut]
+Maintainer: Tabea Rebafka <tabea.rebafka@sorbonne-universite.fr>
+Description: Variational Expectation-Maximization algorithm to fit the noisy stochastic block model to an observed dense graph 
+    and to perform a node clustering. Moreover, a graph inference procedure to recover the underlying 
+    binary graph. This procedure comes with a control of the false discovery rate. The method is described
+    in the article "Powerful graph inference with false discovery rate control" by T. Rebafka, 
+    E. Roquain, F. Villers (2020) <arXiv:1907.10176>.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: parallel, gtools, ggplot2, RColorBrewer
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2020-12-14 21:10:07 UTC; tabea
+Repository: CRAN
+Date/Publication: 2020-12-16 10:40:06 UTC

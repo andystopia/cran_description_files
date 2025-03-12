@@ -1,0 +1,22 @@
+Package: FlexRL
+Title: A Flexible Model for Record Linkage
+Version: 0.1.0
+Authors@R: 
+    person("Kayané", "ROBACH", , "k.c.robach@amsterdamumc.nl", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-5725-623X"))
+Description: Implementation of the Stochastic Expectation Maximisation (StEM) approach to Record Linkage described in the paper by K. Robach, S. L. van der Pas, M. A. van de Wiel and M. H. Hof (2024, <doi:10.48550/arXiv.2407.06835>); see 'citation("FlexRL")' for details. This is a record linkage method, for finding the common set of records among 2 data sources based on Partially Identifying Variables (PIVs) available in both sources. It includes modelling of dynamic Partially Identifying Variables (e.g. postal code) that may evolve over time and registration errors (missing values and mistakes in the registration). Low memory footprint.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.4.0)
+Imports: Matrix (>= 1.7), progress(>= 1.2.3), testit(>= 0.13), Rcpp(>=
+        1.0.13)
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-12-06 12:59:19 UTC; kayane
+Author: Kayané ROBACH [aut, cre, cph] (<https://orcid.org/0000-0002-5725-623X>)
+Maintainer: Kayané ROBACH <k.c.robach@amsterdamumc.nl>
+Repository: CRAN
+Date/Publication: 2024-12-09 13:20:02 UTC

@@ -1,0 +1,47 @@
+Package: robotstxt
+Date: 2024-08-25
+Type: Package
+Title: A 'robots.txt' Parser and 'Webbot'/'Spider'/'Crawler'
+        Permissions Checker
+Version: 0.7.15
+Authors@R: c(
+        person(
+          "Pedro", "Baltazar", role = c("aut", "cre"),
+          email = "pedrobtz@gmail.com"
+        ),
+        person(
+          "Peter", "Meissner", role = c("aut"),
+          email = "retep.meissner@gmail.com"
+        ),
+        person(
+            "Kun", "Ren", email = "mail@renkun.me", role = c("aut", "cph"),
+            comment = "Author and copyright holder of list_merge.R."
+        ),
+	    person("Oliver", "Keys", role = "ctb", comment = "original release code review"),
+	    person("Rich", "Fitz John", role = "ctb", comment = "original release code review")
+	  )
+Description: Provides functions to download and parse 'robots.txt' files.
+        Ultimately the package makes it easy to check if bots
+        (spiders, crawler, scrapers, ...) are allowed to access specific
+        resources on a domain.
+License: MIT + file LICENSE
+BugReports: https://github.com/ropensci/robotstxt/issues
+URL: https://docs.ropensci.org/robotstxt/,
+        https://github.com/ropensci/robotstxt
+Imports: stringr (>= 1.0.0), httr (>= 1.0.0), spiderbar (>= 0.2.0),
+        future.apply (>= 1.0.0), magrittr, utils
+Suggests: knitr, rmarkdown, dplyr, testthat, covr, curl
+Depends: R (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-08-25 07:16:34 UTC; pbtz
+Author: Pedro Baltazar [aut, cre],
+  Peter Meissner [aut],
+  Kun Ren [aut, cph] (Author and copyright holder of list_merge.R.),
+  Oliver Keys [ctb] (original release code review),
+  Rich Fitz John [ctb] (original release code review)
+Maintainer: Pedro Baltazar <pedrobtz@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-29 17:00:01 UTC

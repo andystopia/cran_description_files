@@ -1,0 +1,26 @@
+Package: gremlin
+Type: Package
+Title: Mixed-Effects REML Incorporating Generalized Inverses
+Version: 1.1.0
+Authors@R: person("Matthew", "Wolak", email = "matthewwolak@gmail.com", role = c("cre", "aut"), comment = c(ORCID="0000-0002-7962-0071"))
+URL: https://github.com/matthewwolak/gremlin
+BugReports: https://github.com/matthewwolak/gremlin/issues
+Depends: Matrix
+Imports: methods, nlme
+LazyData: yes
+NeedsCompilation: yes
+Description: Fit linear mixed-effects models using restricted (or residual)
+    maximum likelihood (REML) and with generalized inverse matrices to specify
+    covariance structures for random effects. In particular, the package is
+    suited to fit quantitative genetic mixed models, often referred to as
+    'animal models'. Implements the average information algorithm as the main
+    tool to maximize the restricted log-likelihood, but with other algorithms
+    available.
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Packaged: 2024-11-04 17:08:12 UTC; mew0099
+Author: Matthew Wolak [cre, aut] (<https://orcid.org/0000-0002-7962-0071>)
+Maintainer: Matthew Wolak <matthewwolak@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-04 18:40:02 UTC

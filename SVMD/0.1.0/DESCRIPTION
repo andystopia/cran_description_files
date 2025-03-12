@@ -1,0 +1,24 @@
+Package: SVMD
+Type: Package
+Title: Spearman Variational Mode Decomposition
+Version: 0.1.0
+Authors@R: c(person("Dr. Himadri Shekhar", "Roy", role = c("aut","cre"), email = "himadriiasri@gmail.com"),
+    person(" Dr. Ranjit Kumar", "Paul", role = "aut", email = "ranjitstat@gmail.com"),
+    person(" Dr. Chiranjit", "Mazumder", role = "aut", email = "majumder.chira@gmail.com"),
+    person(" Dr. Kamalika", "Nath", role = "aut", email = "kamalikanath@gmail.com"),
+    person(" Dr. Prakash", "Kumar", role = "aut", email = "prakash289111@gmail.com"))
+Author: Dr. Himadri Shekhar Roy [aut, cre],
+  Dr. Ranjit Kumar Paul [aut],
+  Dr. Chiranjit Mazumder [aut],
+  Dr. Kamalika Nath [aut],
+  Dr. Prakash Kumar [aut]
+Maintainer: Dr. Himadri Shekhar Roy <himadriiasri@gmail.com>
+Description: In practice, it is difficult to determine the number of decomposition modes, K, for Variational Mode Decomposition (VMD). To overcome this issue, this study offers Spearman Variational Mode Decomposition (SVMD), a method that uses the Spearman correlation coefficient to calculate the ideal mode number. Unlike the Pearson correlation coefficient, which only returns a perfect value when X and Y are linearly connected, the Spearman correlation can be calculated without knowing the probability distributions of X and Y. The Spearman correlation coefficient, also called Spearman's rank correlation coefficient, is a subset of a wider correlation coefficient. As VMD decomposes a signal, the Spearman correlation coefficient between the reconstructed and original sequences rises as the mode number K increases. Once the signal has been fully decomposed, subsequent increases in K cause the correlation to gradually level off. When the correlation reaches a specific level, VMD is said to have adequately decomposed the signal. Numerous experiments revealed that a threshold of 0.997 produces the best denoising effect, so the threshold is set at 0.997. This package has been developed using concept of Yang et al. (2021)<doi:10.1016/j.aej.2021.01.055>.
+License: GPL-3
+Encoding: UTF-8
+Imports: VMDecomp, stats
+NeedsCompilation: no
+RoxygenNote: 7.3.1
+Packaged: 2024-09-14 19:20:00 UTC; Admin
+Repository: CRAN
+Date/Publication: 2024-09-16 14:30:06 UTC

@@ -1,0 +1,21 @@
+Package: ConfigParser
+Title: Package to Parse an INI File, Including Variable Interpolation
+Version: 1.0.0
+Authors@R: person("Holger", "Hoefling", email = "hhoeflin@gmail.com", role = c("aut", "cre"))
+Description: Enhances the 'ini' package by adding the ability to interpolate variables.
+	     The INI configuration file is read into an R6 ConfigParser object (loosely inspired by Pythons ConfigParser module)
+	     and the keys can be read, where '%(....)s' instances are interpolated by other included options or outside variables.
+Depends: R (>= 3.0.0), ini, R6
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+RoxygenNote: 6.0.1.9000
+URL: https://github.com/hhoeflin/ConfigParser
+BugReports: https://github.com/hhoeflin/ConfigParser/issues
+NeedsCompilation: no
+Packaged: 2017-08-16 19:00:42 UTC; hhoeflin
+Author: Holger Hoefling [aut, cre]
+Maintainer: Holger Hoefling <hhoeflin@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-08-22 14:02:31 UTC

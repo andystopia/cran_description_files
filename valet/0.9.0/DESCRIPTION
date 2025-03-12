@@ -1,0 +1,25 @@
+Package: valet
+Type: Package
+Title: Provide R Client to the Bank of Canada's Valet API
+Version: 0.9.0
+Authors@R: c(person(given = "Corey", family = "Runkel",
+             email = "runkelcorey@gmail.com", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-8992-4434")))
+Description: The Bank of Canada updated their Valet API
+             <https://www.bankofcanada.ca/valet/docs>, and no R client
+             currently exists. This provides access to all of Valet's endpoints
+             and serves responses in wide format easy for researchers to
+             handle but also provides tools to access API responses as a list.
+License: MIT + file LICENSE
+URL: runkelcorey.github.io/valet
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: magrittr, httr, dplyr, readr, purrr, jsonlite
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-04-08 12:13:28 UTC; corey
+Author: Corey Runkel [aut, cre] (<https://orcid.org/0000-0001-8992-4434>)
+Maintainer: Corey Runkel <runkelcorey@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-04-12 08:10:02 UTC

@@ -1,0 +1,28 @@
+Package: svyweight
+Title: Quick and Flexible Survey Weighting
+Version: 0.1.0
+Authors@R: 
+    person(given = "Ben",
+           family = "Mainwaring",
+           role = c("aut", "cre"),
+           email = "mainwaringb@gmail.com")
+Description: Quickly and flexibly calculates weights for survey data, in order to correct
+    for survey non-response or other sampling issues. Uses rake weighting, a common technique 
+    also know as rim weighting or iterative proportional fitting.  This technique allows for weighting 
+    on multiple variables, even when the interlocked distribution of the two
+    variables is not known. Interacts with Thomas Lumley's 'survey' package, as described in 
+    Lumley, Thomas (2011, ISBN:978-1-118-21093-2). Adds additional functionality, more adaptable syntax, and error-checking
+    to the base weighting functionality in 'survey.'
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: survey, gdata, stats
+Depends: R (>= 3.5.00)
+Suggests: dplyr, srvyr, testthat, mice
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-04-29 23:44:44 UTC; fun
+Author: Ben Mainwaring [aut, cre]
+Maintainer: Ben Mainwaring <mainwaringb@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-03 10:00:02 UTC

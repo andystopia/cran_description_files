@@ -1,0 +1,33 @@
+Package: hues
+Type: Package
+Version: 0.2.0
+Title: Distinct Colour Palettes Based on 'iwanthue'
+Description: Creating effective colour palettes for figures is 
+    challenging. This package generates and plot palettes of optimally 
+    distinct colours in perceptually uniform colour space, based on 
+    'iwanthue' <http://tools.medialab.sciences-po.fr/iwanthue/>. 
+    This is done through k-means clustering of CIE Lab colour space, 
+    according to user-selected constraints on hue, chroma, and 
+    lightness.
+Date: 2019-12-01
+Depends: R (>= 3.2.0)
+Imports: colorspace, methods
+Suggests: ggplot2
+Authors@R: c(
+    person("John", "Baumgartner", email = "johnbaums@gmail.com",
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8898-0300")),
+    person("Russell", "Dinnage", email = "r.dinnage@gmail.com",
+      role = "aut")
+  )
+URL: https://github.com/johnbaums/hues
+BugReports: https://github.com/johnbaums/hues/issues
+License: LGPL (>= 3)
+LazyData: true
+RoxygenNote: 7.0.1
+NeedsCompilation: no
+Packaged: 2019-11-30 14:44:40 UTC; jbau
+Author: John Baumgartner [aut, cre] (<https://orcid.org/0000-0002-8898-0300>),
+  Russell Dinnage [aut]
+Maintainer: John Baumgartner <johnbaums@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-01 17:30:02 UTC

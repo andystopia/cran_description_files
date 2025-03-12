@@ -1,0 +1,72 @@
+Package: tenm
+Version: 0.5.1
+Title: Temporal Ecological Niche Models
+Authors@R: c(
+  person(given = "Luis", family = "Osorio-Olvera", 
+  email = "luismurao@gmail.com", role = c("aut", "cre"),
+  comment = c(ORCID = "0000-0003-0701-5398")), 
+  person (given = "Miguel", family = "Hernández",
+  email = "316282666@iztacala.unam.mx", role = c("aut"),
+  comment = c(ORCID = "0000-0002-6086-3460")),
+  person(given = "Rusby G.", family = "Contreras-Díaz", 
+  email = "rusby.contreras.diaz@gmail.com", role = c("aut"),
+  comment = c(ORCID = "0000-0002-0569-8984")),
+  person(given = "Xavier", family = "Chiappa-Carrara", 
+  email = "xcc@ciencias.unam.mx", role = c("aut"),
+  comment = c(ORCID = "0000-0002-1708-2095")),
+  person(given = "Fernanda", family = "Rosales-Ramos", 
+  email = "fernanda.rosales@iecologia.unam.mx", role = c("aut"),
+  comment = c(ORCID = "0009-0004-7805-4735")),
+  person(given = "Mariana", family = "Munguía-Carrara", 
+  email = "mariana.munguia@conabio.gob.mx", role = c("aut"),
+  comment = c(ORCID = "0000-0003-3514-3397")),
+  person(given = "Oliver", family = "López-Corona", 
+  email = "lopezoliverx@gmail.com", role = c("aut"),
+  comment = c(ORCID = "0000-0002-2926-7791")),
+  person("Townsend", "Peterson", 
+          email = "town@ku.edu", 
+          role = "ctb",
+          comment = c(ORCID = "0000-0003-0243-2379")),
+  person("Jorge", "Soberón", 
+         email = "soberon@ku.edu",
+         role = "ctb",
+        comment = c(ORCID = "0000-0003-2160-4148"))
+  )
+Description: Implements methods and functions to calibrate 
+  time-specific niche models (multi-temporal calibration), letting users 
+  execute a strict calibration and selection process of niche models based 
+  on ellipsoids, as well as functions to project the potential distribution in 
+  the present and in global change  scenarios.The 'tenm' package has functions
+  to recover information that may be lost or overlooked while applying a data 
+  curation protocol. This curation involves preserving occurrences that may 
+  appear spatially redundant (occurring in the same pixel) but originate from 
+  different time periods. A novel aspect of this package is that it might 
+  reconstruct the fundamental niche more accurately than mono-calibrated 
+  approaches. The theoretical background of the package can be found in 
+  Peterson et al. (2011)<doi:10.5860/CHOICE.49-6266>.
+License: GPL-3
+URL: https://luismurao.github.io/tenm/
+BugReports: https://github.com/luismurao/tenm/issues
+Imports: MASS, terra (> 1.7.5), sf, purrr, dplyr, stringr, rgl (> 1.2),
+        future, tidyr, furrr, lubridate, methods
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Depends: R (>= 4.1)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-07-21 15:50:20 UTC; luis.osorio
+Author: Luis Osorio-Olvera [aut, cre] (<https://orcid.org/0000-0003-0701-5398>),
+  Miguel Hernández [aut] (<https://orcid.org/0000-0002-6086-3460>),
+  Rusby G. Contreras-Díaz [aut] (<https://orcid.org/0000-0002-0569-8984>),
+  Xavier Chiappa-Carrara [aut] (<https://orcid.org/0000-0002-1708-2095>),
+  Fernanda Rosales-Ramos [aut] (<https://orcid.org/0009-0004-7805-4735>),
+  Mariana Munguía-Carrara [aut] (<https://orcid.org/0000-0003-3514-3397>),
+  Oliver López-Corona [aut] (<https://orcid.org/0000-0002-2926-7791>),
+  Townsend Peterson [ctb] (<https://orcid.org/0000-0003-0243-2379>),
+  Jorge Soberón [ctb] (<https://orcid.org/0000-0003-2160-4148>)
+Maintainer: Luis Osorio-Olvera <luismurao@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-23 00:30:01 UTC

@@ -1,0 +1,27 @@
+Package: svines
+Title: Stationary Vine Copula Models
+Version: 0.2.4
+Authors@R: 
+    person(given = "Thomas",
+           family = "Nagler",
+           role = c("aut", "cre"),
+           email = "mail@tnagler.com")
+Description: Provides functionality to fit and simulate from stationary vine 
+  copula models for time series, see Nagler et al. (2022) 
+  <doi:10.1016/j.jeconom.2021.11.015>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/tnagler/svines
+BugReports: https://github.com/tnagler/svines/issues
+Depends: R (>= 4.0.0), rvinecopulib (>= 0.6.1.1.2)
+Imports: Rcpp, assertthat, univariateML, wdm, fGarch
+LinkingTo: RcppEigen, Rcpp, RcppThread, BH, wdm, rvinecopulib
+Suggests: testthat, ggraph, covr
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-01-15 11:22:40 UTC; n5
+Author: Thomas Nagler [aut, cre]
+Maintainer: Thomas Nagler <mail@tnagler.com>
+Repository: CRAN
+Date/Publication: 2025-01-15 11:40:02 UTC

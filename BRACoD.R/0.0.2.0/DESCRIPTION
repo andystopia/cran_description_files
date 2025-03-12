@@ -1,0 +1,24 @@
+Package: BRACoD.R
+Title: BRACoD: Bayesian Regression Analysis of Compositional Data
+Version: 0.0.2.0
+Authors@R: 
+    person(given = "Adrian",
+           family = "Verster",
+	   role=c("aut","cre"),
+           email = "adrian.verster@hc-sc.gc.ca")
+Description: The goal of this method is to identify associations between bacteria and an environmental variable in 16S or other compositional data. The environmental variable is any variable which is measure for each microbiome sample, for example, a butyrate measurement paired with every sample in the data. Microbiome data is compositional, meaning that the total abundance of each sample sums to 1, and this introduces severe statistical distortions. This method takes a Bayesian approach to correcting for these statistical distortions, in which the total abundance is treated as an unknown variable. This package runs the python implementation using reticulate.
+Imports: reticulate
+Config/reticulate: list( packages = list( list(package = "BRACoD") ) )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1.9001
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-03-17 14:28:55 UTC; averster
+Author: Adrian Verster [aut, cre]
+Maintainer: Adrian Verster <adrian.verster@hc-sc.gc.ca>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2022-03-24 15:10:07 UTC

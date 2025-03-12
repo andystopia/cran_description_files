@@ -1,0 +1,45 @@
+Package: datafsm
+Title: Estimating Finite State Machine Models from Data
+Version: 0.2.4
+Date: 2021-05-28
+Authors@R: 
+    c(person(given = c("John", "J."), family = "Nay", 
+             email = "john.j.nay@gmail.com",
+             role = "aut"),
+      person(given = c("Jonathan", "M."), family = "Gilligan",
+             email = "jonathan.gilligan@vanderbilt.edu",
+             comment = c(ORCID = "0000-0003-1375-6686"),
+             role = c("cre", "aut")))
+Description: Automatic generation of finite state machine models of dynamic 
+    decision-making that both have strong predictive power and are 
+    interpretable in human terms. We use an efficient model representation and 
+    a genetic algorithm-based estimation process to generate simple 
+    deterministic approximations that explain most of the structure of complex 
+    stochastic processes. We have applied the software to empirical data, and 
+    demonstrated it's ability to recover known data-generating processes by 
+    simulating data with agent-based models and correctly deriving the 
+    underlying decision models for multiple agent models and degrees of
+    stochasticity.
+URL: https://jonathan-g.github.io/datafsm/,
+        https://github.com/jonathan-g/datafsm
+BugReports: https://github.com/jonathan-g/datafsm/issues
+Depends: R (>= 4.0), methods (>= 4.0), stats (>= 4.0)
+License: MIT + file LICENSE
+LazyData: true
+LinkingTo: Rcpp (>= 1.0)
+Suggests: doParallel (>= 1.0), foreach (>= 1.5), testthat (>= 3.0),
+        diagram (>= 1.6), knitr (>= 1.33), rmarkdown (>= 2.8), pander
+        (>= 0.6), dplyr (>= 1.0), tidyr (>= 1.0), purrr (>= 0.3)
+Imports: caret (>= 6.0), GA (>= 3.2), Rcpp (>= 1.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2021-05-29 00:21:31 UTC; Jonathan
+Author: John J. Nay [aut],
+  Jonathan M. Gilligan [cre, aut]
+    (<https://orcid.org/0000-0003-1375-6686>)
+Maintainer: Jonathan M. Gilligan <jonathan.gilligan@vanderbilt.edu>
+Repository: CRAN
+Date/Publication: 2021-05-29 23:20:05 UTC

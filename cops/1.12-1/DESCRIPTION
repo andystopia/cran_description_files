@@ -1,0 +1,23 @@
+Package: cops
+Title: Cluster Optimized Proximity Scaling
+Version: 1.12-1
+Authors@R: c(person(given="Thomas", family="Rusch", email="thomas.rusch@wu.ac.at", role = c("aut","cre"), comment = c(ORCID = "0000-0002-7773-2096")),  person("Patrick","Mair",email="mair@fas.harvard.edu",comment=c(ORCID="0000-0003-0100-6511"),role=c("aut")),person("Kurt","Hornik",email = "Kurt.Hornik@R-project.org",comment = c(ORCID = "0000-0003-4198-9911"),role=c("ctb")))
+Maintainer: Thomas Rusch <thomas.rusch@wu.ac.at>
+Description: Multidimensional scaling (MDS) methods that aim at pronouncing the clustered appearance of the configuration (Rusch, Mair & Hornik, 2021, <doi:10.1080/10618600.2020.1869027>). They achieve this by transforming proximities/distances with explicit power functions and penalizing the fitting criterion with a clusteredness index, the OPTICS Cordillera (Rusch, Hornik & Mair, 2018, <doi:10.1080/10618600.2017.1349664>). There are two variants: One for finding the configuration directly (COPS-C) with given explicit power transformations and implicit ratio, interval and non-metric optimal scaling transformations (Borg & Groenen, 2005, ISBN:978-0-387-28981-6), and one for using the augmented fitting criterion to find optimal hyperparameters for the explicit transformations (P-COPS). The package contains various functions, wrappers, methods and classes for fitting, plotting and displaying a large number of different MDS models (most of the functionality in smacofx) in the COPS framework. The package further contains a function for pattern search optimization, the ``Adaptive Luus-Jaakola Algorithm'' (Rusch, Mair & Hornik, 2021,<doi:10.1080/10618600.2020.1869027>) and a functions to calculate the phi-distances for count data or histograms.
+Depends: R (>= 3.5.0), cordillera (>= 0.7-2), smacofx
+Imports: smacof, analogue, cmaes, crs, dfoptim, GenSA, minqa, NlcOptim,
+        nloptr, pso, rgenoud, Rsolnp, subplex
+Suggests: R.rsp, rmarkdown
+VignetteBuilder: R.rsp
+License: GPL-2 | GPL-3
+LazyData: true
+URL: https://r-forge.r-project.org/projects/stops/
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-09-22 13:53:03 UTC; trusch
+Author: Thomas Rusch [aut, cre] (<https://orcid.org/0000-0002-7773-2096>),
+  Patrick Mair [aut] (<https://orcid.org/0000-0003-0100-6511>),
+  Kurt Hornik [ctb] (<https://orcid.org/0000-0003-4198-9911>)
+Repository: CRAN
+Date/Publication: 2024-09-22 16:50:02 UTC

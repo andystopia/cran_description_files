@@ -1,0 +1,39 @@
+Package: ssrn
+Title: Scan Statistics for Railway Network
+Version: 0.1.0
+Date: 2020-06-14
+Authors@R: 
+    c(person(given = "Shinya",
+             family = "Uryu",
+             role = c("aut", "cre"),
+             email = "suika1127@gmail.com",
+             comment = c(ORCID = "0000-0002-0493-6186")),
+      person(given = "Yuta",
+             family = "Tanoue",
+             role = c("aut")),
+      person(given = "Daisuke",
+             family = "Yoneoka",
+             role = c("aut")))       
+Description: Implement the algorithm provided in scan for estimating the 
+  transmission route on railway network using passenger volume. It is a 
+  generalization of the scan statistic approach for railway network to identify
+  the hot railway route for transmitting infectious diseases. 
+URL: https://github.com/uribo/ssrn
+BugReports: https://github.com/uribo/ssrn/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: R (>= 3.2.0)
+Imports: dplyr (>= 1.0.0), magrittr (>= 1.5), purrr (>= 0.3.4), rlang
+        (>= 0.4.6), stringr (>= 1.4.0), tibble (>= 3.0.1), tidyr (>=
+        1.1.0)
+Suggests: testthat, scanstatistics
+NeedsCompilation: no
+Packaged: 2020-06-14 05:22:27 UTC; uri
+Author: Shinya Uryu [aut, cre] (<https://orcid.org/0000-0002-0493-6186>),
+  Yuta Tanoue [aut],
+  Daisuke Yoneoka [aut]
+Maintainer: Shinya Uryu <suika1127@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-23 13:40:03 UTC

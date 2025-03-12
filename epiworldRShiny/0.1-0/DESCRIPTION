@@ -1,0 +1,46 @@
+Package: epiworldRShiny
+Type: Package
+Title: A 'shiny' Wrapper of the R Package 'epiworldR'
+Version: 0.1-0
+Date: 2024-06-04
+Authors@R: c(
+  person("Derek", "Meyer", role=c("aut","cre"), 
+  email="derekmeyer37@gmail.com", comment = c(ORCID = "0009-0005-1350-6988")),
+  person("George", "Vega Yon", role=c("aut"),
+  email="g.vegayon@gmail.com", comment = c(ORCID = "0000-0002-3171-0844")),
+  person("Centers for Disease Control and Prevention", role="fnd", comment = "Award number 1U01CK000585; 75D30121F00003"
+  ),
+  person("Lindsay", "Keegan", role=c("ctb"), email="lindsay.keegan@utah.edu", comment = c(ORCID = "0000-0002-8526-3007")),
+  person("Karim", "Khader", role=c("ctb"), email="karim.khader@hsc.utah.edu", comment = c(ORCID = "0000-0002-7206-8077")),
+  person("Damon", "Toth", role=c("ctb"), email="damon.toth@hsc.utah.edu", comment = c(ORCID = "0000-0001-7393-4814")),
+  person("Randon", "Gruninger", role=c("ctb"), email="rjgruninger@utah.gov"),
+  person("Matthew", "Samore", role=c("ctb"), email="matthew.samore@hsc.utah.edu", comment = c(ORCID = "0000-0002-4862-9196")),
+  person("Jay", "Love", role=c("ctb"), email="jay.love@utah.edu", comment = c(ORCID="0000-0002-9371-2466")),
+  person("Kristina", "Stratford", role=c("ctb"), email="kristina.stratford@hsc.utah.edu"))
+Description: R 'shiny' web apps for epidemiological Agent-Based Models. It provides a user-friendly interface to the Agent-Based Modeling (ABM) R package 'epiworldR' (Meyer et al., 2023) <DOI:10.21105/joss.05781>. Some of the main features of the package include the Susceptible-Infected-Susceptible (SIS), Susceptible-Infected-Recovered (SIR), and Susceptible-Exposed-Infected-Recovered (SEIR) models. 'epiworldRShiny' provides a web-based user interface for running various epidemiological ABMs, simulating interventions, and visualizing results interactively.
+URL: https://github.com/UofUEpiBio/epiworldRShiny/,
+        https://uofuepibio.github.io/epiworldRShiny/,
+BugReports: https://github.com/UofUEpiBio/epiworldRShiny/issues/
+License: MIT + file LICENSE
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Suggests: knitr
+Imports: shinyjs, utils, shinydashboard, DT, ggplot2, epiworldR,
+        shinycssloaders, plotly
+Depends: shiny
+NeedsCompilation: no
+Packaged: 2024-06-04 21:39:34 UTC; george
+Author: Derek Meyer [aut, cre] (<https://orcid.org/0009-0005-1350-6988>),
+  George Vega Yon [aut] (<https://orcid.org/0000-0002-3171-0844>),
+  Centers for Disease Control and Prevention [fnd] (Award number
+    1U01CK000585; 75D30121F00003),
+  Lindsay Keegan [ctb] (<https://orcid.org/0000-0002-8526-3007>),
+  Karim Khader [ctb] (<https://orcid.org/0000-0002-7206-8077>),
+  Damon Toth [ctb] (<https://orcid.org/0000-0001-7393-4814>),
+  Randon Gruninger [ctb],
+  Matthew Samore [ctb] (<https://orcid.org/0000-0002-4862-9196>),
+  Jay Love [ctb] (<https://orcid.org/0000-0002-9371-2466>),
+  Kristina Stratford [ctb]
+Maintainer: Derek Meyer <derekmeyer37@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-05 19:50:06 UTC

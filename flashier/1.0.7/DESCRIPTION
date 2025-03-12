@@ -1,0 +1,36 @@
+Package: flashier
+Type: Package
+Date: 2023-10-16
+Title: Empirical Bayes Matrix Factorization
+Version: 1.0.7
+Authors@R: c(person("Jason", "Willwerscheid", role = c("aut", "cre"),
+                    email = "jwillwer@providence.edu"),
+             person("Peter", "Carbonetto", role = "aut"),
+             person("Wei", "Wang", role = "aut"),
+             person("Matthew", "Stephens", role = "aut"),
+             person("Eric", "Weine", role = "ctb"),
+             person("Gao", "Wang", role = "ctb"))
+URL: https://github.com/willwerscheid/flashier
+BugReports: https://github.com/willwerscheid/flashier/issues
+Description: Methods for matrix factorization based on Wang and Stephens (2021) 
+    <https://jmlr.org/papers/v22/20-589.html>.
+Depends: R (>= 3.4), ebnm (>= 0.1-21), magrittr
+Imports: Matrix, parallel, dplyr, stringr, tibble, tidyr, softImpute,
+        irlba, ggplot2
+Suggests: ashr, cowplot, testthat, knitr, rmarkdown, RcppML, rsvd
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-16 16:37:23 UTC; jwillwer
+Author: Jason Willwerscheid [aut, cre],
+  Peter Carbonetto [aut],
+  Wei Wang [aut],
+  Matthew Stephens [aut],
+  Eric Weine [ctb],
+  Gao Wang [ctb]
+Maintainer: Jason Willwerscheid <jwillwer@providence.edu>
+Repository: CRAN
+Date/Publication: 2023-10-17 09:40:02 UTC

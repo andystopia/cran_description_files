@@ -1,0 +1,36 @@
+Package: rplanes
+Title: Plausibility Analysis of Epidemiological Signals
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "VP",
+             family = "Nagraj",
+             role = c("aut", "cre"),
+             email = "nagraj@nagraj.net",
+             comment = c(ORCID = "0000-0003-0060-566X")),
+      person(given = "Desiree",
+             family = "Williams",
+             role = "aut"),
+      person(given = "Amy",
+             family = "Benefield",
+             role = "aut"))
+Description: Provides functionality to prepare data and analyze plausibility of both forecasted and reported epidemiological signals. The functions implement a set of plausibility algorithms that are agnostic to geographic and time resolutions and are calculated independently then presented as a combined score.
+License: MIT + file LICENSE
+URL: https://signaturescience.github.io/rplanes/
+Depends: R (>= 2.10)
+Imports: dplyr, dtw, ecp, lubridate, magrittr, purrr, readr, rlang,
+        stringr, tibble, tidyr, utils
+Suggests: DT, ggplot2, markdown, knitr, MMWRweek, rmarkdown, shiny,
+        shinyjs, shinyWidgets, shinycssloaders, testthat (>= 3.0.0),
+        tools
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-07-15 16:28:47 UTC; vpnagraj
+Author: VP Nagraj [aut, cre] (<https://orcid.org/0000-0003-0060-566X>),
+  Desiree Williams [aut],
+  Amy Benefield [aut]
+Maintainer: VP Nagraj <nagraj@nagraj.net>
+Repository: CRAN
+Date/Publication: 2024-07-17 10:50:02 UTC

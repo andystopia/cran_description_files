@@ -1,0 +1,26 @@
+Package: SiFINeT
+Type: Package
+Title: Single Cell Feature Identification with Network Topology
+Version: 1.13
+Date: 2025-01-01
+Author: Qi Gao [aut, cre]
+Maintainer: Qi Gao <gqi@med.umich.edu>
+Authors@R: person(given = "Qi",
+                  family = "Gao",
+                  role = c("aut", "cre"),
+                  email = "gqi@med.umich.edu")
+Description: Cluster-independent method based on topology structure of gene co-expression network for identifying feature gene sets, extracting cellular subpopulations, and elucidating intrinsic relationships among these subpopulations. Without prior cell clustering, SifiNet circumvents potential inaccuracies in clustering that may influence subsequent analyses. This method is introduced in Qi Gao, Zhicheng Ji, Liuyang Wang, Kouros Owzar, Qi-Jing Li, Cliburn Chan, Jichun Xie "SifiNet: a robust and accurate method to identify feature gene sets and annotate cells" (2024) <doi:10.1093/nar/gkae307>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+BuildVignettes: yes
+VignetteBuilder: knitr
+Depends: R (>= 3.6.0), methods, utils, stats
+Imports: Rcpp (>= 1.0.9), quantreg (>= 5.94), igraph (>= 1.3.5), Matrix
+        (>= 1.5-1), ggraph (>= 2.0.6), ggplot2 (>= 3.3.6),
+Suggests: rmarkdown (>= 2.20), knitr (>= 1.42)
+LinkingTo: Rcpp, RcppArmadillo
+Packaged: 2025-01-15 22:31:46 UTC; gqi
+Repository: CRAN
+Date/Publication: 2025-01-16 15:10:05 UTC

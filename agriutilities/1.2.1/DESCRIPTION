@@ -1,0 +1,46 @@
+Package: agriutilities
+Type: Package
+Title: Utilities for Data Analysis in Agriculture
+Version: 1.2.1
+Authors@R: 
+    c(person(given = "Johan",
+             family = "Aparicio",
+             role = c("aut", "cre"),
+             email = "johanstevenapa@gmail.com"),
+      person(given = "Alexia",
+             family = "Bornhorst",
+             role = "aut",
+             email = "alexiabornhorst@gmail.com"),
+      person(given = "The Alliance of Bioversity International and CIAT",
+             role = "cph"))
+Description: Utilities designed to make the analysis of field trials easier and
+ more accessible for everyone working in plant breeding. It provides a simple
+ and intuitive interface for conducting single and multi-environmental trial
+ analysis, with minimal coding required. Whether you're a beginner or an
+ experienced user, 'agriutilities' will help you quickly and easily carry out
+ complex analyses with confidence. With built-in functions for fitting Linear
+ Mixed Models, 'agriutilities' is the ideal choice for anyone who wants to save
+ time and focus on interpreting their results.
+ Some of the functions require the R package 'asreml' for the 'ASReml' software,
+ this can be obtained upon purchase from 'VSN' international <https://vsni.co.uk/software/asreml-r/>.
+License: MIT + file LICENSE
+Imports: ggplot2, psych, dplyr, tidyr, lme4, Matrix, ggpubr, lmerTest,
+        data.table, stats, magrittr, emmeans, ggrepel, tibble, rlang,
+        statgenSTA, SpATS
+Enhances: asreml
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/AparicioJohan/agriutilities,
+        https://apariciojohan.github.io/agriutilities/
+BugReports: https://github.com/AparicioJohan/agriutilities/issues
+ByteCompile: TRUE
+Suggests: knitr, lattice, cluster, rmarkdown, agridat, gt
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-17 19:48:53 UTC; johan
+Author: Johan Aparicio [aut, cre],
+  Alexia Bornhorst [aut],
+  The Alliance of Bioversity International and CIAT [cph]
+Maintainer: Johan Aparicio <johanstevenapa@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-17 23:40:02 UTC

@@ -1,0 +1,36 @@
+Package: ClustMC
+Title: Cluster-Based Multiple Comparisons
+Version: 0.1.1
+Authors@R: 
+    person("Santiago", "Garcia Sanchez", ,"santiagoesquel@gmail.com",
+    role = c("aut", "cre", "cph"))
+Description: Multiple comparison techniques are typically applied following an F
+    test from an ANOVA to decide which means are significantly different from
+    one another. As an alternative to traditional methods, cluster analysis
+    can be performed to group the means of different treatments into
+    non-overlapping clusters. Treatments in different groups are considered
+    statistically different. Several approaches have been proposed, with varying
+    clustering methods and cut-off criteria. This package implements
+    cluster-based multiple comparisons tests and also provides a visual
+    representation in the form of a dendrogram. Di Rienzo, J. A., Guzman, A. W., 
+    & Casanoves, F. (2002) <jstor.org/stable/1400690>. Bautista, M. G., Smith, D. 
+    W., & Steiner, R. L. (1997) <doi:10.2307/1400402>.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: cli, dplyr, graphics, lifecycle, magrittr, procs, psych,
+        stats, usedist
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: ggdendro, ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/SGS2000/ClustMC,
+        https://sgs2000.github.io/ClustMC/
+BugReports: https://github.com/SGS2000/ClustMC/issues
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-08-22 17:18:31 UTC; santi
+Author: Santiago Garcia Sanchez [aut, cre, cph]
+Maintainer: Santiago Garcia Sanchez <santiagoesquel@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-27 16:40:07 UTC

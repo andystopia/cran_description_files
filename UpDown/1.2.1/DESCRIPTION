@@ -1,0 +1,24 @@
+Package: UpDown
+Type: Package
+Title: Detecting Group Disturbances from Longitudinal Observations
+Version: 1.2.1
+Description: Provides an algorithm to detect and characterize disturbances (start, end dates, intensity) that can occur at different hierarchical levels by studying the dynamics of longitudinal observations at the unit level and group level based on Nadaraya-Watson's smoothing curves, but also a shiny app which allows to visualize the observations and the detected disturbances. Finally the package provides a dataframe mimicking a pig farming system subsected to disturbances simulated according to Le et al.(2022) <doi:10.1016/j.animal.2022.100496>. 
+Authors@R: c(
+    person("Tom", "Rohmer",, "tom.rohmer@inrae.fr", role = c("aut", "cre")),
+    person("Vincent", "Le",, "giang-nam.le@inrae.fr", role = "aut"),
+    person("Ingrid", "David",, "Ingrid.david@inrae.fr",role = "aut")
+    )
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyDataCompression: xz
+Imports: stats, mixtools, mclust, dplyr, ggplot2, reshape2, shiny
+Depends: R (>= 4.0.0)
+LazyData: true
+Author: Tom Rohmer [aut, cre],
+  Vincent Le [aut],
+  Ingrid David [aut]
+Maintainer: Tom Rohmer <tom.rohmer@inrae.fr>
+NeedsCompilation: no
+Packaged: 2023-07-20 17:29:20 UTC; torohmer
+Repository: CRAN
+Date/Publication: 2023-07-20 18:50:13 UTC

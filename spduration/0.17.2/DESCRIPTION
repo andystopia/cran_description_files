@@ -1,0 +1,43 @@
+Package: spduration
+Title: Split-Population Duration (Cure) Regression
+Version: 0.17.2
+Authors@R: c(
+    person("Andreas", "Beger", , "adbeger@gmail.com", c("aut", "cre"), comment = c(ORCID = "0000-0003-1883-3169")),
+    person("Daina", "Chiba", , "dchiba@essex.ac.uk", "aut", comment = c(ORCID = "0000-0002-9208-4373")),
+    person("Daniel W.", "Hill, Jr.", , "dwhill@uga.edu", "aut"),
+    person("Nils W.", "Metternich", , "n.metternich@ucl.ac.uk", "aut", comment = c(ORCID = "0000-0001-8757-0409")),
+    person("Shahryar", "Minhas", , "hermes829@gmail.com", "aut"),
+    person("Michael D.", "Ward", , "michael.don.ward@gmail.com", c("aut", "cph"), comment = c(ORCID = "0000-0002-6561-6186"))
+    )
+Description: An implementation of split-population duration regression models. 
+    Unlike regular duration models, split-population duration models are
+    mixture models that accommodate the presence of a sub-population that is 
+    not at risk for failure, e.g. cancer patients who have been cured by 
+    treatment. This package implements Weibull and Loglogistic forms for the 
+    duration component, and focuses on data with time-varying covariates. 
+    These models were originally formulated in Boag (1949) and Berkson and Gage 
+    (1952), and extended in Schmidt and Witte (1989).
+Encoding: UTF-8
+Depends: R (>= 3.1.2)
+License: GPL-3
+LazyData: true
+Imports: corpcor, graphics, forecast, MASS, stats, Rcpp (>= 0.11.0),
+        separationplot, xtable
+Suggests: covr, devtools, testthat, knitr, rmarkdown, tibble
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+URL: https://github.com/andybega/spduration,
+        https://www.andybeger.com/spduration/
+BugReports: https://github.com/andybega/spduration/issues
+NeedsCompilation: yes
+Packaged: 2024-02-08 09:42:36 UTC; andybega
+Author: Andreas Beger [aut, cre] (<https://orcid.org/0000-0003-1883-3169>),
+  Daina Chiba [aut] (<https://orcid.org/0000-0002-9208-4373>),
+  Daniel W. Hill, Jr. [aut],
+  Nils W. Metternich [aut] (<https://orcid.org/0000-0001-8757-0409>),
+  Shahryar Minhas [aut],
+  Michael D. Ward [aut, cph] (<https://orcid.org/0000-0002-6561-6186>)
+Maintainer: Andreas Beger <adbeger@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-02-08 10:10:02 UTC

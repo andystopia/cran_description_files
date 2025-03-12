@@ -1,0 +1,30 @@
+Package: simuclustfactor
+Type: Package
+Title: Simultaneous Clustering and Factorial Decomposition of Three-Way
+        Datasets
+Version: 0.0.3
+Authors@R: c(
+    person("Prosper", "Ablordeppey", role = c("aut", "cre"), email = "pablordeppey@ua.pt",
+      comment = c(ORCID = "0000-0002-5581-7005")),
+    person("Adelaide", "Freitas", role = "ctb", email = "adelaide@ua.pt",
+      comment = c(ORCID = "0000-0002-4685-1615")),
+    person("Giorgia", "Zaccaria", role = "ctb", email = "giorgia.zaccaria@unitelmasapienza.it",
+      comment = c(ORCID = "0000-0001-9119-9104")))
+Maintainer: Prosper Ablordeppey <pablordeppey@ua.pt>
+Description: Implements two iterative techniques called T3Clus and 3Fkmeans, aimed at simultaneously clustering objects and a factorial dimensionality reduction of variables and occasions on three-mode datasets developed by Vichi et al. (2007) <doi:10.1007/s00357-007-0006-x>. Also, we provide a convex combination of these two simultaneous procedures called CT3Clus and based on a hyperparameter alpha (alpha in [0,1], with 3FKMeans for alpha=0 and T3Clus for alpha= 1) also developed by Vichi et al. (2007) <doi:10.1007/s00357-007-0006-x>. Furthermore, we implemented the traditional tandem procedures of T3Clus (TWCFTA) and 3FKMeans (TWFCTA) for sequential clustering-factorial decomposition (TWCFTA), and vice-versa (TWFCTA) proposed by P. Arabie and L. Hubert (1996) <doi:10.1007/978-3-642-79999-0_1>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 2.10)
+Imports: methods, stats, Rdpack
+RdMacros: Rdpack
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-17 16:54:46 UTC; iCETEE
+Author: Prosper Ablordeppey [aut, cre]
+    (<https://orcid.org/0000-0002-5581-7005>),
+  Adelaide Freitas [ctb] (<https://orcid.org/0000-0002-4685-1615>),
+  Giorgia Zaccaria [ctb] (<https://orcid.org/0000-0001-9119-9104>)
+Repository: CRAN
+Date/Publication: 2022-10-18 06:40:05 UTC

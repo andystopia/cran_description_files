@@ -1,0 +1,29 @@
+Package: indexr
+Title: A Thoughtful Saver of Results
+Version: 0.2.2
+Date: 2025-02-14
+Authors@R: 
+    person("Logan", "Harris", email = "logan-harris@uiowa.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1211-7623"))
+Description: Helps with the thoughtful saving, reading, and management of result
+  files (using 'rds' files). The core functions take a list of parameters that are
+  used to generate a unique hash to save results under. Then, the same
+  parameter list can be used to read those results back in. This
+  is helpful to avoid clunky file naming when running a large number of
+  simulations. Additionally, helper functions are available for compiling a flat
+  file of parameters of saved results, monitoring result usage, and cleaning up
+  unwanted or unused results. For more information, visit the 'indexr' homepage 
+  <https://lharris421.github.io/indexr/>.
+BugReports: https://github.com/lharris421/indexr/issues
+License: GPL-3
+URL: https://lharris421.github.io/indexr/,
+        https://github.com/lharris421/indexr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: stringr, readr, dplyr, digest, glue, methods
+Suggests: testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2025-02-14 15:01:45 UTC; loganharris
+Author: Logan Harris [aut, cre] (<https://orcid.org/0000-0002-1211-7623>)
+Maintainer: Logan Harris <logan-harris@uiowa.edu>
+Repository: CRAN
+Date/Publication: 2025-02-17 12:00:05 UTC

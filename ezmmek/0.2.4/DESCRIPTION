@@ -1,0 +1,33 @@
+Package: ezmmek
+Title: Easy Michaelis-Menten Enzyme Kinetics
+Version: 0.2.4
+Authors@R: 
+    c(person(given = "Christopher", family = "Cook", email = "ccook62@vols.utk.edu",
+    role = c("aut", "cre")),
+    person(given = "Andrew", family = "Steen", email = "asteen1@utk.edu",
+    role = c("aut")))
+Description: Serves as a platform for published fluorometric enzyme assay
+ protocols. 'ezmmek' calibrates, calculates, and plots enzyme activities as they
+ relate to the transformation of synthetic substrates. At present, 'ezmmek'
+ implements two common protocols found in the literature, and is modular to accommodate
+ additional protocols. Here, these protocols are referred to as the In-Sample
+ Calibration (Hoppe, 1983; <doi:10.3354/meps011299>) and In-Buffer Calibration (German et al., 2011; <doi:10.1016/j.soilbio.2011.03.017>).
+ protocols. By containing multiple protocols, 'ezmmek' aims to stimulate
+ discussion about how to best optimize fluorometric enzyme assays. A standardized
+ approach would make studies more comparable and reproducible. 
+License: AGPL-3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Imports: magrittr, assertable, ggplot2, purrr, dplyr, nls2, rlang,
+        tidyr
+NeedsCompilation: no
+Packaged: 2020-08-27 16:35:51 UTC; kanga
+Author: Christopher Cook [aut, cre],
+  Andrew Steen [aut]
+Maintainer: Christopher Cook <ccook62@vols.utk.edu>
+Repository: CRAN
+Date/Publication: 2020-08-28 07:10:03 UTC

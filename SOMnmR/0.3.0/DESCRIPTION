@@ -1,0 +1,26 @@
+Package: SOMnmR
+Type: Package
+Title: Analysis of Soil Organic Matter using Nuclear Magnetic Resonance
+Version: 0.3.0
+Authors@R: c(
+  person("Luis", "Colocho",
+  email = "lucacol8@gmail.com",
+  role = c("aut", "cre"),
+  comment = c(ORCID = "0000-0002-1791-2298")))
+Description: Integrates the 13C nuclear magnetic resonance spectra using different integration ranges. Output depends on the method chosen. For the Molecular Mixing Model, a measurement of the fitting quality is given by its R-factor. For more details see: <doi:10.5281/zenodo.10137768>.
+URL: https://github.com/LuisCol8/SOMnmR/
+Encoding: UTF-8
+LazyData: true
+Imports: pracma, minpack.lm, quadprog, IntervalSurgeon, dplyr, ggplot2,
+        rlang
+Depends: data.table, R (>= 2.10)
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2024-07-03 11:28:45 UTC; zak69953
+Author: Luis Colocho [aut, cre] (<https://orcid.org/0000-0002-1791-2298>)
+Maintainer: Luis Colocho <lucacol8@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-04 07:50:05 UTC

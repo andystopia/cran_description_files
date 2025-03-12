@@ -1,0 +1,57 @@
+Package: qfratio
+Type: Package
+Title: Moments and Distributions of Ratios of Quadratic Forms Using
+        Recursion
+Version: 1.1.1
+Date: 2024-02-08
+Authors@R: c(person("Junya", "Watanabe", email = "Junya.Watanabe@uab.cat",
+                    role = c("aut", "cre", "cph"),
+                    comment = c(ORCID = "0000-0002-9810-5286")),
+             person("Patrick", "Alken", role = "cph",
+                    comment = "Author of bundled C codes from GSL"),
+             person("Brian", "Gough", role = "cph",
+                    comment = "Author of bundled C codes from GSL"),
+             person("Pavel", "Holoborodko", role = "cph",
+                    comment = "Author of bundled C codes from GSL"),
+             person("Gerard", "Jungman", role = "cph",
+                    comment = "Author of bundled C codes from GSL"),
+             person("Reid", "Priedhorsky", role = "cph",
+                    comment = "Author of bundled C codes from GSL"),
+             person("Free Software Foundation, Inc.", role = "cph",
+                    comment = "Copyright holder of some bundled scripts"))
+Description: Evaluates moments of ratios (and products) of quadratic forms
+    in normal variables, specifically using recursive algorithms developed by
+    Bao and Kan (2013) <doi:10.1016/j.jmva.2013.03.002> and Hillier et al.
+    (2014) <doi:10.1017/S0266466613000364>. Also provides distribution,
+    quantile, and probability density functions of simple ratios of quadratic
+    forms in normal variables with several algorithms. Originally developed as
+    a supplement to Watanabe (2023) <doi:10.1007/s00285-023-01930-8> for
+    evaluating average evolvability measures in evolutionary quantitative
+    genetics, but can be used for a broader class of statistics. Generating 
+    functions for these moments are also closely related to the top-order zonal
+    and invariant polynomials of matrix arguments.
+License: GPL (>= 3)
+URL: https://github.com/watanabe-j/qfratio
+BugReports: https://github.com/watanabe-j/qfratio/issues
+Imports: Rcpp, MASS, stats
+LinkingTo: Rcpp, RcppEigen
+Suggests: mvtnorm, CompQuadForm, graphics, testthat (>= 3.0.0), knitr,
+        rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: yes
+Packaged: 2024-02-08 11:26:43 UTC; jw
+Author: Junya Watanabe [aut, cre, cph]
+    (<https://orcid.org/0000-0002-9810-5286>),
+  Patrick Alken [cph] (Author of bundled C codes from GSL),
+  Brian Gough [cph] (Author of bundled C codes from GSL),
+  Pavel Holoborodko [cph] (Author of bundled C codes from GSL),
+  Gerard Jungman [cph] (Author of bundled C codes from GSL),
+  Reid Priedhorsky [cph] (Author of bundled C codes from GSL),
+  Free Software Foundation, Inc. [cph] (Copyright holder of some bundled
+    scripts)
+Maintainer: Junya Watanabe <Junya.Watanabe@uab.cat>
+Repository: CRAN
+Date/Publication: 2024-02-09 00:30:11 UTC

@@ -1,0 +1,25 @@
+Package: DBTC
+Type: Package
+Title: Dada-BLAST-Taxon Assign-Condense Metabarcode Analysis
+Version: 0.1.0
+Authors@R: c(person("Robert G","Young",
+             role = c("aut", "cre", "cph"),
+             email = "rgyoung6@gmail.com",
+             comment = c("ORCID" = "0000-0002-6731-2506"))
+             )
+Maintainer: Robert G Young <rgyoung6@gmail.com>
+Description: First using 'dada2' R tools to analyse metabarcode data, the 'DBTC' package then uses the BLAST algorithm to search unknown sequences against local databases, and then takes reduced matched results and provides best taxonomic assignments.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+URL: <https://github.com/rgyoung6/DBTC>
+Depends:
+Imports: dada2, ggplot2, parallel, pbapply, plyr, ShortRead, stats,
+        taxonomizr, utils
+Language: en-GB
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-25 22:38:18 UTC; robgy
+Author: Robert G Young [aut, cre, cph]
+    (<https://orcid.org/0000-0002-6731-2506>)
+Repository: CRAN
+Date/Publication: 2024-04-27 18:20:07 UTC

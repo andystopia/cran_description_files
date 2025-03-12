@@ -1,0 +1,35 @@
+Package: metaprotr
+Title: Metaproteomics Post-Processing Analysis
+Version: 1.2.2
+Date: 2021-01-28
+Authors@R: c(
+    person("Aaron", "Millan-Oropeza", email = "aaron.ibt@gmail.com", role = c("aut", "cre")), 
+    person("Catherine", "Juste", email = "catherine.juste@inrae.fr", role = c("aut", "ctb")), 
+    person("Ariane", "Bassignani", email = "ariane.bassignani@gmail.com", role = c("aut", "ctb")), 
+    person("Céline", "Henry", email = "celine.henry@inrae.fr", role = c("aut", "ctb"))
+    )
+Author: Aaron Millan-Oropeza [aut, cre],
+  Catherine Juste [aut, ctb],
+  Ariane Bassignani [aut, ctb],
+  Céline Henry [aut, ctb]
+Maintainer: Aaron Millan-Oropeza <aaron.ibt@gmail.com>
+Description: 
+    Set of tools for descriptive analysis of metaproteomics data generated from high-throughput 
+    mass spectrometry instruments. These tools allow to cluster peptides and proteins abundance, 
+    expressed as spectral counts, and to manipulate them in groups of metaproteins. This information 
+    can be represented using multiple visualization functions to portray the global metaproteome 
+    landscape and to differentiate samples or conditions, in terms of abundance of metaproteins, 
+    taxonomic levels and/or functional annotation. The provided tools allow to implement flexible 
+    analytical pipelines that can be easily applied to studies interested in metaproteomics analysis.
+License: GPL-3
+Encoding: UTF-8
+URL: https://forgemia.inra.fr/pappso/metaprotr
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: ade4, dendextend, dplyr, ggforce, ggrepel, reshape2, stringr,
+        tidyverse
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2021-01-28 20:20:48 UTC; amillan
+Repository: CRAN
+Date/Publication: 2021-02-05 08:10:02 UTC

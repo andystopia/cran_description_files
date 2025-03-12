@@ -1,0 +1,45 @@
+Package: arkhe
+Title: Tools for Cleaning Rectangular Data
+Version: 1.10.0
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944")),
+    person("Brice", "Lebrun", role = "art",
+           comment = c(ORCID = "0000-0001-7503-8685", "Logo designer")),
+    person("Université Bordeaux Montaigne", role = "fnd",
+           comment = c(ROR = "03pbgwk21")),
+    person("CNRS", role = "fnd",
+           comment = c(ROR = "02feahw73"))
+  )
+Description: A dependency-free collection of simple functions for cleaning
+    rectangular data. This package allows to detect, count and replace
+    values or discard rows/columns using a predicate function. In
+    addition, it provides tools to check conditions and return informative
+    error messages.
+License: GPL (>= 3)
+URL: https://codeberg.org/tesselle/arkhe,
+        https://packages.tesselle.org/arkhe/
+BugReports: https://codeberg.org/tesselle/arkhe/issues
+Depends: R (>= 3.5)
+Imports: methods, stats, utils
+Suggests: tinytest
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+X-schema.org-isPartOf: https://www.tesselle.org
+X-schema.org-keywords: data-cleaning, statistics, r-package
+Collate: 'AllGenerics.R' 'append.R' 'predicates.R' 'assert.R'
+        'arkhe-deprecated.R' 'arkhe-internal.R' 'arkhe-package.R'
+        'assign.R' 'clean.R' 'compact.R' 'conditions.R' 'count.R'
+        'describe.R' 'detect.R' 'discard.R' 'get.R' 'keep.R'
+        'mathematics.R' 'remove.R' 'replace.R' 'scale.R' 'seek.R'
+        'sparsity.R' 'statistics.R' 'utilities.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2025-02-25 16:01:02 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>),
+  Brice Lebrun [art] (<https://orcid.org/0000-0001-7503-8685>, Logo
+    designer),
+  Université Bordeaux Montaigne [fnd] (03pbgwk21),
+  CNRS [fnd] (02feahw73)
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Repository: CRAN
+Date/Publication: 2025-02-25 16:20:01 UTC

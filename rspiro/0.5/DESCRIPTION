@@ -1,0 +1,34 @@
+Package: rspiro
+Type: Package
+Title: Implementation of Spirometry Equations
+Version: 0.5
+Date: 2024-06-23
+Author: Theodore Lytras
+Maintainer: Theodore Lytras <thlytras@gmail.com>
+Description: Implementation of various spirometry equations
+    in R, currently the GLI-2012 (Global Lung Initiative;
+    Quanjer et al. 2012 <doi:10.1183/09031936.00080312>),
+    the race-neutral GLI global 2022 (Global Lung Initiative;
+    Bowerman et al. 2023 <doi:10.1164/rccm.202205-0963OC>), the
+    NHANES3 (National Health and Nutrition Examination Survey;
+    Hankinson et al. 1999 <doi:10.1164/ajrccm.159.1.9712108>)
+    and the JRS 2014 (Japanese Respiratory Society; Kubota
+    et al. 2014 <doi:10.1016/j.resinv.2014.03.003>) equations.
+    Also the GLI-2017 diffusing capacity equations 
+    <doi:10.1183/13993003.00010-2017> are implemented.
+    Contains user-friendly functions to calculate predicted 
+    and LLN (Lower Limit of Normal) values for different 
+    spirometric parameters such as FEV1 (Forced Expiratory 
+    Volume in 1 second), FVC (Forced Vital Capacity), etc, 
+    and to convert absolute spirometry measurements 
+    to percent (%) predicted and z-scores.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 2.10)
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-06-23 21:34:33 UTC; bones
+Repository: CRAN
+Date/Publication: 2024-06-23 22:30:03 UTC

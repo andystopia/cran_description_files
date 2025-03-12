@@ -1,0 +1,50 @@
+Package: roxut
+Type: Package
+Title: Document Unit Tests Roxygen-Style
+Version: 0.4.0
+Date: 2021-08-22
+Authors@R: c(
+      person("Bryan A.", "Hanson",
+           role = c("aut", "cre"),
+           email = "hanson@depauw.edu",
+           comment = c(ORCID = "0000-0003-3536-8246")),
+      person("Claudia", "Beleites", role = "ctb"),
+      person(given = "Hadley",
+             family = "Wickham",
+             role = c("aut", "cph"),
+             comment = "roxygen2 code"),
+      person(given = "Peter",
+             family = "Danenberg",
+             role = c("aut", "cph"),
+             comment = "roxygen2 code"),
+      person(given = "Gábor",
+             family = "Csárdi",
+             role = "aut",
+             comment = "roxygen2 code"),
+      person(given = "Manuel",
+             family = "Eugster",
+             role = c("aut", "cph"),
+             comment = "roxygen2 code"),
+      person(given = "RStudio",
+             role = "cph",
+             comment = "roxygen2 code"))
+Description: Much as 'roxygen2' allows one to document functions in the same file as the function itself, 'roxut'  allows one to write the unit tests in the same file as the function.  Once processed, the unit tests are moved to the appropriate directory.  Currently supports 'testthat' and 'tinytest' frameworks. The 'roxygen2' package provides much of the infrastructure.
+URL: https://github.com/bryanhanson/roxut
+BugReports: https://github.com/bryanhanson/roxut/issues
+License: GPL-3
+Encoding: UTF-8
+Depends: roxygen2 (>= 7.1)
+Suggests: tinytest, testthat
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-08-22 18:39:50 UTC; bryanhanson
+Author: Bryan A. Hanson [aut, cre] (<https://orcid.org/0000-0003-3536-8246>),
+  Claudia Beleites [ctb],
+  Hadley Wickham [aut, cph] (roxygen2 code),
+  Peter Danenberg [aut, cph] (roxygen2 code),
+  Gábor Csárdi [aut] (roxygen2 code),
+  Manuel Eugster [aut, cph] (roxygen2 code),
+  RStudio [cph] (roxygen2 code)
+Maintainer: Bryan A. Hanson <hanson@depauw.edu>
+Repository: CRAN
+Date/Publication: 2021-08-22 19:20:02 UTC

@@ -1,0 +1,33 @@
+Type: Package
+Package: roxy.shinylive
+Title: A 'roxygen2' Extension for 'Shinylive'
+Version: 1.0.0
+Authors@R: c(
+    person("Pawel Rucki", , , "pawel.rucki@roche.com", role = c("aut", "cre")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: An extension for 'roxygen2' to embed 'Shinylive' applications
+    in the package documentation.
+License: Apache License 2.0
+URL: https://github.com/insightsengineering/roxy.shinylive/
+BugReports: https://github.com/insightsengineering/roxy.shinylive/issues
+Depends: R (>= 4.0)
+Imports: glue, jsonlite (>= 1.8.6), lzstring (>= 0.1.3), roxygen2 (>=
+        7.2.0), stringr (>= 0.4)
+Suggests: pkgdown (>= 2.0.0), testthat (>= 3.1.5), withr (>= 2.4.3)
+Config/Needs/verdepcheck: tidyverse/glue, jeroen/jsonlite,
+        lzstring=parmsam/lzstring-r, r-lib/roxygen2, tidyverse/stringr,
+        r-lib/pkgdown, r-lib/testthat, r-lib/withr
+Config/Needs/website: insightsengineering/nesttemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Collate: 'tag_examplesShinylive.R' 'parse_url.R'
+NeedsCompilation: no
+Packaged: 2024-11-21 10:51:44 UTC; ruckip
+Author: Pawel Rucki [aut, cre],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Pawel Rucki <pawel.rucki@roche.com>
+Repository: CRAN
+Date/Publication: 2024-11-21 17:40:06 UTC

@@ -1,0 +1,24 @@
+Package: sigInt
+Title: Estimate the Parameters of a Discrete Crisis-Bargaining Game
+Version: 0.2.0
+Authors@R: c(person("Casey", "Crisman-Cox", email = "ccrismancox@gmail.com", role = c("aut", "cre")),  person("Michael", "Gibilisco", email = "michael.gibilisco@caltech.edu", role = c("aut")))
+Description: Provides pseudo-likelihood methods for empirically analyzing common signaling games in international relations as described in Crisman-Cox and Gibilisco (2019) <doi:10.1017/psrm.2019.58>.
+Depends: R (>= 3.4.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ccrismancox/sigint
+Maintainer: Casey Crisman-Cox <ccrismancox@gmail.com>
+Author: Casey Crisman-Cox [aut, cre],
+  Michael Gibilisco [aut]
+RoxygenNote: 7.0.2
+Imports: randomForest, stringr, pbivnorm, Formula, maxLik, xtable, MASS
+Suggests: parallel
+Collate: 'convergence.r' 'doc.r' 'estimationfunctions.r'
+        'generate.eq.r' 'grfunctions.r' 'plot.sigProb.r'
+        'predict.sigfit.r' 'print.sigfit.r' 'sigint.r'
+        'summary.sigfit.r' 'toLatex.sigfit.r'
+NeedsCompilation: no
+Packaged: 2019-12-12 21:40:39 UTC; cox
+Repository: CRAN
+Date/Publication: 2019-12-17 13:20:02 UTC

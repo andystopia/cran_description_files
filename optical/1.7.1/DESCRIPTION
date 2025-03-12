@@ -1,0 +1,46 @@
+Package: optical
+Type: Package
+Title: Optimal Item Calibration
+Version: 1.7.1
+Date: 2023-05-24
+Depends: R (>= 4.1.0)
+Description: The restricted optimal design method is implemented to optimally 
+ allocate a set of items that require calibration to a group of examinees.
+ The optimization process is based on the method described in detail by 
+ Ul Hassan and Miller in their works published in (2019) 
+ <doi:10.1177/0146621618824854> and (2021) <doi:10.1016/j.csda.2021.107177>.
+ To use the method, preliminary item characteristics must be provided as input.
+ These characteristics can either be expert guesses or based on previous
+ calibration with a small number of examinees. The item characteristics
+ should be described in the form of parameters for an Item Response
+ Theory (IRT) model. These models can include the Rasch model, the
+ 2-parameter logistic model, the 3-parameter logistic model, or a mixture
+ of these models. The output consists of a set of rules for each item
+ that determine which examinees should be assigned to each item. The
+ efficiency or gain achieved through the optimal design is quantified by
+ comparing it to a random allocation. This comparison allows for an
+ assessment of how much improvement or advantage is gained by using the
+ optimal design approach. This work was supported by the Swedish Research Council
+ (Vetenskapsrådet) Grant 2019-02706.
+Authors@R: c(person(given="Mahmood", family="Ul Hassan", role = c("aut", "cre"),
+           email ="scenic555@gmail.com",
+           comment = c(ORCID ="https://orcid.org/0000-0003-2889-0263")),
+           person(given="Frank", family="Miller", role=c("aut"),
+           email="frank.miller@liu.se",
+           comment=c(ORCID ="https://orcid.org/0000-0003-4161-7851")))
+Author: Mahmood Ul Hassan [aut, cre] (<https://orcid.org/0000-0003-2889-0263>),
+  Frank Miller [aut] (<https://orcid.org/0000-0003-4161-7851>)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+License: GPL (>= 3)
+License_restricts_use: no
+Repository: CRAN
+Maintainer: Mahmood Ul Hassan <scenic555@gmail.com>
+BugReports: https://github.com/scenic555/optical/issues
+URL: https://scenic555.github.io/optical/,
+        https://github.com/scenic555/optical
+Language: en-GB
+Imports: stats
+NeedsCompilation: no
+Packaged: 2023-05-24 13:46:02 UTC; sceni
+Date/Publication: 2023-05-25 20:00:02 UTC

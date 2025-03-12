@@ -1,0 +1,96 @@
+Package: TDCM
+Title: The Transition Diagnostic Classification Model Framework
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Matthew J.", "Madison",
+      email = "mjmadison@uga.edu",
+      role = c("aut", "cph"),
+      comment = c(ORCID = "0000-0002-2944-7442")
+    ),
+    person(
+      "Sergio", "Haab", 
+      email = "sergio.haab@uga.edu",
+      role = c("aut")
+    ),
+    person(
+      "Minjeong", "Jeon",
+      email = "mjjeon@ucla.edu",
+      role = c("aut", "cph")
+    ),
+    person(
+      "Michael E.", "Cotterell",
+      email = "mepcott@uga.edu",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-4302-0891")
+    ),
+    person(
+      "University of Georgia",
+      role = c("cph"),
+      comment = c(
+        "The content and opinions expressed in this material do not necessarily
+        reflect the views of nor are they endorsed by the University of Georgia
+        or the University System of Georgia."
+      )
+    ),
+    person(
+      "Institute of Education Sciences",
+      role = c("fnd"),
+      comment = c(
+        "This work is supported by the U.S. Department of Education Institute of
+        Education Sciences under IES Award Number R305D220020."
+      )
+    ),
+    person(
+      "National Science Foundation",
+      role = c("fnd"),
+      comment = c(
+        "This work is supported by the National Science Foundation under NSF
+        Award Number 1921373."
+      )
+    )
+  )
+Description: Estimate the transition diagnostic classification model (TDCM) 
+    described in Madison & Bradshaw (2018) <doi:10.1007/s11336-018-9638-5>, a 
+    longitudinal extension of the log-linear cognitive diagnosis model (LCDM) in 
+    Henson, Templin & Willse (2009) <doi:10.1007/s11336-008-9089-5>. As the LCDM 
+    subsumes many other diagnostic classification models (DCMs), many other DCMs 
+    can be estimated longitudinally via the TDCM. The 'TDCM' package includes 
+    functions to estimate the single-group and multigroup TDCM, summarize 
+    results of interest including item parameters, growth proportions, 
+    transition probabilities, transitional reliability, attribute correlations, 
+    model fit, and growth plots.
+License: MIT + file LICENSE
+URL: https://github.com/cotterell/tdcm
+BugReports: https://github.com/cotterell/tdcm/issues
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Depends: R (>= 4.2.0)
+Suggests: devtools, knitr, lintr, MASS, rmarkdown, ROI, roxygen2,
+        styler (>= 1.10.2), testthat (>= 3.0.0), tinytex, V8
+Config/testthat/edition: 3
+Config/Needs/website: tidyverse/tidytemplate
+SystemRequirements: pandoc
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+Imports: CDM, gtools, polycor, stringr
+NeedsCompilation: no
+Packaged: 2024-02-03 19:56:22 UTC; mepcotterell
+Author: Matthew J. Madison [aut, cph] (<https://orcid.org/0000-0002-2944-7442>),
+  Sergio Haab [aut],
+  Minjeong Jeon [aut, cph],
+  Michael E. Cotterell [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4302-0891>),
+  University of Georgia [cph] (The content and opinions expressed in this
+    material do not necessarily reflect the views of nor are they
+    endorsed by the University of Georgia or the University System of
+    Georgia.),
+  Institute of Education Sciences [fnd] (This work is supported by the
+    U.S. Department of Education Institute of Education Sciences under
+    IES Award Number R305D220020.),
+  National Science Foundation [fnd] (This work is supported by the
+    National Science Foundation under NSF Award Number 1921373.)
+Maintainer: Michael E. Cotterell <mepcott@uga.edu>
+Repository: CRAN
+Date/Publication: 2024-02-05 19:30:02 UTC

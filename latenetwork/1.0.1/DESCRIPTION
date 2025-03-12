@@ -1,0 +1,28 @@
+Package: latenetwork
+Type: Package
+Title: Inference on LATEs under Network Interference of Unknown Form
+Version: 1.0.1
+Authors@R: c(
+    person("Tadao", "Hoshino", email = "thoshino@waseda.jp", role = c("aut", "cph"), comment = c(ORCID = "0000-0001-9484-2943")),
+    person("Takahide", "Yanagi", email = "yanagi@econ.kyoto-u.ac.jp", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-3975-5518"))
+    )
+Description: Estimating causal parameters in the presence of treatment spillover is of great interest in statistics.
+    This package provides tools for instrumental variables estimation of average causal effects under network interference of unknown form.
+    The target parameters are the local average direct effect, the local average indirect effect, the local average overall effect, and the local average spillover effect.
+    The methods are developed by Hoshino and Yanagi (2023) <doi:10.48550/arXiv.2108.07455>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: igraph, methods, statip, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://tkhdyanagi.github.io/latenetwork/
+NeedsCompilation: no
+Packaged: 2023-08-07 23:58:25 UTC; Takahide Yanagi
+Author: Tadao Hoshino [aut, cph] (<https://orcid.org/0000-0001-9484-2943>),
+  Takahide Yanagi [aut, cre, cph]
+    (<https://orcid.org/0000-0003-3975-5518>)
+Maintainer: Takahide Yanagi <yanagi@econ.kyoto-u.ac.jp>
+Repository: CRAN
+Date/Publication: 2023-08-08 16:10:02 UTC

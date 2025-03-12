@@ -1,0 +1,33 @@
+Package: GWRLASSO
+Type: Package
+Title: A Hybrid Model for Spatial Prediction Through Local Regression
+Version: 0.1.0
+Authors@R: c(person("Nobin Chandra","Paul", role=c("aut","cre","cph"), email="nobin.paul@icar.gov.in"),person("Anil","Rai",role="aut"),person("Ankur","Biswas",role="aut"),person("Tauqueer","Ahmad",role="aut"),person("Bhaskar B."," Gaikwad",role="aut"),person("Dhananjay D.","Nangare",role="aut"),person("K. Sammi","Reddy",role="aut"))
+Depends: R(>= 2.10)
+Suggests: knitr,rmarkdown, testthat
+Description: It implements a hybrid spatial model for improved spatial prediction by combining the variable selection capability of
+             LASSO (Least Absolute Shrinkage and Selection Operator) with the Geographically Weighted Regression (GWR) model that 
+             captures the spatially varying relationship efficiently. For method details see, Wheeler, D.C.(2009).<DOI:10.1068/a40256>.
+             The developed hybrid model efficiently selects the relevant variables by using LASSO as the first step; these selected variables
+             are then incorporated into the GWR framework, allowing the estimation of spatially varying regression coefficients at unknown locations
+             and finally predicting the values of the response variable at unknown test locations while taking into account the spatial heterogeneity of the data. 
+             Integrating the LASSO and GWR models enhances prediction accuracy by considering spatial heterogeneity and capturing the local relationships between 
+             the predictors and the response variable. The developed hybrid spatial model can be useful for spatial modeling, especially in scenarios involving complex 
+             spatial patterns and large datasets with multiple predictor variables.
+License: GPL (>= 2.0)
+Encoding: UTF-8
+Imports: stats, qpdf, numbers, glmnet, Matrix
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-08-25 12:42:31 UTC; nobin ch paul
+Author: Nobin Chandra Paul [aut, cre, cph],
+  Anil Rai [aut],
+  Ankur Biswas [aut],
+  Tauqueer Ahmad [aut],
+  Bhaskar B.  Gaikwad [aut],
+  Dhananjay D. Nangare [aut],
+  K. Sammi Reddy [aut]
+Maintainer: Nobin Chandra Paul <nobin.paul@icar.gov.in>
+Repository: CRAN
+Date/Publication: 2023-08-28 11:10:05 UTC

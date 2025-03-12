@@ -1,0 +1,50 @@
+Package: dataReporter
+Type: Package
+Title: Reproducible Data Screening Checks and Report of Possible Errors
+Version: 1.0.2
+Date: 2021-11-10
+Authors@R: c(person(given="Anne Helby", family="Petersen", email="ahpe@sund.ku.dk", role=c("aut")),
+             person(given="Claus Thorn", family="Ekstrøm", email="ekstrom@sund.ku.dk", role=c("aut", "cre")))
+Description: Data screening is an important first step of any statistical
+    analysis. 'dataReporter' auto generates a customizable data report with a thorough
+    summary of the checks and the results that a human can use to identify possible
+    errors. It provides an extendable suite of test for common potential
+    errors in a dataset. See Petersen AH, Ekstrøm CT (2019). "dataMaid: Your Assistant for Documenting Supervised Data Quality Screening in R." _Journal of Statistical Software_, *90*(6), 1-38 <doi:10.18637/jss.v090.i06> for more information.
+URL: https://github.com/ekstroem/dataReporter
+BugReports: https://github.com/ekstroem/dataReporter/issues
+Imports: ggplot2, gridExtra, haven, htmltools, magrittr, methods,
+        pander, rmarkdown (>= 1.10), robustbase (>= 0.93-2), stringi,
+        whoami
+Suggests: knitr, testthat
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+SystemRequirements: pandoc (>= 2.0; https://pandoc.org), git, whoami
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+License: GPL-2
+RoxygenNote: 7.1.1
+Collate: 'aggregateForBarplot.R' 'aggregateForHistogram.R'
+        'allCheckFunctions.R' 'allClasses.R' 'allSummaryFunctions.R'
+        'allVisualFunctions.R' 'allXFunctions.R' 'makeXFunction.R'
+        'visualFunction.R' 'basicVisual.R' 'summaryFunction.R'
+        'centralValue.R' 'check.R' 'checkResult.R' 'messageGenerator.R'
+        'checkFunction.R' 'identifyMissing.R' 'minMax.R' 'classes.R'
+        'countMissing.R' 'dataReporter-package.R'
+        'dataReporter_as_factor.R' 'description.R'
+        'identifyCaseIssues.R' 'identifyLoners.R' 'identifyNums.R'
+        'identifyOutliers.R' 'identifyOutliersTBStyle.R'
+        'identifyWhitespace.R' 'isCPR.R' 'isSingular.R' 'isEmpty.R'
+        'isKey.R' 'isSupported.R' 'makeCodebook.R' 'makeDataReport.R'
+        'misc.R' 'quartiles.R' 'refCat.R' 'render.R' 'setChecks.R'
+        'setSummaries.R' 'setVisuals.R' 'smartNum.R' 'standardVisual.R'
+        'summarize.R' 'summaryResult.R' 'tableVisual.R'
+        'uniqueValues.R' 'unpackLabelled.R' 'utility.R'
+        'variableType.R' 'visualize.R'
+NeedsCompilation: no
+Packaged: 2021-11-10 23:06:47 UTC; ekstrom
+Author: Anne Helby Petersen [aut],
+  Claus Thorn Ekstrøm [aut, cre]
+Maintainer: Claus Thorn Ekstrøm <ekstrom@sund.ku.dk>
+Repository: CRAN
+Date/Publication: 2021-11-11 07:50:06 UTC

@@ -1,0 +1,34 @@
+Package: TauStar
+Type: Package
+Title: Efficient Computation and Testing of the Bergsma-Dassios Sign
+        Covariance
+Version: 1.1.7
+Date: 2024-12-11
+Authors@R: c(person("Luca", "Weihs", email="lucaw@uw.edu", role=c("aut")),
+            person("Emin", "Martinian", role=c("ctb"), comment="Created the red-black tree library included in package."),
+            person(c("Julian",  "D."), "Karch",
+            email = "j.d.karch@fsw.leidenuniv.nl", 
+            role = c("cre"),
+            comment = c(ORCID = "0000-0002-1625-2822")))
+Description: Computes the t* statistic corresponding to the tau* population
+          coefficient introduced by Bergsma and Dassios (2014) <DOI:10.3150/13-BEJ514>
+          and does so in O(n^2) time following the algorithm of Heller and
+          Heller (2016) <DOI:10.48550/arXiv.1605.08732> building off of the work of Weihs,
+          Drton, and Leung (2016) <DOI:10.1007/s00180-015-0639-x>. Also allows for
+          independence testing using the asymptotic distribution of t* as described by
+          Nandy, Weihs, and Drton (2016) <DOI:10.1214/16-EJS1166>.
+License: GPL (>= 3)
+Imports: Rcpp (>= 1.0.1)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-12-11 13:27:31 UTC; karch
+Author: Luca Weihs [aut],
+  Emin Martinian [ctb] (Created the red-black tree library included in
+    package.),
+  Julian D. Karch [cre] (<https://orcid.org/0000-0002-1625-2822>)
+Maintainer: Julian D. Karch <j.d.karch@fsw.leidenuniv.nl>
+Repository: CRAN
+Date/Publication: 2024-12-12 15:00:02 UTC

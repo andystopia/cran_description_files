@@ -1,0 +1,46 @@
+Package: stdReg2
+Type: Package
+Title: Regression Standardization for Causal Inference
+Version: 1.0.3
+Authors@R: 
+    c(person(given = "Michael C",
+             family = "Sachs",
+             role = c("aut", "cre"),
+             email = "sachsmc@gmail.com"),
+      person(given = "Arvid", 
+             family = "Sjölander", role = c("aut")), 
+      person(given = "Erin E", 
+      family = "Gabriel", 
+      role = "aut"),
+      person(given = "Johan Sebastian", 
+            family = "Ohlendorff", role = "aut"), 
+      person(given = "Adam", 
+            family = "Brand", role = "aut"))
+URL: https://sachsmc.github.io/stdReg2/
+BugReports: https://github.com/sachsmc/stdReg2/issues/
+Date: 2025-02-27
+Description: Contains more modern tools for causal inference using regression 
+      standardization. Four general classes of models are implemented; generalized 
+      linear models, conditional generalized estimating equation models, 
+      Cox proportional hazards models, and shared frailty gamma-Weibull models. 
+      Methodological details are described in Sjölander, A. (2016) <doi:10.1007/s10654-016-0157-3>. 
+      Also includes functionality for doubly robust estimation for generalized linear models 
+      in some special cases, and the ability to implement custom models. 
+License: AGPL (>= 3)
+Encoding: UTF-8
+Imports: data.table, drgee, generics, survival
+Suggests: causaldata, AF, knitr, nnet, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2025-02-28 10:51:06 UTC; micsac
+Author: Michael C Sachs [aut, cre],
+  Arvid Sjölander [aut],
+  Erin E Gabriel [aut],
+  Johan Sebastian Ohlendorff [aut],
+  Adam Brand [aut]
+Maintainer: Michael C Sachs <sachsmc@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-02-28 11:10:01 UTC

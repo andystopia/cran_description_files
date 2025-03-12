@@ -1,0 +1,42 @@
+Package: RMX
+Type: Package
+Title: Rasch Models -- eXtensions
+Version: 0.1-6
+Date: 2024-09-07
+Authors@R: c(person(given = "Milica",                       
+                    family = "Kabic",                       
+                    role = "aut"),                          
+             person(given = c("Rainer", "W."),              
+                    family = "Alexandrowicz",               
+                    role = c("aut", "cre"),                 
+                    email = "rainer.alexandrowicz@aau.at")) 
+Description: 
+ Extend Rasch and Item Response Theory (IRT) analyses by providing  
+ tools for post-processing the output from five major IRT packages  
+ (i.e., 'eRm', 'psychotools', 'ltm', 'mirt', and 'TAM').            
+ The current version provides the plotPIccc() function, which       
+ extracts from the return object of the originating package all     
+ information required to draw an extended Person-Item-Map (PIccc),  
+ showing any combination of                                         
+ * category characteristic curves (CCCs),                           
+ * threshold characteristic curves (TCCs),                          
+ * item characteristic curves (ICCs),                               
+ * category information functions (CIFs),                           
+ * item information functions (IIFs),                               
+ * test information function (TIF), and the                         
+ * standard error curve (S.E.).                                     
+ for uni- and multidimensional models (as far as supported by each  
+ package). It allows for selecting dimensions, items, and categories
+ to plot and offers numerous options to adapt the output. The return
+ object contains all calculated values for further processing.      
+Depends: R (>= 4.1.0)
+License: GPL (>= 3)
+Suggests: eRm, psychotools, ltm, mirt, TAM
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-09-07 15:47:05 UTC; aa
+Author: Milica Kabic [aut],
+  Rainer W. Alexandrowicz [aut, cre]
+Maintainer: Rainer W. Alexandrowicz <rainer.alexandrowicz@aau.at>
+Repository: CRAN
+Date/Publication: 2024-09-11 16:20:06 UTC

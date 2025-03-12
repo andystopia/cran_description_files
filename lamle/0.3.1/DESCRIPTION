@@ -1,0 +1,31 @@
+Package: lamle
+Encoding: UTF-8
+Type: Package
+Title: Maximum Likelihood Estimation of Latent Variable Models
+Version: 0.3.1
+Date: 2023-08-24
+Authors@R: 
+    c(person(given = "Björn", family = "Andersson", role = c("aut", "cre"), email = "bjoern.h.andersson@gmail.com", comment = c(ORCID = "0000-0002-9007-2440")),      person(given = "Shaobo", family = "Jin", role = c("aut"), email = "shaobo.jin@statistik.uu.se", comment = c(ORCID = "0000-0001-6538-3477")), 	 person(given = "Maoxin", family = "Zhang", role = c("ctb"), email = "maoxin.zhang@cemo.uio.no"))
+Description: Approximate marginal maximum likelihood estimation of multidimensional
+	latent variable models via adaptive quadrature or Laplace approximations to the 
+	integrals in the likelihood function, as presented for confirmatory factor 
+	analysis models in Jin, S., Noh, M., and Lee, Y. (2018) 
+	<doi:10.1080/10705511.2017.1403287>, for item response theory models in 
+	Andersson, B., and Xin, T. (2021) <doi:10.3102/1076998620945199>, and for 
+	generalized linear latent variable models in Andersson, B., Jin, S., and 
+	Zhang, M. (2023) <doi:10.1016/j.csda.2023.107710>. Models implemented include
+	the generalized	partial credit model, the graded response model, and generalized 
+	linear latent variable models for Poisson, negative-binomial and normal 
+	distributions. Supports a combination of binary, ordinal, count and continuous 
+	observed variables and multiple	group models.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.1), mvtnorm, numDeriv, stats, fastGHQuad, methods
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2023-08-24 14:25:44 UTC; bjorand
+Author: Björn Andersson [aut, cre] (<https://orcid.org/0000-0002-9007-2440>),
+  Shaobo Jin [aut] (<https://orcid.org/0000-0001-6538-3477>),
+  Maoxin Zhang [ctb]
+Maintainer: Björn Andersson <bjoern.h.andersson@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-08-25 07:50:05 UTC

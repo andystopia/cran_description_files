@@ -1,0 +1,35 @@
+Package: gMCP
+Type: Package
+Title: Graph Based Multiple Comparison Procedures
+Version: 0.8-17
+Authors@R: c(person("Kornelius", "Rohmeyer", role = c("aut", "cre"),  email = "rohmeyer@small-projects.de"),
+	      person("Florian", "Klinglmueller", role = "aut", email = "float@lefant.net"))
+Maintainer: Kornelius Rohmeyer <rohmeyer@small-projects.de>
+Description: Functions and a graphical user interface for graphical described
+    multiple test procedures.
+Depends: R (>= 3.0.0), methods
+Imports: MASS, PolynomF, multcomp (>= 1.1), mvtnorm, Matrix,
+        CommonJavaJars (>= 1.1.0), rJava (>= 0.6-3), JavaGD, xlsxjars
+        (>= 0.6.1), stats4
+Suggests: RUnit, knitr, graph (>= 1.20), mutoss, boot, coin
+VignetteBuilder: knitr
+SystemRequirements: Java (>= 5.0)
+License: GPL (>= 2)
+URL: https://github.com/kornl/gMCP
+BugReports: https://github.com/kornl/gMCP/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Collate: 'analysis.R' 'calcPower.R' 'graphMCP.R' 'closure.R'
+        'convertFromOldClassDefinition.R' 'doRUnitTests.R'
+        'exampleGraphs.R' 'gACT-internal.R' 'gMCP.R' 'gMCP.extended.R'
+        'gPAD.R' 'generateBounds.R' 'generatePvals.R' 'generateTest.R'
+        'generateWeights.R' 'graph2latex.R' 'graphTest.R' 'helperGUI.R'
+        'initJava.R' 'matrix2graph.R' 'misc.R' 'modifyGraphs.R'
+        'onLoad.R' 'plotCI.R' 'powerPlot.R' 'rqmvnorm.R' 'sampSize.R'
+        'startGUIs.R' 'subVariables.R'
+NeedsCompilation: yes
+Packaged: 2024-03-24 08:24:08 UTC; kornel
+Author: Kornelius Rohmeyer [aut, cre],
+  Florian Klinglmueller [aut]
+Repository: CRAN
+Date/Publication: 2024-03-25 23:50:07 UTC

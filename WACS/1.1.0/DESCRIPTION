@@ -1,0 +1,24 @@
+Package: WACS
+Type: Package
+Title: Multivariate Weather-State Approach Conditionally Skew-Normal
+        Generator
+Version: 1.1.0
+Date: 2020-06-05
+Author: Denis Allard [aut, cre], Ronan Trépos [aut]
+Maintainer: Ronan Trépos <ronan.trepos@inrae.fr>
+Description: A multivariate weather generator for daily climate variables based 
+    on weather-states (Flecher et al. (2010) <doi:10.1029/2009WR008098>). 
+    It uses a Markov chain for modeling the succession of weather states. 
+    Conditionally to the weather states, the multivariate variables are modeled using the family 
+    of Complete Skew-Normal distributions. Parameters are estimated on measured series. Must 
+    include the variable 'Rain' and can accept as many other variables as desired.
+License: GPL (>= 2.0)
+URL: https://miat.inrae.fr/site/Ronan_TREPOS
+Imports: mclust, mnormt, tmvtnorm, mvtnorm
+Encoding: UTF-8
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-06-05 10:27:59 UTC; rtrepos
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2020-06-05 12:30:06 UTC

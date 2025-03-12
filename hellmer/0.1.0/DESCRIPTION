@@ -1,0 +1,29 @@
+Package: hellmer
+Title: Batch Processing for Chat Models
+Version: 0.1.0
+Authors@R: 
+    person("Dylan", "Pieper", , "dylanpieper@gmail.com", role = c("aut", "cre"))
+Description: Batch processing framework for 'ellmer' chat model interactions.
+    Enables sequential and parallel processing of chat completions.
+    Core capabilities include error handling with backoff, state persistence,
+    progress tracking, and retry management.
+    Parallel processing is implemented via the 'future' framework.
+    Additional features include structured data extraction, tool integration,
+    timeout handling, verbosity control, and sound notifications.
+    Includes methods for returning chat texts, chat objects, progress status, 
+    and structured data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Imports: beepr, cli, future, furrr, parallel, purrr, R.utils, S7, utils
+Depends: ellmer
+URL: https://dylanpieper.github.io/hellmer/
+NeedsCompilation: no
+Packaged: 2025-03-05 21:54:51 UTC; dylanpieper
+Author: Dylan Pieper [aut, cre]
+Maintainer: Dylan Pieper <dylanpieper@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-07 11:40:10 UTC

@@ -1,0 +1,36 @@
+Package: legion
+Type: Package
+Title: Forecasting Using Multivariate Models
+Version: 0.2.1
+Date: 2025-02-03
+Authors@R: c(person("Ivan", "Svetunkov", email = "ivan@svetunkov.com", role = c("aut", "cre"),
+                  comment="Senior Lecturer, Centre for Marketing Analytics and Forecasting, Lancaster University, UK"),
+             person("Kandrika Fadhlan", "Pritularga", email = "k.pritularga@lancaster.ac.uk", role = c("aut"),
+                  comment="Lecturer, Centre for Marketing Analytics and Forecasting, Lancaster University, UK"))
+URL: https://github.com/config-i1/legion
+BugReports: https://github.com/config-i1/legion/issues
+Language: en-GB
+Description: Functions implementing multivariate state space models for purposes of time series analysis and forecasting.
+             The focus of the package is on multivariate models, such as Vector Exponential Smoothing,
+             Vector ETS (Error-Trend-Seasonal model) etc. It currently includes Vector Exponential
+             Smoothing (VES, de Silva et al., 2010, <doi:10.1177/1471082X0901000401>), Vector ETS (Svetunkov et al., 2023,
+             <doi:10.1016/j.ejor.2022.04.040>) and simulation function for VES.
+License: LGPL-2.1
+Depends: R (>= 3.5.0), greybox (>= 1.0.4), smooth (>= 3.1.0)
+Imports: Rcpp (>= 0.12.3), stats, generics (>= 0.1.2), graphics,
+        grDevices, Matrix, nloptr, utils, zoo
+LinkingTo: Rcpp, RcppArmadillo (>= 0.8.100.0.0)
+Suggests: numDeriv, testthat, knitr, rmarkdown, doMC, doParallel,
+        foreach
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2025-02-03 14:14:35 UTC; config
+Author: Ivan Svetunkov [aut, cre] (Senior Lecturer, Centre for Marketing
+    Analytics and Forecasting, Lancaster University, UK),
+  Kandrika Fadhlan Pritularga [aut] (Lecturer, Centre for Marketing
+    Analytics and Forecasting, Lancaster University, UK)
+Maintainer: Ivan Svetunkov <ivan@svetunkov.com>
+Repository: CRAN
+Date/Publication: 2025-02-03 16:10:02 UTC

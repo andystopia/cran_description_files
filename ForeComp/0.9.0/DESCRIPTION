@@ -1,0 +1,26 @@
+Package: ForeComp
+Type: Package
+Title: Size-Power Tradeoff Visualization for Equal Predictive Ability
+        of Two Forecasts
+Description: Offers a set of tools for visualizing and analyzing size and power properties of the test for equal predictive accuracy, the Diebold-Mariano test that is based on heteroskedasticity and autocorrelation-robust (HAR) inference. A typical HAR inference is involved with non-parametric estimation of the long-run variance, and one of its tuning parameters, the truncation parameter, trades off a size and power. Lazarus, Lewis, and Stock (2021)<doi:10.3982/ECTA15404> theoretically characterize the size-power frontier for the Gaussian multivariate location model. 'ForeComp' computes and visualizes the finite-sample size-power frontier of the Diebold-Mariano test based on fixed-b asymptotics together with the Bartlett kernel. To compute the finite-sample size and power, it works with the best approximating ARMA process to the given dataset. It informs the user how their choice of the truncation parameter performs and how robust the testing outcomes are.
+Version: 0.9.0
+Authors@R: c(
+  person("Nathan", "Schor", role = c("aut")),
+  person("Minchul", "Shin", email = "visiblehand@gmail.com", role = c("aut", "cre", "cph"))
+  )
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/mcmcs/ForeComp
+LazyData: true
+Depends: R (>= 3.0.0), stats, astsa, forecast
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: ggplot2, rlang
+NeedsCompilation: no
+Packaged: 2023-09-05 16:44:13 UTC; C1MXS14
+Author: Nathan Schor [aut],
+  Minchul Shin [aut, cre, cph]
+Maintainer: Minchul Shin <visiblehand@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-05 20:30:02 UTC

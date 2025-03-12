@@ -1,0 +1,28 @@
+Package: BEND
+Title: Bayesian Estimation of Nonlinear Data (BEND)
+Version: 1.0
+Authors@R: c(
+  person("Corissa T.", "Rohloff", email = "corissa.wurth@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0000-0003-3228-4653")),
+  person("Rik", "Lamm", email = "rzlamm@gmail.com", role = "aut", comment = c(ORCID = "0000-0002-3317-6243")),
+  person("Yadira", "Peralta", email = "yadira.peralta@cide.edu", role = "aut", comment = c(ORCID = "0000-0003-4823-6939")),
+  person("Nidhi", "Kohli", email = "nkohli@umn.edu", role = "aut", comment = c(ORCID = "0000-0003-4690-2854")),
+  person("Eric F.", "Lock", email = "elock@umn.edu", role = "aut", comment = c(ORCID = "0000-0003-4663-2356")))
+Description: Provides a set of models to estimate nonlinear longitudinal data using Bayesian estimation methods. These models include the: 1) Bayesian Piecewise Random Effects Model (Bayes_PREM()) which estimates a piecewise random effects (mixture) model for a given number of latent classes and a latent number of possible changepoints in each class, and can incorporate class and outcome predictive covariates (see Lamm (2022) <https://hdl.handle.net/11299/252533> and Lock et al., (2018) <doi:10.1007/s11336-017-9594-5>), 2) Bayesian Crossed Random Effects Model (Bayes_CREM()) which estimates a linear, quadratic, exponential, or piecewise crossed random effects models where individuals are changing groups over time (e.g., students and schools; see Rohloff et al., (2024) <doi:10.1111/bmsp.12334>), and 3) Bayesian Bivariate Piecewise Random Effects Model (Bayes_BPREM()) which estimates a bivariate piecewise random effects model to jointly model two related outcomes (e.g., reading and math achievement; see Peralta et al., (2022) <doi:10.1037/met0000358>). 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://github.com/crohlo/BEND
+BugReports: https://github.com/crohlo/BEND/issues
+Depends: R (>= 3.6.3)
+Imports: coda (>= 0.19.4), label.switching (>= 1.8), rjags (>= 4.14)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-03-22 21:31:23 UTC; CorissaW
+Author: Corissa T. Rohloff [aut, cre] (<https://orcid.org/0000-0003-3228-4653>),
+  Rik Lamm [aut] (<https://orcid.org/0000-0002-3317-6243>),
+  Yadira Peralta [aut] (<https://orcid.org/0000-0003-4823-6939>),
+  Nidhi Kohli [aut] (<https://orcid.org/0000-0003-4690-2854>),
+  Eric F. Lock [aut] (<https://orcid.org/0000-0003-4663-2356>)
+Maintainer: Corissa T. Rohloff <corissa.wurth@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-23 11:42:42 UTC

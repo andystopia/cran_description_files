@@ -1,0 +1,57 @@
+Package: lfe
+Version: 3.1.1
+Title: Linear Group Fixed Effects
+Authors@R: c(
+  person(given = "Simen",
+         family = "Gaure",
+         role = "aut",
+         comment = c(ORCID="https://orcid.org/0000-0001-7251-8747")),
+	person(given = "Grant",
+	       family = "McDermott",
+	       role = "ctb"),
+  person(given = "Mauricio",
+         family = "Vargas Sepulveda",
+         role = c("ctb", "cre"),
+         email = "m.sepulveda@mail.utoronto.ca",
+         comment = c(ORCID = "0000-0003-1017-7574")),
+  person(given = "Karl",
+	       family = "Dunkle Werner",
+	       role ="ctb"),
+	person(given = "Matthieu",
+	       family = "Stigler",
+	       role = "ctb",
+	       comment = c(ORCID="0000-0002-6802-4290")),
+	person(given = "Daniel",
+	       family = "Lüdecke",
+	       role ="ctb"))
+Depends: R (>= 2.15.2), Matrix (>= 1.1-2)
+Imports: Formula, xtable, compiler, utils, methods, sandwich, parallel
+Suggests: knitr, digest, igraph, plm, cubature (>= 2.0.3), numDeriv,
+        data.table, alpaca
+VignetteBuilder: knitr
+ByteCompile: yes
+Description: Transforms away factors with many levels prior to doing an OLS.
+  Useful for estimating linear models with multiple group fixed effects, and for
+  estimating linear models which uses factors with many levels as pure control variables. See Gaure (2013) <doi:10.1016/j.csda.2013.03.024>
+  Includes support for instrumental variables, conditional F statistics for weak instruments,
+  robust and multi-way clustered standard errors, as well as limited mobility bias correction (Gaure 2014 <doi:10.1002/sta4.68>).
+  Since version 3.0, it provides dedicated functions to estimate Poisson models.
+License: Apache License (>= 2)
+Classification/JEL: C13, C23, C60
+Classification/MSC: 62J05, 65F10, 65F50
+URL: https://github.com/r-econometrics/lfe
+BugReports: https://github.com/r-econometrics/lfe/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2025-02-11 06:31:07 UTC; pacha
+Author: Simen Gaure [aut] (<https://orcid.org/0000-0001-7251-8747>),
+  Grant McDermott [ctb],
+  Mauricio Vargas Sepulveda [ctb, cre]
+    (<https://orcid.org/0000-0003-1017-7574>),
+  Karl Dunkle Werner [ctb],
+  Matthieu Stigler [ctb] (<https://orcid.org/0000-0002-6802-4290>),
+  Daniel Lüdecke [ctb]
+Maintainer: Mauricio Vargas Sepulveda <m.sepulveda@mail.utoronto.ca>
+Repository: CRAN
+Date/Publication: 2025-02-11 07:30:01 UTC

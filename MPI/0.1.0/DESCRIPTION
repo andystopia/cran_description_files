@@ -1,0 +1,32 @@
+Package: MPI
+Type: Package
+Title: Computation of Multidimensional Poverty Index (MPI)
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Kittiya", 
+         family = "Kukiattikun", 
+         role = c("aut", "cre"),
+         email = "kittiya.contact@gmail.com"),
+  person(given = "Chainarong",
+         family = "Chainarong",
+         role = "aut",
+         email = "grandca@gmail.com"
+         ))
+Description: Computing package for Multidimensional Poverty Index (MPI) using Alkire-Foster method. Given N individuals, each person has D indicators of deprivation, the package compute MPI value to represent the degree of poverty in a population. The inputs are 1) an N by D matrix, which has the element (i,j) represents whether an individual i is deprived in an indicator j (1 is deprived and 0 is not deprived), and 2) the deprivation threshold.  The main output is the MPI value, which has the range between zero and one. MPI value is approaching one if almost all people are deprived in all indicators, and it is approaching zero if almost no people are deprived in any indicator.  Please see Alkire S., Chatterjee, M., Conconi, A., Seth, S. and Ana Vaz (2014) <doi:10.35648/20.500.12413/11781/ii039> for The Alkire-Foster methodology.
+License: MIT + file LICENSE
+URL: https://github.com/9POINTEIGHT/MPI
+BugReports: https://github.com/9POINTEIGHT/MPI/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: dplyr, tidyr, utils, doParallel, foreach, purrr
+Suggests: knitr, rmarkdown, markdown, kableExtra
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-04-01 06:40:25 UTC; kitti
+Author: Kittiya Kukiattikun [aut, cre],
+  Chainarong Chainarong [aut]
+Maintainer: Kittiya Kukiattikun <kittiya.contact@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-04-05 09:40:10 UTC

@@ -1,0 +1,32 @@
+Package: ddi
+Type: Package
+Title: The Data Defect Index for Samples that May not be IID
+Version: 0.1.0
+Authors@R: c(person(given = "Shiro",
+             family = "Kuriwaki",
+             role = c("aut", "cre"),
+             email = "shirokuriwaki@gmail.com",
+             comment = c(ORCID = "0000-0002-5687-2647")))
+Description: Implements Meng's data defect index (ddi), which represents
+    the degree of sample bias relative to an iid sample. The data defect 
+    correlation (ddc) represents the correlation between the outcome of interest
+    and the selection into the sample; when the sample selection is independent
+    across the population, the ddc is zero. Details are in Meng (2018) 
+    <doi:10.1214/18-AOAS1161SF>, "Statistical Paradises and Paradoxes in Big Data (I): 
+    Law of Large Populations, Big Data Paradox, and the 2016 US Presidential 
+    Election." Survey estimates from the Cooperative Congressional Election Study 
+    (CCES) is included to replicate the article's results. 
+Encoding: UTF-8
+URL: https://github.com/kuriwaki/ddi
+BugReports: http://github.com/kuriwaki/ddi/issues
+License: GPL (>= 2)
+LazyData: true
+RoxygenNote: 7.0.2
+Depends: R (>= 2.10)
+Suggests: testthat (>= 2.1.0), dplyr, tibble
+NeedsCompilation: no
+Packaged: 2020-01-19 18:19:38 UTC; shirokuriwaki
+Author: Shiro Kuriwaki [aut, cre] (<https://orcid.org/0000-0002-5687-2647>)
+Maintainer: Shiro Kuriwaki <shirokuriwaki@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-26 10:50:02 UTC

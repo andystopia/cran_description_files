@@ -1,0 +1,30 @@
+Package: ClusTCR2
+Title: Identifying Similar T Cell Receptor Hyper-Variable Sequences
+        with 'ClusTCR2'
+Version: 1.7.3.01
+Date: 2024-05-15
+Authors@R: c(person("Kerry A.", "Mullan", role = c("aut","cre"),
+                     email = "Kerry.Mullan@uantwerpen.be"),
+              person("Sebastiaan", "Valkiers", role = c("aut","ctb")),
+              person("Kris", "Laukens", role = c("aut","ctb")),
+              person("Pieter", "Meysman", role = c("aut","ctb"),
+                     email = ""))
+Author: Kerry A. Mullan [aut, cre],
+  Sebastiaan Valkiers [aut, ctb],
+  Kris Laukens [aut, ctb],
+  Pieter Meysman [aut, ctb]
+Description: Enhancing T cell receptor (TCR) sequence analysis, 'ClusTCR2', based on 'ClusTCR' python program, leverages Hamming distance to compare the complement-determining region three (CDR3) sequences for sequence similarity, variable gene (V gene) and length. The second step employs the Markov Cluster Algorithm to identify clusters within an undirected graph, providing a summary of amino acid motifs and matrix for generating network plots. Tailored for single-cell RNA-seq data with integrated TCR-seq information, 'ClusTCR2' is integrated into the Single Cell TCR and Expression Grouped Ontologies (STEGO) R application or 'STEGO.R'. See the two publications for more details. Sebastiaan Valkiers, Max Van Houcke, Kris Laukens, Pieter Meysman (2021) <doi:10.1093/bioinformatics/btab446>, Kerry A. Mullan, My Ha, Sebastiaan Valkiers, Nicky de Vrij, Benson Ogunjimi, Kris Laukens, Pieter Meysman (2023) <doi:10.1101/2023.09.27.559702>.
+Maintainer: Kerry A. Mullan <Kerry.Mullan@uantwerpen.be>
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: DescTools, ggplot2, ggseqlogo, network, plyr, RColorBrewer,
+        stringr, scales, sna, VLF
+biocViews: GeneTarget, SingleCell
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-05-15 16:22:16 UTC; kerrymullan
+Repository: CRAN
+Date/Publication: 2024-05-16 15:00:19 UTC

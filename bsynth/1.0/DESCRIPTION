@@ -1,0 +1,43 @@
+Package: bsynth
+Title: Bayesian Synthetic Control
+Version: 1.0
+Authors@R: 
+    c(person(given = "Ignacio",
+           family = "Martinez",
+           role = c("aut", "cre"),
+           email = "ignacio@martinez.fyi",
+           comment = c(ORCID = "0000-0002-3721-8172")),
+      person(given = "Jaume",
+	   role = "aut",
+	   email = "vives@mit.edu"))
+Description: Implements the Bayesian Synthetic Control method for causal inference
+    in comparative case studies. This package provides tools for estimating
+    treatment effects in settings with a single treated unit and multiple control
+    units, allowing for uncertainty quantification and flexible modeling of
+    time-varying effects. The methodology is based on the paper by Vives and
+    Martinez (2022) <doi:10.48550/arXiv.2206.01779>.
+License: Apache License 2.0
+URL: https://github.com/google/bsynth, https://arxiv.org/abs/2206.01779
+BugReports: https://github.com/google/bsynth/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: R6, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), cubelyr, dplyr,
+        ggplot2, glue, magrittr, methods, purrr, rstan (>= 2.18.1),
+        rstantools (>= 2.1.1), scales, tibble, tidyr, vizdraws (>=
+        1.1), stats, rlang
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, roxygen2, gsynth, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-06-23 16:15:49 UTC; rstudio
+Author: Ignacio Martinez [aut, cre] (<https://orcid.org/0000-0002-3721-8172>),
+  Jaume [aut]
+Maintainer: Ignacio Martinez <ignacio@martinez.fyi>
+Repository: CRAN
+Date/Publication: 2024-06-25 10:50:03 UTC

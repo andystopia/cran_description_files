@@ -1,0 +1,68 @@
+Package: caviarpd
+Type: Package
+Title: Cluster Analysis via Random Partition Distributions
+Version: 0.3.13
+Authors@R: c(person(given = "David B.", family = "Dahl", role = c("aut", "cre"), email = "dahl@stat.byu.edu", comment = c(ORCID = "0000-0002-8173-1547")),
+    person(given = "R. Jacob", family = "Andros", role = c("aut"), email = "androsrj@gmail.com", comment = c(ORCID = "0000-0002-1289-385X")),
+    person(given = "J. Brandon", family = "Carter",role = c("aut"), email = "carterj4@icloud.com", comment = c(ORCID = "0000-0003-1687-0564")),
+    person(given = "Alex", family = "Crichton", email = "alex@alexcrichton.com", role = "ctb", comment = c("Rust crates: cfg-if, proc-macro2")),
+    person(given = "Brendan", family = "Zabarauskas", email = "bjzaba@yahoo.com.au", role = "ctb", comment = c("Rust crate: approx")),
+    person(given = "David B.", family = "Dahl", email = "dahl@stat.byu.edu", role = "ctb", comment = c("Rust crates: dahl-partition, dahl-salso, epa, roxido, roxido_macro")),
+    person(given = "David", family = "Tolnay", email = "dtolnay@gmail.com", role = "ctb", comment = c("Rust crates: proc-macro2, quote, syn, unicode-ident")),
+    person(given = "Jim", family = "Turner", role = "ctb", comment = c("Rust crate: ndarray")),
+    person(given = "Jorge", family = "Aparicio", email = "jorge@japaric.io", role = "ctb", comment = c("Rust crate: libm")),
+    person(given = "Josh", family = "Stone", email = "cuviper@gmail.com", role = "ctb", comment = c("Rust crate: autocfg")),
+    person(given = "Mikhail", family = "Vorotilov", email = "mikhail.vorotilov@gmail.com", role = "ctb", comment = c("Rust crate: roots")),
+    person(given = "R. Janis", family = "Goldschmidt", role = "ctb", comment = c("Rust crate: matrixmultiply")),
+    person(given = "Sean", family = "McArthur", email = "sean@seanmonstar.com", role = "ctb", comment = c("Rust crate: num_cpus")),
+    person(given = "Stefan", family = "Lankes", role = "ctb", comment = c("Rust crate: hermit-abi")),
+    person(given = "The Cranelift Project Developers", role = "ctb", comment = c("Rust crate: wasi")),
+    person(given = "The CryptoCorrosion Contributors", role = "ctb", comment = c("Rust crates: ppv-lite86, rand_chacha")),
+    person(given = "The Rand Project Developers", role = "ctb", comment = c("Rust crates: getrandom, rand, rand_chacha, rand_core, rand_distr, rand_pcg")),
+    person(given = "The Rust Project Developers", role = "ctb", comment = c("Rust crates: libc, num-complex, num-integer, num-traits, rand, rand_chacha, rand_core")),
+    person(given = "Ulrik Sverdrup", family = "\"bluss\"", role = "ctb", comment = c("Rust crate: ndarray")),
+    person(given = "bluss", role = "ctb", comment = c("Rust crates: matrixmultiply, rawpointer")),
+    person())
+Description: Cluster analysis is performed using pairwise distance information and a random partition distribution. The method is
+             implemented for two random partition distributions. It draws samples and then obtains and plots clustering estimates.
+             An implementation of a selection algorithm is provided for the mass parameter of the partition distribution. Since 
+             pairwise distances are the principal input to this procedure, it is most comparable to the hierarchical and k-medoids
+             clustering methods. The method is Dahl, Andros, Carter (2022+) <doi:10.1002/sam.11602>.
+License: MIT + file LICENSE | Apache License 2.0
+URL: https://github.com/dbdahl/caviarpd
+BugReports: https://github.com/dbdahl/caviarpd/issues
+Depends: R (>= 4.2.0)
+Suggests: salso (>= 0.3.0)
+SystemRequirements: Cargo (Rust's package manager), rustc (>= 1.66.1)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-09-06 15:39:42 UTC; dahl
+Author: David B. Dahl [aut, cre] (<https://orcid.org/0000-0002-8173-1547>),
+  R. Jacob Andros [aut] (<https://orcid.org/0000-0002-1289-385X>),
+  J. Brandon Carter [aut] (<https://orcid.org/0000-0003-1687-0564>),
+  Alex Crichton [ctb] (Rust crates: cfg-if, proc-macro2),
+  Brendan Zabarauskas [ctb] (Rust crate: approx),
+  David B. Dahl [ctb] (Rust crates: dahl-partition, dahl-salso, epa,
+    roxido, roxido_macro),
+  David Tolnay [ctb] (Rust crates: proc-macro2, quote, syn,
+    unicode-ident),
+  Jim Turner [ctb] (Rust crate: ndarray),
+  Jorge Aparicio [ctb] (Rust crate: libm),
+  Josh Stone [ctb] (Rust crate: autocfg),
+  Mikhail Vorotilov [ctb] (Rust crate: roots),
+  R. Janis Goldschmidt [ctb] (Rust crate: matrixmultiply),
+  Sean McArthur [ctb] (Rust crate: num_cpus),
+  Stefan Lankes [ctb] (Rust crate: hermit-abi),
+  The Cranelift Project Developers [ctb] (Rust crate: wasi),
+  The CryptoCorrosion Contributors [ctb] (Rust crates: ppv-lite86,
+    rand_chacha),
+  The Rand Project Developers [ctb] (Rust crates: getrandom, rand,
+    rand_chacha, rand_core, rand_distr, rand_pcg),
+  The Rust Project Developers [ctb] (Rust crates: libc, num-complex,
+    num-integer, num-traits, rand, rand_chacha, rand_core),
+  Ulrik Sverdrup "bluss" [ctb] (Rust crate: ndarray),
+  bluss [ctb] (Rust crates: matrixmultiply, rawpointer)
+Maintainer: David B. Dahl <dahl@stat.byu.edu>
+Repository: CRAN
+Date/Publication: 2024-09-06 16:00:12 UTC

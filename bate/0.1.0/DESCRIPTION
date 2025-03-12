@@ -1,0 +1,30 @@
+Package: bate
+Title: Computes Bias-Adjusted Treatment Effect
+Version: 0.1.0
+Authors@R: c(
+    person("Deepankar", "Basu", , "dbasu@umass.edu", role = c("aut", "cre")),
+    person("Evan", "Wasner", , "ewasner@umass.edu", role = c("aut")))
+Description: Compute bounds for the treatment effect 
+    after adjusting for the presence of omitted variables in linear  
+    econometric models, according to the method of Basu (2022) <arXiv:2203.12431>. 
+    You supply the data, identify the outcome and 
+    treatment variables and additional regressors. The main functions
+    will compute bounds for the bias-adjusted treatment effect. Many
+    plot functions allow easy visualization of results.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+LazyData: true
+Imports: ggplot2, concaveman, dplyr, stats, magrittr, tidyselect,
+        purrr, latex2exp, vtable
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+URL: https://github.com/dbasu-umass/bate/,
+        https://rpubs.com/dbasu/bate/
+NeedsCompilation: no
+Packaged: 2022-03-25 01:39:58 UTC; basu15
+Author: Deepankar Basu [aut, cre],
+  Evan Wasner [aut]
+Maintainer: Deepankar Basu <dbasu@umass.edu>
+Repository: CRAN
+Date/Publication: 2022-03-28 07:30:05 UTC

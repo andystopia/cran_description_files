@@ -1,0 +1,53 @@
+Package: hwep
+Title: Hardy-Weinberg Equilibrium in Polyploids
+Version: 2.0.2
+Authors@R: 
+    c(person(given = "David",
+             family = "Gerard",
+             role = c("aut", "cre"),
+             email = "gerard.1787@gmail.com",
+             comment = c(ORCID = "0000-0001-9450-5023")),
+      person(given = "NSF DBI 2132247",
+             role = "fnd",
+             comment = "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2132247")
+     )
+Description: Inference concerning equilibrium and random mating in 
+    autopolyploids. Methods are available to test for equilibrium 
+    and random mating at any even ploidy level (>2) in the presence
+    of double reduction at biallelic loci. For autopolyploid populations
+    in equilibrium, methods are available to estimate the degree of 
+    double reduction. We also provide functions to calculate genotype 
+    frequencies at equilibrium, or after one or several rounds of 
+    random mating, given rates of double reduction. The main function is
+    hwefit(). This material is based upon work supported by the
+    National Science Foundation under Grant No. 2132247. The opinions,
+    findings, and conclusions or recommendations expressed are those of
+    the author and do not necessarily reflect the views of the National
+    Science Foundation. For details of these methods, see 
+    Gerard (2022a) <doi:10.1111/biom.13722> and
+    Gerard (2022b) <doi:10.1101/2022.08.11.503635>.
+License: GPL (>= 3)
+BugReports: https://github.com/dcgerard/hwep/issues
+URL: https://dcgerard.github.io/hwep/
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), covr, knitr, rmarkdown, ggplot2
+Config/testthat/edition: 3
+Imports: bridgesampling, doFuture, doRNG, foreach, future, iterators,
+        methods, pracma, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1),
+        rstan (>= 2.18.1), rstantools (>= 2.2.0), tensr, updog
+VignetteBuilder: knitr
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+Biarch: true
+Depends: R (>= 3.4.0)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2023-05-16 15:56:30 UTC; dgerard
+Author: David Gerard [aut, cre] (<https://orcid.org/0000-0001-9450-5023>),
+  NSF DBI 2132247 [fnd]
+    (https://www.nsf.gov/awardsearch/showAward?AWD_ID=2132247)
+Maintainer: David Gerard <gerard.1787@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-16 17:40:02 UTC

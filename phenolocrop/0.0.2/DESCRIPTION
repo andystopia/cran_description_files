@@ -1,0 +1,32 @@
+Package: phenolocrop
+Type: Package
+Title: Time-Series Models to the Crop Phenology
+Version: 0.0.2
+Authors@R: c(
+  person("Shoji", "Taniguchi", email = "taniguchis532@affrc.go.jp", role = c("aut", "cre")),
+  person("The National Agriculture and Food Research Organization (NARO)", role = "cph")
+  )
+Maintainer: Shoji Taniguchi <taniguchis532@affrc.go.jp>
+Description: Fit a time-series model 
+    to a crop phenology data, such as time-series rice canopy height.
+    This package returns the model parameters as the summary statistics of crop phenology,
+    and these parameters will be useful to characterize the growth pattern of each cultivar and 
+    predict manually-measured traits, such as days to heading and biomass.
+    Please see Taniguchi et al. (2022) <doi:10.3389/fpls.2022.998803> for detail.
+    This package has been designed for scientific use.  
+    Use for commercial purposes shall not be allowed.
+Imports: purrr
+Suggests: dplyr, knitr, testthat (>= 3.0.0)
+License: CC BY-NC 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Depends: R (>= 4.2.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-07-12 01:56:54 UTC; taniguchis532
+Author: Shoji Taniguchi [aut, cre],
+  The National Agriculture and Food Research Organization (NARO) [cph]
+Repository: CRAN
+Date/Publication: 2023-07-13 14:00:02 UTC

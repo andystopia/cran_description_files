@@ -1,0 +1,33 @@
+Package: PoDBAY
+Type: Package
+Title: Vaccine Efficacy Estimation Package
+Version: 1.4.3
+Depends: R (>= 3.6)
+Date: 2021-09-20
+Authors@R: c(
+    person("Pavel", "Fiser (MSD)", email = "pavel.fiser@merck.com", role = c("aut")), 
+    person("Tomas", "Bartonek (MSD)", role = "aut"), 
+    person("Julie", "Dudasova (MSD)", email = "julie.dudasova@merck.com", role = c("aut", "cre")), 
+    person("Regina", "Laube (MSD)", role = "aut")
+    )
+Maintainer: Julie Dudasova (MSD) <julie.dudasova@merck.com>
+Description: Set of functions that implement the PoDBAY method, described in the publication 'A method to estimate probability of disease and vaccine efficacy from clinical trial immunogenicity data' by Julie Dudasova, Regina Laube, Chandni Valiathan, Matthew C. Wiener, Ferdous Gheyas, Pavel Fiser, Justina Ivanauskaite, Frank Liu and Jeffrey R. Sachs (NPJ Vaccines, 2021), <doi:10.1038/s41541-021-00377-6>.
+License: GPL-3
+Copyright: 2021 Merck Sharp & Dohme Corp. a subsidiary of Merck & Co.,
+        Inc., Kenilworth, NJ, USA
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp
+Imports: Rcpp (>= 1.0.0), ggplot2 (>= 3.1.0), dplyr (>= 0.8.0.1),
+        methods (>= 3.5.2), stats
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2021-09-20 07:38:33 UTC; vavrycuk
+Author: Pavel Fiser (MSD) [aut],
+  Tomas Bartonek (MSD) [aut],
+  Julie Dudasova (MSD) [aut, cre],
+  Regina Laube (MSD) [aut]
+Repository: CRAN
+Date/Publication: 2021-09-21 13:10:48 UTC

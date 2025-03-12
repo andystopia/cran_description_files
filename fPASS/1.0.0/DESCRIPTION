@@ -1,0 +1,32 @@
+Package: fPASS
+Title: Power and Sample Size for Projection Test under Repeated
+        Measures
+Version: 1.0.0
+Authors@R: c(
+    person("Salil", "Koner", email = "salil.koner@duke.edu", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-1952-4210")),
+    person("Sheng", "Luo", email = "sheng.luo@duke.edu", role = c("ctb", "fnd")))
+Description: Computes the power and sample size (PASS) required to test for the
+    difference in the mean function between two groups under a repeatedly measured longitudinal 
+    or sparse functional design. See the manuscript by Koner and Luo (2023) <https://salilkoner.github.io/assets/PASS_manuscript.pdf> 
+    for details of the PASS formula and computational details. The details of the testing
+    procedure for univariate and multivariate response are presented in
+    Wang (2021) <doi:10.1214/21-EJS1802> and Koner and Luo (2023) 
+    <arXiv:2302.05612> respectively. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr, purrr, face, magrittr, MASS, Matrix, nlme, testthat,
+        mgcv, lifecycle, expm, gamm4, gss, rlang, stringr, utils
+Suggests: knitr, rmarkdown, Hotelling, refund, foreach
+VignetteBuilder: knitr
+URL: https://github.com/SalilKoner/fPASS
+BugReports: https://github.com/SalilKoner/fPASS/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-07-18 16:57:50 UTC; salilkoner
+Author: Salil Koner [aut, cre, cph] (<https://orcid.org/0000-0003-1952-4210>),
+  Sheng Luo [ctb, fnd]
+Maintainer: Salil Koner <salil.koner@duke.edu>
+Repository: CRAN
+Date/Publication: 2023-07-19 11:20:05 UTC

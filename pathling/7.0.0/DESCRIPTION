@@ -1,0 +1,44 @@
+Package: pathling
+Type: Package
+Title: A Library for using 'Pathling'
+Version: 7.0.0
+Authors@R: 
+    c(
+      person("Australian e-Health Research Centre, CSIRO", 
+             role = c("cph", "cre"),
+             email = "ontoserver-support@csiro.au"),
+      person(given = "Piotr",
+             family = "Szul",
+             role = "aut",
+             email = "piotr.szul@csiro.au"),
+      person(given = "John",
+             family = "Grimes",
+             role = "aut",
+             email = "john.grimes@csiro.au")
+     )
+Maintainer: "Australian e-Health Research Centre, CSIRO" <ontoserver-support@csiro.au>
+Description: R API for 'Pathling', a tool for querying and transforming electronic health record data that is represented using the 'Fast Healthcare Interoperability Resources' (FHIR) standard - see <https://pathling.csiro.au/docs>.
+License: Apache License 2.0
+URL: https://pathling.csiro.au/
+BugReports: https://github.com/aehrc/pathling/issues
+LazyData: TRUE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: rlang(>= 1.0.0), sparklyr(>= 1.8.1)
+Suggests: testthat(>= 3.2.1.1)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+SystemRequirements: Spark: 3.5.x
+Config/pathling/Version: 7.0.0
+Config/pathling/SparkVersion: 3.5.1
+Config/pathling/ScalaVersion: 2.12
+Config/pathling/HadoopMajorVersion: 3
+Config/pathling/HadoopVersion: 3.3.4
+Config/pathling/DeltaVersion: 3.2.0
+NeedsCompilation: yes
+Packaged: 2024-05-21 03:35:19 UTC; runner
+Author: Australian e-Health Research Centre, CSIRO [cph, cre],
+  Piotr Szul [aut],
+  John Grimes [aut]
+Repository: CRAN
+Date/Publication: 2024-05-22 03:40:03 UTC

@@ -1,0 +1,34 @@
+Package: gitear
+Title: Client to the 'gitea' API
+Version: 1.0.0
+Authors@R: c(
+  person(family="ixpantia, SRL", role = "aut", email = "hola@ixpantia.com"),
+  person("Frans", "van Dunné", role=c("cre", "aut"), email="frans@ixpantia.com"),
+  person("Francisco", "Sácida", role="aut", email="francisco@delaguayaba.com"),
+  person("Ronny", "Hernández Mora", role="aut", email="ronny@ixpantia.com"),
+  person("Patrick", "Santamaría Guzmán", role="ctb", email="patrick@ixpantia.com"))
+Description: 'Gitea' is a community managed, lightweight code hosting solution 
+  were projects and their respective git repositories can be managed 
+  <https://gitea.io>. This package gives an interface to the 'Gitea' API to 
+  access and manage repositories, issues and organizations directly in R. 
+Depends: R (>= 3.5.0), magrittr
+Imports: httr, jsonlite, dplyr, tidyr, tibble, stringr, mockery,
+        graphics, Rcpp
+License: GPL-3
+URL: https://ixpantia.github.io/gitear/
+BugReports: https://github.com/ixpantia/gitear/issues
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, knitr, rmarkdown, covr
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-08-26 22:00:34 UTC; frans
+Author: ixpantia, SRL [aut],
+  Frans van Dunné [cre, aut],
+  Francisco Sácida [aut],
+  Ronny Hernández Mora [aut],
+  Patrick Santamaría Guzmán [ctb]
+Maintainer: Frans van Dunné <frans@ixpantia.com>
+Repository: CRAN
+Date/Publication: 2020-09-18 08:00:07 UTC

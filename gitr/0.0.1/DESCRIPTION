@@ -1,0 +1,36 @@
+Package: gitr
+Title: A Lightweight API for 'Git'
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Stu",
+           family = "Field",
+           role = c("aut", "cre", "cph"),
+           email = "stu.g.field@gmail.com",
+           comment = c(ORCID = "0000-0002-1024-5859"))
+    )
+Description: A light-weight, dependency-free, application programming interface
+    (API) to access system-level 'Git' commands from within 'R'. Contains wrappers
+    and defaults for common data science workflows as well as
+    'Zsh' plugin aliases. A generalized API syntax is also available.
+    A system installation of 'Git' <https://git-scm.com/downloads> is required.
+License: MIT + file LICENSE
+URL: https://stufield.github.io/gitr/
+BugReports: https://github.com/stufield/gitr/issues
+Depends: R (>= 4.1.0)
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyLoad: true
+Copyright: Stu Field 2023
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+Language: en-US
+Collate: 'params.R' 'gitr-package.R' 'git.R' 'git-branch.R'
+        'git-commit.R' 'git-lint-commit.R' 'git-pull-request.R'
+        'git-sitrep.R' 'git-tag.R' 'trim-sha.R' 'utils.R' 'zsh.R'
+NeedsCompilation: no
+Packaged: 2023-02-14 22:09:53 UTC; sfield
+Author: Stu Field [aut, cre, cph] (<https://orcid.org/0000-0002-1024-5859>)
+Maintainer: Stu Field <stu.g.field@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-15 12:50:10 UTC

@@ -1,0 +1,28 @@
+Package: glam
+Title: Generalized Additive and Linear Models (GLAM)
+Version: 1.0.2
+Authors@R: person("Andrew", "Cooper", email = "ahcooper@vt.edu",
+  role = c("aut", "cre", "cph"))
+Description: Contains methods for fitting Generalized Linear Models (GLMs) 
+  and Generalized Additive Models (GAMs). Generalized regression models are
+  common methods for handling data for which assuming Gaussian-distributed
+  errors is not appropriate. For instance, if the response of interest is
+  binary, count, or proportion data, one can instead model the expectation of
+  the response based on an appropriate data-generating distribution.
+  This package provides methods for fitting GLMs and GAMs under
+  Beta regression, Poisson regression, Gamma regression, and Binomial regression
+  (currently GLM only) settings. Models are fit using local scoring algorithms
+  described in Hastie and Tibshirani (1990) <doi:10.1214/ss/1177013604>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: gam, stats
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-07-07 18:11:43 UTC; Andy
+Author: Andrew Cooper [aut, cre, cph]
+Maintainer: Andrew Cooper <ahcooper@vt.edu>
+Repository: CRAN
+Date/Publication: 2024-07-09 15:40:02 UTC

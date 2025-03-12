@@ -1,0 +1,25 @@
+Package: bestglm
+Type: Package
+Title: Best Subset GLM and Regression Utilities
+Version: 0.37.3
+Date: 2020-03-13
+Author: A.I. McLeod, Changjiang Xu and Yuanhao Lai
+Maintainer: Yuanhao Lai <ylai72@uwo.ca>
+Depends: R (>= 3.1.0), leaps
+Suggests: MASS
+Imports: lattice, glmnet, grpreg, pls
+Enhances: caret
+Description: Best subset glm using information criteria or cross-validation,
+        carried by using 'leaps' algorithm (Furnival and Wilson, 1974) <doi:10.2307/1267601>
+        or complete enumeration (Morgan and Tatar, 1972) <doi:10.1080/00401706.1972.10488918>.
+        Implements PCR and PLS using AIC/BIC.
+        Implements one-standard deviation rule for use with the 'caret' package.
+LazyLoad: yes
+LazyData: yes
+Classification/ACM: G.3, G.4, I.5.1
+Classification/MSC: 62M10, 91B84
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2020-03-13 01:11:06 UTC; Hao
+Repository: CRAN
+Date/Publication: 2020-03-13 10:10:02 UTC

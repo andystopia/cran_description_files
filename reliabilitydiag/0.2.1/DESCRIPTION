@@ -1,0 +1,31 @@
+Package: reliabilitydiag
+Version: 0.2.1
+Title: Reliability Diagrams Using Isotonic Regression
+Description: Checking the reliability of predictions via the CORP approach,
+    which generates provably statistically 'C'onsistent, 'O'ptimally binned, and
+    'R'eproducible reliability diagrams using the 'P'ool-adjacent-violators
+    algorithm. See Dimitriadis, Gneiting, Jordan (2021) <doi:10.1073/pnas.2016191118>.
+Authors@R: c(
+    person(given = "Timo",
+           family = "Dimitriadis",
+           role = "aut"),
+    person(given = c("Alexander", "I."),
+           family = "Jordan",
+           role = c("aut", "cre"),
+           email = "alexander.jordan@h-its.org"))
+URL: https://github.com/aijordan/reliabilitydiag/
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+Depends: R (>= 3.5)
+Imports: magrittr, tidyr, ggplot2, ggExtra, dplyr, purrr, rlang,
+        tibble, vctrs, bde
+Suggests: monotone
+NeedsCompilation: no
+Packaged: 2022-06-28 17:10:56 UTC; jordanar
+Author: Timo Dimitriadis [aut],
+  Alexander I. Jordan [aut, cre]
+Maintainer: Alexander I. Jordan <alexander.jordan@h-its.org>
+Repository: CRAN
+Date/Publication: 2022-06-29 00:20:06 UTC

@@ -1,0 +1,39 @@
+Package: StanMoMo
+Title: Bayesian Mortality Modelling with 'Stan'
+Version: 1.2.0
+Authors@R: c(person(given = "Karim", family = "Barigou", role = c("aut", "cre"), email = "karim290492@gmail.com",comment = c(ORCID = "0000-0003-3389-9596")),
+    person(given = "Pierre-Olivier", family = "Goffard",role="aut",comment = c(ORCID = "0000-0002-2667-6207")))
+Description: Implementation of popular mortality models using the 'rstan' 
+    package, which provides the R interface to the 'Stan' C++ library for 
+    Bayesian estimation. The package supports well-known models proposed in the 
+    actuarial and demographic literature including the Lee-Carter (1992) 
+    <doi:10.1080/01621459.1992.10475265> and the Cairns-Blake-Dowd (2006) 
+    <doi:10.1111/j.1539-6975.2006.00195.x> models. By a simple call, the user 
+    inputs deaths and exposures and the package outputs the MCMC simulations for
+    each parameter, the log likelihoods and predictions. Moreover, the package 
+    includes tools for model selection and Bayesian model averaging by leave 
+    future-out validation.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: loo, methods, RcppParallel, Rcpp (>= 0.12.0), rstan (>=
+        2.26.0), rstantools (>= 2.0.0), tidyverse, dplyr, tibble, httr,
+        bridgesampling, stats, utils, tidyselect, latex2exp, tidyr,
+        ggplot2
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        rstan (>= 2.26.0), StanHeaders (>= 2.26.0), RcppParallel
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, shinystan, Cairo
+VignetteBuilder: knitr
+URL: https://github.com/kabarigou/StanMoMo
+BugReports: https://github.com/kabarigou/StanMoMo/issues
+NeedsCompilation: yes
+Packaged: 2023-09-23 19:52:51 UTC; Karim Barigou
+Author: Karim Barigou [aut, cre] (<https://orcid.org/0000-0003-3389-9596>),
+  Pierre-Olivier Goffard [aut] (<https://orcid.org/0000-0002-2667-6207>)
+Maintainer: Karim Barigou <karim290492@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-23 21:10:02 UTC

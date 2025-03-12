@@ -1,0 +1,18 @@
+Package: matrixcut
+Version: 0.0.1
+Date: 2023-03-19
+Title: Determines Clustering Threshold Based on Similarity Values
+Authors@R: person("Matthew", "Cserhati", email = "csmatyi@protonmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3673-9152"))
+Maintainer: Matthew Cserhati <csmatyi@protonmail.com>
+Description: The user must supply a matrix filled with similarity values. The software will search for significant differences between similarity values at different hierarchical levels. The algorithm will return a Loess-smoothed plot of the similarity values along with the inflection point, if there are any. There is the option to search for an inflection point within a specified range. The package also has a function that will return the matrix components at a specified cutoff. References: Mullner. <ArXiv:1109.2378>; Cserhati, Carter. (2020, Journal of Creation 34(3):41-50), <https://dl0.creation.com/articles/p137/c13759/j34-3_64-73.pdf>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: igraph, stats, inflection
+NeedsCompilation: no
+Packaged: 2023-03-24 04:49:15 UTC; matth
+Author: Matthew Cserhati [aut, cre] (<https://orcid.org/0000-0002-3673-9152>)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2023-03-24 16:30:02 UTC

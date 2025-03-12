@@ -1,0 +1,28 @@
+Package: geoTS
+Version: 0.1.8
+Date: 2022-11-16
+Title: Methods for Handling and Analyzing Time Series of Satellite
+        Images
+Authors@R: person("Inder", "Tecuapetla-Gómez", 
+  email = "itecuapetla@conabio.gob.mx",
+  role = c("aut", "cre"))
+Author: Inder Tecuapetla-Gómez [aut, cre]
+Maintainer: Inder Tecuapetla-Gómez
+ <itecuapetla@conabio.gob.mx>
+Description: Provides functions and methods for: splitting large raster objects
+             into smaller chunks, transferring images from a binary format into raster 
+             layers, transferring raster layers into an 'RData' file, calculating the 
+             maximum gap (amount of consecutive missing values) of a numeric vector, 
+             and fitting harmonic regression models to periodic time series. The homoscedastic
+             harmonic regression model is based on G. Roerink, M. Menenti and W. Verhoef (2000) <doi:10.1080/014311600209814>.
+LazyData: yes
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0), raster (>= 2.9.5)
+Imports: doParallel (>= 1.0.14), ff (>= 2.2-14), foreach (>= 1.4.4),
+        parallel (>= 3.6.1), robustbase (>= 0.95-0), sp (>= 1.2-0)
+NeedsCompilation: no
+RoxygenNote: 7.2.0
+Packaged: 2022-11-17 00:48:07 UTC; itecuapetla
+Repository: CRAN
+Date/Publication: 2022-11-17 18:10:18 UTC

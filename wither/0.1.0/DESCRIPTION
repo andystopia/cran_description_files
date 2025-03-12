@@ -1,0 +1,24 @@
+Package: wither
+Title: Temporarily Change Project Root
+Version: 0.1.0
+Authors@R: 
+    c(person("Torbjørn", "Lindahl", email="torbjorn.lindahl@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0007-5538-0783")),
+    person("Anja", "Minsaas", email="anja.minsaas@gmail.com", role = c("aut")))
+Description: Lets you temporarily execute an expression or a local block with a different here() root in the 'here' package. This is useful for sourcing code in other projects which expect the root directory of here() to be the project directory of those projects. This may be the case with git submodules for example.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: devtools, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: fs, here, withr
+URL: https://github.com/torbjorn/wither
+BugReports: https://github.com/torbjorn/wither/issues
+NeedsCompilation: no
+Packaged: 2024-09-10 10:33:15 UTC; tlindahl
+Author: Torbjørn Lindahl [aut, cre, cph]
+    (<https://orcid.org/0009-0007-5538-0783>),
+  Anja Minsaas [aut]
+Maintainer: Torbjørn Lindahl <torbjorn.lindahl@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-12 17:40:02 UTC

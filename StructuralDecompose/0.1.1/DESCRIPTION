@@ -1,0 +1,29 @@
+Type: Package
+Package: StructuralDecompose
+Title: Decomposes a Level Shifted Time Series
+Version: 0.1.1
+Authors@R: person(given = "Allen",
+             family = "Sunny",
+             role = c("aut", "cre"),
+             email = "allensunny1242@gmail.com")
+Description: Explains the behavior of a time series by decomposing it into its trend, seasonality and residuals. 
+             It is built to perform very well in the presence of significant level shifts. It is designed to play 
+             well with any breakpoint algorithm and any smoothing algorithm. Currently defaults to 'lowess' for smoothing
+             and 'strucchange' for breakpoint identification. The package is useful in areas such as trend analysis, time series 
+             decomposition, breakpoint identification and anomaly detection.
+License: MIT + file LICENSE
+URL: https://allen-1242.github.io/StructuralDecompose/
+Depends: R (>= 2.10)
+Imports: changepoint, segmented, strucchange
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-02-11 19:18:15 UTC; sunny
+Author: Allen Sunny [aut, cre]
+Maintainer: Allen Sunny <allensunny1242@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-13 09:30:04 UTC

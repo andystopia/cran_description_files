@@ -1,0 +1,92 @@
+Package: teal.modules.clinical
+Title: 'teal' Modules for Standard Clinical Outputs
+Version: 0.10.0
+Date: 2025-02-26
+Authors@R: c(
+    person("Joe", "Zhu", , "joe.zhu@roche.com", role = "aut",
+           comment = c(ORCID = "0000-0001-7566-2787")),
+    person("Jana", "Stoilova", , "jana.stoilova@roche.com", role = "aut"),
+    person("Davide", "Garolini", , "davide.garolini@roche.com", role = "aut"),
+    person("Emily", "de la Rua", , "emily.de_la_rua@contractors.roche.com", role = "aut"),
+    person("Abinaya", "Yogasekaram", , "abinaya.yogasekaram@contractors.roche.com", role = "aut"),
+    person("Mahmoud", "Hallal", , "mahmoud.hallal@roche.com", role = "aut"),
+    person("Dawid", "Kaledkowski", , "dawid.kaledkowski@roche.com", role = c("aut", "cre")),
+    person("Rosemary", "Li", , "li.yaqiong@gene.com", role = "aut"),
+    person("Heng", "Wang", , "wang.heng@gene.com", role = "aut"),
+    person("Pawel", "Rucki", , "pawel.rucki@roche.com", role = "aut"),
+    person("Nikolas", "Burkoff", role = "aut"),
+    person("Konrad", "Pagacz", role = "aut"),
+    person("Vaakesan", "Sundrelingam", role = "ctb"),
+    person("Francois", "Collin", role = "ctb"),
+    person("Imanol", "Zubizarreta", role = "ctb"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Provides user-friendly tools for creating and customizing
+    clinical trial reports. By leveraging the 'teal' framework, this
+    package provides 'teal' modules to easily create an interactive panel
+    that allows for seamless adjustments to data presentation, thereby
+    streamlining the creation of detailed and accurate reports.
+License: Apache License 2.0
+URL: https://insightsengineering.github.io/teal.modules.clinical/,
+        https://github.com/insightsengineering/teal.modules.clinical/
+BugReports: https://github.com/insightsengineering/teal.modules.clinical/issues
+Depends: R (>= 4.0), teal (>= 0.16.0), teal.transform (>= 0.6.0), tern
+        (>= 0.9.7)
+Imports: broom (>= 0.7.10), checkmate (>= 2.1.0), cowplot (>= 0.7.0),
+        dplyr (>= 1.0.5), DT (>= 0.13), ggplot2 (>= 3.4.0), ggrepel,
+        grid, lifecycle (>= 0.2.0), methods, rlistings (>= 0.2.10),
+        rmarkdown (>= 2.23), rtables (>= 0.6.11), scales, shiny (>=
+        1.6.0), shinyjs, shinyvalidate, shinyWidgets (>= 0.5.1), stats,
+        teal.code (>= 0.6.1), teal.data (>= 0.7.0), teal.logger (>=
+        0.3.2), teal.reporter (>= 0.4.0), teal.widgets (>= 0.4.3),
+        tern.gee (>= 0.1.5), tern.mmrm (>= 0.3.1), utils, vistime (>=
+        1.2.3)
+Suggests: forcats, knitr (>= 1.42), logger (>= 0.2.0), lubridate (>=
+        1.7.9), nestcolor (>= 0.1.0), pkgload, roxy.shinylive, rvest,
+        shinytest2, styler, testthat (>= 3.1.5), withr (> 2.0.1.5)
+VignetteBuilder: knitr, rmarkdown
+Config/Needs/verdepcheck: insightsengineering/teal,
+        insightsengineering/teal.slice,
+        insightsengineering/teal.transform, insightsengineering/tern,
+        tidymodels/broom, mllg/checkmate, wilkelab/cowplot,
+        tidyverse/dplyr, rstudio/DT, tidyverse/ggplot2,
+        slowkow/ggrepel, r-lib/lifecycle, daroczig/logger,
+        insightsengineering/rlistings, rstudio/rmarkdown,
+        insightsengineering/rtables, r-lib/scales, rstudio/shiny,
+        daattali/shinyjs, rstudio/shinyvalidate, dreamRs/shinyWidgets,
+        insightsengineering/teal.code, insightsengineering/teal.data,
+        insightsengineering/teal.logger,
+        insightsengineering/teal.reporter,
+        insightsengineering/teal.widgets, insightsengineering/tern.gee,
+        insightsengineering/tern.mmrm, shosaco/vistime,
+        tidyverse/forcats, yihui/knitr, tidyverse/lubridate,
+        insightsengineering/nestcolor, r-lib/pkgload,
+        insightsengineering/roxy.shinylive, tidyverse/rvest,
+        rstudio/shinytest2, r-lib/styler, r-lib/testthat, r-lib/withr
+Config/Needs/website: insightsengineering/nesttemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-02-28 15:10:15 UTC; unardid
+Author: Joe Zhu [aut] (<https://orcid.org/0000-0001-7566-2787>),
+  Jana Stoilova [aut],
+  Davide Garolini [aut],
+  Emily de la Rua [aut],
+  Abinaya Yogasekaram [aut],
+  Mahmoud Hallal [aut],
+  Dawid Kaledkowski [aut, cre],
+  Rosemary Li [aut],
+  Heng Wang [aut],
+  Pawel Rucki [aut],
+  Nikolas Burkoff [aut],
+  Konrad Pagacz [aut],
+  Vaakesan Sundrelingam [ctb],
+  Francois Collin [ctb],
+  Imanol Zubizarreta [ctb],
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Dawid Kaledkowski <dawid.kaledkowski@roche.com>
+Repository: CRAN
+Date/Publication: 2025-02-28 15:50:02 UTC

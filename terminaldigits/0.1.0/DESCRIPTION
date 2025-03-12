@@ -1,0 +1,27 @@
+Package: terminaldigits
+Title: Tests of Uniformity and Independence for Terminal Digits
+Version: 0.1.0
+Authors@R: 
+    person("Josh", "McCormick", , "josh.mccormick@aya.yale.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2920-1119"))
+Description: Implements simulated tests for the hypothesis that terminal digits are uniformly
+    distributed (chi-squared goodness-of-fit) and the hypothesis that terminal digits
+    are independent from preceding digits (several tests of independence for r x c 
+    contingency tables). Also, for a number of distributions, implements Monte Carlo 
+    simulations for type I errors and power for the test of independence. 
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: discretefit, Rcpp
+Suggests: dplyr, gt, ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-05-12 06:54:28 UTC; Josh
+Author: Josh McCormick [aut, cre] (<https://orcid.org/0000-0002-2920-1119>)
+Maintainer: Josh McCormick <josh.mccormick@aya.yale.edu>
+Repository: CRAN
+Date/Publication: 2022-05-13 09:10:12 UTC

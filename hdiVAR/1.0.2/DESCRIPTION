@@ -1,0 +1,23 @@
+Package: hdiVAR
+Type: Package
+Title: Statistical Inference for Noisy Vector Autoregression
+Version: 1.0.2
+Authors@R: c(person("Xiang", "Lyu", role = c("aut","cre"), email="xianglyu.public@gmail.com"),
+             person("Jian", "Kang", role = c("aut")),
+             person("Lexin", "Li", role = c("aut")))
+Description: The model is high-dimensional vector autoregression with measurement error, also known as linear gaussian state-space model. Provable sparse expectation-maximization algorithm is provided for the estimation of transition matrix and noise variances. Global and simultaneous testings are implemented for transition matrix with false discovery rate control. For more information, see the accompanying paper: Lyu, X., Kang, J., & Li, L. (2023). "Statistical inference for high-dimensional vector autoregression with measurement error", Statistica Sinica.
+Imports: lpSolve, abind
+License: GPL (>= 2)
+Depends: R (>= 3.1)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Author: Xiang Lyu [aut, cre],
+  Jian Kang [aut],
+  Lexin Li [aut]
+Maintainer: Xiang Lyu <xianglyu.public@gmail.com>
+NeedsCompilation: no
+Packaged: 2023-05-13 22:01:35 UTC; xianglyu
+Repository: CRAN
+Date/Publication: 2023-05-14 22:00:02 UTC

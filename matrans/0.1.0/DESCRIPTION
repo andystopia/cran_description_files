@@ -1,0 +1,22 @@
+Package: matrans
+Title: Model Averaging-Assisted Optimal Transfer Learning
+Version: 0.1.0
+Authors@R: 
+    c(person("Xiaonan", "Hu", , "xiaonanhu@cnu.edu.cn", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7614-2249")),
+    person("Xinyu", "Zhang", , "xinyu@amss.ac.cn", role = "aut"))   
+Description: Transfer learning, as a prevailing technique in computer sciences, aims to improve the performance of a target model by leveraging auxiliary information from heterogeneous source data. We provide novel tools for multi-source transfer learning under statistical models based on model averaging strategies, including linear regression models, partially linear models. Unlike existing transfer learning approaches, this method integrates the auxiliary information through data-driven weight assignments to avoid negative transfer. This is the first package for transfer learning based on the optimal model averaging frameworks, providing efficient implementations for practitioners in multi-source data modeling. The details are described in Hu and Zhang (2023) <https://jmlr.org/papers/v24/23-0030.html>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: caret, formatR, MASS, quadprog, splines, stats
+Suggests: knitr, rmarkdown
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-01-12 10:47:35 UTC; huxiaonan
+Author: Xiaonan Hu [aut, cre] (<https://orcid.org/0000-0001-7614-2249>),
+  Xinyu Zhang [aut]
+Maintainer: Xiaonan Hu <xiaonanhu@cnu.edu.cn>
+Repository: CRAN
+Date/Publication: 2024-01-12 16:30:06 UTC

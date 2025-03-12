@@ -1,0 +1,55 @@
+Type: Package
+Package: dsmmR
+Title: Estimation and Simulation of Drifting Semi-Markov Models
+Version: 1.0.5
+Date: 2024-07-28
+Authors@R: c(
+    person("Vlad Stefan", "Barbu",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-0840-016X")),
+    person("Ioannis", "Mavrogiannis", 
+        role = c("aut", "cre"),
+        email = "mavrogiannis.ioa@gmail.com", 
+        comment = c(ORCID = "0000-0002-2948-0648")),
+    person("Nicolas", "Vergne",
+           role = c("aut"))
+           )
+Description: Performs parametric and non-parametric estimation and simulation of 
+    drifting semi-Markov processes. The definition of parametric and non-parametric
+    model specifications is also possible. Furthermore, three different types of
+    drifting semi-Markov models are considered. These models differ in the number
+    of transition matrices and sojourn time distributions used for the computation
+    of a number of semi-Markov kernels, which in turn characterize the drifting 
+    semi-Markov kernel. For the parametric model estimation and specification, 
+    several discrete distributions are considered for the sojourn times: Uniform,
+    Poisson, Geometric, Discrete Weibull and Negative Binomial. The non-parametric
+    model specification makes no assumptions about the shape of the sojourn time
+    distributions. Semi-Markov models are described in:
+    Barbu, V.S., Limnios, N. (2008) <doi:10.1007/978-0-387-73173-5>.
+    Drifting Markov models are described in:
+    Vergne, N. (2008) <doi:10.2202/1544-6115.1326>.
+    Reliability indicators of Drifting Markov models are described in:
+    Barbu, V. S., Vergne, N. (2019) <doi:10.1007/s11009-018-9682-8>. 
+    We acknowledge the DATALAB Project
+    <https://lmrs-num.math.cnrs.fr/projet-datalab.html> (financed by the
+    European Union with the European Regional Development fund (ERDF) and by
+    the Normandy Region) and the HSMM-INCA Project (financed by the French
+    Agence Nationale de la Recherche (ANR) under grant ANR-21-CE40-0005).
+License: GPL
+URL: https://github.com/Mavrogiannis-Ioannis/dsmmR
+BugReports: https://github.com/Mavrogiannis-Ioannis/dsmmR/issues
+Imports: DiscreteWeibull
+Suggests: utils, knitr, rmarkdown, testthat (>= 3.0.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Depends: R (>= 3.5.0)
+Config/testthat/edition: 3
+Packaged: 2024-07-27 23:47:07 UTC; ioann
+Author: Vlad Stefan Barbu [aut] (<https://orcid.org/0000-0002-0840-016X>),
+  Ioannis Mavrogiannis [aut, cre]
+    (<https://orcid.org/0000-0002-2948-0648>),
+  Nicolas Vergne [aut]
+Maintainer: Ioannis Mavrogiannis <mavrogiannis.ioa@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-28 00:20:01 UTC

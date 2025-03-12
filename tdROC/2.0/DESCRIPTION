@@ -1,0 +1,34 @@
+Package: tdROC
+Type: Package
+Title: Nonparametric Estimation of Time-Dependent ROC, Brier Score, and
+        Survival Difference from Right Censored Time-to-Event Data with
+        or without Competing Risks
+Version: 2.0
+Authors@R: c(
+    person("Xiaoyang", "Li",role = c('aut', 'cre'),  email = "xli35@mdanderson.org"),
+    person("Zhe", "Yin",role = 'aut',  email = "zhe.yin@uth.tmc.edu"),
+    person("Liang", "Li", role = c('aut', 'ths'),email = "LLi15@mdanderson.org"))
+Maintainer: Xiaoyang Li <xli35@mdanderson.org>
+Description: The tdROC package facilitates the estimation of time-dependent ROC 
+    (Receiver Operating Characteristic) curves and the Area Under the time-dependent 
+    ROC Curve (AUC) in the context of survival data, accommodating scenarios with 
+    right censored data and the option to account for competing risks. In addition 
+    to the ROC/AUC estimation, the package also estimates time-dependent Brier score and 
+    survival difference. Confidence intervals of various estimated quantities can be 
+    obtained from bootstrap. The package also offers plotting functions for visualizing 
+    time-dependent ROC curves.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R(>= 3.6.0)
+Imports: survival (>= 3.4), graphics (>= 4.2.2), stats (>= 4.2.2), Rcpp
+        (>= 1.0.10), magrittr (>= 2.0.3)
+LinkingTo: Rcpp (>= 1.0.10)
+NeedsCompilation: yes
+RoxygenNote: 7.2.3
+Packaged: 2023-12-10 07:18:31 UTC; 43770
+Author: Xiaoyang Li [aut, cre],
+  Zhe Yin [aut],
+  Liang Li [aut, ths]
+Repository: CRAN
+Date/Publication: 2023-12-13 09:50:02 UTC

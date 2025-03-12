@@ -1,0 +1,21 @@
+Package: rrscale
+Title: Robust Re-Scaling to Better Recover Latent Effects in Data
+Version: 1.0
+Authors@R: c(person("Gregory", "Hunt", email = "ghunt@wm.edu", role = c("aut", "cre")),person("Johann", "Gagnon-Bartsch", email = "johanngb@umich.edu", role = c("aut")))
+Description: Non-linear transformations of data to better discover latent effects. Applies a sequence of three transformations (1) a Gaussianizing transformation, (2) a Z-score transformation, and (3) an outlier removal transformation. A publication describing the method has the following citation: Gregory J. Hunt, Mark A. Dane, James E. Korkola, Laura M. Heiser & Johann A. Gagnon-Bartsch (2020) "Automatic Transformation and Integration to Improve Visualization and Discovery of Latent Effects in Imaging Data", Journal of Computational and Graphical Statistics, <doi:10.1080/10618600.2020.1741379>.
+Date: 2020-5-22
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Imports: DEoptim, nloptr, abind
+Suggests: knitr, rmarkdown, testthat, ggplot2, reshape2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-25 23:56:10 UTC; greg
+Author: Gregory Hunt [aut, cre],
+  Johann Gagnon-Bartsch [aut]
+Maintainer: Gregory Hunt <ghunt@wm.edu>
+Repository: CRAN
+Date/Publication: 2020-05-26 11:30:02 UTC

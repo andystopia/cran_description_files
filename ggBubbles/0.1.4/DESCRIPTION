@@ -1,0 +1,29 @@
+Package: ggBubbles
+Type: Package
+Title: Mini Bubble Plots for Comparison of Discrete Data with 'ggplot2'
+Version: 0.1.4
+Authors@R: person("Thomas",
+                  "Schwarzl",
+                  email = "schwarzl@embl.de",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0001-7697-7000"))
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+Imports: dplyr, ggplot2
+Suggests: BiocStyle, knitr, rmarkdown, tibble
+Description: When comparing discrete data mini bubble plots allow displaying 
+   more information than traditional bubble plots via colour, shape or labels. 
+   Exact overlapping coordinates will be transformed so they surround the
+   original point circularly without overlapping. This is implemented as a 
+   position_surround() function for 'ggplot2'.
+License: LGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+biocViews:
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-09-03 08:10:56 UTC; Tom
+Author: Thomas Schwarzl [aut, cre] (<https://orcid.org/0000-0001-7697-7000>)
+Maintainer: Thomas Schwarzl <schwarzl@embl.de>
+Repository: CRAN
+Date/Publication: 2019-09-04 08:20:06 UTC

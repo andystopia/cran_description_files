@@ -1,0 +1,39 @@
+Package: lipidomeR
+Type: Package
+Title: Integrative Visualizations of the Lipidome
+Version: 0.1.2
+Authors@R: c( person( "Tommi", "Suvitaival", 
+                      role = c( "aut", "cre" ),
+                      email = "TSUV0001@RegionH.DK",
+                      comment = c( ORCID = "0000-0002-2583-4912" )
+                    ) 
+           )
+Description: Create lipidome-wide heatmaps of statistics with the 'lipidomeR'.
+    The 'lipidomeR' provides a streamlined pipeline for the systematic 
+    interpretation of the lipidome through publication-ready visualizations 
+    of regression models fitted on lipidomics data. 
+    With 'lipidomeR', associations between covariates and the lipidome 
+    can be interpreted systematically and intuitively through heatmaps, where 
+    lipids are categorized by the lipid class and are presented on 
+    two-dimensional maps organized by the lipid size and level of saturation. 
+    This way, the 'lipidomeR' helps you gain an immediate understanding of 
+    the multivariate patterns in the lipidome already at first glance.
+    You can create lipidome-wide heatmaps of statistical associations, changes, 
+    differences, variation, or other lipid-specific values.  
+    The heatmaps are provided with publication-ready quality and the results 
+    behind the visualizations are based on rigorous statistical models.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://tommi-s.github.io/
+RoxygenNote: 7.0.2
+Depends: R (>= 3.5.0)
+biocViews:
+Imports: BiocManager, dplyr, ggplot2, knitr, limma, reshape2,
+        shadowtext, stringr, tableone, tidyr
+NeedsCompilation: no
+Packaged: 2020-03-06 18:08:12 UTC; tomsuv
+Author: Tommi Suvitaival [aut, cre] (<https://orcid.org/0000-0002-2583-4912>)
+Maintainer: Tommi Suvitaival <TSUV0001@RegionH.DK>
+Repository: CRAN
+Date/Publication: 2020-03-15 10:20:02 UTC

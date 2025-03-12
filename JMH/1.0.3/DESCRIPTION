@@ -1,0 +1,36 @@
+Package: JMH
+Type: Package
+Title: Joint Model of Heterogeneous Repeated Measures and Survival Data
+Version: 1.0.3
+Date: 2024-02-19
+Authors@R: c(
+    person("Shanpeng", "Li", email = "lishanpeng0913@ucla.edu", 
+        role = c("aut", "cre")),
+    person("Jin", "Zhou", email = "jinjinzhou@g.ucla.edu", 
+        role = "ctb"),       
+    person("Hua", "Zhou", email = "huazhou@ucla.edu", 
+        role = "ctb"),
+    person("Gang", "Li", email = "vli@ucla.edu", 
+        role = "ctb")
+    )
+Maintainer: Shanpeng Li <lishanpeng0913@ucla.edu>
+Description: Maximum likelihood estimation for the semi-parametric joint modeling of competing risks and longitudinal data in the presence of heterogeneous within-subject variability, proposed by Li and colleagues (2023) <arXiv:2301.06584>.
+             The proposed method models the within-subject variability of the biomarker and associates it with the risk of the competing risks event. The time-to-event data is modeled using a (cause-specific) Cox proportional hazards regression model with time-fixed covariates. 
+             The longitudinal outcome is modeled using a mixed-effects location and scale model. The association is captured by shared random effects. The model 
+             is estimated using an Expectation Maximization algorithm.
+License: GPL (>= 3)
+NeedsCompilation: yes
+Imports: Rcpp (>= 1.0.7), parallel, dplyr, stats, caret, timeROC
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 3.5.0), survival, nlme, utils, MASS, statmod
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), spelling
+Language: en-US
+LazyData: true
+Packaged: 2024-02-20 06:22:18 UTC; shanpengli
+Author: Shanpeng Li [aut, cre],
+  Jin Zhou [ctb],
+  Hua Zhou [ctb],
+  Gang Li [ctb]
+Repository: CRAN
+Date/Publication: 2024-02-20 06:40:02 UTC

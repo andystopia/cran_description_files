@@ -1,0 +1,75 @@
+Package: rtables
+Title: Reporting Tables
+Version: 0.6.11
+Date: 2025-01-09
+Authors@R: c(
+    person("Gabriel", "Becker", , "gabembecker@gmail.com", role = "aut",
+           comment = "Original creator of the package"),
+    person("Adrian", "Waddell", , "adrian.waddell@gene.com", role = "aut"),
+    person("Daniel", "Sabanés Bové", , "daniel.sabanes_bove@roche.com", role = "ctb"),
+    person("Maximilian", "Mordig", , "maximilian_oliver.mordig@roche.com", role = "ctb"),
+    person("Davide", "Garolini", , "davide.garolini@roche.com", role = "aut"),
+    person("Emily", "de la Rua", , "emily.de_la_rua@contractors.roche.com", role = "aut"),
+    person("Abinaya", "Yogasekaram", , "abinaya.yogasekaram@contractors.roche.com", role = "ctb"),
+    person("Joe", "Zhu", , "joe.zhu@roche.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7566-2787")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Reporting tables often have structure that goes beyond simple
+    rectangular data. The 'rtables' package provides a framework for
+    declaring complex multi-level tabulations and then applying them to
+    data. This framework models both tabulation and the resulting tables
+    as hierarchical, tree-like objects which support sibling sub-tables,
+    arbitrary splitting or grouping of data in row and column dimensions,
+    cells containing multiple values, and the concept of contextual
+    summary computations. A convenient pipe-able interface is provided for
+    declaring table layouts and the corresponding computations, and then
+    applying them to data.
+License: Apache License 2.0 | file LICENSE
+URL: https://github.com/insightsengineering/rtables,
+        https://insightsengineering.github.io/rtables/
+BugReports: https://github.com/insightsengineering/rtables/issues
+Depends: formatters (>= 0.5.10), magrittr (>= 1.5), methods, R (>=
+        2.10)
+Imports: checkmate (>= 2.1.0), htmltools (>= 0.5.4), lifecycle (>=
+        0.2.0), stats, stringi (>= 1.6)
+Suggests: broom (>= 1.0.5), car (>= 3.0-13), dplyr (>= 1.0.5), knitr
+        (>= 1.42), r2rtf (>= 0.3.2), rmarkdown (>= 2.23), survival (>=
+        3.3-1), testthat (>= 3.0.4), tibble (>= 3.2.1), tidyr (>=
+        1.1.3), withr (>= 2.0.0), xml2 (>= 1.1.0)
+VignetteBuilder: knitr, rmarkdown
+Config/Needs/verdepcheck: insightsengineering/formatters,
+        tidyverse/magrittr, mllg/checkmate, rstudio/htmltools,
+        gagolews/stringi, tidymodels/broom, cran/car, tidyverse/dplyr,
+        davidgohel/flextable, yihui/knitr, r-lib/lifecycle,
+        davidgohel/officer, Merck/r2rtf, rstudio/rmarkdown,
+        therneau/survival, r-lib/testthat, tidyverse/tibble,
+        tidyverse/tidyr, r-lib/withr, r-lib/xml2
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Collate: '00tabletrees.R' 'Viewer.R' 'argument_conventions.R'
+        'as_html.R' 'utils.R' 'colby_constructors.R'
+        'compare_rtables.R' 'format_rcell.R' 'indent.R'
+        'make_subset_expr.R' 'custom_split_funs.R'
+        'default_split_funs.R' 'make_split_fun.R' 'summary.R'
+        'package.R' 'tree_accessors.R' 'tt_afun_utils.R' 'tt_as_df.R'
+        'tt_compare_tables.R' 'tt_compatibility.R' 'tt_dotabulation.R'
+        'tt_paginate.R' 'tt_pos_and_access.R' 'tt_showmethods.R'
+        'tt_sort.R' 'tt_test_afuns.R' 'tt_toString.R' 'tt_export.R'
+        'index_footnotes.R' 'tt_from_df.R' 'validate_table_struct.R'
+        'zzz_constants.R'
+NeedsCompilation: no
+Packaged: 2025-01-09 03:55:47 UTC; rstudio
+Author: Gabriel Becker [aut] (Original creator of the package),
+  Adrian Waddell [aut],
+  Daniel Sabanés Bové [ctb],
+  Maximilian Mordig [ctb],
+  Davide Garolini [aut],
+  Emily de la Rua [aut],
+  Abinaya Yogasekaram [ctb],
+  Joe Zhu [aut, cre] (<https://orcid.org/0000-0001-7566-2787>),
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Joe Zhu <joe.zhu@roche.com>
+Repository: CRAN
+Date/Publication: 2025-01-10 04:00:02 UTC

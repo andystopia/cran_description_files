@@ -1,0 +1,51 @@
+Package: eat
+Title: Efficiency Analysis Trees
+Version: 0.1.4
+Authors@R: c(
+    person(given = "Miriam", 
+           family = "Esteve", 
+           role = c("cre", "aut"),
+           email = "mestevecampello@gmail.com",
+           comment = c(ORCID = "0000-0002-5908-0581")),
+    person(given = "Víctor", 
+           family = "España", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-1807-6180")),
+    person(given = "Juan", 
+           family = "Aparicio", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-0867-0004")),
+    person(given = "Xavier", 
+           family = "Barber", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-3079-5855"))
+           )
+Description: Functions are provided to determine production frontiers and technical 
+    efficiency measures through non-parametric techniques based upon regression trees. 
+    The package includes code for estimating radial input, output, directional and 
+    additive measures, plotting graphical representations of the scores and the production 
+    frontiers by means of trees, and determining rankings of importance of input variables 
+    in the analysis. Additionally, an adaptation of Random Forest by a set of individual 
+    Efficiency Analysis Trees for estimating technical efficiency is also included. More 
+    details in: <doi:10.1016/j.eswa.2020.113783>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: dplyr, conflicted, stats, ggplot2, ggparty, partykit, ggrepel,
+        Rdpack, lpSolveAPI, utils, reshape2
+Suggests: rmarkdown, testthat, knitr, kableExtra, devtools
+RdMacros: Rdpack
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+URL: https://efficiencytools.wordpress.com/
+BugReports: https://github.com/MiriamEsteve/EAT/issues
+NeedsCompilation: no
+Packaged: 2023-01-10 08:53:37 UTC; Miriam_Esteve
+Author: Miriam Esteve [cre, aut] (<https://orcid.org/0000-0002-5908-0581>),
+  Víctor España [aut] (<https://orcid.org/0000-0002-1807-6180>),
+  Juan Aparicio [aut] (<https://orcid.org/0000-0002-0867-0004>),
+  Xavier Barber [aut] (<https://orcid.org/0000-0003-3079-5855>)
+Maintainer: Miriam Esteve <mestevecampello@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-10 09:20:16 UTC

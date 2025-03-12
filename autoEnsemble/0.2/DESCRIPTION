@@ -1,0 +1,29 @@
+Package: autoEnsemble
+Type: Package
+Title: Automated Stacked Ensemble Classifier for Severe Class Imbalance
+Version: 0.2
+Authors@R: 
+    person("E. F. Haghish",
+           role = c("aut", "cre", "cph"),
+           email = "haghish@uio.no")
+Depends: R (>= 3.5.0),
+Description: An AutoML algorithm is developed to construct homogeneous or 
+             heterogeneous stacked ensemble models using specified base-learners. 
+             Various criteria are employed to identify optimal models, enhancing 
+             diversity among them and resulting in more robust stacked ensembles. 
+             The algorithm optimizes the model by incorporating an increasing 
+             number of top-performing models to create a diverse combination. 
+             Presently, only models from 'h2o.ai' are supported.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: h2o (>= 3.34.0.0), h2otools (>= 0.3), curl (>= 4.3.0)
+RoxygenNote: 7.2.1
+URL: https://github.com/haghish/autoEnsemble,
+        https://www.sv.uio.no/psi/english/people/academic/haghish/
+BugReports: https://github.com/haghish/autoEnsemble/issues
+NeedsCompilation: no
+Packaged: 2023-05-08 21:38:36 UTC; U-Shaped-Valley
+Author: E. F. Haghish [aut, cre, cph]
+Maintainer: E. F. Haghish <haghish@uio.no>
+Repository: CRAN
+Date/Publication: 2023-05-09 09:30:02 UTC

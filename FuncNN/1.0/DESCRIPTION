@@ -1,0 +1,33 @@
+Package: FuncNN
+Title: Functional Neural Networks
+Version: 1.0
+Authors@R: c(
+    person("Richard", "Groenewald", role = "ctb"),
+    person("Barinder", "Thind", email = "barinder.thi@gmail.com", role = c("aut", "cre", "cph")),
+    person("Jiguo", "Cao", role = "aut"),
+    person("Sidi Wu", role = "ctb")
+    )
+Description: A collection of functions which fit functional neural network models. In
+            other words, this package will allow users to build deep learning models 
+            that have either functional or scalar responses paired with functional and 
+            scalar covariates. We implement the theoretical discussion found 
+            in Thind, Multani and Cao (2020) <arXiv:2006.09590> through the help of a main fitting and 
+            prediction function as well as a number of helper functions to assist with 
+            cross-validation, tuning, and the display of estimated functional weights.
+Imports: keras, tensorflow, fda.usc, fda, ggplot2, ggpubr, caret,
+        pbapply, reshape2, flux, doParallel, foreach, Matrix
+URL: https://arxiv.org/abs/2006.09590, https://github.com/b-thi/FuncNN
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2020-09-07 23:52:53 UTC; Richard
+Author: Richard Groenewald [ctb],
+  Barinder Thind [aut, cre, cph],
+  Jiguo Cao [aut],
+  Sidi Wu [ctb]
+Maintainer: Barinder Thind <barinder.thi@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-09-15 09:40:15 UTC

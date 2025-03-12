@@ -1,0 +1,35 @@
+Package: x13binary
+Type: Package
+Title: Provide the 'x13ashtml' Seasonal Adjustment Binary
+Version: 1.1.61
+Date: 2024-06-23
+Authors@R: c(
+    person("Dirk", "Eddelbuettel", email = "edd@debian.org", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6419-907X")),
+    person("Christoph", "Sax", role = "aut", comment = c(ORCID = "0000-0002-7192-7044")),
+    person("Kirill", "Müller", role = "ctb", comment = c(ORCID = "0000-0002-1416-3412")),
+    person("Jeroen", "Ooms", role = "ctb", comment = c(ORCID = "0000-0002-4035-0289")),
+    person("Michael", "Antonov", role = "ctb")
+    )
+Description: The US Census Bureau provides a seasonal adjustment program now
+ called 'X-13ARIMA-SEATS' building on both earlier programs called X-11 and
+ X-12 as well as the SEATS program by the Bank of Spain. The US Census Bureau
+ offers both source and binary versions -- which this package integrates for
+ use by other R packages.
+License: file LICENSE
+Copyright: file inst/COPYRIGHT
+URL: https://github.com/x13org/x13binary
+BugReports: https://github.com/x13org/x13binary/issues/
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+SystemRequirements: Fortran sources included in `tools/x13as_html` are
+        compiled via `configure`.
+NeedsCompilation: yes
+Packaged: 2024-06-23 17:55:33 UTC; edd
+Author: Dirk Eddelbuettel [aut, cre] (<https://orcid.org/0000-0001-6419-907X>),
+  Christoph Sax [aut] (<https://orcid.org/0000-0002-7192-7044>),
+  Kirill Müller [ctb] (<https://orcid.org/0000-0002-1416-3412>),
+  Jeroen Ooms [ctb] (<https://orcid.org/0000-0002-4035-0289>),
+  Michael Antonov [ctb]
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2024-06-24 08:50:02 UTC

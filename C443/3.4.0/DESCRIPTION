@@ -1,0 +1,24 @@
+Package: C443
+Type: Package
+Title: See a Forest for the Trees
+Version: 3.4.0
+Imports: MASS, partykit, rpart, RColorBrewer, grDevices, gridExtra,
+        ggplot2, cluster, parallel, foreach, igraph, stats, graphics,
+        plyr, ranger, randomForest, methods, doParallel
+LazyData: true
+Encoding: UTF-8
+Date: 2023-06-21
+Authors@R: c(person("Aniek","Sies",role=c("aut","cre"),email="aniek.sies@kuleuven.be"), person("Kristof", "Meers", role= c("ctb")), person("Iven","Van Mechelen",role="ths"))
+Description: Get insight into a forest of classification trees, by calculating similarities between the trees, and subsequently clustering them. Each cluster is represented by it's most central cluster member. The package implements the methodology described in Sies & Van Mechelen (2020) <doi:10.1007/s00357-019-09350-4>.
+URL: https://github.com/KULeuven-PPW-OKPIV/C443
+BugReports: https://github.com/KULeuven-PPW-OKPIV/C443/issues
+License: GPL (>= 2)
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-06-21 09:11:52 UTC; aniek
+Author: Aniek Sies [aut, cre],
+  Kristof Meers [ctb],
+  Iven Van Mechelen [ths]
+Maintainer: Aniek Sies <aniek.sies@kuleuven.be>
+Repository: CRAN
+Date/Publication: 2023-06-21 09:30:02 UTC

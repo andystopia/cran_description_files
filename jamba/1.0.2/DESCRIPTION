@@ -1,0 +1,39 @@
+Package: jamba
+Title: Just Analysis Methods Base
+Version: 1.0.2
+Authors@R: c(
+    person(given="James M.",
+       family="Ward",
+       email="jmw86069@gmail.com",
+       comment=c(ORCID="0000-0002-9510-2848"),
+       role=c("aut", "cre", "cph")))
+Description: Just analysis methods ('jam') base functions
+    focused on bioinformatics.
+    Version- and gene-centric alphanumeric sort,
+    unique name and version assignment, colorized console and 'HTML' output,
+    color ramp and palette manipulation,
+    'Rmarkdown' cache import, styled 'Excel' worksheet import and export,
+    interpolated raster output from smooth scatter and image plots,
+    list to delimited vector, efficient list tools.
+biocViews:
+Depends: R (>= 3.0.0)
+Imports: methods, grDevices, graphics, stats, utils, colorspace,
+        RColorBrewer, KernSmooth, withr
+Suggests: crayon, farver, knitr, rmarkdown, testthat (>= 3.0.0)
+Enhances: ggplot2, ggridges, IRanges, S4Vectors, openxlsx, kableExtra,
+        matrixStats, viridisLite, ComplexHeatmap, circlize,
+        GenomicRanges, igraph, pryr, rstudioapi, Matrix,
+        sparseMatrixStats
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://jmw86069.github.io/jamba/
+BugReports: https://github.com/jmw86069/jamba/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-07 17:13:53 UTC; wardjm
+Author: James M. Ward [aut, cre, cph] (<https://orcid.org/0000-0002-9510-2848>)
+Maintainer: James M. Ward <jmw86069@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-10 14:50:10 UTC

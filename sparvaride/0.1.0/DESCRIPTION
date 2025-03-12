@@ -1,0 +1,28 @@
+Package: sparvaride
+Type: Package
+Title: Variance Identification in Sparse Factor Analysis
+Version: 0.1.0
+Authors@R: c(
+	person("Darjus", "Hosszejni", role = c("aut", "cre"), email = "darjus.hosszejni@wu.ac.at", comment = c(ORCID = "0000-0002-3803-691X")),
+	person("Sylvia", "Frühwirth-Schnatter", role = c("ths"), email = "sylvia.fruehwirth-schnatter@wu.ac.at", comment = c(ORCID = "0000-0003-0516-5552")))
+Description: This is an implementation of the algorithm described in Section 3 of Hosszejni and Frühwirth-Schnatter (2022) <doi:10.48550/arXiv.2211.00671>. The algorithm is used to verify that the counting rule CR(r,1) holds for the sparsity pattern of the transpose of a factor loading matrix. As detailed in Section 2 of the same paper, if CR(r,1) holds, then the idiosyncratic variances are generically identified. If CR(r,1) does not hold, then we do not know whether the idiosyncratic variances are identified or not.
+License: GPL (>= 3)
+Encoding: UTF-8
+BuildResaveData: best
+VignetteBuilder: knitr
+BugReports: https://github.com/hdarjus/sparvaride/issues
+URL: https://hdarjus.github.io/sparvaride/
+Depends: R (>= 4.1)
+Imports: Rcpp
+LinkingTo: RcppArmadillo, Rcpp
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-03-10 12:14:03 UTC; dhosszej
+Author: Darjus Hosszejni [aut, cre] (<https://orcid.org/0000-0002-3803-691X>),
+  Sylvia Frühwirth-Schnatter [ths]
+    (<https://orcid.org/0000-0003-0516-5552>)
+Maintainer: Darjus Hosszejni <darjus.hosszejni@wu.ac.at>
+Repository: CRAN
+Date/Publication: 2023-03-13 13:30:05 UTC

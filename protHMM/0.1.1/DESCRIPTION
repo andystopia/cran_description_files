@@ -1,0 +1,28 @@
+Package: protHMM
+Type: Package
+Title: Protein Feature Extraction from Profile Hidden Markov Models
+Version: 0.1.1
+Authors@R: person("Shayaan", "Emran", email = "shayaan.emran@gmail.com", role = c("aut", "cre", "cph"))
+Maintainer: Shayaan Emran <shayaan.emran@gmail.com>
+Description: Calculates a comprehensive list of features from profile hidden Markov models (HMMs) of proteins. 
+    Adapts and ports features for use with HMMs instead of Position Specific Scoring Matrices, in order to take 
+    advantage of more accurate multiple sequence alignment by programs such as 'HHBlits' Remmert et al. (2012) 
+    <DOI:10.1038/nmeth.1818> and 'HMMer' Eddy (2011) <DOI:10.1371/journal.pcbi.1002195>. Features calculated by 
+    this package can be used for protein fold classification, protein structural class prediction, 
+    sub-cellular localization and protein-protein interaction, among other tasks. Some examples of features 
+    extracted are found in Song et al. (2018) <DOI:10.3390/app8010089>, Jin & Zhu (2021) <DOI:10.1155/2021/8629776>, 
+    Lyons et al. (2015) <DOI:10.1109/tnb.2015.2457906> and Saini et al. (2015) <DOI:10.1016/j.jtbi.2015.05.030>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: gtools, utils, stats, phonTools
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://semran9.github.io/protHMM/
+BugReports: https://github.com/semran9/protHMM/issues
+NeedsCompilation: no
+Packaged: 2023-07-05 03:26:50 UTC; shayaanemran
+Author: Shayaan Emran [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2023-07-05 18:20:02 UTC

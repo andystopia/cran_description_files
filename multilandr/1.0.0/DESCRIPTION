@@ -1,0 +1,38 @@
+Package: multilandr
+Title: Landscape Analysis at Multiple Spatial Scales
+Version: 1.0.0
+Authors@R: 
+    person("Pablo Yair", "Huais", , "pablo.huais@unc.edu.ar", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4062-0779"))
+Maintainer: Pablo Yair Huais <pablo.huais@unc.edu.ar>
+Description: Provides a tidy workflow for landscape-scale analysis. 'multilandr' offers tools to generate landscapes at multiple spatial scales and compute landscape metrics, primarily using the 'landscapemetrics' package. It also features utility functions for plotting and analyzing multi-scale landscapes, exploring correlations between metrics, filtering landscapes based on specific conditions, generating landscape gradients for a given metric, and preparing datasets for further statistical analysis. Documentation about 'multilandr' is provided in an introductory vignette included in this package and in the paper by Huais (2024) <doi:10.1007/s10980-024-01930-z>; see citation("multilandr") for details.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: terra (>= 1.7-71), GGally (>= 2.2.1), ggplot2 (>= 3.5.1),
+        tidyterra (>= 0.6.0), gridExtra (>= 2.3), landscapemetrics (>=
+        2.1.1), sf (>= 1.0-16), methods (>= 4.3.0)
+Depends: R (>= 4.3.0)
+LazyData: true
+Suggests: knitr, parallel (>= 4.1.0), rmarkdown, testthat (>= 3.0.0)
+Collate: 'check_raster.R' 'classes.R' 'data.R' 'func_checks.R'
+        'generate_points.R' 'generate_points_checks.R' 'globals.R'
+        'methods.R' 'metrics_bind.R' 'metrics_corr.R'
+        'metrics_corr_checks.R' 'metrics_filter.R'
+        'metrics_filter_checks.R' 'metrics_gradient.R'
+        'metrics_gradient_checks.R' 'metrics_list.R' 'metrics_plots.R'
+        'metrics_scalogram.R' 'metrics_scalogram_checks.R' 'mland.R'
+        'mland_checks.R' 'mland_export_gis.R' 'mland_load.R'
+        'mland_metrics.R' 'mland_metrics_checks.R' 'mland_overlap.R'
+        'mland_overlap_checks.R' 'mland_plot.R' 'mland_plot_checks.R'
+        'mland_save.R' 'utils.R'
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/phuais/multilandr
+BugReports: https://github.com/phuais/multilandr/issues
+NeedsCompilation: no
+Packaged: 2025-02-13 15:17:38 UTC; pablo
+Author: Pablo Yair Huais [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4062-0779>)
+Repository: CRAN
+Date/Publication: 2025-02-14 14:50:10 UTC

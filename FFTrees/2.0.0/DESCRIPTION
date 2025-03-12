@@ -1,0 +1,34 @@
+Package: FFTrees
+Type: Package
+Title: Generate, Visualise, and Evaluate Fast-and-Frugal Decision Trees
+Version: 2.0.0
+Date: 2023-06-06
+Authors@R: c(person("Nathaniel", "Phillips", role = c("aut"), email = "Nathaniel.D.Phillips.is@gmail.com", comment = c(ORCID = "0000-0002-8969-7013")),
+             person("Hansjoerg", "Neth", role = c("aut", "cre"), email = "h.neth@uni.kn", comment = c(ORCID = "0000-0001-5427-3141")),
+             person("Jan", "Woike", role = "aut", comment = c(ORCID = "0000-0002-6816-121X")),
+             person("Wolfgang", "Gaissmaier", role = "aut", comment = c(ORCID = "0000-0001-6273-178X")))
+Maintainer: Hansjoerg Neth <h.neth@uni.kn>
+Description: Create, visualize, and test fast-and-frugal decision trees (FFTs) using the algorithms and methods described by Phillips, Neth, Woike & Gaissmaier (2017), <doi:10.1017/S1930297500006239>. 
+    FFTs are simple and transparent decision trees for solving binary classification problems. 
+    FFTs can be preferable to more complex algorithms because they require very little information, are easy to understand and communicate, and are robust against overfitting.
+LazyData: true
+Encoding: UTF-8
+Depends: R(>= 3.5.0)
+Imports: caret, rpart, randomForest, e1071, cli, dplyr, knitr,
+        magrittr, scales, stringr, testthat, tibble, tidyselect
+Suggests: rmarkdown, spelling
+License: CC0
+URL: https://CRAN.R-project.org/package=FFTrees,
+        https://github.com/ndphillips/FFTrees/
+BugReports: https://github.com/ndphillips/FFTrees/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-06-05 22:02:01 UTC; hneth
+Author: Nathaniel Phillips [aut] (<https://orcid.org/0000-0002-8969-7013>),
+  Hansjoerg Neth [aut, cre] (<https://orcid.org/0000-0001-5427-3141>),
+  Jan Woike [aut] (<https://orcid.org/0000-0002-6816-121X>),
+  Wolfgang Gaissmaier [aut] (<https://orcid.org/0000-0001-6273-178X>)
+Repository: CRAN
+Date/Publication: 2023-06-05 23:30:02 UTC

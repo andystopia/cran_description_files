@@ -1,0 +1,29 @@
+Package: NUSS
+Title: Mixed N-Grams and Unigram Sequence Segmentation
+Version: 0.1.0
+Authors@R: 
+    person("Oskar", "Kosch", , "contact@oskarkosch.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2697-1393"))
+Description: Segmentation of short text sequences - like hashtags - into the
+    separated words sequence, done with the use of dictionary, which may be
+    built on custom corpus of texts. Unigram dictionary is used to find most
+    probable sequence, and n-grams approach is used to determine possible
+    segmentation given the text corpus.
+License: GPL (>= 3)
+URL: https://github.com/theogrost/NUSS
+BugReports: https://github.com/theogrost/NUSS/issues
+Depends: R (>= 3.5)
+Imports: dplyr, magrittr, Rcpp, stringr, text2vec, textclean, utils
+Suggests: testthat (>= 3.0.0)
+LinkingTo: BH, Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-07-31 10:43:30 UTC; theog
+Author: Oskar Kosch [aut, cre] (<https://orcid.org/0000-0003-2697-1393>)
+Maintainer: Oskar Kosch <contact@oskarkosch.com>
+Repository: CRAN
+Date/Publication: 2024-08-19 08:20:16 UTC

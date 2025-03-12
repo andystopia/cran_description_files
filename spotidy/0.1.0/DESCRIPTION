@@ -1,0 +1,21 @@
+Package: spotidy
+Title: Providing Convenience Functions to Connect R with the Spotify
+        API
+Version: 0.1.0
+Author: Lennard van Wanrooij
+Maintainer: Lennard van Wanrooij <lennardvanwanrooij@gmail.com>
+Description: Providing convenience functions to connect R with the 'Spotify' application programming interface ('API'). At first it aims to help setting up 
+  the OAuth2.0 Authentication flow. The default output of the get_*() functions is tidy, but optionally the functions could return the raw response from the 
+  'API' as well. The search_*() and get_*() functions can be combined. See the vignette for more information and examples and the official Spotify for 
+  Developers website <https://developer.spotify.com/documentation/web-api/> for information about the Web 'API'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: magrittr, dplyr, purrr, httr
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-03-14 09:21:15 UTC; Lennard
+Repository: CRAN
+Date/Publication: 2021-03-16 15:30:02 UTC

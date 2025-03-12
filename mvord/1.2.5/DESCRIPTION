@@ -1,0 +1,34 @@
+Package: mvord
+Title: Multivariate Ordinal Regression Models
+Version: 1.2.5
+Date: 2024-08-26
+Authors@R: c(
+    person("Rainer", "Hirk", role = c("aut")),
+    person("Kurt", "Hornik", role = c("aut"), 
+           email = "kurt.hornik@wu.ac.at", 
+	   comment = c(ORCID = "0000-0003-4198-9911")),
+    person("Laura", "Vana", role = c("aut", "cre"), 
+          email = "laura.vana@tuwien.ac.at",
+          comment = c(ORCID = "0000-0002-9613-7604")),
+    person("Alan", "Gentz", role = c("ctb")))
+Description: A flexible framework for fitting multivariate
+    ordinal regression models with composite likelihood methods. Methodological details are given in Hirk, Hornik, Vana (2020) <doi:10.18637/jss.v093.i04>.
+License: GPL-3
+Depends: minqa, BB, ucminf, dfoptim, R (>= 3.5.0)
+Imports: MASS, pbivnorm, stats, optimx, mnormt, numDeriv, Matrix,
+        mvtnorm
+Suggests: knitr, rmarkdown, xtable, colorspace, LMest, VGAM
+VignetteBuilder: knitr
+URL: https://github.com/lauravana/mvord
+BugReports: https://github.com/lauravana/mvord/issues
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 7.3.1
+Packaged: 2024-08-30 09:59:55 UTC; lauravanagur
+Author: Rainer Hirk [aut],
+  Kurt Hornik [aut] (<https://orcid.org/0000-0003-4198-9911>),
+  Laura Vana [aut, cre] (<https://orcid.org/0000-0002-9613-7604>),
+  Alan Gentz [ctb]
+Maintainer: Laura Vana <laura.vana@tuwien.ac.at>
+Repository: CRAN
+Date/Publication: 2024-08-30 11:18:22 UTC

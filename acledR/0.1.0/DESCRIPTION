@@ -1,0 +1,44 @@
+Package: acledR
+Type: Package
+Title: Manipulate ACLED Data
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Armed Conflict Location and Event Data",
+           family = "ACLED", 
+           role = c("cph"), 
+           email ="data@acleddata.com"),
+           person(given = "Trey",
+           family = "Billing", 
+           role = c("aut", "cre"), 
+           email ="t.billing@acleddata.com"),
+           person(given = "Lucas",
+           family = "Fagliano", 
+           role = c("aut"),
+           email = "lucasfagliano@gmail.com"),
+           person(given = "Katayoun",
+           family = "Kishi", 
+           role = c("ctb")))
+Description: Tools working with data from ACLED (Armed Conflict Location and Event Data). Functions include simplified access to ACLED's API (<https://apidocs.acleddata.com/>), methods for keeping local versions of ACLED data up-to-date, and functions for common ACLED data transformations.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, methods, httr, lubridate, stringr, tidyr, magrittr,
+        purrr, rlang, utils
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+URL: https://dtacled.github.io/acledR/
+BugReports: https://github.com/dtacled/acledR/issues
+Suggests: knitr, janitor, rmarkdown, readr, kableExtra, ggplot2, covr,
+        here, secret, sf, raster, forcats, igraph, sjmisc, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-02-21 15:03:22 UTC; studio
+Author: Armed Conflict Location and Event Data ACLED [cph],
+  Trey Billing [aut, cre],
+  Lucas Fagliano [aut],
+  Katayoun Kishi [ctb]
+Maintainer: Trey Billing <t.billing@acleddata.com>
+Repository: CRAN
+Date/Publication: 2025-02-24 16:50:02 UTC

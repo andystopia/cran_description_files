@@ -1,0 +1,28 @@
+Package: GVS
+Title: 'Geocoordinate Validation Service'
+Version: 0.0.1
+Authors@R: c(
+    person("Brian", "Maitner", email = "bmaitner@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "https://orcid.org/0000-0002-2118-9880")),
+    person("Brad", "Boyle", email = "bboyle@email.arizona.edu", role = c("aut")),
+    person("Rethvick Sriram Yugendra", "Babu", email = "rethvick@arizona.edu",
+    role = c("aut"))
+    )
+Description: The 'Geocoordinate Validation Service' (GVS) runs checks of coordinates in latitude/longitude format. It returns annotated coordinates with additional flags and metadata that can be used in data cleaning.  Additionally, the package has functions related to attribution and metadata information. More information can be found at <https://github.com/ojalaquellueva/gvs/tree/master/api>.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Imports: jsonlite, httr
+Suggests: knitr, rmarkdown, testthat, devtools, BIEN, vcr (>= 0.6.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-03 22:09:37 UTC; Brian Maitner
+Author: Brian Maitner [aut, cre] (<https://orcid.org/0000-0002-2118-9880>),
+  Brad Boyle [aut],
+  Rethvick Sriram Yugendra Babu [aut]
+Maintainer: Brian Maitner <bmaitner@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-05 18:40:18 UTC

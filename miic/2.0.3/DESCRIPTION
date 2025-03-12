@@ -1,0 +1,102 @@
+Package: miic
+Title: Learning Causal or Non-Causal Graphical Models Using Information
+        Theory
+Version: 2.0.3
+Authors@R: 
+    c(person(given = "Franck",
+             family = "Simon",
+             role = c("aut", "cre"),
+             email = "franck.simon@curie.fr"),
+      person(given = "Tiziana",
+             family = "Tocci",
+             role = "aut",
+             email = "tiziana.tocci@curie.fr"),
+      person(given = "Nikita",
+             family = "Lagrange",
+             role = "aut",
+             email = "nikita.lagrange@curie.fr"),
+      person(given = "Orianne",
+             family = "Debeaupuis",
+             role = "aut",
+             email = "orianne.debeaupuis@curie.fr"),
+      person(given = "Louise",
+             family = "Dupuis",
+             role = "aut",
+             email = "louise.dupuis@curie.fr"),
+      person(given = "Vincent",
+             family = "Cabeli",
+             role = "aut"),
+      person(given = "Honghao",
+             family = "Li",
+             role = "aut"),
+      person(given = "Marcel",
+             family = "Ribeiro Dantas",
+             role = "aut"),
+      person(given = "Nadir",
+             family = "Sella",
+             role = "aut"),
+      person(given = "Louis",
+             family = "Verny",
+             role = "aut"),
+      person(given = "Severine",
+             family = "Affeldt",
+             role = "aut"),
+      person(given = "Hervé",
+             family = "Isambert",
+             role = "aut",
+             email = "herve.isambert@curie.fr"))
+Description: Multivariate Information-based Inductive Causation, better known 
+    by its acronym MIIC, is a causal discovery method, based on information 
+    theory principles, which learns a large class of causal or non-causal 
+    graphical models from purely observational data, while including the effects 
+    of unobserved latent variables. Starting from a complete graph, the method 
+    iteratively removes dispensable edges, by uncovering significant information 
+    contributions from indirect paths, and assesses edge-specific confidences 
+    from randomization of available data. The remaining edges are then oriented 
+    based on the signature of causality in observational data. The recent more 
+    interpretable MIIC extension (iMIIC) further distinguishes genuine causes 
+    from putative and latent causal effects, while scaling to very large 
+    datasets (hundreds of thousands of samples). Since the version 2.0, MIIC 
+    also includes a temporal mode (tMIIC) to learn temporal causal graphs from 
+    stationary time series data. MIIC has been applied to a wide range of 
+    biological and biomedical data, such as single cell gene expression data, 
+    genomic alterations in tumors, live-cell time-lapse imaging data 
+    (CausalXtract), as well as medical records of patients. MIIC brings unique 
+    insights based on causal interpretation and could be used in a broad range 
+    of other data science domains (technology, climatology, economy, ...). 
+    For more information, you can refer to: 
+    Simon et al., eLife 2024, <doi:10.1101/2024.02.06.579177>, 
+    Ribeiro-Dantas et al., iScience 2024, <doi:10.1016/j.isci.2024.109736>, 
+    Cabeli et al., NeurIPS 2021, <https://why21.causalai.net/papers/WHY21_24.pdf>, 
+    Cabeli et al., Comput. Biol. 2020, <doi:10.1371/journal.pcbi.1007866>, 
+    Li et al., NeurIPS 2019, <https://papers.nips.cc/paper/9573-constraint-based-causal-structure-learning-with-consistent-separating-sets>, 
+    Verny et al., PLoS Comput. Biol. 2017, <doi:10.1371/journal.pcbi.1005662>, 
+    Affeldt et al., UAI 2015, <https://auai.org/uai2015/proceedings/papers/293.pdf>. 
+    Changes from the previous 1.5.3 release on CRAN are available at 
+    <https://github.com/miicTeam/miic_R_package/blob/master/NEWS.md>.
+License: GPL (>= 2)
+URL: https://github.com/miicTeam/miic_R_package
+BugReports: https://github.com/miicTeam/miic_R_package/issues
+Imports: ppcor, Rcpp, scales, stats,
+Suggests: igraph, grDevices, ggplot2 (>= 3.3.0), gridExtra
+LinkingTo: Rcpp
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-09-17 15:35:57 UTC; Franck
+Author: Franck Simon [aut, cre],
+  Tiziana Tocci [aut],
+  Nikita Lagrange [aut],
+  Orianne Debeaupuis [aut],
+  Louise Dupuis [aut],
+  Vincent Cabeli [aut],
+  Honghao Li [aut],
+  Marcel Ribeiro Dantas [aut],
+  Nadir Sella [aut],
+  Louis Verny [aut],
+  Severine Affeldt [aut],
+  Hervé Isambert [aut]
+Maintainer: Franck Simon <franck.simon@curie.fr>
+Repository: CRAN
+Date/Publication: 2024-09-17 22:30:02 UTC

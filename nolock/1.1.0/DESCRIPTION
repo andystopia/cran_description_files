@@ -1,0 +1,29 @@
+Package: nolock
+Type: Package
+Title: Append 'WITH (NOLOCK)' to 'SQL' Queries, Get Packages in Active
+        Script
+Version: 1.1.0
+Authors@R: c(person("Arkadiusz W.", "Pajda", role = c("aut", "cre", "cph"), 
+    email = "arkadiusz.pajda.97@onet.pl"))
+Description: Provides a suite of tools that can assist in enhancing the 
+    processing efficiency of 'SQL' and 'R' scripts. 
+    - The 'libr_unused()' retrieves a vector of package names that are called 
+    within an 'R' script but are never actually used in the script.
+    - The 'libr_used()' retrieves a vector of package names actively utilized 
+    within an 'R' script; packages loaded using 'library()' but not actually 
+    used in the script will not be included.
+    - The 'libr_called()' retrieves a vector of all package names which are 
+    called within an 'R' script.
+    - 'nolock()' appends 'WITH (nolock)' to all tables in 'SQL' queries. This 
+    facilitates reading from databases in scenarios where non-blocking reads are 
+    preferable, such as in high-transaction environments.
+License: GPL-3
+Encoding: UTF-8
+Imports: crayon, rstudioapi, utils, stringr, NCmisc
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-11-15 04:35:32 UTC; apajda
+Author: Arkadiusz W. Pajda [aut, cre, cph]
+Maintainer: Arkadiusz W. Pajda <arkadiusz.pajda.97@onet.pl>
+Repository: CRAN
+Date/Publication: 2023-11-15 06:00:02 UTC

@@ -1,0 +1,25 @@
+Package: PSGD
+Type: Package
+Title: Projected Subset Gradient Descent
+Version: 1.0.4
+Date: 2024-12-16
+Authors@R: c(person("Anthony", "Christidis", role=c("aut", "cre"), email = "anthony.christidis@stat.ubc.ca"),
+	     person("Stefan", "Van Aelst", role=c("aut"), email = "stefan.vanaelst@kuleuven.be"),
+	     person("Ruben", "Zamar", role=c("aut"), email = "ruben@stat.ubc.ca"))
+Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
+Description: Functions to generate ensembles of generalized linear models using
+             a greedy projected subset gradient descent algorithm. The sparsity 
+             and diversity tuning parameters are selected by cross-validation.
+License: GPL (>= 2)
+Biarch: true
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Imports: Rcpp (>= 1.0.7)
+Suggests: testthat, mvnfast, vctrs
+NeedsCompilation: yes
+Packaged: 2024-12-17 03:09:42 UTC; anthony
+Author: Anthony Christidis [aut, cre],
+  Stefan Van Aelst [aut],
+  Ruben Zamar [aut]
+Repository: CRAN
+Date/Publication: 2024-12-18 15:20:06 UTC

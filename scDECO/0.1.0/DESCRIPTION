@@ -1,0 +1,39 @@
+Package: scDECO
+Type: Package
+Title: Estimating Dynamic Correlation
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Anderson",
+           family = "Bussing",
+           role = c("aut", "cre"),
+           email = "abussing@email.sc.edu"),
+    person(given = "Yen-Yi",
+           family = "Ho",
+           role = c("aut", "ths"),
+           email = "hoyen@stat.sc.edu"),
+    person(given = "Zichen",
+           family = "Ma",
+           role = "aut",
+           email = "zma@colgate.edu"),
+    person(given = "Zhen",
+           family = "Yang",
+           role = "aut",
+           email = "zheny@email.sc.edu"))
+Description: Implementations for two different Bayesian models of differential co-expression. scdeco.cop() fits the bivariate Gaussian copula model from Zichen Ma, Shannon W. Davis, Yen-Yi Ho (2023) <doi:10.1111/biom.13701>, while scdeco.pg() fits the bivariate Poisson-Gamma model from Zhen Yang, Yen-Yi Ho (2022) <doi:10.1111/biom.13457>.
+Imports: MASS, rjags, msm
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://github.com/YenYiHo-Lab/scDECO
+BugReports: https://github.com/YenYiHo-Lab/scDECO/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-03 17:10:48 UTC; andyb
+Author: Anderson Bussing [aut, cre],
+  Yen-Yi Ho [aut, ths],
+  Zichen Ma [aut],
+  Zhen Yang [aut]
+Maintainer: Anderson Bussing <abussing@email.sc.edu>
+Repository: CRAN
+Date/Publication: 2024-06-04 10:16:32 UTC

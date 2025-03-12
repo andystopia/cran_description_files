@@ -1,0 +1,30 @@
+Package: tidydice
+Type: Package
+Title: Simulates Dice Rolls and Coin Flips
+Version: 1.0.0
+Authors@R: c(
+    person("Roland", "Krasser", role = c("aut", "cre"),
+           email = "roland.krasser@gmail.com"),
+    person("Giovanni Marco", "Dall'Olio", role = "aut")
+  )
+Maintainer: Roland Krasser <roland.krasser@gmail.com>
+Description: Utils for basic statistical experiments, that can be used for teaching 
+    introductory statistics. Each experiment generates a tibble.
+    Dice rolls and coin flips are simulated using sample().
+    The properties of the dice can be changed, like the number of sides.
+    A coin flip is simulated using a two sided dice.
+    Experiments can be combined with the pipe-operator.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/rolkra/tidydice
+Imports: assertthat, dplyr, ggplot2, magrittr, purrr, stats, stringr,
+        tibble, tidyr
+RoxygenNote: 7.2.1
+Suggests: explore, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-03 09:09:37 UTC; ujqb7lf
+Author: Roland Krasser [aut, cre],
+  Giovanni Marco Dall'Olio [aut]
+Repository: CRAN
+Date/Publication: 2023-02-03 09:40:02 UTC

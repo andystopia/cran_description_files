@@ -1,0 +1,41 @@
+Type: Package
+Package: GPTreeO
+Title: Dividing Local Gaussian Processes for Online Learning Regression
+Version: 1.0.1
+Authors@R: c(
+    person(given = "Timo",
+           family = "Braun",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-0965-8285"),
+           email = "gptreeo.timo.braun@gmail.com"),
+    person(given = "Anders",
+           family = "Kvellestad",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-5267-7705")),
+    person(given = "Riccardo",
+           family = "De Bin",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-7441-6880")))
+Maintainer: Timo Braun <gptreeo.timo.braun@gmail.com>
+Description: We implement and extend the Dividing Local Gaussian Process 
+    algorithm by Lederer et al. (2020) <doi:10.48550/arXiv.2006.09446>. Its
+    main use case is in online learning where it is used to train a network of
+    local GPs (referred to as tree) by cleverly partitioning the input space. 
+    In contrast to a single GP, 'GPTreeO' is able to deal with larger amounts of
+    data. The package includes methods to create the tree and set its
+    parameter, incorporating data points from a data stream as well as making
+    joint predictions based on all relevant local GPs.
+License: MIT + file LICENSE
+Imports: R6, hash, DiceKriging, mlegp
+Suggests: knitr, rmarkdown, spelling, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-10-16 15:06:08 UTC; traschpanda
+Author: Timo Braun [aut, cre] (<https://orcid.org/0009-0001-0965-8285>),
+  Anders Kvellestad [aut] (<https://orcid.org/0000-0002-5267-7705>),
+  Riccardo De Bin [ctb] (<https://orcid.org/0000-0002-7441-6880>)
+Repository: CRAN
+Date/Publication: 2024-10-16 15:20:02 UTC

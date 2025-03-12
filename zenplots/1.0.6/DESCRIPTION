@@ -1,0 +1,31 @@
+Package: zenplots
+Version: 1.0.6
+Encoding: UTF-8
+Title: Zigzag Expanded Navigation Plots
+Description: Graphical tools for visualizing high-dimensional data along a path
+ of alternating one- and two-dimensional plots. Note that this
+ includes interactive graphics plots based on 'loon' in turn based on 'tcltk'
+ (included as part of the standard R distribution).  It also requires 'graph' from Bioconductor.
+ For more detail on use and algorithms, see <doi:10.18637/jss.v095.i04>.
+Authors@R: c(person(given = "Marius", family = "Hofert", role = "aut",
+                    email = "marius.hofert@uwaterloo.ca"),
+             person(given = "Wayne", family = "Oldford", role =  c("aut", "cre"),
+                    email = "rwoldford@uwaterloo.ca"))
+Author: Marius Hofert [aut],
+  Wayne Oldford [aut, cre]
+Maintainer: Wayne Oldford <rwoldford@uwaterloo.ca>
+URL: https://github.com/great-northern-diver/zenplots
+Depends: R (>= 3.4.0)
+Imports: grid, graphics, stats, methods, MASS, graph, PairViz
+Suggests: knitr, rmarkdown, Rgraphviz, ADGofTest, copula, Matrix,
+        pcaPP, qqtest, qrmdata, qrmtools, rugarch, zoo, ggplot2,
+        lattice, gridExtra, scagnostics, testthat, loon
+Enhances:
+License: GPL-2 | GPL-3
+NeedsCompilation: yes
+VignetteBuilder: knitr, rmarkdown
+Repository: CRAN
+Date: 2023-11-07
+RoxygenNote: 7.2.3
+Packaged: 2023-11-07 20:58:09 UTC; rwoldford
+Date/Publication: 2023-11-07 23:10:02 UTC

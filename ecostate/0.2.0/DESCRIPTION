@@ -1,0 +1,35 @@
+Package: ecostate
+Type: Package
+Title: State-Space Mass-Balance Model for Marine Ecosystems
+Version: 0.2.0
+Date: 2024-11-15
+Authors@R: c(
+    person(c("James", "T."), "Thorson", , "James.Thorson@noaa.gov", 
+	   role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7415-1010"))
+    )
+Maintainer: James T. Thorson <James.Thorson@noaa.gov>
+Description: 
+	Fits a state-space mass-balance model for marine ecosystems,
+	which implements dynamics derived from 
+	'Ecopath with Ecosim' <https://ecopath.org/>
+	while fitting to time-series of fishery catch, biomass indices,
+	age-composition samples, and weight-at-age data. Package 
+	'ecostate' fits biological parameters (e.g., equilibrium mass)
+	and measurement parameters (e.g., catchability coefficients)
+	jointly with residual variation in process errors, and can include
+	Bayesian priors for parameters.  
+License: GPL-3
+Depends: R (>= 4.1.0), RTMB (>= 1.5.0),
+Imports: TMB, MASS, checkmate, ggplot2, ggnetwork, igraph
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+LazyData: true
+URL: https://james-thorson-noaa.github.io/ecostate/
+BugReports: https://github.com/James-Thorson-NOAA/ecostate/issues
+NeedsCompilation: no
+Packaged: 2024-11-22 15:10:37 UTC; James.Thorson
+Author: James T. Thorson [aut, cre] (<https://orcid.org/0000-0001-7415-1010>)
+Repository: CRAN
+Date/Publication: 2024-11-25 11:50:14 UTC

@@ -1,0 +1,47 @@
+Package: RoBSA
+Type: Package
+Title: Robust Bayesian Survival Analysis
+Version: 1.0.2
+Maintainer: František Bartoš <f.bartos96@gmail.com>
+Authors@R: c( 
+    person("František", "Bartoš", role = c("aut", "cre"),
+            email = "f.bartos96@gmail.com", comment = c(ORCID = "0000-0002-0018-5573")),
+    person("Julia M.", "Haaf", role = "ths",
+            comment = c(ORCID = "0000-0001-5122-706X")),
+    person("Matthew", "Denwood", role="cph", 
+           comment="Original copyright holder of some modified code where indicated."),
+    person("Martyn", "Plummer", role="cph", 
+           comment="Original copyright holder of some modified code where indicated.")
+    )
+Description: A framework for estimating ensembles of parametric survival models
+    with different parametric families. The RoBSA framework uses Bayesian 
+    model-averaging to combine the competing parametric survival models into 
+    a model ensemble, weights the posterior parameter distributions based on 
+    posterior model probabilities and uses Bayes factors to test for the 
+    presence or absence of the individual predictors or preference for a 
+    parametric family (Bartoš, Aust & Haaf, 2022, <doi:10.1186/s12874-022-01676-9>).
+    The user can define a wide range of informative priors for all parameters 
+    of interest. The package provides convenient functions for summary, visualizations, 
+    fit diagnostics, and prior distribution calibration.
+URL: https://fbartos.github.io/RoBSA/
+BugReports: https://github.com/FBartos/RoBSA/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: JAGS >= 4.3.1 (https://mcmc-jags.sourceforge.io/)
+Depends: R (>= 4.0.0)
+Imports: BayesTools (>= 0.2.14), survival, rjags, runjags, scales,
+        coda, stats, graphics, rlang, Rdpack
+Suggests: parallel, ggplot2, flexsurv, testthat, vdiffr, knitr,
+        rmarkdown, covr
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2023-05-30 14:53:38 UTC; fbart
+Author: František Bartoš [aut, cre] (<https://orcid.org/0000-0002-0018-5573>),
+  Julia M. Haaf [ths] (<https://orcid.org/0000-0001-5122-706X>),
+  Matthew Denwood [cph] (Original copyright holder of some modified code
+    where indicated.),
+  Martyn Plummer [cph] (Original copyright holder of some modified code
+    where indicated.)
+Repository: CRAN
+Date/Publication: 2023-05-30 15:10:02 UTC

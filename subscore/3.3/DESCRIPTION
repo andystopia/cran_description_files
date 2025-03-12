@@ -1,0 +1,35 @@
+Package: subscore
+Title: Computing Subscores in Classical Test Theory and Item Response
+        Theory
+Version: 3.3
+Authors@R: c(person("Shenghai", "Dai", role = c("aut", "cre"), 
+                     email = "s.dai@wsu.edu"),
+             person("Xiaolin", "Wang", role = "aut"),
+             person("Dubravka", "Svetina", role = "aut"))
+Author: Shenghai Dai [aut, cre],
+  Xiaolin Wang [aut],
+  Dubravka Svetina [aut]
+Maintainer: Shenghai Dai <s.dai@wsu.edu>
+Description: Functions for computing test subscores using different
+    methods in both classical test theory (CTT) and item response theory (IRT). This
+    package enables three types of subscoring methods within the framework of CTT
+    and IRT, including (1) Wainer's augmentation method (Wainer et. al., 2001) 
+    <doi:10.4324/9781410604729>, (2) Haberman's subscoring methods (Haberman, 2008) 
+    <doi:10.3102/1076998607302636>, and (3) Yen's objective performance index (OPI; Yen, 1987) 
+    <https://www.ets.org/research/policy_research_reports/publications/paper/1987/hrap>. 
+    It also includes functions to compute Proportional Reduction 
+    of Mean Squared Errors (PRMSEs) in Haberman's methods which are used to 
+    examine whether test subscores are of added value. In addition, the package includes 
+    a function to assess the local independence assumption of IRT with
+    Yen's Q3 statistic (Yen, 1984 <doi:10.1177/014662168400800201>; Yen, 1993 
+    <doi:10.1111/j.1745-3984.1993.tb00423.x>).
+Depends: R (>= 3.4.0), CTT, stats, irtoys, sirt, ltm
+Imports: cocor, boot
+NeedsCompilation: no
+LazyData: true
+Encoding: UTF-8
+License: GPL (>= 2)
+RoxygenNote: 7.2.0
+Packaged: 2022-05-20 15:33:36 UTC; daish
+Repository: CRAN
+Date/Publication: 2022-05-24 11:00:07 UTC

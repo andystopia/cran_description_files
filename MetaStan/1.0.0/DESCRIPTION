@@ -1,0 +1,41 @@
+Package: MetaStan
+Version: 1.0.0
+Title: Bayesian Meta-Analysis via 'Stan'
+Description: Performs Bayesian meta-analysis, meta-regression and model-based meta-analysis 
+             using 'Stan'. Includes binomial-normal hierarchical models and option to use 
+             weakly informative priors for the heterogeneity parameter and the treatment effect 
+             parameter which are described in Guenhan, Roever, and Friede (2020) <doi:10.1002/jrsm.1370>.
+Authors@R: c(person("Burak Kuersad", "Guenhan", email="burakgunhan@gmail.com", 
+             role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7454-8680")),
+             person("Christian", "Roever", email="christian.roever@med.uni-goettingen.de", 
+             role=c("aut"), comment = c(ORCID = "0000-0002-6911-698X")),
+             person("Trustees of", "Columbia University", role="cph", comment="src/init.cpp, 
+             tools/make_cpp.R, R/stanmodels.R"))
+License: GPL (>= 3)
+Encoding: UTF-8
+Date: 2021-12-23
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 0.12.17), methods, rstan (>= 2.18.1), rstantools (>=
+        1.5.0), loo (>= 2.0), forestplot (>= 1.6), metafor (>= 2.0-0),
+        HDInterval, coda
+Suggests: testthat, knitr, rmarkdown, ggplot2, shinystan, vdiffr
+LinkingTo: StanHeaders (>= 2.18.0), rstan (>= 2.18.1), BH (>=
+        1.66.0-1), Rcpp (>= 0.12.17), RcppEigen (>= 0.3.3.4.0),
+        RcppParallel (>= 5.0.1),
+SystemRequirements: GNU make
+NeedsCompilation: yes
+RoxygenNote: 7.1.2
+URL: https://github.com/gunhanb/MetaStan
+BugReports: https://github.com/gunhanb/MetaStan/issues
+VignetteBuilder: knitr
+Packaged: 2022-01-22 10:25:53 UTC; M305767
+Author: Burak Kuersad Guenhan [aut, cre]
+    (<https://orcid.org/0000-0002-7454-8680>),
+  Christian Roever [aut] (<https://orcid.org/0000-0002-6911-698X>),
+  Trustees of Columbia University [cph] (src/init.cpp, tools/make_cpp.R,
+    R/stanmodels.R)
+Maintainer: Burak Kuersad Guenhan <burakgunhan@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-01-22 12:22:46 UTC

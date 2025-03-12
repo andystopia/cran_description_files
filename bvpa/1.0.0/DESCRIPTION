@@ -1,0 +1,34 @@
+Package: bvpa
+Type: Package
+Title: Bivariate Pareto Distribution
+Version: 1.0.0
+Date: 2023-08-07
+Authors@R: c(person("Biplab", "Paul", role = c("aut", "cre"), email = "paul.biplab497@gmail.com"), 
+             person("Arabin Kumar", "Dey", role = c("aut")))
+Maintainer: Biplab Paul <paul.biplab497@gmail.com>
+Description: Implements the EM algorithm with one-step Gradient Descent method to estimate
+             the parameters of the Block-Basu bivariate Pareto distribution with location
+             and scale. We also found parametric bootstrap and asymptotic confidence 
+             intervals based on the observed Fisher information of scale and shape parameters,
+             and exact confidence intervals for location parameters. Details are in 
+             Biplab Paul and Arabin Kumar Dey (2023) <doi:10.48550/arXiv.1608.02199>
+             "An EM algorithm for absolutely continuous Marshall-Olkin bivariate Pareto
+             distribution with location and scale"; 
+             E L Lehmann and George Casella (1998) <doi:10.1007/b98854> "Theory of Point Estimation";
+             Bradley Efron and R J Tibshirani (1994) <doi:10.1201/9780429246593> 
+             "An Introduction to the Bootstrap"; 
+             A P Dempster, N M Laird and D B Rubin
+             (1977) <www.jstor.org/stable/2984875> "Maximum Likelihood from Incomplete
+             Data via the EM Algorithm".
+License: GPL (>= 2)
+Imports: numDeriv, stats
+RoxygenNote: 7.2.3
+Author: Biplab Paul [aut, cre],
+  Arabin Kumar Dey [aut]
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-08-07 19:29:00 UTC; GOBINDO
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2023-08-08 14:50:02 UTC

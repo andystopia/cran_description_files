@@ -1,0 +1,28 @@
+Package: fftab
+Title: Tidy Manipulation of Fourier Transformed Data
+Version: 0.1.0
+Authors@R: 
+    person("Timothy", "Keitt", , "tkeitt@gmail.com", role = c("aut", "cre"))
+Description: The 'fftab' package stores Fourier coefficients in a tibble and 
+  allows their manipulation in various ways. Functions are available for converting 
+  between complex, rectangular ('re', 'im'), and polar ('mod', 'arg') representations, 
+  as well as for extracting components as vectors or matrices. Inputs can include 
+  vectors, time series, and arrays of arbitrary dimensions, which are restored 
+  to their original form when inverting the transform. Since 'fftab' stores Fourier 
+  frequencies as columns in the tibble, many standard operations on spectral data 
+  can be easily performed using tidy packages like 'dplyr'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: ggfortify, patchwork, testthat (>= 3.0.0), zoo
+Config/testthat/edition: 3
+Imports: dplyr, ggplot2, lifecycle, tibble, tidyr
+URL: https://github.com/thk686/fftab, https://thk686.github.io/fftab/
+BugReports: https://github.com/thk686/fftab/issues
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2025-01-13 22:31:34 UTC; keittth
+Author: Timothy Keitt [aut, cre]
+Maintainer: Timothy Keitt <tkeitt@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-15 10:40:08 UTC

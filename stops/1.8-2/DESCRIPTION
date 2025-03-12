@@ -1,0 +1,25 @@
+Package: stops
+Title: Structure Optimized Proximity Scaling
+Version: 1.8-2
+Authors@R: c(person(given="Thomas", family="Rusch", email="thomas.rusch@wu.ac.at", role = c("aut","cre"),comment = c(ORCID = "0000-0002-7773-2096")), person(given="Patrick", family="Mair", role = "aut",comment=c(ORCID="0000-0003-0100-6511")), person(given="Kurt",family="Hornik", role = "ctb", email = "Kurt.Hornik@R-project.org", comment = c(ORCID = "0000-0003-4198-9911")))
+Maintainer: Thomas Rusch <thomas.rusch@wu.ac.at>
+Description: Methods that use flexible variants of multidimensional scaling (MDS) which incorporate parametric nonlinear distance transformations and trade-off the goodness-of-fit fit with structure considerations to find optimal hyperparameters, also known as structure optimized proximity scaling (STOPS) (Rusch, Mair & Hornik, 2023,<doi:10.1007/s11222-022-10197-w>). The package contains various functions, wrappers, methods and classes for fitting, plotting and displaying different 1-way MDS models with ratio, interval, ordinal optimal scaling in a STOPS framework. These cover essentially the functionality of the package smacofx, including Torgerson (classical) scaling with power transformations of dissimilarities, SMACOF MDS with powers of dissimilarities, Sammon mapping with powers of dissimilarities, elastic scaling with powers of dissimilarities, spherical SMACOF with powers of dissimilarities, (ALSCAL) s-stress MDS with powers of dissimilarities, r-stress MDS, MDS with powers of dissimilarities and configuration distances, elastic scaling powers of dissimilarities and configuration distances, Sammon mapping powers of dissimilarities and configuration distances, power stress MDS (POST-MDS), approximate power stress, Box-Cox MDS, local MDS, Isomap, curvilinear component analysis (CLCA), curvilinear distance analysis (CLDA) and sparsified (power) multidimensional scaling and (power) multidimensional distance analysis (experimental models from smacofx influenced by CLCA). All of these models can also be fit by optimizing over hyperparameters based on goodness-of-fit fit only (i.e., no structure considerations). The package further contains functions for optimization, specifically the adaptive Luus-Jaakola algorithm and a wrapper for Bayesian optimization with treed Gaussian process with jumps to linear models, and functions for various c-structuredness indices.
+Depends: R (>= 3.5.0), smacofx
+Imports: acepack, clue, cmaes, cordillera, dfoptim, DiceOptim,
+        DiceKriging, energy, minerva, nloptr, pomp, pso, registry,
+        scagnostics, smacof, tgp, vegan
+Enhances: stats
+Suggests: R.rsp
+License: GPL-2 | GPL-3
+LazyData: true
+URL: https://r-forge.r-project.org/projects/stops/
+VignetteBuilder: R.rsp
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-09-22 19:20:18 UTC; trusch
+Author: Thomas Rusch [aut, cre] (<https://orcid.org/0000-0002-7773-2096>),
+  Patrick Mair [aut] (<https://orcid.org/0000-0003-0100-6511>),
+  Kurt Hornik [ctb] (<https://orcid.org/0000-0003-4198-9911>)
+Repository: CRAN
+Date/Publication: 2024-09-22 19:50:02 UTC

@@ -1,0 +1,51 @@
+Package: kmeRtone
+Type: Package
+Version: 1.0
+Date: 2024-08-26
+Title: Multi-Purpose and Flexible k-Meric Enrichment Analysis Software
+Description: A multi-purpose and flexible k-meric enrichment analysis software. 
+    'kmeRtone' measures the enrichment of k-mers by comparing the population of 
+    k-mers in the case loci with a carefully devised internal negative control 
+    group, consisting of k-mers from regions close to, yet sufficiently distant 
+    from, the case loci to mitigate any potential sequencing bias. This method 
+    effectively captures both the local sequencing variations and broader 
+    sequence influences, while also correcting for potential biases, thereby 
+    ensuring more accurate analysis. The core functionality of 'kmeRtone' is 
+    the SCORE() function, which calculates the susceptibility scores for k-mers in 
+    case and control regions. Case regions are defined by the genomic coordinates 
+    provided in a file by the user and the control regions can be constructed 
+    relative to the case regions or provided directly. The k-meric susceptibility 
+    scores are calculated by using a one-proportion z-statistic. 'kmeRtone' is 
+    highly flexible by allowing users to also specify their target k-mer patterns
+    and quantify the corresponding k-mer enrichment scores in the context of 
+    these patterns, allowing for a more comprehensive approach to understanding 
+    the functional implications of specific DNA sequences on a genomic scale
+    (e.g., CT motifs upon UV radiation damage).
+    Adib A. Abdullah, Patrick Pflughaupt, Claudia Feng, Aleksandr B. Sahakyan (2024) Bioinformatics (submitted).
+Authors@R: c(
+            person("Adib", "Abdullah", email = "adib.abdullah@imm.ox.ac.uk", role = "aut"),
+            person("Patrick", "Pflughaupt", email = "patrick.pflughaupt@imm.ox.ac.uk", role = "aut"),
+            person("Aleksandr", "Sahakyan", email = "sahakyanlab@cantab.net", role = c("aut", "cre")))
+SystemRequirements: GNU make
+Imports: data.table (>= 1.15.0), R6 (>= 2.5.1), Rcpp (>= 1.0.12),
+        R.utils (>= 2.12.3), openxlsx (>= 4.2.5.2), png (>= 0.1-8),
+        RcppSimdJson (>= 0.1.11), venneuler (>= 1.1-4), stringi, curl,
+        future, future.apply, jsonlite, progressr, Biostrings, seqLogo
+Depends: R (>= 4.2)
+RoxygenNote: 7.3.1
+LinkingTo: Rcpp, stringi
+URL: https://github.com/SahakyanLab/kmeRtone
+BugReports: https://github.com/SahakyanLab/kmeRtone/issues
+Encoding: UTF-8
+License: GPL-3
+LazyData: true
+Suggests: rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-08-26 14:25:31 UTC; paddy
+Author: Adib Abdullah [aut],
+  Patrick Pflughaupt [aut],
+  Aleksandr Sahakyan [aut, cre]
+Maintainer: Aleksandr Sahakyan <sahakyanlab@cantab.net>
+Repository: CRAN
+Date/Publication: 2024-08-30 10:50:06 UTC

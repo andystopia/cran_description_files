@@ -1,0 +1,55 @@
+Package: weakARMA
+Title: Tools for the Analysis of Weak ARMA Models
+Version: 1.0.3
+Date: 2022-04-04
+Authors@R: c(
+  person(given = "Yacouba", family = "Boubacar Maïnassara",
+         email = "yacouba.boubacar_mainassara@univ-fcomte.fr",
+         role = "aut",
+       comment = c(ORCID = "0000-0002-8604-5407")),
+  person(given = "Julien Yves", family = "Rolland",
+       email = "julien.rolland@univ-fcomte.fr",
+       role = c("aut", "cre"),
+       comment = c(ORCID = "0000-0002-0960-6688")),
+  person(given = "Coraline", family = "Parguey",
+         role = "ctb"),
+  person(given = "Vincent", family = "Mouillot",
+         role = "ctb")
+  )
+Description: Numerous time series admit autoregressive moving average (ARMA)
+  representations, in which the errors are uncorrelated but not necessarily
+  independent.
+  These models are called weak ARMA by opposition to the standard ARMA models, 
+  also called strong ARMA models, in which the error terms are supposed to be 
+  independent and identically distributed (iid).
+  This package allows the study of nonlinear time series models through weak 
+  ARMA representations.
+  It determines identification, estimation and validation for ARMA models and 
+  for AR and MA models in particular. 
+  Functions can also be used in the strong case.
+  This package also works on white noises by omitting arguments 'p', 'q', 'ar'
+  and 'ma'.
+  See Francq, C. and Zakoïan, J. (1998) <doi:10.1016/S0378-3758(97)00139-0> and 
+  Boubacar Maïnassara, Y. and Saussereau, B. (2018)
+  <doi:10.1080/01621459.2017.1380030> for more details.
+Depends: R (>= 3.4.1)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: CompQuadForm (>= 1.4.3), MASS (>= 7.3-54), matrixStats (>=
+        0.61), vars (>= 1.5-6)
+RoxygenNote: 7.1.2
+Suggests: timeSeries, testthat, knitr, rmarkdown, renv
+NeedsCompilation: no
+Maintainer: Julien Yves Rolland <julien.rolland@univ-fcomte.fr>
+URL: https://plmlab.math.cnrs.fr/jrolland/weakARMA
+BugReports: https://plmlab.math.cnrs.fr/jrolland/weakARMA/-/issues
+Packaged: 2022-04-04 13:37:26 UTC; jrolland
+Author: Yacouba Boubacar Maïnassara [aut]
+    (<https://orcid.org/0000-0002-8604-5407>),
+  Julien Yves Rolland [aut, cre]
+    (<https://orcid.org/0000-0002-0960-6688>),
+  Coraline Parguey [ctb],
+  Vincent Mouillot [ctb]
+Repository: CRAN
+Date/Publication: 2022-04-04 14:00:02 UTC

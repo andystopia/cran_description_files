@@ -1,0 +1,35 @@
+Package: elastes
+Type: Package
+Title: Elastic Full Procrustes Means for Sparse and Irregular Planar
+        Curves
+Version: 0.1.7
+Authors@R: c(person("Manuel", "Pfeuffer", role = c("aut", "cre"), email = "manuel.pfeuffer@hu-berlin.de"),
+  person("Lisa", "Steyer", role = "aut", email = "lisa.steyer@hu-berlin.de"),
+  person("Almond", "Stoecker", role = "aut", email = "almond.stoecker@epfl.ch"))
+Description: Provides functions for the computation of functional elastic shape 
+  means over sets of open planar curves. The package is particularly suitable for 
+  settings where these curves are only sparsely and irregularly observed. It uses 
+  a novel approach for elastic shape mean estimation, where planar curves are
+  treated as complex functions and a full Procrustes mean is estimated from the
+  corresponding smoothed Hermitian covariance surface. This is combined with the 
+  methods for elastic mean estimation proposed in Steyer, Stöcker, Greven	(2022)
+  <doi:10.1111/biom.13706>. See Stöcker et. al. (2022) <arXiv:2203.10522> for details.
+License: GPL (>= 3)
+Encoding: UTF-8
+Language: en-US
+Imports: elasdics, utils, graphics, stats, splines, mgcv, sparseFLMM,
+        orthogonalsplinebasis
+Suggests: knitr, covr, testthat (>= 3.0.0), rmarkdown, shapes
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://mpff.github.io/elastes/, https://github.com/mpff/elastes
+BugReports: https://github.com/mpff/elastes/issues
+NeedsCompilation: no
+Packaged: 2023-08-21 13:46:08 UTC; Manuel Pfeuffer
+Author: Manuel Pfeuffer [aut, cre],
+  Lisa Steyer [aut],
+  Almond Stoecker [aut]
+Maintainer: Manuel Pfeuffer <manuel.pfeuffer@hu-berlin.de>
+Repository: CRAN
+Date/Publication: 2023-08-21 15:00:29 UTC

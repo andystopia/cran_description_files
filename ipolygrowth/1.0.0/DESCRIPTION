@@ -1,0 +1,29 @@
+Package: ipolygrowth
+Title: Individual Growth Curve Parameter Calculation using Polynomial
+        Functions
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Jifan", family = "Wang", email = "wjifan@hotmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-9720-8913")),
+    person(given = "Kathryn", family = "Barger", email = "kathrynjbarger@gmail.com", role = c("aut", "cph")))
+Depends: R (>= 3.5.0)
+Description: Calculation of key bacterial growth curve parameters using fourth degree polynomial functions. 
+    Six growth curve parameters are provided including peak growth rate, doubling time, lag time, maximum growth, and etc.
+    'ipolygrowth' takes time series data from individual biological samples (with technical replicates) or multiple samples.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr, magrittr, rlang, tidyr, tidyselect
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), growthrates,
+        kableExtra, ggplot2
+Config/testthat/edition: 3
+URL: https://github.com/kivanvan/ipolygrowth
+BugReports: https://github.com/kivanvan/ipolygrowth/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-08-29 01:54:45 UTC; wjifa
+Author: Jifan Wang [aut, cre, cph] (<https://orcid.org/0000-0001-9720-8913>),
+  Kathryn Barger [aut, cph]
+Maintainer: Jifan Wang <wjifan@hotmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-29 10:00:02 UTC

@@ -1,0 +1,29 @@
+Package: VirtualPop
+Type: Package
+Title: Simulation of Populations by Sampling Waiting-Time Distributions
+Version: 2.0.2
+Imports: msm,HMDHFDplus
+Suggests: knitr, kableExtra, ggplot2, foreign, lubridate, xml2, eha,
+        survival, survminer, rmarkdown
+BuildResaveData: best
+VignetteBuilder: knitr
+LazyData: true
+Date: 2024-03-18
+Authors@R: c(person("Frans", "Willekens", role = c("aut", "cre"),email="willekens@nidi.nl",
+           comment = c(ORCID = "0000-0001-6125-0212")),
+   	   person("Tim", "Riffe", role = "ctb", 
+           email = "tim.riffe@gmail.com", comment = c(ORCID = "0000-0002-2673-4622")))
+Maintainer: Frans Willekens <willekens@nidi.nl>
+Description: Constructs a virtual population from fertility and mortality rates for any country,
+	calendar year and birth cohort in the Human Mortality Database <https://www.mortality.org> and the Human Fertility Database <https://www.humanfertility.org>.  Fertility histories are simulated for every individual and their offspring, producing a multi-generation virtual population. 
+License: GPL-2
+NeedsCompilation: no
+Depends: R (>= 4.3.0),
+Encoding: UTF-8
+BugReports: https://github.com/willekens/VirtualPop/issues
+RoxygenNote: 7.2.3
+Packaged: 2024-03-18 10:04:52 UTC; frans
+Author: Frans Willekens [aut, cre] (<https://orcid.org/0000-0001-6125-0212>),
+  Tim Riffe [ctb] (<https://orcid.org/0000-0002-2673-4622>)
+Repository: CRAN
+Date/Publication: 2024-03-18 10:30:02 UTC

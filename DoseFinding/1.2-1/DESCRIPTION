@@ -1,0 +1,40 @@
+Package: DoseFinding
+Type: Package
+Title: Planning and Analyzing Dose Finding Experiments
+Version: 1.2-1
+Date: 2024-08-23
+Authors@R: c(
+   person("Bjoern", "Bornkamp", email = "bjoern.bornkamp@novartis.com", comment = c(ORCID = "0000-0002-6294-8185"), role = c("aut")),
+   person("Jose", "Pinheiro", role = "aut"),
+   person("Frank", "Bretz", role = "aut"),
+   person("Ludger", "Sandig", role = "aut"),
+   person("Marius", "Thomas", role = c("aut", "cre"), email = "marius.thomas@novartis.com"),
+   person(given = "Novartis Pharma AG", role = c("cph", "fnd")))
+Imports: ggplot2, lattice, mvtnorm
+Suggests: numDeriv, Rsolnp, quadprog, parallel, multcomp, knitr,
+        rmarkdown, MASS, testthat, RBesT, nlme
+Maintainer: Marius Thomas <marius.thomas@novartis.com>
+Description: The DoseFinding package provides functions for the design and analysis
+	     of dose-finding experiments (with focus on pharmaceutical Phase
+	     II clinical trials). It provides functions for: multiple contrast
+	     tests, fitting non-linear dose-response models (using Bayesian and
+	     non-Bayesian estimation), calculating optimal designs and an
+	     implementation of the MCPMod methodology (Pinheiro et al. (2014)
+	     <doi:10.1002/sim.6052>).
+VignetteBuilder: knitr
+License: GPL-3
+LazyLoad: yes
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+URL: https://github.com/openpharma/DoseFinding
+BugReports: https://github.com/openpharma/DoseFinding/issues
+NeedsCompilation: yes
+Packaged: 2024-08-23 15:00:55 UTC; THOMAM1D
+Author: Bjoern Bornkamp [aut] (<https://orcid.org/0000-0002-6294-8185>),
+  Jose Pinheiro [aut],
+  Frank Bretz [aut],
+  Ludger Sandig [aut],
+  Marius Thomas [aut, cre],
+  Novartis Pharma AG [cph, fnd]
+Repository: CRAN
+Date/Publication: 2024-08-23 16:20:09 UTC

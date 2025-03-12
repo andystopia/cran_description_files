@@ -1,0 +1,29 @@
+Package: sfcurve
+Type: Package
+Title: 2x2, 3x3 and Nxn Space-Filling Curves
+Version: 1.0.0
+Date: 2024-09-10
+Authors@R: person("Zuguang", "Gu", email = "z.gu@dkfz.de", role = c("aut", "cre"),
+                  comment = c('ORCID'="0000-0002-7395-8709"))
+Depends: R (>= 4.0.0)
+Imports: grid, Rcpp, methods, colorRamp2
+Suggests: rmarkdown, knitr, rgl, testthat, ComplexHeatmap, igraph,
+        digest
+VignetteBuilder: knitr
+Description: Implementation of all possible forms of 2x2 and 3x3 space-filling curves, 
+    i.e., the generalized forms of the Hilbert curve <https://en.wikipedia.org/wiki/Hilbert_curve>, 
+    the Peano curve <https://en.wikipedia.org/wiki/Peano_curve> and the Peano curve in the 
+    meander type (Figure 5 in <https://eudml.org/doc/141086>). It can generates nxn curves expanded from
+    any specific level-1 units. It also implements the H-curve and the three-dimensional Hilbert curve.
+URL: https://github.com/jokergoo/sfcurve,
+        https://jokergoo.github.io/sfcurve/
+License: MIT + file LICENSE
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-09-10 18:00:15 UTC; guz
+Author: Zuguang Gu [aut, cre] (<https://orcid.org/0000-0002-7395-8709>)
+Maintainer: Zuguang Gu <z.gu@dkfz.de>
+Repository: CRAN
+Date/Publication: 2024-09-13 18:00:02 UTC

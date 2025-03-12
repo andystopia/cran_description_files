@@ -1,0 +1,37 @@
+Package: calmr
+Title: Canonical Associative Learning Models and their Representations
+Version: 0.6.1
+Authors@R: 
+    person("Victor", "Navarro", , "navarrov@cardiff.ac.uk", role = c("aut", "cre", "cph"))
+Description: Implementations of canonical associative learning models, with tools to run experiment simulations, estimate model parameters, and compare model representations. Experiments and results are represented using S4 classes and methods.
+License: GPL (>= 3)
+URL: https://github.com/victor-navarro/calmr,
+        https://victornavarro.org/calmr/
+BugReports: https://github.com/victor-navarro/calmr/issues
+Depends: R (>= 3.5)
+Imports: data.table, future, future.apply, GA, ggnetwork, ggplot2,
+        grid, methods, network, patchwork, progressr, rlang, stats
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'HD2022.R' 'HDI2020.R' 'MAC1975.R' 'PKH1982.R' 'RAND.R'
+        'ANCCR.R' 'rsa_functions.R' 'RW1972.R' 'SM2007.R'
+        'compare_models.R' 'data.R' 'fit_helpers.R' 'fit_model.R'
+        'model_parsers.R' 'model_plots.R' 'model_graphs.R'
+        'model_support_functions.R' 'parse_design.R' 'run_experiment.R'
+        'phase_parser.R' 'information_functions.R' 'make_experiment.R'
+        'assertions.R' 'get_parameters.R' 'get_design.R'
+        'heidi_helpers.R' 'anccr_helpers.R' 'calmr_verbosity.R'
+        'parallel_helpers.R' 'class_model.R' 'class_design.R'
+        'class_result.R' 'class_experiment.R' 'class_rsa.R'
+        'class_fit.R'
+NeedsCompilation: no
+Packaged: 2024-03-12 23:00:59 UTC; Victor
+Author: Victor Navarro [aut, cre, cph]
+Maintainer: Victor Navarro <navarrov@cardiff.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-03-14 20:10:05 UTC

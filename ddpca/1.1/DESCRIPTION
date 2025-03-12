@@ -1,0 +1,19 @@
+Package: ddpca
+Type: Package
+Title: Diagonally Dominant Principal Component Analysis
+Version: 1.1
+Date: 2019-09-14
+Author: Tracy Ke [aut],
+  Lingzhou Xue [aut],
+  Fan Yang [aut, cre]
+Maintainer: Fan Yang <fyang1@uchicago.edu>
+Authors@R: c(person("Tracy", "Ke", email="zke@fas.harvard.edu", role=c("aut")),
+	 person("Lingzhou", "Xue", email="lzxue@psu.edu", role=c("aut")),
+	 person("Fan", "Yang", email="fyang1@uchicago.edu", role=c("aut", "cre")))
+Description: Efficient procedures for fitting the DD-PCA (Ke et al., 2019, <arXiv:1906.00051>)  by decomposing a large covariance matrix into a low-rank matrix plus a diagonally dominant matrix. The implementation of DD-PCA includes the convex approach using the Alternating Direction Method of Multipliers (ADMM) and the non-convex approach using the iterative projection algorithm. Applications of DD-PCA to large covariance matrix estimation and global multiple testing are also included in this package. 
+License: GPL-2
+Imports: RSpectra, Matrix, quantreg, MASS
+NeedsCompilation: no
+Packaged: 2019-09-14 15:08:01 UTC; fanyang
+Repository: CRAN
+Date/Publication: 2019-09-14 20:50:02 UTC

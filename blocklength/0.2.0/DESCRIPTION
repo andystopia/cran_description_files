@@ -1,0 +1,38 @@
+Package: blocklength
+Type: Package
+Title: Select an Optimal Block-Length to Bootstrap Dependent Data
+        (Block Bootstrap)
+Version: 0.2.0
+Authors@R: c(
+             person("Alec", "Stashevsky",
+                    email = "alec@alecstashevsky.com",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0003-2538-4947")),
+             person("Sergio", "Armella",
+                    role = "ctb")
+            )
+Maintainer: Alec Stashevsky <alec@alecstashevsky.com>
+Description: A set of functions to select the optimal block-length for a 
+    dependent bootstrap (block-bootstrap). Includes the Hall, Horowitz, and Jing
+    (1995) <doi:10.1093/biomet/82.3.561> subsampling-based cross-validation method, the 
+    Politis and White (2004) <doi:10.1081/ETC-120028836> Spectral Density 
+    Plug-in method, including the Patton, Politis, and White (2009)
+    <doi:10.1080/07474930802459016> correction, and the Lahiri, Furukawa, and Lee
+    (2007) <doi:10.1016/j.stamet.2006.08.002> nonparametric plug-in method, with 
+    a corresponding set of S3 plot methods.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat, covr, parallel, knitr, rmarkdown
+Imports: tseries, stats
+URL: https://alecstashevsky.com/r/blocklength,
+        https://github.com/Alec-Stashevsky/blocklength
+BugReports: https://github.com/Alec-Stashevsky/blocklength/issues
+VignetteBuilder: knitr
+Date: 2025-02-15
+NeedsCompilation: no
+Packaged: 2025-02-17 19:45:11 UTC; alec
+Author: Alec Stashevsky [aut, cre] (<https://orcid.org/0000-0003-2538-4947>),
+  Sergio Armella [ctb]
+Repository: CRAN
+Date/Publication: 2025-02-17 20:10:07 UTC

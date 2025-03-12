@@ -1,0 +1,27 @@
+Package: spconf
+Title: Computing Scales of Spatial Smoothing for Confounding Adjustment
+Version: 1.0.1
+Authors@R: c(person("Kayleigh", "Keller", email = "kayleigh.keller@colostate.edu", role = c("aut", "cre")),
+             person("Maddie", "Rainey", email = "maddie.rainey@colostate.edu", role = "aut"))
+Author: Kayleigh Keller [aut, cre],
+  Maddie Rainey [aut]
+Maintainer: Kayleigh Keller <kayleigh.keller@colostate.edu>
+Description: Computes the effective range of a smoothing matrix, 
+    which is a measure of the distance to which smoothing occurs. 
+    This is motivated by the application of spatial splines for adjusting 
+    for unmeasured spatial confounding in regression models, but the
+    calculation of effective range can be applied to smoothing 
+    matrices in other contexts. For algorithmic details, see Rainey and Keller
+    (2024) "spconfShiny: an R Shiny application..." <doi:10.1371/journal.pone.0311440>
+    and Keller and Szpiro (2020)
+    "Selecting a Scale for Spatial Confounding Adjustment" <doi:10.1111/rssa.12556>.
+Depends: R (>= 3.5)
+Imports: flexclust, mgcv
+Suggests: splines, testthat (>= 2.1.0)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-10-29 21:14:36 UTC; keller
+Repository: CRAN
+Date/Publication: 2024-11-03 12:20:02 UTC

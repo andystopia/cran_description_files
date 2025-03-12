@@ -1,0 +1,22 @@
+Package: cpop
+Type: Package
+Title: Detection of Multiple Changes in Slope in Univariate Time-Series
+Version: 1.0.7
+Date: 2024-05-28
+Maintainer: Daniel Grose <dan.grose@lancaster.ac.uk>
+Authors@R: c(person("Daniel", "Grose", role = c("aut", "cre"),email = "dan.grose@lancaster.ac.uk"),
+             person("Paul", "Fearnhead", role = "aut",email = "p.fearnhead@lancaster.ac.uk"))
+Description: Detects multiple changes in slope using the CPOP dynamic programming approach of Fearnhead, Maidstone, and Letchford (2019) <doi:10.1080/10618600.2018.1512868>. This method finds the best continuous piecewise linear fit to data under a criterion that measures fit to data using the residual sum of squares, but penalizes complexity based on an L0 penalty on changes in slope. Further information regarding the use of this package with detailed examples can be found in Fearnhead and Grose (2024) <doi:10.18637/jss.v109.i07>.  
+License: GPL (>= 2)
+Depends: R (>= 3.5.0),crops,pacman
+Imports: Rdpack,Rcpp (>= 0.12.13), ggplot2,mathjaxr,pracma,methods
+LinkingTo: Rcpp
+Suggests: testthat
+RoxygenNote: 7.3.1
+RdMacros: Rdpack,mathjaxr
+NeedsCompilation: yes
+Packaged: 2024-05-28 15:19:40 UTC; grosed
+Author: Daniel Grose [aut, cre],
+  Paul Fearnhead [aut]
+Repository: CRAN
+Date/Publication: 2024-05-28 22:30:07 UTC

@@ -1,0 +1,34 @@
+Type: Package
+Package: gompertztrunc
+Title: Conducting Maximum Likelihood Estimation with Truncated
+        Mortality Data
+Version: 0.1.2
+Authors@R: c(
+    person("Casey", "Breen", , "caseybreen@berkeley.edu", role = "aut",
+           comment = c(ORCID = "https://orcid.org/0000-0001-9114-981X")),
+    person("Maria", "Osborne", , "mariaosborne@berkeley.edu", role = c("aut", "cre")),
+    person("Joshua R.", "Goldstein", role = "aut")
+  )
+Maintainer: Maria Osborne <mariaosborne@berkeley.edu>
+Description: Estimates hazard ratios and mortality differentials for
+    doubly-truncated data without population denominators. This method is
+    described in Goldstein et al. (2023) <doi:10.1007/s11113-023-09785-z>.
+License: GPL (>= 3)
+URL: https://caseybreen.github.io/gompertztrunc/,
+        https://github.com/caseybreen/gompertztrunc
+BugReports: https://github.com/caseybreen/gompertztrunc/issues
+Depends: R (>= 3.5.0)
+Imports: broom, cowplot, data.table, dplyr, flexsurv, ggplot2, ggsci,
+        grid, magrittr, modelr, rlang, stats, stringr, tibble, tidyr
+Suggests: knitr, rmarkdown, socviz, tidyverse
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-02-28 18:27:07 UTC; mariaosborne
+Author: Casey Breen [aut] (<https://orcid.org/0000-0001-9114-981X>),
+  Maria Osborne [aut, cre],
+  Joshua R. Goldstein [aut]
+Repository: CRAN
+Date/Publication: 2024-02-29 00:00:02 UTC

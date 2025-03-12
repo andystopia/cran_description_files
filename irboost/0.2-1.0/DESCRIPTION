@@ -1,0 +1,23 @@
+Package: irboost
+Type: Package
+Title: Iteratively Reweighted Boosting for Robust Analysis
+Version: 0.2-1.0
+Date: 2025-02-04
+Authors@R: c(person("Zhu", "Wang", role = c("aut", "cre"),
+                    email = "zhuwang@gmail.com", 
+                    comment = c(ORCID = "0000-0002-0773-0052")))
+Author: Zhu Wang [aut, cre] (<https://orcid.org/0000-0002-0773-0052>)
+Maintainer: Zhu Wang <zhuwang@gmail.com>
+Description: Fit a predictive model using iteratively reweighted boosting (IRBoost) to minimize robust loss functions within the CC-family (concave-convex). This constitutes an application of iteratively reweighted convex optimization (IRCO), where convex optimization is performed using the functional descent boosting algorithm. IRBoost assigns weights to facilitate outlier identification. Applications include robust generalized linear models and robust accelerated failure time models. Wang (2025) <doi:10.6339/24-JDS1138>.
+Depends: R (>= 3.5.0)
+Imports: mpath (>= 0.4-2.21), xgboost
+Suggests: R.rsp, DiagrammeR, survival, Hmisc
+VignetteBuilder: R.rsp
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+Packaged: 2025-02-04 18:27:23 UTC; zhu
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2025-02-04 18:40:02 UTC

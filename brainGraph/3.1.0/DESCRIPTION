@@ -1,0 +1,47 @@
+Package: brainGraph
+Type: Package
+Version: 3.1.0
+Date: 2024-04-03
+Title: Graph Theory Analysis of Brain MRI Data
+Authors@R: person(given="Christopher G.", family="Watson",
+                  email="cgwatson@bu.edu", role=c("aut", "cre"),
+                  comment=c(ORCID="0000-0002-7082-7631"))
+Description: A set of tools for performing graph theory analysis of brain MRI
+    data. It works with data from a Freesurfer analysis (cortical thickness,
+    volumes, local gyrification index, surface area), diffusion tensor
+    tractography data (e.g., from FSL) and resting-state fMRI data (e.g., from
+    DPABI). It contains a graphical user interface for graph visualization and
+    data exploration, along with several functions for generating useful
+    figures.
+URL: https://github.com/cwatson/brainGraph
+BugReports: https://groups.google.com/forum/?hl=en#!forum/brainGraph-help
+LazyData: true
+Depends: R (>= 3.5.0), igraph (>= 1.2.4),
+Imports: abind, data.table (>= 1.12.4), doParallel, foreach, grid,
+        lattice, MASS, Matrix, methods, permute, parallel
+Suggests: Hmisc, ade4, boot, car, expm, ggplot2, ggrepel, gridExtra,
+        mediation, oro.nifti, scales
+License: GPL-3
+RoxygenNote: 6.1.1
+Collate: 'glm_stats.R' 'brainGraph_GLM.R' 'glm_methods.R' 'NBS.R'
+        'analysis_random_graphs.R' 'atlas.R' 'auc.R' 'boot_global.R'
+        'brainGraph_mediate.R' 'centr_lev.R' 'communicability.R'
+        'contract_brainGraph.R' 'corr_matrix.R' 'count_edges.R'
+        'create_graphs.R' 'create_mats.R' 'data.R' 'data_tables.R'
+        'distances.R' 'edge_asymmetry.R' 'get_resid.R' 'glm_design.R'
+        'glm_fit.R' 'glm_randomise.R' 'graph_efficiency.R' 'hubs.R'
+        'import.R' 'individ_contrib.R' 'list.R' 'method_helpers.R'
+        'mtpc.R' 'methods.R' 'permute_group.R' 'plot_brainGraph.R'
+        'plot_brainGraph_multi.R' 'plot_global.R' 'plot_group_means.R'
+        'plot_rich_norm.R' 'plot_vertex_measures.R' 'random_graphs.R'
+        'rich_club.R' 'robustness.R' 's_core.R'
+        'set_brainGraph_attributes.R' 'small_world.R' 'spatial_dist.R'
+        'utils.R' 'utils_matrix.R' 'vertex_roles.R' 'vulnerability.R'
+        'write_brainnet.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2024-04-04 03:25:22 UTC; cwatson
+Author: Christopher G. Watson [aut, cre]
+    (<https://orcid.org/0000-0002-7082-7631>)
+Maintainer: Christopher G. Watson <cgwatson@bu.edu>
+Repository: CRAN
+Date/Publication: 2024-04-04 05:03:07 UTC

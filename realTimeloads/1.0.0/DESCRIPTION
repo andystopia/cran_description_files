@@ -1,0 +1,26 @@
+Package: realTimeloads
+Title: Analyte Flux and Load from Estimates of Concentration and
+        Discharge
+Version: 1.0.0
+Authors@R: 
+    person(given = "Daniel",
+           family = "Livsey",
+           role = c("aut", "cre","cph"),
+           email = "livsey.daniel@gmail.com",
+           comment = c(ORCID = "0000-0002-2028-6128"))
+Description: Flux (mass per unit time) and Load (mass) are computed from timeseries estimates of analyte concentration and discharge. Concentration timeseries are computed from regression between surrogate and user-provided analyte. Uncertainty in calculations is estimated using bootstrap resampling. Code for the processing of acoustic backscatter from horizontally profiling acoustic Doppler current profilers is provided. All methods detailed in Livsey et al (2020) <doi:10.1007/s12237-020-00734-z>, Livsey et al (2023) <doi:10.1029/2022WR033982>, and references therein.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+Imports: data.table, graphics, imputeTS, mice, signal, stats,
+        TideHarmonics, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-17 00:03:34 UTC; livseyd
+Author: Daniel Livsey [aut, cre, cph] (<https://orcid.org/0000-0002-2028-6128>)
+Maintainer: Daniel Livsey <livsey.daniel@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-18 14:00:02 UTC

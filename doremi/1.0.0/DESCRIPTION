@@ -1,0 +1,30 @@
+Package: doremi
+Type: Package
+Title: Dynamics of Return to Equilibrium During Multiple Inputs
+Version: 1.0.0
+Authors@R: c(person("Mongin", "Denis", email = "Denis.Mongin@unige.ch", role = c("aut","cre"), comment = c(ORCID = "0000-0002-4801-8395")),
+    person("Uribe", "Adriana", email = "adriana.uribe@unige.ch", role = "aut"),
+    person("Courvoisier", "Delphine", email = "Delphine.Courvoisier@hcuge.ch", role = "aut", comment = c(ORCID = "0000-0002-1956-2607")))
+Description: Provides models to fit the dynamics of a regulated system experiencing exogenous inputs. 
+    The underlying models use differential equations and linear mixed-effects regressions to estimate the 
+    coefficients of the equation. With them, the functions can provide an estimated signal.
+    The package provides simulation and analysis functions and also print, summary, plot and predict methods,
+    adapted to the function outputs, for easy implementation and presentation of results.
+License: GPL-3
+URL: https://github.com/dcourvoisier/doremi
+BugReports: https://github.com/dcourvoisier/doremi/issues
+Encoding: UTF-8
+LazyData: true
+Imports: zoo, data.table, lme4, ggplot2, gridExtra, lmerTest, deSolve,
+        futile.logger
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, devtools, roxygen2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-01-19 13:29:01 UTC; denis
+Author: Mongin Denis [aut, cre] (<https://orcid.org/0000-0002-4801-8395>),
+  Uribe Adriana [aut],
+  Courvoisier Delphine [aut] (<https://orcid.org/0000-0002-1956-2607>)
+Maintainer: Mongin Denis <Denis.Mongin@unige.ch>
+Repository: CRAN
+Date/Publication: 2021-01-29 13:30:02 UTC

@@ -1,0 +1,30 @@
+Type: Package
+Package: deltatest
+Title: Statistical Hypothesis Testing Using the Delta Method
+Version: 0.1.0
+Authors@R: c(
+    person("Koji", "Makiyama", , "hoxo.smile@gmail.com", role = c("aut", "cre", "cph")),
+    person("Shinichi", "Takayanagi", , "shinichi.takayanagi@gmail.com", role = "med")
+  )
+Description: Statistical hypothesis testing using the Delta method as
+    proposed by Deng et al. (2018) <doi:10.1145/3219819.3219919>. This
+    method replaces the standard variance estimation formula in the Z-test
+    with an approximate formula derived via the Delta method, which can
+    account for within-user correlation.
+License: MIT + file LICENSE
+URL: https://github.com/hoxo-m/deltatest
+BugReports: https://github.com/hoxo-m/deltatest/issues
+Depends: R (>= 4.1.0)
+Imports: glue, R6, rlang, stats
+Suggests: dplyr, ggplot2, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-02-28 08:33:55 UTC; akagi
+Author: Koji Makiyama [aut, cre, cph],
+  Shinichi Takayanagi [med]
+Maintainer: Koji Makiyama <hoxo.smile@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-03 12:10:15 UTC

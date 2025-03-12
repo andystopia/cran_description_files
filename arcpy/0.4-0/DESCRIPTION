@@ -1,0 +1,32 @@
+Package: arcpy
+Title: Interface to 'ArcGIS' 'Python' Modules
+Version: 0.4-0
+Authors@R: 
+    person(given = "Michael",
+           family = "Koohafkan",
+           role = c("aut", "cre"),
+           email = "michael.koohafkan@gmail.com")
+Description: An interface to the 'ArcGIS' 'arcpy' and 'arcgis' 'python' API
+    <https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/arcgis-api-for-python.htm>.
+    Provides various tools for installing and configuring a 'Conda' environment
+    for accessing 'ArcGIS' geoprocessing functions. Helper functions for
+    manipulating and converting 'ArcGIS' objects from R are also provided.
+URL: https://github.com/mkoohafkan/arcpy,
+        https://hydroecology.net/arcpy/
+BugReports: https://github.com/mkoohafkan/arcpy/issues
+SystemRequirements: Conda (>= 4.6), ArcGIS Pro (>= 3.0)
+Depends: R (>= 4.2)
+Imports: stats, reticulate (>= 1.31)
+Suggests: tibble (>= 3.0), knitr (>= 1.21), rmarkdown (>= 1.11),
+        testthat (>= 2.1.0), rstudioapi (>= 0.7), sf, terra
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-01-20 04:09:45 UTC; michael
+Author: Michael Koohafkan [aut, cre]
+Maintainer: Michael Koohafkan <michael.koohafkan@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-22 17:32:51 UTC

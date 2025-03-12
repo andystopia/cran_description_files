@@ -1,0 +1,38 @@
+Package: DFBA
+Type: Package
+Title: Distribution-Free Bayesian Analysis
+Version: 0.1.0
+Authors@R: c(person(given = c("Daniel", "H."), family = "Barch", 
+            email = "daniel.barch@tufts.edu",     
+            role = c("aut", "cre")),
+            person(given = c("Richard", "A."), family = "Chechile", 
+            email = "richard.chechile@tufts.edu", 
+            role = "aut"))
+Maintainer: Daniel H. Barch <daniel.barch@tufts.edu>
+Description: A set of functions to perform distribution-free Bayesian analyses. 
+             Included are Bayesian analogues to the frequentist Mann-Whitney U 
+             test, the Wilcoxon Signed-Ranks test, Kendall's Tau Rank 
+             Correlation Coefficient, Goodman and Kruskal's Gamma, McNemar's
+             Test, the binomial test, the sign test, the median test, as well as 
+             distribution-free methods for testing contrasts among condition and 
+             for computing Bayes factors for hypotheses. The package also
+             includes procedures to estimate the power of distribution-free
+             Bayesian tests based on data simulations using various probability 
+             models for the data. The set of functions provide data analysts 
+             with a set of Bayesian procedures that avoids requiring parametric 
+             assumptions about measurement error and is robust to problem of 
+             extreme outlier scores.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: methods, graphics, stats
+Suggests: knitr, rmarkdown, bookdown, testthat (>= 3.0.0), vdiffr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-12-12 21:37:43 UTC; danielbarch
+Author: Daniel H. Barch [aut, cre],
+  Richard A. Chechile [aut]
+Repository: CRAN
+Date/Publication: 2023-12-13 12:10:04 UTC

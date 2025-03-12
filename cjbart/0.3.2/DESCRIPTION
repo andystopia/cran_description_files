@@ -1,0 +1,36 @@
+Package: cjbart
+Title: Heterogeneous Effects Analysis of Conjoint Experiments
+Version: 0.3.2
+Authors@R: c(
+    person(given = "Thomas",
+           family = "Robinson",
+           role = c("aut", "cre", "cph"),
+           email = "ts.robinson1994@gmail.com",
+           comment = c(ORCID = "0000-0001-7097-1599")),
+    person(given = "Raymond",
+           family = "Duch",
+           role = c("aut","cph"),
+           email = "raymond.duch@nuffield.ox.ac.uk",
+           comment = c(ORCID = "0000-0002-1166-7674"))
+    )
+Description: A tool for analyzing conjoint experiments using Bayesian Additive Regression Trees ('BART'), a machine learning method developed by Chipman, George and McCulloch (2010) <doi:10.1214/09-AOAS285>. This tool focuses specifically on estimating, identifying, and visualizing the heterogeneity within marginal component effects, at the observation- and individual-level. It uses a variable importance measure ('VIMP') with delete-d jackknife variance estimation, following Ishwaran and Lu (2019) <doi:10.1002/sim.7803>, to obtain bias-corrected estimates of which variables drive heterogeneity in the predicted individual-level effects.
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.6.0), BART
+Imports: stats, rlang, tidyr, ggplot2, randomForestSRC (>= 3.2.2),
+        Rdpack
+Suggests: testthat (>= 3.0.0), knitr, parallel, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/tsrobinson/cjbart
+BugReports: https://github.com/tsrobinson/cjbart/issues
+RdMacros: Rdpack
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-09-06 15:00:59 UTC; tsr
+Author: Thomas Robinson [aut, cre, cph]
+    (<https://orcid.org/0000-0001-7097-1599>),
+  Raymond Duch [aut, cph] (<https://orcid.org/0000-0002-1166-7674>)
+Maintainer: Thomas Robinson <ts.robinson1994@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-06 16:10:08 UTC

@@ -1,0 +1,27 @@
+Package: ggallin
+Type: Package
+Maintainer: Steven E. Pav <shabbychef@gmail.com>
+Authors@R: c(person(c("Steven", "E."), "Pav", role=c("aut","cre"), 
+    email="shabbychef@gmail.com"))
+Version: 0.1.1
+Date: 2017-10-01
+License: LGPL-3
+Title: Grab Bag of 'ggplot2' Functions
+BugReports: https://github.com/shabbychef/ggallin/issues
+Description: Extra geoms and scales for 'ggplot2', including geom_cloud(),
+  a Normal density cloud replacement for errorbars;
+  transforms ssqrt_trans and pseudolog10_trans, which are loglike but 
+  appropriate for negative data; interp_trans() and warp_trans() which
+  provide scale transforms based on interpolation;
+  and an infix compose operator for scale transforms.
+Depends: ggplot2 (>= 2.2.1)
+Suggests: knitr, testthat
+Imports: scales, grid
+RoxygenNote: 6.0.1
+URL: https://github.com/shabbychef/ggallin
+Collate: 'geom_cloud.R' 'ggallin.R' 'transforms.R'
+NeedsCompilation: no
+Packaged: 2017-10-02 03:25:49 UTC; spav
+Author: Steven E. Pav [aut, cre]
+Repository: CRAN
+Date/Publication: 2017-10-02 23:24:58 UTC

@@ -1,0 +1,34 @@
+Package: mpower
+Type: Package
+Title: Power Analysis via Monte Carlo Simulation for Correlated Data
+Version: 0.1.0
+Authors@R: 
+    person(given = "Phuc H.",
+           family = "Nguyen",
+           role = c("aut", "cre"),
+           email = "phuc.nguyen.rcran@gmail.com",
+           comment = c(ORCID = "0000-0002-6206-0194"))
+Description: A flexible framework for power analysis using Monte
+    Carlo simulation for settings in which considerations of the correlations
+    between predictors are important. Users can set up a data generative model
+    that preserves dependence structures among predictors given existing data
+    (continuous, binary, or ordinal). Users can also generate power curves to
+    assess the trade-offs between sample size, effect size, and power of a design.
+    This package includes several statistical models common in environmental
+    mixtures studies. For more details and tutorials, see Nguyen et al. (2022) <arXiv:2209.08036>.
+License: LGPL
+Encoding: UTF-8
+LazyData: true
+Imports: abind, boot, dplyr, doSNOW, foreach, ggplot2, MASS, magrittr,
+        parallel, purrr, snow, sbgcop, rlang, reshape2, tibble, tidyr,
+        tidyselect
+RoxygenNote: 7.2.1
+Depends: R (>= 3.5.0)
+Suggests: BMA, bkmr, bws, infinitefactor, knitr, NHANES, qgcomp,
+        rmarkdown, rstan, testthat, openxlsx
+NeedsCompilation: no
+Packaged: 2022-09-20 18:32:25 UTC; phuc
+Author: Phuc H. Nguyen [aut, cre] (<https://orcid.org/0000-0002-6206-0194>)
+Maintainer: Phuc H. Nguyen <phuc.nguyen.rcran@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-09-21 08:50:05 UTC

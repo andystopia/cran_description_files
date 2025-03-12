@@ -1,0 +1,24 @@
+Package: image.LineSegmentDetector
+Type: Package
+Title: Detect Line Segments in Images
+Description: An implementation of the Line Segment Detector on digital images described in the paper: "LSD: A Fast Line Segment Detector with a False Detection Control" by Rafael Grompone von Gioi et al (2012). 
+    The algorithm is explained at <doi:10.5201/ipol.2012.gjmr-lsd>.
+Maintainer: Jan Wijffels <jwijffels@bnosac.be>
+Authors@R: c(
+    person("Jan", "Wijffels", role = c("aut", "cre", "cph"), email = "jwijffels@bnosac.be", comment = "R wrapper"), 
+    person("BNOSAC", role = "cph", comment = "R wrapper"), 
+    person("Rafael Grompone von Gioi", role = c("ctb", "cph"), email = "grompone@gmail.com", comment = "src/lsd"))
+License: AGPL-3
+Version: 0.1.0
+URL: https://github.com/bnosac/image
+Imports: Rcpp (>= 0.12.8), sp
+LinkingTo: Rcpp
+Suggests: pixmap, magick
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2020-07-20 15:42:54 UTC; Jan
+Author: Jan Wijffels [aut, cre, cph] (R wrapper),
+  BNOSAC [cph] (R wrapper),
+  Rafael Grompone von Gioi [ctb, cph] (src/lsd)
+Repository: CRAN
+Date/Publication: 2020-07-27 12:30:13 UTC

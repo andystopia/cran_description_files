@@ -1,0 +1,33 @@
+Package: wCorr
+Type: Package
+Title: Weighted Correlations
+Version: 1.9.8
+Date: 2023-08-19
+Authors@R: c(person("Emmanuel", "Sikali", role="pdr", email = "Emmanuel.Sikali@ed.gov"),
+             person("Paul", "Bailey", role=c("aut", "cre"), email="pbailey@air.org"),
+             person("Ahmad", "Emad", role="aut"),
+             person("Eric", "Buehler", role="ctb"))
+Maintainer: Paul Bailey <pbailey@air.org>
+Description: Calculates Pearson, Spearman, polychoric, and polyserial correlation coefficients, in weighted or unweighted form. The package implements tetrachoric correlation as a special case of the polychoric and biserial correlation as a specific case of the polyserial.
+License: GPL-2
+BugReports: https://github.com/American-Institutes-for-Research/wCorr/issues
+URL: https://american-institutes-for-research.github.io/wCorr/
+Note: This publication was prepared for NCES under Contract No.
+        ED-IES-12-D-0002 with the American Institutes for Research.
+        Mention of trade names, commercial products, or organizations
+        does not imply endorsement by the U.S. Government.
+Imports: minqa, mnormt, Rcpp, stats
+Depends: R (>= 3.0.0)
+Suggests: knitr, rmarkdown, lattice, doBy
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+NeedsCompilation: yes
+Author: Emmanuel Sikali [pdr],
+  Paul Bailey [aut, cre],
+  Ahmad Emad [aut],
+  Eric Buehler [ctb]
+RoxygenNote: 7.2.3
+Packaged: 2023-08-19 16:04:20 UTC; pbailey
+Repository: CRAN
+Date/Publication: 2023-08-19 18:30:02 UTC

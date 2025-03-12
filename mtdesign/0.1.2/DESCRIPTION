@@ -1,0 +1,35 @@
+Package: mtdesign
+Type: Package
+Title: Mander and Thompson Designs
+Version: 0.1.2
+Date: 2024-11-01
+Authors@R: person(
+             given = "John",
+             family = "Kirkpatrick",
+             email = "mtdesign@puzzledface.net",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-7790-3708")
+           )
+Description: Implements Mander & Thompson's (2010) 
+    <doi:10.1016/j.cct.2010.07.008> methods for two-stage designs
+    optimal under the alternative hypothesis for phase II [cancer] trials.  Also
+    provides an implementation of Simon's (1989) 
+    <doi:10.1016/0197-2456(89)90015-9> original methodology and 
+    allows exploration of the operating characteristics of sub-optimal designs.
+Language: en-GB
+License: GPL (>= 3)
+Encoding: UTF-8
+URL: https://github.com/openpharma/mtdesign
+BugReports: https://github.com/openpharma/mtdesign/issues
+RoxygenNote: 7.3.2
+Imports: dplyr, futile.logger, ggplot2, magrittr, methods, Rcpp, rlang,
+        tibble, tidyr
+LinkingTo: Rcpp, BH
+Suggests: parallel, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-11-05 12:07:07 UTC; kirkpatj
+Author: John Kirkpatrick [aut, cre] (<https://orcid.org/0000-0001-7790-3708>)
+Maintainer: John Kirkpatrick <mtdesign@puzzledface.net>
+Repository: CRAN
+Date/Publication: 2024-11-05 14:10:15 UTC

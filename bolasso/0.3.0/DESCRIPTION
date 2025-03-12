@@ -1,0 +1,31 @@
+Package: bolasso
+Title: Model Consistent Lasso Estimation Through the Bootstrap
+Version: 0.3.0
+Authors@R: 
+    person(given = "Daniel",
+           family = "Molitor",
+           role = c("aut", "cre"),
+           email = "molitdj97@gmail.com")
+Description: Implements the bolasso algorithm for consistent variable selection 
+    and estimation accuracy. Includes support for many parallel backends via the 
+    future package. For details see: Bach (2008),
+    'Bolasso: model consistent Lasso estimation through the bootstrap', 
+    <doi:10.48550/arXiv.0804.1302>.
+Depends: Matrix (>= 1.0-6), R (>= 3.6.0)
+Imports: future.apply (>= 1.1.0), gamlr (>= 1.0), generics, ggplot2,
+        glmnet (>= 3.0), progressr, stats, tibble
+Suggests: testthat (>= 3.0.0), mlbench, covr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://www.dmolitor.com/bolasso/,
+        https://github.com/dmolitor/bolasso
+Config/testthat/edition: 3
+BugReports: https://github.com/dmolitor/bolasso/issues
+NeedsCompilation: no
+Packaged: 2024-12-08 19:49:40 UTC; dmolitor
+Author: Daniel Molitor [aut, cre]
+Maintainer: Daniel Molitor <molitdj97@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-08 22:20:12 UTC

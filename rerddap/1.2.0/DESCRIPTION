@@ -1,0 +1,44 @@
+Package: rerddap
+Title: General Purpose Client for 'ERDDAP™' Servers
+Description: General purpose R client for 'ERDDAP™' servers. Includes
+    functions to search for 'datasets', get summary information on
+    'datasets', and fetch 'datasets', in either 'csv' or 'netCDF' format.
+    'ERDDAP™' information: 
+    <https://upwell.pfeg.noaa.gov/erddap/information.html>.
+Version: 1.2.0
+Date: 2024-12-13
+License: MIT + file LICENSE
+Authors@R: c(
+    person("Scott", "Chamberlain", role = "aut"),
+    person("Ben", "Tupper", role = "ctb"),
+    person("Salvador Jesús Fernández", "Bejarano", role = "ctb"),
+    person("Roy", "Mendelssohn", role = c("cre", "ctb"),
+    email = "roy.mendelssohn@noaa.gov")
+    )
+URL: https://docs.ropensci.org/rerddap/,
+        https://github.com/ropensci/rerddap
+BugReports: https://github.com/ropensci/rerddap/issues
+LazyData: true
+Depends: R (>= 4.00)
+Encoding: UTF-8
+Language: en-US
+Imports: crul (>= 0.7.4), dplyr (>= 0.5.0), data.table (>= 1.12.0),
+        digest, hoardr (>= 0.5.2), jsonlite (>= 1.6), lubridate,
+        methods, nanoparquet, ncdf4 (>= 1.16), tibble, utils, xml2 (>=
+        1.2.0)
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+X-schema.org-applicationCategory: Climate
+X-schema.org-keywords: earth, science, climate, precipitation,
+        temperature, storm, buoy, NOAA
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2024-12-11 15:16:49 UTC; rmendels
+Author: Scott Chamberlain [aut],
+  Ben Tupper [ctb],
+  Salvador Jesús Fernández Bejarano [ctb],
+  Roy Mendelssohn [cre, ctb]
+Maintainer: Roy Mendelssohn <roy.mendelssohn@noaa.gov>
+Repository: CRAN
+Date/Publication: 2024-12-11 17:50:02 UTC

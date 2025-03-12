@@ -1,0 +1,67 @@
+Package: EMC2
+Title: Bayesian Hierarchical Analysis of Cognitive Models of Choice
+Version: 3.0.0
+Authors@R: 
+    c(person("Niek", "Stevenson", email = "niek.stevenson@gmail.com", 
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3206-7544")),
+      person("Michelle", "Donzallaz", role = c("aut")),
+      person("Andrew", "Heathcote", role = c("aut")),
+      person("Steven", "Miletić", role = c("ctb")),
+      person("Raphael", "Hartmann", role = c("ctb")),
+      person("Karl C.", "Klauer", role=c("ctb")),
+      person("Steven G.", "Johnson", role=c("ctb")),
+      person("Jean M.", "Linhart", role=c("ctb")),
+      person("Brian", "Gough", role=c("ctb")),
+      person("Gerard", "Jungman", role=c("ctb")),
+      person("Rudolf", "Schuerer", role=c("ctb")),
+      person("Przemyslaw", "Sliwa", role=c("ctb")),
+      person("Jason H.", "Stover", role=c("ctb")))
+Description: Fit Bayesian (hierarchical) cognitive models
+    using a linear modeling language interface using particle Metropolis Markov
+    chain Monte Carlo sampling with Gibbs steps. The diffusion decision model (DDM), 
+    linear ballistic accumulator model (LBA), racing diffusion model (RDM), and the lognormal
+    race model (LNR) are supported. Additionally, users can specify their own likelihood
+    function and/or choose for non-hierarchical
+    estimation, as well as for a diagonal, blocked or full multivariate normal
+    group-level distribution to test individual differences. Prior specification 
+    is facilitated through methods that visualize the (implied) prior. 
+    A wide range of plotting functions assist in assessing model convergence and
+    posterior inference. Models can be easily evaluated using functions
+    that plot posterior predictions or using relative model comparison metrics 
+    such as information criteria or Bayes factors.    
+    References: Stevenson et al. (2024) <doi:10.31234/osf.io/2e4dq>.
+License: GPL (>= 3)
+URL: https://ampl-psych.github.io/EMC2/,
+        https://github.com/ampl-psych/EMC2
+BugReports: https://github.com/ampl-psych/EMC2/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Suggests: testthat (>= 3.0.0), vdiffr, knitr, rmarkdown
+Config/testthat/edition: 3
+Imports: abind, coda, corpcor, graphics, grDevices, magic, MASS,
+        matrixcalc, methods, msm, mvtnorm, parallel, stats, Matrix,
+        Rcpp, Brobdingnag, corrplot, colorspace, psych, utils, lpSolve,
+        WienR
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.5.0)
+LazyData: true
+Config/testthat/parallel: true
+NeedsCompilation: yes
+Packaged: 2025-03-07 00:40:37 UTC; niek
+Author: Niek Stevenson [aut, cre] (<https://orcid.org/0000-0003-3206-7544>),
+  Michelle Donzallaz [aut],
+  Andrew Heathcote [aut],
+  Steven Miletić [ctb],
+  Raphael Hartmann [ctb],
+  Karl C. Klauer [ctb],
+  Steven G. Johnson [ctb],
+  Jean M. Linhart [ctb],
+  Brian Gough [ctb],
+  Gerard Jungman [ctb],
+  Rudolf Schuerer [ctb],
+  Przemyslaw Sliwa [ctb],
+  Jason H. Stover [ctb]
+Maintainer: Niek Stevenson <niek.stevenson@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-07 01:10:02 UTC

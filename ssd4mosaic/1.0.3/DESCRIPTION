@@ -1,0 +1,47 @@
+Package: ssd4mosaic
+Title: Web Application for the SSD Module of the MOSAIC Platform
+Version: 1.0.3
+Authors@R: c(
+    person("Aurélie", "Siberchicot", , "aurelie.siberchicot@univ-lyon1.fr", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-7638-8318")),
+    person("Milena", "Kaag", , "milena.kaag.pro@gmail.com", role = "aut"),
+    person("Sandrine", "Charles", , "sandrine.charles@univ-lyon1.fr", role = "aut",
+           comment = c(ORCID = "0000-0003-4604-0166")),
+    person("UMR5558 LBBE MEPS", role = c("cph", "fnd")),
+    person("rhandsontable contributors", role = c("ctb", "cph"),
+           comment = "For my_rhandsontable function")
+  )
+Description: Web application using 'shiny' for the SSD (Species
+    Sensitivity Distribution) module of the MOSAIC (MOdeling and
+    StAtistical tools for ecotoxICology) platform. It estimates the
+    Hazardous Concentration for x% of the species (HCx) from toxicity
+    values that can be censored and provides various plotting options for
+    a better understanding of the results. See our companion paper
+    Kon Kam King et al. (2014) <doi:10.48550/arXiv.1311.5772>.
+License: MIT + file LICENSE
+URL: https://gitlab.in2p3.fr/mosaic-software/mosaic-ssd,
+        https://mosaic.univ-lyon1.fr/
+BugReports: https://gitlab.in2p3.fr/mosaic-software/mosaic-ssd/-/issues
+Depends: R (>= 4.1.0)
+Imports: actuar, config (>= 0.3.1), fitdistrplus (>= 1.1-11), ggplot2,
+        golem (>= 0.3.5), htmltools, htmlwidgets, jsonlite,
+        rhandsontable, rlang, rmarkdown, shiny (>= 1.7.4), shinybusy,
+        shinyjs, stats, utils
+Suggests: knitr, remotes, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-03-11 08:42:18 UTC; siberchicot
+Author: Aurélie Siberchicot [cre, aut]
+    (<https://orcid.org/0000-0002-7638-8318>),
+  Milena Kaag [aut],
+  Sandrine Charles [aut] (<https://orcid.org/0000-0003-4604-0166>),
+  UMR5558 LBBE MEPS [cph, fnd],
+  rhandsontable contributors [ctb, cph] (For my_rhandsontable function)
+Maintainer: Aurélie Siberchicot <aurelie.siberchicot@univ-lyon1.fr>
+Repository: CRAN
+Date/Publication: 2025-03-11 14:40:02 UTC

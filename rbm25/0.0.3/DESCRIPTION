@@ -1,0 +1,32 @@
+Package: rbm25
+Title: A Light Wrapper Around the 'BM25' 'Rust' Crate for Okapi BM25
+        Text Search
+Version: 0.0.3
+Authors@R: c(
+    person("David", "Zimmermann-Kollenda", , "david_j_zimmermann@hotmail.com", role = c("aut", "cre")),
+    person("Michael Barlow", role = "aut", comment = "bm25 Rust library"),
+    person("Authors of the dependency Rust crates", role = "aut", comment = "see AUTHORS file")
+  )
+Description: 
+    BM25 is a ranking function used by search engines to rank matching documents according to their relevance to a user's search query.
+    This package provides a light wrapper around the 'BM25' 'rust' crate for Okapi BM25 text search.
+    For more information, see Robertson et al. (1994) <https://trec.nist.gov/pubs/trec3/t3_proceedings.html>.
+Encoding: UTF-8
+URL: https://davzim.github.io/rbm25/, https://github.com/DavZim/rbm25/
+BugReports: https://github.com/DavZim/rbm25/issues
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.71.1
+Imports: R6
+Suggests: testthat (>= 3.0.0)
+License: MIT + file LICENSE
+RoxygenNote: 7.3.2
+Config/rextendr/version: 0.3.1.9001
+Config/testthat/edition: 3
+Config/rbm25/MSRV: 1.71.1
+NeedsCompilation: yes
+Packaged: 2025-01-15 11:55:21 UTC; dazimme
+Author: David Zimmermann-Kollenda [aut, cre],
+  Michael Barlow [aut] (bm25 Rust library),
+  Authors of the dependency Rust crates [aut] (see AUTHORS file)
+Maintainer: David Zimmermann-Kollenda <david_j_zimmermann@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-16 10:40:02 UTC

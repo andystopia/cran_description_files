@@ -1,0 +1,28 @@
+Package: predtoolsTS
+Type: Package
+Title: Time Series Prediction Tools
+Version: 0.1.1
+Date: 2018-04-26
+Authors@R: c(person("Alberto", "Vico Moreno", role=c("aut","cre"),email="avm00016@red.ujaen.es"),
+  person("Antonio Jesus","Rivera Rivas",role=c("aut","ths"),email="arivera@ujaen.es"),
+  person("Maria Dolores","Perez Godoy",role=c("aut","ths"),email="lperez@ujaen.es"))
+Author: Alberto Vico Moreno [aut, cre],
+  Antonio Jesus Rivera Rivas [aut, ths],
+  Maria Dolores Perez Godoy [aut, ths]
+Maintainer: Alberto Vico Moreno <avm00016@red.ujaen.es>
+Description: Makes the time series prediction easier by automatizing this process
+  using four main functions: prep(), modl(), pred() and postp(). Features different
+  preprocessing methods to homogenize variance and to remove trend and seasonality.
+  Also has the potential to bring together different predictive models to make comparatives.
+  Features ARIMA and Data Mining Regression models (using caret).
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/avm00016/predtoolsTS
+RoxygenNote: 6.0.1
+Imports: caret, forecast, graphics, methods, Metrics, stats, TSPred,
+        tseries, utils
+NeedsCompilation: no
+Packaged: 2018-04-29 13:45:20 UTC; Alberto Vico Moreno
+Repository: CRAN
+Date/Publication: 2018-04-29 13:54:50 UTC

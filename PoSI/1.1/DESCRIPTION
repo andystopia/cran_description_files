@@ -1,0 +1,25 @@
+Package: PoSI
+Type: Package
+Title: Valid Post-Selection Inference for Linear LS Regression
+Version: 1.1
+Date: 2020-11-04
+Authors@R: c(person("Andreas", "Buja", role = "aut"),
+              person("Kai", "Zhang", role = "aut"),
+              person("Wan", "Zhang", role = "cre",
+                     email = "wanz63@live.unc.edu"))
+Description: 
+  In linear LS regression, calculate for a given design matrix
+  the multiplier K of coefficient standard errors such that the
+  confidence intervals [b - K*SE(b), b + K*SE(b)] have a
+  guaranteed coverage probability for all coefficient estimates
+  b in any submodels after performing arbitrary model selection.
+Suggests: MASS
+License: GPL-3
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2020-11-12 16:31:59 UTC; zhangwan
+Author: Andreas Buja [aut],
+  Kai Zhang [aut],
+  Wan Zhang [cre]
+Maintainer: Wan Zhang <wanz63@live.unc.edu>
+Date/Publication: 2020-11-18 10:30:07 UTC

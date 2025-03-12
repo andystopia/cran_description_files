@@ -1,0 +1,29 @@
+Package: ubair
+Title: Effects of External Conditions on Air Quality
+Version: 1.1.0
+Authors@R: c(
+    person("Raphael", "Franke", , "raphael.franke@uba.de", role = c("aut")),
+    person("Imke", "Voss", , "imke.voss@uba.de", role = c("aut", "cre")))
+Description: Analyzes the impact of external conditions on air quality using counterfactual approaches, featuring methods for data preparation, modeling, and visualization.
+License: GPL (>= 3)
+URL: https://gitlab.opencode.de/uba-ki-lab/ubair
+Depends: R (>= 4.4.0),
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), deepnet, fastshap, treeshap, shapviz,
+        knitr, rmarkdown
+Config/testthat/edition: 3
+Imports: rlang, data.table, dplyr, ggplot2, forecast, lubridate, tidyr,
+        yaml, ranger, lightgbm
+LazyData: true
+LazyDataCompression: xz
+VignetteBuilder: knitr
+Note: Note: The included dataset is licensed under "DL-DE-BY-2.0." See
+        the dataset documentation for details.
+NeedsCompilation: no
+Packaged: 2025-01-23 08:48:02 UTC; vossi
+Author: Raphael Franke [aut],
+  Imke Voss [aut, cre]
+Maintainer: Imke Voss <imke.voss@uba.de>
+Repository: CRAN
+Date/Publication: 2025-01-27 18:30:01 UTC

@@ -1,0 +1,43 @@
+Package: gbifdb
+Version: 1.0.0
+Title: High Performance Interface to 'GBIF'
+Description: A high performance interface to the Global Biodiversity
+  Information Facility, 'GBIF'.  In contrast to 'rgbif', which can
+  access small subsets of 'GBIF' data through web-based queries to
+  a central server, 'gbifdb' provides enhanced performance for R users
+  performing large-scale analyses on servers and cloud computing
+  providers, providing full support for arbitrary 'SQL' or 'dplyr'
+  operations on the complete 'GBIF' data tables (now over 1 billion
+  records, and over a terabyte in size). 'gbifdb' accesses a copy
+  of the 'GBIF' data in 'parquet' format, which is already readily
+  available in commercial computing clouds such as the Amazon Open
+  Data portal and the Microsoft Planetary Computer, or can be 
+  accessed directly without downloading, or downloaded
+  to any server with suitable bandwidth and storage space.
+  The high-performance techniques for local and remote access 
+  are described in <https://duckdb.org/why_duckdb>
+  and <https://arrow.apache.org/docs/r/articles/fs.html> respectively.
+Authors@R: c(
+            person("Carl", "Boettiger", , "cboettig@gmail.com", c("aut", "cre"),
+                   comment = c(ORCID = "0000-0002-1642-628X"))
+            )
+License: Apache License (>= 2)
+Encoding: UTF-8
+ByteCompile: true
+Depends: R (>= 4.0)
+Imports: arrow (>= 8.0.0), dplyr, duckdbfs
+Suggests: spelling, dbplyr, testthat (>= 3.0.0), covr, knitr,
+        rmarkdown, minioclient
+URL: https://docs.ropensci.org/gbifdb/,
+        https://github.com/ropensci/gbifdb
+BugReports: https://github.com/ropensci/gbifdb
+Language: en-US
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-19 19:47:13 UTC; cboettig
+Author: Carl Boettiger [aut, cre] (<https://orcid.org/0000-0002-1642-628X>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-19 20:30:03 UTC

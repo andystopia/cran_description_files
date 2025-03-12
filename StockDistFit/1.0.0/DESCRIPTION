@@ -1,0 +1,25 @@
+Package: StockDistFit
+Title: Fit Stock Price Distributions
+Version: 1.0.0
+Authors@R: c(
+    person("Brian", "Njuguna", , "briannjuguna133@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-2119-904X")),
+    person("Stanely", family = "Sayianka", , "stanleysayankasss@gmail.com", role = "ctb")
+    )
+Description: The 'StockDistFit' package provides functions for fitting probability distributions to stock price data. The package uses maximum likelihood estimation to find the best-fitting distribution for a given stock. It also offers a function to fit several distributions to one or more assets and compare the distribution with the Akaike Information Criterion (AIC) and then pick the best distribution. References are as follows: Siew et al. (2008) <https://www.jstage.jst.go.jp/article/jappstat/37/1/37_1_1/_pdf/-char/ja> and Benth et al. (2008) <https://books.google.co.ke/books?hl=en&lr=&id=MHNpDQAAQBAJ&oi=fnd&pg=PR7&dq=Stochastic+modeling+of+commodity+prices+using+the+Variance+Gamma+(VG)+model.+&ots=YNIL2QmEYg&sig=XZtGU0lp4oqXHVyPZ-O8x5i7N3w&redir_esc=y#v=onepage&q&f=false>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr, fGarch, fBasics, fitdistrplus, xts, stats, magrittr,
+        zoo, quantmod, utils, ghyp
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-05-08 17:10:24 UTC; Wagathu
+Author: Brian Njuguna [aut, cre] (<https://orcid.org/0009-0002-2119-904X>),
+  Stanely Sayianka [ctb]
+Maintainer: Brian Njuguna <briannjuguna133@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-09 09:00:08 UTC

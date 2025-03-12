@@ -1,0 +1,31 @@
+Package: YEAB
+Title: Analyze Data from Analysis of Behavior Experiments
+Version: 1.0.6
+Authors@R: c(
+    person("Emmanuel", "Alcala", , "jealcalat@gmail.com", role = c("aut", "cre")),
+    person("Rodrigo", "Sosa", , "rsosas@up.edu.mx", role = "aut"),
+	person("Victor", "Reyes", , "zickvic@hotmail.com", role = "aut")
+  )
+Description: Analyze data from behavioral experiments conducted using 'MED-PC' software developed by Med Associates Inc. 
+	Includes functions to fit exponential and hyperbolic models for delay discounting tasks, exponential mixtures for 
+	inter-response times, and Gaussian plus ramp models for peak procedure data, among others. For more details, refer to Alcala et al. (2023) <doi:10.31234/osf.io/8aq2j>.
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cluster, doParallel, data.table, dplyr, FNN, foreach, ggplot2,
+        boot, grid, gridExtra, infotheo, ks, magrittr, minpack.lm,
+        Polychrome, scales, sfsmisc, MASS, KernSmooth, zoo, usethis,
+        stats, utils
+Depends: R (>= 3.5.0)
+License: GPL (>= 3)
+Author: Emmanuel Alcala [aut, cre],
+  Rodrigo Sosa [aut],
+  Victor Reyes [aut]
+Maintainer: Emmanuel Alcala <jealcalat@gmail.com>
+Date: 2025-01-23
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-01-29 19:10:08 UTC; jealcalat
+Repository: CRAN
+Date/Publication: 2025-01-31 11:00:14 UTC

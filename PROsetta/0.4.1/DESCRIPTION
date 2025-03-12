@@ -1,0 +1,55 @@
+Package: PROsetta
+Type: Package
+Title: Linking Patient-Reported Outcomes Measures
+Version: 0.4.1
+Date: 2023-2-3
+Authors@R: c(
+    person("Seung W.", "Choi",
+        email = "schoi@austin.utexas.edu",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-4777-5420")),
+    person("Sangdon", "Lim",
+        email = "sangdonlim@utexas.edu",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-2988-014X")),
+    person("Benjamin D.", "Schalet",
+        email = "b-schalet@northwewstern.edu",
+        role = c("ctb")),
+    person("Aaron J.", "Kaat",
+        email = "aaron.kaat@northwestern.edu",
+        role = c("ctb")),
+    person("David", "Cella",
+        email = "d-cella@northwestern.edu",
+        role = c("ctb")))
+Description: Perform scale linking to establish relationships between instruments
+    that measure similar constructs according to the PROsetta Stone methodology, as in Choi, Schalet, Cook, & Cella (2014) <doi:10.1037/a0035768>.
+URL: https://www.prosettastone.org/ (project description),
+        https://choi-phd.github.io/PROsetta/ (documentation)
+BugReports: https://github.com/choi-phd/PROsetta/issues
+Imports: Rcpp (>= 1.0.0), equate, lavaan, mirt, plink, psych, methods,
+        mvnfast, TestDesign (>= 1.5.1)
+SystemRequirements: C++17
+Depends: R (>= 3.5.0)
+Suggests: shiny, shinythemes, shinyWidgets, shinyjs, DT, knitr,
+        kableExtra, testthat (>= 2.1.0), rmarkdown, dplyr, pkgdown
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Collate: 'RcppExports.R' 'import.R' 'loading_functions.R'
+        'post_functions.R' 'core_functions.R' 'datasets.R' 'example.R'
+        'helper_functions.R' 'linking_functions.R' 'plot_functions.R'
+        'preanalysis_functions.r' 'runshiny.R'
+NeedsCompilation: yes
+Packaged: 2023-02-03 17:54:38 UTC; chois1
+Author: Seung W. Choi [aut, cre] (<https://orcid.org/0000-0003-4777-5420>),
+  Sangdon Lim [aut] (<https://orcid.org/0000-0002-2988-014X>),
+  Benjamin D. Schalet [ctb],
+  Aaron J. Kaat [ctb],
+  David Cella [ctb]
+Maintainer: Seung W. Choi <schoi@austin.utexas.edu>
+Repository: CRAN
+Date/Publication: 2023-02-03 18:32:30 UTC

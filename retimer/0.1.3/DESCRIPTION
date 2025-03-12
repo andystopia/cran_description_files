@@ -1,0 +1,21 @@
+Package: retimer
+Title: Retime and Analyse Speech Signals
+Version: 0.1.3
+Authors@R: person("Alistair", "Beith", email = "alistair.beith@gmail.com", role = c("aut", "cre", "cph"))
+Description: Retime speech signals with a native Waveform Similarity Overlap-Add (WSOLA) implementation translated from the 'TSM toolbox' by Driedger & Müller (2014) <https://www.audiolabs-erlangen.de/content/resources/MIR/TSMtoolbox/2014_DriedgerMueller_TSM-Toolbox_DAFX.pdf>. Design retimings and pitch (f0) transformations with tidy data and apply them via 'Praat' interface. Produce spectrograms, spectra, and amplitude envelopes. Includes implementation of vocalic speech envelope analysis (fft_spectrum) technique and example data (mm1) from Tilsen, S., & Johnson, K. (2008) <doi:10.1121/1.2947626>.
+Depends: R (>= 4.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: rPraat, purrr, dplyr, tibble, tidyr, tuneR, ggplot2, stringr,
+        signal, gsignal, methods, seewave, phonTools
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-21 11:55:20 UTC; alistairbeith
+Author: Alistair Beith [aut, cre, cph]
+Maintainer: Alistair Beith <alistair.beith@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-22 17:20:02 UTC

@@ -1,0 +1,26 @@
+Type: Package
+Package: geomod
+Title: A Computer Program for Geotechnical Investigations
+Version: 0.1.0
+Authors@R: c(person("Festus", "Ngeno", email = "festus.k.ngeno@gmail.com", role = c("aut","cre")))
+Description: The 'geomod' does spatial prediction of the Geotechnical soil properties. 
+    It predicts the spatial distribution of Geotechnical properties of soil e.g. shear strength, 
+    permeability, plasticity index, Standard Penetration Test (SPT) counts, etc. The output of the prediction takes the form of a 
+    map or a series of maps. It uses the interpolation technique where a single or statistically “best” 
+    estimate of spatial occurrence soil property is determined. The interpolation is based on both the 
+    sampled data and a variogram model for the spatial correlation of the sampled data. 
+    The single estimate is produced by a Kriging technique.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: raster, sp, caret, rasterVis, stats, randomForest, arm,
+        kernlab, e1071, Cubist, rpart, ranger, qrnn, quantregForest,
+        nnet
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2023-05-05 07:46:47 UTC; user
+Author: Festus Ngeno [aut, cre]
+Maintainer: Festus Ngeno <festus.k.ngeno@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-05 20:50:02 UTC

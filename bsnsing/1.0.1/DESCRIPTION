@@ -1,0 +1,18 @@
+Package: bsnsing
+Type: Package
+Title: Build Decision Trees with Optimal Multivariate Splits
+Version: 1.0.1
+Author: Yanchao Liu
+Maintainer: Yanchao Liu <yanchaoliu@wayne.edu>
+Description: Functions for training an optimal decision tree classifier, making predictions and generating latex code for plotting. Works for two-class and multi-class classification problems. The algorithm seeks the optimal Boolean rule consisting of multiple variables to split a node, resulting in shorter trees. Use bsnsing() to build a tree, predict() to make predictions and plot() to plot the tree into latex and PDF. See Yanchao Liu (2022) <arXiv:2205.15263> for technical details. Source code and more data sets are at <https://github.com/profyliu/bsnsing/>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: methods, Rcpp (>= 1.0.3)
+Suggests: C50, party, rpart, tree
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2022-07-03 15:16:04 UTC; gn0061
+Repository: CRAN
+Date/Publication: 2022-07-03 18:40:02 UTC

@@ -1,0 +1,52 @@
+Package: mlr3measures
+Title: Performance Measures for 'mlr3'
+Version: 1.0.0
+Authors@R: c(
+    person("Michel", "Lang", , "michellang@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9754-0393")),
+    person("Martin", "Binder", , "mlr.developer@mb706.com", role = "ctb"),
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-8115-0400")),
+    person("Lona", "Koers", , , role = "aut")
+  )
+Description: Implements multiple performance measures for supervised
+    learning.  Includes over 40 measures for regression and
+    classification. Additionally, meta information about the performance
+    measures can be queried, e.g. what the best and worst possible
+    performances scores are.
+License: LGPL-3
+URL: https:///mlr3measures.mlr-org.com,
+        https://github.com/mlr-org/mlr3measures
+BugReports: https://github.com/mlr-org/mlr3measures/issues
+Depends: R (>= 3.1.0)
+Imports: checkmate, mlr3misc, PRROC
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'assertions.R' 'bibentries.R' 'measures.R' 'binary_auc.R'
+        'binary_bbrier.R' 'binary_dor.R' 'binary_fbeta.R'
+        'binary_fdr.R' 'binary_fn.R' 'binary_fnr.R' 'binary_fomr.R'
+        'binary_fp.R' 'binary_fpr.R' 'binary_gmean.R' 'binary_gpr.R'
+        'binary_npv.R' 'binary_ppv.R' 'binary_prauc.R' 'binary_tn.R'
+        'binary_tnr.R' 'binary_tp.R' 'binary_tpr.R' 'classif_acc.R'
+        'classif_auc.R' 'classif_bacc.R' 'classif_ce.R'
+        'classif_logloss.R' 'classif_mbrier.R' 'classif_mcc.R'
+        'classif_zero_one.R' 'confusion_matrix.R' 'helper.R'
+        'regr_ae.R' 'regr_ape.R' 'regr_bias.R' 'regr_ktau.R'
+        'regr_linex.R' 'regr_mae.R' 'regr_mape.R' 'regr_maxae.R'
+        'regr_maxse.R' 'regr_medae.R' 'regr_medse.R' 'regr_mse.R'
+        'regr_msle.R' 'regr_pbias.R' 'regr_pinball.R' 'regr_rae.R'
+        'regr_rmse.R' 'regr_rmsle.R' 'regr_rrse.R' 'regr_rse.R'
+        'regr_rsq.R' 'regr_sae.R' 'regr_se.R' 'regr_sle.R'
+        'regr_smape.R' 'regr_srho.R' 'regr_sse.R' 'roxygen.R'
+        'similarity_jaccard.R' 'similarity_phi.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2024-09-11 09:58:42 UTC; marc
+Author: Michel Lang [aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Martin Binder [ctb],
+  Marc Becker [cre, aut] (<https://orcid.org/0000-0002-8115-0400>),
+  Lona Koers [aut]
+Maintainer: Marc Becker <marcbecker@posteo.de>
+Repository: CRAN
+Date/Publication: 2024-09-11 22:52:30 UTC

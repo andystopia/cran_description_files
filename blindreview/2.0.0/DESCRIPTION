@@ -1,0 +1,26 @@
+Package: blindreview
+Title: Enables Blind Review of Database
+Version: 2.0.0
+Authors@R: person("William","Fairweather",
+   email = "wrf343@flowervalleyconsulting.com", role = c("aut", "cre"))
+Description: Randomly reassigns the group identifications to one of the variables of the 
+   database, say Treatment, and randomly reassigns the observation numbers of the dataset. 
+   Reorders the observations according to these new numbers. Centers each group of Treatment
+   at the grand mean in order to further mask the treatment. An unmasking function is 
+   provided so that the user can identify the potential outliers in terms of their original 
+   values when blinding is no longer needed. It is suggested that a forward search procedure 
+   be performed on the masked data. Details of some forward search functions may be found in
+   <https://CRAN.R-project.org/package=forsearch>.
+Depends: R (>= 4.2)
+License: GPL (>= 3)
+SystemRequirements: gmp (>= 4.1)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: Hmisc(>= 4.7.2)
+Suggests: rmarkdown, knitr
+NeedsCompilation: no
+Packaged: 2024-01-16 15:28:52 UTC; NO
+Author: William Fairweather [aut, cre]
+Maintainer: William Fairweather <wrf343@flowervalleyconsulting.com>
+Repository: CRAN
+Date/Publication: 2024-01-16 15:50:06 UTC

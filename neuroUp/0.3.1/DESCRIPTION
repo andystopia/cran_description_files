@@ -1,0 +1,41 @@
+Package: neuroUp
+Type: Package
+Title: Plan Sample Size for Task fMRI Research using Bayesian Updating
+Version: 0.3.1
+Authors@R: c(person(  "Eduard", "Klapwijk",
+                email = "et.klapwijk@gmail.com",
+                role = c("aut", "cre", "cph"),
+                comment = c(ORCID = "0000-0002-8936-0365")), 
+          person( "Herbert", "Hoijtink", 
+                role = c("aut", "cph"),
+                comment = c(ORCID = "0000-0001-8509-1973")),
+          person( "Joran", "Jongerling", 
+                role = c("aut", "cph"),
+                comment = c(ORCID = "0000-0001-5697-1381")))
+Description: Calculate the precision in mean differences (raw or Cohen's D) and 
+    correlation coefficients for different sample sizes. Uses permutations of the
+    collected functional magnetic resonance imaging (fMRI) region of interest data.
+    Method described in Klapwijk, Jongerling, Hoijtink and Crone (2024) 
+    <doi:10.31234/osf.io/cz32t>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Imports: dplyr, rlang, ggplot2, psychometric, tibble, magrittr,
+        bootstrap
+Suggests: knitr, readr, rmarkdown, testthat (>= 3.0.0), vdiffr
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+URL: https://eduardklap.github.io/neuroUp/,
+        https://github.com/eduardklap/neuroUp
+BugReports: https://github.com/eduardklap/neuroUp/issues
+Packaged: 2024-08-23 13:23:08 UTC; eduardklapwijk
+Author: Eduard Klapwijk [aut, cre, cph]
+    (<https://orcid.org/0000-0002-8936-0365>),
+  Herbert Hoijtink [aut, cph] (<https://orcid.org/0000-0001-8509-1973>),
+  Joran Jongerling [aut, cph] (<https://orcid.org/0000-0001-5697-1381>)
+Maintainer: Eduard Klapwijk <et.klapwijk@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-28 08:20:05 UTC

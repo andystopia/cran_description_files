@@ -1,0 +1,59 @@
+Package: bioRad
+Title: Biological Analysis and Visualization of Weather Radar Data
+Version: 0.8.1
+Description: Extract, visualize and summarize aerial movements of birds and
+    insects from weather radar data. See Dokter, A. M. et al. (2018) 
+    "bioRad: biological analysis and visualization of weather radar data" <doi:10.1111/ecog.04028>
+    for a software paper describing package and methodologies.
+Authors@R: c(
+    person("Adriaan M.", "Dokter", role = c("aut", "cre"), email = "biorad@cornell.edu", comment = c(ORCID = "0000-0001-6573-066X")),
+    person("Peter", "Desmet", role = "aut", email = "peter.desmet@inbo.be", comment = c(ORCID = "0000-0002-8442-8025")),
+    person("Bart", "Kranstauber", role = "aut", email = "b.kranstauber@uva.nl", comment = c(ORCID = "0000-0001-8303-780X")),
+    person("Cecilia", "Nilsson", role = "aut", email = "cecilia.nilsson709@gmail.com", comment = c(ORCID = "0000-0001-8957-4411")),
+    person("Stijn", "Van Hoey", role = "aut", email = "stijnvanhoey@gmail.com", comment = c(ORCID = "0000-0001-6413-3185")),
+    person("Bart", "Hoekstra", role = "ctb", email = "b.d.hoekstra@uva.nl", comment = c(ORCID = "0000-0002-7085-3805")),
+    person("Pieter", "Huybrechts", role = "ctb", email = "pieter.huybrechts@inbo.be", comment = c(ORCID = "0000-0002-6658-6062")),
+    person("Hidde", "Leijnse", role = "ctb", email = "hidde.leijnse@knmi.nl", comment = c(ORCID = "0000-0001-7835-4480")),
+    person("Nicolas", "Noé", role = "ctb", email = "nicolas@niconoe.eu", comment = c(ORCID = "0000-0002-9503-4750")),
+    person("Raphaël", "Nussbaumer", role = "ctb", email = "rafnuss@gmail.com", comment = c(ORCID = "0000-0002-8185-1020")),
+    person("Jurriaan", "Spaaks", role = "ctb", email = "j.spaaks@esciencecenter.nl"),
+    person("Alexander", "Tedeschi", role = "ctb", email = "alexander.tedeschi@cornell.edu", comment = c(ORCID = "0000-0003-0772-6931")),
+    person("Lourens", "Veen", role = "ctb", email = "l.veen@esciencecenter.nl"),
+    person("Liesbeth", "Verlinden", role = "ctb", email = "l.verlinden@uva.nl", comment = c(ORCID = "0000-0003-1744-9325"))
+    )
+License: MIT + file LICENSE
+URL: https://github.com/adokter/bioRad/,
+        https://adriaandokter.com/bioRad/
+BugReports: https://github.com/adokter/bioRad/issues
+biocViews:
+Depends: R (>= 3.5.0)
+Imports: assertthat, curl, dplyr (>= 1.1.0), fields, ggplot2, glue,
+        graphics, jsonlite, lubridate, lutz, methods, raster, readr,
+        rhdf5, rlang, sf, sp, stats, stringr, suntools, tidyr,
+        tidyselect, utils, viridis, viridisLite
+Suggests: aws.s3, ggspatial, knitr, prettymapr, rmarkdown, rosm,
+        testthat (>= 3.0.0), vdiffr, vol2birdR
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-07-29 19:38:24 UTC; amd427
+Author: Adriaan M. Dokter [aut, cre] (<https://orcid.org/0000-0001-6573-066X>),
+  Peter Desmet [aut] (<https://orcid.org/0000-0002-8442-8025>),
+  Bart Kranstauber [aut] (<https://orcid.org/0000-0001-8303-780X>),
+  Cecilia Nilsson [aut] (<https://orcid.org/0000-0001-8957-4411>),
+  Stijn Van Hoey [aut] (<https://orcid.org/0000-0001-6413-3185>),
+  Bart Hoekstra [ctb] (<https://orcid.org/0000-0002-7085-3805>),
+  Pieter Huybrechts [ctb] (<https://orcid.org/0000-0002-6658-6062>),
+  Hidde Leijnse [ctb] (<https://orcid.org/0000-0001-7835-4480>),
+  Nicolas Noé [ctb] (<https://orcid.org/0000-0002-9503-4750>),
+  Raphaël Nussbaumer [ctb] (<https://orcid.org/0000-0002-8185-1020>),
+  Jurriaan Spaaks [ctb],
+  Alexander Tedeschi [ctb] (<https://orcid.org/0000-0003-0772-6931>),
+  Lourens Veen [ctb],
+  Liesbeth Verlinden [ctb] (<https://orcid.org/0000-0003-1744-9325>)
+Maintainer: Adriaan M. Dokter <biorad@cornell.edu>
+Repository: CRAN
+Date/Publication: 2024-07-30 17:10:02 UTC

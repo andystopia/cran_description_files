@@ -1,0 +1,45 @@
+Package: Splinets
+Date: 2025-01-29
+Type: Package
+Title: Functional Data Analysis using Splines and Orthogonal Spline
+        Bases
+Version: 1.5.1
+Authors@R: 
+  c(person(given = "Rani",
+           family = "Basna",
+           role = c("aut"),
+           email = "rani.basna@med.lu.se" ),
+           person(given = "Xijia",
+           family = "Liu",
+           role = c("aut"),
+           email = "xijia.liu@umu.se" ),
+    person(given = "Hiba",
+           family = "Nassar",
+           role = c("aut"),
+           email = "hibna@dtu.dk"),   
+    person(given = "Krzysztof",
+           family = "Podgorski",
+           email = "Krzysztof.Podgorski@stat.lu.se",
+           role = c("aut","cre","cph")
+           )
+    )
+Author: Rani Basna [aut],
+  Xijia Liu [aut],
+  Hiba Nassar [aut],
+  Krzysztof Podgorski [aut, cre, cph]
+Description: Splines are efficiently represented through their Taylor expansion at the knots. The representation accounts for the support sets and is thus suitable for sparse functional data. Two cases of boundary conditions are considered: zero-boundary or periodic-boundary for all derivatives except the last. The periodical splines are represented graphically using polar coordinates. The B-splines and orthogonal bases of splines that reside on small total support are implemented. The orthogonal bases are referred to as 'splinets' and are utilized for functional data analysis. Random spline generator is implemented as well as  all fundamental algebraic and calculus operations on splines.  The optimal, in the least square sense, functional fit by 'splinets' to data consisting of sampled values of functions as well as splines build over another set of knots is obtained and used for functional data analysis. The S4-version of the object oriented R is used.  <doi:10.48550/arXiv.2102.00733>, <doi:10.1016/j.cam.2022.114444>, <doi:10.48550/arXiv.2302.07552>. 
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: methods, graphics
+Suggests: knitr, rmarkdown
+URL: https://github.com/ranibasna/R-Splinets,
+        https://ranibasna.github.io/R-Splinets/
+BugReports: https://github.com/ranibasna/R-Splinets/issues
+NeedsCompilation: no
+Packaged: 2025-01-28 23:40:24 UTC; mats-ksp
+Maintainer: Krzysztof Podgorski <Krzysztof.Podgorski@stat.lu.se>
+Repository: CRAN
+Date/Publication: 2025-01-28 23:50:03 UTC

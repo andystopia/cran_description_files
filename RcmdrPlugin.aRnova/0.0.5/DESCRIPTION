@@ -1,0 +1,34 @@
+Package: RcmdrPlugin.aRnova
+Type: Package
+Title: R Commander Plug-in for Repeated-Measures ANOVA
+Version: 0.0.5
+Date: 2018-03-03
+Author: Arnaud Travert [aut, cre],
+  Jessica Mange [aut]
+Maintainer: Arnaud Travert <arnaud.travert@unicaen.fr>
+Authors@R: c(
+              person(given = "Arnaud", family = "Travert", role = c("aut", "cre"), 
+                     email = "arnaud.travert@unicaen.fr"),
+              person(given = "Jessica", family = "Mange", role = "aut")
+             )
+Depends: R (>= 3.2.0)
+Imports: Rcmdr
+Suggests: knitr
+Description: R Commander plug-in for repeated-measures and mixed-design
+    ('split-plot') ANOVA.
+    It adds a new menu entry for repeated measures that allows
+    to deal with up to three within-subject factors and optionally with
+    one or several between-subject factors.
+    It also provides supplementary options to oneWayAnova() and
+    multiWayAnova() functions, such as choice of ANOVA type, display of
+    effect sizes and post hoc analysis for multiWayAnova().
+RcmdrModels:
+License: GPL (>= 2)
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: no
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Packaged: 2018-03-03 11:53:45 UTC; Arnaud
+Repository: CRAN
+Date/Publication: 2018-03-03 12:30:33 UTC

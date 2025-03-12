@@ -1,0 +1,25 @@
+Package: heatmapFlex
+Type: Package
+Title: Tools to Generate Flexible Heatmaps
+Version: 0.1.2
+Date: 2021-08-18
+Author: Vidal Fey [aut, cre],
+  Henri Sara [aut]
+Authors@R: c(person("Vidal", "Fey", email = "vidal.fey@gmail.com", role=c("aut", "cre")), person("Henri", "Sara", email = "henri.sara@gmail.com", role=c("aut")))
+Maintainer: Vidal Fey <vidal.fey@gmail.com>
+Description: A set of tools supporting more flexible heatmaps. The graphics is grid-like using
+  the old graphics system. The main function is heatmap.n2(), which is a wrapper around the various functions
+  constructing individual parts of the heatmap, like sidebars, picket plots, legends etc. The function supports zooming
+  and splitting, i.e., having (unlimited) small heatmaps underneath each other in one plot deriving from the same data set,
+  e.g., clustered and ordered by a supervised clustering method.
+Depends: Biobase, Heatplus, grDevices, stats, graphics
+Imports: RColorBrewer, utils
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-08-18 08:37:20 UTC; fsvife
+Repository: CRAN
+Date/Publication: 2021-08-19 08:10:02 UTC

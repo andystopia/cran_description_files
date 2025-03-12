@@ -1,0 +1,74 @@
+Package: autometric
+Title: Background Resource Logging
+Description: Intense parallel workloads can be difficult to monitor.
+  Packages 'crew.cluster', 'clustermq', and 'future.batchtools'
+  distribute hundreds of worker processes over multiple computers.
+  If a worker process exhausts its available memory,
+  it may terminate silently, leaving the underlying problem difficult
+  to detect or troubleshoot.
+  Using the 'autometric' package, a worker can proactively monitor
+  itself in a detached background thread.
+  The worker process itself runs normally,
+  and the thread writes to a log every few seconds.
+  If the worker terminates unexpectedly, 'autometric' can read and
+  visualize the log file to reveal potential resource-related
+  reasons for the crash. The 'autometric' package borrows heavily from
+  the methods of packages 'ps' <doi:10.32614/CRAN.package.ps> and 'psutil'.
+Version: 0.1.2
+License: MIT + file LICENSE
+URL: https://wlandau.github.io/autometric/,
+        https://github.com/wlandau/autometric
+BugReports: https://github.com/wlandau/autometric/issues
+Authors@R: c(
+  person(
+    given = c("William", "Michael"),
+    family = "Landau",
+    role = c("aut", "cre"),
+    email = "will.landau.oss@gmail.com",
+    comment = c(ORCID = "0000-0003-1878-3253")
+  ),
+  person(
+    family = "Eli Lilly and Company",
+    role = c("cph", "fnd")
+  ),
+  person(
+    family = "Posit Software, PBC",
+    role = "cph",
+    comment = "For the 'ps' package. See LICENSE.note."
+  ),
+  person(
+    given = "Jay",
+    family = "Loden",
+    role = "cph",
+    comment = "For the 'psutil' package. See LICENSE.note."
+  ),
+  person(
+    given = "Dave",
+    family = "Daeschler",
+    role = "cph",
+    comment = "For the 'psutil' package. See LICENSE.note."
+  ),
+  person(
+    given = "Giampaolo",
+    family = "Rodola",
+    role = "cph",
+    comment = "For the 'psutil' package. See LICENSE.note."
+  ))
+Depends: R (>= 3.5.0)
+Imports: graphics, utils
+Suggests: grDevices, ps, tinytest
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-11-14 22:07:22 UTC; C240390
+Author: William Michael Landau [aut, cre]
+    (<https://orcid.org/0000-0003-1878-3253>),
+  Eli Lilly and Company [cph, fnd],
+  Posit Software, PBC [cph] (For the 'ps' package. See LICENSE.note.),
+  Jay Loden [cph] (For the 'psutil' package. See LICENSE.note.),
+  Dave Daeschler [cph] (For the 'psutil' package. See LICENSE.note.),
+  Giampaolo Rodola [cph] (For the 'psutil' package. See LICENSE.note.)
+Maintainer: William Michael Landau <will.landau.oss@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-15 09:40:05 UTC

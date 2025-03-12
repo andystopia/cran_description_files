@@ -1,0 +1,29 @@
+Package: qountstat
+Type: Package
+Title: Statistical Analysis of Count Data and Quantal Data
+Version: 0.1.1
+Authors@R: c(
+    	person("Benjamin", "Daniels", comment = c(ORCID = "0000-0002-8344-6141"),  email = "Benjamin.Daniels@uba.de", role = c("cre", "ctb"),),
+	person("Christian", "Dietrich", role = "aut"),
+	person("Thomas", "Graeff", role = "ctb"),
+	person("Magnus", "Wang", role = "ctb"))
+Maintainer: Benjamin Daniels <Benjamin.Daniels@uba.de>
+Description: Methods for statistical analysis of count data and quantal data.
+    For the analysis of count data an implementation of the Closure Principle Computational Approach Test ("CPCAT") is provided (Lehmann, R et al. (2016) <doi:10.1007/s00477-015-1079-4>), as well as an implementation of a "Dunnett GLM" approach using a Quasi-Poisson regression (Hothorn, L, Kluxen, F (2020) <doi:10.1101/2020.01.15.907881>).
+    For the analysis of quantal data an implementation of the Closure Principle Fisher–Freeman–Halton test ("CPFISH") is provided (Lehmann, R et al. (2018) <doi:10.1007/s00477-017-1392-1>). P-values and no/lowest observed (adverse) effect concentration values are calculated.
+    All implemented methods include further functions to evaluate the power and the minimum detectable difference using a bootstrapping approach.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: multcomp
+Suggests: knitr, rmarkdown, testthat
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2025-02-20 12:23:17 UTC; Benni Daniels
+Author: Benjamin Daniels [cre, ctb] (<https://orcid.org/0000-0002-8344-6141>),
+  Christian Dietrich [aut],
+  Thomas Graeff [ctb],
+  Magnus Wang [ctb]
+Repository: CRAN
+Date/Publication: 2025-02-21 11:30:25 UTC

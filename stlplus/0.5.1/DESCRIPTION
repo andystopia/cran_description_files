@@ -1,0 +1,30 @@
+Package: stlplus
+Type: Package
+Title: Enhanced Seasonal Decomposition of Time Series by Loess
+Version: 0.5.1
+Date: 2016-01-05
+Authors@R: person("Ryan", "Hafen", email = "rhafen@gmail.com", role = c("aut", "cre"))
+Maintainer: Ryan Hafen <rhafen@gmail.com>
+Description: Decompose a time series into seasonal, trend, and remainder
+    components using an implementation of Seasonal Decomposition of Time
+    Series by Loess (STL) that provides several enhancements over the STL
+    method in the stats package.  These enhancements include handling missing
+    values, providing higher order (quadratic) loess smoothing with automated
+    parameter choices, frequency component smoothing beyond the seasonal and
+    trend components, and some basic plot methods for diagnostics.
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: yes
+Imports: lattice, yaImpute, stats, Rcpp
+Suggests: testthat
+LinkingTo: Rcpp
+License: BSD_3_clause + file LICENSE
+URL: https://github.com/hafen/stlplus
+BugReports: https://github.com/hafen/stlplus/issues
+Note: This is experimental software distributed free of charge and
+        comes with no warranty!  Exercise professional caution.
+RoxygenNote: 5.0.1
+Packaged: 2016-01-06 09:27:21 UTC; hafen
+Author: Ryan Hafen [aut, cre]
+Repository: CRAN
+Date/Publication: 2016-01-06 10:42:19

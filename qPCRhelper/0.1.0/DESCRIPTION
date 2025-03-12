@@ -1,0 +1,21 @@
+Package: qPCRhelper
+Type: Package
+Title: qPCR Ct Values to Expression Values
+Version: 0.1.0
+Author: Wilson Jr. Aala
+Maintainer: Wilson Jr. Aala <s98107020@gs.ncku.edu.tw>
+Description: Computes normalized cycle threshold (Ct) values (delta Ct) from raw quantitative polymerase 
+    chain reaction (qPCR) Ct values and conducts test of significance using t.test(). Plots expression 
+    values based from log2(2^(-1*delta delta Ct)) across groups per gene of interest. Methods for calculation
+    of delta delta Ct and relative expression (2^(-1*delta delta Ct)) values are described in: 
+    Livak & Schmittgen, (2001) <doi:10.1006/meth.2001.1262>.
+License: GPL-3
+Encoding: UTF-8
+Imports: dplyr (>= 1.0.0), rstatix (>= 0.7.2), ggpubr (>= 0.5.0),
+        ggplot2 (>= 3.4.0), magrittr (>= 2.0.3)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-23 05:24:12 UTC; wilsonaala
+Repository: CRAN
+Date/Publication: 2023-02-23 14:00:08 UTC

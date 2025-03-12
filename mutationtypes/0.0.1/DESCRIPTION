@@ -1,0 +1,26 @@
+Package: mutationtypes
+Title: Validate and Convert Mutational Impacts Using Standard Genomic
+        Dictionaries
+Version: 0.0.1
+Authors@R: c(
+      person("Sam", "El-Kamand", email = "sam.elkamand@gmail.com", role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0003-2270-8088")),
+      person("Children's Cancer Institute Australia", role = "cph")
+  )
+Description: Check concordance of a vector of mutation impacts with standard dictionaries such as Sequence Ontology (SO) <http://www.sequenceontology.org/>, Mutation Annotation Format (MAF) <https://docs.gdc.cancer.gov/Encyclopedia/pages/Mutation_Annotation_Format_TCGAv2/> or Prediction and Annotation of Variant Effects (PAVE) <https://github.com/hartwigmedical/hmftools/tree/master/pave>. 
+  It enables conversion between SO/PAVE and MAF terms and selection of the most severe consequence where multiple ampersand (&) delimited impacts are given.
+License: LGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: assertions, cli, data.table, stats, utils
+Suggests: covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/selkamand/mutationtypes
+BugReports: https://github.com/selkamand/mutationtypes/issues
+NeedsCompilation: no
+Packaged: 2023-12-14 09:17:33 UTC; selkamand
+Author: Sam El-Kamand [aut, cre] (<https://orcid.org/0000-0003-2270-8088>),
+  Children's Cancer Institute Australia [cph]
+Maintainer: Sam El-Kamand <sam.elkamand@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-14 16:10:05 UTC

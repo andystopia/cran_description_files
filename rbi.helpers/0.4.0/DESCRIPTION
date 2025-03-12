@@ -1,0 +1,28 @@
+Package: rbi.helpers
+Version: 0.4.0
+Title: 'rbi' Helper Functions
+Author: Sebastian Funk <sebastian.funk@lshtm.ac.uk>
+Maintainer: Sebastian Funk <sebastian.funk@lshtm.ac.uk>
+Imports: rbi (>= 0.10.0), data.table, lubridate, reshape2, Matrix
+Suggests: markdown, testthat, covr (>= 3.2.0), stringi, knitr,
+        rmarkdown
+Description: Contains a collection of helper functions to use with 'rbi', the R
+  interface to 'LibBi', described in
+  Murray et al. (2015) <doi:10.18637/jss.v067.i10>. It contains functions to
+  adapt the proposal distribution and number of particles in
+  particle Markov-Chain Monte Carlo, as well as calculating the
+  Deviance Information Criterion (DIC) and converting between times in 'LibBi'
+  results and R time/dates.
+License: GPL-3
+URL: https://libbi.org, https://github.com/sbfnk/rbi,
+        https://github.com/sbfnk/rbi.helpers
+BugReports: https://github.com/sbfnk/rbi.helpers/issues
+SystemRequirements: libbi (>= 1.4.2)
+LazyLoad: no
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Encoding: UTF-8
+VignetteBuilder: knitr
+Packaged: 2023-08-19 07:27:44 UTC; eidesfun
+Repository: CRAN
+Date/Publication: 2023-08-24 11:00:05 UTC

@@ -1,0 +1,28 @@
+Type: Package
+Package: TangledFeatures
+Title: Feature Selection in Highly Correlated Spaces
+Version: 0.1.1
+Authors@R: 
+    person("Allen", "Sunny", , "allensunny1242@gmail.com", role = c("aut", "cre"))
+Description: Feature selection algorithm that extracts features in highly
+    correlated spaces. The extracted features are meant to be fed into
+    simple explainable models such as linear or logistic regressions. The
+    package is useful in the field of explainable modelling as a
+    way to understand variable behavior.
+License: MIT + file LICENSE
+URL: https://allen-1242.github.io/TangledFeatures/
+Depends: R (>= 2.10)
+Imports: correlation, data.table, dplyr, fastDummies, ggplot2, igraph,
+        janitor, Matrix, methods, purrr, ranger
+Suggests: knitr, R.rsp, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-02-12 17:57:05 UTC; sunny
+Author: Allen Sunny [aut, cre]
+Maintainer: Allen Sunny <allensunny1242@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-14 09:10:02 UTC

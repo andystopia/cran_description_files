@@ -1,0 +1,22 @@
+Package: oreo
+Type: Package
+Title: Large Amplitude Oscillatory Shear (LAOS)
+Version: 1.0
+Date: 2021-03-01
+Authors@R: c(person("Serena", "Berretta", role = c("aut","cre") , email = "serena.berretta@ge.imati.cnr.it") , person("Giorgio", "Luciano", role="aut"), person("Kristian Hovde", "Liland", role= "ctb"), person("Simon" , "Rogers", role="ctb"))
+Maintainer: Serena Berretta <serena.berretta@ge.imati.cnr.it>
+Description: The Sequence of Physical Processes (SPP) framework is a way of interpreting the transient data derived from oscillatory rheological tests. It is designed to allow both the linear and non-linear deformation regimes to be understood within a single unified framework. This code provides a convenient way to determine the SPP framework metrics for a given sample of oscillatory data. It will produce a text file containing the SPP metrics, which the user can then plot using their software of choice. It can also produce a second text file with additional derived data (components of tangent, normal, and binormal vectors), as well as pre-plotted figures if so desired. It is the R version of the Package SPP by Simon Rogers Group for Soft Matter (Simon A. Rogers, Brian M. Erwin, Dimitris Vlassopoulos, Michel Cloitre (2011) <doi:10.1122/1.3544591>).
+Imports:
+        gridExtra,ggplot2,openxlsx,tools,spectral,pracma,fftwtools,scales
+Depends: R (>= 3.5.0)
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-03-08 09:23:35 UTC; seren
+Author: Serena Berretta [aut, cre],
+  Giorgio Luciano [aut],
+  Kristian Hovde Liland [ctb],
+  Simon Rogers [ctb]
+Repository: CRAN
+Date/Publication: 2021-03-10 19:20:07 UTC

@@ -1,0 +1,24 @@
+Package: rprofile
+Title: Load Both User-Global and Project-Specific R Profile
+        Configurations
+Version: 0.4.0
+Authors@R: c(
+    person("Konrad", "Rudolph", , "konrad.rudolph@roche.com", role = c("cre", "aut"), comment = c(ORCID = "https://orcid.org/0000-0002-9866-7051")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Use rprofile::load() inside a project '.Rprofile' file to ensure that the user-global '.Rprofile' is
+  loaded correctly regardless of its location, and other common resources (in particular 'renv') are also set up
+  correctly.
+BugReports: https://github.com/klmr/rprofile/issues
+Depends: R (>= 4.1)
+Imports: utils
+Enhances: pkgload, renv
+License: MIT + file LICENSE
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-11-01 11:14:18 UTC; rudolpk2
+Author: Konrad Rudolph [cre, aut] (<https://orcid.org/0000-0002-9866-7051>),
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Konrad Rudolph <konrad.rudolph@roche.com>
+Repository: CRAN
+Date/Publication: 2023-11-01 11:40:02 UTC

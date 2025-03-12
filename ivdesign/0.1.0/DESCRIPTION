@@ -1,0 +1,25 @@
+Package: ivdesign
+Type: Package
+Title: Hypothesis Testing in Cluster-Randomized Encouragement Designs
+Version: 0.1.0
+Author: Bo Zhang
+Maintainer: Bo Zhang <bozhan@wharton.upenn.edu>
+Description: An implementation of randomization-based hypothesis 
+    testing for three different estimands in a cluster-randomized 
+    encouragement experiment. The three estimands include (1) testing
+    a cluster-level constant proportional treatment effect (Fisher's
+    sharp null hypothesis), (2) pooled effect ratio, and (3) average 
+    cluster effect ratio. To test the third estimand, user needs to install
+    'Gurobi' (>= 9.0.1) optimizer via its R API. Please refer to 
+    <https://www.gurobi.com/documentation/9.0/refman/ins_the_r_package.html>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: R (>= 2.10)
+Suggests: gurobi, Matrix
+Imports: stats
+NeedsCompilation: no
+Packaged: 2020-07-13 18:37:05 UTC; ASUS
+Repository: CRAN
+Date/Publication: 2020-07-14 16:30:02 UTC

@@ -1,0 +1,49 @@
+Package: blandr
+Title: Bland-Altman Method Comparison
+Version: 0.6.0
+Date: 2024-06-09
+Description: Carries out Bland Altman analyses (also known as a Tukey
+    mean-difference plot) as described by JM Bland and DG Altman in
+    1986 <doi:10.1016/S0140-6736(86)90837-8>. This package was created in 
+    2015 as existing Bland-Altman analysis functions did not calculate 
+    confidence intervals. This package was created to rectify this, 
+    and create reproducible plots. This package is also available as a module
+    for the 'jamovi' statistical spreadsheet (see <https://www.jamovi.org>
+    for more information).
+Depends: R (>= 3.2.0)
+Authors@R: c(person("Deepankar", "Datta", email = "deepankar.datta@gmail.com",
+                  role = c("aut", "cre") ) , 
+                  person("Jonathon", "Love", email = "jon@thon.cc" , role = "ctb" ) )
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/deepankardatta/blandr/
+BugReports: https://github.com/deepankardatta/blandr/issues
+Imports: glue, ggplot2, knitr, stringr, jmvcore (>= 0.8.5), markdown,
+        rmarkdown
+Suggests: testthat
+SystemRequirements: pandoc (>=1.12.3)
+VignetteBuilder: knitr
+Collate: 'blandr.data.preparation.r' 'blandr.dataset.fibre.r'
+        'blandr.dataset.sbp.r' 'blandr.dataset.o2sats.r'
+        'blandr.dataset.pefr.r' 'blandr.dataset.load.r'
+        'blandr.plot.ggplot.r' 'blandr.plot.rplot.r'
+        'blandr.plot.limits.r' 'blandr.statistics.r' 'blandr.draw.r'
+        'blandr.output.text.r' 'blandr.display.and.draw.r'
+        'blandr.display.and.plot.r' 'blandr.method.comparison.r'
+        'blandr.output.report.r' 'blandr.plot.normality.r'
+        'blandr.plot.qq.r' 'blandr.plot.r'
+        'blandr.statistics.formula.R' 'jamovibaanalysis.b.R'
+        'jamovibaanalysis.h.R' 'jamovibaplothistogram.b.R'
+        'jamovibaplothistogram.h.R' 'jamovibaplotqq.b.R'
+        'jamovibaplotqq.h.R' 'jamovibastats.b.R' 'jamovibastats.h.R'
+        'print.blandr.R'
+RoxygenNote: 7.3.1
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2024-06-09 11:49:37 UTC; deepankardatta
+Author: Deepankar Datta [aut, cre],
+  Jonathon Love [ctb]
+Maintainer: Deepankar Datta <deepankar.datta@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-09 20:40:02 UTC

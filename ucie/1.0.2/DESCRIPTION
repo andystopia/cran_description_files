@@ -1,0 +1,28 @@
+Package: ucie
+Type: Package
+Title: Mapping 3D Data into CIELab Color Space
+Version: 1.0.2
+Authors@R: 
+  c(person(given = "Mikaela",
+           family = "Koutrouli",
+           role = c("aut", "cre"),
+           email = "mikaela.koutrouli@cpr.ku.dk"
+           ),
+    person(given = "Lars Juhl",
+           family = "Jensen",
+           role = "aut",
+           email = "lars.juhl.jensen@cpr.ku.dk"))
+Maintainer: Mikaela Koutrouli <mikaela.koutrouli@cpr.ku.dk>
+Description: Returns a data frame with the names of the input data points and hex colors (or CIELab coordinates). Data can be mapped to colors for use in data visualization. It optimally maps data points into a polygon that represents the CIELab colour space. Since Euclidean distance approximates relative perceptual differences in CIELab color space, the result is a color encoding that aims to capture much of the structure of the original data. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: colorspace, dplyr, geometry, pracma, ptinpoly, rgl, remotes
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-06-20 19:28:49 UTC; tgn531
+Author: Mikaela Koutrouli [aut, cre],
+  Lars Juhl Jensen [aut]
+Repository: CRAN
+Date/Publication: 2022-06-20 19:40:02 UTC

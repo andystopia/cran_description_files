@@ -1,0 +1,28 @@
+Package: dispRity
+Title: Measuring Disparity
+Authors@R: c(person("Thomas", "Guillerme", role = c("aut", "cre", "cph"),
+										   email = "guillert@tcd.ie",
+										   comment = c(ORCID = "0000-0003-4325-1275")),
+  			 person("Mark", "Puttick",     role = c("aut", "cph")),
+  			 person("Jack", "Hatfield",    role = c("aut", "cph"))
+  			 )
+Maintainer: Thomas Guillerme <guillert@tcd.ie>
+Version: 1.9
+Date: 2024-11-13
+Description: A modular package for measuring disparity (multidimensional space occupancy). Disparity can be calculated from any matrix defining a multidimensional space. The package provides a set of implemented metrics to measure properties of the space and allows users to provide and test their own metrics. The package also provides functions for looking at disparity in a serial way (e.g. disparity through time) or per groups as well as visualising the results. Finally, this package provides several statistical tests for disparity analysis.
+Depends: R (>= 3.6.0), ape, stats
+Imports: ade4, castor, Claddis, ellipse, geometry, GET, graphics,
+        grDevices, MASS, methods, mnormt, parallel, phangorn, phyclust,
+        phylolm, utils, vegan, scales, zoo,
+License: GPL-3 | file LICENSE
+Suggests: MCMCglmm, geoscale, testthat, knitr
+RoxygenNote: 7.2.3
+URL: https://github.com/TGuillerme/dispRity
+NeedsCompilation: yes
+Packaged: 2024-11-13 16:20:53 UTC; tguillerme
+Author: Thomas Guillerme [aut, cre, cph]
+    (<https://orcid.org/0000-0003-4325-1275>),
+  Mark Puttick [aut, cph],
+  Jack Hatfield [aut, cph]
+Repository: CRAN
+Date/Publication: 2024-11-13 18:20:02 UTC

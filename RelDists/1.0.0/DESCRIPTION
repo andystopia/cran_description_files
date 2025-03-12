@@ -1,0 +1,54 @@
+Package: RelDists
+Title: Estimation for some Reliability Distributions
+Version: 1.0.0
+Authors@R: c(
+    person(given="Freddy", 
+           family="Hernandez",
+           email="fhernanb@unal.edu.co",
+           role = c("aut"), 
+           comment = c(ORCID = "0000-0001-7459-3329")),
+    person(given="Olga",
+           family="Usuga", 
+           email="olga.usuga@udea.edu.co", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-3062-1820")),
+    person(given="Carmen",
+           family="Patino", 
+           email="elena.patino@udea.edu.co", 
+           role = "aut"),
+    person(given="Jaime",
+           family="Mosquera",
+           email="jmosquerag@unal.edu.co", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1684-4756")),
+    person(given="Amylkar", 
+           family="Urrea", 
+           email="amylkar.urrea@udea.edu.co", 
+           role = "aut")
+  )
+Description: Parameters estimation and linear regression models for Reliability 
+    distributions families reviewed by Almalki & Nadarajah (2014)
+    <doi:10.1016/j.ress.2013.11.010> using Generalized Additive
+    Models for Location, Scale and Shape, aka GAMLSS by Rigby & Stasinopoulos
+    (2005) <doi:10.1111/j.1467-9876.2005.00510.x>.
+Depends: R (>= 3.5.0), survival, EstimationTools (>= 4.0.0)
+License: GPL-3
+URL: https://ousuga.github.io/RelDists/
+BugReports: https://github.com/ousuga/RelDists/issues
+Encoding: UTF-8
+RdMacros: Rdpack
+Imports: gamlss, gamlss.dist, Rdpack, zipfR, BBmisc, lamW, VGAM
+LazyData: true
+Suggests: knitr, rmarkdown, viridis, autoimage, gamlss.cens, V8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-12-21 20:36:34 UTC; jaime
+Author: Freddy Hernandez [aut] (<https://orcid.org/0000-0001-7459-3329>),
+  Olga Usuga [aut] (<https://orcid.org/0000-0003-3062-1820>),
+  Carmen Patino [aut],
+  Jaime Mosquera [aut, cre] (<https://orcid.org/0000-0002-1684-4756>),
+  Amylkar Urrea [aut]
+Maintainer: Jaime Mosquera <jmosquerag@unal.edu.co>
+Repository: CRAN
+Date/Publication: 2022-12-22 20:00:10 UTC

@@ -1,0 +1,46 @@
+Package: trending
+Title: Model Temporal Trends
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(
+        given = "Tim",
+        family = "Taylor",
+        email = "tim.taylor@hiddenelephants.co.uk", 
+        role = "aut", 
+        comment = c(ORCID = "0000-0002-8587-7113")
+      ),
+      person(
+        given = "Dirk",
+        family = "Schumacher",
+        role = c("ctb"),
+        email = "mail@dirk-schumacher.net"
+      ),
+      person(
+        given = "Thibaut",
+        family = "Jombart",
+        role = c("ctb", "cre"),
+        email = "thibautjombart@gmail.com"
+      )
+    )
+Description: Provides a coherent interface to multiple modelling tools for
+  fitting trends along with a standardised approach for generating confidence
+  and prediction intervals.
+URL: https://github.com/reconverse/trending
+BugReports: https://github.com/reconverse/trending/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: ciTools, MASS, stats, tibble, vctrs, pillar
+Suggests: knitr, brms, BH, RcppEigen, rmarkdown, dplyr, outbreaks,
+        testthat (>= 3.0.0), ggplot2, patchwork, covr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-04-03 13:52:51 UTC; thibaut
+Author: Tim Taylor [aut] (<https://orcid.org/0000-0002-8587-7113>),
+  Dirk Schumacher [ctb],
+  Thibaut Jombart [ctb, cre]
+Maintainer: Thibaut Jombart <thibautjombart@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-03 19:00:02 UTC

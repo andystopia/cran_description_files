@@ -1,0 +1,29 @@
+Package: bridgr
+Type: Package
+Title: Bridging Data Frequencies for Timely Economic Forecasts
+Version: 0.1.1
+Authors@R: c(
+    person("Marc", "Burri", ,"marc.burri91@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-8974-9090"))
+  )
+Maintainer: Marc Burri <marc.burri91@gmail.com>
+Description: Implements bridge models for nowcasting and forecasting macroeconomic variables by linking high-frequency indicator variables (e.g., monthly data) to low-frequency target variables (e.g., quarterly GDP). Simplifies forecasting and aggregating indicator variables to match the target frequency, enabling timely predictions ahead of official data releases. For more on bridge models, see Baffigi, A., Golinelli, R., & Parigi, G. (2004) <doi:10.1016/S0169-2070(03)00067-0>, Burri (2023) <https://www5.unine.ch/RePEc/ftp/irn/pdfs/WP23-02.pdf> or Schumacher (2016) <doi:10.1016/j.ijforecast.2015.07.004>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Imports: magrittr, dplyr, rlang, generics, tsbox, lubridate, forecast
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5)
+Collate: 'bridge.R' 'bridgr-package.R' 'data-indicators.R' 'forecast.R'
+        'summary.R' 'utils.R'
+URL: https://github.com/marcburri/bridgr,
+        https://marcburri.github.io/bridgr/
+BugReports: https://github.com/marcburri/bridgr/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-12 16:16:47 UTC; marcburri
+Author: Marc Burri [aut, cre, cph] (<https://orcid.org/0000-0001-8974-9090>)
+Repository: CRAN
+Date/Publication: 2024-12-13 16:40:09 UTC

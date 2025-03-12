@@ -1,0 +1,42 @@
+Package: fableCount
+Type: Package
+Title: INGARCH and GLARMA Models for Count Time Series in Fable
+        Framework
+Description: Provides a tidy R interface for count time series analysis. It includes implementation of the INGARCH (Integer Generalized Autoregressive Conditional Heteroskedasticity) model from the 'tscount' package and the GLARMA (Generalized Linear Autoregressive Moving Averages) model from the 'glarma' package. Additionally, it offers automated parameter selection algorithms based on the minimization of a penalized likelihood.
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Gustavo",
+             family = "Almeida",
+             email = "gustavoalmeidasilva@ice.ufjf.br",
+             role = c("aut", "cre"), 
+             comment = c(ORCID = "0009-0005-7266-5866")),
+      person(given = "Marcel",
+             family = "Vieira",
+             role = "aut",
+             email = "marcel.vieira@ufjf.br",
+             comment = c(ORCID = "0000-0002-0456-380X")),
+      person(given = "Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq",
+             role = "fnd"),
+      person(given = "JFSalvando Todos - Plataforma de Análises Estatísticas",
+             role = c("fnd", "cph")
+             )
+            )
+Depends: R (>= 4.0.0), fabletools (>= 0.3.0), tscount (>= 1.4.3),
+        glarma (>= 1.6.0), fable (>= 0.3.4)
+Imports: stats, dplyr (>= 1.0.0), tsibble (>= 0.9.0), tibble, tidyr,
+        distributional, lubridate, stringr, tsibbledata
+Suggests: Rcpp, utils, rlang, covr, feasts, forecast, knitr, rmarkdown,
+        testthat
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-04 20:52:53 UTC; GUSTAVO PC
+Author: Gustavo Almeida [aut, cre] (<https://orcid.org/0009-0005-7266-5866>),
+  Marcel Vieira [aut] (<https://orcid.org/0000-0002-0456-380X>),
+  Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq
+    [fnd],
+  JFSalvando Todos - Plataforma de Análises Estatísticas [fnd, cph]
+Maintainer: Gustavo Almeida <gustavoalmeidasilva@ice.ufjf.br>
+Repository: CRAN
+Date/Publication: 2024-04-05 09:13:03 UTC

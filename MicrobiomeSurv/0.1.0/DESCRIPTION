@@ -1,0 +1,34 @@
+Package: MicrobiomeSurv
+Type: Package
+Title: Biomarker Validation for Microbiome-Based Survival
+        Classification and Prediction
+Version: 0.1.0
+Authors@R: 
+       c(person("Thi Huyen","Nguyen", email="thihuyen.nguyen@uhasselt.be", role=c("aut","cre")),
+       person("Olajumoke Evangelina","Owokotomo", email="olajumoke.x.owokotomo@gsk.com", role="aut"),
+       person("Ziv","Shkedy", email="ziv.shkedy@uhasselt.be", role="aut"))
+Maintainer: Thi Huyen Nguyen <thihuyen.nguyen@uhasselt.be>
+Description: An approach to identify microbiome biomarker for time to event data by discovering microbiome for predicting survival and classifying subjects into risk groups.
+ Classifiers are constructed as a linear combination of important microbiome and treatment effects if necessary. 
+ Several methods were implemented to estimate the microbiome risk score such as the LASSO method by Robert Tibshirani (1998) <doi:10.1002/(SICI)1097-0258(19970228)16:4%3C385::AID-SIM380%3E3.0.CO;2-3>, Elastic net approach by Hui Zou and Trevor Hastie (2005) <doi:10.1111/j.1467-9868.2005.00503.x>, supervised principle component analysis of Wold Svante et al. (1987) <doi:10.1016/0169-7439(87)80084-9>, and supervised partial least squares analysis by Inge S. Helland <https://www.jstor.org/stable/4616159>.
+ Sensitivity analysis on the quantile used for the classification can also be accessed to check the deviation of the classification group based on the quantile specified. Large scale cross validation can be performed in order to investigate the mostly selected microbiome and for internal validation.
+ During the evaluation process, validation is accessed using the hazard ratios (HR) distribution of the test set and inference is mainly based on resampling and permutations technique.
+URL: https://github.com/N-T-Huyen/MicrobiomeSurv
+BugReports: https://github.com/N-T-Huyen/MicrobiomeSurv/issues/new
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: graphics, stats, ggplot2, survival, survminer, glmnet,
+        methods, superpc, lmtest, gplots, tidyr, dplyr, microbiome,
+        pls, grDevices
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-10-11 19:10:24 UTC; lucp11243
+Author: Thi Huyen Nguyen [aut, cre],
+  Olajumoke Evangelina Owokotomo [aut],
+  Ziv Shkedy [aut]
+Repository: CRAN
+Date/Publication: 2023-10-12 06:20:02 UTC

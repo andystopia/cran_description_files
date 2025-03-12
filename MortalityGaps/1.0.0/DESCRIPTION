@@ -1,0 +1,31 @@
+Package: MortalityGaps
+Type: Package
+Title: The Double-Gap Life Expectancy Forecasting Model
+Version: 1.0.0
+Authors@R: c(
+  person("Marius D.", "Pascariu", role = c("aut", "cre"), 
+         email = "rpascariu@outlook.com"))
+Maintainer: Marius D. Pascariu <rpascariu@outlook.com>
+Description: Life expectancy is highly correlated over time among countries and 
+  between males and females. These associations can be used to improve forecasts. 
+  Here we have implemented a method for forecasting female life expectancy based on 
+  analysis of the gap between female life expectancy in a country compared with
+  the record level of female life expectancy in the world. Second, to forecast 
+  male life expectancy, the gap between male life expectancy and female life 
+  expectancy in a country is analysed. We named this method the Double-Gap model.
+  For a detailed description of the method see Pascariu et al. (2017). 
+  <doi:10.1016/j.insmatheco.2017.09.011>.
+License: GPL-3
+LazyData: TRUE
+Depends: R (>= 3.1.2)
+Imports: forecast, MASS, crch, pbapply
+Suggests: knitr, rmarkdown, testthat, covr
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+URL: https://github.com/mpascariu/MortalityGaps
+BugReports: https://github.com/mpascariu/MortalityGaps/issues
+NeedsCompilation: no
+Packaged: 2018-07-17 04:24:01 UTC; mpascariu
+Author: Marius D. Pascariu [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-07-20 15:20:09 UTC

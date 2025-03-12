@@ -1,0 +1,26 @@
+Package: sffdr
+Type: Package
+Title: Surrogate Functional False Discovery Rates for Genome-Wide
+        Association Studies
+Version: 1.0.0
+Authors@R: c(person("Andrew", "Bass", email ="ab3105@cam.ac.uk", role = c("aut", "cre")),
+             person("Chris", "Wallace", email ="chris.wallace@cam.ac.uk", role = c("aut")))
+Maintainer: Andrew Bass <ab3105@cam.ac.uk>
+Description: Pleiotropy-informed significance analysis of genome-wide association studies (GWAS) with surrogate functional false discovery rates (sfFDR). The sfFDR framework adapts the fFDR to leverage informative data from multiple sets of GWAS summary statistics to increase power in study while accommodating for linkage disequilibrium. sfFDR provides estimates of key FDR quantities in a significance analysis such as the functional local FDR and q-value, and uses these estimates to derive a functional p-value for type I error rate control and a functional local Bayes' factor for post-GWAS analyses (e.g., fine mapping and colocalization). The sfFDR framework is described in Bass and Wallace (2024) <doi:10.1101/2024.09.24.24314276>.
+URL: https://github.com/ajbass/sffdr
+License: LGPL
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: locfit, splines, dplyr, ggplot2 (>= 3.5.1), patchwork (>=
+        1.3.0), gam, qvalue, tibble, tidyr, Rcpp
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+LinkingTo: Rcpp
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-11-29 14:22:57 UTC; andrewbass
+Author: Andrew Bass [aut, cre],
+  Chris Wallace [aut]
+Repository: CRAN
+Date/Publication: 2024-12-02 12:30:08 UTC

@@ -1,0 +1,33 @@
+Package: siteymlgen
+Title: Automatically Generate _site.yml File for 'R Markdown'
+Version: 1.0.0
+Authors@R: 
+    person(given = "Adam",
+           family = "Cribbs",
+           role = c("aut", "cre"),
+           email = "adam.cribbs@ndorms.ox.ac.uk",
+           comment = c(ORCID = "0000-0001-5288-3077"))
+Description: The goal of 'siteymlgen' is to make it easy to organise
+  the building of your 'R Markdown' website.
+  The init() function placed within the first code chunk of the index.Rmd
+  file of an 'R' project directory will initiate the generation of an automatically
+  written _site.yml file. 'siteymlgen' recommends a specific naming
+  convention for your 'R Markdown' files. This naming will ensure that
+  your navbar layout is ordered according to a hierarchy.
+License: MIT + file LICENSE
+URL: https://github.com/Acribbs/siteymlgen
+LazyData: true
+Depends: R (>= 3.2)
+Imports: data.table, dplyr, ymlthis, magrittr, yaml, stringr,
+        lubridate, rmarkdown, rlist, purrr
+Suggests: knitr, testthat, spelling, pkgdown, roxygen2 (>= 7.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-05-06 15:41:27 UTC; adamcribbs
+Author: Adam Cribbs [aut, cre] (<https://orcid.org/0000-0001-5288-3077>)
+Maintainer: Adam Cribbs <adam.cribbs@ndorms.ox.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-05-08 16:30:02 UTC

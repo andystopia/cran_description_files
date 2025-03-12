@@ -1,0 +1,29 @@
+Package: pseval
+Type: Package
+Title: Methods for Evaluating Principal Surrogates of Treatment
+        Response
+Version: 1.3.1
+Date: 2019-01-10
+Authors@R: c(
+    person("Michael C Sachs", email = "sachsmc@gmail.com", role = c("aut", "cre")),
+    person("Erin E Gabriel", email = "erin.gabriel14@gmail.com", role = "aut"))
+Maintainer: Michael C Sachs <sachsmc@gmail.com>
+Description: Contains the core methods for the evaluation of principal
+    surrogates in a single clinical trial. Provides a flexible interface for
+    defining models for the risk given treatment and the surrogate, the models
+    for integration over the missing counterfactual surrogate responses, and the
+    estimation methods. Estimated maximum likelihood and pseudo-score can be used
+    for estimation, and the bootstrap for inference. A variety of post-estimation
+    summary methods are provided, including print, summary, plot, and testing.
+License: MIT + file LICENSE
+LazyData: TRUE
+Suggests: ggplot2, testthat, knitr, printr, rmarkdown
+Imports: survival
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-01-28 07:18:52 UTC; micsac
+Author: Michael C Sachs [aut, cre],
+  Erin E Gabriel [aut]
+Repository: CRAN
+Date/Publication: 2019-01-28 07:40:03 UTC

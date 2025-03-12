@@ -1,0 +1,54 @@
+Package: barrks
+Type: Package
+Title: Calculate Bark Beetle Phenology Using Different Models
+Version: 1.1.0
+Description: Calculate the bark beetle phenology based on raster data or
+    point-related data. There are multiple models implemented for two bark
+    beetle species. The models can be customized and their submodels (onset of
+    infestation, beetle development, diapause initiation, mortality) can be
+    combined. The following models are available in the package:
+    PHENIPS-Clim (first-time release in this package),
+    PHENIPS (Baier et al. 2007) <doi:10.1016/j.foreco.2007.05.020>,
+    RITY (Ogris et al. 2019) <doi:10.1016/j.ecolmodel.2019.108775>,
+    CHAPY (Ogris et al. 2020) <doi:10.1016/j.ecolmodel.2020.109137>,
+    BSO (Jakoby et al. 2019) <doi:10.1111/gcb.14766>,
+    Lange et al. (2008) <doi:10.1007/978-3-540-85081-6_32>,
+    Jönsson et al. (2011) <doi:10.1007/s10584-011-0038-4>.
+    The package may be expanded by models for other bark beetle species in the
+    future.
+Authors@R: c(
+    person("Jakob", "Jentschke", email = "jakob.jentschke@forst.bwl.de",
+           role = c("aut", "cre")),
+    person("FVA BW, Abt. Waldschutz", email = "waldschutz.fva-bw@forst.bwl.de",
+           role = c("cph", "fnd"))
+  )
+URL: https://jjentschke.github.io/barrks/,
+        https://github.com/jjentschke/barrks/
+BugReports: https://github.com/jjentschke/barrks/issues/
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+RdMacros: Rdpack
+Imports: dplyr, purrr, terra (>= 1.7-18), Rdpack, base, lubridate,
+        readr, stringr
+Collate: 'appearance.R' 'barrks-package.R' 'bso-phenology-results.R'
+        'bso-phenology.R' 'utils.R' 'bso-plot.R' 'create-daylengths.R'
+        'create-events.R' 'create-suntimes.R' 'data.R'
+        'utils-model-functions.R' 'model.R' 'model-bso.R'
+        'model-phenips.R' 'model-rity.R' 'model-chapy.R'
+        'model-combine.R' 'model-joensson.R' 'model-lange.R'
+        'model-phenips-clim.R' 'phenology-properties.R'
+        'phenology-results.R' 'phenology.R'
+        'plot-development-diagram.R' 'stations.R' 'utils-doc.R'
+        'utils-log.R' 'utils-storage.R'
+VignetteBuilder: knitr
+Depends: R (>= 4.3.0)
+Suggests: devtools, geosphere, graphics, knitr, mnormt, ncdf4, rlang,
+        rmarkdown, suncalc, tidyverse, tinytest, utils, viridisLite
+NeedsCompilation: no
+Packaged: 2025-03-03 15:59:09 UTC; Jakob.Jentschke
+Author: Jakob Jentschke [aut, cre],
+  FVA BW, Abt. Waldschutz [cph, fnd]
+Maintainer: Jakob Jentschke <jakob.jentschke@forst.bwl.de>
+Repository: CRAN
+Date/Publication: 2025-03-03 16:10:02 UTC

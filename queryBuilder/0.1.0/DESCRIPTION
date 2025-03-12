@@ -1,0 +1,40 @@
+Package: queryBuilder
+Type: Package
+Title: Programmatic Way to Construct Complex Filtering Queries
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(
+        given = "Krystian", family = "Igras",
+        email = "krystian8207@gmail.com",
+        role = c("aut", "cre")
+      ),
+      person(
+       given = "Damien", family = "Sorel", 
+       email = "damien@sorel.me",
+       role = "cph", 
+       comment = "Syntax for defining queries using rules and groups as included in 'jQuery-QueryBuilder' JavaScript framework."
+      )
+    )
+Maintainer: Krystian Igras <krystian8207@gmail.com>
+Description: Syntax for defining complex filtering expressions in a programmatic way.
+  A filtering query, built as a nested list configuration, can be easily stored in other formats like 'YAML' or 'JSON'.
+  What's more, it's possible to convert such configuration to a valid expression that can be applied to 
+  popular 'dplyr' package operations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: utils, magrittr, rlang, dplyr, glue, purrr
+Collate: 'queryBuilder-package.R' 'utils.R' 'operators.R'
+        'conditions.R' 'config.R' 'rules_and_groups.R'
+        'parse_results.R'
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-23 13:54:55 UTC; krystiai
+Author: Krystian Igras [aut, cre],
+  Damien Sorel [cph] (Syntax for defining queries using rules and groups
+    as included in 'jQuery-QueryBuilder' JavaScript framework.)
+Repository: CRAN
+Date/Publication: 2024-09-24 19:10:02 UTC

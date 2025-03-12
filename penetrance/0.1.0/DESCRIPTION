@@ -1,0 +1,35 @@
+Package: penetrance
+Type: Package
+Title: Methods for Penetrance Estimation in Family-Based Studies
+Version: 0.1.0
+Depends: R (>= 3.5.0)
+Imports: clipp, stats, parallel, MASS, kinship2 (>= 1.8.5), graphics,
+        grDevices
+Authors@R: c(
+    person("Nicolas", "Kubista", email = "bmendel@jimmy.harvard.edu", role = c("aut", "cre")),
+    person("BayesMendel", "Lab", role = "aut"))
+Description: Implements statistical methods for estimating disease penetrance in 
+    family-based studies. Penetrance refers to the probability of disease§
+    manifestation in individuals carrying specific genetic variants. The package 
+    provides tools for age-specific penetrance estimation, handling missing data, 
+    and accounting for ascertainment bias in family studies.
+    Cite as: Kubista, N., Braun, D. & Parmigiani, G. (2024) <doi:10.48550/arXiv.2411.18816>.
+License: GPL-3
+URL: https://github.com/nicokubi/penetrance,
+        https://nicokubi.github.io/penetrance/
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+SystemRequirements: C++11
+Suggests: knitr, rmarkdown, scales, ggplot2, roxygen2, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-02-26 22:15:48 UTC; nicolaskubista
+Author: Nicolas Kubista [aut, cre],
+  BayesMendel Lab [aut]
+Maintainer: Nicolas Kubista <bmendel@jimmy.harvard.edu>
+Repository: CRAN
+Date/Publication: 2025-03-03 11:40:05 UTC

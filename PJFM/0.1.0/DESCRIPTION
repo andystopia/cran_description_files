@@ -1,0 +1,27 @@
+Package: PJFM
+Type: Package
+Title: Variational Inference for High-Dimensional Joint Frailty Model
+Version: 0.1.0
+Authors@R: person(given = "Jiehuan",
+                  family = "Sun",
+                  role = c("aut", "cre"),
+                  email = "jiehuan.sun@gmail.com")
+Maintainer: Jiehuan Sun <jiehuan.sun@gmail.com>
+Description: Joint frailty models have been widely used to study the associations between recurrent events and a survival outcome. However, existing joint frailty models only consider one or a few recurrent events
+    and cannot deal with high-dimensional recurrent events. This package can be used to fit our recently developed penalized joint frailty model that can handle high-dimensional recurrent events. 
+    Specifically, an adaptive lasso penalty is imposed on the parameters for the effects of the recurrent events on the survival outcome, which allows for variable selection. 
+    Also, our algorithm is computationally efficient, which is based on the Gaussian variational approximation method.
+Depends: R (>= 3.6.0)
+Imports: Rcpp (>= 1.0.0), survival(>= 3.2), statmod(>= 1.4), pracma(>=
+        2.2), Matrix(>= 1.3)
+LinkingTo: Rcpp, RcppArmadillo, RcppEnsmallen
+Suggests: splines
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-11-05 05:24:37 UTC; JiehuanSun
+Author: Jiehuan Sun [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-11-06 21:00:06 UTC

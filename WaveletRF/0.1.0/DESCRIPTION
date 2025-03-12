@@ -1,0 +1,18 @@
+Package: WaveletRF
+Type: Package
+Title: Wavelet-RF Hybrid Model for Time Series Forecasting
+Version: 0.1.0
+Authors@R: c(person("Ranjit Kumar", "Paul", role = c("aut","cre"), email = "ranjitstat@gmail.com"),
+    person("Md", "Yeasin", role = "aut", email = "yeasin.iasri@gmail.com"))
+Author: Ranjit Kumar Paul [aut, cre],
+  Md Yeasin [aut]
+Maintainer: Ranjit Kumar Paul <ranjitstat@gmail.com>
+Description: The Wavelet Decomposition followed by Random Forest Regression (RF) models have been applied for time series forecasting. The maximum overlap discrete wavelet transform (MODWT) algorithm was chosen as it works for any length of the series. The series is first divided into training and testing sets. In each of the wavelet decomposed series, the  supervised machine learning approach namely random forest was employed to train the model. This package also provides accuracy metrics in the form of Root Mean Square Error (RMSE) and Mean Absolute Prediction Error (MAPE). This package is based on the algorithm of Ding et al. (2021) <DOI: 10.1007/s11356-020-12298-3>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: stats, wavelets, fracdiff, forecast, randomForest, tsutils
+NeedsCompilation: no
+Packaged: 2022-02-19 05:43:53 UTC; yeasi
+Repository: CRAN
+Date/Publication: 2022-02-22 07:30:02 UTC

@@ -1,0 +1,48 @@
+Package: power.transform
+Title: Location and Scale Invariant Power Transformations
+Version: 1.0.0
+Authors@R: 
+    c(
+      person("Alex", "Zwanenburg",
+           email = "alexander.zwanenburg@nct-dresden.de",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0342-9545")),
+      person("Steffen", "Löck", role="aut"),
+      person("German Cancer Research Center (DKFZ)", role="cph")
+    )
+Description: 
+    Location- and scale-invariant Box-Cox and Yeo-Johnson power transformations
+    allow for transforming variables with distributions distant from 0 to
+    normality. Transformers are implemented as S4 objects. These allow for
+    transforming new instances to normality after optimising fitting parameters
+    on other data. A test for central normality allows for rejecting 
+    transformations that fail to produce a suitably normal distribution, 
+    independent of sample number.
+URL: https://github.com/oncoray/power.transform
+BugReports: https://github.com/oncoray/power.transform/issues
+License: EUPL
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: data.table, methods, rlang (>= 1.0.0), nloptr
+Collate: 'TransformationObjects.R' 'TransformationYeoJohnson.R'
+        'TransformationBoxCox.R' 'AccessorsMutatorsLambda.R'
+        'AccessorsMutatorsScale.R' 'AccessorsMutatorsShift.R'
+        'AccessorsTransformationMethod.R' 'Checks.R' 'FindParameters.R'
+        'GoodnessOfFit.R' 'ParameterEstimators.R'
+        'ParameterEstimatorEDF.R' 'ParameterEstimatorMLE.R'
+        'ParameterEstimatorRaymaekers.R'
+        'ParameterEstimatorSkewnessKurtosis.R' 'PlotQQPlot.R'
+        'PlotResidualPlot.R' 'PlotUtilities.R'
+        'TransformationSkeleton.R' 'Utilities.R' 'WeightingFunctions.R'
+        'WeightingFunctionParameters.R' 'power.transform-package.R'
+Suggests: ggplot2 (>= 3.4.0), testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2024-09-11 07:24:33 UTC; alexz
+Author: Alex Zwanenburg [aut, cre] (<https://orcid.org/0000-0002-0342-9545>),
+  Steffen Löck [aut],
+  German Cancer Research Center (DKFZ) [cph]
+Maintainer: Alex Zwanenburg <alexander.zwanenburg@nct-dresden.de>
+Repository: CRAN
+Date/Publication: 2024-09-13 18:20:02 UTC

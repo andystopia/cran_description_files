@@ -1,0 +1,28 @@
+Package: winr
+Type: Package
+Title: Randomization-Based Covariance Adjustment of Win Statistics
+Version: 1.0.0
+Authors@R: 
+  c(person("Ann Marie K.", "Weideman", email = "anndo1@umbc.edu", role = c("aut", "cre")),
+    person("Elaine K.", "Kowalewski", role = "aut"),
+    person("Gary G.", "Koch", role = "aut"))
+Author: Ann Marie K. Weideman [aut, cre],
+  Elaine K. Kowalewski [aut],
+  Gary G. Koch [aut]
+Maintainer: Ann Marie K. Weideman <anndo1@umbc.edu>
+Description: A multi-visit clinical trial may collect participant responses on an ordinal scale and may utilize a stratified design, such as randomization within centers, to assess treatment efficacy across multiple visits. Baseline characteristics may be strongly associated with the outcome, and adjustment for them can improve power. The win ratio (ignores ties) and the win odds (accounts for ties) can be useful when analyzing these types of data from randomized controlled trials. This package provides straightforward functions for adjustment of the win ratio and win odds for stratification and baseline covariates, facilitating the comparison of test and control treatments in multi-visit clinical trials. For additional information concerning the methodologies and applied examples within this package, please refer to the following publications:
+	1. Weideman, A.M.K., Kowalewski, E.K., & Koch, G.G. (2024). “Randomization-based covariance adjustment of win ratios and win odds for 	randomized multi-visit studies with ordinal outcomes.” Journal of Statistical Research, 58(1), 33–48. <doi:10.3329/jsr.v58i1.75411>.
+	2. Kowalewski, E.K., Weideman, A.M.K., & Koch, G.G. (2023). “SAS macro for randomization-based methods for covariance and stratified adjustment 	of win ratios and win odds for ordinal outcomes.” SESUG 2023 Proceedings, Paper 139-2023.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: Rdpack, tidyr, dplyr
+RdMacros: Rdpack
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-10-14 02:31:57 UTC; anndo
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-10-16 18:10:02 UTC

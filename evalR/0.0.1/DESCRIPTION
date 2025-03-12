@@ -1,0 +1,21 @@
+Package: evalR
+Type: Package
+Title: Evaluation of Unverified Code
+Version: 0.0.1
+Authors@R: c(person(given = "Numerious Inc.",
+             role = c("cph", "fnd")),person("Trevor", "Olsen", email = "trevor@numerious.com", role =c("aut", "cre"))   ) 
+Description: The purpose of this package is to generate trees and validate unverified code. Trees are made by parsing a statement into a verification tree data structure. This will make it easy to port the statement into another language. Safe statement evaluations are done by executing the verification trees.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Imports: Rcpp (>= 1.0.1)
+LinkingTo: Rcpp
+Suggests: testthat, rmarkdown, knitr, tufte, microbenchmark
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-08-24 21:20:52 UTC; tlols
+Author: Numerious Inc. [cph, fnd],
+  Trevor Olsen [aut, cre]
+Maintainer: Trevor Olsen <trevor@numerious.com>
+Repository: CRAN
+Date/Publication: 2022-08-25 09:32:34 UTC

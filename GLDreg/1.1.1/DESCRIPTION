@@ -1,0 +1,18 @@
+Package: GLDreg
+Type: Package
+Title: Fit GLD Regression/Quantile/AFT Model to Data
+LazyData: yes
+Version: 1.1.1
+Date: 2024-01-23
+Authors@R: c(person("Steve", "Su", role = c("aut", "cre","cph"), email = "allegro.su@gmail.com", comment=c(ORCID = "0000-0002-3368-4926")),person("R", "Core Team", role = "aut"))
+Maintainer: Steve Su <allegro.su@gmail.com>
+Depends: GLDEX (>= 2.0.0.5), ddst, grDevices, graphics, stats
+Suggests: MASS, quantreg
+Description: Owing to the rich shapes of Generalised Lambda Distributions (GLDs), GLD standard/quantile/Accelerated Failure Time (AFT) regression is a competitive flexible model compared to standard/quantile/AFT regression. The proposed method has some major advantages: 1) it provides a reference line which is very robust to outliers with the attractive property of zero mean residuals and 2) it gives a unified, elegant quantile regression model from the reference line with smooth regression coefficients across different quantiles. For AFT model, it also eliminates the needs to try several different AFT models, owing to the flexible shapes of GLD. The goodness of fit of  the proposed model can be assessed via QQ plots and Kolmogorov-Smirnov tests and data driven smooth test, to ensure the appropriateness of the statistical inference under consideration. Statistical distributions of coefficients of the GLD regression line are obtained using simulation, and interval estimates are obtained directly from simulated data.  References include the following: Su (2015) "Flexible Parametric Quantile Regression Model" <doi:10.1007/s11222-014-9457-1>, Su (2021) "Flexible parametric accelerated failure time model"<doi:10.1080/10543406.2021.1934854>.
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2024-01-22 23:52:01 UTC; allegro
+Author: Steve Su [aut, cre, cph] (<https://orcid.org/0000-0002-3368-4926>),
+  R Core Team [aut]
+Repository: CRAN
+Date/Publication: 2024-01-23 00:33:05 UTC

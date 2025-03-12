@@ -1,0 +1,23 @@
+Package: PNAR
+Type: Package
+Title: Poisson Network Autoregressive Models
+Version: 1.7
+Date: 2024-09-05
+Authors@R: c(
+           person( "Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr" ),
+           person( "Mirko", "Armillotta", role = c("aut", "cph"), email = "m.armillotta@vu.nl" ),
+           person( "Konstantinos", "Fokianos", role = c("aut"), email = "fokianos@ucy.ac.cy" ) )
+Author: Michail Tsagris [aut, cre],
+  Mirko Armillotta [aut, cph],
+  Konstantinos Fokianos [aut]
+Maintainer: Michail Tsagris <mtsagris@uoc.gr>
+Description: Quasi likelihood-based methods for estimating linear and log-linear Poisson Network Autoregression models with p lags and covariates. Tools for testing the linearity versus several non-linear alternatives. Tools for simulation of multivariate count distributions, from linear and non-linear PNAR models, by using a specific copula construction. References include: Armillotta, M. and K. Fokianos (2023). "Nonlinear network autoregression". Annals of Statistics, 51(6): 2526--2552. <doi:10.1214/23-AOS2345>. Armillotta, M. and K. Fokianos (2024). "Count network autoregression". Journal of Time Series Analysis, 45(4): 584--612. <doi:10.1111/jtsa.12728>. Armillotta, M., Tsagris, M. and Fokianos, K. (2024). "Inference for Network Count Time Series with the R Package PNAR". The R Journal, 15/4: 255--269. <doi:10.32614/RJ-2023-094>.
+Depends: R (>= 4.0)
+Imports: doParallel, foreach, igraph, nloptr, parallel, Rfast, Rfast2,
+        stats
+License: GPL (>= 2)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-09-05 07:57:02 UTC; mtsag
+Repository: CRAN
+Date/Publication: 2024-09-05 14:50:22 UTC

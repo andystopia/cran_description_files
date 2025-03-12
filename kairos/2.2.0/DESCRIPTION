@@ -1,0 +1,54 @@
+Package: kairos
+Title: Analysis of Chronological Patterns from Archaeological Count
+        Data
+Version: 2.2.0
+Authors@R: c(
+    person("Nicolas", "Frerebeau", , "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5759-4944")),
+    person("Brice", "Lebrun", , "brice.lebrun@u-bordeaux-montaigne.fr", role = "ctb",
+           comment = c(ORCID = "0000-0001-7503-8685", "Logo designer")),
+    person("Ben", "Marwick", , "bmarwick@uw.edu", role = "ctb",
+           comment = c(ORCID = "0000-0001-7879-4531")),
+    person("Anne", "Philippe", , "anne.philippe@univ-nantes.fr", role = "ctb",
+           comment = c(ORCID = "0000-0002-5331-5087")),
+    person("Université Bordeaux Montaigne", role = "fnd"),
+    person("CNRS", role = "fnd")
+  )
+Description: A toolkit for absolute and relative dating and analysis of
+    chronological patterns. This package includes functions for
+    chronological modeling and dating of archaeological assemblages from
+    count data. It provides methods for matrix seriation. It also allows
+    to compute time point estimates and density estimates of the
+    occupation and duration of an archaeological site.
+License: GPL (>= 3)
+URL: https://packages.tesselle.org/kairos/,
+        https://github.com/tesselle/kairos
+BugReports: https://github.com/tesselle/kairos/issues
+Depends: R (>= 3.5), dimensio (>= 0.10.1)
+Imports: aion (>= 1.3.0), arkhe (>= 1.9.0), extraDistr, grDevices,
+        methods, stats, utils
+Suggests: folio (>= 1.5.0), knitr, markdown, rsvg, svglite, tabula (>=
+        3.1.1), tinysnapshot, tinytest
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'AllClasses.R' 'AllGenerics.R' 'aoristic.R' 'apportion.R'
+        'coerce.R' 'event_date.R' 'event_model.R' 'event_plot.R'
+        'event_resample.R' 'fit.R' 'kairos-deprecated.R'
+        'kairos-internal.R' 'kairos-package.R' 'mcd.R' 'mutators.R'
+        'plot_time.R' 'reexport.R' 'seriation_assess.R'
+        'seriation_average.R' 'seriation_coerce.R'
+        'seriation_permute.R' 'seriation_rank.R' 'seriation_refine.R'
+        'show.R' 'subset.R' 'validate.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2024-12-10 11:32:35 UTC; nicolas
+Author: Nicolas Frerebeau [aut, cre] (<https://orcid.org/0000-0001-5759-4944>),
+  Brice Lebrun [ctb] (<https://orcid.org/0000-0001-7503-8685>, Logo
+    designer),
+  Ben Marwick [ctb] (<https://orcid.org/0000-0001-7879-4531>),
+  Anne Philippe [ctb] (<https://orcid.org/0000-0002-5331-5087>),
+  Université Bordeaux Montaigne [fnd],
+  CNRS [fnd]
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Repository: CRAN
+Date/Publication: 2024-12-10 12:00:07 UTC

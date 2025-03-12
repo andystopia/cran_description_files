@@ -1,0 +1,21 @@
+Package: lazyData
+Type: Package
+Title: A LazyData Facility
+Version: 1.1.0
+Date: 2016-12-05
+Author: Bill Venables
+Maintainer: Bill Venables <bill.venables@gmail.com>
+Description: Supplies a LazyData facility for packages which have data
+		sets but do not provide LazyData: true.  A single function is
+		is included, requireData, which is a drop-in replacement for
+		base::require, but carrying the additional
+		functionality. By default, it suppresses package
+		startup messages as well.  See argument 'reallyQuitely'.
+Depends: R (>= 2.15.0)
+Imports: utils
+Suggests: mgcv
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2016-12-04 01:13:12 UTC; bill
+Repository: CRAN
+Date/Publication: 2016-12-04 14:52:35

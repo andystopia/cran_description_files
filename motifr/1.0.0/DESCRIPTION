@@ -1,0 +1,47 @@
+Package: motifr
+Title: Motif Analysis in Multi-Level Networks
+Version: 1.0.0
+Date: 2020-12-01
+Authors@R: 
+    c(person(given = "Mario",
+             family = "Angst",
+             role = c("aut", "cre"),
+             email = "mario.angst@gmail.com",
+             comment = c(ORCID = "0000-0002-8297-9827")),
+      person(given = "Tim",
+             family = "Seppelt",
+             role = "aut",
+             email = "seppelt@cs.rwth-aachen.de",
+             comment = c(ORCID = "0000-0002-6447-0568")))
+Description: Tools for motif analysis in multi-level networks.
+    Multi-level networks combine multiple networks in one, e.g.
+    social-ecological networks. Motifs are small configurations of nodes
+    and edges (subgraphs) occurring in networks. 'motifr' can visualize
+    multi-level networks, count multi-level network motifs and compare
+    motif occurrences to baseline models. It also identifies contributions
+    of existing or potential edges to motifs to find critical or missing
+    edges. The package is in many parts an R wrapper for the excellent
+    'SESMotifAnalyser' 'Python' package written by Tim Seppelt.
+License: MIT + file LICENSE
+URL: https://marioangst.github.io/motifr/
+BugReports: https://github.com/marioangst/motifr/issues
+Depends: R (>= 3.5.0)
+Imports: dplyr, ggplot2 (>= 2.1.0), ggraph, igraph, intergraph,
+        network, purrr, RColorBrewer, reshape2, reticulate, rlang,
+        scales, tibble, tidygraph
+Suggests: ergm, knitr, pkgdown, rmarkdown, shiny, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Config/reticulate: list( packages = list( list(package = "sma", pip =
+        TRUE), list(package = "networkx", pip = TRUE) ) )
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.1.1
+SystemRequirements: Python (>= 3.0.0), numpy, pandas
+NeedsCompilation: no
+Packaged: 2020-12-09 10:45:48 UTC; Mario
+Author: Mario Angst [aut, cre] (<https://orcid.org/0000-0002-8297-9827>),
+  Tim Seppelt [aut] (<https://orcid.org/0000-0002-6447-0568>)
+Maintainer: Mario Angst <mario.angst@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-12-10 15:40:02 UTC

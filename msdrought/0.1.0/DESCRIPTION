@@ -1,0 +1,35 @@
+Package: msdrought
+Title: Seasonal Mid-Summer Drought Characteristics
+Version: 0.1.0
+Authors@R: 
+  c(person("Turner", "Uyeda", email = "tuyeda@scu.edu", role = c("aut")),
+  person("Ed", "Maurer", email = "emaurer@scu.edu", role = c("aut", "cre", "cph")),
+  person("Kenneth", "Joseph", email = "knjoseph@scu.edu", role = c("aut")),
+  person("Alex", "Avila", email = "aaavila@scu.edu", role = c("aut"))
+  )
+Description: Characterization of a mid-summer drought (MSD) with precipitation
+    based statistics. The MSD is a phenomenon of decreased rainfall during a 
+    typical rainy season. It is a feature of rainfall in much of Central America
+    and is also found in other locations, typically those with a Mediterranean 
+    climate. Details on the metrics are in Maurer et al. (2022) 
+    <doi:10.5194/hess-26-1425-2022>.
+URL: https://github.com/Turner-SCU/msdrought,
+        https://turner-scu.github.io/msdrought/
+BugReports: https://github.com/Turner-SCU/msdrought/issues
+Depends: R (>= 3.6.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, lubridate, quantmod, signal, stats, xts
+Suggests: dplyr, knitr, rmarkdown, stringr, terra, tidyr, tools, zoo
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-05-22 19:05:43 UTC; tuyeda
+Author: Turner Uyeda [aut],
+  Ed Maurer [aut, cre, cph],
+  Kenneth Joseph [aut],
+  Alex Avila [aut]
+Maintainer: Ed Maurer <emaurer@scu.edu>
+Repository: CRAN
+Date/Publication: 2024-05-27 12:50:02 UTC

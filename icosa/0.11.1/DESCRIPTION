@@ -1,0 +1,40 @@
+Package: icosa
+Title: Global Triangular and Penta-Hexagonal Grids Based on Tessellated
+        Icosahedra
+Version: 0.11.1
+Authors@R: c(
+	person(given="Adam T.", family="Kocsis", role=c("cre", "aut"),
+		   email="adam.t.kocsis@gmail.com", comment=c(ORCID="0000-0002-9028-665X")),
+	person(given="Deutsche Forschungsgemeinschaft", role="fnd"),
+	person(given="FAU GeoZentrum Nordbayern", role="fnd"))
+Collate: zzz.R data.R utils-conversion.R utils-spherical.R
+        utils-vectors.R grid-build.R grid-lookup.R grid-move.R
+        grid-subset.R grid-attributes.R grid-graphs.R grid-sp-lines.R
+        grid-sp-polygons.R grid-sf-polygons.R grid-resample.R
+        data-gridlayer-basic.R data-gridlayer-attributes.R
+        data-gridlayer-groupgen.R data-gridlayer-subset.R
+        data-facelayer-basic.R data-facelayer-graphs.R
+        data-facelayer-resample.R plot-legend.R plot-2d-grid.R
+        plot-2d-data.R plot-rgl-util.R plot-rgl-grid.R
+        plot-rgl-facelayer.R plot-rgl-sp3d.R
+Description: Implementation of icosahedral grids in three dimensions. The spherical-triangular tessellation can be set to create grids with custom resolutions. Both the primary triangular and their inverted penta-hexagonal grids can be calculated. Additional functions are provided that allow plotting of the grids and associated data, the interaction of the grids with other raster and vector objects, and treating the grids as a graphs.
+Depends: R (>= 3.5.0)
+Date: 2024-08-16
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, terra, rgl
+URL: https://icosa-grid.github.io/R-icosa/
+VignetteBuilder: knitr
+RoxygenNote: 7.3.0
+LinkingTo: Rcpp
+Imports: Rcpp, sp, igraph, methods, stats, sf
+NeedsCompilation: yes
+BugReports: https://github.com/icosa-grid/R-icosa/issues
+Maintainer: Adam T. Kocsis <adam.t.kocsis@gmail.com>
+Packaged: 2024-08-16 15:02:13 UTC; root
+Author: Adam T. Kocsis [cre, aut] (<https://orcid.org/0000-0002-9028-665X>),
+  Deutsche Forschungsgemeinschaft [fnd],
+  FAU GeoZentrum Nordbayern [fnd]
+Repository: CRAN
+Date/Publication: 2024-08-16 17:40:06 UTC

@@ -1,0 +1,53 @@
+Package: revise
+Title: Dynamic Revision Letters for 'Rmarkdown' Manuscripts
+Version: 0.1.0
+Authors@R: 
+    c(
+    person(given = "James",
+           family = "Conigrave",
+           role = c("aut", "cre"),
+           email = "james.conigrave@gmail.com",
+           comment = c(ORCID = "0000-0002-8816-6229")),
+    person(given = "Philip",
+           family = "Parker",
+           role = c("aut"),
+           email = "philip.parker@acu.edu.au",
+           comment = c(ORCID = "0000-0002-4604-8566")),
+    person(given = "Taren",
+           family = "Sanders",
+           role = c("aut"),
+           email = "taren.sanders@acu.edu.au",
+           comment = c(ORCID = "0000-0002-4504-6008")),
+    person(given = "Michael",
+           family = "Noetel",
+           role = c("aut"),
+           email = "m.noetel@uq.edu.au",
+           comment = c(ORCID = "0000-0002-6563-8203")),
+    person(given = c("Caspar", "J."),
+           family = "Van Lissa", 
+           role = c("aut"),
+           email = "c.j.vanlissa@tilburguniversity.edu",
+           comment = c(ORCID = "0000-0002-0808-5024"))
+    )
+Description: Extracts tagged text from markdown manuscripts for inclusion in dynamically generated revision letters. Provides an R markdown template based on papaja::revision_letter_pdf() with comment cross-referencing, a system for managing multiple sections of extracted text, and a way to automatically determine the page number of quoted sections from PDF manuscripts.
+License: MIT + file LICENCE
+URL: https://github.com/conig/revise
+BugReports: https://github.com/conig/revise/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: bookdown, dplyr, glue, knitr, papaja, rmarkdown, rstudioapi,
+        stringr, pdftools, officer, xml2, worcs, cli
+Suggests: googledrive, docxtractr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+SystemRequirements: pandoc (>= 1.14) - http://pandoc.org
+NeedsCompilation: no
+Packaged: 2025-03-04 00:40:21 UTC; conig
+Author: James Conigrave [aut, cre] (<https://orcid.org/0000-0002-8816-6229>),
+  Philip Parker [aut] (<https://orcid.org/0000-0002-4604-8566>),
+  Taren Sanders [aut] (<https://orcid.org/0000-0002-4504-6008>),
+  Michael Noetel [aut] (<https://orcid.org/0000-0002-6563-8203>),
+  Caspar J. Van Lissa [aut] (<https://orcid.org/0000-0002-0808-5024>)
+Maintainer: James Conigrave <james.conigrave@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-05 15:50:02 UTC

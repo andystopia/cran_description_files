@@ -1,0 +1,54 @@
+Package: anominate
+Type: Package
+Title: Alpha-NOMINATE Ideal Point Estimator
+Version: 0.7
+Date: 2024-11-21
+Author: Royce Carroll [aut],
+  Christopher Hare [aut, cre],
+  Jeffrey B. Lewis [aut],
+  James Lo [aut],
+  Keith T. Poole [aut],
+  Howard Rosenthal [aut],
+  Carlos Algara [aut],
+  Samuel Fuller [aut]
+Authors@R: c(person(given = "Royce",
+                    family = "Carroll",
+                    role = "aut",
+                    email = "r.carroll@essex.ac.uk"),
+            person(given = "Christopher",
+                    family = "Hare",
+                    role = c("aut", "cre"),
+                    email = "cdhare@ucdavis.edu"),
+            person(given = c("Jeffrey", "B."),
+                    family = "Lewis",
+                    role = "aut",
+                    email = "jblewis@ucla.edu"),
+            person(given = "James",
+                    family = "Lo",
+                    role = "aut",
+                    email = "lojames@usc.edu"),
+            person(given = c("Keith", "T."),
+                    family = "Poole",
+                    role = "aut",
+                    email = "ktpoole@uga.edu"),
+            person(given = "Howard",
+                    family = "Rosenthal",
+                    role = "aut",
+                    email = "hl31@nyu.edu"),
+            person(given = c("Carlos"),
+                    family = "Algara",
+                    role = "aut",
+                    email = "carlos.algara@cgu.edu"),
+            person(given = "Samuel",
+                    family = "Fuller",
+                    role = "aut",
+                    email = "sfuller@fas.harvard.edu"))
+Maintainer: Christopher Hare <cdhare@ucdavis.edu>
+Description: Provides functions to estimate and interpret the alpha-NOMINATE ideal point model developed in Carroll et al. (2013, <doi:10.1111/ajps.12029>). alpha-NOMINATE extends traditional spatial voting frameworks by allowing for a mixture of Gaussian and quadratic utility functions, providing flexibility in modeling political actors' preferences. The package uses Markov Chain Monte Carlo (MCMC) methods for parameter estimation, supporting robust inference about individuals' ideological positions and the shape of their utility functions. It also contains functions to simulate data from the model and to calculate the probability of a vote passing given the ideal points of the legislators/voters and the estimated location of the choice alternatives. 
+License: GPL-2
+Depends: stats, coda, wnominate, pscl, MCMCpack
+URL: https://CRAN.R-project.org/package=anominate
+NeedsCompilation: yes
+Packaged: 2024-11-21 22:20:12 UTC; chare
+Repository: CRAN
+Date/Publication: 2024-11-22 09:20:02 UTC

@@ -1,0 +1,20 @@
+Package: dSTEM
+Type: Package
+Title: Multiple Testing of Local Extrema for Detection of Change Points
+Version: 2.0-1
+Date: 2023-6-20
+Author: Zhibing He <zhibingh@asu.edu>
+Maintainer: Zhibing He <zhibingh@asu.edu>
+Description: Simultaneously detect the number and locations of change points in piecewise linear models under stationary Gaussian noise allowing autocorrelated random noise. The core idea is to transform the problem of detecting change points into the detection of local extrema (local maxima and local minima)through kernel smoothing and differentiation of the data sequence, see Cheng et al. (2020) <doi:10.1214/20-EJS1751>. A low-computational and fast algorithm call 'dSTEM' is introduced to detect change points based on the 'STEM' algorithm in D. Cheng and A. Schwartzman (2017) <doi:10.1214/16-AOS1458>.
+Depends: R (>= 3.1.0)
+Imports: MASS
+URL: https://doi.org/10.1214/20-EJS1751,
+        https://doi.org/10.1214/16-AOS1458
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2023-06-20 19:01:50 UTC; hzb
+Repository: CRAN
+Date/Publication: 2023-06-21 09:00:07 UTC

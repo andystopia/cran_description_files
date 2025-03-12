@@ -1,0 +1,31 @@
+Package: bluebike
+Title: Blue Bike Comprehensive Data
+Version: 0.0.3
+Authors@R: c(
+    person("Ziyue", "Yang", , "zyang2k@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9299-8327")),
+    person("Tianshu", "Zhang", , "tzhang26@smith.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-3004-4472"))
+  )
+Description: Facilitates the importation of the Boston Blue Bike trip data
+    since 2015. Functions include the computation of trip distances of
+    given trip data. It can also map the location of stations within a
+    given radius and calculate the distance to nearby stations. Data is
+    from <https://www.bluebikes.com/system-data>.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: dplyr, janitor, leaflet, lubridate, magrittr, readr, sf,
+        stringr, tidyselect, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-05-04 05:27:12 UTC; ellayoung
+Author: Ziyue Yang [aut, cre] (<https://orcid.org/0000-0002-9299-8327>),
+  Tianshu Zhang [aut] (<https://orcid.org/0000-0002-3004-4472>)
+Maintainer: Ziyue Yang <zyang2k@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-05 06:00:05 UTC

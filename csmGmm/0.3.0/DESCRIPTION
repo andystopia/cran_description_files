@@ -1,0 +1,18 @@
+Package: csmGmm
+Type: Package
+Title: Conditionally Symmetric Multidimensional Gaussian Mixture Model
+Version: 0.3.0
+Authors@R: c(person("Ryan", "Sun", email = "ryansun.work@gmail.com", role = c("aut", "cre")))
+Description: Implements the conditionally symmetric multidimensional Gaussian mixture model (csmGmm) for large-scale testing of composite null hypotheses in genetic association applications such as mediation analysis, pleiotropy analysis, and replication analysis. In such analyses, we typically have J sets of K test statistics where K is a small number (e.g. 2 or 3) and J is large (e.g. 1 million). For each one of the J sets, we want to know if we can reject all K individual nulls. Please see the vignette for a quickstart guide. The paper describing these methods is "Testing a Large Number of Composite Null Hypotheses Using Conditionally Symmetric Multidimensional Gaussian Mixtures in Genome-Wide Studies" by Sun R, McCaw Z, & Lin X (2024, <doi:10.1080/01621459.2024.2422124>). The paper is accepted and published online (but not yet in print) in the Journal of the American Statistical Association as of Dec 1 2024.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: dplyr, mvtnorm, rlang, magrittr
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-02 20:45:12 UTC; rsun3
+Author: Ryan Sun [aut, cre]
+Maintainer: Ryan Sun <ryansun.work@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-03 19:30:02 UTC

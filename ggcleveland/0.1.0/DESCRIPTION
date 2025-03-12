@@ -1,0 +1,41 @@
+Package: ggcleveland
+Title: Implementation of Plots from Cleveland's Visualizing Data Book
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Marcos",
+         family = "Prunello",
+         role = c("aut", "cre"),
+         email = "marcosprunello@gmail.com",
+         comment = c(ORCID = "0000-0002-9611-527X")
+         ),
+  person(given = "Gonzalo",
+         family = "Mari",
+         role = c("aut")
+         )
+  )
+Description: William S. Cleveland's book 'Visualizing Data' is a classic piece 
+	of literature on Exploratory Data Analysis. Although it was written 
+	several decades ago, its content is still relevant as it proposes several 
+	tools which are useful to discover patterns and relationships among the data 
+	under study, and also to assess the goodness of fit o a model.  This package 
+	provides functions to produce the 'ggplot2' versions of the visualization tools 
+	described in this book and is thought to be used in the context of courses on 
+	Exploratory Data Analysis.
+Depends: R (>= 3.6.0)
+Imports: dplyr, tidyr, ggplot2, rlang, magrittr, graphics, readr, egg,
+        vctrs, lattice, tibble, stringr
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/mpru/ggcleveland
+BugReports: https://github.com/mpru/ggcleveland/issues
+RoxygenNote: 7.1.1
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-08-12 14:09:22 UTC; marcos
+Author: Marcos Prunello [aut, cre] (<https://orcid.org/0000-0002-9611-527X>),
+  Gonzalo Mari [aut]
+Maintainer: Marcos Prunello <marcosprunello@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-08-16 07:00:09 UTC

@@ -1,0 +1,23 @@
+Package: palasso
+Version: 1.0.0
+Title: Sparse Regression with Paired Covariates
+Description: Implements sparse regression with paired covariates (<doi:10.1007/s11634-019-00375-6>). The paired lasso is designed for settings where each covariate in one set forms a pair with a covariate in the other set (one-to-one correspondence). For the optional correlation shrinkage, install ashr (<https://github.com/stephens999/ashr>) and CorShrink (<https://github.com/kkdey/CorShrink>) from GitHub (see README).
+Depends: R (>= 3.0.0)
+Imports: glmnet, Matrix, survival
+Suggests: knitr, testthat, rmarkdown, remotes, pROC, edgeR, ashr,
+        CorShrink
+Authors@R: person(given="Armin",family="Rauschenberger",email="armin.rauschenberger@uni.lu",role=c("aut","cre"),comment=c(ORCID="0000-0001-6498-4801"))
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+URL: https://github.com/rauschenberger/palasso,
+        https://rauschenberger.github.io/palasso/
+BugReports: https://github.com/rauschenberger/palasso/issues
+NeedsCompilation: no
+Packaged: 2024-09-26 12:43:23 UTC; armin.rauschenberger
+Author: Armin Rauschenberger [aut, cre]
+    (<https://orcid.org/0000-0001-6498-4801>)
+Maintainer: Armin Rauschenberger <armin.rauschenberger@uni.lu>
+Repository: CRAN
+Date/Publication: 2024-09-26 22:40:02 UTC

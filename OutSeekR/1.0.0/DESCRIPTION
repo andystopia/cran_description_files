@@ -1,0 +1,34 @@
+Package: OutSeekR
+Type: Package
+Title: Statistical Approach to Outlier Detection in RNA-Seq and Related
+        Data
+Version: 1.0.0
+Date: 2024-11-15
+Authors@R: c(
+    person("Jee Yun", "Han", email = "jyhan@mednet.ucla.edu", role = "aut"),
+    person("John", "Sahrmann", email = "jsahrmann@mednet.ucla.edu", role = "aut"),
+    person("Jaron", "Arbet", email = "jarbet@mednet.ucla.edu", role = "ctb"),
+    person("Paul", "Boutros", email = "pboutros@mednet.ucla.edu", role = c("aut", "cre", "cph"))
+    )
+Description: An approach to outlier detection in RNA-seq and related data
+    based on five statistics. 'OutSeekR' implements an outlier test by comparing
+    the distributions of these statistics in observed data with those of
+    simulated null data.
+Depends: R (>= 2.10)
+Imports: future.apply, gamlss, gamlss.dist, lsa, truncnorm
+Suggests: future, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-15 23:56:34 UTC; danknight
+Author: Jee Yun Han [aut],
+  John Sahrmann [aut],
+  Jaron Arbet [ctb],
+  Paul Boutros [aut, cre, cph]
+Maintainer: Paul Boutros <pboutros@mednet.ucla.edu>
+Repository: CRAN
+Date/Publication: 2024-11-19 09:10:05 UTC

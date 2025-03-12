@@ -1,0 +1,32 @@
+Package: satres
+Title: Grouping Satellite Bands by Spectral and Spatial Resolution
+Version: 1.1.1
+Authors@R: c(
+    person("Jose", "Samos", , "jsamos@ugr.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4457-3439")),
+    person("Universidad de Granada", role = "cph")
+  )
+Description: Given raster files directly downloaded from various websites,
+    it generates a raster structure where it merges them if they are tiles
+    of the same scene and classifies them according to their spectral and
+    spatial resolution for easy access by name.
+License: MIT + file LICENSE
+URL: https://josesamos.github.io/satres/,
+        https://github.com/josesamos/satres
+BugReports: https://github.com/josesamos/satres/issues
+Depends: R (>= 2.10)
+Imports: sf, snakecase, terra, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-08 18:28:07 UTC; joses
+Author: Jose Samos [aut, cre] (<https://orcid.org/0000-0002-4457-3439>),
+  Universidad de Granada [cph]
+Maintainer: Jose Samos <jsamos@ugr.es>
+Repository: CRAN
+Date/Publication: 2024-01-09 01:00:02 UTC

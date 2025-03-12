@@ -1,0 +1,27 @@
+Package: bossR
+Title: Biomarker Optimal Segmentation System
+Version: 1.0.4
+Authors@R: c(person("Liuyi", "Lan",,"lly_wine@126.com", role = c("aut"),
+           comment = c()),
+     person("Xing", "Li",,"lix491@mail.usask.ca", role = c("aut" ),
+           comment = c(ORCID = "0000-0002-4186-7909")),
+     person("Xuanjin", "Cheng",,"jecheng@bcgsc.ca", role = c("aut"),
+           comment = c()),
+     person("Xuekui", "Zhang",,"ubcxzhang@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4728-2343")))
+Description: The Biomarker Optimal Segmentation System R package, 'bossR', is designed for precision medicine, helping to identify individual traits using biomarkers. It focuses on determining the most effective cutoff value for a continuous biomarker, which is crucial for categorizing patients into two groups with distinctly different clinical outcomes. The package simultaneously finds the optimal cutoff from given candidate values and tests its significance. Simulation studies demonstrate that 'bossR' offers statistical power and false positive control non-inferior to the permutation approach (considered the gold standard in this field), while being hundreds of times faster. 
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: mvtnorm,survival,stats
+Depends: R (>= 2.10),
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-01-12 19:24:16 UTC; xzhang
+Author: Liuyi Lan [aut],
+  Xing Li [aut] (<https://orcid.org/0000-0002-4186-7909>),
+  Xuanjin Cheng [aut],
+  Xuekui Zhang [aut, cre] (<https://orcid.org/0000-0003-4728-2343>)
+Maintainer: Xuekui Zhang <ubcxzhang@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-15 16:00:02 UTC

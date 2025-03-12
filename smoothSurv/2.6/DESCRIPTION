@@ -1,0 +1,35 @@
+Package: smoothSurv
+Version: 2.6
+Date: 2023-12-13
+Title: Survival Regression with Smoothed Error Distribution
+Authors@R: c(
+           person(given = "Arnošt", family = "Komárek", role = c("aut", "cre"), email = "arnost.komarek@mff.cuni.cz", comment = c(ORCID = "0000-0001-8778-3762")),
+           person(given = "Kevin M.", family = "Quinn", role = c("ctb", "cph"), comment = "Scythe_*.[h,cpp] files in the /src subdirectory"),
+           person(given = "Andrew D.", family = "Martin", role = c("ctb", "cph"), comment = "Scythe_*.[h,cpp] files in the /src subdirectory"),
+           person(given = "Daniel B.", family = "Pemstein", role = c("ctb", "cph"), comment = "Scythe_*.[h,cpp] files in the /src subdirectory"),
+	   person(given = "Berwin A.", family = "Turlach", role = "ctb", comment = "Basis of the code in /src/solve.QP.compact.cpp"))
+Depends: R (>= 3.0.0), survival
+Imports: graphics, stats
+Description: Contains, as a main contribution, a function to fit
+             a regression model with possibly right, left or interval
+             censored observations and with the error distribution
+             expressed as a mixture of G-splines. Core part
+             of the computation is done in compiled 'C++' written
+             using the 'Scythe' Statistical Library Version 0.3.
+Encoding: UTF-8
+License: GPL (>= 2)
+URL: https://msekce.karlin.mff.cuni.cz/~komarek/
+NeedsCompilation: yes
+Packaged: 2023-12-13 14:10:54 UTC; komarek
+Author: Arnošt Komárek [aut, cre] (<https://orcid.org/0000-0001-8778-3762>),
+  Kevin M. Quinn [ctb, cph] (Scythe_*.[h,cpp] files in the /src
+    subdirectory),
+  Andrew D. Martin [ctb, cph] (Scythe_*.[h,cpp] files in the /src
+    subdirectory),
+  Daniel B. Pemstein [ctb, cph] (Scythe_*.[h,cpp] files in the /src
+    subdirectory),
+  Berwin A. Turlach [ctb] (Basis of the code in
+    /src/solve.QP.compact.cpp)
+Maintainer: Arnošt Komárek <arnost.komarek@mff.cuni.cz>
+Repository: CRAN
+Date/Publication: 2023-12-13 15:30:02 UTC

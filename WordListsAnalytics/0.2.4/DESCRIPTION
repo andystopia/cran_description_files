@@ -1,0 +1,40 @@
+Package: WordListsAnalytics
+Type: Package
+Title: Multiple Data Analysis Tools for Property Listing Tasks
+Version: 0.2.4
+Authors@R: c(
+    person("Sebastian","Moreno",role = c("aut", "cre"),
+           email = "sebastian.moreno.araya@gmail.com"),
+    person("Cristobal", "Heredia", role = "aut"), 
+    person("Enrique", "Canessa", role = "ths"),
+    person("Sergio", "Chaigneau", role = "ths")
+    )
+Maintainer: Sebastian Moreno <sebastian.moreno.araya@gmail.com>
+Description: Application to estimate statistical values using properties provided by a group of individuals to describe
+  concepts using 'shiny'. It estimates the underlying distribution to generate new descriptive words
+  Canessa et al. (2023) <doi:10.3758/s13428-022-01811-w>, applies a new clustering model, and uses simulations to estimate 
+  the probability that two persons describe the same words based on their descriptions
+  Canessa et al. (2022) <doi:10.3758/s13428-022-02030-z>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: ggplot2, readr, dplyr, reshape2, grDevices, stats, graphics,
+        lsa
+Depends: shiny, R (>= 4.2.0)
+Collate: 'CPN_27.R' 'CPN_120.R' 'tab_upload_data.R' 'tab_estimations.R'
+        'tab_estimate_participants.R' 'tab_property_simulator.R'
+        'tab_pa_data.R' 'tab_pa_values.R' 'tab_cluster_image.R'
+        'tab_cosine_distance.R' 'tab_t_c_a_calculator.R' 'PLT_ui.R'
+        'fun_generate_norms.R' 'fun_estimate_participant.R'
+        'fun_property_simulator.R' 'fun_pa_function.R'
+        'fun_threshold_graph.R' 'fun_cluster_image_function.R'
+        'fun_tca_calculator.R' 'PLT_server.R' 'PLT_app.R'
+NeedsCompilation: no
+Packaged: 2024-08-28 20:48:46 UTC; cristobalheredia
+Author: Sebastian Moreno [aut, cre],
+  Cristobal Heredia [aut],
+  Enrique Canessa [ths],
+  Sergio Chaigneau [ths]
+Repository: CRAN
+Date/Publication: 2024-08-30 11:40:09 UTC

@@ -1,0 +1,38 @@
+Type: Package
+Package: geogenr
+Title: Generator from American Community Survey Geodatabases
+Version: 2.0.1
+Authors@R: c(
+    person("Jose", "Samos", , "jsamos@ugr.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4457-3439")),
+    person("Universidad de Granada", role = "cph")
+  )
+Description: The American Community Survey (ACS)
+    <https://www.census.gov/programs-surveys/acs> offers geodatabases with
+    geographic information and associated data of interest to researchers
+    in the area. The goal of this package is to generate objects that
+    allow us to access and consult the information available in various
+    formats, such as in 'GeoPackage' format or in multidimensional 'ROLAP'
+    (Relational On-Line Analytical Processing) star format.
+License: MIT + file LICENSE
+URL: https://josesamos.github.io/geogenr/,
+        https://github.com/josesamos/geogenr
+BugReports: https://github.com/josesamos/geogenr/issues
+Depends: R (>= 2.10)
+Imports: dplyr, geomultistar, httr, readr, rolap, sf, stats, stringr,
+        tibble, tidyr, tidyselect, utils
+Suggests: DBI, dbplyr, DiagrammeR, DiagrammeRsvg, dm, knitr, pander,
+        rmarkdown, RSQLite, snakecase, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-08 19:34:51 UTC; joses
+Author: Jose Samos [aut, cre] (<https://orcid.org/0000-0002-4457-3439>),
+  Universidad de Granada [cph]
+Maintainer: Jose Samos <jsamos@ugr.es>
+Repository: CRAN
+Date/Publication: 2024-01-09 01:20:03 UTC

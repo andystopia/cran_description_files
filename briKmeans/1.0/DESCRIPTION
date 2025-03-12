@@ -1,0 +1,27 @@
+Package: briKmeans
+Version: 1.0
+Date: 2022-07-20
+Title: Package for Brik, Fabrik and Fdebrik Algorithms to Initialise
+        Kmeans
+Author: Javier Albert Smet <javas@kth.se> and
+        Aurora Torrente <etorrent@est-econ.uc3m.es>.
+        Alice Parodi, Mirco Patriarca, Laura Sangalli, Piercesare Secchi, 
+        Simone Vantini and Valeria Vitelli, as contributors.
+Maintainer: Aurora Torrente <etorrent@est-econ.uc3m.es>
+Depends: R (>= 3.1.0), boot, cluster, depthTools, splines, splines2,
+        stats
+Imports: methods
+Description: Implementation of the BRIk, FABRIk and FDEBRIk algorithms 
+        to initialise k-means. These methods are intended for the 
+        clustering of multivariate and functional data, respectively.
+        They make use of the Modified Band Depth and bootstrap to 
+        identify appropriate initial seeds for k-means, which are 
+        proven to be better options than many techniques in the 
+        literature. Torrente and Romo (2021) <doi:10.1007/s00357-020-09372-3>
+        It makes use of the functions kma and kma.similarity, from the 
+        archived package fdakma, by Alice Parodi et al.
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2022-07-20 23:46:42 UTC; mtl
+Repository: CRAN
+Date/Publication: 2022-07-21 08:40:10 UTC

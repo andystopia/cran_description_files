@@ -1,0 +1,32 @@
+Package: AdverseEvents
+Title: 'shiny' Application for Adverse Event Analysis of 'OnCore' Data
+Version: 0.0.4
+Authors@R: c(person("Z", "Thompson", role = c("aut", "cre"),
+                     email = "zachary.thompson@moffitt.org"),
+              person("A", "Obermayer", role = c("aut"),
+                     email = "alyssa.obermayer@moffitt.org"),
+              person("DT", "Chen", role = c("aut"),
+                     email = "dung-tsa.chen@moffitt.org"))
+Author: Z Thompson [aut, cre],
+  A Obermayer [aut],
+  DT Chen [aut]
+Maintainer: Z Thompson <zachary.thompson@moffitt.org>
+Description: An application for analysis of Adverse Events, as described in Chen, et al., (2023) <doi:10.3390/cancers15092521>.
+             The required data for the application includes demographics, follow up, adverse event, drug administration and optional tumor measurement data.
+             The app can produce swimmers plots of adverse events, Kaplan-Meier plots and Cox Proportional Hazards model results
+             for the association of adverse event biomarkers and overall survival and progression free survival.
+             The adverse event biomarkers include occurrence of grade 3, low grade (1-2), and treatment related adverse events.
+             Plots and tables of results are downloadable.
+URL: https://github.com/dungtsa/AdverseEvents
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.3.2
+Imports: shiny, shinycssloaders, shinyjs, tidyverse, rio, janitor, DT,
+        skimr, ggpubr, ggnewscale, survival, survminer, ggplot2,
+        shinythemes, ggrepel, lubridate
+NeedsCompilation: no
+Packaged: 2024-11-14 17:33:31 UTC; thompszj
+Repository: CRAN
+Date/Publication: 2024-11-20 22:50:02 UTC

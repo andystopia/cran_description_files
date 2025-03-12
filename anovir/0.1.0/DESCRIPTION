@@ -1,0 +1,31 @@
+Package: anovir
+Type: Package
+Title: Analysis of Virulence
+Version: 0.1.0
+Authors@R: c(person("Philip", "Agnew", email = "philip.agnew@ird.fr", role = c("aut", "cre")),
+            person("Jimmy","Lopez", email = "jimmy.lopez@ird.fr", role = c("aut")))
+Maintainer: Philip Agnew <philip.agnew@ird.fr>
+Description: Epidemiological population dynamics models traditionally define 
+    a pathogen's virulence as the increase in the per capita rate of mortality 
+    of infected hosts due to infection. This package provides functions 
+    allowing virulence to be estimated by maximum likelihood techniques. The 
+    approach is based on the analysis of relative survival comparing survival 
+    in matching cohorts of infected vs. uninfected hosts (Agnew 2019) 
+    <doi:10.1101/530709>. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: bbmle, R (>= 2.10), stats4
+Suggests: knitr, rmarkdown, stats, testthat
+Collate: 'anovir-package.R' 'private_functions.R' 'nll_recovery.R'
+        'nll_recovery_II.R' 'data_descriptions.R' 'main.R'
+        'play_file.R' 'nll_functions.R' 'nll_frailty_correlated.R'
+VignetteBuilder: knitr
+URL: https://www.biorxiv.org/content/10.1101/530709v1
+NeedsCompilation: no
+Packaged: 2020-10-15 16:10:52 UTC; philipagnew
+Author: Philip Agnew [aut, cre],
+  Jimmy Lopez [aut]
+Repository: CRAN
+Date/Publication: 2020-10-24 08:50:05 UTC

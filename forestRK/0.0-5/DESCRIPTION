@@ -1,0 +1,34 @@
+Package: forestRK
+Version: 0.0-5
+Encoding: UTF-8
+Title: Implements the Forest-R.K. Algorithm for Classification Problems
+Description: Provides functions that calculates common types of splitting
+    criteria used in random forests for classification problems, as well as 
+    functions that make predictions based on a single tree or a Forest-R.K. model; 
+    the package also provides functions to generate importance plot for a 
+    Forest-R.K. model, as well as the 2D multidimensional-scaling plot of 
+    data points that are colour coded by their predicted class types by the 
+    Forest-R.K. model. This package is based on: 
+    Bernard, S., Heutte, L., Adam, S., (2008, ISBN:978-3-540-85983-3) 
+    "Forest-R.K.: A New Random Forest Induction Method", 
+    Fourth International Conference on Intelligent Computing,
+    September 2008, Shanghai, China, pp.430-437.
+Authors@R: c(
+    person("Hyunjin", "Cho", email = "h56cho@uwaterloo.ca", role = c("aut","cre")),
+    person("Rebecca", "Su", email = "y57su@uwaterloo.ca", role = "ctb"))
+Author: Hyunjin Cho [aut, cre],
+  Rebecca Su [ctb]
+Maintainer: Hyunjin Cho <h56cho@uwaterloo.ca>
+Depends: R (>= 3.6.0)
+Imports: igraph, ggplot2, rapportools, partykit, stats, graphics,
+        pkgKitten, knitr, mlbench
+License: GPL (>= 3) | file LICENSE
+Repository: CRAN
+Note: The package is also based on the discussion
+        https://stats.stackexchange.com/questions/168964/building-a-regression-tree-with-r-from-scratch/168967#168967
+RoxygenNote: 6.1.1
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2019-07-18 17:33:49 UTC; jin-dominique
+Date/Publication: 2019-07-19 10:50:02 UTC

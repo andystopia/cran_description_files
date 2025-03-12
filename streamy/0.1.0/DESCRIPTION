@@ -1,0 +1,28 @@
+Package: streamy
+Title: Inline Asynchronous Generator Results into Documents
+Version: 0.1.0
+Authors@R: c(
+    person("Simon", "Couch", , "simon.couch@posit.co", role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Given a 'coro' asynchronous generator instance that produces text,
+    write that text into a document selection in 'RStudio' and 'Positron'. This
+    is particularly helpful for streaming large language model responses into
+    the user's editor.
+License: MIT + file LICENSE
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/simonpcouch/streamy,
+        https://simonpcouch.github.io/streamy/
+BugReports: https://github.com/simonpcouch/streamy/issues
+Imports: cli (>= 3.6.3), coro (>= 1.1.0), rlang, rstudioapi (>=
+        0.17.1), withr
+Suggests: ellmer, knitr, rmarkdown, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2025-02-11 15:24:41 UTC; simoncouch
+Author: Simon Couch [aut, cre],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Simon Couch <simon.couch@posit.co>
+Repository: CRAN
+Date/Publication: 2025-02-11 17:30:01 UTC

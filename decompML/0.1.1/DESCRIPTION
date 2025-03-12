@@ -1,0 +1,46 @@
+Package: decompML
+Type: Package
+Title: Decomposition Based Machine Learning Model
+Version: 0.1.1
+Authors@R: 
+  c(person(given = "Girish Kumar",
+         family = "Jha",
+         role = c("aut", "ctb")),
+  person(given = "Kapil",
+         family = "Choudhary",
+         role =  c("aut", "cre"),
+         email = "kapiliasri@gmail.com"),
+  person(given = "Rajender",
+         family = "Parsad",
+         role =  "ctb"),
+  person(given = "Ronit",
+         family = "Jaiswal",
+         role = "ctb"),
+  person(given = "Rajeev Ranjan",
+         family = "Kumar",
+         role =  "ctb"),
+  person(given = "P",
+         family = "Venkatesh",
+         role =  "ctb"),
+  person(given = "Dwijesh Chandra",
+         family = "Mishra",
+         role =  "ctb"))
+Maintainer: Kapil Choudhary <kapiliasri@gmail.com>
+Description: The hybrid model is a highly effective forecasting approach that integrates decomposition techniques with machine learning to enhance time series prediction accuracy. Each decomposition technique breaks down a time series into multiple intrinsic mode functions (IMFs), which are then individually modeled and forecasted using machine learning algorithms. The final forecast is obtained by aggregating the predictions of all IMFs, producing an ensemble output for the time series. The performance of the developed models is evaluated using international monthly maize price data, assessed through metrics such as root mean squared error (RMSE), mean absolute percentage error (MAPE), and mean absolute error (MAE). For method details see Choudhary, K. et al. (2023). <https://ssca.org.in/media/14_SA44052022_R3_SA_21032023_Girish_Jha_FINAL_Finally.pdf>. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: forecast, nnfor, Rlibeemd, VMDecomp
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2025-02-12 10:43:18 UTC; kapil
+Author: Girish Kumar Jha [aut, ctb],
+  Kapil Choudhary [aut, cre],
+  Rajender Parsad [ctb],
+  Ronit Jaiswal [ctb],
+  Rajeev Ranjan Kumar [ctb],
+  P Venkatesh [ctb],
+  Dwijesh Chandra Mishra [ctb]
+Repository: CRAN
+Date/Publication: 2025-02-18 09:40:02 UTC

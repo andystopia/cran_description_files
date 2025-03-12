@@ -1,0 +1,30 @@
+Package: vindecodr
+Title: Provides an Interface to the Department of Transportation VIN
+        Decoder
+Version: 0.1.1
+Authors@R: 
+    person(given = "Christopher",
+           family = "Burch",
+           role = c("aut", "cre"),
+           email = "christopher.m.burch@gmail.com",
+           comment = c(ORCID = "0000-0001-6934-3325"))
+Description: Provides a programmatic interface in R for the US Department of 
+    Transportation (DOT) National Highway Transportation Safety Administration 
+    (NHTSA) vehicle identification number (VIN) API, located at 
+    <https://vpic.nhtsa.dot.gov/api/>. 
+    The API can decode up to 50 vehicle identification numbers in one call, and 
+    provides manufacturer information about the vehicles, including make, model, 
+    model year, and gross vehicle weight rating (GVWR).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: httr
+Suggests: purrr, stringr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-11-23 20:44:05 UTC; chris
+Author: Christopher Burch [aut, cre] (<https://orcid.org/0000-0001-6934-3325>)
+Maintainer: Christopher Burch <christopher.m.burch@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-11-25 14:00:03 UTC

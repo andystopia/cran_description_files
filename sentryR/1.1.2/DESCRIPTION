@@ -1,0 +1,25 @@
+Package: sentryR
+Type: Package
+Title: Send Errors and Messages to Sentry
+Version: 1.1.2
+Authors@R: c(
+  person("Joao", "Santiago", email = "me@jcpsantiago.xyz", role = c("aut", "cre")),
+  person("Daniel", "Kirsch", role = "aut", email = "daniel@billie.io"))
+Description: Unofficial client for 'Sentry' <https://sentry.io>,
+  a self-hosted or cloud-based error-monitoring service. It will inform about
+  errors in real-time, and includes integration with the 'Plumber' package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: true
+URL: https://github.com/jcpsantiago/sentryR
+BugReports: https://github.com/jcpsantiago/sentryR/issues
+RoxygenNote: 7.2.3
+Imports: httr, jsonlite, stringr, stats, tibble, uuid
+Suggests: httptest, mockery, testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2023-12-18 05:11:05 UTC; santi
+Author: Joao Santiago [aut, cre],
+  Daniel Kirsch [aut]
+Maintainer: Joao Santiago <me@jcpsantiago.xyz>
+Repository: CRAN
+Date/Publication: 2023-12-18 07:50:03 UTC

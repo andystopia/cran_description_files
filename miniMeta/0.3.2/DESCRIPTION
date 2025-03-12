@@ -1,0 +1,36 @@
+Package: miniMeta
+Type: Package
+Title: Web Application to Run Meta-Analyses
+Version: 0.3.2
+Date: 2024-06-23
+Authors@R: 
+    c(person(given="Theodore", family="Lytras", 
+             email="thlytras@gmail.com", role=c("aut","cre"), 
+             comment=c(ORCID="0000-0002-4146-4122")))
+Maintainer: Theodore Lytras <thlytras@gmail.com>
+Imports: shiny, shinyjs, shinyWidgets, colourpicker, rhandsontable,
+        metafor, markdown, WriteXLS, readxl, jsonlite, grDevices,
+        methods, stats
+Depends: meta (>= 7.0-0), R (>= 4.0.0)
+Description: Shiny web application to run meta-analyses. 
+    Essentially a graphical front-end to package 'meta' for R. 
+    Can be useful as an educational tool, and for quickly 
+    analyzing and sharing meta-analyses. 
+    Provides output to quickly fill in GRADE (Grading of 
+    Recommendations, Assessment, Development and Evaluations)
+    Summary-of-Findings tables. 
+    Importantly, it allows further processing of the results 
+    inside R, in case more specific analyses are needed.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/thlytras/miniMeta
+BugReports: https://github.com/thlytras/miniMeta/issues
+NeedsCompilation: no
+Packaged: 2024-06-22 19:55:01 UTC; bones
+Author: Theodore Lytras [aut, cre] (<https://orcid.org/0000-0002-4146-4122>)
+Repository: CRAN
+Date/Publication: 2024-06-22 23:50:02 UTC

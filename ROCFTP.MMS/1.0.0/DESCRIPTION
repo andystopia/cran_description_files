@@ -1,0 +1,24 @@
+Package: ROCFTP.MMS
+Type: Package
+Title: Perfect Sampling
+Version: 1.0.0
+Authors@R: c(person("Majid", "Nabipoor", email = "nabipoor@ualberta.ca", role=c("aut", "cre","cph")), 
+           person("Duncan", "Murdoch", email="murdoch.duncan@gmail.com", role=c("aut")))
+Maintainer: Majid Nabipoor <nabipoor@ualberta.ca>
+Description: The algorithm provided in this package generates perfect sample for unimodal or multimodal posteriors. Read Once Coupling From The Past, with Metropolis-Multishift is used to generate a perfect sample for a given posterior density based on the two extreme starting paths, minimum and maximum of the most interest range of the posterior. It uses the monotone random operation of multishift coupler which allows to sandwich all of the state space in one point. It means both Markov Chains starting from the maximum and minimum will be coalesced. The generated sample is independent from the starting points. It is useful for mixture distributions too. The output of this function is a real value as an exact draw from the posterior distribution.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-us
+URL: https://github.com/nabipoor/ROCFTP.MMS
+Depends: R (>= 4.0.0)
+Imports: stats (>= 4.0.0), vctrs (>= 0.3.8)
+RoxygenNote: 7.1.1
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Collate: 'LR.R' 'multishift.R' 'M.MSH.sampler.R' 'CFTP.R'
+        'ROCFTP.MMS.R'
+NeedsCompilation: no
+Packaged: 2022-02-17 15:41:55 UTC; mnabi
+Author: Majid Nabipoor [aut, cre, cph],
+  Duncan Murdoch [aut]
+Repository: CRAN
+Date/Publication: 2022-02-18 08:00:08 UTC

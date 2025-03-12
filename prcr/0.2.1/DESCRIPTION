@@ -1,0 +1,30 @@
+Package: prcr
+Type: Package
+Title: Person-Centered Analysis
+Version: 0.2.1
+Authors@R: c(
+    person(c("Joshua", "M"), "Rosenberg", role = c("aut", "cre"), email = "jmichaelrosenberg@gmail.com"),
+    person(c("Jennifer", "A"), "Schmidt", role = "aut", email = "jaschmid@msu.edu"),
+    person(c("Patrick", "N"), "Beymer", role = "aut", email = "beymerpa@msu.edu"),
+    person(c("Rebecca", "R"), "Steingut", role = "ctb", email = "rebeccarosesteingut@gmail.com")
+    )
+Maintainer: Joshua M Rosenberg <jmichaelrosenberg@gmail.com>
+Description: Provides an easy-to-use yet adaptable set of tools to conduct person-center analysis using a two-step clustering procedure. As described in Bergman and El-Khouri (1999) <DOI:10.1002/(SICI)1521-4036(199910)41:6%3C753::AID-BIMJ753%3E3.0.CO;2-K>, hierarchical clustering is performed to determine the initial partition for the subsequent k-means clustering procedure.
+License: MIT + file LICENSE
+URL: https://github.com/jrosen48/prcr
+BugReports: https://github.com/jrosen48/prcr/issues
+LazyData: TRUE
+Imports: dplyr, tidyr, ggplot2, tibble, irr, lpSolve, purrr, class,
+        forcats, magrittr
+Suggests: rmarkdown, knitr, devtools
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2020-02-09 13:08:49 UTC; jrosenb8
+Author: Joshua M Rosenberg [aut, cre],
+  Jennifer A Schmidt [aut],
+  Patrick N Beymer [aut],
+  Rebecca R Steingut [ctb]
+Repository: CRAN
+Date/Publication: 2020-02-09 17:00:05 UTC

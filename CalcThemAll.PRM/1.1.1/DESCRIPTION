@@ -1,0 +1,36 @@
+Package: CalcThemAll.PRM
+Title: Calculate Pesticide Risk Metric (PRM) Values from Multiple
+        Pesticides...Calc Them All
+Version: 1.1.1
+Authors@R: c(
+    person("Alexander", "Bezzina", ,"alex.h.bezzina@gmail.com", 
+    role = c("aut", "cre", "cph")),
+    person("Jennifer", "Strauss", ,"jennifer.strauss@des.qld.gov.au",
+    role = "aut"),
+    person("Catherine", "Neelamraju", ,"c.neelamraju@uq.edu.au",
+    role = "aut"),
+    person("Hayley", "Kaminski", ,"hayley.kaminski@des.qld.gov.au",
+    role = "aut"))
+Description: Contains functions which can be used to calculate Pesticide Risk Metric 
+    values in aquatic environments from concentrations of multiple pesticides with known species sensitive 
+    distributions (SSDs). Pesticides provided by this package have all be validated
+    however if the user has their own pesticides with SSD values they can append them
+    to the pesticide_info table to include them in estimates.
+Encoding: UTF-8
+License: GPL (>= 3)
+RoxygenNote: 7.3.1
+Imports: dplyr, lubridate, magrittr, MASS, stats, VGAM, plotly, zoo, DT
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-04-23 13:44:40 UTC; Alexander
+Author: Alexander Bezzina [aut, cre, cph],
+  Jennifer Strauss [aut],
+  Catherine Neelamraju [aut],
+  Hayley Kaminski [aut]
+Maintainer: Alexander Bezzina <alex.h.bezzina@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-24 14:30:05 UTC

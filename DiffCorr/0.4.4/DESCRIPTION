@@ -1,0 +1,34 @@
+Type: Package
+Package: DiffCorr
+Title: Analyzing and Visualizing Differential Correlation Networks in
+        Biological Data
+Version: 0.4.4
+Date: 2024-09-22
+Authors@R: c(
+    person("Atsushi", "Fukushima", , "afukushima@gmail.com", role = c("aut", "cre")),
+    person("Kozo", "Nishida", , "kozo.nishida@gmail.com", role = "aut")
+  )
+Description: A method for identifying pattern changes between 2
+    experimental conditions in correlation networks (e.g., gene
+    co-expression networks), which builds on a commonly used association
+    measure, such as Pearson's correlation coefficient. This package
+    includes functions to calculate correlation matrices for
+    high-dimensional dataset and to test differential correlation, which
+    means the changes in the correlation relationship among variables
+    (e.g., genes and metabolites) between 2 experimental conditions.
+License: GPL (> 3)
+Depends: fdrtool, igraph, multtest, pcaMethods
+Imports: graphics, grDevices, stats, utils
+Suggests: knitr, prettydoc, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Config/testthat/edition: 3
+Date/Publication: 2024-09-30 03:50:02 UTC
+NeedsCompilation: no
+Packaged: 2024-09-30 02:25:08 UTC; fuku
+Repository: CRAN
+RoxygenNote: 7.3.2
+Author: Atsushi Fukushima [aut, cre],
+  Kozo Nishida [aut]
+Maintainer: Atsushi Fukushima <afukushima@gmail.com>

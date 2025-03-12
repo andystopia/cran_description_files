@@ -1,0 +1,26 @@
+Package: wqspt
+Title: Permutation Test for Weighted Quantile Sum Regression
+Version: 1.0.2
+Author: Drew Day [aut, cre],
+  James Peng [aut],
+  Adam Szpiro [aut]
+Maintainer: Drew Day <dday612@gmail.com>
+Authors@R: c(
+    person("Drew", "Day", email = "dday612@gmail.com", role = c("aut", "cre")),
+    person("James", "Peng", email = "jpspeng@uw.edu", role = "aut"),
+    person("Adam", "Szpiro", email = "aszpiro@uw.edu", role = "aut"))
+Description: Implements a permutation test method for the weighted quantile sum (WQS) regression, building off the 'gWQS' package (Renzetti et al. <https://CRAN.R-project.org/package=gWQS>). Weighted quantile sum regression is a statistical technique to evaluate the effect of complex exposure mixtures on an outcome (Carrico et al. 2015 <doi:10.1007/s13253-014-0180-3>). The model features a statistical power and Type I error (i.e., false positive) rate trade-off, as there is a machine learning step to determine the weights that optimize the linear model fit. This package provides an alternative method based on a permutation test that should reliably allow for both high power and low false positive rate when utilizing WQS regression (Day et al. 2022 <doi:10.1289/EHP10570>).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: rlang, gWQS, pbapply, ggplot2, mvtnorm, viridis, extraDistr,
+        cowplot, methods, MASS, car, future, future.apply, pscl,
+        reshape2, nnet
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-04 23:03:54 UTC; dday6
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2025-03-05 08:40:02 UTC

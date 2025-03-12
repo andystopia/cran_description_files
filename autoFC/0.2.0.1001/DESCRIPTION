@@ -1,0 +1,62 @@
+Type: Package
+Package: autoFC
+Title: Automatic Construction of Forced-Choice Tests
+Version: 0.2.0.1001
+Authors@R: c(
+    person("Mengtong", "Li", , "ml70@illinois.edu", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-1766-4976")),
+    person("Tianjun", "Sun", , "tsun5@illinois.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-3655-0042")),
+    person("Bo", "Zhang", , "bozhang3065@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-6730-7336")))
+Author: Mengtong Li [cre, aut] (<https://orcid.org/0000-0002-1766-4976>),
+  Tianjun Sun [aut] (<https://orcid.org/0000-0002-3655-0042>),
+  Bo Zhang [aut] (<https://orcid.org/0000-0002-6730-7336>)
+Maintainer: Mengtong Li <ml70@illinois.edu>
+Description: Forced-choice (FC) response has gained increasing popularity
+    and interest for its resistance to faking when well-designed (Cao &
+    Drasgow, 2019 <doi:10.1037/apl0000414>). To established well-designed
+    FC scales, typically each item within a block should measure different
+    trait and have similar level of social desirability (Zhang et al.,
+    2020 <doi:10.1177/1094428119836486>). Recent study also suggests the
+    importance of high inter-item agreement of social desirability between
+    items within a block (Pavlov et al., 2021 <doi:10.31234/osf.io/hmnrc>). 
+    In addition to this, FC developers may
+    also need to maximize factor loading differences (Brown &
+    Maydeu-Olivares, 2011 <doi:10.1177/0013164410375112>) or minimize item
+    location differences (Cao & Drasgow, 2019 <doi:10.1037/apl0000414>)
+    depending on scoring models. Decision of which items should be
+    assigned to the same block, termed item pairing, is thus critical to
+    the quality of an FC test. This pairing process is essentially an
+    optimization process which is currently carried out manually. However,
+    given that we often need to simultaneously meet multiple objectives,
+    manual pairing becomes impractical or even not feasible once the
+    number of latent traits and/or number of items per trait are
+    relatively large. To address these problems, autoFC is developed as a
+    practical tool for facilitating the automatic construction of FC tests
+    (Li et al., 2022 <doi:10.1177/01466216211051726>), essentially
+    exempting users from the burden of manual item pairing and reducing
+    the computational costs and biases induced by simple ranking methods.
+    Given characteristics of each item (and item responses), FC measures can
+    be constructed either automatically based on user-defined pairing criteria
+    and weights, or based on exact specifications of each block (i.e., blueprint;
+    see Li et al., 2024 <doi:10.1177/10944281241229784>). Users can also 
+    generate simulated responses based on the Thurstonian Item Response Theory 
+    model (Brown & Maydeu-Olivares, 2011 <doi:10.1177/0013164410375112>) and 
+    predict trait scores of simulated/actual respondents based on 
+    an estimated model.
+License: GPL-3
+URL: https://github.com/tspsyched/autoFC
+BugReports: https://github.com/tspsyched/autoFC/issues
+Imports: dplyr, irrCAC, lavaan, MASS, SimDesign, thurstonianIRT,
+        MplusAutomation, glue, tidyr
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Date/Publication: 2024-02-17 10:50:12 UTC
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-02-17 06:10:45 UTC; LENOVO
+Repository: CRAN
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LazyData: true

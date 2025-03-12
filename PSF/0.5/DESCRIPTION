@@ -1,0 +1,27 @@
+Package: PSF
+Type: Package
+Title: Forecasting of Univariate Time Series Using the Pattern
+        Sequence-Based Forecasting (PSF) Algorithm
+Version: 0.5
+Date: 2022-04-30
+Author: Neeraj Bokde, Gualberto Asencio-Cortes and Francisco Martinez-Alvarez
+Maintainer: Neeraj Bokde <neerajdhanraj@gmail.com>
+Description: Pattern Sequence Based Forecasting (PSF) takes univariate
+    time series data as input and assist to forecast its future values.
+    This algorithm forecasts the behavior of time series
+    based on similarity of pattern sequences. Initially, clustering is done with the
+    labeling of samples from database. The labels associated with samples are then
+    used for forecasting the future behaviour of time series data. The further
+    technical details and references regarding PSF are discussed in Vignette.
+BugReports: https://github.com/neerajdhanraj/PSF/issues
+URL: https://www.neerajbokde.in/viggnette/2021-10-13-PSF/
+License: GPL (>= 2)
+Imports: data.table, cluster
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Encoding: UTF-8
+Packaged: 2022-04-30 17:29:00 UTC; mayur
+Repository: CRAN
+Date/Publication: 2022-05-01 14:20:10 UTC
+Suggests: knitr, rmarkdown, forecast

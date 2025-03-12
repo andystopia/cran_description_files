@@ -1,0 +1,35 @@
+Package: psdr
+Title: Use Time Series to Generate and Compare Power Spectral Density
+Version: 1.0.1
+Authors@R: 
+    person(given = "Yong-Han Hank",
+           family = "Cheng",
+           role = c("aut", "cre"),
+           email = "yhhc@uw.edu",
+           comment = c(ORCID = "0000-0001-7686-0697"))
+Description: Functions that allow you to generate and compare power spectral density (PSD) 
+	plots given time series data. Fast Fourier Transform (FFT) is used to take a time series 
+	data, analyze the oscillations, and then output the frequencies of these oscillations 
+	in the time series in the form of a PSD plot.Thus given a time series, the dominant 
+	frequencies in the time series can be identified. Additional functions in this package 
+	allow the dominant frequencies of multiple groups of time series to be compared with each other. 
+	To see example usage with the main functions of this package, please visit
+	this site: <https://yhhc2.github.io/psdr/articles/Introduction.html>. 
+	The mathematical operations used to generate the PSDs are described in these sites:
+	<https://www.mathworks.com/help/matlab/ref/fft.html>.
+	<https://www.mathworks.com/help/signal/ug/power-spectral-density-estimates-using-fft.html>.
+License: GPL (>= 3) | file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: devtools (>= 2.4.1), ggplot2 (>= 3.3.2), qpdf (>= 1.1), stats
+        (>= 4.0.2)
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-06-03 17:25:57 UTC; hankc
+Author: Yong-Han Hank Cheng [aut, cre]
+    (<https://orcid.org/0000-0001-7686-0697>)
+Maintainer: Yong-Han Hank Cheng <yhhc@uw.edu>
+Repository: CRAN
+Date/Publication: 2021-06-04 07:50:02 UTC

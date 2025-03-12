@@ -1,0 +1,31 @@
+Package: wordler
+Type: Package
+Title: The 'WORDLE' Game
+Version: 0.3.1
+Authors@R: c(
+  person("David", "Smith", email = "david.alex.smith@gmail.com", role = c("aut", "cre")),
+  person("Gethin", "Davies", email = "grd.davies@gmail.com", role = "ctb")
+  )
+Description: The 'Wordle' game. Players have six attempts to guess a 
+    five-letter word. After each guess, the player is informed which 
+    letters in their guess are either: anywhere in the word; in the right 
+    position in the word. This can be used to inform the next guess. Can be 
+    played interactively in the console, or programmatically. Based on Josh 
+    Wardle's game <https://www.powerlanguage.co.uk/wordle/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/DavidASmith/wordler
+Imports: crayon
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 2.10)
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-01-29 21:47:24 UTC; User
+Author: David Smith [aut, cre],
+  Gethin Davies [ctb]
+Maintainer: David Smith <david.alex.smith@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-01 09:20:02 UTC

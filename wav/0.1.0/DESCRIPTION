@@ -1,0 +1,29 @@
+Package: wav
+Title: Read and Write WAV Files
+Version: 0.1.0
+Authors@R: c(
+    person("Daniel", "Falbel", email = "daniel@rstudio.com", role = c("aut", "cre", "cph")),
+    person(family = "Posit, PBC", role = c("cph")),
+    person("David", "Reid", role = c("cph"), comment = "For the vendored dr_wav.h code.")
+    )
+Description: Efficiently read and write Waveform (WAV) audio files <https://en.wikipedia.org/wiki/WAV>. 
+  Support for unsigned 8 bit Pulse-code modulation (PCM), signed 12, 16, 24 and 32 bit 
+  PCM and other encodings.  
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+LinkingTo: Rcpp
+Imports: Rcpp
+Suggests: covr, testthat (>= 3.0.0), patrick
+Config/testthat/edition: 3
+SystemRequirements: C++11
+URL: https://github.com/mlverse/wav, https://mlverse.github.io/wav/
+BugReports: https://github.com/mlverse/wav/issues
+NeedsCompilation: yes
+Packaged: 2022-11-25 16:39:39 UTC; dfalbel
+Author: Daniel Falbel [aut, cre, cph],
+  Posit, PBC [cph],
+  David Reid [cph] (For the vendored dr_wav.h code.)
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2022-11-28 09:40:02 UTC

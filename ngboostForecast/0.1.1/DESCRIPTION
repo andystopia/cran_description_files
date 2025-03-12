@@ -1,0 +1,30 @@
+Package: ngboostForecast
+Title: Probabilistic Time Series Forecasting
+Version: 0.1.1
+Authors@R: 
+    person(given = "Resul",
+           family = "Akay",
+           role = c("aut", "cre"),
+           email = "resulakay1@gmail.com")
+Description: Probabilistic time series forecasting via Natural Gradient Boosting for Probabilistic Prediction.
+License: Apache License (>= 2)
+URL: https://github.com/Akai01/ngboostForecast
+BugReports: https://github.com/Akai01/ngboostForecast/issues
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: Python (>= 3.6)
+RoxygenNote: 7.2.0
+Imports: dplyr (>= 1.0.7), forecast (>= 8.15), magrittr (>= 2.0.1), R6
+        (>= 2.5.1)
+Suggests: ggplot2 (>= 3.3.5), testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/reticulate: list( packages = list( list(package =
+        'importlib-metadata', pip = TRUE), list(package = 'ngboost',
+        pip = TRUE)) )
+Depends: R (>= 3.6), reticulate (>= 1.20)
+NeedsCompilation: no
+Packaged: 2022-08-06 10:57:52 UTC; akayr
+Author: Resul Akay [aut, cre]
+Maintainer: Resul Akay <resulakay1@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-06 11:30:08 UTC

@@ -1,0 +1,23 @@
+Package: BisRNA
+Type: Package
+Title: Analysis of RNA Cytosine-5 Methylation
+Version: 0.2.2
+Author: C Legrand
+Maintainer: Carine Legrand <c.legrand@dkfz.de>
+Description: Bisulfite-treated RNA non-conversion in a set of samples is
+  analysed as follows : each sample's non-conversion distribution is
+  identified to a Poisson distribution. P-values adjusted for multiple
+  testing are calculated in each sample. Combined non-conversion P-values
+  and standard errors are calculated on the intersection of the set of
+  samples. For further details, see C Legrand, F Tuorto, M Hartmann, 
+  R Liebers, D Jakob, M Helm and F Lyko (2017) <doi:10.1101/gr.210666.116>.
+Date: 2017-12-15
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.3.2)
+Imports: MASS, graphics, stats, utils
+Suggests: IHW, testthat
+NeedsCompilation: no
+Packaged: 2017-12-15 12:47:58 UTC; legrand
+Repository: CRAN
+Date/Publication: 2017-12-15 13:33:54 UTC

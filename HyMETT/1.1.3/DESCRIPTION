@@ -1,0 +1,92 @@
+Package: HyMETT
+Type: Package
+Title: Hydrologic Model Evaluation and Time-Series Tools
+Version: 1.1.3
+Date: 2024-08-26
+Authors@R: c(
+    person(family = "Penn",
+           given = "Colin",
+           role = c("aut","cre"),
+           email = "cpenn@usgs.gov",
+           comment = c(ORCID = "0000-0002-5195-2744")),
+    person(family = "Simeone",
+           given = "Caelan",
+           role = c("aut"),
+           email = "csimeone@usgs.gov",
+           comment = c(ORCID = "0000-0003-3263-6452")),
+    person(family = "Levin",
+           given = "Sara",
+           role = c("aut"),
+           email = "slevin@usgs.gov",
+           comment = c(ORCID = "0000-0002-2448-3129")),
+    person(family = "Saxe",
+           given = "Samuel",
+           role = c("aut"),
+           email = "ssaxe@usgs.gov",
+           comment = c(ORCID = "0000-0003-1151-8908")),
+    person(family = "Foks",
+           given = "Sydney",
+           role = c("aut"),
+           email = "sfoks@usgs.gov",
+           comment = c(ORCID = "0000-0002-7668-9735")),
+    person(family = "Dudley",
+           given = "Robert",
+           role = c("dtc"),
+           email = "rwdudley@usgs.gov",
+           comment = c(ORCID = "0000-0002-0934-0568")),
+    person(family = "Hodgkins",
+           given = "Glenn",
+           role = c("dtc"),
+           email = "gahodgki@usgs.gov",
+           comment = c(ORCID = "0000-0002-4916-5565")),
+    person(family = "Hodson",
+           given = "Timothy",
+           role = c("aut"),
+           email = "thodson@usgs.gov",
+           comment = c(ORCID = "0000-0003-0962-5130")),
+    person(family = "Over",
+           given = "Thomas",
+           role = c("dtc"),
+           email = "tmover@usgs.gov",
+           comment = c(ORCID = "0000-0001-8280-4368")),
+    person(family = "Russell",
+           given = "Amy",
+           role = c("dtc"),
+           email = "arussell@usgs.gov",
+           comment = c(ORCID = "0000-0003-0582-0094")))
+Description: Facilitates the analysis and evaluation of hydrologic model output and 
+    time-series data with functions focused on comparison of modeled (simulated) and observed data, 
+    period-of-record statistics, and trends.  
+URL: https://code.usgs.gov/hymett/hymett
+BugReports: https://code.usgs.gov/hymett/hymett/-/issues
+Depends: R (>= 3.6.0)
+Imports: checkmate, dplyr, EnvStats, lmomco, lubridate, plyr, rlang,
+        stats, tibble, zoo
+Suggests: knitr, rmarkdown, roxygen2, testthat
+License: CC0
+LazyLoad: yes
+LazyData: yes
+VignetteBuilder: knitr
+BuildVignettes: true
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the U.S. Geological Survey,
+        an agency of the U.S. Department of Interior. For more
+        information, see the official USGS copyright policy at
+        http://www.usgs.gov/visual-id/credit_usgs.html#copyright
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-08-28 14:59:29 UTC; cpenn
+Author: Colin Penn [aut, cre] (<https://orcid.org/0000-0002-5195-2744>),
+  Caelan Simeone [aut] (<https://orcid.org/0000-0003-3263-6452>),
+  Sara Levin [aut] (<https://orcid.org/0000-0002-2448-3129>),
+  Samuel Saxe [aut] (<https://orcid.org/0000-0003-1151-8908>),
+  Sydney Foks [aut] (<https://orcid.org/0000-0002-7668-9735>),
+  Robert Dudley [dtc] (<https://orcid.org/0000-0002-0934-0568>),
+  Glenn Hodgkins [dtc] (<https://orcid.org/0000-0002-4916-5565>),
+  Timothy Hodson [aut] (<https://orcid.org/0000-0003-0962-5130>),
+  Thomas Over [dtc] (<https://orcid.org/0000-0001-8280-4368>),
+  Amy Russell [dtc] (<https://orcid.org/0000-0003-0582-0094>)
+Maintainer: Colin Penn <cpenn@usgs.gov>
+Repository: CRAN
+Date/Publication: 2024-08-28 23:00:11 UTC

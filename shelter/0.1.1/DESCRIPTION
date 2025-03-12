@@ -1,0 +1,36 @@
+Package: shelter
+Type: Package
+Title: Support for Secure API Key Management
+Version: 0.1.1
+Authors@R: c(
+    person("Benjamin", "Nutter", email = "benjamin.nutter@gmail.com", 
+           role = c("ctb", "aut")),
+    person("Shawn", "Garbett", email = "Shawn.Garbett@vumc.org",
+           comment = c(ORCID="0000-0003-4079-5621"),
+           role = c("cre","ctb")),
+    person("Hui",      "Wu",       email = "Hui.Wu@vumc.org",               role = c("aut")),
+    person("Cole",     "Beck",     email = "Cole.Beck@vumc.org",            role = c("aut")),
+    person("Savannah", "Obregon",  email = "Savannah.Obregon@vumc.org",     role = c("aut"))
+  )
+Maintainer: Shawn Garbett <Shawn.Garbett@vumc.org>
+Description: Secure handling of API keys can be difficult. This package provides
+    secure convenience functions for 
+    entering / handling API keys and opening connections via inversion of control
+    on those keys. Works seamlessly between production and developer environments.
+Depends: R (>= 4.1.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: checkmate, getPass, yaml, filelock, rappdirs, sodium
+Suggests: testthat (>= 3.0.0), rstudioapi, mockery
+URL: https://github.com/vubiostat/shelter
+RoxygenNote: 7.3.2
+BugReports: https://github.com/vubiostat/shelter/issues
+NeedsCompilation: no
+Packaged: 2024-11-05 21:06:37 UTC; garbetsp
+Author: Benjamin Nutter [ctb, aut],
+  Shawn Garbett [cre, ctb] (<https://orcid.org/0000-0003-4079-5621>),
+  Hui Wu [aut],
+  Cole Beck [aut],
+  Savannah Obregon [aut]
+Repository: CRAN
+Date/Publication: 2024-11-07 18:30:02 UTC

@@ -1,0 +1,34 @@
+Package: conversim
+Title: Conversation Similarity Analysis
+Version: 0.1.0
+Authors@R: person("Chao Liu", email = "chaoliu@cedarville.edu", role = c("aut", "cre", "cph"))
+Description: Analyze and compare conversations using various similarity measures
+    including topic, lexical, semantic, structural, stylistic, sentiment,
+    participant, and timing similarities. Supports both pairwise conversation
+    comparisons and analysis of multiple dyads. Methods are based on established research:
+    Topic modeling: Blei et al. (2003) <doi:10.1162/jmlr.2003.3.4-5.993>;
+    Landauer et al. (1998) <doi:10.1080/01638539809545028>;
+    Lexical similarity: Jaccard (1912) <doi:10.1111/j.1469-8137.1912.tb05611.x>;
+    Semantic similarity: Salton & Buckley (1988) <doi:10.1016/0306-4573(88)90021-0>;
+    Mikolov et al. (2013) <doi:10.48550/arXiv.1301.3781>;
+    Pennington et al. (2014) <doi:10.3115/v1/D14-1162>;
+    Structural and stylistic analysis: Graesser et al. (2004) <doi:10.1075/target.21131.ryu>;
+    Sentiment analysis: Rinker (2019) <https://github.com/trinker/sentimentr>.
+License: GPL (>= 3)
+Imports: tm (>= 0.7-8), lsa (>= 0.73.2), topicmodels (>= 0.2-12),
+        sentimentr (>= 2.7.1), word2vec, lme4, slam, ggplot2, stats
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/chaoliu-cl/conversim,
+        http://liu-chao.site/conversim/
+BugReports: https://github.com/chaoliu-cl/conversim/issues
+NeedsCompilation: no
+Packaged: 2024-09-19 18:30:46 UTC; psych
+Author: Chao Liu [aut, cre, cph]
+Maintainer: Chao Liu <chaoliu@cedarville.edu>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-09-20 14:10:13 UTC

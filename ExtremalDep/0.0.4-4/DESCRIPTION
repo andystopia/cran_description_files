@@ -1,0 +1,39 @@
+Package: ExtremalDep
+Version: 0.0.4-4
+Date: 2024-12-17
+Title: Extremal Dependence Models
+Authors@R: c(person("Boris","Beranger", role = "aut", email="borisberanger@gmail.com"),
+	    person("Simone","Padoan", role = c("cre","aut"), email="simone.padoan@unibocconi.it"),
+	    person("Giulia", "Marcon", role = "aut", email="giuliamarcongm@gmail.com"),
+	    person("Steven G.", "Johnson", role = "ctb", comment = "Author of included cubature fragments"),
+	    person("Rudolf Schuerer", role = "ctb", comment = "Author of included cubature fragments"),
+        	person("Brian Gough", role = "ctb", comment = "Author of included cubature fragments"),
+	    person("Alec G.", "Stephenson", role = "ctb"),
+	    person("Anne", "Sabourin", role = "ctb", comment = "Author of included BMAmevt fragments"),
+	    person("Philippe", "Naveau", role = "ctb", comment = "Author of PAMfmado function"))
+Author: Boris Beranger [aut],
+  Simone Padoan [cre, aut],
+  Giulia Marcon [aut],
+  Steven G. Johnson [ctb] (Author of included cubature fragments),
+  Rudolf Schuerer [ctb] (Author of included cubature fragments),
+  Brian Gough [ctb] (Author of included cubature fragments),
+  Alec G. Stephenson [ctb],
+  Anne Sabourin [ctb] (Author of included BMAmevt fragments),
+  Philippe Naveau [ctb] (Author of PAMfmado function)
+Maintainer: Simone Padoan <simone.padoan@unibocconi.it>
+Imports: numDeriv, evd, sn, quadprog, copula, nloptr, gtools, mvtnorm,
+        fda, parallel, doParallel, foreach, cluster
+Suggests: fields, extraDistr
+BugReports: https://github.com/borisberanger/ExtremalDep/issues
+Description: A set of procedures for parametric and non-parametric modelling of the dependence structure of multivariate extreme-values is provided. The statistical inference is performed with non-parametric estimators, likelihood-based estimators and Bayesian techniques. It adapts the methodologies of Beranger and Padoan (2015) <doi:10.48550/arXiv.1508.05561>, Marcon et al. (2016) <doi:10.1214/16-EJS1162>, Marcon et al. (2017) <doi:10.1002/sta4.145>, Marcon et al. (2017) <doi:10.1016/j.jspi.2016.10.004> and Beranger et al. (2021) <doi:10.1007/s10687-019-00364-0>. This package also allows for the modelling of spatial extremes using flexible max-stable processes. It provides simulation algorithms and fitting procedures relying on the Stephenson-Tawn likelihood as per Beranger at al. (2021) <doi:10.1007/s10687-020-00376-1>.
+License: GPL (>= 2)
+LazyData: yes
+NeedsCompilation: yes
+Repository: CRAN
+Repository/R-Forge/Project: extremaldep
+Repository/R-Forge/Revision: 107
+Repository/R-Forge/DateTimeStamp: 2019-08-12 22:22:37
+Date/Publication: 2024-12-18 16:30:06 UTC
+Packaged: 2024-12-17 10:56:49 UTC; borisberanger
+Depends: R (>= 3.5.0)
+URL: https://faculty.unibocconi.it/simonepadoan/

@@ -1,0 +1,72 @@
+Package: Certara.RsNLME
+Title: Pharmacometric Modeling
+Version: 3.0.1
+Authors@R: c(person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Michael", "Tomashevskiy", email = "michael.tomashevskiy@certara.com", role = c("aut")),
+      person("Vitalii", "Nazarov", email = "vitalii.nazarov@certara.com", role = c("aut")),
+      person("Shuhua", "Hu", email = "shuhua.hu@certara.com", role = c("ctb")),
+      person("Soltanshahi", "Fred", email = "fred.soltanshahi@certara.com", role = c("aut")),
+      person("Certara USA, Inc.", role = c("cph","fnd"))
+      )
+Description: Facilitate Pharmacokinetic (PK) and Pharmacodynamic (PD) modeling
+    and simulation with powerful tools for Nonlinear Mixed-Effects (NLME)
+    modeling. The package provides access to the same advanced Maximum Likelihood
+    algorithms used by the NLME-Engine in the Phoenix platform. These tools support
+    a range of analyses, from parametric methods to individual and pooled data
+    analysis <https://www.certara.com/app/uploads/2020/06/BR_PhoenixNLME-v4.pdf>.
+    Execution is supported both locally or on remote machines.
+Depends: R (>= 4.0)
+License: LGPL-3
+URL: https://certara.github.io/R-RsNLME/
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: rlang, knitr, rmarkdown, testthat, magrittr
+Imports: xml2, assertthat, Certara.NLME8, data.table, jsonlite,
+        methods, utils, ssh
+Collate: 'BootstrapParams.R' 'NlmeParallelMethod.R'
+        'NlmeUserAuthentication.R' 'NlmeParallelHost.R'
+        'SimpleNlmeJob.R' 'BootNlmeJob.R' 'CovariateEffectModel.R'
+        'GenerateControlfile.R' 'GenerateParamsfile.R'
+        'NlmeColumnMapping.r' 'NlmeCovariateParameter.r'
+        'NlmeDataset.r' 'NlmeDoseMapping.R' 'NlmeEmaxParameters.R'
+        'NlmeIndirectParameters.R' 'NlmeModelAbsorption.R'
+        'NlmeModelParameterization.R' 'NlmeModelType.R'
+        'NlmeParamsMapping.R' 'NlmePkParameters.R' 'NlmePmlModelInfo.R'
+        'NlmeRandParamsMapping.R' 'NlmeRandomEffectBlock.r'
+        'NlmeRemoteExecutor.R' 'NlmeScenario.R' 'NlmeTableDef.R'
+        'SortColumns.R' 'ProfileParameters.R' 'ProfileNlmeJob.R'
+        'ProfileVar.R' 'error_model.r' 'pml_model.r'
+        'RandomEffectsMethods.R' 'ShotgunNlmeJob.R' 'SortByNlmeJob.R'
+        'StepwiseParams.R' 'StepwiseNlmeJob.R' 'acceptAllEffects.R'
+        'addInfusion.R' 'addLabel.R' 'addTablesToColumnMapping.R'
+        'add_input_dosingCycles.R' 'bootstrap.r' 'built_in_models.r'
+        'checkHostParams.R' 'colMapping.R' 'copyModel.R'
+        'covariateModel.R' 'covariateNames.R' 'createInitialMapping.R'
+        'create_model_from_metamodel.R' 'create_model_info.R' 'data.r'
+        'dosing.r' 'editModel.R' 'emaxmodel.R' 'engine_params.r'
+        'extract_mmdl.R' 'fitmodel.R' 'fitmodelHelperFunctions.R'
+        'fixedEffect.R' 'generateCovarSearchArgsFile.R' 'getThetas.R'
+        'get_omega_omegaSE.R' 'globals.R' 'hostParams.R' 'job.r'
+        'linearmodel.R' 'log_Execution.R' 'map_covariates.R'
+        'map_dosepoints.R' 'modelVariableNames.R' 'observation.r'
+        'obtain_NLMELicense.R' 'parameterNames.R' 'parseControlFile.R'
+        'parsePMLColMap.R' 'parse_mmdl.R' 'pkemaxmodel.R'
+        'pkindirectmodel.R' 'pklinearmodel.R' 'pkmodel.R'
+        'profile_estimation.r' 'randomEffect.R'
+        'readInitialEstimatesParams.R' 'run_metamodel.R' 'saveModel.R'
+        'saveUpdatedMetamodel.R' 'secondary_variable.r'
+        'shotgunSearch.R' 'simParams.R' 'sortfit.R' 'stepwiseSearch.R'
+        'structural_param.r' 'tableParams.R' 'update_PMLwithThetas.R'
+        'vpc.r' 'writeColumnMapping.R' 'writeDefaultFiles.R'
+NeedsCompilation: no
+Packaged: 2024-11-19 15:11:50 UTC; jcraig
+Author: James Craig [aut, cre],
+  Michael Tomashevskiy [aut],
+  Vitalii Nazarov [aut],
+  Shuhua Hu [ctb],
+  Soltanshahi Fred [aut],
+  Certara USA, Inc. [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2024-11-20 11:20:02 UTC

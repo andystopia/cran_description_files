@@ -1,0 +1,40 @@
+Package: cocorresp
+Type: Package
+Title: Co-Correspondence Analysis Methods
+Version: 0.4-5
+Date: 2024-10-06
+Depends: vegan (>= 2.5-0), R (>= 3.4.0)
+Imports: stats, graphics, utils, grDevices
+Suggests: testthat, knitr, rmarkdown, pls
+Authors@R: c(person(c("Gavin", "L."), "Simpson",
+  email = "ucfagls@gmail.com", role = c("aut", "cre", "trl"),
+  comment = "R port of Matlab routines, plus additional code"),
+  person(c("Cajo", "J.F."), "ter Braak",
+    role = c("aut"),
+    comment = "Original Matlab routines"),
+  person(c("Andre", "P"), "Schaffers",
+    role = c("aut"),
+    comment = "Original Matlab routines"),
+  person("Ron", "Wehrens",
+    role = c("aut"),
+    comment = "For simpls.fit()"),
+  person("Bjorn-Helge", "Mevik",
+    role = c("aut"),
+    comment = "For simpls.fit()")
+  )
+Description: Fits predictive and symmetric co-correspondence analysis (CoCA) models to relate one data matrix to another data matrix. More specifically, CoCA maximises the weighted covariance between the weighted averaged species scores of one community and the weighted averaged species scores of another community. CoCA attempts to find patterns that are common to both communities.
+License: GPL-2
+URL: https://gavinsimpson.github.io/cocorresp/
+BugReports: https://github.com/gavinsimpson/cocorresp/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-06 18:57:11 UTC; au690221
+Author: Gavin L. Simpson [aut, cre, trl] (R port of Matlab routines, plus
+    additional code),
+  Cajo J.F. ter Braak [aut] (Original Matlab routines),
+  Andre P Schaffers [aut] (Original Matlab routines),
+  Ron Wehrens [aut] (For simpls.fit()),
+  Bjorn-Helge Mevik [aut] (For simpls.fit())
+Maintainer: Gavin L. Simpson <ucfagls@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-06 19:10:02 UTC

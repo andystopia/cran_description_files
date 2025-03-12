@@ -1,0 +1,22 @@
+Type: Package
+Package: generalRSS
+Title: Statistical Tools for Balanced and Unbalanced Ranked Set
+        Sampling
+Version: 0.1.3
+Authors@R: 
+    c(person("Soohyun", "Ahn", email = "shahn@ajou.ac.kr", role = c("aut", "cre")),
+      person("Chul", "Moon", email = "chulm@mail.smu.edu", role = "aut"))
+Maintainer: Soohyun Ahn <shahn@ajou.ac.kr>
+Description: Ranked Set Sampling (RSS) is a stratified sampling method known for its efficiency compared to Simple Random Sampling (SRS). When sample allocation is equal across strata, it is referred to as balanced RSS (BRSS) whereas unequal allocation is called unbalanced RSS (URSS), which is particularly effective for asymmetric or skewed distributions. This package offers practical statistical tools and sampling methods for both BRSS and URSS, emphasizing flexible sampling designs and inference for population means, medians, proportions, and Area Under the Curve (AUC). It incorporates parametric and nonparametric tests, including empirical likelihood ratio (LR) methods. The package provides ranked set sampling methods from a given population, including sampling with imperfect ranking using auxiliary variables. Furthermore, it provides tools for efficient sample allocation in URSS, ensuring greater efficiency than SRS and BRSS. For more details, refer e.g. to Chen et al. (2003) <doi:10.1007/978-0-387-21664-5>, Ahn et al. (2022) <doi:10.1007/978-3-031-14525-4_3>, and Ahn et al. (2024) <doi:10.1111/insr.12589>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Imports: methods, stats, emplik, rootSolve
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Packaged: 2025-01-24 03:34:29 UTC; user
+Author: Soohyun Ahn [aut, cre],
+  Chul Moon [aut]
+Repository: CRAN
+Date/Publication: 2025-01-28 16:00:02 UTC

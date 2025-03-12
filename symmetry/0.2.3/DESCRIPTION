@@ -1,0 +1,28 @@
+Package: symmetry
+Title: Testing for Symmetry of Data and Model Residuals
+Version: 0.2.3
+Author: Blagoje Ivanović [aut, cre]
+        Bojana Milošević [aut]
+        Marko Obradović [aut]
+Date: 2023-03-10
+Maintainer: Blagoje Ivanović <blagoje.ivanovic@matf.bg.ac.rs>
+Description: Implementations of a large number of tests for symmetry and their 
+    bootstrap variants, which can be used for testing the symmetry of random
+    samples around a known or unknown mean. Functions are also there for testing
+    the symmetry of model residuals around zero. Currently, the supported models
+    are linear models and generalized autoregressive conditional
+    heteroskedasticity (GARCH) models (fitted with the 'fGarch' package). All
+    tests are implemented using the 'Rcpp' package which ensures great
+    performance of the code.
+Depends: R (>= 3.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Rcpp, Rdpack
+RdMacros: Rdpack
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.2
+Suggests: knitr, rmarkdown, sn, fGarch, testthat
+NeedsCompilation: yes
+Packaged: 2023-03-10 15:45:56 UTC; blaza
+Repository: CRAN
+Date/Publication: 2023-03-10 17:00:02 UTC

@@ -1,0 +1,19 @@
+Package: diffcor
+Type: Package
+Title: Fisher's z-Tests Concerning Differences Between Correlations
+Version: 0.8.4
+Depends: R (>= 4.3.0), MASS
+Date: 2024-09-11
+Authors@R: person(given = "Christian",
+		  family = "Blötner",
+                  role = c("aut", "cre"),
+                  email = "c.bloetner@gmail.com")
+Description: Computations of Fisher's z-tests concerning different kinds of correlation differences. The 'diffpwr' family entails approaches to estimating statistical power via Monte Carlo simulations. Important to note, the Pearson correlation coefficient is sensitive to linear association, but also to a host of statistical issues such as univariate and bivariate outliers, range restrictions, and heteroscedasticity (e.g., Duncan & Layard, 1973 <doi:10.1093/BIOMET/60.3.551>; Wilcox, 2013 <doi:10.1016/C2010-0-67044-1>). Thus, every power analysis requires that specific statistical prerequisites are fulfilled and can be invalid if the prerequisites do not hold. To this end, the 'bootcor' family provides bootstrapping confidence intervals for the incorporated correlation difference tests.
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-09-12 08:32:54 UTC; christianblotner
+Author: Christian Blötner [aut, cre]
+Maintainer: Christian Blötner <c.bloetner@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-12 15:50:02 UTC

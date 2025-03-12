@@ -1,0 +1,33 @@
+Package: ManagedCloudProvider
+Type: Package
+Title: Providing the Kubernetes-Like Functions for the Non-Kubernetes
+        Cloud Service
+Version: 1.0.0
+Authors@R: 
+    person(given = "Jiefei",
+           family = "Wang",
+           role = c("aut", "cre"),
+           email = "szwjf08@gmail.com")
+Description: 
+  Providing the kubernetes-like class 'ManagedCloudProvider' as a child class of 
+  the 'CloudProvider' class in the 'DockerParallel' package. The class is able to
+  manage the cloud instance made by the non-kubernetes cloud service.
+  For creating a provider for the non-kubernetes cloud service, the developer
+  needs to define a reference class inherited from 'ManagedCloudProvider' and
+  define the method for the generics runDockerWorkerContainers(),
+  getDockerWorkerStatus() and killDockerWorkerContainers(). For more information, please see
+  the vignette in this package and <https://CRAN.R-project.org/package=DockerParallel>.
+Imports: DockerParallel(>= 1.0.3), adagio, methods, utils, jsonlite
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: markdown, knitr, rmarkdown, testthat (>= 3.0.0), readr
+VignetteBuilder: knitr
+URL: https://github.com/Jiefei-Wang/ManagedCloudProvider
+BugReports: https://github.com/Jiefei-Wang/ManagedCloudProvider/issues
+NeedsCompilation: no
+Packaged: 2021-06-11 09:12:49 UTC; lenovo
+Author: Jiefei Wang [aut, cre]
+Maintainer: Jiefei Wang <szwjf08@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-14 07:30:18 UTC

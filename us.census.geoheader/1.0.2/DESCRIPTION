@@ -1,0 +1,36 @@
+Package: us.census.geoheader
+Title: US 2010 Census SF2 Geographic Header Summary Levels 010-050
+Version: 1.0.2
+Date: 2020-06-09
+Authors@R: c(person("Greg", "Minshall", role = c("aut", "cph", "cre"),
+                    email = "minshall@acm.org"),
+             person("United States Census Bureau", "", role = c("dtc")) )
+URL: https://gitlab.com/minshall/us-census-geoheader
+Description: A simple interface to the Geographic Header information
+  from the "2010 US Census Summary File 2".  The entire Summary File 2
+  is described at
+  <https://catalog.data.gov/dataset/census-2000-summary-file-2-sf2>,
+  but note that this package only provides access to parts of the
+  geographic header ('geoheader') of the file.  In particular, only
+  the first 101 columns of the geoheader are included and, more
+  importantly, only rows with summary levels (SUMLEVs) 010 through 050
+  (nation down through county level) are included.  In addition to
+  access to (part of) the geoheader, the package also provides a
+  decode function that takes a column name and value and, for certain
+  columns, returns "the meaning" of that column (i.e., a "SUMLEV"
+  value of 40 means "State"); without a value, the decode function
+  attempts to describe the column itself.
+Imports: utils, tibble
+Suggests: R.rsp
+License: BSD_2_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: R.rsp
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-15 00:58:29 UTC; minshall
+Author: Greg Minshall [aut, cph, cre],
+  United States Census Bureau [dtc]
+Maintainer: Greg Minshall <minshall@acm.org>
+Repository: CRAN
+Date/Publication: 2020-06-25 10:20:02 UTC

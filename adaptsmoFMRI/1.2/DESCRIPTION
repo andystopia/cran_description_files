@@ -1,0 +1,31 @@
+Package: adaptsmoFMRI
+Type: Package
+Title: Adaptive Smoothing of FMRI Data
+Version: 1.2
+Date: 2022-09-24
+Authors@R: c(person(given = "Maximilian",
+           family = "Hughes",
+           role = c("aut", "cre", "ctb"),
+           email = "hughesgm@me.com"))
+Description: Adaptive smoothing functions for estimating the blood
+    oxygenation level dependent (BOLD) effect by using functional Magnetic
+    Resonance Imaging (fMRI) data, based on adaptive Gauss Markov random
+    fields, for real as well as simulated data. The implemented models make 
+    use of efficient Markov Chain Monte Carlo methods. Implemented methods 
+    are based on the research developed by A. Brezger, L. Fahrmeir, A. 
+    Hennerfeind (2007) <https://www.jstor.org/stable/4626770>.
+License: GPL-2
+Depends: R(>= 4.2.0)
+Collate: 'adaptive-gmrf-2covar.R' 'adaptive-gmrf.R'
+        'plot-weights-real.R' 'plot-weights-sim.R'
+        'sim-adaptive-gmrf-2covar.R' 'sim-adaptive-gmrf.R'
+        'sim-fmri-2covar.R' 'sim-fmri.R'
+Imports: methods, stats, spatstat, spatstat.geom, Matrix, coda,
+        mvtnorm, MCMCpack, parallel
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-09-24 09:09:31 UTC; gordonmax
+Author: Maximilian Hughes [aut, cre, ctb]
+Maintainer: Maximilian Hughes <hughesgm@me.com>
+Repository: CRAN
+Date/Publication: 2022-09-25 10:30:05 UTC

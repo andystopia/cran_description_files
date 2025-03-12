@@ -1,0 +1,39 @@
+Package: edwards97
+Title: Langmuir Semi-Empirical Coagulation Model
+Version: 0.1.1
+Authors@R: c(
+    person("Dewey", "Dunnington",
+           email = "dewey@fishandwhistle.net", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0002-9415-4582")
+    ),
+    person("Benjamin", "Trueman", role = "aut", comment = c(ORCID = "0000-0002-1539-3092")),
+    person("William", "Raseman", role = "aut", comment = c(ORCID = "0000-0001-5946-8888")),
+    person("Marc", "Edwards", role = "ctb"),
+    person("Tai", "Tseng", role = "ctb")
+  )
+Maintainer: Dewey Dunnington <dewey@fishandwhistle.net>
+Description: Implements the Edwards (1997) <doi:10.1002/j.1551-8833.1997.tb08229.x>
+    Langmuir-based semi-empirical coagulation model, which predicts the concentration
+    of organic carbon remaining in water after treatment with an Al- or Fe-based
+    coagulant. Data and methods are provided to optimise empirical coefficients.
+Depends: R (>= 3.6.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+URL: https://paleolimbot.github.io/edwards97/,
+        https://github.com/paleolimbot/edwards97
+BugReports: https://github.com/paleolimbot/edwards97/issues
+Imports: rlang, tibble, broom, cli, withr, glue
+Suggests: testthat (>= 3.0.0), covr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-09-01 01:57:26 UTC; deweydunnington
+Author: Dewey Dunnington [aut, cre] (<https://orcid.org/0000-0002-9415-4582>),
+  Benjamin Trueman [aut] (<https://orcid.org/0000-0002-1539-3092>),
+  William Raseman [aut] (<https://orcid.org/0000-0001-5946-8888>),
+  Marc Edwards [ctb],
+  Tai Tseng [ctb]
+Repository: CRAN
+Date/Publication: 2022-09-01 02:20:06 UTC

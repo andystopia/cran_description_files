@@ -1,0 +1,43 @@
+Package: allMT
+Type: Package
+Title: Acute Lymphoblastic Leukemia Maintenance Therapy Analysis
+Version: 0.1.0
+Authors@R: 
+   c(person(given = "Tushar", family = "Mungle", email = "tushar.mungle@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2109-3248")),
+     person(given ="Ananya", family = "Mahadevan", email = "ananyamahadevan97@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-7555-6084")),
+     person(given ="Shekhar", family = "Krishnan", email = "shekhar.krishnan@ttcrc.tmckolkata.org", role = c("aut"),
+           comment = c(ORCID = "0000-0002-6769-3847")))
+Maintainer: Tushar Mungle <tushar.mungle@gmail.com>
+Description: Evaluates acute lymphoblastic leukemia maintenance therapy practice at patient and cohort level.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: dplyr (>= 1.0.10), ggplot2 (>= 3.3.6), htmlTable (>= 2.2.1),
+        plyr (>= 1.8.6), readxl (>= 1.3.1), reshape2 (>= 1.4.4), rio
+        (>= 0.5.29), scales (>= 1.2.1), stringr (>= 1.4.1), survival
+        (>= 3.2.11), survminer (>= 0.4.9), tibble (>= 3.1.8), tools (>=
+        3.6.1), utils (>= 3.6.1)
+Suggests: bibtex (>= 0.5.0), bookdown (>= 0.30), knitr (>= 1.39),
+        rmarkdown (>= 2.18)
+Collate: 'UPN_914.R' 'UPN_915.R' 'UPN_916.R' 'rounding_off.R'
+        'assess_anemia.R' 'assess_increased_doses.R'
+        'assess_neutropenia.R' 'assess_reduced_doses.R'
+        'assess_stop_doses.R' 'assess_thrombocytopenia.R'
+        'compare_cohorts.R' 'convert_external_format.R'
+        'convert_tmc_format.R' 'plot_progression.R'
+        'summarize_cohortMT.R' 'summarize_cycle_progression.R'
+        'time_to_first_dose_increase.R'
+VignetteBuilder: knitr
+URL: https://github.com/tmungle/allMT, https://tmungle.github.io/allMT/
+BugReports: https://github.com/tmungle/allMT/issues
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2023-04-20 10:57:10 UTC; Shubham
+Author: Tushar Mungle [aut, cre] (<https://orcid.org/0000-0002-2109-3248>),
+  Ananya Mahadevan [aut] (<https://orcid.org/0000-0002-7555-6084>),
+  Shekhar Krishnan [aut] (<https://orcid.org/0000-0002-6769-3847>)
+Repository: CRAN
+Date/Publication: 2023-04-20 17:32:33 UTC

@@ -1,0 +1,32 @@
+Package: covidnor
+Title: Public COVID-19 Data for Norway
+Version: 2023.05.18
+Authors@R: c(
+  person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0003-0501-5909")),
+  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut"),
+    comment = c(ORCID = "0000-0002-6747-1726")),
+  person("CSIDS", email = "hello@csids.no", role = c("cph")),
+  person("Folkehelseinstituttet", role = c("ctb"))
+  )
+Description: Publicly available COVID-19 data for Norway cleaned and merged into one dataset, including PCR confirmed cases, tests, hospitalisation and vaccination.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+URL: https://www.csids.no/covidnor/, https://github.com/csids/covidnor
+BugReports: https://github.com/csids/covidnor/issues
+Encoding: UTF-8
+LazyData: true
+Imports: data.table
+Suggests: testthat, knitr, rmarkdown, rstudioapi, glue, magrittr,
+        ggplot2
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-25 14:42:44 UTC; andrea
+Author: Chi Zhang [aut, cre] (<https://orcid.org/0000-0003-0501-5909>),
+  Richard Aubrey White [aut] (<https://orcid.org/0000-0002-6747-1726>),
+  CSIDS [cph],
+  Folkehelseinstituttet [ctb]
+Maintainer: Chi Zhang <andreachizhang@yahoo.com>
+Repository: CRAN
+Date/Publication: 2023-05-26 08:00:08 UTC

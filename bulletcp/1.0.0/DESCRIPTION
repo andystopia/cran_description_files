@@ -1,0 +1,26 @@
+Package: bulletcp
+Type: Package
+Title: Automatic Groove Identification via Bayesian Changepoint
+        Detection
+Version: 1.0.0
+Authors@R: c(person("Nathaniel", "Garton", email = "nate.garton13@gmail.com", role = c("aut","cre")),
+    person("Kiegan", "Rice", email = "ricek@iastate.edu", role = "ctb"))
+Maintainer: Nathaniel Garton <nate.garton13@gmail.com>
+Description: Provides functionality to automatically detect groove locations via a Bayesian changepoint detection method to be used in the data preprocessing step
+    of forensic bullet matching algorithms. The methods in this package are based on those in Stephens (1994) <doi:10.2307/2986119>. Bayesian changepoint detection will simply be an option
+    in the function from the package 'bulletxtrctr' which identifies the groove locations.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: mvtnorm, dplyr, stats, assertthat
+Suggests: knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+Imports: Rdpack
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2019-03-14 18:16:20 UTC; Nate
+Author: Nathaniel Garton [aut, cre],
+  Kiegan Rice [ctb]
+Repository: CRAN
+Date/Publication: 2019-03-16 09:13:22 UTC

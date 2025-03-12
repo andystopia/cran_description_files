@@ -1,0 +1,44 @@
+Package: PCAmatchR
+Title: Match Cases to Controls Based on Genotype Principal Components
+Version: 0.3.3
+Authors@R: 
+    c(person(given = "Derek W.",
+             family = "Brown",
+             role = c("aut", "cre"),
+             email = "derek9@gwmail.gwu.edu",
+             comment = c(ORCID = "0000-0001-8393-1713")),
+      person(given = "Mitchel J.",
+             family = "Machiela",
+             role = "aut",
+             email = "mitchell.machiela@nih.gov",
+             comment = c(ORCID = "0000-0001-6538-9705")),
+      person(given = "Timothy A.",
+             family = "Myers",
+             role = "ctb",
+             email = "myersta@mail.nih.gov",
+             comment = c(ORCID = "0000-0001-8127-3446")),
+      person(given = "NCI",
+             role = c("cph", "fnd")))
+Maintainer: Derek W. Brown <derek9@gwmail.gwu.edu>
+Description: Matches cases to controls based on genotype principal components (PC). 
+      In order to produce better results, matches are based on the weighted 
+      distance of PCs where the weights are equal to the % variance explained 
+      by that PC. A weighted Mahalanobis distance metric (Kidd et al. (1987)
+      <DOI:10.1016/0031-3203(87)90066-5>) is used to determine matches. 
+License: MIT + file LICENSE
+URL: https://github.com/machiela-lab/PCAmatchR
+BugReports: https://github.com/machiela-lab/PCAmatchR/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Suggests: optmatch, testthat, knitr, rmarkdown, R.rsp
+VignetteBuilder: R.rsp
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2022-11-30 12:24:40 UTC; myersta
+Author: Derek W. Brown [aut, cre] (<https://orcid.org/0000-0001-8393-1713>),
+  Mitchel J. Machiela [aut] (<https://orcid.org/0000-0001-6538-9705>),
+  Timothy A. Myers [ctb] (<https://orcid.org/0000-0001-8127-3446>),
+  NCI [cph, fnd]
+Repository: CRAN
+Date/Publication: 2022-12-01 00:20:06 UTC

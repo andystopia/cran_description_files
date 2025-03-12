@@ -1,0 +1,39 @@
+Package: deBInfer
+Type: Package
+Title: Bayesian Inference for Differential Equations
+Version: 0.4.4
+Date: 2022-11-14
+Authors@R: c(
+    person("Philipp H", "Boersch-Supan", email = "pboesu@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0000-0001-6723-6833")),
+    person("Leah R", "Johnson", email = "lrjohnson0@gmail.com", role = "aut", comment = c(ORCID = "0000-0002-9922-579X")),
+    person("Sadie J", "Ryan", email = "datamonkey@gmail.com", role = "aut", comment = c(ORCID = "0000-0002-4308-6321"))
+    )
+BugReports: https://github.com/pboesu/debinfer/issues
+URL: https://github.com/pboesu/debinfer
+Description: A Bayesian framework for parameter inference in differential equations.
+    This approach offers a rigorous methodology for parameter inference as well as
+    modeling the link between unobservable model states and parameters, and
+    observable quantities. Provides templates for the DE model, the
+    observation model and data likelihood, and the model parameters and their prior
+    distributions. A Markov chain Monte Carlo (MCMC) procedure processes these inputs
+    to estimate the posterior distributions of the parameters and any derived
+    quantities, including the model trajectories. Further functionality is provided
+    to facilitate MCMC diagnostics and the visualisation of the posterior distributions
+    of model parameters and trajectories.
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 7.1.2
+Depends: R (>= 3.5.0), deSolve
+Imports: truncdist, coda, RColorBrewer, MASS, stats, mvtnorm, graphics,
+        grDevices, plyr, PBSddesolve, methods
+Suggests: testthat, knitr, rmarkdown, devtools, R.rsp, beanplot
+VignetteBuilder: knitr, R.rsp
+NeedsCompilation: no
+Packaged: 2022-11-16 17:09:32 UTC; philipp.boerschsupan
+Author: Philipp H Boersch-Supan [aut, cre]
+    (<https://orcid.org/0000-0001-6723-6833>),
+  Leah R Johnson [aut] (<https://orcid.org/0000-0002-9922-579X>),
+  Sadie J Ryan [aut] (<https://orcid.org/0000-0002-4308-6321>)
+Maintainer: Philipp H Boersch-Supan <pboesu@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-11-17 12:00:24 UTC

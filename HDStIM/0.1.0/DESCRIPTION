@@ -1,0 +1,42 @@
+Package: HDStIM
+Type: Package
+Title: High Dimensional Stimulation Immune Mapping ('HDStIM')
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Rohit",
+             family = "Farmer",
+             role = c("aut", "cre"),
+             email = "rohit.farmer@gmail.com",
+             comment = c(ORCID = "0000-0003-4197-3047")),
+      person(given = "Richard",
+             family = "Apps",
+             role = "aut",
+             email = "richard.apps@nih.gov",
+             comment = c(ORCID = "0000-0001-5140-0141")),
+      person(given = "John",
+             family = "Tsang",
+             role = c("aut","pdr"),
+             email = "john.tsang@nih.gov",
+             comment = c(ORCID = "0000-0003-3186-3047")))
+Description: A method for identifying responses to experimental stimulation in mass or flow cytometry that uses high dimensional analysis of measured parameters and can be performed with an end-to-end unsupervised approach. In the context of in vitro stimulation assays where high-parameter cytometry was used to monitor intracellular response markers, using cell populations annotated either through automated clustering or manual gating for a combined set of stimulated and unstimulated samples, 'HDStIM' labels cells as responding or non-responding. The package also provides auxiliary functions to rank intracellular markers based on their contribution to identifying responses and generating diagnostic plots.
+License: CC0 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.1.2
+URL: https://github.com/niaid/HDStIM, https://niaid.github.io/HDStIM/
+BugReports: https://github.com/niaid/HDStIM/issues
+Depends: R (>= 3.6.0)
+Imports: tibble, ggplot2, uwot, dplyr, tidyr, broom, tidyselect,
+        ggridges, Boruta, scales
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr, rmarkdown
+Language: en-US
+NeedsCompilation: no
+Packaged: 2022-06-23 18:04:20 UTC; farmerr2
+Author: Rohit Farmer [aut, cre] (<https://orcid.org/0000-0003-4197-3047>),
+  Richard Apps [aut] (<https://orcid.org/0000-0001-5140-0141>),
+  John Tsang [aut, pdr] (<https://orcid.org/0000-0003-3186-3047>)
+Maintainer: Rohit Farmer <rohit.farmer@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-24 08:10:12 UTC

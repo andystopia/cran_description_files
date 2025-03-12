@@ -1,0 +1,43 @@
+Package: pcsstools
+Type: Package
+Title: Tools for Regression Using Pre-Computed Summary Statistics
+Version: 0.1.2
+Authors@R: c(
+    person(
+      "Jack", "Wolf", email = "jackwolf910@gmail.com", 
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-8919-8740")
+      ),
+    person(
+      "R Core Team and contributors worldwide", role = c("cph", "aut"), 
+      comment = "Author and copyright holder of modified 'stats' fragments"
+      )
+  )
+Description: Defines functions to describe regression models using only
+    pre-computed summary statistics (i.e. means, variances, and covariances)
+    in place of individual participant data.
+    Possible models include linear models for linear combinations, products, 
+    and logical combinations of phenotypes.
+    Implements methods presented in 
+    Wolf et al. (2021) <doi:10.3389/fgene.2021.745901>
+    Wolf et al. (2020) <doi:10.1142/9789811215636_0063> and 
+    Gasdaska et al. (2019) <doi:10.1142/9789813279827_0036>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: gtools, Rdpack, stats
+RdMacros: Rdpack
+RoxygenNote: 7.2.1
+Suggests: testthat, knitr, rmarkdown, spelling
+URL: https://github.com/jackmwolf/pcsstools/
+BugReports: https://github.com/jackmwolf/pcsstools/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-09-06 00:52:25 UTC; Jack
+Author: Jack Wolf [aut, cre, cph] (<https://orcid.org/0000-0002-8919-8740>),
+  R Core Team and contributors worldwide [cph, aut] (Author and copyright
+    holder of modified 'stats' fragments)
+Maintainer: Jack Wolf <jackwolf910@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-06 04:10:02 UTC

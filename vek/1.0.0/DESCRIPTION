@@ -1,0 +1,24 @@
+Package: vek
+Title: Predicate Helper Functions for Testing Simple Atomic Vectors
+Version: 1.0.0
+Authors@R: 
+    person("Sam", "Semegne", email = "sam.ahoi@hotmail.com", role = c("aut", "cre"))
+Maintainer: Sam Semegne <sam.ahoi@hotmail.com>
+Description: 
+  Predicate helper functions for testing atomic vectors in R. All functions take
+  a single argument 'x' and check whether it's of the target type of base-R
+  atomic vector (i.e. no class extensions nor attributes other than 'names'),
+  returning TRUE or FALSE. Some additionally check for value (e.g. absence of
+  missing values, infinities, blank characters, or 'names' attribute; or having
+  length 1).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 3.0.0)
+Suggests: tinytest (>= 1.4.1)
+URL: https://github.com/samsemegne/vek
+NeedsCompilation: no
+Packaged: 2024-05-22 07:36:31 UTC; Sam
+Author: Sam Semegne [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-05-23 07:40:03 UTC

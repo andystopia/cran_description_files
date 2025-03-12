@@ -1,0 +1,20 @@
+Package: ModelMap
+Type: Package
+Title: Modeling and Map Production using Random Forest and Related
+        Stochastic Models
+Version: 3.4.0.4
+Date: 2023-04-04
+Depends: R (>= 2.13.0), randomForest, raster
+Suggests: party, quantregForest
+Imports:
+        graphics,grDevices,stats,utils,mgcv,corrplot,fields,HandTill2001,PresenceAbsence
+Author: Elizabeth Freeman, Tracey Frescino
+Maintainer: Elizabeth Freeman <elizabeth.a.freeman@usda.gov>
+Description: Creates sophisticated models of training data and validates the models with an independent test set, cross validation, or Out Of Bag (OOB) predictions on the training data. Create graphs and tables of the model validation results. Applies these models to GIS .img files of predictors to create detailed prediction surfaces. Handles large predictor files for map making, by reading in the .img files in chunks, and output to the .txt file the prediction for each data chunk, before reading the next chunk of data.
+License: Unlimited
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-04-24 17:22:16 UTC; eafreeman
+Repository: CRAN
+Date/Publication: 2023-04-24 20:10:02 UTC

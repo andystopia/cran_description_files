@@ -1,0 +1,32 @@
+Package: snha
+Type: Package
+Title: Creating Correlation Networks using St. Nicolas House Analysis
+Version: 0.1.3
+Date: 2023-05-13
+Authors@R: c(person("Detlef","Groth", role=c("aut", "cre"),
+                     email = "dgroth@uni-potsdam.de",
+                    comment=c(ORCID="0000-0002-9441-3978")))
+Maintainer: Detlef Groth <dgroth@uni-potsdam.de>
+Description: 
+    Create correlation networks using St. Nicolas House Analysis ('SNHA'). 
+    The package can be used for visualizing multivariate data similar to Principal
+    Component Analysis or Multidimensional Scaling using a ranking approach.
+    In contrast to 'MDS' and 'PCA', 'SNHA' uses a network approach to explore
+    interacting variables. 
+    For details see 'Hermanussen et. al. 2021', <doi:10.3390/ijerph18041741>.
+URL: https://github.com/mittelmark/snha
+BugReports: https://github.com/mittelmark/snha/issues
+Depends: R (>= 3.5.0)
+Imports: MASS
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+LazyData: yes
+Language: en-US
+Encoding: UTF-8
+NeedsCompilation: no
+Collate: ll.R asgp.R priv.R snha.R
+Packaged: 2023-03-13 15:45:59 UTC; groth
+Author: Detlef Groth [aut, cre] (<https://orcid.org/0000-0002-9441-3978>)
+Repository: CRAN
+Date/Publication: 2023-03-14 11:40:02 UTC

@@ -1,0 +1,42 @@
+Package: pioneeR
+Title: Productivity and Efficiency Analysis using DEA
+Version: 0.5.0
+Authors@R: c(
+    person("Ove Haugland", "Jakobsen", role = c("aut", "cre"), email = "ohj@mac.com"),
+    person("Aleksander Eilertsen", "Valberg", role = "aut", email = "ale@riksrevisjonen.no"),
+    person("Jan Roar", "Beckstrøm", role = "ctb", email = "jrb@riksrevisjonen.no"),
+    person("Lars Skaage", "Engebretsen", role = "ctb", email = "lse@riksrevisjonen.no"),
+    person("Jonas", "Månsson", role = "ctb", email = "jonas.mansson@riksrevisjonen.no"),
+    person("Joachim", "Sandnes", role = "ctb", email = "jsn@riksrevisjonen.no"),
+    person(family = "National Audit Office of Norway", role = "cph"))
+Description: Measure productivity and efficiency using Data Envelopment Analysis 
+    (DEA). Available methods include DEA under different technology assumptions, 
+    bootstrapping of efficiency scores and calculation of the Malmquist 
+    productivity index. Analyses can be performed either in the console or with 
+    the provided 'shiny' app. See Banker, R.; Charnes, A.; Cooper, W.W. (1984)
+    <doi:10.1287/mnsc.30.9.1078>, Färe, R.; Grosskopf, S. (1996) <doi:10.1007/978-94-009-1816-0>.
+License: GPL-3
+URL: https://riksrevisjonen.github.io/pioneeR/,
+        https://github.com/Riksrevisjonen/pioneeR
+BugReports: https://github.com/Riksrevisjonen/pioneeR/issues
+Depends: R (>= 4.1.0), shiny (>= 1.7.0)
+Imports: bslib (>= 0.6.0), bsicons, cli (>= 3.6.0), ggplot2 (>= 3.3.0),
+        haven (>= 2.5.0), htmltools, lpSolveAPI (>= 5.5.2), markdown,
+        reactable (>= 0.4.0), readxl, rlang (>= 1.1.0), scales, writexl
+Suggests: deaR, rmarkdown, knitr, testthat (>= 3.0.0), tibble, withr
+Language: en-GB
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-10-22 20:00:20 UTC; ohj
+Author: Ove Haugland Jakobsen [aut, cre],
+  Aleksander Eilertsen Valberg [aut],
+  Jan Roar Beckstrøm [ctb],
+  Lars Skaage Engebretsen [ctb],
+  Jonas Månsson [ctb],
+  Joachim Sandnes [ctb],
+  National Audit Office of Norway [cph]
+Maintainer: Ove Haugland Jakobsen <ohj@mac.com>
+Repository: CRAN
+Date/Publication: 2024-10-25 07:40:07 UTC

@@ -1,0 +1,36 @@
+Package: GFDrmtl
+Type: Package
+Title: Multiple RMTL-Based Tests for Competing Risks Data in General
+        Factorial Designs
+Version: 0.1.0
+Authors@R: 
+  c(
+  person(given = "Marc",
+           family = "Ditzhaus",
+           role = c("aut")),
+  person(given = "Dennis",
+          family = "Dobler",
+          role = "aut"),
+  person(given = "Merle",
+           family = "Munko",
+           role = c("aut","cre"), email = "merle.munko@ovgu.de"),
+             person(given = "Jannes",
+           family = "Walter",
+           role = "aut")
+  )
+Maintainer: Merle Munko <merle.munko@ovgu.de>
+Description: We implemented multiple tests based on the restricted mean time lost (RMTL) for general factorial designs as described in Munko et al. (2024) <doi:10.48550/arXiv.2409.07917>. Therefore, an asymptotic test and a permutation test are incorporated with a Wald-type test statistic. The asymptotic test takes the asymptotic exact dependence structure of the test statistics into account to gain more power. Furthermore, confidence intervals for RMTL contrasts can be calculated and plotted and a stepwise extension that can improve the power of the multiple tests is available.
+License: GPL (>= 3)
+Encoding: UTF-8
+Suggests: mstate
+Imports: GFDmcv, GFDrmst, lpSolve, shinyWidgets, shinyMatrix, shiny (>=
+        1.5.0), tippy (>= 0.1.0), mvtnorm, MASS (>= 7.3-53), plyr (>=
+        1.8.6), shinyjs (>= 2.0.0), shinythemes (>= 1.1.2)
+NeedsCompilation: no
+Packaged: 2024-10-02 08:39:01 UTC; munko
+Author: Marc Ditzhaus [aut],
+  Dennis Dobler [aut],
+  Merle Munko [aut, cre],
+  Jannes Walter [aut]
+Repository: CRAN
+Date/Publication: 2024-10-03 18:50:04 UTC

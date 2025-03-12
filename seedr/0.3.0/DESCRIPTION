@@ -1,0 +1,44 @@
+Package: seedr
+Type: Package
+Title: Hydro and Thermal Time Seed Germination Models in R
+Version: 0.3.0
+Date: 2020-10-25
+Authors@R: c(
+    person("Fernández-Pascual", "Eduardo", 
+    comment = c(ORCID = "0000-0002-4743-9577"),
+    email = "efernandezpascual@gmail.com", 
+      role = c("cre", "aut")),
+    person("González-Rodríguez", "Gil", 
+    comment = c(ORCID = "0000-0002-2532-8665"), 
+    email = "gil@uniovi.es", 
+    role = "aut"),
+    person("Ladouceur", "Emma",
+    comment = c(ORCID = "0000-0002-4943-4358"), 
+    email = "emmala@gmail.com", 
+    role = "ctb"))
+Description: Analysis of seed germination data
+    using the physiological time modelling approach. Includes functions
+    to fit hydrotime and thermal-time models with the traditional approaches
+    of Bradford (1990) <doi:10.1104/pp.94.2.840>
+    and Garcia-Huidobro (1982) <doi:10.1093/jxb/33.2.288>. 
+    Allows to fit models to grouped datasets,
+    i.e. datasets containing multiple species, seedlots or experiments.
+URL: https://github.com/efernandezpascual/seedr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 4.0.0)
+Imports: data.table (>= 1.13), binom (>= 1.1), graphics, grDevices,
+        stats
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-10-25 19:11:47 UTC; X
+Author: Fernández-Pascual Eduardo [cre, aut]
+    (<https://orcid.org/0000-0002-4743-9577>),
+  González-Rodríguez Gil [aut] (<https://orcid.org/0000-0002-2532-8665>),
+  Ladouceur Emma [ctb] (<https://orcid.org/0000-0002-4943-4358>)
+Maintainer: Fernández-Pascual Eduardo <efernandezpascual@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-11-03 08:30:02 UTC

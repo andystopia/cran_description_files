@@ -1,0 +1,30 @@
+Package: MARSGWR
+Type: Package
+Title: A Hybrid Spatial Model for Capturing Spatially Varying
+        Relationships Between Variables in the Data
+Version: 0.1.0
+Authors@R: c(person("Nobin Chandra","Paul", role=c("aut","cre","cph"), email="nobin.paul@icar.gov.in"),person("Anil","Rai",role="aut"),person("Ankur","Biswas",role="aut"),person("Tauqueer","Ahmad",role="aut"),person("Dhananjay D.","Nangare",role="aut"),person("Bhaskar B."," Gaikwad",role="aut"))
+Depends: R(>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Description: It is a hybrid spatial model that combines the strength of two widely used regression models, MARS (Multivariate Adaptive Regression Splines) and
+             GWR (Geographically Weighted Regression) to provide an effective approach for predicting a response variable at unknown locations. The MARS model
+             is used in the first step of the development of a hybrid model to identify the most important predictor variables that assist in predicting the response
+             variable. For method details see, Friedman, J.H. (1991). <DOI:10.1214/aos/1176347963>.The GWR model is then used to predict the response variable at 
+             testing locations based on these selected variables that account for spatial variations in the relationships between the variables. This hybrid model 
+             can improve the accuracy of the predictions compared to using an individual model alone.This developed hybrid spatial model can be useful particularly in 
+             cases where the relationship between the response variable and predictor variables is complex and non-linear, and varies across locations.
+License: GPL (>= 2.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: stats, qpdf, numbers, earth
+NeedsCompilation: no
+Packaged: 2023-05-08 18:23:03 UTC; nobin ch paul
+Author: Nobin Chandra Paul [aut, cre, cph],
+  Anil Rai [aut],
+  Ankur Biswas [aut],
+  Tauqueer Ahmad [aut],
+  Dhananjay D. Nangare [aut],
+  Bhaskar B.  Gaikwad [aut]
+Maintainer: Nobin Chandra Paul <nobin.paul@icar.gov.in>
+Repository: CRAN
+Date/Publication: 2023-05-09 09:20:05 UTC

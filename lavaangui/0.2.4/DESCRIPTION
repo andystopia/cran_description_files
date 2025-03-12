@@ -1,0 +1,36 @@
+Package: lavaangui
+Title: Graphical User Interface with Integrated 'Diagrammer' for
+        'Lavaan'
+Version: 0.2.4
+Authors@R: 
+    person(c("Julian",  "D."), "Karch",
+    email = "j.d.karch@fsw.leidenuniv.nl", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0002-1625-2822"))
+Description: Provides a graphical user interface with an 
+    integrated diagrammer for latent variables from the 'lavaan' package. 
+    It offers two core functions:  first, lavaangui() launches a web application
+    that allows users to specify models by drawing path diagrams, fitting them, 
+    assessing model fit, and more; second, plot_lavaan() creates 
+    interactive path diagrams from models specified in 'lavaan'. 
+    Karch (2024) <doi: 10.31234/osf.io/f4ary> contains a tutorial.
+URL: https://lavaangui.org/, https://github.com/karchjd/lavaangui
+BugReports: https://github.com/karchjd/lavaangui/issues
+License: GPL (>= 3)
+Imports: base64enc (>= 0.1.3), future (>= 1.33.0), haven (>= 2.5.3),
+        jsonlite (>= 1.8.4), lavaan (>= 0.6.15), promises (>= 1.2.0.1),
+        readr (>= 2.1.4), readxl (>= 1.4.3), shiny (>= 1.7.4), methods
+        (>= 4.3.3), colorspace (>= 2.1.0), igraph (>= 2.0.3), tools (>=
+        4.3.3), utils (>= 4.3.3), DT (>= 0.33), plyr (>= 1.8.9), digest
+        (>= 0.6.35)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Date: 2025-02-20
+Language: en-US
+NeedsCompilation: no
+Packaged: 2025-02-20 13:31:27 UTC; karch
+Author: Julian D. Karch [aut, cre, cph]
+    (<https://orcid.org/0000-0002-1625-2822>)
+Maintainer: Julian D. Karch <j.d.karch@fsw.leidenuniv.nl>
+Repository: CRAN
+Date/Publication: 2025-02-20 13:50:02 UTC

@@ -1,0 +1,50 @@
+Type: Package
+Package: savvyr
+Title: Survival Analysis for AdVerse Events with VarYing Follow-Up
+        Times
+Version: 0.1.1
+Date: 2024-06-06
+Authors@R: c(
+    person("Thomas", "Kuenzel", email = "thomas.kuenzel@roche.com", role = c("aut", "cre")),
+    person("Kaspar", "Rufibach", email = "kaspar.rufibach@roche.com", role = "aut"),
+    person("Regina", "Stegherr", email = "regina.stegherr@uni-ulm.de", role = "aut"),
+    person("Daniel", "Sabanés Bové", email = "daniel.sabanes_bove@roche.com", role = "aut"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("Universität Ulm", role = c("cph", "fnd"))
+    )
+Description: The SAVVY (Survival Analysis for AdVerse Events with VarYing Follow-Up Times)
+    project is a consortium of academic and pharmaceutical
+    industry partners that aims to improve the analyses of adverse event (AE)
+    data in clinical trials through the use of survival techniques appropriately
+    dealing with varying follow-up times and competing events, see
+    Stegherr, Schmoor, Beyersmann, et al. (2021) <doi:10.1186/s13063-021-05354-x>.
+    Although statistical methodologies have advanced,
+    in AE analyses often the incidence proportion, the incidence density or a
+    non-parametric Kaplan-Meier estimator are used, which either ignore censoring or
+    competing events. This package contains functions to easily conduct the
+    proposed improved AE analyses.
+License: Apache License 2.0
+URL: https://openpharma.github.io/savvyr/
+BugReports: https://github.com/openpharma/savvyr/issues
+Depends: R (>= 4.0)
+Imports: checkmate, etm, Rdpack
+Suggests: kableExtra, knitr, rmarkdown, testthat (>= 3.0)
+Config/Needs/documentation: roxytypes=github::openpharma/roxytypes,
+        roxylint=github::openpharma/roxylint
+RdMacros: Rdpack
+VignetteBuilder: knitr
+biocViews:
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-10 09:24:33 UTC; kuenzelt
+Author: Thomas Kuenzel [aut, cre],
+  Kaspar Rufibach [aut],
+  Regina Stegherr [aut],
+  Daniel Sabanés Bové [aut],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  Universität Ulm [cph, fnd]
+Maintainer: Thomas Kuenzel <thomas.kuenzel@roche.com>
+Repository: CRAN
+Date/Publication: 2024-06-10 09:50:02 UTC

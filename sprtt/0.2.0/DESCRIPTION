@@ -1,0 +1,45 @@
+Type: Package
+Package: sprtt
+Title: Sequential Probability Ratio Tests Toolbox
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Meike",
+             family = "Steinhilber",
+             role = c("aut", "cre"),
+             email = "Meike.Steinhilber@aol.com",
+             comment = c(ORCID = "0000-0002-7144-2100")),
+      person(given = "Martin",
+             family = "Schnuerch",
+             role = c("aut", "ths"),
+             comment = c(ORCID = "0000-0001-6531-2265")),
+      person(given = "Anna-Lena",
+             family = "Schubert",
+             role = c("aut", "ths"),
+             comment = c(ORCID = "0000-0001-7248-0662"))
+      )
+Maintainer: Meike Steinhilber <Meike.Steinhilber@aol.com>
+Description: It is a toolbox for Sequential Probability Ratio Tests (SPRT),  Wald (1945) <doi:10.2134/agronj1947.00021962003900070011x>.
+    SPRTs are applied to the data during the sampling process, ideally after each observation.
+    At any stage, the test will return a decision to either continue sampling or terminate and accept one of the specified hypotheses.
+    The seq_ttest() function performs one-sample, two-sample, and paired t-tests for testing one- and two-sided hypotheses (Schnuerch & Erdfelder (2019) <doi:10.1037/met0000234>).
+    The seq_anova() function allows to perform a sequential one-way fixed effects ANOVA (Steinhilber et al. (2023) <doi:10.31234/osf.io/m64ne>).
+    Learn more about the package by using vignettes "browseVignettes(package = "sprtt")" or go to the website <https://meikesteinhilber.github.io/sprtt/>.
+License: AGPL (>= 3)
+URL: https://meikesteinhilber.github.io/sprtt/
+BugReports: https://github.com/MeikeSteinhilber/sprtt/issues
+Depends: R (>= 3.5.0)
+Imports: methods, stats, dplyr, MBESS, purrr, glue, ggplot2, lifecycle
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), testthis, effsize,
+        effectsize, vdiffr
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-07-06 12:58:04 UTC; Admin
+Author: Meike Steinhilber [aut, cre] (<https://orcid.org/0000-0002-7144-2100>),
+  Martin Schnuerch [aut, ths] (<https://orcid.org/0000-0001-6531-2265>),
+  Anna-Lena Schubert [aut, ths] (<https://orcid.org/0000-0001-7248-0662>)
+Repository: CRAN
+Date/Publication: 2023-07-06 13:50:02 UTC

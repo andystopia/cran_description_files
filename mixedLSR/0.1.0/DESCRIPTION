@@ -1,0 +1,31 @@
+Package: mixedLSR
+Title: Mixed, Low-Rank, and Sparse Multivariate Regression on
+        High-Dimensional Data
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Alexander", family = "White", role = c("aut", "cre"), email = "whitealj@iu.edu", comment = c(ORCID = "0000-0002-9117-1475")),
+    person(given = "Sha", family = "Cao", role = c("aut"), email = "shacao@iu.edu", comment = c(ORCID = "0000-0002-8645-848X")),
+    person(given = "Yi", family = "Zhao", role = c("ctb"), email = "yz125@iu.edu", comment = c(ORCID = "0000-0003-4766-5934")),
+    person(given = "Chi", family = "Zhang", role = c("ctb"), email = "czhang87@iu.edu", comment = c(ORCID = "0000-0001-9553-0925")))
+Description: Mixed, low-rank, and sparse multivariate regression ('mixedLSR') provides tools for performing mixture regression when 
+  the coefficient matrix is low-rank and sparse. 'mixedLSR' allows subgroup identification by alternating optimization 
+  with simulated annealing to encourage global optimum convergence. This method is data-adaptive, automatically 
+  performing parameter selection to identify low-rank substructures in the coefficient matrix. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 4.1.0)
+Imports: grpreg, purrr, MASS, stats, ggplot2
+Suggests: knitr, rmarkdown, mclust
+VignetteBuilder: knitr
+BugReports: https://github.com/alexanderjwhite/mixedLSR
+URL: https://alexanderjwhite.github.io/mixedLSR/
+NeedsCompilation: no
+Packaged: 2022-11-04 10:33:31 UTC; whitealj
+Author: Alexander White [aut, cre] (<https://orcid.org/0000-0002-9117-1475>),
+  Sha Cao [aut] (<https://orcid.org/0000-0002-8645-848X>),
+  Yi Zhao [ctb] (<https://orcid.org/0000-0003-4766-5934>),
+  Chi Zhang [ctb] (<https://orcid.org/0000-0001-9553-0925>)
+Maintainer: Alexander White <whitealj@iu.edu>
+Repository: CRAN
+Date/Publication: 2022-11-04 20:00:02 UTC

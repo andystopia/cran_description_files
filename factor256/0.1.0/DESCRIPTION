@@ -1,0 +1,23 @@
+Package: factor256
+Title: Use Raw Vectors to Minimize Memory Consumption of Factors
+Version: 0.1.0
+Authors@R: 
+    person(given = "Hugh",
+           family = "Parsonage",
+           role = c("aut", "cre"),
+           email = "hugh.parsonage@gmail.com")
+Description: Uses raw vectors to minimize memory consumption of categorical 
+    variables with fewer than 256 unique values. Useful for analysis of large
+    datasets involving variables such as age, years, states, countries, or
+    education levels.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Imports: utils
+Suggests: data.table, tinytest
+NeedsCompilation: yes
+Packaged: 2023-11-17 05:59:45 UTC; hughp
+Author: Hugh Parsonage [aut, cre]
+Maintainer: Hugh Parsonage <hugh.parsonage@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-17 08:50:06 UTC

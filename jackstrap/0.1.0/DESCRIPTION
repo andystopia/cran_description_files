@@ -1,0 +1,32 @@
+Package: jackstrap
+Type: Package
+Title: Correcting Nonparametric Frontier Measurements for Outliers
+Version: 0.1.0
+Authors@R: c(
+    person("Kleber Morais de","Sousa", role = c("aut", "cre"), email = "kleberfinancas@gmail.com"),
+    person("Maria da Conceicao Sampaio de", "Sousa", role = c("aut"), email = "csampaiodesousa@gmail.com"),
+    person("Paulo Aguiar do", "Monte", role = c("aut"), email = "pauloaguiardomonte@gmail.com")
+  )
+Author: Kleber Morais de Sousa [aut, cre],
+  Maria da Conceicao Sampaio de Sousa [aut],
+  Paulo Aguiar do Monte [aut]
+Maintainer: Kleber Morais de Sousa <kleberfinancas@gmail.com>
+Description: Provides method used to check whether data have outlier in efficiency measurement 
+  of big samples with data envelopment analysis (DEA). In this jackstrap method, the package 
+  provides two criteria to define outliers: heaviside and k-s test. The technique was developed 
+  by Sousa and Stosic (2005) "Technical Efficiency of the Brazilian Municipalities: Correcting 
+  Nonparametric Frontier Measurements for Outliers." <doi:10.1007/s11123-005-4702-4>.
+Depends: R (>= 2.15.1)
+Imports: fBasics, Benchmarking, dplyr, ggplot2, foreach, doParallel,
+        reshape, tidyr, scales, parallel, graphics, plyr, rlang, utils
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.1.0
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-06-06 11:46:30 UTC; kleber
+Repository: CRAN
+Date/Publication: 2020-06-09 15:10:02 UTC

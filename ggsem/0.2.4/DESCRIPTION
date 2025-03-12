@@ -1,0 +1,27 @@
+Package: ggsem
+Type: Package
+Title: Interactively Visualize Structural Equation Modeling Diagrams
+Version: 0.2.4
+Authors@R: person(
+      given = "Seung Hyun",
+      family = "Min",
+      role = c("aut", "cre"),
+      email = "seung.min@mail.mcgill.ca"
+    )
+Maintainer: Seung Hyun Min <seung.min@mail.mcgill.ca>
+Description: It is an R package and web-based application, allowing users to perform interactive and reproducible visualizations of path diagrams for structural equation modeling (SEM) and networks using the 'ggplot2' engine. Its app (built with 'shiny') provides an interface that allows extensive customization, and creates CSV outputs, which can then be used to recreate the figures either using the web app or script-based workflow.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.4.0)
+Imports: ggplot2, igraph, shiny, DT, colourpicker, grid, svglite,
+        grDevices, stats, smplot2, utils, lavaan, Rtsne, umap
+Suggests: semPlot, dplyr
+URL: https://smin95.github.io/ggsem/
+BugReports: https://github.com/smin95/ggsem/issues/
+Config/Needs/website: rmarkdown
+NeedsCompilation: no
+Packaged: 2025-02-02 01:45:40 UTC; sammi
+Author: Seung Hyun Min [aut, cre]
+Repository: CRAN
+Date/Publication: 2025-02-02 22:50:02 UTC

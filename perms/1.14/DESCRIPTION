@@ -1,0 +1,37 @@
+Package: perms
+Type: Package
+Title: Fast Permutation Computation
+Version: 1.14
+Date: 2024-08-17
+Authors@R: 
+  c(person(family = "Moen",
+           given = "Per August Jarval",
+           role = c("cre","aut"),
+           email = "pamoen@math.uio.no",
+           comment = c(ORCID = "0009-0003-9990-8341")),
+    person(given = "Dennis",
+           family = "Christensen",
+           role = "aut",
+           email = "Dennis.Christensen@ffi.no",
+           comment = c(ORCID = "0000-0002-7540-7695")),
+    person(given = "Yann",
+           family = "Collet",
+           role = "cph")
+           )
+Description: Implements the algorithm of Christensen (2024) <doi:10.1214/22-BA1353> for estimating marginal likelihoods via permutation counting. 
+License: BSD_2_clause + file LICENSE
+Copyright: Yann Collet in xxhash.h and xxhash.c
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: Rdpack
+Depends: foreach, doParallel, parallel
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2024-08-17 14:27:35 UTC; peraugust
+Author: Per August Jarval Moen [cre, aut]
+    (<https://orcid.org/0009-0003-9990-8341>),
+  Dennis Christensen [aut] (<https://orcid.org/0000-0002-7540-7695>),
+  Yann Collet [cph]
+Maintainer: Per August Jarval Moen <pamoen@math.uio.no>
+Repository: CRAN
+Date/Publication: 2024-08-17 14:40:02 UTC

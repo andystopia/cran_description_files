@@ -1,0 +1,27 @@
+Package: xdcclarge
+Type: Package
+Title: Estimating a (c)DCC-GARCH Model in Large Dimensions
+Version: 0.1.0
+Authors@R: c(
+            person("Kei","Nakagawa",email="kei.nak.0315@gmail.com",role=c("aut","cre"),comment = c(ORCID = "0000-0001-5046-8128")),
+            person("Mitsuyoshi","Imamura",email="ic140tg528@gmail.com",role=c("aut"))
+          )
+Description: Functions for Estimating a (c)DCC-GARCH Model in large dimensions
+    based on a publication by Engle et,al (2017) <doi:10.1080/07350015.2017.1345683> and Nakagawa et,al (2018) <doi:10.3390/ijfs6020052>.
+    This estimation method is consist of composite likelihood method by Pakel et al. (2014) <http://paneldataconference2015.ceu.hu/Program/Cavit-Pakel.pdf>
+    and (Non-)linear shrinkage estimation of covariance matrices by Ledoit and Wolf (2004,2015,2016). (<doi:10.1016/S0047-259X(03)00096-4>,
+    <doi:10.1214/12-AOS989>, <doi:10.1016/j.jmva.2015.04.006>).
+License: GPL (>= 2)
+Author: Kei Nakagawa [aut, cre] (<https://orcid.org/0000-0001-5046-8128>),
+  Mitsuyoshi Imamura [aut]
+Maintainer: Kei Nakagawa <kei.nak.0315@gmail.com>
+LazyData: TRUE
+Imports: stats, Rcpp(>= 0.10.6), nlshrink
+Depends: R(>= 3.0.2)
+LinkingTo: Rcpp(>= 0.10.6),RcppArmadillo(>= 0.2.34)
+Suggests: rugarch(>= 1.0.0)
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-07-12 12:07:16 UTC; kei
+Repository: CRAN
+Date/Publication: 2018-07-12 18:50:03 UTC

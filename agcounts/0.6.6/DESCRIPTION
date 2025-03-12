@@ -1,0 +1,39 @@
+Package: agcounts
+Type: Package
+Title: Calculate 'ActiGraph' Counts from Accelerometer Data
+Version: 0.6.6
+Authors@R: c(
+    person(c("Brian", "C."), "Helsel", email = "bhelsel@kumc.edu", role = c("aut", "cre")),
+    person(c("Paul", "R."), "Hibbing", role = "ctb"),
+    person(c("Robert N."), "Montgomery", role = "ctb"),
+    person(c("Eric D."), "Vidoni", role = "ctb"),
+    person("Jonathan", "Clutton", role = "ctb"),
+    person("University of Kansas", role = "cph")
+    )
+Description: Calculate 'ActiGraph' counts from the X, Y, and Z axes of a triaxial 
+    accelerometer. This work was inspired by Neishabouri et al. who published the 
+    article "Quantification of Acceleration as Activity Counts in 'ActiGraph' Wearables" 
+    on February 24, 2022. The link to the article (<https://pubmed.ncbi.nlm.nih.gov/35831446>) 
+    and 'python' implementation of this code (<https://github.com/actigraph/agcounts>).
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: data.table, gsignal, lubridate, magrittr, Rcpp, GGIR, stats,
+        utils, zoo, reticulate, dplyr, stringr, ggplot2, reactable,
+        shiny, bslib, read.gt3x, DBI, RSQLite
+Suggests: parallel, devtools, foreach, testthat (>= 3.0.0), shinytest2,
+        covr
+Config/testthat/edition: 3
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2024-02-28 18:57:14 UTC; bhelsel
+Author: Brian C. Helsel [aut, cre],
+  Paul R. Hibbing [ctb],
+  Robert N. Montgomery [ctb],
+  Eric D. Vidoni [ctb],
+  Jonathan Clutton [ctb],
+  University of Kansas [cph]
+Maintainer: Brian C. Helsel <bhelsel@kumc.edu>
+Repository: CRAN
+Date/Publication: 2024-02-29 20:12:36 UTC

@@ -1,0 +1,62 @@
+Package: rix
+Title: Reproducible Data Science Environments with 'Nix'
+Version: 0.15.5
+Authors@R: c(
+    person(given = "Bruno", family = "Rodrigues", email = "bruno@brodrigues.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3211-3689")),
+    person(given = "Philipp", family = "Baumann", email = "baumann-philipp@protonmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-3194-8975")),
+    person(given = "David", family = "Watkins", email = "wwatkins@usgs.gov", role = "rev",
+           comment = c("David reviewed the package (v. 0.9.1) for rOpenSci,
+                        see <https://github.com/ropensci/software-review/issues/625>")),
+    person(given = "Jacob", family = "Wujiciak-Jens", , "jacob@wujciak.de", role = "rev",
+           comment = c(ORCID = "0000-0002-7281-3989", "Jacob reviewed the
+                       package (v. 0.9.1) for rOpenSci,
+                       see <https://github.com/ropensci/software-review/issues/625>")),
+    person(given = "Richard J.", family = "Acton", email = "actonr@babraham.ac.uk", role = "ctb",
+           comment = c(ORCID = "0000-0002-2574-9611")),
+    person(given = "Jordi", family = "Rosell", email = "jroselln@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-4349-1458")),
+    person(given = "Elio", family = "Campitelli", email = "eliocampitelli@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-7742-9230")),
+    person(given = "László", family = "Kupcsik", email = "dev@biobits.be", role = "ctb",
+           comment = c(ORCID = "0000-0003-3535-5496")),
+    person(given = "Michael", family = "Heming", email = "mhem@mailbox.org", role = "ctb",
+           comment = c(ORCID = "0000-0002-9568-2790"))
+  )
+Description: Simplifies the creation of reproducible data science environments
+    using the 'Nix' package manager, as described in
+    Dolstra (2006) <ISBN 90-393-4130-3>. The included `rix()`
+    function generates a complete description of the environment as a
+    `default.nix` file, which can then be built using 'Nix'. This results in
+    project specific software environments with pinned versions of R, packages,
+    linked system dependencies, and other tools. Additional helpers make it easy
+    to run R code in 'Nix' software environments for testing and production.
+License: GPL (>= 3)
+URL: https://docs.ropensci.org/rix/
+BugReports: https://github.com/ropensci/rix/issues
+Depends: R (>= 2.10)
+Imports: codetools, curl, jsonlite, sys, utils
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-03-01 20:24:48 UTC; b-rodrigues
+Author: Bruno Rodrigues [aut, cre] (<https://orcid.org/0000-0002-3211-3689>),
+  Philipp Baumann [aut] (<https://orcid.org/0000-0002-3194-8975>),
+  David Watkins [rev] (David reviewed the package (v. 0.9.1) for
+    rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/625>),
+  Jacob Wujiciak-Jens [rev] (<https://orcid.org/0000-0002-7281-3989>,
+    Jacob reviewed the package (v. 0.9.1) for rOpenSci, see
+    <https://github.com/ropensci/software-review/issues/625>),
+  Richard J. Acton [ctb] (<https://orcid.org/0000-0002-2574-9611>),
+  Jordi Rosell [ctb] (<https://orcid.org/0000-0002-4349-1458>),
+  Elio Campitelli [ctb] (<https://orcid.org/0000-0002-7742-9230>),
+  László Kupcsik [ctb] (<https://orcid.org/0000-0003-3535-5496>),
+  Michael Heming [ctb] (<https://orcid.org/0000-0002-9568-2790>)
+Maintainer: Bruno Rodrigues <bruno@brodrigues.co>
+Repository: CRAN
+Date/Publication: 2025-03-01 20:40:02 UTC

@@ -1,0 +1,50 @@
+Package: EpiModel
+Version: 2.5.0
+Date: 2024-10-10
+Title: Mathematical Modeling of Infectious Disease Dynamics
+Description: Tools for simulating mathematical models of infectious disease dynamics.
+    Epidemic model classes include deterministic compartmental models, stochastic
+    individual-contact models, and stochastic network models. Network models use the
+    robust statistical methods of exponential-family random graph models (ERGMs)
+    from the Statnet suite of software packages in R. Standard templates for epidemic
+    modeling include SI, SIR, and SIS disease types. EpiModel features an API for
+    extending these templates to address novel scientific research aims. Full
+    methods for EpiModel are detailed in Jenness et al. (2018, <doi:10.18637/jss.v084.i08>).
+Maintainer: Samuel Jenness <samuel.m.jenness@emory.edu>
+Authors@R: c(person("Samuel", "Jenness",
+    role=c("cre","aut"), email="samuel.m.jenness@emory.edu"),
+    person("Steven M.","Goodreau",
+    role=c("aut"), email="goodreau@uw.edu"),
+    person("Martina", "Morris",
+    role=c("aut"), email="morrism@uw.edu"),
+    person("Adrien", "Le Guillou",
+    role=c("aut"), email="contact@aleguillou.org"),
+    person("Chad", "Klumb",
+    role=c("aut"), email="cklumb@gmail.com"),
+    person("Skye", "Bender-deMoll",
+    role=c("ctb"), email="skyebend@uw.edu"))
+License: GPL-3
+URL: https://www.epimodel.org/, https://epimodel.github.io/EpiModel/
+BugReports: https://github.com/EpiModel/EpiModel/issues/
+Depends: R (>= 4.1), deSolve (>= 1.21), networkDynamic (>= 0.11.3),
+        tergm (>= 4.2.1), statnet.common (>= 4.10.0)
+Imports: graphics, grDevices, stats, utils, collections, doParallel,
+        ergm (>= 4.7.1), foreach, network (>= 1.18.1), RColorBrewer,
+        ape, lazyeval, ggplot2, tibble, methods, rlang, dplyr, coda,
+        networkLite (>= 1.0.5)
+Suggests: ergm.ego (>= 1.1.0), egor, knitr, ndtv, rmarkdown, shiny,
+        testthat, progressr, tidyr
+VignetteBuilder: knitr
+LinkingTo: Rcpp, ergm
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-10-11 14:08:46 UTC; sjennes
+Author: Samuel Jenness [cre, aut],
+  Steven M. Goodreau [aut],
+  Martina Morris [aut],
+  Adrien Le Guillou [aut],
+  Chad Klumb [aut],
+  Skye Bender-deMoll [ctb]
+Repository: CRAN
+Date/Publication: 2024-10-11 17:50:02 UTC

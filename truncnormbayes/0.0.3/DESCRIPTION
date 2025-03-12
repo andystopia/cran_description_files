@@ -1,0 +1,44 @@
+Package: truncnormbayes
+Title: Estimates Moments for a Truncated Normal Distribution using
+        'Stan'
+Version: 0.0.3
+Authors@R: c(
+  person("Mika", "Braginsky", role = c("aut"), email = "mika.br@gmail.com"),
+  person("Leon", "Tran", role = "aut", email = "leontk@stanford.edu"),
+  person("Maya", "Mathur", role = "ctb", email = "mmathur@stanford.edu"),
+  person("Peter", "Solymos", email = "peter@analythium.io", role = c("cre", "ctb"), comment = c(ORCID = "0000-0001-7337-1740"))
+  )
+Description: Finds the posterior modes for the mean and standard deviation for a
+  truncated normal distribution with one or two known truncation points.
+  The method used extends Bayesian methods for parameter estimation for a singly
+  truncated normal distribution under the Jeffreys prior (see Zhou X,
+  Giacometti R, Fabozzi FJ, Tucker AH (2014). "Bayesian estimation of truncated
+  data with applications to operational risk measurement".
+  <doi:10.1080/14697688.2012.752103>). This package additionally allows for a
+  doubly truncated normal distribution.
+URL: https://github.com/mathurlabstanford/truncnormbayes,
+        https://mathurlabstanford.github.io/truncnormbayes/
+BugReports: https://github.com/mathurlabstanford/truncnormbayes/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Biarch: true
+RdMacros: Rdpack
+Depends: R (>= 3.4.0)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), Rdpack,
+        rstan (>= 2.18.1), rstantools (>= 2.2.0), stats
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+Suggests: testthat (>= 3.0.0), truncnorm (>= 1.0), withr (>= 2.5.0)
+Config/testthat/edition: 3
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2023-08-23 02:06:23 UTC; root
+Author: Mika Braginsky [aut],
+  Leon Tran [aut],
+  Maya Mathur [ctb],
+  Peter Solymos [cre, ctb] (<https://orcid.org/0000-0001-7337-1740>)
+Maintainer: Peter Solymos <peter@analythium.io>
+Repository: CRAN
+Date/Publication: 2023-08-23 07:30:02 UTC

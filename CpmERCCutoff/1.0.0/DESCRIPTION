@@ -1,0 +1,30 @@
+Package: CpmERCCutoff
+Type: Package
+Title: Calculation of Log2 Counts per Million Cutoff from ERCC Controls
+Version: 1.0.0
+Authors@R: c(person("Tyler", "Grimes", role = "aut", comment = c(ORCID = "0000-0002-5653-3418")), 
+  person(c("Travis", "L."), "Jensen", role = "aut", comment = c(ORCID = "0000-0002-0322-0469")),
+  person("Kristen", "Steenbergen", role = c("ctb", "cre"), email = "ksteenbergen@emmes.com"),
+  person("The Emmes Company LLC", role = "cph", comment = "Copyright holder of CpmERCCutoff package (Copyright (C) 2022)"),
+  person(c("Johannes", "B."), "Goll", role = "aut", comment = c(ORCID = "0000-0002-9968-4080")))
+Description: Implementation of the empirical method to derive log2 counts per million (CPM) cutoff to filter out lowly expressed genes using ERCC spike-ins as described in Goll and Bosinger et.al (2022)<doi:10.1101/2022.06.23.497396>. This package utilizes the synthetic mRNA control pairs developed by the External RNA Controls Consortium (ERCC) (ERCC 1 / ERCC 2) that are spiked into sample pairs at known ratios at various absolute abundances.  The relationship between the observed and expected fold changes is then used to empirically determine an optimal log2 CPM cutoff for filtering out lowly expressed genes.
+Depends: R (>= 3.6)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: stats, graphics
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-09-12 18:36:42 UTC; ksteenbergen
+Language: en-US
+Author: Tyler Grimes [aut] (<https://orcid.org/0000-0002-5653-3418>),
+  Travis L. Jensen [aut] (<https://orcid.org/0000-0002-0322-0469>),
+  Kristen Steenbergen [ctb, cre],
+  The Emmes Company LLC [cph] (Copyright holder of CpmERCCutoff package
+    (Copyright (C) 2022)),
+  Johannes B. Goll [aut] (<https://orcid.org/0000-0002-9968-4080>)
+Maintainer: Kristen Steenbergen <ksteenbergen@emmes.com>
+Repository: CRAN
+Date/Publication: 2022-09-13 11:20:07 UTC

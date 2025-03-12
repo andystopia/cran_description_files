@@ -1,0 +1,27 @@
+Package: CJIVE
+Type: Package
+Title: Canonical Joint and Individual Variation Explained (CJIVE)
+Version: 0.1.0
+Authors@R: c(person("Raphiel", "Murden", email = "rmurden@emory.edu",role = c("aut", "cre"),comment = c(ORCID = "0000-0002-6396-9105")),person("Benjamin", "Risk", email = "brisk@emory.edu",role = "aut"))
+Maintainer: Raphiel Murden <rmurden@emory.edu>
+Description: Joint and Individual Variation Explained (JIVE) is a method for decomposing multiple datasets obtained on the same subjects into
+		shared structure, structure unique to each dataset, and noise. The two most common implementations are R.JIVE, an iterative
+		approach, and AJIVE, which uses principal angle analysis. JIVE estimates subspaces but interpreting these subspaces can be
+		challenging with AJIVE or R.JIVE. We expand upon insights into AJIVE as a canonical correlation analysis (CCA) of principal component
+		scores. This reformulation, which we call CJIVE, 1) provides an ordering of joint components by the degree of correlation between
+		corresponding canonical variables; 2) uses a computationally efficient permutation test for the number of joint components, which
+		provides a p-value for each component; and 3) can be used to predict subject scores for out-of-sample observations.
+		Please cite the following article when utilizing this package: 
+		Murden, R., Zhang, Z., Guo, Y., & Risk, B. (2022) <doi:10.3389/fnins.2022.969510>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: rootSolve, ggplot2, reshape2, fields, gplots, psych
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-01-18 18:03:19 UTC; RMURDEN
+Author: Raphiel Murden [aut, cre] (<https://orcid.org/0000-0002-6396-9105>),
+  Benjamin Risk [aut]
+Repository: CRAN
+Date/Publication: 2023-01-20 10:10:13 UTC

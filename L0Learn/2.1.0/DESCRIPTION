@@ -1,0 +1,31 @@
+Package: L0Learn
+Type: Package
+Title: Fast Algorithms for Best Subset Selection
+Version: 2.1.0
+Date: 2023-03-04
+Authors@R: c(
+    person("Hussein", "Hazimeh", email = "husseinhaz@gmail.com", role = c("aut", "cre")),
+    person("Rahul", "Mazumder", email = "rahulmaz@mit.edu", role = "aut"),
+    person("Tim", "Nonet", email = "tim.nonet@gmail.com", role = "aut"))
+Description: Highly optimized toolkit for approximately solving L0-regularized learning problems (a.k.a. best subset selection).
+    The algorithms are based on coordinate descent and local combinatorial search.
+    For more details, check the paper by Hazimeh and Mazumder (2020) <doi:10.1287/opre.2019.1919>.
+URL: https://github.com/hazimehh/L0Learn
+        https://pubsonline.informs.org/doi/10.1287/opre.2019.1919
+BugReports: https://github.com/hazimehh/L0Learn/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.3.0)
+Imports: Rcpp (>= 0.12.13), Matrix, methods, ggplot2, reshape2, MASS
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat, pracma, raster, covr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-03-04 19:02:37 UTC; hh
+Author: Hussein Hazimeh [aut, cre],
+  Rahul Mazumder [aut],
+  Tim Nonet [aut]
+Maintainer: Hussein Hazimeh <husseinhaz@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-07 08:00:18 UTC

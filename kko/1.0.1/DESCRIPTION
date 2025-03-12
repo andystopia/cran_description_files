@@ -1,0 +1,24 @@
+Package: kko
+Title: Kernel Knockoffs Selection for Nonparametric Additive Models
+Version: 1.0.1
+Authors@R: 
+    c(person("Xiaowu", "Dai", role = c("aut")),
+    person("Xiang", "Lyu", role = c("aut","cre"), email="xianglyu@berkeley.edu"),
+    person("Lexin", "Li", role = c("aut")))
+Description: A variable selection procedure, dubbed KKO, for nonparametric additive model with finite-sample false discovery rate control guarantee. The method integrates three key components: knockoffs, subsampling for stability, and random feature mapping for nonparametric function approximation. For more information, see the accompanying paper: Dai, X., Lyu, X., & Li, L. (2021). “Kernel Knockoffs Selection for Nonparametric Additive Models”. arXiv preprint <arXiv:2105.11659>.
+License: GPL (>= 2)
+Depends: R (>= 3.6.3)
+Imports: grpreg, knockoff, doParallel, parallel, foreach, ExtDist
+Suggests: knitr, rmarkdown, ggplot2
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+Author: Xiaowu Dai [aut],
+  Xiang Lyu [aut, cre],
+  Lexin Li [aut]
+Maintainer: Xiang Lyu <xianglyu@berkeley.edu>
+NeedsCompilation: no
+Packaged: 2022-01-31 03:32:30 UTC; xianglyu
+Repository: CRAN
+Date/Publication: 2022-02-01 09:10:05 UTC

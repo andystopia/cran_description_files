@@ -1,0 +1,39 @@
+Package: mdpeer
+Title: Graph-Constrained Regression with Enhanced Regularization
+        Parameters Selection
+Version: 1.0.1
+Authors@R: c(person("Marta", "Karas", email = "marta.karass@gmail.com", role = c("aut", "cre")),
+             person("Damian", "Brzyski", email = "dbrzyski@iu.edu", role = "ctb"),
+             person("Jaroslaw", "Harezlak", email = "harezlak@iu.edu", role = "ctb"))
+Author: Marta Karas [aut, cre], Damian Brzyski [ctb], Jaroslaw Harezlak [ctb]
+Maintainer: Marta Karas <marta.karass@gmail.com>
+Description: Provides graph-constrained regression methods in which
+    regularization parameters are selected automatically via estimation of
+    equivalent Linear Mixed Model formulation. 'riPEER' (ridgified Partially
+    Empirical Eigenvectors for Regression) method employs a penalty term being
+    a linear combination of graph-originated and ridge-originated penalty terms,
+    whose two regularization parameters are ML estimators from corresponding
+    Linear Mixed Model solution; a graph-originated penalty term allows imposing
+    similarity between coefficients based on graph information given whereas
+    additional ridge-originated penalty term facilitates parameters estimation:
+    it reduces computational issues arising from singularity in a graph-originated
+    penalty matrix and yields plausible results in situations when graph information
+    is not informative. 'riPEERc' (ridgified Partially Empirical Eigenvectors
+    for Regression with constant) method utilizes addition of a diagonal matrix
+    multiplied by a predefined (small) scalar to handle the non-invertibility of
+    a graph Laplacian matrix. 'vrPEER' (variable reducted PEER) method performs
+    variable-reduction procedure to handle the non-invertibility of a graph
+    Laplacian matrix.
+Depends: R (>= 3.3.3)
+Imports: reshape2, ggplot2, nlme, boot, nloptr, rootSolve, psych,
+        magic, glmnet
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-05-30 02:48:05 UTC; mkaras
+Repository: CRAN
+Date/Publication: 2017-05-30 04:44:40 UTC

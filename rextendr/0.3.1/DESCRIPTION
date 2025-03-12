@@ -1,0 +1,68 @@
+Package: rextendr
+Title: Call Rust Code from R using the 'extendr' Crate
+Version: 0.3.1
+Authors@R: 
+    c(person(given = "Claus O.",
+             family = "Wilke",
+             role = "aut",
+             email = "wilke@austin.utexas.edu",
+             comment = c(ORCID = "0000-0002-7470-9261")),
+      person(given = "Andy",
+             family = "Thomason",
+             role = "aut",
+             email = "andy@andythomason.com"),
+      person(given = "Mossa M.",
+             family = "Reimert",
+             role = "aut",
+             email = "mossa@sund.ku.dk"),
+      person(given = "Ilia",
+             family = "Kosenkov",
+             role = c("aut", "cre"),
+             email = "ilia.kosenkov@outlook.com",
+             comment = c(ORCID = "0000-0001-5563-7840")),
+      person(given = "Hiroaki",
+             family = "Yutani",
+             role = "aut",
+             email = "yutani.ini@gmail.com",
+             comment = c(ORCID = "0000-0002-3385-7233")),
+      person(given = "Malcolm",
+             family = "Barrett",
+             role = "aut",
+             email = "malcolmbarrett@gmail.com",
+             comment = c(ORCID = "0000-0003-0299-5825")),
+      person(given = "Josiah",
+             family = "Parry",
+             role = "ctb",
+             comment = c(ORCID = "0000-0001-9910-865X")))
+Description: Provides functions to compile and load Rust code from R, similar
+    to how 'Rcpp' or 'cpp11' allow easy interfacing with C++ code. Also provides
+    helper functions to create R packages that use Rust code. Under the hood,
+    the Rust crate 'extendr' is used to do all the heavy lifting.
+License: MIT + file LICENSE
+URL: https://extendr.github.io/rextendr/
+BugReports: https://github.com/extendr/rextendr/issues
+Depends: R (>= 4.0)
+Imports: brio, callr, cli, desc, dplyr, glue, jsonlite, pkgbuild (>=
+        1.4.0), processx, purrr, rlang (>= 1.0.5), rprojroot, stringi,
+        tibble, vctrs, withr
+Suggests: devtools, knitr, lintr, mockr, rmarkdown, rstudioapi,
+        testthat (>= 3.0.2), usethis
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: Rust 'cargo'; the crate 'libR-sys' must compile
+        without error
+NeedsCompilation: no
+Packaged: 2023-06-19 14:32:40 UTC; iliak
+Author: Claus O. Wilke [aut] (<https://orcid.org/0000-0002-7470-9261>),
+  Andy Thomason [aut],
+  Mossa M. Reimert [aut],
+  Ilia Kosenkov [aut, cre] (<https://orcid.org/0000-0001-5563-7840>),
+  Hiroaki Yutani [aut] (<https://orcid.org/0000-0002-3385-7233>),
+  Malcolm Barrett [aut] (<https://orcid.org/0000-0003-0299-5825>),
+  Josiah Parry [ctb] (<https://orcid.org/0000-0001-9910-865X>)
+Maintainer: Ilia Kosenkov <ilia.kosenkov@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-06-20 18:20:02 UTC

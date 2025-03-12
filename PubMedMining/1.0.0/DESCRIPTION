@@ -1,0 +1,26 @@
+Package: PubMedMining
+Title: Text-Mining of the 'PubMed' Repository
+Version: 1.0.0
+Authors@R: 
+    person(given = "Jeff",
+           family = "DIDIER",
+           role = c("aut", "cre"),
+           email = "jeff.didier.001@student.uni.lu")
+Description: Easy function for text-mining the 'PubMed' repository based on defined sets of terms.
+    The relationship between fix-terms (related to your research topic) and pub-terms (terms which pivot around your research focus)
+    is calculated using the pointwise mutual information algorithm ('PMI'). Church, Kenneth Ward and Hanks, Patrick (1990) <https://www.aclweb.org/anthology/J90-1003/>
+    A text file is generated with the 'PMI'-scores for each fix-term. Then for each collocation pairs (a fix-term + a pub-term),
+    a text file is generated with related article titles and publishing years. Additional Author section will follow in the next version updates.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: easyPubMed, stringr, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-11-11 18:23:57 UTC; Master Jeff
+Author: Jeff DIDIER [aut, cre]
+Maintainer: Jeff DIDIER <jeff.didier.001@student.uni.lu>
+Repository: CRAN
+Date/Publication: 2020-11-16 16:20:02 UTC

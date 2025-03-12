@@ -1,0 +1,40 @@
+Package: CoNI
+Type: Package
+Title: Correlation Guided Network Integration (CoNI)
+Version: 0.1.0
+Date: 2021-09-28
+Authors@R: c(person(given = "José Manuel", 
+                    family = "Monroy Kuhn", 
+                    email = "nolozz@gmail.com",
+                    role = c("aut", "cre")),
+             person(given = "Dominik",
+                    family = "Lutter",
+                    email = "dominik.lutter@helmholtz-muenchen.de",
+                    role = c("ths")),
+             person(given = "Valentina",
+                    family = "Klaus",
+                    role = c("ctb")))
+Description: Integrates two numerical omics data sets from the same samples using partial correlations. The output can be represented as a network, bipartite graph or a hypergraph structure. The method used in the package refers to Klaus et al (2021) <doi:10.1016/j.molmet.2021.101295>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+RoxygenNote: 7.1.1
+Imports: igraph (>= 1.2.6), doParallel (>= 1.0.16), cocor (>= 1.1.3),
+        ggplot2 (>= 3.3.3), forcats (>= 0.5.1), dplyr (>= 1.0.5),
+        data.table (>= 1.13.7), tibble (>= 3.1.0), foreach (>= 1.5.1),
+        genefilter (>= 1.72.1), ggrepel (>= 0.9.1), gplots (>= 3.1.1),
+        gridExtra (>= 2.3), plyr (>= 1.8.6), ppcor (>= 1.1), tidyr (>=
+        1.1.3), Hmisc (>= 4.4.2), methods (>= 4.0.3), rlang (>=
+        0.4.10), tidyselect (>= 1.1.0)
+Suggests: kableExtra (>= 1.3.2), knitr (>= 1.31), rmarkdown (>= 2.6)
+VignetteBuilder: knitr
+SystemRequirements: python3
+NeedsCompilation: no
+Packaged: 2021-09-29 16:18:07 UTC; manuel.kuhn
+Author: José Manuel Monroy Kuhn [aut, cre],
+  Dominik Lutter [ths],
+  Valentina Klaus [ctb]
+Maintainer: José Manuel Monroy Kuhn <nolozz@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-09-30 09:10:02 UTC

@@ -1,0 +1,23 @@
+Package: gbts
+Type: Package
+Title: Hyperparameter Search for Gradient Boosted Trees
+Version: 1.2.0
+Date: 2017-02-26
+Author: Waley W. J. Liang
+Maintainer: Waley W. J. Liang <wliang10@gmail.com>
+Description: An implementation of hyperparameter optimization for Gradient
+    Boosted Trees on binary classification and regression problems. The current
+    version provides two optimization methods: Bayesian optimization and random
+    search. Instead of giving the single best model, the final output is an 
+    ensemble of Gradient Boosted Trees constructed via the method of ensemble 
+    selection.
+License: GPL (>= 2) | file LICENSE
+LazyData: true
+Imports: doParallel, doRNG, foreach, gbm, earth
+Depends: R (>= 3.3.0)
+Suggests: testthat
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-02-27 06:57:09 UTC; wl
+Repository: CRAN
+Date/Publication: 2017-02-27 08:41:32

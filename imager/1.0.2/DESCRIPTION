@@ -1,0 +1,43 @@
+Package: imager
+Type: Package
+Title: Image Processing Library Based on 'CImg'
+Version: 1.0.2
+Authors@R: c(person("Simon","Barthelme",email="simon.barthelme@gipsa-lab.fr",role=c("aut")),
+ person("David","Tschumperle",role=c("ctb")),
+ person("Jan","Wijffels",role=c("ctb")),
+ person("Haz Edine","Assemlal",role=c("ctb")),
+ person("Shota","Ochi",email="shotaochi1990@gmail.com",role=c("ctb")),
+ person("Aaron","Robotham",email="aaron.robotham@uwa.edu.au",role=c("cre")),
+ person("Rodrigo","Tobar",role=c("ctb")))
+Description: Fast image processing for images in up to 4 dimensions (two spatial
+    dimensions, one time/depth dimension, one colour dimension). Provides most
+    traditional image processing tools (filtering, morphology, transformations,
+    etc.) as well as various functions for easily analysing image data using R. The
+    package wraps 'CImg', <http://cimg.eu>, a simple, modern C++ library for image
+    processing.
+License: LGPL-3
+Imports: Rcpp (>= 1.0.0), methods, stringr, png, jpeg, readbitmap,
+        grDevices, purrr, downloader, igraph
+Depends: R (>= 4.0.0), magrittr
+URL: https://asgr.github.io/imager/, https://github.com/asgr/imager/
+BugReports: https://github.com/asgr/imager/issues
+SystemRequirements: fftw3, libtiff, X11
+LinkingTo: Rcpp
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, ggplot2, dplyr, scales, testthat, raster,
+        spatstat.geom, magick, Cairo
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-05-13 01:58:43 UTC; aaron
+Author: Simon Barthelme [aut],
+  David Tschumperle [ctb],
+  Jan Wijffels [ctb],
+  Haz Edine Assemlal [ctb],
+  Shota Ochi [ctb],
+  Aaron Robotham [cre],
+  Rodrigo Tobar [ctb]
+Maintainer: Aaron Robotham <aaron.robotham@uwa.edu.au>
+Repository: CRAN
+Date/Publication: 2024-05-13 09:03:08 UTC

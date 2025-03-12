@@ -1,0 +1,24 @@
+Package: synMicrodata
+Type: Package
+Title: Synthetic Microdata Generator
+Version: 2.1.0
+Date: 2024-11-21
+Authors@R: c(person("Hang J.", "Kim", role = c("aut", "cre"),
+                    email = "hangkim0@gmail.com"),
+             person("Juhee", "Lee", role = "aut"),
+             person("Young-Min", "Kim", role = "aut"),
+             person("Jared", "Murray", role = "aut"))
+Maintainer: Hang J. Kim <hangkim0@gmail.com>
+Description: This tool fits a non-parametric Bayesian model called a "hierarchically coupled mixture model with local dependence (HCMM-LD)" to the original microdata in order to generate synthetic microdata for privacy protection. The non-parametric feature of the adopted model is useful for capturing the joint distribution of the original input data in a highly flexible manner, leading to the generation of synthetic data whose distributional features are similar to that of the input data. The package allows the original input data to have missing values and impute them with the posterior predictive distribution, so no missing values exist in the synthetic data output. The method builds on the work of Murray and Reiter (2016) <doi:10.1080/01621459.2016.1174132>. 
+License: GPL (>= 3)
+Imports: methods, stats, graphics, utils, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+RcppModules: IO_module
+NeedsCompilation: yes
+Packaged: 2024-11-21 04:41:42 UTC; user
+Author: Hang J. Kim [aut, cre],
+  Juhee Lee [aut],
+  Young-Min Kim [aut],
+  Jared Murray [aut]
+Repository: CRAN
+Date/Publication: 2024-11-21 05:40:02 UTC

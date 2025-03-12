@@ -1,0 +1,28 @@
+Package: BioPred
+Type: Package
+Title: An R Package for Biomarkers Analysis in Precision Medicine
+Version: 1.0.2
+Date: 2024-11-03
+Authors@R: c(
+    person("Zihuan", "Liu", , "zihuan.liu@abbvie.com", role = c("aut", "cre")),
+    person("Yan", "Sun", , "yan.sun@abbvie.com", role = "aut"),
+    person("Xin","Huang", , "xin.huang@abbvie.com", role = "aut"))
+Maintainer: Zihuan Liu <zihuan.liu@abbvie.com>
+Description: Provides functions for training extreme gradient boosting model using propensity score A-learning and weight-learning methods. For further details, see Liu et al. (2024) <doi:10.1093/bioinformatics/btae592>.
+Encoding: UTF-8
+Language: en
+License: GPL-3
+Imports: xgboost, pROC, ggplot2, PropCIs, survival, survminer, mgcv,
+        onewaytests, car
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, kableExtra
+VignetteBuilder: knitr
+NeedsCompilation: no
+Depends: R (>= 4.0.0)
+LazyData: true
+Packaged: 2024-11-04 00:56:19 UTC; LIUZX18
+Author: Zihuan Liu [aut, cre],
+  Yan Sun [aut],
+  Xin Huang [aut]
+Repository: CRAN
+Date/Publication: 2024-11-04 08:30:13 UTC

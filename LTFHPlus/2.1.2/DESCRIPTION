@@ -1,0 +1,46 @@
+Package: LTFHPlus
+Type: Package
+Title: Implementation of LT-FH++
+Version: 2.1.2
+Authors@R: c(
+    person("Emil Michael", "Pedersen", email = "emp@ph.au.dk", role = c("aut", "cre")),
+    person("Florian", "Privé", email = "florian.prive.21@gmail.com", role = c("aut", "ths")),
+    person("Bjarni Jóhann", "Vilhjálmsson", email = "bjv@econ.au.dk", role = "ths"),
+    person("Esben", "Agerbo", email = "ea@econ.au.dk", role = "ths"),
+    person("Jette", "Steinbach", , "jst@econ.au.dk", role = "aut"),
+    person("Lucas", "Rasmussen", email = "lar.ncrr@au.dk", role = "ctb"))
+Description: Implementation of LT-FH++, an extension of
+    the liability threshold family history (LT-FH) model.
+    LT-FH++ uses a Gibbs sampler for sampling from the truncated 
+    multivariate normal distribution and allows for 
+    flexible family structures. LT-FH++ was first described in 
+    Pedersen, Emil M., et al. (2022) 
+    <doi:10.1016/j.ajhg.2022.01.009> 
+    as an extension to LT-FH with more flexible family structures, 
+    and again as the age-dependent liability threshold (ADuLT) model
+    Pedersen, Emil M., et al. (2023) 
+    <doi:10.1038/s41467-023-41210-z> 
+    as an alternative to traditional time-to-event genome-wide
+    association studies, where family history was not considered.
+License: GPL-3
+Imports: batchmeans, dplyr, future.apply, future, purrr, Rcpp, rlang,
+        stats, stringr, tibble, tmvtnorm, tidyselect, igraph, xgboost,
+        tidyr
+Suggests: MASS, knitr, rmarkdown, testthat
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Language: en-GB
+URL: https://github.com/EmilMiP/LTFHPlus
+BugReports: https://github.com/EmilMiP/LTFHPlus/issues
+NeedsCompilation: yes
+Packaged: 2024-11-22 15:18:29 UTC; au483192
+Author: Emil Michael Pedersen [aut, cre],
+  Florian Privé [aut, ths],
+  Bjarni Jóhann Vilhjálmsson [ths],
+  Esben Agerbo [ths],
+  Jette Steinbach [aut],
+  Lucas Rasmussen [ctb]
+Maintainer: Emil Michael Pedersen <emp@ph.au.dk>
+Repository: CRAN
+Date/Publication: 2024-11-22 15:30:02 UTC

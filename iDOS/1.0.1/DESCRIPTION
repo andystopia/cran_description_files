@@ -1,0 +1,25 @@
+Package: iDOS
+Type: Package
+Title: Integrated Discovery of Oncogenic Signatures
+Version: 1.0.1
+Date: 2024-03-09
+Authors@R: c(
+  person("Syed", "Haider", role = c("aut", "cre"), email = "Syed.Haider@icr.ac.uk"),
+  person("Francesca", "Buffa", role = "aut")
+  )
+Author: Syed Haider [aut, cre],
+  Francesca Buffa [aut]
+Maintainer: Syed Haider <Syed.Haider@icr.ac.uk>
+Depends: R (>= 3.6.0), VennDiagram (>= 1.6.5)
+Description: A method to integrate molecular profiles of cancer patients (gene copy number and mRNA abundance) to 
+	identify candidate gain of function alterations. These candidate alterations can be subsequently further tested  
+	to discover cancer driver alterations. Briefly, this method tests of genomic correlates of mRNA dysregulation and prioritise 
+	those where DNA gains/amplifications are associated with elevated mRNA expression of the same gene. For details see,
+	Haider S et al. (2016) "Genomic alterations underlie a pan-cancer metabolic shift associated with tumour hypoxia", Genome Biology, <https://pubmed.ncbi.nlm.nih.gov/27358048/>.
+License: GPL-2
+LazyLoad: yes
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-03-09 20:20:57 UTC; shaider
+Repository: CRAN
+Date/Publication: 2024-03-11 18:50:09 UTC

@@ -1,0 +1,35 @@
+Package: RankAggregator
+Title: Aggregation of (Partial) Ordinal Rankings
+Version: 0.0.1
+Authors@R: c(
+          person(given = "Jay",
+            family = "Burns",
+            role = c("aut", "cre"),
+            email = "jay.burns@sruc.ac.uk"),
+          person(given = "Adam",
+            family = "Butler",
+            role = c("aut"),
+            email = "adam.butler@bioss.ac.uk")
+            )
+Description: Easily compute an aggregate ranking (also called a median ranking or a
+             consensus ranking) according to the axiomatic approach presented
+             by Cook et al. (2007). This approach minimises the number of violations
+             between all candidate consensus rankings and all input (partial) rankings,
+             and draws on a branch and bound algorithm and a heuristic algorithm to
+             drastically improve speed. The package also provides an option to bootstrap
+             a consensus ranking based on resampling input rankings (with 
+             replacement). Input rankings can be either incomplete (partial) or complete.
+             Reference: Cook, W.D., Golany, B., Penn, M. and Raviv, T. (2007) <doi:10.1016/j.cor.2005.05.030>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+Suggests: knitr
+NeedsCompilation: no
+Packaged: 2020-08-26 10:38:22 UTC; jburns
+Author: Jay Burns [aut, cre],
+  Adam Butler [aut]
+Maintainer: Jay Burns <jay.burns@sruc.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-08-31 09:20:10 UTC

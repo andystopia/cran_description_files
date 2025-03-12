@@ -1,0 +1,16 @@
+Package: propOverlap
+Type: Package
+Title: Feature (gene) selection based on the Proportional Overlapping
+        Scores
+Version: 1.0
+Date: 2014-09-15
+Author: Osama Mahmoud, Andrew Harrison, Aris Perperoglou, Asma Gul, Zardad Khan, Berthold Lausen
+Maintainer: Osama Mahmoud <ofamah@essex.ac.uk>
+Description: A package for selecting the most relevant features (genes) in the high-dimensional binary classification problems. The discriminative features are identified using analyzing the overlap between the expression values across both classes. The package includes functions for measuring the proportional overlapping score for each gene avoiding the outliers effect. The used measure for the overlap is the one defined in the "Proportional Overlapping Score (POS)" technique for feature selection. A gene mask which represents a gene's classification power can also be produced for each gene (feature). The set size of the selected genes might be set by the user. The minimum set of genes that correctly classify the maximum number of the given tissue samples (observations) can be also produced.
+Depends: R (>= 2.10), Biobase
+LazyLoad: yes
+License: GPL (>= 2)
+Repository: CRAN
+Packaged: 2014-09-15 12:28:08 UTC; osama
+NeedsCompilation: no
+Date/Publication: 2014-09-15 17:06:03

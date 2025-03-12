@@ -1,0 +1,24 @@
+Package: rsides
+Type: Package
+Title: SIDES-Based Subgroup Search Algorithms
+Description: R implementation of SIDES-based subgroup search algorithms (Lipkovich et al. (2017) <doi:10.1002/sim.7064>).
+License: GPL (>= 2)
+Version: 0.1
+Date: 2024-05-27
+Packaged: 2024-06-07 15:16:58 UTC; vic
+Date/Publication: 2024-06-10 17:00:02 UTC
+Repository: CRAN
+Author: Alex Dmitrienko [aut, cre]
+Authors@R: c(
+   person("Alex", "Dmitrienko", email = "admitrienko@mediana.us", role = c("aut", "cre")))
+Maintainer: Alex Dmitrienko <admitrienko@mediana.us>
+Depends: R (>= 3.1.2)
+Imports: Rcpp (>= 0.12.10), survival, xml2, foreach, parallel,
+        doParallel, doRNG, officer, flextable
+Suggests: testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppEigen, BH
+NeedsCompilation: yes
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: true
+Config/testthat/edition: 3

@@ -1,0 +1,34 @@
+Package: deident
+Type: Package
+Title: Persistent Data Anonymization Pipeline
+Version: 1.0.0
+Authors@R: c(
+    person("Robert", "Cook", , "robert.cook@staffs.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3343-8271")),
+    person("Md", "Assaduzaman", role = "aut",
+           comment = c(ORCID = "0000-0002-8885-6721")),
+    person("Sarahjane", "Jones", role = "aut",
+           comment = c(ORCID = "0000-0003-4729-4029"))
+  )
+Description: A framework for the replicable removal of personally identifiable data 
+    (PID) in data sets.  The package implements a suite of methods to suit different 
+    data types based on the suggestions of  Garfinkel (2015) <doi:10.6028/NIST.IR.8053> 
+    and the ICO "Guidelines on Anonymization" (2012) <https://ico.org.uk/media/1061/anonymisation-code.pdf>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Suggests: testthat (>= 3.0.0), checkmate, knitr, rmarkdown, roxygen2
+Imports: R6, dplyr, openssl, tidyselect, rlang (>= 0.4.11), glue,
+        purrr, stringr, yaml, readr, openxlsx, lemon, withr, fs
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2024-11-18 11:36:38 UTC; rzc1
+Author: Robert Cook [aut, cre] (<https://orcid.org/0000-0003-3343-8271>),
+  Md Assaduzaman [aut] (<https://orcid.org/0000-0002-8885-6721>),
+  Sarahjane Jones [aut] (<https://orcid.org/0000-0003-4729-4029>)
+Maintainer: Robert Cook <robert.cook@staffs.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-11-19 09:50:06 UTC

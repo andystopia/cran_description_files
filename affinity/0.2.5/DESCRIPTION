@@ -1,0 +1,28 @@
+Package: affinity
+Title: Raster Georeferencing, Grid Affine Transforms, Cell Abstraction
+Version: 0.2.5
+Authors@R: person("Michael D.", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre"))
+Description: Tools for raster georeferencing, grid affine transforms, and general raster logic. 
+ These functions provide converters between raster specifications, world vector, geotransform, 
+ 'RasterIO' window, and 'RasterIO window' in 'sf' package list format. There are functions to offset
+ a matrix by padding any of four corners (useful for vectorizing neighbourhood operations), and
+ helper functions to harvesting user clicks on a graphics device to use for simple georeferencing
+ of images.  Methods used are available from <https://en.wikipedia.org/wiki/World_file> and
+ <https://gdal.org/user/raster_data_model.html>. 
+Depends: R (>= 3.2.3)
+License: GPL-3
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.1.1
+URL: https://github.com/hypertidy/affinity
+BugReports: https://github.com/hypertidy/affinity/issues
+Encoding: UTF-8
+Imports: raster, reproj, stats
+Suggests: rmarkdown, covr, knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-06-01 16:38:09 UTC; mdsumner
+Author: Michael D. Sumner [aut, cre]
+Maintainer: Michael D. Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-02 07:50:05 UTC

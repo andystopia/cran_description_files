@@ -1,0 +1,35 @@
+Package: tidyhte
+Title: Tidy Estimation of Heterogeneous Treatment Effects
+Version: 1.0.2
+Authors@R: 
+    person(given = "Drew",
+           family = "Dimmery",
+           role = c("aut", "cre", "cph"),
+           email = "drew.dimmery@univie.ac.at",
+           comment = c(ORCID = "0000-0001-9602-6325"))
+Description: Estimates heterogeneous treatment effects using tidy semantics 
+    on experimental or observational data.  Methods are based on the doubly-robust
+    learner of Kennedy (n.d.) <arXiv:2004.14497>. You provide a simple
+    recipe for what machine learning algorithms to use in estimating the nuisance
+    functions and 'tidyhte' will take care of cross-validation, estimation, model
+    selection, diagnostics and construction of relevant quantities of interest about
+    the variability of treatment effects.
+URL: https://github.com/ddimmery/tidyhte
+        https://ddimmery.github.io/tidyhte/index.html
+BugReports: https://github.com/ddimmery/tidyhte/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: covr, devtools, estimatr, ggplot2, glmnet, knitr, mockr,
+        nprobust, palmerpenguins, quadprog, quickblock, rmarkdown,
+        testthat (>= 3.0.0), vimp, WeightedROC
+Config/testthat/edition: 3
+Imports: checkmate, dplyr, lifecycle, magrittr, progress, purrr, R6,
+        rlang, SuperLearner, tibble
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-08-11 15:35:39 UTC; drewd
+Author: Drew Dimmery [aut, cre, cph] (<https://orcid.org/0000-0001-9602-6325>)
+Maintainer: Drew Dimmery <drew.dimmery@univie.ac.at>
+Repository: CRAN
+Date/Publication: 2023-08-14 11:30:02 UTC

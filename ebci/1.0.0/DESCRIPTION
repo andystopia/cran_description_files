@@ -1,0 +1,41 @@
+Package: ebci
+Title: Robust Empirical Bayes Confidence Intervals
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Michal",
+            family = "Kolesár",
+            role = c("aut", "cre"),
+            email = "kolesarmi@googlemail.com",
+            comment = c(ORCID = "0000-0002-2482-7796")),
+      person(given= "Tim",
+             family = "Armstrong",
+             role = "ctb",
+             email = "timothy.armstrong@yale.edu"),
+      person(given = "Mikkel",
+             family = "Plagborg-Møller",
+             role = "ctb",
+             email = "mikkelpm@princeton.edu"))
+Description: Computes empirical Bayes confidence estimators and confidence
+    intervals in a normal means model. The intervals are robust in the sense
+    that they achieve correct coverage regardless of the distribution of the
+    means. If the means are treated as fixed, the intervals have an average
+    coverage guarantee. The implementation is based on Armstrong, Kolesár and
+    Plagborg-Møller (2020) <arXiv:2004.03448>.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: spelling, testthat (>= 2.1.0), lpSolve, knitr, rmarkdown
+Language: en-US
+URL: https://github.com/kolesarm/ebci
+BugReports: https://github.com/kolesarm/ebci/issues
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-02 17:29:45 UTC; kolesarm
+Author: Michal Kolesár [aut, cre] (<https://orcid.org/0000-0002-2482-7796>),
+  Tim Armstrong [ctb],
+  Mikkel Plagborg-Møller [ctb]
+Maintainer: Michal Kolesár <kolesarmi@googlemail.com>
+Repository: CRAN
+Date/Publication: 2021-09-06 08:40:05 UTC

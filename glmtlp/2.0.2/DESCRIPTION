@@ -1,0 +1,36 @@
+Package: glmtlp
+Type: Package
+Title: Generalized Linear Models with Truncated Lasso Penalty
+Version: 2.0.2
+Date: 2024-10-01
+Authors@R: c(
+    person("Chunlin", "Li", , "chunlin@iastate.edu", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0003-2989-8785")),
+    person("Yu", "Yang", , "yuyang.stat@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-7355-6702")),
+    person("Chong", "Wu", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-8400-1785")),
+    person("Xiaotong", "Shen", role = c("ths", "cph")),
+    person("Wei", "Pan", role = c("ths", "cph"))
+  )
+URL: https://yuyangyy.com/glmtlp/
+Depends: R (>= 3.5.0)
+Imports: foreach, doParallel, ggplot2
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Description: Extremely efficient procedures for fitting regularization path with l0, l1, and truncated lasso penalty for linear regression and logistic regression models. This version is a completely new version compared with our previous version, which was mainly based on R. New core algorithms are developed and are now written in C++ and highly optimized. 
+Encoding: UTF-8
+License: GPL-3
+LazyData: true
+Author: Chunlin Li [aut, cph] (<https://orcid.org/0000-0003-2989-8785>),
+  Yu Yang [aut, cre, cph] (<https://orcid.org/0000-0001-7355-6702>),
+  Chong Wu [aut, cph] (<https://orcid.org/0000-0002-8400-1785>),
+  Xiaotong Shen [ths, cph],
+  Wei Pan [ths, cph]
+Maintainer: Yu Yang <yuyang.stat@gmail.com>
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-10-02 14:56:35 UTC; yuyang
+Repository: CRAN
+Date/Publication: 2024-10-02 20:20:14 UTC

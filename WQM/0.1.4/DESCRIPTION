@@ -1,0 +1,33 @@
+Package: WQM
+Type: Package
+Title: Wavelet-Based Quantile Mapping for Postprocessing Numerical
+        Weather Predictions
+Version: 0.1.4
+Authors@R: 
+    c(person(given = "Ze",
+           family = "Jiang",
+           role = c("aut", "cre"),
+           email = "ze.jiang@unsw.edu.au",
+           comment = c(ORCID = "0000-0002-3472-0829")),
+      person(given = "Fiona",
+           family = "Johnson",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0001-5708-1807")))
+Author: Ze Jiang [aut, cre] (<https://orcid.org/0000-0002-3472-0829>),
+  Fiona Johnson [aut] (<https://orcid.org/0000-0001-5708-1807>)
+Maintainer: Ze Jiang <ze.jiang@unsw.edu.au>
+Description: The wavelet-based quantile mapping (WQM) technique is designed to correct biases in spatio-temporal precipitation forecasts across multiple time scales. The WQM method effectively enhances forecast accuracy by generating an ensemble of precipitation forecasts that account for uncertainties in the prediction process. For a comprehensive overview of the methodologies employed in this package, please refer to Jiang, Z., and Johnson, F. (2023) <doi:10.1029/2022EF003350>. The package relies on two packages for continuous wavelet transforms: 'WaveletComp', which can be installed automatically, and 'wmtsa', which is optional and available from the CRAN archive <https://cran.r-project.org/src/contrib/Archive/wmtsa/>. Users need to manually install 'wmtsa' from this archive if they prefer to use 'wmtsa' based decomposition.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: MBC, WaveletComp, matrixStats, ggplot2
+Suggests: stats, tidyr, dplyr, wmtsa, scales, data.table, graphics,
+        testthat (>= 3.0.0), knitr, rmarkdown, bookdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-07 22:38:30 UTC; z5154277
+Repository: CRAN
+Date/Publication: 2024-10-11 08:00:18 UTC

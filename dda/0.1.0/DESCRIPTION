@@ -1,0 +1,25 @@
+Package: dda
+Type: Package
+Title: Direction Dependence Analysis
+Version: 0.1.0
+License: MIT + file LICENSE
+Authors@R: c(
+    person("Wolfgang", "Wiedermann", email = "wiedermannw@missouri.edu",
+           role = c("aut", "cre")),
+    person("Megan", "Hirni", email = "mjhirni@outlook.com", role = "aut")
+           )
+Maintainer: Wolfgang Wiedermann <wiedermannw@missouri.edu>
+Description: A collection of tests to analyze the causal direction of dependence in linear models (Wiedermann, W., & von Eye, A., 2025, ISBN: 9781009381390). The package includes functions to perform Direction Dependence Analysis for variable distributions, residual distributions, and independence properties of predictors and residuals in competing causal models. In addition, the package contains functions to test the causal direction of dependence in conditional models (i.e., models with interaction terms) For more information see <https://www.ddaproject.com>.
+Imports: dHSIC, energy, foreach, graphics, methods, stats
+Suggests: boot, doParallel, devtools, interactions, iterators, lmtest,
+        moments, spelling, testthat (>= 3.0.0), waldo
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+URL: https://github.com/wwiedermann/dda
+NeedsCompilation: no
+Packaged: 2025-02-28 20:54:43 UTC; mhirni
+Author: Wolfgang Wiedermann [aut, cre],
+  Megan Hirni [aut]
+Repository: CRAN
+Date/Publication: 2025-03-04 21:00:01 UTC

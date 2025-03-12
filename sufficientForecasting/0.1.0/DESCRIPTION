@@ -1,0 +1,46 @@
+Package: sufficientForecasting
+Type: Package
+Title: Sufficient Forecasting using Factor Models
+Version: 0.1.0
+Authors@R: c(person(given = "Jianqing", 
+           family = "Fan",
+           role = "aut"),
+           person(given = "Jing", 
+           family = "Fu",
+           email = "jingfu991224@outlook.com",
+           role = c("aut","cre")),
+           person(given = "Wei", 
+           family = "Luo",
+           role = "aut"),
+           person(given = "Lingzhou", 
+           family = "Xue",
+           role = "aut"),
+           person(given = "Jiawei", 
+           family = "Yao",
+           role = "aut"),
+           person(given = "Xiufan", 
+           family = "Yu",
+           role = "aut")
+           )
+Description: The sufficient forecasting (SF) method is implemented by this package for a single time series forecasting using many predictors and a possibly nonlinear forecasting function. Assuming that the predictors are driven by some latent factors, the SF first conducts factor analysis and then performs sufficient dimension reduction on the estimated factors to derive predictive indices for forecasting. The package implements several dimension reduction approaches, including principal components (PC), sliced inverse regression (SIR), and directional regression (DR). Methods for dimension reduction are as described in: Fan, J., Xue, L. and Yao, J. (2017) <doi:10.1016/j.jeconom.2017.08.009>, Luo, W., Xue, L., Yao, J. and Yu, X. (2022) <doi:10.1093/biomet/asab037> and Yu, X., Yao, J. and Xue, L. (2022) <doi:10.1080/07350015.2020.1813589>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: gam, stats
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/JingFu1224/sufficientForecasting
+BugReports: https://github.com/JingFu1224/sufficientForecasting/issues
+NeedsCompilation: no
+Packaged: 2023-02-17 03:07:49 UTC; fusei
+Author: Jianqing Fan [aut],
+  Jing Fu [aut, cre],
+  Wei Luo [aut],
+  Lingzhou Xue [aut],
+  Jiawei Yao [aut],
+  Xiufan Yu [aut]
+Maintainer: Jing Fu <jingfu991224@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-02-17 10:00:06 UTC

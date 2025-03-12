@@ -1,0 +1,27 @@
+Package: framecleaner
+Type: Package
+Title: Clean Data Frames
+Version: 0.2.1
+Authors@R: 
+    person(given = "Harrison",
+           family = "Tietze",
+           role = c("aut", "cre"),
+           email = "Harrison4192@gmail.com")
+Maintainer: Harrison Tietze <Harrison4192@gmail.com>
+Description: Provides a friendly interface for modifying data frames with a sequence of piped commands built upon the 'tidyverse' Wickham et al., (2019) <doi:10.21105/joss.01686> . The majority of commands wrap 'dplyr' mutate statements in a convenient way to concisely solve common issues that arise when tidying small to medium data sets. Includes smart defaults and allows flexible selection of columns via 'tidyselect'. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr, stringr, tidyselect, purrr, janitor, rlang, lubridate,
+        magrittr, tibble, rstudioapi, forcats, bit64, rio, readr,
+        vroom, fs, rlist, fastDummies
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, badger, readxl
+VignetteBuilder: knitr
+URL: https://harrison4192.github.io/framecleaner/,
+        https://github.com/Harrison4192/framecleaner
+BugReports: https://github.com/Harrison4192/framecleaner/issues
+NeedsCompilation: no
+Packaged: 2024-03-15 06:58:32 UTC; 81804
+Author: Harrison Tietze [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-03-15 07:20:02 UTC

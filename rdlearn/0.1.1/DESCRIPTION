@@ -1,0 +1,49 @@
+Package: rdlearn
+Type: Package
+Title: Safe Policy Learning under Regression Discontinuity Design with
+        Multiple Cutoffs
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Kentaro",
+           family = "Kawato",
+           role = c("cre","cph"),
+           email = "kentaro1358nohe@gmail.com"),
+      person(given = "Yi",
+           family = "Zhang",
+           role = c("aut")),
+      person(given = "Soichiro",
+           family = "Yamauchi",
+           role = c("aut")),
+      person(given = "Eli",
+           family = "Ben-Michael",
+           role = c("aut")),
+      person(given = "Kosuke",
+           family = "Imai",
+           role = c("aut")))
+Description: Implements safe policy learning under regression discontinuity designs
+    with multiple cutoffs, based on Zhang et al. (2022) <doi:10.48550/arXiv.2208.13323>.
+    The learned cutoffs are guaranteed  to perform no worse than the existing
+    cutoffs in terms of overall outcomes. The 'rdlearn' package also includes
+    features for visualizing the learned cutoffs relative to the baseline and
+    conducting sensitivity analyses.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+URL: https://github.com/kkawato/rdlearn
+BugReports: https://github.com/kkawato/rdlearn/issues
+Imports: nprobust, nnet, rdrobust, ggplot2, dplyr, glue, cli
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-26 04:18:09 UTC; kawatokentaryuu
+Author: Kentaro Kawato [cre, cph],
+  Yi Zhang [aut],
+  Soichiro Yamauchi [aut],
+  Eli Ben-Michael [aut],
+  Kosuke Imai [aut]
+Maintainer: Kentaro Kawato <kentaro1358nohe@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-29 18:30:02 UTC

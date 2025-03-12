@@ -1,0 +1,24 @@
+Package: hdcuremodels
+Title: Penalized Mixture Cure Models for High-Dimensional Data
+Version: 0.0.1
+Date: 2024-06-11
+Authors@R: 
+    c(person("Han", "Fu", role = "aut"), person(c("Kellie J."), "Archer", email=
+    "archer.43@osu.edu", role = c("aut","cre"), comment = c(ORCID="0000-0003-1555-5781")))
+Description: Provides functions for fitting various penalized parametric and semi-parametric mixture cure models with different penalty functions, testing for a significant cure fraction, and testing for sufficient follow-up as described in Fu et al (2022)<doi:10.1002/sim.9513> and Archer et al (2024)<doi:10.1186/s13045-024-01553-6>. False discovery rate controlled variable selection is provided using model-X knock-offs. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2.0)
+Imports: doParallel, flexsurv, flexsurvcure, foreach, ggplot2, ggpubr,
+        glmnet, knockoff, mvnfast, parallel, plyr, methods, survival
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-06-11 14:12:41 UTC; archer.43
+Author: Han Fu [aut],
+  Kellie J. Archer [aut, cre] (<https://orcid.org/0000-0003-1555-5781>)
+Maintainer: Kellie J. Archer <archer.43@osu.edu>
+Repository: CRAN
+Date/Publication: 2024-06-13 10:10:06 UTC

@@ -1,0 +1,34 @@
+Package: fastdid
+Type: Package
+Title: Fast Staggered Difference-in-Difference Estimators
+Version: 1.0.3
+Date: 2024-10-25
+Authors@R: c(
+  person("Lin-Tung","Tsai",
+         role = c("aut", "cre", "cph"),
+         email = "tsaidondon@gmail.com"),
+  person(given = "Maxwell",
+         family = "Kellogg", ,
+         role = "ctb"),
+  person(given = "Kuan-Ju",
+         family = "Tseng", ,
+          role = "ctb"))
+Maintainer: Lin-Tung Tsai <tsaidondon@gmail.com>
+Description: A fast and flexible implementation of Callaway and Sant'Anna's (2021)<doi:10.1016/j.jeconom.2020.12.001> staggered Difference-in-Differences (DiD) estimators, 'fastdid' reduces the computation time from hours to seconds, and incorporates extensions such as time-varying covariates and multiple events. 
+License: MIT + file LICENSE
+Imports: data.table (>= 1.15.0), stringr, BMisc, collapse, dreamerr (>=
+        1.4.0), parglm, ggplot2
+Suggests: did, knitr, parallel, rmarkdown, tinytest
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/TsaiLintung/fastdid,
+        https://tsailintung.github.io/fastdid/
+BugReports: https://github.com/TsaiLintung/fastdid/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-03 17:25:22 UTC; lttsai
+Author: Lin-Tung Tsai [aut, cre, cph],
+  Maxwell Kellogg [ctb],
+  Kuan-Ju Tseng [ctb]
+Repository: CRAN
+Date/Publication: 2024-11-04 08:30:02 UTC

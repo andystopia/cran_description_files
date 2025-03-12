@@ -1,0 +1,32 @@
+Package: TcGSA
+Type: Package
+Title: Time-Course Gene Set Analysis
+Version: 0.12.10
+Date: 2022-02-27
+Authors@R: c(person(c("Boris", "P"), "Hejblum", role = c("aut", "cre"),
+		     email = "boris.hejblum@u-bordeaux.fr"), 
+		     person("Damien", "Chimits", role = c("aut")), 
+		     person("Anthony", "Devaux", role = c("aut"))
+		    )
+Depends: R (>= 3.0.2), ggplot2 (>= 2.0.0)
+Imports: lme4 (>= 1.0-4), reshape2, GSA, multtest, cluster, cowplot,
+        graphics, grDevices, gtools, stringr, splines, stats, utils
+Suggests: BiocManager, foreach, parallel, doParallel, dearseq, knitr,
+        GEOquery, rmarkdown
+Description: Implementation of Time-course Gene Set Analysis (TcGSA), a method for 
+	analyzing longitudinal gene-expression data at the gene set level. Method is
+	detailed in: Hejblum, Skinner & Thiebaut (2015) <doi: 10.1371/journal.pcbi.1004310>.
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+BugReports: https://github.com/sistm/TcGSA/issues
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+URL: http://sistm.github.io/TcGSA/
+NeedsCompilation: no
+Packaged: 2022-02-28 21:11:58 UTC; boris
+Author: Boris P Hejblum [aut, cre],
+  Damien Chimits [aut],
+  Anthony Devaux [aut]
+Maintainer: Boris P Hejblum <boris.hejblum@u-bordeaux.fr>
+Repository: CRAN
+Date/Publication: 2022-02-28 21:40:02 UTC

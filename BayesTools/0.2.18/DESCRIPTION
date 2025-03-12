@@ -1,0 +1,34 @@
+Package: BayesTools
+Title: Tools for Bayesian Analyses
+Version: 0.2.18
+Description: Provides tools for conducting Bayesian analyses and Bayesian model averaging 
+    (Kass and Raftery, 1995, <doi:10.1080/01621459.1995.10476572>, 
+    Hoeting et al., 1999, <doi:10.1214/ss/1009212519>). The package contains 
+    functions for creating a wide range of prior distribution objects, mixing posterior 
+    samples from 'JAGS' and 'Stan' models, plotting posterior distributions, and etc...
+    The tools for working with prior distribution span from visualization, generating 'JAGS' 
+    and 'bridgesampling' syntax to basic functions such as rng, quantile, and distribution functions. 
+Maintainer: František Bartoš <f.bartos96@gmail.com>
+Authors@R: c( 
+    person("František", "Bartoš",     role = c("aut", "cre"),
+    email   = "f.bartos96@gmail.com", comment = c(ORCID = "0000-0002-0018-5573"))
+    )
+URL: https://fbartos.github.io/BayesTools/
+BugReports: https://github.com/FBartos/BayesTools/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+SystemRequirements: JAGS >= 4.3.0 (https://mcmc-jags.sourceforge.io/)
+Depends: stats
+Imports: graphics, extraDistr, mvtnorm, coda, bridgesampling, parallel,
+        ggplot2, Rdpack, rlang
+Suggests: scales, testthat, vdiffr, covr, knitr, rstan, rjags, runjags,
+        BayesFactor, rmarkdown
+RdMacros: Rdpack
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-14 15:54:13 UTC; fbart
+Author: František Bartoš [aut, cre] (<https://orcid.org/0000-0002-0018-5573>)
+Repository: CRAN
+Date/Publication: 2025-01-14 17:10:06 UTC

@@ -1,0 +1,34 @@
+Package: RfEmpImp
+Type: Package
+Title: Multiple Imputation using Chained Random Forests
+Version: 2.1.8
+Authors@R: c(person("Shangzhi", "Hong", role = c("aut", "cre"),
+            email = "shangzhi-hong@hotmail.com"),
+            person("Henry S.", "Lynn", role = c("ths")))
+Maintainer: Shangzhi Hong <shangzhi-hong@hotmail.com>
+Description: An R package for multiple imputation using chained random forests.
+    Implemented methods can handle missing data in mixed types of variables by
+    using prediction-based or node-based conditional distributions constructed
+    using random forests. For prediction-based imputation, the method based on
+    the empirical distribution of out-of-bag prediction errors of random forests
+    and the method based on normality assumption for prediction errors of random
+    forests are provided for imputing continuous variables. And the method based
+    on predicted probabilities is provided for imputing categorical variables.
+    For node-based imputation, the method based on the conditional distribution
+    formed by the predicting nodes of random forests, and the method based on
+    proximity measures of random forests are provided. More details of the
+    statistical methods can be found in Hong et al. (2020) <arXiv:2004.14823>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 3.5.0), mice (>= 3.9.0), ranger (>= 0.12.1)
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown
+NeedsCompilation: no
+URL: https://github.com/shangzhi-hong/RfEmpImp
+BugReports: https://github.com/shangzhi-hong/RfEmpImp/issues
+VignetteBuilder: knitr
+Packaged: 2022-10-20 04:44:21 UTC; HONG
+Author: Shangzhi Hong [aut, cre],
+  Henry S. Lynn [ths]
+Repository: CRAN
+Date/Publication: 2022-10-20 07:17:54 UTC

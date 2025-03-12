@@ -1,0 +1,25 @@
+Package: dotgen
+Title: Gene-Set Analysis via Decorrelation by Orthogonal Transformation
+Version: 0.1.1
+Date: 2024-10-27
+Description: Decorrelates a set of summary statistics (i.e., Z-scores or P-values per SNP) via Decorrelation by Orthogonal Transformation (DOT) approach and performs gene-set analyses by combining transformed statistic values; operations are performed with algorithms that rely only on the association summary results and the linkage disequilibrium (LD). For more details on DOT and its power, see Olga (2020) <doi:10.1371/journal.pcbi.1007819>.
+Authors@R: c(
+  person("Olga", "Vsevolozhskaya", email = "vsevolozhskaya@uky.edu", role = "aut",
+         comment = c(ORCID = "0000-0001-9376-3645")),
+  person("Dmitri", "Zaykin", email = "zaykin@gmail.com", role = "aut",
+          comment = c(ORCID = "0000-0002-9444-2859")),
+  person("Xiaoran", "Tong", email = "xt@uky.edu", role = c("aut", "cre"),
+          comment = c(ORCID = "0000-0002-4648-3330")))
+Depends: R (>= 3.5.0), mvtnorm
+License: GPL (>= 2)
+URL: https://github.com/xiaoran831213/dotgen
+Encoding: UTF-8
+Author: Olga Vsevolozhskaya [aut] (<https://orcid.org/0000-0001-9376-3645>),
+  Dmitri Zaykin [aut] (<https://orcid.org/0000-0002-9444-2859>),
+  Xiaoran Tong [aut, cre] (<https://orcid.org/0000-0002-4648-3330>)
+Maintainer: Xiaoran Tong <xt@uky.edu>
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-10-27 07:11:29 UTC; xt
+Repository: CRAN
+Date/Publication: 2024-10-27 12:10:02 UTC

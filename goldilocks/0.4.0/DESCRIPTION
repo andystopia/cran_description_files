@@ -1,0 +1,50 @@
+Package: goldilocks
+Title: Goldilocks Adaptive Trial Designs for Time-to-Event Endpoints
+Version: 0.4.0
+Authors@R: c(
+    person(given = "Graeme L.", family = "Hickey",
+           role = c("aut", "cre"),
+           email = "graemeleehickey@gmail.com",
+           comment = c(ORCID = "0000-0002-4989-0054")),
+    person(given = "Ying", family = "Wan",
+           role = "aut",
+           email = "ying.wan@bd.com"),
+    person(given = "Thevaa", family = "Chandereng",
+           role = "aut",
+           email = "tc3123@cumc.columbia.edu",
+           comment = c(ORCID = "0000-0003-4078-9176",
+           "bayesDP code as a template")),
+    person(given = "Becton, Dickinson and Company",
+           role = "cph"),
+    person(given = "Tim", family = "Kacprowski",
+           role = "ctb",
+           email = "t.kacprowski@tu-braunschweig.de",
+           comment = "For code from fastlogrank R package."))
+Description: Implements the Goldilocks adaptive trial design for a time to event
+    outcome using a piecewise exponential model and conjugate Gamma prior
+    distributions. The method closely follows the article by Broglio and
+    colleagues <doi:10.1080/10543406.2014.888569>, which allows users to explore
+    the operating characteristics of different trial designs.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/graemeleehickey/goldilocks
+BugReports: https://github.com/graemeleehickey/goldilocks/issues
+Depends: R (>= 3.6.0), survival
+Imports: dplyr, parallel, pbmcapply, PWEALL, Rcpp, rlang, stats
+Suggests: covr, testthat (>= 3.0.0), knitr, rmarkdown
+LinkingTo: BH, Rcpp
+Language: en-US
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-01-07 21:54:40 UTC; hickeg3
+Author: Graeme L. Hickey [aut, cre] (<https://orcid.org/0000-0002-4989-0054>),
+  Ying Wan [aut],
+  Thevaa Chandereng [aut] (<https://orcid.org/0000-0003-4078-9176>,
+    bayesDP code as a template),
+  Becton, Dickinson and Company [cph],
+  Tim Kacprowski [ctb] (For code from fastlogrank R package.)
+Maintainer: Graeme L. Hickey <graemeleehickey@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-08 15:30:08 UTC

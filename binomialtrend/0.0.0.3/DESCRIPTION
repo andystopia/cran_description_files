@@ -1,0 +1,27 @@
+Package: binomialtrend
+Title: Calculates the Statistical Significance of a Trend in a Set of
+        Measurements
+Version: 0.0.0.3
+Authors@R: 
+    person("Matthew", "Cserhati", email="csmatyi@protonmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3673-9152"))
+Description: Detection of a statistically significant trend in the data provided by the user.
+    This is based on the a signed test based on the binomial distribution.
+    The package returns a trend test value, T, and also a p-value. A T value 
+    close to 1 indicates a rising trend, whereas a T value close to -1 indicates a decreasing
+    trend. A T value close to 0 indicates no trend. There is also a command to visualize
+    the trend. A test data set called gtsa_data is also available, which has global mean 
+    temperatures for January, April, July, and October for the years 1851 to 2022.
+    Reference: Walpole, Myers, Myers, Ye. (2007, ISBN: 0-13-187711-9).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LazyData: true
+Imports: pheatmap
+NeedsCompilation: no
+Packaged: 2022-12-16 16:58:57 UTC; CSERHMX
+Author: Matthew Cserhati [aut, cre] (<https://orcid.org/0000-0002-3673-9152>)
+Maintainer: Matthew Cserhati <csmatyi@protonmail.com>
+Repository: CRAN
+Date/Publication: 2022-12-19 09:30:06 UTC

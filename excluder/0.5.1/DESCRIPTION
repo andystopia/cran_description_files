@@ -1,0 +1,38 @@
+Package: excluder
+Title: Checks for Exclusion Criteria in Online Data
+Version: 0.5.1
+Authors@R: c(
+    person("Jeffrey R.", "Stevens", , "jeffrey.r.stevens@protonmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2375-1360")),
+    person("Joseph", "O'Brien", role = "rev",
+           comment = c(ORCID = "0000-0001-9851-5077")),
+    person("Julia", "Silge", , "julia.silge@gmail.com", role = "rev",
+           comment = c(ORCID = "0000-0002-3671-836X"))
+  )
+Description: Data that are collected through online sources such as
+    Mechanical Turk may require excluding rows because of IP address
+    duplication, geolocation, or completion duration. This package
+    facilitates exclusion of these data for Qualtrics datasets.
+License: GPL (>= 3)
+URL: https://docs.ropensci.org/excluder/,
+        https://github.com/ropensci/excluder/
+BugReports: https://github.com/ropensci/excluder/issues/
+Depends: R (>= 3.5.0)
+Imports: cli, curl, dplyr, ipaddress, janitor, lubridate, magrittr,
+        maps, rlang, stringr, tidyr, tidyselect
+Suggests: covr, knitr, lifecycle, readr, rmarkdown, testthat (>=
+        3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-13 17:40:29 UTC; jstevens
+Author: Jeffrey R. Stevens [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2375-1360>),
+  Joseph O'Brien [rev] (<https://orcid.org/0000-0001-9851-5077>),
+  Julia Silge [rev] (<https://orcid.org/0000-0002-3671-836X>)
+Maintainer: Jeffrey R. Stevens <jeffrey.r.stevens@protonmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-13 17:50:02 UTC

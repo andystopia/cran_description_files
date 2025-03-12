@@ -1,0 +1,27 @@
+Package: nls.multstart
+Type: Package
+Title: Robust Non-Linear Regression using AIC Scores
+Version: 2.0.0
+Authors@R: c(
+    person("Daniel", "Padfield", email = "d.padfield@exeter.ac.uk", role = c("aut", "cre")),
+    person("Granville", "Matheson", email = "mathesong@gmail.com", role = "aut"),
+    person(given = "Francis",
+             family = "Windram",
+             role = "aut",
+             email = "francis.windram17@imperial.ac.uk"))
+Maintainer: Daniel Padfield <d.padfield@exeter.ac.uk>
+Description: Non-linear least squares regression with the Levenberg-Marquardt algorithm using multiple starting values for increasing the chance that the minimum found is the global minimum.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.2.1)
+Imports: minpack.lm, purrr, dplyr, tidyr, tibble, lhs, cli, rlang
+Suggests: ggplot2, broom, nlstools, testthat
+NeedsCompilation: no
+Packaged: 2025-01-03 20:56:12 UTC; dp415
+Author: Daniel Padfield [aut, cre],
+  Granville Matheson [aut],
+  Francis Windram [aut]
+Repository: CRAN
+Date/Publication: 2025-01-09 11:00:02 UTC

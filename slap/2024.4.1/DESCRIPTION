@@ -1,0 +1,26 @@
+Package: slap
+Title: Simplified Error Handling
+Version: 2024.4.1
+Authors@R: c(
+    person("Romain", "François", email = "romain@tada.science", role = c("aut", "cre")), 
+    person("tada.science", role = c("cph", "fnd"))
+  )
+Description: Alternative to using withCallingHandlers() in the simple case of catch 
+  and rethrow. The `%!%` operator evaluates the expression on its left hand side, 
+  and if an error occurs, the right hand side is used to construct a new error
+  that embeds the original error. 
+License: MIT + file LICENSE
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: cli, rlang
+URL: https://github.com/tadascience/slap, https://slap.tada.science
+BugReports: https://github.com/tadascience/slap/issues
+NeedsCompilation: no
+Packaged: 2024-04-23 07:36:18 UTC; romainfrancois
+Author: Romain François [aut, cre],
+  tada.science [cph, fnd]
+Maintainer: Romain François <romain@tada.science>
+Repository: CRAN
+Date/Publication: 2024-04-24 14:00:02 UTC

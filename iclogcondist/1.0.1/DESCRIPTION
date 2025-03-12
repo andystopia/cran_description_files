@@ -1,0 +1,39 @@
+Package: iclogcondist
+Type: Package
+Title: Log-Concave Distribution Estimation with Interval-Censored Data
+Version: 1.0.1
+Authors@R: c(
+    person(
+        given = c("Chi", "Wing"),
+        family = "Chu",
+        role = "aut",
+        email = "george.chu@cityu.edu.hk"
+    ),
+    person(
+        given = c("Hok", "Kan"),
+        family = "Ling",
+        role = "aut",
+        email = "brian.ling@queensu.ca"
+    ),
+    person(
+        given = "Chaoyu",
+        family = "Yuan",
+        role = c("aut", "cre"),
+        email = "chaoyu.yuan@columbia.edu"
+    )
+    )
+Description: We consider the non-parametric maximum likelihood estimation of the underlying distribution function, assuming log-concavity, based on mixed-case interval-censored data. The algorithm implemented is base on Chi Wing Chu, Hok Kan Ling and Chaoyu Yuan (2024, <doi:10.48550/arXiv.2411.19878>).
+License: GPL-3
+Imports: Rcpp, flexsurv, ggplot2, icenReg, monotone, fdrtool
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+NeedsCompilation: yes
+Packaged: 2024-12-04 02:43:33 UTC; ycyma
+Author: Chi Wing Chu [aut],
+  Hok Kan Ling [aut],
+  Chaoyu Yuan [aut, cre]
+Maintainer: Chaoyu Yuan <chaoyu.yuan@columbia.edu>
+Repository: CRAN
+Date/Publication: 2024-12-05 19:00:06 UTC

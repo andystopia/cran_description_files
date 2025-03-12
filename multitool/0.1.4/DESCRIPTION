@@ -1,0 +1,42 @@
+Package: multitool
+Title: Run Multiverse Style Analyses
+Version: 0.1.4
+Authors@R: c(
+        person(
+          "Ethan", "Young", 
+          email = "young.ethan.scott@gmail.com", 
+          role = c("aut", "cre", "cph"),
+          comment = c(ORCID = "0000-0002-8232-0184")
+        ),
+        person(
+          "Stefan", "Vermeent", 
+          email = "p.c.s.vermeent@gmail.com", 
+          role = c("aut"),
+          comment = c(ORCID = "0000-0002-9595-5373")
+        )
+       )
+Description: Run the same analysis over a range of arbitrary data processing 
+    decisions. 'multitool' provides an interface for creating alternative 
+    analysis pipelines and turning them into a grid of all possible pipelines. 
+    Using this grid as a blueprint, you can model your data across all possible 
+    pipelines and summarize the results.
+License: MIT + file LICENSE
+Imports: clipr, correlation, DiagrammeR, dplyr, flextable, furrr,
+        future, ggdist, glue, ggplot2, moments, purrr, rlang, stringr,
+        tibble, tidyr, lme4, parameters, performance
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), tidyverse
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+URL: https://ethan-young.github.io/multitool/,
+        https://github.com/ethan-young/multitool
+BugReports: https://github.com/ethan-young/multitool/issues
+Depends: R (>= 4.1.0)
+NeedsCompilation: no
+Packaged: 2024-02-08 03:08:53 UTC; ethanyoung
+Author: Ethan Young [aut, cre, cph] (<https://orcid.org/0000-0002-8232-0184>),
+  Stefan Vermeent [aut] (<https://orcid.org/0000-0002-9595-5373>)
+Maintainer: Ethan Young <young.ethan.scott@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-02-08 17:40:02 UTC

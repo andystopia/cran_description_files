@@ -1,0 +1,34 @@
+Package: ARDECO
+Type: Package
+Title: Annual Regional Database of the European Commission (ARDECO)
+Version: 2.1.0
+Authors@R: c(
+    person("Carmelo", "Attardo", email = "carmelo.attardo@ec.europa.eu", role = "cre"),
+    person("Giuseppe", "Bucciarelli", email = "giuseppe.bucciarelli@ext.ec.europa.eu", role = "aut"),
+    person("European Commission, JRC", role = "cph"))
+Description: A set of functions to access the 'ARDECO' (Annual Regional Database
+    of the European Commission) data directly from the official ARDECO public
+    repository through the exploitation of the 'ARDECO' APIs.
+    The APIs are completely transparent to the user and the provided functions
+    provide a direct access to the 'ARDECO' data.
+    The 'ARDECO' database is a collection of variables related to demography,
+    employment, labour market, domestic product, capital formation.
+    Each variable can be exposed in one or more units of measure as well as
+    refers to total values plus additional dimensions like economic sectors, gender,
+    age classes. Data can be also aggregated at country level according
+    to the tercet classes as defined by EUROSTAT.
+    The description of the 'ARDECO' database can be found at the following URL
+    <https://urban.jrc.ec.europa.eu/ardeco>.
+Depends: R (>= 4.2.0),
+Imports: httr, ghql, jsonlite, stringr, dplyr, tidyr
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-11-21 15:12:51 UTC; attarca
+Author: Carmelo Attardo [cre],
+  Giuseppe Bucciarelli [aut],
+  European Commission, JRC [cph]
+Maintainer: Carmelo Attardo <carmelo.attardo@ec.europa.eu>
+Repository: CRAN
+Date/Publication: 2024-11-21 21:20:12 UTC

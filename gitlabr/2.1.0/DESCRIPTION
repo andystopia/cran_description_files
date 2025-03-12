@@ -1,0 +1,37 @@
+Package: gitlabr
+Title: Access to the 'GitLab' API
+Version: 2.1.0
+Authors@R: c(
+    person("Jirka", "Lewandowski", , "jirka.lewandowski@wzb.eu", role = "aut"),
+    person("Sébastien", "Rochette", , "sebastienrochettefr@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1565-9313")),
+    person("ThinkR", role = "cph")
+  )
+Description: Provides R functions to access the API of the project and
+    repository management web application 'GitLab'. For many common tasks
+    (repository file access, issue assignment and status, commenting)
+    convenience wrappers are provided, and in addition the full API can be
+    used by specifying request locations. 'GitLab' is open-source software
+    and can be self-hosted or used on <https://about.gitlab.com>.
+License: GPL (>= 3)
+URL: https://thinkr-open.github.io/gitlabr/,
+        https://github.com/ThinkR-open/gitlabr
+BugReports: https://github.com/ThinkR-open/gitlabr/issues
+Depends: R (>= 3.1.2)
+Imports: arpr, base64enc, dplyr (>= 0.4.3), httr (>= 1.1.0), magrittr,
+        purrr (>= 0.2.2), stringr, tibble (>= 1.1), tidyr, utils
+Suggests: DT, knitr, rmarkdown, shiny (>= 0.13.0), testthat (>= 3.0.0),
+        yaml
+VignetteBuilder: knitr
+Config/Needs/website: ThinkR-open/thinkrtemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-16 14:52:40 UTC; srochett
+Author: Jirka Lewandowski [aut],
+  Sébastien Rochette [aut, cre] (<https://orcid.org/0000-0002-1565-9313>),
+  ThinkR [cph]
+Maintainer: Sébastien Rochette <sebastienrochettefr@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-16 22:40:07 UTC

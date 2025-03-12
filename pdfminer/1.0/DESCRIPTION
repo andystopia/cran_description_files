@@ -1,0 +1,24 @@
+Package: pdfminer
+Type: Package
+Title: Read Portable Document Format (PDF) Files
+Version: 1.0
+Authors@R: c(person("Florian", "Schwendinger", role = c("aut", "cre", "cph"), email = "FlorianSchwendinger@gmx.at"),
+             person("Benjamin", "Schwendinger", role = c("aut", "cph")))
+Description: Provides an interface to 'PDFMiner' <https://github.com/pdfminer/pdfminer.six> 
+    a 'Python' package for extracting information from 'PDF'-files. 
+    'PDFMiner' has the goal to get all information available in a 'PDF'-file, 
+    position of the characters, font type, font size and informations about lines. 
+    Which makes it the perfect starting point for extracting tables from 'PDF'-files.
+    More information can be found in the package 'README'-file.
+License: MIT + file LICENSE
+Imports: checkmate, jsonlite
+Suggests: PythonInR, RSQLite
+SystemRequirements: Python>=3.6, pdfminer.six>=20200402, pandas
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-14 18:56:56 UTC; f
+Author: Florian Schwendinger [aut, cre, cph],
+  Benjamin Schwendinger [aut, cph]
+Maintainer: Florian Schwendinger <FlorianSchwendinger@gmx.at>
+Repository: CRAN
+Date/Publication: 2020-06-22 09:20:02 UTC

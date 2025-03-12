@@ -1,0 +1,24 @@
+Package: QGA
+Type: Package
+Title: Quantum Genetic Algorithm
+Version: 1.0
+Date: 2024-05-29
+Authors@R: c(person("Giulio", "Barcaroli", role = c("aut", "cre"),
+                     email = "gbarcaroli@gmail.com"))
+Description: Function that implements the Quantum Genetic Algorithm, first proposed by Han and Kim in 2000. This is an R implementation of the 'python' application developed by Lahoz-Beltra  (<https://github.com/ResearchCodesHub/QuantumGeneticAlgorithms>). Each optimization problem is represented as a maximization one, where each solution is a sequence of (qu)bits. Following the quantum paradigm, these qubits are in a superposition state: when measuring them, they collapse in a 0 or 1 state. After measurement, the fitness of the solution is calculated as in usual genetic algorithms. The evolution at each iteration is oriented by the application of two quantum gates to the amplitudes of the qubits: (1) a rotation gate (always); (2) a Pauli-X gate (optionally). The rotation is based on the theta angle values: higher values allow a quicker evolution, and lower values avoid local maxima. The Pauli-X gate is equivalent to the classical mutation operator and determines the swap between alfa and beta amplitudes of a given qubit. The package has been developed in such a way as to permit a complete separation between the engine, and the particular problem subject to combinatorial optimization. 
+Encoding: UTF-8
+LazyLoad: yes
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Suggests: knitr
+NeedsCompilation: no
+Packaged: 2024-05-30 15:20:21 UTC; Giulio
+URL: https://barcaroli.github.io/QGA/,
+        https://github.com/barcaroli/QGA/
+BugReports: https://github.com/barcaroli/QGA/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Author: Giulio Barcaroli [aut, cre]
+Maintainer: Giulio Barcaroli <gbarcaroli@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-31 18:42:49 UTC

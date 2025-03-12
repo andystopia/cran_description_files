@@ -1,0 +1,35 @@
+Package: mxnorm
+Title: Apply Normalization Methods to Multiplexed Images
+Version: 1.0.3
+Authors@R: 
+    person(given = "Coleman",
+           family = "Harris",
+           role = c("aut", "cre"),
+           email = "coleman.r.harris@vanderbilt.edu",
+           comment = c(ORCID = "0000-0002-6325-0694"))
+Description: Implements methods to normalize multiplexed imaging data, including
+    statistical metrics and visualizations to quantify technical variation in 
+    this data type. Reference for methods listed here: Harris, C., Wrobel, J., 
+    & Vandekar, S. (2022). mxnorm: An R Package to Normalize Multiplexed Imaging 
+    Data. Journal of Open Source Software, 7(71), 4180, 
+    <doi:10.21105/joss.04180>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 3.5.0)
+Suggests: knitr, janitor (>= 2.1.0), testthat (>= 3.0.0), rmarkdown,
+        markdown, covr
+Config/testthat/edition: 3
+Config/reticulate: list( packages = list( list(package =
+        "scikit-image") ) )
+Imports: magrittr, dplyr, rlang, fda, stats, data.table, reticulate,
+        caret, e1071, ggplot2, tidyr, uwot, lme4, stringr, KernSmooth,
+        kSamples, psych, fossil, glue, methods
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-01 16:19:08 UTC; colemanharris
+Author: Coleman Harris [aut, cre] (<https://orcid.org/0000-0002-6325-0694>)
+Maintainer: Coleman Harris <coleman.r.harris@vanderbilt.edu>
+Repository: CRAN
+Date/Publication: 2023-05-01 17:10:02 UTC

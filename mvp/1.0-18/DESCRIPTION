@@ -1,0 +1,30 @@
+Package: mvp
+Type: Package
+Title: Fast Symbolic Multivariate Polynomials
+Version: 1.0-18
+Authors@R: person(given=c("Robin", "K. S."), family="Hankin", role = c("aut","cre"), email="hankin.robin@gmail.com", comment = c(ORCID = "0000-0001-5982-0415"))
+Depends: R (>= 4.1.0), methods
+Suggests: knitr, rmarkdown, microbenchmark, testthat, spray, magrittr,
+        covr
+VignetteBuilder: knitr
+Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
+Description: Fast manipulation of symbolic multivariate polynomials
+  using the 'Map' class of the Standard Template Library.  The package
+  uses print and coercion methods from the 'mpoly' package but
+  offers speed improvements.  It is comparable in speed to the 'spray'
+  package for sparse arrays, but retains the symbolic benefits of
+  'mpoly'.  To cite the package in publications, use Hankin 2022
+  <doi:10.48550/ARXIV.2210.15991>.  Uses 'disordR' discipline.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0-7), partitions, magic, digest, disordR (>=
+        0.9-7), numbers, mpoly (>= 1.1.0),
+LinkingTo: Rcpp
+URL: https://github.com/RobinHankin/mvp,
+        https://robinhankin.github.io/mvp/
+BugReports: https://github.com/RobinHankin/mvp/issues
+LazyData: FALSE
+NeedsCompilation: yes
+Packaged: 2025-01-31 08:22:42 UTC; rhankin
+Author: Robin K. S. Hankin [aut, cre] (<https://orcid.org/0000-0001-5982-0415>)
+Repository: CRAN
+Date/Publication: 2025-01-31 09:40:02 UTC

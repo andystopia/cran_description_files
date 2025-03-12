@@ -1,0 +1,48 @@
+Package: facmodTS
+Type: Package
+Title: Time Series Factor Models for Asset Returns
+Version: 1.0
+Date: 2023-10-27
+Authors@R: c(person(given="Doug",family="Martin",role=c("cre","aut"),
+     email="martinrd3d@gmail.com"),
+     person(given="Eric",family="Zivot",role="aut"),
+     person(given="Sangeetha",family="Srinivasan",role="aut"),
+     person(given="Avinash",family="Acharya",role="ctb"),
+     person(given="Yi-An",family="Chen",role="ctb"),
+     person(given="Kirk",family="Li",role="ctb"),
+     person(given="Lingjie",family="Yi",role="ctb"),
+     person(given="Justin",family="Shea",role="ctb"),
+     person(given="Mido",family="Shammaa",role="ctb"),
+     person(given="Jon",family="Spinney",role="ctb"))
+Description: Supports teaching methods of estimating and testing time series
+    factor models for use in robust portfolio construction and analysis. Unique
+    in providing not only classical least squares, but also modern robust model
+    fitting methods which are not much influenced by outliers. Includes
+    returns and risk decompositions, with user choice of  standard deviation,
+    value-at-risk, and expected shortfall risk measures. "Robust Statistics
+    Theory and Methods (with R)", R. A. Maronna, R. D. Martin, V. J. Yohai, 
+    M. Salibian-Barrera (2019) <doi:10.1002/9781119214656>.
+License: GPL-2
+Depends: R (>= 3.5)
+Imports: boot, data.table, lars, lattice, leaps, PerformanceAnalytics,
+        PortfolioAnalytics, R.cache, corpcor, methods, quadprog,
+        RobStatTM, robustbase, sandwich, sn, xts, zoo
+Suggests: corrplot, HH, lmtest, R.rsp, rugarch, strucchange, tinytest
+URL: https://github.com/robustport/facmodTS
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-11-08 21:25:50 UTC; marti
+Author: Doug Martin [cre, aut],
+  Eric Zivot [aut],
+  Sangeetha Srinivasan [aut],
+  Avinash Acharya [ctb],
+  Yi-An Chen [ctb],
+  Kirk Li [ctb],
+  Lingjie Yi [ctb],
+  Justin Shea [ctb],
+  Mido Shammaa [ctb],
+  Jon Spinney [ctb]
+Maintainer: Doug Martin <martinrd3d@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-09 07:30:02 UTC

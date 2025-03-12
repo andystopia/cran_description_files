@@ -1,0 +1,18 @@
+Package: CMFsurrogate
+Type: Package
+Title: Calibrated Model Fusion Approach to Combine Surrogate Markers
+Version: 1.0
+Date: 2022-09-22
+Authors@R: c(person("Xuan", "Wang", role = "aut"),
+                     person("Layla", "Parast", role = "cre", email = "parast@austin.utexas.edu"))
+Description: Uses a calibrated model fusion approach to optimally combine multiple surrogate markers. Specifically, two initial estimates of optimal composite scores of the markers are obtained; the optimal calibrated combination of the two estimated scores is then constructed which ensures both validity of the final combined score and optimality with respect to the proportion of treatment effect explained (PTE) by the final combined score. The primary function, pte.estimate.multiple(), estimates the PTE of the identified combination of multiple surrogate markers. Details are described in Wang et al (2022) <doi:10.1111/biom.13677>. 
+License: GPL
+Imports: splines, MASS, stats
+NeedsCompilation: no
+Packaged: 2022-09-23 01:33:03 UTC; parastlm
+Author: Xuan Wang [aut],
+  Layla Parast [cre]
+Maintainer: Layla Parast <parast@austin.utexas.edu>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2022-09-23 15:20:05 UTC

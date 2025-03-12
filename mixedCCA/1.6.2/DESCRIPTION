@@ -1,0 +1,43 @@
+Package: mixedCCA
+Type: Package
+Title: Sparse Canonical Correlation Analysis for High-Dimensional Mixed
+        Data
+Version: 1.6.2
+Date: 2022-09-09
+Authors@R: c(
+    person(given = "Grace",
+           family = "Yoon",
+           role = c("aut"),
+           email = "gyoon6067@gmail.com",
+           comment = c(ORCID = "0000-0003-3263-1352")),
+    person(given = "Mingze",
+           family = "Huang",
+           role = c("ctb"),
+           email = "mingzehuang@gmail.com",
+           comment = c(ORCID = "0000-0003-3919-1564")),
+    person(given = "Irina",
+           family = "Gaynanova",
+           role = c("aut", "cre"),
+           email = "irinag@stat.tamu.edu",
+           comment = c(ORCID = "0000-0002-4116-0268")))
+Maintainer: Irina Gaynanova <irinag@stat.tamu.edu>
+Description: Semi-parametric approach for sparse canonical correlation analysis 
+    which can handle mixed data types: continuous, binary and truncated continuous.
+    Bridge functions are provided to connect Kendall's tau to latent correlation
+    under the Gaussian copula model. The methods are described in 
+    Yoon, Carroll and Gaynanova (2020) <doi:10.1093/biomet/asaa007> and 
+    Yoon, Mueller and Gaynanova (2021) <doi:10.1080/10618600.2021.1882468>.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.0.1), stats, MASS
+Imports: Rcpp, pcaPP, Matrix, fMultivar, mnormt, irlba, latentcor (>=
+        2.0.1)
+NeedsCompilation: yes
+RoxygenNote: 7.2.1
+LinkingTo: Rcpp, RcppArmadillo
+Packaged: 2022-09-09 21:19:49 UTC; irinag
+Author: Grace Yoon [aut] (<https://orcid.org/0000-0003-3263-1352>),
+  Mingze Huang [ctb] (<https://orcid.org/0000-0003-3919-1564>),
+  Irina Gaynanova [aut, cre] (<https://orcid.org/0000-0002-4116-0268>)
+Repository: CRAN
+Date/Publication: 2022-09-09 21:50:01 UTC

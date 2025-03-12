@@ -1,0 +1,45 @@
+Package: tiledb
+Type: Package
+Version: 0.30.2
+Title: Modern Database Engine for Complex Data Based on
+        Multi-Dimensional Arrays
+Authors@R: c(
+  person("TileDB, Inc.", role = c("aut", "cph")),
+  person("Dirk", "Eddelbuettel", email = "dirk@tiledb.com", role = "aut"),
+  person("Isaiah", "Norton", email = "isaiah@tiledb.com", role = "cre"))
+Description: The modern database 'TileDB' introduces a powerful on-disk
+  format for storing and accessing any complex data based on multi-dimensional
+  arrays. It supports dense and sparse arrays, dataframes and key-values stores,
+  cloud storage ('S3', 'GCS', 'Azure'), chunked arrays, multiple compression,
+  encryption and checksum filters, uses a fully multi-threaded implementation,
+  supports parallel I/O, data versioning ('time travel'), metadata and groups.
+  It is implemented as an embeddable cross-platform C++ library with APIs from
+  several languages, and integrations. This package provides the R support.
+Copyright: TileDB, Inc.
+License: MIT + file LICENSE
+URL: https://github.com/TileDB-Inc/TileDB-R,
+        https://tiledb-inc.github.io/TileDB-R/
+BugReports: https://github.com/TileDB-Inc/TileDB-R/issues
+SystemRequirements: A C++17 compiler is required; on macOS compilation
+        version 11.0 or later is required. Optionally cmake (only when
+        TileDB source build selected), curl (only when TileDB source
+        build selected)), and git (only when TileDB source build
+        selected); on x86_64 and M1 platforms pre-built TileDB Embedded
+        libraries are available at GitHub and are used if no TileDB
+        installation is detected, and no other option to build or
+        download was specified by the user.
+Imports: methods, Rcpp (>= 1.0.8), nanotime, spdl, nanoarrow
+LinkingTo: Rcpp, RcppInt64, nanoarrow
+Suggests: tinytest, simplermarkdown, curl, bit64, Matrix,
+        palmerpenguins, nycflights13, data.table, tibble, arrow
+VignetteBuilder: simplermarkdown
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-10-03 22:25:05 UTC; inorton
+Author: TileDB, Inc. [aut, cph],
+  Dirk Eddelbuettel [aut],
+  Isaiah Norton [cre]
+Maintainer: Isaiah Norton <isaiah@tiledb.com>
+Repository: CRAN
+Date/Publication: 2024-10-04 15:20:06 UTC

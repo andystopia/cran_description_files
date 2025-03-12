@@ -1,0 +1,28 @@
+Package: optiscale
+Type: Package
+Title: Optimal Scaling
+Version: 1.2.3
+Date: 2024-05-15
+Authors@R: c(person("Dave", "Armstrong", email="davearmstrong.ps@gmail.com", 
+  role=c("aut", "cre")), 
+  person("William", "Jacoby", email="wm.g.jacoby@gmail.com", 
+  role=c("aut")))
+Description: Optimal scaling of a data vector, relative to a set of targets, is
+    obtained through a least-squares transformation subject to appropriate measurement
+    constraints. The targets are usually predicted values from a statistical
+    model. If the data are nominal level, then the transformation must be
+    identity-preserving. If the data are ordinal level, then the
+    transformation must be monotonic. If the data are discrete, then tied data
+    values must remain tied in the optimal transformation. If the data are
+    continuous, then tied data values can be untied in the optimal
+    transformation.
+License: GPL-2
+Depends: lattice
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2024-05-15 18:04:19 UTC; david
+Author: Dave Armstrong [aut, cre],
+  William Jacoby [aut]
+Maintainer: Dave Armstrong <davearmstrong.ps@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-16 07:30:03 UTC

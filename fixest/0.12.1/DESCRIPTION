@@ -1,0 +1,48 @@
+Package: fixest
+Type: Package
+Title: Fast Fixed-Effects Estimations
+Version: 0.12.1
+Authors@R: 
+    c(person(given = "Laurent",
+             family = "Berge",
+             role = c("aut", "cre"),
+             email = "laurent.berge@u-bordeaux.fr"),
+      person(given = "Sebastian",
+             family = "Krantz",
+             role = "ctb"),
+      person(given = "Grant",
+             family = "McDermott",
+             role = "ctb",
+             email = "grantmcd@uoregon.edu",
+             comment = c(ORCID = "0000-0001-7883-8573")),
+       person(given = "Russell",
+             family = "Lenth",
+             role = "ctb",
+             email = "russell-lenth@uiowa.edu"))
+Imports: stats, graphics, grDevices, tools, utils, methods, numDeriv,
+        nlme, sandwich, Rcpp(>= 1.0.5), dreamerr(>= 1.4.0),
+        stringmagic(>= 1.1.2)
+Suggests: knitr, rmarkdown, data.table, plm, MASS, pander, ggplot2,
+        lfe, tinytex, pdftools, emmeans, estimability, AER
+LinkingTo: Rcpp
+Depends: R(>= 3.5.0)
+Description: Fast and user-friendly estimation of econometric models with multiple fixed-effects. Includes ordinary least squares (OLS), generalized linear models (GLM) and the negative binomial.
+    The core of the package is based on optimized parallel C++ code, scaling especially well for large data sets. The method to obtain the fixed-effects coefficients is based on Berge (2018) <https://github.com/lrberge/fixest/blob/master/_DOCS/FENmlm_paper.pdf>.
+    Further provides tools to export and view the results of several estimations with intuitive design to cluster the standard-errors.
+License: GPL-3
+BugReports: https://github.com/lrberge/fixest/issues
+URL: https://lrberge.github.io/fixest/,
+        https://github.com/lrberge/fixest
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-06-12 06:31:49 UTC; lrberge
+Author: Laurent Berge [aut, cre],
+  Sebastian Krantz [ctb],
+  Grant McDermott [ctb] (<https://orcid.org/0000-0001-7883-8573>),
+  Russell Lenth [ctb]
+Maintainer: Laurent Berge <laurent.berge@u-bordeaux.fr>
+Repository: CRAN
+Date/Publication: 2024-06-13 07:40:02 UTC

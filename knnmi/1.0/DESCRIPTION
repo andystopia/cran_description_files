@@ -1,0 +1,43 @@
+Package: knnmi
+Title: k-Nearest Neighbor Mutual Information Estimator
+Version: 1.0
+Authors@R: c(
+    person("Brian", "Gregor", email="bgregor@bu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-9640-0574")),
+    person("Katia", "Bulekova", email="ktrn@bu.edu", role = "aut",
+           comment = c(ORCID = "0000-0003-1560-2146")),
+    person("Reina", "Chau", email="rchau88@bu.edu", role = "aut",
+           comment = c(ORCID = "0000-0003-3012-1404")),
+    person("Stefano", "Monti",  email="smonti@bu.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-9376-0660")),
+    person("Benoit", "Jacob", role="cph", comment="Author of included Eigen library"),
+    person("Gael", "Guennebaud", role="cph", comment="Author of included Eigen library"),
+    person(c("Jose", "Luis"), "Blanco", role="cph", comment="Author of included nanoflann library"),
+    person(c("Pranjal", "Kumar"),  "Rai", role="cph", comment="Author of included nanoflann library"))
+Description: This is a 'C++' mutual information (MI) library based on the k-nearest 
+    neighbor (KNN) algorithm. There are three functions provided for computing MI 
+    for continuous values, mixed continuous and discrete values, and conditional MI 
+    for continuous values. They are based on algorithms by A. Kraskov, et. al. (2004) <doi:10.1103/PhysRevE.69.066138>, 
+    BC Ross (2014)<doi:10.1371/journal.pone.0087357>, 
+    and A. Tsimpiris (2012) <doi:10.1016/j.eswa.2012.05.014>, respectively.
+License: GPL (>= 3)
+Depends: R (>= 4.1.0)
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2024-03-29 17:51:49 UTC; bgregor
+Author: Brian Gregor [aut, cre] (<https://orcid.org/0009-0004-9640-0574>),
+  Katia Bulekova [aut] (<https://orcid.org/0000-0003-1560-2146>),
+  Reina Chau [aut] (<https://orcid.org/0000-0003-3012-1404>),
+  Stefano Monti [aut] (<https://orcid.org/0000-0002-9376-0660>),
+  Benoit Jacob [cph] (Author of included Eigen library),
+  Gael Guennebaud [cph] (Author of included Eigen library),
+  Jose Luis Blanco [cph] (Author of included nanoflann library),
+  Pranjal Kumar Rai [cph] (Author of included nanoflann library)
+Maintainer: Brian Gregor <bgregor@bu.edu>
+Repository: CRAN
+Date/Publication: 2024-04-02 12:32:06 UTC

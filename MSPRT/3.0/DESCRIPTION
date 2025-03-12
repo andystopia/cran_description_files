@@ -1,0 +1,30 @@
+Package: MSPRT
+Type: Package
+Title: A Modified Sequential Probability Ratio Test (MSPRT)
+Version: 3.0
+Date: 2020-11-11
+Authors@R: c(person("Sandipan", "Pramanik", email = "sandy.pramanik@gmail.com",
+                  role = c("aut", "cre")),
+            person("Valen E.", "Johnson", role = "aut"),
+            person("Anirban", "Bhattacharya", role = "aut") )
+Author: Sandipan Pramanik [aut, cre],
+  Valen E. Johnson [aut],
+  Anirban Bhattacharya [aut]
+Maintainer: Sandipan Pramanik <sandy.pramanik@gmail.com>
+Description: Given the maximum available sample size (N) for an experiment, and the target levels of Type I 
+             and II error probabilities, this package designs a modified SPRT (MSPRT). For any designed MSPRT 
+             the package can also obtain its operating characteristics and implement the test for a given 
+             sequentially observed data. The MSPRT is defined in a manner very similar to Wald's initial proposal. 
+             The proposed test has shown evidence of reducing the average sample size required to perform 
+             statistical hypothesis tests at specified levels of significance and power. Currently, the package
+             implements one-sample proportion tests, one and two-sample z tests, and one and two-sample 
+             t tests. A brief user guidance for this package is provided below. One can also refer to the 
+             supplemental information for the same.
+Imports: nleqslv, ggplot2, ggpubr, foreach, iterators, parallel,
+        doParallel, datasets, graphics, grDevices, methods, stats,
+        utils
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2020-11-13 01:08:33 UTC; sandipanpramanik
+Repository: CRAN
+Date/Publication: 2020-11-13 10:20:05 UTC

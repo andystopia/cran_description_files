@@ -1,0 +1,34 @@
+Package: AIscreenR
+Title: AI Screening Tools in R for Systematic Reviewing
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Mikkel H.", 
+           family = "Vembye", 
+           email = "mikkel.vembye@gmail.com", 
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-9071-0724"))
+           )
+Description: Provides functions to conduct title and abstract screening in systematic reviews using large language models, such as the Generative Pre-trained Transformer (GPT) models from 'OpenAI' <https://platform.openai.com/>. These functions can enhance the quality of title and abstract screenings while reducing the total screening time significantly. In addition, the package includes tools for quality assessment of title and abstract screenings, as described in Vembye, Christensen, Mølgaard, and Schytt (2024) <DOI:10.31219/osf.io/yrhzm>.
+Depends: R (>= 4.1.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: dplyr, tibble, httr2, stringr, furrr, tidyr, tictoc, askpass,
+        curl, purrr, lifecycle, jsonlite
+Suggests: future, knitr, rmarkdown, usethis, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Config/testthat/start-first: tabscreen_gpt, approximate_price_gpt,
+        rate_limits, api_key_functions
+URL: https://mikkelvembye.github.io/AIscreenR/,
+        https://github.com/MikkelVembye/AIscreenR
+BugReports: https://github.com/MikkelVembye/AIscreenR/issues
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-26 11:22:33 UTC; B199526
+Author: Mikkel H. Vembye [aut, cre, cph]
+    (<https://orcid.org/0000-0001-9071-0724>)
+Maintainer: Mikkel H. Vembye <mikkel.vembye@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-26 14:00:02 UTC

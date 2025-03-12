@@ -1,0 +1,36 @@
+Package: kfino
+Title: Kalman Filter for Impulse Noised Outliers
+Version: 1.0.0
+Authors@R: c(
+  person("Bertrand", "Cloez", email = "bertrand.cloez@inrae.fr", role = c("aut")),
+  person("Isabelle", "Sanchez", email = "isabelle.sanchez@inrae.fr", role = c("aut", "cre")),
+  person("Benedicte", "Fontez", email = "benedicte.fontez@supagro.fr", role = c("ctr")))
+Author: Bertrand Cloez [aut],
+  Isabelle Sanchez [aut, cre],
+  Benedicte Fontez [ctr]
+Maintainer: Isabelle Sanchez <isabelle.sanchez@inrae.fr>
+Description: A method for detecting outliers with a Kalman filter on impulsed 
+  noised outliers and prediction on cleaned data. 'kfino' is a robust 
+  sequential algorithm allowing to filter data with a large number of outliers. 
+  This algorithm is based on simple latent linear Gaussian processes as in the 
+  Kalman Filter method and is devoted to detect impulse-noised outliers. These 
+  are data points that differ significantly from other observations. 'ML' 
+  (Maximization Likelihood) and 'EM' (Expectation-Maximization algorithm) 
+  algorithms were implemented in 'kfino'. The method is described in full 
+  details in the following arXiv e-Print: <arXiv:2208.00961>.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+LazyData: TRUE
+URL: https://forgemia.inra.fr/isabelle.sanchez/kfino
+BugReports: https://forgemia.inra.fr/isabelle.sanchez/kfino/-/issues
+Imports: ggplot2, dplyr,
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), covr, foreach,
+        doParallel, parallel
+VignetteBuilder: knitr
+RoxygenNote: 7.2.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-07 07:10:31 UTC; sanchez
+Repository: CRAN
+Date/Publication: 2022-11-03 08:26:44 UTC

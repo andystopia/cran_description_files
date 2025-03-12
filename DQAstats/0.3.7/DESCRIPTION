@@ -1,0 +1,41 @@
+Package: DQAstats
+Title: Core Functions for Data Quality Assessment
+Version: 0.3.7
+Date: 2025-02-07
+Authors@R: c(
+    person("Lorenz A.", "Kapsner", , "lorenz.kapsner@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0003-1866-860X")),
+    person("Jonathan M.", "Mang", role = "aut",
+           comment = c(ORCID = "0000-0003-0518-4710")),
+    person("Helene Köster", role = "ctb"),
+    person("MIRACUM - Medical Informatics in Research and Care in University Medicine", role = "fnd"),
+    person("Universitätsklinikum Erlangen", role = "cph")
+  )
+Description: Perform data quality assessment ('DQA') of electronic health
+    records ('EHR'). Publication: Kapsner et al. (2021)
+    <doi:10.1055/s-0041-1733847>.
+License: GPL-3
+URL: https://github.com/miracum/dqa-dqastats
+BugReports: https://github.com/miracum/dqa-dqastats/issues
+Imports: data.table, DIZtools (>= 0.0.8), DIZutils (>= 0.1.2),
+        future.apply, jsonlite, kableExtra, knitr, magrittr, parsedate,
+        quarto (>= 1.4), stats, tinytex, utils
+Suggests: DT, lintr, remotes, testthat
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Encoding: UTF-8
+SystemRequirements: Quarto command line tools
+        (https://github.com/quarto-dev/quarto-cli).
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-02-07 15:37:02 UTC; user
+Author: Lorenz A. Kapsner [cre, aut] (<https://orcid.org/0000-0003-1866-860X>),
+  Jonathan M. Mang [aut] (<https://orcid.org/0000-0003-0518-4710>),
+  Helene Köster [ctb],
+  MIRACUM - Medical Informatics in Research and Care in University
+    Medicine [fnd],
+  Universitätsklinikum Erlangen [cph]
+Maintainer: Lorenz A. Kapsner <lorenz.kapsner@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-02-07 16:10:02 UTC

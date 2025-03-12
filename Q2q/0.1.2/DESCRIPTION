@@ -1,0 +1,22 @@
+Package: Q2q
+Type: Package
+Title: Interpolating Age-Specific Mortality Rates at All Ages
+Version: 0.1.2
+Authors@R: person('Farid', 'FLICI',  email = 'farid.flici@cread.dz', role = c('aut', 'cre'), comment = c(ORCID = 'https://orcid.org/0000-0002-1954-2120'))
+Description: Mortality rates are typically provided in an abridged format, i.e., by age groups 0, [1, 5], [5, 10]', '[10, 15]', and so on. Some applications necessitate a detailed (single) age description. Despite the large number of proposed approaches in the literature, only a few methods ensure great performance at both younger and higher ages. For example, the 6-term 'Lagrange' interpolation function is well suited to mortality interpolation at younger ages (with irregular intervals), but not at older ages. The 'Karup-King' method, on the other hand, performs well at older ages but is not suitable for younger ones. Interested readers can find a full discussion of the two stated methods in the book Shryock, Siegel, and Associates (1993).The Q2q package combines the two methods to allow for the interpolation of mortality rates across all age groups. It begins by implementing each method independently, and then the resulting curves are linked using a 5-age averaged error between the two partial curves.
+License: GPL (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+Depends: R(>= 3.5.0)
+Imports:
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/Farid-FLICI/Q2q
+NeedsCompilation: no
+Packaged: 2024-12-19 15:42:50 UTC; farid
+Author: Farid FLICI [aut, cre] (<https://orcid.org/0000-0002-1954-2120>)
+Maintainer: Farid FLICI <farid.flici@cread.dz>
+Repository: CRAN
+Date/Publication: 2024-12-19 16:00:14 UTC

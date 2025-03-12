@@ -1,0 +1,30 @@
+Package: DTRreg
+Type: Package
+Title: DTR Estimation and Inference via G-Estimation, Dynamic WOLS,
+        Q-Learning, and Dynamic Weighted Survival Modeling (DWSurv)
+Version: 2.2
+Date: 2024-03-23
+Author: Michael Wallace, Erica E M Moodie, David A Stephens, Gabrielle Simoneau, Shannon T. Holloway and Juliana Schulz
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Description: Dynamic treatment regime estimation and inference via G-estimation, 
+  dynamic weighted ordinary least squares (dWOLS) and Q-learning. Inference via 
+  bootstrap and recursive sandwich estimation. Estimation and 
+  inference for survival outcomes via Dynamic Weighted Survival Modeling (DWSurv). 
+  Extension to continuous treatment variables. Wallace et al. (2017) 
+  <DOI:10.18637/jss.v080.i02>; Simoneau et al. (2020) 
+  <DOI:10.1080/00949655.2020.1793341>.
+License: GPL-2
+Imports: graphics, nnet, R6, stats, utils
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Repository: CRAN
+Collate: 'treatmentClasses.R' 'Ahat.R' 'interactive.R'
+        'inputProcessing.R' 'utils.R' 'weights.R' 'sandwich.R' 'gest.R'
+        'dwols.R' 'bootstrapStep.R' 'dtrProcedure.R' 'DTRreg.R'
+        'DWsurv.R' 'chooseM.R' 'data_generate.R' 's3-methods.R'
+        'varest.R'
+Packaged: 2024-03-23 20:05:47 UTC; 19194
+Depends: R (>= 3.5.0)
+Date/Publication: 2024-03-23 20:20:02 UTC

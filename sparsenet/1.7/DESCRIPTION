@@ -1,0 +1,30 @@
+Package: sparsenet
+Type: Package
+Title: Fit Sparse Linear Regression Models via Nonconvex Optimization
+Version: 1.7
+Date: 2024-11-14
+Authors@R: c(person(given = "Trevor",
+                    family = "Hastie",
+                      role = c("aut", "cre"),
+                      email = "hastie@stanford.edu"),
+		      person(given = "Rahul",
+                      family = "Mazumder",
+                      role = c("aut")),
+               person(given = "Jerome",
+                      family = "Friedman",
+                      role = c("aut")))
+Description: Efficient procedure for fitting regularization paths between L1 and L0, using the MC+ penalty of Zhang, C.H. (2010)<doi:10.1214/09-AOS729>. Implements the methodology described in Mazumder, Friedman and Hastie (2011) <DOI: 10.1198/jasa.2011.tm09738>. Sparsenet computes the regularization surface over both the family parameter and the tuning parameter by coordinate descent.
+Depends: Matrix (>= 1.0-6), shape
+Imports: methods
+License: GPL-2
+NeedsCompilation: yes
+URL:
+        https://hastie.su.domains/public/Papers/Sparsenet/Mazumder-SparseNetCoordinateDescent-2011.pdf
+RoxygenNote: 7.3.1
+Packaged: 2024-11-15 01:17:01 UTC; hastie
+Author: Trevor Hastie [aut, cre],
+  Rahul Mazumder [aut],
+  Jerome Friedman [aut]
+Maintainer: Trevor Hastie <hastie@stanford.edu>
+Repository: CRAN
+Date/Publication: 2024-11-16 22:30:02 UTC

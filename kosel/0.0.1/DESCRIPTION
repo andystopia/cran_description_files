@@ -1,0 +1,20 @@
+Package: kosel
+Title: Variable Selection by Revisited Knockoffs Procedures
+Version: 0.0.1
+Authors@R: c(person("Clemence", "Karmann", email = "clemence.karmann@gmail.com", role = c("aut","cre")),person("Aurelie", "Gueudin", email = "aurelie.gueudin@univ-lorraine.fr", role = c("aut")))
+Description: Performs variable selection for many types of L1-regularised regressions using the revisited knockoffs procedure. This procedure uses a matrix of knockoffs of the covariates independent from the response variable Y. The idea is to determine if a covariate belongs to the model depending on whether it enters the model before or after its knockoff. The procedure suits for a wide range of regressions with various types of response variables. Regression models available are exported from the R packages 'glmnet' and 'ordinalNet'. Based on the paper linked to via the URL below: Gegout A., Gueudin A., Karmann C. (2019) <arXiv:1907.03153>.
+URL: https://arxiv.org/pdf/1907.03153.pdf
+License: GPL-3
+Depends: R (>= 1.1)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: glmnet, ordinalNet
+Suggests: graphics
+NeedsCompilation: no
+Packaged: 2019-07-15 13:42:17 UTC; ckarmann
+Author: Clemence Karmann [aut, cre],
+  Aurelie Gueudin [aut]
+Maintainer: Clemence Karmann <clemence.karmann@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-18 10:44:06 UTC

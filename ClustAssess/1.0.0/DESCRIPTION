@@ -1,0 +1,51 @@
+Package: ClustAssess
+Type: Package
+Title: Tools for Assessing Clustering
+Version: 1.0.0
+Authors@R: c(person("Andi", "Munteanu",
+                  email="am3019@cam.ac.uk", role=c("aut", "cre")), person("Arash", "Shahsavari", email="arash8579@hotmail.com",
+                  role = c("aut")), person("Rafael", "Kollyfas", role=c("ctb"), email="rk720@cam.ac.uk"), person("Miguel", "Larraz Lopez de Novales", role=c("aut"), email ="ml2088@cam.ac.uk"), person("Liviu", "Ciortuz", role=c("ctb"), email="liviu_ciortuz@yahoo.co.uk"), person("Irina", "Mohorianu",
+                  email="iim22@cam.ac.uk", role=c("aut")))
+Description: A set of tools for evaluating clustering robustness using 
+    proportion of ambiguously clustered pairs (Senbabaoglu et al. (2014) 
+    <doi:10.1038/srep06207>), as well as similarity across methods 
+    and method stability using element-centric clustering comparison (Gates et 
+    al. (2019) <doi:10.1038/s41598-019-44892-y>). Additionally, this package 
+    enables stability-based parameter assessment for graph-based clustering 
+    pipelines typical in single-cell data analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Additional_repositories: https://blaserlab.r-universe.dev
+biocViews: Software, SingleCell, RNASeq, ATACSeq, Normalization,
+        Preprocessing, DimensionReduction, Visualization,
+        QualityControl, Clustering, Classification, Annotation,
+        GeneExpression, DifferentialExpression
+Depends: R (>= 4.0.0), methods, stats
+Imports: dplyr, DT, fastcluster, foreach, glue, Gmedian, ggnewscale,
+        ggplot2, ggrastr, ggrepel, ggtext, gprofiler2, igraph,
+        jsonlite, leiden, Matrix (>= 1.5.0), matrixStats, progress,
+        stringr, paletteer, plotly, qualpalr, RANN, reshape2, rlang,
+        Seurat, shiny, shinyjs, shinyLP, shinyWidgets, utils, uwot,
+        vioplot
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppEigen
+Suggests: BiocManager, colourpicker, ComplexHeatmap, data.table,
+        DelayedMatrixStats, devtools, doParallel, knitr, leidenbase,
+        monocle3, patchwork, ragg, reticulate, rhdf5, RhpcBLASctl,
+        rmarkdown, scales, SeuratObject, SharedObject, styler, testthat
+        (>= 3.0.0)
+URL: https://github.com/Core-Bioinformatics/ClustAssess,
+        https://core-bioinformatics.github.io/ClustAssess/
+BugReports: https://github.com/Core-Bioinformatics/ClustAssess/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-01-31 20:53:28 UTC; am3019
+Author: Andi Munteanu [aut, cre],
+  Arash Shahsavari [aut],
+  Rafael Kollyfas [ctb],
+  Miguel Larraz Lopez de Novales [aut],
+  Liviu Ciortuz [ctb],
+  Irina Mohorianu [aut]
+Maintainer: Andi Munteanu <am3019@cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-01-31 22:40:06 UTC

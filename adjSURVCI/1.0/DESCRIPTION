@@ -1,0 +1,24 @@
+Package: adjSURVCI
+Type: Package
+Title: Parameter and Adjusted Probability Estimation for Right-Censored
+        Data
+Version: 1.0
+Date: 2021-12-10
+Authors@R: c(person("Manoj","Khanal",email="themanoj2008@gmail.com",role=c("aut","cre")),
+             person("Kwang Woo","Ahn",email="kwooahn@mcw.edu",role=c("aut","ths")),
+             person("Soyoung Kim",email="skim@mcw.edu",role="ctb") )
+Author: Manoj Khanal [aut, cre],
+  Kwang Woo Ahn [aut, ths],
+  Soyoung Kim [ctb]
+Maintainer: Manoj Khanal <themanoj2008@gmail.com>
+Description: Functions in this package fit a stratified Cox proportional hazards and a proportional subdistribution hazards model by extending Zhang et al., (2007) <doi: 10.1016/j.cmpb.2007.07.010> 
+  and Zhang et al., (2011) <doi: 10.1016/j.cmpb.2010.07.005> respectively to clustered right-censored data. The functions also provide the estimates of the cumulative baseline hazard along with their standard errors. Furthermore, the adjusted survival and cumulative incidence probabilities are also provided along with their standard errors. Finally, the estimate of cumulative incidence and survival probabilities given a vector of covariates along with their standard errors are also provided.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.7), survival
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+Packaged: 2021-12-14 15:09:48 UTC; manojkhanal
+Repository: CRAN
+Date/Publication: 2021-12-15 19:10:02 UTC

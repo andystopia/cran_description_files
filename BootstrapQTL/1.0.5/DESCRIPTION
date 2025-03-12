@@ -1,0 +1,23 @@
+Package: BootstrapQTL
+Type: Package
+Title: Bootstrap cis-QTL Method that Corrects for the Winner's Curse
+Version: 1.0.5
+Author: Qin Qin Huang [aut],
+  Scott Ritchie [aut, cre]
+Maintainer: Scott Ritchie <sritchie73@gmail.com>
+BugReports: https://github.com/sritchie73/bootstrapQTL/issues
+Description: Identifies genome-related molecular traits with significant 
+  evidence of genetic regulation and performs a bootstrap procedure to 
+  correct estimated effect sizes for over-estimation present in cis-QTL
+  mapping studies (The "Winner's Curse"), described in Huang QQ *et al.* 
+  2018 <doi: 10.1093/nar/gky780>. 
+Depends: MatrixEQTL
+Imports: foreach, data.table
+Suggests: doMC, doParallel, qvalue, testthat
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2021-05-11 15:55:37 UTC; sr827
+Repository: CRAN
+Date/Publication: 2021-05-12 00:52:43 UTC

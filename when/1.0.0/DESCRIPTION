@@ -1,0 +1,36 @@
+Type: Package
+Package: when
+Title: Definition of Date and Time Dimension Tables
+Version: 1.0.0
+Authors@R: c(
+    person("Jose", "Samos", , "jsamos@ugr.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4457-3439")),
+    person("Universidad de Granada", role = "cph")
+  )
+Description: In Multidimensional Systems the When dimension allows us to
+    express when the analysed facts have occurred. The purpose of this
+    package is to provide support for implementing this dimension in the
+    form of date and time tables for Relational On-Line Analytical Processing 
+    star database systems.
+License: MIT + file LICENSE
+URL: https://josesamos.github.io/when/,
+        https://github.com/josesamos/when
+BugReports: https://github.com/josesamos/when/issues
+Depends: R (>= 2.10)
+Imports: DBI, dm, dplyr, hms, lubridate, rlang, snakecase, tibble,
+        utils, xlsx
+Suggests: dbplyr, DiagrammeR, DiagrammeRsvg, knitr, pander, rmarkdown,
+        RSQLite, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-08 10:18:10 UTC; joses
+Author: Jose Samos [aut, cre] (<https://orcid.org/0000-0002-4457-3439>),
+  Universidad de Granada [cph]
+Maintainer: Jose Samos <jsamos@ugr.es>
+Repository: CRAN
+Date/Publication: 2024-01-09 08:40:02 UTC

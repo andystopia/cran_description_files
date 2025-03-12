@@ -1,0 +1,26 @@
+Package: zctaCrosswalk
+Type: Package
+Title: Crosswalk Between 2020 Census ZIP Code Tabulation Areas (ZCTAs),
+        States and Counties
+Version: 2.0.0
+Authors@R: c(person("Ari Lamstein", role = c("aut", "cre"), email = "alamstein@market-bridge.com"),
+    person("MarketBridge LLC", role = c("cph", "fnd")))
+Maintainer: Ari Lamstein <alamstein@market-bridge.com>
+Description: Contains the US Census Bureau's 2020 ZCTA to County Relationship 
+    File, as well as convenience functions to translate between States, Counties
+    and ZIP Code Tabulation Areas (ZCTAs).
+License: MIT + file LICENSE
+URL: https://github.com/MarketBridge/zctaCrosswalk
+Encoding: UTF-8
+LazyData: true
+Imports: readr, dplyr, rlang, stringr
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, tidycensus, mapview
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-04-17 18:41:03 UTC; AriLamstein
+Author: Ari Lamstein [aut, cre],
+  MarketBridge LLC [cph, fnd]
+Repository: CRAN
+Date/Publication: 2023-04-19 14:00:02 UTC

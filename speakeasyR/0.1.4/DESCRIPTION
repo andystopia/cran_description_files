@@ -1,0 +1,146 @@
+Package: speakeasyR
+Title: Fast and Robust Multi-Scale Graph Clustering
+Version: 0.1.4
+Authors@R: c(
+      person(
+        "David", "Connell",
+        email = "david32@dcon.addy.io",
+        role = c("aut", "cre", "cph"),
+        comment = c(ORCID = "https://orcid.org/0000-0002-4841-6756")
+      ),
+      person("Chris", "Gaiteri", role = "cph",
+        comment = "Author of original SpeakEasy 2 algorithm."),
+      person("Gábor", "Csárdi", role = c("cph", "ctb"),
+        comment = "Author of igraph C library."),
+      person("Tamás", "Nepusz", role = c("cph", "ctb"),
+        comment = "Author of igraph C library."),
+      person("Szabolcs", "Horvát", role = c("cph", "ctb"),
+        comment = "Author of igraph C library."),
+      person("Vincent", "Traag", role = c("cph", "ctb"),
+        comment = "Author of igraph C library."),
+      person("Fabio", "Zanini", role = c("cph", "ctb"),
+        comment = "Author of igraph C library."),
+      person("Daniel", "Noom", role = c("cph", "ctb"),
+        comment = "Author of igraph C library."),
+      person("The igraph development team", role = "cph",
+        comment = "Copyright holder of igraph C library."),
+      person("Free Software Foundation, Inc.", role = "cph",
+        comment = "Copyright holder of GPL licenses."),
+      person("Ross", "Ihaka", role = c("cph", "ctb"),
+        comment = "Author of Mathlib."),
+      person("The R Development Core Team", role = "cph",
+        comment = "Copyright holder of Mathlib."),
+      person("Royal Statistical Society", role = "cph",
+        comment = "Copyright holder of Mathlib."),
+      person("The R Core Team", role = "cph",
+        comment = "Copyright holder of Mathlib."),
+      person("The Regents of the University of California", role = "cph",
+        comment = "Copyright holder of stdlib's qsort."),
+      person("Timothy", "Davis", role = c("cph", "ctb"),
+        comment = "Author of CXSPARSE (cs)."),
+      person("Richard", "Lehoucq", role = c("cph", "ctb"),
+        comment = "Author of arpack."),
+      person("Danny", "Scrensen", role = c("cph", "ctb"),
+        comment = "Author of arpack and lapack."),
+      person("Phuong", "Vu", role = c("cph", "ctb"),
+        comment = "Author of arpack."),
+      person("Chao", "Yang", role = c("cph", "ctb"),
+        comment = "Author of arpack."),
+      person("Allan", "Cornet", role = c("cph", "ctb"),
+        comment = "Author of arpack."),
+      person("Sylvestre", "Ledru", role = c("cph", "ctb"),
+        comment = "Author of arpack."),
+      person("Chao", "Yang", role = c("cph", "ctb"),
+        comment = "Author of arpack."),
+      person("Rice University", role = "cph",
+        comment = "Copyright holder of arpack."),
+      person("Scilab Enterprises", role = "cph",
+        comment = "Copyright holder of arpack-ng."),
+      person("Melissa", "O'Neill", role = c("cph", "ctb"),
+        comment = "Author of PCG random number generator."),
+      person("Steven", "Johnson", role = c("cph", "ctb"),
+        comment = "Author of ax_pthread."),
+      person("Daniel", "G.", role = c("cph", "ctb"),
+        comment = "Author of ax_pthread."),
+      person("Marc", "Stevens", role = c("cph", "ctb"),
+        comment = "Author of ax_pthread."),
+      person("Minh", "Nguyen", role = c("cph", "ctb"),
+        comment = "Author of ax_pthread."),
+      person("Elliot", "Paquette", role = c("cph", "ctb"),
+        comment = "Contributor to igraph."),
+      person("Pascal", "Pons", role = c("cph", "ctb"),
+        comment = "Contributor to igraph."),
+      person("Jordi", "Hermoso", role = c("cph", "ctb"),
+        comment = "Contributor to arpack."),
+      person("Sébastien", "Fabbro", role = c("cph", "ctb"),
+        comment = "Contributor to arpack."),
+      person("Shinya", "Tasaki", role = c("cph", "ctb"),
+        comment = "Provided code used in the gene clustering example.")
+    )
+Description: A graph community detection algorithm that aims to be performant
+    on large graphs and robust, returning consistent results across runs.
+    SpeakEasy 2 (SE2), the underlying algorithm, is described in Chris Gaiteri,
+    David R. Connell & Faraz A. Sultan et al. (2023)
+    <doi:10.1186/s13059-023-03062-0>. The core algorithm is written in 'C',
+    providing speed and keeping the memory requirements low. This implementation
+    can take advantage of multiple computing cores without increasing memory
+    usage. SE2 can detect community structure across scales, making it a good
+    choice for biological data, which often has hierarchical structure. Graphs
+    can be passed to the algorithm as adjacency matrices using base 'R'
+    matrices, the 'Matrix' library, 'igraph' graphs, or any data that can be
+    coerced into a matrix.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: Matrix, methods
+Suggests: igraph, scRNAseq, SummarizedExperiment, knitr, rmarkdown,
+        testthat (>= 3.0.0)
+URL: https://github.com/SpeakEasy-2/speakeasyR
+BugReports: https://github.com/SpeakEasy-2/speakeasyR/issues
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+SystemRequirements: arpack (optional)
+NeedsCompilation: yes
+Packaged: 2024-09-24 22:18:21 UTC; voidee
+Author: David Connell [aut, cre, cph] (<https://orcid.org/0000-0002-4841-6756>),
+  Chris Gaiteri [cph] (Author of original SpeakEasy 2 algorithm.),
+  Gábor Csárdi [cph, ctb] (Author of igraph C library.),
+  Tamás Nepusz [cph, ctb] (Author of igraph C library.),
+  Szabolcs Horvát [cph, ctb] (Author of igraph C library.),
+  Vincent Traag [cph, ctb] (Author of igraph C library.),
+  Fabio Zanini [cph, ctb] (Author of igraph C library.),
+  Daniel Noom [cph, ctb] (Author of igraph C library.),
+  The igraph development team [cph] (Copyright holder of igraph C
+    library.),
+  Free Software Foundation, Inc. [cph] (Copyright holder of GPL
+    licenses.),
+  Ross Ihaka [cph, ctb] (Author of Mathlib.),
+  The R Development Core Team [cph] (Copyright holder of Mathlib.),
+  Royal Statistical Society [cph] (Copyright holder of Mathlib.),
+  The R Core Team [cph] (Copyright holder of Mathlib.),
+  The Regents of the University of California [cph] (Copyright holder of
+    stdlib's qsort.),
+  Timothy Davis [cph, ctb] (Author of CXSPARSE (cs).),
+  Richard Lehoucq [cph, ctb] (Author of arpack.),
+  Danny Scrensen [cph, ctb] (Author of arpack and lapack.),
+  Phuong Vu [cph, ctb] (Author of arpack.),
+  Chao Yang [cph, ctb] (Author of arpack.),
+  Allan Cornet [cph, ctb] (Author of arpack.),
+  Sylvestre Ledru [cph, ctb] (Author of arpack.),
+  Chao Yang [cph, ctb] (Author of arpack.),
+  Rice University [cph] (Copyright holder of arpack.),
+  Scilab Enterprises [cph] (Copyright holder of arpack-ng.),
+  Melissa O'Neill [cph, ctb] (Author of PCG random number generator.),
+  Steven Johnson [cph, ctb] (Author of ax_pthread.),
+  Daniel G. [cph, ctb] (Author of ax_pthread.),
+  Marc Stevens [cph, ctb] (Author of ax_pthread.),
+  Minh Nguyen [cph, ctb] (Author of ax_pthread.),
+  Elliot Paquette [cph, ctb] (Contributor to igraph.),
+  Pascal Pons [cph, ctb] (Contributor to igraph.),
+  Jordi Hermoso [cph, ctb] (Contributor to arpack.),
+  Sébastien Fabbro [cph, ctb] (Contributor to arpack.),
+  Shinya Tasaki [cph, ctb] (Provided code used in the gene clustering
+    example.)
+Maintainer: David Connell <david32@dcon.addy.io>
+Repository: CRAN
+Date/Publication: 2024-09-24 22:40:02 UTC

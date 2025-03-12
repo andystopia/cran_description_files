@@ -1,0 +1,39 @@
+Package: FREEtree
+Type: Package
+Title: Tree Method for High Dimensional Longitudinal Data
+Version: 0.1.0
+Authors@R: c(
+		person("Yuancheng", "Xu", email = "xuyuancheng0@gmail.com", role = c("aut")),
+		person("Athanasse", "Zafirov", email = "zafirov@gmail.com", role = c("cre")),
+		person("Christina", "Ramirez", email = "cr@ucla.edu", role = c("aut")),
+        person("Dan", "Kojis", email = "x@xxx.edu", role = c("aut")),
+        person("Min", "Tan", email = "xx@xxx.edu", role = c("aut")),
+        person("Mike", "Alvarez", email = "rma@hss.caltech.edu", role = c("aut")))
+Description: This tree-based method deals with high dimensional longitudinal 
+	data with correlated features through the use of a piecewise random effect 
+	model. FREE tree also exploits the network structure of the features, by 
+	first clustering them using Weighted Gene Co-expression Network Analysis 
+	('WGCNA'). It then conducts a screening step within each cluster of features 
+	and a selecting step among the surviving features, which provides a relatively
+	unbiased way to do feature selection. By using dominant principle components 
+	as regression variables at each leaf and the original features as splitting 
+	variables at splitting nodes, FREE tree delivers easily interpretable results
+	while improving computational efficiency.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: glmertree, pre, WGCNA, MASS
+RoxygenNote: 7.1.0
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2020-06-22 08:36:52 UTC; canth
+Author: Yuancheng Xu [aut],
+  Athanasse Zafirov [cre],
+  Christina Ramirez [aut],
+  Dan Kojis [aut],
+  Min Tan [aut],
+  Mike Alvarez [aut]
+Maintainer: Athanasse Zafirov <zafirov@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-25 15:00:03 UTC

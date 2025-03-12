@@ -1,0 +1,48 @@
+Type: Package
+Package: BiVariAn
+Title: Bivariate Automatic Analysis
+Version: 1.0.1
+Date: 2025-03-03
+Authors@R: c(
+    person("José Andrés", "Flores-García", , "andres.flores@uaslp.mx", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0003-0688-3134")),
+    person("Antonio Augusto", "Gordillo-Moscoso", role = "aut",
+           comment = c(ORCID = "0000-0002-7351-4614")),
+    person("Jhoselin Marian", "Castro-Rodriguez", role = "aut",
+           comment = c(ORCID = "0009-0001-0855-4353"))
+  )
+Maintainer: José Andrés Flores-García <andres.flores@uaslp.mx>
+Description: Simplify bivariate and regression analyses by automating
+    result generation, including summary tables, statistical tests, and
+    customizable graphs. It supports tests for continuous and dichotomous
+    data, as well as stepwise regression for linear, logistic, and Firth
+    penalized logistic models.  While not a substitute for tailored
+    analysis, 'BiVariAn' accelerates workflows and is expanding features
+    like multilingual interpretations of results.The methods for selecting
+    significant statistical tests, as well as the predictor selection in
+    prediction functions, can be referenced in the works of Marc Kery
+    (2003) <doi:10.1890/0012-9623(2003)84[92:NORDIG]2.0.CO;2> and Rainer
+    Puhr (2017) <doi:10.1002/sim.7273>.
+License: GPL (>= 3)
+URL: https://github.com/AndresFloresG/BiVariAn
+BugReports: https://github.com/AndresFloresG/BiVariAn/issues
+Imports: car, DescTools, dplyr, epitools, fastDummies, ggplot2,
+        ggprism, glue, lifecycle, logistf, magrittr, rlang, rrtable,
+        scales, stats, table1, tidyr, utils
+Suggests: knitr, riskCommunicator, rmarkdown, spelling, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-03-03 15:07:36 UTC; andre
+Author: José Andrés Flores-García [cre, aut, cph]
+    (<https://orcid.org/0000-0003-0688-3134>),
+  Antonio Augusto Gordillo-Moscoso [aut]
+    (<https://orcid.org/0000-0002-7351-4614>),
+  Jhoselin Marian Castro-Rodriguez [aut]
+    (<https://orcid.org/0009-0001-0855-4353>)
+Repository: CRAN
+Date/Publication: 2025-03-05 13:10:02 UTC

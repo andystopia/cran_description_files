@@ -1,0 +1,31 @@
+Package: validateIt
+Title: Validating Topic Coherence and Topic Labels
+Version: 1.2.1
+Authors@R: c(
+	person(given = "Luwei",
+           family = "Ying",
+           role = c("aut", "cre"),
+           email = "triads.developers@wustl.edu",
+           comment = c(ORCID = "0000-0001-7307-4834")),
+    person(given = "Jacob",
+           family = "Montgomery",
+           role = c("aut")),
+    person(given = "Brandon",
+           family = "Stewart",
+           role = c("aut")))
+Description: By creating crowd-sourcing tasks that can be easily posted and results retrieved using Amazon's Mechanical Turk (MTurk) API, researchers can use this solution to validate the quality of topics obtained from unsupervised or semi-supervised learning methods, and the relevance of topic labels assigned. This helps ensure that the topic modeling results are accurate and useful for research purposes. See Ying and others (2022) <doi:10.1101/2023.05.02.538599>. For more information, please visit <https://github.com/Triads-Developer/Topic_Model_Validation>.  
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: pyMTurkR, rlang (>= 0.4.11), tm (>= 0.7-11), here, SnowballC
+Suggests: roxygen2, testthat
+Author: Luwei Ying [aut, cre] (<https://orcid.org/0000-0001-7307-4834>),
+  Jacob Montgomery [aut],
+  Brandon Stewart [aut]
+Maintainer: Luwei Ying <triads.developers@wustl.edu>
+Repository: CRAN
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-05-15 12:34:05 UTC; jessiewalker
+Date/Publication: 2023-05-16 08:20:02 UTC

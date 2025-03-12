@@ -1,0 +1,22 @@
+Package: daySupply
+Type: Package
+Title: Calculating Days' Supply and Daily Dose of Prescriptions
+Version: 0.1.0
+Authors@R: c(
+    person("Abdollah", "Safari", email = "a.saffari72@gmail.com", role = c("aut", "cre")),
+    person("Shahrzad", "Salmasi", email = "shahrzad.salmasi@ubc.ca", role = c("aut")),
+    person("Peter", "Loewen", email = "peter.loewen@ubc.ca", role = c("aut")))
+Maintainer: Abdollah Safari <a.saffari72@gmail.com>
+Description: Allows clinicians and researchers to compute daily dose (and subsequently days' supply) for prescription refills using the following methods: Fixed window, fixed tablet, defined daily dose (DDD), and Random Effects Warfarin Days' Supply (REWarDS). Daily dose is the computed dose that the patient takes every day. For medications with fixed dosing (e.g. direct oral anticoagulants) this is known and does not need to be estimated. For medications with varying dose such as warfarin, however, the daily dose should be assumed or estimated to allow measurement of drug exposure. Days’ supply is the number of days that patients’ supply of medication will last after each prescription fill. Estimating days’ supply is necessary to calculate drug exposure. The package computes days’ supply and daily dose at both the prescription and patient levels. Results at the prescription level are denoted with “-Rx-” and those at patient level are denoted with “-Pt-”.
+Depends: R (>= 3.5.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: dplyr, lme4, rlang, magrittr
+NeedsCompilation: no
+Packaged: 2021-04-28 18:41:00 UTC; asafari
+Author: Abdollah Safari [aut, cre],
+  Shahrzad Salmasi [aut],
+  Peter Loewen [aut]
+Repository: CRAN
+Date/Publication: 2021-04-29 07:50:02 UTC

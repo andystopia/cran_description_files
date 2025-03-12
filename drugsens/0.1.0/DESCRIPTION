@@ -1,0 +1,37 @@
+Package: drugsens
+Title: Automated Analysis of 'QuPath' Output Data and Metadata
+        Extraction
+Description: A comprehensive toolkit for analyzing microscopy data output from 'QuPath' software. 
+    Provides functionality for automated data processing, metadata extraction, and statistical 
+    analysis of imaging results. The methodology implemented in this package is based on 
+    Labrosse et al. (2024) <doi:10.1016/j.xpro.2024.103274> "Protocol for quantifying drug 
+    sensitivity in 3D patient-derived ovarian cancer models", which describes the complete 
+    workflow for drug sensitivity analysis in patient-derived cancer models.
+Version: 0.1.0
+BugReports: https://git.scicore.unibas.ch/ovca-research/drugsens/-/issues
+SystemRequirements: QuPath™ 4.0.0 or higher
+Authors@R: c(
+    person("Flavio", "Lombardo", , "flavio.lombardo@unibas.ch", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-4853-6838")),
+    person("Ricardo Coelho", role = c("cph")),   
+    person("Ovarian Cancer Research", role = c("cph")),   
+    person("University of Basel and University Hospital Basel", role = c("cph"))   
+    )
+URL: https://git.scicore.unibas.ch/ovca-research/drugsens/
+Maintainer: Flavio Lombardo <flavio.lombardo@unibas.ch>
+License: MIT + file LICENSE
+Imports: dplyr, ggplot2, ggpubr, knitr, roxygen2, stats, stringr,
+        tidyr, tidyselect, utils, testthat (>= 3.0.0)
+Depends: R (>= 4.2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests:
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-15 21:52:50 UTC; flalom
+Author: Flavio Lombardo [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4853-6838>),
+  Ricardo Coelho [cph],
+  Ovarian Cancer Research [cph],
+  University of Basel and University Hospital Basel [cph]
+Repository: CRAN
+Date/Publication: 2025-01-16 15:10:02 UTC

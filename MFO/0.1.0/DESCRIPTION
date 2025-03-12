@@ -1,0 +1,58 @@
+Package: MFO
+Title: Maximal Fat Oxidation and Kinetics Calculation
+Version: 0.1.0
+Authors@R: 
+    c(person("Jorge R",
+             "Fernandez-Santos",
+             role = c("aut", "cre"),
+             email = "jorgedelrosario.fernandez@uca.es",
+             comment = c(ORCID = "https://orcid.org/0000-0002-5047-2976")),
+      person("Jesus G",
+             "Ponce-Gonzalez",
+             role = "ctb",
+             comment = c(ORCID = "https://orcid.org/0000-0002-5982-7761")),
+      person("Cristina",
+             "Casals",
+             role = "ctb",
+             comment = c(ORCID = "https://orcid.org/0000-0002-6992-0492")),
+      person("Jose L",
+             "Gonzalez-Montesinos",
+             role = "ctb",
+             comment = c(ORCID = "https://orcid.org/0000-0002-6867-7718")),
+      person("Juan",
+             "Corral-Perez",
+             role = "ctb",
+             comment = c(ORCID = "https://orcid.org/0000-0002-6574-9827")),
+      person("Alejandro",
+             "Perez-Bey",
+             role = "ctb",
+             comment = c(ORCID = "https://orcid.org/0000-0002-9849-5544")))
+Description: Calculate the maximal fat oxidation, the exercise intensity that elicits the 
+              maximal fat oxidation and the SIN model to represent the fat oxidation kinetics. 
+              Three variables can be obtained from the SIN model: dilatation, symmetry and translation. 
+              Examples of these methods can be found in Montes de Oca et al (2021) <doi:10.1080/17461391.2020.1788650>
+              and Chenevière et al. (2009) <doi:10.1249/MSS.0b013e31819e2f91>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://github.com/JorgeDelro/MFO
+BugReports: https://github.com/JorgeDelro/MFO/issues
+Imports: stats, dplyr, ggplot2, magrittr, tibble, minpack.lm, openxlsx,
+        readxl, stringr, tidyr
+Depends: R (>= 2.10)
+Suggests: covr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-02-10 18:15:10 UTC; jorge
+Author: Jorge R Fernandez-Santos [aut, cre]
+    (<https://orcid.org/0000-0002-5047-2976>),
+  Jesus G Ponce-Gonzalez [ctb] (<https://orcid.org/0000-0002-5982-7761>),
+  Cristina Casals [ctb] (<https://orcid.org/0000-0002-6992-0492>),
+  Jose L Gonzalez-Montesinos [ctb]
+    (<https://orcid.org/0000-0002-6867-7718>),
+  Juan Corral-Perez [ctb] (<https://orcid.org/0000-0002-6574-9827>),
+  Alejandro Perez-Bey [ctb] (<https://orcid.org/0000-0002-9849-5544>)
+Maintainer: Jorge R Fernandez-Santos <jorgedelrosario.fernandez@uca.es>
+Repository: CRAN
+Date/Publication: 2022-02-11 19:00:13 UTC

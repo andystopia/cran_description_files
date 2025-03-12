@@ -1,0 +1,30 @@
+Package: smartsnp
+Type: Package
+Title: Fast Multivariate Analyses of Big Genomic Data
+Version: 1.1.0
+Date: 2021-03-01
+Authors@R: c(
+    person("Salvador", family = "Herrando-Perez", email = "salherra@gmail.com",
+           role = c("aut"), comment = c(ORCID = "0000-0001-6052-6854")),
+    person("Ray", family = "Tobler", email = "tingalingx@gmail.com",
+           role = c("ctb"), comment = c(ORCID = "0000-0002-4603-1473")),
+    person("Christian", family = "Huber", email = "christian.domitian.huber@gmail.com",
+           role = c("ctb", "cre"), comment = c(ORCID = "0000-0002-2267-2604")))
+Maintainer: Christian Huber <christian.domitian.huber@gmail.com>
+Description: Fast computation of multivariate analyses of small (10s to 100s markers) to big (1000s to 100000s) genotype data. Runs Principal Component Analysis allowing for centering, z-score standardization and scaling for genetic drift, projection of ancient samples to modern genetic space and multivariate tests for differences in group location (Permutation-Based Multivariate Analysis of Variance) and dispersion (Permutation-Based Multivariate Analysis of Dispersion).
+Language: en-GB
+License: MIT + file LICENSE
+Depends: R (>= 3.6.0)
+Imports: bootSVD, data.table, foreach, Rfast, RSpectra, vegan, vroom,
+        Rcpp
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2021-03-03 12:11:40 UTC; christianhuber
+Author: Salvador Herrando-Perez [aut] (<https://orcid.org/0000-0001-6052-6854>),
+  Ray Tobler [ctb] (<https://orcid.org/0000-0002-4603-1473>),
+  Christian Huber [ctb, cre] (<https://orcid.org/0000-0002-2267-2604>)
+Repository: CRAN
+Date/Publication: 2021-03-04 09:50:02 UTC

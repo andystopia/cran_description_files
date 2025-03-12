@@ -1,0 +1,29 @@
+Package: EnvNJ
+Type: Package
+Title: Whole Genome Phylogenies Using Sequence Environments
+Version: 0.1.3
+Authors@R: 
+    person(given = "Juan Carlos",
+           family = "Aledo",
+           role = c("aut", "cre"),
+           email = "caledo@uma.es",
+           comment = c(ORCID = "0000-0002-3497-9945"))
+Description: Contains utilities for the analysis of protein sequences in a phylogenetic context. 
+    Allows   the generation of phylogenetic trees base on protein sequences in an alignment-independent way. 
+    Two different methods have been implemented. One approach is based on the frequency analysis of n-grams, 
+    previously described in Stuart et al. (2002) <doi:10.1093/bioinformatics/18.1.100>. The other approach is based on the species-specific neighborhood preference around amino acids. Features include the conversion of a protein set into a vector 
+    reflecting these neighborhood preferences, pairwise distances (dissimilarity) between these vectors, 
+    and the generation of trees based on these distance matrices.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 4.0.0)
+Imports: ape, bio3d, graphics, phangorn, philentropy, seqinr, stringr
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2021-09-27 10:36:44 UTC; JCA
+Author: Juan Carlos Aledo [aut, cre] (<https://orcid.org/0000-0002-3497-9945>)
+Maintainer: Juan Carlos Aledo <caledo@uma.es>
+Repository: CRAN
+Date/Publication: 2021-09-27 10:50:02 UTC

@@ -1,0 +1,39 @@
+Package: pQTLdata
+Title: A Collection of Proteome Panels and Meta-Data
+Version: 0.5
+Date: 2025-3-5
+Authors@R: c(
+    person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582")),
+    person("Uwe", "Ligges", role = "ctb"),
+    person("Benjamin", "Altmann", role = "ctb")
+    )
+Description: It aggregates protein panel data and metadata for protein quantitative
+ trait locus (pQTL) analysis using 'pQTLtools' (<https://jinghuazhao.github.io/pQTLtools/>).
+ The package includes data from affinity-based panels such as 'Olink' (<https://olink.com/>) 
+ and 'SomaScan' (<https://somalogic.com/>), as well as mass spectrometry-based panels from
+ 'CellCarta' (<https://cellcarta.com/>) and 'Seer' (<https://seer.bio/>). The metadata
+ encompasses updated annotations and publication details.
+License: MIT + file LICENSE
+URL: https://jinghuazhao.github.io/pQTLdata/,
+        https://jinghuazhao.github.io/pQTLdata/
+Depends: R (>= 3.5.0)
+Imports: knitr, Rdpack
+RdMacros: Rdpack
+Suggests: dplyr, grid, EnsDb.Hsapiens.v75, ensembldb, IRanges,
+        org.Hs.eg.db, S4Vectors, VennDiagram
+VignetteBuilder: knitr
+LazyData: Yes
+LazyLoad: Yes
+LazyDataCompression: xz
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Packaged: 2025-03-05 16:14:38 UTC; jhz22
+Author: Jing Hua Zhao [aut, cre] (<https://orcid.org/0000-0002-1463-5870>,
+    0000-0003-4930-3582),
+  Uwe Ligges [ctb],
+  Benjamin Altmann [ctb]
+Maintainer: Jing Hua Zhao <jinghuazhao@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-07 11:30:02 UTC

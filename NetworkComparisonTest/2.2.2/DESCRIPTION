@@ -1,0 +1,40 @@
+Package: NetworkComparisonTest
+Type: Package
+Title: Statistical Comparison of Two Networks Based on Several
+        Invariance Measures
+Version: 2.2.2
+Authors@R: c(
+  person("Claudia", "van Borkulo", role = c("aut")),
+  person("Sacha", "Epskamp",     role = c("aut")),
+  person("Payton", "Jones",      role = c("aut")),
+  person("Jonas", "Haslbeck",    role = c("ctb")),
+  person("Alex", "Millner",      role = c("ctb")),
+  person("Karoline", "Huth",     role = c("ctb")),
+  person("Don", "van den Bergh", role = c("cre"), email = "d.vandenbergh@uva.nl"))
+Maintainer: Don van den Bergh <d.vandenbergh@uva.nl>
+Imports: stats, graphics, utils, Matrix, methods, reshape2, qgraph,
+        networktools, IsingFit
+Suggests: bootnet, IsingSampler, testthat (>= 3.0.0)
+Description: This permutation based hypothesis test, suited for several types of data 
+    supported by the estimateNetwork function of the bootnet package (Epskamp & Fried, 2018), 
+    assesses the difference between two networks based on several invariance measures (network 
+    structure invariance, global strength invariance, edge invariance, several centrality 
+    measures, etc.). Network structures are estimated with l1-regularization. The Network 
+    Comparison Test is suited for comparison of independent (e.g., two different groups) and 
+    dependent samples (e.g., one group that is measured twice). See van Borkulo et al. (2021),
+    available from <doi:10.1037/met0000476>.
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-09-01 13:32:16 UTC; don
+Author: Claudia van Borkulo [aut],
+  Sacha Epskamp [aut],
+  Payton Jones [aut],
+  Jonas Haslbeck [ctb],
+  Alex Millner [ctb],
+  Karoline Huth [ctb],
+  Don van den Bergh [cre]
+Repository: CRAN
+Date/Publication: 2023-09-01 16:00:11 UTC

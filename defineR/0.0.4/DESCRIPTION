@@ -1,0 +1,36 @@
+Package: defineR
+Type: Package
+Title: Creates Define XML Documents
+Version: 0.0.4
+Authors@R: c(
+    person(given = "David",
+           family = "Bosak",
+           role = c("aut", "cre"),
+           email = "dbosak01@gmail.com"),
+    person(given = "Aheer",
+           family = "Alvi",
+           role = c("aut"),
+           email = "aheer.alvi@gmail.com"),
+    person(given = "Jonathan", 
+           family = "Stallings", 
+           role = c("ctb"), 
+           email = "jdstallings@dataindeed.io"))
+Maintainer: David Bosak <dbosak01@gmail.com>
+Description: Creates 'define.xml' documents used for regulatory 
+    submissions based on spreadsheet metadata.  Can also help
+    create metadata and generate HTML data explorer. 
+License: CC0
+Encoding: UTF-8
+Depends: R (>= 3.6.0), common, glue
+Suggests: knitr, rmarkdown, magrittr, testthat (>= 3.0.0),
+Imports: readxl, xml2, xslt, reporter, libr, openxlsx, stats
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-09-19 16:03:00 UTC; dbosa
+Author: David Bosak [aut, cre],
+  Aheer Alvi [aut],
+  Jonathan Stallings [ctb]
+Repository: CRAN
+Date/Publication: 2022-09-20 08:26:07 UTC

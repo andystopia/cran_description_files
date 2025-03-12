@@ -1,0 +1,62 @@
+Package: pacta.multi.loanbook
+Title: Run 'PACTA' on Multiple Loan Books Easily
+Version: 0.1.1
+Authors@R: 
+    c(
+      person(
+        given = "Jacob",
+        family = "Kastl",
+        role = c("aut", "cre", "ctr"),
+        email = "jacob.kastl@gmail.com",
+        comment = c(ORCID = "0009-0000-8281-8129")
+      ),
+      person(
+        given = "CJ",
+        family = "Yetman",
+        role = c("aut", "ctr"),
+        email = "cj@cjyetman.com",
+        comment = c(ORCID = "0000-0001-5099-9500")
+      ),
+      person(
+        given = "Monika",
+        family = "Furdyna",
+        role = c("aut", "ctr"),
+        email = "monika.furdyna@gmail.com",
+        comment = c(ORCID = "0000-0002-3728-0646")
+      ),
+      person(
+        given = "RMI",
+        role = c("cph", "fnd"),
+        email = "PACTA4supervisors@rmi.org"
+      )
+    )
+Description: Run Paris Agreement Capital Transition Assessment ('PACTA') analyses
+    on multiple loan books in a structured way. Provides access to standard
+    'PACTA' metrics and additional 'PACTA'-related metrics for multiple loan books.
+    Results take the form of 'csv' files and plots and are exported to
+    user-specified project paths.
+Encoding: UTF-8
+Imports: cli (>= 3.2.0), config, dplyr, ggalluvial, ggplot2, ggrepel,
+        glue, r2dii.analysis (>= 0.3.0), r2dii.data (>= 0.5.0),
+        r2dii.match (>= 0.3.0), r2dii.plot (>= 0.4.0), readr (>=
+        2.0.0), readxl, rlang, scales, tidyr, yaml, yesno
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
+RoxygenNote: 7.3.2
+Suggests: DiagrammeR, gt, knitr, pkgdown, rmarkdown, usethis, testthat
+        (>= 3.1.9), tibble, withr, writexl
+Config/testthat/edition: 3
+Config/Needs/website: rmi-pacta/pacta.pkgdown.rmitemplate
+VignetteBuilder: knitr
+URL: https://rmi-pacta.github.io/pacta.multi.loanbook/,
+        https://github.com/RMI-PACTA/pacta.multi.loanbook/
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-01-08 13:47:09 UTC; jkastl
+Author: Jacob Kastl [aut, cre, ctr] (<https://orcid.org/0009-0000-8281-8129>),
+  CJ Yetman [aut, ctr] (<https://orcid.org/0000-0001-5099-9500>),
+  Monika Furdyna [aut, ctr] (<https://orcid.org/0000-0002-3728-0646>),
+  RMI [cph, fnd]
+Maintainer: Jacob Kastl <jacob.kastl@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-09 14:00:01 UTC

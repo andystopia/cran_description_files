@@ -1,0 +1,46 @@
+Package: ctrdata
+Type: Package
+Title: Retrieve and Analyze Clinical Trials in Public Registers
+Version: 1.21.0
+Imports: jsonlite, httr, curl (>= 5.1.0), clipr, xml2, nodbi (>=
+        0.10.7), stringi, lubridate, jqr, dplyr, zip, V8, readr,
+        digest, rlang, countrycode, htmlwidgets, tibble, stringdist,
+        tidyr
+URL: https://cran.r-project.org/package=ctrdata,
+        https://rfhb.github.io/ctrdata/
+BugReports: https://github.com/rfhb/ctrdata/issues
+Description: A system for querying, retrieving and analyzing
+        protocol- and results-related information on clinical trials from
+        four public registers, the 'European Union Clinical Trials Register'
+        ('EUCTR', <https://www.clinicaltrialsregister.eu/>), 
+        'ClinicalTrials.gov' (<https://clinicaltrials.gov/> and also 
+        translating queries the retired classic interface), the 
+        'ISRCTN' (<http://www.isrctn.com/>) and the
+        'European Union Clinical Trials Information System'
+        ('CTIS', <https://euclinicaltrials.eu/>). 
+        Trial information is downloaded, converted and stored in a database 
+        ('PostgreSQL', 'SQLite', 'DuckDB' or 'MongoDB'; via package 'nodbi'). 
+        Documents in registers associated with trials can also be downloaded. 
+        Other functions implement trial concepts canonically across registers,
+        identify deduplicated records, easily find and extract variables 
+        (fields) of interest even from complex nested data as used by the 
+        registers, merge variables and update queries. 
+        The package can be used for meta-analysis and trend-analysis of
+        the design and conduct as well as of the results of clinical trials 
+        across registers.
+License: MIT + file LICENSE
+RoxygenNote: 7.3.2
+Suggests: devtools, knitr, rmarkdown, RSQLite, mongolite, tinytest (>=
+        1.2.1), RPostgres, duckdb
+VignetteBuilder: knitr
+NeedsCompilation: no
+Encoding: UTF-8
+Authors@R: person(given = "Ralf", family = "Herold", role = c("aut", "cre"),
+        email = "ralf.herold@mailbox.org", comment = c(ORCID =
+        "0000-0002-8148-6748"))
+Language: en-GB
+Packaged: 2025-03-09 21:40:08 UTC; ralfherold
+Author: Ralf Herold [aut, cre] (<https://orcid.org/0000-0002-8148-6748>)
+Maintainer: Ralf Herold <ralf.herold@mailbox.org>
+Repository: CRAN
+Date/Publication: 2025-03-09 21:50:02 UTC

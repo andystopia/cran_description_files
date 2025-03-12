@@ -1,0 +1,28 @@
+Package: tfdeploy
+Type: Package
+Title: Deploy 'TensorFlow' Models
+Version: 0.6.1
+Authors@R: c(
+    person("Javier", "Luraschi", email = "javier@rstudio.com", role = c("aut", "ctb")),
+    person("Daniel", "Falbel", email = "daniel@rstudio.com", role = c("cre", "ctb")),
+    person(family = "RStudio", role = c("cph"))
+  )
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Description: Tools to deploy 'TensorFlow' <https://www.tensorflow.org/> models across 
+  multiple services. Currently, it provides a local server for testing 'cloudml' 
+  compatible services.
+License: Apache License 2.0
+Encoding: UTF-8
+LazyData: true
+Imports: httpuv, httr, jsonlite, magrittr, reticulate, swagger,
+        tensorflow
+Suggests: cloudml, knitr, pixels, processx, testthat, yaml, stringr
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-06-13 18:26:35 UTC; dfalbel
+Author: Javier Luraschi [aut, ctb],
+  Daniel Falbel [cre, ctb],
+  RStudio [cph]
+Repository: CRAN
+Date/Publication: 2019-06-14 16:30:03 UTC

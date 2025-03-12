@@ -1,0 +1,31 @@
+Package: dupiR
+Type: Package
+Title: Bayesian Inference from Count Data using Discrete Uniform Priors
+Version: 1.2.1
+Date: 2024-03-17
+Depends: R (>= 2.15.1), methods
+Authors@R: 
+    c(person(given = "Federico",
+           family = "Comoglio",
+           role = c("aut", "cre"),
+           email = "federico.comoglio@gmail.com"),
+    person(given = "Maurizio",
+           family = "Rinaldi",
+           role = c("aut"),
+           email = "maurizio.rinaldi@uniupo.it")
+    )
+Author: Federico Comoglio [aut, cre],
+  Maurizio Rinaldi [aut]
+Maintainer: Federico Comoglio <federico.comoglio@gmail.com>
+Description: We consider a set of sample counts obtained by sampling arbitrary fractions of a finite volume containing an homogeneously dispersed population of identical objects. This package implements a Bayesian derivation of the posterior probability distribution of the population size using a binomial likelihood and non-conjugate, discrete uniform priors under sampling with or without replacement. This can be used for a variety of statistical problems involving absolute quantification under uncertainty. See Comoglio et al. (2013) <doi:10.1371/journal.pone.0074388>.
+License: GPL-2
+LazyLoad: yes
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: graphics, plotrix, stats, utils
+NeedsCompilation: no
+Packaged: 2024-03-20 08:27:37 UTC; federicocomoglio
+Repository: CRAN
+Date/Publication: 2024-03-21 16:20:05 UTC

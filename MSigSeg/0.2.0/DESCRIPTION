@@ -1,0 +1,27 @@
+Package: MSigSeg
+Type: Package
+Title: Multiple SIGnal SEGmentation
+Version: 0.2.0
+Authors@R: c(person("Xuanyu", "Liu", role = c("aut", "cre"), email = "lxy382198251@stu.xjtu.edu.cn"), person("Junbo", "Duan", role = "aut", email = "junbo.duan@xjtu.edu.cn"))
+Description: Traditional methods typically detect breakpoints from individual signals, which means that when applied separately to multiple signals, the breakpoints are not aligned. 
+    However, this package implements a common breakpoint detection approach for multiple piecewise constant signals, resulting in increased detection sensitivity and specificity. 
+    By employing various techniques, optimal performance is ensured, and computation is accelerated. We hope that this package will be beneficial for researchers in signal processing, bioinformatics, economy, and other related fields.
+    The segmentation(), lambda_estimator() functions are the main functions of this package.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Collate: 'MSigSeg_Class.R' 'allGenerics.R' 'brkps_method.R' 'change.R'
+        'data.R' 'data.input_method.R' 'data.output_method.R'
+        'funtion_colsum_colmean.R' 'lambda_estimator.R'
+        'lambda_method.R' 'multi_plot.R' 'noisegen.R' 'print_method.R'
+        'seg.len_method.R' 'segmentation.R' 'summary_method.R'
+Depends: R (>= 4.0.0), methods
+Imports: MASS, ggpubr, ggplot2
+NeedsCompilation: no
+Packaged: 2023-11-13 13:02:43 UTC; lxy123
+Author: Xuanyu Liu [aut, cre],
+  Junbo Duan [aut]
+Maintainer: Xuanyu Liu <lxy382198251@stu.xjtu.edu.cn>
+Repository: CRAN
+Date/Publication: 2023-11-13 15:03:21 UTC

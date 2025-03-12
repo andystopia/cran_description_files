@@ -1,0 +1,80 @@
+Package: SpatFD
+Type: Package
+Title: Functional Geostatistics: Univariate and Multivariate Functional
+        Spatial Prediction
+Version: 0.0.1
+Date: 2024-06-18
+Authors@R: c(person(given = c("Martha","Patricia"),
+       family = "Bohorquez Castañeda",
+       role = c("aut","cre"), 
+       email = "mpbohorquezc@unal.edu.co"),
+       person(given = c("Diego","Alejandro"),
+       family = "Sandoval Skinner",
+       role = c("aut"), 
+       email = "diasandovalsk@unal.edu.co"),
+       person(given = "Angie",
+       family = "Villamil",
+       role = c("aut"), 
+       email = "acvillamils@unal.edu.co"),
+       person(given = c("Samuel","Hernando"),
+       family = "Sanchez Gutierrez",
+       role = c("aut"), 
+       email = "ssanchezgu@unal.edu.co"),
+       person(given = "Nathaly",
+       family = "Vergel Serrano",
+       role = c("ctb"), 
+       email = "nvergel@unal.edu.co"),
+       person(given = c("Miguel","Angel"),
+       family = "Munoz Layton",
+       role = c("ctb"), 
+       email = "mmunozl@unal.edu.co"),
+       person(given = "Valeria",
+       family = "Bejarano Salcedo",
+       role = c("ctb"), 
+       email = "vbejaranos@unal.edu.co"),
+       person(given = c("Venus","Celeste"),
+       family = "Puertas",
+       role = c("ctb"), 
+       email = "vpuertasg@unal.edu.co"),
+       person(given = c("Ruben","Dario"),
+       family = "Guevara Gonzalez",
+       role = c("aut"), 
+       email = "rdguevarag@unal.edu.co"),
+       person(given = c("Joan","Nicolas"),
+       family = "Castro Cortes",
+       role = c("ctb"), 
+       email = "jocastroc@unal.edu.co"),
+       person(given = "Ramon",
+       family = "Giraldo Henao",
+       role = c("aut"), 
+       email = "rgiraldoh@unal.edu.co"),
+       person(given = "Jorge",
+       family = "Mateu",
+       role = c("aut"), 
+       email = "mateu@mat.uji.es")
+       )
+Depends: R (>= 3.6.0)
+Description: Performance of functional kriging, cokriging, optimal sampling and simulation for spatial prediction of functional data. The framework of spatial prediction, optimal sampling and simulation are extended from scalar to functional data. 'SpatFD' is based on the Karhunen-Loève expansion that allows to represent the observed functions in terms of its empirical functional principal components. Based on this approach, the functional auto-covariances and cross-covariances required for  spatial functional predictions and optimal sampling, are completely determined by the sum of the spatial auto-covariances and cross-covariances of the respective score components. The package provides new classes of data and functions for modeling spatial dependence structure among curves. The spatial prediction of curves at unsampled locations can be carried out using two types of predictors, and both of them report, the respective variances of the prediction error. In addition, there is a function for the determination of spatial locations sampling configuration that ensures minimum variance of spatial functional prediction. There are also two functions for plotting predicted curves at each location and mapping the surface at each time point, respectively. References Bohorquez, M., Giraldo, R., and Mateu, J. (2016) <doi:10.1007/s10260-015-0340-9>, Bohorquez, M., Giraldo, R., and Mateu, J. (2016) <doi:10.1007/s00477-016-1266-y>, Bohorquez M., Giraldo R. and Mateu J. (2021) <doi:10.1002/9781119387916>.
+License: GPL-3
+Encoding: UTF-8
+Imports:
+        ggplot2,plotly,dplyr,utils,stats,proxy,reshape,gstat,sp,fda,sf,MASS,methods,geoR,tidyr,fda.usc
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-06-20 15:48:43 UTC; val
+Author: Martha Patricia Bohorquez Castañeda [aut, cre],
+  Diego Alejandro Sandoval Skinner [aut],
+  Angie Villamil [aut],
+  Samuel Hernando Sanchez Gutierrez [aut],
+  Nathaly Vergel Serrano [ctb],
+  Miguel Angel Munoz Layton [ctb],
+  Valeria Bejarano Salcedo [ctb],
+  Venus Celeste Puertas [ctb],
+  Ruben Dario Guevara Gonzalez [aut],
+  Joan Nicolas Castro Cortes [ctb],
+  Ramon Giraldo Henao [aut],
+  Jorge Mateu [aut]
+Maintainer: Martha Patricia Bohorquez Castañeda <mpbohorquezc@unal.edu.co>
+Repository: CRAN
+Date/Publication: 2024-06-21 10:10:02 UTC

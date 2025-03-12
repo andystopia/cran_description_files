@@ -1,0 +1,47 @@
+Package: SPIChanges
+Title: Improves the Interpretation of the Standardized Precipitation
+        Index Under Changing Climate Conditions
+Version: 0.1.0
+Authors@R: c(
+    person("Gabriel Constantino", "Blain", , "gabriel.blain@sp.gov.br", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8832-7734")),
+    person("Graciela R.", "Sobierajski", role = "aut",
+           comment = c(ORCID = "0000-0002-7211-9268")),
+    person("Leticia L.", "Martins", role = "aut",
+           comment = c(ORCID = "0000-0002-0299-3005")),
+    person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-0061-8359"))
+  )
+Description: Improves the interpretation of the Standardized Precipitation
+    Index under changing climate conditions. The package uses the
+    nonstationary approach proposed in Blain et al. (2022)
+    <doi:10.1002/joc.7550> to detect trends in rainfall quantities and to
+    quantify the effect of such trends on the probability of a drought event
+    occurring.
+License: MIT + file LICENSE
+URL: https://github.com/gabrielblain/SPIChanges
+BugReports: https://github.com/gabrielblain/SPIChanges/issues
+Depends: R (>= 2.10)
+Imports: gamlss, gamlss.dist, lubridate, MuMIn, rlang, spsUtil, stats,
+        brglm2, zoo
+Suggests: archive, curl, doParallel, dplyr, foreach, ggplot2, grid,
+        knitr, ncdf4, patchwork, RColorBrewer, rmarkdown, roxyglobals,
+        sf, purrr, testthat (>= 3.0.0), tidyr
+VignetteBuilder: knitr
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-02-04 18:56:44 UTC; Gabriel
+Author: Gabriel Constantino Blain [aut, cre]
+    (<https://orcid.org/0000-0001-8832-7734>),
+  Graciela R. Sobierajski [aut] (<https://orcid.org/0000-0002-7211-9268>),
+  Leticia L. Martins [aut] (<https://orcid.org/0000-0002-0299-3005>),
+  Adam H. Sparks [aut] (<https://orcid.org/0000-0002-0061-8359>)
+Maintainer: Gabriel Constantino Blain <gabriel.blain@sp.gov.br>
+Repository: CRAN
+Date/Publication: 2025-02-05 18:10:08 UTC

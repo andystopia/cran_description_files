@@ -1,0 +1,44 @@
+Type: Package
+Package: himach
+Title: High Mach Finds Routes for Supersonic Aircraft
+Version: 0.3.2
+Authors@R: 
+    c(person(given = "David",
+           family = "Marsh",
+           role = c("aut", "cre"),
+           email = "david6marsh@gmail.com"),
+    person(given = "Enrico",
+           family = "Spinielli",
+           role = c("ctb"),
+           email = "enrico.spinielli@eurocontrol.int"),
+    person(family = "EUROCONTROL",
+    role = c("fnd", "cph")))
+Description: For supersonic aircraft, flying subsonic over land,
+    find the best route between airports. Allow for coastal buffer and
+    potentially closed regions. Use a minimal model of aircraft
+    performance: the focus is on time saved versus subsonic flight, rather
+    than on vertical flight profile. For modelling and forecasting, not for planning your
+    flight!
+License: MIT + file LICENSE
+URL: https://github.com/david6marsh/himach
+BugReports: https://github.com/david6marsh/himach/issues
+Depends: R (>= 3.5.0)
+Imports: cppRouting, data.table, dplyr (>= 1.0.0), geosphere, ggplot2,
+        lwgeom, methods, purrr, s2, sf (>= 1.0), tidyr
+Suggests: airportr, cowplot, knitr, progress, rmarkdown,
+        rnaturalearthdata, scales, stringr, testthat (>= 3.0), units,
+        utils, viridis, covr, spelling
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Language: en-GB
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-20 07:24:16 UTC; david
+Author: David Marsh [aut, cre],
+  Enrico Spinielli [ctb],
+  EUROCONTROL [fnd, cph]
+Maintainer: David Marsh <david6marsh@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-20 07:40:02 UTC

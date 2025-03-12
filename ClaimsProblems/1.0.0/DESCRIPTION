@@ -1,0 +1,63 @@
+Type: Package
+Package: ClaimsProblems
+Title: Analysis of Conflicting Claims
+Version: 1.0.0
+Maintainer: Estela Sánchez Rodríguez <esanchez@uvigo.es>
+Authors@R: c(
+    person(given ="Estela", family="Sánchez Rodríguez", role = c("cre", "aut"), email= "esanchez@uvigo.es",
+           comment = c(ORCID = "0000-0002-0933-6411","SiDOR. Departamento de Estatística e Investigación Operativa. Universidade de Vigo. CITMAga. Spain")),
+    person(given="Iago", family="Núñez Lugilde", role = "aut", email="iago.nunez.lugilde@udc.es",
+           comment = c(ORCID="0000-0003-3382-0737", "Departamento de Matemáticas. MODES. Universidade da Coruña. Spain")),
+    person(given="Miguel Ángel", family="Mirás Calvo", role = "aut", email= "mmiras@uvigo.es",
+           comment = c(ORCID="0000-0001-7247-1926", "RGEAF. Departamento de Matemáticas. Universidade de Vigo. Spain")),
+    person(given="Carmen", family="Quinteiro Sandomingo", role = "aut", email= "quinteir@uvigo.gal",
+           comment = c(ORCID="0000-0002-2711-1945", "Departamento de Matemáticas. Universidade de Vigo. Spain")),
+    person("MCIN/AEI/10.13039/501100011033", role = "fnd",
+           comment = c("Project PID2021-124030NB-C33. ERDF A way of making Europe/EU"))
+  )
+Description: The analysis of conflicting claims arises when an amount has
+    to be divided among a set of agents with claims that exceed what is
+    available. A rule is a way of selecting a division among the
+    claimants. This package computes the main rules introduced in the
+    literature from ancient times to the present. The inventory of rules
+    covers the proportional and the adjusted proportional rules, the
+    constrained equal awards and the constrained equal losses rules, the
+    constrained egalitarian, the Piniles’ and the minimal overlap rules,
+    the random arrival and the Talmud rules. Besides, the Dominguez and
+    Thomson and the average-of-awards rules are also included.  All of
+    them can be found in the book by W. Thomson (2019), How to divide when
+    there isn't enough. From Aristotle, the Talmud, and Maimonides to the
+    axiomatics of resource allocation', except for the average-of-awards
+    rule, introduced by Mirás Calvo et al. (2022),
+    <doi:10.1007/s00355-022-01414-6>.  In addition, graphical diagrams
+    allow the user to represent, among others, the set of awards, the
+    paths of awards, the schedules of awards of a rule, and some indexes.
+    A good understanding of the similarities and differences between the
+    rules is useful for better decision-making. Therefore, this package
+    could be helpful to students, researchers, and managers alike.  For a
+    more detailed explanation of the package, see Mirás Calvo et al.
+    (2023), <doi:10.1016/j.dajour.2022.100160>.
+License: GPL-3
+Depends: R (>= 2.10)
+Imports: geometry, pracma, rgl
+Encoding: UTF-8
+LazyData: True
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-03-07 08:25:33 UTC; esanc
+Author: Estela Sánchez Rodríguez [cre, aut]
+    (<https://orcid.org/0000-0002-0933-6411>, SiDOR. Departamento de
+    Estatística e Investigación Operativa. Universidade de Vigo.
+    CITMAga. Spain),
+  Iago Núñez Lugilde [aut] (<https://orcid.org/0000-0003-3382-0737>,
+    Departamento de Matemáticas. MODES. Universidade da Coruña. Spain),
+  Miguel Ángel Mirás Calvo [aut]
+    (<https://orcid.org/0000-0001-7247-1926>, RGEAF. Departamento de
+    Matemáticas. Universidade de Vigo. Spain),
+  Carmen Quinteiro Sandomingo [aut]
+    (<https://orcid.org/0000-0002-2711-1945>, Departamento de
+    Matemáticas. Universidade de Vigo. Spain),
+  MCIN/AEI/10.13039/501100011033 [fnd] (Project PID2021-124030NB-C33.
+    ERDF A way of making Europe/EU)
+Repository: CRAN
+Date/Publication: 2025-03-07 11:20:11 UTC

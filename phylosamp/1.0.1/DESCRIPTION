@@ -1,0 +1,36 @@
+Package: phylosamp
+Type: Package
+Title: Sample Size Calculations for Molecular and Phylogenetic Studies
+Version: 1.0.1
+Date: 2023-04-25
+Authors@R: c(person("Shirlee", "Wohl", role=c("aut", "ctb"), email="swohl@scripps.edu"),
+              person("Elizabeth C", "Lee", role=c("aut", "ctb"), email="elizabeth.c.lee@jhu.edu"),
+              person("Lucy", "D'Agostino McGowan", role=c("aut", "ctb"), email = "lucydagostino@gmail.com", 
+              comment = c(ORCID = "0000-0002-6983-2759")),
+              person("John R", "Giles", role=c("aut", "ctb"), email="jrgiles@uw.edu"),
+              person("Justin", "Lessler", role=c("aut", "cre"), email="jlessler@unc.edu"))
+Maintainer: Justin Lessler <jlessler@unc.edu>
+Description: Implements novel tools for estimating sample sizes needed for phylogenetic studies, including
+    studies focused on estimating the probability of true pathogen transmission between two cases given phylogenetic linkage and studies focused on tracking pathogen variants at a population level. Methods described in Wohl, Giles, and Lessler (2021) and in Wohl, Lee, DiPrete, and Lessler (2023).
+License: GPL-2
+URL: https://github.com/HopkinsIDD/phylosamp
+BugReports: https://github.com/HopkinsIDD/phylosamp/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10), stats
+Imports: cli, lifecycle, rlang
+Suggests: cowplot, ggplot2, knitr, purrr, RColorBrewer, reshape2,
+        rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-05-23 21:59:22 UTC; swohl
+Author: Shirlee Wohl [aut, ctb],
+  Elizabeth C Lee [aut, ctb],
+  Lucy D'Agostino McGowan [aut, ctb]
+    (<https://orcid.org/0000-0002-6983-2759>),
+  John R Giles [aut, ctb],
+  Justin Lessler [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-05-23 23:12:10 UTC

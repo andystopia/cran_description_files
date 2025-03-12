@@ -1,0 +1,32 @@
+Package: rafsi
+Type: Package
+Title: Ranking of Alternatives with the RAFSI Method
+Version: 0.0.2
+Authors@R: c( person("Mateus", "Vanzetta", email = "mateusvanzetta@id.uff.br", role = c("aut", "cre")),
+    person("Marcos", "Santos", email = "marcosdossantos@ime.eb.br", role = c("ctb"), comment = c(ORCID = "0000-0003-1533-5535"))
+  )
+Description: Ranking of Alternatives through Functional mapping of criterion sub-intervals into a Single Interval Method is designed to perform multi-criteria decision-making (MCDM), developed by Mališa Žižovic in 2020 (<doi:10.3390/math8061015>). 
+              It calculates the final sorted rankings based on a decision matrix where rows represent alternatives 
+              and columns represent criteria. The method uses:
+              - A numeric vector of weights for each criterion (the sum of weights must be 1).
+              - A numeric vector of ideal values for each criterion.
+              - A numeric vector of anti-ideal values for each criterion.
+              - Numeric values representing the extent to which the ideal value is preferred over the anti-ideal value, 
+                and the extent to which the anti-ideal value is considered worse.
+              The function standardizes the decision matrix, normalizes the data, applies weights, and returns the 
+              final sorted rankings. 
+Language: en-US
+Depends: R (>= 4.2.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-23 18:14:41 UTC; Usuario
+Author: Mateus Vanzetta [aut, cre],
+  Marcos Santos [ctb] (<https://orcid.org/0000-0003-1533-5535>)
+Maintainer: Mateus Vanzetta <mateusvanzetta@id.uff.br>
+Repository: CRAN
+Date/Publication: 2024-09-25 08:10:02 UTC

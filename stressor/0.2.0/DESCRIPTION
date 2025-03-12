@@ -1,0 +1,41 @@
+Package: stressor
+Type: Package
+Title: Algorithms for Testing Models under Stress
+Version: 0.2.0
+Authors@R: c(
+    person("Sam", "Haycock", email = "haycock.sam@outlook.com",
+    role = c("aut", "cre")),
+    person("Brennan", "Bean", email = "brennan.bean@usu.edu", 
+    role = c("aut")),
+    person("Utah State University", role = c("cph", "fnd")),
+    person("Thermo Fisher Scientific", "Inc.", role = c("fnd"))
+  )
+Description: Traditional model evaluation metrics fail to capture model 
+    performance under less than ideal conditions. This package employs 
+    techniques to evaluate models "under-stress". This includes testing 
+    models' extrapolation ability, or testing accuracy on specific 
+    sub-samples of the overall model space. Details describing stress-testing 
+    methods in this package are provided in 
+    Haycock (2023) <doi:10.26076/2am5-9f67>. The other primary contribution of
+    this package is provided to R users access to the 'Python' library 'PyCaret'
+    <https://pycaret.org/> for quick and easy access to auto-tuned 
+    machine learning models. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+SystemRequirements: python(>=3.8.10)
+Suggests: knitr, rmarkdown, ggplot2, mlbench, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: reticulate, stats, dplyr
+VignetteBuilder: knitr
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Packaged: 2024-05-01 02:41:58 UTC; 14357
+Author: Sam Haycock [aut, cre],
+  Brennan Bean [aut],
+  Utah State University [cph, fnd],
+  Thermo Fisher Scientific Inc. [fnd]
+Maintainer: Sam Haycock <haycock.sam@outlook.com>
+Repository: CRAN
+Date/Publication: 2024-05-01 04:00:03 UTC

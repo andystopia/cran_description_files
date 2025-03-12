@@ -1,0 +1,31 @@
+Package: circhelp
+Type: Package
+Title: Circular Analyses Helper Functions
+Version: 1.1
+Authors@R: c(person("Andrey", "Chetverikov", email = "andrey.chetverikov@uib.no",
+  comment = c(ORCID = "0000-0003-2767-6310"), role = c("aut", "cre")),
+  person("Eline", "Van Geert", email = "eline.vangeert@kuleuven.be",
+  comment = c(ORCID = "0000-0002-7848-5998"),
+  role = c("ctb")))
+Description: Light-weight functions for computing descriptive statistics in different circular spaces (e.g., 2pi, 180, or 360 degrees), to handle angle-dependent biases, pad circular data, and more. Specifically aimed for psychologists and neuroscientists analyzing circular data. Basic methods are based on Jammalamadaka and SenGupta (2001) <doi:10.1142/4031>, removal of cardinal biases is based on the approach introduced in van Bergen, Ma, Pratte, & Jehee (2015) <doi:10.1038/nn.4150> and Chetverikov and Jehee (2023) <doi:10.1038/s41467-023-43251-w>.
+URL: https://achetverikov.github.io/circhelp/index.html,
+        https://github.com/achetverikov/circhelp
+BugReports: https://github.com/achetverikov/circhelp/issues
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 3.0.0), circular, knitr, rmarkdown, BAMBI, mgcv,
+        ragg
+Imports: gamlss, MASS, mathjaxr, patchwork
+Depends: stats, data.table, ggplot2, R (>= 2.10)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr, patchwork, ggplot2, MASS, gamlss, mgcv, ragg
+RdMacros: mathjaxr
+NeedsCompilation: no
+Packaged: 2024-07-04 11:36:14 UTC; anche7026
+Author: Andrey Chetverikov [aut, cre] (<https://orcid.org/0000-0003-2767-6310>),
+  Eline Van Geert [ctb] (<https://orcid.org/0000-0002-7848-5998>)
+Maintainer: Andrey Chetverikov <andrey.chetverikov@uib.no>
+Repository: CRAN
+Date/Publication: 2024-07-04 17:10:02 UTC

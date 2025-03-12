@@ -1,0 +1,24 @@
+Package: mig
+Type: Package
+Title: Multivariate Inverse Gaussian Distribution
+Version: 1.0
+Authors@R: c(person(given="Frederic", family="Ouimet", email = "frederic.ouimet.23@gmail.com", role = "aut", comment = c(ORCID = "0000-0001-7933-5265")),
+             person(given="Leo", family="Belzile", role = c("aut", "cre"), email = "belzilel@gmail.com", comment = c(ORCID = "0000-0002-9135-014X")))
+Description: Provides utilities for estimation for the multivariate inverse Gaussian distribution of Minami (2003) <doi:10.1081/STA-120025379>, including random vector generation and explicit estimators of the location vector and scale matrix. The package implements kernel density estimators discussed in Belzile, Desgagnes, Genest and Ouimet (2024) <doi:10.48550/arXiv.2209.04757> for smoothing multivariate data on half-spaces.
+BugReports: https://github.com/lbelzile/mig/issues
+Imports: statmod, TruncatedNormal (>= 2.3), Rcpp (>= 1.0.12)
+Depends: R (>= 2.10)
+Suggests: numDeriv, tinytest, knitr, rmarkdown, minqa
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+LazyData: true
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-07-12 13:32:47 UTC; lbelzile
+Author: Frederic Ouimet [aut] (<https://orcid.org/0000-0001-7933-5265>),
+  Leo Belzile [aut, cre] (<https://orcid.org/0000-0002-9135-014X>)
+Maintainer: Leo Belzile <belzilel@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-14 12:30:02 UTC

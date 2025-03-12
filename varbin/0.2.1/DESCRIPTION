@@ -1,0 +1,28 @@
+Package: varbin
+Type: Package
+Title: Optimal Binning of Continuous and Categorical Variables
+Version: 0.2.1
+Date: 2018-09-21
+Author: Daniel Safai
+Maintainer: Daniel Safai <danielsafai@gmail.com>
+Description: Tool for easy and efficient discretization of continuous and categorical data. 
+    The package calculates the most optimal binning of a given explanatory variable with respect to a 
+    user-specified target variable. The purpose is to assign a unique Weight-of-Evidence value 
+    to each of the calculated binpoints in order to recode the original variable. 
+    The package allows users to impose certain restrictions on the functional form on the resulting 
+    binning while maximizing the overall information value in the original data. 
+    The package is well suited for logistic scoring models where input variables may be subject to 
+    restrictions such as linearity by e.g. regulatory authorities. An excellent source describing in 
+    detail the development of scorecards, and the role of Weight-of-Evidence coding in credit scoring 
+    is (Siddiqi 2006, ISBN: 978–0-471–75451–0). The package utilizes the discrete nature of decision trees and 
+    Isotonic Regression to accommodate the trade-off between flexible functional forms and maximum 
+    information value.
+License: GPL (>= 2)
+Imports: rpart
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-10-02 12:56:54 UTC; danielsafai
+Repository: CRAN
+Date/Publication: 2018-10-12 13:50:03 UTC

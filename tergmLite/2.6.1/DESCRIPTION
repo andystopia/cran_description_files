@@ -1,0 +1,29 @@
+Package: tergmLite
+Version: 2.6.1
+Date: 2022-07-20
+Title: Fast Simulation of Simple Temporal Exponential Random Graph
+        Models
+Authors@R: c(person("Samuel M.", "Jenness",
+                    role = c("aut", "cre"),
+                    email = "samuel.m.jenness@emory.edu"), 
+             person("Chad", "Klumb",
+                    role = "aut", 
+                    email = "cklumb@gmail.com"))
+Description: Provides functions for the computationally efficient simulation of 
+    dynamic networks estimated with the statistical framework of temporal 
+    exponential random graph models, implemented in the 'tergm' package.
+Depends: R (>= 3.5), ergm (>= 4.0), tergm (>= 4.0)
+License: GPL-3
+Imports: statnet.common (>= 4.4.0), network (>= 1.17.0), networkDynamic
+        (>= 0.11.0), Rcpp, tibble, methods
+Suggests: testthat, EpiModel (>= 2.0.5)
+LinkingTo: Rcpp, ergm
+RoxygenNote: 7.2.0
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2022-07-20 15:04:46 UTC; sjennes
+Author: Samuel M. Jenness [aut, cre],
+  Chad Klumb [aut]
+Maintainer: Samuel M. Jenness <samuel.m.jenness@emory.edu>
+Repository: CRAN
+Date/Publication: 2022-07-20 15:20:02 UTC

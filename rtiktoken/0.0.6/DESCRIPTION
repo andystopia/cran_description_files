@@ -1,0 +1,29 @@
+Package: rtiktoken
+Title: A Byte-Pair-Encoding (BPE) Tokenizer for OpenAI's Large Language
+        Models
+Version: 0.0.6
+Authors@R: c(
+    person("David", "Zimmermann-Kollenda", , "david_j_zimmermann@hotmail.com", role = c("aut", "cre")),
+    person("Roger Zurawicki", role = "aut", comment = "tiktoken-rs Rust library"),
+    person("Authors of the dependent Rust crates", role = "aut", comment = "see AUTHORS file")
+  )
+Description: A thin wrapper around the tiktoken-rs crate, allowing to encode text into Byte-Pair-Encoding (BPE) tokens and decode tokens back to text. This is useful to understand how Large Language Models (LLMs) perceive text. 
+License: MIT + file LICENSE
+URL: https://davzim.github.io/rtiktoken/,
+        https://github.com/DavZim/rtiktoken/
+BugReports: https://github.com/DavZim/rtiktoken/issues
+Suggests: testthat (>= 3.0.0)
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.65.0
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/rextendr/version: 0.3.1
+Config/testthat/edition: 3
+Config/rtiktoken/MSRV: 1.65.0
+NeedsCompilation: yes
+Packaged: 2024-11-04 12:18:08 UTC; dazimme
+Author: David Zimmermann-Kollenda [aut, cre],
+  Roger Zurawicki [aut] (tiktoken-rs Rust library),
+  Authors of the dependent Rust crates [aut] (see AUTHORS file)
+Maintainer: David Zimmermann-Kollenda <david_j_zimmermann@hotmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-06 15:40:02 UTC

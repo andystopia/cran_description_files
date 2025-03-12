@@ -1,0 +1,41 @@
+Package: mcmcsae
+Version: 0.7.8
+Authors@R: c(
+  person("Harm Jan", "Boonstra", email="hjboonstra@gmail.com", role=c("aut", "cre")),
+  person("Grzegorz", "Baltissen", role="ctb"))
+License: GPL-3
+Title: Markov Chain Monte Carlo Small Area Estimation
+Type: Package
+LazyLoad: yes
+Encoding: UTF-8
+Description: Fit multi-level models with possibly correlated
+    random effects using Markov Chain Monte Carlo simulation.
+    Such models allow smoothing over space and time and are useful in,
+    for example, small area estimation.
+Date: 2024-12-05
+Depends: R (>= 4.1.0)
+Imports: Matrix (>= 1.5.0), Rcpp (>= 0.11.0), methods, GIGrvg (>= 0.7),
+        loo (>= 2.0.0), matrixStats
+Suggests: dbarts, BayesLogit, lintools, splines, spdep, sf, bayesplot,
+        coda, posterior, parallel, testthat, roxygen2, knitr,
+        rmarkdown, survey
+LinkingTo: Rcpp, RcppEigen, Matrix, GIGrvg
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Collate: 'AR1_sampler.R' 'GMRF_extension.R' 'MCMCsim.R' 'MH.R'
+        'tabMatrix.R' 'MatrixUtils.R' 'RcppExports.R' 'TMVN_methods.R'
+        'TMVN_sampler.R' 'aux_closures.R' 'cMVN_sampler.R' 'cholesky.R'
+        'conjugate_gradients.R' 'f_gamma.R' 'f_poisson.R' 'family.R'
+        'formulas.R' 'kronprod.R' 'mc_bart.R' 'mc_block.R' 'mc_gen.R'
+        'mc_gl.R' 'mc_mec.R' 'mc_offset.R' 'mc_reg.R' 'mc_vfac.R'
+        'mc_vreg.R' 'mcmcsae.R' 'model_eval.R' 'modelmatrix.R'
+        'models.R' 'opts.R' 'parallel.R' 'plots.R' 'prediction.R'
+        'priors.R' 'projection.R' 'random.R' 'samplers.R' 'sbc.R'
+        'sparse_template.R' 'utils.R'
+NeedsCompilation: yes
+Packaged: 2024-12-11 18:41:58 UTC; hbta
+Author: Harm Jan Boonstra [aut, cre],
+  Grzegorz Baltissen [ctb]
+Maintainer: Harm Jan Boonstra <hjboonstra@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-11 21:00:02 UTC

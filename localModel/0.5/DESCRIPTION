@@ -1,0 +1,36 @@
+Package: localModel
+Title: LIME-Based Explanations with Interpretable Inputs Based on
+        Ceteris Paribus Profiles
+Version: 0.5
+Authors@R: c(person("Przemyslaw", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre")),
+    person("Mateusz", "Staniak", role = "aut"),
+    person("Krystian", "Igras", role = "ctb"),
+    person("Alicja", "Gosiewska", role = "ctb"),
+    person("Harel", "Lustiger", role = "ctb"),
+    person("Willy", "Tadema", role = "ctb")
+    )
+Maintainer: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
+Description: Local explanations of machine learning models describe, how features contributed to a single prediction. 
+    This package implements an explanation method based on LIME 
+    (Local Interpretable Model-agnostic Explanations, 
+    see Tulio Ribeiro, Singh, Guestrin (2016) <doi:10.1145/2939672.2939778>) in which interpretable
+    inputs are created based on local rather than global behaviour of each original feature.
+URL: https://github.com/ModelOriented/localModel
+BugReports: https://github.com/ModelOriented/localModel/issues
+Depends: R (>= 3.5)
+License: GPL
+Encoding: UTF-8
+Imports: glmnet, DALEX, ggplot2, partykit, ingredients
+RoxygenNote: 7.1.1
+Suggests: covr, knitr, rmarkdown, randomForest, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-03 19:29:03 UTC; pbiecek
+Author: Przemyslaw Biecek [aut, cre],
+  Mateusz Staniak [aut],
+  Krystian Igras [ctb],
+  Alicja Gosiewska [ctb],
+  Harel Lustiger [ctb],
+  Willy Tadema [ctb]
+Repository: CRAN
+Date/Publication: 2021-09-14 16:50:01 UTC

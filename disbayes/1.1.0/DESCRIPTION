@@ -1,0 +1,32 @@
+Package: disbayes
+Title: Bayesian Multi-State Modelling of Chronic Disease Burden Data
+Date: 2023-09-09
+Version: 1.1.0
+Authors@R: 
+    person("Christopher", "Jackson", , "chris.jackson@mrc-bsu.cam.ac.uk", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-6656-8913"))
+Description: Estimation of incidence and case fatality for a chronic disease, given partial information, using a multi-state model. Given data on age-specific mortality and either incidence or prevalence, Bayesian inference is used to estimate the posterior distributions of incidence, case fatality, and functions of these such as prevalence.  The methods are described in Jackson et al. (2023) <doi:10.1093/jrsssa/qnac015>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: dplyr, tidyr, magrittr, tibble, generics, methods, Rcpp (>=
+        0.12.0), rstan (>= 2.26.0), mgcv, SHELF, ggplot2, loo,
+        matrixStats
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppParallel, RcppEigen
+        (>= 0.3.3.3.0), rstan (>= 2.26.0), StanHeaders (>= 2.26.0)
+Suggests: knitr, rmarkdown, rstantools (>= 2.0.0.9000), tempdisagg,
+        testthat
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+URL: https://chjackson.github.io/disbayes/
+BugReports: https://github.com/chjackson/disbayes/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-09-09 15:12:59 UTC; Chris
+Author: Christopher Jackson [aut, cre, cph]
+    (<https://orcid.org/0000-0002-6656-8913>)
+Maintainer: Christopher Jackson <chris.jackson@mrc-bsu.cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-09-09 20:10:02 UTC

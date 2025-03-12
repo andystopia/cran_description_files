@@ -1,0 +1,39 @@
+Type: Package
+Package: logib
+Title: Salary Analysis by the Swiss Federal Office for Gender Equality
+Version: 0.2.0
+Authors@R: c(
+    person("Marc", "Stöckli", , "marc.stoeckli@ebg.admin.ch", role = c("aut", "cre")),
+    person("Jonathan", "Chassot", role = "aut"),
+    person("Jeremy", "Kolly", role = "ctb"),
+    person("Federal Office for Gender Equality of Switzerland", , , "ebg@ebg.admin.ch", role = c("cph", "fnd"))
+  )
+Description: Implementation of the Swiss Confederation's standard analysis
+    model for salary analyses
+    <https://www.ebg.admin.ch/en/equal-pay-analysis-with-logib> in R. The
+    analysis is run at company-level and the model is intended for
+    medium-sized and large companies. It can technically be used with 50
+    or more employees (apprentices, trainees/interns and expats are not
+    included in the analysis). Employees with at least 100 employees are
+    required by the Gender Equality Act to conduct an equal pay analysis.
+    This package allows users to run the equal salary analysis in R,
+    providing additional transparency with respect to the methodology and
+    simple automation possibilities.
+License: GPL (>= 3)
+Depends: R (>= 3.1)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: lubridate, readxl, stats, utils
+Suggests: testthat
+URL: https://github.com/admin-ebg/logib
+BugReports: https://github.com/admin-ebg/logib/issues
+NeedsCompilation: no
+Packaged: 2024-12-19 17:03:56 UTC; marcc
+Author: Marc Stöckli [aut, cre],
+  Jonathan Chassot [aut],
+  Jeremy Kolly [ctb],
+  Federal Office for Gender Equality of Switzerland [cph, fnd]
+Maintainer: Marc Stöckli <marc.stoeckli@ebg.admin.ch>
+Repository: CRAN
+Date/Publication: 2024-12-20 09:10:02 UTC

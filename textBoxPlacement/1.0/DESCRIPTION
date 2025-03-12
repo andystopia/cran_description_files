@@ -1,0 +1,24 @@
+Package: textBoxPlacement
+Version: 1.0
+Date: 2023-03-15
+Title: Compute a Non-Overlapping Layout of Text Boxes to Label Multiple
+        Overlain Plots
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+LazyData: true
+Imports: graphics, stats, grDevices
+Description: Compute a non-overlapping layout of text boxes to label multiple overlain curves. For each curve, iteratively search for an adjacent x,y position for the text box that does not overlap with the other curves. If this process fails, then offsets are computed to add to the y values for each curve, that results in sufficient space to add all of the text labels.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-03-16 02:09:21 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2023-03-16 19:20:02 UTC

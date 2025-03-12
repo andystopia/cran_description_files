@@ -1,0 +1,45 @@
+Package: SmoothHazard
+Title: Estimation of Smooth Hazard Models for Interval-Censored Data
+Version: 2024.04.10
+Authors@R: c(person("Celia", "Touraine", role = c("aut"), email = "celia.touraine@icm.unicancer.fr"),
+	   person("Thomas Alexander", "Gerds", role = c("aut","cre"), email = "tag@biostat.ku.dk"),
+           person("Pierre", "Joly", role = "aut",email="pierre.joly@u-bordeaux.fr",comment = "Author and maintainer of the Fortran code"),
+           person("Cecile", "Proust-Lima", role = "aut",comment = "Author of the Fortran code"),
+           person("Helene", "Jacqmin-Gadda", role = "aut",comment = "Author of the Fortran code"),
+           person("Amadou", "Diakite", role = "aut",comment = "Author of the Fortran code"),
+           person("W.D.", "Cody", role = "aut",comment = "Author of the Fortran code"),
+           person("A.H.", "Morris", role = "aut",comment = "Author of the Fortran code"),
+           person("B.W.", "Brown", role = "aut",comment = "Author of the Fortran code"),	
+           person("Robin", "Genuer", role = "ctb"))
+Description: Estimation of two-state (survival) models and irreversible illness-
+    death models with possibly interval-censored, left-truncated and right-censored
+    data. Proportional intensities regression models can be specified to allow for
+    covariates effects separately for each transition. We use either a parametric
+    approach with Weibull baseline intensities or a semi-parametric approach with
+    M-splines approximation of baseline intensities in order to obtain smooth
+    estimates of the hazard functions. Parameter estimates are obtained by maximum
+    likelihood in the parametric approach and by penalized maximum likelihood in the
+    semi-parametric approach.
+Encoding: UTF-8
+Copyright: See inst/COPYRIGHTS
+Depends: R (>= 1.9.1), prodlim (>= 1.4.9)
+Imports: lava (>= 1.4.1), mvtnorm (>= 1.0-3)
+Maintainer: Thomas Alexander Gerds <tag@biostat.ku.dk>
+License: GPL (>= 2)
+Packaged: 2024-04-10 14:10:36 UTC; tag
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Author: Celia Touraine [aut],
+  Thomas Alexander Gerds [aut, cre],
+  Pierre Joly [aut] (Author and maintainer of the Fortran code),
+  Cecile Proust-Lima [aut] (Author of the Fortran code),
+  Helene Jacqmin-Gadda [aut] (Author of the Fortran code),
+  Amadou Diakite [aut] (Author of the Fortran code),
+  W.D. Cody [aut] (Author of the Fortran code),
+  A.H. Morris [aut] (Author of the Fortran code),
+  B.W. Brown [aut] (Author of the Fortran code),
+  Robin Genuer [ctb]
+Repository: CRAN
+Date/Publication: 2024-04-10 20:00:08 UTC

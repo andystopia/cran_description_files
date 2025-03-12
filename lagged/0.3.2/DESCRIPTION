@@ -1,0 +1,28 @@
+Package: lagged
+Type: Package
+Title: Classes and Methods for Lagged Objects
+Version: 0.3.2
+Date: 2022-08-07
+Authors@R: person(given = c("Georgi", "N."), family = "Boshnakov",
+                  role = c("aut", "cre"), 
+                  email = "georgi.boshnakov@manchester.ac.uk")
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Description: Provides classes and methods for objects, whose indexing
+      naturally starts from zero. Subsetting, indexing and mathematical
+      operations are defined naturally between lagged objects and lagged
+      and base R objects. Recycling is not used, except for singletons.
+      The single bracket operator doesn't drop dimensions by default.
+URL: https://github.com/GeoBosh/lagged (devel),
+        https://geobosh.github.io/lagged/ (doc)
+BugReports: https://github.com/GeoBosh/lagged/issues
+Imports: methods
+Suggests: testthat
+License: GPL (>= 2)
+LazyLoad: yes
+Collate: lagged.R utils.R pc20slMatrix.r acfutils.R
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2022-08-07 09:26:05 UTC; georgi
+Author: Georgi N. Boshnakov [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-08-07 15:20:21 UTC

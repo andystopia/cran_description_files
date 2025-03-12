@@ -1,0 +1,49 @@
+Package: SCDA
+Type: Package
+Title: Spatially-Clustered Data Analysis
+Version: 0.0.2
+Description: Contains functions for statistical data analysis based on spatially-clustered techniques.
+    The package allows estimating the spatially-clustered spatial regression models presented in Cerqueti, Maranzano \& Mattera (2024), "Spatially-clustered spatial autoregressive models
+    with application to agricultural market concentration in Europe", arXiv preprint 2407.15874 <doi:10.48550/arXiv.2407.15874>.
+    Specifically, the current release allows the estimation of the spatially-clustered linear regression model (SCLM), the spatially-clustered spatial autoregressive model (SCSAR),
+    the spatially-clustered spatial Durbin model (SCSEM), and the spatially-clustered linear regression model with spatially-lagged exogenous covariates (SCSLX).
+    From release 0.0.2, the library contains functions to estimate spatial clustering based on Adiajacent Matrix K-Means (AMKM) as described in Zhou, Liu \& Zhu (2019), "Weighted adjacent matrix for K-means clustering", Multimedia Tools and Applications, 78 (23) <doi:10.1007/s11042-019-08009-x>.  
+License: GPL (>= 2)
+Imports:
+        spatialreg,sp,spdep,utils,rlang,performance,stats,methods,dplyr,sf,NbClust,ggplot2,ggspatial
+Depends: R (>= 3.5.0)
+Suggests: tidyverse,
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+LazyData: true
+Maintainer: Paolo Maranzano <pmaranzano.ricercastatistica@gmail.com>
+Authors@R: 
+    c(person(given = "Paolo",
+             family = "Maranzano",
+             role = c("aut","cre","cph"),
+             email = "pmaranzano.ricercastatistica@gmail.com",
+             comment = c(ORCID = "0000-0002-9228-2759")),
+      person(given = "Raffaele",
+             family = "Mattera",
+             role = c("aut","cph"),
+             email = "raffaele.mattera@uniroma1.it",
+             comment = c(ORCID = "0000-0001-8770-7049")),
+      person(given = "Camilla",
+             family = "Lionetti",
+             role = c("aut","cph"),
+             email = "lionetticamilla511@gmail.com"),
+      person(given = "Francesco",
+             family = "Caccia",
+             role = c("aut","cph"),
+             email = "francesco.caccia2000@gmail.com")
+             )
+NeedsCompilation: no
+Packaged: 2024-10-22 15:05:11 UTC; paulm
+Author: Paolo Maranzano [aut, cre, cph]
+    (<https://orcid.org/0000-0002-9228-2759>),
+  Raffaele Mattera [aut, cph] (<https://orcid.org/0000-0001-8770-7049>),
+  Camilla Lionetti [aut, cph],
+  Francesco Caccia [aut, cph]
+Repository: CRAN
+Date/Publication: 2024-10-22 21:50:10 UTC

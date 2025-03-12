@@ -1,0 +1,39 @@
+Package: learner
+Type: Package
+Title: Latent Space-Based Transfer Learning
+Version: 1.0.0
+Authors@R: c(person("Sean", "McGrath", role = c("aut", "cre"), 
+                     email = "sean.mcgrath514@gmail.com",
+                     comment = c(ORCID = "0000-0002-7281-3516")),
+              person("Ryan", "ODea", role = c("aut"),
+                     email = "ryanodea@hsph.harvard.edu"),
+              person("Cenhao", "Zhu", role = c("aut"),
+                      email = "cenhaoz@mit.edu"),
+              person("Rui", "Duan", role = c("aut"), 
+                      email = "rduan@hsph.harvard.edu"))
+Maintainer: Sean McGrath <sean.mcgrath514@gmail.com>
+Description: Implements transfer learning methods for low-rank matrix 
+    estimation. These methods leverage similarity in the latent row and column 
+    spaces between the source and target populations to improve estimation in 
+    the target population. The methods include the LatEnt spAce-based tRaNsfer 
+    lEaRning (LEARNER) method and the direct projection LEARNER (D-LEARNER) 
+    method described by McGrath et al. (2024) <doi:10.48550/arXiv.2412.20605>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://github.com/stmcg/learner
+BugReports: https://github.com/stmcg/learner/issues
+Imports: ScreeNOT, Rcpp (>= 1.0.11), RcppEigen
+LinkingTo: Rcpp, RcppEigen
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2025-03-02 22:23:44 UTC; Sean
+Author: Sean McGrath [aut, cre] (<https://orcid.org/0000-0002-7281-3516>),
+  Ryan ODea [aut],
+  Cenhao Zhu [aut],
+  Rui Duan [aut]
+Repository: CRAN
+Date/Publication: 2025-03-03 10:00:02 UTC

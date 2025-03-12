@@ -1,0 +1,32 @@
+Package: multimedia
+Title: Multimodal Mediation Analysis
+Version: 0.2.0
+Authors@R: 
+    c(person("Kris", "Sankaran", , "ksankaran@wisc.edu", role = c("aut", "cre"),
+     comment = c(ORCID = "0000-0002-9415-1971")),
+     person("Hanying", "Jiang", , "hjiang252@wisc.edu", role = "aut"))
+Description: Multimodal mediation analysis is an emerging problem in microbiome data analysis. Multimedia make advanced mediation analysis techniques easy to use, ensuring that all statistical components are transparent and adaptable to specific problem contexts. The package provides a uniform interface to direct and indirect effect estimation, synthetic null hypothesis testing, bootstrap confidence interval construction, and sensitivity analysis. More details are available in Jiang et al. (2024) "multimedia: Multimodal Mediation Analysis of Microbiome Data" <doi:10.1101/2024.03.27.587024>.
+License: CC0
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+biocViews: Coverage, Microbiome, Regression, Sequencing, Software,
+        StatisticalMethod, StructuralEquationModels
+Depends: R (>= 4.1.0), brms, glmnetUtils, ranger, tidyselect
+Imports: MASS, S4Vectors, SummarizedExperiment, cli, dplyr, fansi,
+        formula.tools, ggplot2, glue, methods, miniLNM, patchwork,
+        phyloseq, progress, purrr, rlang, stats, tidygraph, tidyr
+Suggests: compositions, ggdist, ggraph, ggrepel, knitr, rmarkdown,
+        testthat (>= 3.0.0), tidyverse, vroom
+BugReports: https://github.com/krisrs1128/multimedia/issues/
+URL: https://krisrs1128.github.io/multimedia/,
+        https://github.com/krisrs1128/multimedia/
+LazyData: false
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-17 19:41:43 UTC; krissankaran
+Author: Kris Sankaran [aut, cre] (<https://orcid.org/0000-0002-9415-1971>),
+  Hanying Jiang [aut]
+Maintainer: Kris Sankaran <ksankaran@wisc.edu>
+Repository: CRAN
+Date/Publication: 2024-09-18 12:30:05 UTC

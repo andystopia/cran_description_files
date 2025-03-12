@@ -1,0 +1,28 @@
+Type: Package
+Package: babyTimeR
+Title: Parse Output from 'BabyTime' Application
+Version: 0.1.0
+Authors@R: 
+    person("Dann", "Hekman", , "dannhek@gmail.com", role = c("aut", "cre"))
+Author: Dann Hekman [aut, cre]
+Maintainer: Dann Hekman <dannhek@gmail.com>
+Description: 'BabyTime' is an application for tracking infant and toddler
+    care activities like sleeping, eating, etc. This package will take the
+    outputted .zip files and parse it into a usable list object with
+    cleaned data. It handles malformed and incomplete data gracefully and
+    is designed to parse one directory at a time.
+License: MIT + file LICENSE
+Depends: dplyr (>= 1.1.4), glue (>= 1.8.0), janitor (>= 2.2.0),
+        lubridate (>= 1.9.3), methods (>= 4.4.1), R (>= 4.4.0), readr
+        (>= 2.1.5), snakecase (>= 0.11.1), stringr (>= 1.5.1)
+Imports: utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-15 01:22:38 UTC; djh
+Repository: CRAN
+Date/Publication: 2025-01-16 10:30:05 UTC

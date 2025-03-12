@@ -1,0 +1,35 @@
+Package: gander
+Title: High Performance, Low Friction Large Language Model Chat
+Version: 0.1.0
+Authors@R: c(
+    person("Simon", "Couch", , "simon.couch@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5676-5107")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Introduces a 'Copilot'-like completion experience, but it knows how
+    to talk to the objects in your R environment. 'ellmer' chats are integrated 
+    directly into your 'RStudio' and 'Positron' sessions, automatically 
+    incorporating relevant context from surrounding lines of code and your
+    global environment (like data frame columns and types). Open the package 
+    dialog box with a keyboard shortcut, type your request, and the assistant 
+    will stream its response directly into your documents.
+License: MIT + file LICENSE
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/simonpcouch/gander,
+        https://simonpcouch.github.io/gander/
+BugReports: https://github.com/simonpcouch/gander/issues
+Depends: R (>= 4.3.0)
+Imports: cli (>= 3.6.3), glue (>= 1.8.0), ellmer (>= 0.1.0), miniUI (>=
+        0.1.1.1), rlang (>= 1.1.4), rstudioapi (>= 0.17.1), shiny (>=
+        1.9.1), streamy, treesitter, treesitter.r
+Suggests: gt, knitr, rmarkdown, testthat (>= 3.0.0), tibble, withr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-02-18 15:20:37 UTC; simoncouch
+Author: Simon Couch [aut, cre] (<https://orcid.org/0000-0001-5676-5107>),
+  Posit Software, PBC [cph, fnd]
+Maintainer: Simon Couch <simon.couch@posit.co>
+Repository: CRAN
+Date/Publication: 2025-02-19 15:00:05 UTC

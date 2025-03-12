@@ -1,0 +1,16 @@
+Package: PCpluS
+Title: Piecewise Constant Plus Smooth Regression
+Version: 1.0.1
+Authors@R: c(person("Pein", "Florian", role = c("aut", "cre"), email = "f.pein@lancaster.ac.uk"))
+Depends: R (>= 3.0.2)
+Imports: Rcpp (>= 0.12.3), changepoint, methods, Matrix
+LinkingTo: Rcpp (>= 0.12.3), RcppEigen
+Suggests: testthat (>= 1.0.0), glmnet
+Description: Allows for nonparametric regression where one assumes that the signal is given by the sum of a piecewise constant function and a smooth function. More precisely, it implements the estimator PCpluS (piecewise constant plus smooth regression estimator) from Pein and Shah (2025) <doi:10.48550/arXiv.2112.03878>.
+License: GPL-3
+NeedsCompilation: yes
+Packaged: 2025-03-10 12:11:53 UTC; pein
+Author: Pein Florian [aut, cre]
+Maintainer: Pein Florian <f.pein@lancaster.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-03-11 16:40:06 UTC

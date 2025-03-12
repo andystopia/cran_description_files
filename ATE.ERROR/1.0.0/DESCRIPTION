@@ -1,0 +1,23 @@
+Package: ATE.ERROR
+Title: Estimating ATE with Misclassified Outcomes and Mismeasured
+        Covariates
+Version: 1.0.0
+Authors@R: c(
+  person("Aryan", "Rezanezhad", email = "Aryan.rzn@gmail.com", role = c("aut", "cre")),
+  person("Grace Y.", "Yi", email = "gyi5@uwo.ca", role = "aut"))
+Description: Addressing measurement error in covariates and misclassification in binary outcome variables within causal inference, the 'ATE.ERROR' package implements inverse probability weighted estimation methods proposed by Shu and Yi (2017, <doi:10.1177/0962280217743777>; 2019, <doi:10.1002/sim.8073>). These methods correct errors to accurately estimate average treatment effects (ATE). The package includes two main functions: ATE.ERROR.Y() for handling misclassification in the outcome variable and ATE.ERROR.XY() for correcting both outcome misclassification and covariate measurement error. It employs logistic regression for treatment assignment and uses bootstrap sampling to calculate standard errors and confidence intervals, with simulated datasets provided for practical demonstration.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-05 02:37:25 UTC; rezanejad
+Imports: ggplot2, MASS, mvtnorm, rlang, stats
+Author: Aryan Rezanezhad [aut, cre],
+  Grace Y. Yi [aut]
+Maintainer: Aryan Rezanezhad <Aryan.rzn@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-10 09:10:10 UTC

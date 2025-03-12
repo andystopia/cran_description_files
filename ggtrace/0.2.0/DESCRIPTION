@@ -1,0 +1,51 @@
+Type: Package
+Package: ggtrace
+Title: Trace and Highlight Groups of Data Points
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Ryan",
+             family = "Sheridan",
+             role = c("aut", "cre"),
+             email = "ryan.sheridan@cuanschutz.edu",
+             comment = c(ORCID = "0000-0003-4012-3147")),
+      person(given = "Rui",
+             family = "Fu",
+             role = "ctb",
+             email = "raysinensis@gmail.com",
+             comment = c(ORCID = "0000-0001-8183-4549")),
+      person(given = "Jay",
+             family = "Hesselberth",
+             role = "ctb",
+             email = "jay.hesselberth@gmail.com",
+             comment = c(ORCID = "0000-0002-6299-179X")),
+      person(given = "RNA Bioscience Initiative",
+             role = c("fnd", "cph")))
+Description: Provides 'ggplot2' geoms that allow groups of data points to be
+    outlined or highlighted for emphasis. This is particularly useful when
+    working with dense datasets that are prone to overplotting.
+License: MIT + file LICENSE
+URL: https://github.com/rnabioco/ggtrace
+BugReports: https://github.com/rnabioco/ggtrace/issues
+Depends: R (>= 4.0.0)
+Imports: ggplot2, grid, rlang
+Suggests: covr, knitr, rmarkdown, tidyr, tibble, dplyr, testthat (>=
+        3.0.0), vdiffr (>= 1.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+SystemRequirements: pandoc
+Collate: 'a-legend-draw.R' 'data.R' 'geom-path-trace.R'
+        'geom-point-trace.R' 'ggtrace-package.R' 'grouping.R'
+        'utilities-ggplot2.R'
+Config/Needs/website: pkgdown, rnabioco/rbitemplate
+NeedsCompilation: no
+Packaged: 2022-06-23 18:38:51 UTC; rmsheridan
+Author: Ryan Sheridan [aut, cre] (<https://orcid.org/0000-0003-4012-3147>),
+  Rui Fu [ctb] (<https://orcid.org/0000-0001-8183-4549>),
+  Jay Hesselberth [ctb] (<https://orcid.org/0000-0002-6299-179X>),
+  RNA Bioscience Initiative [fnd, cph]
+Maintainer: Ryan Sheridan <ryan.sheridan@cuanschutz.edu>
+Repository: CRAN
+Date/Publication: 2022-06-24 07:20:02 UTC

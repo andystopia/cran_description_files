@@ -1,0 +1,39 @@
+Package: rmlnomogram
+Title: Construct Explainable Nomogram for a Machine Learning Model
+Version: 0.1.2
+Authors@R: 
+  c(person(
+      given = "Herdiantri"
+      ,family = "Sufriyana"
+      ,email = "herdi@nycu.edu.tw"
+      ,role = c("aut", "cre")
+      ,comment = c(ORCID = "0000-0001-9178-0222")
+    )
+    ,person(
+      given = "Emily Chia-Yu"
+      ,family = "Su"
+      ,email = "emily@nycu.edu.tw"
+      ,role = c("aut")
+      ,comment = c(ORCID = "0000-0003-4801-5159")
+    )
+  )
+Description: Construct an explainable nomogram for a machine learning (ML) model to improve availability of an ML prediction model in addition to a computer application, particularly in a situation where a computer, a mobile phone, an internet connection, or the application accessibility are unreliable. This package enables a nomogram creation for any ML prediction models, which is conventionally limited to only a linear/logistic regression model. This nomogram may indicate the explainability value per feature, e.g., the Shapley additive explanation value, for each individual. However, this package only allows a nomogram creation for a model using categorical without or with single numerical predictors. Detailed methodologies and examples are documented in our vignette, available at <https://htmlpreview.github.io/?https://github.com/herdiantrisufriyana/rmlnomogram/blob/master/doc/ml_nomogram_exemplar.html>.
+Depends: R (>= 4.4)
+Imports: dplyr, purrr, broom, stats, ggplot2, ggpubr, stringr, tidyr,
+        utils
+Suggests: tidyverse, knitr, caret, randomForest, iml, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-08 10:07:20 UTC; rstudio
+Author: Herdiantri Sufriyana [aut, cre]
+    (<https://orcid.org/0000-0001-9178-0222>),
+  Emily Chia-Yu Su [aut] (<https://orcid.org/0000-0003-4801-5159>)
+Maintainer: Herdiantri Sufriyana <herdi@nycu.edu.tw>
+Repository: CRAN
+Date/Publication: 2025-01-08 16:40:02 UTC

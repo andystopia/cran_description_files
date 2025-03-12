@@ -1,0 +1,64 @@
+Package: diffmatchpatch
+Type: Package
+Title: String Diff, Match, and Patch Utilities
+Version: 0.1.0
+Date: 2021-04-10
+Authors@R: 
+  c(person(
+      given = "Colin",
+      family = "Rundel",
+      role = c("aut", "cre"),
+      email = "rundel@gmail.com"
+    ),
+    person(
+      family = "Google Inc.",
+      role = "cph",
+      comment = "diff_match_patch.h"
+    ),
+    person(
+      given = "Neil",
+      family = "Fraser",
+      role = "cph",
+      comment = "diff_match_patch.h"
+    ),
+    person(
+      given = "Mike",
+      family = "Slemmer",
+      role = "cph",
+      comment = "diff_match_patch.h"
+    ),
+    person(
+      given = "Sergey",
+      family = "Nozhenko",
+      role = "cph",
+      comment = "diff_match_patch.h"
+    ),
+    person(
+      given = "Christian",
+      family = "Leutloff",
+      role = "cph",
+      comment = "diff_match_patch.h"
+    )
+  )
+Copyright: Google Inc., Neil Fraser, Mike Slemmer, Sergey Nozhenko,
+        Christian Leutloff, Colin Rundel
+Description: A wrapper for Google's 'diff-match-patch' library. It provides basic tools
+    for computing diffs, finding fuzzy matches, and constructing / applying patches to strings.
+Encoding: UTF-8
+Imports: cli, Rcpp
+LinkingTo: Rcpp
+RoxygenNote: 7.1.1
+License: Apache License (>= 2)
+URL: https://github.com/rundel/diffmatchpatch
+BugReports: https://github.com/rundel/diffmatchpatch/issues
+NeedsCompilation: yes
+Packaged: 2021-04-15 11:43:59 UTC; rundel
+Author: Colin Rundel [aut, cre],
+  Google Inc. [cph] (diff_match_patch.h),
+  Neil Fraser [cph] (diff_match_patch.h),
+  Mike Slemmer [cph] (diff_match_patch.h),
+  Sergey Nozhenko [cph] (diff_match_patch.h),
+  Christian Leutloff [cph] (diff_match_patch.h)
+Maintainer: Colin Rundel <rundel@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-04-16 07:00:05 UTC

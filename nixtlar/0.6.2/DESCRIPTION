@@ -1,0 +1,33 @@
+Package: nixtlar
+Title: A Software Development Kit for 'Nixtla''s 'TimeGPT'
+Version: 0.6.2
+Authors@R: c(
+    person("Mariana", "Menchero", email = "mariana@nixtla.io", role = c("aut", "cre"), comment = "First author and maintainer"),
+    person("Nixtla", role = "cph", comment = "Copyright held by 'Nixtla'")
+    )
+Description: A Software Development Kit for working with 'Nixtla''s 'TimeGPT', a foundation
+    model for time series forecasting. 'API' is an acronym for 'application
+    programming interface'; this package allows users to interact with
+    'TimeGPT' via the 'API'. You can set and validate 'API' keys and generate forecasts
+    via 'API' calls. It is compatible with 'tsibble' and base R. For more details 
+    visit <https://docs.nixtla.io/>.
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LazyData: true
+Imports: dplyr, future, future.apply, ggplot2, httr2, lubridate, purrr,
+        rlang, tidyr, tidyselect
+Suggests: httptest2, knitr, rmarkdown, testthat (>= 3.0.0), usethis
+Config/testthat/edition: 3
+URL: https://nixtla.github.io/nixtlar/, https://docs.nixtla.io/,
+        https://github.com/Nixtla/nixtlar
+VignetteBuilder: knitr
+BugReports: https://github.com/Nixtla/nixtlar/issues
+NeedsCompilation: no
+Packaged: 2024-10-28 22:59:57 UTC; marianamenchero
+Author: Mariana Menchero [aut, cre] (First author and maintainer),
+  Nixtla [cph] (Copyright held by 'Nixtla')
+Maintainer: Mariana Menchero <mariana@nixtla.io>
+Repository: CRAN
+Date/Publication: 2024-10-28 23:10:02 UTC

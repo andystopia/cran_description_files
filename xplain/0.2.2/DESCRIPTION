@@ -1,0 +1,28 @@
+Package: xplain
+Type: Package
+Title: Providing Interactive Interpretations and Explanations of
+        Statistical Results
+Version: 0.2.2
+Authors@R: person("Joachim", "Zuckarelli", role = c("aut", "cre"), email = "joachim@zuckarelli.de", comment = c(ORCID="0000-0002-9280-3016"))
+Maintainer: Joachim Zuckarelli <joachim@zuckarelli.de>
+Description: Allows to provide live interpretations and explanations of statistical 
+    functions in R. These interpretations and explanations are shown when the explained function 
+    is called by the user. They can interact with the values of the explained function's actual 
+    results to offer relevant, meaningful insights. The 'xplain' interpretations and explanations 
+    are based on an easy-to-use XML format that allows to include R code to interact with the 
+    returns of the explained function.
+Suggests: car, methods
+Depends: R (>= 4.0.0)
+License: GPL-3
+Encoding: UTF-8
+BugReports: https://github.com/jsugarelli/xplain/issues
+URL: https://github.com/jsugarelli/xplain/,
+        https://www.zuckarelli.de/xplain/index.html
+Repository: CRAN
+LazyData: true
+Imports: XML, readr, RCurl, httr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-07-30 10:41:37 UTC; Jozu01
+Author: Joachim Zuckarelli [aut, cre] (<https://orcid.org/0000-0002-9280-3016>)
+Date/Publication: 2020-07-30 11:10:02 UTC

@@ -1,0 +1,48 @@
+Package: HybridMicrobiomes
+Type: Package
+Title: Analysis of Host-Associated Microbiomes from Hybrid Organisms
+Version: 0.1.1
+Authors@R: 
+  c(person(given = "Benjamin",
+           family = "Camper",
+           role = "aut"),
+    person(given = "Zachary",
+           family = "Lauglin",
+           role = "ctb"),
+    person(given = "Daniel",
+           family = "Malagon",
+           role = "ctb"),
+    person(given = "Robert",
+           family = "Denton",
+           role = "ctb"),
+    person(given = "Sharon",
+           family = "Bewick",
+           role = c("aut", "cre"),
+           email = "sbewick@clemson.edu",
+           ),
+           person(given="National Science Foundation Division of Integrative Organismal Systems (award #2104605)",
+           role="fnd"),
+           person(given="Clemson University Support for Early Exploration and Development (CU SEED) Grant",
+           role="fnd"))
+Description: A set of tools to analyze and visualize the relationships between host-associated microbiomes of hybrid organisms and those of their progenitor species. Though not necessary, installing the microViz package is recommended as a check for phyloseq objects. To install microViz from R Universe use the following command: install.packages("microViz", repos = c(davidbarnett = "https://david-barnett.r-universe.dev", getOption("repos"))). To install microViz from GitHub use the following commands: install.packages("devtools") followed by devtools::install_github("david-barnett/microViz").
+License: GPL-2
+Encoding: UTF-8
+biocViews: Software, phyloseq
+Imports: rgl, compositions, rlang, PERMANOVA, graphics, stats,vegan,
+        ks, ape, geometry,StereoMorph, phyloseq
+Suggests: microViz
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-12-05 00:33:49 UTC; sbewick
+Author: Benjamin Camper [aut],
+  Zachary Lauglin [ctb],
+  Daniel Malagon [ctb],
+  Robert Denton [ctb],
+  Sharon Bewick [aut, cre],
+  National Science Foundation Division of Integrative Organismal Systems
+    (award #2104605) [fnd],
+  Clemson University Support for Early Exploration and Development (CU
+    SEED) Grant [fnd]
+Maintainer: Sharon Bewick <sbewick@clemson.edu>
+Repository: CRAN
+Date/Publication: 2023-12-05 23:20:10 UTC

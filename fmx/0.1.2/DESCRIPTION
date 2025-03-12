@@ -1,0 +1,32 @@
+Package: fmx
+Type: Package
+Title: Finite Mixture Parametrization
+Version: 0.1.2
+Date: 2024-04-30
+Description: A parametrization framework for finite mixture
+       distribution using S4 objects. Density, cumulative
+       density, quantile and simulation functions are defined.
+       Currently normal, Tukey g-&-h, skew-normal and skew-t
+       distributions are well tested. The gamma, negative
+       binomial distributions are being tested.
+License: GPL-2
+Imports: methods, goftest, sn, VGAM, param2moment, TukeyGH77
+Encoding: UTF-8
+Authors@R: c(person(given = "Tingting", family = "Zhan", role =
+       c("aut", "cre", "cph"), email =
+       c("tingtingzhan@gmail.com"), comment = c(ORCID =
+       '0000-0001-9971-4844')), person(given = "Inna", family =
+       "Chervoneva", role = c("ctb", 'cph'), email =
+       "Inna.Chervoneva@jefferson.edu", comment = c(ORCID =
+       '0000-0002-9104-4505')))
+Language: en-US
+Depends: R (>= 4.4.0)
+Suggests: fitdistrplus, ggplot2, mixtools, mixsmsn, scales
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-30 13:06:22 UTC; tingtingzhan
+Author: Tingting Zhan [aut, cre, cph] (<https://orcid.org/0000-0001-9971-4844>),
+  Inna Chervoneva [ctb, cph] (<https://orcid.org/0000-0002-9104-4505>)
+Maintainer: Tingting Zhan <tingtingzhan@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-30 14:20:09 UTC

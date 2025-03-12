@@ -1,0 +1,47 @@
+Package: drcarlate
+Type: Package
+Title: Improving Estimation Efficiency in CAR with Imperfect Compliance
+Version: 1.2.0
+Authors@R: 
+    c(person(given = "Liang",
+             family = "Jiang",
+             role = c("aut", "cph"),
+             email = "jiangliang@fudan.edu.cn"),
+             person(given = "Oliver B.",
+             family = "Linton",
+             role = c("aut", "cph"),
+             email = "obl20@cam.ac.uk"),
+             person(given = "Haihan",
+             family = "Tang",
+             role = c("aut", "cph"),
+             email = "hhtang@fudan.edu.cn"),
+             person(given = "Yichong",
+             family = "Zhang",
+             role = c("aut", "cph"),
+             email = "yczhang@smu.edu.sg"),
+             person(given = "Mingxin",
+             family = "Zhang",
+             role = c("cre"),
+             email = "21110680035@m.fudan.edu.cn"))
+Description: We provide a list of functions for replicating the results of the Monte Carlo simulations and empirical application of Jiang et al. (2022). 
+    In particular, we provide corresponding functions for generating the three types of random data described in this paper, as well as all the estimation strategies. 
+    Detailed information about the data generation process and estimation strategy can be found in Jiang et al. (2022)  <doi:10.48550/arXiv.2201.13004>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL:
+Imports: pracma, MASS, stringr, splus2R, glmnet, stats, purrr
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-06-11 15:14:03 UTC; mingxin_zhang
+Author: Liang Jiang [aut, cph],
+  Oliver B. Linton [aut, cph],
+  Haihan Tang [aut, cph],
+  Yichong Zhang [aut, cph],
+  Mingxin Zhang [cre]
+Maintainer: Mingxin Zhang <21110680035@m.fudan.edu.cn>
+Repository: CRAN
+Date/Publication: 2023-06-12 09:40:02 UTC

@@ -1,0 +1,30 @@
+Package: invertiforms
+Title: Invertible Transforms for Matrices
+Version: 0.1.1
+Authors@R: 
+    person(given = "Alex",
+           family = "Hayes",
+           role = c("aut", "cre", "cph"),
+           email = "alexpghayes@gmail.com",
+           comment = c(ORCID = "0000-0002-4985-5160"))
+Description: Provides composable invertible transforms for
+    (sparse) matrices.
+License: MIT + file LICENSE
+URL: https://rohelab.github.io/invertiforms/,
+        https://github.com/RoheLab/invertiforms
+BugReports: https://github.com/RoheLab/invertiforms/issues
+Depends: Matrix, methods
+Imports: sparseLRMatrix (>= 0.1.0), glue
+Suggests: covr, testthat (>= 3.0.0), igraph, igraphdata
+Encoding: UTF-8
+RoxygenNote: 7.2.1.9000
+Collate: 's4-generics.R' 'DoubleCenter.R' 'NormalizedLaplacian.R'
+        'PerturbedLaplacian.R' 'RegularizedLaplacian.R'
+        'invertiforms-package.R' 'utils.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-11-12 22:09:18 UTC; alex
+Author: Alex Hayes [aut, cre, cph] (<https://orcid.org/0000-0002-4985-5160>)
+Maintainer: Alex Hayes <alexpghayes@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-11-25 12:40:10 UTC

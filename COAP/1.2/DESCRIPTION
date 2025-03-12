@@ -1,0 +1,33 @@
+Package: COAP
+Type: Package
+Title: High-Dimensional Covariate-Augmented Overdispersed Poisson
+        Factor Model
+Version: 1.2
+Date: 2024-05-02
+Authors@R: 
+    c(person(given = "Wei",
+             family = "Liu",
+             role = c("aut", "cre"),
+             email = "liuweideng@gmail.com"),
+      person(given = "Qingzhi",
+             family = "Zhong",
+             role = c("aut")))
+Author: Wei Liu [aut, cre],
+  Qingzhi Zhong [aut]
+Maintainer: Wei Liu <liuweideng@gmail.com>
+Description: A covariate-augmented overdispersed Poisson factor model is proposed to jointly perform a high-dimensional Poisson factor analysis and estimate a large coefficient matrix for overdispersed count data.
+    More details can be referred to Liu et al. (2024) <doi:10.1093/biomtc/ujae031>.
+License: GPL-3
+Depends: irlba, R (>= 3.5.0)
+Imports: MASS, stats, Rcpp (>= 1.0.10)
+URL: https://github.com/feiyoung/COAP
+BugReports: https://github.com/feiyoung/COAP/issues
+Suggests: knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2024-05-02 03:21:19 UTC; Liuxianju
+Repository: CRAN
+Date/Publication: 2024-05-02 03:42:48 UTC

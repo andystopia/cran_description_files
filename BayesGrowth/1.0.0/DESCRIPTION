@@ -1,0 +1,40 @@
+Type: Package
+Package: BayesGrowth
+Title: Estimate Fish Growth Using MCMC Analysis
+Date: 2023-11-13
+Version: 1.0.0
+Authors@R: person("Jonathan", "Smart", 
+    email = "jonsmartphd@gmail.com", 
+    role = c("aut", "cre", "ctb", "cph"),
+    comment = c(ORCID = "0000-0003-2070-3208"))
+Maintainer: Jonathan Smart <jonsmartphd@gmail.com>
+Description: Estimate fish length-at-age models using MCMC analysis with 
+    'rstan' models. This package allows a multimodel approach to growth fitting
+    to be applied to length-at-age data and is supported by further analyses to 
+    determine model selection and result presentation. The core methods of this 
+    package are presented in Smart and Grammer (2021) "Modernising fish and 
+    shark growth curves with Bayesian length-at-age models". PLOS ONE 16(2):
+    e0246734 <doi:10.1371/journal.pone.0246734>.
+License: GPL-3
+URL: https://github.com/jonathansmart/BayesGrowth
+BugReports: https://github.com/jonathansmart/BayesGrowth/issues
+Depends: R (>= 3.4.0)
+SystemRequirements: GNU make
+Imports: AquaticLifeHistory, bayesplot, dplyr, ggplot2, loo, methods,
+        Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>= 2.18.1),
+        rstantools (>= 2.3.1.1), stats, tibble, tidybayes
+Suggests: knitr, rmarkdown,
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Biarch: true
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+NeedsCompilation: yes
+Packaged: 2023-11-21 01:04:11 UTC; smartj
+Author: Jonathan Smart [aut, cre, ctb, cph]
+    (<https://orcid.org/0000-0003-2070-3208>)
+Repository: CRAN
+Date/Publication: 2023-11-21 18:10:08 UTC

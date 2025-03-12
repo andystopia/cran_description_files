@@ -1,0 +1,35 @@
+Package: MethodOpt
+Title: Advanced Method Optimization for Spectra-Generating Sampling and
+        Analysis Instrumentation
+Version: 1.0.0
+Authors@R: 
+    c(
+    person(given = "Benjamin",
+           family = "Luke",
+           role = "aut",
+           email = "benjamin.luke@srnl.doe.gov"),
+    person("Stephanie", "Gamble", role = c("aut","cre"), email = "stephanie.gamble@srnl.doe.gov"),
+    person("Battelle Savannah River Alliance", role = "cph")
+    )
+Description: A graphical user interface to apply an advanced method optimization algorithm to various sampling and analysis instruments. This includes generating experimental designs, uploading and viewing data, and performing various analyses to determine the optimal method. Details of the techniques used in this package are published in Gamble, Granger, & Mannion (2024) <doi:10.1021/acs.analchem.3c05763>.
+Depends: magrittr (>= 2.0.3)
+License: GPL (>= 3)
+Imports: shiny (>= 1.7.5.1), shinyFeedback (>= 0.4.0), shinyalert (>=
+        3.0.0), htmltools (>= 0.5.8.1), FrF2 (>= 2.3.3), DT (>= 0.30),
+        ggplot2 (>= 3.4.4), stats (>= 4.3.2), dplyr (>= 1.1.3), shinyjs
+        (>= 2.1.0), tibble (>= 3.2.1), glue (>= 1.6.2), rlang (>=
+        1.1.2), DoE.wrapper (>= 0.12), gtools (>= 3.9.5), zip (>=
+        2.3.0), zoo (>= 1.8.12), purrr (>= 1.0.2), shinyBS (>= 0.61.1)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-25 13:09:40 UTC; k9638
+Author: Benjamin Luke [aut],
+  Stephanie Gamble [aut, cre],
+  Battelle Savannah River Alliance [cph]
+Maintainer: Stephanie Gamble <stephanie.gamble@srnl.doe.gov>
+Repository: CRAN
+Date/Publication: 2024-09-30 09:50:07 UTC

@@ -1,0 +1,37 @@
+Package: CoDaImpact
+Title: Interpreting CoDa Regression Models
+Version: 0.1.0
+Authors@R: c(
+    person("Lukas", "Dargel", role = c("aut", "cre"),  email = "lukas.dargel@mailbox.org", comment = c(ORCID = "0000-0002-4839-506X")),
+    person("Christine", "Thomas-Agnan", role = c("aut"), email = "christine.thomas@tse-fr.eu", comment = c(ORCID = "0000-0002-6430-3110")),
+    person("Rodrigue", "Nasr", role = "ctb"),
+    person("Sijia", "Pan", role = "ctb"),
+    person("Iban", "Rendo Barreiro", role = "ctb"),
+    person("Shuyao", "Li", role = "ctb"))
+Description: 
+    Provides methods for interpreting CoDa (Compositional Data) regression models along the lines of "Pairwise share ratio interpretations of compositional regression models" (Dargel and Thomas-Agnan 2024) <doi:10.1016/j.csda.2024.107945>.
+    The new methods include variation scenarios, elasticities, elasticity differences and share ratio elasticities.
+    These tools are independent of log-ratio transformations and allow an interpretation in the original space of shares.
+    'CoDaImpact' is designed to be used with the 'compositions' package and its ecosystem.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://github.com/LukeCe/CoDaImpact,
+        https://lukece.github.io/CoDaImpact/
+BugReports: https://github.com/LukeCe/CoDaImpact/issues
+Imports: methods, compositions
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: rmarkdown, knitr, sf, tinytest
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-03-22 11:22:01 UTC; lukece
+Author: Lukas Dargel [aut, cre] (<https://orcid.org/0000-0002-4839-506X>),
+  Christine Thomas-Agnan [aut] (<https://orcid.org/0000-0002-6430-3110>),
+  Rodrigue Nasr [ctb],
+  Sijia Pan [ctb],
+  Iban Rendo Barreiro [ctb],
+  Shuyao Li [ctb]
+Maintainer: Lukas Dargel <lukas.dargel@mailbox.org>
+Repository: CRAN
+Date/Publication: 2024-03-23 10:30:02 UTC

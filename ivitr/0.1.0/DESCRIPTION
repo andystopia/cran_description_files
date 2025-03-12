@@ -1,0 +1,29 @@
+Package: ivitr
+Type: Package
+Title: Estimate IV-Optimal Individualized Treatment Rules
+Version: 0.1.0
+Author: Bo Zhang
+Maintainer: Bo Zhang <bozhan@wharton.upenn.edu>
+Description: A method that estimates
+    an IV-optimal individualized treatment rule. An individualized
+    treatment rule is said to be IV-optimal if it minimizes the 
+    maximum risk with respect to the putative IV and the set of
+    IV identification assumptions. Please refer to 
+    <arXiv:2002.02579> for more details on the methodology and 
+    some theory underpinning the method. Function IV-PILE() uses
+    functions in the package 'locClass'. Package 'locClass' can be
+    accessed and installed from the 'R-Forge' repository via the following link: 
+    <https://r-forge.r-project.org/projects/locclass/>.
+    Alternatively, one can install the package by entering the following in R:
+    'install.packages("locClass", repos="<http://R-Forge.R-project.org>")'.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: R (>= 2.10)
+Suggests: locClass
+Imports: stats, nnet, randomForest, dplyr, rlang
+NeedsCompilation: no
+Packaged: 2020-09-03 19:15:08 UTC; ASUS
+Repository: CRAN
+Date/Publication: 2020-09-11 08:40:03 UTC

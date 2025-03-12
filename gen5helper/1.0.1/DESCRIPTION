@@ -1,0 +1,27 @@
+Package: gen5helper
+Type: Package
+Title: Processing 'Gen5' 2.06 Exported Data
+Version: 1.0.1
+Author: Yanxian Lin [aut, cre]
+Authors@R: person("Yanxian", "Lin", email = "yanxian00@gmail.com", 
+    role = c("aut", "cre"))
+Maintainer: Yanxian Lin <yanxian00@gmail.com>
+Description: A collection of functions for processing 'Gen5' 2.06 exported data.
+    'Gen5' is an essential data analysis software for BioTek plate readers <https://www.biotek.com/products/software-robotics-software/gen5-microplate-reader-and-imager-software/>. This package contains functions for data cleaning, 
+    modeling and plotting using exported data from 'Gen5' version 2.06. It exports
+    technically correct data defined in (Edwin de Jonge and Mark van der Loo 
+    (2013) <https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf>) for customized analysis. It 
+    contains Boltzmann fitting for general kinetic analysis.  
+    See <https://www.github.com/yanxianUCSB/gen5helper> for more information,
+    documentation and examples.
+Depends: dplyr, utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: ggplot2, minpack.lm, plyr, pracma, tidyr, stats, naturalsort,
+        rlang
+NeedsCompilation: no
+Packaged: 2019-11-18 15:37:59 UTC; yanxlin
+Repository: CRAN
+Date/Publication: 2019-11-22 15:20:03 UTC

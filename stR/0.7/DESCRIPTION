@@ -1,0 +1,37 @@
+Package: stR
+Title: Seasonal Trend Decomposition Using Regression
+Version: 0.7
+Description: Methods for decomposing seasonal data: STR (a Seasonal-Trend 
+  time series decomposition procedure based on Regression) and Robust STR. In 
+  some ways, STR is similar to Ridge Regression and Robust STR can be related to 
+  LASSO. They allow for multiple seasonal components, multiple linear covariates 
+  with constant, flexible and seasonal influence. Seasonal patterns (for both 
+  seasonal components and seasonal covariates) can be fractional and flexible 
+  over time; moreover they can be either strictly periodic or have a more 
+  complex topology. The methods provide confidence intervals for the estimated 
+  components. The methods can also be used for forecasting.
+Authors@R: c(
+  person("Alexander", "Dokumentov", role = "aut", comment = c(ORCID = "0000-0003-0478-0983")),
+  person("Rob", "Hyndman", email = "Rob.Hyndman@monash.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2140-5352"))
+  )
+Depends: R (>= 3.5.0)
+Imports: compiler, foreach, forecast, graphics, grDevices, Matrix,
+        methods, quantreg, SparseM, stats
+Suggests: demography, doParallel, knitr, markdown, rgl, rmarkdown,
+        seasonal, testthat
+URL: https://pkg.robjhyndman.com/stR/,
+        https://github.com/robjhyndman/stR
+BugReports: https://github.com/robjhyndman/stR/issues
+License: GPL-3
+LazyData: true
+Encoding: UTF-8
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-07-28 05:56:50 UTC; hyndman
+Author: Alexander Dokumentov [aut] (<https://orcid.org/0000-0003-0478-0983>),
+  Rob Hyndman [aut, cre] (<https://orcid.org/0000-0002-2140-5352>)
+Maintainer: Rob Hyndman <Rob.Hyndman@monash.edu>
+Repository: CRAN
+Date/Publication: 2024-07-28 13:30:01 UTC

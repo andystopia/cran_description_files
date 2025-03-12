@@ -1,0 +1,37 @@
+Package: IDF
+Type: Package
+Title: Estimation and Plotting of IDF Curves
+Version: 2.1.2
+Date: 2022-07-20
+Authors@R: c(person("Felix S.","Fauer", email= "felix.fauer@met.fu-berlin.de",role=c("aut", "cre")),
+      person("Jana", "Ulrich", email = "jana.ulrich@met.fu-berlin.de", role = c("aut")),
+	    person("Laura","Mack", email= "laura.mack@fu-berlin.de",role="ctb"),
+	    person("Oscar E.","Jurado", email= "jurado@zedat.fu-berlin.de",role="ctb"),
+      person("Christoph", "Ritschel", role = "aut"),
+      person("Carola", "Detring", role = "ctb"),
+      person("Sarah", "Joedicke", role = "ctb"))
+Description: Intensity-duration-frequency (IDF) curves are a widely used analysis-tool
+              in hydrology to assess extreme values of precipitation
+              [e.g. Mailhot et al., 2007, <doi:10.1016/j.jhydrol.2007.09.019>].
+              The package 'IDF' provides functions to estimate IDF parameters for given
+              precipitation time series on the basis of a duration-dependent
+              generalized extreme value distribution
+              [Koutsoyiannis et al., 1998, <doi:10.1016/S0022-1694(98)00097-3>].
+Author: Felix S. Fauer [aut, cre],
+  Jana Ulrich [aut],
+  Laura Mack [ctb],
+  Oscar E. Jurado [ctb],
+  Christoph Ritschel [aut],
+  Carola Detring [ctb],
+  Sarah Joedicke [ctb]
+Maintainer: Felix S. Fauer <felix.fauer@met.fu-berlin.de>
+Imports: stats, evd, ismev, RcppRoll, pbapply, fastmatch
+License: GPL (>= 2)
+Encoding: UTF-8
+URL: https://gitlab.met.fu-berlin.de/Rpackages/idf_package
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-07-20 11:15:33 UTC; janaulrich
+Repository: CRAN
+Date/Publication: 2022-07-20 14:20:09 UTC

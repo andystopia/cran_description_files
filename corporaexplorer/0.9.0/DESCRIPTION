@@ -1,0 +1,34 @@
+Package: corporaexplorer
+Type: Package
+Title: A 'Shiny' App for Exploration of Text Collections
+Version: 0.9.0
+Authors@R: person("Kristian Lundby", "Gjerde", email = "kristian.gjerde@gmail.com",
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8291-6837"))
+Description: Facilitates dynamic exploration of text collections through an
+    intuitive graphical user interface and the power of regular expressions.
+    The package contains 1) a helper function to convert a data frame to a
+    'corporaexplorerobject' and 2) a 'Shiny' app for fast and flexible exploration
+    of a 'corporaexplorerobject'. The package also includes demo apps with which
+    one can explore Jane Austen's novels and the State of the Union Addresses
+    (data from the 'janeaustenr' and 'sotu' packages respectively).
+Depends: R (>= 3.0.0)
+Imports: data.table, dplyr, ggplot2, lubridate, magrittr, padr, plyr,
+        RColorBrewer, re2, rlang, rmarkdown, scales, shiny,
+        shinydashboard, shinyjs, shinyWidgets, stringi, stringr,
+        tibble, tidyr
+Suggests: janeaustenr, shinytest2, sotu, testthat (>= 3.0.0)
+License: GPL-3 | file LICENSE
+Date/Publication: 2024-09-02 14:50:02 UTC
+LazyData: true
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+URL: https://kgjerde.github.io/corporaexplorer/,
+        https://github.com/kgjerde/corporaexplorer
+BugReports: https://github.com/kgjerde/corporaexplorer/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-02 14:23:02 UTC; kristianlg
+Author: Kristian Lundby Gjerde [aut, cre]
+    (<https://orcid.org/0000-0001-8291-6837>)
+Maintainer: Kristian Lundby Gjerde <kristian.gjerde@gmail.com>
+Repository: CRAN

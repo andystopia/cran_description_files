@@ -1,0 +1,45 @@
+Package: spinBayes
+Type: Package
+Title: Semi-Parametric Gene-Environment Interaction via Bayesian
+        Variable Selection
+Version: 0.2.2
+Authors@R: c(
+  person(given = "Jie", family = "Ren", role = c("aut", "cre"),
+         email = "renjie0910@gmail.com"),
+  person(given = "Fei", family = "Zhou", role = "aut"),
+  person(given = "Xiaoxi", family = "Li", role = "aut"),
+  person(given = "Cen", family = "Wu", role = "aut"),
+  person(given = "Yu", family = "Jiang", role = "aut"))
+Maintainer: Jie Ren <renjie0910@gmail.com>
+Description: Many complex diseases are known to be affected by the interactions between 
+   genetic variants and environmental exposures beyond the main genetic and environmental 
+   effects. Existing Bayesian methods for gene-environment (G×E) interaction studies are 
+   challenged by the high-dimensional nature of the study and the complexity of environmental 
+   influences. We have developed a novel and powerful semi-parametric Bayesian variable 
+   selection method that can accommodate linear and nonlinear G×E interactions simultaneously 
+   (Ren et al. (2020) <doi:10.1002/sim.8434>). Furthermore, the proposed method can conduct 
+   structural identification by distinguishing nonlinear interactions from main effects only 
+   case within Bayesian framework. Spike-and-slab priors are incorporated on both individual 
+   and group level to shrink coefficients corresponding to irrelevant main and interaction 
+   effects to zero exactly. The Markov chain Monte Carlo algorithms of the proposed and 
+   alternative methods are  efficiently implemented in C++. 
+Depends: R (>= 4.0.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo, testthat
+Imports: Rcpp, splines, glmnet, utils, stats, ggplot2
+URL: https://github.com/jrhub/spinBayes
+BugReports: https://github.com/jrhub/spinBayes/issues
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), covr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-02-10 00:29:41 UTC; 17854
+Author: Jie Ren [aut, cre],
+  Fei Zhou [aut],
+  Xiaoxi Li [aut],
+  Cen Wu [aut],
+  Yu Jiang [aut]
+Repository: CRAN
+Date/Publication: 2025-02-10 07:20:02 UTC

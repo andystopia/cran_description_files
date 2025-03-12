@@ -1,0 +1,34 @@
+Package: dttr2
+Title: Manipulate Date, POSIXct and hms Vectors
+Version: 0.5.2
+Authors@R: c(
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = "aut",
+           comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Ayla", "Pearson", , "ayla@poissonconsulting.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7388-1222")),
+    person("Poisson Consulting", role = c("cph", "fnd"))
+  )
+Description: Manipulates date ('Date'), date time ('POSIXct') and time
+    ('hms') vectors.  Date/times are considered discrete and are floored
+    whenever encountered.  Times are wrapped and time zones are maintained
+    unless explicitly altered by the user.
+License: MIT + file LICENSE
+URL: https://github.com/poissonconsulting/dttr2,
+        https://poissonconsulting.github.io/dttr2/
+BugReports: https://github.com/poissonconsulting/dttr2/issues
+Depends: R (>= 4.0)
+Imports: chk (>= 0.9.1), hms, lifecycle
+Suggests: rlang, spelling, testthat (>= 3.0.0)
+RdMacros: lifecycle
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-09-25 23:40:09 UTC; aylapearson
+Author: Joe Thorley [aut] (<https://orcid.org/0000-0002-7683-4592>),
+  Ayla Pearson [aut, cre] (<https://orcid.org/0000-0001-7388-1222>),
+  Poisson Consulting [cph, fnd]
+Maintainer: Ayla Pearson <ayla@poissonconsulting.ca>
+Repository: CRAN
+Date/Publication: 2024-09-26 00:00:02 UTC

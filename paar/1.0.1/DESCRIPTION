@@ -1,0 +1,41 @@
+Package: paar
+Type: Package
+Title: Precision Agriculture Data Analysis
+Version: 1.0.1
+Authors@R: 
+    c(
+    person("Pablo", "Paccioretti", email = "pablopaccioretti@agro.unc.edu.ar", 
+    role = c("aut", "cre", "cph")),
+        person("Mariano", "Córdoba", email = "marianoacba@agro.unc.edu.ar", 
+    role = c("aut")),
+        person("Franca", "Giannini-Kurina", email = "fgkurina@agro.unc.edu.ar", 
+    role = c("aut")),
+    person("Mónica", "Balzarini", email = "monica.balzarini@unc.edu.ar", 
+    role = c("aut"))
+    )
+Description: Precision agriculture spatial data
+ depuration and homogeneous zones (management zone) delineation.
+ The package includes functions that performs protocols for data cleaning
+ management zone delineation and zone comparison; protocols are described in 
+ Paccioretti et al., (2020) <doi:10.1016/j.compag.2020.105556>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: data.table, e1071, gstat, sf, spdep, stats
+Depends: R (>= 2.10)
+Suggests: testthat, concaveman, units, SpatialPack, stars, knitr,
+        rmarkdown, ggplot2
+URL: https://ppaccioretti.github.io/paar/,
+        https://github.com/PPaccioretti/paar
+VignetteBuilder: knitr
+BugReports: https://github.com/PPaccioretti/paar/issues
+NeedsCompilation: no
+Packaged: 2024-07-27 16:14:03 UTC; ariel
+Author: Pablo Paccioretti [aut, cre, cph],
+  Mariano Córdoba [aut],
+  Franca Giannini-Kurina [aut],
+  Mónica Balzarini [aut]
+Maintainer: Pablo Paccioretti <pablopaccioretti@agro.unc.edu.ar>
+Repository: CRAN
+Date/Publication: 2024-07-30 13:10:02 UTC

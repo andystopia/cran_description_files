@@ -1,0 +1,32 @@
+Package: SoilManageR
+Type: Package
+Title: Calculate Soil Management Indicators for Agricultural Practice
+        Assessment
+Version: 1.0.1
+Authors@R: c(
+    person("Olivier", "Heller", email = "olivier.heller@agroscope.admin.ch", role = c("cre","aut"), comment = c(ORCID = "0000-0002-5918-4161")),
+    person("Raphaël", "Wittwer", email = "raphael.witter@agroscope.admin.ch", role = "ctb", comment = c(ORCID = "0000-0002-2129-7195"))
+    )
+Description: Calculate numerical agricultural soil management indicators from on a management timeline of an arable field. Currently, indicators for carbon (C) input into the soil system, soil tillage intensity rating (STIR), number of soil cover and living plant cover days, N fertilization and livestock intensity, and plant diversity are implemented.
+    The functions can also be used independently of the management timeline to calculate some indicators. The package contains tables with reference information for the functions, as well as a '*.xlsx' template to collect the management data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: magrittr (>= 2.0.3), dplyr (>= 1.1.4), lubridate (>= 1.9.2),
+        ggplot2 (>= 3.4.4), ggthemes (>= 5.0.0), tidyr (>= 1.3.0),
+        tibble (>= 3.2.1), readxl (>= 1.4.3), Rdpack (>= 2.6)
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RdMacros: Rdpack
+URL: https://gitlab.com/SoilManageR/
+BugReports: https://gitlab.com/SoilManageR/SoilManageR/-/issues
+NeedsCompilation: no
+Packaged: 2024-09-29 18:51:20 UTC; f80826871
+Author: Olivier Heller [cre, aut] (<https://orcid.org/0000-0002-5918-4161>),
+  Raphaël Wittwer [ctb] (<https://orcid.org/0000-0002-2129-7195>)
+Maintainer: Olivier Heller <olivier.heller@agroscope.admin.ch>
+Repository: CRAN
+Date/Publication: 2024-10-01 10:00:07 UTC

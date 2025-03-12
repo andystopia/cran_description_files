@@ -1,0 +1,23 @@
+Package: vcrpart
+Type: Package
+Title: Tree-Based Varying Coefficient Regression for Generalized Linear
+        and Ordinal Mixed Models
+Version: 1.0-6
+Date: 2024-10-04
+Authors@R: c(
+  person("Reto", "Burgin", role = c("aut", "cre"), email = "rbuergin@gmx.ch", comment = c(ORCID = "0000-0002-6212-1567")),
+  person("Gilbert", "Ritschard", role = c("ctb"), email = "gilbert.ritschard@unige.ch", comment = c(ORCID = "0000-0001-7776-0903")))
+Author: Reto Burgin [aut, cre] (<https://orcid.org/0000-0002-6212-1567>),
+  Gilbert Ritschard [ctb] (<https://orcid.org/0000-0001-7776-0903>)
+Maintainer: Reto Burgin <rbuergin@gmx.ch>
+Description: Recursive partitioning for varying coefficient generalized linear models and ordinal linear mixed models. Special features are coefficient-wise partitioning, non-varying coefficients and partitioning of time-varying variables in longitudinal regression. A description of a part of this package was published by Burgin and Ritschard (2017) <doi:10.18637/jss.v080.i06>.
+License: GPL (>= 2)
+Depends: R (>= 3.1.0), parallel, partykit
+Imports: stats, grid, graphics, methods, nlme (>= 3.1-123), rpart,
+        formula.tools, numDeriv, ucminf, zoo, sandwich, strucchange
+Suggests: xtable, mlbench, Ecdat, RWeka
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2024-10-04 19:27:30 UTC; reto
+Repository: CRAN
+Date/Publication: 2024-10-04 20:10:02 UTC

@@ -1,0 +1,31 @@
+Type: Package
+Package: smartmap
+Title: Smartly Create Maps from R Objects
+Version: 0.1.1
+Authors@R: 
+    person(given = "Stefan",
+           family = "Fleck",
+           role = c("aut", "cre"),
+           email = "stefan.b.fleck@gmail.com",
+           comment = c(ORCID = "0000-0003-3344-9851"))
+Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
+Description: Preview spatial data as 'leaflet' maps with minimal
+  effort. smartmap is optimized for interactive use and distinguishes itself 
+  from similar packages because it does not need real spatial ('sp' or 'sf')
+  objects an input; instead, it tries to automatically coerce everything that 
+  looks like spatial data to sf objects or leaflet maps. It - for example -  
+  supports direct mapping of: a vector containing a single coordinate pair,
+  a two column matrix, a data.frame with longitude and latitude columns, or
+  the path or URL to a (possibly compressed) 'shapefile'.
+License: MIT + file LICENSE
+Imports: leaflet, magrittr, sf, utils
+Suggests: covr, testthat
+Depends: R (>= 3.6.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1.9000
+NeedsCompilation: no
+Packaged: 2020-07-01 14:36:26 UTC; fleck
+Author: Stefan Fleck [aut, cre] (<https://orcid.org/0000-0003-3344-9851>)
+Repository: CRAN
+Date/Publication: 2020-07-02 11:30:09 UTC

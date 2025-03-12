@@ -1,0 +1,35 @@
+Package: grmsem
+Title: Genetic-Relationship-Matrix Structural Equation Modelling
+        (GRMSEM)
+Version: 1.1.0
+Authors@R: c(
+  person("Beate", "StPourcain", email = "Beate.StPourcain@mpi.nl", comment = c(ORCID = "0000-0002-4680-3517"), role = c("aut", "cre")),
+  person("Alexander", "Klassmann", email = "alex.klassmann@koeln.de", role = c("ctb"))
+  )
+Maintainer: Beate StPourcain <Beate.StPourcain@mpi.nl>
+Description: Quantitative genetics tool supporting the modelling of multivariate 
+ genetic variance structures in quantitative data. It allows fitting different 
+ models through multivariate genetic-relationship-matrix (GRM) 
+ structural equation modelling (SEM) in unrelated individuals, 
+ using a maximum likelihood approach. Specifically, 
+ it combines genome-wide genotyping information, as captured by GRMs, 
+ with twin-research-based SEM techniques, 
+ St Pourcain et al. (2017) <doi:10.1016/j.biopsych.2017.09.020>, 
+ Shapland et al. (2020) <doi:10.1101/2020.08.14.251199>.
+Depends: R (>= 3.5)
+Imports: msm (>= 1.6), numDeriv, optimParallel, stats, utils
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: bookdown, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+URL: https://CRAN.R-project.org/package=grmsem,
+        https://gitlab.gwdg.de/beate.stpourcain/grmsem
+BugReports: https://gitlab.gwdg.de/beate.stpourcain/grmsem/-/issues
+Packaged: 2021-01-27 11:16:48 UTC; beapou
+Author: Beate StPourcain [aut, cre] (<https://orcid.org/0000-0002-4680-3517>),
+  Alexander Klassmann [ctb]
+Repository: CRAN
+Date/Publication: 2021-01-29 09:20:08 UTC

@@ -1,0 +1,68 @@
+Package: spatialreg
+Version: 1.3-6
+Date: 2024-12-02
+Title: Spatial Regression Analysis
+Encoding: UTF-8
+Authors@R: c(person("Roger", "Bivand", role = c("cre", "aut"), email = "Roger.Bivand@nhh.no", comment=c(ORCID="0000-0003-2392-6140")),
+             person(given = "Gianfranco", family = "Piras", role = c("aut"), email = "gpiras@mac.com"),
+             person("Luc", "Anselin", role = "ctb"),
+             person("Andrew", "Bernat", role = "ctb"),
+             person("Eric", "Blankmeyer", role = "ctb"),
+             person("Yongwan", "Chun", role = "ctb"),
+             person("Virgilio", "Gómez-Rubio", role = "ctb"),
+             person("Daniel", "Griffith", role = "ctb"),
+             person("Martin", "Gubri", role = "ctb"),
+             person("Rein", "Halbersma", role = "ctb"),
+             person("James", "LeSage", role = "ctb"),
+             person("Angela", "Li", role = "ctb"),
+	     person("Hongfei", "Li", role = "ctb"),
+             person("Jielai", "Ma", role = "ctb"),
+             person("Abhirup", "Mallik", role = c("ctb", "trl")),
+             person("Giovanni", "Millo", role = "ctb"),
+             person("Kelley", "Pace", role = "ctb"),
+	     person("Josiah", "Parry", role = "ctb", comment = c(ORCID = "0000-0001-9910-865X")),
+             person("Pedro", "Peres-Neto", role = "ctb"),
+             person("Tobias", "Rüttenauer", role = "ctb"),
+             person(given = "Mauricio", family = "Sarrias", role = c("ctb"), email = "mauricio.sarrias@ucn.cl"),
+             person(given = "JuanTomas", family = "Sayago", role = c("ctb"), email = "juantomas.sayago@gmail.com"),
+             person("Michael", "Tiefelsdorf", role = "ctb"))
+Depends: R (>= 3.3.0), spData (>= 2.3.1), Matrix, sf
+Imports: spdep (>= 1.3-1), coda, methods, MASS, boot, splines,
+        LearnBayes, nlme, multcomp
+Suggests: parallel, RSpectra, tmap, foreign, spam, knitr, lmtest, expm,
+        sandwich, rmarkdown, igraph (>= 2.0.0), tinytest
+Description: A collection of all the estimation functions for spatial cross-sectional models (on lattice/areal data using spatial weights matrices) contained up to now in 'spdep'. These model fitting functions include maximum likelihood methods for cross-sectional models proposed by 'Cliff' and 'Ord' (1973, ISBN:0850860369) and (1981, ISBN:0850860814), fitting methods initially described by 'Ord' (1975) <doi:10.1080/01621459.1975.10480272>. The models are further described by 'Anselin' (1988) <doi:10.1007/978-94-015-7799-1>. Spatial two stage least squares and spatial general method of moment models initially proposed by 'Kelejian' and 'Prucha' (1998) <doi:10.1023/A:1007707430416> and (1999) <doi:10.1111/1468-2354.00027> are provided. Impact methods and MCMC fitting methods proposed by 'LeSage' and 'Pace' (2009) <doi:10.1201/9781420064254> are implemented for the family of cross-sectional spatial regression models. Methods for fitting the log determinant term in maximum likelihood and MCMC fitting are compared by 'Bivand et al.' (2013) <doi:10.1111/gean.12008>, and model fitting methods by 'Bivand' and 'Piras' (2015) <doi:10.18637/jss.v063.i18>; both of these articles include extensive lists of references. A recent review is provided by 'Bivand', 'Millo' and 'Piras' (2021) <doi:10.3390/math9111276>. 'spatialreg' >= 1.1-* corresponded to 'spdep' >= 1.1-1, in which the model fitting functions were deprecated and passed through to 'spatialreg', but masked those in 'spatialreg'. From versions 1.2-*, the functions have been made defunct in 'spdep'. From version 1.3-6, add Anselin-Kelejian (1997) test to `stsls` for residual spatial autocorrelation <doi:10.1177/016001769702000109>.
+License: GPL-2
+URL: https://github.com/r-spatial/spatialreg/,
+        https://r-spatial.github.io/spatialreg/
+BugReports: https://github.com/r-spatial/spatialreg/issues/
+VignetteBuilder: knitr
+NeedsCompilation: yes
+RoxygenNote: 6.1.1
+Packaged: 2024-12-02 09:58:24 UTC; rsb
+Author: Roger Bivand [cre, aut] (<https://orcid.org/0000-0003-2392-6140>),
+  Gianfranco Piras [aut],
+  Luc Anselin [ctb],
+  Andrew Bernat [ctb],
+  Eric Blankmeyer [ctb],
+  Yongwan Chun [ctb],
+  Virgilio Gómez-Rubio [ctb],
+  Daniel Griffith [ctb],
+  Martin Gubri [ctb],
+  Rein Halbersma [ctb],
+  James LeSage [ctb],
+  Angela Li [ctb],
+  Hongfei Li [ctb],
+  Jielai Ma [ctb],
+  Abhirup Mallik [ctb, trl],
+  Giovanni Millo [ctb],
+  Kelley Pace [ctb],
+  Josiah Parry [ctb] (<https://orcid.org/0000-0001-9910-865X>),
+  Pedro Peres-Neto [ctb],
+  Tobias Rüttenauer [ctb],
+  Mauricio Sarrias [ctb],
+  JuanTomas Sayago [ctb],
+  Michael Tiefelsdorf [ctb]
+Maintainer: Roger Bivand <Roger.Bivand@nhh.no>
+Repository: CRAN
+Date/Publication: 2024-12-02 11:50:02 UTC

@@ -1,0 +1,33 @@
+Package: aggutils
+Title: Utilities for Aggregating Probabilistic Forecasts
+Version: 1.0.2
+Authors@R: c(
+    person(given = "Molly",
+           family = "Hickman",
+           role = c("aut", "cre"),
+           email = "molly@forecastingresearch.org",
+           comment = c(ORCID = "0009-0007-5144-0080")),
+    person(given = "Zach",
+           family = "Jacobs", 
+            email = "zach@forecastingresearch.org", 
+            role = c("aut")))
+URL: https://github.com/forecastingresearch/aggutils
+BugReports: https://github.com/forecastingresearch/aggutils/issues
+Description: Provides several methods for aggregating probabilistic forecasts. You have a group of
+    people who have made probabilistic forecasts for the same event. You want to take advantage of
+    the "wisdom of the crowd" and combine these forecasts in some sensible way. This package
+    provides implementations of several strategies, including geometric mean of odds, an extremized
+    aggregate (Neyman, Roughgarden (2021) <doi:10.1145/3490486.3538243>), and "high-density trimmed
+    mean" (Powell et al. (2022) <doi:10.1037/dec0000191>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: stats, docstring
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2023-08-22 14:54:52 UTC; molly
+Author: Molly Hickman [aut, cre] (<https://orcid.org/0009-0007-5144-0080>),
+  Zach Jacobs [aut]
+Maintainer: Molly Hickman <molly@forecastingresearch.org>
+Repository: CRAN
+Date/Publication: 2023-08-22 18:30:12 UTC

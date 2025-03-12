@@ -1,0 +1,41 @@
+Package: synthesisr
+Type: Package
+Title: Import, Assemble, and Deduplicate Bibliographic Datasets
+Version: 0.3.0
+Authors@R: c(
+  person(
+    given = "Martin",
+    family = "Westgate",
+    role = c("aut", "cre"),
+    email = "martinjwestgate@gmail.com",
+    comment = c(ORCID = "0000-0003-0854-2034")),
+  person(
+    given = "Eliza",
+    family = "Grames",
+    role = c("aut"),
+    email = "eliza.grames@uconn.edu",
+    comment = c(ORCID = "0000-0003-1743-6815")))
+Description: A critical first step in systematic literature reviews
+  and mining of academic texts is to identify relevant texts from a range
+  of sources, particularly databases such as 'Web of Science' or 'Scopus'.
+  These databases often export in different formats or with different metadata
+  tags. 'synthesisr' expands on the tools outlined by Westgate (2019)
+  <doi:10.1002/jrsm.1374> to import bibliographic data from a range of formats
+  (such as 'bibtex', 'ris', or 'ciw') in a standard way, and allows merging
+  and deduplication of the resulting dataset.
+Depends: R (>= 3.5.0)
+Imports: stringdist
+Suggests: knitr, rmarkdown, testthat
+Date: 2020-05-18
+License: GPL-3
+LazyData: true
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2020-05-28 23:11:25 UTC; martin_westgate
+Author: Martin Westgate [aut, cre] (<https://orcid.org/0000-0003-0854-2034>),
+  Eliza Grames [aut] (<https://orcid.org/0000-0003-1743-6815>)
+Maintainer: Martin Westgate <martinjwestgate@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-03 16:30:03 UTC

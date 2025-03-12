@@ -1,0 +1,29 @@
+Package: stacomirtools
+Version: 0.6.0.1
+Date: 2022-04-28
+Title: Connection Class for Package stacomiR
+Authors@R: c(
+              person("Cedric", "Briand", role = c("aut", "cre"), email = "cedric.briand00@gmail.com"),
+              person("Marion", "Legrand", role = "aut", email = "tableau-salt-loire@logrami.fr"),
+              person("Beaulaton", "Laurent", role = "ctb", email = "laurent.beaulaton@ofb.gouv.fr"))
+Author: Cedric Briand [aut, cre],
+  Marion Legrand [aut],
+  Beaulaton Laurent [ctb]
+Maintainer: Cedric Briand <cedric.briand00@gmail.com>
+Description: S4 class wrappers for the 'ODBC' and Pool DBI connection, also provides some 
+    utilities to paste small datasets to clipboard, rename columns. It is used by the package 'stacomiR' for
+    connections to the database. Development versions of 'stacomiR' are available in R-forge.
+License: GPL (>= 2)
+Collate: 'ConnectionODBC.R' 'RequeteODBC.R' 'RequeteODBCwhere.R'
+        'RequeteODBCwheredate.R' 'utilities.R' 'stacomirtools.R'
+        'stacomirtools-package.R''ConnectionDB.R' 'RequeteDB.R'
+        'RequeteDBwhere.R' 'RequeteDBwheredate.R' 'zzz.R'
+LazyLoad: yes
+Depends: RODBC, DBI, pool
+Imports: methods, xtable, utils, RPostgres
+Suggests: testthat, withr
+NeedsCompilation: no
+RoxygenNote: 7.1.2
+Packaged: 2022-04-29 10:00:13 UTC; cedric.briand
+Repository: CRAN
+Date/Publication: 2022-04-29 11:40:02 UTC

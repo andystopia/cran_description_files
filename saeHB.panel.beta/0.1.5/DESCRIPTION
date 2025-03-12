@@ -1,0 +1,36 @@
+Type: Package
+Package: saeHB.panel.beta
+Title: Small Area Estimation using HB for Rao Yu Model under Beta
+        Distribution
+Version: 0.1.5
+Authors@R: c(
+    person("Dian Rahmawati", "Salis", , "dianrahmawatisalis03@gmail.com", role = c("aut", "cre")),
+    person("Azka", "Ubaidillah", role = "aut")
+  )
+Maintainer: Dian Rahmawati Salis <dianrahmawatisalis03@gmail.com>
+Description: Several functions are provided for small area estimation at
+    the area level using the hierarchical bayesian (HB) method with panel
+    data under beta distribution for variable interest. This package also
+    provides a dataset produced by data generation. The 'rjags' package is
+    employed to obtain parameter estimates. Model-based estimators involve
+    the HB estimators, which include the mean and the variation of the
+    mean. For the reference, see Rao and Molina (2015, ISBN:
+    978-1-118-73578-7).
+License: GPL-3
+URL: https://github.com/DianRahmawatiSalis/saeHB.panel.beta
+BugReports: https://github.com/DianRahmawatiSalis/saeHB.panel.beta/issues
+Depends: R(>= 2.10)
+Imports: coda, dplyr, graphics, grDevices, rjags, stats, stringr
+Suggests: knitr, R.rsp, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr, R.rsp
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 7.3.1
+SystemRequirements: JAGS (http://mcmc-jags.sourceforge.net)
+Packaged: 2024-09-04 10:38:04 UTC; LenovO
+Author: Dian Rahmawati Salis [aut, cre],
+  Azka Ubaidillah [aut]
+Repository: CRAN
+Date/Publication: 2024-09-04 11:00:02 UTC

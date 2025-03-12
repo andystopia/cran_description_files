@@ -1,0 +1,43 @@
+Package: fuseMLR
+Type: Package
+Title: Fusing Machine Learning in R
+Version: 0.0.1
+Authors@R: c(person(given = c("Cesaire", "J."),
+                      family = c("K.", "Fouodo"),
+                      role = c("aut", "cre"),
+                      email = "cesaire.kuetefouodo@uni-luebeck.de")
+            )
+Maintainer: Cesaire J. K. Fouodo <cesaire.kuetefouodo@uni-luebeck.de>
+Description: Recent technological advances have enable the simultaneous collection
+    of multi-omics data i.e., different types or modalities of molecular data, 
+    presenting challenges for integrative prediction modeling due to the heterogeneous,
+    high-dimensional nature and possible missing modalities of some individuals. 
+    We introduce this package for late integrative prediction modeling, enabling 
+    modality-specific variable selection and prediction modeling, followed by the 
+    aggregation of the modality-specific predictions to train a final meta-model. 
+    This package facilitates conducting late integration predictive modeling in a 
+    systematic, structured, and reproducible way.
+License: GPL-3
+Encoding: UTF-8
+Imports: R6, stats, digest
+Suggests: testthat (>= 3.0.0), UpSetR (>= 1.4.0), caret, ranger,
+        glmnet, Boruta, knitr, rmarkdown, pROC, checkmate
+Config/testthat/edition: 3
+Depends: R (>= 3.6.0)
+RoxygenNote: 7.3.2
+Collate: 'Data.R' 'HashTable.R' 'Lrner.R' 'Model.R' 'PredictData.R'
+        'PredictLayer.R' 'PredictMetaLayer.R' 'Predicting.R' 'Target.R'
+        'TestData.R' 'TestLayer.R' 'TestMetaLayer.R' 'Testing.R'
+        'TrainData.R' 'TrainLayer.R' 'TrainMetaLayer.R' 'Training.R'
+        'VarSel.R' 'bestLayerLearner.R' 'cobra.R' 'createCobraPred.R'
+        'createDif.R' 'createLoss.R' 'createWeights.R' 'multi_omics.R'
+        'predict.bestLayerLearner.R' 'predict.cobra.R'
+        'weightedMeanLearner.R' 'predict.weightedMeanLearner.R'
+        'testingFunctions.R' 'trainingFunctions.R'
+VignetteBuilder: knitr, rmarkdown
+BugReports: https://github.com/imbs-hl/fuseMLR/issues
+NeedsCompilation: no
+Packaged: 2024-12-15 04:36:16 UTC; fouodo
+Author: Cesaire J. K. Fouodo [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-12-17 09:20:02 UTC

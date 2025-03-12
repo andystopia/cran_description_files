@@ -1,0 +1,33 @@
+Package: SIMPLE.REGRESSION
+Type: Package
+Title: OLS, Moderated, Logistic, and Count Regressions Made Simple
+Version: 0.2.1
+Date: 2025-01-11
+Authors@R: person(given = c("Brian", "P."), 
+                  family = "O'Connor", 
+                  role =c("aut","cre"), 
+                  email="brian.oconnor@ubc.ca" )
+Author: Brian P. O'Connor [aut, cre]
+Maintainer: Brian P. O'Connor  <brian.oconnor@ubc.ca>
+Description: Provides SPSS- and SAS-like output for least squares multiple regression,
+    logistic regression, and count variable regressions. Detailed output is also provided for
+    OLS moderated regression, interaction plots, and Johnson-Neyman
+    regions of significance. The output includes standardized
+    coefficients, partial and semi-partial correlations, collinearity diagnostics,
+    plots of residuals, and detailed information about simple slopes for interactions. 
+    The output for some functions includes Bayes Factors and, if requested,  
+    regression coefficients from Bayesian Markov Chain Monte Carlo analyses.
+    There are numerous options for model plots.
+    The REGIONS_OF_SIGNIFICANCE function also provides
+    Johnson-Neyman regions of significance and plots of interactions for both lm
+    and lme models.
+Imports: graphics, stats, utils, nlme, MASS, BayesFactor, rstanarm,
+        pscl
+Depends: R (>= 2.10)
+LazyLoad: yes
+LazyData: yes
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2025-01-12 00:12:27 UTC; brianoconnor
+Repository: CRAN
+Date/Publication: 2025-01-12 00:40:02 UTC

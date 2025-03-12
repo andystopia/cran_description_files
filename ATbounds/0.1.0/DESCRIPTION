@@ -1,0 +1,28 @@
+Package: ATbounds
+Type: Package
+Title: Bounding Treatment Effects by Limited Information Pooling
+Version: 0.1.0
+Authors@R: c(
+    person("Sokbae", "Lee", email = "sl3841@columbia.edu", role = c("aut", "cre")),
+    person("Martin", "Weidner", email = "martin.weidner@economics.ox.ac.uk", role = "aut"))
+Description: Estimation and inference methods for bounding average treatment effects (on the treated) that are valid under an unconfoundedness assumption. 
+    The bounds are designed to be robust in challenging situations, for example, when the conditioning variables take on a large number of different values in the observed sample, or when the overlap condition is violated. 
+    This robustness is achieved by only using limited "pooling" of information across observations. 
+    For more details, see the paper by Lee and Weidner (2021), "Bounding Treatment Effects by Pooling Limited Information across Observations," <arXiv:2111.05243>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: stats, mgcv
+Suggests: knitr, rmarkdown, testthat, ggplot2
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+URL: https://github.com/ATbounds/ATbounds-r/
+BugReports: https://github.com/ATbounds/ATbounds-r/issues
+NeedsCompilation: no
+Packaged: 2021-11-24 15:56:00 UTC; sokbaelee
+Author: Sokbae Lee [aut, cre],
+  Martin Weidner [aut]
+Maintainer: Sokbae Lee <sl3841@columbia.edu>
+Repository: CRAN
+Date/Publication: 2021-11-24 19:00:02 UTC

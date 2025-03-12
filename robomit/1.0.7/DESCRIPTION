@@ -1,0 +1,26 @@
+Package: robomit
+Version: 1.0.7
+Date: 2025-01-12
+Title: Robustness Checks for Omitted Variable Bias
+Authors@R: c(
+           person(given = "Sergei",
+           family = "Schaub",
+           role = c("aut", "cre"),
+           email = "sergei.schaub@agroscope.admin.ch",
+           comment = c(ORCID = "0000-0001-8477-3737")),
+           person("ETH Zurich",
+           role = c("cph"))
+           )
+Maintainer: Sergei Schaub <sergei.schaub@agroscope.admin.ch>
+Description: Robustness checks for omitted variable bias. The package includes robustness checks proposed by Oster (2019). The 'robomit' package computes i) the bias-adjusted treatment correlation or effect and ii) the degree of selection on unobservables relative to observables (with respect to the treatment variable) that would be necessary to eliminate the result based on the framework by Oster (2019). The code is based on the 'psacalc' command in 'Stata'. Additionally, 'robomit' offers a set of sensitivity analysis and visualization functions. See Oster, E. 2019. <doi:10.1080/07350015.2016.1227711>. Additionally, see Diegert, P., Masten, M. A., & Poirier, A. (2022) for a recent discussion of the topic: <doi:10.48550/arXiv.2206.02303>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: plm, dplyr, ggplot2, broom, tidyr, tibble, stats,
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2025-01-31 16:37:37 UTC; f80866559
+Author: Sergei Schaub [aut, cre] (<https://orcid.org/0000-0001-8477-3737>),
+  ETH Zurich [cph]
+Repository: CRAN
+Date/Publication: 2025-01-31 17:20:02 UTC

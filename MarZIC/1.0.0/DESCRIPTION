@@ -1,0 +1,36 @@
+Package: MarZIC
+Type: Package
+Title: Marginal Mediation Effects with Zero-Inflated Compositional
+        Mediator
+Version: 1.0.0
+Authors@R: c(person(given = "Quran",
+           family = "Wu",
+           role = c("aut"),
+           email = "wuquran@ufl.edu"),
+           person(given = "Zhigang",
+           family = "Li",
+           role = c("aut", "cre"),
+           email = "lzg2151@gmail.com")
+           )
+Description: A way to estimate and test marginal mediation effects for 
+             zero-inflated compositional mediators. Estimates of Natural Indirect Effect (NIE),
+             Natural Direct Effect (NDE) of each taxon, as well as their standard errors and 
+             confident intervals, were provided as outputs. Zeros will not be imputed during 
+             analysis. See Wu et al. (2022) <doi:10.3390/genes13061049>. 
+URL: https://www.mdpi.com/2073-4425/13/6/1049
+License: GPL-2
+Imports: Rcpp (>= 1.0.9), NlcOptim, betareg, doParallel, foreach,
+        pracma, mathjaxr, dirmult, stats, parallel
+Suggests: knitr, rmarkdown, RUnit, BiocGenerics, BiocStyle
+VignetteBuilder: knitr
+RdMacros: mathjaxr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2023-12-03 10:10:05 UTC; quranwu
+Author: Quran Wu [aut],
+  Zhigang Li [aut, cre]
+Maintainer: Zhigang Li <lzg2151@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-04 20:00:02 UTC

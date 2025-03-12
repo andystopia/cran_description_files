@@ -1,0 +1,25 @@
+Package: DHSr
+Type: Package
+Title: Create Large Scale Repeated Regression Summary Statistics
+        Dataset and Visualization Seamlessly
+Version: 0.1.0
+Authors@R: person(given = "Arnab",
+                  family = "Samanta",
+                  role = c("aut", "cre"),
+                  email = "arnob.shamanta62@gmail.com",
+                  comment = "<arnob.shamanta62@gmail.com>")
+Maintainer: Arnab Samanta <arnob.shamanta62@gmail.com>
+Description: Mapping, spatial analysis, and statistical modeling of microdata from sources such as the Demographic and Health Surveys <https://www.dhsprogram.com/> and Integrated Public Use Microdata Series <https://www.ipums.org/>. It can also be extended to other datasets. The package supports spatial correlation index construction and visualization, along with empirical Bayes approximation of regression coefficients in a multistage setup.  The main functionality is repeated regression — for example, if we have to run regression for n groups, the group ID should be vertically composed into the variable for the parameter `location_var`. It can perform various kinds of regression, such as Generalized Regression Models, logit, probit, and more. Additionally, it can incorporate interaction effects. The key benefit of the package is its ability to store the regression results performed repeatedly on a dataset by the group ID, along with respective p-values and map those estimates. 
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: dplyr, ggplot2, rlang, sf, spdep, viridis, nlme, MuMIn, tidyr,
+        stats
+Suggests: knitr, spData, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-09 17:34:14 UTC; 91911
+Author: Arnab Samanta [aut, cre] (<arnob.shamanta62@gmail.com>)
+Repository: CRAN
+Date/Publication: 2025-01-10 15:00:06 UTC

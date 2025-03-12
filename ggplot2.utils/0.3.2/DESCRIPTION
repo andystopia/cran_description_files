@@ -1,0 +1,45 @@
+Type: Package
+Package: ggplot2.utils
+Title: Selected Utilities Extending 'ggplot2'
+Version: 0.3.2
+Date: 2024-06-25
+Authors@R: c(
+    person("Daniel", "Sabanés Bové", , "daniel.sabanes_bove@rconis.com", role = c("aut", "cre")),
+    person("Samer", "Mouksassi", role = "aut",
+           comment = "wrote original Kaplan-Meier code"),
+    person("Michael", "Sachs", role = "aut",
+           comment = "wrote original Kaplan-Meier code"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: Selected utilities, in particular 'geoms' and 'stats'
+    functions, extending the 'ggplot2' package. This package imports
+    functions from 'EnvStats' <doi:10.1007/978-1-4614-8456-1> by Millard
+    (2013), 'ggpp' <https://CRAN.R-project.org/package=ggpp> by Aphalo et
+    al. (2023) and 'ggstats' <doi:10.5281/zenodo.10183964> by Larmarange
+    (2023), and then exports them. This package also contains modified
+    code from 'ggquickeda' <https://CRAN.R-project.org/package=ggquickeda>
+    by Mouksassi et al. (2023) for Kaplan-Meier lines and ticks additions
+    to plots.  All functions are tested to make sure that they work
+    reliably.
+License: Apache License 2.0
+URL: https://insightsengineering.github.io/ggplot2.utils/
+BugReports: https://github.com/insightsengineering/ggplot2.utils/issues
+Depends: ggplot2 (>= 3.3.0), R (>= 3.6)
+Imports: checkmate, EnvStats, ggpp, ggstats, survival
+Suggests: dplyr, lifecycle, testthat (>= 3.0.0), tibble, vdiffr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+Collate: 'geom_km.R' 'geom_km_ticks.R' 'geom_table.R' 'ggproto.R'
+        'package.R' 'stat_km_compute.R' 'stat_km.R' 'stat_km_ticks.R'
+        'stat_n_text.R' 'stat_prop.R' 'table_themes.R' 'ttheme_set.R'
+NeedsCompilation: no
+Packaged: 2024-06-25 20:16:04 UTC; sabanesd
+Author: Daniel Sabanés Bové [aut, cre],
+  Samer Mouksassi [aut] (wrote original Kaplan-Meier code),
+  Michael Sachs [aut] (wrote original Kaplan-Meier code),
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Daniel Sabanés Bové <daniel.sabanes_bove@rconis.com>
+Repository: CRAN
+Date/Publication: 2024-06-25 21:10:02 UTC

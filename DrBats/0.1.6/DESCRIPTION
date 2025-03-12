@@ -1,0 +1,35 @@
+Package: DrBats
+Type: Package
+Title: Data Representation: Bayesian Approach That's Sparse
+Version: 0.1.6
+Authors@R: c(
+  person("Gabrielle", "Weinrott", email = "gabrielle.weinrott@supagro.inra.fr", role = "aut"),
+  person("Brigitte", "Charnomordic", email = "bch@supagro.inra.fr", role = "ctr"),
+  person("Benedicte", "Fontez", email = "benedicte.fontez@supagro.fr", role = c("cre", "aut")),
+  person("Nadine", "Hilgert", email = "nadine.hilgert@inrae.fr", role = "ctr"),
+  person("Susan", "Holmes", email = "susan@stat.stanford.edu", role = "ctr"),
+  person("Isabelle", "Sanchez", email = "isabelle.sanchez@inrae.fr", role = "ctr"))
+Maintainer: Benedicte Fontez <benedicte.fontez@supagro.fr>
+Description: Feed longitudinal data into a Bayesian Latent Factor Model to obtain 
+  a low-rank representation. Parameters are estimated using a Hamiltonian 
+  Monte Carlo algorithm with STAN. See G. Weinrott, B. Fontez, N. Hilgert and 
+  S. Holmes, "Bayesian Latent Factor Model for Functional Data Analysis", 
+  Actes des JdS 2016.
+Depends: R (>= 3.1.0), rstan
+Imports: ade4, coda, MASS, Matrix, sde
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+Suggests: fda, ggplot2, knitr, parallel, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Author: Gabrielle Weinrott [aut],
+  Brigitte Charnomordic [ctr],
+  Benedicte Fontez [cre, aut],
+  Nadine Hilgert [ctr],
+  Susan Holmes [ctr],
+  Isabelle Sanchez [ctr]
+RoxygenNote: 7.1.2
+Packaged: 2022-02-02 15:48:37 UTC; sanchez
+Repository: CRAN
+Date/Publication: 2022-02-13 19:00:12 UTC

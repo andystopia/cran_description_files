@@ -1,0 +1,30 @@
+Package: DPQmpfr
+Title: DPQ (Density, Probability, Quantile) Distribution Computations
+        using MPFR
+Version: 0.3-3
+VersionNote: Last CRAN: 0.3-2 on 2023-12-05; 0.3-1 on 2021-05-17
+Date: 2024-08-19
+Authors@R: person("Martin","Maechler", role=c("aut","cre"),
+   email="maechler@stat.math.ethz.ch", comment = c(ORCID = "0000-0002-8685-9910"))
+Description: An extension to the 'DPQ' package with computations for 'DPQ'
+  (Density (pdf), Probability (cdf) and Quantile) functions, where
+  the functions here partly use the 'Rmpfr' package and hence the
+  underlying 'MPFR' and 'GMP' C libraries.
+Depends: R (>= 3.6.0)
+Imports: DPQ (>= 0.5-3), Rmpfr (>= 0.9-0), gmp (>= 0.6-4), sfsmisc,
+        stats, graphics, methods, utils
+Suggests: Matrix
+SuggestsNote: Matrix for its test-tools-1.R
+License: GPL (>= 2)
+Encoding: UTF-8
+URL: https://specfun.r-forge.r-project.org/,
+        https://r-forge.r-project.org/R/?group_id=611,
+        https://r-forge.r-project.org/scm/viewvc.php/pkg/DPQmpfr/?root=specfun,
+        svn://svn.r-forge.r-project.org/svnroot/specfun/pkg/DPQmpfr
+BugReports: https://r-forge.r-project.org/tracker/?atid=2462&group_id=611
+NeedsCompilation: no
+Packaged: 2024-08-19 12:46:01 UTC; maechler
+Author: Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>)
+Maintainer: Martin Maechler <maechler@stat.math.ethz.ch>
+Repository: CRAN
+Date/Publication: 2024-08-19 13:50:06 UTC

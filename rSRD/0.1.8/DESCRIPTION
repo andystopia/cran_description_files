@@ -1,0 +1,75 @@
+Package: rSRD
+Type: Package
+Title: Sum of Ranking Differences Statistical Test
+Version: 0.1.8
+Authors@R: c(person(given = "Jochen",
+					family = "Staudacher",
+					role =  c("aut","cph","cre"),
+					email = "jochen.staudacher@hs-kempten.de",
+					comment = c(ORCID = "0000-0002-0619-4606")),
+			 person(given = c("Balázs", "R."), 
+					family = "Sziklai", 
+					role = c("aut","cph"),
+                    email = "sziklai.balazs@krtk.hu",
+					comment = c(ORCID = "0000-0002-0068-8920")), 
+			 person(given = "Linus", 
+			        family = "Olsson", 
+					role = c("aut", "cph"),
+				    email = "linusmeol@gmail.com"),
+			 person(given = "Dennis", 
+			        family = "Horn", 
+					role = "ctb"),		 
+			 person(given = "Alexander", 
+			        family = "Pothmann", 
+					role = "ctb"),
+			 person(given = "Ali Tugay", 
+			        family = "Sen", 
+					role = "ctb"),
+			 person(given = "Attila", 
+			        family = "Gere", 
+					role = "ctb",
+					comment = c(ORCID = "0000-0003-3075-1561")),
+			 person(given = "Károly", 
+			        family = "Hébeger", 
+					role = "ctb",
+					comment = c(ORCID = "0000-0003-0965-939X"))
+			)
+Maintainer: Jochen Staudacher <jochen.staudacher@hs-kempten.de>
+Description: We provide an implementation for Sum of Ranking Differences (SRD), 
+    a novel statistical test introduced by Héberger (2010) 
+    <doi:10.1016/j.trac.2009.09.009>. The test allows the comparison of 
+    different solutions through a reference by first performing a rank 
+    transformation on the input, then calculating and comparing the distances 
+    between the solutions and the reference - the latter is measured in the 
+    L1 norm. The reference can be an external benchmark (e.g. an established 
+    gold standard) or can be aggregated from the data. The calculated distances, 
+    called SRD scores, are validated in two ways, see Héberger and Kollár-Hunek 
+    (2011) <doi:10.1002/cem.1320>. A randomization test (also called permutation 
+    test) compares the SRD scores of the solutions to the SRD scores of randomly 
+    generated rankings. The second validation option is cross-validation that 
+    checks whether the rankings generated from the solutions come from the same 
+    distribution or not. For a detailed analysis about the cross-validation 
+    process see Sziklai, Baranyi and Héberger (2021) 
+    <doi:10.48550/arXiv.2105.11939>. The package offers a wide array of 
+    features related to SRD including the computation of the SRD scores, 
+    validation options, input preprocessing and plotting tools. 
+License: GPL-3
+Encoding: UTF-8
+LinkingTo: Rcpp
+Imports: Rcpp, dplyr, janitor, tibble, ggplot2, stringr, methods,
+        rlang, ggrepel, gplots
+SystemRequirements: C++17, Rtools (>= 4.2) for Windows
+NeedsCompilation: yes
+RoxygenNote: 7.2.0
+Packaged: 2024-11-01 19:01:27 UTC; Jochen
+Author: Jochen Staudacher [aut, cph, cre]
+    (<https://orcid.org/0000-0002-0619-4606>),
+  Balázs R. Sziklai [aut, cph] (<https://orcid.org/0000-0002-0068-8920>),
+  Linus Olsson [aut, cph],
+  Dennis Horn [ctb],
+  Alexander Pothmann [ctb],
+  Ali Tugay Sen [ctb],
+  Attila Gere [ctb] (<https://orcid.org/0000-0003-3075-1561>),
+  Károly Hébeger [ctb] (<https://orcid.org/0000-0003-0965-939X>)
+Repository: CRAN
+Date/Publication: 2024-11-01 19:20:02 UTC

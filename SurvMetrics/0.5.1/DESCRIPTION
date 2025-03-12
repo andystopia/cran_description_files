@@ -1,0 +1,35 @@
+Package: SurvMetrics
+Type: Package
+Title: Predictive Evaluation Metrics in Survival Analysis
+Version: 0.5.1
+Date: 2025-01-16
+Authors@R: c( person("Hanpu", "Zhou", role = c("aut"), email = "974637739@qq.com"),
+              person("Xuewei", "Cheng", role = c("aut"), email = "xwcheng@hunnu.edu.cn"),
+              person("Sizheng", "Wang", role = c("aut"), email = "964555106@qq.com"),
+              person("Yi", "Zou", role = c("aut"), email = "2584695843@qq.com") ,
+              person("Hong", "Wang", role = c("aut","cre"), email = "wh@csu.edu.cn")			  
+              )
+Author: Hanpu Zhou [aut],
+  Xuewei Cheng [aut],
+  Sizheng Wang [aut],
+  Yi Zou [aut],
+  Hong Wang [aut, cre]
+Maintainer: Hong Wang <wh@csu.edu.cn>
+Description: An implementation of popular evaluation metrics that are commonly used in survival prediction including Concordance Index, Brier Score, Integrated Brier Score, 
+  Integrated Square Error, Integrated Absolute Error and Mean Absolute Error.
+  For a detailed information, see (Ishwaran H, Kogalur UB, Blackstone EH and Lauer MS (2008) <doi:10.1214/08-AOAS169>) , 
+  (Moradian H, Larocque D and Bellavance F (2017) <doi:10.1007/s10985-016-9372-1>), (Hanpu Zhou, Hong Wang, Sizheng Wang and Yi Zou (2023) <doi:10.32614/rj-2023-009>) for different evaluation metrics.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: survminer, stats, survival, MASS,pec
+Suggests: knitr, rmarkdown, caret, ggplot2, ggpubr, randomForestSRC,
+        testthat (>= 3.0.0)
+NeedsCompilation: no
+URL: https://github.com/whcsu/SurvMetrics
+Packaged: 2025-02-04 12:39:33 UTC; flood
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.3.2
+Repository: CRAN
+Date/Publication: 2025-02-05 11:50:28 UTC

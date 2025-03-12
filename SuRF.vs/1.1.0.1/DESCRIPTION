@@ -1,0 +1,18 @@
+Package: SuRF.vs
+Title: Subsampling Ranking Forward Selection (SuRF)
+Version: 1.1.0.1
+Authors@R: c(person("Lihui", "Liu", email = "", role = c("aut")),person("Toby", "Kenney", email = "tkenney@mathstat.dal.ca", role = c("aut","cre")))
+Maintainer: Toby Kenney <tkenney@mathstat.dal.ca>
+Depends: R (>= 3.2.3)
+Imports: glmnet, survival, dplyr
+Suggests: foreach, parallel, doParallel, knitr
+Author: Lihui Liu [aut],
+  Toby Kenney [aut, cre]
+Description: Performs variable selection based on subsampling, ranking forward selection. Details of the method are published in Lihui Liu, Hong Gu, Johan Van Limbergen, Toby Kenney (2020) SuRF: A new method for sparse variable selection, with application in microbiome data analysis  Statistics in Medicine 40 897-919 <doi:10.1002/sim.8809>. Xo is the matrix of predictor variables. y is the response variable. Currently only binary responses using logistic regression are supported. X is a matrix of additional predictors which should be scaled to have sum 1 prior to analysis. fold is the number of folds for cross-validation. Alpha is the parameter for the elastic net method used in the subsampling procedure: the default value of 1 corresponds to LASSO. prop is the proportion of variables to remove in the each subsample. weights indicates whether observations should be weighted by class size. When the class sizes are unbalanced, weighting observations can improve results. B is the number of subsamples to use for ranking the variables. C is the number of permutations to use for estimating the critical value of the null distribution. If the 'doParallel' package is installed, the function can be run in parallel by setting ncores to the number of threads to use. If the default value of 1 is used, or if the 'doParallel' package is not installed, the function does not run in parallel. display.progress indicates whether the function should display messages indicating its progress. family is a family variable for the glm() fitting. Note that the 'glmnet' package does not permit the use of nonstandard link functions, so will always use the default link function. However, the glm() fitting will use the specified link. The default is binomial with logistic regression, because this is a common use case. pval is the p-value for inclusion of a variable in the model. Under the null case, the number of false positives will be geometrically distributed with this as probability of success, so if this parameter is set to p, the expected number of false positives should be p/(1-p).
+Encoding: UTF-8
+License: GPL-3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-01-07 15:26:42 UTC; tkenney
+Repository: CRAN
+Date/Publication: 2022-01-08 01:52:49 UTC

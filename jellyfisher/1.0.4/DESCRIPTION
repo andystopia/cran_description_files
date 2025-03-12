@@ -1,0 +1,36 @@
+Package: jellyfisher
+Title: Visualize Spatiotemporal Tumor Evolution with Jellyfish Plots
+Version: 1.0.4
+Authors@R: 
+    person("Kari", "Lavikka", , "kari.lavikka@helsinki.fi", role = c("cph", "aut", "cre"),
+           comment = c(ORCID = "0000-0002-4163-4945"))
+Description: 
+    Generates interactive Jellyfish plots to visualize spatiotemporal tumor
+    evolution by integrating sample and phylogenetic trees into a unified plot.
+    This approach provides an intuitive way to analyze tumor heterogeneity and
+    evolution over time and across anatomical locations. The Jellyfish plot
+    visualization design was first introduced by Lahtinen, Lavikka, et al.
+    (2023, <doi:10.1016/j.ccell.2023.04.017>).
+    This package also supports visualizing ClonEvol results, a tool developed
+    by Dang, et al. (2017, <doi:10.1093/annonc/mdx517>), for analyzing clonal
+    evolution from multi-sample sequencing data. The 'clonevol' package is not
+    available on CRAN but can be installed from its GitHub
+    repository (<https://github.com/hdng/clonevol>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+URL: https://github.com/HautaniemiLab/jellyfisher,
+        https://hautaniemilab.github.io/jellyfisher/
+BugReports: https://github.com/HautaniemiLab/jellyfisher/issues
+Imports: htmlwidgets, dplyr, stringr
+Suggests: knitr, rmarkdown, clonevol
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+biocViews: Visualization, Phylogenetics, Software, Spatial
+NeedsCompilation: no
+Packaged: 2025-02-05 12:40:36 UTC; klavikka
+Author: Kari Lavikka [cph, aut, cre] (<https://orcid.org/0000-0002-4163-4945>)
+Maintainer: Kari Lavikka <kari.lavikka@helsinki.fi>
+Repository: CRAN
+Date/Publication: 2025-02-06 19:30:02 UTC

@@ -1,0 +1,52 @@
+Package: Rfmtool
+Type: Package
+Version: 5.0.4
+Date: 2024-05-31
+Title: Fuzzy Measure Tools
+Authors@R: c(person("Gleb", "Beliakov", role = c("aut", "cre"),
+		email = "gleb@deakin.edu.au"),
+	      person("Quan", "Vu", role = "ctb"),
+		person("Andrei", "Kelarev", role = "ctb"),
+		person("Michel", "Berkelaar", role = "ctb"),
+		person("Kjell", "Eikland", role = "ctb"),
+		person("Samuel E.", "Buttrey", role = "ctb"),
+		person("Stefan I.", "Larimore", role = "ctb"),
+		person("Timothy A.", "Davis", role = "ctb"),
+		person("John", "Gilbert", role = "ctb"),
+		person("Esmond", "Ng", role = "ctb") ,
+		person("Peter", "Notebaert", role = "ctb") ,
+		person("Richard", "Stallman", role = "ctb") ,	
+		person("Jeroen", "Dirks", role = "ctb"),
+		person("Daniela L.", "Calderon", role = "ctb") )
+Author: Gleb Beliakov [aut, cre],
+  Quan Vu [ctb],
+  Andrei Kelarev [ctb],
+  Michel Berkelaar [ctb],
+  Kjell Eikland [ctb],
+  Samuel E. Buttrey [ctb],
+  Stefan I. Larimore [ctb],
+  Timothy A. Davis [ctb],
+  John Gilbert [ctb],
+  Esmond Ng [ctb],
+  Peter Notebaert [ctb],
+  Richard Stallman [ctb],
+  Jeroen Dirks [ctb],
+  Daniela L. Calderon [ctb]
+Maintainer: Gleb Beliakov <gleb@deakin.edu.au>
+Depends: R (>= 2.9.2), Rcpp
+LinkingTo: Rcpp
+Suggests:
+Description: Various tools for handling fuzzy measures, calculating Shapley value and interaction index,  Choquet and Sugeno integrals, as well as fitting fuzzy measures to empirical data are provided. Construction of fuzzy measures from empirical data is done by solving a linear programming problem by using 'lpsolve' package, whose source in C adapted to the R environment 
+  is included. The description of the basic theory of fuzzy measures is in the manual in the Doc folder in this package. Please refer to the following:
+	[1] <https://personal-sites.deakin.edu.au/~gleb/fmtools.html>
+	[2] G. Beliakov, H. Bustince, T. Calvo, 'A Practical Guide to Averaging', Springer, (2016, ISBN: 978-3-319-24753-3).
+	[3] G. Beliakov, S. James, J-Z. Wu, 'Discrete Fuzzy Measures', Springer, (2020, ISBN: 978-3-030-15305-2).
+License: LGPL-3
+NeedsCompilation: yes
+Copyright: Gleb Beliakov. The 'lpsolve' library and its parts are
+        copyright to various holders, including Kjell Eikland, Michel
+        Berkelaar, University of Florida, National Institute of
+        Standards and Technology, Free Software Foundation, Inc.
+Packaged: 2024-06-02 03:14:09 UTC; gleb
+Repository: CRAN
+Date/Publication: 2024-06-02 23:20:20 UTC

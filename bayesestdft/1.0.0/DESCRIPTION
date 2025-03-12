@@ -1,0 +1,29 @@
+Package: bayesestdft
+Title: Estimating the Degrees of Freedom of the Student's
+        t-Distribution under a Bayesian Framework
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Somjit", 
+    family = "Roy",
+    email = "sroy_123@tamu.edu", 
+    role = c("aut", "cre")),
+    person(given = c("Se", "Yoon"), 
+    family = "Lee",
+    email = "seyoonlee.stat.math@gmail.com", 
+    role = c("aut", "ctb")))
+Description: A Bayesian framework to estimate the Student's t-distribution's degrees of freedom is developed. Markov Chain Monte Carlo sampling routines are developed as in <doi:10.3390/axioms11090462> to sample from the posterior distribution of the degrees of freedom. A random walk Metropolis algorithm is used for sampling when Jeffrey's and Gamma priors are endowed upon the degrees of freedom. In addition, the Metropolis-adjusted Langevin algorithm for sampling is used under the Jeffrey's prior specification. The Log-normal prior over the degrees of freedom is posed as a viable choice with comparable performance in simulations and real-data application, against other prior choices, where an Elliptical Slice Sampler is used to sample from the concerned posterior.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/Roy-SR-007/bayesestdft
+BugReports: https://github.com/Roy-SR-007/bayesestdft/issues
+Imports: numDeriv, dplyr
+Depends: R (>= 4.0.4)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-01-09 05:01:34 UTC; somjit
+Author: Somjit Roy [aut, cre],
+  Se Yoon Lee [aut, ctb]
+Maintainer: Somjit Roy <sroy_123@tamu.edu>
+Repository: CRAN
+Date/Publication: 2025-01-09 18:10:01 UTC

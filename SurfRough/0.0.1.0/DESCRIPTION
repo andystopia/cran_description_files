@@ -1,0 +1,25 @@
+Package: SurfRough
+Title: Calculate Surface/Image Texture Indexes
+Version: 0.0.1.0
+Authors@R: 
+    c(person("Sebastiano", "Trevisani", email="strevisani@iuav.it", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8436-7798")),
+    person("Ilich", "Alexander", role = "ctb", comment = c(ORCID = "0000-0003-1758-8499")))
+Description: Methods for the computation of surface/image texture indices using a geostatistical based approach (Trevisani et al. (2023) <doi:10.1016/j.geomorph.2023.108838>). It provides various functions for the computation of surface texture indices (e.g., omnidirectional roughness and roughness anisotropy), including the ones based on the robust MAD estimator. The kernels included in the software permit also to calculate the surface/image texture indices directly from the input surface  (i.e., without de-trending) using increments of order 2. It also provides the new radial roughness index (RRI), representing the improvement of the popular topographic roughness index (TRI). The framework can be easily extended with ad-hoc surface/image texture indices.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+BugReports: https://github.com/strevisani/SurfRough/issues
+LazyData: true
+Depends: R (>= 3.5.0), terra
+Suggests: tinytest
+URL: https://github.com/strevisani/SurfRough,
+        https://doi.org/10.5281/zenodo.7132160
+NeedsCompilation: no
+Packaged: 2024-08-27 05:24:49 UTC; x
+Maintainer: Sebastiano Trevisani <strevisani@iuav.it>
+Author: Sebastiano Trevisani [aut, cre]
+    (<https://orcid.org/0000-0001-8436-7798>),
+  Ilich Alexander [ctb] (<https://orcid.org/0000-0003-1758-8499>)
+Repository: CRAN
+Date/Publication: 2024-08-30 10:40:14 UTC

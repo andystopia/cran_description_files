@@ -1,0 +1,30 @@
+Package: woylier
+Title: Alternative Tour Frame Interpolation Method
+Version: 0.0.9
+Authors@R: 
+    c(person("Zola", "Batsaikan", email = "zoljargal11@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0009-0005-0055-1448")),
+      person("Dianne", "Cook", email = "dicook@monash.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3813-7155")),
+      person("Ursula", "Laa", email = "ursula.laa@boku.ac.at", role = c("aut"),
+           comment = c(ORCID = "0000-0002-0249-6439")))
+Description: This method generates a tour path by interpolating between d-D frames in p-D using Givens rotations. The algorithm arises from the problem of zeroing elements of a matrix. This interpolation method is useful for showing specific d-D frames in the tour, as opposed to d-D planes, as done by the geodesic interpolation. It is useful for projection pursuit indexes which are not s invariant. See more details in Buj, Cook, Asimov and Hurley (2005) <doi:10.1016/S0169-7161(04)24014-7> and Batsaikhan, Cook and Laa (2023) <doi:10.48550/arXiv.2311.08181>. 
+Depends: R (>= 4.1)
+Imports: tourr, geozoo, dplyr, tibble
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, purrr, ggplot2, ash, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://numbats.github.io/woylier/,
+        https://github.com/numbats/woylier
+BugReports: https://github.com/numbats/woylier/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-29 05:29:18 UTC; cookd
+Author: Zola Batsaikan [aut] (<https://orcid.org/0009-0005-0055-1448>),
+  Dianne Cook [aut, cre] (<https://orcid.org/0000-0002-3813-7155>),
+  Ursula Laa [aut] (<https://orcid.org/0000-0002-0249-6439>)
+Maintainer: Dianne Cook <dicook@monash.edu>
+Repository: CRAN
+Date/Publication: 2024-10-01 09:40:02 UTC

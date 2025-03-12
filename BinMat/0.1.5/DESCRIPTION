@@ -1,0 +1,25 @@
+Package: BinMat
+Type: Package
+Title: Processes Binary Data Obtained from Fragment Analysis (Such as
+        AFLPs, ISSRs, and RFLPs)
+Version: 0.1.5
+Authors@R: person("Clarke", "van Steenderen", email = "vsteenderen@gmail.com",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4219-446X"))
+Description: A molecular genetics tool that processes binary data from fragment analysis. It consolidates replicate sample pairs, outputs summary statistics, and produces hierarchical clustering trees and nMDS plots. This package was developed from the publication available here: <https://www.sciencedirect.com/science/article/pii/S1049964420306538>. The GUI version of this package is available on the R Shiny online server at: <https://clarkevansteenderen.shinyapps.io/BINMAT/> or it is accessible via GitHub by typing: shiny::runGitHub("BinMat", "clarkevansteenderen") into the console in R. Two real-world datasets accompany the package: an AFLP dataset of Bunias orientalis samples from Tewes et. al. (2017) <https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2745.12869>, and an ISSR dataset of Nymphaea specimens from Reid et. al. (2021) <https://www.sciencedirect.com/science/article/pii/S0304377021000218> . The authors of these publications are thanked for allowing the use of their data.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 3.0)
+Imports: pvclust (>= 2.0), MASS (>= 7.3), stats (>= 3.4.0), graphics
+        (>= 3.4.0), base (>= 3.4.0), ggpubr (>= 0.4.0), tibble (>=
+        3.1.4)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-03-05 17:35:12 UTC; s1000334
+Author: Clarke van Steenderen [aut, cre]
+    (<https://orcid.org/0000-0002-4219-446X>)
+Maintainer: Clarke van Steenderen <vsteenderen@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-03-06 07:50:14 UTC

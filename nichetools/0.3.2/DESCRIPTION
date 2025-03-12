@@ -1,0 +1,39 @@
+Package: nichetools
+Type: Package
+Title: Complementary Package to 'nicheROVER' and 'SIBER'
+Version: 0.3.2
+Authors@R: 
+    c(person(given = "Benjamin L.", 
+                  family = "Hlina",
+                  role = c("aut", "cre"),
+                  email = "benjamin.hlina@gmail.com")
+                  )
+Description: Provides functions complementary to packages 'nicheROVER' and 'SIBER'
+        allowing the user to extract Bayesian estimates from data objects created 
+        by the packages 'nicheROVER' and 'SIBER'. Please see the following 
+        publications for detailed methods on 'nicheROVER' and 'SIBER' 
+        Hansen et al. (2015) <doi:10.1890/14-0235.1>, 
+        Jackson et al. (2011) <doi:10.1111/j.1365-2656.2011.01806.x>, and
+        Layman et al. (2007) <doi:10.1890/0012-9658(2007)88[42:CSIRPF]2.0.CO;2>,
+        respectfully.
+Depends: R (>= 2.10)
+Imports: cli, dplyr, ellipse, lifecycle, nicheROVER, purrr, rlang,
+        SIBER, tibble, tidyr
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL: https://benjaminhlina.github.io/nichetools/,
+        https://github.com/benjaminhlina/nichetools
+BugReports: https://github.com/benjaminhlina/nichetools/issues
+Suggests: bayestestR, ggplot2, ggdist, ggtext, ggh4x, janitor, knitr,
+        patchwork, rjags, rmarkdown, stringr, testthat (>= 3.0.0),
+        viridis
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-30 17:07:46 UTC; benhlina
+Author: Benjamin L. Hlina [aut, cre]
+Maintainer: Benjamin L. Hlina <benjamin.hlina@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-30 21:20:02 UTC

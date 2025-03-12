@@ -1,0 +1,39 @@
+Package: sapo
+Type: Package
+Title: Spatial Association of Different Types of Polygon
+Version: 0.8.0
+Date: 2024-10-02
+Authors@R: 
+    person(given = "Lucas",
+           family = "da Cunha Godoy",
+           role = c("aut", "cre"),
+           email = "lcgodoy@duck.com",
+           comment = c(ORCID = "0000-0003-4265-972X"))
+Description: In ecology, spatial data is often represented using polygons. These
+  polygons can represent a variety of spatial entities, such as ecological
+  patches, animal home ranges, or gaps in the forest canopy.  Researchers often
+  need to determine if two spatial processes, represented by these polygons, are
+  independent of each other. For instance, they might want to test if the home
+  range of a particular animal species is influenced by the presence of a
+  certain type of vegetation.  To address this, Godoy et al. (2022)
+  (<doi:10.1016/j.spasta.2022.100695>) developed conditional Monte Carlo
+  tests. These tests are designed to assess spatial independence while taking
+  into account the shape and size of the polygons.
+License: GPL (>= 3)
+Encoding: UTF-8
+SystemRequirements: GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ (>= 4.8.0)
+Imports: sf, methods, stats
+Depends: R (>= 4.0)
+URL: https://github.com/lcgodoy/sapo/
+BugReports: https://github.com/lcgodoy/sapo/issues/
+RoxygenNote: 7.3.2
+Language: en-US
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-08 22:13:31 UTC; lcgodoy
+Author: Lucas da Cunha Godoy [aut, cre]
+    (<https://orcid.org/0000-0003-4265-972X>)
+Maintainer: Lucas da Cunha Godoy <lcgodoy@duck.com>
+Repository: CRAN
+Date/Publication: 2024-10-11 08:20:02 UTC

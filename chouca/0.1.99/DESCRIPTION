@@ -1,0 +1,38 @@
+Package: chouca
+Title: A Stochastic Cellular Automaton Engine
+Version: 0.1.99
+Authors@R: c(person("Alexandre", "Genin", , "a.a.h.genin@uu.nl", role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-3333-1338")), 
+             person("Guillaume", "Dupont", , "", role = c("aut")), 
+             person("Daniel", "Valencia", , "", role = c("aut")), 
+             person("Mauro", "Zucconi", , "", role = c("aut")), 
+             person("M. Isidora", "Ávila-Thieme", , "", role = c("aut")), 
+             person("Sergio A.", "Navarrete", , "", role = c("aut")), 
+             person("Evie A.", "Wieters", , "", role = c("aut")) )
+Description: An engine for stochastic cellular automata. It provides a high-level
+  interface to declare a model, which can then be simulated by various backends
+  (Genin et al. (2023) <doi:10.1101/2023.11.08.566206>).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, plyr, digest, stats, graphics, grDevices
+Suggests: covr, testthat (>= 3.0.0), deSolve, igraph, knitr, rmarkdown,
+        ggplot2, spatialwarnings
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/alexgenin/chouca
+BugReports: https://github.com/alexgenin/chouca/issues
+NeedsCompilation: yes
+Packaged: 2024-03-06 20:04:19 UTC; alex
+Author: Alexandre Genin [aut, cre] (<https://orcid.org/0000-0002-3333-1338>),
+  Guillaume Dupont [aut],
+  Daniel Valencia [aut],
+  Mauro Zucconi [aut],
+  M. Isidora Ávila-Thieme [aut],
+  Sergio A. Navarrete [aut],
+  Evie A. Wieters [aut]
+Maintainer: Alexandre Genin <a.a.h.genin@uu.nl>
+Repository: CRAN
+Date/Publication: 2024-03-07 15:00:02 UTC

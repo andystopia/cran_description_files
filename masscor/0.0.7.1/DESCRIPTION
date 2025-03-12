@@ -1,0 +1,34 @@
+Package: masscor
+Title: Mass Measurement Corrections
+Version: 0.0.7.1
+Date: 2021-09-09
+Authors@R: 
+    person(given = "Cristhian",
+           family = "Paredes",
+           role = c("aut", "cre"),
+           email = "craparedesca@unal.edu.co",
+           comment = c(ORCID = "https://orcid.org/0000-0001-7049-9597"))
+Description: Mass measurement corrections and uncertainties using calibration
+    data, as recommended by EURAMET's guideline No. 18 (2015) 
+    ISBN:978-3-942992-40-4 . The package provides classes, functions, and 
+    methods for storing information contained in calibration certificates
+    and converting balance readings to both conventional mass and real mass.
+    For the latter, the Magnitude of the Air Buoyancy Correction factor employs
+    models (such as the CIMP-2007 formula revised by Picard, Davis, Gläser, and
+    Fujii (2008) <doi:10.1088/0026-1394/45/2/004>) to estimate the local air
+    density using measured environmental conditions.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+Imports: metRology
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-09 15:43:26 UTC; cris
+Author: Cristhian Paredes [aut, cre] (<https://orcid.org/0000-0001-7049-9597>)
+Maintainer: Cristhian Paredes <craparedesca@unal.edu.co>
+Repository: CRAN
+Date/Publication: 2021-09-13 08:20:02 UTC

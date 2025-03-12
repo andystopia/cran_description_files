@@ -1,0 +1,38 @@
+Package: exactamente
+Title: Explore the Exact Bootstrap Method
+Version: 0.1.1
+Authors@R: c(
+    person("Mackson", "Ncube", , "macksonncube.stats@gmail.com", role = c("aut", "cre")),
+    person("mightymetrika, LLC", role = c("cph", "fnd"))
+  )
+Description: Researchers often use the bootstrap to understand a sample drawn
+    from a population with unknown distribution. The exact bootstrap method is a
+    practical tool for exploring the distribution of small sample size data. For
+    a sample of size n, the exact bootstrap method generates the entire space of
+    n to the power of n resamples and calculates all realizations of the selected
+    statistic. The 'exactamente' package includes functions for implementing two
+    bootstrap methods, the exact bootstrap and the regular bootstrap. The
+    exact_bootstrap() function applies the exact bootstrap method following
+    methodologies outlined in Kisielinska (2013) <doi:10.1007/s00180-012-0350-0>.
+    The regular_bootstrap() function offers a more traditional bootstrap approach,
+    where users can determine the number of resamples. The e_vs_r() function
+    allows users to directly compare results from these bootstrap methods. To
+    augment user experience, 'exactamente' includes the function exactamente_app()
+    which launches an interactive 'shiny' web application. This application
+    facilitates exploration and comparison of the bootstrap methods, providing
+    options for modifying various parameters and visualizing results.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/mightymetrika/exactamente
+BugReports: https://github.com/mightymetrika/exactamente/issues
+Imports: ggplot2, methods, shiny, shinythemes
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-08-29 15:18:43 UTC; Administrator
+Author: Mackson Ncube [aut, cre],
+  mightymetrika, LLC [cph, fnd]
+Maintainer: Mackson Ncube <macksonncube.stats@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-08-29 17:00:05 UTC

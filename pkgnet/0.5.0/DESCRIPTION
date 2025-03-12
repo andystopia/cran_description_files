@@ -1,0 +1,30 @@
+Package: pkgnet
+Type: Package
+Title: Get Network Representation of an R Package
+Version: 0.5.0
+Authors@R: c(
+    person("Brian", "Burns", email = "brian.burns.opensource@gmail.com", role = c("aut", "cre")),
+    person("James", "Lamb", email = "jaylamb20@gmail.com", role = c("aut")),
+    person("Jay", "Qi", email = "jayqi.opensource@gmail.com", role = c("aut"))
+    )
+Maintainer: Brian Burns <brian.burns.opensource@gmail.com>
+Description: Tools from the domain of graph theory can be used to quantify the complexity
+             and vulnerability to failure of a software package. That is the guiding philosophy
+             of this package. 'pkgnet' provides tools to analyze the dependencies between functions
+             in an R package and between its imported packages.  See the pkgnet website for vignettes 
+             and other supplementary information.
+Imports: assertthat, covr, data.table, DT, futile.logger, glue,
+        igraph(>= 1.3), knitr, magrittr, methods, R6, rlang,
+        rmarkdown(>= 1.9), tools, visNetwork
+Suggests: ggplot2, pkgdown, testthat, webshot, withr
+License: BSD_3_clause + file LICENSE
+URL: https://github.com/uptake/pkgnet, https://uptake.github.io/pkgnet/
+BugReports: https://github.com/uptake/pkgnet/issues
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-03 20:45:00 UTC; brianburns
+Author: Brian Burns [aut, cre],
+  James Lamb [aut],
+  Jay Qi [aut]
+Repository: CRAN
+Date/Publication: 2024-05-03 21:00:02 UTC

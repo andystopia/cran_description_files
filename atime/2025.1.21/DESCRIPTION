@@ -1,0 +1,30 @@
+Package: atime
+Type: Package
+Title: Asymptotic Timing
+Version: 2025.1.21
+Authors@R: c(
+    person("Toby", "Hocking",
+     email="toby.hocking@r-project.org",
+     role=c("aut", "cre")))
+Description: Computing and visualizing comparative
+ asymptotic timings of different algorithms and code versions.
+ Also includes functionality for comparing empirical timings with
+ expected references such as linear or quadratic,
+ <https://en.wikipedia.org/wiki/Asymptotic_computational_complexity>
+ Also includes functionality for measuring asymptotic memory and other
+ quantities.
+License: GPL-3
+URL: https://github.com/tdhock/atime
+BugReports: https://github.com/tdhock/atime/issues
+Imports: data.table, bench, lattice, git2r, utils, stats, grDevices
+Suggests: directlabels, ggplot2, testthat, knitr, markdown, stringi,
+        re2, binsegRcpp, wbs, fpop, changepoint, LOPART, cumstats,
+        PeakSegDisk, callr, readr, dplyr, tidyr, nc, RColorBrewer,
+        tibble, Matrix
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-21 15:47:30 UTC; tdhock
+Author: Toby Hocking [aut, cre]
+Maintainer: Toby Hocking <toby.hocking@r-project.org>
+Repository: CRAN
+Date/Publication: 2025-01-21 16:10:01 UTC

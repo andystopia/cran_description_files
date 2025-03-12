@@ -1,0 +1,33 @@
+Package: imuf
+Title: Estimate Orientation of an Inertial Measurement Unit
+Version: 0.6.0
+Authors@R: c(
+    person("Felix", "Chan", , "chanfelix@gmail.com", role = c("aut", "cre", "cph")),
+    person("Ricardo", "Cabello", role = "cph", comment = "'three.js' JavaScript library")
+  )
+Description: Estimate the orientation of an inertial measurement unit 
+    (IMU) with a 3-axis accelerometer and a 3-axis gyroscope using a 
+    complementary filter. 'imuf' takes an IMU's accelerometer and gyroscope 
+    readings, time duration, its initial orientation, and a gain factor as 
+    inputs, and returns an estimate of the IMU's final orientation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppEigen
+Imports: htmltools, htmlwidgets, Rcpp
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), purrr, ggplot2, shiny,
+        serial, stringr
+Config/testthat/edition: 3
+URL: https://github.com/gitboosting/imuf,
+        https://gitboosting.github.io/imuf/
+BugReports: https://github.com/gitboosting/imuf/issues
+Depends: R (>= 2.10)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-02-12 15:07:36 UTC; mkcha
+Author: Felix Chan [aut, cre, cph],
+  Ricardo Cabello [cph] ('three.js' JavaScript library)
+Maintainer: Felix Chan <chanfelix@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-02-12 15:30:06 UTC

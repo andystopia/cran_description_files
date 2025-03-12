@@ -1,0 +1,42 @@
+Package: dpasurv
+Type: Package
+Title: Dynamic Path Analysis of Survival Data via Aalen's Additive
+        Hazards Model
+Version: 0.1.0
+Authors@R: 
+    c(person("Novartis", "Pharma AG", role = "cph"),
+      person(given = "Matthias",
+           family = "Kormaksson",
+           role = c("aut", "cre"),
+           email = "mk375@cornell.edu"),
+      person(given = "Susanne",
+           family = "Strohmaier",
+           role = c("aut")),
+      person(given = "Markus",
+           family = "Lange",
+           role = c("aut")),
+      person(given = "David",
+           family = "Demanse",
+           role = c("aut")))
+Maintainer: Matthias Kormaksson <mk375@cornell.edu>
+Author: Novartis Pharma AG [cph],
+  Matthias Kormaksson [aut, cre],
+  Susanne Strohmaier [aut],
+  Markus Lange [aut],
+  David Demanse [aut]
+Description: Dynamic path analysis with estimation of the corresponding direct, indirect, and total effects, based on Fosen et al., (2006) <doi:10.1007/s10985-006-9004-2>. The main outcome of interest is a counting process from survival analysis (or recurrent events) data. At each time of event, ordinary linear regression is used to estimate the relation between the covariates, while Aalen's additive hazard model is used for the regression of the counting process on the covariates.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: dplyr (>= 0.8.3), tidyr (>= 0.8.3), rlang (>= 0.4.0), ggplot2
+        (>= 3.2.0), survival (>= 2.44.1.1), timereg (>= 1.9.4), methods
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: http://opensource.nibr.com/dpasurv/
+NeedsCompilation: no
+Packaged: 2024-08-27 14:26:19 UTC; kormama4
+Repository: CRAN
+Date/Publication: 2024-09-02 12:00:05 UTC

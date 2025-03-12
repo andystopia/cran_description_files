@@ -1,0 +1,28 @@
+Package: aglm
+Type: Package
+Title: Accurate Generalized Linear Model
+Version: 0.4.0
+Authors@R: c(
+    person("Kenji", "Kondo", role=c("aut", "cre", "cph"), email="kkondo.odnokk@gmail.com"),
+    person("Kazuhisa", "Takahashi", role=c("ctb")),
+    person("Hikari", "Banno", role=c("ctb"))
+    )
+Description: Provides functions to fit Accurate Generalized Linear Model (AGLM) models, visualize them, and predict for new data. AGLM is defined as a regularized GLM which applies a sort of feature transformations using a discretization of numerical features and specific coding methodologies of dummy variables. For more information on AGLM, see Suguru Fujita, Toyoto Tanaka, Kenji Kondo and Hirokazu Iwasawa (2020) <https://www.institutdesactuaires.com/global/gene/link.php?doc_id=16273&fg=1>.
+URL: https://github.com/kkondo1981/aglm
+BugReports: https://github.com/kkondo1981/aglm/issues
+License: GPL-2
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.1.1
+Depends: R (>= 4.0.0),
+Imports: glmnet (>= 4.0.2), assertthat, methods, mathjaxr
+Suggests: testthat, knitr, rmarkdown, MASS, faraway
+RdMacros: mathjaxr
+NeedsCompilation: no
+Packaged: 2021-06-09 02:14:52 UTC; kkond
+Author: Kenji Kondo [aut, cre, cph],
+  Kazuhisa Takahashi [ctb],
+  Hikari Banno [ctb]
+Maintainer: Kenji Kondo <kkondo.odnokk@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-06-09 12:10:02 UTC

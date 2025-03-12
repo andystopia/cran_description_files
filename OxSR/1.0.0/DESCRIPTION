@@ -1,0 +1,36 @@
+Type: Package
+Package: OxSR
+Title: Soil Iron Oxides via Diffuse Reflectance
+Version: 1.0.0
+Authors@R: c(
+    person("Frosi", "Gustavo", , "gustavofrosi@hotmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0324-636X")),
+    person("Barrón", "Vidal", , "vbarron59@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-1484-1655")),
+    person("Inda, Alberto", role = "ctb",
+           comment = c(ORCID = "0000-0001-5252-0313")),
+    person("Bastiani, Kayn", role = "ctb",
+           comment = c(ORCID = "0000-0003-2692-1695"))
+  )
+Description: Calculate the ratio of iron oxides, hematite and goethite, in soil using the diffuse reflectance technique. The Kubelka-Munk theory, second derivative analysis, and spectral region amplitudes related to hematite and goethite content are used for quantification (Torrent, J., & Barron, V. (2008) <doi:10.2136/sssabookser5.5.c13>). Additionally, the package calculates soil color in the visible spectrum using Munsell and RGB color spaces, based on color theory (Viscarra et al. (2006) <doi:10.1016/j.geoderma.2005.07.017>).
+License: AGPL (>= 3)
+URL: https://github.com/FGu5tav0/OxSR
+BugReports: https://github.com/FGu5tav0/OxSR/issues
+Depends: R (>= 4.1.0)
+Imports: colorSpec, dplyr, ggplot2, grDevices, janitor,
+        munsellinterpol, rlang, stats
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-03-10 14:38:59 UTC; gusta
+Author: Frosi Gustavo [aut, cre] (<https://orcid.org/0000-0002-0324-636X>),
+  Barrón Vidal [ctb] (<https://orcid.org/0000-0003-1484-1655>),
+  Inda, Alberto [ctb] (<https://orcid.org/0000-0001-5252-0313>),
+  Bastiani, Kayn [ctb] (<https://orcid.org/0000-0003-2692-1695>)
+Maintainer: Frosi Gustavo <gustavofrosi@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-11 17:00:11 UTC

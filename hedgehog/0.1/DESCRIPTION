@@ -1,0 +1,29 @@
+Package: hedgehog
+Type: Package
+Title: Property-Based Testing
+Version: 0.1
+Date: 2018-08-14
+Authors@R: person("Huw", "Campbell", email = "huw.campbell@gmail.com",
+                  role = c("aut", "cre"))
+Description: Hedgehog will eat all your bugs.
+  'Hedgehog' is a property-based testing package in the spirit
+  of 'QuickCheck'. With 'Hedgehog', one can test properties
+  of their programs against randomly generated input, providing
+  far superior test coverage compared to unit testing. One of the
+  key benefits of 'Hedgehog' is integrated shrinking of
+  counterexamples, which allows one to quickly find the cause of
+  bugs, given salient examples when incorrect behaviour occurs.
+License: MIT + file LICENSE
+URL: https://hedgehog.qa
+BugReports: https://github.com/hedgehogqa/r-hedgehog/issues
+Imports: rlang (>= 0.1.6)
+Depends: testthat
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-08-17 11:33:28 UTC; hcampbell
+Author: Huw Campbell [aut, cre]
+Maintainer: Huw Campbell <huw.campbell@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-08-22 16:50:03 UTC

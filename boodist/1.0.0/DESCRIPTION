@@ -1,0 +1,27 @@
+Package: boodist
+Title: Some Distributions from the 'Boost' Library and More
+Version: 1.0.0
+Authors@R: 
+    person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
+Description: Make some distributions from the 'C++' library 'Boost'
+    available in 'R'. In addition, the normal-inverse Gaussian distribution
+    and the generalized inverse Gaussian distribution are provided. The 
+    distributions are represented by 'R6' classes. The method to sample from 
+    the generalized inverse Gaussian distribution is the one given in 
+    "Random variate generation for the generalized inverse Gaussian 
+    distribution" Luc Devroye (2012) <doi:10.1007/s11222-012-9367-z>.
+License: GPL-3
+URL: https://github.com/stla/boodist
+BugReports: https://github.com/stla/boodist/issues
+Imports: R6, Rcpp, RcppNumerical, stats
+LinkingTo: BH, Rcpp, RcppEigen, RcppNumerical
+Suggests: plotly
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: C++17
+NeedsCompilation: yes
+Packaged: 2023-08-09 13:14:44 UTC; SDL96354
+Author: Stéphane Laurent [aut, cre]
+Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
+Repository: CRAN
+Date/Publication: 2023-08-10 10:00:02 UTC

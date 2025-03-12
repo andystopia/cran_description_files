@@ -1,0 +1,36 @@
+Package: Certara.DarwinReporter
+Title: Data Visualization Utilities for 'pyDarwin' Machine Learning
+        Pharmacometric Model Development
+Version: 2.0.1
+Authors@R: c(
+      person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Michael", "Tomashevskiy", email = "michael.tomashevskiy@certara.com", role = c("aut")),
+      person("Mike", "Talley", email = "mike.talley@certara.com", role = c("aut")),
+      person("Certara USA, Inc", role = c("cph","fnd"))
+      )
+Description: Utilize the 'shiny' interface for visualizing results from a 'pyDarwin' (<https://certara.github.io/pyDarwin/>)
+    machine learning pharmacometric model search. It generates Goodness-of-Fit plots and summary tables for selected models,
+    allowing users to customize diagnostic outputs within the interface. The underlying R code for generating plots and
+    tables can be extracted for use outside the interactive session. Model diagnostics can also be incorporated into an
+    R Markdown document and rendered in various output formats.
+URL: https://certara.github.io/R-DarwinReporter/
+Depends: R (>= 4.1.0)
+License: LGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, data.table, readr, testthat (>= 3.0.0)
+Imports: DT, colourpicker, shinyAce, shinymeta, utils, ggplot2, xpose,
+        Certara.Xpose.NLME, dplyr, jsonlite, tidyr, flextable,
+        shinyjqui, grDevices, plotly, scales, shiny (>= 1.7.0),
+        shinyjs, shinyWidgets, bslib (>= 0.7.0), shinyTree (>= 0.3.1),
+        sortable
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-06 16:41:17 UTC; jcraig
+Author: James Craig [aut, cre],
+  Michael Tomashevskiy [aut],
+  Mike Talley [aut],
+  Certara USA, Inc [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2025-03-07 16:40:13 UTC

@@ -1,0 +1,23 @@
+Package: LoopDetectR
+Type: Package
+Title: Comprehensive Feedback Loop Detection in ODE Models
+Version: 0.1.2
+Authors@R: c(person("Katharina", "Baum", email = "katharina.baum@hpi.de",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7256-0566")), 
+           person("Sandra", "Krüger", role = c("ctb")))
+Description: Detect feedback loops (cycles, circuits) between species (nodes) in ordinary differential equation (ODE) models. Feedback loops are paths from a node to itself without visiting any other node twice, and they have important regulatory functions. Loops are reported with their order of participating nodes and their length, and whether the loop is a positive or a negative feedback loop. An upper limit of the number of feedback loops limits runtime (which scales with feedback loop count). Model parametrizations and values of the modelled variables are accounted for. Computation uses the characteristics of the Jacobian matrix as described e.g. in Thomas and Kaufman (2002) <doi:10.1016/s1631-0691(02)01452-x>. Input can be the Jacobian matrix of the ODE model or the ODE function definition; in the latter case, the Jacobian matrix is determined using 'numDeriv'. Graph-based algorithms from 'igraph' are employed for path detection. 
+Imports: igraph, numDeriv
+Suggests: deSolve, knitr, markdown, remotes, rmarkdown, utils
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-07-13 22:16:44 UTC; kabaum
+Author: Katharina Baum [aut, cre] (<https://orcid.org/0000-0001-7256-0566>),
+  Sandra Krüger [ctb]
+Maintainer: Katharina Baum <katharina.baum@hpi.de>
+Repository: CRAN
+Date/Publication: 2020-07-20 09:20:12 UTC

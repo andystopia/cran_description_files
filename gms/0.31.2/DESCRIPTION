@@ -1,0 +1,43 @@
+Package: gms
+Type: Package
+Title: 'GAMS' Modularization Support Package
+Version: 0.31.2
+Date: 2024-06-27
+Authors@R: c(person("Jan Philipp", "Dietrich", email = "dietrich@pik-potsdam.de", 
+             comment = c(affiliation = "Potsdam Institute for Climate Impact Research", ORCID = "0000-0002-4309-6431"), role = c("aut","cre")),
+             person("David", "Klein", comment = c(affiliation = "Potsdam Institute for Climate Impact Research"), role = "aut"),
+             person("Anastasis", "Giannousakis", role = "aut"),
+             person("Felicitas", "Beier", comment = c(affiliation = "Potsdam Institute for Climate Impact Research"), role = "aut"),
+             person("Johannes", "Koch", comment = c(affiliation = "Potsdam Institute for Climate Impact Research"), role = "aut"),
+             person("Lavinia", "Baumstark", comment = c(affiliation = "Potsdam Institute for Climate Impact Research"), role = "aut"),
+             person("Mika", "Pflüger", role = "aut"),
+             person("Oliver", "Richters", comment = c(affiliation = "Potsdam Institute for Climate Impact Research"), role = "aut"))
+Description: A collection of tools to create, use and maintain modularized model code written in the modeling 
+    language 'GAMS' (<https://www.gams.com/>). Out-of-the-box 'GAMS' does not come with support for modularized
+    model code. This package provides the tools necessary to convert a standard 'GAMS' model to a modularized one
+    by introducing a modularized code structure together with a naming convention which emulates local
+    environments. In addition, this package provides tools to monitor the compliance of the model code with
+    modular coding guidelines.
+Imports: dplyr, rlang, stringr, withr, yaml, filelock, stats
+Suggests: covr, curl, magclass, qgraph, testthat, callr
+URL: https://github.com/pik-piam/gms,
+        https://doi.org/10.5281/zenodo.4390032
+BugReports: https://github.com/pik-piam/gms/issues
+License: BSD_2_clause + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Config/Keywords: tool
+NeedsCompilation: no
+Packaged: 2024-06-28 11:09:32 UTC; dietrich
+Author: Jan Philipp Dietrich [aut, cre] (Potsdam Institute for Climate Impact
+    Research, <https://orcid.org/0000-0002-4309-6431>),
+  David Klein [aut] (Potsdam Institute for Climate Impact Research),
+  Anastasis Giannousakis [aut],
+  Felicitas Beier [aut] (Potsdam Institute for Climate Impact Research),
+  Johannes Koch [aut] (Potsdam Institute for Climate Impact Research),
+  Lavinia Baumstark [aut] (Potsdam Institute for Climate Impact Research),
+  Mika Pflüger [aut],
+  Oliver Richters [aut] (Potsdam Institute for Climate Impact Research)
+Maintainer: Jan Philipp Dietrich <dietrich@pik-potsdam.de>
+Repository: CRAN
+Date/Publication: 2024-06-29 06:50:10 UTC

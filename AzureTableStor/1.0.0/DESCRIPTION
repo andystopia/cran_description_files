@@ -1,0 +1,25 @@
+Package: AzureTableStor
+Title: Interface to the Table Storage Service in 'Azure'
+Version: 1.0.0
+Authors@R: c(
+    person("Hong", "Ooi", , "hongooi73@gmail.com", role = c("aut", "cre")),
+    person("Microsoft", role="cph")
+    )
+Description: An interface to the table storage service in 'Azure': <https://azure.microsoft.com/en-us/services/storage/tables/>. Supplies functionality for reading and writing data stored in tables, both as part of a storage account and from a 'CosmosDB' database with the table service API. Part of the 'AzureR' family of packages.
+URL: https://github.com/Azure/AzureTableStor
+        https://github.com/Azure/AzureR
+BugReports: https://github.com/Azure/AzureTableStor/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.3)
+Imports: utils, AzureRMR (>= 2.0.0), AzureStor (>= 3.0.0), jsonlite,
+        openssl, httr, uuid, vctrs (>= 0.3.0)
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-10-28 20:15:19 UTC; hongo
+Author: Hong Ooi [aut, cre],
+  Microsoft [cph]
+Maintainer: Hong Ooi <hongooi73@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-11-05 07:40:13 UTC

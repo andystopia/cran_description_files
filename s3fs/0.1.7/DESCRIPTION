@@ -1,0 +1,25 @@
+Package: s3fs
+Type: Package
+Title: 'Amazon Web Service S3' File System
+Version: 0.1.7
+Authors@R: c(person("Dyfan", "Jones", email="dyfan.r.jones@gmail.com", role= c("aut", "cre")))
+Description: Access 'Amazon Web Service Simple Storage Service' ('S3') <https://aws.amazon.com/s3/>
+    as if it were a file system. Interface based on the R package 'fs'.
+License: MIT + file LICENSE
+URL: https://github.com/DyfanJones/s3fs
+BugReports: https://github.com/DyfanJones/s3fs/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'zzz.R' 'utils.R' 's3filesystem_class.R' 'file_system.R'
+        'file_system_async.R' 'reexport_fs.R'
+Depends: R (>= 3.6.0)
+Imports: curl, R6, data.table, fs, future, future.apply, lgr,
+        paws.storage (>= 0.2.0), utils
+Suggests: covr, testthat (>= 3.1.4)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-08-29 12:05:40 UTC; dyfanjones
+Author: Dyfan Jones [aut, cre]
+Maintainer: Dyfan Jones <dyfan.r.jones@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-29 12:40:03 UTC

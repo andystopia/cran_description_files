@@ -1,0 +1,45 @@
+Type: Package
+Package: ERPM
+Title: Exponential Random Partition Models
+Version: 0.2.0
+Date: 2024-05-03
+Authors@R: c(
+    person("Marion", "Hoffman", , "marion.hoffman.31@gmail.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-0741-7760")),
+    person("Alexandra", "Amani", role = "aut"),
+    person("Nico", "Keiser", role = "aut")
+  )
+Description: Simulates and estimates the Exponential Random Partition Model presented 
+    in the paper Hoffman, Block, and Snijders (2023) <doi:10.1177/00811750221145166>. 
+    It can also be used to estimate longitudinal partitions, following the model 
+    proposed in Hoffman and Chabot (2023) <doi:10.1016/j.socnet.2023.04.002>. 
+    The model is an exponential family distribution on the space of partitions 
+    (sets of non-overlapping groups) and is called in reference to the Exponential 
+    Random Graph Models (ERGM) for networks.
+License: GPL (>= 3)
+Depends: R (>= 4.2)
+Imports: numbers, utils, stats, igraph, RColorBrewer, snowfall
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Collate: 'erpm-package.R' 'functions_utility.R'
+        'functions_Metropolis.R' 'functions_burninthining.R'
+        'functions_change_statistics.R' 'functions_estimate.R'
+        'functions_exactcalculations.R'
+        'functions_exchange_algorithm.R' 'functions_loglikelihood.R'
+        'functions_output.R' 'functions_phase1.R' 'functions_phase2.R'
+        'functions_phase3.R' 'functions_statistics.R'
+        'functions_visualisation.R' 'outcomeObjects.R'
+URL: https://github.com/stocnet/ERPM
+BugReports: https://github.com/stocnet/ERPM/issues
+NeedsCompilation: no
+Packaged: 2024-05-09 13:58:06 UTC; hoffman
+Author: Marion Hoffman [cre, aut, cph]
+    (<https://orcid.org/0000-0002-0741-7760>),
+  Alexandra Amani [aut],
+  Nico Keiser [aut]
+Maintainer: Marion Hoffman <marion.hoffman.31@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-10 17:53:16 UTC

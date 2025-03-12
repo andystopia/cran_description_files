@@ -1,0 +1,26 @@
+Package: AGPRIS
+Title: AGricultural PRoductivity in Space
+Version: 2.0
+Authors@R: 
+    person(given = "Edoardo",
+           family = "Baldoni",
+           role = c("aut", "cre"),
+           email = "edoardo.baldoni@gmail.com",
+		   comment = c(ORCID = "https://orcid.org/0000-0002-5296-1212"))
+Description: Functionalities to simulate space-time data and to estimate dynamic-spatial panel data models. 
+             Estimators implemented are the BCML (Elhorst (2010), <doi:10.1016/j.regsciurbeco.2010.03.003>), the MML (Elhorst (2010) <doi:10.1016/j.regsciurbeco.2010.03.003>) and the INLA Bayesian estimator (Lindgren and Rue, (2015) <doi:10.18637/jss.v063.i19>; Bivand, Gomez-Rubio and Rue, (2015) <doi:10.18637/jss.v063.i20>) 
+             adapted to panel data. The package contains functions to replicate the analyses of the scientific article entitled "Agricultural Productivity in Space" (Baldoni and Esposti (2021), <doi:10.1111/ajae.12155>)).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+Imports: methods, Matrix, plyr, sp, spdep, spacetime, matrixcalc,
+        maxLik
+Suggests: INLA, terra
+NeedsCompilation: no
+Packaged: 2023-06-08 06:36:56 UTC; edoar
+Author: Edoardo Baldoni [aut, cre] (<https://orcid.org/0000-0002-5296-1212>)
+Maintainer: Edoardo Baldoni <edoardo.baldoni@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-08 07:32:54 UTC

@@ -1,0 +1,29 @@
+Package: rcbalance
+Type: Package
+Title: Large, Sparse Optimal Matching with Refined Covariate Balance
+Version: 1.8.8
+Date: 2022-3-25
+Author: Samuel D. Pimentel
+Maintainer: Samuel D. Pimentel <spi@berkeley.edu>
+Description: Tools for large, sparse optimal matching of treated units
+	and control units in observational studies.  Provisions are
+	made for refined covariate balance constraints, which include
+	fine and near-fine balance as special cases.  Matches are 
+	optimal in the sense that they are computed as solutions to
+	network optimization problems rather than greedy algorithms.
+	See Pimentel, et al.(2015) <doi:10.1080/01621459.2014.997879> 
+	and Pimentel (2016), Obs. Studies 2(1):4-23. The rrelaxiv 
+	package, which provides an alternative solver for
+	the underlying network flow problems, carries an
+	academic license and is not available on CRAN, but
+	may be downloaded from Github at 
+	<https://github.com/josherrickson/rrelaxiv/>.
+Depends: R (>= 3.2.0), MASS, plyr
+Imports: rlemon
+License: MIT + file LICENSE
+Suggests: optmatch, testthat, rrelaxiv
+Additional_repositories: https://errickson.net/rrelaxiv/
+NeedsCompilation: no
+Packaged: 2022-03-25 16:55:21 UTC; sdbpimentel
+Repository: CRAN
+Date/Publication: 2022-03-25 23:30:02 UTC

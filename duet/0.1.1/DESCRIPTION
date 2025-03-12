@@ -1,0 +1,32 @@
+Package: duet
+Title: Analysing Non-Verbal Communication in Dyadic Interactions from
+        Video Data
+Version: 0.1.1
+Authors@R: 
+    person("Themis", "Efthimiou", , "themiftw20@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8458-5493"))
+Description: Analyzes non-verbal communication by processing data extracted 
+    from video recordings of dyadic interactions. It supports integration 
+    with open source tools, currently limited to 'OpenPose' (Cao et al. (2019) 
+    <doi:10.1109/TPAMI.2019.2929257>), converting its outputs into CSV format 
+    for further analysis. The package includes functions for data pre-processing, 
+    visualization, and computation of motion indices such as velocity, acceleration, 
+    and jerkiness (Cook et al. (2013) <doi:10.1093/brain/awt208>), facilitating 
+    the analysis of non-verbal cues in paired interactions and contributing to 
+    research on human communication dynamics.
+License: MIT + file LICENSE
+SystemRequirements: FFmpeg (https://ffmpeg.org/)
+Imports: dplyr, ggplot2, ggthemes, graphics, grDevices, kza, parallel,
+        patchwork, reshape2, rjson, rlang, signal, stats, stringr,
+        tidyr, tidyselect, tools, utils, zoo
+Suggests: spelling, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-16 11:32:32 UTC; tefthimi
+Author: Themis Efthimiou [aut, cre] (<https://orcid.org/0000-0002-8458-5493>)
+Maintainer: Themis Efthimiou <themiftw20@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-17 08:50:02 UTC

@@ -1,0 +1,30 @@
+Package: leprechaun
+Title: Create Simple 'Shiny' Applications as Packages
+Version: 1.0.0
+Authors@R: 
+    c(
+        person(given = "John",
+            family = "Coene",
+            role = c("aut", "cre"),
+            email = "john@opifex.org"),
+        person(family = "Opifex", role = "cph")
+    )
+Description: Code generator for robust dependency-free 'Shiny' 
+    applications in the form of packages. It includes numerous
+    convenience functions to create modules, include utility 
+    functions to create common 'Bootstrap' elements, setup a
+    project from the ground-up, and much more.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: fs, cli, usethis, jsonlite, roxygen2
+Suggests: bslib, yaml, covr, sass, htmltools, packer, shiny, testthat
+        (>= 3.0.0), pkgload
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-01-18 19:59:54 UTC; john
+Author: John Coene [aut, cre],
+  Opifex [cph]
+Maintainer: John Coene <john@opifex.org>
+Repository: CRAN
+Date/Publication: 2022-01-19 09:32:47 UTC

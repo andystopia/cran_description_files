@@ -1,0 +1,21 @@
+Package: EATME
+Type: Package
+Title: Exponentially Weighted Moving Average with Adjustments to
+        Measurement Error
+Version: 0.1.0
+Authors@R: c(person("Cheng-Kuan Lin", "Developer", role = c("aut", "cre","cph"),
+                      email = "zore2023852@gmail.com"),
+                      person("Li-Pang Chen", "Su-Fen Yang", role = "aut") )
+Description: The univariate statistical quality control tool aims to address measurement error effects when constructing exponentially weighted moving average p control charts. The method primarily focuses on binary random variables, but it can be applied to any continuous random variables by using sign statistic to transform them to discrete ones. With the correction of measurement error effects, we can obtain the corrected control limits of exponentially weighted moving average p control chart and reasonably adjusted exponentially weighted moving average p control charts. The methods in this package can be found in some relevant references, such as Chen and Yang (2022) <arXiv: 2203.03384>; Yang et al. (2011) <doi: 10.1016/j.eswa.2010.11.044>; Yang and Arnold (2014) <doi: 10.1155/2014/238719>; Yang (2016) <doi: 10.1080/03610918.2013.763980> and Yang and Arnold (2016) <doi: 10.1080/00949655.2015.1125901>.
+License: GPL-3
+Encoding: UTF-8
+Imports: qcr, stats, graphics
+RoxygenNote: 7.1.2
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2022-05-13 17:03:38 UTC; KUAN
+Author: Cheng-Kuan Lin Developer [aut, cre, cph],
+  Li-Pang Chen Su-Fen Yang [aut]
+Maintainer: Cheng-Kuan Lin Developer <zore2023852@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-05-17 10:10:06 UTC

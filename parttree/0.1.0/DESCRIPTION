@@ -1,0 +1,54 @@
+Package: parttree
+Title: Visualize Simple 2-D Decision Tree Partitions
+Version: 0.1.0
+Date: 2025-10-14
+Authors@R: c(
+    person(given = "Grant",
+           family = "McDermott",
+           role = c("aut", "cre"),
+           email = "gmcd@amazon.com",
+           comment = c(ORCID = "0000-0001-7883-8573")),
+    person(given = "Achim",
+           family = "Zeileis",
+           role = "ctb",
+           email = "Achim.Zeileis@R-project.org",
+           comment = c(ORCID = "0000-0003-0918-3766")),
+    person(given = "Brian Heseung",
+           family = "Kim",
+           role = "ctb",
+           email = "brhkim@gmail.com",
+           comment = c(ORCID = "0000-0002-7988-1802")),
+    person(given = "Julia", 
+           family = "Silge", 
+           role = "ctb", 
+           email = "julia.silge@gmail.com", 
+           comment = c(ORCID = "0000-0002-3671-836X")))
+Description: Visualize the partitions of simple decision trees, involving one or
+    two predictors, on the scale of the original data. Provides an intuitive
+    alternative to traditional tree diagrams, by visualizing how a decision tree
+    divides the predictor space in a simple 2D plot alongside the original data.
+    The 'parttree' package supports both classification and regression trees
+    from 'rpart' and 'partykit', as well as trees produced by popular frontend
+    systems like 'tidymodels' and 'mlr3'. Visualization methods are provided for
+    both base R graphics and 'ggplot2'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://grantmcdermott.com/parttree/
+BugReports: https://github.com/grantmcdermott/parttree/issues
+Imports: graphics, stats, data.table, partykit, rlang, rpart, tinyplot
+        (>= 0.2.0)
+Enhances: ggplot2 (>= 3.4.0)
+Suggests: tinytest, tinysnapshot (>= 0.0.3), fontquiver, rsvg, svglite,
+        palmerpenguins, titanic, mlr3, parsnip, workflows, magick,
+        imager, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-15 02:46:38 UTC; gmcd
+Author: Grant McDermott [aut, cre] (<https://orcid.org/0000-0001-7883-8573>),
+  Achim Zeileis [ctb] (<https://orcid.org/0000-0003-0918-3766>),
+  Brian Heseung Kim [ctb] (<https://orcid.org/0000-0002-7988-1802>),
+  Julia Silge [ctb] (<https://orcid.org/0000-0002-3671-836X>)
+Maintainer: Grant McDermott <gmcd@amazon.com>
+Repository: CRAN
+Date/Publication: 2025-01-16 10:30:02 UTC

@@ -1,0 +1,50 @@
+Package: klovan
+Title: Geostatistics Methods and Klovan Data
+Version: 0.1.0
+Authors@R: c(
+    person(given = c("Jonathan", "E"), family = "Gordon", email = "jgordon5@bowdoin.edu", role = c("aut"), comment = c(ORCID = "0009-0007-5958-7386")),
+    person(given = c("Eric", "K"), family = "Helfer", email = "ekh80@case.edu", role = c("aut"), comment = c(ORCID = "0000-0002-8958-7690")),
+    person(given = c("Hope", "E"), family = "Omodolor", email = "hxo76@case.edu", role = c("aut"), comment = c(ORCID = "0009-0005-7842-406X")),
+    person(given = c("Jeffery", "M"), family = "Yarus", email = "jmy41@case.edu", role = c("aut"), comment = c(ORCID = "0000-0002-9331-9568")),
+    person(given = c("Roger", "H"), family = "French", email = "rxf131@case.edu", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-6162-0532")))
+Description: A comprehensive set of geostatistical, visual,
+    and analytical methods, in conjunction with the expanded version of the
+    acclaimed J.E. Klovan's mining dataset, are included in 'klovan'. This makes the
+    package an excellent learning resource for Principal Component Analysis (PCA),
+    Factor Analysis (FA), kriging, and other geostatistical techniques. Originally
+    published in the 1976 book 'Geological Factor Analysis', the included mining
+    dataset was assembled by Professor J. E. Klovan of the University of Calgary.
+    Being one of the first applications of FA in the geosciences, this dataset has
+    significant historical importance. As a well-regarded and published dataset, it
+    is an excellent resource for demonstrating the capabilities of PCA, FA, kriging,
+    and other geostatistical techniques in geosciences. For those interested in
+    these methods, the 'klovan' datasets provide a valuable and illustrative resource.
+    Note that some methods require the 'RGeostats' package. Please refer to the
+    README or Additional_repositories for installation instructions. This material is
+    based upon research in the Materials Data Science for Stockpile Stewardship Center
+    of Excellence (MDS3-COE), and supported by the Department of Energy's National
+    Nuclear Security Administration under Award Number DE-NA0004104.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: MASS, dplyr, fields, GGally, ggforce, ggplot2, ggrepel, gstat,
+        metR, pracma, sp, tibble, magrittr, tidyselect
+Suggests: testthat (>= 3.0.0), sf, spelling, knitr, rmarkdown,
+        RGeostats
+Additional_repositories: http://rgeostats.free.fr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.0
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-01-29 17:06:30 UTC; jeg165
+Author: Jonathan E Gordon [aut] (<https://orcid.org/0009-0007-5958-7386>),
+  Eric K Helfer [aut] (<https://orcid.org/0000-0002-8958-7690>),
+  Hope E Omodolor [aut] (<https://orcid.org/0009-0005-7842-406X>),
+  Jeffery M Yarus [aut] (<https://orcid.org/0000-0002-9331-9568>),
+  Roger H French [aut, cre, cph]
+    (<https://orcid.org/0000-0002-6162-0532>)
+Maintainer: Roger H French <rxf131@case.edu>
+Repository: CRAN
+Date/Publication: 2024-02-01 10:20:02 UTC

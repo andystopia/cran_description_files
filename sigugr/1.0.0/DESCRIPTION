@@ -1,0 +1,33 @@
+Type: Package
+Package: sigugr
+Title: Workflow for Geographic Data
+Version: 1.0.0
+Authors@R: c(
+    person("Jose", "Samos", , "jsamos@ugr.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4457-3439")),
+    person("Universidad de Granada", role = "cph")
+  )
+Description: Streamlines geographic data transformation, storage and
+    publication, simplifying data preparation and enhancing
+    interoperability across formats and platforms.
+License: MIT + file LICENSE
+URL: https://josesamos.github.io/sigugr/,
+        https://github.com/josesamos/sigugr
+BugReports: https://github.com/josesamos/sigugr/issues
+Depends: R (>= 2.10)
+Imports: clc, gdalUtilities, httr, jsonlite, rpostgis, sf, snakecase,
+        terra
+Suggests: httptest2, knitr, mockery, purrr, rmarkdown, testthat (>=
+        3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-12-20 13:13:21 UTC; jsamos
+Author: Jose Samos [aut, cre] (<https://orcid.org/0000-0002-4457-3439>),
+  Universidad de Granada [cph]
+Maintainer: Jose Samos <jsamos@ugr.es>
+Repository: CRAN
+Date/Publication: 2024-12-23 11:20:01 UTC

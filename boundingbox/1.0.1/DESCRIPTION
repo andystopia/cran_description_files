@@ -1,0 +1,28 @@
+Package: boundingbox
+Type: Package
+Title: Create a Bounding Box in an Image
+Version: 1.0.1
+Authors@R: person("David", "Stomski", email = "stomperusa@verizon.net", 
+    role = c("aut", "cre"))
+Description: Generate ground truth cases for object localization algorithms. 
+    Cycle through a list of images, select points around which to generate bounding 
+    boxes and assign classifiers. Output the coordinates, and images annotated with 
+    boxes and labels. For an example study that uses bounding boxes for image 
+    localization and classification see Ibrahim, Badr, Abdallah, and Eissa (2012)
+    "Bounding Box Object Localization Based on Image Superpixelization"
+    <doi:10.1016/j.procs.2012.09.119>.
+License: MIT + file LICENSE
+URL: <https://github.com/stomperusa/boundingbox>
+Encoding: UTF-8
+LazyData: true
+Imports: imager, grDevices, graphics, utils, tools, gplots
+RoxygenNote: 7.1.0
+Suggests: testthat, knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-06-06 00:17:07 UTC; stomperusa
+Author: David Stomski [aut, cre]
+Maintainer: David Stomski <stomperusa@verizon.net>
+Repository: CRAN
+Date/Publication: 2020-06-09 14:40:02 UTC

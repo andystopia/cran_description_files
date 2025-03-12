@@ -1,0 +1,30 @@
+Package: gJLS2
+Title: A Generalized Joint Location and Scale Framework for Association
+        Testing
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Wei",
+           family = "Deng",
+           role = c("aut", "cre"),
+           email = "deng@utstat.toronto.edu"),
+     person(given = "Lei",
+           family = "Sun",
+           role = c("aut"),
+           email = "sun@utstat.toronto.edu"))          
+Description: An update to the Joint Location-Scale (JLS) testing framework that identifies associated SNPs, gene-sets and pathways with main and/or interaction effects on quantitative traits (Soave et al., 2015; <doi:10.1016/j.ajhg.2015.05.015>). The JLS method simultaneously tests the null hypothesis of equal mean and equal variance across genotypes, by aggregating association evidence from the individual location/mean-only and scale/variance-only tests using Fisher's method. The generalized joint location-scale (gJLS) framework has been developed to deal specifically with sample correlation and group uncertainty (Soave and Sun, 2017; <doi:10.1111/biom.12651>). The current release: gJLS2, include additional functionalities that enable analyses of X-chromosome genotype data through novel methods for location (Chen et al., 2021; <doi:10.1002/gepi.22422>) and scale (Deng et al., 2019; <doi:10.1002/gepi.22247>).
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, markdown
+VignetteBuilder: knitr
+Imports: methods, nlme, quantreg, MCMCpack, MASS, plyr, ggplot2,
+        moments
+Depends: R (>= 3.6.0)
+NeedsCompilation: no
+Packaged: 2021-09-29 16:03:28 UTC; weideng
+Author: Wei Deng [aut, cre],
+  Lei Sun [aut]
+Maintainer: Wei Deng <deng@utstat.toronto.edu>
+Repository: CRAN
+Date/Publication: 2021-09-30 09:00:05 UTC

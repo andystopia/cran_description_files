@@ -1,0 +1,32 @@
+Package: awdb
+Title: Query the USDA NWCC Air and Water Database REST API
+Version: 0.1.1
+Authors@R: 
+    person("Kenneth Blake", "Vernon", , 
+           "kenneth.b.vernon@gmail.com", 
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-0098-5092"))
+Description: Query the four endpoints of the 'Air and Water Database (AWDB) REST
+    API' maintained by the National Water and Climate Center (NWCC) at the 
+    United States Department of Agriculture (USDA). Endpoints include data, 
+    forecast, reference-data, and metadata. The package is extremely light 
+    weight, with 'Rust' via 'extendr' doing most of the heavy lifting to 
+    deserialize and flatten deeply nested 'JSON' responses. The AWDB can be 
+    found at <https://wcc.sc.egov.usda.gov/awdbRestApi/swagger-ui/index.html>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2.9000
+Config/rextendr/version: 0.3.1.9001
+SystemRequirements: Cargo (Rust's package manager), rustc
+Imports: cli, httr2, rlang (>= 1.1.0), sf
+Depends: R (>= 4.1.0)
+LazyData: true
+URL: https://github.com/kbvernon/awdb, https://kbvernon.github.io/awdb/
+BugReports: https://github.com/kbvernon/awdb/issues
+NeedsCompilation: yes
+Packaged: 2025-02-25 20:36:00 UTC; kenne
+Author: Kenneth Blake Vernon [aut, cre, cph]
+    (<https://orcid.org/0000-0003-0098-5092>)
+Maintainer: Kenneth Blake Vernon <kenneth.b.vernon@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-02-26 15:20:02 UTC

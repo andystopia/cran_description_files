@@ -1,0 +1,28 @@
+Package: collinear
+Title: Automated Multicollinearity Management
+Version: 2.0.0
+Authors@R: 
+    person(given = "Blas M.", 
+          family = "Benito", , 
+          email = "blasbenito@gmail.com", 
+          role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5105-7232"))
+URL: https://blasbenito.github.io/collinear/
+BugReports: https://github.com/blasbenito/collinear/issues
+Description: Effortless multicollinearity management in data frames with both numeric and categorical variables for statistical and machine learning applications. The package simplifies multicollinearity analysis by combining four robust methods: 1) target encoding for categorical variables (Micci-Barreca, D. 2001 <doi:10.1145/507533.507538>); 2) automated feature prioritization to prevent key variable loss during filtering; 3) pairwise correlation for all variable combinations (numeric-numeric, numeric-categorical, categorical-categorical); and 4) fast computation of variance inflation factors.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: progressr, future.apply, mgcv, rpart, ranger
+Suggests: future, testthat (>= 3.0.0), spelling
+Config/testthat/edition: 3
+Depends: R (>= 4.0)
+LazyData: true
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-11-08 13:37:40 UTC; blas
+Author: Blas M. Benito [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5105-7232>)
+Maintainer: Blas M. Benito <blasbenito@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-08 13:50:02 UTC

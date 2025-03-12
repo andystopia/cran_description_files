@@ -1,0 +1,25 @@
+Package: Apoderoides
+Type: Package
+Title: Prioritize and Delete Erroneous Taxa in a Large Phylogenetic
+        Tree
+Version: 3.0.0
+Authors@R: c(person(given="Satoshi",family="Aoki",role=c("aut","cph","cre"),email="aokis1ll1@gmail.com"),person(given="Keita",family="Fukasawa",role="ctb"))
+Date: 2024-07-10
+Description: Finds, prioritizes and deletes erroneous taxa in a phylogenetic tree. This package calculates scores for taxa in a tree. Higher score means the taxon is more erroneous. If the score is zero for a taxon, the taxon is not erroneous. This package also can remove all erroneous taxa automatically by iterating score calculation and pruning taxa with the highest score.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/Sa-to-shi-A-o-ki/Apoderoides
+BugReports: https://github.com/Sa-to-shi-A-o-ki/Apoderoides/issues
+Depends: R (>= 3.5.0)
+Imports: ape, Rcpp, RcppProgress
+LinkingTo: Rcpp,RcppProgress
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-07-10 05:21:44 UTC; aoki
+Author: Satoshi Aoki [aut, cph, cre],
+  Keita Fukasawa [ctb]
+Maintainer: Satoshi Aoki <aokis1ll1@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-07-10 05:40:01 UTC

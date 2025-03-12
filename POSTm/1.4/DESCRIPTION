@@ -1,0 +1,37 @@
+Package: POSTm
+Type: Package
+Title: Phylogeny-Guided OTU-Specific Association Test for Microbiome
+        Data
+Version: 1.4
+Date: 2024-04-17
+Authors@R: c(person("Caizhi", "Huang", role = "aut"),
+             person("Jung-Ying", "Tzeng", role = "aut"),
+             person("Shannon T.", "Holloway", role = c("aut", "cre"),
+                     email = "shannon.t.holloway@gmail.com"))
+Author: Caizhi Huang [aut],
+  Jung-Ying Tzeng [aut],
+  Shannon T. Holloway [aut, cre]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Description: Implements the Phylogeny-Guided Microbiome OTU-Specific Association 
+    Test method, which boosts the testing power by adaptively borrowing 
+    information from phylogenetically close OTUs (operational taxonomic units)
+    of the target OTU. This method
+    is built on a kernel machine regression framework and allows for flexible 
+    modeling of complex microbiome effects, adjustments for covariates, and 
+    can accommodate both continuous and binary outcomes. 
+Depends: methods
+Imports: CompQuadForm, ape
+Suggests: multtest, rmarkdown, knitr
+biocViews:
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+Collate: 'ACAT.R' 'CKAT.R' 'POSTmData.R' 'distanceMatrix.R'
+        'getKernel.R' 'glmFit.R' 'lmFit.R' 'p.adjust.POST.R'
+        'plot.POST.R' 'post.R' 'print.POST.R'
+NeedsCompilation: no
+Packaged: 2024-04-17 22:52:04 UTC; 19194
+Repository: CRAN
+Date/Publication: 2024-04-17 23:10:18 UTC

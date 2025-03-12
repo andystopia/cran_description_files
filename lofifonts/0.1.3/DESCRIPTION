@@ -1,0 +1,50 @@
+Package: lofifonts
+Type: Package
+Title: Text Rendering with Bitmap and Vector Fonts
+Version: 0.1.3
+Authors@R: c(
+    person("Mike", "Cheng", role = c("aut", "cre", 'cph'), email = "mikefc@coolbutuseless.com"),
+    person("June", "Choe", role = "ctb", email = "jchoe001@gmail.com", comment = "Contributed character positioning code"),
+    person("Frederic", "Cambus", role = c("cph", "tyd"), email = "fred@statdns.com", comment = "Creator of 'spleen' font"),
+    person("GNU Unifont authors", role = c("cph", "tyd"), comment = "Creators of 'unifont'"),
+    person("Suraj", "Kurapati", role = c("cph", "tyd"), comment = "Creator of 'Tamzen' font"),
+    person("Scott", "Fial", role = c("cph", "tyd"), comment = "Creator of 'Tamsyn' font upon which 'Tamzen' is based"),
+    person("Anders", "Hoff", role = c("cph", "tyd"), comment = "Creator of 'gridfont' font"))
+Maintainer: Mike Cheng <mikefc@coolbutuseless.com>
+Description: Alternate font rendering is useful when rendering text to novel
+   graphics outputs where modern font rendering is not available or 
+   where bespoke text positioning is required. Bitmap and vector fonts allow for 
+   custom layout and rendering using pixel coordinates and line drawing.  
+   Formatted text is created as a data.frame of pixel coordinates (for bitmap fonts)
+   or stroke coordinates (for vector fonts).  All text can be easily 
+   previewed as a matrix or raster image.  
+   A selection of fonts is included with this package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Copyright: The included 'spleen' font is BSD licensed and Copyright (c)
+        2018-2024, Frederic Cambus.  The included 'Tamzen' font is free
+        to distribute and Copyright 2011 Suraj N. Kurapati (it is based
+        upon the 'Tamsyn' font which is also free to distribute
+        Copyright 2010 Scott Fial) The included 'unifont' font is SIL
+        Open Font Licensed, and is Copyright the GNU unifont authors.
+        The included 'gridfont' is MIT licensed is Copyright (c) 2019
+        Anders Hoff. See 'COPYRIGHTS' file for more details.
+URL: https://github.com/coolbutuseless/lofifonts
+BugReports: https://github.com/coolbutuseless/lofifonts/issues
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, bittermelon, ggplot2, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-11-07 09:48:56 UTC; mike
+Author: Mike Cheng [aut, cre, cph],
+  June Choe [ctb] (Contributed character positioning code),
+  Frederic Cambus [cph, tyd] (Creator of 'spleen' font),
+  GNU Unifont authors [cph, tyd] (Creators of 'unifont'),
+  Suraj Kurapati [cph, tyd] (Creator of 'Tamzen' font),
+  Scott Fial [cph, tyd] (Creator of 'Tamsyn' font upon which 'Tamzen' is
+    based),
+  Anders Hoff [cph, tyd] (Creator of 'gridfont' font)
+Repository: CRAN
+Date/Publication: 2024-11-08 15:20:02 UTC

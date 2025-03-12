@@ -1,0 +1,32 @@
+Package: RcppBessel
+Type: Package
+Title: Bessel Functions Rcpp Interface
+Version: 1.0.0
+Authors@R: c(
+    person("Alexios", "Galanos", , "alexios@4dscape.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0000-9308-0457")),
+    person("Martin", "Maechler", role = "aut",
+           comment = c("Author of the Bessel R package",ORCID = "0000-0002-8685-9910")),
+    person("Donald E.", "Amos", role = "aut",
+           comment = "Original author of the zbsubs Fortran code, Sandia National Laboratories"))
+Maintainer: Alexios Galanos <alexios@4dscape.com>
+Description: Exports an 'Rcpp' interface for the Bessel functions in the 'Bessel' package, which can then be called from the 'C++' code of other packages. For the original 'Fortran' implementation of these functions see Amos (1995) <doi:10.1145/212066.212078>.  
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp
+Imports: Rcpp (>= 1.0.12), Rdpack
+URL: https://github.com/alexiosg/RcppBessel
+RdMacros: Rdpack
+Suggests: knitr, rmarkdown, roxygen2, Bessel, testthat (>= 3.0.0),
+        microbenchmark
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-08-22 16:09:28 UTC; alexios
+Author: Alexios Galanos [aut, cre] (<https://orcid.org/0009-0000-9308-0457>),
+  Martin Maechler [aut] (Author of the Bessel R package,
+    <https://orcid.org/0000-0002-8685-9910>),
+  Donald E. Amos [aut] (Original author of the zbsubs Fortran code,
+    Sandia National Laboratories)
+Repository: CRAN
+Date/Publication: 2024-08-27 16:30:14 UTC

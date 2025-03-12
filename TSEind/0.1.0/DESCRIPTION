@@ -1,0 +1,24 @@
+Package: TSEind
+Type: Package
+Title: Total Survey Error (Independent Samples)
+Version: 0.1.0
+Authors@R: c(person("Joshua", "Miller", role = c("aut", "cre"), email = "joshlmiller@msn.com"))
+Maintainer: Joshua Miller <joshlmiller@msn.com>
+Description: Calculates total survey error (TSE) for one or more surveys, using both scale-dependent and scale-independent metrics.  Package works directly from the data set, with no hand calculations required: just upload a properly structured data set (see TESTIND and its documentation), properly input column names (see functions documentation), and run your functions.  For more on TSE, see: Weisberg, Herbert (2005, ISBN:0-226-89128-3); Biemer, Paul (2010) <doi:10.1093/poq/nfq058>; Biemer, Paul et.al. (2017, ISBN:9781119041672); etc.
+Note: 'TSEind' is a companion package to 'TSE'. Both calculate TSE for
+        your surveys, but use 'TSEind' if your surveys and the "gold
+        standard" survey have independent samples, and use 'TSE' if
+        your surveys and the "gold standard" survey have paired
+        samples.
+Imports: stats
+Depends: R (>= 3.5)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2019-07-12 01:45:11 UTC; JOSHUA
+Author: Joshua Miller [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-07-19 09:20:02 UTC

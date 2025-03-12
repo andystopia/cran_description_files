@@ -1,0 +1,31 @@
+Package: autoReg
+Type: Package
+Title: Automatic Linear and Logistic Regression and Survival Analysis
+Version: 0.3.3
+Authors@R: person("Keon-Woong","Moon", email="cardiomoon@gmail.com",
+    role=c("aut", "cre"))
+URL: https://github.com/cardiomoon/autoReg,
+        https://cardiomoon.github.io/autoReg/
+BugReports: https://github.com/cardiomoon/autoReg/issues
+Description: Make summary tables for descriptive statistics and select explanatory variables 
+    automatically in various regression models. Support linear models, generalized linear 
+    models and cox-proportional hazard models. Generate publication-ready tables summarizing 
+    result of regression analysis and plots. The tables and plots can be exported in "HTML", 
+    "pdf('LaTex')", "docx('MS Word')" and "pptx('MS Powerpoint')" documents.
+License: GPL-3
+LazyData: true
+Encoding: UTF-8
+Imports: moonBook(>= 0.3.0), nortest, dplyr, crayon, stringr, tidyr,
+        purrr, survival, mice, officer, flextable, rlang, patchwork,
+        ggplot2, boot, broom, tidycmprsk, scales, maxstat, pammtools
+Suggests: knitr, finalfit, lme4, TH.data, rmarkdown, survminer, asaur,
+        cmprsk, PairedData
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-11-14 01:31:21 UTC; cardiomoon
+Author: Keon-Woong Moon [aut, cre]
+Maintainer: Keon-Woong Moon <cardiomoon@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-14 05:53:27 UTC

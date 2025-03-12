@@ -1,0 +1,20 @@
+Package: dbWebForms
+Type: Package
+Title: Produce R Functions to Create HTML Forms Based on SQL Meta Data
+Version: 0.1.0
+Author: Timothy Conwell
+Maintainer: Timothy Conwell <timconwell@gmail.com>
+Description: Offers meta programming style tools to generate configurable R functions that produce HTML forms based on table input and SQL meta data. 
+    Also generates functions for collecting the parameters of those HTML forms after they are submitted. Useful for 
+    quickly generating HTML forms based on existing SQL tables. To use the resultant functions, the output files containing those functions must 
+    be read into the R environment (perhaps using base::source()).
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: DBI, data.table, stringi
+Imports: html5
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-01-25 23:04:31 UTC; tim
+Repository: CRAN
+Date/Publication: 2021-01-28 13:00:03 UTC

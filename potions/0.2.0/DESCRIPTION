@@ -1,0 +1,29 @@
+Package: potions
+Type: Package
+Title: Easy Options Management
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Martin",
+             family = "Westgate",
+             email = "martin.westgate@csiro.au",
+             role = c("aut", "cre")))
+Description: Store and retrieve data from options() using syntax derived from
+    the 'here' package. 'potions' makes it straightforward to update and 
+    retrieve options, either in the workspace or during package development, 
+    without overwriting global options.
+Depends: R (>= 4.1.0)
+Imports: jsonlite, lobstr, purrr, rrapply, rlang, stringi, yaml
+Suggests: knitr, pkgload, rmarkdown, testthat (>= 3.0.0)
+License: MPL-2.0
+URL: https://potions.ala.org.au
+BugReports: https://github.com/AtlasOfLivingAustralia/potions/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-08-23 03:01:41 UTC; wes186
+Author: Martin Westgate [aut, cre]
+Maintainer: Martin Westgate <martin.westgate@csiro.au>
+Repository: CRAN
+Date/Publication: 2023-08-23 04:20:02 UTC

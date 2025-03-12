@@ -1,0 +1,29 @@
+Package: gmfamm
+Type: Package
+Title: Generalized Multivariate Functional Additive Models
+Version: 0.1.0
+Authors@R: c(person(given = "Nikolaus", family = "Umlauf", role = c("aut"), 
+                    email = "Nikolaus.Umlauf@uibk.ac.at",
+                    comment = c(ORCID = "0000-0003-2160-9803")),
+             person("Alexander", "Volkmann", role = c("aut", "cre"),
+                    email = "alexandervolkmann8@gmail.com"))
+Description: Supply implementation to model generalized multivariate functional
+ data using Bayesian additive mixed models of R package 'bamlss' via a latent
+ Gaussian process (see Umlauf, Klein, Zeileis (2018) 
+ <doi:10.1080/10618600.2017.1407325>).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5), bamlss
+Imports: mgcv, stats, MASS, splines, Matrix
+Suggests: testthat (>= 3.0.0), tidyverse, JMbayes2, registr, funData,
+        MFPCA, MJMbamlss, refund
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-17 20:10:54 UTC; alex
+Author: Nikolaus Umlauf [aut] (<https://orcid.org/0000-0003-2160-9803>),
+  Alexander Volkmann [aut, cre]
+Maintainer: Alexander Volkmann <alexandervolkmann8@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-18 14:30:05 UTC

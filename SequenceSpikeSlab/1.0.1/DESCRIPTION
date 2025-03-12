@@ -1,0 +1,35 @@
+Package: SequenceSpikeSlab
+Type: Package
+Title: Exact Bayesian Model Selection Methods for the Sparse Normal
+        Sequence Model
+Version: 1.0.1
+Authors@R: c(
+    person("Steven", "de Rooij", email = "steven.de.rooij@gmail.com", role = "aut"),
+    person("Tim", "van Erven", email = "tim@timvanerven.nl", role = c("cre", "aut")),
+    person("Botond", "Szabo", email = "botond.szabo@unibocconi.it", role = "aut"))
+Author: Steven de Rooij [aut],
+  Tim van Erven [cre, aut],
+  Botond Szabo [aut]
+Maintainer: Tim van Erven <tim@timvanerven.nl>
+Description: Contains fast functions to calculate the exact Bayes posterior
+    for the Sparse Normal Sequence Model, implementing the algorithms
+    described in Van Erven and Szabo (2021,
+    <doi:10.1214/20-BA1227>). For general hierarchical
+    priors, sample sizes up to 10,000 are feasible within half an hour
+    on a standard laptop. For beta-binomial spike-and-slab priors, a
+    faster algorithm is provided, which can handle sample sizes of
+    100,000 in half an hour. In the implementation, special care has
+    been taken to assure numerical stability of the methods even for
+    such large sample sizes.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.18), RcppProgress (>= 0.4.1), selectiveInference
+        (>= 1.2.5)
+LinkingTo: Rcpp, RcppProgress
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-09-08 12:29:47 UTC; tve
+Repository: CRAN
+Date/Publication: 2023-09-08 12:50:02 UTC

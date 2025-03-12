@@ -1,0 +1,42 @@
+Package: bumblebee
+Title: Quantify Disease Transmission Within and Between Population
+        Groups
+Version: 0.1.0
+Authors@R: c(
+    person("Lerato E", "Magosi", email = "lmagosi@hsph.harvard.edu",
+        role = "aut", comment = c(ORCID = "0000-0002-3388-9892")),
+    person("Marc", "Lipsitch", email = "mlipsitc@hsph.harvard.edu", 
+        role = "aut"), 
+    person("Lerato E", "Magosi", email = "magosil86@gmail.com", 
+        role = "cre"))
+Description: A simple tool to quantify the amount of transmission
+   of an infectious disease of interest occurring within and between 
+   population groups. 'bumblebee' uses counts of observed directed 
+   transmission pairs, identified phylogenetically from deep-sequence data or 
+   from epidemiological contacts, to quantify transmission flows within and 
+   between population groups accounting for sampling heterogeneity. Population 
+   groups might include: geographical areas (e.g. communities, regions), 
+   demographic groups (e.g. age, gender) or arms of a randomized clinical 
+   trial. See the 'bumblebee' website for statistical theory, documentation 
+   and examples <https://magosil86.github.io/bumblebee/>.
+License: MIT + file LICENSE
+URL: https://magosil86.github.io/bumblebee/
+BugReports: https://github.com/magosil86/bumblebee/issues
+LazyData: true
+Depends: R (>= 2.10)
+Imports: dplyr (>= 1.0.2), gtools (>= 3.8.2), Hmisc (>= 4.4-2),
+        magrittr (>= 2.0.1), rmarkdown (>= 2.6)
+Suggests: covr (>= 3.5.1), knitr (>= 1.30), markdown (>= 1.1), testthat
+        (>= 3.0.1)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-05-10 11:16:58 UTC; lmagosi
+Author: Lerato E Magosi [aut] (<https://orcid.org/0000-0002-3388-9892>),
+  Marc Lipsitch [aut],
+  Lerato E Magosi [cre]
+Maintainer: Lerato E Magosi <magosil86@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-05-11 09:42:19 UTC

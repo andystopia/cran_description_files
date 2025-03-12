@@ -1,0 +1,25 @@
+Package: micer
+Type: Package
+Title: Map Image Classification Efficacy
+Version: 0.2.0
+Date: 2025-01-05
+Authors@R: c(
+  person(family="Maxwell", given="Aaron", email="Aaron.Maxwell@mail.wvu.edu", role=c("aut", "cre", "cph")),
+  person(family="Farhadpour", given="Sarah", email="sf00039@mix.wvu.edu", role=c("aut")))
+Maintainer: Aaron Maxwell <Aaron.Maxwell@mail.wvu.edu>
+Description: Map image classification efficacy (MICE) adjusts the accuracy rate relative to a random classification baseline (Shao et al. (2021)<doi:10.1109/ACCESS.2021.3116526> and Tang et al. (2024)<doi:10.1109/TGRS.2024.3446950>). Only the proportions from the reference labels are considered, as opposed to the proportions from the reference and predictions, as is the case for the Kappa statistic. This package offers means to calculate MICE and adjusted versions of class-level user's accuracy (i.e., precision) and producer's accuracy (i.e., recall) and F1-scores. Class-level metrics are aggregated using macro-averaging. Functions are also made available to estimate confidence intervals using bootstrapping and statistically compare two classification results. 
+Depends: R (>= 2.10)
+Imports: dplyr (>= 1.1.3),
+License: GPL (>= 3)
+URL: https://github.com/maxwell-geospatial/micer
+BugReports: https://github.com/maxwell-geospatial/micer/issues
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2025-01-18 02:30:32 UTC; vidcg
+Author: Aaron Maxwell [aut, cre, cph],
+  Sarah Farhadpour [aut]
+Repository: CRAN
+Date/Publication: 2025-01-20 21:00:01 UTC

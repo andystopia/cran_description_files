@@ -1,0 +1,28 @@
+Package: dotty
+Type: Package
+Title: The Unpacking Dot Operator
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Kevin", "Ushey",
+      email = "kevinushey@gmail.com",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-2880-7407")
+    )
+  )
+Description: Provides a `.` object which can be used for unpacking
+  assignments. For example, `.[rows, columns] <- dim(cars)` could be used to
+  pull the number of rows and number of columns from `dim(cars)` into
+  individual variables `rows` and `columns` in a single step.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: codetools, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://kevinushey.github.io/dotty/
+NeedsCompilation: no
+Packaged: 2024-08-26 18:03:11 UTC; kevin
+Author: Kevin Ushey [aut, cre] (<https://orcid.org/0000-0003-2880-7407>)
+Maintainer: Kevin Ushey <kevinushey@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-30 10:30:02 UTC

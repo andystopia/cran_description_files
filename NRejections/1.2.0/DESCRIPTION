@@ -1,0 +1,16 @@
+Package: NRejections
+Type: Package
+Title: Metrics for Multiple Testing with Correlated Outcomes
+Version: 1.2.0
+Author: Maya B. Mathur, Tyler J. VanderWeele
+Maintainer: Maya B. Mathur <mmathur@stanford.edu>
+Description: Implements methods in Mathur and VanderWeele (in preparation) to characterize global evidence strength across W correlated ordinary least squares (OLS) hypothesis tests. Specifically, uses resampling to estimate a null interval for the total number of rejections in, for example, 95% of samples generated with no associations (the global null), the excess hits (the difference between the observed number of rejections and the upper limit of the null interval), and a test of the global null based on the number of rejections.
+LazyData: true
+License: GPL-2
+Imports: stats, doParallel, matrixcalc, StepwiseTest, foreach, mvtnorm
+RoxygenNote: 7.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2020-07-09 12:58:21 UTC; mmathur
+Repository: CRAN
+Date/Publication: 2020-07-09 13:50:02 UTC

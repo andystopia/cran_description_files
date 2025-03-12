@@ -1,0 +1,44 @@
+Package: nmrrr
+Type: Package
+Title: Binning and Visualizing NMR Spectra in Environmental Samples
+Version: 1.0.0
+Authors@R: 
+    c(person("Kaizad", "Patel",
+      email = "kaizad.patel@pnnl.gov", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-6437-7809")),
+    person("Allison", "Myers-Pigg",
+      email = "allison.myers-pigg@pnnl.gov", 
+      role = c("aut"),
+      comment = c(ORCID = "0000-0002-6905-6841")),
+    person("Ben", "Bond-Lamberty",
+      email = "bondlamberty@pnnl.gov", 
+      role = c("ctb"),
+      comment = c(ORCID = "0000-0001-9525-4633")),
+    person("Morgan", "Barnes",
+      email = "morgan.barnes@pnnl.gov", 
+      role = c("ctb"),
+      comment = c(ORCID = "0000-0001-8722-6552")))
+Description: A reproducible workflow for binning and visualizing NMR (nuclear magnetic resonance) spectra from environmental samples. The 'nmrrr' package is intended for post-processing of NMR data, including importing, merging and, cleaning data from multiple files, visualizing NMR spectra, performing binning/integrations for compound classes, and relative abundance calculations. 
+    This package can be easily inserted into existing analysis workflows by users to help with analyzing and interpreting NMR data. 
+URL: https://github.com/kaizadp/nmrrr
+BugReports: https://github.com/kaizadp/nmrrr/issues
+License: MIT + file LICENSE
+Copyright: Battelle Memorial Institute
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: DescTools, ggplot2, tidyr, utils
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0), tibble
+Config/testthat/edition: 3
+Depends: R (>= 3.50)
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-09 17:27:00 UTC; pate212
+Author: Kaizad Patel [aut, cre] (<https://orcid.org/0000-0001-6437-7809>),
+  Allison Myers-Pigg [aut] (<https://orcid.org/0000-0002-6905-6841>),
+  Ben Bond-Lamberty [ctb] (<https://orcid.org/0000-0001-9525-4633>),
+  Morgan Barnes [ctb] (<https://orcid.org/0000-0001-8722-6552>)
+Maintainer: Kaizad Patel <kaizad.patel@pnnl.gov>
+Repository: CRAN
+Date/Publication: 2023-05-10 16:10:02 UTC

@@ -1,0 +1,28 @@
+Package: compdb
+Title: Generate Compilation Database for Use with 'Clang' Tools
+Version: 0.0.1
+Authors@R: 
+    person("Felix", "Held", , "felix.held@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7679-7752"))
+Description: Many modern C/C++ development tools in the 'clang' toolchain,
+  such as 'clang-tidy' or 'clangd', rely on the presence of a compilation database
+  in JSON format <https://clang.llvm.org/docs/JSONCompilationDatabase.html>.
+  This package temporarily injects additional build flags into the R build
+  process to generate such a compilation database.
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+OS_type: unix
+SystemRequirements: Clang >= 5.0
+RoxygenNote: 7.3.2
+Imports: tools, callr, cli, pkgbuild, utils, withr
+URL: https://github.com/cyianor/r-compdb
+BugReports: https://github.com/cyianor/r-compdb/issues
+Suggests: fs, jsonlite, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-30 10:13:09 UTC; felixheld
+Author: Felix Held [aut, cre] (<https://orcid.org/0000-0002-7679-7752>)
+Maintainer: Felix Held <felix.held@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-31 11:10:06 UTC

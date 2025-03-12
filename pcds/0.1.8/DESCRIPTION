@@ -1,0 +1,32 @@
+Package: pcds
+Type: Package
+Title: Proximity Catch Digraphs and Their Applications
+Version: 0.1.8
+Authors@R: person("Elvan", "Ceyhan", email = "elvanceyhan@gmail.com",
+                  role = c("aut", "cre"))
+Description: Contains the functions for construction and visualization of various families 
+    of the proximity catch digraphs (PCDs), see (Ceyhan (2005) ISBN:978-3-639-19063-2),
+    for computing the graph invariants for testing the patterns of segregation and association against complete spatial randomness (CSR)
+    or uniformity in one, two and three dimensional cases.
+    The package also has tools for generating points from these spatial patterns.
+    The graph invariants used in testing spatial point data are the domination number (Ceyhan (2011)
+    <doi:10.1080/03610921003597211>) and arc density (Ceyhan et al. (2006) <doi:10.1016/j.csda.2005.03.002>;
+    Ceyhan et al. (2007) <doi:10.1002/cjs.5550350106>). The PCD families considered are Arc-Slice PCDs,
+    Proportional-Edge PCDs, and Central Similarity PCDs. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: TRUE
+Imports: combinat, interp, gMOIP, plot3D, plotrix, Rdpack (>= 0.7)
+Depends: R (>= 3.5.0)
+RdMacros: Rdpack
+Suggests: knitr, scatterplot3d, spatstat.random, rmarkdown, bookdown,
+        spelling
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-12-18 22:47:26 UTC; ezc0066
+Author: Elvan Ceyhan [aut, cre]
+Maintainer: Elvan Ceyhan <elvanceyhan@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-19 06:50:02 UTC

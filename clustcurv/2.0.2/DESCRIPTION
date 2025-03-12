@@ -1,0 +1,33 @@
+Package: clustcurv
+Type: Package
+Title: Determining Groups in Multiples Curves
+URL: https://github.com/noramvillanueva/clustcurv
+BugReports: https://github.com/noramvillanueva/clustcurv/issues
+Version: 2.0.2
+Date: 2024-10-09
+Maintainer: Nora M. Villanueva <nmvillanueva@uvigo.es>
+Authors@R: c(person("Nora", "M. Villanueva",email= "nmvillanueva@uvigo.es", role = c("aut", "cre"),
+  comment = c(ORCID = "0000-0001-8085-2745")),
+  person("Marta", "Sestelo",email= "sestelo@uvigo.es", role = "aut", comment = c(ORCID = "0000-0003-4284-6509")))
+Description: A method for determining groups in multiple 
+    curves with an automatic selection of their number based on k-means or 
+    k-medians algorithms. The selection of the optimal number is provided by 
+    bootstrap methods. The methodology can be applied both in regression and survival framework.
+     Implemented methods are:
+    Grouping multiple survival curves described by Villanueva et al. (2018) <doi:10.1002/sim.8016>.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: doParallel, doRNG, foreach, ggfortify, ggplot2, Gmedian,
+        grDevices, npregfast, RColorBrewer, survival
+Suggests: covr, knitr, plotly, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-23 10:39:34 UTC; sestelo
+Author: Nora M. Villanueva [aut, cre] (<https://orcid.org/0000-0001-8085-2745>),
+  Marta Sestelo [aut] (<https://orcid.org/0000-0003-4284-6509>)
+Repository: CRAN
+Date/Publication: 2024-10-25 08:20:07 UTC

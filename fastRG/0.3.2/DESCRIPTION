@@ -1,0 +1,42 @@
+Package: fastRG
+Title: Sample Generalized Random Dot Product Graphs in Linear Time
+Version: 0.3.2
+Authors@R: c(
+    person("Alex", "Hayes", , "alexpghayes@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4985-5160")),
+    person("Karl", "Rohe", , "KarlRohe@stat.wisc.edu", role = c("aut", "cph")),
+    person("Jun", "Tao", role = "aut"),
+    person("Xintian", "Han", role = "aut"),
+    person("Norbert", "Binkiewicz", role = "aut")
+  )
+Description: Samples generalized random product graphs, a generalization of
+    a broad class of network models. Given matrices X, S, and Y with with
+    non-negative entries, samples a matrix with expectation X S Y^T and
+    independent Poisson or Bernoulli entries using the fastRG algorithm of
+    Rohe et al. (2017) <https://www.jmlr.org/papers/v19/17-128.html>. The
+    algorithm first samples the number of edges and then puts them down
+    one-by-one.  As a result it is O(m) where m is the number of edges, a
+    dramatic improvement over element-wise algorithms that which require
+    O(n^2) operations to sample a random graph, where n is the number of
+    nodes.
+License: MIT + file LICENSE
+URL: https://rohelab.github.io/fastRG/,
+        https://github.com/RoheLab/fastRG
+BugReports: https://github.com/RoheLab/fastRG/issues
+Depends: Matrix
+Imports: dplyr, ellipsis, ggplot2, glue, igraph, methods, RSpectra,
+        stats, tibble, tidygraph, tidyr
+Suggests: covr, knitr, magrittr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-08-21 18:19:36 UTC; alex
+Author: Alex Hayes [aut, cre, cph] (<https://orcid.org/0000-0002-4985-5160>),
+  Karl Rohe [aut, cph],
+  Jun Tao [aut],
+  Xintian Han [aut],
+  Norbert Binkiewicz [aut]
+Maintainer: Alex Hayes <alexpghayes@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-08-21 21:40:02 UTC

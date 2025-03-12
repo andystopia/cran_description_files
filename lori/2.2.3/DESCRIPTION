@@ -1,0 +1,21 @@
+Package: lori
+Type: Package
+Title: Imputation of High-Dimensional Count Data using Side Information
+Version: 2.2.3
+Authors@R: person("Genevieve", "Robin", email = "genevieve.robin@cnrs.fr",
+  role = c("aut", "cre"))
+Maintainer: Genevieve Robin <genevieve.robin@cnrs.fr>
+Description: Analysis, imputation, and multiple imputation of count data using covariates. LORI uses a log-linear Poisson model where main row and column effects, as well as effects of known covariates and interaction terms can be fitted. The estimation procedure is based on the convex optimization of the Poisson loss penalized by a Lasso type penalty and a nuclear norm. LORI returns estimates of main effects, covariate effects and interactions, as well as an imputed count table. The package also contains a multiple imputation procedure. The methods are described in Robin, Josse, Moulines and Sardy (2019) <doi:10.1016/j.jmva.2019.04.004>.
+BugReports: https://github.com/genevievelrobin/lori/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: stats, data.table, rARPACK, svd, R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-11-18 13:16:26 UTC; grobin
+Author: Genevieve Robin [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-11-18 15:00:02 UTC

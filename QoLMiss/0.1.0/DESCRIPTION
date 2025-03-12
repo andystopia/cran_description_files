@@ -1,0 +1,25 @@
+Title: Scales Score Calculation from Quality of Life Data
+Package: QoLMiss
+Type: Package
+Version: 0.1.0
+Date: 2022-01-06
+Description: There are three functions: qol, miss_qol and miss_patient takes input of the data set containing the answers of QOL questionnaire. It will compute the three types of domain based scale scores: Global, Functional, and Symptoms. In case of missing data, the miss_qol and miss_patient functions will make the required changes and then calculate the domain-wise scale scores. Finally, provide an output replacing the question columns with the domain-based scale scores in the original data set.
+LazyDataCompression: xz
+ByteCompile: Yes
+Authors@R: c(person(("Atanu"), "Bhattacharjee",
+                    email="atanustat@gmail.com",
+	            role=c("aut", "cre","ctb")),
+               person(("Ankita"), "Pal", role=c("aut","ctb")))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: survival,utils,dplyr,missMethods
+Maintainer: Atanu Bhattacharjee <atanustat@gmail.com>
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-01-06 18:37:28 UTC; atanu
+Author: Atanu Bhattacharjee [aut, cre, ctb],
+  Ankita Pal [aut, ctb]
+Repository: CRAN
+Date/Publication: 2022-01-07 13:32:52 UTC

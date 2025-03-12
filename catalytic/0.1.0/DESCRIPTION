@@ -1,0 +1,34 @@
+Package: catalytic
+Title: Tools for Applying Catalytic Priors in Statistical Modeling
+Version: 0.1.0
+Authors@R: c(
+    person("Yitong", "Wu", , "ywu039@e.ntu.edu.sg", role = "aut",
+           comment = c(ORCID = "0009-0000-8683-5129")),
+    person("Dongming", "Huang", , "huang.dongming@nus.edu.sg", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4265-7708")),
+    person("Weihao", "Li", , "weihao.li@u.nus.edu", role = "aut"),
+    person("Ministry of Education, Singapore", role = "fnd",
+           comment = "The development of this package is supported by the Ministry of Education, Singapore, under the Academic Research Fund Tier 1 A-8000466-00-00 (FY2022).")
+  )
+Description: To improve estimation accuracy and stability in statistical modeling, catalytic prior distributions are employed, integrating observed data with synthetic data generated from a simpler model's predictive distribution. This approach enhances model robustness, stability, and flexibility in complex data scenarios. The catalytic prior distributions are introduced by 'Huang et al.' (2020, <doi:10.1073/pnas.1920913117>), Li and Huang (2023, <doi:10.48550/arXiv.2312.01411>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+Imports: coda, invgamma, rlang, rstan, stats, truncnorm, MASS, lme4,
+        quadform, survival, methods
+Depends: R (>= 3.5.0)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat, pROC
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-17 08:57:19 UTC; rosewu
+Author: Yitong Wu [aut] (<https://orcid.org/0009-0000-8683-5129>),
+  Dongming Huang [aut, cre] (<https://orcid.org/0000-0003-4265-7708>),
+  Weihao Li [aut],
+  Ministry of Education, Singapore [fnd] (The development of this package
+    is supported by the Ministry of Education, Singapore, under the
+    Academic Research Fund Tier 1 A-8000466-00-00 (FY2022).)
+Maintainer: Dongming Huang <huang.dongming@nus.edu.sg>
+Repository: CRAN
+Date/Publication: 2024-12-18 16:10:02 UTC

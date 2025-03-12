@@ -1,0 +1,39 @@
+Package: hierBipartite
+Type: Package
+Title: Bipartite Graph-Based Hierarchical Clustering
+Version: 0.0.2
+Authors@R: c(person("Calvin", "Chi", email = "calvin.chi@berkeley.edu", role = c("aut", "cre", "cph")),
+           person("Woojoo", "Lee", role = c("ctb")),
+           person("Donghwan", "Lee", role = c("ctb")),
+           person("Youngjo", "Lee", role = c("ctb")),
+           person("Yudi", "Pawitan", role = c("ctb")))
+Maintainer: Calvin Chi <calvin.chi@berkeley.edu>
+Description: 
+    Bipartite graph-based hierarchical clustering, developed for pharmacogenomic 
+    datasets and datasets sharing the same data structure. The goal is to 
+    construct a hierarchical clustering of groups of samples based on 
+    association patterns between two sets of variables. In the context of
+    pharmacogenomic datasets, the samples are cell lines, and the two sets of 
+    variables are typically expression levels and drug sensitivity values. 
+    For this method, sparse canonical correlation analysis from 
+    Lee, W., Lee, D., Lee, Y. and Pawitan, Y. (2011) <doi:10.2202/1544-6115.1638> 
+    is first applied to extract association patterns for each group of samples. 
+    Then, a nuclear norm-based dissimilarity measure is used to construct a 
+    dissimilarity matrix between groups based on the extracted associations. 
+    Finally, hierarchical clustering is applied.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: parallel, magrittr, irlba
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-02-12 15:02:07 UTC; calvinchi
+Author: Calvin Chi [aut, cre, cph],
+  Woojoo Lee [ctb],
+  Donghwan Lee [ctb],
+  Youngjo Lee [ctb],
+  Yudi Pawitan [ctb]
+Repository: CRAN
+Date/Publication: 2021-02-16 09:40:02 UTC

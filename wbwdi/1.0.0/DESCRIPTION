@@ -1,0 +1,34 @@
+Type: Package
+Package: wbwdi
+Title: Seamless Access to World Bank World Development Indicators (WDI)
+Version: 1.0.0
+Authors@R: c(
+    person("Christoph", "Scheuch", , "christoph@tidy-intelligence.com", 
+            role = c("aut", "cre", "cph"),
+            comment = c(ORCID = "0009-0004-0423-6819"))
+    )
+Description: Access and analyze the World Bank’s World Development Indicators 
+  (WDI) using the corresponding API <https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation>. 
+  WDI provides more than 24,000 country or region-level indicators for various
+  contexts. 'wbwdi' enables users to download, process and work with WDI
+  series across multiple countries, aggregates, and time periods. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1)
+Imports: cli, dplyr (>= 1.0.0), httr2 (>= 1.0.0), jsonlite (>= 1.0.0),
+        purrr (>= 1.0.0), tibble, tidyr (>= 1.0.0), rlang (>= 1.0.0)
+Suggests: curl, forcats, ggplot2, knitr, rmarkdown, testthat (>=
+        3.0.0), wbids
+Config/testthat/edition: 3
+URL: https://github.com/tidy-intelligence/r-wbwdi,
+        https://tidy-intelligence.github.io/r-wbwdi/
+BugReports: https://github.com/tidy-intelligence/r-wbwdi/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-02-24 18:00:08 UTC; krise
+Author: Christoph Scheuch [aut, cre, cph]
+    (<https://orcid.org/0009-0004-0423-6819>)
+Maintainer: Christoph Scheuch <christoph@tidy-intelligence.com>
+Repository: CRAN
+Date/Publication: 2025-02-25 17:40:02 UTC

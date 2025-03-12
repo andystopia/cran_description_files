@@ -1,0 +1,39 @@
+Package: biganalytics
+Version: 1.1.22
+Title: Utilities for 'big.matrix' Objects from Package 'bigmemory'
+Authors@R: c(
+  person(given = "John W.", 
+         family = "Emerson", 
+         email="jayemerson@gmail.com", 
+         role=c("aut")), 
+  person(given = "Michael J.", 
+         family = "Kane", 
+         role = c("cre", "aut"), 
+         email = "bigmemoryauthors@gmail.com",
+         comment = c(ORCID = "0000-0003-1899-6662")), 
+  person(given = "Saksham", 
+         family =  "Chandra", 
+         role = "ctb"))
+Maintainer: Michael J. Kane <bigmemoryauthors@gmail.com>
+Contact: Jay and Mike <bigmemoryauthors@gmail.com>
+Depends: stats, utils, bigmemory (>= 4.0.0), foreach, biglm, methods
+LinkingTo: Rcpp, bigmemory, BH
+Description: Extend the 'bigmemory' package with various analytics.
+    Functions 'bigkmeans' and 'binit' may also be used with native R objects.
+    For 'tapply'-like functions, the bigtabulate package may also be helpful.
+    For linear algebra support, see 'bigalgebra'.  For mutex (locking) support
+    for advanced shared-memory usage, see 'synchronicity'.
+License: LGPL-3 | Apache License 2.0
+Copyright: (C) 2013 John W. Emerson and Michael J. Kane
+URL: http://www.bigmemory.org
+LazyLoad: yes
+Encoding: UTF-8
+Biarch: yes
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-03-28 13:28:33 UTC; mike
+Author: John W. Emerson [aut],
+  Michael J. Kane [cre, aut] (<https://orcid.org/0000-0003-1899-6662>),
+  Saksham Chandra [ctb]
+Repository: CRAN
+Date/Publication: 2024-03-28 16:50:02 UTC

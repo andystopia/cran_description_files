@@ -1,0 +1,34 @@
+Package: ManifoldOptim
+Type: Package
+Title: An R Interface to the 'ROPTLIB' Library for Riemannian Manifold
+        Optimization
+Version: 1.0.1
+Date: 2021-12-12
+Authors@R: c(person("Kofi P. Adragni", role = c("aut","cph"),
+                     email = "kofi@umbc.edu"),
+             person("Sean R. Martin", role = c("aut","cre","cph"),
+                     email = "sean.martin@jhuapl.edu"),
+             person("Andrew M. Raim", role = c("aut","cph")),
+             person("Wen Huang", role = c("aut","cph")))
+Description: An R interface to version 0.3 of the 'ROPTLIB' optimization library
+    (see <https://www.math.fsu.edu/~whuang2/> for more information). Optimize real-
+    valued functions over manifolds such as Stiefel, Grassmann, and Symmetric
+    Positive Definite matrices. For details see Martin et. al. (2020) <doi:10.18637/jss.v093.i01>. 
+    Note that the optional ldr package used in some of this package's examples can be obtained from either JSS 
+    <https://www.jstatsoft.org/index.php/jss/article/view/v061i03/2886> or from the CRAN archives 
+    <https://cran.r-project.org/src/contrib/Archive/ldr/ldr_1.3.3.tar.gz>.
+License: GPL (>= 2)
+Depends: Rcpp (>= 0.12.0)
+Suggests: RcppArmadillo
+LinkingTo: Rcpp, RcppArmadillo
+RcppModules: ManifoldOptim_module
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2021-12-14 21:49:47 UTC; smartin
+Author: Kofi P. Adragni [aut, cph],
+  Sean R. Martin [aut, cre, cph],
+  Andrew M. Raim [aut, cph],
+  Wen Huang [aut, cph]
+Repository: CRAN
+Date/Publication: 2021-12-15 00:30:02 UTC
+Maintainer: Sean R. Martin <sean.martin@jhuapl.edu>

@@ -1,0 +1,31 @@
+Package: bayesPO
+Type: Package
+Title: Bayesian Inference for Presence-Only Data
+Version: 0.5.0
+Date: 2024-02-01
+Authors@R: person("Guido", "Alberti Moreira", email = "guidoalber@gmail.com",
+    role = c("cre","aut"), comment=c(ORCID="0000-0001-7557-0874"))
+Contact: Guido Alberti Moreira <guidoalber@gmail.com>
+Maintainer: Guido Alberti Moreira <guidoalber@gmail.com>
+Description: Presence-Only data is best modelled with a Point Process Model.
+    The work of Moreira and Gamerman (2022) <doi:10.1214/21-AOAS1569> provides
+    a way to use exact Bayesian inference to model this type of data, which is
+    implemented in this package.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+LinkingTo: Rcpp, RcppEigen, RcppProgress
+Imports: Rcpp, coda, parallel, methods, RcppProgress, graphics, stats,
+        tools
+Suggests: bayesplot, knitr, rmarkdown, webshot, ggplot2, MASS
+Collate: 'RcppExports.R' 'bayesPO-package.R' 'prior-class.R'
+        'initial-class.R' 'model-class.R' 'fit-class.R' 'bayesPO.R'
+        'covariate_importance-class.R'
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-02-01 09:01:40 UTC; anthorg
+Author: Guido Alberti Moreira [cre, aut]
+    (<https://orcid.org/0000-0001-7557-0874>)
+Repository: CRAN
+Date/Publication: 2024-02-01 09:40:13 UTC

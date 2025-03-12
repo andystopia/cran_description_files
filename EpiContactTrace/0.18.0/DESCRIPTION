@@ -1,0 +1,32 @@
+Package: EpiContactTrace
+Title: Epidemiological Tool for Contact Tracing
+Version: 0.18.0
+Authors@R: c(
+    person("Maria", "Noremark", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2555-8476")),
+    person("Stefan", "Widgren", role = c("aut", "cre"),
+           email = "stefan.widgren@gmail.com",
+           comment = c(ORCID = "0000-0001-5745-2284")))
+Description: Routines for epidemiological contact tracing
+    and visualisation of network of contacts.
+License: EUPL
+URL: https://github.com/stewid/EpiContactTrace
+BugReports: https://github.com/stewid/EpiContactTrace/issues
+Type: Package
+LazyData: true
+Depends: R(>= 3.0.2)
+Imports: graphics, methods, tools, utils
+Collate: 'Contacts.R' 'ContactTrace.R' 'EpiContactTrace-package.R'
+        'in-degree.R' 'ingoing-contact-chain.R' 'network-structure.R'
+        'network-summary.R' 'out-degree.R' 'outgoing-contact-chain.R'
+        'plot.R' 'report.R' 'shortest-paths.R' 'show.R' 'trace.R'
+        'tree.R'
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-10-04 17:54:02 UTC; stefan
+Author: Maria Noremark [aut] (<https://orcid.org/0000-0003-2555-8476>),
+  Stefan Widgren [aut, cre] (<https://orcid.org/0000-0001-5745-2284>)
+Maintainer: Stefan Widgren <stefan.widgren@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-04 18:20:02 UTC

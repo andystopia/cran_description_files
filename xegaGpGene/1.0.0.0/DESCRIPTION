@@ -1,0 +1,34 @@
+Package: xegaGpGene
+Title: Genetic Operations for Grammar-Based Genetic Programming
+Version: 1.0.0.0
+Authors@R: 
+    person(given = "Andreas",
+           family = "Geyer-Schulz",
+           role = c("aut", "cre"),
+           email = "Andreas.Geyer-Schulz@kit.edu",
+           comment = c(ORCID = "0009-0000-5237-3579"))
+Description: An implementation of
+        the representation-dependent gene level operations of grammar-based
+        genetic programming with genes which are derivation trees
+        of a context-free grammar: Initialization of a gene with a 
+        complete random derivation tree, decoding of a derivation tree.
+        Crossover is implemented by exchanging subtrees. Depth-bounds
+        for the minimal and the maximal depth of the roots of the subtrees
+        exchanged by crossover can be set. 
+        Mutation is implemented by replacing a subtree by a random subtree. 
+        The depth of the random subtree and the insertion node are 
+        configurable. For details, 
+        see Geyer-Schulz (1997, ISBN:978-3-7908-0830-X).
+License: MIT + file LICENSE
+URL: <https://github.com/ageyerschulz/xegaGpGene>
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat
+Imports: stats, xegaBNF, xegaDerivationTrees, xegaSelectGene
+NeedsCompilation: no
+Packaged: 2024-02-14 08:18:23 UTC; dj2333
+Author: Andreas Geyer-Schulz [aut, cre]
+    (<https://orcid.org/0009-0000-5237-3579>)
+Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
+Repository: CRAN
+Date/Publication: 2024-02-15 19:30:02 UTC

@@ -1,0 +1,32 @@
+Package: deforestable
+Type: Package
+Title: Classify RGB Images into Forest or Non-Forest
+Version: 3.1.1
+Authors@R: c(
+  person("Jesper", "Muren", , "jespermuren@gmail.com", "aut",
+         comment = c(ORCID = "0000-0002-9208-5325")),
+  person("Dmitry", "Otryakhin", , "d.otryakhin.acad@protonmail.ch", c("aut", "cre"),
+         comment = c(ORCID = "0000-0002-4700-7221"))
+  )
+Author: Jesper Muren [aut] (<https://orcid.org/0000-0002-9208-5325>),
+  Dmitry Otryakhin [aut, cre] (<https://orcid.org/0000-0002-4700-7221>)
+Maintainer: Dmitry Otryakhin <d.otryakhin.acad@protonmail.ch>
+Description: Implements two out-of box classifiers presented in <doi:10.48550/arXiv.2112.01063> for 
+    distinguishing forest and non-forest terrain images. Under these algorithms, there are 
+    frequentist approaches: one parametric, using stable distributions, and another one- 
+    non-parametric, using the squared Mahalanobis distance. The package also contains functions for 
+    data handling and building of new classifiers as well as some test data set.  
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: terra, jpeg, plyr, StableEstim, Rcpp (>= 1.0.9)
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++11, GDAL (>= 2.2.3), GEOS (>= 3.4.0), PROJ (>=
+        4.9.3), sqlite3
+RoxygenNote: 7.2.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2022-10-13 12:43:52 UTC; d
+Repository: CRAN
+Date/Publication: 2022-10-15 23:22:33 UTC

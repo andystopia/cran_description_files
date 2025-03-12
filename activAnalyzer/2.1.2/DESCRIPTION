@@ -1,0 +1,37 @@
+Package: activAnalyzer
+Title: A 'Shiny' App to Analyze Accelerometer-Measured Daily Physical
+        Behavior Data
+Version: 2.1.2
+Authors@R: person('Pierre-Yves', 'de Müllenheim', email = 'pydemull@uco.fr', role = c('cre', 'aut'), comment = c(ORCID = "0000-0001-9157-7371"))
+Description: A tool to analyse 'ActiGraph' accelerometer data and to implement 
+    the use of the PROactive Physical Activity in COPD (chronic obstructive pulmonary disease) instruments. Once analysis
+    is completed, the app allows to export results to .csv files and to generate
+    a report of the measurement. All the configured inputs relevant for interpreting
+    the results are recorded in the report. In addition to the existing 'R' packages 
+    that are fully integrated with the app, the app uses some functions from the 
+    'actigraph.sleepr' package developed by Petkova (2021) <https://github.com/dipetkov/actigraph.sleepr/>.
+License: GPL (>= 3)
+Imports: assertthat, dbplyr, dplyr, flextable, forcats, ggplot2, golem,
+        hms, lubridate, magrittr, modelr, patchwork, PhysicalActivity,
+        plyr, reactable, rmarkdown, RSQLite, shiny, shinycssloaders,
+        shinydashboard, shinydashboardPlus, shinyFeedback, shinyjs,
+        stringr, tidyr, zoo
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://pydemull.github.io/activAnalyzer/,
+        https://github.com/pydemull/activAnalyzer
+BugReports: https://github.com/pydemull/activAnalyzer/issues
+Suggests: covr, knitr, spelling, testthat (>= 3.0.0), processx,
+        globals, config, tidyselect, DBI, htmltools, officer, pkgload,
+        scales, tibble, rlang, tinytex, shinytest2, pkgdown, callr
+Language: en-US
+Depends: R (>= 3.4.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-23 22:34:41 UTC; pydemullenheim
+Author: Pierre-Yves de Müllenheim [cre, aut]
+    (<https://orcid.org/0000-0001-9157-7371>)
+Maintainer: Pierre-Yves de Müllenheim <pydemull@uco.fr>
+Repository: CRAN
+Date/Publication: 2024-09-23 23:40:02 UTC

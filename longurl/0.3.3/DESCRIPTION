@@ -1,0 +1,29 @@
+Package: longurl
+Title: Expand Short 'URLs'
+Version: 0.3.3
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("John", "Coene", role = "ctb", comment = "Issue #4")
+  )
+Description: Tools are provided to expand vectors of short URLs into long 'URLs'. 
+    No 'API' services are used, which may mean that this operates more slowly than 
+    'API' services do (since they usually cache results of expansions that every 
+    user of the service requests). You can setup your own caching layer with the 
+    'memoise' package if you wish to have a speedup during single sessions or add 
+    larger dependencies, such as 'Redis', to gain a longer-term performance boost 
+    at the expense of added complexity.
+Maintainer: Bob Rudis <bob@rud.is>
+Depends: R (>= 3.6.0)
+Encoding: UTF-8
+License: MIT + file LICENSE
+LazyData: true
+Suggests: tinytest
+Imports: httr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-23 14:37:56 UTC; hrbrmstr
+Author: Bob Rudis [aut, cre] (<https://orcid.org/0000-0001-5670-2640>),
+  John Coene [ctb] (Issue #4)
+Repository: CRAN
+Date/Publication: 2020-06-23 14:50:02 UTC

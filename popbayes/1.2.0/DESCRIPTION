@@ -1,0 +1,45 @@
+Package: popbayes
+Type: Package
+Version: 1.2.0
+Title: Bayesian Model to Estimate Population Trends from Counts Series
+Authors@R: c(
+    person(
+      given   = "Nicolas",
+      family  = "Casajus",
+      email   = "nicolas.casajus@fondationbiodiversite.fr",
+      role    = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-5537-5294")),
+    person(
+      given   = "Roger",
+      family  = "Pradel",
+      email   = "roger.pradel@cefe.cnrs.fr",
+      role    = "aut",
+      comment = c(ORCID = "0000-0002-2684-9251")))
+Description: Infers the trends of one or several animal populations over time 
+    from series of counts. It does so by accounting for count precision 
+    (provided or inferred based on expert knowledge, e.g. guesstimates), 
+    smoothing the population rate of increase over time, and accounting for the
+    maximum demographic potential of species. Inference is carried out in a 
+    Bayesian framework. This work is part of the FRB-CESAB working group
+    AfroBioDrivers 
+    <https://www.fondationbiodiversite.fr/en/the-frb-in-action/programs-and-projects/le-cesab/afrobiodrivers/>.
+URL: https://frbcesab.github.io/popbayes/,
+        https://github.com/frbcesab/popbayes
+BugReports: https://github.com/frbcesab/popbayes/issues
+Depends: R (>= 3.5)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+SystemRequirements: JAGS (>= 4.1)
+Imports: graphics, grDevices, R2jags, stats, usethis
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Packaged: 2023-06-15 11:34:42 UTC; nicolas
+Author: Nicolas Casajus [aut, cre, cph]
+    (<https://orcid.org/0000-0002-5537-5294>),
+  Roger Pradel [aut] (<https://orcid.org/0000-0002-2684-9251>)
+Maintainer: Nicolas Casajus <nicolas.casajus@fondationbiodiversite.fr>
+Repository: CRAN
+Date/Publication: 2023-06-15 11:50:02 UTC

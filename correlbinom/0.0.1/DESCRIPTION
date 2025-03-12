@@ -1,0 +1,16 @@
+Package: correlbinom
+Title: Correlated Binomial Probabilities
+Version: 0.0.1
+Date: 2017-06-15
+Author: Chris Rohlfs [aut], Gary Witt [aut,cre]
+Maintainer: Gary Witt <gary.witt@temple.edu>
+Description: Calculates the probabilities of k successes given n trials of a binomial random variable with non-negative correlation across trials. The function takes as inputs the scalar values the level of correlation or association between trials, the success probability, the number of trials, an optional input specifying the number of bits of precision used in the calculation, and an optional input specifying whether the calculation approach to be used is from Witt (2014) <doi:10.1080/03610926.2012.725148> or from Kuk (2004) <doi:10.1046/j.1467-9876.2003.05369.x>. The output is a (trials+1)-dimensional vector containing the likelihoods of 0, 1, ..., trials successes.
+Depends: R (>= 3.2.3), Rmpfr, methods
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: no
+Packaged: 2017-07-05 23:07:34 UTC; chris
+Repository: CRAN
+Date/Publication: 2017-07-06 10:07:54 UTC

@@ -1,0 +1,33 @@
+Package: fdrtool
+Version: 1.2.18
+Date: 2024-08-20
+Title: Estimation of (Local) False Discovery Rates and Higher Criticism
+Authors@R: c(person(given = "Bernd",
+                      family = "Klaus",
+                      role = "aut"),
+             person(given = "Korbinian",
+                      family = "Strimmer",
+                      role = c("aut", "cre"),
+                      email = "strimmerlab@gmail.com"))
+Depends: R (>= 3.4.0)
+Suggests:
+Imports: graphics, grDevices, stats
+Description: Estimates both tail area-based false 
+   discovery rates (Fdr) as well as local false discovery rates (fdr) for a 
+   variety of null models (p-values, z-scores, correlation coefficients,
+   t-scores).  The proportion of null values and the parameters of the null 
+   distribution are adaptively estimated from the data.  In addition, the package 
+   contains functions for non-parametric density estimation (Grenander estimator), 
+   for monotone regression (isotonic regression and antitonic regression with weights),
+   for computing the greatest convex minorant (GCM) and the least concave majorant (LCM), 
+   for the half-normal and correlation distributions, and for computing
+   empirical higher criticism (HC) scores and the corresponding decision threshold.
+License: GPL (>= 3)
+URL: https://strimmerlab.github.io/software/fdrtool/
+NeedsCompilation: yes
+Packaged: 2024-08-20 09:34:07 UTC; strimmer
+Author: Bernd Klaus [aut],
+  Korbinian Strimmer [aut, cre]
+Maintainer: Korbinian Strimmer <strimmerlab@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-20 10:40:25 UTC

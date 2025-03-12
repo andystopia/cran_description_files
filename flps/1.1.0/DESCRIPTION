@@ -1,0 +1,45 @@
+Package: flps
+Type: Package
+Title: Fully-Latent Principal Stratification
+Version: 1.1.0
+Date: 2024-03-27
+Authors@R: 
+    c(person(given = "Sooyong",
+             family = "Lee",
+             role = c("aut", "cre"),
+             email = "sooyongl09@gmail.com"),
+	  person(given = "Adam",
+             family = "Sales",
+             role = "aut"),
+    person(given = "Hyeon-Ah",
+           family = "Kang",
+           role = "aut"),
+    person(given = "Tiffany",
+           family = "Whittaker",
+           role = "aut")
+    )
+Description: Simulation and analysis of Fully-Latent Principal Stratification (FLPS) with measurement models. Lee, Adam, Kang, & Whittaker (2023). <doi:10.1007/978-3-031-27781-8_25>. This package is supported by the Institute of Education Sciences, U.S. Department of Education, through Grant R305D210036.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: rstan, Rcpp (>= 1.0.8.3), methods, mirt, MASS, utils, stats,
+        mvtnorm, ggplot2, glue
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, lavaan, data.table
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Collate: 'flps-package.r' 'load_rstan.r' 'make_FLPSdata.r' 'run_FLPS.r'
+        'priors.r' 'sim_gen_measurement.r' 'sim_gen_structure.r'
+        'sim_gen_standata.r' 'sim_make_data.r' 'sim_utils.r'
+        'z_utils.r' 'z_validate.r' 'plot_function.r'
+        'summary_function.r' 'data_desc.r' 'zzz.r'
+URL: https://sooyongl.github.io/flps/
+NeedsCompilation: no
+Packaged: 2024-04-21 19:59:59 UTC; sooyo
+Author: Sooyong Lee [aut, cre],
+  Adam Sales [aut],
+  Hyeon-Ah Kang [aut],
+  Tiffany Whittaker [aut]
+Maintainer: Sooyong Lee <sooyongl09@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-21 21:22:38 UTC

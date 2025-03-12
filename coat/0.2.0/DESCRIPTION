@@ -1,0 +1,32 @@
+Package: coat
+Title: Conditional Method Agreement Trees (COAT)
+Version: 0.2.0
+Date: 2023-07-06
+Authors@R: c(person("Alexander", "Hapfelmeier", role = c("aut", "cre"),
+                      email = "Alexander.Hapfelmeier@mri.tum.de", comment = c(ORCID = "0000-0001-6765-6352")),
+             person("Siranush", "Karapetyan", role = "aut", 
+                      email = "Siranush.Karapetyan@mri.tum.de", comment = c(ORCID = "0000-0003-1831-9741")),
+             person(given = "Achim", family = "Zeileis", role = "aut",
+                     email = "Achim.Zeileis@R-project.org", comment = c(ORCID = "0000-0003-0918-3766")))
+Description: Agreement of continuously scaled measurements made by two techniques, devices or methods is usually
+             evaluated by the well-established Bland-Altman analysis or plot. Conditional method agreement trees (COAT),
+             proposed by Karapetyan, Zeileis, Henriksen, and Hapfelmeier (2023) <doi:10.48550/arXiv.2306.04456>,
+             embed the Bland-Altman analysis in the framework of recursive partitioning to explore heterogeneous method
+             agreement in dependence of covariates. COAT can also be used to perform a Bland-Altman test for differences
+             in method agreement.
+License: GPL-2 | GPL-3
+Depends: R (>= 3.5.0)
+Imports: partykit, ggplot2, grid, ggparty, gridExtra, ggtext
+Suggests: disttree, MethComp
+Additional_repositories: https://R-Forge.R-project.org
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-07-10 14:54:00 UTC; haller
+Author: Alexander Hapfelmeier [aut, cre]
+    (<https://orcid.org/0000-0001-6765-6352>),
+  Siranush Karapetyan [aut] (<https://orcid.org/0000-0003-1831-9741>),
+  Achim Zeileis [aut] (<https://orcid.org/0000-0003-0918-3766>)
+Maintainer: Alexander Hapfelmeier <Alexander.Hapfelmeier@mri.tum.de>
+Repository: CRAN
+Date/Publication: 2023-07-11 15:30:09 UTC

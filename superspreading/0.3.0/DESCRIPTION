@@ -1,0 +1,61 @@
+Package: superspreading
+Title: Understand Individual-Level Variation in Infectious Disease
+        Transmission
+Version: 0.3.0
+Authors@R: c(
+    person("Joshua W.", "Lambert", , "joshua.lambert@lshtm.ac.uk", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5218-3046")),
+    person("Adam", "Kucharski", , "adam.kucharski@lshtm.ac.uk", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0001-8814-9421")),
+    person("Dillon C.", "Adam", , "dcadam@hku.hk", role = "aut",
+           comment = c(ORCID = "0000-0002-7485-9905")),
+    person("Sebastian", "Funk", , "sebastian.funk@lshtm.ac.uk", role = c("ctb", "cph"),
+           comment = c(ORCID = "0000-0002-2842-3406", ".chain_sim uses code from bpmodels::chain_sim")),
+    person("Pratik", "Gupte", , "pratik.gupte@lshtm.ac.uk", role = "rev",
+           comment = c(ORCID = "0000-0001-5294-7819")),
+    person("Hugo", "Gruson", , "hugo@data.org", role = "rev",
+           comment = c(ORCID = "0000-0002-4094-1476")),
+    person("James M.", "Azam", , "james.azam@lshtm.ac.uk", role = c("rev", "ctb"),
+           comment = c(ORCID = "0000-0001-5782-7330")),
+    person("Chris", "Hartgerink", , "chris@data.org", role = "rev",
+           comment = c(ORCID = "0000-0003-1050-6809"))
+  )
+Description: Estimate and understand individual-level variation in
+    transmission. Implements density and cumulative compound Poisson
+    discrete distribution functions ('Kremer et al.' (2021) 
+    <doi:10.1038/s41598-021-93578-x>), as well as functions to calculate
+    infectious disease outbreak statistics given epidemiological
+    parameters on individual-level transmission; including the probability
+    of an outbreak becoming an epidemic/extinct ('Kucharski et al.' (2020) 
+    <doi:10.1016/S1473-3099(20)30144-4>), or the cluster size
+    statistics, e.g. what proportion of cases cause X\% of transmission
+    ('Lloyd-Smith et al.' (2005) <doi:10.1038/nature04153>).
+License: MIT + file LICENSE
+URL: https://github.com/epiverse-trace/superspreading,
+        https://epiverse-trace.github.io/superspreading/
+BugReports: https://github.com/epiverse-trace/superspreading/issues
+Imports: checkmate, rlang, stats
+Suggests: dplyr, epiparameter (>= 0.4.0), fitdistrplus, ggplot2,
+        ggtext, knitr, purrr, rmarkdown, scales, spelling, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: epiverse-trace/epiversetheme
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-23 13:44:41 UTC; lshjl15
+Author: Joshua W. Lambert [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5218-3046>),
+  Adam Kucharski [aut, cph] (<https://orcid.org/0000-0001-8814-9421>),
+  Dillon C. Adam [aut] (<https://orcid.org/0000-0002-7485-9905>),
+  Sebastian Funk [ctb, cph] (<https://orcid.org/0000-0002-2842-3406>,
+    .chain_sim uses code from bpmodels::chain_sim),
+  Pratik Gupte [rev] (<https://orcid.org/0000-0001-5294-7819>),
+  Hugo Gruson [rev] (<https://orcid.org/0000-0002-4094-1476>),
+  James M. Azam [rev, ctb] (<https://orcid.org/0000-0001-5782-7330>),
+  Chris Hartgerink [rev] (<https://orcid.org/0000-0003-1050-6809>)
+Maintainer: Joshua W. Lambert <joshua.lambert@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2025-01-27 18:40:02 UTC

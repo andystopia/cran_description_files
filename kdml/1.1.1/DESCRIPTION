@@ -1,0 +1,22 @@
+Package: kdml
+Title: Kernel Distance Metric Learning for Mixed-Type Data
+Version: 1.1.1
+Authors@R: c(person("John R. J.", "Thompson", email = "john.thompson@ubc.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6303-449X")),
+             person("Jesse S.","Ghashti", email="jesse.ghashti@ubc.ca", role = "aut",
+           comment = c(ORCID = "0009-0001-6645-1766")))
+Maintainer: John R. J. Thompson <john.thompson@ubc.ca>
+Description: Distance metrics for mixed-type data consisting of continuous, nominal, and ordinal variables. This methodology uses additive and product kernels to calculate similarity functions and metrics, and selects variables relevant to the underlying distance through bandwidth selection via maximum similarity cross-validation. These methods can be used in any distance-based algorithm, such as distance-based clustering. For further details, we refer the reader to Ghashti and Thompson (2024) <doi:10.1007/s00357-024-09493-z> for dkps() methodology, and Ghashti (2024) <doi:10.14288/1.0443975> for dkss() methodology.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0), np
+Imports: MASS, markdown
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-02-21 00:09:41 UTC; Mango
+Author: John R. J. Thompson [aut, cre]
+    (<https://orcid.org/0000-0002-6303-449X>),
+  Jesse S. Ghashti [aut] (<https://orcid.org/0009-0001-6645-1766>)
+Repository: CRAN
+Date/Publication: 2025-02-21 00:30:06 UTC

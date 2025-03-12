@@ -1,0 +1,26 @@
+Package: R2D2ordinal
+Title: Implements Pseudo-R2D2 Prior for Ordinal Regression
+Version: 1.0.0
+Authors@R: 
+    person("Eric", "Yanchenko", , "eyanchenko@aiu.ac.jp", role = c("aut", "cre"))
+Description: Implements the pseudo-R2D2 prior for ordinal regression from the paper "Psuedo-R2D2 prior for high-dimensional ordinal regression" by Yanchenko (2025) <doi:10.48550/arXiv.2502.17491>. In particular, it provides code to evaluate the probability distribution function for the cut-points, compute the log-likelihood, calculate the hyper-parameters for the global variance parameter, find the distribution of McFadden's coefficient-of-determination, and fit the model in 'rstan'. Please cite the paper if you use these codes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Biarch: true
+Depends: R (>= 3.5.0)
+Imports: extraDistr (>= 1.10.0), GIGrvg (>= 0.8), LaplacesDemon (>=
+        16.1.6), methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1),
+        rstan (>= 2.18.1), rstantools (>= 2.4.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, ggplot2, dplyr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2025-02-26 22:44:34 UTC; ericyanchenko
+Author: Eric Yanchenko [aut, cre]
+Maintainer: Eric Yanchenko <eyanchenko@aiu.ac.jp>
+Repository: CRAN
+Date/Publication: 2025-02-27 17:10:09 UTC

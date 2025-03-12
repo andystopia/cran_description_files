@@ -1,0 +1,37 @@
+Package: VisitorCounts
+Type: Package
+Title: Modeling and Forecasting Visitor Counts Using Social Media
+Version: 2.0.3
+Date: 2025-1-13
+Authors@R: c(
+        person("Robert", "Bowen", email = "robertbowen.bham@gmail.com", role = c("aut", "cre")),
+        person("Russell", "Goebel", email = "rgoebel@bu.edu", role = "aut"),
+        person("Beth Ann", "Brackett", email = "eliannkb@gmail.com", role = "ctb"),
+        person("Kimihiro", "Noguchi", email = "Kimihiro.noguchi@wwu.edu", role = "aut"),
+        person("Dylan", "Way", email = "wayd2@wwu.edu", role="aut")
+    )
+Author: Robert Bowen [aut, cre],
+  Russell Goebel [aut],
+  Beth Ann Brackett [ctb],
+  Kimihiro Noguchi [aut],
+  Dylan Way [aut]
+Maintainer: Robert Bowen <robertbowen.bham@gmail.com>
+Description: Performs modeling and forecasting of park visitor counts
+	using social media data and (partial) on-site visitor counts.
+	Specifically, the model is built based on an automatic decomposition
+	of the trend and seasonal components of the social media-based park visitor counts,
+	from which short-term forecasts of the visitor counts and percent changes
+	in the visitor counts can be made. A reference for the underlying model that 'VisitorCounts' uses can be found at 
+    Russell Goebel, Austin Schmaltz, Beth Ann Brackett, Spencer A. Wood, Kimihiro Noguchi (2023) <doi:10.1002/for.2965> .
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Rssa, methods, ggplot2, zoo, cowplot
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-01-14 15:20:33 UTC; Admim
+Repository: CRAN
+Date/Publication: 2025-01-15 23:50:02 UTC

@@ -1,0 +1,23 @@
+Package: SuperRanker
+Type: Package
+Title: Sequential Rank Agreement
+Version: 1.2.1
+Date: 2023-08-27
+Authors@R: c(person(given="Claus Thorn", family="Ekstrøm", email="ekstrom@sund.ku.dk", role=c("aut", "cre")),
+             person(given="Thomas Alexander", family="Gerds", email="tag@biostat.ku.dk", role=c("aut")))
+Description: Tools for analysing the agreement of two or more rankings of the same items. Examples are importance rankings of predictor variables and risk predictions of subjects. Benchmarks for agreement are computed based on random permutation and bootstrap. See Ekstrøm CT, Gerds TA, Jensen, AK (2018). "Sequential rank agreement methods for comparison of ranked lists." _Biostatistics_, *20*(4), 582-598 <doi:10.1093/biostatistics/kxy017> for more information.
+License: GPL (>= 2)
+Imports: stats, graphics, Rcpp (>= 0.11.5), prodlim (>= 1.5.7)
+LinkingTo: Rcpp
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-08-27 14:36:06 UTC; ekstrom
+Author: Claus Thorn Ekstrøm [aut, cre],
+  Thomas Alexander Gerds [aut]
+Maintainer: Claus Thorn Ekstrøm <ekstrom@sund.ku.dk>
+Repository: CRAN
+Date/Publication: 2023-08-27 22:40:09 UTC

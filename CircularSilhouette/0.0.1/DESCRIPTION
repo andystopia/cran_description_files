@@ -1,0 +1,43 @@
+Package: CircularSilhouette
+Type: Package
+Title: Fast Silhouette on Circular or Linear Data Clusters
+Version: 0.0.1
+Date: 2022-04-22
+Authors@R: 
+  c(person("Yinong", "Chen", role = "aut", 
+	         comment = c(ORCID = "0000-0003-1641-1712")),
+	  person("Tathagata", "Debnath", role = "aut", 
+	         comment = c(ORCID = "0000-0001-6445-275X")),
+	  person("Andrew", "Cai", role = "aut",
+           comment = c(ORCID = "")),
+    person("Joe", "Song", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6883-6547"),
+		       email = "joemsong@cs.nmsu.edu"))
+Author: Yinong Chen [aut] (<https://orcid.org/0000-0003-1641-1712>),
+  Tathagata Debnath [aut] (<https://orcid.org/0000-0001-6445-275X>),
+  Andrew Cai [aut],
+  Joe Song [aut, cre] (<https://orcid.org/0000-0002-6883-6547>)
+Maintainer: Joe Song <joemsong@cs.nmsu.edu>
+Description: Calculating silhouette information for clusters on
+ circular or linear data using fast algorithms. These algorithms run in
+ linear time on sorted data, in contrast to quadratic time by the
+ definition of silhouette. When used together with the fast and optimal
+ circular clustering method FOCC (Debnath & Song 2021)
+ <doi:10.1109/TCBB.2021.3077573> implemented in R package 'OptCirClust',
+ circular silhouette can be maximized to find the optimal number of
+ circular clusters; it can also be used to estimate the period of noisy
+ periodical data.
+VignetteBuilder: knitr
+License: LGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: OptCirClust, Rcpp (>= 1.0.7), Rdpack
+Suggests: cluster, ggplot2, knitr, rmarkdown, testthat (>= 3.0.0),
+        graphics
+LinkingTo: Rcpp
+NeedsCompilation: yes
+RdMacros: Rdpack
+Config/testthat/edition: 3
+Packaged: 2022-04-22 19:38:16 UTC; joesong
+Repository: CRAN
+Date/Publication: 2022-04-27 07:40:02 UTC

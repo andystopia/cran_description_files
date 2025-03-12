@@ -1,0 +1,23 @@
+Package: langevitour
+Title: Langevin Tour
+Version: 0.7
+Authors@R: 
+    person("Paul", "Harrison", , "pfh@logarithmic.net", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3980-268X"))
+Description: 
+    An HTML widget that randomly tours 2D projections of numerical data. A random walk through projections of the data is shown. The user can manipulate the plot to use specified axes, or turn on Guided Tour mode to find an informative projection of the data. Groups within the data can be hidden or shown, as can particular axes. Points can be brushed, and the selection can be linked to other widgets using crosstalk. The underlying method to produce the random walk and projection pursuit uses Langevin dynamics. The widget can be used from within R, or included in a self-contained R Markdown or Quarto document or presentation, or used in a Shiny app.
+URL: https://logarithmic.net/langevitour/
+BugReports: https://github.com/pfh/langevitour/issues/
+Imports: htmlwidgets, crosstalk, RANN, assertthat
+Suggests: shiny, palmerpenguins, knitr, rmarkdown
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2024-02-24 04:00:47 UTC; pfh
+Author: Paul Harrison [aut, cre] (<https://orcid.org/0000-0002-3980-268X>)
+Maintainer: Paul Harrison <pfh@logarithmic.net>
+Repository: CRAN
+Date/Publication: 2024-02-24 04:30:02 UTC

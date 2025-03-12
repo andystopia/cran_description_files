@@ -1,0 +1,29 @@
+Package: FlexVarJM
+Title: Estimate Joint Models with Subject-Specific Variance
+Version: 0.1.0
+Authors@R: 
+    c(person("Léonie", "Courcoul", email ="leonie.courcoul@u-bordeaux.fr", role = c("aut", "cre")),
+    person("Antoine", "Barbieri", ,email = "antoine.barbieri@u-bordeaux.fr", role = c("aut")),
+    person("Hélène", "Jacqmin-Gadda", email = "helene.jacqmin-gadda@u-bordeaux.fr", role = c("aut"))
+    )
+Description: Estimation of mixed models including a subject-specific variance which can be time and covariate dependent. In the joint model framework, the package handles left truncation and allows a flexible dependence structure between the competing events and the longitudinal marker. The estimation is performed under the frequentist framework, using the Marquardt-Levenberg algorithm. (Courcoul, Tzourio, Woodward, Barbieri, Jacqmin-Gadda (2023) <arXiv:2306.16785>).
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: ggplot2, lcmm, marqLevAlg, mvtnorm, randtoolbox, Rcpp, stats,
+        survminer, utils
+Depends: R (>= 3.5.0), splines, survival
+URL: https://github.com/LeonieCourcoul/FlexVarJM
+BugReports: https://github.com/LeonieCourcoul/FlexVarJM/issues
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2023-11-20 12:07:33 UTC; lc14
+Author: Léonie Courcoul [aut, cre],
+  Antoine Barbieri [aut],
+  Hélène Jacqmin-Gadda [aut]
+Maintainer: Léonie Courcoul <leonie.courcoul@u-bordeaux.fr>
+Repository: CRAN
+Date/Publication: 2023-11-20 19:40:12 UTC

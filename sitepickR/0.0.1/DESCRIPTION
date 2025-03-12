@@ -1,0 +1,31 @@
+Package: sitepickR
+Type: Package
+Title: Two-Level Sample Selection with Optimal Site Replacement
+Version: 0.0.1
+Date: 2022-11-29
+Authors@R: c(
+    person("Elena", "Badillo-Goicoechea", , "egoicoe1@jhu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "")),
+    person("Robert", "Olsen", , "robolsen@gwu.edu", role = "aut",
+           comment = c(ORCID = "")),
+    person("Elizabeth", "Stuart", , "estuart1@jhu.edu",role = "aut",
+           comment = c(ORCID = ""))
+  )
+Description: Carries out a two-level sample selection where the possibility of an initially selected site not wanting to participate is anticipated, and the site is optimally replaced. The procedure aims to reduce bias (and/or loss of external validity) with respect to the target population. In selecting units and sub-units, 'sitepickR' uses the cube method developed by 'Deville & Tillé', (2004) <http://www.math.helsinki.fi/msm/banocoss/Deville_Tille_2004.pdf> and described in Tillé (2011) <https://www150.statcan.gc.ca/n1/en/pub/12-001-x/2011002/article/11609-eng.pdf?st=5-sx8Q8n>. The cube method is a probability sampling method that is designed to satisfy criteria for balance between the sample and the population. Recent research has shown that this method performs well in simulations for studies of educational programs (see Fay & Olsen (2021, under review). To implement the cube method, 'sitepickR' uses the sampling R package <https://cran.r-project.org/package=sampling>. To implement statistical matching, 'sitepickR' uses the 'MatchIt' R package <https://cran.r-project.org/package=MatchIt>.
+Imports: MatchIt, sampling, dplyr, ggplot2, reshape2, data.table,
+        stats, stringr, tidyr, magrittr, tidyselect, scales
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, devtools
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-12-04 00:22:21 UTC; r1707404
+Author: Elena Badillo-Goicoechea [aut, cre],
+  Robert Olsen [aut],
+  Elizabeth Stuart [aut]
+Maintainer: Elena Badillo-Goicoechea <egoicoe1@jhu.edu>
+Repository: CRAN
+Date/Publication: 2022-12-05 11:00:02 UTC

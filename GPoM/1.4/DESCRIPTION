@@ -1,0 +1,45 @@
+Package: GPoM
+Type: Package
+Title: Generalized Polynomial Modelling
+Version: 1.4
+Date: 2023-06-16
+Authors@R: c(
+    person("Sylvain", "Mangiarotti", email = "sylvain.mangiarotti@cesbio.cnes.fr",role = c("aut")),
+    person("Mireille", "Huc", email = "mireille.huc@u-paris2.fr", role = c("cre","aut")),
+    person("Flavie", "Le Jean",role = c("ctb")),
+    person("Malika", "Chassan",role = c("ctb")),
+    person("Laurent", "Drapeau",role = c("ctb")),
+    person("Institut de Recherche pour le Développement", role ="fnd"),
+    person("Centre National de la Recherche Scientifique", role ="fnd")
+    )
+Maintainer: Mireille Huc <mireille.huc@u-paris2.fr>
+Description: Platform dedicated to the Global Modelling technique. Its aim
+    is to obtain ordinary differential equations of polynomial form directly
+    from time series. It can be applied to single or multiple time series under
+    various conditions of noise, time series lengths, sampling, etc. This platform
+    is developped at the Centre d'Etudes Spatiales de la Biosphere (CESBIO),
+    UMR 5126 UPS/CNRS/CNES/IRD, 18 av. Edouard Belin, 31401 TOULOUSE, FRANCE.
+    The developments were funded by the French program Les Enveloppes Fluides
+    et l'Environnement (LEFE, MANU, projets GloMo, SpatioGloMo and MoMu). The
+    French program Defi InFiNiTi (CNRS) and PNTS are also acknowledged (projects
+    Crops'IChaos and Musc & SlowFast). The method is described in the article :
+    Mangiarotti S. and Huc M. (2019) <doi:10.1063/1.5081448>.
+License: CeCILL-2
+LazyData: TRUE
+RoxygenNote: 7.1.1
+Depends: R (>= 3.6), deSolve, rgl
+Imports: float
+Suggests: signal, knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-06-15 17:05:56 UTC; hucm
+Author: Sylvain Mangiarotti [aut],
+  Mireille Huc [cre, aut],
+  Flavie Le Jean [ctb],
+  Malika Chassan [ctb],
+  Laurent Drapeau [ctb],
+  Institut de Recherche pour le Développement [fnd],
+  Centre National de la Recherche Scientifique [fnd]
+Repository: CRAN
+Date/Publication: 2023-06-16 08:10:10 UTC

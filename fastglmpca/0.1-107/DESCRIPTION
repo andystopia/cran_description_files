@@ -1,0 +1,39 @@
+Encoding: UTF-8
+Type: Package
+Package: fastglmpca
+Version: 0.1-107
+Date: 2027-03-09
+Title: Fast Algorithms for Generalized Principal Component Analysis
+Authors@R: c(person("Eric","Weine",role=c("aut","cre"),
+                    email="ericweine15@gmail.com"),
+             person("Peter","Carbonetto",role="aut"),
+             person("Matthew","Stephens",role="aut"))
+Description: Implements fast, scalable optimization algorithms for
+    fitting generalized principal components analysis (GLM-PCA) models,
+    as described in "A Generalization of Principal Components
+    Analysis to the Exponential Family" Collins M, Dasgupta S, Schapire RE
+    (2002, ISBN:9780262271738), and subsequently "Feature Selection 
+    and Dimension Reduction for Single-Cell RNA-Seq Based on a Multinomial
+    Model" Townes FW, Hicks SC, Aryee MJ, Irizarry RA (2019)
+    <doi:10.1186/s13059-019-1861-6>.
+License: GPL (>= 2)
+URL: https://github.com/stephenslab/fastglmpca
+BugReports: https://github.com/stephenslab/fastglmpca/issues
+SystemRequirements: GNU make
+Depends: R (>= 3.6)
+Imports: utils, Matrix, stats, distr, daarem, Rcpp (>= 1.0.8),
+        RcppParallel (>= 5.1.5)
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+Suggests: testthat, knitr, rmarkdown, ggplot2, cowplot
+LazyData: true
+LazyDataCompression: xz
+NeedsCompilation: yes
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+Packaged: 2025-03-10 12:53:05 UTC; eweine
+Author: Eric Weine [aut, cre],
+  Peter Carbonetto [aut],
+  Matthew Stephens [aut]
+Maintainer: Eric Weine <ericweine15@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-10 13:10:02 UTC

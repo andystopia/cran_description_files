@@ -1,0 +1,36 @@
+Package: gdim
+Title: Estimate Graph Dimension using Cross-Validated Eigenvalues
+Version: 0.1.0
+Authors@R: c(
+    person("Fan", "Chen", , "fchen365@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-4508-6023")),
+    person("Alex", "Hayes", , "alexpghayes@gmail.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0002-4985-5160")),
+    person("Karl", "Rohe", , "karlrohe@wisc.edu", role = "aut")
+  )
+Description: Cross-validated eigenvalues are estimated by
+    splitting a graph into two parts, the training and the test graph.
+    The training graph is used to estimate eigenvectors, and
+    the test graph is used to evaluate the correlation between the training
+    eigenvectors and the eigenvectors of the test graph.
+    The correlations follow a simple central limit theorem that can
+    be used to estimate graph dimension via hypothesis testing, see
+    Chen et al. (2021) <arXiv:2108.03336> for details.
+License: GPL (>= 3)
+URL: https://github.com/RoheLab/gdim, https://rohelab.github.io/gdim/
+BugReports: https://github.com/RoheLab/gdim/issues
+Depends: Matrix, R (>= 3.5)
+Imports: dplyr, ggplot2, irlba, magrittr, methods, progress, rlang,
+        stats, tibble
+Suggests: epca, fastRG, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-05 15:04:42 UTC; alex
+Author: Fan Chen [aut] (<https://orcid.org/0000-0003-4508-6023>),
+  Alex Hayes [cre, aut, cph] (<https://orcid.org/0000-0002-4985-5160>),
+  Karl Rohe [aut]
+Maintainer: Alex Hayes <alexpghayes@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-09-05 20:20:02 UTC

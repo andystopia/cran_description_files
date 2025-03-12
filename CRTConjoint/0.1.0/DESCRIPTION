@@ -1,0 +1,33 @@
+Package: CRTConjoint
+Title: Conditional Randomization Testing (CRT) Approach for Conjoint
+        Analysis
+Version: 0.1.0
+Authors@R: c(
+	person("Dae Woong", "Ham", email = "daewoongham@g.harvard.edu", role = c("aut", "cre")),
+	person("Kosuke", "Imai", email = "imai@harvard.edu", role = "aut"),
+	person("Lucas", "Janson", email = "ljanson@fas.harvard.edu",role = "aut"),
+	person("Jacob", "Bien", email = "jbien@usc.edu",role = c("ctb", "cph")))
+Maintainer: Dae Woong Ham <daewoongham@g.harvard.edu>
+Description: Computes p-value according to the CRT using the HierNet test statistic. For more details, see Ham, Imai, Janson (2022) "Using Machine Learning to Test Causal Hypotheses in Conjoint Analysis" <arXiv:2201.08343>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Imports: utils, methods, doSNOW, foreach, Rcpp, snow
+Depends: R (>= 2.10)
+LazyData: true
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/daewoongham97/CRTConjoint
+BugReports: https://github.com/daewoongham97/CRTConjoint/issues
+Copyright: (c) 2022 Dae Woong Ham. Code in helper_hierNet.R, hierNet.c,
+        and hierNet_init.c are taken (with explicit permission) from
+        (c) 2020 Jacob Bien.
+NeedsCompilation: yes
+Packaged: 2022-06-07 16:16:29 UTC; Ham
+Author: Dae Woong Ham [aut, cre],
+  Kosuke Imai [aut],
+  Lucas Janson [aut],
+  Jacob Bien [ctb, cph]
+Repository: CRAN
+Date/Publication: 2022-06-09 08:00:05 UTC

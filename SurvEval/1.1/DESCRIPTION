@@ -1,0 +1,23 @@
+Package: SurvEval
+Type: Package
+Title: Methods for the Evaluation of Survival Models
+Version: 1.1
+Authors@R: c(
+    person("Sean", "Devlin", email = "devlins@mskcc.org", 
+        role =c("aut", "cre")),
+    person("Glenn", "Heller", email = "hellerg@mct.uminho.pt",
+        role = "aut")
+    )
+Date: 2024-05-04
+Description: Provides predictive accuracy tools to evaluate time-to-event survival models. This includes calculating the concordance probability estimate that incorporates the follow-up time for a particular study developed by Devlin, Gonen, Heller (2020)<doi:10.1007/s10985-020-09503-3>. It also evaluates the concordance probability estimate for nested Cox proportional hazards models using a projection-based approach by Heller and Devlin (under review). 
+License: GPL (>= 2)
+Depends: R (>= 3.6), survival, stats
+Imports: Rcpp (>= 1.0.11)
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2024-05-13 14:55:15 UTC; devlins
+Author: Sean Devlin [aut, cre],
+  Glenn Heller [aut]
+Maintainer: Sean Devlin <devlins@mskcc.org>
+Repository: CRAN
+Date/Publication: 2024-05-14 14:30:02 UTC

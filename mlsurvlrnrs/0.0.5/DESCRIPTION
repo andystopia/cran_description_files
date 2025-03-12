@@ -1,0 +1,37 @@
+Package: mlsurvlrnrs
+Title: R6-Based ML Survival Learners for 'mlexperiments'
+Version: 0.0.5
+Authors@R: 
+    person("Lorenz A.", "Kapsner", , "lorenz.kapsner@gmail.com", role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0003-1866-860X"))
+Description: Enhances 'mlexperiments'
+    <https://CRAN.R-project.org/package=mlexperiments> with additional
+    machine learning ('ML') learners for survival analysis. The package
+    provides R6-based survival learners for the following algorithms:
+    'glmnet' <https://CRAN.R-project.org/package=glmnet>, 'ranger'
+    <https://CRAN.R-project.org/package=ranger>, 'xgboost'
+    <https://CRAN.R-project.org/package=xgboost>, and 'rpart'
+    <https://CRAN.R-project.org/package=rpart>. These can be used directly
+    with the 'mlexperiments' R package.
+License: GPL (>= 3)
+URL: https://github.com/kapsner/mlsurvlrnrs
+BugReports: https://github.com/kapsner/mlsurvlrnrs/issues
+Depends: R (>= 4.1.0)
+Imports: data.table, kdry, mlexperiments, mllrnrs, R6, stats
+Suggests: glmnet, lintr, mlr3measures, ParBayesianOptimization, quarto,
+        ranger, rpart, splitTools, survival, testthat (>= 3.0.1),
+        xgboost
+VignetteBuilder: quarto
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Date/Publication: 2025-03-03 21:20:02 UTC
+Encoding: UTF-8
+SystemRequirements: Quarto command line tools
+        (https://github.com/quarto-dev/quarto-cli).
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-03-03 20:46:39 UTC; user
+Author: Lorenz A. Kapsner [cre, aut, cph]
+    (<https://orcid.org/0000-0003-1866-860X>)
+Maintainer: Lorenz A. Kapsner <lorenz.kapsner@gmail.com>
+Repository: CRAN

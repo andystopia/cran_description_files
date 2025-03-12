@@ -1,0 +1,18 @@
+Package: EVchargcost
+Type: Package
+Title: Computes and Plot the Optimal Charging Strategy for Electric
+        Vehicles
+Version: 0.1.0
+Authors@R: c(person(given="Brais",family="Gonzalez-Rodriguez",email="braisgonzalez.rodriguez@usc.es",role=c("aut","cre")))
+Description: The purpose of this library is to compute the optimal charging cost function for a electric vehicle (EV). It is well known that the charging function of a EV is a concave function that can be approximated by a piece-wise linear function, so bigger the state of charge, slower the charging process is. Moreover, the other important function is the one that gives the electricity price. This function is usually step-wise, since depending on the time of the day, the price of the electricity is different. Then, the problem of charging an EV to a certain state of charge is not trivial. This library implements an algorithm to compute the optimal charging cost function, that is, it plots for a given state of charge r (between 0 and 1) the minimum cost we need to pay in order to charge the EV to that state of charge r. The details of the algorithm are described in González-Rodríguez et at (2023) <https://inria.hal.science/hal-04362876v1>.
+License: GPL-3
+Language: en-US
+Imports: ggplot2, cowplot
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-01-09 10:12:05 UTC; Brais
+Author: Brais Gonzalez-Rodriguez [aut, cre]
+Maintainer: Brais Gonzalez-Rodriguez <braisgonzalez.rodriguez@usc.es>
+Repository: CRAN
+Date/Publication: 2024-01-10 13:43:07 UTC

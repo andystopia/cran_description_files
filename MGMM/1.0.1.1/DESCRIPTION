@@ -1,0 +1,27 @@
+Package: MGMM
+Title: Missingness Aware Gaussian Mixture Models
+Date: 2023-09-30
+Version: 1.0.1.1
+Authors@R: 
+    person(given = "Zachary",
+           family = "McCaw",
+           role = c("aut", "cre"),
+           email = "zmccaw@alumni.harvard.edu",
+           comment = c(ORCID = "0000-0002-2006-9828")
+           )
+Description: Parameter estimation and classification for Gaussian Mixture Models (GMMs) in the presence of missing data. This package complements existing implementations by allowing for both missing elements in the input vectors and full (as opposed to strictly diagonal) covariance matrices. Estimation is performed using an expectation conditional maximization algorithm that accounts for missingness of both the cluster assignments and the vector components. The output includes the marginal cluster membership probabilities; the mean and covariance of each cluster; the posterior probabilities of cluster membership; and a completed version of the input data, with missing values imputed to their posterior expectations. For additional details, please see McCaw ZR, Julienne H, Aschard H. "Fitting Gaussian mixture models on incomplete data." <doi:10.1186/s12859-022-04740-9>.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LinkingTo: Rcpp, RcppArmadillo
+Imports: cluster, methods, mvnfast, plyr, Rcpp (>= 1.0.3), stats
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, withr
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-09-30 15:23:08 UTC; zmccaw
+Author: Zachary McCaw [aut, cre] (<https://orcid.org/0000-0002-2006-9828>)
+Maintainer: Zachary McCaw <zmccaw@alumni.harvard.edu>
+Repository: CRAN
+Date/Publication: 2023-09-30 15:42:38 UTC

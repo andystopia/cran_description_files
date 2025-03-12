@@ -1,0 +1,36 @@
+Package: Qval
+Type: Package
+Title: The Q-Matrix Validation Methods Framework
+Version: 1.1.1
+Date: 2025-01-10
+Author: Haijiang Qin [aut, cre, cph] (<https://orcid.org/0009-0000-6721-5653>),
+  Lei Guo [aut, cph] (<https://orcid.org/0000-0002-8273-3587>)
+Authors@R: c(person(given = "Haijiang", 
+                    family = "Qin", 
+                    role = c("aut", "cre", "cph"), 
+                    email = "haijiang133@outlook.com", 
+                    comment = c(ORCID = "0009-0000-6721-5653")),
+             person(given = "Lei", 
+                    family = "Guo", 
+                    role = c("aut", "cph"), 
+                    email = "happygl1229@swu.edu.cn", 
+                    comment = c(ORCID = "0000-0002-8273-3587")))
+Maintainer: Haijiang Qin <haijiang133@outlook.com>
+Description: Provide a variety of Q-matrix validation methods for the generalized cognitive diagnosis models, including the method based on the generalized deterministic input, noisy, and gate model (G-DINA) by de la Torre (2011) <DOI:10.1007/s11336-011-9207-7> discrimination index (the GDI method) by de la Torre and Chiu (2016) <DOI:10.1007/s11336-015-9467-8>, the step-wise Wald test method (the Wald method) by Ma and de la Torre (2020) <DOI:10.1111/bmsp.12156>, the Hull method by Najera et al. (2021) <DOI:10.1111/bmsp.12228>, the multiple logistic regression‑based Q‑matrix validation method (the MLR-B method) by Tu et al. (2022) <DOI:10.3758/s13428-022-01880-x>, the beta method based on signal detection theory by Li and Chen (2024) <DOI:10.1111/bmsp.12371>  and Q-matrix validation based on relative fit index by Chen et la. (2013) <DOI:10.1111/j.1745-3984.2012.00185.x>. Different research methods and iterative procedures during Q-matrix validating are available.
+License: GPL-3
+Depends: R (>= 4.1.0)
+Imports: glmnet, GDINA, plyr, nloptr, MASS, Matrix, parallel, Rcpp,
+        stats
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Collate: 'beta.R' 'CDM.R' 'convex.R' 'cov.R' 'fit.R' 'GDI.R' 'Hull.R'
+        'MLR-B.R' 'MLR.R' 'MLRlasso.R' 'Mmatrix.R' 'P.R' 'Pattern.R'
+        'priority.R' 'PVAF.R' 'plot.Hull.R' 'Qvalindex.R' 'R2.R'
+        'RcppExports.R' 'Rmatrix.R' 'sim.data.R' 'sim.MQ.R' 'sim.Q.R'
+        'utils.R' 'validation.R' 'Wald.R' 'Wald.test.R' 'zzz.R'
+Repository: CRAN
+URL: https://haijiangqin.com/Qval/
+Packaged: 2025-01-09 15:39:48 UTC; Haiji
+Date/Publication: 2025-01-09 16:20:06 UTC

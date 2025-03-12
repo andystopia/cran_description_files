@@ -1,0 +1,26 @@
+Package: ICompELM
+Type: Package
+Title: Independent Component Analysis Based Extreme Learning Machine
+Version: 0.1.0
+Authors@R: c(person("Saikath", "Das", role = c("aut", "cre"),
+                    email = "saikathdas007@gmail.com"),
+             person("Ranjit Kumar", "Paul", role = "aut"),
+             person("Md", "Yeasin", role = "aut"),
+             person("Amrit Kumar", "Paul", role = "aut"))
+Description: Single Layer Feed-forward Neural networks (SLFNs) have many applications in various fields of statistical modelling, especially for time-series forecasting. However, there are some major disadvantages of training such networks via the widely accepted 'gradient-based backpropagation' algorithm, such as convergence to local minima, dependencies on learning rate and large training time. These concerns were addressed by Huang et al. (2006) <doi:10.1016/j.neucom.2005.12.126>, wherein they introduced the Extreme Learning Machine (ELM), an extremely fast learning algorithm for SLFNs which randomly chooses the weights connecting input and hidden nodes and analytically determines the output weights of SLFNs. It shows good generalized performance, but is still subject to a high degree of randomness. To mitigate this issue, this package uses a dimensionality reduction technique given in Hyvarinen (1999) <doi:10.1109/72.761722>, namely, the Independent Component Analysis (ICA) to determine the input-hidden connections and thus, remove any sort of randomness from the algorithm. This leads to a robust, fast and stable ELM model. Using functions within this package, the proposed model can also be compared with an existing alternative based on the Principal Component Analysis (PCA) algorithm given by Pearson (1901) <doi:10.1080/14786440109462720>, i.e., the PCA based ELM model given by Castano et al. (2013) <doi:10.1007/s11063-012-9253-x>, from which the implemented ICA based algorithm is greatly inspired.
+Imports: stats, tsutils, ica
+Suggests: forecast
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-06-07 19:53:01 UTC; Saikath
+Author: Saikath Das [aut, cre],
+  Ranjit Kumar Paul [aut],
+  Md Yeasin [aut],
+  Amrit Kumar Paul [aut]
+Maintainer: Saikath Das <saikathdas007@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-10 17:00:14 UTC

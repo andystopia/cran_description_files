@@ -1,0 +1,27 @@
+Package: mlsbm
+Title: Efficient Estimation of Bayesian SBMs & MLSBMs
+Version: 0.99.2
+Authors@R: 
+    c(person(given = "Carter",
+           family = "Allen",
+           role = c("aut", "cre"),
+           email = "carter.allen12@gmail.com",
+           comment = c(ORCID = "0000-0001-6937-7234")),
+     person(given = "Dongjun",
+           family = "Chung",
+           role = c("aut")))
+Description: Fit Bayesian stochastic block models (SBMs) and multi-level stochastic block models (MLSBMs) using efficient Gibbs sampling implemented in 'Rcpp'. The models assume symmetric, non-reflexive graphs (no self-loops) with unweighted, binary edges. Data are input as a symmetric binary adjacency matrix (SBMs), or list of such matrices (MLSBMs). 
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2021-02-01 21:22:53 UTC; carterallen
+Author: Carter Allen [aut, cre] (<https://orcid.org/0000-0001-6937-7234>),
+  Dongjun Chung [aut]
+Maintainer: Carter Allen <carter.allen12@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-07 10:50:02 UTC

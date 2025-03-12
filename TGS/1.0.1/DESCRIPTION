@@ -1,0 +1,43 @@
+Package: TGS
+Version: 1.0.1
+Title: Rapid Reconstruction of Time-Varying Gene Regulatory Networks
+Description: Rapid advancements in high-throughput gene sequencing
+    technologies have resulted in genome-scale time-series datasets. 
+    Uncovering the underlying temporal sequence of gene regulatory events 
+    in the form of time-varying gene regulatory networks demands 
+    accurate and computationally efficient algorithms. Such an
+    algorithm is 'TGS'. It is proposed in Saptarshi Pyne, Alok Ranjan 
+    Kumar, and Ashish Anand. Rapid reconstruction of time-varying 
+    gene regulatory networks. IEEE/ACM Transactions on Computational 
+    Biology and Bioinformatics, 17(1):278{291, Jan-Feb 2020. The TGS 
+    algorithm is shown to consume only 29 minutes for a microarray 
+    dataset with 4028 genes. This package provides an implementation 
+    of the TGS algorithm and its variants.
+Authors@R: c(
+    person(given = "Saptarshi", family = "Pyne", email = "saptarshipyne01@gmail.com", role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0001-9710-6749")),
+    person(given = "Manan", family = "Gupta", email = "guptamanan100@gmail.com", role = "aut"),
+    person(given = "Alok", family = "Kumar", email = "alok4039@gmail.com", role = "aut"), 
+    person(given = "Ashish", family = "Anand", email = "anand.ashish@iitg.ac.in", role = "aut", 
+        comment = c(ORCID = "0000-0002-0024-3358")))
+License: CC BY-NC-SA 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+biocViews: NetworkInference, GraphAndNetwork, Network, GeneExpression,
+        Microarray, SystemsBiology, Software
+URL: https://www.biorxiv.org/content/early/2018/06/14/272484,
+        https://github.com/sap01/TGS
+BugReports: https://github.com/sap01/TGS/issues
+Imports: rjson, bnstruct, ggm, foreach, doParallel, minet (>= 3.38.0)
+Suggests: R.rsp, testthat (>= 2.1.0), knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-07 11:38:49 UTC; Sap
+Author: Saptarshi Pyne [aut, cre] (<https://orcid.org/0000-0001-9710-6749>),
+  Manan Gupta [aut],
+  Alok Kumar [aut],
+  Ashish Anand [aut] (<https://orcid.org/0000-0002-0024-3358>)
+Maintainer: Saptarshi Pyne <saptarshipyne01@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-07 13:00:21 UTC

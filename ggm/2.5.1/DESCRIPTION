@@ -1,0 +1,34 @@
+Package: ggm
+Title: Graphical Markov Models with Mixed Graphs
+Version: 2.5.1
+Authors@R: c(person(given = "Giovanni M.", family = "Marchetti", email = "giovanni.marchetti@unifi.it", role = c("aut", "cre")), person("Mathias", "Drton", email = "mathias.drton@tum.de", role = "aut"), person("Kayvan", "Sadeghi", email = "k.sadeghi@ucl.ac.uk", role = "aut"))
+Depends: R (>= 3.6.0), methods
+Imports: BiocManager, graph, igraph
+Description: Provides functions for defining 
+    mixed graphs containing three types of edges, directed, 
+    undirected and bi-directed, with possibly multiple edges.
+    These graphs are useful because they capture fundamental
+    independence structures in multivariate distributions
+    and in the induced distributions after marginalization 
+    and conditioning.
+    The package is especially concerned with Gaussian graphical
+    models for
+    (i) ML estimation for directed acyclic graphs, undirected and 
+    bi-directed graphs and ancestral graph models
+    (ii) testing several conditional independencies
+    (iii) checking global identification of DAG Gaussian models
+    with one latent variable
+    (iv) testing Markov equivalences and generating Markov 
+    equivalent graphs of specific types.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Repository: CRAN
+URL: https://github.com/StaThin/ggm
+Packaged: 2024-01-25 14:00:11 UTC; gmm
+Author: Giovanni M. Marchetti [aut, cre],
+  Mathias Drton [aut],
+  Kayvan Sadeghi [aut]
+Maintainer: Giovanni M. Marchetti <giovanni.marchetti@unifi.it>
+Date/Publication: 2024-01-25 14:50:02 UTC

@@ -1,0 +1,34 @@
+Package: gsaot
+Title: Compute Global Sensitivity Analysis Indices Using Optimal
+        Transport
+Version: 0.1.0
+Authors@R: 
+    c(person("Leonardo", "Chiani", , "leonardo.chiani@polimi.it", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0007-2491-6290")),
+      person("Emanuele", "Borgonovo", role = "rev"),
+      person("Elmar", "Plischke", role = "rev"),
+      person("Massimo", "Tavoni", role = "rev"))
+Description: Computing Global Sensitivity Indices from given data using Optimal Transport, as defined in Borgonovo et al (2024) <doi:10.1287/mnsc.2023.01796>. You provide an input sample, an output sample, decide the algorithm, and compute the indices.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: boot, ggplot2, patchwork (>= 1.2.0), Rcpp, RcppEigen (>=
+        0.3.4.0.0), Rdpack (>= 2.4), stats, transport (>= 0.15.0)
+URL: https://github.com/pietrocipolla/gsaot,
+        https://pietrocipolla.github.io/gsaot/
+BugReports: https://github.com/pietrocipolla/gsaot/issues
+LinkingTo: Rcpp, RcppEigen
+VignetteBuilder: knitr
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2025-01-09 14:05:11 UTC; dagileonardo
+Author: Leonardo Chiani [aut, cre, cph]
+    (<https://orcid.org/0009-0007-2491-6290>),
+  Emanuele Borgonovo [rev],
+  Elmar Plischke [rev],
+  Massimo Tavoni [rev]
+Maintainer: Leonardo Chiani <leonardo.chiani@polimi.it>
+Repository: CRAN
+Date/Publication: 2025-01-10 14:00:06 UTC

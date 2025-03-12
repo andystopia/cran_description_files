@@ -1,0 +1,34 @@
+Package: modgo
+Type: Package
+Title: Mock Data Generation
+Version: 1.0.1
+Date: 2024-08-21
+Maintainer: Georgios Koliopanos <george.koliopanos@cardio-care.ch>
+Description: Generation of synthetic data from a real dataset using the combination of rank normal inverse transformation with the calculation of correlation matrix <doi:10.1055/a-2048-7692>. Completely artificial data may be generated through the use of Generalized Lambda Distribution and Generalized Poisson Distribution <doi:10.1201/9781420038040>. Quantitative, binary, ordinal categorical, and survival data may be simulated. Functionalities are offered to generate synthetic data sets according to user's needs.
+Authors@R: c(person(given = "Andreas",
+                      family = "Ziegler",
+                      role = "aut"),
+               person(given = c("Francisco", "Miguel"),
+                      family = "Echevarria",
+                      role = "aut"),
+               person(given = "Georgios",
+                      family = "Koliopanos",
+                      role = "cre",
+                      email = "george.koliopanos@cardio-care.ch"))
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+License: GPL-3
+Depends: R (>= 4.1)
+Imports: ggplot2 (>= 3.4.0), patchwork (>= 1.1.2), wesanderson (>=
+        0.3.6.9000), Matrix (>= 1.6.1.1), ggcorrplot (>= 0.1.4.1),
+        gridExtra (>= 2.3), psych (>= 2.2.9), GLDEX (>= 2.0.0.9.2),
+        MASS (>= 7.3), gp (>= 1.0), stats, utils, survival
+NeedsCompilation: no
+Packaged: 2024-09-09 11:33:55 UTC; geokolcc
+Author: Andreas Ziegler [aut],
+  Francisco Miguel Echevarria [aut],
+  Georgios Koliopanos [cre]
+Repository: CRAN
+Date/Publication: 2024-09-11 16:20:02 UTC

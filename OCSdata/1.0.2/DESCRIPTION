@@ -1,0 +1,75 @@
+Package: OCSdata
+Title: Download Data from the 'Open Case Studies' Repository
+Version: 1.0.2
+Authors@R: c(person(given = "Michael",
+                    family = "Breshock",
+                    role = c("aut"),
+                    email = "mbreshock@gmail.com"),
+             person(given = "Carrie",
+                    family = "Wright",
+                    role = c("aut", "cre", "ths"),
+                    email = "cwrigh60@jhu.edu",
+                    comment = c(ORCID = "0000-0003-1325-6067")),
+             person(given = "Stephanie",
+                    family = "Hicks",
+                    role = c("aut"),
+                    email = "shicks19@jhu.edu",
+                    comment = c(ORCID = "0000-0002-7858-0231")),
+             person(given = "Leah",
+                    family = "Jager",
+                    role = c("ctb"),
+                    email = "ljager@jhu.edu",
+                    comment = c(ORCID = "0000-0003-3362-2298")),  
+             person(given = "John",
+                    family = "Muschelli",
+                    role = c("ctb"),
+                    email = "muschellij2@gmail.com",
+                    comment = c(ORCID = "0000-0001-6469-1750")),
+             person(given = "Margaret",
+                    family = "Taub",
+                    role = c("ctb"),
+                    email = "mtaub2@jhu.edu",
+                    comment = c(ORCID = "0000-0001-8008-618X")))
+Description: 
+    Provides functions to access and download data from the 'Open Case Studies' <https://www.opencasestudies.org/> 
+    repositories on 'GitHub' <https://github.com/opencasestudies>. Different functions enable 
+    users to grab the data they need at different sections in the case study, as well as 
+    download the whole case study repository. All the user needs to do is input the name of 
+    the case study being worked on. The package relies on the httr::GET() function to access
+    files through the 'GitHub' API. The functions usethis::use_zip() and usethis::create_from_github() 
+    are used to clone and/or download the case study repositories. To cite an individual case study,
+    please see the respective 'README' file at <https://github.com/opencasestudies/>.
+    <https://github.com/opencasestudies/ocs-bp-rural-and-urban-obesity> 
+    <https://github.com/opencasestudies/ocs-bp-air-pollution>
+    <https://github.com/opencasestudies/ocs-bp-vaping-case-study>
+    <https://github.com/opencasestudies/ocs-bp-opioid-rural-urban>
+    <https://github.com/opencasestudies/ocs-bp-RTC-wrangling>
+    <https://github.com/opencasestudies/ocs-bp-RTC-analysis>
+    <https://github.com/opencasestudies/ocs-bp-youth-disconnection>
+    <https://github.com/opencasestudies/ocs-bp-youth-mental-health>
+    <https://github.com/opencasestudies/ocs-bp-school-shootings-dashboard>
+    <https://github.com/opencasestudies/ocs-bp-co2-emissions>
+    <https://github.com/opencasestudies/ocs-bp-diet>.
+Imports: usethis (>= 2.0.0), purrr (>= 0.3.0), httr (>= 1.4.0)
+Depends: R (>= 3.5.0)
+Suggests: testthat (>= 3.0.0), covr, knitr, rmarkdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+URL: https://github.com/opencasestudies/OCSdata,
+        https://doi.org/10.5281/zenodo.5214347,
+        https://www.opencasestudies.org/
+BugReports: https://github.com/opencasestudies/OCSdata/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-08-18 21:21:17 UTC; michael
+Author: Michael Breshock [aut],
+  Carrie Wright [aut, cre, ths] (<https://orcid.org/0000-0003-1325-6067>),
+  Stephanie Hicks [aut] (<https://orcid.org/0000-0002-7858-0231>),
+  Leah Jager [ctb] (<https://orcid.org/0000-0003-3362-2298>),
+  John Muschelli [ctb] (<https://orcid.org/0000-0001-6469-1750>),
+  Margaret Taub [ctb] (<https://orcid.org/0000-0001-8008-618X>)
+Maintainer: Carrie Wright <cwrigh60@jhu.edu>
+Repository: CRAN
+Date/Publication: 2021-08-20 06:30:02 UTC

@@ -1,0 +1,25 @@
+Package: survCurve
+Title: Plots Survival Curves Element by Element
+Version: 1.0
+Authors@R: person("Melchior", "Burri", email = "melchiorburri@msn.com", role = c("aut", "cre"))
+Description: Plots survival models from the 'survival' package. Additionally, it
+    plots curves of multistate models from the 'mstate' package. Typically, a
+    plot is drawn by the sequence survplot(), confIntArea(), survCurve() and
+    nrAtRisk(). The separation of the plot in this 4 functions allows for great
+    flexibility to make a custom plot for publication.
+Imports: survival (>= 3.1)
+Depends: R (>= 3.6)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: knitr, mstate, rmarkdown
+VignetteBuilder: knitr
+Collate: 'confIntArea.R' 'nrAtRisk.R' 'oneGroupOneEvent.R'
+        'survCurve.R' 'survPlot.R'
+NeedsCompilation: no
+Packaged: 2020-04-05 16:41:53 UTC; melchior
+Author: Melchior Burri [aut, cre]
+Maintainer: Melchior Burri <melchiorburri@msn.com>
+Repository: CRAN
+Date/Publication: 2020-04-06 17:30:02 UTC

@@ -1,0 +1,46 @@
+Package: metaboData
+Type: Package
+Title: Example Metabolomics Data Sets
+Version: 0.6.3
+Authors@R: c(
+    person("Jasen", "Finch", 
+        email = "jsf9@aber.ac.uk", 
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-6070-7476")
+    ),
+    person("Manfred", "Beckmann", 
+        email = "meb@aber.ac.uk", 
+        role = c("ctb")
+    ),
+    person("David", "Enot",
+        role = c("ctb")
+    ),
+    person("Wanchang", "Lin", 
+        role = c("ctb")
+    )
+    )
+Description: Data sets from a variety of biological sample matrices, 
+    analysed using a number of mass spectrometry based metabolomic analytical techniques.
+    The example data sets are stored remotely using GitHub releases 
+    <https://github.com/aberHRML/metaboData/releases> which can be accessed from R using the package.
+    The package also includes the 'abr1' FIE-MS data set from the 'FIEmspro' package <https://users.aber.ac.uk/jhd/> <doi:10.1038/nprot.2007.511>.
+Depends: R (>= 3.4.0)
+Imports: dplyr, fs, magrittr, piggyback, purrr, readr, rlang, stringr,
+        tibble, yaml
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: testthat, covr, knitr, rmarkdown, prettydoc
+URL: https://aberhrml.github.io/metaboData/
+BugReports: https://github.com/aberHRML/metaboData/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-02-15 22:45:50 UTC; jasen
+Author: Jasen Finch [aut, cre] (<https://orcid.org/0000-0002-6070-7476>),
+  Manfred Beckmann [ctb],
+  David Enot [ctb],
+  Wanchang Lin [ctb]
+Maintainer: Jasen Finch <jsf9@aber.ac.uk>
+Repository: CRAN
+Date/Publication: 2022-02-15 23:00:02 UTC

@@ -1,0 +1,32 @@
+Package: BAREB
+Type: Package
+Title: A Bayesian Repulsive Biclustering Model for Periodontal Data
+Version: 0.1.2
+Authors@R: c( person("Yuliang", "Li", email = "yli193@jhu.edu", role = c("aut")),
+              person("Yanxun", "Xu", email = "yxu.jhu@gmail.com", role = c("aut")),
+              person("Dipankar", "Bandyopadhyay", email = "bandyopd@gmail.com", role = c("aut")),
+              person("John", "Burkardt", email = "burkardt@vt.edu", role = c("ctb")),
+              person("Qingyang", "Liu", email = "rh8liuqy@gmail.com", role = c("aut", "cre"))
+            )
+Description: Simultaneously clusters the Periodontal diseases (PD) patients 
+    and their tooth sites after taking the patient- and site-level covariates into consideration. 
+    'BAREB' uses the determinantal point process (DPP) prior to induce diversity 
+    among different biclusters to facilitate parsimony and interpretability. 
+    Essentially, 'BAREB' is a cluster-wise linear model based on Yuliang (2020) <doi:10.1002/sim.8536>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp
+NeedsCompilation: yes
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Packaged: 2024-12-18 01:27:43 UTC; kevin_liu
+Author: Yuliang Li [aut],
+  Yanxun Xu [aut],
+  Dipankar Bandyopadhyay [aut],
+  John Burkardt [ctb],
+  Qingyang Liu [aut, cre]
+Maintainer: Qingyang Liu <rh8liuqy@gmail.com>
+Date/Publication: 2024-12-18 16:10:08 UTC

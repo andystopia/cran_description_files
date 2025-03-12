@@ -1,0 +1,37 @@
+Package: zeroEQpart
+Type: Package
+Title: Zero Order vs (Semi) Partial Correlation Test and CI
+Version: 0.1.0
+Imports: ppcor, stats, utils, MASS
+Authors@R: c(
+             person("Dan", "Richard", 
+                    email = "djrichar@ualberta.ca", 
+                    role = c("aut", "cre")),
+             person("Karen", "Buro",
+                    email = "BuroK@macewan.ca",
+                    role = "ctb"),
+             person("Wanhua", "Su",
+                    email = "SuW3@macewan.ca",
+                    role = "ctb")
+            )
+Description: Uses bootstrap to test zero order correlation being equal to a 
+    partial or semi-partial correlation (one or two tailed). Confidence 
+    intervals for the parameter (zero order minus partial) can also be
+    determined. Implements the bias-corrected and accelerated bootstrap
+    method as described in "An Introduction to the Bootstrap" Efron (1983) 
+    <0-412-04231-2>.
+URL: https://github.com/djrichar92/zeroEQpart
+BugReports: https://github.com/djrichar92/zeroEQpart/issues
+License: GPL-2
+Encoding: UTF-8
+LazyData: FALSE
+Date: 2018-09-13
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-09-13 17:35:56 UTC; djric
+Author: Dan Richard [aut, cre],
+  Karen Buro [ctb],
+  Wanhua Su [ctb]
+Maintainer: Dan Richard <djrichar@ualberta.ca>
+Repository: CRAN
+Date/Publication: 2018-09-21 22:30:03 UTC

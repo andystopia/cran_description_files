@@ -1,0 +1,24 @@
+Package: sampsizeval
+Title: Sample Size for Validation of Risk Models with Binary Outcomes
+Version: 1.0.0.0
+Authors@R: 
+    person(given = "Menelaos",
+           family = "Pavlou",
+           role = c("aut", "cre"),
+           email = "m.pavlou@ucl.ac.uk",
+           comment = c(ORCID = "0000-0003-1161-1440"))
+Description: Estimation of the required sample size to validate a risk model for binary outcomes, based on the sample size equations proposed by Pavlou et al. (2021) <doi:10.1177/09622802211007522>. For precision-based sample size calculations, the user is required to enter the anticipated values of the C-statistic and outcome prevalence, which can be obtained from a previous study. The user also needs to specify the required precision (standard error) for the C-statistic, the calibration slope and the calibration in the large. The calculations are valid under the assumption of marginal normality for the distribution of the linear predictor. 
+License: MIT + file LICENSE
+LazyData: false
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: stats, sn, pracma, dplyr, plyr
+URL: https://github.com/mpavlou/sampsizeval
+BugReports: https://github.com/mpavlou/sampsizeval/issues
+NeedsCompilation: no
+Packaged: 2021-05-27 08:10:59 UTC; Menelaos
+Author: Menelaos Pavlou [aut, cre] (<https://orcid.org/0000-0003-1161-1440>)
+Maintainer: Menelaos Pavlou <m.pavlou@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2021-05-28 07:30:02 UTC

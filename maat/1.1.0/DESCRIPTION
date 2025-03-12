@@ -1,0 +1,68 @@
+Package: maat
+Type: Package
+Title: Multiple Administrations Adaptive Testing
+Version: 1.1.0
+Date: 2022-05-17
+Authors@R: c(
+    person("Seung W.", "Choi",
+        email = "schoi@austin.utexas.edu",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-4777-5420")),
+    person("Sangdon", "Lim",
+        email = "sangdonlim@utexas.edu",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-2988-014X")),
+    person("Luping", "Niu",
+        email = "lupingniu@utexas.edu",
+        role = "aut",
+        comment = c(ORCID = "0000-0003-3696-1180")),
+    person("Sooyong", "Lee",
+        email = "sooyongl09@utexas.edu",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-7964-4508")),
+    person("M. Christina", "Schneider",
+        email = "christina.schneider@nwea.org",
+        role = "ctb"),
+    person("Jay", "Lee",
+        email = "jay.lee@nwea.org",
+        role = "ctb"),
+    person("Garron", "Gianopulos",
+        email = "garron.gianopulos@nwea.org",
+        role = "ctb"))
+Maintainer: Seung W. Choi <schoi@austin.utexas.edu>
+Description: Provides an extension of the shadow-test approach to computerized adaptive
+    testing (CAT) implemented in the 'TestDesign' package for the assessment framework
+    involving multiple tests administered periodically throughout the year. This framework
+    is referred to as the Multiple Administrations Adaptive Testing (MAAT) and supports
+    multiple item pools vertically scaled and multiple phases (stages) of CAT within each test.
+    Between phases and tests, transitioning from one item pool (and associated constraints)
+    to another is allowed as deemed necessary to enhance the quality of measurement.
+URL: https://choi-phd.github.io/maat/
+BugReports: https://github.com/choi-phd/maat/issues/
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+biocViews:
+Imports: TestDesign (>= 1.3.3), readxl, methods, MASS, diagram
+Suggests: testthat (>= 3.0.0), rmarkdown, knitr, kableExtra
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Collate: 'import.R' 'module_class.R' 'module_functions.R'
+        'administered_functions.R' 'datasets.R' 'examinee_class.R'
+        'examinee_updaters.R' 'extensions.R'
+        'module_structure_operators.R' 'package.R' 'sim_functions.R'
+        'plot_functions.R' 'print_functions.R' 'prior_functions.R'
+        'routing_functions.R' 'show_functions.R' 'validators.r'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-05-17 21:55:26 UTC; chois1
+Author: Seung W. Choi [aut, cre] (<https://orcid.org/0000-0003-4777-5420>),
+  Sangdon Lim [aut] (<https://orcid.org/0000-0002-2988-014X>),
+  Luping Niu [aut] (<https://orcid.org/0000-0003-3696-1180>),
+  Sooyong Lee [aut] (<https://orcid.org/0000-0002-7964-4508>),
+  M. Christina Schneider [ctb],
+  Jay Lee [ctb],
+  Garron Gianopulos [ctb]
+Repository: CRAN
+Date/Publication: 2022-05-18 06:50:02 UTC

@@ -1,0 +1,26 @@
+Package: odetector
+Type: Package
+Title: Outlier Detection Using Partitioning Clustering Algorithms
+Version: 1.0.1
+Date: 2022-11-08
+Author: Zeynel Cebeci [aut, cre] (<https://orcid.org/0000-0002-7641-7094>),
+  Cagatay Cebeci [ctb] (<https://orcid.org/0000-0003-2644-1261>),
+  Yalcin Tahtali [ctb] (<https://orcid.org/0000-0003-0012-0611>)
+Maintainer: Zeynel Cebeci <zcebeci@cukurova.edu.tr>
+Authors@R: c(person(given="Zeynel", family="Cebeci", email = "zcebeci@cukurova.edu.tr", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7641-7094")),
+  person(given="Cagatay", family="Cebeci", email = "cagatay.cebeci@strath.ac.uk", role = "ctb", comment = c(ORCID = "0000-0003-2644-1261")),
+  person("Yalcin", "Tahtali", email = "yalcin.tahtali@gop.edu.tr", role = "ctb", comment = c(ORCID = "0000-0003-0012-0611")))
+Description: An object is called "outlier" if it remarkably deviates from the other objects in a data set. Outlier detection is the process to find outliers by using the methods that are based on distance measures, clustering and spatial methods (Ben-Gal, 2005 <ISBN 0-387-24435-2>). It is one of the intensively studied research topics for identification of novelties, frauds, anomalies, deviations or exceptions in addition to its use for outlier removing in data processing. This package provides the implementations of some novel approaches to detect the outliers based on typicality degrees that are obtained with the soft partitioning clustering algorithms such as Fuzzy C-means and its variants.
+Depends: R (>= 3.0.0)
+Encoding: UTF-8
+License: GPL (>= 2)
+URL: https://github.com/zcebeci/odetector
+BugReports: https://github.com/zcebeci/odetector/issues
+LazyData: true
+Imports: ppclust, utils, graphics, grDevices
+Suggests: knitr, rmarkdown, prettydoc
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-11-08 08:10:51 UTC; user1
+Repository: CRAN
+Date/Publication: 2022-11-08 10:40:07 UTC

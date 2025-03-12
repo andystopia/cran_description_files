@@ -1,0 +1,31 @@
+Package: RRMLRfMC
+Type: Package
+Title: Reduced-Rank Multinomial Logistic Regression for Markov Chains
+Version: 0.4.0
+Authors@R: c(person("Pei", "Wang", role = c("aut", "cre"),
+                      email = "wangp33@miamioh.edu"),
+               person("Richard", "Kryscio", role = "aut") )
+Description: Fit the reduced-rank multinomial logistic regression model for Markov
+    chains developed by Wang, Abner, Fardo, Schmitt, Jicha, Eldik and Kryscio
+    (2021)<doi:10.1002/sim.8923> in R. It combines the ideas of multinomial
+    logistic regression in Markov chains and reduced-rank. It is very useful in 
+    a study where multi-states model is assumed and each transition among the 
+    states is controlled by a series of covariates. The key advantage is to 
+    reduce the number of parameters to be estimated. The final coefficients for 
+    all the covariates and the p-values for the interested covariates will be 
+    reported. The p-values for the whole coefficient matrix can be calculated by 
+    two bootstrap methods.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: nnet
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.1.1
+Suggests: rmarkdown, knitr
+NeedsCompilation: no
+Packaged: 2021-06-04 19:05:32 UTC; pwa24
+Author: Pei Wang [aut, cre],
+  Richard Kryscio [aut]
+Maintainer: Pei Wang <wangp33@miamioh.edu>
+Repository: CRAN
+Date/Publication: 2021-06-07 07:20:07 UTC

@@ -1,0 +1,42 @@
+Type: Package
+Package: gptstudio
+Title: Use Large Language Models Directly in your Development
+        Environment
+Version: 0.4.0
+Authors@R: c(
+    person("Michel", "Nivard", , "m.g.nivard@vu.nl", role = c("aut", "cph")),
+    person("James", "Wade", , "github@jameshwade.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-9740-1905")),
+    person("Samuel", "Calderon", , "samuel.calderon@uarm.pe", role = "aut",
+           comment = c(ORCID = "0000-0001-6847-1210"))
+  )
+Maintainer: James Wade <github@jameshwade.com>
+Description: Large language models are readily accessible via API. This
+    package lowers the barrier to use the API inside of your development
+    environment.  For more on the API, see
+    <https://platform.openai.com/docs/introduction>.
+License: MIT + file LICENSE
+URL: https://github.com/MichelNivard/gptstudio,
+        https://michelnivard.github.io/gptstudio/
+BugReports: https://github.com/MichelNivard/gptstudio/issues
+Depends: R (>= 4.0)
+Imports: assertthat, bslib (>= 0.6.0), cli, colorspace, curl,
+        fontawesome, glue, grDevices, htmltools, htmlwidgets, httr2,
+        ids, jsonlite, magrittr, purrr, R6, rlang, rstudioapi (>=
+        0.12), rvest, shiny, shiny.i18n, SSEparser, stringr (>= 1.5.0),
+        utils, waiter, yaml
+Suggests: AzureRMR, knitr, mockr, rmarkdown, shinytest2, spelling,
+        testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-05-20 13:29:30 UTC; ua21849
+Author: Michel Nivard [aut, cph],
+  James Wade [aut, cre, cph] (<https://orcid.org/0000-0002-9740-1905>),
+  Samuel Calderon [aut] (<https://orcid.org/0000-0001-6847-1210>)
+Repository: CRAN
+Date/Publication: 2024-05-21 11:21:21 UTC

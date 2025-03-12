@@ -1,0 +1,36 @@
+Package: hmstimer
+Title: 'hms' Based Timer
+Version: 0.3.0
+Authors@R: c(
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Kirill", "Müller", , "kirill@cynkra.com", role = "aut",
+           comment = c(ORCID = "0000-0002-1416-3412")),
+    person("Nadine", "Hussein", , "nadine@poissonconsulting.ca", role = "ctb",
+           comment = c(ORCID = "0000-0003-4470-8361")),
+    person("Poisson Consulting", role = c("cph", "fnd"))
+  )
+Description: Tracks elapsed clock time using a `hms::hms()` scalar. 
+ It was was originally developed to time Bayesian model runs. 
+ It should not be used to estimate how long extremely fast code takes to execute 
+ as the package code adds a small time cost.
+License: MIT + file LICENSE
+URL: https://github.com/poissonconsulting/hmstimer,
+        https://poissonconsulting.github.io/hmstimer/
+BugReports: https://github.com/poissonconsulting/hmstimer/issues
+Depends: R (>= 4.0)
+Imports: hms, lifecycle, rlang
+Suggests: covr, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-08-19 18:16:20 UTC; joe
+Author: Joe Thorley [aut, cre] (<https://orcid.org/0000-0002-7683-4592>),
+  Kirill Müller [aut] (<https://orcid.org/0000-0002-1416-3412>),
+  Nadine Hussein [ctb] (<https://orcid.org/0000-0003-4470-8361>),
+  Poisson Consulting [cph, fnd]
+Maintainer: Joe Thorley <joe@poissonconsulting.ca>
+Repository: CRAN
+Date/Publication: 2024-08-19 19:30:07 UTC

@@ -1,0 +1,39 @@
+Package: redistverse
+Title: Easily Install and Load Redistricting Software
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Christopher T.",
+       family = "Kenny",
+       role = c("aut", "cre"),
+       email = "christopherkenny@fas.harvard.edu",
+       comment = c(ORCID = "0000-0002-9386-6860")),
+    person(given = "Cory", family = "McCartan", email = "mccartan@psu.edu", 
+       role = "aut", comment = c(ORCID = "0000-0002-6251-669X")),
+    person("tidyverse contributors", role = "ctb", comment = "attach code adapted from tidyverse."))
+Description: Easy installation, loading, and control of packages for redistricting
+    data downloading, spatial data processing, simulation, analysis, and 
+    visualization. This package makes it easy to install and load multiple 
+    'redistverse' packages at once. The 'redistverse' is developed and maintained 
+    by the Algorithm-Assisted Redistricting Methodology (ALARM) Project.
+    For more details see <https://alarm-redist.org>.
+Depends: R (>= 4.0.0)
+Imports: redist, redistmetrics, geomander, ggredist, sf, censable,
+        tinytiger, easycensus, PL94171, alarmdata, cli, birdie
+Suggests: wacolors, testthat (>= 3.0.0), spelling
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://github.com/alarm-redist/redistverse,
+        https://alarm-redist.org/redistverse/
+BugReports: https://github.com/alarm-redist/redistverse/issues
+Config/testthat/edition: 3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-06-18 00:25:02 UTC; chris
+Author: Christopher T. Kenny [aut, cre]
+    (<https://orcid.org/0000-0002-9386-6860>),
+  Cory McCartan [aut] (<https://orcid.org/0000-0002-6251-669X>),
+  tidyverse contributors [ctb] (attach code adapted from tidyverse.)
+Maintainer: Christopher T. Kenny <christopherkenny@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2024-06-18 15:10:02 UTC

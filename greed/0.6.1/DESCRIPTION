@@ -1,0 +1,44 @@
+Package: greed
+Type: Package
+Title: Clustering and Model Selection with the Integrated
+        Classification Likelihood
+Version: 0.6.1
+Date: 2022-09-27
+Authors@R: 
+    c(person(given = "Etienne",
+             family = "Côme",
+             role = c("aut", "cre"),
+             email = "etienne.come@univ-eiffel.fr"),
+    person(given = "Nicolas",
+             family = "Jouvin",
+             role = c("aut")))
+URL: https://comeetie.github.io/greed/,
+        https://github.com/comeetie/greed
+BugReports: https://github.com/comeetie/greed/issues
+Maintainer: Etienne Côme <etienne.come@univ-eiffel.fr>
+Description: An ensemble of algorithms that enable the clustering of networks and data matrices (such as counts, categorical or continuous) with different type of generative models. Model selection and clustering is performed in combination by optimizing the Integrated Classification Likelihood (which is equivalent to minimizing the description length). Several models are available such as: Stochastic Block Model, degree corrected Stochastic Block Model, Mixtures of Multinomial, Latent Block Model. The optimization is performed thanks to a combination of greedy local search and a genetic algorithm (see <arXiv:2002:11577> for more details).
+License: GPL
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0), Matrix, future, listenv, ggplot2, graphics,
+        methods, stats,RSpectra,grid,gtable,gridExtra,cba,cli
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, MASS, knitr, rmarkdown, spelling, igraph,
+        tidygraph, ggraph
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2.9000
+Collate: 'RcppExports.R' 'tools_misc.R' 'models_classes.R'
+        'fit_classes.R' 'tools_cleanpath.R' 'alg_genetic.R'
+        'alg_hybrid.R' 'alg_classes.R' 'alg_multistart.R' 'data.R'
+        'greed.R' 'model_combinedmodels.R' 'model_dclbm.R'
+        'model_dcsbm.R' 'model_diaggmm.R' 'model_gmm.R' 'model_lca.R'
+        'model_mom.R' 'model_mor.R' 'model_multsbm.R' 'model_sbm.R'
+        'tools_generator.R' 'tools_ploting.R'
+Language: en-US
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2022-10-03 10:12:02 UTC; comeetie
+Author: Etienne Côme [aut, cre],
+  Nicolas Jouvin [aut]
+Repository: CRAN
+Date/Publication: 2022-10-03 22:00:05 UTC

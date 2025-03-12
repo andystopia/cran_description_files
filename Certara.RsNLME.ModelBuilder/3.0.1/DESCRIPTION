@@ -1,0 +1,33 @@
+Package: Certara.RsNLME.ModelBuilder
+Title: Pharmacometric Model Building Using 'shiny'
+Version: 3.0.1
+Authors@R: c(
+      person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Mike", "Talley", email = "mike.talley@certara.com", role = c("aut")),
+      person("Shuhua", "Hu", email = "shuhua.hu@certara.com", role = c("ctb")),
+      person("Certara USA, Inc", role = c("cph","fnd")))
+Description: Develop Nonlinear Mixed Effects (NLME) models for pharmacometrics using a 'shiny'
+      interface. The Pharmacometric Modeling Language (PML) code updates in real time given 
+      changes to user inputs. Models can be executed using the 'Certara.RsNLME' package. 
+      Additional support to generate the underlying 'Certara.RsNLME' code to recreate
+      the corresponding model in R is provided in the user interface.
+Depends: R (>= 4.0)
+License: LGPL-3
+URL: https://certara.github.io/R-RsNLME-model-builder/
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Imports: Certara.RsNLME, shinymeta, shinyAce, bslib (>= 0.7.0),
+        data.table, DT, ggplot2, ggforce, htmltools, htmlwidgets,
+        magrittr, methods, shiny (>= 1.7.0), shinyjs, shinyWidgets,
+        tools, utils, fs
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-12-19 17:16:42 UTC; jcraig
+Author: James Craig [aut, cre],
+  Mike Talley [aut],
+  Shuhua Hu [ctb],
+  Certara USA, Inc [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2024-12-20 11:00:10 UTC

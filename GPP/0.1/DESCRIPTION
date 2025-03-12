@@ -1,0 +1,19 @@
+Package: GPP
+Title: Gaussian Process Projection
+Version: 0.1
+Authors@R: c( 
+    person("Devin P.", "Brown", email = "devinpbrown96@gmail.com", role = "aut"),
+    person("David", "Carlson", email = "carlson.david@wustl.edu", role = c("aut", "cre")))
+Description: Estimates a counterfactual using Gaussian process projection. It takes a dataframe, creates missingness in the desired outcome variable and estimates counterfactual values based on all information in the dataframe. The package writes Stan code, checks it for convergence and adds artificial noise to prevent overfitting and returns a plot of actual values and estimated counterfactual values using r-base plot.  
+Depends: R (>= 3.5.0), methods, rstan, parallel
+LazyData: true
+Encoding: UTF-8
+License: GPL (>= 2)
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-11-25 14:58:45 UTC; david
+Author: Devin P. Brown [aut],
+  David Carlson [aut, cre]
+Maintainer: David Carlson <carlson.david@wustl.edu>
+Repository: CRAN
+Date/Publication: 2020-11-27 10:20:06 UTC

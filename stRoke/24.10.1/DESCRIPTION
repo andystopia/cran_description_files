@@ -1,0 +1,36 @@
+Package: stRoke
+Title: Clinical Stroke Research
+Version: 24.10.1
+Authors@R: 
+    person("Andreas Gammelgaard", "Damsbo", , "agdamsbo@clin.au.dk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7559-1154"))
+Description: A collection of tools for clinical trial data management and 
+    analysis in research and teaching.
+    The package is mainly collected for personal use, but any use beyond that is encouraged.
+    This package has migrated functions from 'agdamsbo/daDoctoR', and new functions has been added.
+    Version follows months and year. See NEWS/Changelog for release notes.
+    This package includes sampled data from the TALOS trial (Kraglund et al (2018) <doi:10.1161/STROKEAHA.117.020067>).
+    The win_prob() function is based on work by Zou et al (2022) <doi:10.1161/STROKEAHA.121.037744>.
+    The age_calc() function is based on work by Becker (2020) <doi:10.18637/jss.v093.i02>.
+URL: https://agdamsbo.github.io/stRoke/,
+        https://github.com/agdamsbo/stRoke
+BugReports: https://github.com/agdamsbo/stRoke/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+Suggests: knitr, rmarkdown, testthat, here, spelling, usethis, pak,
+        roxygen2, devtools
+Config/testthat/edition: 3
+Imports: calendar, dplyr, ggplot2, grDevices, gtsummary, lubridate,
+        MASS, rankinPlot, stats, tidyr, utils, tibble, tidyselect
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-10-25 06:34:55 UTC; au301842
+Author: Andreas Gammelgaard Damsbo [aut, cre]
+    (<https://orcid.org/0000-0002-7559-1154>)
+Maintainer: Andreas Gammelgaard Damsbo <agdamsbo@clin.au.dk>
+Repository: CRAN
+Date/Publication: 2024-10-25 06:50:01 UTC

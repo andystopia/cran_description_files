@@ -1,0 +1,33 @@
+Package: circacompare
+Title: Analyses of Circadian Data
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Rex",
+             family = "Parsons",
+             role = c("aut", "cre"),
+             email = "Rex.Parsons94@gmail.com",
+             comment = c(ORCID = "0000-0002-6053-8174")),
+       person(given = "Alexander",
+              family = "Bender",
+              role = c("ctb"),
+              email = "atpoint90@gmail.com"))
+Description: Uses non-linear regression to statistically compare two circadian rhythms.
+    Groups are only compared if both are rhythmic (amplitude is non-zero).
+    Performs analyses regarding mesor, phase, and amplitude, reporting on estimates and statistical differences, for each, between groups.
+    Details can be found in Parsons et al (2020) <doi:10.1093/bioinformatics/btz730>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: ggplot2 (>= 2.2.1), stats, withr
+Suggests: testthat (>= 3.0.0), nlme, knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://rwparsons.github.io/circacompare/
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-01-09 20:45:58 UTC; RexParsons
+Author: Rex Parsons [aut, cre] (<https://orcid.org/0000-0002-6053-8174>),
+  Alexander Bender [ctb]
+Maintainer: Rex Parsons <Rex.Parsons94@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-09 21:43:03 UTC

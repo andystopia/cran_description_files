@@ -1,0 +1,36 @@
+Package: animate
+Title: A Web-Based Graphics Device for Animated Visualisations
+Version: 0.3.9.4
+Authors@R: 
+    c(person(given = "Chun Fung",
+           family = "Kwok",
+           role = c("aut", "cre"),
+           email = "kcf.jackson@gmail.com",
+           comment = c(ORCID = "0000-0002-0716-3879")),
+    person(given = "Davis",
+           family = "McCarthy",
+           role = "ctb",
+           comment = c(ORCID = "0000-0002-2218-6833")))
+Description: Implements a web-based graphics device for animated visualisations.
+  Modelled on the 'base' syntax, it extends the 'base' graphics functions to
+  support frame-by-frame animation and keyframes animation.
+  The target use cases are real-time animated visualisations, including agent-based
+  models, dynamical systems, and animated diagrams.
+  The generated visualisations can be deployed as GIF images / MP4 videos, as
+  'Shiny' apps (with interactivity) or as HTML documents through embedding into
+  R Markdown documents.
+License: MIT + file LICENSE
+URL: https://kcf-jackson.github.io/animate/
+BugReports: https://github.com/kcf-jackson/animate/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: R6, httpuv, base64enc, jsonlite, glue, R.utils
+Suggests: rmarkdown, knitr, shiny, htmltools, pryr, V8, servr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-02-03 06:57:49 UTC; jkwok
+Author: Chun Fung Kwok [aut, cre] (<https://orcid.org/0000-0002-0716-3879>),
+  Davis McCarthy [ctb] (<https://orcid.org/0000-0002-2218-6833>)
+Maintainer: Chun Fung Kwok <kcf.jackson@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-02-03 10:42:32 UTC

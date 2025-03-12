@@ -1,0 +1,21 @@
+Package: RODBCDBI
+Type: Package
+Version: 0.1.1
+Authors@R: c(
+  person("Nagi", "Teramo", , "teramonagi@gmail.com", c("aut", "cre")),
+  person("Shinichi", "Takayanagi", , "shinichi.takayanagi@gmail.com", "aut"))
+Title: Provides Access to Databases Through the ODBC Interface
+Description: An implementation of R's DBI interface using ODBC package as a
+    back-end. This allows R to connect to any DBMS that has a ODBC driver.
+License: MIT + file LICENSE
+Imports: methods, DBI, RODBC
+Suggests: testthat
+Collate: 'RODBCDBI.R' 'ODBCConnection.R' 'ODBCDriver.R' 'ODBCResult.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-03-13 21:00:34 UTC; stakaya
+Author: Nagi Teramo [aut, cre],
+  Shinichi Takayanagi [aut]
+Maintainer: Nagi Teramo <teramonagi@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-03-14 07:54:09

@@ -1,0 +1,36 @@
+Package: MarginalMediation
+Title: Marginal Mediation
+Version: 0.7.2
+Authors@R: c(person(c("Tyson", "S"), "Barrett", email = "t.barrett88@gmail.com", role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-2137-1391")),
+             person("Angelo", "Canty", role = c("ctb"), 
+                    comment = "S original bootstrap method, http://statwww.epfl.ch/davison/BMA/library.html"),
+             person(c("Brian", "D."), "Ripley", role = c("ctb"),
+                    comment = "R port, bootstrap method", email = "ripley@stats.ox.ac.uk"),
+             person("Thomas", "Leeper", role = c("ctb"),
+                    comment = "Vectorized marginal effects, https://thomasleeper.com/software.html"))
+Description: Provides the ability to perform "Marginal Mediation"--mediation
+   wherein the indirect and direct effects are in terms of the average marginal effects 
+   (Bartus, 2005, <https://EconPapers.repec.org/RePEc:tsj:stataj:v:5:y:2005:i:3:p:309-329>). 
+   The style of the average marginal effects stems from Thomas Leeper's work on the "margins" package.
+   This framework allows the use of categorical mediators and outcomes with little change in interpretation
+   from the continuous mediators/outcomes. See <doi:10.13140/RG.2.2.18465.92001> for more details 
+   on the method.
+Imports: stats, magrittr, boot, cli, crayon, rstudioapi, purrr, tibble,
+        furniture, stringr
+Suggests: testthat, knitr, rmarkdown, margins, betareg
+VignetteBuilder: knitr
+Encoding: UTF-8
+License: GPL-2
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-04-15 01:14:46 UTC; tysonbarrett
+Author: Tyson S Barrett [aut, cre] (<https://orcid.org/0000-0002-2137-1391>),
+  Angelo Canty [ctb] (S original bootstrap method,
+    http://statwww.epfl.ch/davison/BMA/library.html),
+  Brian D. Ripley [ctb] (R port, bootstrap method),
+  Thomas Leeper [ctb] (Vectorized marginal effects,
+    https://thomasleeper.com/software.html)
+Maintainer: Tyson S Barrett <t.barrett88@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-04-15 08:42:36 UTC

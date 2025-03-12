@@ -1,0 +1,33 @@
+Package: flevr
+Title: Flexible, Ensemble-Based Variable Selection with Potentially
+        Missing Data
+Version: 0.0.4
+Authors@R: 
+    person(given = "Brian D.",
+           family = "Williamson",
+           role = c("aut", "cre"),
+           email = "brian.d.williamson@kp.org",
+           comment = c(ORCID = "0000-0002-7024-548X"))
+Description: Perform variable selection in settings with possibly missing data
+    based on extrinsic (algorithm-specific) and intrinsic (population-level)
+    variable importance. Uses a Super Learner ensemble to estimate the
+    underlying prediction functions that give rise to estimates of variable importance. For more information about the methods, please see Williamson and Huang (2023+) <arXiv:2202.12989>.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.1.0)
+Imports: SuperLearner, dplyr, magrittr, tibble, caret, mvtnorm,
+        kernlab, rlang, ranger
+Suggests: vimp, stabs, testthat, knitr, rmarkdown, mice, xgboost,
+        glmnet, polspline
+URL: https://github.com/bdwilliamson/flevr
+BugReports: https://github.com/bdwilliamson/flevr/issues
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2023-11-29 19:23:19 UTC; L107067
+Author: Brian D. Williamson [aut, cre]
+    (<https://orcid.org/0000-0002-7024-548X>)
+Maintainer: Brian D. Williamson <brian.d.williamson@kp.org>
+Repository: CRAN
+Date/Publication: 2023-11-30 10:20:05 UTC

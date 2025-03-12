@@ -1,0 +1,27 @@
+Package: chromConverter
+Title: Chromatographic File Converter
+Version: 0.2.1
+Authors@R: person("Ethan", "Bass", , "ethanbass@gmail.com", role = c("aut",
+    "cre"), comment = c(ORCID = "0000-0002-6175-6739"))
+Maintainer: Ethan Bass <ethanbass@gmail.com>
+Description: Reads chromatograms from binary formats into R objects. Currently supports conversion of 'Agilent ChemStation', 'Agilent MassHunter', and 'ThermoRaw' files as well as various text-based formats. Utilizes file parsers from external libraries, such as 'Aston' <https://github.com/bovee/aston>, 'Entab' <https://github.com/bovee/entab>, and 'ThermoRawFileParser' <https://github.com/compomics/ThermoRawFileParser>.
+License: GPL (>= 3)
+URL: https://github.com/ethanbass/chromConverter,
+        https://ethanbass.github.io/chromConverter/
+BugReports: https://github.com/ethanbass/chromConverter/issues
+Imports: purrr, readr, readxl, reticulate, stringr, tidyr, utils,
+        magrittr, xml2
+Suggests: entab, mzR, testthat (>= 3.0.0)
+Config/reticulate: list( packages = list( list(package = "scipy"),
+        list(package="numpy"), list(package = "pandas"),
+        list(package="aston", pip = TRUE) ) )
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.0
+Additional_repositories: https://ethanbass.github.io/drat/
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-07-10 23:12:46 UTC; ethanbass
+Author: Ethan Bass [aut, cre] (<https://orcid.org/0000-0002-6175-6739>)
+Repository: CRAN
+Date/Publication: 2022-07-11 08:40:02 UTC

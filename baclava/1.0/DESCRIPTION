@@ -1,0 +1,33 @@
+Package: baclava
+Type: Package
+Title: Bayesian Analysis of Cancer Latency with Auxiliary Variable
+        Augmentation
+Version: 1.0
+Date: 2024-09-24
+Authors@R: c(person("Raphael N.", "Morsomme",email = "raphael.morsomme@duke.edu", role = c("aut")), 
+             person("Shannon T.", "Holloway",email = "shannon.t.holloway@gmail.com", role = c("aut", "cre")),
+             person("Jason", "Xu",email = "jason.q.xu@duke.edu", role = c("ctb")),
+             person("Marc D.", "Ryser", email = "marc.ryser@duke.edu", role = c("ctb")))
+Description: A novel data-augmentation Markov chain Monte Carlo sampling algorithm to fit a progressive compartmental model of disease in a Bayesian framework 
+             Morsomme, R.N., Holloway, S.T., Ryser, M.D. and Xu J. (2024) <doi:10.48550/arXiv.2408.14625>.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: Rcpp, RcppNumerical, ggplot2, coda, dplyr, stats, tibble,
+        tidyr, foreach, doParallel
+LinkingTo: Rcpp, RcppEigen, RcppNumerical
+Encoding: UTF-8
+NeedsCompilation: yes
+LazyData: true
+Suggests: rmarkdown, knitr
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Author: Raphael N. Morsomme [aut],
+  Shannon T. Holloway [aut, cre],
+  Jason Xu [ctb],
+  Marc D. Ryser [ctb]
+RoxygenNote: 7.3.2
+Collate: 'RcppExports.R' 'aloocv.R' 'utilities.R' 'cohortODX.R'
+        'computeEndpoints.R' 'fit_baclava.R' 'predictODX_helpers.R'
+        'predictODX.R' 's3_methods.R' 'screen_data.R'
+Packaged: 2024-09-24 20:45:52 UTC; sth45
+Repository: CRAN
+Date/Publication: 2024-09-25 10:10:03 UTC

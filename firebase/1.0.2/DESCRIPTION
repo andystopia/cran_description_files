@@ -1,0 +1,44 @@
+Package: firebase
+Title: Integrates 'Google Firebase' Authentication Storage, and
+        'Analytics' with 'Shiny'
+Version: 1.0.2
+Date: 2023-07-07
+Authors@R: c(
+    person(
+      given = "John",
+      family = "Coene",
+      role = c("aut", "cph"),
+      email = "jcoenep@gmail.com"
+    ),
+    person(
+      given = "David",
+      family ="Munoz Tord",
+      email = "david.munoztord@mailbox.org",
+      role = c("cre", "ctb"),
+      comment = c(ORCID = "0000-0001-7954-8295")),
+    person(
+      given = "Juha",
+      family = "Itkonen",
+      role = "ctb"
+    ))
+Description: Authenticate users in 'Shiny' applications using 'Google Firebase'
+    with any of the many methods provided; email and password, email link, or
+    using a third-party provider such as 'Github', 'Twitter', or 'Google'.
+    Use 'Firebase Storage' to store files securely, and leverage 'Firebase Analytics'
+    to easily log events and better understand your audience.
+License: AGPL-3
+Encoding: UTF-8
+Imports: cli, jose, shiny, openssl, jsonlite, base64enc, htmltools
+Suggests: R6 (>= 2.5.0)
+RoxygenNote: 7.2.3
+URL: https://firebase.john-coene.com/,
+        https://github.com/JohnCoene/firebase
+BugReports: https://github.com/JohnCoene/firebase/issues
+NeedsCompilation: no
+Packaged: 2023-07-07 08:37:11 UTC; david
+Author: John Coene [aut, cph],
+  David Munoz Tord [cre, ctb] (<https://orcid.org/0000-0001-7954-8295>),
+  Juha Itkonen [ctb]
+Maintainer: David Munoz Tord <david.munoztord@mailbox.org>
+Repository: CRAN
+Date/Publication: 2023-07-07 12:20:02 UTC

@@ -1,0 +1,23 @@
+Package: randnet
+Type: Package
+Title: Random Network Model Estimation, Selection and Parameter Tuning
+Version: 0.7
+Date: 2023-05-11
+Authors@R: c(person("Tianxi Li", email = "tianxili@virginia.edu", role = c("aut", "cre")),
+  person("Elizeveta Levina", email = "elevina@umich.edu", role = c("aut")),
+  person("Ji Zhu", email = "jizhu@umich.edu", role = c("aut")),
+  person("Can M. Le", email = "canle@ucdavis.edu", role = c("aut")))
+Description: Model selection and parameter tuning procedures for a class of random network models. The model selection can be done by a general cross-validation framework called ECV from Li et. al. (2016) <arXiv:1612.04717> . Several other model-based and task-specific methods are also included, such as NCV from Chen and Lei (2016) <arXiv:1411.1715>, likelihood ratio method from Wang and Bickel (2015) <arXiv:1502.02069>, spectral methods from Le and Levina (2015) <arXiv:1507.00827>. Many network analysis methods are also implemented, such as the regularized spectral clustering (Amini et. al. 2013 <doi:10.1214/13-AOS1138>) and its degree corrected version and graphon neighborhood smoothing (Zhang et. al. 2015 <arXiv:1509.08588>). It also includes the consensus clustering of Gao et. al. (2014) <arXiv:1410.5837>, the method of moments estimation of nomination SBM of Li et. al. (2020) <arxiv:2008.03652>, and the network mixing method of Li and Le (2021) <arxiv:2106.02803>. It also includes the informative core-periphery data processing method of Miao and Li (2021) <arXiv:2101.06388>. The work to build and improve this package is partially supported by the NSF grants DMS-2015298 and DMS-2015134.
+License: GPL (>= 2)
+Depends: Matrix, entropy, AUC,sparseFLMM, mgcv
+Imports: methods, stats, poweRlaw, RSpectra,
+        irlba,pracma,nnls,data.table
+NeedsCompilation: no
+Packaged: 2023-05-20 02:05:10 UTC; tianxili
+Author: Tianxi Li [aut, cre],
+  Elizeveta Levina [aut],
+  Ji Zhu [aut],
+  Can M. Le [aut]
+Maintainer: Tianxi Li <tianxili@virginia.edu>
+Repository: CRAN
+Date/Publication: 2023-05-20 07:30:02 UTC

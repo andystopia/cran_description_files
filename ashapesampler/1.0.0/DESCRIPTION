@@ -1,0 +1,24 @@
+Package: ashapesampler
+Title: Generating Alpha Shapes
+Version: 1.0.0
+Authors@R: 
+    c(person("Emily", "Winn-Nunez", email="emily_winn-nunez@brown.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6759-5406")), person("Lorin", "Crawford",
+           email="lorin_crawford@brown.edu", role = "aut", 
+           comment = c(ORCID = "0000-0003-0178-8242")))
+Description: Understanding morphological variation is an important task in many applications. Recent studies in computational biology have focused on developing computational tools for the task of sub-image selection which aims at identifying structural features that best describe the variation between classes of shapes. A major part in assessing the utility of these approaches is to demonstrate their performance on both simulated and real datasets. However, when creating a model for shape statistics, real data can be difficult to access and the sample sizes for these data are often small due to them being expensive to collect. Meanwhile, the landscape of current shape simulation methods has been mostly limited to approaches that use black-box inference---making it difficult to systematically assess the power and calibration of sub-image models. In this R package, we introduce the alpha-shape sampler: a probabilistic framework for simulating realistic 2D and 3D shapes based on probability distributions which can be learned from real data or explicitly stated by the user. The 'ashapesampler' package supports two mechanisms for sampling shapes in two and three dimensions. The first, empirically sampling based on an existing data set, was highlighted in the original main text of the paper. The second, probabilistic sampling from a known distribution, is the computational implementation of the theory derived in that paper. Work based on Winn-Nunez et al. (2024) <doi:10.1101/2024.01.09.574919>.
+License: GPL (>= 3)
+Imports: pracma, alphahull, alphashape3d, truncnorm, stats, Rvcg, TDA,
+        doParallel, foreach, parallel, dplyr
+Suggests: knitr, testthat, rgl, ggplot2, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.1.0)
+NeedsCompilation: no
+Packaged: 2024-01-29 01:21:30 UTC; etwin
+Author: Emily Winn-Nunez [aut, cre] (<https://orcid.org/0000-0001-6759-5406>),
+  Lorin Crawford [aut] (<https://orcid.org/0000-0003-0178-8242>)
+Maintainer: Emily Winn-Nunez <emily_winn-nunez@brown.edu>
+Repository: CRAN
+Date/Publication: 2024-01-30 12:00:02 UTC

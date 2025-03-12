@@ -1,0 +1,64 @@
+Package: hagis
+Title: Analysis of Plant Pathogen Pathotype Complexities, Distributions
+        and Diversity
+Version: 3.1.12
+Authors@R: c(
+    person("Austin G.", "McCoy", , "mccoyaus@msu.edu", role = c("aut", "ccp"),
+           comment = c(ORCID = "0000-0003-2483-4184")),
+    person("Zachary", "Noel", , "noelzach@msu.edu", role = c("aut", "ccp"),
+           comment = c(ORCID = "0000-0001-6375-8300")),
+    person("Adam H.", "Sparks", , "adamhsparks@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0061-8359")),
+    person("Martin", "Chilvers", , "chilvers@msu.edu", role = c("aut", "ths"),
+           comment = c(ORCID = "0000-0001-8832-1666")),
+    person("Jari", "Oksanen", , "jhoksane@gmail.com", role = "aut",
+           comment = "Contributed fix for the use of 'vegan' in betadiversity vignette."),
+    person("Zhian N.", "Kamvar", role = c("ctb", "rev"),
+           comment = c(ORCID = "0000-0003-1458-7108")),
+    person("Michigan Soybean Promotion Committee", role = "fnd"),
+    person("Project GREEEN", role = "fnd"),
+    person("North Central Soybean Research Program", role = "fnd"),
+    person("GRDC Project DAQ00186", role = "fnd")
+  )
+Description: Analysis of plant pathogen pathotype survey data.  Functions
+    provided calculate distribution of susceptibilities, distribution of
+    complexities with statistics, pathotype frequency distribution, as
+    well as diversity indices for pathotypes.  This package is meant to be
+    a direct replacement for Herrmann, Löwer and Schachtel's (1999)
+    <doi:10.1046/j.1365-3059.1999.00325.x> Habgood-Gilmour Spreadsheet,
+    'HaGiS', previously used for pathotype analysis.
+License: MIT + file LICENSE
+URL: https://github.com/openplantpathology/hagis,
+        https://openplantpathology.github.io/hagis/
+BugReports: https://github.com/openplantpathology/hagis/issues
+Depends: R (>= 3.4.0)
+Imports: data.table, ggplot2, pander, stats, utils
+Suggests: ape, dplyr, knitr, rmarkdown, roxyglobals, testthat, vdiffr,
+        vegan
+VignetteBuilder: knitr
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.1
+X-schema.org-applicationCategory: Tools
+X-schema.org-isPartOf: https://openplantpathology.org
+X-schema.org-keywords: plant-pathology, pathotype, pathogen-survey,
+        virulence analysis, differential set, assessment scale
+NeedsCompilation: no
+Packaged: 2024-05-16 12:59:03 UTC; 283204f
+Author: Austin G. McCoy [aut, ccp] (<https://orcid.org/0000-0003-2483-4184>),
+  Zachary Noel [aut, ccp] (<https://orcid.org/0000-0001-6375-8300>),
+  Adam H. Sparks [aut, cre] (<https://orcid.org/0000-0002-0061-8359>),
+  Martin Chilvers [aut, ths] (<https://orcid.org/0000-0001-8832-1666>),
+  Jari Oksanen [aut] (Contributed fix for the use of 'vegan' in
+    betadiversity vignette.),
+  Zhian N. Kamvar [ctb, rev] (<https://orcid.org/0000-0003-1458-7108>),
+  Michigan Soybean Promotion Committee [fnd],
+  Project GREEEN [fnd],
+  North Central Soybean Research Program [fnd],
+  GRDC Project DAQ00186 [fnd]
+Maintainer: Adam H. Sparks <adamhsparks@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-05-16 13:10:03 UTC

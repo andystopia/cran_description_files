@@ -1,0 +1,23 @@
+Package: MarketMatching
+Type: Package
+Title: Market Matching and Causal Impact Inference
+Version: 1.2.1
+Date: 2024-01-11
+Authors@R: person("Larsen", "Kim", email = "kblarsen4@gmail.com", role = c("aut", "cre"))
+Description: For a given test market find the best control markets using time series matching and analyze the impact of an intervention. The intervention could be a marketing event or some other local business tactic that is being tested. The workflow implemented in the Market Matching package utilizes dynamic time warping (the 'dtw' package) to do the matching and the 'CausalImpact' package to analyze the causal impact. In fact, this package can be considered a "workflow wrapper" for those two packages. In addition, if you don't have a chosen set of test markets to match, the Market Matching package can provide suggested test/control market pairs and pseudo prospective power analysis (measuring causal impact at fake interventions). 
+Depends: R (>= 4.3.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: ggplot2, dplyr, utils, iterators, doParallel, parallel,
+        foreach, reshape2, CausalImpact, tidyr, zoo, bsts, scales,
+        Boom, utf8, dtw
+LazyData: true
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-12 01:26:41 UTC; kim.larsen
+Author: Larsen Kim [aut, cre]
+Maintainer: Larsen Kim <kblarsen4@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-31 09:40:02 UTC

@@ -1,0 +1,29 @@
+Package: MSclassifR
+Type: Package
+Title: Automated Classification of Mass Spectra
+Version: 0.3.3
+Authors@R: c(
+    person("Alexandre", "Godmer", role=c("aut", "cre"), email="alexandre.godmer@aphp.fr"),
+    person("Quentin", "Giai Gianetto", role=c("aut"), email="quentin.giaigianetto@pasteur.fr"),
+    person("Karen", "Druart", role=c("aut"))
+    )
+Maintainer: Alexandre Godmer <alexandre.godmer@aphp.fr>
+Description: Functions to classify mass spectra in known categories, and to determine discriminant mass-over-charge values. It includes easy-to-use functions for pre-processing mass spectra, functions to determine discriminant mass-over-charge values (m/z) from a library of mass spectra corresponding to different categories, and functions to predict the category (species, phenotypes, etc.) associated to a mass spectrum from a list of selected mass-over-charge values. Three vignettes illustrating how to use the functions of this package from real data sets are also available online to help users: <https://agodmer.github.io/MSclassifR_examples/Vignettes/Vignettemsclassifr_Ecrobiav3.html>, <https://agodmer.github.io/MSclassifR_examples/Vignettes/Vignettemsclassifr_Klebsiellav3.html> and <https://agodmer.github.io/MSclassifR_examples/Vignettes/Vignettemsclassifr_DAv3.html>.
+URL: https://github.com/agodmer/MSclassifR_examples
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0), cp4p, caret, statmod, MALDIquant, MALDIrppa,
+Imports: e1071, MALDIquantForeign, mixOmics, reshape2, ggplot2, nnet,
+        dplyr, fuzzyjoin, VSURF, metap, xgboost, glmnet,
+        performanceEstimation, mltools, mclust, UBL, stats, limma, car,
+        vita, randomForest
+Suggests: knitr, rmarkdown,
+NeedsCompilation: yes
+RoxygenNote: 7.1.1
+Packaged: 2023-08-09 08:20:01 UTC; qgiaigia
+Author: Alexandre Godmer [aut, cre],
+  Quentin Giai Gianetto [aut],
+  Karen Druart [aut]
+Repository: CRAN
+Date/Publication: 2023-08-09 09:00:06 UTC

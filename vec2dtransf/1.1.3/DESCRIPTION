@@ -1,0 +1,21 @@
+Package: vec2dtransf
+Type: Package
+Title: 2D Cartesian Coordinate Transformation
+Version: 1.1.3
+Date: 2023-08-22
+Author: German Carrillo
+Maintainer: German Carrillo <geotux_tuxman@linuxmail.org>
+Description: Applies affine and similarity transformations on vector spatial data (sp objects). Transformations can be defined from control points or directly from parameters. If redundant control points are provided Least Squares is applied allowing to obtain residuals and RMSE.
+License: GPL (>= 2)
+Collate: Class-Cartesian2DCoordinateTransformation.R
+        Cartesian2DCoordinateTransformation-methods.R
+        Class-SimilarityTransformation.R Class-AffineTransformation.R
+        SimilarityTransformation-methods.R
+        AffineTransformation-methods.R
+Depends: sp, methods
+URL: https://github.com/gacarrillor/vec2dtransf
+BugReports: https://github.com/gacarrillor/vec2dtransf/issues
+NeedsCompilation: no
+Packaged: 2023-08-23 06:57:29 UTC; germap
+Repository: CRAN
+Date/Publication: 2023-08-23 14:10:02 UTC

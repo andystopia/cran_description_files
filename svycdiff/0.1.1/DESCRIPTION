@@ -1,0 +1,40 @@
+Package: svycdiff
+Type: Package
+Title: Controlled Difference Estimation for Complex Surveys
+Version: 0.1.1
+Authors@R: c(
+    person(given = "Stephen", family = "Salerno",
+           email = "ssalerno@fredhutch.org", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-2763-0494")),
+    person(given = "Emily K", family = "Roberts", 
+           email = "emily-roberts-1@uiowa.edu", role = c("aut")),
+    person(given = "Tyler H", family = "McCormick",
+           email = "tylermc@uw.edu", role = c("aut")),
+    person(given = "Bhramar", family = "Mukherjee", 
+           email = "bhramar@umich.edu", role = c("aut")),
+    person(given = "Xu", family = "Shi",
+           email = "shixu@umich.edu", role = c("aut")))
+Maintainer: Stephen Salerno <ssalerno@fredhutch.org>
+Description: Estimates the population average controlled difference for a given outcome between levels of a binary treatment, exposure, or other group membership variable of interest for clustered, stratified survey samples where sample selection depends on the comparison group. Provides three methods for estimation, namely outcome modeling and two factorizations of inverse probability weighting. Under stronger assumptions, these methods estimate the causal population average treatment effect. Salerno et al., (2024) <doi:10.48550/arXiv.2406.19597>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Imports: betareg, numDeriv, stats, survey
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, markdown, spelling
+URL: https://github.com/salernos/svycdiff,
+        https://salernos.github.io/svycdiff/
+BugReports: https://github.com/salernos/svycdiff/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-07-31 20:59:37 UTC; saler
+Author: Stephen Salerno [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2763-0494>),
+  Emily K Roberts [aut],
+  Tyler H McCormick [aut],
+  Bhramar Mukherjee [aut],
+  Xu Shi [aut]
+Repository: CRAN
+Date/Publication: 2024-08-20 14:40:03 UTC

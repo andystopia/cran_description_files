@@ -1,0 +1,24 @@
+Package: DIFM
+Type: Package
+Title: Dynamic ICAR Spatiotemporal Factor Models
+Version: 1.0
+Date: 2024-04-07
+Authors@R: c(person("Hwasoo", "Shin", role = c("aut", "cre"), email = "shwasoo@vt.edu"), person("Marco", "Ferreira", role = "aut") )
+Description: Bayesian factor models are effective tools for dimension reduction. This is especially applicable to multivariate large-scale datasets. It allows researchers to understand the latent factors of the data which are the linear or non-linear combination of the variables. Dynamic Intrinsic Conditional Autocorrelative Priors (ICAR) Spatiotemporal Factor Models 'DIFM' package provides function to run Markov Chain Monte Carlo (MCMC), evaluation methods and visual plots from Shin and Ferreira (2023)<doi:10.1016/j.spasta.2023.100763>. Our method is a class of Bayesian factor model which can account for spatial and temporal correlations. By incorporating these correlations, the model can capture specific behaviors and provide predictions. 
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.10), Matrix, LaplacesDemon, spdep, gridExtra, sp
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-04-11 21:02:56 UTC; Hwasoo Shin
+Author: Hwasoo Shin [aut, cre],
+  Marco Ferreira [aut]
+Maintainer: Hwasoo Shin <shwasoo@vt.edu>
+Repository: CRAN
+Date/Publication: 2024-04-12 08:50:03 UTC

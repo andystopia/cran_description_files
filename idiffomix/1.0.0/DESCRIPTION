@@ -1,0 +1,36 @@
+Package: idiffomix
+Type: Package
+Title: Integrated Differential Analysis of Multi Omics Data using a
+        Joint Mixture Model
+Version: 1.0.0
+Authors@R: c(person("Koyel","Majumdar",email="koyelmajumdar.phdresearch@gmail.com",
+        role=c("cre","aut")),
+        person("Isobel Claire","Gorley",email="claire.gormley@ucd.ie",
+        role="aut"),
+        person("Thomas Brendan","Murphy",email="brendan.murphy@ucd.ie", 
+        role="aut"),
+        person("Florence","Jaffrezic",email="florence.jaffrezic@inrae.fr",
+        role="aut"),
+        person("Andrea","Rau",email="andrea.rau@inrae.fr",role="aut"))
+Maintainer: Koyel Majumdar <koyelmajumdar.phdresearch@gmail.com>
+Description: A joint mixture model has been developed by Majumdar et al. (2025) <doi:10.48550/arXiv.2412.17511> that integrates information from gene expression data and methylation data at the modelling stage to capture their inherent dependency structure, enabling simultaneous identification of differentially methylated cytosine-guanine dinucleotide (CpG) sites and differentially expressed genes. The model leverages a joint likelihood function that accounts for the nested structure in the data, with parameter estimation performed using an expectation-maximisation algorithm.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: foreach, doParallel, parallel, mclust, stats, utils, edgeR,
+        magrittr, ggplot2, scales, tidyr, dplyr, reshape2, gridExtra,
+        grid, tidyselect, cowplot
+Encoding: UTF-8
+NeedsCompilation: yes
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+Packaged: 2025-01-10 10:22:28 UTC; koyel
+Author: Koyel Majumdar [cre, aut],
+  Isobel Claire Gorley [aut],
+  Thomas Brendan Murphy [aut],
+  Florence Jaffrezic [aut],
+  Andrea Rau [aut]
+Repository: CRAN
+Date/Publication: 2025-01-13 17:20:02 UTC

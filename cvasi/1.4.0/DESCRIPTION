@@ -1,0 +1,58 @@
+Package: cvasi
+Type: Package
+Title: Calibration, Validation, and Simulation of TKTD Models
+Version: 1.4.0
+Authors@R: c(
+    person("Nils", "Kehrein", email="nils.kehrein@gmail.com", role=c("aut", "cre")),
+    person("Dirk", "Nickisch", role="aut"),
+    person("Peter", "Vermeiren", role="aut"),
+    person("Torben", "Wittwer", role="ctb"),
+    person("Johannes", "Witt", role="ctb"),
+    person("Andre", "Gergs", role="ctb")
+    )
+Description: Eases the use of ecotoxicological effect models. Can simulate
+    common toxicokinetic-toxicodynamic (TK/TD) models such as 
+    General Unified Threshold models of Survival (GUTS) and Lemna. It can
+    derive effects and effect profiles (EPx) from scenarios. It supports the
+    use of 'tidyr' workflows employing the pipe symbol. Time-consuming
+    tasks can be parallelized.
+URL: https://github.com/cvasi-tktd/cvasi
+BugReports: https://github.com/cvasi-tktd/cvasi/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: cli, rlang, stringr, dplyr, tibble, purrr, furrr, tidyr,
+        magrittr, utils, stats, methods, grid, gridExtra, ggplot2,
+        GGally, deSolve, lubridate, units, lifecycle
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Collate: 'batch.R' 'cache_controls.R' 'class-CalibrationSet.R'
+        'class-ExposureSeries.R' 'class-EffectScenario.R' 'calibrate.R'
+        'class-ParameterSet.R' 'class-Transferable.R' 'data.R'
+        'dose_response.R' 'effect.R' 'epx.R' 'explore_space.R' 'fx.R'
+        'get.R' 'globals.R' 'has.R' 'import_morse.R' 'import_toxswa.R'
+        'is.R' 'lik_profile.R' 'log.R' 'man-deb.R' 'man-lemna.R'
+        'man-macrophytes.R' 'solver.R' 'model-algae.R'
+        'model-deb_abj.R' 'model-debtox.R' 'model-deb_daphnia.R'
+        'model-guts_red.R' 'model-lemna_setac.R'
+        'model-lemna_schmitt.R' 'model-myriophyllum.R' 'package.R'
+        'pll.R' 'plot.R' 'plotting.r' 'pull.R' 'sequence.R' 'set.R'
+        'set_bounds.R' 'set_exposure.R' 'set_forcings.R' 'set_init.R'
+        'set_param.R' 'set_transfer.R' 'set_window.R' 'show.R'
+        'simulate.R' 'survival.R' 'utils-pipe.R'
+Suggests: future, knitr, lemna, rmarkdown, roxyglobals, testthat, withr
+Depends: R (>= 3.5.0)
+VignetteBuilder: knitr
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+NeedsCompilation: yes
+Packaged: 2025-02-28 10:39:38 UTC; ENCAZ
+Author: Nils Kehrein [aut, cre],
+  Dirk Nickisch [aut],
+  Peter Vermeiren [aut],
+  Torben Wittwer [ctb],
+  Johannes Witt [ctb],
+  Andre Gergs [ctb]
+Maintainer: Nils Kehrein <nils.kehrein@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-02-28 11:00:02 UTC

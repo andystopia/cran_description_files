@@ -1,0 +1,35 @@
+Package: bambooHR
+Type: Package
+Title: A Wrapper to the 'BambooHR' API
+Version: 0.1.1
+Authors@R: 
+    c(
+    person("Tom", "Bowling", , "tom.bowling@ascent.io", role = c("aut", "cre")),
+    person("Tim", "Fry", , "tim.fry@ascent.io", role = "aut"),
+    person("Harry", "Alexander", role = "ctb"),
+    person("Andrew", "Little", role = "ctb"),
+    person("Mark", "Druffel", , "mdruffel@propellerpdx.com", role = "ctb"))
+Maintainer: Tom Bowling <tom.bowling@ascent.io>
+Description: Enables a user to consume the 'BambooHR' API endpoints using R. The
+  actual URL of the API will depend on your company domain, and will be handled
+  by the package automatically once you setup the config file. The API documentation
+  can be found here <https://documentation.bamboohr.com/docs>.
+Depends: R (>= 4.0.0)
+Imports: rlang, glue, httr, curl, jsonlite, magrittr, dplyr, purrr,
+        tibble, tidyr, lubridate, janitor, stringr, cli, withr
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://mangothecat.github.io/bambooHR/
+BugReports: https://github.com/MangoTheCat/bambooHR/issues
+Suggests: httptest, testthat
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-10-25 14:55:47 UTC; tom.bowling
+Author: Tom Bowling [aut, cre],
+  Tim Fry [aut],
+  Harry Alexander [ctb],
+  Andrew Little [ctb],
+  Mark Druffel [ctb]
+Repository: CRAN
+Date/Publication: 2023-10-25 15:40:02 UTC

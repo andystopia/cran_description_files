@@ -1,0 +1,24 @@
+Package: gumboot
+Type: Package
+Title: Bootstrap Analyses of Sampling Uncertainty in Goodness-of-Fit
+        Statistics
+Version: 1.0.1
+Authors@R: c(person("Martyn", "Clark", role = c("aut")),
+              person("Kevin", "Shook", role = c("aut", "trl", "cre"),
+                     email = "kevin.shook@usask.ca"))
+Author: Martyn Clark [aut],
+  Kevin Shook [aut, trl, cre]
+Maintainer: Kevin Shook <kevin.shook@usask.ca>
+Description: Uses jackknife and bootstrap methods to quantify the sampling uncertainty in goodness-of-fit statistics. Full details are in Clark et al. (2021), "The abuse of popular performance metrics in hydrologic modeling", Water Resources Research, <doi:10.1029/2020WR029001>. 
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: stats, dplyr, ggplot2, lubridate, stringr, ncdf4, reshape2
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-18 14:34:22 UTC; kevin
+Repository: CRAN
+Date/Publication: 2023-10-18 16:20:05 UTC

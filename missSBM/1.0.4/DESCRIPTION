@@ -1,0 +1,51 @@
+Package: missSBM
+Type: Package
+Title: Handling Missing Data in Stochastic Block Models
+Version: 1.0.4
+Authors@R: c(
+  person("Julien", "Chiquet", role = c("aut", "cre"), email = "julien.chiquet@inrae.fr",
+      comment = c(ORCID = "0000-0002-3629-3429")),
+  person("Pierre", "Barbillon", role = "aut", email = "pierre.barbillon@agroparistech.fr",
+      comment = c(ORCID = "0000-0002-7766-7693")),
+  person("Timothée", "Tabouy", role = "aut", email = "timothee.tabouy@agroparistech.fr"),
+  person("Jean-Benoist", "Léger", role = "ctb", email = "jbleger@hds.utc.fr", comment = "provided C++ implementaion of K-means"),
+  person("François", "Gindraud", role = "ctb", email = "francois.gindraud@gmail.com", comment = "provided C++ interface to NLopt"),
+  person("großBM team", role = c("ctb"))
+  )
+Maintainer: Julien Chiquet <julien.chiquet@inrae.fr>
+Description: When a network is partially observed (here, NAs in the adjacency matrix rather than 1 or 0 
+  due to missing information between node pairs), it is possible to account for the underlying process
+  that generates those NAs. 'missSBM', presented in 'Barbillon, Chiquet and Tabouy' (2022) <doi:10.18637/jss.v101.i12>,
+  adjusts the popular stochastic block model from network data sampled under various missing data conditions, 
+  as described in 'Tabouy, Barbillon and Chiquet' (2019) <doi:10.1080/01621459.2018.1562934>.
+URL: https://grosssbm.github.io/missSBM/
+BugReports: https://github.com/grossSBM/missSBM/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.4.0)
+Imports: Rcpp, methods, igraph, nloptr, ggplot2, future.apply, R6,
+        rlang, sbm, magrittr, Matrix, RSpectra
+LinkingTo: Rcpp, RcppArmadillo, nloptr
+Collate: 'utils_missSBM.R' 'R6Class-networkSampling.R'
+        'R6Class-networkSampling_fit.R' 'R6Class-simpleSBM_fit.R'
+        'R6Class-missSBM_fit.R' 'R6Class-missSBM_collection.R'
+        'R6Class-networkSampler.R' 'R6Class-partlyObservedNetwork.R'
+        'RcppExports.R' 'er_network.R' 'estimateMissSBM.R'
+        'frenchblog2007.R' 'kmeans.R' 'missSBM-package.R'
+        'observeNetwork.R' 'war.R'
+Suggests: aricode, blockmodels, corrplot, future, testthat (>= 2.1.0),
+        covr, knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2023-10-24 15:34:39 UTC; jchiquet
+Author: Julien Chiquet [aut, cre] (<https://orcid.org/0000-0002-3629-3429>),
+  Pierre Barbillon [aut] (<https://orcid.org/0000-0002-7766-7693>),
+  Timothée Tabouy [aut],
+  Jean-Benoist Léger [ctb] (provided C++ implementaion of K-means),
+  François Gindraud [ctb] (provided C++ interface to NLopt),
+  großBM team [ctb]
+Repository: CRAN
+Date/Publication: 2023-10-24 16:00:05 UTC

@@ -1,0 +1,46 @@
+Package: reslr
+Title: Modelling Relative Sea Level Data
+Version: 0.1.1
+Authors@R: c(
+    person("Maeve", "Upton", email= "uptonmaeve010@gmail.com", role = c("cph", "aut", "cre"),
+           comment = c(ORCID = "0000-0002-3185-7731")),
+           person("Andrew", "Parnell", role = "aut"),
+           person("Niamh", "Cahill", role = "aut"))
+URL: https://github.com/maeveupton/reslr,
+        https://maeveupton.github.io/reslr/
+BugReports: https://github.com/maeveupton/reslr/issues
+Language: en-US
+Description: The Bayesian modelling of relative sea-level data
+    using a comprehensive approach that incorporates
+    various statistical models within a unifying framework. 
+    Details regarding each statistical models; 
+    linear regression (Ashe et al 2019) <doi:10.1016/j.quascirev.2018.10.032>, 
+    change point models (Cahill et al 2015) <doi:10.1088/1748-9326/10/8/084002>, 
+    integrated Gaussian process models (Cahill et al 2015) <doi:10.1214/15-AOAS824>, 
+    temporal splines (Upton et al 2023) <arXiv:2301.09556>, 
+    spatio-temporal splines (Upton et al 2023) <arXiv:2301.09556> and
+    generalised additive models (Upton et al 2023) <arXiv:2301.09556>.
+    This package facilitates data loading, 
+    model fitting and result summarisation.
+    Notably, it accommodates the inherent measurement errors
+    found in relative sea-level data across multiple dimensions,
+    allowing for their inclusion in the statistical models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LazyData: true
+Imports: data.table, dplyr, fastDummies, fields, geosphere, ggplot2,
+        magrittr, ncdf4, plyr, posterior, purrr, R2jags, stringr,
+        tidybayes, tidyr
+Suggests: knitr, rmarkdown, testthat, vdiffr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-06-14 21:35:25 UTC; mupton
+Author: Maeve Upton [cph, aut, cre] (<https://orcid.org/0000-0002-3185-7731>),
+  Andrew Parnell [aut],
+  Niamh Cahill [aut]
+Maintainer: Maeve Upton <uptonmaeve010@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-15 17:20:02 UTC

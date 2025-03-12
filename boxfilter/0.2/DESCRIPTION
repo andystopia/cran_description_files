@@ -1,0 +1,22 @@
+Package: boxfilter
+Type: Package
+Title: Filter Noisy Data
+Version: 0.2
+Date: 2023-05-24
+Authors@R: c(
+    person(given="Thomas", family="Ruf", email= "Thomas.P.Ruf@me.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9235-7079")))
+Maintainer: Thomas Ruf <Thomas.P.Ruf@me.com>
+Description: Noise filter based on determining the proportion of neighboring points. A false point will be rejected if it has only few neighbors, but accepted if the proportion of neighbors in a rectangular frame is high. The size of the rectangular frame as well as the cut-off value, i.e. of a minimum proportion of neighbor-points, may be supplied or can be calculated automatically. Originally designed for the cleaning of heart rates, but suitable for filtering any slowly-changing physiological variable.For more information see Signer (2010)<doi:10.1111/j.2041-210X.2009.00010.x>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, gridExtra
+Depends: R (>= 3.50)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-24 10:57:28 UTC; ruf
+Author: Thomas Ruf [aut, cre] (<https://orcid.org/0000-0002-9235-7079>)
+Repository: CRAN
+Date/Publication: 2023-05-24 11:20:11 UTC

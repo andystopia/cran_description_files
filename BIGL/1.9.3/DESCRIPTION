@@ -1,0 +1,65 @@
+Package: BIGL
+Type: Package
+Title: Biochemically Intuitive Generalized Loewe Model
+Version: 1.9.3
+Date: 2024-07-31
+Authors@R: c(person(given = "Heather",
+                        family = "Turner",
+                        role = "aut"),
+                 person(given = "Annelies",
+                        family = "Tourny",
+                        role = "aut"),
+                 person(given = "Olivier",
+                        family = "Thas",
+                        role = "aut"),
+                 person(given = "Maxim",
+                        family = "Nazarov",
+                        role = "aut"),
+                 person(given = "Rytis",
+                        family = "Bagdziunas",
+                        role = "aut"),
+                 person(given = "Stijn",
+                        family = "Hawinkel",
+                        role = "aut"),
+                 person(given = c("Javier", "Franco"),
+                        family = "Pérez",
+                        role = "aut"),
+                 person(given = "Kathy",
+                        family = "Mutambanengwe",
+                        role = c("aut", "cre"),
+                        email = "kathy.mutambanengwe@openanalytics.eu"))
+Maintainer: Kathy Mutambanengwe <kathy.mutambanengwe@openanalytics.eu>
+Description: Response surface methods for drug synergy analysis. Available
+    methods include generalized and classical Loewe formulations as well as Highest
+    Single Agent methodology. Response surfaces can be plotted in an interactive
+    3-D plot and formal statistical tests for presence of synergistic effects are
+    available. Implemented methods and tests are described in the article 
+    "BIGL: Biochemically Intuitive Generalized Loewe null model for prediction 
+    of the expected combined effect compatible with partial agonism and antagonism"
+    by Koen Van der Borght, Annelies Tourny, Rytis Bagdziunas, Olivier Thas, 
+    Maxim Nazarov, Heather Turner, Bie Verbist & Hugo Ceulemans (2017) 
+    <doi:10.1038/s41598-017-18068-5>.
+License: GPL-3
+Depends: R (>= 3.5)
+Imports: ggplot2, MASS, methods, minpack.lm, numDeriv, parallel,
+        progress, plotly, robustbase, scales, nleqslv, data.table,
+        lifecycle, htmlwidgets, magrittr
+Suggests: knitr, rmarkdown, testthat, shiny, DT
+VignetteBuilder: knitr, rmarkdown
+LazyData: true
+URL: https://github.com/openanalytics/BIGL
+BugReports: https://github.com/openanalytics/BIGL/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-08-01 07:25:56 UTC; kathy
+Author: Heather Turner [aut],
+  Annelies Tourny [aut],
+  Olivier Thas [aut],
+  Maxim Nazarov [aut],
+  Rytis Bagdziunas [aut],
+  Stijn Hawinkel [aut],
+  Javier Franco Pérez [aut],
+  Kathy Mutambanengwe [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-08-01 08:20:02 UTC

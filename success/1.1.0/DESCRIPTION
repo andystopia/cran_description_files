@@ -1,0 +1,34 @@
+Package: success
+Title: Survival Control Charts Estimation Software
+Version: 1.1.0
+Authors@R: c(
+    person("Daniel", "Gomon", , "dgstatsoft@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9011-3743")),
+    person("Mirko", "Signorelli", , "msignorelli.rpackages@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-8102-3356"))
+  )
+Maintainer: Daniel Gomon <dgstatsoft@gmail.com>
+Description: Quality control charts for survival outcomes.
+    Allows users to construct the Continuous Time Generalized
+    Rapid Response CUSUM (CGR-CUSUM) <doi:10.1093/biostatistics/kxac041>, 
+    the Biswas & Kalbfleisch (2008)  <doi:10.1002/sim.3216> CUSUM, 
+    the Bernoulli CUSUM and the risk-adjusted funnel plot for survival data 
+    <doi:10.1002/sim.1970>. 
+    These procedures can be used to monitor survival processes for a change 
+    in the failure rate.
+License: GPL (>= 3)
+URL: https://github.com/d-gomon/success
+Depends: ggplot2, pbapply, plotly, Rfast, R (>= 3.5.0)
+Imports: survival, ggrepel, Matrix, matrixcalc
+Suggests: gridExtra, knitr, rmarkdown, testthat (>= 3.1.10), covr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2024-06-19 09:46:34 UTC; danie
+Author: Daniel Gomon [aut, cre] (<https://orcid.org/0000-0001-9011-3743>),
+  Mirko Signorelli [ctb] (<https://orcid.org/0000-0002-8102-3356>)
+Repository: CRAN
+Date/Publication: 2024-06-19 14:10:02 UTC

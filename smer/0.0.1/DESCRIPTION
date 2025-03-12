@@ -1,0 +1,38 @@
+Package: smer
+Title: Sparse Marginal Epistasis Test
+Version: 0.0.1
+URL: https://github.com/lcrawlab/sme, https://lcrawlab.github.io/sme/
+BugReports: https://github.com/lcrawlab/sme/issues
+Authors@R: c(
+    person("Julian", "Stamp", email = "julian.d.stamp@gmail.com",
+    role = c("cre", "aut"), comment = c(ORCID = "0000-0003-3014-6249")),
+    person("Lorin", "Crawford", email = "lcrawford@microsoft.com",
+    role = "aut", comment = c(ORCID = "0000-0003-0178-8242")),
+    person("sriramlab", role = "cph", comment = "Author of included mailman algorithm"),
+    person("Blue Brain Project/EPFL", role = "cph", comment = "Author of included HighFive library"))
+Description: The Sparse Marginal Epistasis Test is a computationally efficient 
+    genetics method which detects statistical epistasis in complex traits;
+    see Stamp et al. (2025, <doi:10.1101/2025.01.11.632557>) for details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LinkingTo: BH, Rcpp, RcppEigen, Rhdf5lib, testthat
+Imports: dplyr, genio, logging, mvMAPIT, Rcpp, tidyr
+Suggests: GenomicRanges, ggplot2, knitr, rmarkdown, testthat (>=
+        3.0.0), xml2
+Config/testthat/edition: 3
+SystemRequirements: GNU make
+VignetteBuilder: knitr
+Depends: R (>= 4.4.0)
+LazyData: true
+biocViews: GenomeWideAssociation, Epistasis, Genetics, SNP,
+        LinearMixedModel
+NeedsCompilation: yes
+Packaged: 2025-01-16 07:09:10 UTC; jds
+Author: Julian Stamp [cre, aut] (<https://orcid.org/0000-0003-3014-6249>),
+  Lorin Crawford [aut] (<https://orcid.org/0000-0003-0178-8242>),
+  sriramlab [cph] (Author of included mailman algorithm),
+  Blue Brain Project/EPFL [cph] (Author of included HighFive library)
+Maintainer: Julian Stamp <julian.d.stamp@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-16 15:50:01 UTC

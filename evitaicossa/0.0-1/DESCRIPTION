@@ -1,0 +1,29 @@
+Package: evitaicossa
+Type: Package
+Title: Antiassociative Algebra
+Version: 0.0-1
+Authors@R: person(given=c("Robin", "K. S."), family="Hankin", role = c("aut","cre"), email="hankin.robin@gmail.com", comment = c(ORCID = "0000-0001-5982-0415"))
+Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
+Description: Methods to deal with the free antiassociative algebra
+      over the reals with an arbitrary number of indeterminates.
+      Antiassociativity means that (xy)z = -x(yz).  Antiassociative
+      algebras are nilpotent with nilindex four (Remm, 2022,
+      <doi:10.48550/arXiv.2202.10812>) and this drives the design and
+      philosophy of the package.  Methods are defined to create and
+      manipulate arbitrary elements of the antiassociative algebra,
+      and to extract and replace coefficients.  A vignette is
+      provided.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Suggests: knitr, markdown, rmarkdown, testthat, mvtnorm, covr
+VignetteBuilder: knitr
+Imports: Rcpp (>= 1.0-7), disordR (>= 0.9-8-2), methods, Rdpack
+LinkingTo: Rcpp
+URL: https://github.com/RobinHankin/evitaicossa
+BugReports: https://github.com/RobinHankin/evitaicossa/issues
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2024-06-26 19:36:19 UTC; rhankin
+Author: Robin K. S. Hankin [aut, cre] (<https://orcid.org/0000-0001-5982-0415>)
+Repository: CRAN
+Date/Publication: 2024-06-28 09:10:06 UTC

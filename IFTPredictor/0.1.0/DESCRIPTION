@@ -1,0 +1,41 @@
+Package: IFTPredictor
+Type: Package
+Title: Predictions Using Item-Focused Tree Models
+Version: 0.1.0
+Authors@R: c(person(given=c("Muditha","L."), 
+                    family="Bodawatte Gedara", 
+                    role=c("aut", "cre"),
+                    email="muditha.lakmali.1993@gmail.com"),
+             person(given=c("Barret","A."), 
+                    family="Monchka", 
+                    role="aut",
+                    email="Barret.Monchka@umanitoba.ca"),
+             person(given=c("Lisa","M."), 
+                    family="Lix", 
+                    role="aut",
+                    email="Lisa.Lix@umanitoba.ca"))
+Author: Muditha L. Bodawatte Gedara [aut, cre],
+  Barret A. Monchka [aut],
+  Lisa M. Lix [aut]
+Maintainer: Muditha L. Bodawatte Gedara <muditha.lakmali.1993@gmail.com>
+Description: This function predicts item response probabilities and item 
+  responses using the item-focused tree model. The item-focused tree model
+  combines logistic regression with recursive partitioning to detect 
+  Differential Item Functioning in dichotomous items. The model applies 
+  partitioning rules to the data, splitting it into homogeneous subgroups, and 
+  uses logistic regression within each subgroup to explain the data. 
+  Differential Item Functioning detection is achieved by examining potential 
+  group differences in item response patterns. This method is useful for 
+  understanding how different predictors, such as demographic or psychological 
+  factors, influence item responses across subgroups.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: DIFtree
+Suggests: devtools, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-02-13 04:19:09 UTC; mudithalakmali
+Repository: CRAN
+Date/Publication: 2025-02-13 11:30:28 UTC

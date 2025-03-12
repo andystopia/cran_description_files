@@ -1,0 +1,18 @@
+Package: MajMinKmeans
+Type: Package
+Title: k-Means Algorithm with a Majorization-Minimization Method
+Version: 0.1.0
+Authors@R: c(person("Sheikhi", "Ayyub", email = "sheikhy.a@uk.ac.ir", role = c("aut", "cre")),
+             person("Yaghoobi", "Mohammad Ali", email = "yaghoobi@uk.ac.ir", role = "aut"))
+Maintainer: Sheikhi Ayyub  <sheikhy.a@uk.ac.ir>
+Description: A hybrid of the K-means algorithm and a Majorization-Minimization method to introduce a robust clustering. The reference paper is: Julien Mairal, (2015) <doi:10.1137/140957639>. The two most important functions in package 'MajMinKmeans' are cluster_km() and cluster_MajKm(). Cluster_km() clusters data without Majorization-Minimization and cluster_MajKm() clusters data with Majorization-Minimization method. Both of these functions calculate the sum of squares (SS) of clustering. Another useful function is MajMinOptim(), which helps to find the optimum values of the Majorization-Minimization estimator.
+Imports: MASS
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-05-16 04:24:18 UTC; macbook
+Author: Sheikhi Ayyub [aut, cre],
+  Yaghoobi Mohammad Ali [aut]
+Repository: CRAN
+Date/Publication: 2024-05-17 09:20:09 UTC

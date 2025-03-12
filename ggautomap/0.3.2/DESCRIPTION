@@ -1,0 +1,41 @@
+Package: ggautomap
+Type: Package
+Title: Create Maps from a Column of Place Names
+Version: 0.3.2
+Authors@R: 
+    c(person(given = "Carl",
+             family = "Suster",
+             email = "Carl.Suster@health.nsw.gov.au",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-7021-9380")),
+      person("Western Sydney Local Health District, NSW Health",
+             role = "cph"))
+Description: Mapping tools that convert place names to coordinates on the fly.
+    These 'ggplot2' extensions make maps from a data frame where one of the
+    columns contains place names, without having to directly work with the
+    underlying geospatial data and tools. The corresponding map data must be
+    registered with 'cartographer' either by the user or by another package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1),
+Imports: cartographer (>= 0.2), cli (>= 3.4.0), dplyr (>= 1.0.0),
+        ggmapinset (>= 0.3), ggplot2 (>= 3.4.2), packcircles (>=
+        0.3.4), rlang (>= 1.0.0), sf (>= 1.0), tidyr (>= 1.2.0), vctrs
+        (>= 0.4.0)
+Collate: 'aaa.R' 'stat_automap.R' 'stat_automap_coords.R'
+        'choropleth.R' 'configure_inset.R' 'coord_automap.R' 'crs.R'
+        'geom_boundaries.R' 'geom_centroids.R' 'geoscatter.R'
+        'ggautomap-package.R' 'position_circle_repel.R'
+URL: https://github.com/cidm-ph/ggautomap,
+        https://cidm-ph.github.io/ggautomap/
+BugReports: https://github.com/cidm-ph/ggautomap/issues
+Suggests: ggrepel, knitr, nswgeo, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-05-23 23:15:45 UTC; csuster
+Author: Carl Suster [aut, cre] (<https://orcid.org/0000-0001-7021-9380>),
+  Western Sydney Local Health District, NSW Health [cph]
+Maintainer: Carl Suster <Carl.Suster@health.nsw.gov.au>
+Repository: CRAN
+Date/Publication: 2023-05-24 09:00:02 UTC

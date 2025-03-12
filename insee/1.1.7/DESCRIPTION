@@ -1,0 +1,26 @@
+Package: insee
+Type: Package
+Title: Tools to Easily Download Data from INSEE BDM Database
+Version: 1.1.7
+Authors@R: 
+  c(person("Hadrien", "Leclerc", email = "leclerc.hadrien@gmail.com", role = c("aut", "cre")),
+    person("INSEE", role = "cph"))
+Description: Using embedded sdmx queries, get the data of more than 150 000 insee series from 'bdm' macroeconomic database. 
+URL: https://pyr-opendatafr.github.io/R-Insee-Data/
+Encoding: UTF-8
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+BugReports: https://github.com/pyr-opendatafr/R-Insee-Data/issues
+Imports: httr, xml2, tibble, dplyr, stringr, tidyselect (>= 1.2.0),
+        rlang, purrr, crayon, openssl, rappdirs
+Suggests: lubridate, ggplot2, prettydoc, htmltools, kableExtra, knitr,
+        rmarkdown, markdown, magrittr, testthat, covr, png
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2024-08-24 07:50:21 UTC; onyxia
+Author: Hadrien Leclerc [aut, cre],
+  INSEE [cph]
+Maintainer: Hadrien Leclerc <leclerc.hadrien@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-26 07:30:01 UTC

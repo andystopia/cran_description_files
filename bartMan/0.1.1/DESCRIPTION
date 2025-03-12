@@ -1,0 +1,42 @@
+Type: Package
+Package: bartMan
+Title: Create Visualisations for BART Models
+Version: 0.1.1
+Authors@R: 
+    c(person(given = "Alan",
+             family = "Inglis",
+             role = c("aut", "cre"),
+             email = "alan.inglis@mu.ie"),
+      person(given = "Andrew",
+             family = "Parnell",
+             role = "aut",
+             email = "andrew.parnell@mu.ie"),
+      person(given = "Catherine",
+             family = "Hurley",
+             role = "aut",
+             email = "catherine.hurley@mu.ie"),
+      person(given = "Claus",
+             family = "Wilke",
+             role = "ctb",
+             comment = "Developer of VSUP script"))
+Maintainer: Alan Inglis <alan.inglis@mu.ie>
+Description: Investigating and visualising Bayesian Additive Regression Tree (BART) (Chipman, H. A., George, E. I., & McCulloch, R. E. 2010) <doi:10.1214/09-AOAS285> model fits.  We construct conventional plots to analyze a model’s performance and stability  as well as create new tree-based plots to analyze variable importance, interaction, and tree structure.  We employ Value Suppressing Uncertainty Palettes (VSUP) to construct heatmaps that display variable importance  and interactions jointly using colour scale to represent posterior uncertainty.  Our visualisations are designed to work with the most popular BART R packages available, namely 'BART' Rodney Sparapani and Charles Spanbauer and Robert McCulloch 2021 <doi:10.18637/jss.v097.i01>,  'dbarts'  (Vincent Dorie 2023) <https://CRAN.R-project.org/package=dbarts>,  and 'bartMachine' (Adam Kapelner and Justin Bleich 2016) <doi:10.18637/jss.v070.i04>.
+License: GPL (>= 2)
+Imports: colorspace, cowplot, DendSer, dplyr, ggiraph, ggnewscale,
+        ggplot2, ggraph, grid, grDevices, gtable, igraph, patchwork,
+        purrr, rlang, rrapply, scales, stats, tidybayes, tidygraph,
+        tidyr, tidytreatment, utils, tibble, BART, bartMachine, dbarts,
+        rJava, cli
+Suggests: ROCR, ggridges, ggforce, lvplot
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-07-24 11:58:11 UTC; alaninglis
+Author: Alan Inglis [aut, cre],
+  Andrew Parnell [aut],
+  Catherine Hurley [aut],
+  Claus Wilke [ctb] (Developer of VSUP script)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2024-07-24 12:10:02 UTC

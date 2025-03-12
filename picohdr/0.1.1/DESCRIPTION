@@ -1,0 +1,35 @@
+Package: picohdr
+Type: Package
+Title: Read, Write and Manipulate High Dynamic Range Images
+Version: 0.1.1
+Authors@R: c(
+    person("Mike", "Cheng", role = c("aut", "cre", 'cph'), email = "mikefc@coolbutuseless.com")
+    )
+Maintainer: Mike Cheng <mikefc@coolbutuseless.com>
+Description: High Dynamic Range (HDR) images support a large range in luminosity
+    between the lightest and darkest regions of an image.  To capture this range,
+    data in HDR images is often stored as floating point numbers and in formats
+    that capture more data and channels than standard image types.  This package supports
+    reading and writing two types of HDR images; PFM (Portable Float Map) 
+    and OpenEXR images. HDR images can be converted to lower
+    dynamic ranges (for viewing) using tone-mapping.  A number of
+    tone-mapping algorithms are included which are based on 
+    Reinhard (2002) "Photographic tone reproduction for digital images" 
+    <doi:10.1145/566654.566575>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: ctypesio
+Suggests: knitr, rmarkdown, ggplot2, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Copyright: The included images in the 'inst/image' directory were
+        created by the package author (Mike Cheng) and are licensed
+        under CC0 1.0. See 'COPYRIGHTS' file for more details.
+VignetteBuilder: knitr
+URL: https://github.com/coolbutuseless/picohdr
+BugReports: https://github.com/coolbutuseless/picohdr/issues
+NeedsCompilation: yes
+Packaged: 2024-10-25 07:25:58 UTC; mike
+Author: Mike Cheng [aut, cre, cph]
+Repository: CRAN
+Date/Publication: 2024-10-28 12:00:08 UTC

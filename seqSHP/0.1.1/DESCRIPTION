@@ -1,0 +1,28 @@
+Package: seqSHP
+Type: Package
+Title: Building Sequences from SHP Waves
+Version: 0.1.1
+Authors@R: c(
+    person("Gilbert", "Ritschard",
+    role = c("aut", "cre", "cph"),
+    email = "gilbert.ritschard@unige.ch",
+    comment = c(ORCID = "0000-0001-7776-0903")))
+Maintainer: Gilbert Ritschard <gilbert.ritschard@unige.ch>
+Description: Based on the structure of the SPSS version of the Swiss
+    Household Panel (SHP) data, provides a function seqFromWaves()
+    that seeks the data of variables specified by the user in each 
+    of the wave files and collects them as sequences. The function also 
+    matches the sequences with variables from other files such as the 
+    master files of persons (MP) and households (MH), and social origins (SO). 
+    It can also match with activity calendar data (CA).
+Imports: haven, dplyr
+Suggests: TraMineR
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-05-24 07:20:00 UTC; grits
+Author: Gilbert Ritschard [aut, cre, cph]
+    (<https://orcid.org/0000-0001-7776-0903>)
+Repository: CRAN
+Date/Publication: 2024-05-25 17:30:02 UTC

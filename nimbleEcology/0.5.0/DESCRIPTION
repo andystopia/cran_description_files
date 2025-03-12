@@ -1,0 +1,35 @@
+Package: nimbleEcology
+Type: Package
+Title: Distributions for Ecological Models in 'nimble'
+Version: 0.5.0
+Maintainer: Benjamin R. Goldstein <bgoldst2@ncsu.edu>
+Authors@R: c(person("Benjamin R.", "Goldstein", role = c("aut", "cre"),
+                     email = "bgoldst2@ncsu.edu"),
+              person("Daniel", "Turek", role = "aut"),
+              person("Lauren", "Ponisio", role = "aut"),
+              person("Wei", "Zhang", role = "ctb"),
+              person("Perry", "de Valpine", role = "aut"))
+Date: 2024-06-24
+Description: Common ecological distributions for 'nimble' models in the form of nimbleFunction objects. 
+  Includes Cormack-Jolly-Seber, occupancy, dynamic occupancy, hidden Markov, dynamic hidden Markov, and N-mixture models.
+  (Jolly (1965) <DOI: 10.2307/2333826>, Seber (1965) <DOI: 10.2307/2333827>, Turek et al. (2016) <doi:10.1007/s10651-016-0353-z>).
+License: GPL-3
+Copyright: Copyright (c) 2024, Perry de Valpine, Ben Goldstein, Daniel
+        Turek, Lauren Ponisio
+Depends: R (>= 4.0.0), nimble
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://github.com/nimble-dev/nimbleEcology
+Collate: utils.R dBetaBinom.R dCJS.R dDynOcc.R dDHMM.R dHMM.R dOcc.R
+        dNmixture.R dNmixtureAD.R zzz.R
+RoxygenNote: 7.3.1
+Suggests: rmarkdown, knitr, testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2024-06-27 00:06:32 UTC; dochv
+Author: Benjamin R. Goldstein [aut, cre],
+  Daniel Turek [aut],
+  Lauren Ponisio [aut],
+  Wei Zhang [ctb],
+  Perry de Valpine [aut]
+Repository: CRAN
+Date/Publication: 2024-06-27 10:00:02 UTC

@@ -1,0 +1,46 @@
+Package: birdie
+Title: Bayesian Instrumental Regression for Disparity Estimation
+Version: 0.6.1
+Authors@R: c(
+    person("Cory", "McCartan", role=c("aut", "cre"), email="mccartan@psu.edu"),
+    person("Kosuke", "Imai", role="ctb", email="imai@harvard.edu"),
+    person("Daniel", "Ho", role="ctb", email="dho@law.stanford.edu"),
+    person("Jacob", "Goldin", role="ctb", email="jsgoldin@uchicago.edu"),
+    person("Robin", "Fisher", role="ctb", email="robin.fisher@treasury.gov"),
+    person("The Stan", "Development Team", role = "cph", comment = "include/rstan")
+    )
+Description: Bayesian models for accurately estimating conditional 
+    distributions by race, using Bayesian Improved Surname Geocoding (BISG) 
+    probability estimates of individual race. Implements the methods described
+    in McCartan, Fisher, Goldin, Ho and Imai (2024) <doi:10.3386/w32373>.
+Depends: R (>= 3.5.0)
+Imports: rlang (>= 0.1.2), Rcpp (>= 0.12.0), cli, vctrs, generics,
+        dplyr, methods, stringi, stringr, RcppParallel (>= 5.0.1),
+        SQUAREM
+Suggests: daarem, easycensus, wru, knitr, roxygen2, rmarkdown, testthat
+        (>= 3.0.0)
+LinkingTo: Rcpp (>= 0.12.0), cli, BH (>= 1.66.0), RcppEigen (>=
+        0.3.3.3.0), RcppParallel (>= 5.0.1), RcppThread, StanHeaders
+        (>= 2.18.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+SystemRequirements: GNU make, C++17
+Biarch: true
+LazyData: true
+URL: https://github.com/CoryMcCartan/birdie,
+        https://corymccartan.com/birdie/
+BugReports: https://github.com/CoryMcCartan/birdie/issues
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-06-10 17:23:19 UTC; cmccartan
+Author: Cory McCartan [aut, cre],
+  Kosuke Imai [ctb],
+  Daniel Ho [ctb],
+  Jacob Goldin [ctb],
+  Robin Fisher [ctb],
+  The Stan Development Team [cph] (include/rstan)
+Maintainer: Cory McCartan <mccartan@psu.edu>
+Repository: CRAN
+Date/Publication: 2024-06-11 12:10:08 UTC

@@ -1,0 +1,37 @@
+Package: smile
+Title: Spatial Misalignment: Interpolation, Linkage, and Estimation
+Version: 1.0.5
+Date: 2024-06-13
+Authors@R: 
+    person(given = "Lucas",
+           family = "da Cunha Godoy",
+           role = c("aut", "cre"),
+           email = "lcgodoy@duck.com",
+           comment = c(ORCID = "0000-0003-4265-972X"))
+Description: Provides functions to estimate, predict and interpolate areal
+        data. For estimation and prediction we assume areal data is an average
+        of an underlying continuous spatial process as in Moraga et
+        al. (2017) <doi:10.1016/j.spasta.2017.04.006>, Johnson et al. (2020)
+        <doi:10.1186/s12942-020-00200-w>, and Wilson and Wakefield (2020)
+        <doi:10.1093/biostatistics/kxy041>. The interpolation methodology is
+        (mostly) based on Goodchild and Lam (1980, ISSN:01652273).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+SystemRequirements: GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ (>= 4.8.0)
+LinkingTo: Rcpp, RcppArmadillo
+Imports: numDeriv, Rcpp, sf, mvtnorm, stats, parallel, Matrix
+Depends: R (>= 4.0)
+URL: https://lcgodoy.me/smile/, https://github.com/lcgodoy/smile/
+BugReports: https://github.com/lcgodoy/smile/issues/
+Suggests: knitr, rmarkdown, ggplot2, graphics, spelling
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2024-06-13 22:55:44 UTC; lcgodoy
+Author: Lucas da Cunha Godoy [aut, cre]
+    (<https://orcid.org/0000-0003-4265-972X>)
+Maintainer: Lucas da Cunha Godoy <lcgodoy@duck.com>
+Repository: CRAN
+Date/Publication: 2024-06-14 08:00:02 UTC

@@ -1,0 +1,28 @@
+Package: spANOVA
+Type: Package
+Title: Analysis of Field Trials with Geostatistics & Spatial AR Models
+Version: 0.99.4
+Authors@R: c(
+    person("Castro", "L. R.", role=c("aut", "cre", "cph"), email="lucasroberto.castro@gmail.com"),
+    person("Renato", "R. R.", role=c("aut", "ths")),
+    person("Rossoni", "D. F.", role=c("aut")),
+    person("Nogueira", "C.H.", role=c("aut"))
+    )
+Description: Perform analysis of variance when the experimental units are spatially correlated. There are two methods to deal with spatial dependence: Spatial autoregressive models (see Rossoni, D. F., & Lima, R. R. (2019) <doi:10.28951/rbb.v37i2.388>) and geostatistics (see Pontes, J. M., & Oliveira, M. S. D. (2004) <doi:10.1590/S1413-70542004000100018>). For both methods, there are three multicomparison procedure available: Tukey, multivariate T, and Scott-Knott.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10), stats, utils, graphics, geoR, shiny
+Imports: MASS, Matrix, ScottKnott, car, gtools, multcomp, multcompView,
+        mvtnorm, DT, shinyBS, xtable, shinythemes, rmarkdown, knitr,
+        spdep, ape, spatialreg, shinycssloaders
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-03-19 06:37:39 UTC; lucas
+Author: Castro L. R. [aut, cre, cph],
+  Renato R. R. [aut, ths],
+  Rossoni D. F. [aut],
+  Nogueira C.H. [aut]
+Maintainer: Castro L. R. <lucasroberto.castro@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-21 14:30:02 UTC

@@ -1,0 +1,52 @@
+Package: statgenIBD
+Type: Package
+Title: Calculation of IBD Probabilities
+Description: For biparental, three and four-way crosses Identity by Descent 
+    (IBD) probabilities can be calculated using Hidden Markov Models and 
+    inheritance vectors following Lander and Green
+    (<https://www.jstor.org/stable/29713>) and Huang
+    (<doi:10.1073/pnas.1100465108>). One of a series of statistical genetic 
+    packages for streamlining the analysis of typical plant breeding experiments
+    developed by Biometris.
+Version: 1.0.8
+Date: 2025-02-05
+Authors@R: c(person(given = "Martin", 
+                    family = "Boer", 
+                    email = "martin.boer@wur.nl", 
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-1879-4588")),
+            person(given = "Bart-Jan", 
+                   family = "van Rossum", 
+                   email = "bart-jan.vanrossum@wur.nl", 
+                   role = c("aut", "cre"),
+                   comment = c(ORCID = "0000-0002-8673-2514")),
+            person(given = "Wenhao", 
+                   family = "Li", 
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0001-5719-5775")),
+            person(given = "Johannes", 
+                   family = "Kruisselbrink",
+                   role = "ctb",
+                   comment = c(ORCID = "0000-0003-1673-5725")))
+License: GPL
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Imports: data.table, ggplot2, Matrix, rlang, Rcpp, statgenGWAS (>=
+        1.0.9), stringi
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.2
+Suggests: rmarkdown, knitr, tinytest, R.utils
+VignetteBuilder: knitr
+URL: https://biometris.github.io/statgenIBD/index.html,
+        https://github.com/Biometris/statgenIBD/
+BugReports: https://github.com/Biometris/statgenIBD/issues
+NeedsCompilation: yes
+Packaged: 2025-02-05 11:22:46 UTC; rossu027
+Author: Martin Boer [aut] (<https://orcid.org/0000-0002-1879-4588>),
+  Bart-Jan van Rossum [aut, cre]
+    (<https://orcid.org/0000-0002-8673-2514>),
+  Wenhao Li [ctb] (<https://orcid.org/0000-0001-5719-5775>),
+  Johannes Kruisselbrink [ctb] (<https://orcid.org/0000-0003-1673-5725>)
+Maintainer: Bart-Jan van Rossum <bart-jan.vanrossum@wur.nl>
+Repository: CRAN
+Date/Publication: 2025-02-05 12:00:02 UTC

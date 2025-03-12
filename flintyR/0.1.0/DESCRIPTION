@@ -1,0 +1,40 @@
+Package: flintyR
+Title: Simple and Flexible Tests of Sample Exchangeability
+Version: 0.1.0
+Date: 2023-03-22
+Authors@R: c(person("Alan", 
+                    "Aw", 
+                    email = "alanaw1@berkeley.edu", 
+                    role = c("cre", "aut"), 
+                    comment = c(ORCID = "0000-0001-9455-7878")), 
+             person("Jeffrey", 
+                    "Spence", 
+                    email = "jspence@stanford.edu", 
+                    role = "ctb"))
+Maintainer: Alan Aw <alanaw1@berkeley.edu>
+Description: Given a multivariate dataset and some knowledge about the dependencies 
+              between its features, it is customary to fit a statistical model to the features 
+              to infer parameters of interest. Such a procedure implicitly assumes that the 
+              sample is exchangeable. This package provides a flexible non-parametric test 
+              of this exchangeability assumption, allowing the user to specify the feature 
+              dependencies by hand as long as features can be grouped into disjoint independent sets. 
+              This package also allows users to test a dual hypothesis, which is, given that the 
+              sample is exchangeable, does a proposed grouping of the features into disjoint sets
+              also produce statistically independent sets of features? See Aw, Spence and Song (2023) 
+              for the accompanying paper.
+License: GPL (>= 3)
+Imports: Rcpp (>= 1.0.6), doParallel, foreach, assertthat, testthat,
+        stats, utils
+Suggests: devtools
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://alanaw1.github.io/flintyR/
+BugReports: https://github.com/alanaw1/flintyR/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Packaged: 2023-03-23 06:56:04 UTC; alanaw
+Depends: R (>= 3.5.0)
+Author: Alan Aw [cre, aut] (<https://orcid.org/0000-0001-9455-7878>),
+  Jeffrey Spence [ctb]
+Repository: CRAN
+Date/Publication: 2023-03-23 07:20:02 UTC

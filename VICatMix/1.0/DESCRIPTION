@@ -1,0 +1,31 @@
+Type: Package
+Package: VICatMix
+Title: Variational Mixture Models for Clustering Categorical Data
+Version: 1.0
+Date: 2024-11-25
+Authors@R: c(person("Jackie", "Rao", email = "jackie.rao@mrc-bsu.cam.ac.uk", role = c("aut", "cre")),
+    person(c("Paul", "D.W"), "Kirk", email = "paul.kirk@mrc-bsu.cam.ac.uk", role = "ths"),
+    person("Sara", "Wade", email = "sara.wade@ed.ac.uk", role = "ctb"),
+    person("Colin", "Starr", email = "colin.starr@mrc-bsu.cam.ac.uk", role = "ctb"),
+    person("John", "Maddock", email = "john@johnmaddock.co.uk", role = "cph", comment = "Author of original version of digamma header (digamma.h)."))
+Maintainer: Jackie Rao <jackie.rao@mrc-bsu.cam.ac.uk>
+Description: A variational Bayesian finite mixture model for the clustering of categorical data, and can implement variable selection and semi-supervised outcome guiding if desired. Incorporates an option to perform model averaging over multiple initialisations to reduce the effects of local optima and improve the automatic estimation of the true number of clusters. For further details, see the paper by Rao and Kirk (2024) <doi:10.48550/arXiv.2406.16227>.
+License: GPL (>= 3)
+URL: https://github.com/j-ackierao/VICatMix
+BugReports: https://github.com/j-ackierao/VICatMix/issues
+Imports: klaR, matrixStats, mcclust, Rcpp, stats, gtools
+Suggests: doParallel, doRNG, foreach, parallel
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2024-11-26 15:24:01 UTC; jackie
+Author: Jackie Rao [aut, cre],
+  Paul D.W Kirk [ths],
+  Sara Wade [ctb],
+  Colin Starr [ctb],
+  John Maddock [cph] (Author of original version of digamma header
+    (digamma.h).)
+Repository: CRAN
+Date/Publication: 2024-11-27 12:40:06 UTC

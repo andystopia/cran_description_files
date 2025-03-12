@@ -1,0 +1,41 @@
+Package: aihuman
+Type: Package
+Title: Experimental Evaluation of Algorithm-Assisted Human
+        Decision-Making
+Version: 1.0.0
+Date: 2024-12-23
+Authors@R: c(
+    person("Sooahn", "Shin", , "sooahnshin@g.harvard.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6213-2197")),
+    person("Zhichao", "Jiang", email = "jiangzhch7@mail.sysu.edu.cn", role = c("aut")),
+    person("Kosuke", "Imai", email = "imai@harvard.edu", role = c("aut")))
+Description: Provides statistical methods for analyzing experimental 
+    evaluation of the causal impacts of algorithmic recommendations 
+    on human decisions developed by Imai, Jiang, Greiner, Halen, and 
+    Shin (2023) <doi:10.1093/jrsssa/qnad010> and Ben-Michael, Greiner,  
+    Huang, Imai, Jiang, and Shin (2024) <doi:10.48550/arXiv.2403.12108>.
+    The data used for this paper, and made available here, are interim, 
+    based on only half of the observations in the study and (for those 
+    observations) only half of the study follow-up period. We use them 
+    only to illustrate methods, not to draw substantive conclusions.
+License: GPL (>= 2)
+URL: https://github.com/sooahnshin/aihuman
+BugReports: https://github.com/sooahnshin/aihuman/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: Rcpp, coda, stats, magrittr, purrr, abind, foreach, parallel,
+        doParallel, ggplot2, dplyr, tidyr, metR, MASS, GLMMadaptive,
+        gbm, tidyselect, stringr, forcats
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-01-09 12:05:05 UTC; sooahnshin
+Author: Sooahn Shin [aut, cre] (<https://orcid.org/0000-0001-6213-2197>),
+  Zhichao Jiang [aut],
+  Kosuke Imai [aut]
+Maintainer: Sooahn Shin <sooahnshin@g.harvard.edu>
+Repository: CRAN
+Date/Publication: 2025-01-09 12:40:02 UTC

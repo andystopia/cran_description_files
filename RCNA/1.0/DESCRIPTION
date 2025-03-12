@@ -1,0 +1,30 @@
+Package: RCNA
+Title: Robust Copy Number Alteration Detection (RCNA)
+Version: 1.0
+Authors@R: person("Matt", "Bradley", email = "mbradley@emmes.com", role = c("aut", "cre"))
+Description: Detects copy number alteration events in targeted exon sequencing 
+    data for tumor samples without matched normal controls. The advantage of 
+    this method is that it can be applied to smaller sequencing panels including 
+    evaluations of exon, transcript, gene, or even user specified genetic
+    regions of interest. Functions in the package include steps for GC-content
+    correction, calculation of quantile based normal karyotype ranges,
+    and calculation of feature score.  Cutoffs for "normal" quantile and score
+    are user-adjustable.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: doParallel, methods, utils, modeest, data.table, foreach,
+        R.utils
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, usethis
+Config/testthat/edition: 3
+Collate: 'classes.r' 'estimate_feature_score.r' 'estimate_nkr.r'
+        'correct_gc_bias.r' 'RCNA.r' 'data.R'
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-12-02 13:13:50 UTC; mbradley
+Author: Matt Bradley [aut, cre]
+Maintainer: Matt Bradley <mbradley@emmes.com>
+Repository: CRAN
+Date/Publication: 2024-12-03 18:40:06 UTC

@@ -1,0 +1,18 @@
+Package: equivalenceTest
+Title: Equivalence Test for the Means of Two Normal Distributions
+Version: 0.0.1.1
+Authors@R: person("Chao", "Wang", email = "wan9c9@gmail.com", role = c("aut",  "cre"))
+Description: Two methods for performing equivalence test for the means of two (test and reference) normal distributions are implemented. The null hypothesis of the equivalence test is that the absolute difference between the two means are greater than or equal to the equivalence margin and the alternative is that the absolute difference is less than the margin. Given that the margin is often difficult to obtain a priori, it is assumed to be a constant multiple of the standard deviation of the reference distribution. The first method assumes a fixed margin which is a constant multiple of the estimated standard deviation of the reference data and whose variability is ignored. The second method takes into account the margin variability. In addition, some tools to summarize and illustrate the data and test results are included to facilitate the evaluation of the data and interpretation of the results.
+Depends: R (>= 3.0.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: polynom, rootSolve, cubature, Rdpack, stats, graphics
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2019-02-26 13:22:11 UTC; cwang
+Author: Chao Wang [aut, cre]
+Maintainer: Chao Wang <wan9c9@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-03-04 18:30:03 UTC

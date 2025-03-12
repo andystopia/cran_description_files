@@ -1,0 +1,43 @@
+Package: ndjson
+Type: Package
+Title: Wicked-Fast Streaming 'JSON' ('ndjson') Reader
+Version: 0.9.1
+Date: 2025-03-06
+Authors@R: c( person("Bob", "Rudis", email = "bob@rud.is", role =
+        c("aut", "cre"), comment = c(ORCID = "0000-0001-5670-2640")),
+        person("Niels", "Lohmann", role = "aut", comment = "C++ json
+        parser"), person("Deepak", "Bandyopadhyay", role = "aut", comment
+        = "C++ gzstream"), person("Lutz", "Kettner", role = "aut",
+        comment = "C++ gzstream"), person("Neal", "Fultz", role = "ctb",
+        comment = "Rcpp integration"), person("Maarten", "Demeyer", role = "ctb",
+        comment = "dtplyr cleanup"))
+Maintainer: Bob Rudis <bob@rud.is>
+Description: Streaming 'JSON' ('ndjson') has one 'JSON' record per-line
+        and many modern 'ndjson' files contain large numbers of records.
+        These constructs may not be columnar in nature, but it is often
+        useful to read in these files and "flatten" the structure out to
+        enable working with the data in an R 'data.frame'-like context.
+        Functions are provided that make it possible to read in plain
+        'ndjson' files or compressed ('gz') 'ndjson' files and either
+        validate the format of the records or create "flat" 'data.table'
+        structures from them.
+URL: https://github.com/hrbrmstr/ndjson
+BugReports: https://github.com/hrbrmstr/ndjson/issues
+SystemRequirements: zlib, C++17
+NeedsCompilation: yes
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: tinytest, covr
+Depends: R (>= 3.2.0)
+Imports: Rcpp, data.table, tibble
+LinkingTo: Rcpp
+RoxygenNote: 7.3.2
+Packaged: 2025-03-06 21:55:34 UTC; hrbrmstr
+Author: Bob Rudis [aut, cre] (<https://orcid.org/0000-0001-5670-2640>),
+  Niels Lohmann [aut] (C++ json parser),
+  Deepak Bandyopadhyay [aut] (C++ gzstream),
+  Lutz Kettner [aut] (C++ gzstream),
+  Neal Fultz [ctb] (Rcpp integration),
+  Maarten Demeyer [ctb] (dtplyr cleanup)
+Repository: CRAN
+Date/Publication: 2025-03-06 22:20:02 UTC

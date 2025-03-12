@@ -1,0 +1,39 @@
+Package: tidyMC
+Title: Monte Carlo Simulations Made Easy and Tidy
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Stefan",
+           family = "Linner",
+           email = "stefan.linner97@gmail.com",
+           role = c("aut", "cre", "cph")),
+    person(given = "Ignacio",
+           family = "Moreira Lara",
+           email = "ignacio.moreira-lara@tu-dortmund.de",
+           role = c("aut")),
+    person(given = "Konstantin",
+           family = "Lehmann",
+           email = "konstantin.lehmann@tu-dortmund.de",
+           role = c("aut")))
+Description: Framework to run Monte Carlo simulations over a parameter grid. 
+             Allows to parallelize the simulations. 
+             Generates plots and 'LaTeX' tables
+             summarizing the results from the simulation. 
+License: MIT + file LICENSE
+Imports: checkmate, dplyr, furrr, future, ggplot2, hms, kableExtra,
+        magrittr, methods, purrr, rlang, stringr, tibble, tidyr, utils
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://github.com/stefanlinner/tidyMC,
+        https://stefanlinner.github.io/tidyMC/
+BugReports: https://github.com/stefanlinner/tidyMC/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-01-10 18:48:09 UTC; stefa
+Author: Stefan Linner [aut, cre, cph],
+  Ignacio Moreira Lara [aut],
+  Konstantin Lehmann [aut]
+Maintainer: Stefan Linner <stefan.linner97@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-01-11 10:00:02 UTC

@@ -1,0 +1,40 @@
+Package: traudem
+Title: Use TauDEM
+Version: 1.0.3
+Authors@R: c(
+    person("Luca", "Carraro", , "Luca.Carraro@eawag.ch", role = c("cre", "aut")),
+    person("University of Zurich", role = c("cph", "fnd")),
+    person("Maëlle", "Salmon", , "maelle@cynkra.com", role = "aut",
+           comment = c(ORCID = "0000-0002-2815-0399")),
+    person("Wael", "Sadek", role = "aut"),
+    person("Kirill", "Müller", , "kirill@cynkra.com", role = "aut",
+           comment = c(ORCID = "0000-0002-1416-3412"))
+  )
+Description: Simple trustworthy utility functions to use TauDEM 
+    (Terrain Analysis Using Digital Elevation Models <https://hydrology.usu.edu/taudem/taudem5/>) command-line interface.
+    This package provides a guide to installation of TauDEM and its dependencies GDAL (Geopatial Data Abstraction Library) 
+    and MPI (Message Passing Interface) for different operating systems.
+    Moreover, it checks that TauDEM and its dependencies are correctly installed and included to the PATH, 
+    and it provides wrapper commands for calling TauDEM methods from R.
+License: MIT + file LICENSE
+URL: https://lucarraro.github.io/traudem/,
+        https://github.com/lucarraro/traudem
+BugReports: https://github.com/lucarraro/traudem/issues
+Imports: cli, purrr, rlang, sys, tools, withr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), terra, shapefiles, sf,
+        elevatr, fs
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: usethis
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-04-24 14:59:30 UTC; carrarlu
+Author: Luca Carraro [cre, aut],
+  University of Zurich [cph, fnd],
+  Maëlle Salmon [aut] (<https://orcid.org/0000-0002-2815-0399>),
+  Wael Sadek [aut],
+  Kirill Müller [aut] (<https://orcid.org/0000-0002-1416-3412>)
+Maintainer: Luca Carraro <Luca.Carraro@eawag.ch>
+Repository: CRAN
+Date/Publication: 2024-04-24 16:20:02 UTC

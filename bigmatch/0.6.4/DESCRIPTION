@@ -1,0 +1,26 @@
+Package: bigmatch
+Type: Package
+Title: Making Optimal Matching Size-Scalable Using Optimal Calipers
+Version: 0.6.4
+Author: Ruoqi Yu
+Maintainer: Ruoqi Yu <ruoqiyu125@gmail.com>
+Description: Implements optimal matching with near-fine balance in large observational studies with the use of optimal calipers to get a sparse network. The caliper is optimal in the sense that it is as small as possible such that a matching exists. The main functions in the 'bigmatch' package are optcal() to find the optimal caliper, optconstant() to find the optimal number of nearest neighbors, and nfmatch() to find a near-fine balance match with a caliper and a restriction on the number of nearest neighbors. 
+    Yu, R., Silber, J. H., and Rosenbaum, P. R. (2020). <DOI:10.1214/19-sts699>. 
+License: MIT + file LICENSE
+Additional_repositories: https://errickson.net/rrelaxiv/
+Encoding: UTF-8
+LazyData: true
+Imports: rcbalance, stats, liqueueR, plyr, mvnfast, methods
+Suggests: optmatch, rrelaxiv
+Note: The optmatch package, which is useful for running many of the
+        provided functions, may be downloaded from Github at
+        <https://github.com/markmfredrickson/optmatch> if not available
+        on CRAN. The rrelaxiv package, which provides an alternative
+        solver for the underlying network flow problems, carries an
+        academic license and is not available on CRAN, but may be
+        downloaded from Github at
+        <https://github.com/josherrickson/rrelaxiv/>.
+NeedsCompilation: no
+Packaged: 2022-07-26 05:08:43 UTC; ruoqiyu
+Repository: CRAN
+Date/Publication: 2022-08-11 07:40:02 UTC

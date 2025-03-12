@@ -1,0 +1,32 @@
+Package: carbondate
+Title: Calibration and Summarisation of Radiocarbon Dates
+Version: 1.0.1
+Authors@R: c(
+    person("Timothy J", "Heaton", , "T.Heaton@leeds.ac.uk", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-9994-142X")),
+    person("Sara", "Al-assam", , "sarassam@gmail.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0001-7280-6802")))       
+Description: 
+  Performs Bayesian non-parametric calibration of multiple related radiocarbon determinations, and summarises the calendar age information to plot their joint calendar age density (see Heaton (2022) <doi:10.1111/rssc.12599>). 
+  Also models the occurrence of radiocarbon samples as a variable-rate (inhomogeneous) Poisson process, plotting the posterior estimate for the occurrence rate of the samples over calendar time, and providing information about potential change points.
+License: GPL (>= 3)
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+LazyData: true
+Imports: graphics, grDevices, stats, utils
+URL: https://github.com/TJHeaton/carbondate,
+        https://tjheaton.github.io/carbondate/
+BugReports: https://github.com/TJHeaton/carbondate/issues
+VignetteBuilder: knitr
+LinkingTo: cpp11
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2024-01-29 15:40:58 UTC; timjh
+Author: Timothy J Heaton [aut, cre, cph]
+    (<https://orcid.org/0000-0002-9994-142X>),
+  Sara Al-assam [aut, cph] (<https://orcid.org/0000-0001-7280-6802>)
+Maintainer: Timothy J Heaton <T.Heaton@leeds.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-01-31 19:40:02 UTC

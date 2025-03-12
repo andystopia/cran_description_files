@@ -1,0 +1,32 @@
+Package: smosr
+Title: Acquire and Explore BEC-SMOS L4 Soil Moisture Data in R
+Version: 1.0.1
+Date: 2023-07-13
+Authors@R: 
+    c(person(given = "Tatiana A.",
+             family = "Shestakova",
+             role = c("aut", "cre", "cph"),
+             email = "tasha.work24@gmail.com",
+             comment = c(ORCID = "0000-0002-5605-0299")))
+Author: Tatiana A. Shestakova [aut, cre, cph]
+    (<https://orcid.org/0000-0002-5605-0299>)
+Maintainer: Tatiana A. Shestakova <tasha.work24@gmail.com>
+Description: Provides functions that automate accessing, downloading and exploring Soil Moisture
+    and Ocean Salinity (SMOS) Level 4 (L4) data developed by Barcelona Expert Center (BEC). 
+    Particularly, it includes functions to search for, acquire, extract, and plot BEC-SMOS L4 soil 
+    moisture data downscaled to ~1 km spatial resolution. Note that SMOS is one of Earth Explorer 
+    Opportunity missions by the European Space Agency (ESA). More information about SMOS  
+    products can be found at <https://earth.esa.int/eogateway/missions/smos/data>.
+License: GPL-3
+URL: https://github.com/tshestakova/smosr
+BugReports: https://github.com/tshestakova/smosr/issues
+Depends: R (>= 4.0.0)
+Imports: fields, graphics, grDevices, lubridate, methods, ncdf4, RCurl,
+        terra, tidyr, utils
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-07-20 16:53:36 UTC; tshestakova
+Repository: CRAN
+Date/Publication: 2023-07-20 18:50:02 UTC

@@ -1,0 +1,40 @@
+Type: Package
+Package: icecream
+Title: Print Debugging Made Sweeter
+Version: 0.2.2
+Authors@R: 
+    c(person(given = "Lewin",
+             family = "Appleton-Fox",
+             role = c("aut", "cre"),
+             email = "lewin.a.f@gmail.com"),
+      person(given = "Dominik",
+             family = "Rafacz",
+             role = "aut",
+             email = "dominikrafacz@gmail.com",
+             comment = c(ORCID = "0000-0003-0925-1909")),
+      person(given = "Ben",
+             family = "Stiles",
+             role = "ctb"))
+Description: Provides user-friendly and configurable print debugging via a
+    single function, ic(). Wrap an expression in ic() to print the
+    expression, its value and (where available) its source location.
+    Debugging output can be toggled globally without modifying code.
+License: MIT + file LICENSE
+URL: https://www.lewinfox.com/icecream/,
+        https://github.com/lewinfox/icecream,
+        http://www.lewinfox.com/icecream/
+BugReports: https://github.com/lewinfox/icecream/issues
+Imports: cli, glue, pillar (>= 1.6.1), purrr (>= 0.3.4), rlang
+Suggests: checkmate (>= 2.0.0), testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2024-02-18 00:34:38 UTC; lewin
+Author: Lewin Appleton-Fox [aut, cre],
+  Dominik Rafacz [aut] (<https://orcid.org/0000-0003-0925-1909>),
+  Ben Stiles [ctb]
+Maintainer: Lewin Appleton-Fox <lewin.a.f@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-02-18 00:50:03 UTC

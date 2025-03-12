@@ -1,0 +1,37 @@
+Package: REDCapTidieR
+Type: Package
+Title: Extract 'REDCap' Databases into Tidy 'Tibble's
+Version: 1.2.1
+Authors@R: c(
+    person("Richard", "Hanna", , "richardshanna91@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-6496-8154")),
+    person("Stephan", "Kadauke", , "kadaukes@chop.edu", role = "aut",
+           comment = c(ORCID = "0000-0003-2996-8034")),
+    person("Ezra", "Porter", , "ezrajporter@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0002-4690-8343"))
+  )
+Description: Convert 'REDCap' exports into tidy tables for easy handling of 'REDCap' repeat instruments and event arms.
+License: MIT + file LICENSE
+URL: https://chop-cgtinformatics.github.io/REDCapTidieR/,
+        https://github.com/CHOP-CGTInformatics/REDCapTidieR
+BugReports: https://github.com/CHOP-CGTInformatics/REDCapTidieR/issues
+Depends: R (>= 3.5.0)
+Imports: checkmate, cli, dplyr, glue, lobstr, lubridate, purrr, REDCapR
+        (>= 1.2.0), rlang, stringi, stringr, tibble, tidyr, tidyselect,
+        formattable, pillar, vctrs, readr, stats, forcats
+Suggests: covr, knitr, labelled, lintr, openxlsx2 (>= 0.8),
+        prettyunits, rmarkdown, skimr, testthat (>= 3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-12-09 22:01:50 UTC; hannar1
+Author: Richard Hanna [aut, cre] (<https://orcid.org/0009-0005-6496-8154>),
+  Stephan Kadauke [aut] (<https://orcid.org/0000-0003-2996-8034>),
+  Ezra Porter [aut] (<https://orcid.org/0000-0002-4690-8343>)
+Maintainer: Richard Hanna <richardshanna91@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-09 22:20:02 UTC

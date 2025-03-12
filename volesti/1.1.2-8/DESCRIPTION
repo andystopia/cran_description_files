@@ -1,0 +1,33 @@
+Package: volesti
+Type: Package
+License: LGPL-3
+Title: Volume Approximation and Sampling of Convex Polytopes
+Authors@R: c(
+    person("Vissarion", "Fisikopoulos", , "vissarion.fisikopoulos@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0780-666X")),
+    person("Apostolos", "Chalkis", , "tolis.chal@gmail.com", role = c("aut", "cph"),
+           comment = c(ORCID = "0000-0002-4628-1907")))
+Copyright: file inst/COPYRIGHTS
+Description: Provides an R interface for 'volesti' C++ package. 'volesti' computes estimations of volume
+             of polytopes given by (i) a set of points, (ii) linear inequalities or (iii) Minkowski sum of segments
+             (a.k.a. zonotopes). There are three algorithms for volume estimation as well as algorithms
+             for sampling, rounding and rotating polytopes. Moreover, 'volesti' provides algorithms for
+             estimating copulas useful in computational finance. Methods implemented in 'volesti' are described
+             in A. Chalkis and V. Fisikopoulos (2022) <doi:10.32614/RJ-2021-077> and references therein.
+Version: 1.1.2-8
+Date: 2024-10-7
+Maintainer: Vissarion Fisikopoulos <vissarion.fisikopoulos@gmail.com>
+Depends: Rcpp (>= 0.12.17)
+Imports: methods, stats
+LinkingTo: Rcpp, RcppEigen, BH
+Suggests: testthat
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+BugReports: https://github.com/GeomScale/volesti/issues
+NeedsCompilation: yes
+Packaged: 2024-10-09 07:13:22 UTC; vissarion
+Author: Vissarion Fisikopoulos [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0780-666X>),
+  Apostolos Chalkis [aut, cph] (<https://orcid.org/0000-0002-4628-1907>)
+Repository: CRAN
+Date/Publication: 2024-10-09 08:30:01 UTC

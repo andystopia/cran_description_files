@@ -1,0 +1,23 @@
+Package: fairml
+Type: Package
+Title: Fair Models in Machine Learning
+Version: 0.8
+Date: 2023-05-13
+Depends: R (>= 3.5.0)
+Imports: methods, glmnet
+Suggests: lattice, gridExtra, parallel, cccp, CVXR, survival
+Author: Marco Scutari [aut, cre]
+Maintainer: Marco Scutari <scutari@bnlearn.com>
+Description: Fair machine learning regression models which take sensitive attributes into account in
+  model estimation. Currently implementing Komiyama et al. (2018) 
+  <http://proceedings.mlr.press/v80/komiyama18a/komiyama18a.pdf>, Zafar et al.
+  (2019) <https://www.jmlr.org/papers/volume20/18-262/18-262.pdf> and my own
+  approach from Scutari, Panero and Proissl (2022)
+  <https://link.springer.com/content/pdf/10.1007/s11222-022-10143-w.pdf>
+  that uses ridge regression to enforce fairness.
+License: MIT + file LICENSE
+LazyData: yes
+NeedsCompilation: no
+Packaged: 2023-05-13 20:59:37 UTC; fizban
+Repository: CRAN
+Date/Publication: 2023-05-13 22:40:02 UTC

@@ -1,0 +1,26 @@
+Package: sparseMatEst
+Type: Package
+Title: Sparse Matrix Estimation and Inference
+Version: 1.0.0
+Authors@R: c(
+  person(given="Adam B", family="Kashlak", email = "kashlak@ualberta.ca", role = c("aut", "cre")),
+  person(given="Xinyu", family="Zhang", role = c("ctb"))
+  )
+Author: Adam B Kashlak [aut, cre],
+  Xinyu Zhang [ctb]
+Maintainer: Adam B Kashlak <kashlak@ualberta.ca>
+Description: The 'sparseMatEst' package provides functions for estimating sparse 
+  covariance and precision matrices with error control. A false positive
+  rate is fixed corresponding to the probability of falsely including a matrix 
+  entry in the support of the estimator.  It uses the binary search
+  method outlined in Kashlak and Kong (2019) <arXiv:1705.02679> and in 
+  Kashlak (2019) <arXiv:1903.10988>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: stats, glasso
+NeedsCompilation: no
+Packaged: 2019-05-17 03:30:20 UTC; AdKas
+Repository: CRAN
+Date/Publication: 2019-05-17 08:20:05 UTC

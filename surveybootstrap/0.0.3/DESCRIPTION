@@ -1,0 +1,31 @@
+Package: surveybootstrap
+Title: Bootstrap with Survey Data
+Version: 0.0.3
+Authors@R: c(person(given=c("Dennis", "M."), 
+                    family="Feehan", 
+                    email="feehan@berkeley.edu", 
+                    role=c("aut", "cre")),
+             person(given=c("Matthew", "J."), 
+                    family="Salganik", 
+                    email="mjs3@princeton.edu",
+                    role="ths"))
+Description: Implements different kinds of bootstraps
+    to estimate sampling variation from survey data with 
+    complex designs. Includes the rescaled bootstrap
+    described in Rust and Rao (1996) <doi:10.1177/096228029600500305> and
+    Rao and Wu (1988) <doi:10.1080/01621459.1988.10478591>. 
+License: MIT + file LICENSE
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, stringr, dplyr, plyr, purrr, functional
+Depends: R (>= 2.10)
+Suggests: knitr, testthat
+RoxygenNote: 7.2.2
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2023-01-09 05:42:24 UTC; dennis
+Author: Dennis M. Feehan [aut, cre],
+  Matthew J. Salganik [ths]
+Maintainer: Dennis M. Feehan <feehan@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2023-01-09 12:10:02 UTC

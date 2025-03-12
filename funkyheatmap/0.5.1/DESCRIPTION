@@ -1,0 +1,72 @@
+Package: funkyheatmap
+Title: Generating Funky Heatmaps for Data Frames
+Description: Allows generating heatmap-like visualisations for data 
+  frames. Funky heatmaps can be fine-tuned by providing annotations of the 
+  columns and rows, which allows assigning multiple palettes or geometries
+  or grouping rows and columns together in categories.
+  Saelens et al. (2019) <doi:10.1038/s41587-019-0071-9>.
+Version: 0.5.1
+Authors@R: c(
+  person(
+    "Robrecht", 
+    "Cannoodt", 
+    email = "rcannood@gmail.com", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-3641-729X")
+  ),
+  person(
+    "Wouter", 
+    "Saelens", 
+    email = "wouter.saelens@gmail.com", 
+    role = c("aut"), 
+    comment = c(ORCID = "0000-0002-7114-6248")
+  ),
+  person(
+    "Louise", "Deconinck",
+    email = "louise.deconinck@gmail.com",
+    role = "ctb",
+    comment = c(ORCID = "0000-0001-8100-6823")
+  ),
+  person(
+    "Artuur", "Couckuyt",
+    role = "ctb",
+    comment = c(ORCID = "0000-0001-7858-6521")
+  ),
+  person(
+    "Nick", "Markov",
+    role = "ctb",
+    comment = c(ORCID = "0000-0002-3659-4387")
+  ),
+  person(
+    "Luke", "Zappia",
+    email = "luke@lazappi.id.au",
+    role = "ctb",
+    comment = c(ORCID = "0000-0001-7744-8565")
+  ))
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: assertthat, cli, cowplot, dplyr, ggforce, ggplot2 (>= 3.4.0),
+        grDevices, jsonlite, patchwork, purrr, RColorBrewer, Rdpack,
+        stringr, tibble, tidyr
+Suggests: kableExtra, knitr, testthat (>= 3.0.0), magick, readr
+VignetteBuilder: knitr
+RdMacros: Rdpack
+Depends: R (>= 2.10)
+LazyData: true
+URL: https://funkyheatmap.github.io/funkyheatmap/,
+        https://github.com/funkyheatmap/funkyheatmap
+BugReports: https://github.com/funkyheatmap/funkyheatmap/issues
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+NeedsCompilation: no
+Packaged: 2025-01-15 14:57:54 UTC; rcannood
+Author: Robrecht Cannoodt [aut, cre] (<https://orcid.org/0000-0003-3641-729X>),
+  Wouter Saelens [aut] (<https://orcid.org/0000-0002-7114-6248>),
+  Louise Deconinck [ctb] (<https://orcid.org/0000-0001-8100-6823>),
+  Artuur Couckuyt [ctb] (<https://orcid.org/0000-0001-7858-6521>),
+  Nick Markov [ctb] (<https://orcid.org/0000-0002-3659-4387>),
+  Luke Zappia [ctb] (<https://orcid.org/0000-0001-7744-8565>)
+Maintainer: Robrecht Cannoodt <rcannood@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-15 15:10:02 UTC

@@ -1,0 +1,30 @@
+Package: simdata
+Type: Package
+Title: Generate Simulated Datasets
+Version: 0.4.1
+Authors@R: person("Michael", "Kammer", 
+    email = "michael.kammer@meduniwien.ac.at", 
+    role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0003-4821-9928"))
+Maintainer: Michael Kammer <michael.kammer@meduniwien.ac.at>
+Description: Generate simulated datasets from an initial underlying
+    distribution and apply transformations to obtain realistic data. Implements
+    the 'NORTA' (Normal-to-anything) approach from Cario and Nelson (1997)
+    and other data generating mechanisms. Simple network visualization tools 
+    are provided to facilitate communicating the simulation setup.
+License: GPL-3
+Imports: Matrix, mvtnorm, igraph (>= 1.2.1)
+Suggests: doParallel, doRNG, dplyr, fitdistrplus, forcats, ggplot2,
+        GGally, ggcorrplot, knitr, patchwork, purrr, reshape2,
+        rmarkdown, NHANES, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+URL: https://matherealize.github.io/simdata/,
+        https://github.com/matherealize/simdata
+BugReports: https://github.com/matherealize/simdata/issues
+NeedsCompilation: no
+Packaged: 2024-12-03 15:08:35 UTC; MichaelK
+Author: Michael Kammer [aut, cre] (<https://orcid.org/0000-0003-4821-9928>)
+Repository: CRAN
+Date/Publication: 2024-12-03 23:10:07 UTC

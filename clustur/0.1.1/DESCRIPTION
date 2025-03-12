@@ -1,0 +1,34 @@
+Package: clustur
+Type: Package
+Title: Clustering
+Version: 0.1.1
+Date: 2024-11-25
+Authors@R: c(
+    person("Gregory", "Johnson", , "grejoh@umich.edu", role = c("aut"),
+            comment = c(ORCID = "0009-0008-3890-0297")),
+    person("Sarah", "Westcott", , "swestcot@umich.edu", role = c("aut")),
+    person("Patrick", "Schloss", , "pschloss@umich.edu", role = c("aut", "cre", "cph"),
+            comment = c(ORCID = "0000-0002-6935-4275"))
+    )
+Maintainer: Patrick Schloss <pschloss@umich.edu>
+Description: A tool that implements the clustering algorithms from 'mothur' (Schloss PD et al. (2009) <doi:10.1128/AEM.01541-09>). 'clustur' make use of the cluster() and make.shared() command from 'mothur'. Our cluster() function has five different algorithms implemented: 'OptiClust', 'furthest', 'nearest', 'average', and 'weighted'. 'OptiClust' is an optimized clustering method for Operational Taxonomic Units, and you can learn more here, (Westcott SL, Schloss PD (2017) <doi:10.1128/mspheredirect.00073-17>). The make.shared() command is always applied at the end of the clustering command. This functionality allows us to generate and create clustering and abundance data efficiently.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: Matrix, methods, Rcpp (>= 1.0.12), utils
+Depends: R (>= 3.5.0)
+LinkingTo: Rcpp, testthat
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), xml2
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+URL: http://www.schlosslab.org/clustur/,
+        https://github.com/SchlossLab/clustur
+BugReports: https://github.com/SchlossLab/clustur/issues
+NeedsCompilation: yes
+Packaged: 2024-11-25 17:08:38 UTC; grejoh
+Author: Gregory Johnson [aut] (<https://orcid.org/0009-0008-3890-0297>),
+  Sarah Westcott [aut],
+  Patrick Schloss [aut, cre, cph]
+    (<https://orcid.org/0000-0002-6935-4275>)
+Repository: CRAN
+Date/Publication: 2024-11-25 18:10:02 UTC

@@ -1,0 +1,37 @@
+Type: Package
+Package: snpAIMeR
+Title: Assess the Diagnostic Power of Genomic Marker Combinations
+Version: 2.1.1
+Authors@R: c(
+    person("Kim", "Vertacnik", , "kim.vertacnik@mailbox.org", role = c("cre", "aut"),
+           comment = c(ORCID = "0009-0006-7097-5091")),
+    person("Oksana", "Vernygora", role = "aut",
+           comment = c(ORCID = "0000-0001-6444-3888")),
+    person("Julian", "Dupuis", role = "aut",
+           comment = c(ORCID = "0000-0002-6989-9179"))
+  )
+Description: Population genetics package for designing diagnostic panels. 
+    Candidate markers, marker combinations, and different panel sizes are 
+    assessed for how well they can predict the source population of known 
+    samples. Requires a genotype file of candidate markers in STRUCTURE format. 
+    Methods for population cross-validation are described in Jombart (2008) 
+    <doi:10.1093/bioinformatics/btn129>.
+License: MIT + file LICENSE
+Contact: Kim Vertacnik <kim.vertacnik@mailbox.org> or Julian Dupuis
+        <julian.dupuis@uky.edu>
+URL: https://github.com/OksanaVe/snpAIMeR
+Depends: R (>= 2.10)
+Imports: adegenet, doParallel, dplyr, forcats, foreach, ggplot2,
+        graphics, magrittr, parallel, readr, tidyr, utils, withr, yaml
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-02-20 20:01:29 UTC; kim
+Author: Kim Vertacnik [cre, aut] (<https://orcid.org/0009-0006-7097-5091>),
+  Oksana Vernygora [aut] (<https://orcid.org/0000-0001-6444-3888>),
+  Julian Dupuis [aut] (<https://orcid.org/0000-0002-6989-9179>)
+Maintainer: Kim Vertacnik <kim.vertacnik@mailbox.org>
+Repository: CRAN
+Date/Publication: 2024-02-20 20:20:02 UTC

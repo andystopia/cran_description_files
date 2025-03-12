@@ -1,0 +1,36 @@
+Package: guildai
+Type: Package
+Title: Track Machine Learning Experiments
+Version: 0.0.1
+Authors@R: c(
+  person("Tomasz", "Kalinowski", role = c("aut", "cph", "cre"),
+         email = "tomasz@posit.co"),
+  person("Posit, PBC", role = c("cph", "fnd")))
+Description: 'Guild AI' is an open-source tool for managing machine learning
+    experiments. It's for scientists, engineers, and researchers who want to
+    run scripts, compare results, measure progress, and automate machine
+    learning workflow. 'Guild AI' is a light weight, external tool that runs
+    locally. It works with any framework, doesn't require any changes to
+    your code, or access to any web services. Users can easily record
+    experiment metadata, track model changes, manage experiment artifacts,
+    tune hyperparameters, and share results. 'Guild AI' combines features
+    from 'Git', 'SQLite', and 'Make' to provide a lab notebook for machine
+    learning.
+URL: https://guildai.github.io/guildai-r/,
+        https://github.com/guildai/guildai-r, https://my.guild.ai/
+BugReports: https://github.com/guildai/guildai-r/issues
+License: Apache License 2.0
+SystemRequirements: Python (>= 3.6.0)
+Imports: jsonlite, rappdirs, yaml, config, rlang, rstudioapi, readr,
+        dplyr, processx, tibble
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: fs, envir, rmarkdown, quarto, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-03-03 18:29:47 UTC; tomasz
+Author: Tomasz Kalinowski [aut, cph, cre],
+  Posit, PBC [cph, fnd]
+Maintainer: Tomasz Kalinowski <tomasz@posit.co>
+Repository: CRAN
+Date/Publication: 2023-03-06 13:50:02 UTC

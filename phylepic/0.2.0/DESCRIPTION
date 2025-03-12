@@ -1,0 +1,35 @@
+Package: phylepic
+Title: Combined Visualisation of Phylogenetic and Epidemiological Data
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Carl",
+             family = "Suster",
+             email = "Carl.Suster@health.nsw.gov.au",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-7021-9380")),
+      person("Western Sydney Local Health District, NSW Health",
+             role = "cph"))
+Description: A collection of utilities and 'ggplot2' extensions to assist with
+  visualisations in genomic epidemiology. This includes the 'phylepic' chart,
+  a visual combination of a phylogenetic tree and a matched epidemic curve.
+  The included 'ggplot2' extensions such as date axes binned by week are
+  relevant for other applications in epidemiology and beyond. The approach is
+  described in Suster et al. (2024) <doi:10.1101/2024.04.02.24305229>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: ape, cli, cowplot, dplyr, forcats, ggnewscale, ggplot2 (>=
+        3.5.0), ggraph, igraph, rlang, scales, tidygraph, vctrs
+URL: https://github.com/cidm-ph/phylepic,
+        https://cidm-ph.github.io/phylepic/
+BugReports: https://github.com/cidm-ph/phylepic/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-05-30 23:54:45 UTC; carl
+Author: Carl Suster [aut, cre] (<https://orcid.org/0000-0001-7021-9380>),
+  Western Sydney Local Health District, NSW Health [cph]
+Maintainer: Carl Suster <Carl.Suster@health.nsw.gov.au>
+Repository: CRAN
+Date/Publication: 2024-05-31 19:10:02 UTC

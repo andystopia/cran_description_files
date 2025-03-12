@@ -1,0 +1,22 @@
+Package: MultiKink
+Type: Package
+Version: 0.2.0
+Title: Estimation and Inference for Multi-Kink Quantile Regression
+Authors@R: c(
+    person("Chuang", "Wan", email = "wanchuanghnu@126.com", role =  c("aut", "cre")),
+    person("Wei", "Zhong", email = "wzhong@xmu.edu.cn", role = "aut"))
+Description: Estimation and inference for multiple kink quantile regression for longitudinal data and the i.i.d data. A bootstrap restarting iterative segmented quantile algorithm is proposed to estimate the multiple kink quantile regression model conditional on a given number of change points. The number of kinks is also allowed to be unknown. In such case, the backward elimination algorithm and the bootstrap restarting iterative segmented quantile algorithm are combined to select the number of change points based on a quantile BIC. For longitudinal data, we also develop the GEE estimator to incorporate the within-subject correlations.  A score-type based test statistic is also developed for testing the existence of kink effect. The package is based on the paper, ``Wei Zhong, Chuang Wan and Wenyang Zhang (2022). Estimation and inference for multikink quantile regression, JBES'' and ``Chuang Wan, Wei Zhong, Wenyang Zhang and Changliang Zou (2022). Multi-kink quantile regression for longitudinal data with application to progesterone data analysis, Biometrics". 
+Imports: Matrix, quantreg, methods, gam, utils, stats, pracma
+Depends: R (>= 3.5.0)
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Author: Chuang Wan [aut, cre],
+  Wei Zhong [aut]
+Maintainer: Chuang Wan <wanchuanghnu@126.com>
+Repository: CRAN
+Suggests: knitr, rmarkdown
+Packaged: 2023-11-05 15:22:10 UTC; zenghao
+Date/Publication: 2023-11-05 18:00:06 UTC

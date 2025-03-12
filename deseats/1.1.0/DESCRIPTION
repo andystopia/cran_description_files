@@ -1,0 +1,57 @@
+Package: deseats
+Type: Package
+Title: Data-Driven Locally Weighted Regression for Trend and
+        Seasonality in TS
+Version: 1.1.0
+Date: 2024-07-10
+Authors@R: 
+    c(person(given = "Yuanhua",
+             family = "Feng",
+             role = "aut",
+             comment = "Paderborn University, Germany"),
+      person(given = "Dominik",
+             family = "Schulz",
+             role = c("aut", "cre"),
+             email = "dominik.schulz@uni-paderborn.de",
+             comment = "Paderborn University, Germany"))
+Maintainer: Dominik Schulz <dominik.schulz@uni-paderborn.de>
+Description: Various methods for the identification of trend and seasonal
+  components in time series (TS) are provided. Among them is a data-driven locally
+  weighted regression approach with automatically selected bandwidth for
+  equidistant short-memory time series. The approach is a
+  combination / extension of the algorithms by
+  Feng (2013) <doi:10.1080/02664763.2012.740626> and Feng, Y., Gries, T.,
+  and Fritz, M. (2020) <doi:10.1080/10485252.2020.1759598> and a brief
+  description of this new method is provided in the package documentation.
+  Furthermore, the package allows its users to apply the base model of the
+  Berlin procedure, version 4.1, as described in Speth (2004) <https://www.destatis.de/DE/Methoden/Saisonbereinigung/BV41-methodenbericht-Heft3_2004.pdf?__blob=publicationFile>.
+  Permission to include this procedure was kindly provided by the Federal
+  Statistical Office of Germany.
+Imports: Rcpp (>= 1.0.6), ggplot2, stats, graphics, animation, utils,
+        shiny, tools, zoo, future, furrr, future.apply, progressr,
+        purrr, rlang, tidyr
+License: GPL-3
+Encoding: UTF-8
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 2.10), methods
+Suggests: badger, knitr, rmarkdown, smoots, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+LazyData: true
+Collate: 'AttachMessage.R' 'RcppExports.R' 'generics.R'
+        'helper_functions.R' 'subplot_functions.R'
+        'accuracy_measures.R' 'class-smoothing_options.R'
+        'class-decomp.R' 'class-deseats.R' 'class-s_semiarma.R'
+        'class-bv41.R' 'class-hfilter.R' 'class-lmdecomp.R'
+        'class-madecomp.R' 'class-llindecomp.R' 'data_documentation.R'
+        'fitting_functions.R' 'runDecomposition.R' 'class-deseats_fc.R'
+        'forecasting_functions.R' 'bwidth_bootstrap.R'
+        'gain_function.R' 'linear_filters.R' 'ts_conversion.R'
+        'hA_calc.R' 'arima_no_warn.R' 'deseats-package.R'
+        'seasonplot.R'
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-07-10 11:16:49 UTC; Dominik Schulz
+Author: Yuanhua Feng [aut] (Paderborn University, Germany),
+  Dominik Schulz [aut, cre] (Paderborn University, Germany)
+Repository: CRAN
+Date/Publication: 2024-07-12 10:50:15 UTC

@@ -1,0 +1,20 @@
+Package: TSLA
+Type: Package
+Title: Tree-Guided Rare Feature Selection and Logic Aggregation
+Version: 0.1.1
+Authors@R: c(person("Jianmin", "Chen", role = c("aut", "cre"), email = "jianminc000@gmail.com"), person("Kun", "Chen", role = "aut"))
+Imports: stats, Matrix, Rcpp, pROC, PRROC, ape, phytools, data.tree
+LinkingTo: Rcpp, RcppArmadillo
+Maintainer: Jianmin Chen <jianminc000@gmail.com>
+Description: Implementation of the tree-guided feature selection and logic aggregation approach introduced in Chen et al. (2024) <doi:10.1080/01621459.2024.2326621>. The method enables the selection and aggregation of large-scale rare binary features with a known hierarchical structure using a convex, linearly-constrained regularized regression framework. The package facilitates the application of this method to both linear regression and binary classification problems by solving the optimization problem via the smoothing proximal gradient descent algorithm (Chen et al. (2012) <doi:10.1214/11-AOAS514>).
+Depends: R (>= 4.1.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+NeedsCompilation: yes
+Packaged: 2025-02-07 19:37:35 UTC; cjm
+Author: Jianmin Chen [aut, cre],
+  Kun Chen [aut]
+Repository: CRAN
+Date/Publication: 2025-02-10 11:30:03 UTC

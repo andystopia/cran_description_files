@@ -1,0 +1,25 @@
+Package: dupree
+Type: Package
+Title: Identify Duplicated R Code in a Project
+Version: 0.3.0
+Author: Russ Hyde, University of Glasgow
+Maintainer: Russ Hyde <russ.hyde.data@gmail.com>
+Description: Identifies code blocks that have a high level of similarity
+  within a set of R files.
+URL: https://github.com/russHyde/dupree
+BugReports: https://github.com/russHyde/dupree/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown
+Imports: dplyr, purrr, tibble, magrittr, methods, stringdist (>=
+        0.9.5.5), lintr (>= 2.0.0), rlang
+RoxygenNote: 7.1.0
+Collate: 'utils.R' 'dupree.R' 'dupree_classes.R'
+        'dupree_data_validity.R' 'dupree_code_enumeration.R'
+        'dups-class.R'
+NeedsCompilation: no
+Packaged: 2020-03-30 17:27:58 UTC; russ
+Repository: CRAN
+Date/Publication: 2020-04-21 10:20:02 UTC

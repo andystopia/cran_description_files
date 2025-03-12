@@ -1,0 +1,35 @@
+Type: Package
+Package: cppcheckR
+Title: Check 'C' and 'C++' Files using 'Cppcheck'
+Version: 1.0.0
+Authors@R: c(
+    person("Stéphane", "Laurent", , "laurent_step@outlook.fr", 
+           role = c("aut", "cre")),
+    person("Amit", "Gupta", role = "cph",
+           comment = "'fast-xml-parser' library"),
+    person("luyilin", role = "cph",
+           comment = "'json-format-highlight' library")
+  )
+Description: Allow to run 'Cppcheck' (<https://cppcheck.sourceforge.io/>)
+    on 'C' and 'C++' files with a 'R' command or a 'RStudio' addin. The report
+    appears in the 'RStudio' viewer pane as a formatted 'HTML' file. It is
+    also possible to get this report with a 'shiny' application. 'Cppcheck' 
+    can spot many error types and it can also give some recommendations on the 
+    code.
+License: GPL-3
+URL: https://github.com/stla/cppcheckR
+BugReports: https://github.com/stla/cppcheckR/issues
+Imports: htmlwidgets, rmarkdown, rstudioapi, shiny, utils, V8, xml2
+Suggests: htmltools, shinyAce, shinybusy, shinyFiles, shinyjqui,
+        shinyWidgets
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+SystemRequirements: cppcheck
+NeedsCompilation: no
+Packaged: 2022-06-09 15:39:47 UTC; SDL96354
+Author: Stéphane Laurent [aut, cre],
+  Amit Gupta [cph] ('fast-xml-parser' library),
+  luyilin [cph] ('json-format-highlight' library)
+Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
+Repository: CRAN
+Date/Publication: 2022-06-10 09:10:09 UTC

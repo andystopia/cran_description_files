@@ -1,0 +1,38 @@
+Package: meteoland
+Type: Package
+Title: Landscape Meteorology Tools
+Version: 2.2.3
+Date: 2025-01-28
+Authors@R: c(
+	person('Miquel', 'De Cáceres', role=c('aut','cre'),
+	email='miquelcaceres@gmail.com', comment = c(ORCID = "0000-0001-7132-2080")),
+	person('Víctor', 'Granda', role='aut', comment = c(ORCID = "0000-0002-0469-1991")),
+	person('Nicolas', 'Martin', role='aut', comment = c(ORCID = "0000-0001-7574-0108")),
+	person('Antoine', 'Cabon', role='aut', comment = c(ORCID = "0000-0001-6426-1726")))
+Description: Functions to estimate weather variables at any position of a landscape [De Caceres et al. (2018) <doi:10.1016/j.envsoft.2018.08.003>].
+License: GPL (>= 2)
+URL: https://emf-creaf.github.io/meteoland/,
+        https://github.com/emf-creaf/meteoland
+BugReports: https://github.com/emf-creaf/meteoland/issues
+LazyData: TRUE
+Depends: R (>= 4.1.0)
+Imports: methods, sf, stars, stats, Rcpp, units, lifecycle, cli, dplyr,
+        tidyr, rlang, assertthat, purrr, ncdfgeom, ncmeta, lubridate,
+        cubelyr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), meteospain, worldmet,
+        tibble
+LinkingTo: Rcpp
+Encoding: UTF-8
+NeedsCompilation: yes
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Packaged: 2025-01-28 08:52:37 UTC; miquel
+Author: Miquel De Cáceres [aut, cre] (<https://orcid.org/0000-0001-7132-2080>),
+  Víctor Granda [aut] (<https://orcid.org/0000-0002-0469-1991>),
+  Nicolas Martin [aut] (<https://orcid.org/0000-0001-7574-0108>),
+  Antoine Cabon [aut] (<https://orcid.org/0000-0001-6426-1726>)
+Maintainer: Miquel De Cáceres <miquelcaceres@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-28 09:30:04 UTC

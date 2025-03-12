@@ -1,0 +1,29 @@
+Package: nlpembeds
+Title: Natural Language Processing Embeddings
+Version: 1.0.0
+Authors@R: c(person("Thomas", "Charlon", role = c("aut", "cre"),
+                    email = "charlon@protonmail.com",
+                    comment = c(ORCID = "0000-0001-7497-0470")),
+             person("Doudou", "Zhou", role = "ctb",
+                    comment = c(ORCID = "0000-0002-0830-2287")),
+             person("CELEHS", role = "aut",
+                    comment = "<https://celehs.hms.harvard.edu>"))
+Description: Provides efficient methods to compute co-occurrence matrices, pointwise mutual information (PMI) and singular value decomposition (SVD). In the biomedical and clinical settings, one challenge is the huge size of databases, e.g. when analyzing data of millions of patients over tens of years. To address this, this package provides functions to efficiently compute monthly co-occurrence matrices, which is the computational bottleneck of the analysis, by using the 'RcppAlgos' package and sparse matrices. Furthermore, the functions can be called on 'SQL' databases, enabling the computation of co-occurrence matrices of tens of gigabytes of data, representing millions of patients over tens of years. Partly based on Hong C. (2021) <doi:10.1038/s41746-021-00519-z>.
+Imports: data.table, magrittr, Matrix, methods, parallel, RcppAlgos,
+        reshape2, RSQLite, rsvd
+Depends: R (>= 3.5.0)
+Suggests: knitr, testthat
+VignetteBuilder: knitr
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://gitlab.com/thomaschln/nlpembeds
+BugReports: https://gitlab.com/thomaschln/nlpembeds/-/issues
+NeedsCompilation: no
+Packaged: 2025-02-03 20:02:33 UTC; root
+Author: Thomas Charlon [aut, cre] (<https://orcid.org/0000-0001-7497-0470>),
+  Doudou Zhou [ctb] (<https://orcid.org/0000-0002-0830-2287>),
+  CELEHS [aut] (<https://celehs.hms.harvard.edu>)
+Maintainer: Thomas Charlon <charlon@protonmail.com>
+Repository: CRAN
+Date/Publication: 2025-02-04 08:30:01 UTC

@@ -1,0 +1,37 @@
+Package: OneArm2stage
+Title: Phase II Single-Arm Two-Stage Designs with Time-to-Event
+        Outcomes
+Version: 1.2.1
+Authors@R: 
+    c(person("Xiaomeng", "Yuan",  email="xiaomeng.yuan@stjude.org", 
+    	role = c("aut", "cre")),
+      person("Haitao", "Pan",  email="haitao.pan@stjude.org", role = c("aut")),
+      person("Jianrong", "Wu",  email="jiwu@salud.unm.edu", role = c("aut"))
+           )
+Description: Two-stage design for single-arm phase II 
+		trials with time-to-event endpoints (e.g., clinical trials on 
+		immunotherapies among cancer patients) can be calculated using this package. 
+		Two notable advantages of the package: 1) It provides flexible choices from 
+		three design methods (optimal, minmax, and admissible), and 2) the power of
+		the design is more accurately calculated using the exact variance in the
+		one-sample log-rank test. The package can be used for 1) planning the sample
+		sizes and other design parameters, and 2) conducting the interim and final
+		analyses for the Go/No-go decisions. More details about the design method
+		can be found in: Wu, J, Chen L, Wei J, Weiss H, Chauhan A. (2020).
+		<doi:10.1002/pst.1983>.
+NeedsCompilation: no
+Encoding: UTF-8
+Repository: CRAN
+RoxygenNote: 7.2.1
+Imports: survival, utils, flexsurv, IPDfromKM
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Packaged: 2023-10-09 21:14:24 UTC; xyuan86
+Author: Xiaomeng Yuan [aut, cre],
+  Haitao Pan [aut],
+  Jianrong Wu [aut]
+Maintainer: Xiaomeng Yuan <xiaomeng.yuan@stjude.org>
+Date/Publication: 2023-10-09 22:30:11 UTC

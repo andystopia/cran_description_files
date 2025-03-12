@@ -1,0 +1,23 @@
+Package: MatrixHMM
+Title: Parsimonious Families of Hidden Markov Models for Matrix-Variate
+        Longitudinal Data
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Salvatore D.",
+           family = "Tomarchio",
+           role = c("aut","cre"),
+           email = "daniele.tomarchio@unict.it"))
+Description: Implements three families of parsimonious hidden Markov models (HMMs) for matrix-variate longitudinal data using the Expectation-Conditional Maximization (ECM) algorithm. The package supports matrix-variate normal, t, and contaminated normal distributions as emission distributions. For each hidden state, parsimony is achieved through the eigen-decomposition of the covariance matrices associated with the emission distribution. This approach results in a comprehensive set of 98 parsimonious HMMs for each type of emission distribution. Atypical matrix detection is also supported, utilizing the fitted (heavy-tailed) models.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: data.table, doSNOW, foreach, LaplacesDemon, mclust, progress,
+        snow, tensor, tidyr, withr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-08-22 16:58:17 UTC; Daniele
+Author: Salvatore D. Tomarchio [aut, cre]
+Maintainer: Salvatore D. Tomarchio <daniele.tomarchio@unict.it>
+Repository: CRAN
+Date/Publication: 2024-08-28 08:00:06 UTC

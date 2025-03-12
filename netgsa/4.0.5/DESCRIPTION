@@ -1,0 +1,34 @@
+Package: netgsa
+Type: Package
+Title: Network-Based Gene Set Analysis
+Version: 4.0.5
+Date: 2023-11-13
+Authors@R: c(
+    person("Michael", "Hellstern", email = "mikeh1@uw.edu", role = c("aut","cre")),
+    person("Ali", "Shojaie", email = "ashojaie@uw.edu", role = c("aut")),
+    person("Jing", "Ma", role = "aut"),
+    person("Kun", "Yue", role = "aut"))
+Description: Carry out network-based gene set analysis by incorporating external information about interactions among genes, as well as novel interactions learned from data. Implements methods described in Shojaie A, Michailidis G (2010) <doi:10.1093/biomet/asq038>, Shojaie A, Michailidis G (2009) <doi:10.1089/cmb.2008.0081>, and Ma J, Shojaie A, Michailidis G (2016) <doi:10.1093/bioinformatics/btw410>.
+Depends: R (>= 3.5.0)
+biocViews:
+Imports: AnnotationDbi, corpcor, data.table, dplyr, genefilter, graph,
+        graphite, glmnet, glassoFast, httr, igraph, magrittr, Matrix,
+        msigdbr, org.Hs.eg.db, quadprog, RCy3, reshape2, rlang, Rcpp
+        (>= 1.0.2)
+Suggests: knitr, MASS, rmarkdown
+License: GPL (>= 3)
+LinkingTo: Rcpp, RcppEigen
+LazyLoad: yes
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/mikehellstern/netgsa
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2023-11-13 20:24:11 UTC; mike
+Author: Michael Hellstern [aut, cre],
+  Ali Shojaie [aut],
+  Jing Ma [aut],
+  Kun Yue [aut]
+Maintainer: Michael Hellstern <mikeh1@uw.edu>
+Repository: CRAN
+Date/Publication: 2023-11-14 14:10:06 UTC

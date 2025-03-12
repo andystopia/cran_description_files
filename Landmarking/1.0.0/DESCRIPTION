@@ -1,0 +1,54 @@
+Package: Landmarking
+Title: Analysis using Landmark Models
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Isobel",
+           family = "Barrott",
+           role = c("aut", "cre"),
+           email = "isobel.barrott@gmail.com"),
+    person(given = "Jessica",
+           family = "Barrett",
+           role = c("aut"),
+           email = "jessica.barrett@mrc-bsu.cam.ac.uk"),
+    person(given = "Ruth",
+           family = "Keogh",
+           role = c("ctb")),
+    person(given = "Michael",
+           family = "Sweeting",
+           role = c("ctb")),
+    person(given = "David",
+           family = "Stevens",
+           role = c("ctb")))
+Description: The landmark approach allows survival predictions to be
+	updated dynamically as new measurements from an individual are recorded.
+	The idea is to set predefined time points, known as "landmark times",
+	and form a model at each landmark time using only the individuals in the
+	risk set. This package allows the longitudinal data to be modelled
+	either using the last observation carried forward or linear mixed
+	effects modelling. There is also the option to model competing risks,
+	either through cause-specific Cox regression or Fine-Gray regression.
+	To find out more about the methods in this package, please see 
+	<https://isobelbarrott.github.io/Landmarking/articles/Landmarking>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: bzip2
+Imports: nlme, riskRegression, dplyr, pec, methods, prodlim, stats,
+        survival, mstate, ggplot2,
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, JM
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+URL: https://github.com/isobelbarrott/Landmarking/
+BugReports: https://github.com/isobelbarrott/Landmarking/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-02-15 13:25:27 UTC; Isobel
+Author: Isobel Barrott [aut, cre],
+  Jessica Barrett [aut],
+  Ruth Keogh [ctb],
+  Michael Sweeting [ctb],
+  David Stevens [ctb]
+Maintainer: Isobel Barrott <isobel.barrott@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-15 20:00:07 UTC

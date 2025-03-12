@@ -1,0 +1,24 @@
+Package: horseshoenlm
+Title: Nonlinear Regression using Horseshoe Prior
+Version: 0.0.6
+Authors@R: 
+    c(person("Arnab Kumar", "Maity", email = "Arnab.Maity@pfizer.com", role = c("aut", "cre")))
+Description: Provides the posterior estimates of the regression coefficients when horseshoe prior is specified. 
+             The regression models considered here are logistic model for binary response and 
+             log normal accelerated failure time model for right censored survival response. 
+             The linear model analysis is also available for completeness. 
+             All models provide deviance information criterion and widely applicable information criterion. 
+             See <doi:10.1111/rssc.12377> Maity et. al. (2019) <doi:10.1111/biom.13132> Maity et. al. (2020).  
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: survival, msm
+RoxygenNote: 7.1.1
+Suggests: boot, pgdraw, mvtnorm
+NeedsCompilation: no
+Packaged: 2020-12-16 21:35:11 UTC; MAITYA02
+Author: Arnab Kumar Maity [aut, cre]
+Maintainer: Arnab Kumar Maity <Arnab.Maity@pfizer.com>
+Repository: CRAN
+Date/Publication: 2020-12-18 10:10:02 UTC

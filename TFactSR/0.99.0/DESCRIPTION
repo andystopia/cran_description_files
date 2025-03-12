@@ -1,0 +1,38 @@
+Type: Package
+Package: TFactSR
+Title: Enrichment Approach to Predict Which Transcription Factors are
+        Regulated
+Version: 0.99.0
+Authors@R: 
+    person(given = "Atsushi",
+           family = "Fukushima",
+           email = "afukushima@gmail.com", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9015-1694"))
+Description: R implementation of 'TFactS' to predict which are the 
+    transcription factors (TFs), regulated in a biological condition based on
+    lists of differentially expressed genes (DEGs) obtained from transcriptome
+    experiments. This package is based on the 'TFactS' concept by 
+    Essaghir et al. (2010) <doi:10.1093/nar/gkq149> and expands
+    it. It allows users to perform 'TFactS'-like enrichment approach. The
+    package can import and use the original catalogue file from the 'TFactS'
+    as well as users' defined catalogues of interest that are not supported 
+    by 'TFactS' (e.g., Arabidopsis).
+License: GPL-3
+URL: https://afukushima.github.io/TFactSR/
+Depends: R (>= 4.3.0)
+Imports: qvalue, stats
+Suggests: BiocStyle, knitr, rmarkdown, spelling, testthat
+VignetteBuilder: knitr
+biocViews: Network, Software, DifferentialExpression, GeneTarget,
+        GeneExpression, Microarray, RNASeq, Transcription,
+        NetworkEnrichment
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-08-31 00:35:51 UTC; fuku
+Author: Atsushi Fukushima [aut, cre] (<https://orcid.org/0000-0001-9015-1694>)
+Maintainer: Atsushi Fukushima <afukushima@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-08-31 14:00:08 UTC

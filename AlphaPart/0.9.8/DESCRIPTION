@@ -1,0 +1,46 @@
+Package: AlphaPart
+Title: Partition/Decomposition of Breeding Values by Paths of
+        Information
+Description: A software that implements a method for partitioning genetic trends to
+    quantify the sources of genetic gain in breeding programmes.
+    The partitioning method is described in Garcia-Cortes et al.
+    (2008) <doi:10.1017/S175173110800205X>. The package includes the
+    main function AlphaPart for partitioning breeding values and auxiliary
+    functions for manipulating data and summarizing, visualizing, and saving
+    results.
+Authors@R: c(
+    person("Gregor", "Gorjanc", role=c("aut", "cre"),
+           email = "highlander.research.lab@gmail.com",
+           comment = c(ORCID = "0000-0001-8008-2787")),
+    person("Jana","Obsteter", role="aut",
+           email = "jana.obsteter@kis.si",
+           comment = c(ORCID = "0000-0003-1511-3916")),
+    person("Thiago", "de Paula Oliveira", role=c("aut"),
+           email = "thiago.oliveira@ed.ac.uk",
+           comment = c(ORCID = "0000-0002-4555-2584"))
+    )
+Maintainer: Gregor Gorjanc <highlander.research.lab@gmail.com>
+License: GPL (>= 2)
+LazyLoad: yes
+Imports: directlabels (>= 1.1), ggplot2 (>= 0.8.9), pedigree (>=
+        1.3.1), Rcpp (>= 0.9.4), methods (>= 3.6.2), reshape, dplyr,
+        magrittr, tibble (>= 3.1.7),
+Suggests: RColorBrewer (>= 1.0-2), truncnorm (>= 1.0-5), knitr,
+        rmarkdown, testthat (>= 3.0.0), covr, ggridges (>= 0.5.3)
+LinkingTo: Rcpp
+Version: 0.9.8
+Date: 2022-11-13
+NeedsCompilation: yes
+Packaged: 2022-11-13 15:13:00 UTC; thiago
+VignetteBuilder: knitr
+RoxygenNote: 7.1.2.9000
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+Author: Gregor Gorjanc [aut, cre] (<https://orcid.org/0000-0001-8008-2787>),
+  Jana Obsteter [aut] (<https://orcid.org/0000-0003-1511-3916>),
+  Thiago de Paula Oliveira [aut]
+    (<https://orcid.org/0000-0002-4555-2584>)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2022-11-15 21:40:05 UTC

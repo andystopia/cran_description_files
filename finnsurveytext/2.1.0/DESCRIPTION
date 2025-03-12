@@ -1,0 +1,59 @@
+Type: Package
+Package: finnsurveytext
+Title: Analyse Open-Ended Survey Responses in Finnish
+Version: 2.1.0
+Authors@R: c(
+    person("Adeline", "Clarke", , email = "adelinepclarke@gmail.com", role = c("cre", "aut")),
+    person("Krista", "Lagus", email = "krista.lagus@helsinki.fi", role = "aut"), 
+    person("Katja", "Laine", role = "aut"),
+    person("Maria", "Litova", role = "aut"),
+    person("Matti", "Nelimarkka", , email = "matti.nelimarkka@helsinki.fi", role = "aut"),
+    person("Joni", "Oksanen", , email = "joni.oksanen@helsinki.fi", role = "aut"),
+    person("Jaakko", "Peltonen", role = "aut"),
+    person("Tuukka", "Oikarinen", role = "aut"),
+    person("Jani-Matti", "Tirkkonen", role = "aut"), 
+    person("Ida", "Toivanen", role = "aut"),
+    person("Maria", "Valaste", , email = "maria.valaste@helsinki.fi", role = "aut"),
+    person("Shannon Emilia", "Carson", role = "ctb"),
+    person("Sirpa", "Lappalainen", role = "ctb"),
+    person("Tuukka", "Puonti", role = "ctb"), 
+    person("Kimmo", "Vehkalahti", role = "ctb"), 
+    person("DARIAH-FI", role = c("cph", "fnd"))
+  )
+Description: Annotates Finnish textual survey responses into CoNLL-U format using Finnish treebanks from <https://universaldependencies.org/format.html> using UDPipe as described in Straka and Straková (2017) <doi:10.18653/v1/K17-3009>. Formatted data is then analysed using single or comparison n-gram plots, wordclouds, summary tables and Concept Network plots. The Concept Network plots use the TextRank algorithm as outlined in Mihalcea, Rada & Tarau, Paul (2004) <https://aclanthology.org/W04-3252/>.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: data.table, dplyr, ggplot2, ggpubr, ggraph, igraph, magrittr,
+        purrr, RColorBrewer, stopwords, stringr, textrank, tibble,
+        tidyr, udpipe, wordcloud
+Suggests: DT, htmlwidgets, knitr, rmarkdown, shiny, shinyBS,
+        shinydashboard, shinyjs, survey
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+URL:
+        https://dariah-fi-survey-concept-network.github.io/finnsurveytext/,
+        https://github.com/DARIAH-FI-Survey-Concept-Network/finnsurveytext
+BugReports: https://github.com/DARIAH-FI-Survey-Concept-Network/finnsurveytext/issues
+NeedsCompilation: no
+Packaged: 2024-11-08 11:54:24 UTC; adeclark
+Author: Adeline Clarke [cre, aut],
+  Krista Lagus [aut],
+  Katja Laine [aut],
+  Maria Litova [aut],
+  Matti Nelimarkka [aut],
+  Joni Oksanen [aut],
+  Jaakko Peltonen [aut],
+  Tuukka Oikarinen [aut],
+  Jani-Matti Tirkkonen [aut],
+  Ida Toivanen [aut],
+  Maria Valaste [aut],
+  Shannon Emilia Carson [ctb],
+  Sirpa Lappalainen [ctb],
+  Tuukka Puonti [ctb],
+  Kimmo Vehkalahti [ctb],
+  DARIAH-FI [cph, fnd]
+Maintainer: Adeline Clarke <adelinepclarke@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-08 12:10:03 UTC

@@ -1,0 +1,31 @@
+Package: clickableImageMap
+Version: 1.0
+Date: 2024-05-08
+Title: Implement 'tableGrob' Object as a Clickable Image Map
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+LazyData: true
+Imports: gridExtra, ggplotify, grid, ggplot2, stats, gtable, grDevices
+Description: Implement 'tableGrob' object as a clickable image map.
+    The 'clickableImageMap' package is designed to be more convenient and more configurable than the edit() function.
+    Limitations that I have encountered with edit() are cannot control
+    (1) positioning
+    (2) size
+    (3) appearance and formatting of fonts
+    In contrast, when the table is implemented as a 'tableGrob', all of these features are controllable.
+    In particular, the 'ggplot2' grid system allows exact positioning of the table relative to
+    other graphics etc.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-05-11 15:32:05 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2024-05-14 07:43:17 UTC

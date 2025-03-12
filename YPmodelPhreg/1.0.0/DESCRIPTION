@@ -1,0 +1,33 @@
+Package: YPmodelPhreg
+Type: Package
+Title: The Short-Term and Long-Term Hazard Ratio Model with
+        Proportional Adjustment
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Daewoo", family = "Pak", email = "dpak@yonsei.ac.kr", role = c("aut", "cre")),
+    person(given = "Song", family = "Yang", email = "yangso@nhlbi.nih.gov", role = c("aut"))
+    )
+Maintainer: Daewoo Pak <dpak@yonsei.ac.kr>
+Description: Provides covariate-adjusted comparison of two groups of right 
+    censored data, where the binary group variable has separate short-term 
+    and long-term effects on the hazard function, while effects of covariates 
+    such as age, blood pressure, etc. are proportional on the hazard. The model 
+    was studied in Yang and Prentice (2015) <doi:10.1002/sim.6453> and it extends 
+    the two sample version of the short-term and long-term hazard ratio model
+    proposed in Yang and Prentice (2005) <doi:10.1093/biomet/92.1.1>. The model 
+    extends the usual Cox proportional hazards model to allow more flexible 
+    hazard ratio patterns, such as gradual onset of effect, diminishing effect, 
+    and crossing hazard or survival functions. This package provides 
+    the following: 1) point estimates and confidence intervals for model 
+    parameters; 2) point estimate and confidence interval of the average hazard 
+    ratio; and 3) plots of estimated hazard ratio function with point-wise and 
+    simultaneous confidence bands.
+License: GPL (>= 2)
+Author: Daewoo Pak [aut, cre],
+  Song Yang [aut]
+Imports: survival
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2023-07-03 23:30:02 UTC; dpak
+Repository: CRAN
+Date/Publication: 2023-07-05 17:33:08 UTC

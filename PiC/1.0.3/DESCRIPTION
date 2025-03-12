@@ -1,0 +1,35 @@
+Type: Package
+Package: PiC
+Title: Pointcloud Interactive Computation for Forest Structure Analysis
+Version: 1.0.3
+Authors@R: c(
+    person("Roberto", "Ferrara", , "roberto.ferrara@cnr.it", role = c("aut", "cre"), comment = c(ORCID = "0009-0000-3627-6867")),
+    person("Stefano", "Arrizza", role = "aut")
+  )
+Description: Provides advanced algorithms for analyzing pointcloud data in
+    forestry applications. Key features include fast voxelization of
+    large datasets; segmentation of point clouds into forest floor,
+    understorey, canopy, and wood components. The package enables
+    efficient processing of large-scale forest pointcloud data, offering
+    insights into forest structure, connectivity, and fire risk
+    assessment. Algorithms to analyze pointcloud data (.xyz input file).
+    For more details, see Ferrara & Arrizza (2025) <https://hdl.handle.net/20.500.14243/533471>.
+    For single tree segmentation details, see Ferrara et al. (2018) 
+    <doi:10.1016/j.agrformet.2018.04.008>.
+License: GPL (>= 3)
+Depends: R (>= 4.3)
+Imports: collapse, data.table, dbscan, dplyr, foreach, magrittr, stats,
+        tictoc
+Suggests: ggplot2, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/rupppy/PiC
+BugReports: https://github.com/rupppy/PiC/issues
+NeedsCompilation: no
+Packaged: 2025-02-17 09:39:57 UTC; robertoferrara
+Author: Roberto Ferrara [aut, cre] (<https://orcid.org/0009-0000-3627-6867>),
+  Stefano Arrizza [aut]
+Maintainer: Roberto Ferrara <roberto.ferrara@cnr.it>
+Repository: CRAN
+Date/Publication: 2025-02-18 10:00:02 UTC

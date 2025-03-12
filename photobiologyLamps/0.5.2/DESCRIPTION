@@ -1,0 +1,38 @@
+Package: photobiologyLamps
+Type: Package
+Title: Spectral Irradiance Data for Lamps
+Version: 0.5.2
+Date: 2023-10-24
+Authors@R: 
+   c(
+    person("Pedro J.", "Aphalo", email = "pedro.aphalo@helsinki.fi", role = c("aut", "cre"), comment = c(ORCID = "https://orcid.org/0000-0003-3385-972X")),
+    person("Lasse", "Ylianttila", role = "ctb")
+    )
+Maintainer: Pedro J. Aphalo <pedro.aphalo@helsinki.fi>
+Description: Spectral emission data for some frequently used lamps including 
+    bulbs and flashlights based on led emitting diodes (LEDs) but excluding
+    LEDs available as electronic components. Original spectral irradiance data 
+    for incandescent-, LED- and discharge lamps are included. They are 
+    complemented by data on the effect of temperature on the emission by 
+    fluorescent tubes. Part of the 'r4photobiology' suite, Aphalo P. J. (2015) 
+    <doi:10.19232/uv4pb.2015.1.14>.
+License: GPL (>= 2)
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0), photobiology (>= 0.11.0)
+Suggests: knitr (>= 1.40), rmarkdown (>= 2.23), ggspectra (>= 0.3.12),
+        photobiologyWavebands (>= 0.5.1), ggplot2 (>= 3.4.0),
+        photobiologyLEDs
+LazyLoad: yes
+LazyData: yes
+ByteCompile: true
+Encoding: UTF-8
+URL: https://www.r4photobiology.info/,
+        https://github.com/aphalo/photobiologylamps
+BugReports: https://github.com/aphalo/photobiologylamps/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-10-24 10:09:26 UTC; aphalo
+Author: Pedro J. Aphalo [aut, cre] (<https://orcid.org/0000-0003-3385-972X>),
+  Lasse Ylianttila [ctb]
+Repository: CRAN
+Date/Publication: 2023-10-24 10:50:02 UTC

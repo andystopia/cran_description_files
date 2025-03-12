@@ -1,0 +1,34 @@
+Package: provTraceR
+Title: Uses Provenance to Trace File Lineage for One or more R Scripts
+Version: 1.0
+Date: 2020-08-04
+Authors@R: c( person("Emery", "Boose", role = "cre",
+                      email = "boose@fas.harvard.edu"),
+              person("Barbara", "Lerner", role = "aut",
+                      email = "blerner@mtholyoke.edu"),
+              person("President and Fellows of Harvard College", role = "cph"),
+              person("Trustees of Mount Holyoke College", role = "cph")
+        )
+Description: Uses provenance collected by 'rdtLite' package or comparable tool
+    to display information about input files, output files, and exchanged files
+    for a single R script or a series of R scripts.
+Depends: R (>= 3.5)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: provParseR (>= 0.3)
+Suggests: digest, knitr, rdt, rdtLite, rmarkdown, testthat
+Additional_repositories: https://end-to-end-provenance.github.io/drat/
+URL: https://github.com/End-to-end-provenance
+BugReports: https://github.com/End-to-end-provenance/provTraceR/issues
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-08-04 14:17:11 UTC; boose
+Author: Emery Boose [cre],
+  Barbara Lerner [aut],
+  President and Fellows of Harvard College [cph],
+  Trustees of Mount Holyoke College [cph]
+Maintainer: Emery Boose <boose@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2020-08-11 08:10:02 UTC

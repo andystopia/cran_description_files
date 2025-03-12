@@ -1,0 +1,32 @@
+Package: rhub
+Title: Tools for R Package Developers
+Version: 2.0.1
+Authors@R: c(
+    person("Gábor", "Csárdi",, "csardi.gabor@gmail.com", role = c("aut", "cre")),
+    person("Maëlle", "Salmon", role = "aut",
+          email = "maelle.salmon@yahoo.se",
+          comment = c(ORCID = "0000-0002-2815-0399")),
+    person("R Consortium", role = c("fnd")))
+Description: R-hub v2 uses GitHub Actions to run 'R CMD check' and
+    similar package checks. The 'rhub' package helps you set up
+    R-hub v2 for your R package, and start running checks.
+License: MIT + file LICENSE
+URL: https://github.com/r-hub/rhub, https://r-hub.github.io/rhub/
+BugReports: https://github.com/r-hub/rhub/issues
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0)
+Imports: callr, cli, curl, desc, gert, glue, gitcreds, jsonlite,
+        pkgbuild, processx, rappdirs, rematch, R6, rprojroot, utils,
+        whoami
+Suggests: asciicast, debugme, knitr, mockery, pillar, rmarkdown,
+        testthat (>= 3.0.0), webfakes, withr
+Encoding: UTF-8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-06 22:13:05 UTC; gaborcsardi
+Author: Gábor Csárdi [aut, cre],
+  Maëlle Salmon [aut] (<https://orcid.org/0000-0002-2815-0399>),
+  R Consortium [fnd]
+Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-06 22:40:02 UTC

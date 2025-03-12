@@ -1,0 +1,39 @@
+Package: addinsOutline
+Type: Package
+Title: 'RStudio' Addins for Show Outline of a R Markdown/'LaTeX'
+        Project
+Version: 0.1.6
+Date: 2019-10-29
+Authors@R: c(
+    person(given = "Pedro L.", 
+           family = "Luque-Calvo", 
+           role = c("aut", "cre"), 
+           email = "calvo@us.es",
+           comment = c(ORCID = "0000-0001-6660-5326"))
+    )
+Description: 'RStudio' allows to show and navigate for the outline of a 
+    R Markdown file, but not for R Markdown projects with multiple 
+    files. For this reason, I have developed several 'RStudio' addins capable 
+    of show project outline. Each addin is specialized in showing projects 
+    of different types: R Markdown project, 'bookdown' package project 
+    and 'LaTeX' project. There is a configuration file that allows you 
+    to customize additional searches.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/calote/addinsOutline
+BugReports: https://github.com/calote/addinsOutline/issues
+Depends: R (>= 3.2)
+Imports: shiny (>= 0.13), miniUI (>= 0.1), rstudioapi (>= 0.5),
+        shinyFiles (>= 0.7.2), stringr, dplyr (>= 0.7.7), tibble, yaml,
+        rmarkdown, fs, DT
+RoxygenNote: 6.1.1
+Suggests: knitr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-11-29 09:27:15 UTC; calvo
+Author: Pedro L. Luque-Calvo [aut, cre]
+    (<https://orcid.org/0000-0001-6660-5326>)
+Maintainer: Pedro L. Luque-Calvo <calvo@us.es>
+Repository: CRAN
+Date/Publication: 2019-12-02 16:20:09 UTC

@@ -1,0 +1,43 @@
+Package: adproclus
+Title: Additive Profile Clustering Algorithms
+Version: 2.0.0
+Authors@R: c(person("Henry", "Heppe",
+        role = c("aut", "cre", "cph"),
+        email = "heppe.henry@gmail.com"),
+        person("Julian", "Rossbroich", 
+        role = c("aut")),
+        person("Jeffrey", "Durieux", 
+        role = "aut"),
+        person("Tom", "Wilderjans", 
+        role = "aut"))
+Description: Obtain overlapping clustering models for object-by-variable data
+        matrices using the Additive Profile Clustering (ADPROCLUS) method. 
+        Also contains the low dimensional ADPROCLUS method 
+        for simultaneous dimension reduction and overlapping clustering. 
+        For reference see Depril, Van Mechelen, Mirkin (2008) 
+        <doi:10.1016/j.csda.2008.04.014> and Depril, Van Mechelen, Wilderjans 
+        (2012) <doi:10.1007/s00357-012-9112-5>.
+Depends: R (>= 3.1.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: checkmate, corrplot, ggplot2, ggrepel, gtools, igraph,
+        matrixStats, multichull, NMFN, qgraph, readr, rlang, scales,
+        stats, tidyr, withr
+RoxygenNote: 7.3.2
+Collate: 'adproclus-package.R' 'adproclus_classes.R' 'clustering.R'
+        'data.R' 'get_starts.R' 'model_selection.R' 'utils.R'
+        'visualize.R'
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/henry-heppe/adproclus
+BugReports: https://github.com/henry-heppe/adproclus/issues
+NeedsCompilation: no
+Packaged: 2024-08-17 17:46:49 UTC; a1224
+Author: Henry Heppe [aut, cre, cph],
+  Julian Rossbroich [aut],
+  Jeffrey Durieux [aut],
+  Tom Wilderjans [aut]
+Maintainer: Henry Heppe <heppe.henry@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-17 18:00:01 UTC

@@ -1,0 +1,42 @@
+Package: macroBiome
+Type: Package
+Title: A Tool for Mapping the Distribution of the Biomes and Bioclimate
+Version: 0.4.0
+Authors@R: 
+    c(person("Zoltán", "Szelepcsényi", email = "szelepcsenyi.zoltan@gmail.com", 
+             role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-9844-4958")))
+Maintainer: Zoltán Szelepcsényi <szelepcsenyi.zoltan@gmail.com>
+Description: Procedures for simulating biomes by equilibrium vegetation 
+  models, with a special focus on paleoenvironmental applications.
+  Three widely used equilibrium biome models are currently implemented in 
+  the package: the Holdridge Life Zone (HLZ) system (Holdridge 1947, 
+  <doi:10.1126/science.105.2727.367>), the Köppen-Geiger classification 
+  (KGC) system (Köppen 1936, 
+  <https://koeppen-geiger.vu-wien.ac.at/pdf/Koppen_1936.pdf>) and the 
+  BIOME model (Prentice et al. 1992, <doi:10.2307/2845499>). Three 
+  climatic forest-steppe models are also implemented.
+  An approach for estimating monthly time series of relative sunshine 
+  duration from temperature and precipitation data (Yin 1999, 
+  <doi:10.1007/s007040050111>) is also adapted, allowing 
+  process-based biome models to be combined with high-resolution 
+  paleoclimate simulation datasets (e.g., CHELSA-TraCE21k v1.0 dataset: 
+  <https://chelsa-climate.org/chelsa-trace21k/>).
+Additional_repositories: http://packages.ropensci.org
+Depends: R (>= 3.5.0)
+Imports: devtools, methods, palinsol, raster, rnaturalearthdata, sf,
+        strex, terra
+Suggests: rnaturalearthhires
+Config/Needs/website: ropensci/rnaturalearthhires
+URL: https://github.com/szelepcsenyi/macroBiome
+BugReports: https://github.com/szelepcsenyi/macroBiome/issues/
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+Date: 2024-01-15
+LazyData: true
+NeedsCompilation: no
+Author: Zoltán Szelepcsényi [aut, cre, cph]
+    (<https://orcid.org/0000-0002-9844-4958>)
+Packaged: 2024-01-15 18:56:50 UTC; szelepcsenyi.zoltan
+Repository: CRAN
+Date/Publication: 2024-01-16 14:10:06 UTC

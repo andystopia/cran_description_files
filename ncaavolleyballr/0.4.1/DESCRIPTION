@@ -1,0 +1,33 @@
+Package: ncaavolleyballr
+Type: Package
+Title: Extract Data from NCAA Women's and Men's Volleyball Website
+Version: 0.4.1
+Authors@R: 
+    person("Jeffrey R.", "Stevens", , "jeffrey.r.stevens@protonmail.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-2375-1360"))
+Maintainer: Jeffrey R. Stevens <jeffrey.r.stevens@protonmail.com>
+Description: Extracts team records/schedules and player statistics for the 
+    2020-2024 National Collegiate Athletic Association (NCAA) women's and men's
+    divisions I, II, and III volleyball teams from <https://stats.ncaa.org>. 
+    Functions can aggregate statistics for teams, conferences, divisions, or 
+    custom groups of teams.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1)
+RoxygenNote: 7.3.2
+Imports: cli, curl, dplyr, httr2, lifecycle, purrr, rlang, rvest,
+        stringr, tibble, tidyr, xml2
+Suggests: knitr, quarto, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/JeffreyRStevens/ncaavolleyballr,
+        https://jeffreyrstevens.github.io/ncaavolleyballr/
+BugReports: https://github.com/JeffreyRStevens/ncaavolleyballr/issues
+VignetteBuilder: quarto
+NeedsCompilation: no
+Packaged: 2025-01-21 23:47:24 UTC; jstevens
+Author: Jeffrey R. Stevens [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2375-1360>)
+Repository: CRAN
+Date/Publication: 2025-01-23 17:30:09 UTC

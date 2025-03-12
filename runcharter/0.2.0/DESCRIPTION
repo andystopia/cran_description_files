@@ -1,0 +1,30 @@
+Package: runcharter
+Title: Automatically Plot, Analyse and Revises Limits of Multiple Run
+        Charts
+Version: 0.2.0
+Authors@R: 
+    person(given = "John",
+           family = "MacKintosh",
+           role = c("aut", "cre"),
+           email = "johnmackintosh.jm@gmail.com")
+Description: Plots multiple run charts, finds successive signals of 
+    improvement, and revises medians when each signal occurs. Finds runs
+    above, below, or on both sides of the median, and returns a plot and
+    a data.table summarising original medians and any revisions, for all
+    groups within the supplied data.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 2.10)
+Imports: data.table, ggplot2, magrittr, zoo
+Suggests: knitr, rmarkdown, covr, pkgdown, testthat, NHSRdatasets
+VignetteBuilder: knitr
+URL: https://github.com/johnmackintosh/runcharter
+BugReports: https://github.com/johnmackintosh/runcharter/issues
+NeedsCompilation: no
+Packaged: 2021-11-07 22:06:23 UTC; datag
+Author: John MacKintosh [aut, cre]
+Maintainer: John MacKintosh <johnmackintosh.jm@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-11-09 07:50:01 UTC

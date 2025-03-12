@@ -1,0 +1,35 @@
+Package: sarp.snowprofile.pyface
+Version: 0.1.3
+Date: 2022-10-26
+Title: 'python' Modules from Snowpack and Avalanche Research
+Authors@R: c(
+    person("Florian", "Herla", , "fherla@sfu.ca", role = c("aut", "cre")),
+    person("Stephanie", "Mayer", , "stephanie.mayer@slf.ch", role = "aut"),
+    person("SFU Avalanche Research Program", role = "fnd")
+  )
+Description: 
+    The development of post-processing functionality for simulated snow profiles 
+    by the snow and avalanche community is often done in 'python'. This package
+    aims to make these tools accessible to 'R' users. Currently integrated modules 
+    contain functions to calculate dry snow layer instabilities in support of
+    avalache hazard assessments following the publications of  Richter, Schweizer, 
+    Rotach, and Van Herwijnen (2019) <doi:10.5194/tc-13-3353-2019>, and Mayer, 
+    Van Herwijnen, Techel, and Schweizer (2022) <doi:10.5194/tc-2022-34>.
+URL: http://www.avalancheresearch.ca
+License: CC BY-SA 4.0
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Language: en-CA
+Depends: sarp.snowprofile (>= 1.3.0)
+Imports: utils, reticulate, data.table
+Config/reticulate: list( packages = list( list(package =
+        "scikit-learn", version = "0.22.1"), list(package = "joblib"),
+        list(package = "numpy"), list(package = "pandas") ) )
+NeedsCompilation: no
+Packaged: 2022-11-01 11:58:04 UTC; flo
+Author: Florian Herla [aut, cre],
+  Stephanie Mayer [aut],
+  SFU Avalanche Research Program [fnd]
+Maintainer: Florian Herla <fherla@sfu.ca>
+Repository: CRAN
+Date/Publication: 2022-11-01 15:15:03 UTC

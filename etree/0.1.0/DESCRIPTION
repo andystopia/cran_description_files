@@ -1,0 +1,73 @@
+Package: etree
+Title: Classification and Regression with Structured and Mixed-Type
+        Data
+Version: 0.1.0
+Authors@R: c(
+    person("Riccardo",
+           "Giubilei",
+           role = c("aut", "cre"),
+           email = "riccardogbl@gmail.com",
+           comment = c(ORCID = "0000-0002-1674-4886")),
+    person("Tullia",
+           "Padellini",
+           role = "aut",
+           email = "tullia.padellini@bancaditalia.it"),
+    person("Pierpaolo",
+           "Brutti",
+           role = "aut",
+           email = "pierpaolo.brutti@uniroma1.it",
+           comment = c(ORCID = "")),
+    person("Marco",
+           "Brandi",
+           role = "ctb",
+           email = "marco.brandi@uniroma1.it"),
+    person("Gabriel",
+           "Nespoli",
+           role = "ctb",
+           email = "gnmesquita1@gmail.com"),
+    person("Torsten",
+           "Hothorn",
+           role = "ctb",
+           email = "Torsten.Hothorn@R-project.org",
+           comment = c(ORCID = "0000-0001-8301-0471", "(partykit author)")),
+    person("Achim",
+           "Zeileis",
+           role = "ctb",
+           email = "Achim.Zeileis@R-project.org",
+           comment = c(ORCID = "0000-0003-0918-3766", "(partykit author)"))
+           )
+Description: Implementation of Energy Trees, a statistical model to perform 
+    classification and regression with structured and mixed-type data. The
+    model has a similar structure to Conditional Trees, but brings in Energy
+    Statistics to test independence between variables that are possibly 
+    structured and of different nature. Currently, the package covers functions
+    and graphs as structured covariates. It builds upon 'partykit' to
+    provide functionalities for fitting, printing, plotting, and predicting with
+    Energy Trees. Energy Trees are described in Giubilei et al. (2022) 
+    <arXiv:2207.04430>. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0
+Depends: R (>= 3.7.0)
+Imports: brainGraph, cluster, energy, fda.usc (>= 2.0.0), igraph,
+        NetworkDistance, parallel, partykit, survival, TDA, usedist
+Suggests: knitr, MLmetrics, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/ricgbl/etree
+BugReports: https://github.com/ricgbl/etree/issues
+NeedsCompilation: no
+Packaged: 2022-07-15 09:53:19 UTC; ricca
+Author: Riccardo Giubilei [aut, cre] (<https://orcid.org/0000-0002-1674-4886>),
+  Tullia Padellini [aut],
+  Pierpaolo Brutti [aut],
+  Marco Brandi [ctb],
+  Gabriel Nespoli [ctb],
+  Torsten Hothorn [ctb] (<https://orcid.org/0000-0001-8301-0471>,
+    (partykit author)),
+  Achim Zeileis [ctb] (<https://orcid.org/0000-0003-0918-3766>, (partykit
+    author))
+Maintainer: Riccardo Giubilei <riccardogbl@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-07-16 08:30:02 UTC

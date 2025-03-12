@@ -1,0 +1,33 @@
+Package: midoc
+Title: A Decision-Making System for Multiple Imputation
+Version: 1.0.0
+Authors@R: c(
+    person("Elinor", "Curnow", , "elinor.curnow@bristol.ac.uk", role = c("aut", "cre", "cph"),
+            comment = c(ORCID = "0000-0002-3109-3647")),
+    person("Jon", "Heron", role = "aut"),
+    person("Rosie", "Cornish", role = "aut"),
+    person("Kate", "Tilling", role = "aut"),
+    person("James", "Carpenter", role = "aut")
+           )
+Description: A guidance system for analysis with missing data. It incorporates expert, up-to-date methodology to help researchers choose the most appropriate analysis approach when some data are missing. You provide the available data and the assumed causal structure, including the likely causes of missing data. 'midoc' will advise which analysis approaches can be used, and how best to perform them. 'midoc' follows the framework for the treatment and reporting of missing data in observational studies (TARMOS). Lee et al (2021). <doi:10.1016/j.jclinepi.2021.01.008>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: knitr, shiny, testthat
+Config/testthat/edition: 3
+Imports: arm, blorr, dagitty, glue, grDevices, lifecycle, mfp2, mice
+        (>= 3.16.0), rlang, rmarkdown, stats, utils
+VignetteBuilder: knitr
+Depends: R (>= 3.6)
+LazyData: true
+URL: https://elliecurnow.github.io/midoc/
+NeedsCompilation: no
+Packaged: 2024-10-01 11:01:00 UTC; ec15808
+Author: Elinor Curnow [aut, cre, cph] (<https://orcid.org/0000-0002-3109-3647>),
+  Jon Heron [aut],
+  Rosie Cornish [aut],
+  Kate Tilling [aut],
+  James Carpenter [aut]
+Maintainer: Elinor Curnow <elinor.curnow@bristol.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-10-02 16:40:02 UTC

@@ -1,0 +1,34 @@
+Package: tetrascatt
+Type: Package
+Title: Acoustic Scattering for Complex Shapes by Using the DWBA
+Version: 0.1.1
+Date: 2024-01-01
+Author: Juan Domingo Gonzalez [cre, aut],
+  Edmundo Federico Lavia [aut],
+  Guadalupe Cascallares [aut]
+Authors@R: c(person("Juan Domingo", "Gonzalez", email = "juanrst@hotmail.com", 
+                    role = c("cre","aut")),
+             person("Edmundo Federico", "Lavia", email = "sivasadartantasvueltasnosirve@gmail.com",
+                    role = "aut"),
+             person("Guadalupe", "Cascallares", email = "mgcascallares@gmail.com", 
+             role = "aut"))
+Maintainer: Juan Domingo Gonzalez <juanrst@hotmail.com>
+Description: Uses the Distorted Wave Born Approximation (DWBA) to compute the
+  acoustic backward scattering, the geometry of the object is formed by a
+  volumetric mesh, composed of tetrahedrons. This computation is done efficiently
+  through an analytical 3D integration that allows for a solution which is
+  expressed in terms of elementary functions for each tetrahedron.
+  It is important to note that this method is only valid for objects whose
+  acoustic properties, such as density and sound speed, do not vary significantly
+  compared to the surrounding medium. (See Lavia, Cascallares and Gonzalez, J. D. (2023). 
+  TetraScatt model: Born approximation for the estimation of acoustic dispersion of 
+  fluid-like objects of arbitrary geometries. arXiv preprint <arXiv:2312.16721>).
+Encoding: UTF-8
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.9)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2024-01-29 22:36:15 UTC; juan
+Repository: CRAN
+Date/Publication: 2024-01-29 23:20:02 UTC

@@ -1,0 +1,22 @@
+Package: runDRT
+Title: Run Doubly Ranked Tests
+Version: 0.1.0
+Authors@R: 
+    person("Mark J.", "Meyer", , "mjm556@georgetown.edu", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-3942-9675"))
+Description: Doubly ranked tests are nonparametric tests for grouped functional and multivariate data.
+    The testing procedure first ranks a matrix (or three dimensional array) of data by column (if a matrix) or by cell (across the third dimension if an array).
+    By default, it calculates a sufficient statistic for the subject's order within the sample using the observed ranks, taken over the columns or cells.
+    Depending on the number of groups, G, the summarized ranks are then analyzed using either a Wilcoxon Rank Sum test (G = 2) or a Kruskal-Wallis (G greater than 2).
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+License: MIT + file LICENSE
+Suggests: fda (>= 6.1.4), FDboost (>= 1.1.2), refund (>= 0.1.32),
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-05-31 13:58:31 UTC; markmeyer
+Author: Mark J. Meyer [aut, cre, cph] (<https://orcid.org/0000-0003-3942-9675>)
+Maintainer: Mark J. Meyer <mjm556@georgetown.edu>
+Repository: CRAN
+Date/Publication: 2024-06-01 10:30:03 UTC

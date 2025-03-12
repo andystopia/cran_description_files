@@ -1,0 +1,45 @@
+Package: smidm
+Title: Statistical Modelling for Infectious Disease Management
+Version: 1.0
+Authors@R: c(
+  person("Max", "Westphal", role = c("aut"),
+         email = "max.westphal@mevis.fraunhofer.de",
+         comment = c(ORCID = "0000-0002-8488-758X")),
+  person("Stefanie", "Grimm", role = c("aut"),
+         email = "stefanie.grimm@itwm.fraunhofer.de"),
+  person("Sonja", "Jäckle", role = c("aut", "cre"),
+         email = "sonja.jaeckle@mevis.fraunhofer.de",
+         comment = c(ORCID = "0000-0002-2908-299X")),
+  person("Rieke", "Alpers", role = c("aut"),
+         email = "rieke.alpers@mevis.fraunhofer.de",
+         comment = c(ORCID = "0000-0001-8317-1435")),
+  person(c("Hong", "Phuc"), "Truong", role = c("aut"),
+         email = "hong.phuc.truong@itwm.fraunhofer.de"),
+  person("Amelie", "Lucker", role = c("ctb"),
+         email = "amelie.lucker@itwm.fraunhofer.de"),
+  person("Fraunhofer MEVIS", role = c("cph")),
+  person("Fraunhofer ITWM", role = c("cph")))
+Description: Statistical models for specific coronavirus disease 2019 use cases at German local health authorities. All models of Statistical modelling for infectious disease management 'smidm' are part of the decision support toolkit in the 'EsteR' project. More information is published in Sonja Jäckle, Rieke Alpers, Lisa Kühne, Jakob Schumacher, Benjamin Geisler, Max Westphal "'EsteR' – A Digital Toolkit for COVID-19 Decision Support in Local Health Authorities" (2022) <doi:10.3233/SHTI220799> and Sonja Jäckle, Elias Röger, Volker Dicken, Benjamin Geisler, Jakob Schumacher, Max Westphal "A Statistical Model to Assess Risk for Supporting COVID-19 Quarantine Decisions" (2021) <doi:10.3390/ijerph18179166>.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: dplyr, extraDistr, stats, methods
+Suggests: testthat (>= 3.0.0), covr, xml2, knitr, rmarkdown, tidyr,
+        hdrcde, ggplot2, scales
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://gitlab.cc-asp.fraunhofer.de/ester/smidm
+BugReports: https://gitlab.cc-asp.fraunhofer.de/ester/smidm/-/issues
+NeedsCompilation: no
+Packaged: 2022-08-26 12:12:44 UTC; sjaeckle
+Author: Max Westphal [aut] (<https://orcid.org/0000-0002-8488-758X>),
+  Stefanie Grimm [aut],
+  Sonja Jäckle [aut, cre] (<https://orcid.org/0000-0002-2908-299X>),
+  Rieke Alpers [aut] (<https://orcid.org/0000-0001-8317-1435>),
+  Hong Phuc Truong [aut],
+  Amelie Lucker [ctb],
+  Fraunhofer MEVIS [cph],
+  Fraunhofer ITWM [cph]
+Maintainer: Sonja Jäckle <sonja.jaeckle@mevis.fraunhofer.de>
+Repository: CRAN
+Date/Publication: 2022-08-27 08:40:02 UTC

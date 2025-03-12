@@ -1,0 +1,25 @@
+Package: OryzaProbe
+Type: Package
+Title: Rice Microarray Probe ID Conversion, from Probe ID to RAP-DB ID
+Version: 0.1.0
+Authors@R: c(person("Youming", "Liu", role = c("aut", "cre","cph"),
+    email = "lym@g.ecc.u-tokyo.ac.jp") )
+Description: Microarray probe ID is not convenient for further enrichment analysis and target gene selection.
+    The package is created for the rice microarray probe ID conversion.
+    This package can convert microarray probe ID from GPL6864 <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL6864>, GPL8852 <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL8852>, and GPL2025 <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL2025> platforms to RAP-DB ID. RAP-DB "The Rice Annotation Project Database" <https://rapdb.dna.affrc.go.jp> is a well-known database for rice Oryza sativa, and the gene ID in this database is widely used in many areas related to rice research.
+    For multiple probes representing a single gene, This package can merge them by taking the mean, max, or min value of these probes.
+    Or we can keep multiple probes by appending sequence numbers to duplicate the RAP-DB ID.
+License: GPL-3
+Encoding: UTF-8
+Imports: stats
+Depends: R (>= 2.10)
+RoxygenNote: 7.2.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-10-15 11:26:47 UTC; liuyo
+Author: Youming Liu [aut, cre, cph]
+Maintainer: Youming Liu <lym@g.ecc.u-tokyo.ac.jp>
+Repository: CRAN
+Date/Publication: 2022-10-17 11:55:27 UTC

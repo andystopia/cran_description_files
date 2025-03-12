@@ -1,0 +1,31 @@
+Package: Path.Analysis
+Type: Package
+Title: Path Coefficient Analysis
+Version: 0.1
+Date: 2024-9-12.
+Author: Ali Arminian [aut, cre, cph] (<https://orcid.org/0000-0003-4749-6085>)
+Authors@R: 
+    person(family="Arminian", given ="Ali", email="abeyran@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-4749-6085"))
+Maintainer: Ali Arminian <abeyran@gmail.com>
+Description: Facilitates the performance of several analyses, including simple and sequential path coefficient analysis, correlation estimate, drawing correlogram, Heatmap, and path diagram. When working with raw data, that includes one or more dependent variables along with one or more independent variables are available, the path coefficient analysis can be conducted. It allows for testing direct effects, which can be a vital indicator in path coefficient analysis. The process of preparing the dataset rule is explained in detail in the vignette file "Path.Analysis_manual.Rmd". You can find this in the folders labelled "data" and "~/inst/extdata". Also see: 1)the 'lavaan', 2)a sample of sequential path analysis in 'metan' suggested by Olivoto and Lúcio (2020) <doi:10.1111/2041-210X.13384>, 3)the simple 'PATHSAS' macro written in 'SAS' by Cramer et al. (1999) <doi:10.1093/jhered/90.1.260>, and 4)the semPlot() function of 'OpenMx' as initial tools for conducting path coefficient analyses and SEM (Structural Equation Modeling). To gain a comprehensive understanding of path coefficient analysis, both in theory and practice, see a 'Minitab' macro developed by Arminian, A. in the paper by Arminian et al. (2008) <doi:10.1080/15427520802043182>.
+License: GPL-3
+URL: https://github.com/abeyran/Path.Analysis
+BugReports: https://github.com/abeyran/Path.Analysis/issues
+Depends: R (>= 4.1.0)
+Imports: stats, corrr, corrplot, Hmisc, gplots, mathjaxr, pastecs,
+        graphics, grDevices, DiagrammeR, ComplexHeatmap, metan
+Suggests: car, ggplot2, devtools, usethis, testthat, knitr, rmarkdown,
+        roxygen2, spelling
+VignetteBuilder: knitr
+RdMacros: mathjaxr
+Encoding: UTF-8
+Copyright: Ali Arminian
+RoxygenNote: 7.3.2
+Language: en-US
+LazyData: true
+LazyLoad: true
+NeedsCompilation: no
+BuildManual: TRUE
+Packaged: 2024-09-23 19:30:28 UTC; Administrator
+Repository: CRAN
+Date/Publication: 2024-09-25 08:20:05 UTC

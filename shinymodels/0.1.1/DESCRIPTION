@@ -1,0 +1,42 @@
+Package: shinymodels
+Title: Interactive Assessments of Models
+Version: 0.1.1
+Authors@R: c(
+    person("Max", "Kuhn", , "max@posit.co", role = c("aut"),
+           comment = c(ORCID = "0000-0003-2402-136X")),
+    person("Shisham", "Adhikari", , "shadhikari@ucdavis.edu", role = "aut"),
+    person("Julia", "Silge", , "julia.silge@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0002-3671-836X")),
+    person("Simon", "Couch", , "simon.couch@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5676-5107")),
+    person(given = "Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Launch a 'shiny' application for 'tidymodels' results. For
+    classification or regression models, the app can be used to determine
+    if there is lack of fit or poorly predicted points.
+License: MIT + file LICENSE
+URL: https://shinymodels.tidymodels.org,
+        https://github.com/tidymodels/shinymodels
+BugReports: https://github.com/tidymodels/shinymodels/issues
+Depends: ggplot2, R (>= 2.10)
+Imports: dplyr, DT, generics (>= 0.1.0), glue, htmltools, magrittr,
+        parsnip, plotly, purrr, rlang, scales, shiny, shinydashboard,
+        stats, tidyr, tidyselect, tune, yardstick
+Suggests: covr, finetune, knitr, markdown, modeldata, rmarkdown,
+        shinytest, spelling, testthat (>= 3.0.0), vdiffr, withr
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.0
+NeedsCompilation: no
+Packaged: 2024-01-31 14:25:03 UTC; simoncouch
+Author: Max Kuhn [aut] (<https://orcid.org/0000-0003-2402-136X>),
+  Shisham Adhikari [aut],
+  Julia Silge [aut] (<https://orcid.org/0000-0002-3671-836X>),
+  Simon Couch [aut, cre] (<https://orcid.org/0000-0001-5676-5107>),
+  Posit Software, PBC [cph, fnd]
+Maintainer: Simon Couch <simon.couch@posit.co>
+Repository: CRAN
+Date/Publication: 2024-01-31 15:10:05 UTC

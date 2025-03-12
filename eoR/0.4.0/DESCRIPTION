@@ -1,0 +1,32 @@
+Package: eoR
+Type: Package
+Title: Data Management Package (Exposure and Occurrence Data in R)
+Version: 0.4.0
+Date: 2019-11-07
+Authors@R: c(person("Rainer", "Walke", role = c("aut", "cre"),
+    email = "walke@demogr.mpg.de", 
+    comment = c(ORCID = "0000-0002-4269-6531")))
+Description: This data management package provides some helper
+    classes for publicly available data sources (HMD, DESTATIS) in
+    Demography. Similar to ideas developed in the Bioconductor
+    project <https://bioconductor.org> we strive to encapsulate data in easy
+    to use S4 objects.
+    If original data is provided in a text file, the resulting S4
+    object contains all information from that text file. But the
+    information is somehow structured (header, footer, etc).
+    Further the classes provide methods to make a subset for selected
+    calendar years or selected regions. The resulting subset
+    objects still contain the original header and footer information.
+License: GPL-3
+URL: https://github.molgen.mpg.de/walke/eoR
+Encoding: UTF-8
+Depends: R (>= 3.2.0)
+Imports: methods, data.table
+LazyData: no
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-11-07 10:43:23 UTC; walke
+Author: Rainer Walke [aut, cre] (<https://orcid.org/0000-0002-4269-6531>)
+Maintainer: Rainer Walke <walke@demogr.mpg.de>
+Repository: CRAN
+Date/Publication: 2019-11-10 19:30:02 UTC

@@ -1,0 +1,17 @@
+Package: TTCA
+Type: Package
+Title: Transcript Time Course Analysis
+Version: 0.1.1
+Date: 2017-01-29
+Author: Marco Albrecht
+Maintainer: Marco Albrecht <marco.albrecht@posteo.de>
+Description: The analysis of microarray time series promises a deeper insight into the dynamics of the cellular response following stimulation. A common observation in this type of data is that some genes respond with quick, transient dynamics, while other genes change their expression slowly over time. The existing methods for detecting significant expression dynamics often fail when the expression dynamics show a large heterogeneity. Moreover, these methods often cannot cope with irregular and sparse measurements. The method proposed here is specifically designed for the analysis of perturbation responses. It combines different scores to capture fast and transient dynamics as well as slow expression changes, and performs well in the presence of low replicate numbers and irregular sampling times. The results are given in the form of tables including links to figures showing the expression dynamics of the respective transcript. These allow to quickly recognise the relevance of detection, to identify possible false positives and to discriminate early and late changes in gene expression. An extension of the method allows the analysis of the expression dynamics of functional groups of genes, providing a quick overview of the cellular response. The performance of this package was tested on microarray data derived from lung cancer cells stimulated with epidermal growth factor (EGF). Paper: Albrecht, Marco, et al. (2017)<DOI:10.1186/s12859-016-1440-8>.
+LazyData: TRUE
+License: EUPL
+Depends: R(>= 2.10)
+Imports: Matrix, quantreg, tcltk2, RISmed, VennDiagram, MASS
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-01-29 16:50:06 UTC; Marco Albrecht
+Repository: CRAN
+Date/Publication: 2017-01-29 18:21:13

@@ -1,0 +1,38 @@
+Package: MOST
+Type: Package
+Title: Multiphase Optimization Strategy
+Version: 0.1.2
+Authors@R: c(
+    person("Linda","Collins", email = "lmc9580@nyu.edu", role = "aut"),
+    person("Liying","Huang", email = "lxh37@PSU.EDU", role = "aut"),
+    person("John","Dziak", email = "dziakj1@gmail.com", role = c("aut","cre")))
+Depends: R (>= 2.15.0)
+Encoding: UTF-8
+Copyright: 2022 by The Pennsylvania State University
+Description: Provides functions similar to the 'SAS' macros previously provided
+              to accompany Collins, Dziak, and Li (2009) <DOI:10.1037/a0015826>
+              and Dziak, Nahum-Shani, and Collins (2012) <DOI:10.1037/a0026972>, papers
+              which outline practical benefits and challenges of factorial
+              and fractional factorial experiments for scientists interested
+              in developing biological and/or behavioral interventions, especially
+              in the context of the multiphase optimization strategy
+              (see Collins, Kugler & Gwadz 2016) <DOI:10.1007/s10461-015-1145-4>.  The package
+              currently contains three functions. First, RelativeCosts1() draws a graph
+              of the relative cost of complete and reduced factorial designs versus
+              other alternatives. Second, RandomAssignmentGenerator() returns a dataframe
+              which contains a list of random numbers that can be used to conveniently
+              assign participants to conditions in an experiment with
+              many conditions. Third, FactorialPowerPlan() estimates the power, detectable effect
+              size, or required sample size of a factorial or fractional factorial
+              experiment, for main effects or interactions, given several possible choices
+              of effect size metric, and allowing pretests and clustering.
+License: GPL (>= 2)
+NeedsCompilation: no
+RoxygenNote: 7.2.0
+Packaged: 2022-06-22 22:09:39 UTC; John
+Author: Linda Collins [aut],
+  Liying Huang [aut],
+  John Dziak [aut, cre]
+Maintainer: John Dziak <dziakj1@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-23 22:20:08 UTC

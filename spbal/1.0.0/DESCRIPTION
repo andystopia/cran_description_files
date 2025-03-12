@@ -1,0 +1,37 @@
+Package: spbal
+Type: Package
+Title: Spatially Balanced Sampling Algorithms
+Version: 1.0.0
+Authors@R: c(
+    person("Phil", "Davies", email = "philip.davies@canterbury.ac.nz", role = c("aut", "cre")),
+    person("Blair", "Robertson", email = "blair.robertson@canterbury.ac.nz", role = c("aut")),
+    person("Paul", "van Dam-Bates", email = "paul.vandambates@gmail.com", role = c("aut")),
+    person("Oliver", "Gansell", email = "ogansell@doc.govt.nz", role = c("aut")))
+Description: Encapsulates a number of spatially balanced sampling algorithms,
+    namely, Balanced Acceptance Sampling (equal, unequal, seed point, panels), Halton frames 
+    (for discretizing a continuous resource), Halton Iterative Partitioning (equal probability) 
+    and Simple Random Sampling.
+    Robertson, B. L., Brown, J. A., McDonald, T. and Jaksons, P. (2013) <doi:10.1111/biom.12059>.
+    Robertson, B. L., McDonald, T., Price, C. J. and Brown, J. A. (2017) <doi:10.1016/j.spl.2017.05.004>.
+    Robertson, B. L., McDonald, T., Price, C. J. and Brown, J. A. (2018) <doi:10.1007/s10651-018-0406-6>.
+    Robertson, B. L., van Dam-Bates, P. and Gansell, O. (2021a) <doi:10.1007/s10651-020-00481-1>.
+Depends: R (>= 3.6.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: units, sf, Rcpp
+SystemRequirements: C++17
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), bookdown, ggplot2,
+        gridExtra
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppThread
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-05-17 11:27:33 UTC; phil
+Author: Phil Davies [aut, cre],
+  Blair Robertson [aut],
+  Paul van Dam-Bates [aut],
+  Oliver Gansell [aut]
+Maintainer: Phil Davies <philip.davies@canterbury.ac.nz>
+Repository: CRAN
+Date/Publication: 2024-05-17 16:00:02 UTC

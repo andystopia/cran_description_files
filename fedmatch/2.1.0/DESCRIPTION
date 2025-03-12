@@ -1,0 +1,31 @@
+Package: fedmatch
+Title: Fast, Flexible, and User-Friendly Record Linkage Methods
+Version: 2.1.0
+Authors@R: c(person("Melanie", "Friedrichs", email = "melanie.r.friedrichs@gmail.com", role = c("aut")),
+             person("Chris", "Webster", email = "chris0webster@gmail.com", role = c("aut", "cre")),
+             person("Blake", "Marsh", email = "blake.marsh@kc.frb.org", role = c("aut")),
+             person("Jacob", "Dice", email = "Jacob.Dice@kc.frb.org", role = c("aut")),
+             person("Seung", "Lee", email = "seung.j.lee@frb.gov", role = c("aut")))
+Description: Provides a flexible set of tools for matching two un-linked data sets. 
+    'fedmatch' allows for three ways to match data: exact matches, fuzzy matches, and multi-variable matches. 
+    It also allows an easy combination of these three matches via the tier matching function.
+Depends: R (>= 3.5.3)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: stringdist, SnowballC, stringr, purrr, Rcpp, parallel,
+        forcats, data.table, magrittr, scales
+RoxygenNote: 7.3.2
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp, BH
+NeedsCompilation: yes
+Packaged: 2025-01-31 19:17:30 UTC; christopherwebster
+Author: Melanie Friedrichs [aut],
+  Chris Webster [aut, cre],
+  Blake Marsh [aut],
+  Jacob Dice [aut],
+  Seung Lee [aut]
+Maintainer: Chris Webster <chris0webster@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-31 22:40:02 UTC

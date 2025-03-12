@@ -1,0 +1,43 @@
+Package: nett
+Title: Network Analysis and Community Detection
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Arash A.",
+           family = "Amini",
+           role = c("aut","cre"),
+           email = "aaamini@ucla.edu",
+           comment = c(ORCID = "0000-0002-2808-8310")
+           ),
+      person(given = "Linfan",
+           family = "Zhang",
+           role = c("aut")))
+Description: Features tools for the network data analysis and community detection. 
+    Provides multiple methods for fitting, model selection and goodness-of-fit testing in degree-corrected stochastic blocks models. 
+    Most of the computations are fast and scalable for sparse networks, esp. for Poisson versions of the models.
+    Implements the following: 
+    Amini, Chen, Bickel and Levina (2013) <doi:10.1214/13-AOS1138>
+    Bickel and Sarkar (2015) <doi:10.1111/rssb.12117>
+    Lei (2016) <doi:10.1214/15-AOS1370>
+    Wang and Bickel (2017) <doi:10.1214/16-AOS1457>
+    Zhang and Amini (2020) <arXiv:2012.15047>
+    Le and Levina (2022) <doi:10.1214/21-EJS1971>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Suggests: testthat, knitr, rmarkdown, igraph, ggplot2, dplyr, tidyr,
+        tibble, mixtools, EnvStats, purrr, RSpectra
+Depends: R (>= 2.10)
+Imports: magrittr, Rcpp, Matrix, foreach, methods, stats, grDevices,
+        graphics
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: knitr
+URL: https://github.com/aaamini/nett
+BugReports: https://github.com/aaamini/nett/issues
+NeedsCompilation: yes
+Packaged: 2022-11-08 04:01:28 UTC; linfanzhang
+Author: Arash A. Amini [aut, cre] (<https://orcid.org/0000-0002-2808-8310>),
+  Linfan Zhang [aut]
+Maintainer: Arash A. Amini <aaamini@ucla.edu>
+Repository: CRAN
+Date/Publication: 2022-11-09 10:50:05 UTC

@@ -1,0 +1,34 @@
+Package: nos
+Type: Package
+Title: Compute Node Overlap and Segregation in Ecological Networks
+Version: 2.0.0
+Authors@R: c(
+    person("Thomas", "Matthews", 
+    email = "txm676@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7624-244X")),
+    person("Giovanni", "Strona", role = "aut",
+           comment = c(ORCID = "0000-0003-2294-4013")))
+Description: Calculate NOS (node overlap and segregation) and
+    the associated metrics described in Strona and Veech (2015)
+    <doi:10.1111/2041-210X.12395> and Strona et al. (2018) 
+    <doi:10.1111/ecog.03447>. The functions provided in the 
+    package enable assessment of structural patterns ranging from
+    complete node segregation to perfect nestedness in a variety 
+    of network types. In addition, they provide a measure of 
+    network modularity.  
+License: GPL (>= 3)
+URL: https://github.com/txm676/nos
+BugReports: https://github.com/txm676/nos/issues
+Imports: dplyr, gmp, stats, bipartite
+Depends: R(>= 4.1.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2024-03-21 18:15:58 UTC; Tom
+Author: Thomas Matthews [aut, cre] (<https://orcid.org/0000-0002-7624-244X>),
+  Giovanni Strona [aut] (<https://orcid.org/0000-0003-2294-4013>)
+Maintainer: Thomas Matthews <txm676@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-22 19:40:02 UTC

@@ -1,0 +1,34 @@
+Package: RMCC
+Type: Package
+Title: Airborne LiDAR Filtering Method Based on Multiscale Curvature
+Version: 0.1.1
+Authors@R: c(
+    person("Jean-Romain", "Roussel", email = "jean-romain.roussel.1@ulaval.ca", role = c("aut", "cre")),
+    person("Evans", "Jeffrey S", email = "", role = c("aut")),
+    person("Hudak", "Andrew T", email = "", role = c("aut")),
+    person("Green Code LLC", email = "", role = c("cph"), comment = "Author of the mcc code under US federally funded contract"),
+    person("Jarno", "Elonen", email = "", role = c("cph"), comment = "Author of the included thin plate spline library"),
+    person("Thomas", "Becker", email = "", role = c("cph"), comment = "Author of the included any_iterator library"))
+Description: Multiscale Curvature Classification of ground returns in 3-D LiDAR 
+    point clouds, designed for forested environments. 'RMCC' is a porting to R of the 
+    'MCC-lidar' method by Evans and Hudak (2007) <doi:10.1109/TGRS.2006.890412>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+LinkingTo: Rcpp, BH
+Imports: Rcpp
+Depends: R (>= 2.10)
+Suggests: tinytest
+NeedsCompilation: yes
+Packaged: 2024-07-04 00:30:27 UTC; jr
+Author: Jean-Romain Roussel [aut, cre],
+  Evans Jeffrey S [aut],
+  Hudak Andrew T [aut],
+  Green Code LLC [cph] (Author of the mcc code under US federally funded
+    contract),
+  Jarno Elonen [cph] (Author of the included thin plate spline library),
+  Thomas Becker [cph] (Author of the included any_iterator library)
+Maintainer: Jean-Romain Roussel <jean-romain.roussel.1@ulaval.ca>
+Repository: CRAN
+Date/Publication: 2024-07-04 06:30:02 UTC

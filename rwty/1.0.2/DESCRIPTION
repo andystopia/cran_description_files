@@ -1,0 +1,35 @@
+Package: rwty
+Type: Package
+Title: R We There Yet? Visualizing MCMC Convergence in Phylogenetics
+Version: 1.0.2
+Authors@R: c(person(given = "Dan", family = "Warren", role = c("aut", "cre"), email = "dan.l.warren@gmail.com"),
+              person(given = "Anthony", family = "Geneva", role = "aut", email = "anthony.geneva@gmail.com"),
+              person(given = "Rob", family = "Lanfear", role = "aut", email = "rob.lanfear@gmail.com"),
+              person(given = "Luke", family = "Harmon", role = "ctb"),
+              person(given = "April", family = "Wright", role = "ctb"),
+              person(given = "Diego", family = "Mallo", role = "ctb"),
+              person(given = "Klaus", family = "Schliep", role = "ctb")
+              )
+Description: Implements various tests, visualizations, and metrics
+    for diagnosing convergence of MCMC chains in phylogenetics.  It implements
+    and automates many of the functions of the AWTY package in the R
+    environment.
+License: GPL-2
+Depends: R (>= 3.3.0), ape, ggplot2,
+Imports: reshape2, phangorn, coda, viridis, grid, plyr, ggdendro,
+        GGally, parallel,
+Suggests: knitr, testthat, rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-04 09:23:09 UTC; dwarren
+Author: Dan Warren [aut, cre],
+  Anthony Geneva [aut],
+  Rob Lanfear [aut],
+  Luke Harmon [ctb],
+  April Wright [ctb],
+  Diego Mallo [ctb],
+  Klaus Schliep [ctb]
+Maintainer: Dan Warren <dan.l.warren@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-15 15:10:03 UTC

@@ -1,0 +1,53 @@
+Package: CTNote
+Title: CTN Outcomes, Treatments, and Endpoints
+Description: The Clinical Trials Network (CTN) of the U.S. National Institute
+  of Drug Abuse sponsored the CTN-0094 research team to harmonize data sets
+  from three nationally-representative clinical trials for opioid use disorder
+  (OUD). The CTN-0094 team herein provides a coded collection of trial outcomes
+  and endpoints used in various OUD clinical trials over the past 50 years.
+  These coded outcome functions are used to contrast and cluster different
+  clinical outcome functions based on daily or weekly patient urine screenings.
+  Note that we abbreviate urine drug screen as "UDS" and urine opioid screen as
+  "UOS". For the example data sets (based on clinical trials data harmonized by
+  the CTN-0094 research team), UDS and UOS are largely interchangeable.
+Version: 0.1.0
+Authors@R: 
+  c(
+    person(
+      given = "Gabriel", family = "Odom", email = "gabriel.odom@fiu.edu",
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1341-4555")
+    ),
+    person(
+      given = "Laura", family = "Brandt", email = "lbrandt@ccny.cuny.edu",
+      role = c("aut"), comment = c(ORCID = "0000-0001-7551-221X")
+    ),
+    person(
+      given = "Raymond", family = "Balise", email = "balise@miami.edu",
+      role = c("aut"), comment = c(ORCID = "0000-0002-9856-5901")
+    ),
+    person(
+      given = "Layla", family = "Bouzoubaa", email = "lab218@miami.edu",
+      role = c("ctb"), comment = c(ORCID = "0000-0002-6616-0950")
+    )
+  )
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Depends: R (>= 3.1.0)
+Imports: stringi, stringr
+Suggests: ape, kableExtra, knitr, readxl, rmarkdown, survival, testthat
+        (>= 3.0.0), tidyverse
+VignetteBuilder: knitr
+LazyData: true
+Config/testthat/edition: 3
+URL: https://ctn-0094.github.io/CTNote/
+BugReports: https://github.com/CTN-0094/CTNote/issues
+NeedsCompilation: no
+Packaged: 2022-10-01 16:46:55 UTC; gabrielodom
+Author: Gabriel Odom [aut, cre] (<https://orcid.org/0000-0003-1341-4555>),
+  Laura Brandt [aut] (<https://orcid.org/0000-0001-7551-221X>),
+  Raymond Balise [aut] (<https://orcid.org/0000-0002-9856-5901>),
+  Layla Bouzoubaa [ctb] (<https://orcid.org/0000-0002-6616-0950>)
+Maintainer: Gabriel Odom <gabriel.odom@fiu.edu>
+Repository: CRAN
+Date/Publication: 2022-10-03 07:30:04 UTC

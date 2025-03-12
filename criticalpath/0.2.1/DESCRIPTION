@@ -1,0 +1,50 @@
+Package: criticalpath
+Title: An Implementation of the Critical Path Method
+Version: 0.2.1
+Authors@R: c(
+    person("Rubens Jose", "Rosa", role=c("aut", "cre"), email = "rubens@rubensjoserosa.com"),
+    person("Marcos", "dos Santos", role="aut", email="marcosdossantos@ime.eb.br"),
+    person("Thiago", "Marques", role="aut", email="profestathimarques@gmail.com"))
+Author: Rubens Jose Rosa [aut, cre],
+  Marcos dos Santos [aut],
+  Thiago Marques [aut]
+Maintainer: Rubens Jose Rosa <rubens@rubensjoserosa.com>
+URL: https://rubensjoserosa.com/criticalpath,
+        https://github.com/rubens2005/criticalpath
+BugReports: https://github.com/rubens2005/criticalpath/issues
+Description: 
+    An R implementation of the Critical Path Method (CPM).
+    CPM is a method used to estimate the minimum project duration and determine 
+    the amount of scheduling flexibility on the logical network paths within the 
+    schedule model. The flexibility is in terms of early start, early finish, 
+    late start, late finish, total float and free float. Beside, it permits 
+    to quantify the complexity of network diagram through the analysis of 
+    topological indicators. Finally, it permits to change the activities duration 
+    to perform what-if scenario analysis. The package was built based on following 
+    references: To make topological sorting and other graph operation, we use 
+    Csardi, G. & Nepusz, T. (2005) 
+    <https://www.researchgate.net/publication/221995787_The_Igraph_Software_Package_for_Complex_Network_Research>;
+    For schedule concept, the reference was Project Management Institute (2017) 
+    <https://www.pmi.org/pmbok-guide-standards/foundational/pmbok>;
+    For standards terms, we use Project Management Institute (2017) 
+    <https://www.pmi.org/pmbok-guide-standards/lexicon>;
+    For algorithms on Critical Path Method development, we use 
+    Vanhoucke, M. (2013) <doi:10.1007/978-3-642-40438-2> and 
+    Vanhoucke, M. (2014) <doi:10.1007/978-3-319-04331-9>; 
+    And, finally, for topological definitions, we use
+    Vanhoucke, M. (2009) <doi:10.1007/978-1-4419-1014-1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: dplyr, igraph, magrittr, R6, stringr, tibble
+Suggests: DiagrammeR, knitr, rmarkdown, testthat
+Collate: 'Schedule.R' 'utils-pipe.R' 'criticalpath.R'
+        'cpt_calculate_critical_path.R' 'cpt_schedule_status.R'
+        'cpt_topological_organization.R' 'cpt_utils.R' 'sch_activity.R'
+        'sch_relation.R' 'sch_schedule.R'
+        'sch_topological_indicators.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-03-13 21:54:06 UTC; Rubens Rosa
+Repository: CRAN
+Date/Publication: 2022-03-13 22:40:10 UTC

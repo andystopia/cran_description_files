@@ -1,0 +1,40 @@
+Package: rpostgis
+Version: 1.6.0
+Date: 2024-12-05
+Title: R Interface to a 'PostGIS' Database
+Description: Provides an interface between R and 'PostGIS'-enabled
+    'PostgreSQL' databases to transparently transfer spatial
+    data. Both vector (points, lines, polygons) and raster data are
+    supported in read and write modes. Also provides convenience
+    functions to execute common procedures in 'PostgreSQL/PostGIS'.
+Authors@R: c(
+    person("Adrian", "Cidre Gonzalez", 
+    email = "adrian.cidre@gmail.com", 
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-3310-3052")),
+    person("Mathieu", "Basille", email = "mathieu@basille.org", 
+    role = c("aut"), 
+    comment = c(ORCID = "0000-0001-9366-7127")),
+    person("David", "Bucklin", 
+    email = "david.bucklin@gmail.com", 
+    role = c("aut")))
+SystemRequirements: 'PostgreSQL' with 'PostGIS' extension
+Depends: R (>= 3.3.0), RPostgreSQL, DBI (>= 0.5)
+Imports: methods, sf, stats, terra (>= 1.6.7), cli, lifecycle
+Suggests: RPostgres, testthat (>= 3.0.0), sp, raster
+License: GPL (>= 3)
+URL: https://cidree.github.io/rpostgis/,
+        https://github.com/Cidree/rpostgis
+BugReports: https://github.com/Cidree/rpostgis/issues
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-12-05 18:32:51 UTC; Cidre
+Author: Adrian Cidre Gonzalez [aut, cre]
+    (<https://orcid.org/0000-0002-3310-3052>),
+  Mathieu Basille [aut] (<https://orcid.org/0000-0001-9366-7127>),
+  David Bucklin [aut]
+Maintainer: Adrian Cidre Gonzalez <adrian.cidre@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-06 10:20:02 UTC

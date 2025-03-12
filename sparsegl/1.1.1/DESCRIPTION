@@ -1,0 +1,61 @@
+Type: Package
+Package: sparsegl
+Title: Sparse Group Lasso
+Version: 1.1.1
+Authors@R: c(
+    person("Daniel J.", "McDonald", , "daniel@stat.ubc.ca", role = c("aut", "cre")),
+    person("Xiaoxuan", "Liang", , "xiaoxuan.liang@stat.ubc.ca", role = "aut"),
+    person("Anibal", "Solón Heinsfeld", , "anibalsolon@gmail.com", role = "aut"),
+    person("Aaron", "Cohen", , "cohenaa@indiana.edu", role = "aut"),
+    person("Yi", "Yang", , "yi.yang6@mcgill.ca", role = "ctb"),
+    person("Hui", "Zou", role = "ctb"),
+    person("Jerome", "Friedman", role = "ctb"),
+    person("Trevor", "Hastie", role = "ctb"),
+    person("Rob", "Tibshirani", role = "ctb"),
+    person("Balasubramanian", "Narasimhan", role = "ctb"),
+    person("Kenneth", "Tay", role = "ctb"),
+    person("Noah", "Simon", role = "ctb"),
+    person("Junyang", "Qian", role = "ctb"),
+    person("James", "Yang", role = "ctb")
+  )
+Description: Efficient implementation of sparse group lasso with optional
+    bound constraints on the coefficients; see
+    <doi:10.18637/jss.v110.i06>.  It supports the use of a sparse design
+    matrix as well as returning coefficient estimates in a sparse matrix.
+    Furthermore, it correctly calculates the degrees of freedom to allow
+    for information criteria rather than cross-validation with very large
+    data. Finally, the interface to compiled code avoids unnecessary
+    copies and allows for the use of long integers.
+License: MIT + file LICENSE
+URL: https://github.com/dajmcdon/sparsegl,
+        https://dajmcdon.github.io/sparsegl/
+BugReports: https://github.com/dajmcdon/sparsegl/issues
+Depends: R (>= 3.5)
+Imports: cli, dotCall64, ggplot2, magrittr, Matrix, methods, rlang,
+        RSpectra, tidyr
+Suggests: dplyr, gglasso, glmnet, knitr, markdown, rmarkdown, splines,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+Packaged: 2024-08-24 18:25:26 UTC; dajmcdon
+Author: Daniel J. McDonald [aut, cre],
+  Xiaoxuan Liang [aut],
+  Anibal Solón Heinsfeld [aut],
+  Aaron Cohen [aut],
+  Yi Yang [ctb],
+  Hui Zou [ctb],
+  Jerome Friedman [ctb],
+  Trevor Hastie [ctb],
+  Rob Tibshirani [ctb],
+  Balasubramanian Narasimhan [ctb],
+  Kenneth Tay [ctb],
+  Noah Simon [ctb],
+  Junyang Qian [ctb],
+  James Yang [ctb]
+Maintainer: Daniel J. McDonald <daniel@stat.ubc.ca>
+Repository: CRAN
+Date/Publication: 2024-08-24 23:10:02 UTC

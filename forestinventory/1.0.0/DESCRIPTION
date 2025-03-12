@@ -1,0 +1,39 @@
+Package: forestinventory
+Type: Package
+Title: Design-Based Global and Small-Area Estimations for Multiphase
+        Forest Inventories
+Version: 1.0.0
+Date: 2021-01-08
+Authors@R: c(person(given = c("Andreas"), family = "Hill",
+                     email = "andreas.hill@wald-rlp.de", role = c("aut","cre")),
+              person(given = c("Alexander"), family = "Massey",
+                      email = "stats.massey@gmail.com", role = c("aut")),
+              person(given = c("Daniel"), family = "Mandallaz",
+                    email = "mdaniel@retired.ethz.ch", role = c("ctb"))
+              )
+Maintainer: Andreas Hill <andreas.hill@wald-rlp.de>
+Description: Extensive global and small-area estimation procedures for multiphase
+    forest inventories under the design-based Monte-Carlo approach are provided.
+    The implementation has been published in the Journal of Statistical Software (<doi:10.18637/jss.v097.i04>) 
+    and includes estimators for simple and cluster sampling
+    published by Daniel Mandallaz in 2007 (<doi:10.1201/9781584889779>),
+    2013 (<doi:10.1139/cjfr-2012-0381>, <doi:10.1139/cjfr-2013-0181>,
+    <doi:10.1139/cjfr-2013-0449>, <doi:10.3929/ethz-a-009990020>)
+    and 2016 (<doi:10.3929/ethz-a-010579388>). It provides point estimates,
+    their external- and design-based variances and confidence intervals, as well as a
+    set of functions to analyze and visualize the produced estimates.
+    The procedures have also been optimized for the use of remote sensing data
+    as auxiliary information, as demonstrated in 2018 by Hill et al. (<doi:10.3390/rs10071052>).
+License: GPL (>= 2)
+LazyData: TRUE
+Imports: methods, stats, utils, plyr (>= 1.8.6), tidyr, ggplot2
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-01-08 09:27:51 UTC; Andi
+Author: Andreas Hill [aut, cre],
+  Alexander Massey [aut],
+  Daniel Mandallaz [ctb]
+Repository: CRAN
+Date/Publication: 2021-01-08 11:00:05 UTC

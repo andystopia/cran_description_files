@@ -1,0 +1,32 @@
+Package: rsurveycto
+Type: Package
+Title: Interact with Data on 'SurveyCTO'
+Version: 0.2.1
+Authors@R: c(
+  person('Jake', 'Hughey', , 'jake@agency.fund', c('aut', 'cre')),
+  person('Robert', 'On', , 'robert@agency.fund', 'aut'))
+Description: 'SurveyCTO' is a platform for mobile data collection in offline settings.
+  The 'rsurveycto' R package uses the 'SurveyCTO' REST API
+  <https://docs.surveycto.com/05-exporting-and-publishing-data/05-api-access/01.api-access.html>
+  to read datasets and forms from a 'SurveyCTO' server into R as 'data.table's
+  and to download file attachments. The package also has limited support to
+  write datasets to a server.
+URL: https://agency-fund.github.io/rsurveycto/,
+        https://github.com/agency-fund/rsurveycto
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1)
+Imports: checkmate (>= 2.3.2), cli (>= 3.6.3), curl (>= 5.2.1),
+        data.table (>= 1.15.4), glue (>= 1.7.0), httr (>= 1.4.7),
+        jsonlite (>= 1.8.8), lifecycle (>= 1.0.4), readxl (>= 1.4.3),
+        rlang (>= 1.1.4), vctrs (>= 0.6.5), withr (>= 3.0.1)
+Suggests: knitr, rmarkdown, testthat (>= 3.2.1.1)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-03 22:15:46 UTC; jakehughey
+Author: Jake Hughey [aut, cre],
+  Robert On [aut]
+Maintainer: Jake Hughey <jake@agency.fund>
+Repository: CRAN
+Date/Publication: 2024-09-03 22:40:03 UTC

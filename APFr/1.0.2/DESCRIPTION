@@ -1,0 +1,31 @@
+Package: APFr
+Type: Package
+Title: Multiple Testing Approach using Average Power Function (APF) and
+        Bayes FDR Robust Estimation
+Version: 1.0.2
+Date: 2019-06-14
+Authors@R: c(person("Nicolò", "Margaritella", email =
+    "N.Margaritella@sms.ed.ac.uk", role = c("cre", "aut")),
+    person("Piero", "Quatto", role = "aut"))
+Author: Nicolò Margaritella [cre, aut],
+  Piero Quatto [aut]
+Maintainer: Nicolò Margaritella <N.Margaritella@sms.ed.ac.uk>
+Depends: R (>= 3.5.0)
+Imports: stats (>= 3.5.2), graphics (>= 3.5.2)
+Description: Implements a multiple testing approach to the
+    choice of a threshold gamma on the p-values using the
+    Average Power Function (APF) and Bayes False Discovery
+    Rate (FDR) robust estimation. Function apf_fdr() 
+    estimates both quantities from either raw data or
+    p-values. Function apf_plot() produces smooth graphs 
+    and tables of the relevant results. Details of the methods
+    can be found in Quatto P, Margaritella N, et al. (2019) 
+    <doi:10.1177/0962280219844288>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-06-17 07:49:35 UTC; Nico
+Repository: CRAN
+Date/Publication: 2019-06-18 12:20:07 UTC

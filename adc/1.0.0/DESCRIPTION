@@ -1,0 +1,34 @@
+Type: Package
+Package: adc
+Title: Calculate Antecedent Discharge Conditions
+Version: 1.0.0
+Authors@R: c(
+    person("Michael", "Schramm", , "mpschramm@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-1876-6592")),
+    person("Nick", "Bond", role = "ctb",
+           comment = "Author of the hydrostats::baseflow function")
+  )
+Maintainer: Michael Schramm <mpschramm@gmail.com>
+Description: Calculates some antecedent discharge conditions useful in
+    water quality modeling. Includes methods for calculating flow
+    anomalies, base flow, and smooth discounted flows from daily flow
+    measurements. Antecedent discharge algorithms are described and
+    reviewed in Zhang and Ball (2017) <doi:10.1016/j.jhydrol.2016.12.052>.
+License: GPL (>= 3)
+URL: https://github.com/TxWRI/adc, https://txwri.github.io/adc/
+BugReports: https://github.com/TxWRI/adc/issues
+Depends: R (>= 2.10)
+Imports: runner, stats
+Suggests: covr, testthat (>= 3.0.0)
+Config/Needs/website: TxWRI/twriTemplates
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2023-02-16 19:27:34 UTC; michael.schramm
+Author: Michael Schramm [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1876-6592>),
+  Nick Bond [ctb] (Author of the hydrostats::baseflow function)
+Repository: CRAN
+Date/Publication: 2023-02-17 10:10:02 UTC

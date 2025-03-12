@@ -1,0 +1,39 @@
+Package: SGDinference
+Type: Package
+Title: Inference with Stochastic Gradient Descent
+Version: 0.1.0
+Authors@R: c(
+    person("Sokbae", "Lee", email = "sl3841@columbia.edu", role = "aut"),
+    person("Yuan", "Liao", email = "yuan.liao@rutgers.edu", role = "aut"),
+    person("Myung Hwan", "Seo", email = "myunghseo@snu.ac.kr", role = "aut"),
+    person("Youngki", "Shin", email = "shiny11@mcmaster.ca", role = c("aut", "cre")))
+Description: Estimation and inference methods for large-scale mean and quantile regression models via stochastic (sub-)gradient descent (S-subGD) algorithms. 
+    The inference procedure handles cross-sectional data sequentially: 
+    (i) updating the parameter estimate with each incoming "new observation", 
+    (ii) aggregating it as a Polyak-Ruppert average, and 
+    (iii) computing an asymptotically pivotal statistic for inference through random scaling. 
+    The methodology used in the 'SGDinference' package is described in detail in the following papers: 
+    (i) Lee, S., Liao, Y., Seo, M.H. and Shin, Y. (2022) <doi:10.1609/aaai.v36i7.20701> "Fast and robust online inference with stochastic gradient descent via random scaling".
+    (ii) Lee, S., Liao, Y., Seo, M.H. and Shin, Y. (2023) <arXiv:2209.14502> "Fast Inference for Quantile Regression with Tens of Millions of Observations". 
+License: GPL-3
+Imports: stats, Rcpp (>= 1.0.5)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), lmtest (>= 0.9),
+        sandwich (>= 3.0), microbenchmark (>= 1.4), conquer (>= 1.3.3)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+LazyData: true
+URL: https://github.com/SGDinference-Lab/SGDinference/
+BugReports: https://github.com/SGDinference-Lab/SGDinference/issues
+NeedsCompilation: yes
+Packaged: 2023-11-16 15:30:15 UTC; yshin
+Author: Sokbae Lee [aut],
+  Yuan Liao [aut],
+  Myung Hwan Seo [aut],
+  Youngki Shin [aut, cre]
+Maintainer: Youngki Shin <shiny11@mcmaster.ca>
+Repository: CRAN
+Date/Publication: 2023-11-16 20:43:54 UTC

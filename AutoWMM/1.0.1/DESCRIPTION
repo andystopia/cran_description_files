@@ -1,0 +1,23 @@
+Package: AutoWMM
+Type: Package
+Title: Perform the Weighted Multiplier Method on Trees
+Version: 1.0.1
+Authors@R: person("Mallory J", "Flynn", email = "mallory.flynn@stat.ubc.ca", role = c("cre", "aut"))
+Maintainer: Mallory J Flynn <mallory.flynn@stat.ubc.ca>
+Description: When many possible multiplier method estimates of a target population are available, a weighted sum of estimates from each back-calculated path can be achieved with this package.  Variance-minimizing weights are used and with any admissible tree-structured data.  The methodological basis used to create this package can be found in Flynn (2023) <http://hdl.handle.net/2429/86174>.
+License: GPL (>= 2)
+URL: https://github.com/malfly/AutoWMM
+Depends: R (>= 4.3.0)
+Imports: data.tree, DiagrammeR, dplyr, gtools, MASS, rlang, magrittr,
+        tidyselect
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-10-22 16:37:36 UTC; mallory
+Author: Mallory J Flynn [cre, aut]
+Repository: CRAN
+Date/Publication: 2024-10-24 15:10:10 UTC

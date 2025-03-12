@@ -1,0 +1,32 @@
+Package: mcgf
+Title: Markov Chain Gaussian Fields Simulation and Parameter Estimation
+Version: 1.1.1
+Authors@R: 
+    person("Tianxia", "Jia", , "tianxia.jia@ucalgary.ca", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0001-5430-5019"))
+Description: Simulating and estimating (regime-switching) Markov chain Gaussian 
+    fields with covariance functions of the Gneiting class (Gneiting 2002) 
+    <doi:10.1198/016214502760047113>. It supports parameter estimation by 
+    weighted least squares and maximum likelihood methods, and produces Kriging 
+    forecasts and intervals for existing and new locations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), doParallel (>= 1.0.17), foreach (>=
+        1.5.2), parallel (>= 4.3.1), knitr, rmarkdown, lubridate,
+        dplyr, Rsolnp
+Config/testthat/edition: 3
+Imports: MASS, sp
+Depends: R (>= 4.0.0)
+LazyData: true
+URL: https://github.com/tianxia-jia/mcgf,
+        https://tianxia-jia.github.io/mcgf/
+BugReports: https://github.com/tianxia-jia/mcgf/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-28 23:16:56 UTC; tylar
+Author: Tianxia Jia [aut, cre, cph] (<https://orcid.org/0000-0001-5430-5019>)
+Maintainer: Tianxia Jia <tianxia.jia@ucalgary.ca>
+Repository: CRAN
+Date/Publication: 2024-06-29 06:40:17 UTC

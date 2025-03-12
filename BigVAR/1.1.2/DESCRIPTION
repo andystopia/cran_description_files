@@ -1,0 +1,32 @@
+Package: BigVAR
+Type: Package
+Title: Dimension Reduction Methods for Multivariate Time Series
+Version: 1.1.2
+Authors@R: c(
+    person("Will", "Nicholson", email = "wbn8@cornell.edu", role = c("cre","aut")),
+    person("David", "Matteson", email = "matteson@cornell.edu", role = "aut"),
+    person("Jacob", "Bien", email = "jbien@usc.edu", role = "aut"),
+	person("Ines", "Wilms", email = "i.wilms@maastrichtuniversity.nl", role = "aut"))
+Maintainer: Will Nicholson <wbn8@cornell.edu>
+Date: 2023-01-09
+Description: Estimates VAR and VARX models with Structured Penalties using the methods developed by Nicholson et al (2017)<doi:10.1016/j.ijforecast.2017.01.003> and Nicholson et al (2020) <doi:10.48550/arXiv.1412.5250>.
+Depends: R (>= 3.5.0), methods, lattice
+Imports: MASS, zoo, Rcpp, stats, utils, grDevices, graphics, abind
+License: GPL (>= 2)
+LazyLoad: yes
+SystemRequirements: C++11
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen
+URL: https://github.com/wbnicholson/BigVAR
+BugReports: https://github.com/wbnicholson/BigVAR/issues
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, gridExtra, expm, MCS, quantmod, codetools
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-01-09 13:00:27 UTC; will
+Author: Will Nicholson [cre, aut],
+  David Matteson [aut],
+  Jacob Bien [aut],
+  Ines Wilms [aut]
+Repository: CRAN
+Date/Publication: 2023-01-09 14:43:19 UTC

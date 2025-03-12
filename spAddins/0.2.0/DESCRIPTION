@@ -1,0 +1,36 @@
+Package: spAddins
+Type: Package
+Title: A Set of RStudio Addins
+Version: 0.2.0
+Date: 2017-12-14
+Authors@R: person("Vilmantas", "Gegzna",
+                    email = "GegznaV@gmail.com",
+                    role = c("aut", "cre","cph")
+            )
+Description: A set of RStudio addins that are designed to be used in
+             combination with user-defined RStudio keyboard shortcuts. These
+             addins either:
+             1) insert text at a cursor position (e.g. insert
+             operators %>%, <<-, %$%, etc.),
+             2) replace symbols in selected pieces of text (e.g., convert
+             backslashes to forward slashes which results in stings like
+             "c:\data\" converted into "c:/data/") or
+             3) enclose text with special symbols (e.g., converts "bold" into
+             "**bold**") which is convenient for editing R Markdown files.
+URL: https://github.com/GegznaV/spAddins
+BugReports: https://github.com/GegznaV/spAddins/issues
+License: MIT + file LICENSE
+LazyData: TRUE
+ByteCompile: TRUE
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Depends: R (>= 3.2)
+Imports: rstudioapi, magrittr, stringr, purrr
+Suggests: knitr, rmarkdown, rebus
+NeedsCompilation: no
+Packaged: 2017-12-14 18:42:02 UTC; ViG
+Author: Vilmantas Gegzna [aut, cre, cph]
+Maintainer: Vilmantas Gegzna <GegznaV@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-12-14 18:50:02 UTC

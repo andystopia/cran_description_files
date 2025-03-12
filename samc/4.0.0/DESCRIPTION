@@ -1,0 +1,65 @@
+Package: samc
+Type: Package
+Title: Spatial Absorbing Markov Chains
+Version: 4.0.0
+Authors@R: c(
+    person("Andrew", "Marx", , "ajm.rpackages@gmail.com", role = c("aut", "cre", "cph"), 
+      comment = c(ORCID = "0000-0002-7456-1631")
+    ),
+    person("Robert", "Fletcher", , , role = c("ctb"),
+      comment = c(ORCID = "0000-0003-1717-5707")
+    ),
+    person("Miguel", "Acevedo", , , role = c("ctb"),
+      comment = c(ORCID = "0000-0002-8289-1497")
+    ),
+    person("Jorge", "Sefair", , , role = c("ctb"),
+      comment = c(ORCID = "0000-0002-5887-8938")
+    ),
+    person("Chao", "Wang", , , role = c("ctb"),
+      comment = c(ORCID = "0000-0003-2706-5122")
+    ),
+    person("Hughes", "Josie", , , role = c("ctb"),
+      comment = c(ORCID = "0000-0001-7875-9015")
+    ),
+    person("Barrett", "Griffin", , , role = c("ctb"))
+    )
+Description: Implements functions for working with absorbing Markov chains. The
+    implementation is based on the framework described in "Toward a unified
+    framework for connectivity that disentangles movement and mortality in space
+    and time" by Fletcher et al. (2019) <doi:10.1111/ele.13333>, which applies
+    them to spatial ecology. This framework incorporates both resistance and 
+    absorption with spatial absorbing Markov chains (SAMC) to provide several
+    short-term and long-term predictions for metrics related to connectivity in 
+    landscapes. Despite the ecological context of the framework, this package
+    can be used in any application of absorbing Markov chains.
+License: AGPL (>= 3)
+URL: https://andrewmarx.github.io/samc/
+BugReports: https://github.com/andrewmarx/samc/issues/
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: methods, Matrix (>= 1.5-3), raster, terra (>= 1.7-3), circular
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat, gdistance, viridisLite
+VignetteBuilder: knitr
+Collate: 'RcppExports.R' 'location-class.R' 'internal-classes.R'
+        'samc-class.R' 'absorption.R' 'check.R' 'cond_passage.R'
+        'data.R' 'visitation.R' 'dispersal.R' 'distribution.R'
+        'generics.R' 'internal-data.R' 'internal-functions.R'
+        'internal-utils.R' 'internal-validation.R' 'locate.R' 'map.R'
+        'mortality.R' 'pairwise.R' 'rasterize.R' 'samc.R' 'survival.R'
+        'zzz.R'
+LinkingTo: Rcpp (>= 1.0.10), RcppEigen (>= 0.3.3.9.3), RcppThread (>=
+        2.1.3)
+NeedsCompilation: yes
+Packaged: 2024-10-30 22:17:23 UTC; andrewjmarx
+Author: Andrew Marx [aut, cre, cph] (<https://orcid.org/0000-0002-7456-1631>),
+  Robert Fletcher [ctb] (<https://orcid.org/0000-0003-1717-5707>),
+  Miguel Acevedo [ctb] (<https://orcid.org/0000-0002-8289-1497>),
+  Jorge Sefair [ctb] (<https://orcid.org/0000-0002-5887-8938>),
+  Chao Wang [ctb] (<https://orcid.org/0000-0003-2706-5122>),
+  Hughes Josie [ctb] (<https://orcid.org/0000-0001-7875-9015>),
+  Barrett Griffin [ctb]
+Maintainer: Andrew Marx <ajm.rpackages@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-30 22:40:02 UTC

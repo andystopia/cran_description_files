@@ -1,0 +1,35 @@
+Package: GENEAclassify
+Type: Package
+Title: Segmentation and Classification of Accelerometer Data
+Version: 1.5.5
+Date: 2024-02-07
+Authors@R: c(
+            person("Chris", "Campbell", role = "aut", email = "ccampbell@mango-solutions.com"),
+            person("Aimee", "Gott", role = "aut", email = "agott@mango-solutions.com"),
+            person("Joss", "Langford", role = "aut", email = "joss@activinsights.co.uk"),
+            person("Charles", "Sweetland", role = "aut", email = "charles@springhead-data.com"),
+            person("Penny", "Sweetland", role = c("aut"), email = "penny@springhead-data.com"),
+            person("Jia Ying", "Chua", role = c("aut","cre"), email = "jiayingc@activinsights.com"),
+            person("Activinsights Ltd", role = "cph", email = "info@activinsights.com")
+            )
+Author: Chris Campbell [aut],
+  Aimee Gott [aut],
+  Joss Langford [aut],
+  Charles Sweetland [aut],
+  Penny Sweetland [aut],
+  Jia Ying Chua [aut, cre],
+  Activinsights Ltd [cph]
+Description: Segmentation and classification procedures for data from the 'Activinsights GENEActiv' <https://activinsights.com/technology/geneactiv/> accelerometer that provides the user with a model to guess behaviour from test data where behaviour is missing.
+    Includes a step counting algorithm, a function to create segmented data with custom features and a function to use recursive partitioning provided in the function rpart() of the 'rpart' package to create classification models.
+License: GPL
+LazyData: true
+Depends: R (>= 2.14.0), methods, utils, grDevices, MASS, GENEAread,
+        changepoint, signal, rpart
+Suggests: waveslim, knitr, rmarkdown
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-02-08 09:10:29 UTC; JiaYingChua
+Maintainer: Jia Ying Chua <jiayingc@activinsights.com>
+Repository: CRAN
+Date/Publication: 2024-02-19 19:30:02 UTC

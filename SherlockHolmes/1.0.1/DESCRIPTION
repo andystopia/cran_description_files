@@ -1,0 +1,25 @@
+Package: SherlockHolmes
+Version: 1.0.1
+Date: 2023-03-28
+Title: Building a Concordance of Terms in a Series of Texts
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+LazyData: true
+Imports: qpdf, stringr, dpseg, tableHTML, plotrix, zoo, stargazer,
+        utils, graphics, grDevices, stats, textBoxPlacement,
+        plot.matrix, devtools
+Description: Compute the frequency distribution of a search term in a series of texts. For example, Arthur Conan Doyle wrote a total of 60 Sherlock Holmes stories, comprised of 54 short stories and 4 longer novels. I wanted to test my own subjective impression that, in many of the stories, Sherlock Holmes' popularity was used as bait to induce the reader to read a story that is essentially not primarily a Sherlock Holmes story. I used the term "Holmes" as a search pattern, since Watson would frequently address him by name, or use his name to describe something that he was doing. My hypothesis is that the frequency distribution of the search pattern "Holmes" is a good proxy for the degree to which a story is or is not truly a Sherlock Holmes story. The results are presented in a manuscript that is available as a vignette and online at <https://barryzee.github.io/Concordance/index.html>.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-03-28 11:01:09 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2023-03-28 14:40:06 UTC

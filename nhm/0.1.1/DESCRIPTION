@@ -1,0 +1,19 @@
+Package: nhm
+Type: Package
+Title: Non-Homogeneous Markov and Hidden Markov Multistate Models
+Version: 0.1.1
+Authors@R: person("Andrew", "Titman", role=c("aut", "cre"),
+    email = "a.titman@lancaster.ac.uk")
+Maintainer: Andrew Titman <a.titman@lancaster.ac.uk>
+Description: Fits non-homogeneous Markov multistate models and misclassification-type hidden Markov models in continuous time to intermittently observed data. Implements the methods in Titman (2011) <doi:10.1111/j.1541-0420.2010.01550.x>. Uses direct numerical solution of the Kolmogorov forward equations to calculate the transition probabilities.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: stats, deSolve, maxLik, mvtnorm
+Suggests: msm, parallel, splines, R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2023-11-02 20:24:41 UTC; andre
+Author: Andrew Titman [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-11-02 21:00:02 UTC

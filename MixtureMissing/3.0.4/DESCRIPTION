@@ -1,0 +1,35 @@
+Package: MixtureMissing
+Type: Package
+Title: Robust and Flexible Model-Based Clustering for Data Sets with
+        Missing Values at Random
+Version: 3.0.4
+Authors@R: 
+  c(person(given = "Hung",
+           family = "Tong",
+           role = c("aut", "cre"),
+           email = "hungtongmx@gmail.com"),
+    person(given = "Cristina",
+           family = "Tortora",
+           role = c("aut", "ths", "dgs"),
+           email = "cristina.tortora@sjsu.edu"))
+Description: Implementations of various robust and flexible model-based clustering methods for data sets with missing values at random. 
+    Two main models are: Multivariate Contaminated Normal Mixture (MCNM, Tong and Tortora, 2022, <doi:10.1007/s11634-021-00476-1>) and 
+    Multivariate Generalized Hyperbolic Mixture (MGHM, Wei et al., 2019, <doi:10.1016/j.csda.2018.08.016>). Mixtures via some special or limiting
+    cases of the multivariate generalized hyperbolic distribution are also included: Normal-Inverse Gaussian, Symmetric Normal-Inverse Gaussian, 
+    Skew-Cauchy, Cauchy, Skew-t, Student's t, Normal, Symmetric Generalized Hyperbolic, Hyperbolic Univariate Marginals, 
+    Hyperbolic, and Symmetric Hyperbolic.
+Imports: mvtnorm (>= 1.1-2), mnormt (>= 2.0.2), cluster (>= 2.1.2),
+        MASS (>= 7.3), numDeriv (>= 8.1.1), Bessel (>= 0.6.0), mclust
+        (>= 5.0.0), mice (>= 3.10.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Repository: CRAN
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2025-02-04 21:24:21 UTC; hungt
+Author: Hung Tong [aut, cre],
+  Cristina Tortora [aut, ths, dgs]
+Maintainer: Hung Tong <hungtongmx@gmail.com>
+Date/Publication: 2025-02-04 22:10:09 UTC

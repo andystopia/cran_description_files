@@ -1,0 +1,65 @@
+Package: TAD
+Title: Realize the Trait Abundance Distribution
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Nathan",
+             family = "Rondeau",
+             email = "nathan.rondeau@inrae.fr",
+             role = c("aut")
+    ), person(given = "Yoann",
+             family = "Le Bagousse-Pinguet",
+             email = "yoann.pinguet@imbe.fr",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-5615-5541")
+    ), person(given = "Raphael",
+             family = "Martin",
+             email = "raphael.martin@inrae.fr",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0001-8778-7915")
+    ), person(given = "Lain",
+             family = "Pavot",
+             email = "lain.pavot@inrae.fr",
+             role = c("aut", "cre")
+    ), person(given = "Pierre",
+             family = "Liancourt",
+             email = "pierre.liancourt@gmail.com",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-3109-8755")
+    ), person(given = "Nicolas",
+             family = "Gross",
+             email = "nicolas.gross@inrae.fr",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0001-9730-3240")
+    ), person(given = "INRAe/UREP",
+             role = c("cph")))
+Description: This analytical framework is based on an analysis of the shape of the trait abundance distributions to better understand community assembly processes, and predict community dynamics under environmental changes. This framework mobilized a study of the relationship between the moments describing the shape of the distributions: the skewness and the kurtosis (SKR). The SKR allows the identification of commonalities in the shape of trait distributions across contrasting communities. Derived from the SKR, we developed mathematical parameters that summarise the complex pattern of distributions by assessing (i) the R², (ii) the Y-intercept, (iii) the slope, (iv) the functional stability of community (TADstab), and, (v) the distance from specific distribution families (i.e., the distance from the skew-uniform family a limit to the highest degree of evenness: TADeve).
+License: BSD_3_clause + file LICENSE
+URL: https://forgemia.inra.fr/urep/data_processing/tad
+BugReports: https://forgemia.inra.fr/urep/data_processing/tad/-/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5)
+Imports: doFuture, foreach, mblm (>= 0.12), methods, stats
+Suggests: Cairo, covr, dplyr, devtools, future (>= 1.33), ggplot2 (>=
+        3.5), ggpubr (>= 0.6), knitr, Matrix (>= 1.6), pkgdown, rlang,
+        rmarkdown, roxygen2, testthat (>= 3.0), tinytex
+Collate: utils.R saving_and_loading_data.R graph.R tad.R data.R
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Language: en-US
+VignetteBuilder: knitr
+LazyData: true
+LazyDataCompression: bzip2
+NeedsCompilation: no
+Packaged: 2024-11-28 09:59:57 UTC; lain
+Author: Nathan Rondeau [aut],
+  Yoann Le Bagousse-Pinguet [aut]
+    (<https://orcid.org/0000-0002-5615-5541>),
+  Raphael Martin [aut] (<https://orcid.org/0000-0001-8778-7915>),
+  Lain Pavot [aut, cre],
+  Pierre Liancourt [aut] (<https://orcid.org/0000-0002-3109-8755>),
+  Nicolas Gross [aut] (<https://orcid.org/0000-0001-9730-3240>),
+  INRAe/UREP [cph]
+Maintainer: Lain Pavot <lain.pavot@inrae.fr>
+Repository: CRAN
+Date/Publication: 2024-11-28 12:20:02 UTC

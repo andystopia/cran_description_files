@@ -1,0 +1,70 @@
+Package: vaccineff
+Title: Estimate Vaccine Effectiveness Based on Different Study Designs
+Version: 1.0.0
+Authors@R: c(
+    person("David Santiago", "Quevedo", , "ex-dsquevedo@javeriana.edu.co", role = "aut",
+           comment = c(ORCID = "0000-0003-1583-4262")),
+    person("Zulma M.", "Cucunubá", , "tracelacdev@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8165-3198")),
+    person("International Development Research Center (IDRC)", role = "fnd"),
+    person("Geraldine", "Gómez Millán", , "geralidine.gomez@javeriana.edu.co", role = "ctb",
+           comment = c(ORCID = "0009-0007-8701-0568")),
+    person("Pratik", "Gupte", , "pratik.gupte@lshtm.ac.uk", role = "ctb",
+           comment = c(ORCID = "0000-0001-5294-7819")),
+    person("Érika J", "Cantor", , "erika.cantor@javeriana.edu.co", role = "ctb",
+           comment = c(ORCID = "0000-0003-3320-6032")),
+    person("Santiago", "Loaiza", , "santiago.loaiza@javeriana.edu.co", role = "ctb",
+           comment = c(ORCID = "0000-0002-2092-3262")),
+    person("Jaime", "Pavlich-Mariscal", , "jpavlich@javeriana.edu.co", role = "ctb",
+           comment = c(ORCID = "0000-0002-3892-6680")),
+    person("Hugo", "Gruson", , "hugo.gruson@data.org", role = "ctb",
+           comment = c(ORCID = "0000-0002-4094-1476")),
+    person("Chris", "Hartgerink", , "chris@data.org", role = "ctb",
+           comment = c(ORCID = "0000-0003-1050-6809")),
+    person("Felipe Segundo", "Abril", , "fsabrilb@unal.edu.co", role = "ctb",
+           comment = c(ORCID = "0000-0002-2512-4929")),
+    person("Joshua W.", "Lambert", , "joshua.lambert@lshtm.ac.uk", role = "ctb",
+           comment = c(ORCID = "0000-0001-5218-3046")),
+    person("Julian", "Otero", , "jd.otero10@uniandes.edu.co", role = "ctb",
+           comment = c(ORCID = "0009-0006-0429-7747")),
+    person("Pontificia Universidad Javeriana", role = "cph")
+  )
+Description: Provides tools for estimating vaccine effectiveness and
+    related metrics. The 'vaccineff_data' class manages key features for
+    preparing, visualizing, and organizing cohort data, as well as
+    estimating vaccine effectiveness. The results and model performance
+    are assessed using the 'vaccineff' class.
+License: MIT + file LICENSE
+URL: https://github.com/epiverse-trace/vaccineff,
+        https://epiverse-trace.github.io/vaccineff/
+BugReports: https://github.com/epiverse-trace/vaccineff/issues
+Depends: R (>= 4.0.0)
+Imports: checkmate, ggplot2, linelist, MatchIt, rlang, scales, stats,
+        survival
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: epiverse-trace/epiversetheme
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-11-28 15:34:19 UTC; dsquevedovega
+Author: David Santiago Quevedo [aut] (<https://orcid.org/0000-0003-1583-4262>),
+  Zulma M. Cucunubá [aut, cre] (<https://orcid.org/0000-0002-8165-3198>),
+  International Development Research Center (IDRC) [fnd],
+  Geraldine Gómez Millán [ctb] (<https://orcid.org/0009-0007-8701-0568>),
+  Pratik Gupte [ctb] (<https://orcid.org/0000-0001-5294-7819>),
+  Érika J Cantor [ctb] (<https://orcid.org/0000-0003-3320-6032>),
+  Santiago Loaiza [ctb] (<https://orcid.org/0000-0002-2092-3262>),
+  Jaime Pavlich-Mariscal [ctb] (<https://orcid.org/0000-0002-3892-6680>),
+  Hugo Gruson [ctb] (<https://orcid.org/0000-0002-4094-1476>),
+  Chris Hartgerink [ctb] (<https://orcid.org/0000-0003-1050-6809>),
+  Felipe Segundo Abril [ctb] (<https://orcid.org/0000-0002-2512-4929>),
+  Joshua W. Lambert [ctb] (<https://orcid.org/0000-0001-5218-3046>),
+  Julian Otero [ctb] (<https://orcid.org/0009-0006-0429-7747>),
+  Pontificia Universidad Javeriana [cph]
+Maintainer: Zulma M. Cucunubá <tracelacdev@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-29 09:30:02 UTC

@@ -1,0 +1,34 @@
+Package: areabiplot
+Title: Area Biplot
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Alberto",
+           family = "Silva",
+           role = c("aut", "cre"),
+           email = "albertos@ua.pt",
+           comment = c(ORCID = "0000-0002-3496-6802")),
+      person(given = "Adelaide",
+           family = "Freitas",
+           role = "aut",
+           email = "adelaide@ua.pt",
+           comment = c(ORCID = "0000-0002-4685-1615")))
+Description: Considering an (n x m) data matrix X, this package is based on the method proposed 
+             by Gower, Groener, and Velden (2010) <doi:10.1198/jcgs.2010.07134>, and 
+             utilize the  resulting matrices from the extended version of the NIPALS decomposition 
+             to determine n triangles whose areas are used  to  visually  estimate the elements of
+             a specific column of X. After a 90-degree rotation of the sample points, the triangles
+             are drawn regarding the following points: 1.the origin of the axes; 2.the sample points;
+             3. the vector endpoint representing some variable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: testthat
+Imports: grDevices, graphics, nipals
+NeedsCompilation: no
+Packaged: 2021-03-07 17:13:41 UTC; albys
+Author: Alberto Silva [aut, cre] (<https://orcid.org/0000-0002-3496-6802>),
+  Adelaide Freitas [aut] (<https://orcid.org/0000-0002-4685-1615>)
+Maintainer: Alberto Silva <albertos@ua.pt>
+Repository: CRAN
+Date/Publication: 2021-03-10 19:00:02 UTC

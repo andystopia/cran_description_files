@@ -1,0 +1,24 @@
+Type: Package
+Package: StochBlock
+Title: Stochastic Blockmodeling of One-Mode and Linked Networks
+Version: 0.1.2
+Date: 2023-01-20
+Authors@R: c(
+    person("Aleš", "Žiberna", , "ales.ziberna@fdv.uni-lj.si", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1534-6971")),
+    person("Fabio Ashtar", "Telarico", , "Fabio-Ashtar.Telarico@fdv.uni-lj.si", role = "ctb",
+           comment = c(ORCID = "0000-0002-8740-7078"))
+  )
+Maintainer: Aleš Žiberna <ales.ziberna@fdv.uni-lj.si>
+Description: Stochastic blockmodeling of one-mode and linked networks as implemented in Škulj and Žiberna (2022) <doi:10.1016/j.socnet.2022.02.001>. The optimization is done via CEM (Classification Expectation Maximization) algorithm that can be initialized by random partitions or the results of k-means algorithm. The development of this package is financially supported by the Slovenian Research Agency (<https://www.arrs.si/>) within the research programs P5-0168 and the research projects J7-8279 (Blockmodeling multilevel and temporal networks) and J5-2557 (Comparison and evaluation of different approaches to blockmodeling dynamic networks by simulations with application to Slovenian co-authorship networks).
+License: GPL (>= 2)
+Imports: blockmodeling, doParallel, doRNG, foreach, Rcpp (>= 1.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2023-01-23 06:21:33 UTC; zibernaa
+Author: Aleš Žiberna [aut, cre] (<https://orcid.org/0000-0003-1534-6971>),
+  Fabio Ashtar Telarico [ctb] (<https://orcid.org/0000-0002-8740-7078>)
+Repository: CRAN
+Date/Publication: 2023-01-24 10:20:12 UTC

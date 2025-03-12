@@ -1,0 +1,37 @@
+Type: Package
+Package: multIntTestFunc
+Title: Provides Test Functions for Multivariate Integration
+Version: 0.3.0
+Authors@R: person(given = "Klaus", family = "Herrmann", role = c("aut", "cre"), email = "klaus.herrmann@usherbrooke.ca", comment = c(ORCID = "0000-0002-8044-5717"))
+Maintainer: Klaus Herrmann <klaus.herrmann@usherbrooke.ca>
+Description: Provides implementations of functions that can be used to
+    test multivariate integration routines. The package covers six
+    different integration domains (unit hypercube, unit ball, unit sphere,
+    standard simplex, non-negative real numbers and R^n). For each domain
+    several functions with different properties (smooth,
+    non-differentiable, ...) are available. The functions are available in
+    all dimensions n >= 1. For each function the exact value of the
+    integral is known and implemented to allow testing the accuracy of
+    multivariate integration routines. Details on the available test
+    functions can be found at on the development website.
+License: MIT + file LICENSE
+URL: https://github.com/KlausHerrmann/multIntTestFunc
+Imports: methods, mvtnorm, pracma, stats
+Suggests: knitr, rmarkdown, statmod, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.1.9000
+Collate: 'AllGeneric.R' 'Pn_lognormalDensity.R' 'Pn_logtDensity.R'
+        'Rn_Gauss.R' 'Rn_floorNorm.R' 'Rn_normalDensity.R'
+        'Rn_tDensity.R' 'domainChecks.R' 'misc.R' 'multIntTestFunc.R'
+        'standardSimplex_Dirichlet.R' 'standardSimplex_exp_sum.R'
+        'unitBall_normGauss.R' 'unitBall_polynomial.R'
+        'unitCube_BFN1.R' 'unitCube_BFN2.R' 'unitCube_BFN3.R'
+        'unitCube_BFN4.R' 'unitCube_Genz1.R' 'unitCube_cos2.R'
+        'unitCube_floor.R' 'unitCube_max.R'
+        'unitSphere_innerProduct1.R' 'unitSphere_polynomial.R'
+NeedsCompilation: no
+Packaged: 2024-09-07 13:21:57 UTC; klaus
+Author: Klaus Herrmann [aut, cre] (<https://orcid.org/0000-0002-8044-5717>)
+Repository: CRAN
+Date/Publication: 2024-09-07 13:40:02 UTC

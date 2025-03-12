@@ -1,0 +1,34 @@
+Package: testassay
+Type: Package
+Title: A Hypothesis Testing Framework for Validating an Assay for
+        Precision
+Version: 0.1.1
+Author: Michael C Sachs and Michael P Fay
+Maintainer: Michael C Sachs <sachsmc@gmail.com>
+Description: A common way of validating a biological assay for is through a
+    procedure, where m levels of an analyte are measured with n replicates at each
+    level, and if all m estimates of the coefficient of variation (CV) are less
+    than some prespecified level, then the assay is declared validated for precision
+    within the range of the m analyte levels. Two limitations of this procedure are:
+    there is no clear statistical statement of precision upon passing, and it is
+    unclear how to modify the procedure for assays with constant standard deviation.
+    We provide tools to convert such a procedure into a set of m hypothesis tests.
+    This reframing motivates the m:n:q procedure, which upon completion delivers
+    a 100q% upper confidence limit on the CV. Additionally, for a post-validation
+    assay output of y, the method gives an ``effective standard deviation interval''
+    of log(y) plus or minus r, which is a 68% confidence interval on log(mu), where
+    mu is the expected value of the assay output for that sample. Further, the m:n:q
+    procedure can be straightforwardly applied to constant standard deviation assays.
+    We illustrate these tools by applying them to a growth inhibition assay. This is
+    an implementation of the methods described in Fay, Sachs, and Miura (2018) 
+    <doi:10.1002/sim.7528>.
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-03 13:02:36 UTC; micsac
+Repository: CRAN
+Date/Publication: 2020-06-03 14:00:02 UTC

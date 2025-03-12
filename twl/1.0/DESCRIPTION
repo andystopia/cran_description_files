@@ -1,0 +1,17 @@
+Package: twl
+Type: Package
+Title: Two-Way Latent Structure Clustering Model
+Version: 1.0
+Date: 2018-08-17
+Author: Michael Swanson
+Maintainer: Michael Swanson <dms866@mail.harvard.edu>
+Description: Implementation of a Bayesian two-way latent structure model for integrative genomic clustering.  The model clusters samples in relation to distinct data sources, with each subject-dataset receiving a latent cluster label, though cluster labels have across-dataset meaning because of the model formulation.  A common scaling across data sources is unneeded, and inference is obtained by a Gibbs Sampler.  The model can fit multivariate Gaussian distributed clusters or a heavier-tailed modification of a Gaussian density.  Uniquely among integrative clustering models, the formulation makes no nestedness assumptions of samples across data sources -- the user can still fit the model if a study subject only has information from one data source. The package provides a variety of post-processing functions for model examination including ones for quantifying observed alignment of clusterings across genomic data sources.  Run time is optimized so that analyses of datasets on the order of thousands of features on fewer than 5 datasets and hundreds of subjects can converge in 1 or 2 days on a single CPU.  See "Swanson DM, Lien T, Bergholtz H, Sorlie T, Frigessi A, Investigating Coordinated Architectures Across Clusters in Integrative Studies: a Bayesian Two-Way Latent Structure Model, 2018, <doi:10.1101/387076>, Cold Spring Harbor Laboratory" at <https://www.biorxiv.org/content/early/2018/08/07/387076.full.pdf> for model details.
+License: GPL (>= 2)
+Imports: Rfast
+Depends: R (>= 2.10), data.table, MCMCpack, corrplot
+RoxygenNote: 6.0.1
+LazyData: true
+NeedsCompilation: no
+Packaged: 2018-08-17 10:41:22 UTC; davidswanson
+Repository: CRAN
+Date/Publication: 2018-08-24 11:00:03 UTC

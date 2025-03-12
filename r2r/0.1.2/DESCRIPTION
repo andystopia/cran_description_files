@@ -1,0 +1,30 @@
+Package: r2r
+Title: R-Object to R-Object Hash Maps
+Version: 0.1.2
+Authors@R: 
+    person(given = "Valerio",
+           family = "Gherardi",
+           role = c("aut", "cre"),
+           email = "vgherard840@gmail.com",
+           comment = c(ORCID = "0000-0002-8215-3013"))
+Description: 
+	Implementation of hash tables (hash sets and hash maps) in R, 
+	featuring arbitrary R objects as keys, 
+	arbitrary hash and key-comparison functions, 
+	and customizable behaviour upon queries of missing keys.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: digest, rlang
+URL: https://github.com/vgherard/r2r
+BugReports: https://github.com/vgherard/r2r/issues
+Suggests: knitr, covr, testthat (>= 3.0.0), rmarkdown, microbenchmark,
+        hash, tibble
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-08 14:24:22 UTC; Valerio
+Author: Valerio Gherardi [aut, cre] (<https://orcid.org/0000-0002-8215-3013>)
+Maintainer: Valerio Gherardi <vgherard840@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-09 00:20:02 UTC

@@ -1,0 +1,41 @@
+Package: biosensors.usc
+Encoding: UTF-8
+Type: Package
+Title: Distributional Data Analysis Techniques for Biosensor Data
+Version: 1.0
+Date: 2022-04-11
+Authors@R: c(
+  person(given ="Juan C.", family ="Vidal", email = "juan.vidal@usc.es", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-8682-6772")),
+  person(given = "Marcos", family = "Matabuena", role = c("aut"),
+      comment = c(ORCID = "0000-0003-3841-4447")),
+  person(given = "Marta", family = "Karas", role = c("ctb"),
+      comment = c(ORCID = "0000-0001-5889-3970"))
+  )
+Description: Unified and user-friendly framework for using new 
+             distributional representations of biosensors data in different statistical modeling 
+             tasks: regression models, hypothesis testing, cluster analysis, visualization, and 
+             descriptive analysis. Distributional representations are a functional extension of 
+             compositional time-range metrics and we have used them successfully so far in modeling 
+             glucose profiles and accelerometer data. However, these functional representations can 
+             be used to represent any biosensor data such as ECG or medical imaging such as fMRI.
+             Matabuena M, Petersen A, Vidal JC, Gude F. "Glucodensities: A new representation of 
+             glucose profiles using distributional data analysis" (2021) 
+             <doi:10.1177/0962280221998064>.
+Imports: Rcpp, graphics, stats, methods, utils, energy, fda.usc,
+        parallelDist, osqp, truncnorm
+Depends: R (>= 2.15)
+LinkingTo: Rcpp, RcppArmadillo
+LazyLoad: Yes
+License: GPL-2
+NeedsCompilation: yes
+RoxygenNote: 7.1.1
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+Packaged: 2022-05-03 19:11:30 UTC; martakaras
+Author: Juan C. Vidal [aut, cre] (<https://orcid.org/0000-0002-8682-6772>),
+  Marcos Matabuena [aut] (<https://orcid.org/0000-0003-3841-4447>),
+  Marta Karas [ctb] (<https://orcid.org/0000-0001-5889-3970>)
+Maintainer: Juan C. Vidal <juan.vidal@usc.es>
+Repository: CRAN
+Date/Publication: 2022-05-05 05:40:02 UTC

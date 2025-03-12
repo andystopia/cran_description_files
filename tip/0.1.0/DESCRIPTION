@@ -1,0 +1,33 @@
+Package: tip
+Type: Package
+Title: Bayesian Clustering Using the Table Invitation Prior (TIP)
+Version: 0.1.0
+Authors@R: c(person(family = "Harrison", 
+                    given = "Charles W.", 
+                    role = c("cre","aut", "cph"), 
+                    email = "charleswharrison@knights.ucf.edu"),
+             person(family = "He", 
+                    given = "Qing", 
+                    role = c("aut", "cph")),
+             person(family = "Huang", 
+                    given = "Hsin-Hsiung",
+                    role = c("aut", "cph")))
+Description: Cluster data without specifying the number of clusters using the Table Invitation Prior (TIP) introduced in the paper "Clustering Gene Expression Using the Table Invitation Prior" by Charles W. Harrison, Qing He, and Hsin-Hsiung Huang (2022) <doi:10.3390/genes13112036>. TIP is a Bayesian prior that uses pairwise distance and similarity information to cluster vectors, matrices, or tensors.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: rlang, igraph, network, ggplot2, GGally, LaplacesDemon,
+        changepoint, parallel, doParallel, foreach, methods, mniw
+RoxygenNote: 7.2.1
+Suggests: knitr, sna, mcclust, SMFilter, rmarkdown, spelling, testthat
+        (>= 3.0.0)
+VignetteBuilder: knitr
+Language: en-US
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-11-12 01:56:07 UTC; CharlesHarrison
+Author: Charles W. Harrison [cre, aut, cph],
+  Qing He [aut, cph],
+  Hsin-Hsiung Huang [aut, cph]
+Maintainer: Charles W. Harrison <charleswharrison@knights.ucf.edu>
+Repository: CRAN
+Date/Publication: 2022-11-14 17:30:02 UTC

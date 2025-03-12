@@ -1,0 +1,19 @@
+Package: SurvMI
+Type: Package
+Title: Multiple Imputation Method in Survival Analysis
+Version: 0.1.0
+Depends: R(>= 3.4.0)
+Imports: survival (>= 3.1.11), zoo, stats, graphics, base
+Authors@R: c(person("Yiming","Chen", email = "yimingc1208@gmail.com",role = c("aut", "cre")), person("John", "Lawrence", role="ctb"))
+Maintainer: Yiming Chen <yimingc1208@gmail.com>
+Description: In clinical trials, endpoints are sometimes evaluated with uncertainty. Adjudication is commonly adopted to ensure the study integrity. We propose to use multiple imputation (MI) introduced by Robin (1987) <doi:10.1002/9780470316696> to incorporate these uncertainties if reasonable event probabilities were provided. The method has been applied to Cox Proportional Hazard (PH) model, Kaplan-Meier (KM) estimation and Log-rank test in this package. Moreover, weighted estimations discussed in Cook (2004) <doi:10.1016/S0197-2456(00)00053-2> were also implemented with weights calculated from event probabilities. In conclusion, this package can handle time-to-event analysis if events presented with uncertainty by different methods. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-07-10 16:15:25 UTC; Yiming.Chen
+Author: Yiming Chen [aut, cre],
+  John Lawrence [ctb]
+Repository: CRAN
+Date/Publication: 2020-07-13 08:50:03 UTC

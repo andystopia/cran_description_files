@@ -1,0 +1,47 @@
+Package: eph
+Title: Argentina's Permanent Household Survey Data and Manipulation
+        Utilities
+Version: 1.0.2
+Authors@R: c(
+    person("Carolina", "Pradier", email = "carolinapradier@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0009-0007-5058-6352")),
+    person("Diego", "Kozlowski", email = "diegokoz92@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0002-5396-3471")),
+    person("Pablo", "Tiscornia", email = "pablotisco@gmail.com", role = "aut"),
+    person("Guido", "Weksler", email = "guidowe45@gmail.com", role = c("aut")),
+    person("Natsumi", "Shokida", email = "natsumi.shokida@gmail.com", role = "aut"),
+    person("German", "Rosati", email = "german.rosati@gmail.com", role = "aut", comment = c(ORCID = "0000-0002-9775-0435")),
+    person("Juan Gabriel", "Juara", email = "jg.juara@gmail.com", role = "ctb")
+    )
+Description: Tools to download and manipulate the Permanent Household Survey from Argentina
+    (EPH is the Spanish acronym for Permanent Household Survey).
+    e.g: get_microdata() for downloading the datasets, get_poverty_lines() for downloading the official poverty baskets,
+    calculate_poverty() for the calculation of stating if a household is in poverty or not, following the official methodology.
+    organize_panels() is used to concatenate observations from different periods, and organize_labels()
+    adds the official labels to the data. The implemented methods are based on INDEC (2016) <http://www.estadistica.ec.gba.gov.ar/dpe/images/SOCIEDAD/EPH_metodologia_22_pobreza.pdf>.
+    As this package works with the argentinian Permanent Household Survey and its main audience is from this country,
+    the documentation was written in Spanish.
+BugReports: https://github.com/ropensci/eph/issues
+Imports: dplyr, expss, purrr, tibble, stringr, readxl, tidyr, utils,
+        zoo, leaflet, htmltools, rlang, stats, cli, httr, curl,
+        tidyselect
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+URL: https://github.com/ropensci/eph
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: testthat, lubridate, knitr, rmarkdown, ggplot2, readr,
+        forcats, httptest
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-06-23 14:59:09 UTC; carolinapradier
+Author: Carolina Pradier [aut, cre] (<https://orcid.org/0009-0007-5058-6352>),
+  Diego Kozlowski [aut] (<https://orcid.org/0000-0002-5396-3471>),
+  Pablo Tiscornia [aut],
+  Guido Weksler [aut],
+  Natsumi Shokida [aut],
+  German Rosati [aut] (<https://orcid.org/0000-0002-9775-0435>),
+  Juan Gabriel Juara [ctb]
+Maintainer: Carolina Pradier <carolinapradier@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-06-23 15:50:05 UTC

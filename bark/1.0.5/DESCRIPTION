@@ -1,0 +1,47 @@
+Package: bark
+Type: Package
+Title: Bayesian Additive Regression Kernels
+Version: 1.0.5
+Date: 2024-10-05
+Authors@R: c(person("Merlise", "Clyde", email="clyde@duke.edu",
+	   		            role=c("aut","cre", "ths"),
+	   		            comment=c("ORCID=0000-0002-3595-1872")
+	   		       ),
+	   		      person("Zhi", "Ouyang", email="zhi.ouyang@gmail.com", 
+	   		              role=c("aut")),
+	   		      person("Robert", "Wolpert", email="wolpert@stat.duke.edu", 
+	   		              role=c("ctb", "ths"))	
+	   		    )   		       
+Description: Bayesian Additive Regression Kernels (BARK) provides
+	an implementation for non-parametric function estimation using Levy
+	Random Field priors for functions that may be represented as a
+	sum of additive multivariate kernels.  Kernels are located at
+	every data point as in Support Vector Machines, however, coefficients 
+	may be heavily shrunk to zero under the Cauchy process prior, or even, 
+	set to zero.  The number of active features is controlled by priors on
+	precision parameters within the kernels, permitting feature selection. For 
+	more details see Ouyang, Z (2008) "Bayesian Additive Regression Kernels",
+	Duke University. PhD dissertation, Chapter 3 and Wolpert, R. L, Clyde, M.A, 
+	and Tu, C. (2011) "Stochastic Expansions with Continuous Dictionaries Levy
+	Adaptive Regression Kernels, Annals of Statistics Vol (39) pages 1916-1962 
+	<doi:10.1214/11-AOS889>.
+License: GPL (>= 3)
+URL: https://www.R-project.org, https://github.com/merliseclyde/bark
+BugReports: https://github.com/merliseclyde/bark/issues
+Depends: R (>= 3.5.0)
+Suggests: BART, e1071, fdm2id, rmarkdown, knitr, roxygen2, testthat,
+        covr
+LazyData: yes
+Repository: CRAN
+NeedsCompilation: yes
+ByteCompile: yes
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Language: en-US
+VignetteBuilder: knitr
+Packaged: 2024-10-05 21:16:20 UTC; clyde
+Author: Merlise Clyde [aut, cre, ths] (ORCID=0000-0002-3595-1872),
+  Zhi Ouyang [aut],
+  Robert Wolpert [ctb, ths]
+Maintainer: Merlise Clyde <clyde@duke.edu>
+Date/Publication: 2024-10-05 22:40:28 UTC

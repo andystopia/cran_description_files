@@ -1,0 +1,27 @@
+Package: multifamm
+Type: Package
+Title: Multivariate Functional Additive Mixed Models
+Version: 0.1.1
+Authors@R: person("Alexander", "Volkmann", 
+    email = "alexandervolkmann8@gmail.com", role = c("aut", "cre"))
+Description: An implementation for multivariate functional additive mixed
+    models (multiFAMM), see Volkmann et al. (2021, <arXiv:2103.06606>). It builds on developed methods for univariate sparse 
+    functional regression models and multivariate functional principal component
+    analysis. This package contains the function to run a multiFAMM and some
+    convenience functions useful when working with large models. An additional 
+    package on GitHub contains more convenience functions to reproduce the 
+    analyses of the corresponding paper 
+    (<https://github.com/alexvolkmann/multifammPaper>).
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.5.0)
+Imports: data.table, funData, MFPCA (>= 1.3-2), mgcv, sparseFLMM (>
+        0.3.0), stats, zoo
+NeedsCompilation: no
+Packaged: 2021-09-24 10:04:19 UTC; alex
+Author: Alexander Volkmann [aut, cre]
+Maintainer: Alexander Volkmann <alexandervolkmann8@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-09-28 09:00:02 UTC

@@ -1,0 +1,27 @@
+Package: align
+Type: Package
+Title: A Modified DTW Algorithm for Stratigraphic Time Series Alignment
+Version: 0.1.0
+Author: Cedric Hagen
+Maintainer: Cedric Hagen <ch0934@princeton.edu>
+Description: A dynamic time warping (DTW) algorithm for stratigraphic alignment,
+    translated into R from the original published 'MATLAB' code by Hay et al. (2019)
+    <doi:10.1130/G46019.1>. The DTW algorithm incorporates two geologically relevant
+    parameters (g and edge) for augmenting the typical DTW cost matrix, allowing
+    for a range of sedimentologic and chronologic conditions to be explored, as 
+    well as the generation of an alignment library (as opposed to a single alignment
+    solution). The g parameter relates to the relative sediment accumulation rate
+    between the two time series records,  while the edge parameter relates to the 
+    amount of total shared time between the records. Note that this algorithm is
+    used for all DTW alignments in the Align Shiny application, detailed in Hagen
+    et al. (in review).
+Imports: matlab, stats
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-04-03 23:11:15 UTC; cedrichagen
+Repository: CRAN
+Date/Publication: 2023-04-04 19:50:06 UTC

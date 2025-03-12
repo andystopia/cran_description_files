@@ -1,0 +1,33 @@
+Package: RsqMed
+Title: Total Mediation Effect Size Measure for High-Dimensional
+        Mediators
+Version: 1.1
+Authors@R: 
+   c(
+     person(given = "Tianzhong",
+           family = "Yang",
+           role = c("aut", "cre"),
+           email = "yang3704@umn.edu"),
+     person(given = "Chunlin",
+	family = "Li",
+	role = "aut",
+	email = "chunlin@iastate.edu"),
+     person(given = "Zhichao",
+	family =  "Xu",
+	role = "ctb",
+	email = "ZXu7@mdanderson.org"))
+Description: An implementation of calculating the R-squared measure as a total mediation effect size measure and its confidence interval for moderate- or high-dimensional mediator models. It gives an option to filter out non-mediators using variable selection methods. The original R package is directly related to the paper Yang et al (2021) "Estimation of mediation effect for high-dimensional omics mediators with application to the Framingham Heart Study" <doi:10.1101/774877>. The new version contains a choice of using cross-fitting, which is computationally faster. The details of the cross-fitting method are available in the paper Xu et al (2023) "Speeding up interval estimation for R2-based mediation effect of high-dimensional mediators via cross-fitting" <doi:10.1101/2023.02.06.527391>.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: SIS (>= 0.8), GMMAT (>= 1.4.1)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-11-13 19:01:47 UTC; yang3704
+Maintainer: Tianzhong Yang <yang3704@umn.edu>
+Repository: CRAN
+Author: Tianzhong Yang [aut, cre],
+  Chunlin Li [aut],
+  Zhichao Xu [ctb]
+Date/Publication: 2023-11-14 17:20:12 UTC

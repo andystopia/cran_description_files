@@ -1,0 +1,25 @@
+Package: TopKSignal
+Type: Package
+Title: A Convex Optimization Tool for Signal Reconstruction from
+        Multiple Ranked Lists
+Version: 1.0
+Date: 2023-12-12
+Authors@R: c(person("Luca Vitale", "Developer", role=c("aut")), person("Bastian Pfeifer", "Maintainer", role = c("aut","cre"), email="bastian.pfeifer@medunigraz.at"), person("Michael G. Schimek", "Supervision", role=c("aut")))
+Depends: R (>= 3.5.0)
+Imports: foreach, doParallel, parallel, nloptr, Matrix, ggplot2,
+        reshape2
+Suggests: knitr, rmarkdown, gurobi
+Description: A mathematical optimization procedure in combination with statistical bootstrap for the estimation of the latent signals (sometimes called scores) informing the global consensus ranking (often named aggregation ranking). To solve mid/large-scale problems, users should install the 'gurobi' optimiser (available from <https://www.gurobi.com/>).
+License: GPL-2
+LazyLoad: yes
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-12-21 21:28:56 UTC; bastian
+Author: Luca Vitale Developer [aut],
+  Bastian Pfeifer Maintainer [aut, cre],
+  Michael G. Schimek Supervision [aut]
+Maintainer: Bastian Pfeifer Maintainer <bastian.pfeifer@medunigraz.at>
+Repository: CRAN
+Date/Publication: 2024-01-08 10:50:12 UTC

@@ -1,0 +1,33 @@
+Package: calibrationband
+Type: Package
+Title: Calibration Bands
+Version: 0.2.1
+Authors@R: c(
+    person(given = "Timo",
+           family = "Dimitriadis",
+           role = "aut"),
+    person(given = "Alexander",
+           family = "Henzi",
+           role = "aut"),
+    person(given = "Marius",
+           family = "Puke",
+           role = c("aut", "cre"),
+           email = "marius.puke@uni-hohenheim.de"))
+Description: Package to assess the calibration of probabilistic classifiers using confidence bands for monotonic functions. Besides testing the classical goodness-of-fit null hypothesis of perfect calibration, the confidence bands calculated within that package facilitate inverted goodness-of-fit tests whose rejection allows for a sought-after conclusion of a sufficiently well-calibrated model. The package creates flexible graphical tools to perform these tests.  For construction details see also Dimitriadis, Dümbgen, Henzi, Puke, Ziegel (2022) <arXiv:2203.04065>. 
+URL: https://github.com/marius-cp/calibrationband,
+        https://marius-cp.github.io/calibrationband/
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Depends: R (>= 3.3)
+LinkingTo: Rcpp
+Imports: Rcpp, ggplot2, tibble, dplyr, tidyr, sp, methods, base, stats,
+        magrittr, rlang, tidyselect
+NeedsCompilation: yes
+Packaged: 2022-08-08 14:49:15 UTC; mp
+Author: Timo Dimitriadis [aut],
+  Alexander Henzi [aut],
+  Marius Puke [aut, cre]
+Maintainer: Marius Puke <marius.puke@uni-hohenheim.de>
+Repository: CRAN
+Date/Publication: 2022-08-09 14:40:02 UTC

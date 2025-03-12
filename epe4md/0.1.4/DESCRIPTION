@@ -1,0 +1,49 @@
+Package: epe4md
+Title: EPE's 4MD Model to Forecast the Adoption of Distributed
+        Generation
+Version: 0.1.4
+Language: pt-BR
+Authors@R: 
+    c(person(given = "Gabriel",
+           family = "Konzen",
+           role = c("aut", "cre"),
+           email = "gabriel.konzen@epe.gov.br"),
+      person(given = "Bruno",
+           family = "Crotman",
+           role = c("aut"),
+           email = "bruno.crotman@epe.gov.br"),
+      person(given = "João",
+           family = "Santos",
+           role = c("aut"),
+           email = "joao.santos@epe.gov.br"),
+      person(given = "Leticia",
+           family = "Minini",
+           role = c("aut"),
+           email = "leticia.barbosa@epe.gov.br"),
+      person(given = "Empresa de Pesquisa Energética",
+           role = c("cph", "fnd")
+           ))           
+Description: EPE's (Empresa de Pesquisa Energética) 4MD (Modelo de Mercado da Micro e Minigeração Distribuída - Micro and Mini Distributed Generation Market Model) model to forecast the adoption of Distributed Generation. Given the user's assumptions, it is possible to estimate how many consumer units will have distributed generation in Brazil over the next 10 years, for example. In addition, it is possible to estimate the installed capacity, the amount of investments that will be made in the country and the monthly energy contribution of this type of generation. <https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-689/topico-639/NT_Metodologia_4MD_PDE_2032_VF.pdf>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, tidyverse
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Imports: dplyr (>= 1.1.1), scales, purrr, tidyr, readxl, jrvFinance,
+        janitor, stats, furrr, zoo, lubridate, tsibble, stringr,
+        fabletools, feasts, tibble, assertthat, forcats, future,
+        magrittr, readr, utils, ggplot2
+Depends: R (>= 3.5.0)
+URL: https://epe-gov-br.github.io/epe4md/
+NeedsCompilation: no
+Packaged: 2023-07-03 16:42:41 UTC; joao.santos
+Author: Gabriel Konzen [aut, cre],
+  Bruno Crotman [aut],
+  João Santos [aut],
+  Leticia Minini [aut],
+  Empresa de Pesquisa Energética [cph, fnd]
+Maintainer: Gabriel Konzen <gabriel.konzen@epe.gov.br>
+Repository: CRAN
+Date/Publication: 2023-07-05 14:23:07 UTC

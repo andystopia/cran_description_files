@@ -1,0 +1,44 @@
+Package: basicspace
+Type: Package
+Title: Recovering a Basic Space from Issue Scales
+Version: 0.25
+Date: 2024-12-02
+Author: Royce Carroll [aut],
+  Christopher Hare [aut, cre],
+  Jeffrey B. Lewis [aut],
+  James Lo [aut],
+  Keith T. Poole [aut],
+  Howard Rosenthal [aut]
+Authors@R: c(person(given = "Royce",
+                    family = "Carroll",
+                    role = "aut",
+                    email = "r.carroll@essex.ac.uk"),
+            person(given = "Christopher",
+                    family = "Hare",
+                    role = c("aut", "cre"),
+                    email = "cdhare@ucdavis.edu"),
+            person(given = c("Jeffrey", "B."),
+                    family = "Lewis",
+                    role = "aut",
+                    email = "jblewis@ucla.edu"),
+            person(given = "James",
+                    family = "Lo",
+                    role = "aut",
+                    email = "lojames@usc.edu"),
+            person(given = c("Keith", "T."),
+                    family = "Poole",
+                    role = "aut",
+                    email = "ktpoole@uga.edu"),
+            person(given = "Howard",
+                    family = "Rosenthal",
+                    role = "aut",
+                    email = "hl31@nyu.edu"))
+Maintainer: Christopher Hare <cdhare@ucdavis.edu>
+Description: Provides functions to estimate latent dimensions of choice and judgment using Aldrich-McKelvey and Blackbox scaling methods, as described in Poole et al. (2016, <doi:10.18637/jss.v069.i07>). These techniques allow researchers (particularly those analyzing political attitudes, public opinion, and legislative behavior) to recover spatial estimates of political actors' ideal points and stimuli from issue scale data, accounting for perceptual bias, multidimensional spaces, and missing data. The package uses singular value decomposition and alternating least squares (ALS) procedures to scale self-placement and perceptual data into a common latent space for the analysis of ideological or evaluative dimensions. Functionality also include tools for assessing model fit, handling complex survey data structures, and reproducing simulated datasets for methodological validation. 
+License: GPL-2
+Depends: R (>= 3.0.0), tools
+URL: https://CRAN.R-project.org/package=basicspace
+NeedsCompilation: yes
+Packaged: 2024-12-02 16:53:42 UTC; chare
+Repository: CRAN
+Date/Publication: 2024-12-03 19:10:01 UTC

@@ -1,0 +1,43 @@
+Package: SpiceFP
+Type: Package
+Title: Sparse Method to Identify Joint Effects of Functional Predictors
+Version: 0.1.2
+Authors@R: c(
+  person("Girault", "Gnanguenon Guesse", email = "girault.gnanguenon@gmail.com", role = c("aut", "cre")),
+  person("Patrice", "Loisel", email = "patrice.loisel@inrae.fr", role = c("aut")),
+  person("Benedicte", "Fontez", email = "benedicte.fontez@supagro.fr", role = c("aut")),
+  person("Nadine", "Hilgert", email = "nadine.hilgert@inrae.fr", role = c("aut")),
+  person("Thierry", "Simonneau", email = "thierry.simonneau@inrae.fr", role = c("ctr")),
+  person("Isabelle", "Sanchez", email = "isabelle.sanchez@inrae.fr", role = c("ctr")))
+Maintainer: Girault Gnanguenon Guesse <girault.gnanguenon@gmail.com>
+Description: A set of functions allowing to implement the 'SpiceFP' approach
+  which is iterative. It involves transformation of functional predictors into
+  several candidate explanatory matrices (based on contingency tables), to which
+  relative edge matrices with contiguity constraints are associated. Generalized
+  Fused Lasso regression are performed in order to identify the best candidate
+  matrix, the best class intervals and related coefficients at each iteration.
+  The approach is stopped when the maximal number of iterations is reached or
+  when retained coefficients are zeros. Supplementary functions allow to get
+  coefficients of any candidate matrix or mean of coefficients of many candidates.
+  The methods in this package are describing in Girault Gnanguenon Guesse, 
+  Patrice Loisel, Bénedicte Fontez, Thierry Simonneau, Nadine Hilgert (2021)
+  "An exploratory penalized regression to identify combined effects of functional
+  variables -Application to agri-environmental issues" 
+  <https://hal.archives-ouvertes.fr/hal-03298977>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: doParallel, foreach, stringr, tidyr, Matrix, genlasso, purrr
+Suggests: fields
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-05-31 14:06:46 UTC; gnanguen
+Author: Girault Gnanguenon Guesse [aut, cre],
+  Patrice Loisel [aut],
+  Benedicte Fontez [aut],
+  Nadine Hilgert [aut],
+  Thierry Simonneau [ctr],
+  Isabelle Sanchez [ctr]
+Repository: CRAN
+Date/Publication: 2023-06-01 09:10:18 UTC

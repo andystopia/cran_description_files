@@ -1,0 +1,39 @@
+Type: Package
+Package: subsampling
+Title: Optimal Subsampling Methods for Statistical Models
+Version: 0.1.1
+Date: 2024-11-2
+Authors@R: c(
+    person("Qingkai", "Dong", , "qingkai.dong@uconn.edu", role = c("aut", "cre", "cph")),
+    person("Yaqiong", "Yao", role = "aut"),
+    person("Haiying", "Wang", role = "aut"),
+    person("Qiang", "Zhang", role = "ctb"),
+    person("Jun", "Yan", role = "ctb")
+  )
+Maintainer: Qingkai Dong <qingkai.dong@uconn.edu>
+Description: 
+    Balancing computational and statistical efficiency, subsampling techniques offer
+    a practical solution for handling large-scale data analysis. Subsampling methods
+    enhance statistical modeling for massive datasets by efficiently drawing
+    representative subsamples from full dataset based on tailored sampling probabilities. These
+    probabilities are optimized for specific goals, such as minimizing the variance
+    of coefficient estimates or reducing prediction error.
+License: GPL-3
+URL: https://github.com/dqksnow/Subsampling
+BugReports: https://github.com/dqksnow/Subsampling/issues
+Imports: expm, nnet, quantreg, Rcpp (>= 1.0.12), stats, survey
+Suggests: knitr, MASS, rmarkdown, tinytest
+LinkingTo: Rcpp, RcppArmadillo
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-11-02 23:30:06 UTC; qingkaidong
+Author: Qingkai Dong [aut, cre, cph],
+  Yaqiong Yao [aut],
+  Haiying Wang [aut],
+  Qiang Zhang [ctb],
+  Jun Yan [ctb]
+Repository: CRAN
+Date/Publication: 2024-11-05 10:20:02 UTC

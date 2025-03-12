@@ -1,0 +1,31 @@
+Package: b64
+Title: Fast and Vectorized Base 64 Engine
+Version: 0.1.3
+Authors@R: c(
+    person("Josiah", "Parry", , "josiah.parry@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9910-865X")),
+    person("Etienne", "Bacher", email = "etienne.bacher@protonmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-9271-5075")))
+Description: Provides a fast, lightweight, and vectorized base 64 engine
+    to encode and decode character and raw vectors as well as files stored
+    on disk.  Common base 64 alphabets are supported out of the box
+    including the standard, URL-safe, bcrypt, crypt, 'BinHex', and
+    IMAP-modified UTF-7 alphabets. Custom engines can be created to
+    support unique base 64 encoding and decoding needs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+RoxygenNote: 7.3.0
+Config/rextendr/version: 0.3.1.9000
+SystemRequirements: Cargo (Rust's package manager), rustc
+Suggests: blob, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://extendr.github.io/b64/, https://github.com/extendr/b64
+BugReports: https://github.com/extendr/b64/issues
+NeedsCompilation: yes
+Packaged: 2024-09-26 16:24:07 UTC; josiahparry
+Author: Josiah Parry [aut, cre] (<https://orcid.org/0000-0001-9910-865X>),
+  Etienne Bacher [ctb] (<https://orcid.org/0000-0002-9271-5075>)
+Maintainer: Josiah Parry <josiah.parry@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-09-26 16:50:05 UTC

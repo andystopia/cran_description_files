@@ -1,0 +1,24 @@
+Package: rKOMICS
+Title: Minicircle Sequence Classes (MSC) Analyses
+Version: 1.3
+Date: 2023-06-28
+Authors@R: c(person("Frederik", "Van den Broeck", role = c("aut"),
+                      email = "frederik.vandenbroeck@kuleuven.be"),
+               person("Manon", "Geerts", role = c("aut", "cre"), email = "geertsmanon@gmail.com") )
+Description: This is a analysis toolkit to streamline the analyses of minicircle sequence diversity in population-scale genome projects. rKOMICS is a user-friendly R package that has simple installation requirements and that is applicable to all 27 trypanosomatid genera. Once minicircle sequence alignments are generated, rKOMICS allows to examine, summarize and visualize minicircle sequence diversity within and between samples through the analyses of minicircle sequence clusters. We showcase the functionalities of the (r)KOMICS tool suite using a whole-genome sequencing dataset from a recently published study on the history of diversification of the Leishmania braziliensis species complex in Peru. Analyses of population diversity and structure highlighted differences in minicircle sequence richness and composition between Leishmania subspecies, and between subpopulations within subspecies. The rKOMICS package establishes a critical framework to manipulate, explore and extract biologically relevant information from mitochondrial minicircle assemblies in tens to hundreds of samples simultaneously and efficiently. This should facilitate research that aims to develop new molecular markers for identifying species-specific minicircles, or to study the ancestry of parasites for complementary insights into their evolutionary history. ***** !! WARNING: this package relies on dependencies from Bioconductor. For Mac users, this can generate errors when installing rKOMICS. Install Bioconductor and ComplexHeatmap at advance: install.packages("BiocManager"); BiocManager::install("ComplexHeatmap") *****.
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+biocViews:
+Imports: ggplot2, ape, circlize, ComplexHeatmap, reshape2, utils,
+        stats, dplyr, factoextra, FactoMineR, ggpubr, magrittr, stringr
+Suggests: viridis
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-06-28 11:25:36 UTC; mgeerts
+Author: Frederik Van den Broeck [aut],
+  Manon Geerts [aut, cre]
+Maintainer: Manon Geerts <geertsmanon@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-06-29 22:40:03 UTC

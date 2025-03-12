@@ -1,0 +1,32 @@
+Package: susographql
+Type: Package
+Title: Comprehensive Interface to the Survey Solutions 'GraphQL' API
+Version: 0.1.6
+Authors@R: c(
+    person("Michael", "Wild", , "mwild@worldbank.org", role = c("cre", "aut", "cph"))
+   )
+Description: Provides a complete suite of tools for interacting
+    with the Survey Solutions 'GraphQL' API
+    <https://demo.mysurvey.solutions/graphql/>. This package encompasses
+    all currently available queries and mutations, including the latest
+    features for map uploads. It is built on the modern 'httr2' package,
+    offering a streamlined and efficient interface without relying on
+    external 'GraphQL' client packages. In addition to core API
+    functionalities, the package includes a range of helper functions
+    designed to facilitate the use of available query filters.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: curl (>= 5.1.0), glue, httr2, jsonlite, readr, stringr,
+        data.table, withr, cli (>= 3.0.0), rlang (>= 1.1.0), lubridate
+Depends: R (>= 3.6)
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+URL: https://michael-cw.github.io/susographql/
+BugReports: https://github.com/michael-cw/susographql/issues
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-01-17 12:23:55 UTC; mcw_rstudio
+Author: Michael Wild [cre, aut, cph]
+Maintainer: Michael Wild <mwild@worldbank.org>
+Repository: CRAN
+Date/Publication: 2024-01-17 19:10:02 UTC

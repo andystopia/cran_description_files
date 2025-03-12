@@ -1,0 +1,26 @@
+Package: boinet
+Version: 1.1.0
+Title: Conduct Simulation Study of Bayesian Optimal Interval Design
+        with BOIN-ET Family
+Authors@R: c(
+    person(given  = "Yusuke",
+           family = "Yamaguchi",
+           role   = c("aut","cre"),
+           email  = "yamagubed@gmail.com"),
+    person(given  = "Kentaro",
+           family = "Takeda",
+           role   = c("aut")))
+Description: Bayesian optimal interval based on both efficacy and toxicity outcomes (BOIN-ET) design is a model-assisted oncology phase I/II trial design, aiming to establish an optimal biological dose accounting for efficacy and toxicity in the framework of dose-finding. Some extensions of BOIN-ET design are also available to allow for time-to-event efficacy and toxicity outcomes based on cumulative and pending data (time-to-event BOIN-ET: TITE-BOIN-ET), ordinal graded efficacy and toxicity outcomes (generalized BOIN-ET: gBOIN-ET), and their combination (TITE-gBOIN-ET). 'boinet' is a package to implement the BOIN-ET design family and supports the conduct of simulation studies to assess operating characteristics of BOIN-ET, TITE-BOIN-ET, gBOIN-ET, and TITE-gBOIN-ET, where users can choose design parameters in flexible and straightforward ways depending on their own application.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: Iso, mfp, copula
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-08-07 20:55:16 UTC; API18340
+Author: Yusuke Yamaguchi [aut, cre],
+  Kentaro Takeda [aut]
+Maintainer: Yusuke Yamaguchi <yamagubed@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-24 06:20:02 UTC

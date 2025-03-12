@@ -1,0 +1,38 @@
+Package: treestats
+Type: Package
+Title: Phylogenetic Tree Statistics
+Version: 1.70.5
+Authors@R: c(person(given = "Thijs",
+        family = "Janzen",
+        email = "thijsjanzen@gmail.com",
+        role = c("cre", "aut"),
+        comment = c(ORCID = "0000-0002-4162-1140")))
+Maintainer: Thijs Janzen <thijsjanzen@gmail.com>
+Description: Collection of phylogenetic tree statistics,
+             collected throughout the literature. All functions have been 
+             written to maximize computation speed. The package includes 
+             umbrella functions to calculate all statistics, all balance 
+             associated statistics, or all branching time related statistics. 
+             Furthermore, the 'treestats' package supports summary statistic 
+             calculations on Ltables, provides speed-improved coding of 
+             branching times, Ltable conversion and includes algorithms to
+             create intermediately balanced trees. Full description can be
+             found in Janzen (2024) <doi:10.1016/j.ympev.2024.108168>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: Rcpp
+LinkingTo: Rcpp, nloptr
+Imports: ape, nloptr
+Suggests: phyloTop, testthat, DDD, geiger, nLTT, castor, adephylo,
+        ggplot2, tibble, picante, treebalance, RPANDA, lintr,
+        rmarkdown, knitr, igraph, RSpectra, Matrix, abcrf, pheatmap
+BugReports: https://github.com/thijsjanzen/treestats/issues
+URL: https://github.com/thijsjanzen/treestats,
+        https://thijsjanzen.github.io/treestats/
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-08-24 16:22:35 UTC; thijsjanzen
+Author: Thijs Janzen [cre, aut] (<https://orcid.org/0000-0002-4162-1140>)
+Repository: CRAN
+Date/Publication: 2024-08-26 06:30:02 UTC

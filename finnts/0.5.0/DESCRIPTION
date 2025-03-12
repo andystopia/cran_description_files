@@ -1,0 +1,44 @@
+Package: finnts
+Title: Microsoft Finance Time Series Forecasting Framework
+Version: 0.5.0
+Authors@R: 
+    c(person(given = "Mike",
+           family = "Tokic",
+           role = c("aut", "cre"),
+           email = "mftokic@gmail.com", 
+           comment = c(ORCID = "0000-0002-7630-7055")), 
+      person(given = "Aadharsh",
+           family = "Kannan",
+           role = c("aut"),
+           email = "akannan@microsoft.com",
+           comment = c(ORCID = "0000-0002-6475-8211")))
+Description: Automated time series forecasting developed by Microsoft Finance. The Microsoft Finance Time 
+    Series Forecasting Framework, aka Finn, can be used to forecast any component of the income 
+    statement, balance sheet, or any other area of interest by finance. Any numerical quantity over time, 
+    Finn can be used to forecast it. While it can be applied outside of the finance domain, Finn was built 
+    to meet the needs of financial analysts to better forecast their businesses within a company, and has 
+    a lot of built in features that are specific to the needs of financial forecasters. Happy forecasting!
+URL: https://microsoft.github.io/finnts/,
+        https://github.com/microsoft/finnts
+BugReports: https://github.com/microsoft/finnts/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cli, Cubist, dials, digest, doParallel, dplyr, earth, feasts,
+        foreach, fs, generics, glue, glmnet, gtools, hts, kernlab,
+        lubridate, magrittr, methods, parallel, parsnip, plyr, purrr,
+        recipes, rlang, rsample, rules, snakecase, stringr, tibble,
+        tidyr, tidyselect, timetk, tune, vroom, workflows
+Suggests: arrow (>= 8.0.0), AzureStor, Boruta, corrr, knitr,
+        Microsoft365R, notebookutils, qs, reactable, rmarkdown,
+        sparklyr, testthat (>= 3.0.0), vip
+Config/testthat/edition: 3
+Depends: R (>= 4.0), modeltime
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-25 17:32:45 UTC; mitokic
+Author: Mike Tokic [aut, cre] (<https://orcid.org/0000-0002-7630-7055>),
+  Aadharsh Kannan [aut] (<https://orcid.org/0000-0002-6475-8211>)
+Maintainer: Mike Tokic <mftokic@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-25 17:50:02 UTC

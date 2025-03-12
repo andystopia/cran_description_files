@@ -1,0 +1,36 @@
+Package: psBayesborrow
+Version: 1.1.0
+Title: Bayesian Information Borrowing with Propensity Score Matching
+Authors@R: c(
+    person(given  = "Yusuke",
+           family = "Yamaguchi",
+           role   = c("aut","cre"),
+           email  = "yamagubed@gmail.com"),
+    person(given  = "Jun",
+           family = "Takeda",
+           role   = c("aut")),
+    person(given  = "Kentaro",
+           family = "Takeda",
+           role   = c("aut")))
+Description: Hybrid control design is a way to borrow information from external controls to augment concurrent controls in a randomized controlled trial and is expected to overcome the feasibility issue when adequate randomized controlled trials cannot be conducted. A major challenge in the hybrid control design is its inability to eliminate a prior-data conflict caused by systematic imbalances in measured or unmeasured confounding factors between patients in the concurrent treatment/control group and external controls. To prevent the prior-data conflict, a combined use of propensity score matching and Bayesian commensurate prior has been proposed in the context of hybrid control design. The propensity score matching is first performed to guarantee the balance in baseline characteristics, and then the Bayesian commensurate prior is constructed while discounting the information based on the similarity in outcomes between the concurrent and external controls. 'psBayesborrow' is a package to implement the propensity score matching and the Bayesian analysis with commensurate prior, as well as to conduct a simulation study to assess operating characteristics of the hybrid control design, where users can choose design parameters in flexible and straightforward ways depending on their own application.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, copula, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1),
+        rstan (>= 2.18.1), rstantools (>= 2.2.0), boot, MatchIt,
+        optmatch, survival, e1071, overlapping, stats
+Suggests: testthat (>= 3.0.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2024-03-04 21:55:35 UTC; API18340
+Author: Yusuke Yamaguchi [aut, cre],
+  Jun Takeda [aut],
+  Kentaro Takeda [aut]
+Maintainer: Yusuke Yamaguchi <yamagubed@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-04 22:30:02 UTC

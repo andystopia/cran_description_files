@@ -1,0 +1,44 @@
+Package: ANOPA
+Type: Package
+Title: Analyses of Proportions using Anscombe Transform
+Version: 0.1.3
+Date: 2024-03-21
+Authors@R: c(
+             person("Denis", "Cousineau", email = "denis.cousineau@uottawa.ca",
+                    role = c("aut", "ctb", "cre")),
+             person("Louis", "Laurencelle", email = "louis.laurencelle@gmail.com",
+                    role = c("aut", "ctb"))
+           )
+Author: Denis Cousineau [aut, ctb, cre],
+  Louis Laurencelle [aut, ctb]
+Maintainer: Denis Cousineau <denis.cousineau@uottawa.ca>
+BugReports: https://github.com/dcousin3/ANOPA/issues/
+URL: https://dcousin3.github.io/ANOPA/
+Description: 
+    Analyses of Proportions can be performed on the Anscombe (arcsine-related) transformed  
+    data. The 'ANOPA' package can analyze proportions obtained from up to 
+    four factors. The factors can be within-subject or between-subject or a mix 
+    of within- and between-subject. The main, omnibus analysis can be followed by
+    additive decompositions into interaction effects, main effects, simple 
+    effects, contrast effects, etc., mimicking precisely the logic of ANOVA. For
+    that reason, we call this set of tools 'ANOPA' (Analysis of Proportion
+    using Anscombe transform) to highlight its similarities with ANOVA. 
+    The 'ANOPA' framework also allows plots of proportions easy to obtain 
+    along with confidence intervals. Finally, effect sizes and planning statistical 
+    power are easily done under this framework. Only particularity, the 'ANOPA' computes  
+    F statistics which have an infinite degree of freedom on the denominator. 
+    See Laurencelle and Cousineau (2023) <doi:10.3389/fpsyg.2022.1045436>.
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 7.3.1
+Depends: R (>= 3.5.0)
+Imports: superb (>= 0.95.0), Rdpack (>= 0.7), ggplot2 (>= 3.1.0),
+        scales (>= 1.2.1), stats, rrapply, utils, plyr (>= 1.8.4)
+Suggests: rmarkdown, testthat, knitr
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2024-03-21 17:29:39 UTC; Utlisateur
+Repository: CRAN
+Date/Publication: 2024-03-22 19:40:05 UTC

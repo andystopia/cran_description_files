@@ -1,0 +1,24 @@
+Package: seq2R
+Type: Package
+Title: Simple Method to Detect Compositional Changes in Genomic
+        Sequences
+Version: 2.0.1
+Date: 2024-09-27
+Authors@R: c(person("Nora", "M. Villanueva",email= "nmvillanueva@uvigo.gal", role = c("aut", "cre"),
+  comment = c(ORCID = "0000-0001-8085-2745")),
+  person("Marta", "Sestelo",email= "sestelo@uvigo.gal", role = "aut", comment = c(ORCID = "0000-0003-4284-6509")),
+  person("Alan", "Miller", role = "ctb", comment = c("FORTRAN code lsq.f90: weighted least-squares module"))
+  )
+Maintainer: Nora M. Villanueva <nmvillanueva@uvigo.gal>
+Depends: R (>= 2.15.1)
+Description: This software is useful for loading '.fasta' or '.gbk' files, and for retrieving sequences from 'GenBank' dataset <https://www.ncbi.nlm.nih.gov/genbank/>. This package allows  to detect differences or asymmetries based on nucleotide composition by using local linear kernel smoothers. Also, it is possible to draw inference about critical points (i. e. maximum or minimum points) related with the derivative curves. Additionally, bootstrap methods have been used  for estimating confidence intervals and speed computational techniques (binning techniques) have been implemented in 'seq2R'.
+Imports: seqinr
+License: GPL
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2024-09-30 13:01:08 UTC; sestelo
+Author: Nora M. Villanueva [aut, cre] (<https://orcid.org/0000-0001-8085-2745>),
+  Marta Sestelo [aut] (<https://orcid.org/0000-0003-4284-6509>),
+  Alan Miller [ctb] (FORTRAN code lsq.f90: weighted least-squares module)
+Repository: CRAN
+Date/Publication: 2024-09-30 14:50:02 UTC

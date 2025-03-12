@@ -1,0 +1,37 @@
+Encoding: UTF-8
+Package: LiblineaR
+Title: Linear Predictive Models Based on the LIBLINEAR C/C++ Library
+Version: 2.10-24
+Date: 2024-09-13
+Authors@R: c(
+        person("Thibault","Helleputte",email="thibault.helleputte@dnalytics.com",role=c("cre","aut","cph")),
+        person("Jérôme","Paul",role=c("aut")),
+        person("Pierre","Gramme",role=c("aut")) )
+Description: A wrapper around the LIBLINEAR C/C++ library for machine
+        learning (available at
+        <https://www.csie.ntu.edu.tw/~cjlin/liblinear/>). LIBLINEAR is
+        a simple library for solving large-scale regularized linear
+        classification and regression. It currently supports
+        L2-regularized classification (such as logistic regression,
+        L2-loss linear SVM and L1-loss linear SVM) as well as
+        L1-regularized classification (such as L2-loss linear SVM and
+        logistic regression) and L2-regularized support vector
+        regression (with L1- or L2-loss). The main features of
+        LiblineaR include multi-class classification (one-vs-the rest,
+        and Crammer & Singer method), cross validation for model
+        selection, probability estimates (logistic regression only) or
+        weights for unbalanced data. The estimation of the models is
+        particularly fast as compared to other libraries.
+License: GPL-2
+LazyLoad: yes
+Suggests: SparseM, Matrix
+Imports: methods
+URL: <https://dnalytics.com/software/liblinear/>
+NeedsCompilation: yes
+Packaged: 2024-09-13 11:36:47 UTC; thibault
+Author: Thibault Helleputte [cre, aut, cph],
+  Jérôme Paul [aut],
+  Pierre Gramme [aut]
+Maintainer: Thibault Helleputte <thibault.helleputte@dnalytics.com>
+Repository: CRAN
+Date/Publication: 2024-09-13 12:10:07 UTC

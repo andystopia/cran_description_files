@@ -1,0 +1,54 @@
+Package: phacking
+Title: Sensitivity Analysis for p-Hacking in Meta-Analyses
+Version: 0.2.1
+Authors@R: c(
+  person("Peter", "Solymos", email = "peter@analythium.io", role = c("cre", "ctb"), comment = c(ORCID = "0000-0001-7337-1740")),
+  person("Maya", "Mathur", email = "mmathur@stanford.edu", role = c("aut")),
+  person("Mika", "Braginsky", email = "mika.br@gmail.com", role = c("aut"))
+  )
+Description: Fits right-truncated meta-analysis (RTMA), a bias correction for
+  the joint effects of p-hacking (i.e., manipulation of results within studies
+  to obtain significant, positive estimates) and traditional publication bias
+  (i.e., the selective publication of studies with significant, positive
+  results) in meta-analyses [see Mathur MB (2022). "Sensitivity analysis for
+  p-hacking in meta-analyses." <doi:10.31219/osf.io/ezjsx>.]. Unlike publication
+  bias alone, p-hacking that favors significant, positive results (termed
+  "affirmative") can distort the distribution of affirmative results. To
+  bias-correct results from affirmative studies would require strong assumptions
+  on the exact nature of p-hacking. In contrast, joint p-hacking and publication
+  bias do not distort the distribution of published nonaffirmative results when
+  there is stringent p-hacking (e.g., investigators who hack always eventually
+  obtain an affirmative result) or when there is stringent publication bias
+  (e.g., nonaffirmative results from hacked studies are never published). This
+  means that any published nonaffirmative results are from unhacked studies.
+  Under these assumptions, RTMA involves analyzing only the published
+  nonaffirmative results to essentially impute the full underlying distribution
+  of all results prior to selection due to p-hacking and/or publication bias.
+  The package also provides diagnostic plots described in Mathur (2022).
+License: MIT + file LICENSE
+URL: https://github.com/mathurlabstanford/phacking,
+        https://mathurlabstanford.github.io/phacking/
+BugReports: https://github.com/mathurlabstanford/phacking/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+RdMacros: Rdpack
+Biarch: true
+Depends: R (>= 4.1.0)
+Imports: dplyr, ggplot2, metabias, metafor, methods, purrr, rlang,
+        stats, stats4, truncnorm, Rcpp (>= 0.12.0), RcppParallel (>=
+        5.0.1), Rdpack, rstan (>= 2.18.1), rstantools (>= 2.2.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2023-07-15 21:13:32 UTC; root
+Author: Peter Solymos [cre, ctb] (<https://orcid.org/0000-0001-7337-1740>),
+  Maya Mathur [aut],
+  Mika Braginsky [aut]
+Maintainer: Peter Solymos <peter@analythium.io>
+Repository: CRAN
+Date/Publication: 2023-07-17 14:00:14 UTC

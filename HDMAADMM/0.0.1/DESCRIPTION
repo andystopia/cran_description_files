@@ -1,0 +1,32 @@
+Package: HDMAADMM
+Type: Package
+Title: ADMM for High-Dimensional Mediation Models
+Version: 0.0.1
+Date: 2023-12-01
+Authors@R: c(person(given = "Pei-Shan",
+           family = "Yen", 
+           email = "peishan0824@gmail.com",
+           role = c("aut",'cre'), 
+           comment = c(ORCID = '0000-0001-7386-0552')),
+           person(given = "Ching-Chuan",
+           family = "Chen",
+           role = c("aut"),
+           email = "zw12356@gmail.com",
+           comment = c(ORCID = '0009-0007-8273-3206')))
+Maintainer: Pei-Shan Yen <peishan0824@gmail.com>
+Description: We use the Alternating Direction Method of Multipliers (ADMM) for parameter estimation in high-dimensional, single-modality mediation models. To improve the sensitivity and specificity of estimated mediation effects, we offer the sure independence screening (SIS) function for dimension reduction. The available penalty options include Lasso, Elastic Net, Pathway Lasso, and Network-constrained Penalty. The methods employed in the package are based on Boyd, S., Parikh, N., Chu, E., Peleato, B., & Eckstein, J. (2011). <doi:10.1561/2200000016>, Fan, J., & Lv, J. (2008) <doi:10.1111/j.1467-9868.2008.00674.x>, Li, C., & Li, H. (2008) <doi:10.1093/bioinformatics/btn081>, Tibshirani, R. (1996) <doi:10.1111/j.2517-6161.1996.tb02080.x>, Zhao, Y., & Luo, X. (2022) <doi:10.4310/21-sii673>, and Zou, H., & Hastie, T. (2005) <doi:10.1111/j.1467-9868.2005.00503.x>. 
+License: MIT + file LICENSE
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.0), dqrng, RcppEigen
+LinkingTo: Rcpp, RcppEigen
+Suggests: roxygen2
+Encoding: UTF-8
+URL: https://github.com/psyen0824/HDMAADMM
+BugReports: https://github.com/psyen0824/HDMAADMM/issues
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-11-29 01:24:52 UTC; peish
+Author: Pei-Shan Yen [aut, cre] (<https://orcid.org/0000-0001-7386-0552>),
+  Ching-Chuan Chen [aut] (<https://orcid.org/0009-0007-8273-3206>)
+Repository: CRAN
+Date/Publication: 2023-11-29 14:00:16 UTC

@@ -1,0 +1,27 @@
+Package: versioning
+Title: Settings and File I/O using a Configuration YAML File
+Version: 0.1.0
+Authors@R: 
+    person("Nathaniel", "Henry", , "nat@henryspatialanalysis.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8150-4988"))
+Description: R data pipelines commonly require reading and writing data to versioned 
+    directories. Each directory might correspond to one step of a multi-step process,
+    where that version corresponds to particular settings for that step and a chain of
+    previous steps that each have their own versions. This package creates a configuration
+    object that makes it easy to read and write versioned data, based on YAML
+    configuration files loaded and saved to each versioned folder.
+Depends: R (>= 4.1.0)
+Imports: assertthat, data.table, foreign, glue, haven, sf, terra, R6,
+        yaml
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-11-06 19:38:02 UTC; nathenry
+Author: Nathaniel Henry [aut, cre] (<https://orcid.org/0000-0001-8150-4988>)
+Maintainer: Nathaniel Henry <nat@henryspatialanalysis.com>
+Repository: CRAN
+Date/Publication: 2023-11-09 07:10:02 UTC

@@ -1,0 +1,41 @@
+Package: apmx
+Type: Package
+Title: Automated Population Pharmacokinetic Dataset Assembly
+Version: 1.1.1
+Date: 2024-01-05
+Authors@R: c(
+    person("Stephen", "Amori", email="stephen.amori@amadorbio.com", role = c("aut", "cre", "cph")),
+    person("Ethan", "DellaMaestra", email="ethan.dellamaestra@amadorbio.com", role = c("aut")),
+    person("Michael", "Dick", email="michael.dick@amadorbio.com", role=c("aut")),
+    person("Daniel", "Litow", role = c("ctb")),
+    person("Jonah", "Lyon", role = c("ctb"))
+  )
+Maintainer: Stephen Amori <stephen.amori@amadorbio.com>
+Description: Automated methods to assemble population PK (pharmacokinetic) and
+    PKPD (pharmacodynamic) datasets for analysis in 'NONMEM' (non-linear mixed effects
+    modeling) by Bauer (2019) <doi:10.1002/psp4.12404>. The package includes functions
+    to build datasets from SDTM (study data tabulation module)
+    <https://www.cdisc.org/standards/foundational/sdtm>, ADaM (analysis dataset
+    module) <https://www.cdisc.org/standards/foundational/adam>, or other dataset
+    formats. The package will combine population datasets, add covariates, and
+    create documentation to support regulatory submission and internal communication.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, tidyr, purrr, this.path, flextable, officer,
+        tidyselect, utils, arsenal
+RoxygenNote: 7.2.3
+URL: https://github.com/stephen-amori/apmx
+BugReports: https://github.com/stephen-amori/apmx/issues
+Depends: R (>= 4.00)
+Suggests: rmarkdown, knitr, testthat, tibble
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-01-05 20:40:33 UTC; Stephen.Amori
+Author: Stephen Amori [aut, cre, cph],
+  Ethan DellaMaestra [aut],
+  Michael Dick [aut],
+  Daniel Litow [ctb],
+  Jonah Lyon [ctb]
+Repository: CRAN
+Date/Publication: 2024-01-09 09:00:18 UTC

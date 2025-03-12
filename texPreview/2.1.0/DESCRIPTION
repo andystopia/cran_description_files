@@ -1,0 +1,36 @@
+Type: Package
+Package: texPreview
+Title: Compile and Preview Snippets of 'LaTeX'
+Version: 2.1.0
+Date: 2024-01-23
+Authors@R: 
+    c(person(given = "Jonathan",
+             family = "Sidi",
+             role = c("aut", "cre"),
+             email = "yonicd@gmail.com"),
+      person(given = "Daniel",
+             family = "Polhamus",
+             role = "aut",
+             email = "danp@metrumrg.com"))
+Maintainer: Jonathan Sidi <yonicd@gmail.com>
+Description: Compile snippets of 'LaTeX' directly into images
+    from the R console to view in the 'RStudio' viewer pane, Shiny apps
+    and 'RMarkdown' documents.
+URL: https://github.com/yonicd/texPreview
+BugReports: https://github.com/yonicd/texPreview/issues
+Depends: R (>= 4.0.0)
+Imports: base64enc, details, fs, htmltools, knitr, magick, rematch2,
+        rstudioapi, svgPanZoom, utils, whisker, xml2, tinytex
+Suggests: covr, kableExtra, nlme, pdftools, rmarkdown, shiny, testthat,
+        texreg, xtable
+VignetteBuilder: knitr
+RdMacros: details
+NeedsCompilation: no
+RoxygenNote: 7.2.3
+License: MIT + file LICENSE
+Encoding: UTF-8
+Packaged: 2024-01-24 15:03:59 UTC; yonis
+Author: Jonathan Sidi [aut, cre],
+  Daniel Polhamus [aut]
+Repository: CRAN
+Date/Publication: 2024-01-24 15:50:02 UTC

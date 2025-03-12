@@ -1,0 +1,39 @@
+Package: xegaPopulation
+Title: Genetic Population Level Functions
+Version: 1.0.0.0
+Authors@R: 
+    person(given = "Andreas",
+           family = "Geyer-Schulz",
+           role = c("aut", "cre"),
+           email = "Andreas.Geyer-Schulz@kit.edu",
+           comment = c(ORCID = "0009-0000-5237-3579"))
+Description: This collection of gene representation-independent functions 
+   implements the population layer of extended evolutionary and genetic 
+   algorithms and its support. The population layer consists of functions 
+   for initializing, logging, observing, evaluating a population of genes, 
+   as well as of computing the next population. For parallel evaluation of a 
+   population of genes 4 execution models - named Sequential, MultiCore, 
+   FutureApply, and Cluster - are provided. They are implemented by 
+   configuring the lapply() function. The execution model FutureApply can be 
+   externally configured as recommended by Bengtsson (2021) 
+   <doi:10.32614/RJ-2021-048>. Configurable acceptance rules and cooling 
+   schedules (see Kirkpatrick, S., Gelatt, C. D. J, and Vecchi, M. P. (1983) 
+   <doi:10.1126/science.220.4598.671>, and Aarts, E., and Korst, J. 
+   (1989, ISBN:0-471-92146-7) offer simulated annealing or greedy randomized 
+   approximate search procedure elements. Adaptive crossover and mutation 
+   rates depending on population statistics generalize the approach of 
+   Stanhope, S. A. and Daida, J. M. (1996, ISBN:0-18-201-031-7). 
+License: MIT + file LICENSE
+URL: <https://github.com/ageyerschulz/xegaPopulation>
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0.0), parallel, future.apply, utils, stats
+Suggests: testthat (>= 3.0.0), future, parallelly
+Imports: xegaGaGene, xegaSelectGene
+NeedsCompilation: no
+Packaged: 2024-03-01 15:06:25 UTC; dj2333
+Author: Andreas Geyer-Schulz [aut, cre]
+    (<https://orcid.org/0009-0000-5237-3579>)
+Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
+Repository: CRAN
+Date/Publication: 2024-03-04 10:50:02 UTC

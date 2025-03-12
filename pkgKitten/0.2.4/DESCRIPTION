@@ -1,0 +1,26 @@
+Package: pkgKitten
+Type: Package
+Title: Create Simple Packages Which Do not Upset R Package Checks
+Version: 0.2.4
+Date: 2024-08-30
+Authors@R: person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                  comment = c(ORCID = "0000-0001-6419-907X"))
+Description: Provides a function kitten() which creates cute little 
+ packages which pass R package checks. This sets it apart from 
+ package.skeleton() which it calls, and which leaves imperfect files 
+ behind. As this is not exactly helpful for beginners, kitten() offers 
+ an alternative. Unit test support can be added via the 'tinytest'
+ package (if present), and documentation-creation support can be
+ added via 'roxygen2' (if present).
+License: GPL (>= 2)
+Suggests: whoami (>= 1.1.0), tinytest, roxygen2
+URL: https://github.com/eddelbuettel/pkgkitten,
+        https://eddelbuettel.github.io/pkgkitten/
+BugReports: https://github.com/eddelbuettel/pkgkitten/issues
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2024-08-30 16:32:36 UTC; edd
+Author: Dirk Eddelbuettel [aut, cre] (<https://orcid.org/0000-0001-6419-907X>)
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Repository: CRAN
+Date/Publication: 2024-08-30 17:00:02 UTC

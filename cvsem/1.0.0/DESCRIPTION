@@ -1,0 +1,25 @@
+Package: cvsem
+Title: SEM Model Comparison with K-Fold Cross-Validation
+Version: 1.0.0
+Authors@R: 
+    c(person("Anna", "Wysocki", , "awysocki@ucdavis.edu", role = c("aut","cre")),
+    person("Danielle", "Siegel", , "dpsiegel@ucdavis.edu", role = c("aut")),
+    person("Cameron", "allen", , "camallen@ucdavis.edu", role = c("aut")),
+    person("Philippe", "Rast", , "rast.ph@gmail.com", role = c("aut")))
+Description: The goal of 'cvsem' is to provide functions that allow for comparing Structural Equation Models (SEM) using cross-validation. Users can specify multiple SEMs using 'lavaan' syntax. 'cvsem' computes the Kullback Leibler (KL) Divergence between 1) the model implied covariance matrix estimated from the training data and 2) the sample covariance matrix estimated from the test data described in Cudeck, Robert & Browne (1983) <doi:10.18637/jss.v048.i02>. The KL Divergence is computed for each of the specified SEMs allowing for the models to be compared based on their prediction errors. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+Imports: lavaan, stats, Rdpack
+RdMacros: Rdpack
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-08-10 19:09:46 UTC; annawy
+Author: Anna Wysocki [aut, cre],
+  Danielle Siegel [aut],
+  Cameron allen [aut],
+  Philippe Rast [aut]
+Maintainer: Anna Wysocki <awysocki@ucdavis.edu>
+Repository: CRAN
+Date/Publication: 2022-08-13 12:30:05 UTC

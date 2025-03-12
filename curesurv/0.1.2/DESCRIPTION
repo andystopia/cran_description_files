@@ -1,0 +1,31 @@
+Package: curesurv
+Type: Package
+Title: Mixture and Non Mixture Parametric Cure Models to Estimate Cure
+        Indicators
+Version: 0.1.2
+Author: Juste Goungounga [aut, cre] (<https://orcid.org/0000-0002-9039-2639>),
+  Judith Breaud [aut] (<https://orcid.org/0009-0001-1432-6883>),
+  Olayide Boussari [aut] (<https://orcid.org/0000-0002-0343-853X>),
+  Laura Botta [ctb] (<https://orcid.org/0000-0002-2793-5338>),
+  Valerie Jooste [aut] (<https://orcid.org/0000-0002-9902-0700>)
+Authors@R: c( 
+    person("Juste", "Goungounga", , "juste.goungounga@ehesp.fr", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9039-2639")),
+    person("Judith", "Breaud", email = "breaudjudith@gmail.com", role = "aut",comment=c(ORCID="0009-0001-1432-6883")),
+    person("Olayide", "Boussari", email = "olayide.boussari@u-bourgogne.fr", role = "aut", comment = c(ORCID = "0000-0002-0343-853X")),
+    person("Laura Botta", email = "Laura.Botta@istitutotumori.mi.it", role = "ctb", comment = c(ORCID = "0000-0002-2793-5338")),
+    person("Valerie", "Jooste", email = "valerie.jooste@u-bourgogne.fr", role = "aut", comment = c(ORCID = "0000-0002-9902-0700")))  
+Maintainer: Juste Goungounga <juste.goungounga@ehesp.fr>
+Description: Fits a variety of cure models using excess hazard modeling methodology such as the mixture model proposed by Phillips et al. (2002) <doi:10.1002/sim.1101> The Weibull distribution is used to represent the survival function of the uncured patients; Fits also non-mixture cure model such as the time-to-null excess hazard model proposed by Boussari et al. (2020) <doi:10.1111/biom.13361>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5), stringr, survival
+Imports: numDeriv, stats, randtoolbox, bbmle, optimx, Formula, Deriv,
+        statmod
+Suggests: testthat, knitr, rmarkdown, xhaz, survexp.fr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-03-07 12:39:20 UTC; jbreaud
+Repository: CRAN
+Date/Publication: 2025-03-07 13:50:02 UTC

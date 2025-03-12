@@ -1,0 +1,35 @@
+Package: authoritative
+Title: Parse and Deduplicate Author Names
+Version: 0.1.0
+Authors@R: c(
+    person("Hugo", "Gruson", , "hugo@data.org", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-4094-1476")),
+    person("Chris", "Hartgerink", role = "rev",
+           comment = c(ORCID = "0000-0003-1050-6809"))
+    )
+Description: Utilities to parse authors fields from DESCRIPTION files and
+    general purpose functions to deduplicate names in database, beyond the
+    specific case of R package authors.
+License: MIT + file LICENSE
+URL: https://github.com/epiverse-connect/authoritative
+BugReports: https://github.com/epiverse-connect/authoritative/issues
+Depends: R (>= 4.1.0)
+Imports: stringi, utils
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/Needs/website: epiverse-trace/epiversetheme, tidyverse, igraph,
+        netUtils
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.3.2
+Config/Needs/build: moodymudskipper/devtag
+NeedsCompilation: no
+Packaged: 2025-02-03 17:27:42 UTC; hugo
+Author: Hugo Gruson [aut, cre, cph] (<https://orcid.org/0000-0002-4094-1476>),
+  Chris Hartgerink [rev] (<https://orcid.org/0000-0003-1050-6809>)
+Maintainer: Hugo Gruson <hugo@data.org>
+Repository: CRAN
+Date/Publication: 2025-02-03 18:30:02 UTC

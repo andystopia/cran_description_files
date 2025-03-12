@@ -1,0 +1,56 @@
+Package: sphunif
+Type: Package
+Title: Uniformity Tests on the Circle, Sphere, and Hypersphere
+Version: 1.4.0
+Date: 2024-05-21
+Authors@R: c(
+     person(given = "Eduardo", family = "García-Portugués",
+            role = c("aut", "cre"), email = "edgarcia@est-econ.uc3m.es",
+            comment = c(ORCID = "0000-0002-9224-4111")),
+     person(given = "Thomas", family = "Verdebout", role = "aut",
+            comment = c(ORCID = "0000-0002-3277-9587")),
+     person(given = "Alberto", family = "Fernández-de-Marcos", role = "ctb",
+            email = "albertfe@est-econ.uc3m.es"),
+     person(given = "Paula", family = "Navarro", role = "ctb",
+            email = "paula.navarro@unican.es")
+     )
+Description: Implementation of uniformity tests on the circle and
+    (hyper)sphere. The main function of the package is unif_test(), which
+    conveniently collects more than 35 tests for assessing uniformity on
+    S^{p-1} = {x in R^p : ||x|| = 1}, p >= 2. The test statistics are 
+    implemented in the unif_stat() function, which allows computing several
+    statistics for different samples within a single call, thus facilitating
+    Monte Carlo experiments. Furthermore, the unif_stat_MC() function allows
+    parallelizing them in a simple way. The asymptotic null distributions of
+    the statistics are available through the function unif_stat_distr(). The
+    core of 'sphunif' is coded in C++ by relying on the 'Rcpp' package.
+    The package also provides several novel datasets and gives the replicability
+    for the data applications/simulations in García-Portugués et al. (2021)
+    <doi:10.1007/978-3-030-69944-4_12>, García-Portugués et al. (2023)
+    <doi:10.3150/21-BEJ1454>, García-Portugués et al. (2024)
+    <doi:10.48550/arXiv.2108.09874>, and Fernández-de-Marcos and
+    García-Portugués (2024) <doi:10.48550/arXiv.2405.13531>.
+License: GPL-3
+LazyData: true
+Depends: R (>= 3.5.0), Rcpp
+Imports: doFuture, doRNG, foreach, future, gsl, rotasym
+Suggests: CompQuadForm, goftest, knitr, markdown, mvtnorm, numDeriv,
+        progress, progressr, rmarkdown, scatterplot3d, testthat,
+        viridisLite
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/egarpor/sphunif
+BugReports: https://github.com/egarpor/sphunif
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-05-24 11:24:25 UTC; Eduardo
+Author: Eduardo García-Portugués [aut, cre]
+    (<https://orcid.org/0000-0002-9224-4111>),
+  Thomas Verdebout [aut] (<https://orcid.org/0000-0002-3277-9587>),
+  Alberto Fernández-de-Marcos [ctb],
+  Paula Navarro [ctb]
+Maintainer: Eduardo García-Portugués <edgarcia@est-econ.uc3m.es>
+Repository: CRAN
+Date/Publication: 2024-05-24 21:50:01 UTC

@@ -1,0 +1,29 @@
+Package: MigrationDetectR
+Type: Package
+Title: Segment-Based Migration Detection Algorithm
+Version: 0.1.1
+Authors@R: c(
+    person("Johannes", "Mast", email = "johannes.mast@dlr.de", role = c("aut", "cre"),comment = c("Author of R code and wrappers", ORCID = "0000-0001-6595-5834")),
+    person("Guanghua", "Chi", email = "guanghua@berkeley.edu", role = c("aut"),comment = c("Developer of the Algorithm", ORCID = "0000-0003-0430-7483")),
+    person("German Aerospace Center","DLR", role = c("cph", "fnd"))
+    )
+Description: Detection of migration events and segments of continuous residence 
+    based on irregular time series of location data
+    as published in Chi et al. (2020) <doi:10.1371/journal.pone.0239408>.
+License: Apache License (>= 2)
+Copyright: German Aerospace Center (DLR)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Depends: R (>= 3.5.0)
+Imports: assertthat, dplyr, lifecycle, lubridate, tibble, tidyr
+NeedsCompilation: no
+Packaged: 2023-11-11 09:05:47 UTC; johan
+Author: Johannes Mast [aut, cre] (Author of R code and wrappers,
+    <https://orcid.org/0000-0001-6595-5834>),
+  Guanghua Chi [aut] (Developer of the Algorithm,
+    <https://orcid.org/0000-0003-0430-7483>),
+  German Aerospace Center DLR [cph, fnd]
+Maintainer: Johannes Mast <johannes.mast@dlr.de>
+Repository: CRAN
+Date/Publication: 2023-11-11 11:53:25 UTC

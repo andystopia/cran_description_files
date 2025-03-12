@@ -1,0 +1,54 @@
+Type: Package
+Package: tidylda
+Title: Latent Dirichlet Allocation Using 'tidyverse' Conventions
+Version: 0.0.5
+Authors@R: 
+    c(
+    person(given = "Tommy",
+           family = "Jones",
+           role = c("aut", "cre"),
+           email = "jones.thos.w@gmail.com",
+           comment = c(ORCID = "0000-0001-6457-2452")
+           ),
+    person("Brendan", "Knapp", 
+           email = "brendan.g.knapp@gmail.com", 
+           role = "ctb",
+           comment = c(ORCID = "0000-0003-3284-4972")
+           ),
+    person(given = "Barum",
+           family = "Park",
+           role = c("ctb"),
+           email = "baruuum@gmail.com"
+           )
+    )
+Description: Implements an algorithm for Latent Dirichlet
+    Allocation (LDA), Blei et at. (2003) <https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf>,
+    using style conventions from the 'tidyverse',
+    Wickham et al. (2019)<doi:10.21105/joss.01686>,
+    and 'tidymodels', Kuhn et al.<https://tidymodels.github.io/model-implementation-principles/>.
+    Fitting is done via collapsed Gibbs sampling.
+    Also implements several novel features for LDA such as guided models and
+    transfer learning based on ongoing and, as yet, unpublished research.
+License: MIT + file LICENSE
+URL: https://github.com/TommyJones/tidylda/
+BugReports: https://github.com/TommyJones/tidylda/issues
+Depends: R (>= 3.5.0)
+Imports: dplyr, generics, gtools, Matrix, methods, mvrsquared (>=
+        0.1.0), Rcpp (>= 1.0.2), rlang, stats, stringr, tibble, tidyr,
+        tidytext
+Suggests: ggplot2, knitr, parallel, quanteda, testthat, tm, slam,
+        spelling, covr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress, RcppThread
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Language: en-US
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-04-20 21:24:04 UTC; tommy
+Author: Tommy Jones [aut, cre] (<https://orcid.org/0000-0001-6457-2452>),
+  Brendan Knapp [ctb] (<https://orcid.org/0000-0003-3284-4972>),
+  Barum Park [ctb]
+Maintainer: Tommy Jones <jones.thos.w@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-22 18:20:02 UTC

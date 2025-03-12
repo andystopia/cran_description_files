@@ -1,0 +1,45 @@
+Package: PRISMA2020
+Title: Make Interactive 'PRISMA' Flow Diagrams
+Version: 1.1.1
+Authors@R: c(
+    person(given = "Neal",
+           family = "Haddaway",
+           role = "aut",
+           email = "nealhaddaway@gmail.com",
+           comment = c(ORCID = "0000-0003-3902-2234")),
+    person("Luke", "McGuinness", role = "aut",
+           email = "luke.mcguinness@bristol.ac.uk",
+           comment = c(ORCID = "0000-0001-8730-9761")),
+    person("Chris", "Pritchard", role = c("aut", "cre"),
+            email = "chris.pritchard@ntu.ac.uk",
+            comment = c(ORCID = "0000-0002-1143-9751")),
+    person("Brennan", "Chapman", role = "ctb"),
+    person("Hossam", "Hammady", role= "ctb"))
+Description: Systematic reviews should be described in a high degree of 
+    methodological detail. The 'PRISMA' Statement calls for a high level of 
+    reporting detail in systematic reviews and meta-analyses. An integral part 
+    of the methodological description of a review is a flow diagram. 
+    This package produces an interactive flow diagram that conforms to the 
+    'PRISMA2020' preprint. When made interactive, the reader/user can click 
+    on each box and be directed to another website or file online (e.g. a 
+    detailed description of the screening methods, or a list of excluded full 
+    texts), with a mouse-over tool tip that describes the information linked 
+    to in more detail. Interactive versions can be saved as HTML files, 
+    whilst static versions for inclusion in manuscripts can be saved as 
+    HTML, PDF, PNG, SVG, PS or WEBP files.
+Imports: DiagrammeR, DiagrammeRsvg, htmltools, htmlwidgets, rsvg,
+        scales, shiny, shinyjs, stats, stringr, utils, xml2, webp, DT,
+        rio, tools, zip
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-02-08 23:14:33 UTC; runner
+Author: Neal Haddaway [aut] (<https://orcid.org/0000-0003-3902-2234>),
+  Luke McGuinness [aut] (<https://orcid.org/0000-0001-8730-9761>),
+  Chris Pritchard [aut, cre] (<https://orcid.org/0000-0002-1143-9751>),
+  Brennan Chapman [ctb],
+  Hossam Hammady [ctb]
+Maintainer: Chris Pritchard <chris.pritchard@ntu.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-02-09 11:20:15 UTC

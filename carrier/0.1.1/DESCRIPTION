@@ -1,0 +1,30 @@
+Package: carrier
+Title: Isolate Functions for Remote Execution
+Version: 0.1.1
+Authors@R: c(
+    person("Lionel", "Henry", , "lionel@posit.co", role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Sending functions to remote processes can be wasteful of
+    resources because they carry their environments with them. With the
+    carrier package, it is easy to create functions that are isolated from
+    their environment. These isolated functions, also called crates, print
+    at the console with their total size and can be easily tested locally
+    before being sent to a remote.
+License: MIT + file LICENSE
+URL: https://github.com/r-lib/carrier
+BugReports: https://github.com/r-lib/carrier/issues
+Depends: R (>= 3.4.0)
+Imports: lobstr, rlang (>= 1.0.1)
+Suggests: covr, testthat (>= 3.0.0)
+ByteCompile: true
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-04-28 11:29:54 UTC; lionel
+Author: Lionel Henry [aut, cre],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Lionel Henry <lionel@posit.co>
+Repository: CRAN
+Date/Publication: 2023-04-28 15:10:02 UTC

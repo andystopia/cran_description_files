@@ -1,0 +1,40 @@
+Package: snpsettest
+Title: A Set-Based Association Test using GWAS Summary Statistics
+Version: 0.1.2
+Authors@R: c(
+    person(given = "Jaehyun",
+           family = "Joo",
+           role = c("aut", "cre"),
+           email = "jaehyunjoo@outlook.com"),
+    person(given = "Blanca",
+           family = "Himes",
+           role = c("aut"),
+           email = "bhimes@pennmedicine.upenn.edu"))
+Description: The goal of 'snpsettest' is to provide simple tools that perform
+             set-based association tests (e.g., gene-based association tests)
+             using GWAS (genome-wide association study) summary statistics. A
+             set-based association test in this package is based on the
+             statistical model described in VEGAS (versatile gene-based
+             association study), which combines the effects of a set of SNPs
+             accounting for linkage disequilibrium between markers. This package
+             uses a different approach from the original VEGAS implementation to
+             compute set-level p values more efficiently, as described in
+             <https://github.com/HimesGroup/snpsettest/wiki/Statistical-test-in-snpsettest>.
+License: GPL (>= 3)
+Depends: R (>= 3.1.0)
+Imports: gaston, data.table, Rcpp
+Suggests: tidyr, knitr, rmarkdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+URL: https://github.com/HimesGroup/snpsettest
+BugReports: https://github.com/HimesGroup/snpsettest/issues
+NeedsCompilation: yes
+Packaged: 2023-09-09 17:04:05 UTC; jaehyun
+Author: Jaehyun Joo [aut, cre],
+  Blanca Himes [aut]
+Maintainer: Jaehyun Joo <jaehyunjoo@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-09-09 17:30:02 UTC

@@ -1,0 +1,26 @@
+Package: PoissonMultinomial
+Type: Package
+Title: The Poisson-Multinomial Distribution
+Version: 1.1
+Date: 2023-12-07
+Authors@R: c(person("Yili Hong", role = c("aut", "cre"),
+                     email = "yilihong@vt.edu"),
+              person("Zhengzhi Lin", role = c("aut","ctb"), email = "zhengzhi@vt.edu"),
+              person("Yueyao Wang",  role = c("aut","ctb"), email = "yueyao94@vt.edu"),
+              person("Florian Junge", role = c("aut", "ctb"), email = "florian.junge@h-da.de"))
+Maintainer: Yili Hong <yilihong@vt.edu>
+Description: Implementation of the exact, normal approximation, and simulation-based methods for computing the probability mass function (pmf) and cumulative distribution function (cdf) of the Poisson-Multinomial distribution, together with a random number generator for the distribution. The exact method is based on multi-dimensional fast Fourier transformation (FFT) of the characteristic function of the Poisson-Multinomial distribution. The normal approximation method uses a multivariate normal distribution to approximate the pmf of the distribution based on central limit theorem. The simulation method is based on the law of large numbers. Details about the methods are available in Lin, Wang, and Hong (2022) <DOI:10.1007/s00180-022-01299-0>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: mvtnorm, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: fftw3(>=3.3)
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2023-12-07 16:28:05 UTC; hong1
+Author: Yili Hong [aut, cre],
+  Zhengzhi Lin [aut, ctb],
+  Yueyao Wang [aut, ctb],
+  Florian Junge [aut, ctb]
+Repository: CRAN
+Date/Publication: 2023-12-07 17:20:02 UTC

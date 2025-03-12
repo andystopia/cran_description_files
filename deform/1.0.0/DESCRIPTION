@@ -1,0 +1,22 @@
+Package: deform
+Type: Package
+Title: Spatial Deformation and Dimension Expansion Gaussian Processes
+Version: 1.0.0
+Date: 2023-10-18
+Authors@R: 
+    person("Ben", "Youngman", , "b.youngman@exeter.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0215-8189"))
+Maintainer: Ben Youngman <b.youngman@exeter.ac.uk>
+Description: Methods for fitting nonstationary Gaussian process models by spatial deformation, as introduced by Sampson and Guttorp (1992) <doi:10.1080/01621459.1992.10475181>, and by dimension expansion, as introduced by Bornn et al. (2012) <doi:10.1080/01621459.2011.646919>. Low-rank thin-plate regression splines, as developed in Wood, S.N. (2003) <doi:10.1111/1467-9868.00374>, are used to either transform co-ordinates or create new latent dimensions.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: Rcpp (>= 1.0.10), MASS
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: lattice, gridExtra
+Depends: R (>= 3.5.0)
+NeedsCompilation: yes
+Packaged: 2023-10-18 16:28:25 UTC; ben
+Author: Ben Youngman [aut, cre] (<https://orcid.org/0000-0003-0215-8189>)
+Repository: CRAN
+Date/Publication: 2023-10-19 08:10:02 UTC

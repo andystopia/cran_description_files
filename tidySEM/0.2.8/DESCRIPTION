@@ -1,0 +1,49 @@
+Package: tidySEM
+Type: Package
+Title: Tidy Structural Equation Modeling
+Version: 0.2.8
+Authors@R: 
+    c(person(given = c("Caspar", "J."),
+             family = "van Lissa",
+             role = c("aut", "cre"),
+             email = "c.j.vanlissa@tilburguniversity.edu",
+             comment = c(ORCID = "0000-0002-0808-5024")),
+      person(given = c("Mauricio"),
+             family = "Garnier-Villarreal",
+             role = c("ctb"),
+             email = "mgv@pm.me",
+             comment = c(ORCID = "0000-0002-2951-6647")),
+      person(given = c("Frank", "C"),
+             family = "Gootjes",
+             role = c("ctb"),
+             email = "f.c.gootjes@uu.nl",
+             comment = c(ORCID = "0000-0002-0639-1001")) )
+Description: A tidy workflow for generating, estimating, reporting,
+    and plotting structural equation models using 'lavaan', 'OpenMx', or
+    'Mplus'. Throughout this workflow, elements of syntax, results, and graphs
+    are represented as 'tidy' data, making them easy to customize.
+    Includes functionality to estimate latent class analyses.
+License: GPL (>= 3)
+URL: https://cjvanlissa.github.io/tidySEM/
+BugReports: https://github.com/cjvanlissa/tidySEM/issues
+Depends: R (>= 4.0.0), stats, utils
+Imports: ggplot2 (>= 3.4.2), lavaan, blavaan, MplusAutomation, igraph
+        (>= 2.0.0), psych, methods, gtable, dbscan, RANN, Matrix, bain,
+        car, future.apply, progressr, nonnest2 (>= 0.5.6)
+Suggests: testthat, knitr, dplyr, stringr, covr, tidyLPA, poLCA, umx,
+        mclust, MASS, scales, yaml, formatR, dagitty, mice, ggraph,
+        OpenMx, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-03-04 09:39:54 UTC; vanlissa
+Author: Caspar J. van Lissa [aut, cre]
+    (<https://orcid.org/0000-0002-0808-5024>),
+  Mauricio Garnier-Villarreal [ctb]
+    (<https://orcid.org/0000-0002-2951-6647>),
+  Frank C Gootjes [ctb] (<https://orcid.org/0000-0002-0639-1001>)
+Maintainer: Caspar J. van Lissa <c.j.vanlissa@tilburguniversity.edu>
+Repository: CRAN
+Date/Publication: 2025-03-04 10:20:02 UTC

@@ -1,0 +1,50 @@
+Package: rdiversity
+Type: Package
+Title: Measurement and Partitioning of Similarity-Sensitive
+        Biodiversity
+Version: 2.2.0
+Date: 2022-04-29
+Authors@R: c(person("Sonia", "Mitchell", email = "sonia.mitchell@glasgow.ac.uk",
+                  role = c("aut"), comment = c(ORCID = "0000-0003-1536-2066")),
+             person("Richard", "Reeve", email = "richard.reeve@glasgow.ac.uk",
+                  role = c("cre", "aut", "ths"), comment = c(ORCID = "0000-0003-2589-8091")),
+             person("Tom", "White", email = "whitetomjames@gmail.com",
+                  role = "ctb", comment = c(ORCID = "0000-0002-9639-3800")),
+             person("Daniel", "Dörrhöfer", email = "ddo@openmailbox.org", role = "ctb"),
+             person("Aaron", "Rudkin", email = "rudkin@ucla.edu", role = "ctb"))
+Maintainer: Richard Reeve <richard.reeve@glasgow.ac.uk>
+URL: https://github.com/boydorr/rdiversity
+BugReports: https://github.com/boydorr/rdiversity/issues
+Description: Provides a framework for the measurement and partitioning of
+    the (similarity-sensitive) biodiversity of a metacommunity and its
+    constituent subcommunities. Richard Reeve, et al. (2016) 
+    <arXiv:1404.6520v3>.
+License: GPL-3
+Depends: R (>= 2.10)
+Imports: methods, reshape2, stats, stringdist, utils
+Suggests: ape, testthat, knitr, markdown, rmarkdown, covr
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+Collate: 'ancestral_nodes.R' 'binary.R' 'chainsaw.R'
+        'check_partition.R' 'check_phypartition.R' 'check_similarity.R'
+        'class-distance.R' 'class-metacommunity.R' 'class-powermean.R'
+        'class-relativeentropy.R' 'class-similarity.R'
+        'descendant_tips.R' 'similarity.R' 'dist2sim.R' 'distance.R'
+        'metadiv.R' 'subdiv.R' 'metacommunity.R'
+        'diversity-components.R' 'diversity-measures.R' 'gen2dist.r'
+        'geneid.R' 'genevec.R' 'hs_parameters.R' 'inddiv.R'
+        'phy2branch.R' 'phy2dist.R' 'phy_abundance.R' 'phy_struct.R'
+        'power_mean.R' 'powermean.R' 'rdiversity-package.R'
+        'relativeentropy.R' 'repartition.R' 'smatrix.R' 'summarise.R'
+        'tax2dist.R' 'taxfac.R' 'taxid.R' 'taxmask.R' 'taxvec.R'
+        'tbar.R' 'zmatrix.R'
+NeedsCompilation: no
+Packaged: 2022-05-05 23:28:39 UTC; richardr
+Author: Sonia Mitchell [aut] (<https://orcid.org/0000-0003-1536-2066>),
+  Richard Reeve [cre, aut, ths] (<https://orcid.org/0000-0003-2589-8091>),
+  Tom White [ctb] (<https://orcid.org/0000-0002-9639-3800>),
+  Daniel Dörrhöfer [ctb],
+  Aaron Rudkin [ctb]
+Repository: CRAN
+Date/Publication: 2022-05-06 07:00:02 UTC

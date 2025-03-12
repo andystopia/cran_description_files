@@ -1,0 +1,31 @@
+Package: cencrne
+Title: Consistent Estimation of the Number of Communities via
+        Regularized Network Embedding
+Version: 1.0.0
+Authors@R: 
+    c(person("Mingyang", "Ren", email = "renmingyang17@mails.ucas.ac.cn", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8061-9940")),
+      person("Sanguo", "Zhang", role = c("aut")),
+      person("Junhui", "Wang", role = c("aut")))
+Description: The network analysis plays an important role in numerous application domains including biomedicine. 
+             Estimation of the number of communities is a fundamental and critical issue in network analysis. Most existing studies assume that the number of communities is known a priori, or lack of rigorous theoretical guarantee on the estimation consistency. This method proposes a regularized network embedding model to simultaneously estimate the community structure and the number of communities in a unified formulation. 
+	           The proposed model equips network embedding with a novel composite regularization term, which pushes the embedding vector towards its center and collapses similar community centers with each other. A rigorous theoretical analysis is conducted, establishing asymptotic consistency in terms of community detection and estimation of the number of communities. 
+	           Reference: 
+             Ren, M., Zhang S. and Wang J. (2022). "Consistent Estimation of the Number of Communities via Regularized Network Embedding". Biometrics, <doi:10.1111/biom.13815>.
+License: GPL-2
+Encoding: UTF-8
+Imports: MASS, Matrix
+LazyData: true
+LazyLoad: yes
+RoxygenNote: 7.1.2
+Depends: R (>= 3.5.0)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2022-12-27 15:56:52 UTC; 10259
+Author: Mingyang Ren [aut, cre] (<https://orcid.org/0000-0002-8061-9940>),
+  Sanguo Zhang [aut],
+  Junhui Wang [aut]
+Maintainer: Mingyang Ren <renmingyang17@mails.ucas.ac.cn>
+Repository: CRAN
+Date/Publication: 2023-01-09 10:00:05 UTC

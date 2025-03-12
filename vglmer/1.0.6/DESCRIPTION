@@ -1,0 +1,29 @@
+Package: vglmer
+Type: Package
+Title: Variational Inference for Hierarchical Generalized Linear Models
+Version: 1.0.6
+Authors@R: person("Max", "Goplerud", email = "mgoplerud@austin.utexas.edu", 
+    role = c("aut", "cre"))
+Encoding: UTF-8
+License: GPL (>= 2)
+Description: Estimates hierarchical models using variational inference. 
+    At present, it can estimate logistic, linear, and negative binomial models. 
+    It can accommodate models with an arbitrary number of random effects and 
+    requires no integration to estimate. It also provides the ability to improve 
+    the quality of the approximation using marginal augmentation. 
+    Goplerud (2022) <doi:10.1214/21-BA1266> and Goplerud (2024) <doi:10.1017/S0003055423000035> 
+    provide details on the variational algorithms.
+Imports: Rcpp (>= 1.0.1), lme4, CholWishart, mvtnorm, Matrix, stats,
+        graphics, methods, lmtest, splines, mgcv
+Depends: R (>= 3.0.2)
+Suggests: SuperLearner, MASS, tictoc, testthat, gKRLS
+LinkingTo: Rcpp, RcppEigen (>= 0.3.3.4.0)
+URL: https://github.com/mgoplerud/vglmer
+BugReports: https://github.com/mgoplerud/vglmer/issues
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-11-07 22:25:33 UTC; Max
+Author: Max Goplerud [aut, cre]
+Maintainer: Max Goplerud <mgoplerud@austin.utexas.edu>
+Repository: CRAN
+Date/Publication: 2024-11-07 23:00:02 UTC

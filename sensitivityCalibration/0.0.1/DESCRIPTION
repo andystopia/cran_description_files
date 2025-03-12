@@ -1,0 +1,17 @@
+Package: sensitivityCalibration
+Type: Package
+Title: A Calibrated Sensitivity Analysis for Matched Observational
+        Studies
+Version: 0.0.1
+Author: Bo Zhang
+Maintainer: Bo Zhang <bozhan@wharton.upenn.edu>
+Description: Implements the calibrated sensitivity analysis approach for matched observational studies. Our sensitivity analysis framework views matched sets as drawn from a super-population. The unmeasured confounder is modeled as a random variable. We combine matching and model-based covariate-adjustment methods to estimate the treatment effect. The hypothesized unmeasured confounder enters the picture as a missing covariate. We adopt a state-of-art Expectation Maximization (EM) algorithm to handle this missing covariate problem in generalized linear models (GLMs). As our method also estimates the effect of each observed covariate on the outcome and treatment assignment, we are able to calibrate the unmeasured confounder to observed covariates.
+      Zhang, B., Small, D. S. (2018). <arXiv:1812.00215>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, relaimpo, splitstackshape, ggrepel, stringi, plotly
+NeedsCompilation: no
+Packaged: 2018-12-09 20:48:12 UTC; ASUS
+Repository: CRAN
+Date/Publication: 2018-12-18 11:20:06 UTC

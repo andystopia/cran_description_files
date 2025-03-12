@@ -1,0 +1,35 @@
+Package: spFSR
+Type: Package
+Title: Feature Selection and Ranking via Simultaneous Perturbation
+        Stochastic Approximation
+Version: 2.0.4
+Authors@R: c(
+  person("David", "Akman", email = "david.v.akman@gmail.com", role = c("aut", "cre")),
+  person("Babak", "Abbasi", email = "babak.abbasi@rmit.edu.au", role = c("aut", "ctb")),
+  person("Yong Kai", "Wong", email = "yongkai1017@gmail.com", role = c("aut", "ctb")),
+  person("Guo Feng Anders", "Yeo", email = "anders@yeo.id.au", role = c("aut", "ctb")),
+  person("Zeren", "D. Yenice", email = "zerendyenice@gmail.com", role = "ctb"))  
+Description: An implementation of feature selection, weighting and ranking via simultaneous perturbation
+    stochastic approximation (SPSA). The SPSA-FSR algorithm searches for a locally optimal set of
+    features that yield the best predictive performance using some error measures such as mean 
+    squared error (for regression problems) and accuracy rate (for classification problems).
+License: GPL-3
+Encoding: UTF-8
+Depends: mlr3 (>= 0.14.0), future (>= 1.28.0), tictoc (>= 1.0)
+Imports: mlr3pipelines (>= 0.4.2), mlr3learners (>= 0.5.4), ranger (>=
+        0.14.1), parallel (>= 3.4.2), ggplot2 (>= 2.2.1), lgr (>=
+        0.4.4)
+Suggests: caret (>= 6.0), MASS (>= 7.3)
+URL: https://www.featureranking.com/
+BugReports: https://github.com/yongkai17/spFSR/issues
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2023-03-16 23:19:58 UTC; anders
+Author: David Akman [aut, cre],
+  Babak Abbasi [aut, ctb],
+  Yong Kai Wong [aut, ctb],
+  Guo Feng Anders Yeo [aut, ctb],
+  Zeren D. Yenice [ctb]
+Maintainer: David Akman <david.v.akman@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-03-17 10:50:02 UTC

@@ -1,0 +1,28 @@
+Package: synthesizer
+Type: Package
+Title: Synthesize Data Based on Empirical Quantile Functions and Rank
+        Order Matching
+Version: 0.4.0
+Authors@R: c( person("Mark", "van der Loo", role=c("aut","cre")
+             , email="mark.vanderloo@gmail.com"
+             , comment= c(ORCID="0000-0002-9807-4686")))
+Maintainer: Mark van der Loo <mark.vanderloo@gmail.com>
+Description: Data is synthesized using a combination of inverse transform
+    sampling using the empirical quantile functions for each variable, and 
+    then copying the rank order structure from the original dataset. The
+    syntesizer method has a tunable parameter allowing to gradually move
+    from realistic and possibly unsafe synthetic data to decorrelated data
+    of less utility.
+License: EUPL
+URL: https://github.com/markvanderloo/synthesizer
+Imports: stats, randomForest
+VignetteBuilder: simplermarkdown
+Depends: R (>= 3.5.0)
+Suggests: tinytest, simplermarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-02-07 10:43:20 UTC; mark
+Author: Mark van der Loo [aut, cre] (<https://orcid.org/0000-0002-9807-4686>)
+Repository: CRAN
+Date/Publication: 2025-02-07 11:30:04 UTC

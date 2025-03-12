@@ -1,0 +1,40 @@
+Package: LongDat
+Type: Package
+Title: A Tool for 'Covariate'-Sensitive Longitudinal Analysis on
+        'omics' Data
+Version: 1.1.3
+Authors@R: c(person(given = "Chia-Yu",
+           family = "Chen",
+           role = c("aut", "cre"),
+           email = "Chia-Yu.Chen@mdc-berlin.de",
+           comment = c(ORCID = "0000-0003-1765-7132")),
+           person(given = "Sofia",
+           family = "Forslund",
+           role = "ctb",
+           email = "Sofia.Forslund@mdc-berlin.de",
+           comment = c(ORCID = "0000-0003-4285-6993")))
+Description: This tool takes longitudinal dataset as input and analyzes if there is significant 
+             change of the features over time (a proxy for treatments), while detects and controls 
+             for 'covariates' simultaneously. 'LongDat' is able to take in several data types as input, 
+             including count, proportion, binary, ordinal and continuous data. The output table contains 
+              p values, effect sizes and 'covariates' of each feature, making the downstream analysis easy.
+License: GPL-2
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+URL: https://github.com/CCY-dev/LongDat
+BugReports: https://github.com/CCY-dev/LongDat/issues
+RoxygenNote: 7.2.3
+Depends: R (>= 4.0.0)
+Imports: lme4, reshape2, glmmTMB, emmeans, bestNormalize, MASS,
+        ggplot2, stringr, magrittr, tibble, dplyr, graphics, utils,
+        stats, rlang, car, rstatix, effsize, tidyr, patchwork
+Suggests: rmarkdown, knitr, kableExtra
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-11-19 01:50:01 UTC; Jessica
+Author: Chia-Yu Chen [aut, cre] (<https://orcid.org/0000-0003-1765-7132>),
+  Sofia Forslund [ctb] (<https://orcid.org/0000-0003-4285-6993>)
+Maintainer: Chia-Yu Chen <Chia-Yu.Chen@mdc-berlin.de>
+Repository: CRAN
+Date/Publication: 2024-11-19 03:20:07 UTC

@@ -1,0 +1,31 @@
+Package: trace
+Title: Tandem Repeat Analysis by Capillary Electrophoresis
+Version: 0.5.0
+Authors@R: c(
+    person("Zachariah", "McLean", , "zachariah.louis.mclean@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-0968-0538")),
+    person("Kevin", "Correia", role = "aut"),
+    person("Andrew", "Jiang", role = "ctb")
+  )
+Description: A pipeline for short tandem repeat instability analysis from fragment analysis data. Inputs of fsa files or peak tables, and a user supplied metadata data-frame. The package identifies ladders, calls peaks, identifies the modal peaks, calls repeats, then calculates repeat instability metrics (e.g. expansion index from Lee et al. (2010) <doi:10.1186/1752-0509-4-29>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: dplyr, ggplot2, knitr, rmarkdown, shinytest2, testthat (>=
+        3.0.0)
+Config/testthat/edition: 3
+Imports: graphics, grDevices, lme4, methods, mgcv, plotly, pracma,
+        seqinr, shiny, stats, utils
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+URL: https://zachariahmclean.github.io/trace/
+NeedsCompilation: no
+Packaged: 2025-01-15 19:42:44 UTC; gusella_lab
+Author: Zachariah McLean [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0968-0538>),
+  Kevin Correia [aut],
+  Andrew Jiang [ctb]
+Maintainer: Zachariah McLean <zachariah.louis.mclean@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-16 11:00:02 UTC

@@ -1,0 +1,33 @@
+Package: cherry
+Version: 0.6-15
+Date: 2025-01-17
+Title: Multiple Testing Methods for Exploratory Research
+Author: Jelle Goeman [aut, cre],
+  Aldo Solari [aut],
+  Rosa Meijer [aut]
+Authors@R: c(person(given = "Jelle",
+                    family = "Goeman",
+                    role = c("aut", "cre"),
+                    email = "j.j.goeman@lumc.nl"),
+             person(given = "Aldo",
+                    family = "Solari",
+                    role = "aut"),
+             person(given = "Rosa",
+                    family = "Meijer",
+                    role = "aut"))
+Maintainer: Jelle Goeman <j.j.goeman@lumc.nl>
+Depends: methods
+Imports: bitops, lpSolve, hommel
+Suggests: MASS, multtest
+Description: Provides an alternative approach to multiple testing
+        by calculating a simultaneous upper confidence bounds for the
+        number of true null hypotheses among any subset of the hypotheses of interest, 
+        using the methods of Goeman and Solari (2011) <doi:10.1214/11-STS356>. 
+License: GPL (>= 2)
+Collate: closed.R shortcuts.R Meinshausen.R regionmethod.R DAGmethod.R
+        DAGstructure.R structuredHolm.R
+LazyLoad: yes
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2025-01-17 13:43:34 UTC; jjgoeman
+Date/Publication: 2025-01-17 15:10:11 UTC

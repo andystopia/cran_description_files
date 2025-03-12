@@ -1,0 +1,28 @@
+Package: pPCA
+Type: Package
+Title: Partial Principal Component Analysis of Partitioned Large Sparse
+        Matrices
+Version: 1.1
+Date: 2024-10-22
+Authors@R: c(
+    person("Srika", "Raja", , "sri1919@iastate.edu", c("aut", "cre")),
+    person("Somak", "Dutta", , "somakd@iastate.edu", "aut")
+    )
+Maintainer: Srika Raja <sri1919@iastate.edu>
+Description: Performs partial principal component analysis of a large sparse matrix. 
+  The matrix may be stored as a list of matrices to be concatenated (implicitly) horizontally.
+  Useful application includes cases where the number of total nonzero entries exceed the capacity of 
+  32 bit integers (e.g., with large Single Nucleotide Polymorphism data).
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.0.2), methods, RSpectra (>= 0.16-1)
+Imports: Matrix (>= 1.1-0), Rcpp (>= 0.11.5)
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Suggests: ggbiplot
+RoxygenNote: 7.3.2
+Packaged: 2024-10-22 06:14:10 UTC; srika
+Author: Srika Raja [aut, cre],
+  Somak Dutta [aut]
+Repository: CRAN
+Date/Publication: 2024-10-22 06:30:02 UTC

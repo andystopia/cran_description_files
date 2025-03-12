@@ -1,0 +1,42 @@
+Package: IPEDSuploadables
+Title: Transforms Institutional Data into Text Files for IPEDS
+        Automated Import/Upload
+Version: 2.10.0
+Authors@R: c(
+            person(given = "Alison", family = "Lanski", 
+            role = c("aut", "cre"),
+            email = "alanski@nd.edu"),
+            person("Shiloh", "Fling", 
+            role = c("aut"),
+            email = "shilohfling@gmail.com"))
+Description: Starting from user-supplied institutional data, these scripts 
+    transform, aggregate, and reshape the information to produce 
+    key-value pair data files that are able to be uploaded to IPEDS (Integrated Postsecondary Education Data System) 
+    through their submission portal <https://surveys.nces.ed.gov/ipeds/>. Starting data specifications can be found in the vignettes.  
+    Final files are saved locally to a location of the user's choice. 
+    User-friendly readable files can also be produced for purposes of data review and validation. 
+Note: Because IPEDS requirements may change from year to year, having
+        the most recent version of this package is highly recommended.
+        Old versions can be found as GitHub branches. The package can
+        also be used to convert any correctly-prepared data into a
+        key-value pair format for any survey (IPEDS or non-IPEDS).
+URL: https://github.com/AlisonLanski/IPEDSuploadables,
+        https://alisonlanski.github.io/IPEDSuploadables/
+BugReports: https://github.com/AlisonLanski/IPEDSuploadables/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: dplyr (>= 1.0.0), lifecycle, lubridate, magrittr, purrr,
+        rlang, stringr, svDialogs, tidyr (>= 1.0.0), utils
+Suggests: knitr, rmarkdown, kableExtra, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: R (>= 3.6.0)
+Config/testthat/edition: 2
+NeedsCompilation: no
+Packaged: 2024-12-08 21:14:54 UTC; alanski
+Author: Alison Lanski [aut, cre],
+  Shiloh Fling [aut]
+Maintainer: Alison Lanski <alanski@nd.edu>
+Repository: CRAN
+Date/Publication: 2024-12-08 21:30:02 UTC

@@ -1,0 +1,26 @@
+Package: izmir
+Type: Package
+Title: R Wrapper for Izmir Municipality Open Data Portal
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Ozancan",
+             family = "Ozdemir",
+             role = c("aut","cre"),
+             email = "ozancanozdemir@gmail.com"))
+Maintainer: Ozancan Ozdemir <ozancanozdemir@gmail.com>
+Description: Call the data wrappers for Izmir Metropolitan Municipality's Open Data Portal. This will return all datasets formatted as Excel files (.csv or .xlsx), as well as datasets that require an API key.
+License: MIT + file LICENSE
+URL: https://github.com/ozancanozdemir/izmir
+BugReports: https://github.com/ozancanozdemir/izmir/issues
+Depends: R (>= 3.4)
+Imports: dplyr, rvest, stringr, jsonlite, readr, openxlsx, utils,
+        magrittr
+Suggests: testthat (>= 3.0.0), devtools, roxygen2, covr, usethis
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-02-27 18:57:13 UTC; ozancan
+Author: Ozancan Ozdemir [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-02-28 14:42:33 UTC

@@ -1,0 +1,48 @@
+Package: baytrends
+Type: Package
+Title: Long Term Water Quality Trend Analysis
+Description: Enable users to evaluate long-term trends using a Generalized 
+    Additive Modeling (GAM) approach. The model development includes selecting a 
+    GAM structure to describe nonlinear seasonally-varying changes over time, 
+    incorporation of hydrologic variability via either a river flow or salinity, 
+    the use of an intervention to deal with method or laboratory changes 
+    suspected to impact data values, and representation of left- and 
+    interval-censored data. The approach has been applied to water quality data 
+    in the Chesapeake Bay, a major estuary on the east coast of the United 
+    States to provide insights to a range of management- and research-focused 
+    questions.  Methodology described in Murphy (2019) 
+    <doi:10.1016/j.envsoft.2019.03.027>.
+Author: Rebecca Murphy, Elgin Perry, Jennifer Keisman, Jon Harcum, Erik W Leppo
+Version: 2.0.12
+Maintainer: Erik W Leppo <Erik.Leppo@tetratech.com>
+Depends: R (>= 3.5.0)
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Imports: dataRetrieval, digest, dplyr, fitdistrplus, grDevices,
+        lubridate, knitr, memoise, mgcv, pander, plyr, readxl,
+        sessioninfo, survival
+Suggests: devtools, imputeTS, markdown, nlme, rmarkdown, testthat
+URL: https://github.com/tetratech/baytrends,
+        https://tetratech.github.io/baytrends/
+BugReports: https://github.com/tetratech/baytrends/issues
+VignetteBuilder: knitr
+Collate: analysisOrganizeData.R appendDateFeatures.R baytrends.R
+        checkRange.R chkParameter.R closeOut.R createResiduals.R data.R
+        detrended.flow.R detrended.salinity.R expectMaxFunctions.r
+        findFile.R flwAveragePred.R fmtPval.R gamDiff.R gamPlotCalc.r
+        gamPlotDisp.R gamPlotDispSeason.R gamTables.R gamTest.r
+        gamTestSeason.r getUSGSflow.R headers2.R imputeCensored.R
+        initializeResults.r layerAggregation.R loadData.R loadExcel.R
+        loadModels.R loadModelsResid.R makeSurvDF.R mergeFlow.R
+        mergeSalinity.R reAttDF.R saveDF.R seasAdjflow2.R selectData.R
+        smwrBase_baseDay.R smwrBase_baseDay2decimal.R
+        smwrBase_dectime.R smwrBase_dectime2Date.R
+        smwrBase_eventProcessing.R smwrBase_fillMissing.R
+        smwrBase_na2miss.R supportFunctions.R unSurv.R gdata_nobs.R
+        zzz.R
+NeedsCompilation: no
+Packaged: 2024-07-26 14:07:11 UTC; Erik.Leppo
+Repository: CRAN
+Date/Publication: 2024-07-26 14:40:02 UTC

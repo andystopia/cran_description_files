@@ -1,0 +1,36 @@
+Package: warehouseTools
+Type: Package
+Title: Heuristics for Solving the Traveling Salesman Problem in
+        Warehouse Layouts
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Andrzej",
+           family = "Dudek",
+           role = c("aut","cre"),
+           email = "andrzej.dudek@ue.wroc.pl",
+           comment = c(ORCID = "0000-0002-4943-8703")),
+           person(given = "Krzysztof",
+           family = "Dmytrów",
+           role = c("aut"),
+           email = "<krzysztof.dmytrow@usz.edu.pl",
+           comment = c(ORCID = "0000-0001-7657-6063")))
+Description: Heuristic methods to solve the routing problems in a warehouse management. Package includes several heuristics such as the Midpoint, Return, S-Shape and Semi-Optimal Heuristics for designation of the picker’s route in order picking. The heuristics aim to provide the acceptable travel distances while considering warehouse layout constraints such as aisles and shelves. 
+    It also includes implementation of the COPRAS (COmplex PRoportional ASsessment) method for supporting selection of locations to be visited by the picker in shared storage systems. The package is designed to facilitate more efficient warehouse routing and logistics operations.     
+    see:
+    Bartholdi, J. J.,  Hackman, S. T. (2019). "WAREHOUSE & DISTRIBUTION SCIENCE. Release 0.98.1."
+    The Supply Chain & Logistics Institute. H. Milton Stewart School of Industrial and Systems Engineering. 
+    Georgia Institute of Technology. 
+    <https://www.warehouse-science.com/book/editions/wh-sci-0.98.1.pdf>.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Imports: dplyr,clusterSim
+Suggests: graphics,testthat (>= 2.1.0)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-12-07 18:34:19 UTC; andrzej
+Author: Andrzej Dudek [aut, cre] (<https://orcid.org/0000-0002-4943-8703>),
+  Krzysztof Dmytrów [aut] (<https://orcid.org/0000-0001-7657-6063>)
+Maintainer: Andrzej Dudek <andrzej.dudek@ue.wroc.pl>
+Repository: CRAN
+Date/Publication: 2024-12-09 19:50:02 UTC

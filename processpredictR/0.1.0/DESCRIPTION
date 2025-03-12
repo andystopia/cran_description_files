@@ -1,0 +1,27 @@
+Package: processpredictR
+Type: Package
+Title: Process Prediction
+Version: 0.1.0
+Date: 2022-12-23
+Authors@R: c(person("Ivan","Esin", email = "ivan.esin@student.uhasselt", role ="aut"),
+      person("Gert","Janssenswillen", email = "gert.janssenswillen@uhasselt.be", role = "cre"),
+      person("Hasselt University", role = "cph"))
+Description: Means to predict process flow, such as process outcome, next activity, next time, remaining time, and remaining trace. Off-the-shelf predictive models based on the concept of Transformers are provided, as well as multiple ways to customize the models. This package is partly based on work described in Zaharah A. Bukhsh, Aaqib Saeed, & Remco M. Dijkman. (2021). "ProcessTransformer: Predictive Business Process Monitoring with Transformer Network" <arXiv:2104.00721>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: bupaR, edeaR, dplyr, forcats, magrittr, reticulate, tidyr,
+        tidyselect, purrr, stringr, keras, tensorflow, rlang,
+        data.table, mltools, ggplot2, cli, glue, plotly, progress
+Config/testthat/edition: 3
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, lubridate, eventdataR
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-01-15 22:02:43 UTC; lucp8407
+Author: Ivan Esin [aut],
+  Gert Janssenswillen [cre],
+  Hasselt University [cph]
+Maintainer: Gert Janssenswillen <gert.janssenswillen@uhasselt.be>
+Repository: CRAN
+Date/Publication: 2023-01-17 17:10:01 UTC

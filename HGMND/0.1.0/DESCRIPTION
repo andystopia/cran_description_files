@@ -1,0 +1,21 @@
+Package: HGMND
+Type: Package
+Title: Heterogeneous Graphical Model for Non-Negative Data
+Version: 0.1.0
+Description: Graphical model is an informative and powerful tool to explore the conditional dependence relationships among variables. The traditional Gaussian graphical model and its extensions either have a Gaussian assumption on the data distribution or assume the data are homogeneous. However, there are data with complex distributions violating these two assumptions. For example, the air pollutant concentration records are non-negative and, hence, non-Gaussian. Moreover, due to climate changes, distributions of these concentration records in different months of a year can be far different, which means it is uncertain whether datasets from different months are homogeneous. Methods with a Gaussian or homogeneous assumption may incorrectly model the conditional dependence relationships among variables. Therefore, we propose a heterogeneous graphical model for non-negative data (HGMND) to simultaneously cluster multiple datasets and estimate the conditional dependence matrix of variables from a non-Gaussian and non-negative exponential family in each cluster.
+Authors@R: c(person("Jiaqi" , "Zhang", role = c("aut", "cre"), email = "boarzhang@gmail.com"),
+             person("Xinyan", "Fan"  , role = c("aut")),
+             person("Yang"  , "Li"   , role = c("aut")))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: genscore
+Depends: R (>= 3.6.0)
+NeedsCompilation: no
+Author: Jiaqi Zhang [aut, cre],
+  Xinyan Fan [aut],
+  Yang Li [aut]
+Maintainer: Jiaqi Zhang <boarzhang@gmail.com>
+Packaged: 2021-04-18 08:20:08 UTC; boarZ
+Repository: CRAN
+Date/Publication: 2021-04-19 09:00:02 UTC

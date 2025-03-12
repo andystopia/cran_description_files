@@ -1,0 +1,29 @@
+Package: theiaR
+Title: Download and Manage Data from Theia
+Version: 0.4.0
+Authors@R: person("Xavier", "Laviron", email = "xavier@norival.dev",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-9882-3253"))
+Description: Provides a simple interface to search available data provided by
+    Theia (<https://theia.cnes.fr>), download it, and manage it. Data can be downloaded
+    based on a search result or from a cart file downloaded from Theia website.
+Language: en-US
+Depends: R (>= 3.5)
+Imports: askpass (>= 1.1), httr (>= 1.3), R6 (>= 2.3), raster (>= 2.6),
+        tools (>= 3.5), XML (>= 3.86)
+License: GPL (>= 3.0)
+URL: https://github.com/norival/theiaR
+BugReports: https://github.com/norival/theiaR/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, gdalcubes
+Collate: 'TheiaAuth.R' 'TheiaTile.R' 'TheiaCollection.R' 'TheiaQuery.R'
+        'theiaR.R' 'utils.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-11-14 18:05:09 UTC; xavier
+Author: Xavier Laviron [aut, cre] (<https://orcid.org/0000-0002-9882-3253>)
+Maintainer: Xavier Laviron <xavier@norival.dev>
+Repository: CRAN
+Date/Publication: 2020-11-19 09:30:02 UTC

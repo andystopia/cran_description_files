@@ -1,0 +1,24 @@
+Package: fucom
+Type: Package
+Title: Full Consistency Method (FUCOM)
+Version: 0.0.3
+Authors@R: c( person("Mateus", "Vanzetta", email = "mateusvanzetta@id.uff.br", role = c("aut", "cre")),
+    person("Marcos", "Santos", email = "marcosdossantos@ime.eb.br", role = c("ctb"), comment = c(ORCID = "0000-0003-1533-5535"))
+  )
+Description: Full Consistency Method (FUCOM) for multi-criteria decision-making (MCDM), developed by Dragam Pamucar in 2018 (<doi:10.3390/sym10090393>). The goal of the method is to determine the weights of criteria such that the deviation from full consistency is minimized. Users provide a character vector specifying the ranking of each criterion according to its significance, starting from the criterion expected to have the highest weight to the least significant one. Additionally, users provide a numeric vector specifying the priority values for each criterion. The comparison is made with respect to the first-ranked (most significant) criterion. The function returns the optimized weights for each criterion (summing to 1), the comparative priority (Phi) values, the mathematical transitivity condition (w) value, and the minimum deviation from full consistency (DFC).
+Language: en-US
+Depends: R (>= 4.2.0)
+License: GPL (>= 3)
+Imports: nloptr, stats
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-15 18:45:44 UTC; Usuario
+Author: Mateus Vanzetta [aut, cre],
+  Marcos Santos [ctb] (<https://orcid.org/0000-0003-1533-5535>)
+Maintainer: Mateus Vanzetta <mateusvanzetta@id.uff.br>
+Repository: CRAN
+Date/Publication: 2025-01-15 19:00:01 UTC

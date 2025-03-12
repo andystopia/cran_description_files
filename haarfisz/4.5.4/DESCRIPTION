@@ -1,0 +1,29 @@
+Package: haarfisz
+Type: Package
+Title: Software to Perform Haar Fisz Transforms
+Version: 4.5.4
+Date: 2023-09-01
+Authors@R: c(person("Piotr", "Fryzlewicz", role=c("aut"),
+	email="P.Fryzlewicz@lse.ac.uk"),
+	person("Guy", "Nason", role=c("cre"),
+	email="g.nason@imperial.ac.uk"))
+Depends: R (>= 3.5.0), wavethresh
+Description: A Haar-Fisz algorithm for Poisson intensity estimation.
+	Will denoise Poisson distributed sequences where
+        underlying intensity is not constant. Uses the multiscale
+        variance-stabilization method called the Haar-Fisz transform.
+        Contains functions to carry out the forward and inverse
+        Haar-Fisz transform and denoising on near-Gaussian sequences.
+        Can also carry out cycle-spinning.
+	Main reference: Fryzlewicz, P. and Nason, G.P. (2004)
+	"A Haar-Fisz algorithm for Poisson intensity estimation."
+        Journal of Computational and Graphical Statistics,
+        13, 621-638. <doi:10.1198/106186004X2697>.
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2023-09-01 10:02:02 UTC; guynason
+Author: Piotr Fryzlewicz [aut],
+  Guy Nason [cre]
+Maintainer: Guy Nason <g.nason@imperial.ac.uk>
+Repository: CRAN
+Date/Publication: 2023-09-01 11:20:02 UTC

@@ -1,0 +1,42 @@
+Package: adfExplorer
+Title: Access and Manipulate Amiga Disk Files
+Version: 2.0.3
+Authors@R: 
+    c(
+    person("Pepijn", "de Vries", role = c("aut", "cre"),
+    email = "pepijn.devries@outlook.com",
+    comment = c(ORCID = "0000-0002-7961-6646")),
+    person("Laurent", "Clévy", role = c("aut", "cph"),
+    comment = c("Creator of the original ADFlib library"))
+    )
+Maintainer: Pepijn de Vries <pepijn.devries@outlook.com>
+Description: Amiga Disk Files (ADF) are virtual
+    representations of 3.5 inch floppy disks for the
+    Commodore Amiga. Most disk drives from other systems
+    (including modern drives) are not able to read these
+    disks. The 'adfExplorer' package enables you to
+    establish R connections to files on such
+    virtual DOS-formatted disks, which can be use to
+    read from and write to those files.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+LinkingTo: cpp11
+Collate: 'adfExplorer-package.R' 'blocks.R' 'compress.R' 'cpp11.R'
+        'connect_adf.R' 'demo.R' 'deprecated.R' 'move.R'
+        'device_info.R' 'device_create.R' 'helpers.R' 'directory.R'
+        'entry_info.R' 'remove.R' 's3_conn.R' 's3_methods.R'
+        'virtual_path.R'
+Depends: R (>= 3.5.0)
+Imports: methods, vctrs
+Suggests: adfExplorer, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://pepijn-devries.github.io/adfExplorer/
+BugReports: https://github.com/pepijn-devries/adfExplorer/issues
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2025-01-07 22:01:35 UTC; vries171
+Author: Pepijn de Vries [aut, cre] (<https://orcid.org/0000-0002-7961-6646>),
+  Laurent Clévy [aut, cph] (Creator of the original ADFlib library)
+Repository: CRAN
+Date/Publication: 2025-01-10 22:50:02 UTC

@@ -1,0 +1,26 @@
+Package: mstherm
+Type: Package
+Title: Analyze MS/MS Protein Melting Data
+Version: 0.4.7
+Date: 2017-04-21
+Authors@R: person("Jeremy","Volkening", email="jdv@base2bio.com",
+    role=c("aut","cre"))
+Description: Software to aid in modeling and analyzing mass-spectrometry-based
+    proteome melting data. Quantitative data is imported and normalized and
+    thermal behavior is modeled at the protein level. Methods exist for
+    normalization, modeling, visualization, and export of results. For a
+    general introduction to MS-based thermal profiling, see Savitski et al.
+    (2014) <doi:10.1126/science.1255784>.
+License: GPL-3
+Imports: foreach, parallel, doParallel, nls2, RColorBrewer, plotrix
+Suggests: RSQLite, testthat, knitr, rmarkdown
+Collate: mstherm.R classes.R normalization.R modeling.R plot.R
+        analysis.R export.R
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-04-27 17:00:18 UTC; jeremy
+Author: Jeremy Volkening [aut, cre]
+Maintainer: Jeremy Volkening <jdv@base2bio.com>
+Repository: CRAN
+Date/Publication: 2017-04-27 17:22:16 UTC

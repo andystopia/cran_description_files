@@ -1,0 +1,44 @@
+Package: SplitKnockoff
+Type: Package
+Title: Split Knockoffs for Structural Sparsity
+Version: 2.1
+Date: 2024-10-13
+Author: Yuxuan Chen [aut, cre] (Development of the latest version of the
+    packages),
+  Haoxue Wang [aut] (Development of the first version of the packages),
+  Yang Cao [aut] (Revison of this package),
+  Xinwei Sun [aut] (Original ideas about the package),
+  Yuan Yao [aut] (Testing for the package and management of the
+    development)
+Authors@R: c(person("Yuxuan", "Chen", role = c("aut","cre"),
+                     comment="Development of the latest version of the packages",
+                     email="yx.chen@connect.ust.hk"),
+             person("Haoxue", "Wang", role = c("aut"),
+                     comment="Development of the first version of the packages",
+                     email="haoxwang@student.ethz.ch"),
+             person("Yang", "Cao", role = c("aut"),
+                    comment="Revison of this package"),
+             person("Xinwei", "Sun", role = c("aut"),
+                    comment="Original ideas about the package"),
+             person("Yuan", "Yao", role = c("aut"),
+                    comment="Testing for the package and management of the development"))
+Maintainer: Yuxuan Chen <yx.chen@connect.ust.hk>
+Description: Split Knockoff is a data adaptive variable selection framework for controlling the
+             (directional) false discovery rate (FDR) in structural sparsity, where variable 
+             selection on linear transformation of parameters is of concern. This proposed scheme
+             relaxes the linear subspace constraint to its neighborhood, often known as variable
+             splitting in optimization.
+             Simulation experiments can be reproduced following the Vignette. 
+             'Split Knockoffs' is first defined in Cao et al. (2021) <doi:10.48550/arXiv.2103.16159>.
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: glmnet, MASS, latex2exp, RSpectra, ggplot2, Matrix, stats,
+        mvtnorm
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-14 11:16:35 UTC; 陈宇轩
+Repository: CRAN
+Date/Publication: 2024-10-14 15:00:06 UTC

@@ -1,0 +1,33 @@
+Package: rconfig
+Type: Package
+Title: Manage R Configuration at the Command Line
+Version: 0.3.0
+Date: 2023-06-26
+Authors@R: c(
+  person(given = "Peter",
+    family = "Solymos",
+    comment = c(ORCID = "0000-0001-7337-1740"),
+    role = c("aut", "cre"),
+    email = "peter@analythium.io"),
+  person(given = "Analythium Solutions Inc.",
+    role = c("cph", "fnd")))
+Description: Configuration management using files (YAML, JSON, INI, TXT),
+  JSON strings, and command line arguments. Command line arguments
+  can be used to override configuration. Period-separated command line
+  flags are parsed as hierarchical lists. Environment variables, R global variables,
+  and configuration values can be substituted.
+License: MIT + file LICENSE
+LazyLoad: yes
+Imports: yaml, jsonlite
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+BugReports: https://github.com/analythium/rconfig/issues
+URL: https://github.com/analythium/rconfig
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-06-27 04:34:09 UTC; Peter
+Author: Peter Solymos [aut, cre] (<https://orcid.org/0000-0001-7337-1740>),
+  Analythium Solutions Inc. [cph, fnd]
+Maintainer: Peter Solymos <peter@analythium.io>
+Repository: CRAN
+Date/Publication: 2023-06-27 10:30:02 UTC

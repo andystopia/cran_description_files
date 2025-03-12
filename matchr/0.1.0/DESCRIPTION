@@ -1,0 +1,23 @@
+Package: matchr
+Type: Package
+Title: Pattern Matching and Enumerated Types in R
+Version: 0.1.0
+Author: Christopher Mann <cmann3@unl.edu>
+Maintainer: Christopher Mann <cmann3@unl.edu>
+Description: Inspired by pattern matching and enum types in Rust
+    and many functional programming languages, this package offers
+    an updated version of the 'switch' function called 'Match' that
+    accepts atomic values, functions, expressions, and enum variants.
+    Conditions and return expressions are separated by '->' and 
+    multiple conditions can be associated with the same return expression
+    using '|'. 'Match' also includes support for 'fallthrough'. The 
+    package also replicates the Result and Option enums from Rust.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0), rlang, utils
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-09-07 14:25:34 UTC; chris
+Repository: CRAN
+Date/Publication: 2021-09-09 09:10:02 UTC

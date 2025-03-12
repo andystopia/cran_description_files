@@ -1,0 +1,34 @@
+Package: ICSOutlier
+Type: Package
+Title: Outlier Detection Using Invariant Coordinate Selection
+Version: 0.4-0
+Date: 2023-12-13
+Authors@R: 
+    c(person("Klaus", "Nordhausen", 
+             email = "klausnordhausenR@gmail.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-3758-8501")),
+      person("Aurore", "Archimbaud", 
+             email = "aurore.archimbaud@live.fr", 
+             role = "aut",
+             comment = c(ORCID = "0000-0002-6511-9091")),
+      person("Anne", "Ruiz-Gazen", 
+             email = "anne.ruiz-gazen@tse-fr.eu",
+             role = "aut", 
+             comment = c(ORCID = "0000-0001-8970-8061")))
+Author: Klaus Nordhausen [aut, cre] (<https://orcid.org/0000-0002-3758-8501>),
+  Aurore Archimbaud [aut] (<https://orcid.org/0000-0002-6511-9091>),
+  Anne Ruiz-Gazen [aut] (<https://orcid.org/0000-0001-8970-8061>)
+Maintainer: Klaus Nordhausen <klausnordhausenR@gmail.com>
+Depends: R (>= 3.0.0), methods, ICS (>= 1.4-0), moments
+Imports: graphics, grDevices, mvtnorm, parallel
+Suggests: ICSClust, REPPlab, testthat (>= 3.0.0)
+Description: Multivariate outlier detection is performed using invariant coordinates where the package offers different methods to choose the appropriate components. ICS is a general multivariate technique with many applications in multivariate analysis. ICSOutlier offers a selection of functions for automated detection of outliers in the data based on a fitted ICS object or by specifying the dataset and the scatters of interest. The current implementation targets data sets with only a small percentage of outliers. 
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2023-12-13 11:13:06 UTC; admin
+Repository: CRAN
+Date/Publication: 2023-12-13 15:10:02 UTC
+Config/testthat/edition: 3
+RoxygenNote: 7.2.3
+Encoding: UTF-8

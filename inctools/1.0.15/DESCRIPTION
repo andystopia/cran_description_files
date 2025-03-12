@@ -1,0 +1,52 @@
+Encoding: UTF-8
+Package: inctools
+Type: Package
+Title: Incidence Estimation Tools
+Version: 1.0.15
+Date: 2019-11-05
+Authors@R: c(
+  person("Eduard","Grebe",email="Eduard.Grebe@ucsf.edu",role=c("cre","aut")),
+  person("Alex","Welte", email="alexwelte@sun.ac.za", role="aut"),
+  person("Avery","McIntosh",email="avery.i.mcintosh@gmail.com",role="aut"),
+  person("Petra","Bäumler",email="petra.baeumler@med.uni-muenich.de",role="aut"),
+  person("Reshma","Kassanjee", role="ctb"),
+  person("Hilmarie","Brand", role="ctb"),
+  person("Cari","Van Schalkwyk", role="ctb"),
+  person("Yuruo","Li",email="yul123@pitt.edu", role="ctb"),
+  person("Simon","Daniel",email="skjdaniel@gmail.com", role="ctb"),
+  person("Stefano","Ongarello", email="stefano.ongarello@finddx.org", role="aut"),
+  person("Yusuke","Asai", email="yusuke.asai@yahoo.de", role="ctb"),
+  person("Jeffrey","Eaton", email="jeffrey.eaton@imperial.ac.uk", role="ctb")
+  )
+Description: Tools for estimating incidence from biomarker data in cross-
+    sectional surveys, and for calibrating tests for recent infection. 
+    Implements and extends the method of Kassanjee et al. (2012)
+    <doi:10.1097/EDE.0b013e3182576c07>.
+URL: http://www.incidence-estimation.org/page/inctools
+BugReports: https://github.com/SACEMA/inctools/issues
+Depends: R (>= 3.4.0)
+License: GPL-3
+LazyData: True
+Imports: stats, utils, magrittr, rlang, dplyr, tibble, cubature,
+        tmvtnorm, ggplot2, glm2, plyr, pracma, foreach, parallel,
+        doParallel, binom
+Suggests: survey, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-11-06 00:19:59 UTC; eduard
+Author: Eduard Grebe [cre, aut],
+  Alex Welte [aut],
+  Avery McIntosh [aut],
+  Petra Bäumler [aut],
+  Reshma Kassanjee [ctb],
+  Hilmarie Brand [ctb],
+  Cari Van Schalkwyk [ctb],
+  Yuruo Li [ctb],
+  Simon Daniel [ctb],
+  Stefano Ongarello [aut],
+  Yusuke Asai [ctb],
+  Jeffrey Eaton [ctb]
+Maintainer: Eduard Grebe <Eduard.Grebe@ucsf.edu>
+Repository: CRAN
+Date/Publication: 2019-11-07 14:20:02 UTC

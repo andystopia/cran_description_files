@@ -1,0 +1,40 @@
+Package: kazaam
+Type: Package
+Title: Tools for Tall Distributed Matrices
+Version: 0.1-0
+Description: Many data science problems reduce to operations on very tall,
+    skinny matrices.  However, sometimes these matrices can be so tall that they
+    are difficult to work with, or do not even fit into main memory.  One
+    strategy to deal with such objects is to distribute their rows across
+    several processors.  To this end, we offer an 'S4' class for tall, skinny,
+    distributed matrices, called the 'shaq'.  We also provide many useful
+    numerical methods and statistics operations for operating on these
+    distributed objects.  The naming is a bit "tongue-in-cheek", with the class
+    a play on the fact that 'Shaquille' 'ONeal' ('Shaq') is very tall, and he
+    starred in the film 'Kazaam'.
+License: BSD 2-clause License + file LICENSE
+Depends: R (>= 3.0.0), pbdMPI (>= 0.3-0)
+Imports: methods, stats
+ByteCompile: yes
+Authors@R: c(
+    person("Drew", "Schmidt", role = c("aut", "cre"), email="wrathematics@gmail.com"), 
+    person("Wei-Chen", "Chen", role = "aut"),
+    person("Mike", "Matheson", role = "aut"),
+    person("George", "Ostrouchov", role = "aut"),
+    person("ORNL", role = "cph")
+    )
+URL: http://r-pbd.org/
+BugReports: http://group.r-pbd.org/
+MailingList: Please send questions and comments regarding pbdR to
+        RBigData@gmail.com
+Maintainer: Drew Schmidt <wrathematics@gmail.com>
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-06-26 17:12:17 UTC; mschmid3
+Author: Drew Schmidt [aut, cre],
+  Wei-Chen Chen [aut],
+  Mike Matheson [aut],
+  George Ostrouchov [aut],
+  ORNL [cph]
+Repository: CRAN
+Date/Publication: 2017-06-29 13:19:58 UTC

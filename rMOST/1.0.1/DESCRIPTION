@@ -1,0 +1,33 @@
+Package: rMOST
+Title: Estimates Pareto-Optimal Solution for Hiring with 3 Objectives
+Version: 1.0.1
+Authors@R: 
+    c(person("Chelsea", "Song", , "qianqisong@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0910-1281")),
+           person("Yesuel", "Kim", , "kimyesuel97@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-8486-7693")))
+Description: Estimates Pareto-optimal solution for personnel selection
+    with 3 objectives using Normal Boundary Intersection (NBI) algorithm
+    introduced by Das and Dennis (1998) <doi:10.1137/S1052623496307510>.
+    Takes predictor intercorrelations and predictor-objective relations as
+    input and generates a series of solutions containing predictor weights
+    as output. Accepts between 3 and 10 selection predictors. Maximum 2
+    objectives could be adverse impact objectives. Partially modeled after
+    De Corte (2006) TROFSS Fortran program
+    <https://users.ugent.be/~wdecorte/trofss.pdf> and updated from
+    'ParetoR' package described in Song et al. (2017)
+    <doi:10.1037/apl0000240>. For details, see Study 3 of Zhang et al. (2023).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: graphics, grDevices, nloptr, stats
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-08 20:34:13 UTC; kimye
+Author: Chelsea Song [aut, cre] (<https://orcid.org/0000-0003-0910-1281>),
+  Yesuel Kim [ctb] (<https://orcid.org/0000-0002-8486-7693>)
+Maintainer: Chelsea Song <qianqisong@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-08 23:00:02 UTC

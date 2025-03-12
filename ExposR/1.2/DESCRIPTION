@@ -1,0 +1,33 @@
+Package: ExposR
+Title: Models Topographic Exposure to Hurricane Winds
+Version: 1.2
+Date: 2024-11-09
+Authors@R: c( person("Emery", "Boose", role = c("aut", "cre"),
+                      email = "boose@fas.harvard.edu"),
+              person("President and Fellows of Harvard College", role = "cph"))
+Description: The EXPOS model uses a digital elevation model (DEM) to estimate
+    exposed and protected areas for a given hurricane wind direction and
+    inflection angle. The resulting topographic exposure maps can be combined
+    with output from the HURRECON model to estimate hurricane wind damage
+    across a region. For details on the original version of the EXPOS model
+    written in 'Borland Pascal', see: Boose, Foster, and Fluet (1994)
+    <doi:10.2307/2937142>, Boose, Chamberlin, and Foster (2001)
+    <doi:10.1890/0012-9615(2001)071[0027:LARIOH]2.0.CO;2>, and Boose,
+    Serrano, and Foster (2004) <doi:10.1890/02-4057>.
+Depends: R (>= 4.0.0)
+License: GPL-3
+Encoding: UTF-8
+Imports: graphics, grDevices, terra, utils
+Suggests: knitr, qpdf, testthat (>= 3.0.0), rmarkdown
+URL: https://github.com/expos-model/ExposR
+BugReports: https://github.com/expos-model/ExposR/issues
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-11-09 14:11:34 UTC; erb709
+Author: Emery Boose [aut, cre],
+  President and Fellows of Harvard College [cph]
+Maintainer: Emery Boose <boose@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2024-11-09 15:50:22 UTC

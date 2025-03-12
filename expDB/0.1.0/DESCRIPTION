@@ -1,0 +1,26 @@
+Package: expDB
+Type: Package
+Title: Database for Experiment Dataset
+Version: 0.1.0
+Maintainer: Bangyou Zheng <bangyou.zheng@csiro.au>
+Authors@R: person("Bangyou", "Zheng", 
+               email = "bangyou.zheng@csiro.au", 
+               role = c("aut", "cre"))
+Description: A SQLite database is designed to store all information 
+  of experiment-based data including metadata, experiment design, 
+  managements, phenotypic values and climate records. The dataset can be
+  imported from an excel file.
+License: MIT + file LICENSE
+URL: https://expdb.bangyou.me/, https://github.com/byzheng/expdb
+BugReports: https://github.com/byzheng/expdb/issues
+Encoding: UTF-8
+Imports: DBI, RSQLite, utils, readxl, png, grid, tibble, lubridate,
+        dplyr, methods, weaana (>= 0.1.1), tidyr, tidyverse, magrittr,
+        stats, reshape2, stringr, rlang
+RoxygenNote: 7.1.2
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2021-10-08 05:00:13 UTC; zhe00a
+Author: Bangyou Zheng [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-10-08 17:40:06 UTC

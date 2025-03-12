@@ -1,0 +1,31 @@
+Package: maicChecks
+Type: Package
+Title: Exact Matching and Matching-Adjusted Indirect Comparison (MAIC)
+Version: 0.2.0
+Date: 2025-03-03
+Authors@R: 
+    c(person("Lillian", "Yau", role = c("aut", "cre"), email = "maicChecks@gmail.com"), 
+      person("Ekkehard", "Glimm", role = c("aut")),
+      person(given = "Xinlei", 
+           family = "Deng", 
+           email = "xinlei.deng.apha@gmail.com", 
+           role = c("aut"), 
+           comment = c(ORCID = "0000-0001-8129-6007")
+           ))
+Maintainer: Lillian Yau <maicChecks@gmail.com>
+Description: The second version (0.2.0) contains implementation for exact matching which is an alternative to propensity score matching (see Glimm & Yau (2025)). The initial version (0.1.2) contains a collection of easy-to-implement tools for checking whether a MAIC can be conducted, as well as an alternative way of calculating weights (see Glimm & Yau (2021) <doi:10.1002/pst.2210>.)
+Depends: R (>= 3.5.0)
+Imports: data.table, tidyr, ggplot2, lpSolve, quadprog
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-03 15:24:22 UTC; stardust
+Author: Lillian Yau [aut, cre],
+  Ekkehard Glimm [aut],
+  Xinlei Deng [aut] (<https://orcid.org/0000-0001-8129-6007>)
+Repository: CRAN
+Date/Publication: 2025-03-03 15:40:02 UTC

@@ -1,0 +1,30 @@
+Package: fst4pg
+Title: Genetic Distance Segmentation for Population Genetics
+Version: 1.0.0
+Date: 2022-06-15
+Authors@R: c(
+    person("Tristan", "Mary-Huard", , "tristan.mary-huard@agroparistech.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3839-9067")),
+    person("Guillem", "Rigaill", , "guillem.rigaill@inrae.fr", role = "aut",
+           comment = c(ORCID = "0000-0002-7176-7511"))
+  )
+Description: Provides efficient methods to compute local and genome wide
+    genetic distances (corresponding to the so called Hudson Fst
+    parameters) through moment method, perform chromosome segmentation
+    into homogeneous Fst genomic regions, and selection sweep detection
+    for multi-population comparison. When multiple profile segmentation is
+    required, the procedure can be parallelized using the future package.
+License: GPL (>= 2)
+Depends: R (>= 2.10)
+Imports: dplyr, fpopw, furrr, future, ggplot2, gplots, graphics,
+        grDevices, purrr, rlang, scales, stats, stringr, tibble, tidyr,
+        utils
+LazyData: true
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-06-30 16:24:08 UTC; smoka
+Author: Tristan Mary-Huard [aut, cre] (<https://orcid.org/0000-0002-3839-9067>),
+  Guillem Rigaill [aut] (<https://orcid.org/0000-0002-7176-7511>)
+Maintainer: Tristan Mary-Huard <tristan.mary-huard@agroparistech.fr>
+Repository: CRAN
+Date/Publication: 2022-07-03 18:20:02 UTC

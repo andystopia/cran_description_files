@@ -1,0 +1,37 @@
+Package: wcep
+Type: Package
+Title: Survival Analysis for Weighted Composite Endpoints
+Version: 1.0.2
+Authors@R: c(person("Majid", "Nabipoor", email = "nabipoor@ualberta.ca", role=c("aut"),
+           comment=c(ORCID = "0000-0003-2578-8300")), 
+           person("Cynthia", "Westerhout", email="cindy.westerhout@ualberta.ca", role=c("aut"),
+           comment=c(ORCID = "0000-0003-1082-5981")),
+           person("Jeffrey", "Bakal", email="jbakal@ualberta.ca", role=c("aut"),
+           comment=c(ORCID = "0000-0002-3658-2554")),
+           person("Sarah", "Rathwell", email="srathwel@ualberta.ca", role=c("cre"),
+           comment=c(ORCID = "0000-0003-3176-994X")))
+Maintainer: Sarah Rathwell <srathwel@ualberta.ca>
+URL: https://github.com/sarah-0k/wcep
+BugReports: https://github.com/sarah-0k/wcep
+Description: Analyze given data frame with multiple endpoints and return Kaplan-Meier survival probabilities together with the specified confidence interval. See Nabipoor M, Westerhout CM, Rathwell S, and Bakal JA (2023) <doi:10.1186/s12874-023-01857-0>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Language: en-us
+Depends: R (>= 3.6.0)
+Imports: coin (>= 1.3-1), dplyr (>= 1.1.0), graphics (>= 3.6.1),
+        grDevices (>= 3.6.1), progress (>= 1.2.2), stats (>= 3.6.1),
+        tidyr (>= 1.0.0)
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Collate: 'data.R' 'nam.R' 'plot.R' 'wcep-package.R' 'wcep_core.R'
+        'wcep.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-19 16:49:08 UTC; vapidmayhem
+Author: Majid Nabipoor [aut] (<https://orcid.org/0000-0003-2578-8300>),
+  Cynthia Westerhout [aut] (<https://orcid.org/0000-0003-1082-5981>),
+  Jeffrey Bakal [aut] (<https://orcid.org/0000-0002-3658-2554>),
+  Sarah Rathwell [cre] (<https://orcid.org/0000-0003-3176-994X>)
+Repository: CRAN
+Date/Publication: 2023-12-19 17:20:02 UTC

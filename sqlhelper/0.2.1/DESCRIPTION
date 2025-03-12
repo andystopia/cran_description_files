@@ -1,0 +1,24 @@
+Package: sqlhelper
+Title: Easier 'SQL' Integration
+Version: 0.2.1
+Authors@R: person("Matthew", "Roberts", email = "matthew@zsmr.uk", role = c("aut", "cre", "cph"))
+Description: Execute files of 'SQL' and manage database connections. 'SQL' statements and queries may be interpolated with string literals. Execution of individual statements and queries may be controlled with keywords. Multiple connections may be defined with 'YAML' and accessed by name. 
+Depends: R (>= 4.1.0)
+Imports: DBI, yaml, rappdirs, stringr, glue, pool, methods, tibble,
+        tidyr, purrr (>= 1.0.0), sf, rlang
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Suggests: dplyr, rmarkdown, knitr, testthat (>= 3.0.0), odbc, RSQLite,
+        RPostgres, RMariaDB, bigrquery, spData
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://majerr.github.io/sqlhelper/dev/,
+        https://github.com/majerr/sqlhelper/
+BugReports: https://github.com/majerr/sqlhelper/issues
+NeedsCompilation: no
+Packaged: 2024-01-19 15:43:52 UTC; matthew.roberts
+Author: Matthew Roberts [aut, cre, cph]
+Maintainer: Matthew Roberts <matthew@zsmr.uk>
+Repository: CRAN
+Date/Publication: 2024-01-21 20:40:02 UTC

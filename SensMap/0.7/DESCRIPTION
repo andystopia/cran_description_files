@@ -1,0 +1,28 @@
+Package: SensMap
+Type: Package
+Title: Sensory and Consumer Data Mapping
+Version: 0.7
+Date: 2022-06-29
+Author: Ibtihel Rebhi [aut, cre],  Dhafer Malouche [ctb]
+Maintainer: Ibtihel Rebhi <ibtihel.rebhi@enit.utm.tn>
+URL: https://github.com/IbtihelRebhi/SensMap
+Description: Provides Sensory and Consumer Data 
+    mapping and analysis <doi:10.14569/IJACSA.2017.081266>. The mapping visualization is made available
+    from several features : options in dimension reduction methods and prediction models ranging from 
+    linear to non linear regressions. A smoothed version of the map performed using locally weighted regression algorithm 
+    is available. A selection process of map stability is provided. A 'shiny' application is included. 
+    It presents an easy GUI for the implemented functions as well as a comparative tool of fit models
+    using several criteria. Basic analysis such as characterization of products,
+    panelists and sessions likewise consumer segmentation are also made available.
+Depends: R (>= 4.0), stats, grDevices, graphics
+Imports: doBy, lattice, FactoMineR, MCMCpack, factoextra, fields,
+        ggdendro, glmulti, mgcv, plotly, shiny, ggplot2, reshape2
+License: GPL (>= 2)
+LazyData: TRUE
+Suggests: testthat
+RoxygenNote: 7.1.2.9000
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2022-07-04 12:45:33 UTC; Ibtihel Rebhi
+Repository: CRAN
+Date/Publication: 2022-07-04 19:00:02 UTC

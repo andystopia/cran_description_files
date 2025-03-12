@@ -1,0 +1,33 @@
+Package: ZIM
+Title: Zero-Inflated Models (ZIM) for Count Time Series with Excess
+        Zeros
+Version: 1.1.0
+Authors@R: c(
+    person("Ming", "Yang", email = "mingyang@biostatstudio.com", role = c("aut", "cre")),
+    person("Gideon", "Zamba", role = "aut"),
+    person("Joseph", "Cavanaugh", role = "aut")
+    )
+Description: Analyze count time series with excess zeros. 
+    Two types of statistical models are supported: Markov regression by Yang et al.
+    (2013) <doi:10.1016/j.stamet.2013.02.001> and state-space models by Yang et al. 
+    (2015) <doi:10.1177/1471082X14535530>. They are also known as observation-driven and 
+    parameter-driven models respectively in the time series literature. The functions used for 
+    Markov regression or observation-driven models can also be used to fit ordinary regression models 
+    with independent data under the zero-inflated Poisson (ZIP) or zero-inflated negative binomial (ZINB) 
+    assumption. Besides, the package contains some miscellaneous functions to compute density, distribution, 
+    quantile, and generate random numbers from ZIP and ZINB distributions.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 6.1.0
+Imports: MASS
+Suggests: pscl, TSA
+URL: https://github.com/biostatstudio/ZIM
+BugReports: https://github.com/biostatstudio/ZIM/issues
+NeedsCompilation: no
+Packaged: 2018-08-28 12:00:56 UTC; mingyang
+Author: Ming Yang [aut, cre],
+  Gideon Zamba [aut],
+  Joseph Cavanaugh [aut]
+Maintainer: Ming Yang <mingyang@biostatstudio.com>
+Repository: CRAN
+Date/Publication: 2018-08-28 13:04:25 UTC

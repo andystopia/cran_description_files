@@ -1,0 +1,41 @@
+Package: WhiteLabRt
+Type: Package
+Title: Novel Methods for Reproduction Number Estimation,
+        Back-Calculation, and Forecasting
+Version: 1.0.1
+Date: 2024-07-23
+Authors@R: 
+    c(person("Chad", "Milando", , "cmilando@bu.edu", role = c("aut", "cre")),
+      person(given = "Tenglong", family = "Li", role = "ctb"),
+      person(given = "Zhenwei", family = "Zhou", role = "ctb"),
+      person(given = "Laura", family = "White", role = "ctb"))
+Maintainer: Chad Milando <cmilando@bu.edu>
+Description: A collection of functions related to novel methods for estimating R(t), 
+  created by the lab of Professor Laura White. Currently implemented methods include 
+  two-step Bayesian back-calculation and now-casting for line-list data with missing reporting delays, 
+  adapted in 'STAN' from Li (2021) <doi:10.1371/journal.pcbi.1009210>, 
+  and calculation of time-varying reproduction number assuming a flux between various adjacent states, adapted into 'STAN' from 
+  Zhou (2021) <doi:10.1371/journal.pcbi.1010434>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: methods, Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>=
+        2.18.1), rstantools (>= 2.4.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown
+Language: en-US
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-08-16 22:24:10 UTC; cwm
+Author: Chad Milando [aut, cre],
+  Tenglong Li [ctb],
+  Zhenwei Zhou [ctb],
+  Laura White [ctb]
+Repository: CRAN
+Date/Publication: 2024-08-16 23:00:03 UTC

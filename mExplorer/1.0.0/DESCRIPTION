@@ -1,0 +1,17 @@
+Package: mExplorer
+Version: 1.0.0
+License: GPL (>= 2)
+Description: The method 'm:Explorer' associates a given list of target genes (e.g. those involved in a biological process) to gene regulators such as transcription factors. Transcription factors that bind DNA near significantly many target genes or correlate with target genes in transcriptional (microarray or RNAseq data) are selected. Selection of candidate master regulators is carried out using multinomial regression models, likelihood ratio tests and multiple testing correction. Reference: m:Explorer: multinomial regression models reveal positive and negative regulators of longevity in yeast quiescence. Juri Reimand, Anu Aun, Jaak Vilo, Juan M Vaquerizas, Juhan Sedman and Nicholas M Luscombe. Genome Biology (2012) 13:R55 <doi:10.1186/gb-2012-13-6-r55>.
+Title: Identifying Master Gene Regulators from Gene Expression and
+        DNA-Binding Data
+Authors@R: person("Juri", "Reimand", email = "juri.reimand@utoronto.ca", role = c("aut", "cre"))
+Depends: R (>= 3.0)
+Imports: stats, utils, nnet, parallel, qusage
+Collate: 'mExplorer.R'
+NeedsCompilation: no
+RoxygenNote: 6.0.1.9000
+Packaged: 2017-08-24 13:27:51 UTC; dthompson
+Author: Juri Reimand [aut, cre]
+Maintainer: Juri Reimand <juri.reimand@utoronto.ca>
+Repository: CRAN
+Date/Publication: 2017-08-24 14:51:44 UTC

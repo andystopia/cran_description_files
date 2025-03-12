@@ -1,0 +1,27 @@
+Package: colocPropTest
+Title: Proportional Testing for Colocalisation Analysis
+Version: 0.9.1
+Authors@R: 
+    person("Chris", "Wallace", , "chris.x.wallace@gsk.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9755-1703"))
+Description: Colocalisation analysis tests whether two traits share a causal
+  genetic variant in a specified genomic region. Proportional testing for
+  colocalisation has been previously proposed
+  [Wallace (2013) <doi:10.1002/gepi.21765>], but is reimplemented here to
+  overcome barriers to its adoption. Its use is complementary to the fine-
+  mapping based colocalisation method in the 'coloc' package, and may be used in
+  particular to identify false "H3" conclusions in 'coloc'.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Depends: magrittr, data.table
+Imports: car, coloc, graphics, stats, utils
+Suggests: knitr, plotrix, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-06-10 06:58:47 UTC; cw029707
+Author: Chris Wallace [aut, cre] (<https://orcid.org/0000-0001-9755-1703>)
+Maintainer: Chris Wallace <chris.x.wallace@gsk.com>
+Repository: CRAN
+Date/Publication: 2024-06-11 11:30:02 UTC

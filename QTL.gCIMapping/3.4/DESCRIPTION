@@ -1,0 +1,19 @@
+Package: QTL.gCIMapping
+Type: Package
+Title: QTL Genome-Wide Composite Interval Mapping
+Version: 3.4
+Date: 2022-02-24
+Author: Zhou Ya-Hui, Zhang Ya-Wen, Wen Yang-Jun, Wang Shi-Bo, and Zhang Yuan-Ming
+Maintainer: Yuanming Zhang<soyzhang@mail.hzau.edu.cn>
+Description: Conduct multiple quantitative trait loci (QTL) and QTL-by-environment interaction (QEI) mapping via ordinary or compressed variance component mixed models with random- or fixed QTL/QEI effects. First, each position on the genome is detected in order to obtain a negative logarithm P-value curve against genome position. Then, all the peaks on each effect (additive or dominant) curve or on each locus curve are viewed as potential main-effect QTLs and QEIs, all their effects are included in a multi-locus model, their effects are estimated by both least angle regression and empirical Bayes (or adaptive lasso) in backcross and F2 populations, and true QTLs and QEIs are identified by likelihood radio test. See Zhou et al. (2022) <doi:10.1093/bib/bbab596> and Wen et al. (2018) <doi:10.1093/bib/bby058>.
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Imports: Rcpp (>=
+        0.12.17),methods,openxlsx,readxl,lars,stringr,data.table,glmnet,doParallel,foreach,MASS,qtl
+LinkingTo: Rcpp
+NeedsCompilation: yes
+RoxygenNote: 7.1.2
+Packaged: 2022-02-24 12:55:13 UTC; win10
+Repository: CRAN
+Date/Publication: 2022-02-24 18:30:02 UTC

@@ -1,0 +1,28 @@
+Package: sdrt
+Type: Package
+Title: Estimating the Sufficient Dimension Reduction Subspaces in Time
+        Series
+Version: 1.0.0
+Authors@R: c(person(given="Tharindu", family="P. De Alwis",
+    role=c("aut","cre"),email="talwis@wpi.edu",
+    comment = c(ORCID = "0000-0002-3446-0502")),
+    person(given="S. Yaser ", family="Samadi",
+    role=c("ctb","aut"),email="ysamadi@siu.edu",
+    comment = c(ORCID = "0000-0002-6121-0234")))
+Maintainer: Tharindu P. De Alwis <talwis@wpi.edu>
+Depends: R(>= 3.5.0), stats
+Imports: psych, tseries, pracma
+Description: The sdrt() function is designed for estimating subspaces for Sufficient Dimension Reduction (SDR) in time series, with a specific focus on the Time Series Central Mean subspace (TS-CMS). The package employs the Fourier transformation method proposed by Samadi and De Alwis (2023) <doi:10.48550/arXiv.2312.02110> and the Nadaraya-Watson kernel smoother method proposed by Park et al. (2009) <doi:10.1198/jcgs.2009.08076> for estimating the TS-CMS. The package provides tools for estimating distances between subspaces and includes functions for selecting model parameters using the Fourier transformation method. 
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-03-27 16:56:57 UTC; talwis
+Author: Tharindu P. De Alwis [aut, cre]
+    (<https://orcid.org/0000-0002-3446-0502>),
+  S. Yaser Samadi [ctb, aut] (<https://orcid.org/0000-0002-6121-0234>)
+Repository: CRAN
+Date/Publication: 2024-03-28 16:30:02 UTC

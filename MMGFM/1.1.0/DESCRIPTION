@@ -1,0 +1,28 @@
+Package: MMGFM
+Type: Package
+Title: Multi-Study Multi-Modality Generalized Factor Model
+Version: 1.1.0
+Date: 2024-08-25
+Authors@R: 
+    c(person(given = "Wei",
+             family = "Liu",
+             role = c("aut", "cre"),
+             email = "liuwei8@scu.edu.cn"),
+      person(given = "Qingzhi",
+             family = "Zhong",
+             role = c("aut")))
+Author: Wei Liu [aut, cre],
+  Qingzhi Zhong [aut]
+Maintainer: Wei Liu <liuwei8@scu.edu.cn>
+Description: We introduce a generalized factor model designed to jointly analyze high-dimensional multi-modality data from multiple studies by extracting study-shared and specified factors. Our factor models account for heterogeneous noises and overdispersion among modality variables with augmented  covariates. We propose an efficient and speedy variational estimation procedure for estimating model parameters, along with a novel criterion for selecting the optimal number of  factors. More details can be referred to Liu et al. (2024) <doi:10.48550/arXiv.2408.10542>.
+License: GPL-3
+Depends: irlba, R (>= 3.5.0)
+Imports: MASS, stats, GFM, MultiCOAP, Rcpp (>= 1.0.10)
+Suggests: knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+NeedsCompilation: yes
+Packaged: 2024-08-30 00:46:32 UTC; Liuxianju
+Repository: CRAN
+Date/Publication: 2024-09-03 15:50:10 UTC

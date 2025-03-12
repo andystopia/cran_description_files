@@ -1,0 +1,36 @@
+Package: simEd
+Title: Simulation Education
+Version: 2.0.1
+Authors@R: c(
+  person("Barry", "Lawson", email = "blawson@bates.edu", role = c("aut","cre","cph")),
+  person("Larry", "Leemis", email = "leemis@math.wm.edu", role = "aut"),
+  person("Vadim", "Kudlay", email = "vkudlay@nvidia.com", role = "aut"))
+Imports: graphics, grDevices, methods, stats, utils, shape
+Depends: rstream
+Suggests: magick
+Description: Contains various functions to be used for simulation education,
+    including simple Monte Carlo simulation functions, queueing simulation
+    functions, variate generation functions capable of producing independent
+    streams and antithetic variates, functions for illustrating random variate
+    generation for various discrete and continuous distributions, and functions
+    to compute time-persistent statistics.  Also contains functions for 
+    visualizing: event-driven details of a single-server queue model; a Lehmer
+    random number generator; variate generation via acceptance-rejection; and
+    of generating a non-homogeneous Poisson process via thinning.  Also
+    contains two queueing data sets (one fabricated, one real-world) to
+    facilitate input modeling.  More details on the use of these functions can
+    be found in Lawson and Leemis (2015) <doi:10.1109/WSC.2017.8248124>, in
+    Kudlay, Lawson, and Leemis (2020) <doi:10.1109/WSC48552.2020.9384010>, and
+    in Lawson and Leemis (2021) <doi:10.1109/WSC52266.2021.9715299>.
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-11-26 13:08:36 UTC; blawson
+Author: Barry Lawson [aut, cre, cph],
+  Larry Leemis [aut],
+  Vadim Kudlay [aut]
+Maintainer: Barry Lawson <blawson@bates.edu>
+Repository: CRAN
+Date/Publication: 2023-11-26 23:20:13 UTC

@@ -1,0 +1,29 @@
+Package: optimalThreshold
+Type: Package
+Title: Bayesian Methods for Optimal Threshold Estimation
+Version: 1.0
+SystemRequirements: JAGS 4.x.y
+Depends: R (>= 3.1.2)
+Date: 2020-01-09
+Authors@R: person("Yoann", "Blangero", email = "yblangero@gmail.com", role = c("aut", "cre"))
+Description: Functions to estimate the optimal threshold of diagnostic markers or treatment selection markers. The optimal threshold is the marker value that maximizes the utility of the marker based-strategy (for diagnostic or treatment selection) in a given population. The utility function depends on the type of marker (diagnostic or treatment selection), but always takes into account the preferences of the patients or the physician in the decision process. For estimating the optimal threshold, ones must specify the distributions of the marker in different groups (defined according to the type of marker, diagnostic or treatment selection) and provides data to estimate the parameters of these distributions. Ones must also provide some features of the target populations (disease prevalence or treatment efficacies) as well as the preferences of patients or physicians. The functions rely on Bayesian inference which helps producing several indicators derived from the optimal threshold. See Blangero, Y, Rabilloud, M, Ecochard, R, and Subtil, F (2019) <doi:10.1177/0962280218821394> for the original article that describes the estimation method for treatment selection markers and Subtil, F, and Rabilloud, M (2019) <doi:10.1002/bimj.200900242> for diagnostic markers.
+License: GPL (>= 2.0)
+Collate: Package.R import_package.R scaledT.R ClassUnions.R
+        ClassFitNormalDist.R ClassFitLogNormalDist.R
+        ClassFitGammaDist.R ClassFitStudentDist.R
+        ClassFitLogisticDist.R ClassFitUserDefinedDist.R
+        ClassUndefined.R ClassNormalDist.R ClassLogNormalDist.R
+        ClassGammaDist.R ClassStudentDist.R ClassLogisticDist.R
+        ClassUnionsDist.R ClassCompoundDist.R ClassTrtSelOptThresh.R
+        ClassTrtSelRelUtility.R ClassDiagOptThresh.R
+        ClassDiagRelUtility.R cdf.R gradient.R hessian.R ARS.R
+        samplePosteriorDist.R global.R
+RoxygenNote: 6.1.1
+Imports: ars, rjags, HDInterval, mgcv, utils, coda, grDevices, methods,
+        stats, graphics
+NeedsCompilation: no
+Packaged: 2020-01-09 21:51:17 UTC; yblan
+Author: Yoann Blangero [aut, cre]
+Maintainer: Yoann Blangero <yblangero@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-13 16:10:05 UTC

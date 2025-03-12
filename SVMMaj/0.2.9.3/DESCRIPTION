@@ -1,0 +1,30 @@
+Package: SVMMaj
+Type: Package
+Title: Implementation of the SVM-Maj Algorithm
+Version: 0.2.9.3
+Date: 2024-11-21
+Authors@R: c(
+    person(given = "Hoksan", family = "Yip", role = c("aut", "cre"), email = "hoksan@gmail.com"),
+    person(given = c("Patrick", "J.F."), family = "Groenen", role = "aut"),
+    person(given = "Georgi", family = "Nalbantov", role = "aut")
+    )
+Description: 
+  Implements the SVM-Maj algorithm to train data with support vector machine
+  <doi:10.1007/s11634-008-0020-9>.
+  This algorithm uses two efficient updates, one for linear kernel and one 
+  for the nonlinear kernel.
+Imports: reshape2, scales, gridExtra, dplyr, ggplot2, kernlab
+Depends: R (>= 2.13.0), stats, graphics, parallel
+Suggests: utils, testthat, magrittr, xtable
+License: GPL-2
+LazyData: Yes
+RoxygenNote: 7.3.2
+VignetteBuilder: utils
+NeedsCompilation: no
+Packaged: 2024-11-21 23:25:00 UTC; hoksanyip
+Author: Hoksan Yip [aut, cre],
+  Patrick J.F. Groenen [aut],
+  Georgi Nalbantov [aut]
+Maintainer: Hoksan Yip <hoksan@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-22 13:40:18 UTC

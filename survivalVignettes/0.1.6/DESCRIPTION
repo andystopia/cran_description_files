@@ -1,0 +1,30 @@
+Package: survivalVignettes
+Version: 0.1.6
+Date: 2024-05-02
+Title: Survival Analysis Vignettes and Optional Datasets
+Depends: R (>= 3.5.0), survival
+Imports: graphics
+Suggests: knitr, rmarkdown, bookdown, survey, geepack, mstate, R.rsp
+Authors@R: c(person(c("Terry", "M"), "Therneau",
+	                  role="aut"),
+ 	           person("Elizabeth","Atkinson",  
+ 	                  email="atkinson@mayo.edu",
+ 	                  role=c("cre","ctb")),
+	           person("Cynthia","Crowson", role="ctb"))
+URL: https://github.com/bethatkinson/survivalVignettes
+BugReports: https://github.com/bethatkinson/survivalVignettes/issues
+Description: Vignettes for the 'survival' package. Split from the 'survival' 
+    package since the vignettes were getting large. Also, since 'survival' is a 
+    recommended package it cannot make use of other packages outside of 
+    base+recommended (e.g. 'rmarkdown').
+License: LGPL (>= 2)
+Config/build/clean-inst-doc: FALSE
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-05-02 14:53:50 UTC; atkinson
+Author: Terry M Therneau [aut],
+  Elizabeth Atkinson [cre, ctb],
+  Cynthia Crowson [ctb]
+Maintainer: Elizabeth Atkinson <atkinson@mayo.edu>
+Repository: CRAN
+Date/Publication: 2024-05-03 23:20:02 UTC

@@ -1,0 +1,55 @@
+Package: cft
+Type: Package
+Title: Climate Futures Toolbox
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Ty",
+           family = "Tuff",
+           role = c("aut"),
+           email = "ty.tuff@colorado.edu",
+           comment = c(ORCID = "0000-0001-5249-5197")),
+    person(given = "Megan",
+           family = "Collins",
+           role = c("aut"),
+           email = "megan.h.collins@colorado.edu"),
+    person(given = "Travis",
+           family = "Williams",
+           role = c("aut"),
+           email = "travis.williams@colorado.edu"),
+    person(given = "Max",
+           family = "Joseph",
+           role = c("aut"),
+           email = "maxwell.b.joseph@colorado.edu",
+           comment = c(ORCID = "0000-0002-7745-9990")),
+    person(given = "Natasha",
+           family = "Stavros",
+           role = c("aut"),
+           email = "natasha.stavros@colorado.edu",
+           comment = c(ORCID = "0000-0001-6657-7310")),
+    person(given = "Erick",
+           family = "Verleye",
+           role = c("aut", "cre"),
+           email = "erve3705@colorado.edu")
+    )
+Maintainer: Erick Verleye <erve3705@colorado.edu>
+Description: Developed as a collaboration between Earth lab and the North Central Climate Adaptation Science Center to help users gain insights from available climate data. Includes tools and instructions for downloading climate data via a 'USGS' API and then organizing those data for visualization and analysis that drive insight. Web interface for 'USGS' API can be found at <http://thredds.northwestknowledge.net:8080/thredds/reacch_climate_CMIP5_aggregated_macav2_catalog.html>.
+URL: https://github.com/earthlab/cft-CRAN
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0), plyr, dplyr (>= 1.0.10), osmdata, magrittr
+Imports: tidync, future, furrr, sf, epitools, tidyr, rlang, pipeR,
+        rlist
+Suggests: lubridate, testthat (>= 3.0.0), knitr
+VignetteBuilder: knitr
+RoxygenNote: 7.2.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-09-30 19:06:51 UTC; erick
+Author: Ty Tuff [aut] (<https://orcid.org/0000-0001-5249-5197>),
+  Megan Collins [aut],
+  Travis Williams [aut],
+  Max Joseph [aut] (<https://orcid.org/0000-0002-7745-9990>),
+  Natasha Stavros [aut] (<https://orcid.org/0000-0001-6657-7310>),
+  Erick Verleye [aut, cre]
+Repository: CRAN
+Date/Publication: 2022-10-03 07:12:18 UTC

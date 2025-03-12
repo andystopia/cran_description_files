@@ -1,0 +1,32 @@
+Package: Certara.RsNLME.ModelExecutor
+Title: Execute Pharmacometric Models Using 'shiny'
+Version: 3.0.1
+Authors@R: c(
+      person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Mike", "Talley", email = "mike.talley@certara.com", role = c("aut")),
+      person("Vitalii", "Nazarov", email = "vitalii.nazarov@certara.com", role = c("aut")),
+      person("Certara USA, Inc", role = c("cph","fnd")))
+Description: Execute Nonlinear Mixed Effects (NLME) models for pharmacometrics using a 'shiny'
+      interface. Specify engine parameters and select from different run options, including 
+      simple estimation, stepwise covariate search, bootstrapping, simulation, visual predictive
+      check, and more. Models are executed using the 'Certara.RsNLME' package.
+Depends: R (>= 4.0)
+License: LGPL-3
+URL: https://certara.github.io/R-RsNLME-model-executor/
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Imports: Certara.RsNLME, Certara.NLME8, shinyAce, shinymeta, bslib (>=
+        0.7.0), htmltools, magrittr, dplyr, shiny (>= 1.7.4),
+        shinyFiles, shinyjs, shinyWidgets, stringr, tools, fs, ggplot2,
+        future, promises, reshape, jsonlite, DT
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-01-06 21:35:16 UTC; jcraig
+Author: James Craig [aut, cre],
+  Mike Talley [aut],
+  Vitalii Nazarov [aut],
+  Certara USA, Inc [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2025-01-07 16:40:01 UTC

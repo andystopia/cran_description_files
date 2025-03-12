@@ -1,0 +1,48 @@
+Package: shinyWGD
+Type: Package
+Title: 'Shiny' Application for Whole Genome Duplication Analysis
+Version: 1.0.0
+Maintainer: Jia Li <li081766@gmail.com>
+Authors@R: c(
+    person("Jia", "Li", email = "li081766@gmail.com", role = c("aut", "cre")),
+    person("Zhen", "Li", email = "zhen.li@psb.vib-ugent.be", role = "ctb"),
+    person("Arthur", "Zwaenepoel", email = "arthur.zwaenepoel@gmail.com", role = "ctb"))
+Description: Provides a comprehensive 'Shiny' application for analyzing 
+    Whole Genome Duplication ('WGD') events.
+    This package provides a user-friendly 'Shiny' web application for 
+    non-experienced researchers to prepare input data and execute command lines 
+    for several well-known 'WGD' analysis tools, including 'wgd', 'ksrates', 
+    'i-ADHoRe', 'OrthoFinder', and 'Whale'. This package also provides the source code 
+    for experienced researchers to adjust and install the package to their own server. 
+    Key Features
+    1) Input Data Preparation 
+    This package allows users to conveniently upload and format their data, 
+	making it compatible with various 'WGD' analysis tools.
+    2) Command Line Generation
+    This package automatically generates the necessary command lines for 
+	selected 'WGD' analysis tools, reducing manual errors and saving time.
+    3) Visualization
+    This package offers interactive visualizations to explore and interpret 'WGD' results, 
+	facilitating in-depth 'WGD' analysis.
+    4) Comparative Genomics
+    Users can study and compare 'WGD' events across different species, 
+	aiding in evolutionary and comparative genomics studies.
+    5) User-Friendly Interface 
+	This 'Shiny' web application provides an intuitive and accessible interface, 
+	making 'WGD' analysis accessible to researchers and 'bioinformaticians' of all levels.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+SystemRequirements: pandoc (>= 1.12.3), pandoc-citeproc
+Imports: shiny, shinyalert, stringr, vroom, fs, tidyr, data.table,
+        dplyr, ape, ks, mclust, htmltools, seqinr, httr, jsonlite
+Suggests: tidyverse, knitr, rmarkdown, DT, argparse, bslib, bsplus,
+        english, fontawesome, igraph, shinyBS, shinyFiles,
+        shinyWidgets, shinyjs, stringi, tools, testthat (>= 3.0.0)
+NeedsCompilation: no
+Packaged: 2024-11-13 01:08:49 UTC; jiali
+Author: Jia Li [aut, cre],
+  Zhen Li [ctb],
+  Arthur Zwaenepoel [ctb]
+Repository: CRAN
+Date/Publication: 2024-11-13 15:10:01 UTC

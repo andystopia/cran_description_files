@@ -1,0 +1,25 @@
+Package: Infusion
+Type: Package
+Title: Inference Using Simulation
+Description: Implements functions for simulation-based inference. In particular, implements functions to perform likelihood inference from data summaries whose distributions are simulated. The package implements more advanced methods than the ones first described in: Rousset, Gouy, Almoyna and Courtiol  (2017) <doi:10.1111/1755-0998.12627>.  
+Encoding: UTF-8
+Version: 2.2.0
+Date: 2024-09-26
+Imports: spaMM (>= 4.4.16), proxy, blackbox (>= 1.1.41), mvtnorm,
+        methods, numDeriv, pbapply, ranger, foreach, matrixStats, boot,
+        nloptr, geometry, cli, viridisLite
+Suggests: testthat, Rmixmod, caret, xLLiM, reticulate, mafR (>= 1.0.11)
+Depends: R (>= 3.3.0)
+Authors@R: c(person("François", "Rousset", role = c("aut", "cre", "cph"),
+                     email = "francois.rousset@umontpellier.fr",
+                     comment = c(ORCID = "0000-0003-4670-0371")))
+Maintainer: François Rousset <francois.rousset@umontpellier.fr>
+License: CeCILL-2
+ByteCompile: true
+URL: https://gitlab.mbb.univ-montp2.fr/francois/Infusion
+NeedsCompilation: no
+Packaged: 2024-09-26 14:51:05 UTC; francois.rousset
+Author: François Rousset [aut, cre, cph]
+    (<https://orcid.org/0000-0003-4670-0371>)
+Repository: CRAN
+Date/Publication: 2024-09-26 21:00:49 UTC

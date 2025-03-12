@@ -1,0 +1,46 @@
+Package: bama
+Title: High Dimensional Bayesian Mediation Analysis
+Version: 1.3.0
+URL: https://github.com/umich-cphds/bama
+BugReports: https://github.com/umich-cphds/bama/issues
+Authors@R: 
+    c(person(given = "Alexander",
+           family = "Rix",
+           role = c("aut"),
+           email = "alexrix@umich.edu"),
+      person(given = "Mike",
+           family = "Kleinsasser",
+           role = c("aut", "cre"),
+           email = "mkleinsa@umich.edu"),
+      person(given = "Yanyi",
+           family = "Song",
+           role = c("aut"),
+           email = "yanys@umich.edu"))
+Description: Perform mediation analysis in the presence of high-dimensional
+    mediators based on the potential outcome framework. Bayesian Mediation
+    Analysis (BAMA), developed by Song et al (2019) <doi:10.1111/biom.13189> and
+    Song et al (2020) <arXiv:2009.11409>,
+    relies on two Bayesian sparse linear mixed models to simultaneously analyze
+    a relatively large number of mediators for a continuous exposure and outcome
+    assuming a small number of mediators are truly active. This sparsity
+    assumption also allows the extension of univariate mediator analysis by
+    casting the identification of active mediators as a variable selection
+    problem and applying Bayesian methods with continuous shrinkage priors on
+    the effects.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+LinkingTo: Rcpp, RcppArmadillo, RcppDist, BH
+Imports: Rcpp, parallel
+Depends: R (>= 3.5)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-01-24 17:46:06 UTC; mk
+Author: Alexander Rix [aut],
+  Mike Kleinsasser [aut, cre],
+  Yanyi Song [aut]
+Maintainer: Mike Kleinsasser <mkleinsa@umich.edu>
+Repository: CRAN
+Date/Publication: 2023-01-24 18:10:02 UTC

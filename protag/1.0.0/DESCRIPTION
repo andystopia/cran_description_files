@@ -1,0 +1,22 @@
+Package: protag
+Title: Search Tagged Peptides & Draw Highlighted Mass Spectra
+Version: 1.0.0
+Authors@R: 
+    person(given = "Bo",
+           family = "Yuan",
+           role = c("aut", "cre"),
+           email = "yuanbo.faith@gmail.com")
+Description: In a typical protein labelling procedure, proteins are chemically tagged with a functional group, usually at specific sites, then digested into peptides, which are then analyzed using matrix-assisted laser desorption ionization - time of flight mass spectrometry (MALDI-TOF MS) to generate peptide fingerprint. Relative to the control, peptides that are heavier by the mass of the labelling group are informative for sequence determination. Searching for peptides with such mass shifts, however, can be difficult. This package, designed to tackle this inconvenience, takes as input the mass list of two or multiple MALDI-TOF MS mass lists, and makes pairwise comparisons between the labeled groups vs. control, and restores centroid mass spectra with highlighted peaks of interest for easier visual examination. Particularly, peaks differentiated by the mass of the labelling group are defined as a “pair”, those with equal masses as a “match”, and all the other peaks as a “mismatch”.For more bioanalytical background information, refer to following publications: Jingjing Deng (2015) <doi:10.1007/978-1-4939-2550-6_19>; Elizabeth Chang (2016) <doi:10.7171/jbt.16-2702-002>.
+Depends: R (>= 2.10)
+Imports: ggplot2, dplyr, RColorBrewer, grDevices
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2019-08-08 00:17:47 UTC; Boyuan
+Author: Bo Yuan [aut, cre]
+Maintainer: Bo Yuan <yuanbo.faith@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-08-09 10:10:02 UTC

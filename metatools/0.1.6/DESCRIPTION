@@ -1,0 +1,52 @@
+Package: metatools
+Type: Package
+Title: Enable the Use of 'metacore' to Help Create and Check Dataset
+Version: 0.1.6
+Authors@R: c(
+         person(given = "Christina",
+             family = "Fillmore",
+             role = c("aut", "cre"),
+             email = "christina.e.fillmore@gsk.com",
+             comment = c(ORCID = "0000-0003-0595-2302")),
+         person(given = "Mike",
+           family = "Stackhouse",
+           role = c("aut"),
+           email = "mike.stackhouse@atorusresearch.com",
+           comment = c(ORCID = "0000-0001-6030-723X")),
+         person(given = "Jana",
+           family = "Stoilova",
+           role = c("aut"),
+           email = "jana.stoilova@roche.com"),
+         person(given = "Tamara",
+           family = "Senior",
+           role = c("aut"),
+           email = "tamara.senior@roche.com"),
+         person("GlaxoSmithKline LLC", role = c("cph", "fnd")),
+         person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+         person("Atorus Research LLC", role = c("cph", "fnd"))
+             )
+Description: Uses the metadata information stored in 'metacore' objects to check and build metadata associated columns.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: dplyr, metacore (>= 0.0.4), purrr, rlang, stringr, tidyr,
+        tibble, magrittr
+Suggests: testthat (>= 3.0.0), haven, covr, safetyData,
+        pharmaversesdtm, spelling
+Config/testthat/edition: 3
+URL: https://github.com/pharmaverse/metatools,
+        https://pharmaverse.github.io/metatools/
+BugReports: https://github.com/pharmaverse/metatools/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-07-23 10:17:50 UTC; christinafillmore
+Author: Christina Fillmore [aut, cre] (<https://orcid.org/0000-0003-0595-2302>),
+  Mike Stackhouse [aut] (<https://orcid.org/0000-0001-6030-723X>),
+  Jana Stoilova [aut],
+  Tamara Senior [aut],
+  GlaxoSmithKline LLC [cph, fnd],
+  F. Hoffmann-La Roche AG [cph, fnd],
+  Atorus Research LLC [cph, fnd]
+Maintainer: Christina Fillmore <christina.e.fillmore@gsk.com>
+Repository: CRAN
+Date/Publication: 2024-07-23 16:20:01 UTC

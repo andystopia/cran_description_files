@@ -1,0 +1,32 @@
+Package: RATest
+Type: Package
+Title: Randomization Tests
+Description: A collection of randomization tests, data sets and examples. The current version focuses on five testing problems and their implementation in empirical work. First, it facilitates the empirical researcher to test for particular hypotheses, such as comparisons of means, medians, and variances from k populations using robust permutation tests, which asymptotic validity holds under very weak assumptions, while retaining the exact rejection probability in finite samples when the underlying distributions are identical. Second, the description and implementation of a permutation test for testing the continuity assumption of the baseline covariates in the sharp regression discontinuity design (RDD) as in Canay and Kamat (2018) <https://goo.gl/UZFqt7>. More specifically, it allows the user to select a set of covariates and test the aforementioned hypothesis using a permutation test based on the Cramer-von Misses test statistic. Graphical inspection of the empirical CDF and histograms for the variables of interest is also supported in the package. Third, it provides the practitioner with an effortless implementation of a permutation test based on the martingale decomposition of the empirical process for testing for heterogeneous treatment effects in the presence of an estimated nuisance parameter as in Chung and Olivares (2021) <doi:10.1016/j.jeconom.2020.09.015>. Fourth, this version considers the two-sample goodness-of-fit testing problem under covariate adaptive randomization and implements a permutation test based on a prepivoted Kolmogorov-Smirnov test statistic. Lastly, it implements an asymptotically valid permutation test based on the quantile process for the hypothesis of constant quantile treatment effects in the presence of an estimated nuisance parameter.
+Version: 0.1.10
+BugReports: https://github.com/ignaciomsarmiento/RATest/issues
+Authors@R: c(
+    person( "Mauricio", "Olivares", email=  "mau.olivarego@gmail.com", role =  c("aut", "cre")),
+    person("Ignacio", "Sarmiento-Barbieri", email =  "ignaciomsarmiento@gmail.com", role = c("aut"))
+    )
+Maintainer: Mauricio Olivares <mau.olivarego@gmail.com>
+Depends: R (>= 3.00), ggplot2(>= 2.2.1), gridExtra
+Imports: stats, quantreg, compiler
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Author: Mauricio Olivares [aut, cre],
+  Ignacio Sarmiento-Barbieri [aut]
+Collate: 'CvM.stat.R' 'H.cdf.R' 'randomization.test.R' 'group.action.R'
+        'PT.Khmaladze.fit.R' 'PT.Khmaladze.MultTest.R'
+        'PTQTE.Khmaladze.fit.R' 'RDperm.R' 'RPT.R' 'lee2008.R'
+        'plot.RDperm.R' 'prepivot.ks.permtest.R'
+        'summary.PT.Khmaladze.MultTest.R' 'summary.PT.Khmaladze.fit.R'
+        'summary.PTQTE.Khmaladze.fit.R' 'summary.RDperm.R'
+        'summary.RPT.R' 'summary.prepivot.ks.permtest.R'
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-09-28 09:21:54 UTC; hoeffding
+Repository: CRAN
+Date/Publication: 2022-09-29 04:30:02 UTC

@@ -1,0 +1,49 @@
+Package: boostingDEA
+Type: Package
+Title: A Boosting Approach to Data Envelopment Analysis
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Maria D.", 
+           family = "Guillen", 
+           role = c("cre", "aut"),
+           email = "maria.guilleng@umh.es",
+           comment = c(ORCID = "0000-0002-2445-5654")),
+    person(given = "Juan", 
+           family = "Aparicio", 
+           role = c("aut"),
+           email = "j.aparicio@umh.es",
+           comment = c(ORCID = "0000-0002-0867-0004")),
+    person(given = "Víctor", 
+           family = "España", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-1807-6180"))
+           )
+Maintainer: Maria D. Guillen <maria.guilleng@umh.es>
+Description: Includes functions to estimate production frontiers 
+    and make ideal output predictions in the Data Envelopment Analysis (DEA) 
+    context using both standard models from DEA and Free Disposal Hull (FDH)
+    and boosting techniques. In particular, EATBoosting (Guillen et al., 2023 
+    <doi:10.1016/j.eswa.2022.119134>) and MARSBoosting. Moreover, the package 
+    includes code for estimating several technical efficiency measures using 
+    different models such as the input and output-oriented radial measures, the
+    input and output-oriented Russell measures, the Directional Distance 
+    Function (DDF), the Weighted Additive Measure (WAM) and the Slacks-Based 
+    Measure (SBM).
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: Rglpk, dplyr, lpSolveAPI, stats, MLmetrics, methods
+URL: https://github.com/itsmeryguillen/boostingDEA
+BugReports: https://github.com/itsmeryguillen/boostingDEA/issues
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-05-15 07:58:20 UTC; Master
+Author: Maria D. Guillen [cre, aut] (<https://orcid.org/0000-0002-2445-5654>),
+  Juan Aparicio [aut] (<https://orcid.org/0000-0002-0867-0004>),
+  Víctor España [aut] (<https://orcid.org/0000-0002-1807-6180>)
+Repository: CRAN
+Date/Publication: 2023-05-15 09:10:04 UTC

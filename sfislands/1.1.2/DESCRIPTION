@@ -1,0 +1,45 @@
+Package: sfislands
+Type: Package
+Title: Streamlines the Process of Fitting Areal Spatial Models
+Version: 1.1.2
+Authors@R: 
+  c(person(given = "Kevin", 
+          family = "Horan",
+          email = "kevin.horan.2021@mumail.ie", 
+          role = c("aut", "cre", "cph"),
+          comment = c(ORCID = "0009-0003-9378-0084")),
+    person(given = "Katarina", 
+          family = "Domijan", 
+          email = "katarina.domijan@mu.ie", 
+          role = c("aut", "ths"), 
+          comment = c(ORCID = "0000-0002-4268-2236")),
+    person(given = "Chris", 
+          family = "Brunsdon", 
+          email = "Christopher.Brunsdon@mu.ie", 
+          role = c("aut", "ths"), 
+          comment = c(ORCID = "0000-0003-4254-1780"))
+    )
+Maintainer: Kevin Horan <kevin.horan.2021@mumail.ie>
+Description: Helpers for addressing the issue of disconnected spatial units. 
+    It allows for convenient adding and removal of neighbourhood connectivity between areal units prior to modelling, with the visual aid of maps.
+    Post-modelling, it reduces the human workload for extracting, tidying and mapping predictions from areal models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, ggplot2, methods, purrr, sf, spdep, stats, stringr,
+        tidyr, broom.mixed, lifecycle
+Suggests: mgcv, testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+URL: https://github.com/horankev/sfislands,
+        https://horankev.github.io/sfislands/
+BugReports: https://github.com/horankev/sfislands/issues
+Depends: R (>= 4.1.0)
+Config/Needs/website: rmarkdown
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-02 16:43:04 UTC; kevinhoran
+Author: Kevin Horan [aut, cre, cph] (<https://orcid.org/0009-0003-9378-0084>),
+  Katarina Domijan [aut, ths] (<https://orcid.org/0000-0002-4268-2236>),
+  Chris Brunsdon [aut, ths] (<https://orcid.org/0000-0003-4254-1780>)
+Repository: CRAN
+Date/Publication: 2025-03-03 09:50:02 UTC

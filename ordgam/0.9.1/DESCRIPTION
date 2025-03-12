@@ -1,0 +1,25 @@
+Package: ordgam
+Type: Package
+Title: Additive Model for Ordinal Data using Laplace P-Splines
+Version: 0.9.1
+Authors@R: person("Philippe","Lambert", 
+ email="p.lambert@uliege.be", role=c("aut","cre"),
+ comment=c(ORCID ="0000-0002-3670-3328"))
+Maintainer: Philippe Lambert <p.lambert@uliege.be>
+BugReports: https://github.com/plambertULiege/ordgam/issues
+Description: Additive proportional odds model for ordinal data using Laplace P-splines. The combination of Laplace approximations and P-splines enable fast and flexible inference in a Bayesian framework. Specific approximations are proposed to account for the asymmetry in the marginal posterior distributions of non-penalized parameters. For more details, see Lambert and Gressani (2023) <doi:10.1177/1471082X231181173> ; Preprint: <arXiv:2210.01668>).
+License: GPL-3
+URL: <https://github.com/plambertULiege/ordgam>
+Encoding: UTF-8
+LazyData: true
+Imports: cubicBsplines, Matrix, mgcv, marqLevAlg, sn, MASS, numDeriv,
+        ucminf
+RoxygenNote: 7.2.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-09-13 11:26:17 UTC; plambert
+Author: Philippe Lambert [aut, cre] (<https://orcid.org/0000-0002-3670-3328>)
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2023-09-14 09:20:02 UTC

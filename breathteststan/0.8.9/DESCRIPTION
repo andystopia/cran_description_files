@@ -1,0 +1,41 @@
+Package: breathteststan
+Type: Package
+Title: Stan-Based Fit to Gastric Emptying Curves
+Version: 0.8.9
+Authors@R: c(
+    person("Dieter", "Menne", , "dieter.menne@menne-biomed.de", role = c("aut", "cre")),
+    person("Menne Biomed Consulting Tuebingen", role = c("cph")),
+    person("Benjamin","Misselwitz", , role = c("fnd")),
+    person("Mark", "Fox", , role = c("fnd")),
+    person("University Hospital of Zurich, Dep. Gastroenterology", role = c("fnd", "dtc"))
+    )
+Description: Stan-based curve-fitting function
+  for use with package 'breathtestcore' by the same author.
+  Stan functions are refactored here for easier testing.
+License: GPL (>= 3)
+Encoding: UTF-8
+ByteCompile: true
+Depends: R (>= 4.0.0), methods, Rcpp (>= 1.0.6)
+Imports: breathtestcore (>= 0.8.8), dplyr, purrr, rstan (>= 2.32.0),
+        rstantools (>= 2.4.0), stringr, tidyr
+Suggests: ggplot2, shinystan, igraph, bayesplot, testthat, covr, knitr,
+        parallelly, rmarkdown
+LinkingTo: BH (>= 1.72), Rcpp (>= 1.0.6), RcppEigen (>= 0.3.4), rstan
+        (>= 2.32.0), StanHeaders (>= 2.26.0)
+URL: https://github.com/dmenne/breathteststan,
+        https://dmenne.github.io/breathteststan/
+BugReports: https://github.com/dmenne/breathteststan/issues
+NeedsCompilation: yes
+SystemRequirements: GNU make
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+RoxygenNote: 7.3.2
+Packaged: 2025-01-07 08:37:00 UTC; Dieter
+Author: Dieter Menne [aut, cre],
+  Menne Biomed Consulting Tuebingen [cph],
+  Benjamin Misselwitz [fnd],
+  Mark Fox [fnd],
+  University Hospital of Zurich, Dep. Gastroenterology [fnd, dtc]
+Maintainer: Dieter Menne <dieter.menne@menne-biomed.de>
+Repository: CRAN
+Date/Publication: 2025-01-08 09:00:07 UTC

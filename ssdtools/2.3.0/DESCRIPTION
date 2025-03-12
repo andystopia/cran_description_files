@@ -1,0 +1,94 @@
+Package: ssdtools
+Title: Species Sensitivity Distributions
+Version: 2.3.0
+Authors@R: c(
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Rebecca", "Fisher", , "R.Fisher@aims.gov.au", role = "aut"),
+    person("David", "Fox", , "david.fox@environmetrics.net.au", role = "aut"),
+    person("Carl", "Schwarz", role = "aut"),
+    person("Angeline", "Tillmanns", role = "ctb"),
+    person("Seb", "Dalgarno", , "seb@poissonconsulting.ca", role = "ctb",
+           comment = c(ORCID = "0000-0002-3658-4517")),
+    person("Kathleen", "McTavish", role = "ctb"),
+    person("Heather", "Thompson", role = "ctb"), 
+    person("Doug", "Spry", role = "ctb"),
+    person("Rick", "van Dam", role = "ctb"),
+    person("Graham", "Batley", role = "ctb"),
+    person("Ali", "Azizishirazi", role = "ctb"),
+    person("Nadine", "Hussein", , "nadine@poissonconsulting.ca", role = "ctb",
+           comment = c(ORCID = "0000-0003-4470-8361")),
+    person("Sarah", "Lyons", , "sarah@poissonconsulting.ca", role = "ctb",
+           comment = c(ORCID = "0000-0002-6745-6796")),
+    person("Duncan", "Kennedy", , "duncan@poissonconsulting.ca", role = "ctb",
+           comment = c(ORCID = "0009-0001-4880-5751")),
+    person("Stephanie", "Hazlitt", role = "ctb"),
+    person("Hadley", "Wickham", role = "ctb"),
+    person("Sergio", "Ibarra Espinosa", role = "ctb"),
+    person("Andy", "Teucher", role = "ctb"),
+    person("Emilie", "Doussantousse", role = "ctb"),
+    person("Nan-Hung", "Hsieh", role = "ctb"),
+    person("Florencia", "D'Andrea", role = "ctb"),
+    person("Province of British Columbia", role = c("fnd", "cph")),
+    person("Environment and Climate Change Canada", role = c("fnd", "cph")),
+    person("Australian Government Department of Climate Change, Energy, the Environment and Water", role = c("fnd", "cph"))
+  )
+Description: Species sensitivity distributions are cumulative probability
+    distributions which are fitted to toxicity concentrations for
+    different species as described by Posthuma et al.(2001)
+    <isbn:9781566705783>. The ssdtools package uses Maximum Likelihood to
+    fit distributions such as the gamma, log-logistic, log-normal and
+    log-normal log-normal mixture. Multiple distributions can be averaged
+    using Akaike Information Criteria.  Confidence intervals on hazard
+    concentrations and proportions are produced by bootstrapping.
+License: Apache License (== 2.0) | file LICENSE
+URL: https://github.com/bcgov/ssdtools,
+        https://bcgov.github.io/ssdtools/
+BugReports: https://github.com/bcgov/ssdtools/issues
+Depends: R (>= 4.1)
+Imports: abind, chk, furrr, generics, ggplot2, ggtext, glue, goftest,
+        graphics, grid, lifecycle, parallel, plyr, purrr, Rcpp, rlang,
+        scales, ssddata, stats, stringr, tibble, TMB, universals,
+        utils, withr
+Suggests: actuar, covr, doFuture, dplyr, EnvStats, extraDistr,
+        fitdistrplus, foreach, future, grDevices, knitr, latex2exp,
+        magrittr, mle.tools, patchwork, readr, reshape2, rmarkdown,
+        testthat (>= 3.0.0), tidyr, tidyselect, tinytex, VGAM
+LinkingTo: Rcpp, RcppEigen, TMB
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2.9000
+NeedsCompilation: yes
+Packaged: 2025-02-20 12:55:21 UTC; joe
+Author: Joe Thorley [aut, cre] (<https://orcid.org/0000-0002-7683-4592>),
+  Rebecca Fisher [aut],
+  David Fox [aut],
+  Carl Schwarz [aut],
+  Angeline Tillmanns [ctb],
+  Seb Dalgarno [ctb] (<https://orcid.org/0000-0002-3658-4517>),
+  Kathleen McTavish [ctb],
+  Heather Thompson [ctb],
+  Doug Spry [ctb],
+  Rick van Dam [ctb],
+  Graham Batley [ctb],
+  Ali Azizishirazi [ctb],
+  Nadine Hussein [ctb] (<https://orcid.org/0000-0003-4470-8361>),
+  Sarah Lyons [ctb] (<https://orcid.org/0000-0002-6745-6796>),
+  Duncan Kennedy [ctb] (<https://orcid.org/0009-0001-4880-5751>),
+  Stephanie Hazlitt [ctb],
+  Hadley Wickham [ctb],
+  Sergio Ibarra Espinosa [ctb],
+  Andy Teucher [ctb],
+  Emilie Doussantousse [ctb],
+  Nan-Hung Hsieh [ctb],
+  Florencia D'Andrea [ctb],
+  Province of British Columbia [fnd, cph],
+  Environment and Climate Change Canada [fnd, cph],
+  Australian Government Department of Climate Change, Energy, the
+    Environment and Water [fnd, cph]
+Maintainer: Joe Thorley <joe@poissonconsulting.ca>
+Repository: CRAN
+Date/Publication: 2025-02-20 13:20:02 UTC

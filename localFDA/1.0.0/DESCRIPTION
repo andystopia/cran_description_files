@@ -1,0 +1,30 @@
+Package: localFDA
+Type: Package
+Title: Localization Processes for Functional Data Analysis
+Version: 1.0.0
+Date: 2020-09-24
+Authors@R: c(person("Antonio", "Elías", email = "antonioefz91@gmail.com",
+                  role = c("aut", "cre")),
+            person("Raul", "Jiménez", role = c("aut")),
+            person("Joe", "Yukich", role = c("aut")))
+Description: Implementation of a theoretically supported alternative to k-nearest neighbors for functional data 
+  to solve problems of estimating unobserved segments of a partially observed functional data sample, 
+  functional classification and outlier detection. The approximating neighbor curves are piecewise functions built from a functional sample. 
+  Instead of a distance on a function space we use a locally defined distance function that satisfies stabilization criteria. 
+  The package allows the implementation of the methodology and the replication of the results in Elías, A., Jiménez, R. and Yukich, J. (2020) <arXiv:2007.16059>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://github.com/aefdz/localFDA
+BugReports: https://github.com/aefdz/localFDA
+Imports: stats, graphics
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2020-09-27 14:10:55 UTC; anton
+Author: Antonio Elías [aut, cre],
+  Raul Jiménez [aut],
+  Joe Yukich [aut]
+Maintainer: Antonio Elías <antonioefz91@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-09-30 08:30:09 UTC

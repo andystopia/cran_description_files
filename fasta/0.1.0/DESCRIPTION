@@ -1,0 +1,27 @@
+Package: fasta
+Type: Package
+Title: Fast Adaptive Shrinkage/Thresholding Algorithm
+Version: 0.1.0
+Authors@R: c(
+    person(given=c("Eric","C."), family="Chi", email="ecchi1105@gmail.com", role=c("aut","cre","trl","cph")),
+    person(given="Tom", family="Goldstein", email="tomg@cs.umd.edu", role="aut", comment = "MATLAB original, https://www.cs.umd.edu/~tomg/projects/fasta/"),
+    person(given="Christoph", family="Studer", email="studer@cornell.edu", role="aut"),
+    person(given=c("Richard", "G."), family="Baraniuk", email="richb@rice.edu", role="aut")
+    )
+Description: A collection of acceleration schemes for proximal gradient methods for estimating penalized regression parameters described in
+    Goldstein, Studer, and Baraniuk (2016) <arXiv:1411.3406>. Schemes such as Fast Iterative Shrinkage and Thresholding Algorithm (FISTA) by Beck and Teboulle (2009) <doi:10.1137/080716542> 
+    and the adaptive stepsize rule introduced in Wright, Nowak, and Figueiredo (2009) <doi:10.1109/TSP.2009.2016892> are included. You provide the objective function and proximal mappings, and it takes care of the issues like stepsize selection, acceleration, and stopping conditions for you.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-04-09 14:51:47 UTC; ecchi
+Author: Eric C. Chi [aut, cre, trl, cph],
+  Tom Goldstein [aut] (MATLAB original,
+    https://www.cs.umd.edu/~tomg/projects/fasta/),
+  Christoph Studer [aut],
+  Richard G. Baraniuk [aut]
+Maintainer: Eric C. Chi <ecchi1105@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-04-10 10:01:37 UTC

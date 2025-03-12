@@ -1,0 +1,35 @@
+Package: luajr
+Type: Package
+Title: 'LuaJIT' Scripting
+Version: 0.1.8
+Authors@R: c(
+    person("Mike", "Pall", role = c("aut", "cph"), 
+        comment = "Author of the embedded LuaJIT compiler"),
+    person("Lua.org, PUC-Rio", role = "cph", 
+        comment = "Copyright holders over portions of Lua source code included in LuaJIT"),
+    person("Nicholas", "Davies", email = "nicholas.davies@lshtm.ac.uk", 
+        role = c("cre", "ctb", "cph"), 
+        comment = c("Author of the R package wrapper", ORCID = "0000-0002-1740-1412")))
+Description: An interface to 'LuaJIT' <https://luajit.org>, a just-in-time 
+    compiler for the 'Lua' scripting language <https://www.lua.org>. Allows 
+    users to run 'Lua' code from 'R'.
+URL: https://github.com/nicholasdavies/luajr,
+        https://nicholasdavies.github.io/luajr/
+BugReports: https://github.com/nicholasdavies/luajr/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+SystemRequirements: GNU make
+Suggests: Rcpp, crayon, knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-07-01 14:30:03 UTC; nick
+Author: Mike Pall [aut, cph] (Author of the embedded LuaJIT compiler),
+  Lua.org, PUC-Rio [cph] (Copyright holders over portions of Lua source
+    code included in LuaJIT),
+  Nicholas Davies [cre, ctb, cph] (Author of the R package wrapper,
+    <https://orcid.org/0000-0002-1740-1412>)
+Maintainer: Nicholas Davies <nicholas.davies@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2024-07-01 14:50:02 UTC

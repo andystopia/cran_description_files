@@ -1,0 +1,28 @@
+Package: ODT
+Type: Package
+Title: Optimal Decision Trees Algorithm
+Version: 1.0.0
+Authors@R: c(
+  person(given = "Maddi", family = "Eceiza", role = "aut"),
+  person(given = "Lucia", family = "Ruiz", role = "aut"),
+  person(given = "Angel", family = "Rubio", role = "aut", email = "arubio@unav.es"),
+  person(given = "Katyna", family = "Sada Del Real", role = c("aut", "cre"), email = "ksada@unav.es"))
+Maintainer: Katyna Sada Del Real <ksada@unav.es>
+Description: Implements a tree-based method specifically designed for personalized medicine applications. By using genomic and mutational data, 'ODT' efficiently identifies optimal drug recommendations tailored to individual patient profiles. The 'ODT' algorithm constructs decision trees that bifurcate at each node, selecting the most relevant markers (discrete or continuous) and corresponding treatments, thus ensuring that recommendations are both personalized and statistically robust. This iterative approach enhances therapeutic decision-making by refining treatment suggestions until a predefined group size is achieved. Moreover, the simplicity and interpretability of the resulting trees make the method accessible to healthcare professionals. Includes functions for training the decision tree, making predictions on new samples or patients, and visualizing the resulting tree. For detailed insights into the methodology, please refer to Gimeno et al. (2023) <doi:10.1093/bib/bbad200>.
+Depends: R (>= 4.0), matrixStats, partykit, data.tree, stats
+Imports: magick, DiagrammeRsvg, grDevices, DiagrammeR, rsvg
+Suggests: RUnit, Matrix, rmarkdown, robustbase, knitr
+License: Artistic-2.0
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-10-17 10:19:25 UTC; katyna
+Repository: CRAN
+Date/Publication: 2024-10-18 10:50:43 UTC
+Author: Maddi Eceiza [aut],
+  Lucia Ruiz [aut],
+  Angel Rubio [aut],
+  Katyna Sada Del Real [aut, cre]

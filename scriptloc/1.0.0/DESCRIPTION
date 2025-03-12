@@ -1,0 +1,24 @@
+Package: scriptloc
+Title: Get the Location of the R Script that is Being Sourced/Executed
+Version: 1.0.0
+Authors@R: 
+    person(given = "Naren",
+           family = "Chandran Sakthivel",
+           role = c("aut", "cre"),
+           email = "narenschandran@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0001-7728-0985"))
+Author: Naren Chandran Sakthivel [aut, cre]
+    (<https://orcid.org/0000-0001-7728-0985>)
+Maintainer: Naren Chandran Sakthivel <narenschandran@gmail.com>
+Description: Provides functions to retrieve the location of R scripts loaded through the source() function or run from the command line using the Rscript command. This functionality is analogous to the Bash shell's ${BASH_SOURCE[0]}. Users can first set the project root's path relative to the script path and then all subsequent paths relative to the root. This system ensures that all paths lead to the same location regardless of where any script is executed/loaded from without resorting to the use of setwd() at the top of the scripts.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 3.6.0)
+Imports:
+Suggests: knitr, rmarkdown, prettydoc
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-08-17 08:11:58 UTC; naren
+Repository: CRAN
+Date/Publication: 2023-08-17 15:00:02 UTC

@@ -1,0 +1,53 @@
+Package: dunlin
+Title: Preprocessing Tools for Clinical Trial Data
+Version: 0.1.9
+Date: 2025-02-20
+Authors@R: c(
+    person("Liming", "Li", , "liming.li@roche.com", role = "aut",
+           comment = "Original creator of the package"),
+    person("Benoit", "Falquet", , "benoit.falquet@roche.com", role = "aut",
+           comment = "Original creator of the package"),
+    person("Xiaoli", "Duan", , "xiaoli.duan@roche.com", role = "ctb"),
+    person("Pawel", "Rucki", , "pawel.rucki@roche.com", role = "ctb"),
+    person("Joe", "Zhu", , "joe.zhu@roche.com", role = "cre",
+           comment = c(ORCID = "0000-0001-7566-2787")),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
+Description: A collection of functions to preprocess data and organize
+    them in a format amenable to use by chevron.
+License: Apache License 2.0
+URL: https://insightsengineering.github.io/dunlin/,
+        https://github.com/insightsengineering/dunlin/
+BugReports: https://github.com/insightsengineering/dunlin/issues
+Depends: R (>= 4.0.0)
+Imports: checkmate (>= 2.1.0), dplyr (>= 1.1.0), forcats (>= 1.0.0),
+        glue (>= 1.0.0), magrittr (>= 1.5), methods, rlang (>= 1.0.0),
+        stringr (>= 1.4.1), tibble (>= 1.2), yaml (>= 2.1.15)
+Suggests: knitr (>= 1.42), rmarkdown (>= 2.23), testthat (>= 3.0.4),
+        withr (>= 2.1.0)
+VignetteBuilder: knitr, rmarkdown
+Config/Needs/verdepcheck: mllg/checkmate, tidyverse/dplyr,
+        tidyverse/forcats, tidyverse/glue, tidyverse/magrittr,
+        r-lib/rlang, tidyverse/stringr, tidyverse/tibble,
+        yaml=vubiostat/r-yaml, yihui/knitr, rstudio/rmarkdown,
+        r-lib/testthat, r-lib/withr
+Config/Needs/website: insightsengineering/nesttemplate
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.3.2
+Collate: 'assertions.R' 'co_relevels.R' 'cut_by_group.R'
+        'dunlin-package.R' 'explicit_na.R' 'filter.R'
+        'join_adsub_adsl.R' 'pivot.R' 'propagate.R' 'reformat.R'
+        'render_safe.R' 'rules.R' 'unite.R' 'utils.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2025-02-19 17:04:30 UTC; rstudio
+Author: Liming Li [aut] (Original creator of the package),
+  Benoit Falquet [aut] (Original creator of the package),
+  Xiaoli Duan [ctb],
+  Pawel Rucki [ctb],
+  Joe Zhu [cre] (<https://orcid.org/0000-0001-7566-2787>),
+  F. Hoffmann-La Roche AG [cph, fnd]
+Maintainer: Joe Zhu <joe.zhu@roche.com>
+Repository: CRAN
+Date/Publication: 2025-02-20 08:40:02 UTC

@@ -1,0 +1,25 @@
+Package: chatRater
+Type: Package
+Title: Rating and Evaluating Texts Using Large Language Models
+Version: 1.1.0
+Date: 2025-02-18
+Authors@R: 
+    person(given = "Shiyang", family = "Zheng", email = "Shiyang.Zheng@nottingham.ac.uk",
+           role = c("aut", "cre"))
+Maintainer: Shiyang Zheng <Shiyang.Zheng@nottingham.ac.uk>
+Description: Generates ratings and psycholinguistic metrics for textual stimuli using large language models.
+    It enables users to evaluate idioms and other language materials by combining context, prompts, and stimulus inputs.
+    It supports multiple LLM APIs (such as 'OpenAI', 'DeepSeek', 'Anthropic', 'Cohere', 'Google PaLM', and 'Ollama')
+    by allowing users to switch models with a single parameter. In addition to generating numeric ratings,
+    'chatRater' provides functions for obtaining detailed psycholinguistic metrics including word frequency (with optional corpus input),
+    lexical coverage (with customizable vocabulary size and test basis), Zipf metric, Levenshtein distance, and semantic transparency.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: openai, httr, jsonlite
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2025-03-03 19:42:42 UTC; admin
+Author: Shiyang Zheng [aut, cre]
+RoxygenNote: 7.2.3
+Repository: CRAN
+Date/Publication: 2025-03-03 20:00:07 UTC

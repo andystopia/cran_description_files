@@ -1,0 +1,28 @@
+Package: detourr
+Type: Package
+Title: Portable and Performant Tour Animations
+Version: 0.1.0
+Authors@R: c(
+    person("Casper", "Hart", email = "casperhart93@gmail.com", role = c("aut", "cre")),
+    person("Earo", "Wang", email = "earo.wang@gmail.com", role = c("aut", "ths"), comment = c(ORCID = "0000-0001-6448-5260"))
+    )
+Description: Provides 2D and 3D tour animations as HTML widgets. The user can interact with the widgets using orbit controls, tooltips, brushing, and timeline controls. Linked brushing is supported using 'crosstalk', and widgets can be embedded in Shiny apps or HTML documents. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: tourr, tibble, htmlwidgets, tidyselect, rlang, purrr,
+        viridisLite, grDevices
+RoxygenNote: 7.2.0
+Suggests: testthat (>= 3.0.0), crosstalk, shiny, htmltools, knitr,
+        dplyr, liminal, rmarkdown, geozoo
+Config/testthat/edition: 3
+URL: https://casperhart.github.io/detourr/
+BugReports: https://github.com/casperhart/detourr/issues
+Depends: R (>= 4.1)
+NeedsCompilation: no
+Packaged: 2022-06-17 07:29:19 UTC; chart
+Author: Casper Hart [aut, cre],
+  Earo Wang [aut, ths] (<https://orcid.org/0000-0001-6448-5260>)
+Maintainer: Casper Hart <casperhart93@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-06-20 08:00:02 UTC

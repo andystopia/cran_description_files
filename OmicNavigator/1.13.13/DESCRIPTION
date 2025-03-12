@@ -1,0 +1,64 @@
+Package: OmicNavigator
+Type: Package
+Title: Open-Source Software for 'Omic' Data Analysis and Visualization
+Description: 
+  A tool for interactive exploration of the results from 'omics'
+  experiments to facilitate novel discoveries from high-throughput biology. The
+  software includes R functions for the 'bioinformatician' to deposit study
+  metadata and the outputs from statistical analyses (e.g. differential
+  expression, enrichment). These results are then exported to an interactive
+  JavaScript dashboard that can be interrogated on the user's local machine or
+  deployed online to be explored by collaborators. The dashboard includes
+  'sortable' tables, interactive plots including network visualization, and
+  fine-grained filtering based on statistical significance.
+Version: 1.13.13
+Authors@R: c(
+  person("Terrence", "Ernst", role = c("aut"),
+         comment = "Web application"),
+  person("John", "Blischak", role = c("aut", "cre"),
+         email = "jdblischak@gmail.com",
+         comment = c(ORCID = "0000-0003-2634-9879")),
+  person("Paul", "Nordlund", role = c("aut"),
+         comment = "Web application"),
+  person("Justin", "Moore", role = c("aut"),
+         comment = "UpSet-related functions and web application"),
+  person("Joe", "Dalen", role = c("aut"),
+         comment = "Barcode functionality and web application"),
+  person("Akshay", "Bhamidipati", role = c("aut"),
+         comment = "Web application"),
+  person("Brett", "Engelmann", role = c("aut"),
+         email = "brett.engelmann@abbvie.com"),
+  person("Marco", "Curado", role = c("aut"),
+         comment = "Improved plotting capabilities"),
+  person("Joe", "LoGrasso", role = c("aut"),
+         comment = "Support for plotly"),
+  person(given = "AbbVie Inc.", role = c("cph", "fnd"))
+  )
+URL: https://github.com/abbvie-external/OmicNavigator
+BugReports: https://github.com/abbvie-external/OmicNavigator/issues
+License: MIT + file LICENSE
+License_restricts_use: no
+License_is_FOSS: yes
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.2.0)
+Imports: data.table (>= 1.12.4), graphics, jsonlite, stats, tools,
+        utils
+Suggests: faviconPlease, ggplot2, opencpu, plotly, tinytest (>= 1.2.3),
+        ttdo (>= 0.0.6), UpSetR
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-08-25 19:39:29 UTC; jdblischak
+Author: Terrence Ernst [aut] (Web application),
+  John Blischak [aut, cre] (<https://orcid.org/0000-0003-2634-9879>),
+  Paul Nordlund [aut] (Web application),
+  Justin Moore [aut] (UpSet-related functions and web application),
+  Joe Dalen [aut] (Barcode functionality and web application),
+  Akshay Bhamidipati [aut] (Web application),
+  Brett Engelmann [aut],
+  Marco Curado [aut] (Improved plotting capabilities),
+  Joe LoGrasso [aut] (Support for plotly),
+  AbbVie Inc. [cph, fnd]
+Maintainer: John Blischak <jdblischak@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-08-25 20:40:02 UTC

@@ -1,0 +1,32 @@
+Type: Package
+Package: glmnetSE
+Title: Add Nonparametric Bootstrap SE to 'glmnet' for Selected
+        Coefficients (No Shrinkage)
+Version: 0.0.1
+Authors@R: 
+    person(given = "Sebastian",
+           family = "Bahr",
+           role = c("cre", "aut"),
+           email = "sebastian.bahr@unibe.ch")
+Author: Sebastian Bahr [cre, aut]
+Description: Builds a LASSO, Ridge, or Elastic Net model with 'glmnet' or
+    'cv.glmnet' with bootstrap inference statistics (SE, CI, and p-value)
+    for selected coefficients with no shrinkage applied for them. Model
+    performance can be evaluated on test data and an automated alpha
+    selection is implemented for Elastic Net. Parallelized computation is
+    used to speed up the process. The methods are described in Friedman et
+    al. (2010) <doi:10.18637/jss.v033.i01> and Simon et al. (2011)
+    <doi:10.18637/jss.v039.i05>.
+License: GPL-3
+URL: https://github.com/sebastianbahr/glmnetSE
+BugReports: https://github.com/sebastianbahr/glmnetSE/blob/main/issues
+Depends: R (>= 4.0.0)
+Imports: boot, glmnet, graphics, parallel, stats
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-11-05 09:06:53 UTC; bahr
+Maintainer: Sebastian Bahr <sebastian.bahr@unibe.ch>
+Repository: CRAN
+Date/Publication: 2021-11-05 15:40:02 UTC

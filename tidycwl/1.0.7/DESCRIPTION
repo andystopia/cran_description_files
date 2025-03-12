@@ -1,0 +1,41 @@
+Package: tidycwl
+Type: Package
+Title: Tidy Common Workflow Language Tools and Workflows
+Version: 1.0.7
+Authors@R: c(
+    person("Soner", "Koc", email = "soner.koc@sevenbridges.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0772-6600")),
+    person("Jeffrey", "Grover", email = "jeffrey.grover@sevenbridges.com", role = c("aut"), comment = c(ORCID = "0000-0001-6246-1767")),
+    person("Nan", "Xiao", role = c("aut"), comment = c(ORCID = "0000-0002-0250-5673")),
+    person("Dennis", "Dean", email = "dennis.dean@sevenbridges.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-7621-9717")),
+    person("Seven Bridges Genomics", role = c("cph", "fnd"))
+    )
+Maintainer: Soner Koc <soner.koc@sevenbridges.com>
+Description: The Common Workflow Language <https://www.commonwl.org/> is an
+    open standard for describing data analysis workflows. This package takes
+    the raw Common Workflow Language workflows encoded in JSON or 'YAML'
+    and turns the workflow elements into tidy data frames or lists.
+    A graph representation for the workflow can be constructed and visualized
+    with the parsed workflow inputs, outputs, and steps. Users can embed the
+    visualizations in their 'Shiny' applications, and export them
+    as HTML files or static images.
+License: AGPL-3
+SystemRequirements: PhantomJS (https://phantomjs.org), pandoc (>=
+        1.12.3) - https://pandoc.org.
+VignetteBuilder: knitr
+URL: https://sbg.github.io/tidycwl/, https://github.com/sbg/tidycwl
+BugReports: https://github.com/sbg/tidycwl/issues
+Encoding: UTF-8
+Imports: jsonlite, yaml, dplyr, magrittr, visNetwork, htmlwidgets,
+        webshot
+Suggests: knitr, rmarkdown, shiny
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-04-01 15:13:42 UTC; c02ck1a7lvdm
+Author: Soner Koc [aut, cre] (<https://orcid.org/0000-0002-0772-6600>),
+  Jeffrey Grover [aut] (<https://orcid.org/0000-0001-6246-1767>),
+  Nan Xiao [aut] (<https://orcid.org/0000-0002-0250-5673>),
+  Dennis Dean [aut] (<https://orcid.org/0000-0002-7621-9717>),
+  Seven Bridges Genomics [cph, fnd]
+Repository: CRAN
+Date/Publication: 2022-05-03 07:00:02 UTC

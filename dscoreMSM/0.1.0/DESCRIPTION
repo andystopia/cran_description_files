@@ -1,0 +1,27 @@
+Package: dscoreMSM
+Type: Package
+Title: Survival Proximity Score Matching in Multi-State Survival Model
+Version: 0.1.0
+Authors@R: c(person("Atanu", "Bhattacharjee",
+                    email = "atanustat@gmail.com",
+                    role = c("aut", "cre", "ctb")),
+             person("Bhrigu Kumar", "Rajbongshi", role = c("aut", "ctb")),
+             person("Gajendra K", "Vishwakarma", role = c("aut", "ctb")))
+Maintainer: Atanu Bhattacharjee <atanustat@gmail.com>
+Imports: rjags, stats, timeROC, ggplot2, survival, mstate
+Description: Implements survival proximity score matching in multi-state survival models. Includes tools for simulating survival data and estimating transition-specific coxph models with frailty terms. The primary methodological work on multistate censored data modeling using propensity score matching has been published by Bhattacharjee et al.(2024) <doi:10.1038/s41598-024-54149-y>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-12-12 16:29:27 UTC; atanubhattacharjee
+Author: Atanu Bhattacharjee [aut, cre, ctb],
+  Bhrigu Kumar Rajbongshi [aut, ctb],
+  Gajendra K Vishwakarma [aut, ctb]
+Repository: CRAN
+Date/Publication: 2024-12-13 16:40:02 UTC

@@ -1,0 +1,45 @@
+Type: Package
+Package: ebirdst
+Title: Access and Analyze eBird Status and Trends Data Products
+Version: 3.2022.3
+Authors@R: c(
+    person("Matthew", "Strimas-Mackey", , "mes335@cornell.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8929-7776")),
+    person("Shawn", "Ligocki", , "sligocki@cornell.edu", role = "aut"),
+    person("Tom", "Auer", , "mta45@cornell.edu", role = "aut",
+           comment = c(ORCID = "0000-0001-8619-7147")),
+    person("Daniel", "Fink", , "df36@cornell.edu", role = "aut",
+           comment = c(ORCID = "0000-0002-8368-1248")),
+    person("Cornell Lab of Ornithology", role = "cph")
+  )
+Description: Tools for accessing and analyzing eBird Status and
+    Trends Data Products
+    (<https://science.ebird.org/en/status-and-trends>). eBird
+    (<https://ebird.org/home>) is a global database of bird observations
+    collected by member of the public. eBird Status and Trends uses these
+    data to model global bird distributions, abundances, and population trends 
+    at a high spatial and temporal resolution.
+License: GPL-3
+URL: https://ebird.github.io/ebirdst/, https://github.com/ebird/ebirdst
+BugReports: https://github.com/ebird/ebirdst/issues
+Depends: R (>= 4.0.0)
+Imports: arrow, dplyr (>= 1.0.0), grDevices, jsonlite, magrittr,
+        RColorBrewer, rlang, sf (>= 1.0-0), stats, stringr, terra (>=
+        1.6-3), tools, utils, viridisLite
+Suggests: fields, ggplot2, knitr, PresenceAbsence, rmarkdown,
+        rnaturalearth, testthat, withr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-03-05 16:43:44 UTC; mes335
+Author: Matthew Strimas-Mackey [aut, cre]
+    (<https://orcid.org/0000-0001-8929-7776>),
+  Shawn Ligocki [aut],
+  Tom Auer [aut] (<https://orcid.org/0000-0001-8619-7147>),
+  Daniel Fink [aut] (<https://orcid.org/0000-0002-8368-1248>),
+  Cornell Lab of Ornithology [cph]
+Maintainer: Matthew Strimas-Mackey <mes335@cornell.edu>
+Repository: CRAN
+Date/Publication: 2024-03-05 17:20:02 UTC

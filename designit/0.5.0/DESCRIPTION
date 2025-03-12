@@ -1,0 +1,74 @@
+Package: designit
+Title: Blocking and Randomization for Experimental Design
+Version: 0.5.0
+Authors@R: c(
+    person(given = c(first = "Iakov", middle = "I."),
+           family = "Davydov",
+           role = c("aut", "cre", "cph"),
+           email = "iakov.davydov@roche.com",
+           comment = c(ORCID = "0000-0003-3510-3926")),
+    person(given = "Juliane",
+           family = "Siebourg-Polster",
+           role = c("aut", "cph"),
+           email = "juliane.siebourg-polster@roche.com",
+           comment = c(ORCID = "0000-0002-1759-3223")),
+    person(given = "Guido",
+           family = "Steiner",
+           role = c("aut", "cph"),
+           email = "guido.steiner@roche.com",
+           comment = c(ORCID = "")),
+    person(given = "Konrad",
+           family = "Rudolph",
+           role = "ctb",
+           email = "konrad.rudolph@roche.com",
+           comment = c(ORCID = "0000-0002-9866-7051")),
+    person(given = "Jitao David",
+           family = "Zhang",
+           role = c("aut", "cph"),
+           email = "jitao_david.zhang@roche.com",
+           comment = c(ORCID="0000-0002-3085-0909")),
+    person(given = "Balazs",
+           family = "Banfai",
+           role = c("aut", "cph"),
+           email = "balazs.banfai@roche.com",
+           comment = c(ORCID = "0000-0003-0422-7977")),
+    person(given = "F. Hoffman-La Roche", role = c("cph", "fnd")))
+Description: 
+    Intelligently assign samples to batches in order to reduce batch effects.
+    Batch effects can have a significant impact on data analysis, especially
+    when the assignment of samples to batches coincides with the contrast
+    groups being studied. By defining a batch container and a scoring function
+    that reflects the contrasts, this package allows users to assign samples in
+    a way that minimizes the potential impact of batch effects on the
+    comparison of interest. Among other functionality, we provide an
+    implementation for OSAT score by Yan et al. (2012,
+    <doi:10.1186/1471-2164-13-689>).
+License: MIT + file LICENSE
+URL: https://bedapub.github.io/designit/,
+        https://github.com/BEDApub/designit/
+BugReports: https://github.com/BEDApub/designit/issues
+Depends: R (>= 4.1.0)
+Imports: rlang (>= 0.4.0), dplyr (>= 1.0.0), purrr, ggplot2, scales,
+        tibble, tidyr, assertthat, stringr, R6, data.table, stats
+Suggests: testthat, roxygen2, pkgdown, knitr, markdown, rmarkdown, gt,
+        bench, OSAT, tidyverse, printr, devtools (>= 2.0.0), ggpattern,
+        cowplot, bestNormalize, here
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+biocViews:
+NeedsCompilation: no
+Packaged: 2024-03-19 09:27:56 UTC; davydovi
+Author: Iakov I. Davydov [aut, cre, cph]
+    (<https://orcid.org/0000-0003-3510-3926>),
+  Juliane Siebourg-Polster [aut, cph]
+    (<https://orcid.org/0000-0002-1759-3223>),
+  Guido Steiner [aut, cph],
+  Konrad Rudolph [ctb] (<https://orcid.org/0000-0002-9866-7051>),
+  Jitao David Zhang [aut, cph] (<https://orcid.org/0000-0002-3085-0909>),
+  Balazs Banfai [aut, cph] (<https://orcid.org/0000-0003-0422-7977>),
+  F. Hoffman-La Roche [cph, fnd]
+Maintainer: Iakov I. Davydov <iakov.davydov@roche.com>
+Repository: CRAN
+Date/Publication: 2024-03-21 14:30:05 UTC

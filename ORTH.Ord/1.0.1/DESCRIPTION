@@ -1,0 +1,23 @@
+Package: ORTH.Ord
+Title: Alternating Logistic Regression with Orthogonalized Residuals
+        for Correlated Ordinal Outcomes
+Version: 1.0.1
+Authors@R: c(
+    person("Can", "Meng", email="can.meng@yale.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8257-6243")),
+    person("Fan", "Li", email="fan.f.li@yale.edu", role = "aut"))
+Description: A modified version of alternating logistic regressions (ALR) with estimation based on orthogonalized residuals (ORTH) is implemented, which use paired estimating equations to jointly estimate parameters in marginal mean and within-association models. The within-cluster association between ordinal responses is modeled by global pairwise odds ratios (POR). A finite-sample bias correction is provided to POR parameter estimates based on matrix multiplicative adjusted orthogonalized residuals (MMORTH) for correcting estimating equations, and different bias-corrected variance estimators such as BC1, BC2, and BC3.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Depends: R (>= 4.0), magic, MASS
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-08-20 17:14:39 UTC; cmeng
+Author: Can Meng [aut, cre] (<https://orcid.org/0000-0002-8257-6243>),
+  Fan Li [aut]
+Maintainer: Can Meng <can.meng@yale.edu>
+Repository: CRAN
+Date/Publication: 2024-08-26 13:10:02 UTC

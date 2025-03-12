@@ -1,0 +1,41 @@
+Package: slider
+Title: Sliding Window Functions
+Version: 0.3.2
+Authors@R: c(
+    person("Davis", "Vaughan", , "davis@posit.co", role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Provides type-stable rolling window functions over any R data
+    type. Cumulative and expanding windows are also supported. For more
+    advanced usage, an index can be used as a secondary vector that
+    defines how sliding windows are to be created.
+License: MIT + file LICENSE
+URL: https://github.com/r-lib/slider, https://slider.r-lib.org
+BugReports: https://github.com/r-lib/slider/issues
+Depends: R (>= 4.0.0)
+Imports: cli (>= 3.6.1), rlang (>= 1.1.1), vctrs (>= 0.6.3), warp
+Suggests: covr, dplyr (>= 1.0.0), knitr, lubridate, rmarkdown, testthat
+        (>= 3.0.0)
+LinkingTo: vctrs (>= 0.6.3)
+VignetteBuilder: knitr
+Config/build/compilation-database: true
+Config/Needs/website: tidyverse/tidytemplate
+Config/testthat/edition: 3
+Config/usethis/last-upkeep: 2024-10-25
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Collate: 'arithmetic.R' 'block.R' 'conditions.R' 'hop-common.R'
+        'hop-index-common.R' 'hop-index.R' 'hop-index2.R' 'hop.R'
+        'hop2.R' 'phop-index.R' 'phop.R' 'slide-index2.R'
+        'pslide-index.R' 'slide-period2.R' 'pslide-period.R' 'slide2.R'
+        'pslide.R' 'segment-tree.R' 'slide-common.R'
+        'slide-index-common.R' 'slide-index.R' 'slide-period-common.R'
+        'slide-period.R' 'slide.R' 'slider-package.R' 'summary-index.R'
+        'summary-slide.R' 'utils.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2024-10-25 17:10:37 UTC; davis
+Author: Davis Vaughan [aut, cre],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Davis Vaughan <davis@posit.co>
+Repository: CRAN
+Date/Publication: 2024-10-25 17:40:02 UTC

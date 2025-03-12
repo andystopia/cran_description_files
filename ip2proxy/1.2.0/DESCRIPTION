@@ -1,0 +1,24 @@
+Package: ip2proxy
+Type: Package
+Title: Lookup for IP Address Proxy Information
+Version: 1.2.0
+Authors@R: c(person("Kai Wen", "Ooi", role = c("aut", "cre"),
+                     email = "support@ip2location.com"),
+              person("IP2Location", role = "cph"))
+Maintainer: Kai Wen Ooi <support@ip2location.com>
+Description: Enable user to find the IP addresses which are used as VPN anonymizer, open proxies, web proxies and Tor exits.
+    The package lookup the proxy IP address from IP2Proxy BIN Data file. You may visit <https://lite.ip2location.com> for free database download. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.2.3)
+Imports: reticulate (>= 1.13), jsonlite (>= 1.6), ggplot2 (>= 3.4),
+        maps (>= 3.4.1), scales (>= 1.2.1)
+SystemRequirements: IP2Proxy Python library
+        <https://www.ip2location.com/development-libraries/ip2proxy/python>
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-02-10 05:01:03 UTC; Kai Wen
+Author: Kai Wen Ooi [aut, cre],
+  IP2Location [cph]
+Repository: CRAN
+Date/Publication: 2023-02-10 10:10:02 UTC

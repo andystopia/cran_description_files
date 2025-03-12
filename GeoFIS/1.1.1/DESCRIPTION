@@ -1,0 +1,32 @@
+Package: GeoFIS
+Type: Package
+Title: Spatial Data Processing for Decision Making
+Version: 1.1.1
+Authors@R: c(
+  person("Serge", "Guillaume", email = "serge.guillaume@inrae.fr", role = "aut"),
+  person("Jean-Luc", "Lablée", email = "jean-luc.lablee@inrae.fr", role = c("aut", "cre")),
+  person("INRAE", role = "cph", comment = "National Research Institute for Agriculture, Food and Environment, France"))
+Author: Serge Guillaume [aut],
+  Jean-Luc Lablée [aut, cre],
+  INRAE [cph] (National Research Institute for Agriculture, Food and
+    Environment, France)
+Maintainer: Jean-Luc Lablée <jean-luc.lablee@inrae.fr>
+URL: https://www.geofis.org
+Description: Methods for processing spatial data for decision-making. 
+  This package is an R implementation of methods provided by the open source software GeoFIS <https://www.geofis.org> (Leroux et al. 2018) <doi:10.3390/agriculture8060073>. 
+  The main functionalities are the management zone delineation (Pedroso et al. 2010) <doi:10.1016/j.compag.2009.10.007> and data aggregation (Mora-Herrera et al. 2020) <doi:10.1016/j.compag.2020.105624>.
+License: CeCILL
+Encoding: UTF-8
+Depends: R (>= 4.0.0), sp, data.tree, FisPro (>= 1.1.0)
+Imports: methods, utils, stats, Rdpack, foreach, R6, Rcpp, magrittr,
+        sf, nnls, itertools, purrr
+SystemRequirements: GNU make, C++17, gmp, mpfr
+RdMacros: Rdpack
+NeedsCompilation: yes
+LinkingTo: Rcpp, BH, FisPro
+Suggests: testthat, rlang, knitr, rmarkdown, RColorBrewer, R.rsp
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr, R.rsp
+Packaged: 2024-12-18 09:16:03 UTC; jllablee
+Repository: CRAN
+Date/Publication: 2024-12-18 14:30:10 UTC

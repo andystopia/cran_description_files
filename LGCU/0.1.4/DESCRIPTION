@@ -1,0 +1,28 @@
+Package: LGCU
+Title: Implementation of Learning Gamma CUSUM (Cumulative Sum) Control
+        Charts
+Version: 0.1.4
+Authors@R: person("Harold Manuel Madrid-Alvarez", email = "harold.madrid@unisimon.edu.co", role = c("aut", "cre"))
+Description: Implements Cumulative Sum (CUSUM) control charts specifically
+ designed for monitoring processes following a Gamma distribution. Provides
+ functions to estimate distribution parameters, simulate control limits, and
+ apply cautious learning schemes for adaptive thresholding. It supports
+ upward and downward monitoring with guaranteed performance evaluated via
+ Monte Carlo simulations. It is useful for quality control applications in
+ industries where data follows a Gamma distribution. Methods are based on
+ Madrid-Alvarez et al. (2024) <doi:10.1002/qre.3464> and Madrid-Alvarez et
+ al. (2024) <doi:10.1080/08982112.2024.2440368>.
+Depends: R (>= 4.0.0)
+Imports: MASS, Rcpp, tictoc
+LinkingTo: Rcpp
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/ingharold-madrid/LGCU
+BugReports: https://github.com/ingharold-madrid/LGCU/issues
+NeedsCompilation: yes
+Packaged: 2025-03-10 22:35:51 UTC; harold.madrid
+Author: Harold Manuel Madrid-Alvarez [aut, cre]
+Maintainer: Harold Manuel Madrid-Alvarez <harold.madrid@unisimon.edu.co>
+Repository: CRAN
+Date/Publication: 2025-03-11 12:10:01 UTC

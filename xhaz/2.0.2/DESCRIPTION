@@ -1,0 +1,25 @@
+Package: xhaz
+Title: Excess Hazard Modelling Considering Inappropriate Mortality
+        Rates
+Version: 2.0.2
+Author: Juste Goungounga [aut, cre] (<https://orcid.org/0000-0002-9039-2639>),
+        Hadrien Charvat [aut] (<https://orcid.org/0000-0003-3624-1394>),
+        Darlin Mba [aut] (<https://orcid.org/0000-0001-9768-0230>),
+        Nathalie Graffeo [aut] (<https://orcid.org/0000-0001-7227-7525>),
+        Roch Giorgi [aut] (<https://orcid.org/0000-0001-6135-3078>)
+Maintainer: Juste Goungounga <juste.goungounga@ehesp.fr>
+Description: Fits relative survival regression models with or without proportional excess hazards and with the additional possibility to correct for background mortality by one or more parameter(s). These models are relevant when the observed mortality in the studied group is not comparable to that of the general population or in population-based studies where the available life tables used for net survival estimation are insufficiently stratified. In the latter case, the proposed model by Touraine et al. (2020) <doi:10.1177/0962280218823234> can be used. The user can also fit a model that relaxes the proportional expected hazards assumption considered in the Touraine et al. excess hazard model. This extension was proposed by Mba et al. (2020) <doi:10.1186/s12874-020-01139-z> to allow non-proportional effects of the additional variable on the general population mortality. In non-population-based studies, researchers can identify non-comparability source of bias in terms of expected mortality of selected individuals. An excess hazard model correcting this selection bias is presented in Goungounga et al. (2019) <doi:10.1186/s12874-019-0747-3>. This class of model with a random effect at the cluster level on excess hazard is presented in Goungounga et al. (2023) <doi:10.1002/bimj.202100210>.   
+License: AGPL (>= 3)
+Depends: R (>= 4.3.0), statmod (>= 1.5.0), stats, survival (>= 3.5.7)
+Imports: gtools, mexhaz (>= 2.6), numDeriv, optimParallel, splines,
+        stringr, survexp.fr
+Suggests: knitr, rmarkdown, spelling, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Language: en-US
+NeedsCompilation: no
+Packaged: 2024-06-29 10:13:16 UTC; jgoungounga
+Repository: CRAN
+Date/Publication: 2024-06-29 22:40:02 UTC

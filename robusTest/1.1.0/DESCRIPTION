@@ -1,0 +1,38 @@
+Package: robusTest
+Title: Calibrated Correlation and Two-Sample Tests
+Version: 1.1.0
+Authors@R: 
+    c(person(given = "Olivier",
+           family = "Bouaziz",
+           role = c("aut", "cre"),
+           email = "olivier.bouaziz@parisdescartes.fr"),
+    person(given = "Jérôme",
+           family = "Dedecker",
+           role = c("aut"),
+           email = "jerome.dedecker@parisdescartes.fr"),
+     person(given = "Anatole",
+           family = "Dedecker",
+           role = c("aut"),
+           email = "anatolededecker@gmail.com"))
+Description: Implementation of corrected two-sample tests. A corrected version of the Pearson and Kendall correlation tests, 
+ the Mann-Whitney (Wilcoxon) rank sum test, the Wilcoxon signed rank test and a variance test are implemented.
+ The package also proposes a test for the median and an independence test between two continuous variables of Kolmogorov-Smirnov's type. 
+ All these corrected tests are asymptotically calibrated in the sense that the probability of rejection under the null hypothesis is 
+ asymptotically equal to the level of the test. See <doi:10.48550/arXiv.2211.08784> for more details on the statistical tests.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+LinkingTo: Rcpp
+Imports: Rcpp, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2024-06-18 10:13:59 UTC; obouaziz
+Author: Olivier Bouaziz [aut, cre],
+  Jérôme Dedecker [aut],
+  Anatole Dedecker [aut]
+Maintainer: Olivier Bouaziz <olivier.bouaziz@parisdescartes.fr>
+Repository: CRAN
+Date/Publication: 2024-06-18 11:00:02 UTC

@@ -1,0 +1,40 @@
+Package: excel.link
+Type: Package
+Title: Convenient Data Exchange with Microsoft Excel
+Version: 0.9.15
+Authors@R: c(person(given = "Gregory",
+              family = "Demin",
+              role = "cre",
+              email = "excel.link.feedback@gmail.com"),
+              person(given = "Duncan",
+              family = "Lang",
+              role = "aut",
+              email = "duncan@wald.ucdavis.edu",
+              comment = "To comply CRAN policy includes source code from 'RDCOMClient' http://www.omegahat.net/RDCOMClient/"))
+Maintainer: Gregory Demin <excel.link.feedback@gmail.com>
+Depends: methods, grDevices, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+OS_type: windows
+Description: Allows access to data in running instance of Microsoft Excel
+    (e. g. 'xl[a1] = xl[b2]*3' and so on). Graphics can be transferred with
+    'xl[a1] = current.graphics()'. Additionally there are function for reading/writing 
+    'Excel' files - 'xl.read.file'/'xl.save.file'. They are not fast but able to read/write 
+    '*.xlsb'-files and password-protected files. There is an Excel workbook with 
+    examples of calling R from Excel in the 'doc' folder. It tries to keep things as
+    simple as possible - there are no needs in any additional
+    installations besides R, only 'VBA' code in the Excel workbook.
+    Microsoft Excel is required for this package.
+License: GPL (>= 2)
+URL: https://github.com/gdemin/excel.link
+BugReports: https://github.com/gdemin/excel.link/issues
+LazyLoad: yes
+ByteCompile: TRUE
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+Packaged: 2025-02-12 10:33:03 UTC; demin
+Author: Gregory Demin [cre],
+  Duncan Lang [aut] (To comply CRAN policy includes source code from
+    'RDCOMClient' http://www.omegahat.net/RDCOMClient/)
+Repository: CRAN
+Date/Publication: 2025-02-12 10:50:02 UTC

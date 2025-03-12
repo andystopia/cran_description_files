@@ -1,0 +1,29 @@
+Package: boostrq
+Type: Package
+Title: Boosting Regression Quantiles
+Version: 1.0.0
+Authors@R: 
+    person(given = "Stefan",
+           family = "Linner",
+           role = c("aut", "cre", "cph"),
+           email = "stefan.linner97@gmail.com")
+Description: Boosting Regression Quantiles is a component-wise boosting algorithm, 
+             that embeds all boosting steps in the well-established framework 
+             of quantile regression. It is initialized with the corresponding quantile, 
+             uses a quantile-specific learning rate, and uses quantile regression as its base learner.
+             The package implements this algorithm and allows cross-validation and stability selection. 
+License: GPL (>= 2)
+URL: https://github.com/stefanlinner/boostrq
+BugReports: https://github.com/stefanlinner/boostrq/issues
+Encoding: UTF-8
+Depends: mboost, stabs, stats, parallel
+Imports: quantreg, checkmate
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-03-02 08:53:32 UTC; stefa
+Author: Stefan Linner [aut, cre, cph]
+Maintainer: Stefan Linner <stefan.linner97@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-03-05 11:00:06 UTC

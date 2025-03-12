@@ -1,0 +1,32 @@
+Package: ToxCrit
+Type: Package
+Title: Calculates Safety Stopping Boundaries for a Single-Arm Trial
+        using Bayes
+Version: 1.0
+Authors@R: c(person("NCT Trial Center, Heidelberg", 
+                email="studienzentrale@nct-heidelberg.de",
+                role="aut"),
+            person("Lisa-Marie Lanz",
+               email="studienzentrale@nct-heidelberg.de", 
+               role="cre"))
+Author: NCT Trial Center, Heidelberg [aut],
+  Lisa-Marie Lanz [cre]
+Maintainer: Lisa-Marie Lanz <studienzentrale@nct-heidelberg.de>
+Description: Computation of stopping boundaries for a single-arm trial using a
+    Bayesian criterion; i.e., for each m<=n (n= total patient number of the 
+    trial) the smallest number of observed toxicities is calculated
+    leading to the termination of the trial/accrual according to the specified 
+    criteria. The probabilities of stopping the trial/accrual at and up until 
+    (resp.) the m-th patient (m<=n) is also calculated. This design is more 
+    conservative than the frequentist approach (using Clopper Pearson CIs)
+    which might be preferred as it concerns safety.See also Aamot et.al.(2010) 
+    "Continuous monitoring of toxicity in clinical trials - simulating the risk 
+    of stopping prematurely" <doi:10.5414/cpp48476>.
+Language: en-US
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2021-09-30 13:22:12 UTC; Lisa
+Repository: CRAN
+Date/Publication: 2021-10-01 08:20:08 UTC

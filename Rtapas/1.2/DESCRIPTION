@@ -1,0 +1,33 @@
+Package: Rtapas
+Title: Random Tanglegram Partitions
+Version: 1.2
+Authors@R: c(person("Mar", "Llaberia-Robledillo", role = c("aut", "cre", "cph"), email = "mar.llaberia@uv.es", comment = c(ORCID = "0000-0002-7989-796X")),
+  person("Juan A.", "Balbuena", role = c("aut", "cph"), email = "j.a.balbuena@uv.es", comment = c(ORCID = "0000-0003-4006-1353")), 
+  person("José Ignacio", "Lucas-Lledó", role = c("aut", "cph"), comment = c(ORCID = "0000-0001-6254-8942")),
+  person("Oscar Alejandro", "Pérez-Escobar", role = c("aut", "cph"), comment = c(ORCID = "0000-0001-9166-2410"))
+  )
+Description: Applies a given global-fit method to random partial tanglegrams of a fixed size
+             to identify the associations, terminals, and nodes that maximize phylogenetic
+             (in)congruence. It also includes functions to compute more easily the confidence
+             intervals of classification metrics and plot results, reducing computational time.
+             See Llaberia-Robledillo et al., (2023) <doi:10.1093/sysbio/syad016>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+Depends: phytools, parallel, R (>= 3.5.0)
+Imports: ape, distory, paco, parallelly, stats, stringr, vegan
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Suggests: testthat (>= 3.2.1.1)
+Config/testthat/edition: 3
+Packaged: 2024-06-12 11:43:29 UTC; Mar
+Author: Mar Llaberia-Robledillo [aut, cre, cph]
+    (<https://orcid.org/0000-0002-7989-796X>),
+  Juan A. Balbuena [aut, cph] (<https://orcid.org/0000-0003-4006-1353>),
+  José Ignacio Lucas-Lledó [aut, cph]
+    (<https://orcid.org/0000-0001-6254-8942>),
+  Oscar Alejandro Pérez-Escobar [aut, cph]
+    (<https://orcid.org/0000-0001-9166-2410>)
+Maintainer: Mar Llaberia-Robledillo <mar.llaberia@uv.es>
+Repository: CRAN
+Date/Publication: 2024-06-13 12:00:01 UTC

@@ -1,0 +1,48 @@
+Package: evapoRe
+Title: Evapotranspiration R Recipes
+Version: 1.0.0
+Authors@R: 
+  c(person(given = "Akbar", family = "Rahmati Ziveh",
+           email = "rahmati_ziveh@fzp.czu.cz", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4854-451X")),
+    person(given = "Mijael Rodrigo", family = "Vargas Godoy",
+           email = "mirovago@gmail.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-1828-9266")),
+    person(given = "Vishal", family = "Thakur",
+           email = "vishu2297thakur@gmail.com", role = c("ctb"),
+           comment = c(ORCID = "0000-0003-2864-9517")),
+    person(given = "Yannis", family = "Markonis",
+           email = "imarkonis@gmail.com", role = c("aut", "ths"),
+           comment = c(ORCID = "0000-0003-0144-8969")))
+Description: An R-based application for exploratory data analysis of global EvapoTranspiration (ET) datasets. 
+  'evapoRe' enables users to download, validate, visualize, and analyze multi-source ET data across various spatio-temporal scales.
+  Also, the package offers calculation methods for estimating potential ET (PET), including temperature-based approaches described in : Oudin et al., (2005) <doi:10.1016/j.jhydrol.2004.08.026>.
+  'evapoRe' supports hydrological modeling, climate studies, agricultural research, and other data-driven fields by facilitating access to ET data and offering powerful analysis capabilities.
+  Users can seamlessly integrate the package into their research applications and explore diverse ET data at different resolutions.
+Depends: R (>= 4.0.0), pRecipe
+Imports: methods, parallel, utils, data.table, doParallel, foreach,
+        lubridate, raster
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/AkbarR1184/evapoRe
+SystemRequirements: PROJ (>= 6, https://proj.org/download.html), GDAL
+        (>= 3, https://gdal.org/download.html), NetCDF(>= 4,
+        https://www.unidata.ucar.edu/software/netcdf/).
+RoxygenNote: 7.2.3
+Suggests: rmarkdown, ggpubr, knitr, spelling, kableExtra, tibble,
+        testthat (>= 3.0.0)
+Language: en-US
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-11-29 14:22:08 UTC; Admin
+Author: Akbar Rahmati Ziveh [aut, cre]
+    (<https://orcid.org/0000-0003-4854-451X>),
+  Mijael Rodrigo Vargas Godoy [aut]
+    (<https://orcid.org/0000-0002-1828-9266>),
+  Vishal Thakur [ctb] (<https://orcid.org/0000-0003-2864-9517>),
+  Yannis Markonis [aut, ths] (<https://orcid.org/0000-0003-0144-8969>)
+Maintainer: Akbar Rahmati Ziveh <rahmati_ziveh@fzp.czu.cz>
+Repository: CRAN
+Date/Publication: 2023-11-29 19:10:02 UTC

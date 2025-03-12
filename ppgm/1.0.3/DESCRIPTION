@@ -1,0 +1,39 @@
+Package: ppgm
+Type: Package
+Title: PaleoPhyloGeographic Modeling of Climate Niches and Species
+        Distributions
+Version: 1.0.3
+Authors@R: c(person("A. Michelle","Lawing", role = c("aut","cph"), email = "alawing@tamu.edu"), person("Alexandra", "Howard", role = c("aut","cre"), email = "alexandra.howard@ag.tamu.edu"), person("Maria-Aleja", "Hurtado-Materon", role = "aut"))
+Description: Reconstruction of paleoclimate niches using phylogenetic comparative 
+    methods and projection reconstructed niches onto paleoclimate maps.
+    The user can specify various models of trait evolution or estimate the best fit
+    model, include fossils, use one or multiple phylogenies for inference, and make
+    animations of shifting suitable habitat through time. This model was first used
+    in Lawing and Polly (2011), and further implemented in Lawing et al (2016) and 
+    Rivera et al (2020).
+    Lawing and Polly (2011) <doi:10.1371/journal.pone.0028554> "Pleistocene climate,
+    phylogeny and climate envelope models: An integrative approach to better 
+    understand species' response to climate change"
+    Lawing et al (2016) <doi:10.1086/687202> "Including fossils in phylogenetic 
+    climate reconstructions: A deep time perspective on the climatic niche evolution
+    and diversification of spiny lizards (Sceloporus)"
+    Rivera et al (2020) <doi:10.1111/jbi.13915> "Reconstructing historical shifts 
+    in suitable habitat of Sceloporus lineages using phylogenetic niche modelling.".
+Imports: animation, ape, fields, geiger, methods, phangorn, phytools,
+        stringi
+Depends: R (>= 4.3.0), R (>= 2.10), sp, sf
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.1
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-06-11 11:02:02 UTC; alexa
+Author: A. Michelle Lawing [aut, cph],
+  Alexandra Howard [aut, cre],
+  Maria-Aleja Hurtado-Materon [aut]
+Maintainer: Alexandra Howard <alexandra.howard@ag.tamu.edu>
+Repository: CRAN
+Date/Publication: 2024-06-11 12:20:01 UTC

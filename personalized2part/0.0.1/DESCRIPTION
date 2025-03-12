@@ -1,0 +1,30 @@
+Package: personalized2part
+Type: Package
+Title: Two-Part Estimation of Treatment Rules for Semi-Continuous Data
+Version: 0.0.1
+Authors@R: c(
+    person("Jared", "Huling",  role = c("aut", "cre"), email = "jaredhuling@gmail.com",
+            comment = c(ORCID = "0000-0003-0670-4845"))
+    )
+Description: Implements the methodology of Huling, Smith, and 
+    Chen (2020) <doi:10.1080/01621459.2020.1801449>, which allows for subgroup identification 
+    for semi-continuous outcomes by estimating individualized treatment rules. It uses a two-part 
+    modeling framework to handle semi-continuous data by separately modeling the positive part 
+    of the outcome and an indicator of whether each outcome is positive, but still results in a 
+    single treatment rule. High dimensional data is handled with a cooperative lasso penalty, 
+    which encourages the coefficients in the two models to have the same sign. 
+URL: https://github.com/jaredhuling/personalized2part
+BugReports: https://github.com/jaredhuling/personalized2part/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: personalized, HDtweedie
+LinkingTo: Rcpp, RcppEigen
+Imports: Rcpp, foreach, methods
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2020-09-02 20:55:06 UTC; jared
+Author: Jared Huling [aut, cre] (<https://orcid.org/0000-0003-0670-4845>)
+Maintainer: Jared Huling <jaredhuling@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-09-10 10:00:03 UTC

@@ -1,0 +1,26 @@
+Package: bayesMeanScale
+Type: Package
+Title: Bayesian Post-Estimation on the Mean Scale
+Version: 0.2.1
+Authors@R: c(person(given  = "David M.",
+                    family = "Dalenberg",
+                    role   = c("aut", "cre"),
+                    email  = "dalenbe2@gmail.com"))
+URL: https://github.com/dalenbe2/bayesMeanScale
+BugReports: https://github.com/dalenbe2/bayesMeanScale/issues
+Description: Computes Bayesian posterior distributions of predictions, marginal effects, and differences of marginal effects for various generalized linear models. Importantly, the posteriors are on the mean (response) scale, allowing for more natural interpretation than summaries on the link scale. Also, predictions and marginal effects of the count probabilities for Poisson and negative binomial models can be computed. 
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: bayestestR (>= 0.13.2), data.table (>= 1.15.2), magrittr (>=
+        2.0.3), posterior (>= 1.5.0)
+Depends: R (>= 3.5.0)
+Suggests: flextable (>= 0.9.5), knitr (>= 1.45), MASS (>= 7.3-60.2),
+        rmarkdown (>= 2.26), rstanarm (>= 2.32.1), testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-03 14:59:31 UTC; dalenbed
+Author: David M. Dalenberg [aut, cre]
+Maintainer: David M. Dalenberg <dalenbe2@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-08 13:30:02 UTC

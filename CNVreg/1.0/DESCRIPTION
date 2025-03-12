@@ -1,0 +1,38 @@
+Package: CNVreg
+Type: Package
+Title: CNV-Profile Regression for Copy Number Variants Association
+        Analysis with Penalized Regression
+Version: 1.0
+Authors@R: c(person("Yaqin", "Si",email = "ysi4@ncsu.edu", role = c("aut")), 
+             person("Shannon T.", "Holloway",email = "shannon.t.holloway@gmail.com", role = c("ctb", "cre")),
+             person("Jung-Ying", "Tzeng",email = "jytzeng@ncsu.edu", role = c("ctb")))
+Description: Performs copy number variants association analysis with Lasso and Weighted Fusion penalized regression. 
+  Creates a "CNV profile curve" to represent an individual’s CNV events across a genomic region so to capture variations 
+  in CNV length and dosage. When evaluating association, the CNV profile curve is directly used as a predictor in the 
+  regression model, avoiding the need to predefine CNV loci. CNV profile regression estimates CNV effects at each genome
+  position, making the results comparable across different studies. The penalization encourages sparsity 
+  in variable selection with a Lasso penalty and encourages effect smoothness between consecutive CNV events with a weighted
+  fusion penalty, where the weight controls the level of smoothing between adjacent CNVs. 
+  For more details, see Si (2024) <doi:10.1101/2024.11.23.624994>.
+License: GPL-3
+Depends: R (>= 4.1.0)
+VignetteBuilder: knitr
+Imports: stats, Matrix, doParallel, dplyr, foreach, glmnet, tidyr
+Encoding: UTF-8
+NeedsCompilation: no
+LazyData: true
+Suggests: rmarkdown, knitr, rlang, tidyverse, markdown, kableExtra,
+        patchwork, ggplot2, withr
+Author: Yaqin Si [aut],
+  Shannon T. Holloway [ctb, cre],
+  Jung-Ying Tzeng [ctb]
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+RoxygenNote: 7.3.2
+Collate: 'utils.R' 'probPred.R' 'linearPred.R' 'logLH.R' 'loss.R'
+        'helpful_tests.R' 'ctnsSolution.R' 'rwlsSolution.R'
+        'Wtsmth_Fit.R' 'nfoldSplit.R' 'WTsmth_nFold_CV.R' 'breakCNV.R'
+        'datadescrip.R' 'wideDataRaw.R' 'wideFrequency.R'
+        'weightMatrix.R' 'prep.R'
+Packaged: 2025-03-09 16:07:45 UTC; sth45
+Repository: CRAN
+Date/Publication: 2025-03-10 16:50:21 UTC

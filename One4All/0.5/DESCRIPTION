@@ -1,0 +1,76 @@
+Package: One4All
+Type: Package
+Title: Validate, Share, and Download Data
+Version: 0.5
+Date: 2024-07-02
+Authors@R: c(person("Hannah", "Sherrod", role = c("cre", "aut"),
+      email = "hannah@mooreplasticresearch.org",
+      comment = c(ORCID = "0009-0001-0497-8693")),
+      person("Nick", "Leong", role = c("aut"),
+      email = "nick@mooreplasticresearch.org",
+      comment = c(ORCID = "0009-0008-3313-4132")),
+      person("Hannah", "Hapich", role = c("aut"),
+      comment = c(ORCID = "0000-0003-0000-6632")),
+      person("Fabian", "Gomez", role = c("aut"),
+      email = "fabiangomezmaisterra@gmail.com"),
+      person("Shelly", "Moore", role = c("aut"),
+      email = "shelly@mooreplasticresearch.org"),
+      person("Win", "Cowger", role = c("aut"),
+      email = "wincowger@gmail.com",
+      comment = c(ORCID = "0000-0001-9226-3104")),
+      person("Scott", "Coffin", role = c("ctb")),
+      person("Tony", "Hale", role = c("ctb")),
+      person("Diana", "Lin", role = c("ctb")),
+      person("Gemma", "Shusterman", role = c("ctb")),
+      person("Rebecca", "Sutton", role = c("ctb")),
+      person("Adam", "Wong", role = c("ctb")),
+      person("Haig", "Minasian", role = c("ctb")),
+      person("Holden", "Ford", role = c("ctb")),
+      person("Anja", "Oca", role = c("ctb")),
+      person("Richard", "Nelson", role = c("ctb")),
+      person("Leah", "Thornton Hampton", role = c("ctb")),
+      person("Libby", "Heeren", role = c("ctb")),
+      person("Gabriel", "Daiess", role = c("ctb")))
+Description: Designed to enhance data validation and management processes by employing a set of functions that read a set of rules from a 'CSV' or 'Excel' file and apply them to a dataset. Funded by the National Renewable Energy Laboratory and Possibility Lab, maintained by the Moore Institute for Plastic Pollution Research.
+URL:
+        https://github.com/Moore-Institute-4-Plastic-Pollution-Res/One4All,
+        https://moore-institute-4-plastic-pollution-res.github.io/One4All/
+BugReports: https://github.com/Moore-Institute-4-Plastic-Pollution-Res/One4All/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyLoad: true
+LazyData: true
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0)
+Imports: shiny, dplyr, validate, digest, data.table, ckanr, openxlsx,
+        lexicon, readr, readxl, tibble, aws.s3, rlang, jsonlite,
+        mongolite, httr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), config, DT,
+        shinythemes, shinyWidgets, bs4Dash, shinyjs, listviewer, RCurl,
+        purrr, stringr
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-07-02 22:18:41 UTC; hannahsherrod
+Author: Hannah Sherrod [cre, aut] (<https://orcid.org/0009-0001-0497-8693>),
+  Nick Leong [aut] (<https://orcid.org/0009-0008-3313-4132>),
+  Hannah Hapich [aut] (<https://orcid.org/0000-0003-0000-6632>),
+  Fabian Gomez [aut],
+  Shelly Moore [aut],
+  Win Cowger [aut] (<https://orcid.org/0000-0001-9226-3104>),
+  Scott Coffin [ctb],
+  Tony Hale [ctb],
+  Diana Lin [ctb],
+  Gemma Shusterman [ctb],
+  Rebecca Sutton [ctb],
+  Adam Wong [ctb],
+  Haig Minasian [ctb],
+  Holden Ford [ctb],
+  Anja Oca [ctb],
+  Richard Nelson [ctb],
+  Leah Thornton Hampton [ctb],
+  Libby Heeren [ctb],
+  Gabriel Daiess [ctb]
+Maintainer: Hannah Sherrod <hannah@mooreplasticresearch.org>
+Repository: CRAN
+Date/Publication: 2024-07-02 23:00:02 UTC

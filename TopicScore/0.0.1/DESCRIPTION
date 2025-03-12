@@ -1,0 +1,27 @@
+Package: TopicScore
+Title: The Topic SCORE Algorithm to Fit Topic Models
+Version: 0.0.1
+Authors@R: c(person("Minzhe", "Wang", role = c("aut", "cre"),
+                    email = "minzhew@uchicago.edu"),
+             person("Tracy", "Ke", role = "aut"))
+Description: Provides implementation of the "Topic SCORE" algorithm that is
+	     proposed by Tracy Ke and Minzhe Wang. The singular value decomposition
+	     step is optimized through the usage of svds() function in 'RSpectra'
+	     package, on a 'dgRMatrix' sparse matrix. Also provides a column-wise
+	     error measure in the word-topic matrix A, and an algorithm for
+	     recovering the topic-document matrix W given A and D based on
+	     quadratic programming.
+		The details about the techniques are explained in the paper "A new SVD approach to optimal topic estimation" by Tracy Ke and Minzhe Wang (2017) <arXiv:1704.07016>.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: utils, stats, graphics, RSpectra, combinat, quadprog, methods,
+        Matrix, slam
+Author: Minzhe Wang [aut, cre],
+  Tracy Ke [aut]
+Maintainer: Minzhe Wang <minzhew@uchicago.edu>
+NeedsCompilation: no
+Packaged: 2019-06-04 15:32:17 UTC; greenlink
+Repository: CRAN
+Date/Publication: 2019-06-06 11:12:14 UTC

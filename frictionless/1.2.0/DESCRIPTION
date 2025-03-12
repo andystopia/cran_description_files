@@ -1,0 +1,62 @@
+Package: frictionless
+Title: Read and Write Frictionless Data Packages
+Version: 1.2.0
+Date: 2024-08-27
+Authors@R: c(
+    person("Peter", "Desmet", , "peter.desmet@inbo.be", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8442-8025", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Damiano", "Oldoni", , "damiano.oldoni@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0003-3445-7562", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Pieter", "Huybrechts", , "pieter.huybrechts@inbo.be", role = "aut",
+           comment = c(ORCID = "0000-0002-6658-6062", affiliation = "Research Institute for Nature and Forest (INBO)")),
+    person("Sanne", "Govaert", , "sanne.govaert@inbo.be", role = "aut",
+            comment = c(ORCID = "0000-0002-8939-1305", affiliation = "Research Institute for Nature and Forest (INBO)")),       
+    person("Kyle", "Husmann", , "kdh38@psu.edu", role = "ctb",
+           comment = c(ORCID = "0000-0001-9875-8976", affiliation = "Pennsylvania State University")),
+    person("Research Institute for Nature and Forest (INBO)", role = "cph",
+           comment = "https://www.vlaanderen.be/inbo/en-gb/"),
+    person("LifeWatch Belgium", role = "fnd",
+           comment = "https://lifewatch.be"),
+    person("Beatriz", "Milz", , "milz.bea@gmail.com", role = "rev",
+           comment = c(ORCID = "0000-0002-3064-4486")),
+    person("João", "Martins", , "joao.martins@gmx.net", role = "rev",
+           comment = c(ORCID = "0000-0001-7961-4280"))
+  )
+Description: Read and write Frictionless Data Packages. A 'Data Package'
+    (<https://specs.frictionlessdata.io/data-package/>) is a simple
+    container format and standard to describe and package a collection of
+    (tabular) data. It is typically used to publish FAIR
+    (<https://www.go-fair.org/fair-principles/>) and open datasets.
+License: MIT + file LICENSE
+URL: https://github.com/frictionlessdata/frictionless-r,
+        https://docs.ropensci.org/frictionless/
+BugReports: https://github.com/frictionlessdata/frictionless-r/issues
+Depends: R (>= 3.5.0)
+Imports: cli, dplyr, httr, jsonlite, purrr, readr (>= 2.1.0), rlang,
+        utils, yaml
+Suggests: hms, knitr, lubridate, rmarkdown, stringi, testthat (>=
+        3.0.0), tibble
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-08-27 09:27:39 UTC; peter_desmet
+Author: Peter Desmet [aut, cre] (<https://orcid.org/0000-0002-8442-8025>,
+    Research Institute for Nature and Forest (INBO)),
+  Damiano Oldoni [aut] (<https://orcid.org/0000-0003-3445-7562>, Research
+    Institute for Nature and Forest (INBO)),
+  Pieter Huybrechts [aut] (<https://orcid.org/0000-0002-6658-6062>,
+    Research Institute for Nature and Forest (INBO)),
+  Sanne Govaert [aut] (<https://orcid.org/0000-0002-8939-1305>, Research
+    Institute for Nature and Forest (INBO)),
+  Kyle Husmann [ctb] (<https://orcid.org/0000-0001-9875-8976>,
+    Pennsylvania State University),
+  Research Institute for Nature and Forest (INBO) [cph]
+    (https://www.vlaanderen.be/inbo/en-gb/),
+  LifeWatch Belgium [fnd] (https://lifewatch.be),
+  Beatriz Milz [rev] (<https://orcid.org/0000-0002-3064-4486>),
+  João Martins [rev] (<https://orcid.org/0000-0001-7961-4280>)
+Maintainer: Peter Desmet <peter.desmet@inbo.be>
+Repository: CRAN
+Date/Publication: 2024-08-28 08:10:12 UTC

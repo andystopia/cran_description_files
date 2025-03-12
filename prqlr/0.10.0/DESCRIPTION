@@ -1,0 +1,36 @@
+Package: prqlr
+Title: R Bindings for the 'prqlc' Rust Library
+Description: 
+    Provides a function to convert 'PRQL' strings to 'SQL' strings.
+    Combined with other R functions that take 'SQL' as an argument,
+    'PRQL' can be used on R.
+Version: 0.10.0
+Authors@R: 
+    c(person("Tatsuya", "Shima", email = "ts1s1andn@gmail.com", role = c("aut", "cre")),
+      person("Authors of the dependency Rust crates", role = "aut",
+             comment = "see inst/AUTHORS file for details"))
+URL: https://prql.github.io/prqlc-r/, https://github.com/PRQL/prqlc-r
+BugReports: https://github.com/PRQL/prqlc-r/issues
+Depends: R (>= 4.2)
+Suggests: knitr (>= 1.44), rmarkdown, DBI, glue, RSQLite, tidyquery,
+        sqldf, nycflights13, dplyr, testthat (>= 3.2.0), patrick (>=
+        0.3.0), withr, cli
+License: MIT + file LICENSE
+Language: en-US
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+SystemRequirements: Cargo (Rust's package manager), rustc
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/dev: brio, devtools, xfun (>= 0.44), lintr, styler, purrr,
+        RcppTOML, readr, tidyr, rhub
+Config/Needs/website: pkgdown
+Config/prqlr/LibVersion: 0.13.1
+NeedsCompilation: yes
+Packaged: 2025-01-28 15:11:27 UTC; rstudio
+Author: Tatsuya Shima [aut, cre],
+  Authors of the dependency Rust crates [aut] (see inst/AUTHORS file for
+    details)
+Maintainer: Tatsuya Shima <ts1s1andn@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-29 09:30:05 UTC

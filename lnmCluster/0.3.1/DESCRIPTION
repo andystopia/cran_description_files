@@ -1,0 +1,26 @@
+Package: lnmCluster
+Type: Package
+Title: Perform Logistic Normal Multinomial Clustering for Microbiome
+        Compositional Data
+Version: 0.3.1
+Authors@R: c(
+    person("Wangshu","Tu",email="wangshu.tu@carleton.ca",role=c("aut","cre")),
+    person("Sanjeena","Dang",email="sanjeena.dang@carleton.ca",role=c("aut")), 
+    person("Yuan","Fang",email="yuanf@bu.edu",role=c("aut")))
+Maintainer: Wangshu Tu <wangshu.tu@carleton.ca>
+Description: An implementation of logistic normal multinomial (LNM) clustering. It is an extension of LNM mixture model proposed by Fang and Subedi (2020) <arXiv:2011.06682>, and is designed for clustering compositional data. The package includes 3 extended models: LNM Factor Analyzer (LNM-FA), LNM Bicluster Mixture Model (LNM-BMM) and Penalized LNM Factor Analyzer (LNM-FA). There are several advantages of LNM models: 1. LNM provides more flexible covariance structure; 2. Factor analyzer can reduce the number of parameters to estimate; 3. Bicluster can simultaneously cluster subjects and taxa, and provides significant biological insights; 4. Penalty term allows sparse estimation in the covariance matrix. Details for model assumptions and interpretation can be found in papers: Tu and Subedi (2021) <arXiv:2101.01871> and Tu and Subedi (2022) <doi:10.1002/sam.11555>.  
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: mclust, foreach, MASS, stringr, gtools, pgmm, utils
+Suggests: knitr, rmarkdown, testthat, mvtnorm
+VignetteBuilder: knitr
+Depends: R (>= 3.50)
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2022-07-19 19:53:07 UTC; wangshutu
+Author: Wangshu Tu [aut, cre],
+  Sanjeena Dang [aut],
+  Yuan Fang [aut]
+Repository: CRAN
+Date/Publication: 2022-07-20 17:50:02 UTC

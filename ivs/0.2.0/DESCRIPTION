@@ -1,0 +1,35 @@
+Package: ivs
+Title: Interval Vectors
+Version: 0.2.0
+Authors@R: c(
+    person("Davis", "Vaughan", , "davis@posit.co", role = c("aut", "cre")),
+    person("Posit Software, PBC", role = c("cph", "fnd"))
+  )
+Description: Provides a library for generic interval manipulations using a
+    new interval vector class. Capabilities include: locating various
+    kinds of relationships between two interval vectors, merging overlaps
+    within a single interval vector, splitting an interval vector on its
+    overlapping endpoints, and applying set theoretical operations on
+    interval vectors. Many of the operations in this package were inspired
+    by James Allen's interval algebra, Allen (1983)
+    <doi:10.1145/182.358434>.
+License: MIT + file LICENSE
+URL: https://github.com/DavisVaughan/ivs,
+        https://davisvaughan.github.io/ivs/
+BugReports: https://github.com/DavisVaughan/ivs/issues
+Depends: R (>= 3.5.0)
+Imports: glue (>= 1.6.2), lifecycle (>= 1.0.3), rlang (>= 1.1.0), vctrs
+        (>= 0.6.0)
+Suggests: bit64 (>= 4.0.5), clock (>= 0.6.0), covr, dplyr (>= 1.1.0),
+        knitr, rmarkdown, testthat (>= 3.0.0), tidyr (>= 1.1.4)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-03-17 01:30:55 UTC; davis
+Author: Davis Vaughan [aut, cre],
+  Posit Software, PBC [cph, fnd]
+Maintainer: Davis Vaughan <davis@posit.co>
+Repository: CRAN
+Date/Publication: 2023-03-17 11:30:06 UTC

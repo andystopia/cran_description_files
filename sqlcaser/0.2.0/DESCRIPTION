@@ -1,0 +1,25 @@
+Package: sqlcaser
+Title: 'SQL' Case Statement Generator
+Version: 0.2.0
+Date: 2023-11-21
+Authors@R: 
+    person("Leoson", "Hoay", , "leoson.public@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0003-2079-5579"))
+Description: Includes built-in methods for generating long 'SQL' CASE statements,
+             and other 'SQL' statements that may otherwise be arduous to construct
+             by hand. The generated statement can easily be concatenated to string
+             literals to form queries to 'SQL'-like databases, such as when using 
+             the 'RODBC' package. The current methods include casewhen() for building 
+             CASE statements, inlist() for building IN statements, and
+             updatetable() for building UPDATE statements.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-11-23 17:36:37 UTC; leoso
+Author: Leoson Hoay [aut, cre] (<https://orcid.org/0000-0003-2079-5579>)
+Maintainer: Leoson Hoay <leoson.public@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-24 13:20:02 UTC

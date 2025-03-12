@@ -1,0 +1,51 @@
+Package: manydist
+Type: Package
+Title: Unbiased Distances for Mixed-Type Data
+Version: 0.4.3
+Authors@R: c(
+    person(given = "Alfonso",
+           family = "Iodice D'Enza",
+           role = "aut",
+           email = "iodicede@gmail.com"),
+    person(given = "Angelos",
+           family = "Markos",
+           role = c("aut", "cre"),
+           email = "amarkos@gmail.com"),
+    person(given = "Michel",
+           family = "van de Velden",
+           role = "aut"),
+    person(given = "Carlo",
+           family = "Cavicchia",
+           role = "aut"))
+Maintainer: Angelos Markos <amarkos@gmail.com>
+Description: A comprehensive framework for calculating unbiased distances in datasets 
+    containing mixed-type variables (numerical and categorical). The package implements 
+    a general formulation that ensures multivariate additivity and commensurability, 
+    meaning that variables contribute equally to the overall distance regardless of 
+    their type, scale, or distribution. Supports multiple distance measures including 
+    Gower's distance, Euclidean distance, Manhattan distance, and various categorical 
+    variable distances such as simple matching, Eskin, occurrence frequency, and 
+    association-based distances. Provides tools for variable scaling (standard 
+    deviation, range, robust range, and principal component scaling), and handles 
+    both independent and association-based category dissimilarities. Implements 
+    methods to correct for biases that typically arise from different variable types, 
+    distributions, and number of categories. Particularly useful for cluster analysis, 
+    data visualization, and other distance-based methods when working with mixed data. 
+    Methods based on van de Velden et al. (2024) <doi:10.48550/arXiv.2411.00429> 
+    "Unbiased mixed variables distance".
+Imports: entropy, Matrix, fastDummies, data.table, philentropy,
+        cluster, purrr, dplyr, tidyr, forcats, tibble, magrittr, fpc,
+        recipes, rsample, Rfast, readr, distances
+Depends: R (>= 4.1.0)
+Suggests: palmerpenguins
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2025-02-11 17:35:43 UTC; amarkos
+Author: Alfonso Iodice D'Enza [aut],
+  Angelos Markos [aut, cre],
+  Michel van de Velden [aut],
+  Carlo Cavicchia [aut]
+Repository: CRAN
+Date/Publication: 2025-02-12 19:40:02 UTC

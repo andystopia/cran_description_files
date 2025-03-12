@@ -1,0 +1,29 @@
+Package: yodel
+Title: A General Bayesian Model Averaging Helper
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Richard",
+           family = "Payne",
+           role = c("aut", "cre"),
+           email = "paynestatistics@gmail.com"),
+    person(family = "Eli Lilly and Company",
+           role = "cph"))
+Description: Provides helper functions to perform Bayesian model averaging
+    using Markov chain Monte Carlo samples from separate models. Calculates
+    weights and obtains draws from the model-averaged posterior for quantities
+    of interest specified by the user. Weight calculations can be done using
+    marginal likelihoods or log-predictive likelihoods as in Ando, T., & Tsay,
+    R. (2010) <doi:10.1016/j.ijforecast.2009.08.001>.
+License: MIT + file LICENSE
+URL: https://github.com/rich-payne/yodel
+Imports: dplyr (>= 1.0), purrr (>= 0.3), rlang (>= 0.4)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2024-04-12 19:12:48 UTC; c263386
+Author: Richard Payne [aut, cre],
+  Eli Lilly and Company [cph]
+Maintainer: Richard Payne <paynestatistics@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-04-16 08:40:02 UTC

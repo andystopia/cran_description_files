@@ -1,0 +1,22 @@
+Package: memoria
+Type: Package
+Title: Quantifying Ecological Memory in Palaeoecological Datasets and
+        Other Long Time-Series
+Version: 1.0.0
+Author: Blas M. Benito
+Maintainer: Blas M. Benito <blasbenito@gmail.com>
+Description: Tools to quantify ecological memory in long time-series with Random Forest models (Breiman 2001 <doi:10.1023/A:1010933404324>) fitted with the 'ranger' library (Wright and Ziegler 2017 <doi:10.18637/jss.v077.i01>). Particularly oriented to palaeoecological datasets and simulated pollen curves produced by the 'virtualPollen' package, but also applicable to other long time-series involving a set of environmental drivers and a biotic response.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Imports: ggplot2, ranger, cowplot, viridis, viridisLite, zoo, stringr,
+        HH, tidyr
+Suggests: devtools, formatR, kableExtra, magrittr, knitr, rmarkdown,
+        rpart, rpart.plot, randomForest, virtualPollen
+NeedsCompilation: no
+Packaged: 2019-05-16 21:43:51 UTC; blas
+Repository: CRAN
+Date/Publication: 2019-05-17 08:00:02 UTC

@@ -1,0 +1,25 @@
+Package: json2aRgs
+Type: Package
+Title: Parse Parameters Inside a Docker Container
+Version: 0.3.0
+Authors@R: c(
+    person("Alexander", "Dolich", email = "alexander.dolich@kit.edu", role = c("cre","aut")),
+    person("Mirko", "Mälicke", email = "mirko.maelicke@kit.edu", role = "aut"))
+Description: The function get_parameters() is intended to be used within a docker container to read keyword arguments from a .json file automagically. A tool.yaml file contains specifications on these keyword arguments, which are then passed as input to containerized R tools in the [tool-runner framework](<https://github.com/hydrocode-de/tool-runner>). A template for a containerized R tool, which can be used as a basis for developing new tools, is available at the following URL: <https://github.com/VForWaTer/tool_template_r>.
+License: GPL-3
+URL: https://github.com/VForWaTer/json2aRgs
+BugReports: https://github.com/VForWaTer/json2aRgs/issues
+Depends: R (>= 3.6.0)
+Imports: jsonlite, yaml, tools
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-11-24 12:16:32 UTC; alexander
+Author: Alexander Dolich [cre, aut],
+  Mirko Mälicke [aut]
+Maintainer: Alexander Dolich <alexander.dolich@kit.edu>
+Repository: CRAN
+Date/Publication: 2022-11-25 12:30:02 UTC

@@ -1,0 +1,39 @@
+Package: binfunest
+Type: Package
+Title: Estimates Parameters of Functions Driving Binomial Random
+        Variables
+Version: 0.1.0
+Authors@R: 
+    person(given = "Philip",
+           family = "Shea",
+           role = c("aut", "cre"),
+           email = "philshea@gmail.com",
+           comment = c(ORCID = "0000-0001-5460-9987"))
+Maintainer: Philip Shea <philshea@gmail.com>
+Description: Provides maximum likelihood estimates of the 
+    performance parameters that drive a binomial distribution of observed 
+    errors, and takes full advantage of zero error observations. High performance 
+    communications systems typically have inherent noise sources and other 
+    performance limitations that need to be estimated. Measurements made at 
+    high signal to noise ratios typically result in zero 
+    errors due to limitation in available measurement time. Package includes 
+    theoretical performance functions for common modulation schemes (Proakis, 
+    "Digital Communications" (1995, <ISBN:0-07-051726-6>)), polarization shifted 
+    QPSK (Agrell & Karlsson (2009, <DOI:10.1109/JLT.2009.2029064>)), and utility 
+    functions to work with the performance functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.2.1
+Config/testthat/edition: 3
+Imports: pracma, stats, stats4
+URL: https://github.com/PhilShea/binfunest
+BugReports: https://github.com/PhilShea/binfunest/issues
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2022-09-08 13:14:30 UTC; phils
+Author: Philip Shea [aut, cre] (<https://orcid.org/0000-0001-5460-9987>)
+Repository: CRAN
+Date/Publication: 2022-09-09 07:32:57 UTC

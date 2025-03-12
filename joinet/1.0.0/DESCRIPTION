@@ -1,0 +1,23 @@
+Package: joinet
+Version: 1.0.0
+Title: Penalised Multivariate Regression ('Multi-Target Learning')
+Description: Implements penalised multivariate regression (i.e., for multiple outcomes and many features) by stacked generalisation (<doi:10.1093/bioinformatics/btab576>). For positively correlated outcomes, a single multivariate regression is typically more predictive than multiple univariate regressions. Includes functions for model fitting, extracting coefficients, outcome prediction, and performance measurement. For optional comparisons, install 'remMap' from GitHub (<https://github.com/cran/remMap>).
+Depends: R (>= 3.0.0)
+Imports: glmnet, palasso, cornet
+Suggests: knitr, rmarkdown, testthat, MASS, mice, earth, spls, MRCE,
+        remMap, MultivariateRandomForest, SiER, mcen, GPM, RMTL, MTPS
+Authors@R: person(given="Armin",family="Rauschenberger",email="armin.rauschenberger@uni.lu",role=c("aut","cre"),comment=c(ORCID="0000-0001-6498-4801"))
+License: GPL-3
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+URL: https://github.com/rauschenberger/joinet,
+        https://rauschenberger.github.io/joinet/
+BugReports: https://github.com/rauschenberger/joinet/issues
+NeedsCompilation: no
+Packaged: 2024-09-27 09:06:52 UTC; armin.rauschenberger
+Author: Armin Rauschenberger [aut, cre]
+    (<https://orcid.org/0000-0001-6498-4801>)
+Maintainer: Armin Rauschenberger <armin.rauschenberger@uni.lu>
+Repository: CRAN
+Date/Publication: 2024-09-27 15:00:10 UTC

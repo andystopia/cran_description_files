@@ -1,0 +1,24 @@
+Package: foodwebWrapper
+Version: 1.1.0
+Date: 2023-12-20
+Title: Enhanced Wrapper to Show Which Functions Call What
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Depends: R (>= 4.2.0)
+LazyData: true
+Imports: mvbutils, utils, tibble, dplyr, R2HTML, textshaping, magrittr,
+        tidyverse, stringr
+Description: Enhances the functionality of the mvbutils::foodweb() program. The matrix-format output of the original program contains identical row names and column names, each name representing a retrieved function. This format is enhanced by using the find_funs() program [see Sebastian (2017) <https://sebastiansauer.github.io/finds_funs/>] to concatenate the package name to the function name. Each package is assigned a unique color, that is used to color code the text naming the packages and the functions. This color coding is extended to the entries of value "1" within the matrix, indicating the pattern of ancestor and descendent functions.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-12-20 15:04:56 UTC; barryzeeberg
+Author: Barry Zeeberg [aut, cre]
+Repository: CRAN
+Date/Publication: 2023-12-20 15:20:02 UTC

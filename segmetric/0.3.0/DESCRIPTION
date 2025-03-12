@@ -1,0 +1,42 @@
+Package: segmetric
+Title: Metrics for Assessing Segmentation Accuracy for Geospatial Data
+Version: 0.3.0
+Authors@R: 
+    c(person(given = "Rolf",
+           family = "Simoes",
+           role = c("aut"),
+           email = "rolfsimoes@gmail.com",
+           comment = c(ORCID = "0000-0003-0953-4132")),
+    person(given = "Alber",
+           family = "Sanchez",
+           role = c("aut"),
+           email = "albhasan@gmail.com",
+           comment = c(ORCID = "0000-0001-7966-2880")),
+    person(given = "Michelle",
+           family = "Picoli",
+           role = c("aut", "cre"),
+           email = "mipicoli@gmail.com",
+           comment = c(ORCID = "0000-0001-9855-2046")))
+Description: A system that computes metrics to assess the segmentation 
+    accuracy of geospatial data. These metrics calculate the discrepancy 
+    between segmented and reference objects, and indicate the segmentation 
+    accuracy. For more details on choosing evaluation metrics, we 
+    suggest seeing Costa et al. (2018) <doi:10.1016/j.rse.2017.11.024> and 
+    Jozdani et al. (2020) <doi:10.1016/j.isprsjprs.2020.01.002>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: magrittr, graphics, units
+Suggests: classInt, dplyr, testthat (>= 3.0.0)
+Depends: R (>= 2.10), sf
+BugReports: https://github.com/michellepicoli/segmetric/issues
+URL: https://michellepicoli.github.io/segmetric/
+NeedsCompilation: no
+Packaged: 2023-01-10 12:12:54 UTC; araujopicoli
+Author: Rolf Simoes [aut] (<https://orcid.org/0000-0003-0953-4132>),
+  Alber Sanchez [aut] (<https://orcid.org/0000-0001-7966-2880>),
+  Michelle Picoli [aut, cre] (<https://orcid.org/0000-0001-9855-2046>)
+Maintainer: Michelle Picoli <mipicoli@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-10 12:30:02 UTC

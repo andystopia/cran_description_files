@@ -1,0 +1,33 @@
+Package: WRI
+Type: Package
+Title: Wasserstein Regression and Inference
+Version: 0.2.0
+Authors@R: c(
+    person("Xi", "Liu", email = "xiliu@ucsb.edu", role = c("aut", "cre")),
+    person("Chao", "Zhang", email = "czhang@pstat.ucsb.edu", role = "aut"),
+    person("Matthew", "Coleman", email = "matthewbcoleman@ucsb.edu", role = "aut"),
+    person("Alexander", "Petersen", email = "petersen@pstat.ucsb.edu", role = "aut"))
+Author: Xi Liu [aut, cre],
+  Chao Zhang [aut],
+  Matthew Coleman [aut],
+  Alexander Petersen [aut]
+Description: Implementation of the methodologies described in 1) Alexander Petersen, Xi Liu and Afshin A. Divani (2021) <doi:10.1214/20-aos1971>, including global F tests, partial F tests, intrinsic Wasserstein-infinity bands and Wasserstein density bands, and 2) Chao Zhang, Piotr Kokoszka and Alexander Petersen (2022) <doi:10.1111/jtsa.12590>, including estimation, prediction, and inference of the Wasserstein autoregressive models.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.6.0)
+Imports: fdapace (>= 0.2.0), fdadensity (>= 0.1.2), Rfast (>= 1.9.8),
+        CVXR (>= 0.99.7), expm (>= 0.999-4), ggplot2 (>= 3.2.1),
+        gridExtra (>= 2.3), stats, Rcpp (>= 1.0.3), locfit (>=
+        1.5-9.1), mvtnorm (>= 1.1-0), locpol (>= 0.7), modeest (>=
+        2.4.0), methods, rlang, polynom
+RoxygenNote: 7.2.0
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2022-07-08 22:56:17 UTC; czhang
+Maintainer: Xi Liu <xiliu@ucsb.edu>
+Repository: CRAN
+Date/Publication: 2022-07-08 23:30:11 UTC

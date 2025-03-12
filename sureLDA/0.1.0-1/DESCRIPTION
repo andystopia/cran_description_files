@@ -1,0 +1,29 @@
+Package: sureLDA
+Type: Package
+Title: A Novel Multi-Disease Automated Phenotyping Method for the EHR
+Version: 0.1.0-1
+Authors@R: c(
+    person("Yuri", "Ahuja", role = c("aut", "cre"), email = "Yuri_Ahuja@hms.harvard.edu"),
+    person("Tianxi", "Cai", role = c("aut")),
+    person(family = "PARSE LTD", role = c("aut"))   
+    )
+Description: A statistical learning method to simultaneously predict a range of target phenotypes using codified and natural language processing (NLP)-derived Electronic Health Record (EHR) data. See Ahuja et al (2020) JAMIA <doi:10.1093/jamia/ocaa079> for details.
+URL: https://github.com/celehs/sureLDA
+BugReports: https://github.com/celehs/sureLDA/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: R (>= 3.0), Matrix
+Imports: pROC, glmnet, MAP, Rcpp, foreach, doParallel
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2020-11-05 08:29:06 UTC; yuriahuja
+Author: Yuri Ahuja [aut, cre],
+  Tianxi Cai [aut],
+  PARSE LTD [aut]
+Maintainer: Yuri Ahuja <Yuri_Ahuja@hms.harvard.edu>
+Repository: CRAN
+Date/Publication: 2020-11-10 10:00:02 UTC

@@ -1,0 +1,50 @@
+Package: sendigR
+Title: Enable Cross-Study Analysis of 'CDISC' 'SEND' Datasets
+Version: 1.0.0
+Authors@R: 
+ c(
+    person("Bo", "Larsen", email = "bolr@novonordisk.com", role = "aut"),
+    person("Yousuf", "Ali", email = "md.ali@fda.hhs.gov", role = "aut"),
+    person("Kevin", "Snyder", email = "kevin.snyder@fda.hhs.gov", role = "aut"),
+    person("William", "Houser", email = "william.houser@bms.com", role = "aut"),
+    person("Brianna", "Paisley", email = "paisley_brianna_meadow@lilly.com", role = "aut"),
+    person("Cmsabbir", "Ahmed", email = "cmsabbir.ahmed@fda.hhs.gov", role = "aut"),
+    person("Susan", "Butler", email = "susan.butler@fda.hhs.gov", role = "aut"),
+    person("Michael", "Rosentreter", email = "michael.rosentreter@bayer.com", role = "aut"),
+    person("Michael", "Denieu", email = "michael.denieu@labcorp.com", role = "aut"),
+    person("Wenxian", "Wang", email = "wenxian.wang@bms.com", role = c("cre", "aut")),
+	person(given = "BioCelerate", role = "cph"))
+Description: A system enables cross study Analysis by extracting and filtering study data for 
+    control animals from  'CDISC' 'SEND' Study Repository. 
+    These data types are supported: Body Weights, Laboratory test results and Microscopic findings. 
+    These database types are supported: 'SQLite' and 'Oracle'.
+License: MIT + file LICENSE
+URL: https://github.com/phuse-org/sendigR
+BugReports: https://github.com/phuse-org/sendigR/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: RSQLite, data.table, readxl, magrittr, xfun, stringr,
+        DescTools, parsedate, shiny, shinydashboard, htmltools, DT,
+        dplyr, ggplot2, Hmisc, haven, plotly, cicerone, reticulate,
+        sjlabelled
+Suggests: knitr, rmarkdown, logr, shinycssloaders, testthat
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+SystemRequirements: Python(>=3.9.6)
+NeedsCompilation: no
+Packaged: 2022-08-17 02:48:35 UTC; wangw106
+Author: Bo Larsen [aut],
+  Yousuf Ali [aut],
+  Kevin Snyder [aut],
+  William Houser [aut],
+  Brianna Paisley [aut],
+  Cmsabbir Ahmed [aut],
+  Susan Butler [aut],
+  Michael Rosentreter [aut],
+  Michael Denieu [aut],
+  Wenxian Wang [cre, aut],
+  BioCelerate [cph]
+Maintainer: Wenxian Wang <wenxian.wang@bms.com>
+Repository: CRAN
+Date/Publication: 2022-08-18 08:50:02 UTC

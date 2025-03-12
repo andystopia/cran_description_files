@@ -1,0 +1,31 @@
+Package: dipw
+Type: Package
+Title: Debiased Inverse Propensity Score Weighting
+Description: Estimation of the average treatment effect when controlling for
+    high-dimensional confounders using debiased inverse propensity score
+    weighting (DIPW). DIPW relies on the propensity score following a sparse
+    logistic regression model, but the regression curves are not required to be
+    estimable. Despite this, our package also allows the users to estimate 
+    the regression curves and take the estimated curves as input to our
+    methods. Details of the methodology can be found in Yuhao Wang and
+    Rajen D. Shah (2020) "Debiased Inverse Propensity Score Weighting for
+    Estimation of Average Treatment Effects with High-Dimensional Confounders"
+    <arXiv:2011.08661>. The package relies on the optimisation
+    software 'MOSEK' <https://www.mosek.com/> which must be installed separately;
+    see the documentation for 'Rmosek'. 
+Version: 0.1.0
+Authors@R: c(
+    person("Yuhao", "Wang", email = "yuhaow.thu@gmail.com", role = c("cre", "aut")),
+    person("Rajen", "Shah", email = "r.shah@statslab.cam.ac.uk", role = "ctb"))
+Maintainer: Yuhao Wang <yuhaow.thu@gmail.com>
+Imports: glmnet, Rmosek, Matrix, methods, stats
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-11-27 03:28:40 UTC; yuhaow
+Author: Yuhao Wang [cre, aut],
+  Rajen Shah [ctb]
+Repository: CRAN
+Date/Publication: 2020-11-30 09:00:05 UTC

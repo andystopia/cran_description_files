@@ -1,0 +1,37 @@
+Package: geslaR
+Title: Get and Manipulate the GESLA Dataset
+Version: 1.0-1
+Authors@R: 
+    c(person("Fernando", "Mayer", , "fernando.mayer@mu.ie", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5115-338X")),
+      person("Niamh", "Cahill", , "niamh.cahill@mu.ie", role = c("aut"),
+           comment = c(ORCID = "0000-0003-3086-550X")))
+Description: Promote access to the GESLA
+    <https://gesla787883612.wordpress.com> (Global Extreme Sea Level
+    Analysis) dataset, a higher-frequency sea-level record data from all
+    over the world. It provides functions to download it entirely, or
+    query subsets directly into R, without the need of downloading the
+    full dataset. Also, it provides a built-in web-application, so that
+    users can apply basic filters to select the data of interest,
+    generating informative plots, and showing the selected sites.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/EireExtremes/geslaR,
+        https://eireextremes.github.io/geslaR/
+BugReports: https://github.com/EireExtremes/geslaR/issues
+Depends: arrow, dplyr, R (>= 3.5.0)
+Imports: cli
+Suggests: bslib, DT, knitr, leaflet, leafpop, lubridate, patchwork,
+        plotly, rmarkdown, shiny, shinyalert, shinycssloaders,
+        shinyWidgets, testthat (>= 3.0.0), tidyverse
+SystemRequirements: arrow
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-10-06 17:47:13 UTC; mayer
+Author: Fernando Mayer [aut, cre] (<https://orcid.org/0000-0001-5115-338X>),
+  Niamh Cahill [aut] (<https://orcid.org/0000-0003-3086-550X>)
+Maintainer: Fernando Mayer <fernando.mayer@mu.ie>
+Repository: CRAN
+Date/Publication: 2023-10-09 13:20:02 UTC

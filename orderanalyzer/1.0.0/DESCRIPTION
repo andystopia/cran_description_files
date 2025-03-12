@@ -1,0 +1,33 @@
+Package: orderanalyzer
+Type: Package
+Title: Extracting Order Position Tables from PDF-Based Order Documents
+Version: 1.0.0
+Date: 2024-12-11
+Authors@R: c(person("Michael", "Scholz", email = "michael.scholz@th-deg.de", role = c("cre", "aut")),
+            person("Joerg", "Bauer", email = "joerg.bauer@th-deg.de", role = c("aut"))) 
+Maintainer: Michael Scholz <michael.scholz@th-deg.de>
+Description: Functions for extracting text and tables from 
+  PDF-based order documents. It provides an n-gram-based approach for identifying 
+  the language of an order document. It furthermore uses R-package 'pdftools' to 
+  extract the text from an order document. In the case that the PDF document is 
+  only including an image (because it is scanned document), R package 'tesseract' 
+  is used for OCR. Furthermore, the package provides functionality for identifying 
+  and extracting order position tables in order documents based on a clustering approach.
+License: GPL-3
+SystemRequirements: Tesseract >= 5.0.0, libtesseract-dev (deb),
+        tesseract-devel (rpm), libleptonica-dev (deb), leptonica-devel
+        (rpm), tesseract-ocr-eng (deb), libpoppler-cpp-dev (deb),
+        poppler-cpp-devel (rpm), poppler-data (rpm/deb), libxml2-dev
+        (deb), libxml2-devel (rpm)
+Depends: R(>= 4.3.0), tidyselect
+Imports: data.table, dplyr, matrixcalc, quanteda, rlist, stringr,
+        tibble, tidyr, utils, purrr, digest, lubridate
+Suggests: pdftools, tesseract, xml2
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-12-11 16:46:01 UTC; mscholz
+Author: Michael Scholz [cre, aut],
+  Joerg Bauer [aut]
+Repository: CRAN
+Date/Publication: 2024-12-12 15:20:02 UTC

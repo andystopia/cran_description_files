@@ -1,0 +1,31 @@
+Package: srcr
+Type: Package
+Title: Simplify Connections to Database Sources
+Version: 1.1.1
+Authors@R: c(person('Charles', 'Bailey', email = 'baileyc@chop.edu',
+                    role = c('aut', 'cre')),
+             person('Hanieh', 'Razzaghi', email = 'razzaghih@chop.edu',
+                    role = c('aut')))
+Maintainer: Charles Bailey <baileyc@chop.edu>
+Description: Connecting to databases requires boilerplate code to specify
+    connection parameters and to set up sessions properly with the DBMS.
+    This package provides a simple tool to fill two purposes: abstracting
+    connection details, including secret credentials, out of your source
+    code and managing configuration for frequently-used database connections
+    in a persistent and flexible way, while minimizing requirements on the
+    runtime environment.
+License: Artistic-2.0
+Encoding: UTF-8
+ByteCompile: TRUE
+Imports: DBI, dplyr, jsonlite, utils
+Suggests: knitr, rmarkdown, RSQLite, withr
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+URL: https://github.com/baileych/srcr
+BugReports: https://github.com/baileych/srcr/issues
+NeedsCompilation: no
+Packaged: 2024-05-12 05:03:13 UTC; baileyc
+Author: Charles Bailey [aut, cre],
+  Hanieh Razzaghi [aut]
+Repository: CRAN
+Date/Publication: 2024-05-12 05:20:03 UTC

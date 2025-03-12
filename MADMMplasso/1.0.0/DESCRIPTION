@@ -1,0 +1,55 @@
+Package: MADMMplasso
+Title: Multi Variate Multi Response ADMM with Interaction Effects
+Version: 1.0.0
+Authors@R: 
+    c(
+        person(
+            given = "Theophilus Quachie", family = "Asenso",
+            email = "t.q.asenso@medisin.uio.no",
+            role = "aut"
+        ),
+        person(
+            given = "Manuela", family = "Zucknick",
+            email = "Manuela.zucknick@medisin.uio.no",
+            role = "aut"
+        ),
+        person(
+            given = "Waldir", family = "Leoncio",
+            email = "w.l.netto@medisin.uio.no",
+            role = c("aut", "cre"),
+            comment = c(ORCID = "0000-0002-6719-6162")
+        ),
+        person(
+            given = "Chi", family = "Zhang",
+            email = "andreachizhang@yahoo.com",
+            role = "aut"
+        )
+    )
+Description: This system allows one to model a multi-variate, multi-response
+    problem with interaction effects. It combines the usual squared error loss
+    for the multi-response problem with some penalty terms to encourage
+    responses that correlate to form groups and also allow for modeling main and
+    interaction effects that exit within the covariates.
+    The optimization method employed is the Alternating Direction Method of
+    Multipliers (ADMM). The implementation is based on the methodology
+    presented on Quachie Asenso, T., & Zucknick, M. (2023)
+    <doi:10.48550/arXiv.2303.11155>.
+Imports: Matrix, MASS, Rcpp, RcppArmadillo, foreach, doParallel, class,
+        graphics, parallel, stats, spatstat.sparse, methods
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), lintr
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Date: 2025-01-08
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2025-01-08 11:56:39 UTC; waldir
+Author: Theophilus Quachie Asenso [aut],
+  Manuela Zucknick [aut],
+  Waldir Leoncio [aut, cre] (<https://orcid.org/0000-0002-6719-6162>),
+  Chi Zhang [aut]
+Maintainer: Waldir Leoncio <w.l.netto@medisin.uio.no>
+Repository: CRAN
+Date/Publication: 2025-01-08 16:40:06 UTC

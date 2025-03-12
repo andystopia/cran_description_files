@@ -1,0 +1,28 @@
+Package: ROCaggregator
+Title: Aggregate Multiple ROC Curves into One Global ROC
+Version: 1.0.1
+Authors@R: 
+    person(given = "Pedro",
+           family = "Mateus",
+           email = "pedro-cm@live.com.pt",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3047-7630"))
+Description: Aggregates multiple Receiver Operating Characteristic (ROC) curves 
+    obtained from different sources into one global ROC. Additionally, it’s 
+    also possible to calculate the aggregated precision-recall (PR) curve.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: utils, magrittr
+Suggests: testthat (>= 3.0.0), mockery, mockr, knitr, rmarkdown, ROCR,
+        pROC, pracma, stats
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://gitlab.com/UM-CDS/general-tools/rocaggregator
+BugReports: https://gitlab.com/UM-CDS/general-tools/rocaggregator/-/issues
+NeedsCompilation: no
+Packaged: 2021-08-09 15:29:58 UTC; admin
+Author: Pedro Mateus [aut, cre] (<https://orcid.org/0000-0002-3047-7630>)
+Maintainer: Pedro Mateus <pedro-cm@live.com.pt>
+Repository: CRAN
+Date/Publication: 2021-08-10 09:10:14 UTC

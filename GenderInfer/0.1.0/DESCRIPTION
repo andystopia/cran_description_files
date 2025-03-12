@@ -1,0 +1,32 @@
+Package: GenderInfer
+Type: Package
+Title: This is a Collection of Functions to Analyse Gender Differences
+Version: 0.1.0
+Authors@R: c( 
+    person("Rita", "Giordano", email = "giordanor@rsc.org", role =  c("aut", "cre")), 
+    person("Aileen", "Day", role = "aut"), 
+    person("John", "Boyle", role = "aut"), 
+    person("Colin", "Batchelor", role = "ctb"),
+    person("Royal Society of Chemistry", role = "cph"))
+Maintainer: Rita Giordano <giordanor@rsc.org>
+Description: Implementation of functions, which combines binomial calculation 
+    and data visualisation, to analyse the differences in publishing authorship
+    by gender described in Day et al. (2020) <doi:10.1039/C9SC04090K>.
+    It should only be used when self-reported gender is unavailable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: ggplot2, binom
+Depends: R (>= 2.10)
+Suggests: dplyr, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-09-28 08:03:26 UTC; giordanor
+Author: Rita Giordano [aut, cre],
+  Aileen Day [aut],
+  John Boyle [aut],
+  Colin Batchelor [ctb],
+  Royal Society of Chemistry [cph]
+Repository: CRAN
+Date/Publication: 2021-09-29 08:00:05 UTC

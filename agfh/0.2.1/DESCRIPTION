@@ -1,0 +1,27 @@
+Package: agfh
+Type: Package
+Version: 0.2.1
+Date: 2023-06-21
+Title: Agnostic Fay-Herriot Model for Small Area Statistics
+Authors@R: c(
+    person(given="Marten", family="Thompson", email = "thom7058@umn.edu", role = c("aut", "cre", "cph")),
+    person(given="Snigdhansu", family="Chatterjee", email = "chatt019@umn.edu", role = c("ctb", "cph")))
+Description: Implements the Agnostic Fay-Herriot model, an extension of 
+    the traditional small area model. In place of normal sampling errors, the 
+    sampling error distribution is estimated with a Gaussian process to 
+    accommodate a broader class of distributions. This flexibility is most 
+    useful in the presence of bounded, multi-modal, or heavily skewed sampling 
+    errors.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: ggplot2, goftest, ks, mvtnorm, stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-06-21 16:42:03 UTC; marten
+Author: Marten Thompson [aut, cre, cph],
+  Snigdhansu Chatterjee [ctb, cph]
+Maintainer: Marten Thompson <thom7058@umn.edu>
+Repository: CRAN
+Date/Publication: 2023-06-21 20:00:05 UTC

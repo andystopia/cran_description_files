@@ -1,0 +1,27 @@
+Package: MulvariateRandomForestVarImp
+Title: Variable Importance Measures for Multivariate Random Forests
+Version: 0.0.2
+Authors@R: 
+    c(person("Sikdar", "Sharmistha", email = "sharmistha.sikdar@tuck.dartmouth.edu", role = "aut"),
+    person("Hooker", "Giles", email = "ghooker@berkeley.edu", role="aut"),
+    person("Kadiyali","Vrinda", email = "kadiayali@cornell.edu", role="ctb"),
+    person("Dogonadze","Nika", email = "nika.dogonadze@toptal.com", role="cre"))
+Description: Calculates two sets of post-hoc variable importance measures for multivariate random forests. The first set of variable importance measures are given by the sum of mean split improvements for splits defined by feature j measured on user-defined examples (i.e., training or testing samples). The second set of importance measures are calculated on a per-outcome variable basis as the sum of mean absolute difference of node values for each split defined by feature j measured on user-defined examples (i.e., training or testing samples). The user can optionally threshold both sets of importance measures to include only splits that are statistically significant as measured using an F-test. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: MultivariateRandomForest (>= 1.1.5), MASS (>= 7.3.0)
+URL: https://github.com/Megatvini/VIM/
+BugReports: https://github.com/Megatvini/VIM/issues
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-12-14 13:15:12 UTC; Nika
+Author: Sikdar Sharmistha [aut],
+  Hooker Giles [aut],
+  Kadiyali Vrinda [ctb],
+  Dogonadze Nika [cre]
+Maintainer: Dogonadze Nika <nika.dogonadze@toptal.com>
+Repository: CRAN
+Date/Publication: 2021-12-15 10:40:05 UTC

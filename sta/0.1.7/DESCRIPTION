@@ -1,0 +1,28 @@
+Package: sta
+Version: 0.1.7
+Date: 2022-05-29
+Title: Seasonal Trend Analysis for Time Series Imagery in R
+Authors@R: person("Inder", "Tecuapetla-Gomez", 
+                  email = "itecuapetla@conabio.gob.mx",
+                  role = c("aut", "cre"))
+Author: Inder Tecuapetla-Gomez [aut, cre]
+Maintainer: Inder Tecuapetla-Gomez <itecuapetla@conabio.gob.mx>
+Description: Efficiently estimate shape parameters of periodic time series 
+    imagery with which  a statistical seasonal trend analysis (STA) is subsequently performed. 
+    STA output can be exported in conventional raster formats. 
+    Methods to visualize STA output are also implemented as well as the calculation 
+    of additional basic statistics. STA is based on (R. Eastman, F. Sangermano, 
+    B. Ghimire, H. Zhu, H. Chen, N. Neeti, Y. Cai, E. Machado and S. Crema, 2009) <doi:10.1080/01431160902755338>.
+LazyData: true
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: raster (>= 2.9-5), R (>= 3.5.0), geoTS (>= 0.1.1), foreach (>=
+        1.4.4), parallel (>= 3.6.1)
+Suggests: sp (>= 1.2-0), grDevices
+Imports: trend (>= 1.1.1), doParallel (>= 1.0.14), mapview (>= 2.7.0),
+        RColorBrewer (>= 1.1-2)
+NeedsCompilation: no
+RoxygenNote: 7.2.0
+Packaged: 2022-05-30 00:41:27 UTC; itecuapetla
+Repository: CRAN
+Date/Publication: 2022-05-30 02:30:02 UTC

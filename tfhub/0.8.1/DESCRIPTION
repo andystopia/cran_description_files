@@ -1,0 +1,43 @@
+Package: tfhub
+Type: Package
+Title: Interface to 'TensorFlow' Hub
+Version: 0.8.1
+Authors@R: c(
+  person("Tomasz", "Kalinowski", role = c("aut", "cre"),
+         email = "tomasz.kalinowski@rstudio.com"),
+  person("Daniel", "Falbel", role = c("aut"),
+         email = "daniel@rstudio.com"),
+  person("JJ", "Allaire", role = c("aut"),
+         email = "jj@rstudio.com"),
+  person("RStudio", role = c("cph", "fnd")),  
+  person(family = "Google Inc.", role = c("cph"))
+  )
+Description: 'TensorFlow' Hub is a library for the publication, discovery, and
+    consumption of reusable parts of machine learning models. A module is a 
+    self-contained piece of a 'TensorFlow' graph, along with its weights and 
+    assets, that can be reused across different tasks in a process known as
+    transfer learning. Transfer learning train a model with a smaller dataset,
+    improve generalization, and speed up training.
+License: Apache License 2.0
+URL: https://github.com/rstudio/tfhub
+BugReports: https://github.com/rstudio/tfhub/issues
+SystemRequirements: TensorFlow >= 2.0 (https://www.tensorflow.org/)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: reticulate (>= 1.9.0.9002), tensorflow (>= 1.8.0.9006),
+        magrittr, rstudioapi (>= 0.7), vctrs
+Suggests: testthat (>= 2.1.0), knitr, tfestimators, keras, rmarkdown,
+        callr, recipes, tibble, abind, fs,
+VignetteBuilder: knitr
+Config/reticulate: list( packages = list( list(package =
+        "tensorflow_hub", pip = TRUE) ) )
+NeedsCompilation: no
+Packaged: 2021-12-15 14:25:06 UTC; tomasz
+Author: Tomasz Kalinowski [aut, cre],
+  Daniel Falbel [aut],
+  JJ Allaire [aut],
+  RStudio [cph, fnd],
+  Google Inc. [cph]
+Maintainer: Tomasz Kalinowski <tomasz.kalinowski@rstudio.com>
+Repository: CRAN
+Date/Publication: 2021-12-19 01:50:02 UTC

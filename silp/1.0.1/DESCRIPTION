@@ -1,0 +1,31 @@
+Package: silp
+Title: Conditional Process Analysis (CPA) via SEM Approach
+Version: 1.0.1
+Authors@R: 
+    c(person("Yi-Hsuan", "Tseng", , "r12227115@g.ntu.edu.tw", role = c("aut", "cre")), 
+      person("Po-Hsien", "Huang", , "psyphh@nccu.edu.tw", role = c("aut")))
+Description: Utilizes the Reliability-Adjusted Product Indicator (RAPI) method to 
+    estimate effects among latent variables, thus allowing for more precise definition and analysis of 
+    mediation and moderation models. Our simulation studies reveal that while 'silp' may exhibit 
+    instability with smaller sample sizes and lower reliability scores (e.g., N = 100, 'omega' = 0.7), 
+    implementing nearest positive definite matrix correction and bootstrap confidence interval 
+    estimation can significantly ameliorate this volatility. When these adjustments are applied, 
+    'silp' achieves estimations akin in quality to those derived from LMS. In conclusion, the 'silp' 
+    package is a valuable tool for researchers seeking to explore complex relational structures between 
+    variables without resorting to commercial software.
+    Cheung et al.(2021)<doi:10.1007/s10869-020-09717-0>
+    Hsiao et al.(2018)<doi:10.1177/0013164416679877>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: Matrix, methods, lavaan, MASS, purrr, semTools, stats, stringr
+NeedsCompilation: no
+Packaged: 2025-03-11 12:27:51 UTC; tsengyishang
+Maintainer: Yi-Hsuan Tseng <r12227115@g.ntu.edu.tw>
+Depends: R(>= 4.1.0)
+URL: https://github.com/TomBJJJ/silp
+BugReports: https://github.com/TomBJJJ/silp/issues
+Author: Yi-Hsuan Tseng [aut, cre],
+  Po-Hsien Huang [aut]
+Repository: CRAN
+Date/Publication: 2025-03-11 13:10:01 UTC

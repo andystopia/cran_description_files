@@ -1,0 +1,59 @@
+Type: Package
+Package: weightedGCM
+Title: Weighted Generalised Covariance Measure Conditional Independence
+        Test
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Cyrill",
+             family = "Scheidegger",
+             role = c("aut", "cre"),
+             email = "cyrill.scheidegger@stat.math.ethz.ch"),
+      person(given = "Julia",
+             family = "Hoerrmann",
+             role = "ths"),
+      person(given = "Peter",
+             family = "Buehlmann",
+             role = "ths"),
+      person(given = "Jonas",
+             family = "Peters",
+             role = c("ctb", "cph"),
+             comment = "The code in 'trainFunctions.R' is copied 
+             (with small modifications) from the R package
+             'GeneralisedCovarianceMeasure' by Jonas Peters and Rajen D. Shah"),
+      person(given = "Rajen D.",
+             family = "Shah",
+             role = c("ctb", "cph"),
+             comment = "The code in 'trainFunctions.R' is copied 
+             (with small modifications) from the R package 
+             'GeneralisedCovarianceMeasure' by Jonas Peters and Rajen D. Shah"))
+Description: A conditional independence test that can be applied both to
+    univariate and multivariate random variables. The test is based on a
+    weighted form of the sample covariance of the residuals after a
+    nonlinear regression on the conditioning variables. Details are
+    described in Scheidegger, Hoerrmann and Buehlmann (2021) "The Weighted
+    Generalised Covariance Measure" <arXiv:2111.04361>. The test is a
+    generalisation of the Generalised Covariance Measure (GCM) implemented
+    in the R package 'GeneralisedCovarianceMeasure' by Jonas Peters and
+    Rajen D. Shah based on Shah and Peters (2020) "The Hardness of
+    Conditional Independence Testing and the Generalised Covariance
+    Measure" <arXiv:1804.07203>.
+License: GPL-2
+Imports: GeneralisedCovarianceMeasure, methods, mgcv, stats, xgboost
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-11-27 16:25:53 UTC; cyril
+Author: Cyrill Scheidegger [aut, cre],
+  Julia Hoerrmann [ths],
+  Peter Buehlmann [ths],
+  Jonas Peters [ctb, cph] (The code in 'trainFunctions.R' is copied (with
+    small modifications) from the R package
+    'GeneralisedCovarianceMeasure' by Jonas Peters and Rajen D. Shah),
+  Rajen D. Shah [ctb, cph] (The code in 'trainFunctions.R' is copied
+    (with small modifications) from the R package
+    'GeneralisedCovarianceMeasure' by Jonas Peters and Rajen D. Shah)
+Maintainer: Cyrill Scheidegger <cyrill.scheidegger@stat.math.ethz.ch>
+Repository: CRAN
+Date/Publication: 2021-11-29 09:50:02 UTC

@@ -1,0 +1,38 @@
+Package: swaprinc
+Title: Swap Principal Components into Regression Models
+Version: 1.0.1
+Authors@R: 
+    person("Mackson", "Ncube", , "macksonncube.stats@gmail.com", role = c("aut", "cre", "cph"))
+Description: Obtaining accurate and stable estimates of regression coefficients
+    can be challenging when the suggested statistical model has issues related to
+    multicollinearity, convergence, or overfitting. One solution is to use
+    principal component analysis (PCA) results in the regression, as discussed in
+    Chan and Park (2005) <doi:10.1080/01446190500039812>. The swaprinc() package
+    streamlines comparisons between a raw regression model with the full set of
+    raw independent variables and a principal component regression model where
+    principal components are estimated on a subset of the independent variables,
+    then swapped into the regression model in place of those variables. The
+    swaprinc() function compares one raw regression model to one principal
+    component regression model, while the compswap() function compares one raw
+    regression model to many principal component regression models. Package
+    functions include parameters to center, scale, and undo centering and scaling,
+    as described by Harvey and Hansen (2022)
+    <https://cran.r-project.org/package=LearnPCA/vignettes/Vig_03_Step_By_Step_PCA.pdf>.
+    Additionally, the package supports using Gifi methods to extract principal
+    components from categorical variables, as outlined by Rossiter (2021)
+    <https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/NonlinearPCA.html#2_Package>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/mncube/swaprinc
+BugReports: https://github.com/mncube/swaprinc/issues
+Imports: broom, broom.mixed, dplyr, Gifi, lme4, magrittr, rlang,
+        tidyselect
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-04-14 15:47:08 UTC; Administrator
+Author: Mackson Ncube [aut, cre, cph]
+Maintainer: Mackson Ncube <macksonncube.stats@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-04-17 10:00:02 UTC

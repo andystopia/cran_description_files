@@ -1,0 +1,37 @@
+Package: surtvep
+Title: Cox Non-Proportional Hazards Model with Time-Varying
+        Coefficients
+Version: 1.0.0
+URL: https://github.com/UM-KevinHe/surtvep,
+        https://um-kevinhe.github.io/surtvep/
+BugReports: https://github.com/UM-KevinHe/surtvep/issues
+Authors@R: c(
+    person("Lingfeng","Luo",role=c("aut","cre"),email="lfluo@umich.edu"),
+    person("Wenbo","Wu",role=c("aut"),email="wenbowu@umich.edu"),
+    person("Kevin","He",role=c("aut"),email="kevinhe@umich.edu")
+  )
+Description: Fit Cox non-proportional hazards models with time-varying coefficients. 
+    Both unpenalized procedures (Newton and proximal Newton) and penalized procedures 
+    (P-splines and smoothing splines) are included using B-spline basis functions for 
+    estimating time-varying coefficients. For penalized procedures, cross validations, 
+    mAIC, TIC or GIC are implemented to select tuning parameters. Utilities for 
+    carrying out post-estimation visualization, summarization, point-wise confidence 
+    interval and hypothesis testing are also provided.
+    For more information, see Wu et al. (2022) <doi: 10.1007/s10985-021-09544-2> and 
+    Luo et al. (2023) <doi:10.1177/09622802231181471>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, splines, ggplot2, ggpubr, stats, tibble, rlang
+Depends: R (>= 4.0)
+Suggests: knitr, rmarkdown
+NeedsCompilation: yes
+Packaged: 2023-10-16 20:46:56 UTC; lingfengluo
+Author: Lingfeng Luo [aut, cre],
+  Wenbo Wu [aut],
+  Kevin He [aut]
+Maintainer: Lingfeng Luo <lfluo@umich.edu>
+Repository: CRAN
+Date/Publication: 2023-10-17 10:00:02 UTC

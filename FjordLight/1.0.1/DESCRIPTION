@@ -1,0 +1,38 @@
+Package: FjordLight
+Version: 1.0.1
+Date: 2024-08-19
+Title: Available Light Within the Water Column and on the Seafloor of
+        Arctic Fjords
+Type: Package
+Description: Satellite data collected between 2003 and 2022,
+	in conjunction with gridded bathymetric data (50-150 m resolution),
+	are used to estimate the irradiance reaching the bottom of a series of representative EU Arctic fjords. 
+	An Earth System Science Data (ESSD) manuscript, Schlegel et al. (2024),	
+	provides a detailed explanation of the methodology.
+Authors@R: c(person("Bernard", "Gentili", role = c("aut"),
+    email = "bernard.gentili@orange.fr"),
+    person("Jean-Pierre", "Gattuso", role = c("aut"),
+    email = "jean-pierre.gattuso@imev-mer.fr",
+    comment = c(ORCID = "0000-0002-4533-4114")),
+    person("Robert W.", "Schlegel", role = c("aut", "cre"),
+    email = "robwschlegel@gmail.com",
+    comment = c(ORCID = "0000-0002-0705-1287")))
+Maintainer: Robert W. Schlegel <robwschlegel@gmail.com>
+Depends: R (>= 3.3.0)
+Imports: ncdf4, raster, curl
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://face-it-project.github.io/FjordLight/index.html,
+        https://doi.pangaea.de/10.1594/PANGAEA.910898,
+        https://doi.pangaea.de/10.1594/PANGAEA.965460
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Packaged: 2024-08-19 06:06:58 UTC; robert
+Author: Bernard Gentili [aut],
+  Jean-Pierre Gattuso [aut] (<https://orcid.org/0000-0002-4533-4114>),
+  Robert W. Schlegel [aut, cre] (<https://orcid.org/0000-0002-0705-1287>)
+Repository: CRAN
+Date/Publication: 2024-08-19 07:30:13 UTC

@@ -1,0 +1,41 @@
+Package: regsem
+Type: Package
+Title: Regularized Structural Equation Modeling
+Version: 1.9.5
+Authors@R: c(
+        person("Ross", "Jacobucci",email = "rcjacobuc@gmail.com",role = c("aut","cre")), 
+        person("Kevin","Grimm", role="ctb"),
+        person("Andreas","Brandmaier", role="ctb"),
+        person("Sarfaraz","Serang", role="ctb"),
+        person("Rogier","Kievit", role="ctb"),
+        person("Florian","Scharf", role="ctb"),
+        person("Xiaobei","Li", role="ctb"),
+        person("Ai","Ye", role="ctb")
+        )
+Maintainer: Ross Jacobucci <rcjacobuc@gmail.com>
+Description: Uses both ridge and lasso penalties (and extensions) to penalize
+    specific parameters in structural equation models. The package offers additional
+    cost functions, cross validation, and other extensions beyond traditional structural
+    equation models. Also contains a function to perform exploratory mediation (XMed). 
+URL: https://github.com/Rjacobucci/regsem/
+BugReports: https://github.com/Rjacobucci/regsem/issues/
+License: GPL (>= 2)
+VignetteBuilder: knitr
+Depends: lavaan, Rcpp, Rsolnp
+Suggests: snowfall, markdown, MASS, GA, caret, glmnet, ISLR, lbfgs,
+        numDeriv, psych, knitr, nloptr, NlcOptim, optimx, semPlot,
+        colorspace, plyr, matrixStats, stringr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+NeedsCompilation: yes
+Packaged: 2023-06-01 17:13:30 UTC; rjacobuc
+Author: Ross Jacobucci [aut, cre],
+  Kevin Grimm [ctb],
+  Andreas Brandmaier [ctb],
+  Sarfaraz Serang [ctb],
+  Rogier Kievit [ctb],
+  Florian Scharf [ctb],
+  Xiaobei Li [ctb],
+  Ai Ye [ctb]
+Repository: CRAN
+Date/Publication: 2023-06-02 09:00:02 UTC

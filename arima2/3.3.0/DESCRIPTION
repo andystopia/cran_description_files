@@ -1,0 +1,58 @@
+Package: arima2
+Title: Likelihood Based Inference for ARIMA Modeling
+Version: 3.3.0
+Authors@R: 
+    c(
+    person("Jesse", 
+           "Wheeler", 
+           role = c("aut", "cre", "cph"),
+           email = "jeswheel@umich.edu"),
+    person("Noel", 
+           "McAllister", 
+           role = "aut",
+           email = "noelmcp@umich.edu"),
+    person("Dhajanae", 
+           "Sylvertooth", 
+           role = "aut",
+           email = "dsylvert@umich.edu"),
+    person("Edward", 
+           "Ionides", 
+           role = "ctb"),
+    person("Brian", 
+           "Ripley", 
+           role = "ctb", 
+           comment = "Author of arima source code in stats package."),
+    person("R Core Team", 
+           role = "cph", 
+           comment = "Author of arima source code in stats package."))
+Description: Estimating and analyzing auto regressive integrated moving average
+    (ARIMA) models. The primary function in this package is arima(), which fits 
+    an ARIMA model to univariate time series data using a random restart
+    algorithm. This approach frequently leads to models that have model 
+    likelihood greater than or equal to that of the likelihood obtained by 
+    fitting the same model using the arima() function from the 'stats' package. 
+    This package enables proper optimization of model likelihoods, which is a 
+    necessary condition for performing likelihood ratio tests. This package 
+    relies heavily on the source code of the arima() function of the 'stats' 
+    package. For more information, please see Jesse Wheeler and Edward L. 
+    Ionides (2023) <doi:10.48550/arXiv.2310.01198>.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: ggplot2, methods
+Depends: R (>= 3.5)
+LazyData: true
+BugReports: https://github.com/jeswheel/arima2/issues/
+NeedsCompilation: yes
+Packaged: 2024-08-19 13:34:47 UTC; jeswheel
+Author: Jesse Wheeler [aut, cre, cph],
+  Noel McAllister [aut],
+  Dhajanae Sylvertooth [aut],
+  Edward Ionides [ctb],
+  Brian Ripley [ctb] (Author of arima source code in stats package.),
+  R Core Team [cph] (Author of arima source code in stats package.)
+Maintainer: Jesse Wheeler <jeswheel@umich.edu>
+Repository: CRAN
+Date/Publication: 2024-08-19 14:20:02 UTC

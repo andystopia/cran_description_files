@@ -1,0 +1,36 @@
+Package: mlr3inferr
+Title: Inference on the Generalization Error
+Version: 0.1.0
+Authors@R: c(
+    person("Sebastian", "Fischer", , "sebf.fischer@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-9609-3197")),
+    person("Hannah", "Schulz-Kümpel", , "hannah.kuempel@stat.uni-muenchen.de", role = "aut",
+           comment = c(ORCID = "0000-0003-3972-8392"))
+  )
+Description: An 'mlr3' extension that provides various resampling-based
+    confidence interval (CI) methods for estimating the generalization
+    error.  These CI methods are implemented as 'mlr3' measures, enabling
+    the evaluation of individual algorithms on specific tasks as well as
+    the comparison of different learning algorithms.
+License: LGPL-3
+URL: https://mlr3inferr.mlr-org.com,
+        https://github.com/mlr-org/mlr3inferr
+BugReports: https://github.com/mlr-org/mlr3inferr/issues
+Depends: mlr3, R (>= 3.1.0)
+Imports: checkmate, data.table, future, lgr, mlr3measures, mlr3misc,
+        paradox, R6, withr
+Suggests: rpart, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 7.3.2
+Collate: 'MeasureAbstractCi.R' 'aaa.R' 'MeasureCI.R' 'MeasureCIConZ.R'
+        'MeasureCICorT.R' 'MeasureCIHoldout.R' 'MeasureCIWaldCV.R'
+        'MeasureCiNestedCV.R' 'ResamplingNestedCV.R'
+        'ResamplingPairedSubsampling.R' 'bibentries.R' 'zzz.R'
+Packaged: 2025-01-10 16:02:33 UTC; sebi
+Author: Sebastian Fischer [cre, aut] (<https://orcid.org/0000-0002-9609-3197>),
+  Hannah Schulz-Kümpel [aut] (<https://orcid.org/0000-0003-3972-8392>)
+Maintainer: Sebastian Fischer <sebf.fischer@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-01-13 17:50:11 UTC

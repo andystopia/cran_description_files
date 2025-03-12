@@ -1,0 +1,30 @@
+Package: fastVoteR
+Title: Efficient Voting Methods for Committee Selection
+Version: 0.0.1
+Authors@R: c(
+    person("John", "Zobolas", , "bblodfon@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-3609-8674")),
+    person("Anne-Marie", "George", role = "ctb",
+           comment = c(ORCID = "0000-0001-9232-8211"))
+  )
+Description: A fast 'Rcpp'-based implementation of polynomially-computable
+    voting theory methods for committee ranking and scoring. The package
+    includes methods such as Approval Voting (AV), Satisfaction Approval
+    Voting (SAV), sequential Proportional Approval Voting (PAV), and
+    sequential Phragmen's Rule. Weighted variants of these methods are
+    also provided, allowing for differential voter influence.
+License: LGPL (>= 3)
+URL: https://bblodfon.github.io/fastVoteR/
+Imports: checkmate, data.table, Rcpp
+Suggests: mlr3misc (>= 0.15.1), testthat (>= 3.0.0)
+LinkingTo: Rcpp
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2024-11-26 15:25:04 UTC; john
+Author: John Zobolas [cre, aut] (<https://orcid.org/0000-0002-3609-8674>),
+  Anne-Marie George [ctb] (<https://orcid.org/0000-0001-9232-8211>)
+Maintainer: John Zobolas <bblodfon@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-11-27 12:40:02 UTC

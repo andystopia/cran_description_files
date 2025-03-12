@@ -1,0 +1,22 @@
+Package: redcas
+Type: Package
+Depends: R (>= 3.5.0), methods
+Title: An Interface to the Computer Algebra System 'REDUCE'
+Version: 0.1.1
+Date: 2024-11-05
+Author: Martin Gregory [aut, cre]
+Maintainer: Martin Gregory <mairtin.macghreagoir@gmail.com>
+Authors@R: c(person("Martin", "Gregory", role=c("aut", "cre"),
+                    email="mairtin.macghreagoir@gmail.com"))
+Description: 'REDUCE' is a portable general-purpose computer algebra system supporting scalar, vector, matrix and tensor algebra, symbolic differential and integral calculus, arbitrary precision numerical calculations and output in 'LaTeX' format. 'REDUCE' is based on 'Lisp' and is available on the two dialects 'Portable Standard Lisp' ('PSL') and 'Codemist Standard Lisp' ('CSL'). The 'redcas' package provides an interface for executing arbitrary 'REDUCE' code interactively from 'R', returning output as character vectors. 'R' code and 'REDUCE' code can be interspersed. It also provides a specialized function for calling the 'REDUCE' feature for solving systems of equations, returning the output as an 'R' object designed for the purpose. A further specialized function uses 'REDUCE' features to generate 'LaTeX' output and post-processes this for direct use in 'LaTeX' documents, e.g. using 'Sweave'.
+License: GPL-3
+SystemRequirements: 'REDUCE' <http://www.reduce-algebra.com>. At least
+        one of the 'CSL' or 'PSL' dialects must be installed in order
+        to use the package. Tested with 'REDUCE' releases 6860 and 6558
+        for both 'CSL' and 'PSL' on Linux, and 6558 and 6339 for 'CSL'
+        on MacOS
+NeedsCompilation: no
+OS_type: unix
+Packaged: 2024-11-05 16:30:11 UTC; mg
+Repository: CRAN
+Date/Publication: 2024-11-08 14:50:02 UTC

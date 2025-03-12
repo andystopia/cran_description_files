@@ -1,0 +1,25 @@
+Package: ccmEstimator
+Type: Package
+Title: Comparative Causal Mediation Estimation
+Version: 1.0.0
+Authors@R: c(person("Kirk", "Bansak", role = "aut",
+	             email = "kbansak@ucsd.edu"),
+             person("Xiaohan", "Wu", role = c("aut", "cre"),
+                    email = "xiw021@ucsd.edu"))
+Maintainer: Xiaohan Wu <xiw021@ucsd.edu>
+Description: Functions to perform comparative causal mediation analysis to compare the mediation effects of different treatments via a common mediator. Results contain the estimates and confidence intervals for the two comparative causal mediation analysis estimands, as well as the ATE and ACME for each treatment. Functions provided in the package will automatically assess the comparative causal mediation analysis scope conditions (i.e. for each comparative causal mediation estimand, a numerator and denominator that are both estimated with the desired statistical significance and of the same sign). Results will be returned for each comparative causal mediation estimand only if scope conditions are met for it. See details in Bansak(2020)<doi:10.1017/pan.2019.31>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, covr, testthat
+VignetteBuilder: knitr
+URL: https://github.com/xiw021/ccmEstimator
+BugReports: https://github.com/xiw021/ccmEstimator/issues
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-09-14 16:45:31 UTC; wuxiaohan
+Author: Kirk Bansak [aut],
+  Xiaohan Wu [aut, cre]
+Repository: CRAN
+Date/Publication: 2021-09-28 12:20:02 UTC

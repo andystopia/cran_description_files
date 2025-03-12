@@ -1,0 +1,53 @@
+Package: arf
+Title: Adversarial Random Forests
+Version: 0.2.4
+Date: 2025-02-24
+Authors@R: 
+    c(person(given = "Marvin N.",
+             family = "Wright",
+             role = c("aut", "cre"),
+             email = "cran@wrig.de",
+             comment = c(ORCID = "0000-0002-8542-6291")),
+      person(given = "David S.",
+             family = "Watson",
+             role = c("aut"),
+             email = "david.s.watson11@gmail.com",
+             comment = c(ORCID = "0000-0001-9632-2159")), 
+      person(given = "Kristin",
+             family = "Blesch",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0001-6241-3079")), 
+      person(given = "Jan",
+             family = "Kapar",
+             role = c("aut"), 
+             comment = c(ORCID = "0009-0000-6408-2840")))
+Maintainer: Marvin N. Wright <cran@wrig.de>
+Description: Adversarial random forests (ARFs) recursively partition data into 
+    fully factorized leaves, where features are jointly independent. The 
+    procedure is iterative, with alternating rounds of generation and 
+    discrimination. Data becomes increasingly realistic at each round, until 
+    original and synthetic samples can no longer be reliably distinguished. 
+    This is useful for several unsupervised learning tasks, such as density
+    estimation and data synthesis. Methods for both are implemented in this
+    package. ARFs naturally handle unstructured data with mixed continuous and 
+    categorical covariates. They inherit many of the benefits of random forests, 
+    including speed, flexibility, and solid performance with default parameters. 
+    For details, see Watson et al. (2023) <https://proceedings.mlr.press/v206/watson23a.html>.
+License: GPL (>= 3)
+URL: https://github.com/bips-hb/arf, https://bips-hb.github.io/arf/
+BugReports: https://github.com/bips-hb/arf/issues
+Imports: data.table, ranger, foreach, stringr, truncnorm
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: ggplot2, doParallel, doFuture, mlbench, knitr, rmarkdown,
+        tibble, palmerpenguins, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-02-24 21:28:44 UTC; wright
+Author: Marvin N. Wright [aut, cre] (<https://orcid.org/0000-0002-8542-6291>),
+  David S. Watson [aut] (<https://orcid.org/0000-0001-9632-2159>),
+  Kristin Blesch [aut] (<https://orcid.org/0000-0001-6241-3079>),
+  Jan Kapar [aut] (<https://orcid.org/0009-0000-6408-2840>)
+Repository: CRAN
+Date/Publication: 2025-02-24 21:50:02 UTC

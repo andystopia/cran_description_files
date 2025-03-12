@@ -1,0 +1,27 @@
+Package: DNNSIM
+Type: Package
+Title: Single-Index Neural Network for Skewed Heavy-Tailed Data
+Version: 0.1.1
+Authors@R: c(
+    person("Qingyang", "Liu", email = "rh8liuqy@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3265-6330")),
+    person("Shijie", "Wang", email = "shijiew.usc@gmail.com", role = "aut"),
+    person("Ray", "Bai", email = "rbai@mailbox.sc.edu", role = "aut", comment = c(ORCID = "0000-0002-7190-7844")),
+    person("Dipankar", "Bandyopadhyay", email = "dbandyop@vcu.edu", role = "aut"))
+Maintainer: Qingyang Liu <rh8liuqy@gmail.com>
+Description: Provides a deep neural network model with a monotonic increasing single index function tailored for periodontal disease studies. The residuals are assumed to follow a skewed T distribution, a skewed normal distribution, or a normal distribution. More details can be found at Liu, Huang, and Bai (2024) <doi:10.1016/j.csda.2024.108012>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+RdMacros: Rdpack
+SystemRequirements: Python (>= 3.8.0); PyTorch (https://pytorch.org/);
+        NumPy (https://numpy.org/); SciPy (https://scipy.org/); sklearn
+        (https://scikit-learn.org/stable/);
+RoxygenNote: 7.3.2
+Imports: reticulate (>= 1.37.0), stats (>= 4.3.0), Rdpack (>= 2.6)
+NeedsCompilation: no
+Packaged: 2025-01-07 04:07:56 UTC; Kevin_Liu
+Author: Qingyang Liu [aut, cre] (<https://orcid.org/0000-0003-3265-6330>),
+  Shijie Wang [aut],
+  Ray Bai [aut] (<https://orcid.org/0000-0002-7190-7844>),
+  Dipankar Bandyopadhyay [aut]
+Repository: CRAN
+Date/Publication: 2025-01-07 16:50:13 UTC

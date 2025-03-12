@@ -1,0 +1,39 @@
+Package: recforest
+Title: Random Survival Forest for Recurrent Events
+Version: 1.0.0
+Authors@R: 
+    c(person("Juliette", "Murris", email = "murris.juliette@gmail.com",
+        role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7017-9865")),
+    person("Guillaume", "Desachy", email = "guillaume.desachy@pierre-fabre.com",
+        role = c("aut"), comment = c(ORCID = "0000-0002-2000-1436")),
+    person("Colin", "Fay", email = "colin@thinkr.fr", role = c("aut"),
+           comment = c(ORCID = "0000-0001-7343-1846")),
+    person("Yohann", "Mansiaux", email = "yohann@thinkr.fr", role = c("aut"),
+           comment = c(ORCID = "0000-0002-8905-6603")),
+    person("Audrey","Lavenu", email = "audrey.lavenu@univ-rennes.fr",
+        role = c("aut"), comment = c(ORCID = "0000-0002-0049-2397")),
+    person("Sandrine","Katsahian", email = "sandrine.katsahian@aphp.fr",
+        role = c("aut"), comment = c(ORCID = "0000-0002-7261-0671"))
+    )
+Description: Analyze recurrent events with right-censored data and the potential presence of a terminal event (that prevents further occurrences, like death). 'recofest' extends the random survival forest algorithm, adapting splitting rules and node estimators to handle complexities of recurrent events. The methodology is fully described in Murris, J., Bouaziz, O., Jakubczak, M., Katsahian, S., & Lavenu, A. (2024) (<https://hal.science/hal-04612431v1/document>).
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: frailtypack, knitr, rmarkdown, testthat (>= 3.0.0), withr
+Config/testthat/edition: 3
+Imports: cli, dplyr, future, future.apply, magrittr, methods, mets,
+        purrr, reda, stats, survival, tibble, timereg
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2024-12-03 10:30:40 UTC; colinfay
+Author: Juliette Murris [aut, cre] (<https://orcid.org/0000-0002-7017-9865>),
+  Guillaume Desachy [aut] (<https://orcid.org/0000-0002-2000-1436>),
+  Colin Fay [aut] (<https://orcid.org/0000-0001-7343-1846>),
+  Yohann Mansiaux [aut] (<https://orcid.org/0000-0002-8905-6603>),
+  Audrey Lavenu [aut] (<https://orcid.org/0000-0002-0049-2397>),
+  Sandrine Katsahian [aut] (<https://orcid.org/0000-0002-7261-0671>)
+Maintainer: Juliette Murris <murris.juliette@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-05 18:30:02 UTC

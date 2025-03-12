@@ -1,0 +1,66 @@
+Package: rema
+Title: Rare Event Meta Analysis
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Brinley N.",
+           family = "Zabriskie",
+           role = c("aut", "cre"),
+           email = "zabriskie@stat.byu.edu",
+           comment = c(ORCID = "0000-0002-2621-7000")),
+    person(given = "Benjamin",
+           family = "Kinard",
+           role = c("aut"),
+           email = "benjaminjameskinard@gmail.com"),
+   person(given = "Chris",
+           family = "Sypherd",
+           role = c("aut"),
+           email = "sypherdchris@gmail.com"),
+   person(given = "Ryan",
+           family = "Whetten",
+           role = c("aut"),
+           email = "whettenrmw@gmail.com"),
+   person(given = "Madeleine",
+           family = "Hays",
+           role = c("ctb"),
+           email = "madeleine.hays7@gmail.com"))
+Description: The rema package implements a permutation-based approach for binary 
+	meta-analyses of 2x2 tables, founded on conditional logistic regression, 
+	that provides more reliable statistical tests when heterogeneity is 
+	observed in rare event data (Zabriskie et al. 2021 <doi:10.1002/sim.9142>). 
+	To adjust for the effect of heterogeneity, this method conditions on the 
+	sufficient statistic of a proxy for the heterogeneity effect as opposed to
+	estimating the heterogeneity variance. While this results in the model not
+	strictly falling under the random-effects framework, it is akin to a 
+	random-effects approach in that it assumes differences in variability due 
+	to treatment. Further, this method does not rely on large-sample 
+	approximations or continuity corrections for rare event data. This method
+	uses the permutational distribution of the test statistic instead of
+	asymptotic approximations for inference. The number of observed events 
+	drives the computation complexity for creating this permutational 
+	distribution. Accordingly, for this method to be computationally feasible,
+	it should only be applied to meta-analyses with a relatively low number of
+	observed events. To create this permutational distribution, a network 
+	algorithm, based on the work of Mehta et al. (1992) <doi:10.2307/1390598> 
+	and Corcoran et al. (2001) <doi:10.1111/j.0006-341x.2001.00941.x>, is 
+	employed using C++ and integrated into the package.
+License: GPL (>= 3) | file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+LinkingTo: Rcpp, progress
+Imports: graphics, Rcpp, Rdpack, stats
+RdMacros: Rdpack
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2021-10-27 15:30:55 UTC; zabriskie
+Author: Brinley N. Zabriskie [aut, cre]
+    (<https://orcid.org/0000-0002-2621-7000>),
+  Benjamin Kinard [aut],
+  Chris Sypherd [aut],
+  Ryan Whetten [aut],
+  Madeleine Hays [ctb]
+Maintainer: Brinley N. Zabriskie <zabriskie@stat.byu.edu>
+Repository: CRAN
+Date/Publication: 2021-10-28 19:30:02 UTC

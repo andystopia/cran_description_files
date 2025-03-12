@@ -1,0 +1,72 @@
+Package: bbotk
+Title: Black-Box Optimization Toolkit
+Version: 1.5.0
+Authors@R: c(
+    person("Marc", "Becker", , "marcbecker@posteo.de", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0002-8115-0400")),
+    person("Jakob", "Richter", , "jakob1richter@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-4481-5554")),
+    person("Michel", "Lang", , "michellang@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0001-9754-0393")),
+    person("Bernd", "Bischl", , "bernd_bischl@gmx.net", role = "aut",
+           comment = c(ORCID = "0000-0001-6002-6980")),
+    person("Martin", "Binder", , "martin.binder@mail.com", role = "aut"),
+    person("Olaf", "Mersmann", , "olafm@statistik.tu-dortmund.de", role = "ctb")
+  )
+Description: Features highly configurable search spaces via the 'paradox'
+    package and optimizes every user-defined objective function. The
+    package includes several optimization algorithms e.g. Random Search,
+    Iterated Racing, Bayesian Optimization (in 'mlr3mbo') and Hyperband
+    (in 'mlr3hyperband'). bbotk is the base package of 'mlr3tuning',
+    'mlr3fselect' and 'miesmuschel'.
+License: LGPL-3
+URL: https://bbotk.mlr-org.com, https://github.com/mlr-org/bbotk
+BugReports: https://github.com/mlr-org/bbotk/issues
+Depends: paradox (>= 1.0.0), R (>= 3.1.0)
+Imports: checkmate (>= 2.0.0), data.table, lgr, methods, mlr3misc (>=
+        0.15.1), R6
+Suggests: adagio, emoa, GenSA, irace (>= 4.0.0), knitr, nloptr,
+        progressr, processx, redux, testthat (>= 3.0.0), rush (>=
+        0.1.2)
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+Collate: 'Archive.R' 'ArchiveAsync.R' 'ArchiveAsyncFrozen.R'
+        'ArchiveBatch.R' 'CallbackAsync.R' 'CallbackBatch.R'
+        'Codomain.R' 'ContextAsync.R' 'ContextBatch.R' 'Objective.R'
+        'ObjectiveRFun.R' 'ObjectiveRFunDt.R' 'ObjectiveRFunMany.R'
+        'OptimInstance.R' 'OptimInstanceAsync.R'
+        'OptimInstanceAsyncMultiCrit.R'
+        'OptimInstanceAsyncSingleCrit.R' 'OptimInstanceBatch.R'
+        'OptimInstanceBatchMultiCrit.R'
+        'OptimInstanceBatchSingleCrit.R' 'OptimInstanceMultiCrit.R'
+        'OptimInstanceSingleCrit.R' 'mlr_optimizers.R' 'Optimizer.R'
+        'OptimizerAsync.R' 'OptimizerAsyncDesignPoints.R'
+        'OptimizerAsyncGridSearch.R' 'OptimizerAsyncRandomSearch.R'
+        'OptimizerBatch.R' 'OptimizerBatchChain.R'
+        'OptimizerBatchCmaes.R' 'OptimizerBatchDesignPoints.R'
+        'OptimizerBatchFocusSearch.R' 'OptimizerBatchGenSA.R'
+        'OptimizerBatchGridSearch.R' 'OptimizerBatchIrace.R'
+        'OptimizerBatchLocalSearch.R' 'OptimizerBatchNLoptr.R'
+        'OptimizerBatchRandomSearch.R' 'Progressor.R'
+        'mlr_terminators.R' 'Terminator.R' 'TerminatorClockTime.R'
+        'TerminatorCombo.R' 'TerminatorEvals.R' 'TerminatorNone.R'
+        'TerminatorPerfReached.R' 'TerminatorRunTime.R'
+        'TerminatorStagnation.R' 'TerminatorStagnationBatch.R'
+        'TerminatorStagnationHypervolume.R' 'as_terminator.R'
+        'assertions.R' 'bb_optimize.R' 'bbotk_reflections.R'
+        'bibentries.R' 'helper.R' 'mlr_callbacks.R' 'nds_selection.R'
+        'reexport.R' 'sugar.R' 'worker_loops.R' 'zzz.R'
+Packaged: 2024-12-14 09:42:42 UTC; marc
+Author: Marc Becker [cre, aut] (<https://orcid.org/0000-0002-8115-0400>),
+  Jakob Richter [aut] (<https://orcid.org/0000-0003-4481-5554>),
+  Michel Lang [aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Bernd Bischl [aut] (<https://orcid.org/0000-0001-6002-6980>),
+  Martin Binder [aut],
+  Olaf Mersmann [ctb]
+Maintainer: Marc Becker <marcbecker@posteo.de>
+Repository: CRAN
+Date/Publication: 2024-12-17 08:30:07 UTC

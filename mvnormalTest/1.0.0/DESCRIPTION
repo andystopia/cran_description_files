@@ -1,0 +1,33 @@
+Package: mvnormalTest
+Type: Package
+Title: Powerful Tests for Multivariate Normality
+Version: 1.0.0
+Authors@R: c(
+    person("Yian", "Zhang", email = "yz2777@nyu.edu", role = c("aut","cre")),
+    person("Ming", "Zhou", email = "zhouming1027@gmail.com", role = "aut"),
+    person("Yongzhao", "Shao", email = "yongzhao.shao@nyulangone.org", role = "aut"))
+Author: Yian Zhang [aut, cre],
+  Ming Zhou [aut],
+  Yongzhao Shao [aut]
+Maintainer: Yian Zhang <yz2777@nyu.edu>
+Description: A simple informative powerful test (mvnTest()) for multivariate normality proposed by 
+    Zhou and Shao (2014) <doi:10.1080/02664763.2013.839637>, which combines kurtosis 
+    with Shapiro-Wilk test that is easy for biomedical researchers to understand and 
+    easy to implement in all dimensions. This package also contains some other multivariate 
+    normality tests including Fattorini's FA test (faTest()), Mardia's skewness and kurtosis 
+    test (mardia()), Henze-Zirkler's test (mhz()), Bowman and Shenton's test (msk()), 
+    Royston’s H test (msw()), and Villasenor-Alva and Gonzalez-Estrada's test (msw()). Empirical 
+    power calculation functions for these tests are also provided. In addition, this package 
+    includes some functions to generate several types of multivariate distributions mentioned in 
+    Zhou and Shao (2014).
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: stats, nortest, moments, copula
+Suggests: knitr
+Depends: R (>= 3.5.0)
+Language: en-US
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-04-22 17:15:40 UTC; leons
+Repository: CRAN
+Date/Publication: 2020-04-28 09:10:02 UTC

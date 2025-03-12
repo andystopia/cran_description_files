@@ -1,0 +1,25 @@
+Package: LOMAR
+Type: Package
+Title: Localization Microscopy Data Analysis
+Version: 0.5.0
+Authors@R: c(person("Jean-Karim", "Heriche", email = "heriche@embl.de", role = c("cre","aut"), comment = c(ORCID = "0000-0001-6867-9425")))
+Maintainer: Jean-Karim Heriche <heriche@embl.de>
+Description: Read, register and compare point sets from single molecule localization microscopy.
+URL: https://git.embl.de/heriche/lomar
+Depends: R (>= 3.6.0)
+biocViews:
+Imports: Rcpp, FNN, stats, data.table, parallel, doParallel, foreach,
+        proxy, reshape2, pracma, transport, RANN, ff, dbscan, EBImage,
+        tools, rhdf5, mclust, methods, abind, alphashape3d
+LinkingTo: BH (>= 1.78.0-0), Rcpp
+Suggests: testthat
+License: GPL-3
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 7.3.1
+SystemRequirements: C++, gmp, fftw3
+NeedsCompilation: yes
+Packaged: 2024-09-26 17:17:52 UTC; heriche
+Author: Jean-Karim Heriche [cre, aut] (<https://orcid.org/0000-0001-6867-9425>)
+Repository: CRAN
+Date/Publication: 2024-09-26 18:20:03 UTC

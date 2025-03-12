@@ -1,0 +1,38 @@
+Package: HetSeq
+Title: Identifying Modulators of Cellular Responses Leveraging
+        Intercellular Heterogeneity
+Version: 0.1.0
+Authors@R: c(
+    person("Kevin", "Berg", , "Kevin.Berg@informatik.uni-regensburg.de", role = c("aut", "cre")),
+    person("Florian", "Erhard", , "Florian.Erhard@informatik.uni-regensburg.de", role = "aut",
+           comment = c(ORCID = "0000-0002-3574-6983")),
+    person("Lygeri", "Sakellaridi", , "Lygeri.Sakellaridi@informatik.uni-regensburg.de", role = "aut")
+  )
+Author: Kevin Berg [aut, cre],
+  Florian Erhard [aut] (<https://orcid.org/0000-0002-3574-6983>),
+  Lygeri Sakellaridi [aut]
+Maintainer: Kevin Berg <Kevin.Berg@informatik.uni-regensburg.de>
+Description: Cellular responses to perturbations are highly heterogeneous
+    and depend largely on the initial state of cells. Connecting
+    post-perturbation cells via cellular trajectories to untreated cells
+    (e.g. by leveraging metabolic labeling information) enables
+    exploitation of intercellular heterogeneity as a combined knock-down
+    and overexpression screen to identify pathway modulators, termed
+    Heterogeneity-seq (see 'Berg et al' <doi:10.1101/2024.10.28.620481>).
+    This package contains functions to generate cellular trajectories based
+    on scSLAM-seq (single-cell, thiol-(SH)-linked alkylation of RNA for
+    metabolic labelling sequencing) time courses, functions to identify
+    pathway modulators and to visualize the results.
+License: Apache License (>= 2)
+URL: https://github.com/erhard-lab/HetSeq
+BugReports: https://github.com/erhard-lab/HetSeq/issues
+Depends: R (>= 4.1.0)
+Imports: cowplot, doParallel, foreach, DoubleML, e1071, igraph,
+        ggplot2, ggrastr, ggrepel, grandR, lpSolve, mlr3, pROC,
+        reshape2, scales, Seurat, stats
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2025-02-03 11:36:32 UTC; berg
+Repository: CRAN
+Date/Publication: 2025-02-03 18:00:05 UTC

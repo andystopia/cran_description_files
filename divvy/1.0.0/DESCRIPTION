@@ -1,0 +1,31 @@
+Package: divvy
+Title: Spatial Subsampling of Biodiversity Occurrence Data
+Version: 1.0.0
+Authors@R: 
+    person("Gawain", "Antell", , "gawainantell@gmail.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-1948-6624"))
+Depends: R (>= 4.0)
+Description: Divide taxonomic occurrence data into geographic regions of fair
+    comparison, with three customisable methods to standardise area and extent.
+    Calculate common biodiversity and range-size metrics on subsampled data.
+    Background theory and practical considerations for the methods are described
+    in Antell and others (2023) <doi:10.31223/X5997Z>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: iNEXT (>= 3.0.0), Rdpack, sf, terra, units, vegan
+RdMacros: Rdpack
+RoxygenNote: 7.2.3
+LazyData: true
+Suggests: knitr, rnaturalearth, rnaturalearthdata, ggplot2, rmarkdown,
+        testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://gawainantell.github.io/divvy/,
+        https://github.com/GawainAntell/divvy
+BugReports: https://github.com/GawainAntell/divvy/issues
+NeedsCompilation: no
+Packaged: 2023-10-25 21:39:15 UTC; antell
+Author: Gawain Antell [aut, cre, cph] (<https://orcid.org/0000-0002-1948-6624>)
+Maintainer: Gawain Antell <gawainantell@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-10-26 08:20:03 UTC

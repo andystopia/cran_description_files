@@ -1,0 +1,29 @@
+Package: spectr
+Type: Package
+Title: Calculate the Periodogram of a Time-Course
+Version: 1.0.1
+Authors@R: c(person('Jake', 'Hughey', , 'jakejhughey@gmail.com', c('aut', 'cre')),
+  person('Michael', 'Tackenberg', , 'm.tackenberg@gmail.com', 'aut'),
+  person('Josh', 'Schoenbachler', , 'josh.schoenbachler@gmail.com', 'ctb'))
+Description: Provides a consistent interface to use various methods to calculate
+  the periodogram and estimate the period of a rhythmic time-course. Methods
+  include Lomb-Scargle, fast Fourier transform, and three versions of the
+  chi-square periodogram. See Tackenberg and Hughey (2021)
+  <doi:10.1371/journal.pcbi.1008567>.
+URL: https://spectr.hugheylab.org, https://github.com/hugheylab/spectr
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Depends: R (>= 3.6)
+Imports: data.table (>= 1.12.2), foreach (>= 1.5.0), lomb (>= 2.0)
+Suggests: doParallel (>= 1.0.15), knitr, qs (>= 0.24.1), rmarkdown,
+        testthat (>= 3.0.3)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-02-04 18:06:56 UTC; joshuaschoenbachler
+Author: Jake Hughey [aut, cre],
+  Michael Tackenberg [aut],
+  Josh Schoenbachler [ctb]
+Maintainer: Jake Hughey <jakejhughey@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-02-07 12:00:05 UTC

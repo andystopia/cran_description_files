@@ -1,0 +1,42 @@
+Type: Package
+Package: minb
+Title: Multiple-Inflated Negative Binomial Model
+Version: 0.1.0
+Authors@R: c(
+    person("Yang", "Li", role=c("aut"), email="yang.li@ruc.edu.cn"),
+    person("Mingcong", "Wu", role=c("aut", "cre"), email="wumingcong@ruc.edu.cn"),
+    person("Mengyun", "Wu", role=c("aut"), email="wu.mengyun@shufe.edu.cn"),
+    person("Shuangge", "Ma", role=c("aut"), email="shuangge.ma@yale.edu"))
+Description: Count data is prevalent and informative, with widespread
+    application in many fields such as social psychology, personality, and
+    public health. Classical statistical methods for the analysis of count
+    outcomes are commonly variants of the log-linear model, including
+    Poisson regression and Negative Binomial regression. However, a
+    typical problem with count data modeling is inflation, in the sense
+    that the counts are evidently accumulated on some integers. Such an
+    inflation problem could distort the distribution of the observed
+    counts, further bias estimation and increase error, making the classic
+    methods infeasible. Traditional inflated value selection methods based
+    on histogram inspection are easy to neglect true points and
+    computationally expensive in addition. Therefore, we propose a
+    multiple-inflated negative binomial model to handle count data
+    modeling with multiple inflated values, achieving data-driven inflated
+    value selection. The proposed approach provides simultaneous
+    identification of important regression predictors on the target count
+    response as well. More details about the proposed method are described in 
+    Li, Y., Wu, M., Wu, M., & Ma, S. (2023) <arXiv:2309.15585>.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Imports: MASS, pscl, stats
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 7.2.3
+Packaged: 2023-09-30 03:00:02 UTC; wumingcong
+Author: Yang Li [aut],
+  Mingcong Wu [aut, cre],
+  Mengyun Wu [aut],
+  Shuangge Ma [aut]
+Maintainer: Mingcong Wu <wumingcong@ruc.edu.cn>
+Repository: CRAN
+Date/Publication: 2023-10-01 16:40:02 UTC

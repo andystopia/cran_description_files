@@ -1,0 +1,49 @@
+Package: reservoirnet
+Type: Package
+Title: Reservoir Computing and Echo State Networks
+Version: 0.2.0
+Date: 2023-03-13
+Authors@R: c(person("Thomas", "Ferte", role = c("aut", "cre", "trl"), email = "thomas.ferte@u-bordeaux.fr"),
+             person("Kalidou", "Ba", role = c("aut", "trl"), email = "kalidou.ba@u-bordeaux.fr"),
+             person("Nathan", "Trouvain", role = c("aut"), email = "nathan.trouvin@inria.fr"),
+             person("Rodolphe", "Thiebaut", role = c("aut"), email = "rodolphe.thiebaut@u-bordeaux.fr"),
+             person("Xavier", "Hinaut", role = c("aut"), email = "xavier.hinaut@inria.fr"),
+             person("Boris", "Hejblum", role = c("aut", "trl"), email = "boris.hejblum@u-bordeaux.fr"))
+SystemRequirements: Python (>= 3.7)
+Description: A simple user-friendly library based on the 'python' module 'reservoirpy'.
+             It provides a flexible interface to implement efficient Reservoir
+             Computing (RC) architectures with a particular focus on Echo State Networks
+             (ESN). Some of its features are: offline and online training, parallel implementation, 
+             sparse matrix computation, fast spectral initialization, advanced learning 
+             rules (e.g. Intrinsic Plasticity) etc. It also makes possible to easily create 
+             complex architectures with multiple reservoirs (e.g. deep reservoirs), readouts, 
+             and complex feedback loops. Moreover, graphical tools are included to easily 
+             explore hyperparameters. Finally, it includes several tutorials exploring
+             time series forecasting, classification and hyperparameter tuning. For more information
+             about 'reservoirpy', please see Trouvain et al. (2020) <doi:10.1007/978-3-030-61616-8_40>.
+             This package was developed in the framework of the University of Bordeaux’s IdEx
+             "Investments for the Future" program / RRI PHDS.
+Config/reticulate: list( packages = list( list(package = "reservoirpy",
+        pip=TRUE) ) )
+License: GPL (>= 3)
+Repository: CRAN
+URL: https://github.com/reservoirpy
+Depends: R (>= 3.6)
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Imports: reticulate, testthat (>= 3.0.0), rlang, ggplot2, ggpubr,
+        janitor, dplyr, magrittr, methods
+Suggests: rmarkdown, knitr, covr, kableExtra, slider, tibble, tidyr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2023-04-03 13:57:07 UTC; tf1
+Author: Thomas Ferte [aut, cre, trl],
+  Kalidou Ba [aut, trl],
+  Nathan Trouvain [aut],
+  Rodolphe Thiebaut [aut],
+  Xavier Hinaut [aut],
+  Boris Hejblum [aut, trl]
+Maintainer: Thomas Ferte <thomas.ferte@u-bordeaux.fr>
+Date/Publication: 2023-04-04 11:40:02 UTC

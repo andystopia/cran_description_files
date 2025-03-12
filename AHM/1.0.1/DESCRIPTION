@@ -1,0 +1,26 @@
+Package: AHM
+Type: Package
+Title: Additive Heredity Model: Method for the Mixture-of-Mixtures
+        Experiments
+Version: 1.0.1
+Authors@R: c(person(given = "Sumin", family="Shen", email = "sumin@vt.edu", role = c("aut", "cre")),
+    person(given = "Lulu", family="Kang", role = "aut"),
+    person(given = "Xinwei", family="Deng", role = "aut"))
+Maintainer: Sumin Shen <sumin@vt.edu>
+Description: An implementation of the additive heredity model for the mixture-of-mixtures experiments of Shen et al. (2019) in Technometrics <doi:10.1080/00401706.2019.1630010>. The additive heredity model considers an additive structure to inherently connect the major components with the minor components. The additive heredity model has a meaningful interpretation for the estimated model because of the hierarchical and heredity principles applied and the nonnegative garrote technique used for variable selection. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: mixexp, plgp, devtools, dplyr, tibble, tidyr, Matrix
+Depends: R (>= 2.10), quadprog, glmnet
+Suggests: knitr, rmarkdown, partitions
+VignetteBuilder: knitr
+BuildVignettes: yes
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2019-07-25 12:10:43 UTC; shen
+Author: Sumin Shen [aut, cre],
+  Lulu Kang [aut],
+  Xinwei Deng [aut]
+Repository: CRAN
+Date/Publication: 2019-07-28 09:00:05 UTC

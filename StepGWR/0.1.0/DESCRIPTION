@@ -1,0 +1,25 @@
+Package: StepGWR
+Type: Package
+Title: A Hybrid Spatial Model for Prediction and Capturing Spatial
+        Variation in the Data
+Version: 0.1.0
+Authors@R: c(person("Nobin Chandra","Paul", role=c("aut","cre","cph"), email="nobin.paul@icar.gov.in"),person("Moumita","Baishya",role="aut"))
+Depends: R(>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Description: It is a hybrid spatial model that combines the variable selection capabilities of stepwise regression methods with the predictive power of the Geographically 
+             Weighted Regression(GWR) model.The developed hybrid model follows a two-step approach where the stepwise variable selection method is applied first to identify 
+             the subset of predictors that have the most significant impact on the response variable, and then a GWR model is fitted using those selected variables for spatial 
+             prediction at test or unknown locations. For method details,see Leung, Y., Mei, C. L. and Zhang, W. X. (2000).<DOI:10.1068/a3162>.This hybrid spatial model aims to 
+             improve the accuracy and interpretability of GWR predictions by selecting a subset of relevant variables through a stepwise selection process.This approach is particularly 
+             useful for modeling spatially varying relationships and improving the accuracy of spatial predictions.
+License: GPL (>= 2.0)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: stats, qpdf, numbers,MASS
+NeedsCompilation: no
+Packaged: 2023-05-15 10:35:54 UTC; nobin ch paul
+Author: Nobin Chandra Paul [aut, cre, cph],
+  Moumita Baishya [aut]
+Maintainer: Nobin Chandra Paul <nobin.paul@icar.gov.in>
+Repository: CRAN
+Date/Publication: 2023-05-15 19:10:16 UTC

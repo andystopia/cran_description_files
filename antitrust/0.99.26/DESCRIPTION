@@ -1,0 +1,46 @@
+Package: antitrust
+Type: Package
+Title: Tools for Antitrust Practitioners
+Version: 0.99.26
+Date: 2022-08-22
+Authors@R: c(person("Charles", "Taragin", email = "ctaragin+antitrustr@gmail.com",
+                  role = c("aut", "cre")),
+             person("Michael", "Sandfort",
+                  role = c("aut")),
+             person("Shlok", "Goyal",
+                  role = c("ctb"))     
+                  )
+Maintainer: Charles Taragin <ctaragin+antitrustr@gmail.com>
+Imports: methods, BB, numDeriv
+Suggests: ggplot2, knitr, bookdown, rmarkdown, competitiontoolbox
+VignetteBuilder: knitr
+Encoding: UTF-8
+Description: A collection of tools for antitrust practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of mergers under different competitive regimes.
+URL: https://github.com/luciu5/antitrust
+License: CC0
+LazyLoad: yes
+Collate: 'AntitrustClasses.R' 'BertrandClasses.R'
+        'BertrandRUMClasses.R' 'AuctionClasses.R' 'BargainingClasses.R'
+        'VerticalClasses.R' 'CournotClasses.R' 'OwnershipMethods.R'
+        'SummaryMethods.R' 'ShowMethods.R' 'AuctionCapMethods.R'
+        'PricesMethods.R' 'CostMethods.R' 'MarginsMethods.R'
+        'ParamsMethods.R' 'PriceDeltaMethods.R' 'PSMethods.R'
+        'OutputMethods.R' 'PlotMethods.R' 'HypoMonMethods.R'
+        'HHIMethods.R' 'UPPMethods.R' 'DiversionMethods.R'
+        'ElastMethods.R' 'CMCRMethods.R' 'CVMethods.R'
+        'DiagnosticsMethods.R' 'AIDSFunctions.R' 'Antitrust_Shiny.R'
+        'AntitrustPackage.R' 'Auction2ndCapFunctions.R'
+        'Auction2ndLogitFunctions.R' 'BargainingLogitFunctions.R'
+        'BertrandFunctions.R' 'CESFunctions.R'
+        'CMCRBertrandFunctions.R' 'CMCRCournotFunctions.R'
+        'CournotFunctions.R' 'HHIFunctions.R' 'LinearFunctions.R'
+        'LogitFunctions.R' 'SimFunctions.R' 'VerticalFunctions.R'
+        'antitrust-deprecated.R'
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-08-23 20:15:28 UTC; ctara
+Author: Charles Taragin [aut, cre],
+  Michael Sandfort [aut],
+  Shlok Goyal [ctb]
+Repository: CRAN
+Date/Publication: 2022-08-24 07:00:15 UTC

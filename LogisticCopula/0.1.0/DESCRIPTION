@@ -1,0 +1,39 @@
+Package: LogisticCopula
+Type: Package
+Title: A Copula Based Extension of Logistic Regression
+Version: 0.1.0
+Authors@R: c(
+              person("Simon Boge", "Brant",, "simbrant91@gmail.com", 
+              role = c("aut", "cre")),
+              person("Ingrid", "Hobæk Haff", role = "aut")
+              )
+Maintainer: Simon Boge Brant <simbrant91@gmail.com>
+Description: An implementation of a method of extending a logistic regression
+    model beyond linear effects of the co-variates. The extension in is
+    constructed by first equating the logistic regression model to a naive Bayes
+    model where all the margins are specified to follow natural exponential 
+    distributions conditional on Y, that is, a model for Y given X that is
+    specified through the distribution of X given Y, where the columns of X are
+    assumed to be mutually independent conditional on Y. Subsequently, the
+    model is expanded by adding vine - copulas to relax the assumption of
+    mutual independence, where pair-copulas are added in a stage-wise, forward
+    selection manner. Some heuristics are employed during the process of
+    selecting edges, as well as the families of pair-copula models. After each
+    component is added, the parameters are updated by a (smaller) number of
+    gradient steps to maximise the likelihood. When the algorithm has stopped
+    adding edges, based the criterion that a new edge should improve the
+    likelihood more than k times the number new parameters, the parameters are
+    updated with a larger number of gradient steps, or until convergence. 
+License: MIT + file LICENSE
+Imports: VineCopula (>= 2.5.0), rvinecopulib (>= 0.6.3.1.1), igraph (>=
+        2.0.3), numDeriv (>= 8-1.1), stringr (>= 1.5.1)
+Depends: R (>= 3.5.0), brglm2 (>= 0.9)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Author: Simon Boge Brant [aut, cre],
+  Ingrid Hobæk Haff [aut]
+NeedsCompilation: no
+Packaged: 2024-06-27 09:44:30 UTC; simbr
+Repository: CRAN
+Date/Publication: 2024-06-28 09:20:06 UTC

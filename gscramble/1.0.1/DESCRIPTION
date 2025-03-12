@@ -1,0 +1,46 @@
+Package: gscramble
+Type: Package
+Title: Simulating Admixed Genotypes Without Replacement
+Version: 1.0.1
+Authors@R: 
+  c(
+    person(given = c("Eric", "C."), "Anderson", , "eric.anderson@noaa.gov", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-1326-0840")
+    ),
+    person(given = c("Rachael", "M."), "Giglio", , "rachael.giglio@usda.gov", role = c("aut"),
+      comment = c(ORCID = "0000-0003-4183-3546")
+    ),
+    person(given = c("Matt", "G."), "DeSaix", , "mgdesaix@gmail.com", role = c("aut"),
+      comment = c(ORCID = "0000-0002-5721-0311")
+    ),
+    person(given = c("Timothy", "J."), "Smyser", , "timothy.j.smyser@usda.gov", role = c("aut"),
+      comment = c(ORCID = "0000-0003-4542-3077")
+    )
+  )
+Description: A genomic simulation approach for creating biologically
+    informed individual genotypes from empirical data that 1) samples alleles
+    from populations without replacement, 2) segregates alleles based on species-specific
+    recombination rates. 'gscramble' is a flexible simulation approach that allows users
+    to create pedigrees of varying complexity in order to simulate admixed genotypes.
+    Furthermore, it allows users to track haplotype blocks from the source populations
+    through the pedigrees.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
+Imports: dplyr, ggplot2, glue, magrittr, purrr, readr, rlang, stats,
+        stringr, tibble, tidyr
+Suggests: cowplot, knitr, rmarkdown, tidyverse
+VignetteBuilder: knitr
+URL: https://github.com/eriqande/gscramble
+BugReports: https://github.com/eriqande/gscramble/issues
+NeedsCompilation: no
+Packaged: 2024-02-27 23:41:47 UTC; eriq
+Author: Eric C. Anderson [aut, cre] (<https://orcid.org/0000-0003-1326-0840>),
+  Rachael M. Giglio [aut] (<https://orcid.org/0000-0003-4183-3546>),
+  Matt G. DeSaix [aut] (<https://orcid.org/0000-0002-5721-0311>),
+  Timothy J. Smyser [aut] (<https://orcid.org/0000-0003-4542-3077>)
+Maintainer: Eric C. Anderson <eric.anderson@noaa.gov>
+Repository: CRAN
+Date/Publication: 2024-02-28 19:10:05 UTC

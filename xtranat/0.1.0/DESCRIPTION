@@ -1,0 +1,27 @@
+Package: xtranat
+Type: Package
+Title: Network Metrics Based on Random Walks
+Version: 0.1.0
+Authors@R: 
+  c(person(given = "Fernando",
+           family = "DePaolis",
+           role = c("aut", "cre"),
+           email = "fdepaolis@middlebury.edu",
+           comment = c(ORCID = "0000-0003-2296-8381")))
+Description: There are two new network metrics, RWC (random walk centrality) and CBET (counting betweenness). Also available are the normalized versions of those metrics. These measures of centrality and betweenness are particularly useful for the analysis of very dense weighted networks which include loops. Traditional measures do not work as well for those network characteristics. The main reference is DePaolis at al (2022) <doi:10.1007/s41109-022-00519-2>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, igraph, kableExtra, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+URL: https://github.com/fdepaolis/xtranat
+BugReports: https://github.com/fdepaolis/xtranat/issues
+NeedsCompilation: no
+Packaged: 2023-03-23 14:57:30 UTC; fernandodepaolis
+Author: Fernando DePaolis [aut, cre] (<https://orcid.org/0000-0003-2296-8381>)
+Maintainer: Fernando DePaolis <fdepaolis@middlebury.edu>
+Repository: CRAN
+Date/Publication: 2023-03-27 12:30:02 UTC

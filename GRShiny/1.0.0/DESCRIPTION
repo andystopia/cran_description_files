@@ -1,0 +1,40 @@
+Package: GRShiny
+Version: 1.0.0
+Type: Package
+Title: Graded Response Model
+Authors@R: 
+    c(person(given = "Sooyong",
+             family = "Lee",
+             role = c("aut", "cre"),
+             email = "sooyongl09@gmail.com"),
+      person(given = "Tiffany",
+             family = "Whittaker",
+             role = "aut"),
+      person(given = "Laura",
+             family = "Stapleton",
+             role = "aut")
+    )
+Description: Simulation and analysis of graded response data with different types of estimators. Also, an interactive shiny application is provided with graphics for characteristic and information curves. Samejima (2018) <doi:10.1007/978-1-4757-2691-6_5>.
+Depends: R (>= 3.6.0)
+Imports: shiny, shinyWidgets, bslib, DT, lavaan, mirt, sirt, ggplot2
+        (>= 3.4.0), dplyr, readr, tidyr, stringr, magrittr, purrr,
+        data.table, MASS, utils, stats, flextable, gt, officer,
+        openxlsx, sass
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Collate: 'GRShiny-package.r' '0_shinyapp.r' 'excel_table.r'
+        'gen_data.r' 'model_grm.r' 'model_out_tidy.r' 'plot.r'
+        'word_table.r' 'zz_runAPP.r'
+URL: https://github.com/sooyongl/GRShiny
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-05-02 14:49:53 UTC; sooyong
+Author: Sooyong Lee [aut, cre],
+  Tiffany Whittaker [aut],
+  Laura Stapleton [aut]
+Maintainer: Sooyong Lee <sooyongl09@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-05-03 18:40:06 UTC

@@ -1,0 +1,57 @@
+Package: profrep
+Title: Profile Repeatability
+Version: 1.0.0
+Authors@R: c(
+  person("Ursula K.", "Beattie",
+         email="ursula.beattie@tufts.edu", 
+         role=c("cre", "aut", "cph"),
+         comment=c(ORCID="0000-0002-7131-3712")
+        ),
+  person("David", "Harris",
+         email="drharris115@gmail.com",
+         role=c("aut", "cph") 
+        ),
+  person("L. Michael", "Romero",
+         email="michael.romero@tufts.edu",
+         role=c("aut", "cph"),
+         comment=c(ORCID="0000-0002-8854-8884")
+        ),
+  person("J. Michael", "Reed",
+         email="michael.reed@tufts.edu",
+         role=c("aut", "cph"),
+         comment=c(ORCID="0000-0002-3571-2652")
+        ),
+  person("Zachary R.", "Weaver",
+         email="zrweaver447@gmail.com",
+         role=c("aut", "cph"),
+         comment=c(ORCID="0000-0001-6314-0690")
+         )
+  )
+Description: Calculates profile repeatability for replicate stress response 
+  curves, or similar time-series data. Profile repeatability is an individual 
+  repeatability metric that uses the variances at each timepoint, the maximum 
+  variance, the number of crossings (lines that cross over each other), and 
+  the number of replicates to compute the repeatability score. 
+  For more information see Reed et al. (2019) <doi:10.1016/j.ygcen.2018.09.015>. 
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+URL: https://ubeattie.github.io/profrep/
+BugReports: https://github.com/ubeattie/profrep/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: stats
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2023-12-01 20:50:46 UTC; cleanaccount
+Author: Ursula K. Beattie [cre, aut, cph]
+    (<https://orcid.org/0000-0002-7131-3712>),
+  David Harris [aut, cph],
+  L. Michael Romero [aut, cph] (<https://orcid.org/0000-0002-8854-8884>),
+  J. Michael Reed [aut, cph] (<https://orcid.org/0000-0002-3571-2652>),
+  Zachary R. Weaver [aut, cph] (<https://orcid.org/0000-0001-6314-0690>)
+Maintainer: Ursula K. Beattie <ursula.beattie@tufts.edu>
+Repository: CRAN
+Date/Publication: 2023-12-04 16:40:08 UTC

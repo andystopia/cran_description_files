@@ -1,0 +1,32 @@
+Package: phonetisr
+Title: A Naive IPA Tokeniser
+Version: 0.1.0
+Date: 2025-02-23
+Authors@R: 
+    person(given = "Stefano",
+           family = "Coretta",
+           role = c("aut", "cre"),
+           email = paste0("stefano.coretta", "@", "gmail.com"),
+           comment = c(ORCID = "0000-0001-9627-5532"))
+Description: It provides users with functions to parse International Phonetic
+  Alphabet (IPA) transcriptions into individual phones (tokenisation) based on
+  default IPA symbols and  optional user specified multi-character phones. The
+  tokenised transcriptions can be used for obtaining counts of phones or for
+  searching for words matching phonetic patterns.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: cli, dplyr, lifecycle, magrittr, stringi, stringr, tibble,
+        Unicode
+Depends: R (>= 2.10)
+Suggests: rmarkdown, knitr, tidyverse
+VignetteBuilder: knitr
+URL: https://github.com/stefanocoretta/phonetisr,
+        https://stefanocoretta.github.io/phonetisr/
+NeedsCompilation: no
+Packaged: 2025-02-25 13:39:25 UTC; ste
+Author: Stefano Coretta [aut, cre] (<https://orcid.org/0000-0001-9627-5532>)
+Maintainer: Stefano Coretta <stefano.coretta@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-02-26 13:10:02 UTC

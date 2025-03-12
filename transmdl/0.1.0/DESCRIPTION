@@ -1,0 +1,29 @@
+Package: transmdl
+Type: Package
+Title: Semiparametric Transformation Models
+Version: 0.1.0
+Authors@R: c(person(given = "Fengyu", family = "Wen", role = c("aut", "cre"),
+                    email = "Wenfy1207@qq.com"),
+             person(given = "Baosheng", family = "Liang",  role = "aut",
+                    email = "liangbs@hsc.pku.edu.cn"))
+Maintainer: Fengyu Wen <Wenfy1207@qq.com>
+Description: To make the semiparametric transformation models easier to apply in real studies, 
+    we introduce this R package, in which the MLE in transformation models via 
+    an EM algorithm proposed by Zeng D, Lin DY(2007) <doi:10.1111/j.1369-7412.2007.00606.x> 
+    and adaptive lasso method in transformation models proposed by Liu XX, Zeng 
+    D(2013) <doi:10.1093/biomet/ast029> are implemented.  
+    C++ functions are used to compute complex loops. The coefficient vector and 
+    cumulative baseline hazard function can be estimated, along with the 
+    corresponding standard errors and P values.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+Imports: graphics, Rcpp, statmod, stats, survival
+LinkingTo: Rcpp, RcppEigen
+Suggests: MASS
+NeedsCompilation: yes
+Packaged: 2021-10-13 13:30:03 UTC; wenfy
+Author: Fengyu Wen [aut, cre],
+  Baosheng Liang [aut]
+Repository: CRAN
+Date/Publication: 2021-10-14 11:50:02 UTC

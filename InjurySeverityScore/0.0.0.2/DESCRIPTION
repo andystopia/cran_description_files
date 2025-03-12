@@ -1,0 +1,31 @@
+Package: InjurySeverityScore
+Title: Translate ICD-9 into Injury Severity Score
+Version: 0.0.0.2
+Authors@R: c(
+    person("Dajun", "Tian", email = "tiandajun@gmail.com", role = c("aut", "cre")),
+    person("David E. Clark & Turner M. Osler & David R. Hahn", role = "dtc", comment = "map from ICD-9, cited from 'ICDPIC'"))
+Description: Calculate the injury severity score (ISS)
+    based on the dictionary in 'ICDPIC' from <https://ideas.repec.org/c/boc/bocode/s457028.html>. The original code was written in 
+    'STATA 11'. The original 'STATA' code was written by David Clark, 
+    Turner Osler and David Hahn. I implement the same logic for easier access.
+    Ref: David E. Clark & Turner M. Osler & David R. Hahn, 2009. 
+    "ICDPIC: Stata module to provide methods for translating International 
+    Classification of Diseases (Ninth Revision) diagnosis codes into standard injury 
+    categories and/or scores," Statistical Software Components S457028, 
+    Boston College Department of Economics, revised 29 Oct 2010.
+Depends: R (>= 3.3.0)
+License: GPL-3
+URL: https://github.com/dajuntian/InjurySeverityScore
+BugReports: https://github.com/dajuntian/InjurySeverityScore/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: dplyr, tidyr, rlang
+NeedsCompilation: no
+Packaged: 2019-05-19 02:21:50 UTC; Dajun Tian
+Author: Dajun Tian [aut, cre],
+  David E. Clark & Turner M. Osler & David R. Hahn [dtc] (map from ICD-9,
+    cited from 'ICDPIC')
+Maintainer: Dajun Tian <tiandajun@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-19 04:11:18 UTC

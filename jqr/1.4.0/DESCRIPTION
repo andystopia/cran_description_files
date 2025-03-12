@@ -1,0 +1,31 @@
+Package: jqr
+Title: Client for 'jq', a 'JSON' Processor
+Description: Client for 'jq', a 'JSON' processor (<https://jqlang.github.io/jq/>), 
+    written in C. 'jq' allows the following with 'JSON' data: index into, parse, 
+    do calculations, cut up and filter, change key names and values, perform 
+    conditionals and comparisons, and more.
+Version: 1.4.0
+Depends: R (>= 3.1.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Authors@R: c(person("Rich", "FitzJohn", role = "aut", email = "rich.fitzjohn@gmail.com"),
+    person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroenooms@gmail.com"),
+    person("Scott", "Chamberlain", role = "aut", email = "myrmecocystus@gmail.com"),
+    person("Stefan Milton Bache", role = "aut", email = "stefan@stefanbache.dk"))
+URL: https://docs.ropensci.org/jqr/ https://ropensci.r-universe.dev/jqr
+BugReports: https://github.com/ropensci/jqr/issues
+SystemRequirements: libjq: jq-devel (rpm) or libjq-dev (deb)
+Imports: magrittr, lazyeval
+Suggests: jsonlite, testthat
+RoxygenNote: 7.3.2.9000
+NeedsCompilation: yes
+Packaged: 2024-12-16 14:16:45 UTC; jeroen
+Author: Rich FitzJohn [aut],
+  Jeroen Ooms [aut, cre],
+  Scott Chamberlain [aut],
+  Stefan Milton Bache [aut]
+Maintainer: Jeroen Ooms <jeroenooms@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-12-16 14:40:02 UTC

@@ -1,0 +1,34 @@
+Package: GREMLINS
+Type: Package
+Title: Generalized Multipartite Networks
+Version: 0.2.1
+Authors@R: c(
+          person(given = "Sophie", family = "Donnet", role = c("aut", "cre"), email = "sophie.donnet@inrae.fr", comment = c(ORCID = "0000-0003-4370-7316")),
+          person(given = "Pierre", family = "Barbillon", role = c("aut"), email = "pierre.barbillon@agroparistech.fr",comment = c(ORCID = "0000-0002-7766-7693"))
+          )
+Description: We define generalized multipartite networks  as the joint observation of several networks implying some common pre-specified groups of individuals. The aim is to fit an adapted version of  the popular stochastic block model to multipartite networks, as described in Bar-hen, Barbillon and Donnet (2020) <arXiv:1807.10138>.  
+URL: https://GrossSBM.github.io/GREMLINS/
+BugReports: https://github.com/GrossSBM/GREMLINS/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: testthat (>= 2.1.0), spelling, knitr, rmarkdown
+Language: en-US
+Imports: R6, parallel, stats, utils, igraph, blockmodels, aricode,
+        pbmcapply
+Collate: 'GREMLINS_package.R' 'BMPOO.R' 'defineNetwork.R'
+        'multipartiteBM.R' 'VEMPOOVersion.R'
+        'multipartiteBMFixedModel.R' 'initializeVEM.R'
+        'searchVKPOOVersion.R' 'utils.R' 'compLikICL.R'
+        'extractClustersMBM.R' 'rMBM.R' 'comparClassif.R'
+        'MPEcoNetwork.R' 'predictMBM.R'
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2023-03-10 15:47:52 UTC; donnet
+Author: Sophie Donnet [aut, cre] (<https://orcid.org/0000-0003-4370-7316>),
+  Pierre Barbillon [aut] (<https://orcid.org/0000-0002-7766-7693>)
+Maintainer: Sophie Donnet <sophie.donnet@inrae.fr>
+Repository: CRAN
+Date/Publication: 2023-03-10 18:20:02 UTC

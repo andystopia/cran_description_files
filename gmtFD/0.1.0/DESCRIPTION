@@ -1,0 +1,23 @@
+Package: gmtFD
+Type: Package
+Title: General Multiple Tests for Univariate and Multivariate
+        Functional Data
+Version: 0.1.0
+Date: 2024-06-05
+Authors@R: c(person("Marc", "Ditzhaus", role = "aut", email = "marc.ditzhaus@ovgu.de"), person("Merle", "Munko", role = "aut", email = "merle.munko@ovgu.de"), person("Markus", "Pauly", role = "aut", email = "markus.pauly@tu-dortmund.de"), person("Lukasz", "Smaga", role = c("aut", "cre"), email = "ls@amu.edu.pl"))
+Description: The multiple contrast tests for univariate were proposed by Munko, Ditzhaus, Pauly, Smaga, and Zhang (2023) <doi:10.48550/arXiv.2306.15259>. Recently, they were extended to the multivariate functional data in Munko, Ditzhaus, Pauly, and Smaga (2024) <doi:10.48550/arXiv.2406.01242>. These procedures enable us to evaluate the overall hypothesis regarding equality, as well as specific hypotheses defined by contrasts. In particular, we can perform post hoc tests to examine particular comparisons of interest. Different experimental designs are supported, e.g., one-way and multi-way analysis of variance for functional data.
+License: LGPL-2 | LGPL-3 | GPL-2 | GPL-3
+Imports: Rcpp (>= 1.0.11), doParallel, MASS, foreach, Matrix, GFDmcv,
+        fda
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2024-06-07 14:19:57 UTC; ls
+Author: Marc Ditzhaus [aut],
+  Merle Munko [aut],
+  Markus Pauly [aut],
+  Lukasz Smaga [aut, cre]
+Maintainer: Lukasz Smaga <ls@amu.edu.pl>
+Repository: CRAN
+Date/Publication: 2024-06-10 16:50:02 UTC

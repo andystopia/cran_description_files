@@ -1,0 +1,29 @@
+Package: GB5mcPred
+Type: Package
+Title: Gradient Boosting Algorithm for Predicting Methylation States
+Version: 0.1.0
+Authors@R: c(person(" Dipro", "Sinha", role = c("aut","cre"), email = "diprosinha@gmail.com"),
+    person("Sunil", "Archak", role = "aut", email = "sunil.archak@gmail.com"),
+    person("Dwijesh Chandra", "Mishra", role = "aut", email = "dwij.mishra@gmail.com"),
+    person("Tanwy", "Dasmandal", role = "aut", email = "tanwydasmandal20@gmail.com"),
+    person("Md", "Yeasin", role = "aut", email = "yeasin.iasri@gmail.com"))
+Author: Dipro Sinha [aut, cre],
+  Sunil Archak [aut],
+  Dwijesh Chandra Mishra [aut],
+  Tanwy Dasmandal [aut],
+  Md Yeasin [aut]
+Maintainer: Dipro Sinha <diprosinha@gmail.com>
+Description: DNA methylation of 5-methylcytosine (5mC) is the result of a multi-step, enzyme-dependent process. Predicting these sites in-vitro is laborious, time consuming as well as costly. This ' Gb5mC-Pred ' package is an in-silico pipeline for predicting DNA sequences containing the 5mC sites. It uses a machine learning approach which uses Stochastic Gradient Boosting approach for prediction of the sequences with 5mC sites. This package has been developed by using the concept of Navarez and Roxas (2022) <doi:10.1109/TCBB.2021.3082184>.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports: stats, devtools, tidyverse, seqinr, Biostrings,
+        splitstackshape, entropy, party, stringr, tibble, doParallel,
+        parallel, e1071, caret, randomForest, gbm, foreach, ftrCOOL,
+        iterators
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-07-10 17:22:06 UTC; YEASIN
+Repository: CRAN
+Date/Publication: 2023-07-11 15:40:05 UTC

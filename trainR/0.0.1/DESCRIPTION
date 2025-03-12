@@ -1,0 +1,36 @@
+Package: trainR
+Title: An Interface to the National Rail Enquiries Systems
+Version: 0.0.1
+Authors@R: 
+    person(given = "Roberto",
+           family = "Villegas-Diaz",
+           role = c("aut", "cre"),
+           email = "villegas.roberto@hotmail.com",
+           comment = c(ORCID = "0000-0001-5036-8661"))
+Description: The goal of 'trainR' is to provide a simple interface to the 
+    National Rail Enquiries (NRE) systems. There are few data feeds 
+    available, the simplest of them is Darwin, which provides real-time 
+    arrival and departure predictions, platform numbers, delay estimates, 
+    schedule changes and cancellations. Other data feeds provide historical 
+    data, Historic Service Performance (HSP), and much more. 'trainR' 
+    simplifies the data retrieval, so that the users can focus on their 
+    analyses. For more details visit 
+    <https://www.nationalrail.co.uk/46391.aspx>. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 2.10)
+URL: https://github.com/villegar/trainR/,
+        https://villegar.github.io/trainR/
+BugReports: https://github.com/villegar/trainR/issues/
+Language: en-GB
+Imports: RCurl, dplyr, glue, lubridate, magrittr, purrr, stringr,
+        tibble, tidyr, usethis, xml2
+NeedsCompilation: no
+Packaged: 2021-01-16 20:13:24 UTC; roberto.villegas-diaz
+Author: Roberto Villegas-Diaz [aut, cre]
+    (<https://orcid.org/0000-0001-5036-8661>)
+Maintainer: Roberto Villegas-Diaz <villegas.roberto@hotmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-20 11:10:02 UTC

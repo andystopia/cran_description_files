@@ -1,0 +1,27 @@
+Package: crossmatch
+Type: Package
+Title: The Cross-Match Test
+Version: 1.4-0
+Date: 2024-06-18
+Authors@R: c(person("Ruth", "Heller", email="ruheller@post.tau.ac.il", role=c("aut", "cph")),
+		person("Dylan", "Small", email="dsmall@wharton.upenn.edu", role=c("aut", "cph")),
+		person("Paul", "Rosenbaum", email="rosenbap@wharton.upenn.edu", role=c("aut", "cph")),
+		person("Marieke", "Stolte", email="stolte@statistik.tu-dortmund.de", role="cre"))
+Description: Performs the cross-match test that is an exact, 
+		distribution free test of equality of 2 high dimensional multivariate distributions.   
+		The input is a distance matrix and the labels of
+        the two groups to be compared, the output is the number of
+        cross-matches and a p-value. See Rosenbaum (2005) <doi:10.1111/j.1467-9868.2005.00513.x>.
+Imports: nbpMatching
+Suggests: MASS
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2024-06-18 07:54:28 UTC; ligges
+Author: Ruth Heller [aut, cph],
+  Dylan Small [aut, cph],
+  Paul Rosenbaum [aut, cph],
+  Marieke Stolte [cre]
+Maintainer: Marieke Stolte <stolte@statistik.tu-dortmund.de>
+Repository: CRAN
+Date/Publication: 2024-06-21 08:00:15 UTC

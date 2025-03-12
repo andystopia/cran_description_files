@@ -1,0 +1,21 @@
+Package: shinydbauth
+Title: Simple Authentification for 'shiny' Applications
+Version: 1.0.0.1
+Authors@R: person("Diego", "Florio", , "diegoefe@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-1799-0189"))
+Description: Provides a simple authentification mechanism for single 'shiny' applications.
+    Authentification and password change functionality are performed calling user provided functions that typically access some database backend.
+    Source code of main applications is protected until authentication is successful.
+License: GPL-3
+URL: https://github.com/diegoefe/shinydbauth
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: R6, shiny, htmltools, DT (>= 0.5), openssl, R.utils,
+        billboarder, scrypt, yaml, glue
+Suggests: keyring, testthat (>= 2.1.0), knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2023-12-08 14:40:08 UTC; diego
+Author: Diego Florio [aut, cre] (<https://orcid.org/0009-0002-1799-0189>)
+Maintainer: Diego Florio <diegoefe@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-12-10 11:30:02 UTC

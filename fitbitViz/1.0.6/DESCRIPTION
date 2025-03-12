@@ -1,0 +1,28 @@
+Package: fitbitViz
+Type: Package
+Title: 'Fitbit' Visualizations
+Version: 1.0.6
+Date: 2024-02-08
+Authors@R: c( person(given = "Lampros", family = "Mouselimis", email = "mouselimislampros@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "https://orcid.org/0000-0002-8024-1546")) )
+Maintainer: Lampros Mouselimis <mouselimislampros@gmail.com>
+URL: https://github.com/mlampros/fitbitViz
+Description: Connection to the 'Fitbit' Web API <https://dev.fitbit.com/build/reference/web-api/> by including 'ggplot2' Visualizations, 'Leaflet' and 3-dimensional 'Rayshader' Maps. The 3-dimensional 'Rayshader' Map requires the installation of the 'CopernicusDEM' R package which includes the 30- and 90-meter elevation data.
+License: GPL-3
+Encoding: UTF-8
+SystemRequirements: update: apt-get -y update (deb)
+Depends: R(>= 3.5)
+Imports: glue, httr, jsonlite, ggplot2, lubridate, patchwork,
+        data.table, stats, viridis, scales, ggthemes, varian,
+        paletteer, XML, hms, leaflet, sf, rstudioapi, grDevices,
+        leafgl, raster (>= 3.6-3), terra, magrittr, rayshader, utils,
+        base64enc, lifecycle, reshape2
+Suggests: CopernicusDEM, testthat (>= 3.0.0), knitr, rmarkdown, DT,
+        rgl, magick
+RoxygenNote: 7.3.0
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-02-08 07:40:05 UTC; lampros
+Author: Lampros Mouselimis [aut, cre] (<https://orcid.org/0000-0002-8024-1546>)
+Repository: CRAN
+Date/Publication: 2024-02-08 09:30:02 UTC

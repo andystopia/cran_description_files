@@ -1,0 +1,34 @@
+Package: nph
+Title: Planning and Analysing Survival Studies under Non-Proportional
+        Hazards
+Version: 2.1
+Authors@R: c(
+  person("Robin", "Ristl", email = "robin.ristl@meduniwien.ac.at", role = c("aut", "cre")),
+  person("Nicolas", "Ballarini", email = "nicolas.ballarini@meduniwien.ac.at", role = c("ctb")))
+Description: Piecewise constant hazard functions are used to flexibly model survival distributions with non-proportional hazards and 
+	to simulate data from the specified distributions. A function to calculate weighted log-rank tests for the comparison of two
+	hazard functions is included. Also, a function to calculate a test using the maximum of a set of test statistics from weighted
+	log-rank tests (MaxCombo test) is provided. This test utilizes the asymptotic multivariate normal joint distribution of the
+	separate test statistics. The correlation is estimated from the data. These methods are described in Ristl et al. (2021) 
+	<doi:10.1002/pst.2062>.
+	Finally, a function is provided for the estimation and inferential statistics of various parameters that quantify the difference
+	between two survival curves. Eligible parameters are differences in survival probabilities, log survival probabilities,
+	complementary log log (cloglog) transformed survival probabilities, quantiles of the survival functions, log transformed quantiles,
+	restricted mean survival times, as well as an average hazard ratio, the Cox model score statistic (logrank statistic), and the
+	Cox-model hazard ratio. Adjustments for multiple testing and simultaneous confidence intervals are calculated using a multivariate
+	normal approximation to the set of selected parameters.
+Date: 2022-05-16
+Maintainer: Robin Ristl <robin.ristl@meduniwien.ac.at>
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Depends: R (>= 3.5.0)
+Imports: stats, graphics, mvtnorm, ggplot2, muhaz, survival, multcomp
+Suggests: knitr, shiny, shinycssloaders, formatR, styler, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2022-05-16 19:57:14 UTC; Robin
+Author: Robin Ristl [aut, cre],
+  Nicolas Ballarini [ctb]
+Repository: CRAN
+Date/Publication: 2022-05-16 23:20:05 UTC

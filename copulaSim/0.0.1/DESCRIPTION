@@ -1,0 +1,29 @@
+Package: copulaSim
+Type: Package
+Title: Virtual Patient Simulation by Copula Invariance Property
+Version: 0.0.1
+Date: 2022-08-06
+Authors@R: c(person('Pei-Shan', 'Yen', email = 'peishan0824@gmail.com', role = c('aut', 'cre'), comment = c(ORCID = '0000-0001-7386-0552')),
+      person('Xuemin', 'Gu', email = 'xuemin.gu@abbvie.com', role = 'ctb'),
+      person('Jenny', 'Jiao', email = 'jenny.jiao@abbvie.com', role = 'ctb'),
+      person('Jane', 'Zhang', email = 'jane.zhang@abbvie.com', role = 'ctb'))
+Maintainer: Pei-Shan Yen <peishan0824@gmail.com>
+Description: To optimize clinical trial designs and data analysis methods consistently through trial simulation, we need to simulate multivariate mixed-type virtual patient data independent of designs and analysis methods under evaluation. To make the outcome of optimization more realistic, relevant empirical patient level data should be utilized when it’s available. However, a few problems arise in simulating trials based on small empirical data, where the underlying marginal distributions and their dependence structure cannot be understood or verified thoroughly due to the limited sample size. To resolve this issue, we use the copula invariance property, which can generate the joint distribution without making a strong parametric assumption. The function copula.sim can generate virtual patient data with optional data validation methods that are based on energy distance and ball divergence measurement. The function compare.copula.sim can conduct comparison of marginal mean and covariance of simulated data. To simulate patient-level data from a hypothetical treatment arm that would perform differently from the observed data, the function new.arm.copula.sim can be used to generate new multivariate data with the same dependence structure of the original data but with a shifted mean vector.
+License: MIT + file LICENSE
+Depends: R (>= 4.0.0)
+Imports: dplyr (>= 1.0.0), magrittr (>= 1.5), mvtnorm (>= 1.0-12),
+        rlang, stats, tibble, utils
+Suggests: rmarkdown, knitr, ggplot2, testthat (>= 3.1.1), Ball (>=
+        1.3.0), energy (>= 1.7-0),
+URL: https://github.com/psyen0824/copulaSim
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-08-18 01:47:02 UTC; pyen2
+Author: Pei-Shan Yen [aut, cre] (<https://orcid.org/0000-0001-7386-0552>),
+  Xuemin Gu [ctb],
+  Jenny Jiao [ctb],
+  Jane Zhang [ctb]
+Repository: CRAN
+Date/Publication: 2022-08-19 12:10:02 UTC

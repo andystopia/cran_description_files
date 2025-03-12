@@ -1,0 +1,35 @@
+Package: codalm
+Type: Package
+Title: Transformation-Free Linear Regression for Compositional Outcomes
+        and Predictors
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Jacob",
+             family = "Fiksel",
+             role = c("aut", "cre"),
+             email = "jfiksel@gmail.com",
+             comment = c(ORCID = "0000-0001-7067-1334")),
+      person(given = "Abhirup",
+             family = "Datta",
+             role = "aut",
+             email = "abhidatta@jhu.edu"))
+Maintainer: Jacob Fiksel <jfiksel@gmail.com>
+Description: Implements the expectation-maximization (EM) algorithm as described in Fiksel et al. (2021) <doi:10.1111/biom.13465>
+    for transformation-free linear regression for compositional outcomes and predictors.
+License: GPL-2
+biocViews:
+Imports: SQUAREM (>= 2020.3), future, future.apply
+Encoding: UTF-8
+URL: https://github.com/jfiksel/codalm
+BugReports: https://github.com/jfiksel/codalm/issues
+RoxygenNote: 7.1.1
+Suggests: knitr, gtools, remotes, testthat, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2021-07-26 17:25:48 UTC; jfiksel
+Author: Jacob Fiksel [aut, cre] (<https://orcid.org/0000-0001-7067-1334>),
+  Abhirup Datta [aut]
+Repository: CRAN
+Date/Publication: 2021-07-26 18:40:02 UTC

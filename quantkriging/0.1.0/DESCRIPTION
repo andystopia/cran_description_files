@@ -1,0 +1,25 @@
+Package: quantkriging
+Type: Package
+Title: Quantile Kriging for Stochastic Simulations with Replication
+Version: 0.1.0
+Authors@R: c(person(c("Kevin", "R."), "Quinlan", role = c("aut", "cre"),
+                     email = "quinlan5@llnl.gov"),
+              person(c("Jim", "R."), "Leek", role = "aut"),
+	      person("Lawrence Livermore National Security", role = "cph"))
+Author: Kevin R. Quinlan [aut, cre],
+  Jim R. Leek [aut],
+  Lawrence Livermore National Security [cph]
+Maintainer: Kevin R. Quinlan <quinlan5@llnl.gov>
+Description: A re-implementation of quantile kriging. Quantile kriging was described by Plumlee and Tuo (2014) <doi:10.1080/00401706.2013.860919>.  With computational savings when dealing with replication from the recent paper by Binois, Gramacy, and Ludovski (2018) <doi:10.1080/10618600.2018.1458625> it is now possible to apply quantile kriging to a wider class of problems.  In addition to fitting the model, other useful tools are provided such as the ability to automatically perform leave-one-out cross validation.
+Depends: R (>= 3.6.0)
+Imports: hetGP (>= 1.1.1), Matrix (>= 1.2.17), ggplot2 (>= 3.2.1),
+        reshape2 (>= 1.4.3), stats
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2020-02-28 17:50:06 UTC; leek2
+Repository: CRAN
+Date/Publication: 2020-03-06 13:20:02 UTC

@@ -1,0 +1,33 @@
+Package: MatrixMixtures
+Title: Model-Based Clustering via Matrix-Variate Mixture Models
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Salvatore D.",
+           family = "Tomarchio",
+           role = "aut"),
+    person(given = "Michael P.B.",
+           family = "Gallaugher",
+           role = c("aut","cre"),
+           email = "michael_gallaugher@baylor.edu"),
+    person(given = "Antonio",
+           family = "Punzo",
+           role = "aut"),
+    person(given = "Paul D.",
+           family = "McNicholas",
+           role = "aut"))
+Description: Implements finite mixtures of matrix-variate contaminated normal distributions via expectation conditional-maximization algorithm for model-based clustering, as described in Tomarchio et al.(2020) <arXiv:2005.03861>. One key advantage of this model is the ability to automatically detect potential outlying matrices by computing their a posteriori probability of being typical or atypical points. Finite mixtures of matrix-variate t and matrix-variate normal distributions are also implemented by using expectation-maximization algorithms.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: doSNOW, foreach, snow, withr
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-06-10 07:39:02 UTC; michael_gallaugher
+Author: Salvatore D. Tomarchio [aut],
+  Michael P.B. Gallaugher [aut, cre],
+  Antonio Punzo [aut],
+  Paul D. McNicholas [aut]
+Maintainer: Michael P.B. Gallaugher <michael_gallaugher@baylor.edu>
+Repository: CRAN
+Date/Publication: 2021-06-11 08:00:02 UTC

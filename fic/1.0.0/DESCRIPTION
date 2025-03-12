@@ -1,0 +1,33 @@
+Package: fic
+Title: Focused Information Criteria for Model Comparison
+Version: 1.0.0
+Date: 2019-04-09
+Authors@R: c(person("Christopher","Jackson", role=c("cre","aut"),
+	            email="chris.jackson@mrc-bsu.cam.ac.uk",
+		    comment="package design and programming"),
+	     person("Gerda","Claeskens", role="aut",
+	     	     email="gerda.claeskens@kuleuven.be",
+	     	     comment="method development and design advice"),
+	     person("Howard","Thom",email="howard.thom@bristol.ac.uk", role="ctb")
+	     )
+Description: Compares how well different models estimate a quantity of interest (the "focus") so that different models may be preferred for different purposes.  Comparisons within any class of models fitted by maximum likelihood are supported, with shortcuts for commonly-used classes such as generalised linear models and parametric survival models.  The methods originate from Claeskens and Hjort (2003) <doi:10.1198/016214503000000819> and Claeskens and Hjort (2008, ISBN:9780521852258).
+Maintainer: Christopher Jackson <chris.jackson@mrc-bsu.cam.ac.uk>
+Depends: R (>= 2.10)
+Imports: stats, numDeriv, mvtnorm, ggplot2, scales, survival, tensor,
+        abind
+URL: https://github.com/chjackson/fic
+BugReports: https://github.com/chjackson/fic/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, testthat, msm(>= 1.6.6), flexsurv, sn,
+        gapminder, GGally
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-04-12 11:20:35 UTC; chris
+Author: Christopher Jackson [cre, aut] (package design and programming),
+  Gerda Claeskens [aut] (method development and design advice),
+  Howard Thom [ctb]
+Repository: CRAN
+Date/Publication: 2019-04-13 08:32:39 UTC

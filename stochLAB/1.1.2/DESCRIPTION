@@ -1,0 +1,52 @@
+Type: Package
+Package: stochLAB
+Title: Stochastic Collision Risk Model
+Version: 1.1.2
+Authors@R: c(
+    person("Grant", "Humphries", , "grwhumphries@blackbawks.net", role = c("aut", "cre"),comment = c(ORCID = "0000-0001-5783-9892")),
+    person("Bruno", "Caneco", , "bruno@dmpstats.com", role = "aut"),
+    person("Aonghais","Cook", , "aonghais.cook@bto.org", role = "aut"),
+    person("Elizabeth","Masden", , "elizabeth.masden@uhi.ac.uk", role = "aut"),
+    person("Marine Scotland", role = c("fnd", "cph")),
+    person("HiDef", role = "cph"),
+    person("DMPstats", role = "cph"),
+    person("Kelly","Street", role = "rev",comment=c(GITHUB="@kstreet13"))
+  )
+Description: Collision Risk Models for avian fauna (seabird and migratory birds) at
+    offshore wind farms. The base deterministic model is derived from 
+    Band (2012) <https://tethys.pnnl.gov/publications/using-collision-risk-model-assess-bird-collision-risks-offshore-wind-farms>. 
+    This was further expanded on by Masden (2015) <doi:10.7489/1659-1> and code 
+    used here is heavily derived from this work with input from Dr A. Cook at the 
+    British Trust for Ornithology. These collision risk models are useful for 
+    marine ornithologists who are working in the offshore wind industry, particularly 
+    in UK waters. However, many of the species included in the stochastic collision 
+    risk models can also be found in the North Atlantic in the 
+    United States and Canada, and could be applied there. 
+License: GPL (>= 3)
+Depends: R (>= 4.0)
+Imports: cli, dplyr, glue, logr, magrittr, msm, pracma, purrr, rlang,
+        stats, tibble, tidyr
+Suggests: rmarkdown, knitr, spelling, testthat (>= 3.0.0), covr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+LazyDataCompression: bzip2
+URL: https://github.com/HiDef-Aerial-Surveying/stochLAB,
+        https://hidef-aerial-surveying.github.io/stochLAB/
+BugReports: https://github.com/HiDef-Aerial-Surveying/stochLAB/issues
+RoxygenNote: 7.2.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2022-12-21 19:18:54 UTC; humph
+Author: Grant Humphries [aut, cre] (<https://orcid.org/0000-0001-5783-9892>),
+  Bruno Caneco [aut],
+  Aonghais Cook [aut],
+  Elizabeth Masden [aut],
+  Marine Scotland [fnd, cph],
+  HiDef [cph],
+  DMPstats [cph],
+  Kelly Street [rev] (@kstreet13)
+Maintainer: Grant Humphries <grwhumphries@blackbawks.net>
+Repository: CRAN
+Date/Publication: 2022-12-22 08:50:07 UTC

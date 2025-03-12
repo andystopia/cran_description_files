@@ -1,0 +1,24 @@
+Package: lenses
+Version: 0.0.3
+Title: Elegant Data Manipulation with Lenses
+Description: Provides tools for creating and using lenses to simplify data manipulation. Lenses are composable getter/setter pairs for working with data in a purely functional way. Inspired by the 'Haskell' library 'lens' (Kmett, 2012) <https://hackage.haskell.org/package/lens>. For a fairly comprehensive (and highly technical) history of lenses please see the 'lens' wiki <https://github.com/ekmett/lens/wiki/History-of-Lenses>.
+Authors@R: c(person("Chris", "Hammill", , "cfhammill@gmail.com", c("aut", "cre", "trl")), person("Ben", "Darwin", , "", c("aut", "trl")))
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 6.0.1
+URL: http://cfhammill.github.io/lenses,
+        https://github.com/cfhammill/lenses
+BugReports: https://github.com/cfhammill/lenses/issues
+Suggests: testthat
+Imports: magrittr, tidyselect, rlang
+Collate: 'verbs.R' 'lens.R' 'array-lenses.R' 'base-lenses.R' 'utils.R'
+        'dataframe-lenses.R' 'utils-pipe.R'
+NeedsCompilation: no
+Packaged: 2019-03-03 17:00:51 UTC; chammill
+Author: Chris Hammill [aut, cre, trl],
+  Ben Darwin [aut, trl]
+Maintainer: Chris Hammill <cfhammill@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-03-06 14:40:03 UTC

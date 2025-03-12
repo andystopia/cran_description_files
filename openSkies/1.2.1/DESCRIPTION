@@ -1,0 +1,26 @@
+Package: openSkies
+Type: Package
+Title: Retrieval, Analysis and Visualization of Air Traffic Data
+Version: 1.2.1
+Date: 2024-04-03
+Author: Rafael Ayala, Daniel Ayala, David Ruiz, Aleix Sellés, Lara Sellés Vidal
+Maintainer: Rafael Ayala <rafael.ayala@oist.jp>
+Description: Provides functionalities and data structures to retrieve, analyze and visualize aviation 
+    data. It includes a client interface to the 'OpenSky' API <https://opensky-network.org>. It allows 
+    retrieval of flight information, as well as aircraft state vectors.
+Acknowledgements: The development of this software is supported by the
+        Spanish Ministry of Science and Innovation (grant code
+        PID2019-105471RB-I00) and the Regional Government of Andalusia
+        (grant code P18-RT-1060).
+License: CC BY-NC 4.0
+Depends: grid
+Imports: httr, ssh, xml2, ggmap, ggplot2, magick, utils, stats, R6,
+        dbscan, cluster, DBI, RPresto
+Suggests: knitr, BiocStyle, RUnit, BiocGenerics, rmarkdown, markdown
+VignetteBuilder: knitr
+BugReports: https://github.com/Rafael-Ayala/openSkies/issues
+NeedsCompilation: no
+Encoding: UTF-8
+Repository: CRAN
+Packaged: 2024-04-03 09:13:40 UTC; rafael
+Date/Publication: 2024-04-03 09:43:00 UTC

@@ -1,0 +1,22 @@
+Package: fluoSurv
+Type: Package
+Title: Estimate Insect Survival from Fluorescence Data
+Version: 1.0.0
+Author: Jean-Baptiste Ferdy <jean-baptiste.ferdy@univ-tlse3.fr>
+Maintainer: Jean-Baptiste Ferdy <jean-baptiste.ferdy@univ-tlse3.fr>
+Description: Use spectrophotometry measurements performed on insects as a way to infer pathogens 
+      virulence. Insect movements cause fluctuations in fluorescence signal, and functions are 
+      provided to estimate when the insect has died as the moment when variance in autofluorescence 
+      signal drops to zero. The package provides functions to obtain this estimate together with 
+      functions to import spectrophotometry data from a Biotek microplate reader. Details of the method 
+      are given in Parthuisot et al. (2018) <doi:10.1101/297929>.
+Depends: R (>= 3.1.0)
+Suggests: survival
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-04-10 11:57:15 UTC; jbf
+Repository: CRAN
+Date/Publication: 2018-04-10 13:41:28 UTC

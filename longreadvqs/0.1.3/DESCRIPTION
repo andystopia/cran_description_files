@@ -1,0 +1,26 @@
+Package: longreadvqs
+Title: Viral Quasispecies Comparison from Long-Read Sequencing Data
+Version: 0.1.3
+Authors@R: person("Nakarin", "Pamornchainavakul", email = "pamornakarin@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0378-0316"))
+Description: Performs variety of viral quasispecies diversity analyses [see Pamornchainavakul et al. (2024) <doi:10.21203/rs.3.rs-4637890/v1>] based on long-read sequence alignment. Main functions include 1) sequencing error and other noise minimization and read sampling, 2) Single nucleotide variant (SNV) profiles comparison, and 3) viral quasispecies profiles comparison and visualization. 
+License: GPL-3
+URL: https://github.com/NakarinP/longreadvqs
+BugReports: https://github.com/NakarinP/longreadvqs/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+biocViews:
+Imports: ape, Biostrings, cowplot, dplyr, ggplot2, ggpubr, grDevices,
+        IRanges, magrittr, methods, plyr, purrr, QSutils, RColorBrewer,
+        reshape2, scales, seqinr, stats, stringdist, stringr, tibble,
+        tidyr
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-08-26 18:21:05 UTC; nakarinpamornchainavakul
+Author: Nakarin Pamornchainavakul [aut, cre]
+    (<https://orcid.org/0000-0003-0378-0316>)
+Maintainer: Nakarin Pamornchainavakul <pamornakarin@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-26 19:30:05 UTC

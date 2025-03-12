@@ -1,0 +1,89 @@
+Type: Package
+Package: flexdashboard
+Title: R Markdown Format for Flexible Dashboards
+Version: 0.6.2
+Authors@R: c(
+    person("Garrick", "Aden-Buie", , "garrick@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7111-0077")),
+    person("Carson", "Sievert", , "carson@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0002-4958-2844")),
+    person("Richard", "Iannone", , "rich@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0003-3925-190X")),
+    person("JJ", "Allaire", , "jj@posit.co", role = "aut"),
+    person("Barbara", "Borges", , "barb.b.ribeiro@gmail.com", role = "aut"),
+    person("Posit Software, PBC", role = c("cph", "fnd")),
+    person(, "Keen IO", role = c("ctb", "cph"),
+           comment = "Dashboard CSS"),
+    person("Abdullah", "Almsaeed", role = c("ctb", "cph"),
+           comment = "Dashboard CSS"),
+    person("Jonas", "Mosbech", role = c("ctb", "cph"),
+           comment = "StickyTableHeaders"),
+    person("Noel", "Bossart", role = c("ctb", "cph"),
+           comment = "Featherlight"),
+    person("Lea", "Verou", role = c("ctb", "cph"),
+           comment = "Prism"),
+    person("Dmitry", "Baranovskiy", role = c("ctb", "cph"),
+           comment = "Raphael.js"),
+    person(, "Sencha Labs", role = c("ctb", "cph"),
+           comment = "Raphael.js"),
+    person("Bojan", "Djuricic", role = c("ctb", "cph"),
+           comment = "JustGage"),
+    person("Tomas", "Sardyha", role = c("ctb", "cph"),
+           comment = "Sly"),
+    person("Bryan", "Lewis", role = c("ctb", "cph"),
+           comment = "Examples"),
+    person("Joshua", "Kunst", role = c("ctb", "cph"),
+           comment = "Examples"),
+    person("Ryan", "Hafen", role = c("ctb", "cph"),
+           comment = "Examples"),
+    person("Bob", "Rudis", role = c("ctb", "cph"),
+           comment = "Examples"),
+    person("Joe", "Cheng", role = "ctb",
+           comment = "Examples")
+  )
+Description: Format for converting an R Markdown document to a grid
+    oriented dashboard. The dashboard flexibly adapts the size of it's
+    components to the containing web page.
+License: MIT + file LICENSE
+URL: https://pkgs.rstudio.com/flexdashboard/,
+        https://github.com/rstudio/flexdashboard/
+BugReports: https://github.com/rstudio/flexdashboard/issues
+Depends: R (>= 3.0.2)
+Imports: bslib (>= 0.2.5), grDevices, htmltools (>= 0.5.1), htmlwidgets
+        (>= 0.6), jsonlite, knitr (>= 1.30), rmarkdown (>= 2.8), sass,
+        scales, shiny (>= 0.13), tools, utils
+Suggests: testthat
+Config/Needs/deploy: dplyr, ggplot2, DT, talgalili/d3heatmap, plotly,
+        plyr, biclust, webshot, bit, jcheng5/bubbles, digest,
+        hadley/shinySignals, dygraphs, quantmod, forecast, highcharter,
+        arules, treemap, viridisLite, leaflet, metricsgraphics, rbokeh,
+        readr, tidyr, jsonlite, maptools, purrr, maps, hexbin
+Config/Needs/website: rstudio/quillt
+Config/testthat/edition: 3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-08-11 20:48:46 UTC; garrick
+Author: Garrick Aden-Buie [aut, cre] (<https://orcid.org/0000-0002-7111-0077>),
+  Carson Sievert [aut] (<https://orcid.org/0000-0002-4958-2844>),
+  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),
+  JJ Allaire [aut],
+  Barbara Borges [aut],
+  Posit Software, PBC [cph, fnd],
+  Keen IO [ctb, cph] (Dashboard CSS),
+  Abdullah Almsaeed [ctb, cph] (Dashboard CSS),
+  Jonas Mosbech [ctb, cph] (StickyTableHeaders),
+  Noel Bossart [ctb, cph] (Featherlight),
+  Lea Verou [ctb, cph] (Prism),
+  Dmitry Baranovskiy [ctb, cph] (Raphael.js),
+  Sencha Labs [ctb, cph] (Raphael.js),
+  Bojan Djuricic [ctb, cph] (JustGage),
+  Tomas Sardyha [ctb, cph] (Sly),
+  Bryan Lewis [ctb, cph] (Examples),
+  Joshua Kunst [ctb, cph] (Examples),
+  Ryan Hafen [ctb, cph] (Examples),
+  Bob Rudis [ctb, cph] (Examples),
+  Joe Cheng [ctb] (Examples)
+Maintainer: Garrick Aden-Buie <garrick@posit.co>
+Repository: CRAN
+Date/Publication: 2023-08-11 21:40:02 UTC

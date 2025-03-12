@@ -1,0 +1,55 @@
+Package: BuyseTest
+Type: Package
+Title: Generalized Pairwise Comparisons
+Version: 3.1.0
+Date: 2025-03-04
+Authors@R: c(
+    person("Brice", "Ozenne", role = c("aut", "cre"), email = "brice.mh.ozenne@gmail.com", comment = c(ORCID = "0000-0001-9694-2956")),
+    person("Eva", "Cantagallo", role = "aut"),
+    person("William", "Anderson", role = "aut"),
+    person("Julien", "Peron", role = "ctb"),
+    person("Johan", "Verbeeck", role = "ctb")
+	)
+Description: Implementation of the Generalized Pairwise Comparisons (GPC) as defined in Buyse (2010) <doi:10.1002/sim.3923> for complete observations, and extended in Peron (2018) <doi:10.1177/0962280216658320> to deal with right-censoring. GPC compare two groups of observations (intervention vs. control group) regarding several prioritized endpoints to estimate the probability that a random observation drawn from one group performs better/worse/equivalently than a random observation drawn from the other group. Summary statistics such as the net treatment benefit, win ratio, or win odds are then deduced from these probabilities. Confidence intervals and p-values are obtained based on asymptotic results (Ozenne 2021 <doi:10.1177/09622802211037067>), non-parametric bootstrap, or permutations. The software enables the use of thresholds of minimal importance difference, stratification, non-prioritized endpoints (O Brien test), and can handle right-censoring and competing-risks.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/bozenne/BuyseTest
+BugReports: https://github.com/bozenne/BuyseTest/issues
+Depends: R (>= 3.5.0), Rcpp
+Imports: data.table, doSNOW, foreach, ggplot2, methods, lava, parallel,
+        prodlim, riskRegression, rlang, scales, stats, stats4, utils
+Suggests: cvAUC, mvtnorm, pbapply, pROC, R.rsp, survival, testthat
+LinkingTo: Rcpp, RcppArmadillo
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+Collate: '0-onLoad.R' '1-setGeneric.R' 'BuyseMultComp.R' 'BuyseTTEM.R'
+        'BuyseTest-Peron.R' 'BuyseTest-check.R' 'BuyseTest-inference.R'
+        'BuyseTest-initialization.R' 'BuyseTest-package.R'
+        'BuyseTest-print.R' 'BuyseTest.R' 'BuyseTest.options.R'
+        'CasinoTest.R' 'PairScore.R' 'RcppExports.R' 'S4-BuysePower.R'
+        'S4-BuysePower-model.tables.R' 'S4-BuysePower-nobs.R'
+        'S4-BuysePower-summary.R' 'S4-BuysePower-print.R'
+        'S4-BuysePower-show.R' 'S4-BuyseTest.R' 'S4-BuyseTest-coef.R'
+        'S4-BuyseTest-confint.R' 'S4-BuyseTest-get.R'
+        'S4-BuyseTest-model.tables.R' 'S4-BuyseTest-nobs.R'
+        'S4-BuyseTest-plot.R' 'S4-BuyseTest-summary.R'
+        'S4-BuyseTest-print.R' 'S4-BuyseTest-sensitivity.R'
+        'S4-BuyseTest-show.R' 'S4-BuyseTest.options.R'
+        'as.data.table.performance.R' 'auc.R' 'autoplot.S4BuyseTest.R'
+        'brier.R' 'constStrata.R' 'discreteRoot.R' 'doc-data.R'
+        'efronlim.R' 'iid.S3sensitivity.R' 'iid.prodlim.R' 'normexp.R'
+        'performance.R' 'performanceResample.R' 'plot.S3sensitivity.R'
+        'powerBuyseTest.R' 'predict.logit.R'
+        'rbind.performanceResample.R' 'sim.simBuyseTest.R'
+        'simBuyseTest.R' 'simCompetingRisks.R' 'summary.performance.R'
+        'valid.R'
+Packaged: 2025-03-04 14:06:25 UTC; hpl802
+Author: Brice Ozenne [aut, cre] (<https://orcid.org/0000-0001-9694-2956>),
+  Eva Cantagallo [aut],
+  William Anderson [aut],
+  Julien Peron [ctb],
+  Johan Verbeeck [ctb]
+Maintainer: Brice Ozenne <brice.mh.ozenne@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-04 14:40:02 UTC

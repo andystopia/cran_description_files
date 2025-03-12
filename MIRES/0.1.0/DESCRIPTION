@@ -1,0 +1,40 @@
+Package: MIRES
+Title: Measurement Invariance Assessment Using Random Effects Models
+        and Shrinkage
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Stephen",
+           family = "Martin",
+           role = c("aut", "cre"),
+           email = "stephenSRMMartin@gmail.com",
+           comment = c(ORCID = "0000-0001-8085-2390")),
+      person(given = "Philippe",
+             family = "Rast",
+	     role = "aut",
+	     email = "rast.ph@gmail.com",
+	     comment = c(ORCID = "0000-0003-3630-6629")))
+Description: Estimates random effect latent measurement models, wherein the loadings, residual variances, intercepts, latent means, and latent variances all vary across groups. The random effect variances of the measurement parameters are then modeled using a hierarchical inclusion model, wherein the inclusion of the variances (i.e., whether it is effectively zero or non-zero) is informed by similar parameters (of the same type, or of the same item). This additional hierarchical structure allows the evidence in favor of partial invariance to accumulate more quickly, and yields more certain decisions about measurement invariance. Martin, Williams, and Rast (2020) <doi:10.31234/osf.io/qbdjt>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Biarch: true
+Depends: R (>= 4.0.0)
+Imports: methods, Rcpp (>= 0.12.0), rstan (>= 2.18.1), rstantools (>=
+        2.0.0), Formula (>= 1.2-1), stats (>= 3.4.0), parallel (>=
+        3.4.0), mvtnorm (>= 1.0), dirichletprocess (>= 0.4.0),
+        truncnorm (>= 1.0), pracma (>= 2.2.9), cubature (>= 2.0.0),
+        logspline (>= 2.1.0), nlme (>= 3.1), HDInterval (>= 0.2.2)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+RoxygenNote: 7.1.1
+BugReports: https://github.com/stephenSRMMartin/MIRES/issues
+Suggests: testthat
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2021-02-19 02:12:41 UTC; hwkiller
+Author: Stephen Martin [aut, cre] (<https://orcid.org/0000-0001-8085-2390>),
+  Philippe Rast [aut] (<https://orcid.org/0000-0003-3630-6629>)
+Maintainer: Stephen Martin <stephenSRMMartin@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-02-22 10:40:11 UTC

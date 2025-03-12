@@ -1,0 +1,38 @@
+Package: covidprobability
+Title: Estimate the Unit-Wide Probability of COVID-19
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Eric",
+           family = "Brown",
+           role = c("aut", "cre"),
+           email = "eb@ericebrown.com",
+           comment = c(ORCID = "0000-0002-1575-2606")),
+      person(given = "Wei",
+           family = "Wang",
+           role = c("ctb"))
+      )
+Description: We propose a method to estimate the probability of an 
+    undetected case of COVID-19 in a defined setting, when a given number of 
+    people have been exposed, with a given pretest probability of having 
+    COVID-19 as a result of that exposure. Since we are interested in undetected
+    COVID-19, we assume no person has developed symptoms (which would warrant 
+    further investigation) and that everyone was tested on a given day, and all 
+    tested negative.
+URL: https://github.com/eebrown/covidprobability
+BugReports: https://github.com/eebrown/covidprobability/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: stats, utils
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-02-07 16:31:02 UTC; ericbrown
+Author: Eric Brown [aut, cre] (<https://orcid.org/0000-0002-1575-2606>),
+  Wei Wang [ctb]
+Maintainer: Eric Brown <eb@ericebrown.com>
+Repository: CRAN
+Date/Publication: 2021-02-11 10:00:14 UTC

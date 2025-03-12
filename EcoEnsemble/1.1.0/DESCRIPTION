@@ -1,0 +1,57 @@
+Package: EcoEnsemble
+Title: A General Framework for Combining Ecosystem Models
+Version: 1.1.0
+Authors@R: 
+    c(person(given = "Michael A.",
+                family = "Spence",
+                role = c("aut", "cre"),
+                email = "michael.spence@cefas.gov.uk",
+                comment = c(ORCID = "0000-0002-3445-7979")),
+            person(given = "James A.",
+                family = "Martindale",
+                role = c("aut"),
+                comment = c(ORCID = "0000-0002-1913-5592")),
+            person(given = "Michael J.",
+                family = "Thomson",
+                role = c("aut"),
+                comment = c(ORCID = "0000-0003-0284-0129")))
+Description: Fit and sample from the ensemble model described in Spence et al (2018): "A general framework for combining ecosystem models"<doi:10.1111/faf.12310>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Biarch: true
+URL: https://github.com/CefasRepRes/EcoEnsemble
+BugReports: https://github.com/CefasRepRes/EcoEnsemble/issues
+Depends: R (>= 3.5.0)
+Imports: methods, Rcpp, matrixcalc, RcppParallel (>= 5.0.1), rstan (>=
+        2.26.0), rstantools (>= 2.1.1), dplyr, ggplot2, reshape2,
+        tibble, cowplot
+LinkingTo: BH (>= 1.66.0), Rcpp, RcppEigen (>= 0.3.3.3.0), RcppParallel
+        (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>= 2.26.0)
+SystemRequirements: GNU make
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0), mgcv
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Collate: 'DiscrepancyPrior-IndLTPrior-class.R'
+        'DiscrepancyPrior-IndSTPrior-class.R'
+        'DiscrepancyPrior-ShaSTPrior-class.R'
+        'DiscrepancyPrior-TruthPrior-class.R' 'EcoEnsemble-package.R'
+        'EnsemblePrior-class.R' 'EnsembleData-class.R'
+        'EnsembleFit-class.R' 'EnsembleSample-class.R'
+        'Prior_sampling.R' 'RcppExports.R' 'data.R' 'fit_ensemble.R'
+        'fit_ensemble_withdrivers.R' 'generate_simulator_stan_data.R'
+        'generate_simulator_stan_data_withdrivers.R'
+        'get_stan_outputs.R' 'get_stan_outputs_withdrivers.R'
+        'plot_functions.R' 'plot_functions_withdrivers.R'
+        'prior_functions.R' 'stanmodels.R' 'validation_functions.R'
+        'validation_functions_withdrivers.R'
+        'validation_prior_functions.R'
+NeedsCompilation: yes
+Packaged: 2024-08-19 15:39:12 UTC; tb16
+Author: Michael A. Spence [aut, cre] (<https://orcid.org/0000-0002-3445-7979>),
+  James A. Martindale [aut] (<https://orcid.org/0000-0002-1913-5592>),
+  Michael J. Thomson [aut] (<https://orcid.org/0000-0003-0284-0129>)
+Maintainer: Michael A. Spence <michael.spence@cefas.gov.uk>
+Repository: CRAN
+Date/Publication: 2024-08-19 17:20:06 UTC

@@ -1,0 +1,33 @@
+Package: pivmet
+Type: Package
+Title: Pivotal Methods for Bayesian Relabelling and k-Means Clustering
+Version: 0.6.0
+Date: 2024-05-22
+Author: Leonardo Egidi[aut, cre], 
+        Roberta Pappadà[aut], 
+        Francesco Pauli[aut], 
+        Nicola Torelli[aut] 
+Maintainer: Leonardo Egidi <legidi@units.it>
+License: GPL-2
+Description: Collection of pivotal algorithms 
+             for: relabelling the MCMC chains in order to undo the label 
+             switching problem in Bayesian mixture models;
+             fitting sparse finite mixtures;
+             initializing the centers of the classical k-means algorithm 
+             in order to obtain a better clustering solution. 
+             For further details see
+             Egidi, Pappadà, Pauli and Torelli (2018b)<ISBN:9788891910233>.
+URL: https://github.com/leoegidi/pivmet
+Encoding: UTF-8
+SystemRequirements: pandoc (>= 1.12.3), pandoc-citeproc
+Depends: R (>= 3.1.0)
+Imports: cluster, mclust, MASS, corpcor, runjags, rstan, bayesmix,
+        rjags, mvtnorm, bayesplot, scales
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+BuildManual: yes
+NeedsCompilation: no
+Packaged: 2024-05-29 09:34:37 UTC; 17245
+Repository: CRAN
+Date/Publication: 2024-05-30 00:20:08 UTC

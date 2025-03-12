@@ -1,0 +1,39 @@
+Package: bennu
+Title: Bayesian Estimation of Naloxone Kit Number Under-Reporting
+Version: 0.3.0
+Authors@R: c(
+    person("Mike", "Irvine", , "mike.irvine@bccdc.ca", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0003-4785-8998")),
+    person("Samantha", "Bardwell", role = "ctb"),
+    person("Andrew", "Johnson", role = "ctb")
+  )
+Description: Bayesian model and associated tools for generating estimates of 
+    total naloxone kit numbers distributed and used from naloxone kit orders 
+    data. Provides functions for generating simulated data of naloxone kit use
+    and functions for generating samples from the posterior.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Biarch: true
+Depends: R (>= 3.4.0)
+Imports: dplyr, ggplot2, glue, lifecycle, magrittr, methods, Rcpp (>=
+        0.12.0), RcppParallel (>= 5.0.1), rlang, rstan (>= 2.26.0),
+        rstantools (>= 2.2.0), scales, tidybayes, tidyr
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.26.0), StanHeaders (>=
+        2.26.0)
+SystemRequirements: GNU make
+Suggests: bayesplot, covr, knitr, posterior, rmarkdown, stringr,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://sempwn.github.io/bennu/
+BugReports: https://github.com/sempwn/bennu/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2023-09-13 23:52:41 UTC; mike.irvine
+Author: Mike Irvine [aut, cre, cph] (<https://orcid.org/0000-0003-4785-8998>),
+  Samantha Bardwell [ctb],
+  Andrew Johnson [ctb]
+Maintainer: Mike Irvine <mike.irvine@bccdc.ca>
+Repository: CRAN
+Date/Publication: 2023-09-14 00:20:02 UTC

@@ -1,0 +1,31 @@
+Package: tLagInterim
+Title: Interim Monitoring of Clinical Trials with Time-Lagged Outcome
+Version: 1.0
+Authors@R: 
+    c(person("Shannon T.", "Holloway", email = "shannon.t.holloway@gmail.com", role = c("aut", "cre")),
+      person("Marie", "Davidian", email = "davidian@ncsu.edu", role = c("aut")),
+      person("Anastasios","Tsiatis", role = "aut"))
+Author: Shannon T. Holloway [aut, cre],
+  Marie Davidian [aut],
+  Anastasios Tsiatis [aut]
+Description: Implements inverse and augmented inverse probability weighted 
+    estimators for common treatment effect parameters at an interim analysis 
+    with time-lagged outcome that may not be available for all enrolled subjects.  
+    Produces estimators, standard errors, and information that can be used to 
+    compute stopping boundaries using software that assumes that the 
+    estimators/test statistics have independent increments. 
+    Tsiatis, A. A. and Davidian, M., (2022) <arXiv:2204.10739> .
+License: GPL-2
+Encoding: UTF-8
+Depends: R (>= 3.5.0), survival
+Imports: R.utils
+RoxygenNote: 7.2.1
+Collate: 'KM.R' 'miscfunc.R' 'martingale.R' 'augment.R' 'ipw.R'
+        'ness.R' 'onestep.R' 'print.tLagInterim.R' 'verifyInputs.R'
+        'tLagInterim.R' 'tLagInterimData.R' 'type_Mean.R'
+        'type_OddsRatio.R' 'type_RiskDiff.R' 'type_RiskRatio.R'
+NeedsCompilation: no
+Packaged: 2022-08-16 11:59:06 UTC; 19194
+Maintainer: Shannon T. Holloway <shannon.t.holloway@gmail.com>
+Repository: CRAN
+Date/Publication: 2022-08-17 13:00:02 UTC

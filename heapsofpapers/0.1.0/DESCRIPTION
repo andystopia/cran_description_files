@@ -1,0 +1,34 @@
+Package: heapsofpapers
+Title: Easily Download Heaps of PDF and CSV Files
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Rohan",
+             family = "Alexander",
+             role = c("aut", "cre", "cph"),
+             email = "rohan.alexander@utoronto.ca",
+             comment = c(ORCID = "0000-0003-1279-0700")),
+      person(given = "A",
+             family = "Mahfouz",
+             role = "aut"))
+Description: Makes it easy to download a large number of files such as PDF files 
+    and CSV files, while automatically slowing down requests, letting you know 
+    where it is up to, and adjusting for files that have already been downloaded.
+License: MIT + file LICENSE
+URL: https://github.com/RohanAlexander/heapsofpapers
+BugReports: https://github.com/RohanAlexander/heapsofpapers/issues
+Imports: aws.s3, curl, dplyr, fs, magrittr, rlang, scales, utils
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0), tibble
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: false
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-08-19 14:19:16 UTC; rohanalexander
+Author: Rohan Alexander [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1279-0700>),
+  A Mahfouz [aut]
+Maintainer: Rohan Alexander <rohan.alexander@utoronto.ca>
+Repository: CRAN
+Date/Publication: 2021-08-23 18:40:01 UTC

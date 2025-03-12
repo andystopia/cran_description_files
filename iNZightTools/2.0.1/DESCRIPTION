@@ -1,0 +1,47 @@
+Package: iNZightTools
+Type: Package
+Title: Tools for 'iNZight'
+Version: 2.0.1
+Depends: R (>= 4.0)
+Imports: dplyr (>= 1.1.0), DBI, forcats, glue, grDevices, magrittr,
+        methods, purrr (>= 1.0.0), readr (>= 1.2.0), rlang (>= 0.4.9),
+        srvyr, stats, stringr, survey, tibble, tidyr (>= 1.3.0), tools,
+        units, utils
+Suggests: chron, covr, dbplyr, expss, haven, jsonlite, knitr,
+        lubridate, RCurl, readxl, RSQLite, styler, surveyspec, testthat
+        (>= 3.0.0), tsibble, validate, yaml
+Authors@R: c(
+    person("Tom", "Elliott", role = c("aut", "cre"),
+        email = "tom.elliott@auckland.ac.nz",
+        comment = c(ORCID = "0000-0002-7815-6318")),
+    person("Daniel", "Barnett", role = "aut"),
+    person("Yiwen", "He", role = "aut"),
+    person("Zhaoming", "Su", role = "aut"),
+    person("Lushi", "Cai", role = "ctb"),
+    person("Akshay", "Gupta", role = "ctb"),
+    person("Owen", "Jin", role = "ctb"),
+    person("Christoph", "Knopf", role = "ctb")
+    )
+Additional_repositories: https://r.docker.stat.auckland.ac.nz
+BugReports: https://github.com/iNZightVIT/iNZightTools/issues
+Contact: inzight_support@stat.auckland.ac.nz
+URL: https://inzight.nz
+Description: Provides a collection of wrapper functions for common variable and dataset manipulation workflows primarily used by 'iNZight', a graphical user interface providing easy exploration and visualisation of data for students of statistics, available in both desktop and online versions. Additionally, many of the functions return the 'tidyverse' code used to obtain the result in an effort to bridge the gap between GUI and coding.
+License: GPL-3
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.2.3
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-10-10 08:34:58 UTC; tom
+Author: Tom Elliott [aut, cre] (<https://orcid.org/0000-0002-7815-6318>),
+  Daniel Barnett [aut],
+  Yiwen He [aut],
+  Zhaoming Su [aut],
+  Lushi Cai [ctb],
+  Akshay Gupta [ctb],
+  Owen Jin [ctb],
+  Christoph Knopf [ctb]
+Maintainer: Tom Elliott <tom.elliott@auckland.ac.nz>
+Repository: CRAN
+Date/Publication: 2023-10-12 11:50:08 UTC

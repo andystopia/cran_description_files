@@ -1,0 +1,29 @@
+Package: milorGWAS
+Type: Package
+Title: Mixed Logistic Regression for Genome-Wide Analysis Studies
+        (GWAS)
+Version: 0.7
+Date: 2024-06-12
+Encoding: UTF-8
+Authors@R: c(person("Hervé", "Perdry", role = c("aut", "cre"), email = "herve.perdry@universite-paris-saclay.fr"), 
+             person("Jacqueline", "Milet", role = "aut"))
+Maintainer: Hervé Perdry <herve.perdry@universite-paris-saclay.fr>
+Description: Fast approximate methods for mixed logistic regression in genome-wide analysis studies (GWAS).
+  Two computationnally efficient methods are proposed for obtaining effect size estimates (beta) in 
+  Mixed Logistic Regression in GWAS: the Approximate Maximum Likelihood Estimate (AMLE), and the Offset
+  method. The wald test obtained with AMLE is identical to the score test. Data can be genotype matrices
+  in plink format, or dosage (VCF files). The methods are described in details in 
+  Milet et al (2020) <doi:10.1101/2020.01.17.910109>.
+License: GPL-3
+Imports: Rcpp (>= 1.0.2)
+Depends: gaston (>= 1.6)
+LinkingTo: Rcpp, RcppEigen, gaston
+Suggests: knitr, rmarkdown, png
+VignetteBuilder: knitr
+NeedsCompilation: yes
+RoxygenNote: 7.2.3
+Packaged: 2024-06-19 11:05:51 UTC; rv
+Author: Hervé Perdry [aut, cre],
+  Jacqueline Milet [aut]
+Repository: CRAN
+Date/Publication: 2024-06-21 08:10:02 UTC

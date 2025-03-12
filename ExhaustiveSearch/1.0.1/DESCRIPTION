@@ -1,0 +1,40 @@
+Package: ExhaustiveSearch
+Type: Package
+Title: A Fast and Scalable Exhaustive Feature Selection Framework
+Version: 1.0.1
+Authors@R: 
+    c(person(given = "Rudolf",
+             family = "Jagdhuber",
+             role = c("aut", "cre"),
+             email = "r.jagdhuber@gmail.com"),
+      person(given = "Jorge",
+             family = "Nocedal",
+             role = "cph",
+             comment = "lbfgs c library"),
+      person(given = "Naoaki",
+             family = "Okazaki",
+             role = "cph",
+             comment = "lbfgs c library"))
+Description: The goal of this package is to provide an easy to use, fast and
+    scalable exhaustive search framework. Exhaustive feature selections 
+    typically require a very large number of models to be fitted and evaluated. 
+    Execution speed and memory management are crucial factors here. This package 
+    provides solutions for both. Execution speed is optimized by using a 
+    multi-threaded C++ backend, and memory issues are solved by by only storing 
+    the best results during execution and thus keeping memory usage constant.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.1
+URL: https://github.com/RudolfJagdhuber/ExhaustiveSearch
+BugReports: https://github.com/RudolfJagdhuber/ExhaustiveSearch/issues
+Suggests: mlbench
+NeedsCompilation: yes
+Packaged: 2021-01-16 14:26:50 UTC; Rudi
+Author: Rudolf Jagdhuber [aut, cre],
+  Jorge Nocedal [cph] (lbfgs c library),
+  Naoaki Okazaki [cph] (lbfgs c library)
+Maintainer: Rudolf Jagdhuber <r.jagdhuber@gmail.com>
+Repository: CRAN
+Date/Publication: 2021-01-18 17:00:11 UTC

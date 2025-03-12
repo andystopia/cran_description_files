@@ -1,0 +1,43 @@
+Package: lzstring
+Type: Package
+Title: Wrapper for 'lz-string' 'C++' Library
+Version: 0.1.3
+Description: Provide access to  the 'lz-string' 
+    <http://pieroxy.net/blog/pages/lz-string/index.html> 'C++' library for 
+    Lempel-Ziv (LZ) based compression and decompression of strings.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LinkingTo: cpp11
+Suggests: testthat (>= 3.0.0), ggplot2, bench
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+URL: https://parmsam.github.io/lzstring-r/,
+        https://github.com/parmsam/lzstring-r
+Authors@R: c(
+    person(
+        given = "Sam", 
+        family = "Parmar",
+        role = c("aut", "cre"),
+        email = "parmartsam@gmail.com"
+    ),
+    person(
+        given = "Andrey", 
+        family = "Krasnov", 
+        role = "cph",
+        comment = "Author of included lz-string C++ library"
+    ),
+    person(
+        given = "Pawel",
+        family = "Rucki",
+        role = c("ctb"),
+        email = "pawel.rucki@roche.com"
+    ))
+BugReports: https://github.com/parmsam/lzstring-r/issues
+NeedsCompilation: yes
+Packaged: 2024-10-21 18:09:27 UTC; samparmar
+Author: Sam Parmar [aut, cre],
+  Andrey Krasnov [cph] (Author of included lz-string C++ library),
+  Pawel Rucki [ctb]
+Maintainer: Sam Parmar <parmartsam@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-10-21 18:20:03 UTC

@@ -1,0 +1,23 @@
+Package: BaseTempSeed
+Type: Package
+Title: Estimation of Seed Germination Base Temperature in Thermal
+        Modelling
+Version: 0.1.0
+Authors@R: c(person(" Dr. Himadri", "Ghosh", role = c("aut","cre"), email = "hghosh@gmail.com"),
+    person(" Mr. Saikath", "Das", role = "aut", email = "saikathdas007@gmail.com"),
+    person("Dr. Md", "Yeasin", role = "aut", email = "yeasin.iasri@gmail.com"))
+Author: Dr. Himadri Ghosh [aut, cre],
+  Mr. Saikath Das [aut],
+  Dr. Md Yeasin [aut]
+Maintainer: Dr. Himadri Ghosh <hghosh@gmail.com>
+Description: All the seeds do not germinate at a single point in time due to physiological mechanisms determined by temperature which vary among individual seeds in the population. Seeds germinate by following accumulation of thermal time in degree days/hours, quantified by multiplying the time of germination with excess of base temperature required by each seed for its germination, which follows log-normal distribution. The theoretical germination course can be obtained by regressing the rate of germination at various fractions against temperature (Garcia et al., 1982), where the fraction-wise regression lines intersect the temperature axis at base temperature and the methodology of determining optimum base temperature has been described by Ellis et al. (1987). This package helps to find the base temperature of seed germination using algorithms of Garcia et al. (1982) and Ellis et al. (1982) <doi:10.1093/JXB/38.6.1033> <doi:10.1093/jxb/33.2.288>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: stats, NlcOptim
+RoxygenNote: 7.2.1
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2023-04-21 05:37:02 UTC; YEASIN
+Repository: CRAN
+Date/Publication: 2023-04-21 08:12:37 UTC

@@ -1,0 +1,31 @@
+Package: torchdatasets
+Title: Ready to Use Extra Datasets for Torch
+Version: 0.3.1
+Authors@R: 
+    c(
+    person(given = "Daniel",
+           family = "Falbel",
+           role = c("aut", "cre"),
+           email = "daniel@rstudio.com"
+           ),
+    person(family = "RStudio", role = c("cph"))
+    )
+Description: Provides datasets in a format that can be easily consumed by torch 'dataloaders'.
+  Handles data downloading from multiple sources, caching and pre-processing so
+  users can focus only on their model implementations.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: torch (>= 0.5.0), fs, zip, pins, torchvision, stringr, withr,
+        utils
+Suggests: testthat, readr, coro, tokenizers, R.matlab
+URL: https://mlverse.github.io/torchdatasets/,
+        https://github.com/mlverse/torchdatasets
+BugReports: https://github.com/mlverse/torchdatasets/issues
+NeedsCompilation: no
+Packaged: 2024-06-20 12:31:28 UTC; dfalbel
+Author: Daniel Falbel [aut, cre],
+  RStudio [cph]
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2024-06-20 12:40:01 UTC

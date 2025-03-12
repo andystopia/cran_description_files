@@ -1,0 +1,31 @@
+Package: apm
+Title: Averaged Prediction Models
+Version: 0.1.0
+Authors@R: 
+  c(person("Thomas", "Leavitt", email = "thomas.leavitt@baruch.cuny.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3668-6409")),
+    person("Laura", "Hatfield", email = "hatfield@hcp.med.harvard.edu", role = c("aut"),
+           comment = c(ORCID = "0000-0003-0366-3929")),
+    person("Noah", "Greifer", email = "ngreifer@iq.harvard.edu", role = c("aut"),
+           comment = c(ORCID = "0000-0003-3067-7154")))
+Description: In panel data settings, specifies set of candidate models, fits them to data from pre-treatment validation periods, and selects model as average over candidate models, weighting each by posterior probability of being most robust given its differential average prediction errors in pre-treatment validation periods. Subsequent estimation and inference of causal effect's bounds accounts for both model and sampling uncertainty, and calculates the robustness changepoint value at which bounds go from excluding to including 0. The package also includes a range of diagnostic plots, such as those illustrating models' differential average prediction errors and the posterior distribution of which model is most robust.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: stats, ggplot2 (>= 3.5.1), ggh4x (>= 0.2.8), ggrepel (>=
+        0.9.6), MASS, sandwich, pbapply (>= 1.7-2), fwb (>= 0.3.0), chk
+        (>= 0.10.0)
+Suggests: parallel, knitr, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/tl2624/apm, https://tl2624.github.io/apm/
+BugReports: https://github.com/tl2624/apm/issues
+NeedsCompilation: no
+Packaged: 2025-03-09 03:17:30 UTC; ThomasLeavitt
+Author: Thomas Leavitt [aut, cre] (<https://orcid.org/0000-0002-3668-6409>),
+  Laura Hatfield [aut] (<https://orcid.org/0000-0003-0366-3929>),
+  Noah Greifer [aut] (<https://orcid.org/0000-0003-3067-7154>)
+Maintainer: Thomas Leavitt <thomas.leavitt@baruch.cuny.edu>
+Repository: CRAN
+Date/Publication: 2025-03-10 16:50:17 UTC

@@ -1,0 +1,27 @@
+Package: SNBdata
+Type: Package
+Title: Download Data from the Swiss National Bank (SNB)
+Version: 0.2.1
+Date: 2023-12-12
+Maintainer: Enrico Schumann <es@enricoschumann.net>
+Authors@R: person("Enrico", "Schumann",
+                  role  = c("aut", "cre"),
+                  email = "es@enricoschumann.net",
+                  comment = c(ORCID = "0000-0001-7601-6576"))
+Description: Download data (tables and datasets) from the Swiss
+     National Bank (SNB; <https://www.snb.ch/en>), the Swiss
+     central bank.  The package is lightweight and comes with few
+     dependencies; suggested packages are used only if data is to
+     be transformed into particular data structures, for instance
+     into 'zoo' objects.  Downloaded data can optionally be
+     cached, to avoid repeated downloads of the same files.
+Suggests: jsonlite, zoo
+License: GPL-3
+URL: http://enricoschumann.net/R/packages/SNBdata/ ,
+        https://git.sr.ht/~enricoschumann/SNBdata
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2023-12-12 11:42:11 UTC; es19
+Author: Enrico Schumann [aut, cre] (<https://orcid.org/0000-0001-7601-6576>)
+Repository: CRAN
+Date/Publication: 2023-12-12 18:50:02 UTC

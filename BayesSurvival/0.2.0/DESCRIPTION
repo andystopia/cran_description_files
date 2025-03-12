@@ -1,0 +1,22 @@
+Package: BayesSurvival
+Type: Package
+Title: Bayesian Survival Analysis for Right Censored Data
+Version: 0.2.0
+Author: Stephanie van der Pas [aut, cre],
+    Ismael Castillo [aut]
+Maintainer: Stephanie van der Pas <s.l.vanderpas@amsterdamumc.nl>
+Description: Performs unadjusted Bayesian survival analysis for right censored time-to-event data. The main function, BayesSurv(), computes the posterior mean and a credible band for the survival function and for the cumulative hazard, as well as the posterior mean for the hazard, starting from a piecewise exponential (histogram) prior with Gamma distributed heights that are either independent, or have a Markovian dependence structure.
+    A function, PlotBayesSurv(), is provided to easily create plots of the posterior means of the hazard, cumulative hazard and survival function, with a credible band accompanying the latter two.
+    The priors and samplers are described in more detail in Castillo and Van der Pas (2020) "Multiscale Bayesian survival analysis" <arXiv:2005.02889>. In that paper it is also shown that the credible bands for the survival function and the cumulative hazard can be considered confidence bands (under mild conditions) and thus offer reliable uncertainty quantification.
+Encoding: UTF-8
+License: GPL-3
+LazyData: false
+Depends: R (>= 3.6.0)
+Imports: survival, stats, ggplot2
+Suggests: simsurv, knitr, rmarkdown
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2021-03-12 15:53:58 UTC; stephanie
+Repository: CRAN
+Date/Publication: 2021-03-12 21:00:13 UTC

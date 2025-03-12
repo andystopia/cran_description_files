@@ -1,0 +1,46 @@
+Package: spheresmooth
+Title: Piecewise Geodesic Smoothing for Spherical Data
+Version: 0.1.3
+Description: Fitting a smooth path to a given set of noisy spherical data observed at known time points. It implements a piecewise geodesic curve fitting method on the unit sphere based on a velocity-based penalization scheme. The proposed approach is implemented using the Riemannian block coordinate descent algorithm. To understand the method and algorithm, one can refer to Bak, K. Y., Shin, J. K., & Koo, J. Y. (2023) <doi:10.1080/02664763.2022.2054962> for the case of order 1. Additionally, this package includes various functions necessary for handling spherical data.
+Authors@R: 
+  c(person(given = "Jae-Hwan",
+           family = "Jhong",
+           role = c("aut"),
+           email = "jjh25@cbnu.ac.kr",
+           comment = c(ORCID = "0000-0003-2266-4986", "Chungbuk National University")),
+    person(given = "Ja-Yong",
+           family = "Koo",
+           role = c("aut"),
+           email = "jykoo@korea.ac.kr",
+           comment = "Korea University"),
+    person(given = "Seyoung",
+           family = "Lee",
+           role = c("aut"),
+           email = "20210861@sungshin.ac.kr",
+           comment = "Sungshin Women's University"),
+    person(given = "Kwan-Young",
+           family = "Bak",
+           role = c("aut", "cre", "cph"),
+           email = "kybak@sungshin.ac.kr",
+           comment = c(ORCID = "0000-0002-4541-160X", "Sungshin Women's University")))
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Suggests: sphereplot, rgl, ggplot2, rworldmap, sf
+URL: https://kybak90.github.io/spheresmooth/,
+        https://github.com/kybak90/spheresmooth
+BugReports: https://github.com/kybak90/spheresmooth/issues
+NeedsCompilation: no
+Packaged: 2024-12-06 18:17:28 UTC; bak
+Author: Jae-Hwan Jhong [aut] (<https://orcid.org/0000-0003-2266-4986>, Chungbuk
+    National University),
+  Ja-Yong Koo [aut] (Korea University),
+  Seyoung Lee [aut] (Sungshin Women's University),
+  Kwan-Young Bak [aut, cre, cph]
+    (<https://orcid.org/0000-0002-4541-160X>, Sungshin Women's
+    University)
+Maintainer: Kwan-Young Bak <kybak@sungshin.ac.kr>
+Repository: CRAN
+Date/Publication: 2024-12-06 18:30:02 UTC

@@ -1,0 +1,26 @@
+Package: tkImgR
+Type: Package
+Title: Simple Image Viewer for R Using the 'tcltk' Package
+Version: 0.0.5
+Authors@R: c(person("Filipe", "Campelo",
+  role = c("aut", "cre"),
+  email = "fcampelo@ci.uc.pt",
+  comment = c(ORCID = "0000-0001-6022-9948")))
+Description: A 'Tcl/Tk' Graphical User Interface (GUI) to display images than can be zoomed and panned using the mouse and keyboard shortcuts. 'tkImgR' read and write different image formats (PPM/PGM, PNG and GIF) using the standard 'Tcl/Tk' distribution (>=8.6), but other formats (JPEG, TIFF, CR2) can be handled using the 'tkImg' package for 'Tcl/Tk'.
+Depends: R (>= 3.5), tcltk
+Imports: tkRplotR
+Suggests: testthat
+License: GPL (>= 2)
+SystemRequirements: Tcl/Tk (>= 8.6). To read and write other formats
+        than PPM/PGM, PNG and GIF it is required the 'tkImg' for
+        'Tcl/Tk' (https://sourceforge.net/projects/tkimg/), or the
+        debian 'libtk-img' package (Ubuntu) or the RPM 'tkimg' package
+        (Fedora or openSUSE).
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2022-05-11 09:51:28 UTC; fc
+Author: Filipe Campelo [aut, cre] (<https://orcid.org/0000-0001-6022-9948>)
+Maintainer: Filipe Campelo <fcampelo@ci.uc.pt>
+Repository: CRAN
+Date/Publication: 2022-05-13 08:10:02 UTC

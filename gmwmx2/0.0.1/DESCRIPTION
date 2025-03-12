@@ -1,0 +1,39 @@
+Package: gmwmx2
+Title: Estimate Functional and Stochastic Parameters of Linear Models
+        with Correlated Residuals and Missing Data
+Version: 0.0.1
+Authors@R: c(
+    person("Lionel", "Voirol", email = "lionelvoirol@hotmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1696-1407")),
+    person("Haotian", "Xu", role = "aut",  comment = c(ORCID = "0000-0001-8336-4536")),
+    person("Yuming", "Zhang", role = "aut",  comment = c(ORCID = "0000-0003-2293-9601")),
+    person("Luca", "Insolia", role = "aut", comment = c(ORCID = "0000-0003-4169-5446")),
+    person("Roberto", "Molinari", role = "aut", comment = c(ORCID = "0000-0001-8766-6902")),
+    person("Stéphane", "Guerrier", role = "aut", comment = c(ORCID = "0000-0003-0002-8794"))
+    )
+Description: Implements the Generalized Method of Wavelet Moments with Exogenous Inputs estimator (GMWMX) presented in Voirol, L., Xu, H., Zhang, Y., Insolia, L., Molinari, R. and Guerrier, S. (2024) <doi:10.48550/arXiv.2409.05160>.
+             The GMWMX estimator allows to estimate functional and stochastic parameters of linear models with correlated residuals in presence of missing data.
+             The 'gmwmx2' package provides functions to load and plot Global Navigation Satellite System (GNSS) data from the Nevada Geodetic Laboratory and functions to estimate linear model model with correlated residuals in presence of missing data.
+License: AGPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Language: en-US
+Depends: R (>= 4.0.0)
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, data.table, dplyr, magrittr, wv, Matrix, httr2, rlang
+Suggests: knitr, rmarkdown, knitcitations, raster, rnaturalearth,
+        shape, tibble, tidygeocoder, sf, geodata
+URL: https://github.com/SMAC-Group/gmwmx2
+BugReports: https://github.com/SMAC-Group/gmwmx2/issues
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2025-03-10 04:08:34 UTC; lionel
+Author: Lionel Voirol [aut, cre] (<https://orcid.org/0000-0003-1696-1407>),
+  Haotian Xu [aut] (<https://orcid.org/0000-0001-8336-4536>),
+  Yuming Zhang [aut] (<https://orcid.org/0000-0003-2293-9601>),
+  Luca Insolia [aut] (<https://orcid.org/0000-0003-4169-5446>),
+  Roberto Molinari [aut] (<https://orcid.org/0000-0001-8766-6902>),
+  Stéphane Guerrier [aut] (<https://orcid.org/0000-0003-0002-8794>)
+Maintainer: Lionel Voirol <lionelvoirol@hotmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-10 14:40:02 UTC

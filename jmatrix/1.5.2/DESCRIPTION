@@ -1,0 +1,34 @@
+Package: jmatrix
+Type: Package
+Title: Read from/Write to Disk Matrices with any Data Type in a Binary
+        Format
+Version: 1.5.2
+Date: 2024-07-05
+Author: Juan Domingo [aut, cre] (<https://orcid.org/0000-0003-4728-6256>),
+  Guillermo Ayala [ctb] (<https://orcid.org/0000-0002-6231-2865>),
+  Spanish Ministry of Science and Innovation, MCIN/AEI
+    <doi:10.13039/501100011033> [fnd]
+Authors@R: c(person("Juan","Domingo", email = "Juan.Domingo@uv.es", role=c("aut","cre"), comment=c(ORCID="0000-0003-4728-6256")),
+             person("Guillermo","Ayala", email = "Guillermo.Ayala@uv.es", role=c("ctb"), comment=c(ORCID="0000-0002-6231-2865")),
+             person("Spanish Ministry of Science and Innovation, MCIN/AEI <doi:10.13039/501100011033>", role=c("fnd")))
+Maintainer: Juan Domingo <Juan.Domingo@uv.es>
+Description: A mainly instrumental package meant to allow other packages whose core is written in 'C++' to read, write
+        and manipulate matrices in a binary format so that the memory used for them is no more than strictly needed. Its functionality
+        is already inside 'parallelpam' and 'scellpam', so if you have installed any of these, you do not need to install 'jmatrix'.
+        Using just the needed memory is not always true with 'R' matrices or vectors, since by default they are of double type. Trials
+        like the 'float' package have been done, but to use them you have to coerce a matrix already loaded in 'R' memory to a float matrix,
+        and then you can delete it. The problem comes when your computer has not memory enough to hold the matrix in the first place, so
+        you are forced to load it by chunks. This is the problem this package tries to address (with partial success, but this is a
+        difficult problem since 'R' is not a strictly typed language, which is anyway quite hard to get in an interpreted language).
+	This package allows the creation and manipulation of full, sparse and symmetric matrices of any standard data type.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8), memuse (>= 4.2.1)
+LinkingTo: Rcpp
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+Suggests: knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-07-05 13:49:55 UTC; jdomingo
+Repository: CRAN
+Date/Publication: 2024-07-05 23:50:01 UTC

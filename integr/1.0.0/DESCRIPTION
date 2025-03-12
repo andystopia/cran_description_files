@@ -1,0 +1,28 @@
+Package: integr
+Type: Package
+Title: An Implementation of Interaction Graphs of Aleks Jakulin
+Version: 1.0.0
+Authors@R: person("Petar", "Markovic", email = "peleplay@gmail.com",
+                  role = c("aut", "cre"))
+Description: Generates a 'Graphviz' graph of the most significant 3-way 
+    interaction gains (i.e. conditional information gains) based on a provided 
+    discrete data frame. Various output formats are supported ('Graphviz', SVG, 
+    PNG, PDF, PS). For references, see the webpage of Aleks Jakulin 
+    <http://stat.columbia.edu/~jakulin/Int/>.
+Depends: R (>= 3.5.0), dplyr (>= 0.7.6), DiagrammeR (>= 1.0.0),
+        DiagrammeRsvg (>= 0.1), rsvg (>= 1.3), gtools (>= 3.5.0), utils
+        (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/peleplay/integr
+BugReports: https://github.com/peleplay/integr/issues
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-24 11:14:53 UTC; peleplay
+Author: Petar Markovic [aut, cre]
+Maintainer: Petar Markovic <peleplay@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-24 11:50:03 UTC

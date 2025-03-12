@@ -1,0 +1,30 @@
+Package: exams.forge
+Type: Package
+Title: Support for Compiling Examination Tasks using the 'exams'
+        Package
+Version: 1.0.10
+Date: 2024-07-08
+Authors@R: person("Sigbert", "Klinke", email="sigbert@hu-berlin.de", role=c("aut", "cre"))
+Description: The main aim is to further facilitate the creation of exercises based on the package 'exams' 
+    by Grün, B., and Zeileis, A. (2009) <doi:10.18637/jss.v029.i10>. Creating effective student exercises 
+    involves challenges such as creating appropriate data sets and ensuring access to intermediate values 
+    for accurate explanation of solutions. The functionality includes the generation of univariate and 
+    bivariate data including simple time series, functions for theoretical distributions and their approximation, 
+    statistical and mathematical calculations for tasks in basic statistics courses as well as general tasks 
+    such as string manipulation, LaTeX/HTML formatting and the editing of XML task files for 'Moodle'.
+License: GPL-3
+LazyData: true
+Depends: R (>= 3.5.0), tools, polynom
+Imports: base64enc, extraDistr, exams, knitr, MASS, methods, magrittr,
+        psych, rjson, rstudioapi, spelling, stringdist, stringr,
+        stranslate, tinytex, utils, xml2, xtable, yaml
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: rmarkdown
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-07-09 09:29:52 UTC; sigbert
+Author: Sigbert Klinke [aut, cre]
+Maintainer: Sigbert Klinke <sigbert@hu-berlin.de>
+Repository: CRAN
+Date/Publication: 2024-07-10 16:40:02 UTC

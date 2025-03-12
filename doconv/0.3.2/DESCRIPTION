@@ -1,0 +1,36 @@
+Package: doconv
+Type: Package
+Title: Document Conversion to 'PDF' or 'PNG'
+Version: 0.3.2
+Authors@R: c(
+    person("David", "Gohel", role = c("aut", "cre"),
+    email = "david.gohel@ardata.fr"),
+    person(given = "ArData", role = "cph"),
+    person("David", "Hajage", role = "ctb", comment = "initial powershell code")
+    )
+Description: It provides the ability to generate images from documents
+ of different types. Three main features are provided: functions for
+ generating document thumbnails, functions for performing visual tests
+ of documents and a function for updating fields and table of contents
+ of a 'Microsoft Word' or 'RTF' document. In order to work, 'LibreOffice' must be
+ installed on the machine and or 'Microsoft Word'. If the latter is
+ available, it can be used to produce PDF documents or images
+ identical to the originals; otherwise, 'LibreOffice' is used and
+ the rendering can be sometimes different from the original
+ documents.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: magick, pdftools, locatexec, processx, tools
+Depends: R (>= 4.0.0)
+Suggests: tinytest, testthat, webshot2
+BugReports: https://github.com/ardata-fr/doconv/issues
+SystemRequirements: LibreOffice, Microsoft Word
+NeedsCompilation: no
+Packaged: 2023-02-09 23:13:22 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  ArData [cph],
+  David Hajage [ctb] (initial powershell code)
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2023-02-09 23:30:02 UTC

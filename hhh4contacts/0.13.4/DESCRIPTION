@@ -1,0 +1,35 @@
+Package: hhh4contacts
+Version: 0.13.4
+Date: 2024-10-07
+License: GPL-2
+Authors@R: c(person("Sebastian", "Meyer",
+                    email = "seb.meyer@fau.de",
+                    role = c("aut","cre"),
+                    comment = c(ORCID = "0000-0002-1791-9449")),
+             person("Leonhard", "Held",
+                    email = "Leonhard.Held@uzh.ch",
+                    role = c("ctb","ths"),
+                    comment = c(ORCID = "0000-0002-8686-5325")))
+Title: Age-Structured Spatio-Temporal Models for Infectious Disease
+        Counts
+Description: Meyer and Held (2017) <doi:10.1093/biostatistics/kxw051> present an
+    age-structured spatio-temporal model for infectious disease counts. The
+    approach is illustrated in a case study on norovirus gastroenteritis in
+    Berlin, 2011-2015, by age group, city district and week, using additional
+    contact data from the POLYMOD survey. This package contains the data and
+    code to reproduce the results from the paper, see 'demo("hhh4contacts")'.
+URL: https://codeberg.org/EE-hub/hhh4contacts
+BugReports: https://codeberg.org/EE-hub/hhh4contacts/issues
+Depends: R (>= 3.2.0), grDevices, graphics, methods, stats, utils,
+        surveillance (>= 1.14.0)
+Imports: sp
+Suggests: MASS, lattice, gridExtra
+LazyData: yes
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2024-10-07 11:50:03 UTC; smeyer
+Author: Sebastian Meyer [aut, cre] (<https://orcid.org/0000-0002-1791-9449>),
+  Leonhard Held [ctb, ths] (<https://orcid.org/0000-0002-8686-5325>)
+Maintainer: Sebastian Meyer <seb.meyer@fau.de>
+Repository: CRAN
+Date/Publication: 2024-10-07 12:10:01 UTC

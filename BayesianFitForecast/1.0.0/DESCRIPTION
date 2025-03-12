@@ -1,0 +1,33 @@
+Package: BayesianFitForecast
+Type: Package
+Title: Bayesian Parameter Estimation and Forecasting for
+        Epidemiological Models
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Hamed", family = "Karami", role = "aut"),
+    person(given = "Amanda", family = "Bleichrodt", role = "aut"),
+    person(given = "Ruiyan", family = "Luo", role = "aut"),
+    person(given = "Gerardo", family = "Chowell", role = c("aut", "cre"),
+    email = "gchowell@gsu.edu"))
+Description: Methods for Bayesian parameter estimation and forecasting in epidemiological models. 
+    Functions enable model fitting using Bayesian methods and generate forecasts with uncertainty quantification. 
+    Implements approaches described in <doi:10.48550/arXiv.2411.05371> and <doi:10.1002/sim.9164>.
+License: CC0
+Encoding: UTF-8
+Imports: bayesplot, readxl, openxlsx, rstan, ggplot2, dplyr
+Depends: R (>= 3.5.0)
+URL: https://github.com/gchowell/BayesianFitForecast
+BugReports: https://github.com/gchowell/BayesianFitForecast/issues
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-12-03 05:55:12 UTC; hamedkp
+Author: Hamed Karami [aut],
+  Amanda Bleichrodt [aut],
+  Ruiyan Luo [aut],
+  Gerardo Chowell [aut, cre]
+Maintainer: Gerardo Chowell <gchowell@gsu.edu>
+Repository: CRAN
+Date/Publication: 2024-12-05 18:20:07 UTC

@@ -1,0 +1,25 @@
+Package: ExtrPatt
+Type: Package
+Title: Spatial Dependencies and Indices for Extremes
+Version: 0.1-4
+Authors@R: c( person("Svenja", "Szemkus", email="sszemkus@uni-bonn.de", role = c("aut", "cre")), 
+              person("Dan", "Cooley", role = c("ctb")), 
+              person("Yuing", "Jiang", role = c("ctb"))
+              )
+Author: Svenja Szemkus [aut, cre],
+  Dan Cooley [ctb],
+  Yuing Jiang [ctb]
+Description: An implementation of 
+              1) the tail pairwise dependence matrix (TPDM) as described in Jiang & Cooley (2020) <doi:10.1175/JCLI-D-19-0413.1>  
+              2) the extremal pattern index (EPI) as described in Szemkus & Friederichs ('Spatial patterns and indices for heatwave and droughts over Europe using a decomposition of extremal dependency'; submitted to ASCMO 2023). 
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: Matrix, doParallel, stats, foreach, MASS, parallel, utils
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-11-07 09:06:38 UTC; sszemkus
+Maintainer: Svenja Szemkus <sszemkus@uni-bonn.de>
+Repository: CRAN
+Date/Publication: 2023-11-07 18:50:05 UTC

@@ -1,0 +1,24 @@
+Package: FVDDPpkg
+Type: Package
+Title: Implement Fleming-Viot-Dependent Dirichlet Processes
+Version: 0.1.2
+Authors@R: 
+    person("Stefano", "Damato", email = "stefano.damato@idsia.ch", role = c("aut", "cre"))
+Description: 
+      A Bayesian Nonparametric model for the study of time-evolving frequencies, which has become renowned in the study of population genetics.
+      The model consists of a Hidden Markov Model (HMM) in which the latent signal is a distribution-valued stochastic process that takes the form of a finite mixture of Dirichlet Processes, indexed by vectors that count how many times each value is observed in the population.
+      The package implements methodologies presented in Ascolani, Lijoi and Ruggiero (2021) <doi:10.1214/20-BA1206> and Ascolani, Lijoi and Ruggiero (2023) <doi:10.3150/22-BEJ1504> that make it possible to study the process at the time of data collection or to predict its evolution in future or in the past.
+License: LGPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: Rcpp, Rdpack
+LinkingTo: Rcpp
+RdMacros: Rdpack
+Suggests: rmarkdown, knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-07-08 15:42:52 UTC; stefano.damato
+Author: Stefano Damato [aut, cre]
+Maintainer: Stefano Damato <stefano.damato@idsia.ch>
+Repository: CRAN
+Date/Publication: 2024-07-09 16:10:12 UTC

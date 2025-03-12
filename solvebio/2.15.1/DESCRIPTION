@@ -1,0 +1,27 @@
+Package: solvebio
+Type: Package
+Title: The Official SolveBio API Client
+Version: 2.15.1
+Date: 2025-02-06
+Author: Tobi Guennel [aut, cre]
+Maintainer: Tobi Guennel <tobi.guennel@precisionformedicine.com>
+Authors@R: c(person("Tobi", "Guennel", role = c("aut", "cre"), email = "tobi.guennel@precisionformedicine.com"))
+Description: R language bindings for SolveBio's API.
+    SolveBio is a biomedical knowledge hub that enables life science
+    organizations to collect and harmonize the complex, disparate
+    "multi-omic" data essential for today's R&D and BI needs.
+URL: https://github.com/solvebio/solvebio-r
+Imports: httr, jsonlite, mime
+License: MIT + file LICENSE
+Collate: solvebio.R annotation.R application.R beacon.R beacon_set.R
+        dataset.R dataset_commit.R dataset_export.R dataset_field.R
+        dataset_import.R dataset_migration.R dataset_template.R
+        global_search.R object.R saved_query.R shiny.R task.R user.R
+        utils.R vault.R zzz.R
+RoxygenNote: 7.3.2
+Encoding: UTF-8
+Suggests: testthat, shiny, shinyjs, openssl
+NeedsCompilation: no
+Packaged: 2025-02-14 14:20:48 UTC; davecap
+Repository: CRAN
+Date/Publication: 2025-02-14 23:00:02 UTC

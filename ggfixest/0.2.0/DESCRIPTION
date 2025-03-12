@@ -1,0 +1,49 @@
+Package: ggfixest
+Title: Dedicated 'ggplot2' Methods for 'fixest' Objects
+Version: 0.2.0
+Date: 2025-01-21
+Authors@R: c(
+    person(
+        given   = "Grant",
+        family  = "McDermott",
+        role    = c("aut", "cre"),
+        email   = "gmcd@amazon.com",
+        comment = c(ORCID = "0000-0001-7883-8573")
+    ),
+    person(
+        given   = "Laurent",
+        family  = "Berge",
+        role    = "ctb",
+        email   = "laurent.berge@u-bordeaux.fr"
+    ),
+    person(
+        given   = "Teun",
+        family  = "van den Brand",
+        role    = "ctb",
+        comment = c(ORCID = "0000-0002-9335-7468")
+    )
+	)
+Description: Provides 'ggplot2' equivalents of fixest::coefplot() and fixest::iplot(),
+    for producing nice coefficient plots and interaction plots. Enables some
+    additional functionality and convenience features, including grouped
+    multi-'fixest' object faceting and programmatic updates to existing plots
+    (e.g., themes and aesthetics).
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://grantmcdermott.com/ggfixest/
+BugReports: https://github.com/grantmcdermott/ggfixest/issues
+Depends: ggplot2 (>= 2.2.0), fixest (>= 0.11.2)
+Imports: dreamerr, scales, marginaleffects (>= 0.10.0), stats, utils,
+        legendry (>= 0.2)
+Suggests: knitr, rmarkdown, tinytest (>= 1.4.1), tinysnapshot (>=
+        0.0.3), magick, rsvg, svglite, fontquiver, data.table
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-01-22 00:42:17 UTC; gmcd
+Author: Grant McDermott [aut, cre] (<https://orcid.org/0000-0001-7883-8573>),
+  Laurent Berge [ctb],
+  Teun van den Brand [ctb] (<https://orcid.org/0000-0002-9335-7468>)
+Maintainer: Grant McDermott <gmcd@amazon.com>
+Repository: CRAN
+Date/Publication: 2025-01-22 01:00:02 UTC

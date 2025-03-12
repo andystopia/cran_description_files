@@ -1,0 +1,25 @@
+Package: gofedf
+Title: Goodness of Fit Tests Based on Empirical Distribution Functions
+Version: 0.1.0
+Authors@R: c(
+ person("Richard", "Lockhart", role = c("aut"), email = "lockhart@sfu.ca"),
+ person("Payman", "Nickchi", role = c("aut","cre"), email = "pnickchi@sfu.ca")
+ ) 
+Description: Routines that allow the user to run goodness of fit tests based on empirical distribution functions for formal model evaluation in a general likelihood model. In addition, functions are provided to test a sample against Normal or Gamma distributions, validate the normality assumptions in a linear model, and examine the appropriateness of a Gamma distribution in generalized linear models with various link functions. Michael Arthur Stephens (1976) <http://www.jstor.org/stable/2958206>.
+License: GPL (>= 3)
+URL: https://github.com/pnickchi/gofedf
+BugReports: https://github.com/pnickchi/gofedf/issues
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+Imports: stats, CompQuadForm, MASS, glm2, statmod
+NeedsCompilation: no
+Author: Richard Lockhart [aut],
+  Payman Nickchi [aut, cre]
+Maintainer: Payman Nickchi <pnickchi@sfu.ca>
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Packaged: 2023-09-29 21:39:38 UTC; payma
+Repository: CRAN
+Date/Publication: 2023-10-01 16:30:06 UTC

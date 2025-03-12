@@ -1,0 +1,27 @@
+Package: regmhmm
+Type: Package
+Title: 'regmhmm' Fits Hidden Markov Models with Regularization
+Version: 1.0.0
+Date: 2023-11-29
+Authors@R: c(
+    person("Man Chong", "Leong", , "mc.leong26@gmail.com", role = c("cre", "aut"),
+           comment = c(ORCID = "0000-0003-3895-9527"))
+  )
+Maintainer: Man Chong Leong <mc.leong26@gmail.com>
+Description: Designed for longitudinal data analysis using Hidden Markov Models (HMMs). Tailored for applications in healthcare, social sciences, and economics, the main emphasis of this package is on regularization techniques for fitting HMMs. Additionally, it provides an implementation for fitting HMMs without regularization, referencing Zucchini et al. (2017, ISBN:9781315372488).
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: glmnet, glmnetUtils, MASS, Rcpp, stats
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+URL: https://github.com/HenryLeongStat/regmhmm
+BugReports: https://github.com/HenryLeongStat/regmhmm/issues
+Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2023-12-01 18:08:55 UTC; mleong1
+Author: Man Chong Leong [cre, aut] (<https://orcid.org/0000-0003-3895-9527>)
+Repository: CRAN
+Date/Publication: 2023-12-04 16:40:05 UTC

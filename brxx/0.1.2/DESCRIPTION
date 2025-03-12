@@ -1,0 +1,24 @@
+Package: brxx
+Type: Package
+Title: Bayesian Test Reliability Estimation
+Version: 0.1.2
+Author: Joshua Ray Tanzer
+Maintainer: Joshua Ray Tanzer <jtanzer@lifespan.org>
+Description: When samples contain missing data, are small, or are suspected of bias,
+    estimation of scale reliability may not be trustworthy.  A recommended solution
+    for this common problem has been Bayesian model estimation.  Bayesian methods
+    rely on user specified information from historical data or researcher intuition 
+    to more accurately estimate the parameters.  This package provides a user friendly
+    interface for estimating test reliability.  Here, reliability is modeled as a beta
+    distributed random variable with shape parameters alpha=true score variance and
+    beta=error variance (Tanzer & Harlow, 2020) <doi:10.1080/00273171.2020.1854082>.
+Depends: MCMCpack, GPArotation, TeachingDemos, blavaan, blme
+Imports: MASS, rstan
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-01-26 16:18:07 UTC; CHS-User
+Repository: CRAN
+Date/Publication: 2021-01-26 17:00:06 UTC

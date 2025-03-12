@@ -1,0 +1,36 @@
+Package: MRCV
+Version: 0.4-0
+Date: 2024-10-18
+Title: Methods for Analyzing Multiple Response Categorical Variables
+        (MRCVs)
+Authors@R: c(person(given = "Natalie",
+                      family = "Koziol",
+                      role = "aut"),
+               person(given = "Chris",
+                      family = "Bilder",
+                      role = c("aut", "cre"),
+                      email = "bilder@unl.edu"))
+Maintainer: Chris Bilder <bilder@unl.edu>
+Depends: R (>= 4.4.0)
+Imports: tables
+Suggests: geepack
+LazyData: TRUE
+Description: Provides functions for analyzing the association between
+    one single response categorical variable (SRCV) and one multiple response
+    categorical variable (MRCV), or between two or three MRCVs.  A modified Pearson
+    chi-square statistic can be used to test for marginal independence for the one or
+    two MRCV case, or a more general loglinear modeling approach can be used to examine
+    various other structures of association for the two or three MRCV case.  Bootstrap-
+    and asymptotic-based standardized residuals and model-predicted odds ratios are
+    available, in addition to other descriptive information. Statisical methods implemented 
+    are described in Bilder et al. (2000) <doi:10.1080/03610910008813665>,
+    Bilder and Loughin (2004) <doi:10.1111/j.0006-341X.2004.00147.x>,
+    Bilder and Loughin (2007) <doi:10.1080/03610920600974419>,
+    and Koziol and Bilder (2014) <https://journal.r-project.org/articles/RJ-2014-014/>.
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2024-10-21 20:30:28 UTC; cbilder
+Author: Natalie Koziol [aut],
+  Chris Bilder [aut, cre]
+Repository: CRAN
+Date/Publication: 2024-10-22 14:00:02 UTC

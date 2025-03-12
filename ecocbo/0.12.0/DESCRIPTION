@@ -1,0 +1,39 @@
+Package: ecocbo
+Title: Calculating Optimum Sampling Effort in Community Ecology
+Version: 0.12.0
+Authors@R: c(person(given = "Edlin", family = "Guerra-Castro", 
+                    role = c("aut", "cph"), email = "edlinguerra@gmail.com",
+                    comment = c(ORCID = "0000-0003-3529-4507")),
+             person(given = "Arturo", family = "Sanchez-Porras", 
+                    role = c("aut", "cre"), email = "sp.arturo@gmail.com",
+                    comment = c(ORCID = "0000-0002-1691-286X")))
+Description: A system for calculating the optimal sampling effort, based on the ideas of 
+    "Ecological cost-benefit optimization" as developed by A. Underwood (1997, 
+    ISBN 0 521 55696 1). Data is obtained from simulated ecological communities with
+    prep_data() which formats and arranges the initial data, and then the 
+    optimization follows the following procedure of four functions: (1) scompvar() 
+    calculates the variation components necessary for (2) sim_cbo() to calculate
+    the optimal combination of number of sites and samples depending on either 
+    an economic budget or on a desired statistical accuracy. Additionally, (3) 
+    sim_beta() estimates statistical power and type 2 error by using Permutational 
+    Multivariate Analysis of Variance, and (6) plot_power() represents the 
+    results of the previous function.
+License: GPL (>= 3)
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports: ggplot2, ggpubr, sampling, stats, rlang, foreach, parallel,
+        doParallel, doSNOW, vegan, SSP
+Depends: R (>= 2.10)
+LazyData: true
+Suggests: knitr,rmarkdown, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-08-06 21:27:46 UTC; artu
+Author: Edlin Guerra-Castro [aut, cph]
+    (<https://orcid.org/0000-0003-3529-4507>),
+  Arturo Sanchez-Porras [aut, cre]
+    (<https://orcid.org/0000-0002-1691-286X>)
+Maintainer: Arturo Sanchez-Porras <sp.arturo@gmail.com>
+Repository: CRAN
+Date/Publication: 2024-08-21 08:00:02 UTC

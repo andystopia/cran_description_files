@@ -1,0 +1,22 @@
+Package: runExamplesWrapper
+Version: 1.0
+Date: 2025-02-20
+Title: Wrapper for 'run_examples()'
+Authors@R: c(
+          person("Barry", "Zeeberg", email = "barryz2013@gmail.com",
+                role = c("aut", "cre")))
+Maintainer: Barry Zeeberg <barryz2013@gmail.com>
+Author: Barry Zeeberg [aut, cre]
+Depends: R (>= 4.2.0)
+Imports: devtools
+Description: Captures errors encountered when running 'run_examples()', and processes and archives them. The function 'run_examples()' within the 'devtools' package allows batch execution of all of the examples within a given package. This is much more convenient than testing each example manually. However, a major inconvenience is that if an error is encountered, the program stops and does not complete testing the remaining examples. Also, there is not a systematic record of the results, namely which package functions had no examples, which had examples that failed, and which had examples that succeeded. The current package provides the missing functionality.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-02-21 12:58:01 UTC; barryzeeberg
+Repository: CRAN
+Date/Publication: 2025-02-21 20:20:02 UTC

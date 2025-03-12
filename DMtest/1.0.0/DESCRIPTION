@@ -1,0 +1,23 @@
+Package: DMtest
+Type: Package
+Title: Differential Methylation Tests (DMtest)
+Version: 1.0.0
+Date: 2021-07-22
+Authors@R: c(person("James", "Dai", role = c("aut", "cre"),
+		     email = "jdai@fredhutch.org"),
+	      person("Xiaoyu", "Wang", role = c("aut")))
+Author: James Dai [aut, cre],
+  Xiaoyu Wang [aut]
+Maintainer: James Dai <jdai@fredhutch.org>
+Description: Several tests for differential methylation in methylation array data, including one-sided differential mean and variance test. Methods used in the package refer to Dai, J, Wang, X, Chen, H and others (2021) "Incorporating increased variability in discovering cancer methylation markers", Biostatistics, submitted.
+Depends: R (>= 3.5.0)
+Imports: matrixStats,stats,foreach,parallel,doParallel
+License: GPL (>= 2)
+NeedsCompilation: no
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, markdown
+VignetteBuilder: knitr
+Packaged: 2021-07-23 16:50:56 UTC; xwang234
+Repository: CRAN
+Date/Publication: 2021-07-26 06:50:06 UTC

@@ -1,0 +1,26 @@
+Package: msgr
+Title: Extends Messages, Warnings and Errors by Adding Levels and Log
+        Files
+Version: 1.1.2
+Authors@R: 
+    person("Chad" , "Goymer", email = "chad.goymer@gmail.com" , role = c("aut", "cre"))
+Description: Provides new functions info(), warn() and error(), similar to message(),
+    warning() and stop() respectively. However, the new functions can have a 'level'
+    associated with them, so that when executed the global level option determines whether
+    they are shown or not. This allows debug modes, outputting more information. The can also
+    output all messages to a log file.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Language: en-GB
+RoxygenNote: 7.0.2
+Imports: rlang, purrr
+Suggests: testthat, covr
+URL: https://github.com/ChadGoymer/msgr
+BugReports: https://github.com/ChadGoymer/msgr/issues
+NeedsCompilation: no
+Packaged: 2019-12-16 07:58:14 UTC; Chad
+Author: Chad Goymer [aut, cre]
+Maintainer: Chad Goymer <chad.goymer@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-16 11:40:02 UTC

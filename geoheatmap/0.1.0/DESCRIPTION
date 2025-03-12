@@ -1,0 +1,30 @@
+Package: geoheatmap
+Type: Package
+Title: Create Geospatial Cartogram Heatmaps
+Version: 0.1.0
+Authors@R: c(
+    person("Sanne J.W.", "Willems", email = "s.j.w.willems@fsw.leidenuniv.nl", role = c("cre", "aut")),
+    person("Maria", "Rados", email = "m.rados@umail.leidenuniv.nl", role = "aut"),
+    person("Juan", "Claramunt Gonzalez", email = "j.claramunt.gonzalez@fsw.leidenuniv.nl", role = "ctb"))
+Maintainer: Sanne J.W. Willems <s.j.w.willems@fsw.leidenuniv.nl>
+Description: The functionality provided by this package is an expansion of the code 
+    of the 'statebins' package, created by B. Rudis (2022), <doi:10.32614/CRAN.package.statebins>. It allows for the creation of square choropleths 
+    for the entire world, provided an appropriate specified grid is supplied. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: geofacet, statebins, ggplot2, plotly, rlang
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, viridisLite, testthat (>= 3.0.0), htmltools
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+Collate: 'aaa.R' 'geoheatmap.R' 'geom-rrect.r' 'geom-rtile.R' 'gutil.R'
+        'internet.R' 'util.R'
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-09-02 13:14:32 UTC; Maria
+Author: Sanne J.W. Willems [cre, aut],
+  Maria Rados [aut],
+  Juan Claramunt Gonzalez [ctb]
+Repository: CRAN
+Date/Publication: 2024-09-05 15:40:02 UTC

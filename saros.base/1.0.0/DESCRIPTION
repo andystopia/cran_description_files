@@ -1,0 +1,50 @@
+Type: Package
+Package: saros.base
+Title: Base Tools for Semi-Automatic Reporting of Ordinary Surveys
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Stephan", 
+           family = "Daus", 
+           role = c("aut", "cre", "cph"),
+           email = "stephus.daus@gmail.com", 
+           comment = c(ORCID = "0000-0003-0230-6997")),
+    person("Nordic Institute for The Studies of Innovation, Research and Education (NIFU)", 
+           role = c("fnd")),
+    person("Kristiania University College", 
+           role = c("fnd"))
+  )
+Maintainer: Stephan Daus <stephus.daus@gmail.com>
+Description: Scaffold an entire web-based report using template chunks, based on a small chapter overview and a dataset. 
+    Highly adaptable with prefixes, suffixes, translations, etc. Also contains tools for password-protecting,
+    e.g. for each organization's report on a website. Developed for the common case of a survey across multiple organizations/sites
+    where each organization wants to obtain results for their organization compared with everyone else.
+    See 'saros' (<https://CRAN.R-project.org/package=saros>) for tools used for authors in the drafted reports.
+Note: Free to use for non-Norwegian institutions, otherwise see
+        LICENSE.
+License: MIT + file LICENSE
+URL: https://nifu-no.github.io/saros.base/,
+        https://github.com/NIFU-NO/saros.base
+BugReports: https://github.com/NIFU-NO/saros.base/issues
+Depends: R (>= 4.2.0)
+Imports: utils, vctrs, rlang, cli, tidyselect, dplyr, tidyr, glue,
+        stringi, forcats, fs, yaml, zip, rstudioapi, bcrypt
+Suggests: covr, haven, srvyr, readr, qs, purrr, writexl, webshot,
+        usethis, quarto, labelled, testthat (>= 3.0.0), tibble, withr,
+        spelling
+SystemRequirements: None.
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Language: en-US
+VignetteBuilder: quarto
+Config/Needs/website: rmarkdown
+Config/testthat/parallel: true
+NeedsCompilation: no
+Packaged: 2025-01-10 17:06:58 UTC; py128
+Author: Stephan Daus [aut, cre, cph] (<https://orcid.org/0000-0003-0230-6997>),
+  Nordic Institute for The Studies of Innovation, Research and Education
+    (NIFU) [fnd],
+  Kristiania University College [fnd]
+Repository: CRAN
+Date/Publication: 2025-01-10 18:50:02 UTC

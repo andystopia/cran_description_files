@@ -1,0 +1,31 @@
+Package: Umatrix
+Type: Package
+Title: Visualization of Structures in High-Dimensional Data
+Version: 4.0.1
+Date: 2024-08-13
+Authors@R: c(person(given = "Florian", family = "Lerch", role = "aut"),
+               person(given = "Michael", family = "Thrun", role = "aut"),
+               person(given = "Felix", family = "Pape", role = "ctb"),
+               person(given = "Jorn", family = "Lotsch", role = c("aut", "cre"), email = "j.lotsch@em.uni-frankfurt.de"),
+               person(given = "Raphael", family = "Paebst", role = "ctb"),
+               person(given = "Alfred", family = "Ultsch", role = "aut"))
+Description: By gaining the property of emergence through self-organization, the enhancement of SOMs(self organizing maps) is called Emergent SOM (ESOM). The result of the projection by ESOM is a grid of neurons which can be visualised as a three dimensional landscape in form of the Umatrix. Further details can be found in the referenced publications (see url). This package offers tools for calculating and visualising the ESOM as well as Umatrix, Pmatrix and UStarMatrix. All the functionality is also available through graphical user interfaces implemented in 'shiny'. Based on the recognized data structures, the method can be used to generate new data.
+Imports: Rcpp, ggplot2, shiny, shinyjs, reshape2, fields, plyr, png,
+        tools, grid, abind, deldir, geometry, pdist, AdaptGauss,
+        DataVisualizations
+Suggests: rgl
+LinkingTo: Rcpp
+Depends: R (>= 3.5.0)
+License: GPL-3
+URL: http://wscg.zcu.cz/wscg2016/short/A43-full.pdf
+NeedsCompilation: yes
+Packaged: 2024-08-17 06:13:36 UTC; joern
+Author: Florian Lerch [aut],
+  Michael Thrun [aut],
+  Felix Pape [ctb],
+  Jorn Lotsch [aut, cre],
+  Raphael Paebst [ctb],
+  Alfred Ultsch [aut]
+Maintainer: Jorn Lotsch <j.lotsch@em.uni-frankfurt.de>
+Repository: CRAN
+Date/Publication: 2024-08-17 06:30:17 UTC

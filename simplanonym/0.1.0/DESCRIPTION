@@ -1,0 +1,27 @@
+Package: simplanonym
+Type: Package
+Title: Consistent Anonymisation Across Datasets
+Version: 0.1.0
+Authors@R: person("Douglas", "Kiarelly Godoy de Araujo", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0001-8070-6828"),
+                  email = "dkg.araujo@gmail.com")
+Description: A simple function that anonymises a list of variables
+    in a consistent way: anonymised factors are not recycled and
+    the same original levels receive the same anonymised factor
+    even if located in different datasets.
+License: Apache License (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+URL: https://github.com/dkgaraujo/simplanonym
+BugReports: https://github.com/dkgaraujo/simplanonym/issues
+Imports: dplyr (>= 1.0.10), forcats (>= 0.5.1), tidyselect (>= 1.2.0)
+Suggests: testthat (>= 3.0.0), vroom (>= 1.5.7)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2023-01-27 20:51:45 UTC; douglasaraujo
+Author: Douglas Kiarelly Godoy de Araujo [aut, cre]
+    (<https://orcid.org/0000-0001-8070-6828>)
+Maintainer: Douglas Kiarelly Godoy de Araujo <dkg.araujo@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-01-30 16:20:05 UTC

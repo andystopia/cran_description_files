@@ -1,0 +1,25 @@
+Package: SLEMI
+Title: Statistical Learning Based Estimation of Mutual Information
+Version: 1.0.2
+Authors@R: c(person("Tomasz", "Jetka", email = "t.jetka@gmail.com", role = c("aut", "cre")),
+			 person("Karol", "Nienaltowski",role="ctb"),person("Michal", "Komorowski",role="ctb"))
+Description: The implementation of the algorithm for estimation of mutual information and channel capacity from experimental data by classification procedures (logistic regression). Technically, it allows to estimate information-theoretic measures between finite-state input and multivariate, continuous output. Method described in Jetka et al. (2019) <doi:10.1371/journal.pcbi.1007132>.
+Depends: R (>= 3.6.0)
+License: GPL (>= 3)
+URL: https://github.com/TJetka/SLEMI
+BugReports: https://github.com/TJetka/SLEMI/issues
+Encoding: UTF-8
+LazyData: true
+Imports: e1071, ggplot2, gridExtra, nnet, Hmisc, reshape2, stringr,
+        doParallel, caret, corrplot, foreach, methods
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0), data.table, covr
+VignetteBuilder: knitr
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-11-19 18:32:06 UTC; tomasz_jetka
+Author: Tomasz Jetka [aut, cre],
+  Karol Nienaltowski [ctb],
+  Michal Komorowski [ctb]
+Maintainer: Tomasz Jetka <t.jetka@gmail.com>
+Repository: CRAN
+Date/Publication: 2023-11-19 20:00:02 UTC

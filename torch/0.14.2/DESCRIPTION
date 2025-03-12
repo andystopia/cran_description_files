@@ -1,0 +1,87 @@
+Package: torch
+Type: Package
+Title: Tensors and Neural Networks with 'GPU' Acceleration
+Version: 0.14.2
+Authors@R: c(
+    person("Daniel", "Falbel", email = "daniel@rstudio.com", role = c("aut", "cre", "cph")),
+    person("Javier", "Luraschi", email = "jluraschi@gmail.com", role = c("aut")),
+    person("Dmitriy", "Selivanov", role = c("ctb")),
+    person("Athos", "Damiani", role = c("ctb")),
+    person("Christophe", "Regouby", role = c("ctb")),
+    person("Krzysztof", "Joachimiak", role = c("ctb")),
+    person("Hamada S.", "Badr", role = c("ctb")),
+    person("Sebastian", "Fischer", role = c("ctb")),
+    person("Maximilian", "Pichler", role = c("ctb")),
+    person(family = "RStudio", role = c("cph"))
+    )
+Description: Provides functionality to define and train neural networks similar to
+    'PyTorch' by Paszke et al (2019) <doi:10.48550/arXiv.1912.01703> but written entirely in R
+    using the 'libtorch' library. Also supports low-level tensor operations and
+    'GPU' acceleration.
+License: MIT + file LICENSE
+URL: https://torch.mlverse.org/docs, https://github.com/mlverse/torch
+BugReports: https://github.com/mlverse/torch/issues
+Encoding: UTF-8
+SystemRequirements: LibTorch (https://pytorch.org/); Only x86_64
+        platforms are currently supported except for ARM system running
+        macOS.
+Config/build/copy-method: copy
+LinkingTo: Rcpp
+Imports: Rcpp, R6, withr, rlang (>= 1.0.0), methods, utils, stats,
+        bit64, magrittr, tools, coro (>= 1.0.2), callr, cli (>= 3.0.0),
+        glue, desc, safetensors (>= 0.1.1), jsonlite, scales
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0), covr, knitr (>= 1.36), rmarkdown,
+        palmerpenguins, mvtnorm, numDeriv, katex
+VignetteBuilder: knitr
+Collate: 'R7.R' 'RcppExports.R' 'autocast.R' 'tensor.R' 'autograd.R'
+        'backends.R' 'call_torch_function.R' 'codegen-utils.R'
+        'compare.R' 'compat-purrr.R' 'compilation_unit.R'
+        'conditions.R' 'contrib.R' 'creation-ops.R' 'cuda.R' 'device.R'
+        'dimname_list.R' 'utils.R' 'distributions-constraints.R'
+        'distributions-utils.R' 'distributions-exp-family.R'
+        'distributions.R' 'distributions-bernoulli.R'
+        'distributions-categorical.R' 'distributions-gamma.R'
+        'distributions-chi2.R' 'distributions-mixture_same_family.R'
+        'distributions-multivariate_normal.R' 'distributions-normal.R'
+        'distributions-poisson.R' 'dtype.R' 'gen-method.R'
+        'gen-namespace-docs.R' 'gen-namespace-examples.R'
+        'gen-namespace.R' 'generator.R' 'help.R' 'utils-data.R'
+        'optim.R' 'optim-adam.R' 'optim-sgd.R' 'optim-rmsprop.R'
+        'optim-adagrad.R' 'optim-adamw.R' 'ignite.R' 'indexing.R'
+        'install.R' 'ivalue.R' 'jit-compile.R' 'jit-execute.R'
+        'jit-ops.R' 'lantern_load.R' 'lantern_sync.R' 'layout.R'
+        'linalg.R' 'memory_format.R' 'nn.R' 'nn-activation.R'
+        'nn-batchnorm.R' 'nn-conv.R' 'nn-distance.R' 'nn-dropout.R'
+        'nn-flatten.R' 'nn-init.R' 'nn-linear.R' 'nn-loss.R'
+        'nn-normalization.R' 'nn-pooling.R' 'nn-rnn.R' 'nn-sparse.R'
+        'nn-upsampling.R' 'nn-utils-clip-grad.R' 'nn-utils-rnn.R'
+        'nn-utils-weight-norm.R' 'nn-utils.R' 'nn_adaptive.R'
+        'nnf-activation.R' 'nnf-batchnorm.R' 'nnf-conv.R'
+        'nnf-distance.R' 'nnf-dropout.R' 'nnf-embedding.R' 'nnf-fold.R'
+        'nnf-instancenorm.R' 'nnf-linear.R' 'nnf-loss.R'
+        'nnf-normalization.R' 'nnf-padding.R' 'nnf-pixelshuffle.R'
+        'nnf-pooling.R' 'nnf-upsampling.R' 'nnf-vision.R' 'operators.R'
+        'optim-adadelta.R' 'optim-asgd.R' 'optim-lbfgs.R'
+        'optim-lr_scheduler.R' 'optim-rprop.R' 'positron.R' 'package.R'
+        'qscheme.R' 'quantization.R' 'reduction.R' 'save.R' 'scalar.R'
+        'script_module.R' 'stack.R' 'storage.R' 'threads.R' 'trace.R'
+        'translate.R' 'type-info.R' 'utils-data-collate.R'
+        'utils-data-dataloader.R' 'utils-data-enum.R'
+        'utils-data-fetcher.R' 'utils-data-sampler.R' 'utils-pipe.R'
+        'variable_list.R' 'with-indices.R' 'wrapers.R'
+NeedsCompilation: yes
+Packaged: 2025-02-14 21:33:30 UTC; dfalbel
+Author: Daniel Falbel [aut, cre, cph],
+  Javier Luraschi [aut],
+  Dmitriy Selivanov [ctb],
+  Athos Damiani [ctb],
+  Christophe Regouby [ctb],
+  Krzysztof Joachimiak [ctb],
+  Hamada S. Badr [ctb],
+  Sebastian Fischer [ctb],
+  Maximilian Pichler [ctb],
+  RStudio [cph]
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2025-02-14 22:40:02 UTC

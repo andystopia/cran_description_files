@@ -1,0 +1,28 @@
+Package: oaqc
+Title: Computation of the Orbit-Aware Quad Census
+Version: 2.0.0
+Authors@R: 
+    c(person("Mark", "Ortmann", role = c("aut")),
+      person("Felix", "Schoenenberger", role = c("aut")),
+      person("David", "Schoch", , "david@schochastics.net", role = c("aut","cre"),
+           comment = c(ORCID = "0000-0003-2952-4812"))
+    )
+Maintainer: David Schoch <david@schochastics.net>
+Description: Implements the efficient algorithm by Ortmann and Brandes (2017)
+  <doi:10.1007/s41109-017-0027-2> to compute the orbit-aware frequency distribution of induced and non-induced quads, i.e. subgraphs of size four. Given an edge matrix, data frame, or a graph object (e.g., 'igraph'), the orbit-aware counts are computed respective each of the edges and nodes.
+URL: https://github.com/schochastics/oaqc
+BugReports: https://github.com/schochastics/oaqc/issues
+Depends: R (>= 3.4)
+Suggests: igraph, knitr, rmarkdown, testthat (>= 3.0.0)
+License: GPL (>= 3)
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Packaged: 2024-10-07 09:19:36 UTC; david
+Author: Mark Ortmann [aut],
+  Felix Schoenenberger [aut],
+  David Schoch [aut, cre] (<https://orcid.org/0000-0003-2952-4812>)
+Repository: CRAN
+Date/Publication: 2024-10-07 11:00:02 UTC

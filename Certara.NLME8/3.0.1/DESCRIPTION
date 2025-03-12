@@ -1,0 +1,35 @@
+Package: Certara.NLME8
+Version: 3.0.1
+Title: Utilities for Certara's Nonlinear Mixed-Effects Modeling Engine
+Authors@R: c(
+      person("Soltanshahi", "Fred", email = "fred.soltanshahi@certara.com", role = c("aut")),
+      person("Michael", "Tomashevskiy", email = "michael.tomashevskiy@certara.com", role = c("aut")),
+      person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
+      person("Shuhua", "Hu", role = c("ctb")),
+      person("Certara USA, Inc.", role = c("cph","fnd"))
+      )
+Description: Perform Nonlinear Mixed-Effects (NLME) Modeling using Certara's
+    NLME-Engine. Access the same Maximum Likelihood engines used in the Phoenix
+    platform, including algorithms for parametric methods, individual, and pooled
+    data analysis <https://www.certara.com/app/uploads/2020/06/BR_PhoenixNLME-v4.pdf>.
+    The Quasi-Random Parametric Expectation-Maximization Method (QRPEM) is also
+    supported <https://www.page-meeting.org/default.asp?abstract=2338>. Execution
+    is supported both locally or on remote machines. Remote execution includes
+    support for Linux Sun Grid Engine (SGE), Terascale Open-source Resource and
+    Queue Manager (TORQUE) grids, Linux and Windows multicore, and individual runs.
+Depends: R (>= 4.0.0)
+License: LGPL-3
+RoxygenNote: 7.3.2
+Suggests: testthat
+Imports: xml2, batchtools (>= 0.9.9), reshape, utils, data.table
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2024-10-15 15:34:12 UTC; jcraig
+Author: Soltanshahi Fred [aut],
+  Michael Tomashevskiy [aut],
+  James Craig [aut, cre],
+  Shuhua Hu [ctb],
+  Certara USA, Inc. [cph, fnd]
+Maintainer: James Craig <james.craig@certara.com>
+Repository: CRAN
+Date/Publication: 2024-10-15 17:40:02 UTC

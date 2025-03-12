@@ -1,0 +1,43 @@
+Package: simrel
+Title: Simulation of Multivariate Linear Model Data
+Version: 2.1.0
+Authors@R: 
+    c(person(given = "Raju",
+             family = "Rimal",
+             role = c("aut", "cre"),
+             email = "raju.rimal@medisin.uio.no",
+             comment = c(ORCID = "0000-0001-6097-0285")),
+      person(given = "Solve",
+             family = "Sæbø",
+             role = c("aut", "ths"),
+             email = "solve.sabo@nmbu.no",
+             comment = c("Original creator of the package", ORCID = "0000-0001-8699-4592")),
+      person(given = "Kristian Hovde",
+             family = "Liland",
+             role = c("aut"),
+             email = "kristian.liland@nmbu.no",
+             comment = c("Contributor and coauthor of the univariate version of simrel", 
+                         ORCID = "0000-0001-6468-9423")))
+Description: Researchers have been using simulated data from a multivariate linear model to compare and evaluate different methods, ideas and models. Additionally, teachers and educators have been using a simulation tool to demonstrate and teach various statistical and machine learning concepts.
+    This package helps users to simulate linear model data with a wide range of properties by tuning few parameters such as relevant latent components. In addition, a shiny app as an 'RStudio' gadget gives users a simple interface for using the simulation function. See more on: Sæbø, S., Almøy, T., Helland, I.S. (2015) <doi:10.1016/j.chemolab.2015.05.012> and Rimal, R., Almøy, T., Sæbø, S. (2018) <doi:10.1016/j.chemolab.2018.02.009>.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+BugReports: https://github.com/simulatr/simrel/issues
+URL: https://simulatr.github.io/simrel/
+Repository: CRAN
+Imports: FrF2, ggplot2, gridExtra, jsonlite, magrittr, miniUI, purrr,
+        reshape2, rstudioapi, scales, sfsmisc, shiny, tibble, tidyr,
+        rlang, testthat
+Suggests: covr, knitr, pls, markdown, DoE.base
+NeedsCompilation: no
+Packaged: 2021-09-15 08:05:37 UTC; therimalaya
+Author: Raju Rimal [aut, cre] (<https://orcid.org/0000-0001-6097-0285>),
+  Solve Sæbø [aut, ths] (Original creator of the package,
+    <https://orcid.org/0000-0001-8699-4592>),
+  Kristian Hovde Liland [aut] (Contributor and coauthor of the univariate
+    version of simrel, <https://orcid.org/0000-0001-6468-9423>)
+Maintainer: Raju Rimal <raju.rimal@medisin.uio.no>
+Date/Publication: 2021-09-17 15:30:02 UTC

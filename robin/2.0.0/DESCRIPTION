@@ -1,0 +1,29 @@
+Package: robin
+Title: ROBustness in Network
+Version: 2.0.0
+Authors@R: c(
+    person("Valeria", "Policastro", role=c("aut", "cre"), email="valeria.policastro@gmail.com"),
+    person("Dario", "Righelli", role=c("aut"), email="dario.righelli@gmail.com"),
+    person("Luisa", "Cutillo", role=c("aut"), email="l.cutillo@leeds.ac.uk"),
+    person("Italia", "De Feis", role=c("aut"), email="i.defeis@na.iac.cnr.it"),
+    person("Annamaria", "Carissimo", role=c("aut"), email="a.carissimo@na.iac.cnr.it"))
+Maintainer: Valeria Policastro <valeria.policastro@gmail.com>
+Description: Assesses the robustness of the community structure of a network found by one or more community detection algorithm to give indications about their reliability. It detects if the community structure found by a set of algorithms is statistically significant and compares the different selected detection algorithms on the same network. robin helps to choose among different community detection algorithms the one that better fits the network of interest. Reference in Policastro V., Righelli D., Carissimo A., Cutillo L., De Feis I. (2021) <https://journal.r-project.org/archive/2021/RJ-2021-040/index.html>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+URL: https://github.com/ValeriaPolicastro/robin
+Depends: igraph
+Imports: ggplot2, networkD3, DescTools, fdatest, methods, gridExtra,
+        spam, qpdf, Matrix, perturbR, BiocParallel, reshape2
+VignetteBuilder: knitr
+Suggests: devtools, knitr, rmarkdown, testthat (>= 2.1.0)
+NeedsCompilation: no
+Packaged: 2025-01-22 16:34:15 UTC; valeriapolicastro
+Author: Valeria Policastro [aut, cre],
+  Dario Righelli [aut],
+  Luisa Cutillo [aut],
+  Italia De Feis [aut],
+  Annamaria Carissimo [aut]
+Repository: CRAN
+Date/Publication: 2025-01-22 17:30:10 UTC

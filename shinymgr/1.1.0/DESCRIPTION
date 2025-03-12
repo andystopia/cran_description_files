@@ -1,0 +1,64 @@
+Package: shinymgr
+Type: Package
+Title: A Framework for Building, Managing, and Stitching 'shiny'
+        Modules into Reproducible Workflows
+Version: 1.1.0
+Authors@R: c(
+    person("Laurence", "Clarfeld", 
+           email = "laurence.clarfeld@uvm.edu",
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0002-3927-9411")),
+    person("Caroline", "Tang", 
+           email = "17ct24@queensu.ca", 
+           role = "aut", 
+           comment = c(ORCID = "0000-0001-7966-5854")),
+    person("Therese", "Donovan", 
+           email = "tdonovan@uvm.edu",
+           role = c("aut", "org", "rth"), 
+           comment = c(ORCID = "0000-0001-8124-9251")))
+Maintainer: Laurence Clarfeld <laurence.clarfeld@uvm.edu>
+Description: A unifying framework for managing and deploying 'shiny' applications 
+    that consist of modules, where an "app" is a tab-based workflow that guides 
+    a user step-by-step through an analysis. The 'shinymgr' app builder 
+    "stitches" 'shiny' modules together so that outputs from one module serve as 
+    inputs to the next, creating an analysis pipeline that is easy to implement 
+    and maintain. Users of 'shinymgr' apps can save analyses as an RDS file that
+    fully reproduces the analytic steps and can be ingested into an R Markdown 
+    report for rapid reporting. In short, developers use the 'shinymgr' 
+    framework to write modules and seamlessly combine them into 'shiny' apps, and 
+    users of these apps can execute reproducible analyses that can be 
+    incorporated into reports for rapid dissemination. 
+License: GPL-3
+Encoding: UTF-8
+URL: https://code.usgs.gov/vtcfwru/shinymgr
+BugReports: https://code.usgs.gov/vtcfwru/shinymgr/-/issues
+LazyData: true
+RoxygenNote: 7.3.1
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the United States
+        Geological Survey, an agency of the United States Department of
+        Interior. For more information, see the official USGS copyright
+        policy at http://www.usgs.gov/visual-id/
+        credit_usgs.html#copyright. This software is in the public
+        domain because it contains materials that originally came from
+        the U.S. Geological Survey, an agency of the United States
+        Department of Interior. Although this software program has been
+        used by the U.S. Geological Survey (USGS), no warranty,
+        expressed or implied, is made by the USGS or the U.S.
+        Government as to the accuracy and functioning of the program
+        and related program material nor shall the fact of distribution
+        constitute any such warranty, and no responsibility is assumed
+        by the USGS in connection therewith. This software is provided
+        "AS IS."
+Depends: R (>= 3.5.0), shiny
+Imports: DBI, reactable, renv, RSQLite, shinyjs, shinydashboard
+Suggests: fs, learnr, shinytest, testthat
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2024-05-09 13:44:50 UTC; lclarfel
+Author: Laurence Clarfeld [aut, cre] (<https://orcid.org/0000-0002-3927-9411>),
+  Caroline Tang [aut] (<https://orcid.org/0000-0001-7966-5854>),
+  Therese Donovan [aut, org, rth]
+    (<https://orcid.org/0000-0001-8124-9251>)
+Repository: CRAN
+Date/Publication: 2024-05-10 17:50:03 UTC

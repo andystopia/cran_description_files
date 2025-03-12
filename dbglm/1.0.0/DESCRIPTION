@@ -1,0 +1,23 @@
+Package: dbglm
+Title: Generalised Linear Models by Subsampling and One-Step Polishing
+Version: 1.0.0
+Authors@R: c(
+    person("Thomas", "Lumley", , "t.lumley@auckland.ac.nz", role = c("aut", "cph")), 
+    person("Shangqing", "Cao", , "caoalbert@g.ucla.edu", role = c("ctb", "cre"))
+    ) 
+Description: Fast fitting of generalised linear models on moderately large datasets, by taking an initial sample, fitting in memory, then evaluating the score function for the full data in the database. Thomas Lumley <doi:10.1080/10618600.2019.1610312>.
+Imports: DBI, tidypredict, rlang, methods, tidyverse, dbplyr, vctrs,
+        knitr, dplyr, purrr, tibble, tidyr, stringr
+Suggests: RSQLite, duckdb, bigrquery, testthat (>= 3.0.0)
+License: MIT + file LICENSE
+Maintainer: Shangqing Cao <caoalbert@g.ucla.edu>
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2021-06-23 03:00:58 UTC; apple
+Author: Thomas Lumley [aut, cph],
+  Shangqing Cao [ctb, cre]
+Repository: CRAN
+Date/Publication: 2021-06-23 08:00:02 UTC

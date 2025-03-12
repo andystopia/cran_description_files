@@ -1,0 +1,25 @@
+Package: SpatialRDD
+Type: Package
+Title: Conduct Multiple Types of Geographic Regression Discontinuity
+        Designs
+Version: 0.1.0
+Authors@R: person("Alexander", "Lehner", email = "lehner@uchicago.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5885-5966"))
+Description: Spatial versions of Regression Discontinuity Designs (RDDs) are becoming increasingly popular as tools for causal inference. However, conducting state-of-the-art analyses often involves tedious and time-consuming steps. This package offers comprehensive functionalities for executing all required spatial and econometric tasks in a streamlined manner. Moreover, it equips researchers with tools for performing essential placebo and balancing checks comprehensively. The fact that researchers do not have to rely on 'APIs' of external 'GIS' software ensures replicability and raises the standard for spatial RDDs.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, sf, ggplot2, rdrobust, lmtest, sandwich, cowplot,
+        magrittr, rlang, broom
+RoxygenNote: 7.2.3
+Suggests: knitr, tmap, rmarkdown, testthat, utils, kableExtra, lfe,
+        stargazer
+VignetteBuilder: knitr
+URL: https://axlehner.github.io/SpatialRDD/
+BugReports: https://github.com/axlehner/SpatialRDD/issues
+NeedsCompilation: no
+Packaged: 2023-08-07 20:28:45 UTC; alexanderlehner
+Author: Alexander Lehner [aut, cre] (<https://orcid.org/0000-0001-5885-5966>)
+Maintainer: Alexander Lehner <lehner@uchicago.edu>
+Repository: CRAN
+Date/Publication: 2023-08-08 15:30:05 UTC

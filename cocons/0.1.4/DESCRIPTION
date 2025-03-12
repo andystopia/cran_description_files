@@ -1,0 +1,30 @@
+Package: cocons
+Type: Package
+Title: Covariate-Based Covariance Functions for Nonstationary Spatial
+        Modeling
+Version: 0.1.4
+Author: Federico Blasi [aut, cre] (<https://orcid.org/0000-0001-9337-7154>),
+  Reinhard Furrer [ctb] (<https://orcid.org/0000-0002-6319-2332>)
+Authors@R: c(person("Federico", "Blasi", email = "federico.blasi@gmail.com",
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9337-7154")),
+  person("Reinhard", "Furrer",
+  role = c("ctb"), comment = c(ORCID = "0000-0002-6319-2332"))
+  )
+Maintainer: Federico Blasi <federico.blasi@gmail.com>
+Description: Estimation, prediction, and simulation of nonstationary Gaussian process with modular covariate-based covariance functions. 
+  Sources of nonstationarity, such as spatial mean, variance, geometric anisotropy, smoothness, and nugget, can be considered based on spatial characteristics. 
+  An induced compact-supported nonstationary covariance function is provided, enabling fast and memory-efficient computations when handling densely sampled domains.
+Encoding: UTF-8
+LazyData: true
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.10), spam (>= 2.9.1), fields, optimParallel,
+        methods, knitr
+LinkingTo: Rcpp, BH
+BugReports: https://github.com/blasif/cocons/issues
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2024-12-12 12:49:31 UTC; blasi
+Repository: CRAN
+Date/Publication: 2024-12-12 14:30:02 UTC

@@ -1,0 +1,25 @@
+Package: findGSEP
+Type: Package
+Title: Estimate Genome Size of Polyploid Species Using k-Mer
+        Frequencies
+Version: 1.2.0
+Authors@R: c(
+  person("Laiyi", "Fu", role = c("aut", "cre"), email = "fulaiyi321@163.com"),
+  person("Hequan", "Sun", role = "aut"))
+Maintainer: Laiyi Fu <fulaiyi321@163.com>
+Description: Provides tools to estimate the genome size of polyploid species using k-mer frequencies. This package includes functions to process k-mer frequency data and perform genome size estimation by fitting k-mer frequencies with a normal distribution model. It supports handling of complex polyploid genomes and offers various options for customizing the estimation process. The basic method 'findGSE' is detailed in Sun, Hequan, et al. (2018) <doi:10.1093/bioinformatics/btx637>. 
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R(>= 4.2.0),RColorBrewer,ggplot2,grDevices
+Imports: pracma, scales, dplyr,
+RoxygenNote: 7.3.1
+URL: https://github.com/sperfu/findGSEP
+BugReports: https://github.com/sperfu/findGSEP/issues
+Suggests: knitr, rmarkdown,
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-05-25 14:42:01 UTC; fly
+Author: Laiyi Fu [aut, cre],
+  Hequan Sun [aut]
+Repository: CRAN
+Date/Publication: 2024-05-26 17:30:03 UTC

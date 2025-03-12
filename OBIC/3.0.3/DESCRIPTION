@@ -1,0 +1,65 @@
+Package: OBIC
+Type: Package
+Title: Calculate the Open Bodem Index (OBI) Score
+Version: 3.0.3
+Authors@R: c(
+    person(given = "Sven", 
+           family = "Verweij",
+           email = "sven.verweij@nmi-agro.nl",
+           role = c("aut","cre"),
+           comment = c(ORCID = '0000-0002-5573-3952')),
+    person(given = "Gerard",
+           family = "Ros",
+           email = "gerard.ros@nmi-agro.nl",
+           role = "aut",
+           comment = c(ORCID = '0000-0002-6062-9770')),
+    person(given = "Yuki",
+           family = "Fujita",
+           email = "yuki.fujita@nmi-agro.nl",
+           role = "aut",
+           comment = c(ORCID = '0000-0002-0541-2798')),
+    person(given = c("Wilbrand", "Hendrik"),
+           family = "Riechelman",
+           email = 'brent.riechelman@nmi-agro.nl',
+           role = "aut",
+           comment = c(ORCID = '0000-0003-1501-1573')),
+    person(given = "Kees",
+           family = "van den Dool",
+           email = 'kees.vandendool@nmi-agro.nl',
+           role = "aut",
+           comment = c(ORCID = '0009-0003-8963-2556')),
+    person(given = "Job", 
+           family = "de Pater",
+           email = "job.depater@nmi-agro.nl",
+           role = "ctb"),
+    person(given = "Nutriënten Managment Instituut",
+           email = "nmi@nmi-agro.nl",
+           role = "cph"))
+Description: The Open Bodem Index (OBI) is a method to evaluate the quality of soils of agricultural fields in The Netherlands and the sustainability of the current agricultural practices.
+    The OBI score is based on four main criteria: chemical, physical, biological and management, which consist of more than 21 indicators. 
+    By providing results of a soil analysis and management info the 'OBIC' package can be use to calculate he scores, indicators and derivatives that are used by the OBI.
+    More information about the Open Bodem Index can be found at <https://openbodemindex.nl/>.
+Depends: R (>= 3.5.0)
+Imports: checkmate, data.table
+License: GPL-3
+URL: https://github.com/AgroCares/Open-Bodem-Index-Calculator
+BugReports: https://github.com/AgroCares/Open-Bodem-Index-Calculator/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, ggplot2, patchwork,
+        covr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-09-09 07:53:10 UTC; sven.verweij
+Author: Sven Verweij [aut, cre] (<https://orcid.org/0000-0002-5573-3952>),
+  Gerard Ros [aut] (<https://orcid.org/0000-0002-6062-9770>),
+  Yuki Fujita [aut] (<https://orcid.org/0000-0002-0541-2798>),
+  Wilbrand Hendrik Riechelman [aut]
+    (<https://orcid.org/0000-0003-1501-1573>),
+  Kees van den Dool [aut] (<https://orcid.org/0009-0003-8963-2556>),
+  Job de Pater [ctb],
+  Nutriënten Managment Instituut [cph]
+Maintainer: Sven Verweij <sven.verweij@nmi-agro.nl>
+Repository: CRAN
+Date/Publication: 2024-09-09 08:30:02 UTC

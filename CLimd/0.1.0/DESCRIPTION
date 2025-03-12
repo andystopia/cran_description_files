@@ -1,0 +1,25 @@
+Package: CLimd
+Type: Package
+Title: Generating Rainfall Rasters from IMD NetCDF Data
+Version: 0.1.0
+Authors@R: c(person("Nirmal","Kumar", role=c("aut","cph")),person("Nobin Chandra","Paul",role=c("aut","cre"),email="nobin.paul@icar.gov.in"),person("G.P. Obi","Reddy",role="aut"))
+Depends: R(>= 2.10)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+Description: The developed function is a comprehensive tool for the analysis of India Meteorological Department (IMD) NetCDF rainfall data. Specifically designed to process high-resolution daily
+             gridded rainfall datasets. It provides four key functions to process IMD NetCDF rainfall data and create rasters for various temporal scales, including annual, seasonal, monthly, and weekly
+             rainfall. For method details see, Malik, A. (2019).<DOI:10.1007/s12517-019-4454-5>. It supports different aggregation methods, such as sum, min, max, mean, and standard deviation. These functions
+             are designed for spatio-temporal analysis of rainfall patterns, trend analysis,geostatistical modeling of rainfall variability, identifying rainfall anomalies and extreme events and can be an input
+             for hydrological and agricultural models.
+License: GPL (>= 2.0)
+Encoding: UTF-8
+Imports: raster,ncdf4,qpdf
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-01-09 10:01:34 UTC; Asus
+Author: Nirmal Kumar [aut, cph],
+  Nobin Chandra Paul [aut, cre],
+  G.P. Obi Reddy [aut]
+Maintainer: Nobin Chandra Paul <nobin.paul@icar.gov.in>
+Repository: CRAN
+Date/Publication: 2024-01-10 13:43:10 UTC

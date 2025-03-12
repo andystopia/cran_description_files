@@ -1,0 +1,21 @@
+Package: dnn
+Type: Package
+Title: Deep Neural Network Tools for Probability and Statistic Models
+Version: 0.0.6
+Date: 2024-03-12
+Author: Bingshu E. Chen [aut, cre],
+  Patrick Norman [aut, ctb],
+  Wenyu Jiang [ctb],
+  Wanlu Li [ctb]
+Maintainer: Bingshu E. Chen <bingshu.chen@queensu.ca>
+Authors@R: c(person(c("Bingshu", "E."), "Chen", role = c("aut", "cre"), email = "bingshu.chen@queensu.ca"), person("Patrick", "Norman", role = c("aut", "ctb")), person("Wenyu", "Jiang", role = "ctb"), person("Wanlu", "Li", role = "ctb"))
+Depends: R (>= 3.5.0), ggplot2, survival, Rcpp
+Imports: methods
+LinkingTo: Rcpp, RcppArmadillo
+Description: Contains tools to build deep neural network with flexible users define loss function and probability models. Several applications included in this package are, 1) The (deepAFT) model, a deep neural network model for accelerated failure time (AFT) model for survival data. 2) The (deepGLM) model, a deep neural network model for generalized linear model (glm) for continuous, categorical and Poisson data.
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2024-03-14 15:42:28 UTC; b3chen
+Repository: CRAN
+Date/Publication: 2024-03-14 20:50:05 UTC

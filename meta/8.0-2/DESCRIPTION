@@ -1,0 +1,40 @@
+Package: meta
+Title: General Package for Meta-Analysis
+Version: 8.0-2
+Date: 2025-01-21
+Depends: R (>= 4.0.0), metadat
+Imports: metafor (>= 3.0-0), grid, lme4, CompQuadForm, xml2, dplyr,
+        methods, readr, magrittr, purrr, stringr
+Suggests: netmeta, BiasedUrn, pimeta, estmeansd, robvis, brglm2,
+        writexl, rmarkdown, knitr
+Authors@R: person("Guido", "Schwarzer",
+                  role = c("cre", "aut"),
+                  email = "guido.schwarzer@uniklinik-freiburg.de",
+                  comment = c(ORCID = "0000-0001-6214-9087"))
+Author: Guido Schwarzer [cre, aut] (<https://orcid.org/0000-0001-6214-9087>)
+Maintainer: Guido Schwarzer <guido.schwarzer@uniklinik-freiburg.de>
+URL: https://github.com/guido-s/meta/
+        https://link.springer.com/book/10.1007/978-3-319-21416-0
+Description: User-friendly general package providing standard methods for meta-analysis and supporting Schwarzer, Carpenter, and Rücker <DOI:10.1007/978-3-319-21416-0>, "Meta-Analysis with R" (2015):
+ - common effect and random effects meta-analysis;
+ - several plots (forest, funnel, Galbraith / radial, L'Abbe, Baujat, bubble);
+ - three-level meta-analysis model;
+ - generalised linear mixed model;
+ - logistic regression with penalised likelihood for rare events;
+ - Hartung-Knapp method for random effects model;
+ - Kenward-Roger method for random effects model;
+ - prediction interval;
+ - statistical tests  for funnel plot asymmetry;
+ - trim-and-fill method to evaluate bias in meta-analysis;
+ - meta-regression;
+ - cumulative meta-analysis and leave-one-out meta-analysis;
+ - import data from 'RevMan 5';
+ - produce forest plot summarising several (subgroup) meta-analyses.
+License: GPL (>= 2)
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Packaged: 2025-01-21 18:29:14 UTC; sc
+Repository: CRAN
+Date/Publication: 2025-01-21 19:20:02 UTC

@@ -1,0 +1,34 @@
+Package: RESI
+Type: Package
+Title: Robust Effect Size Index (RESI) Estimation
+Version: 1.2.4
+Authors@R: 
+  c(person('Megan', 'Jones', email='megan.n.taylor@vanderbilt.edu', role=c('aut', 'cre')),
+  person('Kaidi', 'Kang', email = 'kaidi.kang@vanderbilt.edu', role = c('aut')),
+  person('Simon', 'Vandekar', email='simon.vandekar@vanderbilt.edu', role=c('aut')))
+Description: Summarize model output using a robust effect size index. The index is introduced in Vandekar, Tao, & Blume (2020) <doi:10.1007/s11336-020-09698-2>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Collate: 'internal_functions.R' 'summary.resi.R' 'resi.R' 'resi_pe.R'
+        'Anova.resi.R' 'data.R' 'chisq2S.R' 'f2S.R' 't2S.R' 'z2S.R'
+        'Rsq2S.R' 'S2Rsq.R' 'S2d.R' 'S2fsq.R' 'd2S.R' 'fsq2S.R'
+        'plot.R' 'ggplot.R' 'print.R' 'omnibus.R'
+Imports: aod, boot, car, clubSandwich, ggplot2, lmtest, nlme, sandwich
+Suggests: gee, geepack, knitr, lme4, pscl, regtools, rmarkdown,
+        splines, survival, tibble, testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+Depends: R (>= 2.10)
+Config/testthat/edition: 3
+URL: https://statimagcoll.github.io/RESI/,
+        https://github.com/statimagcoll/RESI
+VignetteBuilder: knitr
+BugReports: https://github.com/statimagcoll/RESI/issues
+NeedsCompilation: no
+Packaged: 2024-01-16 18:32:37 UTC; megan
+Author: Megan Jones [aut, cre],
+  Kaidi Kang [aut],
+  Simon Vandekar [aut]
+Maintainer: Megan Jones <megan.n.taylor@vanderbilt.edu>
+Repository: CRAN
+Date/Publication: 2024-01-16 18:50:02 UTC

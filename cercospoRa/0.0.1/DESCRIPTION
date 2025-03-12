@@ -1,0 +1,67 @@
+Package: cercospoRa
+Title: Process Based Epidemiological Model for Cercospora Leaf Spot of
+        Sugar Beet
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Paul",
+           family = "Melloy",
+           role = c("aut", "cre", "trl","cph"),
+           email = "paul@melloy.com.au",
+           comment = c(ORCID = "0000-0003-4253-7167",
+                       "Translated equations from literature and developed package.")),
+    person(given = "Rene",
+           family = "Heim",
+           role = c("aut", "cph"),
+           email = "heim@ifz-goettingen.de",
+           comment = c(ORCID = "0000-0002-0666-2588",
+                       "Code review and development of leaf area index model")),
+    person(given = "Nathan",
+           family = "Okole",
+           role = c("aut","ctb","cph"),
+           email = "okole@ifz-goettingen.de",
+           comment = c(ORCID = "0000-0002-5375-2420",
+                       "Code review and development of leaf area index model")),
+    person(given = "Facundo Ramón",
+           family = "Ispizua Yamati",
+           role = c("dtc", "ctb"),
+           email = "ispizua@ifz-goettingen.de",
+           comment = c(ORCID = "0000-0001-5775-3554",
+                       "Code review")),
+    person(given = "Anne-Katrin",
+           family = "Mahlein",
+           role = c("ctb","cph"),
+           comment = c(ORCID = "0000-0003-1091-3690")))
+Description: Estimates sugar beet canopy closure with remotely sensed leaf area
+    index and estimates when action might be needed to protect the crop from a 
+    Leaf Spot epidemic with a negative prognosis model based on published 
+    models.  
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0), remotes, stats,
+        spelling
+Config/testthat/edition: 3
+Imports: data.table, lubridate, sf, terra, minpack.lm, circular
+VignetteBuilder: knitr
+Depends: R (>= 4.0.0)
+LazyData: true
+URL: https://paul.melloy.com.au/cercospoRa/,
+        https://github.com/PaulMelloy/cercospoRa,
+        http://paul.melloy.com.au/cercospoRa/
+BugReports: https://github.com/PaulMelloy/cercospoRa/issues
+NeedsCompilation: no
+Packaged: 2024-12-12 10:11:12 UTC; paul
+Author: Paul Melloy [aut, cre, trl, cph]
+    (<https://orcid.org/0000-0003-4253-7167>, Translated equations from
+    literature and developed package.),
+  Rene Heim [aut, cph] (<https://orcid.org/0000-0002-0666-2588>, Code
+    review and development of leaf area index model),
+  Nathan Okole [aut, ctb, cph] (<https://orcid.org/0000-0002-5375-2420>,
+    Code review and development of leaf area index model),
+  Facundo Ramón Ispizua Yamati [dtc, ctb]
+    (<https://orcid.org/0000-0001-5775-3554>, Code review),
+  Anne-Katrin Mahlein [ctb, cph]
+    (<https://orcid.org/0000-0003-1091-3690>)
+Maintainer: Paul Melloy <paul@melloy.com.au>
+Repository: CRAN
+Date/Publication: 2024-12-13 09:20:02 UTC

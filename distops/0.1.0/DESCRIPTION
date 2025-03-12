@@ -1,0 +1,28 @@
+Package: distops
+Title: Usual Operations for Distance Matrices in R
+Version: 0.1.0
+Authors@R: 
+    person("Aymeric", "Stamm", , "aymeric.stamm@cnrs.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8725-3654"))
+Description: It provides the subset operator for dist objects and a function to
+    compute medoid(s) that are fully parallelized leveraging the 'RcppParallel'
+    package. It also provides functions for package developers to easily
+    implement their own parallelized dist() function using a custom 'C++'-based
+    distance function.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.0
+URL: https://github.com/lmjl-alea/distops,
+        https://lmjl-alea.github.io/distops/
+BugReports: https://github.com/lmjl-alea/distops/issues
+SystemRequirements: GNU make
+Imports: cli, desc, fs, glue, Rcpp, RcppParallel, usethis
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LinkingTo: Rcpp, RcppParallel
+NeedsCompilation: yes
+Packaged: 2024-01-23 09:47:54 UTC; stamm-a
+Author: Aymeric Stamm [aut, cre] (<https://orcid.org/0000-0002-8725-3654>)
+Maintainer: Aymeric Stamm <aymeric.stamm@cnrs.fr>
+Repository: CRAN
+Date/Publication: 2024-01-23 13:53:26 UTC

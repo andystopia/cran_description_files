@@ -1,0 +1,19 @@
+Package: CCSRfind
+Type: Package
+Title: Convert ICD-10 Codes to CCSR Codes
+Version: 0.1.0
+Authors@R: c(person("Mark", "Ramos", role = c("aut", "cre","cph"), email = "mlr6219@psu.edu"), person("Amy", "Yeung", role = "aut", email = "aby5225@psu.edu") )
+Maintainer: Mark Ramos <mlr6219@psu.edu>
+Description: Provides a tool for matching ICD-10 codes to corresponding Clinical Classification Software Refined (CCSR) codes. The main function, CCSRfind(), identifies each CCSR code that applies to an individual given their diagnosis codes. It also provides a summary of CCSR codes that are matched to a dataset. The package contains 3 datasets: 'DXCCSR' (mapping of ICD-10 codes to CCSR codes), 'Legend' (conversion of DXCCSR to CCSRfind-usable format for CCSR codes with less than or equal to 1000 ICD-10 diagnosis codes), and 'LegendExtend' (conversion of DXCCSR to CCSRfind-usable format for CCSR codes with more than 1000 ICD-10 dx codes). The disc() function applies grepl() ('base') to multiple columns and is used in CCSRfind().
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: knitr
+Depends: R (>= 2.10)
+RoxygenNote: 7.3.1
+NeedsCompilation: no
+Packaged: 2024-07-31 18:16:15 UTC; mlr6219
+Author: Mark Ramos [aut, cre, cph],
+  Amy Yeung [aut]
+Repository: CRAN
+Date/Publication: 2024-08-19 08:50:13 UTC

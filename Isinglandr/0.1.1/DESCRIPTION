@@ -1,0 +1,37 @@
+Type: Package
+Package: Isinglandr
+Title: Landscape Construction and Simulation for Ising Networks
+Version: 0.1.1
+Authors@R: c(
+    person("Jingmeng", "Cui", , "jingmeng.cui@outlook.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3421-8457")),
+    person("Gabriela", "Lunansky", role = "ctb",
+           comment = c(ORCID = "0000-0001-6226-2258"))
+  )
+Description: A toolbox for constructing potential landscapes for Ising
+    networks. The parameters of the networks can be directly supplied by
+    users or estimated by the 'IsingFit' package by van Borkulo and
+    Epskamp (2016) <https://CRAN.R-project.org/package=IsingFit> from
+    empirical data. The Ising model's Boltzmann distribution is preserved
+    for the potential landscape function. The landscape functions can be
+    used for quantifying and visualizing the stability of network states,
+    as well as visualizing the simulation process.
+License: GPL (>= 3)
+URL: https://sciurus365.github.io/Isinglandr/,
+        https://github.com/Sciurus365/Isinglandr
+BugReports: https://github.com/Sciurus365/Isinglandr/issues
+Depends: R (>= 2.10)
+Imports: dplyr, gganimate, ggplot2, glue, magrittr, methods, plotly,
+        purrr, rlang, shiny, shinycssloaders, shinythemes, simlandr,
+        tibble, tidyr
+Suggests: gifski, IsingFit, IsingSampler, transformr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+NeedsCompilation: no
+Packaged: 2023-07-12 08:33:45 UTC; jingm
+Author: Jingmeng Cui [aut, cre] (<https://orcid.org/0000-0003-3421-8457>),
+  Gabriela Lunansky [ctb] (<https://orcid.org/0000-0001-6226-2258>)
+Maintainer: Jingmeng Cui <jingmeng.cui@outlook.com>
+Repository: CRAN
+Date/Publication: 2023-07-13 00:00:02 UTC
