@@ -15,9 +15,9 @@ I have not implemented it yet.
  - write a fast version solver for R by maintaining your own package version index.
 
 ```bash
-fd DESCRIPTIONS | wc -l
+fd DESCRIPTION | wc -l
 ```
- > 155441
+ > 177831
 
 files to date. That's a lot to download / scrape, and instead it's possible to just
 build off of this.
